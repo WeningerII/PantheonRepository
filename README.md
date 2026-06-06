@@ -35,6 +35,15 @@ This pre-transforms every `app/*.jsx` through Babel (no in-browser transformer),
 inlines `app/data.js` and `app/styles.css`, and writes
 `dist/pantheon-registry.html`.
 
+## Deployment (GitHub Pages)
+
+`.github/workflows/deploy-pages.yml` rebuilds the artifact and publishes it as
+`index.html` on the `gh-pages` branch on every push to the trunk (or on demand via
+the **Actions** tab → *Run workflow*). Enable serving once under **Settings → Pages
+→ Deploy from a branch → `gh-pages` / `root`**; the live site is then at
+`https://<owner>.github.io/PantheonRepository/`. The deployed file is the production
+build (production React, SRI-pinned CDN libraries).
+
 ## Project layout
 
 ```
