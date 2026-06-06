@@ -298,56 +298,61 @@ function Shell() {
     }
   }, [selectedEntry, selIdxInFiltered, filters.filtered]);
 
-  // Keyboard bindings
+  // Keyboard bindings. The handler is kept in a ref refreshed every render so
+  // the window listener attaches exactly once yet always reads current state —
+  // `filters`/`selection` are fresh objects each render, so a dependency-keyed
+  // effect would add/remove the listener on every keystroke.
+  const onKeyRef = __sRef(null);
+  onKeyRef.current = (e) => {
+    const tag = (e.target?.tagName || '').toLowerCase();
+    const inField = tag === 'input' || tag === 'textarea' || e.target?.isContentEditable;
+
+    // Always-on shortcuts
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      setCmdkOpen(o => !o);
+      return;
+    }
+    if (e.key === 'Escape') {
+      if (cmdkOpen) { setCmdkOpen(false); return; }
+      if (selection.selectedId) { selection.setSelectedId(null); return; }
+      if (inField) { e.target.blur(); return; }
+      if (filters.query) { filters.setQuery(''); return; }
+      return;
+    }
+
+    // Search-focus binding
+    if (e.key === '/' && !inField) {
+      e.preventDefault();
+      searchRef.current?.focus();
+      searchRef.current?.select();
+      return;
+    }
+
+    if (inField || cmdkOpen) return;
+
+    // Detail-open navigation
+    if (selection.selectedId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); moveSelection(1); return; }
+      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); moveSelection(-1); return; }
+      return;
+    }
+
+    // Table navigation
+    if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); selection.moveCursor(1); return; }
+    if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); selection.moveCursor(-1); return; }
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const target = filters.filtered[selection.cursorIdx];
+      if (target) selection.setSelectedId(target.id);
+      return;
+    }
+  };
   __sEff(() => {
-    const onKey = (e) => {
-      const tag = (e.target?.tagName || '').toLowerCase();
-      const inField = tag === 'input' || tag === 'textarea' || e.target?.isContentEditable;
-
-      // Always-on shortcuts
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        setCmdkOpen(o => !o);
-        return;
-      }
-      if (e.key === 'Escape') {
-        if (cmdkOpen) { setCmdkOpen(false); return; }
-        if (selection.selectedId) { selection.setSelectedId(null); return; }
-        if (inField) { e.target.blur(); return; }
-        if (filters.query) { filters.setQuery(''); return; }
-        return;
-      }
-
-      // Search-focus binding
-      if (e.key === '/' && !inField) {
-        e.preventDefault();
-        searchRef.current?.focus();
-        searchRef.current?.select();
-        return;
-      }
-
-      if (inField || cmdkOpen) return;
-
-      // Detail-open navigation
-      if (selection.selectedId) {
-        if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); moveSelection(1); return; }
-        if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); moveSelection(-1); return; }
-        return;
-      }
-
-      // Table navigation
-      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); selection.moveCursor(1); return; }
-      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); selection.moveCursor(-1); return; }
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        const target = filters.filtered[selection.cursorIdx];
-        if (target) selection.setSelectedId(target.id);
-        return;
-      }
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [cmdkOpen, selection, filters, moveSelection]);
+    const handler = (e) => onKeyRef.current && onKeyRef.current(e);
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
 
   if (!ready) {
     return (
