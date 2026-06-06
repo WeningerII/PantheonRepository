@@ -50,11 +50,11 @@ describe('app renders in a browser-like environment', () => {
 
   // Regression: the Lifecycle timeline used year-proportional columns, which
   // crammed every stage of a short era into a sliver of overlapping nodes.
-  // Equal-width columns must keep the stages spread apart.
-  test('Lifecycle stage nodes are spread, not crammed', async () => {
-    await app.openFirstFigure(); // ʿAntara ibn Shaddad — a multi-era lifecycle
-    const svg = app.document.querySelector('.lifecycle-svg');
-    assert.ok(svg, 'expected a scaled lifecycle timeline for the first figure');
+  // Equal-width columns (widened to guarantee a per-stage gap) must keep the
+  // stage nodes spread apart — even for dense figures.
+  const minLifecycleGap = (doc) => {
+    const svg = doc.querySelector('.lifecycle-svg');
+    assert.ok(svg, 'expected a scaled lifecycle timeline');
     const xs = [...svg.querySelectorAll('circle')]
       .filter((c) => c.getAttribute('r') === '12') // NODE_R
       .map((c) => {
@@ -64,8 +64,21 @@ describe('app renders in a browser-like environment', () => {
       .filter((v) => v != null)
       .sort((a, b) => a - b);
     assert.ok(xs.length >= 2, `expected multiple lifecycle stages, got ${xs.length}`);
-    let minGap = Infinity;
-    for (let i = 1; i < xs.length; i++) minGap = Math.min(minGap, xs[i] - xs[i - 1]);
-    assert.ok(minGap >= 24, `stage nodes overlap: min gap ${Math.round(minGap)}px < 24px node size`);
+    let gap = Infinity;
+    for (let i = 1; i < xs.length; i++) gap = Math.min(gap, xs[i] - xs[i - 1]);
+    return { count: xs.length, gap };
+  };
+
+  test('Lifecycle stage nodes are spread, not crammed', async () => {
+    await app.openFirstFigure(); // ʿAntara ibn Shaddad — a multi-era lifecycle
+    const { gap } = minLifecycleGap(app.document);
+    assert.ok(gap >= 24, `stage nodes overlap: min gap ${Math.round(gap)}px < 24px node size`);
+  });
+
+  test('a dense lifecycle (greek_alexander, 17 stages) still does not overlap', async () => {
+    await app.openFigure('greek_alexander');
+    const { count, gap } = minLifecycleGap(app.document);
+    assert.ok(count >= 10, `expected the dense figure's many stages, got ${count}`);
+    assert.ok(gap >= 24, `dense lifecycle overlaps: min gap ${Math.round(gap)}px < 24px node size`);
   });
 });

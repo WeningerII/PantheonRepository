@@ -83,8 +83,15 @@ async function bootApp({ panelWidth = 1200 } = {}) {
     await act(async () => { D.querySelector('.browse-table tbody tr:not(.browse-group-header)')?.click(); });
     await flush();
   };
+  const openFigure = async (id) => {
+    await act(async () => {
+      window.location.hash = '#/browse/' + encodeURIComponent(id);
+      window.dispatchEvent(new window.Event('hashchange'));
+    });
+    await flush();
+  };
 
-  return { dom, window, document: D, act, flush, errors, key, clickButton, openFirstFigure };
+  return { dom, window, document: D, act, flush, errors, key, clickButton, openFirstFigure, openFigure };
 }
 
 module.exports = { bootApp };

@@ -132,8 +132,29 @@ function buildPlot(lc, tradition, width) {
   // equal column keeps them legible; the true year range is printed underneath.
   // (tMin/tMax above still gate out eras with no parseable dates.)
   const n = visibleSpans.length;
-  const plotW = Math.max(280, width - PAD_X * 2);
-  const bandW = plotW / n;
+
+  // Group stages by era (sorted within each by eraOrdering) before sizing, so a
+  // column can be widened to fit its stage count.
+  const visEras = new Set(visibleSpans.map(s => s.era));
+  const inEra = new Map();
+  for (const s of lc) {
+    if (!visEras.has(s.era)) continue;
+    if (!inEra.has(s.era)) inEra.set(s.era, []);
+    inEra.get(s.era).push(s);
+  }
+  for (const arr of inEra.values()) {
+    arr.sort((a, b) => (a.eraOrdering ?? 0) - (b.eraOrdering ?? 0));
+  }
+
+  // Column width fills the container, but never tighter than what the busiest
+  // era needs to keep its fanned stage nodes from overlapping. When that pushes
+  // the plot past the container (many stages, or stages in eras far apart) the
+  // SVG grows and the timeline scrolls horizontally.
+  const MIN_STAGE_GAP = 30;  // px between fanned nodes (node diameter is 2·NODE_R = 24)
+  const maxPerBand = Math.max(1, ...[...inEra.values()].map(a => a.length));
+  const containerW = Math.max(280, width - PAD_X * 2);
+  const bandW = Math.max(containerW / n, (maxPerBand + 1) * MIN_STAGE_GAP);
+  const plotW = bandW * n;
 
   const bands = visibleSpans.map((s, i) => ({
     era: s.era,
@@ -144,17 +165,6 @@ function buildPlot(lc, tradition, width) {
     end: s.end,
   }));
   const bandByEra = new Map(bands.map(b => [b.era, b]));
-
-  // Group stages by era; sort within each era by eraOrdering.
-  const inEra = new Map();
-  for (const s of lc) {
-    if (!bandByEra.has(s.era)) continue;
-    if (!inEra.has(s.era)) inEra.set(s.era, []);
-    inEra.get(s.era).push(s);
-  }
-  for (const arr of inEra.values()) {
-    arr.sort((a, b) => (a.eraOrdering ?? 0) - (b.eraOrdering ?? 0));
-  }
 
   // Fan each era's stages evenly across its column.
   const nodes = [];
@@ -172,7 +182,7 @@ function buildPlot(lc, tradition, width) {
   }
   nodes.sort((a, b) => a.originalIndex - b.originalIndex);
 
-  return { mode: 'scaled', bands, nodes };
+  return { mode: 'scaled', bands, nodes, width: PAD_X * 2 + plotW };
 }
 
 // ── Components ─────────────────────────────────────────────────────────
@@ -264,7 +274,7 @@ function LifecycleTimeline({ lc, tradition }) {
 
   return (
     <div ref={containerRef} className="lifecycle-timeline">
-      <svg width={width} height={totalH} className="lifecycle-svg">
+      <svg width={plot.width} height={totalH} className="lifecycle-svg">
         {/* Era bands — alternating tints so eras read as discrete columns. */}
         {plot.bands.map((b, i) => (
           <g key={b.era}>
