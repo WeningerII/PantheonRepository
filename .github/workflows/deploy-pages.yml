@@ -51,10 +51,11 @@ jobs:
           rm -rf _site && mkdir -p _site
           cp dist/pantheon-registry.html _site/index.html
 
-      - name: Configure Pages (auto-enable on first run)
+      # Reads the repo's Pages config. Pages must be enabled once in Settings
+      # (Source: GitHub Actions) — GitHub does not permit the Actions token to
+      # enable Pages the first time. After that, this is fully automatic.
+      - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

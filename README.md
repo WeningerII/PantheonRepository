@@ -39,11 +39,13 @@ inlines `app/data.js` and `app/styles.css`, and writes
 
 `.github/workflows/deploy-pages.yml` rebuilds the artifact and deploys it through
 GitHub's native Pages pipeline (`actions/deploy-pages`) on every push to the trunk
-(or on demand via the **Actions** tab → *Run workflow*). The first run enables Pages
-automatically (`actions/configure-pages` with `enablement: true`) and creates a
-`github-pages` Deployment with a clickable URL, serving the production build
-(production React, SRI-pinned CDN libraries) at
-`https://<owner>.github.io/PantheonRepository/`.
+(or on demand via the **Actions** tab → *Run workflow*), creating a `github-pages`
+Deployment with a clickable URL that serves the production build (production React,
+SRI-pinned CDN libraries) at `https://<owner>.github.io/PantheonRepository/`.
+
+One-time setup: enable Pages under **Settings → Pages → Build and deployment →
+Source: GitHub Actions** (GitHub does not allow the Actions token to enable Pages on
+the first run). After that, deploys are automatic.
 
 ## Project layout
 
