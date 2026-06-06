@@ -31978,6 +31978,16 @@ function nameForTypeStatus(ts) {
   return ts.charAt(0).toUpperCase() + ts.slice(1);
 }
 
+// Truncate a label to roughly fit `px` pixels (given an approximate per-character
+// width), adding an ellipsis when clipped — keeps centered SVG text from
+// overflowing its era column into the neighbouring ones.
+function fitLabel(text, px, charW) {
+  const max = Math.floor(px / charW);
+  if (text.length <= max) return text;
+  if (max <= 1) return '';
+  return text.slice(0, max - 1).replace(/\s+$/, '') + '…';
+}
+
 // ── Build the era spans (ordered, with numeric start/end) ──────────────
 //
 // For lifecycle plotting we prefer mythic dates over textual dates: textual
@@ -32043,42 +32053,46 @@ function buildPlot(lc, tradition, width) {
     mode: 'fallback',
     stages: lc
   };
+
+  // Equal-width era columns. A figure's lifecycle eras have wildly unequal
+  // year-spans (a multi-millennium ancient era beside a century-long poetic
+  // era), so a year-proportional axis collapses every stage of a short era into
+  // an unreadable sliver — overlapping nodes and labels. Giving each era an
+  // equal column keeps them legible; the true year range is printed underneath.
+  // (tMin/tMax above still gate out eras with no parseable dates.)
+  const n = visibleSpans.length;
   const plotW = Math.max(280, width - PAD_X * 2);
-  const xFor = year => PAD_X + (year - tMin) / (tMax - tMin) * plotW;
-  const bands = visibleSpans.map(s => ({
+  const bandW = plotW / n;
+  const bands = visibleSpans.map((s, i) => ({
     era: s.era,
-    x0: xFor(s.start),
-    x1: xFor(s.end),
+    x0: PAD_X + i * bandW,
+    x1: PAD_X + (i + 1) * bandW,
     label: s.era.replace(/-/g, ' '),
     start: s.start,
     end: s.end
   }));
+  const bandByEra = new Map(bands.map(b => [b.era, b]));
 
-  // Group stages by era so we can fan multiple events out.
-  const byEra = new Map(visibleSpans.map(s => [s.era, s]));
+  // Group stages by era; sort within each era by eraOrdering.
   const inEra = new Map();
   for (const s of lc) {
-    if (!byEra.has(s.era)) continue;
+    if (!bandByEra.has(s.era)) continue;
     if (!inEra.has(s.era)) inEra.set(s.era, []);
     inEra.get(s.era).push(s);
   }
-  // Within each era, sort by eraOrdering (fallback to original index)
   for (const arr of inEra.values()) {
     arr.sort((a, b) => (a.eraOrdering ?? 0) - (b.eraOrdering ?? 0));
   }
+
+  // Fan each era's stages evenly across its column.
   const nodes = [];
   for (const [era, arr] of inEra) {
-    const span = byEra.get(era);
-    const x0 = xFor(span.start);
-    const x1 = xFor(span.end);
+    const band = bandByEra.get(era);
     arr.forEach((stage, i) => {
       const frac = arr.length === 1 ? 0.5 : (i + 1) / (arr.length + 1);
-      const x = x0 + (x1 - x0) * frac;
-      const yearApprox = span.start + (span.end - span.start) * frac;
       nodes.push({
         stage,
-        x,
-        yearApprox,
+        x: band.x0 + (band.x1 - band.x0) * frac,
         era: stage.era,
         originalIndex: lc.indexOf(stage)
       });
@@ -32088,10 +32102,7 @@ function buildPlot(lc, tradition, width) {
   return {
     mode: 'scaled',
     bands,
-    nodes,
-    plotW,
-    tMin,
-    tMax
+    nodes
   };
 }
 
@@ -32210,8 +32221,11 @@ function LifecycleTimeline({
     stroke: "rgba(0,0,0,0.06)",
     strokeWidth: 1
   }))), plot.bands.map(b => {
-    const w = b.x1 - b.x0;
-    if (w < 36) return null;
+    const avail = b.x1 - b.x0 - 10;
+    if (avail < 24) return null;
+    const name = fitLabel(b.label, avail, 6.6);
+    const dateStr = `${window.formatYearSigned(b.start)} – ${window.formatYearSigned(b.end)}`;
+    const showDate = dateStr.length * 5.4 <= avail; // only when it fits — no half-dates
     return /*#__PURE__*/React.createElement("g", {
       key: 'lbl-' + b.era
     }, /*#__PURE__*/React.createElement("text", {
@@ -32225,14 +32239,14 @@ function LifecycleTimeline({
       style: {
         textTransform: 'uppercase'
       }
-    }, b.label), /*#__PURE__*/React.createElement("text", {
+    }, name), showDate && /*#__PURE__*/React.createElement("text", {
       x: (b.x0 + b.x1) / 2,
       y: AXIS_H + ROW_H + 14,
       textAnchor: "middle",
       fontFamily: "Geist Mono, ui-monospace, monospace",
       fontSize: 9,
       fill: "rgba(0,0,0,0.35)"
-    }, window.formatYearSigned(b.start), " \u2013 ", window.formatYearSigned(b.end)));
+    }, dateStr));
   }), segments.map((s, i) => /*#__PURE__*/React.createElement("line", {
     key: i,
     x1: s.x1,
