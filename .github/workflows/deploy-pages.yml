@@ -1,9 +1,10 @@
 name: Deploy to GitHub Pages
 
-# Rebuilds the single-file artifact with build.py and publishes it to the
-# gh-pages branch (which GitHub Pages serves). Runs on every push to the
-# trunk, or on demand. Uses only the built-in GITHUB_TOKEN — no PATs, no
-# third-party actions.
+# Builds the single-file artifact with build.py and deploys it through GitHub's
+# native Pages pipeline (actions/deploy-pages). This creates a real
+# `github-pages` Deployment with a clickable URL on each run, and
+# actions/configure-pages (enablement: true) turns Pages on automatically the
+# first time — no manual Settings toggle required.
 on:
   push:
     branches:
@@ -11,17 +12,19 @@ on:
       - claude/intelligent-volta-ZwLAt
   workflow_dispatch:
 
-# Allow the job to push the built site to the gh-pages branch.
+# Permissions the native Pages deployment needs.
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
-# Never let two deploys race; the newest push wins.
+# Standard Pages concurrency group; let an in-flight deploy finish.
 concurrency:
-  group: deploy-pages
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -47,16 +50,24 @@ jobs:
         run: |
           rm -rf _site && mkdir -p _site
           cp dist/pantheon-registry.html _site/index.html
-          touch _site/.nojekyll
 
-      - name: Publish to gh-pages
-        run: |
-          cd _site
-          git init -q -b gh-pages
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -q -m "Deploy ${GITHUB_SHA} (run ${GITHUB_RUN_NUMBER})"
-          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Configure Pages (auto-enable on first run)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -37,12 +37,13 @@ inlines `app/data.js` and `app/styles.css`, and writes
 
 ## Deployment (GitHub Pages)
 
-`.github/workflows/deploy-pages.yml` rebuilds the artifact and publishes it as
-`index.html` on the `gh-pages` branch on every push to the trunk (or on demand via
-the **Actions** tab → *Run workflow*). Enable serving once under **Settings → Pages
-→ Deploy from a branch → `gh-pages` / `root`**; the live site is then at
-`https://<owner>.github.io/PantheonRepository/`. The deployed file is the production
-build (production React, SRI-pinned CDN libraries).
+`.github/workflows/deploy-pages.yml` rebuilds the artifact and deploys it through
+GitHub's native Pages pipeline (`actions/deploy-pages`) on every push to the trunk
+(or on demand via the **Actions** tab → *Run workflow*). The first run enables Pages
+automatically (`actions/configure-pages` with `enablement: true`) and creates a
+`github-pages` Deployment with a clickable URL, serving the production build
+(production React, SRI-pinned CDN libraries) at
+`https://<owner>.github.io/PantheonRepository/`.
 
 ## Project layout
 
