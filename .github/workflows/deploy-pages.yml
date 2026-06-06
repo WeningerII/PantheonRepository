@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+# Rebuilds the single-file artifact with build.py and publishes it to the
+# gh-pages branch (which GitHub Pages serves). Runs on every push to the
+# trunk, or on demand. Uses only the built-in GITHUB_TOKEN — no PATs, no
+# third-party actions.
+on:
+  push:
+    branches:
+      - main
+      - claude/intelligent-volta-ZwLAt
+  workflow_dispatch:
+
+# Allow the job to push the built site to the gh-pages branch.
+permissions:
+  contents: write
+
+# Never let two deploys race; the newest push wins.
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install build dependency (@babel/standalone)
+        run: npm install --no-audit --no-fund
+
+      - name: Build single-file artifact
+        run: python3 build.py
+
+      - name: Assemble Pages site
+        run: |
+          rm -rf _site && mkdir -p _site
+          cp dist/pantheon-registry.html _site/index.html
+          touch _site/.nojekyll
+
+      - name: Publish to gh-pages
+        run: |
+          cd _site
+          git init -q -b gh-pages
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy ${GITHUB_SHA} (run ${GITHUB_RUN_NUMBER})"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
