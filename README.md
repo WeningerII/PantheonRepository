@@ -47,6 +47,21 @@ One-time setup: enable Pages under **Settings → Pages → Build and deployment
 Source: GitHub Actions** (GitHub does not allow the Actions token to enable Pages on
 the first run). After that, deploys are automatic.
 
+## Tests
+
+```bash
+npm install   # installs the test-only devDependencies (jsdom + the React/d3/
+              # topojson builds the app otherwise loads from a CDN)
+npm test      # node --test
+```
+
+`test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
+corpus (601 figures, 56 territories, the `window.__PR` surface, no hard-schema
+violations). `test/render.test.cjs` boots the whole app in jsdom and exercises the
+views, keyboard shortcuts, and the detail panel — including a regression test for
+the Lifecycle column layout. `.github/workflows/ci.yml` runs the build and the
+suite on every push and pull request.
+
 ## Project layout
 
 ```

@@ -5,9 +5,17 @@
   "description": "Multi-tradition registry of mythological and historical figures across 50 traditions, 601 entries.",
   "scripts": {
     "build": "python3 build.py",
-    "dev": "python3 -m http.server 8000"
+    "dev": "python3 -m http.server 8000",
+    "test": "node --test --test-force-exit test/*.test.cjs"
   },
   "dependencies": {
     "@babel/standalone": "^7.28.4"
+  },
+  "devDependencies": {
+    "d3": "7.9.0",
+    "jsdom": "29.1.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "topojson": "3.0.2"
   }
 }
