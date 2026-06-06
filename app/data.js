@@ -9,8 +9,7 @@
 //
 //  IIFE-wrapped because classic-script top-level const/let/class declarations
 //  share script scope across all <script> tags on a page. state.jsx also
-//  declares PEOPLE_KEY, ATLAS_KEY, FALLBACK_PIGMENTS, colorForTradition,
-//  getEntryDates at top level — without the IIFE wrap, the second
+//  declares PEOPLE_KEY, ATLAS_KEY, and getEntryDates at top level — without the IIFE wrap, the second
 //  declaration throws "Identifier already declared" and the page dies.
 //  Only the window.__PR seam and the localStorage writes leak out, which
 //  is the exact interface the new UI was authored against.
@@ -110,17 +109,6 @@ const TRADITION_PIGMENTS = {
   'Kapon':               '#3a6a7a',  // Kaieteur waterfall mist-blue — the misted-spray blue-gray of the Kaieteur Falls (the largest single-drop waterfall on the Potaro River, sacred to the Patamonan-Akawaio Kapon tradition); the iconographic anchor of Kapon cosmological-cultural identity through the Makonaima-and-Tukuipan Kaieteur-origin narrative documented by W. H. Brett (1868) and the continuing Patamonan oral tradition
   'Hittite':             '#5a544a',  // Yazılıkaya stone-slate — the weathered limestone-relief gray of the Yazılıkaya open-air sanctuary near Hattusa, where the Hittite imperial pantheon is depicted in two procession-relief chambers (Chambers A and B, 13th-c. BCE Hattusili III/Tudhaliya IV reconfiguration); the iconographic anchor of Hittite imperial religious-architectural identity, the most-extensive Hittite-period rock-relief monument
   'Levantine':           '#6a7a4a',  // Cedar of Lebanon green-bronze — the deep green of the Cedrus libani foliage that anchored the Levantine-Phoenician timber-export economy and Solomon's Temple construction (1 Kings 5-6, c. 10th c. BCE); the cedar of Lebanon is the foundational Levantine arboreal-material-cultural symbol, encoded in the modern Lebanese flag and continuing as the central Levantine biogeographic-and-symbolic anchor
-};
-
-const FALLBACK_PIGMENTS = [
-  '#5a7a52', '#7a4a5a', '#a08a5a', '#4a7a6a', '#7a5a3a',
-  '#5a4a7a', '#8a6a3a', '#3a6a5a', '#7a3a4a', '#5a6a3a',
-];
-const colorForTradition = (tradition) => {
-  if (TRADITION_PIGMENTS[tradition]) return TRADITION_PIGMENTS[tradition];
-  let h = 0;
-  for (let i = 0; i < (tradition || '').length; i++) h = ((h << 5) - h + tradition.charCodeAt(i)) | 0;
-  return FALLBACK_PIGMENTS[Math.abs(h) % FALLBACK_PIGMENTS.length];
 };
 
 // ═════════════════════════════════════════════════════════════════════════════
@@ -1332,7 +1320,7 @@ const buildPeopleSeed = () => {
   //   cult            (legacy v2 shape) { centers[], festivals[], sacrifices[] }
   //                   centers[]: { placeName, period, sources, ... }
   //                   Some entries use cult.cultCenters instead of
-  //                   cult.centers — both are read by getCultRecords.
+  //                   cult.centers — the detail panel reads both shapes.
   //   cultRecords[]   (v3 shape, preferred for new entries)
   //                   { tradition, placeName, kind, period, attestation,
   //                     source, note? } per record.
@@ -1387,8 +1375,8 @@ const buildPeopleSeed = () => {
   //   names[]         { tradition, primary, alt, transliterations,
   //                     etymology }
   //                   Use for figures with full multi-tradition naming.
-  //                   When present, getName() and getTraditions() prefer
-  //                   this over the singular `name` field.
+  //                   When present, the UI's displayName() (app/state.jsx)
+  //                   prefers this over the singular `name` field.
   //
   // ─── INTEGRATION POINTS ───
   //
@@ -1404,26 +1392,15 @@ const buildPeopleSeed = () => {
   //
   // ─── ACCESSORS — read these instead of reaching into entries directly ───
   //
-  //   getName(person)              → primary display name
-  //   getAltNames(person)          → alternative names array
-  //   getPrimaryTradition(person)  → primaryTradition || tradition || null
-  //   getNameRecords(person)       → v3 names[] array (each with tradition,
-  //                                      primary, alt, transliterations)
-  //   getNameInTradition(person, tradition) → tradition-specific name from
-  //                                      names[] array, falls back to
-  //                                      primary name
-  //   getTraditions(person, peopleMap?) → tradition array (auto-computes
-  //                                      from parents when peopleMap provided)
-  //   getCultRecords(person)       → unified v3 cult-record shape across
-  //                                      legacy v2/v1 cult.centers and
-  //                                      cult.cultCenters variants
   //   getEntryDates(entry)         → resolved {mythicStart, mythicEnd,
   //                                      textualStart, textualEnd, precision}
   //                                      pulling from entry overrides or
-  //                                      ERA_DATES fallback
-  //   classifyDivinity(person)     → 'deity'|'demigod'|... per type
-  //   divinityFraction(id, peopleMap) → numeric fraction for scion-tier
-  //                                      computed-divinity calculation
+  //                                      ERA_DATES fallback (also on window.__PR)
+  //   classifyDivinity(person, peopleMap) → 'deity'|'demigod'|... computed tier
+  //   divinityFraction(id, peopleMap)     → numeric fraction for the tier math
+  //
+  //   Name / tradition / cult DISPLAY accessors live in the UI layer
+  //   (app/state.jsx: displayName, altNames, transliterations, colorForTradition).
   //
   // ─── BANNED PHRASES (audited) ───
   // AUDIT-IGNORE-START
@@ -25588,61 +25565,6 @@ const buildPeopleSeed = () => {
 // a fresh seed-load so every client lands on the corrected authored types.
 const PEOPLE_KEY = 'pantheon_registry_v8';
 const ATLAS_KEY = 'pantheon_atlas_v2';
-const BACKUP_KEY = 'pantheon_registry_backups';
-const BACKUP_MAX = 5;          // keep last N snapshots
-const BACKUP_MIN_INTERVAL_MS = 6 * 60 * 60 * 1000; // 6 hours between auto-snapshots
-
-const storageGet = async (key) => {
-  try {
-    const r = await window.storage.get(key);
-    if (r?.value) return JSON.parse(r.value);
-  } catch (e) {}
-  return null;
-};
-const storageSet = async (key, data) => {
-  try { await window.storage.set(key, JSON.stringify(data)); return true; }
-  catch (e) { console.error('Save failed:', e); return false; }
-};
-
-// Append a snapshot of the current people map to the rolling backup list.
-// Reasons: 'auto' (time-triggered), 'pre-import' (before destructive import),
-// 'pre-restore' (before restoring an older backup). Returns the new list.
-const writeBackup = async (peopleMap, reason = 'auto') => {
-  try {
-    const existing = (await storageGet(BACKUP_KEY)) || [];
-    const snapshot = {
-      timestamp: Date.now(),
-      reason,
-      entryCount: Object.keys(peopleMap || {}).length,
-      people: peopleMap || {},
-    };
-    const next = [snapshot, ...existing].slice(0, BACKUP_MAX);
-    await storageSet(BACKUP_KEY, next);
-    return next;
-  } catch (e) {
-    console.error('Backup write failed:', e);
-    return null;
-  }
-};
-
-// Auto-snapshot on session start IF the most recent backup is stale.
-// Throttle prevents thrashing storage when the artifact is reloaded
-// many times in a short window (e.g., during edits to the seed).
-const maybeAutoBackup = async (peopleMap) => {
-  try {
-    const existing = (await storageGet(BACKUP_KEY)) || [];
-    const last = existing[0];
-    const now = Date.now();
-    if (!last || (now - last.timestamp) >= BACKUP_MIN_INTERVAL_MS) {
-      await writeBackup(peopleMap, 'auto');
-      return true;
-    }
-    return false;
-  } catch (e) {
-    console.error('Auto-backup check failed:', e);
-    return false;
-  }
-};
 
 // ─── v2: Divinity fraction (Phase 2) ─────────────────────────────────────
 // Recursive average of parent fractions. Bottoms out at deity (1.0) and
@@ -25758,130 +25680,6 @@ const classifyDivinity = (person, peopleMap) => {
   if (f >= 0.375) return 'demigod';
   if (f >= 0.1875) return 'quartigod';
   return 'scion';
-};
-
-// Format a divinity fraction for marginalia display
-const formatFraction = (f) => {
-  if (f === null || f === undefined) return '—';
-  const eq = (a, b) => Math.abs(a - b) < 1e-9;
-  if (eq(f, 1)) return '1';
-  if (eq(f, 0)) return '0';
-  if (eq(f, 0.5)) return '½';
-  if (eq(f, 0.25)) return '¼';
-  if (eq(f, 0.75)) return '¾';
-  if (eq(f, 0.125)) return '⅛';
-  if (eq(f, 0.375)) return '⅜';
-  if (eq(f, 0.625)) return '⅝';
-  if (eq(f, 0.875)) return '⅞';
-  if (eq(f, 1/3)) return '⅓';
-  if (eq(f, 2/3)) return '⅔';
-  if (eq(f, 0.0625)) return '¹⁄₁₆';
-  if (eq(f, 0.03125)) return '¹⁄₃₂';
-  if (eq(f, 0.015625)) return '¹⁄₆₄';
-  if (eq(f, 0.0078125)) return '¹⁄₁₂₈';
-  return f.toFixed(3);
-};
-
-// ─── v2: Tradition fractions (Phase 3) ────────────────────────────────────
-// Each parent slot contributes ½ of their tradition fractions to the child.
-// Recurses through the genealogy until reaching leaf ancestors (no parents
-// in registry), at which point the leaf's primaryTradition becomes their
-// fraction's source.
-//
-// Missing parent slots — when parentIds has fewer than 2 entries, or when a
-// parentId points to a person not in the registry — default to the focused
-// person's own primaryTradition. Most charitable assumption: the unattested
-// parent shared the cultural background of the figure they fathered/birthed.
-//
-// Cycle-safe via visited set. For the rare case of mythological cycles
-// (Pelopid loop), revisited branches contribute nothing.
-//
-// Returns a map { [tradition: string]: number } summing to ~1.0 (modulo
-// missing-tradition edge cases). Sorted by share descending at the call site.
-const getPrimaryTradition = (person) => person?.primaryTradition || person?.tradition || null;
-
-const traditionFractions = (personId, peopleMap, visited = new Set()) => {
-  if (visited.has(personId)) return {};
-  const person = peopleMap[personId];
-  if (!person) return {};
-
-  const trad = getPrimaryTradition(person);
-  const parentIds = person.parentIds || [];
-
-  // Leaf ancestor: no parents → entirely person's own tradition
-  if (parentIds.length === 0) {
-    return trad ? { [trad]: 1.0 } : {};
-  }
-
-  const nextVisited = new Set(visited);
-  nextVisited.add(personId);
-
-  // Always 2-slot averaging unless 3+-parent claim. Each slot weighs 1/slotCount.
-  const slotCount = Math.max(2, parentIds.length);
-  const result = {};
-
-  parentIds.forEach(pid => {
-    const parent = peopleMap[pid];
-    if (parent) {
-      const parentFractions = traditionFractions(pid, peopleMap, nextVisited);
-      Object.entries(parentFractions).forEach(([t, share]) => {
-        result[t] = (result[t] || 0) + share / slotCount;
-      });
-    } else if (trad) {
-      // Dangling parentId: assume self-tradition for that slot
-      result[trad] = (result[trad] || 0) + 1.0 / slotCount;
-    }
-  });
-
-  // Empty slots (parentIds shorter than slotCount): assume self-tradition
-  const emptySlots = slotCount - parentIds.length;
-  if (emptySlots > 0 && trad) {
-    result[trad] = (result[trad] || 0) + emptySlots / slotCount;
-  }
-
-  return result;
-};
-
-// ─── v2: Faculty inheritance candidates (Phase 5) ───────────────────────────
-// BFS upward through ancestry; collect faculties tagged inheritability 'full'
-// or 'partial' (skipping 'none'). Returns a deduped list keyed by faculty.id,
-// keeping the closest ancestor as the attribution source. Candidates the
-// focused person already declares as their own are filtered out — the panel
-// is actionable signal for what the author could add.
-//
-// Cycle-safe via visited set; max depth caps the walk for sanity.
-const inheritableFacultyCandidates = (personId, peopleMap, opts = {}) => {
-  const { maxDepth = 8 } = opts;
-  const focus = peopleMap[personId];
-  if (!focus) return [];
-  const ownFacultyIds = new Set((focus.faculties || []).map(f => f.id));
-
-  const accumulated = new Map(); // faculty.id → { faculty, fromAncestor, generation }
-  const walk = (id, generation, visited) => {
-    if (generation > maxDepth) return;
-    if (visited.has(id)) return;
-    const p = peopleMap[id];
-    if (!p) return;
-    const nv = new Set(visited); nv.add(id);
-
-    if (generation > 0) {
-      (p.faculties || []).forEach(f => {
-        if (f.inheritability === 'none') return;
-        if (ownFacultyIds.has(f.id)) return;
-        const existing = accumulated.get(f.id);
-        if (!existing || generation < existing.generation) {
-          accumulated.set(f.id, { faculty: f, fromAncestor: p, generation });
-        }
-      });
-    }
-
-    (p.parentIds || []).forEach(pid => walk(pid, generation + 1, nv));
-  };
-  walk(personId, 0, new Set());
-
-  return [...accumulated.values()].sort((a, b) =>
-    a.generation - b.generation || a.faculty.id.localeCompare(b.faculty.id)
-  );
 };
 
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
@@ -26326,199 +26124,6 @@ const migrate = (peopleMap) => {
   }
 
   return next;
-};
-
-// Resolve display name across v1 (string), v2 ({primary, ...}), and v3
-// (names: [{value, tradition, period, script, source, note?}, ...]) shapes.
-// v3 takes precedence — its first entry is canonical primary.
-const getName = (person) => {
-  if (!person) return '';
-  if (Array.isArray(person.names) && person.names.length > 0) {
-    return person.names[0].value || '';
-  }
-  if (!person.name) return '';
-  if (typeof person.name === 'string') return person.name;
-  return person.name.primary || '';
-};
-const getAltNames = (person) => {
-  if (!person) return [];
-  if (Array.isArray(person.names) && person.names.length > 1) {
-    return person.names.slice(1).map(n => n.value).filter(Boolean);
-  }
-  if (Array.isArray(person.altNames)) return person.altNames;
-  if (person.name && Array.isArray(person.name.alt)) return person.name.alt;
-  return [];
-};
-// Return the full v3 records (for tradition-aware display, hover panels, etc.).
-// Empty array if entry uses v1/v2 only.
-const getNameRecords = (person) => {
-  if (!person || !Array.isArray(person.names)) return [];
-  return person.names;
-};
-// Return the name attested in a given tradition, or null if not present.
-const getNameInTradition = (person, tradition) => {
-  if (!person || !tradition) return null;
-  if (Array.isArray(person.names)) {
-    const hit = person.names.find(n => n.tradition === tradition);
-    if (hit) return hit.value;
-  }
-  // Fallback: if the person's primary tradition matches, return primary.
-  if (person.tradition === tradition) return getName(person);
-  return null;
-};
-// Return all traditions this entry is attested under, walking v3 traditions
-// array first, then v3 names array, then falling back to single tradition.
-// Return the list of traditions a person belongs to. Reads from explicit
-// `traditions` array first, then v3 names array, then auto-computes from
-// immediate parents when peopleMap is provided, then falls back to single
-// tradition.
-//
-// AUTO-COMPUTE BEHAVIOR (when peopleMap is passed):
-//   For cross-tradition figures (Egyptian father, Greek mother, etc.) the
-//   traditions array can be left unset on the entry. getTraditions will
-//   walk one generation up and collect each parent's tradition (or their
-//   explicit traditions array if present), prepending the figure's own
-//   primary tradition. This does NOT propagate ancestry deeper — Roman
-//   descendants of Aeneas remain Roman, not Greek, unless an intermediate
-//   ancestor is explicitly multi-tradition.
-//
-//   To suppress auto-compute (e.g., a Hellenized Egyptian who is culturally
-//   Egyptian-only despite Greek paternal lineage), set explicit
-//   traditions: ['Egyptian'] on the entry. Single-element explicit arrays
-//   are honored as overrides.
-//
-//   When peopleMap is omitted (legacy callers), behavior is the original
-//   single-tradition fallback.
-const getTraditions = (person, peopleMap = null) => {
-  if (!person) return [];
-  // Explicit array — author override always wins.
-  if (Array.isArray(person.traditions) && person.traditions.length > 0) {
-    return person.traditions;
-  }
-  // v3 names array
-  if (Array.isArray(person.names)) {
-    const ts = [...new Set(person.names.map(n => n.tradition).filter(Boolean))];
-    if (ts.length > 0) return ts;
-  }
-  // Auto-compute from immediate parents when peopleMap provided.
-  if (peopleMap && Array.isArray(person.parentIds) && person.parentIds.length > 0) {
-    const result = [];
-    if (person.tradition) result.push(person.tradition);
-    person.parentIds.forEach(pid => {
-      const p = peopleMap[pid];
-      if (!p) return;
-      // Deity-class parents: read only their primary `tradition`. Their
-      // explicit `traditions` array (when present) encodes interpretatio
-      // — the deity is *worshipped* across multiple cultures — which is
-      // distinct from a child's cultural-genetic inheritance. Heracles is
-      // Greek, not Greek+Etruscan+Roman, even though Zeus's cult spans
-      // those traditions.
-      // Mortal/demigod/scion parents: read explicit traditions array if
-      // present (cross-tradition figures like Hen-em-Waset propagate),
-      // else fall back to single tradition.
-      const isDeityClass = p.type === 'deity' || p.type === 'cosmic';
-      const parentTraditions = isDeityClass
-        ? (p.tradition ? [p.tradition] : [])
-        : (Array.isArray(p.traditions) && p.traditions.length > 0
-            ? p.traditions
-            : (p.tradition ? [p.tradition] : []));
-      parentTraditions.forEach(t => {
-        if (!result.includes(t)) result.push(t);
-      });
-    });
-    if (result.length > 1) return result;
-  }
-  return person.tradition ? [person.tradition] : [];
-};
-// Return cult records (v3 multi-cult support). Each record:
-// { tradition, placeName, kind, period, attestation, source, note? }
-// Falls back to legacy v2/v1 cult shapes when no cultRecords array is
-// present, synthesizing the v3 record shape from either cult.centers or
-// cult.cultCenters (the Egyptian section uses the camelCase variant). The
-// entire registry surfaces uniformly through this single accessor without
-// per-entry migration churn.
-const getCultRecords = (person) => {
-  if (!person) return [];
-  if (Array.isArray(person.cultRecords)) return person.cultRecords;
-  if (person.cult) {
-    const tradition = person.primaryTradition || person.tradition || '';
-    const legacy = (Array.isArray(person.cult.centers) && person.cult.centers)
-                || (Array.isArray(person.cult.cultCenters) && person.cult.cultCenters)
-                || null;
-    if (legacy) {
-      return legacy.map(c => ({
-        tradition,
-        placeName: c.placeName,
-        kind: 'cult-center',
-        period: c.period || '',
-        attestation: c.notes || '',
-        source: (c.sources && c.sources[0]) || null,
-      }));
-    }
-  }
-  return [];
-};
-
-// ═════════════════════════════════════════════════════════════════════════════
-//  HELPERS
-// ═════════════════════════════════════════════════════════════════════════════
-const uid = () => `p_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
-
-// Detect 2D winding order. Positive shoelace = counter-clockwise in standard math
-// convention. d3-geo treats CCW rings as exterior on the sphere, which makes the
-// polygon's "interior" become the rest of the world — covering the entire map.
-// d3-geo wants CW for these small regional polygons. This function returns true
-// if a ring needs to be reversed.
-const isCCW = (coords) => {
-  if (!coords || coords.length < 3) return false;
-  let sum = 0;
-  for (let i = 0; i < coords.length - 1; i++) {
-    sum += coords[i][0] * coords[i+1][1] - coords[i+1][0] * coords[i][1];
-  }
-  return sum > 0;
-};
-const ensureCW = (coords) => isCCW(coords) ? coords.slice().reverse() : coords;
-
-const territoryToFeature = (territory) => {
-  if (!territory || !territory.polygons || territory.polygons.length === 0) return null;
-  if (territory.polygons.length === 1) return { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ensureCW(territory.polygons[0].coords)] } };
-  return { type: 'Feature', geometry: { type: 'MultiPolygon', coordinates: territory.polygons.map(p => [ensureCW(p.coords)]) } };
-};
-const computeCentroid = (territory) => {
-  const f = territoryToFeature(territory); if (!f) return [0, 0];
-  try { return d3.geoCentroid(f); } catch { return [0, 0]; }
-};
-
-// Canonical Sources — BFS upward from an original character, stop at first canon ancestor on each branch.
-const computeCanonicalSources = (personId, peopleMap) => {
-  const person = peopleMap[personId];
-  if (!person || person.origin !== 'original') return null;
-  const sources = {}; // tradition -> [{ ancestor, depth }]
-  const visit = (id, depth) => {
-    const p = peopleMap[id]; if (!p) return;
-    if (p.origin === 'canon') {
-      sources[p.tradition] = sources[p.tradition] || [];
-      sources[p.tradition].push({ ancestor: p, depth });
-      return;
-    }
-    (p.parentIds || []).forEach(pid => visit(pid, depth + 1));
-  };
-  (person.parentIds || []).forEach(pid => visit(pid, 1));
-  return sources;
-};
-const depthLabel = (d) => {
-  if (d === 1) return 'parent';
-  if (d === 2) return 'grandparent';
-  if (d === 3) return 'great-grandparent';
-  if (d === 4) return 'great-great-grandparent';
-  return 'ancestor';
-};
-
-// Edge crosses canon/original boundary?
-const isBloodlineEdge = (parentId, childId, peopleMap) => {
-  const p = peopleMap[parentId], c = peopleMap[childId];
-  if (!p || !c) return false;
-  return (p.origin || 'canon') !== (c.origin || 'canon');
 };
 
 // ─── v2: Era ordering per tradition (controlled vocabulary) ─────────────────
@@ -27907,145 +27512,6 @@ const getEntryDates = (entry) => {
   };
 };
 
-// ─── Display formatters ──────────────────────────────────────────────────────
-// The data layer stores BCE as negative integers (-750 = 750 BCE) and CE as
-// positive integers (200 = 200 CE) so that range queries, sorting, and slider
-// math work cleanly. The display layer is responsible for converting these
-// into human-readable strings — never show raw negative numbers in the UI.
-//
-// formatYear is defined later in the file (already in use by the React layer);
-// it converts a single integer year to "750 BCE" / "200 CE" / '' (empty for null).
-//
-// formatYearRange(start, end, opts)
-//   → '750-700 BCE'              (both BCE, era abbreviation pulled to the end)
-//   → '100 BCE - 50 CE'           (crosses the BCE/CE boundary)
-//   → '1159-1189 CE'             (both CE)
-//   → '750 BCE - present'        (textual range still ongoing)
-//   → 'eternal'                  (cosmic — both null)
-//   → 'before recorded time'     (mythic-internal null but textual exists)
-// opts.cosmicLabel and opts.ongoingLabel let callers customize the special-case
-// strings if 'eternal' / 'present' aren't right for the rendering context.
-//
-// We define this as a hoisted function (not const arrow) so it can be called
-// from formatEntryDates below without depending on the const formatYear that
-// is declared later in the file.
-function formatYearRange(start, end, opts) {
-  opts = opts || {};
-  const cosmicLabel  = opts.cosmicLabel  || 'eternal';
-  const ongoingLabel = opts.ongoingLabel || 'present';
-
-  // Inline year formatter — duplicates the small formatYear logic so this
-  // function is self-contained and can be hoisted above the const formatYear
-  // declaration site.
-  const fmt = (y) => {
-    if (y === null || y === undefined) return '';
-    if (y === 0) return '1 CE';
-    return y < 0 ? `${-y} BCE` : `${y} CE`;
-  };
-
-  if (start === null && end === null) return cosmicLabel;
-  if (start === null) return `before ${fmt(end)}`;
-  if (end === null)   return `${fmt(start)} - ${ongoingLabel}`;
-
-  const startBCE = start < 0;
-  const endBCE   = end < 0;
-
-  // Both same era — collapse the era abbreviation to the end
-  if (startBCE && endBCE) {
-    if (start === end) return `${-start} BCE`;
-    return `${-start}-${-end} BCE`;
-  }
-  if (!startBCE && !endBCE) {
-    if (start === end) return `${start} CE`;
-    return `${start}-${end} CE`;
-  }
-  // Crosses the era boundary
-  return `${fmt(start)} - ${fmt(end)}`;
-}
-
-// formatEntryDates(entry) — high-level convenience formatter combining
-// getEntryDates + formatYearRange. Returns an object with display-ready
-// strings for both axes. Callers can also use the underlying integer fields
-// from getEntryDates() directly when they need to do math (slider position,
-// contemporary lookup, sorting).
-function formatEntryDates(entry) {
-  const d = getEntryDates(entry);
-  const cosmicLabel = d.precision === 'cyclical'
-    ? 'cyclical (this-cycle anchor follows)'
-    : (d.precision === 'cosmic' ? 'eternal' : 'unknown');
-  return {
-    mythic:  formatYearRange(d.mythicStart,  d.mythicEnd, { cosmicLabel: cosmicLabel }),
-    textual: formatYearRange(d.textualStart, d.textualEnd),
-    precision: d.precision,
-    raw: d,  // include integer fields for math
-  };
-}
-
-// ─── Timeline filter helpers ─────────────────────────────────────────────────
-// isAliveAtYear(entry, year, opts) — returns true if the entry's mythic-internal
-// time brackets the given year. Used by the Atlas timeline slider to filter
-// the displayed roster.
-//
-// Behavior by precision class:
-//   cosmic:     always returns true (gods exist outside time; show always)
-//   cyclical:   uses this-cycle BCE anchor brackets; true within mythicStart..mythicEnd
-//   specific/century/generation-bracket/era-only: true within mythicStart..mythicEnd
-//   unknown precision (no mythic dates resolved): returns true (don't hide what we don't know)
-//
-// opts.includeCosmic = false makes cosmic figures opt-out (rarely useful — defaults true).
-// opts.axis = 'mythic' (default) | 'textual' selects which time axis to bracket against.
-const isAliveAtYear = (entry, year, opts = {}) => {
-  const includeCosmic = opts.includeCosmic !== false;
-  const axis = opts.axis || 'mythic';
-  
-  const d = getEntryDates(entry);
-  if (!d) return true;  // no resolution: don't hide
-  
-  if (d.precision === 'cosmic') return includeCosmic;
-  
-  const start = axis === 'textual' ? d.textualStart : d.mythicStart;
-  const end   = axis === 'textual' ? d.textualEnd   : d.mythicEnd;
-  
-  // Both null = unknown range; include rather than hide
-  if (start === null && end === null) return true;
-  
-  // Open-ended ranges: extend to ±Infinity
-  const lo = start === null ? -Infinity : start;
-  const hi = end   === null ?  Infinity : end;
-  
-  return year >= lo && year <= hi;
-};
-
-// contemporariesAtYear(year, peopleMap, opts) — returns the array of entries
-// whose mythic-internal time brackets the given year. Sorted by tradition then
-// name for stable display.
-const contemporariesAtYear = (year, peopleMap, opts = {}) => {
-  const out = [];
-  Object.values(peopleMap || {}).forEach(p => {
-    if (isAliveAtYear(p, year, opts)) out.push(p);
-  });
-  out.sort((a, b) => {
-    const at = a.tradition || ''; const bt = b.tradition || '';
-    if (at !== bt) return at.localeCompare(bt);
-    return (a.name?.primary || a.id || '').localeCompare(b.name?.primary || b.id || '');
-  });
-  return out;
-};
-
-// traditionsActiveAtYear(year, peopleMap, opts) — returns Set of tradition names
-// that have at least one non-cosmic entry alive at the given year.
-const traditionsActiveAtYear = (year, peopleMap, opts = {}) => {
-  const active = new Set();
-  Object.values(peopleMap || {}).forEach(p => {
-    if (!p.tradition) return;
-    // For "active at year", exclude cosmic — cosmic figures don't anchor a tradition to a moment
-    if (isAliveAtYear(p, year, { ...opts, includeCosmic: false })) {
-      active.add(p.tradition);
-    }
-  });
-  return active;
-};
-
 // ─── v2: Status at conception (Revision C cascade with eraOrdering) ─────────
 // Returns the parent's typeStatus active at the child's conception era+ordering.
 // Falls back to parent.type when lifecycle data is sparse — correct in nearly
@@ -28080,21 +27546,6 @@ const statusAtConception = (childId, parentId, peopleMap) => {
   const last = candidates[candidates.length - 1];
   return last.typeStatus || last.vitalStatus || parent.type;
 };
-
-// ─── v2: Determine if a content layer is populated ──────────────────────────
-const hasContent = (obj) => {
-  if (!obj) return false;
-  if (Array.isArray(obj)) return obj.length > 0;
-  if (typeof obj !== 'object') return Boolean(obj);
-  return Object.values(obj).some(v => Array.isArray(v) ? v.length > 0 : Boolean(v));
-};
-
-// ─── v2: Format a CE/BCE year for display ──────────────────────────────────
-const formatYear = (year) => {
-  if (year === null || year === undefined) return '';
-  return year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`;
-};
-
 
 // ═══════════════════════════════════════════════════════════════════════════
 //  Synchronous seed at module load.

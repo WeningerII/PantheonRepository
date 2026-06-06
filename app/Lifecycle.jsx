@@ -110,6 +110,10 @@ function buildPlot(lc, tradition, width) {
   const visibleSpans = eraSpans.slice(lo, hi + 1);
   const tMin = visibleSpans[0].start;
   const tMax = visibleSpans[visibleSpans.length - 1].end;
+  // Degenerate span (single zero-width era, or unparseable bounds) would make
+  // xFor divide by zero and emit NaN coordinates — fall back to the unscaled
+  // progression instead.
+  if (!(tMax > tMin)) return { mode: 'fallback', stages: lc };
 
   const plotW = Math.max(280, width - PAD_X * 2);
   const xFor = (year) => PAD_X + ((year - tMin) / (tMax - tMin)) * plotW;

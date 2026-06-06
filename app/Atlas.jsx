@@ -91,6 +91,7 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
   const containerRef = __aRef(null);
   const svgRef = __aRef(null);
   const gRef = __aRef(null);
+  const zoomRef = __aRef(null);
   const [size, setSize] = __aState({ w: 0, h: 0 });
   const [zoomK, setZoomK] = __aState(1);
 
@@ -138,6 +139,7 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
         if (gRef.current) gRef.current.setAttribute('transform', e.transform.toString());
         setZoomK(e.transform.k);
       });
+    zoomRef.current = zoom;
     d3.select(svgRef.current).call(zoom);
     return () => { try { d3.select(svgRef.current).on('.zoom', null); } catch (_) {} };
   }, [size.w, size.h]);
@@ -196,9 +198,9 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
   }, [visibleTraditions, atlas, projection]);
 
   const resetZoom = __aCb(() => {
-    if (!svgRef.current || !window.d3) return;
-    const d3 = window.d3;
-    d3.select(svgRef.current).transition().duration(400).call(d3.zoom().transform, d3.zoomIdentity);
+    if (!svgRef.current || !window.d3 || !zoomRef.current) return;
+    window.d3.select(svgRef.current).transition().duration(400)
+      .call(zoomRef.current.transform, window.d3.zoomIdentity);
   }, []);
 
   const toggleLayer = __aCb((k) => setLayers(s => ({ ...s, [k]: !s[k] })), []);

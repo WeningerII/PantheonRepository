@@ -729,6 +729,14 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     return s;
   }, [hoverNode, graph.links]);
 
+  // Node depth by id — O(1) lookup for edgeOpacity instead of scanning
+  // graph.nodes for both endpoints of every edge on every render.
+  const depthById = __gMemo(() => {
+    const m = new Map();
+    graph.nodes.forEach(n => m.set(n.id, n.depth));
+    return m;
+  }, [graph.nodes]);
+
   // Compute display opacity for a node at the active depth.
   const nodeOpacity = (n) => {
     // Hidden by legend tier toggle
@@ -765,8 +773,8 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     }
     if (hoverNode) return (sId === hoverNode || tId === hoverNode) ? 1 : 0.10;
     if (!focusId)  return 1;
-    const sd = graph.nodes.find(n => n.id === sId)?.depth ?? 99;
-    const td = graph.nodes.find(n => n.id === tId)?.depth ?? 99;
+    const sd = depthById.get(sId) ?? 99;
+    const td = depthById.get(tId) ?? 99;
     const min = Math.min(sd, td);
     if (min === 0) return 1;
     if (min === 1) return 0.55;
