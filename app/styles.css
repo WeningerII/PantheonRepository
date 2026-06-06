@@ -1,0 +1,2831 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Pantheon Registry — frontend rebuild
+   Specialist-tool aesthetic. Light. Keyboard-first. Monochrome chrome,
+   single accent, type does the work.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Surface */
+  --bg:         #FAFAF7;     /* paper, warm off-white */
+  --surface:    #FFFFFF;     /* raised surfaces, detail panel */
+  --surface-2:  #F2F1EC;     /* sunken, table row hover */
+  --backdrop:   rgba(15, 15, 14, 0.32);
+
+  /* Ink */
+  --ink:        #0B0B0B;
+  --ink-2:      #2A2A2A;
+  --ink-3:      #555555;
+  --mute:       #777472;
+  --faint:      #A8A6A2;
+
+  /* Rule */
+  --rule:       rgba(0, 0, 0, 0.10);
+  --rule-2:     rgba(0, 0, 0, 0.05);
+  --rule-3:     rgba(0, 0, 0, 0.025);
+
+  /* Accent — single, restrained, editorial brick */
+  --accent:     #B5371F;
+  --accent-2:   #8C2A18;
+  --accent-bg:  rgba(181, 55, 31, 0.06);
+  --accent-ring: rgba(181, 55, 31, 0.28);
+
+  /* Type-tier hues — categorical, used as tiny dots/letters only.
+     Tuned to read on the cream paper background. */
+  --t-deity:     #9C6B17;     /* gold-ink */
+  --t-demigod:   #8B3A1F;     /* umber */
+  --t-quartigod: #6A5A45;     /* bronze-gray */
+  --t-scion:     #3F6B4A;     /* leaf-green */
+  --t-mortal:    #5A5550;     /* slate */
+
+  /* Origin — original-fiction flag */
+  --origin-mark: #1F4E79;     /* deep ink-blue */
+
+  /* Type system */
+  --font-sans:   'Geist', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:   'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif:  'Newsreader', 'Source Serif Pro', Georgia, serif;
+
+  /* Sizes */
+  --fs-meta:    10px;
+  --fs-body:    13px;
+  --fs-body-2:  12px;
+  --fs-name:    14px;
+  --fs-display: 28px;
+  --fs-h2:      18px;
+
+  /* Spacing */
+  --row-h:      32px;    /* dense table row */
+  --bar-h:      44px;    /* top bar */
+  --rail-w:     248px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 var(--fs-body)/1.5 var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  font: inherit; color: inherit;
+  background: none; border: 0; padding: 0;
+  cursor: pointer;
+}
+
+input, textarea {
+  font: inherit; color: inherit;
+  background: transparent; border: 0;
+}
+input:focus, textarea:focus, button:focus { outline: none; }
+
+/* Keyboard-only focus rings. The shell is keyboard-first; users who tab
+   through deserve a precise indicator, but pointer users don't need one. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+button:focus-visible,
+[role="checkbox"]:focus-visible,
+.btn:focus-visible,
+.rail-row:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection { background: var(--accent-bg); color: var(--ink); }
+
+/* ── Unified button system ─────────────────────────────────────────────
+   .btn        - base: monospace label, 1px rule, hover ⇒ surface-2
+   .btn-mono   - default; small caps mono (chrome buttons)
+   .btn-serif  - serif label (content-tied actions, e.g. detail nav)
+   .btn-ghost  - no border, no background, hover lifts (icon buttons)
+   .btn-accent - brick accent, used sparingly (Inscribe, Emend, primary)
+   .btn-on     - persistent toggle on-state
+   .btn-sm     - 22px, used in dense bars
+   .btn-md     - 28px (default)
+   ────────────────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 28px; padding: 0 11px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .12s ease, color .12s ease, border-color .12s ease;
+}
+.btn:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+  border-color: rgba(0,0,0,0.18);
+}
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background: var(--surface);
+}
+.btn.btn-sm { height: 22px; padding: 0 8px; font-size: 9.5px; }
+
+.btn.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--mute);
+}
+.btn.btn-ghost:hover {
+  background: var(--surface-2);
+  color: var(--ink);
+  border-color: transparent;
+}
+
+.btn.btn-accent {
+  color: var(--accent);
+  border-color: var(--accent-ring);
+  background: var(--surface);
+}
+.btn.btn-accent:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent-2);
+}
+
+.btn.btn-on {
+  color: var(--ink);
+  background: var(--surface-2);
+  border-color: rgba(0,0,0,0.18);
+}
+
+/* Inline keystroke hints inside buttons or text */
+.kbd-hint {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 16px; height: 16px;
+  padding: 0 4px;
+  margin-left: 6px;
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  text-transform: none;
+}
+.btn:hover .kbd-hint { color: var(--ink-3); }
+
+/* Segmented control — group of buttons that share borders. */
+.btn-group {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.btn-group .btn {
+  height: 26px;
+  border-radius: 0;
+  border-width: 0 1px 0 0;
+  border-color: var(--rule);
+  background: transparent;
+}
+.btn-group .btn:last-child { border-right: 0; }
+.btn-group .btn.btn-on {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+.btn-group .btn:hover {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+/* ── Top-level layout ──────────────────────────────────────────────────── */
+
+.shell {
+  display: grid;
+  grid-template-rows: var(--bar-h) 1fr;
+  height: 100vh; min-height: 0;
+}
+
+.shell-body {
+  display: grid;
+  grid-template-columns: var(--rail-w) 1fr;
+  min-height: 0;
+}
+
+.shell-rail {
+  border-right: 1px solid var(--rule);
+  background: var(--bg);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  min-height: 0;
+}
+
+.shell-main {
+  display: flex; flex-direction: column;
+  min-height: 0;
+  background: var(--bg);
+}
+
+/* ── Top bar ───────────────────────────────────────────────────────────── */
+
+.topbar {
+  display: grid;
+  grid-template-columns: var(--rail-w) 1fr auto;
+  align-items: center;
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
+  min-height: var(--bar-h);
+}
+/* On narrow viewports, collapse the brand-name to just the mark + count
+   so the search field doesn't get squeezed to nothing. Pushed lower
+   than before — the brand is intentional, it should survive most widths. */
+@media (max-width: 820px) {
+  .topbar-brand .name { display: none; }
+}
+@media (max-width: 700px) {
+  .topbar-brand .meta { display: none; }
+  /* Hide the kbd hint inside Find — saves ~28px */
+  .topbar-actions .btn-ghost .kbd-hint { display: none; }
+}
+.topbar-brand {
+  padding: 0 16px;
+  display: flex; align-items: center; gap: 11px;
+  border-right: 1px solid var(--rule);
+  height: 100%;
+  min-width: 0;
+}
+.topbar-brand .mark {
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+.topbar-brand .mark::after {
+  content: ''; position: absolute;
+  top: 50%; left: 50%; width: 3px; height: 3px;
+  background: var(--ink); border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.topbar-brand .name {
+  font: 500 16px/1 var(--font-serif);
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+.topbar-brand .meta {
+  margin-left: auto;
+  font: 400 10px/1 var(--font-mono);
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.topbar-search {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 16px;
+  height: 100%;
+  position: relative;
+}
+.topbar-search .search-icon {
+  flex-shrink: 0;
+  width: 13px; height: 13px;
+  color: var(--mute);
+}
+.topbar-search input {
+  flex: 1; min-width: 0;
+  font: 400 13px/1 var(--font-sans);
+  color: var(--ink);
+}
+.topbar-search input::placeholder { color: var(--faint); }
+.topbar-search .topbar-search-clear {
+  font: 500 9px/1 var(--font-mono);
+  color: var(--mute);
+  padding: 4px 7px;
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.topbar-search .topbar-search-clear:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+
+.topbar-actions {
+  display: flex; align-items: center; gap: 8px;
+  padding: 0 14px 0 8px;
+  height: 100%;
+}
+.topbar-actions .btn-group { margin: 0 6px; }
+
+.kbd {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 16px; height: 16px;
+  padding: 0 4px;
+  font: 500 10px/1 var(--font-mono);
+  color: var(--mute);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+
+/* ── Rail ──────────────────────────────────────────────────────────────── */
+
+.rail-section {
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--rule-2);
+}
+.rail-section:last-of-type { border-bottom: 0; }
+.rail-section-tradition {
+  flex: 1;
+  display: flex; flex-direction: column;
+  min-height: 0;
+  padding-bottom: 0;
+}
+.rail-section h3 {
+  margin: 0 0 10px;
+  display: flex; align-items: baseline; gap: 8px;
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.rail-section h3 .rail-section-count {
+  margin-left: auto;
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.rail-section .clear {
+  margin-left: auto;
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.rail-section .clear:hover {
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.rail-row {
+  display: flex; align-items: center; gap: 9px;
+  padding: 4px 6px;
+  margin: 0 -6px;
+  border-radius: 2px;
+  font-size: var(--fs-body-2);
+  color: var(--ink-2);
+  cursor: pointer;
+  user-select: none;
+  transition: background .08s ease;
+}
+.rail-row:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+.rail-row.on {
+  color: var(--ink);
+}
+.rail-row .tick {
+  width: 13px; height: 13px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--surface);
+  flex-shrink: 0;
+  position: relative;
+}
+.rail-row.on .tick {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.rail-row.on .tick::after {
+  content: ''; position: absolute;
+  left: 3px; top: 1px; width: 4px; height: 7px;
+  border: solid var(--bg);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+.rail-row .count {
+  margin-left: auto;
+  font: 400 10px/1 var(--font-mono);
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.rail-row.on .count { color: var(--ink-3); }
+.rail-row-trad .rail-trad-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.rail-row-trad .rail-trad-name {
+  font-size: 12px;
+  /* Long tradition names like "Mesopotamian (Sumerian/Akkadian)" need
+     to truncate gracefully so they don't push the count off-screen. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  flex: 1;
+}
+.rail-row-trad.on .rail-trad-name { color: var(--ink); }
+.rail-trad-sep {
+  height: 1px;
+  background: var(--rule-2);
+  margin: 8px 4px 6px;
+}
+.rail-traditions-empty {
+  padding: 14px 6px;
+  color: var(--faint);
+  font: italic 400 11.5px/1.4 var(--font-serif);
+}
+.kbd-pair {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.rail-shortcuts-fill {
+  /* Reserve grid cell when shortcuts row is sparse, so the row doesn't
+     collapse vertically. */
+  min-height: 14px;
+}
+
+.rail-segment {
+  display: flex;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.rail-segment button {
+  flex: 1;
+  padding: 6px 0;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+  border-right: 1px solid var(--rule);
+  height: 26px;
+}
+.rail-segment button:last-child { border-right: 0; }
+.rail-segment button.active {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+.rail-segment button:hover { color: var(--ink); background: var(--surface-2); }
+
+.rail-search {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--surface);
+}
+.rail-search input {
+  flex: 1; min-width: 0;
+  font: 400 11.5px/1 var(--font-sans);
+}
+.rail-search input::placeholder { color: var(--faint); }
+.rail-search .rail-search-clear {
+  font: 500 11px/1 var(--font-mono);
+  color: var(--mute);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.rail-search .rail-search-clear:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+
+.rail-traditions {
+  overflow-y: auto;
+  flex: 1;
+  padding: 4px 16px 14px;
+}
+
+.rail-shortcuts {
+  margin-top: auto;
+  padding: 12px 16px;
+  border-top: 1px solid var(--rule);
+  display: grid; grid-template-columns: auto 1fr auto 1fr; gap: 6px 10px;
+  font: 400 10px/1.4 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+}
+.rail-shortcuts .kbd { font-size: 9px; height: 14px; min-width: 14px; }
+.rail-shortcuts span { display: flex; align-items: center; gap: 4px; }
+
+/* ── Browse table ──────────────────────────────────────────────────────── */
+
+.browse-head {
+  display: flex; align-items: center; gap: 16px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+.browse-head .filter-summary {
+  display: flex; align-items: baseline; gap: 8px;
+  font: 400 12px/1 var(--font-sans);
+  color: var(--ink-3);
+}
+.browse-head .filter-summary .figcount {
+  font: 500 14px/1 var(--font-serif);
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.005em;
+}
+.browse-head .filter-summary .figunit {
+  font: 400 11px/1 var(--font-mono);
+  color: var(--mute);
+  letter-spacing: 0.04em;
+}
+.browse-head .filter-chips {
+  display: flex; gap: 4px; align-items: center;
+  flex-wrap: wrap;
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  min-width: 0;
+}
+.browse-head .filter-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 7px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  color: var(--ink-2);
+  max-width: 240px;
+  cursor: pointer;
+  transition: border-color .08s ease, color .08s ease;
+}
+.browse-head .filter-chip:hover {
+  /* On hover, signal that the chip is clickable (and will clear the
+     filter) by tinting the entire chip in accent, not just the ×. The
+     ramp from neutral → accent makes the "this chip removes itself"
+     intent unambiguous. */
+  background: var(--accent-bg);
+  border-color: var(--accent-ring);
+  color: var(--accent-2);
+}
+.browse-head .filter-chip > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.browse-head .filter-chip .x {
+  color: var(--faint);
+  font-size: 11px;
+}
+.browse-head .filter-chip:hover .x { color: var(--accent-2); }
+.browse-head .filter-chip.filter-chip-clear-all {
+  color: var(--accent);
+  border-color: var(--accent-ring);
+  background: var(--surface);
+}
+.browse-head .filter-chip.filter-chip-clear-all:hover {
+  color: var(--accent-2);
+  background: var(--accent-bg);
+  border-color: var(--accent);
+}
+.browse-head .spacer { flex: 1; }
+
+/* Sort control — label + button-group. Replaces the prior native
+   <select> so the dropdown panel doesn't ship its own OS chrome. */
+.sort-control {
+  display: inline-flex; align-items: center; gap: 10px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.sort-control .sort-label { color: var(--mute); }
+
+.browse-scroll {
+  flex: 1; min-height: 0;
+  overflow-y: auto;
+}
+
+.browse-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: var(--fs-body-2);
+}
+
+/* Sticky column heads */
+.browse-table thead th {
+  position: sticky; top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  padding: 9px 16px 9px 20px;
+  text-align: left;
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  z-index: 2;
+}
+.browse-table thead th.th-name      { padding-left: 20px; width: auto; }
+.browse-table thead th.th-tradition { width: 28%; }
+.browse-table thead th.th-era       { width: 24%; }
+
+/* Sortable column headers — clicking flips the sort.
+   th-on highlights the column whose sort is currently active. */
+.browse-table thead th.th-sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color .08s ease;
+}
+.browse-table thead th.th-sortable:hover {
+  color: var(--ink-2);
+}
+.browse-table thead th.th-on {
+  color: var(--ink);
+}
+.browse-table thead th .th-on-mark {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Group headers — sticky just below the column thead */
+tr.browse-group-header td {
+  position: sticky;
+  top: 30px;
+  background: var(--bg);
+  z-index: 1;
+  padding: 22px 20px 8px;
+  border-bottom: 0;
+}
+tr.browse-group-header:first-child td { padding-top: 16px; }
+tr.browse-group-header .group-inner {
+  display: flex; align-items: center; gap: 12px;
+}
+tr.browse-group-header .group-label {
+  font: 500 10.5px/1 var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+tr.browse-group-header .group-count {
+  font: 400 10px/1 var(--font-mono);
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+tr.browse-group-header .group-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* Data rows */
+.browse-table tbody tr {
+  cursor: pointer;
+  background: transparent;
+  border-bottom: 1px solid var(--rule-3);
+  transition: background .08s ease;
+}
+.browse-table tbody tr:not(.browse-group-header):hover {
+  background: var(--surface-2);
+}
+/* Cursor = soft keyboard pointer. Used while scrubbing j/k before opening
+   an entry. Keep it quiet — a faint surface tint, no chrome change in the
+   name text, no red. The left tier-stripe widens (see :cursor block below)
+   to give the eye a positional anchor without shouting. */
+.browse-table tbody tr.cursor {
+  background: var(--surface-2);
+}
+/* Selected = the entry whose detail panel is currently open. This IS the
+   commitment, so it carries the accent wash. The detail panel's own
+   tier-stripe matches, giving spatial continuity between table and panel. */
+.browse-table tbody tr.selected {
+  background: var(--accent-bg);
+}
+.browse-table tbody tr.selected.cursor {
+  /* Cursor on the same row as the open detail is the common case during
+     j/k; let the accent wash win. */
+  background: var(--accent-bg);
+}
+
+.browse-table td {
+  padding: 10px 16px;
+  /* Use min-height instead of height so rows with an alt-line (a 2nd line
+     under the name) can grow without clipping. Tables treat `height` as
+     a hint, but in some browsers it can clip content; min-height plays
+     safer with the alt-line variable-height shape. */
+  min-height: 52px;
+  height: 52px;
+  vertical-align: middle;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule-3);
+}
+/* Rows with an alt-line get slightly more vertical breathing room. */
+.browse-table tbody tr:has(.alt-line) td {
+  height: auto;
+  min-height: 58px;
+}
+.browse-table tr.browse-group-header td { border-bottom: 0; }
+
+/* Type-color stripe on the left edge — every row carries its tier */
+.browse-table tbody tr:not(.browse-group-header) td.cell-name {
+  padding-left: 22px;
+  position: relative;
+}
+.browse-table tbody tr:not(.browse-group-header) td.cell-name::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 6px; bottom: 6px;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  background: var(--t-mortal);
+}
+.browse-table tbody tr.cursor td.cell-name::before {
+  left: 0;
+  top: 0; bottom: 0;
+  width: 4px;
+  border-radius: 0;
+}
+.browse-table tbody tr.selected td.cell-name::before {
+  left: 0;
+  top: 0; bottom: 0;
+  width: 4px;
+  border-radius: 0;
+}
+tr.type-row-deity     td.cell-name::before { background: #DDA017; }
+tr.type-row-demigod   td.cell-name::before { background: #B45C2D; }
+tr.type-row-quartigod td.cell-name::before { background: #6E4C9E; }
+tr.type-row-scion     td.cell-name::before { background: #3A8A55; }
+tr.type-row-mortal    td.cell-name::before { background: #555148; }
+
+/* Browse row name-line — icon + name + optional ORIG */
+.cell-name .name-line {
+  display: flex; align-items: center; gap: 11px;
+}
+.cell-name .name-text {
+  font: 500 14.5px/1.2 var(--font-serif);
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+/* Alt-line is structurally below the name-line. Indent it to align with
+   the name text by using the same gap (11px) plus the icon width (18px).
+   That math is duplicated from the .name-line gap and TierIcon size=18,
+   so when those change here, mirror it. */
+.cell-name .alt-line {
+  margin-top: 4px;
+  padding-left: 29px;     /* 18 icon + 11 gap */
+  display: flex; align-items: baseline;
+  gap: 7px;
+  overflow: hidden;
+  font: 400 11.5px/1.35 var(--font-serif);
+  color: var(--ink-3);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cell-name .alt-sep { color: var(--faint); }
+.cell-name .alt-alt {
+  font-style: italic;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cell-name .alt-xlit {
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
+  color: var(--ink-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tier word — the leading element of the alt-line, in tier color.
+   Colors are darkened relative to the stripe pigments so they hit a
+   text-on-cream contrast ratio of ≥6:1. */
+.tier-tag {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tier-tag.tier-deity     { color: #B07E12; }
+.tier-tag.tier-demigod   { color: #8B4421; }
+.tier-tag.tier-quartigod { color: #533777; }
+.tier-tag.tier-scion     { color: #2A6840; }
+.tier-tag.tier-mortal    { color: #2A2A26; }  /* match detail eyebrow */
+
+/* ORIG flag — non-canon origin marker. Only 3 of 601 entries; cost of the
+   badge is per-row so it must stay quiet. Italic serif glyph, no fill. */
+.orig-flag {
+  font: italic 500 11px/1 var(--font-serif);
+  letter-spacing: 0.02em;
+  color: var(--origin-mark);
+  margin-left: 6px;
+  text-transform: lowercase;
+}
+.orig-flag::before { content: '·\00a0'; color: var(--faint); font-style: normal; }
+
+/* Tradition cell — pigment dot + name in sans. The td itself keeps its
+   default table-cell display so the column width directives at the thead
+   take effect; flex layout lives on an inner wrapper. */
+.cell-tradition {
+  font: 400 12.5px/1 var(--font-sans);
+  color: var(--ink-2);
+}
+.cell-tradition-inner {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.trad-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--ink);
+  flex-shrink: 0;
+}
+.trad-name {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Era cell — two lines, era + date range. Era name is rendered Title Case
+   (see formatEra); kept in mono for column rhythm but without the
+   UPPERCASE shouting, since era phrases like "Mu'allaqat Poetic" are 2-4
+   word names not 5-letter labels. */
+.cell-era .era-name {
+  font: 500 11px/1.25 var(--font-mono);
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+}
+.cell-era .era-date {
+  margin-top: 3px;
+  font: 400 10.5px/1.1 var(--font-serif);
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.rail-tier-label {
+  font: 500 11px/1 var(--font-sans);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.rail-row.on .rail-tier-label { color: var(--ink); }
+
+/* Empty state */
+.empty {
+  padding: 96px 24px;
+  text-align: center;
+  color: var(--mute);
+}
+.empty .empty-mark {
+  width: 32px; height: 32px;
+  border: 1.5px solid var(--rule);
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  position: relative;
+}
+.empty .empty-mark::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 14px; height: 1px;
+  background: var(--faint);
+  transform: translate(-50%, -50%);
+}
+.empty h2 {
+  font: 500 18px/1.3 var(--font-serif);
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.005em;
+}
+.empty p { margin: 0; font: 400 13px/1.55 var(--font-serif); color: var(--ink-3); max-width: 38ch; margin: 0 auto; }
+.empty .empty-actions {
+  margin-top: 18px;
+  display: flex; gap: 8px; justify-content: center;
+}
+/* Used when the empty block is the entire viewport (e.g. shell loading or
+   no-entries-in-storage) — gives extra vertical breathing room above the
+   centered content. */
+.empty.empty-loading {
+  padding: 120px 24px;
+}
+
+/* ── Detail panel ──────────────────────────────────────────────────────── */
+
+.detail-backdrop {
+  position: fixed; inset: 0;
+  background: var(--backdrop);
+  z-index: 80;
+  animation: fade-in .12s ease;
+}
+.detail-backdrop.closing {
+  animation: fade-out .16s ease forwards;
+}
+@keyframes fade-in  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes slide-in {
+  from { transform: translateX(20px); opacity: 0; }
+  to   { transform: none;             opacity: 1; }
+}
+@keyframes slide-out {
+  from { transform: none;             opacity: 1; }
+  to   { transform: translateX(20px); opacity: 0; }
+}
+
+.detail {
+  position: fixed; top: 0; right: 0; bottom: 0;
+  /* On narrow viewports, take more horizontal space so prose isn't cramped;
+     on wide viewports, cap at a comfortable reading width so the detail
+     doesn't swallow the table behind it. The min is the floor at very
+     narrow viewports; the preferred is 62vw at medium; the max keeps
+     things sane on ultrawide. */
+  width: clamp(560px, 62vw, 880px);
+  background: var(--surface);
+  border-left: 1px solid var(--rule);
+  box-shadow: -32px 0 64px rgba(0,0,0,0.06);
+  z-index: 90;
+  display: flex; flex-direction: column;
+  animation: slide-in .22s cubic-bezier(.16,.84,.36,1);
+}
+.detail.closing {
+  animation: slide-out .16s cubic-bezier(.7, 0, .84, 0) forwards;
+}
+/* On very narrow viewports, fall back to a near-fullscreen detail. */
+@media (max-width: 720px) {
+  .detail { width: 100%; }
+}
+/* Left-edge tier stripe — mirrors the browse-row stripe so the eye can
+   trace which entry it just opened. Set via inline custom property
+   --detail-tier-color from JSX. */
+.detail::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--detail-tier-color, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.detail-bar {
+  display: flex; align-items: center; gap: 6px;
+  padding: 10px 16px 10px 20px;
+  border-bottom: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+.detail-bar .nav {
+  display: flex; gap: 4px;
+}
+.detail-bar .spacer { flex: 1; }
+.detail-bar .close {
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--mute);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 4px;
+}
+.detail-bar .close:hover { color: var(--ink); background: var(--surface-2); }
+
+.detail-scroll {
+  flex: 1; min-height: 0;
+  overflow-y: auto;
+  padding: 32px 40px 72px;
+  scroll-padding-top: 32px;
+}
+
+.detail-header { margin-bottom: 28px; }
+.detail-header .eyebrow {
+  display: flex; align-items: center;
+  gap: 0 18px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
+.detail-header .eyebrow .eyebrow-leader {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.detail-header .eyebrow .eyebrow-trad {
+  display: inline-flex; align-items: center; gap: 7px;
+  text-transform: none;
+  letter-spacing: 0;
+  font: 500 12px/1 var(--font-sans);
+  color: var(--ink-2);
+}
+.detail-header .eyebrow .eyebrow-trad-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.detail-header .eyebrow-tier {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.detail-header .eyebrow-tier.tier-deity     { color: #B07E12; }
+.detail-header .eyebrow-tier.tier-demigod   { color: #8B4421; }
+.detail-header .eyebrow-tier.tier-quartigod { color: #533777; }
+.detail-header .eyebrow-tier.tier-scion     { color: #2A6840; }
+.detail-header .eyebrow-tier.tier-mortal    { color: #2A2A26; }  /* darker than surrounding mute so the tier label still reads */
+.detail-header .eyebrow .orig-eyebrow {
+  color: var(--origin-mark);
+  font-weight: 600;
+}
+.detail-header .eyebrow .eyebrow-primary {
+  /* "primarily X" qualifier when an entry crosses traditions — use a
+     muted ink rather than origin-mark blue, since this isn't an origin
+     statement. */
+  color: var(--ink-2);
+  font-weight: 500;
+}
+.detail-header h1 {
+  margin: 0;
+  font: 500 32px/1.05 var(--font-serif);
+  letter-spacing: -0.018em;
+  color: var(--ink);
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.detail-header .alts {
+  margin-top: 10px;
+  font: italic 400 15px/1.4 var(--font-serif);
+  color: var(--ink-3);
+}
+.detail-header .xlits {
+  margin-top: 6px;
+  display: flex; flex-wrap: wrap; gap: 14px;
+  font: 400 13px/1.4 var(--font-serif);
+  color: var(--ink-3);
+}
+.detail-header .xlit {
+  display: inline-flex; align-items: baseline; gap: 7px;
+}
+.detail-header .xlit-script {
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+/* Era-bar — second meta row beneath the h1 + alts/xlits. Used to be a
+   surface-2 chip; now a quiet inline line so the header reads as one
+   cohesive block, not stacked plates. */
+.detail-header .era-bar {
+  margin-top: 14px;
+  display: flex; align-items: baseline; gap: 14px;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.detail-header .era-bar::before {
+  content: '';
+  width: 18px; height: 1px;
+  background: var(--rule);
+  align-self: center;
+}
+.detail-header .era-bar .era-bar-date {
+  text-transform: none;
+  letter-spacing: 0;
+  font: 400 12px/1 var(--font-serif);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+
+.detail-notes {
+  font: 400 15.5px/1.6 var(--font-serif);
+  color: var(--ink-2);
+  margin-bottom: 30px;
+  max-width: 60ch;
+  letter-spacing: -0.002em;
+}
+
+.section {
+  margin-top: 32px;
+  border-top: 1px solid var(--rule-2);
+  padding-top: 20px;
+}
+.section h2 {
+  margin: 0 0 14px;
+  display: flex; align-items: baseline; gap: 10px;
+  font: 500 10.5px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.section h2 .count {
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subsection — a section nested inside a wrapper section (e.g. "Centers"
+   and "Festivals" inside the Cult block). No top border or chapter
+   spacing; the heading is smaller and quieter than a top-level h2. */
+.subsection {
+  margin-top: 18px;
+}
+.subsection:first-child { margin-top: 12px; }
+.subsection h2 {
+  margin: 0 0 10px;
+  display: flex; align-items: baseline; gap: 8px;
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.subsection h2 .count {
+  font: 400 9.5px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chapter mark — a thematic divider between groups of sections. Lives
+   between sections; doesn't carry its own padding or content. Three
+   small visual moments: rule, label, rule. */
+.chapter-mark {
+  display: flex; align-items: center; gap: 14px;
+  margin: 40px 0 -8px;
+}
+.chapter-mark-rule {
+  flex: 1; height: 1px;
+  background: var(--rule-2);
+}
+.chapter-mark-label {
+  font: italic 500 13px/1 var(--font-serif);
+  letter-spacing: 0.01em;
+  color: var(--mute);
+  flex-shrink: 0;
+}
+
+/* Lifecycle swimlane */
+
+.lifecycle {
+  position: relative;
+  padding: 4px 0 0;
+}
+
+.lifecycle-stage {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 18px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule-3);
+}
+.lifecycle-stage:last-child { border-bottom: 0; }
+.lifecycle-stage .ticker {
+  font: 500 10px/1.3 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.lifecycle-stage .ticker .status {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+.lifecycle-stage .body .title {
+  font: 500 13px/1.3 var(--font-serif);
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.lifecycle-stage .body .body-meta {
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 6px;
+}
+.lifecycle-stage .body .body-meta-ord {
+  margin-left: 8px;
+  color: var(--faint);
+}
+.lifecycle-stage .body .body-meta-vital {
+  margin-left: 8px;
+  color: var(--ink-2);
+}
+.lifecycle-stage .body p {
+  margin: 0;
+  font: 400 13px/1.55 var(--font-serif);
+  color: var(--ink-2);
+  max-width: 64ch;
+}
+
+/* Relations */
+
+.relations-group { margin-bottom: 22px; }
+.relations-group:last-child { margin-bottom: 0; }
+.relations-group h3 {
+  margin: 0 0 8px;
+  display: flex; align-items: baseline; gap: 8px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.relations-group h3::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--rule-2);
+  margin-left: 4px;
+}
+.relations-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 24px;
+}
+.relation {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--rule-3);
+  font-size: 12px;
+}
+.relation .kind {
+  font: 400 10px/1.3 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.relation .target {
+  color: var(--ink);
+  font: 500 13px/1.3 var(--font-serif);
+  letter-spacing: -0.003em;
+}
+.relation .target.link { cursor: pointer; }
+.relation .target.link:hover { color: var(--accent); }
+.relation .target .ext {
+  font: italic 400 12.5px var(--font-serif);
+  color: var(--ink-3);
+}
+.relation .relation-notes {
+  display: block;
+  margin-top: 3px;
+  font: italic 400 11.5px/1.45 var(--font-serif);
+  color: var(--mute);
+}
+
+/* Tag clouds (domains, epithets, faculties, material) */
+
+.tags {
+  display: flex; flex-wrap: wrap; gap: 5px 6px;
+}
+.tag {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+  background: var(--surface-2);
+  border: 1px solid var(--rule-2);
+  padding: 5px 8px;
+  border-radius: 2px;
+}
+.tag.faint { color: var(--mute); background: transparent; }
+
+/* Rich rows — Domains / Epithets / Faculties / Material / Cult / Festivals.
+   Each section gets a leading marker stripe in a distinct color so a long
+   detail panel reads as a sequence of distinct chapters rather than a
+   uniform wall of grey chips. */
+
+.rich-rows {
+  display: grid;
+  gap: 0;
+  position: relative;
+  padding-left: 14px;
+}
+.rich-rows::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 4px; bottom: 4px;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--rule);
+}
+.section.section-domains  .rich-rows::before { background: #9C6B17; }
+.section.section-epithets .rich-rows::before { background: #6E4C9E; }
+.section.section-faculties .rich-rows::before { background: #3A8A55; }
+.section.section-material .rich-rows::before { background: #8B3A1F; }
+.section.section-cult     .rich-rows::before { background: #1F4E79; }
+.section.section-festivals .rich-rows::before { background: #B45C2D; }
+
+.rich-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule-3);
+}
+.rich-row:last-child { border-bottom: 0; }
+.rich-row-name {
+  font: 500 13.5px/1.35 var(--font-serif);
+  color: var(--ink);
+  letter-spacing: -0.003em;
+}
+.rich-row-name-epithet {
+  font-style: italic;
+  font-weight: 400;
+}
+.rich-row-metas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-self: end;
+  align-self: center;
+  max-width: 55%;
+}
+.rich-row-meta {
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+  background: var(--surface-2);
+  padding: 4px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.rich-row-notes {
+  grid-column: 1 / -1;
+  font: italic 400 12.5px/1.55 var(--font-serif);
+  color: var(--ink-3);
+  max-width: 64ch;
+  margin-top: 5px;
+}
+
+/* Sources — grouped by weight, scannable claim/citation hierarchy */
+
+.sources-groups {
+  display: grid;
+  gap: 24px;
+}
+.sources-group-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 12px;
+}
+.sources-group-label {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.sources-group-rule {
+  flex: 1; height: 1px;
+  background: var(--rule-2);
+}
+.sources-group-count {
+  font: 400 10px/1 var(--font-mono);
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.sources-group-header.weight-primary .sources-group-label {
+  color: var(--accent);
+}
+.sources-group-header.weight-primary .sources-group-rule {
+  background: var(--accent-ring);
+}
+
+.sources-claims {
+  display: grid;
+  gap: 14px;
+}
+.source-claim {
+  display: grid;
+  gap: 6px;
+}
+.source-claim-name {
+  font: 500 13.5px/1.35 var(--font-serif);
+  color: var(--ink);
+  letter-spacing: -0.003em;
+}
+.source-cites {
+  display: grid;
+  gap: 3px;
+  padding-left: 14px;
+  border-left: 1px solid var(--rule-2);
+}
+.source-cite {
+  font: 400 12px/1.55 var(--font-serif);
+  color: var(--ink-3);
+  display: flex; align-items: baseline; gap: 8px;
+}
+.source-cite-kind {
+  flex-shrink: 0;
+  font: 500 8.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  background: var(--surface-2);
+  padding: 3px 5px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.source-cite-ref {
+  font-variant-numeric: tabular-nums;
+}
+.source-cite-missing {
+  font-style: italic;
+  color: var(--faint);
+  font-size: 11px;
+}
+
+.section.section-etymology h2 {
+  align-items: center;
+}
+.section.section-etymology .etym-family {
+  margin-left: auto;
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  text-transform: uppercase;
+}
+.section.section-etymology .etym-body {
+  font: 400 13.5px/1.6 var(--font-serif);
+  color: var(--ink-2);
+  max-width: 64ch;
+  letter-spacing: -0.002em;
+}
+
+/* Parentage table */
+.parentage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
+}
+.parentage-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+  transition: border-color .08s ease, background .08s ease;
+}
+.parentage-row:hover {
+  background: var(--surface-2);
+  border-color: var(--rule);
+}
+.parentage-row .role {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.parentage-row .who {
+  display: flex; align-items: baseline; gap: 10px;
+  color: var(--ink);
+  cursor: pointer;
+  min-width: 0;
+}
+.parentage-row .who:hover .who-name { color: var(--accent); }
+.parentage-row .who-name {
+  font: 500 14px/1.2 var(--font-serif);
+  letter-spacing: -0.005em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.parentage-row .who-meta {
+  flex-shrink: 0;
+  font: 400 9.5px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.parentage-row.unresolved .who-name {
+  font: italic 400 13px/1.2 var(--font-serif);
+  color: var(--mute);
+}
+
+/* ── Command palette ───────────────────────────────────────────────────── */
+
+.cmdk-back {
+  position: fixed; inset: 0;
+  background: var(--backdrop);
+  z-index: 100;
+  display: flex; justify-content: center;
+  padding-top: min(12vh, 64px);
+}
+.cmdk {
+  width: min(640px, 90vw);
+  max-height: 60vh;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.16);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.cmdk input {
+  padding: 16px 20px;
+  font: 400 16px/1 var(--font-sans);
+  border-bottom: 1px solid var(--rule);
+  width: 100%;
+}
+.cmdk input::placeholder { color: var(--faint); }
+.cmdk-results {
+  overflow-y: auto;
+  flex: 1;
+  padding: 4px 0;
+}
+.cmdk-section {
+  display: flex; align-items: baseline; justify-content: space-between;
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding: 12px 20px 6px;
+}
+.cmdk-section-meta {
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.cmdk-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  align-items: baseline;
+}
+.cmdk-item.active { background: var(--accent-bg); }
+.cmdk-item-name-line {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  min-width: 0;
+}
+.cmdk-item .name { font: 500 14.5px/1.2 var(--font-serif); color: var(--ink); letter-spacing: -0.005em; }
+.cmdk-item .alt {
+  font: italic 400 12px var(--font-serif);
+  color: var(--mute);
+}
+.cmdk-item .meta {
+  display: inline-flex; align-items: center; gap: 0;
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  white-space: nowrap;
+}
+.cmdk-item .meta > span + span::before {
+  content: '';
+  display: inline-block;
+  width: 3px; height: 3px;
+  background: var(--faint);
+  border-radius: 50%;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+.cmdk-empty {
+  padding: 32px 20px;
+  text-align: center;
+  color: var(--mute);
+  font: 400 13px/1.5 var(--font-serif);
+}
+.cmdk-empty em { color: var(--ink-2); font-style: italic; }
+.cmdk-footer {
+  display: flex; gap: 16px;
+  padding: 9px 20px;
+  border-top: 1px solid var(--rule);
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  background: var(--bg);
+}
+.cmdk-footer .kbd { margin-right: 4px; }
+
+.stub {
+  padding: 80px 24px;
+  text-align: center;
+  color: var(--mute);
+}
+.stub h2 {
+  font: 500 16px/1.3 var(--font-serif);
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.stub p { margin: 0; max-width: 50ch; margin: 0 auto; font-size: 13px; }
+.stub .kbd { margin-left: 4px; }
+
+/* ── ErrorBoundary ──────────────────────────────────────────────────────
+   Fail-state fallback if a single component throws during render. */
+.error-boundary {
+  padding: 48px;
+  max-width: 720px;
+  margin: 48px auto;
+  font: 400 13px/1.6 var(--font-sans);
+  color: var(--ink-2);
+}
+.error-boundary-eyebrow {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.error-boundary-title {
+  font: 500 22px/1.3 var(--font-serif);
+  color: var(--ink);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+.error-boundary-trace {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 2px solid var(--accent);
+  padding: 12px 14px;
+  font: 400 12px/1.55 var(--font-mono);
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--ink);
+  max-height: 320px;
+  overflow: auto;
+  margin: 0 0 14px;
+  border-radius: 0 3px 3px 0;
+}
+
+/* ── Graph view ────────────────────────────────────────────────────────── */
+
+.graph-wrap {
+  display: flex; flex-direction: column;
+  flex: 1; min-height: 0;
+  background: var(--bg);
+}
+
+.graph-bar {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 24px;
+  border-bottom: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+.graph-bar-section {
+  display: flex; align-items: center; gap: 8px;
+}
+.graph-bar-section + .graph-bar-section {
+  padding-left: 14px;
+  border-left: 1px solid var(--rule-2);
+}
+.graph-bar-label {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.graph-modes {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.graph-modes button {
+  padding: 6px 11px;
+  height: 26px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  border-right: 1px solid var(--rule);
+}
+.graph-modes button:last-child { border-right: 0; }
+.graph-modes button.active {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+.graph-modes button:hover:not(:disabled) { color: var(--ink); background: var(--surface-2); }
+.graph-modes button:disabled {
+  opacity: 0.35; cursor: not-allowed;
+}
+
+/* Time scrubber strip */
+.graph-time-bar {
+  display: flex; align-items: center; gap: 12px;
+  padding: 9px 24px;
+  border-bottom: 1px solid var(--rule-2);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+.graph-time-label {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.graph-time-bar input[type="range"],
+.atlas-time input[type="range"] {
+  flex: 1; min-width: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: linear-gradient(to right,
+    var(--rule) 0%,
+    var(--rule) 49.4%,
+    var(--mute) 49.4%,
+    var(--mute) 50.6%,
+    var(--rule) 50.6%,
+    var(--rule) 100%);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.atlas-time input[type="range"]:disabled { opacity: 0.3; cursor: not-allowed; }
+.graph-time-bar input[type="range"]::-webkit-slider-thumb,
+.atlas-time input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px; height: 15px; border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.graph-time-bar input[type="range"]::-moz-range-thumb,
+.atlas-time input[type="range"]::-moz-range-thumb {
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.graph-time-year,
+.atlas-time-year {
+  min-width: 96px;
+  font: 500 13px/1 var(--font-mono);
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.graph-time-anchors,
+.atlas-time-anchors { display: flex; gap: 2px; }
+.graph-time-anchor,
+.atlas-time-anchor {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  color: var(--mute);
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+.graph-time-anchor:hover,
+.atlas-time-anchor:hover {
+  color: var(--ink);
+  border-color: var(--rule);
+  background: var(--surface);
+}
+.graph-time-status {
+  font: 400 11px/1 var(--font-mono);
+  color: var(--mute);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.graph-time-status strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* Path-find slot row */
+.graph-path-bar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 24px;
+  border-bottom: 1px solid var(--rule-2);
+  background: var(--accent-bg);
+  flex-shrink: 0;
+}
+.graph-path-step {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.graph-path-slot {
+  display: inline-flex; flex-direction: column; align-items: flex-start;
+  gap: 3px;
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  min-width: 190px;
+  text-align: left;
+  transition: border-color .12s ease, background .12s ease;
+}
+.graph-path-slot.empty .slot-hint {
+  font: italic 400 12px/1 var(--font-serif);
+  color: var(--mute);
+}
+.graph-path-slot .slot-label {
+  font: 500 8.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.graph-path-slot .slot-value {
+  font: 500 13.5px/1.2 var(--font-serif);
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.graph-path-slot.active {
+  border-color: var(--accent);
+  background: var(--surface);
+  box-shadow: 0 0 0 2px var(--accent-ring);
+}
+.graph-path-slot.set {
+  border-color: rgba(0,0,0,0.18);
+}
+.graph-path-slot:hover { border-color: rgba(0,0,0,0.28); }
+.graph-path-arrow {
+  font: 500 16px/1 var(--font-mono);
+  color: var(--accent);
+}
+.graph-path-status {
+  margin-left: auto;
+  font: 400 11px/1 var(--font-mono);
+  color: var(--ink-2);
+}
+.graph-path-length strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+.graph-path-unreachable {
+  font: italic 400 12px/1 var(--font-serif);
+  color: var(--mute);
+}
+
+/* Node hover info chip — small follow-the-cursor popup */
+.graph-node-chip {
+  position: fixed;
+  z-index: 6;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 9px 13px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  pointer-events: none;
+  min-width: 184px; max-width: 280px;
+  /* Smooth out rapid hover crossings — fade the chip in/out instead of
+     popping it, and let the position glide briefly so a fast sweep over
+     a dense node cluster doesn't feel like a strobe. */
+  animation: chip-fade-in .08s ease-out;
+}
+@keyframes chip-fade-in {
+  from { opacity: 0; transform: translateY(-2px); }
+  to   { opacity: 1; transform: none; }
+}
+.graph-node-chip-name {
+  font: 500 13.5px/1.2 var(--font-serif);
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  margin-bottom: 5px;
+}
+.graph-node-chip-meta {
+  display: flex; align-items: center; gap: 7px;
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.graph-node-chip-meta .sep { color: var(--faint); }
+.graph-node-chip-degree { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* Path summary card — replaces focus card */
+.graph-path-card {
+  position: absolute;
+  bottom: 16px; right: 16px;
+  width: 320px;
+  max-height: calc(100% - 32px);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  z-index: 5;
+  display: flex; flex-direction: column;
+}
+.graph-path-card-head {
+  display: flex; align-items: baseline; gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule-2);
+  margin-bottom: 8px;
+}
+.graph-path-card-title {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  flex: 1;
+}
+.graph-path-card-title strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.graph-path-card-chain {
+  overflow-y: auto;
+  flex: 1;
+  display: grid; gap: 4px;
+  padding-right: 4px;
+}
+.graph-path-step-node {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.graph-path-step-node:hover {
+  background: var(--surface-2);
+}
+.graph-path-step-text {
+  flex: 1; min-width: 0;
+}
+.graph-path-step-name {
+  font: 500 13px/1.2 var(--font-serif);
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.graph-path-step-meta {
+  margin-top: 2px;
+  font: 400 9px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.graph-path-step-edge {
+  display: flex; align-items: center; gap: 8px;
+  padding: 2px 12px;
+  margin-left: 6px;
+  color: var(--edge-color, var(--mute));
+}
+.graph-path-step-edge-dash {
+  font: 500 10px/1 var(--font-mono);
+}
+.graph-path-step-edge-kind {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+
+.graph-stats {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+}
+.graph-stats > span + span::before {
+  content: '';
+  display: inline-block;
+  width: 3px; height: 3px;
+  background: var(--faint);
+  border-radius: 50%;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+.graph-stats-capped {
+  color: var(--accent);
+  font-style: italic;
+  font-variant-numeric: tabular-nums;
+}
+
+.graph-bar-right {
+  margin-left: auto;
+  display: flex; align-items: center; gap: 8px;
+}
+.atlas-bar-right {
+  margin-left: auto;
+  display: flex; align-items: center; gap: 8px;
+}
+.graph-focused-label {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+}
+.graph-focused-label strong {
+  color: var(--ink);
+  font: 500 12px/1 var(--font-serif);
+  margin-left: 4px;
+}
+
+.graph-canvas {
+  flex: 1; min-height: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+.graph-canvas:active { cursor: grabbing; }
+.graph-canvas svg { display: block; }
+
+.graph-empty {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: var(--mute); padding: 0 32px; text-align: center;
+}
+.graph-empty .empty-mark {
+  width: 32px; height: 32px;
+  border: 1.5px solid var(--rule);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  position: relative;
+}
+.graph-empty .empty-mark::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 14px; height: 1px;
+  background: var(--faint);
+  transform: translate(-50%, -50%);
+}
+.graph-empty h2 {
+  font: 500 18px/1.3 var(--font-serif);
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.005em;
+}
+.graph-empty p {
+  font: 400 13px/1.55 var(--font-serif);
+  color: var(--ink-3);
+  max-width: 42ch;
+}
+
+.graph-footer {
+  display: flex; gap: 24px;
+  padding: 8px 24px;
+  border-top: 1px solid var(--rule);
+  font: 400 11px/1 var(--font-mono);
+  color: var(--mute);
+  flex-shrink: 0;
+}
+
+/* Legend is pointer-events:none by default so the canvas underneath stays
+   pannable. Individual clickable rows re-enable pointer-events:auto. */
+.graph-legend {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 14px 16px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  pointer-events: none;
+  z-index: 4;
+  min-width: 184px;
+}
+.graph-legend-section + .graph-legend-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule-2);
+}
+.graph-legend-head {
+  display: flex; align-items: baseline; gap: 8px;
+  margin-bottom: 10px;
+}
+.graph-legend-title {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.graph-legend-reset {
+  margin-left: auto;
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  pointer-events: auto;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.graph-legend-reset:hover { color: var(--accent-2); background: var(--accent-bg); }
+.graph-legend-row {
+  display: flex; align-items: center; gap: 9px;
+  font: 400 11.5px/1.5 var(--font-sans);
+  color: var(--ink-2);
+  padding: 2px 0;
+  width: 100%;
+  text-align: left;
+}
+.graph-legend-row.clickable {
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 2px;
+  padding: 3px 5px;
+  margin: 0 -5px;
+}
+.graph-legend-row.clickable:hover {
+  background: var(--surface-2);
+}
+.graph-legend-row.hidden {
+  color: var(--faint);
+  text-decoration: line-through;
+  text-decoration-color: var(--faint);
+  text-decoration-thickness: 1px;
+}
+.graph-legend-row.hidden svg { opacity: 0.4; }
+.graph-legend-row svg { flex-shrink: 0; }
+.graph-legend-note {
+  font: italic 400 10.5px/1.3 var(--font-serif);
+  color: var(--mute);
+  margin-top: 8px;
+}
+
+/* Edge hover tooltip — fixed in the canvas, low-key */
+.graph-edge-tip {
+  position: absolute;
+  bottom: 16px; left: 16px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  pointer-events: none;
+  z-index: 5;
+  max-width: 360px;
+}
+.graph-edge-tip-kind {
+  display: flex; align-items: center; gap: 8px;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.graph-edge-tip-swatch {
+  display: inline-block;
+  width: 14px; height: 3px;
+  border-radius: 1px;
+  background: var(--ink);
+}
+.graph-edge-tip-ends {
+  font: 400 12px/1.4 var(--font-serif);
+  color: var(--ink-2);
+}
+.graph-edge-tip-ends span {
+  color: var(--mute); margin: 0 4px;
+}
+
+/* Focused-node info card — bottom-right of the canvas */
+.graph-focus-card {
+  position: absolute;
+  bottom: 16px; right: 16px;
+  width: 320px;
+  max-height: calc(100% - 32px);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 16px 18px 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  z-index: 5;
+  display: flex; flex-direction: column;
+  min-height: 0;
+}
+.graph-focus-eyebrow {
+  display: flex; align-items: center; gap: 8px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 8px;
+}
+.graph-focus-dot {
+  width: 3px; height: 3px;
+  background: var(--faint);
+  border-radius: 50%;
+}
+.graph-focus-name {
+  font: 500 18px/1.2 var(--font-serif);
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.graph-focus-alt {
+  font: italic 400 13px/1.4 var(--font-serif);
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+/* Neighbor list — the focus card's main content */
+.graph-focus-neighbors {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule-2);
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column;
+}
+.graph-focus-neighbors-head {
+  display: flex; align-items: baseline; gap: 8px;
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 8px;
+}
+.graph-focus-neighbors-count {
+  margin-left: auto;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+.graph-focus-neighbors-list {
+  overflow-y: auto;
+  flex: 1; min-height: 0;
+  margin-right: -6px;
+  padding-right: 6px;
+}
+.graph-focus-neighbors-empty {
+  font: italic 400 12px/1.4 var(--font-serif);
+  color: var(--mute);
+  padding: 12px 0;
+}
+.graph-focus-family { margin-bottom: 8px; }
+.graph-focus-family-head {
+  display: flex; align-items: center; gap: 7px;
+  margin-bottom: 4px;
+  padding: 0 0 2px;
+}
+.graph-focus-family-swatch {
+  display: inline-block;
+  width: 12px; height: 2.5px;
+  flex-shrink: 0;
+  background: var(--swatch-color, var(--mute));
+  opacity: var(--swatch-alpha, 1);
+  border-radius: 1px;
+}
+.graph-focus-family-name {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.graph-focus-family-count {
+  margin-left: auto;
+  font: 400 10px/1 var(--font-mono);
+  color: var(--faint);
+}
+.graph-focus-neighbor {
+  display: grid;
+  grid-template-columns: 14px 1fr auto;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 6px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.graph-focus-neighbor:hover {
+  background: var(--surface-2);
+}
+.graph-focus-neighbor-name {
+  font: 500 12px/1.2 var(--font-serif);
+  color: var(--ink);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.graph-focus-neighbor-kind {
+  font: 400 9.5px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  display: flex; align-items: center; gap: 3px;
+  white-space: nowrap;
+}
+.graph-focus-neighbor-arrow {
+  color: var(--faint);
+}
+
+.graph-focus-actions {
+  display: flex; gap: 6px;
+  margin-top: 14px;
+}
+.graph-focus-actions .btn { flex: 1; justify-content: center; }
+
+/* Zoom controls — discrete, bottom-left vertical stack */
+.graph-zoom {
+  position: absolute;
+  bottom: 16px; left: 16px;
+  display: flex; flex-direction: column;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  z-index: 4;
+}
+/* If both the legend and the edge tip are showing, push edge tip up so
+   zoom controls and edge tip don't overlap. */
+.graph-canvas .graph-edge-tip { left: 70px; }
+.graph-zoom button {
+  width: 32px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  font: 500 16px/1 var(--font-mono);
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  transition: background .1s ease, color .1s ease;
+}
+.graph-zoom button:last-child { border-bottom: 0; }
+.graph-zoom button:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+.graph-zoom button:active {
+  background: var(--accent-bg);
+}
+.graph-zoom button.graph-zoom-home {
+  font-size: 13px;
+}
+
+/* ── Atlas view ────────────────────────────────────────────────────────── */
+
+.atlas-wrap {
+  display: flex; flex-direction: column;
+  flex: 1; min-height: 0;
+  background: var(--bg);
+}
+
+.atlas-bar {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 24px;
+  border-bottom: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+.atlas-bar-section {
+  display: flex; align-items: center; gap: 8px;
+}
+.atlas-bar-section + .atlas-bar-section {
+  padding-left: 14px;
+  border-left: 1px solid var(--rule-2);
+}
+.atlas-bar-label {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.atlas-layers {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.atlas-layer-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 10px;
+  height: 26px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  border-right: 1px solid var(--rule);
+}
+.atlas-layer-btn:last-child { border-right: 0; }
+.atlas-layer-btn.on {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+.atlas-layer-btn:not(.on) { opacity: 0.55; }
+.atlas-layer-btn:hover { opacity: 1; color: var(--ink); }
+
+.atlas-layer-mark {
+  display: inline-block;
+  width: 14px; height: 8px;
+  border-radius: 1px;
+  background: var(--ink);
+  opacity: 0.6;
+}
+.atlas-layer-mark.layer-core     { background: var(--ink);                  opacity: 0.65; }
+.atlas-layer-mark.layer-extent   { background: var(--ink);                  opacity: 0.30; }
+.atlas-layer-mark.layer-colonies {
+  background: transparent;
+  border: 1px dashed var(--ink); height: 6px;
+}
+.atlas-layer-mark.layer-successors {
+  background: transparent;
+  border: 1px dashed var(--ink);
+  border-style: dotted; height: 6px;
+}
+.atlas-layer-mark.layer-diaspora {
+  background: var(--ink); opacity: 0.4;
+  border-radius: 4px; width: 8px; height: 8px;
+}
+
+.atlas-stats {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+}
+.atlas-stats > span + span::before {
+  content: '';
+  display: inline-block;
+  width: 3px; height: 3px;
+  background: var(--faint);
+  border-radius: 50%;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.atlas-canvas {
+  flex: 1; min-height: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+.atlas-canvas:active { cursor: grabbing; }
+.atlas-canvas svg { display: block; }
+
+/* Era scrubber strip */
+.atlas-time {
+  display: flex; align-items: center; gap: 14px;
+  padding: 8px 24px;
+  border-bottom: 1px solid var(--rule-2);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.atlas-time-coverage {
+  font: 400 10px/1 var(--font-mono);
+  color: var(--faint);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.atlas-time-hint {
+  flex: 1;
+  font: italic 400 12.5px/1 var(--font-serif);
+  color: var(--mute);
+}
+
+.atlas-empty {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: var(--mute); padding: 0 32px; text-align: center;
+}
+.atlas-empty .empty-mark {
+  width: 32px; height: 32px;
+  border: 1.5px solid var(--rule);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  position: relative;
+}
+.atlas-empty .empty-mark::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 14px; height: 1px;
+  background: var(--faint);
+  transform: translate(-50%, -50%);
+}
+.atlas-empty h2 {
+  font: 500 18px/1.3 var(--font-serif);
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.005em;
+}
+.atlas-empty p {
+  font: 400 13px/1.55 var(--font-serif);
+  color: var(--ink-3);
+  max-width: 42ch;
+}
+.atlas-empty .atlas-empty-detail {
+  font: 400 11px/1.4 var(--font-mono);
+  color: var(--mute);
+  margin: 4px 0 12px;
+  letter-spacing: 0.02em;
+}
+
+.atlas-tooltip {
+  position: fixed;
+  z-index: 50;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  padding: 10px 14px;
+  pointer-events: none;
+  max-width: 340px;
+}
+.atlas-tooltip-trad {
+  display: flex; align-items: center;
+  font: 500 13.5px/1.2 var(--font-serif);
+  color: var(--ink);
+  margin-bottom: 6px;
+  letter-spacing: -0.005em;
+}
+
+.atlas-tooltip-kind {
+  margin-left: 10px;
+  font: 500 9px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  background: var(--surface-2);
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.atlas-tooltip-count {
+  margin-left: auto;
+  font: 400 10px/1 var(--font-mono);
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.atlas-tooltip-period {
+  font: 400 12.5px/1.45 var(--font-serif);
+  color: var(--ink-2);
+  margin-bottom: 4px;
+}
+.atlas-tooltip-source {
+  font: 400 10px/1.3 var(--font-mono);
+  color: var(--mute);
+  letter-spacing: 0.02em;
+}
+
+.atlas-footer {
+  display: flex; gap: 24px; align-items: center;
+  padding: 8px 24px;
+  font: 400 11px/1.4 var(--font-mono);
+  color: var(--mute);
+  border-top: 1px solid var(--rule-2);
+  flex-shrink: 0;
+}
+.atlas-foot-cta {
+  margin-left: auto;
+}
+
+/* ── Lifecycle timeline (era-scaled) ──────────────────────────────────── */
+
+.lifecycle-timeline {
+  position: relative;
+  width: 100%;
+  margin: 4px -4px 0;
+}
+.lifecycle-svg {
+  display: block;
+  overflow: visible;
+}
+.lifecycle-card {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  max-width: 64ch;
+}
+.lifecycle-card-eyebrow {
+  display: flex; align-items: center; gap: 8px;
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 6px;
+}
+.lifecycle-card-chip {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px;
+  font: 600 10px/1 var(--font-mono);
+  color: #FAFAF7;
+  border-radius: 50%;
+}
+.lifecycle-card-dot {
+  display: inline-block;
+  width: 3px; height: 3px;
+  background: var(--faint);
+  border-radius: 50%;
+}
+.lifecycle-card-notes {
+  margin: 0;
+  font: 400 13px/1.55 var(--font-serif);
+  color: var(--ink-2);
+}
+
+/* Glyph legend strip — auto-narrowed to the type-statuses that actually
+   appear in the figure's lifecycle. */
+.lifecycle-legend {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 12px 14px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: var(--surface-2);
+  border-radius: 3px;
+}
+.lifecycle-legend-item {
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.lifecycle-legend-chip {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  color: #FAFAF7;
+  font: 600 9.5px/1 var(--font-mono);
+}
+.lifecycle-legend-label {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.lifecycle-legend-note {
+  margin-left: auto;
+  font: italic 400 11px/1 var(--font-serif);
+  color: var(--mute);
+}
+
+/* Fallback (tradition has no parseable era dates) */
+.lifecycle-fallback {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.lifecycle-fallback-row {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule-3);
+  align-items: start;
+}
+.lifecycle-fallback-row:last-child { border-bottom: 0; }
+.lifecycle-fallback-node {
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+.lifecycle-fallback-node span {
+  color: #FAFAF7;
+  font: 600 11px/1 var(--font-mono);
+}
+.lifecycle-fallback-title {
+  display: flex; align-items: baseline; gap: 10px;
+  margin-bottom: 4px;
+}
+.lifecycle-fallback-title strong {
+  font: 500 13px/1.2 var(--font-serif);
+  color: var(--ink);
+  font-weight: 600;
+}
+.lifecycle-fallback-meta {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.lifecycle-fallback-vital {
+  margin-left: 8px;
+}
+.lifecycle-fallback-body p {
+  margin: 0;
+  font: 400 13px/1.55 var(--font-serif);
+  color: var(--ink-2);
+  max-width: 64ch;
+}
+
+/* ── Lineage tree (inside Detail) ──────────────────────────────────────── */
+
+.lineage-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 4px 0 12px;
+  margin: 0 -8px;
+}
+.lineage-canvas {
+  position: relative;
+  margin: 0 auto;
+  padding: 6px;
+  min-width: 100%;
+}
+.lineage-edges {
+  position: absolute;
+  top: 6px; left: 6px;
+  pointer-events: none;
+  z-index: 1;
+}
+.lineage-card {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 7px 10px 6px;
+  cursor: pointer;
+  transition: background .1s ease, border-color .1s ease, transform .1s ease;
+  overflow: hidden;
+  z-index: 2;
+}
+.lineage-card:hover {
+  background: var(--surface-2);
+  border-color: rgba(0,0,0,0.22);
+  transform: translateY(-1px);
+}
+.lineage-card.focus {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-ring);
+  cursor: default;
+  z-index: 3;
+}
+.lineage-card.focus:hover { background: var(--accent-bg); transform: none; }
+.lineage-card.sibling { background: var(--bg); border-style: dashed; }
+.lineage-card-name {
+  font: 500 12.5px/1.2 var(--font-serif);
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.005em;
+}
+.lineage-card-meta {
+  margin-top: 5px;
+  font: 400 9px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex; align-items: center; gap: 6px;
+}
+.lineage-card-meta .lineage-card-trad {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--ink-3);
+}
+.lineage-overflow {
+  position: absolute;
+  display: flex; align-items: center; justify-content: center;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  background: transparent;
+  border: 1px dashed var(--rule);
+  border-radius: 3px;
+  z-index: 2;
+}
+.lineage-overflow:hover {
+  color: var(--ink-2);
+  border-color: rgba(0,0,0,0.22);
+}
+
+.lineage-controls {
+  display: flex; align-items: center; gap: 12px;
+  margin-top: 14px;
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.lineage-step {
+  display: flex; align-items: center; gap: 0;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.lineage-step button {
+  width: 22px; height: 22px;
+  font: 500 13px/1 var(--font-mono);
+  color: var(--mute);
+}
+.lineage-step button:hover:not(:disabled) {
+  color: var(--ink);
+  background: var(--surface-2);
+}
+.lineage-step button:disabled { opacity: 0.3; cursor: not-allowed; }
+.lineage-step span {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  padding: 0 8px;
+  color: var(--ink);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  font-variant-numeric: tabular-nums;
+}
+.lineage-controls-hint {
+  margin-left: auto;
+  font: italic 400 11px/1 var(--font-serif);
+  color: var(--faint);
+}

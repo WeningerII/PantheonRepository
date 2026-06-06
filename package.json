@@ -1,0 +1,13 @@
+{
+  "name": "pantheon-registry",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Multi-tradition registry of mythological and historical figures across 50 traditions, 601 entries.",
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "@babel/standalone": "^7.28.4"
+  }
+}
