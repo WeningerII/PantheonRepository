@@ -37,6 +37,7 @@ function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK 
           <button className={'btn' + (view === 'browse' ? ' btn-on' : '')} onClick={() => setView('browse')} role="tab" aria-selected={view === 'browse'}>Browse</button>
           <button className={'btn' + (view === 'graph'  ? ' btn-on' : '')} onClick={() => setView('graph')}  role="tab" aria-selected={view === 'graph'}>Graph</button>
           <button className={'btn' + (view === 'atlas'  ? ' btn-on' : '')} onClick={() => setView('atlas')}  role="tab" aria-selected={view === 'atlas'}>Atlas</button>
+          <button className={'btn' + (view === 'items'  ? ' btn-on' : '')} onClick={() => setView('items')}  role="tab" aria-selected={view === 'items'}>Items</button>
         </div>
       </div>
     </div>
@@ -202,7 +203,13 @@ function Shell() {
   const [view, setView] = __sState('browse');
   const [cmdkOpen, setCmdkOpen] = __sState(false);
   const [graphFocusId, setGraphFocusId] = __sState(null);
+  const [selectedItemId, setSelectedItemId] = __sState(null);
   const searchRef = __sRef(null);
+
+  // Item registry (built in data.js, read once). The sorted list drives the
+  // Items index and the j/k navigation between open items.
+  const itemList = __sMemo(() => (window.allItems ? window.allItems() : []), []);
+  const selectedItem = selectedItemId && window.itemById ? window.itemById(selectedItemId) : null;
 
   // ── URL sync ─────────────────────────────────────────────────────────
   // Hash schema: #/<view>[/<id>]
@@ -215,24 +222,31 @@ function Shell() {
   // Push vs replace: opening or closing a detail is a navigation (push);
   // j/k between two detail entries is a continuation (replace) so the
   // history doesn't fill with every keypress.
-  const urlPrevRef = __sRef({ view: 'browse', selId: null, gFocus: null, initialized: false });
+  const urlPrevRef = __sRef({ view: 'browse', selId: null, gFocus: null, itemId: null, initialized: false });
 
   const applyHash = __sCb(() => {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas'].includes(v)) return;
+    if (!['browse', 'graph', 'atlas', 'items'].includes(v)) return;
     const id = parts[1] ? decodeURIComponent(parts[1]) : null;
     setView(v);
     if (v === 'browse') {
       selection.setSelectedId(id);
       setGraphFocusId(null);
+      setSelectedItemId(null);
     } else if (v === 'graph') {
       setGraphFocusId(id);
       selection.setSelectedId(null);
+      setSelectedItemId(null);
+    } else if (v === 'items') {
+      setSelectedItemId(id);
+      selection.setSelectedId(null);
+      setGraphFocusId(null);
     } else {
       selection.setSelectedId(null);
       setGraphFocusId(null);
+      setSelectedItemId(null);
     }
   }, [selection]);
 
@@ -256,9 +270,11 @@ function Shell() {
       target += '/' + encodeURIComponent(selection.selectedId);
     } else if (view === 'graph' && graphFocusId) {
       target += '/' + encodeURIComponent(graphFocusId);
+    } else if (view === 'items' && selectedItemId) {
+      target += '/' + encodeURIComponent(selectedItemId);
     }
     if (target === window.location.hash) {
-      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, initialized: true };
+      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, itemId: selectedItemId, initialized: true };
       return;
     }
     const prev = urlPrevRef.current;
@@ -269,15 +285,16 @@ function Shell() {
       prev.view === view &&
       (
         (view === 'browse' && prev.selId != null && selection.selectedId != null) ||
-        (view === 'graph' && prev.gFocus != null && graphFocusId != null)
+        (view === 'graph' && prev.gFocus != null && graphFocusId != null) ||
+        (view === 'items' && prev.itemId != null && selectedItemId != null)
       );
     if (!prev.initialized || continuation) {
       window.history.replaceState({}, '', target);
     } else {
       window.history.pushState({}, '', target);
     }
-    urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, initialized: true };
-  }, [view, selection.selectedId, graphFocusId]);
+    urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, itemId: selectedItemId, initialized: true };
+  }, [view, selection.selectedId, graphFocusId, selectedItemId]);
   // ─────────────────────────────────────────────────────────────────────
 
   const selectedEntry = selection.selectedId ? byId.get(selection.selectedId) : null;
@@ -298,6 +315,25 @@ function Shell() {
     }
   }, [selectedEntry, selIdxInFiltered, filters.filtered]);
 
+  // Step between open items (j/k and the detail Prev/Next buttons).
+  const moveItem = __sCb((delta) => {
+    if (!selectedItemId) return;
+    const idx = itemList.findIndex((it) => it.id === selectedItemId);
+    if (idx < 0) return;
+    const next = itemList[idx + delta];
+    if (next) setSelectedItemId(next.id);
+  }, [selectedItemId, itemList]);
+
+  // Open an item from anywhere (the index, or a figure's material culture).
+  // Opening an item is an Items-view navigation: switch views and clear the
+  // figure selection so the two slide-overs never stack.
+  const openItem = __sCb((id) => {
+    setView('items');
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setSelectedItemId(id);
+  }, [selection]);
+
   // Keyboard bindings. The handler is kept in a ref refreshed every render so
   // the window listener attaches exactly once yet always reads current state —
   // `filters`/`selection` are fresh objects each render, so a dependency-keyed
@@ -315,6 +351,7 @@ function Shell() {
     }
     if (e.key === 'Escape') {
       if (cmdkOpen) { setCmdkOpen(false); return; }
+      if (selectedItemId) { setSelectedItemId(null); return; }
       if (selection.selectedId) { selection.setSelectedId(null); return; }
       if (inField) { e.target.blur(); return; }
       if (filters.query) { filters.setQuery(''); return; }
@@ -330,6 +367,13 @@ function Shell() {
     }
 
     if (inField || cmdkOpen) return;
+
+    // Item-detail navigation
+    if (selectedItemId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); moveItem(1); return; }
+      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); moveItem(-1); return; }
+      return;
+    }
 
     // Detail-open navigation
     if (selection.selectedId) {
@@ -408,6 +452,14 @@ function Shell() {
               }}
             />
           )}
+          {view === 'items' && (
+            <window.Items
+              items={itemList}
+              byId={byId}
+              selectedItemId={selectedItemId}
+              onOpenItem={(id) => setSelectedItemId(id)}
+            />
+          )}
         </div>
       </div>
 
@@ -420,10 +472,26 @@ function Shell() {
           onPrev={() => moveSelection(-1)}
           onNext={() => moveSelection(1)}
           onOpen={(id) => selection.setSelectedId(id)}
+          onOpenItem={openItem}
           onShowInGraph={(entry) => {
             setGraphFocusId(entry.id);
             setView('graph');
             selection.setSelectedId(null);
+          }}
+        />
+      )}
+
+      {selectedItem && (
+        <window.ItemDetail
+          item={selectedItem}
+          byId={byId}
+          onClose={() => setSelectedItemId(null)}
+          onPrev={() => moveItem(-1)}
+          onNext={() => moveItem(1)}
+          onOpenFigure={(id) => {
+            setView('browse');
+            setSelectedItemId(null);
+            selection.setSelectedId(id);
           }}
         />
       )}

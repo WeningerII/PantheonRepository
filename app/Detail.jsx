@@ -490,7 +490,40 @@ function CultBlock({ entry }) {
   );
 }
 
-function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, onOpen, onShowInGraph }) {
+// Material culture — the objects a figure carries, resolved to the shared item
+// registry so each links to its first-class Item record (native name, maker,
+// custody chain). Objects with a traced custody chain get a small badge.
+function MaterialCulture({ entry, onOpenItem }) {
+  const items = window.itemsForEntry ? window.itemsForEntry(entry) : [];
+  if (!items.length) return null;
+  const humanize = (s) => String(s || '').replace(/[-_]+/g, ' ');
+  return (
+    <div className="section section-material">
+      <h2>Material culture <span className="count">{items.length}</span></h2>
+      <div className="material-list">
+        {items.map((it, i) => {
+          const linkable = !!onOpenItem;
+          return (
+            <button
+              key={it.id || i}
+              className={'material-item' + (linkable ? ' link' : '')}
+              onClick={linkable ? () => onOpenItem(it.id) : null}
+              disabled={!linkable}
+            >
+              <span className="material-item-name">{it.displayName || it.id}</span>
+              <span className="material-item-meta">
+                {it.classId && <span className="material-item-class">{humanize(it.classId)}</span>}
+                {it.custodyCount > 0 && <span className="material-item-custody">custody traced</span>}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, onOpen, onOpenItem, onShowInGraph }) {
   // Exit-animation state machine. When `entryProp` becomes null, we keep the
   // currently-rendered entry around for one animation frame (cubic-bezier
   // matching the slide-in), then truly unmount. When a new entry arrives
@@ -650,14 +683,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
             notes={e => e.notes}
             nameStyle="rich-row-name-epithet"
           />
-          <RichSection
-            flavor="material"
-            title="Material culture"
-            items={entry.materialCulture}
-            name={m => m.id || safeLabel(m)}
-            metas={m => [m.classId]}
-            notes={m => m.notes}
-          />
+          <MaterialCulture entry={entry} onOpenItem={onOpenItem} />
           {(entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.linguistic?.etymology) ? (
             <Chapter label="Practice & Language" />
           ) : null}

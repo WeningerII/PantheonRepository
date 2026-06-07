@@ -25,7 +25,7 @@ DIST.mkdir(exist_ok=True)
 
 JSX_FILES = [
     'state.jsx', 'Browse.jsx', 'Lineage.jsx', 'Lifecycle.jsx', 'Detail.jsx',
-    'Graph.jsx', 'Atlas.jsx', 'CommandPalette.jsx', 'Shell.jsx', 'main.jsx',
+    'Items.jsx', 'Graph.jsx', 'Atlas.jsx', 'CommandPalette.jsx', 'Shell.jsx', 'main.jsx',
 ]
 
 
@@ -244,7 +244,7 @@ __STYLES_CSS__
 <div id="boot" role="status" aria-live="polite">
   <div class="boot-mark" aria-hidden="true"></div>
   <div class="title">Pantheon Registry</div>
-  <div class="subtitle">601 figures, 50 traditions, one index.</div>
+  <div class="subtitle">602 figures, 50 traditions, one index.</div>
   <div class="step" id="boot-step">loading…</div>
   <div class="bar"><div id="boot-bar" style="width:30%"></div></div>
   <div id="boot-err" class="err" style="display:none"></div>

@@ -40,8 +40,8 @@ function loadSeed() {
 
 const { ctx, logs, people, atlas } = loadSeed();
 
-test('seeds 601 figures', () => {
-  assert.strictEqual(Object.keys(people).length, 601);
+test('seeds 602 figures', () => {
+  assert.strictEqual(Object.keys(people).length, 602);
 });
 
 test('seeds 56 atlas territories', () => {
@@ -127,4 +127,52 @@ test('inheritance never overrides a figure\'s own declared powers (canon-safe)',
   const hyllus = ip['greek_apollod_hyllus'] || [];
   assert.ok(!hyllus.some((c) => c.facultyId === 'physical-strength-extreme'),
     'a declared power leaked into the inheritance candidates');
+});
+
+test('seeds the cited Thor figure with Mjǫllnir in his material culture', () => {
+  const thor = people['norse_thor'];
+  assert.ok(thor, 'expected norse_thor in the seed');
+  assert.deepStrictEqual(thor.parentIds, ['norse_odin'], 'Thor is Odin\'s son');
+  const mc = (thor.materialCulture || []).map((m) => m.id);
+  assert.ok(mc.includes('mjolnir'), 'Thor should carry mjolnir');
+});
+
+test('exposes the item registry on window.__PR.items', () => {
+  const items = ctx.window.__PR.items;
+  assert.ok(items && typeof items === 'object', '__PR.items not exposed');
+  assert.ok(Object.keys(items).length > 30, `expected the full object corpus, got ${Object.keys(items).length}`);
+  // Every materialCulture object becomes an item with at least one holder.
+  for (const it of Object.values(items)) {
+    assert.strictEqual(typeof it.id, 'string', 'item missing id');
+    assert.ok(Array.isArray(it.holders), `item ${it.id} missing holders`);
+    assert.ok(Array.isArray(it.names) && it.names.length >= 1, `item ${it.id} missing a name`);
+  }
+});
+
+test('Mjǫllnir carries its multi-script names (incl. the runic form) and maker', () => {
+  const mj = ctx.window.__PR.items['mjolnir'];
+  assert.ok(mj, 'mjolnir item missing');
+  const values = mj.names.map((n) => n.value);
+  assert.ok(values.includes('Mjǫllnir'), 'expected the normalized Old Norse form');
+  assert.ok(values.some((v) => /[ᚠ-᛿]/.test(v)), 'expected a runic (younger futhark) form');
+  assert.ok(mj.maker && /Brokkr/.test(mj.maker.name), 'expected the dwarf-smith maker Brokkr');
+  // Thor (a registry figure) is a holder.
+  assert.ok(mj.holders.some((h) => h.personId === 'norse_thor'), 'Thor should be a holder of Mjǫllnir');
+});
+
+test('Heracles\' bow has a real custody chain (Heracles → Poeas → Philoctetes)', () => {
+  const bow = ctx.window.__PR.items['heracles-bow'];
+  assert.ok(bow, 'heracles-bow item missing');
+  assert.ok(bow.custody.length >= 3, `expected a multi-step custody chain, got ${bow.custody.length}`);
+  // The original owner is a registry figure (linked by personId).
+  const origin = bow.custody.find((c) => c.personId === 'greek_apollod_heracles');
+  assert.ok(origin, 'Heracles should anchor the chain by personId');
+  // Downstream holders not yet in the registry are named by externalRef.
+  const chainText = JSON.stringify(bow.custody);
+  assert.match(chainText, /Poeas/, 'expected Poeas in the chain');
+  assert.match(chainText, /Philoctetes/, 'expected Philoctetes in the chain');
+  // Every custody step is cited.
+  for (const step of bow.custody) {
+    assert.ok((step.sources || []).length >= 1, `custody step "${step.role}" is uncited`);
+  }
 });

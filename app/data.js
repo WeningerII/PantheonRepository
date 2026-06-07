@@ -11630,6 +11630,10 @@ const buildPeopleSeed = () => {
         { sphereId: 'war-and-battle-death', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Grímnismál; multiple sagas' }], notes: 'Receiver of the einherjar — the slain warriors gathered to Valhǫll by the Valkyries.' },
         { sphereId: 'patron-of-Yngling-and-Hlaðir-jarls-genealogy', contextTag: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Ynglinga saga; Háleygjatal' }], notes: 'Founder of the Norwegian/Swedish royal lineages through his sons; Sæmingr by Skaði founds the Hlaðir jarls; the Skjǫldungs/Yngvi/Sigi sons in other traditions.' },
       ],
+      materialCulture: [
+        { id: 'gungnir', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35; Sigrdrífumál 17' }] },
+        { id: 'draupnir', classId: 'ring', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35; Skírnismál 21' }] },
+      ],
       cult: {
         centers: [
           { placeName: 'Gamla Uppsala (Sweden)', period: 'viking-age', sources: [{ kind: 'primary', reference: 'Adam of Bremen, Gesta Hammaburgensis 4.26-27 (c. 1075 CE — describes the great temple with the three statues of Thor, Odin, and Freyr; the nine-yearly sacrifice)' }] },
@@ -11644,6 +11648,42 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Vǫluspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, etc.); Snorri\'s Prose Edda (Gylfaginning, Skáldskaparmál); Heimskringla (Ynglinga saga); Háleygjatal; Tacitus Germania 9 (1st c. CE — the earliest external attestation, identifying Mercury as the chief Germanic deity); Adam of Bremen Gesta Hammaburgensis 4.26-27 (Uppsala temple)' }], weight: 'primary' },
       ],
       notes: 'Chief of the Æsir (Allfǫðr — Allfather); central deity of Norse mythology. Wisdom-and-poetry god; receiver of the slain at Valhǫll. Sacrificed his right eye at Mímir\'s well for wisdom; hung himself on Yggdrasil for nine nights, pierced by his own spear, to receive the runes (Hávamál Rúnatal). Wields Gungnir and Draupnir; rides Sleipnir; accompanied by ravens Huginn and Muninn and wolves Geri and Freki. Father of Baldr by Frigg; father of Þórr by Jǫrð (the giantess earth-personification); father of Sæmingr by Skaði per Háleygjatal — the Norse pattern of god-jǫtunn unions producing royal-genealogical heirs is consistent. Tacitus Germania 9 (1st c. CE) is the earliest external attestation, via Roman interpretatio identifying Mercury (Germanic Wōden / Odin) as chief Germanic deity. The major cult centers were Gamla Uppsala (Sweden), Lejre (Denmark), and Hlaðir (Norway). Christianization of Scandinavia 10th-12th c. CE displaced active worship; the textual recording (Snorri, Codex Regius) is medieval-saga from the 13th c., separated from the cult by 200+ years.',
+    },
+
+    // ─── ÞÓRR (Thor — thunder-god, son of Odin; wielder of Mjǫllnir) ─────
+    {
+      id: 'norse_thor', schemaVersion: 2,
+      name: {
+        primary: 'Thor',
+        alt: ['Þórr', 'Ása-Þórr', 'Øku-Þórr', 'Vingþórr', 'Donar (OHG)', 'Þunor (OE)'],
+        transliterations: { oldnorse: 'Þórr', modernicelandic: 'Þór', modernenglish: 'Thor' },
+      },
+      type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse',
+      sex: 'male', vitalStatus: 'living',
+      parentIds: ['norse_odin'],
+      parentRoles: { norse_odin: 'paternal' },
+      temporal: { era: 'mythic-prehistoric' },
+      faculties: [
+        { id: 'physical-strength-extreme', scopeTags: ['giant-slaying', 'lifting'], domainTag: 'physical-force', limitTags: [], manifestationTags: [], inheritability: 'full', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; the Útgarða-Loki contests, Gylfaginning 46-47' }] },
+        { id: 'storm-and-thunder-control', scopeTags: ['thunder', 'lightning', 'storm'], domainTag: 'weather', limitTags: [], manifestationTags: ['thunder-from-chariot'], inheritability: 'partial', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the goats Tanngrisnir and Tanngnjóstr draw his chariot, making thunder)' }] },
+      ],
+      domains: [
+        { sphereId: 'thunder-and-storm', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Adam of Bremen 4.26 (Thor as sky/thunder god at Uppsala)' }] },
+        { sphereId: 'protection-of-Midgard-and-mankind', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Gylfaginning passim; the hammer hallows and defends' }] },
+      ],
+      materialCulture: [
+        { id: 'mjolnir', classId: 'hammer', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Skáldskaparmál 35; Þrymskviða' }] },
+        { id: 'megingjord', classId: 'belt', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the girdle of strength that doubles his power)' }] },
+        { id: 'jarngreipr', classId: 'gauntlets', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the iron gloves needed to wield Mjǫllnir)' }] },
+      ],
+      relations: [
+        { kind: 'mother', externalRef: { name: 'Jǫrð (the earth-giantess; mother of Thor by Odin)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
+        { kind: 'enemy', externalRef: { name: 'Jǫrmungandr (the Midgard Serpent; Thor\'s doom at Ragnarǫk)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫluspá 56; Gylfaginning 51' }], notes: 'They slay each other at Ragnarǫk; Thor walks nine steps before falling from the serpent\'s venom.' },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Þrymskviða, Hárbarðsljóð, Hymiskviða, Vǫluspá); Snorri\'s Prose Edda (Gylfaginning, Skáldskaparmál); Adam of Bremen 4.26-27 (Uppsala temple triad); Tacitus Germania 9 (Donar/Thor via interpretatio)' }], weight: 'primary' },
+      ],
+      notes: 'Þórr (Thor) — thunder-god of the Norse pantheon, son of Odin by the earth-giantess Jǫrð; foremost defender of Ásgarðr and Midgard against the jǫtnar. Wields the hammer Mjǫllnir (forged by the dwarves Brokkr and Eitri), the strength-belt Megingjǫrð, and the iron gloves Járngreipr; rides a goat-drawn chariot whose passage makes thunder. At Ragnarǫk he and the Midgard Serpent Jǫrmungandr kill each other, and his sons Magni and Móði inherit Mjǫllnir into the renewed world. The most popularly worshipped Norse god of the Viking Age (hammer amulets, Thórr-theophoric names); one of the Uppsala temple triad with Odin and Freyr per Adam of Bremen.',
     },
 
     // ─── NJǪRÐR (Vanir sea-god, father of Freyr and Freyja) ──────────────
@@ -25811,6 +25851,126 @@ const inheritablePowers = (id, peopleMap, maxDepth = 4) => {
   return [...best.values()].sort((a, b) => a.generation - b.generation || a.facultyId.localeCompare(b.facultyId));
 };
 
+// ─── Items: the material-culture registry (first-class objects) ────────────
+// Mythic items are bounded — most are unique and individual (Mjǫllnir, Gungnir),
+// a few are typed multiples. Unlike powers, they are NOT traced by genealogical
+// descent: an object has a fixed identity and passes by CUSTODY — who forged it,
+// who held it, and to whom it passed. Holders are derived from every figure's
+// materialCulture[]; ITEM_LORE adds the cited biography (native multi-script
+// names, maker, ordered custody chain) for the showcased objects. A custody link
+// names a registry figure by personId where one exists, or an external holder
+// (e.g. Philoctetes, not yet a registry entry) by externalRef — so a real chain
+// can be told end-to-end without inventing entries. Everything is cited; nothing
+// here authors unattested myth.
+const ITEM_LORE = {
+  mjolnir: {
+    names: [
+      { value: 'Mjǫllnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', note: 'normalized Old Norse', source: 'Skáldskaparmál 35' },
+      { value: 'Mjölnir', script: 'Latin', tradition: 'Modern Icelandic / English', period: 'modern' },
+      { value: 'Mjølnir', script: 'Latin', tradition: 'Danish / Norwegian', period: 'modern' },
+      { value: 'ᛘᛁᚬᛚᚾᛁᛦ', script: 'Younger Futhark (runic)', tradition: 'Norse', period: 'viking-age', note: 'younger-futhark transliteration (m-i-o-l-n-i-ʀ)', source: 'younger-futhark orthography' },
+    ],
+    maker: { name: 'Brokkr and Eitri (Sindri)', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35 (Loki wagers his head; Brokkr works the bellows while Loki, as a fly, bites him — the handle comes out short)' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (Sindri), dwarf-smiths', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'wielder', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Þrymskviða (stolen by Þrymr and recovered)' }], note: 'Thor’s defining weapon; needed Járngreipr (iron gloves) and Megingjǫrð (girdle of strength) to wield.' },
+      { role: 'heir', externalRef: { name: 'Magni and Móði (sons of Thor)', tradition: 'Norse' }, era: 'after Ragnarǫk', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál 51 (Móði and Magni shall have Mjǫllnir when the strife is ended)' }] },
+    ],
+    lore: 'The thunder-hammer forged by the dwarf-smiths Brokkr and Eitri on Loki’s wager; its short handle is the flaw left when Loki, in fly-form, bit Brokkr at the bellows. Thor’s defining weapon — stolen by the giant Þrymr and recovered in Þrymskviða — it passes after Ragnarǫk to his sons Magni and Móði.',
+  },
+  gungnir: {
+    names: [
+      { value: 'Gungnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', source: 'Skáldskaparmál 35' },
+    ],
+    maker: { name: 'the Sons of Ivaldi', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Sons of Ivaldi (dwarf-smiths)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'wielder', personId: 'norse_odin', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sigrdrífumál 17; Vǫluspá 24 (Odin casts the spear over the host to open the first war)' }], note: 'The spear that never misses; Odin pierced himself with it on Yggdrasil for the runes (Hávamál 138).' },
+    ],
+    lore: 'Odin’s spear, made by the Sons of Ivaldi; it never misses its mark. Odin hurled it over the Vanir host to open the first war (Vǫluspá 24) and pierced himself with it in his self-sacrifice on Yggdrasil (Hávamál 138).',
+  },
+  draupnir: {
+    names: [
+      { value: 'Draupnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', note: '“the dripper”', source: 'Skáldskaparmál 35' },
+    ],
+    maker: { name: 'Brokkr and Eitri (Sindri)', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (Sindri), dwarf-smiths', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'owner', personId: 'norse_odin', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }], note: 'Every ninth night it drips eight gold rings of equal weight.' },
+      { role: 'laid on Baldr’s pyre', externalRef: { name: 'Baldr (returned from Hel via the messenger Hermóðr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 49' }] },
+    ],
+    lore: 'Odin’s gold arm-ring, forged by Brokkr and Eitri; every ninth night it drips eight rings of equal weight. Odin laid it on Baldr’s funeral pyre, and Baldr sent it back from Hel by the messenger Hermóðr (Gylfaginning 49).',
+  },
+  'heracles-bow': {
+    names: [
+      { value: 'the Bow of Heracles', script: 'Latin', tradition: 'Greek', period: 'classical', source: 'Apollod. 2.7.7' },
+      { value: 'τόξα Ἡράκλεια', script: 'Greek', tradition: 'Greek', period: 'classical', note: 'the bow-and-arrows of Heracles (τόξα)', source: 'Sophocles, Philoctetes' },
+    ],
+    custody: [
+      { role: 'original owner', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.11' }], note: 'Carried with arrows envenomed by the Lernaean Hydra throughout the Labors.' },
+      { role: 'bequeathed to', externalRef: { name: 'Poeas (who kindled Heracles’ pyre on Mt. Oeta)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.7.7 (Heracles gives the bow to Poeas as the reward for lighting the pyre)' }] },
+      { role: 'inherited by', externalRef: { name: 'Philoctetes (son of Poeas; marooned on Lemnos)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Sophocles, Philoctetes; Apollod. Epitome 3.27 (snake-bitten and abandoned en route to Troy)' }] },
+      { role: 'decisive at Troy', externalRef: { name: 'Philoctetes (recalled by the oracle; slays Paris)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epitome 5.8 (Troy cannot fall without Heracles’ bow; Philoctetes is fetched and kills Paris)' }] },
+    ],
+    lore: 'The bow Heracles bore through the Labors, strung with arrows envenomed by the Lernaean Hydra. At his death on Mt. Oeta he gave it to Poeas, who lit his pyre; it passed to Poeas’s son Philoctetes, who was marooned on Lemnos but recalled to Troy when an oracle declared the city could not fall without it — and there killed Paris.',
+  },
+};
+
+// Title-case a kebab/snake item id into a readable fallback label.
+const titleCaseId = (id) => String(id).replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+// Dedupe a citation list by its reference text (objects compared by reference).
+const dedupeSources = (arr) => {
+  const seen = new Set();
+  const out = [];
+  for (const s of (arr || [])) {
+    const k = s && s.reference ? s.reference : JSON.stringify(s);
+    if (!seen.has(k)) { seen.add(k); out.push(s); }
+  }
+  return out;
+};
+
+// Build the item registry. Scans every figure's materialCulture[] to collect the
+// holders of each object id, then merges the cited ITEM_LORE (native names, maker,
+// custody chain, prose) onto the matching objects. Objects with no lore still
+// appear, with a title-cased fallback name and their holder list. Pure function
+// of (peopleMap, lore) so tests can drive it directly.
+const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
+  const items = {};
+  const ensure = (id) => (items[id] || (items[id] = {
+    id, classId: null, kind: null, holders: [], names: [], maker: null, custody: [], sources: [], lore: null,
+  }));
+  for (const person of Object.values(peopleMap)) {
+    for (const mc of (person.materialCulture || [])) {
+      if (!mc || !mc.id) continue;
+      const it = ensure(mc.id);
+      if (!it.classId && mc.classId) it.classId = mc.classId;
+      if (!it.kind && mc.kind) it.kind = mc.kind;
+      it.holders.push({ personId: person.id, sources: mc.sources || [], notes: mc.notes || null });
+      for (const s of (mc.sources || [])) it.sources.push(s);
+    }
+  }
+  for (const [id, L] of Object.entries(lore || {})) {
+    const it = ensure(id);
+    if (L.names) it.names = L.names;
+    if (L.maker) it.maker = L.maker;
+    if (L.custody) it.custody = L.custody;
+    if (L.lore) it.lore = L.lore;
+    if (L.classId && !it.classId) it.classId = L.classId;
+    if (L.kind && !it.kind) it.kind = L.kind;
+    for (const c of (L.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
+    for (const s of (L.maker?.sources || [])) it.sources.push(s);
+  }
+  for (const it of Object.values(items)) {
+    if (!it.names.length) it.names = [{ value: titleCaseId(it.id), script: 'Latin' }];
+    it.sources = dedupeSources(it.sources);
+    it.holderCount = it.holders.length;
+    it.custodyCount = it.custody.length;
+    it.displayName = it.names[0]?.value || titleCaseId(it.id);
+  }
+  return items;
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -27711,7 +27871,11 @@ for (const pid of Object.keys(seedPeople)) {
   const inh = inheritablePowers(pid, seedPeople);
   if (inh.length) inheritedPowers[pid] = inh;
 }
-Object.assign(window.__PR, { divinity, traditionMix, inheritedPowers, formatFraction });
+const items = buildItemRegistry(seedPeople);
+Object.assign(window.__PR, {
+  divinity, traditionMix, inheritedPowers, formatFraction,
+  items, buildItemRegistry, ITEM_LORE,
+});
 
 // Persist constants for the cached warm-path readers.
 try {

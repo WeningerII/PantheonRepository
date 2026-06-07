@@ -26,7 +26,7 @@ const LIB_FILES = [
 ].map((p) => path.join(NM, p));
 
 // Same order build.py / index.html load them in.
-const JSX = ['state', 'Browse', 'Lineage', 'Lifecycle', 'Detail', 'Graph',
+const JSX = ['state', 'Browse', 'Lineage', 'Lifecycle', 'Detail', 'Items', 'Graph',
             'Atlas', 'CommandPalette', 'Shell', 'main'];
 
 async function bootApp({ panelWidth = 1200 } = {}) {
@@ -90,8 +90,15 @@ async function bootApp({ panelWidth = 1200 } = {}) {
     });
     await flush();
   };
+  const openItem = async (id) => {
+    await act(async () => {
+      window.location.hash = '#/items/' + encodeURIComponent(id);
+      window.dispatchEvent(new window.Event('hashchange'));
+    });
+    await flush();
+  };
 
-  return { dom, window, document: D, act, flush, errors, key, clickButton, openFirstFigure, openFigure };
+  return { dom, window, document: D, act, flush, errors, key, clickButton, openFirstFigure, openFigure, openItem };
 }
 
 module.exports = { bootApp };

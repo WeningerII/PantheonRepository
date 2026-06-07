@@ -3028,6 +3028,196 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   color: var(--faint);
 }
 
+/* ═══ Items registry ═══════════════════════════════════════════════════════
+   First-class material-culture view: an index (left of the detail slide-over)
+   grouped by object kind, plus an item detail that tells the custody chain. */
+
+.items-view {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column;
+  background: var(--bg);
+}
+.items-head {
+  flex-shrink: 0;
+  padding: 28px 40px 18px;
+  border-bottom: 1px solid var(--rule-2);
+}
+.items-head-row { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.items-title {
+  margin: 0;
+  display: flex; align-items: baseline; gap: 10px;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--ink-2);
+}
+.items-count {
+  font: 400 10px/1 var(--font-mono);
+  letter-spacing: 0.04em; color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.items-showcased {
+  font: italic 400 12px/1 var(--font-serif);
+  color: var(--accent);
+}
+.items-sub {
+  margin: 10px 0 0;
+  max-width: 64ch;
+  font: 400 14px/1.6 var(--font-serif);
+  color: var(--ink-3);
+}
+.items-search { margin-top: 14px; position: relative; max-width: 360px; }
+.items-search input {
+  width: 100%; height: 30px;
+  padding: 0 28px 0 10px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--surface);
+  font: 400 13px/1 var(--font-sans);
+  color: var(--ink);
+}
+.items-search input:focus { border-color: var(--accent-ring); outline: none; }
+.items-search-clear {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; border-radius: 3px;
+  color: var(--mute); font-size: 14px; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.items-search-clear:hover { color: var(--ink); background: var(--surface-2); }
+
+.items-grid {
+  flex: 1; min-height: 0; overflow-y: auto;
+  padding: 22px 40px 64px;
+  column-width: 320px; column-gap: 36px;
+}
+.items-group {
+  break-inside: avoid;
+  margin-bottom: 26px;
+}
+.items-group-head {
+  margin: 0 0 8px;
+  display: flex; align-items: baseline; gap: 8px;
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--mute);
+}
+.items-group-count { color: var(--faint); font-weight: 400; font-variant-numeric: tabular-nums; }
+.items-rows { display: flex; flex-direction: column; gap: 2px; }
+.item-row {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 8px 10px; border-radius: 3px;
+  border: 1px solid transparent;
+  text-align: left; width: 100%;
+  cursor: pointer;
+  transition: background .12s ease, border-color .12s ease;
+}
+.item-row:hover { background: var(--surface); border-color: var(--rule-2); }
+.item-row.on { background: var(--surface); border-color: var(--accent-ring); }
+.item-row-name { font: 500 14px/1.3 var(--font-serif); color: var(--ink); }
+.item-row-name.glyph { font-size: 16px; }
+.item-row-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.item-row-class {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 1px 5px; border-radius: 2px; background: var(--surface-2); color: var(--mute);
+}
+.item-row-holder { font: italic 400 12px/1.3 var(--font-serif); color: var(--ink-3); }
+.item-badge {
+  margin-left: auto;
+  font: 500 8.5px/1.4 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 1px 6px; border-radius: 2px;
+}
+.item-badge-custody { color: var(--accent); background: var(--accent-bg); }
+.item-badge-multi { color: var(--ink-2); background: var(--surface-2); }
+.items-empty {
+  font: italic 400 14px/1.5 var(--font-serif);
+  color: var(--mute);
+}
+
+/* ── Item detail slide-over ─────────────────────────────────────────────── */
+.detail.item-detail::before { background: var(--accent); }
+.item-detail .detail-header h1.item-title-glyph { font-size: 38px; line-height: 1.1; }
+.item-maker {
+  margin-top: 12px;
+  font: italic 400 14px/1.5 var(--font-serif);
+  color: var(--ink-3);
+}
+.item-maker-name { font-style: normal; color: var(--ink-2); }
+.item-maker-kind { color: var(--mute); }
+
+.name-rec-glyph { font: 500 20px/1.2 var(--font-serif); color: var(--ink); }
+
+/* Custody chain — the object's biography as an ordered, linked timeline. */
+.custody-chain { list-style: none; margin: 0; padding: 0; }
+.custody-step { display: flex; gap: 12px; }
+.custody-spine {
+  flex-shrink: 0; width: 12px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.custody-node {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--surface); border: 2px solid var(--accent);
+  margin-top: 5px; flex-shrink: 0;
+}
+.custody-line { flex: 1; width: 2px; background: var(--rule); margin: 2px 0; }
+.custody-body { flex: 1; padding-bottom: 18px; min-width: 0; }
+.custody-role {
+  font: 500 9px/1.4 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--mute); margin-bottom: 3px;
+}
+.custody-who { display: inline-flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.custody-who.link { cursor: pointer; }
+.custody-who-name { font: 500 15px/1.3 var(--font-serif); color: var(--ink); }
+.custody-who.link:hover .custody-who-name { color: var(--accent); }
+.custody-who-meta, .custody-era {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--mute);
+}
+.custody-ext { font: 400 15px/1.3 var(--font-serif); color: var(--ink-2); }
+.custody-note { margin-top: 5px; font: italic 400 13px/1.55 var(--font-serif); color: var(--ink-3); max-width: 60ch; }
+.custody-cite { margin-top: 4px; font: 400 11px/1.5 var(--font-mono); color: var(--mute); max-width: 64ch; }
+
+/* Registry holders + item sources */
+.item-holders { display: flex; flex-wrap: wrap; gap: 6px; }
+.item-holder {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 5px 10px; border-radius: 3px;
+  border: 1px solid var(--rule-2); background: var(--surface);
+  cursor: pointer;
+}
+.item-holder:hover { border-color: var(--accent-ring); }
+.item-holder-name { font: 500 13px/1.3 var(--font-serif); color: var(--ink); }
+.item-holder:hover .item-holder-name { color: var(--accent); }
+.item-holder-meta { font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--mute); }
+.item-sources { display: flex; flex-direction: column; gap: 5px; }
+.item-source { display: flex; align-items: baseline; gap: 8px; }
+.item-source-kind {
+  flex-shrink: 0;
+  font: 500 8.5px/1.6 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--mute);
+}
+.item-source-ref { font: 400 12.5px/1.55 var(--font-serif); color: var(--ink-3); }
+
+/* ── Material culture cross-link (figure detail → item registry) ─────────── */
+.material-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.material-item {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 6px 11px; border-radius: 3px;
+  border: 1px solid var(--rule-2); background: var(--surface);
+  text-align: left;
+}
+.material-item.link { cursor: pointer; }
+.material-item.link:hover { border-color: var(--accent-ring); }
+.material-item-name { font: 500 14px/1.3 var(--font-serif); color: var(--ink); }
+.material-item.link:hover .material-item-name { color: var(--accent); }
+.material-item-meta { display: inline-flex; align-items: center; gap: 7px; }
+.material-item-class {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 1px 5px; border-radius: 2px; background: var(--surface-2); color: var(--mute);
+}
+.material-item-custody {
+  font: 500 8.5px/1.4 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent);
+}
+
 </style>
 
 <style>
@@ -3117,7 +3307,7 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 <div id="boot" role="status" aria-live="polite">
   <div class="boot-mark" aria-hidden="true"></div>
   <div class="title">Pantheon Registry</div>
-  <div class="subtitle">601 figures, 50 traditions, one index.</div>
+  <div class="subtitle">602 figures, 50 traditions, one index.</div>
   <div class="step" id="boot-step">loading…</div>
   <div class="bar"><div id="boot-bar" style="width:30%"></div></div>
   <div id="boot-err" class="err" style="display:none"></div>
@@ -14759,6 +14949,10 @@ const buildPeopleSeed = () => {
         { sphereId: 'war-and-battle-death', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Grímnismál; multiple sagas' }], notes: 'Receiver of the einherjar — the slain warriors gathered to Valhǫll by the Valkyries.' },
         { sphereId: 'patron-of-Yngling-and-Hlaðir-jarls-genealogy', contextTag: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Ynglinga saga; Háleygjatal' }], notes: 'Founder of the Norwegian/Swedish royal lineages through his sons; Sæmingr by Skaði founds the Hlaðir jarls; the Skjǫldungs/Yngvi/Sigi sons in other traditions.' },
       ],
+      materialCulture: [
+        { id: 'gungnir', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35; Sigrdrífumál 17' }] },
+        { id: 'draupnir', classId: 'ring', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35; Skírnismál 21' }] },
+      ],
       cult: {
         centers: [
           { placeName: 'Gamla Uppsala (Sweden)', period: 'viking-age', sources: [{ kind: 'primary', reference: 'Adam of Bremen, Gesta Hammaburgensis 4.26-27 (c. 1075 CE — describes the great temple with the three statues of Thor, Odin, and Freyr; the nine-yearly sacrifice)' }] },
@@ -14773,6 +14967,42 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Vǫluspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, etc.); Snorri\'s Prose Edda (Gylfaginning, Skáldskaparmál); Heimskringla (Ynglinga saga); Háleygjatal; Tacitus Germania 9 (1st c. CE — the earliest external attestation, identifying Mercury as the chief Germanic deity); Adam of Bremen Gesta Hammaburgensis 4.26-27 (Uppsala temple)' }], weight: 'primary' },
       ],
       notes: 'Chief of the Æsir (Allfǫðr — Allfather); central deity of Norse mythology. Wisdom-and-poetry god; receiver of the slain at Valhǫll. Sacrificed his right eye at Mímir\'s well for wisdom; hung himself on Yggdrasil for nine nights, pierced by his own spear, to receive the runes (Hávamál Rúnatal). Wields Gungnir and Draupnir; rides Sleipnir; accompanied by ravens Huginn and Muninn and wolves Geri and Freki. Father of Baldr by Frigg; father of Þórr by Jǫrð (the giantess earth-personification); father of Sæmingr by Skaði per Háleygjatal — the Norse pattern of god-jǫtunn unions producing royal-genealogical heirs is consistent. Tacitus Germania 9 (1st c. CE) is the earliest external attestation, via Roman interpretatio identifying Mercury (Germanic Wōden / Odin) as chief Germanic deity. The major cult centers were Gamla Uppsala (Sweden), Lejre (Denmark), and Hlaðir (Norway). Christianization of Scandinavia 10th-12th c. CE displaced active worship; the textual recording (Snorri, Codex Regius) is medieval-saga from the 13th c., separated from the cult by 200+ years.',
+    },
+
+    // ─── ÞÓRR (Thor — thunder-god, son of Odin; wielder of Mjǫllnir) ─────
+    {
+      id: 'norse_thor', schemaVersion: 2,
+      name: {
+        primary: 'Thor',
+        alt: ['Þórr', 'Ása-Þórr', 'Øku-Þórr', 'Vingþórr', 'Donar (OHG)', 'Þunor (OE)'],
+        transliterations: { oldnorse: 'Þórr', modernicelandic: 'Þór', modernenglish: 'Thor' },
+      },
+      type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse',
+      sex: 'male', vitalStatus: 'living',
+      parentIds: ['norse_odin'],
+      parentRoles: { norse_odin: 'paternal' },
+      temporal: { era: 'mythic-prehistoric' },
+      faculties: [
+        { id: 'physical-strength-extreme', scopeTags: ['giant-slaying', 'lifting'], domainTag: 'physical-force', limitTags: [], manifestationTags: [], inheritability: 'full', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; the Útgarða-Loki contests, Gylfaginning 46-47' }] },
+        { id: 'storm-and-thunder-control', scopeTags: ['thunder', 'lightning', 'storm'], domainTag: 'weather', limitTags: [], manifestationTags: ['thunder-from-chariot'], inheritability: 'partial', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the goats Tanngrisnir and Tanngnjóstr draw his chariot, making thunder)' }] },
+      ],
+      domains: [
+        { sphereId: 'thunder-and-storm', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Adam of Bremen 4.26 (Thor as sky/thunder god at Uppsala)' }] },
+        { sphereId: 'protection-of-Midgard-and-mankind', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Gylfaginning passim; the hammer hallows and defends' }] },
+      ],
+      materialCulture: [
+        { id: 'mjolnir', classId: 'hammer', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Skáldskaparmál 35; Þrymskviða' }] },
+        { id: 'megingjord', classId: 'belt', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the girdle of strength that doubles his power)' }] },
+        { id: 'jarngreipr', classId: 'gauntlets', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the iron gloves needed to wield Mjǫllnir)' }] },
+      ],
+      relations: [
+        { kind: 'mother', externalRef: { name: 'Jǫrð (the earth-giantess; mother of Thor by Odin)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
+        { kind: 'enemy', externalRef: { name: 'Jǫrmungandr (the Midgard Serpent; Thor\'s doom at Ragnarǫk)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫluspá 56; Gylfaginning 51' }], notes: 'They slay each other at Ragnarǫk; Thor walks nine steps before falling from the serpent\'s venom.' },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Þrymskviða, Hárbarðsljóð, Hymiskviða, Vǫluspá); Snorri\'s Prose Edda (Gylfaginning, Skáldskaparmál); Adam of Bremen 4.26-27 (Uppsala temple triad); Tacitus Germania 9 (Donar/Thor via interpretatio)' }], weight: 'primary' },
+      ],
+      notes: 'Þórr (Thor) — thunder-god of the Norse pantheon, son of Odin by the earth-giantess Jǫrð; foremost defender of Ásgarðr and Midgard against the jǫtnar. Wields the hammer Mjǫllnir (forged by the dwarves Brokkr and Eitri), the strength-belt Megingjǫrð, and the iron gloves Járngreipr; rides a goat-drawn chariot whose passage makes thunder. At Ragnarǫk he and the Midgard Serpent Jǫrmungandr kill each other, and his sons Magni and Móði inherit Mjǫllnir into the renewed world. The most popularly worshipped Norse god of the Viking Age (hammer amulets, Thórr-theophoric names); one of the Uppsala temple triad with Odin and Freyr per Adam of Bremen.',
     },
 
     // ─── NJǪRÐR (Vanir sea-god, father of Freyr and Freyja) ──────────────
@@ -28940,6 +29170,126 @@ const inheritablePowers = (id, peopleMap, maxDepth = 4) => {
   return [...best.values()].sort((a, b) => a.generation - b.generation || a.facultyId.localeCompare(b.facultyId));
 };
 
+// ─── Items: the material-culture registry (first-class objects) ────────────
+// Mythic items are bounded — most are unique and individual (Mjǫllnir, Gungnir),
+// a few are typed multiples. Unlike powers, they are NOT traced by genealogical
+// descent: an object has a fixed identity and passes by CUSTODY — who forged it,
+// who held it, and to whom it passed. Holders are derived from every figure's
+// materialCulture[]; ITEM_LORE adds the cited biography (native multi-script
+// names, maker, ordered custody chain) for the showcased objects. A custody link
+// names a registry figure by personId where one exists, or an external holder
+// (e.g. Philoctetes, not yet a registry entry) by externalRef — so a real chain
+// can be told end-to-end without inventing entries. Everything is cited; nothing
+// here authors unattested myth.
+const ITEM_LORE = {
+  mjolnir: {
+    names: [
+      { value: 'Mjǫllnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', note: 'normalized Old Norse', source: 'Skáldskaparmál 35' },
+      { value: 'Mjölnir', script: 'Latin', tradition: 'Modern Icelandic / English', period: 'modern' },
+      { value: 'Mjølnir', script: 'Latin', tradition: 'Danish / Norwegian', period: 'modern' },
+      { value: 'ᛘᛁᚬᛚᚾᛁᛦ', script: 'Younger Futhark (runic)', tradition: 'Norse', period: 'viking-age', note: 'younger-futhark transliteration (m-i-o-l-n-i-ʀ)', source: 'younger-futhark orthography' },
+    ],
+    maker: { name: 'Brokkr and Eitri (Sindri)', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35 (Loki wagers his head; Brokkr works the bellows while Loki, as a fly, bites him — the handle comes out short)' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (Sindri), dwarf-smiths', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'wielder', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Þrymskviða (stolen by Þrymr and recovered)' }], note: 'Thor’s defining weapon; needed Járngreipr (iron gloves) and Megingjǫrð (girdle of strength) to wield.' },
+      { role: 'heir', externalRef: { name: 'Magni and Móði (sons of Thor)', tradition: 'Norse' }, era: 'after Ragnarǫk', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál 51 (Móði and Magni shall have Mjǫllnir when the strife is ended)' }] },
+    ],
+    lore: 'The thunder-hammer forged by the dwarf-smiths Brokkr and Eitri on Loki’s wager; its short handle is the flaw left when Loki, in fly-form, bit Brokkr at the bellows. Thor’s defining weapon — stolen by the giant Þrymr and recovered in Þrymskviða — it passes after Ragnarǫk to his sons Magni and Móði.',
+  },
+  gungnir: {
+    names: [
+      { value: 'Gungnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', source: 'Skáldskaparmál 35' },
+    ],
+    maker: { name: 'the Sons of Ivaldi', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Sons of Ivaldi (dwarf-smiths)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'wielder', personId: 'norse_odin', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sigrdrífumál 17; Vǫluspá 24 (Odin casts the spear over the host to open the first war)' }], note: 'The spear that never misses; Odin pierced himself with it on Yggdrasil for the runes (Hávamál 138).' },
+    ],
+    lore: 'Odin’s spear, made by the Sons of Ivaldi; it never misses its mark. Odin hurled it over the Vanir host to open the first war (Vǫluspá 24) and pierced himself with it in his self-sacrifice on Yggdrasil (Hávamál 138).',
+  },
+  draupnir: {
+    names: [
+      { value: 'Draupnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', note: '“the dripper”', source: 'Skáldskaparmál 35' },
+    ],
+    maker: { name: 'Brokkr and Eitri (Sindri)', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (Sindri), dwarf-smiths', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'owner', personId: 'norse_odin', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }], note: 'Every ninth night it drips eight gold rings of equal weight.' },
+      { role: 'laid on Baldr’s pyre', externalRef: { name: 'Baldr (returned from Hel via the messenger Hermóðr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 49' }] },
+    ],
+    lore: 'Odin’s gold arm-ring, forged by Brokkr and Eitri; every ninth night it drips eight rings of equal weight. Odin laid it on Baldr’s funeral pyre, and Baldr sent it back from Hel by the messenger Hermóðr (Gylfaginning 49).',
+  },
+  'heracles-bow': {
+    names: [
+      { value: 'the Bow of Heracles', script: 'Latin', tradition: 'Greek', period: 'classical', source: 'Apollod. 2.7.7' },
+      { value: 'τόξα Ἡράκλεια', script: 'Greek', tradition: 'Greek', period: 'classical', note: 'the bow-and-arrows of Heracles (τόξα)', source: 'Sophocles, Philoctetes' },
+    ],
+    custody: [
+      { role: 'original owner', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.11' }], note: 'Carried with arrows envenomed by the Lernaean Hydra throughout the Labors.' },
+      { role: 'bequeathed to', externalRef: { name: 'Poeas (who kindled Heracles’ pyre on Mt. Oeta)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.7.7 (Heracles gives the bow to Poeas as the reward for lighting the pyre)' }] },
+      { role: 'inherited by', externalRef: { name: 'Philoctetes (son of Poeas; marooned on Lemnos)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Sophocles, Philoctetes; Apollod. Epitome 3.27 (snake-bitten and abandoned en route to Troy)' }] },
+      { role: 'decisive at Troy', externalRef: { name: 'Philoctetes (recalled by the oracle; slays Paris)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epitome 5.8 (Troy cannot fall without Heracles’ bow; Philoctetes is fetched and kills Paris)' }] },
+    ],
+    lore: 'The bow Heracles bore through the Labors, strung with arrows envenomed by the Lernaean Hydra. At his death on Mt. Oeta he gave it to Poeas, who lit his pyre; it passed to Poeas’s son Philoctetes, who was marooned on Lemnos but recalled to Troy when an oracle declared the city could not fall without it — and there killed Paris.',
+  },
+};
+
+// Title-case a kebab/snake item id into a readable fallback label.
+const titleCaseId = (id) => String(id).replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+// Dedupe a citation list by its reference text (objects compared by reference).
+const dedupeSources = (arr) => {
+  const seen = new Set();
+  const out = [];
+  for (const s of (arr || [])) {
+    const k = s && s.reference ? s.reference : JSON.stringify(s);
+    if (!seen.has(k)) { seen.add(k); out.push(s); }
+  }
+  return out;
+};
+
+// Build the item registry. Scans every figure's materialCulture[] to collect the
+// holders of each object id, then merges the cited ITEM_LORE (native names, maker,
+// custody chain, prose) onto the matching objects. Objects with no lore still
+// appear, with a title-cased fallback name and their holder list. Pure function
+// of (peopleMap, lore) so tests can drive it directly.
+const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
+  const items = {};
+  const ensure = (id) => (items[id] || (items[id] = {
+    id, classId: null, kind: null, holders: [], names: [], maker: null, custody: [], sources: [], lore: null,
+  }));
+  for (const person of Object.values(peopleMap)) {
+    for (const mc of (person.materialCulture || [])) {
+      if (!mc || !mc.id) continue;
+      const it = ensure(mc.id);
+      if (!it.classId && mc.classId) it.classId = mc.classId;
+      if (!it.kind && mc.kind) it.kind = mc.kind;
+      it.holders.push({ personId: person.id, sources: mc.sources || [], notes: mc.notes || null });
+      for (const s of (mc.sources || [])) it.sources.push(s);
+    }
+  }
+  for (const [id, L] of Object.entries(lore || {})) {
+    const it = ensure(id);
+    if (L.names) it.names = L.names;
+    if (L.maker) it.maker = L.maker;
+    if (L.custody) it.custody = L.custody;
+    if (L.lore) it.lore = L.lore;
+    if (L.classId && !it.classId) it.classId = L.classId;
+    if (L.kind && !it.kind) it.kind = L.kind;
+    for (const c of (L.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
+    for (const s of (L.maker?.sources || [])) it.sources.push(s);
+  }
+  for (const it of Object.values(items)) {
+    if (!it.names.length) it.names = [{ value: titleCaseId(it.id), script: 'Latin' }];
+    it.sources = dedupeSources(it.sources);
+    it.holderCount = it.holders.length;
+    it.custodyCount = it.custody.length;
+    it.displayName = it.names[0]?.value || titleCaseId(it.id);
+  }
+  return items;
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -30840,7 +31190,11 @@ for (const pid of Object.keys(seedPeople)) {
   const inh = inheritablePowers(pid, seedPeople);
   if (inh.length) inheritedPowers[pid] = inh;
 }
-Object.assign(window.__PR, { divinity, traditionMix, inheritedPowers, formatFraction });
+const items = buildItemRegistry(seedPeople);
+Object.assign(window.__PR, {
+  divinity, traditionMix, inheritedPowers, formatFraction,
+  items, buildItemRegistry, ITEM_LORE,
+});
 
 // Persist constants for the cached warm-path readers.
 try {
@@ -31580,6 +31934,50 @@ function nameRecords(entry) {
   return entry && Array.isArray(entry.names) ? entry.names : [];
 }
 
+// ── Item registry accessors ────────────────────────────────────────────────
+// data.js builds the item registry (holders gathered from every figure's
+// materialCulture[], merged with cited ITEM_LORE) onto window.__PR.items as an
+// id→item map. These readers expose it to the Items view and let a figure's
+// detail cross-link the objects it carries.
+function allItems() {
+  try {
+    const map = window.__PR?.items || {};
+    return Object.values(map).sort((a, b) => b.holderCount - a.holderCount || b.custodyCount - a.custodyCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+  } catch (_) {
+    return [];
+  }
+}
+function itemById(id) {
+  try {
+    return id && window.__PR?.items?.[id] || null;
+  } catch (_) {
+    return null;
+  }
+}
+// The item records a figure carries (its materialCulture, resolved to the shared
+// item entities). Lets the detail panel link a figure's objects to the registry.
+function itemsForEntry(entry) {
+  try {
+    const mc = entry?.materialCulture;
+    if (!Array.isArray(mc) || !mc.length) return [];
+    const reg = window.__PR?.items || {};
+    return mc.map(m => reg[m.id] || {
+      id: m.id,
+      classId: m.classId || null,
+      kind: m.kind || null,
+      displayName: m.id,
+      names: [{
+        value: m.id
+      }],
+      holders: [],
+      custody: [],
+      sources: m.sources || []
+    });
+  } catch (_) {
+    return [];
+  }
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER,
@@ -31606,7 +32004,10 @@ Object.assign(window, {
   traditionMix,
   fmtFraction,
   inheritedPowers,
-  nameRecords
+  nameRecords,
+  allItems,
+  itemById,
+  itemsForEntry
 });
 </script>
 <!-- Browse.jsx (pre-transformed) -->
@@ -33208,6 +33609,41 @@ function CultBlock({
     notes: f => f.notes
   }));
 }
+
+// Material culture — the objects a figure carries, resolved to the shared item
+// registry so each links to its first-class Item record (native name, maker,
+// custody chain). Objects with a traced custody chain get a small badge.
+function MaterialCulture({
+  entry,
+  onOpenItem
+}) {
+  const items = window.itemsForEntry ? window.itemsForEntry(entry) : [];
+  if (!items.length) return null;
+  const humanize = s => String(s || '').replace(/[-_]+/g, ' ');
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-material"
+  }, /*#__PURE__*/React.createElement("h2", null, "Material culture ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, items.length)), /*#__PURE__*/React.createElement("div", {
+    className: "material-list"
+  }, items.map((it, i) => {
+    const linkable = !!onOpenItem;
+    return /*#__PURE__*/React.createElement("button", {
+      key: it.id || i,
+      className: 'material-item' + (linkable ? ' link' : ''),
+      onClick: linkable ? () => onOpenItem(it.id) : null,
+      disabled: !linkable
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "material-item-name"
+    }, it.displayName || it.id), /*#__PURE__*/React.createElement("span", {
+      className: "material-item-meta"
+    }, it.classId && /*#__PURE__*/React.createElement("span", {
+      className: "material-item-class"
+    }, humanize(it.classId)), it.custodyCount > 0 && /*#__PURE__*/React.createElement("span", {
+      className: "material-item-custody"
+    }, "custody traced")));
+  })));
+}
 function Detail({
   entry: entryProp,
   byId,
@@ -33216,6 +33652,7 @@ function Detail({
   onPrev,
   onNext,
   onOpen,
+  onOpenItem,
   onShowInGraph
 }) {
   // Exit-animation state machine. When `entryProp` becomes null, we keep the
@@ -33375,13 +33812,9 @@ function Detail({
     metas: e => [e.language, e.transliteration, e.contextTag],
     notes: e => e.notes,
     nameStyle: "rich-row-name-epithet"
-  }), /*#__PURE__*/React.createElement(RichSection, {
-    flavor: "material",
-    title: "Material culture",
-    items: entry.materialCulture,
-    name: m => m.id || safeLabel(m),
-    metas: m => [m.classId],
-    notes: m => m.notes
+  }), /*#__PURE__*/React.createElement(MaterialCulture, {
+    entry: entry,
+    onOpenItem: onOpenItem
   }), entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.linguistic?.etymology ? /*#__PURE__*/React.createElement(Chapter, {
     label: "Practice & Language"
   }) : null, /*#__PURE__*/React.createElement(CultBlock, {
@@ -33398,6 +33831,388 @@ function Detail({
 }
 Object.assign(window, {
   Detail
+});
+</script>
+<!-- Items.jsx (pre-transformed) -->
+<script>
+// ═══════════════════════════════════════════════════════════════════════════
+//  Items.jsx — the material-culture registry: index + item detail slide-over.
+//  Items are first-class objects. Unlike powers (traced by genealogical descent)
+//  an object has a fixed identity and is traced by CUSTODY — who forged it, who
+//  held it, to whom it passed. The registry is built in data.js (holders gathered
+//  from every figure's materialCulture[], merged with cited ITEM_LORE) and read
+//  here via window.allItems / window.itemById.
+// ═══════════════════════════════════════════════════════════════════════════
+
+const {
+  useMemo: __iMemo,
+  useEffect: __iEff,
+  useState: __iState
+} = React;
+
+// kind → index-group label + display order. Curated kinds lead; the unset
+// catch-all ('other') always sinks to the bottom.
+const ITEM_KIND_LABEL = {
+  weapon: 'Weapons',
+  garment: 'Worn & borne',
+  symbol: 'Regalia & symbols',
+  tool: 'Tools',
+  vessel: 'Vessels',
+  'ritual-object': 'Ritual objects'
+};
+const ITEM_KIND_ORDER = ['weapon', 'garment', 'symbol', 'tool', 'vessel', 'ritual-object'];
+function itemKindLabel(kind) {
+  if (!kind || kind === 'other') return 'Other objects';
+  return ITEM_KIND_LABEL[kind] || String(kind).replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+function itemKindRank(kind) {
+  const i = ITEM_KIND_ORDER.indexOf(kind);
+  if (i >= 0) return i; // curated kinds, in order
+  if (!kind || kind === 'other') return 99; // catch-all last
+  return 50; // any other named kind, between
+}
+const humanizeItem = s => String(s || '').replace(/[-_]+/g, ' ');
+// A non-Latin script renders its glyphs large (runic, Greek, Devanagari…).
+const isGlyphScript = script => !!script && !/latin/i.test(script);
+
+// Index-row badge: a custody chain beats a plain holder count.
+function itemBadge(it) {
+  if (it.custodyCount > 0) return {
+    label: `${it.custodyCount}-step custody`,
+    cls: 'item-badge-custody'
+  };
+  if (it.holderCount > 1) return {
+    label: `${it.holderCount} holders`,
+    cls: 'item-badge-multi'
+  };
+  return null;
+}
+
+// Resolve a custody step / holder's external name (may be a string or {name,…}).
+function externalName(ext) {
+  if (!ext) return '—';
+  if (typeof ext === 'string') return ext;
+  const name = (typeof ext.name === 'string' ? ext.name : null) || ext.id || '—';
+  return ext.tradition ? `${name} · ${ext.tradition}` : name;
+}
+
+// ── Items index ────────────────────────────────────────────────────────────
+function Items({
+  items,
+  byId,
+  selectedItemId,
+  onOpenItem
+}) {
+  const [q, setQ] = __iState('');
+  const groups = __iMemo(() => {
+    const query = q.trim().toLowerCase();
+    const filtered = !query ? items : items.filter(it => {
+      const hay = [it.displayName, it.id, it.classId, it.kind, ...(it.names || []).map(n => n.value)].join(' ').toLowerCase();
+      return hay.includes(query);
+    });
+    const byKind = new Map();
+    for (const it of filtered) {
+      const k = it.kind || 'other';
+      if (!byKind.has(k)) byKind.set(k, []);
+      byKind.get(k).push(it);
+    }
+    return [...byKind.entries()].sort((a, b) => itemKindRank(a[0]) - itemKindRank(b[0]) || itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
+  }, [items, q]);
+  const showcased = __iMemo(() => items.filter(it => it.custodyCount > 0).length, [items]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "items-view"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "items-head"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "items-head-row"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "items-title"
+  }, "Items ", /*#__PURE__*/React.createElement("span", {
+    className: "items-count"
+  }, items.length)), showcased > 0 && /*#__PURE__*/React.createElement("span", {
+    className: "items-showcased"
+  }, showcased, " with a traced custody chain")), /*#__PURE__*/React.createElement("p", {
+    className: "items-sub"
+  }, "Mythic objects, traced by custody \u2014 who forged each, who held it, and to whom it passed."), /*#__PURE__*/React.createElement("div", {
+    className: "items-search"
+  }, /*#__PURE__*/React.createElement("input", {
+    placeholder: "Filter items\u2026",
+    value: q,
+    onChange: e => setQ(e.target.value),
+    "aria-label": "Filter items"
+  }), q && /*#__PURE__*/React.createElement("button", {
+    className: "items-search-clear",
+    onClick: () => setQ(''),
+    title: "Clear"
+  }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+    className: "items-grid"
+  }, groups.map(([kind, list]) => /*#__PURE__*/React.createElement("div", {
+    className: "items-group",
+    key: kind
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "items-group-head"
+  }, itemKindLabel(kind), " ", /*#__PURE__*/React.createElement("span", {
+    className: "items-group-count"
+  }, list.length)), /*#__PURE__*/React.createElement("div", {
+    className: "items-rows"
+  }, list.map(it => {
+    const badge = itemBadge(it);
+    const holder = it.holders?.[0]?.personId ? byId.get(it.holders[0].personId) : null;
+    return /*#__PURE__*/React.createElement("button", {
+      key: it.id,
+      className: 'item-row' + (it.id === selectedItemId ? ' on' : ''),
+      onClick: () => onOpenItem(it.id)
+    }, /*#__PURE__*/React.createElement("span", {
+      className: 'item-row-name' + (isGlyphScript(it.names?.[0]?.script) ? ' glyph' : '')
+    }, it.displayName), /*#__PURE__*/React.createElement("span", {
+      className: "item-row-meta"
+    }, it.classId && /*#__PURE__*/React.createElement("span", {
+      className: "item-row-class"
+    }, humanizeItem(it.classId)), holder && /*#__PURE__*/React.createElement("span", {
+      className: "item-row-holder"
+    }, window.displayName(holder)), badge && /*#__PURE__*/React.createElement("span", {
+      className: 'item-badge ' + badge.cls
+    }, badge.label)));
+  })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
+    className: "items-empty"
+  }, "No items match \"", q, "\".")));
+}
+
+// ── Item detail sub-sections ────────────────────────────────────────────────
+function ItemNames({
+  names
+}) {
+  if (!names || names.length < 2) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-item-names"
+  }, /*#__PURE__*/React.createElement("h2", null, "Names ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, names.length)), /*#__PURE__*/React.createElement("div", {
+    className: "names-list"
+  }, names.map((n, i) => /*#__PURE__*/React.createElement("div", {
+    className: "name-rec",
+    key: i
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "name-rec-main"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: 'name-rec-value' + (isGlyphScript(n.script) ? ' name-rec-glyph' : '')
+  }, n.value)), /*#__PURE__*/React.createElement("div", {
+    className: "name-rec-meta"
+  }, n.tradition && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-trad"
+  }, n.tradition), n.script && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-script"
+  }, humanizeItem(n.script)), n.period && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-period"
+  }, humanizeItem(n.period))), n.note && /*#__PURE__*/React.createElement("div", {
+    className: "name-rec-note"
+  }, n.note)))));
+}
+
+// The custody chain — the object's biography. Each step links a registry figure
+// (by personId) when one exists, or names an external holder by externalRef.
+function CustodyChain({
+  custody,
+  byId,
+  onOpenFigure
+}) {
+  if (!custody || !custody.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-custody"
+  }, /*#__PURE__*/React.createElement("h2", null, "Custody ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, custody.length)), /*#__PURE__*/React.createElement("ol", {
+    className: "custody-chain"
+  }, custody.map((step, i) => {
+    const person = step.personId ? byId.get(step.personId) : null;
+    const ref = step.sources?.[0]?.reference;
+    return /*#__PURE__*/React.createElement("li", {
+      className: "custody-step",
+      key: i
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "custody-spine",
+      "aria-hidden": "true"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "custody-node"
+    }), i < custody.length - 1 && /*#__PURE__*/React.createElement("span", {
+      className: "custody-line"
+    })), /*#__PURE__*/React.createElement("div", {
+      className: "custody-body"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "custody-role"
+    }, humanizeItem(step.role)), /*#__PURE__*/React.createElement("div", {
+      className: 'custody-who' + (person ? ' link' : ''),
+      onClick: person ? () => onOpenFigure(step.personId) : null,
+      role: person ? 'button' : undefined,
+      tabIndex: person ? 0 : -1
+    }, person ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(window.TierIcon, {
+      type: person.type,
+      size: 12
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "custody-who-name"
+    }, window.displayName(person)), /*#__PURE__*/React.createElement("span", {
+      className: "custody-who-meta"
+    }, person.tradition)) : /*#__PURE__*/React.createElement("span", {
+      className: "custody-ext"
+    }, externalName(step.externalRef)), step.era && /*#__PURE__*/React.createElement("span", {
+      className: "custody-era"
+    }, window.formatEra(step.era))), step.note && /*#__PURE__*/React.createElement("div", {
+      className: "custody-note"
+    }, step.note), ref && /*#__PURE__*/React.createElement("div", {
+      className: "custody-cite"
+    }, ref)));
+  })));
+}
+
+// Registry holders — the figures in THIS registry that carry the object (from
+// their materialCulture[]). The concrete cross-link back to figure entries.
+function ItemHolders({
+  holders,
+  byId,
+  onOpenFigure
+}) {
+  const inReg = (holders || []).filter(h => byId.get(h.personId));
+  if (!inReg.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-item-holders"
+  }, /*#__PURE__*/React.createElement("h2", null, "In this registry ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+    className: "item-holders"
+  }, inReg.map((h, i) => {
+    const p = byId.get(h.personId);
+    return /*#__PURE__*/React.createElement("button", {
+      className: "item-holder",
+      key: h.personId + '-' + i,
+      onClick: () => onOpenFigure(h.personId)
+    }, /*#__PURE__*/React.createElement(window.TierIcon, {
+      type: p.type,
+      size: 12
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "item-holder-name"
+    }, window.displayName(p)), /*#__PURE__*/React.createElement("span", {
+      className: "item-holder-meta"
+    }, p.tradition));
+  })));
+}
+function ItemSources({
+  sources
+}) {
+  if (!sources || !sources.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-item-sources"
+  }, /*#__PURE__*/React.createElement("h2", null, "Sources ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, sources.length)), /*#__PURE__*/React.createElement("div", {
+    className: "item-sources"
+  }, sources.map((s, i) => /*#__PURE__*/React.createElement("div", {
+    className: "item-source",
+    key: i
+  }, s.kind && /*#__PURE__*/React.createElement("span", {
+    className: "item-source-kind"
+  }, s.kind), /*#__PURE__*/React.createElement("span", {
+    className: "item-source-ref"
+  }, s.reference || (typeof s === 'string' ? s : ''))))));
+}
+
+// ── Item detail slide-over ───────────────────────────────────────────────────
+function ItemDetail({
+  item,
+  byId,
+  onClose,
+  onPrev,
+  onNext,
+  onOpenFigure
+}) {
+  // Exit animation mirrors the figure Detail: keep the last item mounted for one
+  // beat after `item` goes null, then unmount.
+  const [local, setLocal] = __iState(item || null);
+  const [closing, setClosing] = __iState(false);
+  __iEff(() => {
+    if (item) {
+      setLocal(item);
+      setClosing(false);
+      return;
+    }
+    if (local) {
+      setClosing(true);
+      const t = setTimeout(() => {
+        setLocal(null);
+        setClosing(false);
+      }, 180);
+      return () => clearTimeout(t);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [item?.id]);
+  __iEff(() => {
+    if (!local) return;
+    const el = document.querySelector('.item-detail .detail-scroll');
+    if (el) el.scrollTop = 0;
+  }, [local?.id]);
+  if (!local) return null;
+  const it = local;
+  const primary = it.names?.[0];
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    className: 'detail-backdrop' + (closing ? ' closing' : ''),
+    onClick: onClose
+  }), /*#__PURE__*/React.createElement("aside", {
+    className: 'detail item-detail' + (closing ? ' closing' : ''),
+    role: "dialog",
+    "aria-label": it.displayName
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "detail-bar"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "nav"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "btn btn-ghost btn-sm",
+    onClick: onPrev,
+    title: "Previous (k)"
+  }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
+    className: "btn btn-ghost btn-sm",
+    onClick: onNext,
+    title: "Next (j)"
+  }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
+    className: "spacer"
+  }), /*#__PURE__*/React.createElement("button", {
+    className: "close",
+    onClick: onClose,
+    title: "Close (esc)",
+    "aria-label": "Close"
+  }, "\xD7")), /*#__PURE__*/React.createElement("div", {
+    className: "detail-scroll"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "detail-header"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "eyebrow"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "eyebrow-tier"
+  }, "Item"), it.kind && /*#__PURE__*/React.createElement("span", null, humanizeItem(it.kind)), it.classId && /*#__PURE__*/React.createElement("span", null, humanizeItem(it.classId))), /*#__PURE__*/React.createElement("h1", {
+    className: isGlyphScript(primary?.script) ? 'item-title-glyph' : ''
+  }, it.displayName), it.maker && /*#__PURE__*/React.createElement("div", {
+    className: "item-maker"
+  }, "forged by ", /*#__PURE__*/React.createElement("span", {
+    className: "item-maker-name"
+  }, it.maker.name), it.maker.kind && /*#__PURE__*/React.createElement("span", {
+    className: "item-maker-kind"
+  }, " \xB7 ", humanizeItem(it.maker.kind)))), it.lore && /*#__PURE__*/React.createElement("div", {
+    className: "detail-notes"
+  }, it.lore), /*#__PURE__*/React.createElement(ItemNames, {
+    names: it.names
+  }), /*#__PURE__*/React.createElement(CustodyChain, {
+    custody: it.custody,
+    byId: byId,
+    onOpenFigure: onOpenFigure
+  }), /*#__PURE__*/React.createElement(ItemHolders, {
+    holders: it.holders,
+    byId: byId,
+    onOpenFigure: onOpenFigure
+  }), /*#__PURE__*/React.createElement(ItemSources, {
+    sources: it.sources
+  }))));
+}
+Object.assign(window, {
+  Items,
+  ItemDetail
 });
 </script>
 <!-- Graph.jsx (pre-transformed) -->
@@ -35491,7 +36306,12 @@ function TopBar({
     onClick: () => setView('atlas'),
     role: "tab",
     "aria-selected": view === 'atlas'
-  }, "Atlas"))));
+  }, "Atlas"), /*#__PURE__*/React.createElement("button", {
+    className: 'btn' + (view === 'items' ? ' btn-on' : ''),
+    onClick: () => setView('items'),
+    role: "tab",
+    "aria-selected": view === 'items'
+  }, "Items"))));
 }
 function Rail({
   filters,
@@ -35690,7 +36510,13 @@ function Shell() {
   const [view, setView] = __sState('browse');
   const [cmdkOpen, setCmdkOpen] = __sState(false);
   const [graphFocusId, setGraphFocusId] = __sState(null);
+  const [selectedItemId, setSelectedItemId] = __sState(null);
   const searchRef = __sRef(null);
+
+  // Item registry (built in data.js, read once). The sorted list drives the
+  // Items index and the j/k navigation between open items.
+  const itemList = __sMemo(() => window.allItems ? window.allItems() : [], []);
+  const selectedItem = selectedItemId && window.itemById ? window.itemById(selectedItemId) : null;
 
   // ── URL sync ─────────────────────────────────────────────────────────
   // Hash schema: #/<view>[/<id>]
@@ -35707,24 +36533,32 @@ function Shell() {
     view: 'browse',
     selId: null,
     gFocus: null,
+    itemId: null,
     initialized: false
   });
   const applyHash = __sCb(() => {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas'].includes(v)) return;
+    if (!['browse', 'graph', 'atlas', 'items'].includes(v)) return;
     const id = parts[1] ? decodeURIComponent(parts[1]) : null;
     setView(v);
     if (v === 'browse') {
       selection.setSelectedId(id);
       setGraphFocusId(null);
+      setSelectedItemId(null);
     } else if (v === 'graph') {
       setGraphFocusId(id);
       selection.setSelectedId(null);
+      setSelectedItemId(null);
+    } else if (v === 'items') {
+      setSelectedItemId(id);
+      selection.setSelectedId(null);
+      setGraphFocusId(null);
     } else {
       selection.setSelectedId(null);
       setGraphFocusId(null);
+      setSelectedItemId(null);
     }
   }, [selection]);
   __sEff(() => {
@@ -35746,12 +36580,15 @@ function Shell() {
       target += '/' + encodeURIComponent(selection.selectedId);
     } else if (view === 'graph' && graphFocusId) {
       target += '/' + encodeURIComponent(graphFocusId);
+    } else if (view === 'items' && selectedItemId) {
+      target += '/' + encodeURIComponent(selectedItemId);
     }
     if (target === window.location.hash) {
       urlPrevRef.current = {
         view,
         selId: selection.selectedId,
         gFocus: graphFocusId,
+        itemId: selectedItemId,
         initialized: true
       };
       return;
@@ -35759,7 +36596,7 @@ function Shell() {
     const prev = urlPrevRef.current;
     // Replace if: same view, moving between two non-null detail entries
     // (continuation), OR if we haven't initialized yet (first paint).
-    const continuation = prev.initialized && prev.view === view && (view === 'browse' && prev.selId != null && selection.selectedId != null || view === 'graph' && prev.gFocus != null && graphFocusId != null);
+    const continuation = prev.initialized && prev.view === view && (view === 'browse' && prev.selId != null && selection.selectedId != null || view === 'graph' && prev.gFocus != null && graphFocusId != null || view === 'items' && prev.itemId != null && selectedItemId != null);
     if (!prev.initialized || continuation) {
       window.history.replaceState({}, '', target);
     } else {
@@ -35769,9 +36606,10 @@ function Shell() {
       view,
       selId: selection.selectedId,
       gFocus: graphFocusId,
+      itemId: selectedItemId,
       initialized: true
     };
-  }, [view, selection.selectedId, graphFocusId]);
+  }, [view, selection.selectedId, graphFocusId, selectedItemId]);
   // ─────────────────────────────────────────────────────────────────────
 
   const selectedEntry = selection.selectedId ? byId.get(selection.selectedId) : null;
@@ -35791,6 +36629,25 @@ function Shell() {
     }
   }, [selectedEntry, selIdxInFiltered, filters.filtered]);
 
+  // Step between open items (j/k and the detail Prev/Next buttons).
+  const moveItem = __sCb(delta => {
+    if (!selectedItemId) return;
+    const idx = itemList.findIndex(it => it.id === selectedItemId);
+    if (idx < 0) return;
+    const next = itemList[idx + delta];
+    if (next) setSelectedItemId(next.id);
+  }, [selectedItemId, itemList]);
+
+  // Open an item from anywhere (the index, or a figure's material culture).
+  // Opening an item is an Items-view navigation: switch views and clear the
+  // figure selection so the two slide-overs never stack.
+  const openItem = __sCb(id => {
+    setView('items');
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setSelectedItemId(id);
+  }, [selection]);
+
   // Keyboard bindings. The handler is kept in a ref refreshed every render so
   // the window listener attaches exactly once yet always reads current state —
   // `filters`/`selection` are fresh objects each render, so a dependency-keyed
@@ -35809,6 +36666,10 @@ function Shell() {
     if (e.key === 'Escape') {
       if (cmdkOpen) {
         setCmdkOpen(false);
+        return;
+      }
+      if (selectedItemId) {
+        setSelectedItemId(null);
         return;
       }
       if (selection.selectedId) {
@@ -35834,6 +36695,21 @@ function Shell() {
       return;
     }
     if (inField || cmdkOpen) return;
+
+    // Item-detail navigation
+    if (selectedItemId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        moveItem(1);
+        return;
+      }
+      if (e.key === 'k' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        moveItem(-1);
+        return;
+      }
+      return;
+    }
 
     // Detail-open navigation
     if (selection.selectedId) {
@@ -35920,6 +36796,11 @@ function Shell() {
       filters.setTraditions(new Set([tradition]));
       setView('browse');
     }
+  }), view === 'items' && /*#__PURE__*/React.createElement(window.Items, {
+    items: itemList,
+    byId: byId,
+    selectedItemId: selectedItemId,
+    onOpenItem: id => setSelectedItemId(id)
   }))), selectedEntry && /*#__PURE__*/React.createElement(window.Detail, {
     entry: selectedEntry,
     byId: byId,
@@ -35928,10 +36809,22 @@ function Shell() {
     onPrev: () => moveSelection(-1),
     onNext: () => moveSelection(1),
     onOpen: id => selection.setSelectedId(id),
+    onOpenItem: openItem,
     onShowInGraph: entry => {
       setGraphFocusId(entry.id);
       setView('graph');
       selection.setSelectedId(null);
+    }
+  }), selectedItem && /*#__PURE__*/React.createElement(window.ItemDetail, {
+    item: selectedItem,
+    byId: byId,
+    onClose: () => setSelectedItemId(null),
+    onPrev: () => moveItem(-1),
+    onNext: () => moveItem(1),
+    onOpenFigure: id => {
+      setView('browse');
+      setSelectedItemId(null);
+      selection.setSelectedId(id);
     }
   }), cmdkOpen && /*#__PURE__*/React.createElement(window.CommandPalette, {
     people: people,

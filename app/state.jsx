@@ -593,6 +593,37 @@ function nameRecords(entry) {
   return (entry && Array.isArray(entry.names)) ? entry.names : [];
 }
 
+// ── Item registry accessors ────────────────────────────────────────────────
+// data.js builds the item registry (holders gathered from every figure's
+// materialCulture[], merged with cited ITEM_LORE) onto window.__PR.items as an
+// id→item map. These readers expose it to the Items view and let a figure's
+// detail cross-link the objects it carries.
+function allItems() {
+  try {
+    const map = window.__PR?.items || {};
+    return Object.values(map).sort((a, b) =>
+      (b.holderCount - a.holderCount) ||
+      (b.custodyCount - a.custodyCount) ||
+      String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+  } catch (_) { return []; }
+}
+function itemById(id) {
+  try { return (id && window.__PR?.items?.[id]) || null; } catch (_) { return null; }
+}
+// The item records a figure carries (its materialCulture, resolved to the shared
+// item entities). Lets the detail panel link a figure's objects to the registry.
+function itemsForEntry(entry) {
+  try {
+    const mc = entry?.materialCulture;
+    if (!Array.isArray(mc) || !mc.length) return [];
+    const reg = window.__PR?.items || {};
+    return mc.map((m) => reg[m.id] || {
+      id: m.id, classId: m.classId || null, kind: m.kind || null,
+      displayName: m.id, names: [{ value: m.id }], holders: [], custody: [], sources: m.sources || [],
+    });
+  } catch (_) { return []; }
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
@@ -607,4 +638,5 @@ Object.assign(window, {
   hydrateConstants, hasSeededPeople,
   divinityInfo, traditionMix, fmtFraction,
   inheritedPowers, nameRecords,
+  allItems, itemById, itemsForEntry,
 });

@@ -14,9 +14,9 @@ describe('app renders in a browser-like environment', () => {
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });
 
-  test('renders all 601 figures in the Browse table', () => {
+  test('renders all 602 figures in the Browse table', () => {
     const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
-    assert.strictEqual(rows.length, 601);
+    assert.strictEqual(rows.length, 602);
   });
 
   test('"/" focuses the search box', async () => {
@@ -106,5 +106,34 @@ describe('app renders in a browser-like environment', () => {
     assert.match(names.textContent, /Hercle|Hercules/, 'expected the cross-tradition names');
     assert.ok(names.querySelectorAll('.name-rec-original').length >= 1, 'expected original-script glyphs');
     assert.ok(app.document.querySelector('.section-powers .power-row'), 'expected Heracles\' own faculties');
+  });
+
+  test('the Items view lists the object registry, grouped by kind', async () => {
+    await app.clickButton('Items');
+    const view = app.document.querySelector('.items-view');
+    assert.ok(view, 'Items view did not mount');
+    assert.ok(view.querySelectorAll('.item-row').length > 30, 'expected the object corpus in the index');
+    assert.ok(view.querySelector('.items-group'), 'expected kind groupings');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('an item detail tells the custody chain and links registry holders', async () => {
+    await app.openItem('heracles-bow');
+    const custody = app.document.querySelector('.section-custody');
+    assert.ok(custody, 'custody section did not render');
+    assert.match(custody.textContent, /Philoctetes/, 'expected the external custody holder Philoctetes');
+    assert.ok(custody.querySelector('.custody-who.link'), 'expected a linked registry figure (Heracles) in the chain');
+    // Mjǫllnir surfaces its runic name form.
+    await app.openItem('mjolnir');
+    const names = app.document.querySelector('.item-detail .section-item-names');
+    assert.ok(names, 'item names section did not render');
+    assert.match(names.textContent, /Mjǫllnir/, 'expected the Old Norse form');
+  });
+
+  test('a figure detail cross-links its material culture to the item registry', async () => {
+    await app.openFigure('norse_thor');
+    const mc = app.document.querySelector('.section-material .material-item.link');
+    assert.ok(mc, 'expected a clickable material-culture item on Thor');
+    assert.match(app.document.querySelector('.section-material').textContent, /Mjǫllnir/, 'expected the native item name, not the raw id');
   });
 });
