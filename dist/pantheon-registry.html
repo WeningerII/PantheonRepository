@@ -29247,6 +29247,1237 @@ const ITEM_LORE = {
     ],
     lore: 'The bow Heracles bore through the Labors, strung with arrows envenomed by the Lernaean Hydra. At his death on Mt. Oeta he gave it to Poeas, who lit his pyre; it passed to Poeas’s son Philoctetes, who was marooned on Lemnos but recalled to Troy when an oracle declared the city could not fall without it — and there killed Paris.',
   },
+
+  // ═══ Greek / Norse / Japanese / Tsimshian mythic objects ═════════════════
+  'heracles-club': {
+    names: [
+      { value: 'ῥόπαλον', script: 'Greek', tradition: 'Greek', rom: 'rhopalon', note: 'club, cudgel — the usual Greek word for the hero’s club', source: 'LSJ s.v. ῥόπαλον' },
+      { value: 'Club of Heracles', script: 'Latin', tradition: 'Greek', period: 'classical' },
+    ],
+    kind: 'weapon', classId: 'club',
+    custody: [
+      { role: 'cut and wielded by', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11' }], note: 'Apollodorus says only that he cut himself a club at Nemea; later poets (Theocritus 25) make it of wild olive.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (Heracles cut a club at Nemea)' },
+      { kind: 'primary', reference: 'Theocritus, Idyll 25.207–213 (the wild-olive club against the Nemean lion)' },
+    ],
+    lore: 'Heracles’ wooden club, which he cut for himself at Nemea (Apollodorus 2.4.11); later poets make it of wild olive. With the bow and the lion-skin it is one of his three defining attributes in art.',
+  },
+  'heracles-poisoned-arrows': {
+    names: [
+      { value: 'ἰοί', script: 'Greek', tradition: 'Greek', rom: 'ioi', note: 'arrows — the same word also means “venom”, a pun the tradition exploits', source: 'LSJ s.v. ἰός' },
+      { value: 'Poisoned Arrows of Heracles', script: 'Latin', tradition: 'Greek', period: 'classical' },
+    ],
+    kind: 'weapon', classId: 'poisoned-arrow',
+    maker: { name: 'Apollo (gave the bow and arrows)', role: 'given by', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11' }] },
+    custody: [
+      { role: 'envenomed and borne by', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.2 (dipped the arrows in the Hydra’s gall; the wounds thereafter incurable)' }], note: 'These arrows slew the centaurs Pholos and Chiron, and Nessus — whose blood in turn killed Heracles.' },
+      { role: 'passed (with the bow) to', externalRef: { name: 'Poeas, then Philoctetes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.7.7; Sophocles, Philoctetes' }], note: 'Inseparable from the bow of Heracles; required by oracle to take Troy.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.2 (Hydra-gall poison)' },
+      { kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.4 (the wounding of Chiron and Pholos)' },
+      { kind: 'primary', reference: 'Sophocles, Trachiniae 567–587, 1141 (Nessus); Ovid, Metamorphoses 9.101' },
+    ],
+    lore: 'Arrows Heracles envenomed in the gall of the Lernaean Hydra, making every wound incurable (Apollodorus 2.5.2). They killed Pholos, Chiron, and Nessus — whose poisoned blood later killed Heracles himself — and, inherited by Philoctetes with the bow, proved decisive at Troy.',
+  },
+  'nemean-lion-skin': {
+    names: [
+      { value: 'λεοντῆ', script: 'Greek', tradition: 'Greek', rom: 'leontē', note: 'lion’s pelt — the standard term for Heracles’ skin', source: 'LSJ s.v. λεοντῆ' },
+      { value: 'Skin of the Nemean Lion', script: 'Latin', tradition: 'Greek', period: 'classical' },
+    ],
+    kind: 'garment', classId: 'trophy-skin',
+    custody: [
+      { role: 'slew, skinned, and wore', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.1' }], note: 'The lion’s hide was impenetrable; he throttled the beast and wore its pelt as armour.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.1 (the First Labour)' },
+      { kind: 'primary', reference: 'Hesiod, Theogony 326–332 (the Nemean lion)' },
+      { kind: 'primary', reference: 'Theocritus, Idyll 25.162–281 (the fight and the skinning)' },
+    ],
+    lore: 'The pelt of the invulnerable Nemean lion, Heracles’ First Labour. No weapon could pierce the beast, so he throttled it and wore its impenetrable hide as a cloak and helm — his single most recognisable attribute.',
+  },
+  'jarngreipr': {
+    names: [
+      { value: 'Járngreipr', script: 'Old Norse', tradition: 'Norse', note: '“iron-gripper” — the form prominent in the Hrungnir episode', source: 'Skáldskaparmál' },
+      { value: 'járnglófar', script: 'Old Norse', tradition: 'Norse', note: '“iron gloves” — the form Snorri uses in Gylfaginning', source: 'Gylfaginning 21' },
+    ],
+    kind: 'garment', classId: 'gauntlets',
+    custody: [
+      { role: 'worn by', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the third of Thor’s great treasures, “without which he cannot grip the hammer-shaft”)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Snorri Sturluson, Prose Edda, Gylfaginning 21' },
+      { kind: 'primary', reference: 'Snorri Sturluson, Prose Edda, Skáldskaparmál (the Hrungnir episode)' },
+    ],
+    lore: 'Thor’s iron gloves — the third of his three great possessions, without which he cannot grip the shaft of Mjǫllnir (Gylfaginning 21). No maker is named. With them he catches and hurls back Hrungnir’s whetstone.',
+  },
+  'megingjord': {
+    names: [
+      { value: 'Megingjǫrð', script: 'Old Norse', tradition: 'Norse', note: '“girdle of might” (megin “strength” + gjǫrð “belt”)', source: 'Gylfaginning 21' },
+    ],
+    kind: 'garment', classId: 'belt',
+    custody: [
+      { role: 'worn by', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (“when he buckles it on, his divine strength is doubled”)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Snorri Sturluson, Prose Edda, Gylfaginning 21' },
+    ],
+    lore: 'Thor’s belt of strength: the second-best of his possessions, which doubles his ásmegin (divine strength) when buckled on (Gylfaginning 21). No maker is named in the sources.',
+  },
+  'tokusa-no-kandakara': {
+    names: [
+      { value: '十種神宝', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'tokusa-no-kandakara', note: '“the ten kinds of divine treasures” (also read jusshu shinpō)', source: 'Sendai Kuji Hongi, Tenson hongi' },
+      { value: '天璽瑞宝十種', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'amatsushirushi mizutakara tokusa', note: '“ten heavenly-sign auspicious treasures”', source: 'Sendai Kuji Hongi' },
+    ],
+    kind: 'ritual-object', classId: 'regalia-set',
+    maker: { name: 'the heavenly deities of Takamagahara', role: 'bestowed by' },
+    custody: [
+      { role: 'brought from heaven by', personId: 'japanese_kojiki_nigihayahi', era: 'age of the gods', sources: [{ kind: 'primary', reference: 'Sendai Kuji Hongi, Tenson hongi' }], note: 'Nigihayahi descends to the Yamato region bearing the ten treasures before Ninigi’s descent.' },
+      { role: 'inherited by', personId: 'japanese_kojiki_umashimaji', era: 'reign of Emperor Jimmu', sources: [{ kind: 'primary', reference: 'Sendai Kuji Hongi' }] },
+      { role: 'enshrined at', externalRef: { name: 'Isonokami Jingū (kept by the Mononobe clan)', tradition: 'Japanese' }, era: 'later', sources: [{ kind: 'secondary', reference: 'Isonokami Jingū tradition; Encyclopedia of Shinto (Kokugakuin)' }] },
+    ],
+    location: 'Not extant; the associated cult is preserved at Isonokami Jingū, Nara',
+    sources: [
+      { kind: 'primary', reference: 'Sendai Kuji Hongi (先代旧事本紀), Tenson hongi — the set: 2 mirrors, 1 sword, 4 jewels, 3 hire (scarves)' },
+      { kind: 'secondary', reference: 'Encyclopedia of Shinto, Kokugakuin University (tokusa-no-kandakara)' },
+    ],
+    lore: 'The Ten Sacred Treasures — two mirrors, a sword, four jewels, and three hire (scarves) — brought down from heaven by Nigihayahi (Sendai Kuji Hongi). Shaken to the “Words of Furu” chant, they could revive the dead; they became the sacred regalia of the Mononobe priestly line at Isonokami.',
+  },
+  'mononobe-tokusa-no-kandakara': {
+    names: [
+      { value: '十種神宝', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'tokusa-no-kandakara', note: 'as inherited by Umashimaji, ancestor of the Mononobe', source: 'Sendai Kuji Hongi' },
+      { value: '布瑠の言', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'Furu-no-koto', note: '“the Words of Furu” — the counting-chant (hi, fu, mi, yo…) spoken while shaking the treasures to quicken the spirit', source: 'Isonokami Jingū tradition' },
+    ],
+    kind: 'ritual-object', classId: 'regalia-set',
+    custody: [
+      { role: 'inherited from Nigihayahi by', personId: 'japanese_kojiki_umashimaji', era: 'reign of Emperor Jimmu', sources: [{ kind: 'primary', reference: 'Sendai Kuji Hongi (Umashimaji performs the first chinkon / mitama-furi rite for Jimmu)' }] },
+      { role: 'enshrined at', externalRef: { name: 'Isonokami Jingū, guarded by the Mononobe clan', tradition: 'Japanese' }, era: 'later', sources: [{ kind: 'secondary', reference: 'Isonokami Jingū tradition' }] },
+    ],
+    location: 'Not extant; the chinkon rite survives at Isonokami Jingū, Nara',
+    sources: [
+      { kind: 'primary', reference: 'Sendai Kuji Hongi (先代旧事本紀), Tenson hongi' },
+      { kind: 'secondary', reference: 'Isonokami Jingū tradition (the 22 Nov. chinkon-sai and the Furu-no-koto chant)' },
+    ],
+    lore: 'The Ten Treasures as passed from Nigihayahi to his son Umashimaji, who used them in the first chinkon (spirit-pacification) rite for Emperor Jimmu. Through Umashimaji they became the ancestral regalia of the Mononobe, enshrined at Isonokami Jingū.',
+  },
+  'arrows-of-success': {
+    names: [
+      { value: 'Asdiwal’s never-missing arrows', script: 'Latin', tradition: 'Tsimshian', note: '“of success” renders the hatsʼanaas (“good luck”) pun on the bird-father’s name', source: 'Boas, Tsimshian Texts (1912)' },
+    ],
+    kind: 'weapon', classId: 'magic-arrows',
+    maker: { name: 'Hatsʼanas, the bird-father (a robin)', role: 'made by' },
+    custody: [
+      { role: 'gift to', personId: 'asdiwal', era: 'mythic time', sources: [{ kind: 'primary', reference: 'Boas, Tsimshian Texts (1912) pp. 70–145; Lévi-Strauss, “The Story of Asdiwal”' }], note: 'Given with the bow; one telling specifies four arrows that never miss.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Franz Boas, Tsimshian Texts (1912), pp. 70–145' },
+      { kind: 'secondary', reference: 'Claude Lévi-Strauss, “The Story of Asdiwal”' },
+    ],
+    lore: 'One of the magic hunting-gifts Asdiwal receives from his supernatural bird-father Hatsʼanas — arrows that never miss their mark. (“Of success” renders the hatsʼanaas / “good luck” pun in the father’s name.)',
+  },
+  'bow-of-success': {
+    names: [
+      { value: 'Asdiwal’s never-missing bow', script: 'Latin', tradition: 'Tsimshian', source: 'Boas, Tsimshian Texts (1912)' },
+    ],
+    kind: 'weapon', classId: 'magic-bow',
+    maker: { name: 'Hatsʼanas, the bird-father', role: 'made by' },
+    custody: [
+      { role: 'gift to', personId: 'asdiwal', era: 'mythic time', sources: [{ kind: 'primary', reference: 'Boas, Tsimshian Texts (1912) pp. 70–145; Lévi-Strauss, “The Story of Asdiwal”' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Franz Boas, Tsimshian Texts (1912), pp. 70–145' },
+      { kind: 'secondary', reference: 'Claude Lévi-Strauss, “The Story of Asdiwal”' },
+    ],
+    lore: 'The bow given to Asdiwal by his bird-father Hatsʼanas, paired with the never-missing arrows — among the implements with which the hero out-hunts his rivals on the Skeena.',
+  },
+  'lance-of-success': {
+    names: [
+      { value: 'Asdiwal’s magic lance', script: 'Latin', tradition: 'Tsimshian', source: 'Boas, Tsimshian Texts (1912)' },
+    ],
+    kind: 'weapon', classId: 'magic-lance',
+    maker: { name: 'Hatsʼanas, the bird-father', role: 'made by' },
+    custody: [
+      { role: 'gift to', personId: 'asdiwal', era: 'mythic time', sources: [{ kind: 'primary', reference: 'Boas, Tsimshian Texts (1912) pp. 70–145; Lévi-Strauss, “The Story of Asdiwal”' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Franz Boas, Tsimshian Texts (1912), pp. 70–145' },
+      { kind: 'secondary', reference: 'Claude Lévi-Strauss, “The Story of Asdiwal”' },
+    ],
+    lore: 'A lance among the magic gifts of Asdiwal’s bird-father Hatsʼanas, aiding the hero through the trials set by his hostile in-laws.',
+  },
+  'basket-of-success': {
+    names: [
+      { value: 'Asdiwal’s magic basket', script: 'Latin', tradition: 'Tsimshian', source: 'Boas, Tsimshian Texts (1912)' },
+    ],
+    kind: 'tool', classId: 'hunting-basket',
+    maker: { name: 'Hatsʼanas, the bird-father', role: 'made by' },
+    custody: [
+      { role: 'gift to', personId: 'asdiwal', era: 'mythic time', sources: [{ kind: 'primary', reference: 'Boas, Tsimshian Texts (1912) pp. 70–145; Lévi-Strauss, “The Story of Asdiwal”' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Franz Boas, Tsimshian Texts (1912), pp. 70–145' },
+      { kind: 'secondary', reference: 'Claude Lévi-Strauss, “The Story of Asdiwal”' },
+    ],
+    lore: 'A basket among the gifts of Asdiwal’s bird-father Hatsʼanas — part of the supernatural hunting-kit that sets the hero above his mortal rivals.',
+  },
+  'snowshoes-of-success': {
+    names: [
+      { value: 'Asdiwal’s magic snowshoes', script: 'Latin', tradition: 'Tsimshian', source: 'Boas, Tsimshian Texts (1912)' },
+    ],
+    kind: 'tool', classId: 'magic-snowshoes',
+    maker: { name: 'Hatsʼanas, the bird-father', role: 'made by' },
+    custody: [
+      { role: 'gift to', personId: 'asdiwal', era: 'mythic time', sources: [{ kind: 'primary', reference: 'Boas, Tsimshian Texts (1912) pp. 70–145; Lévi-Strauss, “The Story of Asdiwal”' }], note: 'With these he climbs the ice-mountain in pursuit of the white she-bear, daughter of the Sun.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Franz Boas, Tsimshian Texts (1912), pp. 70–145' },
+      { kind: 'secondary', reference: 'Claude Lévi-Strauss, “The Story of Asdiwal”' },
+    ],
+    lore: 'The magic snowshoes of Asdiwal, gift of his bird-father Hatsʼanas, with which he ascends the sheer ice-mountain in pursuit of the white she-bear — the daughter of the Sun who lures him to the sky-world.',
+  },
+  'mat-of-success': {
+    names: [
+      { value: 'Mat of success (uncertain)', script: 'Latin', tradition: 'Tsimshian' },
+    ],
+    kind: 'tool', classId: 'hunting-mat',
+    custody: [
+      { role: 'associated with', personId: 'asdiwal', era: 'mythic time', sources: [{ kind: 'secondary', reference: 'Asdiwal cycle (Boas, Tsimshian Texts, 1912)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Franz Boas, Tsimshian Texts (1912), pp. 70–145' },
+    ],
+    lore: 'Listed in this registry among Asdiwal’s implements, but a “mat” is not among the gifts in the standard enumerations of Hatsʼanas’s presents (which name bow, arrows, quiver, lance, basket, and snowshoes). Treated here as unverified pending the verbatim Boas text.',
+  },
+
+  // ═══ Mesopotamian objects (Akkadian / Ur III) ════════════════════════════
+  'disk-of-enheduanna': {
+    names: [
+      { value: 'Disk of Enheduanna', script: 'Latin', tradition: 'Akkadian', period: 'Old Akkadian' },
+      { value: 'En-hedu-ana', script: 'Akkadian (romanized)', tradition: 'Akkadian', note: '“high priestess, ornament of An (the sky-god)” — named in the disk’s inscription', source: 'Penn Museum B16665; Frayne, RIME 2' },
+    ],
+    kind: 'sculpture', classId: 'votive-disk',
+    custody: [
+      { role: 'dedicated by', personId: 'mesopotamian_enheduanna', date: 'c. 2300 BCE', where: 'the Giparu, Ur', sources: [{ kind: 'primary', reference: 'Inscription on the disk (Frayne, RIME 2, E2.1.1.16)' }], note: 'The calcite disk shows Enheduanna in a flounced robe pouring a libation before a stepped altar, with three attendants.' },
+      { role: 'excavated by', externalRef: { name: 'C. L. Woolley, Joint Expedition (BM + Penn)', tradition: 'modern' }, date: '1927', where: 'the gipar of Ur', sources: [{ kind: 'secondary', reference: 'Woolley, Ur Excavations' }] },
+      { role: 'now held', externalRef: { name: 'Penn Museum, Philadelphia (B16665)', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Penn Museum object B16665' }] },
+    ],
+    location: 'Penn Museum, Philadelphia — object B16665',
+    sources: [
+      { kind: 'secondary', reference: 'Penn Museum, Collections, object B16665 (calcite, diam. ~25.6 cm)' },
+      { kind: 'secondary', reference: 'R. McHale-Moore, “The Mystery of Enheduanna’s Disk,” JANES 27 (2000)' },
+      { kind: 'secondary', reference: 'Morgan Library, “She Who Wrote: Enheduanna and the Women of Mesopotamia” (2022)' },
+    ],
+    lore: 'A calcite votive disk dedicated by Enheduanna, daughter of Sargon and EN-priestess of Nanna at Ur — the earliest securely named author in history shown performing her own rite. Excavated at Ur by Woolley in 1927; now in the Penn Museum (B16665).',
+  },
+  'bassetki-statue': {
+    names: [
+      { value: 'Bassetki Statue', script: 'Latin', tradition: 'Akkadian', period: 'Old Akkadian' },
+      { value: 'Narām-Sîn', script: 'Akkadian (romanized)', tradition: 'Akkadian', note: '“Beloved of Sîn (the moon-god)”; the base inscription records his deification', source: 'Old Akkadian inscription, IM 77823' },
+    ],
+    kind: 'sculpture', classId: 'statue-base',
+    custody: [
+      { role: 'made under', personId: 'mesopotamian_naram_sin', date: 'c. 2254–2218 BCE', where: 'Akkad', sources: [{ kind: 'primary', reference: 'Base inscription (the people of Akkad ask the gods to make Naram-Sin the god of their city)' }], note: 'Copper-alloy, lost-wax cast; survives as the lower legs of a nude male seated on an inscribed round base.' },
+      { role: 'found by chance', externalRef: { name: 'road-construction find near Bassetki, north of Dohuk', tradition: 'modern' }, date: '1975', where: 'northern Iraq', sources: [{ kind: 'secondary', reference: 'Iraq Museum IM 77823' }] },
+      { role: 'looted and recovered', externalRef: { name: 'stolen in the 2003 looting of the Iraq Museum; recovered in Baghdad', tradition: 'modern' }, date: '2003', sources: [{ kind: 'secondary', reference: 'National Museum of Iraq' }] },
+    ],
+    location: 'National Museum of Iraq, Baghdad — IM 77823',
+    sources: [
+      { kind: 'primary', reference: 'Old Akkadian inscription of Naram-Sin (Frayne, RIME 2, E2.1.4)' },
+      { kind: 'secondary', reference: 'National Museum of Iraq, IM 77823 (copper alloy)' },
+    ],
+    lore: 'A copper-alloy statue base inscribed for Naram-Sin, recording the citizens of Akkad’s request that he be made the god of their city — a landmark of royal self-deification. Found by chance near Bassetki in 1975, looted from the Iraq Museum in 2003, and recovered later that year (IM 77823).',
+  },
+  'victory-stele-of-naram-sin': {
+    names: [
+      { value: 'Victory Stele of Naram-Sin', script: 'Latin', tradition: 'Akkadian', period: 'Old Akkadian' },
+    ],
+    kind: 'sculpture', classId: 'victory-stele',
+    custody: [
+      { role: 'commissioned by', personId: 'mesopotamian_naram_sin', date: 'c. 2254–2218 BCE', where: 'erected at Sippar', sources: [{ kind: 'primary', reference: 'Akkadian inscription on the stele' }], note: 'Pink sandstone, ~2 m; Naram-Sin in the horned helmet of divinity ascends a mountain over the defeated Lullubi.' },
+      { role: 'carried off as booty by', externalRef: { name: 'Shutruk-Nahhunte of Elam (who added an Elamite inscription)', tradition: 'Elamite' }, date: '12th c. BCE', where: 'taken to Susa', sources: [{ kind: 'primary', reference: 'Added Elamite inscription' }] },
+      { role: 'excavated by', externalRef: { name: 'Jacques de Morgan’s French mission', tradition: 'modern' }, date: '1898', where: 'Susa (Acropole)', sources: [{ kind: 'secondary', reference: 'Louvre Sb 4' }] },
+    ],
+    location: 'Musée du Louvre, Paris — Sb 4',
+    sources: [
+      { kind: 'secondary', reference: 'Louvre, “Stèle de Naram-Sin,” inv. Sb 4' },
+      { kind: 'secondary', reference: 'I. Winter, “Sex, Rhetoric, and the Public Monument” (on the stele)' },
+    ],
+    lore: 'The victory monument of Naram-Sin over the Lullubi, on which the king climbs a mountain wearing the horned crown of a god — the first Mesopotamian ruler shown as divine. Looted to Susa by the Elamite king Shutruk-Nahhunte a thousand years later, excavated there by de Morgan in 1898; now in the Louvre (Sb 4).',
+  },
+  'alabaster-vase-louvre-AO-74': {
+    names: [
+      { value: 'Vase of Naram-Sin (Louvre AO 74)', script: 'Latin', tradition: 'Akkadian', period: 'Old Akkadian' },
+    ],
+    kind: 'vessel', classId: 'votive-vase',
+    custody: [
+      { role: 'dedicated in the name of', personId: 'mesopotamian_naram_sin', date: 'c. 23rd c. BCE', sources: [{ kind: 'primary', reference: 'Dedicatory inscription, “king of the four regions” (Louvre AO 74)' }], note: 'A small inscribed alabaster/calcite vessel; reportedly from Tello (ancient Girsu).' },
+      { role: 'now held', externalRef: { name: 'Musée du Louvre, Département des Antiquités orientales', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Louvre AO 74' }] },
+    ],
+    location: 'Musée du Louvre, Paris — AO 74',
+    sources: [
+      { kind: 'secondary', reference: 'Louvre, vase inv. AO 74' },
+      { kind: 'secondary', reference: 'Frayne, RIME 2 (Naram-Sin votive inscriptions)' },
+    ],
+    lore: 'A small inscribed alabaster vase bearing a dedication of Naram-Sin as “king of the four regions” (Louvre AO 74). Its exact findspot (reportedly Tello/Girsu) and the security of the royal attribution are debated.',
+  },
+  'cruciform-monument-of-manishtushu': {
+    names: [
+      { value: 'Cruciform Monument of Manishtushu', script: 'Latin', tradition: 'Babylonian', note: 'a pious pseudepigraphic “grant of Manishtushu” — not actually his', source: 'I. J. Gelb, JNES (1949)' },
+    ],
+    kind: 'text', classId: 'cruciform-monument',
+    maker: { name: 'a later Babylonian temple scribe (archaising forgery)', role: 'composed by' },
+    custody: [
+      { role: 'falsely ascribed to', personId: 'mesopotamian_manishtushu', date: 'purported 23rd c. BCE', sources: [{ kind: 'secondary', reference: 'I. J. Gelb, “The Date of the Cruciform Monument of Maništušu,” JNES 8 (1949)' }], note: 'Actually composed centuries later (Old- to Neo-Babylonian) to assert tax privileges for the Ebabbar temple of Šamaš at Sippar.' },
+      { role: 'excavated by', externalRef: { name: 'Hormuzd Rassam, for the British Museum', tradition: 'modern' }, date: '1881', where: 'Sippar (Abu Habba)', sources: [{ kind: 'secondary', reference: 'BM 91022 (reg. 1881,0428.118)' }] },
+    ],
+    location: 'British Museum, London — BM 91022 (1881,0428.118)',
+    sources: [
+      { kind: 'secondary', reference: 'British Museum BM 91022 (reg. 1881,0428.118)' },
+      { kind: 'secondary', reference: 'I. J. Gelb, “The Date of the Cruciform Monument of Maništušu,” JNES 8 (1949) — establishes the forgery' },
+    ],
+    lore: 'A cross-shaped inscribed stone purporting to record Manishtushu’s grants to the Ebabbar temple at Sippar — but shown by Gelb to be a much later “pious forgery” drafted to defend temple privileges. A rare case where the registry object is famous precisely for being inauthentic. Excavated by Rassam in 1881 (BM 91022).',
+  },
+  'manishtushu-obelisk': {
+    names: [
+      { value: 'Obelisk of Manishtushu', script: 'Latin', tradition: 'Akkadian', period: 'Old Akkadian' },
+    ],
+    kind: 'sculpture', classId: 'obelisk',
+    custody: [
+      { role: 'commissioned by', personId: 'mesopotamian_manishtushu', date: 'c. 2270–2255 BCE', where: 'Akkad', sources: [{ kind: 'primary', reference: 'Inscription (Frayne, RIME 2, E2.1.3)' }], note: 'Black diorite, four inscribed faces (~76 columns) recording the purchase of eight large parcels of land.' },
+      { role: 'carried off as booty to', externalRef: { name: 'Susa (Elamite removal)', tradition: 'Elamite' }, date: '12th c. BCE', sources: [{ kind: 'secondary', reference: 'Louvre Sb 20' }] },
+      { role: 'excavated by', externalRef: { name: 'Jacques de Morgan’s French mission', tradition: 'modern' }, date: '1897', where: 'Susa', sources: [{ kind: 'secondary', reference: 'Louvre Sb 20' }] },
+    ],
+    location: 'Musée du Louvre, Paris — Sb 20',
+    sources: [
+      { kind: 'secondary', reference: 'Louvre, “Obélisque de Manishtusu,” inv. Sb 20' },
+      { kind: 'primary', reference: 'Frayne, RIME 2, E2.1.3 (the land-purchase record)' },
+    ],
+    lore: 'A four-sided diorite monument of Manishtushu recording, in ~76 columns, the crown’s purchase of eight great estates — among the earliest detailed records of land tenure. Looted to Susa in antiquity, excavated by de Morgan in 1897; now in the Louvre (Sb 20).',
+  },
+  'ur-nammu-stele': {
+    names: [
+      { value: 'Stele of Ur-Nammu', script: 'Latin', tradition: 'Sumerian', period: 'Ur III' },
+    ],
+    kind: 'sculpture', classId: 'dedication-stele',
+    custody: [
+      { role: 'commissioned by', personId: 'mesopotamian_ur_nammu', date: 'c. 2112–2095 BCE', where: 'Ur', sources: [{ kind: 'secondary', reference: 'Penn Museum B16676' }], note: 'A large double-sided limestone stele with registers of the king before the gods and (it is argued) the building of the ziggurat.' },
+      { role: 'excavated by', externalRef: { name: 'C. L. Woolley, Joint Expedition (BM + Penn)', tradition: 'modern' }, date: '1920s–30s', where: 'Ur, found broken across a courtyard', sources: [{ kind: 'secondary', reference: 'Woolley, Ur Excavations' }] },
+      { role: 'now held', externalRef: { name: 'Penn Museum, Philadelphia (B16676)', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Penn Museum B16676' }] },
+    ],
+    location: 'Penn Museum, Philadelphia — B16676 (reconstructed from many fragments)',
+    sources: [
+      { kind: 'secondary', reference: 'Penn Museum, Ur-Nammu Stele fragments B16676' },
+      { kind: 'secondary', reference: 'J. Canby, The “Ur-Nammu” Stela (Penn Museum, 2001)' },
+    ],
+    lore: 'A monumental limestone stele of Ur-Nammu, founder of the Third Dynasty of Ur, carved with the king worshipping and building before the moon-god Nanna. Found shattered at Ur by Woolley and reassembled from many fragments; its reconstruction and reading remain debated (Penn Museum B16676).',
+  },
+  'great-ziggurat-of-ur': {
+    names: [
+      { value: 'Etemenniguru', script: 'Sumerian (romanized)', tradition: 'Sumerian', rom: 'E-temen-ni-guru', note: 'commonly rendered “house whose foundation is clad in awe”', source: 'Ur III royal inscriptions' },
+      { value: 'Great Ziggurat of Ur', script: 'Latin', tradition: 'Sumerian', period: 'Ur III' },
+    ],
+    kind: 'monument', classId: 'ziggurat',
+    custody: [
+      { role: 'begun by', personId: 'mesopotamian_ur_nammu', date: 'c. 2100 BCE', where: 'Ur (the precinct of Nanna)', sources: [{ kind: 'secondary', reference: 'Ur III royal inscriptions; Woolley, Ur Excavations V' }], note: 'Completed by his son Shulgi.' },
+      { role: 'restored by', externalRef: { name: 'Nabonidus of Babylon', tradition: 'Neo-Babylonian' }, date: '6th c. BCE', sources: [{ kind: 'secondary', reference: 'Nabonidus inscriptions' }] },
+      { role: 'excavated by', externalRef: { name: 'C. L. Woolley', tradition: 'modern' }, date: '1920s–30s', where: 'Tell el-Muqayyar', sources: [{ kind: 'secondary', reference: 'Woolley, Ur Excavations V' }] },
+    ],
+    location: 'In situ, Tell el-Muqayyar (Ur), Dhi Qar Province, Iraq',
+    sources: [
+      { kind: 'secondary', reference: 'C. L. Woolley, Ur Excavations V: The Ziggurat and its Surroundings (1939)' },
+      { kind: 'secondary', reference: 'Ur III royal inscriptions (Ur-Nammu, Shulgi)' },
+    ],
+    lore: 'The great stepped temple-tower of the moon-god Nanna at Ur, begun by Ur-Nammu and finished by Shulgi (c. 2100 BCE), restored by Nabonidus fifteen centuries later. Its lower stages, excavated by Woolley, are the best-preserved ziggurat in Mesopotamia.',
+  },
+  'muriq-tidnim-defensive-wall': {
+    names: [
+      { value: 'Murīq-Tidnim', script: 'Akkadian (romanized)', tradition: 'Ur III', note: '“(the wall) that keeps Tidnum (the Amorites) at a distance”', source: 'Shu-Sin year-name' },
+      { value: 'bàd Mar-tu', script: 'Sumerian (romanized)', tradition: 'Ur III', rom: 'bad martu', note: '“the Amorite wall”', source: 'Ur III year-names (CDLI)' },
+    ],
+    kind: 'monument', classId: 'defensive-wall',
+    custody: [
+      { role: 'built by', personId: 'mesopotamian_shu_sin', date: 'c. 2034 BCE (Shu-Sin year 4)', where: 'across the alluvium against Amorite incursion', sources: [{ kind: 'primary', reference: 'Shu-Sin year-name (CDLI); Frayne, RIME 3/2' }] },
+    ],
+    location: 'Not located on the ground — attested in texts only',
+    sources: [
+      { kind: 'primary', reference: 'Shu-Sin year-4 name (CDLI Ur III year-names)' },
+      { kind: 'secondary', reference: 'P. Michalowski, The Correspondence of the Kings of Ur (2011) — references to building the Martu wall' },
+    ],
+    lore: 'A long defensive wall built by Shu-Sin of Ur to “keep Tidnum at a distance” — i.e. to hold back the Amorites pressing on the dying Ur III state. Known only from year-names and royal letters; no securely identified remains survive, and the often-cited ~270 km length is a modern estimate.',
+  },
+
+  // ═══ Mesopotamian texts (Akkadian / Ur III) ══════════════════════════════
+  'nin-me-shara-hymn': {
+    names: [
+      { value: 'nin me šár-ra', script: 'Sumerian (romanized)', tradition: 'Sumerian', rom: 'nin-me-šara', note: '“Lady of all the countless me (divine powers)” — the opening words', source: 'ETCSL 4.07.2' },
+      { value: 'The Exaltation of Inanna', script: 'Latin', tradition: 'Sumerian', note: 'modern scholarly title', source: 'Hallo & van Dijk 1968' },
+    ],
+    kind: 'text', classId: 'hymn',
+    custody: [
+      { role: 'composed (attributed) by', personId: 'mesopotamian_enheduanna', date: 'c. 23rd c. BCE', where: 'Ur', sources: [{ kind: 'secondary', reference: 'Hallo & van Dijk, The Exaltation of Inanna (1968)' }], note: 'A first-person plea to Inanna; the earliest poem attributed to a named author.' },
+      { role: 'transmitted in', externalRef: { name: 'Old Babylonian school copies (Nippur, Ur, Larsa)', tradition: 'Babylonian' }, date: 'c. 1800–1750 BCE', sources: [{ kind: 'secondary', reference: 'Zgoll 1997; ETCSL 4.07.2' }] },
+    ],
+    location: 'Textual tradition; ~100+ Old Babylonian manuscripts (Istanbul, Penn, Yale, BM)',
+    sources: [
+      { kind: 'secondary', reference: 'W. W. Hallo & J. J. A. van Dijk, The Exaltation of Inanna (YNER 3, 1968)' },
+      { kind: 'secondary', reference: 'A. Zgoll, Der Rechtsfall der En-ḫedu-Ana (AOAT 246, 1997)' },
+      { kind: 'primary', reference: 'ETCSL 4.07.2' },
+    ],
+    lore: 'The “Exaltation of Inanna” — a 153-line hymn in which Enheduanna, cast out of her office, calls on the goddess to restore her. Attributed to the first author known by name, it survives in over a hundred Old Babylonian school copies.',
+  },
+  'sumerian-temple-hymns-corpus': {
+    names: [
+      { value: 'The Sumerian Temple Hymns', script: 'Latin', tradition: 'Sumerian', note: '42 hymns to the temples of Sumer and Akkad', source: 'ETCSL 4.80.1; Sjöberg & Bergmann 1969' },
+    ],
+    kind: 'text', classId: 'hymn-collection',
+    custody: [
+      { role: 'compiled (attributed) by', personId: 'mesopotamian_enheduanna', date: 'c. 23rd c. BCE', sources: [{ kind: 'secondary', reference: 'Sjöberg & Bergmann 1969 (the doxology of Hymn 42 names Enheduanna as compiler)' }], note: 'The attribution rests on the collection’s closing lines and is debated.' },
+      { role: 'transmitted in', externalRef: { name: 'Ur III and Old Babylonian school copies (Nippur, Ur)', tradition: 'Babylonian' }, date: 'Ur III–OB', sources: [{ kind: 'secondary', reference: 'Sjöberg & Bergmann 1969' }] },
+    ],
+    location: 'Textual tradition; reconstructed from ~37 tablets (Istanbul, Penn)',
+    sources: [
+      { kind: 'secondary', reference: 'Å. Sjöberg & E. Bergmann, The Collection of the Sumerian Temple Hymns (TCS 3, 1969)' },
+      { kind: 'primary', reference: 'ETCSL 4.80.1' },
+    ],
+    lore: 'A cycle of 42 hymns, one to each great temple of Sumer and Akkad, whose final hymn names Enheduanna as its compiler — an early attempt to bind the cult-centres of a kingdom into a single liturgical map. The attribution is traditional and contested.',
+  },
+  'code-of-ur-nammu': {
+    names: [
+      { value: 'The Laws of Ur-Namma', script: 'Latin', tradition: 'Sumerian', note: 'the earliest surviving law collection', source: 'Roth 1997' },
+    ],
+    kind: 'text', classId: 'law-code',
+    custody: [
+      { role: 'promulgated (attributed) by', personId: 'mesopotamian_ur_nammu', date: 'c. 2100 BCE', where: 'Ur', sources: [{ kind: 'secondary', reference: 'Roth 1997; Wilcke 2002' }], note: 'Some scholars credit his son Shulgi; the prologue invokes An, Enlil, and Nanna.' },
+      { role: 'survives in', externalRef: { name: 'Old Babylonian copies (Nippur tablet Ni 3191; Ur; Sippar)', tradition: 'Babylonian' }, date: 'c. 1800–1700 BCE', sources: [{ kind: 'secondary', reference: 'Roth 1997 (no Ur III original survives)' }] },
+    ],
+    location: 'Textual tradition; Ni 3191 in the Istanbul Archaeology Museums',
+    sources: [
+      { kind: 'secondary', reference: 'M. T. Roth, Law Collections from Mesopotamia and Asia Minor (WAW 6, 1995/1997)' },
+      { kind: 'secondary', reference: 'C. Wilcke, “Der Kodex Urnamma” (2002)' },
+    ],
+    lore: 'The oldest known law code — three centuries before Hammurabi — opening with a prologue of just kingship and listing penalties (often fines rather than retaliation) under Ur-Namma of Ur. No original survives; it is reconstructed from later Old Babylonian school copies.',
+  },
+  'lamentation-over-the-destruction-of-sumer-and-ur': {
+    names: [
+      { value: 'The Lament for Sumer and Urim', script: 'Latin', tradition: 'Sumerian', note: 'one of the five Sumerian city-laments', source: 'ETCSL 2.2.3' },
+    ],
+    kind: 'text', classId: 'city-lament',
+    maker: { name: 'anonymous (likely the Isin court)', role: 'composed by' },
+    custody: [
+      { role: 'laments the fall under', personId: 'mesopotamian_ibbi_sin', date: 'composed c. 2000–1925 BCE', where: 'Sumer', sources: [{ kind: 'secondary', reference: 'Michalowski 1989' }], note: 'Mourns the sack of Ur and the end of the Third Dynasty under its last king, Ibbi-Sin.' },
+      { role: 'survives in', externalRef: { name: 'Old Babylonian copies (chiefly Nippur)', tradition: 'Babylonian' }, date: 'c. 1800–1750 BCE', sources: [{ kind: 'secondary', reference: 'Michalowski 1989' }] },
+    ],
+    location: 'Textual tradition; manuscripts in Istanbul, Penn, BM',
+    sources: [
+      { kind: 'secondary', reference: 'P. Michalowski, The Lamentation over the Destruction of Sumer and Ur (MC 1, 1989)' },
+      { kind: 'primary', reference: 'ETCSL 2.2.3' },
+    ],
+    lore: 'A Sumerian city-lament mourning the fall of Ur and the collapse of its empire under Ibbi-Sin — the gods decree the overturning of the “appointed times,” and Ur is given over to storm and enemy. Composed in the generation after the catastrophe, it survives in Old Babylonian copies.',
+  },
+  'royal-correspondence-of-the-kings-of-ur': {
+    names: [
+      { value: 'The Correspondence of the Kings of Ur', script: 'Latin', tradition: 'Ur III', note: 'literary letters of the Ur III kings and officials (RCU / CKU)', source: 'Michalowski 2011' },
+    ],
+    kind: 'text', classId: 'letter-corpus',
+    maker: { name: 'Ur III chancery, redacted by Old Babylonian scribes', role: 'compiled by' },
+    custody: [
+      { role: 'includes letters ascribed to', personId: 'mesopotamian_ibbi_sin', date: 'putative 21st c. BCE', sources: [{ kind: 'secondary', reference: 'Michalowski 2011' }], note: 'The Ibbi-Sin ↔ Išbi-Erra exchange dramatises the kingdom’s disintegration; authenticity is debated.' },
+      { role: 'transmitted in', externalRef: { name: 'Old Babylonian school copies (Nippur, Ur)', tradition: 'Babylonian' }, date: 'c. 1800–1700 BCE', sources: [{ kind: 'secondary', reference: 'Michalowski 2011' }] },
+    ],
+    location: 'Textual tradition; Old Babylonian manuscripts (Istanbul, Penn, BM)',
+    sources: [
+      { kind: 'secondary', reference: 'P. Michalowski, The Correspondence of the Kings of Ur (MC 15, 2011)' },
+      { kind: 'primary', reference: 'ETCSL 3.1.x (e.g. 3.1.17–3.1.18)' },
+    ],
+    lore: 'A corpus of literary letters between the kings of Ur (Shulgi, Shu-Sin, Ibbi-Sin) and their officials — above all the exchange in which Ibbi-Sin and the rebel Išbi-Erra trade accusations as the empire falls apart. Much of it is later scribal recreation rather than genuine chancery archive.',
+  },
+  'sargon-birth-legend-tablets': {
+    names: [
+      { value: 'The Birth Legend of Sargon', script: 'Latin', tradition: 'Akkadian', source: 'Westenholz 1997' },
+      { value: 'Šarru-kīn šarru dannu', script: 'Akkadian (romanized)', tradition: 'Akkadian', rom: 'Sharru-kin sharru dannu', note: '“Sargon, the mighty king…” — the legend’s opening', source: 'BM K.3401' },
+    ],
+    kind: 'text', classId: 'legendary-autobiography',
+    maker: { name: 'anonymous (1st-millennium Mesopotamia)', role: 'composed by' },
+    custody: [
+      { role: 'tells the legend of', personId: 'mesopotamian_sargon', date: 'composed 1st millennium BCE', sources: [{ kind: 'secondary', reference: 'Westenholz, Legends of the Kings of Akkade (MC 7, 1997)' }], note: 'Sargon, born in secret, set in a reed basket on the river, drawn out by Aqqi the drawer-of-water — a motif echoed in the Moses story.' },
+      { role: 'survives on', externalRef: { name: 'Neo-Assyrian & Neo-Babylonian tablets (incl. K.3401, from Ashurbanipal’s library at Nineveh)', tradition: 'Assyrian' }, date: '7th–6th c. BCE', sources: [{ kind: 'secondary', reference: 'British Museum K.3401' }] },
+    ],
+    location: 'British Museum, London — principal tablet K.3401',
+    sources: [
+      { kind: 'secondary', reference: 'J. G. Westenholz, Legends of the Kings of Akkade: The Texts (MC 7, 1997)' },
+      { kind: 'secondary', reference: 'British Museum, tablet K.3401 (Neo-Assyrian, Nineveh)' },
+    ],
+    lore: 'A first-person legend in which Sargon — founder of the Akkadian empire — tells how his priestess mother bore him in secret, set him adrift on the Euphrates in a sealed basket, and how a gardener raised him until Ishtar’s love made him king. The river-basket motif prefigures the birth of Moses; the tablets are first-millennium copies.',
+  },
+  'sargon-royal-inscriptions': {
+    names: [
+      { value: 'Royal Inscriptions of Sargon of Akkad', script: 'Latin', tradition: 'Akkadian', source: 'Frayne, RIME 2, E2.1.1' },
+    ],
+    kind: 'text', classId: 'royal-inscription',
+    custody: [
+      { role: 'set up by', personId: 'mesopotamian_sargon', date: 'c. 2334–2279 BCE', where: 'on statues and monuments at Nippur, Ur, etc.', sources: [{ kind: 'primary', reference: 'Frayne, RIME 2, E2.1.1' }], note: 'The originals are largely lost; the texts survive mostly in Old Babylonian school copies.' },
+      { role: 'copied onto', externalRef: { name: 'Old Babylonian “Sammeltafeln” (CBS 13972, Penn; Ni 3200, Istanbul)', tradition: 'Babylonian' }, date: 'c. 1800–1700 BCE', where: 'Nippur', sources: [{ kind: 'secondary', reference: 'Frayne, RIME 2' }] },
+    ],
+    location: 'Textual tradition; key copy-tablets in Penn (CBS 13972) and Istanbul (Ni 3200)',
+    sources: [
+      { kind: 'primary', reference: 'D. Frayne, Sargonic and Gutian Periods (RIME 2, 1993), E2.1.1' },
+      { kind: 'secondary', reference: 'Nippur Sammeltafeln CBS 13972 (Penn) and Ni 3200 (Istanbul)' },
+    ],
+    lore: 'The dedicatory inscriptions of Sargon — accounts of conquests “from the Lower Sea to the Upper Sea,” the washing of weapons in the sea, captive kings led to Nippur. Their monuments lost, the texts were lovingly recopied by Old Babylonian students who toured a kind of museum of Sargonic statues at Nippur.',
+  },
+  'rimush-royal-inscriptions': {
+    names: [
+      { value: 'Royal Inscriptions of Rimush', script: 'Latin', tradition: 'Akkadian', source: 'Frayne, RIME 2, E2.1.2' },
+    ],
+    kind: 'text', classId: 'royal-inscription',
+    custody: [
+      { role: 'set up by', personId: 'mesopotamian_rimush', date: 'c. 2278–2270 BCE', sources: [{ kind: 'primary', reference: 'Frayne, RIME 2, E2.1.2' }], note: 'Record his suppression of the great Sumerian revolt and his campaign against Elam and Marhashi, with grim casualty tallies.' },
+      { role: 'survives in', externalRef: { name: 'a few originals + Old Babylonian copies (Nippur Sammeltafeln)', tradition: 'Babylonian' }, date: 'c. 1800–1700 BCE', sources: [{ kind: 'secondary', reference: 'Frayne, RIME 2' }] },
+    ],
+    location: 'Textual tradition; copy-tablets in Penn and Istanbul; some originals in the Louvre, BM',
+    sources: [
+      { kind: 'primary', reference: 'D. Frayne, RIME 2 (1993), E2.1.2' },
+    ],
+    lore: 'The inscriptions of Rimush, son of Sargon, who put down a Sumer-wide revolt at the start of his reign and campaigned into Elam — his texts itemise the slain and enslaved in tens of thousands. Known from a few originals and Old Babylonian copies.',
+  },
+  'manishtushu-royal-inscriptions': {
+    names: [
+      { value: 'Royal Inscriptions of Manishtushu', script: 'Latin', tradition: 'Akkadian', source: 'Frayne, RIME 2, E2.1.3' },
+    ],
+    kind: 'text', classId: 'royal-inscription',
+    custody: [
+      { role: 'set up by', personId: 'mesopotamian_manishtushu', date: 'c. 2269–2255 BCE', sources: [{ kind: 'primary', reference: 'Frayne, RIME 2, E2.1.3' }], note: 'Record a sea campaign against thirty-two kings across the Lower Sea and the import of stone for statuary.' },
+      { role: 'preserved on', externalRef: { name: 'statue fragments and the Obelisk (Louvre), plus Old Babylonian copies', tradition: 'Babylonian' }, sources: [{ kind: 'secondary', reference: 'Frayne, RIME 2; Louvre Sb 20' }] },
+    ],
+    location: 'Textual tradition; originals in the Louvre (incl. the Obelisk, Sb 20)',
+    sources: [
+      { kind: 'primary', reference: 'D. Frayne, RIME 2 (1993), E2.1.3' },
+      { kind: 'secondary', reference: 'cf. the Cruciform Monument — a much later forgery, not a genuine Manishtushu inscription' },
+    ],
+    lore: 'The inscriptions of Manishtushu, son of Sargon — a naval war against thirty-two kings beyond the Lower Sea and the quarrying of black stone for his statues. (The famous “Cruciform Monument” bearing his name is a later forgery; his genuine texts survive on statue fragments and the Obelisk.)',
+  },
+  'shar-kali-sharri-royal-inscriptions': {
+    names: [
+      { value: 'Royal Inscriptions of Shar-kali-sharri', script: 'Latin', tradition: 'Akkadian', source: 'Frayne, RIME 2, E2.1.5' },
+    ],
+    kind: 'text', classId: 'royal-inscription',
+    custody: [
+      { role: 'set up by', personId: 'mesopotamian_shar_kali_sharri', date: 'c. 2217–2193 BCE', where: 'Nippur, Babylon', sources: [{ kind: 'primary', reference: 'Frayne, RIME 2, E2.1.5' }], note: 'Inscribed bricks name him as builder of the Ekur, Enlil’s temple at Nippur; the title reverts from “king of the four quarters” to “king of Akkad” as the empire contracts.' },
+    ],
+    location: 'Textual tradition; objects in the Louvre (Ibni-šarrum seal), Penn (Nippur bricks)',
+    sources: [
+      { kind: 'primary', reference: 'D. Frayne, RIME 2 (1993), E2.1.5' },
+      { kind: 'secondary', reference: 'Seal of Ibni-šarrum, scribe of Šar-kali-šarrī (Louvre)' },
+    ],
+    lore: 'The inscriptions of Shar-kali-sharri, son of Naram-Sin, recorded on bricks from the Ekur he rebuilt at Nippur. His abandonment of his father’s grandiose “king of the four quarters” for the plain “king of Akkad” marks the empire’s decline into wars with Gutians and Amorites.',
+  },
+  'shar-kali-sharri-year-names': {
+    names: [
+      { value: 'Year-names of Shar-kali-sharri', script: 'Latin', tradition: 'Akkadian', note: 'date formulae naming the year by a notable event', source: 'CDLI (ruler 395)' },
+    ],
+    kind: 'text', classId: 'year-names',
+    custody: [
+      { role: 'issued under', personId: 'mesopotamian_shar_kali_sharri', date: 'c. 2217–2193 BCE', sources: [{ kind: 'primary', reference: 'CDLI Shar-kali-sharri year-names' }], note: 'One formula names “the year he defeated the Amorites (Martu) at Basar (Jebel Bishri)”; another, the capture of Šarlag, king of Gutium.' },
+    ],
+    location: 'Textual tradition; date-lines on administrative tablets (Iraq Museum, Penn, BM, Louvre)',
+    sources: [
+      { kind: 'primary', reference: 'CDLI, Shar-kali-sharri year-names (rulers entry 395)' },
+      { kind: 'secondary', reference: 'D. Frayne, RIME 2 (1993), date-formulae discussion' },
+    ],
+    lore: 'The administrative date-formulae of Shar-kali-sharri, each year named for a campaign — the defeat of the Amorites at Jebel Bishri, the capture of the Gutian king Šarlag. They are the dry, datable counterpart to his monumental boasts, recovered from the date-lines of everyday tablets.',
+  },
+  'shu-sin-love-songs': {
+    names: [
+      { value: 'balbale to Inana for Šu-Suen (Šu-Suen B)', script: 'Sumerian (romanized)', tradition: 'Ur III', note: 'the “Bridegroom, spend the night” song — tablet Ni 2461, sometimes called the oldest love poem', source: 'ETCSL 2.4.4.2; Kramer 1951' },
+    ],
+    kind: 'text', classId: 'love-song',
+    maker: { name: 'an anonymous court poet (voice of a bride/priestess of Inana)', role: 'composed by' },
+    custody: [
+      { role: 'sung for', personId: 'mesopotamian_shu_sin', date: 'c. 2037–2029 BCE', where: 'the sacred-marriage rite at Ur', sources: [{ kind: 'primary', reference: 'ETCSL 2.4.4.1–3' }] },
+      { role: 'survives on', externalRef: { name: 'the Nippur tablet Ni 2461 (identified by S. N. Kramer, 1951)', tradition: 'Babylonian' }, date: 'Old Babylonian copy', sources: [{ kind: 'secondary', reference: 'Kramer 1951' }] },
+    ],
+    location: 'Istanbul Archaeology Museums — tablet Ni 2461',
+    sources: [
+      { kind: 'primary', reference: 'ETCSL 2.4.4.1, 2.4.4.2, 2.4.4.3' },
+      { kind: 'secondary', reference: 'S. N. Kramer, History Begins at Sumer (Ni 2461, “the oldest love song”)' },
+    ],
+    lore: 'Sacred-marriage love songs voiced by a bride of the goddess Inana to King Shu-Sin of Ur. The Nippur tablet Ni 2461 — “Bridegroom, dear to my heart… let me enjoy your goodly beauty” — is popularly billed as the oldest love poem in the world.',
+  },
+
+  // ═══ Egyptian monuments ══════════════════════════════════════════════════
+  'abu-simbel-great-temple': {
+    names: [
+      { value: 'Great Temple of Abu Simbel', script: 'Latin', tradition: 'Egyptian', period: 'modern' },
+      { value: 'ḥwt Rꜥ-ms-sw mry-Jmn', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Hut Ramesses-meryamun', note: '“Temple of Ramesses, Beloved of Amun” (hieroglyphs unverified)', source: 'New Kingdom, 19th Dyn.' },
+    ],
+    kind: 'monument', classId: 'rock-temple',
+    custody: [
+      { role: 'commissioned by', personId: 'egyptian_ramesses_ii', date: 'c. 1264–1244 BCE', where: 'Abu Simbel, Nubia', sources: [{ kind: 'secondary', reference: 'egymonuments.gov.eg' }], note: 'A speos (rock-cut temple) to Ra-Horakhty, Amun, Ptah, and the deified Ramesses; the façade bears four ~20 m colossi of the king.' },
+      { role: 'rediscovered by', externalRef: { name: 'J. L. Burckhardt (1813); first entered by G. Belzoni (1817)', tradition: 'modern' }, date: '1813–1817', sources: [{ kind: 'secondary', reference: 'Britannica' }] },
+      { role: 'relocated by', externalRef: { name: 'the UNESCO Nubian Campaign (cut into blocks, raised above Lake Nasser)', tradition: 'modern' }, date: '1964–1968', sources: [{ kind: 'secondary', reference: 'UNESCO, Nubian Monuments (ref. 88)' }] },
+    ],
+    location: 'In situ (relocated 1968), above Lake Nasser near Abu Simbel, Aswan Governorate, Egypt',
+    sources: [
+      { kind: 'secondary', reference: 'UNESCO World Heritage Centre, “Nubian Monuments from Abu Simbel to Philae” (ref. 88)' },
+      { kind: 'secondary', reference: 'Egypt Ministry of Tourism & Antiquities (egymonuments.gov.eg), “Abu Simbel”' },
+    ],
+    lore: 'Ramesses II’s great rock-cut temple in Nubia, its façade dominated by four seated colossi of the king, aligned so the rising sun twice a year lights the sanctuary. In 1964–1968 it was sawn into blocks and lifted to higher ground to save it from the rising waters of Lake Nasser.',
+  },
+  'ramesseum': {
+    names: [
+      { value: 'The Ramesseum', script: 'Latin', tradition: 'Egyptian', note: 'modern name coined by Champollion (1829)', period: 'modern' },
+      { value: 'ḥwt Wsr-mꜣꜥt-Rꜥ stp-n-Rꜥ', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Hut Usermaatra-setepenra', note: '“Mansion of Millions of Years of Ramesses II that unites with Thebes” (hieroglyphs unverified)', source: 'New Kingdom, 19th Dyn.' },
+    ],
+    kind: 'monument', classId: 'mortuary-temple',
+    custody: [
+      { role: 'commissioned by', personId: 'egyptian_ramesses_ii', date: 'c. 1279–1213 BCE', where: 'the Theban west bank', sources: [{ kind: 'secondary', reference: 'Britannica, “Ramesseum”' }], note: 'His “Mansion of Millions of Years”; its fallen ~1,000-ton granite colossus inspired Shelley’s “Ozymandias.”' },
+      { role: 'identified and named by', externalRef: { name: 'J.-F. Champollion', tradition: 'modern' }, date: '1829', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Ramesseum”' }] },
+    ],
+    location: 'In situ, Theban Necropolis (west bank), Luxor, Egypt — part of WH “Ancient Thebes with its Necropolis”',
+    sources: [
+      { kind: 'secondary', reference: 'Britannica, “Ramesseum”' },
+      { kind: 'secondary', reference: 'ISAC (Univ. of Chicago), “The Ozymandias Colossus at the Ramesseum”' },
+    ],
+    lore: 'The mortuary temple of Ramesses II at Thebes, whose toppled colossus — “Ozymandias, king of kings” — gave Shelley his sonnet on the vanity of power. Its name means roughly “the Mansion of Millions of Years that unites with Thebes.”',
+  },
+  'pi-ramesses': {
+    names: [
+      { value: 'pr-Rꜥ-ms-sw', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Per-Ramesses', note: '“House of Ramesses (Beloved of Amun, Great of Victories)” (hieroglyphs unverified)', source: 'New Kingdom, 19th Dyn.' },
+      { value: 'Qantir', script: 'Latin', tradition: 'Egyptian', note: 'modern village at the site', period: 'modern' },
+    ],
+    kind: 'monument', classId: 'royal-city',
+    custody: [
+      { role: 'founded by', personId: 'egyptian_ramesses_ii', date: 'c. 1279–1213 BCE', where: 'the eastern Nile Delta (near Avaris)', sources: [{ kind: 'secondary', reference: 'World History Encyclopedia, “Pi-Ramesses”' }], note: 'A vast delta capital; the Bible’s “Raamses.”' },
+      { role: 'abandoned as the Nile branch silted', externalRef: { name: 'its monuments hauled to Tanis (Djanet)', tradition: 'Egyptian' }, date: 'c. 1060 BCE', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Pi-Ramesses”' }] },
+      { role: 'identified at Qantir by', externalRef: { name: 'M. Hamza, L. Habachi, then E. Pusch', tradition: 'modern' }, date: '20th c.', sources: [{ kind: 'secondary', reference: 'Biblical Archaeology Society' }] },
+    ],
+    location: 'In situ ruins at Qantir, Sharqia Governorate, Egypt; reused monuments now at Tanis',
+    sources: [
+      { kind: 'secondary', reference: 'World History Encyclopedia, “Pi-Ramesses”' },
+      { kind: 'secondary', reference: 'Biblical Archaeology Society, “Identifying Pi Ramesses”' },
+    ],
+    lore: 'Ramesses II’s glittering delta capital, “House of Ramesses,” raised near the old Hyksos city of Avaris. When its Nile branch silted up the city was abandoned and its obelisks and statues dragged off to Tanis — which long fooled archaeologists into mislocating it.',
+  },
+  'colossi-of-memnon': {
+    names: [
+      { value: 'Colossi of Memnon', script: 'Latin', tradition: 'Greco-Roman', note: 'Greek name, mistaking the king for the Trojan-war hero Memnon, son of the Dawn', period: 'Greco-Roman' },
+      { value: 'Nb-mꜣꜥt-Rꜥ', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Nebmaatra', note: 'the statues depict Amenhotep III (his prenomen; hieroglyphs unverified)', source: 'New Kingdom, 18th Dyn.' },
+    ],
+    kind: 'sculpture', classId: 'colossal-statue',
+    custody: [
+      { role: 'commissioned by', personId: 'egyptian_amenhotep_iii', date: 'c. 1390–1352 BCE', where: 'fronting his mortuary temple, Thebes', sources: [{ kind: 'secondary', reference: 'World History Encyclopedia, “Colossi of Memnon”' }], note: 'Two quartzite colossi ~18 m high, ~720 t each.' },
+      { role: 'cracked by earthquake, then “sang” at dawn', externalRef: { name: 'reported by Strabo, Pausanias, and Roman visitors', tradition: 'Greco-Roman' }, date: '27 BCE–199 CE', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Colossi of Memnon”' }] },
+      { role: 'repaired (silencing it) by', externalRef: { name: 'the emperor Septimius Severus', tradition: 'Roman' }, date: 'c. 199 CE', sources: [{ kind: 'secondary', reference: 'World History Encyclopedia' }] },
+    ],
+    location: 'In situ, Theban west bank, Luxor, Egypt',
+    sources: [
+      { kind: 'secondary', reference: 'World History Encyclopedia, “Colossi of Memnon”' },
+      { kind: 'primary', reference: 'Strabo, Geography 17.1.46; Pausanias 1.42.3 (the singing colossus)' },
+    ],
+    lore: 'Two quartzite colossi of Amenhotep III that once flanked his vanished mortuary temple. After an earthquake cracked the northern statue it emitted a sound at dawn — the “singing Memnon,” which Greek and Roman tourists came to hear and inscribe — until a Roman repair stilled it forever.',
+  },
+  'luxor-temple': {
+    names: [
+      { value: 'jpt-rsyt', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Ipet-resyt', note: '“the Southern Sanctuary” (hieroglyphs unverified)', source: 'New Kingdom, 18th Dyn.' },
+      { value: 'Luxor Temple', script: 'Latin', tradition: 'Egyptian', period: 'modern' },
+    ],
+    kind: 'monument', classId: 'temple',
+    custody: [
+      { role: 'principally built by', personId: 'egyptian_amenhotep_iii', date: 'c. 1390–1352 BCE', where: 'Thebes (east bank)', sources: [{ kind: 'secondary', reference: 'Britannica, “Temple of Luxor”' }], note: 'Decorated under Tutankhamun and Horemheb; great pylon, court, obelisks and colossi added by Ramesses II.' },
+      { role: 'expanded by', externalRef: { name: 'Ramesses II (one of his obelisks now in the Place de la Concorde, Paris)', tradition: 'Egyptian' }, date: 'c. 1279–1213 BCE', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Luxor Temple”' }] },
+    ],
+    location: 'In situ, east bank, Luxor, Egypt — part of WH “Ancient Thebes with its Necropolis”',
+    sources: [
+      { kind: 'secondary', reference: 'Britannica, “Temple of Luxor”' },
+      { kind: 'secondary', reference: 'Wikipedia, “Luxor Temple” (Ipet-resyt)' },
+    ],
+    lore: 'The “Southern Sanctuary” of Thebes, built mainly by Amenhotep III and joined to Karnak by an avenue of sphinxes; the focus of the annual Opet festival. Ramesses II added its great pylon and a pair of obelisks, one of which now stands in Paris.',
+  },
+  'malkata-palace': {
+    names: [
+      { value: 'pr-ḥꜥy', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Per-Hai', note: '“House of Rejoicing” (hieroglyphs unverified)', source: 'New Kingdom, 18th Dyn.' },
+      { value: 'Malkata', script: 'Latin', tradition: 'Egyptian', note: 'modern local toponym', period: 'modern' },
+    ],
+    kind: 'monument', classId: 'palace',
+    custody: [
+      { role: 'built by', personId: 'egyptian_amenhotep_iii', date: 'c. 1390–1352 BCE', where: 'the Theban west bank', sources: [{ kind: 'secondary', reference: 'Cambridge, Amenhotep III: Egypt’s Radiant Pharaoh' }], note: 'A sprawling mudbrick festival-palace city, linked to the Nile by the great harbour now called Birket Habu.' },
+      { role: 'excavated by', externalRef: { name: 'the Metropolitan Museum and later expeditions', tradition: 'modern' }, date: '1900s–present', sources: [{ kind: 'secondary', reference: 'Penn Museum, Expedition' }] },
+    ],
+    location: 'In situ ruins, Theban west bank (south of Medinet Habu), Luxor, Egypt',
+    sources: [
+      { kind: 'secondary', reference: 'Cambridge UP, “Per-Hai (‘The House of Rejoicing’) at Malkata”' },
+      { kind: 'secondary', reference: 'Penn Museum, Expedition, “Festive Fragments”' },
+    ],
+    lore: 'Amenhotep III’s vast mudbrick palace-city on the Theban west bank — the “House of Rejoicing,” built for his jubilee festivals with painted halls and a huge artificial harbour. Largely abandoned after his reign, it survives as low ruins.',
+  },
+  'karnak-obelisks': {
+    names: [
+      { value: 'Obelisks of Hatshepsut at Karnak', script: 'Latin', tradition: 'Egyptian', period: 'modern' },
+      { value: 'Mꜣꜥt-kꜣ-Rꜥ', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Maatkare', note: 'Hatshepsut’s prenomen, named on the shafts (hieroglyphs unverified)', source: 'New Kingdom, 18th Dyn.' },
+    ],
+    kind: 'monument', classId: 'obelisk',
+    custody: [
+      { role: 'raised by', personId: 'egyptian_hatshepsut', date: 'c. 1457 BCE', where: 'the Precinct of Amun-Re, Karnak', sources: [{ kind: 'secondary', reference: 'academia.edu, “Hatshepsut’s Obelisks at Karnak”' }], note: 'Red granite from Aswan; the standing one (~29 m) is the tallest surviving ancient obelisk in Egypt.' },
+      { role: 'partly walled in by', externalRef: { name: 'Thutmose III (who enclosed the lower shafts)', tradition: 'Egyptian' }, date: 'mid-15th c. BCE', sources: [{ kind: 'secondary', reference: 'Egyptology sources' }] },
+    ],
+    location: 'In situ, Precinct of Amun-Re, Karnak, Luxor, Egypt (one standing; the fallen one by the Sacred Lake)',
+    sources: [
+      { kind: 'secondary', reference: 'academia.edu, “Hatshepsut’s Obelisks at Karnak: Standing in the Precinct of Amun”' },
+      { kind: 'secondary', reference: 'Wikipedia, “Hatshepsut” (Karnak obelisks)' },
+    ],
+    lore: 'A pair of red-granite obelisks Hatshepsut raised at Karnak for her jubilee; the surviving one, near 29 m, is the tallest ancient obelisk still standing in Egypt. Her successor Thutmose III later masked their bases in masonry.',
+  },
+  'temple-of-deir-el-bahari': {
+    names: [
+      { value: 'ḏsr-ḏsrw', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Djeser-Djeseru', note: '“Holy of Holies / Sacred of Sacreds” (hieroglyphs unverified)', source: 'New Kingdom, 18th Dyn.' },
+      { value: 'Deir el-Bahari', script: 'Latin', tradition: 'Egyptian', note: '“the Northern Monastery” — modern name from a later Coptic convent', period: 'modern' },
+    ],
+    kind: 'monument', classId: 'mortuary-temple',
+    custody: [
+      { role: 'commissioned by', personId: 'egyptian_hatshepsut', date: 'c. 1479–1458 BCE', where: 'Deir el-Bahari, Thebes', sources: [{ kind: 'secondary', reference: 'Met Museum' }], note: 'Designed by her steward Senenmut as rising colonnaded terraces against the cliff.' },
+      { role: 'images defaced under', externalRef: { name: 'Thutmose III (and later Atenist erasures)', tradition: 'Egyptian' }, date: 'mid-late 18th Dyn.', sources: [{ kind: 'secondary', reference: 'Wikipedia' }] },
+      { role: 'excavated/restored by', externalRef: { name: 'Naville, Winlock, then the Polish–Egyptian mission', tradition: 'modern' }, date: 'late 19th c.–present', sources: [{ kind: 'secondary', reference: 'PCMA' }] },
+    ],
+    location: 'In situ, Deir el-Bahari, Theban Necropolis, Luxor, Egypt',
+    sources: [
+      { kind: 'secondary', reference: 'Metropolitan Museum of Art, Deir el-Bahri materials' },
+      { kind: 'secondary', reference: 'Wikipedia, “Mortuary temple of Hatshepsut” (Djeser-Djeseru; Senenmut)' },
+    ],
+    lore: 'Hatshepsut’s terraced mortuary temple, “Holy of Holies,” rising in colonnaded tiers against the Theban cliff — designed by her favourite Senenmut and decorated with her divine birth and the famous expedition to Punt. After her death her images were hacked out; centuries later a Coptic monastery gave the place its modern name.',
+  },
+  'step-pyramid-of-saqqara': {
+    names: [
+      { value: 'Step Pyramid of Djoser', script: 'Latin', tradition: 'Egyptian', period: 'modern' },
+      { value: 'Nṯrj-ḫt', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Netjerikhet', note: '“Divine of Body” — the Horus name actually inscribed in the complex (hieroglyphs unverified)', source: 'Old Kingdom, 3rd Dyn.' },
+    ],
+    kind: 'monument', classId: 'step-pyramid',
+    custody: [
+      { role: 'designed by', personId: 'egyptian_imhotep', date: 'c. 2670–2650 BCE', where: 'Saqqara', sources: [{ kind: 'secondary', reference: 'Britannica, “Step Pyramid”' }], note: 'Built for King Djoser (Netjerikhet); evolved from a mastaba into six stacked tiers — the world’s earliest large cut-stone monument.' },
+      { role: 'restored (anastylosis) by', externalRef: { name: 'C. M. Firth and J.-P. Lauer, then recent Egyptian conservation', tradition: 'modern' }, date: '20th c.–2020', sources: [{ kind: 'secondary', reference: 'Egyptology sources' }] },
+    ],
+    location: 'In situ, Saqqara, near Memphis, Egypt — part of WH “Memphis and its Necropolis”',
+    sources: [
+      { kind: 'secondary', reference: 'Britannica, “Step Pyramid / Saqqara”' },
+      { kind: 'secondary', reference: 'Wikipedia, “Pyramid of Djoser” (Imhotep as architect)' },
+    ],
+    lore: 'The world’s earliest colossal stone building — six great steps raised over King Djoser’s tomb at Saqqara, designed by his vizier Imhotep, who was later deified as the patron of architects and physicians. It marks the birth of monumental architecture in stone.',
+  },
+  'serdab-statue-of-djoser': {
+    names: [
+      { value: 'Ka statue of Djoser', script: 'Latin', tradition: 'Egyptian', period: 'modern' },
+      { value: 'Nṯrj-ḫt', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Netjerikhet', note: 'the king’s Horus name on the base, with the name of Imhotep (hieroglyphs unverified)', source: 'Old Kingdom, 3rd Dyn.' },
+    ],
+    kind: 'sculpture', classId: 'royal-statue',
+    custody: [
+      { role: 'made for Djoser, under', personId: 'egyptian_imhotep', date: 'c. 2670–2650 BCE', where: 'the serdab of the Step Pyramid, Saqqara', sources: [{ kind: 'secondary', reference: 'Egyptian Museum, Cairo, JE 49158' }], note: 'A near-life-size seated statue sealed in the serdab to receive offerings — the oldest known life-size Egyptian royal statue.' },
+      { role: 'excavated by', externalRef: { name: 'the Antiquities Service (Firth/Quibell)', tradition: 'modern' }, date: '1924–1925', sources: [{ kind: 'secondary', reference: 'Egyptian Museum, Cairo' }], note: 'The original moved to Cairo; a plaster replica now sits in the serdab.' },
+    ],
+    location: 'Egyptian Museum, Cairo — JE 49158 (replica in situ at Saqqara)',
+    sources: [
+      { kind: 'secondary', reference: 'Egyptian Museum, Cairo, “Statue of King Djoser” (JE 49158)' },
+      { kind: 'secondary', reference: 'Wikipedia, “Djoser”' },
+    ],
+    lore: 'The painted limestone statue of King Djoser sealed inside the serdab of his Step Pyramid, peering out through two eye-holes to receive the cult — the oldest surviving life-size royal statue from Egypt. The original is in Cairo (JE 49158); a copy keeps its place at Saqqara.',
+  },
+
+  // ═══ Kushite / Napatan monuments (25th Dynasty) ══════════════════════════
+  'gebel-barkal-amun-temple-restoration': {
+    names: [
+      { value: 'Temple of Amun at Gebel Barkal (B 500)', script: 'Latin', tradition: 'Kushite', note: 'Reisner’s field number for the Great Amun Temple at Napata' },
+      { value: 'the “Karnak of Nubia”', script: 'Latin', tradition: 'Kushite', note: 'cult home of Amun of Napata' },
+    ],
+    kind: 'monument', classId: 'amun-temple',
+    custody: [
+      { role: 'first built by', externalRef: { name: 'New Kingdom pharaohs (from Thutmose III)', tradition: 'Egyptian' }, date: 'from c. 1450 BCE', where: 'Gebel Barkal / Napata', sources: [{ kind: 'secondary', reference: 'T. Kendall, Jebel Barkal studies' }] },
+      { role: 'enlarged and restored by', personId: 'piye', date: 'c. 720s BCE', sources: [{ kind: 'secondary', reference: 'Reisner/Dunham; Kendall' }], note: 'Piye encased the temple and added a hypostyle hall (B 502) and outer court (B 501), enlarging it by about two-thirds.' },
+      { role: 'excavated by', externalRef: { name: 'G. A. Reisner, Harvard–MFA Boston Expedition', tradition: 'modern' }, date: '1916–1920', sources: [{ kind: 'secondary', reference: 'MFA Boston' }] },
+    ],
+    location: 'In situ, Gebel Barkal (Karima), Sudan — UNESCO World Heritage Site',
+    sources: [
+      { kind: 'secondary', reference: 'G. A. Reisner & D. Dunham, Harvard–MFA Boston Expedition records' },
+      { kind: 'secondary', reference: 'UNESCO WHS, “Gebel Barkal and the Sites of the Napatan Region”' },
+    ],
+    lore: 'The great temple of Amun beneath the holy mountain of Gebel Barkal, the “Karnak of Nubia,” which the Kushites held to be Amun’s true home. Piye rebuilt and vastly enlarged the New Kingdom shrine, anchoring the 25th-Dynasty claim to be the legitimate heirs of the pharaohs.',
+  },
+  'pyramid-ku-17-el-kurru': {
+    names: [
+      { value: 'Pyramid of Piye, el-Kurru (Ku. 17)', script: 'Latin', tradition: 'Kushite', note: 'Reisner’s el-Kurru tomb number' },
+    ],
+    kind: 'monument', classId: 'royal-pyramid',
+    custody: [
+      { role: 'built as the tomb of', personId: 'piye', date: 'c. 720s–714 BCE', where: 'el-Kurru, Napata region', sources: [{ kind: 'secondary', reference: 'Dunham, El Kurru (1950)' }], note: 'A steep small pyramid over a rock-cut burial chamber; Piye was also buried with horse teams nearby.' },
+      { role: 'excavated by', externalRef: { name: 'G. A. Reisner, Harvard–MFA Boston Expedition', tradition: 'modern' }, date: '1918–1919', sources: [{ kind: 'secondary', reference: 'Dunham, El Kurru' }] },
+    ],
+    location: 'In situ, el-Kurru, Sudan; finds in MFA Boston and the Sudan National Museum, Khartoum',
+    sources: [
+      { kind: 'secondary', reference: 'D. Dunham, The Royal Cemeteries of Kush I: El Kurru (1950)' },
+      { kind: 'secondary', reference: 'G. A. Reisner, el-Kurru excavations (1918–1919)' },
+    ],
+    lore: 'The royal pyramid of Piye at el-Kurru — among the first of the steep Kushite pyramids that revived the form for Nubian kings, a thousand years after Egypt had abandoned it. He was buried with his chariot horses standing nearby.',
+  },
+  'piye-victory-stela': {
+    names: [
+      { value: 'Victory Stela of Piye', script: 'Latin', tradition: 'Kushite', note: 'also the “Great Triumphal Stela”' },
+    ],
+    kind: 'text', classId: 'victory-stela',
+    custody: [
+      { role: 'commissioned by', personId: 'piye', date: 'regnal year 21, c. 727 BCE', where: 'the Amun temple, Gebel Barkal', sources: [{ kind: 'secondary', reference: 'Grimal, La stèle triomphale (MIFAO 105, 1981)' }], note: 'A long grey-granite stela narrating his conquest of a divided Egypt.' },
+      { role: 'discovered by', externalRef: { name: 'Auguste Mariette’s team', tradition: 'modern' }, date: '1862', where: 'Gebel Barkal', sources: [{ kind: 'secondary', reference: 'Mariette (1872)' }] },
+      { role: 'now held', externalRef: { name: 'Egyptian Museum, Cairo (JE 48862)', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Cairo Museum JE 48862' }] },
+    ],
+    location: 'Egyptian Museum, Cairo — JE 48862',
+    sources: [
+      { kind: 'secondary', reference: 'N.-C. Grimal, La stèle triomphale de Pi(ʿankh)y (MIFAO 105, 1981)' },
+      { kind: 'primary', reference: 'Fontes Historiae Nubiorum I (text & translation)' },
+    ],
+    lore: 'Piye’s great triumphal stela from Gebel Barkal, recounting in vivid detail his campaign down the Nile to subdue the warring princes of Egypt — and his insistence on ritual purity, even refusing to meet kings who ate fish or were uncircumcised. One of the longest and liveliest of all royal narratives (Cairo JE 48862).',
+  },
+  'karnak-Shebitku-chapel': {
+    names: [
+      { value: 'Chapel of Osiris-Heqadjet, East Karnak', script: 'Latin', tradition: 'Kushite', note: '“Osiris, Ruler of Eternity” — decorated under Shebitku' },
+    ],
+    kind: 'monument', classId: 'chapel',
+    custody: [
+      { role: 'decorated by', personId: 'shebitku', date: 'c. 707–690 BCE', where: 'East Karnak', sources: [{ kind: 'secondary', reference: 'F. Payraudeau, NeHeT 1 (2014)' }], note: 'Reliefs in a small Osiris chapel, with the God’s Wives Shepenupet I and Amenirdis I — Shebitku’s main attested Karnak work.' },
+    ],
+    location: 'In situ, East Karnak, Luxor, Egypt',
+    sources: [
+      { kind: 'secondary', reference: 'F. Payraudeau, “Retour sur la succession Shabaqo–Shabataqo,” NeHeT 1 (2014)' },
+      { kind: 'secondary', reference: 'J. Leclant, Recherches sur les monuments thébains de la XXVe dynastie (BdE 36, 1965)' },
+    ],
+    lore: 'Relief decoration added by Shebitku to a small chapel of Osiris-Heqadjet (“Ruler of Eternity”) in East Karnak, alongside the powerful God’s Wives of Amun — a modest but datable trace of the 25th Dynasty’s presence at Karnak, important for fixing Shebitku’s place in the dynasty.',
+  },
+  'pyramid-ku-18-el-kurru': {
+    names: [
+      { value: 'Pyramid of Shebitku, el-Kurru (Ku. 18)', script: 'Latin', tradition: 'Kushite', note: 'Reisner’s el-Kurru tomb number' },
+    ],
+    kind: 'monument', classId: 'royal-pyramid',
+    custody: [
+      { role: 'built as the tomb of', personId: 'shebitku', date: 'c. 690 BCE', where: 'el-Kurru', sources: [{ kind: 'secondary', reference: 'Dunham, El Kurru (1950)' }] },
+      { role: 'excavated by', externalRef: { name: 'G. A. Reisner, Harvard–MFA Boston Expedition', tradition: 'modern' }, date: '1918–1919', sources: [{ kind: 'secondary', reference: 'Dunham, El Kurru' }] },
+    ],
+    location: 'In situ, el-Kurru, Sudan; finds in MFA Boston and the Sudan National Museum, Khartoum',
+    sources: [
+      { kind: 'secondary', reference: 'D. Dunham, The Royal Cemeteries of Kush I: El Kurru (1950)' },
+    ],
+    lore: 'The el-Kurru pyramid of Shebitku, one of the Kushite kings who ruled Egypt as the 25th Dynasty, excavated by Reisner in 1918–1919.',
+  },
+  'pyramid-of-nuri': {
+    names: [
+      { value: 'Pyramid of Taharqa, Nuri (Nu. 1)', script: 'Latin', tradition: 'Kushite', note: 'the largest pyramid at Nuri' },
+    ],
+    kind: 'monument', classId: 'royal-pyramid',
+    custody: [
+      { role: 'built as the tomb of', personId: 'taharqa', date: 'c. 664 BCE', where: 'Nuri, opposite Gebel Barkal', sources: [{ kind: 'secondary', reference: 'Dunham, Nuri (1955)' }], note: 'The largest Kushite pyramid; Taharqa founded the new royal necropolis at Nuri.' },
+      { role: 'excavated by', externalRef: { name: 'G. A. Reisner, Harvard–MFA Boston Expedition', tradition: 'modern' }, date: '1916–1918', sources: [{ kind: 'secondary', reference: 'Dunham, Nuri' }], note: 'The flooded burial chambers have since been explored by divers.' },
+    ],
+    location: 'In situ, Nuri, Sudan; finds in MFA Boston and the Sudan National Museum, Khartoum',
+    sources: [
+      { kind: 'secondary', reference: 'D. Dunham, The Royal Cemeteries of Kush II: Nuri (1955)' },
+      { kind: 'secondary', reference: 'Nuri Archaeological Expedition (underwater work in the tomb)' },
+    ],
+    lore: 'The largest of the Kushite pyramids, built by Taharqa — greatest of the 25th-Dynasty pharaohs — who moved the royal cemetery across the river to Nuri. Its burial chambers, cut deep below the water table, are now flooded and have been surveyed by archaeological divers.',
+  },
+  'temple-of-kawa': {
+    names: [
+      { value: 'Temple T, Kawa (Amun temple of Taharqa)', script: 'Latin', tradition: 'Kushite', note: 'Macadam’s designation' },
+      { value: 'Gm(pꜣ)-Jtn', script: 'Egyptian (transliteration)', tradition: 'Kushite', rom: 'Gematen', note: 'ancient name of the Kawa cult site (hieroglyphs unverified)', source: 'Macadam, Temples of Kawa' },
+    ],
+    kind: 'monument', classId: 'amun-temple',
+    custody: [
+      { role: 'built by', personId: 'taharqa', date: 'c. 684–680 BCE', where: 'Kawa, Nubia', sources: [{ kind: 'secondary', reference: 'Macadam, The Temples of Kawa (1949, 1955)' }], note: 'Taharqa dedicated a series of inscribed stelae (the “Kawa stelae”) in its forecourt.' },
+      { role: 'excavated by', externalRef: { name: 'F. Ll. Griffith, then M. F. L. Macadam (Oxford)', tradition: 'modern' }, date: '1929–1936', sources: [{ kind: 'secondary', reference: 'Griffith; Macadam' }] },
+      { role: 'stelae now in', externalRef: { name: 'Ny Carlsberg Glyptotek (Copenhagen), Sudan National Museum, Ashmolean', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Ny Carlsberg Glyptotek (e.g. AEIN 1707)' }] },
+    ],
+    location: 'In situ at Kawa, Sudan; stelae dispersed to Copenhagen, Khartoum, and Oxford',
+    sources: [
+      { kind: 'secondary', reference: 'M. F. L. Macadam, The Temples of Kawa, I–II (Oxford, 1949, 1955)' },
+      { kind: 'secondary', reference: 'Ny Carlsberg Glyptotek, Kawa stelae (e.g. AEIN 1707)' },
+    ],
+    lore: 'Taharqa’s Amun temple at Kawa, whose forecourt stelae record his building works and the “wonders” of his reign — high Niles and good harvests read as Amun’s favour. Excavated by Griffith and Macadam; its stelae are now divided between Copenhagen, Khartoum, and Oxford.',
+  },
+  'tantamani-dream-stela': {
+    names: [
+      { value: 'Dream Stela of Tantamani', script: 'Latin', tradition: 'Kushite', note: 'records his dream of two serpents and his reconquest of Egypt' },
+    ],
+    kind: 'text', classId: 'dream-stela',
+    custody: [
+      { role: 'commissioned by', personId: 'tantamani', date: 'regnal year 1, c. 664 BCE', where: 'the Amun temple, Gebel Barkal', sources: [{ kind: 'secondary', reference: 'Fontes Historiae Nubiorum I' }], note: 'Tantamani dreams of two serpents and is told he will rule both Upper and Lower Egypt.' },
+      { role: 'now held', externalRef: { name: 'Egyptian Museum, Cairo (JE 48863)', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Cairo Museum JE 48863' }] },
+    ],
+    location: 'Egyptian Museum, Cairo — JE 48863',
+    sources: [
+      { kind: 'secondary', reference: 'Cairo Egyptian Museum, JE 48863' },
+      { kind: 'primary', reference: 'Fontes Historiae Nubiorum I (text & translation)' },
+    ],
+    lore: 'The stela of Tantamani, last 25th-Dynasty ruler of Egypt, opening with a dream of two serpents — read as a sign that he would hold both Upper and Lower Egypt — and recounting his march north to reclaim the country, shortly before the Assyrians drove the Kushites back south (Cairo JE 48863).',
+  },
+  'pyramid-ku-16-el-kurru': {
+    names: [
+      { value: 'Pyramid of Tantamani, el-Kurru (Ku. 16)', script: 'Latin', tradition: 'Kushite', note: 'with a painted burial chamber' },
+    ],
+    kind: 'monument', classId: 'royal-pyramid',
+    custody: [
+      { role: 'built as the tomb of', personId: 'tantamani', date: 'c. 653 BCE', where: 'el-Kurru', sources: [{ kind: 'secondary', reference: 'Dunham, El Kurru (1950)' }], note: 'The last 25th-Dynasty king buried at el-Kurru; its chamber retains vivid painted decoration.' },
+      { role: 'excavated by', externalRef: { name: 'G. A. Reisner, Harvard–MFA Boston Expedition', tradition: 'modern' }, date: '1919', sources: [{ kind: 'secondary', reference: 'Dunham, El Kurru' }] },
+    ],
+    location: 'In situ, el-Kurru, Sudan (decorated subterranean chamber open to visitors)',
+    sources: [
+      { kind: 'secondary', reference: 'D. Dunham, The Royal Cemeteries of Kush I: El Kurru (1950)' },
+    ],
+    lore: 'The el-Kurru pyramid of Tantamani, whose subterranean chamber keeps some of the best-preserved painted decoration of any Kushite tomb — the king before the gods beneath a starred ceiling.',
+  },
+  'shabaka-stone': {
+    names: [
+      { value: 'Shabaka Stone', script: 'Latin', tradition: 'Kushite', note: 'bears the “Memphite Theology” of creation by Ptah' },
+    ],
+    kind: 'text', classId: 'theology-stone',
+    custody: [
+      { role: 'commissioned by', personId: 'shabaka', date: 'c. 710 BCE', where: 'the Temple of Ptah, Memphis', sources: [{ kind: 'secondary', reference: 'British Museum EA 498' }], note: 'Shabaka claims to have copied a worm-eaten papyrus he found in the temple.' },
+      { role: 'reused as a millstone', externalRef: { name: 'the central text destroyed by radial grinding', tradition: 'medieval' }, date: 'medieval period', sources: [{ kind: 'secondary', reference: 'British Museum EA 498' }] },
+      { role: 'donated to the British Museum by', externalRef: { name: 'George John Spencer, 2nd Earl Spencer', tradition: 'modern' }, date: '1805', sources: [{ kind: 'secondary', reference: 'British Museum EA 498' }] },
+    ],
+    location: 'British Museum, London — EA 498',
+    sources: [
+      { kind: 'secondary', reference: 'British Museum, EA 498 (objectId 111561)' },
+      { kind: 'secondary', reference: 'J. H. Breasted, “The Philosophy of a Memphite Priest,” ZÄS 39 (1901)' },
+    ],
+    lore: 'A 25th-Dynasty slab commissioned by Shabaka to preserve the “Memphite Theology” — in which the god Ptah creates the world by thought and the spoken word, a striking parallel to later logos theology. Centuries on it was hollowed into a millstone, grinding away its centre, before reaching the British Museum in 1805 (EA 498).',
+  },
+
+  // ═══ Roman monuments & texts (Augustus, Caesar) ══════════════════════════
+  'ara-pacis-augustae': {
+    names: [
+      { value: 'Ara Pacis Augustae', script: 'Latin', tradition: 'Roman', note: '“Altar of Augustan Peace”', period: 'Augustan' },
+    ],
+    kind: 'monument', classId: 'altar',
+    custody: [
+      { role: 'vowed by the Senate for', personId: 'roman_augustus', date: '13 BCE (dedicated 9 BCE)', where: 'the Campus Martius, Rome', sources: [{ kind: 'primary', reference: 'Augustus, Res Gestae 12; Ovid, Fasti 1.709' }], note: 'A marble altar in a sculptured precinct celebrating the peace of his reign.' },
+      { role: 'first fragments found', externalRef: { name: 'beneath the Palazzo Fiano (S. Lorenzo in Lucina)', tradition: 'modern' }, date: '1568', sources: [{ kind: 'secondary', reference: 'Museo dell’Ara Pacis' }] },
+      { role: 'excavated and reconstructed', externalRef: { name: 'Italian state (Morpurgo pavilion); re-housed in the Meier museum', tradition: 'modern' }, date: '1937–1938; 2006', sources: [{ kind: 'secondary', reference: 'Museo dell’Ara Pacis' }] },
+    ],
+    location: 'Museo dell’Ara Pacis, Rome (in situ near the Mausoleum of Augustus)',
+    sources: [
+      { kind: 'primary', reference: 'Augustus, Res Gestae Divi Augusti 12' },
+      { kind: 'secondary', reference: 'Museo dell’Ara Pacis, Rome (rediscovery 1568; reconstruction 1937–38; Meier enclosure 2006)' },
+    ],
+    lore: 'The Altar of Augustan Peace, voted by the Senate to mark Augustus’s safe return and the peace he claimed to have brought the Roman world. Its reliefs of a procession of the imperial family and of Mother Earth in plenty are masterpieces of Augustan propaganda; the scattered fragments were reassembled in the 1930s.',
+  },
+  'forum-augustum-and-mars-ultor-temple': {
+    names: [
+      { value: 'Forum Augustum', script: 'Latin', tradition: 'Roman', note: '“Forum of Augustus”', period: 'Augustan' },
+      { value: 'Templum Martis Ultoris', script: 'Latin', tradition: 'Roman', note: '“Temple of Mars the Avenger”', period: 'Augustan' },
+    ],
+    kind: 'monument', classId: 'forum-and-temple',
+    custody: [
+      { role: 'vowed at Philippi, then built by', personId: 'roman_augustus', date: 'vowed 42 BCE, dedicated 2 BCE', where: 'Rome', sources: [{ kind: 'secondary', reference: 'Platner & Ashby, “Forum Augustum”' }], note: 'Vowed in vengeance for Caesar’s murder; built on land Augustus bought “ex manubiis” (from spoils).' },
+      { role: 'survives as', externalRef: { name: 'podium and three standing columns within the Imperial Fora', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'World History Encyclopedia' }] },
+    ],
+    location: 'In situ, Imperial Fora (Fori Imperiali), Rome',
+    sources: [
+      { kind: 'secondary', reference: 'Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), “Forum Augustum”' },
+      { kind: 'primary', reference: 'Augustus, Res Gestae 21–22; Suetonius, Augustus 29' },
+    ],
+    lore: 'The Forum of Augustus, centred on the Temple of Mars Ultor — “Mars the Avenger,” the vow Octavian made at Philippi to avenge Caesar. Lined with statues of Rome’s heroes and the Julian ancestors, it staged Augustus’s lineage as the climax of Roman history; three of its columns still stand.',
+  },
+  'mausoleum-of-Augustus': {
+    names: [
+      { value: 'Mausoleum Augusti', script: 'Latin', tradition: 'Roman', note: '“Mausoleum of Augustus” (the Tumulus Iuliorum)', period: 'Augustan' },
+    ],
+    kind: 'monument', classId: 'mausoleum',
+    custody: [
+      { role: 'built by', personId: 'roman_augustus', date: 'begun c. 28 BCE', where: 'the Campus Martius, Rome', sources: [{ kind: 'secondary', reference: 'Strabo, Geography 5.3.8' }], note: 'A vast circular dynastic tomb; Augustus and the Julio-Claudians were interred here.' },
+      { role: 'later a fortress, garden, then concert hall', externalRef: { name: 'medieval Colonna stronghold; the “Augusteo” auditorium', tradition: 'medieval–modern' }, date: 'medieval–early 20th c.', sources: [{ kind: 'secondary', reference: 'Turismo Roma' }] },
+      { role: 'restored and reopened', externalRef: { name: 'Roma Capitale / Fondazione TIM', tradition: 'modern' }, date: '2021', sources: [{ kind: 'secondary', reference: 'Romeing (reopened 1 March 2021)' }] },
+    ],
+    location: 'In situ, Piazza Augusto Imperatore, Rome (reopened 2021)',
+    sources: [
+      { kind: 'primary', reference: 'Strabo, Geography 5.3.8 (description of the Mausoleum)' },
+      { kind: 'secondary', reference: 'Turismo Roma; Romeing (2021 reopening)' },
+    ],
+    lore: 'Augustus’s great circular tomb on the Campus Martius, built early in his reign as the resting place of his dynasty. Through the Middle Ages it served as a fortress, then a garden and a concert hall, before a long restoration reopened it to the public in 2021.',
+  },
+  'res-gestae-divi-augusti': {
+    names: [
+      { value: 'Res Gestae Divi Augusti', script: 'Latin', tradition: 'Roman', note: '“The Deeds of the Divine Augustus”', period: 'Augustan' },
+    ],
+    kind: 'text', classId: 'funerary-inscription',
+    custody: [
+      { role: 'composed by', personId: 'roman_augustus', date: 'by 14 CE', sources: [{ kind: 'primary', reference: 'Res Gestae Divi Augusti' }], note: 'His own first-person account of his deeds, to be inscribed on bronze pillars at his Mausoleum (now lost).' },
+      { role: 'best preserved as', externalRef: { name: 'the Monumentum Ancyranum (Temple of Rome and Augustus, Ankara)', tradition: 'Roman' }, date: '1st c. CE', sources: [{ kind: 'secondary', reference: 'Britannica, “Monumentum Ancyranum”' }] },
+    ],
+    location: 'Original lost; best witness the Monumentum Ancyranum, Ankara, Turkey',
+    sources: [
+      { kind: 'primary', reference: 'Res Gestae Divi Augusti (Loeb Classical Library 152)' },
+      { kind: 'secondary', reference: 'Britannica, “Monumentum Ancyranum”' },
+    ],
+    lore: 'Augustus’s own funerary testament — a first-person catalogue of his offices, conquests, benefactions, and buildings, posted on bronze pillars before his Mausoleum. The bronzes are lost; the text survives chiefly because a provincial copy was carved on a temple wall at Ancyra (Ankara).',
+  },
+  'de-bello-gallico-commentaries': {
+    names: [
+      { value: 'Commentarii de Bello Gallico', script: 'Latin', tradition: 'Roman', note: '“Commentaries on the Gallic War”', period: 'Late Republic' },
+    ],
+    kind: 'text', classId: 'commentarii',
+    custody: [
+      { role: 'written by', personId: 'roman_caesar_dictator', date: 'c. 52–51 BCE', sources: [{ kind: 'primary', reference: 'Caesar, Bellum Gallicum' }], note: 'Seven books on his conquest of Gaul (58–52 BCE); an eighth was added by his officer Aulus Hirtius.' },
+      { role: 'transmitted via', externalRef: { name: 'the α manuscript class (oldest witness MS Amsterdam 73, Fleury, 9th c.)', tradition: 'medieval' }, date: '9th c. CE', sources: [{ kind: 'secondary', reference: 'R. Pearse, “The manuscripts of Caesar’s works”' }] },
+    ],
+    location: 'Manuscript tradition; oldest witness MS Amsterdam 73 (Allard Pierson, Amsterdam)',
+    sources: [
+      { kind: 'primary', reference: 'Caesar, Commentarii de Bello Gallico (Loeb Classical Library 72)' },
+      { kind: 'secondary', reference: 'Wikipedia / R. Pearse on the manuscript tradition (α/β classes)' },
+    ],
+    lore: 'Caesar’s third-person account of his conquest of Gaul — “All Gaul is divided into three parts…” — at once a campaign record and a masterpiece of self-promotion aimed at Rome. Book 8 was finished by his lieutenant Hirtius after Caesar’s death.',
+  },
+  'de-bello-civili-commentaries': {
+    names: [
+      { value: 'Commentarii de Bello Civili', script: 'Latin', tradition: 'Roman', note: '“Commentaries on the Civil War”', period: 'Late Republic' },
+    ],
+    kind: 'text', classId: 'commentarii',
+    custody: [
+      { role: 'written by', personId: 'roman_caesar_dictator', date: 'c. 48–47 BCE', sources: [{ kind: 'primary', reference: 'Caesar, Bellum Civile' }], note: 'Three books on the war against Pompey and the Senate (49–48 BCE), down to Pharsalus and Alexandria.' },
+      { role: 'transmitted via', externalRef: { name: 'the β manuscript class (oldest witnesses MSS S and M, 10th c.)', tradition: 'medieval' }, date: '10th c. CE', sources: [{ kind: 'secondary', reference: 'C. Damon, OCT (2015)' }] },
+    ],
+    location: 'Manuscript tradition; oldest witnesses MSS S and M (10th c.); standard edition Damon, OCT (2015)',
+    sources: [
+      { kind: 'primary', reference: 'Caesar, Commentarii de Bello Civili (ed. C. Damon, Oxford Classical Texts, 2015)' },
+      { kind: 'secondary', reference: 'C. Damon, Studies on the Text of Caesar’s Bellum civile (2015)' },
+    ],
+    lore: 'Caesar’s account of the civil war against Pompey and the Senate — his justification for crossing the Rubicon, told with the same cool third-person economy as the Gallic War. The text comes down damaged, with lacunae, in the medieval β manuscripts.',
+  },
+  'temple-of-divus-iulius-roman-forum': {
+    names: [
+      { value: 'Aedes Divi Iuli', script: 'Latin', tradition: 'Roman', note: '“Temple of the Deified Julius”', period: 'Augustan' },
+    ],
+    kind: 'monument', classId: 'temple',
+    custody: [
+      { role: 'deified, with the temple vowed for', personId: 'roman_caesar_dictator', date: 'vowed 42 BCE', where: 'the east end of the Roman Forum', sources: [{ kind: 'secondary', reference: 'Platner & Ashby, “Aedes Divi Iuli”' }], note: 'Built on the spot where Caesar’s body was cremated by the crowd.' },
+      { role: 'built and dedicated by', externalRef: { name: 'Octavian (Augustus)', tradition: 'Roman' }, date: '18 Aug 29 BCE', sources: [{ kind: 'secondary', reference: 'Platner & Ashby' }] },
+    ],
+    location: 'In situ, eastern Roman Forum, Rome (surviving podium core, with the altar marking the cremation site)',
+    sources: [
+      { kind: 'secondary', reference: 'Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), “Aedes Divi Iuli”' },
+      { kind: 'primary', reference: 'Suetonius, Iulius 84–88; Cassius Dio 47.18' },
+    ],
+    lore: 'The temple of the deified Julius Caesar, raised by Augustus on the very spot in the Forum where the mob had burned Caesar’s body — making the founder of the dynasty a god and his heir “son of a god.” Its podium and the round altar over the cremation site survive.',
+  },
+
+  // ═══ Benin (Edo) & Yoruba ════════════════════════════════════════════════
+  'idia-ivory-pendant-mask': {
+    names: [
+      { value: 'Ìyọ́bà', script: 'Edo', tradition: 'Edo (Benin)', rom: 'Iyoba', note: '“Queen Mother” — the title Esigie created for his mother Idia', source: 'British Museum Af1910,0513.1; Met 1978.412.323' },
+      { value: 'Pendant Mask of Iyoba Idia', script: 'Latin', tradition: 'Edo (Benin)', period: 'early 16th c.' },
+    ],
+    kind: 'sculpture', classId: 'ivory-pendant-mask',
+    maker: { name: 'the Benin royal ivory carvers', role: 'carved by' },
+    custody: [
+      { role: 'commissioned by', personId: 'esigie', date: 'early 16th c.', where: 'Benin City', sources: [{ kind: 'secondary', reference: 'Met 1978.412.323' }], note: 'A waist/hip pendant honouring Idia, the first Iyoba (Queen Mother); the openwork tiara shows Portuguese heads and mudfish.' },
+      { role: 'looted in the Benin Punitive Expedition', externalRef: { name: 'British forces (from the Oba’s palace)', tradition: 'modern' }, date: '1897', sources: [{ kind: 'secondary', reference: 'British Museum' }] },
+      { role: 'chosen as the emblem of FESTAC ’77', externalRef: { name: 'the Second World Black and African Festival of Arts and Culture', tradition: 'modern' }, date: '1977', sources: [{ kind: 'secondary', reference: 'Vanguard (2017), “FESTAC at 40”' }], note: 'The British Museum declined to lend the original; a replica was made.' },
+    ],
+    location: 'British Museum, London (Af1910,0513.1) and the Metropolitan Museum, New York (1978.412.323) — not repatriated',
+    sources: [
+      { kind: 'secondary', reference: 'British Museum, pendant mask, reg. Af1910,0513.1 (ivory; h. 24.5 cm)' },
+      { kind: 'secondary', reference: 'Metropolitan Museum of Art, “Pendant Mask of Iyoba,” acc. 1978.412.323' },
+    ],
+    lore: 'An ivory pendant mask of Queen Mother Idia, carved for her son Oba Esigie in the early 1500s — its tiara ringed with the heads of Portuguese traders whose firepower helped Benin to victory. Looted in the 1897 sack of Benin, it became the emblem of FESTAC ’77; the originals remain in London and New York.',
+  },
+  'benin-bronze-classical-phase': {
+    names: [
+      { value: 'Benin Bronzes', script: 'Latin', tradition: 'Edo (Benin)', note: 'royal court brasses (mostly leaded brass, not true bronze)' },
+      { value: 'Ìgùn Èrọnmwọ̀n', script: 'Edo', tradition: 'Edo (Benin)', rom: 'Igun Eronmwon', note: 'the hereditary royal brass-casters’ guild', source: 'museum.ng' },
+    ],
+    kind: 'sculpture', classId: 'royal-brasswork',
+    maker: { name: 'the Igun Eronmwon casters’ guild', role: 'cast by', kind: 'lost-wax brass-casters' },
+    custody: [
+      { role: 'commissioned by the Obas (classical phase under)', personId: 'ewuare_great', date: '15th–17th c.', where: 'Benin City', sources: [{ kind: 'secondary', reference: 'British Museum, “Benin Bronzes”' }], note: 'Plaques and commemorative heads for the palace; the “golden age” is associated with Ewuare’s dynasty (specific plaques date 16th–17th c.).' },
+      { role: 'looted in the Benin Punitive Expedition', externalRef: { name: 'British forces sacked Benin City (thousands of objects seized)', tradition: 'modern' }, date: '1897', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Benin Expedition of 1897”' }] },
+      { role: 'dispersed and (now) repatriating', externalRef: { name: 'museums worldwide; growing returns to Nigeria', tradition: 'modern' }, date: '1897–present', sources: [{ kind: 'secondary', reference: 'National Commission for Museums and Monuments (museum.ng)' }], note: 'Ownership of returned works now vested in the Oba of Benin.' },
+    ],
+    location: 'Dispersed (British Museum, Humboldt Forum Berlin, the Met, and many others); a growing number repatriated to Nigeria',
+    sources: [
+      { kind: 'secondary', reference: 'British Museum, “Benin Bronzes” (contested-objects page)' },
+      { kind: 'secondary', reference: 'Wikipedia, “Benin Bronzes” & “Benin Expedition of 1897”' },
+    ],
+    lore: 'The brass plaques and memorial heads of the Benin court — a continuous royal art whose classical flowering belongs to the dynasty of Ewuare the Great, cast by the hereditary Igun Eronmwon guild. Thousands were looted in the 1897 British expedition and scattered to Western museums; their return is now one of the defining restitution debates.',
+  },
+  'inner-city-walls': {
+    names: [
+      { value: 'Iya', script: 'Edo', tradition: 'Edo (Benin)', note: 'the rampart-and-ditch earthwork (“moat”) around Benin City', source: 'UNESCO tentative list ref. 488' },
+      { value: 'Walls of Benin (inner circuit)', script: 'Latin', tradition: 'Edo (Benin)' },
+    ],
+    kind: 'monument', classId: 'city-wall',
+    custody: [
+      { role: 'consolidated and strengthened by', personId: 'ewuare_great', date: 'c. 1440–1473', where: 'Benin City', sources: [{ kind: 'secondary', reference: 'P. Effiong (MSU), “The Great Walls of the Ancient Benin Kingdom”' }], note: 'The inner-city circuit of the vast Benin earthwork system, begun under earlier Obas (Oguola).' },
+      { role: 'damaged from', externalRef: { name: 'the 1897 expedition and 20th-c. urban growth', tradition: 'modern' }, date: '1897–present', sources: [{ kind: 'secondary', reference: 'NASA Earth Observatory' }] },
+    ],
+    location: 'In situ (surviving sections), Benin City, Edo State, Nigeria — on the UNESCO tentative list',
+    sources: [
+      { kind: 'secondary', reference: 'UNESCO tentative list ref. 488, “Benin Iya”' },
+      { kind: 'secondary', reference: 'P. Darling, archaeological surveys of the Benin earthworks' },
+    ],
+    lore: 'The inner rampart-and-moat (iya) ringing the heart of Benin City, consolidated under Ewuare the Great in the 15th century. It is the core of an earthwork complex once estimated among the largest man-made structures on earth; tradition credits Ewuare with its great thoroughfares as well.',
+  },
+  'iya-extension-moat': {
+    names: [
+      { value: 'Iya (Ewuare’s extension)', script: 'Edo', tradition: 'Edo (Benin)', note: 'expansion of the rampart-and-moat system', source: 'UNESCO tentative list ref. 488' },
+    ],
+    kind: 'monument', classId: 'earthwork-moat',
+    custody: [
+      { role: 'extended by', personId: 'ewuare_great', date: 'c. 1440–1473', where: 'Benin City and its hinterland', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Benin Moat”' }], note: 'Part of the wider network (an estimated ~16,000 km of banks and ditches across the kingdom); not cleanly separable from the inner-city circuit.' },
+    ],
+    location: 'In situ, Benin City and environs, Edo State, Nigeria — part of the Benin Iya (UNESCO tentative list)',
+    sources: [
+      { kind: 'secondary', reference: 'UNESCO tentative list ref. 488; Wikipedia, “Benin Moat”' },
+      { kind: 'secondary', reference: 'P. Darling, Benin earthwork surveys' },
+    ],
+    lore: 'Ewuare’s 15th-century enlargement of the Benin earthworks beyond the inner city — the rural reaches of the iya system. In the sources it is hard to separate cleanly from the inner-city walls; both describe one continuous, ever-growing complex of banks and ditches.',
+  },
+  'iya-i-and-ii-inner-moats': {
+    names: [
+      { value: 'Iya I and Iya II', script: 'Edo', tradition: 'Edo (Benin)', note: 'the earliest (innermost) ditch-and-rampart circuits', source: 'P. Darling surveys' },
+    ],
+    kind: 'monument', classId: 'earthwork-moat',
+    custody: [
+      { role: 'dug by', personId: 'oguola', date: 'late 13th c. (c. 1280–1295)', where: 'Benin City', sources: [{ kind: 'secondary', reference: 'J. Egharevba, A Short History of Benin' }], note: 'Tradition credits Oba Oguola with the first two moats and with ordering ~20 satellite moats around subordinate towns.' },
+      { role: 'later expanded by', externalRef: { name: 'subsequent Obas, especially Ewuare', tradition: 'Edo (Benin)' }, date: '14th–15th c.', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Benin Moat”' }] },
+    ],
+    location: 'In situ, Benin City, Edo State, Nigeria — part of the Benin Iya (UNESCO tentative list)',
+    sources: [
+      { kind: 'secondary', reference: 'J. Egharevba, A Short History of Benin (oral chronology)' },
+      { kind: 'secondary', reference: 'UNESCO tentative list ref. 488' },
+    ],
+    lore: 'The first inner moats of Benin, ascribed by tradition to Oba Oguola in the late 13th century — the seed of the great earthwork system that later Obas would extend for centuries. The chronology comes from Egharevba’s oral history and is approximate.',
+  },
+  'iwebo-iweguae-ibiwe-palace-system': {
+    names: [
+      { value: 'Iwebo, Iweguae, Ibiwe', script: 'Edo', tradition: 'Edo (Benin)', note: 'the three palace societies (Ekhaemwen n’Ogbe)', source: 'edoworld.net' },
+    ],
+    kind: 'symbol', classId: 'palace-institution',
+    custody: [
+      { role: 'instituted by', personId: 'ewedo', date: 'c. 13th c.', where: 'the Oba’s palace, Benin City', sources: [{ kind: 'secondary', reference: 'edoworld.net, “Benin Palace Societies”' }], note: 'Iwebo keeps the regalia and royal wardrobe; Iweguae the Oba’s household; Ibiwe the harem and royal children. Some sources credit Ewuare with consolidating them.' },
+    ],
+    location: 'Living institutions within the Royal Palace of the Oba of Benin, Benin City, Nigeria',
+    sources: [
+      { kind: 'secondary', reference: 'edoworld.net, “The Iwebo / Iweguae / Ibiwe Palace Society”' },
+      { kind: 'secondary', reference: 'Wikipedia, “Ewedo”' },
+    ],
+    lore: 'The three palace associations that run the Oba’s court — Iwebo (regalia and wardrobe), Iweguae (the royal household), and Ibiwe (the wives and royal children) — an administrative order ascribed to Oba Ewedo and later consolidated by Ewuare. They still structure palace life today.',
+  },
+  'ogbe-palace-foundation': {
+    names: [
+      { value: 'Ogbe (the Oba’s palace)', script: 'Edo', tradition: 'Edo (Benin)', note: 'the central palace quarter of Benin City', source: 'Wikipedia, “Royal Palace of the Oba of Benin”' },
+    ],
+    kind: 'monument', classId: 'palace',
+    custody: [
+      { role: 'founded (relocation from Usama) by', personId: 'ewedo', date: 'c. 13th c.', where: 'central Benin City', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Ewedo”' }], note: 'Ewedo moved the royal seat from the Uzama kingmakers’ ground at Usama to a new central site, strengthening the crown.' },
+      { role: 'destroyed, then rebuilt by', externalRef: { name: 'the 1897 expedition; rebuilt by Oba Eweka II', tradition: 'modern' }, date: '1897; 1914–1932', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Royal Palace of the Oba of Benin”' }] },
+    ],
+    location: 'In situ, Royal Palace of the Oba of Benin, central Benin City, Nigeria (post-1914 rebuild)',
+    sources: [
+      { kind: 'secondary', reference: 'Wikipedia, “Ewedo” & “Royal Palace of the Oba of Benin”' },
+      { kind: 'secondary', reference: 'Archaeology Magazine (2025), “Traces of Oba’s Palace Found in Benin City”' },
+    ],
+    lore: 'The founding of the Oba’s palace in the central Ogbe quarter, attributed to Oba Ewedo, who moved the royal seat away from the kingmakers at Usama and so consolidated the monarchy. Burned in 1897, the palace was rebuilt on its historic ground in the early 20th century.',
+  },
+  'eko-war-camp-foundation': {
+    names: [
+      { value: 'Èkó', script: 'Edo', tradition: 'Edo (Benin)', rom: 'Eko', note: '“war camp” — the Benin name for the settlement that became Lagos', source: 'Wikipedia, “Orhogbua”' },
+    ],
+    kind: 'monument', classId: 'war-camp',
+    custody: [
+      { role: 'founded by', personId: 'orhogbua', date: 'c. 1550', where: 'Lagos Island', sources: [{ kind: 'secondary', reference: 'Wikipedia, “Orhogbua” & “History of Lagos”' }], note: 'Established as a military camp during Benin’s westward campaigns; Orhogbua installed a local authority answerable to Benin.' },
+      { role: 'grew into the town of', externalRef: { name: 'Lagos (Benin suzerainty persisting into the colonial era)', tradition: 'modern' }, date: '16th–19th c.', sources: [{ kind: 'secondary', reference: 'History of Lagos' }] },
+    ],
+    location: 'In situ as the historical core of Lagos Island, Lagos State, Nigeria (foundation tradition)',
+    sources: [
+      { kind: 'secondary', reference: 'Wikipedia, “Orhogbua” & “History of Lagos”' },
+      { kind: 'secondary', reference: 'J. Egharevba, A Short History of Benin (the Ashipa tradition)' },
+    ],
+    lore: 'The Benin war camp of “Eko,” founded on Lagos Island by Oba Orhogbua in the 16th century during the kingdom’s campaigns to its west — the seed of the city of Lagos, which kept its Edo name and a tie to Benin for centuries. The tradition rests on oral history and is contested by some Awori accounts.',
+  },
+  'opa-oranmiyan': {
+    names: [
+      { value: 'Ọ̀pá Ọ̀rànmíyàn', script: 'Yoruba', tradition: 'Yoruba', rom: 'Opa Oranmiyan', note: '“Staff of Oranmiyan” — a tall granite monolith at Ile-Ife', source: 'oonirisa.org' },
+    ],
+    kind: 'monument', classId: 'standing-monolith',
+    custody: [
+      { role: 'traditionally raised for', personId: 'oranmiyan', date: 'c. 1300 (traditional; disputed)', where: 'Ile-Ife', sources: [{ kind: 'secondary', reference: 'Smithsonian, Anacostia Community Museum archive' }], note: 'A granite shaft (~5.5 m) studded with iron pegs, said to mark where Oranmiyan died; archaeology may place it earlier in classical Ife.' },
+    ],
+    location: 'In situ, Ile-Ife, Osun State, Nigeria',
+    sources: [
+      { kind: 'secondary', reference: 'oonirisa.org (Ooni of Ife), “The Oranmiyan Sword & Staff”' },
+      { kind: 'secondary', reference: 'Smithsonian, Anacostia Community Museum archive (“Granite Monolith… Opa Oranmiyan, Ife 1951”)' },
+    ],
+    lore: 'A tall granite monolith standing at Ile-Ife, the Yoruba cradle, honoured as the “Staff of Oranmiyan” — the warrior-prince who founded the Oyo dynasty and is bound up with the Ife and Benin royal lines. Studded with iron pegs, its true date is debated and may predate the hero himself.',
+  },
+  'oshe-shango': {
+    names: [
+      { value: 'Ọ̀ṣẹ́ Ṣàngó', script: 'Yoruba', tradition: 'Yoruba', rom: 'oshe Shango', note: 'the double-headed-axe dance wand of Shango', source: 'Brooklyn Museum; Smarthistory' },
+    ],
+    kind: 'ritual-object', classId: 'dance-wand',
+    maker: { name: 'Yoruba carvers (often a kneeling devotee surmounted by a double axe)', role: 'carved by' },
+    custody: [
+      { role: 'borne by devotees of', personId: 'shango', date: '19th–20th c. (the form is older)', where: 'Yorubaland', sources: [{ kind: 'secondary', reference: 'Smarthistory, “Oshe Shango”' }], note: 'The twin blades stand for the Neolithic “thunderstones” (edun ara) the god is believed to hurl.' },
+      { role: 'examples now in', externalRef: { name: 'the Brooklyn Museum, the Met, Detroit, the Sainsbury Centre, and shrines in Yorubaland', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Brooklyn Museum, object 105029' }] },
+    ],
+    location: 'Object-type; examples in many museums (e.g. Brooklyn Museum 105029) and on shrines in Yorubaland',
+    sources: [
+      { kind: 'secondary', reference: 'Brooklyn Museum, “Dance Wand (Oshe Shango),” object 105029' },
+      { kind: 'secondary', reference: 'Smarthistory, “Oshe Shango (Yoruba)”' },
+    ],
+    lore: 'The dance wand of Shango — the deified Oyo king of thunder — carried by his devotees in worship, its shaft rising into a double-headed axe. The twin blades echo the prehistoric stone celts (“thunderstones”) the Yoruba believe Shango hurls from the sky.',
+  },
+
+  // ═══ Aztec (Mexica) & Shilluk ════════════════════════════════════════════
+  'wind-jewel-ehecacozcatl': {
+    names: [
+      { value: 'ehēcacōzcatl', script: 'Nahuatl', tradition: 'Aztec/Mexica', rom: 'ehecacozcatl', note: '“wind jewel” (ehēcatl “wind” + cōzcatl “jewel”) — a cut-conch pectoral', source: 'Penn Museum, Expedition Magazine' },
+    ],
+    kind: 'symbol', classId: 'pectoral-insignia',
+    maker: { name: 'Mexica shell-workers (cross-section of a marine conch)', role: 'cut by' },
+    custody: [
+      { role: 'defining insignia of', personId: 'topiltzin', date: 'Postclassic', sources: [{ kind: 'secondary', reference: 'World History Encyclopedia, “Ehecatl”' }], note: 'The wind jewel is the badge of Ehecatl-Quetzalcoatl; the high priests who bore the title Quetzalcoatl wore it.' },
+      { role: 'examples now in', externalRef: { name: 'the Museo Nacional de Antropología, Mexico City', tradition: 'modern' }, sources: [{ kind: 'secondary', reference: 'Mesoweb, “Sectioned shell pectoral (Ehecacozcatl)”' }] },
+    ],
+    location: 'Object-type; surviving examples e.g. in the Museo Nacional de Antropología, Mexico City',
+    sources: [
+      { kind: 'secondary', reference: 'Penn Museum, Expedition Magazine, “The Wind God’s Breastplate”' },
+      { kind: 'secondary', reference: 'World History Encyclopedia, “Ehecatl”' },
+    ],
+    lore: 'The “wind jewel” — a pectoral cut as a cross-section of a conch shell, the defining badge of Ehecatl, the wind-aspect of Quetzalcoatl. Its spiral form is the wind god’s emblem, worn by the priests who took his name.',
+  },
+  'jade-mask-of-quetzalcoatl': {
+    names: [
+      { value: 'Jade mask of Quetzalcoatl (not securely attested)', script: 'Latin', tradition: 'Aztec/Mexica' },
+    ],
+    kind: 'ritual-object', classId: 'mask',
+    location: 'No discrete object; see the related turquoise serpent mask, British Museum (Am1987,Q.3)',
+    sources: [
+      { kind: 'secondary', reference: 'Smarthistory, “Serpent mask of Quetzalcoatl or Tlaloc” (British Museum — turquoise mosaic on cedrela wood, NOT jade)' },
+      { kind: 'secondary', reference: 'World History Encyclopedia, “Jade in Mesoamerica”' },
+    ],
+    lore: 'Listed in this registry as a “jade mask of Quetzalcoatl,” but no such discrete object is securely attested. The famous “Quetzalcoatl” mask in the British Museum is turquoise mosaic on wood, not jade; jade/greenstone masks linked to the god (e.g. a reused Teotihuacan mask deposited at the Templo Mayor) are speculative attributions. Recorded here with that caveat rather than as a fabricated artifact.',
+  },
+  'fashoda-pachodo-royal-capital': {
+    names: [
+      { value: 'Pachod', script: 'Shilluk', tradition: 'Shilluk', rom: 'Pachodo', note: 'the Shilluk royal-ritual capital (a folk etymology glosses it “the two hornless bulls”)', source: 'Shilluk tradition' },
+      { value: 'Fashoda', script: 'Latin', tradition: 'Shilluk', note: 'colonial-era name; modern Kodok' },
+    ],
+    kind: 'monument', classId: 'royal-capital',
+    custody: [
+      { role: 'seat of the reth (sacral king), embodying', externalRef: { name: 'Nyikang, the founder culture-hero', tradition: 'Shilluk' }, date: 'from c. late 15th c.', where: 'the west bank of the White Nile', sources: [{ kind: 'secondary', reference: 'E. E. Evans-Pritchard, “The Divine Kingship of the Shilluk” (1948)' }], note: 'Successive reths, such as Tugo, are held to incarnate the spirit of Nyikang.' },
+      { role: 'royal capital held by', personId: 'shilluk_tugo', date: 'precolonial', where: 'Fashoda / Pachod', sources: [{ kind: 'secondary', reference: 'Encyclopedia.com, “Shilluk”' }] },
+    ],
+    location: 'In situ — Kodok (formerly Fashoda), Upper Nile State, South Sudan',
+    sources: [
+      { kind: 'secondary', reference: 'E. E. Evans-Pritchard, “The Divine Kingship of the Shilluk of the Nilotic Sudan” (Frazer Lecture, 1948)' },
+      { kind: 'secondary', reference: 'Encyclopedia.com, “Shilluk”; Wikipedia, “Kodok”' },
+    ],
+    lore: 'Fashoda (Shilluk Pachod, modern Kodok) on the White Nile — the royal-ritual seat of the reth, the Shilluk sacral king who is held to embody the spirit of the founder-hero Nyikang. Famous abroad for the 1898 Fashoda Incident, it is to the Shilluk the centre of divine kingship that Evans-Pritchard made a classic of anthropology.',
+  },
 };
 
 // Title-case a kebab/snake item id into a readable fallback label.
@@ -29294,6 +30525,7 @@ const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
     if (L.kind) it.kind = L.kind;
     for (const c of (L.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
     for (const s of (L.maker?.sources || [])) it.sources.push(s);
+    for (const s of (L.sources || [])) it.sources.push(s);
   }
   for (const it of Object.values(items)) {
     if (!it.names.length) it.names = [{ value: titleCaseId(it.id), script: 'Latin' }];
@@ -33890,8 +35122,11 @@ function itemKindRank(kind) {
   return 50; // any other named kind, between
 }
 const humanizeItem = s => String(s || '').replace(/[-_]+/g, ' ');
-// A non-Latin script renders its glyphs large (runic, Greek, Devanagari…).
-const isGlyphScript = script => !!script && !/latin/i.test(script);
+// A genuinely non-Latin script renders its glyphs large (runic, Greek, kanji…).
+// Romanizations/transliterations (Egyptological, Sumerian, Yoruba, Old Norse)
+// stay at normal size.
+const GLYPH_SCRIPTS = /greek|runic|futhark|cuneiform|kanji|kana|japanese|hierogl|devanagari|hebrew|arabic|chinese|hanzi|brahmi/i;
+const isGlyphScript = script => !!script && GLYPH_SCRIPTS.test(script);
 
 // Index-row badge: a custody chain beats a plain holder count.
 function itemBadge(it) {

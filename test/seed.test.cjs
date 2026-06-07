@@ -160,6 +160,31 @@ test('Mjǫllnir carries its multi-script names (incl. the runic form) and maker'
   assert.ok(mj.holders.some((h) => h.personId === 'norse_thor'), 'Thor should be a holder of Mjǫllnir');
 });
 
+test('every item in the registry carries cited lore and resolvable custody', () => {
+  const items = ctx.window.__PR.items;
+  const ids = Object.keys(items);
+  assert.ok(ids.length >= 78, `expected the full object corpus, got ${ids.length}`);
+  for (const it of Object.values(items)) {
+    assert.ok(it.lore && it.lore.length > 20, `item ${it.id} is missing authored lore`);
+    assert.ok(it.names.length >= 1 && it.names[0].value, `item ${it.id} is missing a name`);
+    assert.ok(it.sources.length >= 1, `item ${it.id} has no citations`);
+    // Every custody step that names a registry figure must resolve to one.
+    for (const c of (it.custody || [])) {
+      if (c.personId) {
+        assert.ok(people[c.personId], `item ${it.id} custody links unknown figure ${c.personId}`);
+      }
+    }
+  }
+});
+
+test('historical artifacts carry provenance custody to a current location (Shabaka Stone)', () => {
+  const stone = ctx.window.__PR.items['shabaka-stone'];
+  assert.ok(stone, 'shabaka-stone missing');
+  assert.match(stone.location, /British Museum/, 'expected a current museum location');
+  assert.ok(stone.custody.some((c) => c.personId === 'shabaka'), 'commissioner Shabaka should anchor the chain');
+  assert.match(JSON.stringify(stone.custody), /Earl Spencer|1805/, 'expected the find/donation history');
+});
+
 test('Heracles\' bow has a real custody chain (Heracles → Poeas → Philoctetes)', () => {
   const bow = ctx.window.__PR.items['heracles-bow'];
   assert.ok(bow, 'heracles-bow item missing');

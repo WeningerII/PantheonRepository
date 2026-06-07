@@ -36,8 +36,11 @@ function itemKindRank(kind) {
 }
 
 const humanizeItem = (s) => String(s || '').replace(/[-_]+/g, ' ');
-// A non-Latin script renders its glyphs large (runic, Greek, Devanagari…).
-const isGlyphScript = (script) => !!script && !/latin/i.test(script);
+// A genuinely non-Latin script renders its glyphs large (runic, Greek, kanji…).
+// Romanizations/transliterations (Egyptological, Sumerian, Yoruba, Old Norse)
+// stay at normal size.
+const GLYPH_SCRIPTS = /greek|runic|futhark|cuneiform|kanji|kana|japanese|hierogl|devanagari|hebrew|arabic|chinese|hanzi|brahmi/i;
+const isGlyphScript = (script) => !!script && GLYPH_SCRIPTS.test(script);
 
 // Index-row badge: a custody chain beats a plain holder count.
 function itemBadge(it) {
