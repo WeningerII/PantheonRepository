@@ -81,4 +81,13 @@ describe('app renders in a browser-like environment', () => {
     assert.ok(count >= 10, `expected the dense figure's many stages, got ${count}`);
     assert.ok(gap >= 24, `dense lifecycle overlaps: min gap ${Math.round(gap)}px < 24px node size`);
   });
+
+  test('detail surfaces the divinity descent breakdown', async () => {
+    await app.openFigure('greek_apollod_heracles');
+    const descent = app.document.querySelector('.section-descent');
+    assert.ok(descent, 'Descent section did not render');
+    assert.match(descent.textContent, /9⁄16/, 'expected the 9/16 fraction to be shown');
+    assert.match(descent.textContent, /by descent/);
+    assert.ok(descent.querySelectorAll('.descent-parent').length >= 2, 'expected per-parent contribution rows');
+  });
 });

@@ -1522,6 +1522,72 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   color: var(--mute);
 }
 
+/* ── Descent (computed divinity fraction + tradition mix) ──────────────── */
+
+.descent-divinity { display: flex; flex-direction: column; gap: 8px; }
+.descent-headline { display: flex; align-items: baseline; gap: 10px; }
+.descent-frac {
+  font: 500 22px/1 var(--font-serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.descent-tier {
+  font: 400 9.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.descent-math {
+  display: flex; flex-direction: column; gap: 3px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+}
+.descent-parent { display: flex; align-items: baseline; gap: 10px; }
+.descent-parent-frac {
+  flex-shrink: 0; width: 40px; text-align: right;
+  font: 500 12px/1.4 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2, var(--ink));
+}
+.descent-parent-name { font: 400 14px/1.4 var(--font-serif); color: var(--ink); }
+.descent-parent-name.link { cursor: pointer; }
+.descent-parent-name.link:hover { color: var(--accent); }
+.descent-refresh { font: italic 400 11px/1.4 var(--font-serif); color: var(--accent); }
+.descent-formula {
+  margin-top: 4px; padding-top: 6px;
+  border-top: 1px solid var(--rule-2);
+  font: 400 12.5px/1.5 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--mute);
+}
+.descent-formula strong { color: var(--ink); font-weight: 600; }
+.descent-note { font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
+.descent-drift { font-style: normal; color: var(--accent); }
+.descent-mix {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px;
+  margin-top: 10px;
+}
+.descent-mix-label {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.descent-mix-items { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.descent-mix-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 400 13px/1.3 var(--font-serif);
+  color: var(--ink);
+}
+.descent-mix-frac {
+  font: 500 12px/1.3 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--mute);
+}
+
 /* ── Command palette ───────────────────────────────────────────────────── */
 
 .cmdk-back {

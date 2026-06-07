@@ -25682,6 +25682,96 @@ const classifyDivinity = (person, peopleMap) => {
   return 'scion';
 };
 
+// ─── Surfaced derived layer: fraction formatting + descent breakdown ────────
+// These exist so the detail panel can show the genealogical math the tier
+// system is built on, instead of an opaque icon.
+const COMMON_FRACTIONS = [
+  [1, '1'], [0, '0'], [0.5, '½'], [0.25, '¼'], [0.75, '¾'],
+  [0.125, '⅛'], [0.375, '⅜'], [0.625, '⅝'], [0.875, '⅞'],
+  [1 / 3, '⅓'], [2 / 3, '⅔'],
+];
+const formatFraction = (f) => {
+  if (f === null || f === undefined) return '—';
+  for (const [val, sym] of COMMON_FRACTIONS) if (Math.abs(f - val) < 1e-9) return sym;
+  // Divinity fractions are dyadic rationals — render as a reduced n⁄d.
+  for (let den = 16; den <= 1024; den *= 2) {
+    const x = f * den;
+    if (Math.abs(x - Math.round(x)) < 1e-9) {
+      const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+      let num = Math.round(x), d = den;
+      const k = gcd(num, d) || 1;
+      return `${num / k}⁄${d / k}`;
+    }
+  }
+  return f.toFixed(3);
+};
+
+// The genealogical fraction, the tier it implies, and the per-parent
+// contributions that produced it — making "dilution, with a refresh when a god
+// re-enters the line" legible. A mythographic override (e.g. Gilgamesh's epic
+// ⅔) is reported separately, since the tier follows genealogy, not assertion.
+const divinityBreakdown = (id, peopleMap) => {
+  const person = peopleMap[id];
+  if (!person) return null;
+  const authoredType = person.type || null;
+  const tier = classifyDivinity(person, peopleMap);
+  const fraction = divinityFraction(id, peopleMap, { ignoreOverride: true });
+  const ov = (person.variants || []).find(
+    (v) => v.claim === 'divinityFraction' && typeof v.divinityFraction === 'number');
+
+  let basis = 'type-fallback';
+  let contributions = [];
+  let denom = null;
+  if (authoredType === 'deity') basis = 'axiom-deity';
+  else if (authoredType === 'mortal') basis = 'axiom-mortal';
+  else {
+    const seeded = (person.parentIds || []).filter((pid) => peopleMap[pid]);
+    if (seeded.length) {
+      basis = 'genealogy';
+      denom = Math.max(2, seeded.length);
+      contributions = seeded.map((pid) => ({
+        id: pid,
+        type: peopleMap[pid].type || null,
+        fraction: divinityFraction(pid, peopleMap, { forChild: id, ignoreOverride: true }),
+      }));
+    }
+  }
+  return {
+    fraction, tier, authoredType, basis, denom, contributions,
+    override: ov ? ov.divinityFraction : null,
+    drift: (tier && authoredType && tier !== authoredType) ? { authored: authoredType, computed: tier } : null,
+  };
+};
+
+// ─── Tradition mix (cultural-genetic descent) ──────────────────────────────
+// Each parent slot contributes half its tradition fractions to the child;
+// leaf ancestors contribute their own tradition. Surfaces the cultural makeup
+// of cross-tradition figures whose parents come from different cultures.
+const getPrimaryTradition = (person) => person?.primaryTradition || person?.tradition || null;
+const traditionFractions = (personId, peopleMap, visited = new Set()) => {
+  if (visited.has(personId)) return {};
+  const person = peopleMap[personId];
+  if (!person) return {};
+  const trad = getPrimaryTradition(person);
+  const parentIds = person.parentIds || [];
+  if (parentIds.length === 0) return trad ? { [trad]: 1.0 } : {};
+  const nextVisited = new Set(visited); nextVisited.add(personId);
+  const slotCount = Math.max(2, parentIds.length);
+  const result = {};
+  parentIds.forEach((pid) => {
+    const parent = peopleMap[pid];
+    if (parent) {
+      const pf = traditionFractions(pid, peopleMap, nextVisited);
+      Object.entries(pf).forEach(([t, share]) => { result[t] = (result[t] || 0) + share / slotCount; });
+    } else if (trad) {
+      result[trad] = (result[trad] || 0) + 1.0 / slotCount;
+    }
+  });
+  const emptySlots = slotCount - parentIds.length;
+  if (emptySlots > 0 && trad) result[trad] = (result[trad] || 0) + emptySlots / slotCount;
+  return result;
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -27567,6 +27657,19 @@ window.__PR = {
 // Build + migrate seed data.
 const seedPeople = migrate(buildPeopleSeed());
 const seedAtlas  = buildTerritorySeed();
+
+// Pre-compute the derived layer the UI surfaces (divinity descent + tradition
+// mix) here, where the full id→person map exists. Exposed on __PR in memory
+// (rebuilt every load) — no change to the persisted seed shape. Tradition mix
+// is kept only when a figure is genuinely multi-tradition.
+const divinity = {};
+const traditionMix = {};
+for (const pid of Object.keys(seedPeople)) {
+  divinity[pid] = divinityBreakdown(pid, seedPeople);
+  const mix = traditionFractions(pid, seedPeople);
+  if (Object.keys(mix).length > 1) traditionMix[pid] = mix;
+}
+Object.assign(window.__PR, { divinity, traditionMix, formatFraction });
 
 // Persist constants for the cached warm-path readers.
 try {

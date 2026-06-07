@@ -90,6 +90,85 @@ function Parentage({ entry, byId, onOpen }) {
   );
 }
 
+// Descent — surfaces the computed divinity fraction and the per-parent math
+// behind it (the dilution, and the "refresh" when a fully-divine parent
+// re-enters the line), plus the cultural tradition mix for cross-tradition
+// figures. All computed in data.js and read off window.__PR.
+function Descent({ entry, byId, onOpen }) {
+  const info = window.divinityInfo?.(entry);
+  const mix = window.traditionMix?.(entry);
+  if (!info && !mix) return null;
+  const fmt = window.fmtFraction;
+  const tierLabel = (t) => window.TYPE_TIER[t]?.label || t;
+
+  return (
+    <div className="section section-descent">
+      <h2>Descent</h2>
+
+      {info && (
+        <div className="descent-divinity">
+          <div className="descent-headline">
+            <window.TierIcon type={info.tier} size={16} />
+            <span className="descent-frac">{fmt(info.fraction)}</span>
+            <span className="descent-tier">{tierLabel(info.tier)} by descent</span>
+          </div>
+
+          {info.basis === 'genealogy' && info.contributions.length > 0 && (
+            <div className="descent-math">
+              {info.contributions.map((c) => {
+                const p = byId.get(c.id);
+                const refresh = c.fraction >= 1 - 1e-9;
+                return (
+                  <div className="descent-parent" key={c.id}>
+                    <span className="descent-parent-frac">{fmt(c.fraction)}</span>
+                    <span
+                      className={'descent-parent-name' + (p ? ' link' : '')}
+                      onClick={p ? () => onOpen(c.id) : null}
+                    >{p ? window.displayName(p) : c.id}</span>
+                    {refresh && <span className="descent-refresh">refreshes the line</span>}
+                  </div>
+                );
+              })}
+              <div className="descent-formula">
+                ({info.contributions.map((c) => fmt(c.fraction)).join(' + ')}) ÷ {info.denom} ={' '}
+                <strong>{fmt(info.fraction)}</strong>
+              </div>
+            </div>
+          )}
+
+          {info.basis === 'axiom-deity' && <div className="descent-note">Fully divine by definition.</div>}
+          {info.basis === 'axiom-mortal' && <div className="descent-note">Wholly mortal by definition.</div>}
+          {info.basis === 'type-fallback' && <div className="descent-note">Fraction inferred from tier; no seeded ancestry.</div>}
+          {info.override != null && Math.abs(info.override - info.fraction) > 1e-9 && (
+            <div className="descent-note">
+              Mythography asserts <strong>{fmt(info.override)}</strong> — the tier follows genealogy, not the assertion.
+            </div>
+          )}
+          {info.drift && (
+            <div className="descent-note descent-drift">
+              Authored as {info.drift.authored}; genealogy computes {info.drift.computed}.
+            </div>
+          )}
+        </div>
+      )}
+
+      {mix && (
+        <div className="descent-mix">
+          <span className="descent-mix-label">Tradition mix</span>
+          <span className="descent-mix-items">
+            {Object.entries(mix).sort((a, b) => b[1] - a[1]).map(([t, frac]) => (
+              <span className="descent-mix-item" key={t}>
+                <span className="trad-dot" style={{ background: window.colorForTradition(t) }} aria-hidden="true" />
+                {t} <span className="descent-mix-frac">{fmt(frac)}</span>
+              </span>
+            ))}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Relations({ entry, byId, onOpen }) {
   const rels = entry.relations || [];
   const grouped = __dMemo(() => {
@@ -455,6 +534,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
             />
           )}
           {window.Lifecycle && <window.Lifecycle entry={entry} />}
+          <Descent entry={entry} byId={byId} onOpen={onOpen} />
           {entry.relations?.length > 0 && <Chapter label="Network" />}
           <Relations entry={entry} byId={byId} onOpen={onOpen} />
 

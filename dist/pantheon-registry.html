@@ -1594,6 +1594,72 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   color: var(--mute);
 }
 
+/* ── Descent (computed divinity fraction + tradition mix) ──────────────── */
+
+.descent-divinity { display: flex; flex-direction: column; gap: 8px; }
+.descent-headline { display: flex; align-items: baseline; gap: 10px; }
+.descent-frac {
+  font: 500 22px/1 var(--font-serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.descent-tier {
+  font: 400 9.5px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.descent-math {
+  display: flex; flex-direction: column; gap: 3px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+}
+.descent-parent { display: flex; align-items: baseline; gap: 10px; }
+.descent-parent-frac {
+  flex-shrink: 0; width: 40px; text-align: right;
+  font: 500 12px/1.4 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2, var(--ink));
+}
+.descent-parent-name { font: 400 14px/1.4 var(--font-serif); color: var(--ink); }
+.descent-parent-name.link { cursor: pointer; }
+.descent-parent-name.link:hover { color: var(--accent); }
+.descent-refresh { font: italic 400 11px/1.4 var(--font-serif); color: var(--accent); }
+.descent-formula {
+  margin-top: 4px; padding-top: 6px;
+  border-top: 1px solid var(--rule-2);
+  font: 400 12.5px/1.5 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--mute);
+}
+.descent-formula strong { color: var(--ink); font-weight: 600; }
+.descent-note { font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
+.descent-drift { font-style: normal; color: var(--accent); }
+.descent-mix {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px;
+  margin-top: 10px;
+}
+.descent-mix-label {
+  font: 500 9.5px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.descent-mix-items { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.descent-mix-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 400 13px/1.3 var(--font-serif);
+  color: var(--ink);
+}
+.descent-mix-frac {
+  font: 500 12px/1.3 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--mute);
+}
+
 /* ── Command palette ───────────────────────────────────────────────────── */
 
 .cmdk-back {
@@ -28686,6 +28752,96 @@ const classifyDivinity = (person, peopleMap) => {
   return 'scion';
 };
 
+// ─── Surfaced derived layer: fraction formatting + descent breakdown ────────
+// These exist so the detail panel can show the genealogical math the tier
+// system is built on, instead of an opaque icon.
+const COMMON_FRACTIONS = [
+  [1, '1'], [0, '0'], [0.5, '½'], [0.25, '¼'], [0.75, '¾'],
+  [0.125, '⅛'], [0.375, '⅜'], [0.625, '⅝'], [0.875, '⅞'],
+  [1 / 3, '⅓'], [2 / 3, '⅔'],
+];
+const formatFraction = (f) => {
+  if (f === null || f === undefined) return '—';
+  for (const [val, sym] of COMMON_FRACTIONS) if (Math.abs(f - val) < 1e-9) return sym;
+  // Divinity fractions are dyadic rationals — render as a reduced n⁄d.
+  for (let den = 16; den <= 1024; den *= 2) {
+    const x = f * den;
+    if (Math.abs(x - Math.round(x)) < 1e-9) {
+      const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+      let num = Math.round(x), d = den;
+      const k = gcd(num, d) || 1;
+      return `${num / k}⁄${d / k}`;
+    }
+  }
+  return f.toFixed(3);
+};
+
+// The genealogical fraction, the tier it implies, and the per-parent
+// contributions that produced it — making "dilution, with a refresh when a god
+// re-enters the line" legible. A mythographic override (e.g. Gilgamesh's epic
+// ⅔) is reported separately, since the tier follows genealogy, not assertion.
+const divinityBreakdown = (id, peopleMap) => {
+  const person = peopleMap[id];
+  if (!person) return null;
+  const authoredType = person.type || null;
+  const tier = classifyDivinity(person, peopleMap);
+  const fraction = divinityFraction(id, peopleMap, { ignoreOverride: true });
+  const ov = (person.variants || []).find(
+    (v) => v.claim === 'divinityFraction' && typeof v.divinityFraction === 'number');
+
+  let basis = 'type-fallback';
+  let contributions = [];
+  let denom = null;
+  if (authoredType === 'deity') basis = 'axiom-deity';
+  else if (authoredType === 'mortal') basis = 'axiom-mortal';
+  else {
+    const seeded = (person.parentIds || []).filter((pid) => peopleMap[pid]);
+    if (seeded.length) {
+      basis = 'genealogy';
+      denom = Math.max(2, seeded.length);
+      contributions = seeded.map((pid) => ({
+        id: pid,
+        type: peopleMap[pid].type || null,
+        fraction: divinityFraction(pid, peopleMap, { forChild: id, ignoreOverride: true }),
+      }));
+    }
+  }
+  return {
+    fraction, tier, authoredType, basis, denom, contributions,
+    override: ov ? ov.divinityFraction : null,
+    drift: (tier && authoredType && tier !== authoredType) ? { authored: authoredType, computed: tier } : null,
+  };
+};
+
+// ─── Tradition mix (cultural-genetic descent) ──────────────────────────────
+// Each parent slot contributes half its tradition fractions to the child;
+// leaf ancestors contribute their own tradition. Surfaces the cultural makeup
+// of cross-tradition figures whose parents come from different cultures.
+const getPrimaryTradition = (person) => person?.primaryTradition || person?.tradition || null;
+const traditionFractions = (personId, peopleMap, visited = new Set()) => {
+  if (visited.has(personId)) return {};
+  const person = peopleMap[personId];
+  if (!person) return {};
+  const trad = getPrimaryTradition(person);
+  const parentIds = person.parentIds || [];
+  if (parentIds.length === 0) return trad ? { [trad]: 1.0 } : {};
+  const nextVisited = new Set(visited); nextVisited.add(personId);
+  const slotCount = Math.max(2, parentIds.length);
+  const result = {};
+  parentIds.forEach((pid) => {
+    const parent = peopleMap[pid];
+    if (parent) {
+      const pf = traditionFractions(pid, peopleMap, nextVisited);
+      Object.entries(pf).forEach(([t, share]) => { result[t] = (result[t] || 0) + share / slotCount; });
+    } else if (trad) {
+      result[trad] = (result[trad] || 0) + 1.0 / slotCount;
+    }
+  });
+  const emptySlots = slotCount - parentIds.length;
+  if (emptySlots > 0 && trad) result[trad] = (result[trad] || 0) + emptySlots / slotCount;
+  return result;
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -30572,6 +30728,19 @@ window.__PR = {
 const seedPeople = migrate(buildPeopleSeed());
 const seedAtlas  = buildTerritorySeed();
 
+// Pre-compute the derived layer the UI surfaces (divinity descent + tradition
+// mix) here, where the full id→person map exists. Exposed on __PR in memory
+// (rebuilt every load) — no change to the persisted seed shape. Tradition mix
+// is kept only when a figure is genuinely multi-tradition.
+const divinity = {};
+const traditionMix = {};
+for (const pid of Object.keys(seedPeople)) {
+  divinity[pid] = divinityBreakdown(pid, seedPeople);
+  const mix = traditionFractions(pid, seedPeople);
+  if (Object.keys(mix).length > 1) traditionMix[pid] = mix;
+}
+Object.assign(window.__PR, { divinity, traditionMix, formatFraction });
+
 // Persist constants for the cached warm-path readers.
 try {
   localStorage.setItem('pantheon_constants_v1', JSON.stringify({
@@ -31273,6 +31442,31 @@ function useSelection(filtered) {
   };
 }
 
+// ── Derived-layer accessors ────────────────────────────────────────────────
+// data.js pre-computes the divinity descent + tradition mix onto window.__PR
+// (in memory). These thin, null-safe readers expose them to the detail panel.
+function divinityInfo(entry) {
+  try {
+    return entry && window.__PR?.divinity?.[entry.id] || null;
+  } catch (_) {
+    return null;
+  }
+}
+function traditionMix(entry) {
+  try {
+    return entry && window.__PR?.traditionMix?.[entry.id] || null;
+  } catch (_) {
+    return null;
+  }
+}
+function fmtFraction(f) {
+  try {
+    return window.__PR?.formatFraction ? window.__PR.formatFraction(f) : f == null ? '—' : String(f);
+  } catch (_) {
+    return f == null ? '—' : String(f);
+  }
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER,
@@ -31294,7 +31488,10 @@ Object.assign(window, {
   formatYearSigned,
   formatYearRangeSigned,
   hydrateConstants,
-  hasSeededPeople
+  hasSeededPeople,
+  divinityInfo,
+  traditionMix,
+  fmtFraction
 });
 </script>
 <!-- Browse.jsx (pre-transformed) -->
@@ -32490,6 +32687,81 @@ function Parentage({
     }, pid)));
   })));
 }
+
+// Descent — surfaces the computed divinity fraction and the per-parent math
+// behind it (the dilution, and the "refresh" when a fully-divine parent
+// re-enters the line), plus the cultural tradition mix for cross-tradition
+// figures. All computed in data.js and read off window.__PR.
+function Descent({
+  entry,
+  byId,
+  onOpen
+}) {
+  const info = window.divinityInfo?.(entry);
+  const mix = window.traditionMix?.(entry);
+  if (!info && !mix) return null;
+  const fmt = window.fmtFraction;
+  const tierLabel = t => window.TYPE_TIER[t]?.label || t;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-descent"
+  }, /*#__PURE__*/React.createElement("h2", null, "Descent"), info && /*#__PURE__*/React.createElement("div", {
+    className: "descent-divinity"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "descent-headline"
+  }, /*#__PURE__*/React.createElement(window.TierIcon, {
+    type: info.tier,
+    size: 16
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "descent-frac"
+  }, fmt(info.fraction)), /*#__PURE__*/React.createElement("span", {
+    className: "descent-tier"
+  }, tierLabel(info.tier), " by descent")), info.basis === 'genealogy' && info.contributions.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "descent-math"
+  }, info.contributions.map(c => {
+    const p = byId.get(c.id);
+    const refresh = c.fraction >= 1 - 1e-9;
+    return /*#__PURE__*/React.createElement("div", {
+      className: "descent-parent",
+      key: c.id
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "descent-parent-frac"
+    }, fmt(c.fraction)), /*#__PURE__*/React.createElement("span", {
+      className: 'descent-parent-name' + (p ? ' link' : ''),
+      onClick: p ? () => onOpen(c.id) : null
+    }, p ? window.displayName(p) : c.id), refresh && /*#__PURE__*/React.createElement("span", {
+      className: "descent-refresh"
+    }, "refreshes the line"));
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "descent-formula"
+  }, "(", info.contributions.map(c => fmt(c.fraction)).join(' + '), ") \xF7 ", info.denom, " =", ' ', /*#__PURE__*/React.createElement("strong", null, fmt(info.fraction)))), info.basis === 'axiom-deity' && /*#__PURE__*/React.createElement("div", {
+    className: "descent-note"
+  }, "Fully divine by definition."), info.basis === 'axiom-mortal' && /*#__PURE__*/React.createElement("div", {
+    className: "descent-note"
+  }, "Wholly mortal by definition."), info.basis === 'type-fallback' && /*#__PURE__*/React.createElement("div", {
+    className: "descent-note"
+  }, "Fraction inferred from tier; no seeded ancestry."), info.override != null && Math.abs(info.override - info.fraction) > 1e-9 && /*#__PURE__*/React.createElement("div", {
+    className: "descent-note"
+  }, "Mythography asserts ", /*#__PURE__*/React.createElement("strong", null, fmt(info.override)), " \u2014 the tier follows genealogy, not the assertion."), info.drift && /*#__PURE__*/React.createElement("div", {
+    className: "descent-note descent-drift"
+  }, "Authored as ", info.drift.authored, "; genealogy computes ", info.drift.computed, ".")), mix && /*#__PURE__*/React.createElement("div", {
+    className: "descent-mix"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "descent-mix-label"
+  }, "Tradition mix"), /*#__PURE__*/React.createElement("span", {
+    className: "descent-mix-items"
+  }, Object.entries(mix).sort((a, b) => b[1] - a[1]).map(([t, frac]) => /*#__PURE__*/React.createElement("span", {
+    className: "descent-mix-item",
+    key: t
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "trad-dot",
+    style: {
+      background: window.colorForTradition(t)
+    },
+    "aria-hidden": "true"
+  }), t, " ", /*#__PURE__*/React.createElement("span", {
+    className: "descent-mix-frac"
+  }, fmt(frac)))))));
+}
 function Relations({
   entry,
   byId,
@@ -32857,6 +33129,10 @@ function Detail({
     onPick: onOpen
   }), window.Lifecycle && /*#__PURE__*/React.createElement(window.Lifecycle, {
     entry: entry
+  }), /*#__PURE__*/React.createElement(Descent, {
+    entry: entry,
+    byId: byId,
+    onOpen: onOpen
   }), entry.relations?.length > 0 && /*#__PURE__*/React.createElement(Chapter, {
     label: "Network"
   }), /*#__PURE__*/React.createElement(Relations, {

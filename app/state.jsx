@@ -571,6 +571,20 @@ function useSelection(filtered) {
   return { selectedId, setSelectedId, cursorIdx, setCursorIdx, moveCursor, open };
 }
 
+// ── Derived-layer accessors ────────────────────────────────────────────────
+// data.js pre-computes the divinity descent + tradition mix onto window.__PR
+// (in memory). These thin, null-safe readers expose them to the detail panel.
+function divinityInfo(entry) {
+  try { return (entry && window.__PR?.divinity?.[entry.id]) || null; } catch (_) { return null; }
+}
+function traditionMix(entry) {
+  try { return (entry && window.__PR?.traditionMix?.[entry.id]) || null; } catch (_) { return null; }
+}
+function fmtFraction(f) {
+  try { return window.__PR?.formatFraction ? window.__PR.formatFraction(f) : (f == null ? '—' : String(f)); }
+  catch (_) { return f == null ? '—' : String(f); }
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
@@ -583,4 +597,5 @@ Object.assign(window, {
   colorForTradition,
   parsePeriod, formatYearSigned, formatYearRangeSigned,
   hydrateConstants, hasSeededPeople,
+  divinityInfo, traditionMix, fmtFraction,
 });

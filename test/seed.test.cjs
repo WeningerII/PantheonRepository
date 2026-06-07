@@ -81,3 +81,24 @@ test('getEntryDates resolves a known entry to the documented shape', () => {
     assert.ok(k in d, `getEntryDates result missing ${k}`);
   }
 });
+
+test('exposes the divinity descent breakdown (Heracles = 9/16, demigod)', () => {
+  const div = ctx.window.__PR.divinity;
+  assert.ok(div, '__PR.divinity not exposed');
+  const h = div['greek_apollod_heracles'];
+  assert.ok(h, 'heracles breakdown missing');
+  assert.ok(Math.abs(h.fraction - 0.5625) < 1e-9, `expected 0.5625, got ${h.fraction}`);
+  assert.strictEqual(h.tier, 'demigod');
+  assert.strictEqual(h.contributions.length, 2);
+  const fr = h.contributions.map((c) => c.fraction).sort((a, b) => a - b);
+  assert.ok(Math.abs(fr[0] - 0.125) < 1e-9, `expected a 1/8 contribution, got ${fr[0]}`);
+  assert.ok(Math.abs(fr[1] - 1) < 1e-9, `expected a full (refresh) contribution, got ${fr[1]}`);
+});
+
+test('formatFraction renders dyadic fractions', () => {
+  const fmt = ctx.window.__PR.formatFraction;
+  assert.strictEqual(fmt(0.5), '½');
+  assert.strictEqual(fmt(0.5625), '9⁄16');
+  assert.strictEqual(fmt(1), '1');
+  assert.strictEqual(fmt(0), '0');
+});
