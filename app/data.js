@@ -25870,7 +25870,7 @@ const ITEM_LORE = {
       { value: 'Mjølnir', script: 'Latin', tradition: 'Danish / Norwegian', period: 'modern' },
       { value: 'ᛘᛁᚬᛚᚾᛁᛦ', script: 'Younger Futhark (runic)', tradition: 'Norse', period: 'viking-age', note: 'younger-futhark transliteration (m-i-o-l-n-i-ʀ)', source: 'younger-futhark orthography' },
     ],
-    maker: { name: 'Brokkr and Eitri (Sindri)', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35 (Loki wagers his head; Brokkr works the bellows while Loki, as a fly, bites him — the handle comes out short)' }] },
+    maker: { name: 'Brokkr and Eitri (Sindri)', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35 (Loki wagers his head; Brokkr works the bellows while Loki, as a fly, bites him — the handle comes out short)' }] },
     custody: [
       { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (Sindri), dwarf-smiths', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
       { role: 'wielder', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 21; Þrymskviða (stolen by Þrymr and recovered)' }], note: 'Thor’s defining weapon; needed Járngreipr (iron gloves) and Megingjǫrð (girdle of strength) to wield.' },
@@ -25882,7 +25882,7 @@ const ITEM_LORE = {
     names: [
       { value: 'Gungnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', source: 'Skáldskaparmál 35' },
     ],
-    maker: { name: 'the Sons of Ivaldi', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+    maker: { name: 'the Sons of Ivaldi', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
     custody: [
       { role: 'forged by', externalRef: { name: 'the Sons of Ivaldi (dwarf-smiths)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
       { role: 'wielder', personId: 'norse_odin', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sigrdrífumál 17; Vǫluspá 24 (Odin casts the spear over the host to open the first war)' }], note: 'The spear that never misses; Odin pierced himself with it on Yggdrasil for the runes (Hávamál 138).' },
@@ -25893,7 +25893,7 @@ const ITEM_LORE = {
     names: [
       { value: 'Draupnir', script: 'Latin', tradition: 'Old Norse', period: 'old-norse', note: '“the dripper”', source: 'Skáldskaparmál 35' },
     ],
-    maker: { name: 'Brokkr and Eitri (Sindri)', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+    maker: { name: 'Brokkr and Eitri (Sindri)', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
     custody: [
       { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (Sindri), dwarf-smiths', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
       { role: 'owner', personId: 'norse_odin', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }], note: 'Every ninth night it drips eight gold rings of equal weight.' },
@@ -25938,7 +25938,7 @@ const dedupeSources = (arr) => {
 const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
   const items = {};
   const ensure = (id) => (items[id] || (items[id] = {
-    id, classId: null, kind: null, holders: [], names: [], maker: null, custody: [], sources: [], lore: null,
+    id, classId: null, kind: null, holders: [], names: [], maker: null, custody: [], sources: [], lore: null, location: null,
   }));
   for (const person of Object.values(peopleMap)) {
     for (const mc of (person.materialCulture || [])) {
@@ -25956,8 +25956,9 @@ const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
     if (L.maker) it.maker = L.maker;
     if (L.custody) it.custody = L.custody;
     if (L.lore) it.lore = L.lore;
-    if (L.classId && !it.classId) it.classId = L.classId;
-    if (L.kind && !it.kind) it.kind = L.kind;
+    if (L.location) it.location = L.location;
+    if (L.classId) it.classId = L.classId;
+    if (L.kind) it.kind = L.kind;
     for (const c of (L.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
     for (const s of (L.maker?.sources || [])) it.sources.push(s);
   }

@@ -18,8 +18,11 @@ const ITEM_KIND_LABEL = {
   tool: 'Tools',
   vessel: 'Vessels',
   'ritual-object': 'Ritual objects',
+  sculpture: 'Sculpture & relief',
+  monument: 'Monuments & architecture',
+  text: 'Texts & inscriptions',
 };
-const ITEM_KIND_ORDER = ['weapon', 'garment', 'symbol', 'tool', 'vessel', 'ritual-object'];
+const ITEM_KIND_ORDER = ['weapon', 'garment', 'symbol', 'tool', 'vessel', 'ritual-object', 'sculpture', 'monument', 'text'];
 function itemKindLabel(kind) {
   if (!kind || kind === 'other') return 'Other objects';
   return ITEM_KIND_LABEL[kind] ||
@@ -170,6 +173,7 @@ function CustodyChain({ custody, byId, onOpenFigure }) {
         {custody.map((step, i) => {
           const person = step.personId ? byId.get(step.personId) : null;
           const ref = step.sources?.[0]?.reference;
+          const when = step.date || (step.era ? window.formatEra(step.era) : null);
           return (
             <li className="custody-step" key={i}>
               <div className="custody-spine" aria-hidden="true">
@@ -193,8 +197,9 @@ function CustodyChain({ custody, byId, onOpenFigure }) {
                   ) : (
                     <span className="custody-ext">{externalName(step.externalRef)}</span>
                   )}
-                  {step.era && <span className="custody-era">{window.formatEra(step.era)}</span>}
+                  {when && <span className="custody-era">{when}</span>}
                 </div>
+                {step.where && <div className="custody-where">{step.where}</div>}
                 {step.note && <div className="custody-note">{step.note}</div>}
                 {ref && <div className="custody-cite">{ref}</div>}
               </div>
@@ -301,8 +306,13 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
             <h1 className={isGlyphScript(primary?.script) ? 'item-title-glyph' : ''}>{it.displayName}</h1>
             {it.maker && (
               <div className="item-maker">
-                forged by <span className="item-maker-name">{it.maker.name}</span>
+                {it.maker.role || 'made by'} <span className="item-maker-name">{it.maker.name}</span>
                 {it.maker.kind && <span className="item-maker-kind"> · {humanizeItem(it.maker.kind)}</span>}
+              </div>
+            )}
+            {it.location && (
+              <div className="item-location">
+                <span className="item-location-label">now</span> {it.location}
               </div>
             )}
           </div>
