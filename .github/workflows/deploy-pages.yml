@@ -5,10 +5,16 @@ name: Deploy to GitHub Pages
 # `github-pages` Deployment with a clickable URL on each run, and
 # actions/configure-pages (enablement: true) turns Pages on automatically the
 # first time — no manual Settings toggle required.
+# NOTE: deploys currently succeed only from claude/intelligent-volta-ZwLAt
+# because the repo's `github-pages` environment has a Deployment-branches rule
+# that does not (yet) permit `main`. main is kept here so it deploys
+# automatically once that environment rule is set to allow main (Settings →
+# Environments → github-pages → Deployment branches and tags).
 on:
   push:
     branches:
       - main
+      - claude/intelligent-volta-ZwLAt
   workflow_dispatch:
 
 # Permissions the native Pages deployment needs.
