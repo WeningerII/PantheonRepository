@@ -30537,6 +30537,31 @@ const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
   return items;
 };
 
+// ─── Item holders by figure ────────────────────────────────────────────────
+// New iconic items are attached to their owners here rather than by hand-editing
+// each deeply-nested figure object. This central map is merged into the seed
+// (post-migrate) so the holder scan and the figure-detail cross-link both pick
+// them up; the rich, cited detail for each id lives in ITEM_LORE above. Keyed by
+// figure id → array of { id, classId, kind, sources }. Authored in batches as
+// the corpus is built out, tradition by tradition.
+const MATERIAL_CULTURE_BY_FIGURE = {
+};
+
+// Merge MATERIAL_CULTURE_BY_FIGURE into a people map in place. Unknown figure ids
+// are warned and skipped; duplicate item ids per figure are ignored.
+const mergeMaterialCulture = (peopleMap, mcMap = MATERIAL_CULTURE_BY_FIGURE) => {
+  for (const [fid, list] of Object.entries(mcMap)) {
+    const p = peopleMap[fid];
+    if (!p) { console.warn('materialCulture for unknown figure', fid); continue; }
+    if (!Array.isArray(p.materialCulture)) p.materialCulture = [];
+    const have = new Set(p.materialCulture.map((m) => m && m.id));
+    for (const it of list) {
+      if (it && it.id && !have.has(it.id)) { p.materialCulture.push(it); have.add(it.id); }
+    }
+  }
+  return peopleMap;
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -32419,8 +32444,8 @@ window.__PR = {
   getEntryDates,
 };
 
-// Build + migrate seed data.
-const seedPeople = migrate(buildPeopleSeed());
+// Build + migrate seed data, then attach the centrally-declared item holders.
+const seedPeople = mergeMaterialCulture(migrate(buildPeopleSeed()));
 const seedAtlas  = buildTerritorySeed();
 
 // Pre-compute the derived layer the UI surfaces (divinity descent + tradition
