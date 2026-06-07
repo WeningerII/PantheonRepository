@@ -29422,18 +29422,262 @@ const mergeMaterialCulture = (peopleMap, mcMap = MATERIAL_CULTURE_BY_FIGURE) => 
 // native term shown alongside — "fire", with πῦρ, never the coinage
 // "pyrokinesis"), corrects inheritability, and adds signature abilities not
 // captured as domains. Authored entries merge onto a matching id (enrich) or add.
+const pterm = (value, script, rom) => ({ value, script, rom }); // native-term helper
 const POWERS_BY_FIGURE = {
+  // ── Greek ──
   greek_hesiod_zeus: [
-    { id: 'thunder', name: 'thunder & lightning', term: { value: 'βροντή', script: 'Greek', rom: 'brontē' }, inheritability: 'none', notes: 'Sender of thunder and lightning; the keraunos is his to hurl.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 504–506, 690–710' }] },
+    { id: 'thunder', term: pterm('βροντή', 'Greek', 'brontḗ'), inheritability: 'none', notes: 'Thunder and the thunderbolt (keraunós) — his voice and weapon.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 504–506' }] },
+    { id: 'sky', term: pterm('αἰθήρ', 'Greek', 'aithḗr'), inheritability: 'none', notes: 'The bright upper heaven, his allotted realm (“Zeus who dwells in the aether”).', sources: [{ kind: 'primary', reference: 'Homer, Iliad 2.412; Hesiod, Theogony 697' }] },
+    { id: 'fate', term: pterm('μοῖρα', 'Greek', 'moîra'), inheritability: 'none', notes: 'Apportioned destiny; he weighs the fates of men in his golden scales.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 16.434–461' }] },
+    { id: 'shapeshifting', name: 'shapeshifting', term: pterm('μεταμόρφωσις', 'Greek', 'metamórphōsis'), inheritability: 'none', notes: 'Takes other forms to seduce mortals — bull for Europa, swan for Leda, gold for Danaë.', sources: [{ kind: 'primary', reference: 'Apollodorus 3.1.1, 3.10.7' }] },
   ],
   greek_hesiod_poseidon: [
-    { id: 'earthquake', name: 'earth-shaking', term: { value: 'σεισμός', script: 'Greek', rom: 'seismos' }, inheritability: 'none', notes: 'The “Earth-shaker” (Ἐννοσίγαιος) splits rock and quakes the land.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 20.57–66 (Ἐννοσίγαιος)' }] },
+    { id: 'earthquake', term: pterm('σεισμός', 'Greek', 'seismós'), inheritability: 'none', notes: 'The “Earth-shaker” (Ἐννοσίγαιος); he splits rock and quakes the land.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 13.43–44' }] },
+    { id: 'earthquakes', term: pterm('σεισμός', 'Greek', 'seismós'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'Homer, Iliad 13.43–44' }] },
+    { id: 'sea', term: pterm('πόντος', 'Greek', 'póntos'), inheritability: 'none', notes: 'The deep, drawn by lot as his realm.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 15.187–193; Hesiod, Theogony 732' }] },
+    { id: 'horses', term: pterm('ἵππος', 'Greek', 'híppos'), inheritability: 'none', notes: 'Poseidon Hippios — sire and giver of horses.', sources: [{ kind: 'primary', reference: 'Pausanias 8.25.4–7' }] },
   ],
   greek_hesiod_athena: [
-    { id: 'cunning-intelligence', name: 'cunning intelligence', term: { value: 'μῆτις', script: 'Greek', rom: 'mētis' }, inheritability: 'none', notes: 'Practical wisdom, craft, and strategic cunning — she is the child of Mêtis.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 886–900, 924–926' }] },
+    { id: 'cunning-intelligence', term: pterm('μῆτις', 'Greek', 'mêtis'), inheritability: 'none', notes: 'Cunning practical wisdom — she absorbs Mētis and is born from Zeus’s head.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 886–900, 924' }] },
+    { id: 'wisdom', term: pterm('σοφία', 'Greek', 'sophía'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'LSJ s.v. σοφία; Homer, Iliad 15.412' }] },
+    { id: 'craft-techne', term: pterm('τέχνη', 'Greek', 'téchnē'), inheritability: 'none', notes: 'Skilled handiwork; Athena Ergánē, “the worker.”', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 7.110–111; Pausanias 1.24.3' }] },
+  ],
+  greek_hesiod_apollo: [
+    { id: 'prophecy', term: pterm('μαντική', 'Greek', 'mantikḗ'), inheritability: 'none', notes: 'The prophetic art, spoken through Delphi.', sources: [{ kind: 'primary', reference: 'Aeschylus, Eumenides 17–19; Homeric Hymn 3.131' }] },
+    { id: 'plague-and-healing', term: pterm('παιάν', 'Greek', 'paián'), inheritability: 'none', notes: 'Healer and plague-bringer; his arrows loose both pestilence and the healing cry “iē Paian.”', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.43–52' }] },
+    { id: 'music-poetry', term: pterm('κίθαρις', 'Greek', 'kítharis'), inheritability: 'none', notes: 'The lyre; Apollo Kitharōidós.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.603; Homeric Hymn 3.131' }] },
+    { id: 'archery', term: pterm('τόξον', 'Greek', 'tóxon'), inheritability: 'none', notes: 'The far-shooter (hekēbólos), god of the silver bow.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.45–49' }] },
+  ],
+  greek_hesiod_artemis: [
+    { id: 'wild-hunt', term: pterm('ἄγρα', 'Greek', 'ágra'), inheritability: 'none', notes: 'The chase; Artemis Agrotéra, “mistress of beasts.”', sources: [{ kind: 'primary', reference: 'Homer, Iliad 21.470–471; Homeric Hymn 27' }] },
+    { id: 'virginity', term: pterm('παρθενία', 'Greek', 'parthenía'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'Callimachus, Hymn 3.6; Homeric Hymn 5.16–20' }] },
+    { id: 'childbirth', term: pterm('λοχεία', 'Greek', 'locheía'), inheritability: 'none', notes: 'Artemis Lochía, helper at the childbed.', sources: [{ kind: 'primary', reference: 'Euripides, IT 1097; Homer, Iliad 21.483–484' }] },
+  ],
+  greek_hesiod_aphrodite: [
+    { id: 'erotic-desire', term: pterm('ἵμερος', 'Greek', 'hímeros'), inheritability: 'none', notes: 'Longing and desire, born with her.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 201' }] },
+    { id: 'beauty', term: pterm('κάλλος', 'Greek', 'kállos'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'Homeric Hymn 5.84–90' }] },
+    { id: 'sea-born', term: pterm('ἀφρογένεια', 'Greek', 'aphrogéneia'), inheritability: 'none', notes: '“Foam-born,” risen from the sea-foam off Cyprus.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 195–198' }] },
+  ],
+  greek_hesiod_hephaestus: [
+    { id: 'metalworking-craft', term: pterm('χαλκεία', 'Greek', 'chalkeía'), inheritability: 'none', notes: 'Bronze-working; klytotéchnēs, the famed craftsman.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.468–477' }] },
+    { id: 'fire-divine', term: pterm('πῦρ', 'Greek', 'pŷr'), inheritability: 'none', notes: 'Fire itself — his name stands by metonymy for the flame.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 2.426; LSJ s.v. πῦρ II' }] },
+  ],
+  greek_hesiod_ares: [
+    { id: 'war-violence', term: pterm('πόλεμος', 'Greek', 'pólemos'), inheritability: 'none', notes: 'War’s violence; Ares brotoloigós, “bane of mortals.”', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.890–891' }] },
+    { id: 'battle-frenzy', term: pterm('λύσσα', 'Greek', 'lýssa'), inheritability: 'none', notes: 'Raging martial fury; his sons are Phobos and Deimos (Rout and Terror).', sources: [{ kind: 'primary', reference: 'Homer, Iliad 9.237–239; Hesiod, Theogony 934' }] },
+  ],
+  greek_hesiod_hera: [
+    { id: 'marriage-sovereignty', term: pterm('γάμος', 'Greek', 'gámos'), inheritability: 'none', notes: 'Wedlock; Hera Teleía, patron of marriage.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 14.197–210; Pausanias 9.2.7' }] },
+  ],
+  greek_hesiod_demeter: [
+    { id: 'agriculture-grain', term: pterm('σῖτος', 'Greek', 'sîtos'), inheritability: 'none', notes: 'Grain; Demeter Sitṓ, giver of corn.', sources: [{ kind: 'primary', reference: 'Homeric Hymn 2.305–309, 450–471' }] },
+    { id: 'mysteries', term: pterm('μυστήρια', 'Greek', 'mystḗria'), inheritability: 'none', notes: 'The secret rites of Eleusis.', sources: [{ kind: 'primary', reference: 'Homeric Hymn 2.476–482; Pausanias 1.38.7' }] },
+  ],
+  greek_hesiod_dionysus: [
+    { id: 'wine-intoxication', term: pterm('οἶνος', 'Greek', 'oînos'), inheritability: 'none', notes: 'Wine, of which he is giver and embodiment.', sources: [{ kind: 'primary', reference: 'Homeric Hymn 7.35–36; Hesiod, Works and Days 614' }] },
+    { id: 'ecstatic-cult', term: pterm('βακχεία', 'Greek', 'bakcheía'), inheritability: 'none', notes: 'Bacchic frenzy and possession; the Maenads.', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae 32–40' }] },
+  ],
+  greek_hesiod_hebe: [
+    { id: 'youth', term: pterm('ἥβη', 'Greek', 'hḗbē'), inheritability: 'none', notes: 'The vigour of youth, personified.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 922; Homer, Odyssey 11.603' }] },
+  ],
+  greek_hesiod_eos: [
+    { id: 'dawn', term: pterm('ἠώς', 'Greek', 'ēṓs'), inheritability: 'none', notes: '“Rosy-fingered” dawn, who opens the gates of day.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.477; Hesiod, Theogony 372–374' }] },
+  ],
+  greek_hesiod_boreas: [
+    { id: 'north-wind', term: pterm('βορέας', 'Greek', 'boréas'), inheritability: 'none', notes: 'The cold north wind from Thrace.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 378–380; Homer, Iliad 23.195–230' }] },
+    { id: 'horse-siring', name: 'horse-begetting', term: pterm('ἵππος', 'Greek', 'híppos'), inheritability: 'none', notes: 'As a stallion, sired twelve swift colts on the mares of Erichthonius.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 20.219–229' }] },
+  ],
+  greek_hesiod_calliope: [
+    { id: 'epic-poetry', term: pterm('ἔπος', 'Greek', 'épos'), inheritability: 'none', notes: 'Heroic hexameter song; “fairest-voiced,” chief of the Muses.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 79; Homeric Hymn 31.1–2' }] },
+  ],
+  greek_hesiod_clio: [
+    { id: 'kleos-glory-fame-history', term: pterm('κλέος', 'Greek', 'kléos'), inheritability: 'none', notes: '“That which is heard” — the glory song confers; her name from kleíō, “to make famous.”', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 77; Homer, Iliad 9.189' }] },
+  ],
+  greek_hesiod_eosphorus: [
+    { id: 'morning-star', term: pterm('ἑωσφόρος', 'Greek', 'heōsphóros'), inheritability: 'none', notes: '“Dawn-bringer,” the Morning Star (Venus at dawn).', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 381; Homer, Iliad 23.226–227' }] },
+  ],
+  greek_apollod_heracles: [
+    { id: 'physical-strength-extreme', term: pterm('βίη', 'Greek', 'bíē'), inheritability: 'full', notes: 'The Homeric formula βίη Ἡρακληείη, “the mighty force of Heracles.”', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.638; Odyssey 11.601' }] },
+    { id: 'endurance-superhuman', term: pterm('καρτερία', 'Greek', 'kartería'), inheritability: 'full', sources: [{ kind: 'primary', reference: 'Hesiod, Shield 416–432' }] },
+    { id: 'wrestling-skill', term: pterm('πάλη', 'Greek', 'pálē'), inheritability: 'partial', notes: 'He crushes Antaeus and Achelous in the grip.', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.11' }] },
+    { id: 'archery-skill', term: pterm('τοξική', 'Greek', 'toxikḗ'), inheritability: 'partial', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.11, 2.5.10' }] },
+  ],
+  greek_asclepius: [
+    { id: 'medicine-and-healing', term: pterm('ἰατρική', 'Greek', 'iatrikḗ'), inheritability: 'none', notes: 'The healing art; he even raised the dead, until Zeus struck him down.', sources: [{ kind: 'primary', reference: 'Pindar, Pythian 3.5–58' }] },
+  ],
+  greek_orpheus: [
+    { id: 'music-and-mystery-rite', term: pterm('ᾠδή', 'Greek', 'ōidḗ'), inheritability: 'none', notes: 'Song that moved beasts, trees, and stones.', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 1.26–31; Apollodorus 1.3.2' }] },
+    { id: 'mystery-rites', name: 'mystery-rites', term: pterm('τελεταί', 'Greek', 'teletaí'), inheritability: 'none', notes: 'The Orphic initiatory rites founded in his name.', sources: [{ kind: 'primary', reference: 'Pausanias 9.30.4' }] },
+  ],
+
+  // ── Roman ──
+  roman_iuppiter: [
+    { id: 'sky-thunder', term: pterm('fulmen', 'Latin'), inheritability: 'none', notes: 'The thunderbolt, which consecrates whatever it strikes.', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 6.580–581; Ovid, Met. 1.253–258' }] },
+    { id: 'oath-binding', term: pterm('ius iurandum', 'Latin'), inheritability: 'none', notes: 'Guarantor of oaths sworn “by Jupiter Stone”; avenger of broken faith.', sources: [{ kind: 'primary', reference: 'Polybius 3.25.6–9; Livy 1.24.7–8' }] },
+    { id: 'triumph', term: pterm('triumphus', 'Latin'), inheritability: 'none', notes: 'The victory procession, at whose climax the triumphator enacts Jupiter.', sources: [{ kind: 'primary', reference: 'Livy 10.7.10; Ovid, Tristia 4.2.20' }] },
+  ],
+  roman_mars: [
+    { id: 'war-civic', term: pterm('bellum', 'Latin'), inheritability: 'none', notes: 'War as his proper sphere; Mars stands by metonymy for battle.', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 12.1, 12.108' }] },
+    { id: 'agricultural-protection', term: pterm('lustratio', 'Latin'), inheritability: 'none', notes: 'Purification of the fields (the suovetaurilia) with prayer to Mars pater.', sources: [{ kind: 'primary', reference: 'Cato, De Agricultura 141' }] },
+  ],
+  roman_iuno: [
+    { id: 'state-protection', term: pterm('evocatio', 'Latin'), inheritability: 'none', notes: 'The calling-out of an enemy city’s deity to Rome — Juno Regina summoned from Veii.', sources: [{ kind: 'primary', reference: 'Livy 5.21.3–22.7; Macrobius, Sat. 3.9.7–8' }] },
+    { id: 'sacred-geese', name: 'the geese that warned', term: pterm('anseres Iunonis', 'Latin'), inheritability: 'none', notes: 'Her sacred geese on the Capitol whose cackling saved the citadel from the Gauls, 390 BCE.', sources: [{ kind: 'primary', reference: 'Livy 5.47.4; Ovid, Fasti 6.349–354' }] },
+  ],
+  roman_minerva: [
+    { id: 'wisdom-craft', term: pterm('ars', 'Latin'), inheritability: 'none', notes: 'Skilled craft; “goddess of a thousand works” (dea mille operum).', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.815–834; Horace, Ars Poetica 385' }] },
+    { id: 'guild-patronage', term: pterm('collegium', 'Latin'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 6.651–692' }] },
+  ],
+  roman_mercurius: [
+    { id: 'commerce', term: pterm('merx', 'Latin'), inheritability: 'none', notes: 'Trade — his name derives from merx/mercari.', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 5.663–692; Varro, LL 5.83' }] },
+  ],
+  roman_ceres: [
+    { id: 'agriculture-grain', term: pterm('frumentum', 'Latin'), inheritability: 'none', notes: 'Grain itself; she first gave humankind cultivation.', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 4.401–416; Virgil, Georgics 1.147' }] },
+  ],
+  roman_liber: [
+    { id: 'plebeian-coming-of-age', term: pterm('toga virilis', 'Latin'), inheritability: 'none', notes: 'The “toga of manhood,” assumed by boys at his Liberalia.', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.771–788' }] },
+  ],
+  roman_diana: [
+    { id: 'crossroads-trivia', term: pterm('Trivia', 'Latin'), inheritability: 'none', notes: '“Of the three ways”; goddess of crossroads and the underworld threshold.', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 7.516, 6.13; Catullus 34.15' }] },
+    { id: 'grove-king', name: 'the king of the grove', term: pterm('rex Nemorensis', 'Latin'), inheritability: 'none', notes: 'Her priest at Nemi — a runaway who held office until slain by his successor.', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.263–272; Suetonius, Caligula 35' }] },
+  ],
+  roman_volcanus: [
+    { id: 'destructive-fire', term: pterm('Volcanus', 'Latin'), inheritability: 'none', notes: 'His name used for devouring fire itself (“deus pro re”).', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 5.662; Livy 38.46.4' }] },
+  ],
+  roman_romulus: [
+    { id: 'augural-vision', term: pterm('auspicium', 'Latin'), inheritability: 'partial', notes: 'The taking of the auspices; his twelve vultures won the founder’s right, passed to Rome’s magistrates.', sources: [{ kind: 'primary', reference: 'Livy 1.7.1–3; Cicero, De Divinatione 1.107' }] },
+    { id: 'kingship-roman', term: pterm('imperium', 'Latin'), inheritability: 'partial', notes: 'The sovereign command, first held by him and conferred by the curiate assembly.', sources: [{ kind: 'primary', reference: 'Livy 1.8.3; Cicero, Rep. 2.17' }] },
+    { id: 'augury-foundational', term: pterm('augurium', 'Latin'), inheritability: 'partial', notes: 'His augurium augustum founded Rome’s augural discipline — whence “Augustus.”', sources: [{ kind: 'primary', reference: 'Ennius, Annals 72–91 Sk.; Cicero, Div. 1.3' }] },
+    { id: 'foundation-of-rome', term: pterm('sulcus primigenius', 'Latin'), inheritability: 'none', notes: 'The “first furrow” ploughed to trace the city’s sacred line.', sources: [{ kind: 'primary', reference: 'Varro, LL 5.143; Ovid, Fasti 4.819–836' }] },
+    { id: 'deification-quirinus', name: 'ascent as Quirinus', term: pterm('Quirinus', 'Latin'), inheritability: 'none', notes: 'Caught up to heaven in a storm and worshipped thereafter as the god Quirinus.', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 2.475–512; Livy 1.16' }] },
+  ],
+
+  // ── Hindu ──
+  hindu_indra: [
+    { id: 'kingship-of-devas', term: pterm('देवराज', 'Devanagari', 'devarāja'), inheritability: 'none', notes: 'King of the gods.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32; Mahābhārata passim' }] },
+    { id: 'thunder-rain-storms', term: pterm('वज्र', 'Devanagari', 'vajra'), inheritability: 'none', notes: 'The thunderbolt that splits Vṛtra and releases the waters.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32' }] },
+    { id: 'war-and-heroic-strength', term: pterm('वृत्रहन्', 'Devanagari', 'vṛtrahan'), inheritability: 'none', notes: '“Slayer of Vṛtra,” the warrior-strength won by killing the obstructing serpent.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32, 4.18' }] },
+    { id: 'soma-valor', name: 'soma-fueled valor', term: pterm('शतक्रतु', 'Devanagari', 'śatakratu'), inheritability: 'none', notes: '“Of a hundred powers”; the might he draws from drinking soma.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.10' }] },
+  ],
+  hindu_surya: [
+    { id: 'sun-and-light', term: pterm('स्वर्', 'Devanagari', 'svar'), inheritability: 'none', notes: 'The sun’s heavenly radiance; “the eye of the gods.”', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.50' }] },
+    { id: 'impeller', name: 'quickener of life', term: pterm('सवितृ', 'Devanagari', 'savitṛ'), inheritability: 'none', notes: 'The vivifying aspect of the sun, invoked in the Gāyatrī.', sources: [{ kind: 'primary', reference: 'Ṛgveda 3.62.10' }] },
+  ],
+  hindu_vayu: [
+    { id: 'wind-and-breath', term: pterm('वायु', 'Devanagari', 'vāyu'), inheritability: 'none', notes: 'Wind as cosmic breath; equated with prāṇa, the life-breath.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.2' }] },
+    { id: 'physical-strength-conferral', term: pterm('बल', 'Devanagari', 'bala'), inheritability: 'partial', notes: 'The bodily might he transmits to his sons (Bhīma, Hanumān).', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 122' }] },
+  ],
+  hindu_dharma: [
+    { id: 'righteousness-cosmic-order', term: pterm('ऋत', 'Devanagari', 'ṛta'), inheritability: 'none', notes: 'The cosmic-moral order that becomes dharma.', sources: [{ kind: 'primary', reference: 'Ṛgveda passim (e.g. 1.24)' }] },
+    { id: 'death-judgment-yama-identification', term: pterm('यम', 'Devanagari', 'yama'), inheritability: 'none', notes: 'Yama, lord of the dead, who judges by dharma; Dharma is identified with him.', sources: [{ kind: 'primary', reference: 'Ṛgveda 10.14; Mahābhārata, Vana Parva 297' }] },
+  ],
+  hindu_nasatya: [
+    { id: 'healing-medicine', term: pterm('भिषज्', 'Devanagari', 'bhiṣaj'), inheritability: 'none', notes: 'The divine physicians (Aśvins) who bear heavenly remedies.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.116–117' }] },
+    { id: 'dawn-and-twilight', term: pterm('नासत्य', 'Devanagari', 'nāsatya'), inheritability: 'none', notes: '“Ever-true,” the twin of the dawn-going chariot.', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.116' }] },
+  ],
+  hindu_dasra: [
+    { id: 'healing-medicine', term: pterm('दस्र', 'Devanagari', 'dasra'), inheritability: 'none', notes: '“Worker of marvels” — the twin of wondrous cures (restoring Cyavana’s youth).', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.116–117' }] },
+  ],
+  hindu_ganga: [
+    { id: 'sacred-river-purification-and-moksha', term: pterm('तीर्थ', 'Devanagari', 'tīrtha'), inheritability: 'none', notes: 'The sacred ford between human and divine; bathing purifies and grants liberation.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva 80–83' }] },
+  ],
+  hindu_bhima: [
+    { id: 'physical-strength-supreme', term: pterm('बल', 'Devanagari', 'bala'), inheritability: 'full', notes: 'Supreme might — the strength of ten thousand elephants, inherited from Vāyu.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 122–129' }] },
+  ],
+  hindu_arjuna: [
+    { id: 'savyasaci-ambidexterity', term: pterm('सव्यसाची', 'Devanagari', 'savyasācī'), inheritability: 'none', notes: '“Ambidextrous” — draws the bow with equal skill in either hand.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Virāṭa Parva 53.18' }] },
+    { id: 'archery-supreme', term: pterm('धनुर्वेद', 'Devanagari', 'dhanurveda'), inheritability: 'none', notes: 'The science of archery, of which he is the supreme master.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 131–134' }] },
+  ],
+  hindu_karna: [
+    { id: 'cursed-brahmastra-mantra', term: pterm('ब्रह्मास्त्र', 'Devanagari', 'brahmāstra'), inheritability: 'none', notes: 'Brahmā’s supreme weapon — but his recall of the mantra is cursed to fail at need.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Śānti Parva 3; Karṇa Parva' }] },
+    { id: 'archery-equal-to-Arjuna', term: pterm('धनुर्वेद', 'Devanagari', 'dhanurveda'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 126; Karṇa Parva' }] },
+    { id: 'generosity-dāna-supreme', term: pterm('दानवीर', 'Devanagari', 'dānavīra'), inheritability: 'none', notes: '“Hero of giving” — he never refuses a suppliant.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva 308–310' }] },
+  ],
+  hindu_bhishma: [
+    { id: 'icchamrityu-death-at-will', term: pterm('इच्छामृत्यु', 'Devanagari', 'icchāmṛtyu'), inheritability: 'none', notes: 'The boon of choosing the hour of one’s own death.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 100; Anuśāsana Parva' }] },
+    { id: 'vow-of-celibacy', name: 'the terrible vow', term: pterm('भीष्मप्रतिज्ञा', 'Devanagari', 'bhīṣma-pratijñā'), inheritability: 'none', notes: 'The vow of lifelong celibacy and throne-renunciation that earned him the name “Bhīṣma.”', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 100' }] },
+  ],
+  hindu_yudhishthira: [
+    { id: 'kingship-righteous', term: pterm('धर्मराज', 'Devanagari', 'dharmarāja'), inheritability: 'none', notes: '“King of dharma,” son of the god Dharma.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Sabhā Parva 33–36' }] },
+    { id: 'truth-and-dharma', term: pterm('सत्य', 'Devanagari', 'satya'), inheritability: 'none', notes: 'Truth — his chariot rode above the ground until his one half-lie.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Droṇa Parva 191; Vana Parva 297' }] },
+  ],
+  hindu_nakula: [
+    { id: 'horsemanship-and-swordsmanship', term: pterm('अश्वविद्या', 'Devanagari', 'aśvavidyā'), inheritability: 'none', notes: 'The science of horses; he authored the Aśvaśāstra.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Virāṭa Parva 12' }] },
+    { id: 'beauty-physical-perfection', term: pterm('रूप', 'Devanagari', 'rūpa'), inheritability: 'none', sources: [{ kind: 'primary', reference: 'Mahābhārata, Ādi Parva 124' }] },
+  ],
+  hindu_sahadeva: [
+    { id: 'wisdom-and-prophecy', term: pterm('त्रिकालज्ञ', 'Devanagari', 'trikālajña'), inheritability: 'none', notes: '“Knower of the three times” — he foresaw the war but was bound not to tell it unasked.', sources: [{ kind: 'primary', reference: 'Mahābhārata (Sahadeva’s foreknowledge)' }] },
+    { id: 'cattle-and-astrology', term: pterm('ज्योतिष', 'Devanagari', 'jyotiṣa'), inheritability: 'none', notes: 'The science of the heavens.', sources: [{ kind: 'primary', reference: 'Mahābhārata, Virāṭa Parva 12' }] },
+  ],
+
+  // ── Norse ──
+  norse_odin: [
+    { id: 'kingship-of-Æsir-Allfather', term: pterm('Alfǫðr', 'Old Norse', 'Allfather'), inheritability: 'none', notes: 'Ruler of the Æsir, from whom gods and men descend.', sources: [{ kind: 'primary', reference: 'Prose Edda, Gylfaginning' }] },
+    { id: 'wisdom-poetry-rune-magic', term: pterm('galdr', 'Old Norse'), inheritability: 'none', notes: 'Sung rune-magic; he won the runes hanging on Yggdrasil (Hávamál Rúnatal).', sources: [{ kind: 'primary', reference: 'Poetic Edda, Hávamál 138–145' }] },
+    { id: 'war-and-battle-death', term: pterm('Valfǫðr', 'Old Norse', 'Father of the Slain'), inheritability: 'none', notes: 'Receiver of the war-dead in Valhǫll.', sources: [{ kind: 'primary', reference: 'Grímnismál; Gylfaginning' }] },
+    { id: 'seidr', name: 'seiðr sorcery', term: pterm('seiðr', 'Old Norse'), inheritability: 'none', notes: 'Vanir-derived sorcery of divination and manipulation, which Snorri says Odin practiced.', sources: [{ kind: 'primary', reference: 'Ynglinga saga 7' }] },
+    { id: 'shapeshifting', name: 'shape-changing', term: pterm('hamr', 'Old Norse', 'skipta hǫmum'), inheritability: 'none', notes: 'His body lies as dead while he travels as bird, beast, fish, or serpent.', sources: [{ kind: 'primary', reference: 'Ynglinga saga 7' }] },
   ],
   norse_thor: [
-    { id: 'storm-and-thunder-control', term: { value: 'þruma', script: 'Old Norse', rom: 'thruma (thunder)' }, sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the thunder of his chariot)' }] },
+    { id: 'physical-strength-extreme', term: pterm('ásmegin', 'Old Norse'), inheritability: 'full', notes: 'Divine (Æsir) might — “his ásmegin grew.”', sources: [{ kind: 'primary', reference: 'Prose Edda, Gylfaginning/Skáldskaparmál' }] },
+    { id: 'storm-and-thunder-control', term: pterm('þruma', 'Old Norse', 'thunder'), inheritability: 'partial', notes: 'Thunder rolls when he wields Mjǫllnir.', sources: [{ kind: 'primary', reference: 'Prose Edda, Gylfaginning' }] },
+  ],
+  norse_njord: [
+    { id: 'wealth-and-prosperity', term: pterm('auðigr', 'Old Norse', 'auðigr sem Njǫrðr'), inheritability: 'none', notes: '“Rich as Njǫrðr” — he grants wealth in land and goods.', sources: [{ kind: 'primary', reference: 'Prose Edda, Gylfaginning 23' }] },
+  ],
+  norse_freyr: [
+    { id: 'fertility-and-prosperity-Vanir', term: pterm('ár ok friðr', 'Old Norse'), inheritability: 'none', notes: '“Good-season and peace,” invoked for fruitfulness and plenty.', sources: [{ kind: 'primary', reference: 'Prose Edda, Gylfaginning; Ynglinga saga' }] },
+    { id: 'kingship-and-Yngling-dynasty', term: pterm('Yngvi', 'Old Norse', 'Yngvi-Freyr'), inheritability: 'none', notes: 'Divine ancestor of the Ynglingar, who reigned at Uppsala in peace.', sources: [{ kind: 'primary', reference: 'Ynglinga saga' }] },
+  ],
+
+  // ── Egyptian ──
+  egyptian_ptah: [
+    { id: 'creative-speech-act', term: pterm('ḥw', 'Egyptian (translit)', 'hu'), inheritability: 'none', notes: 'Creation conceived in the heart (ib) and commanded by the tongue (ns) — the Memphite logos.', sources: [{ kind: 'primary', reference: 'Memphite Theology (Shabaka Stone)' }] },
+    { id: 'memphis-patron', term: pterm('Ḥwt-kꜣ-Ptḥ', 'Egyptian (translit)', 'Hut-ka-Ptah'), inheritability: 'none', notes: '“Mansion of the ka of Ptah” — Memphis, whence the Greek name Aígyptos.', sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods' }] },
+  ],
+  egyptian_amun: [
+    { id: 'hidden-creator', term: pterm('Jmn', 'Egyptian (translit)', 'Imen'), inheritability: 'none', notes: '“The Hidden One,” the concealed creator whose true form is unknown.', sources: [{ kind: 'secondary', reference: 'Coffin Texts; Wilkinson, Complete Gods' }] },
+  ],
+  egyptian_isis: [
+    { id: 'magic-heka', term: pterm('wrt-ḥkꜣw', 'Egyptian (translit)', 'Weret-Hekau'), inheritability: 'none', notes: '“Great of Magic” — mistress of words of power (ḥkꜣ).', sources: [{ kind: 'primary', reference: 'Pyramid/Coffin Texts; Wilkinson, Complete Gods' }] },
+    { id: 'secret-name', name: 'command of the secret name', term: pterm('rn', 'Egyptian (translit)', 'ren'), inheritability: 'none', notes: 'She gains power over Ra by extracting his hidden true name.', sources: [{ kind: 'primary', reference: 'Turin / Chester Beatty papyrus' }] },
+  ],
+  egyptian_osiris: [
+    { id: 'underworld-judge', term: pterm('Ḫnty-jmntjw', 'Egyptian (translit)', 'Khenti-Amentiu'), inheritability: 'none', notes: '“Foremost of the Westerners,” presiding over the judgment of the dead.', sources: [{ kind: 'primary', reference: 'Pyramid Texts; Wilkinson, Complete Gods' }] },
+    { id: 'resurrection-and-vegetation', term: pterm('Wn-nfr', 'Egyptian (translit)', 'Wennefer'), inheritability: 'none', notes: '“He who is continually perfect,” the risen Osiris of sprouting grain and the Nile flood.', sources: [{ kind: 'primary', reference: 'Book of the Dead; Wilkinson, Complete Gods' }] },
+  ],
+  egyptian_horus: [
+    { id: 'sky-and-sun', term: pterm('Ḥrw', 'Egyptian (translit)', 'Heru'), inheritability: 'none', notes: '“The Falcon,” sky-god whose eyes are the sun and moon.', sources: [{ kind: 'primary', reference: 'Pyramid Texts; Wilkinson, Complete Gods' }] },
+    { id: 'avenger-of-father', term: pterm('Ḥr-nḏ-jt=f', 'Egyptian (translit)', 'Har-nedj-itef'), inheritability: 'none', notes: '“Horus who avenges his father,” vindicator of Osiris against Seth.', sources: [{ kind: 'primary', reference: 'Pyramid Texts; Wilkinson, Complete Gods' }] },
+  ],
+
+  // ── Mesopotamian / Japanese / Chinese ──
+  mesopotamian_ninsun: [
+    { id: 'maternal-protection-and-dream-interpretation', term: pterm('Rīmat-Ninsun', 'Akkadian'), inheritability: 'none', notes: '“Wild Cow Ninsun,” divine mother who reads Gilgamesh’s dreams.', sources: [{ kind: 'secondary', reference: 'SB Gilgamesh (George 2003), Tablets I–II' }] },
+  ],
+  japanese_hachiman: [
+    { id: 'war-and-archery', term: pterm('弓矢八幡', 'Japanese (kanji)', 'Yumiya Hachiman'), inheritability: 'none', notes: '“Bow-and-Arrow Hachiman,” invoked by warriors as god of archery.', sources: [{ kind: 'secondary', reference: 'medieval samurai usage; Nihon Shoki (Ōjin)' }] },
+    { id: 'tutelary-of-warriors-and-imperial-protection', term: pterm('八幡神', 'Japanese (kanji)', 'Hachiman-shin'), inheritability: 'none', notes: 'Identified as the deified spirit of Emperor Ōjin.', sources: [{ kind: 'secondary', reference: 'Nihon Shoki; Hachiman shrine tradition' }] },
+  ],
+  japanese_kojiki_omononushi: [
+    { id: 'mountain-tutelage-miwa', term: pterm('大物主', 'Japanese (kanji)', 'Ōmononushi'), inheritability: 'none', notes: '“Great Master of Spirits,” the kami dwelling as Mt. Miwa.', sources: [{ kind: 'primary', reference: 'Kojiki; Nihon Shoki (Sujin)' }] },
+    { id: 'serpent-form', name: 'serpent manifestation', term: pterm('蛇', 'Japanese (kanji)', 'hebi'), inheritability: 'none', notes: 'Appears as a small snake and as the lightning-husband of the Miwa marriage tale.', sources: [{ kind: 'primary', reference: 'Kojiki (Ikutamayori-bime)' }] },
+  ],
+  chinese_jade_emperor: [
+    { id: 'supreme-celestial-emperor', term: pterm('玉皇大帝', 'Chinese (hanzi)', 'Yùhuáng Dàdì'), inheritability: 'none', notes: '“Jade August Great Emperor,” supreme sovereign of Heaven.', sources: [{ kind: 'secondary', reference: 'Journey to the West; Song Daoist canon' }] },
+    { id: 'heavens-court-presider', term: pterm('玉帝', 'Chinese (hanzi)', 'Yùdì'), inheritability: 'none', notes: 'Presides over the assembly of gods at the Cloud Palace.', sources: [{ kind: 'secondary', reference: 'Journey to the West' }] },
+  ],
+  chinese_xiwangmu: [
+    { id: 'queen-mother-of-the-west', term: pterm('西王母', 'Chinese (hanzi)', 'Xīwángmǔ'), inheritability: 'none', notes: 'Dwells on Kunlun; her archaic form had a leopard’s tail and tiger’s teeth.', sources: [{ kind: 'secondary', reference: 'Shanhaijing; Mu Tianzi Zhuan' }] },
+    { id: 'peaches-of-immortality-pantao-controller', term: pterm('蟠桃', 'Chinese (hanzi)', 'pántáo'), inheritability: 'none', notes: 'The peaches ripening once in 3,000 years; she hosts the Peach Banquet.', sources: [{ kind: 'secondary', reference: 'Journey to the West; Han Wudi neizhuan' }] },
+  ],
+  chinese_erlang_shen: [
+    { id: 'shape-shifting', term: pterm('七十二變', 'Chinese (hanzi)', 'qīshí’èr biàn'), inheritability: 'none', notes: 'The “seventy-two transformations” with which he out-shifted Sun Wukong.', sources: [{ kind: 'secondary', reference: 'Journey to the West ch. 6; Fengshen Yanyi' }] },
+    { id: 'third-eye', name: 'heavenly eye', term: pterm('天眼', 'Chinese (hanzi)', 'tiānyǎn'), inheritability: 'none', notes: 'The third eye on his brow that sees through every disguise.', sources: [{ kind: 'secondary', reference: 'Journey to the West' }] },
+  ],
+  chinese_yaoji: [
+    { id: 'wushan-mountain', term: pterm('巫山神女', 'Chinese (hanzi)', 'Wūshān shénnǚ'), inheritability: 'none', notes: 'Divine Maiden of Mount Wu, spirit of the Three Gorges peak.', sources: [{ kind: 'secondary', reference: 'Song Yu, Gaotang fu & Shennü fu' }] },
+    { id: 'clouds-and-rain', name: 'cloud-and-rain', term: pterm('朝雲暮雨', 'Chinese (hanzi)', 'zhāoyún mùyǔ'), inheritability: 'none', notes: '“Morning clouds, evening rain” — source of the idiom for love’s union.', sources: [{ kind: 'secondary', reference: 'Song Yu, Gaotang fu' }] },
   ],
 };
 
