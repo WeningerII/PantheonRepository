@@ -27145,6 +27145,1071 @@ const ITEM_LORE = {
     ],
     lore: 'Fashoda (Shilluk Pachod, modern Kodok) on the White Nile — the royal-ritual seat of the reth, the Shilluk sacral king who is held to embody the spirit of the founder-hero Nyikang. Famous abroad for the 1898 Fashoda Incident, it is to the Shilluk the centre of divine kingship that Evans-Pritchard made a classic of anthropology.',
   },
+
+  // ═══ Greek deities (Olympian attributes) ═════════════════════════════════
+  'zeus-thunderbolt': {
+    names: [
+      { value: 'κεραυνός', script: 'Greek', tradition: 'Greek', rom: 'keraunos', meaning: 'thunderbolt', source: 'Apollod. 1.2.1' },
+    ],
+    kind: 'weapon', classId: 'thunderbolt',
+    maker: { name: 'the Cyclopes (Brontes, Steropes, Arges)', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Cyclopes — Brontes, Steropes, Arges', tradition: 'Greek' }, era: 'titanomachy', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 139–141, 501–506' }] },
+      { role: 'wielded by', personId: 'greek_hesiod_zeus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.2.1 (Διὶ … βροντὴν καὶ ἀστραπὴν καὶ κεραυνόν)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Hesiod, Theogony 139–141, 501–506 (the Cyclopes give Zeus the thunder and make the thunderbolt)' },
+      { kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1' },
+    ],
+    lore: 'The thunderbolt of Zeus, forged for him by the Cyclopes when he freed them — the weapon that won the Titanomachy and the emblem of his sovereignty over sky and storm.',
+  },
+  'aegis': {
+    names: [
+      { value: 'αἰγίς', script: 'Greek', tradition: 'Greek', rom: 'aigis', meaning: 'storm-shield / goatskin, fringed and bearing the Gorgon-head', source: 'Homer, Iliad 5.738' },
+    ],
+    kind: 'symbol', classId: 'aegis',
+    maker: { name: 'Hephaestus', role: 'made by', personId: 'greek_hesiod_hephaestus' },
+    custody: [
+      { role: 'made by', personId: 'greek_hesiod_hephaestus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 15.308–310 (the aegis Hephaestus gave Zeus to bear)' }] },
+      { role: 'borne by', personId: 'greek_hesiod_zeus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 17.593–595; epithet αἰγίοχος “aegis-bearer”' }] },
+      { role: 'borne by', personId: 'greek_hesiod_athena', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.738–742 (Athena dons it, set with the Gorgoneion)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 5.738–742 (the tasselled aegis with the Gorgon-head)' },
+      { kind: 'primary', reference: 'Homer, Iliad 15.18–20, 308–310; Hesiod, Theogony 13' },
+    ],
+    lore: 'The aegis — a fringed storm-shield bearing the severed Gorgon’s head, made by Hephaestus. Zeus is “aegis-bearer” (aigiochos), but it is most often Athena who dons it in battle; to shake it is to rout an army with terror.',
+  },
+  'zeus-sceptre': {
+    names: [
+      { value: 'σκῆπτρον', script: 'Greek', tradition: 'Greek', rom: 'skēptron', meaning: 'staff of rule', source: 'Homer, Iliad 1.279' },
+    ],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [
+      { role: 'borne by', personId: 'greek_hesiod_zeus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.279; Pindar, Pythian 1.6' }], note: 'Often surmounted by the eagle.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 1.279 (the sceptre-holding king)' },
+      { kind: 'primary', reference: 'Pindar, Pythian 1.6 (the sceptre and eagle of Zeus)' },
+    ],
+    lore: 'The royal sceptre of Zeus, emblem of his kingship over gods and men, often topped by his eagle — distinct from the Hephaestus-wrought sceptre of the house of Atreus (Iliad 2.101–108).',
+  },
+  'poseidon-trident': {
+    names: [
+      { value: 'τρίαινα', script: 'Greek', tradition: 'Greek', rom: 'triaina', meaning: 'three-pronged spear, trident', source: 'Apollod. 1.2.1' },
+    ],
+    kind: 'weapon', classId: 'trident',
+    maker: { name: 'the Cyclopes', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Cyclopes', tradition: 'Greek' }, era: 'titanomachy', sources: [{ kind: 'primary', reference: 'Apollod. 1.2.1' }] },
+      { role: 'wielded by', personId: 'greek_hesiod_poseidon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 12.27; Odyssey 5.291–292' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (Ποσειδῶνι δὲ τρίαιναν)' },
+      { kind: 'primary', reference: 'Homer, Iliad 12.27 (Poseidon, trident in hand)' },
+    ],
+    lore: 'The three-pronged trident of Poseidon, forged by the Cyclopes — with it he shakes the earth, splits rock to bring forth springs and horses, and raises or stills the sea.',
+  },
+  'athena-spear': {
+    names: [
+      { value: 'ἔγχος', script: 'Greek', tradition: 'Greek', rom: 'enchos', meaning: 'spear', source: 'Homer, Iliad 5.745–747' },
+    ],
+    kind: 'weapon', classId: 'spear',
+    custody: [
+      { role: 'wielded by', personId: 'greek_hesiod_athena', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.745–747; Homeric Hymn 28.5–6' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 5.745–747 (she grasps the heavy, great, strong spear)' },
+      { kind: 'primary', reference: 'Homeric Hymn 28 to Athena 5–6 (born armed with spear, helm, and aegis)' },
+    ],
+    lore: 'The great spear of Athena, with which the war-goddess “breaks the ranks of men against whom she is angered” — borne from birth, when she sprang from Zeus’s head already armed.',
+  },
+  'athena-helm': {
+    names: [
+      { value: 'κυνέη', script: 'Greek', tradition: 'Greek', rom: 'kyneē', meaning: 'helmet', source: 'Homer, Iliad 5.743–744' },
+    ],
+    kind: 'garment', classId: 'helmet',
+    custody: [
+      { role: 'worn by', personId: 'greek_hesiod_athena', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.743–744' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 5.743–744 (the golden helm fitted with the footmen of a hundred cities)' },
+    ],
+    lore: 'Athena’s golden helm, vast enough to hold the warriors of a hundred towns — part of the war-panoply (helm, spear, aegis) she wears from the moment of her birth.',
+  },
+  'apollo-lyre': {
+    names: [
+      { value: 'λύρα', script: 'Greek', tradition: 'Greek', rom: 'lyra', meaning: 'lyre (made from a tortoise shell)', source: 'Homeric Hymn 4 to Hermes' },
+      { value: 'κίθαρις', script: 'Greek', tradition: 'Greek', rom: 'kitharis', meaning: 'cithara, the concert lyre', source: 'Homeric Hymn 3.131' },
+    ],
+    kind: 'tool', classId: 'lyre',
+    maker: { name: 'Hermes (from a tortoise shell)', role: 'invented by' },
+    custody: [
+      { role: 'invented by', externalRef: { name: 'Hermes (as a newborn)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homeric Hymn 4 to Hermes 24–61' }] },
+      { role: 'given to', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homeric Hymn 4 to Hermes 496–502 (Hermes yields the lyre to Apollo)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homeric Hymn 4 to Hermes 24–61, 496–502' },
+      { kind: 'primary', reference: 'Homeric Hymn 3 to Apollo 131 (“the lyre and the curved bow shall be dear to me”)' },
+    ],
+    lore: 'The lyre Hermes built from a tortoise shell on the day he was born and traded to Apollo for the cattle he had stolen — thereafter Apollo’s instrument, emblem of music, prophecy, and harmony.',
+  },
+  'apollo-bow': {
+    names: [
+      { value: 'τόξον', script: 'Greek', tradition: 'Greek', rom: 'toxon', meaning: 'bow', source: 'Homer, Iliad 1.45–49' },
+      { value: 'ἀργυρότοξος', script: 'Greek', tradition: 'Greek', rom: 'argyrotoxos', meaning: '“of the silver bow” (epithet)', source: 'Homer, Iliad 1.37' },
+    ],
+    kind: 'weapon', classId: 'bow',
+    custody: [
+      { role: 'wielded by', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.43–52' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 1.43–52 (the silver bow; the arrows that bring plague)' },
+      { kind: 'primary', reference: 'Homeric Hymn 3 to Apollo 131; epithet ἀργυρότοξος' },
+    ],
+    lore: 'The silver bow of Apollo, whose far-shot arrows bring both plague and sudden painless death — the weapon behind his stock epithet, “god of the silver bow.”',
+  },
+  'artemis-bow': {
+    names: [
+      { value: 'τόξον καὶ ἰοί', script: 'Greek', tradition: 'Greek', rom: 'toxon kai ioi', meaning: 'bow and arrows', source: 'Callimachus, Hymn 3.81–86' },
+      { value: 'χρυσηλάκατος', script: 'Greek', tradition: 'Greek', rom: 'chrysēlakatos', meaning: '“of the golden arrows” (epithet)', source: 'Homeric Hymn 27.1' },
+    ],
+    kind: 'weapon', classId: 'bow',
+    maker: { name: 'the Cyclopes', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Cyclopes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Callimachus, Hymn 3 to Artemis 81–86' }] },
+      { role: 'wielded by', personId: 'greek_hesiod_artemis', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homeric Hymn 27 to Artemis 1–6' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Callimachus, Hymn 3 to Artemis 8–10, 81–86 (the Cyclopes fashion her bow)' },
+      { kind: 'primary', reference: 'Homeric Hymn 27 to Artemis 1–6' },
+    ],
+    lore: 'The bow and arrows of Artemis, fashioned (with her brother’s) by the Cyclopes — with them the huntress ranges the hills, sending the “gentle arrows” that bring sudden death to women.',
+  },
+  'aphrodite-kestos-himas': {
+    names: [
+      { value: 'κεστὸς ἱμάς', script: 'Greek', tradition: 'Greek', rom: 'kestos himas', meaning: 'the embroidered band/strap', source: 'Homer, Iliad 14.214' },
+    ],
+    kind: 'garment', classId: 'girdle',
+    custody: [
+      { role: 'owned by', personId: 'greek_hesiod_aphrodite', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 14.214–223' }] },
+      { role: 'borrowed by', personId: 'greek_hesiod_hera', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 14.214–223 (the Deception of Zeus)' }], note: 'Hera borrows it to seduce and distract Zeus.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 14.214–223 (the embroidered band holding Love, Desire, and beguiling persuasion)' },
+    ],
+    lore: 'Aphrodite’s embroidered breast-band, woven with Love, Desire, and sweet whispered enticement; whoever wears it cannot be refused. In the Iliad she lends it to Hera to beguile Zeus.',
+  },
+  'hephaestus-tools': {
+    names: [
+      { value: 'σφῦρα καὶ πυράγρη', script: 'Greek', tradition: 'Greek', rom: 'sphyra kai pyragrē', meaning: 'hammer and fire-tongs (with the anvil, ákmōn)', source: 'Homer, Iliad 18.476–477' },
+    ],
+    kind: 'tool', classId: 'smith-tools',
+    custody: [
+      { role: 'wielded by', personId: 'greek_hesiod_hephaestus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.468–477' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 18.468–477 (he sets the anvil, takes hammer and tongs to forge the shield of Achilles)' },
+    ],
+    lore: 'The hammer, tongs, and anvil of Hephaestus, the smith-god — the tools with which he forged the shield of Achilles, the arms of the gods, and the wonders of Olympus.',
+  },
+  'hephaestus-golden-handmaidens': {
+    names: [
+      { value: 'χρύσειαι ἀμφίπολοι', script: 'Greek', tradition: 'Greek', rom: 'chryseiai amphipoloi', meaning: 'golden attendant-maidens', source: 'Homer, Iliad 18.417–420' },
+    ],
+    kind: 'tool', classId: 'automaton',
+    maker: { name: 'Hephaestus', role: 'fashioned by', personId: 'greek_hesiod_hephaestus' },
+    custody: [
+      { role: 'fashioned by', personId: 'greek_hesiod_hephaestus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.417–420' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 18.417–420 (golden maidens with mind, voice, and strength who attend him)' },
+      { kind: 'primary', reference: 'Homer, Iliad 18.373–377 (the self-moving golden tripods)' },
+    ],
+    lore: 'Living statues of gold that Hephaestus made to support his lame steps — automata endowed with mind, speech, and skill. With his self-rolling tripods they are mythology’s earliest robots.',
+  },
+  'ares-spear': {
+    names: [
+      { value: 'ἔγχος', script: 'Greek', tradition: 'Greek', rom: 'enchos', meaning: 'spear (with bronze war-gear)', source: 'Homer, Iliad 5.855–859' },
+    ],
+    kind: 'weapon', classId: 'spear',
+    custody: [
+      { role: 'wielded by', personId: 'greek_hesiod_ares', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.855–859; Homeric Hymn 8.1–4' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 5.855–859 (Diomedes drives the spear into Ares)' },
+      { kind: 'primary', reference: 'Homeric Hymn 8 to Ares 1–4 (golden-helmed, mighty with the spear)' },
+    ],
+    lore: 'The spear and bronze war-gear of Ares, the war-god — the “brazen-armed,” whose blade is bloodlust itself; even so, Athena’s craft twice masters his fury in the Iliad.',
+  },
+  'hera-sceptre': {
+    names: [
+      { value: 'σκῆπτρον', script: 'Greek', tradition: 'Greek', rom: 'skēptron', meaning: 'royal staff (cuckoo-topped)', source: 'Pausanias 2.17.4' },
+    ],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [
+      { role: 'borne by', personId: 'greek_hesiod_hera', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pausanias 2.17.4 (the Argive cult statue by Polykleitos)' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Pausanias 2.17.4 (Hera holds a sceptre topped with a cuckoo, and a pomegranate)' },
+    ],
+    lore: 'The sceptre of Hera, queen of the gods, crowned in her great Argive cult-statue with a cuckoo — the bird as which Zeus first wooed her — held opposite a pomegranate of marriage and fruitfulness.',
+  },
+  'demeter-torches': {
+    names: [
+      { value: 'λαμπάδες', script: 'Greek', tradition: 'Greek', rom: 'lampades', meaning: 'torches', source: 'Homeric Hymn 2.47–48' },
+    ],
+    kind: 'ritual-object', classId: 'torch',
+    custody: [
+      { role: 'borne by', personId: 'greek_hesiod_demeter', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homeric Hymn 2 to Demeter 47–48' }] },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homeric Hymn 2 to Demeter 47–48 (she ranges the earth, blazing torches in her hands)' },
+    ],
+    lore: 'The twin torches Demeter kindled to search the world, day and night, for her stolen daughter Persephone — emblems of the grieving mother and of the night-rites of her Eleusinian Mysteries.',
+  },
+  'dionysus-thyrsus': {
+    names: [
+      { value: 'θύρσος', script: 'Greek', tradition: 'Greek', rom: 'thyrsos', meaning: 'fennel wand wreathed in ivy, tipped with a pine-cone', source: 'Euripides, Bacchae 176' },
+    ],
+    kind: 'ritual-object', classId: 'thyrsus',
+    custody: [
+      { role: 'borne by', personId: 'greek_hesiod_dionysus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae 113–114, 176, 941' }], note: 'Borne also by his Maenads; struck on rock it brings forth water, wine, or honey.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Euripides, Bacchae 113–114, 176, 941 (the god and his thiasos bear the ivy-twined thyrsos)' },
+    ],
+    lore: 'The thyrsus — a fennel stalk wound with ivy and tipped with a pine-cone — borne by Dionysus and his ecstatic Maenads; in their hands it drips honey and milk, and wounds those who scorn the god.',
+  },
+  'hebe-cup': {
+    names: [
+      { value: 'οἰνοχόη', script: 'Greek', tradition: 'Greek', rom: 'oinochoē', meaning: 'wine-pitcher (of the gods’ cupbearer)', source: 'Homer, Iliad 4.2–3' },
+    ],
+    kind: 'vessel', classId: 'cup',
+    custody: [
+      { role: 'borne by', personId: 'greek_hesiod_hebe', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 4.2–3' }], note: 'Hebe was cupbearer before Ganymede.' },
+    ],
+    sources: [
+      { kind: 'primary', reference: 'Homer, Iliad 4.2–3 (Hebe pours the nectar for the gods)' },
+    ],
+    lore: 'The nectar-pitcher of Hebe, goddess of youth, who poured the gods’ immortal drink at the feasts of Olympus before the office passed to Ganymede.',
+  },
+
+  // ═══ Roman deities & Romulus ════════════════════════════════════════════
+  'iuppiter-fulmen': {
+    names: [{ value: 'Fulmen', script: 'Latin', tradition: 'Roman', meaning: 'thunderbolt, lightning-stroke', source: 'Ovid, Met. 2.304–313' }],
+    kind: 'weapon', classId: 'thunderbolt',
+    maker: { name: 'the Cyclopes at Vulcan’s forge', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Cyclopes (Brontes, Steropes, Pyracmon) under Vulcan', tradition: 'Roman' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.424–432' }] },
+      { role: 'wielded by', personId: 'roman_iuppiter', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Met. 1.253–258; Virgil, Aeneid 6.585–586' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.424–432 (the Cyclopes forging the fulmen)' }, { kind: 'primary', reference: 'Ovid, Metamorphoses 1.253–258, 2.304–313' }],
+    lore: 'The thunderbolt of Jupiter, forged by the Cyclopes at Vulcan’s Etnean forge — the bolt that strikes the impious and seals his sovereignty; where it falls, the spot is consecrated as a bidental.',
+  },
+  'roman-aegis': {
+    names: [{ value: 'Aegis', script: 'Latin', tradition: 'Roman', meaning: 'the Gorgon-bearing storm-shield', source: 'Virgil, Aeneid 8.435–438' }],
+    kind: 'symbol', classId: 'aegis',
+    maker: { name: 'Vulcan and the Cyclopes', role: 'wrought by' },
+    custody: [
+      { role: 'wrought by', externalRef: { name: 'Vulcan and the Cyclopes', tradition: 'Roman' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.435–438' }] },
+      { role: 'brandished by', personId: 'roman_iuppiter', era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.353–354' }] },
+      { role: 'borne by', personId: 'roman_minerva', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Met. 6.78–79' }], note: 'In Roman usage the aegis is predominantly Minerva’s.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.435–438 (the serpent-fringed aegis with the Gorgon, wrought for Pallas)' }, { kind: 'primary', reference: 'Ovid, Metamorphoses 6.78–79' }],
+    lore: 'The Roman aegis — the serpent-fringed storm-shield set with the Gorgon’s head, wrought in Vulcan’s forge; brandished by Jupiter over the Capitol but in Latin poetry above all the device of Minerva.',
+  },
+  'iuppiter-sceptrum': {
+    names: [{ value: 'Sceptrum', script: 'Latin', tradition: 'Roman', meaning: 'royal staff of sovereignty', source: 'Ovid, Met. 1.178–179' }],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [{ role: 'borne by', personId: 'roman_iuppiter', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Met. 1.178–179' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Metamorphoses 1.178–179 (Jupiter enthroned with the sceptre of state)' }],
+    lore: 'The sceptre of Jupiter Optimus Maximus, emblem of his rule over gods and men — the seated, eagle-and-bolt figure of the Capitoline cult statue holds it as the sign of sovereignty.',
+  },
+  'spolia-opima': {
+    names: [{ value: 'Spolia opima', script: 'Latin', tradition: 'Roman', meaning: '“the richest spoils” — arms a Roman commander strips from an enemy leader slain in single combat', source: 'Livy 1.10.5–7' }],
+    kind: 'ritual-object', classId: 'war-trophy',
+    custody: [
+      { role: 'instituted by (first won, from Acron)', personId: 'roman_romulus', date: 'regal era', where: 'Rome', sources: [{ kind: 'primary', reference: 'Livy 1.10.4–7; Plutarch, Romulus 16' }] },
+      { role: 'dedicated to', personId: 'roman_iuppiter', where: 'the Temple of Iuppiter Feretrius, Capitol', sources: [{ kind: 'primary', reference: 'Dionysius of Halicarnassus 2.34.4; Propertius 4.10' }], note: 'Only three Romans ever won it: Romulus, Cossus, Marcellus.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Livy, Ab Urbe Condita 1.10.4–7' }, { kind: 'primary', reference: 'Plutarch, Romulus 16; Propertius 4.10' }],
+    lore: 'The “richest spoils” — the armour stripped from an enemy general killed hand-to-hand by a Roman commander, dedicated to Jupiter Feretrius. Romulus won the first from Acron of Caenina and founded the rite; in all Roman history only three earned it.',
+  },
+  'neptunus-tridens': {
+    names: [{ value: 'Tridens', script: 'Latin', tradition: 'Roman', meaning: 'three-pronged spear, trident', source: 'Virgil, Aeneid 1.145' }],
+    kind: 'weapon', classId: 'trident',
+    custody: [{ role: 'wielded by', personId: 'roman_neptunus', era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 1.138, 145; Ovid, Met. 1.283–284' }] }],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 1.138, 145 (Neptune lifts the ships with his trident)' }, { kind: 'primary', reference: 'Ovid, Metamorphoses 1.283–284 (he strikes the earth at the Flood)' }],
+    lore: 'The trident of Neptune, with which the sea-god raises and stills the waves, looses the floodwaters, and quiets the storms that wreck Aeneas’s fleet.',
+  },
+  'mars-ancilia': {
+    names: [{ value: 'Ancilia', script: 'Latin', tradition: 'Roman', meaning: 'the waisted sacred shields — one fallen from heaven plus eleven copies', source: 'Ovid, Fasti 3.259–392' }],
+    kind: 'ritual-object', classId: 'sacred-shield',
+    maker: { name: 'Mamurius Veturius (the eleven copies)', role: 'forged by' },
+    custody: [
+      { role: 'fell from heaven (a pledge of empire) under', externalRef: { name: 'King Numa Pompilius, on Egeria’s counsel', tradition: 'Roman' }, era: 'regal era', sources: [{ kind: 'primary', reference: 'Plutarch, Numa 13' }] },
+      { role: 'copied (×11) by', externalRef: { name: 'the smith Mamurius Veturius', tradition: 'Roman' }, era: 'regal era', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.383–392' }] },
+      { role: 'guarded by', externalRef: { name: 'the Salii priesthood (in the Regia)', tradition: 'Roman' }, era: 'regal–imperial', sources: [{ kind: 'primary', reference: 'Livy 1.20.4' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.259–392' }, { kind: 'primary', reference: 'Plutarch, Numa 13; Livy 1.20.4' }],
+    lore: 'The sacred figure-of-eight shields of Mars: one fell from the sky as a pledge of Rome’s empire under Numa, who had eleven indistinguishable copies forged by Mamurius Veturius so it could not be stolen. The leaping Salii priests bore them through the city each March.',
+  },
+  'mars-hastae-martiae': {
+    names: [{ value: 'Hastae Martiae', script: 'Latin', tradition: 'Roman', meaning: 'the sacred spears of Mars kept in the Regia', source: 'Aulus Gellius, Noctes Atticae 4.6' }],
+    kind: 'ritual-object', classId: 'sacred-spear',
+    custody: [{ role: 'kept in the sacrarium Martis of', personId: 'roman_mars', where: 'the Regia, Roman Forum', era: 'regal–imperial', sources: [{ kind: 'primary', reference: 'Aulus Gellius 4.6' }], note: 'A general grasped them crying “Mars vigila!”; their stirring of themselves was a dire prodigy (before Caesar’s murder, 44 BCE).' }],
+    sources: [{ kind: 'primary', reference: 'Aulus Gellius, Noctes Atticae 4.6' }, { kind: 'primary', reference: 'Julius Obsequens 44; Cassius Dio 44.17' }],
+    lore: 'The sacred spears of Mars in the Regia, which a Roman general grasped before war with the cry “Mars, awake!”. When they were seen to quiver of their own accord, Rome read it as an omen of catastrophe — as on the eve of Caesar’s assassination.',
+  },
+  'minerva-hasta': {
+    names: [{ value: 'Hasta', script: 'Latin', tradition: 'Roman', meaning: 'spear', source: 'Ovid, Fasti 3.5–8' }],
+    kind: 'weapon', classId: 'spear',
+    custody: [{ role: 'borne by', personId: 'roman_minerva', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.5–8; Met. 2.752–754' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.5–8 (Mars charmed by the armed, spear-bearing Minerva)' }],
+    lore: 'The spear of Minerva, goddess of strategic war and crafts — borne with helm and aegis as the mark of disciplined valour, opposite to the raw battle-fury of Mars.',
+  },
+  'minerva-galea': {
+    names: [{ value: 'Galea', script: 'Latin', tradition: 'Roman', meaning: 'crested war-helmet', source: 'Ovid, Met. 6.43–44' }],
+    kind: 'garment', classId: 'helmet',
+    custody: [{ role: 'worn by', personId: 'roman_minerva', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Met. 6.43–44 (helmeted in the Arachne contest)' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Metamorphoses 6.43–44; standard Capitoline-triad iconography' }],
+    lore: 'Minerva’s crested helmet, worn in the Capitoline triad and in every contest of skill — the war-goddess armed, as when she matched her weaving against Arachne.',
+  },
+  'mercurius-caduceus': {
+    names: [{ value: 'Caduceus', script: 'Latin', tradition: 'Roman', meaning: 'the herald’s wand, twined with serpents', source: 'Virgil, Aeneid 4.242–244' }],
+    kind: 'tool', classId: 'herald-staff',
+    custody: [{ role: 'borne by', personId: 'roman_mercurius', era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 4.242–244; Ovid, Met. 1.671–672' }] }],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 4.242–244 (the wand that summons and dismisses souls, and gives or steals sleep)' }],
+    lore: 'The caduceus of Mercury — the serpent-twined wand with which the messenger-god escorts souls to the underworld, calls the dead from it, and lays mortals asleep or wakes them.',
+  },
+  'mercurius-talaria': {
+    names: [{ value: 'Talaria', script: 'Latin', tradition: 'Roman', meaning: 'the golden winged sandals', source: 'Virgil, Aeneid 4.239–241' }],
+    kind: 'garment', classId: 'winged-sandals',
+    custody: [{ role: 'worn by', personId: 'roman_mercurius', era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 4.239–241' }] }],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 4.239–241 (the golden talaria that bear him over sea and land); Ovid, Met. 1.671' }],
+    lore: 'The golden winged sandals of Mercury, that carry the god “as fast as the gale” over sea and land alike on his errands between Olympus and earth.',
+  },
+  'mercurius-petasus': {
+    names: [{ value: 'Petasus', script: 'Latin', tradition: 'Roman', meaning: 'the broad-brimmed traveller’s hat, often winged', source: 'Roman iconography' }],
+    kind: 'garment', classId: 'winged-hat',
+    custody: [{ role: 'worn by', personId: 'roman_mercurius', era: 'mythic', sources: [{ kind: 'secondary', reference: 'standard Mercury iconography' }] }],
+    sources: [{ kind: 'secondary', reference: 'Standard Roman iconography of Mercury (winged petasus and chlamys)' }],
+    lore: 'The winged traveller’s hat of Mercury — paired with the talaria and the caduceus as the marks of the god of roads, travellers, and messages. (An iconographic attribute more than a named literary artifact.)',
+  },
+  'diana-arcus': {
+    names: [{ value: 'Arcus et Sagittae', script: 'Latin', tradition: 'Roman', meaning: 'bow and arrows (with the quiver, pharetra)', source: 'Ovid, Met. 3.156–157' }],
+    kind: 'weapon', classId: 'bow-and-arrows',
+    custody: [{ role: 'borne by', personId: 'roman_diana', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Met. 3.156–157; Catullus 34' }] }],
+    sources: [{ kind: 'primary', reference: 'Catullus 34 (Hymn to Diana); Ovid, Metamorphoses 2.441–442, 3.156–157' }],
+    lore: 'The bow, quiver, and arrows of Diana, virgin goddess of the hunt and the wild — the weapons of the “lady of the mountains” who looses sudden death and guards the woods and their creatures.',
+  },
+  'diana-fax': {
+    names: [{ value: 'Fax', script: 'Latin', tradition: 'Roman', meaning: 'torch (esp. in her Trivia/night aspect)', source: 'Ovid, Fasti 3.269–270' }],
+    kind: 'symbol', classId: 'torch',
+    custody: [{ role: 'borne by', personId: 'roman_diana', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.269–270 (the torch-lit Nemoralia at the Arician grove)' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.269–270; Diana Trivia iconography' }],
+    lore: 'The torch of Diana in her three-formed Trivia aspect, carried by night through the sacred grove at Aricia in the August festival of the Nemoralia.',
+  },
+  'ceres-fax': {
+    names: [{ value: 'Fax', script: 'Latin', tradition: 'Roman', meaning: 'the pine-torch kindled at Etna', source: 'Ovid, Fasti 4.491–494' }],
+    kind: 'symbol', classId: 'torch',
+    custody: [{ role: 'borne by', personId: 'roman_ceres', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 4.491–494; Met. 5.441–443' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Fasti 4.491–494 (Ceres lights two pine torches at Etna to seek Proserpina)' }],
+    lore: 'The twin torches Ceres kindled at the fires of Etna and bore over the world, day and night, in her grief-stricken search for her stolen daughter Proserpina.',
+  },
+  'ceres-spicae': {
+    names: [{ value: 'Spicae', script: 'Latin', tradition: 'Roman', meaning: 'ears/sheaf of grain (and her grain-garland, corona spicea)', source: 'Tibullus 1.1.15' }],
+    kind: 'symbol', classId: 'grain-sheaf',
+    custody: [{ role: 'borne by', personId: 'roman_ceres', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 4.615–618; Tibullus 1.1.15' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Fasti 4 (the Cerealia); Tibullus 1.1.15 (the grain-garland)' }],
+    lore: 'The sheaf of grain and grain-ear garland of Ceres, goddess of the harvest — the emblem of the corn she gave to humankind and of the fertility her rites renew each spring.',
+  },
+  'ceres-sceptrum': {
+    names: [{ value: 'Sceptrum', script: 'Latin', tradition: 'Roman', meaning: 'sceptre', source: 'Ceres iconography' }],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [{ role: 'borne by', personId: 'roman_ceres', era: 'mythic', sources: [{ kind: 'secondary', reference: 'standard Ceres statue types' }] }],
+    sources: [{ kind: 'secondary', reference: 'Standard Ceres/Demeter iconography (enthroned with grain, torch, and sceptre)' }],
+    lore: 'The sceptre of Ceres as queen of the fruitful earth — the staff she holds enthroned among her grain and torches. (An iconographic attribute rather than a named literary object.)',
+  },
+  'volcanus-malleus': {
+    names: [{ value: 'Malleus et Forceps', script: 'Latin', tradition: 'Roman', meaning: 'hammer and tongs (with the anvil, incus)', source: 'Virgil, Aeneid 8.450–453' }],
+    kind: 'tool', classId: 'smith-tools',
+    custody: [{ role: 'wielded by', personId: 'roman_volcanus', era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.419–453' }] }],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.419–453 (Vulcan and the Cyclopes at the anvils, forging arms)' }],
+    lore: 'The hammer, tongs, and anvil of Vulcan, the lame smith-god, at whose Etnean forge the Cyclopes hammer out the thunderbolts of Jupiter and the arms of heroes.',
+  },
+  'iuno-sceptrum': {
+    names: [{ value: 'Sceptrum', script: 'Latin', tradition: 'Roman', meaning: 'the queen’s sceptre', source: 'Iuno Regina iconography' }],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [{ role: 'borne by', personId: 'roman_iuno', era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 1.46 (divum incedo regina); Iuno Regina cult' }] }],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 1.46–48; Iuno Regina statuary (sceptre and patera)' }],
+    lore: 'The sceptre of Juno, queen of the gods (Iuno Regina) — the staff of the “queen who walks among the gods,” borne with her diadem as the sign of her sovereignty.',
+  },
+  'iuno-diadema': {
+    names: [{ value: 'Diadema', script: 'Latin', tradition: 'Roman', meaning: 'royal diadem / crown', source: 'Iuno Regina iconography' }],
+    kind: 'garment', classId: 'diadem',
+    custody: [{ role: 'worn by', personId: 'roman_iuno', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Iuno Regina iconography' }] }],
+    sources: [{ kind: 'secondary', reference: 'Iuno Regina cult iconography (diadem and sceptre)' }],
+    lore: 'The diadem of Juno Regina, mark of the queen of heaven. (Iconographically standard for the queen-goddess, more than individuated in the texts.)',
+  },
+  'liber-thyrsus': {
+    names: [{ value: 'Thyrsus', script: 'Latin', tradition: 'Roman', meaning: 'the ivy-and-vine-wound fennel wand tipped with a pine-cone', source: 'Ovid, Met. 3.542' }],
+    kind: 'symbol', classId: 'thyrsus',
+    custody: [{ role: 'borne by', personId: 'roman_liber', era: 'mythic', sources: [{ kind: 'primary', reference: 'Ovid, Met. 3.542; Fasti 3.713ff.' }] }],
+    sources: [{ kind: 'primary', reference: 'Ovid, Metamorphoses 3.542, 11.27–28; Fasti 3.713–790 (the Liberalia)' }],
+    lore: 'The thyrsus of Liber Pater, the Italic god of wine and freedom identified with Bacchus — the ivy-wreathed wand borne by the god and his revellers at the spring Liberalia.',
+  },
+  'romulus-lituus': {
+    names: [{ value: 'Lituus', script: 'Latin', tradition: 'Roman', meaning: 'the crook-topped augur’s staff for marking the templum of the sky', source: 'Cicero, De Divinatione 1.30' }],
+    kind: 'tool', classId: 'augur-staff',
+    custody: [
+      { role: 'used by (the founder-augur)', personId: 'roman_romulus', era: 'regal era', sources: [{ kind: 'primary', reference: 'Plutarch, Romulus 22; Cicero, Div. 1.30' }] },
+      { role: 'preserved on the Palatine; found unharmed after the Gallic fire', externalRef: { name: 'the Roman state', tradition: 'Roman' }, date: 'to 390 BCE', sources: [{ kind: 'primary', reference: 'Cicero, De Divinatione 1.30; Dionysius of Halicarnassus 14.2' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Plutarch, Romulus 22; Cicero, De Divinatione 1.30; Livy 1.18.7' }],
+    lore: 'The augural staff of Romulus, with which the founder marked out the quarters of the sky to take the auspices for Rome. Kept as a sacred relic on the Palatine, it was found whole and unburnt in the ashes after the Gauls sacked the city.',
+  },
+  'romulus-hasta-corni': {
+    names: [{ value: 'Hasta (cornea)', script: 'Latin', tradition: 'Roman', meaning: 'the cornel-wood spear whose shaft took root as a tree', source: 'Plutarch, Romulus 20' }],
+    kind: 'symbol', classId: 'sacred-spear',
+    custody: [{ role: 'cast by', personId: 'roman_romulus', era: 'regal era', where: 'the Palatine', sources: [{ kind: 'primary', reference: 'Plutarch, Romulus 20; Ovid, Met. 15.560–564' }], note: 'The cornel shaft rooted and grew into a sacred tree, venerated on the Palatine.' }],
+    sources: [{ kind: 'primary', reference: 'Plutarch, Romulus 20; Ovid, Metamorphoses 15.560–564' }],
+    lore: 'The spear Romulus hurled from the Aventine to the Palatine, whose cornel-wood shaft struck so deep it took root and grew into a tree — thereafter walled round and revered by Romans as a living omen of the city’s fortune.',
+  },
+
+  // ═══ Hindu (Vedic devas & the Mahābhārata) ═══════════════════════════════
+  'indra-vajra': {
+    names: [
+      { value: 'वज्र', script: 'Devanagari', tradition: 'Hindu', rom: 'vajra', meaning: 'thunderbolt; “the hard/mighty one” (also: diamond)', source: 'Ṛgveda 1.32' },
+    ],
+    kind: 'weapon', classId: 'vajra',
+    maker: { name: 'Tvaṣṭṛ (from the bones of the sage Dadhīci)', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Tvaṣṭṛ, from the bones the sage Dadhīci gave up', tradition: 'Hindu' }, era: 'vedic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva (the Dadhīci episode)' }] },
+      { role: 'wielded by', personId: 'hindu_indra', era: 'vedic', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32 (Indra slays Vṛtra with the vajra)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32 (Hiraṇyastūpa Āṅgirasa; the vajra fashioned by Tvaṣṭṛ)' }, { kind: 'primary', reference: 'Mahābhārata, Vana Parva (Dadhīci gives his bones; Tvaṣṭṛ forges the vajra)' }],
+    lore: 'The thunderbolt of Indra, fashioned by the artificer Tvaṣṭṛ — in the epic, from the bones the ascetic Dadhīci surrendered for the gods. With it the king of heaven split the serpent Vṛtra and loosed the pent-up waters; it makes him Vajrin, “the wielder of the bolt.”',
+  },
+  'arjuna-gandiva': {
+    names: [
+      { value: 'गाण्डीव', script: 'Devanagari', tradition: 'Hindu', rom: 'Gāṇḍīva', meaning: 'the divine bow equal to a hundred thousand bows', source: 'Mahābhārata, Adi Parva 227' },
+    ],
+    kind: 'weapon', classId: 'bow',
+    maker: { name: 'Brahmā (in later tradition); delivered through Varuṇa', role: 'made by' },
+    custody: [
+      { role: 'given (with two inexhaustible quivers) by', externalRef: { name: 'Agni, drawing it from Varuṇa, at the burning of the Khāṇḍava forest', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Adi Parva 227' }] },
+      { role: 'wielded by', personId: 'hindu_arjuna', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Adi Parva 227 onward' }] },
+      { role: 'returned to', externalRef: { name: 'Varuṇa (cast into the sea at the Pāṇḍavas’ final journey)', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Mahāprasthānika Parva' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Adi Parva, Khāṇḍava-daha Parva 227 (Varuṇa’s gift via Agni)' }, { kind: 'primary', reference: 'Mahābhārata, Mahāprasthānika Parva (the Gāṇḍīva returned to the waters)' }],
+    lore: 'The celestial bow Gāṇḍīva, given to Arjuna by Agni at the burning of the Khāṇḍava forest, with two quivers whose arrows never run out — “equal to a hundred thousand bows.” At the Pāṇḍavas’ last journey he gives it back to the sea.',
+  },
+  'arjuna-pashupatastra': {
+    names: [
+      { value: 'पाशुपतास्त्र', script: 'Devanagari', tradition: 'Hindu', rom: 'Pāśupatāstra', meaning: 'the irresistible missile of Paśupati (Śiva)', source: 'Mahābhārata, Vana Parva (Kairāta)' },
+    ],
+    kind: 'weapon', classId: 'astra',
+    custody: [
+      { role: 'granted by', externalRef: { name: 'Śiva (as the mountain hunter, the Kirāta)', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva, Kairāta Parva' }] },
+      { role: 'held by', personId: 'hindu_arjuna', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva, Kairāta Parva' }], note: 'Never to be loosed against a weaker foe; capable of destroying the world.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva, Kairāta Parva (after the duel with the Kirāta, Śiva grants the Pāśupata)' }],
+    lore: 'The Pāśupata, Śiva’s own doomsday weapon, won by Arjuna after he fought the god disguised as a wild mountain-hunter and matched him blow for blow. It must never be used against a lesser enemy, lest it consume the world.',
+  },
+  'arjuna-devadatta': {
+    names: [
+      { value: 'देवदत्त', script: 'Devanagari', tradition: 'Hindu', rom: 'Devadatta', meaning: '“God-given” — Arjuna’s war-conch', source: 'Bhagavad Gītā 1.15' },
+    ],
+    kind: 'symbol', classId: 'conch',
+    custody: [
+      { role: 'given (formerly Varuṇa’s) by', externalRef: { name: 'Maya Dānava', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Sabhā Parva 3' }] },
+      { role: 'blown by', personId: 'hindu_arjuna', era: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.15 (“Devadattaṁ Dhanañjayaḥ”)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.15 (= Mahābhārata, Bhīṣma Parva); Sabhā Parva 3' }],
+    lore: 'Devadatta, “the God-given,” the great conch Arjuna sounds on the field of Kurukṣetra at the opening of the Gītā — once Varuṇa’s, given to him by the demon-architect Maya.',
+  },
+  'karna-kavacha-kundala': {
+    names: [
+      { value: 'कवच और कुण्डल', script: 'Devanagari', tradition: 'Hindu', rom: 'kavaca-kuṇḍala', meaning: 'the natural armour and earrings, gift of the sun-god Sūrya', source: 'Mahābhārata, Vana Parva (Kuṇḍala-āharaṇa)' },
+    ],
+    kind: 'garment', classId: 'armor',
+    maker: { name: 'innate — the boon of his father Sūrya', role: 'gift of' },
+    custody: [
+      { role: 'born with it (gift of)', personId: 'hindu_karna', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva, Kuṇḍala-āharaṇa Parva' }] },
+      { role: 'cut from his body and given as alms to', externalRef: { name: 'Indra (disguised as a brahmin)', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva (in exchange for the Vāsavī Śakti)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva, Kuṇḍala-āharaṇa Parva (Sūrya’s warning; Karṇa cuts off and gives his armour and earrings to Indra)' }],
+    lore: 'The golden armour and earrings Karṇa was born wearing, the gift of his father the Sun, which made him invulnerable. Indra, fearing for Arjuna, came as a beggar and asked for them; the famously generous Karṇa cut them from his own flesh and gave them away.',
+  },
+  'karna-vasavi-shakti': {
+    names: [
+      { value: 'वासवी शक्ति', script: 'Devanagari', tradition: 'Hindu', rom: 'Vāsavī Śakti', meaning: 'the infallible single-use dart of Vāsava (Indra)', source: 'Mahābhārata, Vana Parva' },
+    ],
+    kind: 'weapon', classId: 'dart',
+    custody: [
+      { role: 'given (for the armour and earrings) by', externalRef: { name: 'Indra', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva, Kuṇḍala-āharaṇa Parva' }] },
+      { role: 'spent (on Ghaṭotkaca) by', personId: 'hindu_karna', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Droṇa Parva' }], note: 'Usable only once; Karṇa is forced to expend it on Ghaṭotkaca instead of Arjuna.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva (Indra’s gift); Droṇa Parva (Karṇa kills Ghaṭotkaca with it)' }],
+    lore: 'The Vāsavī Śakti, an unerring dart Indra gave Karṇa in exchange for his god-born armour — but it could be thrown only once. On the night-battlefield Karṇa was driven to hurl it at the rampaging giant Ghaṭotkaca, spending against him the weapon he had saved for Arjuna.',
+  },
+  'karna-vijaya': {
+    names: [
+      { value: 'विजय', script: 'Devanagari', tradition: 'Hindu', rom: 'Vijaya', meaning: '“Victory” — the bow made by Viśvakarmā for Indra', source: 'Mahābhārata, Karṇa Parva' },
+    ],
+    kind: 'weapon', classId: 'bow',
+    maker: { name: 'Viśvakarmā (originally for Indra)', role: 'forged by' },
+    custody: [
+      { role: 'given to Karṇa by', externalRef: { name: 'Paraśurāma (his guru)', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Karṇa Parva' }] },
+      { role: 'wielded by', personId: 'hindu_karna', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Karṇa Parva (the 17th day)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Karṇa Parva (Karṇa praises Vijaya above the Gāṇḍīva; used against Arjuna)' }],
+    lore: 'Vijaya, “Victory,” the bow Viśvakarmā made for Indra and Paraśurāma gave to his pupil Karṇa — which Karṇa held to surpass even Arjuna’s Gāṇḍīva. He strung it for their final duel on the seventeenth day of the war.',
+  },
+  'yudhishthira-akshaya-patra': {
+    names: [
+      { value: 'अक्षयपात्र', script: 'Devanagari', tradition: 'Hindu', rom: 'Akṣaya-pātra', meaning: 'the inexhaustible vessel', source: 'Mahābhārata, Vana Parva' },
+    ],
+    kind: 'vessel', classId: 'alms-bowl',
+    custody: [
+      { role: 'given by', externalRef: { name: 'Sūrya (the sun-god)', tradition: 'Hindu' }, era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva' }] },
+      { role: 'held by', personId: 'hindu_yudhishthira', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva' }], note: 'It yields endless food each day until Draupadī, eating last, has finished.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva (Sūrya gives Yudhiṣṭhira the inexhaustible copper vessel during the exile)' }],
+    lore: 'The inexhaustible vessel the Sun gave Yudhiṣṭhira in the forest exile, which produced food without end each day — until Draupadī, who always ate last, had taken her meal. It let the Pāṇḍavas feed the thousands of brahmins who followed them.',
+  },
+  'yudhishthira-anantavijaya': {
+    names: [{ value: 'अनन्तविजय', script: 'Devanagari', tradition: 'Hindu', rom: 'Anantavijaya', meaning: '“Endless Victory” — Yudhiṣṭhira’s war-conch', source: 'Bhagavad Gītā 1.16' }],
+    kind: 'symbol', classId: 'conch',
+    custody: [{ role: 'blown by', personId: 'hindu_yudhishthira', era: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16' }] }],
+    sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16 (= Mahābhārata, Bhīṣma Parva)' }],
+    lore: 'Anantavijaya, “Endless Victory,” the conch of the eldest Pāṇḍava and rightful king Yudhiṣṭhira, sounded among the five brothers’ named conches at the start of the Gītā.',
+  },
+  'bhima-paundra': {
+    names: [{ value: 'पौण्ड्र', script: 'Devanagari', tradition: 'Hindu', rom: 'Pauṇḍra', meaning: 'the great conch of Bhīma', source: 'Bhagavad Gītā 1.15' }],
+    kind: 'symbol', classId: 'conch',
+    custody: [{ role: 'blown by', personId: 'hindu_bhima', era: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.15' }] }],
+    sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.15 (“pauṇḍraṁ dadhmau mahā-śaṅkhaṁ … vṛkodaraḥ”)' }],
+    lore: 'Pauṇḍra, the “great conch” of the mighty Bhīma, the wolf-bellied second Pāṇḍava — one of the five named conch-blasts that answer Kṛṣṇa’s Pāñcajanya across the battlefield.',
+  },
+  'bhima-gada': {
+    names: [{ value: 'गदा', script: 'Devanagari', tradition: 'Hindu', rom: 'gadā', meaning: 'mace (no canonical proper name)', source: 'Mahābhārata, Sabhā Parva' }],
+    kind: 'weapon', classId: 'mace',
+    custody: [{ role: 'wielded by', personId: 'hindu_bhima', era: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata, Śalya Parva (the mace-duel with Duryodhana)' }], note: 'His great club (brought by Maya from Lake Bindusaras) is not given a proper name in the critical text — “Vṛkodara” is Bhīma’s own epithet, not the mace’s.' }],
+    sources: [{ kind: 'primary', reference: 'Mahābhārata, Sabhā Parva (Maya brings the mace); Śalya Parva (the gadā-yuddha)' }],
+    lore: 'The great mace of Bhīma, with which he fought and crushed Duryodhana in the final duel of the war. The epic gives it no proper name; the popular “Vṛkodara” is in fact Bhīma’s own by-name, “wolf-belly.”',
+  },
+  'nakula-sughosha': {
+    names: [{ value: 'सुघोष', script: 'Devanagari', tradition: 'Hindu', rom: 'Sughoṣa', meaning: '“Fair-sounding” — Nakula’s conch', source: 'Bhagavad Gītā 1.16' }],
+    kind: 'symbol', classId: 'conch',
+    custody: [{ role: 'blown by', personId: 'hindu_nakula', era: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16' }] }],
+    sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16 (“sughoṣa-maṇipuṣpakau”)' }],
+    lore: 'Sughoṣa, “the melodious,” the war-conch of Nakula, the fourth and handsomest of the Pāṇḍavas, sounded at Kurukṣetra.',
+  },
+  'sahadeva-manipushpaka': {
+    names: [{ value: 'मणिपुष्पक', script: 'Devanagari', tradition: 'Hindu', rom: 'Maṇipuṣpaka', meaning: '“Jewel-flowered” — Sahadeva’s conch', source: 'Bhagavad Gītā 1.16' }],
+    kind: 'symbol', classId: 'conch',
+    custody: [{ role: 'blown by', personId: 'hindu_sahadeva', era: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16' }] }],
+    sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16 (“sughoṣa-maṇipuṣpakau”)' }],
+    lore: 'Maṇipuṣpaka, “the jewel-flowered,” the conch of Sahadeva, the youngest Pāṇḍava and wisest in the stars, sounded with his brothers’ at the war’s opening.',
+  },
+
+  // ═══ Greek heroes ════════════════════════════════════════════════════════
+  'perseus-harpe': {
+    names: [{ value: 'ἅρπη', script: 'Greek', tradition: 'Greek', rom: 'harpē', meaning: 'the adamantine sickle-sword', source: 'Apollod. 2.4.2' }],
+    kind: 'weapon', classId: 'sickle-sword',
+    custody: [
+      { role: 'given by', externalRef: { name: 'Hermes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2' }] },
+      { role: 'wielded by', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ovid, Metamorphoses 4.720' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (the adamantine harpē from Hermes)' }, { kind: 'primary', reference: 'Ovid, Metamorphoses 4.666, 4.720' }],
+    lore: 'The adamantine sickle-sword Hermes gave Perseus, the one blade that could shear through Medusa’s neck — later turned on the sea-monster that threatened Andromeda.',
+  },
+  'perseus-kynee': {
+    names: [{ value: 'κυνέη Ἄϊδος', script: 'Greek', tradition: 'Greek', rom: 'kyneē Aïdos', meaning: 'the cap of Hades, which makes its wearer invisible', source: 'Apollod. 2.4.2' }],
+    kind: 'garment', classId: 'cap-of-invisibility',
+    custody: [
+      { role: 'belongs to', externalRef: { name: 'Hades (kept by the Stygian Nymphs)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.844–845' }] },
+      { role: 'borrowed by', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2; Homer, Iliad 5.844–845 (Athena dons the cap of Hades)' }],
+    lore: 'The cap of Hades, which renders its wearer unseen — lent to Perseus by the nymphs so he could escape Medusa’s immortal sisters after the killing.',
+  },
+  'perseus-talaria': {
+    names: [{ value: 'πτηνὰ πέδιλα', script: 'Greek', tradition: 'Greek', rom: 'ptēna pedila', meaning: 'the winged sandals', source: 'Apollod. 2.4.2' }],
+    kind: 'garment', classId: 'winged-sandals',
+    custody: [{ role: 'borrowed (from the Nymphs) by', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2; Ovid, Met. 4.665–667' }] }],
+    sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2; Ovid, Metamorphoses 4.665–667' }],
+    lore: 'The winged sandals, gift of the Stygian Nymphs, that bore Perseus through the air to the Gorgons’ lair at the edge of the world and home again.',
+  },
+  'perseus-kibisis': {
+    names: [{ value: 'κίβισις', script: 'Greek', tradition: 'Greek', rom: 'kibisis', meaning: 'the wallet/satchel for the severed head', source: 'Apollod. 2.4.2' }],
+    kind: 'vessel', classId: 'satchel',
+    custody: [{ role: 'borne by', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2; Hesiod, Shield 224' }] }],
+    sources: [{ kind: 'primary', reference: 'Pseudo-Hesiod, Shield of Heracles 224; Apollodorus 2.4.2' }],
+    lore: 'The kibisis — the special wallet from the nymphs in which Perseus sealed Medusa’s still-deadly head, whose gaze turned the living to stone even after death.',
+  },
+  'perseus-shield-mirror': {
+    names: [{ value: 'ἀσπίς', script: 'Greek', tradition: 'Greek', rom: 'aspis', meaning: 'the polished bronze shield used as a mirror', source: 'Apollod. 2.4.2–3' }],
+    kind: 'tool', classId: 'mirror-shield',
+    custody: [
+      { role: 'lent by', externalRef: { name: 'Athena', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.3' }] },
+      { role: 'used by', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ovid, Met. 4.782–783' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2–3 (Athena guides his hand by the reflection); Ovid, Met. 4.782–783' }],
+    lore: 'Athena’s mirror-bright shield, in whose reflection Perseus watched Medusa as he struck — so that he never met the petrifying gaze head-on.',
+  },
+  'medusa-head': {
+    names: [{ value: 'Γοργόνειον', script: 'Greek', tradition: 'Greek', rom: 'Gorgoneion', meaning: 'the severed, petrifying head of Medusa', source: 'Apollod. 2.4.3' }],
+    kind: 'weapon', classId: 'petrifying-trophy',
+    custody: [
+      { role: 'severed and wielded by', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2–3 (petrifies Polydectes, Atlas, and Phineus’ band)' }] },
+      { role: 'finally set on the aegis of', personId: 'greek_hesiod_athena', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.3' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2–3; Ovid, Met. 4.655–662, 5.180–249; Pindar, Pythian 12.9–16' }],
+    lore: 'The severed head of the Gorgon Medusa, which Perseus wielded as the deadliest of weapons — a glance turned foes to stone — before giving it to Athena, who fixed it forever on her aegis.',
+  },
+  'bellerophon-golden-bridle': {
+    names: [{ value: 'χρυσάμπυξ χαλινός', script: 'Greek', tradition: 'Greek', rom: 'chrysampyx chalinos', meaning: 'the golden bridle for taming Pegasus', source: 'Pindar, Olympian 13.65–86' }],
+    kind: 'tool', classId: 'bridle',
+    maker: { name: 'Athena (given in a dream)', role: 'given by' },
+    custody: [
+      { role: 'given by', externalRef: { name: 'Athena (as Athena Chalinitis, “of the Bridle”)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pindar, Olympian 13.65–82; Pausanias 2.4.1' }] },
+      { role: 'used by', personId: 'greek_bellerophon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pindar, Olympian 13.84–90' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Pindar, Olympian 13.63–92; Pausanias 2.4.1; Apollodorus 2.3.2' }],
+    lore: 'The golden bridle Athena gave Bellerophon in a dream, with which he tamed the winged horse Pegasus at the spring Peirene and rode out to kill the Chimaera.',
+  },
+  'theseus-sword': {
+    names: [{ value: 'ξίφος', script: 'Greek', tradition: 'Greek', rom: 'xiphos', meaning: 'the sword left as a token of recognition', source: 'Apollod. 3.15.7' }],
+    kind: 'weapon', classId: 'recognition-sword',
+    custody: [
+      { role: 'hidden under a rock by', personId: 'greek_aegeus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.7' }] },
+      { role: 'recovered and borne by', personId: 'greek_apollod_theseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 3–4, 6, 12' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4, 6, 12' }],
+    lore: 'The sword Aegeus hid beneath a great rock at Troezen; when the grown Theseus rolled the stone aside and bore the blade to Athens, his father knew his son — and snatched away the poisoned cup just in time.',
+  },
+  'theseus-sandals': {
+    names: [{ value: 'πέδιλα', script: 'Greek', tradition: 'Greek', rom: 'pedila', meaning: 'the sandals left as a recognition-token', source: 'Apollod. 3.15.7' }],
+    kind: 'garment', classId: 'recognition-sandals',
+    custody: [
+      { role: 'hidden under a rock by', personId: 'greek_aegeus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.7' }] },
+      { role: 'recovered by', personId: 'greek_apollod_theseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4, 6' }],
+    lore: 'The sandals Aegeus laid beside his sword under the rock at Troezen — the paired tokens by which Theseus would one day be known as the king’s heir.',
+  },
+  'periphetes-club': {
+    names: [
+      { value: 'κορύνη', script: 'Greek', tradition: 'Greek', rom: 'korynē', meaning: 'the bronze club (whence Periphetes’ by-name Korynētēs, “Clubman”)', source: 'Apollod. Epitome 1.1' },
+    ],
+    kind: 'weapon', classId: 'club',
+    custody: [
+      { role: 'owned by', personId: 'greek_periphetes', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epitome 1.1' }], note: 'The lame Periphetes killed travellers with it on the road to the Isthmus.' },
+      { role: 'taken in combat and ever after carried by', personId: 'greek_apollod_theseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epitome 1.1; Plutarch, Theseus 8' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus, Epitome 1.1; Plutarch, Theseus 8' }],
+    lore: 'The iron-shod club of Periphetes the “Clubman,” who beat passers-by to death with it near Epidaurus — until Theseus wrested it away and bore it ever after, as Heracles wore the lion’s skin.',
+  },
+  'asclepius-rod': {
+    names: [{ value: 'ῥάβδος', script: 'Greek', tradition: 'Greek', rom: 'rhabdos', meaning: 'the single-serpent-entwined staff of healing', source: 'Pausanias 2.27.2' }],
+    kind: 'symbol', classId: 'serpent-staff',
+    custody: [{ role: 'borne by', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pausanias 2.27.2 (the Epidaurus cult-statue)' }] }],
+    sources: [{ kind: 'primary', reference: 'Pausanias 2.27.2; Hyginus, Astronomica 2.14' }],
+    lore: 'The serpent-entwined staff of Asclepius, god of medicine — a single snake coiling a rough rod, the enduring emblem of healing (and not to be confused with Hermes’ twin-snake caduceus).',
+  },
+  'asclepius-gorgon-blood': {
+    names: [{ value: 'αἷμα τῆς Γοργόνος', script: 'Greek', tradition: 'Greek', rom: 'haima tēs Gorgonos', meaning: 'the blood of the Gorgon — death from the left veins, life from the right', source: 'Apollod. 3.10.3' }],
+    kind: 'vessel', classId: 'medicine',
+    custody: [
+      { role: 'given by', externalRef: { name: 'Athena', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.10.3' }] },
+      { role: 'used by', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.10.3' }], note: 'With the right-vein blood he raised the dead — until Zeus’s thunderbolt struck him for it.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 3.10.3; cf. Euripides, Ion 999–1005' }],
+    lore: 'The Gorgon’s blood Athena gave Asclepius: drawn from the left veins it was a deadly poison, from the right a medicine that could raise the dead — the gift that let him cheat death, and the reason Zeus struck him down.',
+  },
+  'orpheus-lyre': {
+    names: [{ value: 'λύρα', script: 'Greek', tradition: 'Greek', rom: 'lyra', meaning: 'the lyre whose music charmed beasts, trees, and stones', source: 'Apollonius, Argonautica 1.494–518' }],
+    kind: 'tool', classId: 'lyre',
+    maker: { name: 'Apollo (gift); the instrument-type invented by Hermes', role: 'given by' },
+    custody: [
+      { role: 'given by', externalRef: { name: 'Apollo', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pindar, Pythian 4.176–177' }] },
+      { role: 'played by', personId: 'greek_orpheus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 1.494–518; Apollod. 1.3.2' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Pindar, Pythian 4.176–177; Apollonius of Rhodes, Argonautica 1.494–518' }],
+    lore: 'The lyre of Orpheus, whose playing moved stones and trees, calmed the Argo’s seas, and so nearly won Eurydice back from the dead — the supreme image of music’s power over nature and death.',
+  },
+  'odysseus-bow': {
+    names: [{ value: 'τόξον Ὀδυσσῆος', script: 'Greek', tradition: 'Greek', rom: 'toxon Odyssēos', meaning: 'the great bow only Odysseus could string', source: 'Homer, Odyssey 21' }],
+    kind: 'weapon', classId: 'bow',
+    custody: [
+      { role: 'inherited (from Eurytus) and given to Odysseus by', externalRef: { name: 'Iphitos son of Eurytus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 21.13–41' }] },
+      { role: 'strung and wielded by', personId: 'greek_odysseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 21.404–423; 22.1–8' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Homer, Odyssey 21.11–41, 404–423; 22.1–8' }],
+    lore: 'The great bow Iphitos gave Odysseus, once borne by Eurytus of Oechalia — which no suitor could bend. Stringing it effortlessly after twenty years away, Odysseus turned it on them and began the slaughter in his hall.',
+  },
+  'pandora-pithos': {
+    names: [
+      { value: 'πίθος', script: 'Greek', tradition: 'Greek', rom: 'pithos', meaning: 'the great storage jar (mistranslated “box” since Erasmus)', source: 'Hesiod, Works and Days 94' },
+    ],
+    kind: 'vessel', classId: 'storage-jar',
+    custody: [{ role: 'opened by', personId: 'greek_pandora', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hesiod, Works and Days 90–99' }], note: 'Lifting the lid loosed every ill upon humankind; only Hope (Elpis) stayed under the rim.' }],
+    sources: [{ kind: 'primary', reference: 'Hesiod, Works and Days 90–99; Theogony 570–593; Erasmus, Adagia (1508) on the pithos→pyxis “box”' }],
+    lore: 'The great jar of Pandora — the first woman, made by the gods as a snare for men. When she lifted its lid she let loose toil, sickness, and every evil into the world; only Hope remained behind. Erasmus’s slip of pithos for pyxis made it “Pandora’s box.”',
+  },
+  'hippolyta-girdle': {
+    names: [{ value: 'ζωστὴρ Ἄρεος', script: 'Greek', tradition: 'Greek', rom: 'zōstēr Areos', meaning: 'the war-belt of Ares, badge of the Amazon queen', source: 'Apollod. 2.5.9' }],
+    kind: 'garment', classId: 'war-belt',
+    custody: [
+      { role: 'given by', externalRef: { name: 'Ares', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.5.9' }] },
+      { role: 'worn by', personId: 'greek_hippolyta', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.5.9' }] },
+      { role: 'sought (the 9th Labour of Heracles) for', externalRef: { name: 'Admete, daughter of Eurystheus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.5.9; Diodorus 4.16' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.9; Diodorus Siculus 4.16; Euripides, Heracles 408–418' }],
+    lore: 'The war-belt of Ares worn by Hippolyte as token of her rule over the Amazons — the prize of Heracles’ ninth Labour, fetched for the princess Admete, in a quest that turned (through Hera’s mischief) to battle and the queen’s death.',
+  },
+  'memnon-armour': {
+    names: [{ value: 'τεύχεα Ἡφαίστοιο', script: 'Greek', tradition: 'Greek', rom: 'teuchea Hēphaistoio', meaning: 'armour made by Hephaestus', source: 'Quintus Smyrnaeus, Posthomerica 2.453–458' }],
+    kind: 'weapon', classId: 'divine-armour',
+    maker: { name: 'Hephaestus (at the request of Eos)', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Hephaestus, for Eos his mother', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.383–384' }] },
+      { role: 'worn by', personId: 'greek_memnon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Quintus Smyrnaeus, Posthomerica 2.453–548' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Quintus Smyrnaeus, Posthomerica 2.453–458; Virgil, Aeneid 8.383–384; Aethiopis (Proclus’ summary)' }],
+    lore: 'The divine armour Hephaestus forged for Memnon, the Ethiopian king and son of the Dawn, at his mother Eos’s plea — arms a match for Achilles’ own in their fatal duel at Troy.',
+  },
+  'orion-club': {
+    names: [{ value: 'ῥόπαλον παγχάλκεον', script: 'Greek', tradition: 'Greek', rom: 'rhopalon pankhalkeon', meaning: 'the unbreakable all-bronze club', source: 'Homer, Odyssey 11.575–577' }],
+    kind: 'weapon', classId: 'club',
+    custody: [{ role: 'borne by', personId: 'greek_orion', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 11.572–577' }] }],
+    sources: [{ kind: 'primary', reference: 'Homer, Odyssey 11.572–577 (Orion hunts the shades with his bronze club)' }],
+    lore: 'The club of solid, ever-unbroken bronze with which the giant hunter Orion drove the beasts before him — still in his hands when Odysseus glimpsed his shade hunting across the asphodel meadow of the dead.',
+  },
+  'aeneas-shield': {
+    names: [{ value: 'clipeus', script: 'Latin', tradition: 'Roman', meaning: 'the shield of Aeneas, graven with the future of Rome', source: 'Virgil, Aeneid 8.617–731' }],
+    kind: 'weapon', classId: 'divine-shield',
+    maker: { name: 'Vulcan (at the request of Venus)', role: 'forged by' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Vulcan, for Venus', tradition: 'Roman' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.407–453, 626–728' }] },
+      { role: 'borne by', personId: 'greek_aeneas', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.729–731' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.370–453, 617–731' }],
+    lore: 'The shield Vulcan forged for Aeneas at Venus’s asking, its face graven with the unborn history of Rome down to Augustus at Actium — “he lifts upon his shoulder the fame and the fate of his descendants.”',
+  },
+  'amphion-lyre': {
+    names: [{ value: 'λύρα', script: 'Greek', tradition: 'Greek', rom: 'lyra', meaning: 'the lyre whose music drew the stones into Thebes’ walls', source: 'Apollod. 3.5.5' }],
+    kind: 'tool', classId: 'lyre',
+    maker: { name: 'Hermes', role: 'given by' },
+    custody: [
+      { role: 'given by', externalRef: { name: 'Hermes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.5.5' }] },
+      { role: 'played by', personId: 'greek_amphion', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pausanias 9.5.6–8; Horace, Ars Poetica 394–396' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 3.5.5; Pausanias 9.5.6–8; Horace, Ars Poetica 394–396' }],
+    lore: 'The lyre Hermes gave Amphion, at whose music the very stones rose and fitted themselves into the walls of Thebes while his brother Zethus toiled to carry them by hand.',
+  },
+  'golden-fleece': {
+    names: [{ value: 'χρυσόμαλλον δέρας', script: 'Greek', tradition: 'Greek', rom: 'chrysomallon deras', meaning: 'the golden-woolled fleece of the ram Chrysomallos', source: 'Apollod. 1.9.1' }],
+    kind: 'symbol', classId: 'fleece-relic',
+    custody: [
+      { role: 'dedicated (the ram’s fleece) by', externalRef: { name: 'Phrixus, to King Aeetes of Colchis', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.1' }] },
+      { role: 'guarded in the grove of Ares by', externalRef: { name: 'Aeetes (and a sleepless dragon)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 2.1268–1270' }] },
+      { role: 'sent Jason to fetch it (the quest-commission)', personId: 'greek_pelias', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.16; Pindar, Pythian 4.156–168' }], note: 'Pelias never possessed the fleece; he set the quest to be rid of Jason.' },
+      { role: 'won (with Medea) by', externalRef: { name: 'Jason and the Argonauts', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 4.123–182' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.1, 1.9.16–24; Pindar, Pythian 4; Apollonius of Rhodes, Argonautica 4.123–182' }],
+    lore: 'The golden fleece of the divine ram that carried Phrixus to Colchis, nailed in the dragon-guarded grove of Ares. To be rid of his nephew, King Pelias sent Jason to fetch it — the charge that launched the voyage of the Argo.',
+  },
+
+  // ═══ Egyptian deities ════════════════════════════════════════════════════
+  'osiris-crook-and-flail': {
+    names: [
+      { value: 'ḥqꜣ', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'heka', meaning: 'the crook (shepherd’s staff of rule)', source: 'Pyramid Texts' },
+      { value: 'nḫꜣḫꜣ', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'nekhakha', meaning: 'the flail (emblem of the land’s fertility)', source: 'Faulkner, AECT' },
+    ],
+    kind: 'symbol', classId: 'regalia',
+    custody: [
+      { role: 'borne (crossed at the breast) by', personId: 'egyptian_osiris', era: 'old-kingdom-onward', sources: [{ kind: 'primary', reference: 'Pyramid Texts (Faulkner 1969)' }] },
+      { role: 'assumed as royal insignia by', externalRef: { name: 'the reigning pharaoh (as Osiris/Horus)', tradition: 'Egyptian' }, era: 'old-kingdom–Ptolemaic', sources: [{ kind: 'secondary', reference: 'crook attested from Naqada II, Abydos tomb U-547' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Pyramid Texts (Osiris with the insignia of rule)' }, { kind: 'secondary', reference: 'R. H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Osiris' }],
+    lore: 'The crook (heka) and flail (nekhakha) Osiris holds crossed over his breast — the shepherd’s staff of rule and the flail of the fertile land. From the king of the dead they pass to every pharaoh as the signs of legitimate kingship.',
+  },
+  'osiris-atef-crown': {
+    names: [{ value: 'ꜣtf', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'atef', meaning: 'the white crown flanked by two ostrich plumes', source: 'Book of the Dead' }],
+    kind: 'symbol', classId: 'crown',
+    custody: [{ role: 'worn by', personId: 'egyptian_osiris', era: 'old-kingdom-onward', sources: [{ kind: 'primary', reference: 'Pyramid Texts; Book of the Dead (Spell 125, the judgment)' }] }],
+    sources: [{ kind: 'primary', reference: 'Book of the Dead, Spell 125; Pyramid Texts' }, { kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), s.v. Osiris' }],
+    lore: 'The atef crown of Osiris — the white crown of Upper Egypt flanked by twin ostrich plumes (often with ram’s horns and a sun-disk) — worn by the lord of the dead as he presides over the weighing of hearts.',
+  },
+  'horus-eye-wedjat': {
+    names: [{ value: 'wḏꜣt', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'wedjat', meaning: '“the whole/sound one” — the healed eye of Horus', source: 'Pyramid Texts' }],
+    kind: 'symbol', classId: 'amulet',
+    custody: [
+      { role: 'injured by Seth, restored by Thoth, belongs to', personId: 'egyptian_horus', era: 'old-kingdom-onward', sources: [{ kind: 'primary', reference: 'Pyramid Texts (the Eye injured and made whole)' }] },
+      { role: 'used as offering and protective amulet by', externalRef: { name: 'the deceased (offerings called “the Eye of Horus”)', tradition: 'Egyptian' }, era: 'old-kingdom–late-period', sources: [{ kind: 'primary', reference: 'Pyramid Texts offering formulae; Book of the Dead' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Pyramid Texts; Coffin Texts; Book of the Dead' }, { kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), “Eye of Horus / wedjat”' }],
+    lore: 'The Eye of Horus — the eye Seth tore out and Thoth made whole again — emblem of healing, wholeness, and protection. Every funerary offering was called an “Eye of Horus,” and the wedjat amulet warded the living and the dead alike.',
+  },
+  'horus-pschent': {
+    names: [
+      { value: 'sḫmty', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'sekhemty', meaning: '“the Two Powerful Ones” — the red and white crowns combined', source: 'royal titulary' },
+      { value: 'pꜣ-sḫmty', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'pschent', meaning: 'the Double Crown of Upper and Lower Egypt', source: 'Wilkinson 2003' },
+    ],
+    kind: 'symbol', classId: 'crown',
+    custody: [
+      { role: 'worn by (the archetypal king)', personId: 'egyptian_horus', era: 'old-kingdom-onward', sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), s.v. Horus' }] },
+      { role: 'worn by', externalRef: { name: 'the reigning pharaoh (the “Living Horus”)', tradition: 'Egyptian' }, era: 'old-kingdom–Ptolemaic', sources: [{ kind: 'primary', reference: 'Egyptian royal titulary (nswt-bjtj)' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), “Double Crown / pschent”' }],
+    lore: 'The Double Crown — the Red Crown of Lower Egypt nested in the White Crown of Upper Egypt — worn by Horus as the model of kingship and by every pharaoh who ruled the Two Lands as the Living Horus.',
+  },
+  'was-sceptre': {
+    names: [{ value: 'wꜣs', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'was', meaning: '“dominion / power” — a staff with a forked base and an animal-head top', source: 'Faulkner, Concise Dictionary' }],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [
+      { role: 'carried by', personId: 'egyptian_horus', era: 'old-kingdom-onward', sources: [{ kind: 'primary', reference: 'Pyramid Texts; standard divine iconography' }] },
+      { role: 'carried by', personId: 'egyptian_amun', era: 'new-kingdom-onward', sources: [{ kind: 'secondary', reference: 'Karnak iconography of Amun-Ra' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'R. O. Faulkner, A Concise Dictionary of Middle Egyptian, s.v. wꜣs; Wilkinson, Complete Gods (2003)' }],
+    lore: 'The was-sceptre, “dominion” — the forked staff topped with a stylized animal head that the gods (and the king) grasp as the sign of divine power. The shared emblem of authority held across the Egyptian pantheon.',
+  },
+  'isis-tyet': {
+    names: [{ value: 'tjt', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'tyet', meaning: 'the “Knot of Isis” / “Blood of Isis,” a looped amulet of welfare and protection', source: 'Book of the Dead, Spell 156' }],
+    kind: 'symbol', classId: 'amulet',
+    custody: [
+      { role: 'emblem and power of', personId: 'egyptian_isis', era: 'new-kingdom-onward', sources: [{ kind: 'primary', reference: 'Book of the Dead, Spell 156' }] },
+      { role: 'worn (red jasper, at the throat) by', externalRef: { name: 'the deceased, for Isis’s protection', tradition: 'Egyptian' }, era: 'new-kingdom–late-period', sources: [{ kind: 'primary', reference: 'Book of the Dead, Spell 156' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Book of the Dead, Spell 156 (“the blood of Isis, the magic of Isis… shall protect”)' }, { kind: 'secondary', reference: 'Gardiner Sign List V39' }],
+    lore: 'The tyet, the “Knot of Isis” or “Blood of Isis” — a looped girdle-amulet, usually of red jasper, laid at the throat of the dead so that the goddess’s own protective magic would guard them.',
+  },
+  'isis-throne-crown': {
+    names: [{ value: 'ꜣs.t', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'Aset', meaning: 'the throne-glyph she wears on her head — the writing of her name, “the Throne/Seat”', source: 'Pyramid Texts' }],
+    kind: 'symbol', classId: 'crown',
+    custody: [{ role: 'worn by', personId: 'egyptian_isis', era: 'old-kingdom-onward', sources: [{ kind: 'primary', reference: 'Pyramid Texts (Isis named with the throne sign)' }] }],
+    sources: [{ kind: 'primary', reference: 'Pyramid Texts' }, { kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), s.v. Isis' }],
+    lore: 'The throne-glyph headdress of Isis — the very sign that spells her name, Aset, “the Throne.” As the seat of kingship personified, she is the mother who makes and holds the king. (In later ages she often borrows Hathor’s horns-and-disk instead.)',
+  },
+  'ptah-sceptre': {
+    names: [{ value: 'wꜣs-ḏd-ꜥnḫ', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'was-djed-ankh', meaning: 'a single staff joining dominion (was), stability (djed), and life (ankh)', source: 'iconography of Ptah' }],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [{ role: 'grasped by', personId: 'egyptian_ptah', era: 'old-kingdom-onward', sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), s.v. Ptah' }] }],
+    sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), s.v. Ptah; Pyramid Texts (Ptah “the noble djed”)' }],
+    lore: 'The composite staff of Ptah, the creator-craftsman of Memphis — fusing the was of dominion, the djed of stability, and the ankh of life into a single sceptre held by the mummiform god.',
+  },
+  'amun-shuti-crown': {
+    names: [{ value: 'šwtj', script: 'Egyptian (transliteration)', tradition: 'Egyptian', rom: 'shuti', meaning: '“the two feathers” — the tall twin-plumed crown', source: 'New Kingdom iconography' }],
+    kind: 'symbol', classId: 'crown',
+    custody: [{ role: 'worn by', personId: 'egyptian_amun', era: 'new-kingdom-onward', sources: [{ kind: 'secondary', reference: 'Karnak iconography of Amun-Ra' }] }],
+    sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003), s.v. Amun; New Kingdom temple iconography' }],
+    lore: 'The tall double-plumed crown (shuti) of Amun, king of the gods of Thebes — two straight feathers rising from a cap, the signature headdress of the hidden god Amun-Ra.',
+  },
+
+  // ═══ Mesopotamian (the Gilgamesh cycle) ══════════════════════════════════
+  'gilgamesh-axe': {
+    names: [{ value: 'ḫaṣṣinnu', script: 'Akkadian (romanized)', tradition: 'Mesopotamian', rom: 'ḫaṣṣinnu', meaning: 'axe — the axe of his dream and of the Cedar Forest expedition', source: 'SB Gilgamesh I; George 2003' }],
+    kind: 'weapon', classId: 'axe',
+    maker: { name: 'the bronze-casters of Uruk', role: 'cast by' },
+    custody: [{ role: 'wielded by', personId: 'mesopotamian_gilgamesh', era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Epic of Gilgamesh, Tablets I–III (George 2003)' }], note: 'In Tablet I the axe in his dream is read by Ninsun as the coming of Enkidu.' }],
+    sources: [{ kind: 'secondary', reference: 'A. R. George, The Babylonian Gilgamesh Epic (2003), SB Tablets I–III' }],
+    lore: 'The great axe of Gilgamesh — both the axe of his dream, which his mother Ninsun read as the coming of his companion Enkidu, and the cast bronze weapons forged at Uruk for the march on Humbaba’s Cedar Forest.',
+  },
+  'gilgamesh-plant-of-rejuvenation': {
+    names: [{ value: 'šammu nikitti', script: 'Akkadian (romanized)', tradition: 'Mesopotamian', rom: 'šammu nikitti', meaning: 'the boxthorn-like plant of the Apsu that restores youth; Gilgamesh names it “The Old Man Has Grown Young”', source: 'SB Gilgamesh XI; George 2003' }],
+    kind: 'ritual-object', classId: 'magical-plant',
+    custody: [
+      { role: 'revealed by', externalRef: { name: 'Uta-napishti', tradition: 'Mesopotamian' }, era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Gilgamesh XI (George 2003)' }] },
+      { role: 'plucked from the deep by', personId: 'mesopotamian_gilgamesh', era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Gilgamesh XI' }] },
+      { role: 'stolen by', externalRef: { name: 'a serpent (which sheds its skin and renews)', tradition: 'Mesopotamian' }, era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Gilgamesh XI' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'A. R. George, The Babylonian Gilgamesh Epic (2003), SB Tablet XI' }],
+    lore: 'The plant of rejuvenation from the cosmic deep, which Gilgamesh dived for with stones bound to his feet — his last hope of undoing death. A serpent stole it while he bathed and shed its skin renewed; the king returned to Uruk empty-handed but wiser.',
+  },
+  'gilgamesh-pukku-and-mekku': {
+    names: [{ value: 'pukku u mekkû', script: 'Akkadian (romanized)', tradition: 'Mesopotamian', rom: 'pukku u mekkû', meaning: 'a ball-and-mallet (older readings: drum and drumstick), cut from Inanna’s ḫuluppu-tree', source: 'SB Gilgamesh XII; George 2003' }],
+    kind: 'ritual-object', classId: 'game-implement',
+    custody: [
+      { role: 'owned by', personId: 'mesopotamian_gilgamesh', era: 'early-dynastic', sources: [{ kind: 'primary', reference: '“Gilgameš, Enkidu and the Netherworld”; SB Gilgamesh XII' }] },
+      { role: 'sent to retrieve them (and trapped below) was', externalRef: { name: 'Enkidu, who descends to the Netherworld', tradition: 'Mesopotamian' }, era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Gilgamesh XII' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'A. R. George, The Babylonian Gilgamesh Epic (2003), SB Tablet XII; the Sumerian “Gilgameš, Enkidu and the Netherworld”' }],
+    lore: 'The pukku and mekku of Gilgamesh — a ball and mallet (older scholars read drum and drumstick) cut from Inanna’s ḫuluppu-tree. When they fell through a crack into the Netherworld, Enkidu went down to fetch them and could not return.',
+  },
+  'bull-of-heaven-horns': {
+    names: [{ value: 'qarnū ša alî', script: 'Akkadian (romanized)', tradition: 'Mesopotamian', rom: 'qarnū ša alî', meaning: 'the lapis-rich horns of the Bull of Heaven', source: 'SB Gilgamesh VI; George 2003' }],
+    kind: 'symbol', classId: 'trophy-horns',
+    custody: [
+      { role: 'slain and stripped of its horns by', personId: 'mesopotamian_gilgamesh', era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Gilgamesh VI (George 2003)' }] },
+      { role: 'dedicated, and hung in honour of', personId: 'mesopotamian_lugalbanda', era: 'early-dynastic', sources: [{ kind: 'primary', reference: 'SB Gilgamesh VI' }], note: 'Gilgamesh dedicates the horns to his divine father Lugalbanda and hangs them in his chamber.' },
+    ],
+    sources: [{ kind: 'secondary', reference: 'A. R. George, The Babylonian Gilgamesh Epic (2003), SB Tablet VI' }],
+    lore: 'The vast horns of the Bull of Heaven, the beast Ishtar loosed on Uruk and Gilgamesh and Enkidu slew. Heavy with lapis lazuli, Gilgamesh tore them from the carcass and hung them, dedicated to his father Lugalbanda, in his bedchamber.',
+  },
+
+  // ═══ Norse (Freyr) ═══════════════════════════════════════════════════════
+  'freyr-skidbladnir': {
+    names: [{ value: 'Skíðblaðnir', script: 'Old Norse', tradition: 'Norse', meaning: '“assembled from thin planks” — the best of ships, foldable like cloth', source: 'Grímnismál 43' }],
+    kind: 'tool', classId: 'ship',
+    maker: { name: 'the Sons of Ivaldi', role: 'forged by', kind: 'dwarf-smiths' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Sons of Ivaldi (dwarf-smiths)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'owned by', personId: 'norse_freyr', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Grímnismál 43; Gylfaginning 43' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Grímnismál 43; Snorri, Gylfaginning 43; Skáldskaparmál 35' }],
+    lore: 'Skíðblaðnir, the finest of all ships, made for Freyr by the dwarven Sons of Ivaldi — large enough to carry all the Æsir in war-gear, always granted a fair wind, yet foldable like a kerchief to be tucked in a pouch.',
+  },
+  'freyr-sword': {
+    names: [{ value: 'sverð er sjálft vegisk', script: 'Old Norse', tradition: 'Norse', meaning: '“the sword that fights of itself” against the giants', source: 'Skírnismál 8–9' }],
+    kind: 'weapon', classId: 'sword',
+    custody: [
+      { role: 'owned by', personId: 'norse_freyr', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skírnismál 8–9; Gylfaginning 37' }] },
+      { role: 'given away (as bride-price for Gerðr) to', externalRef: { name: 'Skírnir, Freyr’s servant', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skírnismál 8–9; Lokasenna 42' }], note: 'Weaponless at the last, Freyr falls to the fire-giant Surtr at Ragnarǫk.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Skírnismál 8–9; Gylfaginning 37; Lokasenna 42' }],
+    lore: 'Freyr’s sword, which “fights of itself against the race of giants” if its bearer is wise. He gave it away to his servant Skírnir as the price of winning the giantess Gerðr — and so will stand weaponless against Surtr when the world burns.',
+  },
+  'freyr-gullinbursti': {
+    names: [
+      { value: 'Gullinbursti', script: 'Old Norse', tradition: 'Norse', meaning: '“Golden-bristled” — the gold boar that runs through air and sea and lights the dark', source: 'Gylfaginning 49' },
+      { value: 'Slíðrugtanni', script: 'Old Norse', tradition: 'Norse', meaning: '“fearsome-tusked” — an alternate name for the boar', source: 'Gylfaginning 49' },
+    ],
+    kind: 'tool', classId: 'steed',
+    maker: { name: 'Brokkr and Eitri (Sindri)', role: 'forged by', kind: 'dwarf-smiths' },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Brokkr and Eitri (in the wager with Loki)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35' }] },
+      { role: 'owned by', personId: 'norse_freyr', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 49' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Gylfaginning 49; Skáldskaparmál 35' }],
+    lore: 'Gullinbursti, the golden-bristled boar the dwarves Brokkr and Eitri forged in their wager with Loki — it runs through air and water faster than any horse and its mane lights the night. Freyr drives it to Baldr’s funeral.',
+  },
+
+  // ═══ Japanese (warriors & kami) ══════════════════════════════════════════
+  'yoshitsune-usumidori-hizamaru': {
+    names: [
+      { value: '薄緑', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'Usumidori', meaning: '“pale green” — Yoshitsune’s renaming for the Kumano spring greenery', source: 'Heike Monogatari, Tsurugi-no-maki' },
+      { value: '膝丸', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'Hizamaru', meaning: '“Knee” — a test-cut clove a corpse through to the knees', source: 'Heike Monogatari, Tsurugi-no-maki' },
+    ],
+    kind: 'weapon', classId: 'sword',
+    maker: { name: 'forged for Minamoto no Mitsunaka (smith disputed: Munechika or Mōfusa)', role: 'forged for' },
+    custody: [
+      { role: 'forged as a Minamoto heirloom for', externalRef: { name: 'Minamoto no Mitsunaka', tradition: 'Japanese' }, era: 'mid-Heian', sources: [{ kind: 'primary', reference: 'Heike Monogatari, Tsurugi-no-maki' }] },
+      { role: 'wielded and renamed Usumidori by', personId: 'japanese_yoshitsune', era: 'late-Heian', sources: [{ kind: 'primary', reference: 'Heike Monogatari, Tsurugi-no-maki' }] },
+      { role: 'reunited with its twin Higekiri by', externalRef: { name: 'Minamoto no Yoritomo', tradition: 'Japanese' }, era: 'Kamakura', sources: [{ kind: 'primary', reference: 'Heike Monogatari, Tsurugi-no-maki' }] },
+      { role: 'enshrined at', externalRef: { name: 'Daikaku-ji, Kyoto (Important Cultural Property)', tradition: 'Japanese' }, date: 'present', sources: [{ kind: 'secondary', reference: 'Daikaku-ji temple, “Usumidori (Hizamaru)”' }] },
+    ],
+    location: 'Daikaku-ji, Kyoto — Tachi “Usumidori (Hizamaru),” Important Cultural Property',
+    sources: [{ kind: 'primary', reference: 'Heike Monogatari, Tsurugi-no-maki (the Higekiri/Hizamaru pair and their renamings)' }, { kind: 'secondary', reference: 'Daikaku-ji, Kyoto (the surviving blade)' }],
+    lore: 'One of the paired Minamoto swords, renamed many times — Hizamaru (“Knee-cutter”) became Usumidori (“pale green”) in Yoshitsune’s hands during his Kumano days. A blade traditionally identified with it survives at Daikaku-ji in Kyoto as an Important Cultural Property; its identity with the legend is traditional, not proven.',
+  },
+  'tomoe-gozen-odachi': {
+    names: [{ value: '大太刀', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'ōdachi', meaning: 'the “great sword” she bore (with a mighty bow)', source: 'Heike Monogatari, Book 9' }],
+    kind: 'weapon', classId: 'sword',
+    custody: [{ role: 'wielded by', personId: 'japanese_tomoe_gozen', era: 'late-Heian', sources: [{ kind: 'primary', reference: 'Heike Monogatari, Book 9 (“The Death of Kiso”)' }], note: 'The famous Tomoe naginata is later artistic convention; the Heike gives an oversized sword and a strong bow.' }],
+    sources: [{ kind: 'primary', reference: 'Heike Monogatari, Book 9, “Kiso no saigo”' }],
+    lore: 'The great sword (and strong bow) of Tomoe Gozen, the warrior-woman Kiso Yoshinaka sent out as his “first captain” — in the Heike she takes an enemy’s head in her last fight before riding from the field.',
+  },
+  'tametomo-bow': {
+    names: [{ value: '強弓', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'tsuyoyumi', meaning: 'the giant bow of the supreme archer (his left arm longer for a greater draw)', source: 'Hōgen Monogatari' }],
+    kind: 'weapon', classId: 'bow',
+    custody: [{ role: 'wielded by', personId: 'japanese_tametomo', era: 'late-Heian', sources: [{ kind: 'primary', reference: 'Hōgen Monogatari' }], note: 'Said to have sunk a pursuing ship with one arrow; his captors cut the tendons of his bow-arm to disarm him.' }],
+    sources: [{ kind: 'primary', reference: 'Hōgen Monogatari (Tametomo the giant archer; Book 3, the cutting of his bow-arm)' }],
+    lore: 'The enormous bow of Minamoto no Tametomo, “Chinzei Hachirō,” the mightiest archer of the Hōgen tale — strong enough, it was said, to sink a ship with a single shaft. To neutralise him, his captors severed the sinews of his drawing arm.',
+  },
+  'yoshiie-bow': {
+    names: [{ value: '弓', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'yumi', meaning: 'the bow of “Hachimantarō,” the son of the war-god', source: 'Mutsu Waki' }],
+    kind: 'weapon', classId: 'bow',
+    custody: [{ role: 'wielded by', personId: 'japanese_yoshiie', era: 'late-Heian', sources: [{ kind: 'secondary', reference: 'Mutsu Waki; Sonpi Bunmyaku (the by-name Hachimantarō)' }], note: 'Reputedly drove an arrow through three stacked suits of armour; no proper name survives for the bow.' }],
+    sources: [{ kind: 'secondary', reference: 'Mutsu Waki (Yoshiie’s archery in the Three-Years’ Wars); Sonpi Bunmyaku' }],
+    lore: 'The bow of Minamoto no Yoshiie, “Hachimantarō” — the eldest son consecrated to the war-god Hachiman — whose archery in the northern wars became the model of warrior prowess for the later Minamoto.',
+  },
+  'hachiman-bow-and-arrow': {
+    names: [{ value: '弓矢', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'yumiya', meaning: 'bow-and-arrow — the emblem of the god of war and archery (with the dove as his messenger)', source: 'Hachiman cult tradition' }],
+    kind: 'symbol', classId: 'divine-attribute',
+    custody: [{ role: 'emblem of', personId: 'japanese_hachiman', era: 'tutelary', sources: [{ kind: 'secondary', reference: 'Usa Jingū / Iwashimizu Hachimangū tradition' }], note: 'Tutelary war-deity of the Minamoto; identified with the deified Emperor Ōjin.' }],
+    sources: [{ kind: 'secondary', reference: 'Hachiman cult (Usa Jingū; Iwashimizu Hachimangū); honji-suijaku “Hachiman Daibosatsu”' }],
+    lore: 'The bow-and-arrow of Hachiman, kami of war and archery, under whose patronage stands “the way of bow and horse.” His messenger is the dove, and the Minamoto warriors took him as their tutelary god.',
+  },
+  'omononushi-red-arrow': {
+    names: [{ value: '丹塗矢', script: 'Japanese (kanji)', tradition: 'Japanese', rom: 'ni-nuri-ya', meaning: 'the cinnabar-red arrow — the form the god takes to reach the maiden', source: 'Kojiki (Jinmu chapter)' }],
+    kind: 'symbol', classId: 'divine-attribute',
+    custody: [{ role: 'is the transformed shape of', personId: 'japanese_kojiki_omononushi', era: 'age of the gods', sources: [{ kind: 'primary', reference: 'Kojiki (the red-arrow wooing of Seyadatarahime)' }], note: 'A self-transformation, not a possessed object; Nihon Shoki variants assign the tale to Kotoshironushi.' }],
+    sources: [{ kind: 'primary', reference: 'Kojiki (712), Jinmu chapter; cf. Nihon Shoki (720)' }],
+    lore: 'The cinnabar-red arrow into which Ōmononushi, the great god of Mt. Miwa, transformed himself to float down a ditch and touch the maiden Seyadatarahime — their daughter became the first empress, consort of Emperor Jinmu.',
+  },
+
+  // ═══ Chinese ═════════════════════════════════════════════════════════════
+  'huangdi-xuanyuan-sword': {
+    names: [{ value: '軒轅劍', script: 'Chinese (hanzi)', tradition: 'Chinese', rom: 'Xuānyuán jiàn', meaning: 'the Xuanyuan Sword, first of the ten ancient divine weapons', source: 'Ming Mingjian Ji' }],
+    kind: 'weapon', classId: 'sword',
+    maker: { name: 'cast by Huangdi from the bronze of Mount Shou', role: 'cast by' },
+    custody: [{ role: 'cast and borne by', personId: 'chinese_huangdi', era: 'mythic-prehistory', sources: [{ kind: 'secondary', reference: 'Liexian Zhuan; Guang Huangdi Benxing Ji' }], note: 'Only the bronze-/tripod-casting is in the Shiji; the named “Xuanyuan Sword” and its sun-moon-stars inscriptions are post-classical (Han onward).' }],
+    sources: [{ kind: 'primary', reference: 'Shiji ch. 1 (Huangdi casts a tripod and ascends)' }, { kind: 'secondary', reference: 'Liexian Zhuan; Ming Mingjian Ji (the named 軒轅劍)' }],
+    lore: 'The Xuanyuan Sword, named for the Yellow Emperor himself and ranked first of China’s ten legendary blades, said to be cast from the bronze of Mount Shou and graven with the sun, moon, stars, mountains, and rivers. The early Shiji records only that Huangdi cast bronze and rose to heaven.',
+  },
+  'huangdi-south-pointing-chariot': {
+    names: [{ value: '指南車', script: 'Chinese (hanzi)', tradition: 'Chinese', rom: 'zhǐnánchē', meaning: 'the south-pointing chariot whose figure always points south', source: 'Song Shu, Treatise on Carriages' }],
+    kind: 'tool', classId: 'vehicle',
+    maker: { name: 'invented by Feng Hou, minister of Huangdi (per legend)', role: 'devised by' },
+    custody: [{ role: 'used by', personId: 'chinese_huangdi', era: 'mythic-prehistory', sources: [{ kind: 'secondary', reference: 'Song Shu, Treatise on Carriages; Gujin Zhu' }], note: 'To guide his army through Chiyou’s magic fog at the Battle of Zhuolu; the legend is preserved only in much later (5th c.+) treatises.' }],
+    sources: [{ kind: 'secondary', reference: 'Song Shu, “Treatise on Carriages and Dress”; Cui Bao, Gujin Zhu' }],
+    lore: 'The south-pointing chariot, a wheeled device topped by a figure that always pointed south, by which (legend says) the Yellow Emperor steered his host through the battle-fog conjured by the rebel Chiyou at Zhuolu.',
+  },
+  'yu-the-great-nine-cauldrons': {
+    names: [{ value: '九鼎', script: 'Chinese (hanzi)', tradition: 'Chinese', rom: 'jiǔ dǐng', meaning: 'the Nine Tripod Cauldrons, emblem of the Mandate of Heaven', source: 'Shiji, Fengshan treatise' }],
+    kind: 'vessel', classId: 'ritual-cauldron',
+    maker: { name: 'cast by Yu from the bronze of the Nine Provinces (Zuo Zhuan credits his son Qi)', role: 'cast by' },
+    custody: [
+      { role: 'cast by', personId: 'chinese_yu_the_great', era: 'Xia', sources: [{ kind: 'primary', reference: 'Shiji, Fengshan treatise' }] },
+      { role: 'inherited as dynastic regalia by', personId: 'chinese_qi_of_xia', era: 'Xia', sources: [{ kind: 'primary', reference: 'Zuo Zhuan (the casting credited to Yu’s line)' }] },
+      { role: 'transmitted to Shang and Zhou (token of legitimate rule)', externalRef: { name: 'the Shang and Zhou kings; said lost in the Si River', tradition: 'Chinese' }, era: 'Shang–Zhou', sources: [{ kind: 'primary', reference: 'Zuo Zhuan (Duke Xuan 3: “the weight of the cauldrons”)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Shiji, Fengshan treatise; Zuo Zhuan (Duke Xuan, 3rd year)' }],
+    lore: 'The Nine Cauldrons Yu the Great cast from the tribute-bronze of the nine provinces he had mapped after taming the floods — the bronze emblem of sovereignty over all-under-heaven. To “ask the weight of the cauldrons” became a phrase for coveting the throne.',
+  },
+  'xiwangmu-peaches-of-immortality': {
+    names: [{ value: '蟠桃', script: 'Chinese (hanzi)', tradition: 'Chinese', rom: 'pántáo', meaning: 'the immortality-peaches that ripen once in 3,000 years', source: 'Xiyou Ji' }],
+    kind: 'symbol', classId: 'fruit-of-immortality',
+    custody: [
+      { role: 'grown and kept by', personId: 'chinese_xiwangmu', era: 'mythic time', sources: [{ kind: 'secondary', reference: 'Han Wudi Neizhuan; Xiyou Ji' }] },
+      { role: 'orchard raided by', externalRef: { name: 'Sun Wukong (before the Peach Banquet)', tradition: 'Chinese' }, era: 'Ming novel', sources: [{ kind: 'secondary', reference: 'Xiyou Ji, ch. 5' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'Han Wudi Neizhuan; Journey to the West (Xiyou Ji) ch. 5; cf. Shanhaijing (the archaic goddess)' }],
+    lore: 'The peaches of immortality in the Kunlun orchard of Xiwangmu, Queen Mother of the West, which ripen once in three thousand years and confer eternal life at her Peach Banquet — the fruit the Monkey King gorged on before the feast in Journey to the West.',
+  },
+  'erlang-shen-three-pointed-spear': {
+    names: [
+      { value: '三尖兩刃刀', script: 'Chinese (hanzi)', tradition: 'Chinese', rom: 'sānjiān liǎngrèn dāo', meaning: 'the three-pointed, double-edged blade', source: 'Xiyou Ji' },
+      { value: '天眼', script: 'Chinese (hanzi)', tradition: 'Chinese', rom: 'tiānyǎn', meaning: 'the third “Heavenly Eye” on his brow that pierces all disguise', source: 'Xiyou Ji' },
+    ],
+    kind: 'weapon', classId: 'polearm',
+    custody: [{ role: 'wielded by', personId: 'chinese_erlang_shen', era: 'mythic time', sources: [{ kind: 'secondary', reference: 'Xiyou Ji ch. 6; Fengshen Yanyi; Erlang Baojuan' }], note: 'With the third eye he saw through Sun Wukong’s every transformation in their famous duel.' }],
+    sources: [{ kind: 'secondary', reference: 'Journey to the West (Xiyou Ji) ch. 6; Investiture of the Gods (Fengshen Yanyi); Erlang Baojuan' }],
+    lore: 'The three-pointed, double-edged polearm of Erlang Shen (Yang Jian), borne with the vertical truth-seeing eye in his brow — together they undid the shapeshifting Monkey King, whose every disguise the Heavenly Eye laid bare.',
+  },
+
+  // ═══ Korean ══════════════════════════════════════════════════════════════
+  'hwanung-cheonbu-in': {
+    names: [
+      { value: '天符印', script: 'Korean (hanja)', tradition: 'Korean', rom: 'Cheonbu-in', meaning: 'the three “Heavenly Seals/Tokens” of divine kingship', source: 'Samguk Yusa, Book 1' },
+      { value: '천부인', script: 'Korean (hangul)', tradition: 'Korean', rom: 'Cheonbu-in', meaning: 'later tradition names them sword, mirror, and bell (not enumerated in the source)', source: 'Choe Namseon; modern tradition' },
+    ],
+    kind: 'ritual-object', classId: 'regalia-set',
+    maker: { name: 'bestowed by Hwanin, the Heavenly Emperor', role: 'bestowed by' },
+    custody: [
+      { role: 'bestowed by', personId: 'korean_hwanin', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Samguk Yusa, Book 1 (Gojoseon)' }] },
+      { role: 'borne to earth (Mt. Taebaek) by', personId: 'korean_hwanung', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Samguk Yusa, Book 1' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Samguk Yusa (1281), Book 1, Gojoseon; Jewang Ungi (1287)' }],
+    lore: 'The three Heavenly Seals (Cheonbu-in) that Hwanin gave his son Hwanung to carry down to the summit of Mt. Taebaek, where he founded the “Divine City” — the regalia of heaven-sanctioned rule at the root of the Korean foundation myth. The source does not list the three; later tradition names sword, mirror, and bell.',
+  },
+
+  // ITEM-LORE-END (batches are inserted above this marker)
 };
 
 // Title-case a kebab/snake item id into a readable fallback label.
@@ -27212,6 +28277,260 @@ const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
 // figure id → array of { id, classId, kind, sources }. Authored in batches as
 // the corpus is built out, tradition by tradition.
 const MATERIAL_CULTURE_BY_FIGURE = {
+  // ── Greek deities ──
+  greek_hesiod_zeus: [
+    { id: 'zeus-thunderbolt', classId: 'thunderbolt', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. 1.2.1' }] },
+    { id: 'aegis', classId: 'aegis', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Homer, Iliad 17.593–595' }] },
+    { id: 'zeus-sceptre', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.279' }] },
+  ],
+  greek_hesiod_poseidon: [
+    { id: 'poseidon-trident', classId: 'trident', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. 1.2.1' }] },
+  ],
+  greek_hesiod_athena: [
+    { id: 'aegis', classId: 'aegis', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.738–742' }] },
+    { id: 'athena-spear', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.745–747' }] },
+    { id: 'athena-helm', classId: 'helmet', kind: 'garment', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.743–744' }] },
+  ],
+  greek_hesiod_apollo: [
+    { id: 'apollo-lyre', classId: 'lyre', kind: 'tool', sources: [{ kind: 'primary', reference: 'Homeric Hymn 4 to Hermes 496–502' }] },
+    { id: 'apollo-bow', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.43–52' }] },
+  ],
+  greek_hesiod_artemis: [
+    { id: 'artemis-bow', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Callimachus, Hymn 3.81–86' }] },
+  ],
+  greek_hesiod_aphrodite: [
+    { id: 'aphrodite-kestos-himas', classId: 'girdle', kind: 'garment', sources: [{ kind: 'primary', reference: 'Homer, Iliad 14.214–223' }] },
+  ],
+  greek_hesiod_hephaestus: [
+    { id: 'hephaestus-tools', classId: 'smith-tools', kind: 'tool', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.468–477' }] },
+    { id: 'hephaestus-golden-handmaidens', classId: 'automaton', kind: 'tool', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.417–420' }] },
+  ],
+  greek_hesiod_ares: [
+    { id: 'ares-spear', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.855–859' }] },
+  ],
+  greek_hesiod_hera: [
+    { id: 'hera-sceptre', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pausanias 2.17.4' }] },
+  ],
+  greek_hesiod_demeter: [
+    { id: 'demeter-torches', classId: 'torch', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Homeric Hymn 2 to Demeter 47–48' }] },
+  ],
+  greek_hesiod_dionysus: [
+    { id: 'dionysus-thyrsus', classId: 'thyrsus', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae 176' }] },
+  ],
+  greek_hesiod_hebe: [
+    { id: 'hebe-cup', classId: 'cup', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Homer, Iliad 4.2–3' }] },
+  ],
+
+  // ── Roman deities & Romulus ──
+  roman_iuppiter: [
+    { id: 'iuppiter-fulmen', classId: 'thunderbolt', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Ovid, Met. 2.304–313' }] },
+    { id: 'roman-aegis', classId: 'aegis', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.353–354' }] },
+    { id: 'iuppiter-sceptrum', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Ovid, Met. 1.178–179' }] },
+  ],
+  roman_minerva: [
+    { id: 'roman-aegis', classId: 'aegis', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Ovid, Met. 6.78–79' }] },
+    { id: 'minerva-hasta', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.5–8' }] },
+    { id: 'minerva-galea', classId: 'helmet', kind: 'garment', sources: [{ kind: 'primary', reference: 'Ovid, Met. 6.43–44' }] },
+  ],
+  roman_neptunus: [
+    { id: 'neptunus-tridens', classId: 'trident', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 1.145' }] },
+  ],
+  roman_mars: [
+    { id: 'mars-ancilia', classId: 'sacred-shield', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.259–392' }] },
+    { id: 'mars-hastae-martiae', classId: 'sacred-spear', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Aulus Gellius 4.6' }] },
+  ],
+  roman_mercurius: [
+    { id: 'mercurius-caduceus', classId: 'herald-staff', kind: 'tool', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 4.242–244' }] },
+    { id: 'mercurius-talaria', classId: 'winged-sandals', kind: 'garment', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 4.239–241' }] },
+    { id: 'mercurius-petasus', classId: 'winged-hat', kind: 'garment', sources: [{ kind: 'secondary', reference: 'Roman iconography of Mercury' }] },
+  ],
+  roman_diana: [
+    { id: 'diana-arcus', classId: 'bow-and-arrows', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Ovid, Met. 3.156–157' }] },
+    { id: 'diana-fax', classId: 'torch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.269–270' }] },
+  ],
+  roman_ceres: [
+    { id: 'ceres-fax', classId: 'torch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 4.491–494' }] },
+    { id: 'ceres-spicae', classId: 'grain-sheaf', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Tibullus 1.1.15' }] },
+    { id: 'ceres-sceptrum', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Ceres iconography' }] },
+  ],
+  roman_volcanus: [
+    { id: 'volcanus-malleus', classId: 'smith-tools', kind: 'tool', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.419–453' }] },
+  ],
+  roman_iuno: [
+    { id: 'iuno-sceptrum', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 1.46' }] },
+    { id: 'iuno-diadema', classId: 'diadem', kind: 'garment', sources: [{ kind: 'secondary', reference: 'Iuno Regina iconography' }] },
+  ],
+  roman_liber: [
+    { id: 'liber-thyrsus', classId: 'thyrsus', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Ovid, Met. 3.542' }] },
+  ],
+  roman_romulus: [
+    { id: 'romulus-lituus', classId: 'augur-staff', kind: 'tool', sources: [{ kind: 'primary', reference: 'Cicero, De Divinatione 1.30' }] },
+    { id: 'romulus-hasta-corni', classId: 'sacred-spear', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Plutarch, Romulus 20' }] },
+    { id: 'spolia-opima', classId: 'war-trophy', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Livy 1.10.4–7' }] },
+  ],
+
+  // ── Hindu ──
+  hindu_indra: [
+    { id: 'indra-vajra', classId: 'vajra', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32' }] },
+  ],
+  hindu_arjuna: [
+    { id: 'arjuna-gandiva', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Mahābhārata, Adi Parva 227' }] },
+    { id: 'arjuna-pashupatastra', classId: 'astra', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva (Kairāta)' }] },
+    { id: 'arjuna-devadatta', classId: 'conch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.15' }] },
+  ],
+  hindu_karna: [
+    { id: 'karna-kavacha-kundala', classId: 'armor', kind: 'garment', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva' }] },
+    { id: 'karna-vasavi-shakti', classId: 'dart', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Mahābhārata, Droṇa Parva' }] },
+    { id: 'karna-vijaya', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Mahābhārata, Karṇa Parva' }] },
+  ],
+  hindu_yudhishthira: [
+    { id: 'yudhishthira-akshaya-patra', classId: 'alms-bowl', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Mahābhārata, Vana Parva' }] },
+    { id: 'yudhishthira-anantavijaya', classId: 'conch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16' }] },
+  ],
+  hindu_bhima: [
+    { id: 'bhima-gada', classId: 'mace', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Mahābhārata, Śalya Parva' }] },
+    { id: 'bhima-paundra', classId: 'conch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.15' }] },
+  ],
+  hindu_nakula: [
+    { id: 'nakula-sughosha', classId: 'conch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16' }] },
+  ],
+  hindu_sahadeva: [
+    { id: 'sahadeva-manipushpaka', classId: 'conch', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.16' }] },
+  ],
+
+  // ── Greek heroes ──
+  greek_apollod_perseus: [
+    { id: 'perseus-harpe', classId: 'sickle-sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2' }] },
+    { id: 'perseus-kynee', classId: 'cap-of-invisibility', kind: 'garment', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2' }] },
+    { id: 'perseus-talaria', classId: 'winged-sandals', kind: 'garment', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2' }] },
+    { id: 'perseus-kibisis', classId: 'satchel', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2' }] },
+    { id: 'perseus-shield-mirror', classId: 'mirror-shield', kind: 'tool', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.3' }] },
+    { id: 'medusa-head', classId: 'petrifying-trophy', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.3' }] },
+  ],
+  greek_bellerophon: [
+    { id: 'bellerophon-golden-bridle', classId: 'bridle', kind: 'tool', sources: [{ kind: 'primary', reference: 'Pindar, Olympian 13.65–86' }] },
+  ],
+  greek_apollod_theseus: [
+    { id: 'theseus-sword', classId: 'recognition-sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.7' }] },
+    { id: 'theseus-sandals', classId: 'recognition-sandals', kind: 'garment', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.7' }] },
+    { id: 'periphetes-club', classId: 'club', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. Epitome 1.1' }] },
+  ],
+  greek_periphetes: [
+    { id: 'periphetes-club', classId: 'club', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Apollod. Epitome 1.1' }] },
+  ],
+  greek_asclepius: [
+    { id: 'asclepius-rod', classId: 'serpent-staff', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pausanias 2.27.2' }] },
+    { id: 'asclepius-gorgon-blood', classId: 'medicine', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Apollod. 3.10.3' }] },
+  ],
+  greek_orpheus: [
+    { id: 'orpheus-lyre', classId: 'lyre', kind: 'tool', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 1.494–518' }] },
+  ],
+  greek_odysseus: [
+    { id: 'odysseus-bow', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 21' }] },
+  ],
+  greek_pandora: [
+    { id: 'pandora-pithos', classId: 'storage-jar', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Hesiod, Works and Days 90–99' }] },
+  ],
+  greek_hippolyta: [
+    { id: 'hippolyta-girdle', classId: 'war-belt', kind: 'garment', sources: [{ kind: 'primary', reference: 'Apollod. 2.5.9' }] },
+  ],
+  greek_memnon: [
+    { id: 'memnon-armour', classId: 'divine-armour', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Quintus Smyrnaeus, Posthomerica 2.453–458' }] },
+  ],
+  greek_orion: [
+    { id: 'orion-club', classId: 'club', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 11.575–577' }] },
+  ],
+  greek_aeneas: [
+    { id: 'aeneas-shield', classId: 'divine-shield', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.617–731' }] },
+  ],
+  greek_amphion: [
+    { id: 'amphion-lyre', classId: 'lyre', kind: 'tool', sources: [{ kind: 'primary', reference: 'Apollod. 3.5.5' }] },
+  ],
+
+  // ── Egyptian deities ──
+  egyptian_osiris: [
+    { id: 'osiris-crook-and-flail', classId: 'regalia', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pyramid Texts' }] },
+    { id: 'osiris-atef-crown', classId: 'crown', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Book of the Dead 125' }] },
+  ],
+  egyptian_horus: [
+    { id: 'horus-eye-wedjat', classId: 'amulet', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pyramid Texts' }] },
+    { id: 'horus-pschent', classId: 'crown', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Egyptian royal titulary' }] },
+    { id: 'was-sceptre', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pyramid Texts' }] },
+  ],
+  egyptian_isis: [
+    { id: 'isis-tyet', classId: 'amulet', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Book of the Dead 156' }] },
+    { id: 'isis-throne-crown', classId: 'crown', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pyramid Texts' }] },
+  ],
+  egyptian_ptah: [
+    { id: 'ptah-sceptre', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Wilkinson, Complete Gods (2003)' }] },
+  ],
+  egyptian_amun: [
+    { id: 'amun-shuti-crown', classId: 'crown', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Karnak iconography' }] },
+    { id: 'was-sceptre', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Karnak iconography' }] },
+  ],
+
+  // ── Mesopotamian (Gilgamesh cycle) ──
+  mesopotamian_gilgamesh: [
+    { id: 'gilgamesh-axe', classId: 'axe', kind: 'weapon', sources: [{ kind: 'primary', reference: 'SB Gilgamesh I' }] },
+    { id: 'gilgamesh-plant-of-rejuvenation', classId: 'magical-plant', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'SB Gilgamesh XI' }] },
+    { id: 'gilgamesh-pukku-and-mekku', classId: 'game-implement', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'SB Gilgamesh XII' }] },
+    { id: 'bull-of-heaven-horns', classId: 'trophy-horns', kind: 'symbol', sources: [{ kind: 'primary', reference: 'SB Gilgamesh VI' }] },
+  ],
+  mesopotamian_lugalbanda: [
+    { id: 'bull-of-heaven-horns', classId: 'trophy-horns', kind: 'symbol', sources: [{ kind: 'primary', reference: 'SB Gilgamesh VI' }] },
+  ],
+
+  // ── Norse (Freyr) ──
+  norse_freyr: [
+    { id: 'freyr-skidbladnir', classId: 'ship', kind: 'tool', sources: [{ kind: 'primary', reference: 'Grímnismál 43' }] },
+    { id: 'freyr-sword', classId: 'sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Skírnismál 8–9' }] },
+    { id: 'freyr-gullinbursti', classId: 'steed', kind: 'tool', sources: [{ kind: 'primary', reference: 'Gylfaginning 49' }] },
+  ],
+
+  // ── Japanese ──
+  japanese_yoshitsune: [
+    { id: 'yoshitsune-usumidori-hizamaru', classId: 'sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Heike Monogatari, Tsurugi-no-maki' }] },
+  ],
+  japanese_tomoe_gozen: [
+    { id: 'tomoe-gozen-odachi', classId: 'sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Heike Monogatari, Book 9' }] },
+  ],
+  japanese_tametomo: [
+    { id: 'tametomo-bow', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Hōgen Monogatari' }] },
+  ],
+  japanese_yoshiie: [
+    { id: 'yoshiie-bow', classId: 'bow', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Mutsu Waki' }] },
+  ],
+  japanese_hachiman: [
+    { id: 'hachiman-bow-and-arrow', classId: 'divine-attribute', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Hachiman cult tradition' }] },
+  ],
+  japanese_kojiki_omononushi: [
+    { id: 'omononushi-red-arrow', classId: 'divine-attribute', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Kojiki (Jinmu chapter)' }] },
+  ],
+
+  // ── Chinese ──
+  chinese_huangdi: [
+    { id: 'huangdi-xuanyuan-sword', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Liexian Zhuan; Mingjian Ji' }] },
+    { id: 'huangdi-south-pointing-chariot', classId: 'vehicle', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Song Shu, Treatise on Carriages' }] },
+  ],
+  chinese_yu_the_great: [
+    { id: 'yu-the-great-nine-cauldrons', classId: 'ritual-cauldron', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Shiji, Fengshan treatise' }] },
+  ],
+  chinese_qi_of_xia: [
+    { id: 'yu-the-great-nine-cauldrons', classId: 'ritual-cauldron', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Zuo Zhuan (Duke Xuan 3)' }] },
+  ],
+  chinese_xiwangmu: [
+    { id: 'xiwangmu-peaches-of-immortality', classId: 'fruit-of-immortality', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Han Wudi Neizhuan; Xiyou Ji' }] },
+  ],
+  chinese_erlang_shen: [
+    { id: 'erlang-shen-three-pointed-spear', classId: 'polearm', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Xiyou Ji ch. 6' }] },
+  ],
+
+  // ── Korean ──
+  korean_hwanung: [
+    { id: 'hwanung-cheonbu-in', classId: 'regalia-set', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Samguk Yusa, Book 1' }] },
+  ],
+
+  // MC-BY-FIGURE-END (batches inserted above this marker)
 };
 
 // Merge MATERIAL_CULTURE_BY_FIGURE into a people map in place. Unknown figure ids
