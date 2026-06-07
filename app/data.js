@@ -28209,6 +28209,732 @@ const ITEM_LORE = {
     lore: 'The three Heavenly Seals (Cheonbu-in) that Hwanin gave his son Hwanung to carry down to the summit of Mt. Taebaek, where he founded the “Divine City” — the regalia of heaven-sanctioned rule at the root of the Korean foundation myth. The source does not list the three; later tradition names sword, mirror, and bell.',
   },
 
+  // ═══ Celtic (Irish & Welsh) ══════════════════════════════════════════════
+  'spear-of-lugh': {
+    names: [
+      { value: 'Sleg', script: 'Old Irish', tradition: 'Irish', rom: 'sleg', meaning: 'the spear from Gorias, one of the Four Treasures of the Tuatha Dé Danann', source: 'Cath Maige Tuired' },
+      { value: 'Gáe Assail', script: 'Old Irish', tradition: 'Irish', rom: 'gáe assail', meaning: '“spear of Assal” (a distinct spear in the Tuireann tale, popularly identified with it)', source: 'Oidheadh Chloinne Tuireann' },
+    ],
+    kind: 'weapon', classId: 'spear',
+    custody: [
+      { role: 'brought from the otherworld city of Gorias (one of the Four Treasures)', externalRef: { name: 'the Tuatha Dé Danann', tradition: 'Irish' }, era: 'mythic settlement', sources: [{ kind: 'primary', reference: 'Lebor Gabála Érenn; Cath Maige Tuired' }] },
+      { role: 'wielded by', personId: 'irish_lugh', era: 'mythic settlement', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired (the Second Battle of Mag Tuired)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Cath Maige Tuired; Lebor Gabála Érenn (the four treasures); Oidheadh Chloinne Tuireann' }],
+    lore: 'The spear of Lugh — one of the Four Treasures the Tuatha Dé Danann brought from the otherworld city of Gorias, so deadly no battle could be sustained against it. (The primary texts name the Four-Treasure spear only generically; the name “Gáe Assail” comes from the later Tuireann tale and is a popular identification, not a single-source equation.)',
+  },
+  'sling-of-lugh': {
+    names: [
+      { value: 'tathlum', script: 'Old Irish', tradition: 'Irish', rom: 'tathlum', meaning: 'the compacted sling-ball; his sling is the tabhall', source: 'Cath Maige Tuired; Egerton MS 1782' },
+    ],
+    kind: 'weapon', classId: 'sling',
+    custody: [{ role: 'cast by', personId: 'irish_lugh', era: 'mythic settlement', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired (Lugh’s sling-stone drives Balor’s eye back through his head)' }] }],
+    sources: [{ kind: 'primary', reference: 'Cath Maige Tuired; Egerton MS 1782 (the composition of the tathlum)' }],
+    lore: 'The sling with which Lugh slew his grandfather Balor at the Second Battle of Mag Tuired — the sling-stone (tathlum) drove Balor’s death-dealing eye back through his skull, turning its blight on the Fomorians and routing them.',
+  },
+  'fragarach': {
+    names: [{ value: 'Fragarach', script: 'Old Irish', tradition: 'Irish', rom: 'fragarach', meaning: '“the Answerer”', source: 'Oidheadh Chloinne Tuireann' }],
+    kind: 'weapon', classId: 'sword',
+    custody: [
+      { role: 'owned by', personId: 'irish_manannan', era: 'mythic', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+      { role: 'borne by (as foster-son and champion)', personId: 'irish_lugh', era: 'mythic', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann; later Irish tradition (passed to Conn of the Hundred Battles)' }],
+    lore: 'Fragarach, “the Answerer,” the otherworld sword of Manannán mac Lir, carried by his foster-son Lugh — a blade no armour could turn. Later folklore made it compel truth from any throat it was held to.',
+  },
+  'wave-sweeper': {
+    names: [{ value: 'Scuaba Tuinne', script: 'Old Irish', tradition: 'Irish', rom: 'scuab tuinne', meaning: '“sweeper of the wave” — the boat that obeys its steersman’s thought', source: 'Oidheadh Chloinne Tuireann' }],
+    kind: 'vessel', classId: 'boat',
+    custody: [
+      { role: 'owned by', personId: 'irish_manannan', era: 'mythic', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+      { role: 'lent to', personId: 'irish_lugh', era: 'mythic', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }],
+    lore: 'Manannán’s boat “Wave-Sweeper,” which needed neither oar nor sail but went wherever its steersman willed — lent to Lugh for the quest of the sons of Tuireann.',
+  },
+  'crane-bag': {
+    names: [{ value: 'corrbolg', script: 'Old Irish', tradition: 'Irish', rom: 'corrbolg', meaning: '“crane-bag” — its treasures show at full tide and vanish at the ebb', source: 'Duanaire Finn VIII' }],
+    kind: 'tool', classId: 'container',
+    maker: { name: 'Manannán (from the skin of the crane that had been the woman Aoife)', role: 'made by' },
+    custody: [{ role: 'made and kept by', personId: 'irish_manannan', era: 'mythic', sources: [{ kind: 'primary', reference: 'Duanaire Finn, Poem VIII “The Crane-Bag”' }] }],
+    sources: [{ kind: 'primary', reference: 'Duanaire Finn, Poem VIII (Fenian Cycle)' }],
+    lore: 'The Crane Bag of Manannán, made from the skin of Aoife after she was cursed into a crane — it held the sea-god’s treasures, which appeared when the tide was full and were gone at its ebbing.',
+  },
+  'cloak-of-manannan': {
+    names: [{ value: 'bratt Manannáin', script: 'Old Irish', tradition: 'Irish', rom: 'bratt', meaning: 'the cloak/mantle of mist and forgetfulness', source: 'Serglige Con Culainn' }],
+    kind: 'garment', classId: 'cloak',
+    custody: [{ role: 'owned by', personId: 'irish_manannan', era: 'mythic', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }] }],
+    sources: [{ kind: 'primary', reference: 'Serglige Con Culainn (The Wasting Sickness of Cú Chulainn)' }],
+    lore: 'Manannán’s mantle, which he shook between Cú Chulainn and his fairy lover Fand so that the two would forget one another forever — the cloak of mist, sundering and forgetfulness.',
+  },
+  'enbarr': {
+    names: [{ value: 'Aonbharr', script: 'Old Irish', tradition: 'Irish', rom: 'aonbharr', meaning: 'Manannán’s horse that runs over sea as over land', source: 'Oidheadh Chloinne Tuireann' }],
+    kind: 'tool', classId: 'mount',
+    custody: [
+      { role: 'owned by', personId: 'irish_manannan', era: 'mythic', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+      { role: 'lent to', personId: 'irish_lugh', era: 'mythic', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }],
+    lore: 'Enbarr “of the flowing mane,” Manannán’s steed that could gallop across the waves as readily as over the plain — lent, with his other treasures, to Lugh.',
+  },
+  'gae-bolg': {
+    names: [{ value: 'Gáe Bolga', script: 'Old Irish', tradition: 'Irish', rom: 'gáe bulga', meaning: 'the barbed “belly-spear,” disputed (“gapped spear” / “spear of mortal pain”)', source: 'Táin Bó Cúailnge' }],
+    kind: 'weapon', classId: 'spear',
+    maker: { name: 'made from the bone of the sea-monster Coinchenn; the cast taught by Scáthach', role: 'taught by' },
+    custody: [
+      { role: 'taught the feat, and given the spear, by', externalRef: { name: 'Scáthach, the warrior-woman of Alba', tradition: 'Irish' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }] },
+      { role: 'cast (along the water, by his foot) by', personId: 'irish_cuchulainn', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge (the killing of Fer Diad)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; Tochmarc Emire (Scáthach teaches the feat to no one else)' }],
+    lore: 'The Gáe Bolg, Cú Chulainn’s terrible barbed spear, cast underfoot along the water — once in the body it opened thirty barbs and could not be drawn out without cutting away the flesh. Scáthach taught him the feat and gave it to no other.',
+  },
+  'ring-of-connla': {
+    names: [{ value: 'ór-fháinne', script: 'Old Irish', tradition: 'Irish', rom: 'ór-fháinne', meaning: 'the gold thumb-ring left as a token of recognition', source: 'Tochmarc Emire' }],
+    kind: 'symbol', classId: 'ring',
+    custody: [
+      { role: 'left as a token (by Cú Chulainn) for', personId: 'irish_connla', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }] },
+      { role: 'worn (and recognized too late) by', personId: 'irish_connla', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Aided Óenfhir Aífe (The Death of Aífe’s Only Son)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Tochmarc Emire; Aided Óenfhir Aífe' }],
+    lore: 'The gold ring Cú Chulainn left with Aífe for the son he had not yet met, to be worn when he was grown. By it he knew the boy Connla for his own — but only after he had dealt him his death-wound at the ford.',
+  },
+  'pair-dadeni': {
+    names: [{ value: 'Pair Dadeni', script: 'Middle Welsh', tradition: 'Welsh', rom: 'pair dadeni', meaning: '“the Cauldron of Rebirth”', source: 'Branwen ferch Llŷr' }],
+    kind: 'vessel', classId: 'cauldron',
+    custody: [
+      { role: 'held by', personId: 'welsh_bendigeidfran', era: 'mythic', sources: [{ kind: 'primary', reference: 'Branwen ferch Llŷr (Second Branch)' }] },
+      { role: 'given in compensation to', externalRef: { name: 'Matholwch, king of Ireland', tradition: 'Welsh' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Branwen ferch Llŷr' }] },
+      { role: 'shattered (from within, at the cost of his life) by', personId: 'welsh_efnisien', era: 'mythic', sources: [{ kind: 'primary', reference: 'Branwen ferch Llŷr' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Branwen ferch Llŷr (Second Branch of the Mabinogi)' }],
+    lore: 'The Cauldron of Rebirth, which restored slain warriors to life overnight — though they came back mute. Brân the Blessed gave it to the Irish king as a peace-offering; in the war that followed, Efnisien burst it apart from inside, dying as he did.',
+  },
+  'wand-of-math': {
+    names: [{ value: 'hudlath', script: 'Middle Welsh', tradition: 'Welsh', rom: 'hudlath', meaning: '“magic wand/rod”', source: 'Math fab Mathonwy' }],
+    kind: 'tool', classId: 'wand',
+    custody: [{ role: 'wielded by', personId: 'welsh_math', era: 'mythic', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy (Fourth Branch)' }] }],
+    sources: [{ kind: 'primary', reference: 'Math fab Mathonwy (Fourth Branch of the Mabinogi)' }],
+    lore: 'The magic wand of Math fab Mathonwy, the magician-king of Gwynedd — with it he turned the brothers Gilfaethwy and Gwydion into mated pairs of beasts year by year as punishment, and with Gwydion conjured the flower-woman Blodeuwedd.',
+  },
+  'spear-of-gronw': {
+    names: [{ value: 'gwayw', script: 'Middle Welsh', tradition: 'Welsh', rom: 'gwayw', meaning: 'the one spear, a year in the making, that alone could kill Lleu', source: 'Math fab Mathonwy' }],
+    kind: 'weapon', classId: 'spear',
+    maker: { name: 'Gronw Pebr (forged it over a year, working only during Sunday Mass)', role: 'forged by' },
+    custody: [
+      { role: 'forged and cast (to murder him) by', externalRef: { name: 'Gronw Pebr', tradition: 'Welsh' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy' }] },
+      { role: 'the sole means by which the near-unkillable hero could be slain —', personId: 'welsh_lleu', era: 'mythic', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy (Lleu, struck, becomes an eagle and is later restored)' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Math fab Mathonwy (Fourth Branch of the Mabinogi)' }],
+    lore: 'The spear that could kill Lleu Llaw Gyffes, who could die only under impossible conditions: a weapon a year in the making, worked solely during Sunday Mass, with one foot on a cauldron and one on a goat. Gronw forged it and struck — but Lleu flew off as an eagle and was healed.',
+  },
+
+  // ═══ Andean & South American ═════════════════════════════════════════════
+  'tupayauri': {
+    names: [{ value: 'tapac-yauri', script: 'Quechua (romanized)', tradition: 'Inca', rom: 'tupa-yauri', meaning: '“royal sceptre” — the golden founding-staff', source: 'Garcilaso de la Vega, Comentarios Reales' }],
+    kind: 'symbol', classId: 'golden-staff',
+    maker: { name: 'Inti, the sun-god', role: 'given by' },
+    custody: [
+      { role: 'given by Inti to the founding pair', personId: 'inca_manco_capac', era: 'mythic founding', where: 'Pacaritambo', sources: [{ kind: 'primary', reference: 'Garcilaso de la Vega; Betanzos' }], note: 'It sank into the earth at Huanaypata, marking where Cusco was to be built.' },
+      { role: 'co-bearer', personId: 'inca_mama_ocllo', era: 'mythic founding', sources: [{ kind: 'primary', reference: 'Garcilaso de la Vega' }] },
+      { role: 'cast (the warlike variant) by', personId: 'inca_mama_huaco', era: 'mythic founding', sources: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas (1572)' }], note: 'In Sarmiento, the fierce Mama Huaco hurls golden staffs to test the soil.' },
+    ],
+    sources: [{ kind: 'primary', reference: 'Garcilaso de la Vega, Comentarios Reales; Betanzos; Sarmiento de Gamboa; Guamán Poma (iconography)' }],
+    lore: 'The golden staff Inti gave the founding Incas at Pacaritambo: where it sank effortlessly into the ground — at Huanaypata — they were to found Cusco. Garcilaso gives it to Manco Cápac and Mama Ocllo together; Sarmiento has the warrior-sister Mama Huaco cast golden rods to test the earth.',
+  },
+  'ayar-cachi-sling': {
+    names: [{ value: 'waraka', script: 'Quechua (romanized)', tradition: 'Inca', rom: 'waraka', meaning: 'sling — strong enough to split hills', source: 'Sarmiento de Gamboa' }],
+    kind: 'weapon', classId: 'sling',
+    custody: [{ role: 'wielded by', personId: 'inca_ayar_cachi', era: 'mythic founding', sources: [{ kind: 'primary', reference: 'Sarmiento de Gamboa; Betanzos (the Ayar brothers)' }], note: 'His siblings, fearing his strength, sealed him in the cave at Tampu-tocco.' }],
+    sources: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas; Juan de Betanzos' }],
+    lore: 'The sling of Ayar Cachi, one of the founding Ayar brothers, whose cast could shatter a hilltop or tear open a ravine. So feared was his strength that his brothers tricked him back into the origin-cave and walled him in.',
+  },
+  'punchao': {
+    names: [{ value: "P'unchaw", script: 'Quechua (romanized)', tradition: 'Inca', rom: 'punchao', meaning: '“day / the midday sun” — the principal golden image of Inti', source: 'Cobo; Acosta' }],
+    kind: 'sculpture', classId: 'cult-image',
+    maker: { name: 'Inca goldsmiths (the cult image at the Coricancha)', role: 'wrought by' },
+    custody: [
+      { role: 'principal image of', personId: 'inti', era: 'Inca empire', where: 'the Coricancha, Cusco', sources: [{ kind: 'secondary', reference: 'Cobo; Acosta (Inca cult)' }], note: 'A golden boy with radiating rays; its hollow held the ashes of the Inca rulers’ hearts.' },
+      { role: 'seized at the fall of Vilcabamba and shipped to Spain', externalRef: { name: 'Viceroy Toledo (with Túpac Amaru)', tradition: 'colonial' }, date: '1572', sources: [{ kind: 'secondary', reference: 'Spanish colonial records' }] },
+    ],
+    location: 'Lost (taken to Spain in 1572)',
+    sources: [{ kind: 'secondary', reference: 'Bernabé Cobo; José de Acosta; the 1572 capture under Viceroy Toledo' }],
+    lore: 'Punchao, “the Day,” the great golden image of the sun-god Inti that stood in the Coricancha of Cusco — a radiant golden figure whose hollow body held the ashes of the dead emperors. Captured at the fall of the last Inca refuge in 1572 and sent to Spain, where it vanished.',
+  },
+  'jeguaka': {
+    names: [{ value: 'jeguaka', script: 'Mbyá-Guaraní (romanized)', tradition: 'Guaraní', rom: 'jeguaka', meaning: 'the sacred feathered crown of the First Father', source: 'Cadogan, Ayvu Rapyta' }],
+    kind: 'garment', classId: 'feathered-crown',
+    custody: [{ role: 'worn by', personId: 'namandu', era: 'cosmogonic', sources: [{ kind: 'primary', reference: 'León Cadogan, Ayvu Rapyta (Mbyá-Guaraní creation hymns)' }], note: 'On the dewy flowers of the crown the primeval hummingbird Maino’i flutters and sustains him.' }],
+    sources: [{ kind: 'primary', reference: 'León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní (1959)' }],
+    lore: 'The feathered crown (jeguaka) worn by Ñamandú, the First Father, as he unfolded himself out of the primordial darkness — on its dew-bright flowers the first hummingbird hovered and fed him while creation was still to come.',
+  },
+  'wazaca-axe': {
+    names: [{ value: 'the axe that felled Wazacá', script: 'Pemón', tradition: 'Pemon', meaning: 'the great axe with which the brothers cut down the tree of all foods', source: 'Koch-Grünberg' }],
+    kind: 'tool', classId: 'axe',
+    custody: [
+      { role: 'wielded (the felling led) by', personId: 'manape', era: 'mythic', sources: [{ kind: 'primary', reference: 'Koch-Grünberg, Vom Roroima zum Orinoco' }] },
+      { role: 'wielded by', personId: 'makunaima', era: 'mythic', sources: [{ kind: 'primary', reference: 'Koch-Grünberg, Vom Roroima zum Orinoco' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Theodor Koch-Grünberg, Vom Roroima zum Orinoco, vol. II (1916/1924)' }],
+    lore: 'The great axe with which the brothers Ma’nápe and Makunaíma felled Wazacá, the world-tree that bore every cultivated food. Its crash loosed the rivers and the flood; the stump that remained is Mount Roraima. (The sources name the tree, not the axe.)',
+  },
+
+  // ═══ Etruscan ════════════════════════════════════════════════════════════
+  'tinia-thunderbolts': {
+    names: [
+      { value: 'manubiae', script: 'Latin', tradition: 'Etruscan', meaning: 'the three kinds of lightning-bolt at Tinia’s disposal', source: 'Seneca, Naturales Quaestiones 2.41' },
+      { value: 'Tinia', script: 'Etruscan (Old Italic)', tradition: 'Etruscan', rom: 'tin / tins', meaning: '“day / sky” — the chief god who wields them', source: 'Liver of Piacenza' },
+    ],
+    kind: 'weapon', classId: 'thunderbolt',
+    custody: [{ role: 'wielded by', personId: 'etruscan_tinia', era: 'archaic–hellenistic', sources: [{ kind: 'primary', reference: 'Seneca, Naturales Quaestiones 2.41; Pliny, NH 2.137–146' }] }],
+    sources: [{ kind: 'primary', reference: 'Seneca, NQ 2.41 (the three bolts); Pliny, NH 2.137–146; Martianus Capella, De nuptiis 1.41–61' }],
+    lore: 'The thunderbolts of Tinia, chief of the Etruscan gods — and, in the Etrusca disciplina, three distinct kinds: one he hurls at will, the second only with the assent of the Veiled Gods, the third, most destructive, only with the council of the highest powers. The diviners read the sky by them.',
+  },
+  'menrva-arms': {
+    names: [
+      { value: 'Arms of Menrva', script: 'Latin', tradition: 'Etruscan', meaning: 'helmet, spear, and gorgon-aegis (with her distinctive thunderbolt)', source: 'Etruscan mirrors' },
+      { value: 'Menrva', script: 'Etruscan (Old Italic)', tradition: 'Etruscan', rom: 'menrva', meaning: 'the Etruscan war-and-wisdom goddess', source: 'engraved mirrors' },
+    ],
+    kind: 'weapon', classId: 'spear-and-aegis',
+    custody: [{ role: 'borne by', personId: 'etruscan_menrva', era: 'archaic–hellenistic', sources: [{ kind: 'secondary', reference: 'Etruscan engraved bronze mirrors; de Grummond, Etruscan Myth' }] }],
+    sources: [{ kind: 'secondary', reference: 'Etruscan mirrors (Menrva armed, born from Tinia’s head); N. de Grummond, Etruscan Myth, Sacred History and Legend' }],
+    lore: 'The war-gear of Menrva — helmet, spear, and gorgon-aegis like the Greek Athena, but with a distinctively Etruscan trait the Greek goddess lacks: Menrva, too, wields the thunderbolt.',
+  },
+  'uni-sceptre': {
+    names: [
+      { value: 'Sceptre of Uni', script: 'Latin', tradition: 'Etruscan', meaning: 'the sceptre and diadem of the sovereign goddess', source: 'Etruscan mirrors' },
+      { value: 'unial', script: 'Etruscan (Old Italic)', tradition: 'Etruscan', rom: 'unial', meaning: '“of Uni” — attested on the Pyrgi Tablets (c. 500 BCE)', source: 'Pyrgi Tablets' },
+    ],
+    kind: 'symbol', classId: 'sceptre',
+    custody: [{ role: 'borne by', personId: 'etruscan_uni', era: 'archaic–hellenistic', sources: [{ kind: 'primary', reference: 'Pyrgi Tablets (the dedication to Uni-Astarte); Etruscan mirrors' }] }],
+    sources: [{ kind: 'primary', reference: 'Pyrgi Tablets (gold laminae, c. 500 BCE); Etruscan votive mirrors' }],
+    lore: 'The sceptre and diadem of Uni, sovereign queen of the Etruscan gods (the Etruscan Juno-Hera) — her cult attested in gold on the Pyrgi Tablets, where the ruler of Caere dedicates a temple to Uni-Astarte.',
+  },
+  'turms-caduceus': {
+    names: [
+      { value: 'Caduceus of Turms', script: 'Latin', tradition: 'Etruscan', meaning: 'the serpent-twined herald’s staff of the messenger-god', source: 'Etruscan mirrors' },
+      { value: 'Turms', script: 'Etruscan (Old Italic)', tradition: 'Etruscan', rom: 'turms', meaning: 'the Etruscan Hermes/Mercury', source: 'engraved mirrors' },
+    ],
+    kind: 'symbol', classId: 'caduceus',
+    custody: [{ role: 'borne by', personId: 'etruscan_turms', era: 'archaic–hellenistic', sources: [{ kind: 'secondary', reference: 'Etruscan engraved mirrors labelled “Turms”' }] }],
+    sources: [{ kind: 'secondary', reference: 'Etruscan mirrors; de Grummond, Etruscan Myth, Sacred History and Legend' }],
+    lore: 'The caduceus of Turms, the Etruscan messenger and soul-guide (the Greek Hermes / Roman Mercury) — borne with winged hat and sandals as he conducts the dead, on the engraved bronze mirrors of Etruria.',
+  },
+
+  // ═══ Pre-Islamic Arabian (the cult-objects) ══════════════════════════════
+  'hubal-statue': {
+    names: [{ value: 'هُبَل', script: 'Arabic', tradition: 'Arabian', rom: 'Hubal', meaning: 'the carnelian cult-statue at the Kaʿba, with a golden hand', source: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }],
+    kind: 'sculpture', classId: 'cult-statue',
+    custody: [
+      { role: 'cult image of', personId: 'arabian_hubal', era: 'pre-Islamic', where: 'inside the Kaʿba, Mecca', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }], note: 'A figure of red agate; its broken right hand replaced by Quraysh with one of gold; seven divination arrows were cast before it.' },
+      { role: 'destroyed at the conquest of Mecca', externalRef: { name: 'the early Muslim community', tradition: 'Islamic' }, date: '630 CE (8 AH)', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] },
+    ],
+    location: 'Destroyed (630 CE)',
+    sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām (Book of Idols); al-Azraqī, Akhbār Makka' }],
+    lore: 'The chief idol of the Kaʿba: a man of red carnelian whose broken right hand the Quraysh replaced in gold, before which seven headless arrows were shuffled to divine fate, marriage, and paternity. It was destroyed when Muhammad took Mecca in 630.',
+  },
+  'allat-stone': {
+    names: [{ value: 'اللات', script: 'Arabic', tradition: 'Arabian', rom: 'al-Lāt', meaning: '“the Goddess” — a squared block of white granite at al-Ṭāʾif', source: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }],
+    kind: 'ritual-object', classId: 'baetyl',
+    custody: [
+      { role: 'aniconic cult-stone of', personId: 'arabian_allat', era: 'pre-Islamic', where: 'al-Ṭāʾif (tended by the Banū ʿAttāb of Thaqīf)', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām; Qurʾān 53:19' }] },
+      { role: 'demolished after the submission of Thaqīf', externalRef: { name: 'the early Muslim community', tradition: 'Islamic' }, date: 'c. 630 CE', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] },
+    ],
+    location: 'Destroyed (c. 630 CE)',
+    sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām; Qurʾān 53:19–20; Herodotus 3.8 (Alilat)' }],
+    lore: 'The cult-stone of al-Lāt at Ṭāʾif — a squared block of white granite, “the Lady,” one of the three “daughters of Allah” named in the Qurʾān. Her sanctuary was leveled after the town of Thaqīf made peace with the Muslims.',
+  },
+  'aluzza-trees': {
+    names: [{ value: 'العزى', script: 'Arabic', tradition: 'Arabian', rom: 'al-ʿUzzā', meaning: '“the Mightiest” — three sacred acacias (and a cult-stone) at Nakhla', source: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }],
+    kind: 'ritual-object', classId: 'sacred-grove',
+    custody: [
+      { role: 'sacred grove of', personId: 'arabian_al_uzza', era: 'pre-Islamic', where: 'the valley of Nakhla', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām; Qurʾān 53:19' }] },
+      { role: 'felled by', externalRef: { name: 'Khālid ibn al-Walīd', tradition: 'Islamic' }, date: '630 CE (8 AH)', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] },
+    ],
+    location: 'Destroyed (630 CE)',
+    sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām; Qurʾān 53:19–20' }],
+    lore: 'Al-ʿUzzā, “the Mightiest,” worshipped in three sacred acacia trees in the valley of Nakhla — the most honoured goddess of the Quraysh. Muhammad sent Khālid ibn al-Walīd, who cut the trees down and ended her cult.',
+  },
+  'manat-stone': {
+    names: [{ value: 'مناة', script: 'Arabic', tradition: 'Arabian', rom: 'Manāt', meaning: '“Fate / Doom” — a black stone at Qudayd; “the most ancient of the idols”', source: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }],
+    kind: 'ritual-object', classId: 'baetyl',
+    custody: [
+      { role: 'aniconic cult-stone of', personId: 'arabian_manat', era: 'pre-Islamic', where: 'al-Mushallal near Qudayd (revered by Aws and Khazraj)', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām; Qurʾān 53:20' }] },
+      { role: 'destroyed', externalRef: { name: 'the early Muslim community', tradition: 'Islamic' }, date: 'c. 630 CE', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] },
+    ],
+    location: 'Destroyed (c. 630 CE)',
+    sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām; Qurʾān 53:20' }],
+    lore: 'Manāt, goddess of fate and death — “the most ancient of all the idols,” a black stone at Qudayd by the sea, to whom the pilgrims of Yathrib shaved their heads. Hers is the third name of the Qurʾānic triad.',
+  },
+  'antara-sword': {
+    names: [
+      { value: 'الذامي', script: 'Arabic', tradition: 'Arabian', rom: 'al-Dhāmī', meaning: '“the Thirsty (for blood)” — ʿAntara’s sword', source: 'Sīrat ʿAntar' },
+      { value: 'الأبجر', script: 'Arabic', tradition: 'Arabian', rom: 'al-Abjar', meaning: 'his named warhorse', source: 'Sīrat ʿAntar; ʿAntara’s dīwān' },
+    ],
+    kind: 'weapon', classId: 'sword',
+    custody: [{ role: 'wielded by', personId: 'arabian_antara', era: '6th c. CE', sources: [{ kind: 'primary', reference: 'ʿAntara’s Muʿallaqa; Sīrat ʿAntar ibn Shaddād' }] }],
+    sources: [{ kind: 'primary', reference: 'ʿAntara’s Muʿallaqa (the warrior and his charger); Sīrat ʿAntar (the named sword al-Dhāmī)' }],
+    lore: 'The sword of ʿAntara ibn Shaddād, the black knight-poet of the Banū ʿAbs — called al-Dhāmī, “the Thirsty,” in the popular epic — wielded from the back of his warhorse Abjar. (The sword’s name is firmest in the later Sīra, not the early dīwān.)',
+  },
+
+  // ═══ Hittite & Levantine ═════════════════════════════════════════════════
+  'sudburg-inscription': {
+    names: [{ value: 'Südburg inscription', script: 'Latin', tradition: 'Hittite', meaning: 'the hieroglyphic-Luwian inscription of the Sacred Pool Complex (Chamber 2) at Hattusa', source: 'Hawkins, SÜDBURG (1995)' }],
+    kind: 'monument', classId: 'hieroglyphic-inscription',
+    custody: [{ role: 'commissioned by', personId: 'hittite_suppiluliuma_ii', date: 'c. 1207 BCE', where: 'Hattusa', sources: [{ kind: 'secondary', reference: 'J. D. Hawkins, The Hieroglyphic Inscription of the Sacred Pool Complex at Hattusa (1995)' }], note: 'Records his campaigns (incl. Tarhuntassa) and a “Divine Earth-Road.”' }],
+    location: 'In situ, Hattusa (Boğazkale), Turkey',
+    sources: [{ kind: 'secondary', reference: 'J. D. Hawkins, SÜDBURG (StBoT Beiheft 3, 1995)' }],
+    lore: 'The hieroglyphic-Luwian inscription of the last Hittite great king, Suppiluliuma II, carved in the stone chamber of the Sacred Pool at Hattusa — a record of his conquests and a “divine earth-road,” set up on the eve of the empire’s fall.',
+  },
+  'yazilikaya-chamber-b': {
+    names: [{ value: 'Yazılıkaya, Chamber B', script: 'Latin', tradition: 'Hittite', meaning: 'the rock-relief sanctuary with the Sword-God (Nergal) and Tudhaliya IV embraced by Šarruma', source: 'Seeher, Gods Carved in Stone' }],
+    kind: 'monument', classId: 'rock-relief-sanctuary',
+    custody: [{ role: 'commissioned by (and dedicated to)', personId: 'hittite_tudhaliya_iv', date: 'c. 1230 BCE', where: 'Yazılıkaya, near Hattusa', sources: [{ kind: 'secondary', reference: 'Yazılıkaya reliefs (Tudhaliya’s cartouche; the Šarruma embrace; the Sword-God relief)' }], note: 'NB the separate inscribed bronze “Sword of Tudhaliya” belongs to Tudhaliya I/II, not IV.' }],
+    location: 'In situ, Yazılıkaya rock sanctuary near Hattusa, Turkey',
+    sources: [{ kind: 'secondary', reference: 'J. Seeher, Gods Carved in Stone: The Hittite Rock Sanctuary of Yazılıkaya' }],
+    lore: 'The inner gallery (Chamber B) of the open-air sanctuary of Yazılıkaya, the memorial of Tudhaliya IV — its walls cut with the great Sword-God (the underworld Nergal driven into the rock as a blade) and the king held in the embrace of his protector god Šarruma.',
+  },
+  'ammurapi-letters': {
+    names: [{ value: 'Correspondence of Ammurapi', script: 'Latin', tradition: 'Levantine', meaning: 'the “famine / Sea Peoples” letters of the last king of Ugarit (RS 18.147; RS 20.238)', source: 'Ras Shamra archives' }],
+    kind: 'text', classId: 'letter-archive',
+    custody: [{ role: 'sent by', personId: 'levantine_ammurapi', date: 'c. 1190–1185 BCE', where: 'Ugarit', sources: [{ kind: 'secondary', reference: 'RS 18.147; RS 20.238 (Ras Shamra)' }], note: '“Enemy ships have inflicted much damage… my troops are in Hatti, my ships in Lukka” — written as Ugarit was destroyed.' }],
+    location: 'Cuneiform tablets from Ras Shamra (Ugarit); museum collections',
+    sources: [{ kind: 'secondary', reference: 'RS 18.147 and RS 20.238 (the Rapʾanu/Urtenu archives, Ras Shamra)' }],
+    lore: 'The last letters of Ammurapi, final king of Ugarit — desperate appeals about enemy ships raiding his coast while his army and fleet were away, written in the very weeks before the city was burned and never reoccupied, c. 1185 BCE.',
+  },
+
+  // ═══ Maya / Aztec / Mixtec ═══════════════════════════════════════════════
+  'maya-blowgun': {
+    names: [{ value: "wub'", script: "K'iche' (romanized)", tradition: 'Maya', rom: "wub' / ub'", meaning: 'blowgun — Hunahpu’s name means “One Blowgunner”', source: 'Popol Vuh' }],
+    kind: 'weapon', classId: 'blowgun',
+    custody: [
+      { role: 'wielded by', personId: 'maya_hunahpu', era: 'mythic', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] },
+      { role: 'wielded by', personId: 'maya_xbalanque', era: 'mythic', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Popol Vuh (Tedlock; Christenson) — the Twins blowgun Seven Macaw in the jaw' }],
+    lore: 'The blowgun of the Maya Hero Twins, with which they shot the false sun Seven Macaw (Vucub-Caquix) through the jaw and hunted the birds of the world — Hunahpu’s very name means “One Blowgunner.”',
+  },
+  'maya-ballgame-gear': {
+    names: [{ value: "kik'", script: "K'iche' (romanized)", tradition: 'Maya', rom: "kik'", meaning: 'the rubber ball (with yokes, arm-guards, and masks) coveted by Xibalba', source: 'Popol Vuh' }],
+    kind: 'ritual-object', classId: 'ballgame-equipment',
+    custody: [
+      { role: 'played with by', personId: 'maya_hun_hunahpu', era: 'mythic', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] },
+      { role: 'played with by', personId: 'maya_vucub_hunahpu', era: 'mythic', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Popol Vuh (the gear — yokes, arm-protectors, rubber ball — coveted by the lords of Xibalba)' }],
+    lore: 'The ballgame gear of One and Seven Hunahpu — rubber ball, yokes, arm-guards, and masks — whose noisy play drew the summons of the lords of Xibalba and led the brothers to their deaths in the underworld.',
+  },
+  'maya-divining-seeds': {
+    names: [{ value: "tz'ite", script: "K'iche' (romanized)", tradition: 'Maya', rom: "tz'ite / ixim", meaning: 'coral-tree seeds and maize kernels cast in divination', source: 'Popol Vuh' }],
+    kind: 'ritual-object', classId: 'divining-seeds',
+    custody: [
+      { role: 'cast by', personId: 'maya_xpiacoc', era: 'primordial', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] },
+      { role: 'cast by', personId: 'maya_xmucane', era: 'primordial', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Popol Vuh (the grandparent daykeepers divine with maize and coral seeds)' }],
+    lore: 'The maize kernels and red coral-tree seeds with which the divine grandparents Xpiyacoc and Xmucane, the first daykeepers, cast lots — divining whether humankind should be carved from wood, and later from maize.',
+  },
+  'mixcoatl-atlatl': {
+    names: [{ value: 'ahtlatl', script: 'Nahuatl', tradition: 'Aztec/Mexica', rom: 'ahtlatl', meaning: 'spear-thrower, with darts (mītl) — Mixcoatl is its mythic inventor', source: 'Sahagún, Florentine Codex' }],
+    kind: 'weapon', classId: 'atlatl',
+    custody: [{ role: 'wielded (and invented) by', personId: 'mixcoatl', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Sahagún, Florentine Codex; Aztec hunting iconography' }] }],
+    sources: [{ kind: 'secondary', reference: 'Sahagún, Florentine Codex (Mixcoatl the Chichimec hunter-god); World History Encyclopedia' }],
+    lore: 'The spear-thrower (atlatl) and darts of Mixcoatl, the Chichimec god of the hunt — traditionally the inventor of the weapon, shown with darts, hunting-basket, and bow as the “Cloud Serpent” of the chase.',
+  },
+  'mixcoatl-fire-drill': {
+    names: [{ value: 'mamalhuaztli', script: 'Nahuatl', tradition: 'Aztec/Mexica', rom: 'mamalhuaztli', meaning: 'the fire-drill (also the name of an asterism)', source: 'Sahagún, Florentine Codex bk. 7' }],
+    kind: 'tool', classId: 'fire-drill',
+    custody: [{ role: 'drilled the first new fire —', personId: 'mixcoatl', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Sahagún, Florentine Codex bk. 7' }], note: 'The drilling is sometimes credited to Tezcatlipoca in the guise of Mixcoatl.' }],
+    sources: [{ kind: 'secondary', reference: 'Sahagún, Florentine Codex bk. 7; the New Fire ceremony (xiuhmolpilli)' }],
+    lore: 'The fire-drill of Mixcoatl, with which the first new fire was kindled — the act re-enacted every fifty-two years in the Aztec New Fire ceremony, when all hearths were extinguished and lit anew from a fresh-drilled flame.',
+  },
+  'lord-8-deer-nose-ornament': {
+    names: [{ value: 'yacaxihuitl', script: 'Nahuatl', tradition: 'Mixtec', rom: 'yacaxihuitl', meaning: 'turquoise nose-ornament — the septum-piercing that conferred the Toltec lord (tēuctli) title', source: 'Codex Zouche-Nuttall p.52' }],
+    kind: 'symbol', classId: 'nose-ornament',
+    custody: [
+      { role: 'pierced and invested with the title by', externalRef: { name: 'Lord 4 Jaguar of Tula-Cholula', tradition: 'Mixtec' }, date: 'c. 1097 CE', sources: [{ kind: 'primary', reference: 'Codex Zouche-Nuttall p.52; Codex Colombino' }] },
+      { role: 'worn as the badge of his rank by', personId: 'mixtec_lord_8_deer', date: 'c. 1097 CE', sources: [{ kind: 'primary', reference: 'Codex Zouche-Nuttall' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Codex Zouche-Nuttall p.52; Codex Colombino; Eight Deer Jaguar Claw scholarship (Jansen & Pérez Jiménez)' }],
+    lore: 'The turquoise nose-ornament conferred on Lord 8 Deer “Jaguar Claw,” the great Mixtec conqueror — the septum-piercing, performed by the Toltec lord 4 Jaguar, that invested him with the high title of tēuctli and the right to rule.',
+  },
+  'lord-9-wind-mask': {
+    names: [{ value: '9 Wind buccal mask', script: 'Mixtec', tradition: 'Mixtec', meaning: 'the wind-mask and cut-conch wind-jewel that identify the Mixtec Quetzalcoatl-Ehecatl', source: 'Codex Vindobonensis (Yuta Tnoho)' }],
+    kind: 'garment', classId: 'buccal-mask',
+    custody: [{ role: 'worn by', personId: 'mixtec_lord_9_wind', era: 'creation era', sources: [{ kind: 'primary', reference: 'Codex Vindobonensis pp.47–49' }], note: 'He descends from heaven bearing the sky-waters and lights the first New Fire.' }],
+    sources: [{ kind: 'primary', reference: 'Codex Vindobonensis (Yuta Tnoho); Jansen & Pérez Jiménez' }],
+    lore: 'The buccal wind-mask and spiral conch-jewel of Lord 9 Wind, the Mixtec form of the wind-god Quetzalcoatl-Ehecatl, who in the Vienna Codex descends from the heavens bearing the waters of the sky to ready the world for life.',
+  },
+
+  // ═══ Finnish / Slavic / Caucasus / Armenian ══════════════════════════════
+  'sampo': {
+    names: [{ value: 'Sampo', script: 'Finnish', tradition: 'Finnish', meaning: 'the mill of plenty that grinds grain, salt, and gold (its lid the kirjokansi)', source: 'Kalevala runo 10' }],
+    kind: 'tool', classId: 'magic-mill',
+    maker: { name: 'Ilmarinen, the eternal smith', role: 'forged by' },
+    custody: [
+      { role: 'forged (as bride-price) by', personId: 'finnish_ilmarinen', era: 'mythic', sources: [{ kind: 'primary', reference: 'Kalevala runo 10' }] },
+      { role: 'kept behind nine locks at Pohjola by', personId: 'finnish_louhi', era: 'mythic', sources: [{ kind: 'primary', reference: 'Kalevala runos 10, 38–42' }] },
+      { role: 'seized and shattered at sea (its fragments Finland’s wealth)', externalRef: { name: 'Väinämöinen, Ilmarinen, and Lemminkäinen', tradition: 'Finnish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kalevala runos 42–43' }] },
+    ],
+    sources: [{ kind: 'primary', reference: 'Kalevala (Lönnrot, 1849), runos 10, 38–43' }],
+    lore: 'The Sampo, the wondrous mill Ilmarinen forged for the mistress of Pohjola as the price of her daughter — it ground out grain, salt, and gold without end. The heroes of Kalevala stole it back; broken in the sea-battle, its shards drifted ashore to become the prosperity of Finland.',
+  },
+  'sky-dome-of-ilmarinen': {
+    names: [{ value: 'taivaankansi', script: 'Finnish', tradition: 'Finnish', rom: 'taivaankansi', meaning: '“the lid of the sky” — the firmament Ilmarinen hammered', source: 'Kalevala' }],
+    kind: 'symbol', classId: 'cosmic-work',
+    custody: [{ role: 'forged by', personId: 'finnish_ilmarinen', era: 'cosmogonic', sources: [{ kind: 'primary', reference: 'Kalevala (Ilmarinen “forger of the sky-lid”)' }] }],
+    sources: [{ kind: 'primary', reference: 'Kalevala (Lönnrot, 1849)' }],
+    lore: 'The very vault of heaven, which the smith Ilmarinen hammered out at the dawn of things so finely that nowhere can the mark of hammer or tongs be found — the deed behind his stock epithet, “forger of the sky-lid.”',
+  },
+  'kantele': {
+    names: [{ value: 'kantele', script: 'Finnish', tradition: 'Finnish', meaning: 'the plucked lyre — first of a giant pike’s jawbone, then of birch', source: 'Kalevala runos 40–41, 44' }],
+    kind: 'tool', classId: 'lyre',
+    maker: { name: 'Väinämöinen', role: 'made by' },
+    custody: [{ role: 'made and played by', personId: 'finnish_vainamoinen', era: 'mythic', sources: [{ kind: 'primary', reference: 'Kalevala runos 40–41 (the pike-bone), 44 (the birch)' }] }],
+    sources: [{ kind: 'primary', reference: 'Kalevala (Lönnrot, 1849), runos 40–41, 44' }],
+    lore: 'The kantele of Väinämöinen — the first made from the jawbone of a giant pike strung with a demon-horse’s hairs; when it sank in the sea he made a second of birch strung with a maiden’s hair. Its music enchanted every living thing to tears.',
+  },
+  'kullervo-sword': {
+    names: [{ value: 'Ukon miekka', script: 'Finnish', tradition: 'Finnish', rom: 'Ukon miekka', meaning: 'the talking sword on which Kullervo dies', source: 'Kalevala runo 36' }],
+    kind: 'weapon', classId: 'sword',
+    custody: [{ role: 'borne by (and his end)', personId: 'finnish_kullervo', era: 'mythic', sources: [{ kind: 'primary', reference: 'Kalevala runo 36' }], note: 'Asked if it would drink his guilty blood, the blade answered that it gladly would; he fell upon it.' }],
+    sources: [{ kind: 'primary', reference: 'Kalevala (Lönnrot, 1849), runo 36 (Kullervo’s death)' }],
+    lore: 'The sword of the doomed Kullervo, which — when the broken hero asked whether it would drink his guilty blood — answered that it would gladly drink even the innocent. He set its hilt in the ground and threw himself on the point.',
+  },
+  'perun-axe': {
+    names: [{ value: 'Перун', script: 'Cyrillic', tradition: 'Slavic', rom: 'Perun', meaning: 'the thunder-god’s axe and “thunder-stones”', source: 'Primary Chronicle; East Slavic folklore' }],
+    kind: 'weapon', classId: 'axe',
+    custody: [{ role: 'wielded by', personId: 'slavic_perun', era: 'pagan era', sources: [{ kind: 'secondary', reference: 'Primary Chronicle (the idol of 980, cast into the Dnieper 988); axe-amulet finds; “thunder-stone” folklore' }] }],
+    sources: [{ kind: 'secondary', reference: 'Povest’ vremennykh let (s.a. 980, 988); East Slavic folklore' }],
+    lore: 'The axe of Perun, Slavic god of thunder — his bolts fell as the prehistoric stone axes folk called “thunder-stones.” His silver-headed idol stood at Kiev until Vladimir, baptizing Rus’ in 988, had it dragged down and thrown in the Dnieper.',
+  },
+  'svarog-tongs': {
+    names: [{ value: 'Сварогъ', script: 'Cyrillic', tradition: 'Slavic', rom: 'Svarogŭ', meaning: 'the heavenly smith’s tongs that fell from the sky', source: 'Hypatian Codex s.a. 1114' }],
+    kind: 'tool', classId: 'smith-tongs',
+    custody: [{ role: 'wielded by', personId: 'slavic_svarog', era: 'mythic', sources: [{ kind: 'primary', reference: 'Hypatian Codex (interpolation s.a. 1114, after John Malalas)' }], note: 'In his reign the tongs fell from heaven and men first forged weapons.' }],
+    sources: [{ kind: 'primary', reference: 'Hypatian & Khlebnikov Codices (s.a. 1114), equating Svarog with Hephaestus' }],
+    lore: 'The smith’s tongs of Svarog, the Slavic heavenly smith — which, the chronicle says, fell from the sky in his reign, after which men forged weapons of iron, where before they had fought with clubs and stones.',
+  },
+  'dobrynya-cap': {
+    names: [{ value: 'шапка земли греческой', script: 'Cyrillic', tradition: 'Slavic', rom: 'shapka zemli grecheskoy', meaning: '“cap of the Greek earth” — a heavy pilgrim’s hat used to beat the dragon', source: 'bylina of Dobrynya and the Zmey' }],
+    kind: 'tool', classId: 'improvised-weapon',
+    custody: [{ role: 'snatched up and wielded by', personId: 'slavic_dobrynya_nikitich', era: 'Kievan epic', sources: [{ kind: 'secondary', reference: 'Russian byliny (Dobrynya and Zmey Gorynych)' }] }],
+    sources: [{ kind: 'secondary', reference: 'Russian byliny (the Dobrynya cycle)' }],
+    lore: 'The heavy “cap of the Greek earth” — a pilgrim’s hat from Mount Athos — which the bogatyr Dobrynya Nikitich snatched up at the Puchai River and beat the three-headed dragon Zmey Gorynych into submission.',
+  },
+  'sword-of-svyatogor': {
+    names: [{ value: 'меч Святогора', script: 'Cyrillic', tradition: 'Slavic', rom: 'mech Svyatogora', meaning: 'the sword inherited from the dying giant Svyatogor', source: 'bylina of Svyatogor' }],
+    kind: 'weapon', classId: 'sword',
+    custody: [
+      { role: 'passed from the dying giant Svyatogor to', personId: 'slavic_ilya_muromets', era: 'Kievan epic', sources: [{ kind: 'secondary', reference: 'Russian byliny (Svyatogor cycle)' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'Russian byliny (Svyatogor & Ilya Muromets cycles)' }],
+    lore: 'The sword of the colossal elder bogatyr Svyatogor, who — sealed alive in a stone coffin he could not escape — breathed his strength into Ilya Muromets and left him his great blade, passing the age of giants to the age of heroes.',
+  },
+  'batraz-sword': {
+    names: [{ value: 'Батрадз', script: 'Cyrillic', tradition: 'Ossetian', rom: 'Batradz', meaning: 'the steel-bodied Nart hero and his sword (Dzus-qara in some tellings)', source: 'Nart sagas' }],
+    kind: 'weapon', classId: 'sword',
+    maker: { name: 'Kurdalægon, the Narts’ heavenly smith (who also quenched Batraz into living steel)', role: 'forged by' },
+    custody: [{ role: 'borne by', personId: 'ossetian_batraz', era: 'Nart heroic age', sources: [{ kind: 'secondary', reference: 'Nart sagas (Abaev; Dumézil)' }], note: 'Dying, he made the Narts hurl his vast sword into the sea; only then, as the waves turned blood-red, could he die.' }],
+    sources: [{ kind: 'secondary', reference: 'Tales of the Narts (ed. Abaev; trans. Colarusso); Encyclopaedia Iranica, “Batradz”' }],
+    lore: 'The sword of Batraz, the Nart hero whom the smith-god Kurdalægon tempered in the sea until his whole body was steel. At his death he commanded the Narts to cast his colossal blade into the waters — only when at last they did, and the sea ran red, could he die.',
+  },
+  'nartamonga': {
+    names: [
+      { value: 'Нартамонгæ', script: 'Cyrillic', tradition: 'Ossetian', rom: 'Nartamongæ', meaning: '“the Nart-revealer” — the truth-cup of the feast-hall', source: 'Nart sagas' },
+      { value: 'Уацамонгæ', script: 'Cyrillic', tradition: 'Ossetian', rom: 'Wacamongæ', meaning: '“the holy-revealer” (the Christianized name)', source: 'Nart sagas' },
+    ],
+    kind: 'vessel', classId: 'truth-cup',
+    custody: [{ role: 'kept in the feast-hall of', personId: 'ossetian_satana', era: 'Nart heroic age', sources: [{ kind: 'secondary', reference: 'Nart sagas (ed. Abaev; trans. Colarusso)' }], note: 'It rose of itself to the lips of any Nart who told his greatest deed truthfully, and stayed still before a boaster.' }],
+    sources: [{ kind: 'secondary', reference: 'Tales of the Narts (ed. Abaev; trans. Colarusso)' }],
+    lore: 'The Nartamonga, the truth-telling cup of the Narts — at the feast it rose untouched to the lips of the hero who recounted his greatest deed without a lie, but stood unmoving before any who boasted falsely. (A communal treasure, kept by Satana, mistress of the Nart hall.)',
+  },
+  'amirani-chain': {
+    names: [{ value: 'ჯაჭვი', script: 'Georgian', tradition: 'Kartvelian', rom: 'jach’vi', meaning: 'the iron chain binding Amirani to the Caucasus', source: 'Amiraniani' }],
+    kind: 'ritual-object', classId: 'binding-chain',
+    custody: [{ role: 'binds (for bringing fire/metal to mankind)', personId: 'kartvelian_amirani', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Amiraniani (Georgian oral epic)' }], note: 'His dog Q’ursha licks it nearly through each year, but smiths strike their anvils to restore it.' }],
+    sources: [{ kind: 'secondary', reference: 'Amiraniani (Georgian oral epic); Georgian Encyclopedia' }],
+    lore: 'The chain that binds Amirani, the Georgian Prometheus, to a peak of the Caucasus for defying the gods and giving metalcraft to humankind. His winged dog Q’ursha licks it almost through each year — but on the smiths’ holy day the anvils ring and the chain is made whole again.',
+  },
+  'hayk-bow': {
+    names: [{ value: 'Հայկ', script: 'Armenian', tradition: 'Armenian', rom: 'Hayk', meaning: 'the great bow of the Armenian patriarch, loosing a three-fletched arrow', source: 'Movses Khorenatsi I.10–11' }],
+    kind: 'weapon', classId: 'bow',
+    custody: [{ role: 'drawn by', personId: 'armenian_hayk', era: 'patriarchal age', sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, History of the Armenians I.10–11' }], note: 'His long arrow passed clean through the breastplate of the tyrant Bel at Hayots Dzor.' }],
+    sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, History of the Armenians, Book I' }],
+    lore: 'The great bow of Hayk, eponymous father of the Armenians, with which he loosed a broad three-feathered arrow clean through the breastplate of the Babylonian titan-king Bel — winning his people’s freedom and founding the nation that bears his name.',
+  },
+  'tur-ketsaki': {
+    names: [{ value: 'Թուր Կեծակի', script: 'Armenian', tradition: 'Armenian', rom: 'T’ur Ketsaki', meaning: '“the Lightning Sword” of the house of Sassoun', source: 'Daredevils of Sassoun' }],
+    kind: 'weapon', classId: 'sword',
+    custody: [
+      { role: 'won from the sea-treasure by', personId: 'armenian_sanasar', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer (Daredevils of Sassoun), first branch' }] },
+      { role: 'borne by', personId: 'armenian_mher_the_elder', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+      { role: 'wielded (to cleave Misra-Melik) by', personId: 'armenian_david_of_sassoun', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+      { role: 'finally taken by', personId: 'armenian_mher_the_younger', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'Daredevils of Sassoun / Sasna Tsrer (first recorded by Srvandzdiants, 1873)' }],
+    lore: 'The Lightning Sword of Sassoun, won from the sea by Sanasar at the kingdom’s founding and borne down the generations — Mher the Elder, then David, who clove the giant Misra-Melik in two with it, and at last Mher the Younger, sealed with it inside Raven’s Rock.',
+  },
+  'kurkik-jalali': {
+    names: [{ value: 'Քուռկիկ Ջալալի', script: 'Armenian', tradition: 'Armenian', rom: 'K’urkik Jalali', meaning: 'the sea-born wonder-horse of the Sassoun heroes', source: 'Daredevils of Sassoun' }],
+    kind: 'tool', classId: 'war-horse',
+    custody: [
+      { role: 'won (with the sword) by', personId: 'armenian_sanasar', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+      { role: 'ridden by', personId: 'armenian_david_of_sassoun', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+      { role: 'sealed (with its rider) in Raven’s Rock with', personId: 'armenian_mher_the_younger', era: 'epic', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'Daredevils of Sassoun / Sasna Tsrer' }],
+    lore: 'Kurkik Jalali, the speaking, sun-leaping wonder-horse the heroes of Sassoun won from the sea together with the Lightning Sword — companion of Sanasar, Mher, and David, and at the last shut up inside Raven’s Rock with Mher the Younger to wait for a world made just.',
+  },
+
+  // ═══ Polynesian & Philippine (Suludnon, Tinguian) ════════════════════════
+  'maui-fishhook': {
+    names: [
+      { value: 'Te Matau-a-Māui', script: 'Māori', tradition: 'Polynesian', meaning: '“the fish-hook of Māui,” which fished up the North Island', source: 'Grey, Polynesian Mythology' },
+      { value: 'Manaiakalani', script: 'Hawaiian', tradition: 'Polynesian', meaning: 'the Hawaiian name of Māui’s hook (“the hook from heaven”)', source: 'Hawaiian Māui tradition' },
+    ],
+    kind: 'tool', classId: 'magic-fishhook',
+    maker: { name: 'Māui (carved from the jawbone of Murirangawhenua)', role: 'made by' },
+    custody: [{ role: 'made and cast by', personId: 'polynesian_maui', era: 'mythic', sources: [{ kind: 'primary', reference: 'George Grey, Polynesian Mythology (1855)' }], note: 'Baited with blood from his own nose, it pulled up Te Ika-a-Māui, the North Island.' }],
+    sources: [{ kind: 'primary', reference: 'George Grey, Polynesian Mythology (1855); Tregear, Maori-Polynesian Comparative Dictionary (1891)' }],
+    lore: 'The enchanted fish-hook Māui carved from his ancestress’s jawbone and baited with his own blood — with it he hauled up from the sea the great fish that is the North Island of New Zealand (Te Ika-a-Māui). (The Hawaiian branch calls his hook Manaiakalani.)',
+  },
+  'maui-jawbone': {
+    names: [{ value: 'Te Kauae o Murirangawhenua', script: 'Māori', tradition: 'Polynesian', meaning: 'the jawbone of his ancestress Murirangawhenua — his club and the stuff of his hook', source: 'Grey, Polynesian Mythology' }],
+    kind: 'tool', classId: 'enchanted-jawbone',
+    maker: { name: 'Murirangawhenua (his blind ancestress, who gave him her jaw)', role: 'given by' },
+    custody: [{ role: 'wielded by', personId: 'polynesian_maui', era: 'mythic', sources: [{ kind: 'primary', reference: 'George Grey, Polynesian Mythology (1855)' }], note: 'He beat the sun with it and carved it into his fish-hook.' }],
+    sources: [{ kind: 'primary', reference: 'George Grey, Polynesian Mythology (1855); Te Ara Encyclopedia of NZ' }],
+    lore: 'The magic jawbone of the ancestress Murirangawhenua, which Māui used as a club to beat the sun into slowness — and from which he carved the hook that fished up the land. A living taonga of Māori tradition.',
+  },
+  'maui-sun-snare': {
+    names: [{ value: 'taura', script: 'Māori', tradition: 'Polynesian', rom: 'taura', meaning: 'the plaited flax ropes/nooses that snared the sun', source: 'Grey, Polynesian Mythology' }],
+    kind: 'tool', classId: 'snare-rope',
+    maker: { name: 'Māui and his brothers (plaited from flax)', role: 'plaited by' },
+    custody: [{ role: 'set and pulled by', personId: 'polynesian_maui', era: 'mythic', sources: [{ kind: 'primary', reference: 'George Grey, Polynesian Mythology (1855)' }] }],
+    sources: [{ kind: 'primary', reference: 'George Grey, Polynesian Mythology (1855)' }],
+    lore: 'The plaited flax ropes with which Māui and his brothers noosed the sun-god Tama-nui-te-rā as he rose, holding him fast while Māui beat him with the jawbone until he agreed to cross the sky more slowly — so lengthening the day.',
+  },
+  'labaw-donggon-kampilan': {
+    names: [{ value: 'kampilan', script: 'Hiligaynon', tradition: 'Suludnon', rom: 'kampilan', meaning: 'his great single-edged sword, with the magic cape, hat, and belt his mother made', source: 'Jocano, Hinilawod' }],
+    kind: 'weapon', classId: 'enchanted-sword',
+    maker: { name: 'Alunsina (his mother, goddess of the eastern sky)', role: 'prepared by' },
+    custody: [{ role: 'wielded by', personId: 'suludnon_labaw_donggon', era: 'epic', sources: [{ kind: 'primary', reference: 'F. Landa Jocano, Hinilawod (1964)' }], note: 'With the magic belt he slew the monster Manalintad; with the pamlang charm he conjured a house of ten roofs.' }],
+    sources: [{ kind: 'primary', reference: 'F. Landa Jocano, Hinilawod (recorded 1964, Panay)' }],
+    lore: 'The kampilan sword and magic cape, hat, and belt that the sky-goddess Alunsina made for her son Labaw Donggon, eldest hero of the Hinilawod epic, before he set out to win his brides and battle the lords of the underworld.',
+  },
+  'humadapnon-boat': {
+    names: [{ value: 'biday nga rumba-rumba', script: 'Kinaray-a', tradition: 'Suludnon', rom: 'biday nga rumba-rumba', meaning: 'the sailboat of his quest (with his magic cape)', source: 'Jocano, Hinilawod' }],
+    kind: 'vessel', classId: 'boat',
+    custody: [{ role: 'sailed by', personId: 'suludnon_humadapnon', era: 'epic', sources: [{ kind: 'primary', reference: 'F. Landa Jocano, Hinilawod (Adventures of Humadapnon)' }], note: 'In it he voyaged through the region of clouds and eternal darkness to Tarambang Buriraw.' }],
+    sources: [{ kind: 'primary', reference: 'F. Landa Jocano, Hinilawod' }],
+    lore: 'The sailboat biday nga rumba-rumba in which the hero Humadapnon, second of the Hinilawod brothers, voyaged with his companion through the regions of cloud and unending darkness in search of the woman of his dream.',
+  },
+  'dumalapdap-dagger': {
+    names: [{ value: 'iwang daniwan', script: 'Kinaray-a', tradition: 'Suludnon', rom: 'iwang daniwan', meaning: 'his magic dagger', source: 'Jocano, Hinilawod' }],
+    kind: 'weapon', classId: 'magic-dagger',
+    custody: [{ role: 'wielded by', personId: 'suludnon_dumalapdap', era: 'epic', sources: [{ kind: 'primary', reference: 'F. Landa Jocano, Hinilawod' }], note: 'With it he slew the monster Uyutang beneath the armpit.' }],
+    sources: [{ kind: 'primary', reference: 'F. Landa Jocano, Hinilawod (1964)' }],
+    lore: 'The magic dagger iwang daniwan of Dumalapdap, youngest of the three Hinilawod heroes, with which he killed the winged monster Uyutang at the edge of the world.',
+  },
+  'gaygayoma-basket': {
+    names: [{ value: 'celestial basket', script: 'Latin', tradition: 'Tinguian', meaning: 'the basket the star-maiden lowers on a cord to travel between sky and earth', source: 'Cole, Traditions of the Tinguian' }],
+    kind: 'vessel', classId: 'sky-basket',
+    custody: [{ role: 'used by', personId: 'tinguian_gagayoma', era: 'mythic', sources: [{ kind: 'primary', reference: 'Fay-Cooper Cole, Traditions of the Tinguian (1915)' }], note: 'She lowers it to draw the mortal Aponitolau up to the sky-world.' }],
+    sources: [{ kind: 'primary', reference: 'Fay-Cooper Cole, Traditions of the Tinguian (1915); Mabel Cook Cole, Philippine Folk Tales (1916)' }],
+    lore: 'The basket the star-maiden Gaygayoma lowers from the sky on a cord — by it she drew her mortal lover Aponitolau up to the star-world above, and moved between heaven and earth.',
+  },
+
+  // ═══ North American ══════════════════════════════════════════════════════
+  'monster-slayer-arms': {
+    names: [{ value: 'Naayééʼ Neizghání’s arms', script: 'Navajo (romanized)', tradition: 'Diné', meaning: 'the lightning arrows and flint armor the Sun gives his son', source: 'Matthews, Navaho Legends (1897)' }],
+    kind: 'weapon', classId: 'lightning-arrows',
+    maker: { name: 'Jóhonaaʼéí, the Sun (his father)', role: 'given by' },
+    custody: [{ role: 'borne by', personId: 'dine_monster_slayer', era: 'creation era', sources: [{ kind: 'secondary', reference: 'Matthews, Navaho Legends (1897); Zolbrod, Diné bahaneʼ (1984)' }], note: 'Zigzag- and straight-lightning arrows and flint/obsidian armor, with which he slew the monsters (Yéʼiitsoh and the rest).' }],
+    sources: [{ kind: 'secondary', reference: 'W. Matthews, Navaho Legends (1897); P. Zolbrod, Diné bahaneʼ (1984)' }],
+    lore: 'The lightning arrows and flint armor the Sun gave his son Monster Slayer when the Hero Twins reached his sky-house — the weapons with which he rid the Fifth World of the monsters (Naayééʼ) that were devouring the Diné.',
+  },
+  'born-for-water-prayersticks': {
+    names: [{ value: 'Tó Bájíshchíní’s prayersticks', script: 'Navajo (romanized)', tradition: 'Diné', meaning: 'the talking prayersticks / “life feathers” that warn of his brother’s peril', source: 'Zolbrod, Diné bahaneʼ' }],
+    kind: 'ritual-object', classId: 'prayersticks',
+    custody: [{ role: 'watched over by', personId: 'dine_born_for_water', era: 'creation era', sources: [{ kind: 'secondary', reference: 'Zolbrod, Diné bahaneʼ (1984)' }], note: 'They burn and redden when Monster Slayer is in danger.' }],
+    sources: [{ kind: 'secondary', reference: 'Zolbrod, Diné bahaneʼ (1984); the Shooting Chant tradition' }],
+    lore: 'The talking prayersticks (“life feathers”) the quieter twin Born for Water kept and watched while his brother fought — they would catch fire and turn red the moment Monster Slayer’s life was in danger.',
+  },
+  'spider-woman-loom': {
+    names: [{ value: 'Naʼashjéʼii Asdzą́ą́’s loom', script: 'Navajo (romanized)', tradition: 'Diné', meaning: 'the weaving loom and spindle she taught the Diné — warp of sunrays, healds of lightning', source: 'Diné bahaneʼ' }],
+    kind: 'tool', classId: 'loom',
+    maker: { name: 'Spider Woman (with Spider Man, who designed it)', role: 'devised by' },
+    custody: [{ role: 'taught the craft to the Diné —', personId: 'dine_spider_woman', era: 'creation era', sources: [{ kind: 'secondary', reference: 'Diné bahaneʼ; Bard Graduate Center, Shaped by the Loom' }] }],
+    sources: [{ kind: 'secondary', reference: 'Diné bahaneʼ; “Shaped by the Loom” (Bard Graduate Center)' }],
+    lore: 'The loom Spider Woman taught the Diné to weave on — its cosmic prototype strung of sky and earth cords, warped with sun-rays and healded with lightning. She also gave the Hero Twins a living eagle feather for protection.',
+  },
+  'sky-woman-seeds': {
+    names: [{ value: 'the seeds of Sky Woman', script: 'English', tradition: 'Iroquois', meaning: 'the seeds and plants she clutched from the Tree of Life as she fell to Turtle Island', source: 'Haudenosaunee creation account' }],
+    kind: 'symbol', classId: 'seeds-of-life',
+    custody: [{ role: 'brought down and sown by', personId: 'iroquois_sky_woman', era: 'creation era', sources: [{ kind: 'secondary', reference: 'Oneida Indian Nation creation account' }], note: 'Versions differ on the exact contents — seeds, roots, tobacco, or a handful of the Tree.' }],
+    sources: [{ kind: 'secondary', reference: 'Haudenosaunee creation story (Oneida Indian Nation; native-languages.org)' }],
+    lore: 'The seeds and plants Sky Woman snatched from the uprooted celestial Tree of Life as she fell through the hole in the sky — sown on the back of the Great Turtle, they became the first growing things of the earth (Turtle Island).',
+  },
+  'hiawatha-wampum': {
+    names: [{ value: 'condolence wampum', script: 'English', tradition: 'Iroquois', meaning: 'the strings of wampum Hiawatha first made to wipe away grief', source: 'Haudenosaunee Confederacy' }],
+    kind: 'ritual-object', classId: 'wampum',
+    maker: { name: 'Hiawatha (the first three strings; the Peacemaker added ten)', role: 'made by' },
+    custody: [{ role: 'made and instituted by', personId: 'iroquois_hayowentha', era: 'League-founding', sources: [{ kind: 'secondary', reference: 'Haudenosaunee Confederacy, “Wampum”; Onondaga Nation' }], note: 'Distinct from the national “Hiawatha Belt” that bears his name.' }],
+    sources: [{ kind: 'secondary', reference: 'Haudenosaunee Confederacy; Onondaga Nation' }],
+    lore: 'The condolence wampum Hiawatha strung after grief had broken him — the words of comfort given form, which the Peacemaker used to clear his mind and which became the Condolence rite at the founding of the Five Nations’ League.',
+  },
+  'cornplanter-pipe-tomahawk': {
+    names: [{ value: 'Cornplanter’s pipe-tomahawk', script: 'English', tradition: 'Iroquois', meaning: 'the pipe-tomahawk presented to him by President Washington in 1792', source: 'New York State Museum' }],
+    kind: 'weapon', classId: 'pipe-tomahawk',
+    custody: [
+      { role: 'presented (traditionally by George Washington) to', personId: 'iroquois_cornplanter', date: '1792', sources: [{ kind: 'secondary', reference: 'New York State Museum; Mount Vernon' }] },
+      { role: 'stolen, then returned anonymously', externalRef: { name: 'New York State Museum, Albany', tradition: 'modern' }, date: '1947 / 2018', sources: [{ kind: 'secondary', reference: 'NY State Museum' }] },
+    ],
+    location: 'New York State Museum, Albany',
+    sources: [{ kind: 'secondary', reference: 'New York State Museum, “Cornplanter’s Pipe Tomahawk”; Mount Vernon' }],
+    lore: 'The pipe-tomahawk — half weapon, half peace-pipe — given to the Seneca chief Cornplanter, by tradition from President Washington in 1792. Stolen from the New York State Museum about 1948, it was returned anonymously in 2018.',
+  },
+  'poia-raven-feathers': {
+    names: [{ value: 'Poʼia’s raven feathers and elk robe', script: 'Blackfoot (romanized)', tradition: 'Blackfoot', meaning: 'the two raven feathers, elk-skin robe, and Sun-Dance knowledge the Sun gave Scarface', source: 'Grinnell, Blackfoot Lodge Tales (1892)' }],
+    kind: 'garment', classId: 'sacred-regalia',
+    maker: { name: 'Naató’si, the Sun (his grandfather)', role: 'given by' },
+    custody: [{ role: 'brought back from the Sun by', personId: 'poia', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Grinnell, Blackfoot Lodge Tales (1892); McClintock, The Old North Trail (1910)' }], note: 'Poïa carried the Medicine Lodge (Sun Dance) to the Blackfoot.' }],
+    sources: [{ kind: 'secondary', reference: 'G. B. Grinnell, Blackfoot Lodge Tales (1892); W. McClintock, The Old North Trail (1910)' }],
+    lore: 'The two raven feathers and elk-skin robe the Sun gave Poïa (Scarface) after healing the scar from his face — and with them the knowledge of the Medicine Lodge, which he carried down to the Blackfoot as the Sun Dance.',
+  },
+  'soatsaki-digging-stick': {
+    names: [{ value: 'So’atsaki’s digging stick', script: 'Blackfoot (romanized)', tradition: 'Blackfoot', meaning: 'the root-digging stick from the Moon, and the forbidden Great Turnip', source: 'McClintock, The Old North Trail' }],
+    kind: 'tool', classId: 'digging-stick',
+    custody: [{ role: 'used by', personId: 'soatsaki', era: 'mythic', sources: [{ kind: 'secondary', reference: 'McClintock, The Old North Trail (1910)' }], note: 'She uprooted the one forbidden sacred turnip, opening the hole through which she saw earth and was sent down.' }],
+    sources: [{ kind: 'secondary', reference: 'W. McClintock, The Old North Trail (1910); Grinnell, Blackfoot Lodge Tales' }],
+    lore: 'The digging stick Feather Woman (So’atsaki) was given in the Sky-Country, and the one Great Turnip she was forbidden to touch. When she dug it up anyway, the hole it left looked down on the earth she had left — and her homesickness undid her.',
+  },
+  'redhorn-head-earrings': {
+    names: [{ value: 'Įčo-horúšika', script: 'Hocąk (romanized)', tradition: 'Ho-Chunk', rom: 'Įčo-horúšika', meaning: '“Wears (Living) Faces on His Ears” — the little living human heads Redhorn wore as earrings', source: 'Radin; Hocąk Encyclopedia' }],
+    kind: 'symbol', classId: 'living-earrings',
+    custody: [
+      { role: 'worn by', personId: 'redhorn', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Paul Radin (Ho-Chunk ethnology, 1908–12); Hocąk Encyclopedia' }] },
+      { role: 'inherited by', personId: 'redhorn_son', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Hocąk Encyclopedia, “The Sons of Redhorn”' }] },
+    ],
+    sources: [{ kind: 'secondary', reference: 'Paul Radin, Ho-Chunk ethnology; Hocąk Encyclopedia (the Redhorn cycle)' }],
+    lore: 'The tiny living human heads that the hero Redhorn wore on his earlobes — which winked and spat and stuck out their tongues — earning him the spirits’ name “He Who Wears Faces on His Ears.” His sons were born wearing them too.',
+  },
+  'white-beaverskin-wrap': {
+    names: [{ value: 'the white beaverskin wrap', script: 'English', tradition: 'Ho-Chunk', meaning: 'the white beaverskin robe that names its wearer', source: 'Hocąk Encyclopedia' }],
+    kind: 'garment', classId: 'robe',
+    custody: [{ role: 'worn by', personId: 'white_beaver_woman', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Hocąk Encyclopedia, “The Sons of Redhorn”' }] }],
+    sources: [{ kind: 'secondary', reference: 'Paul Radin, Ho-Chunk ethnology; Hocąk Encyclopedia' }],
+    lore: 'The white beaverskin wrap that names its wearer, the Woman in the White Beaverskin Wrap — wife of Redhorn and mother of his elder son in the Ho-Chunk cycle.',
+  },
+  'tapun-sa-win-digging-stick': {
+    names: [{ value: 'Tapúŋ Šá Wíŋ’s digging stick', script: 'Lakota (romanized)', tradition: 'Sioux/Lakota', meaning: 'the digging stick, forbidden turnip, and braided rope of the Fallen Star cycle', source: 'Lakota Star Knowledge' }],
+    kind: 'tool', classId: 'digging-stick',
+    custody: [{ role: 'used by', personId: 'tapun_sa_win', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Lakota Fallen Star / Star-Husband cycle (cairns.org; SDPB)' }], note: 'Uprooting the forbidden turnip opened the hole in the sky; she descended on a braided rope.' }],
+    sources: [{ kind: 'secondary', reference: 'Lakota Star Knowledge (nativecairns.org; SDPB)' }],
+    lore: 'The digging stick of Red Cheek Woman (Tapúŋ Šá Wíŋ) in the Lakota Star-Husband story — with which she dug up the one forbidden turnip and saw the earth far below, then lowered herself on a braided rope toward home, giving birth to the hero Fallen Star.',
+  },
+
+  // ═══ African (Akan, Yoruba, Mbundu, Shilluk, Edo, Rwanda) ═════════════════
+  'sika-dwa-kofi': {
+    names: [{ value: 'Sika Dwa Kofi', script: 'Twi', tradition: 'Akan', rom: 'Sika Dwa Kofi', meaning: '“the Golden Stool born on a Friday” — seat of the soul of the Asante nation', source: 'Asante oral tradition' }],
+    kind: 'symbol', classId: 'royal-stool',
+    maker: { name: 'Okomfo Anokye, the Asante high priest (called it down from the sky)', role: 'conjured by' },
+    custody: [
+      { role: 'called down from the sky onto the lap of', personId: 'akan_osei_tutu_i', date: 'c. 1701', where: 'the founding of the Asante union', sources: [{ kind: 'secondary', reference: 'BlackPast; Encyclopaedia Africana' }], note: 'Holds the sunsum (soul) of the Asante; it must never touch the ground.' },
+    ],
+    sources: [{ kind: 'secondary', reference: 'BlackPast, “Golden Stool”; Smarthistory, “Sika Dwa Kofi”' }],
+    lore: 'The Golden Stool, which the priest Okomfo Anokye drew down from the sky to settle on the knees of Osei Tutu — the very soul of the Asante nation, never to be sat upon or to touch the ground. A British demand to sit on it sparked the War of the Golden Stool in 1900.',
+  },
+  'okomfo-anokye-sword': {
+    names: [{ value: 'Ɔkɔmfo Anokye Afena', script: 'Twi', tradition: 'Akan', rom: 'Ɔkɔmfo Anokye Afena', meaning: 'the priest Anokye’s sword, planted unmovably in the earth at Kumasi', source: 'Asante oral tradition' }],
+    kind: 'weapon', classId: 'ceremonial-sword',
+    maker: { name: 'Okomfo Anokye', role: 'planted by' },
+    custody: [{ role: 'planted in the ground (immovable) by', personId: 'akan_komfo_anokye', date: 'c. early 1700s', where: 'Bantama, Kumasi', sources: [{ kind: 'secondary', reference: 'Explore Kumasi; Atlas Obscura' }], note: 'Tradition holds the Asante nation would end if it were ever pulled out.' }],
+    location: 'In situ, Okomfo Anokye Teaching Hospital grounds, Kumasi, Ghana',
+    sources: [{ kind: 'secondary', reference: 'Explore Kumasi; Britannica, “Okomfo Anokye”' }],
+    lore: 'The sword Okomfo Anokye drove into the ground at Kumasi to mark the Asante union — fixed there, tradition says, beyond any power to draw it out, for if it were ever removed the Asante nation would dissolve. It still stands on the hospital grounds named for him.',
+  },
+  'mponponsuo-sword': {
+    names: [{ value: 'Mponponsuo', script: 'Twi', tradition: 'Akan', rom: 'Mponponsuo', meaning: '“Responsibility” — the foremost oath-sword (akrafena) of the Asantehene', source: 'Asante oral tradition' }],
+    kind: 'weapon', classId: 'ceremonial-sword',
+    maker: { name: 'Okomfo Anokye (forged for the infant Opoku Ware)', role: 'forged by' },
+    custody: [{ role: 'made for, and the oath-sword of', personId: 'akan_opoku_ware_i', date: 'c. 1700s', sources: [{ kind: 'secondary', reference: 'Akrafena tradition; Encyclopaedia Africana' }], note: 'Borne by each Asantehene; on it the chiefs swear allegiance.' }],
+    sources: [{ kind: 'secondary', reference: 'Akrafena (soul-sword) tradition; Encyclopaedia Africana, “Opoku Ware”' }],
+    lore: 'Mponponsuo, “Responsibility,” the great soul-sword Okomfo Anokye forged for Opoku Ware — the foremost akrafena of Asante, on which the Asantehene takes the oath of office and the chiefs swear their loyalty to him.',
+  },
+  'anansi-pot-of-wisdom': {
+    names: [
+      { value: 'toa nyansa', script: 'Twi', tradition: 'Akan', rom: 'toa nyansa', meaning: 'the calabash/pot in which Anansi hoarded all the world’s wisdom', source: 'Anansesem tradition' },
+      { value: 'Anansesɛm', script: 'Twi', tradition: 'Akan', rom: 'Anansesɛm', meaning: '“spider-stories” — the world’s tales he won from the sky-god Nyame', source: 'Anansesem tradition' },
+    ],
+    kind: 'vessel', classId: 'gourd',
+    custody: [{ role: 'gathered the world’s wisdom into it —', personId: 'akan_anansi', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Britannica, “Ananse”; Anike Foundation' }], note: 'It shattered at a tree’s foot, scattering wisdom to all the world.' }],
+    sources: [{ kind: 'secondary', reference: 'Britannica, “Ananse”; Anike Foundation' }],
+    lore: 'The calabash into which Anansi the spider gathered all the wisdom in the world to hoard for himself — until, trying to climb a tree with it slung in front, he stumbled, the pot broke, and wisdom scattered to every people. (He also won all the world’s stories, the Anansesem, from the sky-god Nyame.)',
+  },
+  'yaa-asantewaa-war-smock': {
+    names: [{ value: 'Batakari Kɛse', script: 'Twi', tradition: 'Akan', rom: 'Batakari Kɛse', meaning: '“the great war smock” — her amulet-covered battle tunic', source: 'War of the Golden Stool tradition' }],
+    kind: 'garment', classId: 'war-garment',
+    custody: [{ role: 'worn by', personId: 'akan_yaa_asantewaa', date: '1900', sources: [{ kind: 'secondary', reference: 'Yaa Asantewaa Museum, Ejisu' }], note: 'Worn when she led the Asante in the War of the Golden Stool; most relics lost in the 2004 museum fire.' }],
+    sources: [{ kind: 'secondary', reference: 'ADF Magazine; Yaa Asantewaa Museum' }],
+    lore: 'The talisman-covered war smock of Yaa Asantewaa, the queen mother of Ejisu who, in 1900, took up arms and led the Asante in the last war against the British — the War of the Golden Stool — when the men hesitated to defend it.',
+  },
+  'ogun-ada': {
+    names: [{ value: 'àdá', script: 'Yoruba', tradition: 'Yoruba', rom: 'àdá', meaning: 'the iron machete of Ogun, with which he cleared the first path', source: 'Yoruba orisha tradition' }],
+    kind: 'weapon', classId: 'iron-blade',
+    custody: [{ role: 'forged and wielded by', personId: 'ogun', era: 'primordial', sources: [{ kind: 'secondary', reference: 'Yoruba oríkì / orisha tradition' }], note: 'With his iron blade he cut the road by which the other òrìṣà could descend to earth; iron tools are his cult emblems.' }],
+    sources: [{ kind: 'secondary', reference: 'Yoruba orisha tradition (oríkì of Ògún)' }],
+    lore: 'The iron machete of Ogun, orisha and primordial blacksmith of the Yoruba — with it he hacked the first path through the trackless bush so the other gods could come down to earth. Every blade and iron tool is sacred to him.',
+  },
+  'kilembe': {
+    names: [{ value: 'kilembe', script: 'Kimbundu', tradition: 'Ambundu', rom: 'kilembe', meaning: 'the “life-tree” that is the hero’s life-token', source: 'Chatelain, Folk-Tales of Angola (1894)' }],
+    kind: 'ritual-object', classId: 'life-token',
+    custody: [{ role: 'planted as his life-token by', personId: 'ambundu_sudika_mbambi', era: 'mythic', sources: [{ kind: 'primary', reference: 'Chatelain, Folk-Tales of Angola (1894)' }], note: 'His twin Kabundungulu watches it — if it withers, the thunder-hero is dead, and by it he is revived.' }],
+    sources: [{ kind: 'primary', reference: 'Heli Chatelain, Folk-Tales of Angola (1894)' }],
+    lore: 'The kilembe, the “life-tree” the thunder-hero Sudika-mbambi had planted behind the house at his birth — a living token of his life. When it wilted, his twin Kabundungulu knew he had died, and watering it brought him back.',
+  },
+  'nyikang-effigy': {
+    names: [{ value: 'the ambatch effigy and spear of Nyikang', script: 'Shilluk', tradition: 'Shilluk', meaning: 'the pith-wood ancestor-effigy and sacred spears embodying the founder-king', source: 'Graeber (2011); Westermann' }],
+    kind: 'sculpture', classId: 'ancestor-effigy',
+    custody: [{ role: 'embodied in the effigy and spears of', personId: 'shilluk_nyikang', era: 'sacral kingship', where: 'enshrined at Akurwa, near Fashoda', sources: [{ kind: 'secondary', reference: 'D. Graeber, “The Divine Kingship of the Shilluk” (2011); Westermann' }], note: 'At each reth’s installation, the candidate fights a mock battle against the effigy’s host and is possessed by Nyikang’s spirit.' }],
+    location: 'Enshrined at Akurwa, Upper Nile, South Sudan',
+    sources: [{ kind: 'secondary', reference: 'D. Graeber (2011); D. Westermann (1912); E. E. Evans-Pritchard' }],
+    lore: 'The ambatch-wood effigy and sacred spears in which Nyikang, divine founder of the Shilluk, is made present — kept at Akurwa. At every reth’s enthronement the new king does ritual battle with the effigy’s army and is entered by Nyikang’s spirit, becoming the founder reborn.',
+  },
+  'duwat-digging-stick': {
+    names: [{ value: 'the digging-stick of Duwat', script: 'Shilluk', tradition: 'Shilluk', meaning: 'the stick Duwat threw after his departing brother, instituting death', source: 'Westermann (1912); Graeber' }],
+    kind: 'tool', classId: 'digging-stick',
+    custody: [{ role: 'thrown after Nyikang (instituting human mortality) by', personId: 'shilluk_duwat', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Westermann (1912); Graeber (2011)' }], note: '“To dig the ground, to bury the dead” — Nyikang defiantly vowed to use it to farm and give life instead.' }],
+    sources: [{ kind: 'secondary', reference: 'D. Westermann (1912); D. Graeber (2011)' }],
+    lore: 'The digging-stick Duwat hurled after his brother Nyikang as he left the ancestral homeland — “to dig the ground and bury the dead,” bringing death into the world. Nyikang answered that he would use it instead to till the earth and bring forth life.',
+  },
+  'eben-ozolua': {
+    names: [{ value: 'eben', script: 'Edo', tradition: 'Edo (Benin)', rom: 'eben', meaning: 'the leaf-shaped ceremonial sword of Benin royal authority', source: 'Benin court tradition' }],
+    kind: 'weapon', classId: 'ceremonial-sword',
+    custody: [{ role: 'borne (iconically) by', personId: 'ozolua', date: 'r. from 1481', sources: [{ kind: 'secondary', reference: 'Art Institute of Chicago (the Ozolua plaque); Britannica' }], note: 'The eben and ada are regalia of the Oba’s office generally; Ozolua “the Conqueror” is the king most famously shown wielding it.' }],
+    sources: [{ kind: 'secondary', reference: 'Britannica, “Ozolua”; Art Institute of Chicago (Benin plaques)' }],
+    lore: 'The eben, the leaf-shaped ceremonial sword twirled to honour the Oba of Benin — regalia of the kingship, but most iconically borne by Oba Ozolua “the Conqueror,” shown on the famous brass plaque in his coat of iron.',
+  },
+  'emotan-shrine': {
+    names: [{ value: 'the Uruhe shrine of Emotan', script: 'Edo', tradition: 'Edo (Benin)', meaning: 'the sacred Uruhe tree (later the 1954 bronze statue) deifying the market-heroine Emotan', source: 'Benin tradition' }],
+    kind: 'monument', classId: 'memorial-shrine',
+    maker: { name: 'Oba Ewuare (planted the Uruhe tree); bronze statue by John A. Danford (1954)', role: 'dedicated by' },
+    custody: [
+      { role: 'deified, with a sacred tree planted on her market-spot, by', externalRef: { name: 'Oba Ewuare the Great', tradition: 'Edo (Benin)' }, date: 'c. 1440s', sources: [{ kind: 'secondary', reference: 'Benin oral tradition' }] },
+      { role: 'commemorated by', personId: 'emotan', date: '1954 (the bronze statue)', where: 'Oba Market, Benin City', sources: [{ kind: 'secondary', reference: 'unveiled by Oba Akenzua II, 1954' }] },
+    ],
+    location: 'In situ, Oba Market, Benin City, Nigeria',
+    sources: [{ kind: 'secondary', reference: 'Benin tradition; the Emotan Statue (1954), Benin City' }],
+    lore: 'The shrine of Emotan, the market-woman who warned the future Oba Ewuare of a plot against his life. In gratitude he deified her, planting a sacred Uruhe tree on her trading spot; where it once stood, a life-size bronze statue of her has presided over Oba Market since 1954.',
+  },
+  'ryangombe-umurinzi': {
+    names: [{ value: 'Umurinzi', script: 'Kinyarwanda', tradition: 'Banyaruanda', rom: 'Umurinzi / Umuko', meaning: '“the Protector” — the Erythrina tree sacred to Ryangombe’s cult', source: 'Rwandan imandwa tradition' }],
+    kind: 'ritual-object', classId: 'sacred-tree',
+    custody: [{ role: 'declared the protector of his initiates by (as he died)', personId: 'banyaruanda_ryangombe', era: 'mythic', sources: [{ kind: 'secondary', reference: 'Rwandan Ryangombe / kubandwa tradition' }], note: 'Gored by a buffalo into its branches, the dying hero made the Erythrina the cult’s guardian; kubandwa rites are held beneath it. (No weapon is attested — the tree is his sign.)' }],
+    sources: [{ kind: 'secondary', reference: 'Rwandan Ryangombe / imandwa (kubandwa) tradition' }],
+    lore: 'The umurinzi (Erythrina) tree, “the Protector,” sacred to Ryangombe, chief of the imandwa spirits of Rwanda. Gored by a buffalo and dying in its branches, he declared it the guardian of all who join his cult; its red-flowering boughs still shelter the kubandwa rites.',
+  },
+
   // ITEM-LORE-END (batches are inserted above this marker)
 };
 
@@ -28529,6 +29255,144 @@ const MATERIAL_CULTURE_BY_FIGURE = {
   korean_hwanung: [
     { id: 'hwanung-cheonbu-in', classId: 'regalia-set', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Samguk Yusa, Book 1' }] },
   ],
+
+  // ── Celtic (Irish & Welsh) ──
+  irish_lugh: [
+    { id: 'spear-of-lugh', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired' }] },
+    { id: 'sling-of-lugh', classId: 'sling', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired' }] },
+  ],
+  irish_manannan: [
+    { id: 'fragarach', classId: 'sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+    { id: 'wave-sweeper', classId: 'boat', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+    { id: 'crane-bag', classId: 'container', kind: 'tool', sources: [{ kind: 'primary', reference: 'Duanaire Finn VIII' }] },
+    { id: 'cloak-of-manannan', classId: 'cloak', kind: 'garment', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }] },
+    { id: 'enbarr', classId: 'mount', kind: 'tool', sources: [{ kind: 'primary', reference: 'Oidheadh Chloinne Tuireann' }] },
+  ],
+  irish_cuchulainn: [
+    { id: 'gae-bolg', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge' }] },
+  ],
+  irish_connla: [
+    { id: 'ring-of-connla', classId: 'ring', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Aided Óenfhir Aífe' }] },
+  ],
+  welsh_bendigeidfran: [
+    { id: 'pair-dadeni', classId: 'cauldron', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Branwen ferch Llŷr' }] },
+  ],
+  welsh_math: [
+    { id: 'wand-of-math', classId: 'wand', kind: 'tool', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy' }] },
+  ],
+  welsh_lleu: [
+    { id: 'spear-of-gronw', classId: 'spear', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy' }] },
+  ],
+
+  // ── Andean & South American ──
+  inca_manco_capac: [{ id: 'tupayauri', classId: 'golden-staff', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Garcilaso de la Vega' }] }],
+  inca_mama_ocllo: [{ id: 'tupayauri', classId: 'golden-staff', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Garcilaso de la Vega' }] }],
+  inca_mama_huaco: [{ id: 'tupayauri', classId: 'golden-staff', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Sarmiento de Gamboa' }] }],
+  inca_ayar_cachi: [{ id: 'ayar-cachi-sling', classId: 'sling', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Sarmiento de Gamboa' }] }],
+  inti: [{ id: 'punchao', classId: 'cult-image', kind: 'sculpture', sources: [{ kind: 'secondary', reference: 'Cobo; Acosta' }] }],
+  namandu: [{ id: 'jeguaka', classId: 'feathered-crown', kind: 'garment', sources: [{ kind: 'primary', reference: 'Cadogan, Ayvu Rapyta' }] }],
+  manape: [{ id: 'wazaca-axe', classId: 'axe', kind: 'tool', sources: [{ kind: 'primary', reference: 'Koch-Grünberg' }] }],
+  makunaima: [{ id: 'wazaca-axe', classId: 'axe', kind: 'tool', sources: [{ kind: 'primary', reference: 'Koch-Grünberg' }] }],
+
+  // ── Etruscan / Arabian / Hittite / Levantine ──
+  etruscan_tinia: [{ id: 'tinia-thunderbolts', classId: 'thunderbolt', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Seneca, NQ 2.41' }] }],
+  etruscan_menrva: [{ id: 'menrva-arms', classId: 'spear-and-aegis', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Etruscan mirrors' }] }],
+  etruscan_uni: [{ id: 'uni-sceptre', classId: 'sceptre', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Pyrgi Tablets' }] }],
+  etruscan_turms: [{ id: 'turms-caduceus', classId: 'caduceus', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Etruscan mirrors' }] }],
+  arabian_hubal: [{ id: 'hubal-statue', classId: 'cult-statue', kind: 'sculpture', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] }],
+  arabian_allat: [{ id: 'allat-stone', classId: 'baetyl', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] }],
+  arabian_al_uzza: [{ id: 'aluzza-trees', classId: 'sacred-grove', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] }],
+  arabian_manat: [{ id: 'manat-stone', classId: 'baetyl', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Ibn al-Kalbi, Kitāb al-Aṣnām' }] }],
+  arabian_antara: [{ id: 'antara-sword', classId: 'sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Sīrat ʿAntar' }] }],
+  hittite_suppiluliuma_ii: [{ id: 'sudburg-inscription', classId: 'hieroglyphic-inscription', kind: 'monument', sources: [{ kind: 'secondary', reference: 'Hawkins, SÜDBURG (1995)' }] }],
+  hittite_tudhaliya_iv: [{ id: 'yazilikaya-chamber-b', classId: 'rock-relief-sanctuary', kind: 'monument', sources: [{ kind: 'secondary', reference: 'Seeher, Gods Carved in Stone' }] }],
+  levantine_ammurapi: [{ id: 'ammurapi-letters', classId: 'letter-archive', kind: 'text', sources: [{ kind: 'secondary', reference: 'RS 18.147; RS 20.238' }] }],
+
+  // ── Maya / Aztec / Mixtec ──
+  maya_hunahpu: [{ id: 'maya-blowgun', classId: 'blowgun', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] }],
+  maya_xbalanque: [{ id: 'maya-blowgun', classId: 'blowgun', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] }],
+  maya_hun_hunahpu: [{ id: 'maya-ballgame-gear', classId: 'ballgame-equipment', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] }],
+  maya_vucub_hunahpu: [{ id: 'maya-ballgame-gear', classId: 'ballgame-equipment', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] }],
+  maya_xpiacoc: [{ id: 'maya-divining-seeds', classId: 'divining-seeds', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] }],
+  maya_xmucane: [{ id: 'maya-divining-seeds', classId: 'divining-seeds', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Popol Vuh' }] }],
+  mixcoatl: [
+    { id: 'mixcoatl-atlatl', classId: 'atlatl', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Florentine Codex' }] },
+    { id: 'mixcoatl-fire-drill', classId: 'fire-drill', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Florentine Codex bk. 7' }] },
+  ],
+  mixtec_lord_8_deer: [{ id: 'lord-8-deer-nose-ornament', classId: 'nose-ornament', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Codex Zouche-Nuttall p.52' }] }],
+  mixtec_lord_9_wind: [{ id: 'lord-9-wind-mask', classId: 'buccal-mask', kind: 'garment', sources: [{ kind: 'primary', reference: 'Codex Vindobonensis' }] }],
+
+  // ── Finnish / Slavic / Caucasus / Armenian ──
+  finnish_ilmarinen: [
+    { id: 'sampo', classId: 'magic-mill', kind: 'tool', sources: [{ kind: 'primary', reference: 'Kalevala runo 10' }] },
+    { id: 'sky-dome-of-ilmarinen', classId: 'cosmic-work', kind: 'symbol', sources: [{ kind: 'primary', reference: 'Kalevala' }] },
+  ],
+  finnish_louhi: [{ id: 'sampo', classId: 'magic-mill', kind: 'tool', sources: [{ kind: 'primary', reference: 'Kalevala runos 38–42' }] }],
+  finnish_vainamoinen: [{ id: 'kantele', classId: 'lyre', kind: 'tool', sources: [{ kind: 'primary', reference: 'Kalevala runos 40–41' }] }],
+  finnish_kullervo: [{ id: 'kullervo-sword', classId: 'sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Kalevala runo 36' }] }],
+  slavic_perun: [{ id: 'perun-axe', classId: 'axe', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Primary Chronicle; folklore' }] }],
+  slavic_svarog: [{ id: 'svarog-tongs', classId: 'smith-tongs', kind: 'tool', sources: [{ kind: 'primary', reference: 'Hypatian Codex s.a. 1114' }] }],
+  slavic_dobrynya_nikitich: [{ id: 'dobrynya-cap', classId: 'improvised-weapon', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Russian byliny' }] }],
+  slavic_ilya_muromets: [{ id: 'sword-of-svyatogor', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Russian byliny' }] }],
+  ossetian_batraz: [{ id: 'batraz-sword', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Nart sagas' }] }],
+  ossetian_satana: [{ id: 'nartamonga', classId: 'truth-cup', kind: 'vessel', sources: [{ kind: 'secondary', reference: 'Nart sagas' }] }],
+  kartvelian_amirani: [{ id: 'amirani-chain', classId: 'binding-chain', kind: 'ritual-object', sources: [{ kind: 'secondary', reference: 'Amiraniani' }] }],
+  armenian_hayk: [{ id: 'hayk-bow', classId: 'bow', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Movses Khorenatsi I' }] }],
+  armenian_sanasar: [
+    { id: 'tur-ketsaki', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+    { id: 'kurkik-jalali', classId: 'war-horse', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+  ],
+  armenian_mher_the_elder: [
+    { id: 'tur-ketsaki', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+    { id: 'kurkik-jalali', classId: 'war-horse', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+  ],
+  armenian_david_of_sassoun: [
+    { id: 'tur-ketsaki', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+    { id: 'kurkik-jalali', classId: 'war-horse', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+  ],
+  armenian_mher_the_younger: [
+    { id: 'tur-ketsaki', classId: 'sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+    { id: 'kurkik-jalali', classId: 'war-horse', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Sasna Tsrer' }] },
+  ],
+
+  // ── Polynesian & Philippine ──
+  polynesian_maui: [
+    { id: 'maui-fishhook', classId: 'magic-fishhook', kind: 'tool', sources: [{ kind: 'primary', reference: 'Grey, Polynesian Mythology' }] },
+    { id: 'maui-jawbone', classId: 'enchanted-jawbone', kind: 'tool', sources: [{ kind: 'primary', reference: 'Grey, Polynesian Mythology' }] },
+    { id: 'maui-sun-snare', classId: 'snare-rope', kind: 'tool', sources: [{ kind: 'primary', reference: 'Grey, Polynesian Mythology' }] },
+  ],
+  suludnon_labaw_donggon: [{ id: 'labaw-donggon-kampilan', classId: 'enchanted-sword', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Jocano, Hinilawod' }] }],
+  suludnon_humadapnon: [{ id: 'humadapnon-boat', classId: 'boat', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Jocano, Hinilawod' }] }],
+  suludnon_dumalapdap: [{ id: 'dumalapdap-dagger', classId: 'magic-dagger', kind: 'weapon', sources: [{ kind: 'primary', reference: 'Jocano, Hinilawod' }] }],
+  tinguian_gagayoma: [{ id: 'gaygayoma-basket', classId: 'sky-basket', kind: 'vessel', sources: [{ kind: 'primary', reference: 'Cole, Traditions of the Tinguian' }] }],
+
+  // ── North American ──
+  dine_monster_slayer: [{ id: 'monster-slayer-arms', classId: 'lightning-arrows', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Matthews, Navaho Legends' }] }],
+  dine_born_for_water: [{ id: 'born-for-water-prayersticks', classId: 'prayersticks', kind: 'ritual-object', sources: [{ kind: 'secondary', reference: 'Zolbrod, Diné bahaneʼ' }] }],
+  dine_spider_woman: [{ id: 'spider-woman-loom', classId: 'loom', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Diné bahaneʼ' }] }],
+  iroquois_sky_woman: [{ id: 'sky-woman-seeds', classId: 'seeds-of-life', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Haudenosaunee creation account' }] }],
+  iroquois_hayowentha: [{ id: 'hiawatha-wampum', classId: 'wampum', kind: 'ritual-object', sources: [{ kind: 'secondary', reference: 'Haudenosaunee Confederacy' }] }],
+  iroquois_cornplanter: [{ id: 'cornplanter-pipe-tomahawk', classId: 'pipe-tomahawk', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'New York State Museum' }] }],
+  poia: [{ id: 'poia-raven-feathers', classId: 'sacred-regalia', kind: 'garment', sources: [{ kind: 'secondary', reference: 'Grinnell, Blackfoot Lodge Tales' }] }],
+  soatsaki: [{ id: 'soatsaki-digging-stick', classId: 'digging-stick', kind: 'tool', sources: [{ kind: 'secondary', reference: 'McClintock, The Old North Trail' }] }],
+  redhorn: [{ id: 'redhorn-head-earrings', classId: 'living-earrings', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Radin; Hocąk Encyclopedia' }] }],
+  redhorn_son: [{ id: 'redhorn-head-earrings', classId: 'living-earrings', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'Hocąk Encyclopedia' }] }],
+  white_beaver_woman: [{ id: 'white-beaverskin-wrap', classId: 'robe', kind: 'garment', sources: [{ kind: 'secondary', reference: 'Hocąk Encyclopedia' }] }],
+  tapun_sa_win: [{ id: 'tapun-sa-win-digging-stick', classId: 'digging-stick', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Lakota Star Knowledge' }] }],
+
+  // ── African ──
+  akan_osei_tutu_i: [{ id: 'sika-dwa-kofi', classId: 'royal-stool', kind: 'symbol', sources: [{ kind: 'secondary', reference: 'BlackPast; Encyclopaedia Africana' }] }],
+  akan_komfo_anokye: [{ id: 'okomfo-anokye-sword', classId: 'ceremonial-sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Explore Kumasi' }] }],
+  akan_opoku_ware_i: [{ id: 'mponponsuo-sword', classId: 'ceremonial-sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Akrafena tradition' }] }],
+  akan_anansi: [{ id: 'anansi-pot-of-wisdom', classId: 'gourd', kind: 'vessel', sources: [{ kind: 'secondary', reference: 'Britannica, Ananse' }] }],
+  akan_yaa_asantewaa: [{ id: 'yaa-asantewaa-war-smock', classId: 'war-garment', kind: 'garment', sources: [{ kind: 'secondary', reference: 'Yaa Asantewaa Museum' }] }],
+  ogun: [{ id: 'ogun-ada', classId: 'iron-blade', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Yoruba orisha tradition' }] }],
+  ambundu_sudika_mbambi: [{ id: 'kilembe', classId: 'life-token', kind: 'ritual-object', sources: [{ kind: 'primary', reference: 'Chatelain, Folk-Tales of Angola' }] }],
+  shilluk_nyikang: [{ id: 'nyikang-effigy', classId: 'ancestor-effigy', kind: 'sculpture', sources: [{ kind: 'secondary', reference: 'Graeber (2011)' }] }],
+  shilluk_duwat: [{ id: 'duwat-digging-stick', classId: 'digging-stick', kind: 'tool', sources: [{ kind: 'secondary', reference: 'Westermann (1912)' }] }],
+  ozolua: [{ id: 'eben-ozolua', classId: 'ceremonial-sword', kind: 'weapon', sources: [{ kind: 'secondary', reference: 'Britannica; Art Institute of Chicago' }] }],
+  emotan: [{ id: 'emotan-shrine', classId: 'memorial-shrine', kind: 'monument', sources: [{ kind: 'secondary', reference: 'Benin tradition; Emotan Statue (1954)' }] }],
+  banyaruanda_ryangombe: [{ id: 'ryangombe-umurinzi', classId: 'sacred-tree', kind: 'ritual-object', sources: [{ kind: 'secondary', reference: 'Rwandan imandwa tradition' }] }],
 
   // MC-BY-FIGURE-END (batches inserted above this marker)
 };
