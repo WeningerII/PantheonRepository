@@ -25772,6 +25772,45 @@ const traditionFractions = (personId, peopleMap, visited = new Set()) => {
   return result;
 };
 
+// ─── Inheritable powers (canon-safe candidates) ────────────────────────────
+// Walks ancestry and surfaces faculties an ancestor could pass down that the
+// figure does NOT already declare — as candidates only, never as possessed.
+// Heritability decays with genealogical distance: a 'full' power is a strong
+// candidate one generation down, diminished at two, a trace at three, gone
+// beyond; 'partial' decays a step faster; inheritability 'none' never appears.
+// This preserves canon — a figure's own faculties stay fact, inherited ones are
+// clearly potential and fading, and a descendant with canonically different
+// powers simply declares them (which excludes the rest).
+const INHERIT_DECAY = { full: ['full', 'diminished', 'trace'], partial: ['partial', 'trace'] };
+const inheritablePowers = (id, peopleMap, maxDepth = 4) => {
+  const focus = peopleMap[id];
+  if (!focus) return [];
+  const own = new Set((focus.faculties || []).map((f) => f.id));
+  const best = new Map();
+  const seen = new Set([id]);
+  let frontier = [id];
+  for (let gen = 1; gen <= maxDepth && frontier.length; gen++) {
+    const parents = [];
+    for (const pid of frontier) {
+      for (const par of (peopleMap[pid]?.parentIds || [])) {
+        if (peopleMap[par] && !seen.has(par)) { seen.add(par); parents.push(par); }
+      }
+    }
+    for (const par of parents) {
+      for (const f of (peopleMap[par].faculties || [])) {
+        const ladder = INHERIT_DECAY[f.inheritability]; // 'none'/undefined → not heritable
+        if (!ladder) continue;
+        if (own.has(f.id)) continue;                    // figure already declares it (own canon)
+        const level = ladder[gen - 1];
+        if (!level) continue;                           // decayed to nothing at this distance
+        if (!best.has(f.id)) best.set(f.id, { facultyId: f.id, fromAncestorId: par, generation: gen, level });
+      }
+    }
+    frontier = parents;
+  }
+  return [...best.values()].sort((a, b) => a.generation - b.generation || a.facultyId.localeCompare(b.facultyId));
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -27664,12 +27703,15 @@ const seedAtlas  = buildTerritorySeed();
 // is kept only when a figure is genuinely multi-tradition.
 const divinity = {};
 const traditionMix = {};
+const inheritedPowers = {};
 for (const pid of Object.keys(seedPeople)) {
   divinity[pid] = divinityBreakdown(pid, seedPeople);
   const mix = traditionFractions(pid, seedPeople);
   if (Object.keys(mix).length > 1) traditionMix[pid] = mix;
+  const inh = inheritablePowers(pid, seedPeople);
+  if (inh.length) inheritedPowers[pid] = inh;
 }
-Object.assign(window.__PR, { divinity, traditionMix, formatFraction });
+Object.assign(window.__PR, { divinity, traditionMix, inheritedPowers, formatFraction });
 
 // Persist constants for the cached warm-path readers.
 try {

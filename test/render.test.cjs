@@ -90,4 +90,21 @@ describe('app renders in a browser-like environment', () => {
     assert.match(descent.textContent, /by descent/);
     assert.ok(descent.querySelectorAll('.descent-parent').length >= 2, 'expected per-parent contribution rows');
   });
+
+  test('detail surfaces a Powers section with own + inherited candidates', async () => {
+    await app.openFigure('greek_eur_macaria'); // a Heraclid with inheritance candidates
+    const powers = app.document.querySelector('.section-powers');
+    assert.ok(powers, 'Powers section did not render');
+    assert.ok(powers.querySelector('.powers-inherited'), 'expected the inheritable-from-ancestry block');
+    assert.match(powers.textContent, /not attested/, 'candidates must be labelled potential, not attested');
+  });
+
+  test('detail surfaces multi-script names (Heracles)', async () => {
+    await app.openFigure('greek_apollod_heracles');
+    const names = app.document.querySelector('.section-names');
+    assert.ok(names, 'Names section did not render');
+    assert.match(names.textContent, /Hercle|Hercules/, 'expected the cross-tradition names');
+    assert.ok(names.querySelectorAll('.name-rec-original').length >= 1, 'expected original-script glyphs');
+    assert.ok(app.document.querySelector('.section-powers .power-row'), 'expected Heracles\' own faculties');
+  });
 });

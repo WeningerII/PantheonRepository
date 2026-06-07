@@ -584,6 +584,14 @@ function fmtFraction(f) {
   try { return window.__PR?.formatFraction ? window.__PR.formatFraction(f) : (f == null ? '—' : String(f)); }
   catch (_) { return f == null ? '—' : String(f); }
 }
+function inheritedPowers(entry) {
+  try { return (entry && window.__PR?.inheritedPowers?.[entry.id]) || []; } catch (_) { return []; }
+}
+// v3 multi-tradition name records (value + script + original glyphs + source),
+// when an entry carries them. Empty for the v1/v2 single-name majority.
+function nameRecords(entry) {
+  return (entry && Array.isArray(entry.names)) ? entry.names : [];
+}
 
 // Expose to other babel scripts
 Object.assign(window, {
@@ -598,4 +606,5 @@ Object.assign(window, {
   parsePeriod, formatYearSigned, formatYearRangeSigned,
   hydrateConstants, hasSeededPeople,
   divinityInfo, traditionMix, fmtFraction,
+  inheritedPowers, nameRecords,
 });

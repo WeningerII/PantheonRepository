@@ -1660,6 +1660,65 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   color: var(--mute);
 }
 
+/* ── Powers (faculties + canon-safe inheritance candidates) ────────────── */
+
+.powers-list { display: flex; flex-direction: column; gap: 6px; }
+.power-row {
+  padding: 8px 12px; border-radius: 3px;
+  background: var(--surface); border: 1px solid var(--rule-2);
+}
+.power-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.power-name { font: 500 14px/1.3 var(--font-serif); color: var(--ink); text-transform: capitalize; }
+.power-herit {
+  font: 500 9px/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 2px; background: var(--surface-2); color: var(--mute);
+}
+.herit-full { color: var(--accent); }
+.power-meta { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+.power-domain, .power-scope {
+  font: 400 9.5px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 2px; background: var(--surface-2); color: var(--mute);
+}
+.power-domain { color: var(--ink-2, var(--ink)); }
+.power-notes { margin-top: 5px; font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
+
+.powers-inherited { margin-top: 12px; display: flex; flex-direction: column; gap: 4px; }
+.powers-inherited-head {
+  font: 500 9.5px/1 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--mute); margin-bottom: 2px;
+}
+.powers-inherited-note { text-transform: none; letter-spacing: 0; font: italic 400 11px/1 var(--font-serif); }
+.power-cand { display: flex; align-items: baseline; gap: 9px; padding: 3px 12px; font: 400 13px/1.4 var(--font-serif); color: var(--ink); }
+.power-cand-level {
+  flex-shrink: 0; width: 66px;
+  font: 500 8.5px/1.4 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.level-full { color: var(--accent); }
+.level-diminished, .level-partial { color: var(--ink-2, var(--ink)); }
+.level-trace { color: var(--mute); }
+.power-cand-name { text-transform: capitalize; }
+.power-cand-from { font: 400 11px/1.4 var(--font-mono); color: var(--mute); }
+.power-cand-from .link { cursor: pointer; }
+.power-cand-from .link:hover { color: var(--accent); }
+
+/* ── Names (v3 multi-script name records) ──────────────────────────────── */
+
+.names-list { display: flex; flex-direction: column; gap: 6px; }
+.name-rec {
+  padding: 8px 12px; border-radius: 3px;
+  background: var(--surface); border: 1px solid var(--rule-2);
+}
+.name-rec-main { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.name-rec-original { font: 500 18px/1.2 var(--font-serif); color: var(--ink); }
+.name-rec-value { font: 400 13px/1.3 var(--font-serif); color: var(--ink-2, var(--ink)); }
+.name-rec-meta { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.name-rec-trad, .name-rec-script, .name-rec-period {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 2px; background: var(--surface-2); color: var(--mute);
+}
+.name-rec-trad { color: var(--ink-2, var(--ink)); }
+.name-rec-note { margin-top: 5px; font: italic 400 12px/1.5 var(--font-serif); color: var(--mute); }
+
 /* ── Command palette ───────────────────────────────────────────────────── */
 
 .cmdk-back {
@@ -28842,6 +28901,45 @@ const traditionFractions = (personId, peopleMap, visited = new Set()) => {
   return result;
 };
 
+// ─── Inheritable powers (canon-safe candidates) ────────────────────────────
+// Walks ancestry and surfaces faculties an ancestor could pass down that the
+// figure does NOT already declare — as candidates only, never as possessed.
+// Heritability decays with genealogical distance: a 'full' power is a strong
+// candidate one generation down, diminished at two, a trace at three, gone
+// beyond; 'partial' decays a step faster; inheritability 'none' never appears.
+// This preserves canon — a figure's own faculties stay fact, inherited ones are
+// clearly potential and fading, and a descendant with canonically different
+// powers simply declares them (which excludes the rest).
+const INHERIT_DECAY = { full: ['full', 'diminished', 'trace'], partial: ['partial', 'trace'] };
+const inheritablePowers = (id, peopleMap, maxDepth = 4) => {
+  const focus = peopleMap[id];
+  if (!focus) return [];
+  const own = new Set((focus.faculties || []).map((f) => f.id));
+  const best = new Map();
+  const seen = new Set([id]);
+  let frontier = [id];
+  for (let gen = 1; gen <= maxDepth && frontier.length; gen++) {
+    const parents = [];
+    for (const pid of frontier) {
+      for (const par of (peopleMap[pid]?.parentIds || [])) {
+        if (peopleMap[par] && !seen.has(par)) { seen.add(par); parents.push(par); }
+      }
+    }
+    for (const par of parents) {
+      for (const f of (peopleMap[par].faculties || [])) {
+        const ladder = INHERIT_DECAY[f.inheritability]; // 'none'/undefined → not heritable
+        if (!ladder) continue;
+        if (own.has(f.id)) continue;                    // figure already declares it (own canon)
+        const level = ladder[gen - 1];
+        if (!level) continue;                           // decayed to nothing at this distance
+        if (!best.has(f.id)) best.set(f.id, { facultyId: f.id, fromAncestorId: par, generation: gen, level });
+      }
+    }
+    frontier = parents;
+  }
+  return [...best.values()].sort((a, b) => a.generation - b.generation || a.facultyId.localeCompare(b.facultyId));
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -30734,12 +30832,15 @@ const seedAtlas  = buildTerritorySeed();
 // is kept only when a figure is genuinely multi-tradition.
 const divinity = {};
 const traditionMix = {};
+const inheritedPowers = {};
 for (const pid of Object.keys(seedPeople)) {
   divinity[pid] = divinityBreakdown(pid, seedPeople);
   const mix = traditionFractions(pid, seedPeople);
   if (Object.keys(mix).length > 1) traditionMix[pid] = mix;
+  const inh = inheritablePowers(pid, seedPeople);
+  if (inh.length) inheritedPowers[pid] = inh;
 }
-Object.assign(window.__PR, { divinity, traditionMix, formatFraction });
+Object.assign(window.__PR, { divinity, traditionMix, inheritedPowers, formatFraction });
 
 // Persist constants for the cached warm-path readers.
 try {
@@ -31466,6 +31567,18 @@ function fmtFraction(f) {
     return f == null ? '—' : String(f);
   }
 }
+function inheritedPowers(entry) {
+  try {
+    return entry && window.__PR?.inheritedPowers?.[entry.id] || [];
+  } catch (_) {
+    return [];
+  }
+}
+// v3 multi-tradition name records (value + script + original glyphs + source),
+// when an entry carries them. Empty for the v1/v2 single-name majority.
+function nameRecords(entry) {
+  return entry && Array.isArray(entry.names) ? entry.names : [];
+}
 
 // Expose to other babel scripts
 Object.assign(window, {
@@ -31491,7 +31604,9 @@ Object.assign(window, {
   hasSeededPeople,
   divinityInfo,
   traditionMix,
-  fmtFraction
+  fmtFraction,
+  inheritedPowers,
+  nameRecords
 });
 </script>
 <!-- Browse.jsx (pre-transformed) -->
@@ -32762,6 +32877,104 @@ function Descent({
     className: "descent-mix-frac"
   }, fmt(frac)))))));
 }
+
+// Powers — the figure's own faculties (scope / domain / heritability) plus
+// canon-safe "inheritable from ancestry" candidates that fade with genealogical
+// distance. Declared powers are fact; candidates are clearly potential and are
+// never shown for a power the figure already declares.
+function Powers({
+  entry,
+  byId,
+  onOpen
+}) {
+  const own = entry.faculties || [];
+  const inherited = window.inheritedPowers ? window.inheritedPowers(entry) : [];
+  if (!own.length && !inherited.length) return null;
+  const humanize = id => String(id || '').replace(/[-_]+/g, ' ');
+  const genLabel = g => g === 1 ? 'parent' : g === 2 ? 'grandparent' : `${g} generations up`;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-powers"
+  }, /*#__PURE__*/React.createElement("h2", null, "Powers ", own.length > 0 && /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, own.length)), own.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "powers-list"
+  }, own.map((f, i) => /*#__PURE__*/React.createElement("div", {
+    className: "power-row",
+    key: f.id || i
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "power-head"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "power-name"
+  }, humanize(f.id)), f.inheritability && /*#__PURE__*/React.createElement("span", {
+    className: 'power-herit herit-' + f.inheritability
+  }, f.inheritability === 'none' ? 'not heritable' : f.inheritability + ' heritable')), (f.domainTag || f.scopeTags && f.scopeTags.length) && /*#__PURE__*/React.createElement("div", {
+    className: "power-meta"
+  }, f.domainTag && /*#__PURE__*/React.createElement("span", {
+    className: "power-domain"
+  }, humanize(f.domainTag)), (f.scopeTags || []).map((t, j) => /*#__PURE__*/React.createElement("span", {
+    className: "power-scope",
+    key: j
+  }, humanize(t)))), f.notes && /*#__PURE__*/React.createElement("div", {
+    className: "power-notes"
+  }, f.notes)))), inherited.length > 0 && /*#__PURE__*/React.createElement("div", {
+    className: "powers-inherited"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "powers-inherited-head"
+  }, "Inheritable from ancestry ", /*#__PURE__*/React.createElement("span", {
+    className: "powers-inherited-note"
+  }, "potential \u2014 not attested")), inherited.map((c, i) => {
+    const anc = byId.get(c.fromAncestorId);
+    return /*#__PURE__*/React.createElement("div", {
+      className: "power-cand",
+      key: c.facultyId + '-' + i
+    }, /*#__PURE__*/React.createElement("span", {
+      className: 'power-cand-level level-' + c.level
+    }, c.level), /*#__PURE__*/React.createElement("span", {
+      className: "power-cand-name"
+    }, humanize(c.facultyId)), /*#__PURE__*/React.createElement("span", {
+      className: "power-cand-from"
+    }, "via ", anc ? /*#__PURE__*/React.createElement("span", {
+      className: "link",
+      onClick: () => onOpen(c.fromAncestorId)
+    }, window.displayName(anc)) : c.fromAncestorId, ' · ', genLabel(c.generation)));
+  })));
+}
+
+// Names — surfaces the v3 multi-tradition name records (original-script glyphs +
+// tradition + period + source) for entries that carry them, so native names
+// show in their own scripts rather than a single transliteration.
+function NameRecords({
+  entry
+}) {
+  const names = window.nameRecords ? window.nameRecords(entry) : [];
+  if (names.length < 2) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-names"
+  }, /*#__PURE__*/React.createElement("h2", null, "Names ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, names.length)), /*#__PURE__*/React.createElement("div", {
+    className: "names-list"
+  }, names.map((n, i) => /*#__PURE__*/React.createElement("div", {
+    className: "name-rec",
+    key: i
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "name-rec-main"
+  }, n.original && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-original"
+  }, n.original), /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-value"
+  }, n.value)), /*#__PURE__*/React.createElement("div", {
+    className: "name-rec-meta"
+  }, n.tradition && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-trad"
+  }, n.tradition), n.script && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-script"
+  }, String(n.script).replace(/[-_]+/g, ' ')), n.period && /*#__PURE__*/React.createElement("span", {
+    className: "name-rec-period"
+  }, String(n.period).replace(/[-_]+/g, ' '))), n.note && /*#__PURE__*/React.createElement("div", {
+    className: "name-rec-note"
+  }, n.note)))));
+}
 function Relations({
   entry,
   byId,
@@ -33118,7 +33331,9 @@ function Detail({
     className: "era-bar-date"
   }, dateLine))), entry.notes && /*#__PURE__*/React.createElement("div", {
     className: "detail-notes"
-  }, entry.notes), /*#__PURE__*/React.createElement(Parentage, {
+  }, entry.notes), /*#__PURE__*/React.createElement(NameRecords, {
+    entry: entry
+  }), /*#__PURE__*/React.createElement(Parentage, {
     entry: entry,
     byId: byId,
     onOpen: onOpen
@@ -33133,13 +33348,17 @@ function Detail({
     entry: entry,
     byId: byId,
     onOpen: onOpen
+  }), /*#__PURE__*/React.createElement(Powers, {
+    entry: entry,
+    byId: byId,
+    onOpen: onOpen
   }), entry.relations?.length > 0 && /*#__PURE__*/React.createElement(Chapter, {
     label: "Network"
   }), /*#__PURE__*/React.createElement(Relations, {
     entry: entry,
     byId: byId,
     onOpen: onOpen
-  }), entry.domains?.length || entry.epithets?.length || entry.faculties?.length || entry.materialCulture?.length ? /*#__PURE__*/React.createElement(Chapter, {
+  }), entry.domains?.length || entry.epithets?.length || entry.materialCulture?.length ? /*#__PURE__*/React.createElement(Chapter, {
     label: "Attributes"
   }) : null, /*#__PURE__*/React.createElement(RichSection, {
     flavor: "domains",
@@ -33156,19 +33375,6 @@ function Detail({
     metas: e => [e.language, e.transliteration, e.contextTag],
     notes: e => e.notes,
     nameStyle: "rich-row-name-epithet"
-  }), /*#__PURE__*/React.createElement(RichSection, {
-    flavor: "faculties",
-    title: "Faculties",
-    items: entry.faculties,
-    name: f => f.id || safeLabel(f),
-    metas: f => {
-      const arr = [];
-      if (f.inheritability) arr.push(f.inheritability);
-      if (f.domainTag) arr.push(f.domainTag);
-      if (Array.isArray(f.scopeTags)) arr.push(...f.scopeTags.slice(0, 3));
-      return arr;
-    },
-    notes: f => f.notes
   }), /*#__PURE__*/React.createElement(RichSection, {
     flavor: "material",
     title: "Material culture",

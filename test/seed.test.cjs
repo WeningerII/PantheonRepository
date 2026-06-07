@@ -102,3 +102,29 @@ test('formatFraction renders dyadic fractions', () => {
   assert.strictEqual(fmt(1), '1');
   assert.strictEqual(fmt(0), '0');
 });
+
+test('exposes canon-safe inheritable-power candidates', () => {
+  const ip = ctx.window.__PR.inheritedPowers;
+  assert.ok(ip, '__PR.inheritedPowers not exposed');
+  // A Heraclid who does not declare strength sees it as a candidate from Heracles.
+  const macaria = ip['greek_eur_macaria'];
+  assert.ok(macaria && macaria.length, 'expected inheritable candidates for a Heraclid');
+  const str = macaria.find((c) => c.facultyId === 'physical-strength-extreme');
+  assert.ok(str, 'expected physical-strength-extreme as a candidate');
+  assert.strictEqual(str.fromAncestorId, 'greek_apollod_heracles');
+  assert.ok(['full', 'diminished', 'trace', 'partial'].includes(str.level), `bad level ${str.level}`);
+});
+
+test('inheritance never overrides a figure\'s own declared powers (canon-safe)', () => {
+  const ip = ctx.window.__PR.inheritedPowers;
+  for (const [id, arr] of Object.entries(ip)) {
+    const own = new Set((people[id].faculties || []).map((f) => f.id));
+    for (const c of arr) {
+      assert.ok(!own.has(c.facultyId), `${id} lists its own power ${c.facultyId} as "inherited"`);
+    }
+  }
+  // Hyllus declares his own strength → it must not appear as inherited.
+  const hyllus = ip['greek_apollod_hyllus'] || [];
+  assert.ok(!hyllus.some((c) => c.facultyId === 'physical-strength-extreme'),
+    'a declared power leaked into the inheritance candidates');
+});

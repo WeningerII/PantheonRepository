@@ -169,6 +169,96 @@ function Descent({ entry, byId, onOpen }) {
   );
 }
 
+// Powers — the figure's own faculties (scope / domain / heritability) plus
+// canon-safe "inheritable from ancestry" candidates that fade with genealogical
+// distance. Declared powers are fact; candidates are clearly potential and are
+// never shown for a power the figure already declares.
+function Powers({ entry, byId, onOpen }) {
+  const own = entry.faculties || [];
+  const inherited = window.inheritedPowers ? window.inheritedPowers(entry) : [];
+  if (!own.length && !inherited.length) return null;
+  const humanize = (id) => String(id || '').replace(/[-_]+/g, ' ');
+  const genLabel = (g) => (g === 1 ? 'parent' : g === 2 ? 'grandparent' : `${g} generations up`);
+  return (
+    <div className="section section-powers">
+      <h2>Powers {own.length > 0 && <span className="count">{own.length}</span>}</h2>
+      {own.length > 0 && (
+        <div className="powers-list">
+          {own.map((f, i) => (
+            <div className="power-row" key={f.id || i}>
+              <div className="power-head">
+                <span className="power-name">{humanize(f.id)}</span>
+                {f.inheritability && (
+                  <span className={'power-herit herit-' + f.inheritability}>
+                    {f.inheritability === 'none' ? 'not heritable' : f.inheritability + ' heritable'}
+                  </span>
+                )}
+              </div>
+              {(f.domainTag || (f.scopeTags && f.scopeTags.length)) && (
+                <div className="power-meta">
+                  {f.domainTag && <span className="power-domain">{humanize(f.domainTag)}</span>}
+                  {(f.scopeTags || []).map((t, j) => <span className="power-scope" key={j}>{humanize(t)}</span>)}
+                </div>
+              )}
+              {f.notes && <div className="power-notes">{f.notes}</div>}
+            </div>
+          ))}
+        </div>
+      )}
+      {inherited.length > 0 && (
+        <div className="powers-inherited">
+          <div className="powers-inherited-head">
+            Inheritable from ancestry <span className="powers-inherited-note">potential — not attested</span>
+          </div>
+          {inherited.map((c, i) => {
+            const anc = byId.get(c.fromAncestorId);
+            return (
+              <div className="power-cand" key={c.facultyId + '-' + i}>
+                <span className={'power-cand-level level-' + c.level}>{c.level}</span>
+                <span className="power-cand-name">{humanize(c.facultyId)}</span>
+                <span className="power-cand-from">
+                  via {anc
+                    ? <span className="link" onClick={() => onOpen(c.fromAncestorId)}>{window.displayName(anc)}</span>
+                    : c.fromAncestorId}{' · '}{genLabel(c.generation)}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Names — surfaces the v3 multi-tradition name records (original-script glyphs +
+// tradition + period + source) for entries that carry them, so native names
+// show in their own scripts rather than a single transliteration.
+function NameRecords({ entry }) {
+  const names = window.nameRecords ? window.nameRecords(entry) : [];
+  if (names.length < 2) return null;
+  return (
+    <div className="section section-names">
+      <h2>Names <span className="count">{names.length}</span></h2>
+      <div className="names-list">
+        {names.map((n, i) => (
+          <div className="name-rec" key={i}>
+            <div className="name-rec-main">
+              {n.original && <span className="name-rec-original">{n.original}</span>}
+              <span className="name-rec-value">{n.value}</span>
+            </div>
+            <div className="name-rec-meta">
+              {n.tradition && <span className="name-rec-trad">{n.tradition}</span>}
+              {n.script && <span className="name-rec-script">{String(n.script).replace(/[-_]+/g, ' ')}</span>}
+              {n.period && <span className="name-rec-period">{String(n.period).replace(/[-_]+/g, ' ')}</span>}
+            </div>
+            {n.note && <div className="name-rec-note">{n.note}</div>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Relations({ entry, byId, onOpen }) {
   const rels = entry.relations || [];
   const grouped = __dMemo(() => {
@@ -524,6 +614,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
 
           {entry.notes && <div className="detail-notes">{entry.notes}</div>}
 
+          <NameRecords entry={entry} />
           <Parentage entry={entry} byId={byId} onOpen={onOpen} />
           {window.Lineage && childrenOf && (
             <window.Lineage
@@ -535,10 +626,11 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
           )}
           {window.Lifecycle && <window.Lifecycle entry={entry} />}
           <Descent entry={entry} byId={byId} onOpen={onOpen} />
+          <Powers entry={entry} byId={byId} onOpen={onOpen} />
           {entry.relations?.length > 0 && <Chapter label="Network" />}
           <Relations entry={entry} byId={byId} onOpen={onOpen} />
 
-          {(entry.domains?.length || entry.epithets?.length || entry.faculties?.length || entry.materialCulture?.length) ? (
+          {(entry.domains?.length || entry.epithets?.length || entry.materialCulture?.length) ? (
             <Chapter label="Attributes" />
           ) : null}
           <RichSection
@@ -557,20 +649,6 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
             metas={e => [e.language, e.transliteration, e.contextTag]}
             notes={e => e.notes}
             nameStyle="rich-row-name-epithet"
-          />
-          <RichSection
-            flavor="faculties"
-            title="Faculties"
-            items={entry.faculties}
-            name={f => f.id || safeLabel(f)}
-            metas={f => {
-              const arr = [];
-              if (f.inheritability) arr.push(f.inheritability);
-              if (f.domainTag)      arr.push(f.domainTag);
-              if (Array.isArray(f.scopeTags)) arr.push(...f.scopeTags.slice(0, 3));
-              return arr;
-            }}
-            notes={f => f.notes}
           />
           <RichSection
             flavor="material"
