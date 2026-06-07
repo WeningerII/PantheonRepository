@@ -179,15 +179,27 @@ function Powers({ entry, byId, onOpen }) {
   if (!own.length && !inherited.length) return null;
   const humanize = (id) => String(id || '').replace(/[-_]+/g, ' ');
   const genLabel = (g) => (g === 1 ? 'parent' : g === 2 ? 'grandparent' : `${g} generations up`);
+  // Genuinely heritable, attested powers lead; governed spheres (inheritability
+  // 'none', mostly derived from domains) follow.
+  const HERIT_RANK = { full: 0, partial: 1, trace: 2, none: 3 };
+  const sorted = [...own].sort((a, b) =>
+    (HERIT_RANK[a.inheritability] ?? 3) - (HERIT_RANK[b.inheritability] ?? 3));
+  const facultyName = (f) => f.name || humanize(f.id);
   return (
     <div className="section section-powers">
       <h2>Powers {own.length > 0 && <span className="count">{own.length}</span>}</h2>
       {own.length > 0 && (
         <div className="powers-list">
-          {own.map((f, i) => (
+          {sorted.map((f, i) => (
             <div className="power-row" key={f.id || i}>
               <div className="power-head">
-                <span className="power-name">{humanize(f.id)}</span>
+                <span className="power-name">{facultyName(f)}</span>
+                {f.term && f.term.value && (
+                  <span className="power-term">
+                    <span className="power-term-native">{f.term.value}</span>
+                    {f.term.rom && <span className="power-term-rom">{f.term.rom}</span>}
+                  </span>
+                )}
                 {f.inheritability && (
                   <span className={'power-herit herit-' + f.inheritability}>
                     {f.inheritability === 'none' ? 'not heritable' : f.inheritability + ' heritable'}

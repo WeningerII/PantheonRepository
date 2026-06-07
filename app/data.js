@@ -29412,6 +29412,72 @@ const mergeMaterialCulture = (peopleMap, mcMap = MATERIAL_CULTURE_BY_FIGURE) => 
   return peopleMap;
 };
 
+// ─── Powers (faculties): exhaustive derivation + native-term enrichment ─────
+// Every sphere a figure governs (its domains[]) becomes an explicit faculty, so
+// the Powers panel is comprehensive. Derived sphere-faculties are inheritability
+// 'none' — a sphere of governance is NOT a heritable ability, so it never
+// pollutes a descendant's canon-safe inherited-power candidates. Genuinely
+// heritable powers (strength, etc.) stay/become 'full'|'partial'. POWERS_BY_FIGURE
+// is the authored layer: it adds native attested terms (English headline leads,
+// native term shown alongside — "fire", with πῦρ, never the coinage
+// "pyrokinesis"), corrects inheritability, and adds signature abilities not
+// captured as domains. Authored entries merge onto a matching id (enrich) or add.
+const POWERS_BY_FIGURE = {
+  greek_hesiod_zeus: [
+    { id: 'thunder', name: 'thunder & lightning', term: { value: 'βροντή', script: 'Greek', rom: 'brontē' }, inheritability: 'none', notes: 'Sender of thunder and lightning; the keraunos is his to hurl.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 504–506, 690–710' }] },
+  ],
+  greek_hesiod_poseidon: [
+    { id: 'earthquake', name: 'earth-shaking', term: { value: 'σεισμός', script: 'Greek', rom: 'seismos' }, inheritability: 'none', notes: 'The “Earth-shaker” (Ἐννοσίγαιος) splits rock and quakes the land.', sources: [{ kind: 'primary', reference: 'Homer, Iliad 20.57–66 (Ἐννοσίγαιος)' }] },
+  ],
+  greek_hesiod_athena: [
+    { id: 'cunning-intelligence', name: 'cunning intelligence', term: { value: 'μῆτις', script: 'Greek', rom: 'mētis' }, inheritability: 'none', notes: 'Practical wisdom, craft, and strategic cunning — she is the child of Mêtis.', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 886–900, 924–926' }] },
+  ],
+  norse_thor: [
+    { id: 'storm-and-thunder-control', term: { value: 'þruma', script: 'Old Norse', rom: 'thruma (thunder)' }, sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the thunder of his chariot)' }] },
+  ],
+};
+
+// Build the faculties a figure governs from its domains[] (sphere → faculty).
+const deriveFacultiesFromDomains = (person) => {
+  const out = [];
+  for (const d of (person.domains || [])) {
+    const sid = d && (d.sphereId || d.id); // corpus uses either key
+    if (!sid) continue;
+    out.push({
+      id: sid,
+      scopeTags: d.contextTag ? [d.contextTag] : [],
+      inheritability: 'none',
+      sources: d.sources || [],
+      notes: d.notes,
+      fromDomain: true,
+    });
+  }
+  return out;
+};
+
+// Compose each figure's full faculty list (in place): authored faculties (minus
+// the mis-modeled "inherited-…" artifacts, which the inheritance engine computes)
+// → POWERS_BY_FIGURE enrichment (merged by id) → sphere-faculties from domains.
+const deriveAndMergeFaculties = (peopleMap, powersMap = POWERS_BY_FIGURE) => {
+  for (const person of Object.values(peopleMap)) {
+    const have = new Map();
+    for (const f of (person.faculties || [])) {
+      if (!f || !f.id) continue;
+      if (/^inherited[-_]/i.test(f.id)) continue; // computed, not declared
+      have.set(f.id, f);
+    }
+    for (const f of (powersMap[person.id] || [])) {
+      if (f && f.id) have.set(f.id, { ...(have.get(f.id) || {}), ...f });
+    }
+    for (const f of deriveFacultiesFromDomains(person)) {
+      if (!have.has(f.id)) have.set(f.id, f);
+    }
+    const merged = [...have.values()];
+    if (merged.length) person.faculties = merged;
+  }
+  return peopleMap;
+};
+
 // ─── v2: Validation Layer 1 (hard schema) — Phase 7 ──────────────────────
 // Returns array of error strings. Empty array = valid. Each error names the
 // person id and the field. Permissive about extra fields, strict about
@@ -31295,7 +31361,7 @@ window.__PR = {
 };
 
 // Build + migrate seed data, then attach the centrally-declared item holders.
-const seedPeople = mergeMaterialCulture(migrate(buildPeopleSeed()));
+const seedPeople = deriveAndMergeFaculties(mergeMaterialCulture(migrate(buildPeopleSeed())));
 const seedAtlas  = buildTerritorySeed();
 
 // Pre-compute the derived layer the UI surfaces (divinity descent + tradition
