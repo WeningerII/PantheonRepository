@@ -51,10 +51,15 @@ jobs:
       - name: Build single-file artifact
         run: python3 build.py
 
+      # Goal 3 — every release ships a dogfood sign-off (>=25 sampled figures).
+      - name: Generate dogfood sign-off checklist
+        run: node scripts/dogfood-sample.cjs
+
       - name: Assemble Pages site
         run: |
           rm -rf _site && mkdir -p _site
           cp dist/pantheon-registry.html _site/index.html
+          cp DOGFOOD.md _site/DOGFOOD.md
 
       # Reads the repo's Pages config. Pages must be enabled once in Settings
       # (Source: GitHub Actions) — GitHub does not permit the Actions token to
