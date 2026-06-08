@@ -1,0 +1,50 @@
+I now have everything I need with strong attestation. Let me compile the findings.
+
+Key verified facts:
+- **Odin**: seiðr (sorcery), hamskipti (shapeshifting; lies as if asleep, becomes bird/beast/fish/snake — Ynglinga saga), valgaldr (corpse-magic to wake the dead — Baldrs draumar), runic magic + galdr (Hávamál 138-164), prophecy/wisdom. Items missing from `currentItems` [gungnir, draupnir]: Sleipnir (8-legged horse), Huginn & Muninn (ravens). Gungnir made by Sons of Ivaldi; Draupnir by Sindri/Brokkr — these are already in his list so I'll only ADD missing ones, but the task says "Focus on items MISSING." I'll list the missing items.
+- **Thor**: superhuman strength, summon thunder/lightning by hurling Mjölnir, resurrect his goats with the hammer (Gylfaginning 44), wade across rivers. Items in list already [mjolnir, megingjord, jarngreipr]. Missing: Tanngrisnir & Tanngnjóstr (goats), Gríðarvǫlr (staff). Note: chariot also. I'll add the missing ones.
+- **Njǫrðr**: calm sea and fire / still winds (governs course of wind), grant wealth in land and goods (Gylfaginning 23). No items attested — none to add.
+- **Freyr**: rule rain and sunshine / make fruitful the earth (Gylfaginning), self-fighting sword. Items in list [freyr-skidbladnir, freyr-sword, freyr-gullinbursti] — all covered. No clearly-missing major item.
+- **Sigi**: no attested powers or items (founder of the Völsung line, son of Odin per Völsunga saga). Nothing to add.
+
+The prompt emphasizes attaching missing items like Sleipnir, Huginn & Muninn → Odin. Brísingamen → Freyja (absent), Gjallarhorn → Heimdall (absent), megingjǫrð/járngreipr → Thor (already present). So I attach Sleipnir + ravens to Odin; goats + Gríðarvǫlr to Thor.
+
+Here are the formatted blocks.
+
+=== norse_odin (Odin)
+norse_odin :: POWER work-seidr-sorcery | name=work seiðr sorcery (divination and fate-manipulation) | term=seiðr | script=Old Norse | rom=seiðr | gloss=practise sorcery to know and alter fate | inherit=none | src=Snorri, Ynglinga saga 6-7
+norse_odin :: POWER shapeshift-into-beasts | name=change shape, body lying as dead | term=hamskipti / skipta hǫmum | script=Old Norse | rom=hamskipti | gloss=leaves body asleep, travels as bird, fish, snake, beast | inherit=none | src=Snorri, Ynglinga saga 7
+norse_odin :: POWER wake-and-speak-with-dead | name=rouse the dead and compel their speech | term=valgaldr | script=Old Norse | rom=valgaldr | gloss=chants corpse-magic to wake a völva and hanged men | inherit=none | src=Baldrs draumar 4-5; Ynglinga saga 7
+norse_odin :: POWER work-rune-and-galdr-magic | name=work runic magic and sung charms | term=galdr / rúnar | script=Old Norse | rom=galdr | gloss=eighteen charms cure, blunt blades, raise hanged, win love | inherit=none | src=Hávamál 138-164 (Ljóðatal)
+norse_odin :: POWER cast-prophecy | name=foresee fate and hidden things | term=spá / fróðleikr | script=Old Norse | rom=spá | gloss=knows fates of men and things to come | inherit=none | src=Snorri, Gylfaginning 20; Vǫluspá
+norse_odin :: ITEM sleipnir | name=Sleipnir | term=Sleipnir | script=Old Norse | rom=Sleipnir | kind=vehicle (steed) | role=owner | gloss=eight-legged horse, best of horses, bears Odin | src=Snorri, Gylfaginning 15, 42, 49
+norse_odin :: ITEM huginn-ok-muninn | name=Huginn and Muninn | term=Huginn ok Muninn | script=Old Norse | rom=Huginn ok Muninn | kind=artifact (familiar ravens) | role=owner | gloss=ravens fly the world daily, report all tidings | src=Snorri, Gylfaginning 38; Grímnismál 20
+
+Note: Odin's Gungnir and Draupnir are already in currentItems, so omitted here per the "missing items" focus.
+
+=== norse_thor (Thor)
+norse_thor :: POWER exert-superhuman-strength | name=exert superhuman strength | term=afl / megin | script=Old Norse | rom=megin | gloss=strongest of all gods and men | inherit=partial | src=Snorri, Gylfaginning 21, 44-47
+norse_thor :: POWER summon-thunder-by-hurling-hammer | name=summon thunder and lightning by hurling the hammer | term=reið / þruma | script=Old Norse | rom=reið | gloss=thunder rolls as Thor wields Mjǫllnir against giants | inherit=none | src=Snorri, Gylfaginning 21; Skáldskaparmál
+norse_thor :: POWER resurrect-slaughtered-goats | name=resurrect his slaughtered goats | term=vígja / lífga | script=Old Norse | rom=vígja | gloss=hallows eaten goats with hammer, restoring them alive | inherit=none | src=Snorri, Gylfaginning 44
+norse_thor :: POWER wade-mighty-rivers | name=wade across raging rivers | term=vaða | script=Old Norse | rom=vaða | gloss=wades the great rivers daily to the judgment-seat | inherit=none | src=Grímnismál 29; Skáldskaparmál (Þórsdrápa)
+norse_thor :: ITEM tanngrisnir-ok-tanngnjostr | name=Tanngrisnir and Tanngnjóstr | term=Tanngrisnir ok Tanngnjóstr | script=Old Norse | rom=Tanngrisnir ok Tanngnjóstr | kind=vehicle (chariot-goats) | role=owner | gloss=two goats draw Thor's chariot; eaten and revived nightly | src=Snorri, Gylfaginning 21, 44
+norse_thor :: ITEM gridarvolr | name=Gríðr's staff | term=Gríðarvǫlr | script=Old Norse | rom=Gríðarvǫlr | kind=weapon (staff) | role=wielder | gloss=Gríðr's staff lent to Thor against Geirrøðr | src=Snorri, Skáldskaparmál 18
+
+Note: Mjǫlnir, megingjǫrð and járngreipr are already in currentItems, so omitted here.
+
+=== norse_njord (Njǫrðr)
+norse_njord :: POWER calm-sea-and-fire | name=calm the sea and quench fire | term=stilla sæ ok eld | script=Old Norse | rom=stilla sæ ok eld | gloss=stills sea and fire, governs the wind's course | inherit=none | src=Snorri, Gylfaginning 23
+norse_njord :: POWER grant-wealth-in-land-and-goods | name=grant wealth in land and movable goods | term=veita auð landa ok lausafjár | script=Old Norse | rom=veita auð landa ok lausafjár | gloss=gives wealth of land and chattels to suppliants | inherit=none | src=Snorri, Gylfaginning 23
+(No items attested for Njǫrðr; none to add.)
+
+=== norse_freyr (Freyr)
+norse_freyr :: POWER rule-rain-and-sunshine | name=rule rain and the shining of the sun | term=ráða fyrir regni ok skini sólar | script=Old Norse | rom=ráða fyrir regni ok skini sólar | gloss=governs rain and sun, hence the earth's increase | inherit=none | src=Snorri, Gylfaginning 24
+norse_freyr :: POWER grant-peace-and-fruitful-harvest | name=grant frith and fruitfulness of the land | term=ár ok friðr | script=Old Norse | rom=ár ok friðr | gloss=invoked for good seasons (plenty) and peace | inherit=none | src=Snorri, Gylfaginning 24; Ynglinga saga 10
+(Freyr's Skíðblaðnir, Gullinbursti, and self-fighting sword are already in currentItems; no major item missing.)
+
+=== norse_sigi (Sigi)
+(No attested exercisable powers or owned items. Sigi son of Óðinn is founder of the Vǫlsung line; Völsunga saga 1 records no personal magic or named artifact. Nothing to add.)
+
+---
+
+Notes on roster vs. prompt: The Norse array contains only five ids — `norse_sigi`, `norse_odin`, `norse_thor`, `norse_njord`, `norse_freyr`. **Loki and Freyja are not present**, so Brísingamen (Freyja) and the orphaned Gjallarhorn (Heimdall) have no in-roster owner and are intentionally not emitted. Of the prompt's "missing items" list, megingjǫrð and járngreipr are already in Thor's `currentItems`, and Skíðblaðnir is already in Freyr's — so the genuinely-missing additions are Sleipnir + Huginn & Muninn (Odin) and Tanngrisnir & Tanngnjóstr + Gríðarvǫlr (Thor). All powers are given as exercisable verbs distinct from the figures' listed `domains`. Source: Prose Edda (Gylfaginning, Skáldskaparmál), Poetic Edda (Hávamál, Grímnismál, Baldrs draumar, Vafþrúðnismál), and Ynglinga saga.

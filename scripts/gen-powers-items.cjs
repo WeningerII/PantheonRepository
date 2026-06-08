@@ -14,6 +14,7 @@ const fs = require('fs');
 const path = require('path');
 const TASKS = process.env.TASKS_DIR ||
   '/tmp/claude-0/-home-user-PantheonRepository/9979a762-a2ad-53fd-85cf-871f7627ba99/tasks';
+const SRC = path.join(__dirname, '..', 'data-sources', 'transcripts');
 
 function lastAssistantText(file) {
   let txt = '';
@@ -28,6 +29,16 @@ function lastAssistantText(file) {
     if (t.trim()) txt = t;
   }
   return txt;
+}
+// Prefer the committed research-output snapshot (reproducible on a clean
+// checkout); fall back to the live /tmp session transcripts when absent.
+function sources() {
+  if (fs.existsSync(SRC)) {
+    return fs.readdirSync(SRC).filter((n) => n.endsWith('.txt')).sort()
+      .map((n) => ({ name: n, text: fs.readFileSync(path.join(SRC, n), 'utf8') }));
+  }
+  return fs.readdirSync(TASKS).filter((n) => n.endsWith('.output')).sort()
+    .map((n) => { try { return { name: n, text: lastAssistantText(path.join(TASKS, n)) }; } catch { return { name: n, text: '' }; } });
 }
 const SECONDARY = /\bWb\b|Wikipedia|Britannica|Dum[eé]zil|Lincoln|Lindow|Simek|Ellis Davidson|Abraham|Idowu|encyclopedia|dictionary|grammar|ethnograph/i;
 const srcKind = (s) => (SECONDARY.test(s) ? 'secondary' : 'primary');
@@ -47,9 +58,7 @@ const badTermValue = (v) => {
 const powers = {}, items = {};
 const stats = { files: 0, powers: 0, items: 0, pTermed: 0, iTermed: 0, figs: new Set() };
 
-for (const name of fs.readdirSync(TASKS)) {
-  if (!name.endsWith('.output')) continue;
-  let text; try { text = lastAssistantText(path.join(TASKS, name)); } catch { continue; }
+for (const { text } of sources()) {
   if (!/::\s*(POWER|ITEM)\s/.test(text)) continue;
   let hit = false;
   for (const raw of text.split('\n')) {
@@ -88,7 +97,7 @@ for (const name of fs.readdirSync(TASKS)) {
 
 // Serialize a {figureId: [obj,...]} map, one line per record (diff-friendly).
 const serialize = (map) => Object.keys(map).sort().map((fig) =>
-  `${JSON.stringify(fig)}: [\n` + map[fig].map((o) => '  ' + JSON.stringify(o)).join(',\n') + '\n]').join(',\n');
+  `${JSON.stringify(fig)}: [\n` + map[fig].slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)).map((o) => '  ' + JSON.stringify(o)).join(',\n') + '\n]').join(',\n');
 const block = `/* POWERS_ITEMS_START */\nconst POWERS_ABILITIES = {\n${serialize(powers)}\n};\nconst ITEMS_GEN = {\n${serialize(items)}\n};\n/* POWERS_ITEMS_END */`;
 const DATA = path.join(__dirname, '..', 'app', 'data.js');
 let data = fs.readFileSync(DATA, 'utf8');

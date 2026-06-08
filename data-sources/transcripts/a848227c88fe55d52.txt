@@ -1,0 +1,168 @@
+Both confirmed. Hebe restores youth (exercisable power). The Muses (Calliope, Clio) inspire poets and grant kleos — exercisable. These complete my set. I now have everything I need to produce the final compiled output.
+
+Let me finalize. A few decisions:
+- Hebe: gets restore-youth power (her cup is already an item).
+- Calliope/Clio: get inspire-poet / grant-kleos powers.
+- Aeneas, Odysseus: no supernatural exercisable powers → skip (mortal cunning/piety are qualities/domains).
+- Hippolyta: girdle already listed, martial prowess is skill → skip.
+- Abstract personifications (Hygieia, Iaso, Aceso, Aegle, Panacea, Telesphorus, Macaria, Alexiares, Anicetus, Eosphorus): these ARE the personification of their domain; no DO-actions distinct from being → skip (note in summary).
+- Genealogical scions/quartigods with empty domains → skip.
+- Philip II, Olympias: historical mortals, no powers → skip. Alexander: demigod by claim but powers are all historical/domain → skip.
+- Aeacus: rain-summoning + judging dead → include.
+
+Now compiling the complete final output.
+
+---
+
+I've completed thorough verification. Here are the compiled blocks, grouped by figure. I cover the deities and major named heroes with attested *exercisable* abilities and/or *missing* items; I skip purely genealogical figures (scions/quartigods with nothing attested), abstract domain-personifications (Hygieia, Iaso, Aceso, Aegle, Panacea, Telesphorus, Macaria, Eosphorus, Alexiares, Anicetus — these *are* their domain, with no distinct verb-actions), and figures whose only distinctions are skills/qualities or domains (Odysseus's cunning, Aeneas's piety, the historical Macedonians).
+
+=== greek_hesiod_zeus (Zeus)
+greek_hesiod_zeus :: POWER hurl-lightning | name=Hurl the thunderbolt | term=κεραυνός | script=Greek | rom=keraunos | gloss=Casts the divine thunderbolt to smite targets | inherit=none | src=Hesiod, Theogony 690-712; Apollodorus 1.2.1
+greek_hesiod_zeus :: POWER gather-storm-clouds | name=Gather clouds and send storm | term=νεφεληγερέτα | script=Greek | rom=nephelēgereta | gloss="Cloud-gatherer"; marshals rain, thunder, tempest | inherit=none | src=Homer, Iliad 1.511 (standing epithet)
+greek_hesiod_zeus :: POWER shapeshift-seduction | name=Transform into beasts and elements | term=μεταμόρφωσις | script=Greek | rom=metamorphōsis | gloss=Becomes bull, swan, eagle, gold-shower, satyr | inherit=none | src=Apollodorus 3.1.1, 3.10.7; Ovid, Metamorphoses 6.103-114
+greek_hesiod_zeus :: POWER send-prophetic-omens | name=Send omens and prophetic signs | term=οἰωνός | script=Greek | rom=oiōnos | gloss=Issues eagle-omens and thunder-signs revealing his will | inherit=none | src=Homer, Iliad 8.245-252, 24.314-321
+
+=== greek_apollod_perseus (Perseus)
+greek_apollod_perseus :: POWER petrify-with-gorgon-head | name=Petrify enemies with the Gorgon's head | term=ἀπολίθωσις | script=Greek | rom=apolithōsis | gloss=Turns foes to stone by showing Medusa's severed head | inherit=none | src=Apollodorus 2.4.3; Ovid, Metamorphoses 5.177-235
+
+=== greek_apollod_heracles (Heracles)
+greek_apollod_heracles :: POWER superhuman-strength | name=Exert superhuman strength | term=βίη Ἡρακληείη | script=Greek | rom=biē Hēraklēeiē | gloss="Might of Heracles"; throttles lions, holds up the sky | inherit=partial | src=Homer, Iliad 5.638; Apollodorus 2.4.8 (strangles serpents as infant)
+greek_apollod_heracles :: POWER apotheosis-immortality | name=Ascend to godhood | term=ἀποθέωσις | script=Greek | rom=apotheōsis | gloss=Immortal part raised to Olympus from the pyre | inherit=none | src=Apollodorus 2.7.7; Hesiod, Theogony 950-955
+greek_apollod_heracles :: ITEM heracles-quiver | name=Quiver | term=φαρέτρα | script=Greek | rom=pharetra | kind=weapon-accessory | role=owner | gloss=Holds his Hydra-venom-poisoned arrows | src=Sophocles, Trachiniae 1095; Apollodorus 2.4.11
+
+=== greek_hesiod_hebe (Hebe)
+greek_hesiod_hebe :: POWER restore-youth | name=Restore youth to mortals | term=— | script=Greek | rom=— | gloss=Rejuvenated aged Iolaus for a day at Heracles' plea | inherit=none | src=Euripides, Heraclidae 851-858; Ovid, Metamorphoses 9.394-401
+
+=== greek_hesiod_ares (Ares)
+greek_hesiod_ares :: POWER instill-rout-panic | name=Instill battle-panic and rout | term=φόβος | script=Greek | rom=phobos | gloss=Spreads terror and flight (with sons Phobos and Deimos) | inherit=none | src=Hesiod, Theogony 934; Homer, Iliad 15.119-120
+greek_hesiod_ares :: POWER rouse-war-frenzy | name=Rouse murderous war-frenzy | term=λύσσα | script=Greek | rom=lyssa | gloss=Drives combatants into raging bloodlust | inherit=none | src=Homer, Iliad 5.830-863
+
+=== greek_hesiod_apollo (Apollo)
+greek_hesiod_apollo :: POWER send-plague-arrows | name=Shoot plague-bearing arrows | term=ἑκηβόλος | script=Greek | rom=hekēbolos | gloss="Far-shooter"; rains pestilence from his silver bow | inherit=none | src=Homer, Iliad 1.43-52
+greek_hesiod_apollo :: POWER utter-prophecy | name=Utter and grant prophecy | term=μαντική | script=Greek | rom=mantikē | gloss=Foretells the future; speaks through the Delphic Pythia | inherit=none | src=Homeric Hymn to Apollo 131-132; Aeschylus, Eumenides 17-19
+greek_hesiod_apollo :: POWER heal-avert-plague | name=Heal and avert pestilence | term=ἀποτρόπαιος | script=Greek | rom=apotropaios | gloss=Lifts the plagues and disease he sends when propitiated | inherit=none | src=Homer, Iliad 1.456-457
+
+=== greek_hesiod_eos (Eos)
+greek_hesiod_eos :: POWER bring-the-dawn | name=Open heaven's gates and bring daylight | term=ῥοδοδάκτυλος | script=Greek | rom=rhododaktylos | gloss="Rosy-fingered"; rises from Ocean, scatters night's mists | inherit=none | src=Homer, Odyssey 2.1-2; Iliad 1.477
+greek_hesiod_eos :: POWER abduct-mortal-lovers | name=Snatch up mortal lovers | term=ἁρπαγή | script=Greek | rom=harpagē | gloss=Carries off handsome youths (Tithonus, Cephalus, Orion) | inherit=none | src=Homeric Hymn to Aphrodite 218-238; Apollodorus 1.4.4
+
+=== greek_hesiod_calliope (Calliope)
+greek_hesiod_calliope :: POWER inspire-epic-song | name=Inspire poets with epic song | term=ἔμπνευσις | script=Greek | rom=empneusis | gloss=Breathes eloquence and heroic verse into singers and kings | inherit=none | src=Hesiod, Theogony 79-93; Homer, Odyssey 1.1
+
+=== greek_hesiod_clio (Clio)
+greek_hesiod_clio :: POWER confer-fame-in-song | name=Confer enduring fame through song | term=κλέος | script=Greek | rom=kleos | gloss=Grants the glory that immortalizes deeds in memory | inherit=none | src=Hesiod, Theogony 1-103; Diodorus Siculus 4.7.1
+
+=== greek_memnon (Memnon)
+greek_memnon :: POWER granted-immortality | name=Be made immortal after death | term=ἀθανασία | script=Greek | rom=athanasia | gloss=Zeus immortalized him at Eos's tearful plea | inherit=none | src=Aethiopis (Proclus summary); Ovid, Metamorphoses 13.576-622
+
+=== greek_helen (Helen)
+greek_helen :: POWER mimic-voices | name=Mimic the voices of others | term=μίμησις φωνῆς | script=Greek | rom=mimēsis phōnēs | gloss=Imitated the wives' voices to lure men from the Horse | inherit=none | src=Homer, Odyssey 4.274-289
+
+=== greek_aeacus (Aeacus)
+greek_aeacus :: POWER summon-rain-by-prayer | name=Summon rain to end drought | term=εὐχή | script=Greek | rom=euchē | gloss=His prayer to Zeus broke a panhellenic drought | inherit=none | src=Apollodorus 3.12.6; Pausanias 2.29.7-8
+greek_aeacus :: POWER judge-the-dead | name=Judge the souls of the dead | term=δικαστής | script=Greek | rom=dikastēs | gloss=Renders judgment on shades in the underworld | inherit=none | src=Plato, Gorgias 523e-524a; Apollodorus 3.12.6
+
+=== greek_aristaeus (Aristaeus)
+greek_aristaeus :: POWER prophesy | name=Prophesy and give oracles | term=μαντική | script=Greek | rom=mantikē | gloss=Held the seer's art taught by Chiron and the Muses | inherit=none | src=Apollonius, Argonautica 2.512-513; Diodorus 4.81
+greek_aristaeus :: POWER heal-with-herbs | name=Heal with medicinal herbs | term=ἰατρική | script=Greek | rom=iatrikē | gloss=Wielded the healing arts on Keos and elsewhere | inherit=none | src=Apollonius, Argonautica 2.512; Diodorus 4.81-82
+greek_aristaeus :: POWER summon-cooling-winds | name=Summon the cooling Etesian winds | term=ἐτησίαι | script=Greek | rom=etēsiai | gloss=His sacrifice drew the Etesian winds to break Sirius's heat | inherit=none | src=Apollonius, Argonautica 2.516-527; Diodorus 4.82
+
+=== greek_hesiod_boreas (Boreas)
+greek_hesiod_boreas :: POWER send-north-wind | name=Blow the freezing north wind | term=πνοιή | script=Greek | rom=pnoiē | gloss=Looses gales that whip seas, fell trees, bring frost | inherit=full | src=Hesiod, Works and Days 504-518; Homer, Iliad 23.194-216
+greek_hesiod_boreas :: POWER beget-as-stallion | name=Sire swift offspring in horse-form | term=μεταμόρφωσις | script=Greek | rom=metamorphōsis | gloss=As a dark stallion sired Erichthonius's immortal mares | inherit=none | src=Homer, Iliad 20.219-229
+
+=== greek_calais (Calais)
+greek_calais :: POWER winged-flight | name=Fly on his own wings | term=πτερωτός | script=Greek | rom=pterōtos | gloss=Winged Boread; chased the Harpies through the air | inherit=full | src=Apollonius, Argonautica 2.273-300; Apollodorus 1.9.21
+
+=== greek_zetes (Zetes)
+greek_zetes :: POWER winged-flight | name=Fly on his own wings | term=πτερωτός | script=Greek | rom=pterōtos | gloss=Winged Boread; chased the Harpies through the air | inherit=full | src=Apollonius, Argonautica 2.273-300; Apollodorus 1.9.21
+
+=== greek_cycnus_poseidon (Cycnus)
+greek_cycnus_poseidon :: POWER weapon-invulnerability | name=Be invulnerable to blade and spear | term=ἄτρωτος | script=Greek | rom=atrōtos | gloss=Poseidon made his flesh proof against iron weapons | inherit=none | src=Ovid, Metamorphoses 12.86-145; Apollodorus, Epitome 3.31
+
+=== greek_orion (Orion)
+greek_orion :: POWER walk-on-water | name=Walk across the sea | term=— | script=Greek | rom=— | gloss=Poseidon gave him passage over the waves as on land | inherit=none | src=Hesiod, Astronomy frag. (via Eratosthenes); Apollodorus 1.4.3
+
+=== greek_pollux (Pollux)
+greek_pollux :: POWER share-immortality | name=Share his immortality with another | term=ἀθανασία | script=Greek | rom=athanasia | gloss=Gave half his deathlessness to mortal twin Castor | inherit=none | src=Pindar, Nemean 10.55-90; Apollodorus 3.11.2
+greek_pollux :: POWER appear-as-saving-starfire | name=Appear as saving fire to imperilled sailors | term=— | script=Greek | rom=— | gloss=Dioscuri manifest as St. Elmo's fire calming storms | inherit=none | src=Homeric Hymn 33 (to the Dioscuri) 6-17; Alcaeus frag. 34
+
+=== greek_minos (Minos)
+greek_minos :: POWER judge-the-dead | name=Judge the souls of the dead | term=δικαστής | script=Greek | rom=dikastēs | gloss=Final arbiter of verdicts among the underworld shades | inherit=none | src=Homer, Odyssey 11.568-571; Plato, Gorgias 523e-524a
+greek_minos :: POWER commune-with-Zeus-for-laws | name=Receive laws in converse with Zeus | term=ὀαριστὴς Διός | script=Greek | rom=oaristēs Dios | gloss=Conferred with Zeus every nine years for Crete's laws | inherit=none | src=Homer, Odyssey 19.178-179; Plato, Laws 624a-b
+
+=== greek_rhadamanthus (Rhadamanthus)
+greek_rhadamanthus :: POWER judge-the-dead | name=Judge the souls of the dead | term=δικαστής | script=Greek | rom=dikastēs | gloss=Judges shades; presides over the Elysian Plain | inherit=none | src=Plato, Gorgias 523e-524a; Homer, Odyssey 4.564
+
+=== greek_amphion (Amphion)
+greek_amphion :: POWER move-stones-with-music | name=Move stones with lyre-music | term=— | script=Greek | rom=— | gloss=His lyre charmed stones into place to wall Thebes | inherit=none | src=Apollonius, Argonautica 1.735-741; Pausanias 9.5.7-8
+
+=== greek_apollod_theseus (Theseus)
+greek_apollod_theseus :: POWER superhuman-strength | name=Exert superhuman strength | term=βίη | script=Greek | rom=biē | gloss=Poseidon-sired might; overpowered the Minotaur and Cercyon | inherit=partial | src=Apollodorus 3.15.7, Epitome 1.5-1.9; Plutarch, Theseus 6, 11
+
+=== greek_bellerophon (Bellerophon)
+greek_bellerophon :: POWER tame-and-ride-winged-horse | name=Tame and ride the winged horse | term=— | script=Greek | rom=— | gloss=Bridled and flew Pegasus to slay the Chimera | inherit=none | src=Hesiod, Theogony 325; Pindar, Olympian 13.63-90; Apollodorus 2.3.2
+
+=== greek_asclepius (Asclepius)
+greek_asclepius :: POWER raise-the-dead | name=Raise the dead | term=ἀνάστασις | script=Greek | rom=anastasis | gloss=Restored the dead to life with Gorgon-blood | inherit=none | src=Apollodorus 3.10.3-4; Pindar, Pythian 3.54-58
+greek_asclepius :: POWER heal-the-sick | name=Heal disease and wounds | term=ἰατρική | script=Greek | rom=iatrikē | gloss=Master physician; cured illness thought incurable | inherit=none | src=Pindar, Pythian 3.47-53; Homer, Iliad 4.193-219
+
+=== greek_orpheus (Orpheus)
+greek_orpheus :: POWER charm-all-with-music | name=Charm beasts, trees, stones, and rivers | term=θέλγειν | script=Greek | rom=thelgein | gloss=His song drew animals, trees, rocks, and halted rivers | inherit=none | src=Apollonius, Argonautica 1.26-31; Ovid, Metamorphoses 10.86-105
+greek_orpheus :: POWER soothe-the-underworld | name=Soften the powers of the dead with song | term=θέλγειν | script=Greek | rom=thelgein | gloss=His music swayed Hades and Persephone to free Eurydice | inherit=none | src=Apollodorus 1.3.2; Virgil, Georgics 4.453-503
+
+=== greek_mopsus (Mopsus)
+greek_mopsus :: POWER prophesy | name=Prophesy and read omens | term=μαντική | script=Greek | rom=mantikē | gloss=Out-divined Calchas; read entrails and bird-flight | inherit=none | src=Strabo 14.1.27; Apollonius, Argonautica 1.65-66
+greek_mopsus :: POWER understand-bird-speech | name=Understand the speech of birds | term=οἰωνιστική | script=Greek | rom=oiōnistikē | gloss=Interpreted the cries and flight of birds | inherit=none | src=Apollonius, Argonautica 3.916-918; Apollodorus 1.9.16
+
+=== greek_iamus (Iamus)
+greek_iamus :: POWER prophesy-from-altar-fires | name=Prophesy from altar-fires | term=μαντική | script=Greek | rom=mantikē | gloss=Apollo gave him divination by burnt-offerings at Olympia | inherit=full | src=Pindar, Olympian 6.43-73
+greek_iamus :: POWER understand-bird-speech | name=Understand the voices of birds | term=οἰωνιστική | script=Greek | rom=oiōnistikē | gloss=Apollo gave him to hear and read bird-omens | inherit=full | src=Pindar, Olympian 6.47-49, 65-66
+
+=== greek_idmon (Idmon)
+greek_idmon :: POWER prophesy | name=Prophesy by bird-signs and burnt offerings | term=μαντική | script=Greek | rom=mantikē | gloss=Argonaut seer; foresaw his own death yet still sailed | inherit=none | src=Apollonius, Argonautica 1.139-145, 1.436-449
+
+=== greek_hesiod_hera (Hera)
+greek_hesiod_hera :: POWER inflict-madness-persecution | name=Inflict madness and persecution | term=μῆνις | script=Greek | rom=mēnis | gloss=Drives rivals mad, sends serpents and torments | inherit=none | src=Apollodorus 2.4.12 (Heracles' madness), 3.4.3 (Athamas/Ino)
+greek_hesiod_hera :: POWER beguile-with-love-girdle | name=Beguile with irresistible desire | term=θέλξις | script=Greek | rom=thelxis | gloss=Wearing the kestos, induces overpowering desire | inherit=none | src=Homer, Iliad 14.197-223
+
+=== greek_hesiod_athena (Athena)
+greek_hesiod_athena :: POWER create-olive-tree | name=Create the olive tree | term=ἐλαία | script=Greek | rom=elaia | gloss=Made the first olive sprout to win Athens from Poseidon | inherit=none | src=Apollodorus 3.14.1; Herodotus 8.55
+greek_hesiod_athena :: POWER grant-craft-skill | name=Bestow skill in craft and weaving | term=τέχνη | script=Greek | rom=technē | gloss=Endows mortals with weaving, shipbuilding, smithcraft | inherit=none | src=Homer, Odyssey 6.232-234; Hesiod, Works and Days 63-64
+greek_hesiod_athena :: POWER shapeshift-disguise | name=Disguise herself as mortals and birds | term=μεταμόρφωσις | script=Greek | rom=metamorphōsis | gloss=Appears as Mentor/Mentes; takes the form of birds | inherit=none | src=Homer, Odyssey 1.105, 3.371-372
+
+=== greek_hesiod_aphrodite (Aphrodite)
+greek_hesiod_aphrodite :: POWER kindle-desire | name=Kindle love and sexual desire | term=θέλξις | script=Greek | rom=thelxis | gloss=Inflames gods and mortals with irresistible longing | inherit=none | src=Homeric Hymn to Aphrodite 1-44; Hesiod, Theogony 203-206
+
+=== greek_hesiod_demeter (Demeter)
+greek_hesiod_demeter :: POWER grant-or-withhold-harvest | name=Grant or withhold the grain harvest | term=— | script=Greek | rom=— | gloss=Makes crops grow or fail; caused world-famine in grief | inherit=none | src=Homeric Hymn to Demeter 305-333, 450-471
+greek_hesiod_demeter :: POWER bestow-agriculture | name=Bestow the art of agriculture | term=— | script=Greek | rom=— | gloss=Taught Triptolemus sowing and her mysteries | inherit=none | src=Homeric Hymn to Demeter 470-479; Apollodorus 1.5.2
+greek_hesiod_demeter :: ITEM demeter-serpent-chariot | name=Winged serpent-drawn chariot | term=ἅρμα δρακόντων | script=Greek | rom=harma drakontōn | kind=vehicle | role=owner | gloss=Dragon-drawn car she lent Triptolemus to sow the earth | src=Apollodorus 1.5.2; Ovid, Metamorphoses 5.642-647
+greek_hesiod_demeter :: ITEM demeter-grain-sheaf | name=Sheaf of grain-ears | term=στάχυς | script=Greek | rom=stachys | kind=regalia | role=owner | gloss=Her emblematic wheat-ears, token of the harvest she gives | src=Homeric Hymn to Demeter; Callimachus, Hymn 6.45
+
+=== greek_hesiod_dionysus (Dionysus)
+greek_hesiod_dionysus :: POWER induce-ecstatic-madness | name=Induce ecstatic madness | term=μανία | script=Greek | rom=mania | gloss=Drives followers and enemies into frenzied possession | inherit=none | src=Euripides, Bacchae 32-38, 1043-1152; Apollodorus 3.5.1-2
+greek_hesiod_dionysus :: POWER make-wine-and-vines-flow | name=Make wine and vines spring forth | term=— | script=Greek | rom=— | gloss=Causes wine to flow and vines to sprout miraculously | inherit=none | src=Homeric Hymn 7 (to Dionysus) 35-37; Euripides, Bacchae 704-711
+greek_hesiod_dionysus :: POWER shapeshift | name=Transform self and others | term=μεταμόρφωσις | script=Greek | rom=metamorphōsis | gloss=Becomes lion/bull; turned the pirates into dolphins | inherit=none | src=Homeric Hymn 7 (to Dionysus) 44-53; Euripides, Bacchae 1017-1019
+
+=== greek_hesiod_poseidon (Poseidon)
+greek_hesiod_poseidon :: POWER shake-the-earth | name=Shake the earth / cause earthquakes | term=ἐνοσίχθων | script=Greek | rom=enosichthōn | gloss="Earth-shaker"; splits ground and topples walls | inherit=none | src=Homer, Iliad 20.57-66; Odyssey 5.291-296
+greek_hesiod_poseidon :: POWER raise-and-calm-storms | name=Raise and calm sea-storms | term=κυμοκτύπος | script=Greek | rom=kymoktypos | gloss=Whips up or stills the waves at will | inherit=none | src=Homer, Odyssey 5.291-332, 5.451-453
+greek_hesiod_poseidon :: POWER create-the-horse | name=Create the horse | term=ἵππιος | script=Greek | rom=hippios | gloss=Produced the first horse from rock/earth (Skyphios) | inherit=none | src=cult title Poseidon Hippios; Servius on Virgil, Georgics 1.12
+greek_hesiod_poseidon :: POWER shapeshift-mating | name=Transform into animal shapes | term=μεταμόρφωσις | script=Greek | rom=metamorphōsis | gloss=Becomes stallion, ram, bull, bird to mate | inherit=none | src=Ovid, Metamorphoses 6.115-120; Apollodorus 3.6.8
+
+=== greek_hesiod_artemis (Artemis)
+greek_hesiod_artemis :: POWER send-sudden-death | name=Send sudden (or painless) death to women | term=— | script=Greek | rom=— | gloss=Her arrows bring sudden death to women, as Apollo's to men | inherit=none | src=Homer, Iliad 21.483-484; Odyssey 11.171-173
+greek_hesiod_artemis :: POWER transform-as-punishment | name=Transform mortals as punishment | term=μεταμόρφωσις | script=Greek | rom=metamorphōsis | gloss=Turned Actaeon into a stag torn apart by his hounds | inherit=none | src=Apollodorus 3.4.4; Ovid, Metamorphoses 3.138-252
+
+=== greek_hesiod_hephaestus (Hephaestus)
+greek_hesiod_hephaestus :: POWER animate-metal-automata | name=Animate metalwork into living automata | term=— | script=Greek | rom=— | gloss=Forged self-moving tripods and golden living handmaidens | inherit=none | src=Homer, Iliad 18.373-379, 18.417-421
+greek_hesiod_hephaestus :: POWER forge-wondrous-artifacts | name=Forge wondrous, magical artifacts | term=τέχνη | script=Greek | rom=technē | gloss=Crafts divine armour, Achilles' shield, the gods' halls | inherit=none | src=Homer, Iliad 18.468-617; Hesiod, Theogony 570-584
+
+---
+
+Notes:
+- Items already present in each figure's `currentItems` were not re-listed; I added only missing ones (Heracles' quiver; Demeter's serpent-chariot and grain-sheaf). Most well-equipped figures (Perseus, Zeus, Athena, Hephaestus, Apollo, Artemis, Hera, Aphrodite, Bellerophon, Orpheus, Amphion, Memnon, Hippolyta, Theseus) already had their signature artifacts recorded, so I focused on their powers.
+- Heritability: marked `partial` for Heracles' and Theseus' strength (bodily, Zeus/Poseidon-sired, partially passed to descendants per the prompt's Heracles example); `full` for Boreas' wind-nature and the Boreads' wings (Calais/Zetes inherit winged flight directly from Boreas); `full` for Iamus' prophetic gift (founds the hereditary Iamidae seer-clan). All others `none`.
+- A few powers genuinely have no single attested Greek noun (walk-on-water, raise-vines, animate-automata, send-sudden-death, ride-Pegasus, restore-youth, appear-as-starfire) — these use term/rom = "—" per the English-only fallback rule; the gloss carries the concept. No modern coinages were used (terms are classical Greek: keraunos, metamorphōsis, mantikē, oiōnistikē, thelxis, mania, atrōtos, biē, apotheōsis, enosichthōn, etc.).
+- Skipped (nothing exercisable attested): all empty-domain scions/quartigods (Electryon, Alcmene, Hyllus, Telephus, Tlepolemus, Hermione, the Heraclid/Theseid/Asclepiad genealogical lines, etc.); pure domain-personifications (Hygieia, Iaso, Aceso, Aegle, Panacea, Telesphorus, Macaria, Eosphorus, Alexiares, Anicetus); and figures whose only distinctions are skills/qualities or domains (Odysseus' cunning, Aeneas' piety, Pelias' kingship, the historical Macedonians Philip II / Olympias / Alexander, and the Cretan/Lycian Sarpedons whose "kingship/warrior-ethic" are domains).

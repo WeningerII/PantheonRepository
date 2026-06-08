@@ -1,0 +1,123 @@
+Confirmed: Sarpedon tears down the battlement of the Achaean wall with his bare hands and breaches it (Iliad 12, esp. 12.397-399). Excellent.
+
+I now have everything I need. Let me compile the final records. I'll be careful to:
+- Use exact ids from the roster
+- Lead each power name with a readable English verb phrase, then native Greek term (Greek script) + romanization where known
+- Mark items with proper role
+- Set inherit appropriately (deities → trace/partial for divine offspring; mortal personal feats → none)
+- Skip all genuinely powerless genealogical figures
+
+**Summary of skips** (no attested power/item): Hyrmine, Pierus, Hyacinthus, Creusa, Ion, Oreithyia, Cleopatra (boread), Clymene, Ceyx, Pelias, Anticleia, Philip II, Cleopatra of Macedon, Niobe, Chloris (Niobid), Sthenelus (Perseus's son), Melanippe (Amazon), Anogon, Mnesileos, Munitus, Etias, Hippolochus, Syrnus, and the Eurystheus-sons (Alexander, Iphimedon, Eurybios, Mentor, Perimedes), and original_hippothoos, original_anchipumay.
+
+Here are the records:
+
+```text
+greek_otrera :: POWER otrera-found-amazons | name=Founded the Amazon nation as its first queen | term=Ἀμαζόνες | script=Greek | rom=Amazónes | gloss=Founder and first queen of the Amazons | inherit=none | src=Hyginus, Fabulae 30, 112; Apollonius Rhodius 2.387 scholia
+greek_otrera :: POWER otrera-found-ephesus | name=Established the sanctuary of Artemis at Ephesus | term=Ἀρτεμίσιον | script=Greek | rom=Artemísion | gloss=Credited as founder of the Ephesian Artemis shrine | inherit=none | src=Callimachus, Hymn to Artemis 237-239 (Amazon foundation tradition); Hyginus Fab. 223
+
+greek_hippolyta :: POWER hippolyta-amazon-warfare | name=Lead the Amazons in battle as warrior-queen | term=Ἀμαζών | script=Greek | rom=Amazṓn | gloss=Queen and war-leader of the Themiscyran Amazons | inherit=none | src=Apollodorus, Bibliotheca 2.5.9
+greek_hippolyta :: ITEM hippolyta-girdle | name=Girdle (belt) of Ares | term=ζωστήρ Ἄρεος | script=Greek | rom=zōstḗr Áreos | kind=garment | role=owner | gloss=Golden war-belt given by Ares, emblem of Amazon queenship | src=Apollodorus, Bibliotheca 2.5.9; Hyginus, Fab. 30
+
+greek_penthesilea :: POWER penthesilea-amazon-aristeia | name=Cut down Greek warriors in battle as Amazon champion | term=ἀριστεία | script=Greek | rom=aristeía | gloss=Slew many Achaeans before falling to Achilles | inherit=none | src=Quintus Smyrnaeus, Posthomerica 1; Apollodorus, Epitome 5.1
+
+greek_antiope_amazon :: POWER antiope-fight-amazonomachy | name=Fought beside Theseus against the invading Amazons | term=Ἀμαζονομαχία | script=Greek | rom=Amazonomachía | gloss=Battled heroically in the Attic War, slain by Molpadia | inherit=none | src=Plutarch, Theseus 27; Apollodorus, Epitome 1.16
+
+greek_odysseus :: POWER odysseus-metis | name=Outwit enemies through cunning intelligence | term=μῆτις | script=Greek | rom=mêtis | gloss=Master of guile; epithet polymētis, "of many devices" | inherit=none | src=Homer, Iliad 2.169-335; Odyssey 9 (Cyclops)
+greek_odysseus :: POWER odysseus-trojan-horse | name=Devised the stratagem of the Wooden Horse | term=δούρειος ἵππος | script=Greek | rom=doúreios híppos | gloss=Architect of the trick that took Troy | inherit=none | src=Homer, Odyssey 8.492-494; Apollodorus, Epitome 5.14
+greek_odysseus :: POWER odysseus-string-bow | name=String the great bow no other man could bend | term=τόξον | script=Greek | rom=tóxon | gloss=Bent and shot the bow through twelve axes | inherit=none | src=Homer, Odyssey 21
+greek_odysseus :: POWER odysseus-disguise | name=Pass unrecognized in disguise to deceive | term=δόλος | script=Greek | rom=dólos | gloss=Entered Troy and his own hall disguised as a beggar | inherit=none | src=Homer, Odyssey 4.244-258; 13.397-403
+greek_odysseus :: ITEM odysseus-bow | name=Bow of Odysseus | term=τόξον Ὀδυσσῆος | script=Greek | rom=tóxon Odyssêos | kind=weapon | role=owner | gloss=Gift of Iphitus, once Eurytus's; only Odysseus could string it | src=Homer, Odyssey 21.11-41
+
+greek_pandora :: POWER pandora-open-jar | name=Opened the jar that loosed evils upon mankind | term=πίθος | script=Greek | rom=píthos | gloss=Released sufferings into the world; Hope alone stayed within | inherit=none | src=Hesiod, Works and Days 90-105
+greek_pandora :: ITEM pandora-pithos | name=Jar of Pandora (the "box") | term=πίθος | script=Greek | rom=píthos | kind=object | role=owner | gloss=Storage jar holding the evils and Hope | src=Hesiod, Works and Days 94-99
+
+greek_hesiod_eosphorus :: POWER eosphorus-herald-dawn | name=Herald the dawn, bringing the light of day | term=ἑωσφόρος | script=Greek | rom=heōsphóros | gloss=The Morning Star "bringer of light," ushering in day | inherit=trace | src=Homer, Iliad 23.226; Hesiod, Theogony 381
+
+greek_sarpedon_lycian :: POWER sarpedon-breach-wall | name=Tore down the Achaean rampart with his bare hands | term=τεῖχος | script=Greek | rom=teîchos | gloss=Wrenched a breach in the Greek wall, opening it to the Trojans | inherit=none | src=Homer, Iliad 12.397-399
+greek_sarpedon_lycian :: POWER sarpedon-lycian-command | name=Lead the Lycian host as foremost Trojan ally | term=ἀριστεία | script=Greek | rom=aristeía | gloss=Greatest of the allies; son of Zeus, slain by Patroclus | inherit=none | src=Homer, Iliad 16.419-505
+
+greek_pirithous :: POWER pirithous-centauromachy | name=Battle the Centaurs at his own wedding feast | term=Κενταυρομαχία | script=Greek | rom=Kentauromachía | gloss=Lapith king who fought the drunken Centaurs over Hippodamia | inherit=none | src=Apollodorus, Epitome 1.21; Ovid, Metamorphoses 12.210-535
+greek_pirithous :: POWER pirithous-abduct-persephone | name=Attempted to carry off Persephone from the Underworld | term=κατάβασις | script=Greek | rom=katábasis | gloss=Descended to Hades to seize Persephone; trapped on the Chair of Forgetfulness | inherit=none | src=Apollodorus, Epitome 1.23-24; Pausanias 10.29.9
+
+greek_olympias :: POWER olympias-snake-rites | name=Handle sacred serpents in the orgiastic rites of Dionysus | term=ὄφεις | script=Greek | rom=ópheis | gloss=Led Bacchic-Orphic processions wreathed with tame snakes | inherit=none | src=Plutarch, Life of Alexander 2-3
+
+greek_apollod_echemus :: POWER echemus-slay-hyllus | name=Slew Hyllus in single combat to repel the Heraclids | term=μονομαχία | script=Greek | rom=monomachía | gloss=Tegean king whose victory barred the Heraclids for generations | inherit=none | src=Herodotus 9.26; Pausanias 8.5.1; Diodorus 4.58
+
+greek_apollod_temenus :: POWER temenus-conquer-peloponnese | name=Led the Heraclid conquest and won Argos by lot | term=κλῆρος | script=Greek | rom=klêros | gloss=Heraclid leader who took Argos in the division of the Peloponnese | inherit=none | src=Apollodorus, Bibliotheca 2.8.4-5
+
+greek_apollod_cresphontes :: POWER cresphontes-clod-trick | name=Won Messenia by cheating the casting of lots | term=βῶλος | script=Greek | rom=bôlos | gloss=Threw a clay clod that dissolved, fixing the draw in his favor | inherit=none | src=Apollodorus, Bibliotheca 2.8.4
+
+greek_apollod_eurypylus_telephus :: POWER eurypylus-slay-machaon | name=Slew the healer Machaon and routed Greek champions | term=ἀριστεία | script=Greek | rom=aristeía | gloss=Mysian leader, great warrior killed by Neoptolemus | inherit=none | src=Apollodorus, Epitome 5.12; Homer, Odyssey 11.519-521
+
+greek_apollod_hippolytus :: POWER hippolytus-hunter | name=Excel in the hunt as devoted companion of Artemis | term=κυνηγέτης | script=Greek | rom=kynēgétēs | gloss=Chaste huntsman who honored Artemis and scorned Aphrodite | inherit=none | src=Euripides, Hippolytus 17-87; Apollodorus, Epitome 1.18-19
+
+greek_apollod_acamas :: POWER acamas-rescue-aethra | name=Rescued his grandmother Aethra from captivity at Troy | term=νόστος | script=Greek | rom=nóstos | gloss=Freed Aethra after Troy's fall; rode in the Wooden Horse | inherit=none | src=Apollodorus, Epitome 5.22; Pausanias 10.26.2
+greek_apollod_acamas :: POWER acamas-trojan-horse | name=Hid among the warriors inside the Wooden Horse | term=δούρειος ἵππος | script=Greek | rom=doúreios híppos | gloss=One of the Greeks concealed in the horse at Troy | inherit=none | src=Quintus Smyrnaeus, Posthomerica 12.314-335
+
+greek_apollod_demophon :: POWER demophon-rescue-aethra | name=Rescued his grandmother Aethra from captivity at Troy | term=νόστος | script=Greek | rom=nóstos | gloss=Freed Aethra after Troy's fall alongside Acamas | inherit=none | src=Apollodorus, Epitome 5.22; Pausanias 10.25.8
+greek_apollod_demophon :: POWER demophon-trojan-horse | name=Hid among the warriors inside the Wooden Horse | term=δούρειος ἵππος | script=Greek | rom=doúreios híppos | gloss=One of the Greeks concealed in the horse at Troy | inherit=none | src=Quintus Smyrnaeus, Posthomerica 12.314-335
+
+greek_apollod_machaon :: POWER machaon-surgery | name=Treat battle-wounds and cut out arrows as army surgeon | term=ἰητρός | script=Greek | rom=iētrós | gloss=Healed Menelaus's arrow-wound; son of Asclepius, "good physician" | inherit=trace | src=Homer, Iliad 4.193-219; 11.504-520
+greek_apollod_machaon :: ITEM machaon-chiron-herbs | name=Healing drugs of Chiron | term=φάρμακα | script=Greek | rom=phármaka | kind=object | role=owner | gloss=Soothing remedies Asclepius received from Cheiron | src=Homer, Iliad 4.218-219
+
+greek_apollod_podalirius :: POWER podalirius-healing | name=Diagnose and heal the sick and wounded | term=ἰητρός | script=Greek | rom=iētrós | gloss=Physician son of Asclepius, skilled in diagnosis | inherit=trace | src=Homer, Iliad 11.833-836; Apollodorus, Epitome 6.18
+
+greek_hygieia :: POWER hygieia-preserve-health | name=Preserve and maintain bodily health | term=ὑγίεια | script=Greek | rom=hygíeia | gloss=Personified Health who keeps mortals sound and whole | inherit=trace | src=Pausanias 1.23.4; Orphic Hymn 68
+
+greek_iaso :: POWER iaso-recovery | name=Restore the sick to recovery from illness | term=ἴασις | script=Greek | rom=íasis | gloss=Goddess of recuperation, daughter of Asclepius | inherit=trace | src=Pausanias 1.34.3; Aristophanes, Plutus 701
+
+greek_aceso :: POWER aceso-heal-wounds | name=Heal wounds and cure ailments through the curing process | term=ἄκεσις | script=Greek | rom=ákesis | gloss=Goddess embodying the gradual process of healing | inherit=trace | src=Suda s.v. Akeso; daughter of Asclepius (Asclepiad tradition)
+
+greek_aegle_asclepius :: POWER aegle-radiant-health | name=Bestow radiant good health and well-being | term=αἴγλη | script=Greek | rom=aíglē | gloss=Goddess of the glow of good health, daughter of Asclepius | inherit=trace | src=Suda s.v. Epione; scholia on Aristides (Asclepiad tradition)
+
+greek_panacea :: POWER panacea-cure-all | name=Cure every illness with universal remedies | term=πανάκεια | script=Greek | rom=panákeia | gloss=Goddess of the cure-all, daughter of Asclepius | inherit=trace | src=Pausanias 1.34.3; Hippocratic Oath (invocation)
+
+greek_telesphorus :: POWER telesphorus-convalescence | name=Bring the sick to completion of their recovery | term=τελεσφόρος | script=Greek | rom=telesphóros | gloss=Hooded boy-god who accomplishes convalescence; attends Hygieia | inherit=trace | src=Pausanias 2.11.7
+
+greek_aratus_asclepius :: POWER aratus-seize-acrocorinth | name=Seized the impregnable citadel Acrocorinth in a night assault | term=Ἀκροκόρινθος | script=Greek | rom=Akrokórinthos | gloss=Stormed the Macedonian-held fortress by surprise, 243 BC | inherit=none | src=Plutarch, Life of Aratus 18-24; Polybius 2.43
+greek_aratus_asclepius :: POWER aratus-liberate-sicyon | name=Liberated Sicyon by a daring nocturnal raid | term=ἐλευθερία | script=Greek | rom=eleuthería | gloss=Overthrew the tyrant and freed his city, 251 BC | inherit=none | src=Plutarch, Life of Aratus 5-9
+
+greek_apollod_nicomachus :: POWER nicomachus-heal | name=Heal diseases and cure the maimed | term=ἰητρός | script=Greek | rom=iētrós | gloss=Son of Machaon, honored at Pharae for enduring healing power | inherit=trace | src=Pausanias 4.30.3
+greek_apollod_gorgasus :: POWER gorgasus-heal | name=Heal diseases and cure the maimed | term=ἰητρός | script=Greek | rom=iētrós | gloss=Son of Machaon, received divine honors for his healing art | inherit=trace | src=Pausanias 4.30.3
+
+greek_apollod_eurystheus :: POWER eurystheus-impose-labors | name=Imposed the Twelve Labours upon Heracles | term=ἆθλοι | script=Greek | rom=âthloi | gloss=King of Mycenae who commanded Heracles's tasks | inherit=none | src=Apollodorus, Bibliotheca 2.5.1-12
+greek_apollod_eurystheus :: ITEM eurystheus-bronze-jar | name=Bronze hiding-jar | term=πίθος χάλκεος | script=Greek | rom=píthos chálkeos | kind=object | role=owner | gloss=Buried bronze jar he hid in, fearing Heracles's monsters | src=Apollodorus, Bibliotheca 2.5.1; Eurystheus-and-boar vase tradition
+
+greek_apollod_melanippus_theseus :: POWER melanippus-win-race | name=Won the footrace at the Nemean games | term=δρόμος | script=Greek | rom=drómos | gloss=Son of Theseus, victor when the Epigoni renewed the Nemean games | inherit=none | src=Pausanias 10.25.7; Apollodorus tradition
+
+greek_apollod_ascanius :: POWER ascanius-found-alba | name=Founded the city of Alba Longa | term=Alba Longa | script=Latin | rom=Alba Longa | gloss=Son of Aeneas; founder of Alba Longa, ancestor of Rome | inherit=none | src=Livy 1.3; Virgil, Aeneid 1.267-271
+greek_apollod_ascanius :: POWER ascanius-slay-numanus | name=Slew Numanus Remulus with his first arrow-shot | term=τόξον | script=Greek | rom=tóxon | gloss=First kill, blessed by Apollo, during the Italian war | inherit=none | src=Virgil, Aeneid 9.590-637
+
+greek_apollod_amyclas :: POWER amyclas-found-amyclae | name=Founded the city of Amyclae | term=Ἀμύκλαι | script=Greek | rom=Amýklai | gloss=Spartan king, eponymous founder of Amyclae in Laconia | inherit=none | src=Pausanias 3.1.3; 7.18.5
+
+greek_alcestis :: POWER alcestis-die-for-husband | name=Chose to die in her husband's place | term=θάνατος ὑπὲρ ἀνδρός | script=Greek | rom=thánatos hypèr andrós | gloss=Volunteered to die so Admetus might live; later rescued from death | inherit=none | src=Euripides, Alcestis; Apollodorus, Bibliotheca 1.9.15
+
+greek_linus :: POWER linus-invent-melody | name=Invented melody and rhythm | term=μέλος καὶ ῥυθμός | script=Greek | rom=mélos kaì rhythmós | gloss=First to discover song's rhythms and tunes | inherit=none | src=Diodorus Siculus 3.67.1-2
+greek_linus :: POWER linus-teach-music | name=Taught music and the lyre to gods' heroes | term=διδάσκαλος | script=Greek | rom=didáskalos | gloss=Music-master of Heracles, Orpheus, Thamyris | inherit=none | src=Apollodorus, Bibliotheca 2.4.9; Diodorus 3.67
+
+greek_tenes :: POWER tenes-repel-fleet | name=Drove off an approaching fleet by hurling stones | term=λίθοι | script=Greek | rom=líthoi | gloss=Pelted the Greek ships with rocks to keep them from Tenedos | inherit=none | src=Apollodorus, Epitome 3.26; Pausanias 10.14.2
+```
+
+I've completed the research pass over the entire 67-figure batch.
+
+## Summary
+
+**Recorded powers/items for 30 figures** (those with genuinely attested feats/abilities/objects), spanning major heroes, deities, and notable founders. Highlights:
+
+- **Odysseus** — 4 powers (cunning/mêtis, the Wooden Horse, stringing the bow, disguise) + the **Bow of Odysseus** (item).
+- **Pandora** — opening the jar; the **pithos** (item, the so-called "box").
+- **Hippolyta** — Amazon war-leadership + the **Girdle of Ares** (item; she was the figure flagged `hasItems`).
+- **Eurystheus** — imposing the Twelve Labours + his **bronze hiding-jar** (item).
+- **Machaon** — battlefield surgery + **Chiron's healing drugs** (item).
+- Warriors/feats: Penthesilea, Antiope, Sarpedon (tears down the Achaean wall, Iliad 12), Pirithous, Echemus (slew Hyllus), Eurypylus, Acamas & Demophon (rescued Aethra + Wooden Horse), Tenes (drove off the fleet with stones), Melanippus (Nemean footrace), Cresphontes (the clay-clod lots trick), Temenus.
+- Founders/eponyms: Otrera, Ascanius (Alba Longa + Numanus kill), Amyclas.
+- Deities/healers: Eosphorus, plus the Asclepiad cluster (Hygieia, Iaso, Aceso, Aegle, Panacea, Telesphorus, Podalirius, Nicomachus, Gorgasus) — phrased as their attested *functions*, marked `inherit=trace`.
+- Others: Linus (invented melody/rhythm; taught music), Alcestis (died in her husband's place), Hippolytus (Artemis's huntsman), Olympias (Dionysian snake-handling, Plutarch), Aratus of Sicyon (night-capture of Acrocorinth).
+
+**Deliberately skipped (~37 figures)** as having no attested *power they perform* — purely genealogical, eponymous, or victim/passive figures: Hyrmine, Pierus, **Hyacinthus** (transformation done to him), Creusa, Ion, Oreithyia, Cleopatra (Boread), Clymene, Ceyx, **Niobe** & Chloris (transformation/survival are passive), Pelias (no signature item or ability despite the `hasItems` flag — his role is a scheme/deed), Anticleia, Sthenelus, Melanippe, the five sons of Eurystheus (Alexander, Iphimedon, Eurybios, Mentor, Perimedes), Munitus, Etias, Hippolochus, Syrnus, Anogon, Mnesileos, and the historical **Philip II** and **Cleopatra of Macedon** (their roles are domain-labels, no mythic power).
+
+**Two flagged data-quality notes:**
+- `original_anchipumay` ("Anchipumay") has **zero attestation** anywhere in Greek mythology — it appears to be a fabricated/non-canonical entry. Skipped.
+- `original_hippothoos` ("Hippothoös") is ambiguous (seven figures bear the name) and the most likely referent (son of Poseidon/Alope) has only a passive exposure-and-rescue story, no performed power. Skipped.
+
+All citations prefer primary sources (Homer, Hesiod, Apollodorus, Pausanias, Euripides, Quintus Smyrnaeus, Plutarch, Herodotus, Diodorus, Ovid, Virgil, Livy, Polybius). No modern coinages used; Greek terms given in Greek script with romanization.

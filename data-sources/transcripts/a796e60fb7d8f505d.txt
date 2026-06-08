@@ -1,0 +1,50 @@
+I have all the corroboration I need. The cup is Nartamongæ (Cyrillic Нартамонгæ) / Uatsamongæ-Wacamongæ (Уацамонгæ), holds rong mead, and is held in some variants by Dzerassae — documented in Colarusso & Salbiev, *Tales of the Narts* (Princeton 2016). This is a solid scholarly source.
+
+Now let me finalize. Let me reconsider the full batch one last time for rigor:
+
+**ITEMS (genuinely attested, distinctive):**
+1. **kartvelian_dali** → Golden comb (ოქროს სავარცხელი, okros savartskheli) — Svan folklore, role=owner. STRONG. ✓
+2. **slavic_mokosh** → Spindle/distaff (веретено/прялка, vereteno/pryalka) — East Slavic folk record, role=owner/wielder. ✓ (folk record explicitly allowed)
+3. **armenian_astghik** → Rose (վարդ, vard) — sacred emblem, attested via Vardavar/Khorenatsi tradition, role=owner. ✓
+4. **ossetian_dzerassae** → Nart truth-cup Nartamongæ/Wacamongæ (Нартамонгæ/Уацамонгæ) — Ossetic Nart sagas, role=owner (keeper in variants). ✓
+
+**POWERS to add (only if genuinely attested and missing):**
+- Most powers already present. 
+- Dzerassae: roster has "shapeshift into dove" and "conceive/birth from the tomb." Both solidly attested. Nothing missing critical.
+- Dali: "Kill with golden hair," "take form of game," "glow with radiant light," "grant/withhold hunting luck" — all present.
+- I could add Vahagn's "dragon-reaper/Vishapakagh" but "Slay dragons" is already there. 
+- No critical missing powers. I'll keep additions minimal/none to avoid padding, but I can add one well-attested power for Mokosh ("spin the thread of fate" already present). Nothing to add.
+
+Let me reconsider Astghik's rose for rigor once more — is it really an "item" or just an emblem? The instructions list kind options including "relic | object." A sacred flower offered to her and tied to her by name (Vardavar) is genuinely her attested attribute. I'll record it as kind=object (sacred rose), role=owner, clearly noting it's her sacred flower/emblem. This is honest and attested. I'll keep it.
+
+Let me also reconsider Mokosh's spindle rigor: the spindle/distaff is iconographic-reconstruction + the folk record of her spinning (Mokusha/Mokysha shears sheep and spins flax/wool at night). The folk record is solid ethnography. I'll record the distaff/spindle as kind=object/instrument, role=owner, citing East Slavic folk belief. Honest.
+
+All other 20 figures: SKIP (no genuinely attested distinctive personal item; their entries in primary sources are name-only idol lists or abstract domain-deities).
+
+Now writing the final output.
+
+```text
+kartvelian_dali :: ITEM dali-golden-comb | name=Golden comb | term=ოქროს სავარცხელი | script=Georgian/Mkhedruli | rom=okros savartskheli | kind=object | role=owner | gloss=golden comb she dresses her golden hair with on cliffs | src=Svan folklore; Tuite, "The Meaning of Dali"
+ossetian_dzerassae :: ITEM dzerassae-nartamonga | name=Truth-revealing cup of the Narts | term=Нартамонгæ / Уацамонгæ | script=Ossetic/Cyrillic | rom=Nartamongæ / Wacamongæ | kind=relic | role=owner | gloss=cup of rong mead; rises to truthful narrators, kept in some variants by her | src=Colarusso & Salbiev, Tales of the Narts (2016)
+armenian_astghik :: ITEM astghik-rose | name=Sacred rose | term=վարդ | script=Armenian/Հայերեն | rom=vard | kind=object | role=owner | gloss=rose as her emblem; offered with rosewater at Vardavar festival | src=Movses Khorenatsi tradition; Vardavar (vard "rose")
+slavic_mokosh :: ITEM mokosh-distaff | name=Distaff and spindle | term=прялка / веретено | script=Slavic/Cyrillic | rom=pryalka / vereteno | kind=object | role=owner | gloss=spins flax and wool by night; shown bearing the distaff | src=East Slavic folk record (Mokusha/Mokysha); Rybakov
+```
+
+## Summary
+
+I researched all 24 figures in `/tmp/items-slavic_finnic_balt.json` and recorded **4 genuinely attested items**. The other 20 figures were correctly **skipped** — they have no distinctive attested material item (most appear in primary sources only as name-in-an-idol-list, e.g. the Primary Chronicle's roster of Stribog/Simargl/Dazhbog/Mokosh, or are abstract domain-deities/nature spirits).
+
+**Items recorded (all with real scholarly sources):**
+- **kartvelian_dali** — Golden comb (ოქროს სავარცხელი / *okros savartskheli*). Strongly attested in Svan folklore: she sits on cliffs combing her golden hair with a golden comb.
+- **ossetian_dzerassae** — The Nart truth-cup Nartamongæ / Wacamongæ (Нартамонгæ / Уацамонгæ), holding *rong* mead; documented as kept by Dzerassae in some variants (Colarusso & Salbiev, *Tales of the Narts*, 2016).
+- **armenian_astghik** — The rose (վարդ / *vard*), her sacred emblem; attested via the Vardavar festival etymology and offering tradition.
+- **slavic_mokosh** — Distaff/spindle (прялка / веретено), from solid East Slavic folk record (the Mokusha/Mokysha spinning flax and wool at night); folk attestation explicitly permitted by the rules.
+
+**Notable deliberate exclusions (fabrication avoided):**
+- **armenian_vahagn** — His epithet *Vishapakagh* (Dragon-reaper) and fiery appearance are attested, but the dragon-battle text is **lost** and **no weapon is named** in the Song of Vahagn. His powers ("Slay dragons", fire) are already in the roster. No item.
+- **slavic_dazhbog** — The popular "sun-chariot with white horses" is a romantic-era reconstruction, **not** in the primary Malalas/Hypatian attestation (which only equates him with the sun, son of Svarog).
+- **finnish_ahti** — The claim he "possesses the Sampo" is a stretch (the Sampo merely sinks into the sea); the Sampo belongs to Pohjola/Louhi, not Ahti.
+- **finnish_tuonetar** — Kalevala runo 16 gives only a generic golden goblet of the ale of oblivion; the distinctive element (ale of oblivion) is already her roster power, so no separate distinctive item.
+- **slavic_veles, slavic_zorya** and the rest — associations are domains/powers (cattle, poetry, dawn, the chained-hound Simargl story is largely a modern synthesis), not attested personal items.
+
+No powers needed adding — the attested powers for these figures were already present in the roster.

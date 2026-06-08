@@ -1,0 +1,994 @@
+All notes are within the 14-word cap. The registry is complete and validated.
+
+## Summary
+
+I authored **41 missing East Asian figures** (Chinese 17, Japanese 16, Korean 8), cross-checked against the existing ids in `/tmp/existing-figures.json` so nothing is recreated. Output is a single fenced JSON array below. Full file also at `/tmp/east-asian-figures.json`.
+
+**Coverage**
+- **Chinese (17):** Pangu, Nüwa, Fuxi, Shennong/Yandi, Gonggong, Zhurong, Houyi, Chang'e, Sun Wukong, Nezha, Guanyin, Ao Guang, Leigong, Zao Jun, Caishen, plus two Eight Immortals (Lü Dongbin, He Xiangu). Skipped Erlang Shen — already present as `chinese_erlang_shen`.
+- **Japanese (16):** Izanagi, Izanami, Amaterasu, Tsukuyomi, Susanoo, Kagutsuchi, Ebisu/Hiruko, Ōkuninushi, Ame-no-Uzume, Ninigi, Konohanasakuya-hime, Inari, Raijin, Fūjin, Benzaiten, Ryūjin.
+- **Korean (8):** Jumong/Dongmyeong, Haemosu, Yuhwa, Habaek, Cheonji-wang, Daebyeol-wang, Sobyeol-wang, Jacheongbi. (Dangun/Hwanung/Hwanin/Ungnyeo already present.)
+
+**Key decisions, all web-verified**
+- **Parentage uses real canon via in-corpus/this-batch ids:** Amaterasu/Tsukuyomi/Susanoo → `["japanese_izanagi"]` (born from his purification, Kojiki); Kagutsuchi & Ebisu → both Izanagi+Izanami; Ōkuninushi → `["japanese_susanoo"]` (descendant); Ninigi → `["japanese_amaterasu"]` (grandson); Jumong → Haemosu+Yuhwa; Yuhwa → Habaek; the star-king twins → Cheonji-wang. Figures whose canonical parents aren't in corpus (e.g. Konohanasakuya-hime, daughter of Ōyamatsumi) get `[]`.
+- **Named items, each cited:** Three Sacred Treasures split correctly across the Amaterasu→Ninigi lineage (Yata-no-Kagami + Yasakani-no-Magatama on Amaterasu as owner; Kusanagi as Susanoo "maker"; all three as Ninigi "heir"); Sun Wukong's Ruyi Jingu Bang; Nezha's Universe Ring + Wind-Fire Wheels + Red Armillary Sash + Fire-tipped Spear; Houyi's vermilion bow; Chang'e's elixir; Izanagi's Ame-no-nuboko; Ryūjin's tide-jewels; Haemosu's five-dragon chariot; Jacheongbi's resurrection flowers.
+- **Faculties kept distinct from domains** (abilities, not spheres) and exhaustive per figure; hanzi/kanji/hangul + romanization throughout; ids match required prefixes.
+- **Two figures I added beyond the prompt's likely-missing list** because canon required them as parents/nodes: `korean_jumong` (the Goguryeo founder, absent from the Korean list — only Dangun was present) and `korean_habaek` (Yuhwa's father). Both are well-attested (Samguk Sagi/Yusa, Gwanggaeto Stele).
+
+Sourcing leans on primary texts (Kojiki, Nihon Shoki, Huainanzi, Shanhaijing, Xiyouji, Fengshen Yanyi, Samguk Sagi/Yusa, Jeju bonpuri chants); a few later/iconographic figures (Fūjin, Lü Dongbin, He Xiangu) carry `secondary` weight honestly.
+
+```json
+[
+  {
+    "id": "chinese_pangu",
+    "name": {"primary": "Pangu", "alt": ["P'an-ku"], "transliterations": {"chinese": "盤古", "japanese": "盤古（ばんこ）", "korean": "반고"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "term": {"value": "開天闢地", "script": "Chinese (hanzi)", "rom": "kāitiān pìdì"}, "sources": [{"kind": "primary", "reference": "Xu Zheng, Sanwu Liji (Three-Five Historic Records), 3rd c. CE"}]},
+      {"sphereId": "cosmic-order", "contextTag": "lifelong", "term": {"value": "天地", "script": "Chinese (hanzi)", "rom": "tiāndì"}, "sources": [{"kind": "primary", "reference": "Xu Zheng, Sanwu Liji, 3rd c. CE"}]}
+    ],
+    "faculties": [
+      {"id": "separate-heaven-earth", "name": "Separate heaven from earth", "term": {"value": "開天闢地", "script": "Chinese (hanzi)", "rom": "kāitiān pìdì"}, "inheritability": "none", "notes": "Pushed sky and earth apart, growing daily for eighteen thousand years.", "sources": [{"kind": "primary", "reference": "Xu Zheng, Sanwu Liji, 3rd c. CE"}]},
+      {"id": "world-forming-body", "name": "Transform corpse into the world", "term": {"value": "化生萬物", "script": "Chinese (hanzi)", "rom": "huàshēng wànwù"}, "inheritability": "none", "notes": "His dying body became sun, moon, mountains, rivers, and wind.", "sources": [{"kind": "primary", "reference": "Ren Fang, Shuyi Ji (Records of Strange Things), 6th c. CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "cosmic-egg", "kind": "object", "name": "Cosmic egg of chaos", "term": {"value": "混沌", "script": "Chinese (hanzi)", "rom": "hùndùn"}, "role": "owner", "notes": "Primordial egg from which Pangu hatched to begin creation.", "sources": [{"kind": "primary", "reference": "Xu Zheng, Sanwu Liji, 3rd c. CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Xu Zheng, Sanwu Liji, 3rd c. CE"}], "weight": "primary"}],
+    "notes": "Primordial giant who separated sky and earth and became the world."
+  },
+  {
+    "id": "chinese_nuwa",
+    "name": {"primary": "Nüwa", "alt": ["Nügua", "Nü-kua"], "transliterations": {"chinese": "女媧", "japanese": "女媧（じょか）", "korean": "여와"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "female",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "term": {"value": "造人", "script": "Chinese (hanzi)", "rom": "zàorén"}, "sources": [{"kind": "primary", "reference": "Ying Shao, Fengsu Tongyi (Comprehensive Meaning of Customs), 2nd c. CE"}]},
+      {"sphereId": "fertility", "contextTag": "lifelong", "term": {"value": "婚姻", "script": "Chinese (hanzi)", "rom": "hūnyīn"}, "sources": [{"kind": "primary", "reference": "Ying Shao, Fengsu Tongyi, 2nd c. CE"}]}
+    ],
+    "faculties": [
+      {"id": "create-humanity", "name": "Fashion humans from yellow clay", "term": {"value": "摶土造人", "script": "Chinese (hanzi)", "rom": "tuántǔ zàorén"}, "inheritability": "none", "notes": "Molded the first humans from earth and a trailing cord.", "sources": [{"kind": "primary", "reference": "Ying Shao, Fengsu Tongyi, 2nd c. CE"}]},
+      {"id": "mend-heaven", "name": "Repair the broken sky", "term": {"value": "補天", "script": "Chinese (hanzi)", "rom": "bǔtiān"}, "inheritability": "none", "notes": "Smelted five-colored stones to patch heaven after Gonggong's wreck.", "sources": [{"kind": "primary", "reference": "Huainanzi, Lanming chapter, 2nd c. BCE"}]}
+    ],
+    "materialCulture": [
+      {"id": "five-colored-stones", "kind": "object", "name": "Five-colored stones", "term": {"value": "五色石", "script": "Chinese (hanzi)", "rom": "wǔsè shí"}, "role": "maker", "notes": "Refined stones used to seal the shattered heavens.", "sources": [{"kind": "primary", "reference": "Huainanzi, Lanming chapter, 2nd c. BCE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Huainanzi, 2nd c. BCE"}, {"kind": "primary", "reference": "Ying Shao, Fengsu Tongyi, 2nd c. CE"}], "weight": "primary"}],
+    "notes": "Serpent-bodied creator goddess who made humanity and mended the sky."
+  },
+  {
+    "id": "chinese_fuxi",
+    "name": {"primary": "Fuxi", "alt": ["Fu Hsi", "Paoxi", "Taihao"], "transliterations": {"chinese": "伏羲", "japanese": "伏羲（ふくぎ）", "korean": "복희"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "civilization", "contextTag": "lifelong", "term": {"value": "文明", "script": "Chinese (hanzi)", "rom": "wénmíng"}, "sources": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}]},
+      {"sphereId": "divination", "contextTag": "lifelong", "term": {"value": "八卦", "script": "Chinese (hanzi)", "rom": "bāguà"}, "sources": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}]}
+    ],
+    "faculties": [
+      {"id": "invent-trigrams", "name": "Devise the eight trigrams", "term": {"value": "畫八卦", "script": "Chinese (hanzi)", "rom": "huà bāguà"}, "inheritability": "none", "notes": "Created the bagua by observing heaven, earth, and creatures.", "sources": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}]},
+      {"id": "teach-fishing-husbandry", "name": "Teach nets, fishing, and animal-rearing", "term": {"value": "結網", "script": "Chinese (hanzi)", "rom": "jiéwǎng"}, "inheritability": "none", "notes": "Taught humanity to make nets and domesticate animals.", "sources": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}]}
+    ],
+    "materialCulture": [
+      {"id": "bagua-trigrams", "kind": "concept", "name": "Eight trigrams", "term": {"value": "八卦", "script": "Chinese (hanzi)", "rom": "bāguà"}, "role": "maker", "notes": "The eight divinatory symbols ascribed to Fuxi's invention.", "sources": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}, {"kind": "primary", "reference": "Sima Qian, Shiji, c. 94 BCE"}], "weight": "primary"}],
+    "notes": "Serpent-bodied culture hero, brother-consort of Nüwa, inventor of the trigrams."
+  },
+  {
+    "id": "chinese_shennong",
+    "name": {"primary": "Shennong", "alt": ["Yandi", "Yan Emperor", "Divine Farmer"], "transliterations": {"chinese": "神農", "japanese": "神農（しんのう）", "korean": "신농"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "agriculture", "contextTag": "lifelong", "term": {"value": "農", "script": "Chinese (hanzi)", "rom": "nóng"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Xiuwu chapter, 2nd c. BCE"}]},
+      {"sphereId": "medicine", "contextTag": "lifelong", "term": {"value": "醫藥", "script": "Chinese (hanzi)", "rom": "yīyào"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Xiuwu chapter, 2nd c. BCE"}]}
+    ],
+    "faculties": [
+      {"id": "invent-agriculture", "name": "Invent the plough and farming", "term": {"value": "教民耕種", "script": "Chinese (hanzi)", "rom": "jiàomín gēngzhòng"}, "inheritability": "none", "notes": "Taught humanity ploughing, sowing, and the five grains.", "sources": [{"kind": "primary", "reference": "Huainanzi, Xiuwu chapter, 2nd c. BCE"}]},
+      {"id": "taste-hundred-herbs", "name": "Test medicinal herbs on his own body", "term": {"value": "嘗百草", "script": "Chinese (hanzi)", "rom": "cháng bǎicǎo"}, "inheritability": "none", "notes": "Tasted hundreds of plants daily to classify medicines and poisons.", "sources": [{"kind": "primary", "reference": "Huainanzi, Xiuwu chapter, 2nd c. BCE"}]}
+    ],
+    "materialCulture": [
+      {"id": "wooden-plough", "kind": "tool", "name": "Wooden plough", "term": {"value": "耒耜", "script": "Chinese (hanzi)", "rom": "lěisì"}, "role": "maker", "notes": "Invented the plough to teach the people farming.", "sources": [{"kind": "primary", "reference": "Xici (Great Commentary to the Yijing), c. 4th–3rd c. BCE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Huainanzi, 2nd c. BCE"}, {"kind": "primary", "reference": "Sima Qian, Shiji, c. 94 BCE"}], "weight": "primary"}],
+    "notes": "Ox-headed Flame Emperor and Divine Farmer, founder of agriculture and herbal medicine."
+  },
+  {
+    "id": "chinese_gonggong",
+    "name": {"primary": "Gonggong", "alt": ["Kang Hui"], "transliterations": {"chinese": "共工", "japanese": "共工（きょうこう）", "korean": "공공"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "water", "contextTag": "lifelong", "term": {"value": "水", "script": "Chinese (hanzi)", "rom": "shuǐ"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Tianwen chapter, 2nd c. BCE"}]},
+      {"sphereId": "floods", "contextTag": "lifelong", "term": {"value": "洪水", "script": "Chinese (hanzi)", "rom": "hóngshuǐ"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Tianwen chapter, 2nd c. BCE"}]}
+    ],
+    "faculties": [
+      {"id": "topple-buzhou", "name": "Topple the heaven-pillar Mount Buzhou", "term": {"value": "怒觸不周山", "script": "Chinese (hanzi)", "rom": "nù chù Bùzhōu shān"}, "inheritability": "none", "notes": "Smashed the pillar of heaven, tilting sky and earth.", "sources": [{"kind": "primary", "reference": "Huainanzi, Tianwen chapter, 2nd c. BCE"}]},
+      {"id": "command-floods", "name": "Unleash catastrophic floodwaters", "term": {"value": "振滔洪水", "script": "Chinese (hanzi)", "rom": "zhèntāo hóngshuǐ"}, "inheritability": "none", "notes": "Wielded the deluge as a weapon against rival powers.", "sources": [{"kind": "primary", "reference": "Huainanzi, Benjing chapter, 2nd c. BCE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Huainanzi, Tianwen chapter, 2nd c. BCE"}, {"kind": "primary", "reference": "Shanhaijing (Classic of Mountains and Seas), c. 4th c. BCE–2nd c. CE"}], "weight": "primary"}],
+    "notes": "Serpent-bodied water god whose rage broke Mount Buzhou and tilted the heavens."
+  },
+  {
+    "id": "chinese_zhurong",
+    "name": {"primary": "Zhurong", "alt": ["Chu Jung"], "transliterations": {"chinese": "祝融", "japanese": "祝融（しゅくゆう）", "korean": "축융"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "fire", "contextTag": "lifelong", "term": {"value": "火", "script": "Chinese (hanzi)", "rom": "huǒ"}, "sources": [{"kind": "primary", "reference": "Shanhaijing, Hainei jing, c. 4th c. BCE–2nd c. CE"}]},
+      {"sphereId": "south", "contextTag": "lifelong", "term": {"value": "南方", "script": "Chinese (hanzi)", "rom": "nánfāng"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Tianwen chapter, 2nd c. BCE"}]}
+    ],
+    "faculties": [
+      {"id": "command-fire", "name": "Govern and wield fire", "term": {"value": "司火", "script": "Chinese (hanzi)", "rom": "sī huǒ"}, "inheritability": "none", "notes": "Lord of fire who rode a flaming dragon into battle.", "sources": [{"kind": "primary", "reference": "Shanhaijing, Hainei jing, c. 4th c. BCE–2nd c. CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Shanhaijing, c. 4th c. BCE–2nd c. CE"}, {"kind": "primary", "reference": "Huainanzi, 2nd c. BCE"}], "weight": "primary"}],
+    "notes": "God of fire and the south who defeated Gonggong in elemental war."
+  },
+  {
+    "id": "chinese_houyi",
+    "name": {"primary": "Houyi", "alt": ["Hou Yi", "Yi the Archer"], "transliterations": {"chinese": "后羿", "japanese": "后羿（こうげい）", "korean": "후예"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "archery", "contextTag": "lifelong", "term": {"value": "射", "script": "Chinese (hanzi)", "rom": "shè"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Benjing chapter, 2nd c. BCE"}]},
+      {"sphereId": "sun", "contextTag": "event", "term": {"value": "射日", "script": "Chinese (hanzi)", "rom": "shèrì"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Benjing chapter, 2nd c. BCE"}]}
+    ],
+    "faculties": [
+      {"id": "shoot-nine-suns", "name": "Shoot down nine of ten suns", "term": {"value": "射九日", "script": "Chinese (hanzi)", "rom": "shè jiǔrì"}, "inheritability": "none", "notes": "Felled nine scorching suns with his bow to save earth.", "sources": [{"kind": "primary", "reference": "Huainanzi, Benjing chapter, 2nd c. BCE"}]},
+      {"id": "slay-monsters", "name": "Slay man-eating beasts and monsters", "term": {"value": "誅鑿齒", "script": "Chinese (hanzi)", "rom": "zhū Záochǐ"}, "inheritability": "none", "notes": "Killed Zaochi, Chiseltooth, and other plagues of humanity.", "sources": [{"kind": "primary", "reference": "Huainanzi, Benjing chapter, 2nd c. BCE"}]}
+    ],
+    "materialCulture": [
+      {"id": "houyi-bow", "kind": "weapon", "name": "Vermilion bow and white arrows", "term": {"value": "彤弓素矰", "script": "Chinese (hanzi)", "rom": "tónggōng sùzēng"}, "role": "wielder", "notes": "Red bow and white-corded arrows bestowed for shooting the suns.", "sources": [{"kind": "primary", "reference": "Huainanzi, Benjing chapter, 2nd c. BCE; Classic of Documents tradition"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Huainanzi, 2nd c. BCE"}, {"kind": "primary", "reference": "Shanhaijing, c. 4th c. BCE–2nd c. CE"}], "weight": "primary"}],
+    "notes": "Divine archer who shot down nine suns; husband of Chang'e."
+  },
+  {
+    "id": "chinese_change",
+    "name": {"primary": "Chang'e", "alt": ["Chang-o", "Heng'e"], "transliterations": {"chinese": "嫦娥", "japanese": "嫦娥（じょうが）", "korean": "항아"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "female",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "moon", "contextTag": "lifelong", "term": {"value": "月", "script": "Chinese (hanzi)", "rom": "yuè"}, "sources": [{"kind": "primary", "reference": "Huainanzi, Lanming chapter, 2nd c. BCE"}]}
+    ],
+    "faculties": [
+      {"id": "ascend-to-moon", "name": "Ascend bodily to the moon", "term": {"value": "奔月", "script": "Chinese (hanzi)", "rom": "bēnyuè"}, "inheritability": "none", "notes": "Swallowed the elixir and floated up to dwell on the moon.", "sources": [{"kind": "primary", "reference": "Huainanzi, Lanming chapter, 2nd c. BCE"}]}
+    ],
+    "materialCulture": [
+      {"id": "elixir-immortality", "kind": "object", "name": "Elixir of immortality", "term": {"value": "不死之藥", "script": "Chinese (hanzi)", "rom": "bùsǐ zhī yào"}, "role": "owner", "notes": "Drug of deathlessness from Xiwangmu that she consumed.", "sources": [{"kind": "primary", "reference": "Huainanzi, Lanming chapter, 2nd c. BCE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Huainanzi, Lanming chapter, 2nd c. BCE"}], "weight": "primary"}],
+    "notes": "Moon goddess who drank her husband Houyi's elixir and fled to the moon."
+  },
+  {
+    "id": "chinese_sun_wukong",
+    "name": {"primary": "Sun Wukong", "alt": ["Monkey King", "Qitian Dasheng", "Great Sage Equal to Heaven"], "transliterations": {"chinese": "孫悟空", "japanese": "孫悟空（そんごくう）", "korean": "손오공"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "trickery", "contextTag": "lifelong", "term": {"value": "變化", "script": "Chinese (hanzi)", "rom": "biànhuà"}, "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"}]},
+      {"sphereId": "war", "contextTag": "lifelong", "term": {"value": "鬥戰", "script": "Chinese (hanzi)", "rom": "dòuzhàn"}, "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}]}
+    ],
+    "faculties": [
+      {"id": "seventy-two-transformations", "name": "Shapeshift via seventy-two transformations", "term": {"value": "七十二變", "script": "Chinese (hanzi)", "rom": "qīshí'èr biàn"}, "inheritability": "none", "notes": "Assumes seventy-two forms, even plucking hairs into clones.", "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}]},
+      {"id": "cloud-somersault", "name": "Travel by somersault cloud", "term": {"value": "筋斗雲", "script": "Chinese (hanzi)", "rom": "jīndǒu yún"}, "inheritability": "none", "notes": "Leaps 108,000 li in a single somersault on a cloud.", "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}]},
+      {"id": "fiery-golden-eyes", "name": "See truth with fiery golden eyes", "term": {"value": "火眼金睛", "script": "Chinese (hanzi)", "rom": "huǒyǎn jīnjīng"}, "inheritability": "none", "notes": "Eyes tempered in Laozi's furnace pierce all disguises.", "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}]}
+    ],
+    "materialCulture": [
+      {"id": "ruyi-jingu-bang", "kind": "weapon", "name": "As-You-Will Gold-Banded Cudgel", "term": {"value": "如意金箍棒", "script": "Chinese (hanzi)", "rom": "rúyì jīngū bàng"}, "role": "wielder", "notes": "Size-changing iron staff seized from Ao Guang's sea treasury.", "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, ch. 3, c. 1592"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"}], "weight": "primary"}],
+    "notes": "Stone-born Monkey King and Great Sage, immortal trickster of Journey to the West."
+  },
+  {
+    "id": "chinese_nezha",
+    "name": {"primary": "Nezha", "alt": ["Nata", "Third Lotus Prince", "Marshal of the Central Altar"], "transliterations": {"chinese": "哪吒", "japanese": "哪吒（なた）", "korean": "나타"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "war", "contextTag": "lifelong", "term": {"value": "戰", "script": "Chinese (hanzi)", "rom": "zhàn"}, "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"}]},
+      {"sphereId": "protection", "contextTag": "lifelong", "term": {"value": "護法", "script": "Chinese (hanzi)", "rom": "hùfǎ"}, "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]}
+    ],
+    "faculties": [
+      {"id": "lotus-rebirth", "name": "Be reborn from lotus flesh", "term": {"value": "蓮花化身", "script": "Chinese (hanzi)", "rom": "liánhuā huàshēn"}, "inheritability": "none", "notes": "Master Taiyi rebuilt his body from lotus roots and stalks.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]},
+      {"id": "three-heads-six-arms", "name": "Manifest three heads and six arms", "term": {"value": "三頭六臂", "script": "Chinese (hanzi)", "rom": "sāntóu liùbì"}, "inheritability": "none", "notes": "Transforms into a six-armed, three-headed war form.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]}
+    ],
+    "materialCulture": [
+      {"id": "qiankun-quan", "kind": "weapon", "name": "Universe Ring", "term": {"value": "乾坤圈", "script": "Chinese (hanzi)", "rom": "qiánkūn quān"}, "role": "wielder", "notes": "Indestructible gold ring hurled to batter enemies.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]},
+      {"id": "huntian-ling", "kind": "weapon", "name": "Red Armillary Sash", "term": {"value": "混天綾", "script": "Chinese (hanzi)", "rom": "hùntiān líng"}, "role": "wielder", "notes": "Self-regenerating crimson silk that binds foes and stirs storms.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]},
+      {"id": "feng-huo-lun", "kind": "object", "name": "Wind-Fire Wheels", "term": {"value": "風火輪", "script": "Chinese (hanzi)", "rom": "fēnghuǒ lún"}, "role": "wielder", "notes": "Flaming wheels ridden for flight and to summon fire.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]},
+      {"id": "huojian-qiang", "kind": "weapon", "name": "Fire-tipped Spear", "term": {"value": "火尖槍", "script": "Chinese (hanzi)", "rom": "huǒjiān qiāng"}, "role": "wielder", "notes": "Spear that blasts fire from its point.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567–1620"}, {"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}], "weight": "primary"}],
+    "notes": "Lotus-reborn child-god and protector deity, son of Li Jing the Pagoda-Bearer."
+  },
+  {
+    "id": "chinese_guanyin",
+    "name": {"primary": "Guanyin", "alt": ["Kuan Yin", "Guanshiyin", "Avalokiteshvara"], "transliterations": {"chinese": "觀音", "japanese": "観音（かんのん）", "korean": "관음"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "female",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "compassion", "contextTag": "lifelong", "term": {"value": "慈悲", "script": "Chinese (hanzi)", "rom": "cíbēi"}, "sources": [{"kind": "primary", "reference": "Lotus Sutra (Miaofa Lianhua Jing), Universal Gate chapter, Kumarajiva trans. 406 CE"}]},
+      {"sphereId": "mercy", "contextTag": "lifelong", "term": {"value": "救苦", "script": "Chinese (hanzi)", "rom": "jiùkǔ"}, "sources": [{"kind": "primary", "reference": "Lotus Sutra, Universal Gate chapter, 406 CE"}]}
+    ],
+    "faculties": [
+      {"id": "perceive-cries", "name": "Perceive all cries of the suffering", "term": {"value": "尋聲救苦", "script": "Chinese (hanzi)", "rom": "xúnshēng jiùkǔ"}, "inheritability": "none", "notes": "Hears the world's pleas and rescues those who call her.", "sources": [{"kind": "primary", "reference": "Lotus Sutra, Universal Gate chapter, 406 CE"}]},
+      {"id": "myriad-manifestations", "name": "Take any form to save beings", "term": {"value": "三十三身", "script": "Chinese (hanzi)", "rom": "sānshísān shēn"}, "inheritability": "none", "notes": "Assumes thirty-three bodies suited to each supplicant's need.", "sources": [{"kind": "primary", "reference": "Lotus Sutra, Universal Gate chapter, 406 CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "pure-vase-willow", "kind": "object", "name": "Pure vase and willow branch", "term": {"value": "淨瓶楊柳", "script": "Chinese (hanzi)", "rom": "jìngpíng yángliǔ"}, "role": "owner", "notes": "Vase of sweet dew and willow sprig that sprinkles blessing.", "sources": [{"kind": "secondary", "reference": "Chün-fang Yü, Kuan-yin: The Chinese Transformation of Avalokiteśvara, 2001"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Lotus Sutra (Miaofa Lianhua Jing), 406 CE"}], "weight": "primary"}],
+    "notes": "Bodhisattva of compassion, the East Asian goddess of mercy."
+  },
+  {
+    "id": "chinese_ao_guang",
+    "name": {"primary": "Ao Guang", "alt": ["Dragon King of the East Sea", "Ao Kuang"], "transliterations": {"chinese": "敖廣", "japanese": "敖広（ごうこう）", "korean": "오광"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "sea", "contextTag": "lifelong", "term": {"value": "東海", "script": "Chinese (hanzi)", "rom": "dōnghǎi"}, "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}]},
+      {"sphereId": "rain", "contextTag": "lifelong", "term": {"value": "行雨", "script": "Chinese (hanzi)", "rom": "xíngyǔ"}, "sources": [{"kind": "primary", "reference": "Avataṃsaka Sūtra (Huayan jing) tradition"}]}
+    ],
+    "faculties": [
+      {"id": "command-rain", "name": "Summon rain and command sea-waters", "term": {"value": "司雨", "script": "Chinese (hanzi)", "rom": "sī yǔ"}, "inheritability": "none", "notes": "Dragon-king who governs the rainfall and tides of the east.", "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}]}
+    ],
+    "materialCulture": [
+      {"id": "dragon-palace-treasury", "kind": "place", "name": "Crystal Palace of the East Sea", "term": {"value": "水晶宮", "script": "Chinese (hanzi)", "rom": "shuǐjīng gōng"}, "role": "owner", "notes": "Undersea palace whose armory held the iron cudgel Sun Wukong took.", "sources": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, ch. 3, c. 1592"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Wu Cheng'en, Xiyouji, c. 1592"}, {"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}], "weight": "primary"}],
+    "notes": "Eldest of the four Dragon Kings, lord of the East Sea and rain."
+  },
+  {
+    "id": "chinese_leigong",
+    "name": {"primary": "Leigong", "alt": ["Lei Gong", "Duke of Thunder", "Leishen"], "transliterations": {"chinese": "雷公", "japanese": "雷公（らいこう）", "korean": "뇌공"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "thunder", "contextTag": "lifelong", "term": {"value": "雷", "script": "Chinese (hanzi)", "rom": "léi"}, "sources": [{"kind": "primary", "reference": "Wang Chong, Lunheng, Leixu chapter, 1st c. CE"}]},
+      {"sphereId": "justice", "contextTag": "lifelong", "term": {"value": "罰惡", "script": "Chinese (hanzi)", "rom": "fá'è"}, "sources": [{"kind": "primary", "reference": "Wang Chong, Lunheng, Leixu chapter, 1st c. CE"}]}
+    ],
+    "faculties": [
+      {"id": "hurl-thunder", "name": "Strike the wicked with thunderclaps", "term": {"value": "司雷", "script": "Chinese (hanzi)", "rom": "sī léi"}, "inheritability": "none", "notes": "Beats his drums to loose thunder upon the guilty.", "sources": [{"kind": "primary", "reference": "Wang Chong, Lunheng, Leixu chapter, 1st c. CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "thunder-drums-mallet", "kind": "object", "name": "Thunder drums and mallet", "term": {"value": "連鼓椎", "script": "Chinese (hanzi)", "rom": "liángǔ chuí"}, "role": "wielder", "notes": "Drums struck with mallet and chisel to make thunder.", "sources": [{"kind": "primary", "reference": "Wang Chong, Lunheng, Leixu chapter, 1st c. CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Wang Chong, Lunheng, Leixu chapter, 1st c. CE"}, {"kind": "primary", "reference": "Shanhaijing, c. 4th c. BCE–2nd c. CE"}], "weight": "primary"}],
+    "notes": "Beast-faced thunder god who drums lightning to punish the wicked."
+  },
+  {
+    "id": "chinese_zao_jun",
+    "name": {"primary": "Zao Jun", "alt": ["Kitchen God", "Stove God", "Zao Shen"], "transliterations": {"chinese": "灶君", "japanese": "灶君（そうくん）", "korean": "조군"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "hearth", "contextTag": "lifelong", "term": {"value": "灶", "script": "Chinese (hanzi)", "rom": "zào"}, "sources": [{"kind": "primary", "reference": "Liji (Book of Rites), Jifa chapter, c. 1st c. BCE"}]},
+      {"sphereId": "household", "contextTag": "lifelong", "term": {"value": "家宅", "script": "Chinese (hanzi)", "rom": "jiāzhái"}, "sources": [{"kind": "primary", "reference": "Ge Hong, Baopuzi, Weizhi chapter, 4th c. CE"}]}
+    ],
+    "faculties": [
+      {"id": "report-to-heaven", "name": "Report the household's deeds to Heaven", "term": {"value": "上天言事", "script": "Chinese (hanzi)", "rom": "shàngtiān yánshì"}, "inheritability": "none", "notes": "Ascends yearly to report each family's conduct to the Jade Emperor.", "sources": [{"kind": "primary", "reference": "Ge Hong, Baopuzi, Weizhi chapter, 4th c. CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Liji (Book of Rites), Jifa chapter, c. 1st c. BCE"}, {"kind": "primary", "reference": "Ge Hong, Baopuzi, 4th c. CE"}], "weight": "primary"}],
+    "notes": "Kitchen God who watches each household and reports yearly to Heaven."
+  },
+  {
+    "id": "chinese_caishen",
+    "name": {"primary": "Caishen", "alt": ["God of Wealth", "Zhao Gongming"], "transliterations": {"chinese": "財神", "japanese": "財神（ざいしん）", "korean": "재신"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "wealth", "contextTag": "lifelong", "term": {"value": "財", "script": "Chinese (hanzi)", "rom": "cái"}, "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]},
+      {"sphereId": "prosperity", "contextTag": "lifelong", "term": {"value": "招財", "script": "Chinese (hanzi)", "rom": "zhāocái"}, "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]}
+    ],
+    "faculties": [
+      {"id": "bestow-wealth", "name": "Bestow riches and prosperity", "term": {"value": "賜財", "script": "Chinese (hanzi)", "rom": "cì cái"}, "inheritability": "none", "notes": "Grants fortune and commercial success to his devotees.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]}
+    ],
+    "materialCulture": [
+      {"id": "black-tiger-mount", "kind": "object", "name": "Black tiger steed", "term": {"value": "黑虎", "script": "Chinese (hanzi)", "rom": "hēihǔ"}, "role": "owner", "notes": "As Zhao Gongming, he rides a black tiger into battle.", "sources": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567–1620"}], "weight": "primary"}],
+    "notes": "God of wealth, popularly identified with the marshal Zhao Gongming."
+  },
+  {
+    "id": "chinese_lu_dongbin",
+    "name": {"primary": "Lü Dongbin", "alt": ["Lu Tung-pin", "Chunyang"], "transliterations": {"chinese": "呂洞賓", "japanese": "呂洞賓（りょどうひん）", "korean": "여동빈"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "immortality", "contextTag": "lifelong", "term": {"value": "仙", "script": "Chinese (hanzi)", "rom": "xiān"}, "sources": [{"kind": "secondary", "reference": "Quanzhen Daoist hagiography; Ming vernacular tradition"}]},
+      {"sphereId": "exorcism", "contextTag": "lifelong", "term": {"value": "斬妖", "script": "Chinese (hanzi)", "rom": "zhǎnyāo"}, "sources": [{"kind": "secondary", "reference": "Ming vernacular Eight Immortals tales"}]}
+    ],
+    "faculties": [
+      {"id": "wield-magic-sword", "name": "Vanquish demons with a flying sword", "term": {"value": "飛劍斬妖", "script": "Chinese (hanzi)", "rom": "fēijiàn zhǎnyāo"}, "inheritability": "none", "notes": "Master of a supernatural sword that subdues evil spirits.", "sources": [{"kind": "secondary", "reference": "Ming vernacular Eight Immortals tales"}]}
+    ],
+    "materialCulture": [
+      {"id": "demon-slaying-sword", "kind": "weapon", "name": "Demon-slaying sword", "term": {"value": "純陽劍", "script": "Chinese (hanzi)", "rom": "chúnyáng jiàn"}, "role": "wielder", "notes": "Magic sword carried on his back to dispel evil.", "sources": [{"kind": "secondary", "reference": "Ming vernacular Eight Immortals tales"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "secondary", "reference": "Quanzhen Daoist tradition; Yuan-Ming Eight Immortals corpus"}], "weight": "secondary"}],
+    "notes": "Leader of the Eight Immortals, swordsman-patriarch of Daoist legend."
+  },
+  {
+    "id": "chinese_he_xiangu",
+    "name": {"primary": "He Xiangu", "alt": ["Ho Hsien-ku", "Immortal Maiden He"], "transliterations": {"chinese": "何仙姑", "japanese": "何仙姑（かせんこ）", "korean": "하선고"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chinese",
+    "primaryTradition": "Chinese",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "immortality", "contextTag": "lifelong", "term": {"value": "仙", "script": "Chinese (hanzi)", "rom": "xiān"}, "sources": [{"kind": "secondary", "reference": "Ming vernacular Eight Immortals tradition"}]}
+    ],
+    "faculties": [
+      {"id": "purifying-lotus", "name": "Purify and heal with a magic lotus", "term": {"value": "荷花淨化", "script": "Chinese (hanzi)", "rom": "héhuā jìnghuà"}, "inheritability": "none", "notes": "Bears a lotus that cleanses and brings health.", "sources": [{"kind": "secondary", "reference": "Ming vernacular Eight Immortals tradition"}]}
+    ],
+    "materialCulture": [
+      {"id": "lotus-flower", "kind": "object", "name": "Lotus flower", "term": {"value": "荷花", "script": "Chinese (hanzi)", "rom": "héhuā"}, "role": "owner", "notes": "Her emblematic lotus, sometimes a fly-whisk in art.", "sources": [{"kind": "secondary", "reference": "Ming vernacular Eight Immortals tradition"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "secondary", "reference": "Yuan-Ming Eight Immortals corpus"}], "weight": "secondary"}],
+    "notes": "The lone female of the Eight Immortals, bearer of the lotus."
+  },
+  {
+    "id": "japanese_izanagi",
+    "name": {"primary": "Izanagi", "alt": ["Izanagi-no-Mikoto"], "transliterations": {"chinese": "伊邪那岐", "japanese": "伊邪那岐", "korean": "이자나기"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "term": {"value": "国産み", "script": "Japanese (kanji)", "rom": "kuniumi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "life", "contextTag": "lifelong", "term": {"value": "生", "script": "Japanese (kanji)", "rom": "sei"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "birth-islands", "name": "Birth the islands of Japan", "term": {"value": "国産み", "script": "Japanese (kanji)", "rom": "kuniumi"}, "inheritability": "none", "notes": "With Izanami churned the brine and bore the archipelago.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"id": "purification-birth", "name": "Generate deities by ablution", "term": {"value": "禊", "script": "Japanese (kanji)", "rom": "misogi"}, "inheritability": "none", "notes": "Bore Amaterasu, Tsukuyomi, and Susanoo while purifying from Yomi.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "ame-no-nuboko", "kind": "object", "name": "Heavenly Jeweled Spear", "term": {"value": "天沼矛", "script": "Japanese (kanji)", "rom": "Ame-no-nuboko"}, "role": "wielder", "notes": "Jeweled spear used to churn the sea into the first island.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Primordial male creator who, with Izanami, made the islands and gods of Japan."
+  },
+  {
+    "id": "japanese_izanami",
+    "name": {"primary": "Izanami", "alt": ["Izanami-no-Mikoto"], "transliterations": {"chinese": "伊邪那美", "japanese": "伊邪那美", "korean": "이자나미"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "term": {"value": "国産み", "script": "Japanese (kanji)", "rom": "kuniumi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "death", "contextTag": "lifelong", "term": {"value": "黄泉", "script": "Japanese (kanji)", "rom": "Yomi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "birth-islands-gods", "name": "Birth the islands and many kami", "term": {"value": "神産み", "script": "Japanese (kanji)", "rom": "kamiumi"}, "inheritability": "none", "notes": "Bore the land and gods; died birthing the fire kami.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"id": "rule-yomi", "name": "Rule the underworld and claim the dead", "term": {"value": "黄泉津大神", "script": "Japanese (kanji)", "rom": "Yomotsu-ōkami"}, "inheritability": "none", "notes": "Became goddess of Yomi, vowing to kill a thousand daily.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Primordial female creator who died birthing fire and became goddess of the dead."
+  },
+  {
+    "id": "japanese_amaterasu",
+    "name": {"primary": "Amaterasu", "alt": ["Amaterasu-Ōmikami", "Ōhirume"], "transliterations": {"chinese": "天照大神", "japanese": "天照大御神", "korean": "아마테라스"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["japanese_izanagi"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "sun", "contextTag": "lifelong", "term": {"value": "日", "script": "Japanese (kanji)", "rom": "hi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "sovereignty", "contextTag": "lifelong", "term": {"value": "高天原", "script": "Japanese (kanji)", "rom": "Takamagahara"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "radiate-sunlight", "name": "Illuminate heaven and earth as the sun", "term": {"value": "天照らす", "script": "Japanese (kanji)", "rom": "ama-terasu"}, "inheritability": "none", "notes": "Her withdrawal into a cave plunged the world into darkness.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"id": "produce-deities-oath", "name": "Produce deities by an oath-pledge", "term": {"value": "誓約", "script": "Japanese (kanji)", "rom": "ukehi"}, "inheritability": "none", "notes": "Bore the three Munakata goddesses from Susanoo's sword.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "yata-no-kagami", "kind": "object", "name": "Eight-Span Mirror", "term": {"value": "八咫鏡", "script": "Japanese (kanji)", "rom": "Yata-no-Kagami"}, "role": "owner", "notes": "Sacred mirror that lured her from the cave; first imperial regalia.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"id": "yasakani-no-magatama", "kind": "object", "name": "Grand Curved Jewels", "term": {"value": "八尺瓊勾玉", "script": "Japanese (kanji)", "rom": "Yasakani-no-Magatama"}, "role": "owner", "notes": "String of comma-jewels among the Three Sacred Treasures.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Sun goddess born from Izanagi's left eye, ancestress of the imperial line."
+  },
+  {
+    "id": "japanese_tsukuyomi",
+    "name": {"primary": "Tsukuyomi", "alt": ["Tsukuyomi-no-Mikoto", "Tsukiyomi"], "transliterations": {"chinese": "月読", "japanese": "月読命", "korean": "쓰쿠요미"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["japanese_izanagi"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "moon", "contextTag": "lifelong", "term": {"value": "月", "script": "Japanese (kanji)", "rom": "tsuki"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "night", "contextTag": "lifelong", "term": {"value": "夜", "script": "Japanese (kanji)", "rom": "yoru"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "rule-night", "name": "Govern the realm of night", "term": {"value": "夜之食国", "script": "Japanese (kanji)", "rom": "yoru-no-osukuni"}, "inheritability": "none", "notes": "Appointed by Izanagi to rule the night domain.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Moon deity born from Izanagi's right eye, ruler of the night."
+  },
+  {
+    "id": "japanese_susanoo",
+    "name": {"primary": "Susanoo", "alt": ["Susanoo-no-Mikoto", "Takehaya-Susanoo"], "transliterations": {"chinese": "須佐之男", "japanese": "須佐之男命", "korean": "스사노오"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["japanese_izanagi"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "storm", "contextTag": "lifelong", "term": {"value": "嵐", "script": "Japanese (kanji)", "rom": "arashi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "sea", "contextTag": "lifelong", "term": {"value": "海原", "script": "Japanese (kanji)", "rom": "unabara"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "slay-orochi", "name": "Slay the eight-forked serpent", "term": {"value": "八岐大蛇退治", "script": "Japanese (kanji)", "rom": "Yamata-no-Orochi taiji"}, "inheritability": "none", "notes": "Killed the giant serpent and rescued Kushinadahime.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"id": "raise-storms", "name": "Raise tempests and wild winds", "term": {"value": "暴風", "script": "Japanese (kanji)", "rom": "bōfū"}, "inheritability": "none", "notes": "His violent rampages devastated Amaterasu's heavenly fields.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "kusanagi-no-tsurugi", "kind": "weapon", "name": "Grass-Cutting Sword", "term": {"value": "草薙剣", "script": "Japanese (kanji)", "rom": "Kusanagi-no-Tsurugi"}, "role": "maker", "notes": "Sword found in Orochi's tail and given to Amaterasu.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Storm god born from Izanagi's nose; slayer of Yamata-no-Orochi."
+  },
+  {
+    "id": "japanese_kagutsuchi",
+    "name": {"primary": "Kagutsuchi", "alt": ["Hi-no-Kagutsuchi", "Homusubi"], "transliterations": {"chinese": "迦具土", "japanese": "火之迦具土神", "korean": "가구쓰치"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["japanese_izanagi", "japanese_izanami"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "fire", "contextTag": "lifelong", "term": {"value": "火", "script": "Japanese (kanji)", "rom": "hi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "embody-fire", "name": "Embody and burn as elemental fire", "term": {"value": "火神", "script": "Japanese (kanji)", "rom": "kagami / hi-no-kami"}, "inheritability": "none", "notes": "His birth burned Izanami fatally; his blood and corpse bore kami.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Fire kami whose birth killed Izanami; beheaded by Izanagi."
+  },
+  {
+    "id": "japanese_ebisu",
+    "name": {"primary": "Ebisu", "alt": ["Hiruko", "Yebisu"], "transliterations": {"chinese": "恵比寿", "japanese": "恵比須／蛭子", "korean": "에비스"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["japanese_izanagi", "japanese_izanami"],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "fishing", "contextTag": "lifelong", "term": {"value": "漁", "script": "Japanese (kanji)", "rom": "ryō"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE (as Hiruko)"}]},
+      {"sphereId": "fortune", "contextTag": "lifelong", "term": {"value": "福", "script": "Japanese (kanji)", "rom": "fuku"}, "sources": [{"kind": "secondary", "reference": "Seven Lucky Gods (Shichifukujin) tradition, medieval"}]}
+    ],
+    "faculties": [
+      {"id": "bestow-good-catch", "name": "Grant bountiful catches and luck", "term": {"value": "大漁", "script": "Japanese (kanji)", "rom": "tairyō"}, "inheritability": "none", "notes": "Patron of fishermen and honest commerce, bringer of fortune.", "sources": [{"kind": "secondary", "reference": "Shichifukujin tradition, medieval"}]}
+    ],
+    "materialCulture": [
+      {"id": "fishing-rod-sea-bream", "kind": "object", "name": "Fishing rod and red sea-bream", "term": {"value": "釣竿と鯛", "script": "Japanese (kanji)", "rom": "tsurizao to tai"}, "role": "owner", "notes": "Iconic rod and tai held under his arm in art.", "sources": [{"kind": "secondary", "reference": "Shichifukujin iconographic tradition"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE (as Hiruko)"}, {"kind": "secondary", "reference": "Shichifukujin tradition"}], "weight": "primary"}],
+    "notes": "Leech-child of Izanagi and Izanami who became god of fishermen and luck."
+  },
+  {
+    "id": "japanese_okuninushi",
+    "name": {"primary": "Ōkuninushi", "alt": ["Ōnamuchi", "Ōkuninushi-no-Kami", "Daikoku"], "transliterations": {"chinese": "大国主", "japanese": "大国主神", "korean": "오쿠니누시"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["japanese_susanoo"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "land", "contextTag": "lifelong", "term": {"value": "国造り", "script": "Japanese (kanji)", "rom": "kunizukuri"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "medicine", "contextTag": "lifelong", "term": {"value": "医薬", "script": "Japanese (kanji)", "rom": "iyaku"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "build-the-land", "name": "Develop and shape the terrestrial land", "term": {"value": "国作り", "script": "Japanese (kanji)", "rom": "kunizukuri"}, "inheritability": "none", "notes": "Cultivated Ashihara-no-Nakatsukuni before ceding it to heaven.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"id": "heal-and-matchmake", "name": "Heal the sick and bind unions", "term": {"value": "縁結び", "script": "Japanese (kanji)", "rom": "enmusubi"}, "inheritability": "none", "notes": "Patron of medicine and matchmaking, healed the Hare of Inaba.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Izumo Fudoki, 733 CE"}], "weight": "primary"}],
+    "notes": "Descendant of Susanoo who built the land and ceded it in the kuni-yuzuri."
+  },
+  {
+    "id": "japanese_ame_no_uzume",
+    "name": {"primary": "Ame-no-Uzume", "alt": ["Ame-no-Uzume-no-Mikoto", "Uzume"], "transliterations": {"chinese": "天宇受売", "japanese": "天宇受売命", "korean": "아메노우즈메"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "dawn", "contextTag": "lifelong", "term": {"value": "夜明け", "script": "Japanese (kanji)", "rom": "yoake"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "revelry", "contextTag": "lifelong", "term": {"value": "神楽", "script": "Japanese (kanji)", "rom": "kagura"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "sacred-dance", "name": "Perform the ecstatic dance that lures the sun", "term": {"value": "神懸かりの舞", "script": "Japanese (kanji)", "rom": "kamigakari no mai"}, "inheritability": "none", "notes": "Her wild dance drew Amaterasu from the heavenly cave.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Goddess of dawn and mirth whose dance lured Amaterasu from the cave."
+  },
+  {
+    "id": "japanese_ninigi",
+    "name": {"primary": "Ninigi", "alt": ["Ninigi-no-Mikoto", "Amatsuhiko-hikoho-no-ninigi"], "transliterations": {"chinese": "瓊瓊杵", "japanese": "邇邇芸命", "korean": "니니기"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["japanese_amaterasu"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "sovereignty", "contextTag": "lifelong", "term": {"value": "天孫降臨", "script": "Japanese (kanji)", "rom": "tenson kōrin"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "descend-from-heaven", "name": "Descend from heaven to rule the land", "term": {"value": "天降り", "script": "Japanese (kanji)", "rom": "amakudari"}, "inheritability": "full", "notes": "Came down to Mount Takachiho to govern the reed-plains.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "three-sacred-treasures", "kind": "object", "name": "Three Sacred Treasures", "term": {"value": "三種の神器", "script": "Japanese (kanji)", "rom": "Sanshu no Jingi"}, "role": "heir", "notes": "Mirror, jewels, and sword entrusted by Amaterasu at his descent.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE; Nihon Shoki, 720 CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Grandson of Amaterasu who descended from heaven bearing the imperial regalia."
+  },
+  {
+    "id": "japanese_konohanasakuya_hime",
+    "name": {"primary": "Konohanasakuya-hime", "alt": ["Sakuya-hime", "Kamuatatsu-hime"], "transliterations": {"chinese": "木花之佐久夜毘売", "japanese": "木花之佐久夜毘売", "korean": "고노하나사쿠야히메"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "blossoms", "contextTag": "lifelong", "term": {"value": "桜", "script": "Japanese (kanji)", "rom": "sakura"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]},
+      {"sphereId": "volcanoes", "contextTag": "lifelong", "term": {"value": "富士山", "script": "Japanese (kanji)", "rom": "Fujisan"}, "sources": [{"kind": "secondary", "reference": "Sengen (Asama) shrine tradition"}]}
+    ],
+    "faculties": [
+      {"id": "bear-fire-birth", "name": "Give birth unharmed within fire", "term": {"value": "火中出産", "script": "Japanese (kanji)", "rom": "kachū shussan"}, "inheritability": "none", "notes": "Bore Ninigi's sons in a blazing hut to prove their parentage.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 1, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}], "weight": "primary"}],
+    "notes": "Blossom princess, wife of Ninigi and tutelary deity of Mount Fuji."
+  },
+  {
+    "id": "japanese_inari",
+    "name": {"primary": "Inari", "alt": ["Inari Ōkami", "Uka-no-Mitama"], "transliterations": {"chinese": "稲荷", "japanese": "稲荷大神", "korean": "이나리"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "rice", "contextTag": "lifelong", "term": {"value": "稲", "script": "Japanese (kanji)", "rom": "ine"}, "sources": [{"kind": "primary", "reference": "Yamashiro no Kuni Fudoki (fragment), 8th c. CE"}]},
+      {"sphereId": "prosperity", "contextTag": "lifelong", "term": {"value": "商売繁盛", "script": "Japanese (kanji)", "rom": "shōbai hanjō"}, "sources": [{"kind": "secondary", "reference": "Fushimi Inari-taisha tradition"}]}
+    ],
+    "faculties": [
+      {"id": "grant-harvest", "name": "Grant abundant rice and prosperity", "term": {"value": "五穀豊穣", "script": "Japanese (kanji)", "rom": "gokoku hōjō"}, "inheritability": "none", "notes": "Bestows good harvests and commercial success on devotees.", "sources": [{"kind": "secondary", "reference": "Fushimi Inari-taisha tradition"}]}
+    ],
+    "materialCulture": [
+      {"id": "fox-messengers", "kind": "object", "name": "Fox messengers", "term": {"value": "狐", "script": "Japanese (kanji)", "rom": "kitsune"}, "role": "owner", "notes": "White foxes serve as Inari's sacred messengers (myōbu).", "sources": [{"kind": "secondary", "reference": "Fushimi Inari-taisha tradition"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Yamashiro no Kuni Fudoki (fragment), 8th c. CE"}, {"kind": "secondary", "reference": "Fushimi Inari-taisha tradition, est. 711 CE"}], "weight": "primary"}],
+    "notes": "Kami of rice, agriculture, and commerce, served by fox messengers."
+  },
+  {
+    "id": "japanese_raijin",
+    "name": {"primary": "Raijin", "alt": ["Raiden", "Kaminari-sama", "Narukami"], "transliterations": {"chinese": "雷神", "japanese": "雷神", "korean": "라이진"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "thunder", "contextTag": "lifelong", "term": {"value": "雷", "script": "Japanese (kanji)", "rom": "kaminari"}, "sources": [{"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE (thunder-kami of Yomi)"}]},
+      {"sphereId": "lightning", "contextTag": "lifelong", "term": {"value": "稲妻", "script": "Japanese (kanji)", "rom": "inazuma"}, "sources": [{"kind": "secondary", "reference": "Japanese folk-religion tradition"}]}
+    ],
+    "faculties": [
+      {"id": "drum-thunder", "name": "Produce thunder by beating drums", "term": {"value": "太鼓を打つ", "script": "Japanese (kanji)", "rom": "taiko o utsu"}, "inheritability": "none", "notes": "Strikes a ring of taiko drums to make thunder.", "sources": [{"kind": "secondary", "reference": "Japanese folk-religion tradition"}]}
+    ],
+    "materialCulture": [
+      {"id": "thunder-drum-ring", "kind": "object", "name": "Ring of thunder drums", "term": {"value": "太鼓", "script": "Japanese (kanji)", "rom": "taiko"}, "role": "wielder", "notes": "Circle of drums beaten to loose thunderclaps.", "sources": [{"kind": "secondary", "reference": "Japanese folk-religion iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Nihon Shoki, vol. 1, 720 CE"}, {"kind": "secondary", "reference": "Japanese folk-religion tradition"}], "weight": "primary"}],
+    "notes": "God of thunder and lightning, drumming storms from the sky."
+  },
+  {
+    "id": "japanese_fujin",
+    "name": {"primary": "Fūjin", "alt": ["Futen", "Kaze-no-kami"], "transliterations": {"chinese": "風神", "japanese": "風神", "korean": "후진"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "wind", "contextTag": "lifelong", "term": {"value": "風", "script": "Japanese (kanji)", "rom": "kaze"}, "sources": [{"kind": "secondary", "reference": "Japanese folk-religion tradition; Tawaraya Sōtatsu screen, 17th c."}]}
+    ],
+    "faculties": [
+      {"id": "unleash-winds", "name": "Unleash the winds from a great bag", "term": {"value": "風袋", "script": "Japanese (kanji)", "rom": "fūtai"}, "inheritability": "none", "notes": "Carries a bag of winds released to make gales.", "sources": [{"kind": "secondary", "reference": "Japanese folk-religion iconography"}]}
+    ],
+    "materialCulture": [
+      {"id": "wind-bag", "kind": "object", "name": "Bag of winds", "term": {"value": "風袋", "script": "Japanese (kanji)", "rom": "fūtai"}, "role": "wielder", "notes": "Sack borne over the shoulders from which winds blow.", "sources": [{"kind": "secondary", "reference": "Japanese folk-religion iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "secondary", "reference": "Japanese folk-religion tradition; Buddhist iconographic transmission"}], "weight": "secondary"}],
+    "notes": "God of the wind, eternal counterpart of Raijin, bearer of the wind-bag."
+  },
+  {
+    "id": "japanese_benzaiten",
+    "name": {"primary": "Benzaiten", "alt": ["Benten", "Sarasvati"], "transliterations": {"chinese": "弁才天", "japanese": "弁才天／弁財天", "korean": "벤자이텐"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "music", "contextTag": "lifelong", "term": {"value": "音楽", "script": "Japanese (kanji)", "rom": "ongaku"}, "sources": [{"kind": "primary", "reference": "Konkōmyō-kyō (Golden Light Sutra), Japanese transmission 8th c."}]},
+      {"sphereId": "eloquence", "contextTag": "lifelong", "term": {"value": "弁舌", "script": "Japanese (kanji)", "rom": "benzetsu"}, "sources": [{"kind": "primary", "reference": "Konkōmyō-kyō (Golden Light Sutra), Japanese transmission 8th c."}]}
+    ],
+    "faculties": [
+      {"id": "inspire-arts", "name": "Inspire music, words, and knowledge", "term": {"value": "技芸を授ける", "script": "Japanese (kanji)", "rom": "gigei o sazukeru"}, "inheritability": "none", "notes": "Grants eloquence, artistry, and wisdom to her devotees.", "sources": [{"kind": "primary", "reference": "Konkōmyō-kyō (Golden Light Sutra), 8th c."}]}
+    ],
+    "materialCulture": [
+      {"id": "biwa-lute", "kind": "object", "name": "Biwa lute", "term": {"value": "琵琶", "script": "Japanese (kanji)", "rom": "biwa"}, "role": "owner", "notes": "The lute she plays as goddess of music and the arts.", "sources": [{"kind": "secondary", "reference": "Japanese Benzaiten iconographic tradition"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Konkōmyō-kyō (Golden Light Sutra), Japanese transmission 8th c."}, {"kind": "secondary", "reference": "Shichifukujin tradition"}], "weight": "primary"}],
+    "notes": "Goddess of music, eloquence, and arts; only female of the Seven Lucky Gods."
+  },
+  {
+    "id": "japanese_ryujin",
+    "name": {"primary": "Ryūjin", "alt": ["Watatsumi", "Ōwatatsumi", "Dragon God of the Sea"], "transliterations": {"chinese": "龍神", "japanese": "龍神", "korean": "류진"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Japanese",
+    "primaryTradition": "Japanese",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "sea", "contextTag": "lifelong", "term": {"value": "海", "script": "Japanese (kanji)", "rom": "umi"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 2, 712 CE (as Watatsumi)"}]},
+      {"sphereId": "tides", "contextTag": "lifelong", "term": {"value": "潮", "script": "Japanese (kanji)", "rom": "shio"}, "sources": [{"kind": "primary", "reference": "Kojiki, vol. 2, 712 CE"}]}
+    ],
+    "faculties": [
+      {"id": "command-tides", "name": "Command the ocean tides", "term": {"value": "潮を操る", "script": "Japanese (kanji)", "rom": "shio o ayatsuru"}, "inheritability": "none", "notes": "Rules the tides from his undersea dragon palace.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 2, 712 CE"}]}
+    ],
+    "materialCulture": [
+      {"id": "tide-jewels", "kind": "object", "name": "Tide-ruling jewels", "term": {"value": "潮満珠・潮干珠", "script": "Japanese (kanji)", "rom": "shiomitsu-tama / shiohiru-tama"}, "role": "owner", "notes": "Jewels that raise and lower the tides, lent to Hoori.", "sources": [{"kind": "primary", "reference": "Kojiki, vol. 2, 712 CE"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Kojiki, vol. 2, 712 CE"}, {"kind": "primary", "reference": "Nihon Shoki, vol. 2, 720 CE"}], "weight": "primary"}],
+    "notes": "Dragon god of the sea and tides, dweller of the undersea palace."
+  },
+  {
+    "id": "korean_jumong",
+    "name": {"primary": "Jumong", "alt": ["Dongmyeong of Goguryeo", "Chumong", "Go Jumong"], "transliterations": {"chinese": "朱蒙", "japanese": "朱蒙（チュモン）", "korean": "주몽"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["korean_haemosu", "korean_yuhwa"],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "高句麗", "script": "Korean (hangul)", "rom": "Goguryeo"}, "sources": [{"kind": "primary", "reference": "Samguk Sagi, Goguryeo Annals, 1145"}]},
+      {"sphereId": "archery", "contextTag": "lifelong", "term": {"value": "활쏘기", "script": "Korean (hangul)", "rom": "hwalssogi"}, "sources": [{"kind": "primary", "reference": "Samguk Sagi, Goguryeo Annals, 1145"}]}
+    ],
+    "faculties": [
+      {"id": "peerless-archery", "name": "Shoot with unerring archery", "term": {"value": "신궁", "script": "Korean (hangul)", "rom": "singung"}, "inheritability": "none", "notes": "Named Jumong, 'skilled archer'; hit every mark as a boy.", "sources": [{"kind": "primary", "reference": "Samguk Sagi, Goguryeo Annals, 1145"}]},
+      {"id": "river-crossing-miracle", "name": "Cross rivers by command of fish and turtles", "term": {"value": "어별성교", "script": "Korean (hangul)", "rom": "eobyeol seonggyo"}, "inheritability": "none", "notes": "Fish and turtles formed a bridge so he could flee pursuers.", "sources": [{"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Samguk Sagi, Goguryeo Annals, 1145"}, {"kind": "primary", "reference": "Gwanggaeto Stele, 414 CE"}], "weight": "primary"}],
+    "notes": "Egg-born archer son of Haemosu and Yuhwa; founder-king of Goguryeo."
+  },
+  {
+    "id": "korean_haemosu",
+    "name": {"primary": "Haemosu", "alt": ["Hae Mo-su"], "transliterations": {"chinese": "解慕漱", "japanese": "解慕漱（ヘモス）", "korean": "해모수"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "sun", "contextTag": "lifelong", "term": {"value": "해", "script": "Korean (hangul)", "rom": "hae"}, "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong (Dongmyeongwang-pyeon), 1193"}]},
+      {"sphereId": "sky", "contextTag": "lifelong", "term": {"value": "천제", "script": "Korean (hangul)", "rom": "cheonje"}, "sources": [{"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}]}
+    ],
+    "faculties": [
+      {"id": "ride-dragon-chariot", "name": "Descend in a five-dragon chariot", "term": {"value": "오룡거", "script": "Korean (hangul)", "rom": "oryonggeo"}, "inheritability": "none", "notes": "Son of heaven who came down riding a chariot of five dragons.", "sources": [{"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}]},
+      {"id": "shapeshift-contest", "name": "Outmatch Habaek in shapeshifting", "term": {"value": "변신술", "script": "Korean (hangul)", "rom": "byeonsinsul"}, "inheritability": "none", "notes": "Became otter, wolf, and hawk to win Yuhwa's father's contest.", "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}]}
+    ],
+    "materialCulture": [
+      {"id": "five-dragon-chariot", "kind": "object", "name": "Five-dragon chariot", "term": {"value": "오룡거", "script": "Korean (hangul)", "rom": "oryonggeo"}, "role": "owner", "notes": "Heavenly chariot drawn by five dragons for his descent.", "sources": [{"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}, {"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}], "weight": "primary"}],
+    "notes": "Heavenly sun-god who founded Bukbuyeo and sired Jumong with Yuhwa."
+  },
+  {
+    "id": "korean_yuhwa",
+    "name": {"primary": "Yuhwa", "alt": ["Lady Yuhwa", "Willow Flower"], "transliterations": {"chinese": "柳花", "japanese": "柳花（ユファ）", "korean": "유화"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "female",
+    "vitalStatus": "null",
+    "parentIds": ["korean_habaek"],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "grain", "contextTag": "lifelong", "term": {"value": "곡식", "script": "Korean (hangul)", "rom": "goksik"}, "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}]},
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "어머니", "script": "Korean (hangul)", "rom": "eomeoni"}, "sources": [{"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}]}
+    ],
+    "faculties": [
+      {"id": "sunlight-conception", "name": "Conceive by a beam of sunlight", "term": {"value": "일광감응", "script": "Korean (hangul)", "rom": "ilgwang gameung"}, "inheritability": "none", "notes": "Touched by sunlight, she bore the egg from which Jumong hatched.", "sources": [{"kind": "primary", "reference": "Samguk Sagi, Goguryeo Annals, 1145"}]},
+      {"id": "send-grain-seeds", "name": "Send sacred grain-seeds to her son", "term": {"value": "오곡종자", "script": "Korean (hangul)", "rom": "ogok jongja"}, "inheritability": "none", "notes": "Dispatched the five grains' seeds to Jumong via doves.", "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Samguk Sagi, Goguryeo Annals, 1145"}, {"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}], "weight": "primary"}],
+    "notes": "River-god's daughter and grain goddess; mother of Jumong by sunlight."
+  },
+  {
+    "id": "korean_habaek",
+    "name": {"primary": "Habaek", "alt": ["River Earl", "God of the Yalu"], "transliterations": {"chinese": "河伯", "japanese": "河伯（ハベク）", "korean": "하백"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "rivers", "contextTag": "lifelong", "term": {"value": "강", "script": "Korean (hangul)", "rom": "gang"}, "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}]},
+      {"sphereId": "water", "contextTag": "lifelong", "term": {"value": "물", "script": "Korean (hangul)", "rom": "mul"}, "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}]}
+    ],
+    "faculties": [
+      {"id": "river-shapeshifting", "name": "Transform among river creatures", "term": {"value": "변신술", "script": "Korean (hangul)", "rom": "byeonsinsul"}, "inheritability": "partial", "notes": "Became carp, deer, and quail in his contest with Haemosu.", "sources": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Yi Gyu-bo, Lay of King Dongmyeong, 1193"}, {"kind": "primary", "reference": "Samguk Yusa, vol. 1, late 13th c."}], "weight": "primary"}],
+    "notes": "River god of the Yalu, father of Yuhwa and adversary of Haemosu."
+  },
+  {
+    "id": "korean_cheonjiwang",
+    "name": {"primary": "Cheonji-wang", "alt": ["Heaven-and-Earth King", "Cheonjiwang"], "transliterations": {"chinese": "天地王", "japanese": "天地王（チョンジワン）", "korean": "천지왕"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "term": {"value": "천지", "script": "Korean (hangul)", "rom": "cheonji"}, "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant), recorded 1930s"}]},
+      {"sphereId": "cosmic-order", "contextTag": "lifelong", "term": {"value": "하늘", "script": "Korean (hangul)", "rom": "haneul"}, "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant), recorded 1930s"}]}
+    ],
+    "faculties": [
+      {"id": "order-the-cosmos", "name": "Set heaven and earth in order", "term": {"value": "천지개벽", "script": "Korean (hangul)", "rom": "cheonji gaebyeok"}, "inheritability": "none", "notes": "Descended to order a chaotic world of doubled suns and moons.", "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant)"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant), recorded 1930s"}], "weight": "primary"}],
+    "notes": "Creator sky-king of the Jeju creation myth; father of the star-king twins."
+  },
+  {
+    "id": "korean_daebyeolwang",
+    "name": {"primary": "Daebyeol-wang", "alt": ["Great Star King"], "transliterations": {"chinese": "大別王", "japanese": "大別王（テビョルワン）", "korean": "대별왕"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": ["korean_cheonjiwang"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "death", "contextTag": "lifelong", "term": {"value": "저승", "script": "Korean (hangul)", "rom": "jeoseung"}, "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant)"}]}
+    ],
+    "faculties": [
+      {"id": "rule-the-dead", "name": "Rule the orderly realm of the dead", "term": {"value": "저승 차지", "script": "Korean (hangul)", "rom": "jeoseung chaji"}, "inheritability": "none", "notes": "Won rule of the dead, where law and justice are upright.", "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant)"}]},
+      {"id": "remove-extra-luminaries", "name": "Shoot down the surplus sun and moon", "term": {"value": "해와 달 쏘기", "script": "Korean (hangul)", "rom": "haewa dal ssogi"}, "inheritability": "none", "notes": "With his brother felled the second sun and second moon.", "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant)"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant), recorded 1930s"}], "weight": "primary"}],
+    "notes": "Elder star-king twin who rules the just realm of the dead."
+  },
+  {
+    "id": "korean_sobyeolwang",
+    "name": {"primary": "Sobyeol-wang", "alt": ["Small Star King"], "transliterations": {"chinese": "小別王", "japanese": "小別王（ソビョルワン）", "korean": "소별왕"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "male",
+    "vitalStatus": "null",
+    "parentIds": ["korean_cheonjiwang"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "이승", "script": "Korean (hangul)", "rom": "iseung"}, "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant)"}]}
+    ],
+    "faculties": [
+      {"id": "rule-the-living", "name": "Rule the flawed world of the living", "term": {"value": "이승 차지", "script": "Korean (hangul)", "rom": "iseung chaji"}, "inheritability": "none", "notes": "Won rule of the living by trickery, leaving it full of strife.", "sources": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant)"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Cheonjiwang Bonpuri (Jeju shamanic chant), recorded 1930s"}], "weight": "primary"}],
+    "notes": "Younger star-king twin who won the living world through deceit."
+  },
+  {
+    "id": "korean_jacheongbi",
+    "name": {"primary": "Jacheongbi", "alt": ["Goddess of Agriculture", "Segyeong"], "transliterations": {"chinese": "自請婢", "japanese": "自請婢（チャチョンビ）", "korean": "자청비"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Korean",
+    "primaryTradition": "Korean",
+    "sex": "female",
+    "vitalStatus": "null",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "agriculture", "contextTag": "lifelong", "term": {"value": "농경", "script": "Korean (hangul)", "rom": "nonggyeong"}, "sources": [{"kind": "primary", "reference": "Segyeong Bonpuri (Jeju shamanic chant), recorded 20th c."}]},
+      {"sphereId": "grain", "contextTag": "lifelong", "term": {"value": "오곡", "script": "Korean (hangul)", "rom": "ogok"}, "sources": [{"kind": "primary", "reference": "Segyeong Bonpuri (Jeju shamanic chant), recorded 20th c."}]}
+    ],
+    "faculties": [
+      {"id": "bring-five-grains", "name": "Bring the five grains down to humanity", "term": {"value": "오곡 전래", "script": "Korean (hangul)", "rom": "ogok jeollae"}, "inheritability": "none", "notes": "Descended from heaven bearing the five grains' seeds.", "sources": [{"kind": "primary", "reference": "Segyeong Bonpuri (Jeju shamanic chant), recorded 20th c."}]},
+      {"id": "underworld-revival", "name": "Revive the dead with the herb of life", "term": {"value": "환생꽃", "script": "Korean (hangul)", "rom": "hwansaeng-kkot"}, "inheritability": "none", "notes": "Won resurrection flowers in the underworld to revive a servant.", "sources": [{"kind": "primary", "reference": "Segyeong Bonpuri (Jeju shamanic chant), recorded 20th c."}]}
+    ],
+    "materialCulture": [
+      {"id": "resurrection-flowers", "kind": "object", "name": "Flowers of resurrection", "term": {"value": "환생꽃", "script": "Korean (hangul)", "rom": "hwansaeng-kkot"}, "role": "owner", "notes": "Life-restoring flowers obtained from the Western Sky garden.", "sources": [{"kind": "primary", "reference": "Segyeong Bonpuri (Jeju shamanic chant), recorded 20th c."}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Segyeong Bonpuri (Jeju shamanic chant), recorded 20th c."}], "weight": "primary"}],
+    "notes": "Cross-dressing heroine goddess of farming who brought the five grains."
+  }
+]
+```

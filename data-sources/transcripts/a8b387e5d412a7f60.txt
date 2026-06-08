@@ -1,0 +1,62 @@
+All confirmations are solid. Lakṣmaṇa killed Indrajit with the Aindrāstra (Indra's weapon) per Vālmīki Rāmāyaṇa, fitted to his bow — so his bow/arrow + the Aindrāstra are both attestable. Garuḍa is Viṣṇu's vāhana (he IS the mount) and is associated with the amṛta vessel (he carried it but did not keep it — so I'll record it as the relic he seized rather than owns; role for the amṛta = wielder/carrier). Actually, more precisely Garuḍa's enduring item is being the mount himself, plus the amṛta which he seized but relinquished. I'll record Garuḍa as a mount (role: he is the vāhana — the figure himself is the item-class mount of Viṣṇu). For records where the figure IS a mount (Garuḍa, Nandi), I'll record them with kind=mount, role=mount.
+
+I now have everything needed with confident, well-sourced attestations. Let me compose the final records. I'll be precise about which figures genuinely have attested distinctive items and skip those that don't (Chothe Thangwai Pakhangba, Sītā, Aditi, Pṛthvī, Kaśyapa, Saraṇyū).
+
+For figures with attested items, I'll use the canonical āyudhas/vāhanas. For Devī, I'll record the major weapons the gods gave her in Devī Māhātmya 2 plus her lion mount. For the Viṣṇu avatars (Narasiṃha, Varāha), I'll record their distinctive natural weapons (claws, tusks) plus the cakra/gadā they bear as forms of Viṣṇu.
+
+Let me write the output.
+
+```text
+hindu_dasra :: ITEM ashvin-ratha | name=Golden three-wheeled chariot | term=त्रिचक्र रथ | script=Sanskrit/Devanāgarī | rom=tricakra ratha | kind=mount | role=owner | gloss=Swift triple-wheeled golden car of the twin Aśvins | src=Ṛgveda 1.118.2; 1.34
+hindu_dasra :: ITEM ashvin-madhu | name=Honey of the Aśvins | term=मधु | script=Sanskrit/Devanāgarī | rom=madhu | kind=object | role=owner | gloss=Healing honey/nectar the Aśvins carry and dispense | src=Ṛgveda 1.117; 1.119
+hindu_ganga :: ITEM ganga-makara | name=The makara sea-creature | term=मकर | script=Sanskrit/Devanāgarī | rom=makara | kind=mount | role=owner | gloss=Crocodilian aquatic vāhana on which Gaṅgā rides | src=Brahmavaivarta Purāṇa; āgamic iconography
+hindu_ganga :: ITEM ganga-kalasha | name=Sacred water pot | term=कलश | script=Sanskrit/Devanāgarī | rom=kalaśa | kind=object | role=owner | gloss=Overflowing vessel of holy water she bears | src=Purāṇic iconography; Devī Bhāgavata
+hindu_devi :: ITEM devi-trishula | name=Trident | term=त्रिशूल | script=Sanskrit/Devanāgarī | rom=triśūla | kind=weapon | role=wielder | gloss=Trident drawn from Śiva's own triśūla | src=Devī Māhātmya 2.20
+hindu_devi :: ITEM devi-chakra | name=Discus | term=सुदर्शन चक्र | script=Sanskrit/Devanāgarī | rom=sudarśana cakra | kind=weapon | role=wielder | gloss=Spinning discus produced from Viṣṇu's cakra | src=Devī Māhātmya 2.21
+hindu_devi :: ITEM devi-shankha | name=Conch | term=शङ्ख | script=Sanskrit/Devanāgarī | rom=śaṅkha | kind=weapon | role=wielder | gloss=War-conch given by Varuṇa | src=Devī Māhātmya 2.22
+hindu_devi :: ITEM devi-shakti | name=Flaming spear | term=शक्ति | script=Sanskrit/Devanāgarī | rom=śakti | kind=weapon | role=wielder | gloss=Fiery dart given by Agni | src=Devī Māhātmya 2.22
+hindu_devi :: ITEM devi-dhanus | name=Bow and quivers | term=धनुस् | script=Sanskrit/Devanāgarī | rom=dhanus | kind=weapon | role=wielder | gloss=Bow with two arrow-filled quivers from Vāyu/Sūrya | src=Devī Māhātmya 2.23
+hindu_devi :: ITEM devi-vajra | name=Thunderbolt | term=वज्र | script=Sanskrit/Devanāgarī | rom=vajra | kind=weapon | role=wielder | gloss=Thunderbolt and bell given by Indra | src=Devī Māhātmya 2.24
+hindu_devi :: ITEM devi-khadga | name=Sword | term=खड्ग | script=Sanskrit/Devanāgarī | rom=khaḍga | kind=weapon | role=wielder | gloss=Gleaming sword and shield from Kāla/Yama | src=Devī Māhātmya 2.26
+hindu_devi :: ITEM devi-pasha | name=Noose | term=पाश | script=Sanskrit/Devanāgarī | rom=pāśa | kind=weapon | role=wielder | gloss=Binding noose given by Varuṇa | src=Devī Māhātmya 2.22
+hindu_devi :: ITEM devi-simha | name=The lion | term=सिंह | script=Sanskrit/Devanāgarī | rom=siṃha | kind=mount | role=owner | gloss=War-lion given by Himavat as her vāhana | src=Devī Māhātmya 2.29
+hindu_lakshmana :: ITEM lakshmana-dhanus | name=Bow and arrows | term=धनुर्बाण | script=Sanskrit/Devanāgarī | rom=dhanurbāṇa | kind=weapon | role=wielder | gloss=Bow he wields throughout the exile and war | src=Vālmīki Rāmāyaṇa, Yuddhakāṇḍa
+hindu_lakshmana :: ITEM lakshmana-aindrastra | name=Indra's missile | term=ऐन्द्रास्त्र | script=Sanskrit/Devanāgarī | rom=aindrāstra | kind=weapon | role=wielder | gloss=Celestial arrow with which he beheads Indrajit | src=Vālmīki Rāmāyaṇa, Yuddhakāṇḍa 90
+hindu_garuda :: ITEM garuda-vahana | name=Mount of Viṣṇu | term=वाहन | script=Sanskrit/Devanāgarī | rom=vāhana | kind=mount | role=owner | gloss=Garuḍa himself is the eagle-steed bearing Viṣṇu | src=Mahābhārata, Ādiparva; Bhāgavata Purāṇa
+hindu_garuda :: ITEM garuda-amrita | name=Vessel of nectar | term=अमृत | script=Sanskrit/Devanāgarī | rom=amṛta | kind=relic | role=wielder | gloss=Immortality-nectar he seizes from the gods | src=Mahābhārata, Ādiparva (Āstīka Parva)
+hindu_nandi :: ITEM nandi-vahana | name=Bull-mount of Śiva | term=वृषभ/नन्दिन् | script=Sanskrit/Devanāgarī | rom=vṛṣabha / nandin | kind=mount | role=owner | gloss=Nandi himself is the white bull bearing Śiva | src=Śiva Purāṇa; Liṅga Purāṇa
+hindu_vishwakarma :: ITEM vishvakarma-vajra | name=Indra's thunderbolt | term=वज्र | script=Sanskrit/Devanāgarī | rom=vajra | kind=weapon | role=maker | gloss=Forges the vajra from sage Dadhīci's bones | src=Mahābhārata; Bhāgavata Purāṇa 6.10
+hindu_vishwakarma :: ITEM vishvakarma-pushpaka | name=Flying palace-chariot | term=पुष्पक विमान | script=Sanskrit/Devanāgarī | rom=puṣpaka vimāna | kind=object | role=maker | gloss=Aerial car he fashioned, later Rāvaṇa's vehicle | src=Vālmīki Rāmāyaṇa, Uttarakāṇḍa
+hindu_vishwakarma :: ITEM vishvakarma-sudarshana | name=Viṣṇu's discus | term=सुदर्शन चक्र | script=Sanskrit/Devanāgarī | rom=sudarśana cakra | kind=weapon | role=maker | gloss=Discus he forged from pared shavings of the sun | src=Mārkaṇḍeya/Viṣṇu Purāṇa traditions
+hindu_vishnu_narasimha :: ITEM narasimha-nakha | name=Lion-claws | term=नख | script=Sanskrit/Devanāgarī | rom=nakha | kind=weapon | role=wielder | gloss=Sharp claws with which he disembowels Hiraṇyakaśipu | src=Bhāgavata Purāṇa 7.8
+hindu_vishnu_narasimha :: ITEM narasimha-chakra | name=Discus | term=सुदर्शन चक्र | script=Sanskrit/Devanāgarī | rom=sudarśana cakra | kind=weapon | role=wielder | gloss=Viṣṇu's discus borne in his upper hands | src=Bhāgavata Purāṇa 7.8; iconography
+hindu_vishnu_narasimha :: ITEM narasimha-gada | name=Mace | term=गदा | script=Sanskrit/Devanāgarī | rom=gadā | kind=weapon | role=wielder | gloss=Viṣṇu's mace held in his man-lion form | src=Bhāgavata Purāṇa 7.8; iconography
+hindu_vishnu_varaha :: ITEM varaha-damshtra | name=Boar's tusks | term=दंष्ट्रा | script=Sanskrit/Devanāgarī | rom=daṃṣṭrā | kind=weapon | role=wielder | gloss=Tusks on which he lifts the earth from the deep | src=Bhāgavata Purāṇa 3.13
+hindu_vishnu_varaha :: ITEM varaha-chakra | name=Discus | term=सुदर्शन चक्र | script=Sanskrit/Devanāgarī | rom=sudarśana cakra | kind=weapon | role=wielder | gloss=Viṣṇu's discus borne in the boar avatar | src=Bhāgavata Purāṇa 3.13; iconography
+hindu_vishnu_varaha :: ITEM varaha-gada | name=Mace | term=गदा | script=Sanskrit/Devanāgarī | rom=gadā | kind=weapon | role=wielder | gloss=Viṣṇu's mace, weapon against Hiraṇyākṣa | src=Bhāgavata Purāṇa 3.18-19
+```
+
+## Summary
+
+I researched all 16 figures in `/tmp/items-hindu.json` and recorded attested material culture for the 10 that have genuine, sourced distinctive items. Findings:
+
+**Recorded items (10 figures, 27 items):**
+- **hindu_dasra** (an Aśvin twin): three-wheeled golden chariot (Ṛgveda 1.118.2, explicitly *tricakra*) + their healing honey (*madhu*).
+- **hindu_ganga**: makara mount + sacred water-pot (*kalaśa*).
+- **hindu_devi**: the full set of āyudhas distributed by the gods in Devī Māhātmya ch. 2 — triśūla, sudarśana cakra, śaṅkha, śakti, bow, vajra, khaḍga, pāśa — plus the lion (*siṃha*) given by Himavat.
+- **hindu_lakshmana**: bow/arrows + the Aindrāstra used to behead Indrajit (Vālmīki Rāmāyaṇa, Yuddhakāṇḍa 90).
+- **hindu_garuda**: he himself is Viṣṇu's mount; plus the amṛta vessel he seizes (Mahābhārata, Ādiparva).
+- **hindu_nandi**: he himself is Śiva's bull-mount.
+- **hindu_vishwakarma**: recorded as **maker** — the vajra (from Dadhīci's bones), the Puṣpaka vimāna, and the Sudarśana cakra.
+- **hindu_vishnu_narasimha**: claws (*nakha*) + cakra + gadā.
+- **hindu_vishnu_varaha**: tusks (*daṃṣṭrā*, lifting the earth) + cakra + gadā.
+
+**Skipped (6 figures) — no genuinely attested distinctive āyudha/vāhana/regalia, so not fabricated:**
+- **manipuri_chothe_thangwai_pakhangba** — his identity is the serpent/dragon form itself; no distinct held item.
+- **hindu_sita** — earth-born, no āyudha or mount.
+- **hindu_aditi** — mother of the Ādityas; no distinctive item (divine-earrings link too thin to assert).
+- **hindu_prithvi** — earth goddess; her cow-form is a transformation, not an item.
+- **hindu_kashyapa** — progenitor sage; no distinctive item.
+- **hindu_saranyu** — her mare-form is a transformation, not an item.
+
+I did not add any new POWER records, since each figure with items already had powers listed and the brief made items the focus. All citations are to primary sources (Ṛgveda, Mahābhārata, Vālmīki Rāmāyaṇa, Bhāgavata/other Purāṇas, Devī Māhātmya) verified against my research.

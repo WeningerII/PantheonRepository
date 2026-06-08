@@ -1,0 +1,51 @@
+Confirmed:
+- **Lemminkäinen** takes "his father's sword of magic" (Crawford, Rune XXVI) before going to Pohjola — he is the **heir/wielder** of his father's sword. Finnish: *miekka* (sword); "father's sword" = *isän miekka*. Solid attestation.
+- **Uryzmæg**: no distinctive named weapon/possession attested for the Cyclops episode. **SKIP** confirmed.
+
+I now have my four solidly-attested records. Let me finalize the native terms precisely:
+
+1. **irish_sualtam** — Shield. Old Irish: *scíath*. He falls on its sharpened rim/edge and his severed head is carried back on it, still shouting the warning (Táin Bó Cúailnge). Role: owner/wielder. Kind: armor (a shield is defensive armor/equipment).
+
+2. **welsh_lludd_llaw_eraint** — Two items:
+   - Cauldron of mead. Middle Welsh: *peir* (modern *pair*); mead = *medd*. Set in a pit at the island's centre to trap/intoxicate the two dragons. Role: owner/maker (he had it made). Kind: object/relic. → I'll classify as object (vessel).
+   - Stone chest. Middle Welsh: *cist (f)aen* (*kist uaen*), "kistvaen." The intoxicated dragons are wrapped and buried in it at Dinas Emrys. Role: owner. Kind: object/relic. → relic (it becomes one of the "Three Concealments").
+
+3. **finnish_lemminkainen** — Sword (his father's magic broadsword). Finnish: *miekka*. He wields it to behead the master of Pohjola. Role: heir (inherited from his father) / wielder. Kind: weapon.
+
+4. **finnish_aino** — Gold cross-brooch and ornaments she sheds on the shore before drowning. Finnish: *risti* (cross/brooch), distinctively the gold cross *kultaristi*; rings *sormukset*; necklace-beads *helmet*. Role: owner/wearer. Kind: garment (ornament/jewelry). I'll lead with the gold breast-cross as the distinctive named item.
+
+Let me reconsider whether I'm being appropriately exhaustive vs. over-conservative. The task says "Be exhaustive about REAL attested items." Let me reconsider two borderline cases I skipped where the item IS narratively central and attested, just not "regalia":
+
+- **Lludd** against the Coraniaid uses water in which crushed insects/vermin are steeped (he macerates the magic insects given by Llefelys in water and sprinkles it). That's a substance/concoction, not really a durable item. It's borderline as an "object." The roster power explicitly says "Destroys the Coraniaid with poisoned insect-water." This is attested. But "poisoned insect-water" is a one-use potion, not material culture (weapon/armor/horse/relic/object). I'll leave it out — the cauldron and stone chest are stronger and clearly "objects."
+
+I'm confident in the four records (5 item-lines). These are the genuinely attested, distinctively-tied items. All other roster figures lack distinctive attested material culture and are correctly skipped.
+
+Let me produce the final output.
+
+```text
+irish_sualtam :: ITEM sualtam-shield | name=Sualtam's shield | term=scíath | script=Old Irish | rom=scíath | kind=armor | role=owner | gloss=Falls on its sharp rim; his severed head shouts the warning atop it | src=Táin Bó Cúailnge (Recension I/II, ed. C. O'Rahilly), "Long Warning of Sualtaim"
+welsh_lludd_llaw_eraint :: ITEM lludd-cauldron-mead | name=Cauldron of mead | term=peir (medd) | script=Middle Welsh | rom=peir | kind=object | role=owner | gloss=Mead-filled vat sunk at Britain's centre to intoxicate the two dragons | src=Cyfranc Lludd a Llefelys (ed. B.F. Roberts 1975); Mabinogion
+welsh_lludd_llaw_eraint :: ITEM lludd-stone-chest | name=Stone chest | term=cist faen | script=Middle Welsh | rom=cist faen (kist uaen) | kind=relic | role=owner | gloss=Stone coffer in which he buries the sleeping dragons at Dinas Emrys | src=Cyfranc Lludd a Llefelys (ed. B.F. Roberts 1975); Mabinogion
+finnish_lemminkainen :: ITEM lemminkainen-fathers-sword | name=His father's magic sword | term=miekka (isän miekka) | script=Finnish | rom=miekka | kind=weapon | role=heir | gloss=Inherited fiery broadsword with which he beheads Pohjola's master | src=Kalevala, Runo XXVI–XXVII (Lönnrot)
+finnish_aino :: ITEM aino-gold-cross | name=Gold breast-cross and ornaments | term=kultaristi (risti, helmet, sormukset) | script=Finnish | rom=kultaristi | kind=garment | role=wearer | gloss=Cross, beads and rings she strips on the shore before drowning | src=Kalevala, Runo IV "Riisti ristin rinnaltansa…" (Lönnrot)
+```
+
+Summary of research:
+
+I researched all 19 roster figures against scholarly/primary sources. Only 4 figures have genuinely distinctive, attested material culture; I recorded 5 item-lines for them. The rest were correctly skipped (no fabrication).
+
+Items found (attested):
+- Sualtam mac Róich — his shield (scíath), Táin Bó Cúailnge: he falls on its sharpened rim and his severed head keeps shouting borne on it.
+- Lludd Llaw Eraint — the cauldron/vat of mead (peir/medd) sunk at Britain's centre to trap the dragons, and the stone chest (cist faen) in which he buries them at Dinas Emrys (Cyfranc Lludd a Llefelys / Mabinogion).
+- Lemminkäinen — his father's inherited fiery magic sword (miekka), which beheads the master of Pohjola (Kalevala Runo XXVI–XXVII).
+- Aino — the gold breast-cross and ornaments (kultaristi/risti, helmet beads, sormukset rings) she strips on the shore before drowning (Kalevala Runo IV).
+
+Deliberately skipped (no distinctive attested item — avoided fabrication):
+- armenian_baghdasar: the Lightning Sword (T'ur Ketsaki) and horse Kurkik Jalali belong to his twin Sanasar, not Baghdasar. Baghdasar has no distinctive attested item. (Several search summaries hallucinated a "bow strung with silver hair" for him — I rejected it as unsourced fanfiction.)
+- Lludd's "silver hand" (Llaw Eraint) is only an inherited epithet from Nudd/Nuada with no prosthesis story in the Welsh tale — not listed.
+- ossetian_akhsar / akhsartaeg: only a generic bow-and-arrow and the Narts' communal apple tree — nothing distinctive/named.
+- ossetian_uryzmaeg: the Cyclops-episode ram-skin is an improvised disguise, not personal regalia; no named possession attested there.
+- kartvelian_sulkalmakhi, darejan, badri, usup: the famous sword belongs to Amirani, not his foster-family; no distinctive items for these four.
+- irish_mongan, armenian_aram, armenian_anushavan_sosanver, welsh_branwen (trained starling = a creature, not material culture), welsh_manawydan (craftsman, no signature artifact), welsh_taliesin (the "Chair"/golden seat is otherworld imagery, not an owned object): no distinctive attested material item.
+
+Tooling note: WebFetch and direct curl are blocked in this environment (host allowlist / 403), so all terms were verified via WebSearch snippets against primary editions (O'Rahilly's Táin, Roberts' Cyfranc Lludd a Llefelys, Lönnrot's Kalevala original Finnish) rather than full-page fetches.

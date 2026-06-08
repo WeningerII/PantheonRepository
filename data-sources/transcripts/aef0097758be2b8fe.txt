@@ -1,0 +1,101 @@
+I have sufficient, well-sourced attestation. Final decisions on the borderline cases:
+
+- **Fon Sakpata**: The clean, African-attested distinctive emblem is hard to pin to a precise Fon native term from reliable ethnography; the rich regalia (xaxará broom, mariwó raffia) is primarily diaspora-recorded. To honor the "do not fabricate / honesty about thin attestation" rule, I'll record only his one clearly-attested African emblem cautiously — the **perforated earthen pot/sacred earth** is generic. I'll **SKIP Sakpata's items** rather than risk a coinage, since I cannot cite a precise Fon term for a distinctive object. (This is the honest call.)
+
+- **Kushite Amani**: The **ram** is overwhelmingly attested as the emblem of Amun of Napata/Gebel Barkal — ram-headed amulets, ram's-head pendant necklaces worn by Kushite kings, and criosphinxes. Also the **double uraeus** (two cobras) as distinctive Kushite royal regalia tied to the god-sanctioned kingship. These are strong, attested (Kushite royal iconography, Jebel Barkal). Native term: Egyptian/Meroitic "Amani/Imn"; the ram = "ba" but I'll give the emblem in plain English with the criosphinx/ram-head note. The Meroitic name form is "Amani" (as in Amanishakheto etc.).
+
+Let me reconsider the **double uraeus** — that's royal regalia of the Kushite KING, sanctioned by Amani, not the god's own item. The god's own emblem is the ram. I'll record the ram (animal/emblem) for Amani, and the ram-headed amulet as a relic/regalia of his cult. I'll keep the uraeus out as it's the king's, not the deity's.
+
+Now let me also reconsider **Mawu-Lisa**: crescent moon (Mawu, attested via the Abomey statue per Herskovits/Mercier) and the chameleon sacred to Lisa (attested, Herskovits). Both good. The cosmic serpent Aido-Hwedo is Dan's, so I'll keep that under fon_dan.
+
+And **fon_dan**: the rainbow/serpent Aido-Hwedo (Dã Ayidohwɛdo) — coiled cosmic serpent supporting the earth, manifest as the rainbow. Emblem=serpent, also the python and the rainbow. Attested (Herskovits).
+
+I'm confident. Let me compile the final output. I'll use proper diacritics and romanization, cite the ethnographers, keep glosses ≤14 words, and use clean lowercase-hyphenated ids.
+
+One note on native-term scripts: for Yoruba I'll give tone marks; Fon (Fongbe) Latin; Twi Latin; Zulu Latin; Dholuo/Collo (Shilluk = Collo/dhøg cøllø) Latin; Kimbundu Latin; Kinyarwanda Latin; Edo Latin; Kushite = Egyptian/Meroitic.
+
+Here is my final compiled registry.
+
+```text
+olokun :: ITEM olokun-beads | name=Coral and glass beads | term=ìlẹkẹ | script=Yoruba/Latin | rom=ìlẹ̀kẹ̀ | kind=emblem | role=owner | gloss=Sea-deity is source and owner of sacred beads | src=Idowu, Olódùmarè (1962); Drewal, Yoruba bead studies
+olokun :: ITEM olokun-cloth | name=Woven cloth and loom | term=aṣọ | script=Yoruba/Latin | rom=aṣọ | kind=emblem | role=maker | gloss=Peerless weaver who challenged Olódùmarè to cloth-contest | src=Yoruba oral tradition (Olokun–Olorun weaving myth)
+olokun :: ITEM olokun-chains | name=Seven silver chains | term=ẹ̀wọ̀n fàdákà méje | script=Yoruba/Latin | rom=ẹ̀wọ̀n fàdákà méje | kind=relic | role=owner | gloss=Bound at ocean floor by Ọbàtálá after flood | src=Yoruba flood myth (Olokun bound by Ọbàtálá)
+
+edo_olokun :: ITEM edoolokun-coral | name=Coral-bead regalia | term=ivie | script=Edo/Latin | rom=ivie | kind=regalia | role=owner | gloss=Coral crown and beads Ẹwuarẹ took from Olokun | src=Egharevba, Short History of Benin; Ben-Amos, Art of Benin
+edo_olokun :: ITEM edoolokun-mudfish | name=Mudfish emblem | term=ezeken | script=Edo/Latin | rom=eziza/eken | kind=emblem | role=owner | gloss=Land-and-water mudfish signifies dual human-divine nature | src=Ben-Amos, Art of Benin (1980)
+edo_olokun :: ITEM edoolokun-chalk | name=White river chalk | term=orhue | script=Edo/Latin | rom=orhue | kind=object | role=owner | gloss=Kaolin of ritual purity sacred to Olokun | src=Bradbury, Benin Studies; Edo ethnography
+edo_olokun :: ITEM edoolokun-mudfigures | name=Mud shrine figures and waterpots | term=uru | script=Edo/Latin | rom=uru | kind=object | role=owner | gloss=Life-size river-clay figures of Olokun and wives | src=Ben-Amos, Art of Benin (1980)
+
+edo_osanobua :: ITEM osanobua-snail | name=Snail shell of creation | term=ighan | script=Edo/Latin | rom=ighan | kind=relic | role=owner | gloss=Upturned shell poured sand to make dry land | src=Bradbury, The Benin Kingdom (1957)
+
+edo_esu :: ITEM edoesu-mound | name=Clay mound and inverted pot | term=ọkụta/ame | script=Edo/Latin | rom=ame | kind=object | role=owner | gloss=Terracotta mound or upturned pot embodies Esu | src=Edo ethnography (Encyclopedia of Edo Religion); Bradbury
+
+fon_gu :: ITEM gu-iron | name=Iron sword and implements | term=gubasa | script=Fon/Latin | rom=gubasa | kind=weapon | role=owner | gloss=Sabre praised: the road is closed, Gu opens it | src=Herskovits, Dahomey (1938) II:134-5
+fon_gu :: ITEM gu-smithing | name=Smith's forge and tools | term=zogbede | script=Fon/Latin | rom=zogbɛdɛ | kind=tool | role=maker | gloss=Patron and maker of all iron and metalwork | src=Herskovits, Dahomey (1938)
+
+fon_dan :: ITEM dan-serpent | name=Coiled rainbow serpent | term=Dan Ayidohwɛdo | script=Fon/Latin | rom=Dã Ayidohwɛdo | kind=emblem | role=owner | gloss=Cosmic python coiled beneath earth, seen as rainbow | src=Herskovits, Dahomey (1938)
+
+fon_legba :: ITEM legba-mound | name=Clay/laterite shrine mound | term=Legba kpota | script=Fon/Latin | rom=Legba | kind=object | role=owner | gloss=Cowrie-studded phallic earthen mound at compound gate | src=Herskovits, Dahomey (1938)
+fon_legba :: ITEM legba-stick | name=Phallic staff | term=— | script=Fon/Latin | rom=— | kind=emblem | role=owner | gloss=Exaggerated phallus marking the threshold guardian | src=Herskovits, Dahomey (1938)
+
+fon_mawu_lisa :: ITEM mawu-moon | name=Crescent moon | term=sun | script=Fon/Latin | rom=sun | kind=emblem | role=owner | gloss=Mawu, painted red at Abomey, holds crescent moon | src=Herskovits, Dahomey (1938); Mercier
+fon_mawu_lisa :: ITEM lisa-chameleon | name=Chameleon | term=agama | script=Fon/Latin | rom=agama | kind=animal | role=owner | gloss=Colour-shifting chameleon sacred to the sun-god Lisa | src=Herskovits, Dahomey (1938)
+
+akan_nyame :: ITEM nyame-dua | name=Forked altar-post with pot | term=Nyame dua | script=Twi/Latin | rom=Nyame dua | kind=object | role=owner | gloss=God's tree, forked post holding water-and-herb pot | src=Rattray, Ashanti (1923); Religion and Art in Ashanti (1927)
+
+akan_tano :: ITEM tano-brasspan | name=Brass shrine pan and regalia | term=yaawa | script=Twi/Latin | rom=yaawa | kind=regalia | role=owner | gloss=Shrine holds brass pan, crown, staffs, akrafena swords | src=Rattray, Ashanti (1923); Atano shrine ethnography
+akan_tano :: ITEM tano-animals | name=Sacred bush animals | term=— | script=Twi/Latin | rom=— | kind=animal | role=owner | gloss=Baboon, crocodile, mudfish, antelope; Tano became antelope | src=Akan oral tradition (Ta Kora); Rattray
+
+amani :: ITEM amani-ram | name=Ram | term=ba | script=Kushite/Egyptian | rom=Imn-Amani | kind=animal | role=owner | gloss=Criosphinx ram, emblem of Amun of Napata | src=Kushite royal iconography; Jebel Barkal temple of Amun
+amani :: ITEM amani-ramamulet | name=Ram-head pendant amulet | term=— | script=Kushite/Egyptian | rom=— | kind=regalia | role=owner | gloss=Ram-headed amulet/necklace worn by Kushite kings | src=Kushite regalia, 25th Dynasty–Meroitic (Welsby, Kingdom of Kush)
+amani :: POWER amani-crowns-king | name=Confirms and crowns the king by oracle | term=— | script=Kushite/Egyptian | rom=— | gloss=Oracle at Gebel Barkal chooses and sanctions rulers | inherit=none | src=Napata oracle of Amun (Diodorus; Welsby)
+
+shilluk_nyakaya :: ITEM nyakaya-crocodile | name=Crocodile | term=nyang | script=Dholuo-Collo/Latin | rom=nyang | kind=animal | role=owner | gloss=River-mother is, or is part, crocodile of the Nile | src=Seligman, Pagan Tribes of the Nilotic Sudan (1932); Westermann (1912)
+shilluk_nyakaya :: POWER nyakaya-ordeal | name=Judges the accused by river-ordeal | term=— | script=Dholuo-Collo/Latin | rom=— | gloss=Suspects thrust into river to be judged | inherit=none | src=Seligman, Pagan Tribes of the Nilotic Sudan (1932)
+
+zulu_unkulunkulu :: ITEM unkulunkulu-reed | name=Reed of origin | term=uhlanga | script=Zulu/Latin | rom=uhlanga | kind=emblem | role=owner | gloss=Broke off humankind from the primal reed-bed | src=Callaway, Religious System of the Amazulu (1870)
+
+zulu_nomkhubulwane :: ITEM nomkhubulwane-beer | name=Sorghum beer | term=utshwala | script=Zulu/Latin | rom=utshwala | kind=object | role=maker | gloss=Invented beer and gave brewing to humankind | src=Berglund, Zulu Thought-Patterns and Symbolism (1976)
+zulu_nomkhubulwane :: ITEM nomkhubulwane-rainbow | name=Rainbow | term=uthingo lwenkosazana | script=Zulu/Latin | rom=uthingo lwenkosazana | kind=emblem | role=owner | gloss=Rainbow, the princess's arch, is her sign | src=Berglund, Zulu Thought-Patterns and Symbolism (1976)
+
+ambundu_kabundungulu :: ITEM kabundungulu-knife | name=Knife | term=poko | script=Kimbundu/Latin | rom=poko | kind=weapon | role=owner | gloss=Born already armed with a knife | src=Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu
+ambundu_kabundungulu :: ITEM kabundungulu-staff | name=Walking staff/club | term=mbangu | script=Kimbundu/Latin | rom=mbangu | kind=weapon | role=owner | gloss=Born holding a stick like his twin | src=Chatelain, Folk-Tales of Angola (1894)
+ambundu_kabundungulu :: ITEM kabundungulu-kilembe | name=Life-tree | term=kilembe | script=Kimbundu/Latin | rom=kilembe | kind=relic | role=owner | gloss=Mythic plant whose withering reveals his brother's death | src=Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu
+```
+
+**Figures deliberately SKIPPED (no genuinely attested distinctive item — honesty about thin/absent material culture):**
+
+- **olodumare** (Yoruba): Idowu and Yoruba practice explicitly hold that the Supreme Being is *never* represented by any carving, image, or shrine-emblem. No attested material culture.
+- **akan_asase_yaa**: Classic ethnography (Rattray) records she has *no temple, no priest, no shrine, no image, no oracle* — deliberately un-objectified. Her domains/powers already cover her; nothing attested to add.
+- **akan_bia**: Bush/river abosom with only a generic shrine; no distinctive attested emblem of his own.
+- **edo_ogiuwu**: Attestation explicitly states *no image of Ogiuwu was ever made* ("no artist dared draw the face of death"); his messenger Ofoe is depicted instead, but that is a separate figure, not Ogiuwu's own item.
+- **zulu_umvelinqangi**: Abstract sky/thunder/first-being (often merged with Unkulunkulu); no distinct attested material item.
+- **banyaruanda_babinga**: In the Kubandwa tradition the kingship of the imandwa and all cult emblems (umurinzi/erythrina tree, the buffalo death) belong to his *son* **Ryangombe**; "Babinga wa Nyundo" is only a patronymic/genealogical figure with no attested item of his own. (The roster's "kingship-of-the-imandwa" domain properly belongs to Ryangombe.)
+- **ambundu_sun_moon_daughter**: In Chatelain's tale (#13) she has no distinctive personal object; the spider's-web ladder and water-jars belong to the Sun-and-Moon household, not to her.
+- **fon_nana_buluku**: Herskovits records *no specific cult and no cult-image/emblem* for Nana Buluku in Dahomey despite her acknowledged primacy.
+- **fon_sakpata**: His rich regalia (xaxará broom, mariwó raffia, laguidibá necklace) is primarily *diaspora*-attested (Brazilian Obaluaiê/Sakpata-Omolu); I found no clean Fon-language ethnographic term for a distinctive object, so I withhold rather than fabricate a coinage. (His earth-mound/perforated-pot altars are real but generic and unnamed in the sources I could verify.)
+
+---
+
+I researched all 25 roster figures across the 9 traditions and recorded items only where there is genuine ethnographic/oral-tradition attestation, skipping figures whose sources affirmatively report *no* distinctive material culture.
+
+**Recorded items (12 figures, in the fenced block above):**
+- **Yoruba Olokun** — beads/coral (owner), woven cloth & loom (maker), seven silver chains (relic).
+- **Edo Olokun** — coral regalia (ivie), mudfish emblem, white chalk (orhue), mud shrine-figures (uru).
+- **Edo Osanobua** — the creation snail-shell (ighan) that poured out the land (Bradbury).
+- **Edo Esu** — clay mound / inverted terracotta pot.
+- **Fon Gu** — iron sabre (gubasa) + smithing tools (Herskovits' "road is closed, Gu opens it").
+- **Fon Dan** — coiled rainbow-serpent Ayidohwɛdo.
+- **Fon Legba** — phallic clay/laterite gate-mound + phallic staff.
+- **Fon Mawu-Lisa** — Mawu's crescent moon + Lisa's sacred chameleon.
+- **Akan Nyame** — the Nyame dua forked altar-post with water/herb pot (Rattray).
+- **Akan Tano** — brass shrine-pan (yaawa) + regalia, and sacred animals (baboon/crocodile/antelope).
+- **Kushite Amani** — the ram/criosphinx + ram-head amulet-regalia, plus added oracular kingmaking power.
+- **Shilluk Nyakaya** — the crocodile (her form/animal), plus river-ordeal judging power.
+- **Zulu Unkulunkulu** — the reed of origin (uhlanga).
+- **Zulu Nomkhubulwane** — beer (utshwala, maker) + rainbow.
+- **Ambundu Kabundungulu** — knife, club/staff, and the kilembe life-tree (Chatelain/Werner).
+
+**Skipped with reasons (9 figures):** Olodumare, Akan Asase Yaa, Akan Bia, Edo Ogiuwu, Zulu Umvelinqangi, Banyaruanda Babinga, Ambundu Daughter of the Sun and Moon, Fon Nana Buluku, Fon Sakpata — each because the sources either explicitly state the figure is un-imaged/shrineless, attribute the relevant emblems to a different figure, or offer only diaspora-era/generic objects I could not attest with a real African-language term.
+
+Key honesty notes: Olodumare and Asase Yaa are *deliberately* without images/shrines in the ethnography; Ogiuwu "no artist dared draw"; Babinga's imandwa kingship and emblems actually belong to his son Ryangombe; and Sakpata's familiar broom/raffia regalia is diaspora-recorded, so I withheld it rather than coin a Fon term. Native terms with diacritics/romanization were supplied wherever I could verify them, and a few uncertain terms are marked with an em-dash rather than invented. Citations point to the standard ethnographers (Idowu, Egharevba, Ben-Amos, Bradbury, Herskovits, Rattray, Callaway, Berglund, Seligman/Westermann, Chatelain/Werner).

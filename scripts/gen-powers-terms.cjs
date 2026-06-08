@@ -16,6 +16,7 @@ const path = require('path');
 const TASKS = process.env.TASKS_DIR ||
   '/tmp/claude-0/-home-user-PantheonRepository/9979a762-a2ad-53fd-85cf-871f7627ba99/tasks';
 const DATA = path.join(__dirname, '..', 'app', 'data.js');
+const SRC = path.join(__dirname, '..', 'data-sources', 'transcripts');
 
 // Pull the last assistant text message out of a JSONL transcript.
 function lastAssistantText(file) {
@@ -31,6 +32,16 @@ function lastAssistantText(file) {
     if (t.trim()) txt = t; // keep the latest
   }
   return txt;
+}
+// Prefer the committed research-output snapshot (reproducible on a clean
+// checkout); fall back to the live /tmp session transcripts when absent.
+function sources() {
+  if (fs.existsSync(SRC)) {
+    return fs.readdirSync(SRC).filter((n) => n.endsWith('.txt')).sort()
+      .map((n) => ({ name: n, text: fs.readFileSync(path.join(SRC, n), 'utf8') }));
+  }
+  return fs.readdirSync(TASKS).filter((n) => n.endsWith('.output')).sort()
+    .map((n) => { try { return { name: n, text: lastAssistantText(path.join(TASKS, n)) }; } catch { return { name: n, text: '' }; } });
 }
 
 const SECONDARY = /\bWb\b|Wilkinson|LSJ|eDIL|GPC|CAD|PSD|ETCSL|Rilly|Britannica|Wikipedia|Healey|Ivanov|Toporov|Afanasyev|Rybakov|Bonfante|Pallottino|de Grummond|Dum[eé]zil|Nimuendaj|Koch-Gr[üu]nberg|Propp|Abaev|Charachidz[eé]|Tuite|Tedlock|Taube|Jansen|Caso|Zuidema|Hyslop|Christenson|Alvarado|Vocabulario|dictionary|Stetkevych|Westenholz|Frayne|grammar|ethnograph|Garcilaso|Sarmiento|Betanzos|Cobo|Cieza|Guaman Poma/i;
@@ -85,10 +96,7 @@ function parseInto(text, out, stats) {
 
 const out = {};
 const stats = { count: 0, emdash: 0, dups: 0, files: 0, scripts: {} };
-for (const name of fs.readdirSync(TASKS)) {
-  if (!name.endsWith('.output')) continue;
-  let text;
-  try { text = lastAssistantText(path.join(TASKS, name)); } catch { continue; }
+for (const { text } of sources()) {
   // Only powers-research transcripts: many lines of the "id :: faculty | term=" form.
   const hits = (text.match(/::[^\n]*\|\s*term=/g) || []).length;
   if (hits < 4) continue;
@@ -100,7 +108,7 @@ for (const name of fs.readdirSync(TASKS)) {
 const figs = Object.keys(out).sort();
 const body = figs.map((fig) =>
   `${JSON.stringify(fig)}: [\n` +
-  out[fig].map((f) => '  ' + JSON.stringify(f)).join(',\n') +
+  out[fig].slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)).map((f) => '  ' + JSON.stringify(f)).join(',\n') +
   '\n]').join(',\n');
 const block = `/* POWERS_TERMS_START */\nconst POWERS_TERMS = {\n${body}\n};\n/* POWERS_TERMS_END */`;
 

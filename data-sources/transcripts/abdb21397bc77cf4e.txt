@@ -1,0 +1,37 @@
+WebFetch is consistently 403-blocking Wikipedia. I already have sufficient confirmation from my earlier searches: Pausanias 1.28.8-9 describes the court (the Palladion/court at Athens) established to try Demophon, who wrested the Palladium from Diomedes. The Palladium = Παλλάδιον, the wooden cult image of Pallas Athena. This is well-established.
+
+I have everything I need. Let me compose the final records with proper Greek terms and citations.
+
+Final Greek/romanization details:
+- Palladium: Παλλάδιον / Palládion
+- Ascanius's bow & arrows: τόξον / tóxon (bow), with arrows ὀϊστοί/oïstoí — I'll lead with "bow and arrows," term τόξον (tóxon)
+- Hippolytus's chariot: ἅρμα / hárma (chariot); his horses ἵπποι/híppoi. I'll record the chariot-and-horses; term ἅρμα (hárma)
+- Telesphorus's hood/cloak: the Latin term is cucullus; in Greek a hooded cloak. The defining attribute is the hood — Greek for the cloak/hood. The standard term used is the Latin cucullus (Gallic hooded cape). Since rule 1 wants the native term in Greek script + romanization, but Telesphorus's attribute is conventionally named by the Latin cucullus. I'll give the Latin term cucullus (Latin/Roman) as the attested native term, since that's the genuine attested term — the instructions say native term and romanization; for this the genuine term is Latin cucullus. I'll mark script=Latin.
+- Hygieia's bowl/cup with serpent: the cup is φιάλη / phiálē (libation bowl), with serpent ὄφις/óphis. The "Bowl of Hygieia" — I'll lead with "serpent-entwined cup/bowl," term φιάλη (phiálē).
+
+```text
+greek_apollod_demophon :: ITEM palladium-athens | name=The Palladium (sacred image of Pallas Athena) | term=Παλλάδιον | script=Greek | rom=Palládion | kind=relic | role=owner | gloss=Wooden cult-image of Athena he wrested from Diomedes for Athens | src=Pausanias 1.28.8-9; Apollodorus, Epitome 6.21
+greek_apollod_ascanius :: ITEM ascanius-bow | name=Bow and arrows | term=τόξον | script=Greek | rom=tóxon | kind=weapon | role=wielder | gloss=Bow with which his first shot slew Numanus Remulus | src=Virgil, Aeneid 9.590-637
+greek_apollod_hippolytus :: ITEM hippolytus-chariot | name=Chariot and horses | term=ἅρμα | script=Greek | rom=hárma | kind=vehicle | role=owner | gloss=His horse-drawn chariot, wrecked by Poseidon's bull, killed him | src=Euripides, Hippolytus 1198-1248; Ovid, Metamorphoses 15.497-529
+greek_telesphorus :: ITEM telesphorus-cucullus | name=Hooded cloak | term=cucullus | script=Latin | rom=cucullus | kind=garment | role=wearer | gloss=Distinctive hooded cape that wholly enwraps the boy-god of convalescence | src=Pausanias 2.11.7 (cult); attested in coinage and statuary
+greek_hygieia :: ITEM hygieia-cup | name=Serpent-entwined libation cup | term=φιάλη | script=Greek | rom=phiálē | kind=object | role=owner | gloss=Cup from which her sacred serpent drinks, her healing attribute | src=Pausanias 2.11.6; standard cult iconography
+```
+
+## Summary
+
+I researched all 26 figures in `/tmp/hitems-hgreekB.json` and found **5 genuinely attested material-culture items**. The records are in the fenced block above.
+
+**Items found (with ancient sources):**
+- **Demophon** (`greek_apollod_demophon`) — the **Palladium**, the wooden image of Athena he took from Diomedes and brought to Athens (Pausanias 1.28.8-9; Apollodorus Epitome 6.21). Note: a variant tradition credits his brother Acamas, but the dominant source (Pausanias) names Demophon, so I assigned it only to him.
+- **Ascanius** (`greek_apollod_ascanius`) — **bow and arrows**, the weapon of his famous first kill of Numanus Remulus (Virgil, Aeneid 9).
+- **Hippolytus** (`greek_apollod_hippolytus`) — his **chariot and horses**, central to his myth and his name ("destroyed by horses"); wrecked by Poseidon's sea-bull (Euripides, Ovid Met. 15).
+- **Telesphorus** (`greek_telesphorus`) — his defining **hooded cloak (cucullus)**, attested in cult (Pausanias 2.11.7), coinage, and statuary.
+- **Hygieia** (`greek_hygieia`) — her **serpent-entwined cup/bowl**, attested as her cult attribute (Pausanias 2.11.6).
+
+**Figures deliberately SKIPPED (no distinctive attested item):**
+- *Seers whose gift is abstract prophecy, not an object:* Iamus (Apollo's "twofold treasure of prophecy" is a power, and the honey-feeding snakes are not owned), Idmon (taught the art of augury).
+- *Heraclid leaders (divided land by lot, no signature gear):* Echemus, Temenus, Cresphontes (his lottery clay-pellet is an ephemeral trick, not a possession), Amyclas (the famous Throne at Amyclae belongs to Apollo, not him).
+- *Healers / Asclepiad personifications with no narratively attested item:* Podalirius, Nicomachus, Gorgasus, Iaso, Aceso, Panacea, Aegle.
+- *Others:* Eurypylus (killed BY Achilles' spear via Neoptolemus — not his own; the Golden Vine was a bribe to his mother), Acamas, Melanippus (footrace winner), Alcestis (Euripides' veil is a stage device), Olympias (handles sacred snakes with a generic Bacchic thyrsus — no distinctive owned item), Antiope (the axe/sagaris is generic Amazon iconography, not a named personal weapon), Aratus of Sicyon (his collapsible siege-ladders are tactical equipment, not a signature artifact).
+
+A note on rigor: items 4 and 5 (Telesphorus's hood, Hygieia's cup) are iconographic/cult attributes rather than narrative possessions, but both are genuinely attested in antiquity (Pausanias plus material evidence), so I included them. If you want a stricter "named literary possession only" cut, the three highest-confidence records are Demophon/Palladium, Ascanius/bow, and Hippolytus/chariot.

@@ -1,0 +1,53 @@
+I now have authoritative Devanagari/IAST from Wikipedia for the elemental astras:
+- Agneyastra = आग्नेयास्त्र / Āgneyāstra (presiding deity Agni)
+- Varunastra = वरुणास्त्र / Varuṇāstra (presiding deity Varuna)
+- Vayavyastra = वायव्यास्त्र / Vāyavyāstra (presiding deity Vayu)
+
+Important nuance: these elemental astras have PRESIDING DEITIES (Agni, Varuna, Vayu) — none of whom are roster figures except Vayu (Vayavyastra's deity). And Arjuna WIELDED them. The roster's pashupatastra precedent attaches the astra to the wielder (Arjuna). So I'll attach Agneya/Varuna/Vayavya to Arjuna as wielder. The Vayavyastra could ALSO go to Vayu as presiding deity/owner — but I'll keep it simple and attach to Arjuna (the attested wielder), consistent with the roster pattern, while giving Vayu his deer mount as his own item.
+
+Let me reconsider one more time to be exhaustive but accurate. The deva-gift astras (Danda from Yama, Pasha from Varuna, Antardhana from Kubera, Vajra from Indra) vs the elemental astras (Agneya, Varuna, Vayavya). There's potential overlap: "Pāśāstra from Varuna" (Vana Parva gift) vs "Varunastra" (Varuna's signature astra). And "Vajra from Indra" vs "Indrastra." These might be the same or different. To avoid emitting near-duplicates, I'll pick the canonical named forms:
+- From Yama: **Daṇḍāstra** (दण्डास्त्र)
+- From Varuna: I'll use **Varunastra/Pāśāstra** — these may be the same noose-weapon. The Vana Parva text says "pāśāstra from Varuna." I'll emit it as Varuṇāstra (the standard name) to avoid confusion, noting Varuna's noose. Actually, "pāśa" (noose) and "Varunastra" (water weapon) are arguably two different Varuna weapons. To stay clean, I'll emit ONE Varuna-derived astra for Arjuna: Varuṇāstra (the well-known one), and not separately Pāśāstra (to avoid a shaky distinction).
+
+Hmm, but the explicit Vana Parva attestation is "pāśāstra." Let me be precise and faithful to the strongest attestation. I'll emit:
+- **Daṇḍāstra** (Yama's gift to Arjuna) — Vana Parva. 
+- **Antardhānāstra** (Kubera's gift) — Vana Parva.
+- **Vajra/Indrāstra** (Indra's gift) — Vana Parva.
+- **Āgneyāstra** (wielded) — MBh/Ram.
+- **Vāyavyāstra** (wielded) — MBh/Ram.
+- **Vāruṇāstra** (wielded; corresponds to Varuna's pāśa/water weapon) — MBh/Ram. (This subsumes the "pāśāstra from Varuna" gift.)
+- **Brahmaśirāstra** — Sauptika Parva.
+- **Āñjalikāstra** — Karna Parva.
+
+That's 8 astras for Arjuna — exhaustive and each individually attested. Good.
+
+I have everything verified. Let me compose the final output. I'll generate kebab-case item IDs consistent with the roster's existing naming style (e.g., "indra-airavata", "arjuna-anjalikastra").
+
+Let me write the final formatted blocks.
+
+Based on my deep multi-source research, here are the verified missing items, grouped by figure. I cross-checked each against the Rāmāyaṇa, Mahābhārata (Ganguli/sacred-texts + wisdomlib summaries), Rig Veda, Purāṇas, and scholarly references. I dropped anything unverifiable or unnamed (Abhimanyu's & Ghatotkacha's weapons have no proper names; Bhima's Mayasura mace is unnamed; Kāladaṇḍa = duplicate of existing yama-danda; Vijaya bow already held by Karna). Note: the roster contains **no Vishnu/Shiva/Rama/Krishna figure**, so Śārṅga, Sudarśana, Kaumodakī, Pāñcajanya, Triśūla, Pināka, Kodanda, etc. have no valid figure to attach to and are correctly omitted.
+
+=== hindu_indra (Indra)
+hindu_indra :: ITEM indra-airavata | name=Airavata (white elephant mount) | term=ऐरावत | script=Sanskrit (Devanāgarī) | rom=Airāvata | kind=mount | role=owner | gloss=Indra's celestial four-tusked white elephant, churned from ocean | src=Mahābhārata; Rāmāyaṇa; Viṣṇu Purāṇa (Samudra Manthana)
+hindu_indra :: ITEM indra-ratha | name=Indra's celestial chariot | term=रथ | script=Sanskrit (Devanāgarī) | rom=ratha | kind=vehicle | role=owner | gloss=Golden war-chariot, sent via Mātali to aid Rama | src=Rāmāyaṇa, Yuddha Kāṇḍa (sarga 102); Mahābhārata, Vana Parva
+
+=== hindu_surya (Sūrya)
+hindu_surya :: ITEM surya-ratha | name=Sun-chariot (seven horses) | term=सप्ताश्वरथ | script=Sanskrit (Devanāgarī) | rom=saptāśva-ratha | kind=vehicle | role=owner | gloss=One-wheeled chariot, seven horses, charioteer Aruṇa | src=Rig Veda (1.50, 1.115); Viṣṇu & Bhaviṣya Purāṇas
+
+=== hindu_dharma (Dharma / Yama)
+hindu_dharma :: ITEM yama-mahisha | name=Buffalo mount | term=महिष | script=Sanskrit (Devanāgarī) | rom=mahiṣa | kind=mount | role=owner | gloss=Yama's black water-buffalo vāhana | src=Garuḍa Purāṇa; Purāṇic iconography (Mahābhārata, Rāmāyaṇa)
+
+=== hindu_arjuna (Arjuna)
+hindu_arjuna :: ITEM arjuna-anjalikastra | name=Anjalika weapon | term=आञ्जलिकास्त्र | script=Sanskrit (Devanāgarī) | rom=Āñjalikāstra | kind=weapon | role=wielder | gloss=Decapitating arrow; beheaded Karṇa on day seventeen | src=Mahābhārata, Karṇa Parva (Section 91, Ganguli)
+hindu_arjuna :: ITEM arjuna-brahmashirastra | name=Brahmashiras weapon | term=ब्रह्मशिरास्त्र | script=Sanskrit (Devanāgarī) | rom=Brahmaśirāstra | kind=weapon | role=recipient | gloss=Supreme four-headed Brahma weapon, taught by Droṇa | src=Mahābhārata, Sauptika Parva
+hindu_arjuna :: ITEM arjuna-dandastra | name=Yama's staff-weapon | term=दण्डास्त्र | script=Sanskrit (Devanāgarī) | rom=Daṇḍāstra | kind=weapon | role=recipient | gloss=Death-staff astra granted by Yama | src=Mahābhārata, Vana Parva; Bhāgavata Purāṇa 1.12
+hindu_arjuna :: ITEM arjuna-antardhanastra | name=Antardhana weapon | term=अन्तर्धानास्त्र | script=Sanskrit (Devanāgarī) | rom=Antardhānāstra | kind=weapon | role=recipient | gloss=Vanishing/sleep astra granted by Kubera | src=Mahābhārata, Vana Parva; Bhāgavata Purāṇa 1.12
+hindu_arjuna :: ITEM arjuna-vajrastra | name=Indra's thunderbolt-weapon | term=वज्रास्त्र | script=Sanskrit (Devanāgarī) | rom=Vajrāstra | kind=weapon | role=recipient | gloss=Vajra astra bestowed by Indra in Svarga | src=Mahābhārata, Vana Parva; Bhāgavata Purāṇa 1.12
+hindu_arjuna :: ITEM arjuna-agneyastra | name=Fire-weapon | term=आग्नेयास्त्र | script=Sanskrit (Devanāgarī) | rom=Āgneyāstra | kind=weapon | role=wielder | gloss=Agni's fire astra wielded by Arjuna | src=Mahābhārata; Rāmāyaṇa (astra of Agni)
+hindu_arjuna :: ITEM arjuna-varunastra | name=Water-weapon | term=वरुणास्त्र | script=Sanskrit (Devanāgarī) | rom=Varuṇāstra | kind=weapon | role=wielder | gloss=Varuna's water astra wielded by Arjuna | src=Mahābhārata; Rāmāyaṇa (astra of Varuṇa)
+hindu_arjuna :: ITEM arjuna-vayavyastra | name=Wind-weapon | term=वायव्यास्त्र | script=Sanskrit (Devanāgarī) | rom=Vāyavyāstra | kind=weapon | role=wielder | gloss=Vāyu's storm/wind astra wielded by Arjuna | src=Mahābhārata; Rāmāyaṇa (astra of Vāyu)
+
+=== hindu_vayu (Vāyu)
+hindu_vayu :: ITEM vayu-mriga | name=Antelope/deer mount | term=मृग | script=Sanskrit (Devanāgarī) | rom=mṛga | kind=mount | role=owner | gloss=Vāyu's swift deer/antelope vāhana | src=Purāṇic iconography (Vāyu Purāṇa tradition)
+
+Notes / verifications that CONFIRMED existing roster entries (no change needed): Karṇa's kavaca-kuṇḍala (MBh 3.290.5, Adi/Vana Parva); Karṇa's Vijaya bow (Karṇa Parva — Vishvakarma-made, passed Indra→Paraśurāma→Karṇa); Arjuna's Gāṇḍīva (Khāṇḍava episode, from Varuṇa via Agni) and Pāśupatāstra; Yudhiṣṭhira's Akṣaya Pātra (Vana Parva, gift of Sūrya); the Pāṇḍava conches (Devadatta, Pauṇḍra, Anantavijaya, Sughoṣa, Maṇipuṣpaka); Indra's Vajra; Yama's daṇḍa & pāśa. Items deliberately DROPPED as unverifiable/unnamed/duplicate or lacking a roster figure: Bhīma's Mayasura mace (unnamed in text), Abhimanyu/Ghaṭotkaca weapons (no proper names), Kāladaṇḍa (= existing yama-danda), Bhīṣma "Pināka" (internet conflation — Pināka is Śiva's), and all Vishnu/Shiva/Rama/Krishna items (no such figure in roster).

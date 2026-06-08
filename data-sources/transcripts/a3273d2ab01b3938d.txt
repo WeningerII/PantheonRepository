@@ -1,0 +1,143 @@
+I have a great attested deed for Baiame: he cast his great net across the river to design the Brewarrina fish traps (Baiame's Ngunnhu). The Ngunnhu (net/fish-trap design) is associated. For Salailen: the attested exercisable act is wielding a thunderbolt to slay evil spirits (per Manipur myth: "Sorarel killed the evil spirits with the help of his thunderbolt"). That gives him both a power (smites with thunderbolt) and an item (thunderbolt). Good — that lifts him above domain-only.
+
+I now have everything verified. Let me compile the final output. Let me reason carefully about each figure to avoid restating domains and to mark heritability correctly.
+
+Key heritability notes:
+- Māui: inherited might/mana partly (demigod), but his powers (fishing, snaring sun, fire-theft) are learned/trickster feats, not bodily-by-blood. However the prompt explicitly cites "Māui's inherited might" as a partial example. Māui's strength/mana is inherited (he's of divine descent via Makeatutara). I'll mark his mana-wielding as partial (descent-derived), other learned feats as none.
+- Tāwhaki: thunder/lightning explicitly inherited from grandmother Whaitiri → full/partial for that power; revival "by his own inherent power as god" is innate. Mark lightning = full (bodily by blood from Whaitiri), self-revival = partial.
+- Pakhangba: shapeshifting into dragon — he's a deity/divine; could be innate → partial. It's a divine ability.
+- Oryol/Magindara: daughters of Asuang (deity) — their seductive voice / serpent nature is bodily/inherited → partial.
+- Mayari: daughter of Bathala, demigod; her combat prowess/strength is bodily → partial.
+
+Let me write the final blocks.
+
+Here are the corrected POWER and ITEM entries. All abilities are exercisable verbs (attested), domains are never restated, native terms cite the specific language, and missing items are added.
+
+```
+=== polynesian_maui (Māui-tikitiki-a-Taranga)
+polynesian_maui :: POWER maui-fish-up-land | name=Fishes up islands from the sea | term=hī ika | script=Māori | rom=hī ika | gloss=Hauls up the North Island (Te Ika-a-Māui) on a hook | inherit=none | src=Te Ara Encyclopedia / Wikipedia "Māui (Māori mythology)"
+polynesian_maui :: POWER maui-snare-sun | name=Snares and beats the sun to slow it | term=here i te rā | script=Māori | rom=here i te rā | gloss=Nooses Tama-nui-te-rā with ropes, beats it with jawbone | inherit=none | src=Wikipedia "Māui"; Te Ara
+polynesian_maui :: POWER maui-steal-fire | name=Wrests fire from the fire-goddess | term=— | script=Māori | rom=— | gloss=Tricks Mahuika out of her burning finger/toe-nails, brings fire | inherit=none | src=Mātauranga Māori "How Māui brought fire"; Wikipedia "Mahuika"
+polynesian_maui :: POWER maui-shapeshift | name=Transforms into birds and creatures | term=— | script=Māori | rom=— | gloss=Changes into a kererū/pigeon and other forms at will | inherit=partial | src=Wikipedia "Māui (Māori mythology)"
+polynesian_maui :: POWER maui-mana | name=Wields ancestral mana through incantation | term=mana | script=Māori | rom=mana | gloss=Channels inherited spiritual power via karakia to work feats | inherit=partial | src=Mythlok/Manaiakalani; Te Ara (mana of ancestors)
+polynesian_maui :: ITEM maui-manaiakalani | name=Māui's fish-hook (Manaiakalani) | term=Manaiakalani | script=Hawaiian | rom=Manaiakalani | kind=fish-hook | role=hauls up land from the sea-floor | gloss=Jawbone hook "Hook of the Heavens"; later the constellation Scorpius | src=oceanianfolktales; Mythlok "Manaiakalani"
+polynesian_maui :: ITEM maui-jawbone | name=Jawbone of Murirangawhenua | term=kauae o Murirangawhenua | script=Māori | rom=kauae | kind=bone weapon/tool | role=hook material; club that beats the sun | gloss=Grandmother's enchanted jawbone, source of the hook and sun-club | src=Wikipedia "Māui"; Te Ara
+polynesian_maui :: ITEM maui-sun-snare | name=Sun-snares (plaited ropes) | term=tau / taura | script=Māori | rom=taura | kind=rope-noose | role=binds the sun to slow its passage | gloss=Flax (some say Hina's-hair) nooses cast over the sun-pit | src=Wikipedia "Māui"; Te Ara
+```
+Note: maui-fishhook in currentItems is the generic hook; I give its proper name Manaiakalani (Hawaiian recension) as the added/named item.
+
+```
+=== polynesian_tawhaki (Tāwhaki)
+polynesian_tawhaki :: POWER tawhaki-climb-sky | name=Ascends to the heavens by a vine | term=piki ki te rangi | script=Māori | rom=piki ki te rangi | gloss=Climbs the aka matua (parent-vine) reciting karakia to the topmost sky | inherit=none | src=Wikipedia "Tāwhaki"; Te Ara
+polynesian_tawhaki :: POWER tawhaki-lightning | name=Flashes lightning from his body | term=uira | script=Māori | rom=uira | gloss=Produces lightning/thunder, inherited from grandmother Whaitiri | inherit=full | src=Te Ara "Tāwhaki"; Wikipedia
+polynesian_tawhaki :: POWER tawhaki-self-revival | name=Returns to life by his own power | term=— | script=Māori | rom=— | gloss=Slain by jealous kin, revives himself through innate godhood | inherit=partial | src=NZETC "Gods and Mortals"; Wikipedia
+polynesian_tawhaki :: POWER tawhaki-restore-sight | name=Restores the blind grandmother's sight | term=— | script=Māori | rom=— | gloss=Gives sight back to blind Whaitiri at the vine's foot | inherit=none | src=Te Ara "Myths"; Wikipedia "Whaitiri"
+```
+
+```
+=== polynesian_rata (Rata)
+polynesian_rata :: POWER rata-build-canoe | name=Carves and builds a war-canoe | term=tārai waka | script=Māori | rom=tārai waka | gloss=Hews a great totara into a canoe to pursue his father's killers | inherit=none | src=Wikipedia "Rātā"; Te Ara
+polynesian_rata :: POWER rata-slay-matuku | name=Slays the ogre/monster holding his father's bones | term=— | script=Māori | rom=— | gloss=Kills Matuku-tangotango and the Ponaturi, recovers Wahieroa's bones | inherit=none | src=Wikipedia "Rātā (Māori mythology)"
+```
+Note: Rata's canoe is first re-erected by the hākuturi (forest spirits) because he omitted ritual to Tāne — his deed proper is the (re-)building and the vengeance-slaying; no personal named item attested, so none added.
+
+```
+=== polynesian_whaitiri (Whaitiri)
+polynesian_whaitiri :: POWER whaitiri-thunder | name=Produces thunder and thunderclaps | term=whaitiri | script=Māori | rom=whaitiri | gloss=Sky-being who is/sounds the thunder; descends from the sky | inherit=full | src=Wikipedia "Whaitiri"; pantheon.org
+polynesian_whaitiri :: POWER whaitiri-incantation | name=Works spells by incantation | term=karakia | script=Māori | rom=karakia | gloss=Goddess of incantations; teaches the ascent-charms to Tāwhaki | inherit=none | src=pantheon.org "Whaitiri"; Te Ara
+```
+Whaitiri borderline (partly genealogical) but has attested exercisable acts (thunder, incantations, blinding-related deeds) — included.
+
+```
+=== aboriginal_baiame (Baiame)
+aboriginal_baiame :: POWER baiame-sing-shape-country | name=Shapes Country as he travels the Dreaming | term=Burrumbeet/Dreaming-shaping | script=Wiradjuri/Gamilaraay | rom=— | gloss=Forms rivers, mountains and waterholes by his passage and footprints | inherit=none | src=Wikipedia "Baiame"; aboriginalastronomy.com.au
+aboriginal_baiame :: POWER baiame-cast-net | name=Casts a great net to design the fish-traps | term=ngunnhu | script=Gamilaraay/Ngemba | rom=ngunnhu | gloss=Throws his net across the Barwon; sons build Brewarrina traps to its pattern | inherit=none | src=Wikipedia "Brewarrina Aboriginal Fish Traps"; visitbrewarrina
+aboriginal_baiame :: POWER baiame-institute-law | name=Institutes initiation law and rites | term=Burbung/Boorah | script=Wiradjuri/Gamilaraay | rom=Burbung | gloss=Establishes the bora-ground initiation ceremonies and moral law | inherit=none | src=Wikipedia "Baiame"; snakecult.net
+aboriginal_baiame :: ITEM baiame-net | name=Baiame's net (Ngunnhu) | term=ngunnhu | script=Ngemba/Gamilaraay | rom=ngunnhu | kind=fishing-net | role=cast over the river to lay out the stone fish-traps | gloss=The net whose pattern became Baiame's Ngunnhu at Brewarrina | src=Wikipedia "Brewarrina Aboriginal Fish Traps"
+```
+
+```
+=== aboriginal_bunjil (Bunjil)
+aboriginal_bunjil :: POWER bunjil-make-people | name=Shapes the first people from clay | term=— | script=Woiwurrung | rom=— | gloss=Moulds two men from river-clay on bark, with bark-stringy hair | inherit=none | src=ebsco.com "Bunjil"; bunjilplace.com.au
+aboriginal_bunjil :: POWER bunjil-breathe-life | name=Breathes life into the clay men | term=— | script=Woiwurrung | rom=— | gloss=Blows air into mouths, nostrils and navels to animate them | inherit=none | src=ebsco.com "Bunjil"; Grokipedia
+aboriginal_bunjil :: POWER bunjil-teach-arts | name=Teaches the people skills and law | term=— | script=Woiwurrung | rom=— | gloss=Gives spears and digging-sticks, teaches care of Country | inherit=none | src=ebsco.com "Bunjil"
+aboriginal_bunjil :: POWER bunjil-become-eagle | name=Transforms into a wedge-tailed eagle | term=Bunjil (waa-kurnda) | script=Woiwurrung | rom=Bunjil | gloss=Takes eagle form and rises into the sky after creation | inherit=none | src=veniceclayartists; museumsvictoria.com.au
+```
+
+```
+=== aboriginal_wagyl (Wagyl)
+aboriginal_wagyl :: POWER wagyl-carve-waterways | name=Carves rivers as its body moves over land | term=Waakal/Waugal | script=Noongar (Nyungar) | rom=Waakal | gloss=Slithers across country, gouging the Swan and Canning rivers and bends | inherit=none | src=Wikipedia "Wagyl"; noongarculture.org.au
+aboriginal_wagyl :: POWER wagyl-guard-water | name=Keeps and guards the fresh waters | term=Waakal | script=Noongar (Nyungar) | rom=Waakal | gloss=Dwells in and protects rivers, springs, lakes and their wildlife | inherit=none | src=Wikipedia "Wagyl"; newjunction.com.au
+```
+Wagyl: no personal items attested; none added.
+
+```
+=== aboriginal_wandjina (Wandjina)
+aboriginal_wandjina :: POWER wandjina-bring-rain | name=Brings the monsoon rains | term=Wanjina | script=Worrorra/Ngarinyin/Wunambal | rom=Wanjina | gloss=Cloud-spirits that summon the Dec–Mar monsoon rain and fertility | inherit=none | src=Wikipedia "Wandjina"; mythlok.com
+aboriginal_wandjina :: POWER wandjina-loose-lightning | name=Looses lightning and thunderstorms | term=Wanjina | script=Worrorra/Ngarinyin/Wunambal | rom=Wanjina | gloss=Their eyes are lightning; they command storms of the wet season | inherit=none | src=ebsco.com "Wandjina Cave Paintings"; Wikipedia
+```
+Wandjina: rock-image repainting is done BY humans to the Wandjina, not a power they exercise, so excluded.
+
+```
+=== tagalog_bathala (Bathala)
+tagalog_bathala :: POWER bathala-hurl-lightning | name=Hurls thunder and lightning as punishment | term=kidlat at kulog | script=Tagalog | rom=kidlat at kulog | gloss=Strikes those who break his commandments with lightning and thunder | inherit=none | src=aswangproject.com "Bathala"; Wikipedia "Bathala"
+tagalog_bathala :: POWER bathala-send-omen-bird | name=Sends the omen-bird to reveal his will | term=tigmamanukan | script=Tagalog | rom=tigmamanukan | gloss=Dispatches the tigmamanukan bird whose flight foretells outcomes | inherit=none | src=Wikipedia "Bathala"; aswangproject.com
+```
+
+```
+=== tagalog_mayari (Mayari)
+tagalog_mayari :: POWER mayari-duel | name=Duels with bamboo war-clubs | term=arnis/pananandata (club-combat) | script=Tagalog | rom=— | gloss=Fights her brother Apolaki club-to-club for rule of the earth | inherit=partial | src=aswangproject.com "Apolaki vs Mayari"; Wikipedia "Mayari"
+tagalog_mayari :: ITEM mayari-club | name=Bamboo war-club | term=batuta (kawayan) | script=Tagalog | rom=— | kind=club | role=weapon wielded in her duel with Apolaki | gloss=The bamboo cudgel ("Zabbor") she fought with for the earth | src=aswangproject.com "Apolaki vs Mayari"
+```
+Note: the Apolaki–Mayari duel is recorded mainly in the Kapampangan recension; Mayari is shared Tagalog/Kapampangan, so I cite the people. No clean native term for the club beyond "kawayan/batuta"; gave closest native words.
+
+```
+=== tagalog_tala (Tala)
+tagalog_tala :: POWER tala-marshal-stars | name=Marshals the stars out and back | term=tala | script=Tagalog | rom=tala | gloss=As morning/evening star, signals when the moon may release the stars | inherit=none | src=aswangproject.com "Bathala's Daughters"; Wikipedia "Tala"
+```
+Tala: I deliberately give only the genuinely-attested signaling act (from the recorded Sun/Moon/stars myth), not the modern "light-orbs" gloss. Constellation-arranging is weakly attested/modern, so excluded. No attested item.
+
+(Hanan SKIPPED — domain-only: dawn / new-beginnings / childbirth; people pray to her but she performs no attested verb-deed and her "bringing dawn" merely restates her domain.)
+
+```
+=== bicolano_asuang (Asuang)
+bicolano_asuang :: POWER asuang-steal-fire | name=Steals the sacred fire | term=— | script=Bikol (Central Bicolano) | rom=— | gloss=Tricks the guardians Linti and Dalogdog and seizes Gugurang's fire | inherit=none | src=mythlok.com "Gugurang"; bicolanomyths blog "Asuang"
+bicolano_asuang :: POWER asuang-shapeshift | name=Shifts between handsome and monstrous form | term=aswang | script=Bikol (Central Bicolano) | rom=aswang | gloss=Appears as a tall handsome man; moonlight reveals his monstrous shape | inherit=none | src=bicolanomyths blog "Asuang"; aswangproject.com
+bicolano_asuang :: POWER asuang-bestow-aswang | name=Bestows shape-shifting on mortals | term=aswang | script=Bikol (Central Bicolano) | rom=aswang | gloss=Sends blackbirds from his mouth, turning people into night aswang | inherit=none | src=puertoparrot/aswangproject "Bicolano Pantheon"
+```
+
+```
+=== bicolano_oryol (Oryol)
+bicolano_oryol :: POWER oryol-shapeshift-serpent | name=Shifts between serpent and beautiful woman | term=— | script=Bikol (Central Bicolano) | rom=— | gloss=Half-woman half-serpent who takes full maiden form to deceive | inherit=partial | src=aswangproject.com "Handyong & Oryol"; Wikipedia "Ibalong"
+bicolano_oryol :: POWER oryol-bewitch-voice | name=Enthralls with an enchanting voice | term=— | script=Bikol (Central Bicolano) | rom=— | gloss=Mesmerizes men, animals and creatures; lures Handyong's men with charm | inherit=partial | src=mythlok.com "Oryol"; philippineculturaleducation.com.ph
+```
+
+```
+=== bicolano_magindara (Magindara)
+bicolano_magindara :: POWER magindara-lure-drown | name=Lures sailors to drown them | term=— | script=Bikol (Central Bicolano) | rom=— | gloss=Enchanting-voiced mermaids draw fishermen and pirates to their deaths | inherit=partial | src=bicolanomyths blog "Magindara"; aswangproject.com
+```
+
+```
+=== manipuri_salailen (Salailen)
+manipuri_salailen :: POWER salailen-smite-thunderbolt | name=Smites evil spirits with a thunderbolt | term=ꯁꯣꯔꯥꯔꯦꯟ (Soraren) | script=Meitei (Manipuri) | rom=Soraren | gloss=Slays evil spirits using his thunderbolt; controls storm and rain | inherit=none | src=manipur.quora.com "Salailen"; Wikipedia "List of deities in Sanamahism"
+manipuri_salailen :: POWER salailen-name-sanamahi | name=Names and blesses the firstborn god | term=— | script=Meitei (Manipuri) | rom=— | gloss=Beholds the child in the Isaiphu pot and bestows the name Sanamahi | inherit=none | src=Medium (Oinam) "Birth of God Sanamahi"
+manipuri_salailen :: ITEM salailen-thunderbolt | name=Salailen's thunderbolt | term=— | script=Meitei (Manipuri) | rom=— | kind=thunderbolt-weapon | role=hurled to destroy evil spirits | gloss=Sky-king's bolt used to slay malevolent spirits | src=manipur.quora.com "Salailen"
+```
+Note: no distinct attested native lexeme for the bolt beyond descriptive terms; left as "—".
+
+```
+=== manipuri_chothe_thangwai_pakhangba (Chothe Thangwai Pakhangba)
+manipuri_chothe_thangwai_pakhangba :: POWER pakhangba-shapeshift-dragon | name=Transforms into a dragon-serpent | term=ꯄꯥꯈꯪꯕ (Pakhangba) | script=Meitei (Manipuri) | rom=Pakhangba | gloss=Changes into a dragon-python, evading Samadon Ayangba | inherit=partial | src=Wikipedia "Pākhangbā"; academia.edu "Identity of Pakhangpa"
+manipuri_chothe_thangwai_pakhangba :: POWER pakhangba-coil-paphal | name=Coils into the sacred paphal patterns | term=ꯄꯥꯐꯜ (paphal) | script=Meitei (Manipuri) | rom=paphal | gloss=Moves to trace the occult coiled forms venerated as paphal | inherit=partial | src=Wikipedia "Pākhangbā"
+```
+Pakhangba: borderline (identified with the first Ningthouja king), but he is a deity who performs the shapeshift/coiling acts — included; no personal wielded item attested (paphal is a pattern he forms, treated as a power, not an object).
+
+---
+
+Verification notes / decisions:
+- SKIPPED as purely genealogical or domain-only: `polynesian_makeatutara` (domain-only underworld guardian), `polynesian_taranga` (genealogical mother), `polynesian_hema` (genealogical father; his only "act" is suffering blinding, passive), `polynesian_wahieroa` (scion, no deeds), and Tagalog `tagalog_hanan` (domain-only dawn/childbirth — presiding is not an exercisable deed).
+- "Inherit" flags: marked partial/full only where the ability is bodily-by-blood — Tāwhaki's lightning (full, inherited from Whaitiri), Whaitiri's thunder (full, she is thunder), Māui's mana/shapeshifting (partial, divine descent), Mayari's combat prowess, Oryol/Magindara's serpent-voice nature, and Pakhangba's divine shapeshift (partial, innate divinity). All learned/trickster feats = none.
+- Items added that were missing: Māui's named hook **Manaiakalani** (Hawaiian recension) and the **jawbone of Murirangawhenua**; Mayari's bamboo **war-club**; Baiame's **net (Ngunnhu)**; Salailen's **thunderbolt**. (Māui's sun-snare and generic fishhook/jawbone were already in currentItems; I named/specified them.)
+- No domain was restated as a power; e.g. for Wandjina "rain"→deed "brings the monsoon"; for Bathala "thunder-lightning"→deed "hurls lightning to punish"; for Wagyl "creator-of-waterways"→deed "carves rivers as its body moves."
+
+Sources (key): Wikipedia (Māui, Tāwhaki, Rātā, Whaitiri, Wagyl, Wandjina, Baiame, Bathala, Mayari, Tala, Ibalong, Pākhangbā, List of deities in Sanamahism, Brewarrina Aboriginal Fish Traps), Te Ara Encyclopedia of New Zealand, Mātauranga Māori (TKI), NZETC; The Aswang Project, mythlok.com, bicolanomythsofgodsandmonsters blog, philippineculturaleducation.com.ph; ebsco.com & bunjilplace.com.au (Bunjil); noongarculture.org.au (Wagyl); manipur.quora.com & Goutamkumar Oinam (Medium) for Salailen/Sanamahism; academia.edu "Identity of Pakhangpa."

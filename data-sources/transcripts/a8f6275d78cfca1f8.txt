@@ -1,0 +1,71 @@
+Findings:
+- **Gofannon**: His role in Culhwch is to set the plough-iron (a task/power), but no distinctive *named item* of his own is attested. His power "slay Dylan with a single blow" already recorded; could add "set the plough-iron only a rightful king can command." No item. Skip Gofannon for items.
+- **Arianrhod**: **Caer Arianrhod** is her fortress/court — but is it an *item*? It's a place/dwelling. The Corona Borealis association is later folklore (not in primary text), but in the Fourth Branch itself, Caer Arianrhod IS named as her stronghold/court (she lives there; Gwydion and Lleu visit "Caer Arianrhod"). As a hall/dwelling attested in the Fourth Branch, it qualifies as kind=hall, role=owner. The stellar identification is later, but the fortress itself is genuinely named in the Mabinogi. I'll record Caer Arianrhod as her hall (gloss noting it's her court/fortress in the Fourth Branch), and keep the citation to the Fourth Branch (not the stellar folklore). This is defensible. Her power (tynghedau curses) already recorded.
+
+Now I have enough to compile. Let me do a final sanity check on a couple I want to be precise about: confirm **Pryderi**'s swine are from Annwfn (yes, confirmed) and whether the Morrígan or others I'm skipping truly lack items. Also I should double check that **Fenrir, Jörmungandr, Ymir, Búri, Verðandi, Skuld, Váli, Týr** have no owned distinctive items — these are correct (no items; Gleipnir binds Fenrir but is Odin's commission, not Fenrir's possession; the Norns' well is shared, already deciding to include for Verðandi/Skuld).
+
+Let me reconsider the Norns' well carefully — is it appropriate to assign Urðarbrunnr to Verðandi and Skuld as "owners"? It's named for Urðr and is collectively the Norns' well. Assigning it to the *individual* non-Urðr Norns as their item is a stretch. Better to record it as a shared relic they *tend* (role could be "owner"/keeper). I'll include it but frame role=owner with gloss "well of fate the three Norns tend," which is accurate. It's genuinely attested that these three Norns dwell at and maintain it (Gylfaginning 15-16, Völuspá 20). I'll include it for both, since the task wants exhaustiveness about real attested associations and this is the one concrete thing associated with them.
+
+Let me verify one more uncertain item — **Goibniu's** ale as a recordable "item" and the exact name "Fled Goibnenn," plus whether **Ogma's Orna** detail (sword of Tethra) is precisely §162. I'm confident on these from the earlier searches. Let me also confirm I'm not missing an attested item for **Njǫrðr** beyond Nóatún, and verify **Loki** has the shoes only (no other owned item).
+
+I have enough verified detail. Let me also quickly double check the precise term/spelling for a few native terms (Old Norse Nóatún, Ýdalir; Middle Welsh Caer Aranrhod/Arianrhod spelling; Du y Moroedd; Dormarth; Sídh Fionnachaidh; Tech Duinn; Síd ar Femen; Orna; Fled Goibnenn).
+
+I'm confident in the standard scholarly forms. Let me compile the final records now.
+
+A few final judgment calls on what to INCLUDE vs SKIP:
+- Include items: Njǫrðr (Nóatún), Ullr (Ýdalir), Loki (shoes), Ogma (Orna), Goibniu (Fled Goibnenn ale), Donn (Tech Duinn), Lir (Síd Fionnachaidh), Bodb Derg (Síd ar Femen), Pryderi (swine of Annwfn), Gwyn ap Nudd (Du y Moroedd horse, Dormarth hound), Amaethon (white roebuck + whelp + lapwing), Arianrhod (Caer Arianrhod), Fráech (Otherworld mantles/cloaks + shining spears from Boand), Verðandi (Urðarbrunnr), Skuld (Urðarbrunnr).
+- Skip (no attested distinctive item): Sigi, Bé Find, Mongán, Týr, Bragi, Váli, Jörmungandr, Fenrir, Ymir, Búri, Morrígan, Ériu, Dôn, Gwydion, Gilfaethwy, Blodeuwedd, Taliesin, Gofannon.
+
+Wait — let me reconsider a few skips for possible items I might be too hastily dropping:
+- **Bragi**: runes on his tongue (Sigrdrífumál) — this is genuinely attested but it's not an owned item; it's runes carved on his body. Not weapon/hall/treasure/animal/garment/vehicle/relic/object in the ownership sense. I'll skip as item but it's borderline. I'll leave it out to avoid stretching.
+- **Týr**: no item. Correct skip.
+- **Fenrir**: Gleipnir is on him but not his. Correct skip.
+
+Let me reconsider **Fráech**'s items once more — the gifts are 50 each and unnamed. Including them as generic "fifty Otherworld cloaks" / "fifty shining spears" is attested (Táin Bó Fraích) and distinctive enough (they shine like the sun). I'll include the mantle/cloak (garment, the dark-blue cloaks with red-gold brooches — very specifically described) and the shining spears, since they're vividly attested. Role=owner/wearer. Good.
+
+Also reconsider **Mongán**: truly no owned item. But he's strongly tied to Manannán's gifts? No — those are Manannán's. Correct skip. His shapeshift power is already there.
+
+One more: **Pryderi** — besides the swine, is there another item? He has no named weapon. The swine is the key. Good. Could add power? His domain is kingship/horse-foal association (he's born when a foal is born, found by Teyrnon). No distinct power verb needed. Just the swine item.
+
+Now let me write the final output. I'll use proper diacritics and scripts.
+
+Native term scripts/romanization notes:
+- Old Norse uses Latin script with special letters — I'll mark script="Old Norse (Latin)" and provide romanization (ASCII-ish) for rom.
+- Old/Middle Irish — Latin script; script="Old Irish (Latin)" or "Middle Irish (Latin)"; rom = anglicized/normalized.
+- Middle Welsh — Latin script; script="Middle Welsh (Latin)"; rom = standard Welsh.
+
+Let me compile.
+
+```text
+norse_njord :: ITEM noatun | name=Ships'-Haven (his sea-hall) | term=Nóatún | script=Old Norse (Latin) | rom=Noatun | kind=hall | role=owner | gloss=Njǫrðr's seaside hall, the "ship-enclosure" | src=Grímnismál 16; Gylfaginning 23
+norse_ullr :: ITEM ydalir | name=Yew-Dales (his hall) | term=Ýdalir | script=Old Norse (Latin) | rom=Ydalir | kind=hall | role=owner | gloss=Ullr's dwelling, "yew dales," tied to the bow-yew | src=Grímnismál 5
+norse_loki :: ITEM loki-skor | name=Sky-and-Sea Shoes | term=skór | script=Old Norse (Latin) | rom=skor | kind=garment | role=owner | gloss=Shoes letting Loki run through air and over water | src=Skáldskaparmál (Otter's ransom)
+irish_ogma :: ITEM orna | name=Orna, sword of Tethra | term=Orna | script=Old Irish (Latin) | rom=Orna | kind=weapon | role=wielder | gloss=Fomorian king's talking sword Ogma won and unsheathed | src=Cath Maige Tuired §162–163
+irish_goibniu :: ITEM fled-goibnenn | name=Goibniu's Ale-Feast | term=Fled Goibnenn | script=Old Irish (Latin) | rom=Fled Goibnenn | kind=object | role=owner | gloss=His otherworld ale warding off age and death | src=Cath Maige Tuired; early Irish tradition
+irish_donn :: ITEM tech-duinn | name=House of Donn (isle of the dead) | term=Tech Duinn | script=Old Irish (Latin) | rom=Tech Duinn | kind=hall | role=owner | gloss=Donn's island house where the dead assemble | src=Metrical Dindshenchas (Book of Leinster)
+irish_lir :: ITEM sid-fionnachaidh | name=Mound of the Fair Field (his sídh) | term=Síd Fionnachaidh | script=Middle Irish (Latin) | rom=Sidh Fionnachaidh | kind=hall | role=owner | gloss=Lir's fairy-mound dwelling in Oidheadh Chloinne Lir | src=Oidheadh Chloinne Lir
+irish_bodb_derg :: ITEM sid-ar-femen | name=Mound on Femen (his sídh) | term=Síd ar Femen | script=Old Irish (Latin) | rom=Sidh ar Femen | kind=hall | role=owner | gloss=Bodb Derg's síd at Slievenamon, Munster | src=Aislinge Óengusa; prefatory tale to the Táin
+irish_fraech :: ITEM fraech-brait | name=Dark-Blue Otherworld Mantles | term=bruit gorma | script=Old Irish (Latin) | rom=bruit gorma | kind=garment | role=wearer | gloss=Fifty beetle-blue cloaks with red-gold brooches from Boand | src=Táin Bó Fraích
+irish_fraech :: ITEM fraech-sleg | name=Sun-Bright Spears | term=slega | script=Old Irish (Latin) | rom=slega | kind=weapon | role=owner | gloss=Fifty gem-studded spears lighting the night, gift of Boand | src=Táin Bó Fraích
+welsh_pryderi :: ITEM moch-annwfn | name=Swine of Annwfn | term=moch Annwfn | script=Middle Welsh (Latin) | rom=moch Annwfn | kind=animal | role=owner | gloss=Otherworld pigs Arawn sent him, stolen by Gwydion | src=Pedair Cainc y Mabinogi, Fourth Branch
+welsh_gwyn_ap_nudd :: ITEM du-y-moroedd | name=Black of the Seas (his horse) | term=Du y Moroedd | script=Middle Welsh (Latin) | rom=Du y Moroedd | kind=animal | role=owner | gloss=Only horse able to carry Gwyn on the great hunt | src=Culhwch ac Olwen; Trioedd Ynys Prydein
+welsh_gwyn_ap_nudd :: ITEM dormarth | name=Dormarth (his hound) | term=Dormarth | script=Middle Welsh (Latin) | rom=Dormarth | kind=animal | role=owner | gloss=Gwyn's red-nosed hunting hound, "best of dogs" | src=Black Book of Carmarthen, Dialogue of Gwyn ap Nudd
+welsh_amaethon :: ITEM carw-gwyn | name=White Roebuck, Whelp and Lapwing | term=carw gwyn, cenau a chornchwiglen | script=Middle Welsh (Latin) | rom=carw gwyn, cenau a chornchwiglen | kind=animal | role=owner | gloss=Creatures he took from Arawn, sparking Cad Goddeu | src=Trioedd Ynys Prydein; Cad Goddeu tradition
+welsh_arianrhod :: ITEM caer-arianrhod | name=Arianrhod's Fortress (her court) | term=Caer Aranrhod | script=Middle Welsh (Latin) | rom=Caer Aranrhod | kind=hall | role=owner | gloss=Her sea-fortress court where Gwydion and Lleu come | src=Pedair Cainc y Mabinogi, Fourth Branch
+norse_verdandi :: ITEM urdarbrunnr | name=Well of Fate | term=Urðarbrunnr | script=Old Norse (Latin) | rom=Urdarbrunnr | kind=relic | role=owner | gloss=Well beneath Yggdrasill the three Norns tend | src=Völuspá 19–20; Gylfaginning 15–16
+norse_skuld :: ITEM urdarbrunnr | name=Well of Fate | term=Urðarbrunnr | script=Old Norse (Latin) | rom=Urdarbrunnr | kind=relic | role=owner | gloss=Well beneath Yggdrasill the three Norns tend | src=Völuspá 19–20; Gylfaginning 15–16
+```
+
+Done. Summary of what I produced and key judgments below.
+
+I researched all 35 roster figures against the public-domain primary sources and recorded only genuinely attested, source-backed items.
+
+Items recorded (17 records across 16 figures):
+- Norse: Njǫrðr (hall Nóatún), Ullr (hall Ýdalir), Loki (the air/sea-running shoes from Skáldskaparmál), Verðandi & Skuld (Urðarbrunnr, the Well of Fate the Norns tend).
+- Irish: Ogma (Orna, Tethra's talking sword he won at Mag Tuired), Goibniu (Fled Goibnenn, his immortality ale-feast), Donn (Tech Duinn), Lir (Síd Fionnachaidh), Bodb Derg (Síd ar Femen), Fráech (his Otherworld dark-blue mantles and sun-bright spears, gifts of Boand).
+- Welsh: Pryderi (the Swine of Annwfn), Gwyn ap Nudd (horse Du y Moroedd and hound Dormarth), Amaethon (the white roebuck/whelp/lapwing taken from Arawn), Arianrhod (Caer Arianrhod, her court in the Fourth Branch).
+
+Deliberately SKIPPED (no genuinely attested distinctive item — would have required fabrication):
+- Sigi (pure ancestor; the Barnstokkr sword is Sigmund's, the apple Rerir's), Bé Find, Mongán (the wondrous items belong to Manannán, not him), Týr, Bragi (runes on his tongue are attested but not an owned artifact), Váli, Jörmungandr, Fenrir (Gleipnir binds him but is Odin's commission), Ymir, Búri, the Morrígan, Ériu (Lia Fáil is a Tuatha Dé treasure, not hers), Dôn, Gwydion (the named hudlath wand is Math/Mathonwy's), Gilfaethwy, Blodeuwedd (she is herself a creation), Taliesin (the "chair" is a bardic concept, not an artifact), Gofannon.
+
+Key accuracy notes: I confirmed via primary-source research that the Welsh Thirteen Treasures owners (Rhydderch, Gwyddno, etc.) are none of the roster figures, so I forced none; that Caer Arianrhod is attested as her fortress in the Fourth Branch itself (the Corona Borealis identification is later folklore, excluded from the citation); and that Loki's falcon-skin is borrowed (already a power), so not recorded as owned. The Norns' well is shared rather than personally owned, recorded with a gloss making that explicit. I did not add new powers since each retained figure's attested powers were already present in the roster.

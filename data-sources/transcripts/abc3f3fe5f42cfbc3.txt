@@ -1,0 +1,37 @@
+Confirmed: Epaphus, Sarpedon (Cretan), and Neleus have no distinctively attested personal items — skip all three. Rhadamanthus's attribute is the "Rhadamanthine oath" / law-code, not a portable named object — no distinctive material item, skip.
+
+I've now researched the full roster. Let me compile my final determinations:
+
+**Figures WITH attested distinctive material culture:**
+1. **Deianira** — The Robe/Shirt of Nessus, which she anoints with the centaur's blood (Sophocles Trachiniae; Apollodorus 2.7.7). She is the maker (anointer) of the poisoned garment. Native term: Χιτών τοῦ Νέσσου.
+2. **Glaucus of Corinth** — His man-eating mares of Potniae (Apollodorus 2.3.1; Pausanias 6.20.19; Virgil Georgics 3.267; Aeschylus' lost *Glaucus Potnieus*). He is owner. Native term: αἱ ἵπποι τοῦ Γλαύκου / mares of Potniae.
+3. **Pirithous** — The Chair of Forgetfulness, to which he is bound forever in Hades (Apollodorus Epitome 1.24). He is the occupant/owner. Native term: λήθης θρόνος.
+
+**Figures with NO distinctive attested item (skipped):** Iolaus (drives Heracles' chariot, generic arms), Hyllus, Macaria, Telephus (the spear is Achilles'), Tlepolemus (generic spear), Cleodaeus, Phlegyas, Manto (seeress, no object), Menelaus (generic Homeric arms), Cyrene (generic javelin/sword), Aristaeus (culture-hero/inventions, not personal items), Otrera (girdle belongs to Hippolyta), Calais & Zetes (wings are bodily, not crafted objects), Cycnus (invulnerability is a power; the killing strap is Achilles'), Rhadamanthus (no portable named object), Sarpedon Cretan, Tityus, Zethus, Epaphus, Neleus, Mopsus (seer, no object).
+
+Let me reconsider Pirithous's role term and the chair's ownership carefully — both Theseus and Pirithous sit in it, but Pirithous remains bound (he's permanently the occupant). "owner" fits the allowed roles best (he occupies/possesses it eternally). Actually the chair belongs to Hades; Pirithous is the eternal occupant — among the allowed roles {owner|wielder|wearer|maker|heir}, "owner" is the loosest fit but none perfectly captures "prisoner." I'll use owner as the closest. For Glaucus's mares, role=owner. For Deianira, role=maker.
+
+Here are my final results.
+
+```text
+greek_apollod_deianira :: ITEM nessus-robe | name=Poisoned Robe of Nessus | term=Χιτὼν τοῦ Νέσσου | script=Greek | rom=Chitṓn toû Néssou | kind=garment | role=maker | gloss=Tunic she smeared with the centaur's venomous blood, which killed Heracles | src=Sophocles, Trachiniae; Apollodorus 2.7.7
+greek_glaucus_corinth :: ITEM glaucus-mares | name=Man-eating Mares of Potniae | term=αἱ ἵπποι τοῦ Γλαύκου | script=Greek | rom=hai híppoi toû Glaúkou | kind=mount | role=owner | gloss=His mares, fed on human flesh, that grew frenzied and devoured him | src=Apollodorus 2.3.1; Pausanias 6.20.19; Virgil, Georgics 3.267
+greek_pirithous :: ITEM chair-of-forgetfulness | name=Chair of Forgetfulness | term=λήθης θρόνος | script=Greek | rom=lḗthēs thrónos | kind=object | role=owner | gloss=Stone seat in Hades to which he grew fast forever for seeking Persephone | src=Apollodorus, Epitome 1.24
+```
+
+Summary of findings:
+
+I reviewed all 25 figures in the roster. Only three have genuinely attested, distinctive material culture in the public-domain sources:
+
+- **Deianira** — the Robe of Nessus (Sophocles' *Trachiniae*; Apollodorus 2.7.7). She is the maker, anointing the garment with the centaur's poisoned blood. Greek: Χιτὼν τοῦ Νέσσου.
+- **Glaucus of Corinth (son of Sisyphus)** — his man-eating mares of Potniae (Apollodorus 2.3.1; Pausanias 6.20.19; Virgil *Georgics* 3.267; also Aeschylus' lost *Glaucus Potnieus*). They are not individually named, but the group is a firmly attested signature animal-possession.
+- **Pirithous** — the Chair of Forgetfulness in Hades, the only ancient attestation being Apollodorus *Epitome* 1.24, where he is bound to it forever.
+
+The remaining 22 were **deliberately skipped** because they have no distinctive named item of their own in the sources:
+- Several "signature" objects actually belong to someone else: Telephus is healed by **Achilles'** spear; Iolaus drives **Heracles'** chariot; Cycnus is strangled with **Achilles'** helmet-strap; Otrera's famous girdle belongs to her daughter **Hippolyta**.
+- Calais & Zetes have **wings**, but the sources (Apollonius, Ovid, Pindar) treat these as bodily features that sprout from their backs/ankles, not crafted items or divine gifts — so they fall under powers, not material culture.
+- Menelaus, Tlepolemus, and Cyrene carry only generic Homeric/heroic arms (unnamed spear, sword, javelin) with no distinctive named weapon.
+- Aristaeus is a culture-hero whose "items" are inventions he gave humanity (beehives, cheese-making), not personal possessions.
+- Rhadamanthus's legacy is the "Rhadamanthine oath"/law-code, not a portable named object.
+- Manto and Mopsus are seers with no attested signature object; Phlegyas's punishment uses a generic rock.
+- The remaining founder/scion figures with no recorded deeds (Hyllus, Macaria, Cleodaeus, Sarpedon the Cretan, Tityus, Zethus, Epaphus, Neleus) have no attested distinctive items.

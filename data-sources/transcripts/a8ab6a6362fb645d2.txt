@@ -1,0 +1,68 @@
+Confirmed clearly: **"the older got dark flint and the younger blue flint garments."** This is the canonical Diné Bahaneʼ / Matthews text. So:
+- **Monster Slayer**: dark flint armor (garments) — missing item.
+- **Born for Water**: blue flint armor (garments) — missing item.
+- Both requested flint shoes/clubs/leggings/headgear/wrist-guards — the **flint armor** suit covers these as one item per twin.
+
+I now have a thoroughly verified set. Let me compile the final output. Let me be precise about figure_ids from the roster:
+- Polynesian: `polynesian_tawhaki` (Tāwhaki), `polynesian_rata` (Rata).
+- Manipuri: (Pakhangba paphal — decided to drop as it's a form/emblem, not a held object; Salailen has thunderbolt). Actually, let me reconsider the paphal once more — it IS used as the royal seal/emblem and appears on flags/coats of arms. As Pakhangba's own heraldic device it could be "regalia." But it's his serpent-form depiction, not an object he owns. I'll drop it to stay rigorous. So Manipuri: nothing new.
+- Tagalog: nothing new verified (Mayari's club already present; Tala/Hanan/Bathala no solid items).
+- Bicolano: nothing.
+- Apapocúva-Guaraní: `namandu` (Ñamandú) — yvyra'i staff.
+- Pemon: nothing new (Andrade-novel contamination; wazaca-axe already present).
+- Anishinaabe: nothing solidly named.
+- Iroquois: Hiawatha already has wampum; nothing clearly new. (The 13-string condolence wampum = the same wampum.)
+- Ho-Chunk: `redhorn` (Redhorn) — the red horn/braid (Hocąk "he").
+- Diné: `dine_monster_slayer` — dark flint armor; `dine_born_for_water` — blue flint armor + flint club; `dine_changing_woman` — jewel/white-shell dress.
+- Sioux/Lakota: nothing (Fallen Star no named item).
+- Blackfoot: Poïa already has raven feathers (the Sun's gift) — covered. Nothing new.
+- Tsimshian: Asdiwal fully covered.
+- Aboriginal Australian: `aboriginal_baiame` — crystal throne.
+
+Let me reconsider Hiawatha — is the **Hiawatha Belt** distinct from his condolence wampum strings? The roster item is "hiawatha-wampum." The condolence-ceremony wampum strings (13 strings) he wore around his neck are arguably the same "hiawatha-wampum." The Hiawatha Belt (confederacy belt) is a separate, named confederacy artifact, but it's a Confederacy emblem rather than personally Hiawatha's possession (it's named after him). I'll leave Hiawatha as covered to avoid over-reach.
+
+Let me reconsider Redhorn's "he" (horn) — strongly attested (Dieterle/Radin): after winning the race he makes his hair into a long red braid called **he** ("horn"), giving his name He-šucka. This is a distinct body-attribute/regalia he creates. He has "redhorn-head-earrings" but not the horn itself. Solid addition.
+
+I'm confident in the set. Let me write the final formatted output.
+
+Based on thorough multi-source research, here are the verified missing items, grouped by figure. (WebFetch was returning HTTP 403 across all domains this session, so verification relied on WebSearch extractions cross-checked against the named ethnographic sources — Te Ara, Cadogan's *Ayvu Rapyta*, the Diné Bahaneʼ/Matthews, Dieterle's Hocąk Encyclopedia, Howitt/Eliade for Baiame.)
+
+=== polynesian_tawhaki (Tāwhaki)
+polynesian_tawhaki :: ITEM tawhaki-three-baskets | name=Three Baskets of Knowledge | term=ngā kete e toru (kete-aronui, kete-tuauri, kete-tuatea) | script=Māori | rom=— | kind=relic | role=recipient | gloss=knowledge-baskets he brought from the highest heaven | src=Te Ara; Tainui tradition (Tāwhaki ascends, receives the three kete)
+polynesian_tawhaki :: ITEM tawhaki-whatukura-stones | name=Two Sacred Stones | term=whatukura (Hukatai me Rehutai) | script=Māori | rom=— | kind=relic | role=recipient | gloss=paired sacred stones of knowledge from Toi-o-ngā-rangi | src=Best, Whare Wānanga; Te Ara (Hukatai/Rehutai)
+
+=== polynesian_rata (Rata)
+polynesian_rata :: ITEM rata-canoe-niwaru | name=Canoe Niwaru | term=Niwaru | script=Māori | rom=— | kind=vehicle | role=owner | gloss=canoe the hākuturi forest-spirits built for him | src=White, Ancient History of the Maori; Wikisource "Rata and the Fairy Canoe"
+
+=== namandu (Ñamandú)
+namandu :: ITEM namandu-yvyrai | name=Divine Staff-Insignia | term=yvyra'i (popygua) | script=Guaraní | rom=— | kind=regalia | role=wielder | gloss=staff of power; earth engendered at its tip | src=Cadogan, Ayvu Rapyta (Mbyá-Guaraní)
+
+=== redhorn (Redhorn)
+redhorn :: ITEM redhorn-red-horn | name=Red Horn (red braid-horn) | term=he | script=Hocąk | rom=— | kind=regalia | role=owner | gloss=long red braid made into a horn, naming him | src=Dieterle, Hocąk Encyclopedia; Radin Red Horn Cycle
+
+=== dine_monster_slayer (Naayééʼ Neizghání / Monster Slayer)
+dine_monster_slayer :: ITEM monster-slayer-flint-armor | name=Dark Flint Armor | term=béésh (flint garments) | script=Diné bizaad (Navajo) | rom=— | kind=armor | role=wielder | gloss=dark-flint shoes, leggings, headgear, wrist-guards from the Sun | src=Diné Bahaneʼ / Matthews; Zolbrod ("the older got dark flint garments")
+
+=== dine_born_for_water (Tó Bájíshchíní / Born for Water)
+dine_born_for_water :: ITEM born-for-water-flint-armor | name=Blue Flint Armor | term=béésh (flint garments) | script=Diné bizaad (Navajo) | rom=— | kind=armor | role=wielder | gloss=blue-flint suit from the Sun ("the younger blue flint") | src=Diné Bahaneʼ / Matthews; Zolbrod
+dine_born_for_water :: ITEM born-for-water-flint-club | name=Flint Club | term=béésh (flint club) | script=Diné bizaad (Navajo) | rom=— | kind=weapon | role=wielder | gloss=flint club he drew streams-lines with against Yéʼiitsoh | src=Diné Bahaneʼ / Matthews (Sun's gift of flint clubs)
+
+=== dine_changing_woman (Asdzą́ą́ Nádleehé / Changing Woman)
+dine_changing_woman :: ITEM changing-woman-jewel-dress | name=Dress of Jewels | term=— | script=Diné bizaad (Navajo) | rom=— | kind=garment | role=owner | gloss=white-shell/turquoise/abalone/jet dress that jingles | src=Diné Bahaneʼ; Reichard/Matthews (gives her White-Shell/Turquoise/Abalone/Jet names)
+
+=== aboriginal_baiame (Baiame)
+aboriginal_baiame :: ITEM baiame-crystal-throne | name=Crystal Throne | term=— | script=Wiradjuri | rom=— | kind=regalia | role=owner | gloss=quartz-crystal seat in the sky beside the Milky Way | src=Howitt, via Eliade Shamanism (Wiradjuri/Euahlayi tradition)
+
+---
+
+Brief notes on what was checked and deliberately dropped (no fabrication):
+- **Māui** — already fully covered (Manaiakalani hook, Murirangawhenua jawbone, sun-snare); no further named item.
+- **Pemón (Makunaima/Pia/Ma'nápe etc.)** — wazacá-axe already present; the other named figures (Jiguê, Maanape, Piaimã) trace to Mário de Andrade's 1928 novel *Macunaíma*, not ethnography, so no items added.
+- **Manipuri Pakhangba** — the *paphal* is his coiled serpent-dragon **form/heraldic emblem** (royal flags, Kangla), not an object he owns/wields; dropped. Salailen's thunderbolt already present.
+- **Tagalog** — Mayari's bamboo club already in roster (the Apolaki-battle club). Tala's "luminous orbs" appear only in modern tertiary sites, not solid sources; dropped. Bathala's *tigmamanukan* is a messenger omen-bird (a being, not an item); dropped. Apolaki/Lam-ang/Ibalong heroes are not in the roster, so their items can't be attached.
+- **Bicolano** — Oryol/Asuang/Magindara have no attested named personal objects; the Ibalong heroes (Baltog/Handyong, who wield bolos) aren't in the roster.
+- **Anishinaabe Nanabozho** — only a generic Midewiwin medicine-bag surfaces; no specific named weapon attested, so nothing added.
+- **Iroquois** — Hiawatha's condolence wampum strings are the same as his existing "hiawatha-wampum"; the Hiawatha/Tree-of-Peace belt is a Confederacy emblem, not his personal possession. Cornplanter's Washington pipe-tomahawk already present.
+- **Sioux/Lakota Fallen Star** — his feats (raising Devil's Tower, bird-rescue) are powers, not owned named items.
+- **Blackfoot Poïa** — the Sun's two raven feathers (his sign for the Medicine Lodge) are already in the roster.
+- **Aboriginal Bunjil / Wagyl / Wandjina** — no personally-owned named object attested; the *riji* engraved pearl-shell is a human ceremonial object (its power derived from Wandjina), not a possession of the being, so dropped.

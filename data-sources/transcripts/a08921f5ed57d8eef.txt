@@ -1,0 +1,60 @@
+All confirmed. I now have everything I need:
+
+- **Zhurong**: rides two dragons (乘兩龍), Shanhaijing "Overseas South Classic" (Haiwai nan jing) — mount confirmed.
+- **Jumong's broken sword**: 斷劍, hidden under a pillar, recognition token for heir Yuri (Samguk Sagi) — Jumong is owner; he also makes his own bow; the swift horse.
+
+Let me compile the final records. I'll generate stable item/power ids as lowercase-hyphenated slugs.
+
+Summary of figures WITH attested items (and those skipped):
+
+**Records:**
+1. **japanese_izanami** — Ame-no-Nuboko spear (wielder, with Izanagi).
+2. **japanese_tsukuyomi** — golden long-sword (Kōtaijingū Gishikichō) + horse mount; the sword that slays Ukemochi (Nihon Shoki). Power: slay-with-sword already; I'll add the iconographic items.
+3. **japanese_okuninushi** — Ikutachi (sword), Ikuyumiya (bow), Ame-no-Norigoto (koto), all Kojiki.
+4. **japanese_ame_no_uzume** — eulalia-grass-wreathed spear (hoko) + the overturned tub/bucket she danced on (Kojiki); the dagger she cut the sea-cucumber with.
+5. **chinese_zhurong** — two dragons mount (Shanhaijing).
+6. **korean_jumong** — broken sword (heir-token, owner), self-made bow (wielder), swift horse (mount).
+7. **korean_yuhwa** — five-grain seeds (owner/giver, Samguk Sagi/Yusa).
+8. **korean_cheonjiwang** — gourd seeds (maker/giver); commands the iron bows.
+9. **korean_daebyeolwang** — iron bow + thousand-pound iron arrows (wielder, shoots surplus sun).
+10. **korean_sobyeolwang** — iron bow + thousand-pound iron arrows (wielder, shoots surplus moon).
+
+**Skipped (no attested distinctive item):** chinese_jade_emperor (generic regalia only), korean_tangun (Cheonbu-in belong to Hwanung), japanese_kushimikatamatsumi (genealogical name only), chinese_gonggong (struck with head, no weapon), chinese_zao_jun (cult offerings, no personal item), japanese_kagutsuchi (the sword belongs to Izanagi; Kagutsuchi is the victim), japanese_konohanasakuya_hime (hut incidental; sake is her father's), korean_habaek (five-dragon chariot is Hae Mosu's; only shape-shifting).
+
+Now let me write the final output.
+
+I have completed the research. Below are the attested items and a few supporting powers for the figures in my batch that have genuinely documented material culture. Ten of the nineteen figures had attestable distinctive items; the other nine are silent (see note after the block).
+
+```text
+japanese_izanami :: ITEM ame-no-nuboko | name=Heavenly Jeweled Spear | term=天沼矛 | script=ja/kanji | rom=Ame-no-nuboko | kind=weapon | role=wielder | gloss=Jeweled spear she and Izanagi churn the sea with | src=Kojiki (Kamiyo); Nihon Shoki
+japanese_tsukuyomi :: ITEM tsukuyomi-tachi | name=Golden Long-Sword | term=黄金の大刀 | script=ja/kanji | rom=kogane no tachi | kind=weapon | role=wearer | gloss=Gold sword worn by purple-robed Tsukuyomi on horseback | src=Kōtaijingū Gishikichō (804)
+japanese_tsukuyomi :: ITEM tsukuyomi-uma | name=Tsukuyomi's Horse | term=馬 | script=ja/kanji | rom=uma | kind=mount | role=owner | gloss=Horse the moon-god rides in his canonical depiction | src=Kōtaijingū Gishikichō (804)
+japanese_tsukuyomi :: POWER tsukuyomi-slay-ukemochi | name=Slay the food-goddess with the sword | term=保食神を斬る | script=ja/kanji | rom=Ukemochi o kiru | gloss=Kills Ukemochi, whose corpse yields grains and livestock | inherit=none | src=Nihon Shoki
+japanese_okuninushi :: ITEM ikutachi | name=Sword of Life | term=生大刀 | script=ja/kanji | rom=Ikutachi | kind=weapon | role=wielder | gloss=Living great-sword taken from Susanoo to subdue rivals | src=Kojiki (Ōkuninushi cycle)
+japanese_okuninushi :: ITEM ikuyumiya | name=Bow-and-Arrows of Life | term=生弓矢 | script=ja/kanji | rom=Ikuyumiya | kind=weapon | role=wielder | gloss=Living bow used to drive off the eighty deities | src=Kojiki (Ōkuninushi cycle)
+japanese_okuninushi :: ITEM ame-no-norigoto | name=Heavenly Speaking-Koto | term=天詔琴 | script=ja/kanji | rom=Ame-no-norigoto | kind=instrument | role=owner | gloss=Divine koto carried in flight from the underworld | src=Kojiki (Ōkuninushi cycle)
+japanese_ame_no_uzume :: ITEM uzume-hoko | name=Eulalia-Wreathed Spear | term=矛 | script=ja/kanji | rom=hoko | kind=instrument | role=wielder | gloss=Bound-grass spear she brandished in the cave dance | src=Kojiki (Ama-no-Iwato)
+japanese_ame_no_uzume :: ITEM uzume-uke | name=Overturned Sounding-Tub | term=覆槽 | script=ja/kanji | rom=ukefune | kind=instrument | role=wielder | gloss=Upturned tub she stamped on, resounding, while dancing | src=Kojiki (Ama-no-Iwato)
+japanese_ame_no_uzume :: ITEM uzume-himokatana | name=Small Knife | term=紐小刀 | script=ja/kanji | rom=himo-gatana | kind=weapon | role=wielder | gloss=Blade with which she slit the sea-cucumber's mouth | src=Kojiki (Sarutahiko episode)
+chinese_zhurong :: ITEM zhurong-liang-long | name=Two Dragons | term=兩龍 | script=zh/hanzi | rom=liǎng lóng | kind=mount | role=owner | gloss=Pair of dragons the beast-bodied fire-god rides | src=Shanhaijing, Haiwai nan jing
+korean_jumong :: ITEM jumong-dangeom | name=Broken Sword | term=斷劍 | script=ko/hanja | rom=dangeom | kind=weapon | role=owner | gloss=Half-sword hidden as token to identify heir Yuri | src=Samguk Sagi (Goguryeo annals)
+korean_jumong :: ITEM jumong-hwal | name=Self-made Bow and Arrows | term=활 | script=ko/hangul | rom=hwal | kind=weapon | role=maker | gloss=Bow he crafted as a boy, never missing | src=Samguk Sagi; Samguk Yusa
+korean_jumong :: ITEM jumong-mal | name=Swift Horse | term=駿馬 | script=ko/hanja | rom=junma | kind=mount | role=owner | gloss=Fleet steed he secured by starving it thin | src=Samguk Sagi (Goguryeo annals)
+korean_yuhwa :: ITEM yuhwa-ogok | name=Five-Grain Seeds | term=五穀種子 | script=ko/hanja | rom=ogok jongja | kind=object | role=owner | gloss=Sacred grain-seeds she sent to Jumong by doves | src=Samguk Sagi; Samguk Yusa
+korean_cheonjiwang :: ITEM cheonjiwang-bakssi | name=Two Gourd Seeds | term=박씨 | script=ko/hangul | rom=bakssi | kind=object | role=owner | gloss=Gourd seeds he gave to name and find his sons | src=Cheonjiwang Bonpuri (Jeju)
+korean_daebyeolwang :: ITEM daebyeolwang-cheolgung | name=Iron Bow | term=鐵弓 | script=ko/hanja | rom=cheolgung | kind=weapon | role=wielder | gloss=Bow with thousand-geun iron arrows; shot the surplus sun | src=Cheonjiwang Bonpuri (Jeju)
+korean_sobyeolwang :: ITEM sobyeolwang-cheolgung | name=Iron Bow | term=鐵弓 | script=ko/hanja | rom=cheolgung | kind=weapon | role=wielder | gloss=Bow with thousand-geun iron arrows; shot the surplus moon | src=Cheonjiwang Bonpuri (Jeju)
+```
+
+Notes on the nine figures I deliberately SKIPPED (no genuinely attested distinctive item):
+
+- **chinese_jade_emperor** — only generic imperial court costume (crown, audience tablet) in iconography; no distinctive narrative weapon/treasure.
+- **chinese_gonggong** — topples Mount Buzhou with his own head (Huainanzi); no weapon, mount, or treasure. Xiangliu is his minister (a being, not an item).
+- **chinese_zao_jun** — the honey/malt and paper effigy are worshippers' cult offerings, not items he owns or wields.
+- **japanese_kagutsuchi** — the sword Ame-no-Ohabari (Totsuka-no-Tsurugi) belongs to Izanagi, who uses it to behead Kagutsuchi; Kagutsuchi is the victim, fitting no owner/wielder/wearer/maker/heir role.
+- **japanese_konohanasakuya_hime** — the burning parturition hut is an incidental structure; the celebratory sake (ame-no-tamuke-zake) is attributed to her father Ōyamatsumi, not to her.
+- **japanese_kushimikatamatsumi** (Kushi-mikata-no-Mikoto) — appears only as a name in the Miwa-clan genealogy (Kojiki); no item of his own. The "eight-hand mirror" enshrined at Miwa belongs to Ōmononushi/Ōkuninushi's spirit.
+- **korean_tangun** — the Three Heavenly Seals (Cheonbu-in 天符印) were given to his father Hwanung for the descent; Tangun himself wields no attested item.
+- **korean_habaek** — his power is shape-shifting; the five-dragon chariot in that episode belongs to Hae Mosu, not Habaek.
+
+Two judgment calls worth flagging: (1) For **Cheonjiwang** I assigned the gourd seeds (unambiguously his) and gave the iron bows to the twins, since the dominant bonpuri versions have **Daebyeolwang/Sobyeolwang** do the shooting — matching the roster's power assignment. (2) **Tsukuyomi's** golden sword and horse come from the Ise ritual register (Kōtaijingū Gishikichō), not the Kojiki/Nihon Shoki narrative core, where his sword is unnamed; I cited that register explicitly.
