@@ -682,7 +682,12 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
             flavor="domains"
             title="Domains"
             items={entry.domains}
-            name={d => d.sphereId || safeLabel(d)}
+            name={d => {
+              const base = String(d.sphereId || d.id || '').replace(/[-_]+/g, ' ') || safeLabel(d);
+              return d.term && d.term.value
+                ? <span>{base} <span className="domain-term">{d.term.value}{d.term.rom && <span className="domain-term-rom"> {d.term.rom}</span>}</span></span>
+                : base;
+            }}
             metas={d => [d.contextTag]}
             notes={d => d.notes}
           />

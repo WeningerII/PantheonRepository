@@ -75,13 +75,15 @@ for (const name of fs.readdirSync(TASKS)) {
   if (hit) stats.files++;
 }
 
-fs.writeFileSync('/tmp/powers-items-parsed.json', JSON.stringify({ powers, items }, null, 1));
+// Serialize a {figureId: [obj,...]} map, one line per record (diff-friendly).
+const serialize = (map) => Object.keys(map).sort().map((fig) =>
+  `${JSON.stringify(fig)}: [\n` + map[fig].map((o) => '  ' + JSON.stringify(o)).join(',\n') + '\n]').join(',\n');
+const block = `/* POWERS_ITEMS_START */\nconst POWERS_ABILITIES = {\n${serialize(powers)}\n};\nconst ITEMS_GEN = {\n${serialize(items)}\n};\n/* POWERS_ITEMS_END */`;
+const DATA = path.join(__dirname, '..', 'app', 'data.js');
+let data = fs.readFileSync(DATA, 'utf8');
+const re = /\/\* POWERS_ITEMS_START \*\/[\s\S]*?\/\* POWERS_ITEMS_END \*\//;
+if (!re.test(data)) { console.error('POWERS_ITEMS sentinels not found in data.js'); process.exit(1); }
+fs.writeFileSync(DATA, data.replace(re, block));
 console.log(`transcripts: ${stats.files} | figures: ${stats.figs.size}`);
 console.log(`POWERS (abilities): ${stats.powers}  (with native term: ${stats.pTermed})`);
 console.log(`ITEMS: ${stats.items}  (with native term: ${stats.iTermed})`);
-// sample one figure if present
-const sampleFig = process.argv[2];
-if (sampleFig && (powers[sampleFig] || items[sampleFig])) {
-  console.log(`\n${sampleFig} powers:`, (powers[sampleFig] || []).map((p) => `${p.name || p.id}${p.term ? ' [' + p.term.value + ']' : ''}`).join('; '));
-  console.log(`${sampleFig} items:`, (items[sampleFig] || []).map((i) => `${i.name || i.id}${i.term ? ' [' + i.term.value + ']' : ''}`).join('; '));
-}
