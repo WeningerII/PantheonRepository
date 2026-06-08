@@ -38,10 +38,13 @@ function lastAssistantText(file) {
 function contributes(text) {
   if (/::\s*(POWER|ITEM)\s/.test(text)) return true;                       // gen-powers-items
   if ((text.match(/::[^\n]*\|\s*term=/g) || []).length >= 4) return true;  // gen-powers-terms
-  const re = /```(?:json)?\s*([\s\S]*?)```/g; let m;                       // gen-new-figures
-  while ((m = re.exec(text))) {
-    try { const v = JSON.parse(m[1].trim()); if (Array.isArray(v) && v.some((f) => f && f.id && (f.type || f.domains || f.faculties))) return true; } catch { /* skip */ }
-  }
+  const figureArray = (s) => { try { const v = JSON.parse(s); return Array.isArray(v) && v.some((f) => f && f.id && (f.type || f.domains || f.faculties)); } catch { return false; } };
+  const re = /```(?:json)?\s*([\s\S]*?)```/g; let m, fenced = false;       // gen-new-figures (fenced)
+  while ((m = re.exec(text))) { if (figureArray(m[1].trim())) return true; fenced = fenced || /```/.test(m[0]); }
+  // Fallback to an inline (un-fenced) array, exactly as gen-new-figures.extractFigures does,
+  // so harvest and the generator agree on what counts as a figure transcript.
+  const a = text.indexOf('['), b = text.lastIndexOf(']');
+  if (a >= 0 && b > a && figureArray(text.slice(a, b + 1))) return true;
   return false;
 }
 

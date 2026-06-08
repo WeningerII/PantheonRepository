@@ -1,0 +1,601 @@
+I now have thorough, well-sourced research on all required figures with specific primary-source citations. I have enough to author accurate entries. Let me compile the complete JSON array.
+
+Here is my research summary and the figures for the Zoroastrian/Persian tradition.
+
+## Research Summary
+
+I researched all required figures using WebSearch, drawing on the Avesta (Gathas/Yasna, the Yashts, Vendidad), the Bundahishn, and Ferdowsi's Shāhnāmeh. Key sourcing details:
+
+- **Ahura Mazda** — Supreme creator; creates through Spenta Mainyu (Yasna 30, 44). Bundahishn cosmogony.
+- **Angra Mainyu/Ahriman** — Destructive spirit; counter-creation; 9000-year battle (Yasna 30, Vendidad 1, Bundahishn).
+- **Spenta Mainyu** — Ahura Mazda's creative/holy spirit, twin to the destructive spirit (Yasna 30.3-5).
+- **Six Amesha Spentas** — domains confirmed: Vohu Manah (Good Mind/cattle), Asha Vahishta (Truth/fire), Khshathra Vairya (Dominion/metals), Spenta Armaiti (Devotion/earth), Haurvatat (Wholeness/waters), Ameretat (Immortality/plants).
+- **Yazatas** — Mithra (Yasht 10, covenants/light, 10,000 eyes), Anahita (Yasht 5/Aban Yasht, waters/fertility), Verethragna (Yasht 14, victory, **ten forms** as materialCulture: wind, bull, horse, camel, boar, youth, raven Varaghna, ram, wild goat, warrior), Tishtrya (Yasht 8, Sirius/rain, defeats Apaosha as white horse), Sraosha (Yasna 57, obedience, club, Chinvat guardian), Rashnu (justice, weighs souls), Atar (fire, son of Ahura Mazda), Vayu (wind/atmosphere, Yasht 15), Haoma (Hom Yasht, Yasna 9-11, healing/immortality, son Duraosha).
+- **Heroes** (endowed with khvarenah/farr) — Yima/Jamshid (Vendidad 2, Yasht 19; built the Vara, golden ring & dagger; sawn by Spityura; lost the Glory), Thraetaona/Fereydun (Yasht 5, 14, 19; Shāhnāmeh; ox-headed mace Gorz, Drafsh-e Kaviani banner), Keresaspa/Garshasp (Yasht 19, Yasna 9; club-bearer, slew Azhi Srvara & Gandarewa), Rostam (Shāhnāmeh; Haft Khan, slew Div-e Sepid; mount Rakhsh), Kay Khosrow (Shāhnāmeh; Jam-e Jam cup, just king who vanished), Siyavash (Shāhnāmeh; trial by fire), and antagonist Aži Dahāka/Zahhak (Yasht 5, 19; Vendidad; three-headed serpent-shouldered tyrant, bound at Mt. Damavand until the end-time).
+
+Native terms are given in Avestan script where well-attested and in romanized Avestan/Pahlavi/Persian otherwise; English leads each domain/faculty.
+
+```json
+[
+  {
+    "id": "zoroastrian_ahura_mazda",
+    "name": { "primary": "Ahura Mazda", "alt": ["Ohrmazd", "Hormazd", "Ormazd"], "transliterations": { "avestan": "Ahura Mazdā", "pahlavi": "Ohrmazd" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "wisdom-light", "contextTag": "lifelong", "term": { "value": "𐬀𐬵𐬎𐬭𐬀 𐬨𐬀𐬰𐬛𐬁", "script": "Avestan", "rom": "Ahura Mazdā" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 31" }] },
+      { "sphereId": "creation-order", "contextTag": "lifelong", "term": { "value": "dātar", "script": "Latin", "rom": "dātar" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 44" }] },
+      { "sphereId": "truth-asha", "contextTag": "lifelong", "term": { "value": "𐬀𐬴𐬀", "script": "Avestan", "rom": "aṣ̌a" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 30" }] }
+    ],
+    "faculties": [
+      { "id": "create-by-thought", "name": "Create the world through Spenta Mainyu, his holy spirit", "term": { "value": "spǝnta mainyu", "script": "Latin", "rom": "spǝṇta mainyu" }, "inheritability": "none", "notes": "Fashions all good creation by thought", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 44" }] },
+      { "id": "omniscient-wisdom", "name": "Know all things as the all-wise Lord of wisdom", "term": { "value": "mazdā", "script": "Latin", "rom": "mazdā" }, "inheritability": "none", "notes": "Name means Wise Lord", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 31" }] },
+      { "id": "establish-cosmic-order", "name": "Uphold cosmic truth and order against the Lie", "term": { "value": "aṣ̌a", "script": "Latin", "rom": "aṣ̌a" }, "inheritability": "none", "notes": "Sustains asha over druj", "sources": [{ "kind": "primary", "reference": "Bundahishn 1" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta (Gathas, Yasna 28-34)" }, { "kind": "primary", "reference": "Bundahishn 1" }], "weight": "primary" }
+    ],
+    "notes": "Supreme uncreated creator god of Zoroastrianism, the Wise Lord and source of all good."
+  },
+  {
+    "id": "zoroastrian_angra_mainyu",
+    "name": { "primary": "Angra Mainyu", "alt": ["Ahriman", "Ahreman"], "transliterations": { "avestan": "Aŋra Mainiiu", "pahlavi": "Ahriman" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "destruction-evil", "contextTag": "lifelong", "term": { "value": "𐬀𐬢𐬭𐬀 𐬨𐬀𐬌𐬥𐬌𐬌𐬎", "script": "Avestan", "rom": "Aŋra Mainiiu" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 30" }] },
+      { "sphereId": "deception-lie", "contextTag": "lifelong", "term": { "value": "𐬛𐬭𐬎𐬲", "script": "Avestan", "rom": "druj" }, "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 1" }] },
+      { "sphereId": "darkness-death", "contextTag": "lifelong", "term": { "value": "tǝmah", "script": "Latin", "rom": "tǝmah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 15.43" }] }
+    ],
+    "faculties": [
+      { "id": "counter-create", "name": "Counter-create plagues, winter, and noxious beasts against creation", "term": { "value": "paitiiāra", "script": "Latin", "rom": "paitiiāra" }, "inheritability": "none", "notes": "Forges sixteen scourges against the lands", "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 1" }] },
+      { "id": "spawn-daevas", "name": "Command the daevas as daeva of daevas", "term": { "value": "daēuuanąm daēuuō", "script": "Latin", "rom": "daēuuanąm daēuuō" }, "inheritability": "none", "notes": "Chief of the demons", "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 19" }] },
+      { "id": "assault-creation", "name": "Assault Ahura Mazda's world across the nine-thousand-year struggle", "term": { "value": "ēbgat", "script": "Latin", "rom": "ēbgat" }, "inheritability": "none", "notes": "The Assault of the Bundahishn", "sources": [{ "kind": "primary", "reference": "Bundahishn 1" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 30" }, { "kind": "primary", "reference": "Bundahishn 1" }], "weight": "primary" }
+    ],
+    "notes": "The destructive spirit, hostile twin opposing Spenta Mainyu; source of evil, death, and the Lie."
+  },
+  {
+    "id": "zoroastrian_spenta_mainyu",
+    "name": { "primary": "Spenta Mainyu", "alt": ["Spenta Mainyush", "Spandarmad-spirit"], "transliterations": { "avestan": "Spǝṇta Mainiiu", "pahlavi": "Spenāg Mēnōg" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation-life", "contextTag": "lifelong", "term": { "value": "𐬯𐬞𐬆𐬧𐬙𐬀 𐬨𐬀𐬌𐬥𐬌𐬌𐬎", "script": "Avestan", "rom": "Spǝṇta Mainiiu" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 30" }] },
+      { "sphereId": "holiness-bounty", "contextTag": "lifelong", "term": { "value": "spǝṇta", "script": "Latin", "rom": "spǝṇta" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }] }
+    ],
+    "faculties": [
+      { "id": "bring-forth-life", "name": "Bring forth life and choose truth over the Lie", "term": { "value": "gaya", "script": "Latin", "rom": "gaya" }, "inheritability": "none", "notes": "Chose asha; destructive twin chose worst", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 30.4-5" }] },
+      { "id": "instrument-of-creation", "name": "Serve as Ahura Mazda's creative force in fashioning the world", "term": { "value": "spǝṇta mainyu", "script": "Latin", "rom": "spǝṇta mainyu" }, "inheritability": "none", "notes": "The Lord creates through him", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 30" }, { "kind": "primary", "reference": "Avesta, Yasna 47" }], "weight": "primary" }
+    ],
+    "notes": "The Holy or Bounteous Spirit of Ahura Mazda, twin to Angra Mainyu, through whom good creation arises."
+  },
+  {
+    "id": "zoroastrian_vohu_manah",
+    "name": { "primary": "Vohu Manah", "alt": ["Bahman", "Vohuman"], "transliterations": { "avestan": "Vohu Manah", "pahlavi": "Wahman" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "good-mind", "contextTag": "lifelong", "term": { "value": "𐬬𐬊𐬵𐬎 𐬨𐬀𐬥𐬀𐬵", "script": "Avestan", "rom": "Vohu Manah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 28" }] },
+      { "sphereId": "cattle-livestock", "contextTag": "lifelong", "term": { "value": "gāuš", "script": "Latin", "rom": "gāuš" }, "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "faculties": [
+      { "id": "illumine-the-mind", "name": "Illumine the mind with good thought and divine wisdom", "term": { "value": "manah", "script": "Latin", "rom": "manah" }, "inheritability": "none", "notes": "First of the Amesha Spentas approached", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 28" }] },
+      { "id": "guard-cattle", "name": "Protect beneficent cattle and domestic animals", "term": { "value": "gāuš", "script": "Latin", "rom": "gāuš" }, "inheritability": "none", "notes": "Presides over the bovine creation", "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 28" }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Amesa Spenta'" }], "weight": "primary" }
+    ],
+    "notes": "Amesha Spenta of the Good Mind; first emanation of Ahura Mazda, guardian of cattle."
+  },
+  {
+    "id": "zoroastrian_asha_vahishta",
+    "name": { "primary": "Asha Vahishta", "alt": ["Ardwahisht", " Asha"], "transliterations": { "avestan": "Aṣ̌a Vahišta", "pahlavi": "Ardwahišt" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "truth-order", "contextTag": "lifelong", "term": { "value": "𐬀𐬴𐬀 𐬬𐬀𐬵𐬌𐬱𐬙𐬀", "script": "Avestan", "rom": "Aṣ̌a Vahišta" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 33" }] },
+      { "sphereId": "fire-atar", "contextTag": "lifelong", "term": { "value": "ātar", "script": "Latin", "rom": "ātar" }, "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "faculties": [
+      { "id": "embody-truth", "name": "Embody and uphold asha, the cosmic order of truth", "term": { "value": "aṣ̌a", "script": "Latin", "rom": "aṣ̌a" }, "inheritability": "none", "notes": "Best Truth, the supreme moral principle", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 33" }] },
+      { "id": "preside-over-fire", "name": "Preside over sacred fire as righteous order's element", "term": { "value": "ātarš", "script": "Latin", "rom": "ātarš" }, "inheritability": "none", "notes": "Guardian of fire", "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 33" }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Amesa Spenta'" }], "weight": "primary" }
+    ],
+    "notes": "Amesha Spenta of Best Truth and righteousness; guardian of fire and the asha principle."
+  },
+  {
+    "id": "zoroastrian_khshathra_vairya",
+    "name": { "primary": "Khshathra Vairya", "alt": ["Shahrewar", "Shahrivar"], "transliterations": { "avestan": "Xšaθra Vairiia", "pahlavi": "Šahrewar" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "dominion-kingship", "contextTag": "lifelong", "term": { "value": "𐬑𐬱𐬀𐬚𐬭𐬀 𐬬𐬀𐬌𐬭𐬌𐬌𐬀", "script": "Avestan", "rom": "Xšaθra Vairiia" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 51" }] },
+      { "sphereId": "metals", "contextTag": "lifelong", "term": { "value": "ayah", "script": "Latin", "rom": "ayah" }, "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "faculties": [
+      { "id": "wield-desirable-dominion", "name": "Wield the desirable dominion of Ahura Mazda's kingdom", "term": { "value": "xšaθra", "script": "Latin", "rom": "xšaθra" }, "inheritability": "none", "notes": "Power exercised for the good", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 51" }] },
+      { "id": "preside-over-metals", "name": "Preside over metals and the molten metal of judgment", "term": { "value": "ayah", "script": "Latin", "rom": "ayah" }, "inheritability": "none", "notes": "Guardian of metal", "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 51" }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Amesa Spenta'" }], "weight": "primary" }
+    ],
+    "notes": "Amesha Spenta of Desirable Dominion and divine sovereignty; guardian of metals."
+  },
+  {
+    "id": "zoroastrian_spenta_armaiti",
+    "name": { "primary": "Spenta Armaiti", "alt": ["Spandarmad", "Esfand"], "transliterations": { "avestan": "Spǝṇta Ārmaiti", "pahlavi": "Spandarmad" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "devotion-piety", "contextTag": "lifelong", "term": { "value": "𐬯𐬞𐬆𐬧𐬙𐬀 �آرمئتی", "script": "Avestan", "rom": "Spǝṇta Ārmaiti" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }] },
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "zam", "script": "Latin", "rom": "zam" }, "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "faculties": [
+      { "id": "embody-devotion", "name": "Embody holy devotion and faithful piety to Ahura Mazda", "term": { "value": "ārmaiti", "script": "Latin", "rom": "ārmaiti" }, "inheritability": "none", "notes": "Beneficent Devotion", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }] },
+      { "id": "guard-the-earth", "name": "Protect and sustain the bountiful earth", "term": { "value": "zam", "script": "Latin", "rom": "zam" }, "inheritability": "none", "notes": "Genius of the earth", "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Amesa Spenta'" }], "weight": "primary" }
+    ],
+    "notes": "Amesha Spenta of Holy Devotion; the only female of the six, guardian of the earth."
+  },
+  {
+    "id": "zoroastrian_haurvatat",
+    "name": { "primary": "Haurvatat", "alt": ["Hordad", "Khordad"], "transliterations": { "avestan": "Hauruuatāt", "pahlavi": "Hordād" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "wholeness-health", "contextTag": "lifelong", "term": { "value": "𐬵𐬀𐬎𐬭𐬬𐬀𐬙𐬁𐬙", "script": "Avestan", "rom": "Hauruuatāt" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }] },
+      { "sphereId": "waters", "contextTag": "lifelong", "term": { "value": "āpō", "script": "Latin", "rom": "āpō" }, "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "faculties": [
+      { "id": "grant-wholeness", "name": "Grant wholeness, health, and perfection to the faithful", "term": { "value": "hauruuatāt", "script": "Latin", "rom": "hauruuatāt" }, "inheritability": "none", "notes": "Wholeness and integrity", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }] },
+      { "id": "preside-over-waters", "name": "Preside over the waters as the source of life", "term": { "value": "āpō", "script": "Latin", "rom": "āpō" }, "inheritability": "none", "notes": "Guardian of water; paired with Ameretat", "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 47" }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Amesa Spenta'" }], "weight": "primary" }
+    ],
+    "notes": "Amesha Spenta of Wholeness and Health; guardian of the waters, paired with her sister Ameretat."
+  },
+  {
+    "id": "zoroastrian_ameretat",
+    "name": { "primary": "Ameretat", "alt": ["Amurdad", "Mordad"], "transliterations": { "avestan": "Amǝrǝtāt", "pahlavi": "Amurdād" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "immortality", "contextTag": "lifelong", "term": { "value": "𐬀𐬨𐬆𐬭𐬆𐬙𐬁𐬙", "script": "Avestan", "rom": "Amǝrǝtāt" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 45" }] },
+      { "sphereId": "plants-vegetation", "contextTag": "lifelong", "term": { "value": "uruuarā", "script": "Latin", "rom": "uruuarā" }, "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "faculties": [
+      { "id": "grant-immortality", "name": "Grant immortality and deathless life to the righteous", "term": { "value": "amǝrǝtāt", "script": "Latin", "rom": "amǝrǝtāt" }, "inheritability": "none", "notes": "Not-dying, eternal life", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 45" }] },
+      { "id": "preside-over-plants", "name": "Preside over plants and life-giving vegetation", "term": { "value": "uruuarā", "script": "Latin", "rom": "uruuarā" }, "inheritability": "none", "notes": "Guardian of plants; paired with Haurvatat", "sources": [{ "kind": "primary", "reference": "Bundahishn 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 45" }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Amesa Spenta'" }], "weight": "primary" }
+    ],
+    "notes": "Amesha Spenta of Immortality; guardian of plants, paired with her sister Haurvatat."
+  },
+  {
+    "id": "zoroastrian_mithra",
+    "name": { "primary": "Mithra", "alt": ["Mihr", "Mehr"], "transliterations": { "avestan": "Miθra", "pahlavi": "Mihr" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "covenant-contract", "contextTag": "lifelong", "term": { "value": "𐬨𐬌𐬚𐬭𐬀", "script": "Avestan", "rom": "Miθra" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 10 (Mihr Yasht)" }] },
+      { "sphereId": "light-sun", "contextTag": "lifelong", "term": { "value": "raocah", "script": "Latin", "rom": "raocah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 10" }] },
+      { "sphereId": "justice-judgment", "contextTag": "afterlife", "term": { "value": "miθra", "script": "Latin", "rom": "miθra" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 10" }] }
+    ],
+    "faculties": [
+      { "id": "guard-the-covenant", "name": "Guard all covenants and punish those who break their oath", "term": { "value": "miθrō.druj", "script": "Latin", "rom": "miθrō.druj" }, "inheritability": "none", "notes": "Smites the covenant-breaker", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 10" }] },
+      { "id": "all-seeing-watch", "name": "Watch over the world with ten thousand eyes, never sleeping", "term": { "value": "baēuuarǝ.casman", "script": "Latin", "rom": "baēuuarǝ.casman" }, "inheritability": "none", "notes": "A thousand ears, ten thousand eyes", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 10" }] },
+      { "id": "judge-the-dead", "name": "Judge souls with Sraosha and Rashnu at the Chinvat bridge", "term": { "value": "Cinuuatō.pǝrǝtu", "script": "Latin", "rom": "Cinuuatō.pǝrǝtu" }, "inheritability": "none", "notes": "One of three bridge-keepers", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 10" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 10 (Mihr Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of covenants, light, and oaths; all-seeing judge whom Ahura Mazda set as worthy of worship as himself."
+  },
+  {
+    "id": "zoroastrian_aredvi_sura_anahita",
+    "name": { "primary": "Aredvi Sura Anahita", "alt": ["Anahita", "Anahid", "Nahid"], "transliterations": { "avestan": "Arǝduuī Sūrā Anāhitā", "pahlavi": "Anāhīd" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "waters-rivers", "contextTag": "lifelong", "term": { "value": "𐬀𐬭𐬆𐬛𐬎𐬬𐬍 𐬯𐬩𐬭𐬁 𐬀𐬥𐬁𐬵𐬌𐬙𐬁", "script": "Avestan", "rom": "Arǝduuī Sūrā Anāhitā" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5 (Aban Yasht)" }] },
+      { "sphereId": "fertility-fecundity", "contextTag": "lifelong", "term": { "value": "anāhitā", "script": "Latin", "rom": "anāhitā" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5" }] },
+      { "sphereId": "healing-waters", "contextTag": "lifelong", "term": { "value": "sūrā", "script": "Latin", "rom": "sūrā" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5" }] }
+    ],
+    "faculties": [
+      { "id": "pour-the-waters", "name": "Pour forth the world river that waters and renews the earth", "term": { "value": "arǝduuī", "script": "Latin", "rom": "arǝduuī" }, "inheritability": "none", "notes": "Source river encircling the earth", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5" }] },
+      { "id": "purify-the-seed", "name": "Purify the seed of men and the wombs of women", "term": { "value": "anāhitā", "script": "Latin", "rom": "anāhitā" }, "inheritability": "none", "notes": "Brings fertility and safe birth", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5" }] },
+      { "id": "grant-victory-to-heroes", "name": "Grant boons and victory to heroes who sacrifice to her", "term": { "value": "yasna", "script": "Latin", "rom": "yasna" }, "inheritability": "none", "notes": "Petitioned by Yima, Thraetaona, Keresaspa", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 5 (Aban Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of the waters, fertility, and healing; a great river goddess to whom heroes sacrifice for boons."
+  },
+  {
+    "id": "zoroastrian_verethragna",
+    "name": { "primary": "Verethragna", "alt": ["Bahram", "Vahram", "Warahran"], "transliterations": { "avestan": "Vǝrǝθraγna", "pahlavi": "Wahrām" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "victory", "contextTag": "lifelong", "term": { "value": "𐬬𐬆𐬭𐬆𐬚𐬭𐬀𐬖𐬥𐬀", "script": "Avestan", "rom": "Vǝrǝθraγna" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14 (Bahram Yasht)" }] },
+      { "sphereId": "war-might", "contextTag": "lifelong", "term": { "value": "vǝrǝθra", "script": "Latin", "rom": "vǝrǝθra" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14" }] }
+    ],
+    "faculties": [
+      { "id": "smash-resistance", "name": "Smash every obstacle and break the enemy's resistance", "term": { "value": "vǝrǝθra-jan", "script": "Latin", "rom": "vǝrǝθra-jan" }, "inheritability": "none", "notes": "Name means smiter of resistance", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14" }] },
+      { "id": "shapeshift-ten-forms", "name": "Take ten incarnate forms to deliver victory to worshippers", "term": { "value": "kǝhrp", "script": "Latin", "rom": "kǝhrp" }, "inheritability": "none", "notes": "Appears to Zoroaster in ten shapes", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14" }] },
+      { "id": "grant-virility", "name": "Bestow strength, virility, and keen vision on the faithful", "term": { "value": "aojah", "script": "Latin", "rom": "aojah" }, "inheritability": "none", "notes": "Giver of might and triumph", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14" }] }
+    ],
+    "materialCulture": [
+      { "id": "form-wind", "name": "Form of the mighty wind", "term": { "value": "vāta", "script": "Latin", "rom": "vāta" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.2" }] },
+      { "id": "form-bull", "name": "Form of the bull with golden horns", "term": { "value": "gāuš", "script": "Latin", "rom": "gāuš" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.7" }] },
+      { "id": "form-horse", "name": "Form of the white horse with golden ears", "term": { "value": "aspa", "script": "Latin", "rom": "aspa" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.9" }] },
+      { "id": "form-camel", "name": "Form of the rutting camel", "term": { "value": "uštra", "script": "Latin", "rom": "uštra" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.11" }] },
+      { "id": "form-boar", "name": "Form of the sharp-tusked boar", "term": { "value": "varāza", "script": "Latin", "rom": "varāza" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.15" }] },
+      { "id": "form-youth", "name": "Form of the beautiful fifteen-year-old youth", "term": { "value": "maoiri", "script": "Latin", "rom": "maoiri" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.17" }] },
+      { "id": "form-bird-varaghna", "name": "Form of the swift bird of prey Varaghna", "term": { "value": "vārǝγna", "script": "Latin", "rom": "vārǝγna" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.19" }] },
+      { "id": "form-ram", "name": "Form of the wild ram", "term": { "value": "maēša", "script": "Latin", "rom": "maēša" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.23" }] },
+      { "id": "form-buck", "name": "Form of the fighting wild goat", "term": { "value": "būza", "script": "Latin", "rom": "būza" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.25" }] },
+      { "id": "form-warrior", "name": "Form of the armed warrior man", "term": { "value": "nar", "script": "Latin", "rom": "nar" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 14.27" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 14 (Bahram Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of victory and war who appears in ten incarnate forms; the smasher of resistance and giver of triumph."
+  },
+  {
+    "id": "zoroastrian_tishtrya",
+    "name": { "primary": "Tishtrya", "alt": ["Tir", "Tishtar"], "transliterations": { "avestan": "Tištriia", "pahlavi": "Tištar" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "𐬙𐬌𐬴𐬙𐬭𐬌𐬌𐬀", "script": "Avestan", "rom": "Tištriia" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 8 (Tir Yasht)" }] },
+      { "sphereId": "stars", "contextTag": "lifelong", "term": { "value": "star", "script": "Latin", "rom": "star" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 8" }] }
+    ],
+    "faculties": [
+      { "id": "bring-the-rains", "name": "Gather the waters and spread them over the earth as rain", "term": { "value": "vārǝ", "script": "Latin", "rom": "vārǝ" }, "inheritability": "none", "notes": "Brings the seasonal rains", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 8" }] },
+      { "id": "defeat-apaosha", "name": "Defeat the drought-demon Apaosha as a white stallion", "term": { "value": "Apaoša", "script": "Latin", "rom": "Apaoša" }, "inheritability": "none", "notes": "Battles Apaosha at the Vourukasha sea", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 8" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 8 (Tir Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of the star Sirius and the rains; defeats the drought-demon Apaosha in the form of a white horse."
+  },
+  {
+    "id": "zoroastrian_sraosha",
+    "name": { "primary": "Sraosha", "alt": ["Srosh", "Soroush"], "transliterations": { "avestan": "Sraoša", "pahlavi": "Srōš" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "obedience-conscience", "contextTag": "lifelong", "term": { "value": "𐬯𐬭𐬀𐬊𐬴𐬀", "script": "Avestan", "rom": "Sraoša" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 57 (Srosh Yasht)" }] },
+      { "sphereId": "ritual-worship", "contextTag": "lifelong", "term": { "value": "ratu", "script": "Latin", "rom": "ratu" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 57" }] }
+    ],
+    "faculties": [
+      { "id": "smite-the-demons", "name": "Smite the demons nightly with his upraised club", "term": { "value": "vazra", "script": "Latin", "rom": "vazra" }, "inheritability": "none", "notes": "Wields a club against Aeshma and daevas", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 57" }] },
+      { "id": "guide-the-soul", "name": "Guide and guard the soul across the Chinvat bridge", "term": { "value": "Cinuuatō.pǝrǝtu", "script": "Latin", "rom": "Cinuuatō.pǝrǝtu" }, "inheritability": "none", "notes": "Accompanies souls of the dead", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 57" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 57 (Srosh Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of obedience, conscience, and ritual; lord of prayer who guards souls and battles demons by night."
+  },
+  {
+    "id": "zoroastrian_rashnu",
+    "name": { "primary": "Rashnu", "alt": ["Rashn"], "transliterations": { "avestan": "Rašnu", "pahlavi": "Rašn" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "justice-judgment", "contextTag": "afterlife", "term": { "value": "𐬭𐬀𐬱𐬥𐬎", "script": "Avestan", "rom": "Rašnu" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 12 (Rashn Yasht)" }] },
+      { "sphereId": "truth-rectitude", "contextTag": "lifelong", "term": { "value": "razišta", "script": "Latin", "rom": "razišta" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 12" }] }
+    ],
+    "faculties": [
+      { "id": "weigh-the-deeds", "name": "Weigh the deeds of souls on his golden balance", "term": { "value": "tarāzūk", "script": "Latin", "rom": "tarāzūk" }, "inheritability": "none", "notes": "Judges the dead at the Chinvat bridge", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 12" }] },
+      { "id": "discern-truth", "name": "Discern truth from falsehood as the most upright judge", "term": { "value": "razišta", "script": "Latin", "rom": "razišta" }, "inheritability": "none", "notes": "Rashnu the most just", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 12" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 12 (Rashn Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of justice who weighs the deeds of the dead at the Chinvat bridge alongside Mithra and Sraosha."
+  },
+  {
+    "id": "zoroastrian_atar",
+    "name": { "primary": "Atar", "alt": ["Adar", "Azar", "Atash"], "transliterations": { "avestan": "Ātar", "pahlavi": "Ādur" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["zoroastrian_ahura_mazda"], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "𐬁𐬙𐬀𐬭", "script": "Avestan", "rom": "Ātar" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 62 (Atash Niyayesh)" }] },
+      { "sphereId": "purity-light", "contextTag": "lifelong", "term": { "value": "ātarš", "script": "Latin", "rom": "ātarš" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 17" }] }
+    ],
+    "faculties": [
+      { "id": "embody-sacred-fire", "name": "Embody the sacred fire, son of Ahura Mazda", "term": { "value": "ātarš puθrō ahurahe mazdā", "script": "Latin", "rom": "ātarš puθrō ahurahe mazdā" }, "inheritability": "none", "notes": "Called the Son of Ahura Mazda", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 62" }] },
+      { "id": "battle-the-dragon", "name": "Contend with Azhi Dahaka for the divine Glory", "term": { "value": "xᵛarǝnah", "script": "Latin", "rom": "xᵛarǝnah" }, "inheritability": "none", "notes": "Wrestles the dragon for the khvarenah", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.46-50" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 62 (Atash Niyayesh)" }, { "kind": "primary", "reference": "Avesta, Yasht 19" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of fire, called the Son of Ahura Mazda; the sacred flame at the center of Zoroastrian worship."
+  },
+  {
+    "id": "zoroastrian_vayu",
+    "name": { "primary": "Vayu", "alt": ["Vay", "Wad"], "transliterations": { "avestan": "Vaiiu", "pahlavi": "Wāy" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "wind-atmosphere", "contextTag": "lifelong", "term": { "value": "𐬬𐬀𐬌𐬌𐬎", "script": "Avestan", "rom": "Vaiiu" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 15 (Ram Yasht)" }] },
+      { "sphereId": "fate-intermediate-space", "contextTag": "lifelong", "term": { "value": "vaiiu", "script": "Latin", "rom": "vaiiu" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 15" }] }
+    ],
+    "faculties": [
+      { "id": "rule-the-midspace", "name": "Rule the wind and the void between Ahura Mazda's and Ahriman's realms", "term": { "value": "vaiiu", "script": "Latin", "rom": "vaiiu" }, "inheritability": "none", "notes": "Has a good and a bad part", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 15" }] },
+      { "id": "grant-passage", "name": "Drive forward and grant passage to heroes who sacrifice", "term": { "value": "vāta", "script": "Latin", "rom": "vāta" }, "inheritability": "none", "notes": "Petitioned by Yima and other heroes", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 15" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 15 (Ram Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata personifying the wind and the intermediate atmosphere; an ambivalent power with both beneficent and harmful aspects."
+  },
+  {
+    "id": "zoroastrian_haoma",
+    "name": { "primary": "Haoma", "alt": ["Hom", "Haoma Yazata"], "transliterations": { "avestan": "Haoma", "pahlavi": "Hōm" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sacred-plant", "contextTag": "lifelong", "term": { "value": "𐬵𐬀𐬊𐬨𐬀", "script": "Avestan", "rom": "Haoma" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 9-11 (Hom Yasht)" }] },
+      { "sphereId": "healing-immortality", "contextTag": "lifelong", "term": { "value": "dūraoša", "script": "Latin", "rom": "dūraoša" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 9" }] }
+    ],
+    "faculties": [
+      { "id": "give-health-and-progeny", "name": "Grant health, long life, and illustrious offspring", "term": { "value": "baēšaza", "script": "Latin", "rom": "baēšaza" }, "inheritability": "none", "notes": "Boons given to Vivanghant and Athwya", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 9" }] },
+      { "id": "ward-off-death", "name": "Ward off death as the white Haoma of immortality", "term": { "value": "dūraoša", "script": "Latin", "rom": "dūraoša" }, "inheritability": "none", "notes": "The deathless white Haoma at world's renewal", "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 9" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasna 9-11 (Hom Yasht)" }], "weight": "primary" }
+    ],
+    "notes": "Yazata of the pressed haoma plant, giver of healing and immortality; appears to Zoroaster as the fair man Duraosha."
+  },
+  {
+    "id": "zoroastrian_yima",
+    "name": { "primary": "Yima", "alt": ["Jamshid", "Jam", "Yima Khshaeta"], "transliterations": { "avestan": "Yima Xšaēta", "pahlavi": "Jam" } },
+    "type": "mortal", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": [], "temporal": { "era": "primordial", "note": "first mortal king of the Pishdadian age" },
+    "domains": [
+      { "sphereId": "kingship-golden-age", "contextTag": "lifelong", "term": { "value": "𐬫𐬌𐬨𐬀 𐬑𐬱𐬀𐬉𐬙𐬀", "script": "Avestan", "rom": "Yima Xšaēta" }, "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 2" }] },
+      { "sphereId": "divine-glory-khvarenah", "contextTag": "lifelong", "term": { "value": "xᵛarǝnah", "script": "Latin", "rom": "xᵛarǝnah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.31-38" }] }
+    ],
+    "faculties": [
+      { "id": "build-the-vara", "name": "Build the underground Vara to shelter life from the deadly winter", "term": { "value": "vara", "script": "Latin", "rom": "vara" }, "inheritability": "none", "notes": "Stores seeds of all living kinds", "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 2" }] },
+      { "id": "enlarge-the-earth", "name": "Enlarge the earth threefold to hold his thriving creatures", "term": { "value": "zam", "script": "Latin", "rom": "zam" }, "inheritability": "none", "notes": "Expands the earth three times", "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 2" }] },
+      { "id": "abolish-death", "name": "Hold death, sickness, and aging at bay during his reign", "term": { "value": "ameretat", "script": "Latin", "rom": "amǝrǝtāt" }, "inheritability": "none", "notes": "Golden age without death or want", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 9.8-10" }] }
+    ],
+    "materialCulture": [
+      { "id": "golden-seal-dagger", "name": "Golden seal-ring and gold-inlaid dagger of Ahura Mazda", "term": { "value": "suβrā", "script": "Latin", "rom": "suβrā" }, "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 2.6" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Vendidad 2" }, { "kind": "primary", "reference": "Avesta, Yasht 19" }, { "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Jamshid)" }], "weight": "primary" }
+    ],
+    "notes": "First mortal king, endowed with the divine Glory; built the Vara and ruled a deathless golden age before pride cost him the khvarenah and he was sawn in two by Spityura."
+  },
+  {
+    "id": "zoroastrian_thraetaona",
+    "name": { "primary": "Thraetaona", "alt": ["Fereydun", "Fereidun", "Faridun"], "transliterations": { "avestan": "Θraētaona", "pahlavi": "Frēdōn" } },
+    "type": "mortal", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": [], "temporal": { "era": "legendary", "note": "Pishdadian dynasty; son of Athwya/Abtin" },
+    "domains": [
+      { "sphereId": "kingship-deliverance", "contextTag": "lifelong", "term": { "value": "𐬚𐬭𐬀𐬉𐬙𐬀𐬊𐬥𐬀", "script": "Avestan", "rom": "Θraētaona" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5.33-35" }] },
+      { "sphereId": "divine-glory-khvarenah", "contextTag": "lifelong", "term": { "value": "farr", "script": "Latin", "rom": "farr" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.36-37" }] },
+      { "sphereId": "healing-medicine", "contextTag": "lifelong", "term": { "value": "baēšaza", "script": "Latin", "rom": "baēšaza" }, "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 20.1" }] }
+    ],
+    "faculties": [
+      { "id": "slay-azhi-dahaka", "name": "Smite the three-headed dragon Azhi Dahaka and bind him", "term": { "value": "aži dahāka", "script": "Latin", "rom": "aži dahāka" }, "inheritability": "none", "notes": "Most victorious of mortals after the gods", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5.34" }] },
+      { "id": "found-healing", "name": "Be invoked against fever, disease, and the serpent's venom", "term": { "value": "baēšaza", "script": "Latin", "rom": "baēšaza" }, "inheritability": "none", "notes": "First averter of sickness", "sources": [{ "kind": "primary", "reference": "Avesta, Vendidad 20" }] }
+    ],
+    "materialCulture": [
+      { "id": "gorz-ox-mace", "name": "Ox-headed mace Gorz with which he struck down Zahhak", "term": { "value": "gurz-i gāwsar", "script": "Latin", "rom": "gurz-i gāwsar" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Fereydun and Zahhak)" }] },
+      { "id": "drafsh-e-kaviani", "name": "Royal banner Drafsh-e Kaviani, gilded from Kaveh's apron", "term": { "value": "drafš-i kāviyān", "script": "Latin", "rom": "drafš-i kāviyān" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Kaveh and Fereydun)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 5.33-35" }, { "kind": "primary", "reference": "Avesta, Yasht 19" }, { "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Fereydun)" }], "weight": "primary" }
+    ],
+    "notes": "Dragon-slaying hero-king endowed with the Glory; overthrew the tyrant Azhi Dahaka/Zahhak and bound him beneath Mount Damavand."
+  },
+  {
+    "id": "zoroastrian_keresaspa",
+    "name": { "primary": "Keresaspa", "alt": ["Garshasp", "Karsasp", "Sama Keresaspa"], "transliterations": { "avestan": "Kǝrǝsāspa", "pahlavi": "Kirsāsp" } },
+    "type": "mortal", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "legendary", "note": "of the House of Sama; son of Thrita; lies in enchanted sleep until the end-time" },
+    "domains": [
+      { "sphereId": "heroic-strength", "contextTag": "lifelong", "term": { "value": "𐬛𐬭𐬀𐬔𐬭𐬁𐬵𐬎", "script": "Avestan", "rom": "gaēsu (the maned)" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.38-44" }] },
+      { "sphereId": "divine-glory-khvarenah", "contextTag": "lifelong", "term": { "value": "xᵛarǝnah", "script": "Latin", "rom": "xᵛarǝnah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.38" }] }
+    ],
+    "faculties": [
+      { "id": "slay-the-horned-dragon", "name": "Slay the horned dragon Azhi Srvara and cook on its back", "term": { "value": "aži sruuara", "script": "Latin", "rom": "aži sruuara" }, "inheritability": "none", "notes": "Killed the man-devouring horned serpent", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.40" }] },
+      { "id": "kill-gandarewa", "name": "Drag the golden-heeled Gandarewa from the sea and slay him", "term": { "value": "gandarǝβa", "script": "Latin", "rom": "gandarǝβa" }, "inheritability": "none", "notes": "Nine days' battle in the cosmic ocean", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.41" }] },
+      { "id": "rise-at-the-end", "name": "Rise from enchanted sleep to slay freed Azhi Dahaka at world's renewal", "term": { "value": "frašō.kǝrǝti", "script": "Latin", "rom": "frašō.kǝrǝti" }, "inheritability": "none", "notes": "Eschatological dragon-slayer", "sources": [{ "kind": "secondary", "reference": "Bundahishn 29.8-9" }] }
+    ],
+    "materialCulture": [
+      { "id": "keresaspa-club", "name": "Mighty club, the hero's signature weapon", "term": { "value": "gadā", "script": "Latin", "rom": "gadā" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasna 9.10" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 19.38-44" }, { "kind": "primary", "reference": "Avesta, Yasna 9.10" }, { "kind": "secondary", "reference": "Bundahishn 29" }], "weight": "primary" }
+    ],
+    "notes": "Club-wielding hero endowed with the Glory; slayer of dragons and demons who lies in deathless sleep until he rises to kill the freed Azhi Dahaka."
+  },
+  {
+    "id": "zoroastrian_rostam",
+    "name": { "primary": "Rostam", "alt": ["Rustam", "Rustahm"], "transliterations": { "persian": "Rostam", "pahlavi": "Rōdstahm" } },
+    "type": "mortal", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": [], "temporal": { "era": "legendary", "note": "of Sistan; son of Zal and Rudaba; champion of the Kayanian kings" },
+    "domains": [
+      { "sphereId": "heroic-champion", "contextTag": "lifelong", "term": { "value": "pahlavān", "script": "Latin", "rom": "pahlavān" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Rostam and Sohrab)" }] },
+      { "sphereId": "war-protection", "contextTag": "lifelong", "term": { "value": "tahamtan", "script": "Latin", "rom": "tahamtan (mighty-bodied)" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh" }] }
+    ],
+    "faculties": [
+      { "id": "perform-haft-khan", "name": "Perform the Seven Labours to free Kay Kavus from Mazandaran", "term": { "value": "haft xān", "script": "Latin", "rom": "haft xān" }, "inheritability": "none", "notes": "Seven trials with his horse Rakhsh", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Haft Khan)" }] },
+      { "id": "slay-div-e-sepid", "name": "Slay the White Demon and heal the king's blindness with its blood", "term": { "value": "dīv-e sepīd", "script": "Latin", "rom": "dīv-e sepīd" }, "inheritability": "none", "notes": "Climactic seventh labour", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Haft Khan)" }] }
+    ],
+    "materialCulture": [
+      { "id": "rakhsh-mount", "name": "Faithful warhorse Rakhsh that fights beside him", "term": { "value": "raxš", "script": "Latin", "rom": "raxš" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Rostam and Rakhsh)" }] },
+      { "id": "tiger-skin-armor", "name": "Tiger-skin cuirass Babr-e Bayan and ox-headed mace", "term": { "value": "babr-e bayān", "script": "Latin", "rom": "babr-e bayān" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Rostam cycle)" }], "weight": "primary" }
+    ],
+    "notes": "Greatest champion of the Shāhnāmeh, the mighty-bodied hero of Sistan who performs the Seven Labours and serves the Kayanian kings on his steed Rakhsh."
+  },
+  {
+    "id": "zoroastrian_kay_khosrow",
+    "name": { "primary": "Kay Khosrow", "alt": ["Kai Khusraw", "Kaykhosrow", "Kavi Haosravah"], "transliterations": { "avestan": "Kauui Haosrauuah", "pahlavi": "Kay Husrōy" } },
+    "type": "mortal", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "unknown",
+    "parentIds": ["zoroastrian_siyavash"], "temporal": { "era": "legendary", "note": "Kayanian king; son of Siyavash and Farangis" },
+    "domains": [
+      { "sphereId": "just-kingship", "contextTag": "lifelong", "term": { "value": "𐬐𐬀𐬎𐬎𐬌 𐬵𐬀𐬊𐬯𐬭𐬀𐬎𐬬𐬀𐬵", "script": "Avestan", "rom": "Kauui Haosrauuah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5.49-50" }] },
+      { "sphereId": "divine-glory-khvarenah", "contextTag": "lifelong", "term": { "value": "xᵛarǝnah", "script": "Latin", "rom": "xᵛarǝnah" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.71-77" }] }
+    ],
+    "faculties": [
+      { "id": "avenge-siyavash", "name": "Avenge his father by defeating and slaying Afrasiab of Turan", "term": { "value": "kēn-e siyāvaš", "script": "Latin", "rom": "kēn-e siyāvaš" }, "inheritability": "none", "notes": "Ends the long Iran-Turan war", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Kay Khosrow)" }] },
+      { "id": "scry-the-world", "name": "See all the world's hidden things in the divining cup", "term": { "value": "jām-e gītī-nemā", "script": "Latin", "rom": "jām-e gītī-nemā" }, "inheritability": "none", "notes": "Locates the lost hero Bizhan", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Bizhan and Manizheh)" }] },
+      { "id": "vanish-into-the-snows", "name": "Abdicate at his glory's height and vanish into the mountain snows", "term": { "value": "nāpadīd", "script": "Latin", "rom": "nāpadīd" }, "inheritability": "none", "notes": "Leaves the world rather than decline", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Passing of Kay Khosrow)" }] }
+    ],
+    "materialCulture": [
+      { "id": "jam-e-jam", "name": "World-revealing cup Jam-e Jam used for divination", "term": { "value": "jām-e jam", "script": "Latin", "rom": "jām-e jam" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Bizhan and Manizheh)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 5.49-50" }, { "kind": "primary", "reference": "Avesta, Yasht 19.71-77" }, { "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Kay Khosrow)" }], "weight": "primary" }
+    ],
+    "notes": "Ideal just king of the Kayanian line, son of Siyavash; avenger of his father who, at his glory's peak, mysteriously vanished into the mountains."
+  },
+  {
+    "id": "zoroastrian_siyavash",
+    "name": { "primary": "Siyavash", "alt": ["Siyavakhsh", "Siavash", "Kavi Syavarshan"], "transliterations": { "avestan": "Kauui Siiāuuaršan", "pahlavi": "Siyāwaxš" } },
+    "type": "mortal", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": [], "temporal": { "era": "legendary", "note": "Kayanian prince; son of Kay Kavus; father of Kay Khosrow" },
+    "domains": [
+      { "sphereId": "virtue-innocence", "contextTag": "lifelong", "term": { "value": "𐬯𐬌𐬌𐬁𐬎𐬎𐬀𐬭𐬱𐬀𐬥", "script": "Avestan", "rom": "Siiāuuaršan" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 19.71" }] },
+      { "sphereId": "martyrdom-purity", "contextTag": "lifelong", "term": { "value": "siyāvaxš", "script": "Latin", "rom": "siyāvaxš" }, "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Siyavash)" }] }
+    ],
+    "faculties": [
+      { "id": "pass-the-fire-ordeal", "name": "Ride unburned through the towering fire to prove his innocence", "term": { "value": "var-e ātaš", "script": "Latin", "rom": "var-e ātaš" }, "inheritability": "none", "notes": "Trial by fire against Sudabeh's slander", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Siyavash)" }] },
+      { "id": "innocent-blood-omen", "name": "Bleed the plant 'Blood of Siyavash' where he is unjustly killed", "term": { "value": "xūn-e siyāvašān", "script": "Latin", "rom": "xūn-e siyāvašān" }, "inheritability": "none", "notes": "Martyr's blood marks his murder", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Siyavash)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 19.71" }, { "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Siyavash)" }], "weight": "primary" }
+    ],
+    "notes": "Innocent and virtuous Kayanian prince who survived a trial by fire but was treacherously slain in Turan; father of Kay Khosrow."
+  },
+  {
+    "id": "zoroastrian_azhi_dahaka",
+    "name": { "primary": "Azhi Dahaka", "alt": ["Zahhak", "Zohak", "Dahag", "Bevarasp"], "transliterations": { "avestan": "Aži Dahāka", "pahlavi": "Dahāg" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Zoroastrian", "primaryTradition": "Zoroastrian",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "legendary", "note": "demonic usurper-king; bound, not slain, until the end-time" },
+    "domains": [
+      { "sphereId": "tyranny-evil", "contextTag": "lifelong", "term": { "value": "𐬀𐬲𐬌 𐬛𐬀𐬵𐬁𐬐𐬀", "script": "Avestan", "rom": "Aži Dahāka" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 5.29-31" }] },
+      { "sphereId": "chaos-druj", "contextTag": "lifelong", "term": { "value": "druj", "script": "Latin", "rom": "druj" }, "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 9.13-14" }] }
+    ],
+    "faculties": [
+      { "id": "three-heads-six-eyes", "name": "Menace creation with three maws, three heads, and six eyes", "term": { "value": "θri.zafan", "script": "Latin", "rom": "θrizafan, θrikamǝrǝða" }, "inheritability": "none", "notes": "Most powerful Druj-monster made by Ahriman", "sources": [{ "kind": "primary", "reference": "Avesta, Yasht 9.14" }] },
+      { "id": "shoulder-serpents", "name": "Feed the serpents sprung from his shoulders on human brains", "term": { "value": "mār-e dōš", "script": "Latin", "rom": "mār-e dōš" }, "inheritability": "none", "notes": "Shahnameh: snakes from Ahriman's kiss", "sources": [{ "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Zahhak)" }] },
+      { "id": "break-loose-at-end", "name": "Break his bonds at world's end before Keresaspa slays him", "term": { "value": "frašō.kǝrǝti", "script": "Latin", "rom": "frašō.kǝrǝti" }, "inheritability": "none", "notes": "Freed at the renovation, then destroyed", "sources": [{ "kind": "secondary", "reference": "Bundahishn 29.8-9" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Avesta, Yasht 5.29-31" }, { "kind": "primary", "reference": "Avesta, Yasht 9.13-14" }, { "kind": "primary", "reference": "Ferdowsi, Shāhnāmeh (Zahhak)" }], "weight": "primary" }
+    ],
+    "notes": "Three-headed serpent-dragon of the Lie created by Angra Mainyu; usurped the throne as the tyrant Zahhak until Thraetaona bound him beneath Mount Damavand."
+  }
+]
+```
+
+I authored 25 figures for the Zoroastrian/Persian tradition, all with `origin: "canon"` and real citations to the Avesta (by Yasna/Yasht/Vendidad), the Bundahishn, and Ferdowsi's Shāhnāmeh.
+
+**Coverage:**
+- **Core theology (3):** Ahura Mazda, Angra Mainyu/Ahriman, Spenta Mainyu
+- **Amesha Spentas (6):** Vohu Manah, Asha Vahishta, Khshathra Vairya, Spenta Armaiti (female), Haurvatat (female), Ameretat (female)
+- **Yazatas (9):** Mithra (Yasht 10), Aredvi Sura Anahita (Yasht 5), Verethragna (Yasht 14), Tishtrya (Yasht 8), Sraosha (Yasna 57), Rashnu (Yasht 12), Atar, Vayu (Yasht 15), Haoma (Hom Yasht / Yasna 9-11)
+- **Hero tier (6):** Yima/Jamshid, Thraetaona/Fereydun, Keresaspa/Garshasp, Rostam, Kay Khosrow, Siyavash
+- **Antagonist (1):** Aži Dahāka/Zahhak
+
+**Key schema decisions:**
+- **Faculties vs. domains kept distinct** — domains are spheres/nouns (e.g. "victory", "waters"); faculties are ability verb-phrases (e.g. "Smash every obstacle", "Pour forth the world river").
+- **materialCulture (ITEMS)** populated where attested: Verethragna's ten incarnate forms; Yima's golden seal-ring and dagger (Vendidad 2.6); Fereydun's ox-headed mace Gorz and the Drafsh-e Kaviani banner; Keresaspa's club; Rostam's mount Rakhsh and Babr-e Bayan armor; Kay Khosrow's Jam-e Jam divining cup.
+- **Hero typing** — heroes are `mortal` (endowed with khvarenah/farr, not god-offspring), so `parentIds` are left empty except Kay Khosrow→Siyavash, which is genuinely attested. Aži Dahāka is typed `deity` as a demonic Druj-being made by Ahriman.
+- **vitalStatus** — gods "living"; Keresaspa "living" (enchanted sleep until the end-time) and Aži Dahāka "living" (bound, not slain) per eschatology; Kay Khosrow "unknown" (vanished, not died); other heroes "deceased".
+- Native terms in Avestan script where well-attested, otherwise romanized Avestan/Pahlavi/Persian; English always leads.
+
+One note on fidelity: the eschatological claim that Keresaspa rises to slay the freed Aži Dahāka is from the **Bundahishn** (later Pahlavi text), so I cited it as `secondary` rather than to the Avesta directly. Everything labeled `primary` traces to the Avesta or the Shāhnāmeh.

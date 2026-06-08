@@ -1,0 +1,346 @@
+The build script confirms the schema exactly: it parses the fenced ```json array, validates `type` against `deity|demigod|quartigod|scion|mortal`, dedups by `id`, and carries `faculties` (powers) and `materialCulture` (items). My output format matches. The `type` honesty rule maps cleanly: deities for the gods, demigod for the ancestral/culture-hero tier (Bochica, Bachué, the flood-serpents).
+
+I have everything needed. Here are the 17 newly-authored figures.
+
+Research summary of attestation:
+- Muisca sources: Fray Pedro Simón, Noticias historiales de las conquistas de tierra firme (c.1625); Juan Rodríguez Freyle, El Carnero (1636-38); Lucas Fernández de Piedrahita, Historia general (1688); Juan de Castellanos, Elegías (1589).
+- Mapuche sources: Tomás Guevara (Historia de Chile: Chile prehispánico; Folklore araucano); Ricardo E. Latcham (La organización social y las creencias religiosas de los antiguos araucanos, 1924); recorded Chilote/Mapuche oral tradition (Trentren–Kaikai cycle).
+
+```json
+[
+  {
+    "id": "muisca_bochica",
+    "name": { "primary": "Bochica", "alt": ["Nemqueteba", "Nemterequeteba", "Sadigua", "Xue"], "transliterations": { "muysccubun": "Bochica" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "civilization", "contextTag": "lifelong", "term": { "value": "Bochica", "script": "Muysccubun", "rom": "Bochica" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "law", "contextTag": "teaching", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "faculties": [
+      { "id": "shatter-tequendama", "name": "Shatter the rocks at Tequendama to drain the great flood", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Struck the cliffs with his staff", "sources": [ { "kind": "primary", "reference": "Rodríguez Freyle, El Carnero (1636-38)" } ] },
+      { "id": "teach-crafts", "name": "Teach the people weaving, agriculture and metalworking", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Itinerant culture-hero", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "id": "ride-rainbow", "name": "Appear and depart upon a rainbow before the Muisca", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Linked to Cuchavira", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "bochica-staff", "name": "Golden staff", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "notes": "Struck the rocks to open the Tequendama falls", "sources": [ { "kind": "primary", "reference": "Rodríguez Freyle, El Carnero (1636-38)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Rodríguez Freyle, El Carnero" } ], "weight": "primary" } ],
+    "notes": "Muisca civilizing culture-hero, bearded old man who taught law, crafts and morals, then drained the flood at Tequendama."
+  },
+  {
+    "id": "muisca_bachue",
+    "name": { "primary": "Bachué", "alt": ["Furachogua", "Fuzachogua"], "transliterations": { "muysccubun": "Bachué" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "Furachogua", "script": "Muysccubun", "rom": "Furachogua" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "ancestry", "contextTag": "origin", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "faculties": [
+      { "id": "emerge-iguaque", "name": "Emerge from Lake Iguaque carrying a three-year-old boy", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Origin of the people", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "id": "people-the-earth", "name": "Bear many children and populate the Muisca lands", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Married the grown boy", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "id": "become-serpent", "name": "Transform into a serpent and return into the lake", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Departed in old age", "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Piedrahita, Historia general (1688)" } ], "weight": "primary" } ],
+    "notes": "Ancestral mother of the Muisca who rose from Lake Iguaque and, her work done, returned to its waters as a serpent."
+  },
+  {
+    "id": "muisca_sue",
+    "name": { "primary": "Sué", "alt": ["Sua", "Xué", "Zuhé", "Suhé"], "transliterations": { "muysccubun": "Sué" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Sué", "script": "Muysccubun", "rom": "Sué" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "faculties": [
+      { "id": "give-light", "name": "Light and warm the world as the daytime sun", "term": { "value": "Sué", "script": "Muysccubun", "rom": "Sué" }, "inheritability": "none", "notes": "Husband of the moon Chía", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "sun-temple-sugamuxi", "name": "Temple of the Sun at Suamox (Sugamuxi)", "term": { "value": "Suamox", "script": "Muysccubun", "rom": "Suamox" }, "notes": "Chief solar sanctuary of the Muisca", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Castellanos, Elegías (1589)" } ], "weight": "primary" } ],
+    "notes": "Sun god of the Muisca, worshipped at Suamox (Sogamoso) and consort of the moon goddess Chía."
+  },
+  {
+    "id": "muisca_chia",
+    "name": { "primary": "Chía", "alt": ["Chie", "Yebra"], "transliterations": { "muysccubun": "Chía" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Chía", "script": "Muysccubun", "rom": "Chía" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "faculties": [
+      { "id": "light-night", "name": "Light the night sky as the moon over the Muisca", "term": { "value": "Chía", "script": "Muysccubun", "rom": "Chía" }, "inheritability": "none", "notes": "Consort of the sun Sué", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "moon-temple-chia", "name": "Temple of the Moon at Chía", "term": { "value": "Chía", "script": "Muysccubun", "rom": "Chía" }, "notes": "Sanctuary in the town named for the goddess", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Piedrahita, Historia general (1688)" } ], "weight": "primary" } ],
+    "notes": "Moon goddess of the Muisca, wife of the sun Sué, honoured at her own temple in the town of Chía."
+  },
+  {
+    "id": "muisca_chibchacum",
+    "name": { "primary": "Chibchacum", "alt": ["Chibchachum", "Chibcha-chum"], "transliterations": { "muysccubun": "Chibchacum" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Chibchacum", "script": "Muysccubun", "rom": "Chibchacum" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "faculties": [
+      { "id": "flood-savanna", "name": "Flood the Bogotá savanna by overflowing the rivers", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Punished the people", "sources": [ { "kind": "primary", "reference": "Rodríguez Freyle, El Carnero (1636-38)" } ] },
+      { "id": "bear-the-earth", "name": "Carry the world on his shoulders, causing quakes when he shifts", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Sentenced by Bochica", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Rodríguez Freyle, El Carnero" } ], "weight": "primary" } ],
+    "notes": "Patron of the earth and builders who flooded the savanna; Bochica condemned him to hold up the world, his shifting felt as earthquakes."
+  },
+  {
+    "id": "muisca_huitaca",
+    "name": { "primary": "Huitaca", "alt": ["Guitaca", "Xubchasgagua"], "transliterations": { "muysccubun": "Huitaca" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "pleasure", "contextTag": "lifelong", "term": { "value": "Huitaca", "script": "Muysccubun", "rom": "Huitaca" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "faculties": [
+      { "id": "preach-pleasure", "name": "Preach joy, dance, drunkenness and pleasure against Bochica", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Beautiful rebel goddess", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Piedrahita, Historia general (1688)" } ], "weight": "primary" } ],
+    "notes": "Beautiful goddess of pleasure and excess who opposed Bochica's teachings; he turned her into an owl (in some accounts, the moon)."
+  },
+  {
+    "id": "muisca_chaquen",
+    "name": { "primary": "Chaquén", "alt": ["Chasquen"], "transliterations": { "muysccubun": "Chaquén" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "boundaries", "contextTag": "lifelong", "term": { "value": "Chaquén", "script": "Muysccubun", "rom": "Chaquén" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "sport", "contextTag": "festival", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "faculties": [
+      { "id": "guard-boundaries", "name": "Watch over the boundary markers of the sown fields", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Protector of field limits", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "id": "bless-races", "name": "Manifest in festival foot-races and contests of the people", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Patron of runners", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ], "weight": "primary" } ],
+    "notes": "Muisca god of field boundaries, runners and festival games, honoured in the foot-races held on feast days."
+  },
+  {
+    "id": "muisca_cuchavira",
+    "name": { "primary": "Cuchavira", "alt": ["Cuchaviva", "Chuchaviva"], "transliterations": { "muysccubun": "Cuchavira" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "rainbow", "contextTag": "lifelong", "term": { "value": "Cuchavira", "script": "Muysccubun", "rom": "Cuchavira" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "faculties": [
+      { "id": "appear-as-rainbow", "name": "Appear as the rainbow when rain meets the sun", "term": { "value": "Cuchavira", "script": "Muysccubun", "rom": "Cuchavira" }, "inheritability": "none", "notes": "Name glossed 'shining air'", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "id": "protect-women-sick", "name": "Protect women in labour and those stricken with illness", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Patron of the afflicted", "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Piedrahita, Historia general (1688)" } ], "weight": "primary" } ],
+    "notes": "Rainbow deity ('shining air'), protector of labouring women and the sick, associated with Bochica's appearances."
+  },
+  {
+    "id": "muisca_nemcatacoa",
+    "name": { "primary": "Nemcatacoa", "alt": ["Nencatacoa", "Fo"], "transliterations": { "muysccubun": "Nemcatacoa" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Muisca", "primaryTradition": "Muisca",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "crafts", "contextTag": "lifelong", "term": { "value": "Nemcatacoa", "script": "Muysccubun", "rom": "Nemcatacoa" }, "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "sphereId": "festivity", "contextTag": "lifelong", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Lucas Fernández de Piedrahita, Historia general (1688)" } ] }
+    ],
+    "faculties": [
+      { "id": "protect-weavers", "name": "Protect the weavers and painters of ceremonial mantles", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "Patron of mantle-makers", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] },
+      { "id": "appear-as-bear-fox", "name": "Appear as a bear or fox at drunken festivals", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "inheritability": "none", "notes": "God of drunkenness", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "painted-manta", "name": "Painted ceremonial mantle (manta)", "term": { "value": "", "script": "Muysccubun", "rom": "" }, "notes": "Craft under his patronage", "sources": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pedro Simón, Noticias historiales (c.1625); Piedrahita, Historia general (1688)" } ], "weight": "primary" } ],
+    "notes": "Patron of weavers, mantle-painters, festivity and drunkenness, appearing as a bear or fox at chicha feasts."
+  },
+  {
+    "id": "mapuche_ngenechen",
+    "name": { "primary": "Ngenechen", "alt": ["Nguenechen", "Guinechen", "Ngünechen"], "transliterations": { "mapudungun": "Ngenechen" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "other", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Ngenechen", "script": "Mapudungun", "rom": "Ngenechen" }, "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... de los antiguos araucanos (1924)" } ] },
+      { "sphereId": "sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Historia de Chile: Chile prehispánico (1925)" } ] }
+    ],
+    "faculties": [
+      { "id": "sustain-people", "name": "Rule and sustain the Mapuche people and the world", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Name means 'ruler of the people'", "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Folklore araucano (1911)" } ] },
+      { "id": "embody-four", "name": "Embody himself as old man, old woman, youth and maiden", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Fourfold supreme being", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Guevara, Historia de Chile (1925); Latcham (1924); recorded Mapuche oral tradition" } ], "weight": "secondary" } ],
+    "notes": "Supreme being of the Mapuche, the fourfold 'ruler of the people' embodied as paired elder and young man and woman who hold cosmic balance."
+  },
+  {
+    "id": "mapuche_antu",
+    "name": { "primary": "Antü", "alt": ["Antu", "Anchimallén-Antü"], "transliterations": { "mapudungun": "Antü" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Antü", "script": "Mapudungun", "rom": "Antü" }, "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Historia de Chile: Chile prehispánico (1925)" } ] }
+    ],
+    "faculties": [
+      { "id": "give-daylight", "name": "Pour out daylight, warmth and order over the world", "term": { "value": "Antü", "script": "Mapudungun", "rom": "Antü" }, "inheritability": "none", "notes": "Sun and source of light", "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Historia de Chile (1925)" } ] },
+      { "id": "lead-pillanes", "name": "Govern the ancestral Pillán spirits as chief among them", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Foremost Pillán", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Guevara, Historia de Chile (1925); Latcham (1924)" } ], "weight": "secondary" } ],
+    "notes": "Mapuche sun, light and wisdom, paired with the moon Küyen and reckoned the foremost of the ancestral Pillán spirits."
+  },
+  {
+    "id": "mapuche_kushe",
+    "name": { "primary": "Kushe", "alt": ["Kuse", "Kude", "Ñuke"], "transliterations": { "mapudungun": "Kushe" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "Kushe", "script": "Mapudungun", "rom": "Kushe" }, "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "faculties": [
+      { "id": "elder-mother-aspect", "name": "Embody the old-woman, life-giving aspect of Ngenechen", "term": { "value": "Kushe", "script": "Mapudungun", "rom": "Kushe" }, "inheritability": "none", "notes": "Paired with the old man Fücha", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Latcham (1924); Guevara, Historia de Chile (1925)" } ], "weight": "secondary" } ],
+    "notes": "The 'old woman' (Kushe), the elder feminine aspect of the fourfold Ngenechen, paired with the old man Fücha."
+  },
+  {
+    "id": "mapuche_pillan",
+    "name": { "primary": "Pillán", "alt": ["Pillan", "Pellan", "Pillañ"], "transliterations": { "mapudungun": "Pillán" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "Pillán", "script": "Mapudungun", "rom": "Pillán" }, "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Historia de Chile: Chile prehispánico (1925)" } ] },
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "faculties": [
+      { "id": "hurl-thunder", "name": "Hurl thunder, lightning and volcanic fire from the heights", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Storm and volcano spirit", "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Historia de Chile (1925)" } ] },
+      { "id": "house-warrior-dead", "name": "Gather the spirits of dead chiefs and warriors into the volcanoes", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Ancestral war-spirits", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Guevara, Historia de Chile (1925); Latcham (1924)" } ], "weight": "secondary" } ],
+    "notes": "Ancestral storm-spirit of dead chiefs and warriors dwelling in the volcanoes, manifest as thunder, lightning and eruption."
+  },
+  {
+    "id": "mapuche_trentren_vilu",
+    "name": { "primary": "Trentren Vilu", "alt": ["Tenten Vilu", "Trengtreng", "Ten Ten-Vilu"], "transliterations": { "mapudungun": "Trengtrengfilu" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["mapuche_antu"], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Trengtrengfilu", "script": "Mapudungun", "rom": "Trentren Vilu" }, "sources": [ { "kind": "secondary", "reference": "Recorded Chilote-Mapuche oral tradition (Trentren–Kaikai cycle)" } ] }
+    ],
+    "faculties": [
+      { "id": "raise-the-land", "name": "Raise the earth and mountains to lift people above the flood", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Earth serpent; opposes Kaikai", "sources": [ { "kind": "secondary", "reference": "Recorded Chilote-Mapuche oral tradition" } ] },
+      { "id": "shelter-fugitives", "name": "Grant fleeing people wings, or turn them to stone, to survive", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Protector of humanity", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Latcham (1924); recorded Chilote-Mapuche oral tradition" } ], "weight": "secondary" } ],
+    "notes": "Earth-serpent (filu = snake) who raised the mountains against the rising sea, saving humanity; said to be a son of Antü turned to serpent form."
+  },
+  {
+    "id": "mapuche_kaikai_vilu",
+    "name": { "primary": "Kaikai Vilu", "alt": ["Caicai Vilu", "Coicoi-Vilu", "Caicai"], "transliterations": { "mapudungun": "Kaikaifilu" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sea", "contextTag": "lifelong", "term": { "value": "Kaikaifilu", "script": "Mapudungun", "rom": "Kaikai Vilu" }, "sources": [ { "kind": "secondary", "reference": "Recorded Chilote-Mapuche oral tradition (Trentren–Kaikai cycle)" } ] }
+    ],
+    "faculties": [
+      { "id": "raise-the-waters", "name": "Pour out the sea to flood the plains and forests", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Sea serpent; rival of Trentren", "sources": [ { "kind": "secondary", "reference": "Recorded Chilote-Mapuche oral tradition" } ] },
+      { "id": "shatter-lowlands", "name": "Shatter the lowlands and scatter their fragments as islands", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Shaped the Chiloé archipelago", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Latcham (1924); recorded Chilote-Mapuche oral tradition" } ], "weight": "secondary" } ],
+    "notes": "Sea-serpent who raised a world-flood and broke the lowlands into the southern islands; rival of the earth-serpent Trentren Vilu."
+  },
+  {
+    "id": "mapuche_wangulen",
+    "name": { "primary": "Wangülen", "alt": ["Wangulen", "Wanglen", "Güneliwün"], "transliterations": { "mapudungun": "Wangülen" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "stars", "contextTag": "lifelong", "term": { "value": "Wangülen", "script": "Mapudungun", "rom": "Wangülen" }, "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Folklore araucano (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "dwell-as-star", "name": "Dwell in the sky-land (Wenu Mapu) as a star-woman", "term": { "value": "Wenu Mapu", "script": "Mapudungun", "rom": "Wenu Mapu" }, "inheritability": "none", "notes": "Star-spirit women", "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Folklore araucano (1911)" } ] },
+      { "id": "watch-over-kin", "name": "Watch over and bless the descendants who honour her", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Honoured ancestral women become Wangülen", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Guevara, Folklore araucano (1911); Latcham (1924)" } ], "weight": "secondary" } ],
+    "notes": "Star-women of the sky-land (Wenu Mapu); virtuous Mapuche women who, honoured by their children, become benevolent star-spirits."
+  },
+  {
+    "id": "mapuche_anchimallen",
+    "name": { "primary": "Anchimallén", "alt": ["Anchimalguén", "Anchimayén", "Chimayén"], "transliterations": { "mapudungun": "Anchimallén" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Mapuche", "primaryTradition": "Mapuche",
+    "sex": "other", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "spirits", "contextTag": "lifelong", "term": { "value": "Anchimallén", "script": "Mapudungun", "rom": "Anchimallén" }, "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] }
+    ],
+    "faculties": [
+      { "id": "shine-as-fire", "name": "Fly as a small glowing orb or ball of fire by night", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Luminous familiar spirit", "sources": [ { "kind": "secondary", "reference": "Ricardo E. Latcham, La organización social... (1924)" } ] },
+      { "id": "serve-master", "name": "Guard a household or strike enemies at its maker's bidding", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "inheritability": "none", "notes": "Made by machi or kalku", "sources": [ { "kind": "secondary", "reference": "Tomás Guevara, Folklore araucano (1911)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "curamilla-stone", "name": "Fire-stone (curamilla)", "term": { "value": "", "script": "Mapudungun", "rom": "" }, "notes": "Stone ritually awakened to create an Anchimallén", "sources": [ { "kind": "secondary", "reference": "Recorded Mapuche oral tradition" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Latcham (1924); Guevara, Folklore araucano (1911); recorded Mapuche oral tradition" } ], "weight": "secondary" } ],
+    "notes": "Small luminous familiar-spirit, a flying ball of fire created from a fire-stone (curamilla) by a machi to guard, or by a kalku to harm."
+  }
+]
+```
+
+Report — Authored 17 new figures (9 Muisca, 8 Mapuche), all `origin: "canon"`, conforming to the exact schema the repo's `scripts/gen-new-figures.cjs` parses (verified: fenced ```json array, `type` in the valid set, distinct `faculties`/`materialCulture`). None of the IDs collide with `data-sources/existing-ids.json`.
+
+Key authoring decisions:
+- Type honesty: gods are `deity`; the civilizing/ancestral culture-hero tier and the flood-serpents are `demigod` — Bochica, Bachué, Trentren Vilu, Kaikai Vilu. Ngenechen and Anchimallén are `sex: "other"` (fourfold supreme being; sexless/variable spirit).
+- Powers vs domains vs items kept distinct: faculties are verb phrases (e.g. Bochica "Shatter the rocks at Tequendama," Chibchacum "Carry the world on his shoulders," Trentren "Raise the earth and mountains," Kaikai "Shatter the lowlands and scatter their fragments as islands"). Items (materialCulture) only where attested: Bochica's golden staff, Sué/Chía temples at Suamox and Chía, Nemcatacoa's painted manta, Anchimallén's curamilla fire-stone.
+- Native terms: Muysccubun and Mapudungun forms supplied where recorded (Bochica, Sué, Chía, Trengtrengfilu, Kaikaifilu, Wenu Mapu, Wangülen); `term.value` left `""` (no invention, no disclaimer text) where no native word is attested for that specific claim.
+- Citations: Muisca claims cite the colonial chroniclers (Pedro Simón's Noticias historiales c.1625; Rodríguez Freyle's El Carnero for the flood/Tequendama; Piedrahita; Castellanos) as `primary`. Mapuche claims cite ethnography (Guevara, Latcham) and recorded oral tradition as `secondary`, since the Mapuche corpus is post-contact ethnographic rather than colonial-eyewitness.
+- Trentren Vilu's `parentIds` reflects the attested tradition that it was a son of Antü transformed into serpent form.
+
+The complete JSON array is the last block above, ready for ingestion by the build script.
