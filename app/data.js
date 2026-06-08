@@ -29681,6 +29681,1769 @@ const POWERS_BY_FIGURE = {
   ],
 };
 
+// Native-term enrichment generated from researched, cited agent output by
+// scripts/gen-powers-terms.cjs — one entry per (figure, faculty). Do not hand-edit;
+// regenerate. Keyed by figure id; merged onto faculties below (never clobbering a
+// curated POWERS_BY_FIGURE term).
+/* POWERS_TERMS_START */
+const POWERS_TERMS = {
+"aboriginal_baiame": [
+  {"id":"sky-father-creator-of-southeastern-Australia","term":{"value":"Baayami","script":"Gamilaraay (Kamilaroi)","rom":"Baayami"},"notes":"sky-father creator-spirit of the southeast","inheritability":"none","sources":[{"kind":"secondary","reference":"Gamilaraay/Wiradjuri/Euahlayi ethnography (Baayami the creator sky-father)"}]},
+  {"id":"all-father-Dreaming-figure","term":{"value":"Burruguu","script":"Gamilaraay/Yuwaalaraay","rom":"Burruguu"},"notes":"the Dreaming, time of creation","inheritability":"none","sources":[{"kind":"secondary","reference":"Gamilaraay-Yuwaalaraay-Yuwaalayaay Dictionary (burruguu \"time of creation, Dreamtime\")"}]},
+  {"id":"law-instituting-ancestor","term":{"value":"yhi/law-giver — see gloss; term=Burruguu-yul gambil","script":"Gamilaraay","rom":"gambil (law/initiation)"},"notes":"instituter of the Law and Burbung initiation-rite","inheritability":"none","sources":[{"kind":"secondary","reference":"Gamilaraay ethnography (the bora/burbung law-ground; Baayami gives Law)"}]},
+  {"id":"shaper-of-southeastern-Country","term":{"value":"Ngurrambaa-dhalaay (shaper of Country)","script":"Gamilaraay","rom":"ngurrambaa"},"notes":"shaper of the Country/homeland","inheritability":"none","sources":[{"kind":"primary","reference":"Gamilaraay (ngurrambaa \"camp/Country\"; Baayami made rivers and ranges)"}]}
+],
+"aboriginal_bunjil": [
+  {"id":"eaglehawk-creator-of-Kulin-nation","term":{"value":"Bunjil","script":"Woiwurrung (Kulin)","rom":"Bunjil"},"notes":"Wedge-tailed Eagle creator-ancestor of the Kulin","inheritability":"none","sources":[{"kind":"secondary","reference":"Woiwurrung/Boonwurrung ethnography (Bunjil \"Wedge-tailed Eagle,\" creator)"}]},
+  {"id":"creator-of-people-and-Country","term":{"value":"Bunjil baan-ngurrung (creation/Dreaming)","script":"Woiwurrung (Kulin)","rom":"Bunjil"},"notes":"creator of the people and the Country","inheritability":"none","sources":[{"kind":"primary","reference":"Kulin tradition (Bunjil created the first people from clay/bark)"}]},
+  {"id":"institutor-of-moiety-division-with-Waa-the-Crow","term":{"value":"Bunjil me Waang (moiety dyad)","script":"Woiwurrung (Kulin)","rom":"Bunjil me Waang"},"notes":"Eaglehawk/Crow moiety division with Waa the Crow","inheritability":"none","sources":[{"kind":"secondary","reference":"Kulin ethnography (Bunjil/Waa(ng) the Eaglehawk-Crow moiety pair)"}]},
+  {"id":"wedge-tailed-eagle-form","term":{"value":"Bunjil (Wedge-tailed Eagle)","script":"Woiwurrung (Kulin)","rom":"Bunjil"},"notes":"his form as the wedge-tailed eagle","inheritability":"none","sources":[{"kind":"primary","reference":"Woiwurrung (Bunjil is the word for the wedge-tailed eagle itself)"}]}
+],
+"aboriginal_wagyl": [
+  {"id":"rainbow-serpent-creator-of-waterways","term":{"value":"Waakarl (Wagyl)","script":"Noongar (Nyungar)","rom":"Waakarl / Wagyl"},"notes":"Rainbow Serpent, creator of rivers and waters","inheritability":"none","sources":[{"kind":"secondary","reference":"Noongar ethnography (Waakarl/Waugal the Noongar Rainbow Serpent)"}]},
+  {"id":"creator-of-Swan-and-Canning-rivers","term":{"value":"Derbarl Yerrigan me Djarlgarra (Wagyl-made)","script":"Noongar (Nyungar)","rom":"Derbarl Yerrigan, Djarlgarra"},"notes":"maker of the Swan and Canning rivers","inheritability":"none","sources":[{"kind":"primary","reference":"Noongar tradition (Derbarl Yerrigan \"Swan R.,\" Djarlgarra \"Canning R.\")"}]},
+  {"id":"continuous-inhabitant-of-water-features","term":{"value":"Wagyl (kep-dwelling)","script":"Noongar (Nyungar)","rom":"Wagyl (kep \"water\")"},"notes":"perpetual dweller in springs and waterholes","inheritability":"none","sources":[{"kind":"primary","reference":"Noongar tradition (kep \"water\"; the Wagyl still inhabits the waters)"}]},
+  {"id":"pan-Aboriginal-Australian-Rainbow-Serpent-Noongar-recension","term":{"value":"Nyitting Waakarl","script":"Noongar (Nyungar)","rom":"Nyitting Waakarl"},"notes":"the Dreaming (\"cold-time\") Rainbow Serpent","inheritability":"none","sources":[{"kind":"primary","reference":"Noongar tradition (Nyitting \"the Dreaming/cold time\")"}]}
+],
+"aboriginal_wandjina": [
+  {"id":"cloud-and-rain-creator-spirits","term":{"value":"Wanjina","script":"Ngarinyin / Worrorra / Wunambal","rom":"Wanjina (Wandjina)"},"notes":"cloud-and-rain creator-ancestor spirits","inheritability":"none","sources":[{"kind":"secondary","reference":"Kimberley ethnography (Wandjina, the cloud/rain spirit-ancestors)"}]},
+  {"id":"Kimberley-creator-ancestors","term":{"value":"Wanjina (Lalai-ancestors)","script":"Ngarinyin / Worrorra","rom":"Wanjina; Lalai"},"notes":"creator-ancestors of the Lalai (Dreaming)","inheritability":"none","sources":[{"kind":"secondary","reference":"Kimberley ethnography (Lalai \"the Dreaming,\" Ngarinyin/Worrorra)"}]},
+  {"id":"rock-shelter-inhabiting-figures","term":{"value":"Wanjina (rock-image ancestors)","script":"Ngarinyin / Worrorra / Wunambal","rom":"Wanjina"},"notes":"ancestors residing in painted rock shelters","inheritability":"none","sources":[{"kind":"primary","reference":"Kimberley tradition (Wandjina images repainted in rock shelters)"}]},
+  {"id":"monsoon-rain-controllers","term":{"value":"Wanjina–Wungud","script":"Ngarinyin / Worrorra","rom":"Wanjina–Wungud"},"notes":"controllers of monsoon rain and life-force","inheritability":"none","sources":[{"kind":"secondary","reference":"Kimberley ethnography (Wungud/Ungud, the rainbow-serpent life-force tied to rain/fertility)"}]}
+],
+"ajaka": [
+  {"id":"kingship-yoruba-foundation","term":{"value":"Aláàfin (ìpilẹ̀ṣẹ̀)","script":"Yoruba","rom":"Aláàfin"},"notes":"Oyo king-title; early-dynasty Alaafin","inheritability":"none","sources":[{"kind":"primary","reference":"Johnson, *The History of the Yorubas* (1921); Law (1977)"}]},
+  {"id":"peaceful-arbitration","term":{"value":"ìlàjà (àlàáfíà)","script":"Yoruba","rom":"ìlàjà, àlàáfíà"},"notes":"peaceful mediation/settling of disputes","inheritability":"none","sources":[{"kind":"primary","reference":"Johnson (1921)"}]},
+  {"id":"kingship-yoruba","term":{"value":"Aláàfin (ọba)","script":"Yoruba","rom":"Aláàfin, ọba"},"notes":"king; Oyo throne-title","inheritability":"none","sources":[{"kind":"primary","reference":"Johnson (1921)"}]},
+  {"id":"peaceful-rule","term":{"value":"ìjọba àlàáfíà","script":"Yoruba","rom":"ìjọba àlàáfíà"},"notes":"peaceful reign (contrasted with Shango's war)","inheritability":"none","sources":[{"kind":"primary","reference":"Johnson (1921); Mason, *Mythological Account*"}]}
+],
+"akan_anansi": [
+  {"id":"spider-trickster","term":{"value":"Ananse (Kwaku Ananse)","script":"Akan","rom":"Ananse, Kwaku Ananse"},"notes":"the spider trickster","inheritability":"none","sources":[{"kind":"secondary","reference":"Rattray, *Akan-Ashanti Folk-Tales* (1930); Wikipedia \"Anansi\""}]},
+  {"id":"owner-of-all-stories-Anansesem","term":{"value":"Anansesɛm","script":"Akan","rom":"Anansesɛm"},"notes":"\"spider-words\"; owner of all the stories","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1930); anansestory.africa"}]},
+  {"id":"shapeshifter-spider-and-man","term":{"value":"Ananse a ɔdane ne ho","script":"Akan","rom":"Ananse a ɔdane ne ho"},"notes":"spider who transforms between spider and man","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1930)"}]},
+  {"id":"cunning-and-wit-over-strength","term":{"value":"anidahɔ / nyansa","script":"Akan","rom":"anidahɔ, nyansa"},"notes":"cunning/wisdom triumphing over force","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1930); folklorethursday"}]},
+  {"id":"wednesday-day-name-Kwaku","term":{"value":"Kwaku (Wukuada)","script":"Akan","rom":"Kwaku, Wukuada"},"notes":"Wednesday-born male day-name","inheritability":"full","sources":[{"kind":"primary","reference":"Rattray (1923) (kradin day-name system)"}]}
+],
+"akan_asase_yaa": [
+  {"id":"earth-mother-fertility","term":{"value":"Asaase Yaa","script":"Akan","rom":"Asaase Yaa"},"notes":"Earth-goddess (Thursday-born), mother of fertility","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1923); Encyclopedia.com \"Deities of Akan Religion\""}]},
+  {"id":"agricultural-productivity","term":{"value":"asaase (afuo/mfuduɔ)","script":"Akan","rom":"asaase, afuo"},"notes":"the earth/farmland yielding crops","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1927)"}]},
+  {"id":"judicial-truth-and-oath","term":{"value":"ntam asaase (asaase tete)","script":"Akan","rom":"ntam asaase"},"notes":"oath by the earth; she witnesses truth","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1927); Encyclopedia.com"}]},
+  {"id":"human-body-as-earth-substance","term":{"value":"honam (asaase mu)","script":"Akan","rom":"honam"},"notes":"the body, made of and returning to earth","inheritability":"none","sources":[{"kind":"primary","reference":"Gyekye, *An Essay on African Philosophical Thought* (1987)"}]}
+],
+"akan_komfo_anokye": [
+  {"id":"priest-counselor-okomfo","term":{"value":"Ɔkɔmfoɔ","script":"Akan","rom":"Ɔkɔmfoɔ"},"notes":"traditional priest/diviner and royal counselor","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1923); Encyclopedia.com \"Okomfo Anokye\""}]},
+  {"id":"Sika-Dwa-Kofi-conjuror","term":{"value":"Sika Dwa Kofi (ɔde firi soro baeɛ)","script":"Akan","rom":"Sika Dwa Kofi"},"notes":"conjured the Golden Stool down from the sky","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Golden Stool\"; \"Anokye\""}]},
+  {"id":"Asante-state-constitution-architect","term":{"value":"Asanteman mmara","script":"Akan","rom":"Asanteman mmara"},"notes":"architect of the Asante state-constitution","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Anokye\"; Cambridge \"Komfo Anokye\""}]},
+  {"id":"Asantemanhyiamu-council-structure-designer","term":{"value":"Asantemanhyiamu","script":"Akan","rom":"Asantemanhyiamu"},"notes":"designer of the national assembly/great council","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Political systems of the Asante Empire\""}]},
+  {"id":"seventy-seven-laws-codifier","term":{"value":"Mmara aduɔson-nson","script":"Akan","rom":"Mmara aduɔson-nson"},"notes":"codifier of the Seventy-Seven Laws","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Anokye\"; Asanteman Kyidom"}]}
+],
+"akan_nyame": [
+  {"id":"sky-god-supreme-being","term":{"value":"Onyame / Onyankopɔn","script":"Akan","rom":"Onyame, Onyankopɔn"},"notes":"supreme sky-god, the Great One","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray, *Ashanti* (1923); Encyclopedia.com \"Akan Religion\""}]},
+  {"id":"creator-and-cosmos-establisher","term":{"value":"Ɔbɔadeɛ (Borebore)","script":"Akan","rom":"Ɔbɔadeɛ, Borebore"},"notes":"Creator, Maker/Architect of all things","inheritability":"none","sources":[{"kind":"primary","reference":"Danquah, *The Akan Doctrine of God* (1944)"}]},
+  {"id":"deistic-remote-aloof-creator","term":{"value":"Twɛdeampɔn (Onyame a ɔware)","script":"Akan","rom":"Twɛdeampɔn"},"notes":"Dependable-but-distant God; the far sky","inheritability":"none","sources":[{"kind":"primary","reference":"Danquah (1944); atscoalition \"Akan Cosmology\""}]},
+  {"id":"rain-and-thunder-association","term":{"value":"Nyankɔnsoroma / osu (Nyame nsuo)","script":"Akan","rom":"Nyankɔnsoroma, osu"},"notes":"rain as Nyame's gift; thunder/sky-water","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray, *Religion and Art in Ashanti* (1927)"}]}
+],
+"akan_obiri_yeboa": [
+  {"id":"kwaman-chief-pre-asante","term":{"value":"ɔhene (Kwaman)","script":"Akan","rom":"ɔhene"},"notes":"chief/king of Kwaman before the Asante union","inheritability":"none","sources":[{"kind":"primary","reference":"McCaskie, *State and Society in Pre-colonial Asante* (1995)"}]},
+  {"id":"oyoko-clan-line-leadership","term":{"value":"Ɔyoko abusua (abusuapanin)","script":"Akan","rom":"Ɔyoko abusua"},"notes":"head of the Oyoko matriclan","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks, *Asante in the Nineteenth Century* (1975)"}]},
+  {"id":"matrilineal-uncle-of-Osei-Tutu","term":{"value":"wɔfa (ɔyoko)","script":"Akan","rom":"wɔfa"},"notes":"maternal uncle (matrilineal succession-link)","inheritability":"none","sources":[{"kind":"primary","reference":"Rattray (1923); Wilks (1975)"}]}
+],
+"akan_opoku_ware_i": [
+  {"id":"second-Asantehene","term":{"value":"Asantehene (Otumfuo)","script":"Akan","rom":"Asantehene, Otumfuo"},"notes":"second king of Asante","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975)"}]},
+  {"id":"imperial-expansion-conquests","term":{"value":"Asanteman atrɛ (akodie)","script":"Akan","rom":"Asanteman atrɛ"},"notes":"war-conquests enlarging the empire","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975); McCaskie (1995)"}]},
+  {"id":"katakyie-the-Brave","term":{"value":"Katakyie","script":"Akan","rom":"Katakyie"},"notes":"the Brave/Valiant (war-honorific)","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975); explorekumasi"}]},
+  {"id":"institutional-elaboration-of-Asante-empire","term":{"value":"Asanteman nhyehyɛeɛ","script":"Akan","rom":"Asanteman nhyehyɛeɛ"},"notes":"institutional ordering/elaboration of the empire","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975)"}]}
+],
+"akan_osei_tutu_i": [
+  {"id":"founder-of-Asante-Empire","term":{"value":"Asanteman (ɔhyɛaseɛ)","script":"Akan","rom":"Asanteman"},"notes":"founder of the Asante nation/union","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilks (1975); Wikipedia \"Political systems of the Asante Empire\""}]},
+  {"id":"first-Asantehene","term":{"value":"Asantehene (Otumfuo)","script":"Akan","rom":"Asantehene, Otumfuo"},"notes":"first king of Asante; \"the Powerful\"","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975)"}]},
+  {"id":"Sika-Dwa-Kofi-Golden-Stool-recipient","term":{"value":"Sika Dwa Kofi","script":"Akan","rom":"Sika Dwa Kofi"},"notes":"the Golden Stool, soul of the nation","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Golden Stool\"; Smarthistory"}]},
+  {"id":"defeater-of-Denkyira-1701","term":{"value":"Feyiase (akodie)","script":"Akan","rom":"Feyiase"},"notes":"victory over Denkyira at the Battle of Feyiase","inheritability":"none","sources":[{"kind":"primary","reference":"explorekumasi \"Battle of Feyiase\""}]},
+  {"id":"consolidator-of-Oyoko-imperial-authority","term":{"value":"Ɔyoko tumi (Asanteman)","script":"Akan","rom":"Ɔyoko tumi"},"notes":"consolidated Oyoko-dynasty power/authority","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975); McCaskie (1995)"}]}
+],
+"akan_prempeh_i": [
+  {"id":"13th-Asantehene","term":{"value":"Asantehene (Otumfuo)","script":"Akan","rom":"Asantehene, Otumfuo"},"notes":"13th king of Asante","inheritability":"none","sources":[{"kind":"primary","reference":"Wilks (1975); Tordoff, *Ashanti under the Prempehs* (1965)"}]},
+  {"id":"British-deposed-and-exiled-1896","term":{"value":"ɔtutuo (Borɔfo, 1896)","script":"Akan","rom":"ɔtutuo"},"notes":"deposition/removal and exile by the British, 1896","inheritability":"none","sources":[{"kind":"primary","reference":"Tordoff (1965)"}]},
+  {"id":"Seychelles-exile-1900-1924","term":{"value":"atubraɛ (Seychelles)","script":"Akan","rom":"atubraɛ"},"notes":"exile/banishment in the Seychelles, 1900–1924","inheritability":"none","sources":[{"kind":"primary","reference":"Tordoff (1965)"}]},
+  {"id":"returned-Kumasihene-1924","term":{"value":"Kumasihene (ɔsan baeɛ)","script":"Akan","rom":"Kumasihene"},"notes":"returned as chief of Kumasi, 1924","inheritability":"none","sources":[{"kind":"primary","reference":"Tordoff (1965)"}]}
+],
+"akan_prempeh_ii": [
+  {"id":"14th-Asantehene","term":{"value":"Asantehene (Otumfuo)","script":"Akan","rom":"Asantehene, Otumfuo"},"notes":"14th king of Asante","inheritability":"none","sources":[{"kind":"primary","reference":"Tordoff (1965); McCaskie (1995)"}]},
+  {"id":"restored-Asantehene-ship-1935","term":{"value":"Asanteman (ɔsan-sii, 1935)","script":"Akan","rom":"Asanteman"},"notes":"restoration of the Asante confederacy/kingship, 1935","inheritability":"none","sources":[{"kind":"primary","reference":"Tordoff (1965)"}]},
+  {"id":"modern-Asante-rebuilder","term":{"value":"Asanteman (ɔkyekyereɛ)","script":"Akan","rom":"Asanteman"},"notes":"rebuilder of the modern Asante state","inheritability":"none","sources":[{"kind":"primary","reference":"McCaskie (1995)"}]},
+  {"id":"colonial-to-independence-transition-figure","term":{"value":"ahenni (amandiɛ-bra)","script":"Akan","rom":"ahenni"},"notes":"kingship bridging colonial to independence era","inheritability":"none","sources":[{"kind":"primary","reference":"McCaskie (1995)"}]}
+],
+"akan_yaa_asantewaa": [
+  {"id":"queen-mother-of-Ejisu","term":{"value":"Ɔhemaa (Edweso/Ejisu)","script":"Akan","rom":"Ɔhemaa, Edweso"},"notes":"queen-mother of Ejisu","inheritability":"none","sources":[{"kind":"primary","reference":"Boahen, *Yaa Asantewaa and the Asante-British War* (2003)"}]},
+  {"id":"war-of-the-Golden-Stool-leader-1900","term":{"value":"Sika Dwa ɔko (1900)","script":"Akan","rom":"Sika Dwa ɔko"},"notes":"leader of the 1900 War of the Golden Stool","inheritability":"none","sources":[{"kind":"secondary","reference":"Boahen (2003); Wikipedia \"Golden Stool\""}]},
+  {"id":"Asante-British-War-resistance-leader","term":{"value":"ɔsahene (ɔko Borɔfo)","script":"Akan","rom":"ɔsahene"},"notes":"war-leader/general of anti-British resistance","inheritability":"none","sources":[{"kind":"primary","reference":"Boahen (2003)"}]},
+  {"id":"Asante-female-political-authority-foremost","term":{"value":"Ɔhemaa (tumi)","script":"Akan","rom":"Ɔhemaa"},"notes":"foremost female political authority (queen-mother power)","inheritability":"none","sources":[{"kind":"primary","reference":"Stoeltje, \"Asante Queen Mothers\" (1997); Boahen (2003)"}]}
+],
+"amani": [
+  {"id":"kingship-kushite-conferral","term":{"value":"Imn dj qore","script":"Meroitic / Egyptian (translit)","rom":"Amani di qore"},"notes":"Amani granting Kushite kingship (qore = Meroitic \"king\")","inheritability":"none","sources":[{"kind":"primary","reference":"Meroitic qore (king); Gebel Barkal enthronement stelae"}]},
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt-bjtj","script":"Egyptian (translit)","rom":"redi nesut-bity"},"notes":"Amun conferring the Egyptian double-kingship (25th Dyn.)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson 95; Piye Victory Stela"}]},
+  {"id":"kingship-kushite","term":{"value":"qore","script":"Meroitic","rom":"qore"},"notes":"king/sovereign of Kush","inheritability":"none","sources":[{"kind":"secondary","reference":"Rilly, Meroitic language; FHN attestations"}]},
+  {"id":"gebel-barkal-patron","term":{"value":"Imn Dw-wꜥb","script":"Egyptian (translit)","rom":"Amani / Djew-wab"},"notes":"Amun of the Pure Mountain (Gebel Barkal)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 426 (Ḏw-wꜥb \"Pure Mountain\"); Barkal stelae"}]},
+  {"id":"sun","term":{"value":"rꜥ","script":"Egyptian (translit)","rom":"Rꜥ"},"notes":"the sun(-god); Amani-Ra","inheritability":"none","sources":[{"kind":"secondary","reference":"Napatan Amun-Ra cult; Wilkinson 205"}]}
+],
+"anzikilan": [
+  {"id":"partridge-camouflage-and-flight","term":{"value":"wëk","script":"Pemón","rom":"wëk (warükü)"},"notes":"tinamou/partridge, the bird whose camouflage-flight he holds","inheritability":"partial","sources":[{"kind":"primary","reference":"de Cora gloss (\"partridge brother\"); Armellada 1943 (tinamou)"}]},
+  {"id":"flood-survival","term":{"value":"tuna apuk","script":"Pemón","rom":"tuna apuk"},"notes":"survival of the great flood","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada 1943"}]},
+  {"id":"culture-hero","term":{"value":"Anzikilán","script":"Pemón","rom":"Anzikilán"},"notes":"culture-hero; the \"partridge brother\"","inheritability":"none","sources":[{"kind":"secondary","reference":"de Cora, Pemón Roraima myth; Koch-Grünberg 1916"}]},
+  {"id":"avian-association-via-name","term":{"value":"toron","script":"Pemón","rom":"toron"},"notes":"bird; the avian sphere his name marks","inheritability":"none","sources":[{"kind":"primary","reference":"Armellada 1943 (toron \"bird\"); de Cora gloss"}]},
+  {"id":"savannah-ecotone-presence","term":{"value":"tüna pata","script":"Pemón","rom":"tëpë/savana pata"},"notes":"the open savanna (Gran Sabana) habitat he occupies","inheritability":"none","sources":[{"kind":"primary","reference":"Armellada 1943 (pata \"place/land\"); Pemón Gran Sabana ecology"}]}
+],
+"arabian_al_uzza": [
+  {"id":"morning-evening-star-Venus-association","term":{"value":"الزهرة","script":"Arabic","rom":"al-Zuhara"},"notes":"the planet Venus (al-ʿUzzā as Venus/evening star)","inheritability":"none","sources":[{"kind":"secondary","reference":"Ibn al-Kalbī; Wikipedia al-Uzza (al-Zuhara/Kawkabtā)"}]},
+  {"id":"second-of-three-daughters-of-Allah-Quranic-framing","term":{"value":"ابنة الله","script":"Arabic","rom":"ibnat Allāh"},"notes":"\"daughter of Allāh\" (Q 53:19–20 framing)","inheritability":"none","sources":[{"kind":"primary","reference":"Qurʾān 53:19–20; Ibn al-Kalbī"}]},
+  {"id":"goddess-of-might-and-strength","term":{"value":"العزّى (من العزّ)","script":"Arabic","rom":"al-ʿUzzā (from al-ʿizz)"},"notes":"\"the Mightiest,\" fem. superlative of ʿizz \"might\"","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām; root ʿ-z-z"}]},
+  {"id":"Nakhla-three-samura-trees-iconography","term":{"value":"ثلاث سمرات بنخلة","script":"Arabic","rom":"thalāth samurāt bi-Nakhla"},"notes":"three acacia (samura) trees at Nakhla","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām (Nakhla shrine)"}]}
+],
+"arabian_allat": [
+  {"id":"major-goddess-of-Arabia","term":{"value":"اللات / إلٰهت","script":"Arabic","rom":"al-Lāt / ʾilāhat"},"notes":"The Goddess (fem. of ʾilāh \"god\")","inheritability":"none","sources":[{"kind":"primary","reference":"Herodotus 3.8 (Alilat); Ibn al-Kalbī; Nabataean ʾlt"}]},
+  {"id":"one-of-three-daughters-of-Allah-Quranic-framing","term":{"value":"ابنة الله","script":"Arabic","rom":"ibnat Allāh"},"notes":"\"daughter of Allāh\" (Q 53:19–20 framing)","inheritability":"none","sources":[{"kind":"primary","reference":"Qurʾān 53:19–22 (al-Najm); Ibn al-Kalbī"}]},
+  {"id":"goddess-of-fertility-and-prosperity","term":{"value":"ربة الخصب","script":"Arabic","rom":"rabbat al-khiṣb"},"notes":"mistress of fertility/abundance","inheritability":"none","sources":[{"kind":"secondary","reference":"Nabataean cult of Allāt; Healey, Nabataean religion"}]},
+  {"id":"Hellenistic-equation-with-Aphrodite-and-Athena","term":{"value":"اللات (= Ἀθηνᾶ)","script":"Arabic","rom":"al-Lāt"},"notes":"equated by Greeks with Athena (and Aphrodite Ourania)","inheritability":"none","sources":[{"kind":"primary","reference":"Herodotus 3.8; Palmyrene Allāt-Athena reliefs"}]},
+  {"id":"Ta-if-cult-stone-iconography","term":{"value":"الصخرة / الربة","script":"Arabic","rom":"al-ṣakhra / al-Rabba"},"notes":"the (sacred) rock at Ṭāʾif; Allāt as \"the Lady\"","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām (white granite rock, Ṭāʾif)"}]}
+],
+"arabian_antara": [
+  {"id":"mu-allaqat-poet","term":{"value":"شاعر المعلّقة","script":"Arabic","rom":"shāʿir al-muʿallaqa"},"notes":"poet of a suspended ode","inheritability":"none","sources":[{"kind":"secondary","reference":"al-Muʿallaqāt; Britannica, Shāʿir"}]},
+  {"id":"Arabian-knight-faris","term":{"value":"فارس","script":"Arabic","rom":"fāris"},"notes":"horseman, knight (ideal of furūsiyya)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia Furusiyya; Sīrat ʿAntar"}]},
+  {"id":"love-of-Abla-foundational-romance-topos","term":{"value":"حب عبلة","script":"Arabic","rom":"ḥubb ʿAbla"},"notes":"his love for ʿAbla; archetypal beloved-topos","inheritability":"none","sources":[{"kind":"primary","reference":"Dīwān ʿAntara; Muʿallaqat ʿAntara"}]},
+  {"id":"manumitted-slave-warrior-biographical-archetype","term":{"value":"العبد المُعتَق","script":"Arabic","rom":"al-ʿabd al-muʿtaq"},"notes":"the freed/manumitted slave (\"fight and you are free\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Kitāb al-Aghānī; Wikipedia ʿAntarah ibn Shaddād"}]},
+  {"id":"Dahis-and-Ghabra-war-distinction","term":{"value":"حرب داحس والغبراء","script":"Arabic","rom":"ḥarb Dāḥis wa-l-Ghabrāʾ"},"notes":"the War of Dāḥis and al-Ghabrāʾ (where he won renown)","inheritability":"none","sources":[{"kind":"primary","reference":"Ayyām al-ʿArab tradition; Kitāb al-Aghānī"}]}
+],
+"arabian_hatim_al_tai": [
+  {"id":"foundational-Arabian-generosity-figure-al-jud","term":{"value":"الجود / الكرم","script":"Arabic","rom":"al-jūd / al-karam"},"notes":"munificence/generosity (the proverbial virtue he embodies)","inheritability":"none","sources":[{"kind":"primary","reference":"Dorar (jūd/karam); Kitāb al-Aghānī"}]},
+  {"id":"slaughtered-horse-Byzantine-embassy-anecdote","term":{"value":"نحر الفرس للضيف","script":"Arabic","rom":"naḥr al-faras li-l-ḍayf"},"notes":"slaughtering his (sole) horse for the guest","inheritability":"none","sources":[{"kind":"primary","reference":"Kitāb al-Aghānī; Ḥātim anecdotes"}]},
+  {"id":"Arabian-hospitality-ethic-archetype","term":{"value":"قِرى الضيف / الضيافة","script":"Arabic","rom":"qirā al-ḍayf / al-ḍiyāfa"},"notes":"hospitality, the guest-feeding obligation","inheritability":"none","sources":[{"kind":"primary","reference":"Berkley Center \"karam\"; Arabian ḍiyāfa ethic"}]},
+  {"id":"Tayyi-tribal-noble","term":{"value":"سيّد طيّئ","script":"Arabic","rom":"sayyid Ṭayyiʾ"},"notes":"lord/chief of the tribe of Ṭayyiʾ","inheritability":"none","sources":[{"kind":"primary","reference":"Kitāb al-Aghānī; Ḥātim ibn ʿAbd Allāh al-Ṭāʾī"}]},
+  {"id":"father-of-Adi-ibn-Hatim-Muhammad-companion","term":{"value":"أبو عديّ (صحابيّ)","script":"Arabic","rom":"abū ʿAdī (ṣaḥābī)"},"notes":"father of ʿAdī, a Companion of the Prophet","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn Saʿd, Ṭabaqāt; ʿAdī ibn Ḥātim biography"}]}
+],
+"arabian_hubal": [
+  {"id":"chief-deity-of-Mecca-Ka-ba","term":{"value":"رب الكعبة","script":"Arabic","rom":"rabb al-Kaʿba"},"notes":"lord of the Kaʿba; chief Meccan deity","inheritability":"none","sources":[{"kind":"secondary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām; Wikipedia Hubal"}]},
+  {"id":"divinatory-arrows-istiqsam","term":{"value":"استقسام بالأزلام","script":"Arabic","rom":"istiqsām bi-l-azlām"},"notes":"divination by casting the (seven) arrows","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām (azlām before Hubal)"}]},
+  {"id":"rain-and-fertility-petition","term":{"value":"استسقاء","script":"Arabic","rom":"istisqāʾ"},"notes":"petition for rain","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī; pre-Islamic rain-rite vocabulary"}]}
+],
+"arabian_imru_al_qais": [
+  {"id":"foundational-Mu-allaqat-poet","term":{"value":"شاعر المعلّقة","script":"Arabic","rom":"shāʿir al-muʿallaqa"},"notes":"poet of the (first) suspended ode","inheritability":"none","sources":[{"kind":"secondary","reference":"Britannica, Shāʿir; al-Muʿallaqāt"}]},
+  {"id":"wandering-king-Najd-Najran-Hadramawt-Constantinople","term":{"value":"الملك الضِّلِّيل","script":"Arabic","rom":"al-malik al-ḍillīl"},"notes":"\"the errant/vagabond king\" (his traditional sobriquet)","inheritability":"none","sources":[{"kind":"primary","reference":"al-Aṣfahānī, Kitāb al-Aghānī; Arabic tradition"}]},
+  {"id":"foundational-Arabic-nasib-amorous-prelude-tradition","term":{"value":"النسيب / الوقوف على الأطلال","script":"Arabic","rom":"al-nasīb / al-wuqūf ʿalā al-aṭlāl"},"notes":"amatory prelude; halting at the beloved's ruins","inheritability":"none","sources":[{"kind":"secondary","reference":"Mantle Odes (Stetkevych); al-Muʿallaqāt"}]},
+  {"id":"last-Kindite-prince","term":{"value":"أمير كِندة","script":"Arabic","rom":"amīr Kinda"},"notes":"prince of (the royal house of) Kinda","inheritability":"none","sources":[{"kind":"primary","reference":"Kitāb al-Aghānī; Imruʾ al-Qais ibn Ḥujr al-Kindī"}]},
+  {"id":"Byzantine-poisoned-shirt-legend","term":{"value":"الحُلّة المسمومة","script":"Arabic","rom":"al-ḥulla al-masmūma"},"notes":"the poisoned robe (sent by the Byzantine emperor)","inheritability":"none","sources":[{"kind":"primary","reference":"Kitāb al-Aghānī (death-by-poisoned-cloak legend)"}]}
+],
+"arabian_manat": [
+  {"id":"goddess-of-fate-time-death","term":{"value":"المنية / المنون","script":"Arabic","rom":"al-maniyya / al-manūn"},"notes":"allotted death/fate (root m-n-y, source of her name)","inheritability":"none","sources":[{"kind":"primary","reference":"Wiktionary مناة; Ibn al-Kalbī; root m-n-y"}]},
+  {"id":"oldest-of-three-daughters-of-Allah","term":{"value":"أقدم البنات (ابنة الله)","script":"Arabic","rom":"aqdam al-banāt (ibnat Allāh)"},"notes":"eldest \"daughter of Allāh\" of the three","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī (Manāt the most ancient); Q 53:20"}]},
+  {"id":"pre-Hijaz-Yathrib-Aws-Khazraj-cult-figure","term":{"value":"صنم الأوس والخزرج","script":"Arabic","rom":"ṣanam al-Aws wa-l-Khazraj"},"notes":"idol of the Aws and Khazraj (Yathrib)","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām"}]},
+  {"id":"Qudayd-cult-stone-iconography","term":{"value":"صخرة بقُدَيد","script":"Arabic","rom":"ṣakhra bi-Qudayd"},"notes":"the (sacred) stone at Qudayd by the sea","inheritability":"none","sources":[{"kind":"primary","reference":"Ibn al-Kalbī, Kitāb al-Aṣnām (Qudayd, ʿushal coast)"}]}
+],
+"armenian_anahit": [
+  {"id":"fertility-and-motherhood","term":{"value":"մայրութիւն","script":"Armenian","rom":"mayrutʿiwn"},"notes":"motherhood; goddess of fertility","inheritability":"none","sources":[{"kind":"primary","reference":"Agathangelos (Anahit \"mother of all chastity\")"}]},
+  {"id":"healing","term":{"value":"բժշկութիւն","script":"Armenian","rom":"bžškutʿiwn"},"notes":"healing, the healing art","inheritability":"none","sources":[{"kind":"primary","reference":"Agathangelos (Anahit benefactress/healer of mankind)"}]},
+  {"id":"motherland-of-Armenia","term":{"value":"Մայր Հայոց (տիկին)","script":"Armenian","rom":"Mayr Hayocʿ (tikin)"},"notes":"Mother/Great Lady of the Armenians","inheritability":"none","sources":[{"kind":"primary","reference":"Agathangelos; Movses Khorenatsi; tikin \"lady\""}]},
+  {"id":"water-and-wisdom","term":{"value":"ջուր եւ իմաստութիւն","script":"Armenian","rom":"jur ew imastutʿiwn"},"notes":"water and wisdom","inheritability":"none","sources":[{"kind":"primary","reference":"Armenian theonymy (Anahit ~ Anāhitā, water); imastutʿiwn \"wisdom\""}]}
+],
+"armenian_anushavan_sosanver": [
+  {"id":"Haykazuni-restorer","term":{"value":"Հայկազունի վերականգնող","script":"Armenian","rom":"Haykazuni verakangnoł"},"notes":"restorer of the Haykid line/rule","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi; verakangnel \"to restore\""}]},
+  {"id":"plane-tree-dedication-and-dendromantic-ritual","term":{"value":"Սոսանուէր / սոսեաց գուշակութիւն","script":"Armenian","rom":"Sosanuēr / soseacʿ gušakutʿiwn"},"notes":"\"plane-dedicated\"; divination by plane-grove rustling","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Armawir plane-oracle); sos \"plane-tree\""}]}
+],
+"armenian_ara_the_beautiful": [
+  {"id":"beautiful-king-archetype","term":{"value":"Արա Գեղեցիկ","script":"Armenian","rom":"Ara Gełecʿik"},"notes":"\"Ara the Beautiful,\" the comely king","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi I.15; gełecʿik \"beautiful\""}]},
+  {"id":"killed-by-Semiramis","term":{"value":"Շամիրամից սպանեալ","script":"Armenian","rom":"Šamiramicʿ spaneal"},"notes":"slain in war by Semiramis (Šamiram)","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Ara dies against Šamiram)"}]},
+  {"id":"aralez-spirit-resurrection-attempt","term":{"value":"արալէզք","script":"Armenian","rom":"aralēzkʿ"},"notes":"aralez dog-spirits that lick the dead alive","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Šamiram invokes the aralēz)"}]}
+],
+"armenian_aram": [
+  {"id":"Haykazuni-conqueror-king","term":{"value":"նուաճող արքայ","script":"Armenian","rom":"nuačoł arkʿay"},"notes":"conquering king","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi I.13; arkʿay \"king\", nuačel \"to subdue\""}]},
+  {"id":"eponymous-Armenia-exonym","term":{"value":"Արմեն","script":"Armenian","rom":"Armen"},"notes":"eponym yielding the exonym \"Armenia\"","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (foreigners name the land after Aram)"}]},
+  {"id":"four-directions-territorial-expansion","term":{"value":"չորս կողմ ընդարձակում","script":"Armenian","rom":"čʿors kołm əndarjakum"},"notes":"expansion in the four directions","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (expands east/west/north/south)"}]}
+],
+"armenian_aramaneak": [
+  {"id":"Haykazuni-second-generation","term":{"value":"Հայկազունի (երկրորդ սերունդ)","script":"Armenian","rom":"Haykazuni (erkrord serund)"},"notes":"Haykid of the second generation (son of Hayk)","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi; serund \"generation\""}]},
+  {"id":"Aragatsotn-settlement","term":{"value":"Արագածոտնի բնակեցում","script":"Armenian","rom":"Aragacotni bnakecʿum"},"notes":"settlement of the Aragatsotn plain","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (settles the Aragats district)"}]}
+],
+"armenian_aramayis": [
+  {"id":"Haykazuni-third-generation","term":{"value":"Հայկազունի (երրորդ սերունդ)","script":"Armenian","rom":"Haykazuni (errord serund)"},"notes":"Haykid of the third generation (son of Aramaneak)","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi"}]},
+  {"id":"Armavir-foundation","term":{"value":"Արմաւիրի հիմնադրում","script":"Armenian","rom":"Armawiri himnadrum"},"notes":"foundation of the city Armavir","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (builds Armawir); himnadrum \"founding\""}]}
+],
+"armenian_aramazd": [
+  {"id":"sky-and-creator-deity","term":{"value":"արարիչ","script":"Armenian","rom":"ararič"},"notes":"creator (maker of heaven and earth)","inheritability":"none","sources":[{"kind":"primary","reference":"Agathangelos; Movses Khorenatsi (Aramazd \"father of all\")"}]},
+  {"id":"father-of-pantheon","term":{"value":"հայր աստուածոց","script":"Armenian","rom":"hayr astuacocʿ"},"notes":"father of the gods","inheritability":"none","sources":[{"kind":"primary","reference":"Agathangelos, History (Aramazd \"father of all the gods\")"}]},
+  {"id":"thunder-and-rain","term":{"value":"որոտ եւ անձրեւ","script":"Armenian","rom":"orot ew anjrew"},"notes":"thunder and rain","inheritability":"none","sources":[{"kind":"primary","reference":"Armenian theonymy (Aramazd ~ Ahura Mazdā, sky-god); orot \"thunder\""}]},
+  {"id":"fertility-of-the-land","term":{"value":"պտղաբերութիւն","script":"Armenian","rom":"ptłaberutʿiwn"},"notes":"fruitfulness/fertility of the land","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Aramazd giver of abundance)"}]}
+],
+"armenian_astghik": [
+  {"id":"love-and-beauty","term":{"value":"սէր եւ գեղեցկութիւն","script":"Armenian","rom":"sēr ew gełecʿkutʿiwn"},"notes":"love and beauty","inheritability":"none","sources":[{"kind":"primary","reference":"Armenian tradition (Astłik, beloved of Vahagn); sēr \"love\""}]},
+  {"id":"water-and-purity","term":{"value":"ջուր եւ սրբութիւն","script":"Armenian","rom":"jur ew srbutʿiwn"},"notes":"water and purity","inheritability":"none","sources":[{"kind":"primary","reference":"Vardavar festival (water-dousing rite); srbutʿiwn \"purity\""}]},
+  {"id":"morning-and-evening-star","term":{"value":"Աստղիկ / Արուսեակ","script":"Armenian","rom":"Astłik / Aruseak"},"notes":"\"little star\"; the planet Venus","inheritability":"none","sources":[{"kind":"primary","reference":"Armenian theonymy (Astłik = Venus; Aruseak morning-star)"}]},
+  {"id":"roses-and-flower-attribute","term":{"value":"վարդ","script":"Armenian","rom":"vard"},"notes":"rose (Astłik's flower attribute)","inheritability":"none","sources":[{"kind":"primary","reference":"Vardavar (vard \"rose\") festival association"}]}
+],
+"armenian_baghdasar": [
+  {"id":"twin-co-founder-of-Sassoun","term":{"value":"Սասնայ համահիմնադիր","script":"Armenian","rom":"Sasnay hamahimnadir"},"notes":"co-founder of Sasun (younger twin)","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer epic, branch I (Sanasar & Baghdasar)"}]},
+  {"id":"miraculous-Tsovinar-conception","term":{"value":"Ծովինարից հրաշապատում ծնունդ","script":"Armenian","rom":"Covinaricʿ hrašapatum cnund"},"notes":"miraculous birth from Covinar (sea-water draughts)","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (both twins born of Covinar's draught)"}]}
+],
+"armenian_david_of_sassoun": [
+  {"id":"central-hero-of-Sasna-Tsrer","term":{"value":"Սասունցի Դաւիթ","script":"Armenian","rom":"Sasuncʿi Dawitʿ"},"notes":"David of Sasun, central hero of the epic","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (eponymous branch III); diwcazn \"hero\""}]},
+  {"id":"killer-of-Misra-Melik","term":{"value":"Մսրա մելիքի սպանող","script":"Armenian","rom":"Msra melikʿi spanoł"},"notes":"slayer of Msra Melik","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (cleaves Msra Melikʿ); spanoł \"slayer\""}]},
+  {"id":"wielder-of-tour-keatsakar","term":{"value":"Թուր Կեծակի","script":"Armenian","rom":"Tʿur Kecaki"},"notes":"wielder of the \"Lightning-Sword\"","inheritability":"partial","sources":[{"kind":"primary","reference":"Sasna Cṙer (hereditary Tʿur Kecaki); tʿur \"sword\", kaycak \"lightning\""}]},
+  {"id":"rider-of-Kourkik-Jalali","term":{"value":"Քուռկիկ Ջալալի","script":"Armenian","rom":"Kʿuṙkik J̌alali"},"notes":"rider of the wonder-horse Kʿuṙkik J̌alali","inheritability":"partial","sources":[{"kind":"primary","reference":"Sasna Cṙer (the hereditary steed); kʿuṙak \"colt\""}]},
+  {"id":"third-generation-Sassoun-hero","term":{"value":"Սասնայ երրորդ սերնդի դիւցազն","script":"Armenian","rom":"Sasnay errord serndi diwcazn"},"notes":"hero of the third Sasun generation","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer; diwcazn \"hero\""}]}
+],
+"armenian_hayk": [
+  {"id":"eponymous-Armenian-ancestor","term":{"value":"նահապետ","script":"Armenian","rom":"nahapet"},"notes":"patriarch, eponymous forefather of the Hay","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Hayk Nahapet, ancestor of the Armenians)"}]},
+  {"id":"Bel-of-Babylon-slayer","term":{"value":"Բէլասպան","script":"Armenian","rom":"Bēlaspan"},"notes":"slayer of Bel of Babylon","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi I.10–11 (Hayk shoots Bel); spanel \"to kill\""}]},
+  {"id":"Haykazuni-dynasty-founder","term":{"value":"Հայկազունի տոհմ","script":"Armenian","rom":"Haykazuni tohm"},"notes":"founder of the Haykazuni line/dynasty","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (the Haykazunkʿ); tohm \"lineage\""}]},
+  {"id":"wide-bow-archery","term":{"value":"լայնալիճ աղեղն","script":"Armenian","rom":"laynalič ałełn"},"notes":"the wide-arching bow; archery","inheritability":"partial","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Hayk's broad three-flighted bow); ałełn \"bow\""}]}
+],
+"armenian_mher_the_elder": [
+  {"id":"lion-slayer-and-Dev-slayer","term":{"value":"առիւծասպան եւ դեւասպան","script":"Armenian","rom":"aṙiwcaspan ew dewaspan"},"notes":"lion-slayer and demon(dev)-slayer","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer, branch II; aṙiwc \"lion\", dew \"demon\""}]},
+  {"id":"second-generation-Sassoun-hero","term":{"value":"Սասնայ երկրորդ սերնդի դիւցազն","script":"Armenian","rom":"Sasnay erkrord serndi diwcazn"},"notes":"hero of the second Sasun generation","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer; diwcazn \"hero, demigod\""}]},
+  {"id":"father-of-David-of-Sassoun","term":{"value":"Դաւթի հայր","script":"Armenian","rom":"Dawtʿi hayr"},"notes":"father of David of Sasun","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (Mher Mec, father of Dawitʿ); hayr \"father\""}]}
+],
+"armenian_mher_the_younger": [
+  {"id":"fourth-generation-Sassoun-hero","term":{"value":"Սասնայ չորրորդ սերնդի դիւցազն","script":"Armenian","rom":"Sasnay čʿorrord serndi diwcazn"},"notes":"hero of the fourth (final) Sasun generation","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer, branch IV (Pʿokr Mher)"}]},
+  {"id":"killer-of-his-father-David","term":{"value":"հայրասպան","script":"Armenian","rom":"hayraspan"},"notes":"father-slayer (unknowingly kills Dawitʿ)","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (father-son combat curse); hayr \"father\" + spanel"}]},
+  {"id":"sealed-in-Ravens-Rock-cave","term":{"value":"Ագռաւու քար","script":"Armenian","rom":"Agṙawu kʿar"},"notes":"immured in the Raven's Rock cave","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (Agṙawakʿar); agṙaw \"raven\", kʿar \"rock\""}]},
+  {"id":"eschatological-waiting-figure","term":{"value":"սպասող փրկիչ","script":"Armenian","rom":"spasoł pʿrkičʿ"},"notes":"awaiting deliverer (emerges at the world's renewal)","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (Mher awaits a just world); spasel \"to wait\""}]}
+],
+"armenian_misra_melik": [
+  {"id":"king-of-egypt","term":{"value":"Մսրա մելիք","script":"Armenian","rom":"Msra melikʿ"},"notes":"king (\"melik\") of Egypt/Msr","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer; melikʿ \"king\" (Arab. malik), Msr \"Egypt\""}]},
+  {"id":"half-brother-rival-of-David","term":{"value":"Դաւթի խորթ եղբայր","script":"Armenian","rom":"Dawtʿi xortʿ ełbayr"},"notes":"David's half-brother and rival","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (shared mother); xortʿ ełbayr \"half-brother\""}]},
+  {"id":"tribute-demanding-invader","term":{"value":"հարկապահանջ","script":"Armenian","rom":"harkapahanǰ"},"notes":"tribute-exacting invader of Sasun","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (demands tribute); hark \"tribute, tax\""}]}
+],
+"armenian_sanasar": [
+  {"id":"twin-founder-of-Sassoun","term":{"value":"Սասնայ հիմնադիր","script":"Armenian","rom":"Sasnay himnadir"},"notes":"founder of Sasun (elder twin)","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer epic, branch I; himnadir \"founder\""}]},
+  {"id":"miraculous-Tsovinar-conception","term":{"value":"Ծովինարից հրաշապատում ծնունդ","script":"Armenian","rom":"Covinaricʿ hrašapatum cnund"},"notes":"miraculous birth from Covinar (sea-water draughts)","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer (Covinar's two handfuls of sea-spring water)"}]},
+  {"id":"Sasna-Tsrer-progenitor","term":{"value":"Սասնայ Ծռերի նախահայր","script":"Armenian","rom":"Sasnay Cṙeri naxahayr"},"notes":"progenitor of the \"Daredevils of Sasun\"","inheritability":"none","sources":[{"kind":"primary","reference":"Sasna Cṙer epic; naxahayr \"forefather\""}]}
+],
+"armenian_vahagn": [
+  {"id":"fire-and-flame","term":{"value":"հուր եւ բոց","script":"Armenian","rom":"hur ew bocʿ"},"notes":"fire and flame","inheritability":"none","sources":[{"kind":"primary","reference":"Birth-of-Vahagn song, Movses Khorenatsi (born of fire)"}]},
+  {"id":"dragon-slayer-vishapakagh","term":{"value":"Վիշապաքաղ","script":"Armenian","rom":"Višapakʿał"},"notes":"dragon-reaper, slayer of vishaps","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (Vahagn's epithet Višapakʿał)"}]},
+  {"id":"war-and-victory","term":{"value":"պատերազմ եւ յաղթութիւն","script":"Armenian","rom":"paterazm ew yałtʿutʿiwn"},"notes":"war and victory","inheritability":"none","sources":[{"kind":"primary","reference":"Armenian tradition (Vahagn ~ Vərəθraγna); yałtʿutʿiwn \"victory\""}]},
+  {"id":"thunder-and-lightning","term":{"value":"որոտ եւ կայծակ","script":"Armenian","rom":"orot ew kaycak"},"notes":"thunder and lightning","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (storm-birth); kaycak \"lightning\""}]},
+  {"id":"sun-association","term":{"value":"արեւ","script":"Armenian","rom":"arew"},"notes":"the sun (Vahagn's solar/fiery aspect)","inheritability":"none","sources":[{"kind":"primary","reference":"Movses Khorenatsi (sun-like fiery hair)"}]}
+],
+"asdiwal": [
+  {"id":"unerring-aim","term":{"value":"naxnox","script":"Tsimshian","rom":"naxnox"},"notes":"supernatural endowment: the bow/arrows that never miss","inheritability":"full","sources":[{"kind":"primary","reference":"Lévi-Strauss \"The Story of Asdiwal\" (Hatsenas' never-miss bow given to son); naxnox = supernatural power"}]},
+  {"id":"sky-passage","term":{"value":"laxha","script":"Tsimshian","rom":"la̱xha"},"notes":"sky/heaven; he climbs to the Sun's house aloft","inheritability":"none","sources":[{"kind":"secondary","reference":"Sm'algyax Living Legacy Talking Dictionary (la̱xha \"sky/heaven\"); Boas (Asdiwal ascends to Sun)"}]},
+  {"id":"monster-slaying","term":{"value":"naxnox","script":"Tsimshian","rom":"naxnox"},"notes":"supernatural prowess overcoming the Sun's deadly trials/beasts","inheritability":"none","sources":[{"kind":"primary","reference":"Boas, *Tsimshian Mythology*; Lévi-Strauss (survives Sun's ordeals via magic objects)"}]},
+  {"id":"hunting","term":{"value":"gyemg","script":"Tsimshian","rom":"gyemk"},"notes":"hunting, esp. of mountain-goats on the heights","inheritability":"full","sources":[{"kind":"secondary","reference":"Boas, *Tsimshian Mythology* (Asdiwal the supreme hunter); Dunn, *Sm'algyax Reference Dictionary* — note: skill carried via the inherited naxnox bow"}]},
+  {"id":"sky-descent","term":{"value":"laxha","script":"Tsimshian","rom":"la̱xha"},"notes":"the sky/heaven from which he descends back to earth","inheritability":"none","sources":[{"kind":"primary","reference":"Lévi-Strauss \"The Story of Asdiwal\" (return from Sun's celestial house); la̱xha \"sky/heaven\""}]}
+],
+"banyaruanda_babinga": [
+  {"id":"kingship-of-the-imandwa-spirits","term":{"value":"umwami w'imandwa","script":"Kinyarwanda","rom":"umwami w'imandwa"},"notes":"king of the imandwa spirits (Ryangombe's office)","inheritability":"none","sources":[{"kind":"primary","reference":"de Heusch, *Le Rwanda et la civilisation interlacustre* (1966); Umuco \"Imandwa\""}]}
+],
+"bicolano_asuang": [
+  {"id":"evil-chaos-and-night-creatures","term":{"value":"Asuang, maraot asin banggi","script":"Bicolano/Central Bikol (Latin)","rom":"Asuang, maraot asin banggi"},"notes":"evil-deity of wickedness and the night","inheritability":"none","sources":[{"kind":"primary","reference":"Bikol mythology (Asuang, brother-enemy of Gugurang; maraot \"evil,\" banggi \"night\")"}]},
+  {"id":"aswang-class-creator","term":{"value":"aswang","script":"Bicolano/Central Bikol (Latin)","rom":"aswang"},"notes":"progenitor of the night-flesh-eater monster class","inheritability":"none","sources":[{"kind":"primary","reference":"Bikol folklore (Asuang of Mt. Malinao, eponym of the aswang of Ibalong)"}]}
+],
+"chibiabos": [
+  {"id":"song-mastery","term":{"value":"nagamo","script":"Ojibwe","rom":"nagamo"},"notes":"s/he sings (master of song; gave songs to people)","inheritability":"none","sources":[{"kind":"secondary","reference":"Ojibwe People's Dict. (nagamo vai; nagamon \"a song\"); Wikipedia \"Jiibayaabooz\""}]},
+  {"id":"flute-mastery","term":{"value":"bibigwan","script":"Ojibwe","rom":"bibigwan"},"notes":"the (Ojibwe) flute","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (bibigwan ni)"}]},
+  {"id":"music","term":{"value":"nagamon","script":"Ojibwe","rom":"nagamon"},"notes":"a song / music","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (nagamon ni)"}]},
+  {"id":"song","term":{"value":"nagamon","script":"Ojibwe","rom":"nagamon"},"notes":"a song","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (nagamon ni)"}]},
+  {"id":"underworld","term":{"value":"jiibay-aki","script":"Ojibwe","rom":"jiibay-aki"},"notes":"land of spirits/dead (jiibay \"ghost\" + aki \"land\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Ojibwe People's Dict. (jiibay na, aki); Wikipedia \"Jiibayaabooz\" (Chief of the Underworld)"}]},
+  {"id":"guide-to-the-dead","term":{"value":"Jiibay-miikana ogimaa","script":"Ojibwe","rom":"jiibay-miikana; ogimaa"},"notes":"Path of Souls; (chief who) guides the dead","inheritability":"none","sources":[{"kind":"secondary","reference":"zhaawanart.com (Jiibay-miikana \"Path of Souls\"); Wikipedia \"Jiibayaabooz\""}]}
+],
+"chinese_changyi": [
+  {"id":"son-of-Huangdi-and-Leizu","term":{"value":"子","script":"Chinese (hanzi)","rom":"zǐ"},"notes":"son (of Huangdi and Leizu)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji)"}]},
+  {"id":"father-of-Zhuanxu","term":{"value":"父","script":"Chinese (hanzi)","rom":"fù"},"notes":"father (of Zhuanxu)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記"}]}
+],
+"chinese_chen_xiang": [
+  {"id":"filial-piety","term":{"value":"孝","script":"Chinese (hanzi)","rom":"xiào"},"notes":"filial devotion to parent","inheritability":"none","sources":[{"kind":"primary","reference":"寶蓮燈 Baolian deng; Chenxiang baojuan 沉香寶卷"}]},
+  {"id":"mountain-cleaving-rescue","term":{"value":"劈山救母","script":"Chinese (hanzi)","rom":"pīshān jiùmǔ"},"notes":"splitting the mountain to rescue mother","inheritability":"none","sources":[{"kind":"primary","reference":"寶蓮燈 Baolian deng"}]}
+],
+"chinese_diku": [
+  {"id":"third-of-Five-Emperors-Wu-Di","term":{"value":"五帝","script":"Chinese (hanzi)","rom":"Wǔdì"},"notes":"(third of the) Five Emperors","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji 五帝本紀)"}]},
+  {"id":"father-of-Yao-and-Zhou-Shang-progenitors","term":{"value":"父","script":"Chinese (hanzi)","rom":"fù"},"notes":"father (of Yao; ancestor of Shang/Zhou)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji; Yin/Zhou benji)"}]},
+  {"id":"gao-xin-clan-seat","term":{"value":"高辛氏","script":"Chinese (hanzi)","rom":"Gāoxīn shì"},"notes":"the Gaoxin clan-lineage (his clan name)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji)"}]}
+],
+"chinese_erlang_shen": [
+  {"id":"celestial-warriorship","term":{"value":"天將","script":"Chinese (hanzi)","rom":"tiānjiàng"},"notes":"heavenly general/celestial warrior-commander","inheritability":"none","sources":[{"kind":"primary","reference":"Fengshen Yanyi 封神演義; Journey to the West 西遊記"}]},
+  {"id":"hunting","term":{"value":"田獵","script":"Chinese (hanzi)","rom":"tiánliè"},"notes":"hunting with hound and falcon","inheritability":"none","sources":[{"kind":"primary","reference":"Journey to the West 西遊記 ch.6"}]},
+  {"id":"flood-control","term":{"value":"治水","script":"Chinese (hanzi)","rom":"zhìshuǐ"},"notes":"water-control, river engineering","inheritability":"none","sources":[{"kind":"primary","reference":"Li Erlang / Dujiangyan 灌口二郎 tradition"}]},
+  {"id":"third-eye","name":"Heaven Eye","term":{"value":"天眼","script":"Chinese (hanzi)","rom":"tiānyǎn"},"notes":"forehead third eye seeing through deception","inheritability":"full","sources":[{"kind":"primary","reference":"Fengshen Yanyi 封神演義; Journey to the West 西遊記"}]}
+],
+"chinese_gun": [
+  {"id":"failed-flood-controller-via-dam-strategy","term":{"value":"堙","script":"Chinese (hanzi)","rom":"yīn"},"notes":"damming/blocking flood (the failed method)","inheritability":"none","sources":[{"kind":"primary","reference":"Shanhaijing 山海經 (Haineijing); Shiji 史記"}]},
+  {"id":"father-of-Yu-the-Great","term":{"value":"父","script":"Chinese (hanzi)","rom":"fù"},"notes":"father (of Yu the Great)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Xia benji 夏本紀)"}]},
+  {"id":"cosmogonic-body-not-decaying-Shanhaijing-tradition","term":{"value":"三歲不腐","script":"Chinese (hanzi)","rom":"sānsuì bùfǔ"},"notes":"corpse three years undecayed, birthing Yu","inheritability":"none","sources":[{"kind":"primary","reference":"Shanhaijing 山海經; Guicang 歸藏"}]}
+],
+"chinese_huangdi": [
+  {"id":"yellow-emperor-sage-king","term":{"value":"黃帝","script":"Chinese (hanzi)","rom":"Huángdì"},"notes":"Yellow Emperor, sage-ruler","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji 五帝本紀)"}]},
+  {"id":"founder-of-Chinese-civilization","term":{"value":"人文初祖","script":"Chinese (hanzi)","rom":"rénwén chūzǔ"},"notes":"first ancestor of (Chinese) civilization","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記; traditional epithet"}]},
+  {"id":"unifier-of-Yellow-River-tribes","term":{"value":"一統","script":"Chinese (hanzi)","rom":"yītǒng"},"notes":"unification (of the tribes) under one rule","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (battles of Banquan 阪泉, Zhuolu 涿鹿)"}]},
+  {"id":"silk-and-writing-and-calendar-institutional-founder","term":{"value":"制器作典","script":"Chinese (hanzi)","rom":"zhìqì zuòdiǎn"},"notes":"instituting implements and canonical institutions","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記; Huangdi Neijing tradition"}]},
+  {"id":"Chinese-medicine-canonical-figure-Huangdi-Neijing","term":{"value":"醫道","script":"Chinese (hanzi)","rom":"yīdào"},"notes":"the art/way of medicine","inheritability":"none","sources":[{"kind":"primary","reference":"Huangdi Neijing 黃帝內經"}]},
+  {"id":"first-of-Five-Emperors-Wu-Di","term":{"value":"五帝之首","script":"Chinese (hanzi)","rom":"Wǔdì zhī shǒu"},"notes":"first of the Five Emperors","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji 五帝本紀)"}]}
+],
+"chinese_jade_emperor": [
+  {"id":"celestial-bureaucracy-administrator","term":{"value":"天帝","script":"Chinese (hanzi)","rom":"Tiāndì"},"notes":"August Emperor of Heaven ruling celestial bureaucracy","inheritability":"none","sources":[{"kind":"primary","reference":"Daoist canon 道藏; Journey to the West 西遊記"}]},
+  {"id":"cosmic-order-and-justice","term":{"value":"天道","script":"Chinese (hanzi)","rom":"tiāndào"},"notes":"the Way/order of Heaven, cosmic justice","inheritability":"none","sources":[{"kind":"primary","reference":"Daoist canon 道藏"}]}
+],
+"chinese_leizu": [
+  {"id":"first-sericulturist-silk-inventor","term":{"value":"先蠶","script":"Chinese (hanzi)","rom":"xiāncán"},"notes":"First Sericulturist, inventor of silk","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記; Tongjian gangmu 通鑑綱目"}]},
+  {"id":"principal-consort-of-Huangdi","term":{"value":"元妃","script":"Chinese (hanzi)","rom":"yuánfēi"},"notes":"principal/first consort (of the Yellow Emperor)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji)"}]},
+  {"id":"mother-of-Changyi-and-Xuanxiao","term":{"value":"母","script":"Chinese (hanzi)","rom":"mǔ"},"notes":"mother (of Changyi and Xuanxiao)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記"}]}
+],
+"chinese_qi_of_xia": [
+  {"id":"second-Xia-king","term":{"value":"夏后","script":"Chinese (hanzi)","rom":"Xiàhòu"},"notes":"Xia sovereign (second Xia ruler)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Xia benji 夏本紀)"}]},
+  {"id":"first-hereditary-dynastic-successor-in-Chinese-history","term":{"value":"世襲","script":"Chinese (hanzi)","rom":"shìxí"},"notes":"hereditary succession (first such heir)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記; Zhushu jinian 竹書紀年"}]},
+  {"id":"defeater-of-Bo-Yi-and-Hu-clan","term":{"value":"甘之戰","script":"Chinese (hanzi)","rom":"Gān zhī zhàn"},"notes":"Battle of Gan (defeating the Hu clan)","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書 (Gan shi 甘誓); Shiji 史記"}]},
+  {"id":"gan-shi-political-rhetoric-attributed-figure","term":{"value":"甘誓","script":"Chinese (hanzi)","rom":"Gān shì"},"notes":"the Speech/Oath at Gan (attributed to him)","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書 (Gan shi 甘誓)"}]}
+],
+"chinese_sanshengmu": [
+  {"id":"mount-hua-patronage","term":{"value":"華山聖母","script":"Chinese (hanzi)","rom":"Huàshān Shèngmǔ"},"notes":"Holy Mother (tutelary goddess) of Mount Hua","inheritability":"none","sources":[{"kind":"primary","reference":"寶蓮燈 Baolian deng tradition"}]},
+  {"id":"mortal-love-protection","term":{"value":"人神之戀","script":"Chinese (hanzi)","rom":"rénshén zhī liàn"},"notes":"protector of human-divine love-union","inheritability":"none","sources":[{"kind":"primary","reference":"寶蓮燈 Baolian deng; Chenxiang baojuan 沉香寶卷"}]}
+],
+"chinese_shun": [
+  {"id":"fifth-of-Five-Emperors-Wu-Di","term":{"value":"帝舜","script":"Chinese (hanzi)","rom":"Dì Shùn"},"notes":"Emperor Shun, (fifth) of the Five Emperors","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記; Shangshu 尚書 (Shun dian 舜典)"}]},
+  {"id":"foundational-filial-piety-exemplar","term":{"value":"大孝","script":"Chinese (hanzi)","rom":"dàxiào"},"notes":"supreme filial piety (toward blind father Gusou)","inheritability":"none","sources":[{"kind":"primary","reference":"Mengzi 孟子; Ershisi xiao 二十四孝"}]},
+  {"id":"meritocratic-successor-of-Yao","term":{"value":"禪讓","script":"Chinese (hanzi)","rom":"shànràng"},"notes":"receiving the throne by abdication-merit","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書; Shiji 史記"}]},
+  {"id":"abdicator-to-Yu-the-Great","term":{"value":"禪位","script":"Chinese (hanzi)","rom":"shànwèi"},"notes":"ceding the throne (to Yu)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Xia benji 夏本紀)"}]}
+],
+"chinese_xiwangmu": [
+  {"id":"mount-kunlun-presider","term":{"value":"崑崙","script":"Chinese (hanzi)","rom":"Kūnlún"},"notes":"presider of sacred Mount Kunlun","inheritability":"none","sources":[{"kind":"primary","reference":"Shanhaijing 山海經; Mu Tianzi zhuan 穆天子傳"}]},
+  {"id":"immortality-and-longevity","term":{"value":"長生不死","script":"Chinese (hanzi)","rom":"chángshēng bùsǐ"},"notes":"eternal life, deathless longevity (Peaches 蟠桃)","inheritability":"none","sources":[{"kind":"primary","reference":"Han Wudi neizhuan 漢武帝內傳; Shanhaijing"}]},
+  {"id":"female-immortals-presider","term":{"value":"女仙之首","script":"Chinese (hanzi)","rom":"nǚxiān zhī shǒu"},"notes":"chief/presider of all female immortals","inheritability":"none","sources":[{"kind":"primary","reference":"Daoist canon 道藏; Yongcheng jixian lu 墉城集仙錄"}]}
+],
+"chinese_yao": [
+  {"id":"fourth-of-Five-Emperors-Wu-Di","term":{"value":"帝堯","script":"Chinese (hanzi)","rom":"Dì Yáo"},"notes":"Emperor Yao, (fourth) of the Five Emperors","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記; Shangshu 尚書 (Yao dian 堯典)"}]},
+  {"id":"sage-king-of-the-Confucian-tradition","term":{"value":"聖王","script":"Chinese (hanzi)","rom":"shèngwáng"},"notes":"sage-king (Confucian moral exemplar)","inheritability":"none","sources":[{"kind":"primary","reference":"Lunyu 論語; Mengzi 孟子"}]},
+  {"id":"meritocratic-succession-pioneer","term":{"value":"禪讓","script":"Chinese (hanzi)","rom":"shànràng"},"notes":"abdication/yielding the throne to the worthy","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書; Shiji 史記"}]},
+  {"id":"calendar-regulation-and-Xi-He-commissioning","term":{"value":"曆象","script":"Chinese (hanzi)","rom":"lìxiàng"},"notes":"regulating calendar and celestial observation","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書 (Yao dian 堯典, charge to Xi-He 羲和)"}]}
+],
+"chinese_yaoji": [
+  {"id":"celestial-nobility","term":{"value":"仙","script":"Chinese (hanzi)","rom":"xiān"},"notes":"transcendent/immortal of the Heavenly Court","inheritability":"none","sources":[{"kind":"primary","reference":"Shanhaijing 山海經 (Zhongshan jing); Gaotang fu"}]},
+  {"id":"desire-realm","term":{"value":"欲界","script":"Chinese (hanzi)","rom":"yùjiè"},"notes":"realm of desire (Buddhist-Daoist cosmic tier)","inheritability":"none","sources":[{"kind":"primary","reference":"Daoist canon; Buddhist 三界 cosmology"}]}
+],
+"chinese_yu_the_great": [
+  {"id":"flood-controller-channel-and-drainage-strategy","term":{"value":"疏導","script":"Chinese (hanzi)","rom":"shūdǎo"},"notes":"dredging/channeling waters to the sea","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書 (Yugong 禹貢); Shiji 史記"}]},
+  {"id":"founder-of-Xia-dynasty-c-2070-bce","term":{"value":"夏","script":"Chinese (hanzi)","rom":"Xià"},"notes":"founder-king of the Xia dynasty","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Xia benji 夏本紀)"}]},
+  {"id":"divider-of-empire-into-Nine-Provinces","term":{"value":"九州","script":"Chinese (hanzi)","rom":"jiǔzhōu"},"notes":"dividing the realm into Nine Provinces","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書 (Yugong 禹貢)"}]},
+  {"id":"three-passings-of-his-own-house","term":{"value":"三過家門而不入","script":"Chinese (hanzi)","rom":"sān guò jiāmén ér bù rù"},"notes":"thrice passing his door without entering","inheritability":"none","sources":[{"kind":"primary","reference":"Mengzi 孟子 (Teng Wen Gong); Shiji 史記"}]},
+  {"id":"hereditary-dynastic-principle-establisher","term":{"value":"家天下","script":"Chinese (hanzi)","rom":"jiā tiānxià"},"notes":"the realm as family-inheritance (dynastic rule)","inheritability":"none","sources":[{"kind":"primary","reference":"Liji 禮記 (Liyun 禮運); Shiji 史記"}]}
+],
+"chinese_zhuanxu": [
+  {"id":"second-of-Five-Emperors-Wu-Di","term":{"value":"五帝","script":"Chinese (hanzi)","rom":"Wǔdì"},"notes":"(second of the) Five Emperors","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji 五帝本紀)"}]},
+  {"id":"separation-of-heaven-and-earth-jue-di-tian-tong","term":{"value":"絕地天通","script":"Chinese (hanzi)","rom":"jué dì tiān tōng"},"notes":"severing the communication between earth and heaven","inheritability":"none","sources":[{"kind":"primary","reference":"Shangshu 尚書 (Lü xing 呂刑); Guoyu 國語 (Chu yu)"}]},
+  {"id":"centralizer-of-religious-authority","term":{"value":"命重黎","script":"Chinese (hanzi)","rom":"mìng Chóng Lí"},"notes":"commanding Chong and Li (monopolize sacrifice)","inheritability":"none","sources":[{"kind":"primary","reference":"Guoyu 國語 (Chu yu 楚語下)"}]},
+  {"id":"gao-yang-clan-seat","term":{"value":"高陽氏","script":"Chinese (hanzi)","rom":"Gāoyáng shì"},"notes":"the Gaoyang clan-lineage (his clan name)","inheritability":"none","sources":[{"kind":"primary","reference":"Shiji 史記 (Wudi benji)"}]}
+],
+"dine_born_for_water": [
+  {"id":"hero-twin-Born-for-Water","term":{"value":"Tó Bájíshchíní","script":"Navajo","rom":"tó bájíshchíní"},"notes":"Born-for-Water, the younger Hero Twin","inheritability":"none","sources":[{"kind":"secondary","reference":"Zolbrod, *Diné Bahaneʼ*; Wikipedia (Tóbájíshchíní \"Born for Water\"; tó \"water\")"}]},
+  {"id":"twin-of-Monster-Slayer","term":{"value":"naakiísh","script":"Navajo","rom":"naakiísh"},"notes":"one of the twin pair (younger twin of Monster Slayer)","inheritability":"none","sources":[{"kind":"primary","reference":"Young & Morgan, *The Navajo Language* (naaki \"two\", naakiísh \"twins/pair\"); Diné Bahaneʼ hero-twin dyad"}]},
+  {"id":"water-fathered-demigod","term":{"value":"Tó biyeʼ","script":"Navajo","rom":"tó biyeʼ"},"notes":"child of Water (engendered by dripping water)","inheritability":"partial","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ* (conceived by water); tó \"water\", -yeʼ \"his son\""}]},
+  {"id":"protective-ritualist-companion","term":{"value":"sodizin yee naagháii","script":"Navajo","rom":"sodizin yee naagháii"},"notes":"one who guards by keeping the prayer/chant for his brother","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ* (keeps prayer/song while Monster Slayer fights); Young & Morgan (sodizin \"prayer\") — note: descriptive on attested sodizin"}]}
+],
+"dine_changing_woman": [
+  {"id":"changing-woman-creator-of-Hero-Twins","term":{"value":"Asdzą́ą́ Nádleehé","script":"Navajo","rom":"asdzą́ą́ nádleehé"},"notes":"Changing Woman, mother who bore the Hero Twins","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ*; native-languages.org"}]},
+  {"id":"foundational-Blessing-Way-Hozhooji-figure","term":{"value":"Hózhǫ́ǫ́jí","script":"Navajo","rom":"hózhǫ́ǫ́jí"},"notes":"Blessingway, the harmony-restoring ceremonial she founds","inheritability":"none","sources":[{"kind":"secondary","reference":"Britannica \"Blessingway\"; Wyman, *Blessingway* (hózhǫ́ \"harmony/beauty/balance\")"}]},
+  {"id":"kinaalda-puberty-ceremony-source","term":{"value":"Kinaaldá","script":"Navajo","rom":"kinaaldá"},"notes":"girls' puberty ceremony she instituted, reenacting her","inheritability":"none","sources":[{"kind":"primary","reference":"Frisbie, *Kinaaldá: A Study of the Navaho Girl's Puberty Ceremony*"}]},
+  {"id":"continuous-seasonal-renewal-figure","term":{"value":"nádleeh","script":"Navajo","rom":"nádleeh"},"notes":"she-who-changes/renews (ages then grows young cyclically)","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ*; native-languages.org (nádleehé \"one who is transformed\"; verb nádleeh \"becomes again\")"}]},
+  {"id":"creator-of-the-original-Diné-clans","term":{"value":"Diné kʼéí","script":"Navajo","rom":"diné kʼéí"},"notes":"the Diné clans/kinship she created from her skin","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ* (forms first four clans); kʼé \"kinship\", diné \"people\""}]}
+],
+"dine_monster_slayer": [
+  {"id":"monster-slayer-Hero-Twin","term":{"value":"Naayééʼ Neizghání","script":"Navajo","rom":"naayééʼ neizghání"},"notes":"Slayer of Alien Monsters, the elder Hero Twin","inheritability":"none","sources":[{"kind":"secondary","reference":"Zolbrod, *Diné Bahaneʼ*; Wikipedia Nayenezgani (naayééʼ \"monsters/alien enemies\")"}]},
+  {"id":"sun-fathered-of-the-twin-pair","term":{"value":"Jóhonaaʼéí biyeʼ","script":"Navajo","rom":"jóhonaaʼéí biyeʼ"},"notes":"son of the Sun (his father, the Sun-carrier)","inheritability":"partial","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ*; Young & Morgan, *The Navajo Language* (Jóhonaaʼéí \"Sun\"; -yeʼ \"his son\")"}]},
+  {"id":"lightning-arrow-and-stone-knife-wielder","term":{"value":"atsiniltłʼish kʼaaʼ","script":"Navajo","rom":"atsiniltłʼish kʼaaʼ"},"notes":"zigzag-lightning arrow (with béésh flint knife), Sun's gift","inheritability":"none","sources":[{"kind":"primary","reference":"*Navajo Story of Monster Slayer*; Young & Morgan (atsiniltłʼish \"zigzag lightning\"; kʼaaʼ \"arrow\"; béésh \"flint/knife\")"}]},
+  {"id":"foundational-homeland-purifier","term":{"value":"Dinétah hodíléeh","script":"Navajo","rom":"dinétah hodíléeh"},"notes":"he made the Diné homeland safe (cleared the naayééʼ)","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ* (twins rid Dinétah of monsters); Dinétah \"Navajo homeland\" — note: descriptive; no single \"purifier\" lexeme"}]},
+  {"id":"naagháii-naadáá","name":"Enemyway (the rite descended from his monster-killing)","term":{"value":"Anaaʼjí","rom":"anaaʼjí"},"notes":"Enemyway ceremony, purifying warriors of enemy-monster contagion","inheritability":"none","sources":[{"kind":"primary","reference":"Haile, *Origin Legend of the Navaho Enemy Way* (Anaaʼjí; anaaʼ \"enemy/war\")"}]}
+],
+"dine_spider_woman": [
+  {"id":"wisdom-teacher-of-Hero-Twins","term":{"value":"Naʼashjéʼii Asdzáá","script":"Navajo","rom":"naʼashjéʼii asdzáá"},"notes":"Spider Woman, counselor who aided the Hero Twins","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ*; native-languages.org \"Spider Woman\" (naʼashjéʼii \"spider\", asdzáá \"woman\")"}]},
+  {"id":"weaving-teacher-of-Dine-women","term":{"value":"atłʼó","script":"Navajo","rom":"atłʼó"},"notes":"weaving; the loom-art she gave Diné women","inheritability":"none","sources":[{"kind":"primary","reference":"Young & Morgan / Glosbe (atłʼó \"to weave\", atłʼóóh \"weaving\"); LAND+OBJECT Diné weaving history (gift of Naʼashjéʼii Asdzáá)"}]},
+  {"id":"Spider-Rock-Canyon-de-Chelly-resident","term":{"value":"Tséʼnaʼashjéʼii","script":"Navajo","rom":"tséʼnaʼashjéʼii"},"notes":"Spider Rock (her home in Tséyiʼ / Canyon de Chelly)","inheritability":"none","sources":[{"kind":"secondary","reference":"Navajo ethnography of Tséyiʼ; tsé \"rock\" + naʼashjéʼii \"spider\""}]},
+  {"id":"protective-spells-and-navigation-knowledge","term":{"value":"sodizin dóó atiin baa óhoolʼaah","script":"Navajo","rom":"sodizin dóó atiin"},"notes":"protective prayer-formula and way-finding knowledge she taught","inheritability":"none","sources":[{"kind":"primary","reference":"Zolbrod, *Diné Bahaneʼ* (gives twins protective chant/feathers + route to Sun); sodizin \"prayer\", atiin \"road/way\" — note: descriptive; no single lexeme"}]}
+],
+"e_bangishimog": [
+  {"id":"wind-mastery","term":{"value":"Ningaabii'ani-noodin","script":"Ojibwe","rom":"ningaabii'ani-noodin"},"notes":"the West Wind, \"Father of all Winds\" (his office)","inheritability":"none","sources":[{"kind":"primary","reference":"Johnston, *The Manitous* (1995); zhaawanart.com \"Teaching Stories 13\" (Anishinaabemowin)"}]},
+  {"id":"shapeshifting-bear","term":{"value":"makwa-aanzinaago'idizo","script":"Ojibwe","rom":"makwa; aanzinaago'idizo"},"notes":"transforms self (into) a bear (Schoolcraft bear-belt episode)","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (aanzinaago'idizo, makwa); Schoolcraft, *Hiawatha Legends*"}]},
+  {"id":"west-wind","term":{"value":"Ningaabii'ani-noodin","script":"Ojibwe","rom":"ningaabii'ani-noodin"},"notes":"west wind (ningaabii'an \"west\" + noodin \"wind\")","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ningaabii'an, noodin)"}]},
+  {"id":"cardinal-direction-west","term":{"value":"ningaabii'anong","script":"Ojibwe","rom":"ningaabii'anong"},"notes":"in/to the west; the western direction","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict.; Gibagadinamaagoom Ojibwe Archive (UPenn)"}]},
+  {"id":"twilight","term":{"value":"bangishimon","script":"Ojibwe","rom":"bangishimon"},"notes":"it is sunset (root of his name \"E-bangishimog\")","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (bangishimon vii; bangishimo vai)"}]}
+],
+"egyptian_amenhotep_iii": [
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt","script":"Egyptian (translit)","rom":"redi nesut"},"notes":"divine conferral of kingship","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson 95; royal texts"}]},
+  {"id":"monumental-construction","term":{"value":"qd mnw","script":"Egyptian (translit)","rom":"qed menu"},"notes":"to build monuments","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 72; II 70"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"royal titulary"}]},
+  {"id":"monumental-building","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument(s)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70"}]},
+  {"id":"sed-festival","term":{"value":"ḥb-sd","script":"Egyptian (translit)","rom":"ḥeb-sed"},"notes":"royal jubilee renewing kingly potency","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb III 58; IV 365; Britannica Heb-Sed"}]}
+],
+"egyptian_amun": [
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt","script":"Egyptian (translit)","rom":"redi nesut"},"notes":"Amun's giving of the kingship to the king","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson, Complete Gods 92–95; Karnak royal texts"}]},
+  {"id":"oracular-judgment","term":{"value":"pḥ-nṯr","script":"Egyptian (translit)","rom":"peḥ-netjer"},"notes":"\"reaching the god\"; the oracular consultation/verdict","inheritability":"none","sources":[{"kind":"primary","reference":"ISAW Papers 18 (pḥ-nṯr oracle)"}]},
+  {"id":"celestial-luminance","term":{"value":"psḏ","script":"Egyptian (translit)","rom":"pesedj"},"notes":"to shine, give off radiance (of the sun)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb I 556 (psḏ \"shine\")"}]},
+  {"id":"sun","term":{"value":"rꜥ","script":"Egyptian (translit)","rom":"Rꜥ"},"notes":"the sun(-god); Amun-Ra","inheritability":"none","sources":[{"kind":"secondary","reference":"Pyramid Texts; Wilkinson 205"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt (titulary)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 325; royal titulary"}]},
+  {"id":"thebes-patron","term":{"value":"nb Wꜣs.t","script":"Egyptian (translit)","rom":"neb Waset"},"notes":"Lord of Thebes (Amun's civic epithet)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson, Complete Gods 92"}]},
+  {"id":"oracle","term":{"value":"bjꜣyt","script":"Egyptian (translit)","rom":"biꜣyt"},"notes":"oracle, marvel/portent uttered by the god","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb I 439 (bjꜣyt \"wonder, oracle\")"}]}
+],
+"egyptian_hatshepsut": [
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt","script":"Egyptian (translit)","rom":"redi nesut"},"notes":"Amun's conferral of kingship (Deir el-Bahri divine-birth)","inheritability":"none","sources":[{"kind":"secondary","reference":"Deir el-Bahri texts; Wilkinson 95"}]},
+  {"id":"monumental-construction","term":{"value":"qd mnw","script":"Egyptian (translit)","rom":"qed menu"},"notes":"to erect monuments","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70; V 72"}]},
+  {"id":"expedition-command","term":{"value":"wpwt / bjꜣ-n-Pwnt","script":"Egyptian (translit)","rom":"weput / biꜣ-en-Punt"},"notes":"commissioned mission; the Punt trading-expedition","inheritability":"none","sources":[{"kind":"secondary","reference":"Mersa Gawasis stelae (bjꜣ-n-Pwnt); Wb I 303"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"secondary","reference":"royal titulary; Wb II 325"}]},
+  {"id":"monumental-building","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument(s)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70"}]},
+  {"id":"punt-expedition","term":{"value":"ḫnt r Pwnt","script":"Egyptian (translit)","rom":"khenet er Punt"},"notes":"voyage southward to Punt","inheritability":"none","sources":[{"kind":"secondary","reference":"Deir el-Bahri Punt reliefs; Wb III 309 (ḫntj \"go south\")"}]}
+],
+"egyptian_horus": [
+  {"id":"kingship-pharaonic","term":{"value":"Ḥrw nb-ꜥḥ","script":"Egyptian (translit)","rom":"Ḥeru / neb-ꜥaḥ"},"notes":"Horus, lord of the palace; living king is Horus","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson, Complete Gods 200–03; Horus-name of titulary"}]}
+],
+"egyptian_imhotep": [
+  {"id":"architectural-design","term":{"value":"qd","script":"Egyptian (translit)","rom":"qed"},"notes":"to build/design a structure","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 72; Saqqara Step-Pyramid tradition"}]},
+  {"id":"medicine-knowledge","term":{"value":"swnw","script":"Egyptian (translit)","rom":"sunu"},"notes":"physician; medical knowledge","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb IV 67 (swnw \"physician\")"}]},
+  {"id":"scribal-mastery","term":{"value":"zẖꜣw","script":"Egyptian (translit)","rom":"sesh"},"notes":"scribe; the writing arts","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb III 475 (zẖꜣ \"write\")"}]},
+  {"id":"medicine","term":{"value":"pẖr.t","script":"Egyptian (translit)","rom":"pekheret"},"notes":"remedy, medical prescription","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb I 548 (pẖrt \"remedy\")"}]},
+  {"id":"architecture","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument, built work","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70"}]},
+  {"id":"wisdom","term":{"value":"rḫ / sꜣꜣ","script":"Egyptian (translit)","rom":"rekh / saa"},"notes":"knowledge, wisdom, sagacity","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 442 (rḫ \"know\"); sbꜣyt wisdom-tradition"}]},
+  {"id":"scribal-arts","term":{"value":"mdw-nṯr","script":"Egyptian (translit)","rom":"medu-netjer"},"notes":"\"god's words\"; the sacred script","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 180; Wilkinson 113"}]},
+  {"id":"priestly-office","term":{"value":"ẖrj-ḥb (ḥrj-tp)","script":"Egyptian (translit)","rom":"kheri-heb (heri-tep)"},"notes":"(chief) lector-priest","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb III 394 (ẖrj-ḥb \"lector-priest\")"}]}
+],
+"egyptian_isis": [
+  {"id":"maternal-protection","term":{"value":"mwt-nṯr","script":"Egyptian (translit)","rom":"mut-netjer"},"notes":"divine mother; her protective motherhood","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson, Complete Gods 146–49"}]},
+  {"id":"resurrection-power","term":{"value":"sꜥnḫ","script":"Egyptian (translit)","rom":"seꜥankh"},"notes":"to make live, revivify (she revives Osiris)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb IV 44 (sꜥnḫ \"cause to live\"); Pyramid Texts"}]},
+  {"id":"mediterranean-mystery-cult","term":{"value":"ꜣs.t wr.t","script":"Egyptian (translit)","rom":"Aset weret"},"notes":"Isis the Great; basis of the Hellenistic mystery-Isis","inheritability":"none","sources":[{"kind":"secondary","reference":"Apuleius Met. 11; Wilkinson 149"}]}
+],
+"egyptian_osiris": [
+  {"id":"royal-ancestor","term":{"value":"nb ḏ.t / ḫntj-jmntjw","script":"Egyptian (translit)","rom":"neb djet / khenty-imentiu"},"notes":"lord of eternity, Foremost of the Westerners; dead-king ancestor","inheritability":"none","sources":[{"kind":"secondary","reference":"Pyramid Texts; Wilkinson, Complete Gods 105–08"}]}
+],
+"egyptian_ptah": [
+  {"id":"craft-mastery","term":{"value":"ḥmwt","script":"Egyptian (translit)","rom":"ḥemut"},"notes":"craft, skilled handiwork; the domain of the artisan","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb III 84; Wilkinson, Complete Gods 123"}]},
+  {"id":"architectural-design","term":{"value":"qd","script":"Egyptian (translit)","rom":"qed"},"notes":"to build/form, design of a structure","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 72 (qd \"build, fashion\")"}]},
+  {"id":"craft-creator","term":{"value":"nb ḥmwt","script":"Egyptian (translit)","rom":"neb ḥemut"},"notes":"lord of craft (Ptah's creator-artisan epithet)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson, Complete Gods 123–24"}]},
+  {"id":"artisans","term":{"value":"ḥmww","script":"Egyptian (translit)","rom":"ḥemu"},"notes":"craftsmen, artisans (whom Ptah patronizes)","inheritability":"none","sources":[{"kind":"secondary","reference":"wr-ḫrp-ḥmww title; Wb III 84"}]},
+  {"id":"architecture","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument(s), built work","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70 (mnw \"monument\")"}]},
+  {"id":"metallurgy","term":{"value":"mḏ.t / bjꜣ","script":"Egyptian (translit)","rom":"medjat / biꜣ"},"notes":"metalworking; biꜣ = metal/ore worked by Ptah's smiths","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb I 437 (bjꜣ \"metal, ore\"); Wilkinson 124"}]}
+],
+"egyptian_ramesses_ii": [
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt","script":"Egyptian (translit)","rom":"redi nesut"},"notes":"divine conferral of kingship","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson 95"}]},
+  {"id":"monumental-construction","term":{"value":"qd mnw","script":"Egyptian (translit)","rom":"qed menu"},"notes":"to build monuments","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 72; II 70"}]},
+  {"id":"military-command","term":{"value":"ḥrj-pḏt / sšm mšꜥ","script":"Egyptian (translit)","rom":"heri-pedjet / seshem mesha"},"notes":"troop-commander; leading the army","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb I 570 (pḏt \"troop\"); II 155 (mšꜥ \"army\")"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"royal titulary"}]},
+  {"id":"monumental-building","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument(s)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70"}]},
+  {"id":"military-campaign","term":{"value":"mšꜥ","script":"Egyptian (translit)","rom":"mesha"},"notes":"army, military expedition/campaign","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 155 (mšꜥ \"army, expedition\")"}]},
+  {"id":"kadesh-battle","term":{"value":"ꜥḥꜣ n Qdš","script":"Egyptian (translit)","rom":"ꜥaḥa en Qedesh"},"notes":"the battle/fighting at Kadesh","inheritability":"none","sources":[{"kind":"secondary","reference":"Kadesh Poem/Bulletin; Wb I 215 (ꜥḥꜣ \"fight\")"}]}
+],
+"egyptian_ramesses_iii": [
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"secondary","reference":"royal titulary; Wb II 325"}]},
+  {"id":"monumental-building","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument(s) (Medinet Habu)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70"}]},
+  {"id":"sea-peoples-defense","term":{"value":"ꜥḥꜣ r ḫꜣs.tjw nw pꜣ ym","script":"Egyptian (translit)","rom":"ꜥaḥa er khasetiu nu pa-yam"},"notes":"fighting the foreigners of the sea","inheritability":"none","sources":[{"kind":"secondary","reference":"Medinet Habu Year 8 inscription; Wb I 215; III 234"}]}
+],
+"emotan": [
+  {"id":"justice-and-conscience","term":{"value":"Emwin-ẹsọ / izẹ-ẹdagbọn","script":"Edo"},"notes":"upright conscience; revered as a guardian-spirit","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968); Centenary Project (Google Arts)"}]},
+  {"id":"market-protection","term":{"value":"Eki (Oba Market)","script":"Edo","rom":"Eki"},"notes":"the market; she is its tutelary guardian-figure","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968); africarebirth \"Emotan\""}]}
+],
+"esigie": [
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"iyoba-foundation","term":{"value":"Iyoba","script":"Edo","rom":"Iyoba"},"notes":"instituted the queen-mother office (for Idia)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Idia\"; Met Museum \"Idia first Iyoba\""}]},
+  {"id":"christian-syncretism-experiment","term":{"value":"Oghẹnẹ-Pọtuki / Ìchọ̀ọ̀sì","script":"Edo"},"notes":"Catholic Christianity briefly adopted at court","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Esigie\"; Ryder (1969)"}]},
+  {"id":"idah-war","term":{"value":"Okuo Idah (Igala)","script":"Edo","rom":"Okuo Idah"},"notes":"war against Idah/Igala, won 1515–16","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Esigie\"; \"Idia\""}]}
+],
+"etruscan_menrva": [
+  {"id":"craft-and-weaving","term":{"value":"𐌌𐌄𐌍𐌓𐌅𐌀 (Menrva, ars/textūra-equiv.)","script":"Etruscan","rom":"Menrva"},"notes":"goddess of craft, handiwork and weaving","inheritability":"none","sources":[{"kind":"secondary","reference":"Votive inscriptions; Bonfante, Etruscan; Varro LL 5.74 (Menerva)"}]},
+  {"id":"warfare-tactical","term":{"value":"𐌌𐌄𐌍𐌓𐌅𐌀 (Menrva armāta)","script":"Etruscan","rom":"Menrva"},"notes":"armed Menrva, goddess of tactical/martial skill","inheritability":"none","sources":[{"kind":"secondary","reference":"Etruscan mirrors (armed Menrva); Bonfante & Bonfante, Etruscan Language"}]}
+],
+"etruscan_tinia": [
+  {"id":"sky-and-thunder-supreme","term":{"value":"tin(s) / 𐌕𐌉𐌍𐌉𐌀 (manth/lightning-hurler)","script":"Etruscan","rom":"Tinia (tin = \"day/sky\")"},"notes":"supreme sky-and-thunder god, hurler of lightning-bolts","inheritability":"none","sources":[{"kind":"secondary","reference":"Piacenza Liver; Liber Linteus; Pallottino, Etruscans; Seneca NQ 2.41 (on Etruscan lightning-lore)"}]},
+  {"id":"kingship-and-political-decision-making","term":{"value":"𐌋𐌀𐌖𐌙𐌖𐌌 (lauχum)","script":"Etruscan","rom":"lauχum / lauchme"},"notes":"king(ship), supreme rule (Latin rēx); cf. lucumo","inheritability":"none","sources":[{"kind":"secondary","reference":"Etruscan glosses, Pallottino; Servius (lucumones); cf. Pyrgi Tablets (zilac)"}]}
+],
+"etruscan_turms": [
+  {"id":"messenger-of-the-gods","term":{"value":"𐌕𐌖𐌓𐌌𐌑 (Turmś)","script":"Etruscan","rom":"Turmś / Turms"},"notes":"divine messenger/herald of the gods (≈ Hermes/Mercurius)","inheritability":"none","sources":[{"kind":"secondary","reference":"Etruscan mirrors; Bonfante, Etruscan; de Grummond, Etruscan Myth"}]},
+  {"id":"psychopomp-conducting-souls","term":{"value":"𐌕𐌖𐌓𐌌𐌑 𐌀𐌉𐌕𐌀𐌑 (Turmś Aitaś)","script":"Etruscan","rom":"Turmś Aitaś (\"Turms of Hades\")"},"notes":"psychopomp; \"Turms of Aita,\" conductor of souls underworld","inheritability":"none","sources":[{"kind":"secondary","reference":"Etruscan engraved mirror (Turmś Aitaś); de Grummond, Etruscan Myth, Sacred History"}]}
+],
+"etruscan_uni": [
+  {"id":"queen-of-the-gods","term":{"value":"𐌖𐌍𐌉 (Uni); Lat. equiv. rēgīna","script":"Etruscan","rom":"Uni (gen. Unial)"},"notes":"queen-goddess of the gods (no attested ON for \"queen\"; Lat. rēgīna)","inheritability":"none","sources":[{"kind":"secondary","reference":"Pyrgi Tablets (Unial); Bonfante, Etruscan; Livy 5.21–22 (regina)"}]},
+  {"id":"sovereignty-and-marriage","term":{"value":"𐌖𐌍𐌉 (Uni, mātrōnālis); Lat. equiv. mātrimōnium","script":"Etruscan","rom":"Uni"},"notes":"sovereignty and marriage; tutelary matron-goddess of cities","inheritability":"none","sources":[{"kind":"secondary","reference":"Pyrgi Tablets; Bonfante, Etruscan Life and Afterlife"}]}
+],
+"ewedo": [
+  {"id":"kingship-edo-foundation-reform","term":{"value":"Oba (ọba ne ọ kpọ́bọ)","script":"Edo","rom":"Oba"},"notes":"king who reformed/consolidated the monarchy","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968)"}]},
+  {"id":"administrative-architecture","term":{"value":"Eghaevbo (n'Ore/n'Ogbe)","script":"Edo","rom":"Eghaevbo"},"notes":"ordering of the state-councilor chieftaincy system","inheritability":"none","sources":[{"kind":"secondary","reference":"Bradbury (1973); Wikipedia \"Kingdom of Benin\""}]},
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"palace-association-foundation","term":{"value":"Eghaevbo n'Ogbe","script":"Edo","rom":"Eghaevbo n'Ogbe"},"notes":"founding of the palace-chiefs association","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"urban-relocation","term":{"value":"Ogbe (Usama→Ogbe)","script":"Edo","rom":"Ogbe"},"notes":"moving the royal palace to the Ogbe quarter","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968)"}]}
+],
+"eweka_i": [
+  {"id":"kingship-edo-foundation","term":{"value":"Oba (ẹ̀sẹ̀-otọ)","script":"Edo","rom":"Oba"},"notes":"founding divine king of the Oba (Eweka) dynasty","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba, *A Short History of Benin* (1968); Bradbury, *Benin Studies* (1973)"}]},
+  {"id":"kingship-yoruba-foundation","term":{"value":"ọba (ọmọ Ọranmíyàn)","script":"Yoruba","rom":"ọba"},"notes":"king; son of Oranmiyan, the Yoruba-derived line","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968); Smith (1988)"}]},
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"benin-foundation","term":{"value":"ẹ̀sẹ̀ Ẹdo (Ubinu)","script":"Edo","rom":"ẹ̀sẹ̀ Ẹdo, Ubinu"},"notes":"founding of Benin/Edo (Ubinu) monarchy","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968)"}]}
+],
+"ewuare_great": [
+  {"id":"monumental-construction","term":{"value":"Iya (Ọba Ewuare)","script":"Edo","rom":"Iya"},"notes":"deepening/extending the city moat and walls","inheritability":"none","sources":[{"kind":"secondary","reference":"Egharevba (1968); Wikipedia \"Benin Moat\""}]},
+  {"id":"urban-administration","term":{"value":"Iwebo / Iweguae / Ibiwe","script":"Edo","rom":"Iwebo, Iweguae, Ibiwe"},"notes":"the three palace societies he established","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973); heritage.diversityhouse \"Benin Palace Societies\""}]},
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"iya-moat-extension","term":{"value":"Iya (ọ rhie kpọ̀n)","script":"Edo","rom":"Iya"},"notes":"extension of the moat-and-wall system","inheritability":"none","sources":[{"kind":"secondary","reference":"Egharevba (1968); Wikipedia \"Benin Moat\""}]},
+  {"id":"urban-renewal","term":{"value":"Ẹdo (Ubinu, igbáwótọ)","script":"Edo","rom":"Ẹdo, Ubinu"},"notes":"rebuilding the capital, renamed Ubinu/Edo","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968)"}]},
+  {"id":"craft-guild-foundation","term":{"value":"Igun Ẹ́rọ̀nmwọ̀n (na otú-ighẹ)","script":"Edo","rom":"Igun Ẹ́rọ̀nmwọ̀n"},"notes":"royal guilds, esp. the brass-casters' guild","inheritability":"none","sources":[{"kind":"primary","reference":"Met Museum \"Igun Eronmwon\"; Smarthistory"}]},
+  {"id":"atlantic-trade-foundation","term":{"value":"Eki (ne ovbiẹ̀hẹ̀ Pọtuki)","script":"Edo","rom":"Eki"},"notes":"trade/market opened to the Atlantic (Portuguese)","inheritability":"none","sources":[{"kind":"primary","reference":"Ryder, *Benin and the Europeans* (1969)"}]}
+],
+"fallen_star": [
+  {"id":"celestial-luminance","term":{"value":"wičháȟpi","script":"Lakota","rom":"wičháȟpi"},"notes":"star; the star-born hero's shining nature","inheritability":"none","sources":[{"kind":"secondary","reference":"New Lakota Dictionary; Wikipedia List of Lakota deities (Wičháȟpi Hiŋȟpáya)"}]},
+  {"id":"monster-slaying","term":{"value":"wakȟáŋ kičhízapi","script":"Lakota","rom":"wakȟáŋ kičhízapi"},"notes":"battling sacred/dangerous monstrous beings (Iyá, Uŋktéhi)","inheritability":"none","sources":[{"kind":"primary","reference":"Buechel/NLD (kičhíza \"to fight\"); Lakota deities Iyá (devouring monster), Uŋktéhi (water-monster) — note: descriptive; no single \"monster-slayer\" lexeme"}]},
+  {"id":"sky-passage","term":{"value":"maȟpíya etáŋ hiŋhpáya","script":"Lakota","rom":"maȟpíya etáŋ hiŋhpáya"},"notes":"to fall from the sky/heaven (his descent)","inheritability":"none","sources":[{"kind":"primary","reference":"NLD (maȟpíya \"sky\"; hiŋhpáya \"to fall\"); name Wičháȟpi Hiŋȟpáya = \"Star Fell\""}]},
+  {"id":"rescue","term":{"value":"ophíkiya","script":"Lakota","rom":"ophíkiya"},"notes":"to rescue/help out of danger (the girls from bears)","inheritability":"none","sources":[{"kind":"primary","reference":"Buechel/NLD (ophíkiya \"to help, rescue\"); Falling Star rescue at Matȟó Thípila"}]},
+  {"id":"celestial-descent","term":{"value":"wičháȟpi hiŋȟpáya","script":"Lakota","rom":"wičháȟpi hiŋȟpáya"},"notes":"fallen star — the star that fell to earth","inheritability":"none","sources":[{"kind":"primary","reference":"World History Encyclopedia \"Falling Star\"; Sinte Gleska Univ. (Wičháȟpi Hiŋȟpáya \"Fallen Star\")"}]},
+  {"id":"matho-thipila","name":"Bear Lodge (Devils Tower, raised in the rescue)","term":{"value":"Matȟó Thípila","rom":"matȟó thípila"},"notes":"Bear Lodge; butte Fallen Star raised to save the girls","inheritability":"none","sources":[{"kind":"primary","reference":"Indigenous Geotags; SDPB Lakota Star Knowledge"}]}
+],
+"finnish_aino": [
+  {"id":"tragic-maiden-drowned-by-choice","term":{"value":"neito (hukuttautuja)","script":"Finnish","rom":"neito (hukuttautuja)"},"notes":"maiden who drowns herself by choice","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala IV (Aino-runo)"}]},
+  {"id":"salmon-transformation-afterlife","term":{"value":"kalaksi muuttuminen","script":"Finnish","rom":"kalaksi muuttuminen"},"notes":"transformation into a fish/salmon after drowning","inheritability":"partial","sources":[{"kind":"primary","reference":"Kalevala IV-V (Aino becomes the fish)"}]},
+  {"id":"uncaught-fish-of-recognition-tragic-tableau","term":{"value":"karannut kala (Vellamon neito)","script":"Finnish","rom":"karannut kala (Vellamon neito)"},"notes":"the escaped fish — \"Vellamo's maid\" slips Väinämöinen's grasp","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala V (Väinämöinen hooks then loses her)"}]},
+  {"id":"sister-of-Joukahainen","term":{"value":"Joukahaisen sisar","script":"Finnish","rom":"Joukahaisen sisar"},"notes":"sister of Joukahainen (pledged to settle his contest-loss)","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala III-IV (Joukahainen pledges his sister Aino)"}]}
+],
+"finnish_ilmarinen": [
+  {"id":"eternal-smith","term":{"value":"seppä (takoja iänikuinen)","script":"Finnish","rom":"seppä (takoja iänikuinen)"},"notes":"smith; \"the eternal forger,\" his epithet","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala (epithet \"takoja iänikuinen seppä\")"}]},
+  {"id":"forger-of-the-sky-vault","term":{"value":"taivaankannen takoja","script":"Finnish","rom":"taivaankannen takoja"},"notes":"forger of the sky-lid/firmament (taivaankansi)","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala X (\"takoi taivosen kannen\")"}]},
+  {"id":"forger-of-the-Sampo","term":{"value":"Sammon takoja","script":"Finnish","rom":"Sammon takoja"},"notes":"forger of the Sampo, the magic mill","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala X (Sammon taonta)"}]},
+  {"id":"cosmogonic-craftsman-deity","term":{"value":"seppo (luova takoja)","script":"Finnish","rom":"seppo (luova takoja)"},"notes":"\"Seppo,\" demiurgic smith-name; cosmogonic craftsman","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala (Seppo Ilmarinen); SKVR smith-runot"}]},
+  {"id":"gold-and-silver-bride-anti-materialist-parable","term":{"value":"kultaneito","script":"Finnish","rom":"kultaneito"},"notes":"the \"gold maiden\" he forges — cold, lifeless bride","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XXXVII (kultaneito, the gold-and-silver bride)"}]}
+],
+"finnish_kullervo": [
+  {"id":"tragic-slave-warrior","term":{"value":"orja (kostaja)","script":"Finnish","rom":"orja (kostaja)"},"notes":"slave-thrall turned avenger; tragic bondsman","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XXXI-XXXVI (Kullervo-runot)"}]},
+  {"id":"preternaturally-strong-cursed-infant","term":{"value":"väki (kirottu lapsi)","script":"Finnish","rom":"väki (kirottu lapsi)"},"notes":"preternatural force (väki) in the cursed infant","inheritability":"full","sources":[{"kind":"primary","reference":"Kalevala XXXI (infant Kullervo bursts swaddling); väki = innate force"}]},
+  {"id":"unwitting-incest-with-sister","term":{"value":"sokea sisaruussuhde","script":"Finnish","rom":"sokea sisaruussuhde"},"notes":"unwitting incest with his lost sister","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XXXV (Kullervo and sister)"}]},
+  {"id":"suicide-on-sword","term":{"value":"miekkaan kaatuminen","script":"Finnish","rom":"miekkaan kaatuminen"},"notes":"falling on his (speaking) sword — self-slaying","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XXXVI (the sword answers, he dies on it)"}]},
+  {"id":"foundational-Finnish-tragic-hero-template","term":{"value":"traagillinen sankari (perikuva)","script":"Finnish","rom":"traagillinen sankari (perikuva)"},"notes":"archetypal tragic-hero pattern of Finnish lore","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XXXI-XXXVI; reception (Sibelius, Tolkien's Túrin)"}]}
+],
+"finnish_lemminkainen": [
+  {"id":"reckless-lover-hero","term":{"value":"lieto (Lemminkäinen)","script":"Finnish","rom":"lieto (Lemminkäinen)"},"notes":"\"lieto\" = wanton/reckless, his fixed epithet; lover-hero","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala (standing epithet \"lieto Lemminkäinen\")"}]},
+  {"id":"swan-of-Tuonela-hunter","term":{"value":"Tuonelan joutsen (pyytäjä)","script":"Finnish","rom":"Tuonelan joutsen (pyytäjä)"},"notes":"hunter of the swan of Tuonela (death-river)","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XIV (Tuonelan joutsen)"}]},
+  {"id":"died-and-resurrected-by-mother-Lempi","term":{"value":"herättäminen (emon)","script":"Finnish","rom":"herättäminen (emon)"},"notes":"raising-from-death by his mother (emo), unnamed in Kalevala","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XV (mother rakes Tuonela-river, revives him); note: roster \"Lempi\" — Kalevala leaves her unnamed"}]},
+  {"id":"sampo-theft-expedition-participant","term":{"value":"Sammon ryöstö (osallinen)","script":"Finnish","rom":"Sammon ryöstö (osallinen)"},"notes":"participant in the theft of the Sampo","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XXXIX-XLII (Sammon ryöstö)"}]}
+],
+"finnish_louhi": [
+  {"id":"mistress-of-Pohjola-the-North-Land","term":{"value":"Pohjolan emäntä","script":"Finnish","rom":"Pohjolan emäntä"},"notes":"Mistress/household-ruler of Pohjola, the North-land","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala (Lönnrot), passim; SKVR Pohjola-runot"}]},
+  {"id":"shape-shifting-sorceress","term":{"value":"noita / muodonmuuttaja","script":"Finnish","rom":"noita / muodonmuuttaja"},"notes":"witch-sorceress; shape-changer (Louhi flies as eagle)","inheritability":"partial","sources":[{"kind":"primary","reference":"Kalevala XLIII (Louhi as kokko/eagle); noita \"shaman-witch\""}]},
+  {"id":"mother-of-multiple-bride-quest-daughters","term":{"value":"Pohjan neiti (emo)","script":"Finnish","rom":"Pohjan neiti (emo)"},"notes":"mother (emo) of the courted \"maids of the North\"","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala (Pohjan neiti bride-quest runot)"}]},
+  {"id":"sampo-acquirer-and-loser","term":{"value":"Sampo (saaja ja menettäjä)","script":"Finnish","rom":"Sampo (saaja ja menettäjä)"},"notes":"the magic mill she gains then loses; native Kalevala word","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala X, XLII-XLIII (Sammon ryöstö)"}]},
+  {"id":"weather-controller","term":{"value":"säänhaltija / pakkasen loihtija","script":"Finnish","rom":"säänhaltija / pakkasen loihtija"},"notes":"weather-controller; conjurer of frost and fog","inheritability":"partial","sources":[{"kind":"primary","reference":"Kalevala XLII-XLIII (Louhi sends frost, fog, plague)"}]}
+],
+"finnish_vainamoinen": [
+  {"id":"foundational-sage-shaman-poet-of-the-Kalevala","term":{"value":"tietäjä iänikuinen","script":"Finnish","rom":"tietäjä iänikuinen"},"notes":"\"the eternal seer-sage,\" his fixed Kalevala epithet","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala (standing epithet); tietäjä = knower-shaman"}]},
+  {"id":"cosmic-singer-of-world-into-order","term":{"value":"laulaja / loitsija","script":"Finnish","rom":"laulaja / loitsija"},"notes":"singer-incanter who sings/orders the world by loitsu","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala III (out-sings Joukahainen into swamp); laulu/loitsu"}]},
+  {"id":"kantele-composer-foundational-Finnish-instrument-creation","term":{"value":"kanteleen tekijä / soittaja","script":"Finnish","rom":"kanteleen tekijä / soittaja"},"notes":"maker and player of the kantele (Finnish zither)","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala XL-XLI (forges kantele of pike-bone)"}]},
+  {"id":"eternal-sage-tietäjä","term":{"value":"tietäjä","script":"Finnish","rom":"tietäjä"},"notes":"seer-sage/knower-shaman wielding sana (\"the word\")","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala passim; SKVR; Lönnrot"}]},
+  {"id":"departure-and-promised-return-figure","term":{"value":"lähtö ja paluun lupaus","script":"Finnish","rom":"lähtö ja paluun lupaus"},"notes":"his departure and promise to return when needed","inheritability":"none","sources":[{"kind":"primary","reference":"Kalevala L (sails off, leaves kantele, vows return)"}]}
+],
+"greek_acastus": [
+  {"id":"Argonaut","term":{"value":"Ἀργοναύτης","script":"Greek","rom":"Argonautēs"},"notes":"Argonaut; sailor of the Argo","inheritability":"none","sources":[{"kind":"primary","reference":"Apollonius Rhodius 1.224; Apollodorus 1.9.16, 1.9.27"}]},
+  {"id":"king-of-Iolcus","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king of Iolcus (after Pelias)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 1.9.27, 3.13.1–3; Pindar, Nemean 4.57–61"}]},
+  {"id":"host-of-Pelias-funeral-games","term":{"value":"ἀγωνοθέτης","script":"Greek","rom":"agōnothetēs"},"notes":"president/host of the (funeral) games","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 1.9.27; Pausanias 5.17.9–11 (Chest of Cypselus games)"}]},
+  {"id":"purifier-of-Peleus","term":{"value":"καθαρμός","script":"Greek","rom":"katharmos"},"notes":"purification (he cleansed Peleus of bloodshed)","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 3.13.1–3; cf. καθαίρω (LSJ)"}]}
+],
+"greek_aeacus": [
+  {"id":"justice-and-judgment","term":{"value":"δικαιοσύνη","script":"Greek","rom":"dikaiosynē"},"notes":"justice; righteous judgment","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Isthmian 8.24; Apollodorus 3.12.6; Plato, Gorgias 523e–524a"}]},
+  {"id":"underworld-judgment-of-the-dead","term":{"value":"δικαστής","script":"Greek","rom":"dikastēs"},"notes":"judge of the dead in the underworld","inheritability":"none","sources":[{"kind":"primary","reference":"Plato, Apology 41a, Gorgias 523e–524a; Isocrates, Evagoras 15"}]}
+],
+"greek_aeneas": [
+  {"id":"pius-aeneas-piety-and-duty","term":{"value":"εὐσέβεια","script":"Greek","rom":"eusebeia"},"notes":"piety; reverent duty to gods and kin","inheritability":"none","sources":[{"kind":"primary","reference":"Dionysius of Halicarnassus, Ant. Rom. 1.46–48; cf. εὐσεβής (Sophocles)"}]},
+  {"id":"foundation-of-Roman-lineage","term":{"value":"ἀρχηγέτης","script":"Greek","rom":"archēgetēs"},"notes":"founding ancestor of a race/line","inheritability":"none","sources":[{"kind":"secondary","reference":"Dionysius of Halicarnassus, Ant. Rom. 1.45–64; LSJ s.v. ἀρχηγέτης"}]}
+],
+"greek_alcestis": [
+  {"id":"voluntary-self-substitution-for-the-husband","term":{"value":"ὑπεραποθνῄσκειν","script":"Greek","rom":"hyperapothnēiskein"},"notes":"to die in another's stead (for her husband)","inheritability":"none","sources":[{"kind":"primary","reference":"Euripides, Alcestis 17–18, 155–198, 282–284; Plato, Symposium 179b–c"}]},
+  {"id":"rescue-from-Hades-by-Heracles","term":{"value":"ἀνάγειν","script":"Greek","rom":"anagein"},"notes":"bringing back up (from the dead)","inheritability":"none","sources":[{"kind":"primary","reference":"Euripides, Alcestis 1140–1146; Apollodorus 1.9.15; cf. ἀναγωγή"}]},
+  {"id":"canonical-Euripidean-tragic-protagonist","term":{"value":"πρωταγωνιστής","script":"Greek","rom":"prōtagōnistēs"},"notes":"lead figure of the drama","inheritability":"none","sources":[{"kind":"primary","reference":"Euripides, Alcestis (438 BCE, fourth-place prosatyric); Aristotle, Poetics"}]}
+],
+"greek_alexander": [
+  {"id":"pothos-divine-yearning","term":{"value":"πόθος","script":"Greek","rom":"pothos"},"notes":"yearning; the divine longing to surpass all bounds","inheritability":"none","sources":[{"kind":"secondary","reference":"Arrian, Anabasis 1.3.5, 3.3.1, 5.2.5 (the recurring πόθος); LSJ s.v. πόθος"}]},
+  {"id":"kingship-of-Macedon-and-Asia","term":{"value":"βασιλεὺς τῆς Ἀσίας","script":"Greek","rom":"basileus tēs Asias"},"notes":"king of Asia (and Macedon)","inheritability":"none","sources":[{"kind":"primary","reference":"Plutarch, Alexander 34; Arrian, Anabasis 2.14.8–9; Diodorus 17."}]},
+  {"id":"foundation-of-Hellenistic-world","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"founder (of ~70 cities, esp. Alexandria)","inheritability":"none","sources":[{"kind":"primary","reference":"Plutarch, De Alex. fort. 1.5 (328e); Arrian, Anabasis 3.1–2; Strabo 17.1.6"}]}
+],
+"greek_amphion": [
+  {"id":"lyre-mastery","term":{"value":"κιθαρῳδία","script":"Greek","rom":"kitharōidia"},"notes":"lyre-song mastery (Hermes' gift)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 3.5.5; Pausanias 9.5.7–8; Horace, Ars Poetica 394"}]},
+  {"id":"music-and-foundation","term":{"value":"τειχοποιία","script":"Greek","rom":"teichopoiia"},"notes":"wall-building (Thebes raised by his music)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 3.5.5; Pausanias 9.5.7; Euripides, Phoenissae 823–824"}]}
+],
+"greek_antiope_amazon": [
+  {"id":"Amazon-of-Themiscyra","term":{"value":"Ἀμαζών","script":"Greek","rom":"Amazōn"},"notes":"Amazon warrior-woman of Themiscyra","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 1.16; Plutarch, Theseus 26–28; Diodorus 4.28"}]},
+  {"id":"consort-of-Theseus-at-Athens","term":{"value":"σύνευνος","script":"Greek","rom":"syneunos"},"notes":"bedfellow; consort (of Theseus)","inheritability":"none","sources":[{"kind":"primary","reference":"Plutarch, Theseus 27–28; Pausanias 1.2.1; cf. σύνευνος (Euripides)"}]},
+  {"id":"mother-of-Hippolytus-the-canonical-Euripidean-tragic-protagonist","term":{"value":"μήτηρ","script":"Greek","rom":"mētēr"},"notes":"mother (of Hippolytus)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 1.16–17; Euripides, Hippolytus 10–11, 307–310"}]}
+],
+"greek_apollod_alexiares": [
+  {"id":"gateway-protection","term":{"value":"ἀλεξίκακος","script":"Greek","rom":"alexikakos"},"notes":"warder-off of evil (his name = \"warding war\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 2.7.7; cf. ἀλέξω \"ward off\" (LSJ)"}]}
+],
+"greek_apollod_anicetus": [
+  {"id":"unconquerable","term":{"value":"ἀνίκητος","script":"Greek","rom":"anikētos"},"notes":"unconquered, invincible (his very name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 2.7.7; LSJ s.v. ἀνίκητος; cult epithet of Heracles"}]}
+],
+"greek_apollod_cleodaeus": [
+  {"id":"physical-strength-extreme","term":{"value":"βίη","script":"Greek","rom":"biē"},"notes":"Heraclid bodily might, degraded by descent","inheritability":"partial","sources":[{"kind":"primary","reference":"Apollodorus 2.8.2; Herodotus 6.52"}]}
+],
+"greek_apollod_heracles": [
+  {"id":"labor","term":{"value":"ἆθλος","script":"Greek","rom":"athlos"},"notes":"labor; appointed contest/struggle","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 2.5; Sophocles, Trachiniae 1101 (πόνων); Diodorus 4.11 (οἱ ἆθλοι)"}]},
+  {"id":"gateway-protection","term":{"value":"ἀλεξίκακος","script":"Greek","rom":"alexikakos"},"notes":"averter of evil; warder-off of harm","inheritability":"none","sources":[{"kind":"primary","reference":"Pausanias 8.41.2; Lucian; cult epithet of Heracles"}]},
+  {"id":"athletic-contest","term":{"value":"ἀγών","script":"Greek","rom":"agōn"},"notes":"athletic contest; Heracles as founder of Olympia","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Olympian 10.24–59; Pausanias 5.7.9–8.4"}]},
+  {"id":"threshold","term":{"value":"πρόθυρον","script":"Greek","rom":"prothyron"},"notes":"doorway/threshold guarded against evil","inheritability":"none","sources":[{"kind":"primary","reference":"Apuleius/Diodorus cult-use; cf. Heracles Prothyraios; Pausanias 8.41.2"}]}
+],
+"greek_apollod_hyllus": [
+  {"id":"physical-strength-extreme","term":{"value":"βίη","script":"Greek","rom":"biē"},"notes":"bodily might; Heraclid strength of force","inheritability":"partial","sources":[{"kind":"primary","reference":"Homer, Iliad (formula βίη Ἡρακληείη); Apollodorus 2.8.2"}]}
+],
+"greek_apollod_perseus": [
+  {"id":"monster-slaying","term":{"value":"γοργοφόνος","script":"Greek","rom":"gorgophonos"},"notes":"Gorgon-slayer; killer of monstrous beings","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Pythian 12.11; Euripides fr.; Apollodorus 2.4.2"}]},
+  {"id":"royal-foundation","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"founder-king (of Mycenae)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 2.4.4; Pausanias 2.15.4, 2.16.3"}]}
+],
+"greek_apollod_telephus": [
+  {"id":"physical-strength-extreme","term":{"value":"βίη","script":"Greek","rom":"biē"},"notes":"bodily might inherited from Heracles","inheritability":"partial","sources":[{"kind":"primary","reference":"Apollodorus 2.7.4, 3.9.1; Pindar, Olympian 9.70–73"}]}
+],
+"greek_apollod_theseus": [
+  {"id":"kingship-of-Athens","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king of Athens","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 1.5–24; Plutarch, Theseus 24; Thucydides 2.15"}]},
+  {"id":"civilizing-hero-Athenian","term":{"value":"συνοικισμός","script":"Greek","rom":"synoikismos"},"notes":"unification of Attica into one polis","inheritability":"none","sources":[{"kind":"primary","reference":"Thucydides 2.15; Plutarch, Theseus 24–25 (the synoikismos)"}]}
+],
+"greek_aristaeus": [
+  {"id":"beekeeping-and-honey","term":{"value":"μελισσουργία","script":"Greek","rom":"melissourgia"},"notes":"beekeeping; honey-craft","inheritability":"none","sources":[{"kind":"secondary","reference":"LSJ s.v. μελισσουργία; Apollonius Rhodius 2.506–507; Vergil, Georgics 4 (Aristaeus)"}]},
+  {"id":"pastoralism-and-herd-protection","term":{"value":"νόμιος","script":"Greek","rom":"nomios"},"notes":"of the pastures; herdsman-protector (his cult-title)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollonius Rhodius 2.506; Pindar, Pythian 9.65; Pausanias 8.2.4"}]},
+  {"id":"olive-cultivation-and-cheese-making","term":{"value":"ἐλαιουργία","script":"Greek","rom":"elaiourgia"},"notes":"olive-pressing; oil-making (with cheese-curd craft)","inheritability":"none","sources":[{"kind":"secondary","reference":"LSJ s.v. ἐλαιουργία; Diodorus 4.81; Pausanias 10.17.3"}]}
+],
+"greek_bellerophon": [
+  {"id":"flying-warfare","term":{"value":"ἱππηλάτης","script":"Greek","rom":"hippēlatēs"},"notes":"driver of the (winged) horse Pegasus","inheritability":"none","sources":[{"kind":"primary","reference":"Hesiod, Theogony 325; Pindar, Olympian 13.84–90; Apollodorus 2.3.2"}]},
+  {"id":"cautionary-hubris","term":{"value":"ὕβρις","script":"Greek","rom":"hybris"},"notes":"overreaching pride (the flight to Olympus)","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Isthmian 7.44–47; Homer, Iliad 6.200–202; Euripides, Bellerophon frr."}]}
+],
+"greek_cycnus_poseidon": [
+  {"id":"invulnerability-to-ordinary-weapons","term":{"value":"ἄτρωτος","script":"Greek","rom":"atrōtos"},"notes":"unwoundable; invulnerable to iron and bronze","inheritability":"partial","sources":[{"kind":"secondary","reference":"LSJ s.v. ἄτρωτος; Apollodorus, Epitome 3.31; Ovid, Met. 12."}]}
+],
+"greek_epaphus": [
+  {"id":"royal-authority","term":{"value":"ἄναξ","script":"Greek","rom":"anax"},"notes":"lord; sovereign authority","inheritability":"none","sources":[{"kind":"primary","reference":"Aeschylus, Suppliants 574–589; Apollodorus 2.1.3"}]},
+  {"id":"Egyptian-divine-genealogical-pivot","term":{"value":"γενάρχης","script":"Greek","rom":"genarchēs"},"notes":"founder-ancestor of a lineage","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 2.1.4; Aeschylus, Suppliants 312–315; LSJ s.v. γενάρχης"}]},
+  {"id":"kingship-of-Egypt","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king of Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 2.1.3–4; Herodotus 2.153 (Epaphus = Apis)"}]},
+  {"id":"founder-of-Memphis","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"founder (of Memphis)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 2.1.4 (founds Memphis, names it for his wife)"}]},
+  {"id":"Argive-and-Phoenician-and-Cretan-and-Theban-progenitor","term":{"value":"πρόγονος","script":"Greek","rom":"progonos"},"notes":"forefather; ancestral progenitor","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 2.1.4 (via Libya → Belus, Agenor); Aeschylus, Suppliants"}]}
+],
+"greek_eur_macaria": [
+  {"id":"blessed-death","term":{"value":"μακαρία","script":"Greek","rom":"makaria"},"notes":"blessedness; the blessed (sacrificial) death","inheritability":"none","sources":[{"kind":"primary","reference":"Euripides, Heraclidae 500–600; Pausanias 1.32.6; cf. proverb βάλλ' ἐς μακαρίαν"}]}
+],
+"greek_hdt_eurysthenes": [
+  {"id":"kingship-spartan","term":{"value":"διαρχία","script":"Greek","rom":"diarchia"},"notes":"Spartan dual kingship (co-founder of it)","inheritability":"none","sources":[{"kind":"primary","reference":"Herodotus 6.51–52; Apollodorus 2.8.2 (Agiad line)"}]}
+],
+"greek_hdt_procles": [
+  {"id":"kingship-spartan","term":{"value":"διαρχία","script":"Greek","rom":"diarchia"},"notes":"Spartan dual kingship (Eurypontid co-founder)","inheritability":"none","sources":[{"kind":"primary","reference":"Herodotus 6.51–52; Pausanias 3.1.5–7"}]}
+],
+"greek_helen": [
+  {"id":"beauty-supreme-fated-strife","term":{"value":"κάλλος","script":"Greek","rom":"kallos"},"notes":"beauty; supreme, strife-bringing loveliness","inheritability":"partial","sources":[{"kind":"primary","reference":"Homer, Iliad 3.156–158; Isocrates, Helen 54; Euripides, Helen"}]},
+  {"id":"eidolon-phantom","name":"Phantom-double","term":{"value":"εἴδωλον","script":"Greek","rom":"eidōlon"},"notes":"phantom image (the Helen-substitute at Troy)","inheritability":"none","sources":[{"kind":"primary","reference":"Stesichorus, Palinode (PMG 192); Euripides, Helen 33–34; Herodotus 2.118–120"}]}
+],
+"greek_hesiod_apollo": [
+  {"id":"augustan-state-patron","term":{"value":"ἀρχηγέτης","script":"Greek","rom":"archēgetēs"},"notes":"founding-patron; tutelary leader of a state","inheritability":"none","sources":[{"kind":"secondary","reference":"Pindar, Pythian 5.60; Thucydides 6.3 (Apollo Archēgetēs); LSJ s.v."}]}
+],
+"greek_hesiod_athena": [
+  {"id":"war-strategy","term":{"value":"μῆτις","script":"Greek","rom":"mētis"},"notes":"cunning war-craft; strategic intelligence","inheritability":"none","sources":[{"kind":"primary","reference":"Hesiod, Theogony 886–896, 924–926; Homer, Iliad 5.; cf. epithet πολύμητις"}]},
+  {"id":"civic-protection","term":{"value":"πολιάς","script":"Greek","rom":"polias"},"notes":"city-guardian (Athena Polias)","inheritability":"none","sources":[{"kind":"primary","reference":"Pausanias 1.27.1; Herodotus 5.82; cult-title at Athens (cf. πολιοῦχος)"}]}
+],
+"greek_hesiod_boreas": [
+  {"id":"winter-and-frost","term":{"value":"χειμών","script":"Greek","rom":"cheimōn"},"notes":"winter storm; freezing north-wind season","inheritability":"none","sources":[{"kind":"primary","reference":"Hesiod, Works and Days 504–558; Homer, Iliad 23.692"}]}
+],
+"greek_hesiod_dionysus": [
+  {"id":"theater","term":{"value":"δρᾶμα","script":"Greek","rom":"drama"},"notes":"drama; theatrical performance under his patronage","inheritability":"none","sources":[{"kind":"primary","reference":"Aristotle, Poetics 1449a (origins in dithyramb); cf. Διόνυσος Ἐλευθερεύς, City Dionysia"}]},
+  {"id":"death-and-rebirth","term":{"value":"παλιγγενεσία","script":"Greek","rom":"palingenesia"},"notes":"rebirth; regeneration after dismemberment","inheritability":"none","sources":[{"kind":"primary","reference":"Diodorus 3.62; Orphic frr. (Zagreus); Plutarch, De E 388e–389a"}]}
+],
+"greek_hesiod_hebe": [
+  {"id":"olympian-cupbearer","term":{"value":"οἰνοχόος","script":"Greek","rom":"oinochoos"},"notes":"wine-pourer; cupbearer of the gods","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Iliad 4.2–3; Apollodorus 2.7.7 (Hebe weds Heracles)"}]}
+],
+"greek_hesiod_hera": [
+  {"id":"queen-of-gods","term":{"value":"βασίλεια","script":"Greek","rom":"basileia"},"notes":"queen (of the gods); consort-sovereign","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Iliad 4.59–61 (Ἥρη ... βασίλεια); Hesiod, Theogony 921–923"}]}
+],
+"greek_hesiod_zeus": [
+  {"id":"kingship","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king; supreme sovereign (\"king of gods and men\")","inheritability":"none","sources":[{"kind":"primary","reference":"Hesiod, Theogony 886, 923; Homer, Iliad 1.544 (πατὴρ ἀνδρῶν τε θεῶν τε)"}]}
+],
+"greek_iamus": [
+  {"id":"twofold-prophetic-power-bird-omen-and-burnt-offering","term":{"value":"μαντική","script":"Greek","rom":"mantikē"},"notes":"seercraft; the twofold prophetic art","inheritability":"none","sources":[{"kind":"secondary","reference":"Pindar, Olympian 6.65–70 (φωνὰ ... ἐμπύρων τε); LSJ s.v. μαντική"}]},
+  {"id":"serpent-honey-feeding-as-mantic-anointing","term":{"value":"ἀναγόρευσις","script":"Greek","rom":"anagoreusis"},"notes":"mantic consecration (serpents feed him honey)","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Olympian 6.45–47 (ἰοῖς μελισσᾶν); cf. χρῖσις-motif"}]},
+  {"id":"prophecy-and-Olympian-oracle-foundation","term":{"value":"μαντεῖον","script":"Greek","rom":"manteion"},"notes":"oracle of Zeus at Olympia (his to found)","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Olympian 6.5, 6.70; Pausanias 6.2.5"}]},
+  {"id":"mantis-clan-progenitor","term":{"value":"ἀρχηγέτης","script":"Greek","rom":"archēgetēs"},"notes":"founding ancestor of the Iamidae seer-clan","inheritability":"none","sources":[{"kind":"primary","reference":"Pindar, Olympian 6.71; Herodotus 5.44, 9.33; Pausanias 3.11.6"}]}
+],
+"greek_idmon": [
+  {"id":"prophetic-vision-from-Apollo-paternity","term":{"value":"μάντις","script":"Greek","rom":"mantis"},"notes":"seer (son of Apollo)","inheritability":"partial","sources":[{"kind":"primary","reference":"Apollonius Rhodius 1.139–145; Apollodorus 1.9.16, 1.9.23; Hyginus, Fab. 14"}]},
+  {"id":"Argonaut-seer","term":{"value":"Ἀργοναύτης","script":"Greek","rom":"Argonautēs"},"notes":"Argonaut who served as the ship's seer","inheritability":"none","sources":[{"kind":"primary","reference":"Apollonius Rhodius 1.139–145, 2.815–850"}]},
+  {"id":"foreknown-yet-chosen-fate-canonical-Apollonian-paradigm","term":{"value":"μοῖρα","script":"Greek","rom":"moira"},"notes":"fated doom (foreseen, yet embraced)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollonius Rhodius 1.139–145, 2.815–850; cf. μοῖρα (Homer)"}]},
+  {"id":"eponym-of-Heraclea-Pontica-foundation","term":{"value":"ἀρχηγέτης","script":"Greek","rom":"archēgetēs"},"notes":"tutelary founder-hero (of Heraclea Pontica)","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollonius Rhodius 2.845–850; cf. founder-cult ἀρχηγέτης (LSJ)"}]}
+],
+"greek_linus": [
+  {"id":"inventor-of-melody-rhythm-and-dirges","term":{"value":"θρῆνος","script":"Greek","rom":"thrēnos"},"notes":"dirge; the lament-song he devised","inheritability":"none","sources":[{"kind":"primary","reference":"Diodorus 3.67; Apollodorus 2.4.9; Hesiod fr. 305"}]},
+  {"id":"music-teacher-of-Heracles-Orpheus-Thamyras-Musaeus","term":{"value":"διδάσκαλος","script":"Greek","rom":"didaskalos"},"notes":"teacher (of music to the heroes)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 2.4.9 (taught Heracles); Diodorus 3.67; Pausanias 9.29.6–9"}]},
+  {"id":"eponym-of-Linus-song-lament-genre","term":{"value":"λίνος","script":"Greek","rom":"linos"},"notes":"the Linus-song; eponymous lament-refrain","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Iliad 18.569–571 (λίνον ... ἄειδε); Herodotus 2.79; Pausanias 9.29.6–9"}]}
+],
+"greek_melanippe_amazon": [
+  {"id":"Amazon-of-Themiscyra","term":{"value":"Ἀμαζών","script":"Greek","rom":"Amazōn"},"notes":"Amazon warrior-woman of Themiscyra","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 5.1–2; Justin 2.4; Diodorus 4.16"}]},
+  {"id":"ransom-figure-for-Hippolyta-belt-canonical-Justinian-variant","term":{"value":"λύτρον","script":"Greek","rom":"lytron"},"notes":"ransom-price (exchanged for Hippolyta's belt)","inheritability":"none","sources":[{"kind":"primary","reference":"Justin 2.4; Apollodorus 2.5.9; cf. λύτρον (Homer, Iliad)"}]},
+  {"id":"theseus-consort-variant-name","term":{"value":"Γλαύκη","script":"Greek","rom":"Glaukē"},"notes":"Glauce; her variant name as Theseus's consort","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 5.2; cf. Pausanias 1.2.1 (consort variants)"}]}
+],
+"greek_memnon": [
+  {"id":"kingship-of-Aethiopia","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king (of the Aethiopians)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 5.3; Quintus Smyrnaeus 2; Aethiopis (Proclus)"}]}
+],
+"greek_minos": [
+  {"id":"kingship-of-Crete-thalassocracy","term":{"value":"θαλασσοκράτωρ","script":"Greek","rom":"thalassokratōr"},"notes":"ruler of the sea; sea-power king of Crete","inheritability":"none","sources":[{"kind":"primary","reference":"Thucydides 1.4; Herodotus 3.122; Diodorus 4.60 (with βασιλεύς)"}]},
+  {"id":"underworld-judge","term":{"value":"δικαστής","script":"Greek","rom":"dikastēs"},"notes":"judge of the dead in the underworld","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Odyssey 11.568–571; Plato, Gorgias 523e–524a"}]}
+],
+"greek_mopsus": [
+  {"id":"prophetic-vision-Apollonian-mantis","term":{"value":"μάντις","script":"Greek","rom":"mantis"},"notes":"seer; inspired prophet of Apollo","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 6.2–4; Strabo 14.1.27; Pausanias 7.3.2"}]},
+  {"id":"foundation-and-colonization-leadership","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"founder-leader of colonies","inheritability":"none","sources":[{"kind":"primary","reference":"Strabo 14.4.3, 14.5.16; Pausanias 7.3.2"}]},
+  {"id":"prophecy-and-oracle-founding","term":{"value":"μαντεῖον","script":"Greek","rom":"manteion"},"notes":"oracle-shrine (the Mallos oracle he founded)","inheritability":"none","sources":[{"kind":"primary","reference":"Strabo 14.5.16–17; Pausanias 7.3.2; Plutarch, De defectu 45"}]},
+  {"id":"colonization-of-Cilicia-and-Pamphylia","term":{"value":"ἀποικία","script":"Greek","rom":"apoikia"},"notes":"settlement-colony (in Cilicia/Pamphylia)","inheritability":"none","sources":[{"kind":"primary","reference":"Strabo 14.4.3; Herodotus 7.91 (with Karatepe Muksas evidence)"}]},
+  {"id":"Apollonian-mantis-lineage","term":{"value":"γένος μάντεων","script":"Greek","rom":"genos manteōn"},"notes":"hereditary clan of seers","inheritability":"none","sources":[{"kind":"primary","reference":"Strabo 14.5.16; Pausanias 7.3.2; Herodotus 9.33–35 (cf. mantic clans)"}]}
+],
+"greek_neleus": [
+  {"id":"royal-authority","term":{"value":"ἄναξ","script":"Greek","rom":"anax"},"notes":"lord; sovereign authority","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Odyssey 11.281–286; Apollodorus 1.9.9"}]},
+  {"id":"paternal-Poseidon-derived-influence","term":{"value":"εὐρυσθενής","script":"Greek","rom":"eurysthenēs"},"notes":"wide-ruling might (from his father Poseidon)","inheritability":"partial","sources":[{"kind":"primary","reference":"Hesiod, Theogony 456 (Poseidon εὐρυσθενής); Homer, Odyssey 11.235–254"}]},
+  {"id":"kingship-of-Pylos-and-Pylian-dynasty-foundation","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"founder-king of the Pylian dynasty","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Odyssey 11.281–286; Apollodorus 1.9.9; Pausanias 4.2.5"}]},
+  {"id":"mortal-hospitality-and-purification-rite-prerogative","term":{"value":"καθαρμός","script":"Greek","rom":"katharmos"},"notes":"purification rite (he refused to purify Heracles)","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 2.6.2; Diodorus 4.31; cf. καθαρμός (LSJ)"}]}
+],
+"greek_olympias": [
+  {"id":"queen-consort-of-Macedon","term":{"value":"βασίλισσα","script":"Greek","rom":"basilissa"},"notes":"queen (consort of Philip II)","inheritability":"none","sources":[{"kind":"secondary","reference":"Plutarch, Alexander 2–3; Diodorus 16–19; LSJ s.v. βασίλισσα (Hellenistic)"}]},
+  {"id":"devotee-of-Dionysian-and-orphic-mysteries","term":{"value":"μύστις","script":"Greek","rom":"mystis"},"notes":"initiate-celebrant of the mysteries","inheritability":"none","sources":[{"kind":"primary","reference":"Plutarch, Alexander 2.5–6 (snake-handling Bacchic rites); cf. μύστις (Euripides)"}]}
+],
+"greek_orion": [
+  {"id":"hunting","term":{"value":"θήρα","script":"Greek","rom":"thēra"},"notes":"hunting; the chase of wild beasts","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Odyssey 11.572–575; Hesiod fr.; Apollodorus 1.4.3–5"}]},
+  {"id":"walking-on-water","term":{"value":"πεζοπορία","script":"Greek","rom":"pezoporia"},"notes":"going on foot (here: over the sea)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 1.4.3 (διὰ θαλάσσης πορεύεσθαι); Hesiod fr. 148a"}]}
+],
+"greek_pelias": [
+  {"id":"kingship-of-Iolcus-usurpation","term":{"value":"τυραννίς","script":"Greek","rom":"tyrannis"},"notes":"usurped sole rule (of Iolcus)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 1.9.8–16, 1.9.27; Pindar, Pythian 4.106–115"}]}
+],
+"greek_periphetes": [
+  {"id":"club-bearing-strength","term":{"value":"κορυνήτης","script":"Greek","rom":"korynētēs"},"notes":"club-bearer; wielder of the bronze club","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 3.16.1 (Epitome 1.1); Pausanias 2.1.4; LSJ s.v. κορυνήτης"}]},
+  {"id":"Hephaestean-craft-inheritance","term":{"value":"χωλεία","script":"Greek","rom":"chōleia"},"notes":"lameness (inherited from father Hephaestus)","inheritability":"partial","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 1.1; cf. Hephaestus ἀμφιγυήεις (Homer, Iliad 1.607)"}]},
+  {"id":"highway-banditry-and-club-violence","term":{"value":"λῃστεία","script":"Greek","rom":"lēisteia"},"notes":"brigandage; highway robbery with violence","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 1.1; Plutarch, Theseus 8; Pausanias 2.1.4"}]},
+  {"id":"first-of-the-Isthmus-labors-of-Theseus","term":{"value":"ἆθλος","script":"Greek","rom":"athlos"},"notes":"labor; first of Theseus's road-clearing deeds","inheritability":"none","sources":[{"kind":"primary","reference":"Plutarch, Theseus 8–11; Apollodorus, Epitome 1.1; Diodorus 4.59"}]}
+],
+"greek_philip_ii": [
+  {"id":"kingship-of-Macedon","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king of Macedon","inheritability":"none","sources":[{"kind":"primary","reference":"Diodorus 16.1–4; Demosthenes, Philippics; coin legends ΦΙΛΙΠΠΟΥ"}]},
+  {"id":"hegemon-of-League-of-Corinth","term":{"value":"ἡγεμών","script":"Greek","rom":"hēgemōn"},"notes":"hegemon; commander-leader of the Hellenic League","inheritability":"none","sources":[{"kind":"primary","reference":"Diodorus 16.89; [Demosthenes] 17; IG II² 236 (League of Corinth)"}]},
+  {"id":"reformer-of-Macedonian-phalanx-and-Companion-Cavalry","term":{"value":"φάλαγξ","script":"Greek","rom":"phalanx"},"notes":"the (sarissa) phalanx he forged; with Companion horse","inheritability":"none","sources":[{"kind":"primary","reference":"Diodorus 16.3; Polybius 18.29–30; cf. ἑταῖροι (Companions)"}]}
+],
+"greek_pollux": [
+  {"id":"boxing-and-unarmed-combat","term":{"value":"πυγμή","script":"Greek","rom":"pygmē"},"notes":"boxing; fist-fighting","inheritability":"none","sources":[{"kind":"primary","reference":"Apollonius Rhodius 2.1–97; Theocritus 22; Pindar, Nemean 10."}]},
+  {"id":"protector-of-sailors","term":{"value":"σωτήρ","script":"Greek","rom":"sōtēr"},"notes":"savior (of sailors at sea)","inheritability":"none","sources":[{"kind":"primary","reference":"Homeric Hymn 33.6–17; Euripides, Helen 1500–1505; Pausanias"}]}
+],
+"greek_rhadamanthus": [
+  {"id":"lawgiving-and-justice","term":{"value":"νομοθέτης","script":"Greek","rom":"nomothetēs"},"notes":"lawgiver; framer of just laws","inheritability":"none","sources":[{"kind":"primary","reference":"Plato, Laws 624a–625a; Diodorus 5.79; Apollodorus 3.1.2"}]},
+  {"id":"underworld-judge","term":{"value":"δικαστής","script":"Greek","rom":"dikastēs"},"notes":"judge of the dead","inheritability":"none","sources":[{"kind":"primary","reference":"Plato, Gorgias 523e–524a, Apology 41a; Pindar, Olympian 2.75"}]}
+],
+"greek_sarpedon_cretan": [
+  {"id":"extended-Zeus-granted-lifespan","term":{"value":"μακροβιότης","script":"Greek","rom":"makrobiotēs"},"notes":"long life; three-generation lifespan","inheritability":"none","sources":[{"kind":"secondary","reference":"Apollodorus 3.1.2 (ἐπὶ τρεῖς γενεάς); LSJ s.v. μακροβιότης"}]},
+  {"id":"royal-authority","term":{"value":"ἄναξ","script":"Greek","rom":"anax"},"notes":"lord; sovereign authority","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Iliad (anax formula); Apollodorus 3.1.2"}]},
+  {"id":"kingship-of-Lycia","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king of Lycia","inheritability":"none","sources":[{"kind":"primary","reference":"Herodotus 1.173; Apollodorus 3.1.2; Diodorus 5.79"}]},
+  {"id":"foundation-of-Lycian-people-and-kingdom","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"founder of the Lycian people/kingdom","inheritability":"none","sources":[{"kind":"primary","reference":"Herodotus 1.173; Apollodorus 3.1.2"}]}
+],
+"greek_sarpedon_lycian": [
+  {"id":"noble-warrior-ethic","term":{"value":"ἀριστεία","script":"Greek","rom":"aristeia"},"notes":"battlefield excellence; the noblesse-oblige of valor","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Iliad 12.310–328 (the noblesse speech), 16.419–683"}]}
+],
+"greek_tenes": [
+  {"id":"eponymous-founder-of-Tenedos","term":{"value":"οἰκιστής","script":"Greek","rom":"oikistēs"},"notes":"eponymous founder (of Tenedos)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.23–26; Pausanias 10.14.1–4; Diodorus 5.83"}]},
+  {"id":"killed-by-Achilles-Apollonian-vengeance-trigger","term":{"value":"μῆνις","script":"Greek","rom":"mēnis"},"notes":"divine wrath (Apollo's, for slaying his son)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus, Epitome 3.26; Plutarch, Quaest. Graec. 28; cf. μῆνις (Homer)"}]},
+  {"id":"Tenedian-axe-proverb-eponym","term":{"value":"Τενέδιος πέλεκυς","script":"Greek","rom":"Tenedios pelekys"},"notes":"\"Tenedian axe\"; the proverb of harsh justice","inheritability":"none","sources":[{"kind":"primary","reference":"Pausanias 10.14.2–4; Stephanus Byz. s.v. Τένεδος; cf. paroemiographers"}]}
+],
+"greek_tityus": [
+  {"id":"gigantic-strength-and-stature","term":{"value":"πελωρίη","script":"Greek","rom":"pelōriē"},"notes":"monstrous hugeness of body","inheritability":"none","sources":[{"kind":"secondary","reference":"Homer, Odyssey 11.576–581 (covers nine pelethra); LSJ s.v. πέλωρ"}]},
+  {"id":"gigantic-monstrous-aggression","term":{"value":"ὕβρις","script":"Greek","rom":"hybris"},"notes":"outrage; violent assault (on Leto)","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Odyssey 11.576–581; Apollodorus 1.4.1; Pindar, Pythian 4.90–92"}]},
+  {"id":"eternally-punished-Tartarean-exemplum","term":{"value":"κόλασις","script":"Greek","rom":"kolasis"},"notes":"eternal punishment (vultures rend his liver)","inheritability":"none","sources":[{"kind":"primary","reference":"Homer, Odyssey 11.576–581; Lucretius 3.984; Apollodorus 1.4.1"}]}
+],
+"greek_zethus": [
+  {"id":"physical-strength-stone-bearing","term":{"value":"βία","script":"Greek","rom":"bia"},"notes":"brute bodily force (he carried the stones)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 3.5.5; Pausanias 9.5.8; Horace, Epist. 1.18.41–44"}]},
+  {"id":"hunter-and-herdsman-skill","term":{"value":"βουκολία","script":"Greek","rom":"boukolia"},"notes":"cattle-herding craft; the herdsman's life","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 3.5.5; Euripides, Antiope frr.; Pausanias 9.5.8"}]},
+  {"id":"theban-kingship-and-wall-building","term":{"value":"βασιλεύς","script":"Greek","rom":"basileus"},"notes":"king of Thebes (joint wall-builder)","inheritability":"none","sources":[{"kind":"primary","reference":"Apollodorus 3.5.5; Pausanias 9.5.6–8"}]},
+  {"id":"active-life-and-physical-strength","term":{"value":"βίος πρακτικός","script":"Greek","rom":"bios praktikos"},"notes":"the active (practical) life","inheritability":"none","sources":[{"kind":"primary","reference":"Plato, Gorgias 485e–486d (citing Euripides' Antiope); Aristotle, Pol. 1324a"}]}
+],
+"hatsenas": [
+  {"id":"shapeshifting-avian","term":{"value":"naxnox","script":"Tsimshian","rom":"naxnox"},"notes":"supernatural power/being able to take bird form","inheritability":"none","sources":[{"kind":"secondary","reference":"Boas, *Tsimshian Mythology*; Wikipedia Tsimshian mythology (naxnox \"supernatural\")"}]},
+  {"id":"sky-passage","term":{"value":"laxha","script":"Tsimshian","rom":"la̱xha"},"notes":"sky, heaven; the celestial realm he traverses","inheritability":"none","sources":[{"kind":"secondary","reference":"Sm'algyax Living Legacy Talking Dictionary (la̱xha \"sky/heaven\"; ha \"air\")"}]},
+  {"id":"sustenance-providing","term":{"value":"naxnox","script":"Tsimshian","rom":"naxnox"},"notes":"supernatural gift of inexhaustible food/hunting bounty","inheritability":"none","sources":[{"kind":"primary","reference":"Boas, *Tsimshian Mythology*; Lévi-Strauss \"The Story of Asdiwal\" (Hatsenas gives never-empty food supply)"}]},
+  {"id":"avian","term":{"value":"hatsenas","script":"Tsimshian","rom":"hatsenas"},"notes":"a bird of good omen (his very name)","inheritability":"none","sources":[{"kind":"primary","reference":"Boas, *Tsimshian Mythology*; Lévi-Strauss \"The Story of Asdiwal\" (\"Hatsenas… a bird of good omen\")"}]}
+],
+"hindu_arjuna": [
+  {"id":"gita-recipient-philosophical-pivot","term":{"value":"गीतोपदेशग्रहीतृ","script":"Sanskrit (Devanāgarī)","rom":"gītopadeśa-grahītṛ"},"notes":"recipient of the Bhagavad-gītā's teaching","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Bhagavad-gītā / Bhīṣma Parva (upadeśa \"instruction,\" grahītṛ \"receiver\")"}]}
+],
+"hindu_bhima": [
+  {"id":"wrath-and-vengeance","term":{"value":"क्रोध","script":"Sanskrit (Devanāgarī)","rom":"krodha"},"notes":"wrath, avenging fury (Bhīma's defining passion)","inheritability":"partial","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata (krodha, foremost of the ṣaḍ-ripu/six enemies)"}]}
+],
+"hindu_bhishma": [
+  {"id":"regency-of-Hastinapura","term":{"value":"राजप्रतिनिधि","script":"Sanskrit (Devanāgarī)","rom":"rāja-pratinidhi"},"notes":"regent / king's representative of Hastināpura","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata (pratinidhi \"representative, deputy\"; regent for Vicitravīrya etc.)"}]},
+  {"id":"bhishma-vow-and-celibate-renunciate-warrior-paradigm","term":{"value":"भीष्मप्रतिज्ञा (ब्रह्मचर्य)","script":"Sanskrit (Devanāgarī)","rom":"bhīṣma-pratijñā (brahmacarya)"},"notes":"the terrible vow of lifelong celibacy and throne-renunciation","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata Ādi Parva (pratijñā \"vow,\" brahmacarya \"celibacy\"; name Bhīṣma \"the terrible[-vowed]\")"}]},
+  {"id":"pedagogue-of-rajadharma-on-arrow-bed","term":{"value":"राजधर्मोपदेष्टृ","script":"Sanskrit (Devanāgarī)","rom":"rājadharmopadeṣṭṛ"},"notes":"teacher of kingly duty from the arrow-bed","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata Śānti/Anuśāsana Parva (rājadharma \"duty of kings\")"}]}
+],
+"hindu_draupadi": [
+  {"id":"shared-wife-of-five-Pandavas","term":{"value":"पञ्चभर्तृका","script":"Sanskrit (Devanāgarī)","rom":"pañca-bhartṛkā"},"notes":"woman of five husbands (the Pāṇḍavas)","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata Ādi Parva (pañca \"five,\" bhartṛ \"husband\")"}]},
+  {"id":"Lakshmi-incarnation-reading","term":{"value":"श्रीलक्ष्म्यंश","script":"Sanskrit (Devanāgarī)","rom":"śrī-lakṣmy-aṃśa"},"notes":"partial incarnation of the goddess Śrī-Lakṣmī","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata/Purāṇa (aṃśa \"portion, incarnation\"; Draupadī as Śrī)"}]},
+  {"id":"instrument-of-Kuru-destruction","term":{"value":"कुरुक्षयनिमित्त","script":"Sanskrit (Devanāgarī)","rom":"kuru-kṣaya-nimitta"},"notes":"appointed cause of the Kuru lineage's destruction","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata Ādi Parva 167 (kṣaya \"destruction,\" nimitta \"instrumental cause\")"}]}
+],
+"hindu_ganga": [
+  {"id":"mother-of-Bhishma-and-Karttikeya","term":{"value":"मातृत्व","script":"Sanskrit (Devanāgarī)","rom":"mātṛtva"},"notes":"motherhood (of Bhīṣma; foster of Skanda)","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata Ādi Parva (mātṛ \"mother\")"}]},
+  {"id":"descent-via-Bhagiratha-penance","term":{"value":"गङ्गावतरण","script":"Sanskrit (Devanāgarī)","rom":"gaṅgāvataraṇa"},"notes":"the descent of Gaṅgā from heaven to earth","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Rāmāyaṇa/Mahābhārata (avataraṇa \"descent,\" via Bhagīratha's tapas)"}]}
+],
+"hindu_shantanu": [
+  {"id":"kingship-of-Hastinapura","term":{"value":"हास्तिनपुरराजन्","script":"Sanskrit (Devanāgarī)","rom":"hāstinapura-rājan"},"notes":"king of Hastināpura, Kuru-dynasty ruler","inheritability":"none","sources":[{"kind":"primary","reference":"Sanskrit, Mahābhārata (rājan \"king,\" Kuru capital Hāstinapura)"}]}
+],
+"inca_ayar_auca": [
+  {"id":"flight","term":{"value":"phaway","script":"Quechua","rom":"phaway"},"notes":"winged flight","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos"}]},
+  {"id":"cuzco-foundation-anchor","term":{"value":"saywa (Qosqo)","script":"Quechua","rom":"saywa"},"notes":"boundary/foundation pillar-stone marking Cuzco's center","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos, Suma y narración"}]},
+  {"id":"huaca-of-Cuzco-center","term":{"value":"waka (Qosqo kʼuychipata)","script":"Quechua","rom":"waka"},"notes":"became the center-stone huaca of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa; Cobo, Historia del Nuevo Mundo"}]}
+],
+"inca_ayar_cachi": [
+  {"id":"sling-and-stone-manipulation","term":{"value":"warak'a","script":"Quechua","rom":"warakʼa"},"notes":"sling; his stones split mountains","inheritability":"partial","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos, Suma y narración"}]},
+  {"id":"mountain-shaping","term":{"value":"urqu kuyuchiy (warak'awan)","script":"Quechua","rom":"urqu kuyuchiy"},"notes":"moving/shaping mountains with the sling","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos"}]},
+  {"id":"sealed-huaca-cave","term":{"value":"Qhapaq Toqo (waka)","script":"Quechua","rom":"Qhapaq Toqo"},"notes":"sealed origin-cave at Pacaritambo, now a waka","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo, Historia del Nuevo Mundo"}]}
+],
+"inca_ayar_uchu": [
+  {"id":"flight-and-scouting","term":{"value":"phaway (qhaway)","script":"Quechua","rom":"phaway"},"notes":"winged flight and reconnaissance","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos"}]},
+  {"id":"huaca-of-Huanacauri","term":{"value":"waka Wanakawri","script":"Quechua","rom":"waka Wanakawri"},"notes":"became the sacred huaca of Mount Huanacauri","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa; Cobo, Historia del Nuevo Mundo; Molina, Fábulas y ritos"}]},
+  {"id":"puberty-rite-investiture","term":{"value":"warachikuy (Wanakawri)","script":"Quechua","rom":"warachikuy"},"notes":"male initiation/breech-clout investiture rite","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Fábulas y ritos de los Incas; Cobo, Historia del Nuevo Mundo"}]}
+],
+"inca_capac_yupanqui": [
+  {"id":"sapa-inca-fifth","term":{"value":"Sapa Inka (pichqa-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"fifth sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"first-road-construction","term":{"value":"ñan ruray (Qhapaq Ñan)","script":"Quechua","rom":"ñan ruray"},"notes":"first road-building of the royal-road network","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cieza de León"}]}
+],
+"inca_inca_roca": [
+  {"id":"sapa-inca-sixth","term":{"value":"Sapa Inka (suqta-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"sixth sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"hanan-hurin-moiety-division","term":{"value":"Hanan / Hurin (suyu)","script":"Quechua","rom":"Hanan / Hurin"},"notes":"upper/lower dual-moiety division of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Zuidema, The Ceque System of Cuzco"}]},
+  {"id":"panaca-of-Wikakirau","term":{"value":"panaka Wikakiraw","script":"Quechua","rom":"panaka Wikakiraw"},"notes":"his royal corporate-lineage, the Vicaquirao panaca","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo, Historia del Nuevo Mundo"}]}
+],
+"inca_lloque_yupanqui": [
+  {"id":"sapa-inca-third","term":{"value":"Sapa Inka (kimsa-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"third sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"left-handed-trait","term":{"value":"lluqʼi","script":"Quechua","rom":"lluqʼi"},"notes":"left-handed (his very name, \"the left\")","inheritability":"partial","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Molina, Vocabulario (lloque = izquierdo)"}]}
+],
+"inca_mama_cura": [
+  {"id":"household-domestic-arts","term":{"value":"wasi-llank'ay (kamachiy wasi)","script":"Quechua","rom":"wasi llankʼay"},"notes":"household domestic work and management","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo, Historia del Nuevo Mundo"}]},
+  {"id":"companion-sister","term":{"value":"pana (mama)","script":"Quechua","rom":"pana"},"notes":"sister-companion of the founding siblings","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica"}]}
+],
+"inca_mama_huaco": [
+  {"id":"first-maize-sowing","term":{"value":"tarpuy (sara ñawpaq)","script":"Quechua","rom":"tarpuy"},"notes":"the first sowing of maize","inheritability":"none","sources":[{"kind":"secondary","reference":"Betanzos, Suma y narración; Molina, Vocabulario (tarpuy = sembrar)"}]},
+  {"id":"warrior-priestess","term":{"value":"sinchi-warmi (mama)","script":"Quechua","rom":"sinchi warmi"},"notes":"warrior-woman/priestess wielding weapons","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos"}]},
+  {"id":"cuzco-site-selection-via-staff-throw","term":{"value":"tawpa chakitaqlla wikch'uy","script":"Quechua","rom":"tawpa chakitaqlla wikchʼuy"},"notes":"site-choice by throwing the digging-staff","inheritability":"none","sources":[{"kind":"secondary","reference":"Betanzos, Suma y narración (Mama Huaco variant)"}]}
+],
+"inca_mama_killa": [
+  {"id":"moon-deity","term":{"value":"Mama Killa","script":"Quechua","rom":"Mama Killa"},"notes":"Mother Moon, lunar goddess","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Vocabulario (killa = luna); Cobo, Historia del Nuevo Mundo"}]},
+  {"id":"women-marriage-childbirth","term":{"value":"killa (warmikuna, kasarakuy, wachakuy)","script":"Quechua","rom":"killa"},"notes":"patroness of women, marriage, childbirth","inheritability":"none","sources":[{"kind":"secondary","reference":"Cobo, Historia del Nuevo Mundo; Garcilaso, Comentarios reales"}]},
+  {"id":"menstrual-calendar","term":{"value":"killa (killa-yupay)","script":"Quechua","rom":"killa"},"notes":"moon as month/menstrual reckoning","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Vocabulario (killa = luna/mes); Guaman Poma (calendar)"}]},
+  {"id":"eclipse-protection","term":{"value":"killa wañuy (amaru/puma)","script":"Quechua","rom":"killa wañuy"},"notes":"\"death of the moon\" — eclipse warded by noise","inheritability":"none","sources":[{"kind":"secondary","reference":"Cobo, Historia del Nuevo Mundo; Molina, Fábulas y ritos de los Incas"}]}
+],
+"inca_mama_ocllo": [
+  {"id":"first-coya-queen","term":{"value":"Qoya (ñawpaq)","script":"Quechua","rom":"Qoya"},"notes":"first queen-empress, the Sapa Inka's principal wife","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Guaman Poma, Nueva corónica (Coya)"}]},
+  {"id":"weaving-textile-arts","term":{"value":"away (awana)","script":"Quechua","rom":"away"},"notes":"weaving/textile art taught to women","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Molina, Vocabulario (away = tejer)"}]},
+  {"id":"female-civilizing-arts","term":{"value":"warmi-yachachiy","script":"Quechua","rom":"warmi yachachiy"},"notes":"teaching of women's domestic/civilizing arts","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Cieza de León"}]}
+],
+"inca_mama_raua": [
+  {"id":"household-domestic-arts","term":{"value":"wasi-llank'ay","script":"Quechua","rom":"wasi llankʼay"},"notes":"household domestic work and management","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo, Historia del Nuevo Mundo"}]},
+  {"id":"companion-sister","term":{"value":"pana (mama)","script":"Quechua","rom":"pana"},"notes":"sister-companion of the founding siblings","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica"}]}
+],
+"inca_manco_capac": [
+  {"id":"sapa-inca-founder","term":{"value":"Sapa Inka (ñawpaq)","script":"Quechua","rom":"Sapa Inka"},"notes":"first sole-emperor, founding monarch","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Betanzos, Suma y narración"}]},
+  {"id":"kingship-incan-conferral","term":{"value":"Intip churin (Qhapaq)","script":"Quechua","rom":"Intip churin"},"notes":"Son of the Sun, his royal mandate","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"cuzco-foundation","term":{"value":"Qosqo kamachiy (tawpa-tarpuy)","script":"Quechua","rom":"Qosqo kamachiy"},"notes":"founding/establishing of Cuzco (golden-staff sinking)","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales I; Sarmiento de Gamboa, Historia índica"}]},
+  {"id":"agriculture-civilizing-arts","term":{"value":"tarpuy yachachiy","script":"Quechua","rom":"tarpuy yachachiy"},"notes":"teaching of sowing/agriculture and crafts","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Cieza de León, Crónica del Perú"}]}
+],
+"inca_mayta_capac": [
+  {"id":"sapa-inca-fourth","term":{"value":"Sapa Inka (tawa-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"fourth sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"precocious-warrior-trait","term":{"value":"sinchi (wawa-manta)","script":"Quechua","rom":"sinchi"},"notes":"mighty war-champion, precocious from infancy","inheritability":"partial","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa, Historia índica"}]},
+  {"id":"alcabicas-conquest","term":{"value":"atiy (Alqawisa)","script":"Quechua","rom":"atiy"},"notes":"conquest/subjugation of the Alcabiza of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo"}]}
+],
+"inca_pachacuti": [
+  {"id":"sapa-inca-ninth","term":{"value":"Sapa Inka (isqun-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"ninth sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"empire-founding","term":{"value":"Tawantinsuyu kamachiy","script":"Quechua","rom":"Tawantinsuyu kamachiy"},"notes":"founding/ordering of the four-quarters empire","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos, Suma y narración"}]},
+  {"id":"chanka-victory-1438","term":{"value":"atiy (Chanka)","script":"Quechua","rom":"atiy"},"notes":"victory/conquest over the Chanka","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos"}]},
+  {"id":"imperial-state-formation","term":{"value":"kamachiy (suyu-chanin)","script":"Quechua","rom":"kamachiy"},"notes":"command/ordering establishing the imperial state","inheritability":"none","sources":[{"kind":"secondary","reference":"Betanzos, Suma y narración; Cobo, Historia del Nuevo Mundo"}]},
+  {"id":"coricancha-cut-stone-rebuilding","term":{"value":"Qorikancha (ch'iqllu rumi)","script":"Quechua","rom":"Qorikancha"},"notes":"\"golden-enclosure,\" rebuilt in fitted cut-stone","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Cobo, Historia del Nuevo Mundo"}]},
+  {"id":"panaca-system-formalization","term":{"value":"panaka (kamachiy)","script":"Quechua","rom":"panaka"},"notes":"formalizing the royal corporate-lineage system","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo"}]},
+  {"id":"ceque-sight-line-ritual-geography","term":{"value":"siqʼi (seq'e)","script":"Quechua","rom":"siqʼi"},"notes":"radial sacred sight-lines of waka-shrines from Qorikancha","inheritability":"none","sources":[{"kind":"secondary","reference":"Cobo, Historia del Nuevo Mundo; Zuidema, The Ceque System of Cuzco"}]},
+  {"id":"qhapaq-nan-road-network","term":{"value":"Qhapaq Ñan","script":"Quechua","rom":"Qhapaq Ñan"},"notes":"\"royal/lord's road,\" the imperial road network","inheritability":"none","sources":[{"kind":"secondary","reference":"Cieza de León, Crónica del Perú; Hyslop, The Inka Road System"}]},
+  {"id":"pachakuti-cosmic-pivot-naming-convention","term":{"value":"Pachakuti","script":"Quechua","rom":"Pachakuti"},"notes":"\"world/time-overturner,\" the cosmic-pivot epithet","inheritability":"none","sources":[{"kind":"secondary","reference":"Betanzos, Suma y narración; Molina, Vocabulario (pacha, kutiy)"}]}
+],
+"inca_sinchi_roca": [
+  {"id":"sapa-inca-second","term":{"value":"Sapa Inka (iskay-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"second sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"huarachicuy-formalization","term":{"value":"warachikuy","script":"Quechua","rom":"warachikuy"},"notes":"formalizing the male puberty/initiation rite","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Fábulas y ritos de los Incas; Cobo, Historia del Nuevo Mundo"}]},
+  {"id":"panaca-system-foundation","term":{"value":"panaka","script":"Quechua","rom":"panaka"},"notes":"founding of the royal corporate-lineage (panaca)","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Cobo, Historia del Nuevo Mundo"}]}
+],
+"inca_viracocha_inca": [
+  {"id":"sapa-inca-eighth","term":{"value":"Sapa Inka (pusaq-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"eighth sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"vision-of-creator-Viracocha","term":{"value":"Wiraqocha musquy","script":"Quechua","rom":"Wiraqocha musquy"},"notes":"dream-vision/apparition of the creator Viracocha","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos, Suma y narración"}]},
+  {"id":"chanka-flight-and-displacement-by-Pachacuti","term":{"value":"ayqiy (Chanka-manta)","script":"Quechua","rom":"ayqiy"},"notes":"flight from the Chanka, displaced by Pachacuti","inheritability":"none","sources":[{"kind":"secondary","reference":"Sarmiento de Gamboa, Historia índica; Betanzos"}]}
+],
+"inca_yahuar_huacac": [
+  {"id":"sapa-inca-seventh","term":{"value":"Sapa Inka (qanchis-ñiqin)","script":"Quechua","rom":"Sapa Inka"},"notes":"seventh sole-emperor of Cuzco","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Sarmiento de Gamboa"}]},
+  {"id":"weeping-blood-omen","term":{"value":"yawar waqay","script":"Quechua","rom":"yawar waqay"},"notes":"\"weeping blood\" — his name-omen (yawar blood + waqay weep)","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Molina, Vocabulario (yawar, waqay)"}]}
+],
+"inkarri": [
+  {"id":"kingship-incan-conferral","term":{"value":"Inka(rri)","script":"Quechua","rom":"Inka"},"notes":"Inca-king whose body/head will regenerate sovereignty","inheritability":"none","sources":[{"kind":"primary","reference":"Arguedas, \"Mito de Inkarrí\" (Puquio/Q'ero oral tradition)"}]},
+  {"id":"pachakuti-eschatological-promise","term":{"value":"pachakuti","script":"Quechua","rom":"pachakuti"},"notes":"\"world-overturning,\" promised return/restoration","inheritability":"none","sources":[{"kind":"secondary","reference":"Arguedas, Mito de Inkarrí; Molina, Vocabulario (pacha, kutiy)"}]},
+  {"id":"kingship-incan","term":{"value":"Inka Rey","script":"Quechua","rom":"Inka Rey"},"notes":"Inca-King (Quechua inka + Spanish rey)","inheritability":"none","sources":[{"kind":"primary","reference":"Arguedas, Mito de Inkarrí (Q'ero/Andean oral tradition)"}]},
+  {"id":"pachakuti-millenarian","term":{"value":"pachakutiy","script":"Quechua","rom":"pachakutiy"},"notes":"\"turn of the world/time,\" millenarian renewal","inheritability":"none","sources":[{"kind":"primary","reference":"Arguedas, Mito de Inkarrí; Ossio, Ideología mesiánica del mundo andino"}]},
+  {"id":"world-reversal","term":{"value":"pacha tikray / kutiy","script":"Quechua","rom":"pacha tikray"},"notes":"overturning/reversal of the world-order","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Vocabulario quechua (tikray, kutiy); Arguedas"}]}
+],
+"insikiran": [
+  {"id":"transformation-power","term":{"value":"esaka'ma","script":"Pemón","rom":"esaka'ma"},"notes":"to transform/change oneself","inheritability":"partial","sources":[{"kind":"secondary","reference":"Armellada 1943; Koch-Grünberg 1916"}]},
+  {"id":"flood-survival","term":{"value":"tuna apuk","script":"Pemón","rom":"tuna apuk"},"notes":"survival of the great flood","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada 1943"}]},
+  {"id":"culture-hero","term":{"value":"Insikiran","script":"Pemón","rom":"Insikiran"},"notes":"culture-hero, one of the founding brothers","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Macuxi/Pemón tradition"}]},
+  {"id":"songs-namesake-Macuxi-erenkon","term":{"value":"eremu","script":"Pemón","rom":"eremu (Macuxi erenkon)"},"notes":"shamanic/ancestral songs; he is one named therein","inheritability":"none","sources":[{"kind":"primary","reference":"Armellada 1943 (eremu \"song/chant\"); Macuxi erenkon tradition"}]},
+  {"id":"lineage-ancestor-of-Pemon-and-Kapon","term":{"value":"Insikiran","script":"Pemón","rom":"Insikiran"},"notes":"founding ancestor of the Pemón and Kapón peoples","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Pemón–Kapón ethnography"}]}
+],
+"inti": [
+  {"id":"celestial-luminance","term":{"value":"Inti","script":"Quechua","rom":"Inti"},"notes":"the Sun, solar radiance","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Vocabulario quechua (1571); Garcilaso, Comentarios reales I"}]},
+  {"id":"kingship-incan-conferral","term":{"value":"Intip churin","script":"Quechua","rom":"Intip churin"},"notes":"\"children of the Sun\" — Inti confers royal legitimacy","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Guaman Poma, Nueva corónica"}]},
+  {"id":"sun","term":{"value":"Inti","script":"Quechua","rom":"Inti"},"notes":"the Sun (the physical/divine solar body)","inheritability":"none","sources":[{"kind":"secondary","reference":"Molina, Vocabulario quechua (1571); Garcilaso, Comentarios reales"}]},
+  {"id":"incan-imperial-deity","term":{"value":"Inti (waka apusuyu)","script":"Quechua","rom":"Inti"},"notes":"supreme imperial state-deity of Tawantinsuyu","inheritability":"none","sources":[{"kind":"secondary","reference":"Cobo, Historia del Nuevo Mundo; Garcilaso, Comentarios reales"}]},
+  {"id":"kingship-incan","term":{"value":"Sapa Inka (Intip churin)","script":"Quechua","rom":"Sapa Inka"},"notes":"sole-emperor as Son of the Sun","inheritability":"none","sources":[{"kind":"secondary","reference":"Garcilaso, Comentarios reales; Betanzos, Suma y narración"}]}
+],
+"ipisowaahs": [
+  {"id":"celestial-luminance","term":{"value":"Aapisówaahsa","script":"Blackfoot","rom":"aapisówaahsa"},"notes":"Morning Star, shining sky-being lighting the dawn","inheritability":"none","sources":[{"kind":"secondary","reference":"native-languages.org Blackfoot legends; Frantz & Russell, *Blackfoot Dictionary of Stems, Roots, and Affixes* (3rd ed.)"}]},
+  {"id":"sky-passage","term":{"value":"sspommóó","script":"Blackfoot","rom":"sspommóó"},"notes":"to ascend/travel into the celestial realm","inheritability":"none","sources":[{"kind":"secondary","reference":"Frantz & Russell, *Blackfoot Dictionary* (sspommóó \"go to heaven/ascend\")"}]},
+  {"id":"morning-star","term":{"value":"Aapisówaahsa","script":"Blackfoot","rom":"aapisówaahsa"},"notes":"the Morning Star (Venus), son of Sun and Moon","inheritability":"none","sources":[{"kind":"primary","reference":"native-languages.org \"Star-Boy (Scar-Face)\"; Blackfoot religion (sun father, moon wife, morning star their boy)"}]},
+  {"id":"sky","term":{"value":"spomm","script":"Blackfoot","rom":"spomm"},"notes":"sky, the above/celestial region","inheritability":"none","sources":[{"kind":"secondary","reference":"Frantz & Russell, *Blackfoot Dictionary* (stem spomm- \"above/sky\"; cf. Sspommitapiiksi \"Sky Beings\")"}]}
+],
+"irish_connla": [
+  {"id":"supernatural-precision","term":{"value":"cless (urchor)","script":"Irish","rom":"cless / urchor"},"notes":"warrior-feat; supernaturally precise cast/throw","inheritability":"partial","sources":[{"kind":"secondary","reference":"Aided Óenfhir Aífe; eDIL s.v. cless, urchar"}]}
+],
+"irish_cuchulainn": [
+  {"id":"ríastrad-warp-spasm","term":{"value":"ríastrad","script":"Irish","rom":"ríastrad"},"notes":"warp-spasm; battle-frenzy bodily contortion","inheritability":"partial","sources":[{"kind":"secondary","reference":"Táin Bó Cúailnge (LU/Rec. I); eDIL s.v. ríastrad"}]},
+  {"id":"martial-supreme-young-warrior","term":{"value":"láech (gal, gaisced)","script":"Irish","rom":"láech / gaisced"},"notes":"warrior; martial valour and feats of arms","inheritability":"none","sources":[{"kind":"secondary","reference":"eDIL s.v. láech, gaisced, gal; Táin"}]},
+  {"id":"fated-early-death","term":{"value":"geis (do ghaisced)","script":"Irish","rom":"geis"},"notes":"binding taboo-vow; the chosen short-life warrior-bond","inheritability":"none","sources":[{"kind":"secondary","reference":"Aided Con Culainn; eDIL s.v. geis"}]}
+],
+"irish_lugh": [
+  {"id":"master-of-all-crafts","term":{"value":"samildánach","script":"Irish","rom":"samildánach"},"notes":"equally-skilled-in-many-arts; master of every craft","inheritability":"none","sources":[{"kind":"secondary","reference":"Cath Maige Tuired §53–74; eDIL s.v. samildánach"}]},
+  {"id":"kingship-of-Tuatha-Dé","term":{"value":"rí (na) Túath Dé","script":"Irish","rom":"rí na Tuath Dé"},"notes":"king of the Tuatha Dé Danann","inheritability":"none","sources":[{"kind":"secondary","reference":"Cath Maige Tuired; Lebor Gabála Érenn; eDIL s.v. rí"}]},
+  {"id":"oath-and-sworn-truth","term":{"value":"fír","script":"Irish","rom":"fír (lugh, óeth)"},"notes":"truth/sworn-truth invoked in oath-formulae","inheritability":"none","sources":[{"kind":"secondary","reference":"eDIL s.v. fír, óeth; Lughnasad tradition"}]},
+  {"id":"solar-luminous","term":{"value":"lug / grían","script":"Irish","rom":"lug (gen. grían \"sun\")"},"notes":"radiance/light; reconstructive luminous sphere","inheritability":"none","sources":[{"kind":"secondary","reference":"eDIL s.v. grían; Proto-Celtic *lugus (luminosity, contested)"}]}
+],
+"irish_manannan": [
+  {"id":"sea-and-otherworld-passage","term":{"value":"muir (mag mell)","script":"Irish","rom":"muir / Mag Mell"},"notes":"sea as flowery plain; Otherworld sea-passage","inheritability":"none","sources":[{"kind":"secondary","reference":"Immram Brain; eDIL s.v. muir, mag"}]},
+  {"id":"kingship-of-Tuatha-Dé-after-Milesians","term":{"value":"rí (na) Túath Dé","script":"Irish","rom":"rí na Tuath Dé"},"notes":"over-king of the Tuatha Dé after Mílesian conquest","inheritability":"none","sources":[{"kind":"secondary","reference":"Altram Tige Dá Medar; eDIL s.v. rí"}]},
+  {"id":"lord-of-Otherworld","term":{"value":"flaith Tíre Tairngire","script":"Irish","rom":"flaith Tíre Tairngire"},"notes":"lord of the Land-of-Promise (Emain Ablach)","inheritability":"none","sources":[{"kind":"secondary","reference":"Immram Brain; Serglige Con Culainn; eDIL s.v. flaith, tír tairngire"}]},
+  {"id":"foster-parentage-of-Tuatha-Dé-children","term":{"value":"aite (altram)","script":"Irish","rom":"aite / altram"},"notes":"foster-father; fosterage of divine children","inheritability":"none","sources":[{"kind":"secondary","reference":"eDIL s.v. aite, altram; Oidheadh Chlainne Lir"}]}
+],
+"irish_mongan": [
+  {"id":"kingship-of-Dál-nAraide","term":{"value":"rí Dál nAraidi","script":"Irish","rom":"rí Dál nAraidi"},"notes":"king of the Dál nAraide (Ulster túath)","inheritability":"none","sources":[{"kind":"secondary","reference":"Compert Mongáin; Annals; eDIL s.v. rí"}]},
+  {"id":"wisdom-and-Otherworld-knowledge","term":{"value":"fis (éolas)","script":"Irish","rom":"fis / éolas"},"notes":"otherworld-derived knowledge, lore, reincarnation-memory","inheritability":"none","sources":[{"kind":"secondary","reference":"Imram Brain; Scél asa·mberar; eDIL s.v. fis, éolas"}]}
+],
+"iroquois_atotarho": [
+  {"id":"first-Tadodaho-of-Iroquois-Confederacy","term":{"value":"Thadodáho'","script":"Onondaga","rom":"Thadodáho'"},"notes":"first/presiding firekeeper-sachem of the Confederacy","inheritability":"none","sources":[{"kind":"secondary","reference":"Onondaga Nation; Wikipedia \"Tadodaho\""}]},
+  {"id":"sorcerer-chief-converted-via-combing-ritual","term":{"value":"Thadodáho' (ratetsén:tha)","script":"Onondaga","rom":"Thadodáho'"},"notes":"the sorcerer-chief; mind made straight (combed)","inheritability":"none","sources":[{"kind":"primary","reference":"Onondaga Nation \"Hiawatha Belt\"; Great Law tradition"}]},
+  {"id":"foundational-opponent-then-foundational-presiding-sachem","term":{"value":"Royaner (Thadodáho')","script":"Mohawk/Onondaga","rom":"royaner"},"notes":"royaner — the presiding peace-chief/lord","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Royaner\" (royaner \"caretaker of peace\")"}]},
+  {"id":"killer-of-Hayowentha-three-daughters-pre-conversion","notes":"his pre-conversion evil (killing Hiawatha's daughters)","inheritability":"none","sources":[{"kind":"primary","reference":"native-languages.org; Great Law narrative — note: no single lexeme; described by the deed"}]}
+],
+"iroquois_cornplanter": [
+  {"id":"Seneca-war-chief-American-Revolution","term":{"value":"Rotisken'rakéhte (Gaiänt'wakê)","script":"Seneca/Mohawk","rom":"Rotisken'rakéhte; Gaiänt'wakê"},"notes":"the warriors (\"carriers of the burden\"); he was a war-chief","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Cornplanter\"; Rotisken'rakéhte (Mohawk Warrior Society)"}]},
+  {"id":"post-war-diplomatic-leader-and-treaty-signer","term":{"value":"Hoyaneh / Royaner","script":"Seneca/Mohawk","rom":"hoyaneh / royaner"},"notes":"peace-chief/sachem (his diplomatic role)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Royaner\"; Cornplanter biographies"}]},
+  {"id":"half-brother-of-Handsome-Lake-revival-movement-prophet","term":{"value":"Sganyadaí:yo (Gaiwí:io)","script":"Seneca","rom":"Sganyadaí:yo; Gaiwí:io"},"notes":"Handsome Lake; \"Good Word\" (his Code)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Cornplanter\"/\"Handsome Lake\""}]},
+  {"id":"Cornplanter-Tract-Pennsylvania-land-grant-recipient","notes":"the Cornplanter land-grant tract","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Cornplanter\" — note: place-name; Seneca ohwëjagëh \"land/earth\""}]},
+  {"id":"Dutch-Seneca-dual-heritage-anglicized-as-John-OBail","term":{"value":"Gaiänt'wakê (John O'Bail)","script":"Seneca","rom":"Gaiänt'wakê"},"notes":"his Seneca name \"the planter\"; anglicized John O'Bail","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Cornplanter\"; geni.com biography"}]}
+],
+"iroquois_hayowentha": [
+  {"id":"co-founder-of-Haudenosaunee-Confederacy","term":{"value":"Rotinonhsón:ni","script":"Mohawk","rom":"Rotinonhsón:ni"},"notes":"\"People of the Longhouse\" — he co-founded it","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia/Onondaga Nation (Haudenosaunee = \"People of the Longhouse\")"}]},
+  {"id":"Great-Law-of-Peace-Kaianerekowa-bringer","term":{"value":"Kaianere'kó:wa","script":"Mohawk","rom":"Kaianere'kó:wa"},"notes":"\"the Great Good Way / Great Law of Peace\"","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Great Law of Peace\"; Oneida Nation (Kayanlaˀ Kówa)"}]},
+  {"id":"Atatarho-snake-comber-canonical-image","term":{"value":"Thatotáह:ho raonatsí:nes wa'tháiakwe","script":"Onondaga","rom":"Thadodáho onatsí:nes"},"notes":"combed the snakes from Tadodaho's hair","inheritability":"none","sources":[{"kind":"primary","reference":"Onondaga Nation \"Hiawatha Belt\"; native-languages.org"}]},
+  {"id":"wampum-belt-tradition-establisher","term":{"value":"otkó:a (kahión:ni)","script":"Mohawk","rom":"otkó:a"},"notes":"wampum (he established its use to record law)","inheritability":"none","sources":[{"kind":"primary","reference":"Onondaga Nation \"Wampum\"; native-languages.org (Mohawk otkó:a \"wampum\")"}]},
+  {"id":"condolence-ceremony-foundational-figure","notes":"the Condolence (requickening) ceremony he invented","inheritability":"none","sources":[{"kind":"primary","reference":"Grokipedia/ICT \"Condolence Ceremony\"; Onondaga sources — note: ceremony name varies by nation"}]}
+],
+"iroquois_sky_woman": [
+  {"id":"sky-woman-fallen-creator","term":{"value":"Atsi'tsiaká:ion","script":"Mohawk","rom":"Atsi'tsiaká:ion"},"notes":"\"Mature Flowers\" — Sky Woman who fell and made earth","inheritability":"none","sources":[{"kind":"primary","reference":"native-languages.org \"Sky-Woman\"; Kanienʼkehá:ka creation story (Kahnawake)"}]},
+  {"id":"turtle-island-foundational-figure","notes":"Turtle Island = \"on the turtle's back,\" A'nó:wara","inheritability":"none","sources":[{"kind":"primary","reference":"native-languages.org; Mohawk creation accounts (a'nó:wara \"turtle\")"}]},
+  {"id":"great-tree-and-three-sisters-corn-bean-squash-source","term":{"value":"Deohako (Tekanontá:ien)","script":"Mohawk/Seneca","rom":"Deohako / Diohe'ko; (great tree)"},"notes":"Deohako \"our sustainers\" (corn/bean/squash); celestial tree","inheritability":"none","sources":[{"kind":"primary","reference":"USDA Nat'l Ag. Library \"Three Sisters\"; Haudenosaunee Thanksgiving Address"}]},
+  {"id":"mother-of-the-daughter-Lynx-and-grandmother-of-the-Twins","term":{"value":"Iethinisténha (Tsiya'tanataséha)","script":"Mohawk","rom":"Iethinisténha"},"notes":"\"our mother\" — grandmother of the Twins","inheritability":"none","sources":[{"kind":"primary","reference":"native-languages.org; Mohawk creation story (Iethinisténha \"our mother\")"}]}
+],
+"japanese_kojiki_kushimikatamatsumi": [
+  {"id":"paternal-Omononushi-divine-inheritance","term":{"value":"神裔","script":"Japanese (kanji)","rom":"shin'ei"},"notes":"divine descent/blood from father Ōmononushi","inheritability":"full","sources":[{"kind":"primary","reference":"Kojiki 古事記 (Miwa genealogy); Nihon Shoki 日本書紀"}]},
+  {"id":"priestly-mediation-Omiwa-shrine","term":{"value":"神主","script":"Japanese (kanji)","rom":"kannushi"},"notes":"priest mediating at Ōmiwa shrine","inheritability":"full","sources":[{"kind":"primary","reference":"Kojiki 古事記; Ōmiwa-jinja tradition"}]},
+  {"id":"foundation-of-Miwa-no-kimi-priestly-clan","term":{"value":"三輪君","script":"Japanese (kanji)","rom":"Miwa-no-kimi"},"notes":"founder-ancestor of the Miwa-no-kimi clan","inheritability":"none","sources":[{"kind":"primary","reference":"Kojiki 古事記; Shinsen Shōjiroku 新撰姓氏録"}]},
+  {"id":"Mt-Miwa-Omiwa-shrine-priestly-prerogative","term":{"value":"斎主","script":"Japanese (kanji)","rom":"itsuki-no-nushi"},"notes":"hereditary chief-celebrant of Mt. Miwa rites","inheritability":"none","sources":[{"kind":"primary","reference":"Kojiki 古事記; Ōmiwa-jinja tradition"}]}
+],
+"japanese_kojiki_nigihayahi": [
+  {"id":"mononobe-clan-tutelage","term":{"value":"氏神","script":"Japanese (kanji)","rom":"ujigami"},"notes":"clan tutelary deity (of the Mononobe)","inheritability":"none","sources":[{"kind":"primary","reference":"Kojiki 古事記; Nihon Shoki 日本書紀; Sendai Kuji Hongi 先代旧事本紀"}]}
+],
+"japanese_kojiki_omononushi": [
+  {"id":"sake-brewing","term":{"value":"酒造","script":"Japanese (kanji)","rom":"sakezukuri"},"notes":"sake brewing (Miwa as sake-deity)","inheritability":"none","sources":[{"kind":"primary","reference":"Kojiki 古事記 (Sujin chapter, Miwa); Nihon Shoki 日本書紀"}]},
+  {"id":"pestilence-pacification","term":{"value":"疫病鎮め","script":"Japanese (kanji)","rom":"ekibyō-shizume"},"notes":"quelling plague/pestilence (via Ōtataneko cult)","inheritability":"none","sources":[{"kind":"primary","reference":"Kojiki 古事記; Nihon Shoki 日本書紀 (Sujin reign)"}]}
+],
+"japanese_kojiki_umashimaji": [
+  {"id":"priestly-rite-mononobe","term":{"value":"祭祀","script":"Japanese (kanji)","rom":"saishi"},"notes":"priestly ritual office (Mononobe-Isonokami)","inheritability":"none","sources":[{"kind":"primary","reference":"Sendai Kuji Hongi 先代旧事本紀; Nihon Shoki 日本書紀"}]},
+  {"id":"soul-pacification-rite","term":{"value":"鎮魂祭","script":"Japanese (kanji)","rom":"chinkonsai (mitama-shizume)"},"notes":"rite pacifying/recalling the soul (Tenjin ten-sword)","inheritability":"none","sources":[{"kind":"primary","reference":"Sendai Kuji Hongi 先代旧事本紀; Engishiki 延喜式"}]}
+],
+"japanese_tameyoshi": [
+  {"id":"minamoto-clan-head","term":{"value":"源氏長者","script":"Japanese (kanji)","rom":"Genji no chōja"},"notes":"head/chieftain of the Minamoto clan","inheritability":"none","sources":[{"kind":"primary","reference":"Hōgen Monogatari 保元物語; Azuma Kagami 吾妻鏡"}]},
+  {"id":"rokujō-hangan-court-office","term":{"value":"判官","script":"Japanese (kanji)","rom":"hangan"},"notes":"judge/inspector court office (Rokujō)","inheritability":"none","sources":[{"kind":"primary","reference":"Hōgen Monogatari 保元物語"}]}
+],
+"japanese_yoritomo": [
+  {"id":"kamakura-shogunate-foundation","term":{"value":"幕府","script":"Japanese (kanji)","rom":"bakufu"},"notes":"tent-government, the (Kamakura) shogunate he founded","inheritability":"none","sources":[{"kind":"primary","reference":"Azuma Kagami 吾妻鏡; Heike Monogatari 平家物語"}]},
+  {"id":"sei-i-taishogun-first","term":{"value":"征夷大将軍","script":"Japanese (kanji)","rom":"Sei-i Taishōgun"},"notes":"barbarian-subduing generalissimo (shogun)","inheritability":"none","sources":[{"kind":"primary","reference":"Azuma Kagami 吾妻鏡 (1192)"}]},
+  {"id":"genpei-war-direction","term":{"value":"源平合戦","script":"Japanese (kanji)","rom":"Genpei kassen"},"notes":"directing the Genpei (Minamoto-Taira) war","inheritability":"none","sources":[{"kind":"primary","reference":"Heike Monogatari 平家物語; Azuma Kagami 吾妻鏡"}]}
+],
+"japanese_yoshinaka": [
+  {"id":"asahi-shogun-self-styled","term":{"value":"朝日将軍","script":"Japanese (kanji)","rom":"Asahi Shōgun"},"notes":"Rising-Sun General (self-styled title)","inheritability":"none","sources":[{"kind":"primary","reference":"Heike Monogatari 平家物語; Genpei Jōsuiki 源平盛衰記"}]},
+  {"id":"kiso-valley-warrior-base","term":{"value":"木曾","script":"Japanese (kanji)","rom":"Kiso"},"notes":"Kiso-valley territorial warrior base","inheritability":"none","sources":[{"kind":"primary","reference":"Heike Monogatari 平家物語"}]},
+  {"id":"kurikara-battle-victory","term":{"value":"倶利伽羅峠の戦い","script":"Japanese (kanji)","rom":"Kurikara-tōge no tatakai"},"notes":"victory at Kurikara Pass (ox-torch night attack)","inheritability":"none","sources":[{"kind":"primary","reference":"Heike Monogatari 平家物語 (1183)"}]}
+],
+"jasy": [
+  {"id":"celestial-luminance","term":{"value":"jasy rendy","script":"Guaraní","rom":"jasy rendy"},"notes":"moonlight (jasy \"moon\" + (h)endy \"glow\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú 1914; Montoya, Tesoro 1639"}]},
+  {"id":"monster-slaying-prowess","term":{"value":"mbojaity","script":"Guaraní","rom":"mbojaity"},"notes":"to strike/fell down (beast-slaying)","inheritability":"partial","sources":[{"kind":"secondary","reference":"Guaraní lexicon (jaity); Nimuendajú 1914 (twin cycle)"}]},
+  {"id":"paternal-divine-knowledge-faculty","term":{"value":"mba'ekuaa","script":"Guaraní","rom":"mba'ekuaa"},"notes":"knowledge/wisdom (mba'e \"thing\" + kuaa \"to know\")","inheritability":"full","sources":[{"kind":"secondary","reference":"Cadogan, Ayvu Rapyta 1959; Nimuendajú 1914"}]},
+  {"id":"moon-and-cyclical-celestial-luminance","term":{"value":"jasy","script":"Guaraní","rom":"jasy"},"notes":"the moon","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú, Apapocúva 1914; Montoya 1639"}]},
+  {"id":"lunar-eclipse-jaguar-pursuit-cosmology","term":{"value":"jaguarete jasy","script":"Guaraní","rom":"jaguarete + jasy"},"notes":"the (celestial) jaguar's pursuit/eating of the moon = eclipse","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú 1914 (jaguar cycle); Guaraní eclipse-belief"}]},
+  {"id":"monster-slaying-and-vengeance-for-mother","term":{"value":"teko jepy","script":"Guaraní","rom":"teko jepy"},"notes":"vengeance/requital for the slain mother","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú 1914; Montoya 1639 (jepy)"}]}
+],
+"kartvelian_amirani": [
+  {"id":"inability-to-die","term":{"value":"უკვდავება","script":"Georgian","rom":"uk'vdaveba"},"notes":"deathlessness; can be bound but not killed","inheritability":"full","sources":[{"kind":"secondary","reference":"Amiraniani; Charachidzé, Prométhée caucasien"}]},
+  {"id":"culture-hero-of-Georgian-nation","term":{"value":"გმირი","script":"Georgian","rom":"gmiri"},"notes":"hero, national culture-hero","inheritability":"none","sources":[{"kind":"primary","reference":"Amiraniani; Rustaveli, Vepkhistq'aosani (გმირი usage)"}]},
+  {"id":"metallurgical-civilizational-gift","term":{"value":"რკინის ხელოვნება","script":"Georgian","rom":"rk'inis xelovneba"},"notes":"art of iron; metallurgy gifted to mankind","inheritability":"none","sources":[{"kind":"primary","reference":"Amiraniani (Caucasian Prometheus, fire/metal)"}]}
+],
+"kartvelian_dali": [
+  {"id":"hunt-and-wild-herds","term":{"value":"ნადირთა პატრონი","script":"Georgian","rom":"nadirta patroni"},"notes":"mistress/patron of the wild game and hunt","inheritability":"none","sources":[{"kind":"secondary","reference":"Georgian-Svan Dali tradition; Tuite 2006"}]},
+  {"id":"sexual-relations-with-hunters","term":{"value":"მონადირის სატრფო","script":"Georgian","rom":"monadiris satpo"},"notes":"the hunter's (divine) lover/beloved","inheritability":"none","sources":[{"kind":"secondary","reference":"Svan ballads of Dæl & the hunter; Tuite 2006"}]}
+],
+"korean_hwanin": [
+  {"id":"lord-of-heaven","term":{"value":"천제","script":"Korean (hangul)","rom":"Cheonje"},"notes":"Heavenly Emperor, supreme sky-ruler (Sangje)","inheritability":"none","sources":[{"kind":"primary","reference":"Samguk Yusa 三國遺事 (Gojoseon); hanja 天帝/上帝"}]}
+],
+"korean_hwanung": [
+  {"id":"culture-bringing-civilization-establishing","term":{"value":"홍익인간","script":"Korean (hangul)","rom":"hongik ingan"},"notes":"broadly benefiting humankind (civilizing mandate)","inheritability":"none","sources":[{"kind":"primary","reference":"Samguk Yusa 三國遺事 (弘益人間); Jewang Ungi"}]},
+  {"id":"heavenly-king","name":"Heavenly King","term":{"value":"천왕","script":"Korean (hangul)","rom":"Cheonwang"},"notes":"Heavenly King ruling 360 human affairs","inheritability":"none","sources":[{"kind":"primary","reference":"Samguk Yusa 三國遺事 (天王, 主人間三百六十餘事)"}]}
+],
+"korean_tangun": [
+  {"id":"foundation-of-Korean-nation-Gojoseon","term":{"value":"고조선","script":"Korean (hangul)","rom":"Gojoseon"},"notes":"founder-king of Gojoseon, first Korean state","inheritability":"none","sources":[{"kind":"primary","reference":"Samguk Yusa 三國遺事 (古朝鮮); hanja 朝鮮 開國"}]},
+  {"id":"mountain-spirit-sansin","term":{"value":"산신","script":"Korean (hangul)","rom":"sansin"},"notes":"mountain god/spirit (his final apotheosis)","inheritability":"none","sources":[{"kind":"primary","reference":"Samguk Yusa 三國遺事 (爲山神); hanja 山神"}]}
+],
+"kuarahy": [
+  {"id":"celestial-luminance","term":{"value":"kuarahy rendy","script":"Guaraní","rom":"kuarahy rendy"},"notes":"the sun's blaze/light (kuarahy \"sun\" + (h)endy \"flame\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú 1914; Montoya, Tesoro 1639"}]},
+  {"id":"monster-slaying-prowess","term":{"value":"mbojaity","script":"Guaraní","rom":"mbojaity"},"notes":"to strike/fell down (the act of slaying beasts)","inheritability":"partial","sources":[{"kind":"secondary","reference":"Guaraní lexicon (jaity \"to knock down\"); Nimuendajú 1914 (twin cycle)"}]},
+  {"id":"transformation-power","term":{"value":"jeapo","script":"Guaraní","rom":"jeapo"},"notes":"self-making, transforming oneself (je- reflexive + apo \"make\")","inheritability":"partial","sources":[{"kind":"secondary","reference":"Montoya, Tesoro 1639 (apo); Nimuendajú 1914"}]},
+  {"id":"paternal-divine-speech-faculty","term":{"value":"ñe'ẽ","script":"Guaraní","rom":"ñe'ẽ"},"notes":"word-soul; sacred speech imparted by the divine father","inheritability":"full","sources":[{"kind":"secondary","reference":"Cadogan, Ayvu Rapyta 1959; Nimuendajú 1914 (\"word and soul one word\")"}]},
+  {"id":"sun-and-daily-celestial-luminance","term":{"value":"kuarahy","script":"Guaraní","rom":"kuarahy"},"notes":"the sun","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú, Apapocúva 1914; Montoya 1639"}]},
+  {"id":"monster-slaying-and-vengeance-for-mother","term":{"value":"teko jepy","script":"Guaraní","rom":"teko jepy"},"notes":"vengeance, requital (the twins' avenging of their mother)","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú 1914 (twin/jaguar cycle); Montoya 1639 (jepy \"revenge\")"}]},
+  {"id":"cosmological-order-and-presider-over-Land-without-Evil","term":{"value":"yvy marã e'ỹ","script":"Guaraní","rom":"yvy marã e'ỹ"},"notes":"the indestructible Land-without-Evil he presides over","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú, Apapocúva-Guaraní 1914; Cadogan 1959"}]}
+],
+"makunaima": [
+  {"id":"shape-shifting","term":{"value":"esaka'ma","script":"Pemón","rom":"esaka'ma"},"notes":"to transform/change oneself at will","inheritability":"partial","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916 (Makunaima cycle); Armellada 1943"}]},
+  {"id":"trickster-cunning","term":{"value":"Makunaima","script":"Pemón","rom":"Makunaima"},"notes":"\"he who works in secret/evil\", the trickster culture-hero himself","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg, Vom Roroima zum Orinoco II (1916)"}]},
+  {"id":"felling-strength","term":{"value":"yatapïka","script":"Pemón","rom":"yatapïka"},"notes":"felling/cutting-down (of the Wazacá tree)","inheritability":"partial","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916 (Wazacá/Roraima etiology); Armellada 1943"}]},
+  {"id":"culture-hero","term":{"value":"Makunaima","script":"Pemón","rom":"Makunaima"},"notes":"the Pemón/Kapón culture-hero and origin-bringer","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Thomas 1982"}]},
+  {"id":"agriculture-origin-via-Wazaca-tree","term":{"value":"Wazacá","script":"Pemón","rom":"Wazacá (Wadaka)"},"notes":"the Tree of Life whose felling originates cultivated plants","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Pemón Roraima myth"}]},
+  {"id":"flood-bringer","term":{"value":"apuk","script":"Pemón","rom":"apuk (tuna apuk)"},"notes":"the flood/inundation (tuna \"water\") released by the felling","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916 (great-flood/Roraima); Armellada 1943 (tuna)"}]},
+  {"id":"tepui-landscape-shaping","term":{"value":"tüpü","script":"Pemón","rom":"tüpü"},"notes":"table-mountain/tepui; the landform his deeds created","inheritability":"none","sources":[{"kind":"secondary","reference":"Wiktionary/etymology of \"tepui\" < Pemón tüpü; Koch-Grünberg 1916"}]},
+  {"id":"trickster","term":{"value":"Makunaima","script":"Pemón","rom":"Makunaima"},"notes":"the trickster culture-hero (eponymous)","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada/Pemón ethnography"}]}
+],
+"manape": [
+  {"id":"reconnaissance","term":{"value":"esenumenka","script":"Pemón","rom":"esenumenka"},"notes":"to scout/observe, spying-out ahead","inheritability":"none","sources":[{"kind":"primary","reference":"Armellada 1943 (enumenka \"to think/observe\"); Andrade 1928 (Maanape as scout)"}]},
+  {"id":"flood-survival","term":{"value":"tuna apuk","script":"Pemón","rom":"tuna apuk"},"notes":"survival of the great flood","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada 1943"}]},
+  {"id":"culture-hero","term":{"value":"Ma'nápe","script":"Pemón","rom":"Ma'nápe (Maanape)"},"notes":"culture-hero, eldest of the founding brothers","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Andrade 1928"}]},
+  {"id":"agricultural-fertility-association","term":{"value":"anaï","script":"Pemón","rom":"anaï"},"notes":"seed/sowing; the seed-name fertility sphere","inheritability":"none","sources":[{"kind":"primary","reference":"Armellada 1943 (anaï \"seed\"); Andrade 1928 (melon-seed etymology)"}]},
+  {"id":"spy-and-scout-role","term":{"value":"piai","script":"Pemón","rom":"piai"},"notes":"shaman/sorcerer (Maanape the feiticeiro, who scouts via spirit-power)","inheritability":"none","sources":[{"kind":"secondary","reference":"Andrade 1928 (Maanape the sorcerer); Koch-Grünberg 1916 (piai)"}]}
+],
+"manipuri_salailen": [
+  {"id":"supreme-sky-father-and-source-of-creation","term":{"value":"ꯁꯂꯥꯢꯂꯦꯟ ꯁꯤꯗꯕ ꯃꯄꯨ","script":"Meitei (Meitei Mayek)","rom":"Salailen Sidaba Mapu"},"notes":"immortal great-heaven lord, sky-father creator","inheritability":"none","sources":[{"kind":"primary","reference":"Meitei/Manipuri, Sanamahism (Leithak Leikharon Puya; salai \"heaven\" + len \"great\" + mapu \"lord\")"}]},
+  {"id":"thunder-and-lightning-as-divine-manifestation","term":{"value":"ꯅꯣꯡ ꯊꯥꯡ","script":"Meitei (Meitei Mayek)","rom":"nong thāng"},"notes":"lightning (\"rain-sword\"); thunderbolt as sky-god's manifestation","inheritability":"none","sources":[{"kind":"primary","reference":"Meitei language (nong \"rain/sky\" + thāng \"sword\"); cf. goddess Nongthang Leima"}]}
+],
+"maudjee_kawiss": [
+  {"id":"martial-prowess","term":{"value":"ogichidaa","script":"Ojibwe","rom":"ogichidaa"},"notes":"a warrior, a veteran; ceremonial headman","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ogichidaa na); Johnston, *The Manitous*"}]},
+  {"id":"wind-mastery","term":{"value":"Ningaabii'anong","script":"Ojibwe","rom":"ningaabii'anong"},"notes":"chosen by Gichi-Manidoo to direct the west wind","inheritability":"none","sources":[{"kind":"primary","reference":"zhaawanart.com \"The Good Way of the Warrior\"; Johnston, *The Manitous*"}]},
+  {"id":"historical-memory-and-record","term":{"value":"wiigwaasabak","script":"Ojibwe","rom":"wiigwaasabak"},"notes":"birchbark scroll (record of history/migration)","inheritability":"none","sources":[{"kind":"secondary","reference":"Ojibwe People's Dict. (wiigwaasabak ni); Wikipedia \"Wiigwaasabak\""}]},
+  {"id":"leadership-presence","term":{"value":"ogimaa","script":"Ojibwe","rom":"ogimaa"},"notes":"a leader, chief, boss (first leader of the nation)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ogimaa na)"}]},
+  {"id":"first-son-and-leadership","term":{"value":"Maajiigawiz (ogimaa)","script":"Ojibwe","rom":"Maajiigawiz; ogimaa"},"notes":"\"first-born son\"; the leader","inheritability":"none","sources":[{"kind":"primary","reference":"Johnston, *The Manitous*; zhaawanart.com (Maajiigawiz = First-born Son)"}]},
+  {"id":"traditional-pursuits-running-swimming-hunting","term":{"value":"gigizheb-gabeshiwin (giigoonyike, bimaadagaa, giiwose)","script":"Ojibwe","rom":"giiwose; bimaadagaa; biimiibatoo"},"notes":"he hunts; swims; runs (the manly pursuits)","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (giiwose \"s/he hunts,\" bimaadagaa \"s/he swims,\" biimiibatoo/batoo \"run\")"}]},
+  {"id":"historical-record-keeping-and-oral-history-transmission","term":{"value":"mide-wiigwaas / dibaajimowin","script":"Ojibwe","rom":"mide-wiigwaas; dibaajimowin"},"notes":"Mide birchbark scroll; oral narrative/recitation","inheritability":"none","sources":[{"kind":"secondary","reference":"Ojibwe People's Dict. (wiigwaasabak, dibaajimo); Wikipedia \"Wiigwaasabak\""}]},
+  {"id":"martial-and-warrior-leadership","term":{"value":"ogichidaa-ogimaa","script":"Ojibwe","rom":"ogichidaa-ogimaa"},"notes":"war-leader (warrior + leader)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ogichidaa, ogimaa)"}]}
+],
+"maya_cuchumaquic": [
+  {"id":"xibalba-rulership","term":{"value":"ajaw Xibʼalbʼa","script":"Maya (Kʼicheʼ)","rom":"ajaw Xibʼalbʼa"},"notes":"lord/ruler of Xibalba, the underworld","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"blood-coagulation-affliction","term":{"value":"Kuchuma Kikʼ","script":"Maya (Kʼicheʼ)","rom":"Kuchuma Kikʼ"},"notes":"\"Gathered Blood\" — clotting/blood-disease affliction","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"paternity-of-Xquic","term":{"value":"qajaw Xkikʼ","script":"Maya (Kʼicheʼ)","rom":"q-ajaw Xkikʼ"},"notes":"fatherhood of Lady Blood (Xkikʼ)","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]}
+],
+"maya_hun_hunahpu": [
+  {"id":"maize-resurrection-cycle","term":{"value":"Jun Nal Ye (ixim)","script":"Maya (Classic)","rom":"Jun Nal Ye"},"notes":"\"One Maize Revealed,\" resurrected Maize God","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh; Taube, Major Gods of Ancient Yucatan"}]},
+  {"id":"ballplayer-rulership","term":{"value":"chaaj","script":"Maya (Kʼicheʼ)","rom":"chaaj"},"notes":"the ballgame; ballplayer's lordly skill","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"paternal-headship-of-the-Hero-Twins-line","term":{"value":"qajawal","script":"Maya (Kʼicheʼ)","rom":"q-ajawal"},"notes":"paternal headship/lordship of the Twins' lineage","inheritability":"full","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"tzolkin-day-Ahau-1","term":{"value":"Jun Ajaw","script":"Maya (Classic)","rom":"Jun Ajaw"},"notes":"\"One Lord,\" calendar day 1-Ahau","inheritability":"none","sources":[{"kind":"primary","reference":"Popol Vuh; classic-Maya day-name 1 Ajaw"}]}
+],
+"maya_hunahpu": [
+  {"id":"sun-apotheosed","term":{"value":"qʼij","script":"Maya (Kʼicheʼ)","rom":"qʼij"},"notes":"the Sun; his apotheosis at dawn","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson, ascent of the Twins)"}]},
+  {"id":"blowgun-hunting","term":{"value":"wubʼ","script":"Maya (Kʼicheʼ)","rom":"wubʼ"},"notes":"blowgun (his name = \"One Blowgunner\")","inheritability":"partial","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson); Maya Hero Twins (Hun-ahpu \"blowgunner\")"}]},
+  {"id":"ballgame","term":{"value":"chaaj","script":"Maya (Kʼicheʼ)","rom":"chaaj"},"notes":"the rubber-ball game played against Xibalba","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"cosmic-restoration-against-false-sovereigns","term":{"value":"kamisaxik Wuqub Kaqix","script":"Maya (Kʼicheʼ)","rom":"kamisaxik Wuqub Kaqix"},"notes":"felling of false sun Seven-Macaw, order restored","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"tzolkin-day-Ahau-1","term":{"value":"Jun Ajaw","script":"Maya (Classic)","rom":"Jun Ajaw"},"notes":"\"One Lord,\" day 1-Ahau (his calendar name)","inheritability":"none","sources":[{"kind":"primary","reference":"Popol Vuh; classic-Maya 1 Ajaw"}]}
+],
+"maya_vucub_hunahpu": [
+  {"id":"companion-twin","term":{"value":"rachʼalal / Wuqub Junajpu","script":"Maya (Kʼicheʼ)","rom":"r-achʼalal"},"notes":"companion-brother of Hun Hunahpu","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"tzolkin-day-Ahau-7","term":{"value":"Wuqub Ajaw","script":"Maya (Classic)","rom":"Wuqub Ajaw"},"notes":"\"Seven Lord,\" calendar day 7-Ahau","inheritability":"none","sources":[{"kind":"primary","reference":"Popol Vuh; classic-Maya day-name 7 Ajaw"}]}
+],
+"maya_xbalanque": [
+  {"id":"moon-apotheosed","term":{"value":"ikʼ / poh","script":"Maya (Kʼicheʼ)","rom":"ikʼ"},"notes":"the Moon; his apotheosis with his brother","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"jaguar-form","term":{"value":"bʼalam","script":"Maya (Kʼicheʼ)","rom":"bʼalam"},"notes":"jaguar (Yax Bʼahlam, \"jaguar-deer\" name)","inheritability":"partial","sources":[{"kind":"secondary","reference":"Popol Vuh; Classic name Yax Bʼahlam (Taube)"}]},
+  {"id":"rescue-and-recovery-strategy","term":{"value":"kʼastajisaxik","script":"Maya (Kʼicheʼ)","rom":"kʼastajisaxik"},"notes":"resurrection/recovery stratagem of the brothers","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"tzolkin-day-jaguar-association","term":{"value":"Ix (bʼalam)","script":"Maya (Kʼicheʼ)","rom":"Ix"},"notes":"tzolkʼin day-sign \"Jaguar\"","inheritability":"none","sources":[{"kind":"secondary","reference":"Tedlock, Time and the Highland Maya"}]}
+],
+"maya_xmucane": [
+  {"id":"divination-day-keeping","term":{"value":"ajq'ij","script":"Maya (Kʼicheʼ)","rom":"aj qʼij"},"notes":"daykeeper, diviner of the day-count","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson); Tedlock"}]},
+  {"id":"maize-grinding-creation","term":{"value":"keʼaj ixim","script":"Maya (Kʼicheʼ)","rom":"keʼaj ixim"},"notes":"grinding of maize that forms human flesh","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson, human-creation episode)"}]},
+  {"id":"midwifery","term":{"value":"iyom","script":"Maya (Kʼicheʼ)","rom":"iyom"},"notes":"midwife (\"twice-midwife\" epithet of the grandmother)","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson): \"iyom, mamom\""}]},
+  {"id":"tzolkin-day-Eb","term":{"value":"Eʼ","script":"Maya (Kʼicheʼ)","rom":"Eʼ (Eb)"},"notes":"tzolkʼin day-sign \"Tooth/road\"","inheritability":"none","sources":[{"kind":"secondary","reference":"Tedlock, Time and the Highland Maya"}]}
+],
+"maya_xpiacoc": [
+  {"id":"divination-day-keeping","term":{"value":"ajq'ij","script":"Maya (Kʼicheʼ)","rom":"aj qʼij"},"notes":"daykeeper, diviner by the 260-day count","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson trans.); Tedlock, Time and the Highland Maya"}]},
+  {"id":"creator-counsel","term":{"value":"tzʼaqol bʼitol (aj nawal)","script":"Maya (Kʼicheʼ)","rom":"tzʼaqol bʼitol"},"notes":"Framer-Shaper, creator-counsel grandfather","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"tzolkin-day-Aj","term":{"value":"Aj","script":"Maya (Kʼicheʼ)","rom":"Aj"},"notes":"tzolkʼin day-sign \"Reed/cane\"","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh; Tedlock, Time and the Highland Maya"}]}
+],
+"maya_xquic": [
+  {"id":"maize-stalk-fertility-miracle","term":{"value":"ajan / ixim","script":"Maya (Kʼicheʼ)","rom":"ajan"},"notes":"green maize-ear miracle filling the granary","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"tree-sap-substitute-blood","term":{"value":"chuj kikʼ (kʼik'el cheʼ)","script":"Maya (Kʼicheʼ)","rom":"chuj kikʼ"},"notes":"croton tree-sap as substitute heart-blood","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"underworld-escape","term":{"value":"el(ik) pa Xibʼalbʼa","script":"Maya (Kʼicheʼ)","rom":"el-ik pa Xibʼalbʼa"},"notes":"escape/ascent out of Xibalba","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson)"}]},
+  {"id":"mothering-of-the-Hero-Twins","term":{"value":"chuch / alom","script":"Maya (Kʼicheʼ)","rom":"chuch (alom)"},"notes":"mother, \"she-who-bears,\" of the Hero Twins","inheritability":"none","sources":[{"kind":"secondary","reference":"Popol Vuh (Christenson): \"alom, kʼajolom\""}]}
+],
+"mesopotamian_amar_sin": [
+  {"id":"kingship-ur-iii","term":{"value":"lugal Urim","script":"Sumerian","rom":"lugal Urim(a)"},"notes":"king of Ur (Ur III dynasty)","inheritability":"none","sources":[{"kind":"secondary","reference":"Amar-Sin inscriptions; Frayne RIME 3/2; lugal \"king\""}]},
+  {"id":"self-divinization-continuation","term":{"value":"𒀭 diĝir","script":"Sumerian","rom":"diĝir (d-Amar-Suen)"},"notes":"divine determinative written before the royal name","inheritability":"none","sources":[{"kind":"primary","reference":"Amar-Sin inscriptions (deified-king writing); diĝir \"god\""}]},
+  {"id":"eridu-temple-construction","term":{"value":"é dù (Eridug)","script":"Sumerian","rom":"é dù Eridug"},"notes":"building Enki's temple at Eridu","inheritability":"none","sources":[{"kind":"primary","reference":"Amar-Sin inscriptions (Abzu/Eridu works); é \"temple\" + dù \"build\""}]}
+],
+"mesopotamian_enheduanna": [
+  {"id":"literary-composition","term":{"value":"𒍪𒈨 zà-mí","script":"Sumerian","rom":"zàmí"},"notes":"hymn / praise-song composition","inheritability":"none","sources":[{"kind":"secondary","reference":"Temple Hymns colophon; Nin-me-šara; ETCSL; zà-mí \"praise\""}]},
+  {"id":"priestly-conferral","term":{"value":"𒂗 en","script":"Sumerian","rom":"en"},"notes":"consecration to the en high-priestly office","inheritability":"none","sources":[{"kind":"secondary","reference":"Disk of Enheduanna; ETCSL; en \"high priest(ess)\""}]},
+  {"id":"en-priestess-of-Nanna","term":{"value":"entu (Sum. en / NIN-diĝir)","script":"Akkadian","rom":"ēntu (Nanna)"},"notes":"en-priestess of the moon-god Nanna at Ur","inheritability":"none","sources":[{"kind":"secondary","reference":"Enheduanna disk; Westenholz; CAD E ēntu \"high priestess\""}]},
+  {"id":"world-s-first-named-author","term":{"value":"𒁾𒊬 dub-sar","script":"Sumerian","rom":"dub-sar"},"notes":"scribe/author (the first named author)","inheritability":"none","sources":[{"kind":"secondary","reference":"Authorship of Temple Hymns; PSD dub-sar \"scribe\""}]},
+  {"id":"Sumerian-literary-foundation","term":{"value":"𒈨 me","script":"Sumerian","rom":"me"},"notes":"founder of the literary me (cultural canon)","inheritability":"none","sources":[{"kind":"secondary","reference":"Nin-me-šara (\"Lady of all the me\"); ETCSL; me \"divine ordinance\""}]},
+  {"id":"Innana-cult-foundation","term":{"value":"𒀭𒈹 Inana","script":"Sumerian","rom":"Inana"},"notes":"establisher of the exalted Inana cult","inheritability":"none","sources":[{"kind":"secondary","reference":"Exaltation of Inana (Nin-me-šara); ETCSL"}]}
+],
+"mesopotamian_gilgamesh": [
+  {"id":"long-life","term":{"value":"napištu / balāṭu","script":"Akkadian","rom":"napištu (balāṭu)"},"notes":"life/long-life sought (immortality not attained)","inheritability":"none","sources":[{"kind":"secondary","reference":"SB Gilgamesh IX–XI; CAD B balāṭu, N napištu"}]},
+  {"id":"kingship-of-Uruk","term":{"value":"𒉆𒈗 nam-lugal","script":"Sumerian","rom":"nam-lugal"},"notes":"kingship of Uruk; office of lugal","inheritability":"none","sources":[{"kind":"secondary","reference":"Sumerian King List; ETCSL (Bilgames lugal of Unug)"}]},
+  {"id":"underworld-judgeship","term":{"value":"dayyānu","script":"Akkadian","rom":"dayyān erṣeti"},"notes":"judge of the dead in the netherworld","inheritability":"none","sources":[{"kind":"secondary","reference":"Death of Bilgames (judge of the Anunnaki); CAD D dayyānu"}]}
+],
+"mesopotamian_ibbi_sin": [
+  {"id":"kingship-ur-iii-final","term":{"value":"lugal Urim","script":"Sumerian","rom":"lugal Urim(a)"},"notes":"king of Ur (the last Ur III king)","inheritability":"none","sources":[{"kind":"secondary","reference":"Ibbi-Sin inscriptions; Frayne RIME 3/2; lugal \"king\""}]},
+  {"id":"lamentation-canonical-figure","term":{"value":"ér / a-nir","script":"Sumerian","rom":"ér (a-nir)"},"notes":"weeping/lament (subject of the fall-of-Ur laments)","inheritability":"none","sources":[{"kind":"secondary","reference":"Lamentation over Ur / over Sumer and Ur; ETCSL; ér \"weeping\""}]},
+  {"id":"last-king-of-Ur-III","term":{"value":"lugal egir(a)","script":"Sumerian","rom":"lugal egir(a)"},"notes":"the last king (end of the dynasty)","inheritability":"none","sources":[{"kind":"primary","reference":"Sumerian King List (Ibbi-Sin, last of Ur III); egir \"last, after\""}]}
+],
+"mesopotamian_manishtushu": [
+  {"id":"kingship-akkadian-third","term":{"value":"šar Akkadî","script":"Akkadian","rom":"šar Akkadî"},"notes":"king of Akkad (third Akkadian king)","inheritability":"none","sources":[{"kind":"secondary","reference":"Manishtushu inscriptions; Frayne RIME 2; šarru \"king\""}]},
+  {"id":"naval-campaign-Persian-Gulf-against-32-kings","term":{"value":"tâmtu šaplītu","script":"Akkadian","rom":"tâmtu šaplītu"},"notes":"\"the Lower Sea\"; naval war across the Gulf","inheritability":"none","sources":[{"kind":"secondary","reference":"Manishtushu inscriptions (crossed Lower Sea vs. 32 kings); CAD T tâmtu"}]},
+  {"id":"Zagros-Anšan-Sherihum-conqueror","term":{"value":"Anšan u Šerihum","script":"Akkadian","rom":"Anšan u Šerihum"},"notes":"conqueror of Anshan and Sherihum (Zagros/Elam)","inheritability":"none","sources":[{"kind":"secondary","reference":"Manishtushu inscriptions; Frayne RIME 2"}]}
+],
+"mesopotamian_naram_sin": [
+  {"id":"kingship-akkadian","term":{"value":"šar Akkadî","script":"Akkadian","rom":"šar Akkadî"},"notes":"king of Akkad","inheritability":"none","sources":[{"kind":"secondary","reference":"Naram-Sin inscriptions, Frayne RIME 2; šarru \"king\""}]},
+  {"id":"self-divinization","term":{"value":"𒀭 il Akkadî","script":"Akkadian","rom":"il Akkadî"},"notes":"\"god of Akkad\"; the dingir-determinative before his name","inheritability":"none","sources":[{"kind":"primary","reference":"Bassetki statue (\"Akkad asked... he be the god of their city\"); ilu \"god\""}]},
+  {"id":"imperial-maximum-extent","term":{"value":"bēlūtu","script":"Akkadian","rom":"bēlūtu"},"notes":"dominion at its greatest extent","inheritability":"none","sources":[{"kind":"secondary","reference":"Naram-Sin inscriptions; CAD B bēlūtu \"dominion\""}]},
+  {"id":"four-quarters-cosmic-dominion","term":{"value":"šar kibrāt arbaʾim","script":"Akkadian","rom":"šar kibrāt arbaʾim"},"notes":"king of the four quarters (first to bear it)","inheritability":"none","sources":[{"kind":"secondary","reference":"Naram-Sin inscriptions; CAD K kibratu"}]}
+],
+"mesopotamian_ninsun": [
+  {"id":"patron-of-Ur-III-kings-Ur-Nammu-Shulgi","term":{"value":"ама лугал — ama lugal","script":"Sumerian","rom":"ama lugal"},"notes":"divine mother of the king; royal patroness","inheritability":"none","sources":[{"kind":"secondary","reference":"Šulgi & Gudea inscriptions (Ninsun ama \"mother\" of the king); ETCSL"}]},
+  {"id":"divine-wisdom","name":"All-Knowing Wisdom","term":{"value":"mūdûtu (Sum. ĝeštug)","script":"Akkadian","rom":"mūdûtu"},"notes":"expert all-knowing wisdom (\"wise Ninsun\")","inheritability":"none","sources":[{"kind":"secondary","reference":"SB Gilgamesh I (Ninsun \"wise, all-knowing\"); CAD M mūdû"}]}
+],
+"mesopotamian_rimush": [
+  {"id":"kingship-akkadian-second","term":{"value":"šar Akkadî","script":"Akkadian","rom":"šar Akkadî"},"notes":"king of Akkad (second Akkadian king)","inheritability":"none","sources":[{"kind":"secondary","reference":"Rimush inscriptions; Frayne RIME 2; šarru \"king\""}]},
+  {"id":"post-Sargon-revolts-suppression","term":{"value":"bārtu","script":"Akkadian","rom":"bārtu (nabalkutu)"},"notes":"rebellion/revolt (which he put down)","inheritability":"none","sources":[{"kind":"secondary","reference":"Rimush inscriptions (suppression of Sumer's revolts); CAD B bārtu \"rebellion\""}]},
+  {"id":"lead-statue-iconographic-novelty","term":{"value":"ṣalam abāri","script":"Akkadian","rom":"ṣalam abāri"},"notes":"lead statue (royal image cast in lead)","inheritability":"none","sources":[{"kind":"secondary","reference":"Rimush inscriptions; CAD A abāru \"lead\", ṣalmu \"statue\""}]}
+],
+"mesopotamian_sargon": [
+  {"id":"kingship-conferral","term":{"value":"𒉆𒈗 nam-lugal","script":"Sumerian","rom":"nam-lugal"},"notes":"kingship (the office the gods bestow)","inheritability":"none","sources":[{"kind":"secondary","reference":"Sumerian King List (kingship at Agade); ETCSL"}]},
+  {"id":"imperial-administration","term":{"value":"bēlūtu","script":"Akkadian","rom":"bēlūtu"},"notes":"lordship, dominion, rule over the realm","inheritability":"none","sources":[{"kind":"secondary","reference":"Sargonic royal inscriptions; CAD B bēlūtu \"dominion, rule\""}]},
+  {"id":"kingship-akkadian-foundation","term":{"value":"šar Akkadî (𒈗 šarru)","script":"Akkadian","rom":"šar Akkadî"},"notes":"king of Akkad; founder of Akkadian kingship","inheritability":"none","sources":[{"kind":"secondary","reference":"Old Akkadian inscriptions, Frayne RIME 2; šarru \"king\""}]},
+  {"id":"first-empire-architect","term":{"value":"šar kiššati","script":"Akkadian","rom":"šar kiššati"},"notes":"\"king of the universe/totality\"; first empire-builder","inheritability":"none","sources":[{"kind":"secondary","reference":"Sargon inscriptions (šar kiššati title); CAD K kiššatu"}]},
+  {"id":"semitic-imperial-foundation","term":{"value":"Akkadû","script":"Akkadian","rom":"Akkadû / lišān Akkadî"},"notes":"the Akkadian (Semitic) language/imperial foundation","inheritability":"none","sources":[{"kind":"secondary","reference":"Old Akkadian royal corpus; CAD A akkadû"}]}
+],
+"mesopotamian_shar_kali_sharri": [
+  {"id":"kingship-akkadian-fifth-and-last-great","term":{"value":"Šar-kali-šarrī","script":"Akkadian","rom":"šar kali šarrī"},"notes":"\"king of all kings\"; last great Akkadian king","inheritability":"none","sources":[{"kind":"secondary","reference":"Šar-kali-šarri inscriptions; Frayne RIME 2; šar šarrī"}]},
+  {"id":"continual-warfare-three-front-Elamite-Amorite-Gutian","term":{"value":"tāḫāzu","script":"Akkadian","rom":"tāḫāzu"},"notes":"(ceaseless) battle — Elam, Amurru, Gutium","inheritability":"none","sources":[{"kind":"secondary","reference":"Šar-kali-šarri year-names; CAD T tāḫāzu \"battle\""}]},
+  {"id":"reconstruction-Temple-Enlil-Nippur","term":{"value":"Ekur (é dù)","script":"Sumerian","rom":"Ekur (é dù)"},"notes":"(re)building Enlil's Ekur temple at Nippur","inheritability":"none","sources":[{"kind":"primary","reference":"Šar-kali-šarri inscriptions (builder of the Ekur); Ekur \"mountain-house\""}]},
+  {"id":"compositional-setting-Curse-of-Agade","term":{"value":"Agade / áš (nam-tag)","script":"Sumerian","rom":"Agade (áš \"curse\")"},"notes":"setting of the \"Curse of Agade\" (the city's doom)","inheritability":"none","sources":[{"kind":"secondary","reference":"Curse of Agade; ETCSL; Agade \"Akkad\", áš \"curse\""}]}
+],
+"mesopotamian_shu_sin": [
+  {"id":"kingship-ur-iii","term":{"value":"lugal Urim","script":"Sumerian","rom":"lugal Urim(a)"},"notes":"king of Ur (Ur III dynasty)","inheritability":"none","sources":[{"kind":"secondary","reference":"Šu-Sin inscriptions; Frayne RIME 3/2; lugal \"king\""}]},
+  {"id":"muriq-tidnim-wall-construction","term":{"value":"bàd Murīq-Tidnim","script":"Akkadian","rom":"bàd Murīq-Tidnim"},"notes":"\"the wall keeping Tidnum (Amorites) at distance\"","inheritability":"none","sources":[{"kind":"primary","reference":"Šu-Sin year-names/inscriptions; bàd \"wall\""}]},
+  {"id":"sacred-marriage-rite","term":{"value":"nam-dam (Inana–Dumuzi)","script":"Sumerian","rom":"nam-dam"},"notes":"the sacred-marriage rite (king as Dumuzi)","inheritability":"none","sources":[{"kind":"secondary","reference":"Šu-Sin love songs (Inanna-Dumuzi liturgy); ETCSL; dam \"spouse\""}]}
+],
+"mesopotamian_shulgi": [
+  {"id":"kingship-of-Sumer-and-Akkad","term":{"value":"lugal Kiengi Kiuri","script":"Sumerian","rom":"lugal Ki-en-gi Ki-uri"},"notes":"king of Sumer and Akkad","inheritability":"none","sources":[{"kind":"secondary","reference":"Šulgi inscriptions/hymns; ETCSL (the title lugal Kiengi Kiuri)"}]},
+  {"id":"patron-of-Sumerian-literature-and-scribal-academies","term":{"value":"𒂍𒁾𒁀 é-dub-ba(-a)","script":"Sumerian","rom":"eduba"},"notes":"patron of the \"tablet-house\" (scribal school)","inheritability":"none","sources":[{"kind":"secondary","reference":"Šulgi Hymns B & E (literacy/eduba patronage); ETCSL"}]}
+],
+"mesopotamian_ur_nammu": [
+  {"id":"kingship-conferral","term":{"value":"𒉆𒈗 nam-lugal","script":"Sumerian","rom":"nam-lugal"},"notes":"kingship (the office the gods bestow)","inheritability":"none","sources":[{"kind":"secondary","reference":"Ur-Nammu inscriptions; Sumerian King List; ETCSL"}]},
+  {"id":"monumental-construction","term":{"value":"𒂍 é dù","script":"Sumerian","rom":"é dù"},"notes":"temple/monument building","inheritability":"none","sources":[{"kind":"primary","reference":"Ur-Nammu building inscriptions; é \"house, temple\" + dù \"build\""}]},
+  {"id":"legal-codification","term":{"value":"níĝ-si-sá","script":"Sumerian","rom":"níĝ-si-sá"},"notes":"justice/equity established (the law code)","inheritability":"none","sources":[{"kind":"secondary","reference":"Code of Ur-Nammu prologue (níĝ-si-sá \"equity\"); ETCSL"}]},
+  {"id":"kingship-ur-iii-foundation","term":{"value":"lugal Urim","script":"Sumerian","rom":"lugal Urim(a)"},"notes":"king of Ur; founder of the Ur III state","inheritability":"none","sources":[{"kind":"secondary","reference":"Ur-Nammu inscriptions (lugal Urima); Frayne RIME 3/2"}]},
+  {"id":"sumerian-law-code-foundation","term":{"value":"di / ditila","script":"Sumerian","rom":"di (ka5-di)"},"notes":"legal verdict(s); the first preserved law code","inheritability":"none","sources":[{"kind":"secondary","reference":"Code of Ur-Nammu; PSD di \"legal case, verdict\""}]},
+  {"id":"ziggurat-construction","term":{"value":"é-temen-ní-gùru (ziqqurratu)","script":"Sumerian","rom":"é-temen-ní-gùru"},"notes":"the great ziggurat of Nanna at Ur","inheritability":"none","sources":[{"kind":"secondary","reference":"Ur-Nammu inscriptions (name of the Ur ziggurat); CAD Z ziqqurratu"}]},
+  {"id":"sumerian-renaissance","term":{"value":"Kiengi","script":"Sumerian","rom":"Ki-en-gi"},"notes":"restorer of Sumer (the \"Sumerian renaissance\")","inheritability":"none","sources":[{"kind":"primary","reference":"Ur III royal corpus; Kiengi \"Sumer\""}]}
+],
+"mixcoatl": [
+  {"id":"unerring-aim-atlatl","term":{"value":"àtlatl (īhuān mītl)","script":"Nahuatl","rom":"ahtlatl (īwān mītl)"},"notes":"spear-thrower (and dart) — the hunter's unerring weapon","inheritability":"partial","sources":[{"kind":"secondary","reference":"Sahagún, Florentine Codex Bk.2 (Quecholli); Molina, Vocabulario s.v. \"atlatl\""}]},
+  {"id":"storm-call","term":{"value":"tlaloctli / mixtli","script":"Nahuatl","rom":"tlāloctli / mīxtli"},"notes":"summoning of storm-cloud and rain","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.7 (the heavens, clouds)"}]},
+  {"id":"hunt","term":{"value":"ammiliztli / ammīntli","script":"Nahuatl","rom":"ammiliztli"},"notes":"the hunt, hunting with bow and dart","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.2 (Quecholli, hunt-feast); Molina s.v. \"amini\" (hunter)"}]},
+  {"id":"milky-way","term":{"value":"Citlalin Mixtli / Mixcōātl","script":"Nahuatl","rom":"Cītlālin Mīxtli"},"notes":"\"cloud of stars\" — the Milky Way as the god himself","inheritability":"none","sources":[{"kind":"secondary","reference":"Sahagún, Florentine Codex Bk.7; Wired Humanities Nahuatl Dictionary s.v. \"citlalin\""}]},
+  {"id":"cloud-serpent","term":{"value":"Mixcōātl","script":"Nahuatl","rom":"Mīxcōātl"},"notes":"\"cloud-serpent\" (mixtli cloud + cōātl serpent)","inheritability":"none","sources":[{"kind":"secondary","reference":"Sahagún, Florentine Codex Bk.1; Molina, Vocabulario (mixtli, cōātl)"}]},
+  {"id":"storm","term":{"value":"ehēcatl / tlaloctli","script":"Nahuatl","rom":"ehēcatl"},"notes":"wind-and-storm tempest","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.7"}]}
+],
+"mixtec_lady_1_deer": [
+  {"id":"apoala-emergence-creator","term":{"value":"ñuhu Yuta Tnoho","script":"Mixtec","rom":"ñuhu Yuta Tnoho"},"notes":"sacred deity of the Apoala origin-place","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho (Vindobonensis); Jansen & Pérez Jiménez"}]},
+  {"id":"lineage-mothering","term":{"value":"yya dzehe (sanaha tnuhu)","script":"Mixtec","rom":"iya dzehe"},"notes":"lady/mother who bears the dynastic lineages","inheritability":"full","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho; Alvarado, Vocabulario (iya dzehe = señora)"}]},
+  {"id":"mixtec-tzolkin-day-1-Deer-feminine-pairing","term":{"value":"Quevui Cuaa (sii)","script":"Mixtec","rom":"quevui cuaa"},"notes":"calendar day 1-Deer, female pairing","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho; Caso, Reyes y reinos"}]}
+],
+"mixtec_lady_6_lizard": [
+  {"id":"red-and-white-bundle-queenship","term":{"value":"yya dzehe toniñe (Ñuu Ndecu)","script":"Mixtec","rom":"iya dzehe toniñe"},"notes":"ruling lady/queen of the Red-and-White-Bundle","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Jansen & Pérez Jiménez"}]},
+  {"id":"rival-of-Tilantongo-second-dynasty","term":{"value":"ñaha (uvui) Ñuu Tnoo","script":"Mixtec","rom":"ñaha"},"notes":"adversary/rival of Tilantongo's second dynasty","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye; Caso, Reyes y reinos"}]}
+],
+"mixtec_lady_9_eagle": [
+  {"id":"maternity-of-8-Deer-Tilantongo-line","term":{"value":"yya dzehe (naha toniñe)","script":"Mixtec","rom":"iya dzehe"},"notes":"noble lady/mother of the 8-Deer Tilantongo line","inheritability":"full","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Caso, Reyes y reinos de la Mixteca"}]}
+],
+"mixtec_lord_11_wind": [
+  {"id":"red-and-white-bundle-kingship","term":{"value":"toniñe (Ñuu Ndecu)","script":"Mixtec","rom":"toniñe"},"notes":"kingship/rulership of the Red-and-White-Bundle","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Jansen & Pérez Jiménez (toniñe)"}]},
+  {"id":"rival-of-Tilantongo-second-dynasty","term":{"value":"ñaha Ñuu Tnoo","script":"Mixtec","rom":"ñaha"},"notes":"adversary/rival of Tilantongo's second dynasty","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye; Caso, Reyes y reinos"}]}
+],
+"mixtec_lord_12_earthquake": [
+  {"id":"tilantongo-war-band","term":{"value":"tay yecu (Ñuu Tnoo)","script":"Mixtec","rom":"tay yecu"},"notes":"warrior/war-band men of Tilantongo","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Alvarado, Vocabulario (yecu = guerra)"}]},
+  {"id":"companion-of-8-Deer","term":{"value":"ñani (taqui)","script":"Mixtec","rom":"ñani"},"notes":"brother/companion of 8-Deer","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye; Caso, Reyes y reinos"}]}
+],
+"mixtec_lord_1_deer": [
+  {"id":"apoala-emergence-creator","term":{"value":"ñuhu Yuta Tnoho","script":"Mixtec","rom":"ñuhu Yuta Tnoho"},"notes":"sacred-being/deity of Apoala, the lineage-river origin","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho (Vindobonensis), obv. p.37–35; Jansen & Pérez Jiménez"}]},
+  {"id":"lineage-engendering","term":{"value":"yya (sanaha tnuhu)","script":"Mixtec","rom":"iya"},"notes":"lord who engenders the dynastic lineages (tnuhu)","inheritability":"full","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho; Alvarado, Vocabulario (iya, tnuhu)"}]},
+  {"id":"mixtec-tzolkin-day-1-Deer","term":{"value":"Quevui Iñe (Cuaa)","script":"Mixtec","rom":"quevui ñuu (1 Cuaa)"},"notes":"calendar day 1-Deer (his day-name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho; Caso, Reyes y reinos de la Mixteca"}]}
+],
+"mixtec_lord_4_wind": [
+  {"id":"sacrificer-of-8-Deer","term":{"value":"tay sacu nduvua","script":"Mixtec","rom":"tay sacu nduvua"},"notes":"the one who sacrifices (arrow-slays) 8-Deer","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Codex Añute (Selden); Jansen & Pérez Jiménez"}]},
+  {"id":"post-8-Deer-coalition-kingship","term":{"value":"toniñe (yuhuitayu)","script":"Mixtec","rom":"toniñe (yuhuitayu)"},"notes":"rulership of the post-8-Deer dynastic seat","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Añute (Selden); Jansen & Pérez Jiménez (yuhuitayu)"}]}
+],
+"mixtec_lord_5_crocodile": [
+  {"id":"tilantongo-high-priesthood","term":{"value":"yaha yahui (Ñuu Tnoo)","script":"Mixtec","rom":"yaha yahui"},"notes":"\"Eagle-Fire-Serpent,\" high priest/transforming-sorcerer of Tilantongo","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Jansen & Pérez Jiménez; Mixtec ethnography (yaha yahui)"}]},
+  {"id":"paternity-of-Tilantongo-second-dynasty","term":{"value":"yya (tata toniñe Ñuu Tnoo)","script":"Mixtec","rom":"iya (tata toniñe)"},"notes":"lord-father of Tilantongo's second dynasty","inheritability":"full","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Caso, Reyes y reinos"}]}
+],
+"mixtec_lord_8_deer": [
+  {"id":"tilantongo-and-tutu-tepec-kingship","term":{"value":"toniñe (Ñuu Tnoo, Yucu Dzaa)","script":"Mixtec","rom":"toniñe"},"notes":"rulership/kingship of Tilantongo and Tututepec","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Jansen & Pérez Jiménez (yuhuitayu)"}]},
+  {"id":"military-conquest-of-94-cities","term":{"value":"naha yecu (ndaa ñuu)","script":"Mixtec","rom":"naha yecu"},"notes":"war/conquest of the (94) towns","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Alvarado, Vocabulario (yecu = guerra)"}]},
+  {"id":"cholula-toltec-confirmation","term":{"value":"nacuatu (Tollan-Cholollan)","script":"Mixtec","rom":"nacuatu"},"notes":"Toltec investiture/confirmation at Cholula","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall) p.52; Jansen & Pérez Jiménez"}]},
+  {"id":"turquoise-nose-piece-yacaxihuitl-recipient","term":{"value":"yacaxihuitl (dzoco yusi)","script":"Mixtec","rom":"yacaxihuitl (Nahuatl loan)"},"notes":"turquoise nose-ornament of Toltec lordly rank","inheritability":"none","sources":[{"kind":"primary","reference":"Codex Tonindeye (Zouche-Nuttall); Sahagún, Florentine Codex Bk.8 (nose-ornament insignia)"}]},
+  {"id":"red-and-white-bundle-conquest-1101","term":{"value":"naha yecu Ñuu Ndecu","script":"Mixtec","rom":"naha yecu Ñuu Ndecu"},"notes":"war on the Red-and-White-Bundle polity","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye (Zouche-Nuttall); Jansen & Pérez Jiménez"}]},
+  {"id":"mixtec-tzolkin-day-8-Deer","term":{"value":"Quevui Una Cuaa (8 Cuaa)","script":"Mixtec","rom":"quevui una cuaa"},"notes":"calendar day 8-Deer (his day-name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Tonindeye; Caso, Reyes y reinos"}]}
+],
+"mixtec_lord_9_wind": [
+  {"id":"wind-and-air","term":{"value":"tachi","script":"Mixtec","rom":"tachi"},"notes":"wind, air","inheritability":"none","sources":[{"kind":"secondary","reference":"Alvarado, Vocabulario en lengua mixteca (1593) s.v. \"viento\"; Codex Yuta Tnoho"}]},
+  {"id":"plumed-serpent","term":{"value":"Coo Dzavui","script":"Mixtec","rom":"Coo Dzavui"},"notes":"\"Rain-Serpent,\" the Plumed Serpent (= Quetzalcoatl)","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho p.48; Jansen & Pérez Jiménez"}]},
+  {"id":"civilizing-arts-instruction","term":{"value":"sa nduku ñuhu (toniñe ñuhu)","script":"Mixtec","rom":"sa nduku ñuhu"},"notes":"bringing of the sacred ordering/civilizing acts","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho (ordering of the world); Jansen & Pérez Jiménez"}]},
+  {"id":"codex-painting-patronage","term":{"value":"tacu (ñee ñuhu)","script":"Mixtec","rom":"tacu"},"notes":"painting/writing of the sacred (deerskin) books","inheritability":"none","sources":[{"kind":"secondary","reference":"Alvarado, Vocabulario (tacu = pintar/escribir); Codex Yuta Tnoho"}]},
+  {"id":"sky-lifting-cosmogony","term":{"value":"nee andevui","script":"Mixtec","rom":"nee andevui"},"notes":"raising/holding-up of the heavens","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho (sky-bearing scene); Jansen & Pérez Jiménez"}]},
+  {"id":"mixtec-tzolkin-day-9-Wind","term":{"value":"Quevui Ee Chi (9 Chi)","script":"Mixtec","rom":"quevui ee chi"},"notes":"calendar day 9-Wind (his day-name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Codex Yuta Tnoho; Caso, Reyes y reinos"}]}
+],
+"namandu": [
+  {"id":"celestial-luminance","term":{"value":"tataendy","script":"Guaraní","rom":"tataendy"},"notes":"sacred self-generated flame, the visible luminance of divinity","inheritability":"none","sources":[{"kind":"secondary","reference":"Cadogan, Ayvu Rapyta (Mbyá), 1959; Nimuendajú 1914"}]},
+  {"id":"origin-of-language","term":{"value":"ayvu rapyta","script":"Guaraní","rom":"ayvu rapyta"},"notes":"foundation/origin of human language, conceived by Ñamandú","inheritability":"none","sources":[{"kind":"secondary","reference":"Cadogan, Ayvu Rapyta, 1959 (ch. I)"}]},
+  {"id":"sun-creator","term":{"value":"kuarahy apoha","script":"Guaraní","rom":"kuarahy apoha"},"notes":"maker of the sun (kuarahy \"sun\" + apoha \"maker\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Cadogan 1959; Montoya, Tesoro 1639 (apo \"to make\")"}]},
+  {"id":"first-light","term":{"value":"kuaarara","script":"Guaraní","rom":"kuaa-ra-ra"},"notes":"primordial creative-wisdom-light illuminating Ñamandú before the sun","inheritability":"none","sources":[{"kind":"secondary","reference":"Cadogan, Ayvu Rapyta, 1959 (ch. I)"}]}
+],
+"nanabozho": [
+  {"id":"shapeshifting-multi","term":{"value":"aanzinaago'idizo","script":"Ojibwe","rom":"aanzinaago'idizo"},"notes":"s/he changes own appearance, transforms self","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (aanzinaago'idizo vai)"}]},
+  {"id":"naming-power","term":{"value":"wiindaawaso","script":"Ojibwe","rom":"wiindaawaso"},"notes":"s/he gives/bestows names (named all beings of aki)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (wiindaawaso; wiinde \"it has a name\")"}]},
+  {"id":"wind-mastery","term":{"value":"noodin","script":"Ojibwe","rom":"noodin"},"notes":"wind; it is windy (he commands the winds)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (noodin vii)"}]},
+  {"id":"medicine-knowledge","term":{"value":"mashkiki gikendaasowin","script":"Ojibwe","rom":"mashkiki; gikendaasowin"},"notes":"medicine; knowledge — he gave the Midewiwin","inheritability":"none","sources":[{"kind":"secondary","reference":"Ojibwe People's Dict. (mashkiki, gikendaasowin); Wikipedia \"Midewiwin\""}]},
+  {"id":"trickster-cunning","term":{"value":"gagiibaadizi","script":"Ojibwe","rom":"gagiibaadizi"},"notes":"s/he is foolish/mischievous (trickster antics)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (gagiibaadizi vai)"}]},
+  {"id":"creation-completion","term":{"value":"ozhitoon (aki)","script":"Ojibwe","rom":"ozhitoon"},"notes":"s/he makes/forms it — remade aki on the turtle","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ozhitoon); Ojibwe creation/earth-diver texts"}]},
+  {"id":"culture-hero","term":{"value":"Wenabozho","script":"Ojibwe","rom":"Wenabozho"},"notes":"the transformer culture-hero (general 3rd-person name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Nanabozho\"; native-languages.org Chippewa legends"}]},
+  {"id":"trickster","term":{"value":"Wiisagejaak","script":"Ojibwe","rom":"wiisagejaak"},"notes":"the trickster figure (Ojibwe cognate of Cree Wisakedjak)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Nanabozho\"; The Canadian Encyclopedia \"Trickster\""}]},
+  {"id":"medicine","term":{"value":"mashkiki","script":"Ojibwe","rom":"mashkiki"},"notes":"medicine","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (mashkiki ni)"}]},
+  {"id":"naming","term":{"value":"wiinzo","script":"Ojibwe","rom":"wiinzo"},"notes":"to have/give a name (he named all things)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (wiinzo vai; wiinde vii)"}]}
+],
+"nanderu_mbaekua": [
+  {"id":"thunder-call","term":{"value":"ára sunu","script":"Guaraní","rom":"ára sunu"},"notes":"thunder, \"sky-rumble\"; the Tupã voice he commands","inheritability":"none","sources":[{"kind":"secondary","reference":"Guaraní lexicon; Nimuendajú 1914 (Tupã/Mba'ekuá)"}]},
+  {"id":"rain-summoning","term":{"value":"amaapo","script":"Guaraní","rom":"ama apo"},"notes":"rain-making (amã \"rain\" + apo \"to make\")","inheritability":"none","sources":[{"kind":"secondary","reference":"Montoya, Tesoro 1639 (amã); Nimuendajú 1914"}]},
+  {"id":"second-creator","term":{"value":"Tupã Ru Ete","script":"Guaraní","rom":"Tupã Ru Ete"},"notes":"true father Tupã, the second of the creator-fathers","inheritability":"none","sources":[{"kind":"secondary","reference":"Cadogan 1959; Nimuendajú, Apapocúva 1914"}]},
+  {"id":"thunder","term":{"value":"Tupã","script":"Guaraní","rom":"Tupã"},"notes":"thunder-deity / thunder-and-lightning phenomenon","inheritability":"none","sources":[{"kind":"secondary","reference":"Nimuendajú 1914; Montoya, Tesoro 1639"}]},
+  {"id":"rain","term":{"value":"amã","script":"Guaraní","rom":"amã"},"notes":"rain","inheritability":"none","sources":[{"kind":"primary","reference":"Montoya, Tesoro de la Lengua Guaraní 1639"}]}
+],
+"norse_njord": [
+  {"id":"sea-and-seafaring","term":{"value":"haf ok sæfǫr","script":"Old Norse"},"notes":"the sea and seafaring; god of ships and fishing","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri, Gylfaginning 23; Vafþrúðnismál 38"}]},
+  {"id":"wind-and-stilling-of-fire","term":{"value":"vindr (stillir sjár ok elds)","script":"Old Norse"},"notes":"the wind; he stills sea and fire","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri, Gylfaginning 23"}]}
+],
+"norse_odin": [
+  {"id":"patron-of-Yngling-and-Hlaðir-jarls-genealogy","term":{"value":"ættfaðir konunga (Ynglinga)","script":"Old Norse"},"notes":"ancestral father of kings; the Yngling/Hlaðir lineages","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri, Ynglinga saga 8–10; Háleygjatal"}]}
+],
+"norse_thor": [
+  {"id":"thunder-and-storm","term":{"value":"þruma (reið Þórs)","script":"Old Norse"},"notes":"thunder, the rumble of Thor's chariot-ride","inheritability":"none","sources":[{"kind":"primary","reference":"Snorri, Gylfaginning 21; Þórsdrápa"}]},
+  {"id":"protection-of-Midgard-and-mankind","term":{"value":"Miðgarðs véurr","script":"Old Norse"},"notes":"guardian/hallower of Midgard, defender of men","inheritability":"none","sources":[{"kind":"primary","reference":"Vǫluspá 56; Hárbarðsljóð 23"}]}
+],
+"ogun": [
+  {"id":"iron-mastery","term":{"value":"Ògún / alágbẹ̀dẹ","script":"Yoruba","rom":"Ògún, alágbẹ̀dẹ"},"notes":"Ogun the divine blacksmith, master of iron-forging","inheritability":"none","sources":[{"kind":"secondary","reference":"Barnes, *Africa's Ogun* (1997); Wikipedia \"Ogun\""}]},
+  {"id":"martial-prowess","term":{"value":"akọni / jagunjagun","script":"Yoruba","rom":"akọni, jagunjagun"},"notes":"valiant warrior; war-maker","inheritability":"none","sources":[{"kind":"secondary","reference":"Abraham, *Dictionary of Modern Yoruba* (1958)"}]},
+  {"id":"oath-witness","term":{"value":"ìbúra Ògún","script":"Yoruba","rom":"ìbúra Ògún"},"notes":"oath sworn on iron, witnessed by Ogun","inheritability":"none","sources":[{"kind":"primary","reference":"Barnes (1997); Peel, *Religious Encounter & Making of the Yoruba* (2000)"}]},
+  {"id":"path-clearing","term":{"value":"onílànà (ó ń lànà)","script":"Yoruba","rom":"onílànà"},"notes":"he who opens/clears the road with his cutlass","inheritability":"none","sources":[{"kind":"secondary","reference":"Yoruba religion (Wikipedia); botanicaonline \"Ogun who opens the way\""}]},
+  {"id":"iron","term":{"value":"irin","script":"Yoruba","rom":"irin"},"notes":"iron, the metal","inheritability":"none","sources":[{"kind":"primary","reference":"Abraham (1958)"}]},
+  {"id":"metallurgy","term":{"value":"iṣẹ́-irin / àgbẹ̀dẹ","script":"Yoruba","rom":"iṣẹ́ irin, àgbẹ̀dẹ"},"notes":"ironwork; the smith's forge-craft","inheritability":"none","sources":[{"kind":"primary","reference":"Barnes (1997)"}]},
+  {"id":"war","term":{"value":"ogun","script":"Yoruba","rom":"ogun"},"notes":"war, warfare (homophone of the deity-name)","inheritability":"none","sources":[{"kind":"primary","reference":"Abraham (1958)"}]},
+  {"id":"hunters","term":{"value":"ọdẹ","script":"Yoruba","rom":"ọdẹ"},"notes":"hunters, of whom Ogun is patron","inheritability":"none","sources":[{"kind":"primary","reference":"Ajisafe; DiscoverYoruba; Ancient-Origins \"Oyo\""}]},
+  {"id":"roads","term":{"value":"ọ̀nà","script":"Yoruba","rom":"ọ̀nà"},"notes":"road, path","inheritability":"none","sources":[{"kind":"primary","reference":"Abraham (1958)"}]}
+],
+"oguola": [
+  {"id":"monumental-construction","term":{"value":"Iya (ne ọ tọn)","script":"Edo","rom":"Iya"},"notes":"building of the great moat-and-rampart","inheritability":"none","sources":[{"kind":"secondary","reference":"Egharevba (1968); Wikipedia \"Benin Moat\""}]},
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"iya-moat-foundation","term":{"value":"Iya","script":"Edo","rom":"Iya"},"notes":"the inner moat/earthwork girding the city","inheritability":"none","sources":[{"kind":"secondary","reference":"edoworld.net \"The Benin Moats Iya\"; Wikipedia \"Benin Moat\""}]},
+  {"id":"monumental-earthwork","term":{"value":"Iya","script":"Edo","rom":"Iya"},"notes":"defensive earthwork ditch-and-bank","inheritability":"none","sources":[{"kind":"secondary","reference":"Connah, *African Civilizations* (2001); Wikipedia \"Benin Moat\""}]}
+],
+"oranmiyan": [
+  {"id":"iron-mastery","term":{"value":"irin (ogún Ògún)","script":"Yoruba","rom":"irin"},"notes":"iron-power inherited from his father Ogun","inheritability":"partial","sources":[{"kind":"primary","reference":"DiscoverYoruba \"Oranmiyan\"; Smith, *Kingdoms of the Yoruba* (1988)"}]},
+  {"id":"martial-prowess","term":{"value":"akọni / jagunjagun","script":"Yoruba","rom":"akọni, jagunjagun"},"notes":"valiant warrior, war-leader","inheritability":"none","sources":[{"kind":"primary","reference":"Smith (1988)"}]},
+  {"id":"kingship-yoruba-foundation","term":{"value":"ọba (ìpilẹ̀ṣẹ̀)","script":"Yoruba","rom":"ọba, ìpilẹ̀ṣẹ̀"},"notes":"king; founder of Oyo and Benin royal lines","inheritability":"none","sources":[{"kind":"primary","reference":"Smith (1988); Law, *The Oyo Empire* (1977)"}]},
+  {"id":"cavalry-command","term":{"value":"balógun ẹlẹ́ṣin","script":"Yoruba","rom":"balógun ẹlẹ́ṣin"},"notes":"commander of horse-riders","inheritability":"none","sources":[{"kind":"primary","reference":"Law (1977)"}]},
+  {"id":"kingship-yoruba","term":{"value":"ọba","script":"Yoruba","rom":"ọba"},"notes":"king, sacred ruler","inheritability":"none","sources":[{"kind":"primary","reference":"Smith (1988)"}]},
+  {"id":"oyo-foundation","term":{"value":"ìpìlẹ̀ Ọ̀yọ́","script":"Yoruba","rom":"ìpìlẹ̀ Ọ̀yọ́"},"notes":"founding of Oyo","inheritability":"none","sources":[{"kind":"primary","reference":"Law (1977)"}]},
+  {"id":"cavalry","term":{"value":"ẹlẹ́ṣin (ẹṣin)","script":"Yoruba","rom":"ẹlẹ́ṣin, ẹṣin"},"notes":"horse-owner/cavalryman; horse","inheritability":"none","sources":[{"kind":"primary","reference":"Law (1977); Met Museum \"elesin\""}]}
+],
+"orhogbua": [
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"lagos-foundation","term":{"value":"Eko","script":"Edo","rom":"Eko"},"notes":"\"war-camp\"; the Edo name/founding of Lagos","inheritability":"none","sources":[{"kind":"primary","reference":"Guardian NG \"Edo Empire & Lagos\"; afgedconsult \"Founding of Eko\""}]},
+  {"id":"naval-expedition","term":{"value":"okuo amẹ (ọkọ̀)","script":"Edo","rom":"okuo amẹ"},"notes":"war by water; coastal canoe/naval campaign","inheritability":"none","sources":[{"kind":"primary","reference":"Guardian NG; Ryder (1969)"}]}
+],
+"ossetian_akhsar": [
+  {"id":"valor-eponym-elder-twin","term":{"value":"ӕхсар","script":"Ossetian","rom":"æxsar"},"notes":"martial valor, courage (the elder twin's name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Abaev (æxsar \"valor\" < Iran. *xšaθra-); Nart sagas"}]}
+],
+"ossetian_akhsartaeg": [
+  {"id":"valor-bearer-eponym-younger-twin","term":{"value":"ӕхсарт","script":"Ossetian","rom":"æxsart"},"notes":"bravery, fighting-spirit (younger twin's name)","inheritability":"none","sources":[{"kind":"secondary","reference":"Abaev (æxsart \"courage\"); Nart sagas"}]},
+  {"id":"Æhsærtæggatæ-lineage-founder","term":{"value":"Ӕхсӕртӕггатӕ","script":"Ossetian","rom":"Æxsærtæggatæ"},"notes":"eponymous founder of the Æxsærtæggatæ clan","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas (the three Nart clans); Dumézil"}]}
+],
+"ossetian_batraz": [
+  {"id":"steel-bodied-hero","term":{"value":"ӕндон","script":"Ossetian","rom":"ændon"},"notes":"steel; his body is of tempered steel","inheritability":"full","sources":[{"kind":"secondary","reference":"Nart sagas; Dumézil; ændon \"steel\""}]},
+  {"id":"Nart-champion-foremost","term":{"value":"Нарты тыхгӕнӕг","script":"Ossetian","rom":"Narty tyxgænæg"},"notes":"foremost strongman/champion of the Narts","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; tyx \"strength, might\""}]},
+  {"id":"forge-tempered-warrior","term":{"value":"куырдадзы фӕлдыст","script":"Ossetian","rom":"kwyrdadzy fældyst"},"notes":"tempered in the (Kurdalægon) smithy","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas (smith Kurdalægon hardens him); kwyrd \"smith\""}]},
+  {"id":"final-age-divine-target","term":{"value":"Хуыцауы ныхмӕ хӕст","script":"Ossetian","rom":"Xwycawy nyxmæ xæst"},"notes":"war against God/heaven in the last age","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas (death-struggle with God); Xwycaw \"God\""}]},
+  {"id":"sacred-spring-tear-progenitor","term":{"value":"сыгъдӕг суадон","script":"Ossetian","rom":"syǧdæg swadon"},"notes":"holy spring(s) arising from God's tears","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas (three tears → three sanctuaries); swadon \"spring\""}]}
+],
+"ossetian_donbettyr": [
+  {"id":"water-and-sea-deity","term":{"value":"дон","script":"Ossetian","rom":"don"},"notes":"\"water\"; god of waters (Don-Bettyr)","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; Abaev, Hist.-Etym. Dict. (don \"water\")"}]},
+  {"id":"underwater-kingdom-rule","term":{"value":"денджызы ӕлдар","script":"Ossetian","rom":"dendžyzy ældar"},"notes":"lord of the sea / underwater kingdom","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; ældar \"lord\" (Dumézil)"}]},
+  {"id":"ancestor-of-Nart-maternal-line","term":{"value":"Нарты мады фыд","script":"Ossetian","rom":"Narty mady fyd"},"notes":"forefather of the Narts' maternal line","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas (father of Dzerassæ); fyd \"father\""}]}
+],
+"ossetian_dzerassae": [
+  {"id":"donbettyr-daughter","term":{"value":"Донбеттыры чызг","script":"Ossetian","rom":"Donbettyry čyzg"},"notes":"daughter of Donbettyr (the water-lord)","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; čyzg \"girl, daughter\""}]},
+  {"id":"dove-shapeshifting","term":{"value":"бӕлоны хуыз","script":"Ossetian","rom":"bælony xuyz"},"notes":"dove-form; shapeshifting into a dove","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas (the apple-orchard); bælon \"dove\""}]},
+  {"id":"mother-of-Æhsærtæggatæ-line","term":{"value":"Ӕхсӕртӕггаты мад","script":"Ossetian","rom":"Æxsærtæggaty mad"},"notes":"mother of the Æxsærtæggatæ line","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; mad \"mother\""}]},
+  {"id":"underwater-realm-dweller","term":{"value":"денджызы цӕрӕг","script":"Ossetian","rom":"dendžyzy cæræg"},"notes":"dweller of the underwater realm","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; cæræg \"dweller\""}]}
+],
+"ossetian_khaemyts": [
+  {"id":"father-of-Batraz","term":{"value":"Батразы фыд","script":"Ossetian","rom":"Batrazy fyd"},"notes":"father of Batraz","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; fyd \"father\""}]},
+  {"id":"Æhsærtæggatæ-younger-twin","term":{"value":"Ӕхсӕртӕггаты кӕстӕр","script":"Ossetian","rom":"Æxsærtæggaty kæstær"},"notes":"the junior one of the Æxsærtæggatæ (Uryzmæg's brother)","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; kæstær \"younger, junior\""}]},
+  {"id":"tragic-fathering","term":{"value":"фыдбылыз","script":"Ossetian","rom":"fydbylyz"},"notes":"ill-fated fatherhood/misfortune","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas (Batraz born from the boil on his back); fyd- \"ill\""}]}
+],
+"ossetian_satana": [
+  {"id":"Nart-matriarch-foundational","term":{"value":"Нарты ус","script":"Ossetian","rom":"Narty us"},"notes":"foundational woman/matriarch of the Narts","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; Dumézil; us \"woman, wife\""}]},
+  {"id":"foster-mother-and-counselor","term":{"value":"уынаффӕгӕнӕг","script":"Ossetian","rom":"wynaffægænæg"},"notes":"counsel-giver, foster-rearer of the Narts","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; wynaffæ \"counsel, decision\""}]},
+  {"id":"Nartaemonggae-mead-cup-presider","term":{"value":"Нартамонгӕ","script":"Ossetian","rom":"Nartamongæ"},"notes":"keeper of the Nartamongæ truth-revealing cup","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; Dumézil (Nartamongæ \"Nart-revealer\")"}]},
+  {"id":"tomb-born-cosmogonic","term":{"value":"ингӕны райгуырд","script":"Ossetian","rom":"ingæny rajgwyrd"},"notes":"born within the tomb (from dead Dzerassæ)","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; ingæn \"grave, crypt\""}]}
+],
+"ossetian_uryzmaeg": [
+  {"id":"head-of-the-Narts","term":{"value":"Нарты хистӕр","script":"Ossetian","rom":"Narty xistær"},"notes":"eldest/chief of the Narts","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; Dumézil; xistær \"elder, senior\""}]},
+  {"id":"underwater-realm-quester","term":{"value":"денджызмӕ балц","script":"Ossetian","rom":"dendžyzmæ balc"},"notes":"quest-journey to the underwater realm","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; balc \"heroic journey/raid\""}]},
+  {"id":"Æhsærtæggatæ-clan-leader","term":{"value":"Ӕхсӕртӕггаты сӕр","script":"Ossetian","rom":"Æxsærtæggaty sær"},"notes":"head of the Æxsærtæggatæ clan","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; sær \"head, chief\""}]}
+],
+"ossetian_waerxaeg": [
+  {"id":"first-Nart-progenitor","term":{"value":"фыццаг Нарт","script":"Ossetian","rom":"fyccag Nart"},"notes":"the first Nart, progenitor","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; Dumézil, Le livre des héros (Nart < *nar \"hero\")"}]},
+  {"id":"Wærhægtæ-lineage-founder","term":{"value":"Уӕрхӕгтӕ","script":"Ossetian","rom":"Wærxægtæ"},"notes":"eponymous founder of the Wærxægtæ clan","inheritability":"none","sources":[{"kind":"secondary","reference":"Nart sagas; Abaev (Wærxæg ~ *warhāka \"wolf\")"}]},
+  {"id":"Cosmic-Tree-dwelling","term":{"value":"бӕлас","script":"Ossetian","rom":"bælas"},"notes":"dwelling by the (Nart cosmic) tree","inheritability":"none","sources":[{"kind":"primary","reference":"Nart sagas; bælas \"tree\""}]}
+],
+"ozolua": [
+  {"id":"kingship-edo","term":{"value":"Oba","script":"Edo","rom":"Oba"},"notes":"divine king of Benin","inheritability":"none","sources":[{"kind":"primary","reference":"Bradbury (1973)"}]},
+  {"id":"territorial-expansion","term":{"value":"okuo ( ext. ẹvbo)","script":"Edo","rom":"okuo"},"notes":"war/military campaign to enlarge the realm","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968); Ryder (1969)"}]}
+],
+"pia_pemon": [
+  {"id":"shamanic-vision","term":{"value":"piai","script":"Pemón","rom":"piai (piasan)"},"notes":"shaman's spirit-sight/vision-power","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Thomas, Order Without Government 1982"}]},
+  {"id":"flood-survival","term":{"value":"tuna apuk","script":"Pemón","rom":"tuna apuk"},"notes":"surviving the great water/flood","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada 1943 (tuna)"}]},
+  {"id":"culture-hero","term":{"value":"Pia","script":"Pemón","rom":"Pia"},"notes":"culture-hero and origin-principle (Pia-to-daktai)","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Pemón cosmology (Pia = father/principle)"}]},
+  {"id":"shamanic-power-piaí-namesake","term":{"value":"piasan","script":"Pemón","rom":"piasan (piai)"},"notes":"shaman; the office named from Pia","inheritability":"none","sources":[{"kind":"secondary","reference":"Thomas 1982; Koch-Grünberg 1916 (piai/piasan)"}]},
+  {"id":"lineage-ancestor","term":{"value":"Pia","script":"Pemón","rom":"Pia (itepotorï)"},"notes":"originating ancestor/father-principle of all beings","inheritability":"none","sources":[{"kind":"secondary","reference":"Pemón cosmology (Pia = itepotorï \"principle/father\"); Koch-Grünberg 1916"}]}
+],
+"piye": [
+  {"id":"kingship-kushite-conferral","term":{"value":"Imn dj qore","script":"Meroitic / Egyptian (translit)","rom":"Amani di qore"},"notes":"Amun's conferral of Kushite kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Piye Victory Stela; Meroitic qore"}]},
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt-bjtj","script":"Egyptian (translit)","rom":"redi nesut-bity"},"notes":"conferral of the Egyptian double-kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Piye Victory Stela (Cairo JE 48862)"}]},
+  {"id":"kingship-kushite","term":{"value":"qore","script":"Meroitic","rom":"qore"},"notes":"king of Kush","inheritability":"none","sources":[{"kind":"secondary","reference":"Rilly, Meroitic language"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"25th-Dyn. titulary"}]},
+  {"id":"25th-dynasty-foundation","term":{"value":"grg pr / ꜥḥꜥ","script":"Egyptian (translit)","rom":"gereg per / ꜥaḥa"},"notes":"founding the (royal) house/dynasty","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 186 (grg \"found, establish\")"}]}
+],
+"poia": [
+  {"id":"sun-dance-instruction","term":{"value":"Okán","script":"Blackfoot","rom":"okán"},"notes":"Sun Dance / Medicine-Lodge ceremony Poïa taught the people","inheritability":"none","sources":[{"kind":"primary","reference":"Grinnell, *Blackfoot Lodge Tales*; sacred-texts.com *Old North Trail* \"Legend of Poïa\""}]},
+  {"id":"celestial-passage","term":{"value":"sspommóó","script":"Blackfoot","rom":"sspommóó"},"notes":"to ascend into the sky-realm (journey to the Sun)","inheritability":"none","sources":[{"kind":"secondary","reference":"Frantz & Russell, *Blackfoot Dictionary* (sspommóó \"ascend to heaven\")"}]},
+  {"id":"sun-dance-foundation","term":{"value":"Okán","script":"Blackfoot","rom":"okán"},"notes":"the Sun Dance, founded among Blackfoot via Poïa","inheritability":"none","sources":[{"kind":"secondary","reference":"Blackfoot Confederacy ethnography (Okan = Sun Dance medicine lodge dedicated to the sun)"}]},
+  {"id":"ritual-establishment","term":{"value":"Naató'siikoan","script":"Blackfoot","rom":"naatóʼsiikoan"},"notes":"Sun-given sacred/ceremonial observance","inheritability":"none","sources":[{"kind":"primary","reference":"Blackfoot religion (Naató'si \"Sun\"; natoyi- \"sacred/holy\", Frantz & Russell) — note: built on attested natoyi-/Naató'si stems; no single lexeme for the abstract \"establishment\""}]}
+],
+"polynesian_hema": [
+  {"id":"fatherhood-of-Tāwhaki","term":{"value":"matuatanga (matua o Tāwhaki)","script":"Māori","rom":"matuatanga"},"notes":"fatherhood (father of Tāwhaki)","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (matua \"father, parent\"; Tāwhaki-cycle)"}]},
+  {"id":"sufferer-of-Ponaturi-blinding","term":{"value":"matapō i ngā Ponaturi","script":"Māori","rom":"matapō i ngā Ponaturi"},"notes":"blinded/seized by the Ponaturi sea-spirits","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (matapō \"blind\"; Ponaturi, the malevolent sea-fairies)"}]}
+],
+"polynesian_makeatutara": [
+  {"id":"guardianship-of-underworld","term":{"value":"kaitiaki o Rarohenga","script":"Māori","rom":"kaitiaki o Rarohenga"},"notes":"guardian-atua of the underworld","inheritability":"none","sources":[{"kind":"primary","reference":"Māori tradition (atua \"god,\" Rarohenga \"underworld,\" kaitiaki \"guardian\")"}]}
+],
+"polynesian_maui": [
+  {"id":"superhuman-strength","term":{"value":"mana / kaha","script":"Māori","rom":"mana / kaha"},"notes":"supernatural power and bodily strength","inheritability":"partial","sources":[{"kind":"primary","reference":"Māori (mana \"supernatural power/authority,\" kaha \"strength\")"}]},
+  {"id":"culture-hero-trickster","term":{"value":"tinihanga (Māui-tinihanga)","script":"Māori","rom":"tinihanga"},"notes":"trickster, master of cunning deception","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (tinihanga \"trickery, deceit\"; Māui the demigod trickster, cf. Nukurau)"}]},
+  {"id":"fisher-of-Aotearoa-and-shaper-of-Polynesian-geography","term":{"value":"Te Ika-a-Māui","script":"Māori","rom":"Te Ika-a-Māui"},"notes":"the Fish of Māui (North Island), land fished up","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (hī ika \"to fish up\"; Te Ika-a-Māui, the North Island)"}]}
+],
+"polynesian_rata": [
+  {"id":"canoe-building-and-tikanga-of-tree-felling","term":{"value":"tārai waka me te tikanga tua rākau","script":"Māori","rom":"tārai waka me te tikanga tua rākau"},"notes":"canoe-carving and the proper rite of tree-felling","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (tārai waka \"to carve a canoe,\" tikanga \"correct protocol,\" tua rākau \"fell a tree\")"}]},
+  {"id":"paternal-vengeance","term":{"value":"ngaki mate (o te matua)","script":"Māori","rom":"ngaki mate"},"notes":"avenging the death of his father","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (ngaki mate \"to avenge a death,\" utu \"reciprocity/revenge\")"}]},
+  {"id":"pan-Polynesian-canonical-shared-ancestor","term":{"value":"tupuna whakapapa (puta noa i Te Moana-nui-a-Kiwa)","script":"Māori","rom":"tupuna whakapapa"},"notes":"shared genealogical ancestor across Polynesia","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (tupuna \"ancestor,\" whakapapa \"genealogy\"; Rata/Laka/Lata cognates)"}]}
+],
+"polynesian_taranga": [
+  {"id":"rangatira-village-leadership","term":{"value":"rangatira","script":"Māori","rom":"rangatira"},"notes":"chief, leader of the village (kāinga)","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (rangatira \"chief, person of mana\"; mother of the Māui brothers)"}]}
+],
+"polynesian_tawhaki": [
+  {"id":"sky-ascent-and-incantation-mastery","term":{"value":"pikinga ki te rangi me te karakia","script":"Māori","rom":"pikinga ki te rangi me te karakia"},"notes":"sky-ascent and mastery of ritual incantation","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (piki \"climb, ascend,\" karakia \"incantation,\" rangi \"sky/heaven\")"}]},
+  {"id":"sky-ascent-by-vine","term":{"value":"kake i te aka matua","script":"Māori","rom":"kake i te aka matua"},"notes":"climbing the parent-vine to the heavens","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (kake \"climb,\" aka matua \"the parent vine\")"}]},
+  {"id":"thunder-and-lightning-inherited","term":{"value":"whaitiri me te uira (tuku iho)","script":"Māori","rom":"whaitiri me te uira"},"notes":"thunder and lightning, inherited from Whaitiri","inheritability":"full","sources":[{"kind":"primary","reference":"Māori (uira \"lightning\"; gift of grandmother Whaitiri; tuku iho \"handed down\")"}]},
+  {"id":"Ponaturi-sunrise-destruction","term":{"value":"patunga o ngā Ponaturi","script":"Māori","rom":"patunga o ngā Ponaturi"},"notes":"slaying of the Ponaturi by sunlight","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (patu \"to kill, strike\"; Ponaturi destroyed at sunrise)"}]},
+  {"id":"culture-hero-canonical-Polynesian","term":{"value":"tipua / toa rongonui","script":"Māori","rom":"tipua / toa rongonui"},"notes":"renowned demigod culture-hero","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (tipua \"demigod, object of awe,\" toa \"hero/champion,\" rongonui \"famous\")"}]}
+],
+"polynesian_whaitiri": [
+  {"id":"thunder-and-lightning","term":{"value":"whaitiri me te uira","script":"Māori","rom":"whaitiri me te uira"},"notes":"thunder and lightning","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (whaitiri \"thunder,\" uira \"lightning\"; she personifies thunder)"}]},
+  {"id":"sky-goddess","term":{"value":"atua wahine o te rangi","script":"Māori","rom":"atua wahine o te rangi"},"notes":"female sky-deity","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (atua wahine \"goddess,\" rangi \"sky\")"}]},
+  {"id":"cannibalistic-goddess","term":{"value":"atua kai-tangata","script":"Māori","rom":"atua kai-tangata"},"notes":"man-eating (cannibal) deity","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (kai-tangata \"to eat people, cannibal\")"}]},
+  {"id":"guardian-of-the-vines-of-ascent","term":{"value":"kaitiaki o ngā aka","script":"Māori","rom":"kaitiaki o ngā aka"},"notes":"guardian of the vines of sky-ascent","inheritability":"none","sources":[{"kind":"primary","reference":"Māori (aka \"vine, aerial root\"; aka matua the ascent-vine of Tāwhaki)"}]}
+],
+"pukawiss": [
+  {"id":"animal-mimicry-and-dance-mastery","term":{"value":"niimi'iwe","script":"Ojibwe","rom":"niimi'iwe"},"notes":"s/he performs a dance (mimicking animals)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (niimi'iwe vai; niimi vai); Johnston, *The Manitous*"}]},
+  {"id":"shape-shifting-snake-form","term":{"value":"ginebig-aanzinaago'idizo","script":"Ojibwe","rom":"ginebig; aanzinaago'idizo"},"notes":"transforms self (into) a snake","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ginebig na; aanzinaago'idizo vai)"}]},
+  {"id":"wind-mastery","term":{"value":"noodin","script":"Ojibwe","rom":"noodin"},"notes":"wind; continuing presence in the wind","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (noodin vii)"}]},
+  {"id":"dance-and-performance","term":{"value":"niimi'idiwin","script":"Ojibwe","rom":"niimi'idiwin"},"notes":"a dance; a powwow (he created the hoop dance)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (niimi'idiwin ni)"}]},
+  {"id":"animal-observation-and-mimicry","term":{"value":"odamino (awesiinyag waaband'aad)","script":"Ojibwe","rom":"odamino"},"notes":"s/he plays/imitates (watched the animals)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (odamino vai; awesiinh \"wild animal\")"}]},
+  {"id":"storytelling-through-movement","term":{"value":"niimi'idiwin-dibaajimowin","script":"Ojibwe","rom":"niimi'idiwin; dibaajimowin"},"notes":"dance-narrative (story told by dancing)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (niimi'idiwin, dibaajimo)"}]},
+  {"id":"taunting-of-the-proud","term":{"value":"baapinodaw","script":"Ojibwe","rom":"baapinodaw"},"notes":"s/he mocks/ridicules h/ (taunts the proud)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (baapinodaw vta; baapi'aa \"laughs at\")"}]},
+  {"id":"wind-and-weather-continuing-presence","term":{"value":"Papiigawiz (noodin)","script":"Ojibwe","rom":"Papiigawiz; noodin"},"notes":"Pukawiss \"the disowned,\" felt in the wind","inheritability":"none","sources":[{"kind":"primary","reference":"Johnston, *The Manitous*; Ojibwe People's Dict. (noodin)"}]}
+],
+"redhorn": [
+  {"id":"foot-racing-supernatural","term":{"value":"Įčohorúšika (kii-nąžįňąk)","script":"Ho-Chunk","rom":"Įčohorúšika"},"notes":"\"Wears Faces on His Ears\" — beat the Giants in the footrace","inheritability":"partial","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"Rise of Morning Star\"; \"Redhorn Contests the Giants\""}]},
+  {"id":"celestial-luminance","term":{"value":"Wiragošge Xetera","script":"Ho-Chunk","rom":"Wiragošge Xetera"},"notes":"\"the Great Star\" (Morning Star / Venus)","inheritability":"none","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"Morning Star\""}]},
+  {"id":"cosmic-ball-game-mastery","term":{"value":"Įčohorúšika (kisу́nč-)","script":"Ho-Chunk","rom":"Įčohorúšika"},"notes":"won the lacrosse/ball contest staked on lives","inheritability":"partial","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"Redhorn Contests the Giants\""}]},
+  {"id":"morning-star","term":{"value":"Wiragošge Xetera","script":"Ho-Chunk","rom":"Wiragošge Xetera"},"notes":"the Morning Star (\"Great Star,\" Venus)","inheritability":"none","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"Morning Star\"; Radin"}]},
+  {"id":"cosmic-ball-game","term":{"value":"Hešúčka (waší)","script":"Ho-Chunk","rom":"Hešúčka"},"notes":"\"Red Horn\"; the staked ball game vs. the Giants","inheritability":"none","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"The Redhorn Cycle\""}]},
+  {"id":"warfare","term":{"value":"Hešúčka (cewe)","script":"Ho-Chunk","rom":"Hešúčka; cewe"},"notes":"\"Red Horn\"; cewe = bravery/spiritual war-power","inheritability":"none","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"Supernatural & Spiritual Power\" (cewe); Redhorn Cycle"}]}
+],
+"redhorn_son": [
+  {"id":"foot-racing-supernatural","term":{"value":"kii-nąžįňąk (Hešúčkižą hičųšgéra)","script":"Ho-Chunk","rom":"Hešúčka hičųšgéra"},"notes":"\"Red Horn's son\" — inherited his racing prowess","inheritability":"partial","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"The Sons of Redhorn\""}]},
+  {"id":"cosmic-ball-game-mastery","term":{"value":"waší (hičųšgéra)","script":"Ho-Chunk","rom":"waší"},"notes":"the ball/lacrosse game (inherited mastery)","inheritability":"partial","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"Adventures of Redhorn's Sons\""}]},
+  {"id":"warfare","term":{"value":"wažątire (cewe)","script":"Ho-Chunk","rom":"wažątire; cewe"},"notes":"war-bundle; bravery/war-power (took Thunderbird warbundle)","inheritability":"partial","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"The Sons of Redhorn\" (Thunderbird Warbundle)"}]},
+  {"id":"rescue","term":{"value":"wagigų́sšąną (hičųšgéra)","script":"Ho-Chunk"},"notes":"brought the fathers back to life; rescued the captives","inheritability":"none","sources":[{"kind":"primary","reference":"Dieterle, *Hōcąk Encyclopedia* \"The Sons of Redhorn\" — note: precise verb-form not separately attested in consulted sources; concept \"brought back to life\" is canonical"}]}
+],
+"roman_augustus": [
+  {"id":"first-Roman-emperor","term":{"value":"imperātor (prīnceps)","script":"Latin"},"notes":"supreme commander; first man of the state","inheritability":"none","sources":[{"kind":"primary","reference":"Res Gestae Divi Augusti; Suetonius, Augustus 7"}]},
+  {"id":"founder-of-the-Augustan-principate","term":{"value":"auctor prīncipātūs","script":"Latin"},"notes":"founder of the principate (prīncipātus)","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 1.1–9; Res Gestae 34"}]},
+  {"id":"second-Roman-deified-individual","term":{"value":"Dīvus Augustus","script":"Latin"},"notes":"the Deified Augustus, consecrated 14 CE","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Augustus 100; Tacitus, Annales 1.10"}]},
+  {"id":"patron-of-the-Augustan-literary-program","term":{"value":"patrōnus (Maecēnātis circulus)","script":"Latin"},"notes":"patron of poets; the Augustan literary patronage","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Augustus 89; Horace, Odes 1.1"}]}
+],
+"roman_caeculus": [
+  {"id":"fire-resistance-from-Vulcan-paternity","term":{"value":"ignibus impūnis (Volcānī prōlēs)","script":"Latin"},"notes":"unharmed by fire, offspring of Vulcan","inheritability":"partial","sources":[{"kind":"primary","reference":"Virgil, Aeneid 7.678–681; Servius ad loc."}]},
+  {"id":"royal-authority","term":{"value":"imperium","script":"Latin"},"notes":"legitimate command/sovereign power over a people","inheritability":"none","sources":[{"kind":"primary","reference":"Virgil, Aeneid 7.681; Servius ad Aen. 7.678"}]},
+  {"id":"foundation-of-Praeneste","term":{"value":"conditor Praenestae","script":"Latin"},"notes":"founder (conditor) of the city Praeneste","inheritability":"none","sources":[{"kind":"primary","reference":"Virgil, Aeneid 7.678; Servius ad loc."}]},
+  {"id":"pre-urban-Latin-shepherd-kingship","term":{"value":"rēx pāstōrum","script":"Latin"},"notes":"king of shepherds, pre-urban Latin chieftainship","inheritability":"none","sources":[{"kind":"primary","reference":"Servius ad Aen. 7.681; Cato fr."}]}
+],
+"roman_caesar_dictator": [
+  {"id":"gens-Iulia-foundational-figure","term":{"value":"gentis Iūliae auctor","script":"Latin"},"notes":"founding head of the Julian clan (gēns Iūlia)","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Iulius 6; Virgil, Aeneid 1.286–288"}]},
+  {"id":"first-Roman-deified-individual","term":{"value":"Dīvus Iūlius","script":"Latin"},"notes":"the Deified Julius, first Roman officially consecrated","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Iulius 88; Ovid, Met. 15.745–851"}]},
+  {"id":"dictator-perpetuo","term":{"value":"dictātor perpetuō","script":"Latin"},"notes":"dictator in perpetuity, supreme magistracy","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Iulius 76; Cicero, Philippics 2"}]},
+  {"id":"Gallic-conqueror","term":{"value":"victor Galliārum","script":"Latin"},"notes":"conqueror of the Gauls/Gallic provinces","inheritability":"none","sources":[{"kind":"primary","reference":"Caesar, Bellum Gallicum; Suetonius, Iulius 25"}]}
+],
+"roman_caligula": [
+  {"id":"third-Roman-emperor","term":{"value":"imperātor tertius (Gāius Caesar)","script":"Latin"},"notes":"third emperor, Gaius Caesar","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Caligula 13; Cassius Dio 59"}]},
+  {"id":"canonical-Roman-mad-emperor","term":{"value":"prīnceps furiōsus (āmentia)","script":"Latin"},"notes":"the mad/raving emperor, archetype of imperial āmentia","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Caligula 50–51; Seneca, De Ira"}]},
+  {"id":"first-during-lifetime-self-deification-claim","term":{"value":"adfectātiō nūminis (deus praesēns)","script":"Latin"},"notes":"claiming godhood while living; a present god","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Caligula 22; Cassius Dio 59.26–28"}]},
+  {"id":"Jerusalem-Temple-statue-crisis-of-40-ce","term":{"value":"statua in templō Hierosolymōrum","script":"Latin"},"notes":"his statue ordered into the Jerusalem Temple, 40 CE","inheritability":"none","sources":[{"kind":"primary","reference":"Josephus, Ant. 18.8; Philo, Legatio ad Gaium"}]}
+],
+"roman_ceres": [
+  {"id":"plebeian-state-counter-cult","term":{"value":"Cerēs plēbēia (Aventīnēnsis)","script":"Latin"},"notes":"plebeian Ceres of the Aventine triad/counter-cult","inheritability":"none","sources":[{"kind":"primary","reference":"Livy 3.55; Dionysius Halic. 6.17, 6.94"}]}
+],
+"roman_diana": [
+  {"id":"wild-hunt","term":{"value":"vēnātiō (silvārum dea)","script":"Latin"},"notes":"the hunt; goddess of woodlands and wild beasts","inheritability":"none","sources":[{"kind":"primary","reference":"Catullus 34; Ovid, Met. 3.156–185"}]},
+  {"id":"latin-league-protection","term":{"value":"Diāna Nemorēnsis (foedus Latīnum)","script":"Latin"},"notes":"Diana of Nemi, patroness of the Latin League","inheritability":"none","sources":[{"kind":"primary","reference":"Cato, Origines fr.; Livy 1.45; Varro, LL 5.43"}]}
+],
+"roman_drusus_the_elder": [
+  {"id":"Roman-conqueror-to-the-Elbe","term":{"value":"victor ad Albim (flūmen)","script":"Latin"},"notes":"conqueror reaching the river Elbe (Albis)","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Claudius 1; Florus 2.30; Cassius Dio 55"}]},
+  {"id":"father-of-Germanicus-and-Claudius","term":{"value":"pater Germānicī et Claudiī","script":"Latin"},"notes":"father of Germanicus and the emperor Claudius","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Claudius 1; Tacitus, Annales 1.33"}]},
+  {"id":"posthumous-Germanicus-cognomen-founder","term":{"value":"cognōminis Germānicī auctor","script":"Latin"},"notes":"originator of the hereditary Germanicus cognomen","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Claudius 1; Cassius Dio 55.2"}]}
+],
+"roman_germanicus": [
+  {"id":"canonical-Tacitean-tragic-hero-of-Annales-1-2","term":{"value":"hērōs tragicus Annālium","script":"Latin"},"notes":"tragic hero of Tacitus's Annales books 1–2","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 1–2"}]},
+  {"id":"recovery-of-Varus-eagles","term":{"value":"receptor aquilārum (Vārī clādis)","script":"Latin"},"notes":"recoverer of the legionary eagles lost by Varus","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 1.60, 2.25; Cassius Dio 57"}]},
+  {"id":"father-of-Caligula-and-Agrippina-the-Younger","term":{"value":"pater Gāī et Agrippīnae","script":"Latin"},"notes":"father of Caligula and Agrippina the Younger","inheritability":"none","sources":[{"kind":"primary","reference":"Suetonius, Caligula 7–8; Tacitus, Annales 1.41"}]},
+  {"id":"Teutoburg-pietas","term":{"value":"pietās (in caesōrum sepultūram)","script":"Latin"},"notes":"dutiful piety; burying the Teutoburg war-dead","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 1.61–62"}]}
+],
+"roman_iuno": [
+  {"id":"matronage","term":{"value":"Iuno Regina","script":"Latin"},"notes":"Queen Juno, patroness of Roman matrons (mātrōnae)","inheritability":"none","sources":[{"kind":"primary","reference":"Livy 5.21–22; Ovid, Fasti 6.37"}]},
+  {"id":"childbirth","term":{"value":"Iuno Lucina","script":"Latin"},"notes":"bringer of light/birth, goddess of childbirth","inheritability":"none","sources":[{"kind":"primary","reference":"Varro, LL 5.69; Ovid, Fasti 2.449, 6.39"}]},
+  {"id":"mint-warning","term":{"value":"Iuno Monēta","script":"Latin"},"notes":"the Warner (monēre), at whose temple coin was struck","inheritability":"none","sources":[{"kind":"primary","reference":"Livy 7.28; Cicero, De Divinatione 1.45"}]}
+],
+"roman_iuppiter": [
+  {"id":"state-cult-supremacy","term":{"value":"Iuppiter Optimus Maximus","script":"Latin"},"notes":"Best and Greatest, supreme Capitoline state deity","inheritability":"none","sources":[{"kind":"primary","reference":"Livy 1.55; Cicero, De Natura Deorum 2.64"}]}
+],
+"roman_liber": [
+  {"id":"wine-and-fertility","term":{"value":"vīnum et fēcunditās (Līber Pater)","script":"Latin"},"notes":"wine and generative fertility, Liber's sphere","inheritability":"none","sources":[{"kind":"primary","reference":"Varro, LL 6.14; Ovid, Fasti 3.713–770; Augustine, Civ. Dei 7.21"}]}
+],
+"roman_mars": [
+  {"id":"fatherhood-of-Rome","term":{"value":"Mars Pater (Marspiter)","script":"Latin"},"notes":"Father Mars, paternal progenitor of Romulus and the Roman people","inheritability":"none","sources":[{"kind":"primary","reference":"Cato, De Agri Cultura 141; Ennius"}]},
+  {"id":"march-calendar","term":{"value":"Martius (mensis Martius)","script":"Latin"},"notes":"the month March, sacred to Mars, old year-opening","inheritability":"none","sources":[{"kind":"primary","reference":"Ovid, Fasti 3.73–98; Varro, LL 6.33"}]}
+],
+"roman_mercurius": [
+  {"id":"messenger","term":{"value":"nūntius deōrum","script":"Latin"},"notes":"messenger of the gods, divine herald","inheritability":"none","sources":[{"kind":"primary","reference":"Virgil, Aeneid 4.356; Horace, Odes 1.10"}]}
+],
+"roman_minerva": [
+  {"id":"medicine","term":{"value":"Minerva Medica","script":"Latin"},"notes":"Minerva the Healer, patroness of physicians/medicine","inheritability":"none","sources":[{"kind":"primary","reference":"Cicero, De Divinatione 2.123; CIL VI inscriptions"}]}
+],
+"roman_modius_fabidius": [
+  {"id":"Marsian-warrior-prowess","term":{"value":"virtūs bellica","script":"Latin"},"notes":"martial valor/prowess in war","inheritability":"none","sources":[{"kind":"primary","reference":"Dionysius Halic., Ant. Rom. 2.48"}]},
+  {"id":"royal-authority","term":{"value":"imperium","script":"Latin"},"notes":"legitimate command/sovereign power","inheritability":"none","sources":[{"kind":"primary","reference":"Dionysius Halic., Ant. Rom. 2.48"}]},
+  {"id":"foundation-of-Cures-Sabine","term":{"value":"conditor Curium","script":"Latin"},"notes":"founder of Cures, chief Sabine town","inheritability":"none","sources":[{"kind":"primary","reference":"Dionysius Halic., Ant. Rom. 2.48–49"}]},
+  {"id":"pre-Roman-Sabine-kingship","term":{"value":"rēx Sabīnōrum","script":"Latin"},"notes":"king of the Sabines","inheritability":"none","sources":[{"kind":"primary","reference":"Dionysius Halic., Ant. Rom. 2.48"}]}
+],
+"roman_neptunus": [
+  {"id":"freshwater-springs","term":{"value":"fontēs et aquae","script":"Latin"},"notes":"springs and (fresh) waters, original Italic domain","inheritability":"none","sources":[{"kind":"primary","reference":"Varro, LL 5.72; Festus s.v. Neptunalia"}]},
+  {"id":"sea-post-equation","term":{"value":"mare (Neptūnus marīnus)","script":"Latin"},"notes":"the sea, acquired via Poseidon equation","inheritability":"none","sources":[{"kind":"primary","reference":"Virgil, Aeneid 1.124–156; Ovid, Met. 1.275"}]}
+],
+"roman_remus": [
+  {"id":"foundling-twin","term":{"value":"geminus expositus","script":"Latin"},"notes":"exposed twin (geminus), suckled by the she-wolf","inheritability":"none","sources":[{"kind":"primary","reference":"Livy 1.4–7; Ovid, Fasti 2.383–422"}]}
+],
+"roman_tiberius": [
+  {"id":"second-Roman-emperor","term":{"value":"imperātor secundus (Caesar Augustus)","script":"Latin"},"notes":"second emperor, successor to Augustus","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 1.4–7; Suetonius, Tiberius 24"}]},
+  {"id":"Annales-1-6-Tacitus-canonical-protagonist","term":{"value":"persōna prīnceps Annālium","script":"Latin"},"notes":"central figure of Tacitus's Annales 1–6","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 1–6"}]},
+  {"id":"Capri-retirement-and-Sejanus-period","term":{"value":"sēcessus Capreēnsis","script":"Latin"},"notes":"Capri retirement; the Sejanus (Sēiānus) ascendancy","inheritability":"none","sources":[{"kind":"primary","reference":"Tacitus, Annales 4; Suetonius, Tiberius 40–65"}]}
+],
+"roman_volcanus": [
+  {"id":"metalworking-post-equation","term":{"value":"ars fabrīlis (metalla)","script":"Latin"},"notes":"the smith's craft/metalworking, via Hephaestus equation","inheritability":"none","sources":[{"kind":"primary","reference":"Virgil, Aeneid 8.370–453; Ovid, Fasti 5.725"}]}
+],
+"shabaka": [
+  {"id":"kingship-kushite-conferral","term":{"value":"Imn dj qore","script":"Meroitic / Egyptian (translit)","rom":"Amani di qore"},"notes":"Amun's conferral of Kushite kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Meroitic qore; Napatan enthronement"}]},
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt-bjtj","script":"Egyptian (translit)","rom":"redi nesut-bity"},"notes":"conferral of the Egyptian double-kingship","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson 95"}]},
+  {"id":"antiquarian-preservation","term":{"value":"swꜣḏ / smꜣwj","script":"Egyptian (translit)","rom":"suwadj / semawi"},"notes":"to make flourish/renew (an old text or monument)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb IV 264 (swꜣḏ); III 453 (smꜣwj \"renew\")"}]},
+  {"id":"kingship-kushite","term":{"value":"qore","script":"Meroitic","rom":"qore"},"notes":"king of Kush","inheritability":"none","sources":[{"kind":"secondary","reference":"Rilly, Meroitic language"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"25th-Dyn. titulary"}]},
+  {"id":"memphite-theology-preservation","term":{"value":"smꜣwj zẖꜣw","script":"Egyptian (translit)","rom":"semawi sesh"},"notes":"\"renewing the writing\" (Shabaka Stone colophon)","inheritability":"none","sources":[{"kind":"secondary","reference":"Shabaka Stone (BM EA 498) colophon; Wb III 453"}]}
+],
+"shango": [
+  {"id":"thunder-call","term":{"value":"àrá","script":"Yoruba","rom":"àrá"},"notes":"thunder, Shango's roaring voice","inheritability":"none","sources":[{"kind":"secondary","reference":"Britannica \"Shango\"; YorubaLibrary oríkì Ṣàngó"}]},
+  {"id":"lightning-strike","term":{"value":"mànàmáná / Èdùn Àrá","script":"Yoruba","rom":"mànàmáná, Èdùn Àrá"},"notes":"lightning; the thunderstone-celt it leaves","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Shango\"; YorubaLibrary"}]},
+  {"id":"fire-breathing","term":{"value":"iná (ẹnu tó ń tu iná)","script":"Yoruba","rom":"iná"},"notes":"fire; mouth that spews fire when he speaks","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Shango\" (oral tradition)"}]},
+  {"id":"kingship-yoruba-foundation","term":{"value":"Aláàfin (ìpilẹ̀ṣẹ̀)","script":"Yoruba","rom":"Aláàfin"},"notes":"Oyo king-title; third Alaafin, royal ancestor","inheritability":"none","sources":[{"kind":"secondary","reference":"Britannica \"Shango\"; Law (1977)"}]},
+  {"id":"thunder","term":{"value":"àrá","script":"Yoruba","rom":"àrá"},"notes":"thunder","inheritability":"none","sources":[{"kind":"primary","reference":"Abraham (1958); YorubaLibrary"}]},
+  {"id":"lightning","term":{"value":"mànàmáná","script":"Yoruba","rom":"mànàmáná"},"notes":"lightning","inheritability":"none","sources":[{"kind":"primary","reference":"Abraham (1958)"}]},
+  {"id":"kingship-yoruba","term":{"value":"Aláàfin (ọba)","script":"Yoruba","rom":"Aláàfin, ọba"},"notes":"king; the Oyo throne-title","inheritability":"none","sources":[{"kind":"primary","reference":"Law (1977)"}]},
+  {"id":"fire","term":{"value":"iná","script":"Yoruba","rom":"iná"},"notes":"fire","inheritability":"none","sources":[{"kind":"primary","reference":"Abraham (1958)"}]},
+  {"id":"justice","term":{"value":"ìdájọ́ (òdodo)","script":"Yoruba","rom":"ìdájọ́, òdodo"},"notes":"judgment; strikes liars and the unjust","inheritability":"none","sources":[{"kind":"secondary","reference":"Britannica \"Shango\"; WorldHistoryEdu"}]}
+],
+"shebitku": [
+  {"id":"kingship-kushite-conferral","term":{"value":"Imn dj qore","script":"Meroitic / Egyptian (translit)","rom":"Amani di qore"},"notes":"Amun's conferral of Kushite kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Meroitic qore; Napatan enthronement"}]},
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt-bjtj","script":"Egyptian (translit)","rom":"redi nesut-bity"},"notes":"conferral of the Egyptian double-kingship","inheritability":"none","sources":[{"kind":"secondary","reference":"Wilkinson 95; Karnak texts"}]},
+  {"id":"kingship-kushite","term":{"value":"qore","script":"Meroitic","rom":"qore"},"notes":"king of Kush","inheritability":"none","sources":[{"kind":"secondary","reference":"Rilly, Meroitic language"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"25th-Dyn. titulary"}]}
+],
+"shilluk_bwor": [
+  {"id":"eponymous-founder-of-Balanda-Boor-lineage","term":{"value":"kwaaro Boor","script":"Shilluk","rom":"kwaaro Boor"},"notes":"ancestor/founder of the Balanda Boor lineage","inheritability":"none","sources":[{"kind":"primary","reference":"Seligman (1932); Westermann (1912)"}]},
+  {"id":"Bahr-el-Ghazal-rear-guard","term":{"value":"jal-cien (lɔŋ)","script":"Shilluk","rom":"jal-cien"},"notes":"rear-guard man of the Bahr el Ghazal migration","inheritability":"none","sources":[{"kind":"primary","reference":"Westermann (1912)"}]}
+],
+"shilluk_dak": [
+  {"id":"second-Reth-of-Shilluk","term":{"value":"reth (Däägø)","script":"Shilluk","rom":"reth"},"notes":"the divine king; second reth of Shilluk","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard, *The Divine Kingship of the Shilluk* (1948); Westermann (1912)"}]},
+  {"id":"founding-successor-of-Shilluk-institutions","term":{"value":"reth wa Nyikang","script":"Shilluk","rom":"reth wa Nyikang"},"notes":"successor-king who founded core institutions","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard (1948); Lienhardt (1954)"}]},
+  {"id":"mischievous-trickster-of-the-migration","term":{"value":"Dak (rabø/jal-arac)","script":"Shilluk","rom":"Dak"},"notes":"trickster/clever-mischievous one of the migration","inheritability":"none","sources":[{"kind":"primary","reference":"Westermann (1912); Seligman (1932)"}]}
+],
+"shilluk_dhokoth": [
+  {"id":"consolidator-Reth-of-Shilluk","term":{"value":"reth (Dhøköödhø)","script":"Shilluk","rom":"reth"},"notes":"divine king who consolidated royal power","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard (1948); Mercer, \"Shilluk Trade and Politics\" (1971)"}]},
+  {"id":"Bahr-al-Scheluk-period-canoe-raids","term":{"value":"lɔŋ pi (yiey)","script":"Shilluk","rom":"lɔŋ pi"},"notes":"war-by-water; the river canoe-raids","inheritability":"none","sources":[{"kind":"primary","reference":"Mercer (1971); Seligman (1932)"}]},
+  {"id":"royal-authority-and-trade-monopoly-foundation","term":{"value":"reth (tumi pa-cam)","script":"Shilluk","rom":"reth"},"notes":"kingly authority and founding of the trade-monopoly","inheritability":"none","sources":[{"kind":"primary","reference":"Mercer (1971)"}]}
+],
+"shilluk_gilo": [
+  {"id":"eponymous-founder-of-Anuak-people","term":{"value":"kwaaro Anyuaa","script":"Shilluk","rom":"kwaaro Anyuaa"},"notes":"ancestor/founder of the Anuak people","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard, *The Political System of the Anuak* (1940)"}]},
+  {"id":"half-brother-of-Nyikang-fission-narrative","term":{"value":"omiero Nyikang (pɔɔg)","script":"Shilluk","rom":"omiero Nyikang"},"notes":"half-brother of Nyikang in the fission/split myth","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard (1940); Westermann (1912)"}]}
+],
+"shilluk_nyakaya": [
+  {"id":"crocodile-river-goddess-of-the-Nile-and-Sobat","term":{"value":"nyaŋ (Nyakaayø)","script":"Shilluk","rom":"nyaŋ"},"notes":"crocodile river-goddess of Nile and Sobat","inheritability":"none","sources":[{"kind":"primary","reference":"Seligman, *Pagan Tribes of the Nilotic Sudan* (1932); Westermann (1912)"}]},
+  {"id":"maternal-ancestor-of-the-Shilluk-Kingdom","term":{"value":"mama Nyikang (kwaaro)","script":"Shilluk","rom":"mama Nyikang"},"notes":"mother of Nyikang; ancestress of the kingdom","inheritability":"none","sources":[{"kind":"primary","reference":"Seligman (1932); Frazer, *The Golden Bough*"}]}
+],
+"shilluk_tugo": [
+  {"id":"founder-of-Fashoda-Pachodo-permanent-royal-residence","term":{"value":"Pachodo (Fashoda)","script":"Shilluk","rom":"Pachodo"},"notes":"founder of Pachodo/Fashoda, the royal capital","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard (1948); Seligman (1932)"}]},
+  {"id":"codifier-of-Reth-installation-ritual","term":{"value":"keny reth (yiey-ginø)","script":"Shilluk","rom":"keny reth"},"notes":"codifier of the king's installation/enthronement rite","inheritability":"none","sources":[{"kind":"primary","reference":"Evans-Pritchard (1948); Lienhardt (1954)"}]}
+],
+"slavic_dobrynya_nikitich": [
+  {"id":"second-bogatyr-of-Vladimir-court","term":{"value":"богатырь","script":"Russian","rom":"bogatyr'"},"notes":"epic champion, second of Vladimir's three chief bogatyri","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina cycle; Rybnikov collection"}]},
+  {"id":"dragon-slayer-of-Zmey-Gorynych","term":{"value":"ꙃмѣеборьць (Зміꙗ Горꙑнꙑча)","script":"Russian","rom":"zmeebortsy (Zmeya Gorynycha)"},"notes":"dragon-fighter; slayer of Zmey Gorynych","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina \"Dobrynya i Zmey\"; *zmьjь"}]},
+  {"id":"diplomatic-courtesy-bogatyr-archetype","term":{"value":"вѣжество / обходительный","script":"Russian","rom":"vezhestvo / obkhoditel'nyy"},"notes":"courtly good-manners; the \"courteous\" bogatyr type","inheritability":"none","sources":[{"kind":"secondary","reference":"Bylina epithet \"vezhlivyy\"; Propp, Russkiy geroicheskiy epos"}]},
+  {"id":"noble-origin-Riazan-boyar","term":{"value":"боꙗринъ (рязаньскъ)","script":"Russian","rom":"boyarin (ryazanskŭ)"},"notes":"boyar (high noble) of Riazan stock","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina genealogy; OCS болꙗринъ"}]},
+  {"id":"historical-Dobrynia-uncle-of-Vladimir-conflation","term":{"value":"уи (Добрꙑнꙗ)","script":"OCS","rom":"uy (Dobrynya)"},"notes":"\"uy\" = maternal uncle; historical Dobrynya, Vladimir's uncle","inheritability":"none","sources":[{"kind":"primary","reference":"Primary Chronicle s.a. 970, 980 (Dobrynya, Volodimer's uy)"}]}
+],
+"slavic_ilya_muromets": [
+  {"id":"foremost-bogatyr-of-Vladimir-court","term":{"value":"богатырь (старꙑи)","script":"Russian","rom":"bogatyr' (staryi)"},"notes":"foremost epic champion at Prince Vladimir's court","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina cycle; Rybnikov/Hilferding song collections"}]},
+  {"id":"peasant-hero-of-bylina-cycle","term":{"value":"крестьянскій сꙑнъ","script":"Russian","rom":"krest'yanskiy syn"},"notes":"\"peasant's son\" — his standing epithet in the byliny","inheritability":"none","sources":[{"kind":"primary","reference":"Kievan bylina cycle (Ilya \"krest'yanskiy syn\")"}]},
+  {"id":"thirty-three-years-paralysis-miraculous-healing-narrative","term":{"value":"исцѣленіе (тридцать три года)","script":"Russian","rom":"istselenie (tridtsat' tri goda)"},"notes":"miraculous healing after 33 years' sitting/paralysis","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina \"Istselenie Il'i Muromtsa\""}]},
+  {"id":"defeater-of-Solovei-the-Robber","term":{"value":"побѣдитель Соловья-разбойника","script":"Russian","rom":"pobeditel' Solov'ya-razboynika"},"notes":"vanquisher of Nightingale the Robber","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina \"Il'ya Muromets i Solovey-razboynik\""}]},
+  {"id":"defeater-of-Idolishche-the-Foul","term":{"value":"побѣдитель Идолища Поганаго","script":"Russian","rom":"pobeditel' Idolishcha Poganogo"},"notes":"vanquisher of Idolishche \"the Foul/heathen idol\"","inheritability":"none","sources":[{"kind":"primary","reference":"Bylina \"Il'ya Muromets i Idolishche\""}]},
+  {"id":"patron-saint-of-Russian-Border-Guards-and-Strategic-Rocket-Forces","term":{"value":"преподобьнъ Илія Печерьскꙑи","script":"Russian","rom":"prepodobnyy Iliya Pecherskiy"},"notes":"St Ilya of the Caves, his canonized relic-saint identity","inheritability":"none","sources":[{"kind":"primary","reference":"Kiev-Pechersk Lavra (relics of St Ilia Muromets); ROC veneration"}]},
+  {"id":"ranged-archery-shooting","name":"Bow-shooting prowess","term":{"value":"стрѣльба изъ лука","rom":"strel'ba iz luka"},"inheritability":"none"}
+],
+"slavic_mokosh": [
+  {"id":"earth-mother-and-moist-mother-earth-mat-syra-zemlya","term":{"value":"Мати Сыра Земля","script":"Russian","rom":"Mati Syra Zemlya"},"notes":"Mother Moist Earth; the personified earth-deity","inheritability":"none","sources":[{"kind":"secondary","reference":"Afanasyev, Poeticheskie vozzreniya 1865-69; Ivanov-Toporov"}]},
+  {"id":"fertility-and-female-domain","term":{"value":"рода / плодородие","script":"OCS","rom":"roda / plodorodie"},"notes":"fertility, generative female sphere","inheritability":"none","sources":[{"kind":"secondary","reference":"OCS родъ; Rybakov, Yazychestvo drevnikh slavyan"}]},
+  {"id":"spinning-and-weaving-and-fate","term":{"value":"прѩдиво / кѫдѣль","script":"OCS","rom":"pręndivo / kǫdělĭ"},"notes":"spinning/distaff-work tied to fate; Mokosh \"the spinner\"","inheritability":"none","sources":[{"kind":"secondary","reference":"Ivanov-Toporov (Mokosh ~ *mok-/spinning); ethnographic Friday-spinning taboo"}]},
+  {"id":"friday-day-association","term":{"value":"пѧтъкъ (Параскева-Пятница)","script":"OCS","rom":"pętŭkŭ (Paraskeva-Pyatnitsa)"},"notes":"Friday; her Christianized form St Paraskeva-Friday","inheritability":"none","sources":[{"kind":"primary","reference":"Uspensky, Filologicheskie razyskaniya (Mokosh→Pyatnitsa)"}]}
+],
+"slavic_perun": [
+  {"id":"thunder-and-lightning","term":{"value":"громъ и мълни","script":"OCS","rom":"gromŭ i mŭlni"},"notes":"thunder and lightning; \"perun\" itself = thunderbolt","inheritability":"none","sources":[{"kind":"secondary","reference":"Ivanov-Toporov 1974; Primary Chronicle (Perun oath)"}]},
+  {"id":"oak-tree-and-thunder-stone-iconography","term":{"value":"дѫбъ (Перунъ) / громовая стрела","script":"OCS","rom":"dǫbŭ (Perunŭ); gromovaya strela"},"notes":"oak sacred to Perun; \"thunder-arrow\" belemnite stone","inheritability":"none","sources":[{"kind":"secondary","reference":"Ivanov-Toporov, Issledovaniya v oblasti slav. drevnostey 1974"}]},
+  {"id":"warrior-druzhina-tutelary-deity","term":{"value":"дружина","script":"OCS","rom":"družina"},"notes":"princely warband under whose patron-god Perun was sworn","inheritability":"none","sources":[{"kind":"primary","reference":"Primary Chronicle (Igor's 945 oath by Perun, with druzhina)"}]},
+  {"id":"opponent-of-Veles","term":{"value":"основьнъ мѵѳъ (Перунъ–Велесъ)","script":"OCS","rom":"osnovĭnŭ mýthŭ (Perunŭ–Velesŭ)"},"notes":"the \"basic myth\": storm-god vs serpent-Veles combat","inheritability":"none","sources":[{"kind":"secondary","reference":"Ivanov & Toporov, basic-myth reconstruction 1974"}]}
+],
+"slavic_svarog": [
+  {"id":"sky-and-fire","term":{"value":"небо и огнь","script":"OCS","rom":"nebo i ognĭ"},"notes":"heaven and (celestial) fire; *Svarogŭ as sky-fire","inheritability":"none","sources":[{"kind":"primary","reference":"Malalas Chronicle Slavonic interpolation (Svarog≈Hephaestus); *Svarogъ"}]},
+  {"id":"heavenly-smith","term":{"value":"ковачь небесьнъ","script":"OCS","rom":"kovačĭ nebesĭnŭ"},"notes":"heavenly smith who forged tongs, taught metalwork","inheritability":"none","sources":[{"kind":"primary","reference":"Hypatian Codex interpolation s.a. 1114 (Svarog forges, gives smithcraft)"}]},
+  {"id":"father-of-Dazbog","term":{"value":"отьцъ Дажьбога","script":"OCS","rom":"otĭcŭ Dažĭboga"},"notes":"father of Dazhbog the sun (Dazhbog = \"Svarog's son\")","inheritability":"none","sources":[{"kind":"primary","reference":"Hypatian Codex s.a. 1114 (\"Дажьбогъ сынъ Свароговъ\")"}]},
+  {"id":"celestial-fire-and-hearth-fire-tutelary","term":{"value":"огнь Сварожичь","script":"OCS","rom":"ognĭ Svarožičĭ"},"notes":"fire \"the Svarog's-son,\" hearth/sacred fire","inheritability":"none","sources":[{"kind":"primary","reference":"Old Russian sermons (\"молятся огневи, зовуще его Сварожичемь\")"}]}
+],
+"slavic_veles": [
+  {"id":"cattle-and-livestock-protector","term":{"value":"скотий богъ","script":"OCS","rom":"skotijĭ bogŭ"},"notes":"cattle-god; attested epithet of Volos/Veles","inheritability":"none","sources":[{"kind":"primary","reference":"Primary Chronicle s.a. 907/971 (oath \"Volosŭ skotĭjĭ bogŭ\")"}]},
+  {"id":"chthonic-underworld","term":{"value":"навь / подземьнъ","script":"OCS","rom":"navĭ / podzemĭnŭ"},"notes":"realm of the dead; the underground/chthonic sphere","inheritability":"none","sources":[{"kind":"secondary","reference":"Ivanov-Toporov; OCS navь \"dead, underworld\""}]},
+  {"id":"magic-and-poetry-and-prophecy","term":{"value":"вълхвъ","script":"OCS","rom":"vŭlxvŭ"},"notes":"sorcerer-priest; bards as \"Veles's grandsons\" (Slovo o polku)","inheritability":"none","sources":[{"kind":"primary","reference":"Slovo o polku Igoreve (\"Велесовь внуче\"); Primary Chronicle (volkhvy)"}]},
+  {"id":"opponent-of-Perun","term":{"value":"ꙃмьи / змии","script":"OCS","rom":"zmĭjĭ / zmijĭ"},"notes":"serpent-adversary of the thunder-god","inheritability":"none","sources":[{"kind":"secondary","reference":"Ivanov-Toporov basic-myth; Proto-Slavic *zmьjь"}]},
+  {"id":"wealth-and-commerce","term":{"value":"богатьство","script":"OCS","rom":"bogatĭstvo"},"notes":"wealth/riches (root *bog-, \"share, fortune\")","inheritability":"none","sources":[{"kind":"secondary","reference":"OCS богатьство; Veles as cattle=movable-wealth god (Ivanov-Toporov)"}]}
+],
+"star_man": [
+  {"id":"celestial-luminance","term":{"value":"wičháȟpi","script":"Lakota","rom":"wičháȟpi"},"notes":"star; star-being shining in the heavens","inheritability":"none","sources":[{"kind":"secondary","reference":"New Lakota Dictionary (wičháȟpi \"star\"); Wikipedia List of Lakota deities"}]},
+  {"id":"sky-passage","term":{"value":"maȟpíya ektá yÁ","script":"Lakota","rom":"maȟpíya ektá yá"},"notes":"to go up into the sky/heavens","inheritability":"none","sources":[{"kind":"secondary","reference":"New Lakota Dictionary (maȟpíya \"sky, cloud, heaven\"; yÁ \"to go\")"}]},
+  {"id":"celestial","term":{"value":"wakȟáŋ","script":"Lakota","rom":"wakȟáŋ"},"notes":"sacred, holy, possessing mysterious sky-power","inheritability":"none","sources":[{"kind":"secondary","reference":"New Lakota Dictionary; Lakota religion (Wakȟáŋ Tȟáŋka; wakȟáŋ \"sacred/power\")"}]},
+  {"id":"sky-nation","term":{"value":"Wičháȟpi Oyáte","script":"Lakota","rom":"wičháȟpi oyáte"},"notes":"the Star Nation / Sky People","inheritability":"none","sources":[{"kind":"primary","reference":"World History Encyclopedia \"Falling Star\"; SDPB Lakota Star Knowledge (oyáte \"nation/people\")"}]}
+],
+"tagalog_bathala": [
+  {"id":"supreme-creator-and-ruler-of-the-universe","term":{"value":"Bathalang Maykapal / Lumikha","script":"Tagalog (Latin)","rom":"Bathalàng Maykapal"},"notes":"supreme creator-lord having power over all","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog ethnohistory (Plasencia 1589; \"Bathala na may kapangyarihan sa lahat,\" kapangyarihan \"power/authority\")"}]},
+  {"id":"thunder-lightning-flood-fire-earthquakes","term":{"value":"kidlat, kulog, lindol","script":"Tagalog (Latin)","rom":"kidlat, kulóg, lindól"},"notes":"lightning, thunder, earthquake as Bathala's manifestations","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog religion (Marsden 1784: earthquake a manifestation of Bathala Maykapal)"}]}
+],
+"tagalog_hanan": [
+  {"id":"morning-and-dawn","term":{"value":"bukang-liwayway","script":"Tagalog (Latin)","rom":"bukáng-liwaywáy"},"notes":"daybreak, the breaking of dawn","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog mythology (Hanan, diwata of dawn; liwayway \"dawn\")"}]},
+  {"id":"new-beginnings-and-life-transitions","term":{"value":"bagong simula","script":"Tagalog (Latin)","rom":"bagong simulâ"},"notes":"new beginnings and life-stage transitions","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog mythology (Hanan as goddess of new beginnings; simula \"beginning\")"}]}
+],
+"tagalog_mayari": [
+  {"id":"moon-and-night","term":{"value":"buwan / gabi","script":"Tagalog (Latin)","rom":"buwán / gabí"},"notes":"the moon and the night she governs","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog mythology (Mayari, diwata of the moon; buwan \"moon\")"}]},
+  {"id":"beauty-strength-and-combat","term":{"value":"ganda at lakas sa labanan","script":"Tagalog (Latin)","rom":"gandá at lakás sa labanan"},"notes":"beauty and strength in combat","inheritability":"partial","sources":[{"kind":"primary","reference":"Tagalog/Kapampangan myth (Mayari's one-eye duel with Apolaki; lakas \"strength,\" laban \"fight\")"}]}
+],
+"tagalog_tala": [
+  {"id":"stars-and-traditional-constellations","term":{"value":"bituin","script":"Tagalog (Latin)","rom":"bituin (tala)"},"notes":"stars and the named constellations","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog mythology (Tala, diwata of the stars; tala \"bright star,\" bituin \"star\")"}]},
+  {"id":"evening-and-morning-star","term":{"value":"Tala (Tanglaw-tala)","script":"Tagalog (Latin)","rom":"Tala"},"notes":"the planet Venus, morning and evening star","inheritability":"none","sources":[{"kind":"primary","reference":"Tagalog ethnoastronomy (Tala = Venus, cf. Sanskrit tārā via Indianization)"}]}
+],
+"taharqa": [
+  {"id":"kingship-kushite-conferral","term":{"value":"Imn dj qore","script":"Meroitic / Egyptian (translit)","rom":"Amani di qore"},"notes":"Amun's conferral of Kushite kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Kawa stelae; Meroitic qore"}]},
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt-bjtj","script":"Egyptian (translit)","rom":"redi nesut-bity"},"notes":"conferral of the Egyptian double-kingship","inheritability":"none","sources":[{"kind":"secondary","reference":"Kawa Stela V; Wilkinson 95"}]},
+  {"id":"monumental-construction","term":{"value":"qd mnw","script":"Egyptian (translit)","rom":"qed menu"},"notes":"building of monuments (Kawa, Karnak)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb V 72; II 70"}]},
+  {"id":"kingship-kushite","term":{"value":"qore","script":"Meroitic","rom":"qore"},"notes":"king of Kush","inheritability":"none","sources":[{"kind":"secondary","reference":"Rilly, Meroitic language"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"25th-Dyn. titulary"}]},
+  {"id":"monumental-building","term":{"value":"mnw","script":"Egyptian (translit)","rom":"menu"},"notes":"monument(s)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wb II 70"}]}
+],
+"tantamani": [
+  {"id":"kingship-kushite-conferral","term":{"value":"Imn dj qore","script":"Meroitic / Egyptian (translit)","rom":"Amani di qore"},"notes":"Amun's conferral of Kushite kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Dream Stela; Meroitic qore"}]},
+  {"id":"kingship-egyptian-conferral","term":{"value":"rdj nswt-bjtj","script":"Egyptian (translit)","rom":"redi nesut-bity"},"notes":"conferral of the Egyptian double-kingship","inheritability":"none","sources":[{"kind":"primary","reference":"Tantamani Dream Stela (Cairo JE 48863)"}]},
+  {"id":"kingship-kushite","term":{"value":"qore","script":"Meroitic","rom":"qore"},"notes":"king of Kush","inheritability":"none","sources":[{"kind":"secondary","reference":"Rilly, Meroitic language"}]},
+  {"id":"kingship-egyptian","term":{"value":"nswt-bjtj","script":"Egyptian (translit)","rom":"nesut-bity"},"notes":"King of Upper and Lower Egypt","inheritability":"none","sources":[{"kind":"primary","reference":"25th-Dyn. titulary"}]}
+],
+"topiltzin": [
+  {"id":"civilizing-arts-instruction","term":{"value":"toltēcayōtl","script":"Nahuatl","rom":"tōltēcāyōtl"},"notes":"artistry/craft-civilization taught to humanity","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.3 (Tula, Quetzalcoatl); Bk.10"}]},
+  {"id":"priesthood-toltec","term":{"value":"tlamacazqui (Tōllān)","script":"Nahuatl","rom":"tlamacazqui"},"notes":"priest, \"giver of offerings,\" of Tula","inheritability":"none","sources":[{"kind":"secondary","reference":"Sahagún, Florentine Codex Bk.3; Molina, Vocabulario s.v. \"tlamacazqui\""}]},
+  {"id":"self-sacrifice-rite","term":{"value":"nextlahualli / tlamacēhualiztli","script":"Nahuatl","rom":"nextlāhualli"},"notes":"autosacrifice, debt-payment by bloodletting/penance","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.2–3; Molina s.v. \"tlamaceua\""}]},
+  {"id":"wind-mastery","term":{"value":"ehēcatl","script":"Nahuatl","rom":"ehēcatl"},"notes":"wind, the road-sweeper aspect of Quetzalcoatl","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.1, Bk.7; Wired Humanities Dict. s.v. \"ehecatl\""}]},
+  {"id":"kingship-toltec","term":{"value":"tlàtoāni (Tōllān)","script":"Nahuatl","rom":"tlàtoāni"},"notes":"ruler/\"speaker,\" king of Tula","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.3; Molina s.v. \"tlatoani\""}]},
+  {"id":"priesthood","term":{"value":"tlamacazqui","script":"Nahuatl","rom":"tlamacazqui"},"notes":"priest, \"giver of offerings\"","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.2; Molina s.v. \"tlamacazqui\""}]},
+  {"id":"wind-quetzalcoatl","term":{"value":"Ehēcatl-Quetzalcōātl","script":"Nahuatl","rom":"Ehēcatl-Quetzalcōātl"},"notes":"Wind-Plumed-Serpent, the wind-god aspect","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.1; Wired Humanities Dict. s.v. \"ehecatl\""}]},
+  {"id":"morning-star","term":{"value":"Tlāhuizcalpantēuctli (Citlālpōl)","script":"Nahuatl","rom":"Tlāhuizcalpantēuctli"},"notes":"\"Lord of the dawn-house,\" Venus as morning star","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.7; Codex Chimalpopoca (Leyenda de los Soles)"}]},
+  {"id":"civilizing-arts","term":{"value":"toltēcayōtl","script":"Nahuatl","rom":"tōltēcāyōtl"},"notes":"the arts/crafts of civilized (Toltec) life","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.10"}]},
+  {"id":"self-sacrifice","term":{"value":"nextlahualli","script":"Nahuatl","rom":"nextlāhualli"},"notes":"autosacrificial debt-payment by bloodletting","inheritability":"none","sources":[{"kind":"primary","reference":"Sahagún, Florentine Codex Bk.2; Molina s.v. \"tlamaceua\""}]}
+],
+"uwaifiokun": [
+  {"id":"kingship-edo-usurper","term":{"value":"Oba (ne ọ rri aga vbe ọ má khẹ̀ rẹn)","script":"Edo","rom":"Oba"},"notes":"king who seized the throne illegitimately (usurper)","inheritability":"none","sources":[{"kind":"primary","reference":"Egharevba (1968)"}]}
+],
+"wabosso": [
+  {"id":"rabbit-form-shapeshifting","term":{"value":"waabooz (aanzinaago'idizo)","script":"Ojibwe","rom":"waabooz; aanzinaago'idizo"},"notes":"hare/rabbit — transforms into rabbit form","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (waabooz na; aanzinaago'idizo vai)"}]},
+  {"id":"wind-mastery","term":{"value":"noodin","script":"Ojibwe","rom":"noodin"},"notes":"wind (one of the wind-associated brothers)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (noodin vii); Johnston, *The Manitous*"}]},
+  {"id":"underworld-passage-mediation","term":{"value":"Jiibay-miikana","script":"Ojibwe","rom":"jiibay-miikana"},"notes":"the Path of Souls (mediates the soul-passage)","inheritability":"none","sources":[{"kind":"primary","reference":"zhaawanart.com \"Jiibay Miikana\"; Mishkiki.org teaching"}]},
+  {"id":"rabbit-form-and-fleet-flight","term":{"value":"waabooz (gizhiibatoo)","script":"Ojibwe","rom":"waabooz; gizhiibatoo"},"notes":"hare; runs fast (fleet flight)","inheritability":"partial","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (waabooz; gizhiibatoo \"runs fast\")"}]},
+  {"id":"inseparable-companionship-with-Nanabozho","term":{"value":"wiijiiwaagan","script":"Ojibwe","rom":"wiijiiwaagan"},"notes":"a companion (brother of Nanabozho)","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (wiijiiwaagan na)"}]},
+  {"id":"underworld-ruler-post-death","term":{"value":"jiibay-aki ogimaa","script":"Ojibwe","rom":"jiibay-aki; ogimaa"},"notes":"chief of the land of the dead (= Jiibayaabooz)","inheritability":"none","sources":[{"kind":"secondary","reference":"Wikipedia \"Jiibayaabooz\" (Chief of the Underworld); Ojibwe People's Dict. (jiibay, ogimaa)"}]},
+  {"id":"soul-guide-and-passage-warden","term":{"value":"jiibay-miikana ganawenjige","script":"Ojibwe","rom":"jiibay-miikana; ganawenjige"},"notes":"warden/keeper of the Path of Souls","inheritability":"none","sources":[{"kind":"primary","reference":"Ojibwe People's Dict. (ganawenjige \"s/he keeps/guards\"; jiibay-miikana per zhaawanart.com)"}]}
+],
+"wacalambe": [
+  {"id":"wind-mastery","term":{"value":"a-pëtoi","script":"Pemón","rom":"a-pëtoi (asetun)"},"notes":"wind; the element he commands","inheritability":"partial","sources":[{"kind":"primary","reference":"Armellada 1943; de Cora (Pemón Roraima brothers, \"whirlwind brother\")"}]},
+  {"id":"flood-survival","term":{"value":"tuna apuk","script":"Pemón","rom":"tuna apuk"},"notes":"survival of the great flood","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada 1943"}]},
+  {"id":"culture-hero","term":{"value":"Wacalambé","script":"Pemón","rom":"Wacalambé"},"notes":"culture-hero; the \"whirlwind brother\"","inheritability":"none","sources":[{"kind":"secondary","reference":"de Cora, Pemón Roraima myth; Koch-Grünberg 1916"}]},
+  {"id":"wind-and-storm-association-via-name","term":{"value":"Wacalambé","script":"Pemón","rom":"Wacalambé"},"notes":"his name marks the whirlwind/storm sphere","inheritability":"none","sources":[{"kind":"primary","reference":"de Cora gloss (whirlwind brother); Pemón tradition"}]},
+  {"id":"tepui-meteorological-presence","term":{"value":"tüpü","script":"Pemón","rom":"tüpü"},"notes":"tepui; the table-mountain weather he embodies","inheritability":"none","sources":[{"kind":"primary","reference":"Wiktionary etymology tüpü; de Cora Roraima myth"}]}
+],
+"wei": [
+  {"id":"celestial-luminance","term":{"value":"wei","script":"Pemón","rom":"wei"},"notes":"sun; daylight luminary","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg, Vom Roroima zum Orinoco; Cariban *weyu cognate"}]},
+  {"id":"transformation-power","term":{"value":"esaka'ma","script":"Pemón","rom":"esaka'ma"},"notes":"to change/transform oneself (reflexive change)","inheritability":"partial","sources":[{"kind":"primary","reference":"Armellada, Gramática y diccionario pemón 1943"}]},
+  {"id":"sun","term":{"value":"wei","script":"Pemón","rom":"wei"},"notes":"the sun","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916–28; Armellada 1943 (Cariban *weyu)"}]},
+  {"id":"celestial","term":{"value":"kak","script":"Pemón","rom":"kak (ka'/kapón)"},"notes":"sky/heaven; the celestial realm (cf. Kapón \"sky-people\")","inheritability":"none","sources":[{"kind":"primary","reference":"Armellada 1943; Thomas, Order Without Government 1982"}]}
+],
+"welsh_arianrhod": [
+  {"id":"mother-of-Lleu-and-Dylan","term":{"value":"mam (Lleu a Dylan)","script":"Welsh","rom":"mam"},"notes":"mother of Lleu and Dylan Eil Ton","inheritability":"none","sources":[{"kind":"secondary","reference":"Math fab Mathonwy (Fourth Branch); GPC s.v. mam"}]},
+  {"id":"stellar-toponym-Caer-Arianrhod-Corona-Borealis","term":{"value":"Caer Arianrhod","script":"Welsh","rom":"Caer Arianrhod"},"notes":"fortress/star-castle of Arianrhod (Corona Borealis)","inheritability":"none","sources":[{"kind":"secondary","reference":"Welsh stellar-toponymy; GPC s.v. caer"}]},
+  {"id":"three-tyngedau-cursing-mother","term":{"value":"tynged (tynghedau)","script":"Welsh","rom":"tynged, pl. tynghedau"},"notes":"fate-doom/taboo laid as curse (Welsh geis)","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; GPC s.v. tynged"}]}
+],
+"welsh_beli_mawr": [
+  {"id":"legendary-king-of-Britain","term":{"value":"brenin Ynys Prydain","script":"Welsh","rom":"brenin Ynys Prydain"},"notes":"legendary king of the Isle of Britain","inheritability":"none","sources":[{"kind":"secondary","reference":"Trioedd Ynys Prydein; Lludd a Llefelys; GPC s.v. brenin"}]},
+  {"id":"foundational-royal-ancestor-of-Welsh-lineages","term":{"value":"hynafiad brenhinol","script":"Welsh","rom":"hynafiad brenhinol"},"notes":"foundational royal ancestor of the Welsh dynasties","inheritability":"none","sources":[{"kind":"secondary","reference":"Welsh royal genealogies (Harleian); GPC s.v. hynafiad, brenhinol"}]}
+],
+"welsh_bendigeidfran": [
+  {"id":"king-of-britain-Branch-2","term":{"value":"brenin Ynys y Cedyrn","script":"Welsh","rom":"brenin Ynys y Cedyrn"},"notes":"crowned king of Britain (Isle of the Mighty)","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. brenin, ynys"}]},
+  {"id":"giant-stature","term":{"value":"cawr","script":"Welsh","rom":"cawr"},"notes":"giant; no house could contain him","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. cawr"}]},
+  {"id":"cauldron-of-rebirth-original-owner","term":{"value":"Pair Dadeni","script":"Welsh","rom":"pair dadeni"},"notes":"cauldron of rebirth; revives the dead (mute)","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. pair, dadeni"}]},
+  {"id":"bridge-of-the-body-proverb-origin","term":{"value":"pont (a fo pen, bid bont)","script":"Welsh","rom":"pont; \"a fo pen bid bont\""},"notes":"bridge; \"he who is chief, be a bridge\" proverb","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. pont, pen"}]},
+  {"id":"wonderful-head-assembly-figure","term":{"value":"Urddawl Ben","script":"Welsh","rom":"Urddawl Ben (Urdawl Ben)"},"notes":"the noble/wondrous (speaking) Head","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch (Ysbyddawd Urdawl Ben); GPC s.v. urddol, pen"}]},
+  {"id":"white-mount-burial-protector-of-Britain","term":{"value":"Gwynfryn (y Wen-ynys)","script":"Welsh","rom":"Gwynfryn"},"notes":"White Mount/Hill burial warding Britain from invasion","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; Trioedd Ynys Prydein (Three Fortunate Concealments); GPC s.v. gwyn, bryn"}]}
+],
+"welsh_branwen": [
+  {"id":"queen-of-Ireland-by-marriage","term":{"value":"brenhines Iwerddon","script":"Welsh","rom":"brenhines Iwerddon"},"notes":"queen of Ireland by marriage to Matholwch","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. brenhines"}]},
+  {"id":"starling-message-figure","term":{"value":"drudwen (cenadwri)","script":"Welsh","rom":"drudwen / cenadwri"},"notes":"starling bearing her trained message","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. drudwy/drudwen, cenadwri"}]},
+  {"id":"grief-death-at-Aber-Alaw","term":{"value":"galar (a thor-calon)","script":"Welsh","rom":"galar / torri calon"},"notes":"grief; death of a broken heart at Aber Alaw","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. galar, calon"}]},
+  {"id":"foundational-tragic-female-figure-of-Welsh-tradition","term":{"value":"morwyn / gwraig drallodus","script":"Welsh","rom":"gwraig drallodus"},"notes":"archetypal sorrowful woman of the tradition","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. trallod, gwraig"}]}
+],
+"welsh_cigfa": [
+  {"id":"wife-of-Pryderi","term":{"value":"gwraig Pryderi","script":"Welsh","rom":"gwraig Pryderi"},"notes":"wife of Pryderi","inheritability":"none","sources":[{"kind":"secondary","reference":"Third Branch; GPC s.v. gwraig"}]},
+  {"id":"Dyfed-enchantment-survivor-with-Manawydan","term":{"value":"goroeswraig yr hud","script":"Welsh","rom":"goroeswraig; hud"},"notes":"survivor of the Dyfed enchantment alongside Manawydan","inheritability":"none","sources":[{"kind":"secondary","reference":"Third Branch; GPC s.v. goroesi, hud"}]}
+],
+"welsh_efnisien": [
+  {"id":"half-brother-of-Branch-2-trio","term":{"value":"hanner-brawd (Plant Llŷr)","script":"Welsh","rom":"hanner-brawd"},"notes":"half-brother (by Penarddun) of the trio","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. hanner, brawd"}]},
+  {"id":"twin-of-Nisien-good-evil-dyad","term":{"value":"gefell (Nisien)","script":"Welsh","rom":"gefell"},"notes":"brother/twin of Nisien; strife-vs-peace dyad","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. gefell"}]},
+  {"id":"catastrophic-provoker-of-Welsh-Irish-war","term":{"value":"cynhennwr (terfysg)","script":"Welsh","rom":"cynhennwr / terfysg"},"notes":"strife-stirrer who provokes the Irish war","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. cynnen, terfysg"}]},
+  {"id":"killer-of-Gwern","term":{"value":"llofrudd (Gwern)","script":"Welsh","rom":"llofrudd"},"notes":"slayer who casts Gwern into the fire","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. llofrudd"}]},
+  {"id":"cauldron-of-rebirth-shatterer-self-sacrifice","term":{"value":"dryllio'r Pair (hunan-aberth)","script":"Welsh","rom":"dryllio'r pair; aberth"},"notes":"shatterer of the cauldron by self-sacrifice","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. dryllio, aberth, pair"}]}
+],
+"welsh_gwern": [
+  {"id":"Welsh-Irish-half-blood-boy-king","term":{"value":"brenin-faban (cymysgryw)","script":"Welsh","rom":"baban-frenin"},"notes":"infant boy-king of mixed Welsh-Irish blood","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. baban, brenin"}]},
+  {"id":"killed-by-Efnisien-thrown-into-fire","term":{"value":"taflu i'r tân","script":"Welsh","rom":"taflu i'r tân"},"notes":"cast into the fire by Efnisien","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. taflu, tân"}]},
+  {"id":"foundational-political-resolution-attempt","term":{"value":"cymod (heddwch)","script":"Welsh","rom":"cymod / heddwch"},"notes":"reconciliation-settlement of the two realms","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. cymod, heddwch"}]}
+],
+"welsh_lleu": [
+  {"id":"kingship-of-Ardudwy","term":{"value":"arglwydd Ardudwy","script":"Welsh","rom":"arglwydd Ardudwy"},"notes":"lord of Ardudwy (and Gwynedd after Math)","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; GPC s.v. arglwydd"}]},
+  {"id":"Welsh-reflex-of-pan-Celtic-Lugus-deity","term":{"value":"Lleu (Llaw Gyffes)","script":"Welsh","rom":"Lleu Llaw Gyffes"},"notes":"skilful-handed deity; Welsh reflex of *Lugus","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; Proto-Celtic *Lugus; GPC s.v. llaw, cyffes"}]}
+],
+"welsh_lludd_llaw_eraint": [
+  {"id":"king-of-Britain-after-Beli-Mawr","term":{"value":"brenin Prydain","script":"Welsh","rom":"brenin Prydain"},"notes":"king of Britain succeeding Beli Mawr","inheritability":"none","sources":[{"kind":"secondary","reference":"Cyfranc Lludd a Llefelys; GPC s.v. brenin"}]},
+  {"id":"three-plagues-resolver-via-Llefelys","term":{"value":"datrys y tair gormes","script":"Welsh","rom":"tair gormes; datrys"},"notes":"resolver of the three oppressions/plagues","inheritability":"none","sources":[{"kind":"secondary","reference":"Cyfranc Lludd a Llefelys; GPC s.v. gormes, datrys"}]},
+  {"id":"eponymous-founder-of-London-Caer-Lludd","term":{"value":"Caer Lludd","script":"Welsh","rom":"Caer Lludd"},"notes":"Lludd's stronghold; eponymous founder of London","inheritability":"none","sources":[{"kind":"secondary","reference":"Cyfranc Lludd a Llefelys; Historia Regum Britanniae; GPC s.v. caer"}]},
+  {"id":"silver-hand-attribute","term":{"value":"llaw eraint (arian)","script":"Welsh","rom":"llaw eraint"},"notes":"silver hand (epithet; cf. Irish Núadu Airgetlám)","inheritability":"none","sources":[{"kind":"secondary","reference":"Welsh genealogies; GPC s.v. llaw, ariannaid; cf. Núadu Airgetlám"}]}
+],
+"welsh_llyr": [
+  {"id":"father-of-Branch-2-trio","term":{"value":"tad (Plant Llŷr)","script":"Welsh","rom":"tad"},"notes":"father of the children of Llŷr","inheritability":"none","sources":[{"kind":"secondary","reference":"Branwen (Second Branch); GPC s.v. tad"}]},
+  {"id":"king-of-Britain-pre-Bendigeidfran","term":{"value":"brenin Prydain","script":"Welsh","rom":"brenin Prydain"},"notes":"king of Britain before Bendigeidfran","inheritability":"none","sources":[{"kind":"secondary","reference":"Welsh royal genealogies; GPC s.v. brenin"}]}
+],
+"welsh_manawydan": [
+  {"id":"eponymous-hero-of-Third-Branch","term":{"value":"arwr (Trydedd Gainc)","script":"Welsh","rom":"arwr y Drydedd Gainc"},"notes":"eponymous hero of the Third Branch","inheritability":"none","sources":[{"kind":"secondary","reference":"Manawydan uab Llyr (Third Branch); GPC s.v. arwr, cainc"}]},
+  {"id":"second-husband-of-Rhiannon","term":{"value":"gŵr (ail) Rhiannon","script":"Welsh","rom":"gŵr Rhiannon"},"notes":"Rhiannon's second husband","inheritability":"none","sources":[{"kind":"secondary","reference":"Third Branch; GPC s.v. gŵr"}]},
+  {"id":"foundational-craft-master","term":{"value":"crefftwr (crydd, cyfrwywr, tarianwr)","script":"Welsh","rom":"crefftwr"},"notes":"master craftsman: saddler, shield-maker, shoemaker","inheritability":"none","sources":[{"kind":"secondary","reference":"Third Branch; GPC s.v. crefftwr, crydd"}]},
+  {"id":"Dyfed-enchantment-resolver","term":{"value":"datryswr yr hud (ar Ddyfed)","script":"Welsh","rom":"hud; datrys"},"notes":"undoer of the enchantment (hud) laid on Dyfed","inheritability":"none","sources":[{"kind":"secondary","reference":"Third Branch; GPC s.v. hud, datrys"}]}
+],
+"welsh_math": [
+  {"id":"king-of-gwynedd","term":{"value":"arglwydd Gwynedd","script":"Welsh","rom":"arglwydd Gwynedd"},"notes":"lord/king of Gwynedd","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; GPC s.v. arglwydd"}]},
+  {"id":"eponymous-hero-of-Fourth-Branch","term":{"value":"arwr (Pedwaredd Gainc)","script":"Welsh","rom":"arwr y Bedwaredd Gainc"},"notes":"eponymous hero of the Fourth Branch","inheritability":"none","sources":[{"kind":"secondary","reference":"Math uab Mathonwy; GPC s.v. arwr, cainc"}]},
+  {"id":"magician-king","term":{"value":"dewin (hudol)","script":"Welsh","rom":"dewin / hud"},"notes":"magician-king wielding hud (magic)","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; GPC s.v. dewin, hud"}]},
+  {"id":"virgin-maiden-foot-holder-geis","term":{"value":"morwyn (troed-ddaliwr) tynged","script":"Welsh","rom":"morwyn; tynged"},"notes":"fate-bound need to rest feet in a virgin's lap","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; GPC s.v. morwyn, troed, tynged"}]},
+  {"id":"Blodeuwedd-conjuror-with-Gwydion","term":{"value":"swyn (Blodeuwedd o flodau)","script":"Welsh","rom":"swyn / hud"},"notes":"conjuring a woman from flowers by enchantment","inheritability":"none","sources":[{"kind":"secondary","reference":"Fourth Branch; GPC s.v. swyn, blodeuyn"}]}
+],
+"welsh_penarddun": [
+  {"id":"daughter-of-Beli-Mawr","term":{"value":"merch Beli Mawr","script":"Welsh","rom":"merch Beli Mawr"},"notes":"daughter of Beli Mawr","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. merch"}]},
+  {"id":"mother-of-Branch-2-trio","term":{"value":"mam (Plant Llŷr)","script":"Welsh","rom":"mam"},"notes":"mother of the Branch-2 trio (Brân, Branwen, Manawydan)","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. mam"}]},
+  {"id":"mother-of-Efnisien-and-Nisien","term":{"value":"mam (Efnisien a Nisien)","script":"Welsh","rom":"mam"},"notes":"mother of the half-brothers Efnisien and Nisien","inheritability":"none","sources":[{"kind":"secondary","reference":"Second Branch; GPC s.v. mam"}]}
+],
+"welsh_pryderi": [
+  {"id":"kingship-of-Dyfed-and-Seven-Cantrefi","term":{"value":"arglwydd Seith Cantref Dyfed","script":"Welsh","rom":"arglwydd saith cantref Dyfed"},"notes":"lord of the seven cantrefs of Dyfed","inheritability":"none","sources":[{"kind":"secondary","reference":"First & Third Branches; GPC s.v. arglwydd, cantref"}]},
+  {"id":"horse-and-foal-association-with-mother","term":{"value":"ebol (a chaseg)","script":"Welsh","rom":"ebol / caseg"},"notes":"foal (to the mare-mother); equine birth-link","inheritability":"none","sources":[{"kind":"secondary","reference":"Pwyll, First Branch; GPC s.v. ebol, caseg"}]}
+],
+"welsh_pwyll": [
+  {"id":"kingship-of-Dyfed","term":{"value":"pendefig Dyfed","script":"Welsh","rom":"pendefig Dyfed"},"notes":"prince/chief-lord of Dyfed","inheritability":"none","sources":[{"kind":"secondary","reference":"Pwyll Pendefig Dyfed (First Branch); GPC s.v. pendefig"}]}
+],
+"welsh_rhiannon": [
+  {"id":"horse-goddess-Brittonic","term":{"value":"rhiain-farch (Rigantona)","script":"Welsh","rom":"rhiain / march"},"notes":"horse-lady; Brittonic equine sovereignty-goddess","inheritability":"none","sources":[{"kind":"secondary","reference":"Pwyll, First Branch; GPC s.v. rhiain, march; *Rīgantonā"}]},
+  {"id":"sovereignty-and-Otherworld-passage","term":{"value":"arglwyddiaeth (ac Annwfn)","script":"Welsh","rom":"arglwyddiaeth / Annwfn"},"notes":"sovereignty-lordship and Otherworld passage","inheritability":"none","sources":[{"kind":"secondary","reference":"First & Third Branches; GPC s.v. arglwyddiaeth, Annwfn"}]}
+],
+"zigue": [
+  {"id":"parasitic-burrowing-association","term":{"value":"chiga","script":"Pemón","rom":"chiga/zigué (chigoe)"},"notes":"the chigoe/jigger flea, after which he is named","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Andrade 1928 (Jiguê) — etymon = chigoe flea"}]},
+  {"id":"flood-survival","term":{"value":"tuna apuk","script":"Pemón","rom":"tuna apuk"},"notes":"survival of the great flood","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Armellada 1943"}]},
+  {"id":"culture-hero","term":{"value":"Zigué","script":"Pemón","rom":"Zigué (Jiguê)"},"notes":"culture-hero, one of the founding brothers","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Andrade 1928"}]},
+  {"id":"parasitic-insect-association-via-name-etymology","term":{"value":"chiga","script":"Pemón","rom":"chiga"},"notes":"chigoe/jigger flea (the name's literal sense)","inheritability":"none","sources":[{"kind":"secondary","reference":"Koch-Grünberg 1916; Cariban entomonym"}]},
+  {"id":"household-and-marriage","term":{"value":"wï","script":"Pemón","rom":"wï (no'pï)"},"notes":"wife/marriage; the brother whose marriage is attested","inheritability":"none","sources":[{"kind":"secondary","reference":"Armellada 1943 (no'pï \"wife\"); Koch-Grünberg 1916"}]}
+]
+};
+/* POWERS_TERMS_END */
+
 // Build the faculties a figure governs from its domains[] (sphere → faculty).
 const deriveFacultiesFromDomains = (person) => {
   const out = [];
@@ -29715,6 +31478,15 @@ const deriveAndMergeFaculties = (peopleMap, powersMap = POWERS_BY_FIGURE) => {
     }
     for (const f of deriveFacultiesFromDomains(person)) {
       if (!have.has(f.id)) have.set(f.id, f);
+    }
+    // Generated native-term enrichment: fills terms onto faculties/spheres without
+    // ever clobbering a curated POWERS_BY_FIGURE term.
+    const termsMap = (typeof POWERS_TERMS !== 'undefined' && POWERS_TERMS) || {};
+    for (const t of (termsMap[person.id] || [])) {
+      if (!t || !t.id) continue;
+      const cur = have.get(t.id) || {};
+      if (cur.term && cur.term.value) continue;
+      have.set(t.id, { ...cur, ...t });
     }
     const merged = [...have.values()];
     if (merged.length) person.faculties = merged;
