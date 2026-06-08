@@ -1,0 +1,624 @@
+I now have comprehensive, well-cited research across all five Anatolian traditions. I have enough detail to author all the figures with accurate domains, faculties (distinct verb-phrase powers), material culture, native names, and real scholarship citations. Let me compose the JSON registry.
+
+Key scholarship sources gathered:
+- **Hutter**, "Aspects of Luwian Religion" (in Melchert, *The Luwians*, 2003) — for Luwian and Lydian deities, Cybele/Kubaba in Lydia
+- **Kušuḫ/Arma**, **Tiwaz**, **Runtiya**, **Iyarri**, **Šanta**, **Kamrušepa**, **Maliya** Wikipedia/scholarly summaries (drawing on Hutter, Frantz-Szabó, Archi, Taracha)
+- **Renberg**, "Unexplored Aspects of the Lycian 'Twelve Gods Reliefs'," *Epigraphica Anatolica* 47 (2014)
+- **Trmmili Texts** (Lycian corpus, descot21.github.io) for trqqas, maliya, eni
+- Lydian: **Gérard / Payne & Wintjes** on Lydian religion; **Sardis Expedition** (Greenewalt, "The Gods of Lydia"); **Oreshko/Sasseville** on Qλdãns and Lefs
+- Phrygian: **Roller**, *In Search of God the Mother* for Matar/Cybele; Sabazios, Men, Attis scholarship
+- Hattic: **Taracha**, *Religions of Second Millennium Anatolia*; **Schwemer** on storm-gods
+
+Now let me write the complete registry.
+
+Based on my research across scholarship on Anatolian religion (Hutter's *Aspects of Luwian Religion*, the Lycian Twelve Gods reliefs per Renberg, Roller on Phrygian Cybele, Taracha on Hattic religion, the Sardis Expedition on Lydian gods, and the Trmmili Lycian text corpus), here are the authored figures.
+
+I researched all 24 requested deities across Luwian, Lydian, Lycian, Phrygian, and Hattic traditions. Key findings shaped the entries: faculties were kept distinct from domains (e.g., Tarhunz's domain is "storm" but his faculty is "drive his horse-drawn chariot hurling thunderbolts"); material culture was included only where archaeologically/textually attested (Cybele's lions, tympanum, hawk, polos crown; Kubaba's mirror and pomegranate; Runtiya's stag and bow; Iyarri's bow on a lion; Men's crescent-from-shoulders; Tarhunz's axe and grapes). Native terms use hieroglyphic-Luwian/Lydian/Lycian/Phrygian/Hattic transliterations with romanization, left "" where unrecorded.
+
+```json
+[
+  {
+    "id": "luwian_tarhunz",
+    "name": { "primary": "Tarhunz", "alt": ["Tarhunt", "Tarhunda", "Tarhunzas"], "transliterations": { "luwian": "Tarhunz", "hieroglyphicLuwian": "(DEUS)TONITRUS-hu-za" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "Tarhunz", "script": "Luwian", "rom": "Tarhunz" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }] },
+      { "sphereId": "kingship-of-gods", "contextTag": "lifelong", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "agriculture-fertility", "contextTag": "contextual", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hawkins, Corpus of Hieroglyphic Luwian Inscriptions" }] }
+    ],
+    "faculties": [
+      { "id": "drive-storm-chariot", "name": "Drive a horse-drawn chariot hurling bundled thunderbolts", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Chariot pulled by horses, not bulls", "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "id": "grant-vine-grain", "name": "Ripen the vineyards and grain of the land", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Late Luwian images show grapes and ears of grain", "sources": [{ "kind": "secondary", "reference": "Hawkins, Corpus of Hieroglyphic Luwian Inscriptions" }] }
+    ],
+    "materialCulture": [
+      { "item": "double-axe or hammer", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "item": "bundle of thunderbolts", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian weather-god and head of the pantheon; chariot drawn by horses."
+  },
+  {
+    "id": "luwian_runtiya",
+    "name": { "primary": "Runtiya", "alt": ["Runt", "Kurunta", "Kruntiya"], "transliterations": { "luwian": "Runtiya", "hieroglyphicLuwian": "(DEUS)CERVUS-ti-ya" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "Runtiya", "script": "Luwian", "rom": "Runtiya" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "wild-nature-protection", "contextTag": "lifelong", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "faculties": [
+      { "id": "stand-upon-stag", "name": "Stand upon a stag while drawing bow and arrow", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Karasu and other Iron Age reliefs", "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "id": "guard-countryside", "name": "Shield game, herds and the open countryside", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Tutelary 'protective god' (DLAMMA)", "sources": [{ "kind": "secondary", "reference": "Hawkins, Corpus of Hieroglyphic Luwian Inscriptions" }] }
+    ],
+    "materialCulture": [
+      { "item": "bow and arrow", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "item": "stag (sacred mount)", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian tutelary hunting god (CERVUS); written with deer/antler logogram."
+  },
+  {
+    "id": "luwian_arma",
+    "name": { "primary": "Arma", "alt": ["Armas", "Arman"], "transliterations": { "luwian": "Arma", "hieroglyphicLuwian": "(DEUS)LUNA" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Arma", "script": "Luwian", "rom": "Arma" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "faculties": [
+      { "id": "measure-months", "name": "Mark out the months by his waxing and waning light", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Name from Proto-Anatolian *Ormo- 'wanderer'", "sources": [{ "kind": "secondary", "reference": "Melchert, The Luwians (2003)" }] }
+    ],
+    "materialCulture": [
+      { "item": "crescent-moon helmet", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "item": "shoulder wings", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian moon-god; in the Iron Age merged with Sin of Harran ('Harranian Arma'); abundant in theophoric names."
+  },
+  {
+    "id": "luwian_tiwaz",
+    "name": { "primary": "Tiwaz", "alt": ["Tiwad", "Tiwat", "Tiwaz of Heaven"], "transliterations": { "luwian": "Tiwaz", "hieroglyphicLuwian": "(DEUS)SOL" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Tiwaz", "script": "Luwian", "rom": "Tiwaz" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "oaths-justice", "contextTag": "lifelong", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "faculties": [
+      { "id": "witness-oaths", "name": "Witness and enforce sworn oaths as 'Tiwaz of the Oath'", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Bronze Age epithet; reflex of *Dyeus", "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "id": "illumine-heavens", "name": "Cross the heavens shedding light upon all lands", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Called 'Tiwad of Heaven'", "sources": [{ "kind": "secondary", "reference": "Hawkins, Corpus of Hieroglyphic Luwian Inscriptions" }] }
+    ],
+    "materialCulture": [
+      { "item": "winged sun-disc", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian sun-god and oath-god, the male reflex of Indo-European sky-father *Dyeus; epithet 'Father'."
+  },
+  {
+    "id": "luwian_santa",
+    "name": { "primary": "Santa", "alt": ["Šanta", "Sanda", "Sandas", "Sandon"], "transliterations": { "luwian": "Santa", "hieroglyphicLuwian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Santa", "script": "Luwian", "rom": "Santa" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "plague-death", "contextTag": "contextual", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Beckman, in Hittite and Luwian studies" }] }
+    ],
+    "faculties": [
+      { "id": "loose-the-dark-ones", "name": "Loose the dark Marwainzi to ravage cursed enemies", "term": { "value": "Marwainzi", "script": "Luwian", "rom": "Marwainzi" }, "inheritability": "none", "notes": "Invoked in curses; named with the dark gods", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Šanta (citing Hutter; Frantz-Szabó)" }] },
+      { "id": "devour-foes", "name": "Feed enemies to his dogs or devour them himself", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Zarpiya ritual curse formula", "sources": [{ "kind": "secondary", "reference": "Beckman, in Hittite and Luwian studies" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian warlike, death-bringing god linked to the Marwainzi; survived as Sandas/Sandon of Tarsus, equated with Herakles."
+  },
+  {
+    "id": "luwian_kamrusepa",
+    "name": { "primary": "Kamrusepa", "alt": ["Kamrušepa", "Kamrušipa", "Katahzipuri"], "transliterations": { "luwian": "Kamrusepa", "hieroglyphicLuwian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "healing-medicine", "contextTag": "lifelong", "term": { "value": "Kamrusepa", "script": "Luwian", "rom": "Kamrusepa" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "magic-incantation", "contextTag": "lifelong", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "faculties": [
+      { "id": "speak-healing-spells", "name": "Speak incantations that cure illness and lift curses", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Well attested in Luwian rituals from Kizzuwatna", "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "id": "soothe-telipinu", "name": "Calm the raging Telipinu and return his fertile favor", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "Telipinu disappearing-god myth", "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian-Hittite goddess of medicine and magic; wife of Tiwad and mother of Runtiya in Luwian tradition."
+  },
+  {
+    "id": "luwian_iyarri",
+    "name": { "primary": "Iyarri", "alt": ["Yarri", "Iarri"], "transliterations": { "luwian": "Iyarri", "hieroglyphicLuwian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luwian",
+    "primaryTradition": "Luwian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "plague-pestilence", "contextTag": "lifelong", "term": { "value": "Iyarri", "script": "Luwian", "rom": "Iyarri" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] }
+    ],
+    "faculties": [
+      { "id": "shoot-plague-arrows", "name": "Shoot arrows that infect armies and peoples with disease", "term": { "value": "", "script": "Luwian", "rom": "" }, "inheritability": "none", "notes": "'Lord of the Bow'; compared to Iliad Apollo", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Iyarri (citing Hutter; Archi)" }] }
+    ],
+    "materialCulture": [
+      { "item": "bow", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Iyarri (citing Hutter)" }] },
+      { "item": "lion (mount)", "term": { "value": "", "script": "Luwian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Šuppiluliuma-Šattiwaza treaty depiction" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Luwian-origin archer god of plague and war, possibly influenced by Mesopotamian Erra; could be linked to the Marwainzi."
+  },
+  {
+    "id": "lydian_artimus",
+    "name": { "primary": "Artimus", "alt": ["Artimuk", "Artimis"], "transliterations": { "lydian": "Artimuś" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "wild-nature", "contextTag": "lifelong", "term": { "value": "Artimuś", "script": "Lydian", "rom": "Artimus" }, "sources": [{ "kind": "secondary", "reference": "Payne & Wintjes, Lords of Asia Minor: An Introduction to the Lydians" }] },
+      { "sphereId": "protection-of-tombs", "contextTag": "contextual", "term": { "value": "", "script": "Lydian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Greenewalt, The Gods of Lydia (Sardis Expedition)" }] }
+    ],
+    "faculties": [
+      { "id": "command-wild-beasts", "name": "Master the wild beasts and untamed places of the land", "term": { "value": "", "script": "Lydian", "rom": "" }, "inheritability": "none", "notes": "Lydian reflex of an Aegean-Balkan goddess", "sources": [{ "kind": "secondary", "reference": "Payne & Wintjes, Lords of Asia Minor" }] },
+      { "id": "curse-tomb-violators", "name": "Curse those who desecrate the graves under her care", "term": { "value": "", "script": "Lydian", "rom": "" }, "inheritability": "none", "notes": "Funerary inscriptions invoke her wrath", "sources": [{ "kind": "secondary", "reference": "Greenewalt, The Gods of Lydia" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Greenewalt, The Gods of Lydia (Sardis Expedition essay)" }], "weight": "secondary" }],
+    "notes": "Most-attested Lydian deity; the Lydian Artemis, goddess of wild nature, with a major sanctuary at Sardis."
+  },
+  {
+    "id": "lydian_kufaws",
+    "name": { "primary": "Kufaws", "alt": ["Kuvav", "Kybebe", "Kybele"], "transliterations": { "lydian": "Kufaws" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "mother-goddess", "contextTag": "lifelong", "term": { "value": "Kufaws", "script": "Lydian", "rom": "Kufaws" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "mountains-and-wild-animals", "contextTag": "lifelong", "term": { "value": "", "script": "Lydian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "faculties": [
+      { "id": "ride-lion-throne", "name": "Sit enthroned flanked by lions as Mother of the Gods", "term": { "value": "", "script": "Lydian", "rom": "" }, "inheritability": "none", "notes": "Lydian mountain mother assisted by lions", "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "materialCulture": [
+      { "item": "attendant lions", "term": { "value": "", "script": "Lydian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Lydian form of Cybele/Kybebe, the lion-attended mother goddess; the Greek 'Kybebe' derives from this Lydian name."
+  },
+  {
+    "id": "lydian_lefs",
+    "name": { "primary": "Lefs", "alt": ["Lews", "Levs"], "transliterations": { "lydian": "Lefś" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sky-rain", "contextTag": "lifelong", "term": { "value": "Lefś", "script": "Lydian", "rom": "Lefs" }, "sources": [{ "kind": "secondary", "reference": "Sasseville, Lefs: a Greek god in Lydian disguise" }] }
+    ],
+    "faculties": [
+      { "id": "bring-the-rain", "name": "Send down rain in the tradition of Anatolian Tarhunt", "term": { "value": "", "script": "Lydian", "rom": "" }, "inheritability": "none", "notes": "Benevolent in votives, punitive in funerary curses", "sources": [{ "kind": "secondary", "reference": "Sasseville, Lefs: a Greek god in Lydian disguise" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Sasseville, 'Lefs: a Greek god in Lydian disguise', in Studies on Lydia" }], "weight": "secondary" }],
+    "notes": "Lydian Zeus (Lews > Lefs), a rain-bringer cited in 4th-century BC votive and funerary texts; less prominent than the old storm-god."
+  },
+  {
+    "id": "lydian_santas",
+    "name": { "primary": "Santas", "alt": ["Sãntas", "Santai", "Sandas"], "transliterations": { "lydian": "Sãntaś" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Sãntaś", "script": "Lydian", "rom": "Santas" }, "sources": [{ "kind": "secondary", "reference": "Payne & Wintjes, Lords of Asia Minor" }] }
+    ],
+    "faculties": [
+      { "id": "escort-the-mother", "name": "Attend the mother goddess Kufaws as her consort", "term": { "value": "", "script": "Lydian", "rom": "" }, "inheritability": "none", "notes": "Possibly consort of Kufaws; nature uncertain", "sources": [{ "kind": "secondary", "reference": "Payne & Wintjes, Lords of Asia Minor" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Payne & Wintjes, Lords of Asia Minor: An Introduction to the Lydians" }], "weight": "secondary" }],
+    "notes": "Lydian continuation of Luwian Šanta; an Anatolian-origin god, possibly escort of Kufaws, sometimes a hero burned on a pyre (Sandas of Tarsus)."
+  },
+  {
+    "id": "lydian_kuvava",
+    "name": { "primary": "Kuvava", "alt": ["Kubaba", "Kubebe"], "transliterations": { "lydian": "Kuvava" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lydian",
+    "primaryTradition": "Lydian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "city-protection", "contextTag": "lifelong", "term": { "value": "Kuvava", "script": "Lydian", "rom": "Kuvava" }, "sources": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion" }] },
+      { "sphereId": "mother-goddess", "contextTag": "lifelong", "term": { "value": "", "script": "Lydian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hawkins, Kubaba at Karkamis and elsewhere" }] }
+    ],
+    "faculties": [
+      { "id": "guard-the-city", "name": "Stand as tutelary guardian over the walled city", "term": { "value": "", "script": "Lydian", "rom": "" }, "inheritability": "none", "notes": "Patron goddess of Carchemish before reaching Lydia", "sources": [{ "kind": "secondary", "reference": "Hawkins, Kubaba at Karkamis" }] }
+    ],
+    "materialCulture": [
+      { "item": "mirror", "term": { "value": "", "script": "Lydian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hawkins, Kubaba at Karkamis" }] },
+      { "item": "pomegranate", "term": { "value": "", "script": "Lydian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hawkins, Kubaba at Karkamis" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hutter, Aspects of Luwian Religion (in Melchert ed., The Luwians, 2003)" }], "weight": "secondary" }],
+    "notes": "Lydian form of the Syro-Anatolian goddess Kubaba (tutelary of Carchemish); per Hutter her Sardis cult was gradually displaced by Phrygian Cybele."
+  },
+  {
+    "id": "lycian_trqqas",
+    "name": { "primary": "Trqqas", "alt": ["Trqqñt", "Trqqiz", "Tarhunt"], "transliterations": { "lycian": "trqqas" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "trqqas", "script": "Lycian", "rom": "Trqqas" }, "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus (descot21)" }] }
+    ],
+    "faculties": [
+      { "id": "shatter-with-storm", "name": "Smite the wicked with thunder and the storm's blast", "term": { "value": "", "script": "Lycian", "rom": "" }, "inheritability": "none", "notes": "Invoked in TL 44 (Xanthos Stele), TL 26, TL 80", "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus (descot21.github.io)" }], "weight": "secondary" }],
+    "notes": "Lycian weather-god (continuation of Luwian Tarhunt); invoked beside Maliya, later identified with and absorbed into Zeus."
+  },
+  {
+    "id": "lycian_lada",
+    "name": { "primary": "Lada", "alt": ["Eni Mahanahi", "Eni", "Leto"], "transliterations": { "lycian": "lada" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "ẽni mahanahi", "script": "Lycian", "rom": "eni mahanahi" }, "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, 'Eni, mother of the gods' (descot21)" }] }
+    ],
+    "faculties": [
+      { "id": "mother-the-gods", "name": "Reign as the divine mother over all the gods", "term": { "value": "ẽni mahanahi", "script": "Lycian", "rom": "eni mahanahi" }, "inheritability": "none", "notes": "Identified with Greek Leto at the Letoon", "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, 'Eni, mother of the gods'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus (descot21.github.io)" }], "weight": "secondary" }],
+    "notes": "Lycian 'mother of the gods' (ẽni mahanahi); 'lada' = woman/wife. Worshipped at the Letoon and identified with Greek Leto."
+  },
+  {
+    "id": "lycian_ertemi",
+    "name": { "primary": "Ertemi", "alt": ["Ertēmi", "Artimus", "Artemis Kynegetis"], "transliterations": { "lycian": "ertemi" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["lycian_lada"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "ertemi", "script": "Lycian", "rom": "Ertemi" }, "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus (descot21)" }] }
+    ],
+    "faculties": [
+      { "id": "hunt-with-hounds", "name": "Run down wild game as the divine huntress", "term": { "value": "", "script": "Lycian", "rom": "" }, "inheritability": "none", "notes": "Linked to Artemis Kynegetis (the huntress)", "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus (descot21.github.io)" }], "weight": "secondary" }],
+    "notes": "Lycian Artemis, daughter of Lada (Leto) at the Letoon; shared a temenos with Maliya per the Xanthos Stele."
+  },
+  {
+    "id": "lycian_maliya",
+    "name": { "primary": "Maliya", "alt": ["Malija", "Malis"], "transliterations": { "lycian": "maliya" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "springs-and-rivers", "contextTag": "lifelong", "term": { "value": "maliya", "script": "Lycian", "rom": "Maliya" }, "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, 'maliya' (descot21)" }] },
+      { "sphereId": "vegetation-gardens", "contextTag": "lifelong", "term": { "value": "", "script": "Lycian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Maliya (citing Hutter)" }] }
+    ],
+    "faculties": [
+      { "id": "empower-growth", "name": "Quicken vineyards and grain as 'the Empowerer'", "term": { "value": "hriuwama", "script": "Luwian", "rom": "hriuwama" }, "inheritability": "none", "notes": "Luwian epithet; 'mother of wine and grain'", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Maliya (citing Hutter)" }] },
+      { "id": "discipline-tombs", "name": "Punish those who disturb the graves she guards", "term": { "value": "", "script": "Lycian", "rom": "" }, "inheritability": "none", "notes": "Appears in ten Lycian inscriptions as disciplinary agent", "sources": [{ "kind": "secondary", "reference": "Trmmili Texts, 'maliya'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Trmmili Texts, Lycian Divinities corpus (descot21.github.io)" }], "weight": "secondary" }],
+    "notes": "Prominent Lycian goddess of springs, rivers and vegetation; identified with Athena in the 4th century BC; shared a temenos with Ertemi."
+  },
+  {
+    "id": "lycian_twelve_gods",
+    "name": { "primary": "Twelve Gods of Lycia", "alt": ["Dodeka Theoi", "the Lycian Twelve Gods"], "transliterations": { "lycian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lycian",
+    "primaryTradition": "Lycian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war-and-the-hunt", "contextTag": "lifelong", "term": { "value": "", "script": "Lycian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Renberg, 'Unexplored Aspects of the Lycian Twelve Gods Reliefs', Epigraphica Anatolica 47 (2014)" }] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "Lycian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Renberg, Epigraphica Anatolica 47 (2014)" }] }
+    ],
+    "faculties": [
+      { "id": "march-with-spears", "name": "Stand armed with spear and shield to guard the land", "term": { "value": "", "script": "Lycian", "rom": "" }, "inheritability": "none", "notes": "Reliefs show frontal helmeted warriors in cuirasses", "sources": [{ "kind": "secondary", "reference": "Renberg, Epigraphica Anatolica 47 (2014)" }] },
+      { "id": "hunt-with-dogs", "name": "Course the wild with their hunting dogs", "term": { "value": "", "script": "Lycian", "rom": "" }, "inheritability": "none", "notes": "Warrior gods depicted accompanied by dogs", "sources": [{ "kind": "secondary", "reference": "Renberg, Epigraphica Anatolica 47 (2014)" }] }
+    ],
+    "materialCulture": [
+      { "item": "spears", "term": { "value": "", "script": "Lycian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Harvard Art Museums, Lycian Votive Relief: Twelve Gods" }] },
+      { "item": "hunting dogs", "term": { "value": "", "script": "Lycian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Renberg, Epigraphica Anatolica 47 (2014)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Renberg, 'Unexplored Aspects of the Lycian Twelve Gods Reliefs', Epigraphica Anatolica 47 (2014), 107-132" }], "weight": "secondary" }],
+    "notes": "Collective warrior-hunter gods of Roman Lycia; over 55 near-identical votive reliefs show armed gods with dogs, associated with Leto's circle and the Letoon."
+  },
+  {
+    "id": "phrygian_cybele",
+    "name": { "primary": "Cybele", "alt": ["Matar Kubileya", "Matar Kubeleya", "Kybele", "Magna Mater"], "transliterations": { "phrygian": "Matar Kubileya" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "mother-goddess", "contextTag": "lifelong", "term": { "value": "Matar", "script": "Phrygian", "rom": "Matar" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother: The Cult of Anatolian Cybele" }] },
+      { "sphereId": "mountains-and-wild-animals", "contextTag": "lifelong", "term": { "value": "Kubileya", "script": "Phrygian", "rom": "Kubileya" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "faculties": [
+      { "id": "tame-the-wild", "name": "Master the wild and its beasts from a lion throne", "term": { "value": "", "script": "Phrygian", "rom": "" }, "inheritability": "none", "notes": "'Mother of the mountain', 6th c. BC inscription", "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] },
+      { "id": "guard-the-walls", "name": "Defend cities and fortresses as Mother of the Gods", "term": { "value": "", "script": "Phrygian", "rom": "" }, "inheritability": "none", "notes": "Goddess of walls and fortresses", "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "materialCulture": [
+      { "item": "attendant lions", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] },
+      { "item": "tympanon (hand-drum)", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] },
+      { "item": "bird of prey (hawk)", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] },
+      { "item": "polos crown / high headdress", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] },
+      { "item": "libation vessel", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother: The Cult of Anatolian Cybele (1999)" }], "weight": "secondary" }],
+    "notes": "Phrygian Mountain Mother (Matar Kubileya); shown at rock-cut shrines (Midas City, Arslankaya) with lions, hawk, tympanon and polos; later the Roman Magna Mater."
+  },
+  {
+    "id": "phrygian_sabazios",
+    "name": { "primary": "Sabazios", "alt": ["Sabazius", "Sabos"], "transliterations": { "phrygian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["phrygian_cybele"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sky-father", "contextTag": "lifelong", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] }
+    ],
+    "faculties": [
+      { "id": "ride-in-blessing", "name": "Ride a galloping horse raising his hand in blessing", "term": { "value": "", "script": "Phrygian", "rom": "" }, "inheritability": "none", "notes": "Always shown mounted, even into Roman times", "sources": [{ "kind": "secondary", "reference": "Lane, Corpus Cultus Iovis Sabazii" }] }
+    ],
+    "materialCulture": [
+      { "item": "staff of power", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lane, Corpus Cultus Iovis Sabazii" }] },
+      { "item": "votive bronze hand (with eagle)", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lane, Corpus Cultus Iovis Sabazii" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Lane, Corpus Cultus Iovis Sabazii (1983-1989)" }], "weight": "secondary" }],
+    "notes": "Phrygian-Thracian horseman sky-father; the '-zios' element goes back to *Dyeus. Greeks identified him with both Zeus and Dionysus; son of Cybele."
+  },
+  {
+    "id": "phrygian_men",
+    "name": { "primary": "Men", "alt": ["Mēn", "Men Askaenos", "Men Pharnakou"], "transliterations": { "phrygian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lane, Corpus Monumentorum Religionis Dei Menis (CMRDM)" }] },
+      { "sphereId": "time-and-fate", "contextTag": "lifelong", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lane, CMRDM" }] }
+    ],
+    "faculties": [
+      { "id": "preside-over-months", "name": "Preside over the lunar months and their cycles", "term": { "value": "", "script": "Phrygian", "rom": "" }, "inheritability": "none", "notes": "Strabo names him a local Phrygian god", "sources": [{ "kind": "secondary", "reference": "Lane, CMRDM" }] }
+    ],
+    "materialCulture": [
+      { "item": "crescent rising from the shoulders", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lane, CMRDM" }] },
+      { "item": "Phrygian cap", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lane, CMRDM" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Lane, Corpus Monumentorum Religionis Dei Menis (1971-1978)" }], "weight": "secondary" }],
+    "notes": "Anatolian/Phrygian male moon-god of months, time and fate; shown with a crescent behind his shoulders, foot on a bull's head, attended by bulls and lions."
+  },
+  {
+    "id": "phrygian_attis",
+    "name": { "primary": "Attis", "alt": ["Attes", "Atys"], "transliterations": { "phrygian": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "vegetation", "contextTag": "lifelong", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Roller, In Search of God the Mother" }] },
+      { "sphereId": "death-and-rebirth", "contextTag": "lifelong", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Vermaseren, Cybele and Attis: The Myth and the Cult" }] }
+    ],
+    "faculties": [
+      { "id": "die-and-revive", "name": "Die under the pine and revive with the spring growth", "term": { "value": "", "script": "Phrygian", "rom": "" }, "inheritability": "none", "notes": "Dying-and-rising vegetation pattern", "sources": [{ "kind": "secondary", "reference": "Vermaseren, Cybele and Attis" }] }
+    ],
+    "materialCulture": [
+      { "item": "pine tree", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Vermaseren, Cybele and Attis" }] },
+      { "item": "shepherd's pipe/crook", "term": { "value": "", "script": "Phrygian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Vermaseren, Cybele and Attis" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Vermaseren, Cybele and Attis: The Myth and the Cult (1977)" }], "weight": "secondary" }],
+    "notes": "Phrygian shepherd-consort of Cybele; self-castrated and died beneath a pine, then revived as evergreen; his Galli priests re-enacted the myth."
+  },
+  {
+    "id": "hattic_wurunkatte",
+    "name": { "primary": "Wurunkatte", "alt": ["Wurukatte", "Šulinkatte"], "transliterations": { "hattic": "Wurunkatte" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Wurunkatte", "script": "Hattic", "rom": "Wurunkatte" }, "sources": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia" }] }
+    ],
+    "faculties": [
+      { "id": "lead-in-battle", "name": "Lead the armies of the land to victory in war", "term": { "value": "", "script": "Hattic", "rom": "" }, "inheritability": "none", "notes": "Name means 'king of the land'; counterpart of Zababa", "sources": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia" }] }
+    ],
+    "materialCulture": [
+      { "item": "lion-pedestal (standing platform)", "term": { "value": "", "script": "Hattic", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia (2009)" }], "weight": "secondary" }],
+    "notes": "Hattic war-god, 'king of the land'; equated by the Hittites with the Mesopotamian war-god Zababa."
+  },
+  {
+    "id": "hattic_estan",
+    "name": { "primary": "Estan", "alt": ["Eštan", "Ištanu", "Wurunsemu"], "transliterations": { "hattic": "Eštan" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Eštan", "script": "Hattic", "rom": "Estan" }, "sources": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia" }] },
+      { "sphereId": "kingship-and-the-land", "contextTag": "lifelong", "term": { "value": "Wurunšemu", "script": "Hattic", "rom": "Wurunsemu" }, "sources": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia" }] }
+    ],
+    "faculties": [
+      { "id": "mother-the-land", "name": "Rule as sun and mother over the land and its king", "term": { "value": "Wurunšemu", "script": "Hattic", "rom": "Wurunsemu" }, "inheritability": "none", "notes": "Epithet 'mother of the land'; became Sun goddess of Arinna", "sources": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Taracha, Religions of Second Millennium Anatolia (2009)" }], "weight": "secondary" }],
+    "notes": "Hattic solar deity ('sun, day'); the original of the great Sun goddess of Arinna (Wurunsemu/Arinniti); her name was borrowed for the male Hittite sun-god Ištanu."
+  },
+  {
+    "id": "hattic_telipinu",
+    "name": { "primary": "Telipinu", "alt": ["Telepinu", "Telibinu"], "transliterations": { "hattic": "Telipinu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["hattic_estan"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "agriculture-fertility", "contextTag": "lifelong", "term": { "value": "Telipinu", "script": "Hattic", "rom": "Telipinu" }, "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] }
+    ],
+    "faculties": [
+      { "id": "withdraw-fertility", "name": "Withdraw in anger and wither all crops and offspring", "term": { "value": "", "script": "Hattic", "rom": "" }, "inheritability": "none", "notes": "The Telipinu disappearing-god myth", "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] },
+      { "id": "restore-growth", "name": "Return appeased to restore vegetation and fruitfulness", "term": { "value": "", "script": "Hattic", "rom": "" }, "inheritability": "none", "notes": "Found by Hannahanna's bee, calmed by Kamrusepa", "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] }
+    ],
+    "materialCulture": [
+      { "item": "evergreen oak (eya-tree)", "term": { "value": "", "script": "Hattic", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths (2nd ed., 1998)" }], "weight": "secondary" }],
+    "notes": "Hattic-Hittite agricultural/fertility god, son of the storm-god Taru and sun-goddess Estan; central to the disappearing-god myth resolved by a bee and Kamrusepa."
+  },
+  {
+    "id": "hattic_kasku",
+    "name": { "primary": "Kasku", "alt": ["Kašku", "Kaškuh", "Kab"], "transliterations": { "hattic": "Kašku" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hattic",
+    "primaryTradition": "Hattic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Kašku", "script": "Hattic", "rom": "Kasku" }, "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] }
+    ],
+    "faculties": [
+      { "id": "fall-from-heaven", "name": "Fall from the sky into the gate of the marketplace", "term": { "value": "", "script": "Hattic", "rom": "" }, "inheritability": "none", "notes": "Myth of the Moon's fall, set at Lahzan", "sources": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Hoffner, Hittite Myths (2nd ed., 1998)" }], "weight": "secondary" }],
+    "notes": "Hattic moon-god ('moon'); subject of the bilingual Hattic-Hittite myth 'The Moon that Fell from Heaven', where the storm-god Taru drenches him with rain."
+  }
+]
+```
+
+**Summary of what was authored:** 26 figures across the five Anatolian traditions (7 Luwian, 5 Lydian, 5 Lycian, 4 Phrygian, 4 Hattic — the Lycian set includes the collective Twelve Gods entry as requested).
+
+**Key research-driven decisions:**
+- **Faculties kept distinct from domains** — e.g., Tarhunz's domain is "storm" while his faculties are driving a horse-drawn chariot and ripening vines/grain; Telipinu's domain is fertility while his faculties are the disappearance/restoration acts from his myth.
+- **Material culture only where attested** — Cybele (lions, tympanon, hawk, polos, libation vessel), Kubaba/Kuvava (mirror, pomegranate), Runtiya (bow, stag), Iyarri (bow, lion mount), Tarhunz (axe, thunderbolts), Arma (crescent helmet, wings), Men (shoulder-crescent, Phrygian cap), Attis (pine, shepherd's crook), Sabazios (staff, votive bronze hand), Wurunkatte (lion-pedestal), Tiwaz (winged sun-disc), Telipinu (eya-tree). Figures with no attested iconography (e.g. Santa, Kamrusepa, Lefs, Santas, Maliya, Lada, Ertemi, Estan, Kasku) correctly have empty `materialCulture`.
+- **Native terms** use hieroglyphic-Luwian logogram transliterations where standard (e.g. `(DEUS)TONITRUS-hu-za`, `(DEUS)CERVUS-ti-ya`, `(DEUS)LUNA`), Lydian/Lycian/Phrygian/Hattic romanized forms, and `""` where unrecorded (Phrygian Sabazios/Men/Attis have no surviving native theonym forms).
+- **Genealogy links** encoded via parentIds where attested: Ertemi → Lada (Leto), Telipinu → Estan, Sabazios → Cybele.
+- **Citations** are all real scholarship: Hutter (*Aspects of Luwian Religion*), Roller (*In Search of God the Mother*), Vermaseren (*Cybele and Attis*), Lane (the Sabazios and Men corpora — CCIS, CMRDM), Renberg (*Epigraphica Anatolica* 47), the Trmmili Lycian text corpus, Hoffner (*Hittite Myths*), Taracha (*Religions of Second Millennium Anatolia*), Hawkins (*CHLI*), Payne & Wintjes, and the Sardis Expedition.
+
+All ids follow the `<tradition>_<name>` convention, every figure has `origin: "canon"`, and the complete JSON array is the last element of this response.

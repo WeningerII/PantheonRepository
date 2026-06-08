@@ -43,6 +43,26 @@ function sources() {
   return fs.readdirSync(TASKS).filter((n) => n.endsWith('.output')).sort()
     .map((n) => { try { return { name: n, text: lastAssistantText(path.join(TASKS, n)) }; } catch { return { name: n, text: '' }; } });
 }
+// Some authoring agents emit materialCulture entries with a non-standard shape
+// (e.g. { item: "double-axe or hammer", term, sources } — no id/name).
+// buildItemRegistry keys items by id and renders mc.name, so such entries would
+// be silently dropped from the registry and render blank in Detail. Normalize in
+// place: copy the first name-bearing alias to mc.name and synthesize a stable,
+// figure-scoped id so the item is kept. No-op for well-formed entries (which
+// already carry an id), so it never perturbs already-committed output.
+function normalizeMaterialCulture(f) {
+  const arr = f && f.materialCulture;
+  if (!Array.isArray(arr)) return;
+  for (const mc of arr) {
+    if (!mc || typeof mc !== 'object' || mc.id) continue;
+    const name = mc.name || mc.item || mc.title || mc.object || mc.artifact;
+    if (typeof name !== 'string' || !name.trim()) continue;
+    mc.name = name.trim();
+    for (const k of ['item', 'title', 'object', 'artifact']) delete mc[k];
+    const slug = mc.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48) || 'item';
+    mc.id = `${f.id}-${slug}`;
+  }
+}
 function extractFigures(text) {
   const out = [];
   const tryParse = (s) => { try { return JSON.parse(s); } catch { return null; } };
@@ -75,6 +95,7 @@ for (const { text } of sources()) {
     if (!f.type || !VALID.has(f.type)) f.type = 'deity';
     if (existing.has(f.id)) { stats.exist++; continue; }
     if (all.has(f.id)) { stats.dups++; continue; }
+    normalizeMaterialCulture(f);
     all.set(f.id, f);
   }
 }

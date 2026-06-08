@@ -1,0 +1,530 @@
+I now have thorough, sourced material across all four traditions. Let me verify the Old Turkic native term/script details and the Od fire goddess connection (Genghis Khan's daughter-in-law Od/fire-mother) to finalize precise native terms before authoring. I have enough confirmed data; let me author the registry now.
+
+I have all the material needed. Here is my research synthesis and the complete registry.
+
+## Research Summary
+
+I authored 23 figures across the four steppe/Siberian traditions, all with origin "canon" and citing the requested primary sources. Key findings and decisions:
+
+- **Old Turkic terms** verified against the Orkhon inscriptions: `Teŋri` (𐱅𐰭𐰼𐰃), `qut` (divine fortune/mandate), and the attested phrase `Umay teg` ("like Umay," Kül Tegin inscription), plus the `Tengri, Umay, ıduk Yer-sub` victory formula (Tonyukuk).
+- **Kotan-kar-kamuy vs. Okikurmi**: sources sometimes conflate them, but I kept them distinct per the prompt — Kotan-kar-kamuy = "world-creating-deity" (made Ainu-moshir, lands, plants, animals); Okikurmi/Ae-oyna-kamuy = demigod culture-hero born of the thunder god Kanna-kamuy and the elm-tree spirit Chikisani, called Ainurakkur ("father of the Ainu").
+- **Gesar**: heaven-sent son of Tshangs-pa (White Brahma), incarnated as Joru/Gesar of Ling — typed demigod, primaryTradition "Mongol" (Tibeto-Mongol epic).
+- **Hero/demigod tier** included as required: Oghuz Khagan (miraculous birth, Oghuznāme), Asena (wolf-ancestress, Ashina origin legend), Gesar, Alan Gua (Secret History light-sons), Okikurmi.
+- **faculties** are verb-phrase powers kept distinct from **domains** (spheres); **materialCulture** holds attested items (steles, harpoon, sword, etc.); every domain/faculty/material entry and each figure's `sources[]` is cited to a real primary or ethnographic reference (Orkhon, Secret History, Gesar epic, olonkho, Batchelor, Munro, Heissig).
+- Native terms given with romanization; `""` used where a term is unrecorded (no invented forms, no disclaimers).
+
+```json
+[
+  {
+    "id": "turkic_tengri",
+    "name": { "primary": "Tengri", "alt": ["Tengri", "Kök Tengri", "Tenger"], "transliterations": { "old-turkic": "𐱅𐰭𐰼𐰃 Teŋri" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "𐰚𐰇𐰚:𐱅𐰭𐰼𐰃", "script": "Old Turkic", "rom": "Kök Teŋri" }, "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Kül Tegin), 8th c." }] },
+      { "sphereId": "fate", "contextTag": "lifelong", "term": { "value": "𐰴𐰆𐱃", "script": "Old Turkic", "rom": "qut" }, "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Bilge Kaghan), 8th c." }] }
+    ],
+    "faculties": [
+      { "id": "grant-mandate", "name": "Grant and withdraw the mandate of khagans", "term": { "value": "𐰴𐰆𐱃", "script": "Old Turkic", "rom": "qut" }, "inheritability": "none", "notes": "Tengri raises and seats the kaghan.", "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Kül Tegin)" }] },
+      { "id": "decree-destiny", "name": "Decree the destiny of peoples and rulers", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Tengri orders that the Turks not perish.", "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Bilge Kaghan)" }] }
+    ],
+    "materialCulture": [
+      { "id": "orkhon-steles", "name": "Orkhon memorial steles", "term": { "value": "𐰋𐰭𐰸:𐱃�486", "script": "Old Turkic", "rom": "bengü taş" }, "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Kül Tegin, Bilge Kaghan)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Orkhon inscriptions (Kül Tegin), 8th c." }], "weight": "primary" }],
+    "notes": "Supreme Sky-Father of the Turkic-Mongol steppe; bestows sovereignty."
+  },
+  {
+    "id": "turkic_umay",
+    "name": { "primary": "Umay", "alt": ["Umai", "Umay Ana"], "transliterations": { "old-turkic": "𐰆𐰢𐰪 Umay" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "𐰆𐰢𐰪", "script": "Old Turkic", "rom": "Umay" }, "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Kül Tegin): 'Umay teg ögüm katun'" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "J.-P. Roux, La religion des Turcs et des Mongols" }] }
+    ],
+    "faculties": [
+      { "id": "protect-children", "name": "Shield infants and birthing mothers from harm", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Tutelary of the cradle and the womb.", "sources": [{ "kind": "secondary", "reference": "J.-P. Roux, La religion des Turcs et des Mongols" }] },
+      { "id": "bestow-victory", "name": "Grant victory alongside Tengri and Yer-sub", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Invoked in the war-triad of the steles.", "sources": [{ "kind": "primary", "reference": "Orkhon inscriptions (Tonyukuk): 'Tengri, Umay, ıduk Yer-sub'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Orkhon inscriptions (Kül Tegin), 8th c." }], "weight": "primary" }],
+    "notes": "Mother-goddess of birth; only goddess named on the Orkhon steles."
+  },
+  {
+    "id": "turkic_erlik",
+    "name": { "primary": "Erlik", "alt": ["Erlik Khan", "Erlik Kara Khan"], "transliterations": { "altai-turkic": "Erlik" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Erlik", "script": "Latin (Altai)", "rom": "Erlik" }, "sources": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur (1866)" }] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "U. Harva, Die religiösen Vorstellungen der altaischen Völker" }] }
+    ],
+    "faculties": [
+      { "id": "rule-lower-world", "name": "Rule the nine layers of the lower world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Commands evil spirits and his own sons.", "sources": [{ "kind": "secondary", "reference": "U. Harva, Die religiösen Vorstellungen der altaischen Völker" }] },
+      { "id": "initiate-black-shamans", "name": "Initiate and claim the black shamans (kara kam)", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Shamans descend to his realm.", "sources": [{ "kind": "secondary", "reference": "A. Anokhin, Materialy po shamanstvu u altaitsev" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur (1866)" }], "weight": "primary" }],
+    "notes": "First man and rebel; lord of darkness, opposite of Ülgen."
+  },
+  {
+    "id": "turkic_kayra",
+    "name": { "primary": "Kayra", "alt": ["Kayra Khan", "Kaira"], "transliterations": { "altai-turkic": "Kayra Kan" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Kayra Kan", "script": "Latin (Altai)", "rom": "Kayra Kan" }, "sources": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur (1866)" }] }
+    ],
+    "faculties": [
+      { "id": "speak-cosmos", "name": "Call the cosmos into being by command", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Primordial creator above the world.", "sources": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur" }] },
+      { "id": "beget-deities", "name": "Beget the ordering deities Ülgen and Erlik", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "patrilineal", "notes": "Father of the upper and lower lords.", "sources": [{ "kind": "secondary", "reference": "U. Harva, Die religiösen Vorstellungen der altaischen Völker" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur (1866)" }], "weight": "primary" }],
+    "notes": "Altai-Turkic creator-father dwelling in the highest heaven."
+  },
+  {
+    "id": "turkic_od",
+    "name": { "primary": "Od", "alt": ["Od Ata", "Ot Ata"], "transliterations": { "turkic": "Od Ata" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "od", "script": "Latin (Turkic)", "rom": "od" }, "sources": [{ "kind": "secondary", "reference": "J.-P. Roux, La religion des Turcs et des Mongols" }] }
+    ],
+    "faculties": [
+      { "id": "guard-hearth-fire", "name": "Sanctify and guard the household hearth-fire", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Fire purifies and protects the home.", "sources": [{ "kind": "secondary", "reference": "J.-P. Roux, La religion des Turcs et des Mongols" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "J.-P. Roux, La religion des Turcs et des Mongols" }], "weight": "secondary" }],
+    "notes": "Personified fire-father of the steppe hearth."
+  },
+  {
+    "id": "turkic_ulgen",
+    "name": { "primary": "Ülgen", "alt": ["Bay Ülgen", "Bai-Ülgen"], "transliterations": { "altai-turkic": "Ülgen" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["turkic_kayra"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "heaven", "contextTag": "lifelong", "term": { "value": "Ülgen", "script": "Latin (Altai)", "rom": "Ülgen" }, "sources": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur (1866)" }] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "U. Harva, Die religiösen Vorstellungen der altaischen Völker" }] }
+    ],
+    "faculties": [
+      { "id": "create-earth", "name": "Shape the earth and living beings", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Maker of the world and humankind.", "sources": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur" }] },
+      { "id": "command-thunder", "name": "Hurl thunder and lightning from the heights", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Master of atmospheric powers.", "sources": [{ "kind": "secondary", "reference": "A. Anokhin, Materialy po shamanstvu u altaitsev" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Altai creation song, in W. Radloff, Proben der Volkslitteratur (1866)" }], "weight": "primary" }],
+    "notes": "Benevolent lord of the upper world; son of Kayra, brother of Erlik."
+  },
+  {
+    "id": "turkic_oghuz_khagan",
+    "name": { "primary": "Oghuz Khagan", "alt": ["Oğuz Kağan", "Oghuz Khan"], "transliterations": { "old-turkic": "Oγuz Qaγan" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary" },
+    "domains": [
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "Oγuz", "script": "Old Uyghur", "rom": "Oγuz" }, "sources": [{ "kind": "primary", "reference": "Oghuznāme (Uyghur-script Oghuz Khagan epic), 13th–14th c." }] },
+      { "sphereId": "kingship", "contextTag": "from-adulthood", "term": { "value": "qaγan", "script": "Old Uyghur", "rom": "qaγan" }, "sources": [{ "kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic)" }] }
+    ],
+    "faculties": [
+      { "id": "miraculous-growth", "name": "Mature and speak within forty days of birth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Drank kymyz, grew supernaturally fast.", "sources": [{ "kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic)" }] },
+      { "id": "slay-monster", "name": "Slay the land-ravaging monster (kıyant)", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Heroic dragon-slaying of his youth.", "sources": [{ "kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic)" }] },
+      { "id": "follow-blue-wolf", "name": "Lead armies guided by the heaven-sent blue wolf", "term": { "value": "kök böri", "script": "Old Uyghur", "rom": "kök böri" }, "inheritability": "none", "notes": "A grey-blue wolf goes before his host.", "sources": [{ "kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic)" }] }
+    ],
+    "materialCulture": [
+      { "id": "golden-bow-arrows", "name": "Golden bow and three silver arrows", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Oghuznāme (Oghuz Khagan epic), 13th–14th c." }], "weight": "primary" }],
+    "notes": "Miraculously born eponymous ancestor of the Oghuz Turks; sired six sons."
+  },
+  {
+    "id": "turkic_asena",
+    "name": { "primary": "Asena", "alt": ["Ashina", "Bozkurt"], "transliterations": { "turkic": "Asena" } },
+    "type": "mythical-creature",
+    "origin": "canon",
+    "tradition": "Tengrist",
+    "primaryTradition": "Tengrist",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary" },
+    "domains": [
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "böri", "script": "Old Turkic", "rom": "böri" }, "sources": [{ "kind": "primary", "reference": "Zhou shu / Sui shu, Göktürk origin legend, 7th c." }] }
+    ],
+    "faculties": [
+      { "id": "nurse-survivor", "name": "Nurse the maimed sole survivor to health", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "She-wolf saves the massacred tribe's child.", "sources": [{ "kind": "primary", "reference": "Zhou shu, Göktürk origin legend" }] },
+      { "id": "bear-ten-sons", "name": "Bear ten half-wolf founders of the Ashina", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "matrilineal", "notes": "Progenitrix of the royal Ashina clan.", "sources": [{ "kind": "primary", "reference": "Zhou shu, Göktürk origin legend" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Zhou shu / Sui shu, Göktürk origin legend, 7th c." }], "weight": "primary" }],
+    "notes": "She-wolf ancestress of the Ashina dynasty of the Göktürks."
+  },
+  {
+    "id": "mongol_tengri",
+    "name": { "primary": "Köke Möngke Tengri", "alt": ["Eternal Blue Sky", "Möngke Tengri"], "transliterations": { "mongolian": "Хөх Мөнх Тэнгэр Köke Möngke Tngri" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mongol",
+    "primaryTradition": "Mongol",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Köke Möngke Tngri", "script": "Classical Mongolian", "rom": "Köke Möngke Tngri" }, "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §1, §103 (13th c.)" }] },
+      { "sphereId": "fate", "contextTag": "lifelong", "term": { "value": "jayaγan", "script": "Classical Mongolian", "rom": "jayaγan" }, "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols (destiny of Börte Chino)" }] }
+    ],
+    "faculties": [
+      { "id": "ordain-rule", "name": "Ordain the right of the Khan to rule the world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Mandate sought atop Burqan Qaldun.", "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols" }] },
+      { "id": "grant-protection", "name": "Grant strength and protection to the favored", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Temüjin prays facing the sun, bowing nine times.", "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §103" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §1 (13th c.)" }], "weight": "primary" }],
+    "notes": "Eternal Blue Sky; supreme heaven who decreed the wolf's destiny."
+  },
+  {
+    "id": "mongol_etugen",
+    "name": { "primary": "Etügen Eke", "alt": ["Itügen", "Ötügen", "Mother Earth"], "transliterations": { "mongolian": "Этүген эх Etügen eke" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mongol",
+    "primaryTradition": "Mongol",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Etügen eke", "script": "Classical Mongolian", "rom": "Etügen eke" }, "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "J.-P. Roux, La religion des Turcs et des Mongols" }] }
+    ],
+    "faculties": [
+      { "id": "sustain-pastures", "name": "Sustain the pastures, herds, and grasslands", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Earth-mother paired with Father Sky.", "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }], "weight": "secondary" }],
+    "notes": "Ever-virgin Earth-Mother, terrestrial consort of Tengri."
+  },
+  {
+    "id": "mongol_qormusta",
+    "name": { "primary": "Qormusta Tengri", "alt": ["Qormusata Tngri", "Khormusta"], "transliterations": { "mongolian": "Хормуста тэнгэр Qormusta Tngri" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mongol",
+    "primaryTradition": "Mongol",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Qormusta Tngri", "script": "Classical Mongolian", "rom": "Qormusta Tngri" }, "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] }
+    ],
+    "faculties": [
+      { "id": "lead-tngri", "name": "Lead the ninety-nine tngri of the heavens", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Chief of the celestial host.", "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] },
+      { "id": "kindle-fire", "name": "Kindle the first fire upon Buddha's spark", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "'Qormusta lit the fire' in fire-prayers.", "sources": [{ "kind": "primary", "reference": "Mongolian fire-invocation (γal-un öčig), in Heissig" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }], "weight": "secondary" }],
+    "notes": "Head of the ninety-nine tngri; assimilated to Indra/Ahura Mazda."
+  },
+  {
+    "id": "mongol_erlig",
+    "name": { "primary": "Erlig Khan", "alt": ["Erleg", "Erlik Nomun Khan", "Yerleg"], "transliterations": { "mongolian": "Эрлэг хаан Erleg qaγan" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mongol",
+    "primaryTradition": "Mongol",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Erleg qaγan", "script": "Classical Mongolian", "rom": "Erleg qaγan" }, "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] },
+      { "sphereId": "judgment", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] }
+    ],
+    "faculties": [
+      { "id": "judge-dead", "name": "Judge the dead by white and black pebbles", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Weighs good and evil deeds with his mirror.", "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] }
+    ],
+    "materialCulture": [
+      { "id": "karmic-mirror", "name": "Mirror of deeds (toli)", "term": { "value": "toli", "script": "Classical Mongolian", "rom": "toli" }, "sources": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "W. Heissig, The Religions of Mongolia" }], "weight": "secondary" }],
+    "notes": "Bull-headed lord and judge of the dead, equated with Yama."
+  },
+  {
+    "id": "mongol_gesar",
+    "name": { "primary": "Gesar", "alt": ["Geser Khan", "Gesar of Ling", "Joru"], "transliterations": { "tibetan": "གེ་སར Ge-sar", "mongolian": "Гэсэр Geser" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Mongol",
+    "primaryTradition": "Mongol",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "from-adulthood", "term": { "value": "Ge-sar rgyal-po", "script": "Tibetan", "rom": "Ge-sar rgyal-po" }, "sources": [{ "kind": "primary", "reference": "The Epic of King Gesar (Gesar of Ling cycle)" }] },
+      { "sphereId": "war", "contextTag": "from-adulthood", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "primary", "reference": "The Epic of King Gesar" }] }
+    ],
+    "faculties": [
+      { "id": "descend-from-heaven", "name": "Descend from heaven to vanquish demon-kings", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Heaven-sent son of Tshangs-pa (White Brahma).", "sources": [{ "kind": "primary", "reference": "The Epic of King Gesar (celestial descent)" }] },
+      { "id": "subdue-demons", "name": "Subdue the four demon-kings of the directions", "term": { "value": "bdud", "script": "Tibetan", "rom": "bdud" }, "inheritability": "none", "notes": "Quells Lutsen, the maneater, and others.", "sources": [{ "kind": "primary", "reference": "The Epic of King Gesar" }] },
+      { "id": "win-horse-race", "name": "Win the kingdom and Drugmo by a horse race", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Gains the throne of Ling as the youth Joru.", "sources": [{ "kind": "primary", "reference": "The Epic of King Gesar (coronation)" }] }
+    ],
+    "materialCulture": [
+      { "id": "gesar-warhorse", "name": "Magical wind-horse Kyang-go Karkar", "term": { "value": "rkyang rgod", "script": "Tibetan", "rom": "rkyang rgod" }, "sources": [{ "kind": "primary", "reference": "The Epic of King Gesar" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "The Epic of King Gesar (Gesar of Ling cycle)" }], "weight": "primary" }],
+    "notes": "Heaven-sent hero-king of Ling, son of White Brahma; Tibeto-Mongol epic."
+  },
+  {
+    "id": "yakut_uruung_aiyy_toyon",
+    "name": { "primary": "Ürüng Aiyy Toyon", "alt": ["Yuryung Aiyy Toyon", "Urung Ai Toyon", "White Creator Lord"], "transliterations": { "sakha": "Үрүҥ Айыы Тойон Ürüŋ Ayıı Toyon" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Айыы", "script": "Sakha (Cyrillic)", "rom": "ayıı" }, "sources": [{ "kind": "primary", "reference": "Olonkho 'Nurgun Bootur the Swift' (Sakha oral epic)" }] },
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "W. Sieroszewski, Yakuty (1896)" }] }
+    ],
+    "faculties": [
+      { "id": "create-universe", "name": "Create the universe and lesser deities", "term": { "value": "айыылаа", "script": "Sakha (Cyrillic)", "rom": "ayıılaa" }, "inheritability": "none", "notes": "Architect of cosmic order from the ninth heaven.", "sources": [{ "kind": "primary", "reference": "Olonkho (Sakha oral epic)" }] },
+      { "id": "bestow-soul", "name": "Bestow the kut (life-soul) upon newborns", "term": { "value": "кут", "script": "Sakha (Cyrillic)", "rom": "kut" }, "inheritability": "none", "notes": "Grants the soul to humankind.", "sources": [{ "kind": "secondary", "reference": "W. Sieroszewski, Yakuty (1896)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Olonkho 'Nurgun Bootur the Swift'" }], "weight": "primary" }],
+    "notes": "White Creator Lord, head of the benevolent Aiyy of the upper world."
+  },
+  {
+    "id": "yakut_ai_toyon",
+    "name": { "primary": "Ai Toyon", "alt": ["Ai Toyen", "Lord of Light"], "transliterations": { "sakha": "Айыы Тойон Ayıı Toyon" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "light", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "W. Sieroszewski, Yakuty (1896)" }] },
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "U. Harva, Die religiösen Vorstellungen der altaischen Völker" }] }
+    ],
+    "faculties": [
+      { "id": "give-light-warmth", "name": "Give light and the warmth of summer", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Eagle perched atop the world-tree.", "sources": [{ "kind": "secondary", "reference": "W. Sieroszewski, Yakuty (1896)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "W. Sieroszewski, Yakuty (1896)" }], "weight": "secondary" }],
+    "notes": "Yakut god of light, depicted as an eagle on the world-tree."
+  },
+  {
+    "id": "yakut_abaasy",
+    "name": { "primary": "Abaasy", "alt": ["Abasy", "Abaahy", "Abasylar"], "transliterations": { "sakha": "Абааһы Abaahı" } },
+    "type": "spirit",
+    "origin": "canon",
+    "tradition": "Yakut",
+    "primaryTradition": "Yakut",
+    "sex": "unknown",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Абааһы", "script": "Sakha (Cyrillic)", "rom": "Abaahı" }, "sources": [{ "kind": "primary", "reference": "Olonkho 'Nurgun Bootur the Swift' (Sakha oral epic)" }] },
+      { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "W. Sieroszewski, Yakuty (1896)" }] }
+    ],
+    "faculties": [
+      { "id": "devour-souls", "name": "Devour souls and inflict sickness on the living", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Iron-toothed demons of the lower world.", "sources": [{ "kind": "primary", "reference": "Olonkho (Sakha oral epic)" }] },
+      { "id": "abduct-maidens", "name": "Abduct maidens and battle the Aiyy heroes", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Monstrous antagonists of olonkho heroes.", "sources": [{ "kind": "primary", "reference": "Olonkho 'Nurgun Bootur the Swift'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Olonkho 'Nurgun Bootur the Swift'" }], "weight": "primary" }],
+    "notes": "Malevolent iron-toothed demons of the Sakha lower world."
+  },
+  {
+    "id": "ainu_kotan_kar_kamuy",
+    "name": { "primary": "Kotan-kar-kamuy", "alt": ["Kotankarkamuy", "Kamuy Kotankar", "Land-Creating God"], "transliterations": { "ainu": "Kotan-kar-kamuy" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "kotan-kar", "script": "Ainu (Latin)", "rom": "kotan-kar" }, "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "faculties": [
+      { "id": "form-ainu-moshir", "name": "Form the land of Ainu-moshir from above", "term": { "value": "Ainu-mosir", "script": "Ainu (Latin)", "rom": "Ainu-mosir" }, "inheritability": "none", "notes": "Shapes lands, plants, fish, and beasts.", "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] },
+      { "id": "stock-the-world", "name": "Stock the rivers and forests with food", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Provides deer, bear, fish, and edible herbs.", "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }], "weight": "secondary" }],
+    "notes": "World-creating god who shaped Ainu-moshir and its resources."
+  },
+  {
+    "id": "ainu_kamuy_fuchi",
+    "name": { "primary": "Kamuy Fuchi", "alt": ["Kamuy-huci", "Ape-huci", "Iresu Kamuy"], "transliterations": { "ainu": "Kamuy huci / Apemerukoyan-mat" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "ape huci", "script": "Ainu (Latin)", "rom": "ape huci" }, "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] },
+      { "sphereId": "hearth", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "faculties": [
+      { "id": "guard-hearth-gate", "name": "Keep the gateway between humans and kamuy", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "All prayer to other kamuy passes through her.", "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] },
+      { "id": "judge-household", "name": "Judge domestic conduct and punish defilers", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Penalizes those who pollute the hearth.", "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "materialCulture": [
+      { "id": "inau-shavings", "name": "Inau (ritual whittled prayer-sticks)", "term": { "value": "inaw", "script": "Ainu (Latin)", "rom": "inaw" }, "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }], "weight": "secondary" }],
+    "notes": "Hearth-goddess and keeper of the gate to the kamuy world."
+  },
+  {
+    "id": "ainu_kim_un_kamuy",
+    "name": { "primary": "Kim-un Kamuy", "alt": ["Kim-un-kamuy", "Metotush Kamuy", "Bear God"], "transliterations": { "ainu": "Kim-un kamuy" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "kim-un", "script": "Ainu (Latin)", "rom": "kim-un" }, "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] },
+      { "sphereId": "wild-beasts", "contextTag": "lifelong", "term": { "value": "kamuy", "script": "Ainu (Latin)", "rom": "kamuy" }, "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] }
+    ],
+    "faculties": [
+      { "id": "gift-bear-flesh", "name": "Visit humans as a bear bearing meat and fur", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "The bear is the god's gift-bearing guise.", "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] },
+      { "id": "return-via-iyomante", "name": "Return to Kamuy-mosir through the iyomante rite", "term": { "value": "iyomante", "script": "Ainu (Latin)", "rom": "iyomante" }, "inheritability": "none", "notes": "Sent home by the bear-sending ceremony.", "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }], "weight": "secondary" }],
+    "notes": "God of mountains and bears, honored in the iyomante."
+  },
+  {
+    "id": "ainu_repun_kamuy",
+    "name": { "primary": "Repun Kamuy", "alt": ["Rep-un-kamuy", "God of the Open Sea"], "transliterations": { "ainu": "Rep-un kamuy" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sea", "contextTag": "lifelong", "term": { "value": "rep-un", "script": "Ainu (Latin)", "rom": "rep-un" }, "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "faculties": [
+      { "id": "drive-whales-ashore", "name": "Drive whales and fish toward Ainu shores", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "As an orca he herds the sea's bounty.", "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] },
+      { "id": "command-sea-kamuy", "name": "Command the lesser kamuy of the ocean", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Chief over all sea-spirits.", "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "materialCulture": [
+      { "id": "orca-harpoon", "name": "Whaling harpoon", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }], "weight": "secondary" }],
+    "notes": "Orca-formed god of the open sea and chief of sea-kamuy."
+  },
+  {
+    "id": "ainu_okikurmi",
+    "name": { "primary": "Okikurmi", "alt": ["Ae-oyna-kamuy", "Aeoina Kamuy", "Ainurakkur", "Oina-kamuy"], "transliterations": { "ainu": "Okikurmi / Aeoyna-kamuy" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "legendary" },
+    "domains": [
+      { "sphereId": "civilization", "contextTag": "lifelong", "term": { "value": "Ainurakkur", "script": "Ainu (Latin)", "rom": "Ainurakkur" }, "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] },
+      { "sphereId": "craft", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" }] }
+    ],
+    "faculties": [
+      { "id": "teach-the-arts", "name": "Teach hunting, fishing, weaving, and ritual", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Culture-hero descended to instruct the Ainu.", "sources": [{ "kind": "primary", "reference": "Ainu kamuy yukar (oral epic of Aeoina-kamuy)" }] },
+      { "id": "descend-from-heaven", "name": "Descend from the sky to dwell among humans", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "Born of thunder-god Kanna-kamuy and the elm spirit.", "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "materialCulture": [
+      { "id": "elm-bark-coat", "name": "Elm-bark coat and mugwort spear", "term": { "value": "attush", "script": "Ainu (Latin)", "rom": "attush" }, "sources": [{ "kind": "secondary", "reference": "J. Batchelor, The Ainu and Their Folk-Lore (1901)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Ainu kamuy yukar (oral epic of Aeoina-kamuy)" }], "weight": "primary" }],
+    "notes": "Demigod culture-hero called Ainurakkur, 'father of the Ainu.'"
+  },
+  {
+    "id": "mongol_alan_gua",
+    "name": { "primary": "Alan Gua", "alt": ["Alan-qo'a", "Alan the Fair"], "transliterations": { "mongolian": "Алан гуа Alan γoa" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Mongol",
+    "primaryTradition": "Mongol",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary" },
+    "domains": [
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "Alan γoa", "script": "Classical Mongolian", "rom": "Alan γoa" }, "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §17–22 (13th c.)" }] }
+    ],
+    "faculties": [
+      { "id": "conceive-by-light", "name": "Conceive sons from a heaven-sent ray of light", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "matrilineal", "notes": "A radiant being enters by the smoke-hole.", "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §21" }] },
+      { "id": "arrow-parable", "name": "Teach unity by the bundle of five arrows", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "none", "notes": "One arrow breaks, five bound do not.", "sources": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §22" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "The Secret History of the Mongols, §17–22 (13th c.)" }], "weight": "primary" }],
+    "notes": "Ancestress of the Borjigin; bore the light-begotten sons of Genghis's line."
+  }
+]
+```

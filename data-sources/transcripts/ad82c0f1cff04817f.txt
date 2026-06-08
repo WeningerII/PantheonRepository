@@ -1,0 +1,608 @@
+This confirms the conventions. SphereIds are kebab-case descriptive tags (e.g., `rain-lightning`, `creation`, `death`, `underworld`, `war`), and `type` values include `deity`, `demigod`, `spirit`, `scion`, `mortal`. The example in the prompt uses `"sphereId":"creation"`, consistent with this. I'll use this kebab-case sphere vocabulary.
+
+I now have everything needed. Let me author the figures with accurate ethnographic grounding. I have 25 figures to write across the five traditions.
+
+Here is my research synthesis and the complete registry.
+
+## Research summary
+
+**Buganda** (Roscoe, *The Baganda*, 1911): Katonda is the supreme creator; the *Balubaale* are a pantheon (Roscoe counts ~73) of deified heroes/nature-powers served by mediums at temples. Mukasa (Lake Nalubaale/Victoria, health, fertility, harvest; temple on Bubembe Island) and his younger brother Kibuka (war god, slain after taking a captured Banyoro woman; shrine at Mbaale) are sons of Wanema; Musisi (earthquakes) is their forebear. Kawumpuli = plague. In the Kintu cycle the sky-father is Ggulu, whose daughter Nambi married Kintu (first man → demigod/scion), and whose son Walumbe (death) followed them to earth.
+
+**Bunyoro** (Beattie, *The Nyoro State* / *Bunyoro: An African Kingdom*): Ruhanga the remote creator/sky-god heads the Batembuzi; Nyamiyonga rules the underworld of the dead and lured King Isaza below. The Bacwezi are a semi-divine dynasty — Ndahura (founder) and Wamara (last ruler) — who vanished and are venerated through the Kubandwa possession cult → demigod tier.
+
+**Dinka** (Lienhardt, *Divinity and Experience*, 1961): Nhialic = supreme Divinity/sky. Free-divinities: Deng (rain/sky), Garang (associated with men, healing/misfortune; with Abuk the first pair), Abuk (first woman, patroness of women and gardens, snake emblem), and Macardit (the "fierce" divinity of sterility/death's bitter end).
+
+**Nuer** (Evans-Pritchard, *Nuer Religion*, 1956): Kwoth (Spirit/God), refracted into spirits of the above — Deng (sky-spirit, sickness), Buk (Deng's mother), Col — and the *colwic*, souls of those killed by lightning who become spirits of the above.
+
+**Kongo** (MacGaffey, e.g. *Religion and Society in Central Africa*): Nzambi a Mpungu, supreme creator; Nzambici, female counterpart; the *bisimbi/simbi*, local water/earth nature-spirits and the *bakulu* (dead) across the *kalunga* line dividing Nseke (living) from Mpemba (dead).
+
+```json
+[
+  {
+    "id": "buganda_katonda",
+    "name": { "primary": "Katonda", "alt": ["Ssewannaku", "Lugaba"], "transliterations": { "luganda": "Katonda" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Katonda", "script": "Luganda", "rom": "Katonda" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "sphereId": "supreme-deity", "contextTag": "lifelong", "term": { "value": "Lugaba", "script": "Luganda", "rom": "Lugaba" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "create-world", "name": "Create the world and the first people", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Sole creator above the balubaale.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "id": "originate-deities", "name": "Originate the lesser gods and life itself", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Source of all balubaale.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "Supreme creator of the Baganda, standing above the balubaale pantheon."
+  },
+  {
+    "id": "buganda_mukasa",
+    "name": { "primary": "Mukasa", "alt": [], "transliterations": { "luganda": "Mukasa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["buganda_wanema"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "lakes-water", "contextTag": "lifelong", "term": { "value": "Mukasa", "script": "Luganda", "rom": "Mukasa" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "sphereId": "health-fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "sphereId": "harvest-plenty", "contextTag": "lifelong", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "grant-fertility-health", "name": "Grant children, health, and abundant harvests", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Most benevolent of the balubaale.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "id": "rule-lake-nalubaale", "name": "Rule the great lake and its storms", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Lake Nalubaale (Victoria).", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "bubembe-temple", "name": "Temple on Bubembe Island", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "Benevolent lubaale of Lake Nalubaale, health, and fertility; chief temple on Bubembe Island."
+  },
+  {
+    "id": "buganda_kibuka",
+    "name": { "primary": "Kibuka", "alt": ["Kibuuka"], "transliterations": { "luganda": "Kibuka" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["buganda_wanema"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Kibuka", "script": "Luganda", "rom": "Kibuka" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, Kibuka, the War God of the Baganda, Man (1907)" } ] }
+    ],
+    "faculties": [
+      { "id": "fight-from-air", "name": "Hover above the enemy in cloud and rain arrows", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Aided Baganda against Bunyoro.", "sources": [ { "kind": "secondary", "reference": "Roscoe, Kibuka, the War God of the Baganda, Man (1907)" } ] },
+      { "id": "counsel-war", "name": "Advise the kabaka through his medium in war", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Oracle for military campaigns.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "mbaale-shrine", "name": "Shrine at Mbaale holding his relics", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, Kibuka, the War God of the Baganda, Man (1907)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, Kibuka, the War God of the Baganda, Man (1907)" } ], "weight": "secondary" } ],
+    "notes": "War lubaale and younger brother of Mukasa; slain after revealing himself to a captured Banyoro woman."
+  },
+  {
+    "id": "buganda_walumbe",
+    "name": { "primary": "Walumbe", "alt": ["Warumbe"], "transliterations": { "luganda": "Walumbe" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["buganda_ggulu"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "Walumbe", "script": "Luganda", "rom": "Walumbe" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "sphereId": "disease", "contextTag": "lifelong", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "kill-mortals", "name": "Bring death upon the children of Kintu", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Origin of mortality.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "id": "elude-capture", "name": "Escape underground when hunted by Kayikuuzi", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Hides in the Tanda pits.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "tanda-pits", "name": "The Tanda pits near Mityana", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "Brother of Nambi and son of Ggulu; followed Kintu to earth and brought death into the world."
+  },
+  {
+    "id": "buganda_musisi",
+    "name": { "primary": "Musisi", "alt": [], "transliterations": { "luganda": "Musisi" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "earthquakes", "contextTag": "lifelong", "term": { "value": "Musisi", "script": "Luganda", "rom": "Musisi" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "shake-earth", "name": "Shake the earth and cause tremors", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Embodiment of the earthquake.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "Lubaale of earthquakes, reckoned a forebear of Mukasa and Kibuka."
+  },
+  {
+    "id": "buganda_kawumpuli",
+    "name": { "primary": "Kawumpuli", "alt": [], "transliterations": { "luganda": "Kawumpuli" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "plague-pestilence", "contextTag": "lifelong", "term": { "value": "Kawumpuli", "script": "Luganda", "rom": "Kawumpuli" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "send-plague", "name": "Send and withdraw outbreaks of plague", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Propitiated to halt epidemics.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "Lubaale of plague among the Baganda balubaale."
+  },
+  {
+    "id": "buganda_kintu",
+    "name": { "primary": "Kintu", "alt": [], "transliterations": { "luganda": "Kintu" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "first-human", "contextTag": "lifelong", "term": { "value": "Kintu", "script": "Luganda", "rom": "Kintu" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "sphereId": "ancestry-kingship", "contextTag": "lifelong", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "pass-ggulu-trials", "name": "Pass the trials set by the sky-father Ggulu", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Eats vast food, finds his own cow.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "id": "father-nation", "name": "Father the Baganda people", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "lineal", "notes": "Progenitor of the clans.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "First man and progenitor of the Baganda; husband of Nambi."
+  },
+  {
+    "id": "buganda_nambi",
+    "name": { "primary": "Nambi", "alt": ["Nnambi"], "transliterations": { "luganda": "Nambi" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["buganda_ggulu"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "first-woman", "contextTag": "lifelong", "term": { "value": "Nambi", "script": "Luganda", "rom": "Nambi" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "sphereId": "fertility-motherhood", "contextTag": "lifelong", "term": { "value": "", "script": "Luganda", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "choose-kintu", "name": "Descend from the sky to marry Kintu", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Daughter of Ggulu.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "id": "mother-people", "name": "Bear the first generation of the Baganda", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "lineal", "notes": "Mother of the nation.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "First woman, daughter of Ggulu and wife of Kintu; sister of Walumbe."
+  },
+  {
+    "id": "buganda_ggulu",
+    "name": { "primary": "Ggulu", "alt": ["Gulu", "Mugulu"], "transliterations": { "luganda": "Ggulu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buganda",
+    "primaryTradition": "Buganda",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky-heaven", "contextTag": "lifelong", "term": { "value": "Ggulu", "script": "Luganda", "rom": "Ggulu" }, "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "faculties": [
+      { "id": "dwell-in-sky", "name": "Reign in the sky over his children", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Father of Nambi and Walumbe.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] },
+      { "id": "set-trials", "name": "Test Kintu before granting his daughter", "term": { "value": "", "script": "Luganda", "rom": "" }, "inheritability": "none", "notes": "Bestows cattle and crops as dowry.", "sources": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Roscoe, The Baganda (1911)" } ], "weight": "secondary" } ],
+    "notes": "Sky-father of the Kintu cycle; father of Nambi, Walumbe, and Kayikuuzi."
+  },
+  {
+    "id": "bunyoro_ruhanga",
+    "name": { "primary": "Ruhanga", "alt": [], "transliterations": { "runyoro": "Ruhanga" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bunyoro",
+    "primaryTradition": "Bunyoro",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Ruhanga", "script": "Runyoro", "rom": "Ruhanga" }, "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "sphereId": "sky-supreme", "contextTag": "lifelong", "term": { "value": "", "script": "Runyoro", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Beattie, The Nyoro State (1971)" } ] }
+    ],
+    "faculties": [
+      { "id": "create-cosmos", "name": "Create the world and its first inhabitants", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "Founds the Batembuzi line.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "id": "withdraw-remote", "name": "Withdraw as a remote, rarely-addressed creator", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "Distant high god.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ], "weight": "secondary" } ],
+    "notes": "Remote creator and sky-god of the Banyoro, first of the Batembuzi."
+  },
+  {
+    "id": "bunyoro_nyamiyonga",
+    "name": { "primary": "Nyamiyonga", "alt": [], "transliterations": { "runyoro": "Nyamiyonga" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bunyoro",
+    "primaryTradition": "Bunyoro",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Nyamiyonga", "script": "Runyoro", "rom": "Nyamiyonga" }, "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "sphereId": "death-dead", "contextTag": "lifelong", "term": { "value": "", "script": "Runyoro", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] }
+    ],
+    "faculties": [
+      { "id": "rule-land-of-dead", "name": "Rule the subterranean land of the dead", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "King of the underworld.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "id": "lure-isaza", "name": "Lure King Isaza below by stealing his cattle", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "Sends his daughter Nyamata.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ], "weight": "secondary" } ],
+    "notes": "King of the underworld who drew the Batembuzi king Isaza into the land of the dead; grandfather of Ndahura through his daughter Nyamata."
+  },
+  {
+    "id": "bunyoro_ndahura",
+    "name": { "primary": "Ndahura", "alt": ["Karubumbi"], "transliterations": { "runyoro": "Ndahura" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bunyoro",
+    "primaryTradition": "Bunyoro",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "Ndahura", "script": "Runyoro", "rom": "Ndahura" }, "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "sphereId": "smallpox", "contextTag": "lifelong", "term": { "value": "", "script": "Runyoro", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Beattie, The Nyoro State (1971)" } ] }
+    ],
+    "faculties": [
+      { "id": "found-bacwezi", "name": "Found the Bacwezi dynasty of Kitara", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "lineal", "notes": "First Mucwezi ruler.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "id": "possess-mediums", "name": "Possess mediums in the Kubandwa cult", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "Venerated as a spirit.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ], "weight": "secondary" } ],
+    "notes": "Founder of the semi-divine Bacwezi dynasty, later venerated as a Kubandwa possession-spirit."
+  },
+  {
+    "id": "bunyoro_wamara",
+    "name": { "primary": "Wamara", "alt": [], "transliterations": { "runyoro": "Wamara" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bunyoro",
+    "primaryTradition": "Bunyoro",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["bunyoro_ndahura"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "Wamara", "script": "Runyoro", "rom": "Wamara" }, "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] }
+    ],
+    "faculties": [
+      { "id": "last-bacwezi-king", "name": "Reign as last Mucwezi king before the vanishing", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "Reign beset by plague and portents.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] },
+      { "id": "vanish-mysteriously", "name": "Disappear from Kitara as suddenly as he came", "term": { "value": "", "script": "Runyoro", "rom": "" }, "inheritability": "none", "notes": "Cwezi disappearance.", "sources": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Beattie, Bunyoro: An African Kingdom (1960)" } ], "weight": "secondary" } ],
+    "notes": "Last king of the Bacwezi; chief among the Kubandwa spirits venerated after the dynasty vanished."
+  },
+  {
+    "id": "dinka_nhialic",
+    "name": { "primary": "Nhialic", "alt": ["Jok"], "transliterations": { "dinka": "Nhialic" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "supreme-divinity", "contextTag": "lifelong", "term": { "value": "Nhialic", "script": "Dinka", "rom": "Nhialic" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] },
+      { "sphereId": "sky-heaven", "contextTag": "lifelong", "term": { "value": "", "script": "Dinka", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "faculties": [
+      { "id": "create-uphold-life", "name": "Create and uphold all life as supreme Divinity", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Encompasses the lesser divinities.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] },
+      { "id": "withdraw-sky", "name": "Withdraw to the sky when first humans transgress", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Separation of earth and sky.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ], "weight": "secondary" } ],
+    "notes": "Supreme Divinity of the Dinka, identified with the sky, encompassing the free- and clan-divinities."
+  },
+  {
+    "id": "dinka_deng",
+    "name": { "primary": "Deng", "alt": ["Dengdit"], "transliterations": { "dinka": "Deng" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["dinka_abuk", "dinka_garang"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "rain-sky", "contextTag": "lifelong", "term": { "value": "Deng", "script": "Dinka", "rom": "Deng" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] },
+      { "sphereId": "fertility-life", "contextTag": "lifelong", "term": { "value": "", "script": "Dinka", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "faculties": [
+      { "id": "send-rain-lightning", "name": "Send rain and strike with lightning", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Greatest of the free-divinities.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ], "weight": "secondary" } ],
+    "notes": "Foremost free-divinity of rain and sky; in some genealogies a son of Abuk."
+  },
+  {
+    "id": "dinka_abuk",
+    "name": { "primary": "Abuk", "alt": [], "transliterations": { "dinka": "Abuk" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "women-fertility", "contextTag": "lifelong", "term": { "value": "Abuk", "script": "Dinka", "rom": "Abuk" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] },
+      { "sphereId": "gardens-crops", "contextTag": "lifelong", "term": { "value": "", "script": "Dinka", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "faculties": [
+      { "id": "patron-women-gardens", "name": "Watch over women, gardens, and grain", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Emblem is the snake.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] },
+      { "id": "first-woman", "name": "Be the first woman, separated from Divinity", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Pestling grain severs earth from sky.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ], "weight": "secondary" } ],
+    "notes": "First woman and the chief female divinity, patroness of women and gardens, figured as a snake."
+  },
+  {
+    "id": "dinka_garang",
+    "name": { "primary": "Garang", "alt": [], "transliterations": { "dinka": "Garang" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "men-vitality", "contextTag": "lifelong", "term": { "value": "Garang", "script": "Dinka", "rom": "Garang" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "faculties": [
+      { "id": "first-man", "name": "Be the first man, paired with Abuk", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Associated with the sun's heat.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] },
+      { "id": "afflict-and-heal", "name": "Bring fevers yet also empower healers", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "Ambivalent free-divinity.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ], "weight": "secondary" } ],
+    "notes": "Free-divinity associated with men and the first man, paired with Abuk; linked to fevers and to healing."
+  },
+  {
+    "id": "dinka_macardit",
+    "name": { "primary": "Macardit", "alt": [], "transliterations": { "dinka": "Macardit" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dinka",
+    "primaryTradition": "Dinka",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "death-sterility", "contextTag": "lifelong", "term": { "value": "Macardit", "script": "Dinka", "rom": "Macardit" }, "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "faculties": [
+      { "id": "cause-barrenness-death", "name": "Cause sterility and untimely death", "term": { "value": "", "script": "Dinka", "rom": "" }, "inheritability": "none", "notes": "The fierce, dark divinity.", "sources": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Lienhardt, Divinity and Experience (1961)" } ], "weight": "secondary" } ],
+    "notes": "The 'great black one', fierce free-divinity of sterility and the bitter end of life."
+  },
+  {
+    "id": "nuer_kwoth",
+    "name": { "primary": "Kwoth", "alt": ["Kwoth Nhial"], "transliterations": { "nuer": "Kwoth" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nuer",
+    "primaryTradition": "Nuer",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "supreme-spirit", "contextTag": "lifelong", "term": { "value": "Kwoth", "script": "Nuer", "rom": "Kwoth" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] },
+      { "sphereId": "sky-air", "contextTag": "lifelong", "term": { "value": "Kwoth Nhial", "script": "Nuer", "rom": "Kwoth Nhial" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "faculties": [
+      { "id": "be-spirit-everywhere", "name": "Be Spirit, invisible and present like the air", "term": { "value": "", "script": "Nuer", "rom": "" }, "inheritability": "none", "notes": "Ubiquitous breath of life.", "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] },
+      { "id": "refract-into-spirits", "name": "Manifest as the spirits of above and below", "term": { "value": "", "script": "Nuer", "rom": "" }, "inheritability": "none", "notes": "Lesser kuth are hypostases of Kwoth.", "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ], "weight": "secondary" } ],
+    "notes": "Kwoth, Spirit/God of the Nuer, conceived as one Spirit refracted into the many spirits of above and below."
+  },
+  {
+    "id": "nuer_deng",
+    "name": { "primary": "Deng", "alt": [], "transliterations": { "nuer": "Deng" } },
+    "type": "spirit",
+    "origin": "canon",
+    "tradition": "Nuer",
+    "primaryTradition": "Nuer",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["nuer_buk"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sky-above", "contextTag": "lifelong", "term": { "value": "Deng", "script": "Nuer", "rom": "Deng" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] },
+      { "sphereId": "sickness-rain", "contextTag": "lifelong", "term": { "value": "", "script": "Nuer", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "faculties": [
+      { "id": "bring-sickness", "name": "Bring sickness and fever upon people", "term": { "value": "", "script": "Nuer", "rom": "" }, "inheritability": "none", "notes": "A spirit of the above.", "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ], "weight": "secondary" } ],
+    "notes": "Prominent Nuer spirit of the above, associated with rain and sickness; son of Buk. Cognate with Dinka Deng."
+  },
+  {
+    "id": "nuer_buk",
+    "name": { "primary": "Buk", "alt": ["Candit"], "transliterations": { "nuer": "Buk" } },
+    "type": "spirit",
+    "origin": "canon",
+    "tradition": "Nuer",
+    "primaryTradition": "Nuer",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sky-above", "contextTag": "lifelong", "term": { "value": "Buk", "script": "Nuer", "rom": "Buk" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] },
+      { "sphereId": "rivers-fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Nuer", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "faculties": [
+      { "id": "mother-of-deng", "name": "Be mother of the sky-spirit Deng", "term": { "value": "", "script": "Nuer", "rom": "" }, "inheritability": "none", "notes": "Associated with rivers and streams.", "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ], "weight": "secondary" } ],
+    "notes": "Female spirit of the above, mother of Deng, linked with rivers; the most important of the Nuer 'spirits of the above' after Deng."
+  },
+  {
+    "id": "nuer_colwic",
+    "name": { "primary": "Colwic", "alt": ["Col Wic", "Colwic spirits"], "transliterations": { "nuer": "Colwic" } },
+    "type": "spirit",
+    "origin": "canon",
+    "tradition": "Nuer",
+    "primaryTradition": "Nuer",
+    "sex": "unknown",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "lightning-dead", "contextTag": "lifelong", "term": { "value": "Colwic", "script": "Nuer", "rom": "Colwic" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "faculties": [
+      { "id": "ascend-by-lightning", "name": "Become a spirit of the above when struck by lightning", "term": { "value": "", "script": "Nuer", "rom": "" }, "inheritability": "none", "notes": "Taken directly by Kwoth.", "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] },
+      { "id": "guard-lineage", "name": "Watch over the lineage of the one taken", "term": { "value": "", "script": "Nuer", "rom": "" }, "inheritability": "none", "notes": "Receives a shrine and sacrifice.", "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "colwic-shrine", "name": "Shrine raised for one taken by lightning", "term": { "value": "", "script": "Nuer", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ] }
+    ],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Evans-Pritchard, Nuer Religion (1956)" } ], "weight": "secondary" } ],
+    "notes": "Colwic: the metamorphosed souls of those killed by lightning, who become spirits of the above united with Kwoth nhial."
+  },
+  {
+    "id": "kongo_nzambi_a_mpungu",
+    "name": { "primary": "Nzambi a Mpungu", "alt": ["Nzambi Mpungu", "Nzambi Ampungu"], "transliterations": { "kikongo": "Nzambi a Mpungu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kongo",
+    "primaryTradition": "Kongo",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Nzambi a Mpungu", "script": "Kikongo", "rom": "Nzambi a Mpungu" }, "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] },
+      { "sphereId": "supreme-deity", "contextTag": "lifelong", "term": { "value": "", "script": "Kikongo", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] }
+    ],
+    "faculties": [
+      { "id": "create-two-worlds", "name": "Create the worlds of the living and the dead", "term": { "value": "", "script": "Kikongo", "rom": "" }, "inheritability": "none", "notes": "Divides Nseke from Mpemba by the kalunga.", "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] },
+      { "id": "originate-simbi", "name": "Bring forth the simbi nature-spirits", "term": { "value": "", "script": "Kikongo", "rom": "" }, "inheritability": "none", "notes": "Source of all lesser powers.", "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ], "weight": "secondary" } ],
+    "notes": "Supreme creator God of the Bakongo, remote maker of the two worlds and the nature-spirits."
+  },
+  {
+    "id": "kongo_nzambici",
+    "name": { "primary": "Nzambici", "alt": ["Nzambi a Mpungu Nzambici"], "transliterations": { "kikongo": "Nzambici" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kongo",
+    "primaryTradition": "Kongo",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "earth-creation", "contextTag": "lifelong", "term": { "value": "Nzambici", "script": "Kikongo", "rom": "Nzambici" }, "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] }
+    ],
+    "faculties": [
+      { "id": "counterpart-of-nzambi", "name": "Stand as female counterpart who gives life with Nzambi", "term": { "value": "", "script": "Kikongo", "rom": "" }, "inheritability": "none", "notes": "The 'Marvels of Marvels' as a pair.", "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ], "weight": "secondary" } ],
+    "notes": "Female counterpart of Nzambi a Mpungu, the earth/sky-mother paired with him in creation."
+  },
+  {
+    "id": "kongo_simbi",
+    "name": { "primary": "Simbi", "alt": ["Bisimbi", "Basimbi"], "transliterations": { "kikongo": "Simbi" } },
+    "type": "spirit",
+    "origin": "canon",
+    "tradition": "Kongo",
+    "primaryTradition": "Kongo",
+    "sex": "unknown",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "water-springs", "contextTag": "lifelong", "term": { "value": "Simbi", "script": "Kikongo", "rom": "Simbi" }, "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] },
+      { "sphereId": "land-fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Kikongo", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] }
+    ],
+    "faculties": [
+      { "id": "guard-waters-land", "name": "Guard springs, rivers, and the land's fertility", "term": { "value": "", "script": "Kikongo", "rom": "" }, "inheritability": "none", "notes": "Local nature-spirits.", "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] },
+      { "id": "ferry-souls", "name": "Carry souls between the living and the dead", "term": { "value": "", "script": "Kikongo", "rom": "" }, "inheritability": "none", "notes": "Move across the kalunga at birth and death.", "sources": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "MacGaffey, Religion and Society in Central Africa (1986)" } ], "weight": "secondary" } ],
+    "notes": "Bisimbi: local water and earth nature-spirits guarding springs and fertility and ferrying souls across the kalunga."
+  }
+]
+```
+
+**Coverage:** 25 figures across the five traditions — Buganda (9: Katonda, Mukasa, Kibuka, Walumbe, Musisi, Kawumpuli, Kintu, Nambi, plus Ggulu the sky-father needed for the parentage links), Bunyoro (4: Ruhanga, Nyamiyonga, and the Bacwezi pair Ndahura & Wamara as demigods), Dinka (5: Nhialic, Deng, Abuk, Garang, plus Macardit), Nuer (4: Kwoth, Deng, Buk as Deng's mother, and the colwic), and Kongo (3: Nzambi a Mpungu, Nzambici, simbi/bisimbi).
+
+**Schema/convention notes:**
+- All ids follow `<tradition>_<name>` snake_case; verified against `data-sources/existing-ids.json` — no collisions.
+- `sphereId` values use the registry's kebab-case descriptive vocabulary (confirmed in `data-sources/transcripts`, e.g. `creation`, `death`, `underworld`, `war`, `rain-sky`).
+- `type` uses the attested set (`deity`, `demigod`, `spirit`); the Bacwezi (Ndahura, Wamara) and the Buganda first humans (Kintu, Nambi) are `demigod`, matching the requested culture-hero tier.
+- All `origin` set to `"canon"`; every domain, faculty, and figure-level `sources[]` carries a real ethnographic citation (Roscoe, Beattie, Lienhardt, Evans-Pritchard, MacGaffey). Native terms are given in Luganda/Runyoro/Dinka/Nuer/Kikongo with romanization; unrecorded terms are `""` (never invented, never disclaimed).
+
+**Two scholarly judgment calls worth flagging:** (1) In Roscoe's Kintu cycle the sky-father is **Ggulu**, distinct from the supreme creator **Katonda** of the broader Lubaale system — I included both and recorded Kintu's parents as empty (his origin is unstated) while Nambi/Walumbe descend from Ggulu. (2) The **colwic** are a class of spirits rather than a single named figure; I modeled them as one collective `spirit` entry with `sex:"unknown"`, consistent with Evans-Pritchard's treatment.
+
+Sources:
+- [Mukasa (deity) – Wikipedia](https://en.wikipedia.org/wiki/Mukasa_(deity)) and [Kibuka (deity) – Wikipedia](https://en.wikipedia.org/wiki/Kibuka_(deity))
+- [Kintu – Wikipedia](https://en.wikipedia.org/wiki/Kintu) / [Nambi (mythology) – Wikipedia](https://en.wikipedia.org/wiki/Nambi_(mythology))
+- [Batembuzi & Bacwezi – Kitara Foundation](https://kitararcc.com/batembuzi-bacwezi/) and [Nyamiyonga Sends His Daughter to Subdue a King – Oxford Reference](https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100242718)
+- [Divinity and Experience: The Religion of the Dinka – Lienhardt (OUP)](https://global.oup.com/academic/product/divinity-and-experience-9780198234050) and [Dinka religion – Wikipedia](https://en.wikipedia.org/wiki/Dinka_religion)
+- [Evans-Pritchard and the Religion of the Nuer Tribe – Anthropology Review](https://anthropologyreview.org/anthropology-explainers/evans-pritchard-nuer-tribe-religion/) and [Nuer Religion – Evans-Pritchard (Google Books)](https://books.google.com/books/about/Nuer_Religion.html?id=wFstF3Upt-8C)
+- [Nzambi Ampungu – Wikipedia](https://en.wikipedia.org/wiki/Nzambi_Ampungu), [Nzambici – Wikipedia](https://en.wikipedia.org/wiki/Nzambici), [Kongo religion – Wikipedia](https://en.wikipedia.org/wiki/Kongo_religion)

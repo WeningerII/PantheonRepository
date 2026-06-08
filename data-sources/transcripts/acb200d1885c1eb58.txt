@@ -1,0 +1,532 @@
+I now have thorough, well-sourced coverage of all 19 figures across the four traditions. I have enough to author the registry with accurate domains, faculties (verb-phrase powers distinct from domains), material culture, native terms, and proper ethnographic citations. Let me compose the final JSON array.
+
+Key research findings synthesized:
+- **Igbo**: Chukwu/Chineke (creator, genderless), Ala/Ani (earth goddess, morality, fertility, dead), Amadioha (thunder/justice, male), Anyanwu ("eye of sun", solar), Igwe (sky/rain), Ikenga (personal achievement, right hand, ram-horned carved figure — both deity and object), Agwu/Agwu Nsi (divination/health, patron of dibia), Ekwensu (war/trickery/trade trickster), Idemili ("pillar of waters", python).
+- **Dogon**: Amma (genderless creator), Nommo (amphibious hermaphroditic twins, water/order/speech), Lébé Serou (first ancestor reborn as snake, earth/renewal/agriculture), Ogo/Yurugu (rebellious pale fox, disorder, divination via fox tracks).
+- **Serer**: Roog/Roog Sene (genderless supreme creator, cosmic egg), Pangool (sing. Fangool, ancestral intercessor-spirits/saints, serpent-symbolized).
+- **Bambara/Mande**: Faro (androgynous water/speech/light/order, from Bemba's breath), Pemba/Bemba (creator quaternity, acacia/grain), Mousso Koroni Koundyé (first woman, chaos/air/fire), Ndomadyiri (smith-healer, earth, healing).
+
+```json
+[
+  {
+    "id": "igbo_chukwu",
+    "name": { "primary": "Chukwu", "alt": ["Chineke", "Chukwu Okike", "Chi Ukwu"], "transliterations": { "igbo": "Chukwu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "okike", "script": "Igbo", "rom": "okike" }, "sources": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion: A Definition" }] },
+      { "sphereId": "supreme-being", "contextTag": "lifelong", "term": { "value": "Chukwu", "script": "Igbo", "rom": "Chukwu" }, "sources": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion: A Definition" }] }
+    ],
+    "faculties": [
+      { "id": "create-cosmos", "name": "Create the world and originate all lesser spirits", "term": { "value": "okike", "script": "Igbo", "rom": "okike" }, "inheritability": "none", "notes": "Source of all things visible and invisible.", "sources": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion" }] },
+      { "id": "sustain-cosmos", "name": "Sustain and provide for all creation", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Omnipotent, omnipresent high God.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "id": "ordain-destiny", "name": "Assign each person their chi and destiny", "term": { "value": "chi", "script": "Igbo", "rom": "chi" }, "inheritability": "none", "notes": "Apportions personal fate at birth.", "sources": [{ "kind": "secondary", "reference": "Achebe, in Morning Yet on Creation Day" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion: A Definition (1973)" }], "weight": "secondary" },
+      { "claim": "role", "citations": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion (1981)" }], "weight": "secondary" }
+    ],
+    "notes": "Igbo supreme creator and high God; genderless source of all spirits."
+  },
+  {
+    "id": "igbo_ala",
+    "name": { "primary": "Ala", "alt": ["Ani", "Ana", "Ali"], "transliterations": { "igbo": "Ala" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["igbo_chukwu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "ala", "script": "Igbo", "rom": "ala" }, "sources": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Igbo", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "sphereId": "morality-law", "contextTag": "lifelong", "term": { "value": "omenala", "script": "Igbo", "rom": "omenala" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "sphereId": "the-dead", "contextTag": "lifelong", "term": { "value": "", "script": "Igbo", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "faculties": [
+      { "id": "enforce-law", "name": "Enforce custom and judge moral abominations", "term": { "value": "nso ala", "script": "Igbo", "rom": "nso ala" }, "inheritability": "none", "notes": "Punishes nso ala, taboos against the earth.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "id": "grant-fertility", "name": "Make the soil, crops, and women fruitful", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Source of agricultural and human increase.", "sources": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion" }] },
+      { "id": "receive-dead", "name": "Receive the dead into her womb the earth", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Guards the ancestors buried in the ground.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "materialCulture": [
+      { "id": "mbari", "name": "Mbari house", "term": { "value": "mbari", "script": "Igbo", "rom": "mbari" }, "notes": "Decorated mud sculpture house built to honor Ala.", "sources": [{ "kind": "secondary", "reference": "Cole, Mbari: Art and Life among the Owerri Igbo (1982)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion: A Definition (1973)" }], "weight": "secondary" },
+      { "claim": "role", "citations": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion (1981)" }], "weight": "secondary" }
+    ],
+    "notes": "Earth goddess; highest alusi, guardian of morality, fertility and the dead."
+  },
+  {
+    "id": "igbo_amadioha",
+    "name": { "primary": "Amadioha", "alt": ["Amadiọha", "Kamalu", "Kamanu", "Igwekala"], "transliterations": { "igbo": "Amadioha" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["igbo_chukwu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "thunder-lightning", "contextTag": "lifelong", "term": { "value": "égbè eluigwe", "script": "Igbo", "rom": "egbe eluigwe" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "", "script": "Igbo", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "faculties": [
+      { "id": "strike-lightning", "name": "Strike oppressors and liars with lightning", "term": { "value": "amuma", "script": "Igbo", "rom": "amuma" }, "inheritability": "none", "notes": "Executes divine justice on the guilty.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "id": "speak-thunder", "name": "Speak and reveal his will through thunder", "term": { "value": "égbè", "script": "Igbo", "rom": "egbe" }, "inheritability": "none", "notes": "Voice heard in the thunderclap.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "materialCulture": [
+      { "id": "osisi-amadioha", "name": "Sacred staff of Amadioha", "term": { "value": "", "script": "Igbo", "rom": "" }, "notes": "Ritual staff and white ram associated with his worship.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion (1981)" }], "weight": "secondary" }
+    ],
+    "notes": "Male god of thunder and lightning; avenger of injustice, associated with the sky."
+  },
+  {
+    "id": "igbo_anyanwu",
+    "name": { "primary": "Anyanwu", "alt": ["Anyanwụ", "Anyanwu-Agbala"], "transliterations": { "igbo": "Anyanwu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": ["igbo_chukwu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sun-light", "contextTag": "lifelong", "term": { "value": "anyanwu", "script": "Igbo", "rom": "anyanwu" }, "sources": [{ "kind": "secondary", "reference": "Idowu, African Traditional Religion" }] }
+    ],
+    "faculties": [
+      { "id": "give-light", "name": "Give light, warmth and the visible day", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Source of daylight and life-giving heat.", "sources": [{ "kind": "secondary", "reference": "Ilogu, Christianity and Igbo Culture (1974)" }] },
+      { "id": "behold-all", "name": "Behold all deeds as the eye of God", "term": { "value": "anya anwụ", "script": "Igbo", "rom": "anya anwu" }, "inheritability": "none", "notes": "Name means eye of the sun; nothing is hidden.", "sources": [{ "kind": "secondary", "reference": "Ilogu, Christianity and Igbo Culture" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Ilogu, Christianity and Igbo Culture (1974)" }], "weight": "secondary" }
+    ],
+    "notes": "Solar deity, the eye of Chukwu; name means eye of the sun."
+  },
+  {
+    "id": "igbo_igwe",
+    "name": { "primary": "Igwe", "alt": ["Igwekaala", "Eluigwe"], "transliterations": { "igbo": "Igwe" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["igbo_chukwu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "igwe", "script": "Igbo", "rom": "igwe" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "mmiri ozuzo", "script": "Igbo", "rom": "mmiri ozuzo" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "faculties": [
+      { "id": "send-rain", "name": "Send rain from the sky to the earth", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Provider of rain that waters the land.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion (1981)" }], "weight": "secondary" }
+    ],
+    "notes": "Sky deity and giver of rain; the firmament above the earth Ala."
+  },
+  {
+    "id": "igbo_ikenga",
+    "name": { "primary": "Ikenga", "alt": ["Ikénga"], "transliterations": { "igbo": "Ikenga" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "achievement", "contextTag": "lifelong", "term": { "value": "ike", "script": "Igbo", "rom": "ike" }, "sources": [{ "kind": "secondary", "reference": "Boston, The Igbo Cult of Ikenga (1977)" }] },
+      { "sphereId": "strength", "contextTag": "lifelong", "term": { "value": "aka ikenga", "script": "Igbo", "rom": "aka ikenga" }, "sources": [{ "kind": "secondary", "reference": "Boston, The Igbo Cult of Ikenga" }] }
+    ],
+    "faculties": [
+      { "id": "grant-success", "name": "Grant success in farming, war, hunting and trade", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Embodies the power of a man's right hand.", "sources": [{ "kind": "secondary", "reference": "Boston, The Igbo Cult of Ikenga" }] },
+      { "id": "embody-endeavor", "name": "Personify a man's strength, will and accomplishment", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Unites one's chi, ancestors and effort.", "sources": [{ "kind": "secondary", "reference": "Boston, The Igbo Cult of Ikenga" }] }
+    ],
+    "materialCulture": [
+      { "id": "ikenga-figure", "name": "Carved Ikenga figure", "term": { "value": "ikenga", "script": "Igbo", "rom": "ikenga" }, "notes": "Horned wooden figure embodying personal power, kept on a shrine.", "sources": [{ "kind": "secondary", "reference": "Boston, The Igbo Cult of Ikenga (1977)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Boston, The Igbo Cult of Ikenga (1977)" }], "weight": "secondary" }
+    ],
+    "notes": "Personal deity of achievement and the right hand; embodied in a ram-horned carved figure."
+  },
+  {
+    "id": "igbo_agwu",
+    "name": { "primary": "Agwu", "alt": ["Agwu Nsi", "Agwụ"], "transliterations": { "igbo": "Agwu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": ["igbo_chukwu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "afa", "script": "Igbo", "rom": "afa" }, "sources": [{ "kind": "secondary", "reference": "Aguwa, The Agwu Deity in Igbo Religion (1995)" }] },
+      { "sphereId": "health-healing", "contextTag": "lifelong", "term": { "value": "", "script": "Igbo", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Aguwa, The Agwu Deity in Igbo Religion" }] }
+    ],
+    "faculties": [
+      { "id": "inspire-diviner", "name": "Possess and inspire the diviner-healer", "term": { "value": "dibia", "script": "Igbo", "rom": "dibia" }, "inheritability": "lineal", "notes": "Patron spirit of the dibia who reveals hidden things.", "sources": [{ "kind": "secondary", "reference": "Aguwa, The Agwu Deity in Igbo Religion" }] },
+      { "id": "afflict-confuse", "name": "Afflict with madness or confusion when neglected", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Explains illness, fortune and misfortune.", "sources": [{ "kind": "secondary", "reference": "Aguwa, The Agwu Deity in Igbo Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Aguwa, The Agwu Deity in Igbo Religion (1995)" }], "weight": "secondary" }
+    ],
+    "notes": "Patron deity of divination, health and the dibia; principle of life's dualities."
+  },
+  {
+    "id": "igbo_ekwensu",
+    "name": { "primary": "Ekwensu", "alt": ["Ekwénsu"], "transliterations": { "igbo": "Ekwensu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "agha", "script": "Igbo", "rom": "agha" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "sphereId": "trade-bargaining", "contextTag": "lifelong", "term": { "value": "ahia", "script": "Igbo", "rom": "ahia" }, "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "faculties": [
+      { "id": "grant-cunning", "name": "Grant cunning to warriors and traders", "term": { "value": "aghugho", "script": "Igbo", "rom": "aghugho" }, "inheritability": "none", "notes": "Invoked before battle and market for shrewdness.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] },
+      { "id": "sow-confusion", "name": "Provoke strife, trickery and confusion", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Trickster spirit of disorder, not a devil.", "sources": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Metuh, God and Man in African Religion (1981)" }], "weight": "secondary" }
+    ],
+    "notes": "Trickster deity of war, bargains and trade; spirit of conflict and cunning."
+  },
+  {
+    "id": "igbo_idemili",
+    "name": { "primary": "Idemili", "alt": ["Idemmili", "Eke Mmili", "Idemili Nnobi"], "transliterations": { "igbo": "Idemili" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Igbo",
+    "primaryTradition": "Igbo",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["igbo_chukwu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "water-rivers", "contextTag": "lifelong", "term": { "value": "idemili", "script": "Igbo", "rom": "idemili" }, "sources": [{ "kind": "secondary", "reference": "Amadiume, Male Daughters, Female Husbands (1987)" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Igbo", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Amadiume, Male Daughters, Female Husbands" }] }
+    ],
+    "faculties": [
+      { "id": "govern-waters", "name": "Govern the river, rain and floodwaters", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Name means pillar of water.", "sources": [{ "kind": "secondary", "reference": "Amadiume, Male Daughters, Female Husbands" }] },
+      { "id": "bestow-children", "name": "Bestow children and abundance on devotees", "term": { "value": "", "script": "Igbo", "rom": "" }, "inheritability": "none", "notes": "Water-fertility goddess of Nnobi.", "sources": [{ "kind": "secondary", "reference": "Amadiume, Male Daughters, Female Husbands" }] }
+    ],
+    "materialCulture": [
+      { "id": "eke-idemili", "name": "Royal python", "term": { "value": "eke idemili", "script": "Igbo", "rom": "eke idemili" }, "notes": "Sacred python, her messenger, never to be killed.", "sources": [{ "kind": "secondary", "reference": "Amadiume, Male Daughters, Female Husbands (1987)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Amadiume, Male Daughters, Female Husbands (1987)" }], "weight": "secondary" }
+    ],
+    "notes": "Water goddess of the Idemili river; the royal python is her sacred emblem."
+  },
+  {
+    "id": "dogon_amma",
+    "name": { "primary": "Amma", "alt": ["Ama"], "transliterations": { "dogon": "Amma" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dogon",
+    "primaryTradition": "Dogon",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Amma", "script": "Dogon", "rom": "Amma" }, "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "", "script": "Dogon", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] }
+    ],
+    "faculties": [
+      { "id": "create-egg", "name": "Create the cosmos from a primordial egg or seed", "term": { "value": "po", "script": "Dogon", "rom": "po" }, "inheritability": "none", "notes": "Forms the world from the egg of the world.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "id": "create-nommo", "name": "Bring forth the Nommo and the first ancestors", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Generates the twin Nommo as ordering principle.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "id": "punish-ogo", "name": "Punish the rebel fox and restore cosmic order", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Sacrifices a Nommo to purify creation.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)" }], "weight": "secondary" },
+      { "claim": "role", "citations": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }], "weight": "secondary" }
+    ],
+    "notes": "Genderless Dogon creator and sky god; maker of the world-egg and the Nommo."
+  },
+  {
+    "id": "dogon_nommo",
+    "name": { "primary": "Nommo", "alt": ["Nummo", "Nommo Anagonno", "Nommo Die"], "transliterations": { "dogon": "Nommo" } },
+    "type": "culture-hero",
+    "origin": "canon",
+    "tradition": "Dogon",
+    "primaryTradition": "Dogon",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": ["dogon_amma"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "water", "contextTag": "lifelong", "term": { "value": "Nommo", "script": "Dogon", "rom": "Nommo" }, "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "sphereId": "speech-word", "contextTag": "lifelong", "term": { "value": "", "script": "Dogon", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] },
+      { "sphereId": "cosmic-order", "contextTag": "lifelong", "term": { "value": "", "script": "Dogon", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] }
+    ],
+    "faculties": [
+      { "id": "bring-water", "name": "Bring water, rain and life to the earth", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Amphibious twins embodying the vital waters.", "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] },
+      { "id": "teach-word", "name": "Teach speech, weaving and the crafts to humans", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Descend in an ark with the eight ancestors.", "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] },
+      { "id": "redeem-creation", "name": "Be sacrificed and resurrected to purify the world", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "One Nommo offered to atone for the fox's disorder.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)" }], "weight": "secondary" },
+      { "claim": "role", "citations": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }], "weight": "secondary" }
+    ],
+    "notes": "Amphibious hermaphroditic twin ancestors created by Amma; bringers of water, speech and order."
+  },
+  {
+    "id": "dogon_lebe",
+    "name": { "primary": "Lébé", "alt": ["Lebe Serou", "Lébé Seru", "Lewe"], "transliterations": { "dogon": "Lébé" } },
+    "type": "culture-hero",
+    "origin": "canon",
+    "tradition": "Dogon",
+    "primaryTradition": "Dogon",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["dogon_amma"],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "posthumous", "term": { "value": "Lébé", "script": "Dogon", "rom": "Lebe" }, "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "sphereId": "renewal-agriculture", "contextTag": "posthumous", "term": { "value": "", "script": "Dogon", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] }
+    ],
+    "faculties": [
+      { "id": "renew-soil", "name": "Renew the fertility of the soil each season", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Embodies vegetation that dies and regrows.", "sources": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }] },
+      { "id": "rise-as-serpent", "name": "Return from death in the form of a great serpent", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Swallowed and revived by a Nommo.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "materialCulture": [
+      { "id": "lebe-altar", "name": "Lébé earth altar", "term": { "value": "", "script": "Dogon", "rom": "" }, "notes": "Altar of sacred earth tended by the Hogon priest.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)" }], "weight": "secondary" },
+      { "claim": "role", "citations": [{ "kind": "secondary", "reference": "Griaule, Conversations with Ogotemmêli (1965)" }], "weight": "secondary" }
+    ],
+    "notes": "First ancestor who died and was reborn as a serpent; spirit of earth, renewal and agriculture."
+  },
+  {
+    "id": "dogon_ogo",
+    "name": { "primary": "Ogo", "alt": ["Yurugu", "Yourougou", "the Pale Fox"], "transliterations": { "dogon": "Ogo" } },
+    "type": "culture-hero",
+    "origin": "canon",
+    "tradition": "Dogon",
+    "primaryTradition": "Dogon",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["dogon_amma"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "disorder-chaos", "contextTag": "lifelong", "term": { "value": "Ogo", "script": "Dogon", "rom": "Ogo" }, "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "sphereId": "divination", "contextTag": "lifelong", "term": { "value": "", "script": "Dogon", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "faculties": [
+      { "id": "rebel-creation", "name": "Rebel against Amma and disrupt the unfinished creation", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Tears from the world-egg before it is ready.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] },
+      { "id": "reveal-future", "name": "Reveal the future through tracks left in the sand", "term": { "value": "", "script": "Dogon", "rom": "" }, "inheritability": "none", "notes": "Fox tracks read by diviners on divination tables.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "materialCulture": [
+      { "id": "fox-divination-table", "name": "Fox divination table", "term": { "value": "", "script": "Dogon", "rom": "" }, "notes": "Grid drawn in sand whose fox tracks are interpreted overnight.", "sources": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (1965)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)" }], "weight": "secondary" }
+    ],
+    "notes": "The rebellious pale fox, lonely twin of disorder; his sand-tracks are read in divination."
+  },
+  {
+    "id": "serer_roog",
+    "name": { "primary": "Roog", "alt": ["Roog Sene", "Rog", "Koox"], "transliterations": { "serer": "Roog" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Roog", "script": "Serer", "rom": "Roog" }, "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Cosaan (1983)" }] },
+      { "sphereId": "supreme-being", "contextTag": "lifelong", "term": { "value": "Roog Sene", "script": "Serer", "rom": "Roog Sene" }, "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Cosaan (1983)" }] }
+    ],
+    "faculties": [
+      { "id": "create-cosmos", "name": "Create the universe from the primordial cosmic egg", "term": { "value": "", "script": "Serer", "rom": "" }, "inheritability": "none", "notes": "Brings forth waters, land, life and humankind.", "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Cosaan (1983)" }] },
+      { "id": "sustain-order", "name": "Maintain the balance and order of all existence", "term": { "value": "", "script": "Serer", "rom": "" }, "inheritability": "none", "notes": "Benevolent but remote; source to whom all returns.", "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (1990)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Cosaan (Dakar, 1983)" }], "weight": "secondary" },
+      { "claim": "role", "citations": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (1990)" }], "weight": "secondary" }
+    ],
+    "notes": "Genderless Serer supreme creator; the merciful immensity from whom life flows and to whom it returns."
+  },
+  {
+    "id": "serer_pangool",
+    "name": { "primary": "Pangool", "alt": ["Fangool", "Yoonir"], "transliterations": { "serer": "Pangool" } },
+    "type": "ancestor-spirit",
+    "origin": "canon",
+    "tradition": "Serer",
+    "primaryTradition": "Serer",
+    "sex": "other",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": { "era": "ancestral" },
+    "domains": [
+      { "sphereId": "ancestral-intercession", "contextTag": "posthumous", "term": { "value": "Pangool", "script": "Serer", "rom": "Pangool" }, "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (1990)" }] },
+      { "sphereId": "protection", "contextTag": "posthumous", "term": { "value": "", "script": "Serer", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (1990)" }] }
+    ],
+    "faculties": [
+      { "id": "intercede-with-roog", "name": "Carry prayers and offerings between the living and Roog", "term": { "value": "Fangool", "script": "Serer", "rom": "Fangool" }, "inheritability": "lineal", "notes": "Intermediaries between humanity and the Divine.", "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (1990)" }] },
+      { "id": "protect-community", "name": "Protect family, land and bring rain and health", "term": { "value": "", "script": "Serer", "rom": "" }, "inheritability": "lineal", "notes": "Guardian ancestral saints, manifested as snakes.", "sources": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (1990)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Gravrand, La civilisation sereer: Pangool (Dakar, 1990)" }], "weight": "secondary" }
+    ],
+    "notes": "Ancestral intercessor-spirits and saints (sing. Fangool), symbolized by snakes; mediators with Roog."
+  },
+  {
+    "id": "bambara_faro",
+    "name": { "primary": "Faro", "alt": [], "transliterations": { "bamanankan": "Faro" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bambara",
+    "primaryTradition": "Bambara",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": ["bambara_pemba"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "water", "contextTag": "lifelong", "term": { "value": "Faro", "script": "Bamanankan", "rom": "Faro" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "sphereId": "speech-word", "contextTag": "lifelong", "term": { "value": "kuma", "script": "Bamanankan", "rom": "kuma" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "sphereId": "cosmic-order", "contextTag": "lifelong", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "faculties": [
+      { "id": "order-world", "name": "Reorganize and give each thing its place in creation", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Conducts the second creation that brings equilibrium.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "id": "bestow-speech", "name": "Bestow speech, light and life upon the world", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Issued from the breath of the creator Bemba.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "id": "govern-niger", "name": "Govern the waters and the river Niger", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Master of the waters and rain.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)" }], "weight": "secondary" }
+    ],
+    "notes": "Androgynous water deity of speech, light and order, born from Bemba's breath; master of the waters."
+  },
+  {
+    "id": "bambara_pemba",
+    "name": { "primary": "Pemba", "alt": ["Bemba", "Pembélé", "Ngala", "Koni"], "transliterations": { "bamanankan": "Pemba" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bambara",
+    "primaryTradition": "Bambara",
+    "sex": "other",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Pemba", "script": "Bamanankan", "rom": "Pemba" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "sphereId": "earth-vegetation", "contextTag": "lifelong", "term": { "value": "balansan", "script": "Bamanankan", "rom": "balansan" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "faculties": [
+      { "id": "create-self", "name": "Create himself and the world as a fourfold being", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Creator quaternity with Faro, Mousso Koroni and Ndomadyiri.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "id": "manifest-as-acacia", "name": "Descend as a seed and grow into the acacia tree", "term": { "value": "balansan", "script": "Bamanankan", "rom": "balansan" }, "inheritability": "none", "notes": "Springs up from a grain as the Balanza tree.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "id": "form-first-woman", "name": "Knead rotten wood and saliva to form the first woman", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Shapes Mousso Koroni as his consort.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)" }], "weight": "secondary" }
+    ],
+    "notes": "Creator god manifest as grain and acacia; head of the fourfold creative quaternity."
+  },
+  {
+    "id": "bambara_mousso_koroni",
+    "name": { "primary": "Mousso Koroni", "alt": ["Mousso Koroni Koundyé", "Muso Koroni", "Nyale"], "transliterations": { "bamanankan": "Muso Koroni" } },
+    "type": "culture-hero",
+    "origin": "canon",
+    "tradition": "Bambara",
+    "primaryTradition": "Bambara",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["bambara_pemba"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "chaos-disorder", "contextTag": "lifelong", "term": { "value": "Muso Koroni", "script": "Bamanankan", "rom": "Muso Koroni" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "sphereId": "air-fire", "contextTag": "lifelong", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "faculties": [
+      { "id": "engender-life", "name": "Engender the plants, animals and human beings", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "First woman and consort who peoples the earth.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "id": "sow-disorder", "name": "Spread haste, disorder and confusion through creation", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Her unbalanced nature flaws her hurried creations.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)" }], "weight": "secondary" }
+    ],
+    "notes": "The little old woman with a white head, first woman; chaotic mother of life associated with air and fire."
+  },
+  {
+    "id": "bambara_ndomadyiri",
+    "name": { "primary": "Ndomadyiri", "alt": ["Ndomadyriri", "Faro Ndomadyiri"], "transliterations": { "bamanankan": "Ndomadyiri" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bambara",
+    "primaryTradition": "Bambara",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["bambara_pemba"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "Ndomadyiri", "script": "Bamanankan", "rom": "Ndomadyiri" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "sphereId": "smithcraft-earth", "contextTag": "lifelong", "term": { "value": "numu", "script": "Bamanankan", "rom": "numu" }, "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "faculties": [
+      { "id": "heal-with-trees", "name": "Heal the sick with knowledge of trees and medicines", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "lineal", "notes": "Archetypal blacksmith-healer of the smith caste.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] },
+      { "id": "stabilize-earth", "name": "Forge tools and fix beings firmly upon the earth", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "inheritability": "none", "notes": "Appears after Faro to anchor and stabilize life.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "materialCulture": [
+      { "id": "smith-forge", "name": "Blacksmith's forge and tools", "term": { "value": "", "script": "Bamanankan", "rom": "" }, "notes": "The numu smith's forge through which he works iron and healing.", "sources": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (1951)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)" }], "weight": "secondary" }
+    ],
+    "notes": "Archetypal smith-healer of the creative quaternity; anchors and stabilizes life on earth."
+  }
+]
+```
+
+I authored 19 new figures across the four West African traditions, all with `origin: "canon"` (real attested religion), respectful handling of living traditions, and real ethnographic citations.
+
+**Coverage:**
+- **Igbo (Odinani)** — 9 figures: Chukwu, Ala, Amadioha, Anyanwu, Igwe, Ikenga, Agwu, Ekwensu, Idemili
+- **Dogon** — 4 figures: Amma (creator), Nommo (amphibious twin ancestors, typed `culture-hero`), Lébé (earth/renewal twin tier), Ogo/Yurugu (the pale fox)
+- **Serer** — 2 figures: Roog (supreme), the Pangool (ancestral intercessors, typed `ancestor-spirit`)
+- **Bambara/Mande** — 4 figures: Faro, Pemba/Bemba, Mousso Koroni, Ndomadyiri
+
+**Schema decisions:**
+- **Faculties vs. domains kept distinct**: domains are static spheres (e.g. `creation`, `water`, `divination`); faculties are verb-phrase abilities (e.g. "Strike oppressors with lightning," "Reveal the future through tracks left in the sand," "Carry prayers between the living and Roog"). All faculty `name` fields are ≤14 words.
+- **materialCulture** populated only where attested: Mbari house (Ala), carved Ikenga figure, royal python (Idemili), Lébé earth altar, fox divination table (Ogo), forge (Ndomadyiri).
+- **Native terms**: English leads; native term + romanization supplied where recorded (Igbo `okike`/`nso ala`/`afa`; Dogon `po`; Serer `Fangool`; Bamanankan `kuma`/`balansan`/`numu`), and left `""` where unrecorded rather than invented.
+
+**Citations used** (real ethnography): Idowu (*African Traditional Religion*), Metuh, Amadiume, Boston (*The Igbo Cult of Ikenga*), Aguwa, Cole for Igbo; Griaule & Dieterlen *Le renard pâle* and Griaule *Conversations with Ogotemmêli* for Dogon; Gravrand *La civilisation sereer* (*Cosaan*, *Pangool*) for Serer; Dieterlen *Essai sur la religion bambara* for Bambara/Mande. Each domain, faculty, item, and figure-level `sources[]` entry is cited; no modern coinages or "not attested" language used.
+
+One note: genealogical `parentIds` for the lesser deities (e.g. Ala/Amadioha/Idemili as "children" of Chukwu) reflect the common ethnographic framing of these spirits as emanations of the creator; Igbo theology treats them more as derivatives than literal offspring, but the field captures that derivation relationship.
