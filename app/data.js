@@ -29412,6 +29412,33 @@ const mergeMaterialCulture = (peopleMap, mcMap = MATERIAL_CULTURE_BY_FIGURE) => 
   return peopleMap;
 };
 
+// Populate item holders from the custody chain: every ITEM_LORE custody entry
+// that names a corpus figure (personId) becomes an actual holder on that figure's
+// materialCulture — so everyone who had their hands on an item shows it, not just
+// the primary wielder. externalRef custody entries (figures outside the corpus,
+// or not yet linked) are handled by the authored MATERIAL_CULTURE_BY_FIGURE map.
+const populateCustodyHolders = (peopleMap, lore = ITEM_LORE) => {
+  for (const [itemId, L] of Object.entries(lore || {})) {
+    for (const c of (L.custody || [])) {
+      const pid = c && c.personId;
+      if (!pid) continue;
+      const p = peopleMap[pid];
+      if (!p) { console.warn('custody for unknown figure', pid, '(item', itemId + ')'); continue; }
+      if (!Array.isArray(p.materialCulture)) p.materialCulture = [];
+      if (p.materialCulture.some((m) => m && m.id === itemId)) continue;
+      p.materialCulture.push({
+        id: itemId,
+        classId: L.classId || null,
+        kind: L.kind || null,
+        sources: c.sources || [],
+        notes: c.note || (c.role ? c.role : undefined),
+        viaCustody: c.role || true,
+      });
+    }
+  }
+  return peopleMap;
+};
+
 // ─── Powers (faculties): exhaustive derivation + native-term enrichment ─────
 // Every sphere a figure governs (its domains[]) becomes an explicit faculty, so
 // the Powers panel is comprehensive. Derived sphere-faculties are inheritability
@@ -33377,7 +33404,7 @@ window.__PR = {
 };
 
 // Build + migrate seed data, then attach the centrally-declared item holders.
-const seedPeople = deriveAndMergeFaculties(mergeMaterialCulture(migrate(buildPeopleSeed())));
+const seedPeople = deriveAndMergeFaculties(populateCustodyHolders(mergeMaterialCulture(migrate(buildPeopleSeed()))));
 const seedAtlas  = buildTerritorySeed();
 
 // Pre-compute the derived layer the UI surfaces (divinity descent + tradition
