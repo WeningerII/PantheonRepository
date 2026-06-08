@@ -40,8 +40,10 @@ function loadSeed() {
 
 const { ctx, logs, people, atlas } = loadSeed();
 
-test('seeds 602 figures', () => {
-  assert.strictEqual(Object.keys(people).length, 602);
+test('seeds the full figure corpus (growing)', () => {
+  // The corpus is deliberately expanding as missing central figures are added;
+  // assert a floor rather than an exact count.
+  assert.ok(Object.keys(people).length >= 602, `expected >= 602 figures, got ${Object.keys(people).length}`);
 });
 
 test('seeds 56 atlas territories', () => {
