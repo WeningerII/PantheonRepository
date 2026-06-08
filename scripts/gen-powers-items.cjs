@@ -32,6 +32,17 @@ function lastAssistantText(file) {
 const SECONDARY = /\bWb\b|Wikipedia|Britannica|Dum[eé]zil|Lincoln|Lindow|Simek|Ellis Davidson|Abraham|Idowu|encyclopedia|dictionary|grammar|ethnograph/i;
 const srcKind = (s) => (SECONDARY.test(s) ? 'secondary' : 'primary');
 const isDash = (v) => { const t = String(v || '').trim(); return !t || t === '—' || t === '-' || t.startsWith('—'); };
+// A term VALUE is not a real native term if it's empty/dashed or an agent
+// disclaimer (a language label + em-dash, or a "(no recorded name)" note).
+const badTermValue = (v) => {
+  const t = String(v || '').trim();
+  if (isDash(t)) return true;
+  if (/\s[—–-]\s*$/.test(t)) return true;            // "Ojibwe —", "Lakota -"
+  if (/\s[—–]\s/.test(t)) return true;               // "Arabic — appears as a jinnīya"
+  if (/\(no\b/i.test(t)) return true;                // "(no recorded distinct name)"
+  if (/no (recorded|distinct|specific|fixed|known|fixed myth|attested)|not attested|no .*\bname\b|unknown|n\/a/i.test(t)) return true;
+  return false;
+};
 
 const powers = {}, items = {};
 const stats = { files: 0, powers: 0, items: 0, pTermed: 0, iTermed: 0, figs: new Set() };
@@ -56,7 +67,7 @@ for (const name of fs.readdirSync(TASKS)) {
     for (const p of fieldStr.split(/\s*\|\s*/)) {
       const i = p.indexOf('='); if (i > 0) f[p.slice(0, i).trim().toLowerCase()] = p.slice(i + 1).trim();
     }
-    const term = isDash(f.term) ? null : { value: f.term, script: f.script || undefined, rom: isDash(f.rom) ? undefined : f.rom };
+    const term = badTermValue(f.term) ? null : { value: f.term, script: f.script || undefined, rom: isDash(f.rom) ? undefined : f.rom };
     const src = f.src ? [{ kind: srcKind(f.src), reference: f.src }] : undefined;
     stats.figs.add(figId);
     if (kind === 'POWER') {
