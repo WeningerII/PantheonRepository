@@ -14,9 +14,11 @@ describe('app renders in a browser-like environment', () => {
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });
 
-  test('renders all 602 figures in the Browse table', () => {
+  test('renders the full figure corpus in the Browse table (growing)', () => {
+    // The corpus is deliberately expanding as missing central figures are added;
+    // assert a floor rather than an exact count (mirrors seed.test.cjs).
     const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
-    assert.strictEqual(rows.length, 602);
+    assert.ok(rows.length >= 602, `expected >= 602 rows, got ${rows.length}`);
   });
 
   test('"/" focuses the search box', async () => {
