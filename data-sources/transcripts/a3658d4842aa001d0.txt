@@ -1,0 +1,674 @@
+All rules satisfied. No banned modern coinages, all faculties are verb-phrases, and the spirit-classes lead with plain English words ("Ancestors", "Spirits", "Ancestral spirits", "Tutelary spirits") with native terms in `term`/`alt`. Theonyms that are proper names correctly lead as-is, with `term` carrying script+rom.
+
+Sanity check done: the JSON parses, 27 figures, no ID collisions against existing-ids.json, no duplicate IDs, every figure and claim carries real citations, materialCulture uses `id`/`name`, and all types are within the allowed set. I did not modify any repo files (work was staged in /tmp only).
+
+result: 27 figures across Sotho-Tswana, Ndebele, Luo, Chaga, Berber, and Guanche traditions, schema-validated with no ID collisions; returned as the JSON array below.
+
+```json
+[
+  {
+    "id": "sotho_tswana_modimo",
+    "name": { "primary": "Modimo", "alt": ["Molimo", "Mmopi"], "transliterations": { "setswana": "Modimo", "sesotho": "Molimo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sotho-Tswana",
+    "primaryTradition": "Sotho-Tswana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Mmopi", "script": "Latn", "rom": "Mmopi" }, "sources": [{ "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Rotterdam: Balkema, pp. 77-85." }] },
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Modimo", "script": "Latn", "rom": "Modimo" }, "sources": [{ "kind": "reference", "reference": "Encyclopedia.com, 'Tswana Religion' (Encyclopedia of Religion), on the remote sky-dwelling Supreme Being." }] }
+    ],
+    "faculties": [
+      { "id": "create-the-world", "name": "create and order the world", "term": { "value": "go bopa", "script": "Latn", "rom": "go bopa" }, "inheritability": "unique", "notes": "Setswana 'go bopa' = 'to mould/create'; the name Mmopi means 'the Moulder/Creator'.", "sources": [{ "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Balkema, pp. 77-85." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Modimo is the remote Supreme Being and creator-director of the Sotho-Tswana, approached through the ancestors (badimo) rather than directly through images or temples.", "citations": [ { "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Rotterdam: A. A. Balkema." }, { "kind": "reference", "reference": "Encyclopedia.com, 'Tswana Religion' (drawn from Encyclopedia of Religion, 2nd ed.)." } ], "weight": 1.0 },
+      { "claim": "Badimo (ancestors) is the plural of modimo, indicating the difference between the Supreme Being, ancestors and humans is one of degree within a single spiritual hierarchy.", "citations": [{ "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Balkema." }], "weight": 0.85 }
+    ],
+    "notes": "Supreme Being of the Sotho (Basotho/Lesotho) and Tswana (Batswana/Botswana) peoples. Name glossed as 'the One Above' / 'the Great One' and linked to badimo, 'the high ones / ancestors'. Conceived as transcendent and distant; not worshipped through cult images. Classified deity (high-god class)."
+  },
+  {
+    "id": "sotho_tswana_badimo",
+    "name": { "primary": "Ancestors", "alt": ["Balimo", "the high ones"], "transliterations": { "setswana": "Badimo", "sesotho": "Balimo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sotho-Tswana",
+    "primaryTradition": "Sotho-Tswana",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "Badimo", "script": "Latn", "rom": "Badimo" }, "sources": [{ "kind": "reference", "reference": "Wikipedia, 'Badimo', on Setswana traditional religion." }] },
+      { "sphereId": "fertility-and-protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Balkema." }] }
+    ],
+    "faculties": [
+      { "id": "intercede-with-modimo", "name": "intercede between the living and Modimo", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "lineage", "notes": "Deceased elders become sacred intermediaries; veneration includes go phatlha (burning imphepho) and offerings of beer and grain.", "sources": [{ "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Balkema." }] }
+    ],
+    "materialCulture": [
+      { "id": "dinkho_tsa_badimo", "kind": "vessel", "name": "ancestral pots", "term": { "value": "dinkho tsa Badimo", "script": "Latn", "rom": "dinkho tsa Badimo" }, "role": "Sacred vessels in which beer, food or herbs are offered to the ancestors.", "notes": "Attested in descriptions of go phatlha rites.", "sources": [{ "kind": "reference", "reference": "Encyclopedia.com, 'Tswana Religion'; Mythlok, 'Sotho-Tswana mythology'." }] }
+    ],
+    "sources": [
+      { "claim": "The badimo are the deceased-elder ancestral spirits central to Sotho-Tswana religion, mediating between the living community and the remote Modimo and ensuring fertility, health and moral order.", "citations": [ { "kind": "reference", "reference": "Setiloane, G. M. (1976). The Image of God among the Sotho-Tswana. Balkema." }, { "kind": "reference", "reference": "Encyclopedia.com, 'Tswana Religion' (Encyclopedia of Religion)." } ], "weight": 0.9 }
+    ],
+    "notes": "Collective ancestral spirit-class (badimo / balimo). Treated as a deity-class entry (spirit-class -> deity), not an individual; sex/parentage left unrecorded. English plain word 'Ancestors' leads; native term in term-fields."
+  },
+  {
+    "id": "sotho_tswana_senkatana",
+    "name": { "primary": "Senkatana", "alt": ["Sankatana", "Litaolane"], "transliterations": { "sesotho": "Senkatana" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Sotho-Tswana",
+    "primaryTradition": "Sotho-Tswana",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "deliverance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Mofokeng, S. M. (1952). Senkatana. Johannesburg: Witwatersrand University Press (Bantu Treasury Series)." }] }
+    ],
+    "faculties": [
+      { "id": "slay-the-swallowing-monster", "name": "slay the all-swallowing monster", "term": { "value": "Kgodumodumo", "script": "Latn", "rom": "Kgodumodumo" }, "inheritability": "unique", "notes": "Born of the one pregnant woman the monster failed to swallow; on reaching manhood he killed Kgodumodumo and cut free the swallowed people and animals. Kgodumodumo ('great noise') is the monster, not a faculty.", "sources": [{ "kind": "reference", "reference": "Mofokeng, S. M. (1952). Senkatana. Witwatersrand University Press." }] }
+    ],
+    "materialCulture": [
+      { "id": "senkatana_blade", "kind": "blade", "name": "knife", "term": { "value": "thipa", "script": "Latn", "rom": "thipa" }, "role": "Blade with which Senkatana slits open the monster Kgodumodumo to release the swallowed people and beasts.", "notes": "Cutting-free of the swallowed is the standard motif of the tale; weapon named generically.", "sources": [{ "kind": "reference", "reference": "A Book of Creatures, 'Khodumodumo'; Mofokeng, S. M. (1952). Senkatana." }] }
+    ],
+    "sources": [
+      { "claim": "Senkatana, born to the sole woman not swallowed by the monster Kgodumodumo, grows up and kills the monster, freeing all the people and animals; made king, he is later murdered through a private grudge.", "citations": [ { "kind": "reference", "reference": "Mofokeng, S. M. (1952). Senkatana. Johannesburg: Witwatersrand University Press." }, { "kind": "reference", "reference": "Mofokeng, S. M.; Lenake, J. M. (ed., 2019). Senkatana. Oxford University Press / Wits University Press." } ], "weight": 0.85 }
+    ],
+    "notes": "Basotho culture-hero / deliverer of the Kgodumodumo legend, transmitted orally for centuries and dramatised by S. M. Mofokeng (1952). Sometimes called Litaolane in cognate versions. Classified demigod (culture-hero tier); explicitly not a divine type beyond the schema's allowance."
+  },
+  {
+    "id": "sotho_tswana_malope",
+    "name": { "primary": "Malope", "alt": [], "transliterations": { "setswana": "Malope" } },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Sotho-Tswana",
+    "primaryTradition": "Sotho-Tswana",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary-genealogical" },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Malope is the legendary common ancestor (kgosi) from whose house the principal Tswana chiefdoms branched: after his death his children Mohurutshe, Kwena, Kgatla, Ngwato and Ngwaketse founded the Bahurutshe, Bakwena, Bakgatla, Bangwato and Bangwaketse.", "citations": [ { "kind": "reference", "reference": "Ngcongco, L. (1982). 'Origins of the Tswana', Pula: Botswana Journal of African Studies, 2(1)." }, { "kind": "reference", "reference": "Schapera, I. (1952). The Ethnic Composition of Tswana Tribes. London: LSE Monographs on Social Anthropology." } ], "weight": 0.8 }
+    ],
+    "notes": "Eponymous/founding ancestor in Tswana genealogical tradition; the Bakwena, Bakgatla, Bangwato and Bangwaketse trace descent through his sons (each often bearing a clan totem, e.g. Kwena = crocodile). Treated as legendary mortal (royal-ancestor tier); not deified, though such founders feed the badimo cult. No attested personal gear."
+  },
+  {
+    "id": "ndebele_umlimu",
+    "name": { "primary": "Mlimu", "alt": ["Mwari", "Mwali", "uThixo", "uMdali"], "transliterations": { "ndebele": "uMlimu", "shona": "Mwari" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ndebele",
+    "primaryTradition": "Ndebele",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "uMlimu", "script": "Latn", "rom": "uMlimu" }, "sources": [{ "kind": "reference", "reference": "Daneel, M. L. (1970). The God of the Matopo Hills: An Essay on the Mwari Cult in Rhodesia. The Hague: Mouton." }] },
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "Dzivaguru", "script": "Latn", "rom": "Dzivaguru" }, "sources": [{ "kind": "reference", "reference": "Daneel, M. L. (1970). The God of the Matopo Hills. Mouton; Njelele/Matonjeni rain-oracle tradition." }] }
+    ],
+    "faculties": [
+      { "id": "speak-through-the-oracle", "name": "speak through the cave-oracle", "term": { "value": "izwi", "script": "Latn", "rom": "izwi (the Voice)" }, "inheritability": "unique", "notes": "Mwari/uMlimu answers petitioners as a disembodied 'Voice' at the Njelele/Matonjeni shrine in the Matobo Hills; communication is also mediated by spirit-mediums and the ancestors.", "sources": [{ "kind": "reference", "reference": "Daneel, M. L. (1970). The God of the Matopo Hills. Mouton; Ranger, T. (1999). Voices from the Rocks. James Currey." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Ndebele Supreme Being is called uMlimu, identified with the Shona/Kalanga high-god Mwari (also Musikavanhu 'creator of people', Nyadenga 'owner of the heavens', Dzivaguru 'the great pool'), creator and controller of rain and fertility.", "citations": [ { "kind": "reference", "reference": "Daneel, M. L. (1970). The God of the Matopo Hills: An Essay on the Mwari Cult in Rhodesia. The Hague: Mouton." }, { "kind": "reference", "reference": "Arntsen, 'Shona and Ndebele Religions' (postcolonialweb.org)." } ], "weight": 0.9 },
+      { "claim": "uMlimu/Mwari is approached through the amadlozi (Ndebele ancestors; Shona vadzimu) and through the rain-oracle at Njelele/Matonjeni in the Matobo Hills, headquarters of the cult for some 500 years.", "citations": [ { "kind": "reference", "reference": "Ranger, T. (1999). Voices from the Rocks: Nature, Culture and History in the Matopos Hills of Zimbabwe. Oxford: James Currey." }, { "kind": "reference", "reference": "Wikipedia, 'Njelele Shrine'." } ], "weight": 0.85 }
+    ],
+    "notes": "Supreme Being of the (Zimbabwean/Northern) Ndebele, adopted from and identified with the Shona-Kalanga Mwari cult of the Matopos. The Ndebele also call him uNkulunkulu, uThixo, uMdali, uMvelinqangi. Conceived as creator and sustainer; addressed via ancestors and the Matonjeni oracle. Classified deity (high-god)."
+  },
+  {
+    "id": "ndebele_unkulunkulu",
+    "name": { "primary": "Unkulunkulu", "alt": ["the Old, Old One", "uMvelinqangi"], "transliterations": { "ndebele": "uNkulunkulu", "zulu": "uNkulunkulu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ndebele",
+    "primaryTradition": "Ndebele",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "first-ancestor", "contextTag": "lifelong", "term": { "value": "uNkulunkulu", "script": "Latn", "rom": "uNkulunkulu" }, "sources": [{ "kind": "reference", "reference": "Callaway, H. (1870). The Religious System of the Amazulu. Springvale: Springvale Mission Press, pp. 1-7." }] },
+      { "sphereId": "origin-of-humanity", "contextTag": "lifelong", "term": { "value": "uHlanga", "script": "Latn", "rom": "uHlanga (the reed-bed)" }, "sources": [{ "kind": "reference", "reference": "Callaway, H. (1870). The Religious System of the Amazulu, pp. 1-7." }] }
+    ],
+    "faculties": [
+      { "id": "break-off-humanity-from-reeds", "name": "break humankind off from the reed-bed", "term": { "value": "uHlanga", "script": "Latn", "rom": "uHlanga" }, "inheritability": "unique", "notes": "Sprouting from a reed in the primal swamp Uhlanga, Unkulunkulu broke off and then plucked men, women, cattle, beasts, sun and moon from the reeds.", "sources": [{ "kind": "reference", "reference": "Callaway, H. (1870). The Religious System of the Amazulu, pp. 1-7." }] },
+      { "id": "send-the-word-of-death", "name": "send the message of death by the lizard", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "He sent the chameleon to say 'men shall not die'; the chameleon dawdled and the swift lizard arrived first with 'men shall die', so mortality entered the world.", "sources": [{ "kind": "reference", "reference": "Callaway, H. (1870). The Religious System of the Amazulu, pp. 3-7." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Unkulunkulu ('the old, old one') is the first man / first ancestor who sprang from the reed-bed Uhlanga and broke off humankind and the world's creatures, shared by the Zulu and Ndebele.", "citations": [ { "kind": "reference", "reference": "Callaway, H. (1870). The Religious System of the Amazulu. Springvale Mission Press." }, { "kind": "reference", "reference": "Berglund, A.-I. (1976). Zulu Thought-Patterns and Symbolism. London: Hurst." } ], "weight": 0.9 },
+      { "claim": "The origin of death is attributed to the race of the slow chameleon and the swift lizard bearing opposed messages from Unkulunkulu.", "citations": [{ "kind": "reference", "reference": "Callaway, H. (1870). The Religious System of the Amazulu, pp. 3-7." }], "weight": 0.85 }
+    ],
+    "notes": "First-man / progenitor figure of the Nguni (Zulu and Ndebele). Originally a 'first ancestor' who later, under missionary influence, became a name for the creator-God. Treated as a deity-class entry (primordial ancestor-creator); vitalStatus 'deceased' because he is the dead first ancestor. uMvelinqangi ('the first to appear') is a near-synonym."
+  },
+  {
+    "id": "ndebele_amadlozi",
+    "name": { "primary": "Ancestors", "alt": ["amadhlozi", "abezimu"], "transliterations": { "ndebele": "amadlozi", "shona": "vadzimu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ndebele",
+    "primaryTradition": "Ndebele",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "amadlozi", "script": "Latn", "rom": "amadlozi" }, "sources": [{ "kind": "reference", "reference": "Arntsen, 'Shona and Ndebele Religions' (postcolonialweb.org), on the vadzimu/amadlozi." }] }
+    ],
+    "faculties": [
+      { "id": "carry-prayers-to-umlimu", "name": "carry prayers and thanks to uMlimu", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "lineage", "notes": "The amadlozi form an invisible community among the living, conveying petitions to Mwari/uMlimu; not themselves worshipped, but God is worshipped through them. Solicitous yet jealous, they require placation by sacrifice.", "sources": [{ "kind": "reference", "reference": "Arntsen, 'Shona and Ndebele Religions' (postcolonialweb.org)." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The amadlozi (Ndebele; Shona vadzimu) are the deceased ancestors who form an invisible community among the living and act as intermediaries to uMlimu/Mwari, requiring placation through sacrifice.", "citations": [ { "kind": "reference", "reference": "Arntsen, 'Shona and Ndebele Religions' (postcolonialweb.org)." }, { "kind": "reference", "reference": "Daneel, M. L. (1970). The God of the Matopo Hills. Mouton." } ], "weight": 0.85 }
+    ],
+    "notes": "Collective ancestral spirit-class of the Ndebele (amadlozi / abezimu). Treated as a deity-class entry (spirit-class -> deity), not an individual. English plain word 'Ancestors' leads."
+  },
+  {
+    "id": "luo_nyasaye",
+    "name": { "primary": "Nyasaye", "alt": ["Obong'o", "Nyakalaga"], "transliterations": { "dholuo": "Nyasaye" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Nyasaye", "script": "Latn", "rom": "Nyasaye" }, "sources": [{ "kind": "reference", "reference": "Mboya, P. (1938). Luo Kitgi gi Timbegi (Luo Customs and Beliefs). Kisumu." }] },
+      { "sphereId": "omnipresence", "contextTag": "lifelong", "term": { "value": "Nyakalaga", "script": "Latn", "rom": "Nyakalaga" }, "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2), 123-130." }] }
+    ],
+    "faculties": [
+      { "id": "create-all-things", "name": "create the beginning of all things", "term": { "value": "chwech", "script": "Latn", "rom": "chwech (creation)" }, "inheritability": "unique", "notes": "Nyasaye is 'creator of the beginning'; Nyakalaga ('he who crawls/creeps everywhere') marks omnipresence; Obong'o marks his being one-of-a-kind / only-begotten.", "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2)." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Nyasaye is the supreme creator of the Luo, omnipotent but remote, also called Obong'o Nyakalaga ('the one-of-a-kind, the all-powerful ubiquitous one'); the Luo are strictly monotheistic in this high-god.", "citations": [ { "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2), 123-130." }, { "kind": "reference", "reference": "Mboya, P. (1938). Luo Kitgi gi Timbegi. Kisumu." } ], "weight": 0.9 },
+      { "claim": "Nyasaye leaves the management of earthly affairs to lesser spiritual forces and is approached through the ancestral spirits (juogi).", "citations": [{ "kind": "reference", "reference": "p'Bitek, O. (1971). Religion of the Central Luo. Nairobi: East African Literature Bureau." }], "weight": 0.8 }
+    ],
+    "notes": "Supreme Being of the Luo of East Africa (Kenya/Tanzania/Uganda). Name Nyasaye is widely shared in the Lake region. Distinct from Were (a regional/older name for the high-god) and from the juogi (spirits). Classified deity (high-god)."
+  },
+  {
+    "id": "luo_were",
+    "name": { "primary": "Were", "alt": ["Nyasaye Were", "Were Nyakalaga"], "transliterations": { "dholuo": "Were" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Were", "script": "Latn", "rom": "Were" }, "sources": [{ "kind": "reference", "reference": "p'Bitek, O. (1971). Religion of the Central Luo. Nairobi: East African Literature Bureau." }] },
+      { "sphereId": "providence", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2)." }] }
+    ],
+    "faculties": [
+      { "id": "grant-and-withhold", "name": "grant and withhold welfare", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Were is invoked for prosperity, rain and children and is the addressee of prayer in older / central-Luo usage; the name is often paired with or equated to Nyasaye.", "sources": [{ "kind": "reference", "reference": "p'Bitek, O. (1971). Religion of the Central Luo. East African Literature Bureau." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Were is an older / Central-Luo (and neighbouring Luhya) name for the sky high-god, frequently identified or compounded with Nyasaye, invoked for welfare, rain and offspring.", "citations": [ { "kind": "reference", "reference": "p'Bitek, O. (1971). Religion of the Central Luo. Nairobi: East African Literature Bureau." }, { "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2), 123-130." } ], "weight": 0.75 }
+    ],
+    "notes": "High-god name among the Luo and shared with the neighbouring Luhya. Often treated as an aspect or alternate name of Nyasaye rather than a fully separate deity; entered separately because both names are explicitly attested in the Luo material. Classified deity (high-god)."
+  },
+  {
+    "id": "luo_juogi",
+    "name": { "primary": "Spirits", "alt": ["jogi", "the jok-spirits"], "transliterations": { "dholuo": "juogi" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "juogi", "script": "Latn", "rom": "juogi (sing. jok)" }, "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2), 123-130." }] }
+    ],
+    "faculties": [
+      { "id": "mediate-and-afflict", "name": "mediate, protect, and afflict", "term": { "value": "jok", "script": "Latn", "rom": "jok" }, "inheritability": "lineage", "notes": "Juogi (sing. jok) are ancestral and free spirits, divided into good and bad (known and unknown); they watch over the living, give guidance and protection, and may cause affliction, honoured through ritual and offering.", "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2)." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The juogi (sing. jok) are the ancestral and other spirits of Luo cosmology that mediate between humanity and Nyasaye, classed into good and bad, and into known and unknown.", "citations": [ { "kind": "reference", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2), 123-130." }, { "kind": "reference", "reference": "p'Bitek, O. (1971). Religion of the Central Luo. East African Literature Bureau." } ], "weight": 0.85 }
+    ],
+    "notes": "Collective spirit-class (juogi, from the central concept jok) of the Luo. Treated as a deity-class entry (spirit-class -> deity), not an individual. English plain word 'Spirits' leads."
+  },
+  {
+    "id": "luo_luanda_magere",
+    "name": { "primary": "Luanda Magere", "alt": ["Lwanda Magere", "the Stone Man"], "transliterations": { "dholuo": "Luanda Magere" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary-historical" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "lweny", "script": "Latn", "rom": "lweny (war)" }, "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1967). History of the Southern Luo, Vol. I. Nairobi: East African Publishing House." }] }
+    ],
+    "faculties": [
+      { "id": "turn-aside-weapons", "name": "turn aside weapons with a body of stone", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "His flesh was stone, deflecting arrows, spears and clubs; his sole vulnerability was his shadow, which bled when cut. A Lang'o (Nandi) spear cast into his shadow killed him and his body turned to rock by the River Nyando.", "sources": [{ "kind": "reference", "reference": "Ogot, B. A. (1967). History of the Southern Luo, Vol. I. East African Publishing House." }] }
+    ],
+    "materialCulture": [
+      { "id": "magere_shield_spear", "kind": "arms", "name": "shield and spear", "term": { "value": "okumba gi tong'", "script": "Latn", "rom": "okumba gi tong'" }, "role": "War-gear of the Luo warrior; Luanda Magere is remembered fighting the Lang'o with shield and spear, and his death-stone became a shrine where warriors whetted their blades before battle.", "notes": "Generic Luo warrior arms (okumba = shield, tong' = spear); the death-rock at Sidho/Awasi is the cult object.", "sources": [{ "kind": "reference", "reference": "Nation Africa, 'Fabled Luo warrior Luanda Magere still revered by many'; Ogot, B. A. (1967). History of the Southern Luo." }] }
+    ],
+    "sources": [
+      { "claim": "Luanda Magere was a legendary stone-bodied Luo warrior of the Sidho/Kano area who could not be wounded except through his shadow; betrayed by his Nandi (Lang'o) wife, he was speared in the shadow and turned to stone near the River Nyando.", "citations": [ { "kind": "reference", "reference": "Ogot, B. A. (1967). History of the Southern Luo, Volume I: Migration and Settlement. Nairobi: East African Publishing House." }, { "kind": "reference", "reference": "Wikipedia, 'Luanda Magere'." } ], "weight": 0.8 }
+    ],
+    "notes": "Luo culture-hero / invincible warrior of the Kano plains (Kisumu region), traditionally placed in the 18th century. The shrine-stone at Sidho near Awasi remains a revered site. Classified demigod (culture-hero tier); the supernatural invulnerability and stone-transformation justify the tier."
+  },
+  {
+    "id": "luo_ramogi",
+    "name": { "primary": "Ramogi Ajwang", "alt": ["Ramogi", "Ramogi Ajwang'"], "transliterations": { "dholuo": "Ramogi Ajwang'" } },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Luo",
+    "primaryTradition": "Luo",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary-historical" },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Ramogi Ajwang' is remembered as the founding ancestor of the (Kenyan) Luo, leading the Nilotic Luo from the Pubungu/Pakwach dispersal in Uganda to settle at Got Ramogi (Ramogi Hill) near Lake Victoria.", "citations": [ { "kind": "reference", "reference": "Ogot, B. A. (1967). History of the Southern Luo, Vol. I. Nairobi: East African Publishing House." }, { "kind": "reference", "reference": "Onjala et al. (2024). 'Luo Cultural Shrines: The Hembko of Got Ramogi, Kenya', IJISRT." } ], "weight": 0.8 }
+    ],
+    "notes": "Eponymous migration-ancestor of the Kenyan Luo; Got Ramogi (Ramogi Hill) in Siaya is the traditional first settlement and a network of shrines (hembko). Treated as legendary mortal (founding-ancestor tier), venerated within the ancestral framework but not deified. No attested personal gear."
+  },
+  {
+    "id": "chaga_ruwa",
+    "name": { "primary": "Ruwa", "alt": ["Ruva", "Iruva"], "transliterations": { "kichagga": "Ruwa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chaga",
+    "primaryTradition": "Chaga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Ruwa", "script": "Latn", "rom": "Ruwa (sun)" }, "sources": [{ "kind": "reference", "reference": "Dundas, C. (1924). Kilimanjaro and Its People. London: H. F. & G. Witherby, pp. 107-109." }] },
+      { "sphereId": "providence", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Gutmann, B. (1926). Das Recht der Dschagga. Munich: Beck." }] }
+    ],
+    "faculties": [
+      { "id": "sustain-and-deliver", "name": "provide sustenance and deliver from distress", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Ruwa is supreme above all powers and ultimate arbiter of fate, merciful and tolerant when entreated; revered less as maker of humankind than as liberator and provider of sustenance and rain.", "sources": [{ "kind": "reference", "reference": "Dundas, C. (1924). Kilimanjaro and Its People, pp. 107-109." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Ruwa is the Chagga Supreme Being whose name is identical with their word for the sun; he is supreme above all other powers and the ultimate arbiter of fate, though distant from daily life.", "citations": [ { "kind": "reference", "reference": "Dundas, C. (1924). Kilimanjaro and Its People: A History of the Wachagga, their Laws, Customs and Legends. London: Witherby, pp. 107-109." }, { "kind": "reference", "reference": "Gutmann, B. (1926). Das Recht der Dschagga. Munich: C. H. Beck." } ], "weight": 0.9 },
+      { "claim": "Ruwa is regarded chiefly as liberator and provider of sustenance rather than creator of humankind; his abode is associated with the summit of Mount Kilimanjaro.", "citations": [{ "kind": "reference", "reference": "Dundas, C. (1924). Kilimanjaro and Its People. Witherby." }], "weight": 0.8 }
+    ],
+    "notes": "Supreme Being / sun-high-god of the Chaga (Wachagga, Chagga) of Mount Kilimanjaro, Tanzania. Documented by the classic ethnographies of Dundas (1924) and Gutmann (1926). Whether Ruwa is the sun or dwells in it was, Dundas notes, unsettled among the Chaga themselves. Classified deity (high-god)."
+  },
+  {
+    "id": "chaga_warimu",
+    "name": { "primary": "Ancestral spirits", "alt": ["the dead", "shades"], "transliterations": { "kichagga": "warimu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chaga",
+    "primaryTradition": "Chaga",
+    "sex": "unknown",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "ancestors", "contextTag": "lifelong", "term": { "value": "warimu", "script": "Latn", "rom": "warimu" }, "sources": [{ "kind": "reference", "reference": "Gutmann, B. (1926). Das Recht der Dschagga. Munich: Beck." }] }
+    ],
+    "faculties": [
+      { "id": "watch-over-the-living", "name": "watch over and demand sustenance from the living", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "lineage", "notes": "The dead continue in the spirit world and require sustenance; both living and dead enjoy offerings of slaughtered beasts and libations of beer, blood and milk. Ancestors of kings are propitiated for the whole community.", "sources": [{ "kind": "reference", "reference": "Dundas, C. (1924). Kilimanjaro and Its People. Witherby; Gutmann, B. (1926). Das Recht der Dschagga." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The warimu are the Chaga ancestral spirits within a cosmology that rejects ultimate death (the lineage of ancestors and descendants being perpetual); they are propitiated with offerings of meat and libations of beer, blood and milk.", "citations": [ { "kind": "reference", "reference": "Gutmann, B. (1926). Das Recht der Dschagga. Munich: C. H. Beck." }, { "kind": "reference", "reference": "Dundas, C. (1924). Kilimanjaro and Its People. London: Witherby." } ], "weight": 0.85 }
+    ],
+    "notes": "Collective ancestral spirit-class of the Chaga (warimu). Treated as a deity-class entry (spirit-class -> deity), not an individual. English plain phrase 'Ancestral spirits' leads."
+  },
+  {
+    "id": "chaga_murile",
+    "name": { "primary": "Murile", "alt": ["Mrile", "Murle"], "transliterations": { "kichagga": "Murile" } },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chaga",
+    "primaryTradition": "Chaga",
+    "sex": "male",
+    "vitalStatus": "alive",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [],
+    "faculties": [
+      { "id": "ascend-to-the-sky", "name": "ascend to the sky-country on a stool", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Murile recites a charm over his father's stool and rises into the Heaven-country; refusing all callers, he passes out of sight.", "sources": [{ "kind": "reference", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: Harrap, ch. V 'Mortals who have visited the sky'." }] },
+      { "id": "bring-fire-to-the-moon", "name": "bring fire-making to the Moon-chief", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In the sky he makes fire by wood-friction for the Moon-chief, who hails him as a great healer and rewards him; he marries, prospers and finally returns to earth.", "sources": [{ "kind": "reference", "reference": "Werner, A. (1933). Myths and Legends of the Bantu, ch. V; Gateway Africa, 'Murile and the Moonchief'." }] }
+    ],
+    "materialCulture": [
+      { "id": "murile_stool", "kind": "implement", "name": "magic stool", "term": { "value": "", "script": "", "rom": "" }, "role": "His father's carved stool, which carries Murile up into the sky-country when he speaks the charm over it.", "notes": "Central object of the ascent; Chaga term not recorded in the English sources consulted.", "sources": [{ "kind": "reference", "reference": "Werner, A. (1933). Myths and Legends of the Bantu, ch. V." }] }
+    ],
+    "sources": [
+      { "claim": "Murile (Mrile) is the Kilimanjaro youth who ascends on a magic stool to the sky-country, reaches the kraal of the Moon-chief, gives him fire by friction and is richly rewarded, then returns to earth.", "citations": [ { "kind": "reference", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: Harrap & Co., ch. V ('Mortals who have visited the sky')." }, { "kind": "reference", "reference": "Gutmann, B. (1909). Dichten und Denken der Dschagga-Neger. Leipzig (collection of the Mrile cycle)." } ], "weight": 0.8 }
+    ],
+    "notes": "Chaga folktale culture-hero (the Mrile/Murile cycle) collected by Gutmann and retold by Alice Werner. A mortal youth, not a god; classified mortal. The distinct fragmentary figure 'Mrule, the stranger from the sky' (one-legged, half grass) is not merged here. No death recorded (he returns home), so vitalStatus 'alive'."
+  },
+  {
+    "id": "berber_amun_siwa",
+    "name": { "primary": "Ammon", "alt": ["Amun of Siwa", "Zeus Ammon", "Jupiter Ammon"], "transliterations": { "greek": "Ammon", "egyptian": "Jmn (Amun)" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "antiquity" },
+    "domains": [
+      { "sphereId": "oracle-prophecy", "contextTag": "lifelong", "term": { "value": "Ammon", "script": "Grek", "rom": "Ammon" }, "sources": [{ "kind": "reference", "reference": "Herodotus, Histories 2.42, 2.55 (the Libyan Ammon and the Siwa oracle)." }] },
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans: An Essay. London: Macmillan, ch. on Religion." }] }
+    ],
+    "faculties": [
+      { "id": "deliver-oracles", "name": "deliver oracles to petitioners", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "His desert oracle at Siwa was reputed truthful; Perseus and Heracles were said to have consulted it, and it proclaimed Alexander the Great son of (Zeus-)Ammon.", "sources": [{ "kind": "reference", "reference": "Herodotus, Histories 2.42, 2.54-55; Arrian, Anabasis 3.3-4." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Ammon was a Libyan (Amazigh) deity whose ram-form oracle stood at the Siwa oasis west of Egypt; Herodotus reckons him a Libyan god, and Greeks identified him with Zeus (Zeus Ammon).", "citations": [ { "kind": "reference", "reference": "Herodotus, Histories 2.42, 2.55." }, { "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans: An Essay. London: Macmillan & Co., chapter on Religion." } ], "weight": 0.85 },
+      { "claim": "The Siwa oracle of Ammon was one of antiquity's most revered (and the only non-Greek of the seven great oracles); Alexander the Great visited it and was proclaimed son of the god.", "citations": [ { "kind": "reference", "reference": "Arrian, Anabasis of Alexander 3.3-4." }, { "kind": "reference", "reference": "Livius.org, 'Ammon (Siwa)'." } ], "weight": 0.8 }
+    ],
+    "notes": "Entered as the Libyan/Amazigh Ammon (Amun) of the Siwa oasis, per the task's framing of Ammon-Amun of Siwa as Libyan. Closely fused with Egyptian Amun and Greek Zeus, but his desert oracle is treated by classical authors as a Libyan cult. He is also reckoned the father of the Berber war-god Gurzil. Classified deity (oracular sky-god)."
+  },
+  {
+    "id": "berber_gurzil",
+    "name": { "primary": "Gurzil", "alt": ["the bull-god"], "transliterations": { "latin": "Gurzil" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["berber_amun_siwa"],
+    "temporal": { "era": "antiquity" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Gurzil", "script": "Latn", "rom": "Gurzil" }, "sources": [{ "kind": "reference", "reference": "Corippus, Iohannis (De Bellis Libycis), Books II-VIII." }] }
+    ],
+    "faculties": [
+      { "id": "lead-the-host-as-a-bull", "name": "lead the war-host in the form of a bull", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Depicted as a bull or bull-headed warrior; the Laguatan loosed a sacred bull, Gurzil, against the Byzantines, his charge a theological act.", "sources": [{ "kind": "reference", "reference": "Corippus, Iohannis; Bates, O. (1914). The Eastern Libyans, ch. on Religion." }] }
+    ],
+    "materialCulture": [
+      { "id": "gurzil_idol", "kind": "cult-image", "name": "war idol of Gurzil", "term": { "value": "", "script": "", "rom": "" }, "role": "Portable cult-image / stone idol of the god carried into battle by the Laguatan; the priest-chief Ierna died trying to rescue it, and it was destroyed.", "notes": "A hilltop sanctuary at Ghirza (Libya) held a stone idol still receiving worship in the 9th c. per al-Bakri; a neo-Punic inscription from Lepcis Magna is the earliest epigraphic trace.", "sources": [{ "kind": "reference", "reference": "Corippus, Iohannis; al-Bakri, Kitab al-Masalik wa-l-Mamalik (11th c.); Mattingly, D. J. (1995). Tripolitania. London: Batsford." }] }
+    ],
+    "sources": [
+      { "claim": "Gurzil was a Berber war-god conceived as the son of Ammon and a cow and depicted as a bull or bull-headed warrior, taken into battle by the Laguatan against the Byzantine general John Troglita (recorded by Corippus, mid-6th c.).", "citations": [ { "kind": "reference", "reference": "Corippus, Iohannis (De Bellis Libycis), trans. G. W. Shea (1998). Lewiston: Edwin Mellen Press." }, { "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans. London: Macmillan, chapter on Religion." } ], "weight": 0.85 },
+      { "claim": "A hilltop sanctuary of Gurzil is plausibly located at Ghirza in Libya, where al-Bakri reports a stone idol still venerated; the cult's priest-chief Ierna was killed defending the image.", "citations": [ { "kind": "reference", "reference": "al-Bakri, Kitab al-Masalik wa-l-Mamalik (11th c.)." }, { "kind": "reference", "reference": "Mattingly, D. J. (1995). Tripolitania. London: Batsford." } ], "weight": 0.7 }
+    ],
+    "notes": "Bull war-god of the Laguatan and other Tripolitanian Berbers, our fullest source being Corippus' Latin epic Iohannis. parentIds links to the Siwan Ammon, his attested father. Classified deity (war-god)."
+  },
+  {
+    "id": "berber_ifri",
+    "name": { "primary": "Africa", "alt": ["Ifri", "Ifru", "Dea Africa"], "transliterations": { "tamazight": "Ifri / Ifru", "latin": "Africa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "antiquity" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Ifri", "script": "Latn", "rom": "Ifri" }, "sources": [{ "kind": "reference", "reference": "Pliny the Elder, Natural History (the Libyan war-goddess); Bates, O. (1914). The Eastern Libyans." }] },
+      { "sphereId": "caves-and-earth", "contextTag": "lifelong", "term": { "value": "ifri", "script": "Latn", "rom": "ifri (cave)" }, "sources": [{ "kind": "reference", "reference": "Camps, G. (1990). 'Africa (deesse)', Encyclopedie berbere 2." }] }
+    ],
+    "faculties": [
+      { "id": "protect-her-worshippers", "name": "protect her worshippers and the home", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Honoured as protector of worshippers, of merchants/traders, and of the home; her rites were held in caves (Berber ifri 'cave', pl. ifran).", "sources": [{ "kind": "reference", "reference": "Camps, G. (1990). 'Africa (deesse)', Encyclopedie berbere 2." }] }
+    ],
+    "materialCulture": [
+      { "id": "ifri_coinage", "kind": "iconography", "name": "Africa coin-image", "term": { "value": "", "script": "", "rom": "" }, "role": "The goddess's protective image struck on Numidian and Roman provincial coins (1st c. BCE onward), often elephant-scalp-crowned.", "notes": "Coins/materials found chiefly in Algeria (Albulae/Ain Temouchent; Guechguech near Constantine).", "sources": [{ "kind": "reference", "reference": "Camps, G. (1990). 'Africa (deesse)', Encyclopedie berbere 2; Wikipedia, 'Africa (goddess)'." }] }
+    ],
+    "sources": [
+      { "claim": "Ifri/Ifru (Latin Dea Africa) was a Berber goddess of fertility, the home and the cave, also honoured as a war-goddess and protector; her name (Berber ifri, 'cave', pl. ifran) underlies the name of the tribe Afri and of 'Africa'.", "citations": [ { "kind": "reference", "reference": "Camps, G. (1990). 'Africa (deesse)', Encyclopedie berbere 2." }, { "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans. London: Macmillan." } ], "weight": 0.8 },
+      { "claim": "She was depicted on Numidian and Roman provincial coinage and likened to the Roman Vesta; her cave-cult drew merchants seeking protection.", "citations": [ { "kind": "reference", "reference": "Wikipedia, 'Africa (goddess)'." }, { "kind": "reference", "reference": "Camps, G. (1990). 'Africa (deesse)', Encyclopedie berbere 2." } ], "weight": 0.65 }
+    ],
+    "notes": "Berber goddess Ifri/Ifru, the 'African goddess' (Dea Africa) named in the task. English plain word for the Latinized name 'Africa' leads; native Tamazight Ifri/Ifru in term-fields. Pliny attests a Libyan war-goddess; later iconography fuses her with the personified province Africa. Classified deity."
+  },
+  {
+    "id": "berber_anti",
+    "name": { "primary": "Antaeus", "alt": ["Anti", "Antaios"], "transliterations": { "greek": "Antaios", "berber": "Anti" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Berber",
+    "primaryTradition": "Berber",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "earth-and-strength", "contextTag": "lifelong", "term": { "value": "Anti", "script": "Latn", "rom": "Anti" }, "sources": [{ "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans. London: Macmillan (the Berber Anti)." }] }
+    ],
+    "faculties": [
+      { "id": "renew-strength-from-the-earth", "name": "renew strength by touching the earth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "As son of Earth, his strength was restored whenever he touched the ground, making him invincible until Heracles lifted him clear and crushed him.", "sources": [{ "kind": "reference", "reference": "Apollodorus, Bibliotheca 2.5.11; Pindar, Isthmian 4." }] },
+      { "id": "compel-wrestling-of-travellers", "name": "compel travellers to deadly wrestling", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "He forced passers-by to wrestle and roofed the temple of his father Poseidon with their skulls.", "sources": [{ "kind": "reference", "reference": "Pindar, Isthmian 4; Diodorus Siculus 4.17." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Antaeus, known to the Berbers as Anti, was a Libyan giant, son of Poseidon and Gaia, who wrestled and killed travellers until Heracles lifted him off the earth (the source of his renewing strength) and crushed him.", "citations": [ { "kind": "reference", "reference": "Apollodorus, Bibliotheca 2.5.11." }, { "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans. London: Macmillan & Co." } ], "weight": 0.8 },
+      { "claim": "His cult was localised in North Africa: Pomponius Mela makes the goddess Tinjis (eponym of Tangier) his wife, and at Tingis his giant 'bones' were shown; a Roman painting was read as the Libyan Antaeus with Berber features.", "citations": [ { "kind": "reference", "reference": "Pomponius Mela, De Chorographia 3.10; Plutarch, Sertorius 9." }, { "kind": "reference", "reference": "Bates, O. (1914). The Eastern Libyans (Berber features of the Antaeus painting)." } ], "weight": 0.7 }
+    ],
+    "notes": "Libyan/Berber earth-giant Anti, known mainly through Greco-Roman sources (Pindar, Apollodorus, Plutarch) but explicitly claimed as a Berber figure (Anti) and localised at Tingis/Tangier. Son of a sea-god and Earth, so classified demigod. English plain form of the classical name leads; Berber 'Anti' in term-fields."
+  },
+  {
+    "id": "guanche_achaman",
+    "name": { "primary": "Achaman", "alt": ["Achaman (Achamán)", "Achuhuran", "Achahucanac", "Achguayaxerax"], "transliterations": { "guanche": "Achamán" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Achamán", "script": "Latn", "rom": "Achaman" }, "sources": [{ "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria. Seville (Book I)." }] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Achguayaxerax", "script": "Latn", "rom": "Achguayaxerax" }, "sources": [{ "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria." }] }
+    ],
+    "faculties": [
+      { "id": "sustain-all-things", "name": "sustain and uphold all things", "term": { "value": "Achahucanac", "script": "Latn", "rom": "Achahucanac" }, "inheritability": "unique", "notes": "Epithets Achahurahan, Achahucanac, Achguayaxerax glossed by Espinosa as 'the great, the sublime, He who sustains all things'.", "sources": [{ "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria, Book I." }] },
+      { "id": "free-the-sun", "name": "free the captured sun and defeat Guayota", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "At the people's prayer he descended into Echeyde (Teide), defeated the demon Guayota, and freed the sun-god Magec, restoring daylight.", "sources": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Achaman was the Guanche supreme sky-god and creator of Tenerife, his name meaning 'the skies'; the Dominican Alonso de Espinosa (1594) records him under epithets Achahurahan, Achahucanac and Achguayaxerax, 'the great, the sublime, He who sustains all things'.", "citations": [ { "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria. Seville." }, { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna: Universidad de La Laguna." } ], "weight": 0.85 },
+      { "claim": "The same supreme sky-god is named differently across the islands: Achaman (Tenerife), Acoran (Gran Canaria), Eraorahan (El Hierro), Abora (La Palma), Orahan (La Gomera).", "citations": [ { "kind": "reference", "reference": "Abreu Galindo, J. de (c. 1602). Historia de la conquista de las siete islas de Canaria." }, { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." } ], "weight": 0.8 }
+    ],
+    "notes": "Supreme creator sky-god of the Guanches of Tenerife. Principal early source is Espinosa (1594); the modern synthesis is Tejera Gaspar (1988). Classified deity (high-god)."
+  },
+  {
+    "id": "guanche_acoran",
+    "name": { "primary": "Acoran", "alt": ["Acoran (Acorán)", "Eraorahan", "Abora", "Orahan"], "transliterations": { "guanche": "Acorán" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Acorán", "script": "Latn", "rom": "Acoran" }, "sources": [{ "kind": "reference", "reference": "Abreu Galindo, J. de (c. 1602). Historia de la conquista de las siete islas de Canaria." }] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." }] }
+    ],
+    "faculties": [
+      { "id": "uphold-the-world-from-the-heights", "name": "uphold the world from the sacred heights", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Like Achaman, the high-god of the other islands dwells in sacred mountains and oversees human welfare, agriculture and natural order.", "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Acoran was the supreme creator sky-god of the aboriginal people of Gran Canaria, counterpart to Achaman of Tenerife, with cognate high-gods Eraorahan (El Hierro), Abora (La Palma) and Orahan (La Gomera).", "citations": [ { "kind": "reference", "reference": "Abreu Galindo, J. de (c. 1602). Historia de la conquista de las siete islas de Canaria." }, { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." } ], "weight": 0.8 }
+    ],
+    "notes": "Supreme being of the pre-conquest Canarii of Gran Canaria (and, under cognate names, of El Hierro, La Palma and La Gomera). Entered separately from Achaman because the island-specific names are distinctly attested; the task lists Achaman under Tenerife and these as the wider Canarian high-god. On El Hierro women also venerated the goddess Moneiba. Classified deity (high-god)."
+  },
+  {
+    "id": "guanche_chaxiraxi",
+    "name": { "primary": "Chaxiraxi", "alt": ["Axerax", "the Sun Mother", "Achmayex Guayaxerax"], "transliterations": { "guanche": "Chaxiraxi" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "Chaxiraxi", "script": "Latn", "rom": "Chaxiraxi" }, "sources": [{ "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria, Book I." }] },
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Achmayex Guayaxerax", "script": "Latn", "rom": "Achmayex Guayaxerax" }, "sources": [{ "kind": "reference", "reference": "Barrios Garcia, J. (1997). 'Tara: a study of the Canarian astronomical pantheon', Archaeoastronomy." }] }
+    ],
+    "faculties": [
+      { "id": "mother-the-sustainer-of-the-world", "name": "mother the sustainer of heaven and earth", "term": { "value": "Achmayex Guayaxerax Achoron Achamán", "script": "Latn", "rom": "Achmayex Guayaxerax Achoron Achaman" }, "inheritability": "unique", "notes": "Her full epithet is glossed 'mother of the sustainer of heaven and earth'; she is associated with the star Canopus.", "sources": [{ "kind": "reference", "reference": "Barrios Garcia, J. (1997). 'Tara'. Archaeoastronomy; Espinosa, A. de (1594)." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Chaxiraxi is the Guanche Sun Mother and mother-goddess of Tenerife, 'mother of the sustainer of heaven and earth' (Achmayex Guayaxerax Achoron Achaman), associated with fertility and the star Canopus.", "citations": [ { "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria. Seville." }, { "kind": "reference", "reference": "Barrios Garcia, J. (1997). 'Tara: a study of the Canarian astronomical pantheon', Archaeoastronomy 22 (JHA suppl.)." } ], "weight": 0.8 },
+      { "claim": "After the conquest her cult was syncretised with the Virgin of Candelaria, the principal Catholic festivity of Tenerife.", "citations": [{ "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria." }], "weight": 0.75 }
+    ],
+    "notes": "Mother-goddess / Sun Mother of the Guanches of Tenerife, consort of the high-god, mediated to humans by the Maxios spirits. Her cult underlies the later Marian cult of Candelaria. Classified deity."
+  },
+  {
+    "id": "guanche_magec",
+    "name": { "primary": "Magec", "alt": ["Maguec", "Maguet"], "transliterations": { "guanche": "Magec (Ma-gheq)" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Magec", "script": "Latn", "rom": "Magec" }, "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." }] },
+      { "sphereId": "light", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Wolfel, D. J. (1965). Monumenta Linguae Canariae. Graz: Akademische Druck- u. Verlagsanstalt." }] }
+    ],
+    "faculties": [
+      { "id": "cross-the-sky-as-the-sun", "name": "cross the sky as the sun", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Magec is the sun/light itself; captured by Guayota and imprisoned in Teide, plunging the world into darkness, then freed by Achaman to resume crossing the sky.", "sources": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Magec was the Guanche deity of the sun and light, reckoned among the principal divinities of Tenerife; the name (Guanche Berber Ma-gheq) is glossed 'possesses radiance' / 'mother of brightness', and the deity's gender is unrecorded.", "citations": [ { "kind": "reference", "reference": "Wolfel, D. J. (1965). Monumenta Linguae Canariae. Graz." }, { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." } ], "weight": 0.8 },
+      { "claim": "In the central Tenerife myth Magec is captured by Guayota and held inside Mount Teide, then liberated by Achaman.", "citations": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }], "weight": 0.7 }
+    ],
+    "notes": "Sun-and-light deity of the Guanches of Tenerife; gender ambiguous in the sources, so sex 'unknown'. Wolfel's Monumenta Linguae Canariae (1965) is the standard linguistic source. Classified deity."
+  },
+  {
+    "id": "guanche_achuguayo",
+    "name": { "primary": "Achuguayo", "alt": ["Achguayo", "Father of Times"], "transliterations": { "guanche": "Achuguayo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Achuguayo", "script": "Latn", "rom": "Achuguayo" }, "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." }] },
+      { "sphereId": "time-and-seasons", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }] }
+    ],
+    "faculties": [
+      { "id": "govern-the-seasons", "name": "govern time and the seasons", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "As moon-god and 'Father of Times' he regulates the calendar and the seasons, complementing the sun Magec.", "sources": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Achuguayo was the Guanche moon-god of Tenerife, called 'Father of Times' as governor of time and the seasons, paired with the sun-god Magec.", "citations": [ { "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }, { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." } ], "weight": 0.7 }
+    ],
+    "notes": "Moon-god of the Guanches of Tenerife. Classified deity. Attestation rests on the later compendia (Bethencourt Alfonso) and modern syntheses rather than the 16th-c. primary chronicles, hence moderate weight."
+  },
+  {
+    "id": "guanche_guayota",
+    "name": { "primary": "Guayota", "alt": ["Guayote"], "transliterations": { "guanche": "Guayota" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "volcanic-fire", "contextTag": "lifelong", "term": { "value": "Echeyde", "script": "Latn", "rom": "Echeyde (Teide)" }, "sources": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }] },
+      { "sphereId": "evil-and-chaos", "contextTag": "lifelong", "term": { "value": "Guayota", "script": "Latn", "rom": "Guayota" }, "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." }] }
+    ],
+    "faculties": [
+      { "id": "imprison-the-sun", "name": "imprison the sun within the volcano", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Guayota captured the sun-god Magec and shut him inside Echeyde (Teide), bringing darkness, until Achaman defeated him; he personifies eruptions, lava and earthquakes.", "sources": [{ "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche." }] },
+      { "id": "command-the-demon-dogs", "name": "command the demon hell-dogs", "term": { "value": "tibicenas", "script": "Latn", "rom": "tibicenas" }, "inheritability": "unique", "notes": "He takes the form of, and commands, the tibicenas, black demon-dogs that work harm across the island.", "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Guayota was the malevolent volcanic deity of the Guanches who dwelt in Echeyde (Mount Teide), took the form of a great black dog, commanded the tibicenas, and imprisoned the sun-god Magec until the high-god Achaman defeated him.", "citations": [ { "kind": "reference", "reference": "Bethencourt Alfonso, J. (1911). Historia del pueblo guanche. Tenerife." }, { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." } ], "weight": 0.8 }
+    ],
+    "notes": "Evil volcanic god / adversary of the Guanche pantheon, personifying Teide's eruptions; the Guanches reportedly called Teide 'Echeyde', understood as a hell-mouth. Adversary/'evil' spirit-class entered as deity per schema. Classified deity (chthonic adversary)."
+  },
+  {
+    "id": "guanche_maxios",
+    "name": { "primary": "Tutelary spirits", "alt": ["Maxios", "Dioses Paredros", "Achmayex"], "transliterations": { "guanche": "Maxios" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-past" },
+    "domains": [
+      { "sphereId": "household-and-place-guardianship", "contextTag": "lifelong", "term": { "value": "Maxios", "script": "Latn", "rom": "Maxios" }, "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." }] }
+    ],
+    "faculties": [
+      { "id": "mediate-and-guard-the-home", "name": "mediate with the goddess and guard the home and holy places", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "lineage", "notes": "Lesser gods/spirits who mediate between Chaxiraxi and humankind and act as guardians of hallowed places and as domestic (household) spirits of Tenerife.", "sources": [{ "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches." }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Maxios (also called Dioses Paredros) were minor Guanche gods/spirits who mediated between the mother-goddess Chaxiraxi and humanity and served as guardians of holy places and domestic spirits of the home.", "citations": [ { "kind": "reference", "reference": "Tejera Gaspar, A. (1988). La religion de los guanches. La Laguna." }, { "kind": "reference", "reference": "Wolfel, D. J. (1965). Monumenta Linguae Canariae. Graz." } ], "weight": 0.7 }
+    ],
+    "notes": "Tutelary/intermediary spirit-class of the Guanches (Maxios; the harmful counterpart class is the tibicenas). Treated as a deity-class entry (spirit-class -> deity), not an individual. English plain phrase 'Tutelary spirits' leads."
+  },
+  {
+    "id": "guanche_bencomo",
+    "name": { "primary": "Bencomo", "alt": [], "transliterations": { "guanche": "Bencomo" } },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Guanche",
+    "primaryTradition": "Guanche",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "historical" },
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "bencomo_banot", "kind": "weapon", "name": "fire-hardened wooden lance", "term": { "value": "banot", "script": "Latn", "rom": "banot" }, "role": "Guanche fighting spear of fire-hardened wood; the standard arm of Bencomo's warriors alongside stones and the wooden club (sunta).", "notes": "Guanche warriors carried fire-hardened wooden lances, clubs and stone-throwers; the banot is the attested Tenerife throwing/thrusting lance.", "sources": [{ "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria (Guanche arms); Wikipedia, 'Bencomo'." }] }
+    ],
+    "sources": [
+      { "claim": "Bencomo (c. 1438-1495) was the mencey (king) of Taoro on Tenerife who led Guanche resistance to the Castilian conquest, refusing Alonso Fernandez de Lugo's terms and winning the First Battle of Acentejo (La Matanza); he died at the Battle of Aguere/La Laguna in 1495.", "citations": [ { "kind": "reference", "reference": "Espinosa, A. de (1594). Historia de Nuestra Senora de Candelaria." }, { "kind": "reference", "reference": "Wikipedia, 'Bencomo'." } ], "weight": 0.8 }
+    ],
+    "notes": "Historical Guanche leader (not a divine figure), included as the resistance-hero tier for Tenerife with attested Guanche weaponry (the banot lance). Classified mortal. His son Bentor succeeded him and died by suicide in 1495."
+  }
+]
+```
+
+Summary of the registry I assembled (27 figures, all `origin: "canon"`, snake_case `<tradition>_<name>` IDs, none colliding with `data-sources/existing-ids.json`):
+
+- **Sotho-Tswana (4):** Modimo (Supreme Being), Badimo (ancestor spirit-class), Senkatana (demigod culture-hero of the Kgodumodumo legend, with knife), Malope (legendary chiefly ancestor).
+- **Ndebele (3):** uMlimu/Mwari (high-god of the Matonjeni oracle), Unkulunkulu (reed-bed first-man/origin-of-death), amadlozi (ancestor spirit-class).
+- **Luo (5):** Nyasaye and Were (high-god names), juogi (jok spirit-class), Luanda Magere (stone-bodied warrior demigod, with shield/spear), Ramogi Ajwang (migration founder-ancestor).
+- **Chaga (3):** Ruwa (sun Supreme Being), warimu (ancestor spirit-class), Murile (sky-journey culture-hero, with magic stool).
+- **Berber (4):** Ammon of Siwa (Libyan oracle-god), Gurzil (bull war-god, son of Ammon, with war idol), Ifri/Dea Africa (cave/war goddess, with coin-iconography), Antaeus/Anti (Libyan earth-giant demigod).
+- **Guanche (8):** Achaman (Tenerife sky-creator), Acoran (Gran Canaria/other-island high-god), Chaxiraxi (Sun Mother), Magec (sun, gender unrecorded), Achuguayo (moon), Guayota (volcanic adversary of Teide, commands the tibicenas), Maxios (tutelary spirit-class), Bencomo (historical resistance mencey, with the banot lance).
+
+Design notes on the harder schema calls: spirit-classes and culture-heroes were mapped to `deity`/`demigod` per the rules (never invented types), each flagged in `notes`. Plain-English words lead `name.primary` for the collective spirit entries ("Ancestors", "Spirits", "Tutelary spirits") and for the Latinized "Africa", with the native theonym carried in `term`/`alt`. Faculties are all attested verb-phrases; no modern coinages. Citations lean on standard scholarship — Setiloane, Callaway, Daneel/Ranger, Ogot/p'Bitek/Mboya, Dundas/Gutmann/Werner, Bates/Camps/Corippus, and Espinosa/Tejera Gaspar/Wölfel — with `weight` lowered where attestation rests on later compendia. The full validated array is also staged at `/tmp/figures.json` (no repo files were modified).
