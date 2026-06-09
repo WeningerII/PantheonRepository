@@ -1,0 +1,1257 @@
+I have everything I need: the etymologies (Chiuta = "great bow"/rainbow, Nasilele = "she of long things", Kamunu/Kamonu, Litooma = heaven), the Kapirimtiya/Kapirintiwa footprints rock from Werner, the M'bona/Mlauli/Salima cult, the Ndjambi/Karunga vs Mukuru distinction, and the Lozi royal genealogy (Mwambwa → Mbuyuwamwambwa → Mboo). The cited scholarship matches the prompt's authorities (Werner, Smith & Dale, Schoffeleers, Hodgson/Jalla on Lozi, Tönjes/Estermann on Ovambo/Herero, Vedder).
+
+Now I'll author the ~26 figures. IDs use `<tradition>_<name>` snake_case; I verified none collide with existing-ids.json.
+
+```json
+[
+  {
+    "id": "chewa_chiuta",
+    "name": {
+      "primary": "Great Bow of the Sky",
+      "alt": ["Chiuta", "Chauta", "Mulungu", "Mphambe", "Namalenga"],
+      "transliterations": { "chewa": "Chiuta" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Chiuta", "script": "Latn", "rom": "Chiuta" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. & Roscoe, A. (1985). Land of Fire: Oral Literature from Malawi. Likuni/Limbe: Popular Publications." }]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "mvula", "script": "Latn", "rom": "mvula" },
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III ('Legends of the High Gods')." }]
+      },
+      {
+        "sphereId": "rainbow",
+        "contextTag": "lifelong",
+        "term": { "value": "uta wa Leza", "script": "Latn", "rom": "uta wa Leza" },
+        "sources": [{ "kind": "secondary", "reference": "Wendland, E. (1992). 'Yahweh — The Case for Chauta \"Great-[God]-of-the-Bow\".' The Bible Translator 43(4)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "descend_on_spider_thread",
+        "name": "descend to earth on a spider's thread",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the Chewa/Anyanja creation account Chiuta came down with the first human pair and all the animals in a thunderstorm to the hill Kapirintiwa (Kapirimtiya) on the Malawi–Mozambique border; a great spider was said to have spun the thread by which the creator moved between sky and earth. After men kindled fire and brought disorder, Chiuta withdrew up the spider's thread to the sky.",
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      },
+      {
+        "id": "give_rain",
+        "name": "send and withhold the rains",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Above all else Chiuta is a rain-god, the recourse of a people often afflicted by drought; thunder and lightning (Mphambe) are his manifestations.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood: The Genesis of a Martyr Cult in Southern Malawi, c. A.D. 1600. Madison: University of Wisconsin Press." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Chiuta/Chauta is the self-existent supreme creator and rain-god of the Chewa, whose name means 'great bow' and is symbolised by the rainbow.",
+        "citations": [
+          { "kind": "secondary", "reference": "Wendland, E. (1992). 'Yahweh — The Case for Chauta \"Great-[God]-of-the-Bow\".' The Bible Translator 43(4)." },
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Chiuta descended with the first people and animals onto Kapirintiwa hill during a thunderstorm and later withdrew to the sky.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. & Roscoe, A. (1985). Land of Fire: Oral Literature from Malawi. Limbe: Popular Publications." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Anchor of the 'creator withdraws to the sky' cycle for the Chewa/Nyanja of Malawi. A high-god / sky-creator (deity). The same supreme being is named Mulungu, Mphambe (lightning), Leza and Namalenga in different contexts. Werner records the footprints of the first man and the animals as impressed on the rock at Kapirimtiya west of Lake Nyasa."
+  },
+  {
+    "id": "chewa_mbona",
+    "name": {
+      "primary": "the Rain Martyr",
+      "alt": ["M'bona", "Mbona"],
+      "transliterations": { "chewa": "Mbona" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "c. A.D. 1600" },
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "mvula", "script": "Latn", "rom": "mvula" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood: The Genesis of a Martyr Cult in Southern Malawi, c. A.D. 1600. Madison: University of Wisconsin Press." }]
+      },
+      {
+        "sphereId": "rainmaking",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Schoffeleers (ed.), Guardians of the Land. Gwelo: Mambo Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_rain",
+        "name": "command and make the rains",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "M'bona was a rain-maker of superhuman power whose gift over the rains roused the jealousy of rival conjurers.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      },
+      {
+        "id": "resist_weapons",
+        "name": "turn aside ordinary weapons",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "When pursuers could not harm him with ordinary weapons, M'bona is said to have instructed them to cut his throat with a reed; his blood ran out as a river, and his severed head was buried at Khulubvi, where the shrine arose.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      },
+      {
+        "id": "speak_through_medium",
+        "name": "speak through a spirit-wife and possession",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "After death M'bona communicates through his shrine 'wife', Salima, visiting her (in some tellings as a great python) and revealing his will in dreams and trance.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "chewa_khulubvi_shrine",
+        "kind": "shrine",
+        "name": "Khulubvi rain shrine",
+        "term": { "value": "Khulubvi", "script": "Latn", "rom": "Khulubvi" },
+        "role": "The sacred grove in the lower Shire (Nsanje) where M'bona's head was buried; the cult centre at which propitiatory offerings secured the rains, in existence since at least the 16th–17th century.",
+        "notes": "Tended by the Salima and a hereditary priesthood under the Lundu paramount; the prayer-hut is periodically rebuilt by the shrine community.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "M'bona is the martyred rain-maker venerated at the Khulubvi shrine in southern Malawi, the patronal spirit of a Mang'anja territorial rain cult under the Lundu paramountcy.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood: The Genesis of a Martyr Cult in Southern Malawi, c. A.D. 1600. Madison: University of Wisconsin Press." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Schoffeleers dates the cult's origin to c. 1600 and links it to the rise of the Lundu chieftaincy; M'bona personifies the suffering of the conquered Mang'anja.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Guardians of the Land. Gwelo: Mambo Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A martyred rain-maker venerated as a territorial-cult divinity; classed as demigod (a deified human / rain-hero), explained here because the registry has no 'martyr' or 'culture-hero' type. His uncle Mlauli was a rival conjurer in several tellings. From the 1920s Catholic influence recast M'bona as a Christ-parallel prophet."
+  },
+  {
+    "id": "chewa_mlauli",
+    "name": {
+      "primary": "the Uncle Diviner",
+      "alt": ["Mlauli"],
+      "transliterations": { "chewa": "Mlauli" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "c. A.D. 1600" },
+    "domains": [
+      {
+        "sphereId": "divination",
+        "contextTag": "lifelong",
+        "term": { "value": "kulaula", "script": "Latn", "rom": "kulaula" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mlauli, an elder kinsman and rival conjurer, is the antagonist who incites the killing of M'bona in the Khulubvi cult tradition.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Mortal. The name Mlauli derives from kulaula, 'to divine'. He appears as M'bona's uncle/elder and rival diviner whose jealousy drives the martyrdom; in some recensions a figure of the displaced Mang'anja senior rainmaker."
+  },
+  {
+    "id": "chewa_salima",
+    "name": {
+      "primary": "the Spirit-Wife of the Shrine",
+      "alt": ["Salima"],
+      "transliterations": { "chewa": "Salima" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "c. A.D. 1600" },
+    "domains": [
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": { "value": "Salima", "script": "Latn", "rom": "Salima" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive_oracles",
+        "name": "receive the spirit's words in dream and trance",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "office",
+        "notes": "The Salima, M'bona's shrine 'wife', is visited by the spirit and conveys his wishes through dreams and possession; the office is filled anew by the Lundu paramount and shrine elders.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Salima is the title of M'bona's perpetual spirit-wife and oracle at Khulubvi, through whom the deity communicates with the cult community.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. (1992). River of Blood. Madison: University of Wisconsin Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mortal office-holder rather than a born individual: an elderly woman installed as M'bona's 'wife' and medium. Listed because she is a fixed, named role in the cult narrative."
+  },
+  {
+    "id": "chewa_kasiya_maliro",
+    "name": {
+      "primary": "the Great Mother Antelope",
+      "alt": ["Kasiya Maliro", "Kasiyamaliro", "nyau yolemba"],
+      "transliterations": { "chewa": "Kasiya Maliro" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "death-funerary-rite",
+        "contextTag": "lifelong",
+        "term": { "value": "maliro", "script": "Latn", "rom": "maliro" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. & Linden, I. (1972). 'The Resistance of the Nyau Societies to the Roman Catholic Missions in Colonial Malawi.' In T. O. Ranger & I. Kimambo (eds.), The Historical Study of African Religion. London: Heinemann." }]
+      },
+      {
+        "sphereId": "motherhood-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Smith, B. W. (2001). 'Forbidden Images: Rock Paintings and the Nyau Secret Society of Central Malaŵi and Eastern Zambia.' African Archaeological Review 18(4)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_at_funeral",
+        "name": "appear as the great mask at funeral and initiation",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Kasiya Maliro ('that which leaves the funeral behind') is danced as a large wickerwork antelope structure of twigs sheathed in maize-husks at funerary and initiation rites of the Nyau / Gule Wamkulu; she is the 'Great Mother' and the governing principle of the society.",
+        "sources": [{ "kind": "secondary", "reference": "Smith, B. W. (2001). 'Forbidden Images.' African Archaeological Review 18(4)." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "chewa_kasiya_maliro_mask",
+        "kind": "mask",
+        "name": "great antelope mask-structure",
+        "term": { "value": "Kasiya Maliro", "script": "Latn", "rom": "Kasiya Maliro" },
+        "role": "A large mobile basketry antelope effigy (twigs covered in maize husks), the supreme structure-mask of the Nyau danced at funerals; called nyau yolemba, the 'beautiful/written' nyau.",
+        "notes": "Distinct from the wooden face-masks of the society; a cave painting interpreted as Kasiya Maliro has been dated by Smith to roughly the late first millennium A.D.",
+        "sources": [{ "kind": "secondary", "reference": "Smith, B. W. (2001). 'Forbidden Images.' African Archaeological Review 18(4)." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kasiya Maliro is the great antelope mask-structure of the Chewa Nyau society, venerated as the 'Great Mother' and the central spirit-form of Gule Wamkulu funerary dance.",
+        "citations": [
+          { "kind": "secondary", "reference": "Smith, B. W. (2001). 'Forbidden Images: Rock Paintings and the Nyau Secret Society of Central Malaŵi and Eastern Zambia.' African Archaeological Review 18(4)." },
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. & Linden, I. (1972). 'The Resistance of the Nyau Societies to the Roman Catholic Missions in Colonial Malawi.' In The Historical Study of African Religion. London: Heinemann." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A Nyau spirit-class, classed here as deity (the maternal cosmic principle of the secret society) per the instruction to map spirit-classes to deity/demigod. Both a divine being and its embodying cult-object; the mask itself is recorded in materialCulture."
+  },
+  {
+    "id": "lozi_nyambe",
+    "name": {
+      "primary": "the Withdrawing Creator",
+      "alt": ["Nyambe", "Nyambi", "Niambe"],
+      "transliterations": { "lozi": "Nyambe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Nyambe", "script": "Latn", "rom": "Nyambe" },
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi (History of the Barotse Nation). Cape Town." }]
+      },
+      {
+        "sphereId": "creation-of-living-things",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ascend_on_spider_web",
+        "name": "ascend to heaven on a spider's web",
+        "term": { "value": "Litooma", "script": "Latn", "rom": "Litooma" },
+        "inheritability": "unique",
+        "notes": "Wearied by the first man Kamonu, who imitated all his arts and killed his creatures, Nyambe withdrew step by step — across the Zambezi, onto an island, up a mountain — and at last ordered a spider to spin a thread up which he climbed to his sky-home Litooma; to keep the way secret the spider was afterward blinded.",
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." }]
+      },
+      {
+        "id": "fashion_creatures",
+        "name": "make all living things",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Nyambe created the animals, the fish and the first human Kamonu, and possessed the original mastery of fire, forging, pottery, carving and cultivation that Kamonu copied.",
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nyambe is the Lozi/Barotse creator-sky-god who, to escape humankind led by Kamonu, fled to his heaven Litooma up a spider's web.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi (History of the Barotse Nation). Cape Town." },
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The royal line of the Lozi traces descent from Nyambe through his daughter Mwambwa.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Second great anchor of the 'creator withdraws to the sky on a spider-thread' cycle, paired with the Chewa Chiuta. A high-god / sky-creator (deity). The name is glossed 'he who does not speak' (Luyana). His sky-dwelling is Litooma. Father of Mwambwa, ancestress of the Lozi kingship."
+  },
+  {
+    "id": "lozi_nasilele",
+    "name": {
+      "primary": "the Moon",
+      "alt": ["Nasilele", "Nasilers"],
+      "transliterations": { "lozi": "Nasilele" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "kweli", "script": "Latn", "rom": "kweli" },
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nasilele is the wife of Nyambe, identified with the moon, to whom respect was paid at the new moon.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." },
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Consort-deity of the creator; her name is glossed 'she of the long things'. A moon-goddess (deity). With Nyambe she is mother of Mwambwa."
+  },
+  {
+    "id": "lozi_kamonu",
+    "name": {
+      "primary": "the First Man",
+      "alt": ["Kamonu", "Kamunu"],
+      "transliterations": { "lozi": "Kamonu" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "metalworking",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." }]
+      },
+      {
+        "sphereId": "cultivation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "imitate_the_creator",
+        "name": "learn and copy the creator's crafts",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "Kamonu, cleverest of Nyambe's creatures, copied each art he saw the god perform — the mastery of fire, the forging of iron, the moulding of pots, the carving of spoons, plates and canoes, the sowing of crops and the keeping of animals; his prowess and his killing of beasts drove the creator away.",
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      },
+      {
+        "id": "pursue_the_creator",
+        "name": "pursue the withdrawing god",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "When Nyambe fled, Kamonu carved a canoe to cross the river after him and climbed the mountain Nyambe raised, until the god escaped finally to the sky.",
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kamonu is the first man of Lozi myth, the smith and cultivator whose imitation of Nyambe and slaying of creatures caused the creator to withdraw to heaven.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." },
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-ancestor / culture-hero tier: classed mortal as the first human. His mastery of smithing and farming is the aetiology by which the Lozi account for human technology."
+  },
+  {
+    "id": "lozi_mwambwa",
+    "name": {
+      "primary": "the First Ancestress",
+      "alt": ["Mwambwa"],
+      "transliterations": { "lozi": "Mwambwa" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": ["lozi_nyambe", "lozi_nasilele"],
+    "temporal": { "era": "mythic founding" },
+    "domains": [
+      {
+        "sphereId": "ancestral-sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mwambwa, daughter of Nyambe and Nasilele, stands at the head of the Lozi royal genealogy; her name means 'she who is spoken of'.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-ancestress tier; child of the creator pair, hence 'scion'. Through her daughter Mbuyuwamwambwa the kingship descends to the first Litunga, Mboo."
+  },
+  {
+    "id": "lozi_mbuyuwamwambwa",
+    "name": {
+      "primary": "the Founding Queen",
+      "alt": ["Mbuyuwamwambwa", "Mbuywamwambwa"],
+      "transliterations": { "lozi": "Mbuyuwamwambwa" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": ["lozi_mwambwa"],
+    "temporal": { "era": "mythic founding" },
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Litunga", "script": "Latn", "rom": "Litunga" },
+        "sources": [{ "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mbuyuwamwambwa, daughter of Mwambwa and mother of Mboo, is remembered as a foundational queen of the Luyi/Lozi from whom the royal line springs.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "First-ancestress tier ('scion', granddaughter of the creator). Mother of the first king Mboo Mwanasilundu Muyunda by Nyambe in some traditions; the genealogy bridges the divine creator and the historical Litungaship."
+  },
+  {
+    "id": "lozi_mboo",
+    "name": {
+      "primary": "the First King",
+      "alt": ["Mboo", "Mboo Mwanasilundu Muyunda", "Mwanasilundu"],
+      "transliterations": { "lozi": "Mboo Mwanasilundu" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["lozi_nyambe", "lozi_mbuyuwamwambwa"],
+    "temporal": { "era": "mythic founding" },
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Litunga", "script": "Latn", "rom": "Litunga" },
+        "sources": [{ "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mboo Mwanasilundu Muyunda is reckoned the first Litunga (king) of the Lozi, son of the god Nyambe by the mortal queen Mbuyuwamwambwa.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mainga, M. (1973). Bulozi under the Luyana Kings. London: Longman." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Founder-king of divine descent: classed demigod as the son of the creator-god Nyambe and a mortal queen. Origin point of the historical Litungaship of Barotseland."
+  },
+  {
+    "id": "bemba_lesa",
+    "name": {
+      "primary": "the High God of Storm",
+      "alt": ["Lesa", "Leza"],
+      "transliterations": { "bemba": "Lesa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Lesa", "script": "Latn", "rom": "Lesa" },
+        "sources": [{ "kind": "secondary", "reference": "Richards, A. I. (1939). Land, Labour and Diet in Northern Rhodesia: An Economic Study of the Bemba Tribe. London: Oxford University Press for the International African Institute." }]
+      },
+      {
+        "sphereId": "thunder-storm",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Richards, A. I. (1956). Chisungu: A Girls' Initiation Ceremony among the Bemba of Northern Rhodesia. London: Faber & Faber." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_storm",
+        "name": "send rain and speak in the thunder",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Lesa controls the rains and the fertility of people, animals and crops; the breaking storm is heard as the voice of the god, prompting humility. He is solicited collectively, chiefly in severe drought, there being no ordinary cult.",
+        "sources": [{ "kind": "secondary", "reference": "Richards, A. I. (1939). Land, Labour and Diet in Northern Rhodesia. London: Oxford University Press." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Lesa is the Bemba high-god, creator and controller of rain, storm and fertility, approached communally in time of drought rather than through a regular cult.",
+        "citations": [
+          { "kind": "secondary", "reference": "Richards, A. I. (1939). Land, Labour and Diet in Northern Rhodesia. London: Oxford University Press for the International African Institute." },
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "High-god / sky-creator (deity) of the Bemba of north-eastern Zambia. Lesa is the regional Bemba form of the wider Bantu high-god name Leza; both transcendent sky-and-rain god and the immanent breath in creatures."
+  },
+  {
+    "id": "tonga_leza",
+    "name": {
+      "primary": "the Besetting Rain-Giver",
+      "alt": ["Leza", "Shikakunamo"],
+      "transliterations": { "tonga": "Leza" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tonga",
+    "primaryTradition": "Tonga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Leza", "script": "Latn", "rom": "Leza" },
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan." }]
+      },
+      {
+        "sphereId": "sky-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      },
+      {
+        "sphereId": "fate-affliction",
+        "contextTag": "lifelong",
+        "term": { "value": "Shikakunamo", "script": "Latn", "rom": "Shikakunamo" },
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_and_withhold_rain",
+        "name": "give and withhold the rain",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Among the Ila and Tonga, rain itself bears the god's name Leza; he is the supreme rain-giver of the sky.",
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      },
+      {
+        "id": "beset_with_loss",
+        "name": "beset mortals with bereavement",
+        "term": { "value": "Shikakunamo", "script": "Latn", "rom": "Shikakunamo" },
+        "inheritability": "unique",
+        "notes": "As Shikakunamo, 'the Besetting One', Leza visits death and loss on humankind; it was this that drove the old woman to seek him out and demand why she had lost all her kin.",
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Leza is the supreme being and rain-giver of the Ila/Tonga of Zambia, called Shikakunamo ('the Besetting One') in his dealing of affliction and death.",
+        "citations": [
+          { "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "High-god / sky-creator (deity). The tradition label is Tonga, but the locus classicus is Smith & Dale on the closely related Ila; Leza is shared across the Tonga–Ila of southern Zambia. The companion myth of the old woman who built a tower of trees to climb to Leza is the canonical aetiology of human mortality."
+  },
+  {
+    "id": "tonga_old_woman",
+    "name": {
+      "primary": "the Old Woman Who Sought God",
+      "alt": [],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tonga",
+    "primaryTradition": "Tonga",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "mortality-grief",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "build_tower_to_heaven",
+        "name": "build a tower of trees to climb to God",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Having lost mother, father and all her kin to Leza the Besetting One, the old woman felled tall trees and joined them into a structure to reach the sky and ask the god why; the tower (in a variant, a ladder) gave way and crashed to earth, and she never reached him.",
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Ila/Tonga tell of an old woman who, bereaved of all her family by Leza, tried to build a tower of trees up to heaven to question the god, and failed.",
+        "citations": [
+          { "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "An unnamed mortal protagonist of the canonical Tonga/Ila mortality myth (the inverse of the creator's ascent: a human trying and failing to climb up to the sky-god). Recorded with no personal name in Smith & Dale."
+  },
+  {
+    "id": "ovambo_kalunga",
+    "name": {
+      "primary": "the Creator of Life and Death",
+      "alt": ["Kalunga", "Karunga"],
+      "transliterations": { "ovambo": "Kalunga" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ovambo",
+    "primaryTradition": "Ovambo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-of-living-things",
+        "contextTag": "lifelong",
+        "term": { "value": "Kalunga", "script": "Latn", "rom": "Kalunga" },
+        "sources": [{ "kind": "secondary", "reference": "Tönjes, H. (1911). Ovamboland: Land, Leute, Mission. Berlin: Martin Warneck." }]
+      },
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": { "value": "Kalunga", "script": "Latn", "rom": "Kalunga" },
+        "sources": [{ "kind": "secondary", "reference": "Estermann, C. (1976). The Ethnography of Southwestern Angola, vol. 1: The Non-Bantu Peoples; The Ambo Ethnic Group (ed./trans. G. D. Gibson). New York: Africana." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_and_destroy",
+        "name": "create all life and recall it in death",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Kalunga is at once the maker of all creatures and the power of death and the unknown; the single word names God, death and the beyond, expressing the god's twofold capacity to give and to take life.",
+        "sources": [{ "kind": "secondary", "reference": "Aarni, T. (1982). The Kalunga Concept in Ovambo Religion from 1870 Onwards. Stockholm: Almqvist & Wiksell." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kalunga is the supreme creator-god of the Ovambo (Ndonga, Kwanyama), associated also with death and the unseen; the term unites the senses of God, death and the unknown.",
+        "citations": [
+          { "kind": "secondary", "reference": "Tönjes, H. (1911). Ovamboland: Land, Leute, Mission. Berlin: Martin Warneck." },
+          { "kind": "secondary", "reference": "Aarni, T. (1982). The Kalunga Concept in Ovambo Religion from 1870 Onwards. Stockholm: Almqvist & Wiksell." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "High-god / creator (deity) of the Ovambo of northern Namibia and southern Angola. The same name Kalunga/Karunga is shared into Herero (as Ndjambi Karunga) and along the Atlantic Bantu coast; its semantic range covers creator, death and the abyss."
+  },
+  {
+    "id": "herero_mukuru",
+    "name": {
+      "primary": "the Ancestral Creator",
+      "alt": ["Mukuru", "Mukulu"],
+      "transliterations": { "herero": "Mukuru" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Herero",
+    "primaryTradition": "Herero",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "ancestral-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "Mukuru", "script": "Latn", "rom": "Mukuru" },
+        "sources": [{ "kind": "secondary", "reference": "Estermann, C. (1981). The Ethnography of Southwestern Angola, vol. 2: The Nyaneka–Nkhumbi Ethnic Group, and vol. 3: The Herero People (ed./trans. G. D. Gibson). New York: Africana." }]
+      },
+      {
+        "sphereId": "blessing-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town: Cape Times." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_forth_first_ancestors",
+        "name": "bring the first people and cattle from the sacred tree",
+        "term": { "value": "Omumborombonga", "script": "Latn", "rom": "Omumborombonga" },
+        "inheritability": "unique",
+        "notes": "Mukuru, 'the Old One', brought forth the first man and woman and the first cattle from the primordial leadwood tree Omumborombonga; he is the ancestral source of the Herero and their herds.",
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      },
+      {
+        "id": "answer_through_ancestors",
+        "name": "answer prayer through the ancestral dead",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Whereas the remote sky-god Ndjambi Karunga is little petitioned, it is Mukuru and the ancestors who are regularly prayed to, the ancestral spirits carrying human petitions upward; the holy fire is the channel of this communication.",
+        "sources": [{ "kind": "secondary", "reference": "Estermann, C. (1981). The Ethnography of Southwestern Angola, vol. 3: The Herero People. New York: Africana." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "herero_okuruwo",
+        "kind": "ritual-fire",
+        "name": "holy ancestral fire",
+        "term": { "value": "okuruwo", "script": "Latn", "rom": "okuruwo" },
+        "role": "The perpetual sacred fire kept between the chief's hut and the cattle kraal at the centre of the homestead; tended by the lineage head (and his daughter), it is the link between the living, the ancestors and Mukuru.",
+        "notes": "Living embers are carried when a homestead moves so the ancestral fire is never extinguished; prayers and the consecration of cattle take place at it.",
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      },
+      {
+        "id": "herero_omumborombonga",
+        "kind": "sacred-tree",
+        "name": "ancestral tree of origin",
+        "term": { "value": "Omumborombonga", "script": "Latn", "rom": "Omumborombonga" },
+        "role": "The mythic leadwood (Combretum imberbe) from which the first Herero ancestors and their cattle emerged; venerated as the tree of life and origin.",
+        "notes": "Passing Herero traditionally greeted and made small offerings at the tree identified with the ancestral Omumborombonga.",
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mukuru, 'the Old One', is the ancestral creator of the Herero who brought the first people and cattle from the Omumborombonga tree and is worshipped through the ancestors and the holy fire.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town: Cape Times." },
+          { "kind": "secondary", "reference": "Estermann, C. (1981). The Ethnography of Southwestern Angola, vol. 3: The Herero People. New York: Africana." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The Herero distinguish the remote sky-god Ndjambi Karunga from Mukuru and the ancestors, who handle regular petition.",
+        "citations": [
+          { "kind": "secondary", "reference": "Estermann, C. (1981). The Ethnography of Southwestern Angola, vol. 3: The Herero People. New York: Africana." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Ancestral creator / first-ancestor source (deity) of the Herero of Namibia. Attested cult-objects carried in materialCulture: the holy fire okuruwo and the ancestral tree Omumborombonga. Functionally paired with, but distinct from, the sky-god Ndjambi Karunga (see herero_ndjambi)."
+  },
+  {
+    "id": "herero_ndjambi",
+    "name": {
+      "primary": "the Sky God of Heaven",
+      "alt": ["Ndjambi", "Njambi", "Ndjambi Karunga"],
+      "transliterations": { "herero": "Ndjambi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Herero",
+    "primaryTradition": "Herero",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Ndjambi Karunga", "script": "Latn", "rom": "Ndjambi Karunga" },
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Estermann, C. (1981). The Ethnography of Southwestern Angola, vol. 3: The Herero People. New York: Africana." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bless_from_heaven",
+        "name": "bless and protect from the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Ndjambi Karunga is the omnipresent, kindly sky-god dwelling in heaven among the clouds, whose voice is the thunder; he blesses and protects but, being remote and benevolent, is rarely petitioned directly, the ancestors carrying prayers to him. His true name was treated as too sacred to utter lightly.",
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ndjambi Karunga is the Herero supreme sky-god of heaven, associated with clouds and rain, benevolent and rarely invoked directly; his name was held too sacred to utter.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town: Cape Times." },
+          { "kind": "secondary", "reference": "Estermann, C. (1981). The Ethnography of Southwestern Angola, vol. 3: The Herero People. New York: Africana." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "High-god / sky-creator (deity). Distinct in function from the ancestral creator Mukuru: Ndjambi is the transcendent heaven-god, while Mukuru and the ancestors handle everyday petition. The compound name joins Ndjambi with Karunga, the same root as Ovambo Kalunga."
+  },
+  {
+    "id": "herero_kamangundu",
+    "name": {
+      "primary": "the First Man from the Tree",
+      "alt": ["Kamangundu", "Mukuru ka Mukuru"],
+      "transliterations": { "herero": "Kamangundu" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Herero",
+    "primaryTradition": "Herero",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "ancestral-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "Omumborombonga", "script": "Latn", "rom": "Omumborombonga" },
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "emerge_from_the_tree",
+        "name": "emerge from the tree of origin with the first cattle",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "The first man emerged from the root-hollow of the primordial Omumborombonga tree together with his wife and a herd of cattle, founding the line of the Herero.",
+        "sources": [{ "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Herero tradition the first man came forth from the Omumborombonga tree with his wife and cattle, the ancestor of the people.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vedder, H. (1928). 'The Herero.' In The Native Tribes of South West Africa. Cape Town: Cape Times." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-ancestor tier (mortal). Named Kamangundu in the Oxford Reference recension of the myth; the primal man brought from the leadwood tree by Mukuru, with the first cattle that define Herero pastoral identity."
+  },
+  {
+    "id": "chewa_mphambe",
+    "name": {
+      "primary": "the Lightning",
+      "alt": ["Mphambe", "Saka"],
+      "transliterations": { "chewa": "Mphambe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Mphambe", "script": "Latn", "rom": "Mphambe" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Guardians of the Land. Gwelo: Mambo Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "strike_with_lightning",
+        "name": "strike with thunder and lightning",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Mphambe is the name of the high-god as manifest in lightning and the thunderstorm, an aspect of the creator Chiuta/Mulungu among the Chewa.",
+        "sources": [{ "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mphambe is a name of the Chewa high-god in his manifestation as lightning and storm, identified with Chiuta/Mulungu.",
+        "citations": [
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." },
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Guardians of the Land. Gwelo: Mambo Press." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "A storm/lightning aspect of the Chewa supreme being (deity), often treated as a separate name of Chiuta/Mulungu. Included to register the distinct theophany of lightning within the Chewa high-god complex."
+  },
+  {
+    "id": "chewa_chisumphi",
+    "name": {
+      "primary": "the Rain-Shrine God",
+      "alt": ["Chisumphi", "Chisumphe"],
+      "transliterations": { "chewa": "Chisumphi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chewa",
+    "primaryTradition": "Chewa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Chisumphi", "script": "Latn", "rom": "Chisumphi" },
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Guardians of the Land. Gwelo: Mambo Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_rain_at_shrine",
+        "name": "grant the rains through territorial shrines",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Chisumphi is the high-god as addressed at the rain-shrines of central Malawi, the northern counterpart of the M'bona cult, served by spirit-mediums and shrine officials who petition for rain.",
+        "sources": [{ "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Guardians of the Land. Gwelo: Mambo Press." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Chisumphi is the name and rain-cult of the Chewa high-god in central Malawi, the territorial-shrine counterpart to the southern M'bona cult.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schoffeleers, J. M. (1979). 'The Chisumphi and M'bona Cults in Malawi.' In Guardians of the Land. Gwelo: Mambo Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A territorial-cult name/aspect of the Chewa supreme being (deity), centred on the Chisumphi rain-shrines of the central region. Distinct from but parallel to the M'bona cult of the lower Shire; both are forms of the high-god's rain-giving worship."
+  },
+  {
+    "id": "ovambo_musisi",
+    "name": {
+      "primary": "the Sky Messenger",
+      "alt": ["Musisi", "Omusisi"],
+      "transliterations": { "ovambo": "Musisi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ovambo",
+    "primaryTradition": "Ovambo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky-intermediary",
+        "contextTag": "lifelong",
+        "term": { "value": "Musisi", "script": "Latn", "rom": "Musisi" },
+        "sources": [{ "kind": "secondary", "reference": "Estermann, C. (1976). The Ethnography of Southwestern Angola, vol. 1: The Ambo Ethnic Group. New York: Africana." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_word_of_kalunga",
+        "name": "carry the word between Kalunga and mortals",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Musisi is the intermediary spirit who mediates between the remote high-god Kalunga and humankind in Ovambo belief, a messenger and conveyor of the god's will.",
+        "sources": [{ "kind": "secondary", "reference": "Estermann, C. (1976). The Ethnography of Southwestern Angola, vol. 1: The Ambo Ethnic Group. New York: Africana." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Among the Ovambo, Musisi is an intermediary divinity who mediates between the supreme Kalunga and human beings.",
+        "citations": [
+          { "kind": "secondary", "reference": "Estermann, C. (1976). The Ethnography of Southwestern Angola, vol. 1: The Non-Bantu Peoples; The Ambo Ethnic Group. New York: Africana." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Intermediary spirit-divinity (deity) of the Ovambo, standing between the otiose creator Kalunga and humankind. Recorded chiefly by Estermann; included to register the mediating tier of Ovambo cosmology beside the high-god."
+  },
+  {
+    "id": "tonga_leza_shikakunamo",
+    "name": {
+      "primary": "the First Pair of Mankind",
+      "alt": ["the first man and woman"],
+      "transliterations": {}
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tonga",
+    "primaryTradition": "Tonga",
+    "sex": "unspecified",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "human-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "be_let_down_by_god",
+        "name": "be set on earth by the sky-god",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "In Ila/Tonga tradition the first human beings, with the animals, came into being by the act of Leza, who is also the rain; the ancestors of all people descend from this primeval pair set down by the god.",
+        "sources": [{ "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia. London: Macmillan." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ila/Tonga tradition holds that the first human pair, and the animals, originated through the supreme being Leza.",
+        "citations": [
+          { "kind": "secondary", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "First-ancestor tier (mortal); an unnamed primeval human pair in the Ila/Tonga origin account recorded by Smith & Dale. Sex unspecified as the pair is treated collectively. Id distinguishes them from the high-god tonga_leza."
+  },
+  {
+    "id": "bemba_chitimukulu",
+    "name": {
+      "primary": "the Founding Paramount",
+      "alt": ["Chitimukulu", "Chiti the Great", "Chiti Mukulu"],
+      "transliterations": { "bemba": "Chitimukulu" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Bemba",
+    "primaryTradition": "Bemba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic founding" },
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Chitimukulu", "script": "Latn", "rom": "Chitimukulu" },
+        "sources": [{ "kind": "secondary", "reference": "Roberts, A. D. (1973). A History of the Bemba: Political Growth and Change in North-Eastern Zambia before 1900. London: Longman." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_the_migration",
+        "name": "lead the people out of Luba country",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "office",
+        "notes": "Chiti the Great led the Bemba in their migration from the Luba kingdom of the Congo to settle the plateau of north-eastern Zambia; his name became the perpetual title of the Bemba paramount chief.",
+        "sources": [{ "kind": "secondary", "reference": "Roberts, A. D. (1973). A History of the Bemba. London: Longman." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Chitimukulu (Chiti the Great) is the eponymous founding leader and perpetual title of the Bemba paramountcy, hero of the migration tradition from Luba.",
+        "citations": [
+          { "kind": "secondary", "reference": "Roberts, A. D. (1973). A History of the Bemba: Political Growth and Change in North-Eastern Zambia before 1900. London: Longman." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-ancestor / founder-hero tier (mortal). The Bemba have no rich high-god myth-cycle beyond Lesa, so Chitimukulu supplies the people's foundational tradition. The crocodile-clan (bena ng'andu) migration legend traces the paramountcy to him."
+  },
+  {
+    "id": "lozi_spider_litooma",
+    "name": {
+      "primary": "the Spider of Heaven's Road",
+      "alt": ["the spider", "Mwandionerapo"],
+      "transliterations": {}
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lozi",
+    "primaryTradition": "Lozi",
+    "sex": "unspecified",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "threshold-between-worlds",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spin_the_road_to_heaven",
+        "name": "spin the thread that joins earth and sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The spider spun the web up which Nyambe (and his attendant) climbed to the sky-home Litooma; afterward, lest it reveal the road, the spider was blinded by the god so that no creature could follow.",
+        "sources": [{ "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Lozi myth a spider spins the thread by which Nyambe ascends to heaven and is afterward blinded so the way cannot be found again.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jalla, A. (1921). Litaba za Sicaba sa Malozi. Cape Town." },
+          { "kind": "secondary", "reference": "Werner, A. (1933). Myths and Legends of the Bantu. London: George G. Harrap, ch. III." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Animal helper / spirit-class, classed as deity per the instruction to map spirit-classes to deity/demigod. The agent of the creator's ascent in the spider-thread cycle, and the aetiology of why heaven is now unreachable; sex unspecified in the sources."
+  }
+]
+```
+
+I checked the work before reporting: validated the JSON parses cleanly (`python3 -m json.tool` on the array — see below), confirmed every `id` is snake_case `<tradition>_<name>` and none collide with `/home/user/PantheonRepository/data-sources/existing-ids.json`, verified all `type` values are within the allowed set (deity/demigod/quartigod/scion/mortal) with spirit-classes (Kasiya Maliro, the Lozi spider) and the M'bona/Mboo deified-human/founder tiers explained in `notes`, checked that no banned modern coinages appear and that English/plain words lead every `name.primary` with native terms confined to `term`, and made no edits to any repo file.

@@ -1,0 +1,1219 @@
+No collisions; none of these traditions exist yet. I'll author ~24 figures across the five traditions with the prescribed schema, real citations (F.E. Williams, Landtman, Barth, Jorgensen, Glasse, Frankel, Meggitt, Gibbs, Brennan, Wiessner/Tumu, Goldman), English-leading names with attested native terms, and attested cult-objects (hevehe/eharo masks, the Telefolip, the darimo, fubi/bonang) in materialCulture.
+
+Here is the registry.
+
+```json
+[
+  {
+    "id": "huli_honabe",
+    "name": {
+      "primary": "Creator-Mother",
+      "alt": ["Honabe", "Honabe Wali"],
+      "transliterations": { "huli": "Honabe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Honabe", "script": "Honabe", "rom": "Honabe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In P. Lawrence & M.J. Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ]
+      },
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring-forth-the-first-gods",
+        "name": "BRING FORTH the first generation of deities",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "After being seduced by the sky-being Timbu, Honabe bore five sons and one daughter, the primordial Huli deities, making her grandmother-ancestress of the Huli and neighbouring Obene, Duna, Duguba and Hewa peoples.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Honabe (Honabe wali, 'the woman Honabe') was the first goddess to inhabit the land; seduced by the male sky-being Timbu, she bore five gods (Korimogo, Heyolabe, Piandela, Ni and Hela) and one goddess (Hana), and is reckoned the grandmother-ancestress of the Huli and surrounding peoples.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." },
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press, ch. on cosmology." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Huli wali = 'woman'; her epithet Honabe wali glosses as 'the woman Honabe', the earth/creator-mother. As a primordial procreatrix who founds the divine order she is rendered here as a deity (ancestress-creatress tier); the Huli classify lesser nature-spirits as dama but Honabe stands above that class. Mother of the sun (Ni), moon (Hana) and the eponymous ancestor Hela."
+  },
+  {
+    "id": "huli_timbu",
+    "name": {
+      "primary": "Sky-Father",
+      "alt": ["Timbu", "Timbugua"],
+      "transliterations": { "huli": "Timbu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky-and-procreation",
+        "contextTag": "lifelong",
+        "term": { "value": "Timbu", "script": "Timbu", "rom": "Timbu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sire-the-primordial-deities",
+        "name": "SIRE the primordial deities upon the creator-mother",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The male sky-being who seduced Honabe and so fathered the first generation of Huli gods including the sun Ni and the moon Hana.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Timbu is the male sky-deity who seduced the creator-mother Honabe, thereby fathering the primordial Huli gods.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Consort of Honabe in the Huli creation account. Classed here as a deity (sky-being / procreator tier). Distinct from the lesser dama nature-spirits."
+  },
+  {
+    "id": "huli_korimogo",
+    "name": {
+      "primary": "Firstborn God",
+      "alt": ["Korimogo"],
+      "transliterations": { "huli": "Korimogo" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["huli_honabe", "huli_timbu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "Korimogo", "script": "Korimogo", "rom": "Korimogo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Korimogo is named among the five sons born of Honabe and Timbu, one of the primordial deities of the Huli pantheon.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of the creator-mother Honabe and the sky-father Timbu; sibling to Heyolabe, Piandela, Ni (sun), Hela and the goddess Hana (moon). Classed as demigod (offspring of the procreator deities). Few discrete deeds are recorded beyond his place in the divine genealogy."
+  },
+  {
+    "id": "huli_ni",
+    "name": {
+      "primary": "Sun",
+      "alt": ["Ni"],
+      "transliterations": { "huli": "Ni" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["huli_honabe", "huli_timbu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": { "value": "Ni", "script": "Ni", "rom": "Ni" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      },
+      {
+        "sphereId": "fertility-rites",
+        "contextTag": "lifelong",
+        "term": { "value": "Ni", "script": "Ni", "rom": "Ni" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Ballard, C. (1995). The Death of a Great Land: Ritual, History and Subsistence Revolution in the Southern Highlands of Papua New Guinea. PhD thesis, Australian National University." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give-life-as-the-sun",
+        "name": "GIVE life and warmth as the sun",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Ni the sun is a primordial source from which humans draw life; he is a focus of Huli fertility ritual (dindi gamu / ritual cycles) along with his sister Hana the moon.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ni is the sun, a son of Honabe and Timbu; the sun and his sister Hana the moon are regarded as primordial sources of human life and are focal to Huli fertility rites.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." },
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Huli ni = 'sun'. A solar deity personifying the daystar; treated as demigod as offspring of the creator pair. Paired with Hana the moon in cosmology and ritual."
+  },
+  {
+    "id": "huli_hana",
+    "name": {
+      "primary": "Moon",
+      "alt": ["Hana"],
+      "transliterations": { "huli": "Hana" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["huli_honabe", "huli_timbu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "Hana", "script": "Hana", "rom": "Hana" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      },
+      {
+        "sphereId": "fertility-rites",
+        "contextTag": "lifelong",
+        "term": { "value": "Hana", "script": "Hana", "rom": "Hana" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Hana is the moon, the daughter of Honabe and Timbu and sister of Ni the sun; she and the sun are primordial sources of human life and a focus of Huli fertility rites.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." },
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Huli hana = 'moon'. Lunar goddess, the only daughter among Honabe's children; paired with her brother Ni the sun. Demigod tier as offspring of the creator pair."
+  },
+  {
+    "id": "huli_hela",
+    "name": {
+      "primary": "Ancestor of the Huli",
+      "alt": ["Hela", "Hela Obena"],
+      "transliterations": { "huli": "Hela" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["huli_honabe", "huli_timbu"],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "Hela", "script": "Hela", "rom": "Hela" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      },
+      {
+        "sphereId": "agriculture",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Goldman, L. (1983). Talk Never Dies: The Language of Huli Disputes. Tavistock." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "father-the-related-peoples",
+        "name": "FATHER the related Highlands peoples",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "Hela, a masterful gardener, fathered the eponymous ancestors of the related peoples — in Huli tradition his sons include Huli, Duna, Duguba (Tuguba) and Hewa, with Obena — the Hela nexus of the Southern Highlands.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Ballard, C. (1995). The Death of a Great Land. PhD thesis, Australian National University." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Hela, a son of Honabe, is the apical ancestor from whom the Huli reckon descent; a great gardener whose sons are the eponymous ancestors of the Huli, Duna, Duguba and Hewa, giving the modern Hela grouping its name.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." },
+          { "kind": "ethnography", "reference": "Ballard, C. (1995). The Death of a Great Land. PhD thesis, ANU." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / apical ancestor (ancestral-progenitor tier), rendered demigod as offspring of the creator pair and progenitor of human lineages. Versions of the genealogy vary (Glasse vs. later Hela-nation accounts); the constant is Hela as common ancestor of the Tari-region peoples. Vital status given as deceased: an ancestral man rather than an undying god."
+  },
+  {
+    "id": "huli_datagaliwabe",
+    "name": {
+      "primary": "Watcher of Kin-Law",
+      "alt": ["Datagaliwabe"],
+      "transliterations": { "huli": "Datagaliwabe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "moral-order-and-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "Datagaliwabe", "script": "Datagaliwabe", "rom": "Datagaliwabe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      },
+      {
+        "sphereId": "kinship-and-taboo",
+        "contextTag": "lifelong",
+        "term": { "value": "Datagaliwabe", "script": "Datagaliwabe", "rom": "Datagaliwabe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "punish-breaches-of-kin-law",
+        "name": "PUNISH breaches of kinship law from the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A giant sky-being who looks down and strikes those who lie, steal, commit adultery or incest, murder kin, or flout ritual taboos. Unlike the dama spirits he cannot be propitiated by sacrifice or magic; he is satisfied only by upright conduct.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Datagaliwabe is a giant sky-being who watches Huli conduct and punishes lying, theft, adultery, incest, the killing of kin and the breach of ritual taboos; uniquely among Huli supernaturals he is not addressed as dama and cannot be propitiated ritually, only by moral behaviour.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." },
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A high sky-god of moral sanction; rendered as deity. Notably set apart from the dama class of nature-spirits both in name (never called dama) and in being beyond ritual manipulation. Often discussed comparatively as a 'high god of morality' in Melanesian religion."
+  },
+  {
+    "id": "huli_heyolabe",
+    "name": {
+      "primary": "Malevolent God",
+      "alt": ["Heyolabe", "Heyalobe"],
+      "transliterations": { "huli": "Heyolabe" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Huli",
+    "primaryTradition": "Huli",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["huli_honabe", "huli_timbu"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sickness-and-misfortune",
+        "contextTag": "lifelong",
+        "term": { "value": "Heyolabe", "script": "Heyolabe", "rom": "Heyolabe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inflict-harm-and-deceit",
+        "name": "INFLICT sickness and misfortune through deceit",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Reckoned dama, he controls forces of nature and deceives people into wrongdoing; he attacks directly with sickness, accident and death, or indirectly through witches, corpses and objects charged with spirit presence. Like Datagaliwabe he cannot be propitiated by ritual.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Heyolabe, a son of Honabe, is regarded as a dama (malevolent spirit) who controls natural forces and brings sickness, accident and death directly or through witches and charged objects, and who cannot be propitiated.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Frankel, S. (1986). The Huli Response to Illness. Cambridge University Press." },
+          { "kind": "ethnography", "reference": "Glasse, R.M. (1965). 'The Huli of the Southern Highlands.' In Lawrence & Meggitt (eds.), Gods Ghosts and Men in Melanesia. Oxford University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A malevolent member of the dama spirit-class but also numbered among Honabe's children; rendered as demigod given his parentage, with the dama affiliation noted. Functions as the Huli locus of natural evil, often glossed by missionaries as 'Satan'."
+  },
+  {
+    "id": "enga_aitawe",
+    "name": {
+      "primary": "Sky-Creator",
+      "alt": ["Aitawe", "Aitwe"],
+      "transliterations": { "enga": "Aitawe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Enga",
+    "primaryTradition": "Enga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": { "value": "Aitawe", "script": "Aitawe", "rom": "Aitawe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie: Central Enga Religious Belief and Ritual. Special Studies in Religions 1, Australian Association for the Study of Religions, Bedford Park." }
+        ]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Aitawe", "script": "Aitawe", "rom": "Aitawe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie. Australian Association for the Study of Religions." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "originate-all-that-exists",
+        "name": "ORIGINATE all that exists as the sky-source",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Among the Central Enga, Aitawe is identified with the sun and regarded as the creator or source of virtually everything; he dwells in the sky with the moon and spawned the immortal sky-beings (yalyakali).",
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie. Australian Association for the Study of Religions." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Among the Central Enga, Aitawe is a male deity symbolised by the sun and regarded as the creator or source of nearly all that exists; he lives in the sky with the female moon and the sky-beings and spawned the immortal yalyakali.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie: Central Enga Religious Belief and Ritual. Australian Association for the Study of Religions." },
+          { "kind": "ethnography", "reference": "Biersack, A. (2011). 'The Sun and the Shakers, Again: Enga, Ipili, and Somaip Perspectives on the Cult of Ain.' Oceania 81(2-3)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Solar high-god / creator-source of the Central Enga (rendered as deity). Brennan (1977) is the standard source on Central Enga cosmology; the moon is reckoned female opposite him. The name's distribution and the exact gloss vary by Enga dialect group."
+  },
+  {
+    "id": "enga_yalakali",
+    "name": {
+      "primary": "Sky People",
+      "alt": ["Yalyakali", "sky-beings"],
+      "transliterations": { "enga": "yalyakali" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Enga",
+    "primaryTradition": "Enga",
+    "sex": "unspecified",
+    "vitalStatus": "immortal",
+    "parentIds": ["enga_aitawe"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky-world",
+        "contextTag": "lifelong",
+        "term": { "value": "yalyakali", "script": "yalyakali", "rom": "yalyakali" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie. Australian Association for the Study of Religions." }
+        ]
+      },
+      {
+        "sphereId": "immortality",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie. Australian Association for the Study of Religions." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dwell-deathless-in-the-sky",
+        "name": "DWELL deathless in an ideal sky-world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "collective",
+        "notes": "The yalyakali inhabit an idealised mirror of the visible Enga world, free of toil, sickness and friction; having drunk the 'water of life' they were rendered immortal.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie. Australian Association for the Study of Religions." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The yalyakali are a class of immortal sky-beings spawned by Aitawe; they inhabit an ideal version of the visible world, free of toil and sickness, and became deathless by drinking the 'water of life'.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie: Central Enga Religious Belief and Ritual. Australian Association for the Study of Religions." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Enga yalyakali = 'sky people / sky men'. A collective class of celestial spirit-beings; rendered as deity (spirit-class) per the schema, with the collective nature flagged. Sex unspecified as the class encompasses sky-dwellers generally. One figure-entry stands for the named category."
+  },
+  {
+    "id": "enga_kana_moon",
+    "name": {
+      "primary": "Moon",
+      "alt": ["Kana"],
+      "transliterations": { "enga": "kana" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Enga",
+    "primaryTradition": "Enga",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "kana", "script": "kana", "rom": "kana" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie. Australian Association for the Study of Religions." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Central Enga cosmology the moon (kana) is reckoned female and dwells in the sky as the counterpart of the male sun Aitawe.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Brennan, P.W. (1977). Let Sleeping Snakes Lie: Central Enga Religious Belief and Ritual. Australian Association for the Study of Religions." },
+          { "kind": "ethnography", "reference": "Wiessner, P. & Tumu, A. (1998). Historical Vines: Enga Networks of Exchange, Ritual, and Warfare in Papua New Guinea. Smithsonian Institution Press." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Enga kana = 'moon' (attested in idiom, e.g. 'niki langapu, kana langapu' — 'cheat the sun, cheat the moon'). The moon as a female sky-power opposite the male sun; rendered deity. Less personified in the literature than Aitawe, hence sparse faculties and secondary weight."
+  },
+  {
+    "id": "enga_sangai_ancestress",
+    "name": {
+      "primary": "Bachelors' Spirit-Wife",
+      "alt": ["sangai ancestress", "sandalu spirit-woman"],
+      "transliterations": { "enga": "sangai" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Enga",
+    "primaryTradition": "Enga",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      {
+        "sphereId": "male-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "sangai", "script": "sangai", "rom": "sangai" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Gibbs, P. (1995). 'The Sandalu Bachelor Ritual among the Laiapu Enga.' Anthropos 90: 27-47." }
+        ]
+      },
+      {
+        "sphereId": "growth-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "sandalu", "script": "sandalu", "rom": "sandalu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Meggitt, M.J. (1964). 'Male-Female Relationships in the Highlands of Australian New Guinea.' American Anthropologist 66(4), pt. 2." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make-bachelors-grow",
+        "name": "MAKE the secluded bachelors grow to manhood",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the sangai/sandalu bachelor cult the young men are held to be married to a spirit-woman embodied in sacred plants (notably the bog-iris), who purifies them and makes them grow into healthy, attractive, marriageable men.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Gibbs, P. (1995). 'The Sandalu Bachelor Ritual among the Laiapu Enga.' Anthropos 90: 27-47." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "enga_sangai_bog_iris",
+        "kind": "sacred-plant",
+        "name": "sacred bog-iris of the bachelor cult",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "Cultivated and tended in seclusion as the embodiment of the spirit-woman; its growth is identified with the growth and purity of the bachelors.",
+        "notes": "Bog-iris (and bamboo tubes) are the sacred vehicles of the sangai/sandalu; the neighbouring traditions share the bog-iris symbolism. English name given; vernacular plant-term not recorded in the consulted sources.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Gibbs, P. (1995). 'The Sandalu Bachelor Ritual among the Laiapu Enga.' Anthropos 90: 27-47." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "In the Enga sangai (Laiapu sandalu) bachelors' cult the secluded youths are regarded as married to a spirit-woman embodied in sacred plants, who ensures they grow into mature, marriageable men.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Gibbs, P. (1995). 'The Sandalu Bachelor Ritual among the Laiapu Enga.' Anthropos 90: 27-47." },
+          { "kind": "ethnography", "reference": "Meggitt, M.J. (1964). 'Male-Female Relationships in the Highlands of Australian New Guinea.' American Anthropologist 66(4), pt. 2." },
+          { "kind": "ethnography", "reference": "Wiessner, P. & Tumu, A. (1998). Historical Vines. Smithsonian Institution Press, on the spread of the sangai/sandalu cult." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Enga sangai (eastern) / sandalu (Laiapu) = the bachelors' growth-and-purification cult; the spirit-wife is an ancestral cult-being rather than a fully named goddess, rendered here as deity (cult-ancestress tier). Wiessner & Tumu (1998) date the cult's spread to roughly the seventh generation before the present. The vernacular personal name of the spirit-woman is not consistently recorded, hence empty term values."
+  },
+  {
+    "id": "mountain_ok_afek",
+    "name": {
+      "primary": "Ancestress-Creatress",
+      "alt": ["Afek", "Afékan", "Afʉ"],
+      "transliterations": { "telefol": "Afek", "faiwol": "Karigan", "mian": "Paatakanib" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mountain Ok",
+    "primaryTradition": "Mountain Ok",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "Afek", "script": "Afek", "rom": "Afek" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1990). 'Secrecy's Turns.' In N. Lutkehaus et al. (eds.), Sepik Heritage: Tradition and Change in Papua New Guinea. Carolina Academic Press." }
+        ]
+      },
+      {
+        "sphereId": "agriculture",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Barth, F. (1987). Cosmologies in the Making: A Generative Approach to Cultural Variation in Inner New Guinea. Cambridge University Press." }
+        ]
+      },
+      {
+        "sphereId": "male-cult-and-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows: Order, Entropy and Religion among the Telefolmin. PhD thesis, University of British Columbia." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found-the-telefolip-and-taro",
+        "name": "FOUND the Telefolip cult-house and the taro gardens",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Afek founded Telefol culture and the men's cult, establishing the central cult-house at Telefolip, which is held to govern the fertility of taro gardens throughout the Min region. Travelling from beyond the headwaters of the Strickland and the Ok Om, she set up a chain of cult centres along her track.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows. PhD thesis, University of British Columbia." }
+        ]
+      },
+      {
+        "id": "shape-the-land",
+        "name": "SHAPE the landscape of the Min country",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "While she cleaned entrails in the river, a cooking-fire she had left spread and burned the forest, creating the region's grasslands; her track and resting-places became sacred features of Telefol geography.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1990). 'Hierarchy and Wealth in Telefolmin.' / Craig, B. & Hyndman, D. (eds.) (1990). Children of Afek: Tradition and Change among the Mountain-Ok of Central New Guinea. University of Sydney (Oceania Monograph 40)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mountain_ok_telefolip",
+        "kind": "cult-house",
+        "name": "Telefolip cult-house",
+        "term": { "value": "Telefolip", "script": "Telefolip", "rom": "Telefolip" },
+        "role": "The ancestral cult-house founded by Afek at the village of Telefolip; the regional centre of the men's cult, identified with Afek herself and held to govern taro fertility across the Min country.",
+        "notes": "Telefolip ('the original/true Telefol place') gives the Telefolmin their name; periodically rebuilt, its maintenance is reckoned vital to the fertility of taro throughout the region.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows. PhD thesis, UBC." },
+          { "kind": "ethnography", "reference": "Barth, F. (1987). Cosmologies in the Making. Cambridge University Press." }
+        ]
+      },
+      {
+        "id": "mountain_ok_bonang_shells",
+        "kind": "valuable",
+        "name": "shell valuables",
+        "term": { "value": "bonang", "script": "bonang", "rom": "bonang" },
+        "role": "Cult and exchange valuables used in bridewealth and mortuary payments; in myth they originated from maggots in the decaying flesh of Afek's brother Umoim.",
+        "notes": "Associated with Afek's myth-cycle via Umoim; central to Telefol exchange.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows. PhD thesis, UBC." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Afek (Afékan) is the primal ancestress-creatress of the Mountain Ok / Min peoples; she founded Telefol culture, the men's cult and the central cult-house at Telefolip (which governs taro fertility), travelled through the region creating its landscape and cult centres, and is the ancestress from whom the Min reckon descent (Faiwol Karigan, Mian Paatakanib).",
+        "citations": [
+          { "kind": "ethnography", "reference": "Barth, F. (1987). Cosmologies in the Making: A Generative Approach to Cultural Variation in Inner New Guinea. Cambridge University Press." },
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows: Order, Entropy and Religion among the Telefolmin. PhD thesis, University of British Columbia." },
+          { "kind": "ethnography", "reference": "Craig, B. & Hyndman, D. (eds.) (1990). Children of Afek: Tradition and Change among the Mountain-Ok of Central New Guinea. Oceania Monograph 40, University of Sydney." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Ancestress-creatress / culture-heroine tier (rendered deity). The Min peoples are collectively the 'children of Afek'; cognate names occur across the group (Telefol Afek/Afékan, Faiwol Karigan, Mian Paatakanib/Fitipkanib). The transliterations field carries those tradition-variant names. English-leading name 'Ancestress-Creatress'; vernacular Afek in term."
+  },
+  {
+    "id": "mountain_ok_umoim",
+    "name": {
+      "primary": "Brother of the Ancestress",
+      "alt": ["Umoim"],
+      "transliterations": { "telefol": "Umoim" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mountain Ok",
+    "primaryTradition": "Mountain Ok",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "land-of-the-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "Umoim", "script": "Umoim", "rom": "Umoim" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows. PhD thesis, University of British Columbia." }
+        ]
+      },
+      {
+        "sphereId": "wealth-and-valuables",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Craig, B. & Hyndman, D. (eds.) (1990). Children of Afek. Oceania Monograph 40, University of Sydney." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "prepare-the-land-of-the-dead",
+        "name": "PREPARE the land of the dead in the west",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Killed by his elder sister Afek and sent underground, Umoim made ready the land of the dead (Bagelam) in the west and there created the stone adzes (fubi) and the shell valuables (bonang), the latter arising from maggots in his decaying flesh.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows. PhD thesis, UBC." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mountain_ok_fubi_adzes",
+        "kind": "tool",
+        "name": "stone adzes",
+        "term": { "value": "fubi", "script": "fubi", "rom": "fubi" },
+        "role": "Stone adze-blades created by Umoim in the underworld; Mt Fubilan ('place of the fubi') is named for them.",
+        "notes": "Links Umoim's myth to the sacred geography around Mt Fubilan, above the traditional land of the dead.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows. PhD thesis, UBC." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Umoim, the younger brother (and in some tellings brother-husband) of Afek, was killed by her and sent underground, where he prepared the western land of the dead and created the stone adzes (fubi) and the shell valuables (bonang) used in bridewealth and mortuary payments.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jorgensen, D. (1981). Taro and Arrows: Order, Entropy and Religion among the Telefolmin. PhD thesis, University of British Columbia." },
+          { "kind": "ethnography", "reference": "Craig, B. & Hyndman, D. (eds.) (1990). Children of Afek. Oceania Monograph 40, University of Sydney." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Brother (and in variants brother-husband) of the ancestress Afek; an underworld-founding figure of the Telefol myth-cycle, rendered deity (primordial-ancestor tier). Vital status deceased: in myth he is slain and becomes lord/maker of the land of the dead. His decay is the origin of cult valuables, a classic 'dema'-type fertility-from-death motif of southern New Guinea."
+  },
+  {
+    "id": "kiwai_sido",
+    "name": {
+      "primary": "First Man to Die",
+      "alt": ["Sido", "Sída", "Hido", "Iko"],
+      "transliterations": { "kiwai": "Sido" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kiwai",
+    "primaryTradition": "Kiwai",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-afterworld",
+        "contextTag": "lifelong",
+        "term": { "value": "Sido", "script": "Sido", "rom": "Sido" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Societatis Scientiarum Fennicae 47, Helsinki." }
+        ]
+      },
+      {
+        "sphereId": "fertility-and-plants",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1927). The Kiwai Papuans of British New Guinea. Macmillan, London." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "open-the-road-to-the-dead",
+        "name": "OPEN the road to the land of the dead",
+        "term": { "value": "Adiri", "script": "Adiri", "rom": "Adiri" },
+        "inheritability": "unique",
+        "notes": "As the first human to die, Sido opened the path to Adiri, the land of the dead in the west, which all the dead thereafter follow. There he married Dirivo, daughter of the place's first inhabitant, and his semen brought forth all the plants of Adiri; he made fire and built a vast house in which the spirits of the dead reside.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      },
+      {
+        "id": "transform-his-shape",
+        "name": "TRANSFORM his shape across the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In his wanderings Sido changes his skin like a snake and at last turns into a giant pig, splitting himself so that the pig's backbone and flanks form the house of the dead — a culture-hero/trickster figure as well as the first to die.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sido is the first man to die in Kiwai tradition; his death opened the road to Adiri, the western land of the dead. There he married Dirivo, his semen generated the plants of Adiri, he invented fire and built the great house of the dead; in his wanderings he changes skin and finally becomes a giant pig whose body forms the house of death.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Societatis Scientiarum Fennicae 47, Helsinki." },
+          { "kind": "ethnography", "reference": "Landtman, G. (1927). The Kiwai Papuans of British New Guinea. Macmillan, London." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / first-ancestor-of-death tier, rendered demigod given his world-shaping and life-after-death powers. Landtman's 1917 folk-tales and 1927 monograph are the standard primary sources. Name variants (Sido / Sído / Hido / Iko / Soido) occur across Fly-delta and Trans-Fly versions; English-leading 'First Man to Die', vernacular Sido in term. Vital status deceased: he is precisely the prototype of human death, though he persists as lord of Adiri."
+  },
+  {
+    "id": "kiwai_marunogere",
+    "name": {
+      "primary": "Founder of the Fertility Rite",
+      "alt": ["Marunogere", "Marúnogére"],
+      "transliterations": { "kiwai": "Marunogere" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kiwai",
+    "primaryTradition": "Kiwai",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      {
+        "sphereId": "fertility-rites",
+        "contextTag": "lifelong",
+        "term": { "value": "moguru", "script": "mogúru", "rom": "moguru" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1927). The Kiwai Papuans of British New Guinea. Macmillan, London." }
+        ]
+      },
+      {
+        "sphereId": "animals-and-the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "boroma", "script": "boroma", "rom": "boroma" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "institute-the-moguru",
+        "name": "INSTITUTE the moguru fertility rite",
+        "term": { "value": "moguru", "script": "mogúru", "rom": "moguru" },
+        "inheritability": "unique",
+        "notes": "Marunogere established the moguru, the most secret and most important Kiwai ceremony, held in the great communal longhouse (darimo) for the sexual instruction of youths and the renewal of the fertility of people, gardens and game.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1927). The Kiwai Papuans of British New Guinea. Macmillan, London." }
+        ]
+      },
+      {
+        "id": "make-the-first-pig",
+        "name": "MAKE the first pig",
+        "term": { "value": "boroma", "script": "boroma", "rom": "boroma" },
+        "inheritability": "unique",
+        "notes": "Marunogere is credited with creating the first pig, the animal central to Kiwai feasting and exchange and to the moguru itself.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kiwai_darimo_longhouse",
+        "kind": "ceremonial-house",
+        "name": "communal longhouse",
+        "term": { "value": "darimo", "script": "dárimo", "rom": "darimo" },
+        "role": "The great Kiwai men's longhouse in which the moguru founded by Marunogere is performed.",
+        "notes": "The dárimo is the ritual and social centre of the Kiwai village; the moguru is held within it once or twice a year.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1927). The Kiwai Papuans of British New Guinea. Macmillan, London." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Marunogere is the Kiwai culture-hero who instituted the moguru, the most secret and important fertility ceremony (held in the darimo longhouse), and who made the first pig.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Societatis Scientiarum Fennicae 47, Helsinki." },
+          { "kind": "ethnography", "reference": "Landtman, G. (1927). The Kiwai Papuans of British New Guinea. Macmillan, London (on the moguru/mogúru rite)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / ritual-founder tier, rendered demigod. Kiwai boroma = 'pig'; mogúru = the great fertility rite. Marunogere is named among the renowned Kiwai mythic figures (with Sido and Nuga). English-leading 'Founder of the Fertility Rite'; the rite-name moguru carried in term. Vital status deceased: an ancestral hero of the myth-age."
+  },
+  {
+    "id": "kiwai_nuga",
+    "name": {
+      "primary": "Crocodile-Ancestor",
+      "alt": ["Nuga", "Núga"],
+      "transliterations": { "kiwai": "Nuga" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kiwai",
+    "primaryTradition": "Kiwai",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      {
+        "sphereId": "ancestral-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "Nuga", "script": "Nuga", "rom": "Nuga" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "father-the-kiwai-line",
+        "name": "FATHER the Kiwai people",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "Nuga, a half-human, half-crocodile being fashioned long ago from a piece of wood, is reckoned an ancestor from whom the Kiwai descend.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Kiwai say they descend from Nuga, a half-human, half-crocodile being created long ago from a piece of wood.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Societatis Scientiarum Fennicae 47, Helsinki." },
+          { "kind": "reference-work", "reference": "Leach, M. & Fried, J. (eds.) Funk & Wagnalls Standard Dictionary of Folklore, Mythology and Legend, s.v. Melanesian mythology (Nuga)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Theriomorphic ancestor / culture-hero tier, rendered demigod. A crocodile-man origin-ancestor of the Kiwai, born from wood; one of the renowned Kiwai mythic figures alongside Sido and Marunogere. English-leading 'Crocodile-Ancestor'; vernacular Nuga in term."
+  },
+  {
+    "id": "kiwai_dirivo",
+    "name": {
+      "primary": "Mistress of the Land of the Dead",
+      "alt": ["Dirivo", "Dírivo"],
+      "transliterations": { "kiwai": "Dirivo" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kiwai",
+    "primaryTradition": "Kiwai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-ancestral" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-afterworld",
+        "contextTag": "lifelong",
+        "term": { "value": "Dirivo", "script": "Dírivo", "rom": "Dirivo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Soc. Sci. Fennicae 47." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Dirivo is the daughter of Adiri, the first inhabitant of the barren land of the dead; Sido, the first man to die, married her, after which his generative power brought the plants of Adiri into being.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Landtman, G. (1917). The Folk-Tales of the Kiwai Papuans. Acta Societatis Scientiarum Fennicae 47, Helsinki." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female denizen of the underworld, daughter of the eponymous Adiri and bride of Sido; rendered demigod (chthonic/ancestral tier). Some recensions vary the names of Adiri's daughter and of Sido's wives (e.g. Sagaru, Pekai in related tellings); Dirivo follows Landtman's Adiri account. English-leading name; vernacular Dirivo in term."
+  },
+  {
+    "id": "elema_ma_hevehe",
+    "name": {
+      "primary": "Sea-Spirits of the Masks",
+      "alt": ["Ma-Hevehe", "ma-hevehe", "Sea Hevehe"],
+      "transliterations": { "elema": "ma-hevehe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Elema",
+    "primaryTradition": "Elema",
+    "sex": "unspecified",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sea",
+        "contextTag": "lifelong",
+        "term": { "value": "ma-hevehe", "script": "ma-hevehe", "rom": "ma-hevehe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo: The Social and Ceremonial Life of the Elema. Oxford University Press, Clarendon." }
+        ]
+      },
+      {
+        "sphereId": "male-cult-and-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "hevehe", "script": "hevehe", "rom": "hevehe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring-the-mask-daughters-from-the-sea",
+        "name": "BRING the mask-daughters up from the sea",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "collective",
+        "notes": "A ma-hevehe brings his daughters up from the sea to be lodged in the care of the men's eravo; over months he returns and the men build named pairs of towering hevehe masks to embody all the daughters, until the masked beings emerge, dance and are sent back to the sea — the climax of the decade-long hevehe cycle.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "elema_hevehe_mask",
+        "kind": "mask",
+        "name": "towering hevehe mask",
+        "term": { "value": "hevehe", "script": "hevehe", "rom": "hevehe" },
+        "role": "Tall barkcloth-over-cane masks, up to about six to seven metres high, made in secret in the eravo to embody the sea-spirit daughters; danced at the climax of the cycle and, being sacred, burnt afterwards.",
+        "notes": "Constructed in named pairs over years; their sacred nature meant destruction by fire after use, so very few survive. Recorded in detail by Williams (1940).",
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      },
+      {
+        "id": "elema_eravo_house",
+        "kind": "ceremonial-house",
+        "name": "men's ceremonial longhouse",
+        "term": { "value": "eravo", "script": "eravo", "rom": "eravo" },
+        "role": "The Elema men's house, newly built to open each hevehe cycle, within which the hevehe masks are secretly constructed and the sea-spirit daughters are housed.",
+        "notes": "The eravo (also given as elavo) is both initiation lodge and mask-workshop; its raising begins the cycle.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Among the Elema of Orokolo Bay the ma-hevehe are powerful sea-spirits; a ma-hevehe brings his daughters up from the sea into the keeping of the men's eravo, and over a ten-to-twenty-year cycle the men construct towering paired hevehe masks to embody them, danced at the climax and then burnt. The cycle, recorded by F.E. Williams, both initiated men and made peace with the dangerous spirits of forest and sea.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo: The Social and Ceremonial Life of the Elema. Oxford University Press, Clarendon." },
+          { "kind": "ethnography", "reference": "Williams, F.E. (1923). The Vailala Madness and the Destruction of Native Ceremonies in the Gulf Division. Territory of Papua Anthropology Report 4." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sea-spirit class behind the great Hevehe masked cycle; rendered as deity (spirit-class), with the collective nature flagged. Sex unspecified as the ma-hevehe are a category (a male sea-spirit and his many daughters). The hevehe masks and eravo house are the attested cult-objects. Williams' Drama of Orokolo (1940) is the definitive ethnography."
+  },
+  {
+    "id": "elema_eharo",
+    "name": {
+      "primary": "Things of Gladness",
+      "alt": ["eharo", "eharo spirits"],
+      "transliterations": { "elema": "eharo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Elema",
+    "primaryTradition": "Elema",
+    "sex": "unspecified",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "festival-and-play",
+        "contextTag": "lifelong",
+        "term": { "value": "eharo", "script": "eharo", "rom": "eharo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      },
+      {
+        "sphereId": "totemic-spirits",
+        "contextTag": "lifelong",
+        "term": { "value": "eharo", "script": "eharo", "rom": "eharo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dance-as-things-of-gladness",
+        "name": "DANCE as the lighthearted spirit-beings of the cycle",
+        "term": { "value": "maea morava eharu", "script": "maea morava eharu", "rom": "maea morava eharu" },
+        "inheritability": "collective",
+        "notes": "The eharo, called maea morava eharu ('things of gladness'), are lighter, often totemic spirit-beings whose comic, decorative barkcloth masks are danced as a festive prelude at two stages of the hevehe cycle, before the awe of the great hevehe.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "elema_eharo_mask",
+        "kind": "mask",
+        "name": "eharo dance-mask",
+        "term": { "value": "eharo", "script": "eharo", "rom": "eharo" },
+        "role": "Lightweight barkcloth-over-cane dance-masks, often crowned with totemic animal or comic figures, worn in the festive interludes of the hevehe cycle.",
+        "notes": "Eharo literally 'dance head/dance mask'; unlike the sacred hevehe they were lighter and worn for gladness. Many survive in museum collections.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo. Oxford University Press." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The eharo (maea morava eharu, 'things of gladness') are lighthearted, often totemic spirit-beings of the Elema, embodied in decorative barkcloth dance-masks worn in festive interludes of the hevehe cycle as a prelude to its more serious sacred stages.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Williams, F.E. (1940). Drama of Orokolo: The Social and Ceremonial Life of the Elema. Oxford University Press, Clarendon." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class of festive/totemic beings within the hevehe complex; rendered deity (spirit-class), collective and sex-unspecified. The eharo masks are the attested cult-object. Distinguished from the awe-laden ma-hevehe by their playful character. Williams (1940) is the source."
+  }
+]
+```
+
+**Sanity check.** I verified all 20 figure IDs against `/home/user/PantheonRepository/data-sources/existing-ids.json` programmatically — zero collisions, and no Huli/Enga/Mountain Ok/Kiwai/Elema IDs exist yet (so no re-authoring of the already-present Asmat/Marind-anim/Trobriand/Fijian/Ni-Vanuatu material). I re-checked the schema requirements: `id`/`name` keys in materialCulture (never `item`), domains as objects with `sphereId`/`contextTag`/`term`/`sources`, faculties as verb-PHRASES, English/plain word leading every `name.primary` with the attested vernacular in `term`, `origin:"canon"` throughout, and no modern coinages (kinesis/mancy/-pathy/portation/kinetic/telepath) — none used. No repo files were modified.
+
+**Summary.** 20 figures across the five requested absent traditions, foregrounding the creatress-ancestors and culture-heroes as instructed:
+- **Huli (8):** Honabe (creator-mother), Timbu (sky-father), Korimogo, Ni (sun), Hana (moon), Hela (apical ancestor), Datagaliwabe (sky-god of moral punishment), Heyolabe (dama-class malefactor) — cited to Glasse (1965), Frankel (1986), Goldman (1983), Ballard (1995).
+- **Enga (4):** Aitawe (solar creator), the yalakali (immortal sky-people), Kana (moon), and the sangai/sandalu bachelors' spirit-wife — cited to Brennan (1977), Gibbs (1995), Meggitt (1964), Wiessner & Tumu (1998), Biersack (2011).
+- **Mountain Ok (2):** Afek/Afékan (ancestress-creatress, with the Telefolip cult-house and bonang shells in materialCulture) and her brother Umoim (underworld-founder, fubi adzes) — cited to Barth (1987), Jorgensen (1981/1990), Craig & Hyndman, *Children of Afek* (1990).
+- **Kiwai (4):** Sido (first man to die, road to Adiri), Marunogere (founder of the moguru, maker of the first pig, with the darimo longhouse), Nuga (crocodile-ancestor), Dirivo (mistress of Adiri) — cited to Landtman (1917, 1927).
+- **Elema (2):** the Ma-Hevehe sea-spirits (with the towering hevehe masks and the eravo in materialCulture) and the eharo "things of gladness" (with the eharo masks) — cited to F.E. Williams, *Drama of Orokolo* (1940).
+
+Spirit-classes and culture-heroes were mapped to deity/demigod per the rules (with collective/spirit-class status explained in notes), tier labels (ancestress-creatress, culture-hero, ritual-founder) noted, and attested cult-objects (Telefolip, hevehe/eharo masks, darimo) placed in materialCulture. One caveat: WebFetch was blocked (HTTP 403) across every domain in this environment, so I worked from web-search result text plus the canonical primary ethnographies (Landtman, Williams, Barth, Brennan, Glasse), which are the standard sources the prompt itself names.
+
+result: Authored 20 comparative-mythology figures (Huli, Enga, Mountain Ok, Kiwai, Elema) as a single schema-conformant JSON array, ID-checked against existing-ids.json with zero collisions, no repo files modified.
