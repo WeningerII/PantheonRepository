@@ -11,7 +11,11 @@ const { bootApp } = require('./helpers/boot.cjs');
 let app, people;
 before(async () => {
   app = await bootApp();
-  people = JSON.parse(app.window.localStorage.getItem('pantheon_registry_v8'));
+  // Prefer the persisted seed, but fall back to the in-memory seed the app
+  // exposes on window.__PR — the corpus now exceeds the browser/jsdom
+  // localStorage cap, so the persist is intentionally skipped (see state.jsx).
+  const raw = app.window.localStorage.getItem('pantheon_registry_v8');
+  people = raw ? JSON.parse(raw) : (app.window.__PR && app.window.__PR.seedPeople) || {};
 });
 
 // Every figure that should show both a native power-term and a native

@@ -1,0 +1,1494 @@
+Now I understand ǁGãuwa/ǁGauwa correctly: an ambivalent lesser god/spirit-of-the-dead figure, prominent among the Ju/'hoansi San (documented by Lorna Marshall and Megan Biesele), distinct from the ǀXam ǀKaggen cycle but part of broader San religion. I'll classify it as a deity (lesser/ambivalent spirit) and explain in notes. The prompt explicitly lists ǁGãuwa under San.
+
+I now have everything. Here is the complete registry.
+
+```json
+[
+  {
+    "id": "shona_mwari",
+    "name": {
+      "primary": "Supreme Creator God",
+      "alt": ["Mwari", "Musikavanhu", "Nyadenga", "Dzivaguru (as epithet)", "Musiki", "Tenzi"],
+      "transliterations": { "shona": "Mwari" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / pre-creation" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Musikavanhu", "script": "Latn", "rom": "Musikavanhu" },
+        "sources": [{ "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1976/1987), on Mwari as Musikavanhu, 'creator of people'" }]
+      },
+      {
+        "sphereId": "sky-rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Nyadenga", "script": "Latn", "rom": "Nyadenga" },
+        "sources": [{ "kind": "secondary", "reference": "Daneel, M.L., 'The God of the Matopo Hills: An Essay on the Mwari Cult in Rhodesia' (1970)" }]
+      },
+      {
+        "sphereId": "fertility-of-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Dzivaguru", "script": "Latn", "rom": "Dzivaguru" },
+        "sources": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Religion' (1962)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "decree_through_oracle",
+        "name": "speaks decrees from the cave-oracle to the people",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "At the Matonjeni / Njelele shrines in the Matopos, a voice attributed to Mwari issued from the rocks and was relayed by an attendant officiant; petitioners sought rain and counsel in times of crisis.",
+        "sources": [{ "kind": "secondary", "reference": "Daneel, M.L., 'The God of the Matopo Hills' (1970), on the Njelele/Matonjeni oracle" }]
+      },
+      {
+        "id": "send_rain",
+        "name": "withholds or releases the rains over the land",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Mwari is the giver of rain in drought; the Mwari cult was historically a rain-petitioning institution.",
+        "sources": [{ "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1987)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mwari is the single Supreme Being of Shona religion, a remote creator approached through ancestral intermediaries and the Matopos shrine-oracle.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples: An Ethnography of the Contemporary Shona, with Special Reference to their Religion' (1987)" },
+          { "kind": "secondary", "reference": "Daneel, M.L., 'The God of the Matopo Hills' (1970)" }
+        ],
+        "weight": "primary-attestation"
+      },
+      {
+        "claim": "Mwari bears the praise-names Musikavanhu (Creator of People), Nyadenga (One of the Heavens), and Dzivaguru, and is conceived as genderless.",
+        "citations": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Religion' (1962)" }],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "High god of the Shona of Zimbabwe; classed as deity. Genderless/sexless in Shona conception, hence sex='none'. Worship centred on the Matonjeni (Matopos) shrines, chiefly Njelele."
+  },
+  {
+    "id": "shona_dzivaguru",
+    "name": {
+      "primary": "Great Pool Earth-Deity",
+      "alt": ["Dzivaguru", "Dziva", "Karuva"],
+      "transliterations": { "shona": "Dzivaguru" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "water-and-pools",
+        "contextTag": "lifelong",
+        "term": { "value": "Dzivaguru", "script": "Latn", "rom": "Dzivaguru" },
+        "sources": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Religion' (1962); name parses as dziva ('pool') + guru ('great')" }]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1987), on Dzivaguru as a rain/earth divinity among the Korekore" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_waters",
+        "name": "holds dominion over the great pools and springs that feed the land",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "An ancient earth/water divinity of the northern (Korekore) Shona; in some traditions an autonomous deity, in others an epithet of Mwari.",
+        "sources": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Religion' (1962)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Dzivaguru is an old earth-and-water divinity of the northern Shona (Korekore), variously treated as an independent deity or as a praise-name of the high god Mwari.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1987)" },
+          { "kind": "secondary", "reference": "Gelfand, M., 'Shona Religion' (1962)" }
+        ],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "Classed as deity. Sex='none' as the figure is not consistently gendered in the sources. Distinct entry because Dzivaguru appears in some Korekore traditions as a separate territorial divinity rather than merely a Mwari epithet."
+  },
+  {
+    "id": "shona_chaminuka",
+    "name": {
+      "primary": "Lion Royal Ancestor-Spirit",
+      "alt": ["Chaminuka", "Chaminuka mhondoro"],
+      "transliterations": { "shona": "Chaminuka" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "male",
+    "vitalStatus": "spirit",
+    "parentIds": ["shona_mwari"],
+    "temporal": { "era": "founding ancestral era; mediums active into the 19th century" },
+    "domains": [
+      {
+        "sphereId": "national-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "mhondoro", "script": "Latn", "rom": "mhondoro" },
+        "sources": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Ritual' (1959); 'mhondoro' = lion, the royal/founding ancestral spirit class" }]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1987), on Chaminuka as celebrated prophet" }]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Daneel, M.L., 'The God of the Matopo Hills' (1970)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "possess_a_medium",
+        "name": "descends into and speaks through a chosen human medium",
+        "term": { "value": "svikiro", "script": "Latn", "rom": "svikiro" },
+        "inheritability": "lineage-conferred",
+        "notes": "Mhondoro spirits manifest across generations through successive svikiro (mediums); the medium becomes the spirit's mouthpiece.",
+        "sources": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Ritual' (1959)" }]
+      },
+      {
+        "id": "foretell_events",
+        "name": "foretells war, drought, and the fortunes of the nation",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Chaminuka was renowned as a seer; tradition holds his medium prophesied the coming of white men 'without knees' (i.e. wearing trousers).",
+        "sources": [{ "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1987)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mhondoro_black_cloth",
+        "kind": "regalia",
+        "name": "black ritual cloth",
+        "term": { "value": "machira matema", "script": "Latn", "rom": "machira matema" },
+        "role": "the dark cloths worn by the medium when possessed by the mhondoro spirit",
+        "notes": "Black/dark cloth is conventionally associated with rain-bringing ancestral spirits in Shona ritual.",
+        "sources": [{ "kind": "secondary", "reference": "Gelfand, M., 'Shona Ritual' (1959), on ritual dress of mediums" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chaminuka is the senior mhondoro (royal lion-spirit) at the apex of the Shona national hierarchy of ancestral spirits, a renowned prophet who manifests through successive mediums.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bourdillon, M.F.C., 'The Shona Peoples' (1987)" },
+          { "kind": "secondary", "reference": "Gelfand, M., 'Shona Religion' (1962)" }
+        ],
+        "weight": "primary-attestation"
+      },
+      {
+        "claim": "Chaminuka and Nehanda are in some traditions described as mhondoro dzematenga ('lions of the heavens'), children of Mwari who never had a fully mortal existence.",
+        "citations": [{ "kind": "secondary", "reference": "Encyclopedia.com, 'Shona Religion' (citing scholarship on mhondoro of supratribal significance)" }],
+        "weight": "contested"
+      }
+    ],
+    "notes": "Classed as demigod: a royal ancestor-spirit (mhondoro) of supratribal significance, in some traditions held to be a child of Mwari (hence parentIds includes shona_mwari) who is more-than-mortal. vitalStatus='spirit' (an ancestral spirit, not a living mortal). Often paired with Nehanda."
+  },
+  {
+    "id": "shona_nehanda",
+    "name": {
+      "primary": "Female Lion Royal Ancestor-Spirit",
+      "alt": ["Nehanda", "Nehanda Nyakasikana", "Mbuya Nehanda"],
+      "transliterations": { "shona": "Nehanda" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "female",
+    "vitalStatus": "spirit",
+    "parentIds": ["shona_mwari"],
+    "temporal": { "era": "founding ancestral era; mediums active into the 19th century" },
+    "domains": [
+      {
+        "sphereId": "national-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "mhondoro", "script": "Latn", "rom": "mhondoro" },
+        "sources": [{ "kind": "secondary", "reference": "Britannica, 'Nehanda' (Shona mhondoro spirit)" }]
+      },
+      {
+        "sphereId": "fertility-and-land",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Beach, D.N., 'An Innocent Woman, Unjustly Accused? Charwe, Medium of the Nehanda Mhondoro Spirit', History in Africa 25 (1998)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "possess_a_medium",
+        "name": "descends into and speaks through a chosen female medium",
+        "term": { "value": "svikiro", "script": "Latn", "rom": "svikiro" },
+        "inheritability": "lineage-conferred",
+        "notes": "The Nehanda spirit incarnated across generations of mediums; Charwe Nyakasikana was its medium during the 1896–97 Rising.",
+        "sources": [{ "kind": "secondary", "reference": "Beach, D.N., History in Africa 25 (1998)" }]
+      },
+      {
+        "id": "rally_resistance",
+        "name": "incites and blesses armed resistance against invaders",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Through her medium, Nehanda became a galvanising figure in the First Chimurenga (1896–97) against the British South Africa Company.",
+        "sources": [{ "kind": "secondary", "reference": "Ranger, T.O., 'Revolt in Southern Rhodesia 1896–7' (1967)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nehanda is a powerful female Shona mhondoro spirit, often regarded as the sister or counterpart of Chaminuka, and a guardian-ancestor of the land.",
+        "citations": [
+          { "kind": "secondary", "reference": "Britannica, 'Nehanda'" },
+          { "kind": "secondary", "reference": "Encyclopedia of African Religion (SAGE), 'Nehanda'" }
+        ],
+        "weight": "primary-attestation"
+      },
+      {
+        "claim": "The Nehanda spirit is distinct from its human mediums; the medium Charwe was executed in 1898 while the spirit itself is held never to have died.",
+        "citations": [{ "kind": "secondary", "reference": "Beach, D.N., 'An Innocent Woman, Unjustly Accused?', History in Africa 25 (1998)" }],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "Classed as demigod (mhondoro royal ancestor-spirit), the female counterpart to Chaminuka; in some traditions a child of Mwari (parentIds). vitalStatus='spirit'. The mortal medium is recorded separately as shona_charwe."
+  },
+  {
+    "id": "shona_charwe",
+    "name": {
+      "primary": "Spirit-Medium of Nehanda",
+      "alt": ["Charwe", "Charwe Nyakasikana", "Nehanda Charwe"],
+      "transliterations": { "shona": "Charwe Nyakasikana" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Shona",
+    "primaryTradition": "Shona",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": { "era": "c. 1840 – 27 April 1898" },
+    "domains": [
+      {
+        "sphereId": "spirit-mediumship",
+        "contextTag": "lifelong",
+        "term": { "value": "svikiro", "script": "Latn", "rom": "svikiro" },
+        "sources": [{ "kind": "secondary", "reference": "Beach, D.N., History in Africa 25 (1998)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "host_the_spirit",
+        "name": "is entered by and gives voice to the Nehanda mhondoro",
+        "term": { "value": "kusvikirwa", "script": "Latn", "rom": "kusvikirwa" },
+        "inheritability": "non-transferable",
+        "notes": "Kusvikirwa = 'to be possessed/mounted' by a spirit; Charwe served as the embodied medium of Nehanda.",
+        "sources": [{ "kind": "secondary", "reference": "Beach, D.N., History in Africa 25 (1998)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Charwe Nyakasikana (c.1840–1898) was a Zezuru Shona woman who served as the svikiro (medium) of the Nehanda mhondoro and was executed by hanging by the British South Africa Company for her role in the 1896–97 Rising.",
+        "citations": [
+          { "kind": "secondary", "reference": "Beach, D.N., 'An Innocent Woman, Unjustly Accused? Charwe, Medium of the Nehanda Mhondoro Spirit, and the 1896–97 Central Shona Rising in Zimbabwe', History in Africa 25 (1998)" },
+          { "kind": "secondary", "reference": "BlackPast.org, 'Mbuya Nehanda (c. 1840-1898)'" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as mortal: the historical human medium of the Nehanda spirit, distinct from the spirit itself (shona_nehanda). Included because Shona tradition deliberately distinguishes the immortal mhondoro from its mortal vessel."
+  },
+  {
+    "id": "san_kaggen",
+    "name": {
+      "primary": "Mantis Trickster-Creator",
+      "alt": ["ǀKaggen", "/Kaggen", "Cagn", "Kaggen", "the Mantis", "ǀKággen"],
+      "transliterations": { "xam": "ǀKaggen", "xam_ascii": "/Kaggen" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "First Times / the Early Race" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "ǀKaggen", "script": "Latn", "rom": "/Kaggen" },
+        "sources": [{ "kind": "primary", "reference": "Orpen, J.M., 'A Glimpse into the Mythology of the Maluti Bushmen', Cape Monthly Magazine (1874): Qing's statement 'Cagn made all things, and we pray to him'" }]
+      },
+      {
+        "sphereId": "the-eland",
+        "contextTag": "lifelong",
+        "term": { "value": "ǁkhā:n", "script": "Latn", "rom": "//khan (eland)" },
+        "sources": [{ "kind": "primary", "reference": "Bleek & Lloyd Collection, story L.II 'The /Kaggen who took /Kammang-a's shoe and turned it into an eland'" }]
+      },
+      {
+        "sphereId": "trickery-and-transformation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Guenther, M., 'Tricksters and Trancers: Bushman Religion and Society' (1999)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_shift",
+        "name": "changes his shape between mantis, eland, hare, snake and vulture",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "ǀKaggen most often appears as a praying mantis but takes many animal forms; the mantis form is the namesake.",
+        "sources": [{ "kind": "secondary", "reference": "Guenther, M., 'Tricksters and Trancers' (1999)" }]
+      },
+      {
+        "id": "create_by_dreaming",
+        "name": "brings creatures and things into being by dreaming and by his will",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Qing told Orpen that Cagn made all things; in /Xam narrative he makes the first eland from a thong/shoe steeped in honey by a waterhole.",
+        "sources": [{ "kind": "primary", "reference": "Orpen, J.M., Cape Monthly Magazine (1874)" }]
+      },
+      {
+        "id": "raise_the_dead_eland",
+        "name": "restores and revives the eland he has made",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "In the Bleek & Lloyd eland narrative ǀKaggen grieves over and revives the eland after the meerkats kill it.",
+        "sources": [{ "kind": "secondary", "reference": "Hewitt, R., 'Structure, Meaning and Ritual in the Narratives of the Southern San' (1986)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kaggen_honey_thong",
+        "kind": "substance",
+        "name": "honey and a leather thong/sandal",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the materials from which ǀKaggen fashions and nourishes the first eland at the waterhole",
+        "notes": "In the /Xam version the object is a piece of /Kwammang-a's shoe (sandal/thong) smeared with honey, placed in the water.",
+        "sources": [{ "kind": "primary", "reference": "Bleek & Lloyd Collection, the eland-creation narrative" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "ǀKaggen is the trickster-creator of the southern San (especially the ǀXam), most often manifest as a praying mantis, credited with making the world and the eland.",
+        "citations": [
+          { "kind": "primary", "reference": "Orpen, J.M., 'A Glimpse into the Mythology of the Maluti Bushmen', Cape Monthly Magazine 9 (1874)" },
+          { "kind": "primary", "reference": "Bleek, W.H.I. & Lloyd, L.C., 'Specimens of Bushman Folklore' (1911)" },
+          { "kind": "secondary", "reference": "Guenther, M., 'Tricksters and Trancers: Bushman Religion and Society' (1999)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity (the term 'trickster-creator' is descriptive; per the schema constraint, type=deity). The ǀXam name is rendered with click symbols (ǀ = dental click); ASCII Bleek–Lloyd convention writes '/Kaggen'. 'Cagn' is the Maloti/Drakensberg San form recorded by Orpen from the narrator Qing. Wife = the Dassie (san_kaggen not given a separate Dassie entry); son-in-law = san_kwammanga."
+  },
+  {
+    "id": "san_kwammanga",
+    "name": {
+      "primary": "Rainbow Being, Son-in-Law of the Mantis",
+      "alt": ["Kwammang-a", "ǀKwammang-a", "/Kwammang-a", "Kwammanga"],
+      "transliterations": { "xam": "ǀKwammang-a", "xam_ascii": "/Kwammang-a" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "First Times / the Early Race" },
+    "domains": [
+      {
+        "sphereId": "the-rainbow",
+        "contextTag": "lifelong",
+        "term": { "value": "ǀKwammang-a", "script": "Latn", "rom": "/Kwammang-a" },
+        "sources": [{ "kind": "secondary", "reference": "Bleek, D.F., 'The Mantis and His Friends' (1923), identifying Kwammang-a with the rainbow" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "appear_as_rainbow",
+        "name": "manifests in the sky as the colours of the rainbow",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Kwammang-a is described as a being who is neither wholly human nor animal but a part of the rainbow.",
+        "sources": [{ "kind": "secondary", "reference": "Bleek, D.F., 'The Mantis and His Friends' (1923)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kwammanga_sandal",
+        "kind": "tool",
+        "name": "leather sandal/shoe",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the shoe of Kwammang-a that ǀKaggen takes and turns into the first eland",
+        "notes": "Central object of the eland-creation cycle.",
+        "sources": [{ "kind": "primary", "reference": "Bleek & Lloyd Collection, the eland-creation narrative" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "ǀKwammang-a is a being of the rainbow in /Xam mythology, husband of the Porcupine (ǀKaggen's adopted daughter) and father of the Ichneumon (mongoose) and a younger Kwammang-a; his sandal is the matter of the first eland.",
+        "citations": [
+          { "kind": "primary", "reference": "Bleek, W.H.I. & Lloyd, L.C., 'Specimens of Bushman Folklore' (1911)" },
+          { "kind": "secondary", "reference": "Bleek, D.F., 'The Mantis and His Friends: Bushman Folklore' (1923)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity (a primordial First-Race being identified with the rainbow). Part of the ǀKaggen mythic family. Click symbol ǀ = dental click."
+  },
+  {
+    "id": "san_cogaz",
+    "name": {
+      "primary": "Son of the Mantis",
+      "alt": ["Cogaz", "Cogaaz"],
+      "transliterations": { "san_maloti": "Cogaz" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["san_kaggen"],
+    "temporal": { "era": "First Times / the Early Race" },
+    "domains": [
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Orpen, J.M., Cape Monthly Magazine (1874), Qing's narratives naming Cogaz son of Cagn" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "aid_the_creator",
+        "name": "assists and is rescued by his father the Mantis in adventures against the baboons",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineage-conferred",
+        "notes": "In Qing's narrative the baboons kill Cogaz and Cagn restores him; Cogaz also helps create the eland's wildness.",
+        "sources": [{ "kind": "primary", "reference": "Orpen, J.M., Cape Monthly Magazine (1874)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cogaz_sticks",
+        "kind": "tool",
+        "name": "sticks made into a strong weapon",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "Cogaz fashions/uses sticks that the Mantis charms so they fight the baboons",
+        "notes": "Attested within Qing's account of the war with the baboons.",
+        "sources": [{ "kind": "primary", "reference": "Orpen, J.M., Cape Monthly Magazine (1874)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cogaz is the son of Cagn (the Mantis) in the Maloti-Drakensberg San mythology recorded from the narrator Qing by J.M. Orpen in 1874.",
+        "citations": [
+          { "kind": "primary", "reference": "Orpen, J.M., 'A Glimpse into the Mythology of the Maluti Bushmen', Cape Monthly Magazine 9 (1874)" },
+          { "kind": "secondary", "reference": "McGranaghan, M. & Challis, S., 'Qing and the Animals of the Drakensberg-Maloti', in 'Aspects of San Rock Art' (Springer, 2017)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as demigod (a son of the creator Cagn/ǀKaggen). Attested specifically in the Maloti-Drakensberg (Qing/Orpen) tradition of the San rather than the /Xam corpus; included to represent the hero/offspring tier the prompt requests."
+  },
+  {
+    "id": "san_kxo",
+    "name": {
+      "primary": "Porcupine, Adopted Daughter of the Mantis",
+      "alt": ["ǃXo", "!Xo", "the Porcupine"],
+      "transliterations": { "xam": "ǃXo", "xam_ascii": "!Xo" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["san_kaggen"],
+    "temporal": { "era": "First Times / the Early Race" },
+    "domains": [
+      {
+        "sphereId": "the-household-of-the-mantis",
+        "contextTag": "lifelong",
+        "term": { "value": "ǃXo", "script": "Latn", "rom": "!Xo" },
+        "sources": [{ "kind": "secondary", "reference": "Bleek, D.F., 'The Mantis and His Friends' (1923)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mediate_the_family",
+        "name": "joins the rainbow-people to the Mantis through her marriage",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "As the Mantis's adopted daughter married to Kwammang-a (the rainbow), the Porcupine links the two mythic households; mother of the Ichneumon and younger Kwammang-a.",
+        "sources": [{ "kind": "secondary", "reference": "Bleek, D.F., 'The Mantis and His Friends' (1923)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "ǃXo, the Porcupine, is the adopted daughter of ǀKaggen the Mantis and wife of ǀKwammang-a the rainbow; their sons are the Ichneumon (mongoose) and a younger Kwammang-a.",
+        "citations": [
+          { "kind": "primary", "reference": "Bleek, W.H.I. & Lloyd, L.C., 'Specimens of Bushman Folklore' (1911)" },
+          { "kind": "secondary", "reference": "Bleek, D.F., 'The Mantis and His Friends: Bushman Folklore' (1923)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as demigod (a First-Race being in the Mantis's family). Click symbol ǃ = alveolar (postalveolar) click. ASCII Bleek–Lloyd form '!Xo'. Female."
+  },
+  {
+    "id": "san_gauwa",
+    "name": {
+      "primary": "Lesser Sky-Spirit and Lord of the Dead",
+      "alt": ["ǁGãuwa", "//Gauwa", "Gǁãuã", "Gauwa", "Gauab (Damara)"],
+      "transliterations": { "juhoan": "ǁGãuwa", "ascii": "//Gauwa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "San",
+    "primaryTradition": "San",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic present; active in the world of the living" },
+    "domains": [
+      {
+        "sphereId": "the-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "ǁGãuwa", "script": "Latn", "rom": "//Gauwa" },
+        "sources": [{ "kind": "secondary", "reference": "Marshall, L., 'Nyae Nyae !Kung Beliefs and Rites' (1999)" }]
+      },
+      {
+        "sphereId": "sickness-and-healing",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Biesele, M., 'Women Like Meat: The Folklore and Foraging Ideology of the Kalahari Ju/'hoan' (1993)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "loose_arrows_of_sickness",
+        "name": "sends invisible arrows of sickness through the spirits of the dead",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Among the Ju/'hoansi, ǁGãuwa is an ambivalent lesser god who, with the gǁauwasi (spirits of the dead), brings illness; he is countered by healers in trance.",
+        "sources": [{ "kind": "secondary", "reference": "Marshall, L., 'Nyae Nyae !Kung Beliefs and Rites' (1999)" }]
+      },
+      {
+        "id": "empower_healers",
+        "name": "is wrestled and driven off by trance-healers protecting the sick",
+        "term": { "value": "nǀom", "script": "Latn", "rom": "n/om (supernatural potency)" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Healers activated by n/om engage ǁGãuwa and the spirits of the dead during the curing dance.",
+        "sources": [{ "kind": "secondary", "reference": "Katz, R., 'Boiling Energy: Community Healing among the Kalahari Kung' (1982)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "ǁGãuwa is a lesser, ambivalent sky-being and lord of the dead in San (especially Ju/'hoansi) religion, associated with sickness sent via the spirits of the dead and opposed by trance-healers.",
+        "citations": [
+          { "kind": "secondary", "reference": "Marshall, L., 'Nyae Nyae !Kung Beliefs and Rites', Peabody Museum (1999)" },
+          { "kind": "secondary", "reference": "Biesele, M., 'Women Like Meat' (1993)" },
+          { "kind": "secondary", "reference": "Katz, R., 'Boiling Energy' (1982)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity (a lesser/ambivalent divine being). The figure is best attested among the northern San (Ju/'hoansi) as documented by Lorna Marshall and Megan Biesele, distinct from the malevolent Khoekhoe ǁGaunab though etymologically and conceptually related. ǁ = lateral click; ASCII '//Gauwa'. The prompt lists ǁGãuwa under San."
+  },
+  {
+    "id": "khoekhoe_tsui_goab",
+    "name": {
+      "primary": "Wounded-Knee Sky-Father",
+      "alt": ["Tsui-ǁGoab", "Tsũi-ǁgoab", "Tsui'goab", "Tsuni-Goam"],
+      "transliterations": { "khoekhoe": "Tsui-ǁGoab", "ascii": "Tsui-//Goab" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / first ancestor of dawn" },
+    "domains": [
+      {
+        "sphereId": "sky-and-dawn",
+        "contextTag": "lifelong",
+        "term": { "value": "Tsui-ǁGoab", "script": "Latn", "rom": "Tsui-//Goab" },
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam: The Supreme Being of the Khoi-khoi' (1881)" }]
+      },
+      {
+        "sphereId": "rain-and-thunder",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schapera, I., 'The Khoisan Peoples of South Africa' (1930)" }]
+      },
+      {
+        "sphereId": "health-and-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_the_rains",
+        "name": "sends rain and thunder when his people pray to him",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "The Khoekhoe prayed to Tsui-ǁGoab for rain; Hahn records prayers addressed to him.",
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      },
+      {
+        "id": "rise_again_each_dawn",
+        "name": "dies and rises again, returning with the dawn",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "As a dawn/light deity who repeatedly died and revived, his name is glossed both 'red dawn' and 'wounded knee'.",
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      },
+      {
+        "id": "vanquish_the_dark_one",
+        "name": "wars against and drives off ǁGaunab the lord of darkness",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "In their battle ǁGaunab wounds Tsui-ǁGoab's knee, giving him his by-name; Tsui-ǁGoab nonetheless overcomes him.",
+        "sources": [{ "kind": "secondary", "reference": "Schapera, I., 'The Khoisan Peoples of South Africa' (1930)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tsui-ǁGoab is the supreme being of the Khoekhoe (Nama), a sky/rain and dawn deity and ancestor, whose name is most often glossed 'Wounded Knee' (from his fight with ǁGaunab) and sometimes 'Red Dawn'.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam: The Supreme Being of the Khoi-khoi' (London, 1881)" },
+          { "kind": "secondary", "reference": "Schapera, I., 'The Khoisan Peoples of South Africa: Bushmen and Hottentots' (1930)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity. Click symbol ǁ = lateral click; ASCII 'Tsui-//Goab'. Theophilus Hahn (1881) is the foundational source; Hahn argued he was a deified ancestral chief of the dawn."
+  },
+  {
+    "id": "khoekhoe_gaunab",
+    "name": {
+      "primary": "Lord of Darkness and Death",
+      "alt": ["ǁGaunab", "//Gaunab", "Gaunab", "Gauna"],
+      "transliterations": { "khoekhoe": "ǁGaunab", "ascii": "//Gaunab" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": { "value": "ǁGaunab", "script": "Latn", "rom": "//Gaunab" },
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      },
+      {
+        "sphereId": "darkness-and-sickness",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schapera, I., 'The Khoisan Peoples of South Africa' (1930)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inflict_death",
+        "name": "brings sickness and death upon people from the Black Sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "ǁGaunab causes death and disease and dwells in the gloomy 'Black Sky'.",
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      },
+      {
+        "id": "wound_the_light_god",
+        "name": "strikes the knee of Tsui-ǁGoab in their nightly struggle",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Though driven off, ǁGaunab manages to injure Tsui-ǁGoab before fleeing.",
+        "sources": [{ "kind": "secondary", "reference": "Schapera, I., 'The Khoisan Peoples of South Africa' (1930)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "ǁGaunab is the Khoekhoe being of darkness, sickness and death, adversary of Tsui-ǁGoab, dwelling in the 'Black Sky'.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam: The Supreme Being of the Khoi-khoi' (1881)" },
+          { "kind": "secondary", "reference": "Schapera, I., 'The Khoisan Peoples of South Africa' (1930)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity (a malevolent divine being). The Khoekhoe ǁGaunab is cognate with the San ǁGãuwa/Gauwa but here is the death-and-darkness antagonist of the sky-god. ǁ = lateral click."
+  },
+  {
+    "id": "khoekhoe_heitsi_eibib",
+    "name": {
+      "primary": "Resurrecting Hunter-Hero",
+      "alt": ["Heitsi-eibib", "Heitsi-Eibib", "Haitsi-aibeb", "Haiseb (Damara)", "Geitsi", "Heitsi-Eibeb"],
+      "transliterations": { "khoekhoe": "Heitsi-eibib", "damara": "Haiseb" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Khoekhoe",
+    "primaryTradition": "Khoekhoe",
+    "sex": "male",
+    "vitalStatus": "other",
+    "parentIds": ["khoekhoe_tsui_goab"],
+    "temporal": { "era": "ancestral / culture-hero age" },
+    "domains": [
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "Heitsi-eibib", "script": "Latn", "rom": "Heitsi-eibib" },
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      },
+      {
+        "sphereId": "magic-and-trickery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schmidt, S., 'Some Notes on the so-called Heitsi-Eibeb Graves in Namibia', Basler Afrika Bibliographien Working Paper 2014:3" }]
+      },
+      {
+        "sphereId": "death-and-rebirth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schultze, L., 'Aus Namaland und Kalahari' (1907)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "die_and_be_reborn",
+        "name": "dies repeatedly and is born again, leaving many graves",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "A life-death-rebirth figure; his many cairn-graves across Namibia and South Africa mark his successive deaths.",
+        "sources": [{ "kind": "secondary", "reference": "Schmidt, S., 'Some Notes on the so-called Heitsi-Eibeb Graves in Namibia' (2014)" }]
+      },
+      {
+        "id": "slay_the_pit_monster",
+        "name": "tricks and casts the man-eater Ga-gorib into his own pit",
+        "term": { "value": "Ga-gorib", "script": "Latn", "rom": "Ga-gorib (the monster)" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Heitsi-eibib refuses Ga-gorib's dare, strikes him below the ear with a stone, and the monster falls into the pit he used to kill others.",
+        "sources": [{ "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam' (1881)" }]
+      },
+      {
+        "id": "be_born_of_grass",
+        "name": "is conceived through a cow that eats magical grass",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "In one tradition he begins as a patch of grass eaten by a cow, then is born from the cow as a bull/child.",
+        "sources": [{ "kind": "secondary", "reference": "Bleek, W.H.I., 'Reynard the Fox in South Africa; or, Hottentot Fables and Tales' (1864)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "heitsi_cairn",
+        "kind": "monument",
+        "name": "stone cairn-grave",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the heaps of stones marking his many graves, onto which passing travellers cast a stone for luck and safe passage",
+        "notes": "Travellers add a stone and may utter a short prayer for good hunting, rain, or protection; the Damara call the figure Haiseb and his graves haiseb-graves.",
+        "sources": [{ "kind": "secondary", "reference": "Schmidt, S., 'Some Notes on the so-called Heitsi-Eibeb Graves in Namibia', Basler Afrika Bibliographien WP 2014:3" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Heitsi-eibib is the great culture-hero and ancestor of the Khoekhoe: a hunter, seer, sorcerer and trickster, son of Tsui-ǁGoab, famed for repeatedly dying and being reborn (leaving many cairn-graves) and for killing the monster Ga-gorib.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hahn, T., 'Tsuni-ǁGoam: The Supreme Being of the Khoi-khoi' (1881)" },
+          { "kind": "secondary", "reference": "Bleek, W.H.I., 'Reynard the Fox in South Africa; or, Hottentot Fables and Tales' (1864)" },
+          { "kind": "secondary", "reference": "Schmidt, S., 'Some Notes on the so-called Heitsi-Eibeb Graves in Namibia' (2014)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as demigod / culture-hero. Son of the high god Tsui-ǁGoab (parentIds). vitalStatus='other' because his defining trait is recurrent death-and-resurrection (neither simply 'dead' nor 'immortal'). The Damara name is Haiseb. Cited scholars: Theophilus Hahn (1881), W.H.I. Bleek (1864), Leonhard Schultze (1907), Sigrid Schmidt (2014)."
+  },
+  {
+    "id": "maasai_enkai",
+    "name": {
+      "primary": "Sky Creator-God",
+      "alt": ["Enkai", "Engai", "Eng-ai", "Ngai (Maa)"],
+      "transliterations": { "maa": "Enkai / Eŋai" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maasai",
+    "primaryTradition": "Maasai",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / pre-creation" },
+    "domains": [
+      {
+        "sphereId": "sky-and-rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Enkai", "script": "Latn", "rom": "Enkai" },
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai: Their Language and Folklore' (1905); the word Enkai/Ngai denotes both God and 'sky/rain'" }]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" }]
+      },
+      {
+        "sphereId": "cattle",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905), on the gift of cattle to the Maasai" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lower_cattle_from_the_sky",
+        "name": "lets cattle down from the sky to the Maasai along the roots of the sacred fig",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Enkai gave all cattle to the Maasai by lowering them on a leather thong / the aerial roots of the wild fig (oreteti), founding their claim to the herds.",
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905)" }]
+      },
+      {
+        "id": "send_or_withhold_rain",
+        "name": "gives rain in blessing or withholds it in wrath",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Rain is Enkai's gift; the same word names god, sky and rain.",
+        "sources": [{ "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Enkai (Engai/Ngai) is the single supreme creator-god of the Maasai, identified with the sky and rain, giver of cattle and life.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hollis, A.C., 'The Masai: Their Language and Folklore' (Oxford: Clarendon Press, 1905)" },
+          { "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" }
+        ],
+        "weight": "primary-attestation"
+      },
+      {
+        "claim": "Enkai is conceived in two complementary aspects, the benevolent Black God (Enkai Narok) and the wrathful Red God (Enkai Na-nyokie).",
+        "citations": [{ "kind": "secondary", "reference": "Wikipedia, 'Maasai religion', summarising Hollis and later ethnography" }],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "High god of the Maasai; classed as deity, genderless (sex='none'). The two aspects are given separate entries (maasai_enkai_narok, maasai_enkai_nanyokie). Maa orthography uses ŋ; Anglicised as Enkai/Engai/Ngai."
+  },
+  {
+    "id": "maasai_enkai_narok",
+    "name": {
+      "primary": "Black God, the Benevolent Aspect",
+      "alt": ["Enkai Narok", "Engai Narok", "the Black God"],
+      "transliterations": { "maa": "Eŋai Narok" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maasai",
+    "primaryTradition": "Maasai",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "rain-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Eŋai Narok", "script": "Latn", "rom": "Enkai Narok" },
+        "sources": [{ "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978); narok = 'black'" }]
+      },
+      {
+        "sphereId": "blessing-and-prosperity",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Maasai religion'" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_gentle_rain",
+        "name": "gathers the dark rain-clouds and brings nourishing rain",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "The Black God is gentle and benevolent, associated with the dark thunder-clouds that carry life-giving rain.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Maasai religion'" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Enkai Narok, the Black God, is the benevolent, gentle aspect of Enkai associated with the dark rain-clouds, fertility and blessing.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Maasai religion'" }
+        ],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "Classed as deity: an aspect/manifestation of Enkai, not a separate god, but distinguished by name and character in Maasai cosmology. Genderless. narok = 'black'."
+  },
+  {
+    "id": "maasai_enkai_nanyokie",
+    "name": {
+      "primary": "Red God, the Wrathful Aspect",
+      "alt": ["Enkai Na-nyokie", "Engai Nanyokie", "the Red God"],
+      "transliterations": { "maa": "Eŋai Nanyukie" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maasai",
+    "primaryTradition": "Maasai",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "drought-and-wrath",
+        "contextTag": "lifelong",
+        "term": { "value": "Eŋai Nanyukie", "script": "Latn", "rom": "Enkai Na-nyokie" },
+        "sources": [{ "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978); nanyokie/nanyukie = 'red'" }]
+      },
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Maasai religion'" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send_drought_and_lightning",
+        "name": "withholds rain and hurls lightning in anger",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "The Red God brings drought, famine, lightning and disease when provoked.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Maasai religion'" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Enkai Na-nyokie, the Red God, is the wrathful, punishing aspect of Enkai associated with drought, famine, lightning and disease.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Maasai religion'" }
+        ],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "Classed as deity: the wrathful aspect of Enkai, paired with the benevolent Black God. Genderless. nanyokie = 'red'."
+  },
+  {
+    "id": "maasai_naiteru_kop",
+    "name": {
+      "primary": "Begetter of the Earth, the Mediating Demiurge",
+      "alt": ["Naiteru-kop", "Neiterkob", "Naiterukop"],
+      "transliterations": { "maa": "Naiteru-kop" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maasai",
+    "primaryTradition": "Maasai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "creation age" },
+    "domains": [
+      {
+        "sphereId": "the-founding-of-the-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Naiteru-kop", "script": "Latn", "rom": "Naiteru-kop" },
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905); the name is glossed 'the Begetter of the Earth' / 'that which began the earth'" }]
+      },
+      {
+        "sphereId": "mediation-between-god-and-man",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "place_the_first_man",
+        "name": "calls down and instructs the first man upon the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Naiteru-kop brought Le-eyo, the first man, to earth and gave him the death-and-resurrection chant.",
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905)" }]
+      },
+      {
+        "id": "mediate_for_god",
+        "name": "carries messages between Enkai and humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "A mediator/demiurge figure; some traditions treat Naiteru-kop as an aspect or epithet of Enkai.",
+        "sources": [{ "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Naiteru-kop ('Begetter of the Earth') is a Maasai demiurge/mediator figure who brought the first man Le-eyo to earth and instructed him; sometimes identified with or subordinate to Enkai.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hollis, A.C., 'The Masai: Their Language and Folklore' (1905)" },
+          { "kind": "secondary", "reference": "Mol, F., 'Maa: A Dictionary of the Maasai Language and Folklore' (1978)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity (a demiurge/mediating divinity). Sex given as male per the framing in Hollis's narratives, though the figure is sometimes an aspect of the genderless Enkai. Distinct from Enkai because he acts as intermediary and earth-begetter."
+  },
+  {
+    "id": "maasai_le_eyo",
+    "name": {
+      "primary": "First Man Who Lost the Word of Life",
+      "alt": ["Le-eyo", "Leeyio", "Le-eyio"],
+      "transliterations": { "maa": "Le-eyo" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Maasai",
+    "primaryTradition": "Maasai",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": { "era": "the first generation of humankind" },
+    "domains": [
+      {
+        "sphereId": "the-first-ancestor",
+        "contextTag": "lifelong",
+        "term": { "value": "Le-eyo", "script": "Latn", "rom": "Le-eyo" },
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905), the Le-eyo origin-of-death narrative" }]
+      },
+      {
+        "sphereId": "origin-of-death",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "speak_the_reviving_word",
+        "name": "was given a chant to send the dead back to life",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Naiteru-kop taught him to say over a corpse 'Man, die and come back again; moon, die and stay away.'",
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905)" }]
+      },
+      {
+        "id": "misspeak_and_doom_mankind",
+        "name": "reverses the words and so condemns humanity to stay dead",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Over a neighbour's child he said 'Moon, die and come back; man, die and stay away'; when his own son died and he spoke correctly, it was too late — death was already fixed.",
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Le-eyo is the first man in Maasai myth, who was given by Naiteru-kop a chant to revive the dead; by reversing the words over a neighbour's child (out of selfishness/error) he brought permanent death to humankind while the moon was granted endless return.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hollis, A.C., 'The Masai: Their Language and Folklore' (Oxford: Clarendon Press, 1905)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Le-eyo' (summarising Hollis 1905)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as mortal: the first human and origin-of-death protagonist. vitalStatus='dead' as he is the ancestor who himself became subject to the death he introduced. Counterpart in the moon-vs-man motif widespread in African origin-of-death myths."
+  },
+  {
+    "id": "maasai_olapa",
+    "name": {
+      "primary": "Moon Deity, Spouse of the Sun",
+      "alt": ["Olapa", "Olapaa"],
+      "transliterations": { "maa": "Olapa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Maasai",
+    "primaryTradition": "Maasai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "the age of the sky-beings" },
+    "domains": [
+      {
+        "sphereId": "the-moon",
+        "contextTag": "lifelong",
+        "term": { "value": "Olapa", "script": "Latn", "rom": "Olapa" },
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905); olapa = 'moon' in Maa" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "wound_the_sun",
+        "name": "quarrels with and wounds her husband the sun",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "In the sun-and-moon tale the moon strikes the sun; he strikes back and puts out one of her eyes and bruises her face — seen as the markings of the full moon.",
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905), the tale of the Sun and the Moon" }]
+      },
+      {
+        "id": "wax_and_wane",
+        "name": "shows her bruised, marked face as she crosses the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "The blemishes on the moon's face are explained by the quarrel; unlike the proud sun she does not hide her wounds, so people may look at her.",
+        "sources": [{ "kind": "secondary", "reference": "Hollis, A.C., 'The Masai' (1905)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Olapa is the Maasai moon-being, wife of the sun, whose facial markings are explained by their mythic quarrel in which each wounded the other.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hollis, A.C., 'The Masai: Their Language and Folklore' (1905), 'The Sun and the Moon'" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as deity (a celestial being). Olapa is the common Maa noun for 'moon', here personified per Hollis's sun-and-moon narrative. Some popular sources instead pair Olapa with Enkai; the Hollis 1905 text gives the sun-and-moon spousal quarrel, which is the primary attestation used here."
+  },
+  {
+    "id": "kikuyu_ngai",
+    "name": {
+      "primary": "Owner of the Dazzling Light, the Divider",
+      "alt": ["Ngai", "Mwene-Nyaga", "Mũrungu", "Mugai (the Divider)"],
+      "transliterations": { "kikuyu": "Ngai / Mwene-Nyaga" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kikuyu",
+    "primaryTradition": "Kikuyu",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / pre-creation" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Mũgai", "script": "Latn", "rom": "Mugai (the Divider/Apportioner)" },
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya: The Tribal Life of the Gikuyu' (1938)" }]
+      },
+      {
+        "sphereId": "sky-and-rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Ngai", "script": "Latn", "rom": "Ngai" },
+        "sources": [{ "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" }]
+      },
+      {
+        "sphereId": "the-mountain-abode",
+        "contextTag": "lifelong",
+        "term": { "value": "Mwene-Nyaga", "script": "Latn", "rom": "Mwene-Nyaga (Owner of the Ostrich/Brightness)" },
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938); Mwene-Nyaga linked to Kĩrĩnyaga, Mt Kenya" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "apportion_the_world",
+        "name": "divides and apportions the goods of creation among peoples",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Ngai is Mũgai, 'the Divider', who shares out land, cattle and gifts to the nations.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      },
+      {
+        "id": "rest_upon_the_mountain",
+        "name": "comes down to rest on the snow-bright peak of Mount Kenya",
+        "term": { "value": "Kĩrĩnyaga", "script": "Latn", "rom": "Kirinyaga (Mount Kenya)" },
+        "inheritability": "unique-to-bearer",
+        "notes": "When visiting earth Ngai rests on Kĩrĩnyaga (Mt Kenya) and other high peaks; the Kikuyu pray facing the mountain.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      },
+      {
+        "id": "give_land_to_the_ancestors",
+        "name": "grants the founding ancestors their homeland beneath the fig tree",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-to-bearer",
+        "notes": "Ngai placed Gĩkũyũ at Mũkũrwe wa Nyagathanga and showed him the land to settle.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ngai (Mwene-Nyaga, 'Owner of the Dazzling Light/Brightness'; also Mũgai, 'the Divider') is the supreme creator-god of the Gĩkũyũ, a sky and rain divinity who dwells on Mount Kenya (Kĩrĩnyaga) and apportions creation.",
+        "citations": [
+          { "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya: The Tribal Life of the Gikuyu' (London, 1938)" },
+          { "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "High god of the Kikuyu; classed as deity, genderless (sex='none'). Jomo Kenyatta's 'Facing Mount Kenya' (1938) is the canonical insider ethnography. Mwene-Nyaga associated with Kĩrĩnyaga (Mt Kenya). Mũrungu is a wider Bantu/Meru name also used."
+  },
+  {
+    "id": "kikuyu_gikuyu",
+    "name": {
+      "primary": "First Man and Founding Father",
+      "alt": ["Gĩkũyũ", "Gikuyu", "Kikuyu"],
+      "transliterations": { "kikuyu": "Gĩkũyũ" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kikuyu",
+    "primaryTradition": "Kikuyu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["kikuyu_ngai"],
+    "temporal": { "era": "the founding generation" },
+    "domains": [
+      {
+        "sphereId": "the-founding-ancestor",
+        "contextTag": "lifelong",
+        "term": { "value": "Gĩkũyũ", "script": "Latn", "rom": "Gikuyu" },
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938); the name relates to mũkũyũ, the fig tree" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "settle_the_homeland",
+        "name": "founds the first homestead at the sacred fig grove",
+        "term": { "value": "Mũkũrwe wa Nyagathanga", "script": "Latn", "rom": "Mukurwe wa Nyagathanga" },
+        "inheritability": "lineage-conferred",
+        "notes": "Directed by Ngai, Gĩkũyũ established his home at Mũkũrwe wa Nyagathanga in present-day Murang'a.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      },
+      {
+        "id": "father_the_clans",
+        "name": "fathers the nine daughters from whom the clans descend",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineage-conferred",
+        "notes": "With Mũmbi he begets the nine (full-house 'nine') daughters who become the eponymous mothers of the Gĩkũyũ clans.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      },
+      {
+        "id": "petition_ngai_for_husbands",
+        "name": "sacrifices under the fig tree to obtain husbands for his daughters",
+        "term": { "value": "mũgumo", "script": "Latn", "rom": "mugumo (sacred fig)" },
+        "inheritability": "non-transferable",
+        "notes": "Gĩkũyũ offers a lamb beneath the mũgumo and Ngai sends nine young men to marry the daughters.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "gikuyu_mugumo_tree",
+        "kind": "sacred-site",
+        "name": "sacred fig tree",
+        "term": { "value": "mũgumo", "script": "Latn", "rom": "mugumo" },
+        "role": "the fig tree under which Gĩkũyũ sacrifices and prays to Ngai",
+        "notes": "The mũgumo (strangler fig) is the focal tree of Gĩkũyũ ritual; the homestead grove was Mũkũrwe wa Nyagathanga.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gĩkũyũ is the first man and founding father of the Kikuyu, created and settled by Ngai at Mũkũrwe wa Nyagathanga, husband of Mũmbi and father of the nine daughters who found the clans.",
+        "citations": [
+          { "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya: The Tribal Life of the Gikuyu' (1938)" },
+          { "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as demigod: the divinely-created progenitor (created directly by Ngai, parentIds=kikuyu_ngai), more-than-ordinary but mortal ancestor. vitalStatus='dead' as the founding ancestor. The ethnonym Gĩkũyũ/Agĩkũyũ derives from this figure."
+  },
+  {
+    "id": "kikuyu_mumbi",
+    "name": {
+      "primary": "First Woman and Mother-Moulder",
+      "alt": ["Mũmbi", "Mumbi"],
+      "transliterations": { "kikuyu": "Mũmbi" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kikuyu",
+    "primaryTradition": "Kikuyu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["kikuyu_ngai"],
+    "temporal": { "era": "the founding generation" },
+    "domains": [
+      {
+        "sphereId": "the-founding-mother",
+        "contextTag": "lifelong",
+        "term": { "value": "Mũmbi", "script": "Latn", "rom": "Mumbi (the moulder/creator)" },
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938); Mũmbi = 'one who moulds/creates'" }]
+      },
+      {
+        "sphereId": "fertility-and-motherhood",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother_the_nine_clans",
+        "name": "bears the nine daughters who become the clan-mothers",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineage-conferred",
+        "notes": "Mũmbi (whose name means 'creator/moulder') is the mother of the nine daughters of the Gĩkũyũ nation.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mũmbi ('the moulder/creator') is the first woman of the Kikuyu, wife of Gĩkũyũ and mother of the nine daughters from whom the clans descend.",
+        "citations": [
+          { "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" },
+          { "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as demigod: the divinely-given first woman and progenitor. parentIds=kikuyu_ngai (given by/created through Ngai). The Kikuyu often call themselves 'the house of Mũmbi' (nyũmba ya Mũmbi). vitalStatus='dead' as founding ancestor."
+  },
+  {
+    "id": "kikuyu_wanjiru",
+    "name": {
+      "primary": "Eldest Daughter, Mother of the Anjirũ Clan",
+      "alt": ["Wanjirũ", "Wanjiru"],
+      "transliterations": { "kikuyu": "Wanjirũ" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kikuyu",
+    "primaryTradition": "Kikuyu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["kikuyu_gikuyu", "kikuyu_mumbi"],
+    "temporal": { "era": "the founding generation" },
+    "domains": [
+      {
+        "sphereId": "clan-ancestress",
+        "contextTag": "lifelong",
+        "term": { "value": "Wanjirũ", "script": "Latn", "rom": "Wanjiru" },
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938), list of the nine daughters and clans" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found_a_clan",
+        "name": "founds and gives her name to one of the nine Gĩkũyũ clans",
+        "term": { "value": "Anjirũ", "script": "Latn", "rom": "Anjiru (the clan)" },
+        "inheritability": "lineage-conferred",
+        "notes": "Each of the nine daughters is the eponymous ancestress of a clan; Wanjirũ heads the Anjirũ.",
+        "sources": [{ "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Wanjirũ is one of the nine daughters of Gĩkũyũ and Mũmbi, eponymous ancestress of the Anjirũ clan; her name remains one of the principal Kikuyu female names.",
+        "citations": [
+          { "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya: The Tribal Life of the Gikuyu' (1938)" },
+          { "kind": "secondary", "reference": "Cagnolo, C., 'The Akikuyu: Their Customs, Traditions and Folklore' (1933)" }
+        ],
+        "weight": "primary-attestation"
+      }
+    ],
+    "notes": "Classed as demigod: a founding clan-ancestress, daughter of the progenitor pair (parentIds). Representative of the nine daughters; the others (Wambũi, Wanjikũ, Wangũi, Wangeci, Wanjeeri, Nyambũra, Wairimũ, Wangarĩ) are attested in the same lists. vitalStatus='dead' as founding ancestor."
+  },
+  {
+    "id": "kikuyu_wamuyu",
+    "name": {
+      "primary": "Unspoken Tenth Daughter",
+      "alt": ["Wamũyũ", "Wamuyu", "Warigia", "Wanjugu"],
+      "transliterations": { "kikuyu": "Wamũyũ" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kikuyu",
+    "primaryTradition": "Kikuyu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["kikuyu_gikuyu", "kikuyu_mumbi"],
+    "temporal": { "era": "the founding generation" },
+    "domains": [
+      {
+        "sphereId": "the-hidden-ancestress",
+        "contextTag": "lifelong",
+        "term": { "value": "Wamũyũ", "script": "Latn", "rom": "Wamuyu" },
+        "sources": [{ "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977), on the 'tenth' daughter convention" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "remain_uncounted",
+        "name": "is left unnamed when the daughters are counted, to avert ill omen",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "The Kikuyu speak of 'the full nine' (kenda mũiyũru) rather than ten, omitting the tenth daughter to avoid bad luck; she is variously named Wamũyũ/Warigia.",
+        "sources": [{ "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Kikuyu count 'the full nine' (kenda mũiyũru) daughters yet tradition holds there was a tenth, often named Wamũyũ or Warigia, deliberately left uncounted to avoid ill omen.",
+        "citations": [
+          { "kind": "secondary", "reference": "Leakey, L.S.B., 'The Southern Kikuyu before 1903' (1977)" },
+          { "kind": "secondary", "reference": "Kenyatta, J., 'Facing Mount Kenya' (1938), on the 'nine full' clans" }
+        ],
+        "weight": "corroborated"
+      }
+    ],
+    "notes": "Classed as demigod: the 'tenth' founding daughter of the progenitor pair, whose existence explains the idiom 'the full nine'. Some traditions say she bore children outside marriage or that her line founded another people. vitalStatus='dead' as founding ancestor."
+  }
+]
+```
+
+**Validation:** I checked all 24 `id` values against `/home/user/PantheonRepository/data-sources/existing-ids.json` — none collide (the registry has no Shona, San, Khoekhoe, Maasai, or Kikuyu entries). I confirmed the JSON is well-formed (balanced brackets, every figure carries `id`/`name`/`type`/`origin`/`tradition`/`primaryTradition`/`sex`/`vitalStatus`/`parentIds`/`temporal`/`domains`/`faculties`/`materialCulture`/`sources`/`notes`). I re-read the schema constraints and verified: every `type` is one of deity/demigod/quartigod/scion/mortal; materialCulture uses `id`+`name` (never `item`); no forbidden coined substrings (kinesis/mancy/pathy/portation/kinetic/telepath); the English word leads every `name.primary` with native terms in `term` (script + romanization) and empty `""` where a native term is unrecorded; and I made no repo modifications (the scratch file I briefly created was deleted).
+
+**Balance (24 figures):** Shona 5 (Mwari, Dzivaguru, Chaminuka, Nehanda, Charwe), San 5 (ǀKaggen, Kwammang-a, Cogaz, ǃXo/Porcupine, ǁGãuwa), Khoekhoe 3 (Tsui-ǁGoab, ǁGaunab, Heitsi-eibib), Maasai 6 (Enkai + Narok + Na-nyokie aspects, Naiteru-kop, Le-eyo, Olapa), Kikuyu 5 (Ngai, Gĩkũyũ, Mũmbi, Wanjirũ, the tenth daughter Wamũyũ). Hero/ancestral tiers are included as requested: Heitsi-eibib (demigod culture-hero with cairn-graves), Cogaz (son of the Mantis), Gĩkũyũ & Mũmbi (progenitor demigods), Le-eyo & Charwe (mortals).
+
+**Sourcing:** Each figure and each domain/faculty/materialCulture entry carries real per-claim citations to primary collections and named scholarship — Bleek & Lloyd's *Specimens of Bushman Folklore* (1911), Orpen's 1874 *Cape Monthly Magazine* account of Qing, Theophilus Hahn's *Tsuni-ǁGoam* (1881), Sigrid Schmidt on the Heitsi-Eibeb graves (2014), A.C. Hollis's *The Masai* (1905), Frans Mol's Maa dictionary (1978), Jomo Kenyatta's *Facing Mount Kenya* (1938), L.S.B. Leakey's *The Southern Kikuyu before 1903* (1977), D.N. Beach on the Nehanda medium Charwe (1998), and Bourdillon/Gelfand/Daneel on Shona religion. Click consonants are rendered with IPA click symbols (ǀ ǁ ǃ) plus the ASCII Bleek–Lloyd convention in transliterations/alts.
+
+A few honest caveats baked into `notes`/`weight`: the "children of Mwari / never mortal" claim for Chaminuka–Nehanda is flagged `contested`; the Enkai Black/Red aspects and the Maasai Olapa pairing carry source variation (popular sources pair Olapa with Enkai, but Hollis 1905 gives the sun-and-moon spousal quarrel, which I used); and ǁGãuwa is best attested among the northern Ju/'hoansi San (Marshall, Biesele) rather than the ǀXam Mantis corpus — noted explicitly since the prompt filed it under San.
+
+result: Delivered a 24-figure comparative-mythology JSON array (in this message) covering Shona, San, Khoekhoe, Maasai, and Kikuyu, schema-valid with no ID collisions, real per-claim scholarly citations, and ancestral/hero tiers included; no repo files modified.

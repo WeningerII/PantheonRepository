@@ -34,6 +34,49 @@ function lastAssistantText(file) {
   }
   return txt;
 }
+// All non-empty assistant text blocks, in order.
+function assistantTexts(file) {
+  const out = [];
+  for (const ln of fs.readFileSync(file, 'utf8').split('\n')) {
+    if (!ln.trim()) continue;
+    let o; try { o = JSON.parse(ln); } catch { continue; }
+    if (o.type !== 'assistant' || !o.message) continue;
+    const c = o.message.content;
+    let t = '';
+    if (typeof c === 'string') t = c;
+    else if (Array.isArray(c)) t = c.filter((b) => b && b.type === 'text').map((b) => b.text).join('\n');
+    if (t.trim()) out.push(t);
+  }
+  return out;
+}
+// Largest figure array (by element count) anywhere in a message, fenced or inline.
+function figureCount(text) {
+  const count = (s) => { try { const v = JSON.parse(s); return Array.isArray(v) ? v.filter((f) => f && f.id && (f.type || f.domains || f.faculties)).length : 0; } catch { return 0; } };
+  let best = 0, m; const re = /```(?:json)?\s*([\s\S]*?)```/g;
+  while ((m = re.exec(text))) best = Math.max(best, count(m[1].trim()));
+  const a = text.indexOf('['), b = text.lastIndexOf(']');
+  if (a >= 0 && b > a) best = Math.max(best, count(text.slice(a, b + 1)));
+  return best;
+}
+function powerTermScore(text) {
+  return (text.match(/::\s*(POWER|ITEM)\s/g) || []).length + (text.match(/::[^\n]*\|\s*term=/g) || []).length;
+}
+// Pick the assistant message that best represents this transcript's contribution.
+// Agents sometimes emit the figure array in one message and a summary in a later
+// one; lastAssistantText would miss the array. Prefer the message with the most
+// figures (ties → longest, so a full array beats a skeleton); else the most
+// power/term lines; else the final message. For wave-1/2 transcripts (array was
+// already last) this returns the same text, preserving byte-exact regeneration.
+function bestText(file) {
+  const texts = assistantTexts(file);
+  if (!texts.length) return '';
+  const scored = texts.map((t) => ({ t, fig: figureCount(t), pow: powerTermScore(t), len: t.length }));
+  const fig = scored.filter((s) => s.fig > 0);
+  if (fig.length) { fig.sort((a, b) => b.fig - a.fig || b.len - a.len); return fig[0].t; }
+  const pow = scored.filter((s) => s.pow > 0);
+  if (pow.length) { pow.sort((a, b) => b.pow - a.pow || b.len - a.len); return pow[0].t; }
+  return texts[texts.length - 1];
+}
 // Does this text feed any generator? (mirrors each generator's inclusion test)
 function contributes(text) {
   if (/::\s*(POWER|ITEM)\s/.test(text)) return true;                       // gen-powers-items
@@ -53,7 +96,7 @@ fs.mkdirSync(OUT_TX, { recursive: true });
 let kept = 0, bytes = 0;
 for (const name of fs.readdirSync(TASKS).sort()) {
   if (!name.endsWith('.output')) continue;
-  let text; try { text = lastAssistantText(path.join(TASKS, name)); } catch { continue; }
+  let text; try { text = bestText(path.join(TASKS, name)); } catch { continue; }
   if (!text.trim() || !contributes(text)) continue;
   const out = path.join(OUT_TX, name.replace(/\.output$/, '.txt'));
   fs.writeFileSync(out, text);

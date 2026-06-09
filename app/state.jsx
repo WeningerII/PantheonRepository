@@ -97,7 +97,13 @@ function readJSON(key) {
 
 function loadPeople() {
   const v = readJSON(PEOPLE_KEY);
-  if (!v) return [];
+  if (!v) {
+    // localStorage was empty or the seed write was refused (the corpus now
+    // exceeds the ~5 MB localStorage cap): fall back to the in-memory seed
+    // data.js exposes on window.__PR so the registry still displays.
+    const mem = window.__PR && window.__PR.seedPeople;
+    return mem ? Object.values(mem) : [];
+  }
   if (Array.isArray(v)) return v;
   // The legacy registry stores a MAP keyed by entry id. It may also be
   // wrapped under .people / .entries depending on schema version.
@@ -111,7 +117,8 @@ function loadPeople() {
 
 function loadAtlas() {
   const v = readJSON(ATLAS_KEY);
-  return v && typeof v === 'object' ? v : {};
+  if (v && typeof v === 'object') return v;
+  return (window.__PR && window.__PR.seedAtlas) || {};
 }
 
 // ── Era helpers ──────────────────────────────────────────────────────────
@@ -164,17 +171,23 @@ function hydrateConstants() {
 }
 
 function hasSeededPeople() {
+  // The in-memory seed (window.__PR.seedPeople) counts: when the corpus is too
+  // large for localStorage, the persist is skipped but the app still has data.
+  const memSeeded = () => {
+    const mem = window.__PR && window.__PR.seedPeople;
+    return !!(mem && Object.keys(mem).length > 0);
+  };
   try {
     const raw = localStorage.getItem('pantheon_registry_v8');
-    if (!raw) return false;
+    if (!raw) return memSeeded();
     const data = JSON.parse(raw);
-    if (!data) return false;
+    if (!data) return memSeeded();
     if (Array.isArray(data)) return data.length > 0;
     if (Array.isArray(data.people))  return data.people.length > 0;
     if (Array.isArray(data.entries)) return data.entries.length > 0;
     if (typeof data === 'object')    return Object.keys(data).length > 0;
-    return false;
-  } catch (e) { return false; }
+    return memSeeded();
+  } catch (e) { return memSeeded(); }
 }
 
 // ── Tradition pigments ───────────────────────────────────────────────────

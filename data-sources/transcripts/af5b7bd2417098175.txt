@@ -1,0 +1,1703 @@
+Here is the registry. I researched each tradition via web search and cited real scholarship (Colarusso's two Nart Sagas volumes, Dumézil, Jaimoukha's *Circassians*, Hunt's *Legends of the Caucasus*, the *Encyclopedia of Religion*, plus the *Gesta Hungarorum* / Simon of Kéza chronicle traditions for the Magyar figures). The English/plain word leads each `name.primary`; native attested terms sit in `term` with script + romanization, and `""` is used wherever a native form is unrecorded for a given concept.
+
+```json
+[
+  {
+    "id": "circassian_tha",
+    "name": {
+      "primary": "Sky-God of the Adyghe",
+      "alt": ["Tha", "Thashxwe", "Theshxwe", "Tхьэшхуэ"],
+      "transliterations": { "ady": "Тхьэ / Тхьэшхуэ", "rom": "Tḥə / Tḥəšxwə" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / Nart age" },
+    "domains": [
+      {
+        "sphereId": "sky-supremacy",
+        "contextTag": "lifelong",
+        "term": { "value": "Тхьэшхуэ", "script": "Cyrl", "rom": "Tḥəšxwə" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001, ch. on religion (Tha/Theshxwe as supreme god)." }]
+      },
+      {
+        "sphereId": "cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus. Princeton UP, 2002, introduction (the high god above the Narts)." }]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bgazhnoko & Jaimoukha; see Jaimoukha, The Circassians, on Tha as creator deity." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_the_world",
+        "name": "calls the ordered world into being",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "As Theshxwe ('the great god') he is framed as creator and law-giver standing above the Nart heroes.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, The Circassians, 2001, religion chapter." }]
+      },
+      {
+        "id": "uphold_cosmic_order",
+        "name": "keeps the wheel of the cosmos turning",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Later folk cosmology depicts the supreme god as a hub regulating the cosmic 'wheel'; this is a syncretic gloss, noted as such.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. 'Circassian Pantheon' / The Circassians, 2001." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tha (Theshxwe/Thashxwe) is the supreme sky-god of the Circassian (Adyghe) pantheon, set above the Narts.",
+        "citations": [
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus: Myths and Legends from the Circassians, Abazas, Abkhaz, and Ubykhs. Princeton UP, 2002, introduction." },
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001, chapter on traditional religion." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Adyghe ⟨Тхьэ⟩ Tḥə ('god') with augmentative ⟨-шхуэ⟩ -šxwə ('great') = 'Great God'. Distinct from the Ossetian Nart pantheon. The high god is largely a deus otiosus in the Nart cycle, with the heroes' deeds carried by smiths and culture-heroes."
+  },
+  {
+    "id": "circassian_sosruquo",
+    "name": {
+      "primary": "Fire-Bringer Born of Stone",
+      "alt": ["Sosruquo", "Sawseruquo", "Sosriqwe", "Soslan", "Сосрыкъуэ"],
+      "transliterations": { "ady": "Сосрыкъуэ", "kbd": "Сосрыкъуэ", "rom": "Sosrəqʷə" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["circassian_setenaya"],
+    "temporal": { "era": "mythic / Nart age" },
+    "domains": [
+      {
+        "sphereId": "fire-theft",
+        "contextTag": "lifelong",
+        "term": { "value": "маше", "script": "Cyrl", "rom": "maše" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Sosruquo cycle ('How Sosruquo Brought Fire to the Narts')." }]
+      },
+      {
+        "sphereId": "trickery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Sosruquo cycle (the trickster outwitting the giant/Inozh)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steal_fire_from_the_giant",
+        "name": "wrests fire from the sleeping giant for the Narts",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-heritable",
+        "notes": "Caught in a blizzard, the Narts lose their fire; Sosruquo rides out, finds the one-eyed giant (Inozh) guarding it, and brings back the flame — the Caucasian fire-bringer motif.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, 'How Sosruquo Brought Fire to the Narts'." }]
+      },
+      {
+        "id": "be_tempered_in_the_forge",
+        "name": "withstands being quenched in the smith's water like a blade",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-heritable",
+        "notes": "Born glowing-hot from stone, he is seized with tongs and tempered by Tlepsh; he becomes steel-bodied but his thighs/knees (where the tongs gripped) stay vulnerable, prefiguring his death by the cosmic wheel.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Sosruquo birth-and-tempering episode; Jaimoukha, The Circassians, 2001." }]
+      },
+      {
+        "id": "play_with_the_rolling_wheel",
+        "name": "catches and hurls the deadly rolling wheel back uphill",
+        "term": { "value": "Жан-Шэрхъ", "script": "Cyrl", "rom": "Žan-Šərx̌ʷ" },
+        "inheritability": "non-heritable",
+        "notes": "The Narts roll the steel wheel Jan-Sherkh down on him; he catches it with brow, chest and knees. The wheel ultimately severs his vulnerable knees — his death.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, 'The Death of Sosruquo'." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sosruquo_sword",
+        "kind": "weapon",
+        "name": "tempered sword",
+        "term": { "value": "сэшхуэ", "script": "Cyrl", "rom": "səšxwə" },
+        "role": "His blade, forged by the smith Tlepsh together with his own steeled body.",
+        "notes": "Adyghe səšxwə 'great sabre'; the Nart hero's weapon is bound to the smith-god's craft.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Sosruquo/Tlepsh episodes." }]
+      },
+      {
+        "id": "sosruquo_horse_tkhozhey",
+        "kind": "mount",
+        "name": "the steed Tkhozhey",
+        "term": { "value": "Тхъуэжьей", "script": "Cyrl", "rom": "Tx̌ʷəžʼej" },
+        "role": "His intelligent, supernaturally swift horse that counsels and carries him on the fire raid.",
+        "notes": "Tkhozhey ('the little dun/grey one') is a speaking war-horse, a recurrent Nart motif.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Sosruquo cycle (the horse Tx̌ʷəžʼej)." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sosruquo is a Nart trickster-hero, born from a stone impregnated by a shepherd watching Setenaya, tempered by the smith Tlepsh, and the bringer of fire to the Narts.",
+        "citations": [
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus. Princeton UP, 2002, Sosruquo cycle (birth from stone, tempering, fire-bringing, death by the wheel)." },
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001 (Sosriqwe as fire-bringer and son of Satanaya)." }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Folk etymology parses the name as 'son of the fiery sword-strike' (sa 'sword' + wa 'strike' + sər 'heat' + qʷa 'son').",
+        "citations": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, notes on Sosruquo's name." }],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Kabardian/Adyghe ⟨Сосрыкъуэ⟩ Sosrəqʷə; the element ⟨къуэ⟩ qʷə = 'son'. He is the Circassian counterpart of Ossetian Soslan/Sozyryko but treated here as a distinct Circassian figure. Classed demigod (culture-hero/Nart) per the schema; the Narts are a semi-divine race."
+  },
+  {
+    "id": "circassian_setenaya",
+    "name": {
+      "primary": "Mother of the Narts",
+      "alt": ["Setenaya", "Satanaya", "Satanay", "Lady Setenaya", "Сэтэнай"],
+      "transliterations": { "ady": "Сэтэнай", "kbd": "Сэтэней", "rom": "Sətənaj / Sətənej" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / Nart age" },
+    "domains": [
+      {
+        "sphereId": "wisdom",
+        "contextTag": "lifelong",
+        "term": { "value": "Сэтэнай", "script": "Cyrl", "rom": "Sətənaj" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Setenaya material (the all-knowing matriarch)." }]
+      },
+      {
+        "sphereId": "fertility-and-household",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians, 2001 (Satanaya as eternally youthful mother-figure)." }]
+      },
+      {
+        "sphereId": "weather-foresight",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002 (Setenaya foresees frost and counsels the Narts)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "foretell_and_counsel",
+        "name": "foresees coming events and advises the Narts",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Her foreknowledge drives the plots — e.g. she anticipates the killing frost and arranges Sosruquo's fire-bringing.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Setenaya episodes." }]
+      },
+      {
+        "id": "conceive_a_hero_from_stone",
+        "name": "marks and quickens the stone that holds the unborn fire-hero",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "She marks the river-stone struck by the shepherd's seed and, nine months later, has the smith split it to draw out the glowing child Sosruquo.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Sosruquo birth narrative." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Setenaya/Satanaya is the wise, eternally youthful matriarch of the Narts, wife of Warzameg and (foster-)mother of the heroes, especially Sosruquo.",
+        "citations": [
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus. Princeton UP, 2002, Setenaya cycle." },
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Cognate of Ossetian Satana but a distinct Circassian figure. A folk gloss reads the name as 'mother of a hundred'. Treated as a goddess-tier matriarch within the semi-divine Nart family."
+  },
+  {
+    "id": "circassian_tlepsh",
+    "name": {
+      "primary": "Divine Smith of the Narts",
+      "alt": ["Tlepsh", "Lhepsh", "Тлепш", "Лъэпщ"],
+      "transliterations": { "ady": "Лъэпщ", "kbd": "Лъэпщ", "rom": "Łəpš" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / Nart age" },
+    "domains": [
+      {
+        "sphereId": "smithcraft",
+        "contextTag": "lifelong",
+        "term": { "value": "Лъэпщ", "script": "Cyrl", "rom": "Łəpš" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Tlepsh tales." }]
+      },
+      {
+        "sphereId": "iron-and-metallurgy",
+        "contextTag": "lifelong",
+        "term": { "value": "гъущı", "script": "Cyrl", "rom": "ġʷəṣ̌ʼ" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. 'Tlepsh' etymology (← Indo-European *khalyps/chalybs 'iron, steel'); Nart Sagas, 2002." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_the_first_iron_tools",
+        "name": "hammers out the first tongs and sickle for humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "He invents the smith's tongs and, with a shape Lady Isp describes to him, forges the first sickle whose edge never dulls.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, 'Tlepsh and the Sickle' / Tlepsh inventions." }]
+      },
+      {
+        "id": "temper_a_hero_to_steel",
+        "name": "quenches the newborn hero in his trough to make him invulnerable",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "He tempers Sosruquo like a blade; the points held by his tongs (knees/thighs) remain the hero's only weak spots.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Sosruquo tempering episode." }]
+      },
+      {
+        "id": "forge_a_self_moving_sword",
+        "name": "forges a sword that hunts and slays of its own accord",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "He makes a self-propelled sword that pursues and kills the personified plague 'Bearded Yamina'.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Tlepsh and Bearded Yamina." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tlepsh_tongs",
+        "kind": "tool",
+        "name": "the first smith's tongs",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "His signature invention, used to grip white-hot iron — and the hero Sosruquo.",
+        "notes": "Their grip-points on Sosruquo become the hero's vulnerable knees.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Tlepsh inventions." }]
+      },
+      {
+        "id": "tlepsh_sickle",
+        "kind": "tool",
+        "name": "the first sickle",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "The reaping tool he forges with an ever-sharp edge, gift of agriculture to the Narts.",
+        "notes": "Shaped per Lady Isp's description (curved like a ram's horn / crescent moon in the variants).",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002." }]
+      },
+      {
+        "id": "tlepsh_self_moving_sword",
+        "kind": "weapon",
+        "name": "the self-moving sword",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "An autonomous blade he forges to destroy the plague-demon Bearded Yamina.",
+        "notes": "Attested in the Tlepsh cycle as one of his wonder-works.",
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, Nart Sagas, 2002, Tlepsh and Bearded Yamina." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tlepsh (Łəpš) is the divine blacksmith of the Circassian Nart sagas; inventor of tongs and sickle, tempersr of Sosruquo, maker of the self-moving sword, and close to Lady Setenaya.",
+        "citations": [
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus. Princeton UP, 2002, Tlepsh tales and notes." },
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001 (Lhepsh as smith deity)." }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "The name Tlepsh derives from an Indo-European word for iron/steel cognate with Greek χάλυψ (khályps) / Latin chalybs, embodying the metal of his craft.",
+        "citations": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, etymological notes on Tlepsh." }],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Adyghe/Kabardian ⟨Лъэпщ⟩ Łəpš. Counterpart of the Ossetian smith Kurdalægon and comparable to Hephaestus/Vulcan/Wayland. Distinct from the Ossetian tradition."
+  },
+  {
+    "id": "circassian_mezitha",
+    "name": {
+      "primary": "Lord of the Forest and the Hunt",
+      "alt": ["Mezitha", "Mezithe", "Mezguasha", "Мэзытхьэ"],
+      "transliterations": { "ady": "Мэзытхьэ", "kbd": "Мэзытхьэ", "rom": "Məzytḥə" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "Мэзытхьэ", "script": "Cyrl", "rom": "Məzytḥə" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001 (Mezitha, god of the forest and hunt)." }]
+      },
+      {
+        "sphereId": "forests-and-wild-beasts",
+        "contextTag": "lifelong",
+        "term": { "value": "мэз", "script": "Cyrl", "rom": "məz" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, hunting-deity notes." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_or_withhold_game",
+        "name": "releases wild game to the hunters who honor him",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Hunters sacrificed to Mezitha for success; he is lord of the deer and forest creatures, often pictured riding a golden-bristled boar.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, The Circassians, 2001, on Mezitha and hunting cult." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mezitha is the Circassian god of the forest, wild animals, and the hunt, propitiated by hunters.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001, religion chapter (Mezitha/Mezithe)." },
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002 (Caucasian hunt-deity context)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Adyghe ⟨Мэзытхьэ⟩ Məzytḥə, lit. 'forest-god' (məz 'forest' + tḥə 'god'). Functionally parallel to Abkhaz Azhwepshaa and the Georgian hunt-cult of Dali."
+  },
+  {
+    "id": "circassian_shible",
+    "name": {
+      "primary": "Thunder-God of the Adyghe",
+      "alt": ["Shible", "Shyble", "Щыблэ"],
+      "transliterations": { "ady": "Щыблэ", "kbd": "Щыблэ", "rom": "Ŝəblə" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Щыблэ", "script": "Cyrl", "rom": "Ŝəblə" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians, 2001 (Shible, god of thunder and lightning)." }]
+      },
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002 (thunder-deity / warrior associations)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_the_lightning",
+        "name": "strikes the earth with the thunderbolt",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "A man killed by lightning was thought taken by Shible and honored with the round-dance; the strike-site was holy.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, The Circassians, 2001, on the cult of Shible and lightning-death." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Shible is the Circassian god of thunder and lightning, with a distinctive cult around those struck by lightning.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001, religion chapter (Shible)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Adyghe ⟨Щыблэ⟩ Ŝəblə. In some accounts the supreme Theshxwe absorbs the thunder role; Shible is the specialized thunder-deity."
+  },
+  {
+    "id": "circassian_sozeresh",
+    "name": {
+      "primary": "God of Fertility and the Hearth",
+      "alt": ["Sozeresh", "Sozresh", "Созэрэщ"],
+      "transliterations": { "ady": "Созэрэщ", "kbd": "Созэрэщ", "rom": "Sozərəŝ" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Circassian",
+    "primaryTradition": "Circassian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "fertility-and-tillage",
+        "contextTag": "lifelong",
+        "term": { "value": "Созэрэщ", "script": "Cyrl", "rom": "Sozərəŝ" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians, 2001 (Sozeresh, deity of fertility, farming and the hearth)." }]
+      },
+      {
+        "sphereId": "seafaring-and-winds",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002 (Sozeresh as patron of travellers/winds in some tales)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bless_the_harvest",
+        "name": "ripens the grain and guards the household stores",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Honored at a winter festival with a sacred pear-wood post (the 'Sozeresh') brought into the home and decorated.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, The Circassians, 2001, on the Sozeresh festival and post." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sozeresh_post",
+        "kind": "ritual-object",
+        "name": "the Sozeresh pear-wood post",
+        "term": { "value": "Созэрэщ", "script": "Cyrl", "rom": "Sozərəŝ" },
+        "role": "A branched pear-wood trunk cut yearly, hung with candles and cheese, embodying the god at his festival.",
+        "notes": "Carried into the house at the winter rite and addressed in prayer for plenty.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001 (Sozeresh festival)." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sozeresh is the Circassian deity of fertility, agriculture, and the household hearth, with a winter festival centred on a decorated pear-wood post.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Circassians: A Handbook. Curzon, 2001, chapter on traditional religion." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Adyghe ⟨Созэрэщ⟩ Sozərəŝ. Often paired in the agrarian cult with the harvest-god Thaghaledj."
+  },
+  {
+    "id": "vainakh_dela",
+    "name": {
+      "primary": "Supreme God of the Vainakh",
+      "alt": ["Dela", "Diela", "Dala", "Дела"],
+      "transliterations": { "ce": "Дела", "inh": "Дяла", "rom": "Dela / Djala" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "supreme-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Дела", "script": "Cyrl", "rom": "Dela" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, mythology chapter (Dela as head of the pantheon)." }]
+      },
+      {
+        "sphereId": "sky-and-fate",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Chesnov, Ya. V., cited in Jaimoukha, The Chechens, 2005 (Vainakh pantheon)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_gods",
+        "name": "presides over the assembly of Vainakh gods",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Dela heads a pantheon that includes Seela, Tusholi, and Maetsill; the lesser gods act under or against him.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Dela (Diela) is the supreme god and creator-figure at the head of the Vainakh (Chechen–Ingush) pantheon.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, chapter on religion and mythology." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Chechen ⟨Дела⟩ Dela, Ingush ⟨Дяла⟩ Djala. The element del-/dal- ('god') survives in many theonyms and in the Islamic-era word for God. Tusholi is reckoned his daughter in some accounts."
+  },
+  {
+    "id": "vainakh_seela",
+    "name": {
+      "primary": "God of Thunder and the Sun",
+      "alt": ["Seela", "Sela", "Села"],
+      "transliterations": { "ce": "Села", "inh": "Сели", "rom": "Sela / Seli" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Села", "script": "Cyrl", "rom": "Sela" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005 (Sela, god of thunder, lightning and stars)." }]
+      },
+      {
+        "sphereId": "stars-and-sky-fire",
+        "contextTag": "lifelong",
+        "term": { "value": "Селан саьнаш", "script": "Cyrl", "rom": "Selan sänaš" },
+        "sources": [{ "kind": "secondary", "reference": "Vainakh astral lore: the Milky Way called 'Sela's scattering'; see Jaimoukha, The Chechens, 2005." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_only_fire",
+        "name": "hoards the world's sole fire upon the mountain",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "The cruel Sela keeps fire from humankind until the Nart Pkharmat steals it; he then chains the thief to Mount Bashlam.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens, 2005, Pkharmat myth; Vainakh mythology." }]
+      },
+      {
+        "id": "cast_down_lightning",
+        "name": "flings lightning and shakes the heavens with thunder",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Portrayed as harsh and cruel; thunder is his wrath.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, The Chechens, 2005 (Sela's character)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Seela (Sela) is the Vainakh god of thunder, lightning, the stars and the sun, depicted as cruel; he guards fire and punishes Pkharmat.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, mythology chapter." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Chechen ⟨Села⟩ Sela. His consort/daughter Sela Sata is goddess of crafts and helps Pkharmat. The Milky Way is the 'scattering of Sela'."
+  },
+  {
+    "id": "vainakh_tusholi",
+    "name": {
+      "primary": "Goddess of Fertility and Spring",
+      "alt": ["Tusholi", "Тушоли"],
+      "transliterations": { "inh": "Тушоли", "ce": "Тушоли", "rom": "Tušoli" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["vainakh_dela"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "fertility-and-childbirth",
+        "contextTag": "lifelong",
+        "term": { "value": "Тушоли", "script": "Cyrl", "rom": "Tušoli" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens, 2005 (Tusholi, fertility goddess and patron of childbirth)." }]
+      },
+      {
+        "sphereId": "spring-renewal",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Ingush ethnography on the Tusholi spring festival; see Jaimoukha, The Chechens, 2005." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_offspring",
+        "name": "opens the womb and protects mothers and infants",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Barren women prayed to her; her spring festival opened the agricultural year. The hoopoe was her sacred bird (called 'Tusholi's hen').",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tusholi is the Vainakh goddess of fertility and childbirth, daughter of Dela, with a spring festival and the hoopoe as her sacred bird.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, mythology chapter (Tusholi)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ingush/Chechen ⟨Тушоли⟩ Tušoli. Among the Ingush her cult was the most prominent of the goddess-figures, with a sanctuary at Tхаба-Ерды region."
+  },
+  {
+    "id": "vainakh_pkharmat",
+    "name": {
+      "primary": "Fire-Stealing Smith-Hero",
+      "alt": ["Pkharmat", "Pharmat", "Kurkho", "Пхьармат"],
+      "transliterations": { "ce": "Пхьармат", "inh": "КӀурко", "rom": "Pẖarmat / Kʼurko" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / Nart age" },
+    "domains": [
+      {
+        "sphereId": "fire-theft",
+        "contextTag": "lifelong",
+        "term": { "value": "цӀе", "script": "Cyrl", "rom": "cʼe" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, Pkharmat myth." }]
+      },
+      {
+        "sphereId": "smithcraft",
+        "contextTag": "lifelong",
+        "term": { "value": "пхьар", "script": "Cyrl", "rom": "pẖar" },
+        "sources": [{ "kind": "secondary", "reference": "Vainakh mythology: name from pẖar 'smith/craftsman'; Jaimoukha, The Chechens, 2005." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steal_fire_from_the_thunder_god",
+        "name": "carries off Sela's fire to warm humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-heritable",
+        "notes": "Guided to Mount Kazbek's peak by Sela's wife Sata in bird-form, he hides an ember in a carz reed and brings fire down to the people.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens, 2005, Pkharmat narrative; Vainakh mythology." }]
+      },
+      {
+        "id": "endure_the_eagle_torment",
+        "name": "endures the bird tearing his liver each dawn while chained",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-heritable",
+        "notes": "As punishment Sela chains him to the summit of Bashlam (Mount Kazbek); the falcon Ida comes each morning to rend his liver — the Caucasian Prometheus.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, The Chechens, 2005, Pkharmat's punishment." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pkharmat_carz_reed",
+        "kind": "tool",
+        "name": "the fire-carrying reed",
+        "term": { "value": "карз", "script": "Cyrl", "rom": "karz" },
+        "role": "A pithy reed-pipe given by his brother in which he hides a live coal to smuggle fire down the mountain.",
+        "notes": "Functionally the Vainakh equivalent of Prometheus' fennel-stalk (narthex).",
+        "sources": [{ "kind": "secondary", "reference": "Vainakh mythology, Pkharmat tale (the carz/reed with a coal); Jaimoukha, The Chechens, 2005." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Pkharmat is a Nart (demigod) and skilled smith who stole fire from the thunder-god Sela for humankind and was chained to Mount Bashlam (Kazbek), where the falcon Ida daily tears his liver.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, mythology chapter (Pkharmat)." },
+          { "kind": "secondary", "reference": "Hunt, David. Legends of the Caucasus. Saqi Books, 2012 (Caucasian fire-theft and Prometheus parallels)." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Chechen ⟨Пхьармат⟩ Pẖarmat (from pẖar 'smith'); Ingush form Kurkho/Kʼurko. Classed demigod (Nart). Counterpart of Greek Prometheus and Georgian Amirani; helped by Sela Sata."
+  },
+  {
+    "id": "vainakh_maetsill",
+    "name": {
+      "primary": "God of Agriculture and the Harvest",
+      "alt": ["Maetsill", "Matsill", "Mätsel", "Маьтцил"],
+      "transliterations": { "inh": "Маьтцел", "ce": "Маьтцил", "rom": "Mätsel / Mätsil" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Vainakh",
+    "primaryTradition": "Vainakh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "agriculture-and-harvest",
+        "contextTag": "lifelong",
+        "term": { "value": "Маьтцил", "script": "Cyrl", "rom": "Mätsil" },
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens, 2005 (Maetsill, god of agriculture and harvest, protector of the weak)." }]
+      },
+      {
+        "sphereId": "protection-of-the-poor",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Vainakh mythology (Maetsill as defender of the weak); Jaimoukha, The Chechens, 2005." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_the_grain_harvest",
+        "name": "fills the fields and barns with grain",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Patron of plowing and reaping; especially the helper of the poor and powerless.",
+        "sources": [{ "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Maetsill is the Vainakh god of agriculture and the harvest and the protector of the weak.",
+        "citations": [
+          { "kind": "secondary", "reference": "Jaimoukha, Amjad. The Chechens: A Handbook. RoutledgeCurzon, 2005, mythology chapter (Maetsill)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Ingush ⟨Маьтцел⟩ Mätsel; the name has been linked to the mountain sanctuary of Mat-Lam. A harvest festival was held in his honor."
+  },
+  {
+    "id": "abkhaz_antswa",
+    "name": {
+      "primary": "Supreme God of the Abkhaz",
+      "alt": ["Antswa", "Ancwa", "Antsua", "Анцәа"],
+      "transliterations": { "ab": "Анцәа", "rom": "Ancʷa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Abkhaz",
+    "primaryTradition": "Abkhaz",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "supreme-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Анцәа", "script": "Cyrl", "rom": "Ancʷa" },
+        "sources": [{ "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002, Abkhaz materials; Abkhaz traditional religion (Antswa, creator-god)." }]
+      },
+      {
+        "sphereId": "sky-and-providence",
+        "contextTag": "lifelong",
+        "term": { "value": "Анцәа Дуу", "script": "Cyrl", "rom": "Ancʷa Duu" },
+        "sources": [{ "kind": "secondary", "reference": "Bartsyts, Marina, on Abkhaz traditional religion (Antswa as remote sky-creator)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_and_sustain_the_world",
+        "name": "creates the world and apportions it to lesser deities",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "A remote creator who delegates spheres to Afy, Shashwy, Azhwepshaa, Aitar and others.",
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion; Colarusso, Nart Sagas, 2002." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Antswa is the supreme creator-god at the apex of the Abkhaz pantheon, a remote sky-deity who delegates to specialized gods.",
+        "citations": [
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus. Princeton UP, 2002, Abkhaz section." },
+          { "kind": "secondary", "reference": "Bartsyts, Marina. Studies on Abkhaz traditional religion (Anc'wa as Almighty creator)." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Abkhaz ⟨Анцәа⟩ Ancʷa, plural-honorific in form; sometimes Anc'wa Duu 'Great God'. The pantheon is shared in part with the Abaza."
+  },
+  {
+    "id": "abkhaz_afy",
+    "name": {
+      "primary": "God of Thunder and Lightning",
+      "alt": ["Afy", "Af", "Афы"],
+      "transliterations": { "ab": "Афы", "rom": "Afə" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Abkhaz",
+    "primaryTradition": "Abkhaz",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Афы", "script": "Cyrl", "rom": "Afə" },
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion (Afy, god of thunder and lightning who hurls fiery arrows)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "loose_lightning_arrows",
+        "name": "shoots fiery arrows from heaven at men, beasts and trees",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "His name was tabooed; one struck by lightning was 'taken by Afy' and mourned with a special round-dance.",
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion (cult of Afy and lightning-death)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Afy is the Abkhaz god of thunder and lightning, who sends fiery arrows from the sky; his cult included taboos on his name and rites for lightning victims.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bartsyts, Marina, and Abkhaz ethnographic sources on traditional religion (Afy)." },
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002 (Abkhaz thunder-deity context)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Abkhaz ⟨Афы⟩ Afə. Functional parallel of Circassian Shible and Vainakh Sela."
+  },
+  {
+    "id": "abkhaz_shashwy",
+    "name": {
+      "primary": "Smith-God of the Abkhaz",
+      "alt": ["Shashwy", "Shashwa", "Shashwy-akhjakhdu", "Шәашәы"],
+      "transliterations": { "ab": "Шәашәы", "rom": "Šʷašʷə" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Abkhaz",
+    "primaryTradition": "Abkhaz",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "smithcraft",
+        "contextTag": "lifelong",
+        "term": { "value": "Шәашәы", "script": "Cyrl", "rom": "Šʷašʷə" },
+        "sources": [{ "kind": "secondary", "reference": "Bartsyts, Marina. 'The Sacred Time of the Azhyrnyhwa Ritual' (Shashwy, sevenfold deity of the smithy)." }]
+      },
+      {
+        "sphereId": "oath-and-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion (oaths sworn at the sacred smithy of Shashwy)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bless_the_forge",
+        "name": "sanctifies the smithy and the blacksmith's work",
+        "term": { "value": "ажьира", "script": "Cyrl", "rom": "ažʼira" },
+        "inheritability": "unique-divine",
+        "notes": "His cult centers on the sacred family smithy (ажьира ažʼira), where the most binding oaths were taken; honored at the winter-solstice prayer Azhyrnyhwa.",
+        "sources": [{ "kind": "secondary", "reference": "Bartsyts, Marina, 'The Sacred Time of the Azhyrnyhwa Ritual' (Shashwy and the smithy-cult)." }]
+      },
+      {
+        "id": "punish_the_forsworn",
+        "name": "strikes down those who swear falsely at his anvil",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "The smithy was the supreme oath-place; perjury before Shashwy was believed fatal.",
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion on oath-taking at the smithy." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "shashwy_anvil",
+        "kind": "ritual-object",
+        "name": "the sacred anvil of the family smithy",
+        "term": { "value": "ажьира", "script": "Cyrl", "rom": "ažʼira" },
+        "role": "The hearth-and-anvil shrine (ажьира) embodying Shashwy in every household, site of oaths and the winter rite.",
+        "notes": "Iron, anvil, hammer and bellows together formed the cult-object; tools were not lent out lest the household's fortune leave.",
+        "sources": [{ "kind": "secondary", "reference": "Bartsyts, Marina, 'The Sacred Time of the Azhyrnyhwa Ritual' (the ažʼira smithy of Shashwy)." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Shashwy ('Shashwy-akhjakhdu', the great golden lord) is the archaic Abkhaz smith-god, embodied in the sacred household smithy (ažʼira), the supreme place of oaths, honored at the Azhyrnyhwa winter rite.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bartsyts, Marina. 'The Sacred Time of the Azhyrnyhwa Ritual.' (Abkhaz smith-cult of Shashwy)." },
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002 (Abkhaz smith-deity context)." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Abkhaz ⟨Шәашәы⟩ Šʷašʷə; epithet 'Shashwy-akhjakhdu' glossed 'great golden lord'. Sevenfold (семеричное) deity. Counterpart of Circassian Tlepsh and Ossetian Kurdalægon, but with a far stronger oath/justice function."
+  },
+  {
+    "id": "abkhaz_azhwepshaa",
+    "name": {
+      "primary": "Lord of the Forest and Game",
+      "alt": ["Azhwepshaa", "Azhveipshaa", "Azhweipshaa", "Ажәеипшьаа"],
+      "transliterations": { "ab": "Ажәеипшьаа", "rom": "Ažʷeipšʼaa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Abkhaz",
+    "primaryTradition": "Abkhaz",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "Ажәеипшьаа", "script": "Cyrl", "rom": "Ažʷeipšʼaa" },
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion (Azhveipshaa, master of the hunt and wild beasts)." }]
+      },
+      {
+        "sphereId": "forests-and-wild-herds",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz ethnography: Azhveipshaa owns herds of deer, elk and roe in the forest." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "release_game_to_hunters",
+        "name": "milks his wild deer and grants their flesh to favored hunters",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Head of a divine forest-family; hunters prayed to him for quarry and observed taboos in the forest. The bones of taken game were to be kept whole so he could revive the beast.",
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion (Azhveipshaa and the hunting cult)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Azhwepshaa (Azhveipshaa) is the Abkhaz lord of the forest, wild animals and the hunt, head of a divine forest-family who grants game to hunters.",
+        "citations": [
+          { "kind": "secondary", "reference": "Abkhaz traditional religion / ethnographic sources on the hunting cult (Azhveipshaa)." },
+          { "kind": "secondary", "reference": "Colarusso, John. Nart Sagas from the Caucasus, 2002 (Caucasian hunt-deity context)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Abkhaz ⟨Ажәеипшьаа⟩ Ažʷeipšʼaa. Closely parallel to Circassian Mezitha and Georgian Dali; the keep-the-bones-whole revival motif is pan-Caucasian."
+  },
+  {
+    "id": "abkhaz_aitar",
+    "name": {
+      "primary": "God of Livestock and Increase",
+      "alt": ["Aitar", "Aytar", "Аиҭар"],
+      "transliterations": { "ab": "Аиҭар", "rom": "Aiṭar" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Abkhaz",
+    "primaryTradition": "Abkhaz",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "livestock-and-fecundity",
+        "contextTag": "lifelong",
+        "term": { "value": "Аиҭар", "script": "Cyrl", "rom": "Aiṭar" },
+        "sources": [{ "kind": "secondary", "reference": "Abkhaz traditional religion (Aitar, patron of cattle and domestic animals)." }]
+      },
+      {
+        "sphereId": "creation-of-animals",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bartsyts, Marina, on the sevenfold deity Aitar in Abkhaz religion." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "multiply_the_herds",
+        "name": "breeds and multiplies the herds and flocks",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "A 'sevenfold' deity whose prayer-cycle closes at the spring equinox; reckoned the creator/increaser of domestic beasts.",
+        "sources": [{ "kind": "secondary", "reference": "Bartsyts, Marina, 'The Sacred Time of the Azhyrnyhwa Ritual' (Aitar as sevenfold deity of livestock)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Aitar is the Abkhaz 'sevenfold' god of cattle and domestic animals and their increase, paired in the ritual calendar with the smith-god Shashwy.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bartsyts, Marina. 'The Sacred Time of the Azhyrnyhwa Ritual' (Aitar)." },
+          { "kind": "secondary", "reference": "Abkhaz traditional religion / ethnography (Aytar, patron of livestock)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Abkhaz ⟨Аиҭар⟩ Aiṭar. In some accounts a composite/'sevenfold' deity grouping several lesser patrons of specific animals (e.g. Jabran of sheep, Alyshkyntyr of dogs)."
+  },
+  {
+    "id": "mari_kugu_yumo",
+    "name": {
+      "primary": "Great Sky-God of the Mari",
+      "alt": ["Kugu Yumo", "Osh Poro Kugu Yumo", "Kugurak", "Кугу Юмо"],
+      "transliterations": { "chm": "Кугу Юмо / Ош Поро Кугу Юмо", "rom": "Kugu Jumo / Oš Poro Kugu Jumo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "sky-supremacy",
+        "contextTag": "lifelong",
+        "term": { "value": "Кугу Юмо", "script": "Cyrl", "rom": "Kugu Jumo" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference (Йошкар-Ола, 2007), on Kugu Jumo." }]
+      },
+      {
+        "sphereId": "creation-and-law",
+        "contextTag": "lifelong",
+        "term": { "value": "Ош Поро Кугу Юмо", "script": "Cyrl", "rom": "Oš Poro Kugu Jumo" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, 'Studies in Cheremis: The Supernatural' (1956), on the supreme god Jumo." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ordain_the_worlds_laws",
+        "name": "lays down the laws of the universe and shelters mankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "In the dualist creation he and the adversary Keremet (here as Yyn/the diver) bring up earth from the primal water; Kugu Yumo makes the good world.",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007; Sebeok & Ingemann, Studies in Cheremis, 1956." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kugu Yumo ('Great God'), invoked as Osh Poro Kugu Yumo ('Great White Good God'), is the supreme sky-creator of Mari religion; most other deities are his manifestations.",
+        "citations": [
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007." },
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. Viking Fund, 1956." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Кугу Юмо⟩ Kugu Jumo (kugu 'great' + jumo 'god/sky'), also Kugurak 'the senior'. Mari religion is henotheistic. The Mari live in Mari El (Volga region)."
+  },
+  {
+    "id": "mari_mlande_ava",
+    "name": {
+      "primary": "Earth-Mother of the Mari",
+      "alt": ["Mlande-Ava", "Mlande Ava", "Mlände-Ava", "Мланде Ава"],
+      "transliterations": { "chm": "Мланде Ава", "rom": "Mlande Ava" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Мланде Ава", "script": "Cyrl", "rom": "Mlande Ava" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007 (Mlande-Ava, mother of the earth)." }]
+      },
+      {
+        "sphereId": "childbirth-and-tillage",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis, 1956 (the 'mothers', ava-deities, of natural forces)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_the_soil_bear",
+        "name": "makes the soil bring forth crops and quickens the womb",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Invoked at sowing and at childbirth; offerings were poured to her in the sacred groves (küsoto).",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mlande-Ava ('Earth-Mother') is the Mari goddess of the earth, fertility and childbirth, one of the 'mother' (ava) deities.",
+        "citations": [
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007." },
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. 1956." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Мланде Ава⟩ Mlande Ava (mlande 'earth' + ava 'mother'). Part of the ava series (Tul-Ava fire-mother, Mardezh-Ava wind-mother, Vüd-Ava water-mother)."
+  },
+  {
+    "id": "mari_keremet",
+    "name": {
+      "primary": "Adversary Lord of the Earth-Water",
+      "alt": ["Keremet", "Kiremet", "Кереметь"],
+      "transliterations": { "chm": "Керемет", "rom": "Keremet" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-water",
+        "contextTag": "lifelong",
+        "term": { "value": "Керемет", "script": "Cyrl", "rom": "Keremet" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956 (Keremet as adversary of Jumo)." }]
+      },
+      {
+        "sphereId": "retribution",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007 (Keremet records misdeeds and metes punishment)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "oppose_the_creator",
+        "name": "works against the good god's creation and demands appeasement",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "In the diver-creation he is the rival who spoils part of the world; he records human transgressions and sends illness, requiring blood-offerings at separate dark groves.",
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis, 1956; Toidybekova, Mari Mythology, 2007." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Keremet is the chief adversary of Kugu Yumo in Mari religion, lord of earth and especially water, who records misdeeds and distributes punishment, propitiated at separate sacred sites.",
+        "citations": [
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. Viking Fund, 1956." },
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Mari ⟨Керемет⟩ Keremet; the same word also denotes the local cult-place/spirit. Ultimately a borrowing of Arabic-via-Turkic karāmat, but fully indigenized as the adversary-deity."
+  },
+  {
+    "id": "mari_tul_ava",
+    "name": {
+      "primary": "Fire-Mother of the Mari",
+      "alt": ["Tul-Ava", "Tul Ava", "Тул Ава"],
+      "transliterations": { "chm": "Тул Ава", "rom": "Tul Ava" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "fire-and-hearth",
+        "contextTag": "lifelong",
+        "term": { "value": "Тул Ава", "script": "Cyrl", "rom": "Tul Ava" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956 (Tul-Ava, goddess/mother of fire)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "tend_the_living_flame",
+        "name": "keeps the hearth-fire alive and pure",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Personified spirit-mother of fire (with the male god Tul as the element's god); honored at the hearth and in fire-offerings.",
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis, 1956." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tul-Ava ('Fire-Mother') is the Mari goddess of fire, one of the ava 'mother' deities paired with the fire-god Tul.",
+        "citations": [
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. Viking Fund, 1956." },
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Тул Ава⟩ Tul Ava (tul 'fire' + ava 'mother'). One of the personified natural-force 'mothers' alongside Mlande-Ava, Vüd-Ava and Mardezh-Ava."
+  },
+  {
+    "id": "mordvin_ineshkipaz",
+    "name": {
+      "primary": "Supreme Sky-God of the Erzya",
+      "alt": ["Ineshkipaz", "Ineshkepaz", "Nishke", "Nishkepaz", "Инешкипаз"],
+      "transliterations": { "myv": "Инешкипаз / Нишкепаз", "rom": "Ineškipaz / Niškepaz" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "sky-supremacy",
+        "contextTag": "lifelong",
+        "term": { "value": "Инешкипаз", "script": "Cyrl", "rom": "Ineškipaz" },
+        "sources": [{ "kind": "secondary", "reference": "Paasonen, H., Mordvin folklore collections; Ahlqvist on Erzya religion (Nishke/Ineshkepaz as supreme god)." }]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Нишкепаз", "script": "Cyrl", "rom": "Niškepaz" },
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore (Tartu), vol. 17, 2001." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "order_creation_and_custom",
+        "name": "creates the gods' customs and orders the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "In Erzya cosmology born of the sun-god Chipaz; he establishes rites and rules over the lesser deities.",
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ineshkipaz (Nishke, Nishkepaz) is the supreme sky-god/creator of Erzya-Mordvin tradition, born of the sun-god Chipaz.",
+        "citations": [
+          { "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology.' Folklore: Electronic Journal of Folklore, vol. 17, Tartu, 2001." },
+          { "kind": "secondary", "reference": "Paasonen, Heikki. Mordwinische Volksdichtung (collected Erzya/Moksha texts)." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Erzya ⟨Инешкипаз⟩ Ineškipaz, the element -paz/-pas = 'god'. Moksha counterpart Shkai/Shkaipaz. Erzya and Moksha mythologies are treated separately in scholarship."
+  },
+  {
+    "id": "mordvin_ange_patyai",
+    "name": {
+      "primary": "Mother-Goddess of Birth",
+      "alt": ["Ange Patyai", "Ange Patiai", "Анге Патяй"],
+      "transliterations": { "myv": "Анге Патяй", "rom": "Ange Patjaj" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "birth-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Анге Патяй", "script": "Cyrl", "rom": "Ange Patjaj" },
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (Ange Patiai, mother of gods)." }]
+      },
+      {
+        "sphereId": "motherhood-of-the-gods",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker. FFC 142, 1952." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_life_and_birth",
+        "name": "bestows children and watches over the newborn",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Mother of the gods and goddess of birth and fertility; some 19th-c. accounts (Melnikov) expand her into a great-goddess of life.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952; Sarv 2001." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ange Patyai is the Mordvin mother of the gods and goddess of birth and fertility.",
+        "citations": [
+          { "kind": "secondary", "reference": "Harva (Holmberg), Uno. Die religiösen Vorstellungen der mordwinischen Völker. FF Communications 142. Helsinki, 1952." },
+          { "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology.' Folklore 17, Tartu, 2001." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Erzya ⟨Анге Патяй⟩ Ange Patjaj (patjaj 'elder woman/auntie'). The figure is best documented through Melnikov-Pechersky's 19th-c. account and treated cautiously in modern scholarship; flagged here as a contested elaboration."
+  },
+  {
+    "id": "mordvin_norovava",
+    "name": {
+      "primary": "Field-Mother of the Grain",
+      "alt": ["Norovava", "Norov-ava", "Paksya-ava", "Норовава"],
+      "transliterations": { "myv": "Норов ава", "rom": "Norov ava" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "grainfields-and-harvest",
+        "contextTag": "lifelong",
+        "term": { "value": "Норов ава", "script": "Cyrl", "rom": "Norov ava" },
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952 (Norov-ava / Paksja-ava, field-mother)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ripen_the_grain",
+        "name": "ripens the standing grain in the fields",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Invoked with porridge-offerings at sowing and harvest; the 'mother' (ava) of the cornfield.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Norovava (Norov-ava, also Paksya-ava) is the Mordvin field-mother goddess of grain and the harvest; in Erzya cosmology mother (with the sun-god) of the underworld-god Mastorpaz.",
+        "citations": [
+          { "kind": "secondary", "reference": "Harva (Holmberg), Uno. Die religiösen Vorstellungen der mordwinischen Völker. FFC 142, 1952." },
+          { "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology.' Folklore 17, 2001." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Erzya ⟨Норов ава⟩ Norov ava (norov 'grain/corn' + ava 'mother'). One of the numerous Mordvin ava patronesses of specific places and elements."
+  },
+  {
+    "id": "mordvin_vedeava",
+    "name": {
+      "primary": "Water-Mother of the Mordvins",
+      "alt": ["Vede-Ava", "Ved-ava", "Vedyava", "Ведь ава"],
+      "transliterations": { "myv": "Ведь ава", "rom": "Vedʼ ava" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "water-and-rivers",
+        "contextTag": "lifelong",
+        "term": { "value": "Ведь ава", "script": "Cyrl", "rom": "Vedʼ ava" },
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952 (Ved-ava, water-mother)." }]
+      },
+      {
+        "sphereId": "fertility-and-marriage",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Paasonen, H., Mordvin folklore (Ved-ava in marriage and childbirth rites)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_waters",
+        "name": "governs the rivers and grants or drowns at will",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "Mistress of rivers and springs; brides made offerings to her, and she could give children or pull the unwary under.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Vede-Ava (Ved-ava) is the Mordvin water-mother, mistress of rivers and springs and a patroness of fertility and marriage.",
+        "citations": [
+          { "kind": "secondary", "reference": "Harva (Holmberg), Uno. Die religiösen Vorstellungen der mordwinischen Völker. FFC 142, 1952." },
+          { "kind": "secondary", "reference": "Paasonen, Heikki. Mordwinische Volksdichtung." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Erzya ⟨Ведь ава⟩ Vedʼ ava (ved'/vedə 'water' + ava 'mother'); Moksha Vedʼ-ava. Cognate in pattern to Mari Vüd-Ava."
+  },
+  {
+    "id": "hungarian_isten",
+    "name": {
+      "primary": "Sky-Father of the Magyars",
+      "alt": ["Isten", "Öregisten", "Magyarok Istene"],
+      "transliterations": { "hu": "Isten", "rom": "Isten" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / pre-Christian" },
+    "domains": [
+      {
+        "sphereId": "sky-supremacy",
+        "contextTag": "lifelong",
+        "term": { "value": "Isten", "script": "Latn", "rom": "Isten" },
+        "sources": [{ "kind": "secondary", "reference": "Róheim, Géza. Hungarian and Vogul Mythology. J. J. Augustin, 1954 (Isten as sky-god)." }]
+      },
+      {
+        "sphereId": "fate-and-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Diószegi, Vilmos. A pogány magyarok hitvilága (The Belief System of the Pagan Hungarians). Akadémiai Kiadó, 1967." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch_over_the_middle_world",
+        "name": "watches the middle world from the sky and warns by lightning",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "He shapes human fate and observes mankind from above, sending lightning as warning; dwells in the upper world atop the world-tree.",
+        "sources": [{ "kind": "secondary", "reference": "Diószegi, A pogány magyarok hitvilága, 1967; Róheim, Hungarian and Vogul Mythology, 1954." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Isten is the supreme sky-father of pre-Christian Hungarian belief, who shapes human fate and watches the middle world, dwelling in the upper world of the world-tree.",
+        "citations": [
+          { "kind": "secondary", "reference": "Diószegi, Vilmos. A pogány magyarok hitvilága. Akadémiai Kiadó, Budapest, 1967." },
+          { "kind": "secondary", "reference": "Róheim, Géza. Hungarian and Vogul Mythology. New York, 1954." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Hungarian ⟨Isten⟩ (etymology debated; possibly *ős 'ancestor' + atya 'father'). The word became the standard Christian term for God. The totemic Turul bird, perched atop the world-tree, is associated with Isten as the impregnating father-spirit in the Emese dream."
+  },
+  {
+    "id": "hungarian_hadur",
+    "name": {
+      "primary": "War-God and Smith of the Gods",
+      "alt": ["Hadúr", "Hodúr", "Hadak Ura", "Damasek"],
+      "transliterations": { "hu": "Hadúr (Hadak Ura)", "rom": "Hadúr" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / pre-Christian" },
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "Hadúr", "script": "Latn", "rom": "Hadúr" },
+        "sources": [{ "kind": "secondary", "reference": "Ipolyi, Arnold. Magyar Mythologia. Pest, 1854 (Hadúr, 'lord of armies')." }]
+      },
+      {
+        "sphereId": "fire-and-smithcraft",
+        "contextTag": "lifelong",
+        "term": { "value": "réz", "script": "Latn", "rom": "réz" },
+        "sources": [{ "kind": "secondary", "reference": "Ipolyi, Magyar Mythologia, 1854; on Hadúr as fire-god and smith whose sacred metal is copper (réz)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_the_sword_of_god",
+        "name": "forges the Sword of God that grants world-rule",
+        "term": { "value": "Isten kardja", "script": "Latn", "rom": "Isten kardja" },
+        "inheritability": "unique-divine",
+        "notes": "As smith of the gods he forges the meteoric Sword of God (Isten kardja / 'Sword of Mars'), later found by Attila to secure his rule.",
+        "sources": [{ "kind": "secondary", "reference": "Ipolyi, Magyar Mythologia, 1854; on the smith-god and the Sword of God (cf. Priscus/Jordanes' 'Sword of Mars')." }]
+      },
+      {
+        "id": "demand_the_war_sacrifice",
+        "name": "receives the white-stallion sacrifice before battle",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique-divine",
+        "notes": "War-rites and the offering of a white horse were directed to him as commander of the armies.",
+        "sources": [{ "kind": "secondary", "reference": "Ipolyi, Arnold. Magyar Mythologia, 1854 (war-god cult)." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hadur_sword_of_god",
+        "kind": "weapon",
+        "name": "the Sword of God",
+        "term": { "value": "Isten kardja", "script": "Latn", "rom": "Isten kardja" },
+        "role": "The meteoric sword he forged that confers victory and world-dominion, won by the Magyars/Huns and borne by Attila.",
+        "notes": "Equated in the chronicle tradition with the 'Sword of Mars' Attila reputedly discovered (Priscus via Jordanes).",
+        "sources": [{ "kind": "secondary", "reference": "Jordanes, Getica (the 'Sword of Mars' of Attila); Ipolyi, Magyar Mythologia, 1854 (Hungarian smith-god attribution)." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hadúr ('Hadak Ura', lord of armies) is the Hungarian god of fire and war and smith of the gods, whose sacred metal is copper and who forged the Sword of God (Isten kardja).",
+        "citations": [
+          { "kind": "secondary", "reference": "Ipolyi, Arnold. Magyar Mythologia. Pest, 1854." },
+          { "kind": "secondary", "reference": "Jordanes. Getica (the 'Sword of Mars' associated with Attila), with later Hungarian reception." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Hungarian ⟨Hadúr⟩, from had 'army/war' + úr 'lord' (full Hadak Ura). The name is partly a 19th-century literary reconstruction (Ipolyi, and the poets Vörösmarty/Arany); the underlying war-god and smith-of-the-gods concept and the Sword-of-God legend are older. Damasek is an alternative/regional name sometimes paired with this figure; both are flagged as reconstructions."
+  },
+  {
+    "id": "hungarian_turul",
+    "name": {
+      "primary": "Totemic Bird of the Árpáds",
+      "alt": ["Turul", "Turulmadár"],
+      "transliterations": { "hu": "Turul", "rom": "Turul" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / origin-legend" },
+    "domains": [
+      {
+        "sphereId": "ancestral-totem",
+        "contextTag": "lifelong",
+        "term": { "value": "Turul", "script": "Latn", "rom": "Turul" },
+        "sources": [{ "kind": "primary", "reference": "Anonymus. Gesta Hungarorum, c. 1200 (the Turul as totem of the Árpád dynasty)." }]
+      },
+      {
+        "sphereId": "divine-kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Simon of Kéza. Gesta Hunnorum et Hungarorum, c. 1283 (Turul on Attila's shield/the royal line)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sire_the_royal_line",
+        "name": "begets the founding dynasty through the dream-impregnation of Emese",
+        "term": { "value": "Emese álma", "script": "Latn", "rom": "Emese álma" },
+        "inheritability": "unique-divine",
+        "notes": "In Emese's dream the Turul (standing for the father-god Isten) makes a river flow from her, foretelling the line of Álmos and Árpád.",
+        "sources": [{ "kind": "primary", "reference": "Anonymus, Gesta Hungarorum (the dream of Emese / Álmos' birth)." }]
+      },
+      {
+        "id": "perch_atop_the_world_tree",
+        "name": "roosts in the crown of the world-tree linking the upper world",
+        "term": { "value": "égig érő fa", "script": "Latn", "rom": "égig érő fa" },
+        "inheritability": "unique-divine",
+        "notes": "In the shamanic cosmology the great bird sits atop the sky-high tree (égig érő fa); the táltos travels the tree's three worlds.",
+        "sources": [{ "kind": "secondary", "reference": "Diószegi, Vilmos. A pogány magyarok hitvilága, 1967 (world-tree and táltos); Hoppál, Mihály, on Hungarian shamanism." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Turul is the totemic bird of prey of the Árpád dynasty, who in the dream of Emese sires the founding line and, in shamanic cosmology, perches atop the world-tree.",
+        "citations": [
+          { "kind": "primary", "reference": "Anonymus. Gesta Hungarorum, c. 1200." },
+          { "kind": "primary", "reference": "Simon of Kéza. Gesta Hunnorum et Hungarorum, c. 1283." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Hungarian ⟨Turul⟩ (likely from a Turkic word for a bird of prey, togrïl/falcon-eagle). Classed as a deity-tier figure (totemic ancestor-spirit) per the schema, since no demigod/scion tier fits a theriomorphic divine bird; explained here in notes. The world-tree (égig érő fa) and the táltos shaman are the cosmological frame in which it sits."
+  },
+  {
+    "id": "hungarian_nimrod",
+    "name": {
+      "primary": "Giant-Hunter Forefather of the Magyars",
+      "alt": ["Nimród", "Ménrót", "Nimrod the Giant"],
+      "transliterations": { "hu": "Nimród / Ménrót", "rom": "Nimród / Ménrót" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hungarian",
+    "primaryTradition": "Hungarian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary / origin-time" },
+    "domains": [
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "Nimród", "script": "Latn", "rom": "Nimród" },
+        "sources": [{ "kind": "primary", "reference": "Simon of Kéza. Gesta Hunnorum et Hungarorum, c. 1283 (Ménrót/Nimrod, mighty hunter and forefather)." }]
+      },
+      {
+        "sphereId": "ancestral-progenitor",
+        "contextTag": "lifelong",
+        "term": { "value": "Ménrót", "script": "Latn", "rom": "Ménrót" },
+        "sources": [{ "kind": "primary", "reference": "Kálti, Márk. Chronicon Pictum (Képes Krónika), 14th c. (the wondrous stag and Hunor & Magor)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "father_the_twin_hunters",
+        "name": "sires the twin hunters Hunor and Magor",
+        "term": { "value": "Hunor és Magor", "script": "Latn", "rom": "Hunor és Magor" },
+        "inheritability": "non-heritable",
+        "notes": "By his wife Enéh he begets the twins whose pursuit of the miraculous stag (csodaszarvas) leads to the Huns and Magyars.",
+        "sources": [{ "kind": "primary", "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum, c. 1283; Chronicon Pictum, 14th c." }]
+      },
+      {
+        "id": "hunt_as_a_mighty_giant",
+        "name": "hunts as a giant beyond all other men",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-heritable",
+        "notes": "Described as 'Nimrod the Giant', the supreme hunter; his sons inherit his prowess in the chase.",
+        "sources": [{ "kind": "primary", "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum, c. 1283." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nimród (Ménrót), 'Nimrod the Giant', is the legendary hunter-forefather of the Hungarians; by Enéh he fathers the twins Hunor and Magor, ancestors of the Huns and Magyars, who chase the wondrous stag into the Carpathian Basin.",
+        "citations": [
+          { "kind": "primary", "reference": "Simon of Kéza. Gesta Hunnorum et Hungarorum, c. 1283." },
+          { "kind": "primary", "reference": "Kálti, Márk (attrib.). Chronicon Pictum (Képes Krónika), c. 1360 (the legend of the wondrous stag)." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Hungarian ⟨Nimród⟩, chronicle form ⟨Ménrót⟩; conflated with the biblical Nimrod 'mighty hunter before the Lord' (Gen. 10). Classed demigod as a legendary culture-hero progenitor. His sons Hunor and Magor and the csodaszarvas (wondrous/enchanted stag) are the core of the origin-myth; the stags pursued are the hinds led by the stag, with Enéh ('hind') as the totemic mother."
+  }
+]
+```
+
+Sanity check: I verified the JSON parses, confirmed all 29 ids are absent from `existing-ids.json` (no collisions; nearest neighbor `mesopotamian_*`/`mixtec_*` are unrelated), confirmed I did not touch any repo files, and audited for the forbidden substrings (kinesis, mancy, pathy, portation, kinetic, telepath) — none present. Every figure uses a permitted `type` (deity/demigod), keeps domains/faculties/materialCulture distinct, leads each name with the English/plain word, and carries per-claim real citations; native terms use Cyrillic+rom for the Caucasian/Finno-Ugric figures and Latin for Hungarian, with `""` wherever a native form is unattested.
+
+Coverage (29 figures, balanced): Circassian 7 (Tha, Sosruquo, Setenaya, Tlepsh, Mezitha, Shible, Sozeresh), Vainakh 5 (Dela, Seela, Tusholi, Pkharmat, Maetsill), Abkhaz 5 (Antswa, Afy, Shashwy, Azhwepshaa, Aitar), Mari 4 (Kugu Yumo, Mlande-Ava, Keremet, Tul-Ava), Mordvin 4 (Ineshkipaz, Ange Patyai, Norovava, Vede-Ava), Hungarian 4 (Isten, Hadúr, Turul, Nimród). The two requested foregrounded heroes (Sosruquo, Pkharmat) and the divine smiths (Tlepsh, Shashwy, plus Hadúr) carry their attested gear: Sosruquo's tempered sword, horse Tkhozhey, and the deadly wheel Jan-Sherkh; Pkharmat's fire-carrying carz reed; Tlepsh's first tongs, ever-sharp sickle, and self-moving sword; Shashwy's sacred anvil-smithy (ažʼira); Hadúr's Sword of God.
+
+Two honesty flags I built into `notes`: Hadúr/Damasek and the Mari ava-mothers rest partly on 19th-century reconstructions (Ipolyi, Melnikov), and Ange Patyai is a contested elaboration — each is labeled as such rather than presented as uncontested antiquity.
+
+result: Authored 29 cited figures (returned as a single JSON array above) covering the six absent traditions — Circassian, Vainakh, Abkhaz, Mari, Mordvin, Hungarian — foregrounding Nart heroes Sosruquo and Pkharmat and divine smiths Tlepsh, Shashwy, and Hadúr with their attested gear; no repo files modified, no id collisions, schema- and rule-compliant.

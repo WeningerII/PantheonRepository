@@ -1,0 +1,1605 @@
+All checks pass. Faculties are verb-phrases throughout; culture-heroes (the three Ravens, Kénos, Kwányip, the Yoálox brothers, Master Carpenter) are foregrounded. The registry array is complete and validated.
+
+```json
+[
+  {
+    "id": "haida_raven",
+    "name": {
+      "primary": "Raven",
+      "alt": ["Yáahl", "Xhuuya", "Nankil'slas", "Voice Handler", "He-Whose-Voice-Is-Obeyed"],
+      "transliterations": { "haida": "Yáahl", "haida_alt": "Nang Kilsdlaas" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "transformation",
+        "contextTag": "lifelong",
+        "term": { "value": "Yáahl", "script": "Latn", "rom": "Yáahl" },
+        "sources": [{ "kind": "secondary", "reference": "Bringhurst, Robert. A Story as Sharp as a Knife: The Classical Haida Mythtellers and Their World. Douglas & McIntyre, 1999." }]
+      },
+      {
+        "sphereId": "daylight-and-light",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths: Skidegate Dialect. Bureau of American Ethnology Bulletin 29, 1905, Raven cycle." }]
+      },
+      {
+        "sphereId": "trickery-and-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bringhurst, Robert. A Story as Sharp as a Knife, 1999 (note that Raven creates nothing outright but redistributes the world by stealing and rearranging)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "release_the_sun",
+        "name": "release the sun and stars from their boxes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Raven steals the boxes holding the heavenly lights from the house of an old sky-chief and lets the sun, moon, and stars escape into the sky, establishing daylight in the world.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths, BAE Bulletin 29, 1905, Raven Travelling cycle." }]
+      },
+      {
+        "id": "free_the_first_people",
+        "name": "coax the first people out of a clamshell",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "On the beach at Rose Spit, Naikun, Raven finds a giant clamshell with the first humans cowering inside and coaxes them out into the world; rendered famously by Bill Reid's sculpture 'Raven and the First Men'.",
+        "sources": [{ "kind": "secondary", "reference": "Reid, Bill, and Robert Bringhurst. The Raven Steals the Light. Douglas & McIntyre, 1984." }]
+      },
+      {
+        "id": "change_shape",
+        "name": "change shape between raven and man",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Raven is a transformer who slips between bird and human form and disguises himself to steal what the world lacks (fresh water, fire, salmon).",
+        "sources": [{ "kind": "secondary", "reference": "Bringhurst, Robert. A Story as Sharp as a Knife, 1999." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Raven (Yáahl) is the central transformer-trickster and culture hero of the Haida, responsible for making Haida Gwaii habitable, releasing the sun, and bringing humans into the world.",
+        "citations": [
+          { "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths: Skidegate Dialect. BAE Bulletin 29, 1905." },
+          { "kind": "secondary", "reference": "Bringhurst, Robert. A Story as Sharp as a Knife: The Classical Haida Mythtellers and Their World, 1999." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Bringhurst observes that Raven creates nothing outright; he made the world by stealing, exchanging, and redistributing things.",
+        "citations": [{ "kind": "secondary", "reference": "Bringhurst, Robert. A Story as Sharp as a Knife, 1999." }],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Classed as a deity for registry purposes though Haida understand Yáahl as a culture-hero/transformer rather than a worshipped god; the same trickster-demiurge appears among the neighbouring Tlingit (Yéil) and Kwakwaka'wakw (U'melth). The title Nankil'slas, 'voice handler', is also rendered Nang Kilsdlaas."
+  },
+  {
+    "id": "haida_master_carpenter",
+    "name": {
+      "primary": "Master Carpenter",
+      "alt": ["Nankilstlas", "He Who Builds Houses", "Shaper of the World"],
+      "transliterations": { "haida": "" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "carpentry-and-canoe-building",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths, BAE Bulletin 29, 1905, 'Master-Carpenter and South-East'." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "battle_the_southeast_wind",
+        "name": "wage a carving-duel against the South-East Wind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Master Carpenter repeatedly carves canoes and tools to fight the storm-bringing South-East Wind so that fair weather and travel become possible; his early canoes split until he learns to make them properly.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths, BAE Bulletin 29, 1905, 'Master-Carpenter and South-East'." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "haida_dugout_canoe",
+        "kind": "vessel",
+        "name": "dugout cedar canoe",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the craft Master Carpenter perfects through repeated carving in his contest with the wind",
+        "notes": "The myth is an origin account for the seagoing Haida cedar canoe and for proper canoe-carving technique.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths, BAE Bulletin 29, 1905." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Master Carpenter is a Haida culture-hero and supernatural shipwright whose battle with the South-East Wind explains the origin of the seagoing canoe.",
+        "citations": [{ "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths: Skidegate Dialect, BAE Bulletin 29, 1905." }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Treated as a deity-class culture hero. The name Nankilstlas/Nankil'slas ('voice handler') is in some Haida tellings an epithet of Raven himself, and the carpenter figure overlaps with the Raven complex; recorded by Swanton at Skidegate."
+  },
+  {
+    "id": "haida_foam_woman",
+    "name": {
+      "primary": "Foam Woman",
+      "alt": ["Foam-Woman", "Raven-clan Ancestress"],
+      "transliterations": { "haida": "" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "lineage-and-ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Contributions to the Ethnology of the Haida. Memoirs of the American Museum of Natural History 8, 1905." }]
+      },
+      {
+        "sphereId": "primordial-flood",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition documentation (citing Swanton and oral histories)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shoot_lightning_from_eyes",
+        "name": "shoot lightning from her eyes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As the floodwaters receded she sat alone on a reef and let none of the other supernatural beings approach, shooting lightning from her eyes; only the Eagle ancestress could come near.",
+        "sources": [{ "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition documentation." }]
+      },
+      {
+        "id": "mother_the_raven_lineages",
+        "name": "give rise to the Raven-clan lineages",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Foam Woman is the ancestress from whom the Raven moiety clans of Haida Gwaii descend; she is said to have had many breasts, one for each lineage.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Contributions to the Ethnology of the Haida, AMNH Memoirs 8, 1905." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Foam Woman is the primordial ancestress of the Haida Raven moiety, appearing on a reef as the great flood recedes and shooting lightning from her eyes.",
+        "citations": [
+          { "kind": "secondary", "reference": "Swanton, John R. Contributions to the Ethnology of the Haida, AMNH Memoirs 8, 1905." },
+          { "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female founding ancestress; classed as a deity. Counterpart to Djila'qons, the ancestress of the Eagle moiety. The native Haida term was not recovered in the consulted sources, so term is left empty."
+  },
+  {
+    "id": "haida_djilaqons",
+    "name": {
+      "primary": "Creek Woman",
+      "alt": ["Djila'qons", "Dzila'qons", "Jila kuns", "Eagle Ancestress"],
+      "transliterations": { "haida": "Djila'qons" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "rivers-and-creeks",
+        "contextTag": "lifelong",
+        "term": { "value": "Djila'qons", "script": "Latn", "rom": "Djila'qons" },
+        "sources": [{ "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition documentation." }]
+      },
+      {
+        "sphereId": "salmon-runs",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Contributions to the Ethnology of the Haida, AMNH Memoirs 8, 1905." }]
+      },
+      {
+        "sphereId": "lineage-and-ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Contributions to the Ethnology of the Haida, AMNH Memoirs 8, 1905." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_salmon_runs",
+        "name": "control the salmon runs from the heads of rivers",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As Creek Woman she dwells at the head of every river and creek and controls whether the salmon return.",
+        "sources": [{ "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition documentation." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Djila'qons, also called Creek Woman, is the ancestress of the Haida Eagle moiety; she lives at the heads of rivers and controls the salmon runs, and was the only being able to approach Foam Woman.",
+        "citations": [
+          { "kind": "secondary", "reference": "Swanton, John R. Contributions to the Ethnology of the Haida, AMNH Memoirs 8, 1905." },
+          { "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female; deity-class founding ancestress of the Eagle moiety and matron of fresh water and salmon. The prompt's 'Property Woman/Djila'qons' conflates two distinct figures: Property Woman (a forest wealth-spirit also known among the Tlingit) is separate from Djila'qons the Eagle ancestress; this entry covers Djila'qons. Portrait masks of Dzila'qons are a recognized Haida regalia subject."
+  },
+  {
+    "id": "haida_sgaana",
+    "name": {
+      "primary": "Killer Whale Beings",
+      "alt": ["Sǥ̲aana", "Sgaana", "Sea-Wolves", "Orca People"],
+      "transliterations": { "haida": "Sǥ̲aana", "haida_simplified": "Sgaana" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Haida",
+    "primaryTradition": "Haida",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "ocean-depths",
+        "contextTag": "lifelong",
+        "term": { "value": "Sǥ̲aana", "script": "Latn", "rom": "Sǥ̲aana" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Tsimshian Mythology, BAE Annual Report 31, 1916 (comparative Northwest Coast killer-whale beings); Swanton, Haida Texts and Myths, 1905." }]
+      },
+      {
+        "sphereId": "ancestral-reincarnation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition documentation." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_souls_beneath_the_sea",
+        "name": "carry the souls of the drowned into the undersea towns",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared",
+        "notes": "The Sǥ̲aana live in towns beneath the sea, are held to be reincarnations of deceased ancestors, and assist or take humans; capsized people may be drawn into their world.",
+        "sources": [{ "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition documentation." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Sǥ̲aana are supernatural killer-whale beings who live in undersea towns, are regarded as reincarnated ancestors, and both aid and endanger humans at sea.",
+        "citations": [
+          { "kind": "secondary", "reference": "Swanton, John R. Haida Texts and Myths, BAE Bulletin 29, 1905." },
+          { "kind": "secondary", "reference": "Haida Gwaii Museum, 'Haida Supernatural World' exhibition." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A class of orca spirit-beings rather than a single named individual, hence sex unknown; classed as deity per the schema's spirit-class guidance. Sgaana Jaad ('Killer Whale Woman') is an individuated form in some tellings. Cognate with Tlingit kéet and the wider Northwest Coast orca-people complex."
+  },
+  {
+    "id": "tlingit_raven",
+    "name": {
+      "primary": "Raven",
+      "alt": ["Yéil", "Yetl", "Naas Sháagi Yéil", "Raven at the Head of the Nass"],
+      "transliterations": { "tlingit": "Yéil", "tlingit_swanton": "Yetl" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-and-world-ordering",
+        "contextTag": "lifelong",
+        "term": { "value": "Yéil", "script": "Latn", "rom": "Yéil" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts. BAE Bulletin 39, 1909, Raven cycle." }]
+      },
+      {
+        "sphereId": "daylight-and-light",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, 'The Box of Daylight'." }]
+      },
+      {
+        "sphereId": "trickery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steal_the_box_of_daylight",
+        "name": "steal the box of daylight from the sky-chief",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Born as a grandson to Naas-sháki Yéil, the old man at the head of the Nass, Raven obtains the boxes holding the stars, moon, and sun, and releases the daylight by escaping through the smoke-hole crying 'Ga'.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, 'The Box of Daylight'." }]
+      },
+      {
+        "id": "steal_fresh_water_from_petrel",
+        "name": "steal the everlasting fresh water from Petrel",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Raven tricks Petrel (Ganook), who guards the only spring, drinks it all, and as he flies away dripping creates the rivers and streams of the world.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, Raven cycle." }]
+      },
+      {
+        "id": "make_the_first_people",
+        "name": "fashion the first people from rock and leaf",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "After the flood Raven tried to make human beings from a rock and from a leaf at the same time; the rock was slow and the leaf quick, which is why people die as readily as leaves fall.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Raven (Yéil) is the Tlingit creator-trickster and culture hero who released daylight, stole fresh water, and prepared the world for human life; Swanton recorded over forty Raven narratives from Sitka and Wrangell elders.",
+        "citations": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts. BAE Bulletin 39, 1909." }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Classed as a deity though the Tlingit treat Yéil as a culture-hero/trickster-demiurge; he names the Raven (Yéil) moiety. 'Raven's work' (Yéil yéi jineiyí) names the landscape features attributed to his deeds. Distinct from but cognate with Haida Yáahl and Kwakwaka'wakw U'melth."
+  },
+  {
+    "id": "tlingit_petrel",
+    "name": {
+      "primary": "Petrel",
+      "alt": ["Ganook", "Ganu'k", "Old Man Who Owns the Fresh Water"],
+      "transliterations": { "tlingit": "Ganook", "tlingit_swanton": "Ganu'k" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "fresh-water",
+        "contextTag": "lifelong",
+        "term": { "value": "Ganook", "script": "Latn", "rom": "Ganook" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, Raven cycle." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_everlasting_spring",
+        "name": "guard the world's only everlasting spring",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Before Raven's theft, Petrel alone owned fresh water, sleeping over a covered spring to keep it for himself until Raven tricked it away from him.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Petrel (Ganook) is the primordial owner and guardian of the only fresh water in the world until Raven steals it to create the rivers.",
+        "citations": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male deity-class being; a foil to Raven in the freshwater-origin myth. Sometimes treated as one of the senior beings of the first age. Recorded by Swanton at Sitka and Wrangell."
+  },
+  {
+    "id": "tlingit_khanukh",
+    "name": {
+      "primary": "Fog Master",
+      "alt": ["Khanukh", "Kanukh", "Kā'naqxᴀ", "Fog-over-the-Salmon"],
+      "transliterations": { "tlingit": "Khanukh", "tlingit_swanton": "Kā'naqᴀ" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "fog-and-mist",
+        "contextTag": "lifelong",
+        "term": { "value": "Khanukh", "script": "Latn", "rom": "Khanukh" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, Raven cycle." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_fog",
+        "name": "summon and command the fog",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Khanukh is the ancient owner of fog who matches his age and power against Raven; in their contest the two dispute which of them is the elder being.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Khanukh (Kanukh) is a primordial fog-being and rival of Raven, contending with him over which is the elder of the world's first beings.",
+        "citations": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." }],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Male; a deity-class being of the first age. Khanukh is also remembered as an ancestral name/crest of the Tlingit (the Kā'naqxᴀ.ádi). Swanton's orthography varies; the precise Tlingit form is reconstructed here as Khanukh. Attestation is thinner than for Raven, so weighted as supporting."
+  },
+  {
+    "id": "tlingit_thunderbird",
+    "name": {
+      "primary": "Thunderbird",
+      "alt": ["Xeitl", "Xetl", "Hethl"],
+      "transliterations": { "tlingit": "Xeitl", "tlingit_swanton": "Xetl" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tlingit",
+    "primaryTradition": "Tlingit",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-storm",
+        "contextTag": "lifelong",
+        "term": { "value": "Xeitl", "script": "Latn", "rom": "Xeitl" },
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, 'The Thunders' (Wrangell)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_thunder_with_wings",
+        "name": "make thunder by beating its wings",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The beat of the Thunderbird's wings is the thunder; in some Tlingit tellings the lightning is caused by a lightning-creature (the firedrake Kah-lit) associated with the bird. The Thunderbird preys on whales at sea.",
+        "sources": [{ "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909, 'The Thunders'." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Thunderbird (Xeitl) is a Tlingit thunder-being whose wingbeats produce thunder; it is a major lineage crest of southeastern Alaska (Thunderbird House, Xeitl Hít).",
+        "citations": [
+          { "kind": "secondary", "reference": "Swanton, John R. Tlingit Myths and Texts, BAE Bulletin 39, 1909." },
+          { "kind": "secondary", "reference": "Los Angeles County Museum of Art, acquisition note on the Thunderbird House (Xeitl Hít) screen, 2017." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male thunder-being, classed as deity. The prompt's 'Kah-lit' is, in Swanton's Wrangell texts, a lightning-creature/firedrake linked to the Thunder cycle; it is folded here into the Thunderbird's lightning faculty given its thin separate attestation rather than authored as its own figure."
+  },
+  {
+    "id": "kwakwakawakw_umelth",
+    "name": {
+      "primary": "Raven",
+      "alt": ["U'melth", "Uma"],
+      "transliterations": { "kwakwala": "U'melth" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kwakwaka'wakw",
+    "primaryTradition": "Kwakwaka'wakw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "light-and-fire",
+        "contextTag": "lifelong",
+        "term": { "value": "U'melth", "script": "Latn", "rom": "U'melth" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians. Columbia University Press, 1930; Boas, Kwakiutl Tales, 1910." }]
+      },
+      {
+        "sphereId": "tides-and-sea-bounty",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales. Columbia University Contributions to Anthropology 2, 1910." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_the_sun_and_moon",
+        "name": "bring the sun, moon, and fire to people",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "U'melth the Raven brought the Kwakwaka'wakw the moon, fire, salmon, the sun, and the tides.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "U'melth is the Kwakwaka'wakw Raven who brought people the moon, fire, salmon, the sun, and the tides.",
+        "citations": [
+          { "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." },
+          { "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Classed as a deity; a culture-hero/transformer cognate with Haida Yáahl and Tlingit Yéil. Boas's extensive Kwakwaka'wakw corpus is the principal documentation."
+  },
+  {
+    "id": "kwakwakawakw_thunderbird",
+    "name": {
+      "primary": "Thunderbird",
+      "alt": ["Kwankwanxwalige'", "Kunwits", "Kwanusila"],
+      "transliterations": { "kwakwala": "Kwaṉx̌walagᵊma", "kwakwala_anglicized": "Kwankwanxwalige'" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kwakwaka'wakw",
+    "primaryTradition": "Kwakwaka'wakw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Kwaṉx̌walagᵊma", "script": "Latn", "rom": "Kwaṉx̌walagᵊma" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      },
+      {
+        "sphereId": "winter-ceremonial-season",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, US National Museum Report, 1897." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "thunder_with_wingbeats",
+        "name": "cause thunder with its wingbeats and lightning with its eyes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A massive supernatural bird whose wing beats cause thunder and the flash of whose eyes causes lightning; it hunts whales out at sea.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      },
+      {
+        "id": "lift_house_beams",
+        "name": "set giant cedar house-beams in place for ancestors",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Thunderbird sometimes helped heroic ancestors build their houses by lifting and placing the giant cedar beams.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Thunderbird (Kwaṉx̌walagᵊma) is lord of the winter dance season, a giant bird whose wingbeats are thunder and whose eye-flash is lightning, and one of the three foremost Kwakwaka'wakw lineage crests.",
+        "citations": [
+          { "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." },
+          { "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, 1897." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male thunder-being and crest figure; deity-class. His seasonal adversary is Qaniqilak, the summer spirit often identified with the sea-god Komokwa. Anglicized forms include Kwankwanxwalige'; the Lekwungen/related crest pole figure 'Kwanusila' is a cognate."
+  },
+  {
+    "id": "kwakwakawakw_sisiutl",
+    "name": {
+      "primary": "Double-Headed Serpent",
+      "alt": ["Sisiutl", "Sisiyutl"],
+      "transliterations": { "kwakwala": "Sîsiuł", "kwakwala_anglicized": "Sisiutl" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kwakwaka'wakw",
+    "primaryTradition": "Kwakwaka'wakw",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "war-and-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "Sisiutl", "script": "Latn", "rom": "Sisiutl" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      },
+      {
+        "sphereId": "sea-serpents",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, 1897." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "turn_foes_to_stone",
+        "name": "turn an adversary to stone with its glance",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The double-headed sea-serpent's gaze petrifies anyone who looks upon it; its skin is impervious.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      },
+      {
+        "id": "become_a_war_canoe_or_belt",
+        "name": "transform into an invincible war canoe or protective belt",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared",
+        "notes": "Blessed ancestors receive Sisiutl's aid when it becomes an unsinkable self-paddling war canoe, or a war-belt that girds the wearer against all dangers; it is especially called upon by warriors.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, 1897." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sisiutl_war_belt",
+        "kind": "regalia",
+        "name": "Sisiutl protective war-belt",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "a belt-form the serpent takes that makes the wearer invulnerable in war",
+        "notes": "Sisiutl imagery is carved on war-related regalia, house-fronts, and dance gear; the serpent itself is said to become such a belt for blessed warriors.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, 1897." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sisiutl is the double-headed sea-serpent of the Kwakwaka'wakw whose glance petrifies and who grants warriors invulnerability by becoming a war canoe or belt; it is one of the three foremost lineage crests.",
+        "citations": [
+          { "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." },
+          { "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, 1897." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Serpent spirit-being, sex unspecified in sources; classed as deity. Described variously as two-headed (a head at each end with a central human face) or, in some accounts, three-headed. Associated with the war-spirit Winalagilis."
+  },
+  {
+    "id": "kwakwakawakw_dzunukwa",
+    "name": {
+      "primary": "Wild Woman of the Woods",
+      "alt": ["Dzunukwa", "Tsonoqua", "Dzonoqua"],
+      "transliterations": { "kwakwala": "Dzunukwa", "kwakwala_anglicized": "Tsonoqua" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kwakwaka'wakw",
+    "primaryTradition": "Kwakwaka'wakw",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "wealth-and-property",
+        "contextTag": "lifelong",
+        "term": { "value": "Dzunukwa", "script": "Latn", "rom": "Dzunukwa" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }]
+      },
+      {
+        "sphereId": "wilderness-and-ogres",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steal_children_in_a_basket",
+        "name": "carry off children in a basket on her back",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A giant sleepy ogress who steals children to carry home in her basket to eat; in tales children outwit and destroy her.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }]
+      },
+      {
+        "id": "bestow_wealth_and_chiefly_powers",
+        "name": "bestow wealth and chiefly prerogatives on those who overcome her",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared",
+        "notes": "Although feared, Dzunukwa is a bringer of wealth; an ancestor who kills or masters her may win her treasures and supernatural gifts, expressed in coppers and crests.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dzunukwa_carrying_basket",
+        "kind": "implement",
+        "name": "child-carrying burden basket",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the basket in which the ogress carries off captured children",
+        "notes": "A standard attribute in tellings and in Dzunukwa masks and feast-dishes.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dzunukwa is the Kwakwaka'wakw wild-woman ogress, feared as a child-stealing cannibal but also revered as a bringer of wealth; she is an ancestress of the Namgis through her son Tsilwalagame.",
+        "citations": [
+          { "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." },
+          { "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female; classed as a deity-level supernatural ancestress/ogress. One of the three foremost crests alongside Thunderbird and Sisiutl. Her booming cry 'hu, hu' and pursed-lip mask are iconic."
+  },
+  {
+    "id": "kwakwakawakw_bakwas",
+    "name": {
+      "primary": "Wild Man of the Woods",
+      "alt": ["Bakwas", "Bukwus", "King of the Ghosts"],
+      "transliterations": { "kwakwala": "Bakwas", "kwakwala_anglicized": "Bukwus" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kwakwaka'wakw",
+    "primaryTradition": "Kwakwaka'wakw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "ghosts-and-the-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "Bakwas", "script": "Latn", "rom": "Bakwas" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      },
+      {
+        "sphereId": "forests",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lure_the_living_to_the_dead",
+        "name": "lure the living into the world of the dead with ghost-food",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A small skeletal green spirit with a long curving nose who haunts the forest edge and tries to bring the living over to the world of the dead by offering them his (ghostly cockle) food.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Bakwas is the Kwakwaka'wakw king of the ghosts, a small emaciated green forest spirit who tries to draw the living into the realm of the dead.",
+        "citations": [
+          { "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." },
+          { "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male forest/death spirit; deity-class. Sometimes paired conceptually with Dzunukwa as the male wild-being of the woods. The masked Bukwus dance is part of the ceremonial repertoire."
+  },
+  {
+    "id": "kwakwakawakw_komokwa",
+    "name": {
+      "primary": "Undersea Chief",
+      "alt": ["Komokwa", "Kumugwe", "Qaniqilak"],
+      "transliterations": { "kwakwala": "Kumugwe", "kwakwala_anglicized": "Komokwa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kwakwaka'wakw",
+    "primaryTradition": "Kwakwaka'wakw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "tides-and-the-sea",
+        "contextTag": "lifelong",
+        "term": { "value": "Kumugwe", "script": "Latn", "rom": "Kumugwe" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      },
+      {
+        "sphereId": "wealth-of-the-sea",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_tides",
+        "name": "govern the tides from a copper house beneath the sea",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "God of the tides and maker of coppers; he dwells in a rich undersea house and bestows wealth and supernatural treasures on the families he blesses.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kwakwakawakw_copper",
+        "kind": "wealth-object",
+        "name": "ceremonial copper",
+        "term": { "value": "tła'qwa", "script": "Latn", "rom": "tła'qwa" },
+        "role": "the engraved shield-shaped copper plaque that Komokwa is said to fashion; supreme token of wealth and rank in the potlatch",
+        "notes": "Coppers are the highest-value Kwakwaka'wakw treasure, broken or given to display chiefly status; Komokwa is named their maker. Romanization of the Kwak'wala term for copper is approximate.",
+        "sources": [{ "kind": "secondary", "reference": "Boas, Franz. The Social Organization and the Secret Societies of the Kwakiutl Indians, 1897." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Komokwa (Kumugwe), the Undersea Chief, is god of the tides and maker of coppers who bestows wealth and supernatural treasures; he is often identified with Qaniqilak, the summer spirit and adversary of the Thunderbird.",
+        "citations": [
+          { "kind": "secondary", "reference": "Boas, Franz. The Religion of the Kwakiutl Indians, 1930." },
+          { "kind": "secondary", "reference": "Boas, Franz. Kwakiutl Tales, 1910." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male sea-deity. Identified with Qaniqilak, spirit of the summer season; counterpart and seasonal opponent of the winter-season Thunderbird. Cognate with the wider Northwest Coast undersea-chief figure."
+  },
+  {
+    "id": "taino_yucahu",
+    "name": {
+      "primary": "Cassava Lord",
+      "alt": ["Yúcahu", "Yúcahu Bagua Maórocoti", "Yocahu", "Giver of Cassava"],
+      "transliterations": { "taino": "Yúcahu", "taino_full": "Yúcahu Bagua Maórocoti" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["taino_atabey"],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "cassava-and-agriculture",
+        "contextTag": "lifelong",
+        "term": { "value": "Yúcahu", "script": "Latn", "rom": "Yúcahu" },
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 19." }]
+      },
+      {
+        "sphereId": "sea-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Bagua", "script": "Latn", "rom": "Bagua" },
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua: The Mythological World of the Taínos. University of New Mexico Press, 1988." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_cassava_to_people",
+        "name": "give cassava and make the crops grow",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As 'giver of cassava' Yúcahu makes the staple yuca crop flourish; farmers buried three-pointed zemi stones of him in their fields to bless the planting.",
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "taino_three_pointed_zemi",
+        "kind": "cult-object",
+        "name": "three-pointed stone zemi of Yúcahu",
+        "term": { "value": "cemí", "script": "Latn", "rom": "cemí" },
+        "role": "carved trigonolith embodying Yúcahu's power, buried in cassava fields to ensure the harvest",
+        "notes": "The three-pointed stone (trigonolith) is the classic Yúcahu zemi, its peak likened to a cassava mound or mountain; the spelling zemí/cemí denotes both the deity-power and its material image.",
+        "sources": [
+          { "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498." },
+          { "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yúcahu Bagua Maórocoti is the supreme Taíno deity, the immortal masculine spirit of cassava and the sea, who has a mother but no male begetter and is the principal zemi.",
+        "citations": [
+          { "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498." },
+          { "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua: The Mythological World of the Taínos, 1988." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male supreme deity. His name parses roughly as 'spirit of cassava (yuca) and of the sea (bagua), without male progenitor'. His mother is Atabey; he is sometimes said to live atop the highest mountain. The zemi (cassava-bringing) cult objects belong in materialCulture, not as figures."
+  },
+  {
+    "id": "taino_atabey",
+    "name": {
+      "primary": "Mother of Waters",
+      "alt": ["Atabey", "Atabeira", "Iermao", "Guacar", "Apito", "Zuimaco"],
+      "transliterations": { "taino": "Atabey", "taino_alt": "Atabeira" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "fresh-water-and-rivers",
+        "contextTag": "lifelong",
+        "term": { "value": "Atabey", "script": "Latn", "rom": "Atabey" },
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 19." }]
+      },
+      {
+        "sphereId": "fertility-and-childbirth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_and_renew_life",
+        "name": "bring forth life and the flow of fresh water",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As mother goddess she governs fertility, childbirth, and the rivers and fresh waters that sustain the living.",
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Atabey is the Taíno mother goddess of fresh water, fertility, and childbirth, mother of the supreme deity Yúcahu, and is known by the epithets Atabeira, Yermao, Guacar, Apito, and Zuimaco.",
+        "citations": [
+          { "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498." },
+          { "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female primordial mother goddess, parthenogenetic mother of Yúcahu. Her violent storm-aspect is the goddess Guabancex. Recorded by Pané, the friar Columbus charged with documenting Taíno belief in 1498."
+  },
+  {
+    "id": "taino_guabancex",
+    "name": {
+      "primary": "Storm Lady",
+      "alt": ["Guabancex", "Lady of the Winds"],
+      "transliterations": { "taino": "Guabancex" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "hurricanes-and-storms",
+        "contextTag": "lifelong",
+        "term": { "value": "Guabancex", "script": "Latn", "rom": "Guabancex" },
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 23." }]
+      },
+      {
+        "sphereId": "earthquakes-and-floods",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_the_hurricane",
+        "name": "raise hurricanes, floods, and earthquakes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "When angered she sends the great storms; she commands two heralds, Guataubá who makes the hurricane winds and thunder, and Coatrisquie who looses the floodwaters.",
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "taino_guabancex_zemi",
+        "kind": "cult-object",
+        "name": "spiral-armed zemi of Guabancex",
+        "term": { "value": "cemí", "script": "Latn", "rom": "cemí" },
+        "role": "effigy depicting the goddess with whirling spiral arms, the visual sign of the cyclone",
+        "notes": "Guabancex is iconographically rendered as a head with two cyclonically spiralling arms; this 'hurricane' motif survives on ceramics and petroglyphs.",
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Guabancex is the Taíno goddess of hurricanes, storms, floods, and earthquakes, a furious aspect of the mother goddess, served by the herald Guataubá (winds/thunder) and Coatrisquie (floods).",
+        "citations": [
+          { "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498." },
+          { "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female storm deity. The Taíno word 'juracán' (hurricane) — root of English 'hurricane' — is the storm itself rather than a separate god; popular sources sometimes wrongly personify Juracán as a deity, so it is recorded here as a phenomenon, not a figure."
+  },
+  {
+    "id": "taino_maquetaurie_guayaba",
+    "name": {
+      "primary": "Lord of the Dead",
+      "alt": ["Maquetaurie Guayaba", "Maketaori Guayaba", "Lord of Coaybay"],
+      "transliterations": { "taino": "Maquetaurie Guayaba" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "Maquetaurie Guayaba", "script": "Latn", "rom": "Maquetaurie Guayaba" },
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 12." }]
+      },
+      {
+        "sphereId": "guava-and-the-night",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_land_of_the_dead",
+        "name": "rule and keep watch over the land of the dead",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "He governs Coaybay, the dwelling of the dead in the region of Soraya, keeping the balance between the world of the living (day, order) and the dead (night, chaos); by day the dead shut away, by night they roam and feed on guavas.",
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 12." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Maquetaurie Guayaba is the Taíno lord of the dead and master of Coaybay, the underworld whose dead emerge at night as bat-shaped opías to eat guavas.",
+        "citations": [
+          { "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 12." },
+          { "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male death-deity; his name links him to the guava (guayaba), the food of the dead. Coaybay, his realm, is guarded by the dog-zemi Opiyelguabirán who chases back escaping souls. Recorded by Pané (chs. 12-13)."
+  },
+  {
+    "id": "taino_boinayel",
+    "name": {
+      "primary": "Rain Bringer",
+      "alt": ["Boinayel", "Boinael"],
+      "transliterations": { "taino": "Boinayel" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Boinayel", "script": "Latn", "rom": "Boinayel" },
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 25." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_the_rains",
+        "name": "weep the rains down onto the fields",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared",
+        "notes": "Boinayel is the bringer of rain; when drought came the Taíno visited his and his twin's zemis in a cave and prayed for rain. His twin Márohu brings clear skies and sun.",
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 25." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "taino_rain_zemi_boinayel",
+        "kind": "cult-object",
+        "name": "weeping rain-zemi of Boinayel",
+        "term": { "value": "cemí", "script": "Latn", "rom": "cemí" },
+        "role": "cave-kept stone effigy, kept beside his twin's, visited and invoked to break drought",
+        "notes": "Pané records that the Taíno valued these zemis highly and went to the cave to make it rain; Boinayel's image is sometimes shown with tear-like markings denoting rain.",
+        "sources": [{ "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 25." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Boinayel is the Taíno rain-bringing zemi, twin of the clear-sky spirit Márohu, both born of the serpent-mother Iguanaboina, and kept as cave-zemis invoked against drought.",
+        "citations": [
+          { "kind": "primary", "reference": "Pané, Ramón. Relación acerca de las antigüedades de los indios, c. 1498, ch. 25." },
+          { "kind": "secondary", "reference": "Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male weather-deity/zemi. His twin Márohu (bringer of cloudless skies and sun) is the complementary figure; their mother is Iguanaboina, the grey serpent of the rains. Documented directly by Pané."
+  },
+  {
+    "id": "selknam_temaukel",
+    "name": {
+      "primary": "Supreme Being",
+      "alt": ["Temáukel", "Témaukel", "The One Above"],
+      "transliterations": { "selknam": "Temáukel" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "supreme-creator-being",
+        "contextTag": "lifelong",
+        "term": { "value": "Temáukel", "script": "Latn", "rom": "Temáukel" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam. Mödling, 1931." }]
+      },
+      {
+        "sphereId": "moral-order",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society: The Selk'nam of Tierra del Fuego. Cambridge University Press, 1982." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "uphold_the_moral_order",
+        "name": "uphold the moral order from beyond the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Existing before the world and people, omnipresent, bodiless, and remote, Temáukel sustains the cosmos and the rules of right conduct but delegated the work of creation to Kénos.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Temáukel is the Selk'nam (and Haush) supreme being, a sky-dwelling creator who existed before the world, is incorporeal and distant, and is the only figure they regard as a true god.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." },
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society: The Selk'nam of Tierra del Fuego, 1982." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male supreme being, deity-class. His name was rarely spoken; he was addressed indirectly. Documented by the missionary-ethnographer Martin Gusinde and later by Anne Chapman, who recorded the last Selk'nam chants from Lola Kiepja."
+  },
+  {
+    "id": "selknam_kenos",
+    "name": {
+      "primary": "First Ancestor",
+      "alt": ["Kénos", "Quénos", "Kenós"],
+      "transliterations": { "selknam": "Kénos" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-and-civilizing",
+        "contextTag": "lifelong",
+        "term": { "value": "Kénos", "script": "Latn", "rom": "Kénos" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      },
+      {
+        "sphereId": "ancestry-and-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_the_first_ancestors",
+        "name": "mould the first ancestors from marsh earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Sent by Temáukel, Kénos squeezed water from swamp sod to form the first male and female genitalia, which united in the night to bring forth the first Selk'nam.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      },
+      {
+        "id": "raise_the_sky",
+        "name": "lift up the sky to make room for the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Kénos raised the heavens so trees could grow and ordered the land, all in a single day, ending the work exhausted by evening.",
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kénos is the first howenh (ancestral being) and chief culture-hero of the Selk'nam, sent by Temáukel to organize the world and bring forth the first people; he is the most important figure after the supreme being.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." },
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male first ancestor and culture-hero; classed as demigod (a howenh, an ancestral being of the first age, ranking below the sole god Temáukel). The howenh later transformed into the sun, moon, winds, animals, and landscape features. Foregrounded as a culture-hero per the brief."
+  },
+  {
+    "id": "selknam_kwanyip",
+    "name": {
+      "primary": "Southern Hero",
+      "alt": ["Kwányip", "Kuanyip", "Kwanyíp"],
+      "transliterations": { "selknam": "Kwányip" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "death-and-mortality",
+        "contextTag": "lifelong",
+        "term": { "value": "Kwányip", "script": "Latn", "rom": "Kwányip" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      },
+      {
+        "sphereId": "culture-heroism",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fix_death_among_people",
+        "name": "make death permanent among people",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A powerful howenh of the south associated with the loss of immortality: in the myth the dead can no longer be revived, fixing mortality for the Selk'nam.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kwányip is a major Selk'nam howenh and culture-hero of the south, central to the myth-cycle that explains the permanence of death.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." },
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Male ancestral hero (howenh); classed as demigod. One of the most important first-age beings alongside Kénos and the shaman-ancestor Čénuke. Documented by Gusinde and Chapman."
+  },
+  {
+    "id": "selknam_kran",
+    "name": {
+      "primary": "Sun",
+      "alt": ["Krren", "Kran", "Kren"],
+      "transliterations": { "selknam": "Kren", "selknam_variant": "Kran" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "sun-and-daylight",
+        "contextTag": "lifelong",
+        "term": { "value": "Kren", "script": "Latn", "rom": "Kren" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "overthrow_the_women",
+        "name": "lead the men's overthrow of the women's rule",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Once a howenh and husband of the moon, the Sun-man discovered that the women were deceiving the men with masked spirits in their secret lodge; he led the men who overthrew the matriarchy, after which the men took over the Hain.",
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kren, the Sun, is a former Selk'nam howenh who rose into the sky; he is the husband of the Moon (Kreeh) and the figure who exposed and overthrew the women's secret society in the founding myth of the Hain.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." },
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male solar being; classed as demigod (a howenh transformed into the sun). Spelled Kren by Gusinde, Kran in the brief's orthography; both recorded here. Husband of the Moon-woman; the pair anchor the Hain origin myth."
+  },
+  {
+    "id": "selknam_kreeh",
+    "name": {
+      "primary": "Moon",
+      "alt": ["Kreeh", "Kra", "Kre"],
+      "transliterations": { "selknam": "Kre", "selknam_variant": "Kra" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "Kre", "script": "Latn", "rom": "Kre" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }]
+      },
+      {
+        "sphereId": "womens-power",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead_the_womens_lodge",
+        "name": "lead the women's secret lodge that ruled the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As the Moon-woman she headed the women's rule and their secret masked society; when the men rebelled she fled into the sky, and the marks of the men's burning brands are the shadows on her face.",
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kreeh, the Moon, is a former Selk'nam howenh and the powerful sorceress-woman who led the women's rule before the men overthrew it; the dark marks on the moon are the scars of that rebellion.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." },
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female lunar being; classed as demigod (a howenh transformed into the moon). Wife of the Sun (Kren). Spelled Kre/Kra by Gusinde, Kreeh in the brief; both recorded. She is the mythic origin and patroness of the women in the Hain narrative."
+  },
+  {
+    "id": "selknam_xalpen",
+    "name": {
+      "primary": "Underworld Hag",
+      "alt": ["Xalpen", "Xálpen", "Halpen"],
+      "transliterations": { "selknam": "Xalpen" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "Xalpen", "script": "Latn", "rom": "Xalpen" },
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society: The Selk'nam of Tierra del Fuego, 1982." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "devour_the_initiates",
+        "name": "devour and then restore the Hain initiates",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A voracious half-flesh, half-rock female being of the underworld who, in the Hain drama, kills the male initiates (klóketen) and is later compelled to bring them back to life; the most terrifying of the Hain spirits.",
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Xalpen is the dreaded female underworld spirit of the Selk'nam Hain initiation, half flesh and half rock and man-eating, wife of the spirit Shoort.",
+        "citations": [
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society, 1982." },
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam, 1931." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female Hain spirit; classed as deity (spirit-class) per schema guidance. Unlike the other Hain spirits, who were impersonated by masked men, Xalpen was never embodied by a performer but represented offstage. Her husband is Shoort; the grotesque-comic Halahaches is another Hain spirit. Documented by Gusinde and Chapman."
+  },
+  {
+    "id": "yamana_watauinewa",
+    "name": {
+      "primary": "Supreme Being",
+      "alt": ["Watauinéwa", "Watauinewa", "Watauineiwa", "The Most Ancient One"],
+      "transliterations": { "yamana": "Watauinéwa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "supreme-creator-being",
+        "contextTag": "lifelong",
+        "term": { "value": "Watauinéwa", "script": "Latn", "rom": "Watauinéwa" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana. Mödling, 1937." }]
+      },
+      {
+        "sphereId": "life-and-death",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_and_take_life",
+        "name": "give life and take it away",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Owner of all that exists and master of the whole spirit world; he gives and takes life and provides the plants and animals, dwelling unseen in the heavens. The Yámana prayed to him directly with thanks and pleas for protection.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Watauinéwa is the Yámana (Yaghan) supreme being, the unseen ever-present owner of all things and master of the spirit world who gives and takes life; the people's moral code expresses his will.",
+        "citations": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male supreme being, deity-class. Not represented by any idol; known only through oral tradition and prayer. The principal documentation is Martin Gusinde's monograph on the Yamana (1937), based on fieldwork 1918-1924."
+  },
+  {
+    "id": "yamana_yoalox_brothers",
+    "name": {
+      "primary": "Yoálox Brothers",
+      "alt": ["Yoálox", "Yoalox-brothers", "Yoálox-tárnuxipa (their sister)"],
+      "transliterations": { "yamana": "Yoálox" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-primordial" },
+    "domains": [
+      {
+        "sphereId": "culture-heroism-and-crafts",
+        "contextTag": "lifelong",
+        "term": { "value": "Yoálox", "script": "Latn", "rom": "Yoálox" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      },
+      {
+        "sphereId": "law-and-custom",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "teach_the_hunting_arts",
+        "name": "invent and teach the hunting and fishing arts",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared",
+        "notes": "The Yoálox brothers invented weapons and tools and taught the Yámana how to take whales, sea lions, otters, and foxes, and how to prepare and use the meat.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      },
+      {
+        "id": "establish_opposing_laws",
+        "name": "lay down opposing laws and customs",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared",
+        "notes": "The dualistic brothers sometimes stand in antagonism, each introducing opposite rules; the younger was held the superior, and their clever sister was Yoálox-tárnuxipa.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yamana_harpoon",
+        "kind": "weapon",
+        "name": "hunting harpoon and tools",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the weapons and implements the Yoálox brothers are said to have invented and taught",
+        "notes": "Their gift of weapons and tools underlies the Yámana sea-hunting toolkit (harpoons, lines, baskets); specific native terms for each were not recovered in the consulted sources.",
+        "sources": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Yoálox brothers are the dualistic culture-heroes of the Yámana, who invented weapons and tools, taught the people to hunt sea mammals, and established (sometimes opposing) laws and customs.",
+        "citations": [{ "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A pair of male culture-hero brothers (with a clever sister, Yoálox-tárnuxipa); classed as demigod and treated as a single composite entry given they act as a dyad. Vital status 'deceased' reflects that, as first-age beings, their active mythic era has passed. Foregrounded as culture-heroes per the brief. Documented by Gusinde."
+  }
+]
+```
+
+## Summary
+
+I authored **28 figures** across the six absent traditions, balanced as: Haida (5), Tlingit (4), Kwakwaka'wakw (6), Taíno (5), Selk'nam (6), Yámana (2). All validated as syntactically correct JSON with every schema rule passing (legal `type` values only — deity/demigod; no forbidden modern-coinage substrings; `id`/`name` keys in materialCulture, never `item`; per-claim citations on every domain, faculty, materialCulture entry, and figure; snake_case IDs collision-checked against `existing-ids.json`).
+
+Key authorial decisions, all flagged in `notes`:
+- **Culture-heroes foregrounded** as required: the three cognate Ravens (Haida Yáahl, Tlingit Yéil, Kwakwaka'wakw U'melth), Kénos, Kwányip, the Yoálox brothers, and Master Carpenter — each carrying their attested deeds (releasing the sun, clamshell/rock-and-leaf humans, stealing fresh water) and gear (canoe, harpoon kit).
+- **Names lead in English**, with the attested native term in `term` (correct script/rom) and glosses in notes; `term.value` is `""` wherever no native form was recoverable in the consulted scholarship (e.g., Foam Woman, several faculties) rather than inventing one.
+- **Zemi handled as objects**, not figures — placed in materialCulture for Yúcahu (three-pointed trigonolith), Guabancex (spiral-armed), and Boinayel (weeping rain-zemi); coppers in Komokwa's materialCulture.
+- **Corrections to the brief's framing**, documented in notes: Foam Woman is the **Raven**-moiety ancestress while Djila'qons/Creek Woman is the **Eagle**-moiety ancestress (the prompt's "Property Woman/Djila'qons" conflates two distinct beings); **Juracán** is the Taíno word for "hurricane," recorded as a phenomenon (not personified as a figure); thinly-attested **Kah-lit** folded into the Tlingit Thunderbird's lightning faculty rather than over-asserted as its own figure; Selk'nam sun/moon recorded with both Gusinde's orthography (Kren/Kre) and the brief's (Kran/Kreeh).
+- **Citations anchored to primary + reputable secondary scholarship**: Ramón Pané (c. 1498) for Taíno; Swanton (BAE Bulletins 29 & 39, 1905/1909) for Haida and Tlingit; Boas (1897/1910/1930) for Kwakwaka'wakw; Gusinde (1931/1937) and Anne Chapman (1982) for the Fuegians; plus Bringhurst/Reid and the Haida Gwaii Museum for Haida.
+
+A scratch copy is at `/tmp/myth/figures.json` (outside the repo). No repository files were modified.
+
+Note on method: WebFetch returned HTTP 403 for every URL in this environment, so all research was conducted via WebSearch, whose extracted-content summaries were detailed enough to cross-verify figures, names, and deeds across multiple independent sources per tradition. Where a specific native term or detail could not be confirmed, I left the term empty and noted the gap rather than fabricating.
+
+result: Authored and validated 28 comparative-mythology figures (Haida 5, Tlingit 4, Kwakwaka'wakw 6, Taíno 5, Selk'nam 6, Yámana 2) as a schema-conformant JSON array with real Pané/Swanton/Boas/Gusinde/Chapman citations, culture-heroes foregrounded, zemi as objects, and no repo files changed.
