@@ -27,7 +27,7 @@ const store = new Map();
 const ctx = { window: { dispatchEvent: () => true }, localStorage: { getItem: (k) => store.has(k) ? store.get(k) : null, setItem: (k, v) => store.set(k, String(v)), removeItem: (k) => store.delete(k) }, console: { log() {}, warn() {}, error() {}, info() {} }, CustomEvent: class { constructor(t, o) { Object.assign(this, { type: t }, o || {}); } } };
 ctx.globalThis = ctx; vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(path.join(ROOT, 'app', 'data.js'), 'utf8'), ctx, { filename: 'data.js' });
-const people = JSON.parse(ctx.localStorage.getItem('pantheon_registry_v8'));
+const people = JSON.parse(ctx.localStorage.getItem('pantheon_registry_v9'));
 
 // Seeded shuffle of all ids, then take N.
 const rnd = mulberry32(seedFrom(SEED_STR));

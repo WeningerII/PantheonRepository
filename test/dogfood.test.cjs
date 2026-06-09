@@ -14,7 +14,7 @@ before(async () => {
   // Prefer the persisted seed, but fall back to the in-memory seed the app
   // exposes on window.__PR — the corpus now exceeds the browser/jsdom
   // localStorage cap, so the persist is intentionally skipped (see state.jsx).
-  const raw = app.window.localStorage.getItem('pantheon_registry_v8');
+  const raw = app.window.localStorage.getItem('pantheon_registry_v9');
   people = raw ? JSON.parse(raw) : (app.window.__PR && app.window.__PR.seedPeople) || {};
 });
 

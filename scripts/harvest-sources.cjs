@@ -110,7 +110,7 @@ const store = new Map();
 const ctx = { window: { dispatchEvent: () => true }, localStorage: { getItem: (k) => store.has(k) ? store.get(k) : null, setItem: (k, v) => store.set(k, String(v)), removeItem: (k) => store.delete(k) }, console: { log() {}, warn() {}, error() {}, info() {} }, CustomEvent: class { constructor(t, o) { Object.assign(this, { type: t }, o || {}); } } };
 ctx.globalThis = ctx; vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(DATA, 'utf8'), ctx, { filename: 'data.js' });
-const people = JSON.parse(ctx.localStorage.getItem('pantheon_registry_v8'));
+const people = JSON.parse(ctx.localStorage.getItem('pantheon_registry_v9'));
 const dataSrc = fs.readFileSync(DATA, 'utf8');
 const nfBlock = dataSrc.match(/NEW_FIGURES_START \*\/[\s\S]*?\/\* NEW_FIGURES_END/)[0];
 const nfArr = JSON.parse(nfBlock.replace(/^NEW_FIGURES_START \*\/\s*const NEW_FIGURES =/, '').replace(/;\s*\/\* NEW_FIGURES_END$/, ''));

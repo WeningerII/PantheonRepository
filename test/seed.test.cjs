@@ -33,7 +33,7 @@ function loadSeed() {
   return {
     ctx,
     logs,
-    people: JSON.parse(ctx.localStorage.getItem('pantheon_registry_v8')),
+    people: JSON.parse(ctx.localStorage.getItem('pantheon_registry_v9')),
     atlas: JSON.parse(ctx.localStorage.getItem('pantheon_atlas_v2')),
   };
 }

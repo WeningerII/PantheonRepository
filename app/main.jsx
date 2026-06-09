@@ -55,7 +55,7 @@ class ErrorBoundary extends React.Component {
     // for the boot label so it's specific instead of a generic "ready".
     let figureCount = null;
     try {
-      const raw = localStorage.getItem('pantheon_registry_v8');
+      const raw = localStorage.getItem('pantheon_registry_v9');
       if (raw) {
         const data = JSON.parse(raw);
         if (typeof data === 'object' && !Array.isArray(data)) {

@@ -26,7 +26,7 @@ function loadPeople() {
   ctx.globalThis = ctx;
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(DATA, 'utf8'), ctx, { filename: 'data.js' });
-  return JSON.parse(ctx.localStorage.getItem('pantheon_registry_v8'));
+  return JSON.parse(ctx.localStorage.getItem('pantheon_registry_v9'));
 }
 
 const people = loadPeople();

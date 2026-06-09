@@ -5,7 +5,7 @@
 
 const { useState, useEffect, useMemo, useCallback, useRef } = React;
 
-const PEOPLE_KEY = 'pantheon_registry_v8';
+const PEOPLE_KEY = 'pantheon_registry_v9';
 const ATLAS_KEY  = 'pantheon_atlas_v2';
 
 // Type-tier metadata. The five tiers form an ordinal scale of divinity:
@@ -178,7 +178,7 @@ function hasSeededPeople() {
     return !!(mem && Object.keys(mem).length > 0);
   };
   try {
-    const raw = localStorage.getItem('pantheon_registry_v8');
+    const raw = localStorage.getItem('pantheon_registry_v9');
     if (!raw) return memSeeded();
     const data = JSON.parse(raw);
     if (!data) return memSeeded();

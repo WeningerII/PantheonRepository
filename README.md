@@ -1,7 +1,7 @@
 # Pantheon Registry
 
-A multi-tradition registry of mythological and historical figures — **601 entries
-across 50 traditions**, presented as a single-page app you can browse, search,
+A multi-tradition registry of mythological and historical figures — **1,845 entries
+across 232 traditions**, presented as a single-page app you can browse, search,
 graph, and map.
 
 The whole thing runs from static files with React loaded over a CDN. There is no
@@ -56,7 +56,7 @@ npm test      # node --test
 ```
 
 `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
-corpus (601 figures, 56 territories, the `window.__PR` surface, no hard-schema
+corpus (1,845 figures, 56 territories, the `window.__PR` surface, no hard-schema
 violations). `test/render.test.cjs` boots the whole app in jsdom and exercises the
 views, keyboard shortcuts, and the detail panel — including a regression test for
 the Lifecycle column layout. `.github/workflows/ci.yml` runs the build and the
@@ -89,7 +89,7 @@ dist/
 
 - **Data layer.** `app/data.js` is plain, IIFE-wrapped JavaScript (no JSX, no
   React). On load it builds the seed data and writes it to `localStorage`
-  (`pantheon_registry_v8` for figures, `pantheon_atlas_v2` for territories),
+  (`pantheon_registry_v9` for figures, `pantheon_atlas_v2` for territories),
   seeding only when storage is empty so user edits are preserved. The UI reads
   from the same keys, so the seed is shared across views.
 - **Views.** Figures are organized along three preattentive axes — **type tier**
