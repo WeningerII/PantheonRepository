@@ -18,7 +18,7 @@ describe('app renders in a browser-like environment', () => {
     // The corpus is deliberately expanding as missing central figures are added;
     // assert a floor rather than an exact count (mirrors seed.test.cjs).
     const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
-    assert.ok(rows.length >= 602, `expected >= 602 rows, got ${rows.length}`);
+    assert.ok(rows.length >= 1850, `expected >= 1850 rows, got ${rows.length}`);
   });
 
   test('"/" focuses the search box', async () => {
@@ -140,7 +140,7 @@ describe('app renders in a browser-like environment', () => {
     await app.clickButton('Items');
     const view = app.document.querySelector('.items-view');
     assert.ok(view, 'Items view did not mount');
-    assert.ok(view.querySelectorAll('.item-row').length > 30, 'expected the object corpus in the index');
+    assert.ok(view.querySelectorAll('.item-row').length >= 1240, 'expected the object corpus in the index');
     assert.ok(view.querySelector('.items-group'), 'expected kind groupings');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });

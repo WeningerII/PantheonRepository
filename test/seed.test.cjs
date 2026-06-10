@@ -43,7 +43,7 @@ const { ctx, logs, people, atlas } = loadSeed();
 test('seeds the full figure corpus (growing)', () => {
   // The corpus is deliberately expanding as missing central figures are added;
   // assert a floor rather than an exact count.
-  assert.ok(Object.keys(people).length >= 602, `expected >= 602 figures, got ${Object.keys(people).length}`);
+  assert.ok(Object.keys(people).length >= 1850, `expected >= 1850 figures, got ${Object.keys(people).length}`);
 });
 
 test('seeds 56 atlas territories', () => {
@@ -79,10 +79,12 @@ test('warn-level integrity drift stays at its accepted ceilings', () => {
   const all = logs.warn.join('\n');
   const num = (re) => { const m = all.match(re); return m ? parseInt(m[1], 10) : 0; };
   // Ceilings pin the KNOWN drift so it can only shrink deliberately — these
-  // counts could previously grow 100x without any test moving. The pending
-  // backfill wave drives the first three to 0; ratchet them down with it.
-  const danglingCeiling = 3;   // kibuka/mukasa→wanema, kumarbi→alalu (figures pending)
-  const unknownItemCeiling = 4; // erinyes/tyche/narasimha/varaha ITEMS_GEN keys (figures pending)
+  // counts could previously grow 100x without any test moving. Wanema/Alalu
+  // and the four ITEMS_GEN figures are authored now, so those two ceilings
+  // are hard zeros; the era-gap ceiling ratchets to 0 with the wave-6
+  // tradition-constants backfill.
+  const danglingCeiling = 0;
+  const unknownItemCeiling = 0;
   const eraGapCeiling = 1200;  // unmapped-tradition era values (constants backfill pending)
   assert.ok(num(/(\d+) dangling references/) <= danglingCeiling,
     `dangling references grew past ${danglingCeiling}:\n${all.split('\n').filter((l) => /dangling/.test(l)).join('\n')}`);
@@ -163,7 +165,7 @@ test('seeds the cited Thor figure with Mjǫllnir in his material culture', () =>
 test('exposes the item registry on window.__PR.items', () => {
   const items = ctx.window.__PR.items;
   assert.ok(items && typeof items === 'object', '__PR.items not exposed');
-  assert.ok(Object.keys(items).length > 30, `expected the full object corpus, got ${Object.keys(items).length}`);
+  assert.ok(Object.keys(items).length >= 1240, `expected the full object corpus, got ${Object.keys(items).length}`);
   // Every materialCulture object becomes an item with at least one holder.
   for (const it of Object.values(items)) {
     assert.strictEqual(typeof it.id, 'string', 'item missing id');
@@ -186,7 +188,7 @@ test('Mjǫllnir carries its multi-script names (incl. the runic form) and maker'
 test('every item in the registry carries cited lore and resolvable custody', () => {
   const items = ctx.window.__PR.items;
   const ids = Object.keys(items);
-  assert.ok(ids.length >= 78, `expected the full object corpus, got ${ids.length}`);
+  assert.ok(ids.length >= 1240, `expected the full object corpus, got ${ids.length}`);
   for (const it of Object.values(items)) {
     assert.ok(it.lore && it.lore.length > 20, `item ${it.id} is missing authored lore`);
     assert.ok(it.names.length >= 1 && it.names[0].value, `item ${it.id} is missing a name`);
