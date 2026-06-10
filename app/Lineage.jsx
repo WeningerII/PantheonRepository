@@ -37,22 +37,10 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
     frontier = next;
   }
 
-  // Siblings (share at least one parent with focus, not the focus itself)
-  const focusParents = new Set(entry.parentIds || []);
-  const sibSet = new Set();
-  for (const pid of focusParents) {
-    for (const cid of (childrenOf.get(pid) || [])) {
-      if (cid !== focusId && byId.has(cid)) sibSet.add(cid);
-    }
-  }
-  const siblings = [...sibSet];
-
-  // Focus row — half siblings left, focus center, rest right
-  const halfL = siblings.slice(0, Math.floor(siblings.length / 2));
-  const halfR = siblings.slice(Math.floor(siblings.length / 2));
-  const focusRow = [...halfL, focusId, ...halfR];
-
-  // Descendants (top→down)
+  // Descendants (top→down). Skip anything already placed as an ancestor —
+  // with incestuous genealogies (Gaia–Uranus) one figure can qualify for
+  // several roles, and a duplicate placement means duplicate React keys and
+  // a last-wins node map that silently drops connectors.
   let downFrontier = [focusId];
   const descRows = [];
   const seenDown = new Set([focusId]);
@@ -60,7 +48,7 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
     const next = [];
     for (const id of downFrontier) {
       for (const cid of (childrenOf.get(id) || [])) {
-        if (!next.includes(cid) && byId.has(cid) && !seenDown.has(cid)) {
+        if (!next.includes(cid) && byId.has(cid) && !seenDown.has(cid) && !seen.has(cid)) {
           next.push(cid);
           seenDown.add(cid);
         }
@@ -70,6 +58,24 @@ function buildLineageTree(entry, byId, childrenOf, upDepth, downDepth) {
     descRows.push(next);
     downFrontier = next;
   }
+
+  // Siblings (share at least one parent with focus, not the focus itself).
+  // A sibling already placed as an ancestor (Uranus beside Cronus: brother
+  // via Gaia AND father) or as a descendant keeps that placement — the rows
+  // above/below are where its parent connectors actually render.
+  const focusParents = new Set(entry.parentIds || []);
+  const sibSet = new Set();
+  for (const pid of focusParents) {
+    for (const cid of (childrenOf.get(pid) || [])) {
+      if (cid !== focusId && byId.has(cid) && !seen.has(cid) && !seenDown.has(cid)) sibSet.add(cid);
+    }
+  }
+  const siblings = [...sibSet];
+
+  // Focus row — half siblings left, focus center, rest right
+  const halfL = siblings.slice(0, Math.floor(siblings.length / 2));
+  const halfR = siblings.slice(Math.floor(siblings.length / 2));
+  const focusRow = [...halfL, focusId, ...halfR];
 
   return {
     rows: [...ancestorRows, focusRow, ...descRows],

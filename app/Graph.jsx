@@ -177,58 +177,62 @@ const linkStrength = l => l.family === 'Cross-tradition' ? 0.35 : 0.55;
 // React-driven re-renders still happen for state changes (hover, focus,
 // path mode) — those read the mutated `n.x` / `n.y` at render time, so
 // the imperative path and the React path see the same numbers.
+// Seed positions BEFORE the simulation (or React) sees the nodes. Mutates
+// graph.nodes in place — fine, the nodes array is created fresh per
+// buildGraph call. Called from a render-time useMemo, NOT a passive effect:
+// an effect runs after the commit paints, so every rebuild (slider step,
+// focus click, mode switch) would flash one frame with all nodes collapsed
+// at translate(0,0) before the first tick corrects the DOM.
+function seedPositions(graph, width, height, positionsRef) {
+  if (!graph.nodes.length || !width || !height) return;
+  const cx = width / 2, cy = height / 2;
+  const cache = positionsRef.current;
+
+  // Phase 1: restore cached positions for retained nodes
+  for (const n of graph.nodes) {
+    const prev = cache.get(n.id);
+    if (prev && Number.isFinite(prev.x) && Number.isFinite(prev.y)) {
+      n.x = prev.x; n.y = prev.y;
+      n.vx = prev.vx || 0; n.vy = prev.vy || 0;
+    }
+  }
+
+  // Phase 2: place newcomers near a connected neighbor that already has
+  // a cached position. Fall back to a small ring near center.
+  const idIdx = new Map(graph.nodes.map((n, i) => [n.id, i]));
+  for (const n of graph.nodes) {
+    if (n.x != null) continue;
+    let seeded = false;
+    for (const l of graph.links) {
+      const sId = typeof l.source === 'string' ? l.source : l.source.id;
+      const tId = typeof l.target === 'string' ? l.target : l.target.id;
+      const otherId = sId === n.id ? tId : (tId === n.id ? sId : null);
+      if (!otherId) continue;
+      const otherPos = cache.get(otherId)
+        || (() => {
+          const idx = idIdx.get(otherId);
+          const o = idx != null ? graph.nodes[idx] : null;
+          return (o && Number.isFinite(o.x)) ? { x: o.x, y: o.y } : null;
+        })();
+      if (otherPos) {
+        n.x = otherPos.x + (Math.random() - 0.5) * 24;
+        n.y = otherPos.y + (Math.random() - 0.5) * 24;
+        seeded = true;
+        break;
+      }
+    }
+    if (!seeded) {
+      const i = idIdx.get(n.id) || 0;
+      const a = (i / Math.max(1, graph.nodes.length)) * Math.PI * 2;
+      const r = Math.min(width, height) * 0.18;
+      n.x = cx + r * Math.cos(a) + (Math.random() - 0.5) * 8;
+      n.y = cy + r * Math.sin(a) + (Math.random() - 0.5) * 8;
+    }
+  }
+}
+
 function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs) {
   const simRef = __gRef(null);
-
-  // Seed positions BEFORE the simulation sees nodes. Mutates graph.nodes
-  // in place — fine, the nodes array is created fresh per buildGraph call.
-  __gEff(() => {
-    if (!graph.nodes.length || !width || !height) return;
-    const cx = width / 2, cy = height / 2;
-    const cache = positionsRef.current;
-
-    // Phase 1: restore cached positions for retained nodes
-    for (const n of graph.nodes) {
-      const prev = cache.get(n.id);
-      if (prev && Number.isFinite(prev.x) && Number.isFinite(prev.y)) {
-        n.x = prev.x; n.y = prev.y;
-        n.vx = prev.vx || 0; n.vy = prev.vy || 0;
-      }
-    }
-
-    // Phase 2: place newcomers near a connected neighbor that already has
-    // a cached position. Fall back to a small ring near center.
-    const idIdx = new Map(graph.nodes.map((n, i) => [n.id, i]));
-    for (const n of graph.nodes) {
-      if (n.x != null) continue;
-      let seeded = false;
-      for (const l of graph.links) {
-        const sId = typeof l.source === 'string' ? l.source : l.source.id;
-        const tId = typeof l.target === 'string' ? l.target : l.target.id;
-        const otherId = sId === n.id ? tId : (tId === n.id ? sId : null);
-        if (!otherId) continue;
-        const otherPos = cache.get(otherId)
-          || (() => {
-            const idx = idIdx.get(otherId);
-            const o = idx != null ? graph.nodes[idx] : null;
-            return (o && Number.isFinite(o.x)) ? { x: o.x, y: o.y } : null;
-          })();
-        if (otherPos) {
-          n.x = otherPos.x + (Math.random() - 0.5) * 24;
-          n.y = otherPos.y + (Math.random() - 0.5) * 24;
-          seeded = true;
-          break;
-        }
-      }
-      if (!seeded) {
-        const i = idIdx.get(n.id) || 0;
-        const a = (i / Math.max(1, graph.nodes.length)) * Math.PI * 2;
-        const r = Math.min(width, height) * 0.18;
-        n.x = cx + r * Math.cos(a) + (Math.random() - 0.5) * 8;
-        n.y = cy + r * Math.sin(a) + (Math.random() - 0.5) * 8;
-      }
-    }
-  }, [graph, width, height, positionsRef]);
 
   // Create-or-update the simulation. Uses the same instance across rebuilds
   // so positions/velocities survive incremental data changes.
@@ -310,6 +314,11 @@ function useForceSim(graph, width, height, positionsRef, nodeElRefs, linkElRefs)
 
 // ── Zoom / pan ─────────────────────────────────────────────────────────
 
+// zoomK's only render consumer is the labelMode threshold (k >= 1.6), so the
+// state update is quantized to threshold crossings — a continuous setZoomK
+// re-reconciled every node and link per wheel/pinch frame for no visual change.
+const LABEL_ZOOM_K = 1.6;
+
 function useZoomPan(svgRef, gRef, setZoomK, deps) {
   const zoomRef = __gRef(null);
   __gEff(() => {
@@ -319,10 +328,14 @@ function useZoomPan(svgRef, gRef, setZoomK, deps) {
       .scaleExtent([0.25, 6])
       .on('zoom', (e) => {
         if (gRef.current) gRef.current.setAttribute('transform', e.transform.toString());
-        setZoomK(e.transform.k);
+        setZoomK(k => ((e.transform.k >= LABEL_ZOOM_K) === (k >= LABEL_ZOOM_K) ? k : e.transform.k));
       });
     zoomRef.current = zoom;
     d3.select(svgRef.current).call(zoom);
+    // A fresh <svg> (e.g. the graph emptied and repopulated) starts at the
+    // identity transform — resync the state so the label threshold can't
+    // disagree with the actual zoom until the next gesture.
+    setZoomK(d3.zoomTransform(svgRef.current).k);
     return () => { try { d3.select(svgRef.current).on('.zoom', null); } catch (_) {} };
   }, deps || []);
   return zoomRef;
@@ -331,15 +344,17 @@ function useZoomPan(svgRef, gRef, setZoomK, deps) {
 // ── Focused-node info card ─────────────────────────────────────────────
 
 function FocusCard({ entry, links, byId, onClear, onOpenDetail, onFocusNeighbor }) {
-  if (!entry) return null;
-  const tier = window.TYPE_TIER[entry.type];
+  const tier = entry ? window.TYPE_TIER[entry.type] : null;
 
   // Walk all edges incident to the focused entry; group them by family
   // (Lineage / Bonds / Teaching / Conflict / Alliance / Cross-tradition /
   // Other). Each neighbor row carries direction so the UI can show whether
   // the relation kind flows out of the focus or in.
+  // (Hooks run before the null guard — an early return above a hook becomes
+  // a conditional-hook crash the first time `entry` is actually nullable.)
   const neighborsByFamily = __gMemo(() => {
     const m = new Map();
+    if (!entry) return m;
     for (const l of links) {
       const sId = typeof l.source === 'string' ? l.source : l.source.id;
       const tId = typeof l.target === 'string' ? l.target : l.target.id;
@@ -361,12 +376,14 @@ function FocusCard({ entry, links, byId, onClear, onOpenDetail, onFocusNeighbor 
       });
     }
     return m;
-  }, [entry.id, links, byId]);
+  }, [entry?.id, links, byId]);
 
   const totalNeighbors = __gMemo(
     () => [...neighborsByFamily.values()].reduce((n, arr) => n + arr.length, 0),
     [neighborsByFamily],
   );
+
+  if (!entry) return null;
 
   const familyOrder = [...window.RELATION_FAMILIES.map(f => f.name), 'Other']
     .filter(name => neighborsByFamily.has(name));
@@ -560,9 +577,18 @@ function GraphLegend({ activeFamilies, hiddenFamilies, hiddenTiers, onToggleFami
 function figureActiveAt(entry, year) {
   if (!entry) return false;
   const d = window.getEntryDates(entry);
-  const start = d.mythicStart ?? d.textualStart;
-  const end   = d.mythicEnd   ?? d.textualEnd ?? start;
-  if (start == null || end == null) return false;
+  // Resolve the range on ONE axis (mythic preferred). Resolving each bound
+  // independently mixed the two timescales — inverted, never-active ranges —
+  // and `end ?? start` collapsed open-ended eras to a single year, leaving
+  // zero figures "active" at the slider's modern end. A null end means the
+  // era is open-ended (living traditions): extend it to the slider maximum,
+  // matching Lifecycle's buildEraSpans ceiling.
+  const useMythic = d.mythicStart != null;
+  const start = useMythic ? d.mythicStart : d.textualStart;
+  let end     = useMythic ? d.mythicEnd   : d.textualEnd;
+  if (start == null) return false;
+  if (end == null) end = Math.max(start, 2025);
+  if (end < start) return false;
   return year >= start && year <= end;
 }
 
@@ -612,13 +638,25 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
     return people.filter(p => figureActiveAt(p, year));
   }, [people, yearScope, year]);
 
+  // A focus that the active filters / year scope exclude cannot be rendered:
+  // buildGraph can't recover a node whose figure isn't in `people`, and
+  // seeding the BFS at a linkless phantom empties the whole graph behind the
+  // focus card. Treat it as unfocused and say so (notice rendered below).
+  const focusInScope = __gMemo(
+    () => !focusId || scopedPeople.some(p => p.id === focusId),
+    [focusId, scopedPeople],
+  );
+
   const graph = __gMemo(
-    () => buildGraph(scopedPeople, byId, mode, focusId),
-    [scopedPeople, byId, mode, focusId],
+    () => buildGraph(scopedPeople, byId, mode, focusInScope ? focusId : null),
+    [scopedPeople, byId, mode, focusId, focusInScope],
   );
   // Position memory survives graph rebuilds so dragging the year slider
   // doesn't re-explode the layout every frame. See useForceSim above.
   const positionsRef = __gRef(new Map());
+  // Seed coordinates during render so the first committed frame of every
+  // rebuild already carries cached/seeded positions (see seedPositions).
+  __gMemo(() => { seedPositions(graph, size.w, size.h, positionsRef); }, [graph, size.w, size.h]);
   // Per-node and per-link SVG element refs. Populated by ref callbacks on
   // the rendered <g> / <line> elements; consumed by useForceSim's tick
   // handler to mutate transforms directly without going through React.
@@ -1155,7 +1193,7 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
         )}
 
         {/* Focus card — only when a node is focused and we're NOT in path mode */}
-        {!pathMode && focused && (
+        {!pathMode && focused && focusInScope && (
           <FocusCard
             entry={focused}
             links={graph.links}
@@ -1164,6 +1202,25 @@ function Graph({ people, byId, focusId, setFocusId, onOpenDetail }) {
             onOpenDetail={(id) => onOpenDetail(id)}
             onFocusNeighbor={(id) => setFocusId(id)}
           />
+        )}
+
+        {/* The focused figure exists but the active filters / year scope
+            exclude it — explain instead of blanking the graph behind a card. */}
+        {!pathMode && focused && !focusInScope && (
+          <div className="graph-focus-card">
+            <div className="graph-focus-eyebrow">
+              <span>Focus filtered out</span>
+            </div>
+            <div className="graph-focus-name">{window.displayName(focused)}</div>
+            <div className="graph-focus-alt">
+              {yearScope
+                ? 'Outside the scrubbed year — widen the year scope or clear the focus.'
+                : 'Excluded by the active filters — loosen them or clear the focus.'}
+            </div>
+            <button className="btn btn-sm" onClick={() => setFocusId(null)} style={{ marginTop: 8 }}>
+              Clear focus
+            </button>
+          </div>
         )}
       </div>
 

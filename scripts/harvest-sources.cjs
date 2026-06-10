@@ -91,6 +91,16 @@ function contributes(text) {
   return false;
 }
 
+// Guard BEFORE the destructive step: the default TASKS path is an ephemeral
+// session directory that no longer exists on any other machine — without this
+// check the script deletes the committed transcripts and then crashes ENOENT,
+// leaving the corpus pipeline's inputs gone (recoverable only via git).
+if (!fs.existsSync(TASKS)) {
+  console.error(`No session transcripts at ${TASKS} — nothing to harvest.`);
+  console.error('Set TASKS_DIR to a live session tasks directory to re-harvest.');
+  console.error('The committed data-sources/transcripts/ tree is left untouched.');
+  process.exit(1);
+}
 fs.rmSync(OUT_TX, { recursive: true, force: true });
 fs.mkdirSync(OUT_TX, { recursive: true });
 let kept = 0, bytes = 0;

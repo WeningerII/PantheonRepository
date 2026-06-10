@@ -18,7 +18,7 @@ describe('app renders in a browser-like environment', () => {
     // The corpus is deliberately expanding as missing central figures are added;
     // assert a floor rather than an exact count (mirrors seed.test.cjs).
     const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
-    assert.ok(rows.length >= 602, `expected >= 602 rows, got ${rows.length}`);
+    assert.ok(rows.length >= 1850, `expected >= 1850 rows, got ${rows.length}`);
   });
 
   test('"/" focuses the search box', async () => {
@@ -37,12 +37,38 @@ describe('app renders in a browser-like environment', () => {
 
   test('switches Browse → Graph → Atlas → Browse without errors', async () => {
     await app.clickButton('Graph');
-    assert.ok(app.document.querySelector('.graph-canvas svg, .graph-empty'), 'graph did not mount');
+    // The populated branch specifically — the `.graph-empty` placeholder must
+    // not satisfy this test, or an emptied default graph regresses silently.
+    const gsvg = app.document.querySelector('.graph-canvas svg');
+    assert.ok(gsvg, 'graph svg did not mount');
+    assert.ok(gsvg.querySelectorAll('circle').length >= 20,
+      `expected a populated default graph, got ${gsvg.querySelectorAll('circle').length} nodes`);
     await app.clickButton('Atlas');
-    assert.ok(app.document.querySelector('.atlas-canvas'), 'atlas did not mount');
+    // Real territory polygons, not the basemap-error placeholder (the harness
+    // serves a basemap fixture, so a placeholder here means Atlas broke).
+    const asvg = app.document.querySelector('.atlas-canvas svg');
+    assert.ok(asvg, 'atlas svg did not mount');
+    assert.ok(asvg.querySelectorAll('path').length >= 100,
+      `expected territory polygons on the map, got ${asvg.querySelectorAll('path').length} paths`);
     await app.clickButton('Browse');
     assert.ok(app.document.querySelector('.browse-table'), 'did not return to browse');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('the corpus exceeds the localStorage quota: people unpersisted, atlas still persists', () => {
+    // Regression guard for the seeding split: the people write always throws
+    // QuotaExceededError at this corpus size (the app must run from the
+    // in-memory seed), but the 60 KB atlas write sits in its own try block
+    // and must succeed — it used to be vetoed by sharing the people write's
+    // try block.
+    const PEOPLE_KEY = app.window.__PR.PEOPLE_KEY;
+    const ATLAS_KEY = app.window.__PR.ATLAS_KEY;
+    assert.strictEqual(app.window.localStorage.getItem(PEOPLE_KEY), null,
+      'people corpus unexpectedly fit in localStorage — quota fallback no longer exercised');
+    assert.ok(app.window.localStorage.getItem(ATLAS_KEY),
+      'atlas seed did not persist despite fitting the quota');
+    const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
+    assert.ok(rows.length > 0, 'in-memory fallback did not feed the UI');
   });
 
   test('opens the detail panel for a figure', async () => {
@@ -114,7 +140,7 @@ describe('app renders in a browser-like environment', () => {
     await app.clickButton('Items');
     const view = app.document.querySelector('.items-view');
     assert.ok(view, 'Items view did not mount');
-    assert.ok(view.querySelectorAll('.item-row').length > 30, 'expected the object corpus in the index');
+    assert.ok(view.querySelectorAll('.item-row').length >= 1240, 'expected the object corpus in the index');
     assert.ok(view.querySelector('.items-group'), 'expected kind groupings');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
   });
@@ -137,5 +163,70 @@ describe('app renders in a browser-like environment', () => {
     const mc = app.document.querySelector('.section-material .material-item.link');
     assert.ok(mc, 'expected a clickable material-culture item on Thor');
     assert.match(app.document.querySelector('.section-material').textContent, /Mjǫllnir/, 'expected the native item name, not the raw id');
+  });
+
+  // The detail panels animate out for ~180ms after close before unmounting.
+  const settle = async () => {
+    await app.flush();
+    await new Promise((r) => setTimeout(r, 220));
+    await app.flush();
+  };
+
+  test('keyboard: Escape closes the open detail (cascade level 1)', async () => {
+    assert.ok(app.document.querySelector('.detail'), 'precondition: a detail is open');
+    await app.act(async () => { app.key('Escape'); });
+    await settle();
+    assert.ok(!app.document.querySelector('.detail'), 'Escape did not close the detail');
+  });
+
+  test('keyboard: j/k move the table cursor and Enter opens that row', async () => {
+    await app.clickButton('Browse');
+    await app.act(async () => { app.key('j'); });
+    await app.act(async () => { app.key('j'); });
+    await app.act(async () => { app.key('k'); });
+    await app.flush();
+    const cursorRow = app.document.querySelector('.browse-table tbody tr.cursor');
+    assert.ok(cursorRow, 'expected a cursor row after j/j/k');
+    const cursorName = cursorRow.querySelector('.name-text')?.textContent;
+    await app.act(async () => { app.key('Enter'); });
+    await app.flush();
+    const detail = app.document.querySelector('.detail');
+    assert.ok(detail, 'Enter did not open the cursor row');
+    assert.strictEqual(detail.querySelector('h1')?.textContent, cursorName,
+      'Enter opened a different figure than the cursor row');
+
+    // With a detail open, j steps the selection to the next filtered entry.
+    const before = detail.querySelector('h1')?.textContent;
+    await app.act(async () => { app.key('j'); });
+    await app.flush();
+    const after = app.document.querySelector('.detail h1')?.textContent;
+    assert.notStrictEqual(after, before, 'j did not step the open detail');
+    await app.act(async () => { app.key('Escape'); });
+    await settle();
+  });
+
+  test('keyboard: ctrl+K opens the palette (parity with meta+K)', async () => {
+    await app.act(async () => { app.key('k', { ctrlKey: true }); });
+    assert.ok(app.document.querySelector('.cmdk'), 'ctrl+K did not open the palette');
+    await app.act(async () => { app.key('Escape'); });
+    await app.flush();
+    assert.ok(!app.document.querySelector('.cmdk'), 'Escape did not close the palette');
+  });
+
+  test('item detail Prev/Next follows the on-screen index order', async () => {
+    await app.clickButton('Items');
+    const rows = [...app.document.querySelectorAll('.item-row')];
+    assert.ok(rows.length > 2, 'expected an item index');
+    await app.act(async () => { rows[0].click(); });
+    await app.flush();
+    assert.ok(app.document.querySelector('.item-detail'), 'item detail did not open');
+    await app.act(async () => { app.key('j'); });
+    await app.flush();
+    const steppedTo = app.document.querySelector('.item-detail h1')?.textContent;
+    const expected = rows[1].querySelector('.item-row-name')?.textContent;
+    assert.strictEqual(steppedTo, expected,
+      'j stepped to an item that is not the next on-screen row');
+    await app.act(async () => { app.key('Escape'); });
+    await settle();
   });
 });

@@ -33,7 +33,7 @@ test('app boots clean before dogfooding', () => {
   assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
 });
 
-test('a deterministic spread of figures renders non-empty .power-term / .domain-term nodes in Detail', async () => {
+test('a deterministic spread of figures renders non-empty .power-term-native / .domain-term nodes in Detail', async () => {
   const ids = candidates();
   assert.ok(ids.length >= 25, `expected >= 25 figures with both native power & domain terms, got ${ids.length}`);
   // Five picks evenly spread across the sorted candidate set (stable, no RNG).

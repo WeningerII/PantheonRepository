@@ -5,23 +5,20 @@ name: Deploy to GitHub Pages
 # `github-pages` Deployment with a clickable URL on each run, and
 # actions/configure-pages (enablement: true) turns Pages on automatically the
 # first time — no manual Settings toggle required.
-# NOTE: deploys currently succeed only from claude/intelligent-volta-ZwLAt
-# because the repo's `github-pages` environment has a Deployment-branches rule
-# that does not (yet) permit `main`. main is kept here so it deploys
-# automatically once that environment rule is set to allow main (Settings →
-# Environments → github-pages → Deployment branches and tags).
+# NOTE: if the repo's `github-pages` environment has a Deployment-branches
+# rule, it must permit `main` (Settings → Environments → github-pages →
+# Deployment branches and tags) or the deploy job will be rejected.
 on:
   push:
     branches:
       - main
-      - claude/intelligent-volta-ZwLAt
   workflow_dispatch:
 
-# Permissions the native Pages deployment needs.
+# Least privilege: the build job needs only to read the repo. The deploy job
+# (below) carries the Pages/OIDC grants — npm install and the third-party
+# build steps never run with an OIDC-capable token.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # Standard Pages concurrency group; let an in-flight deploy finish.
 concurrency:
@@ -31,6 +28,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,28 +36,36 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
+          cache: npm
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install build dependency (@babel/standalone)
-        run: npm install --no-audit --no-fund
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      # Never publish a build the suite hasn't passed.
+      - name: Run tests
+        run: npm test
+
+      - name: Verify byte-exact regeneration
+        run: bash scripts/verify-regen.sh
 
       - name: Build single-file artifact
         run: python3 build.py
 
-      # Goal 3 — every release ships a dogfood sign-off (>=25 sampled figures).
-      - name: Generate dogfood sign-off checklist
-        run: node scripts/dogfood-sample.cjs
-
+      # Goal 3 — every release ships a dogfood sign-off. Ship the COMMITTED
+      # checklist (the one a human actually reviewed), not a fresh unticked
+      # regeneration; only the link base is rewritten for the site layout
+      # (the artifact deploys as index.html, not dist/pantheon-registry.html).
       - name: Assemble Pages site
         run: |
           rm -rf _site && mkdir -p _site
           cp dist/pantheon-registry.html _site/index.html
-          cp DOGFOOD.md _site/DOGFOOD.md
+          sed 's#dist/pantheon-registry\.html\##./index.html\##g' DOGFOOD.md > _site/DOGFOOD.md
 
       # Reads the repo's Pages config. Pages must be enabled once in Settings
       # (Source: GitHub Actions) — GitHub does not permit the Actions token to
@@ -75,6 +81,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

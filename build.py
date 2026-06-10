@@ -43,38 +43,52 @@ const out = babel.transform(src, {
 process.stdout.write(out.code);
 """
     full_path = str(APP / filename)
-    proc = subprocess.run(
-        ['node', '-e', node_script, full_path],
-        capture_output=True, text=True, cwd=ROOT,
-    )
+    try:
+        proc = subprocess.run(
+            ['node', '-e', node_script, full_path],
+            capture_output=True, text=True, encoding='utf-8', cwd=ROOT,
+        )
+    except FileNotFoundError:
+        sys.exit('!! node is required: install Node.js, then run `npm install` and retry.')
     if proc.returncode != 0:
         print(f'!! Babel failed on {filename}:\n{proc.stderr}', file=sys.stderr)
         sys.exit(1)
     return proc.stdout
 
 
+# Per the HTML spec, script content also terminates at case/whitespace
+# variants of the close tag (</ScRiPt , </SCRIPT/ …), and a literal `<!--`
+# flips the parser into the script-data-double-escaped state — both would
+# silently corrupt the 7+ MB inline payload. The corpus is regenerated from
+# research transcripts, so treat the payloads as untrusted text.
+_SCRIPT_BREAK = re.compile(r'(?i)</script')
+_PARSE_HAZARD = re.compile(r'(?i)<!--|</script[\s/>]')
+
+
 def safe(src: str) -> str:
-    """Escape any literal </script in an inline payload."""
-    return src.replace('</script', '<\\/script')
+    """Escape any literal </script (any case) in an inline payload."""
+    return _SCRIPT_BREAK.sub('<\\\\/script', src)
 
 
 def main() -> None:
     print('Pre-transforming JSX...')
     transformed = {}
     for f in JSX_FILES:
-        src = (APP / f).read_text()
+        src = (APP / f).read_text(encoding='utf-8')
         code = transform_jsx(f)
         transformed[f] = code
         print(f'  {f:24s}  {len(src):>7,} → {len(code):>7,} bytes')
 
-    styles_css = (APP / 'styles.css').read_text()
-    data_js    = (APP / 'data.js').read_text()
+    styles_css = (APP / 'styles.css').read_text(encoding='utf-8')
+    data_js    = (APP / 'data.js').read_text(encoding='utf-8')
 
-    # Sanity: no payload may contain </script>
+    # Sanity: abort on anything that would terminate or mis-parse the inline
+    # script element (case-insensitive close tags, comment-open sequences).
     for name, body in [('styles.css', styles_css), ('data.js', data_js),
                        *((f, transformed[f]) for f in JSX_FILES)]:
-        if '</script>' in body.lower():
-            print(f'!! {name} contains </script>', file=sys.stderr)
+        hit = _PARSE_HAZARD.search(body)
+        if hit:
+            print(f'!! {name} contains a script-breaking sequence at offset {hit.start()}: {hit.group()!r}', file=sys.stderr)
             sys.exit(1)
 
     script_blocks = '\n'.join(
@@ -244,7 +258,7 @@ __STYLES_CSS__
 <div id="boot" role="status" aria-live="polite">
   <div class="boot-mark" aria-hidden="true"></div>
   <div class="title">Pantheon Registry</div>
-  <div class="subtitle">602 figures, 50 traditions, one index.</div>
+  <div class="subtitle">One index of the world's mythologies.</div>
   <div class="step" id="boot-step">loading…</div>
   <div class="bar"><div id="boot-bar" style="width:30%"></div></div>
   <div id="boot-err" class="err" style="display:none"></div>
@@ -275,7 +289,9 @@ __UI_SCRIPTS__
         sys.exit(1)
 
     out_path = DIST / 'pantheon-registry.html'
-    out_path.write_text(out)
+    # Explicit encoding + newline: a cp1252 locale (Windows) cannot encode the
+    # corpus, and newline translation would break byte-exact regeneration.
+    out_path.write_text(out, encoding='utf-8', newline='\n')
 
     print()
     print(f'output: {out_path.relative_to(ROOT)} ({len(out)/1024/1024:.2f} MB)')

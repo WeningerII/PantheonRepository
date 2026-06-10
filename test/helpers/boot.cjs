@@ -29,7 +29,7 @@ const LIB_FILES = [
 const JSX = ['state', 'Browse', 'Lineage', 'Lifecycle', 'Detail', 'Items', 'Graph',
             'Atlas', 'CommandPalette', 'Shell', 'main'];
 
-async function bootApp({ panelWidth = 1200 } = {}) {
+async function bootApp({ panelWidth = 1200, preSeedStorage = null } = {}) {
   const libCode = LIB_FILES.map(read);
   const dataJs = read(path.join(APP, 'data.js'));
   const ui = JSX.map((f) => babel.transform(read(path.join(APP, `${f}.jsx`)), {
@@ -46,17 +46,43 @@ async function bootApp({ panelWidth = 1200 } = {}) {
   const errors = [];
   window.addEventListener('error', (e) => errors.push('error: ' + (e.error?.stack || e.message)));
   window.addEventListener('unhandledrejection', (e) => errors.push('rejection: ' + (e.reason?.stack || e.reason)));
+  // React reports render crashes swallowed by the ErrorBoundary through
+  // console.error, never through a window 'error' event — capture those too
+  // so a boundary-eaten crash can't pass as a clean boot.
+  {
+    const realErr = window.console.error.bind(window.console);
+    window.console.error = (...a) => {
+      const line = a.map(String).join(' ');
+      // Expected: the initial mount runs at module scope (main.jsx), outside act().
+      if (!/not wrapped in act/.test(line)) errors.push('console.error: ' + line);
+      realErr(...a);
+    };
+  }
 
   window.ResizeObserver = class { observe() {} unobserve() {} disconnect() {} };
   window.requestAnimationFrame = (cb) => setTimeout(() => cb(Date.now()), 0);
   window.cancelAnimationFrame = (id) => clearTimeout(id);
-  window.fetch = () => Promise.reject(new Error('no network in tests'));
+  // Serve the Atlas basemap from a committed fixture so the map view renders
+  // real territory paths under test (a blanket rejection made the Atlas
+  // assertion pass vacuously against its error placeholder). Everything else
+  // stays offline.
+  window.fetch = (url) => {
+    if (String(url).includes('countries-110m.json')) {
+      const body = read(path.join(ROOT, 'test', 'fixtures', 'countries-110m.json'));
+      return Promise.resolve({ ok: true, json: () => Promise.resolve(JSON.parse(body)) });
+    }
+    return Promise.reject(new Error('no network in tests: ' + url));
+  };
   window.MessageChannel = require('worker_threads').MessageChannel; // React scheduler
   window.Element.prototype.scrollIntoView = function () {};
   window.Element.prototype.getBoundingClientRect = function () {
     return { width: panelWidth, height: 600, top: 0, left: 0, right: panelWidth, bottom: 600, x: 0, y: 0, toJSON() {} };
   };
   window.IS_REACT_ACT_ENVIRONMENT = true;
+
+  // Let storage tests stage localStorage contents BEFORE data.js's
+  // seed-if-empty pass and state.jsx's loaders run.
+  if (preSeedStorage) preSeedStorage(window);
 
   const runScript = (code) => {
     const s = window.document.createElement('script');
@@ -98,7 +124,9 @@ async function bootApp({ panelWidth = 1200 } = {}) {
     await flush();
   };
 
-  return { dom, window, document: D, act, flush, errors, key, clickButton, openFirstFigure, openFigure, openItem };
+  const close = () => { try { dom.window.close(); } catch (_) {} };
+
+  return { dom, window, document: D, act, flush, errors, key, clickButton, openFirstFigure, openFigure, openItem, close };
 }
 
 module.exports = { bootApp };

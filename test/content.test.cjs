@@ -104,9 +104,9 @@ test('no citation anywhere is a fabrication marker (series canon / original char
 });
 
 test('the corpus is non-trivially populated (regression floor)', () => {
-  assert.ok(entries.length >= 900, `expected >= 900 figures, got ${entries.length}`);
+  assert.ok(entries.length >= 1850, `expected >= 1850 figures, got ${entries.length}`);
   let fac = 0, item = 0;
   for (const [, p] of entries) { fac += (p.faculties || []).length; item += (p.materialCulture || []).length; }
-  assert.ok(fac >= 1200, `expected >= 1200 faculties, got ${fac}`);
-  assert.ok(item >= 900, `expected >= 900 material-culture entries, got ${item}`);
+  assert.ok(fac >= 2600, `expected >= 2600 faculties, got ${fac}`);
+  assert.ok(item >= 1290, `expected >= 1290 material-culture entries, got ${item}`);
 });

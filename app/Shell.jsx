@@ -183,7 +183,7 @@ function Rail({ filters, view, hasDetail }) {
         )}
         {hasDetail && (
           <>
-            <span className="kbd">e</span><span>emend</span>
+            <span className="kbd-pair"><span className="kbd">j</span><span className="kbd">k</span></span><span>step</span>
             <span className="kbd">esc</span><span>close</span>
           </>
         )}
@@ -229,7 +229,12 @@ function Shell() {
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
     if (!['browse', 'graph', 'atlas', 'items'].includes(v)) return;
-    const id = parts[1] ? decodeURIComponent(parts[1]) : null;
+    // Malformed escapes (#/browse/%zz) must not crash applyHash — it runs in
+    // a mount effect, so a throw here would loop the ErrorBoundary forever.
+    let id = null;
+    if (parts[1]) {
+      try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
+    }
     setView(v);
     if (v === 'browse') {
       selection.setSelectedId(id);
@@ -278,17 +283,28 @@ function Shell() {
       return;
     }
     const prev = urlPrevRef.current;
+    if (!prev.initialized) {
+      // First commit: applyHash's setState hasn't flushed yet, so state still
+      // holds the defaults — writing `target` here would clobber a deep link
+      // with #/browse and corrupt the history entry. The hash is the source
+      // of truth at boot: only canonicalize when there is no usable hash.
+      const first = (window.location.hash || '').replace(/^#\/?/, '').split('/')[0];
+      if (!['browse', 'graph', 'atlas', 'items'].includes(first)) {
+        window.history.replaceState({}, '', target);
+      }
+      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, itemId: selectedItemId, initialized: true };
+      return;
+    }
     // Replace if: same view, moving between two non-null detail entries
-    // (continuation), OR if we haven't initialized yet (first paint).
+    // (continuation) so the history doesn't fill with every j/k press.
     const continuation =
-      prev.initialized &&
       prev.view === view &&
       (
         (view === 'browse' && prev.selId != null && selection.selectedId != null) ||
         (view === 'graph' && prev.gFocus != null && graphFocusId != null) ||
         (view === 'items' && prev.itemId != null && selectedItemId != null)
       );
-    if (!prev.initialized || continuation) {
+    if (continuation) {
       window.history.replaceState({}, '', target);
     } else {
       window.history.pushState({}, '', target);
@@ -315,13 +331,20 @@ function Shell() {
     }
   }, [selectedEntry, selIdxInFiltered, filters.filtered]);
 
-  // Step between open items (j/k and the detail Prev/Next buttons).
+  // Step between open items (j/k and the detail Prev/Next buttons). The
+  // Items view reports its visible (grouped + filtered) row order so Prev/
+  // Next walks the same sequence the user sees on screen; fall back to the
+  // registry order before the index has reported.
+  const itemOrderRef = __sRef(null);
   const moveItem = __sCb((delta) => {
     if (!selectedItemId) return;
-    const idx = itemList.findIndex((it) => it.id === selectedItemId);
+    const order = (itemOrderRef.current && itemOrderRef.current.length)
+      ? itemOrderRef.current
+      : itemList.map((it) => it.id);
+    const idx = order.indexOf(selectedItemId);
     if (idx < 0) return;
-    const next = itemList[idx + delta];
-    if (next) setSelectedItemId(next.id);
+    const nextId = order[idx + delta];
+    if (nextId) setSelectedItemId(nextId);
   }, [selectedItemId, itemList]);
 
   // Open an item from anywhere (the index, or a figure's material culture).
@@ -368,23 +391,32 @@ function Shell() {
 
     if (inField || cmdkOpen) return;
 
+    // Mark keyboard-driven navigation so Browse can distinguish cursor moves
+    // made with j/k (auto-scroll the row into view) from hover-driven ones
+    // (never scroll — scrolling under the pointer cascades mouseenters).
+    const markKbNav = () => { window.__kbNavTs = Date.now(); };
+
     // Item-detail navigation
     if (selectedItemId) {
-      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); moveItem(1); return; }
-      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); moveItem(-1); return; }
+      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveItem(1); return; }
+      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveItem(-1); return; }
       return;
     }
 
     // Detail-open navigation
     if (selection.selectedId) {
-      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); moveSelection(1); return; }
-      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); moveSelection(-1); return; }
+      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveSelection(1); return; }
+      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveSelection(-1); return; }
       return;
     }
 
-    // Table navigation
-    if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); selection.moveCursor(1); return; }
-    if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); selection.moveCursor(-1); return; }
+    // Table navigation — Browse only, and never while an interactive control
+    // has focus: a focused button/tab/checkbox owns its own Enter/Space, and
+    // preventDefault here would silently swallow keyboard activation.
+    if (view !== 'browse') return;
+    if (e.target?.closest?.('button, a, select, [role="checkbox"], [role="button"], [role="tab"]')) return;
+    if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); selection.moveCursor(1); return; }
+    if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); selection.moveCursor(-1); return; }
     if (e.key === 'Enter') {
       e.preventDefault();
       const target = filters.filtered[selection.cursorIdx];
@@ -411,7 +443,7 @@ function Shell() {
   return (
     <div className="shell">
       <TopBar
-        totalCount={filters.filtered.length}
+        totalCount={people.length}
         view={view}
         setView={setView}
         query={filters.query}
@@ -458,43 +490,46 @@ function Shell() {
               byId={byId}
               selectedItemId={selectedItemId}
               onOpenItem={(id) => setSelectedItemId(id)}
+              onVisibleOrder={(ids) => { itemOrderRef.current = ids; }}
             />
           )}
         </div>
       </div>
 
-      {selectedEntry && (
-        <window.Detail
-          entry={selectedEntry}
-          byId={byId}
-          childrenOf={childrenOf}
-          onClose={() => selection.setSelectedId(null)}
-          onPrev={() => moveSelection(-1)}
-          onNext={() => moveSelection(1)}
-          onOpen={(id) => selection.setSelectedId(id)}
-          onOpenItem={openItem}
-          onShowInGraph={(entry) => {
-            setGraphFocusId(entry.id);
-            setView('graph');
-            selection.setSelectedId(null);
-          }}
-        />
-      )}
+      {/* Both slide-overs render unconditionally: they own an exit-animation
+          state machine that needs to see the entry/item prop go null — a
+          conditional mount here unmounts them instantly and the slide-out
+          never plays. They render nothing while their prop is null. */}
+      <window.Detail
+        entry={selectedEntry}
+        byId={byId}
+        childrenOf={childrenOf}
+        onClose={() => selection.setSelectedId(null)}
+        onPrev={() => moveSelection(-1)}
+        onNext={() => moveSelection(1)}
+        canPrev={selIdxInFiltered > 0}
+        canNext={selIdxInFiltered >= 0 && selIdxInFiltered < filters.filtered.length - 1}
+        onOpen={(id) => selection.setSelectedId(id)}
+        onOpenItem={openItem}
+        onShowInGraph={(entry) => {
+          setGraphFocusId(entry.id);
+          setView('graph');
+          selection.setSelectedId(null);
+        }}
+      />
 
-      {selectedItem && (
-        <window.ItemDetail
-          item={selectedItem}
-          byId={byId}
-          onClose={() => setSelectedItemId(null)}
-          onPrev={() => moveItem(-1)}
-          onNext={() => moveItem(1)}
-          onOpenFigure={(id) => {
-            setView('browse');
-            setSelectedItemId(null);
-            selection.setSelectedId(id);
-          }}
-        />
-      )}
+      <window.ItemDetail
+        item={selectedItem}
+        byId={byId}
+        onClose={() => setSelectedItemId(null)}
+        onPrev={() => moveItem(-1)}
+        onNext={() => moveItem(1)}
+        onOpenFigure={(id) => {
+          setView('browse');
+          setSelectedItemId(null);
+          selection.setSelectedId(id);
+        }}
+      />
 
       {cmdkOpen && (
         <window.CommandPalette
@@ -503,6 +538,9 @@ function Shell() {
           onPick={(id) => {
             // View-aware: in Graph, pick focuses the node in-place; in
             // Browse (or anywhere else), pick opens the detail panel.
+            // Always drop any open item panel first so the two slide-overs
+            // never stack (mirror of openItem clearing the figure selection).
+            setSelectedItemId(null);
             if (view === 'graph') {
               setGraphFocusId(id);
             } else {
