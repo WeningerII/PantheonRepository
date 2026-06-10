@@ -37,6 +37,12 @@ function loadBasemap() {
         countries: tc.feature(topo, topo.objects.countries),
         land:      tc.merge(topo,  topo.objects.countries.geometries),
       };
+    })
+    .catch(e => {
+      // Never cache a rejection: one transient network failure would brick
+      // the atlas for the rest of the session (remounts reuse the promise).
+      __basemapPromise = null;
+      throw e;
     });
   return __basemapPromise;
 }
@@ -85,7 +91,19 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
     core: true, extent: true, colonies: true, successors: true, diaspora: true,
   });
   const [focused, setFocused] = __aState(null);   // tradition name
-  const [hover, setHover] = __aState(null);        // { tradition, polygon, x, y }
+  const [hover, setHover] = __aState(null);        // { tradition, polygon } — x/y live in mouseRef
+  // Tooltip position is applied imperatively: routing clientX/clientY through
+  // state re-rendered the entire map (144 paths + label layout) per mousemove.
+  const tooltipRef = __aRef(null);
+  const mouseRef = __aRef({ x: 0, y: 0 });
+  const positionTooltip = (x, y) => {
+    mouseRef.current = { x, y };
+    const el = tooltipRef.current;
+    if (!el) return;
+    const right = containerRef.current?.getBoundingClientRect().right || 9999;
+    el.style.left = Math.min(x + 14, right - 340) + 'px';
+    el.style.top  = (y + 14) + 'px';
+  };
   const [yearScope, setYearScope] = __aState(false);
   const [year, setYear] = __aState(0);              // signed; -BCE / +CE
   const containerRef = __aRef(null);
@@ -95,14 +113,15 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
   const [size, setSize] = __aState({ w: 0, h: 0 });
   const [zoomK, setZoomK] = __aState(1);
 
-  // Load basemap on mount
+  // Load basemap on mount (re-runs when the user hits Retry after a failure)
+  const [basemapTry, setBasemapTry] = __aState(0);
   __aEff(() => {
     let alive = true;
     loadBasemap()
-      .then(data => { if (alive) setBasemap(data); })
+      .then(data => { if (alive) { setBasemap(data); setBasemapErr(null); } })
       .catch(e => { if (alive) setBasemapErr(e.message); });
     return () => { alive = false; };
-  }, []);
+  }, [basemapTry]);
 
   // Observe container size
   __aEff(() => {
@@ -303,6 +322,10 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
             <h2>Could not load the world basemap.</h2>
             <p className="atlas-empty-detail">{basemapErr}</p>
             <p>The atlas needs network access to the world-atlas CDN. The legacy globe is still reachable above.</p>
+            <button
+              className="btn btn-sm"
+              onClick={() => { setBasemapErr(null); setBasemapTry(t => t + 1); }}
+            >Retry</button>
           </div>
         )}
         {!basemapErr && (
@@ -416,11 +439,11 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
                                   strokeLinejoin="round"
                                   vectorEffect="non-scaling-stroke"
                                   style={{ cursor: 'pointer' }}
-                                  onMouseEnter={(e) => setHover({
-                                    tradition, polygon: p.raw,
-                                    x: e.clientX, y: e.clientY,
-                                  })}
-                                  onMouseMove={(e) => setHover(h => h && { ...h, x: e.clientX, y: e.clientY })}
+                                  onMouseEnter={(e) => {
+                                    positionTooltip(e.clientX, e.clientY);
+                                    setHover({ tradition, polygon: p.raw });
+                                  }}
+                                  onMouseMove={(e) => positionTooltip(e.clientX, e.clientY)}
                                   onMouseLeave={() => setHover(null)}
                                   onClick={(e) => { e.stopPropagation(); setFocused(tradition); }}
                                 />
@@ -499,13 +522,16 @@ function Atlas({ atlas, byId, traditionFilter, onOpenDetail }) {
           </svg>
         )}
 
-        {/* Hover tooltip — fixed-position overlay (not inside zoomed g). */}
+        {/* Hover tooltip — fixed-position overlay (not inside zoomed g).
+            Position comes from mouseRef at mount and is updated imperatively
+            by positionTooltip on every mousemove. */}
         {hover && (
           <div
+            ref={tooltipRef}
             className="atlas-tooltip"
             style={{
-              left: Math.min(hover.x + 14, (containerRef.current?.getBoundingClientRect().right || 9999) - 340),
-              top:  hover.y + 14,
+              left: Math.min(mouseRef.current.x + 14, (containerRef.current?.getBoundingClientRect().right || 9999) - 340),
+              top:  mouseRef.current.y + 14,
             }}
           >
             <div className="atlas-tooltip-trad">

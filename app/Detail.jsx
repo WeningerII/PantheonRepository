@@ -2,10 +2,14 @@
 //  Detail.jsx — slide-over entry detail panel
 // ═══════════════════════════════════════════════════════════════════════════
 
-const { useEffect: __dEff, useMemo: __dMemo, useCallback: __dCb, useState: __dState } = React;
+const { useEffect: __dEff, useMemo: __dMemo, useCallback: __dCb, useState: __dState, useRef: __dRef } = React;
 
 // RELATION_FAMILIES + relationFamily live on window (exposed from state.jsx)
-// so they can be shared with the Graph view.
+// so they can be shared with the Graph view; window.pressable (keyboard-
+// activatable click target) likewise comes from state.jsx, shared with
+// Items.jsx. NOTE: classic scripts share top-level scope — do NOT alias it
+// to a top-level `const pressable` here, that redeclares state.jsx's
+// identifier and kills the page ("Identifier already declared").
 
 // Render any common-shape tag object (domains use { sphereId }, faculties
 // use { id }, material culture uses { id, classId }, epithets vary).
@@ -39,7 +43,7 @@ function RelationItem({ rel, byId, onOpen }) {
   return (
     <div className="relation">
       <div className="kind">{String(rel.kind || '').replace(/[_-]+/g, ' ')}</div>
-      <div className={'target ' + (target ? 'link' : '')} onClick={target ? () => onOpen(target.id) : null}>
+      <div className={'target ' + (target ? 'link' : '')} {...window.pressable(target ? () => onOpen(target.id) : null, 'link')}>
         {target
           ? window.displayName(target)
           : <span className="ext">{renderExternal()}</span>}
@@ -68,9 +72,7 @@ function Parentage({ entry, byId, onOpen }) {
               <div className="role">{String(role || 'parent').replace(/[_-]+/g, ' ')}</div>
               <div
                 className="who"
-                onClick={resolved ? () => onOpen(target.id) : null}
-                role={resolved ? 'button' : undefined}
-                tabIndex={resolved ? 0 : -1}
+                {...window.pressable(resolved ? () => onOpen(target.id) : null)}
               >
                 {resolved ? (
                   <>
@@ -123,7 +125,7 @@ function Descent({ entry, byId, onOpen }) {
                     <span className="descent-parent-frac">{fmt(c.fraction)}</span>
                     <span
                       className={'descent-parent-name' + (p ? ' link' : '')}
-                      onClick={p ? () => onOpen(c.id) : null}
+                      {...window.pressable(p ? () => onOpen(c.id) : null, 'link')}
                     >{p ? window.displayName(p) : c.id}</span>
                     {refresh && <span className="descent-refresh">refreshes the line</span>}
                   </div>
@@ -230,7 +232,7 @@ function Powers({ entry, byId, onOpen }) {
                 <span className="power-cand-name">{humanize(c.facultyId)}</span>
                 <span className="power-cand-from">
                   via {anc
-                    ? <span className="link" onClick={() => onOpen(c.fromAncestorId)}>{window.displayName(anc)}</span>
+                    ? <span className="link" {...window.pressable(() => onOpen(c.fromAncestorId), 'link')}>{window.displayName(anc)}</span>
                     : c.fromAncestorId}{' · '}{genLabel(c.generation)}
                 </span>
               </div>
@@ -422,7 +424,9 @@ function Sources({ entry }) {
                         )}
                         {citations.map((c, j) => {
                           const ref = renderCitationRef(c);
-                          const kind = c && typeof c === 'object' ? c.kind : null;
+                          // localStorage is user-editable: a non-string kind
+                          // must degrade, not throw into the ErrorBoundary.
+                          const kind = c && typeof c === 'object' && typeof c.kind === 'string' ? c.kind : null;
                           // Only flag the per-citation kind when it differs
                           // from the claim's aggregate weight.
                           const flag = kind && kind.toLowerCase() !== w ? kind : null;
@@ -535,13 +539,17 @@ function MaterialCulture({ entry, onOpenItem }) {
   );
 }
 
-function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, onOpen, onOpenItem, onShowInGraph }) {
+function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, canPrev, canNext, onOpen, onOpenItem, onShowInGraph }) {
   // Exit-animation state machine. When `entryProp` becomes null, we keep the
   // currently-rendered entry around for one animation frame (cubic-bezier
   // matching the slide-in), then truly unmount. When a new entry arrives
   // mid-exit, we cancel the exit and re-mount with the new entry.
+  // (Shell renders this component unconditionally so the null transition —
+  // and therefore the slide-out — actually happens.)
   const [localEntry, setLocalEntry] = __dState(entryProp || null);
   const [closing,    setClosing]    = __dState(false);
+  const panelRef  = __dRef(null);
+  const openerRef = __dRef(null);
 
   __dEff(() => {
     if (entryProp) {
@@ -554,11 +562,32 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
       const t = setTimeout(() => {
         setLocalEntry(null);
         setClosing(false);
+        // Hand focus back to wherever the user was before the panel opened.
+        const opener = openerRef.current;
+        openerRef.current = null;
+        if (opener && opener.focus && document.contains(opener)) {
+          try { opener.focus({ preventScroll: true }); } catch (_) {}
+        }
       }, 180);
       return () => clearTimeout(t);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [entryProp?.id]);
+
+  // Move focus into the dialog when it opens (and remember the opener so it
+  // can be restored on close) — otherwise keyboard focus stays in the
+  // obscured page behind the slide-over.
+  const hadEntryRef = __dRef(false);
+  __dEff(() => {
+    const has = !!localEntry;
+    if (has && !hadEntryRef.current) {
+      if (!openerRef.current) openerRef.current = document.activeElement;
+      if (panelRef.current) {
+        try { panelRef.current.focus({ preventScroll: true }); } catch (_) {}
+      }
+    }
+    hadEntryRef.current = has;
+  }, [!!localEntry]);
 
   __dEff(() => {
     if (!localEntry) return;
@@ -578,10 +607,10 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
   const alts = window.altNames(entry);
   const xlit = window.transliterations(entry);
   const dates = window.getEntryDates(entry);
-  const dateLine = window.formatYearRangeSigned(
-    dates.textualStart ?? dates.mythicStart,
-    dates.textualEnd   ?? dates.mythicEnd,
-  );
+  // Shared mythic-first pairing (same as the Browse row) — resolving the two
+  // bounds independently mixed the mythic and textual axes and rendered
+  // reversed ranges like "1900 CE – 1500 CE" on partially-dated entries.
+  const dateLine = window.entryDateRange(dates);
 
   return (
     <>
@@ -590,15 +619,18 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, o
         onClick={onClose}
       />
       <aside
+        ref={panelRef}
+        tabIndex={-1}
         className={'detail' + (closing ? ' closing' : '')}
         role="dialog"
+        aria-modal="true"
         aria-label={window.displayName(entry)}
         style={{ '--detail-tier-color': tierStripe }}
       >
         <div className="detail-bar">
           <div className="nav">
-            <button className="btn btn-ghost btn-sm" onClick={onPrev} title="Previous (k)">↑ Prev</button>
-            <button className="btn btn-ghost btn-sm" onClick={onNext} title="Next (j)">↓ Next</button>
+            <button className="btn btn-ghost btn-sm" onClick={onPrev} disabled={canPrev === false} title={canPrev === false ? 'Not in the current filtered list' : 'Previous (k)'}>↑ Prev</button>
+            <button className="btn btn-ghost btn-sm" onClick={onNext} disabled={canNext === false} title={canNext === false ? 'Not in the current filtered list' : 'Next (j)'}>↓ Next</button>
           </div>
           <div className="spacer" />
           <button className="btn btn-sm" onClick={() => onShowInGraph && onShowInGraph(entry)} title="View this figure's relations in the graph">

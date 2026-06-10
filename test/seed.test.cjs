@@ -59,19 +59,40 @@ test('exposes the constants the UI reads on window.__PR', () => {
   assert.strictEqual(typeof pr.getEntryDates, 'function');
 });
 
-test('every figure has a string id and a valid type', () => {
+test('every figure has a string id (matching its map key) and a valid type', () => {
   const VALID = new Set(['deity', 'demigod', 'quartigod', 'scion', 'mortal']);
   for (const [key, p] of Object.entries(people)) {
     assert.strictEqual(typeof p.id, 'string', `figure ${key} has a non-string id`);
-    if (p.type !== undefined) {
-      assert.ok(VALID.has(p.type), `figure ${key} has invalid type "${p.type}"`);
-    }
+    assert.strictEqual(p.id, key, `figure keyed ${key} carries id ${p.id}`);
+    // Presence, not just validity: a regression that drops the type field
+    // from every figure must not pass as "all types valid".
+    assert.ok(VALID.has(p.type), `figure ${key} has missing/invalid type "${p.type}"`);
   }
 });
 
 test('migrate reports no hard-schema (Layer 1) violations', () => {
   const hard = logs.error.filter((m) => /Layer 1/.test(m));
   assert.deepStrictEqual(hard, [], `hard-schema errors:\n${hard.join('\n')}`);
+});
+
+test('warn-level integrity drift stays at its accepted ceilings', () => {
+  const all = logs.warn.join('\n');
+  const num = (re) => { const m = all.match(re); return m ? parseInt(m[1], 10) : 0; };
+  // Ceilings pin the KNOWN drift so it can only shrink deliberately — these
+  // counts could previously grow 100x without any test moving. The pending
+  // backfill wave drives the first three to 0; ratchet them down with it.
+  const danglingCeiling = 3;   // kibuka/mukasa→wanema, kumarbi→alalu (figures pending)
+  const unknownItemCeiling = 4; // erinyes/tyche/narasimha/varaha ITEMS_GEN keys (figures pending)
+  const eraGapCeiling = 1200;  // unmapped-tradition era values (constants backfill pending)
+  assert.ok(num(/(\d+) dangling references/) <= danglingCeiling,
+    `dangling references grew past ${danglingCeiling}:\n${all.split('\n').filter((l) => /dangling/.test(l)).join('\n')}`);
+  const unknownItems = (all.match(/generated item for unknown figure/g) || []).length;
+  assert.ok(unknownItems <= unknownItemCeiling,
+    `ITEMS_GEN keys without an authored figure grew to ${unknownItems}`);
+  assert.ok(num(/(\d+) era values unresolvable/) <= eraGapCeiling,
+    'era values fell out of ERA_ORDER coverage (dates/sort silently degraded)');
+  const drift = num(/Tier-classification drift in (\d+) entries/);
+  assert.ok(drift <= 30, `tier-classification drift grew to ${drift} entries (accepted ceiling 30)`);
 });
 
 test('getEntryDates resolves a known entry to the documented shape', () => {

@@ -32,13 +32,27 @@ function CommandPalette({ people, onClose, onPick }) {
   const [cursor, setCursor] = __cState(0);
   const inputRef = __cRef(null);
 
-  __cEff(() => { inputRef.current?.focus(); }, []);
+  // Focus the input on open; hand focus back to the opener on close.
+  __cEff(() => {
+    const opener = document.activeElement;
+    inputRef.current?.focus();
+    return () => {
+      if (opener && opener.focus && document.contains(opener)) {
+        try { opener.focus({ preventScroll: true }); } catch (_) {}
+      }
+    };
+  }, []);
 
+  // Each result keeps its match provenance ({ p, viaAlt, viaTradition }) so
+  // the list can show the alt name that actually matched, not just alts[0].
   const results = __cMemo(() => {
     const query = q.trim();
     if (!query) {
       // Default: first 25 alphabetical
-      return people.slice().sort((a, b) => window.displayName(a).localeCompare(window.displayName(b))).slice(0, 25);
+      return people.slice()
+        .sort((a, b) => window.displayName(a).localeCompare(window.displayName(b)))
+        .slice(0, 25)
+        .map(p => ({ p }));
     }
     const scored = [];
     for (const p of people) {
@@ -54,7 +68,7 @@ function CommandPalette({ people, onClose, onPick }) {
       if (best) scored.push({ p, ...best });
     }
     scored.sort((a, b) => a.score - b.score);
-    return scored.slice(0, 50).map(s => s.p);
+    return scored.slice(0, 50);
   }, [q, people]);
 
   __cEff(() => { setCursor(0); }, [q]);
@@ -63,14 +77,16 @@ function CommandPalette({ people, onClose, onPick }) {
     const onKey = (e) => {
       if (e.key === 'ArrowDown' || (e.key === 'n' && e.ctrlKey)) {
         e.preventDefault();
-        setCursor(c => Math.min(results.length - 1, c + 1));
+        window.__kbNavTs = Date.now();
+        setCursor(c => Math.max(0, Math.min(results.length - 1, c + 1)));
       } else if (e.key === 'ArrowUp' || (e.key === 'p' && e.ctrlKey)) {
         e.preventDefault();
+        window.__kbNavTs = Date.now();
         setCursor(c => Math.max(0, c - 1));
       } else if (e.key === 'Enter') {
         e.preventDefault();
         const pick = results[cursor];
-        if (pick) onPick(pick.id);
+        if (pick) onPick(pick.p.id);
       } else if (e.key === 'Escape') {
         e.preventDefault();
         onClose();
@@ -87,7 +103,7 @@ function CommandPalette({ people, onClose, onPick }) {
 
   return (
     <div className="cmdk-back" onClick={onClose}>
-      <div className="cmdk" onClick={e => e.stopPropagation()}>
+      <div className="cmdk" role="dialog" aria-modal="true" aria-label="Find a figure" onClick={e => e.stopPropagation()}>
         <input
           ref={inputRef}
           placeholder="Find a figure or tradition…"
@@ -107,21 +123,28 @@ function CommandPalette({ people, onClose, onPick }) {
               <span className="cmdk-section-meta">{results.length} of {people.length.toLocaleString()}</span>
             </div>
           )}
-          {results.map((entry, i) => {
+          {results.map((r, i) => {
+            const entry = r.p;
             const tier = window.TYPE_TIER[entry.type];
             const alts = window.altNames(entry);
+            // Show the alt that actually matched the query, so picking
+            // "Wotan" explains why Odin is in the list.
+            const altShown = r.viaAlt || (alts.length > 0 ? alts[0] : null);
             return (
               <div
                 key={entry.id}
                 className={'cmdk-item' + (i === cursor ? ' active' : '')}
                 data-cmdk-idx={i}
-                onMouseEnter={() => setCursor(i)}
+                onMouseEnter={() => {
+                  if (Date.now() - (window.__kbNavTs || 0) < 250) return;
+                  setCursor(i);
+                }}
                 onClick={() => onPick(entry.id)}
               >
                 <div className="cmdk-item-name-line">
                   <window.TierIcon type={entry.type} size={12} />
                   <span className="name">{window.displayName(entry)}</span>
-                  {alts.length > 0 && <span className="alt">{alts[0]}</span>}
+                  {altShown && <span className="alt">{altShown}</span>}
                 </div>
                 <div className="meta">
                   <span>{tier?.label || entry.type}</span>

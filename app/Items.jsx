@@ -7,7 +7,7 @@
 //  here via window.allItems / window.itemById.
 // ═══════════════════════════════════════════════════════════════════════════
 
-const { useMemo: __iMemo, useEffect: __iEff, useState: __iState } = React;
+const { useMemo: __iMemo, useEffect: __iEff, useState: __iState, useRef: __iRef } = React;
 
 // kind → index-group label + display order. Curated kinds lead; the unset
 // catch-all ('other') always sinks to the bottom.
@@ -58,7 +58,7 @@ function externalName(ext) {
 }
 
 // ── Items index ────────────────────────────────────────────────────────────
-function Items({ items, byId, selectedItemId, onOpenItem }) {
+function Items({ items, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
   const [q, setQ] = __iState('');
 
   const groups = __iMemo(() => {
@@ -78,6 +78,16 @@ function Items({ items, byId, selectedItemId, onOpenItem }) {
       (itemKindRank(a[0]) - itemKindRank(b[0])) ||
       itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
   }, [items, q]);
+
+  // Report the flattened on-screen order (grouped + filtered) so the item
+  // detail's Prev/Next walks the same sequence the index displays, not the
+  // raw registry sort.
+  __iEff(() => {
+    if (!onVisibleOrder) return;
+    const ids = [];
+    for (const [, list] of groups) for (const it of list) ids.push(it.id);
+    onVisibleOrder(ids);
+  }, [groups, onVisibleOrder]);
 
   const showcased = __iMemo(() => items.filter((it) => it.custodyCount > 0).length, [items]);
 
@@ -187,9 +197,7 @@ function CustodyChain({ custody, byId, onOpenFigure }) {
                 <div className="custody-role">{humanizeItem(step.role)}</div>
                 <div
                   className={'custody-who' + (person ? ' link' : '')}
-                  onClick={person ? () => onOpenFigure(step.personId) : null}
-                  role={person ? 'button' : undefined}
-                  tabIndex={person ? 0 : -1}
+                  {...window.pressable(person ? () => onOpenFigure(step.personId) : null)}
                 >
                   {person ? (
                     <>
@@ -258,19 +266,43 @@ function ItemSources({ sources }) {
 // ── Item detail slide-over ───────────────────────────────────────────────────
 function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
   // Exit animation mirrors the figure Detail: keep the last item mounted for one
-  // beat after `item` goes null, then unmount.
+  // beat after `item` goes null, then unmount. (Shell renders this component
+  // unconditionally so the null transition — and the slide-out — happens.)
   const [local, setLocal] = __iState(item || null);
   const [closing, setClosing] = __iState(false);
+  const panelRef  = __iRef(null);
+  const openerRef = __iRef(null);
 
   __iEff(() => {
     if (item) { setLocal(item); setClosing(false); return; }
     if (local) {
       setClosing(true);
-      const t = setTimeout(() => { setLocal(null); setClosing(false); }, 180);
+      const t = setTimeout(() => {
+        setLocal(null);
+        setClosing(false);
+        const opener = openerRef.current;
+        openerRef.current = null;
+        if (opener && opener.focus && document.contains(opener)) {
+          try { opener.focus({ preventScroll: true }); } catch (_) {}
+        }
+      }, 180);
       return () => clearTimeout(t);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [item?.id]);
+
+  // Move focus into the dialog on open; remember the opener for restore.
+  const hadItemRef = __iRef(false);
+  __iEff(() => {
+    const has = !!local;
+    if (has && !hadItemRef.current) {
+      if (!openerRef.current) openerRef.current = document.activeElement;
+      if (panelRef.current) {
+        try { panelRef.current.focus({ preventScroll: true }); } catch (_) {}
+      }
+    }
+    hadItemRef.current = has;
+  }, [!!local]);
 
   __iEff(() => {
     if (!local) return;
@@ -286,8 +318,11 @@ function ItemDetail({ item, byId, onClose, onPrev, onNext, onOpenFigure }) {
     <>
       <div className={'detail-backdrop' + (closing ? ' closing' : '')} onClick={onClose} />
       <aside
+        ref={panelRef}
+        tabIndex={-1}
         className={'detail item-detail' + (closing ? ' closing' : '')}
         role="dialog"
+        aria-modal="true"
         aria-label={it.displayName}
       >
         <div className="detail-bar">

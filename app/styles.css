@@ -586,11 +586,6 @@ button:focus-visible,
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.browse-head .filter-chip .x {
-  color: var(--faint);
-  font-size: 11px;
-}
-.browse-head .filter-chip:hover .x { color: var(--accent-2); }
 .browse-head .filter-chip.filter-chip-clear-all {
   color: var(--accent);
   border-color: var(--accent-ring);
@@ -1289,22 +1284,6 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   color: var(--mute);
 }
 
-/* Tag clouds (domains, epithets, faculties, material) */
-
-.tags {
-  display: flex; flex-wrap: wrap; gap: 5px 6px;
-}
-.tag {
-  font: 400 11px/1 var(--font-mono);
-  letter-spacing: 0.02em;
-  color: var(--ink-2);
-  background: var(--surface-2);
-  border: 1px solid var(--rule-2);
-  padding: 5px 8px;
-  border-radius: 2px;
-}
-.tag.faint { color: var(--mute); background: transparent; }
-
 /* Rich rows — Domains / Epithets / Faculties / Material / Cult / Festivals.
    Each section gets a leading marker stripe in a distinct color so a long
    detail panel reads as a sequence of distinct chapters rather than a
@@ -1324,12 +1303,25 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   border-radius: 1px;
   background: var(--rule);
 }
-.section.section-domains  .rich-rows::before { background: #9C6B17; }
-.section.section-epithets .rich-rows::before { background: #6E4C9E; }
-.section.section-faculties .rich-rows::before { background: #3A8A55; }
-.section.section-material .rich-rows::before { background: #8B3A1F; }
-.section.section-cult     .rich-rows::before { background: #1F4E79; }
-.section.section-festivals .rich-rows::before { background: #B45C2D; }
+/* Cult/Festivals render as `.subsection.section-cult` (inside the Cult
+   wrapper), so the selectors must not require `.section`. Powers and
+   Material Culture use their own list containers, not `.rich-rows`. */
+.section-domains  .rich-rows::before { background: #9C6B17; }
+.section-epithets .rich-rows::before { background: #6E4C9E; }
+.section-cult      .rich-rows::before { background: #1F4E79; }
+.section-festivals .rich-rows::before { background: #B45C2D; }
+.section-powers   .powers-list,
+.section-material .material-list { position: relative; padding-left: 12px; }
+.section-powers   .powers-list::before,
+.section-material .material-list::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 4px; bottom: 4px;
+  width: 2px;
+  border-radius: 1px;
+}
+.section-powers   .powers-list::before   { background: #3A8A55; }
+.section-material .material-list::before { background: #8B3A1F; }
 
 .rich-row {
   display: grid;
@@ -1460,7 +1452,6 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--mute);
-  text-transform: uppercase;
 }
 .section.section-etymology .etym-body {
   font: 400 13.5px/1.6 var(--font-serif);
@@ -1751,19 +1742,6 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   background: var(--bg);
 }
 .cmdk-footer .kbd { margin-right: 4px; }
-
-.stub {
-  padding: 80px 24px;
-  text-align: center;
-  color: var(--mute);
-}
-.stub h2 {
-  font: 500 16px/1.3 var(--font-serif);
-  color: var(--ink);
-  margin: 0 0 6px;
-}
-.stub p { margin: 0; max-width: 50ch; margin: 0 auto; font-size: 13px; }
-.stub .kbd { margin-left: 4px; }
 
 /* ── ErrorBoundary ──────────────────────────────────────────────────────
    Fail-state fallback if a single component throws during render. */
@@ -2850,7 +2828,10 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 }
 .lineage-edges {
   position: absolute;
-  top: 6px; left: 6px;
+  /* Cards are absolutely positioned from the canvas's padding edge, so the
+     edge layer must share that origin — offsetting it by the 6px padding
+     drew every connector 6px right/below its card anchor. */
+  top: 0; left: 0;
   pointer-events: none;
   z-index: 1;
 }

@@ -6,9 +6,10 @@
  * Line format (one per record), emitted by the agents:
  *   <fig> :: POWER <id> | name=.. | term=.. | script=.. | rom=.. | gloss=.. | inherit=.. | src=..
  *   <fig> :: ITEM  <id> | name=.. | term=.. | script=.. | rom=.. | kind=.. | role=.. | gloss=.. | src=..
- * Reads each agent's final assistant message straight off the transcript on disk.
- * Writes /tmp/powers-items-parsed.json and prints stats. (Integration into data.js
- * is a separate step once the shape is validated.)
+ * Reads each agent's final assistant message from the committed
+ * data-sources/transcripts/ tree (TASKS_DIR is a legacy one-shot override for
+ * harvesting from a live session), then REWRITES app/data.js between the
+ * POWERS_ITEMS sentinels in place and prints stats.
  */
 const fs = require('fs');
 const path = require('path');
