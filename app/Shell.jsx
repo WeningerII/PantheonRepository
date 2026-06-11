@@ -203,6 +203,7 @@ function Shell() {
   const [view, setView] = __sState('browse');
   const [cmdkOpen, setCmdkOpen] = __sState(false);
   const [graphFocusId, setGraphFocusId] = __sState(null);
+  const [atlasFocus, setAtlasFocus] = __sState(null);   // tradition name
   const [selectedItemId, setSelectedItemId] = __sState(null);
   const searchRef = __sRef(null);
 
@@ -217,12 +218,13 @@ function Shell() {
   //   #/browse/<id>         — table + slide-over detail
   //   #/graph               — graph, no focus
   //   #/graph/<id>          — graph focused on id
-  //   #/atlas               — atlas (atlas-local state stays local for now)
+  //   #/atlas               — atlas, no focus
+  //   #/atlas/<tradition>   — atlas focused (and glided) to a territory
   //
   // Push vs replace: opening or closing a detail is a navigation (push);
   // j/k between two detail entries is a continuation (replace) so the
   // history doesn't fill with every keypress.
-  const urlPrevRef = __sRef({ view: 'browse', selId: null, gFocus: null, itemId: null, initialized: false });
+  const urlPrevRef = __sRef({ view: 'browse', selId: null, gFocus: null, aFocus: null, itemId: null, initialized: false });
 
   const applyHash = __sCb(() => {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
@@ -239,16 +241,20 @@ function Shell() {
     if (v === 'browse') {
       selection.setSelectedId(id);
       setGraphFocusId(null);
+      setAtlasFocus(null);
       setSelectedItemId(null);
     } else if (v === 'graph') {
       setGraphFocusId(id);
       selection.setSelectedId(null);
+      setAtlasFocus(null);
       setSelectedItemId(null);
     } else if (v === 'items') {
       setSelectedItemId(id);
       selection.setSelectedId(null);
       setGraphFocusId(null);
+      setAtlasFocus(null);
     } else {
+      setAtlasFocus(id);
       selection.setSelectedId(null);
       setGraphFocusId(null);
       setSelectedItemId(null);
@@ -275,11 +281,13 @@ function Shell() {
       target += '/' + encodeURIComponent(selection.selectedId);
     } else if (view === 'graph' && graphFocusId) {
       target += '/' + encodeURIComponent(graphFocusId);
+    } else if (view === 'atlas' && atlasFocus) {
+      target += '/' + encodeURIComponent(atlasFocus);
     } else if (view === 'items' && selectedItemId) {
       target += '/' + encodeURIComponent(selectedItemId);
     }
     if (target === window.location.hash) {
-      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, itemId: selectedItemId, initialized: true };
+      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, initialized: true };
       return;
     }
     const prev = urlPrevRef.current;
@@ -292,7 +300,7 @@ function Shell() {
       if (!['browse', 'graph', 'atlas', 'items'].includes(first)) {
         window.history.replaceState({}, '', target);
       }
-      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, itemId: selectedItemId, initialized: true };
+      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, initialized: true };
       return;
     }
     // Replace if: same view, moving between two non-null detail entries
@@ -302,6 +310,7 @@ function Shell() {
       (
         (view === 'browse' && prev.selId != null && selection.selectedId != null) ||
         (view === 'graph' && prev.gFocus != null && graphFocusId != null) ||
+        (view === 'atlas' && prev.aFocus != null && atlasFocus != null) ||
         (view === 'items' && prev.itemId != null && selectedItemId != null)
       );
     if (continuation) {
@@ -309,8 +318,8 @@ function Shell() {
     } else {
       window.history.pushState({}, '', target);
     }
-    urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, itemId: selectedItemId, initialized: true };
-  }, [view, selection.selectedId, graphFocusId, selectedItemId]);
+    urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, initialized: true };
+  }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId]);
   // ─────────────────────────────────────────────────────────────────────
 
   const selectedEntry = selection.selectedId ? byId.get(selection.selectedId) : null;
@@ -476,6 +485,8 @@ function Shell() {
             <window.Atlas
               atlas={atlas}
               byId={byId}
+              focused={atlasFocus}
+              setFocused={setAtlasFocus}
               traditionFilter={filters.traditions}
               onOpenDetail={(tradition) => {
                 // "N figures →" click: drop into Browse with the tradition selected

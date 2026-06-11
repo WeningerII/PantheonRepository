@@ -2134,6 +2134,20 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   margin-left: auto;
   display: flex; align-items: center; gap: 8px;
 }
+.atlas-find {
+  font: 400 12px/1.2 var(--font-mono);
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+  border-radius: 2px;
+  padding: 5px 8px;
+  width: 150px;
+}
+.atlas-find:focus {
+  outline: none;
+  border-color: var(--accent-ring);
+}
+.atlas-find::placeholder { color: var(--faint); }
 .graph-focused-label {
   font: 400 11px/1 var(--font-mono);
   letter-spacing: 0.04em;
