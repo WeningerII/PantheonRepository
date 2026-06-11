@@ -46,8 +46,8 @@ test('seeds the full figure corpus (growing)', () => {
   assert.ok(Object.keys(people).length >= 1850, `expected >= 1850 figures, got ${Object.keys(people).length}`);
 });
 
-test('seeds 170 atlas territories', () => {
-  assert.strictEqual(Object.keys(atlas).length, 170);
+test('seeds 238 atlas territories (every tradition mapped)', () => {
+  assert.strictEqual(Object.keys(atlas).length, 238);
 });
 
 test('exposes the constants the UI reads on window.__PR', () => {
@@ -78,14 +78,12 @@ test('migrate reports no hard-schema (Layer 1) violations', () => {
 test('warn-level integrity drift stays at its accepted ceilings', () => {
   const all = logs.warn.join('\n');
   const num = (re) => { const m = all.match(re); return m ? parseInt(m[1], 10) : 0; };
-  // Ceilings pin the KNOWN drift so it can only shrink deliberately — these
-  // counts could previously grow 100x without any test moving. Wanema/Alalu
-  // and the four ITEMS_GEN figures are authored now, so those two ceilings
-  // are hard zeros; the era-gap ceiling ratchets to 0 with the wave-6
-  // tradition-constants backfill.
+  // Hard zeros, all of them: every dangling reference, unknown ITEMS_GEN
+  // key, and unmapped era value has been resolved (waves 6 + 6b backfilled
+  // all 182 missing traditions). Any recurrence is a regression.
   const danglingCeiling = 0;
   const unknownItemCeiling = 0;
-  const eraGapCeiling = 336;   // era values in the 68 traditions still awaiting wave-6b constants
+  const eraGapCeiling = 0;
   assert.ok(num(/(\d+) dangling references/) <= danglingCeiling,
     `dangling references grew past ${danglingCeiling}:\n${all.split('\n').filter((l) => /dangling/.test(l)).join('\n')}`);
   const unknownItems = (all.match(/generated item for unknown figure/g) || []).length;
