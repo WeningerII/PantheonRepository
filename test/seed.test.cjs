@@ -43,7 +43,9 @@ const { ctx, logs, people, atlas } = loadSeed();
 test('seeds the full figure corpus (growing)', () => {
   // The corpus is deliberately expanding as missing central figures are added;
   // assert a floor rather than an exact count.
-  assert.ok(Object.keys(people).length >= 1850, `expected >= 1850 figures, got ${Object.keys(people).length}`);
+  // (1,851 minus the two absorbed duplicate entities — Tyche and the Erinyes
+  // each existed twice; wave 7 merged them.)
+  assert.ok(Object.keys(people).length >= 1845, `expected >= 1845 figures, got ${Object.keys(people).length}`);
 });
 
 test('seeds 238 atlas territories (every tradition mapped)', () => {
@@ -91,8 +93,42 @@ test('warn-level integrity drift stays at its accepted ceilings', () => {
     `ITEMS_GEN keys without an authored figure grew to ${unknownItems}`);
   assert.ok(num(/(\d+) era values unresolvable/) <= eraGapCeiling,
     'era values fell out of ERA_ORDER coverage (dates/sort silently degraded)');
+  // Wave 7 resolved every drift case: 18 types adopted from the computed
+  // tier, 10 documented authored-tier stances (which surface on an info
+  // line, not as drift). Drift is a hard zero now.
   const drift = num(/Tier-classification drift in (\d+) entries/);
-  assert.ok(drift <= 30, `tier-classification drift grew to ${drift} entries (accepted ceiling 30)`);
+  assert.strictEqual(drift, 0, `tier-classification drift reappeared (${drift} entries)`);
+  assert.ok(!/Layer 3 era inversions/.test(all), 'era inversions reappeared');
+});
+
+test('documented authored-tier stances are exactly the reviewed ten', () => {
+  const line = logs.info.find((m) => /authored-tier stances/.test(m)) || '';
+  const m = line.match(/(\d+) documented authored-tier stances/);
+  assert.ok(m, 'authored-stances info line missing');
+  assert.strictEqual(parseInt(m[1], 10), 10, `expected the 10 reviewed stances, got ${m[1]}`);
+});
+
+test('symmetric relations are fully reciprocal and duplicate entities stay merged', () => {
+  const SYM = new Set(['spouse','sibling','twin sibling','half sibling','half-sibling','lover','enemy','rival','ally','companion','sworn companion','equated-with','interpretatio']);
+  const missing = [];
+  for (const p of Object.values(people)) {
+    for (const r of p.relations || []) {
+      if (!r.personId || !SYM.has((r.kind || '').toLowerCase()) || !people[r.personId]) continue;
+      const back = (people[r.personId].relations || []).some((rr) => rr.personId === p.id &&
+        (rr.kind || '').toLowerCase() === (r.kind || '').toLowerCase());
+      if (!back) missing.push(`${p.id} -[${r.kind}]-> ${r.personId}`);
+    }
+  }
+  assert.deepStrictEqual(missing, [], `one-way symmetric relations:\n${missing.join('\n')}`);
+  // The absorbed duplicates must not return.
+  assert.ok(!people['greek_apollod_tyche'] && !people['greek_erinyes'], 'an absorbed duplicate entity reappeared');
+  // Aliased items resolve to one object (one Talos, one xirang).
+  const items = ctx.window.__PR.items;
+  assert.strictEqual(items['talos'], items['europa-talos'], 'Talos split back into two items');
+  assert.strictEqual(items['yu-xirang'], items['gun-xirang'], 'the xirang split back into two items');
+  const xirangHolders = items['yu-xirang'].holders.map((h) => h.personId);
+  assert.ok(xirangHolders.includes('chinese_gun') && xirangHolders.includes('chinese_yu_the_great'),
+    'the xirang custody pair lost a holder');
 });
 
 test('getEntryDates resolves a known entry to the documented shape', () => {
