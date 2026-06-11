@@ -42,3 +42,27 @@ test('a present-but-empty stored value does not blank the registry', async () =>
   assert.ok(rowCount(app) > 100, `expected the seed corpus, got ${rowCount(app)} rows`);
   app.close();
 });
+
+test('a stale atlas in localStorage cannot pin the map to an old territory set', async () => {
+  // The exact production incident: a returning visitor's browser held the
+  // pre-backfill 56-territory atlas under the old key, the loader preferred
+  // storage, and the live site rendered 56 territories (0 after filtering to
+  // any new tradition) while the shipped seed had 238. The fix is twofold:
+  // the old key is removed at boot, and the atlas (pure seed data, no edit
+  // UI) is overwritten on every load — even a stale value under the CURRENT
+  // key must be replaced.
+  const staleOld = { Greek: { polygons: [] } };
+  const staleCurrent = { Greek: { polygons: [] }, Roman: { polygons: [] } };
+  const app = await bootApp({
+    preSeedStorage: (window) => {
+      window.localStorage.setItem('pantheon_atlas_v2', JSON.stringify(staleOld));
+      window.localStorage.setItem('pantheon_atlas_v3', JSON.stringify(staleCurrent));
+    },
+  });
+  assert.strictEqual(app.window.localStorage.getItem('pantheon_atlas_v2'), null,
+    'the retired atlas key was not cleaned up');
+  const stored = JSON.parse(app.window.localStorage.getItem('pantheon_atlas_v3'));
+  assert.ok(Object.keys(stored).length >= 238,
+    `stale atlas under the current key survived the boot (got ${Object.keys(stored).length} territories)`);
+  app.close();
+});
