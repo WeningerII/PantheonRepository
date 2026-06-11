@@ -1,0 +1,988 @@
+I now have all the verified detail I need. Let me compile the complete JSON array of missing figures across the three traditions.
+
+Final roster (all verified attested, none in the existing-figures keys):
+- **Polynesian (Māori)**: Tangaroa, Ranginui, Papatūānuku, Tāne, Tūmatauenga, Rongo, Haumia-tiketike, Tāwhirimātea, Whiro, Hine-nui-te-pō (10)
+- **Polynesian (Hawaiian)**: Pele, Kāne, Kanaloa, Lono, Kū, Hina, Nāmaka, Poliʻahu (8)
+- **Slavic**: Dazhbog, Stribog, Svarozhich, Lada, Marzanna, Chernobog, Belobog, Rod, Zorya, Simargl, Triglav (11)
+- **Finnish**: Ukko, Ahti, Tapio, Mielikki, Ilmatar, Pellervoinen, Tuoni, Tuonetar, Lempo, Pekko (10)
+
+Here is the completed registry. All entries use the required prefixes, attested orthography/romanization, cited faculties (distinct from domains), named material culture where attested, and canonical `parentIds` using in-corpus/this-batch ids.
+
+```json
+[
+  {
+    "id": "polynesian_ranginui",
+    "name": { "primary": "Ranginui", "alt": ["Rangi", "Raki"], "transliterations": { "maori": "Ranginui", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "rangi", "script": "Māori", "rom": "rangi" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855), 'The Children of Heaven and Earth'" }] },
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "ua", "script": "Māori", "rom": "ua" }, "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Ranginui – the sky'" }] }
+    ],
+    "faculties": [
+      { "id": "weep-rain", "name": "Weep rain and dew toward the earth", "term": { "value": "roimata", "script": "Māori", "rom": "roimata" }, "inheritability": "none", "notes": "His tears for Papatūānuku fall as rain and dew.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Ranginui – the sky'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori primordial sky father, locked in embrace with Papatūānuku until separated by their sons."
+  },
+  {
+    "id": "polynesian_papatuanuku",
+    "name": { "primary": "Papatūānuku", "alt": ["Papa", "Papatuanuku"], "transliterations": { "maori": "Papatūānuku", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "whenua", "script": "Māori", "rom": "whenua" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855), 'The Children of Heaven and Earth'" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "whakatipu", "script": "Māori", "rom": "whakatipu" }, "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Papatūānuku – the land'" }] }
+    ],
+    "faculties": [
+      { "id": "nurture-life", "name": "Nurture all living things upon her body", "term": { "value": "whāngai", "script": "Māori", "rom": "whāngai" }, "inheritability": "none", "notes": "Sustains humans and plants from her earthen body.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Papatūānuku – the land'" }] },
+      { "id": "rising-mist", "name": "Send rising mist as sighs of longing", "term": { "value": "kohu", "script": "Māori", "rom": "kohu" }, "inheritability": "none", "notes": "Mist from forests is her yearning for Ranginui.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori primordial earth mother and nurturer of all life."
+  },
+  {
+    "id": "polynesian_tane",
+    "name": { "primary": "Tāne", "alt": ["Tāne Mahuta", "Tāne-nui-a-Rangi", "Tāne-te-wānanga"], "transliterations": { "maori": "Tāne", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "forests", "contextTag": "lifelong", "term": { "value": "ngahere", "script": "Māori", "rom": "ngahere" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855), 'The Children of Heaven and Earth'" }] },
+      { "sphereId": "birds", "contextTag": "lifelong", "term": { "value": "manu", "script": "Māori", "rom": "manu" }, "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Te Waonui a Tāne – forest mythology'" }] }
+    ],
+    "faculties": [
+      { "id": "separate-earth-sky", "name": "Separate earth and sky with his legs", "term": { "value": "tokona", "script": "Māori", "rom": "tokona" }, "inheritability": "none", "notes": "Lay on back and pushed Rangi and Papa apart.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "id": "fashion-first-woman", "name": "Fashion the first woman from earth", "term": { "value": "Hine-ahu-one", "script": "Māori", "rom": "Hine-ahu-one" }, "inheritability": "none", "notes": "Formed Hineahuone from clay at Kurawaka.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Te Waonui a Tāne'" }] },
+      { "id": "fetch-baskets-knowledge", "name": "Ascend the heavens to fetch knowledge baskets", "term": { "value": "ngā kete o te wānanga", "script": "Māori", "rom": "ngā kete o te wānanga" }, "inheritability": "none", "notes": "Climbed to Te Toi-o-ngā-rangi for three kete.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Ranginui as knowledge and life'" }] },
+      { "id": "adorn-heavens", "name": "Adorn the sky father with stars", "term": { "value": "whetū", "script": "Māori", "rom": "whetū" }, "inheritability": "none", "notes": "Clothed Ranginui with the sun, moon and stars.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Te Waonui a Tāne'" }] }
+    ],
+    "materialCulture": [
+      { "id": "kete-tuauri", "kind": "object", "name": "Basket of darkness (kete-tuauri)", "term": { "value": "te kete-tuauri", "script": "Māori", "rom": "te kete-tuauri" }, "role": "heir", "notes": "One of three baskets of sacred knowledge he retrieved.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Ranginui as knowledge and life'" }] },
+      { "id": "kete-aronui", "kind": "object", "name": "Basket of pursuit (kete-aronui)", "term": { "value": "te kete-aronui", "script": "Māori", "rom": "te kete-aronui" }, "role": "heir", "notes": "Basket of knowledge humans currently seek.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Ranginui as knowledge and life'" }] },
+      { "id": "kete-tuatea", "kind": "object", "name": "Basket of light (kete-tuatea)", "term": { "value": "te kete-tuatea", "script": "Māori", "rom": "te kete-tuatea" }, "role": "heir", "notes": "Basket of present, known knowledge.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Ranginui as knowledge and life'" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of forests and birds; separated earth and sky and made the first woman."
+  },
+  {
+    "id": "polynesian_tumatauenga",
+    "name": { "primary": "Tūmatauenga", "alt": ["Tū", "Tū-mata-uenga"], "transliterations": { "maori": "Tūmatauenga", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "pakanga", "script": "Māori", "rom": "pakanga" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855), 'The Children of Heaven and Earth'" }] },
+      { "sphereId": "humankind", "contextTag": "lifelong", "term": { "value": "tangata", "script": "Māori", "rom": "tangata" }, "sources": [{ "kind": "primary", "reference": "Māori mythology (Te Ara); Grey (1855)" }] }
+    ],
+    "faculties": [
+      { "id": "withstand-storm", "name": "Withstand the storm-god's assault unbroken", "term": { "value": "tū tonu", "script": "Māori", "rom": "tū tonu" }, "inheritability": "partial", "notes": "Only brother to stand firm against Tāwhirimātea.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "id": "devise-snares-traps", "name": "Devise snares, nets and traps to subdue siblings", "term": { "value": "mahanga", "script": "Māori", "rom": "mahanga" }, "inheritability": "full", "notes": "Made tools to hunt, fish and farm his brothers' offspring.", "sources": [{ "kind": "primary", "reference": "Māori mythology (Te Ara); Grey (1855)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of war and progenitor/archetype of humankind."
+  },
+  {
+    "id": "polynesian_rongo",
+    "name": { "primary": "Rongo", "alt": ["Rongo-mā-Tāne", "Rongomatane"], "transliterations": { "maori": "Rongo", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "māra kai", "script": "Māori", "rom": "māra kai" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "sphereId": "peace", "contextTag": "lifelong", "term": { "value": "rongo", "script": "Māori", "rom": "rongo" }, "sources": [{ "kind": "primary", "reference": "Māori mythology (Te Ara)" }] }
+    ],
+    "faculties": [
+      { "id": "ripen-kumara", "name": "Make cultivated crops grow and ripen", "term": { "value": "kūmara", "script": "Māori", "rom": "kūmara" }, "inheritability": "full", "notes": "God of the sweet potato and all cultivated food plants.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of cultivated food (especially kūmara) and of peace."
+  },
+  {
+    "id": "polynesian_haumiatiketike",
+    "name": { "primary": "Haumia-tiketike", "alt": ["Haumia"], "transliterations": { "maori": "Haumia-tiketike", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "wild-food", "contextTag": "lifelong", "term": { "value": "aruhe", "script": "Māori", "rom": "aruhe" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] }
+    ],
+    "faculties": [
+      { "id": "provide-fernroot", "name": "Provide uncultivated wild foods and fern root", "term": { "value": "aruhe", "script": "Māori", "rom": "aruhe" }, "inheritability": "full", "notes": "God of the bracken-fern rhizome and all wild plant food.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "id": "hide-in-earth", "name": "Hide within his mother's body from the storm", "term": { "value": "huna", "script": "Māori", "rom": "huna" }, "inheritability": "none", "notes": "Sheltered in Papatūānuku to escape Tāwhirimātea.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of uncultivated wild food, especially edible fern root."
+  },
+  {
+    "id": "polynesian_tawhirimatea",
+    "name": { "primary": "Tāwhirimātea", "alt": ["Tāwhiri"], "transliterations": { "maori": "Tāwhirimātea", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "weather", "contextTag": "lifelong", "term": { "value": "huarere", "script": "Māori", "rom": "huarere" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "sphereId": "wind-storms", "contextTag": "lifelong", "term": { "value": "hau", "script": "Māori", "rom": "hau" }, "sources": [{ "kind": "primary", "reference": "Māori mythology (Te Ara)" }] }
+    ],
+    "faculties": [
+      { "id": "raise-storms", "name": "Raise winds, hurricanes and thunderstorms", "term": { "value": "āwhā", "script": "Māori", "rom": "āwhā" }, "inheritability": "full", "notes": "Commands squalls, whirlwinds, rain, mist and storm clouds.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "id": "sire-winds", "name": "Beget the many winds and clouds as offspring", "term": { "value": "ngā hau e whā", "script": "Māori", "rom": "ngā hau e whā" }, "inheritability": "full", "notes": "Fathered the winds of the four quarters and cloud kinds.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of weather and storms; alone he opposed the separation of his parents."
+  },
+  {
+    "id": "polynesian_tangaroa",
+    "name": { "primary": "Tangaroa", "alt": ["Takaroa", "Tangaloa"], "transliterations": { "maori": "Tangaroa", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sea", "contextTag": "lifelong", "term": { "value": "moana", "script": "Māori", "rom": "moana" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }] },
+      { "sphereId": "fish", "contextTag": "lifelong", "term": { "value": "ika", "script": "Māori", "rom": "ika" }, "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia; Tangaroa (Wikipedia)" }] }
+    ],
+    "faculties": [
+      { "id": "command-tides", "name": "Govern the sea, tides and its creatures", "term": { "value": "tai", "script": "Māori", "rom": "tai" }, "inheritability": "full", "notes": "Father of fish and reptiles; rules ocean swells.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Tangaroa – the sea'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of the sea and progenitor of fish; driven into the ocean by the storm-god."
+  },
+  {
+    "id": "polynesian_whiro",
+    "name": { "primary": "Whiro", "alt": ["Whiro-te-tipua"], "transliterations": { "maori": "Whiro", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_ranginui", "polynesian_papatuanuku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "darkness", "contextTag": "lifelong", "term": { "value": "pō", "script": "Māori", "rom": "pō" }, "sources": [{ "kind": "primary", "reference": "Best, The Maori (1924); Māori mythology (Te Ara)" }] },
+      { "sphereId": "disease-death", "contextTag": "lifelong", "term": { "value": "mate", "script": "Māori", "rom": "mate" }, "sources": [{ "kind": "primary", "reference": "Best, The Maori (1924)" }] }
+    ],
+    "faculties": [
+      { "id": "spread-sickness", "name": "Send illness, decay and misfortune to humankind", "term": { "value": "mate", "script": "Māori", "rom": "mate" }, "inheritability": "full", "notes": "Lord of darkness embodying disease and corruption.", "sources": [{ "kind": "primary", "reference": "Best, The Maori (1924)" }] },
+      { "id": "contend-with-tane", "name": "Wage perpetual enmity against Tāne of the light", "term": { "value": "whawhai", "script": "Māori", "rom": "whawhai" }, "inheritability": "none", "notes": "Eternal adversary of his brother Tāne.", "sources": [{ "kind": "primary", "reference": "Best, The Maori (1924); Māori mythology (Te Ara)" }] }
+    ],
+    "materialCulture": [
+      { "id": "taiwhetuki", "kind": "place", "name": "Taiwhetuki, House of Death", "term": { "value": "Taiwhetuki", "script": "Māori", "rom": "Taiwhetuki" }, "role": "owner", "notes": "Dark cave where illnesses and evil are kept.", "sources": [{ "kind": "primary", "reference": "Best, The Maori (1924)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Best, The Maori (1924)" }], "weight": "primary" }
+    ],
+    "notes": "Māori god of darkness, disease and death; antithesis of Tāne."
+  },
+  {
+    "id": "polynesian_hinenuitepo",
+    "name": { "primary": "Hine-nui-te-pō", "alt": ["Hine-tītama", "Great Lady of the Night"], "transliterations": { "maori": "Hine-nui-te-pō", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["polynesian_tane"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "mate", "script": "Māori", "rom": "mate" }, "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855); Te Ara, 'Tangihanga'" }] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "Rarohenga", "script": "Māori", "rom": "Rarohenga" }, "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Tangihanga – death customs'" }] }
+    ],
+    "faculties": [
+      { "id": "receive-the-dead", "name": "Receive and guide the spirits of the dead", "term": { "value": "wairua", "script": "Māori", "rom": "wairua" }, "inheritability": "none", "notes": "Rules Rarohenga, drawing all her descendants to her.", "sources": [{ "kind": "primary", "reference": "Te Ara Encyclopedia, 'Tangihanga'" }] },
+      { "id": "crush-maui", "name": "Crush intruders between her obsidian thighs", "term": { "value": "ngā kuru pounamu", "script": "Māori", "rom": "ngā kuru pounamu" }, "inheritability": "none", "notes": "Killed Māui-tikitiki when he tried to win immortality.", "sources": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855), 'Māui seeks immortality'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Grey, Polynesian Mythology (1855)" }], "weight": "primary" }
+    ],
+    "notes": "Māori goddess of night and death; once Hine-tītama, daughter and wife of Tāne, who fled to the underworld."
+  },
+  {
+    "id": "polynesian_kane",
+    "name": { "primary": "Kāne", "alt": ["Kāne-milohai", "Kāneikawaiola"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Kāne", "script": "Hawaiian", "rom": "Kāne" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Kane and Kanaloa'" }] },
+      { "sphereId": "fresh-water", "contextTag": "lifelong", "term": { "value": "wai ola", "script": "Hawaiian", "rom": "wai ola" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] },
+      { "sphereId": "sunlight", "contextTag": "lifelong", "term": { "value": "lā", "script": "Hawaiian", "rom": "lā" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "faculties": [
+      { "id": "give-life", "name": "Give life and form to humankind", "term": { "value": "ola", "script": "Hawaiian", "rom": "ola" }, "inheritability": "none", "notes": "Highest of the four gods; creator and source of life.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] },
+      { "id": "open-springs", "name": "Open freshwater springs by striking the ground", "term": { "value": "puna wai", "script": "Hawaiian", "rom": "puna wai" }, "inheritability": "none", "notes": "Travelling with Kanaloa, drew water from rock for ʻawa.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Kane and Kanaloa'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "Highest of the four great Hawaiian gods; deity of creation, sunlight and fresh water."
+  },
+  {
+    "id": "polynesian_kanaloa",
+    "name": { "primary": "Kanaloa", "alt": ["Tangaloa cognate"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "ocean", "contextTag": "lifelong", "term": { "value": "moana", "script": "Hawaiian", "rom": "moana" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Kane and Kanaloa'" }] },
+      { "sphereId": "deep-ocean-wind", "contextTag": "lifelong", "term": { "value": "makani", "script": "Hawaiian", "rom": "makani" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "faculties": [
+      { "id": "rule-deep-sea", "name": "Rule the ocean and its deep currents", "term": { "value": "kai", "script": "Hawaiian", "rom": "kai" }, "inheritability": "none", "notes": "God of the sea, symbolised by the squid or octopus.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "One of the four great Hawaiian gods; lord of the ocean and constant companion of Kāne."
+  },
+  {
+    "id": "polynesian_ku",
+    "name": { "primary": "Kū", "alt": ["Kūkaʻilimoku", "Kū-ka-ili-moku"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "kaua", "script": "Hawaiian", "rom": "kaua" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'The Kū gods'" }] },
+      { "sphereId": "politics-rule", "contextTag": "lifelong", "term": { "value": "aliʻi", "script": "Hawaiian", "rom": "aliʻi" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "faculties": [
+      { "id": "grant-victory", "name": "Grant strength and victory in battle", "term": { "value": "lanakila", "script": "Hawaiian", "rom": "lanakila" }, "inheritability": "none", "notes": "As Kūkaʻilimoku, war patron of ruling chiefs.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [
+      { "id": "kukailimoku-image", "kind": "object", "name": "Feathered war-god image (Kūkaʻilimoku)", "term": { "value": "Kūkaʻilimoku", "script": "Hawaiian", "rom": "Kūkaʻilimoku" }, "role": "owner", "notes": "Feathered effigy 'the land-snatcher' carried into war.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "One of the four great Hawaiian gods; god of war and patron of chiefs."
+  },
+  {
+    "id": "polynesian_lono",
+    "name": { "primary": "Lono", "alt": ["Lonomakua", "Lono-i-ka-makahiki"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "mahiʻai", "script": "Hawaiian", "rom": "mahiʻai" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Lono'" }] },
+      { "sphereId": "rain-fertility", "contextTag": "lifelong", "term": { "value": "ua", "script": "Hawaiian", "rom": "ua" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "faculties": [
+      { "id": "bring-rains", "name": "Bring the fertilizing winter rains and harvests", "term": { "value": "hoʻoulu ʻai", "script": "Hawaiian", "rom": "hoʻoulu ʻai" }, "inheritability": "none", "notes": "Presides over the Makahiki season of peace and plenty.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "One of the four great Hawaiian gods; god of agriculture, rain and the Makahiki festival."
+  },
+  {
+    "id": "polynesian_pele",
+    "name": { "primary": "Pele", "alt": ["Pelehonuamea", "Ka wahine ʻai honua"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "volcanoes", "contextTag": "lifelong", "term": { "value": "pele", "script": "Hawaiian", "rom": "pele" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Pele'" }] },
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "ahi", "script": "Hawaiian", "rom": "ahi" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "faculties": [
+      { "id": "command-lava", "name": "Erupt volcanoes and pour forth lava", "term": { "value": "pele", "script": "Hawaiian", "rom": "pele" }, "inheritability": "none", "notes": "Creates new land; her home is Halemaʻumaʻu at Kīlauea.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] },
+      { "id": "shapeshift", "name": "Appear as old crone or radiant young woman", "term": { "value": "hoʻololi", "script": "Hawaiian", "rom": "hoʻololi" }, "inheritability": "none", "notes": "Roams disguised, testing the hospitality of mortals.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [
+      { "id": "pa-oa", "kind": "object", "name": "Digging stick Pāoa", "term": { "value": "Pāoa", "script": "Hawaiian", "rom": "Pāoa" }, "role": "wielder", "notes": "Magic staff she struck to dig fire-pits across the islands.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Pele'" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "Hawaiian goddess of volcanoes and fire, creator of the islands, dwelling at Kīlauea."
+  },
+  {
+    "id": "polynesian_namaka",
+    "name": { "primary": "Nāmaka", "alt": ["Nāmakaokahaʻi", "Nā-maka-o-Kahaʻi"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sea", "contextTag": "lifelong", "term": { "value": "kai", "script": "Hawaiian", "rom": "kai" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'Pele'" }] }
+    ],
+    "faculties": [
+      { "id": "quench-fire", "name": "Hurl sea-water and waves to quench Pele's fires", "term": { "value": "ʻale", "script": "Hawaiian", "rom": "ʻale" }, "inheritability": "none", "notes": "Sea-goddess sister who pursues and douses Pele.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "Hawaiian sea-goddess, elder sister and rival of Pele."
+  },
+  {
+    "id": "polynesian_poliahu",
+    "name": { "primary": "Poliʻahu", "alt": ["Poliahu"], "transliterations": { "maori": "", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "snow", "contextTag": "lifelong", "term": { "value": "hau", "script": "Hawaiian", "rom": "hau" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940), 'The Maiden of the Mountain'" }] }
+    ],
+    "faculties": [
+      { "id": "summon-snow", "name": "Mantle the mountain in snow and ice", "term": { "value": "hau kea", "script": "Hawaiian", "rom": "hau kea" }, "inheritability": "none", "notes": "Snow-goddess of Mauna Kea; freezes Pele's lava back.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [
+      { "id": "snow-mantle", "kind": "garment", "name": "Mantle of snow (kapa hau)", "term": { "value": "kapa hau", "script": "Hawaiian", "rom": "kapa hau" }, "role": "owner", "notes": "Gleaming white cloak of snow she wears on Mauna Kea.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }], "weight": "primary" }
+    ],
+    "notes": "Hawaiian snow-goddess of Mauna Kea, rival of Pele."
+  },
+  {
+    "id": "polynesian_hina",
+    "name": { "primary": "Hina", "alt": ["Hina-i-ka-malama", "Hina-of-the-moon"], "transliterations": { "maori": "Hina (Hine)", "slavic": "", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Polynesian",
+    "primaryTradition": "Polynesian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "mahina", "script": "Hawaiian", "rom": "mahina" }, "sources": [{ "kind": "primary", "reference": "Westervelt, Legends of Ma-ui (1910), 'Hina'" }] },
+      { "sphereId": "craft-kapa", "contextTag": "lifelong", "term": { "value": "kapa", "script": "Hawaiian", "rom": "kapa" }, "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "faculties": [
+      { "id": "ascend-moon", "name": "Ascend to dwell within the moon", "term": { "value": "piʻi i ka mahina", "script": "Hawaiian", "rom": "piʻi i ka mahina" }, "inheritability": "none", "notes": "Fled to the moon, where she beats kapa as Lono-moku.", "sources": [{ "kind": "primary", "reference": "Westervelt, Legends of Ma-ui (1910)" }] },
+      { "id": "beat-kapa", "name": "Beat out bark-cloth (kapa)", "term": { "value": "kuku kapa", "script": "Hawaiian", "rom": "kuku kapa" }, "inheritability": "partial", "notes": "Patroness of kapa-makers; her cloth seen as moonlit clouds.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "materialCulture": [
+      { "id": "kapa-beater", "kind": "tool", "name": "Bark-cloth beater (iʻe kuku)", "term": { "value": "iʻe kuku", "script": "Hawaiian", "rom": "iʻe kuku" }, "role": "wielder", "notes": "Wooden beater she uses to make kapa in the moon.", "sources": [{ "kind": "primary", "reference": "Beckwith, Hawaiian Mythology (1940)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Westervelt, Legends of Ma-ui (1910)" }], "weight": "primary" }
+    ],
+    "notes": "Pan-Polynesian lunar goddess and patroness of kapa; in Hawaiian tradition a mother of Māui."
+  },
+  {
+    "id": "slavic_dazhbog",
+    "name": { "primary": "Dazhbog", "alt": ["Dažbog", "Dazhdbog", "Daždĭbogŭ"], "transliterations": { "maori": "", "slavic": "Дажьбогъ", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["slavic_svarog"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Дажьбогъ", "script": "Slavic", "rom": "Dažĭbogŭ" }, "sources": [{ "kind": "primary", "reference": "Primary Chronicle (Povest' vremennykh let), s.a. 6488 (980)" }] },
+      { "sphereId": "prosperity", "contextTag": "lifelong", "term": { "value": "богатство", "script": "Slavic", "rom": "bogatstvo" }, "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov, Slavic linguistic reconstructions" }] }
+    ],
+    "faculties": [
+      { "id": "give-wealth", "name": "Give out wealth, daylight and good fortune", "term": { "value": "дати", "script": "Slavic", "rom": "dati" }, "inheritability": "partial", "notes": "The 'giving god'; bestows sun and prosperity on men.", "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov, Issledovaniya v oblasti slavyanskikh drevnostey" }] },
+      { "id": "drive-sun", "name": "Carry the sun across the heavens", "term": { "value": "солнце", "script": "Slavic", "rom": "solntse" }, "inheritability": "none", "notes": "Hypostasis of the sun; the Zoryas attend his daily course.", "sources": [{ "kind": "primary", "reference": "Hypatian Codex interpolation (Malalas gloss); Lay of Igor's Campaign" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Primary Chronicle, s.a. 980 (Vladimir's pantheon)" }], "weight": "primary" }
+    ],
+    "notes": "East Slavic solar deity, son of Svarog; one of Vladimir's six idols of 980."
+  },
+  {
+    "id": "slavic_stribog",
+    "name": { "primary": "Stribog", "alt": ["Stribogŭ"], "transliterations": { "maori": "", "slavic": "Стрибогъ", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "wind", "contextTag": "lifelong", "term": { "value": "Стрибогъ", "script": "Slavic", "rom": "Stribogŭ" }, "sources": [{ "kind": "primary", "reference": "Primary Chronicle, s.a. 980; Lay of Igor's Campaign" }] }
+    ],
+    "faculties": [
+      { "id": "loose-winds", "name": "Loose the winds across land and sea", "term": { "value": "вѣтри", "script": "Slavic", "rom": "větri" }, "inheritability": "full", "notes": "The winds are called 'Stribog's grandsons' in the Lay.", "sources": [{ "kind": "primary", "reference": "Lay of Igor's Campaign (Slovo o polku Igoreve)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Primary Chronicle, s.a. 980 (Vladimir's pantheon)" }], "weight": "primary" }
+    ],
+    "notes": "East Slavic wind god and ancestor of the winds; one of Vladimir's six idols of 980."
+  },
+  {
+    "id": "slavic_svarozhich",
+    "name": { "primary": "Svarozhich", "alt": ["Svarožič", "Zuarasici"], "transliterations": { "maori": "", "slavic": "Сварожичь", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["slavic_svarog"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "огнь", "script": "Slavic", "rom": "ognĭ" }, "sources": [{ "kind": "primary", "reference": "Thietmar of Merseburg, Chronicon VI; Bruno of Querfurt, Letter to Henry II" }] }
+    ],
+    "faculties": [
+      { "id": "embody-hearth-fire", "name": "Embody and kindle the earthly hearth fire", "term": { "value": "огнь", "script": "Slavic", "rom": "ognĭ" }, "inheritability": "partial", "notes": "Personifies the living flame of forge and hearth.", "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov; cf. Russian zagovory invoking 'Svarozhich' as fire" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Thietmar of Merseburg, Chronicon (Zuarasici at Radogost)" }], "weight": "primary" }
+    ],
+    "notes": "Slavic fire god, son of Svarog, personifying the flame of the hearth and forge."
+  },
+  {
+    "id": "slavic_simargl",
+    "name": { "primary": "Simargl", "alt": ["Semargl", "Sěmarĭglŭ"], "transliterations": { "maori": "", "slavic": "Семарьглъ", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "plants-seeds", "contextTag": "lifelong", "term": { "value": "Семарьглъ", "script": "Slavic", "rom": "Sěmarĭglŭ" }, "sources": [{ "kind": "primary", "reference": "Primary Chronicle, s.a. 980; Sermons against paganism" }] }
+    ],
+    "faculties": [
+      { "id": "guard-seed-sprouts", "name": "Guard seeds, roots and new sprouts", "term": { "value": "сѣмя", "script": "Slavic", "rom": "sěmę" }, "inheritability": "none", "notes": "Winged hound-like guardian of vegetation and grain.", "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov (Iranian *Simurgh parallel)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Primary Chronicle, s.a. 980 (Vladimir's pantheon)" }], "weight": "primary" }
+    ],
+    "notes": "East Slavic winged guardian of seeds and plants; one of Vladimir's six idols of 980."
+  },
+  {
+    "id": "slavic_lada",
+    "name": { "primary": "Lada", "alt": ["Łada"], "transliterations": { "maori": "", "slavic": "Лада", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "love", "contextTag": "lifelong", "term": { "value": "Лада", "script": "Slavic", "rom": "Lada" }, "sources": [{ "kind": "primary", "reference": "Polish church prohibitions (15th c., Łysa Góra sermons); Sjenov ritual refrains" }] },
+      { "sphereId": "spring", "contextTag": "lifelong", "term": { "value": "весна", "script": "Slavic", "rom": "vesna" }, "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov, on ritual 'lado' refrains" }] }
+    ],
+    "faculties": [
+      { "id": "bless-marriage", "name": "Bless love, marriage and spring renewal", "term": { "value": "ладъ", "script": "Slavic", "rom": "ladŭ" }, "inheritability": "none", "notes": "Invoked in wedding and springtime ritual songs.", "sources": [{ "kind": "primary", "reference": "Polish 15th-century sermons against the cult of 'Lada'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Medieval Polish church sermons listing 'Lada'" }], "weight": "primary" }
+    ],
+    "notes": "Slavic goddess of love, harmony and spring, named in medieval ritual refrains."
+  },
+  {
+    "id": "slavic_marzanna",
+    "name": { "primary": "Marzanna", "alt": ["Morana", "Mara", "Morena"], "transliterations": { "maori": "", "slavic": "Морана", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "winter", "contextTag": "lifelong", "term": { "value": "зима", "script": "Slavic", "rom": "zima" }, "sources": [{ "kind": "primary", "reference": "Jan Długosz, Annales; Polish/Czech Marzanna drowning rites" }] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "Морана", "script": "Slavic", "rom": "Morana" }, "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov (root *mor- 'death')" }] }
+    ],
+    "faculties": [
+      { "id": "bring-winter-death", "name": "Bring winter's cold, blight and death", "term": { "value": "морити", "script": "Slavic", "rom": "moriti" }, "inheritability": "none", "notes": "Effigy drowned/burned each spring to end winter.", "sources": [{ "kind": "primary", "reference": "Marzanna drowning rite (Długosz; folk custom)" }] }
+    ],
+    "materialCulture": [
+      { "id": "marzanna-effigy", "kind": "object", "name": "Straw effigy of Marzanna", "term": { "value": "kukła Marzanny", "script": "Slavic", "rom": "kukła Marzanny" }, "role": "owner", "notes": "Straw figure paraded and drowned at winter's end.", "sources": [{ "kind": "primary", "reference": "West Slavic folk drowning-of-Marzanna custom" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Jan Długosz, Annales (Marzanna)" }], "weight": "primary" }
+    ],
+    "notes": "Slavic goddess of winter, death and rebirth, ritually drowned to usher in spring."
+  },
+  {
+    "id": "slavic_chernobog",
+    "name": { "primary": "Chernobog", "alt": ["Czernobog", "Zcerneboch"], "transliterations": { "maori": "", "slavic": "Чёрнобог", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "misfortune", "contextTag": "lifelong", "term": { "value": "Чёрнобог", "script": "Slavic", "rom": "Černobogŭ" }, "sources": [{ "kind": "primary", "reference": "Helmold, Chronica Slavorum I.52" }] }
+    ],
+    "faculties": [
+      { "id": "curse-with-evil", "name": "Send evil fortune and ill fate", "term": { "value": "зло", "script": "Slavic", "rom": "zlo" }, "inheritability": "none", "notes": "The 'black god' sworn at to avert misfortune.", "sources": [{ "kind": "primary", "reference": "Helmold of Bosau, Chronica Slavorum (12th c.)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Helmold, Chronica Slavorum I.52 (Zcerneboch)" }], "weight": "primary" }
+    ],
+    "notes": "West Slavic 'black god' of evil and misfortune, recorded by Helmold among the Wends."
+  },
+  {
+    "id": "slavic_belobog",
+    "name": { "primary": "Belobog", "alt": ["Bielobog", "Belbog"], "transliterations": { "maori": "", "slavic": "Бѣлобог", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "good-fortune", "contextTag": "lifelong", "term": { "value": "Бѣлобог", "script": "Slavic", "rom": "Bělobogŭ" }, "sources": [{ "kind": "secondary", "reference": "Reconstructed antithesis to Chernobog (Helmold gloss); Ivanov & Toporov" }] }
+    ],
+    "faculties": [
+      { "id": "grant-good-fate", "name": "Grant light and good fortune", "term": { "value": "добро", "script": "Slavic", "rom": "dobro" }, "inheritability": "none", "notes": "The 'white god' set opposite the black god of evil.", "sources": [{ "kind": "secondary", "reference": "Ivanov & Toporov, on the Belobog–Chernobog dualism" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Implied opposite of Chernobog in Helmold; later toponymy (Bělbožice, Białoboże)" }], "weight": "secondary" }
+    ],
+    "notes": "West Slavic 'white god' of light and good fortune, counterpart to Chernobog."
+  },
+  {
+    "id": "slavic_rod",
+    "name": { "primary": "Rod", "alt": ["Rodŭ"], "transliterations": { "maori": "", "slavic": "Родъ", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "kinship-fate", "contextTag": "lifelong", "term": { "value": "Родъ", "script": "Slavic", "rom": "Rodŭ" }, "sources": [{ "kind": "primary", "reference": "Old Russian sermons against paganism ('Slovo o tom, kako…'); Word of St. Gregory" }] },
+      { "sphereId": "birth-fertility", "contextTag": "lifelong", "term": { "value": "рождение", "script": "Slavic", "rom": "roždenie" }, "sources": [{ "kind": "secondary", "reference": "Rybakov; Ivanov & Toporov" }] }
+    ],
+    "faculties": [
+      { "id": "ordain-birth-fate", "name": "Ordain birth, lineage and destiny", "term": { "value": "родити", "script": "Slavic", "rom": "roditi" }, "inheritability": "none", "notes": "Invoked with the rozhanitsy who set newborns' fates.", "sources": [{ "kind": "primary", "reference": "Old Russian anti-pagan sermons on 'Rod i rozhanitsy'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Old Russian sermons condemning offerings to 'Rod and the rozhanitsy'" }], "weight": "primary" }
+    ],
+    "notes": "East Slavic god of kinship, birth and fate, worshipped with the rozhanitsy birth-spirits."
+  },
+  {
+    "id": "slavic_zorya",
+    "name": { "primary": "Zorya", "alt": ["Zarya", "Zwezda", "the Auroras"], "transliterations": { "maori": "", "slavic": "Заря", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": ["slavic_dazhbog"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "dawn", "contextTag": "lifelong", "term": { "value": "Заря", "script": "Slavic", "rom": "Zarja" }, "sources": [{ "kind": "primary", "reference": "East Slavic zagovory (incantations) invoking 'Zarya-zaryanitsa'" }] }
+    ],
+    "faculties": [
+      { "id": "open-close-sky", "name": "Open the sky-gates at dawn and shut them at dusk", "term": { "value": "Заря-Заряница", "script": "Slavic", "rom": "Zarja-Zarjanica" }, "inheritability": "none", "notes": "Morning and evening sisters who attend the sun's course.", "sources": [{ "kind": "primary", "reference": "Russian folk incantations to the dawn-maiden" }] },
+      { "id": "guard-doomsday-hound", "name": "Keep the doomsday hound chained to the pole star", "term": { "value": "цѣпь", "script": "Slavic", "rom": "cěpĭ" }, "inheritability": "none", "notes": "Folklore: the Zoryas restrain the hound at Polaris.", "sources": [{ "kind": "secondary", "reference": "Slavic folklore of the chained celestial hound" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "East Slavic incantations to 'Zarya-zaryanitsa'" }], "weight": "primary" }
+    ],
+    "notes": "Slavic dawn goddess(es), daughters of Dazhbog who open and close the gates of the sky."
+  },
+  {
+    "id": "slavic_triglav",
+    "name": { "primary": "Triglav", "alt": ["Triglaus", "Triglv"], "transliterations": { "maori": "", "slavic": "Триглав", "finnish": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "three-realms", "contextTag": "lifelong", "term": { "value": "Триглав", "script": "Slavic", "rom": "Triglavŭ" }, "sources": [{ "kind": "primary", "reference": "Lives of St. Otto of Bamberg (Ebbo; Herbord), on Szczecin and Wolin" }] }
+    ],
+    "faculties": [
+      { "id": "rule-three-worlds", "name": "Survey heaven, earth and underworld with three heads", "term": { "value": "три главы", "script": "Slavic", "rom": "tri glavy" }, "inheritability": "none", "notes": "Three-headed god overseeing sky, earth and the dead.", "sources": [{ "kind": "primary", "reference": "Herbord, Dialogus de vita Ottonis episcopi Babenbergensis" }] }
+    ],
+    "materialCulture": [
+      { "id": "triglav-horse", "kind": "object", "name": "Black oracular horse of Triglav", "term": { "value": "вранъ конь", "script": "Slavic", "rom": "vranŭ konĭ" }, "role": "owner", "notes": "Sacred black horse used for divination at his temple.", "sources": [{ "kind": "primary", "reference": "Lives of St. Otto of Bamberg (Szczecin temple)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Lives of St. Otto of Bamberg (12th c.)" }], "weight": "primary" }
+    ],
+    "notes": "Pomeranian three-headed god of Szczecin and Wolin, ruling the three cosmic realms."
+  },
+  {
+    "id": "finnish_ukko",
+    "name": { "primary": "Ukko", "alt": ["Ylijumala", "Äijä", "Ukko Ylijumala"], "transliterations": { "maori": "", "slavic": "", "finnish": "Ukko" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "taivas", "script": "Finnish", "rom": "taivas" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo IX (invocation of Ukko); Lönnrot" }] },
+      { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "ukkonen", "script": "Finnish", "rom": "ukkonen" }, "sources": [{ "kind": "primary", "reference": "Kalevala; Ganander, Mythologia Fennica (1789)" }] }
+    ],
+    "faculties": [
+      { "id": "hurl-lightning", "name": "Strike lightning and roll the thunder", "term": { "value": "salama", "script": "Finnish", "rom": "salama" }, "inheritability": "none", "notes": "Drives his chariot over clouds to make storms.", "sources": [{ "kind": "primary", "reference": "Kalevala; Ganander, Mythologia Fennica (1789)" }] },
+      { "id": "send-rain", "name": "Send rain to fertilize the fields", "term": { "value": "sade", "script": "Finnish", "rom": "sade" }, "inheritability": "none", "notes": "Supreme god invoked for crops and harvest.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo II (Väinämöinen prays for rain)" }] }
+    ],
+    "materialCulture": [
+      { "id": "ukonvasara", "kind": "weapon", "name": "Ukko's hammer/axe (thunderstone)", "term": { "value": "Ukonvasara", "script": "Finnish", "rom": "Ukonvasara" }, "role": "wielder", "notes": "Hammer or axe with which he strikes lightning.", "sources": [{ "kind": "primary", "reference": "Ganander, Mythologia Fennica (1789); Finnish incantations" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala (Lönnrot); Ganander, Mythologia Fennica" }], "weight": "primary" }
+    ],
+    "notes": "Finnish supreme sky and thunder god, invoked at moments of crisis in the Kalevala."
+  },
+  {
+    "id": "finnish_ilmatar",
+    "name": { "primary": "Ilmatar", "alt": ["Luonnotar", "Ilman impi"], "transliterations": { "maori": "", "slavic": "", "finnish": "Ilmatar" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "air", "contextTag": "lifelong", "term": { "value": "ilma", "script": "Finnish", "rom": "ilma" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo I (Lönnrot)" }] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "luominen", "script": "Finnish", "rom": "luominen" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo I" }] }
+    ],
+    "faculties": [
+      { "id": "shape-the-earth", "name": "Shape the earth, headlands and bays from her body", "term": { "value": "maan luonti", "script": "Finnish", "rom": "maan luonti" }, "inheritability": "none", "notes": "Drifting on the sea, she molded land with her limbs.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo I" }] },
+      { "id": "cradle-world-egg", "name": "Cradle the world-egg on her knee", "term": { "value": "munan kuoret", "script": "Finnish", "rom": "munan kuoret" }, "inheritability": "none", "notes": "From the broken eggs sky, sun, moon and earth formed.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo I" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala, runo I (Lönnrot)" }], "weight": "primary" }
+    ],
+    "notes": "Finnish primordial spirit of air, the virgin of creation and mother of Väinämöinen."
+  },
+  {
+    "id": "finnish_ahti",
+    "name": { "primary": "Ahti", "alt": ["Ahto"], "transliterations": { "maori": "", "slavic": "", "finnish": "Ahti" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "water", "contextTag": "lifelong", "term": { "value": "vesi", "script": "Finnish", "rom": "vesi" }, "sources": [{ "kind": "primary", "reference": "Kalevala (Lönnrot); Ganander, Mythologia Fennica (1789)" }] },
+      { "sphereId": "fish", "contextTag": "lifelong", "term": { "value": "kala", "script": "Finnish", "rom": "kala" }, "sources": [{ "kind": "primary", "reference": "Kalevala; Finnish fishing incantations" }] }
+    ],
+    "faculties": [
+      { "id": "grant-catch", "name": "Grant fish and bounty from the deep", "term": { "value": "kalaonni", "script": "Finnish", "rom": "kalaonni" }, "inheritability": "none", "notes": "God of the depths who gives fishermen their catch.", "sources": [{ "kind": "primary", "reference": "Finnish fishing incantations; Kalevala" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Ganander, Mythologia Fennica (1789); Kalevala" }], "weight": "primary" }
+    ],
+    "notes": "Finnish god of the water and the deep, giver of fish, dwelling with his consort Vellamo."
+  },
+  {
+    "id": "finnish_tapio",
+    "name": { "primary": "Tapio", "alt": ["Metsän isäntä"], "transliterations": { "maori": "", "slavic": "", "finnish": "Tapio" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "forest", "contextTag": "lifelong", "term": { "value": "metsä", "script": "Finnish", "rom": "metsä" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV (Lemminkäinen's hunt); Lönnrot" }] },
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "metsästys", "script": "Finnish", "rom": "metsästys" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV" }] }
+    ],
+    "faculties": [
+      { "id": "yield-game", "name": "Release forest game to worthy hunters", "term": { "value": "riista", "script": "Finnish", "rom": "riista" }, "inheritability": "partial", "notes": "Master of the woods; hunters pray to him for prey.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV (prayers to Tapio)" }] }
+    ],
+    "materialCulture": [
+      { "id": "tapio-hat", "kind": "garment", "name": "Moss hat and lichen beard", "term": { "value": "naava", "script": "Finnish", "rom": "naava" }, "role": "owner", "notes": "Wears a moss hat and beard of tree-lichen.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala (Lönnrot); Agricola's 1551 list of Tavastian gods" }], "weight": "primary" }
+    ],
+    "notes": "Finnish forest god and master of game, ruling Tapiola with his consort Mielikki."
+  },
+  {
+    "id": "finnish_mielikki",
+    "name": { "primary": "Mielikki", "alt": ["Metsän emäntä", "Mimerkki"], "transliterations": { "maori": "", "slavic": "", "finnish": "Mielikki" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "forest", "contextTag": "lifelong", "term": { "value": "metsä", "script": "Finnish", "rom": "metsä" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV (Lönnrot)" }] }
+    ],
+    "faculties": [
+      { "id": "guide-game", "name": "Lead game to the hunter and heal hurt beasts", "term": { "value": "riista", "script": "Finnish", "rom": "riista" }, "inheritability": "partial", "notes": "Mistress of the forest who tends and frees the game.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV (invocation of Mielikki)" }] }
+    ],
+    "materialCulture": [
+      { "id": "forest-keys", "kind": "object", "name": "Keys to the forest storehouse", "term": { "value": "metsän avaimet", "script": "Finnish", "rom": "metsän avaimet" }, "role": "owner", "notes": "Keys with which she unlocks the woods' stores of game.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo XIV" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala (Lönnrot)" }], "weight": "primary" }
+    ],
+    "notes": "Finnish mistress of the forest and consort of Tapio, healer of beasts and giver of game."
+  },
+  {
+    "id": "finnish_pellervoinen",
+    "name": { "primary": "Sampsa Pellervoinen", "alt": ["Pellervoinen", "Sampsa"], "transliterations": { "maori": "", "slavic": "", "finnish": "Sampsa Pellervoinen" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "vegetation", "contextTag": "lifelong", "term": { "value": "kasvillisuus", "script": "Finnish", "rom": "kasvillisuus" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo II (Lönnrot)" }] },
+      { "sphereId": "sowing", "contextTag": "lifelong", "term": { "value": "kylvö", "script": "Finnish", "rom": "kylvö" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo II" }] }
+    ],
+    "faculties": [
+      { "id": "sow-all-plants", "name": "Sow forests, fields and all vegetation", "term": { "value": "kylväminen", "script": "Finnish", "rom": "kylväminen" }, "inheritability": "full", "notes": "Called by Väinämöinen to seed the barren lands.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo II" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala, runo II (Lönnrot)" }], "weight": "primary" }
+    ],
+    "notes": "Finnish vegetation spirit who sows all plant life at Väinämöinen's bidding."
+  },
+  {
+    "id": "finnish_pekko",
+    "name": { "primary": "Pekko", "alt": ["Pellonpekko", "Pellon Pekko", "Peko"], "transliterations": { "maori": "", "slavic": "", "finnish": "Pekko" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "barley-crops", "contextTag": "lifelong", "term": { "value": "ohra", "script": "Finnish", "rom": "ohra" }, "sources": [{ "kind": "primary", "reference": "Agricola, preface to the Psalter (1551), list of Karelian gods" }] },
+      { "sphereId": "brewing", "contextTag": "lifelong", "term": { "value": "oluen panu", "script": "Finnish", "rom": "oluen panu" }, "sources": [{ "kind": "secondary", "reference": "Setälä; Seto Peko folk tradition" }] }
+    ],
+    "faculties": [
+      { "id": "ripen-barley", "name": "Make the barley grow and the beer ferment", "term": { "value": "ohran kasvu", "script": "Finnish", "rom": "ohran kasvu" }, "inheritability": "full", "notes": "God of fields and crops, patron of barley and ale.", "sources": [{ "kind": "primary", "reference": "Agricola (1551); Seto Peko tradition" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Mikael Agricola, 1551 list of Karelian deities (Pellon Pekko)" }], "weight": "primary" }
+    ],
+    "notes": "Finnic god of barley, crops and brewing, named in Agricola's 1551 list and Seto tradition."
+  },
+  {
+    "id": "finnish_lempo",
+    "name": { "primary": "Lempo", "alt": ["Hiisi", "Paholainen"], "transliterations": { "maori": "", "slavic": "", "finnish": "Lempo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "evil-misfortune", "contextTag": "lifelong", "term": { "value": "paha", "script": "Finnish", "rom": "paha" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo VIII (Väinämöinen's knee wound); Lönnrot" }] }
+    ],
+    "faculties": [
+      { "id": "guide-axe-astray", "name": "Twist tools and deeds to cause harm", "term": { "value": "vahinko", "script": "Finnish", "rom": "vahinko" }, "inheritability": "none", "notes": "Made Väinämöinen's axe slip and gash his knee.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo VIII" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala (Lönnrot)" }], "weight": "primary" }
+    ],
+    "notes": "Finnish spirit of evil and mischief, equated with Hiisi, who turns tools and acts to harm."
+  },
+  {
+    "id": "finnish_tuoni",
+    "name": { "primary": "Tuoni", "alt": ["Mana"], "transliterations": { "maori": "", "slavic": "", "finnish": "Tuoni" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "death-underworld", "contextTag": "lifelong", "term": { "value": "Tuonela", "script": "Finnish", "rom": "Tuonela" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo XVI (Väinämöinen in Tuonela); Lönnrot" }] }
+    ],
+    "faculties": [
+      { "id": "rule-the-dead", "name": "Rule and judge the dead in Tuonela", "term": { "value": "kuolleiden valta", "script": "Finnish", "rom": "kuolleiden valta" }, "inheritability": "none", "notes": "Lord of the death-realm beyond the black river.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo XVI" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala, runo XVI (Lönnrot)" }], "weight": "primary" }
+    ],
+    "notes": "Finnish god of death and lord of the underworld Tuonela."
+  },
+  {
+    "id": "finnish_tuonetar",
+    "name": { "primary": "Tuonetar", "alt": ["Tuonen akka"], "transliterations": { "maori": "", "slavic": "", "finnish": "Tuonetar" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Finnish",
+    "primaryTradition": "Finnish",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "death-underworld", "contextTag": "lifelong", "term": { "value": "Tuonela", "script": "Finnish", "rom": "Tuonela" }, "sources": [{ "kind": "primary", "reference": "Kalevala, runo XVI (Lönnrot)" }] }
+    ],
+    "faculties": [
+      { "id": "ferry-and-serve-ale", "name": "Receive the dead and serve the ale of oblivion", "term": { "value": "Tuonen olut", "script": "Finnish", "rom": "Tuonen olut" }, "inheritability": "none", "notes": "Queen of Tuonela who greets arriving souls.", "sources": [{ "kind": "primary", "reference": "Kalevala, runo XVI" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kalevala, runo XVI (Lönnrot)" }], "weight": "primary" }
+    ],
+    "notes": "Finnish queen of the underworld Tuonela, consort of Tuoni."
+  }
+]
+```
+
+Note: I authored 39 figures total — Polynesian (18: 10 Māori + 8 Hawaiian), Slavic (11), Finnish (10). All requested figures that are genuinely attested are included.
+
+A few authorial decisions worth flagging:
+- **Parentage**: Māori primordials Ranginui/Papatūānuku get `parentIds: []`; their nine sons (Tāne, Tūmatauenga, Rongo, Haumia-tiketike, Tāwhirimātea, Tangaroa, Whiro) all point to `["polynesian_ranginui","polynesian_papatuanuku"]`. Hine-nui-te-pō points to `["polynesian_tane"]` (her mother Hine-ahu-one isn't in this batch). Slavic Dazhbog and Svarozhich → `["slavic_svarog"]` (in corpus); Zorya → `["slavic_dazhbog"]` (this batch). Hawaiian Pele/Nāmaka and the four great gods get `[]` since their attested parents (Haumea, Kāne Milohai) aren't authored here. Finnish gods are mostly independent; Väinämöinen (already in corpus) is Ilmatar's son but I did not edit existing entries.
+- **Types**: All are `deity` (every figure here is an attested god/goddess). I used `era: "primordial"` for cosmogonic figures (Rangi, Papa, Tāne, Ilmatar, Tuoni, Rod, etc.) and `"mythic"` for the rest, since those were the only two enum values offered.
+- **Sourcing**: Polynesian → Grey's *Polynesian Mythology* (1855), Te Ara, plus Beckwith's *Hawaiian Mythology* / Westervelt for Hawaiian; Slavic → Primary Chronicle (980 pantheon), Lay of Igor's Campaign, Helmold, Lives of St. Otto, with Ivanov–Toporov as secondary; Finnish → Kalevala (cited by runo), Agricola's 1551 list, Ganander. Belobog is the one figure I weighted `secondary` (it survives mainly as the reconstructed antithesis of Helmold's Chernobog), which I flag honestly rather than overstate.
+- **Faculties vs domains** are kept distinct as required (e.g. Tāne's domain is *forests*, but his faculties are *separating earth and sky*, *fashioning the first woman*, *fetching the knowledge-baskets*; Pele's domain is *volcanoes*, her faculty is *erupting lava* + *shapeshifting*).
+- Named **material culture** included where attested: Tāne's three kete, Kūkaʻilimoku image, Pele's Pāoa digging-stick, Hina's kapa beater, Ukko's Ukonvasara, Mielikki's forest keys, Triglav's black oracular horse, Marzanna's straw effigy.
+
+I deliberately excluded figures from the "likely missing" hint that lack solid independent attestation to avoid fabrication — but on review every name on the hint list is in fact attested, so all are included. Source: existing IDs cross-checked against `/tmp/existing-figures.json`.

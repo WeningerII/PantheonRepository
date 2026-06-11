@@ -51,20 +51,35 @@ class ErrorBoundary extends React.Component {
   };
 
   try {
-    // data.js has run; __PR is set and localStorage is seeded. Count entries
-    // for the boot label so it's specific instead of a generic "ready".
-    let figureCount = null;
+    // data.js has run; __PR is set. Count entries for the boot label so it's
+    // specific instead of a generic "ready". Prefer localStorage (it holds
+    // user edits when a persist ever succeeded; same precedence as
+    // state.jsx loadPeople), fall back to the in-memory seed — the corpus
+    // exceeds the localStorage quota, so in real browsers only the
+    // in-memory path exists.
+    let corpus = null;
     try {
-      const raw = localStorage.getItem('pantheon_registry_v8');
+      const key = (window.__PR && window.__PR.PEOPLE_KEY) || 'pantheon_registry_v9';
+      const raw = localStorage.getItem(key);
       if (raw) {
         const data = JSON.parse(raw);
-        if (typeof data === 'object' && !Array.isArray(data)) {
-          figureCount = Object.keys(data).length;
-        } else if (Array.isArray(data)) {
-          figureCount = data.length;
-        }
+        if (Array.isArray(data)) corpus = data;
+        else if (data && typeof data === 'object') corpus = Object.values(data);
       }
-    } catch (_) { /* ignore — generic label is fine */ }
+    } catch (_) { /* ignore — fall through to the seed */ }
+    if (!corpus || !corpus.length) {
+      const seed = window.__PR && window.__PR.seedPeople;
+      if (seed) corpus = Object.values(seed);
+    }
+    const figureCount = corpus ? corpus.length : null;
+
+    // Fill the boot splash subtitle from the live corpus — hardcoded counts
+    // here have gone stale 3x over before.
+    if (corpus) {
+      const traditions = new Set(corpus.map((p) => p && p.tradition).filter(Boolean));
+      const sub = document.querySelector('#boot .subtitle');
+      if (sub) sub.textContent = `${figureCount.toLocaleString()} figures, ${traditions.size} traditions, one index.`;
+    }
 
     setStep(figureCount ? `loaded ${figureCount} figures` : 'ready', 100);
 

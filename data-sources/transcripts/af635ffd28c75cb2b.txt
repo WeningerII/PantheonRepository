@@ -1,0 +1,55 @@
+I now have all the orthography I need:
+- **Edo Ada**: "saber-shaped ceremonial sword, called ada in the Edo language... sword of State (Authority)... on the right side of the Oba... symbolizes the Oba's right to take human life... blade made of iron with ase." Distinguished from eben. Sources: Ben-Amos "The Art of Benin," Met Museum, Wikipedia "Ada and Abere." Confirmed introduced/formalized by Ewuare (from earlier search: "Oba Ewuare introduced new insignia of leadership, including the Ada ceremonial sword").
+- **Mascapaicha**: Garcilaso renders it "mascapaicha"; modern Quechua "maskaypacha"; sits on the llautu (llawt'u) headband. Roman/normalized: maskaypacha.
+- **Sunturpaucar**: from Cobo/Guaman Poma (suntur páucar), feathered standard/pike. Quechua "sunturpawkar."
+
+I have enough verified material. Let me also reconsider whether to add the **eben** distinctly. The eben is already represented by "eben-ozolua" (Ozolua's eben). The ada is genuinely missing and Ewuare-attested. I'll add ada to Ewuare. I will NOT add a generic eben since the concept is already present.
+
+Let me also reconsider one more time the **napa** (sacred white llama) and whether it's worth including for Pachacuti/Manco Capac. It's attested (Betanzos, Molina, Cobo) as accompanying the Sapa Inca in ceremonies, adorned with red blanket and gold ear-ornaments. It's borderline "item." Given the prompt explicitly wants objects a figure owns/wields, and the napa is a ceremonial animal (not a wielded object or ridden mount), I'll leave it out to keep the list rigorous and defensible. 
+
+Similarly, I'll leave out the Akan sika mena (golden elephant tail) — it's a state regalia object not tied to a specific roster person in my sources, and Osei Tutu already gets the more strongly-attested bosommuru.
+
+Let me reconsider Lord 8 Deer's jaguar helmet once more for rigor: it's consistently attested ("almost always pictured wearing a jaguar helmet") in the Codex Zouche-Nuttall — this is a genuine, named, owned regalia item. I'll include it (kind=armor). It's distinct from his nose ornament.
+
+Now let me also double-check I haven't missed an obvious item for the **Maya** Hero Twins or for **Manco Capac**. The Hero Twins' blowgun and ballgame gear are present. Manco Capac has tupayauri. These are well-covered. 
+
+Let me reconsider the **Shango odo** (mortar) is present; **Shango oshe** present; **edun ara** present; **laba** new. Good.
+
+One more consideration: the prompt mentioned "Ọṣun's brass fan (abẹbẹ) & mirror, Ifá's ọpọn-Ifá / ọpẹlẹ / ikin, Eshu's emblems, Oya's items" — but NONE of these orishas are in the roster's Yoruba array (only Ogun, Oranmiyan, Shango, Ajaka). So these are correctly out of scope. I'll note this clearly in my report so the caller knows why those famous items aren't emitted.
+
+I have a solid, well-verified set of missing items. Let me compile the final output. Let me confirm the exact roster figure_ids one more time:
+- Yoruba: `shango`
+- Edo: `ewuare_great`
+- Akan: `akan_osei_tutu_i`
+- Mixtec: `mixtec_lord_9_wind`, `mixtec_lord_8_deer`
+- Inca: `inca_pachacuti`
+
+Let me write up the final formatted output.
+
+Based on my deep multi-source research, here are the verified missing items, grouped by figure. I cross-checked each against ethnography/primary sources and dropped anything I could not anchor to a roster figure or a solid source.
+
+=== shango (Shango)
+shango :: ITEM laba-shango | name=Leather thunderstone bag | term=lábà | script=Yoruba | rom=laba | kind=vessel | role=owner | gloss=Red leather priest's bag holding thunderstones and oṣé | src=Wescott & Morton-Williams 1962, "The symbolism and ritual context of the Yoruba laba Shango," JRAI 92:23–37
+
+=== ewuare_great (Ewuare the Great)
+ewuare_great :: ITEM ada-benin | name=Sword of state | term=àdá | script=Edo | rom=ada | kind=regalia | role=owner | gloss=Iron sword of authority introduced by Ewuare, borne at Oba's right | src=Egharevba (Short History of Benin); Ben-Amos, Art of Benin; Met Museum / "Ada and Abere"
+
+=== akan_osei_tutu_i (Osei Tutu I)
+akan_osei_tutu_i :: ITEM bosommuru-afena | name=Bosommuru state sword | term=Bosommuru afena | script=Akan | rom=bosommuru | kind=regalia | role=owner | gloss=Holy oath-sword captured by Osei Tutu; sworn for Asanteman's Great Oath | src=Rattray, Ashanti; Asanteman/Asante regalia ethnography; Akrafena (Wikipedia)
+
+=== mixtec_lord_9_wind (Lord 9 Wind "Quetzalcoatl")
+mixtec_lord_9_wind :: ITEM lord-9-wind-wind-jewel | name=Wind-jewel conch pectoral | term=ehecailacacozcatl | script=Nahuatl | rom=ehecailacacozcatl | kind=regalia | role=wielder | gloss=Spiral conch pectoral granted to 9 Wind in Codex Vienna | src=Codex Vindobonensis Mexicanus I (Anders/Jansen/Reyes explicación); Penn Museum, "The Wind God's Breastplate"
+
+=== mixtec_lord_8_deer (Lord 8 Deer Jaguar Claw)
+mixtec_lord_8_deer :: ITEM lord-8-deer-jaguar-helmet | name=Jaguar warrior helmet | term=— | script=Mixtec | rom=— | kind=armor | role=wielder | gloss=Jaguar helmet he is near-constantly depicted wearing in conquests | src=Codex Zouche-Nuttall; Pohl, "The Politics of Symbolism in the Mixtec Codices"
+
+=== inca_pachacuti (Pachacuti)
+inca_pachacuti :: ITEM mascapaicha | name=Royal fringe insignia | term=maskaypacha | script=Quechua | rom=maskaypacha | kind=regalia | role=recipient | gloss=Red imperial fringe placed on Pachacuti at his investiture | src=Betanzos, Suma y narración; Sarmiento de Gamboa; Cobo; Guaman Poma
+inca_pachacuti :: ITEM sunturpaucar | name=Feathered royal standard | term=sunturpawkar | script=Quechua | rom=sunturpaucar | kind=regalia | role=owner | gloss=Multicolor feathered shaft borne in public by the Sapa Inca | src=Cobo, Historia del Nuevo Mundo; Guaman Poma, Nueva corónica
+
+---
+
+Notes for the caller:
+- Yield is modest by design: most "likely gaps" you listed map to orishas/figures that are NOT in the roster, so they're out of scope. The Yoruba array contains only ogun, oranmiyan, shango, ajaka — there is no Oṣun, Orunmila/Ifá, Eshu, or Oya entry, so abẹbẹ/mirror, ọpọn-Ifá/ọpẹlẹ/ikin, Eshu's emblems, and Oya's items have no valid figure_id to attach to. Similarly the Aztec/Mexica array has only mixcoatl and topiltzin — there is no Tezcatlipoca or Huitzilopochtli, so the smoking mirror (tezcatl/ītztli, tezcacuitlapilli) and Xiuhcoatl fire-serpent cannot be attached (Xiuhcoatl is canonically Huitzilopochtli's, wielded via Tochancalqui per Florentine Codex Bk 3).
+- Already-present items I deliberately did NOT re-emit: Shango's oṣé (oshe-shango) and edùn àrá (shango-edun-ara); Ogun's àdá/iron/màrìwò/dog; Oranmiyan's ọpá; the Golden Stool (sika-dwa-kofi) and mpɔnpɔnsɔn (mponponsuo-sword); Ozolua's eben (eben-ozolua); Esigie's Idia ivory pendant mask; Ewuare's agbavboko bag; Lord 8 Deer's turquoise nose ornament; Topiltzin's wind-jewel/jade-mask/conch; Inti's Punchao; Manco Capac/Mama Huaco's tupayauri.
+- Dropped for lack of figure-specific attestation or being out of scope: Akan golden elephant tail (sika mena) — real regalia but tied to the Ahwerewamuhene office, not a roster person; the Inca napa (sacred white llama) — a ceremonial animal, not a wielded/owned object; generic Edo coral crown (erhu-ede)/odigba — institution-level, not pinned to one roster Oba; Ryangombe — no named weapon beyond the umurinzi tree already in roster; Shilluk Nyikang's collective ceremonial spears/drums — generic, with effigy + rain-spear already present.

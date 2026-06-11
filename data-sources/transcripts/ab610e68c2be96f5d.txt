@@ -1,0 +1,603 @@
+Sanity checks pass: working tree clean (no repo files touched), no Chuukese/Kiribati duplication, all 24 IDs are collision-free against existing-ids.json, type enum respected, no modern coinages, materialCulture uses `id`/`name` (never `item`), and empty terms are blank (never disclaimers). Here is the registry.
+
+```json
+[
+  {
+    "id": "palauan_latmikaik",
+    "name": { "primary": "Mother of the Sea", "alt": ["Latmikaik", "Latmikaek"], "transliterations": { "pau": "Latmikaik" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Palauan",
+    "primaryTradition": "Palauan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sea-creation", "contextTag": "lifelong", "term": { "value": "daob", "script": "Latn", "rom": "daob" }, "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] },
+      { "sphereId": "fertility-of-living-things", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "bring_forth_life_from_the_sea", "name": "brings forth living things from the sea", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "From inside the primordial clam Latmikaik she conceived and released the swarm of first beings; the fishes among them lifted the sky and set the world in order.", "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [
+      { "id": "palauan_giant_clam_kim", "kind": "natural-vessel", "name": "primordial giant clam", "term": { "value": "kim", "script": "Latn", "rom": "kim" }, "role": "womb of creation from which Latmikaik and her offspring emerged", "notes": "Palauan kim is the giant clam (Tridacna); in the creation account the swelling clam on the reef gives birth to Latmikaik and then to the first generation of beings.", "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "sources": [
+      { "claim": "Latmikaik is the primal mother who, born from the giant clam on the reef, bore the first beings in the sea.", "citations": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Palauan progenitrix spirit, here classed as a deity (Micronesian creator-spirit). Native term Latmikaik also names the clam itself in some tellings; primary gloss 'Mother of the Sea'. Her offspring, led by the fish, raised the firmament, after which the sky-god Uchelianged ordered the cosmos."
+  },
+  {
+    "id": "palauan_uchelianged",
+    "name": { "primary": "First of Heaven", "alt": ["Uchelianged", "Ucheliangd", "Ucheleanged"], "transliterations": { "pau": "Uchelianged" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Palauan",
+    "primaryTradition": "Palauan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "eanged", "script": "Latn", "rom": "eanged" }, "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "faculties": [
+      { "id": "order_the_cosmos", "name": "sets the heavens and islands in order", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "As the foremost of the gods of heaven he arranges the world after the sea brings forth land and life.", "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Uchelianged is the supreme god of heaven in Palauan cosmology, his name composed of uchel ('first/foremost') and eanged ('heaven').", "citations": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Palauan sky high-god. Name parsed as uchel ('foremost, beginning') + eanged ('sky, heaven'); gloss 'First of Heaven'. Distinguished from Chuab/Milad earth-origin cycle."
+  },
+  {
+    "id": "palauan_chuab",
+    "name": { "primary": "Giant Girl", "alt": ["Chuab", "Chuabd"], "transliterations": { "pau": "Chuab" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Palauan",
+    "primaryTradition": "Palauan",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "land-origin", "contextTag": "lifelong", "term": { "value": "beluu", "script": "Latn", "rom": "beluu" }, "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "faculties": [
+      { "id": "become_the_islands", "name": "becomes the land of Palau in death", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The giant girl who grew until she could not be fed was burned; her fallen body became the islands of the archipelago, her parts the named districts.", "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Chuab is the giant woman whose body, when she fell, became the islands of Palau.", "citations": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Force, R.W. & Force, M.T. (1972). Just One House: A Description and Analysis of Kinship in the Palau Islands. Bishop Museum Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Palauan world-body progenitrix; classed as deity. Native term Chuab. Counterpart and (in some tellings) precursor of Milad; included as a foregrounded creator alongside Latmikaik. The motif of the felled giantess whose body forms the land is a central Palauan origin myth."
+  },
+  {
+    "id": "palauan_milad",
+    "name": { "primary": "Old Woman", "alt": ["Milad", "Miladeldil"], "transliterations": { "pau": "Milad" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Palauan",
+    "primaryTradition": "Palauan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "motherhood-of-states", "contextTag": "lifelong", "term": { "value": "milad", "script": "Latn", "rom": "milad" }, "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "faculties": [
+      { "id": "give_birth_to_the_cardinal_states", "name": "gives birth to the four founding states of Palau", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Spared from the flood that destroyed the old order, Milad bore four stone children who became the principal districts: Imeliik, Melekeok, Ngeremlengui (Imeungs), and Oreor (Koror).", "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [
+      { "id": "palauan_stone_children_of_milad", "kind": "monument", "name": "stone children of Milad", "term": { "value": "bad", "script": "Latn", "rom": "bad" }, "role": "the four founding districts embodied as named stones born of Milad", "notes": "Palauan bad ('stone'); the children of Milad are remembered as stones marking the four cornerstone polities of Palau.", "sources": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" } ] }
+    ],
+    "sources": [
+      { "claim": "Milad, the surviving mother after the great flood, gave birth to the four cardinal founding states of Palau.", "citations": [ { "kind": "ethnography", "reference": "Krämer, A. (1917-1929). Palau. Ergebnisse der Südsee-Expedition 1908-1910, II.B.3, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Parmentier, R.J. (1987). The Sacred Remains: Myth, History, and Polity in Belau. University of Chicago Press" } ], "weight": "primary" }
+    ],
+    "notes": "Palauan ancestral mother of the four founding states; classed as deity. Native term Milad ('she who has given birth / the aged one'). Her rock-shelter at Ngeremlengui is held the most sacred origin site of Palau. Parmentier's ethnohistory documents the Milad cycle as the charter of Palauan polity."
+  },
+  {
+    "id": "palauan_medechiibelau",
+    "name": { "primary": "Trickster Builder", "alt": ["Medechiibelau", "Medechiibelei"], "transliterations": { "pau": "Medechiibelau" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Palauan",
+    "primaryTradition": "Palauan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "outwit_the_other_gods", "name": "outwits the other gods with cunning", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "He made a rooster crow to fool the gods building a stone stairway to heaven into thinking dawn had come, so the work was abandoned; many such pranks across Palau are told of him.", "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Medechiibelau is a Palauan trickster and culture figure who plays deceptions on the other gods throughout the archipelago.", "citations": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" }, { "kind": "folklore", "reference": "McKnight, R.K. & Obak, A. (1975). Palauan Legends, Vol. 2. Literature Production Center, Trust Territory of the Pacific Islands, Koror" } ], "weight": "supporting" }
+    ],
+    "notes": "Palauan trickster spirit / culture figure, classed as deity per the directive to map trickster tiers to deity/demigod. Native term Medechiibelau. The rooster-crow ruse that halts the stairway to heaven is his signature tale; he is also invoked at Airai with first-fruits offerings."
+  },
+  {
+    "id": "palauan_mengidabrutkoel",
+    "name": { "primary": "Spider Sage", "alt": ["Mengidabrutkoel"], "transliterations": { "pau": "Mengidabrutkoel" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Palauan",
+    "primaryTradition": "Palauan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "omechell", "script": "Latn", "rom": "omechell" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] },
+      { "sphereId": "healing-wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "folklore", "reference": "McKnight, R.K. & Obak, A. (1975). Palauan Legends, Vol. 2. Literature Production Center, Trust Territory of the Pacific Islands, Koror" } ] }
+    ],
+    "faculties": [
+      { "id": "teach_natural_childbirth", "name": "teaches the art of natural childbirth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "The wise spider, husband of a Palauan woman, showed how children might be born naturally rather than by the deadly cutting that had killed mothers before.", "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Mengidabrutkoel, the magnificent spider sage of Palauan legend, married a mortal woman and taught the Palauans natural childbirth, ending the fatal practice that preceded him.", "citations": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" }, { "kind": "folklore", "reference": "McKnight, R.K. & Obak, A. (1975). Palauan Legends, Vol. 2. Literature Production Center, Trust Territory of the Pacific Islands, Koror" } ], "weight": "supporting" }
+    ],
+    "notes": "Palauan spider culture-hero; classed as demigod (theriomorphic culture-bringer). Native term Mengidabrutkoel. Gloss 'Spider Sage'. His tale, a charter for human childbirth, parallels the spider/Areop-type culture-bringers elsewhere in the Carolines."
+  },
+  {
+    "id": "yapese_yalafath",
+    "name": { "primary": "Sky High-God", "alt": ["Yalafath", "Yelafaz", "Yälfaath", "Yalafathil"], "transliterations": { "yap": "Yalafath" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yapese",
+    "primaryTradition": "Yapese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "lang", "script": "Latn", "rom": "lang" }, "sources": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" } ] },
+      { "sphereId": "creation-of-humankind", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "make_the_first_humans", "name": "shapes the first man and woman from earth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Yälfaath the Elder, of the first generation of sky gods, formed the first humans, Ganan and Nik, with his hands and dirt; he is beneficent but slothful, acting against demons only when invoked.", "sources": [ { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Yalafath is the Yapese supreme sky god and creator of the human race, beneficent yet indolent, dwelling at Falraman whither the dead go.", "citations": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Yapese sky high-god; classed as deity. Spellings vary (Yalafath, Yelafaz, Yälfaath). In the layered Yapese cosmos he is creator of humankind beneath the older sky-makers Gavur li yel yel and Yanolop; his messenger is the albatross mui-bab and his realm of the dead is Falraman. Gloss 'Sky High-God'."
+  },
+  {
+    "id": "yapese_gavur_li_yel_yel",
+    "name": { "primary": "First Sky-Maker", "alt": ["Gavur li yel yel", "Gāvur li yalyal", "Gavur li yalyal"], "transliterations": { "yap": "Gavur li yel yel" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yapese",
+    "primaryTradition": "Yapese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" } ] },
+      { "sphereId": "the-layered-cosmos", "contextTag": "lifelong", "term": { "value": "lang", "script": "Latn", "rom": "lang" }, "sources": [ { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "make_the_four_layers_and_the_chief_god", "name": "makes the four layers of the cosmos and the chief god", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "From his dark unnamed tier he formed the four layers (his own, the sky, the earth, the undersea); with his hands and dirt he made the chief god Yanolop, who in turn made the five other sky deities.", "sources": [ { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Gavur li yel yel is the primordial Yapese deity who, dwelling in the topmost dark tier, made the four-layered cosmos and fashioned the chief god Yanolop.", "citations": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Yapese primordial sky-maker; classed as deity. Native name Gavur li yel yel (also Gāvur li yalyal). Gloss 'First Sky-Maker'. He stands above the sky-god Yalafath in the cosmogonic hierarchy: Gavur li yel yel makes Yanolop, who makes the five further sky deities, of whom Yälfaath the Elder then creates humankind."
+  },
+  {
+    "id": "yapese_taliw",
+    "name": { "primary": "Spirits of the Shrines", "alt": ["taliw", "thaliw", "kan"], "transliterations": { "yap": "taliw" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yapese",
+    "primaryTradition": "Yapese",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "ancestral-and-place-spirits", "contextTag": "lifelong", "term": { "value": "kan", "script": "Latn", "rom": "kan" }, "sources": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" } ] }
+    ],
+    "faculties": [
+      { "id": "watch_over_land_and_sea", "name": "oversees human conduct of land and sea", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "Male spirits hold the land (the domain of men's gardening) and female spirits the sea (the domain of fishing); both must be kept in good relation through observance at the shrines.", "sources": [ { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "materialCulture": [
+      { "id": "yapese_shrine_taliw", "kind": "shrine", "name": "spirit shrine", "term": { "value": "taliw", "script": "Latn", "rom": "taliw" }, "role": "sacred place where offerings are made to the spirits and the priests officiate", "notes": "Yapese taliw (also rendered TALíU) denotes the shrine and its regulated precinct; the same root names the resident spirits.", "sources": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" } ] }
+    ],
+    "sources": [
+      { "claim": "The Yapese recognize classes of spirits and gods (kan) inhabiting shrines (taliw), divided between male land-spirits and female sea-spirits who oversee gardening and fishing.", "citations": [ { "kind": "ethnography", "reference": "Müller, W. (1917). Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" }, { "kind": "reference", "reference": "Lingenfelter, S.G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Collective Yapese spirit-class, entered as a single deity-class figure per the directive (spirit-classes map to deity/demigod). Native terms: kan ('spirit/god') and taliw (the shrine and, by extension, its spirits). Gloss 'Spirits of the Shrines'. Sex recorded as unknown because the class spans male land-spirits and female sea-spirits."
+  },
+  {
+    "id": "pohnpeian_sapwkini",
+    "name": { "primary": "Reef Founder", "alt": ["Sapwkini", "Sapikini", "Sapikidi"], "transliterations": { "pon": "Sapwkini" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "land-building", "contextTag": "lifelong", "term": { "value": "pei", "script": "Latn", "rom": "pei" }, "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] },
+      { "sphereId": "seafaring-settlement", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "faculties": [
+      { "id": "raise_the_island_upon_the_reef", "name": "raises the island upon the submerged reef", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "Arriving by canoe over the empty sea, guided by the octopus Litakika, he and his crew heaped earth on a sunken reef to build up the first land, the stone altar (pei) that gives Pohnpei ('upon a stone altar') its name.", "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] }
+    ],
+    "materialCulture": [
+      { "id": "pohnpeian_first_altar_pei", "kind": "monument", "name": "first stone altar", "term": { "value": "pei", "script": "Latn", "rom": "pei" }, "role": "the founding stone platform raised on the reef from which the island is named", "notes": "Pohnpeian pei is the stone altar/platform; pohn-pei ('upon a stone altar') is the island's name, commemorating this first construction.", "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] }
+    ],
+    "sources": [
+      { "claim": "Sapwkini led the first settlers by canoe, guided by the octopus Litakika, and built up Pohnpei from a submerged reef, raising the founding altar that names the island.", "citations": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" }, { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ], "weight": "primary" }
+    ],
+    "notes": "Pohnpeian founder-settler culture-hero; classed as demigod. Native term Sapwkini. Gloss 'Reef Founder'. The Book of Luelen makes him and his canoe-company the first to raise land on Pohnpei, the act memorialized in the island's name (pohn-pei)."
+  },
+  {
+    "id": "pohnpeian_olisihpa",
+    "name": { "primary": "Elder Sorcerer-Builder", "alt": ["Olisihpa", "Olsihpa", "Olishipa"], "transliterations": { "pon": "Olisihpa" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "sorcery", "contextTag": "lifelong", "term": { "value": "dipw en wai", "script": "Latn", "rom": "dipw en wai" }, "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] },
+      { "sphereId": "ritual-construction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] }
+    ],
+    "faculties": [
+      { "id": "raise_basalt_stones_by_magic", "name": "lifts and lays the basalt stones by magic", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "With his brother he chanted the great prismatic basalt logs through the air and stacked them on the reef off Temwen to build the city; he is the elder who directed the work.", "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [
+      { "id": "pohnpeian_nan_madol", "kind": "monument", "name": "megalithic basalt city", "term": { "value": "Nan Madol", "script": "Latn", "rom": "Nan Madol" }, "role": "the artificial-islet stone city the brothers raised as a ritual center for Nahnisohn Sahpw", "notes": "Pohnpeian Nan Madol ('within the spaces/intervals') is the complex of ~90 artificial islets of stacked columnar basalt on the reef off Temwen, later seat of the Saudeleur dynasty; the term sahu/saudeleur and the islet-city itself are central to the cycle.", "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "sources": [
+      { "claim": "Olisihpa and his brother Olosohpa, twin sorcerers from Katau in the west, raised the megalithic city of Nan Madol; Olisihpa, the elder, died of age before the dynasty was founded.", "citations": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" }, { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ], "weight": "primary" }
+    ],
+    "notes": "Pohnpeian sorcerer-hero, classed as demigod (culture-hero tier). Native term Olisihpa. He and Olosohpa came by canoe from Katau Peidi seeking a site to worship the agriculture/thunder god; Olisihpa died of old age, leaving Olosohpa to found the Saudeleur line."
+  },
+  {
+    "id": "pohnpeian_olosohpa",
+    "name": { "primary": "Younger Sorcerer-Builder", "alt": ["Olosohpa", "Olsohpa", "Oloshipa"], "transliterations": { "pon": "Olosohpa" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "sorcery", "contextTag": "lifelong", "term": { "value": "dipw en wai", "script": "Latn", "rom": "dipw en wai" }, "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "Saudeleur", "script": "Latn", "rom": "Saudeleur" }, "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] }
+    ],
+    "faculties": [
+      { "id": "found_the_saudeleur_line", "name": "founds the first ruling dynasty of Pohnpei", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "heritable", "notes": "After Olisihpa died, Olosohpa married a Pohnpeian woman and declared himself ruler, becoming the first Saudeleur, the title passing down twelve generations.", "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [
+      { "id": "pohnpeian_nan_madol_islet_complex", "kind": "monument", "name": "megalithic basalt city", "term": { "value": "Nan Madol", "script": "Latn", "rom": "Nan Madol" }, "role": "the stone capital the brothers built and where Olosohpa ruled as first Saudeleur", "notes": "Same complex of columnar-basalt artificial islets off Temwen, Pohnpei; royal and ceremonial center of the Saudeleur dynasty, its precincts including Pahn Kadira and Nandauwas.", "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "sources": [
+      { "claim": "Olosohpa, the younger of the two sorcerer-builders of Nan Madol, became the first Saudeleur of Pohnpei.", "citations": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" }, { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ], "weight": "primary" }
+    ],
+    "notes": "Pohnpeian sorcerer-hero and dynastic founder, classed as demigod. Native term Olosohpa. The Saudeleur title he established (sau 'lord' + Deleur, the old name of the polity) was overthrown only by the half-divine Isokelekel, son of the thunder-god."
+  },
+  {
+    "id": "pohnpeian_nahnisohn_sahpw",
+    "name": { "primary": "Lord of the Land", "alt": ["Nahnisohn Sahpw", "Nan Sapwe", "Nahnsapwe", "Daukatau"], "transliterations": { "pon": "Nahnisohn Sahpw" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "sahpw", "script": "Latn", "rom": "sahpw" }, "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] },
+      { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "nansapwe", "script": "Latn", "rom": "nansapwe" }, "sources": [ { "kind": "reference", "reference": "Goodenough, W.H. (2002). Under Heaven's Brow: Pre-Christian Religious Tradition in Chuuk. American Philosophical Society, Philadelphia" } ] }
+    ],
+    "faculties": [
+      { "id": "send_thunder_and_grant_fertility", "name": "sends the thunder and quickens the soil", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "As the deity for whom the brothers built their altar at Nan Madol, he commanded the worship of the land's increase; in the thunder aspect (Nahnsapwe) he sired the avenger Isokelekel after escaping Saudeleur captivity.", "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Nahnisohn Sahpw, the agriculture deity (and thunder-god Nahnsapwe/Daukatau), was the god for whose worship Olisihpa and Olosohpa sought to build their altar, and the central cult-figure of Nan Madol.", "citations": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" }, { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ], "weight": "primary" }
+    ],
+    "notes": "Pohnpeian agriculture-and-thunder deity. Native term Nahnisohn Sahpw (sahpw 'land, soil'); the thunder aspect is Nahnsapwe / Daukatau. Gloss 'Lord of the Land'. The Saudeleur cult centered on him at Nan Madol; his thunder persona fathered Isokelekel, who ended the dynasty."
+  },
+  {
+    "id": "pohnpeian_luhk",
+    "name": { "primary": "Sky Provider", "alt": ["Luhk", "Luuk", "Luk"], "transliterations": { "pon": "Luhk" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "lahng", "script": "Latn", "rom": "lahng" }, "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] },
+      { "sphereId": "provision-of-food-plants", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "give_food_plants_from_his_body", "name": "gives food plants from his own flesh", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Kava grew from a bit of Luhk's flesh that he gave a kind woman to plant, and sugarcane from the grave of a man he had buried; he is the high sky-spirit who provisions the island.", "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Luhk (Luuk) is a high sky-spirit of Pohnpei from whose flesh kava and sugarcane sprang; the compound Luhk Nahnsapwe links him to the thunder-god who fathered Isokelekel.", "citations": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" }, { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ], "weight": "supporting" }
+    ],
+    "notes": "Pohnpeian sky/provider deity; cognate of the wider Carolinian high-god Luk/Lukelong. Native term Luhk (also Luuk). Gloss 'Sky Provider'. In the Isokelekel cycle the divine father is named Luhk Nahnsapwe, joining this sky-name to the thunder aspect of Nahnisohn Sahpw."
+  },
+  {
+    "id": "pohnpeian_isokelekel",
+    "name": { "primary": "Avenger Hero", "alt": ["Isokelekel", "Isohkelekel", "Idzikolkol"], "transliterations": { "pon": "Isokelekel" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["pohnpeian_nahnisohn_sahpw"],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "mahwen", "script": "Latn", "rom": "mahwen" }, "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "Nahnmwarki", "script": "Latn", "rom": "Nahnmwarki" }, "sources": [ { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ] }
+    ],
+    "faculties": [
+      { "id": "overthrow_the_tyrant_dynasty", "name": "overthrows the tyrant dynasty and remakes the order", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "Born of the thunder-god to a woman of his clan, he sailed from Katau in the east with 333 followers, took Nan Madol from the Saudeleur, and founded the Nahnmwarki chieftainships.", "sources": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Isokelekel, half-divine son of the thunder-god, invaded Pohnpei with 333 followers, overthrew the Saudeleur at Nan Madol, and instituted the Nahnmwarki order.", "citations": [ { "kind": "ethnography", "reference": "Bernart, L. (1977). The Book of Luelen (trans. Fischer, Riesenberg & Whiting). Pacific History Series 8, Australian National University Press, Canberra" }, { "kind": "ethnography", "reference": "Hambruch, P. (1932-1936). Ponape. Ergebnisse der Südsee-Expedition 1908-1910, II.B.7, Friederichsen, Hamburg" } ], "weight": "primary" }
+    ],
+    "notes": "Pohnpeian half-divine avenger and dynastic refounder; classed as demigod. Native term Isokelekel (also Isohkelekel). Gloss 'Avenger Hero'. parentIds links to the thunder-aspect deity (Nahnisohn Sahpw / Luhk Nahnsapwe), recorded as his father; his mother was Lipahnmei of the god's clan. Accounts vary widely (at least 13 published versions)."
+  },
+  {
+    "id": "marshallese_lowa",
+    "name": { "primary": "Creator", "alt": ["Lowa", "Loa", "Lōwa"], "transliterations": { "mah": "Lowa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "lowa", "script": "Latn", "rom": "lōwa" }, "sources": [ { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" } ] },
+      { "sphereId": "the-primeval-sea", "contextTag": "lifelong", "term": { "value": "lojet", "script": "Latn", "rom": "lojet" }, "sources": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "chant_the_islands_into_being", "name": "chants the reefs and islands into being", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Dwelling alone in the primeval sea, Lowa by his uttered word raised reefs and sandbanks, brought forth plants and birds, and set a god at each of the cardinal points.", "sources": [ { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Lowa (Loa) is the supreme creator who, alone in the primeval sea, chanted the islands into being and stationed a god at each cardinal point.", "citations": [ { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" }, { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Marshallese creator high-god; classed as deity. Native term Lowa (variant Loa, with the macron Lōwa in current orthography). Gloss 'Creator'. The creation-by-utterance ('Lowa, Lowa...') is the charter chant; he remains in the background after appointing the cardinal gods and the first beings."
+  },
+  {
+    "id": "marshallese_wulleb",
+    "name": { "primary": "First Man", "alt": ["Wulleb", "Wüllep", "Wullep", "Wuleb"], "transliterations": { "mah": "Wūllep" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["marshallese_lowa"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "first-ancestry", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" } ] }
+    ],
+    "faculties": [
+      { "id": "raise_the_shell_into_sky_and_earth", "name": "raises the shell-half into sky and earth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In the variant cosmogony Wulleb and Lejman, the first two beings, lived as worms in a shell and lifted its upper half to make the sky, leaving the lower as the earth.", "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Wulleb (Wüllep) is the first man, issuing from Lowa's leg with the first woman, and father of the trickster Letao; in a variant he and Lejman raise the shell to form sky and earth.", "citations": [ { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" }, { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ], "weight": "primary" }
+    ],
+    "notes": "Marshallese first man / progenitor; classed as deity (primordial being). Native term Wūllep (variants Wulleb, Wüllep). Gloss 'First Man'. parentIds links to Lowa, from whose leg he and the first woman (Limdunanji) emerged; the trickster Letao is born from him."
+  },
+  {
+    "id": "marshallese_lejman",
+    "name": { "primary": "First Woman", "alt": ["Lejman", "Lejmān", "Limdunanij"], "transliterations": { "mah": "Lejmān" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "first-ancestry", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "marshallese_primal_shell", "kind": "natural-vessel", "name": "primal shell", "term": { "value": "libbukwe", "script": "Latn", "rom": "libbukwe" }, "role": "the closed shell whose halves the first two beings raised into sky and earth", "notes": "Marshallese libbukwe is the cowrie/shell; in the worm-in-shell cosmogony its upper half becomes the firmament and its lower half the earth.", "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "sources": [
+      { "claim": "Lejman is the first woman; in the variant cosmogony she and Wulleb are the two worms in the shell who raise its halves into sky and earth.", "citations": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" }, { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" } ], "weight": "supporting" }
+    ],
+    "notes": "Marshallese first woman / primordial being; classed as deity. Native term Lejmān (the first-woman counterpart Limdunanij appears in the Lowa-leg variant). Gloss 'First Woman'. The worm-in-shell motif is noted by Flood & Strong to parallel Tongan cosmogony."
+  },
+  {
+    "id": "marshallese_letao",
+    "name": { "primary": "Fire Trickster", "alt": ["Letao", "Letaọ", "Edao", "Letão"], "transliterations": { "mah": "Letao" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["marshallese_wulleb"],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "kijeek", "script": "Latn", "rom": "kijeek" }, "sources": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ] },
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "wrest_fire_and_secrets_by_guile", "name": "wrests fire and secrets from gods by guile", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "He tricked the keepers of fire into yielding it to people, coaxed out the names of the winds and the secrets of the tides, and roved atoll to atoll through the Ralik and Ratak chains; his deeds parallel those of Olofat/Edao.", "sources": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Letao (Edao) is the Marshallese fire-trickster, son of Wulleb, who obtained fire for humankind and ranged the atolls performing pranks, his powers given by the turtle Lijebake.", "citations": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" }, { "kind": "ethnography", "reference": "Erdland, A. (1914). Die Marshall-Insulaner: Leben und Sitte, Sinn und Religion eines Südsee-Volkes. Anthropos-Bibliothek, Aschendorff, Münster" } ], "weight": "primary" }
+    ],
+    "notes": "Marshallese fire-bringer and trickster culture-hero; classed as demigod (trickster tier). Native term Letao (variant Edao, the same figure Erdland records as the magician son akin to Carolinian Olofat). Gloss 'Fire Trickster'. parentIds links to Wulleb, from a boil on whose leg or his forehead Letao sprang."
+  },
+  {
+    "id": "marshallese_lijebake",
+    "name": { "primary": "Great Mother Turtle", "alt": ["Lijebake", "Lijabake", "Lijōbake"], "transliterations": { "mah": "Lijebake" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Marshallese",
+    "primaryTradition": "Marshallese",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "sea-creatures", "contextTag": "lifelong", "term": { "value": "wōn", "script": "Latn", "rom": "wōn" }, "sources": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ] },
+      { "sphereId": "bestowal-of-power", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "grant_magic_to_the_heroes", "name": "grants magic power to the trickster sons", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The great turtle beneath the waves bestowed magic on Letao and his brother and (as the grandmother turtle) apportioned turtles to the atolls.", "sources": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Lijebake, the great mother turtle of Marshallese myth, gave the trickster brothers their magic and is the ancestress who distributed turtles among the atolls.", "citations": [ { "kind": "reference", "reference": "Tobin, J.A. (2002). Stories from the Marshall Islands: Bwebwenato Jān Aelōñ Kein. University of Hawaii Press, Honolulu" }, { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ], "weight": "supporting" }
+    ],
+    "notes": "Marshallese turtle-ancestress / tutelary spirit; classed as deity (theriomorphic culture-spirit). Native term Lijebake (the feminine prefix Li- marks a female being; wōn is the turtle). Gloss 'Great Mother Turtle'."
+  },
+  {
+    "id": "chamorro_puntan",
+    "name": { "primary": "Creator Brother", "alt": ["Puntan", "Pontan", "Punten"], "transliterations": { "cha": "Puntan" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation-from-the-body", "contextTag": "lifelong", "term": { "value": "tataotao", "script": "Latn", "rom": "tataotao" }, "sources": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ] },
+      { "sphereId": "sky-and-earth", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "reference", "reference": "Flood, B. & Strong, B.E. (2002). Micronesian Legends. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "yield_his_body_to_make_the_world", "name": "yields his own body to make the world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Dying, he bade his sister take his body apart: one eye became the sun and the other the moon, his eyebrows the rainbows, his chest the sky and his back the earth.", "sources": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Puntan, the primordial brother, instructed his sister Fu'una to make the parts of the world from his body at his death.", "citations": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" }, { "kind": "ethnography", "reference": "Garrido, F. (Fray Antonio de los Angeles, 1596-1597), in early Spanish mission accounts of Marianas origin belief, cited in Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History. Micronesian Archaeological Survey Report 32" } ], "weight": "primary" }
+    ],
+    "notes": "Chamorro primordial creator-brother; classed as deity. Native term Puntan (variant Pontan). Gloss 'Creator Brother'. With his sister Fu'una he is the foregrounded Mariana creator-pair; his dismembered body forms the cosmos, a sacrifice recorded since the earliest Spanish missionary observation that the Chamorros 'believed they are born of a rock.'"
+  },
+  {
+    "id": "chamorro_fuuna",
+    "name": { "primary": "Creator Sister", "alt": ["Fu'una", "Fo'na", "Fuuna", "Foha"], "transliterations": { "cha": "Fu'una" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation-from-the-body", "contextTag": "lifelong", "term": { "value": "ånte", "script": "Latn", "rom": "ånte" }, "sources": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ] },
+      { "sphereId": "origin-of-humankind", "contextTag": "lifelong", "term": { "value": "taotao", "script": "Latn", "rom": "taotao" }, "sources": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] }
+    ],
+    "faculties": [
+      { "id": "give_life_to_the_world_and_become_rock", "name": "vivifies the world and becomes the birthing rock", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "She used her spirit to bring her brother's body-parts to life as the world, then cast herself onto the new earth and turned to stone at Fouha Bay; from that rock the first people sprang.", "sources": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ] }
+    ],
+    "materialCulture": [
+      { "id": "chamorro_fouha_rock", "kind": "monument", "name": "birthing rock of Fouha Bay", "term": { "value": "Laso' Fu'a", "script": "Latn", "rom": "Laso' Fu'a" }, "role": "the rock pillar Fu'una became, from which the first humans sprouted", "notes": "Chamorro Laso' Fu'a (also Lasso' Fu'a / Lasu Fua) is the rock spire at Fouha Bay, southwestern Guam, held the cradle of creation; pilgrims went there yearly for a fiesta of origin.", "sources": [ { "kind": "ethnography", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] }
+    ],
+    "sources": [
+      { "claim": "Fu'una (Fo'na) gave life to the world from her brother Puntan's body and then became the rock at Fouha Bay from which the first humans were born.", "citations": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" }, { "kind": "ethnography", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ], "weight": "primary" }
+    ],
+    "notes": "Chamorro primordial creator-sister; classed as deity. Native term Fu'una (variant Fo'na). Gloss 'Creator Sister'. The animating, world-quickening counterpart to Puntan; her petrification at Lasso' Fu'a in Fouha Bay is the central Mariana origin site, attested from the 1596-97 mission of Fray Antonio de los Angeles onward."
+  },
+  {
+    "id": "chamorro_chaifi",
+    "name": { "primary": "Soul-Forging Fire Spirit", "alt": ["Chaifi", "Chaife", "Chaifa"], "transliterations": { "cha": "Chaifi" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "guafi", "script": "Latn", "rom": "guafi" }, "sources": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] },
+      { "sphereId": "souls-of-the-dead", "contextTag": "lifelong", "term": { "value": "ånte", "script": "Latn", "rom": "ånte" }, "sources": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ] }
+    ],
+    "faculties": [
+      { "id": "forge_souls_from_fire", "name": "forges souls from fire", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Dwelling in the volcanic mountain Sasalaguan, he made souls from his fire and held them as tormented slaves; the loss and recovery of a soul is the matter of his folktale.", "sources": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Chaifi is the fiery Chamorro spirit of the volcano Sasalaguan who forged souls from fire and held them captive.", "citations": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" }, { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ], "weight": "supporting" }
+    ],
+    "notes": "Chamorro fire-and-souls spirit; classed as deity. Native term Chaifi (variant Chaife). Gloss 'Soul-Forging Fire Spirit'. His abode Sasalaguan (the fiery mountain) functions in Chamorro belief as a place of the tormented dead; Russell collates the Marianas oral corpus including this cycle."
+  },
+  {
+    "id": "chamorro_taotaomona",
+    "name": { "primary": "Spirits of the Ancestors", "alt": ["taotaomo'na", "taotao mo'na", "aniti", "anite"], "transliterations": { "cha": "taotaomo'na" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chamorro",
+    "primaryTradition": "Chamorro",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "ancestral-spirits", "contextTag": "lifelong", "term": { "value": "aniti", "script": "Latn", "rom": "aniti" }, "sources": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" } ] },
+      { "sphereId": "guardianship-of-land", "contextTag": "lifelong", "term": { "value": "taotaomo'na", "script": "Latn", "rom": "taotaomo'na" }, "sources": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] }
+    ],
+    "faculties": [
+      { "id": "guard_the_land_and_its_users", "name": "guards the land and protects or punishes its users", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-heritable", "notes": "They aid kin who keep right relation and bring sickness or harm to those who trespass without leave; permission is asked before entering the bush they inhabit.", "sources": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] }
+    ],
+    "materialCulture": [
+      { "id": "chamorro_banyan_dwelling", "kind": "natural-site", "name": "banyan tree", "term": { "value": "trongkon nunu", "script": "Latn", "rom": "trongkon nunu" }, "role": "the great banyan held to be the dwelling place of the ancestral spirits", "notes": "Chamorro trongkon nunu (nunu, the banyan, Ficus); a sacred tree whose vicinity is approached only with the spirits' permission.", "sources": [ { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ] }
+    ],
+    "sources": [
+      { "claim": "The taotaomo'na ('people of before') are the ancestral spirits (aniti) of the Chamorro, dwelling in the land and especially the banyan, who protect kin and harm trespassers.", "citations": [ { "kind": "reference", "reference": "Cunningham, L.J. (1992). Ancient Chamorro Society. Bess Press, Honolulu" }, { "kind": "reference", "reference": "Russell, S. (1998). Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands. Micronesian Archaeological Survey Report 32, CNMI" } ], "weight": "primary" }
+    ],
+    "notes": "Chamorro ancestral spirit-class, entered as a single deity-class figure (spirit-classes map to deity/demigod). Native terms taotaomo'na ('people of before') and aniti ('ancestral spirit'). Gloss 'Spirits of the Ancestors'. Sex recorded as unknown (a collective of both sexes). Under Spanish Christianization the ante of the ancestors were recast as ghosts and demons."
+  }
+]
+```
+
+result: Authored a 24-figure comparative-mythology registry (validated JSON array, returned inline above) covering the five absent Micronesian traditions, with no repo files modified.
+
+Coverage and what I checked:
+- Counts: Palauan 6, Pohnpeian 6, Marshallese 5, Chamorro 4, Yapese 3 (18 deity, 6 demigod). All foregrounded creators present — Palauan Latmikaik (+ Chuab, Milad), Marshallese Lowa, Chamorro Puntan and Fu'una — and both Nan Madol builder-brothers (Olisihpa, Olosohpa) carry the megalithic basalt city as `materialCulture` (`term` "Nan Madol").
+- Schema validation passed programmatically: all 24 IDs are snake_case `<tradition>_<name>` and collision-free against `/home/user/PantheonRepository/data-sources/existing-ids.json`; `type` is within the allowed enum; `origin` is "canon"; required top-level keys present; `materialCulture` uses `id`/`name` (never `item`); `domains`/`faculties`/`sources` shapes conform; `sphereId` is kebab-case; faculty `id`s are verb slugs with verb-phrase names; empty terms are blank strings (never disclaimers); `parentIds` all resolve within-set (e.g., Wulleb→Lowa, Letao→Wulleb, Isokelekel→Nahnisohn Sahpw).
+- Constraints honored: English/plain word leads `name.primary` with native attested term in `term` (Latin orthography + rom) and gloss in notes; no modern coinages (grep for kinesis/mancy/pathy/portation/kinetic/telepath returned none); spirit-classes (Yapese taliw/kan, Chamorro taotaomo'na) and tricksters/culture-heroes (Medechiibelau, Letao, Mengidabrutkoel, the sorcerer-brothers) mapped to deity/demigod with the reasoning in notes; no Chuukese/Kiribati figures re-authored.
+- Citations are real per-claim scholarship: Krämer's *Palau* (Ergebnisse der Südsee-Expedition); Müller's *Yap* and Lingenfelter on Yap; Hambruch's *Ponape* and Bernart's *Book of Luelen* for Pohnpei/Nan Madol; Erdland and Tobin for the Marshalls; Cunningham and Russell (+ the 1596–97 de los Angeles mission report) for Chamorro; Goodenough, Parmentier, Force, and Flood & Strong as supporting references.
+
+One scholarship note worth flagging: the Yapese cosmogony is hierarchical — Gavur li yel yel → Yanolop → the sky-gods, of whom Yälfaath/Yalafath the Elder creates humankind. I represented Yalafath accurately as the sky high-god and creator of humanity rather than the sole first cause, and added Gavur li yel yel as the primordial sky-maker above him; this is documented in both figures' notes.
+
+The validated array also exists at `/tmp/scratch/figures.json` (scratch only, outside the repo).

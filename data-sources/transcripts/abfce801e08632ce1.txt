@@ -1,0 +1,1560 @@
+I now have rich, well-sourced material across all six traditions, including parentage chains, native terms, domains, abilities, material culture, and named scholarship (Schärer 1963, Warneck 1909, Angerler 2016 in Wacana, Nooy-Palm's Sa'dan-Toraja, the Sitanggang BIA' article). I'll compose the registry now.
+
+Let me note the key scholarly citations I'll use:
+- Schärer, Hans (1963/1946). *Ngaju Religion: The Conception of God among a South Borneo People*. The Hague: Martinus Nijhoff (Dayak).
+- Warneck, J. (1909). *Die Religion der Batak*. Leipzig: Dieterich (Batak).
+- Angerler, Johann (2016). "Images of God in Toba Batak storytelling." *Wacana* 17(2) (Batak).
+- Nooy-Palm, Hetty (1979). *The Sa'dan-Toraja: A Study of their Social Life and Religion, Vol. I* (Toraja).
+- Geertz, Clifford (1960). *The Religion of Java* (Javanese).
+- Eiseman, Fred B. (1990). *Bali: Sekala and Niskala* (Balinese).
+- Wessing, Robert — various on Nyai Roro Kidul/Sundanese.
+
+Now I'll write the JSON.
+
+```json
+[
+  {
+    "id": "balinese_sang_hyang_widhi",
+    "name": {
+      "primary": "Supreme Divine Order",
+      "alt": ["Acintya", "Sang Hyang Tunggal", "Ida Sang Hyang Widhi Wasa"],
+      "transliterations": { "balinese": "ᬲᬂ​ᬳ᭄ᬬᬂ​ᬯᬶᬤᬶ​ᬯᬵᬲ", "iast": "Saṅ Hyaṅ Widhi Wāsa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Balinese",
+    "primaryTradition": "Balinese",
+    "sex": "none",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / formless, pre-creation" },
+    "domains": [
+      {
+        "sphereId": "supreme-godhead",
+        "contextTag": "lifelong",
+        "term": { "value": "Sang Hyang Widhi Wasa", "script": "ᬲᬂ​ᬳ᭄ᬬᬂ​ᬯᬶᬤᬶ​ᬯᬵᬲ", "rom": "Saṅ Hyaṅ Widhi Wāsa" },
+        "sources": [{ "kind": "secondary", "reference": "Eiseman, Fred B. (1990). Bali: Sekala and Niskala, Vol. I, ch. on godhead. Periplus." }]
+      },
+      {
+        "sphereId": "cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "Acintya", "script": "अचिन्त्य", "rom": "Acintya" },
+        "sources": [{ "kind": "secondary", "reference": "Hooykaas, C. (1964). Agama Tirtha: Five Studies in Hindu-Balinese Religion. Amsterdam: Noord-Hollandsche." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "emanate_all_gods",
+        "name": "emanates every god and spirit as a manifestation of itself",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In Balinese theology all dewa (Brahma, Wisnu, Iswara, etc.) are understood as forms/emanations of the one Widhi; the doctrine was systematized by Balinese reformers in the 1920s-1950s to satisfy Indonesian monotheism requirements but draws on older Siwa-Siddhanta lontar texts.",
+        "sources": [{ "kind": "secondary", "reference": "Picard, Michel (2011). 'Balinese religion in search of recognition,' BKI 167(4)." }]
+      },
+      {
+        "id": "remain_inconceivable",
+        "name": "remains beyond thought, form and the senses",
+        "term": { "value": "Acintya", "script": "अचिन्त्य", "rom": "acintya" },
+        "inheritability": "unique",
+        "notes": "Acintya = 'the inconceivable.' Iconographically shown as a naked figure ringed by flame, the nakedness signalling pure consciousness; associated with the sun whose light cannot be looked at directly.",
+        "sources": [{ "kind": "secondary", "reference": "Stutley, Margaret & James (1977). A Dictionary of Hinduism, s.v. Acintya." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "padmasana_throne",
+        "kind": "shrine",
+        "name": "empty lotus throne",
+        "term": { "value": "padmasana", "script": "ᬧᬤ᭄ᬫᬵᬲᬦ", "rom": "padmāsana" },
+        "role": "The tall stone shrine in every Balinese temple complex left empty/seated at the top for the formless Widhi; the Acintya relief is often carved on its back-rest.",
+        "notes": "The padmasana as seat of Sang Hyang Widhi is attributed to the reformer-priest Dang Hyang Nirartha (16th c.).",
+        "sources": [{ "kind": "secondary", "reference": "Eiseman, Fred B. (1990). Bali: Sekala and Niskala, Vol. I. Periplus." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sang Hyang Widhi Wasa / Acintya is the single supreme, formless godhead of Balinese Hinduism, source of all other deities.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hooykaas, C. (1964). Agama Tirtha: Five Studies in Hindu-Balinese Religion. Amsterdam." },
+          { "kind": "secondary", "reference": "Picard, Michel (2011). 'Balinese religion in search of recognition,' Bijdragen tot de Taal-, Land- en Volkenkunde 167(4): 482-510." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Highest tier of the Balinese (Hindu-Bali) layer. 'Sex: none' because the godhead is explicitly formless and beyond gender. Acintya is the older Siwaite name; Sang Hyang Widhi Wasa is the modern systematized title."
+  },
+  {
+    "id": "balinese_batara_guru",
+    "name": {
+      "primary": "Lord Teacher",
+      "alt": ["Bhatara Guru", "Sang Hyang Manikmaya", "Girinata", "Siwa"],
+      "transliterations": { "balinese": "ᬪᬝᬵᬭ​ᬕᬸᬭᬸ", "iast": "Bhaṭāra Guru" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Balinese",
+    "primaryTradition": "Balinese",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "mythic age of the gods (kahyangan)" },
+    "domains": [
+      {
+        "sphereId": "kingship-of-gods",
+        "contextTag": "lifelong",
+        "term": { "value": "Bhatara Guru", "script": "ᬪᬝᬵᬭ​ᬕᬸᬭᬸ", "rom": "Bhaṭāra Guru" },
+        "sources": [{ "kind": "secondary", "reference": "Zoetmulder, P.J. (1982). Old Javanese-English Dictionary, s.v. bhaṭāra. The Hague: Nijhoff." }]
+      },
+      {
+        "sphereId": "sacred-knowledge",
+        "contextTag": "lifelong",
+        "term": { "value": "guru", "script": "गुरु", "rom": "guru" },
+        "sources": [{ "kind": "secondary", "reference": "Rassers, W.H. (1959). Panji, the Culture Hero: A Structural Study of Religion in Java. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_boons_revelation",
+        "name": "grants revelations, weapons and supernatural gifts to gods and heroes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As Shiva-in-the-form-of-a-teacher he is the chief dispenser of anugraha (boons) in the wayang and Old Javanese kakawin literature.",
+        "sources": [{ "kind": "secondary", "reference": "Mythlok / Batara Guru entry summarizing Javano-Balinese Shaiva tradition (consulted 2026)." }]
+      },
+      {
+        "id": "ride_the_bull",
+        "name": "rides the divine bull across the heavens",
+        "term": { "value": "Nandini", "script": "नन्दिन्", "rom": "Nandinī/Nandi" },
+        "inheritability": "unique",
+        "notes": "His vahana (mount); in the Balinese/Javanese form sometimes named the cow Nandini.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Batara Guru' (consulted 2026); cf. Zoetmulder (1982)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Batara Guru is the Indonesian (Javano-Balinese) form of Rudra-Shiva, ruling the gods' realm (kahyangan) and acting as supreme teacher; consort Dewi Uma, mount Nandi.",
+        "citations": [
+          { "kind": "secondary", "reference": "Zoetmulder, P.J. (1982). Old Javanese-English Dictionary. The Hague: Nijhoff." },
+          { "kind": "secondary", "reference": "Rassers, W.H. (1959). Panji, the Culture Hero. The Hague: Nijhoff." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Shared across Balinese, Javanese and Batak layers; placed here under Balinese as the operative high-god of the Hindu-Bali pantheon. In wayang he is the youngest of the three sons of Sang Hyang Tunggal (with Semar/Ismaya and Togog/Antaga)."
+  },
+  {
+    "id": "balinese_dewi_danu",
+    "name": {
+      "primary": "Lady of the Lake",
+      "alt": ["Dewi Danu", "Batari Dewi Ulun Danu", "Goddess of Lake Batur"],
+      "transliterations": { "balinese": "ᬤᬾᬯᬶ​ᬤᬦᬸ", "iast": "Dewi Danu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Balinese",
+    "primaryTradition": "Balinese",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "perennial / agrarian-ritual present" },
+    "domains": [
+      {
+        "sphereId": "fresh-water-and-lakes",
+        "contextTag": "lifelong",
+        "term": { "value": "danu", "script": "ᬤᬦᬸ", "rom": "danu" },
+        "sources": [{ "kind": "secondary", "reference": "Lansing, J. Stephen (1991). Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali. Princeton University Press." }]
+      },
+      {
+        "sphereId": "irrigation-and-rice-terraces",
+        "contextTag": "lifelong",
+        "term": { "value": "subak", "script": "ᬲᬸᬩᬓ᭄", "rom": "subak" },
+        "sources": [{ "kind": "secondary", "reference": "Lansing, J. Stephen (2006). Perfect Order: Recognizing Complexity in Bali. Princeton University Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "release_irrigation_waters",
+        "name": "releases and apportions the waters that irrigate the rice terraces",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Her temple Ulun Danu Batur sits at the apex of the island-wide water-temple network; the high priest (Jero Gde) of her temple historically coordinated water allocation across the subak system.",
+        "sources": [{ "kind": "secondary", "reference": "Lansing, J. Stephen (1991). Priests and Programmers. Princeton University Press." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ulun_danu_batur_temple",
+        "kind": "temple",
+        "name": "lake-head temple",
+        "term": { "value": "Pura Ulun Danu Batur", "script": "ᬧᬸᬭ​ᬉᬮᬸᬦ᭄​ᬤᬦᬸ​ᬩᬢᬸᬃ", "rom": "Pura Ulun Danu Batur" },
+        "role": "Principal temple of Dewi Danu, regarded as the second-most-important temple of Bali and ritual head of the subak irrigation hierarchy.",
+        "notes": "'Ulun danu' = 'head/source of the lake.' A second famous shrine to her stands at Lake Beratan (Ulun Danu Beratan).",
+        "sources": [{ "kind": "secondary", "reference": "Lansing, J. Stephen (1991). Priests and Programmers. Princeton University Press." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dewi Danu is the Balinese goddess of the crater-lake Batur and of fresh water/irrigation, patron of the subak rice-irrigation cooperatives and reckoned one of Bali's two paramount deities alongside the god of the volcano.",
+        "citations": [
+          { "kind": "secondary", "reference": "Lansing, J. Stephen (1991). Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali. Princeton University Press." },
+          { "kind": "secondary", "reference": "Lansing, J. Stephen (2006). Perfect Order. Princeton University Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Often paired conceptually with the god of Gunung Agung/the volcano as the female (water) to his male (fire/mountain) pole."
+  },
+  {
+    "id": "balinese_dewi_sri",
+    "name": {
+      "primary": "Rice Goddess",
+      "alt": ["Dewi Sri", "Bhatari Sri", "Nini Pantun"],
+      "transliterations": { "balinese": "ᬤᬾᬯᬶ​ᬲ᭄ᬭᬷ", "iast": "Dewi Śrī" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Balinese",
+    "primaryTradition": "Balinese",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "agrarian-ritual present" },
+    "domains": [
+      {
+        "sphereId": "rice-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "padi", "script": "ᬧᬤᬶ", "rom": "padi" },
+        "sources": [{ "kind": "secondary", "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf, ch. on agriculture." }]
+      },
+      {
+        "sphereId": "household-prosperity",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ripen_the_rice",
+        "name": "makes the rice ripen and multiply in field and granary",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "She is honoured at planting, at the rice's 'pregnancy' (when grain forms), at harvest and on installation in the rice barn; offerings called cili (stylized female effigies) represent her.",
+        "sources": [{ "kind": "secondary", "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cili_effigy",
+        "kind": "effigy",
+        "name": "hourglass rice effigy",
+        "term": { "value": "cili", "script": "ᬘᬶᬮᬶ", "rom": "cili" },
+        "role": "Stylized female figures of palm-leaf, coins or rice-stalks placed in fields and barns as the body/image of Dewi Sri.",
+        "notes": "The cili silhouette (broad head, narrow waist) is a pan-Balinese fertility motif identified with the goddess.",
+        "sources": [{ "kind": "secondary", "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dewi Sri is worshipped across Bali (and Java) as goddess of rice, fertility and prosperity, identified with Hindu Śrī-Lakshmi and central to the agricultural ritual cycle.",
+        "citations": [
+          { "kind": "secondary", "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf." },
+          { "kind": "secondary", "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Cross-tradition figure; the Sundanese version (Nyi Pohaci Sanghyang Asri) is given a separate Sundanese entry. Here she is treated as the Balinese rice goddess."
+  },
+  {
+    "id": "balinese_barong",
+    "name": {
+      "primary": "Guardian Beast-King",
+      "alt": ["Barong", "Barong Ket", "Banaspati Raja"],
+      "transliterations": { "balinese": "ᬩᬭᭀᬂ", "iast": "Barong" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Balinese",
+    "primaryTradition": "Balinese",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "perennial / ritual-performative" },
+    "domains": [
+      {
+        "sphereId": "protective-good-forces",
+        "contextTag": "lifelong",
+        "term": { "value": "Barong", "script": "ᬩᬭᭀᬂ", "rom": "Barong" },
+        "sources": [{ "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. Monographs of the American Ethnological Society 16. New York: J.J. Augustin." }]
+      },
+      {
+        "sphereId": "village-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "Banaspati Raja", "script": "ᬩᬦᬲ᭄ᬧᬢᬶ​ᬭᬚ", "rom": "Banaspati Raja" },
+        "sources": [{ "kind": "secondary", "reference": "Eiseman, Fred B. (1990). Bali: Sekala and Niskala, Vol. I. Periplus." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "battle_the_witch",
+        "name": "battles the witch-queen Rangda to restore cosmic balance",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the Calon Arang / Barong-Rangda dance their fight is never finally won by either side, dramatizing the Balinese balance of rwa bhineda (the two opposed but complementary forces).",
+        "sources": [{ "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. New York: J.J. Augustin." }]
+      },
+      {
+        "id": "protect_dancers_with_trance",
+        "name": "shields entranced kris-dancers from self-wounding",
+        "term": { "value": "ngurek", "script": "ᬗᬸᬭᭂᬓ᭄", "rom": "ngurek" },
+        "inheritability": "unique",
+        "notes": "His sacred beard and presence are believed to keep the trance-dancers who turn krises on their own chests from being harmed.",
+        "sources": [{ "kind": "secondary", "reference": "Belo, Jane (1960). Trance in Bali. New York: Columbia University Press." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "barong_ket_mask",
+        "kind": "mask",
+        "name": "two-man beast costume and mask",
+        "term": { "value": "Barong Ket", "script": "ᬩᬭᭀᬂ​ᬓᭂᬢ᭄", "rom": "Barong Ket" },
+        "role": "The consecrated lion/panther costume worn by two dancers; treated as a sacred object housing the protective spirit, with a beard (jenggot) regarded as especially powerful.",
+        "notes": "Other regional forms include Barong Bangkal (boar), Barong Macan (tiger) and Barong Landung (giant puppets).",
+        "sources": [{ "kind": "secondary", "reference": "Eiseman, Fred B. (1990). Bali: Sekala and Niskala, Vol. I. Periplus." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Barong is the Balinese guardian beast-spirit, king of good forces and protector of the village, eternally opposed to the witch-queen Rangda in the Barong dance and Calon Arang drama.",
+        "citations": [
+          { "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. Monographs of the American Ethnological Society 16. New York: J.J. Augustin." },
+          { "kind": "secondary", "reference": "Eiseman, Fred B. (1990). Bali: Sekala and Niskala, Vol. I. Periplus." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Classed as 'deity' (a protective spirit-class being); not a Hindu dewa proper but a sacralized guardian. Sex male by convention as 'Beast-King'/Banaspati Raja."
+  },
+  {
+    "id": "balinese_rangda",
+    "name": {
+      "primary": "Witch-Queen",
+      "alt": ["Rangda", "Calon Arang (incarnation)"],
+      "transliterations": { "balinese": "ᬭᬂᬤ", "iast": "Rangda" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Balinese",
+    "primaryTradition": "Balinese",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "perennial / ritual-performative; legend set in 11th-c. Java" },
+    "domains": [
+      {
+        "sphereId": "black-magic-and-pestilence",
+        "contextTag": "lifelong",
+        "term": { "value": "leyak", "script": "ᬮᬾᬬᬓ᭄", "rom": "leyak" },
+        "sources": [{ "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. New York: J.J. Augustin." }]
+      },
+      {
+        "sphereId": "widowhood-and-the-demonic",
+        "contextTag": "lifelong",
+        "term": { "value": "rangda", "script": "ᬭᬂᬤ", "rom": "rangda" },
+        "sources": [{ "kind": "secondary", "reference": "Zoetmulder, P.J. (1982). Old Javanese-English Dictionary, s.v. raṇḍa ('widow'). The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spread_plague_and_death",
+        "name": "looses plague, crop-failure and death upon villages",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As the legendary widow-witch Calon Arang she avenges her unmarriageable daughter by sending pestilence; identified by Balinese with the goddess Durga in her terrible aspect.",
+        "sources": [{ "kind": "secondary", "reference": "Hooykaas, C. (1978). The Balinese Poem Basur: An Introduction to Magic. The Hague: Nijhoff." }]
+      },
+      {
+        "id": "command_the_leyak_witches",
+        "name": "commands the shape-shifting leyak witches",
+        "term": { "value": "leyak", "script": "ᬮᬾᬬᬓ᭄", "rom": "leyak" },
+        "inheritability": "transmissible",
+        "notes": "She is queen/teacher of the leyak, practitioners of pangiwa (left-hand black magic).",
+        "sources": [{ "kind": "secondary", "reference": "Eiseman, Fred B. (1990). Bali: Sekala and Niskala, Vol. I. Periplus." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "rangda_mask",
+        "kind": "mask",
+        "name": "fanged demon-mask",
+        "term": { "value": "tapel Rangda", "script": "ᬢᬧᭂᬮ᭄​ᬭᬂᬤ", "rom": "tapel Rangda" },
+        "role": "Sacred mask with bulging eyes, tusks, pendulous breasts and a long flame-like tongue; among the most magically charged (tenget) objects in a Balinese village.",
+        "notes": "Often kept in a death-temple (Pura Dalem) and 'fed' offerings; carving and storage are hedged with strict ritual.",
+        "sources": [{ "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. New York: J.J. Augustin." }]
+      },
+      {
+        "id": "white_cloth_anteng",
+        "kind": "regalia",
+        "name": "magical white cloth",
+        "term": { "value": "kereb / anteng", "script": "", "rom": "kereb" },
+        "role": "The white cloth she brandishes, the channel of her death-dealing magic in the dance.",
+        "notes": "Native term uncertain in the sources consulted; value left tentative.",
+        "sources": [{ "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. New York: J.J. Augustin." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rangda is the Balinese witch-queen of black magic, incarnation of the legendary widow Calon Arang and identified with Durga, eternal adversary of Barong; her mask is a major sacred object.",
+        "citations": [
+          { "kind": "secondary", "reference": "Belo, Jane (1949). Bali: Rangda and Barong. Monographs of the American Ethnological Society 16. New York: J.J. Augustin." },
+          { "kind": "secondary", "reference": "Hooykaas, C. (1978). The Balinese Poem Basur. The Hague: Nijhoff." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Classed 'deity' as a powerful spirit/goddess-class being (Durga aspect), per the schema's restriction on type values. 'Rangda' literally means 'widow' in Old Javanese."
+  },
+  {
+    "id": "javanese_semar",
+    "name": {
+      "primary": "Divine Clown-Guardian",
+      "alt": ["Semar", "Sang Hyang Ismaya", "Ki Lurah Semar", "Badranaya"],
+      "transliterations": { "javanese": "ꦱꦼꦩꦂ", "rom": "Semar" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Javanese",
+    "primaryTradition": "Javanese",
+    "sex": "intersex",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "pre-Hindu Javanese substratum (c. 600 CE); perennial in wayang" },
+    "domains": [
+      {
+        "sphereId": "guardianship-of-java",
+        "contextTag": "lifelong",
+        "term": { "value": "danyang", "script": "ꦢꦤꦾꦁ", "rom": "ḍanyang" },
+        "sources": [{ "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press, on Semar." }]
+      },
+      {
+        "sphereId": "wisdom-and-counsel",
+        "contextTag": "lifelong",
+        "term": { "value": "Semar", "script": "ꦱꦼꦩꦂ", "rom": "Semar" },
+        "sources": [{ "kind": "secondary", "reference": "Mangkunagara VII (1933/1957). On the Wayang Kulit Purwa and Its Symbolic and Mystical Elements. Trans. Holt, Cornell SEAP." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "counsel_the_righteous",
+        "name": "guides and advises the righteous knights as a lowly servant",
+        "term": { "value": "punakawan", "script": "ꦥꦤꦏꦮꦤ꧀", "rom": "panakawan" },
+        "inheritability": "unique",
+        "notes": "Chief of the panakawan clown-servants; counsels the Pandhawa though outwardly a fat, comic commoner.",
+        "sources": [{ "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press." }]
+      },
+      {
+        "id": "overpower_the_high_god",
+        "name": "outmatches even the king of the gods when roused",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As Sang Hyang Ismaya, elder brother of Batara Guru, in many lakon he proves more powerful than the supreme god; can reveal his luminous divine body.",
+        "sources": [{ "kind": "secondary", "reference": "Anderson, Benedict R. O'G. (1965). Mythology and the Tolerance of the Javanese. Cornell Modern Indonesia Project." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Semar is the most sacred figure of the Javanese (and Sundanese) wayang, the guardian spirit (danyang) of Java and the hermaphroditic earthly form of the god Sang Hyang Ismaya, elder brother of Batara Guru; chief of the panakawan clowns.",
+        "citations": [
+          { "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press." },
+          { "kind": "secondary", "reference": "Anderson, Benedict R. O'G. (1965). Mythology and the Tolerance of the Javanese. Cornell Modern Indonesia Project Monograph." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Type 'deity' (a god in clown-servant form), per schema. Sex 'intersex' reflects his canonical hermaphroditic body. In wayang cosmology he, Togog (Antaga) and Manikmaya (Batara Guru) are the three sons of Sang Hyang Tunggal born from a single egg (white/shell/yolk)."
+  },
+  {
+    "id": "javanese_petruk",
+    "name": {
+      "primary": "Long-Nosed Clown-Servant",
+      "alt": ["Petruk", "Kanthong Bolong", "Dawala (Sundanese)"],
+      "transliterations": { "javanese": "ꦥꦺꦠꦿꦸꦏ꧀", "rom": "Petruk" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Javanese",
+    "primaryTradition": "Javanese",
+    "sex": "male",
+    "vitalStatus": "alive",
+    "parentIds": ["javanese_semar"],
+    "temporal": { "era": "perennial in wayang" },
+    "domains": [
+      {
+        "sphereId": "feeling-and-empathy",
+        "contextTag": "lifelong",
+        "term": { "value": "rasa", "script": "ꦫꦱ", "rom": "rasa" },
+        "sources": [{ "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deflate_the_powerful_with_wit",
+        "name": "punctures the arrogance of the powerful with comic wit",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "no",
+        "notes": "Tall and gangling with a long nose; in the famous lakon 'Petruk Dadi Ratu' (Petruk Becomes King) he satirizes misused power. Symbolizes rasa (feeling).",
+        "sources": [{ "kind": "secondary", "reference": "Mangkunagara VII (1957). On the Wayang Kulit Purwa. Trans. Holt, Cornell SEAP." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Petruk is one of the panakawan, the adopted son of Semar, characterized by his great height and long nose and the role of comic-yet-wise servant in Javanese wayang.",
+        "citations": [
+          { "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press." },
+          { "kind": "secondary", "reference": "Wikipedia, 'Panakawan' (consulted 2026), citing standard wayang accounts." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Type 'demigod': adopted/foster son of the god Semar, a member of the divine panakawan but living among mortals. Included as the culture-hero/servant tier per brief."
+  },
+  {
+    "id": "javanese_gareng",
+    "name": {
+      "primary": "Club-Footed Clown-Servant",
+      "alt": ["Gareng", "Nala Gareng"],
+      "transliterations": { "javanese": "ꦒꦫꦺꦁ", "rom": "Gareng" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Javanese",
+    "primaryTradition": "Javanese",
+    "sex": "male",
+    "vitalStatus": "alive",
+    "parentIds": ["javanese_semar"],
+    "temporal": { "era": "perennial in wayang" },
+    "domains": [
+      {
+        "sphereId": "thought-and-reason",
+        "contextTag": "lifelong",
+        "term": { "value": "cipta", "script": "ꦕꦶꦥ꧀ꦠ", "rom": "cipta" },
+        "sources": [{ "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "caution_against_ill_gotten_gain",
+        "name": "warns his masters against ill-gotten gain",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "no",
+        "notes": "Short, with a crippled foot, crossed eyes and a maimed hand—physical signs read as warnings against grasping/theft. Symbolizes cipta (reason/thought).",
+        "sources": [{ "kind": "secondary", "reference": "Mangkunagara VII (1957). On the Wayang Kulit Purwa. Trans. Holt, Cornell SEAP." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Gareng is a panakawan, adopted son of Semar, short and club-footed, embodying reason and a moral caution against theft and arrogance in Javanese wayang.",
+        "citations": [
+          { "kind": "secondary", "reference": "Geertz, Clifford (1960). The Religion of Java. Glencoe: Free Press." },
+          { "kind": "secondary", "reference": "Wikipedia, 'Panakawan' (consulted 2026)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Type 'demigod' as foster son of the god Semar. Part of the panakawan quartet (with Petruk and Bagong)."
+  },
+  {
+    "id": "javanese_nyai_roro_kidul",
+    "name": {
+      "primary": "Queen of the Southern Sea",
+      "alt": ["Nyai Roro Kidul", "Ratu Kidul", "Nyai Loro Kidul", "Kanjeng Ratu Kidul"],
+      "transliterations": { "javanese": "ꦤꦾꦻꦫꦫꦏꦶꦢꦸꦭ꧀", "rom": "Nyai Rara Kidul" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Javanese",
+    "primaryTradition": "Javanese",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "legend rooted in 16th-c. Mataram; perennial" },
+    "domains": [
+      {
+        "sphereId": "southern-ocean",
+        "contextTag": "lifelong",
+        "term": { "value": "Segara Kidul", "script": "ꦱꦒꦫꦏꦶꦢꦸꦭ꧀", "rom": "Segara Kidul" },
+        "sources": [{ "kind": "secondary", "reference": "Wessing, Robert (1997). 'Nyai Roro Kidul in Puger: Local Applications of a Myth,' Archipel 53: 97-120." }]
+      },
+      {
+        "sphereId": "royal-legitimacy",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Ricklefs, M.C. (1998). The Seen and Unseen Worlds in Java, 1726-1749. Honolulu: University of Hawai'i Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_southern_sea",
+        "name": "rules the spirit-armies and waters of the Indian Ocean",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Commands a court of sea-spirits; believed to take the lives of swimmers, especially handsome young men, along Java's south coast.",
+        "sources": [{ "kind": "secondary", "reference": "Wessing, Robert (1997). 'Nyai Roro Kidul in Puger,' Archipel 53." }]
+      },
+      {
+        "id": "wed_the_kings_of_mataram",
+        "name": "spiritually weds and legitimizes each ruler of Mataram",
+        "term": { "value": "Labuhan", "script": "ꦭꦧꦸꦲꦤ꧀", "rom": "Labuhan" },
+        "inheritability": "unique",
+        "notes": "Consort of the Mataram/Yogyakarta sultans since Senopati; the courts of Yogyakarta and Surakarta still make her offerings (labuhan) cast into the sea.",
+        "sources": [{ "kind": "secondary", "reference": "Ricklefs, M.C. (1998). The Seen and Unseen Worlds in Java, 1726-1749. University of Hawai'i Press." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "green_garments",
+        "kind": "regalia",
+        "name": "sacred green raiment",
+        "term": { "value": "gadhung mlathi", "script": "ꦒꦣꦸꦁꦩ꧀ꦭꦛꦶ", "rom": "gadhung mlathi" },
+        "role": "Green is her sacred colour; wearing green on the south coast is taboo as it may anger her or mark a person to be taken by the sea.",
+        "notes": "The Yogyakarta court colour 'gadhung mlathi' (jasmine-green) is associated with her.",
+        "sources": [{ "kind": "secondary", "reference": "Wessing, Robert (1997). 'Nyai Roro Kidul in Puger,' Archipel 53." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nyai Roro Kidul (Kanjeng Ratu Kidul) is the goddess-queen of the southern (Indian) ocean in Javanese and Sundanese belief, spiritual consort of the rulers of Mataram, whose sacred colour is green and who still receives court offerings (labuhan).",
+        "citations": [
+          { "kind": "secondary", "reference": "Wessing, Robert (1997). 'Nyai Roro Kidul in Puger: Local Applications of a Myth,' Archipel 53: 97-120." },
+          { "kind": "secondary", "reference": "Ricklefs, M.C. (1998). The Seen and Unseen Worlds in Java, 1726-1749. Honolulu: University of Hawai'i Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Some traditions distinguish Kanjeng Ratu Kidul (the queen proper) from Nyai Roro Kidul (her commander/aspect, the former princess Dewi Kadita of Pajajaran); recorded here as the dominant conflated figure with that distinction noted."
+  },
+  {
+    "id": "javanese_sunan_lawu",
+    "name": {
+      "primary": "Spirit-King of Mount Lawu",
+      "alt": ["Sunan Lawu", "Eyang Lawu", "Raden Gugur", "Prabu Brawijaya V"],
+      "transliterations": { "javanese": "ꦱꦸꦤꦤ꧀ꦭꦮꦸ", "rom": "Sunan Lawu" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Javanese",
+    "primaryTradition": "Javanese",
+    "sex": "male",
+    "vitalStatus": "ascended",
+    "parentIds": [],
+    "temporal": { "era": "fall of Majapahit, late 15th c.; thereafter perennial guardian-spirit" },
+    "domains": [
+      {
+        "sphereId": "mountain-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "Gunung Lawu", "script": "ꦒꦸꦤꦸꦁꦭꦮꦸ", "rom": "Gunung Lawu" },
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia (Indonesian), 'Sunan Lawu' (consulted 2026), summarizing the Brawijaya V / Majapahit legend." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_mountain_realm",
+        "name": "rules and guards the spirit realm of the eastern Javanese volcanoes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "After the last Majapahit king Brawijaya V achieved moksha on Lawu (refusing conversion to Islam), his son Raden Gugur was made Sunan Lawu, lord of the spirit-beings of Lawu and neighbouring peaks; said still to meet pilgrims, attended by the spirit-bird Kyai Jalak.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia (Indonesian), 'Sunan Lawu' (consulted 2026)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sunan Lawu (Eyang Lawu) is the deified guardian spirit-king of Mount Lawu in Javanese tradition, identified with Raden Gugur, son of the last Majapahit ruler Brawijaya V, who attained the rank after the king's moksha on the mountain.",
+        "citations": [
+          { "kind": "secondary", "reference": "Wikipedia (Indonesian), 'Sunan Lawu' (consulted 2026)." },
+          { "kind": "secondary", "reference": "Lyon, Margo L. (1980). 'The Hindu Revival in Java,' in J. Fox (ed.), Indonesia: The Making of a Culture. ANU. (context on Lawu Majapahit memory)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Type 'demigod': a deified human/ancestral mountain-king (a scion of Majapahit royalty elevated to guardian-spirit). vitalStatus 'ascended' (moksha / became a spirit-being)."
+  },
+  {
+    "id": "sundanese_sang_hyang_kersa",
+    "name": {
+      "primary": "Almighty Will",
+      "alt": ["Sang Hyang Kersa", "Sanghyang Tunggal", "Batara Tunggal", "Batara Seda Niskala", "Guriang Tunggal"],
+      "transliterations": { "sundanese": "ᮞᮀ​ᮠ᮪ᮚᮀ​ᮊᮨᮁᮞ", "rom": "Sang Hyang Kersa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sundanese",
+    "primaryTradition": "Sundanese",
+    "sex": "none",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / pre-creation" },
+    "domains": [
+      {
+        "sphereId": "supreme-godhead",
+        "contextTag": "lifelong",
+        "term": { "value": "Sang Hyang Kersa", "script": "ᮞᮀ​ᮠ᮪ᮚᮀ​ᮊᮨᮁᮞ", "rom": "Sang Hyang Kersa" },
+        "sources": [{ "kind": "secondary", "reference": "Ekadjati, Edi S. (1995). Kebudayaan Sunda: Suatu Pendekatan Sejarah. Jakarta: Pustaka Jaya." }]
+      },
+      {
+        "sphereId": "destiny-and-fate",
+        "contextTag": "lifelong",
+        "term": { "value": "Batara Seda Niskala", "script": "ᮘᮒᮛ​ᮞᮨᮓ​ᮑᮤᮞ᮪ᮊᮜ", "rom": "Batara Seda Niskala" },
+        "sources": [{ "kind": "secondary", "reference": "Noorduyn, J. & Teeuw, A. (2006). Three Old Sundanese Poems. Leiden: KITLV Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_universe_and_gods",
+        "name": "wills the universe and the lesser gods into being",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In Sunda Wiwitan he creates the cosmos and the other deities (including Sunan Ambu and Batara Guru) and dwells in the highest realm Buana Nyungcung; invisible and unseen (Seda Niskala).",
+        "sources": [{ "kind": "secondary", "reference": "Ekadjati, Edi S. (1995). Kebudayaan Sunda. Jakarta: Pustaka Jaya." }]
+      },
+      {
+        "id": "uphold_the_three_worlds",
+        "name": "upholds the three-layered cosmos through sacred custom",
+        "term": { "value": "pikukuh", "script": "ᮕᮤᮊᮥᮊᮥᮂ", "rom": "pikukuh" },
+        "inheritability": "unique",
+        "notes": "Governs the worlds via binding custom (pikukuh) and prohibition (pamali), especially among the Baduy.",
+        "sources": [{ "kind": "secondary", "reference": "Wessing, Robert (1977). 'The Position of the Baduj in the Larger West Javanese Society,' Man 12(2)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sang Hyang Kersa (Batara Tunggal/Batara Seda Niskala) is the supreme, invisible creator-god of the Sundanese Sunda Wiwitan religion, source of the other gods and of cosmic order, especially central to the Baduy.",
+        "citations": [
+          { "kind": "secondary", "reference": "Ekadjati, Edi S. (1995). Kebudayaan Sunda: Suatu Pendekatan Sejarah. Jakarta: Pustaka Jaya." },
+          { "kind": "secondary", "reference": "Wessing, Robert (1977). 'The Position of the Baduj in the Larger West Javanese Society,' Man (N.S.) 12(2): 293-303." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Highest tier of the Sundanese pantheon. Sex 'none' (formless, unseen). Names per the Sanghyang Siksakanda ng Karesian and Baduy oral tradition."
+  },
+  {
+    "id": "sundanese_sunan_ambu",
+    "name": {
+      "primary": "Noble Mother Goddess",
+      "alt": ["Sunan Ambu", "Batari Sunan Ambu", "Susuhunan Ambu"],
+      "transliterations": { "sundanese": "ᮞᮥᮔᮔ᮪​ᮃᮙ᮪ᮘᮥ", "rom": "Sunan Ambu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sundanese",
+    "primaryTradition": "Sundanese",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": ["sundanese_sang_hyang_kersa"],
+    "temporal": { "era": "mythic age of the gods (kahyangan)" },
+    "domains": [
+      {
+        "sphereId": "motherhood-and-the-heavens",
+        "contextTag": "lifelong",
+        "term": { "value": "ambu", "script": "ᮃᮙ᮪ᮘᮥ", "rom": "ambu" },
+        "sources": [{ "kind": "secondary", "reference": "Eringa, F.S. (1949). Loetoeng Kasaroeng: een mythologisch verhaal uit West-Java. Verhandelingen KITLV. The Hague: Nijhoff." }]
+      },
+      {
+        "sphereId": "protection-of-heroes",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Noorduyn, J. & Teeuw, A. (2006). Three Old Sundanese Poems. Leiden: KITLV Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_homeland_and_honored_mortals",
+        "name": "watches over the homeland and protects honoured mortals",
+        "term": { "value": "kahyangan", "script": "ᮊᮠ᮪ᮚᮍᮔ᮪", "rom": "kahyangan" },
+        "inheritability": "unique",
+        "notes": "Reigning mother-goddess of the heavenly Kahyangan; she descends to aid heroes in the carita pantun (Lutung Kasarung, Mundinglaya Dikusumah, Sangkuriang).",
+        "sources": [{ "kind": "secondary", "reference": "Eringa, F.S. (1949). Loetoeng Kasaroeng. KITLV. The Hague: Nijhoff." }]
+      },
+      {
+        "id": "restore_heroes_to_life",
+        "name": "revives fallen heroes and dispenses heavenly favour",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the pantun her favour and intervention (sometimes via Nyi Pohaci) restore slain heroes such as Mundinglaya.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Sunan Ambu' (consulted 2026), summarizing carita pantun." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sunan Ambu (Batari Sunan Ambu) is the supreme mother-goddess of Sundanese mythology, dwelling in Kahyangan, protector of the homeland and helper of heroes in the carita pantun corpus.",
+        "citations": [
+          { "kind": "secondary", "reference": "Eringa, F.S. (1949). Loetoeng Kasaroeng: een mythologisch verhaal uit West-Java. Verhandelingen KITLV. The Hague: Nijhoff." },
+          { "kind": "secondary", "reference": "Noorduyn, J. & Teeuw, A. (2006). Three Old Sundanese Poems. Leiden: KITLV Press." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Daughter/emanation of Sang Hyang Kersa in some Sunda Wiwitan accounts. Counterpart to the male high-god as the maternal divine principle."
+  },
+  {
+    "id": "sundanese_nyi_pohaci",
+    "name": {
+      "primary": "Rice Goddess",
+      "alt": ["Nyi Pohaci Sanghyang Asri", "Dewi Sri (Sundanese)", "Nyai Pohaci"],
+      "transliterations": { "sundanese": "ᮑᮤ​ᮕᮧᮠᮎᮤ​ᮞᮀᮠ᮪ᮚᮀ​ᮃᮞᮢᮤ", "rom": "Nyi Pohaci Sanghyang Asri" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sundanese",
+    "primaryTradition": "Sundanese",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "mythic creation; perennial agrarian" },
+    "domains": [
+      {
+        "sphereId": "rice-and-agriculture",
+        "contextTag": "lifelong",
+        "term": { "value": "pare", "script": "ᮕᮛᮦ", "rom": "paré" },
+        "sources": [{ "kind": "secondary", "reference": "Hidding, K.A.H. (1929). Nji Pohatji Sangjang Sri. Leiden: Dubbeldeman (dissertation on the Sundanese rice goddess)." }]
+      },
+      {
+        "sphereId": "fertility-of-the-soil",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_the_first_rice",
+        "name": "transforms in death into the first rice and food-crops",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the Sundanese myth the gods cause the maiden Nyi Pohaci's death to protect her chastity; from her buried body spring rice (from her navel), coconut, and other useful plants—the origin of cultivated food.",
+        "sources": [{ "kind": "secondary", "reference": "Hidding, K.A.H. (1929). Nji Pohatji Sangjang Sri. Leiden: Dubbeldeman." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nyi Pohaci Sanghyang Asri is the Sundanese rice-and-fertility goddess (the Sundanese Dewi Sri), from whose buried body rice and other crops first grew in the origin myth.",
+        "citations": [
+          { "kind": "secondary", "reference": "Hidding, K.A.H. (1929). Nji Pohatji Sangjang Sri. Leiden: Dubbeldeman." },
+          { "kind": "secondary", "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sundanese counterpart of the Balinese/Javanese Dewi Sri, given a distinct entry per the brief (the Balinese Dewi Sri is balinese_dewi_sri). The 'dying-and-transforming maiden' motif is the classic Hainuwele-type origin-of-staple-crops myth."
+  },
+  {
+    "id": "sundanese_mundinglaya",
+    "name": {
+      "primary": "Prince Hero of Pajajaran",
+      "alt": ["Mundinglaya Dikusumah", "Mundinglaya di Kusumah"],
+      "transliterations": { "sundanese": "ᮙᮥᮔ᮪ᮓᮤᮀᮜᮚ​ᮓᮤᮊᮥᮞᮥᮙᮂ", "rom": "Mundinglaya Dikusumah" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Sundanese",
+    "primaryTradition": "Sundanese",
+    "sex": "male",
+    "vitalStatus": "alive",
+    "parentIds": [],
+    "temporal": { "era": "legendary reign of Prabu Siliwangi, Pajajaran kingdom" },
+    "domains": [
+      {
+        "sphereId": "heroic-questing",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Eringa, F.S. & others; cf. Noorduyn, J. & Teeuw, A. (2006). Three Old Sundanese Poems. Leiden: KITLV Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "vanquish_the_guriang_guardians",
+        "name": "overcomes the seven guriang spirits guarding the talisman",
+        "term": { "value": "guriang", "script": "ᮌᮥᮛᮤᮃᮀ", "rom": "guriang" },
+        "inheritability": "no",
+        "notes": "Quests to the sky-realm (Jabaning Langit) to fetch the talisman; slain in the fight, he is restored to life (by Nyi Pohaci in some versions) and proves his honesty, whereupon the guriang yield the talisman.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Mundinglaya Dikusumah' (consulted 2026), summarizing the carita pantun." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "layang_salaka_domas",
+        "kind": "talisman",
+        "name": "silver-scripture talisman",
+        "term": { "value": "Layang Salaka Domas", "script": "ᮜᮚᮀ​ᮞᮜᮊ​ᮓᮧᮙᮞ᮪", "rom": "Layang Salaka Domas" },
+        "role": "The sacred talisman/scripture Mundinglaya is sent to retrieve from the heavens to save the kingdom of Pajajaran from catastrophe.",
+        "notes": "'Layang' = letter/scripture; 'salaka' = silver; 'domas' = 800. A palladium-type object guaranteeing the realm's welfare.",
+        "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Mundinglaya Dikusumah' (consulted 2026)." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mundinglaya Dikusumah is a Sundanese culture-hero/prince of the carita pantun, who quests to the sky-realm to win the talisman Layang Salaka Domas for the kingdom of Pajajaran under Prabu Siliwangi.",
+        "citations": [
+          { "kind": "secondary", "reference": "Wikipedia, 'Mundinglaya Dikusumah' (consulted 2026), summarizing the Sundanese pantun." },
+          { "kind": "secondary", "reference": "Noorduyn, J. & Teeuw, A. (2006). Three Old Sundanese Poems. Leiden: KITLV Press (on the carita pantun genre)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Type 'demigod' as a legendary hero with divine aid (revived by Nyi Pohaci; quests into the gods' realm). Included as the Sundanese culture-hero tier with his attested gear."
+  },
+  {
+    "id": "dayak_mahatala",
+    "name": {
+      "primary": "Upperworld God",
+      "alt": ["Mahatala", "Hatala", "Mahatara", "Ranying Hatalla Langit"],
+      "transliterations": { "ngaju": "Mahatala", "rom": "Mahatala" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / creation" },
+    "domains": [
+      {
+        "sphereId": "upperworld-and-sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Mahatala", "script": "", "rom": "Mahatala" },
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion: The Conception of God among a South Borneo People. Trans. R. Needham. The Hague: Martinus Nijhoff." }]
+      },
+      {
+        "sphereId": "creation-and-cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_world_with_consort",
+        "name": "creates the world and humankind together with the water-serpent goddess",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Mahatala and Jata together form a single supreme totality; the world arose when their seats clashed. In creation he appears as a male hornbill, she as a female hornbill.",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      },
+      {
+        "id": "embody_the_hornbill",
+        "name": "manifests as the hornbill of the upperworld",
+        "term": { "value": "tingang", "script": "", "rom": "tingang" },
+        "inheritability": "unique",
+        "notes": "The hornbill (tingang) is his symbol/manifestation, carved atop houses opposite the watersnake (lower world).",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "tree_of_life",
+        "kind": "cosmic-symbol",
+        "name": "tree of life",
+        "term": { "value": "batang garing", "script": "", "rom": "batang garing" },
+        "role": "The cosmic tree expressing the unity of upper- and lower-world (Mahatala and Jata); central emblem of Ngaju/Kaharingan religion.",
+        "notes": "The hornbill perches at its top and the watersnake coils at its base, uniting the two godheads.",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mahatala (Hatala) is the male upperworld deity of the Ngaju Dayak of Borneo, who with the underworld water-serpent goddess Jata forms the dual total godhead and created the world and humankind; symbolized by the hornbill.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schärer, Hans (1963/1946). Ngaju Religion: The Conception of God among a South Borneo People. Trans. R. Needham. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Ngaju Dayak' (Encyclopedia of World Cultures), consulted 2026." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Within Indonesian-recognized 'Hindu Kaharingan' he is titled Ranying Hatalla Langit. No native script (Ngaju is unwritten/Latin-script), so script fields are empty."
+  },
+  {
+    "id": "dayak_jata",
+    "name": {
+      "primary": "Underworld Water-Serpent Goddess",
+      "alt": ["Jata", "Tambon", "Jata Balawang Bulau"],
+      "transliterations": { "ngaju": "Jata", "rom": "Jata" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / creation" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-primeval-waters",
+        "contextTag": "lifelong",
+        "term": { "value": "Jata", "script": "", "rom": "Jata" },
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      },
+      {
+        "sphereId": "fertility-of-earth-and-water",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dwell_as_watersnake",
+        "name": "dwells in the primeval waters as the great watersnake",
+        "term": { "value": "tambon", "script": "", "rom": "tambon" },
+        "inheritability": "unique",
+        "notes": "She is the lower-world half of the dual godhead, the watersnake/dragon (tambon); her domain's entrance lies at deep river-junctions near villages.",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      },
+      {
+        "id": "co_create_humankind",
+        "name": "shares in creating the world and the first humans",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "With Mahatala she represents the totality of all paired opposites (sun/moon, life/death, sacred spear/sacred cloth); manifests as a female hornbill at creation.",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Jata is the female underworld/water deity of the Ngaju Dayak, the great watersnake of the primeval waters who together with the upperworld god Mahatala forms the dual supreme being and shares in creation.",
+        "citations": [
+          { "kind": "secondary", "reference": "Schärer, Hans (1963/1946). Ngaju Religion. Trans. R. Needham. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Ngaju Dayak' (Encyclopedia of World Cultures), consulted 2026." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The watersnake/lower-world counterpart of Mahatala. No native script (oral/Latin)."
+  },
+  {
+    "id": "dayak_tempon_telon",
+    "name": {
+      "primary": "Soul-Ferryman of the Dead",
+      "alt": ["Tempon Telon", "Tempun Telun"],
+      "transliterations": { "ngaju": "Tempon Telon", "rom": "Tempon Telon" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dayak",
+    "primaryTradition": "Dayak",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "perennial / mortuary-ritual" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-soul-journey",
+        "contextTag": "lifelong",
+        "term": { "value": "liau", "script": "", "rom": "liau" },
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ferry_souls_to_prosperous_village",
+        "name": "ferries the souls of the dead past dangers to the heavenly village",
+        "term": { "value": "Lewu Tatau", "script": "", "rom": "Lewu Tatau" },
+        "inheritability": "unique",
+        "notes": "In the magah liau rite and the great Tiwah secondary-burial, priestly chants depict him steering the soul-ship (banama) of the dead across perils to Lewu Tatau, the Prosperous Village (heaven).",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "soul_ship",
+        "kind": "vessel",
+        "name": "ship of the dead",
+        "term": { "value": "banama tingang", "script": "", "rom": "banama tingang" },
+        "role": "The hornbill-prowed spirit-ship in which Tempon Telon conveys souls to the afterworld, depicted in Ngaju mortuary art and ritual.",
+        "notes": "The 'ship of the dead' is a key motif of Ngaju funerary iconography (e.g., on coffins and ritual cloths).",
+        "sources": [{ "kind": "secondary", "reference": "Schärer, Hans (1963). Ngaju Religion. The Hague: Nijhoff." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tempon Telon is the Ngaju Dayak psychopomp who, in the magah liau and Tiwah death rituals, pilots the ship of the dead carrying souls past dangers to the heavenly Prosperous Village (Lewu Tatau).",
+        "citations": [
+          { "kind": "secondary", "reference": "Schärer, Hans (1963/1946). Ngaju Religion. Trans. R. Needham. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Baier, Martin (2007). 'The Development of the Hindu Kaharingan Religion,' Borneo Research Bulletin 38." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Type 'deity' as a divine/spirit-class soul-guide (psychopomp). Included as the ferryman figure requested in the brief."
+  },
+  {
+    "id": "batak_mula_jadi_na_bolon",
+    "name": {
+      "primary": "Great Origin of Becoming",
+      "alt": ["Mula Jadi Na Bolon", "Mula Jadi Nabolon", "Ompu Mula Jadi"],
+      "transliterations": { "batak": "ᯔᯮᯞ ᯐᯀᯑᯪ ᯉ ᯅᯬᯞᯉ᯲", "rom": "Mula Jadi na Bolon" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Batak",
+    "primaryTradition": "Batak",
+    "sex": "none",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / before creation" },
+    "domains": [
+      {
+        "sphereId": "creation-and-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "Mula Jadi na Bolon", "script": "ᯔᯮᯞ ᯐᯀᯑᯪ ᯉ ᯅᯬᯞᯉ᯲", "rom": "Mula Jadi na Bolon" },
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      },
+      {
+        "sphereId": "life-fertility-and-fate",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "originate_all_existence",
+        "name": "brings forth the gods, the worlds and all that exists",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Self-existent in the seven-layered upperworld; both good and evil, male and female. Sires the three high gods (Batara Guru, Soripada, Mangalabulan) by a blue/divine hen.",
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      },
+      {
+        "id": "sustain_the_living",
+        "name": "remains source of life, fertility and prosperity after creation",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Unlike a deus otiosus, he stays involved with humankind; though he rules death he is the source of life and health.",
+        "sources": [{ "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mula Jadi na Bolon is the self-existent creator high-god of the Toba Batak, ruler of the seven-layered upperworld, both male and female, who fathered the three high gods by a divine hen and remains the source of life and fertility.",
+        "citations": [
+          { "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." },
+          { "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Name = 'the great beginning of becoming.' Sex 'none' (explicitly both male and female). Surat Batak (Toba) rendering given approximately."
+  },
+  {
+    "id": "batak_batara_guru",
+    "name": {
+      "primary": "First of the Three High Gods",
+      "alt": ["Batara Guru (Batak)", "Debata Batara Guru"],
+      "transliterations": { "batak": "ᯅᯗᯒ ᯏᯒᯮ", "rom": "Batara Guru" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Batak",
+    "primaryTradition": "Batak",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": ["batak_mula_jadi_na_bolon"],
+    "temporal": { "era": "primordial age of the gods" },
+    "domains": [
+      {
+        "sphereId": "wisdom-and-cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "Debata na Tolu", "script": "", "rom": "Debata na Tolu" },
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "father_the_earth_maker",
+        "name": "fathers the goddess who will fashion the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Eldest of the Debata na Tolu (the trinity) born from eggs hatched by the divine hen Manuk Patiaraja; father of Si Boru Deak Parujar, the earth-creatrix; he supplies the handful of soil from which she forms the earth.",
+        "sources": [{ "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2)." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Batara Guru is the eldest of the Batak high-god trinity (Debata na Tolu), son of Mula Jadi na Bolon, and father of Si Boru Deak Parujar who creates the earth.",
+        "citations": [
+          { "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." },
+          { "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Batak Batara Guru differs from the Javano-Balinese Shiva-Guru: here he is one of three brothers (with Soripada and Mangalabulan), associated with wisdom/origination. Kept distinct from balinese_batara_guru."
+  },
+  {
+    "id": "batak_si_boru_deak_parujar",
+    "name": {
+      "primary": "Weaver Who Made the Earth",
+      "alt": ["Si Boru Deak Parujar", "Sideak Parudjar", "Boru Deak Parujar"],
+      "transliterations": { "batak": "ᯘᯪ ᯅᯬᯒᯮ ᯑᯩᯀᯂ᯲ ᯇᯒᯮᯐᯒ᯲", "rom": "Si Boru Deak Parujar" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Batak",
+    "primaryTradition": "Batak",
+    "sex": "female",
+    "vitalStatus": "active",
+    "parentIds": ["batak_batara_guru"],
+    "temporal": { "era": "time of creation" },
+    "domains": [
+      {
+        "sphereId": "earth-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "tano", "script": "ᯗᯉᯬ", "rom": "tano" },
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      },
+      {
+        "sphereId": "weaving-and-craft",
+        "contextTag": "lifelong",
+        "term": { "value": "martonun", "script": "", "rom": "martonun" },
+        "sources": [{ "kind": "secondary", "reference": "Niessen, Sandra (2009). Legacy in Cloth: Batak Textiles of Indonesia. Leiden: KITLV Press." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_land_on_the_sea",
+        "name": "spreads earth upon the primeval sea from a handful of soil",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Fleeing an arranged marriage, she descends to the watery chaos and, with soil from Mula Jadi, forms dry land on the head of the serpent Naga Padoha.",
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      },
+      {
+        "id": "subdue_the_underworld_serpent",
+        "name": "pins the world-serpent to keep the earth from being shaken under",
+        "term": { "value": "Naga Padoha", "script": "ᯉᯎ ᯇᯑᯨᯀ", "rom": "Naga Padoha" },
+        "inheritability": "unique",
+        "notes": "When Naga Padoha writhes to throw off the land (causing earthquakes), she thrusts a sword through him up to the hilt and lays him in an iron block.",
+        "sources": [{ "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2)." }]
+      },
+      {
+        "id": "mother_the_human_race",
+        "name": "becomes ancestress of all humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Marries Mangalabulan's lizard-son Boraspati ni Tano; their twins descend at Pusuk Buhit, found Si Anjur Mulamula, and from them all people descend.",
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "creation_sword",
+        "kind": "weapon",
+        "name": "earth-fixing sword",
+        "term": { "value": "podang", "script": "", "rom": "podang" },
+        "role": "The sword she drives through Naga Padoha to subdue him and stabilize the earth.",
+        "notes": "Native term tentative (Toba 'podang/piso' for sword/blade); recorded in the myth as the implement of his binding.",
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Si Boru Deak Parujar, the weaver-goddess daughter of Batara Guru, created the earth on the primeval sea, subdued the world-serpent Naga Padoha, and became the ancestress of humankind in Toba Batak myth.",
+        "citations": [
+          { "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." },
+          { "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The earth-diver/earth-spreader creatrix; her epithet links her to weaving (she was let down on a spun thread in some versions). 'Deak Parujar' is associated with spinning/weaving skill."
+  },
+  {
+    "id": "batak_naga_padoha",
+    "name": {
+      "primary": "Serpent of the Underworld Sea",
+      "alt": ["Naga Padoha", "Si Raja Padoha"],
+      "transliterations": { "batak": "ᯉᯎ ᯇᯑᯨᯀ", "rom": "Naga Padoha" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Batak",
+    "primaryTradition": "Batak",
+    "sex": "male",
+    "vitalStatus": "bound",
+    "parentIds": [],
+    "temporal": { "era": "primordial / before creation" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-primeval-sea",
+        "contextTag": "lifelong",
+        "term": { "value": "Naga Padoha", "script": "ᯉᯎ ᯇᯑᯨᯀ", "rom": "Naga Padoha" },
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      },
+      {
+        "sphereId": "earthquakes",
+        "contextTag": "lifelong",
+        "term": { "value": "lalo", "script": "", "rom": "lalo" },
+        "sources": [{ "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shake_the_earth",
+        "name": "shakes the earth when he writhes against his bonds",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The earth rests on his head; his struggles to throw it off are the cause of earthquakes. Existed before creation as opponent of Mula Jadi.",
+        "sources": [{ "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Naga Padoha is the dragon-serpent of the watery underworld in Toba Batak cosmology, primeval opponent of Mula Jadi, on whose head the earth rests and whose writhing causes earthquakes.",
+        "citations": [
+          { "kind": "secondary", "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich." },
+          { "kind": "secondary", "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Type 'deity' (a primordial chthonic divine being). vitalStatus 'bound' — pinned by Si Boru Deak Parujar's sword in an iron block beneath the earth."
+  },
+  {
+    "id": "toraja_puang_matua",
+    "name": {
+      "primary": "Old Lord of the Heavens",
+      "alt": ["Puang Matua", "Puang Matua Kombong Bura"],
+      "transliterations": { "toraja": "Puang Matua", "rom": "Puang Matua" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toraja",
+    "primaryTradition": "Toraja",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / creation" },
+    "domains": [
+      {
+        "sphereId": "creator-and-sky-lord",
+        "contextTag": "lifelong",
+        "term": { "value": "Puang Matua", "script": "", "rom": "Puang Matua" },
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I: Organization, Symbols and Beliefs. The Hague: Martinus Nijhoff." }]
+      },
+      {
+        "sphereId": "sacred-law",
+        "contextTag": "lifelong",
+        "term": { "value": "aluk", "script": "", "rom": "aluk" },
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_the_first_beings",
+        "name": "forges the ancestors of humans, creatures and crops in his sky-smithy",
+        "term": { "value": "sauan sibarrung", "script": "", "rom": "sauan sibarrung" },
+        "inheritability": "unique",
+        "notes": "From his forge with its paired bellows (sauan sibarrung) he creates eight 'contents,' including Datu Laukku' (ancestor of humans), and the ancestors of buffalo, chicken, cotton, iron and rice.",
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      },
+      {
+        "id": "give_the_ritual_law",
+        "name": "gives the Toraja their ritual law and customs",
+        "term": { "value": "Aluk To Dolo", "script": "", "rom": "Aluk To Dolo" },
+        "inheritability": "unique",
+        "notes": "Creator and giver of aluk, the ancestral ritual law; chief deity ruling the lesser gods (deata).",
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sky_bellows",
+        "kind": "tool",
+        "name": "paired sky-bellows",
+        "term": { "value": "sauan sibarrung", "script": "", "rom": "sauan sibarrung" },
+        "role": "The twin bellows of Puang Matua's heavenly forge through which he blew breath into the first beings.",
+        "notes": "Central image of the Toraja creation; the forge motif links creation to metallurgy.",
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Puang Matua is the supreme creator-god and sky-lord of the Sa'dan Toraja, who forged the ancestors of humans and other beings in his heavenly smithy with the paired bellows (sauan sibarrung) and gave the ritual law (aluk).",
+        "citations": [
+          { "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Toraja Religion' (Encyclopedia of Religion), consulted 2026." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "In some genealogies Puang Matua is grandson of a yet-higher sky principle (Gauntikembong); recorded here as the operative high/creator god of Aluk To Dolo. No native script (Toraja is unwritten/Latin)."
+  },
+  {
+    "id": "toraja_pong_banggai_di_rante",
+    "name": {
+      "primary": "Lord of the Broad Plain",
+      "alt": ["Pong Banggai di Rante", "Pong Banggairante"],
+      "transliterations": { "toraja": "Pong Banggai di Rante", "rom": "Pong Banggai di Rante" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toraja",
+    "primaryTradition": "Toraja",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / creation" },
+    "domains": [
+      {
+        "sphereId": "earth-and-the-plains",
+        "contextTag": "lifelong",
+        "term": { "value": "Pong Banggai di Rante", "script": "", "rom": "Pong Banggai di Rante" },
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      },
+      {
+        "sphereId": "agriculture-and-human-life",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, 'Toraja Religion' (Encyclopedia of Religion), consulted 2026." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_earths_surface",
+        "name": "regulates everything on the earth's surface and human life",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "One of the Titanan Tallu ('three hearthstones'); the brother who 'stayed on earth' to order the land, crops and human affairs.",
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Pong Banggai di Rante is the Toraja earth-god, one of the three primordial deities (Titanan Tallu), who orders the surface of the earth, agriculture and human life.",
+        "citations": [
+          { "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Toraja Religion' (Encyclopedia of Religion), consulted 2026." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Middle of the three cosmic gods: Gaun Tikembong (sky) / Pong Banggai di Rante (earth) / Pong Tulak Padang (underworld)."
+  },
+  {
+    "id": "toraja_pong_tulak_padang",
+    "name": {
+      "primary": "Lord Who Supports the Earth",
+      "alt": ["Pong Tulak Padang", "Pong Tulakpadang"],
+      "transliterations": { "toraja": "Pong Tulak Padang", "rom": "Pong Tulak Padang" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toraja",
+    "primaryTradition": "Toraja",
+    "sex": "male",
+    "vitalStatus": "active",
+    "parentIds": [],
+    "temporal": { "era": "primordial / creation" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-foundations",
+        "contextTag": "lifelong",
+        "term": { "value": "Pong Tulak Padang", "script": "", "rom": "Pong Tulak Padang" },
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      },
+      {
+        "sphereId": "earthquakes-and-equilibrium",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "uphold_the_earth_from_below",
+        "name": "carries and balances the earth in his hands from the underworld",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The Toraja 'Atlas': he holds up the earth from below; with Puang Matua above he keeps it in equilibrium and separates night from day. Described as merciful, not terrible; governs earthquakes, rivers and lakes.",
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Pong Tulak Padang is the Toraja underworld god who supports the earth from beneath and keeps it in balance (the 'Toraja Atlas'), one of the three primordial deities, regulating earthquakes, rivers and lakes.",
+        "citations": [
+          { "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Toraja Religion' (Encyclopedia of Religion), consulted 2026." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The third cosmic god (underworld). Brief named 'Pong Banggai di Rante' specifically; this related figure is added to complete the attested Titanan Tallu triad."
+  },
+  {
+    "id": "toraja_datu_laukku",
+    "name": {
+      "primary": "First-Forged Ancestor of Humankind",
+      "alt": ["Datu Laukku'", "Datu Laukku"],
+      "transliterations": { "toraja": "Datu Laukku'", "rom": "Datu Laukku'" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Toraja",
+    "primaryTradition": "Toraja",
+    "sex": "none",
+    "vitalStatus": "ancestral",
+    "parentIds": ["toraja_puang_matua"],
+    "temporal": { "era": "time of creation; first generation" },
+    "domains": [
+      {
+        "sphereId": "ancestry-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "Datu Laukku'", "script": "", "rom": "Datu Laukku'" },
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "originate_the_human_line",
+        "name": "stands as the first ancestor from whom humankind descends",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "transmissible",
+        "notes": "One of the eight 'contents' forged by Puang Matua; the first human ancestor, made when the god blew breath into matter through the sauan sibarrung bellows.",
+        "sources": [{ "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Nijhoff." }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Datu Laukku' is the first human ancestor in Toraja myth, one of the eight beings forged by the creator Puang Matua in his sky-smithy.",
+        "citations": [
+          { "kind": "secondary", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I. The Hague: Martinus Nijhoff." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Toraja Religion' (Encyclopedia of Religion), consulted 2026." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Type 'demigod': directly created divine-born progenitor of humans (a primal ancestor tier). Sex 'none' recorded as the sources do not consistently gender this first being. Included as the Toraja progenitor/culture-origin tier."
+  }
+]
+```
+
+Let me sanity-check the output against the schema and hard rules before finalizing.

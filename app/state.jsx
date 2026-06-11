@@ -5,8 +5,12 @@
 
 const { useState, useEffect, useMemo, useCallback, useRef } = React;
 
-const PEOPLE_KEY = 'pantheon_registry_v8';
-const ATLAS_KEY  = 'pantheon_atlas_v2';
+// Single-source the storage keys from data.js (always loaded first): the
+// version suffix has been bumped three times, and a missed call site is
+// exactly how a stale-corpus desync happens. Literal fallbacks only guard
+// the impossible no-__PR case.
+const PEOPLE_KEY = (window.__PR && window.__PR.PEOPLE_KEY) || 'pantheon_registry_v9';
+const ATLAS_KEY  = (window.__PR && window.__PR.ATLAS_KEY)  || 'pantheon_atlas_v2';
 
 // Type-tier metadata. The five tiers form an ordinal scale of divinity:
 // deity (1) → demigod (½) → quartigod (¼) → scion (trace) → mortal (0).
@@ -96,22 +100,38 @@ function readJSON(key) {
 }
 
 function loadPeople() {
+  // In-memory fallback: the corpus exceeds the ~5 MB localStorage cap, so in
+  // real browsers the seed write is refused and this is the only data path.
+  const memSeed = () => {
+    const mem = window.__PR && window.__PR.seedPeople;
+    return mem ? Object.values(mem) : [];
+  };
   const v = readJSON(PEOPLE_KEY);
-  if (!v) return [];
-  if (Array.isArray(v)) return v;
-  // The legacy registry stores a MAP keyed by entry id. It may also be
-  // wrapped under .people / .entries depending on schema version.
-  if (v.people && typeof v.people === 'object') {
-    return Array.isArray(v.people) ? v.people : Object.values(v.people);
+  if (!v) return memSeed();
+  let out;
+  if (Array.isArray(v)) {
+    out = v;
+  } else if (v.people && typeof v.people === 'object') {
+    // The legacy registry stores a MAP keyed by entry id. It may also be
+    // wrapped under .people / .entries depending on schema version.
+    out = Array.isArray(v.people) ? v.people : Object.values(v.people);
+  } else if (v.entries && Array.isArray(v.entries)) {
+    out = v.entries;
+  } else {
+    // Plain id-keyed map at the top level.
+    out = Object.values(v).filter(x => x && typeof x === 'object' && (x.id || x.name));
   }
-  if (v.entries && Array.isArray(v.entries)) return v.entries;
-  // Plain id-keyed map at the top level.
-  return Object.values(v).filter(x => x && typeof x === 'object' && (x.id || x.name));
+  // A present-but-empty value ('{}', '[]', a wrapper with nothing in it —
+  // e.g. left behind by a legacy clear) must not shadow the in-memory seed:
+  // it would blank the registry on every reload since seeding is
+  // only-when-absent.
+  return (out && out.length) ? out : memSeed();
 }
 
 function loadAtlas() {
   const v = readJSON(ATLAS_KEY);
-  return v && typeof v === 'object' ? v : {};
+  if (v && typeof v === 'object' && Object.keys(v).length) return v;
+  return (window.__PR && window.__PR.seedAtlas) || {};
 }
 
 // ── Era helpers ──────────────────────────────────────────────────────────
@@ -152,31 +172,6 @@ function entryAnchorYear(entry) {
   return eraStart(entry?.tradition, t);
 }
 
-// ── Warm-start hydration ─────────────────────────────────────────────────
-// Since app/data.js now seeds window.__PR synchronously at module load,
-// the new UI always has the canonical constants available before state.jsx
-// even reads them. hydrateConstants() remains as a no-op fast-path check
-// (returns true if __PR is already there, which it always is) — kept so
-// main.jsx's branch shape doesn't have to change.
-
-function hydrateConstants() {
-  return !!(window.__PR && window.__PR.ERA_DATES);
-}
-
-function hasSeededPeople() {
-  try {
-    const raw = localStorage.getItem('pantheon_registry_v8');
-    if (!raw) return false;
-    const data = JSON.parse(raw);
-    if (!data) return false;
-    if (Array.isArray(data)) return data.length > 0;
-    if (Array.isArray(data.people))  return data.people.length > 0;
-    if (Array.isArray(data.entries)) return data.entries.length > 0;
-    if (typeof data === 'object')    return Object.keys(data).length > 0;
-    return false;
-  } catch (e) { return false; }
-}
-
 // ── Tradition pigments ───────────────────────────────────────────────────
 
 const FALLBACK_PIGMENTS = [
@@ -199,8 +194,8 @@ function colorForTradition(tradition) {
 // (1851)", "Late Woodland (650-1200 CE)", "~17th-18th c. CE", etc.). This
 // extracts a numeric year range so the atlas can scope rendering to a
 // specific year. Returns { start, end } in signed years (BCE negative,
-// CE positive) — or null if nothing parses. Pragmatic: covers ~85% of
-// the actual period strings in the registry.
+// CE positive) — or null if nothing parses. Pragmatic: the remainder are
+// purely descriptive strings with no date content at all.
 
 function parsePeriod(text, tradition) {
   if (!text || typeof text !== 'string') return null;
@@ -217,26 +212,22 @@ function parsePeriod(text, tradition) {
     return { start: Math.min(a, b), end: Math.max(a, b) };
   }
 
-  // Century range: "16th-17th c. BCE" / "17th-18th c. CE"
+  // Century range: "16th-17th c. BCE" / "17th-18th c. CE". Normalize the
+  // century order so an ascending BCE authoring ("16th-17th c. BCE") doesn't
+  // collapse to a degenerate point range.
   m = s.match(/(\d{1,2})(?:st|nd|rd|th)[\s\-–]*(\d{1,2})(?:st|nd|rd|th)\s*[-–]?\s*c(?:\.|entur(?:y|ies))?\s*(bce|ce|bc|ad)/);
   if (m) {
-    const c1 = parseInt(m[1], 10);
-    const c2 = parseInt(m[2], 10);
+    const lo = Math.min(parseInt(m[1], 10), parseInt(m[2], 10));
+    const hi = Math.max(parseInt(m[1], 10), parseInt(m[2], 10));
     const isBCE = m[3].startsWith('b');
-    if (isBCE) return { start: -c1 * 100, end: -(c2 - 1) * 100 };
-    return { start: (c1 - 1) * 100, end: c2 * 100 };
+    if (isBCE) return { start: -hi * 100, end: -(lo - 1) * 100 };
+    return { start: (lo - 1) * 100, end: hi * 100 };
   }
 
-  // Single century: "5th c. BCE" / "17th c. CE"
-  m = s.match(/(\d{1,2})(?:st|nd|rd|th)\s*[-–]?\s*c(?:\.|entur(?:y|ies))?\s*(bce|ce|bc|ad)/);
-  if (m) {
-    const c = parseInt(m[1], 10);
-    const isBCE = m[2].startsWith('b');
-    if (isBCE) return { start: -c * 100, end: -(c - 1) * 100 };
-    return { start: (c - 1) * 100, end: c * 100 };
-  }
-
-  // Qualified century: "early 19th c.", "mid 19th c.", "late 19th c."
+  // Qualified century: "early 19th c.", "mid 19th c.", "late 19th c.".
+  // Must run BEFORE the plain single-century branch — that regex matches
+  // anywhere in the string, so it would eat "late 19th c. CE" and return
+  // the whole century, leaving this branch unreachable.
   m = s.match(/(early|mid|late|peak)\s*\-?\s*(\d{1,2})(?:st|nd|rd|th)\s*[-–]?\s*c(?:\.|entury)?\s*(bce|ce|bc|ad)?/);
   if (m) {
     const q = m[1];
@@ -247,6 +238,15 @@ function parsePeriod(text, tradition) {
     if (q === 'early') return { start: base,      end: base + 33 };
     if (q === 'mid')   return { start: base + 33, end: base + 66 };
     if (q === 'late' || q === 'peak') return { start: base + 66, end: top };
+  }
+
+  // Single century: "5th c. BCE" / "17th c. CE"
+  m = s.match(/(\d{1,2})(?:st|nd|rd|th)\s*[-–]?\s*c(?:\.|entur(?:y|ies))?\s*(bce|ce|bc|ad)/);
+  if (m) {
+    const c = parseInt(m[1], 10);
+    const isBCE = m[2].startsWith('b');
+    if (isBCE) return { start: -c * 100, end: -(c - 1) * 100 };
+    return { start: (c - 1) * 100, end: c * 100 };
   }
 
   // Plain BCE/CE single year: "1184 BCE", "c. 800 CE", "~1500 BCE", "1851 CE"
@@ -319,7 +319,38 @@ function formatYearRangeSigned(start, end) {
   return null;
 }
 
+// The one canonical mythic-first date pairing, shared by Browse and Detail so
+// the two views can never disagree about an entry's displayed range. Bounds
+// are resolved per-AXIS, never per-field: pairing `textualStart ?? mythicStart`
+// with `textualEnd ?? mythicEnd` mixes the two timescales whenever one axis is
+// partial, and renders reversed ranges like "1900 CE – 1500 CE".
+function entryDateRange(dates) {
+  if (!dates) return null;
+  return formatYearRangeSigned(dates.mythicStart, dates.mythicEnd) ||
+         formatYearRangeSigned(dates.textualStart, dates.textualEnd) || null;
+}
+
 // ── Display helpers ──────────────────────────────────────────────────────
+
+// Keyboard-activatable click target. The detail panels' inline links are
+// spans/divs, which do not synthesize click on Enter/Space the way <button>
+// does — without this they are announced as interactive but keyboard-inert.
+// Spread the result onto the element: {...pressable(() => open(id), 'link')}
+function pressable(onActivate, role = 'button') {
+  if (!onActivate) return {};
+  return {
+    role,
+    tabIndex: 0,
+    onClick: onActivate,
+    onKeyDown: (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        e.stopPropagation();
+        onActivate();
+      }
+    },
+  };
+}
 
 function displayName(entry) {
   if (!entry) return '';
@@ -473,9 +504,9 @@ function useFilters(people) {
 
   // Pre-flattened search haystack per entry. Built once per `people` change
   // and reused across every keystroke. Without this, each character typed
-  // rebuilt 601 × (displayName + altNames + transliterations + lowercase)
-  // calls — ~10-15 ms per keystroke. With it, search is one Map.get and
-  // one String.includes per entry.
+  // rebuilt corpus-size × (displayName + altNames + transliterations +
+  // lowercase) calls — ~10-15 ms per keystroke. With it, search is one
+  // Map.get and one String.includes per entry.
   const searchHaystacks = useMemo(() => {
     const m = new Map();
     for (const p of people) {
@@ -628,14 +659,13 @@ function itemsForEntry(entry) {
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
   useData, useFilters, useSelection,
-  displayName, altNames, transliterations,
+  displayName, altNames, transliterations, pressable,
   formatEra,
   getEntryDates,
   SORTS,
   RELATION_FAMILIES, relationFamily,
   colorForTradition,
-  parsePeriod, formatYearSigned, formatYearRangeSigned,
-  hydrateConstants, hasSeededPeople,
+  parsePeriod, formatYearSigned, formatYearRangeSigned, entryDateRange,
   divinityInfo, traditionMix, fmtFraction,
   inheritedPowers, nameRecords,
   allItems, itemById, itemsForEntry,

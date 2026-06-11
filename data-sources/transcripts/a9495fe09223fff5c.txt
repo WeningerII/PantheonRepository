@@ -1,0 +1,68 @@
+Now I have full confirmation with precise characters:
+- **Dinghaishenzhen** (定海神針, "Sea-Stabilizing Divine Pillar/Needle"), later 如意金箍棒 Ruyi Jingu Bang — JTTW Ch. 3, originally Yu the Great's sea-depth-measuring pillar. Yu = owner/wielder/maker-user.
+- **Luoshu** (洛書, "Luo River Writing") — the divine tortoise from the Luo River presented it to Yu during the flood; Yu interpreted it into the Hongfan (洪範) Nine Categories. Attested via Liu Xin and the Shangshu (Book of Documents) "Hongfan" chapter. Yu = recipient.
+- **Shuibaoshu** (水寳書, "Book of Water Treasures") — Yaoji/Yunhua gave it to Yu at Wushan; source Du Guangting's Yongcheng jixian lu. Yaoji = maker/giver; Yu = recipient.
+
+I now have a comprehensive, well-verified set. Let me consolidate. Before finalizing, let me reconsider scope discipline for a few borderline items and make final decisions:
+
+**Decisions:**
+- Erlang's pellet bow (金弓銀彈/彈弓) — INCLUDE (JTTW Ch.6, Ch.63). Strong.
+- Erlang's Xiaotian Quan (哮天犬) — INCLUDE (JTTW Ch.6 + Fengshen Yanyi). It's a mount/companion beast. kind=mount fits best (animal companion).
+- Yu: Dinghaishenzhen (定海神針) — INCLUDE. kind=artifact (it's a tool/pillar; "weapon" only later for Wukong). For Yu it's a measuring tool → artifact.
+- Yu: Luoshu (洛書) — INCLUDE. kind=relic/artifact. role=recipient.
+- Yaoji: Shuibaoshu (水寳書) — INCLUDE for Yaoji (maker/giver) AND Yu (recipient). kind=relic (a magic book).
+- Tameyoshi: Genji-hachiryō (源氏八領) eight armors + Usukane (薄金) — INCLUDE. 
+- Yoshiie: Hachiryō (八龍) armor — INCLUDE (Hōgen Monogatari, he wore it in Later Three Years' War).
+- Yoritomo: Genta-ga-ubuginu (源太産衣) — INCLUDE (Heiji Monogatari).
+- Yoshitsune: Hachiryō (八龍) — INCLUDE (Genpei Jōsuiki, reappears as his armor). Note Yoshitsune already has a sword; this adds armor.
+
+Wait — Hachiryō is attributed to BOTH Yoshiie (original wearer) and Yoshitsune (later wearer). That's fine; it's a heirloom worn by both across generations, and the registry tracks per-figure. I'll emit it for both with appropriate roles (Yoshiie = wielder/original; Yoshitsune = wielder/heir).
+
+Should I also give Tameyoshi the full eight-armor set as one entry plus Usukane as a specific one? The cleanest: one entry for the collective Genji-hachiryō (he's the custodian per Hōgen Monogatari) and one for Usukane (the one he personally wore at Hōgen). Both are attested. I'll include both but they slightly overlap. Actually, to avoid redundancy, I'll give Tameyoshi: (1) Genji-hachiryō collective (owner/custodian), and (2) Usukane as the specific armor he wore. That's defensible and distinct.
+
+Let me reconsider whether to attribute Usukane to Yoshiie instead. The sources say the set was "made in Yoshiie's era" but the specific documented wearer of Usukane is Tameyoshi (Hōgen Rebellion). The specific documented Yoshiie armor is Hachiryō (Later Three Years' War). So: Yoshiie→Hachiryō, Tameyoshi→Usukane. Clean. Good.
+
+One more consideration: the roster's `japanese_yoshitsune` already has "yoshitsune-usumidori-hizamaru" — a sword. The armor Hachiryō is different. Good, no collision. And there's an armor named Hizamaru (膝丸) in the eight — but that's not attributed to a roster figure specifically (it went to Yoshitomo, who's not in the roster), so I won't emit it.
+
+Let me also double-check: is there a strong missing item for **Erlang Shen** that's a "lock" — the "Universe-locking" — no. And **Chen Xiang** already has the axe. **Sanshengmu** has baolian-deng (lotus lantern). Good.
+
+Now let me verify the Hachiryō meaning/source detail once more for the Yoshiie attribution and the Heiji Monogatari detail for Genta, then I'm done. Actually I already have strong confirmation for all. Let me do one final check on the Erlang pellet bow being treated as a distinct weapon and its best kebab id, and confirm the Genta-ga-ubuginu romanization. I'm confident. Let me compile the output.
+
+Let me write out the final verified results.
+
+Based on my multi-source verification, here are the results.
+
+=== chinese_yaoji (Yaoji)
+chinese_yaoji :: ITEM shuibaoshu-water-treasure-book | name=Book of Water Treasures | term=水寳書 | script=Chinese (hanzi) | rom=Shuǐbǎoshū | kind=relic | role=maker | gloss=Flood-control scripture Yunhua gave Yu the Great | src=Du Guangting, Yongcheng jixian lu (Tang)
+
+=== chinese_erlang_shen (Erlang Shen)
+chinese_erlang_shen :: ITEM erlang-golden-pellet-bow | name=Golden Pellet Bow | term=金弓銀彈 (彈弓) | script=Chinese (hanzi) | rom=jīngōng yíndàn (dàngōng) | kind=weapon | role=wielder | gloss=Crescent pellet-bow; downed Wukong-as-bird | src=Journey to the West, ch. 6 & 63
+chinese_erlang_shen :: ITEM xiaotian-quan | name=Howling Celestial Dog | term=哮天犬 | script=Chinese (hanzi) | rom=Xiàotiān Quǎn | kind=mount | role=owner | gloss=Demon-biting hound aiding Erlang in battle | src=Journey to the West ch.6; Fengshen Yanyi
+
+=== chinese_yu_the_great (Yu the Great)
+chinese_yu_the_great :: ITEM dinghai-shenzhen | name=Sea-Stabilizing Divine Pillar | term=定海神針 | script=Chinese (hanzi) | rom=Dìnghǎi Shénzhēn | kind=artifact | role=wielder | gloss=Iron pillar Yu used to gauge sea depths | src=Journey to the West, ch. 3
+chinese_yu_the_great :: ITEM luoshu | name=Luo River Writing | term=洛書 | script=Chinese (hanzi) | rom=Luòshū | kind=relic | role=recipient | gloss=Turtle-borne diagram yielding the Nine Categories | src=Shujing "Hongfan"; Liu Xin (Han)
+chinese_yu_the_great :: ITEM shuibaoshu-water-treasure-book | name=Book of Water Treasures | term=水寳書 | script=Chinese (hanzi) | rom=Shuǐbǎoshū | kind=relic | role=recipient | gloss=Flood-control scripture received from Yunhua at Wushan | src=Du Guangting, Yongcheng jixian lu (Tang)
+
+=== japanese_tameyoshi (Tameyoshi)
+japanese_tameyoshi :: ITEM genji-hachiryo | name=Eight Armors of the Minamoto | term=源氏八領 | script=Japanese (kanji) | rom=Genji Hachiryō | kind=armor | role=owner | gloss=Eight Seiwa-Genji heirloom armors he held | src=Hōgen Monogatari, vol. 1
+japanese_tameyoshi :: ITEM usukane-armor | name=Usukane ("Thin Metal") | term=薄金 | script=Japanese (kanji) | rom=Usukane | kind=armor | role=wielder | gloss=Genji armor Tameyoshi wore at Hōgen | src=Hōgen Monogatari
+
+=== japanese_yoshiie (Yoshiie)
+japanese_yoshiie :: ITEM hachiryo-armor | name=Hachiryō ("Eight Dragons") | term=八龍 | script=Japanese (kanji) | rom=Hachiryō | kind=armor | role=wielder | gloss=Eight-dragon armor worn in Later Three Years' War | src=Hōgen Monogatari
+
+=== japanese_yoritomo (Yoritomo)
+japanese_yoritomo :: ITEM genta-ga-ubuginu | name=Genta's Birth-Garment | term=源太産衣 | script=Japanese (kanji) | rom=Genta-ga-ubuginu | kind=armor | role=wielder | gloss=Coming-of-age armor Yoritomo wore at Heiji | src=Heiji Monogatari; Genpei Jōsuiki
+
+=== japanese_yoshitsune (Yoshitsune)
+japanese_yoshitsune :: ITEM hachiryo-armor | name=Hachiryō ("Eight Dragons") | term=八龍 | script=Japanese (kanji) | rom=Hachiryō | kind=armor | role=heir | gloss=Heirloom eight-dragon armor, reappears as Yoshitsune's | src=Genpei Jōsuiki
+
+---
+
+**Notes (scope / drops):**
+- **Korean**: No new verified items. The Cheonbu-in (천부인, 天符印) heavenly seals are already on Hwanin/Hwanung; the Samguk Yusa gives Dangun (`korean_tangun`) no distinct named regalia of his own, so nothing was added.
+- **Japanese Three Sacred Treasures / Susanoo / Izanagi items dropped as un-attachable**: Kusanagi-no-Tsurugi, Yata-no-Kagami, Yasakani-no-Magatama, Ame-no-Nuhoko, Totsuka-no-Tsurugi/Ame-no-Habakiri have NO owner figure present in the roster (no Izanagi, Susanoo, Amaterasu, Ninigi, or imperial line). Per "only attach to figures in the roster," I omitted them. (Nigihayahi's Ten Sacred Treasures, Tokusa-no-Kandakara, are already in the roster.)
+- **Chinese drops for absent figures**: Nezha's Qiankun-quan/Feng-huo-lun/Hun-tian-ling and Chang'e's elixir were not emitted — Nezha and Chang'e are not in the roster. Huangdi's Xuanyuan sword + south-pointing chariot are already present; the Jade Emperor's *gui* tablet/*ruyi* scepter are generic iconographic attributes (no single named, narratively-attested instance), so dropped. Erlang's "Kaishan axe" was dropped: in the Lotus-Lantern cycle the mountain-splitting axe belongs to Chen Xiang (already rostered as chenxiang-mountain-axe), not reliably to Erlang.
+- **Hachiryō appears twice by design**: it is a single heirloom armor worn by Yoshiie (Hōgen Monogatari) and later by Yoshitsune (Genpei Jōsuiki); emitted under each with roles wielder vs. heir.
+
+Sources consulted: [Erlang Shen / Xiaotian Quan](https://en.wikipedia.org/wiki/Erlang_Shen), [Journey to the West ch.6 transformation battle](https://journeytothewestresearch.com/2022/04/05/archive-36-sun-wukong-and-battles-of-magical-transformations/), [Ruyi Jingu Bang / Dinghai Shenzhen](https://en.wikipedia.org/wiki/Ruyi_Jingu_Bang), [Yaoji & the Shuibaoshu](https://en.wikipedia.org/wiki/Yaoji), [Du Guangting](https://en.wikipedia.org/wiki/Du_Guangting), [Yu the Great / Luoshu / chinaknowledge.de](http://www.chinaknowledge.de/History/Myth/personsyu.html), [Hetu-Luoshu](http://www.chinaknowledge.de/Literature/Daoists/hetuluoshu.html), [Genji-hachiryō (源氏八領), Japanese Wikipedia](https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E5%85%AB%E9%A0%98), [Genji-hachiryō, Markus Sesko](https://markussesko.com/2013/04/21/genji-hachiryo-the-eight-armors-of-the-minamoto/), [Dangun, World History Encyclopedia](https://www.worldhistory.org/Dangun/).

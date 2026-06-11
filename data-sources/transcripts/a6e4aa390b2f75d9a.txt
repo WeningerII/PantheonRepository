@@ -1,0 +1,1418 @@
+I have thoroughly verified all four traditions with real scholarship (Radcliffe-Brown 1922, Man, Schebesta, Evans 1937, Gurdon 1907, Playfair 1909). I now have enough to author the full registry. Let me build the JSON array of ~24 figures, foregrounding Puluga/Biliku, Karei, the Ka Sngi/U Bnai pair, and Hynñiew Trep.
+
+Authoring the figures now. The script (Andamanese/Semang are unwritten → Latin transcription only; Khasi → Latin orthography; Garo → Latin, Bengali where attested). All ids snake_case `<tradition>_<name>`, none colliding with existing-ids.json.
+
+```json
+[
+  {
+    "id": "andamanese_biliku",
+    "name": {
+      "primary": "Biliku",
+      "alt": ["Puluga", "Bilik", "Biliku-Bilik", "Bilik-u"],
+      "transliterations": { "Aka-Bea": "Pūluga", "Aka-Cari/North-Andaman": "Bilik(u)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Andamanese",
+    "primaryTradition": "Andamanese",
+    "sex": "varies",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / before-times (in the time of the ancestors)" },
+    "domains": [
+      {
+        "sphereId": "storm-and-monsoon-wind",
+        "contextTag": "lifelong",
+        "term": { "value": "Biliku", "script": "Latin", "rom": "Biliku" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922, ch. on the mythology of the natural phenomena (Biliku and Tarai as the NE and SW monsoon winds)" }
+        ]
+      },
+      {
+        "sphereId": "creation-and-cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "Pūluga", "script": "Latin", "rom": "Puluga" },
+        "sources": [
+          { "kind": "ethnography", "reference": "E. H. Man, On the Aboriginal Inhabitants of the Andaman Islands, 1883 (Pūluga as creator and moral lawgiver in the southern Aka-Bea account)" }
+        ]
+      },
+      {
+        "sphereId": "taboo-and-divine-anger",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (Biliku's anger at burning or melting beeswax, killing cicadas, and certain forbidden noises, causing storms)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-the-monsoon-winds",
+        "name": "send the monsoon winds",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Biliku dwells at the NE end of the world and sends the northeast monsoon; the opposed wind is sent by Tarai. Different bands cast the pair variously as female/male or as the strong vs. mild wind.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      },
+      {
+        "id": "hurl-storm-and-strike-with-objects",
+        "name": "hurl storm and strike offenders with thrown objects",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "When enraged by a taboo violation Biliku sends violent weather and 'throws things' that smash canoes and kill people; appeasement requires ceasing the forbidden act.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      },
+      {
+        "id": "make-the-luminaries",
+        "name": "make the sun and the moon",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "In North Andaman myth Biliku made the sun and moon and bore children, among them the cicada (Mite); she also originally owned fire.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (North Andaman mythology)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "andamanese_biliku_fire_stones",
+        "kind": "implement",
+        "name": "fire-making red stone and pearl-shell",
+        "term": { "value": "be", "script": "Latin", "rom": "be" },
+        "role": "Biliku struck a red stone against a pearl-shell (be) to obtain the first fire, which was later stolen from her.",
+        "notes": "In the Aka-Cari account Biliku made fire by striking a red stone and a pearl-shell; the kingfisher Maia Lirčitmo (or the dove Mite) stole it while she slept.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (fire-theft myth)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Biliku (Bilik), called Pūluga in the southern groups, is the creator/storm being associated with the northeast monsoon and the enforcer of taboo.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922" },
+          { "kind": "ethnography", "reference": "E. H. Man, On the Aboriginal Inhabitants of the Andaman Islands, London, 1883" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Radcliffe-Brown found Biliku to be of variable sex across bands (often female in the North, treated as a male creator in Man's southern Aka-Bea informants), and not a single uniform supreme deity.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class creator-and-weather being classed here as deity. Identity of Pūluga (southern Aka-Bea, per E. H. Man) and Biliku/Bilik (northern groups, per Radcliffe-Brown) was a central debate in early Andamanese ethnography; Radcliffe-Brown showed the figure is the personified NE monsoon, paired in opposition with Tarai (SW monsoon), with sex and personality varying by band. 'Biliku' is also the bee/cicada-linked owner of fire. Andamanese languages are unwritten; the term value is a Latin transcription (no native script)."
+  },
+  {
+    "id": "andamanese_tarai",
+    "name": {
+      "primary": "Tarai",
+      "alt": ["Deria", "Daria", "Tarai-la"],
+      "transliterations": { "North-Andaman": "Tarai", "variant": "Deria" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Andamanese",
+    "primaryTradition": "Andamanese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / before-times" },
+    "domains": [
+      {
+        "sphereId": "storm-and-monsoon-wind",
+        "contextTag": "lifelong",
+        "term": { "value": "Tarai", "script": "Latin", "rom": "Tarai" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (Tarai/Deria as the SW-monsoon counterpart of Biliku)" }
+        ]
+      },
+      {
+        "sphereId": "rain-and-the-wet-season",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-the-southwest-monsoon",
+        "name": "send the southwest monsoon with his breath",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Tarai dwells at the south(west) end of the world; when he sleeps he breathes heavily and the breath becomes the wind, bringing the wet southwest monsoon. He is the calmer/milder of the pair opposed to Biliku.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tarai (also Deria) is the personified southwest monsoon, the seasonal opposite and contender of Biliku/Pūluga, residing at the opposite end of the world.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The two monsoons of the Andamans (NE and SW) were attributed to spirits living at the world's edges who send the seasonal winds; Tarai is the SW-monsoon being.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Weather spirit-class being classed as deity. Forms the cosmological monsoon pair with Biliku; in some bands the two are spouses or siblings, in others rivals whose alternating dominance produces the seasons. Generally male where Biliku is female. Term given in Latin transcription (Andamanese is unwritten)."
+  },
+  {
+    "id": "andamanese_tomo",
+    "name": {
+      "primary": "Tomo",
+      "alt": ["Tomo-la", "Jutpu (variant first-ancestor name)"],
+      "transliterations": { "A-Pucikwar": "Tomo / Tomo-la" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Andamanese",
+    "primaryTradition": "Andamanese",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "time of the ancestors (first generation of humankind)" },
+    "domains": [
+      {
+        "sphereId": "first-ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Tomo", "script": "Latin", "rom": "Tomo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (A-Pucikwar account of Tomo, the first man)" }
+        ]
+      },
+      {
+        "sphereId": "origin-of-the-arts-and-crafts",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "originate-the-andamanese-arts",
+        "name": "originate and teach the arts of living",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Tomo and his wife are said to have invented all the Andamanese arts and crafts and to have taught them to the ancestors; in one version Tomo made the world and peopled it.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In the A-Pucikwar tradition the first man was Tomo (Tomo-la); with his wife he invented the arts of the Andamanese and taught them to the ancestors, and in one version made and peopled the world.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-ancestor / culture-hero tier; classed as mortal (the primal human) rather than deity, per the prompt's first-ancestor distinction. The earliest ancestors blur with spirits in Andamanese thought, but Tomo is explicitly 'the first man.' Name given in Latin transcription."
+  },
+  {
+    "id": "andamanese_maia_lircitmo",
+    "name": {
+      "primary": "Kingfisher",
+      "alt": ["Maia Lirčitmo", "Sir Kingfisher", "Maia Tiritmo (Aka-Bea variant)"],
+      "transliterations": { "North-Andaman": "Maia Lirčitmo", "Aka-Bea": "Maia Tiritmo" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Andamanese",
+    "primaryTradition": "Andamanese",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "time of the ancestors (animal-people era)" },
+    "domains": [
+      {
+        "sphereId": "origin-of-fire",
+        "contextTag": "lifelong",
+        "term": { "value": "Maia Lirčitmo", "script": "Latin", "rom": "Maia Lircitmo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (the kingfisher who stole fire from Biliku)" }
+        ]
+      },
+      {
+        "sphereId": "culture-hero-trickery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "steal-fire-from-biliku",
+        "name": "steal fire from the creator and bring it to the ancestors",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "While Biliku slept, the kingfisher (Maia Lirčitmo) carried off her fire; she awoke and threw a burning brand or a pearl-shell at him, accounting for the kingfisher's markings. The fire thus passed to humankind, making the cooked world possible. A parallel North-Andaman version assigns the theft to the dove Mite.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "A common North Andaman statement is that fire was stolen from Biliku by Maia Lirčitmo (Sir Kingfisher); in a parallel version the bronze-winged dove (Mite) is the thief.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Animal-ancestor culture-hero (a fire-bringer of the 'animal-people' generation, addressed with the honorific 'Maia,' Sir). Classed as demigod under the schema's instruction to map culture-heroes to deity/demigod; given demigod for an ancestor-tier transformer hero rather than a cosmic creator. The fire-theft underlies the Andamanese 'cooked world.' Names are Latin transcriptions."
+  },
+  {
+    "id": "andamanese_lau",
+    "name": {
+      "primary": "Forest spirits of the dead",
+      "alt": ["Lau", "Lau (sg./pl.)", "Eremtaga spirits"],
+      "transliterations": { "Andamanese": "Lau" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Andamanese",
+    "primaryTradition": "Andamanese",
+    "sex": "varies",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perpetual (spirits of the dead, ongoing)" },
+    "domains": [
+      {
+        "sphereId": "spirits-of-the-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "Lau", "script": "Latin", "rom": "Lau" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (the dead of the forest become lau)" }
+        ]
+      },
+      {
+        "sphereId": "forest-and-jungle",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "haunt-the-forest-and-bring-sickness",
+        "name": "haunt the forest and afflict the living with sickness",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "The lau are dangerous, especially at night; encounters are blamed for illness and death. They are placated and avoided rather than worshipped.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "A dead forest-dweller becomes a forest spirit (lau); the lau are a principal class of feared spirits in Andamanese animism.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Collective spirit-class (the forest dead) entered as a deity-class entry per the prompt's instruction that spirit-classes map to deity, explained here. Not an individual figure but the standard ethnographic category paired with the sea-spirits (jurua/juruwin). Sex varies (the dead of either sex). Term is a Latin transcription."
+  },
+  {
+    "id": "andamanese_juruwin",
+    "name": {
+      "primary": "Sea spirits of the dead",
+      "alt": ["Juruwin", "Jurua", "Juru", "Ar-juru"],
+      "transliterations": { "Andamanese": "Jurua / Juruwin" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Andamanese",
+    "primaryTradition": "Andamanese",
+    "sex": "varies",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perpetual (spirits of the dead, ongoing)" },
+    "domains": [
+      {
+        "sphereId": "spirits-of-the-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "Juruwin", "script": "Latin", "rom": "Juruwin" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922 (the dead of the sea become jurua)" }
+        ]
+      },
+      {
+        "sphereId": "sea-and-tides",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dwell-in-the-sea-and-endanger-voyagers",
+        "name": "dwell in the sea and endanger the living",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "The jurua/juruwin inhabit the sea and the spaces beyond the reef; like the lau they are feared as causes of misfortune, sickness and death.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, 1922" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "A dead coastal-dweller becomes a spirit of the sea (jurua); the sea-spirits (juruwin) are the maritime counterpart of the forest lau in Andamanese belief.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. R. Radcliffe-Brown, The Andaman Islanders, Cambridge University Press, 1922" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Collective spirit-class (the sea dead), entered as deity-class per the schema instruction for spirit-classes. Paired with the lau (forest dead); together they exhaust the destinations of the Andamanese dead. 'Juruwin' is the plural/locative form; singular jurua/juru. Sex varies. Term is a Latin transcription (Andamanese unwritten)."
+  },
+  {
+    "id": "semang_karei",
+    "name": {
+      "primary": "Thunder",
+      "alt": ["Karei", "Kari", "Karey", "Kaei", "Gobar (Jahai variant)"],
+      "transliterations": { "Schebesta": "Karei / Kaei", "Evans": "Kari / Karei" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Semang",
+    "primaryTradition": "Semang",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / perpetual" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Karei", "script": "Latin", "rom": "Karei" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957 (Karei the thunder-god)" },
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, Cambridge University Press, 1937, ch. 'Thunder, Lightning, Tabus and Punishment Tales'" }
+        ]
+      },
+      {
+        "sphereId": "taboo-and-divine-punishment",
+        "contextTag": "lifelong",
+        "term": { "value": "lawac", "script": "Latin", "rom": "lawac" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, 1937 (prohibited acts, lawac/lawah, punished by thunder)" }
+        ]
+      },
+      {
+        "sphereId": "moral-order-and-atonement",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-thunderstorm-against-tabu-breakers",
+        "name": "send the thunderstorm against breakers of taboo",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Karei (his eye/voice manifest in thunder and lightning) hurls storms to punish those who commit forbidden acts (lawac) — mocking animals, certain laughter, incest, mixing forbidden foods. The storm continues until atonement is made.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, 1937" }
+        ]
+      },
+      {
+        "id": "demand-blood-atonement",
+        "name": "demand a blood-offering thrown to the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "To quell the storm the offender draws blood from the lower leg/shin, mixes it with water, and flings it upward toward Karei (and downward to the earth-deity / earth-snake) while calling out, so that the anger of sky and earth is appeased.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, 1937 (the blood-sacrifice rite)" },
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Karei (Kari) is the thunder-god of the Semang, regarded as male (sometimes a pair of brothers), who punishes taboo-breakers with thunderstorms.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, Cambridge University Press, 1937" },
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The central Semang rite is the blood sacrifice: drawing one's own blood (from the leg), mixing it with water and throwing it toward the thunder-god and the earth-deity to atone for a broken prohibition and stop the storm.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, 1937" },
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Thunder-spirit classed as deity. Karei is the best-attested Semang divinity; English head-word 'Thunder' leads, native 'Karei' in term. He is aided by a female earth-deity (sometimes a pair of sisters) identified with the earth-supporting snake (Naga'). Across bands his relation to the creator Ta Pedn varies — sometimes coordinate, sometimes Karei is subordinate to or identified with Ta Pedn. Semang languages are unwritten; the term is a Latin/transcription form. 'lawac' (also lawah) is the term for the punishable transgression."
+  },
+  {
+    "id": "semang_ta_pedn",
+    "name": {
+      "primary": "Ta Pedn",
+      "alt": ["Tapern", "Ta Ped'n", "Tak Pern", "Tapen"],
+      "transliterations": { "Schebesta": "Ta Ped'n / Tapern", "Evans": "Ta Pedn" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Semang",
+    "primaryTradition": "Semang",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-and-the-sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Ta Ped'n", "script": "Latin", "rom": "Ta Pedn" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957 (Ta Ped'n the high creator)" }
+        ]
+      },
+      {
+        "sphereId": "fashioning-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, 1937" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create-and-shape-the-world-above",
+        "name": "create the world and dwell in the firmament",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Ta Pedn is the high creator who dwells in the cool sandy firmament above the sky and is credited with shaping the world and humankind; the dragonfly Tanong carries his messages of judgment down to the earth-grandmother when humans transgress.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ta Pedn (Tapern / Ta Ped'n) is the Semang high creator-god of the firmament, ranking with or above the thunder-god Karei.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957" },
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, Cambridge University Press, 1937" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The dragonfly Tanong serves as Ta Pedn's messenger, carrying word to the earth-grandmother (Manoid) when people commit impious acts and incur punishment.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "High creator-deity. Relationship to Karei is band-variable: Schebesta's Kensiu/Kintaq material pairs Ta Pedn (sky/creator) with Karei (thunder/punisher); elsewhere the two functions merge. Name kept as the attested Semang form 'Ta Pedn' since there is no plain-word English equivalent for the proper name. Latin transcription (unwritten language)."
+  },
+  {
+    "id": "semang_manoid",
+    "name": {
+      "primary": "Manoid",
+      "alt": ["Yak Manoid", "Manoij", "Jamoi"],
+      "transliterations": { "Schebesta": "Yak Manoid / Manoij" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Semang",
+    "primaryTradition": "Semang",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "earth-and-the-world-pillar",
+        "contextTag": "lifelong",
+        "term": { "value": "Yak Manoid", "script": "Latin", "rom": "Yak Manoid" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957 (Yak Manoid guarding the root of the world-pillar Batu Herem)" }
+        ]
+      },
+      {
+        "sphereId": "fruit-and-plant-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "cast-down-fruit-to-the-earth",
+        "name": "cast down fruit to make the earth fruitful",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Yak Manoid takes fruit (which she gets from Tak Pern/Ta Pedn) and throws it down, so the land fills with fruit of every kind; she thus gives the forest its harvest.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      },
+      {
+        "id": "guard-the-world-pillar",
+        "name": "guard the root of the heaven-supporting pillar",
+        "term": { "value": "Batu Herem", "script": "Latin", "rom": "Batu Herem" },
+        "inheritability": "non-inheritable",
+        "notes": "With Kalcheng and Takel she guards the foot of the stone pillar (Batu Herem) that holds up the sky; these grandmothers also make the subterranean waters rise.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "semang_manoid_batu_herem",
+        "kind": "cosmic-structure",
+        "name": "stone pillar of heaven",
+        "term": { "value": "Batu Herem", "script": "Latin", "rom": "Batu Herem" },
+        "role": "The great stone pillar/world-tree at whose root Manoid keeps watch; it joins the earth to the firmament.",
+        "notes": "Also recorded as Batu Ribn in some accounts; 'batu' = stone (Malay loan). The earth is pictured as a disk resting on the earth-snake, connected to the firmament by this pillar.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Yak Manoid is a female Semang deity, grandmother of Karei and Ta Pedn in some accounts (and elsewhere Karei's wife, Manoij), who gives fruit to the earth and guards the root of the heaven-pillar Batu Herem with Kalcheng and Takel.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female deity. Kinship to Karei/Ta Pedn is band-variable — 'grandmother' (Yak = grandmother/old woman) in Schebesta's genealogical telling, 'wife of Karei' (Manoij) in other Semang material. Associated with the earth, fruitfulness, the world-pillar, and the rising of subterranean waters. Latin transcription."
+  },
+  {
+    "id": "semang_naga",
+    "name": {
+      "primary": "Earth-serpent",
+      "alt": ["Naga'", "Naga", "the earth-supporting snake"],
+      "transliterations": { "Schebesta/Evans": "Naga'" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Semang",
+    "primaryTradition": "Semang",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / perpetual" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-the-supporting-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Naga'", "script": "Latin", "rom": "Naga" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957 (the earth-disk rests on the snake naga')" }
+        ]
+      },
+      {
+        "sphereId": "earthquake-and-flood",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, 1937" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear-up-the-earth-disk",
+        "name": "bear up the disk of the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "The earth is a disk floating on a subterranean sea, resting upon the great snake naga' (or a turtle); the snake's movement is associated with the earth-deity who, with Karei, is appeased by the blood-offering thrown to the ground.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1, 1957" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Semang cosmology the earth is a disk resting on a huge snake (naga') floating in an underground sea; the chthonic earth-deity is sometimes identified with this serpent and is the recipient (with Karei) of the blood offering.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie, 1957" },
+          { "kind": "ethnography", "reference": "Ivor H. N. Evans, The Negritos of Malaya, Cambridge University Press, 1937" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Chthonic serpent classed as deity (the world-supporting earth-snake / earth-deity). The female earth-power that complements the male sky/thunder Karei is, in several Semang accounts, this snake; the apostrophe in 'naga'' marks a final glottal stop in the transcription. The word is a Malay/Sanskritic loan ('naga') adopted into Semang usage. Latin transcription."
+  },
+  {
+    "id": "khasi_u_blei_nongthaw",
+    "name": {
+      "primary": "Creator God",
+      "alt": ["U Blei Nongthaw", "U Blei Nongbuh-Nongthaw", "U Nongbuh U Nongthaw", "U Blei"],
+      "transliterations": { "Khasi": "U Blei Nongthaw" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khasi",
+    "primaryTradition": "Khasi",
+    "sex": "genderless",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / eternal" },
+    "domains": [
+      {
+        "sphereId": "creation-and-supreme-sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "U Blei Nongthaw", "script": "Latin", "rom": "U Blei Nongthaw" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907 (U Blei as the one supreme God)" }
+        ]
+      },
+      {
+        "sphereId": "providence-and-moral-order",
+        "contextTag": "lifelong",
+        "term": { "value": "U Nongbuh U Nongthaw", "script": "Latin", "rom": "U Nongbuh U Nongthaw" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create-and-design-the-universe",
+        "name": "create and design the whole universe",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Title U Nongbuh U Nongthaw: 'Nongthaw' = the Creator/Maker, 'Nongbuh' = the Planner/Designer. He first made the earth-mother Ka Ramew and her husband U Basa, then chose the human clans to keep the earth.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      },
+      {
+        "id": "convene-the-council-of-gods",
+        "name": "convene the divine council and apportion the clans",
+        "term": { "value": "Ka Dorbar Blei", "script": "Latin", "rom": "Ka Dorbar Blei" },
+        "inheritability": "non-inheritable",
+        "notes": "In the Hynñiew Trep myth the assembly of the gods (Ka Dorbar Blei) resolves that of the sixteen heavenly families seven shall descend to keep the earth; God plants the sacred iei tree at Sohpetbneng as the token of the covenant.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (creation and the seven huts)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Khasi recognise one formless supreme creator, U Blei Nongthaw (U Blei Nongbuh-Nongthaw, 'God the Planner and Maker'), source of the universe and of moral order.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme creator-deity of the indigenous Khasi religion (Niam Khasi / Ka Niam Tre). Treated as genderless/formless in the tradition, though the honorific 'U' is grammatically masculine. Khasi is written in the Latin/Roman script (since the 19th-c. Welsh mission orthography), so the term value uses Latin script. Gurdon 1907 is the standard colonial ethnography."
+  },
+  {
+    "id": "khasi_ka_mei_ramew",
+    "name": {
+      "primary": "Earth Mother",
+      "alt": ["Ka Mei Ramew", "Ka Ramew", "Ka Meiramew", "Mei Ramew"],
+      "transliterations": { "Khasi": "Ka Mei Ramew" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khasi",
+    "primaryTradition": "Khasi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "earth-and-the-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Ka Mei Ramew", "script": "Latin", "rom": "Ka Mei Ramew" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (Ka Ramew the guardian spirit of the Earth)" }
+        ]
+      },
+      {
+        "sphereId": "motherhood-and-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sustain-and-guard-the-earth",
+        "name": "sustain and guard the earth and its life",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Created with her husband U Basa, Ka Ramew is the guardian spirit of the earth; finding it barren and lonely, she petitioned God for caretakers, which led to the descent of the seven clans. She is the eternal Mother (Ka Mei Ramew) the Hynñiew Trep are charged to tend.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ka Mei Ramew (Ka Ramew) is the Khasi earth-mother, guardian spirit of the Earth, created with her husband U Basa; the seven human clans were sent down to care for her.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Earth-mother deity, mother (with U Basa) of the sun Ka Sngi and the moon U Bnai. Central to Khasi eco-spirituality as the 'Eternal Mother' the descended clans must steward. 'Ka' is the feminine article; 'Mei' = mother. Latin (Khasi Roman) orthography."
+  },
+  {
+    "id": "khasi_ka_sngi",
+    "name": {
+      "primary": "Sun",
+      "alt": ["Ka Sngi", "the Sun-sister", "Ka Sngi the elder sister"],
+      "transliterations": { "Khasi": "Ka Sngi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khasi",
+    "primaryTradition": "Khasi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["khasi_ka_mei_ramew"],
+    "temporal": { "era": "primordial / perpetual" },
+    "domains": [
+      {
+        "sphereId": "sun-and-daylight",
+        "contextTag": "lifelong",
+        "term": { "value": "Ka Sngi", "script": "Latin", "rom": "Ka Sngi" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (Ka Sngi the Sun, sister of the Moon U Bnai)" }
+        ]
+      },
+      {
+        "sphereId": "chastity-and-female-honour",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (the legend of the sun and moon)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "blaze-and-flee-the-moon",
+        "name": "blaze across the sky in flight from the moon",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Ka Sngi, the elder sister, gives daylight; enraged when her brother U Bnai approached her with incestuous desire, she flung wet ashes from the hearth into his face, dimming him, and thereafter perpetually flees his pursuit across the heavens.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ka Sngi is the Khasi Sun, conceived as female — the elder sister of the male Moon U Bnai, both children of the earth-mother Ka Ramew and U Basa.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "When her brother the Moon lusted after her, the Sun threw ashes in his face; this is why the moon is pale/spotted and why she flees him eternally (and the basis of the eclipse story).",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female solar deity — a notable gender-inversion of the common male-sun pattern. Forms the sun-sister/moon-brother pair foregrounded in this batch. 'Ka' marks feminine gender, 'Sngi' = sun/day. The ash-throwing myth is the Khasi etiology of the moon's dim, marked face and the cause of eclipses (U Bnai catching up). Khasi Roman orthography."
+  },
+  {
+    "id": "khasi_u_bnai",
+    "name": {
+      "primary": "Moon",
+      "alt": ["U Bnai", "the Moon-brother", "U Bynai"],
+      "transliterations": { "Khasi": "U Bnai" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khasi",
+    "primaryTradition": "Khasi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["khasi_ka_mei_ramew"],
+    "temporal": { "era": "primordial / perpetual" },
+    "domains": [
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": { "value": "U Bnai", "script": "Latin", "rom": "U Bnai" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (U Bnai the Moon, brother of the Sun Ka Sngi)" }
+        ]
+      },
+      {
+        "sphereId": "shame-and-transgression",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pursue-the-sun-and-cause-eclipse",
+        "name": "pursue the sun across the sky and cause the eclipse",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Once as bright as the Sun, U Bnai conceived incestuous desire for his sister; after she threw ashes on him he was shamed and dimmed, and he climbs the heavens in endless pursuit of her. When he overtakes and covers her there is an eclipse.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "U Bnai is the Khasi Moon, conceived as male — the younger brother of the Sun Ka Sngi; his pale, ash-stained face results from the ashes she threw in punishment of his incestuous advance.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Male lunar deity, counterpart of the female sun Ka Sngi — the second member of the foregrounded sun-sister/moon-brother dyad. 'U' marks masculine gender, 'Bnai' = moon/month. The myth doubles as a moral tale (incest punished) and a celestial etiology (moon's dimness; eclipses as the pursuit's climax). Khasi Roman orthography."
+  },
+  {
+    "id": "khasi_u_lei_shyllong",
+    "name": {
+      "primary": "Lord of Shillong Peak",
+      "alt": ["U Lei Shyllong", "U 'Lei Shillong", "U Blei Shyllong", "U Shyllong"],
+      "transliterations": { "Khasi": "U Lei Shyllong" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khasi",
+    "primaryTradition": "Khasi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perpetual (since the founding of the land)" },
+    "domains": [
+      {
+        "sphereId": "mountain-and-high-places",
+        "contextTag": "lifelong",
+        "term": { "value": "U Lei Shyllong", "script": "Latin", "rom": "U Lei Shyllong" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (U 'Lei Shyllong, the god of Shillong Peak)" }
+        ]
+      },
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      },
+      {
+        "sphereId": "protection-from-sickness-and-misfortune",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command-thunder-from-the-peak",
+        "name": "command thunder and lightning from the sacred peak",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "U Lei Shyllong dwells on the summit of Shillong Peak (the highest point of the Khasi Hills) and is said to govern thunder and lightning; he guards the people from illness and misfortune in return for sacrifice.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      },
+      {
+        "id": "receive-the-state-spring-sacrifice",
+        "name": "receive the state spring sacrifice",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Each spring the priest of the Khyrim/Mylliem Syiemship offers the prescribed sacrifice to U Shyllong at the summit; the deity gave his name to the peak and to the city of Shillong.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "U Lei Shyllong is the tutelary mountain-god of Shillong Peak, a thunder/lightning deity and protector who receives an annual state sacrifice and gave his name to the peak and the city.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Mountain tutelary deity ('Lei' = deity, contracted from Blei; 'Shyllong' the peak). He is the chief among the Khasi U Ryngkew/U Basa land-guardian gods. The variant U Blei Shyllong and the patriline of three daughters (one being Ka Pah Syntiew) belong to the Shillong-Peak legend cycle. Khasi Roman orthography."
+  },
+  {
+    "id": "khasi_hynniew_trep",
+    "name": {
+      "primary": "The Seven Huts (first human clans)",
+      "alt": ["Hynñiew Trep", "Hynñiew Trep Hynñiew Skum", "the Seven Families, Seven Nests"],
+      "transliterations": { "Khasi": "Hynñiew Trep Hynñiew Skum" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Khasi",
+    "primaryTradition": "Khasi",
+    "sex": "varies",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "time of origins (descent of the first clans)" },
+    "domains": [
+      {
+        "sphereId": "first-ancestry-and-clan-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "Hynñiew Trep", "script": "Latin", "rom": "Hynniew Trep" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (the seven families who came down to people the earth)" }
+        ]
+      },
+      {
+        "sphereId": "stewardship-of-the-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "descend-the-golden-bridge",
+        "name": "descend the golden bridge to keep the earth",
+        "term": { "value": "Ka Jingkieng Ksiar", "script": "Latin", "rom": "Ka Jingkieng Ksiar" },
+        "inheritability": "non-inheritable",
+        "notes": "Of the sixteen heavenly families (Khyndai Trep), seven (Hynñiew Trep) descended by the golden bridge (Ka Jingkieng Ksiar) onto Sohpetbneng to till and steward the earth; nine remained in heaven. They are the ancestors of the Khasi clans.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      },
+      {
+        "id": "fell-the-sacred-tree",
+        "name": "fell the sacred tree and lose the way to heaven",
+        "term": { "value": "diengiei", "script": "Latin", "rom": "diengiei" },
+        "inheritability": "non-inheritable",
+        "notes": "Two of their number (Sormoh and Sorphin) were persuaded to cut down the great iei/diengiei tree that God had planted as the token of the covenant; when it fell, Sohpetbneng withdrew to heaven and humankind was cut off from the divine bridge.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907 (the felling of the tree at Sohpetbneng)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "khasi_hynniew_trep_sohpetbneng",
+        "kind": "sacred-site",
+        "name": "the heaven-navel peak",
+        "term": { "value": "Lum Sohpetbneng", "script": "Latin", "rom": "Lum Sohpetbneng" },
+        "role": "The sacred peak ('navel of heaven') where the golden bridge touched earth and the seven clans descended; a Khasi pilgrimage site.",
+        "notes": "'Sohpet' = navel/umbilicus, 'bneng' = heaven/sky; 'Lum' = hill. The golden bridge Ka Jingkieng Ksiar joined it to heaven until the tree was felled.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Hynñiew Trep ('Seven Huts/Nests') are the seven primordial human families who, of sixteen heavenly families, descended a golden bridge at Lum Sohpetbneng to keep the earth, becoming the ancestors of the Khasi.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, Macmillan, 1907" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The bridge between heaven and earth was lost when the sacred iei tree at Sohpetbneng was felled, severing humankind from direct access to God.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. R. T. Gurdon, The Khasis, 1907" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Collective first-ancestor tier (the founding human clans), classed as mortal per the first-ancestor distinction. This is the central Khasi origin myth foregrounded in this batch. The full formula Hynñiew Trep Hynñiew Skum means 'seven huts, seven nests/roots' (skum = nest); the ñ uses the Khasi Roman letter for the palatal nasal. Sex varies (the families comprised both). Gurdon 1907 records the cosmogony and the tree-felling."
+  },
+  {
+    "id": "garo_tatara_rabuga",
+    "name": {
+      "primary": "Creator God",
+      "alt": ["Tatara-Rabuga", "Tatara Rabuga", "Dakgipa Rugipa Stugipa Pantugipa"],
+      "transliterations": { "Garo": "Tatara-Rabuga", "Bengali": "তাতারা-রাবুগা" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-and-cosmic-sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "Tatara-Rabuga", "script": "Latin", "rom": "Tatara-Rabuga" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, David Nutt / Eastern Bengal & Assam Govt., 1909 (Tatara-Rabuga the creator who ordered the making of the earth)" }
+        ]
+      },
+      {
+        "sphereId": "fate-and-the-ordering-of-the-world",
+        "contextTag": "lifelong",
+        "term": { "value": "Dakgipa Rugipa Stugipa Pantugipa", "script": "Latin", "rom": "Dakgipa Rugipa Stugipa Pantugipa" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ordain-the-creation-of-the-earth",
+        "name": "ordain the creation of the earth and harden it",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Tatara-Rabuga, the supreme spirit, does not himself descend but commands creation: he sends the female spirit Nostu-Nopantu to fashion the earth, then hardens the soft new earth (Mane Pilte) with the heat of the sun and the drying wind.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tatara-Rabuga (ceremonial full name Dakgipa Rugipa Stugipa Pantugipa) is the Garo supreme creator who directs the making of the earth from above, sending Nostu-Nopantu to do the work.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, London, 1909" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme creator-deity of the Garo Songsarek religion. The long honorific name is a string of -gipa agentive epithets ('the one who makes/creates/forms/fashions'). Garo is written in the Roman script (and historically Bengali); the term value uses Latin, with a Bengali transliteration noted where the language was rendered in that script. Playfair 1909 is the standard ethnography."
+  },
+  {
+    "id": "garo_nostu_nopantu",
+    "name": {
+      "primary": "Earth-Maker Mother",
+      "alt": ["Nostu-Nopantu", "Nostu Nopantu", "Nostu Nopantu Misi Siste", "Mane Pilte (as the earth she bore)"],
+      "transliterations": { "Garo": "Nostu-Nopantu", "Bengali": "নস্তু-নপান্তু" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "earth-creation-and-formation",
+        "contextTag": "lifelong",
+        "term": { "value": "Nostu-Nopantu", "script": "Latin", "rom": "Nostu-Nopantu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909 (Nostu-Nopantu sent in the shape of a woman to make the earth)" }
+        ]
+      },
+      {
+        "sphereId": "primordial-waters-and-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Mane Pilte", "script": "Latin", "rom": "Mane Pilte" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion-the-earth-from-the-waters",
+        "name": "fashion the earth out of the primal waters",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Sent by Tatara-Rabuga in the form of a woman, Nostu-Nopantu separated land from water and bore/formed the earth, which is named Mane Pilte; at first soft and tender, it was hardened by sun and wind at the creator's command. In one telling a beetle/diver fetched up the first clay from beneath the waters at her direction.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nostu-Nopantu is the female creative spirit whom Tatara-Rabuga sent, in the shape of a woman, to make the earth (named Mane Pilte) out of the primeval water.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, London, 1909" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Female mother-creator / demiurge deity who executes Tatara-Rabuga's will. The compound title 'Nostu Nopantu Misi Siste' attaches to the act of separating land from water. Latin (Roman) script with Bengali transliteration noted. Playfair 1909; the earth-diving motif (a creature bringing up clay) appears in fuller Garo tellings."
+  },
+  {
+    "id": "garo_saljong",
+    "name": {
+      "primary": "Sun-Giver",
+      "alt": ["Saljong", "Misi Saljong", "Saljong the Sun-god"],
+      "transliterations": { "Garo": "Saljong / Misi Saljong", "Bengali": "সালজং" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / perpetual" },
+    "domains": [
+      {
+        "sphereId": "sun-and-light",
+        "contextTag": "lifelong",
+        "term": { "value": "Saljong", "script": "Latin", "rom": "Saljong" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909 (Saljong the sun-god)" }
+        ]
+      },
+      {
+        "sphereId": "crops-fertility-and-harvest",
+        "contextTag": "lifelong",
+        "term": { "value": "Misi Saljong", "script": "Latin", "rom": "Misi Saljong" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give-crops-and-ripen-the-harvest",
+        "name": "give crops and ripen the harvest",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Saljong (Misi Saljong), the sun-god, is the source of all gifts to humankind and the guardian of food crops; without his favour no harvest can be reaped. He is honoured at the post-harvest Wangala festival.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      },
+      {
+        "id": "receive-the-wangala-thanksgiving",
+        "name": "receive the Wangala harvest thanksgiving",
+        "term": { "value": "Wangala", "script": "Latin", "rom": "Wangala" },
+        "inheritability": "non-inheritable",
+        "notes": "The Wangala ('Hundred Drums') festival, held after the rice harvest in autumn, is the thanksgiving to Saljong for the crops; the first sheaves and offerings are dedicated to him.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909 (the Wangala festival)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "garo_saljong_wangala_drums",
+        "kind": "ritual-instrument",
+        "name": "the hundred drums of Wangala",
+        "term": { "value": "dama", "script": "Latin", "rom": "dama" },
+        "role": "Long drums (dama) beaten in the Wangala dance that honours Saljong, giving the festival its name 'Hundred Drums.'",
+        "notes": "The drumming and dancing of Wangala are offered to Saljong/Misi Saljong in thanksgiving for the harvest.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Saljong (Misi Saljong) is the Garo sun-god, giver of crops and of all gifts to humankind, honoured at the post-harvest Wangala ('Hundred Drums') festival.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, London, 1909" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Solar and harvest deity, the most intimately worshipped Garo god in agricultural life. 'Saljong' (sal = sun) ~ the sun itself; 'Misi Saljong' couples him with Misi, the rice/crop power. Latin (Roman) script with Bengali transliteration noted. Playfair 1909 documents Wangala."
+  },
+  {
+    "id": "garo_susime",
+    "name": {
+      "primary": "Wealth Goddess",
+      "alt": ["Susime", "Sus-ime", "Susime the goddess of riches"],
+      "transliterations": { "Garo": "Susime", "Bengali": "সুসিমে" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perpetual" },
+    "domains": [
+      {
+        "sphereId": "wealth-and-prosperity",
+        "contextTag": "lifelong",
+        "term": { "value": "Susime", "script": "Latin", "rom": "Susime" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909 (Susime, goddess of wealth)" }
+        ]
+      },
+      {
+        "sphereId": "household-and-domestic-increase",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow-wealth-and-increase",
+        "name": "bestow wealth and household increase",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Susime is the goddess who gives riches and prosperity; she is propitiated with sacrifice to secure and keep wealth, among the lesser deities (mite) who govern particular goods alongside Saljong, Goera and Chorabudi.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Susime is the Garo goddess of wealth, one of the principal lesser deities (mite) propitiated for prosperity.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, London, 1909" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Wealth/prosperity goddess in the Garo pantheon of mite (spirit-deities). Female. Latin (Roman) script with Bengali transliteration noted. Playfair 1909 lists her among the chief deities (with Saljong, Goera, Chorabudi, Kalkame)."
+  },
+  {
+    "id": "garo_goera",
+    "name": {
+      "primary": "Thunder-Lord of Strength",
+      "alt": ["Goera", "Goera the god of strength", "Goncha (variant)"],
+      "transliterations": { "Garo": "Goera", "Bengali": "গোয়েরা" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Garo",
+    "primaryTradition": "Garo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "perpetual" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Goera", "script": "Latin", "rom": "Goera" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909 (Goera, god of strength, who sends lightning)" }
+        ]
+      },
+      {
+        "sphereId": "strength-and-bodily-vigour",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl-the-lightning-stroke",
+        "name": "hurl the lightning-stroke",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Goera is responsible for thunder and lightning; a tree (or person) struck by lightning is said to have been struck by Goera, and a sacrifice must then be made at the foot of that tree to avert harm to nearby houses.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      },
+      {
+        "id": "grant-health-and-strength",
+        "name": "grant health and bodily strength",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-inheritable",
+        "notes": "Goera is the god of strength, worshipped to regain health and vigour after long illness; a pig, fowl, or duck is sacrificed to him under a tree.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, 1909" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Goera is the Garo god of strength and the sender of thunder and lightning; lightning-struck trees are attributed to him and require expiatory sacrifice.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. Playfair, The Garos, London, 1909" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Thunder-and-strength deity of the Garo. Included to give the Garo set its storm-god, paralleling Karei (Semang), U Lei Shyllong (Khasi) and Biliku (Andamanese). In oral tradition Goera is also a born hero who grows among humans, overcomes trials, teaches moral law and ascends to the sky. Male. Latin (Roman) script with Bengali transliteration noted. Playfair 1909."
+  }
+]
+```
+
+Before finalizing, I'll sanity-check the deliverable against the schema and hard rules.

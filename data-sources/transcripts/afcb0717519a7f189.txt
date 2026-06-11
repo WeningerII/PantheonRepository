@@ -1,0 +1,97 @@
+Useful corrections:
+- The Akan state sword is **akofena** (lit. "soul sword"), also spelled akrafena — correct as used.
+- **suman** = talisman/charm — correct.
+- Creator epithet is **Ɔbɔadeɛ** ("creator") — correct orthography.
+- **akom** = possession (the priesthood/possession ceremony); okomfo = "the possessed one." For Anokye's conjuring, akom (priest-craft/possession-power) is the apt native term.
+- Shilluk for spear: I could not definitively confirm "tøŋ". To avoid an unverified native term, I'll mark the spear's native term as "—" (closest native word not reliably confirmed in correct Cøllø orthography), keeping the rest. I'll keep jwok (well-attested) where used as the power term.
+
+One refinement: For Anansi's "pot of wisdom," the Twi "nyansa kuruwa" is a reasonable literal gloss but I haven't verified that exact phrase as an attested native item-name; the attested item is simply the calabash/pot of wisdom in the Anansesem. I'll render the native term as the attested word **nyansa** (wisdom) within the descriptive name rather than assert a fixed compound — but to stay safe I'll mark term with the attested word "nyansa" (Akan, wisdom) and note it's the pot of nyansa. Actually cleaner: give term=— since the canonical item is known in English ("pot of wisdom") and no single fixed Twi item-name is firmly attested; I'll put the Akan word for the vessel. The safest verified Akan element is "nyansa" (wisdom). I'll use term=nyansa kuruwa with rom, but flag uncertainty is not allowed in the format. Given the instruction "No modern coinages" and "attested," I'll set Anansi pot term to "—" to avoid asserting an unverified compound, and keep the English name + gloss.
+
+Now finalizing. Below is the complete formatted deliverable.
+
+---
+
+**Notes on coverage:** Covered only gods/culture-heroes with attested *exercised* abilities. Skipped, per instructions: Pemón `wei` (sun, domain-only), `insikiran`/`zigue`/`wacalambe`/`anzikilan` (eponymous/name-association only, no attested power; the latter three are Mário de Andrade literary inventions); Edo `eweka_i`/`ewedo`/`oguola`/`uwaifiokun`/`ozolua`/`esigie`/`orhogbua`/`emotan` (historical/genealogical, no attested personal supernatural ability — Ozolua = conqueror only, occult medicine attaches to Idia not in-set); Akan `obiri_yeboa`/`osei_tutu_i`/`opoku_ware_i`/`yaa_asantewaa`/`prempeh_i`/`prempeh_ii` (historical, no attested supernatural ability); Shilluk `duwat`/`dak`/`bwor`/`cal`/`anongo`/`gilo`/`dhokoth`/`tugo` (genealogical/eponymous or historical Reths); Banyaruanda `babinga` (father-of/king-of-imandwa = domain+genealogical, no attested exercised act).
+
+=== makunaima (Makunaima)
+makunaima :: POWER pwr-fell-world-tree | name=Fell the world-tree | term=Wazacá | script=Pemón | rom=Wazacá | gloss=Cuts down the tree of all crops, releasing the world-flood | inherit=none | src=Koch-Grünberg, Vom Roroima zum Orinoco II (1916), "Makunaima und Pia"
+makunaima :: POWER pwr-transform-beings | name=Transform beings and land | term=— | script=Pemón | rom=— | gloss=Reshapes people, animals and the tepui terrain by metamorphosis | inherit=none | src=Koch-Grünberg 1916; Pemón Makunaima/Roraima cycle
+makunaima :: POWER pwr-die-and-resurrect | name=Die and return to life | term=— | script=Pemón | rom=— | gloss=Hero dies and resurrects in the Makunaima cycle | inherit=none | src=Koch-Grünberg 1916, "Morte e ressurreição de Makunaima"
+makunaima :: ITEM wazaca-axe | name=Wazacá felling-axe | term=— | script=Pemón | rom=— | kind=tool-weapon | role=axe that fells the Wazacá world-tree | gloss=Stone axe used to cut down the tree of all fruits | src=Koch-Grünberg 1916
+
+=== pia_pemon (Pia)
+pia_pemon :: POWER pwr-shamanic-power | name=Wield shamanic power | term=piasán | script=Pemón | rom=piasán | gloss=Name itself means "medicine-man"; embodies piaí shamanic power | inherit=none | src=native-languages.org (Pia="medicine man"); Koch-Grünberg 1916
+pia_pemon :: POWER pwr-slay-jaguar | name=Slay the monster-jaguar | term=— | script=Pemón | rom=— | gloss=Avenges his mother by killing the jaguar that ate her | inherit=none | src=Koch-Grünberg 1916, "Makunaima und Pia"
+
+=== manape (Ma'nápe)
+manape :: POWER pwr-fell-world-tree | name=Fell the world-tree | term=Wazacá | script=Pemón | rom=Wazacá | gloss=Devises and strikes the felling of the Wazacá tree | inherit=none | src=Koch-Grünberg 1916 (Ma'nápe conceives the tree-felling)
+manape :: ITEM wazaca-axe | name=Wazacá felling-axe | term=— | script=Pemón | rom=— | kind=tool-weapon | role=axe wielded to fell the world-tree | gloss=Stone axe of the tree-felling that loosed the flood | src=Koch-Grünberg 1916
+
+=== namandu (Ñamandú)
+namandu :: POWER pwr-word-soul-creation | name=Create by the soul-word | term=ñe'ẽ | script=Guaraní | rom=ñe'ẽ | gloss=Unfolds cosmos and human speech from himself as sacred word | inherit=none | src=Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914); Cadogan, Ayvu Rapyta
+namandu :: POWER pwr-radiate-first-light | name=Radiate the first light | term=— | script=Guaraní | rom=— | gloss=Emits primordial light/sun from his own breast | inherit=none | src=Nimuendajú 1914; Apapocúva creation legend
+namandu :: ITEM jeguaka | name=Feather head-adornment | term=jeguaka | script=Guaraní | rom=jeguaka | kind=regalia | role=First Father's masculine plume-crown | gloss=Sacred feather headdress worn by the creator | src=Cadogan, Ayvu Rapyta; Nimuendajú 1914
+
+=== nanderu_mbaekua (Ñanderu Mba'ekuá)
+nanderu_mbaekua :: POWER pwr-make-thunder | name=Make thunder, wind and rain | term=Tupã | script=Guaraní | rom=Tupã | gloss=Second father governs storm, thunder and rain | inherit=none | src=Nimuendajú 1914; Guaraní Tupã/Ñanderu Mba'ekuá tradition
+nanderu_mbaekua :: POWER pwr-second-creation | name=Perform the second creation | term=— | script=Guaraní | rom=— | gloss=Orders and completes the world the First Father began | inherit=none | src=Nimuendajú 1914, Apapocúva creation legend
+
+=== kuarahy (Kuarahy)
+kuarahy :: POWER pwr-slay-mother-killers | name=Slay the mother's killers | term=— | script=Guaraní | rom=— | gloss=Elder twin destroys the jaguar-people who killed his mother | inherit=none | src=Nimuendajú 1914; pan-Guaraní twins-and-jaguar myth
+kuarahy :: POWER pwr-resurrect-brother | name=Resurrect his brother | term=payé | script=Guaraní | rom=payé | gloss=Restores the slain younger twin to life by shamanic power | inherit=none | src=Nimuendajú 1914; Apapocúva twin cycle
+
+=== jasy (Jasy)
+jasy :: POWER pwr-slay-jaguars | name=Slay the celestial jaguars | term=— | script=Guaraní | rom=— | gloss=Younger twin shares the monster-slaying vengeance for the mother | inherit=none | src=Nimuendajú 1914; Guaraní twins-and-jaguar myth
+
+=== ewuare_great (Ewuare the Great)
+ewuare_great :: POWER pwr-command-fire | name=Command fire | term=àse | script=Edo | rom=ase | gloss=Wields magical power, including control of fire, in oral history | inherit=none | src=Edo oral tradition; Wikipedia "Ewuare"; ADF Magazine
+ewuare_great :: POWER pwr-summon-and-heal | name=Summon spirits and heal by charms | term=ebo | script=Edo | rom=ebo | gloss=Conjures spirits with chants and heals with leaves | inherit=none | src=Edo oral histories (Egharevba tradition); Guardians of the Land
+ewuare_great :: ITEM agbavboko-bag | name=Magic bag of plenty | term=Agbavboko | script=Edo | rom=Agbavboko | kind=charm-vessel | role=spirit-gift bag of unlimited space | gloss=Bag that yields whatever its bearer desires | src=Edo griot oral tradition (Our Ancestories)
+
+=== nyame (Nyame)
+nyame :: POWER pwr-establish-cosmos | name=Create and order the cosmos | term=Ɔbɔadeɛ | script=Akan | rom=Oboadee | gloss=Supreme being who makes the universe and all life | inherit=none | src=Akan religion (Wikipedia "Nyame"); Britannica
+nyame :: POWER pwr-withdraw-sky | name=Withdraw the sky upward | term=— | script=Akan | rom=— | gloss=Lifts heaven far from earth after the old woman's pestle struck him | inherit=none | src=Akan sky-withdrawal myth (Aberewa)
+
+=== asase_yaa (Asase Yaa)
+asase_yaa :: POWER pwr-uphold-oath | name=Uphold oaths and convict lies | term=Asaase Yaa | script=Akan | rom=Asaase Yaa | gloss=Earth on whom truth is sworn by touching tongue to soil | inherit=none | src=Wikipedia "Asase Ya/Afua"; Britannica
+asase_yaa :: POWER pwr-grant-fertility | name=Grant or withhold fertility | term=— | script=Akan | rom=— | gloss=Brings forth crops; withholds abundance if dishonoured | inherit=none | src=Akan earth-goddess tradition; godsandmonsters
+
+=== anansi (Anansi)
+anansi :: POWER pwr-shapeshift | name=Shapeshift between spider and man | term=Ananse | script=Akan | rom=Ananse | gloss=Trickster takes spider- and human-form at will | inherit=none | src=Wikipedia "Anansi"; Akan Anansesem corpus
+anansi :: ITEM anansi-pot-of-wisdom | name=Pot of wisdom | term=— | script=Akan | rom=— | kind=vessel | role=gourd holding all the world's wisdom | gloss=Calabash in which Anansi tried to hoard all wisdom | src=Akan Anansi tale "pot of wisdom"
+
+=== komfo_anokye (Komfo Anokye)
+komfo_anokye :: POWER pwr-conjure-golden-stool | name=Conjure the Golden Stool from the sky | term=akɔm | script=Akan | rom=akom | gloss=Calls the gold stool down out of the sky onto Osei Tutu's lap | inherit=none | src=Wikipedia "Golden Stool"/"Okomfo Anokye"; Britannica
+komfo_anokye :: POWER pwr-plant-immovable-sword | name=Plant the immovable sword | term=— | script=Akan | rom=— | gloss=Fixes a sword in the earth that no one can pull out | inherit=none | src=Okomfo Anokye Sword Site, Kumasi; Atlas Obscura
+komfo_anokye :: POWER pwr-redirect-rivers | name=Redirect rivers; carry water in a basket | term=suman | script=Akan | rom=suman | gloss=Diverts rivers and fetches water in a basket unspilled | inherit=none | src=Wikipedia "Okomfo Anokye"; Encyclopaedia Africana
+komfo_anokye :: ITEM sika-dwa-kofi | name=The Golden Stool | term=Sika Dwa Kofi | script=Akan | rom=Sika Dwa Kofi | kind=throne-regalia | role=soul (sunsum) of the Asante nation | gloss=Gold-decked stool conjured from the sky, holding the nation's spirit | src=Wikipedia "Golden Stool"; Britannica
+komfo_anokye :: ITEM okomfo-anokye-sword | name=Anokye's immovable sword | term=akofena | script=Akan | rom=akofena | kind=sword | role=earth-fixed talisman of Asante unity | gloss=Sword planted in Kumasi; Asante endures while it stands | src=Okomfo Anokye Sword Site, Kumasi
+
+=== nyikang (Nyikang)
+nyikang :: POWER pwr-control-rain | name=Control the rain | term=jwok | script=Shilluk | rom=jwok | gloss=Half-crocodile hero responsible for sending the rains | inherit=full | src=Seligman, Pagan Tribes of the Nilotic Sudan; Wikipedia "Nyikang"
+nyikang :: POWER pwr-resurrect-army | name=Resurrect the slain | term=— | script=Shilluk | rom=— | gloss=Touches dead warriors with his bracelet and they revive | inherit=none | src=Oxford Reference, "Nyikang Throws an Adze at the Sun"
+nyikang :: POWER pwr-strike-sun | name=Drive the sun back to the sky | term=— | script=Shilluk | rom=— | gloss=Hurls an adze at the sun, making it return upward | inherit=none | src=Oxford Reference; Shilluk myth corpus
+nyikang :: POWER pwr-possess-king | name=Possess each reigning king | term=jwok | script=Shilluk | rom=jwok | gloss=His life-force enters every new reth at installation | inherit=full | src=Seligman; Graeber, "The Divine Kingship of the Shilluk" (2011)
+nyikang :: ITEM nyikang-rain-spear | name=Sacred rain-spear | term=— | script=Shilluk | rom=— | kind=regalia-weapon | role=royal spear embodying rain and legitimacy | gloss=Sacred spear among Nyikang's regalia, vehicle of rain and kingship | src=Shilluk Kingdom regalia (Seligman; Pitt Rivers Southern Sudan)
+
+=== nyakaya (Nyakaya)
+nyakaya :: POWER pwr-shapeshift-crocodile | name=Shapeshift woman↔crocodile | term=— | script=Shilluk | rom=— | gloss=River-mother appears as woman or crocodile; lives forever as crocodile | inherit=partial | src=Wikipedia "Nyikang"; Shilluk pantheon
+nyakaya :: POWER pwr-river-ordeal | name=Judge by the river-ordeal | term=jwok | script=Shilluk | rom=jwok | gloss=Suspects cast into the river are judged by her | inherit=none | src=Shilluk trial-by-ordeal tradition (Seligman)
+
+=== ryangombe (Ryangombe)
+ryangombe :: POWER pwr-possess-initiates | name=Possess initiates in trance | term=kubandwa | script=Kinyarwanda | rom=kubandwa | gloss=Descends into mediums during kubandwa possession rites | inherit=none | src=Encyclopedia.com "Interlacustrine Bantu Religions"; wisdomlib (Cult of Kubandwa)
+ryangombe :: POWER pwr-found-salvation-cult | name=Found the salvific cult while dying | term=imandwa | script=Kinyarwanda | rom=imandwa | gloss=Dying in the umurinzi tree, decrees initiation granting a better afterlife | inherit=none | src=AMATEKA "The Ryangombe Cult and His Myth"
+ryangombe :: ITEM ryangombe-umurinzi | name=Umurinzi sacred tree | term=umurinzi | script=Kinyarwanda | rom=umurinzi | kind=cult-object | role=Erythrina tree of his death and cult | gloss=Coral tree into which the gored hero fell, founding his cult | src=AMATEKA; Rwandan Ryangombe legend
+
+---
+
+**Summary of what I did:** I read the six tradition arrays from `/tmp/figures-by-tradition.json` (Pemon ll. 8119-8294, Apapocúva-Guaraní ll. 8027-8117, Edo ll. 9450-9637, Akan ll. 9830-10077, Shilluk ll. 3672-3870, Banyaruanda ll. 3872-3907), web-verified each figure's attested abilities and items, and produced verb-phrase POWERs (never restating a domain) plus owned/wielded ITEMs.
+
+**Key findings / decisions:**
+- **Edo collapses to one figure.** Only Ewuare the Great has an attested personal supernatural ability (fire-control, charm-craft, the Agbavboko magic bag). Ozolua is a conqueror with no attested supernatural power; the occult war-medicine tradition attaches to Idia (Esigie's mother, not in this set). All other Edo entries are historical kings/genealogical → skipped per your rules.
+- **Pemón is partly literary.** Zigué, Ma'nápe, Wacalambé, Anzikilán etc. carry alt-names from Mário de Andrade's 1928 novel *Macunaíma*; I attributed powers only where the genuine Koch-Grünberg Taulipang/Pemón ethnography supports them (Makunaima: fell the Wazacá world-tree, transform, die/resurrect; Pia: "medicine-man," jaguar-slaying; Ma'nápe: conceived/struck the tree-felling). `wei` and `insikiran` are domain/eponymous-only → skipped.
+- **Anokye gets the Golden Stool.** Per your instruction I added the missing **Sika Dwa Kofi** to its conjuror, Komfo Anokye (conjured-from-sky, planted immovable sword, river-redirecting/water-in-a-basket). The lotus-lantern you mentioned belongs to the Chinese Chenxiang/Sanshengmu material, outside these six traditions, so it was excluded.
+- **Native terms:** used jwok (Shilluk spiritual power), kubandwa/imandwa (Kinyarwanda), ñe'ẽ/payé/Tupã/jeguaka (Guaraní), piasán (Pemón shaman), àse/ebo/Agbavboko (Edo), Ɔbɔadeɛ/Ananse/akɔm/suman/akofena/Sika Dwa Kofi (Akan/Twi). Where a correctly-orthographed attested term wasn't confirmable (e.g. a proper name for Nyikang's spear; a fixed Twi compound for Anansi's pot), I used "—" rather than coin one.
+- **Heritability:** set to none everywhere except Nyikang (full — his bodily life-force passes by descent into every reth) and Nyakaya (partial — her crocodile-nature transmits to her son Nyikang).
+
+Source domains used: en.wikipedia.org, britannica.com, oxfordreference.com, davidgraeber.org / journals.uchicago.edu (HAU), encyclopedia.com, native-languages.org, etnolinguistica.org (Nimuendajú), uk.amateka.net, wisdomlib.org, adf-magazine.com, our-ancestories.com, atlasobscura.com, encyclopaediaafricana.com.

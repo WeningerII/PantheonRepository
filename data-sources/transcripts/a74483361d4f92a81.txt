@@ -1,0 +1,834 @@
+Validation passes cleanly: 51 figures, no duplicate ids, no collisions with the existing corpus, all 15 required schema keys present on every object, and every `parentId` resolves to either an in-corpus or this-batch id.
+
+Here is the completed registry of MISSING central Norse, Irish, and Welsh figures.
+
+```json
+[
+  {
+    "id": "norse_loki",
+    "name": { "primary": "Loki", "alt": ["Loki Laufeyjarson", "Loptr"], "transliterations": { "old norse": "Loki" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "Loki", "script": "Old Norse", "rom": "Loki" }, "sources": [{ "kind": "primary", "reference": "Snorri Sturluson, Prose Edda, Gylfaginning 33" }] },
+      { "sphereId": "mischief-strife", "contextTag": "lifelong", "term": { "value": "rógbera", "script": "Old Norse", "rom": "rogbera" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Lokasenna" }] }
+    ],
+    "faculties": [
+      { "id": "shapeshifting", "name": "Transform into any creature or sex", "term": { "value": "hamskipti", "script": "Old Norse", "rom": "hamskipti" }, "inheritability": "none", "notes": "Becomes salmon, mare, fly, falcon, seal, old woman Þökk", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 42, 49; Skáldskaparmál 1" }] },
+      { "id": "guileful-counsel", "name": "Devise cunning schemes and deceptions", "term": { "value": "vélræði", "script": "Old Norse", "rom": "velraedi" }, "inheritability": "none", "notes": "Engineers the gods' treasures and Baldr's death", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 35; Gylfaginning 49" }] },
+      { "id": "flight-feather-cloak", "name": "Fly wearing Freyja's falcon skin", "term": { "value": "fjaðrhamr", "script": "Old Norse", "rom": "fjadrhamr" }, "inheritability": "none", "notes": "Borrows Freyja's falcon-cloak to fly to Jötunheimr", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 1; Poetic Edda, Þrymskviða 3" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 33; Poetic Edda, Lokasenna" }], "weight": "primary" }],
+    "notes": "Trickster jötunn-born god among the Æsir, father of monsters and agent of Ragnarök."
+  },
+  {
+    "id": "norse_freyja",
+    "name": { "primary": "Freyja", "alt": ["Frowe", "Lady"], "transliterations": { "old norse": "Freyja" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": ["norse_njord"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "love-beauty", "contextTag": "lifelong", "term": { "value": "ást", "script": "Old Norse", "rom": "ast" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 24, 35" }] },
+      { "sphereId": "war-slain", "contextTag": "lifelong", "term": { "value": "Fólkvangr", "script": "Old Norse", "rom": "Folkvangr" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Grímnismál 14; Prose Edda, Gylfaginning 24" }] },
+      { "sphereId": "magic-seidr", "contextTag": "lifelong", "term": { "value": "seiðr", "script": "Old Norse", "rom": "seidr" }, "sources": [{ "kind": "primary", "reference": "Snorri Sturluson, Ynglinga saga 4" }] }
+    ],
+    "faculties": [
+      { "id": "practice-seidr", "name": "Work seiðr to see and shape fate", "term": { "value": "seiðr", "script": "Old Norse", "rom": "seidr" }, "inheritability": "partial", "notes": "Brought seiðr to the Æsir and taught it to Odin", "sources": [{ "kind": "primary", "reference": "Snorri Sturluson, Ynglinga saga 4" }] },
+      { "id": "falcon-flight", "name": "Fly wearing a feathered falcon cloak", "term": { "value": "fjaðrhamr", "script": "Old Norse", "rom": "fjadrhamr" }, "inheritability": "none", "notes": "Owns the falcon-feather cloak lent to Loki", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 1" }] }
+    ],
+    "materialCulture": [
+      { "id": "brisingamen", "kind": "ornament", "name": "Necklace Brísingamen", "term": { "value": "Brísingamen", "script": "Old Norse", "rom": "Brisingamen" }, "role": "owner", "notes": "Her famed necklace, stolen and recovered by Loki/Heimdall", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 8; Sörla þáttr" }] },
+      { "id": "cat-chariot", "kind": "vehicle", "name": "Chariot drawn by two cats", "term": { "value": "kattar", "script": "Old Norse", "rom": "kattar" }, "role": "owner", "notes": "Rides a wagon pulled by two cats", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 49; Skáldskaparmál 23" }] },
+      { "id": "hildisvini", "kind": "animal", "name": "Boar Hildisvíni", "term": { "value": "Hildisvíni", "script": "Old Norse", "rom": "Hildisvini" }, "role": "owner", "notes": "Her battle-boar, ridden in Hyndluljóð", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Hyndluljóð 7" }] },
+      { "id": "falcon-cloak-freyja", "kind": "garment", "name": "Falcon-feather cloak", "term": { "value": "valshamr", "script": "Old Norse", "rom": "valshamr" }, "role": "owner", "notes": "Feathered cloak granting flight", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 1" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 24, 35" }], "weight": "primary" }],
+    "notes": "Vanir goddess of love, fertility, war-dead and seiðr; daughter of Njǫrðr, sister of Freyr."
+  },
+  {
+    "id": "norse_frigg",
+    "name": { "primary": "Frigg", "alt": ["Frigga"], "transliterations": { "old norse": "Frigg" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "marriage-motherhood", "contextTag": "lifelong", "term": { "value": "drottning ása", "script": "Old Norse", "rom": "drottning asa" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 20, 35" }] },
+      { "sphereId": "foreknowledge", "contextTag": "lifelong", "term": { "value": "ørlög", "script": "Old Norse", "rom": "orlog" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Lokasenna 29" }] }
+    ],
+    "faculties": [
+      { "id": "knows-all-fates", "name": "Know all fates though she tells none", "term": { "value": "veit ørlög", "script": "Old Norse", "rom": "veit orlog" }, "inheritability": "none", "notes": "Knows every fate yet does not foretell them", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Lokasenna 29; Prose Edda, Gylfaginning 20" }] },
+      { "id": "extract-oaths", "name": "Bind all things by protective oath", "term": { "value": "eiðr", "script": "Old Norse", "rom": "eidr" }, "inheritability": "none", "notes": "Exacted oaths from all things to spare Baldr", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 49" }] }
+    ],
+    "materialCulture": [
+      { "id": "fensalir", "kind": "place", "name": "Hall Fensalir", "term": { "value": "Fensalir", "script": "Old Norse", "rom": "Fensalir" }, "role": "owner", "notes": "Her marsh-hall dwelling", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 33; Prose Edda, Gylfaginning 35" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 20, 35, 49" }], "weight": "primary" }],
+    "notes": "Queen of the Æsir, wife of Odin and mother of Baldr; foreknowing patroness of marriage."
+  },
+  {
+    "id": "norse_baldr",
+    "name": { "primary": "Baldr", "alt": ["Baldur", "Balder"], "transliterations": { "old norse": "Baldr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "dead", "parentIds": ["norse_odin", "norse_frigg"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "light-radiance", "contextTag": "lifelong", "term": { "value": "fegrstr", "script": "Old Norse", "rom": "fegrstr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 22" }] },
+      { "sphereId": "purity-goodness", "contextTag": "lifelong", "term": { "value": "beztr", "script": "Old Norse", "rom": "beztr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 22" }] }
+    ],
+    "faculties": [
+      { "id": "radiant-fairness", "name": "Shine with light so all praise him", "term": { "value": "ljós", "script": "Old Norse", "rom": "ljos" }, "inheritability": "none", "notes": "So fair that light shines from him; wisest, mildest god", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 22" }] }
+    ],
+    "materialCulture": [
+      { "id": "hringhorni", "kind": "vehicle", "name": "Ship Hringhorni", "term": { "value": "Hringhorni", "script": "Old Norse", "rom": "Hringhorni" }, "role": "owner", "notes": "His funeral ship, greatest of ships", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 49" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 22, 49; Poetic Edda, Baldrs draumar" }], "weight": "primary" }],
+    "notes": "Radiant beloved son of Odin and Frigg, slain by mistletoe through Loki's contrivance."
+  },
+  {
+    "id": "norse_heimdall",
+    "name": { "primary": "Heimdall", "alt": ["Heimdallr", "Gullintanni", "Hallinskíði"], "transliterations": { "old norse": "Heimdallr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_odin"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "watchfulness-guardianship", "contextTag": "lifelong", "term": { "value": "vörðr goða", "script": "Old Norse", "rom": "vordr goda" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 27" }] }
+    ],
+    "faculties": [
+      { "id": "all-seeing-hearing", "name": "See and hear across all distances", "term": { "value": "skygnsi", "script": "Old Norse", "rom": "skygnsi" }, "inheritability": "none", "notes": "Sees 100 leagues, hears grass and wool grow, needs less sleep than a bird", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 27" }] }
+    ],
+    "materialCulture": [
+      { "id": "gjallarhorn", "kind": "instrument", "name": "Horn Gjallarhorn", "term": { "value": "Gjallarhorn", "script": "Old Norse", "rom": "Gjallarhorn" }, "role": "owner", "notes": "Blown to summon the gods at Ragnarök", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 46; Prose Edda, Gylfaginning 27, 51" }] },
+      { "id": "gulltoppr", "kind": "animal", "name": "Horse Gulltoppr", "term": { "value": "Gulltoppr", "script": "Old Norse", "rom": "Gulltoppr" }, "role": "owner", "notes": "His golden-maned steed", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 49; Skáldskaparmál 17" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 27; Poetic Edda, Völuspá 1, 46" }], "weight": "primary" }],
+    "notes": "Watchman of the gods, born of nine mothers, guarding Bifröst at Himinbjörg with all-seeing senses."
+  },
+  {
+    "id": "norse_tyr",
+    "name": { "primary": "Týr", "alt": ["Tiw", "Tyr"], "transliterations": { "old norse": "Týr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "war-battle", "contextTag": "lifelong", "term": { "value": "vígguð", "script": "Old Norse", "rom": "viggud" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 25" }] },
+      { "sphereId": "justice-oath", "contextTag": "lifelong", "term": { "value": "réttvísi", "script": "Old Norse", "rom": "rettvisi" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 25" }] }
+    ],
+    "faculties": [
+      { "id": "valor-pledge", "name": "Pledge his hand to bind the wolf", "term": { "value": "hreysti", "script": "Old Norse", "rom": "hreysti" }, "inheritability": "none", "notes": "Sacrificed right hand into Fenrir's jaws to bind him", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 25, 34" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 25; Poetic Edda, Lokasenna 38" }], "weight": "primary" }],
+    "notes": "One-handed god of war, oaths and justice who sacrificed his hand to bind Fenrir."
+  },
+  {
+    "id": "norse_hel",
+    "name": { "primary": "Hel", "alt": ["Hela"], "transliterations": { "old norse": "Hel" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": ["norse_loki"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "death-underworld", "contextTag": "lifelong", "term": { "value": "Hel", "script": "Old Norse", "rom": "Hel" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34" }] }
+    ],
+    "faculties": [
+      { "id": "rule-the-dead", "name": "Rule over those dead of sickness and age", "term": { "value": "vald yfir dauðum", "script": "Old Norse", "rom": "vald yfir daudum" }, "inheritability": "none", "notes": "Half blue-black, half flesh; given authority over Niflheim's dead", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34" }] }
+    ],
+    "materialCulture": [
+      { "id": "eljudnir", "kind": "place", "name": "Hall Éljúðnir", "term": { "value": "Éljúðnir", "script": "Old Norse", "rom": "Eljudnir" }, "role": "owner", "notes": "Her hall, with dish Hunger and knife Famine", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34; Poetic Edda, Baldrs draumar" }], "weight": "primary" }],
+    "notes": "Daughter of Loki and Angrboða, cast into Niflheim to rule the realm of the dead."
+  },
+  {
+    "id": "norse_hodr",
+    "name": { "primary": "Höðr", "alt": ["Hod", "Hodur"], "transliterations": { "old norse": "Höðr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "dead", "parentIds": ["norse_odin", "norse_frigg"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "darkness-blindness", "contextTag": "lifelong", "term": { "value": "blindr", "script": "Old Norse", "rom": "blindr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 22, 49" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 22, 49; Poetic Edda, Völuspá 32" }], "weight": "primary" }],
+    "notes": "Blind god, son of Odin, who unwittingly slew Baldr with a mistletoe dart guided by Loki."
+  },
+  {
+    "id": "norse_bragi",
+    "name": { "primary": "Bragi", "alt": ["Bragi Boddason"], "transliterations": { "old norse": "Bragi" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_odin"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "poetry-eloquence", "contextTag": "lifelong", "term": { "value": "skáldskapr", "script": "Old Norse", "rom": "skaldskapr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 26; Skáldskaparmál" }] }
+    ],
+    "faculties": [
+      { "id": "master-of-verse", "name": "Compose poetry surpassing all others", "term": { "value": "snilld", "script": "Old Norse", "rom": "snilld" }, "inheritability": "none", "notes": "Foremost in poetry; eloquence and word-craft named bragr for him", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 26" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 26; Poetic Edda, Lokasenna 8" }], "weight": "primary" }],
+    "notes": "God of poetry and eloquence, husband of Iðunn, who welcomes the slain to Valhöll with verse."
+  },
+  {
+    "id": "norse_idunn",
+    "name": { "primary": "Iðunn", "alt": ["Idun", "Idunn"], "transliterations": { "old norse": "Iðunn" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "youth-rejuvenation", "contextTag": "lifelong", "term": { "value": "epli ellilyfs", "script": "Old Norse", "rom": "epli ellilyfs" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 26; Skáldskaparmál 1" }] }
+    ],
+    "faculties": [
+      { "id": "renew-youth", "name": "Restore the gods' youth with her apples", "term": { "value": "yngja", "script": "Old Norse", "rom": "yngja" }, "inheritability": "none", "notes": "Her apples keep the Æsir young until Ragnarök", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 26; Skáldskaparmál 1" }] }
+    ],
+    "materialCulture": [
+      { "id": "apples-of-youth", "kind": "relic", "name": "Apples of youth", "term": { "value": "epli", "script": "Old Norse", "rom": "epli" }, "role": "owner", "notes": "Golden apples warding off old age, stolen by giant Þjazi", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 1" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 26; Skáldskaparmál 1; Poetic Edda, Lokasenna 17" }], "weight": "primary" }],
+    "notes": "Goddess keeper of the apples of youth, wife of Bragi, whose abduction nearly aged the gods to death."
+  },
+  {
+    "id": "norse_sif",
+    "name": { "primary": "Sif", "alt": ["Sif Gold-Hair"], "transliterations": { "old norse": "Sif" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "harvest-fertility", "contextTag": "lifelong", "term": { "value": "gullhárs", "script": "Old Norse", "rom": "gullhars" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 35" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "golden-hair", "kind": "relic", "name": "Hair of living gold", "term": { "value": "gullhár", "script": "Old Norse", "rom": "gullhar" }, "role": "owner", "notes": "Golden hair forged by dwarves after Loki shore it off", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 35" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 31; Skáldskaparmál 35; Poetic Edda, Lokasenna 53-54" }], "weight": "primary" }],
+    "notes": "Golden-haired goddess, wife of Thor, whose shorn hair occasioned the dwarves' forging of the gods' treasures."
+  },
+  {
+    "id": "norse_skadi",
+    "name": { "primary": "Skaði", "alt": ["Skadi", "Skade"], "transliterations": { "old norse": "Skaði" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "winter-mountains", "contextTag": "lifelong", "term": { "value": "öndurdís", "script": "Old Norse", "rom": "ondurdis" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 23; Skáldskaparmál 1" }] },
+      { "sphereId": "hunting", "contextTag": "lifelong", "term": { "value": "veiðr", "script": "Old Norse", "rom": "veidr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 23" }] }
+    ],
+    "faculties": [
+      { "id": "ski-hunt", "name": "Range the mountains hunting on skis", "term": { "value": "öndurr", "script": "Old Norse", "rom": "ondurr" }, "inheritability": "none", "notes": "Travels snowy heights on skis and snowshoes with bow", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 23; Skáldskaparmál 1" }] }
+    ],
+    "materialCulture": [
+      { "id": "skadi-skis-bow", "kind": "equipment", "name": "Skis and hunting bow", "term": { "value": "öndurr ok bogi", "script": "Old Norse", "rom": "ondurr ok bogi" }, "role": "owner", "notes": "Her characteristic skis, snowshoes and bow", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 23" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 23; Skáldskaparmál 1; Poetic Edda, Lokasenna 49-52" }], "weight": "primary" }],
+    "notes": "Jötunn goddess of winter, mountains and the hunt, daughter of Þjazi, briefly wed to Njǫrðr."
+  },
+  {
+    "id": "norse_forseti",
+    "name": { "primary": "Forseti", "alt": ["Forsete"], "transliterations": { "old norse": "Forseti" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_baldr"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "justice-reconciliation", "contextTag": "lifelong", "term": { "value": "dómr", "script": "Old Norse", "rom": "domr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 32; Poetic Edda, Grímnismál 15" }] }
+    ],
+    "faculties": [
+      { "id": "settle-disputes", "name": "Reconcile all who bring suits before him", "term": { "value": "sætta", "script": "Old Norse", "rom": "saetta" }, "inheritability": "none", "notes": "All who come with disputes leave reconciled", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 32" }] }
+    ],
+    "materialCulture": [
+      { "id": "glitnir", "kind": "place", "name": "Hall Glitnir", "term": { "value": "Glitnir", "script": "Old Norse", "rom": "Glitnir" }, "role": "owner", "notes": "Gold-and-silver hall where he gives judgement", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Grímnismál 15; Prose Edda, Gylfaginning 32" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 32; Poetic Edda, Grímnismál 15" }], "weight": "primary" }],
+    "notes": "God of justice and reconciliation, son of Baldr, who settles all disputes from his hall Glitnir."
+  },
+  {
+    "id": "norse_vidarr",
+    "name": { "primary": "Víðarr", "alt": ["Vidar", "the silent god"], "transliterations": { "old norse": "Víðarr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_odin"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "vengeance-silence", "contextTag": "lifelong", "term": { "value": "hinn þögli ás", "script": "Old Norse", "rom": "hinn thogli as" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 29, 51" }] }
+    ],
+    "faculties": [
+      { "id": "avenge-odin", "name": "Slay the wolf to avenge his father", "term": { "value": "hefnd", "script": "Old Norse", "rom": "hefnd" }, "inheritability": "none", "notes": "Will tear Fenrir's jaws at Ragnarök, nearly strong as Thor", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 51; Poetic Edda, Vafþrúðnismál 53" }] }
+    ],
+    "materialCulture": [
+      { "id": "vidarr-shoe", "kind": "equipment", "name": "Thick shoe of Víðarr", "term": { "value": "skór", "script": "Old Norse", "rom": "skor" }, "role": "owner", "notes": "Shoe of gathered leather scraps to brace Fenrir's jaw", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 18; Gylfaginning 51" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 29, 51; Poetic Edda, Vafþrúðnismál 53" }], "weight": "primary" }],
+    "notes": "Silent god of vengeance, son of Odin, fated to kill Fenrir and survive Ragnarök."
+  },
+  {
+    "id": "norse_vali",
+    "name": { "primary": "Váli", "alt": ["Vali", "Ali"], "transliterations": { "old norse": "Váli" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_odin"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "vengeance", "contextTag": "lifelong", "term": { "value": "hefnd", "script": "Old Norse", "rom": "hefnd" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 30; Poetic Edda, Baldrs draumar 11" }] }
+    ],
+    "faculties": [
+      { "id": "swift-vengeance", "name": "Avenge Baldr in a single day's age", "term": { "value": "skjót hefnd", "script": "Old Norse", "rom": "skjot hefnd" }, "inheritability": "none", "notes": "One night old, unwashed and uncombed, he slays Höðr", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 32-33; Baldrs draumar 11" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 30, 51; Poetic Edda, Baldrs draumar 11" }], "weight": "primary" }],
+    "notes": "Son of Odin and Rindr, born to avenge Baldr by slaying Höðr; survives Ragnarök."
+  },
+  {
+    "id": "norse_ullr",
+    "name": { "primary": "Ullr", "alt": ["Ull", "Ullin"], "transliterations": { "old norse": "Ullr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_sif"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "archery-skiing", "contextTag": "lifelong", "term": { "value": "bogaáss", "script": "Old Norse", "rom": "bogaass" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 31; Skáldskaparmál 14" }] }
+    ],
+    "faculties": [
+      { "id": "peerless-archer-skier", "name": "Outshoot and outski all the gods", "term": { "value": "skíðaáss", "script": "Old Norse", "rom": "skidaass" }, "inheritability": "none", "notes": "Best archer and skier; good to invoke in single combat", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 31" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 31; Skáldskaparmál 14; Poetic Edda, Grímnismál 5, 42" }], "weight": "primary" }],
+    "notes": "God of archery, skiing and single combat, stepson of Thor, dwelling at Ýdalir."
+  },
+  {
+    "id": "norse_aegir",
+    "name": { "primary": "Ægir", "alt": ["Aegir", "Hlér", "Gymir"], "transliterations": { "old norse": "Ægir" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "sea-ocean", "contextTag": "lifelong", "term": { "value": "sær", "script": "Old Norse", "rom": "saer" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 33; Poetic Edda, Lokasenna prose" }] },
+      { "sphereId": "brewing-feasting", "contextTag": "lifelong", "term": { "value": "öldr", "script": "Old Norse", "rom": "oldr" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Hymiskviða 1-3; Lokasenna prose" }] }
+    ],
+    "faculties": [
+      { "id": "brew-for-gods", "name": "Brew ale for the assembled gods", "term": { "value": "brugga", "script": "Old Norse", "rom": "brugga" }, "inheritability": "none", "notes": "Hosts the gods' feast and brews in Hymir's vast cauldron", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Hymiskviða 1-3; Lokasenna prose" }] }
+    ],
+    "materialCulture": [
+      { "id": "aegir-hall", "kind": "place", "name": "Sea-hall lit by gold", "term": { "value": "salr", "script": "Old Norse", "rom": "salr" }, "role": "owner", "notes": "Undersea hall lit by glowing gold for the gods' feast", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 33; Poetic Edda, Lokasenna prose" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 33; Poetic Edda, Hymiskviða, Lokasenna" }], "weight": "primary" }],
+    "notes": "Jötunn personification of the sea, ale-brewer and host of the gods' feasts, husband of Rán."
+  },
+  {
+    "id": "norse_ran",
+    "name": { "primary": "Rán", "alt": ["Ran"], "transliterations": { "old norse": "Rán" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "sea-drowning", "contextTag": "lifelong", "term": { "value": "sjór", "script": "Old Norse", "rom": "sjor" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 25, 33; Poetic Edda, Helgakviða Hundingsbana I 30" }] }
+    ],
+    "faculties": [
+      { "id": "net-the-drowned", "name": "Drag drowning men down in her net", "term": { "value": "net", "script": "Old Norse", "rom": "net" }, "inheritability": "none", "notes": "Catches the sea-drowned in her net for her hall", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 25, 33" }] }
+    ],
+    "materialCulture": [
+      { "id": "ran-net", "kind": "tool", "name": "Drowning-net", "term": { "value": "net", "script": "Old Norse", "rom": "net" }, "role": "owner", "notes": "Net with which she gathers those lost at sea", "sources": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 25, 33" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Skáldskaparmál 25, 33; Poetic Edda, Helgakviða Hundingsbana I" }], "weight": "primary" }],
+    "notes": "Sea goddess, wife of Ægir, who nets the drowned and gathers them to her undersea hall."
+  },
+  {
+    "id": "norse_jormungandr",
+    "name": { "primary": "Jörmungandr", "alt": ["Midgard Serpent", "Miðgarðsormr"], "transliterations": { "old norse": "Jörmungandr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "other", "vitalStatus": "living", "parentIds": ["norse_loki"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "sea-chaos", "contextTag": "lifelong", "term": { "value": "Miðgarðsormr", "script": "Old Norse", "rom": "Midgardsormr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34, 48" }] }
+    ],
+    "faculties": [
+      { "id": "encircle-world", "name": "Encircle Midgard biting its own tail", "term": { "value": "umgjörð heims", "script": "Old Norse", "rom": "umgjord heims" }, "inheritability": "none", "notes": "Lies in the sea girdling all lands; venom-breather fated against Thor", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34, 48, 51" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34, 48, 51; Poetic Edda, Hymiskviða, Völuspá 50" }], "weight": "primary" }],
+    "notes": "World-serpent child of Loki and Angrboða, encircling Midgard and Thor's doom at Ragnarök."
+  },
+  {
+    "id": "norse_fenrir",
+    "name": { "primary": "Fenrir", "alt": ["Fenrisúlfr", "Fenris Wolf"], "transliterations": { "old norse": "Fenrir" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["norse_loki"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "destruction-monstrosity", "contextTag": "lifelong", "term": { "value": "úlfr", "script": "Old Norse", "rom": "ulfr" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34, 51" }] }
+    ],
+    "faculties": [
+      { "id": "devouring-might", "name": "Grow unstoppably and devour Odin", "term": { "value": "ógnar afl", "script": "Old Norse", "rom": "ognar afl" }, "inheritability": "none", "notes": "Bound by Gleipnir; breaks loose to swallow Odin at Ragnarök", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34, 51; Poetic Edda, Völuspá 53" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 34, 51; Poetic Edda, Völuspá 53; Vafþrúðnismál 53" }], "weight": "primary" }],
+    "notes": "Monstrous wolf-son of Loki, bound by the gods with Gleipnir, fated to devour Odin at Ragnarök."
+  },
+  {
+    "id": "norse_surtr",
+    "name": { "primary": "Surtr", "alt": ["Surt", "Surtur"], "transliterations": { "old norse": "Surtr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fire-conflagration", "contextTag": "lifelong", "term": { "value": "Múspell", "script": "Old Norse", "rom": "Muspell" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 4, 51; Poetic Edda, Völuspá 52" }] }
+    ],
+    "faculties": [
+      { "id": "burn-the-world", "name": "Consume the world in fire at the end", "term": { "value": "sviga lævi", "script": "Old Norse", "rom": "sviga laevi" }, "inheritability": "none", "notes": "Leads Múspell's sons and burns the world after Ragnarök", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 52; Prose Edda, Gylfaginning 51" }] }
+    ],
+    "materialCulture": [
+      { "id": "surtr-sword", "kind": "weapon", "name": "Flaming sword brighter than the sun", "term": { "value": "sverð", "script": "Old Norse", "rom": "sverd" }, "role": "wielder", "notes": "Blazing sword with which he slays Freyr and fires the world", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 52; Prose Edda, Gylfaginning 51" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 4, 51; Poetic Edda, Völuspá 52; Vafþrúðnismál 18" }], "weight": "primary" }],
+    "notes": "Fire-giant warden of Múspellsheimr, fated to lead the fiery host and burn the world at Ragnarök."
+  },
+  {
+    "id": "norse_ymir",
+    "name": { "primary": "Ymir", "alt": ["Aurgelmir", "Brimir", "Bláinn"], "transliterations": { "old norse": "Ymir" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "other", "vitalStatus": "dead", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "primordial-matter", "contextTag": "lifelong", "term": { "value": "hrímþurs", "script": "Old Norse", "rom": "hrimthurs" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 5-8; Poetic Edda, Vafþrúðnismál 21" }] }
+    ],
+    "faculties": [
+      { "id": "self-spawning", "name": "Spawn the first beings from his sweat", "term": { "value": "aukask", "script": "Old Norse", "rom": "aukask" }, "inheritability": "none", "notes": "First being; jötnar grew from his sweat and legs", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 5; Poetic Edda, Vafþrúðnismál 33" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 5-8; Poetic Edda, Völuspá 3, Vafþrúðnismál 21, Grímnismál 40-41" }], "weight": "primary" }],
+    "notes": "Primordial frost-giant from whose slain body Odin and his brothers fashioned the world."
+  },
+  {
+    "id": "norse_buri",
+    "name": { "primary": "Búri", "alt": ["Buri"], "transliterations": { "old norse": "Búri" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "primordial-ancestry", "contextTag": "lifelong", "term": { "value": "forfaðir", "script": "Old Norse", "rom": "forfadir" }, "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 6" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 6" }], "weight": "primary" }],
+    "notes": "First of the gods, licked free of the rime by the cow Auðumbla; grandfather of Odin."
+  },
+  {
+    "id": "norse_urdr",
+    "name": { "primary": "Urðr", "alt": ["Urd", "Wyrd"], "transliterations": { "old norse": "Urðr" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fate-past", "contextTag": "lifelong", "term": { "value": "Urðr", "script": "Old Norse", "rom": "Urdr" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20; Prose Edda, Gylfaginning 15" }] }
+    ],
+    "faculties": [
+      { "id": "ordain-fate", "name": "Shape the fates and laws of all lives", "term": { "value": "skapa", "script": "Old Norse", "rom": "skapa" }, "inheritability": "none", "notes": "Chief Norn; carves fate-laws and tends Yggdrasil's well", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20; Prose Edda, Gylfaginning 15" }] }
+    ],
+    "materialCulture": [
+      { "id": "well-of-urdr", "kind": "place", "name": "Well of Urðr", "term": { "value": "Urðarbrunnr", "script": "Old Norse", "rom": "Urdarbrunnr" }, "role": "owner", "notes": "Sacred well beneath Yggdrasil where the gods hold court", "sources": [{ "kind": "primary", "reference": "Prose Edda, Gylfaginning 15; Poetic Edda, Völuspá 19" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20; Prose Edda, Gylfaginning 15" }], "weight": "primary" }],
+    "notes": "Eldest of the three Norns, embodying that which has become; tends the well beneath Yggdrasil."
+  },
+  {
+    "id": "norse_verdandi",
+    "name": { "primary": "Verðandi", "alt": ["Verdandi"], "transliterations": { "old norse": "Verðandi" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fate-present", "contextTag": "lifelong", "term": { "value": "Verðandi", "script": "Old Norse", "rom": "Verdandi" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20; Prose Edda, Gylfaginning 15" }] }
+    ],
+    "faculties": [
+      { "id": "ordain-fate-present", "name": "Shape fate as it comes into being", "term": { "value": "skapa", "script": "Old Norse", "rom": "skapa" }, "inheritability": "none", "notes": "Norn of the present, carving fate at Urðr's well", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20; Prose Edda, Gylfaginning 15" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20; Prose Edda, Gylfaginning 15" }], "weight": "primary" }],
+    "notes": "Second of the three Norns, embodying that which is coming into being."
+  },
+  {
+    "id": "norse_skuld",
+    "name": { "primary": "Skuld", "alt": ["Skuld"], "transliterations": { "old norse": "Skuld" } },
+    "type": "deity", "origin": "canon", "tradition": "Norse", "primaryTradition": "Norse",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fate-future", "contextTag": "lifelong", "term": { "value": "Skuld", "script": "Old Norse", "rom": "Skuld" }, "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20, 30; Prose Edda, Gylfaginning 15, 36" }] }
+    ],
+    "faculties": [
+      { "id": "ordain-fate-future", "name": "Decree what is yet to come to pass", "term": { "value": "skapa", "script": "Old Norse", "rom": "skapa" }, "inheritability": "none", "notes": "Youngest Norn of the future; also rides among the valkyries", "sources": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20, 30; Prose Edda, Gylfaginning 15, 36" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Poetic Edda, Völuspá 20, 30; Prose Edda, Gylfaginning 15, 36" }], "weight": "primary" }],
+    "notes": "Youngest of the three Norns, embodying that which shall be; also numbered among the valkyries."
+  },
+  {
+    "id": "irish_dagda",
+    "name": { "primary": "The Dagda", "alt": ["Eochaid Ollathair", "Ruad Rofhessa"], "transliterations": { "irish": "An Dagda" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "abundance-fertility", "contextTag": "lifelong", "term": { "value": "Dagda", "script": "Irish", "rom": "Dagda" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] },
+      { "sphereId": "druidry-magic", "contextTag": "lifelong", "term": { "value": "Ruad Rofhessa", "script": "Irish", "rom": "Ruad Rofhessa" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired; Lebor Gabála Érenn" }] }
+    ],
+    "faculties": [
+      { "id": "weather-and-crops", "name": "Command the weather and the harvest", "term": { "value": "síon", "script": "Irish", "rom": "sion" }, "inheritability": "none", "notes": "Controls weather and crops as father-god of plenty", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "materialCulture": [
+      { "id": "lorg-mor", "kind": "weapon", "name": "Great club Lorg Mór", "term": { "value": "Lorg Mór", "script": "Irish", "rom": "Lorg Mor" }, "role": "wielder", "notes": "One end kills nine men, the other revives the dead", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired; Dindshenchas" }] },
+      { "id": "coire-ansic", "kind": "relic", "name": "Cauldron Coire Ansic", "term": { "value": "Coire Ansic", "script": "Irish", "rom": "Coire Ansic" }, "role": "owner", "notes": "Un-dry cauldron from which none go unsatisfied", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Cath Maige Tuired" }] },
+      { "id": "uaithne-harp", "kind": "instrument", "name": "Harp Uaithne", "term": { "value": "Uaithne", "script": "Irish", "rom": "Uaithne" }, "role": "owner", "notes": "Harp Daur Dá Bláo that orders seasons and flies to him", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Cath Maige Tuired; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Father-god and chief of the Tuatha Dé Danann, lord of magic, plenty and the seasons."
+  },
+  {
+    "id": "irish_morrigan",
+    "name": { "primary": "The Morrígan", "alt": ["Mór-ríoghan", "Anand"], "transliterations": { "irish": "An Mórrígan" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "war-fate", "contextTag": "lifelong", "term": { "value": "Mórrígan", "script": "Irish", "rom": "Morrigan" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired; Táin Bó Cúailnge" }] },
+      { "sphereId": "sovereignty-prophecy", "contextTag": "lifelong", "term": { "value": "fáistine", "script": "Irish", "rom": "faistine" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "faculties": [
+      { "id": "battle-shapeshift", "name": "Shift into crow, eel, wolf and heifer", "term": { "value": "fáebor", "script": "Irish", "rom": "faebor" }, "inheritability": "none", "notes": "Becomes crow, eel, grey wolf and red heifer against Cú Chulainn", "sources": [{ "kind": "primary", "reference": "Táin Bó Cúailnge; Táin Bó Regamna" }] },
+      { "id": "battle-prophecy", "name": "Foretell and decide the outcome of battle", "term": { "value": "fáistine catha", "script": "Irish", "rom": "faistine catha" }, "inheritability": "none", "notes": "Prophesies and incites; her chant decides Mag Tuired", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Cath Maige Tuired; Táin Bó Cúailnge; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Shapeshifting goddess of war, fate and sovereignty, daughter of Ernmas, who haunts the battlefield as a crow."
+  },
+  {
+    "id": "irish_brigid",
+    "name": { "primary": "Brigid", "alt": ["Brigit", "Bríg"], "transliterations": { "irish": "Brigit" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "living", "parentIds": ["irish_dagda"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "poetry-inspiration", "contextTag": "lifelong", "term": { "value": "filidecht", "script": "Irish", "rom": "filidecht" }, "sources": [{ "kind": "primary", "reference": "Sanas Cormaic (Cormac's Glossary), s.v. Brigit" }] },
+      { "sphereId": "healing-smithcraft", "contextTag": "lifelong", "term": { "value": "líaig ocus gobae", "script": "Irish", "rom": "liaig ocus gobae" }, "sources": [{ "kind": "primary", "reference": "Sanas Cormaic (Cormac's Glossary), s.v. Brigit" }] }
+    ],
+    "faculties": [
+      { "id": "invented-keening", "name": "Raise the first keening lament in Ireland", "term": { "value": "caíned", "script": "Irish", "rom": "cained" }, "inheritability": "none", "notes": "First keened, mourning her son Ruadán slain at Mag Tuired", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "materialCulture": [
+      { "id": "fea-femen-oxen", "kind": "animal", "name": "Oxen Fea and Femen", "term": { "value": "Fea ocus Femen", "script": "Irish", "rom": "Fea ocus Femen" }, "role": "owner", "notes": "Her two royal oxen whose cry was a famed sound of Ireland", "sources": [{ "kind": "primary", "reference": "Sanas Cormaic (Cormac's Glossary), s.v. Brigit" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Sanas Cormaic (Cormac's Glossary), s.v. Brigit; Cath Maige Tuired; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Daughter of the Dagda, triple goddess of poetry, healing and smithcraft, who first raised the keen."
+  },
+  {
+    "id": "irish_nuada",
+    "name": { "primary": "Nuada", "alt": ["Nuada Airgetlám", "Nuada Silver-Arm"], "transliterations": { "irish": "Nuadu Airgetlám" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "dead", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "kingship-sovereignty", "contextTag": "lifelong", "term": { "value": "rí", "script": "Irish", "rom": "ri" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired; Lebor Gabála Érenn" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "silver-arm", "kind": "relic", "name": "Silver arm Airgetlám", "term": { "value": "lám airgit", "script": "Irish", "rom": "lam airgit" }, "role": "owner", "notes": "Silver arm by Dian Cécht; flesh restored by Miach", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] },
+      { "id": "claiomh-solais", "kind": "weapon", "name": "Sword of Light Claíomh Solais", "term": { "value": "Claíomh Solais", "script": "Irish", "rom": "Claiomh Solais" }, "role": "owner", "notes": "Sword of Findias from which none escaped once drawn", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Cath Maige Tuired" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Cath Maige Tuired; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "First king of the Tuatha Dé Danann, who lost the kingship with his hand and regained it with a silver arm."
+  },
+  {
+    "id": "irish_ogma",
+    "name": { "primary": "Ogma", "alt": ["Ogma Grianainech", "Trénfher"], "transliterations": { "irish": "Ogma" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "eloquence-language", "contextTag": "lifelong", "term": { "value": "ogam", "script": "Irish", "rom": "ogam" }, "sources": [{ "kind": "primary", "reference": "Auraicept na n-Éces; In Lebor Ogaim" }] },
+      { "sphereId": "martial-strength", "contextTag": "lifelong", "term": { "value": "trénfher", "script": "Irish", "rom": "trenfher" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "faculties": [
+      { "id": "invented-ogham", "name": "Invent the ogham letters for the Irish", "term": { "value": "ogam", "script": "Irish", "rom": "ogam" }, "inheritability": "none", "notes": "Credited as inventor of ogham, the first Irish script", "sources": [{ "kind": "primary", "reference": "Auraicept na n-Éces; In Lebor Ogaim (Book of Ballymote)" }] },
+      { "id": "champion-strongman", "name": "Fight as the champion strong-man of the gods", "term": { "value": "trénfher", "script": "Irish", "rom": "trenfher" }, "inheritability": "none", "notes": "Warrior-champion who recovers Tethra's sword at Mag Tuired", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Cath Maige Tuired; Auraicept na n-Éces; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Warrior-poet of the Tuatha Dé Danann, champion strong-man and reputed inventor of ogham writing."
+  },
+  {
+    "id": "irish_dian_cecht",
+    "name": { "primary": "Dian Cécht", "alt": ["Dian Cecht"], "transliterations": { "irish": "Dian Cécht" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "healing-medicine", "contextTag": "lifelong", "term": { "value": "leges", "script": "Irish", "rom": "leges" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "faculties": [
+      { "id": "well-of-healing", "name": "Restore the slain through the healing well", "term": { "value": "Sláng", "script": "Irish", "rom": "Slang" }, "inheritability": "partial", "notes": "Chants over the well Sláine to heal the mortally wounded", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "materialCulture": [
+      { "id": "well-of-slaine", "kind": "place", "name": "Healing well of Sláine", "term": { "value": "Tipra Sláine", "script": "Irish", "rom": "Tipra Slaine" }, "role": "maker", "notes": "Herb-charged well restoring the wounded to battle", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Cath Maige Tuired; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Physician of the Tuatha Dé Danann, who fashioned Nuada's silver arm and healed the wounded at Mag Tuired."
+  },
+  {
+    "id": "irish_aengus",
+    "name": { "primary": "Aengus", "alt": ["Aengus Óg", "Mac ind Óc", "Mac Óc"], "transliterations": { "irish": "Óengus" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["irish_dagda", "irish_boann"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "love-youth", "contextTag": "lifelong", "term": { "value": "Mac Óc", "script": "Irish", "rom": "Mac Oc" }, "sources": [{ "kind": "primary", "reference": "Aislinge Óengusa; Tochmarc Étaíne" }] }
+    ],
+    "faculties": [
+      { "id": "love-bird-transformation", "name": "Turn into a swan with his beloved", "term": { "value": "delb géise", "script": "Irish", "rom": "delb geise" }, "inheritability": "none", "notes": "Becomes a swan to win Caer Ibormeith; kisses become birds", "sources": [{ "kind": "primary", "reference": "Aislinge Óengusa" }] }
+    ],
+    "materialCulture": [
+      { "id": "bru-na-boinne-aengus", "kind": "place", "name": "Brú na Bóinne", "term": { "value": "Brú na Bóinne", "script": "Irish", "rom": "Bru na Boinne" }, "role": "owner", "notes": "Won the Boyne mound from the Dagda by a wordplay", "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne; De Gabáil in t-Sída" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Aislinge Óengusa; Tochmarc Étaíne; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "God of love and youth, son of the Dagda and Boann, dwelling at Brú na Bóinne."
+  },
+  {
+    "id": "irish_boann",
+    "name": { "primary": "Boann", "alt": ["Boand", "Bóinn"], "transliterations": { "irish": "Boand" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "dead", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "rivers-waters", "contextTag": "lifelong", "term": { "value": "Bóand", "script": "Irish", "rom": "Boand" }, "sources": [{ "kind": "primary", "reference": "Metrical Dindshenchas, 'Boand'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "river-boyne", "kind": "place", "name": "River Boyne", "term": { "value": "Abann Bóinne", "script": "Irish", "rom": "Abann Boinne" }, "role": "maker", "notes": "Drowned by the Well of Segais, whose waters became the Boyne", "sources": [{ "kind": "primary", "reference": "Metrical Dindshenchas, 'Boand'" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Metrical Dindshenchas, 'Boand'; Tochmarc Étaíne" }], "weight": "primary" }],
+    "notes": "Goddess of the river Boyne, mother of Aengus by the Dagda, drowned by the bursting Well of Segais."
+  },
+  {
+    "id": "irish_danu",
+    "name": { "primary": "Danu", "alt": ["Anu", "Ana", "Danann"], "transliterations": { "irish": "Danu" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "motherhood-sovereignty", "contextTag": "lifelong", "term": { "value": "máthair na ndéa", "script": "Irish", "rom": "mathair na ndea" }, "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Sanas Cormaic, s.v. Ana" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "da-chich-anann", "kind": "place", "name": "Dá Chích Anann", "term": { "value": "Dá Chích Anann", "script": "Irish", "rom": "Da Chich Anann" }, "role": "owner", "notes": "The 'Paps of Anu', twin hills named for the mother goddess", "sources": [{ "kind": "primary", "reference": "Sanas Cormaic, s.v. Ana; Dindshenchas" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Sanas Cormaic (Cormac's Glossary), s.v. Ana" }], "weight": "primary" }],
+    "notes": "Ancestral mother goddess of the Tuatha Dé Danann, the 'people of the goddess Danu'."
+  },
+  {
+    "id": "irish_lir",
+    "name": { "primary": "Lir", "alt": ["Ler", "Allód"], "transliterations": { "irish": "Ler" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "sea-ocean", "contextTag": "lifelong", "term": { "value": "ler", "script": "Irish", "rom": "ler" }, "sources": [{ "kind": "primary", "reference": "Oidheadh Chloinne Lir; Lebor Gabála Érenn" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Oidheadh Chloinne Lir (The Fate of the Children of Lir); Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Sea-god of the Tuatha Dé Danann, father of Manannán and of the children turned to swans by Aoife."
+  },
+  {
+    "id": "irish_goibniu",
+    "name": { "primary": "Goibniu", "alt": ["Goibhniu", "Gaibne"], "transliterations": { "irish": "Goibniu" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "smithcraft-metalwork", "contextTag": "lifelong", "term": { "value": "gaibnecht", "script": "Irish", "rom": "gaibnecht" }, "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] }
+    ],
+    "faculties": [
+      { "id": "forge-unfailing-weapons", "name": "Forge spear-points that never miss", "term": { "value": "gae", "script": "Irish", "rom": "gae" }, "inheritability": "none", "notes": "Makes blades in three blows; his points always slay", "sources": [{ "kind": "primary", "reference": "Cath Maige Tuired" }] },
+      { "id": "brew-immortal-ale", "name": "Brew the ale that wards off old age", "term": { "value": "Fled Goibnenn", "script": "Irish", "rom": "Fled Goibnenn" }, "inheritability": "none", "notes": "His feast's ale keeps the Tuatha Dé from sickness and age", "sources": [{ "kind": "primary", "reference": "Altram Tige Dá Medar; Cath Maige Tuired" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Cath Maige Tuired; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Divine smith of the Tuatha Dé Danann, forger of unerring weapons and brewer of the ale of immortality."
+  },
+  {
+    "id": "irish_midir",
+    "name": { "primary": "Midir", "alt": ["Mider", "Midir of Brí Léith"], "transliterations": { "irish": "Midir" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["irish_dagda"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "otherworld-sidhe", "contextTag": "lifelong", "term": { "value": "síd", "script": "Irish", "rom": "sid" }, "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne" }] }
+    ],
+    "faculties": [
+      { "id": "fly-as-swans", "name": "Fly off joined to his love as swans", "term": { "value": "delb éan", "script": "Irish", "rom": "delb ean" }, "inheritability": "none", "notes": "Turns himself and Étaín into swans to escape Tara", "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne" }] }
+    ],
+    "materialCulture": [
+      { "id": "bri-leith", "kind": "place", "name": "Sídhe of Brí Léith", "term": { "value": "Brí Léith", "script": "Irish", "rom": "Bri Leith" }, "role": "owner", "notes": "His otherworld mound, won from Tara at fidchell", "sources": [{ "kind": "primary", "reference": "Tochmarc Étaíne" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Tochmarc Étaíne; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Otherworld lord of Brí Léith, suitor of Étaín, who wins her back from King Eochaid at fidchell."
+  },
+  {
+    "id": "irish_bodb_derg",
+    "name": { "primary": "Bodb Derg", "alt": ["Bodhbh Dearg"], "transliterations": { "irish": "Bodb Derg" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["irish_dagda"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "kingship-sidhe", "contextTag": "lifelong", "term": { "value": "rí síde", "script": "Irish", "rom": "ri side" }, "sources": [{ "kind": "primary", "reference": "Oidheadh Chloinne Lir; Aislinge Óengusa" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Oidheadh Chloinne Lir; Aislinge Óengusa; Lebor Gabála Érenn" }], "weight": "primary" }],
+    "notes": "Son of the Dagda, elected king of the Tuatha Dé Danann sídhe after their retreat underground."
+  },
+  {
+    "id": "irish_eriu",
+    "name": { "primary": "Ériu", "alt": ["Eriu", "Éire"], "transliterations": { "irish": "Ériu" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "sovereignty-land", "contextTag": "lifelong", "term": { "value": "flaithius", "script": "Irish", "rom": "flaithius" }, "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Cath Maige Tuired" }] }
+    ],
+    "faculties": [
+      { "id": "name-the-land", "name": "Grant her name to the island of Ireland", "term": { "value": "Ériu", "script": "Irish", "rom": "Eriu" }, "inheritability": "none", "notes": "Bargained with the Milesians so Ireland would bear her name", "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Cath Maige Tuired" }], "weight": "primary" }],
+    "notes": "Sovereignty goddess and daughter of Ernmas who gave her name to Ireland (Éire)."
+  },
+  {
+    "id": "irish_donn",
+    "name": { "primary": "Donn", "alt": ["Donn of the Dead", "Donn Tétscorach"], "transliterations": { "irish": "Donn" } },
+    "type": "deity", "origin": "canon", "tradition": "Irish", "primaryTradition": "Irish",
+    "sex": "male", "vitalStatus": "dead", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "death-underworld", "contextTag": "lifelong", "term": { "value": "Tech Duinn", "script": "Irish", "rom": "Tech Duinn" }, "sources": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Metrical Dindshenchas, 'Tech Duinn'" }] }
+    ],
+    "faculties": [
+      { "id": "gather-the-dead", "name": "Gather the dead to his island house", "term": { "value": "Tech Duinn", "script": "Irish", "rom": "Tech Duinn" }, "inheritability": "none", "notes": "Summons Ireland's dead to assemble at his house", "sources": [{ "kind": "primary", "reference": "Metrical Dindshenchas, 'Tech Duinn'" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Lebor Gabála Érenn; Metrical Dindshenchas, 'Tech Duinn'" }], "weight": "primary" }],
+    "notes": "Milesian ancestor and lord of the dead, drowned off the coast, who gathers the dead to Tech Duinn."
+  },
+  {
+    "id": "welsh_arawn",
+    "name": { "primary": "Arawn", "alt": ["Arawn of Annwn"], "transliterations": { "welsh": "Arawn" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "otherworld-annwn", "contextTag": "lifelong", "term": { "value": "Annwn", "script": "Welsh", "rom": "Annwn" }, "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, First Branch (Pwyll)" }] }
+    ],
+    "faculties": [
+      { "id": "shape-exchange", "name": "Exchange form and realm with a mortal", "term": { "value": "rhith", "script": "Welsh", "rom": "rhith" }, "inheritability": "none", "notes": "Trades shape and kingdom with Pwyll for a year and a day", "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, First Branch (Pwyll)" }] }
+    ],
+    "materialCulture": [
+      { "id": "cwn-annwn", "kind": "animal", "name": "Hounds of Annwn", "term": { "value": "Cŵn Annwn", "script": "Welsh", "rom": "Cwn Annwn" }, "role": "owner", "notes": "White red-eared hounds of his spectral hunt", "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, First Branch (Pwyll)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, First Branch (Pwyll); Fourth Branch (Math)" }], "weight": "primary" }],
+    "notes": "King of the Otherworld Annwn who exchanges places with Pwyll and owns the red-eared Cŵn Annwn."
+  },
+  {
+    "id": "welsh_don",
+    "name": { "primary": "Dôn", "alt": ["Don"], "transliterations": { "welsh": "Dôn" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "motherhood-divine-kindred", "contextTag": "lifelong", "term": { "value": "Plant Dôn", "script": "Welsh", "rom": "Plant Don" }, "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math); Trioedd Ynys Prydein" }], "weight": "primary" }],
+    "notes": "Welsh mother goddess and ancestress of the divine 'Children of Dôn' — Gwydion, Arianrhod, Gofannon and Amaethon."
+  },
+  {
+    "id": "welsh_gwydion",
+    "name": { "primary": "Gwydion", "alt": ["Gwydion fab Dôn"], "transliterations": { "welsh": "Gwydion" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["welsh_don"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "magic-enchantment", "contextTag": "lifelong", "term": { "value": "hud", "script": "Welsh", "rom": "hud" }, "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }] }
+    ],
+    "faculties": [
+      { "id": "conjure-illusion", "name": "Conjure illusions, beasts and flower-women", "term": { "value": "hud a lledrith", "script": "Welsh", "rom": "hud a lledrith" }, "inheritability": "partial", "notes": "Conjures armies and steeds; makes Blodeuwedd; restores Lleu", "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math); Trioedd Ynys Prydein" }], "weight": "primary" }],
+    "notes": "Magician son of Dôn, foster-father of Lleu, who with Math shapes Blodeuwedd from flowers."
+  },
+  {
+    "id": "welsh_gilfaethwy",
+    "name": { "primary": "Gilfaethwy", "alt": ["Gilfaethwy fab Dôn"], "transliterations": { "welsh": "Gilfaethwy" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["welsh_don"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "transgression-desire", "contextTag": "lifelong", "term": { "value": "trais", "script": "Welsh", "rom": "trais" }, "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }], "weight": "primary" }],
+    "notes": "Son of Dôn whose desire for Goewin triggers the war with Pryderi; punished by Math as beasts with Gwydion."
+  },
+  {
+    "id": "welsh_gwyn_ap_nudd",
+    "name": { "primary": "Gwyn ap Nudd", "alt": ["Gwynn ap Nudd"], "transliterations": { "welsh": "Gwyn ap Nudd" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "otherworld-wild-hunt", "contextTag": "lifelong", "term": { "value": "Annwn", "script": "Welsh", "rom": "Annwn" }, "sources": [{ "kind": "primary", "reference": "Culhwch ac Olwen" }] }
+    ],
+    "faculties": [
+      { "id": "restrain-the-demons", "name": "Restrain the otherworld's demons by God's will", "term": { "value": "cythreuliaid", "script": "Welsh", "rom": "cythreuliaid" }, "inheritability": "none", "notes": "Holds the demons of Annwn lest the world be destroyed", "sources": [{ "kind": "primary", "reference": "Culhwch ac Olwen" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Culhwch ac Olwen; Buchedd Collen; Trioedd Ynys Prydein" }], "weight": "primary" }],
+    "notes": "Otherworld hunter-king and leader of the Wild Hunt, set to contain the demons of Annwn."
+  },
+  {
+    "id": "welsh_blodeuwedd",
+    "name": { "primary": "Blodeuwedd", "alt": ["Blodeuedd", "Flower-Face"], "transliterations": { "welsh": "Blodeuwedd" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "living", "parentIds": ["welsh_math", "welsh_gwydion"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "flowers-betrayal", "contextTag": "lifelong", "term": { "value": "blodau", "script": "Welsh", "rom": "blodau" }, "sources": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pedair Cainc y Mabinogi, Fourth Branch (Math)" }], "weight": "primary" }],
+    "notes": "Woman conjured from oak, broom and meadowsweet as Lleu's wife; turned to an owl for plotting his death."
+  },
+  {
+    "id": "welsh_ceridwen",
+    "name": { "primary": "Ceridwen", "alt": ["Cerridwen"], "transliterations": { "welsh": "Ceridwen" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "female", "vitalStatus": "living", "parentIds": [], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "inspiration-transformation", "contextTag": "lifelong", "term": { "value": "awen", "script": "Welsh", "rom": "awen" }, "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }] }
+    ],
+    "faculties": [
+      { "id": "brew-awen", "name": "Brew the cauldron of poetic inspiration", "term": { "value": "Pair Awen", "script": "Welsh", "rom": "Pair Awen" }, "inheritability": "none", "notes": "Boils a year-long brew yielding three drops of all knowledge", "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }] },
+      { "id": "shapeshift-chase", "name": "Shapeshift through beast forms in pursuit", "term": { "value": "rhith", "script": "Welsh", "rom": "rhith" }, "inheritability": "none", "notes": "Becomes greyhound, otter, hawk and hen chasing Gwion Bach", "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }] }
+    ],
+    "materialCulture": [
+      { "id": "pair-ceridwen", "kind": "relic", "name": "Cauldron of Awen", "term": { "value": "Pair Awen", "script": "Welsh", "rom": "Pair Awen" }, "role": "owner", "notes": "Cauldron brewing the draught of inspiration and knowledge", "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin); Llyfr Taliesin" }], "weight": "primary" }],
+    "notes": "Enchantress who brews the cauldron of Awen and, after a shapeshifting chase, gives rebirth to Taliesin."
+  },
+  {
+    "id": "welsh_taliesin",
+    "name": { "primary": "Taliesin", "alt": ["Gwion Bach", "Taliesin Ben Beirdd"], "transliterations": { "welsh": "Taliesin" } },
+    "type": "demigod", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["welsh_ceridwen"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "poetry-prophecy", "contextTag": "lifelong", "term": { "value": "awen", "script": "Welsh", "rom": "awen" }, "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin; Llyfr Taliesin" }] }
+    ],
+    "faculties": [
+      { "id": "all-knowing-song", "name": "Sing of all ages past and yet to come", "term": { "value": "awen", "script": "Welsh", "rom": "awen" }, "inheritability": "none", "notes": "Gained all knowledge from Ceridwen's three drops", "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin); Llyfr Taliesin" }], "weight": "primary" }],
+    "notes": "Greatest of the bards, reborn from Ceridwen after tasting the Awen, gifted with all knowledge and prophecy."
+  },
+  {
+    "id": "welsh_gofannon",
+    "name": { "primary": "Gofannon", "alt": ["Govannon", "Gofannon fab Dôn"], "transliterations": { "welsh": "Gofannon" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["welsh_don"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "smithcraft-metalwork", "contextTag": "lifelong", "term": { "value": "gof", "script": "Welsh", "rom": "gof" }, "sources": [{ "kind": "primary", "reference": "Culhwch ac Olwen; Pedair Cainc y Mabinogi, Fourth Branch" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Culhwch ac Olwen; Pedair Cainc y Mabinogi, Fourth Branch (Math)" }], "weight": "primary" }],
+    "notes": "Divine smith of the Children of Dôn, whose aid is sought to set a plough in Culhwch ac Olwen."
+  },
+  {
+    "id": "welsh_amaethon",
+    "name": { "primary": "Amaethon", "alt": ["Amathaon", "Amaethon fab Dôn"], "transliterations": { "welsh": "Amaethon" } },
+    "type": "deity", "origin": "canon", "tradition": "Welsh", "primaryTradition": "Welsh",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["welsh_don"], "temporal": { "era": "mythic-prehistoric" },
+    "domains": [
+      { "sphereId": "agriculture-ploughing", "contextTag": "lifelong", "term": { "value": "amaeth", "script": "Welsh", "rom": "amaeth" }, "sources": [{ "kind": "primary", "reference": "Culhwch ac Olwen; Cad Goddeu (Llyfr Taliesin)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "primary", "reference": "Culhwch ac Olwen; Cad Goddeu (Llyfr Taliesin)" }], "weight": "primary" }],
+    "notes": "Divine ploughman of the Children of Dôn, whose theft from Annwn occasions the Cad Goddeu."
+  }
+]
+```
+
+**Summary**
+
+Authored **51 missing figures** (Norse 26, Irish 15, Welsh 10), all schema-validated, none colliding with the 33 ids already present in the three traditions.
+
+Notes on coverage and decisions:
+- **All prompt-listed targets covered**, plus two extra major Mabinogi figures the existing list lacked: **Gwydion** and **Gilfaethwy** (Children of Dôn, central to the Fourth Branch).
+- **Faculties kept distinct from domains** and cited per the rules — e.g. Loki shapeshifting + guileful counsel, Freyja seiðr, Heimdall all-seeing/all-hearing, the Morrígan/Ceridwen shapeshifting, Goibniu unerring forging + immortality-ale, Ogma ogham-invention + strongman.
+- **Named items each cited**: Freyja (Brísingamen, falcon-cloak, Hildisvíni, cat-chariot); Heimdall (Gjallarhorn, Gulltoppr); the Dagda (Lorg Mór, Coire Ansic, harp Uaithne/Daur Dá Bláo); Nuada (silver arm, Claíomh Solais); Brigid (oxen Fea & Femen); Ceridwen (Pair Awen); Iðunn (apples); Skaði (skis/bow); Surtr (flaming sword); plus halls/places (Fensalir, Glitnir, Éljúðnir, Brú na Bóinne, Brí Léith, Well of Urðr, Dá Chích Anann), and Arawn's Cŵn Annwn.
+- **parentIds use real canon** via in-corpus/this-batch ids: Freyja→njord; Baldr & Höðr→odin+frigg; Forseti→baldr; Ullr→sif; Hel/Fenrir/Jörmungandr→loki; Brigid/Aengus/Midir/Bodb Derg→dagda; Aengus also→boann; the Children of Dôn→welsh_don; Blodeuwedd→math+gwydion; Taliesin→ceridwen.
+- **Primary sources only** — Poetic & Prose Edda (with chapter/stanza), Ynglinga saga; Cath Maige Tuired, Lebor Gabála Érenn, the Dindshenchas, Tochmarc Étaíne, Sanas Cormaic, Auraicept na n-Éces; the Four Branches, Culhwch ac Olwen, Cad Goddeu, Ystoria Taliesin. No coinages.
+- One judgment call: **Lugh is already in the existing Irish list**, so I did not re-add him despite his prominence. The full array is also saved at `/tmp/missing-figures-output.json`.

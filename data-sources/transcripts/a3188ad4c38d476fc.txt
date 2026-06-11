@@ -1,0 +1,844 @@
+I now have rich, well-cited research across all five traditions, including native-language forms, attestations, material culture, and scholarly sources. I have enough to author all 35 figures with confidence.
+
+Let me compile the complete JSON array. I'll author each figure following the exact schema, with English-leading names, native terms (Old English/Gaulish/Lithuanian/Northern Sámi/Basque) plus romanization (or "" where unrecorded), distinct faculties vs. domains, attested material culture, and real per-claim citations grounded in the scholarship I researched.
+
+Key scholarly anchors I'm using:
+- **Anglo-Saxon**: Bede *De temporum ratione* (Eostre, calendar), Old English royal genealogies (Woden, Seaxnēat), weekday/place-name evidence (Tiw, Thunor, Frig), Nine Herbs Charm/*Lacnunga* (Woden), Old Saxon Baptismal Vow (Seaxnēat/Saxnōt), *Deor* + Franks Casket + *Beowulf* ll. 450-455 (Wayland), *Beowulf*/Nowell Codex (Beowulf, Hrunting, Nægling).
+- **Gaulish**: Pillar of the Boatmen/Nautae Parisiaci (Cernunnos, Esus, Tarvos Trigaranus), Caesar *De Bello Gallico* VI (Mercury=Lugus), Lugoves inscriptions, Lucan *Pharsalia* I + Berne scholia (Taranis, Esus, Teutates), 200+ Epona inscriptions, Sucellus/Nantosuelta Sarrebourg relief, Tertullian/Ausonius + Aquileia inscriptions (Belenos).
+- **Lithuanian**: Baltic folklore/dainos, Romuva/Romowe sanctuary accounts (Perkūnas oak/fire), Saulė–Mėnuo myth, Žemyna agrarian rites, Gabija hearth prayers, Laima (lemti), interpretatio with Prussian trinity.
+- **Sámi**: noaidi drum iconography, ethnographic accounts (offerings, white reindeer), Læstadius-era records, seita sites.
+- **Basque**: J.M. Barandiarán's collected mythology (Mari/Anboto, Sugaar, Basajaun), Aymeric Picaud *Codex Calixtinus* (Urtzi/Ortzi), weekday etymologies.
+
+```json
+[
+ {
+  "id": "anglosaxon_woden",
+  "name": { "primary": "Woden", "alt": ["Wōden", "Wodan"], "transliterations": { "old-english": "Wōden" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "war-wisdom", "contextTag": "lifelong", "term": { "value": "Wōden", "script": "Old English", "rom": "Woden" }, "sources": [ { "kind": "primary", "reference": "Anglo-Saxon royal genealogies (Anglian collection; ASC 'Wodnesdæg')" } ] },
+   { "sphereId": "magic-charms", "contextTag": "lifelong", "term": { "value": "galdor", "script": "Old English", "rom": "galdor" }, "sources": [ { "kind": "primary", "reference": "Nine Herbs Charm, Lacnunga (London, BL Harley 585)" } ] }
+  ],
+  "faculties": [
+   { "id": "work-charms", "name": "Work healing charms and runic magic", "term": { "value": "galdor", "script": "Old English", "rom": "galdor" }, "inheritability": "none", "notes": "Smites the serpent with nine glory-twigs", "sources": [ { "kind": "primary", "reference": "Nine Herbs Charm, Lacnunga, lines on Woden and the wuldortanas" } ] },
+   { "id": "sire-royal-lines", "name": "Father the royal dynasties of the English kingdoms", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "patrilineal", "notes": "Apex ancestor in most Anglo-Saxon king-lists", "sources": [ { "kind": "secondary", "reference": "D. Dumville, 'The Anglian Collection of Royal Genealogies' (1976)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Anglo-Saxon royal genealogies; Nine Herbs Charm (Lacnunga); weekday 'Wōdnesdæg'" }, { "kind": "secondary", "reference": "B. Branston, The Lost Gods of England (1957)" } ], "weight": "primary" } ],
+  "notes": "Anglo-Saxon chief god of war, wisdom and magic; divine ancestor of royal houses, cognate with Norse Óðinn."
+ },
+ {
+  "id": "anglosaxon_thunor",
+  "name": { "primary": "Thunor", "alt": ["Þunor", "Þuner"], "transliterations": { "old-english": "Þunor" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "þunor", "script": "Old English", "rom": "thunor" }, "sources": [ { "kind": "primary", "reference": "Weekday 'Þunresdæg' (Thursday); Old Saxon Baptismal Vow ('Thunaer')" } ] },
+   { "sphereId": "sky-storm", "contextTag": "lifelong", "term": { "value": "", "script": "Old English", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Place-names Thunderfield, Thunoreshlaew, Thunderley (Gelling, Signposts to the Past, 1978)" } ] }
+  ],
+  "faculties": [
+   { "id": "hurl-thunder", "name": "Hurl thunder and lightning across the sky", "term": { "value": "þunor", "script": "Old English", "rom": "thunor" }, "inheritability": "none", "notes": "His name is the common word for thunder", "sources": [ { "kind": "primary", "reference": "Old English glossaries equating Þunor with Jupiter/Tonans" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Weekday 'Þunresdæg'; Old Saxon Baptismal Vow renouncing Thunaer, Woden, Saxnot" }, { "kind": "secondary", "reference": "M. Gelling, Signposts to the Past (1978), on Thunor place-names" } ], "weight": "primary" } ],
+  "notes": "Anglo-Saxon thunder god, cognate with Norse Þórr; attested in weekday name, place-names and a baptismal renunciation."
+ },
+ {
+  "id": "anglosaxon_tiw",
+  "name": { "primary": "Tiw", "alt": ["Tīw", "Tīg"], "transliterations": { "old-english": "Tīw" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Tīw", "script": "Old English", "rom": "Tiw" }, "sources": [ { "kind": "primary", "reference": "Old English glosses rendering Tīg/Tīw as Mars; weekday 'Tīwesdæg'" } ] }
+  ],
+  "faculties": [
+   { "id": "govern-battle-victory", "name": "Grant victory and govern the law of battle", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "none", "notes": "Consistently glossed as Mars in OE texts", "sources": [ { "kind": "secondary", "reference": "R. North, Heathen Gods in Old English Literature (1997)" } ] },
+   { "id": "name-tir-rune", "name": "Lend his name to the victory-rune Tīr", "term": { "value": "Tīr", "script": "Old English", "rom": "Tir" }, "inheritability": "none", "notes": "ᛏ rune named in the Old English Rune Poem", "sources": [ { "kind": "primary", "reference": "Old English Rune Poem, stanza on Tīr (a tacen/star, ever on its course)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Weekday 'Tīwesdæg'; OE Rune Poem (Tīr); glosses Tīg = Mars" }, { "kind": "secondary", "reference": "R. North, Heathen Gods in Old English Literature (1997)" } ], "weight": "primary" } ],
+  "notes": "Anglo-Saxon war and sky god, cognate with Norse Týr and the rune Tīr; possibly a displaced former sky-father."
+ },
+ {
+  "id": "anglosaxon_frig",
+  "name": { "primary": "Frig", "alt": ["Frīg", "Frige"], "transliterations": { "old-english": "Frīg" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "love-fertility", "contextTag": "lifelong", "term": { "value": "Frīg", "script": "Old English", "rom": "Frig" }, "sources": [ { "kind": "primary", "reference": "Weekday 'Frīgedæg' (Friday), glossing dies Veneris" } ] },
+   { "sphereId": "marriage-household", "contextTag": "lifelong", "term": { "value": "", "script": "Old English", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Place-names Frobury, Froyle, Freefolk (Hampshire); Frēþ-/Frīg- elements" } ] }
+  ],
+  "faculties": [
+   { "id": "preside-over-marriage", "name": "Preside over love, marriage and women's fertility", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "none", "notes": "OE Frīg renders Latin Venus", "sources": [ { "kind": "secondary", "reference": "P. A. Shaw, Pagan Goddesses in the Early Germanic World (2011)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Weekday 'Frīgedæg' = dies Veneris" }, { "kind": "secondary", "reference": "P. A. Shaw, Pagan Goddesses in the Early Germanic World (2011)" } ], "weight": "primary" } ],
+  "notes": "Anglo-Saxon goddess of love and marriage, cognate with Norse Frigg; chief attestation is the weekday Friday."
+ },
+ {
+  "id": "anglosaxon_eostre",
+  "name": { "primary": "Eostre", "alt": ["Ēostre", "Ēastre"], "transliterations": { "old-english": "Ēostre" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "dawn-spring", "contextTag": "lifelong", "term": { "value": "Ēosturmōnaþ", "script": "Old English", "rom": "Eosturmonath" }, "sources": [ { "kind": "primary", "reference": "Bede, De temporum ratione 15 (the month Ēosturmōnaþ named for the goddess Ēostre)" } ] }
+  ],
+  "faculties": [
+   { "id": "receive-spring-feasts", "name": "Receive feasts at the spring festival of her month", "term": { "value": "Ēosturmōnaþ", "script": "Old English", "rom": "Eosturmonath" }, "inheritability": "none", "notes": "Bede: the pagans held feasts in her honour", "sources": [ { "kind": "primary", "reference": "Bede, De temporum ratione 15" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Bede, De temporum ratione 15 (c. 725)" }, { "kind": "secondary", "reference": "P. A. Shaw, Pagan Goddesses in the Early Germanic World (2011); reconstructed PGmc *Austrōn-" } ], "weight": "primary" } ],
+  "notes": "Anglo-Saxon dawn/spring goddess named only by Bede; her month Ēosturmōnaþ gave English 'Easter'. Name links to a Germanic dawn goddess (secondary reconstruction)."
+ },
+ {
+  "id": "anglosaxon_seaxneat",
+  "name": { "primary": "Seaxneat", "alt": ["Seaxnēat", "Saxnōt"], "transliterations": { "old-english": "Seaxnēat", "old-saxon": "Saxnōt" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "tribal-ancestry", "contextTag": "lifelong", "term": { "value": "Seaxnēat", "script": "Old English", "rom": "Seaxneat" }, "sources": [ { "kind": "primary", "reference": "East Saxon royal genealogy (BL Add. 23211), descent from Seaxnēat" } ] }
+  ],
+  "faculties": [
+   { "id": "father-east-saxons", "name": "Stand as divine ancestor of the East Saxon kings", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "patrilineal", "notes": "Heads the Essex royal pedigree", "sources": [ { "kind": "primary", "reference": "East Saxon royal genealogy (BL Add. 23211)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Old Saxon Baptismal Vow ('forsachistu... Thunaer ende Woden ende Saxnote'); East Saxon genealogy" }, { "kind": "secondary", "reference": "R. North, Heathen Gods in Old English Literature (1997)" } ], "weight": "primary" } ],
+  "notes": "Tribal god/ancestor of the Saxons (name 'sword-companion'); renounced beside Thunaer and Woden in the Old Saxon Baptismal Vow."
+ },
+ {
+  "id": "anglosaxon_wayland",
+  "name": { "primary": "Wayland the Smith", "alt": ["Wēland", "Wēlund", "Weyland"], "transliterations": { "old-english": "Wēland" } },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "heroic-age" },
+  "domains": [
+   { "sphereId": "smithcraft-metalwork", "contextTag": "lifelong", "term": { "value": "Wēlandes geweorc", "script": "Old English", "rom": "Welandes geweorc" }, "sources": [ { "kind": "primary", "reference": "Beowulf lines 450–455 (Wēlandes geweorc, the mail-shirt)" } ] }
+  ],
+  "faculties": [
+   { "id": "forge-peerless-arms", "name": "Forge peerless swords and mail-coats", "term": { "value": "Wēlandes geweorc", "script": "Old English", "rom": "Welandes geweorc" }, "inheritability": "none", "notes": "Beowulf's byrnie is 'Weland's work'", "sources": [ { "kind": "primary", "reference": "Beowulf 450–455; Waldere I (Mimming forged by Weland)" } ] },
+   { "id": "escape-on-wings", "name": "Take revenge on his captor and escape on forged wings", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "none", "notes": "Hamstrung, he slays the king's sons and flies away", "sources": [ { "kind": "primary", "reference": "Old English Deor 1–13; Franks Casket left panel (whalebone, Northumbria, c. 700)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "mimming-sword", "kind": "weapon", "name": "The sword Mimming", "term": { "value": "Mimming", "script": "Old English", "rom": "Mimming" }, "role": "maker", "notes": "Famed blade of Weland's making", "sources": [ { "kind": "primary", "reference": "Waldere I & II (Old English fragments)" } ] },
+   { "id": "franks-casket", "kind": "artifact", "name": "Franks Casket smith-scene", "term": { "value": "", "script": "Old English", "rom": "" }, "role": "subject", "notes": "Carved smithy with the headless king's son", "sources": [ { "kind": "primary", "reference": "Franks Casket, British Museum (whalebone, Northumbria, c. 700)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Old English Deor; Beowulf 450–455; Waldere; Franks Casket" }, { "kind": "secondary", "reference": "Megalithic tomb 'Wayland's Smithy', Oxfordshire (named by 10th c.)" } ], "weight": "primary" } ],
+  "notes": "Legendary master-smith of Germanic heroic legend (Old Norse Vǫlundr); maker of heroes' weapons, hamstrung and avenged, depicted on the Franks Casket."
+ },
+ {
+  "id": "anglosaxon_beowulf",
+  "name": { "primary": "Beowulf", "alt": ["Bēowulf"], "transliterations": { "old-english": "Bēowulf" } },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Anglo-Saxon",
+  "primaryTradition": "Anglo-Saxon",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": { "era": "heroic-age" },
+  "domains": [
+   { "sphereId": "heroism-kingship", "contextTag": "lifelong", "term": { "value": "Bēowulf", "script": "Old English", "rom": "Beowulf" }, "sources": [ { "kind": "primary", "reference": "Beowulf (Nowell Codex, BL Cotton Vitellius A. xv), 3182 lines" } ] }
+  ],
+  "faculties": [
+   { "id": "thirty-men-grip", "name": "Grip with the strength of thirty men", "term": { "value": "þrītiges manna mægencræft", "script": "Old English", "rom": "thritiges manna maegencraeft" }, "inheritability": "none", "notes": "Hand-strength of thirty thanes", "sources": [ { "kind": "primary", "reference": "Beowulf lines 379–381" } ] },
+   { "id": "slay-grendel-barehanded", "name": "Tear off Grendel's arm with his bare hands", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "none", "notes": "Wrenches the monster's arm at Heorot", "sources": [ { "kind": "primary", "reference": "Beowulf lines 740–836" } ] },
+   { "id": "slay-the-dragon", "name": "Slay the hoard-dragon at the cost of his life", "term": { "value": "", "script": "Old English", "rom": "" }, "inheritability": "none", "notes": "Mortally wounded killing the firedrake", "sources": [ { "kind": "primary", "reference": "Beowulf lines 2510–2820" } ] }
+  ],
+  "materialCulture": [
+   { "id": "naegling-sword", "kind": "weapon", "name": "The sword Nægling", "term": { "value": "Nægling", "script": "Old English", "rom": "Naegling" }, "role": "owner", "notes": "Beowulf's heirloom blade; shatters on the dragon", "sources": [ { "kind": "primary", "reference": "Beowulf lines 2680–2682" } ] },
+   { "id": "beowulf-barrow", "kind": "place", "name": "Beowulf's barrow (Bēowulfes biorh)", "term": { "value": "beorh", "script": "Old English", "rom": "beorh" }, "role": "subject", "notes": "Sea-cliff cremation mound raised by the Geats", "sources": [ { "kind": "primary", "reference": "Beowulf lines 3156–3182" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Beowulf, Nowell Codex (manuscript c. 975–1025)" }, { "kind": "secondary", "reference": "R. D. Fulk, R. Bjork & J. Niles, Klaeber's Beowulf, 4th ed. (2008)" } ], "weight": "primary" } ],
+  "notes": "Geatish hero of the Old English epic; slayer of Grendel, Grendel's mother and the dragon, later king of the Geats. A legendary mortal, not a god."
+ },
+ {
+  "id": "gaulish_lugus",
+  "name": { "primary": "Lugus", "alt": ["Lugos", "Lugoves"], "transliterations": { "gaulish": "Lugus" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "commerce-skill-eloquence", "contextTag": "lifelong", "term": { "value": "Lugus", "script": "Gaulish", "rom": "Lugus" }, "sources": [ { "kind": "primary", "reference": "Caesar, De Bello Gallico VI.17 (the Gauls' chief god, equated with Mercury, inventor of all arts)" } ] }
+  ],
+  "faculties": [
+   { "id": "master-all-arts", "name": "Master and patronise every craft and art", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "Caesar's Mercury = 'inventor of all arts'", "sources": [ { "kind": "primary", "reference": "Caesar, De Bello Gallico VI.17" } ] },
+   { "id": "manifest-as-three", "name": "Manifest as a divine plurality, the Lugoves", "term": { "value": "Lugoves", "script": "Gaulish", "rom": "Lugoves" }, "inheritability": "none", "notes": "Worshipped in the plural in Iberian dedications", "sources": [ { "kind": "primary", "reference": "Lugoves inscriptions, Uxama & Osma (Hispania); guild of shoemakers dedication" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lugoves dedications (Iberia); toponym Lugdunum; Caesar DBG VI.17 (Mercury)" }, { "kind": "secondary", "reference": "B. Maier, Dictionary of Celtic Religion and Culture (1997), s.v. Lugus" } ], "weight": "primary" } ],
+  "notes": "Pan-Celtic god of skill, commerce and eloquence underlying Caesar's 'Mercury'; cognate with Irish Lug and Welsh Lleu; namesake of Lugdunum (Lyon)."
+ },
+ {
+  "id": "gaulish_cernunnos",
+  "name": { "primary": "Cernunnos", "alt": ["Carnonos", "[C]ernunnos"], "transliterations": { "gaulish": "Cernunnos" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "beasts-fertility-wealth", "contextTag": "lifelong", "term": { "value": "Cernunnos", "script": "Gaulish", "rom": "Cernunnos" }, "sources": [ { "kind": "primary", "reference": "Pillar of the Boatmen, Paris (Nautae Parisiaci, early 1st c. AD), inscribed [C]ernunnos" } ] }
+  ],
+  "faculties": [
+   { "id": "command-wild-beasts", "name": "Command wild beasts and the ram-horned serpent", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "Iconographic master of animals", "sources": [ { "kind": "secondary", "reference": "P. M. Duval, Les dieux de la Gaule (1957) on the antlered-god type" } ] },
+   { "id": "bestow-torcs-coin", "name": "Pour out torcs and coin as wealth", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "On the Gundestrup cauldron he offers a torc", "sources": [ { "kind": "primary", "reference": "Gundestrup cauldron inner plate (Denmark, silver, c. 150–1 BC)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "cernunnos-torc", "kind": "regalia", "name": "Twin torcs on his antlers", "term": { "value": "", "script": "Gaulish", "rom": "" }, "role": "attribute", "notes": "Two torcs hung from the antlers on the Pillar", "sources": [ { "kind": "primary", "reference": "Pillar of the Boatmen, Paris (Musée de Cluny)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pillar of the Boatmen, Paris (inscribed [C]ernunnos)" }, { "kind": "secondary", "reference": "Theonym from Gaulish *karnon 'horn'; M. Aldhouse-Green, The Gods of the Celts (1986)" } ], "weight": "primary" } ],
+  "notes": "Antlered Gaulish god of beasts, fertility and wealth; name attested once on the Pillar of the Boatmen, the iconographic type far wider (Gundestrup, Val Camonica)."
+ },
+ {
+  "id": "gaulish_taranis",
+  "name": { "primary": "Taranis", "alt": ["Taranus", "Tanarus"], "transliterations": { "gaulish": "Taranis" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "Taranis", "script": "Gaulish", "rom": "Taranis" }, "sources": [ { "kind": "primary", "reference": "Lucan, Pharsalia I.444–446 (Taranis, with Esus and Teutates)" } ] }
+  ],
+  "faculties": [
+   { "id": "wield-thunder-wheel", "name": "Drive the solar thunder-wheel across the sky", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "Spoked-wheel god of Jupiter-with-wheel type", "sources": [ { "kind": "secondary", "reference": "M. Green, The Wheel as a Cult-Symbol in the Romano-Celtic World (1984)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "taranis-wheel", "kind": "regalia", "name": "Spoked solar wheel", "term": { "value": "", "script": "Gaulish", "rom": "" }, "role": "attribute", "notes": "Wheel held by the Gaulish Jupiter", "sources": [ { "kind": "secondary", "reference": "Jupiter-Taranis votive wheels; Le Châtelet bronze figure (Haute-Marne)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lucan, Pharsalia I.444–446; Berne Scholia on Lucan; Taranucnus/Taranis dedications" }, { "kind": "secondary", "reference": "Theonym from Gaulish *toran- 'thunder'; J. de Vries, Keltische Religion (1961)" } ], "weight": "primary" } ],
+  "notes": "Gaulish thunder god named by Lucan and in inscriptions; 'the Thunderer', identified with Jupiter, emblematised by the spoked wheel. Berne scholia report burnt human sacrifice (secondary)."
+ },
+ {
+  "id": "gaulish_esus",
+  "name": { "primary": "Esus", "alt": ["Aisus", "Esos"], "transliterations": { "gaulish": "Esus" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "woodcutting-sacrifice", "contextTag": "lifelong", "term": { "value": "Esus", "script": "Gaulish", "rom": "Esus" }, "sources": [ { "kind": "primary", "reference": "Pillar of the Boatmen, Paris (relief of Esus cutting a tree); Lucan, Pharsalia I.445" } ] }
+  ],
+  "faculties": [
+   { "id": "fell-the-sacred-tree", "name": "Fell the willow that frees the bull and cranes", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "Hews a branch beside Tarvos Trigaranus", "sources": [ { "kind": "primary", "reference": "Pillar of the Boatmen, Paris; Trier altar relief" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Pillar of the Boatmen (Esus + Tarvos Trigaranus panels); Lucan, Pharsalia I.445" }, { "kind": "secondary", "reference": "Theonym likely 'lord/master'; Berne Scholia on Lucan (victims hung in a tree)" } ], "weight": "primary" } ],
+  "notes": "Gaulish god ('Lord') shown as a woodcutter hewing a tree by the bull Tarvos Trigaranus; named with Taranis and Teutates as receiving human sacrifice."
+ },
+ {
+  "id": "gaulish_teutates",
+  "name": { "primary": "Teutates", "alt": ["Toutatis", "Toutates"], "transliterations": { "gaulish": "Toutatis" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "tribe-war-protection", "contextTag": "lifelong", "term": { "value": "Toutatis", "script": "Gaulish", "rom": "Toutatis" }, "sources": [ { "kind": "primary", "reference": "Lucan, Pharsalia I.444–446; 'TOT' rings inscribed Toutatis (Britain)" } ] }
+  ],
+  "faculties": [
+   { "id": "guard-the-tribe", "name": "Guard the tribe (touta) in war and oath", "term": { "value": "touta", "script": "Gaulish", "rom": "touta" }, "inheritability": "none", "notes": "Name = 'god of the people'", "sources": [ { "kind": "secondary", "reference": "Gaulish touta 'tribe, people'; X. Delamarre, Dictionnaire de la langue gauloise (2003)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "tot-rings", "kind": "artifact", "name": "Silver 'TOT' votive rings", "term": { "value": "TOT", "script": "Latin", "rom": "TOT" }, "role": "subject", "notes": "Roman-British rings abbreviating Toutatis", "sources": [ { "kind": "primary", "reference": "TOT-inscribed rings, eastern England (Hockwold, Lincolnshire finds)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lucan, Pharsalia I.444–446; Mars Toutatis dedications; TOT rings" }, { "kind": "secondary", "reference": "Berne Scholia on Lucan (victims drowned in a vat)" } ], "weight": "primary" } ],
+  "notes": "Gaulish tribal protector god ('god of the people'), named by Lucan and identified with Mars/Mercury; Berne scholia describe sacrifice by drowning (secondary)."
+ },
+ {
+  "id": "gaulish_epona",
+  "name": { "primary": "Epona", "alt": ["Eponina", "Epana"], "transliterations": { "gaulish": "Epona" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "horses-sovereignty", "contextTag": "lifelong", "term": { "value": "Epona", "script": "Gaulish", "rom": "Epona" }, "sources": [ { "kind": "primary", "reference": "Over 200 dedications (Gaul, Germania, Rome); Juvenal Sat. VIII.157" } ] }
+  ],
+  "faculties": [
+   { "id": "protect-horses-riders", "name": "Protect horses, mares, foals and their riders", "term": { "value": "epos", "script": "Gaulish", "rom": "epos" }, "inheritability": "none", "notes": "Name from Gaulish epos 'horse'", "sources": [ { "kind": "primary", "reference": "Epona reliefs showing the goddess astride or between horses" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "200+ Epona inscriptions; Roman feast 18 December; cavalry dedications on the Rhine" }, { "kind": "secondary", "reference": "Gaulish epos 'horse'; M. Euskirchen, Epona (1993)" } ], "weight": "primary" } ],
+  "notes": "Gaulish horse goddess of protection and sovereignty, adopted by the Roman cavalry; the only Celtic deity with an official feast day at Rome."
+ },
+ {
+  "id": "gaulish_belenos",
+  "name": { "primary": "Belenos", "alt": ["Belenus", "Belinus"], "transliterations": { "gaulish": "Belenos" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "sun-healing", "contextTag": "lifelong", "term": { "value": "Belenos", "script": "Gaulish", "rom": "Belenos" }, "sources": [ { "kind": "primary", "reference": "Tertullian, Apologeticum 24 (Belenus of the Noricans); ~51 inscriptions, esp. Aquileia" } ] }
+  ],
+  "faculties": [
+   { "id": "heal-at-springs", "name": "Heal the sick at his therapeutic springs", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "Equated with Apollo the healer", "sources": [ { "kind": "primary", "reference": "Ausonius, on the sanctuary and priest Phoebicius (Aquitania)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Tertullian, Apologeticum 24; Ausonius; Apollo Belenus inscriptions at Aquileia" }, { "kind": "secondary", "reference": "Name 'bright/shining' (root *bhel-); cf. Beltane; B. Maier, Dictionary of Celtic Religion (1997)" } ], "weight": "primary" } ],
+  "notes": "Gaulish solar healing god identified with Apollo; cult centred on Aquileia and noted by Tertullian and Ausonius; name 'the shining one'."
+ },
+ {
+  "id": "gaulish_sucellus",
+  "name": { "primary": "Sucellus", "alt": ["Sucellos", "Sucaelus"], "transliterations": { "gaulish": "Sucellos" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "prosperity-feasting", "contextTag": "lifelong", "term": { "value": "Sucellos", "script": "Gaulish", "rom": "Sucellos" }, "sources": [ { "kind": "primary", "reference": "Dedications to Sucellus (Gaul, Rhineland, Britain); mallet-and-olla statuettes" } ] }
+  ],
+  "faculties": [
+   { "id": "strike-with-mallet", "name": "Strike well with his long-handled mallet", "term": { "value": "Sucellos", "script": "Gaulish", "rom": "Sucellos" }, "inheritability": "none", "notes": "Name = 'the good striker'", "sources": [ { "kind": "secondary", "reference": "Gaulish su- 'good' + *cellos 'striker'; X. Delamarre (2003)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "sucellus-mallet", "kind": "tool", "name": "Long-handled mallet and olla", "term": { "value": "", "script": "Gaulish", "rom": "" }, "role": "attribute", "notes": "Carries a mallet and a pot/barrel", "sources": [ { "kind": "primary", "reference": "Sucellus bronzes and reliefs (e.g. Sarrebourg group)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Sucellus dedications and mallet-god statuary across Gaul and the Rhineland" }, { "kind": "secondary", "reference": "Name 'the good striker'; M. Aldhouse-Green, The Gods of the Celts (1986)" } ], "weight": "primary" } ],
+  "notes": "Gaulish god of prosperity, agriculture and feasting ('the good striker'), shown with a long mallet and barrel; consort of Nantosuelta."
+ },
+ {
+  "id": "gaulish_nantosuelta",
+  "name": { "primary": "Nantosuelta", "alt": ["Nantosvelta"], "transliterations": { "gaulish": "Nantosuelta" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Gaulish",
+  "primaryTradition": "Gaulish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "home-fertility-water", "contextTag": "lifelong", "term": { "value": "Nantosuelta", "script": "Gaulish", "rom": "Nantosuelta" }, "sources": [ { "kind": "primary", "reference": "Sarrebourg relief (paired with Sucellus); dedication Nantosueltae" } ] }
+  ],
+  "faculties": [
+   { "id": "tend-the-household", "name": "Tend the home, hearth and domestic plenty", "term": { "value": "", "script": "Gaulish", "rom": "" }, "inheritability": "none", "notes": "Holds a house-on-a-pole emblem", "sources": [ { "kind": "primary", "reference": "Sarrebourg relief, Musée de la Cour d'Or, Metz" } ] }
+  ],
+  "materialCulture": [
+   { "id": "nantosuelta-house", "kind": "regalia", "name": "House-shaped sceptre and raven", "term": { "value": "", "script": "Gaulish", "rom": "" }, "role": "attribute", "notes": "Dovecote/house on a pole, with a raven", "sources": [ { "kind": "primary", "reference": "Sarrebourg relief (Nantosuelta with house-emblem and raven)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Sarrebourg relief and Nantosueltae dedications (Gaul, Rhineland)" }, { "kind": "secondary", "reference": "Name perhaps 'winding/sunny stream' (nanto- 'valley/stream'); Delamarre (2003)" } ], "weight": "primary" } ],
+  "notes": "Gaulish goddess of home, fertility and water, consort of Sucellus; her emblem is a house-shaped sceptre and she is attended by a raven."
+ },
+ {
+  "id": "lithuanian_perkunas",
+  "name": { "primary": "Perkūnas", "alt": ["Perkunas", "Perkuns"], "transliterations": { "lithuanian": "Perkūnas" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "Perkūnas", "script": "Lithuanian", "rom": "Perkunas" }, "sources": [ { "kind": "primary", "reference": "Lithuanian dainos and folklore (oak, thunderbolt); accounts of the Romowe oak-and-fire cult" } ] }
+  ],
+  "faculties": [
+   { "id": "hurl-thunderbolt", "name": "Hurl the thunderbolt and strike devils with his axe", "term": { "value": "Perkūno akmuo", "script": "Lithuanian", "rom": "Perkuno akmuo" }, "inheritability": "none", "notes": "Throws an ever-returning axe at Velnias", "sources": [ { "kind": "secondary", "reference": "G. Beresnevičius, Lietuvių religija ir mitologija (2004)" } ] },
+   { "id": "punish-the-moon", "name": "Cleave the unfaithful Moon for courting Aušrinė", "term": { "value": "", "script": "Lithuanian", "rom": "" }, "inheritability": "none", "notes": "Strikes Mėnuo after his betrayal of Saulė", "sources": [ { "kind": "primary", "reference": "Lithuanian folk songs of the celestial wedding (Saulė–Mėnuo)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "perkunas-oak", "kind": "place", "name": "Sacred oak and eternal fire", "term": { "value": "ąžuolas", "script": "Lithuanian", "rom": "azuolas" }, "role": "subject", "notes": "Evergreen oak with perpetual fire at Romowe", "sources": [ { "kind": "secondary", "reference": "Simon Grunau, Preussische Chronik (16th c.), on the Romowe sanctuary" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lithuanian dainos; Malalas Chronicle interpolation (1261) listing Perkūnas" }, { "kind": "secondary", "reference": "Indo-European *Perk(w)unos; M. Gimbutas, The Balts (1963)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian/Baltic thunder god, second only to Dievas; god of storms, oak, fire, law and fertility, eternal foe of Velnias; cognate with Slavic Perun."
+ },
+ {
+  "id": "lithuanian_dievas",
+  "name": { "primary": "Dievas", "alt": ["Dievas senelis", "Dangaus Dievas"], "transliterations": { "lithuanian": "Dievas" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "sky-supreme", "contextTag": "lifelong", "term": { "value": "Dievas", "script": "Lithuanian", "rom": "Dievas" }, "sources": [ { "kind": "primary", "reference": "Lithuanian folklore ('Dievas senelis', the old sky-god who walks the earth)" } ] }
+  ],
+  "faculties": [
+   { "id": "order-the-cosmos", "name": "Order the bright sky and visit mortals as an old wanderer", "term": { "value": "Dievas senelis", "script": "Lithuanian", "rom": "Dievas senelis" }, "inheritability": "none", "notes": "'Old man God' testing human hospitality", "sources": [ { "kind": "secondary", "reference": "N. Vėlius, The World Outlook of the Ancient Balts (1989)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lithuanian folk narratives of Dievas senelis; 'sons of God' (Dievo sūneliai) songs" }, { "kind": "secondary", "reference": "Indo-European *Dyēus; cf. Latin deus; M. Gimbutas, The Balts (1963)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian supreme sky god, the bright heaven personified, descendant of the Indo-European *Dyēus; in folklore the benevolent 'old man God'."
+ },
+ {
+  "id": "lithuanian_saule",
+  "name": { "primary": "Saulė", "alt": ["Saule"], "transliterations": { "lithuanian": "Saulė" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Saulė", "script": "Lithuanian", "rom": "Saule" }, "sources": [ { "kind": "primary", "reference": "Lithuanian dainos of the sun's daily ride and celestial wedding" } ] }
+  ],
+  "faculties": [
+   { "id": "ride-sun-chariot", "name": "Ride the sky in a copper-wheeled chariot of tireless horses", "term": { "value": "", "script": "Lithuanian", "rom": "" }, "inheritability": "none", "notes": "Steeds neither tire, rest nor sweat", "sources": [ { "kind": "primary", "reference": "Lithuanian folk songs (the sun's daily course)" } ] },
+   { "id": "mother-sun-daughters", "name": "Mother the Daughters of the Sun (Saulės dukterys)", "term": { "value": "Saulės dukterys", "script": "Lithuanian", "rom": "Saules dukterys" }, "inheritability": "matrilineal", "notes": "Planetary daughters incl. Aušrinė (Venus)", "sources": [ { "kind": "secondary", "reference": "G. Beresnevičius, Lietuvių religija ir mitologija (2004)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lithuanian dainos; the Saulė–Mėnuo celestial-wedding cycle" }, { "kind": "secondary", "reference": "Indo-European solar goddess; M. Gimbutas, The Balts (1963)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian sun goddess who drives a copper-wheeled chariot; wife of the Moon and mother of the planetary Daughters of the Sun."
+ },
+ {
+  "id": "lithuanian_menulis",
+  "name": { "primary": "Mėnulis", "alt": ["Mėnuo", "Menulis"], "transliterations": { "lithuanian": "Mėnulis" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Mėnuo", "script": "Lithuanian", "rom": "Menuo" }, "sources": [ { "kind": "primary", "reference": "Lithuanian dainos of the celestial wedding (Mėnuo weds Saulė)" } ] }
+  ],
+  "faculties": [
+   { "id": "betray-the-sun", "name": "Betray the Sun by courting the morning star Aušrinė", "term": { "value": "", "script": "Lithuanian", "rom": "" }, "inheritability": "none", "notes": "His infidelity earns Perkūnas's blow", "sources": [ { "kind": "primary", "reference": "Lithuanian folk songs of the Saulė–Mėnuo divorce" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lithuanian dainos (celestial-wedding cycle)" }, { "kind": "secondary", "reference": "G. Beresnevičius, Lietuvių religija ir mitologija (2004)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian moon god, husband of Saulė; his adultery with Aušrinė splits the celestial marriage and brings Perkūnas's punishment, explaining the moon's phases."
+ },
+ {
+  "id": "lithuanian_zemyna",
+  "name": { "primary": "Žemyna", "alt": ["Zemyna", "Žemynėlė"], "transliterations": { "lithuanian": "Žemyna" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Žemyna", "script": "Lithuanian", "rom": "Zemyna" }, "sources": [ { "kind": "primary", "reference": "Lithuanian agrarian rites; M. Praetorius, Deliciae Prussicae (17th c.) on earth-offerings" } ] }
+  ],
+  "faculties": [
+   { "id": "quicken-all-growth", "name": "Quicken all growth from the fertile earth", "term": { "value": "žemė", "script": "Lithuanian", "rom": "zeme" }, "inheritability": "none", "notes": "Name from žemė 'earth'", "sources": [ { "kind": "secondary", "reference": "N. Vėlius, The World Outlook of the Ancient Balts (1989)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Recorded rites: bread buried before sowing, black piglet sacrifice, libations to the earth" }, { "kind": "secondary", "reference": "Lithuanian žemė 'earth'; M. Gimbutas, The Balts (1963)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian earth-mother goddess who nourishes all life; honoured with libations, buried bread and a black piglet at sowing and harvest."
+ },
+ {
+  "id": "lithuanian_velnias",
+  "name": { "primary": "Velnias", "alt": ["Velinas", "Vels"], "transliterations": { "lithuanian": "Velnias" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "underworld-dead", "contextTag": "lifelong", "term": { "value": "Velnias", "script": "Lithuanian", "rom": "Velnias" }, "sources": [ { "kind": "primary", "reference": "Lithuanian folklore (chthonic lord, foe of Perkūnas)" } ] }
+  ],
+  "faculties": [
+   { "id": "shepherd-the-dead", "name": "Shepherd the souls of the dead (vėlės)", "term": { "value": "vėlės", "script": "Lithuanian", "rom": "veles" }, "inheritability": "none", "notes": "Name linked to vėlė 'spirit of the dead'", "sources": [ { "kind": "secondary", "reference": "Lithuanian vėlė 'shade'; A. J. Greimas, Of Gods and Men (1992)" } ] },
+   { "id": "flee-the-thunderer", "name": "Flee Perkūnas across the sky after stealing fire", "term": { "value": "", "script": "Lithuanian", "rom": "" }, "inheritability": "none", "notes": "Hunted by the thunder god into water and stone", "sources": [ { "kind": "secondary", "reference": "G. Beresnevičius, Lietuvių religija ir mitologija (2004)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Lithuanian folk narratives of Velnias and the Perkūnas–Velnias chase" }, { "kind": "secondary", "reference": "A. J. Greimas, Of Gods and Men: Studies in Lithuanian Mythology (1992)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian chthonic god of the dead, cattle, magic and craft, the cunning adversary the thunder god pursues; later conflated with the Christian devil."
+ },
+ {
+  "id": "lithuanian_laima",
+  "name": { "primary": "Laima", "alt": ["Laimė", "Dalia"], "transliterations": { "lithuanian": "Laima" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "fate-fortune", "contextTag": "lifelong", "term": { "value": "Laima", "script": "Lithuanian", "rom": "Laima" }, "sources": [ { "kind": "primary", "reference": "Lithuanian and Latvian dainos of Laima at birth" } ] }
+  ],
+  "faculties": [
+   { "id": "decree-destiny", "name": "Decree each person's fate at the moment of birth", "term": { "value": "lemti", "script": "Lithuanian", "rom": "lemti" }, "inheritability": "none", "notes": "Name from lemti 'to ordain/destine'", "sources": [ { "kind": "secondary", "reference": "Lithuanian lemti 'to destine'; H. Biezais, Die Hauptgöttinnen der alten Letten (1955)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Baltic dainos invoking Laima/Laime as birth- and fate-giver" }, { "kind": "secondary", "reference": "H. Biezais, Die Hauptgöttinnen der alten Letten (1955)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian/Baltic goddess of fate and fortune who pronounces destiny at birth, often appearing in triadic form; closely paralleled by Latvian Laima."
+ },
+ {
+  "id": "lithuanian_gabija",
+  "name": { "primary": "Gabija", "alt": ["Gabieta", "Gabeta"], "transliterations": { "lithuanian": "Gabija" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Lithuanian",
+  "primaryTradition": "Lithuanian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "hearth-fire", "contextTag": "lifelong", "term": { "value": "Gabija", "script": "Lithuanian", "rom": "Gabija" }, "sources": [ { "kind": "primary", "reference": "Lithuanian hearth-prayers; J. Lasicki, De diis Samagitarum (1615)" } ] }
+  ],
+  "faculties": [
+   { "id": "guard-hearth-fire", "name": "Guard the banked hearth-fire of the household", "term": { "value": "gaubti", "script": "Lithuanian", "rom": "gaubti" }, "inheritability": "none", "notes": "Fire 'put to bed' with bread and water each night", "sources": [ { "kind": "secondary", "reference": "Name linked to gaubti 'to cover'; N. Vėlius (1989)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Jan Łasicki, De diis Samagitarum (1615), naming Gabie; recorded housewife's fire-prayer" }, { "kind": "secondary", "reference": "N. Vėlius, The World Outlook of the Ancient Balts (1989)" } ], "weight": "primary" } ],
+  "notes": "Lithuanian goddess and personification of the sacred hearth-fire, protector of the home; tended with daily offerings of bread, salt and water."
+ },
+ {
+  "id": "sami_horagalles",
+  "name": { "primary": "Horagalles", "alt": ["Hora Galles", "Tiermes", "Bajan-olmai"], "transliterations": { "northern-sami": "Horagálles" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sámi",
+  "primaryTradition": "Sámi",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "Horagálles", "script": "Northern Sámi", "rom": "Horagalles" }, "sources": [ { "kind": "secondary", "reference": "K. Leem, Beskrivelse over Finmarkens Lapper (1767); noaidi-drum figures" } ] }
+  ],
+  "faculties": [
+   { "id": "wield-thunder-hammers", "name": "Smash mountains and storms with twin hammers", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "inheritability": "none", "notes": "Wooden idol with a nail-driven head and hammers", "sources": [ { "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "horagalles-hammer", "kind": "weapon", "name": "Double thunder-hammer", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "role": "attribute", "notes": "One or two hammers on drum images", "sources": [ { "kind": "secondary", "reference": "Sámi noaidi drum iconography (Manker, Die lappische Zaubertrommel, 1938–50)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "K. Leem (1767); J. A. Friis, Lappisk Mythologi (1871); drum-figure surveys" }, { "kind": "secondary", "reference": "Name 'Thor-man' (Old Norse Þórr-karl), reflecting Norse contact" } ], "weight": "secondary" } ],
+  "notes": "Sámi thunder god ('Thor-man'), wielder of hammers who shatters mountains; known from ethnography and noaidi drum-figures. Attested only through secondary record."
+ },
+ {
+  "id": "sami_beaivi",
+  "name": { "primary": "Beaivi", "alt": ["Beiwe", "Bievve", "Biejje"], "transliterations": { "northern-sami": "Beaivi" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sámi",
+  "primaryTradition": "Sámi",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Beaivi", "script": "Northern Sámi", "rom": "Beaivi" }, "sources": [ { "kind": "secondary", "reference": "Sámi solstice rites; noaidi-drum sun-rhombus iconography" } ] }
+  ],
+  "faculties": [
+   { "id": "restore-light-sanity", "name": "Restore light, fertility and sanity after the polar night", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "inheritability": "none", "notes": "Honoured at midwinter with white-animal offerings", "sources": [ { "kind": "secondary", "reference": "U. Holmberg(-Harva), Lapps and the Sun-cult; Sámi midwinter ritual records" } ] }
+  ],
+  "materialCulture": [
+   { "id": "beaivi-rhombus", "kind": "artifact", "name": "Central sun-rhombus of the drum", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "role": "subject", "notes": "Sun shown as a rhombus at the drum's centre", "sources": [ { "kind": "secondary", "reference": "E. Manker, Die lappische Zaubertrommel (1938–50)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Sámi ethnography (Leem 1767; Holmberg-Harva); drum sun-symbol" }, { "kind": "secondary", "reference": "Northern Sámi beaivi 'sun, day'" } ], "weight": "secondary" } ],
+  "notes": "Sámi sun deity and mother of life, centre of the noaidi drum; received white-animal sacrifices at midwinter to bring back light and fertility. Secondary attestation."
+ },
+ {
+  "id": "sami_mano",
+  "name": { "primary": "Mano", "alt": ["Mánnu", "Aske", "Manna"], "transliterations": { "northern-sami": "Mánnu" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sámi",
+  "primaryTradition": "Sámi",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Mánnu", "script": "Northern Sámi", "rom": "Mannu" }, "sources": [ { "kind": "secondary", "reference": "Sámi noaidi-drum figures; J. A. Friis, Lappisk Mythologi (1871)" } ] }
+  ],
+  "faculties": [
+   { "id": "light-the-polar-night", "name": "Light the long polar night", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "inheritability": "none", "notes": "Moon-god of the dark season", "sources": [ { "kind": "secondary", "reference": "Sámi drum iconography (lunar figure)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Sámi ethnography and drum-figure surveys (Manker 1938–50)" }, { "kind": "secondary", "reference": "Northern Sámi mánnu 'moon'" } ], "weight": "secondary" } ],
+  "notes": "Sámi moon god of the dark season, depicted on noaidi drums; known only through ethnographic and drum-iconographic record."
+ },
+ {
+  "id": "sami_radien_attje",
+  "name": { "primary": "Radien-attje", "alt": ["Rádienáhttje", "Veralden-olmai", "Waralden Olmai"], "transliterations": { "northern-sami": "Rádienáhttje" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sámi",
+  "primaryTradition": "Sámi",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "creation-supreme", "contextTag": "lifelong", "term": { "value": "Rádienáhttje", "script": "Northern Sámi", "rom": "Radienahttje" }, "sources": [ { "kind": "secondary", "reference": "Sámi ethnography (the high creator; Friis, Lappisk Mythologi, 1871)" } ] }
+  ],
+  "faculties": [
+   { "id": "uphold-world-pillar", "name": "Uphold the cosmos through the world-pillar", "term": { "value": "máilbmi", "script": "Northern Sámi", "rom": "mailbmi" }, "inheritability": "none", "notes": "Honoured by an autumn sacrificial world-pillar", "sources": [ { "kind": "secondary", "reference": "Records of the autumn world-pillar offering (Veralden-olmai)" } ] }
+  ],
+  "materialCulture": [
+   { "id": "world-pillar", "kind": "artifact", "name": "Sacrificial world-pillar", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "role": "subject", "notes": "Pole raised each autumn linking earth to sky", "sources": [ { "kind": "secondary", "reference": "Sámi ethnographic records of the world-pillar (Veralden Olmai)" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871); Sámi creator-deity records" }, { "kind": "secondary", "reference": "Title 'father-ruler' (rádie 'rule' + áhttje 'father')" } ], "weight": "secondary" } ],
+  "notes": "Sámi creator and high god, the remote ruler of the cosmos upheld via the world-pillar; regarded as passive and rarely petitioned. Secondary attestation."
+ },
+ {
+  "id": "sami_jabmeahkka",
+  "name": { "primary": "Jábmeáhkká", "alt": ["Jabme-akka", "Jamiakka"], "transliterations": { "northern-sami": "Jábmeáhkká" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sámi",
+  "primaryTradition": "Sámi",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "death-underworld", "contextTag": "lifelong", "term": { "value": "Jábmeáhkká", "script": "Northern Sámi", "rom": "Jabmeahkka" }, "sources": [ { "kind": "secondary", "reference": "Sámi ethnography (mistress of the realm of the dead; Friis 1871)" } ] }
+  ],
+  "faculties": [
+   { "id": "rule-realm-of-dead", "name": "Rule the subterranean realm of the dead (Jábmiidáibmu)", "term": { "value": "Jábmiidáibmu", "script": "Northern Sámi", "rom": "Jabmiidaibmu" }, "inheritability": "none", "notes": "Holds the souls beneath the earth", "sources": [ { "kind": "secondary", "reference": "Sámi records of the death-realm and its mistress" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871); Sámi death-goddess records" }, { "kind": "secondary", "reference": "Name 'death-crone' (jábmi 'dead' + áhkká 'old woman/goddess')" } ], "weight": "secondary" } ],
+  "notes": "Sámi goddess of death, mistress of the underworld realm where souls dwell; noaidi negotiated with her to recover the sick. Secondary attestation."
+ },
+ {
+  "id": "sami_leib_olmai",
+  "name": { "primary": "Leib-olmai", "alt": ["Laib-olmai", "Leaibbeolmmái"], "transliterations": { "northern-sami": "Leaibeolmmái" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sámi",
+  "primaryTradition": "Sámi",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "Leaibeolmmái", "script": "Northern Sámi", "rom": "Leaibeolmmai" }, "sources": [ { "kind": "secondary", "reference": "Sámi hunting-cult records; bear-feast ethnography" } ] }
+  ],
+  "faculties": [
+   { "id": "grant-hunting-luck", "name": "Grant luck in the hunt and govern the bear", "term": { "value": "", "script": "Northern Sámi", "rom": "" }, "inheritability": "none", "notes": "Forest beasts are his herds; petitioned daily", "sources": [ { "kind": "secondary", "reference": "Records of morning and evening offerings to the forest-master" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Sámi ethnography of the hunt and the bear-cult (Friis 1871; bear-feast accounts)" }, { "kind": "secondary", "reference": "Name 'alder-man' (leaibi 'alder'), alder-bark used in bear ritual" } ], "weight": "secondary" } ],
+  "notes": "Sámi forest- and hunting-god ('alder-man'), master of wild game and especially the bear; hunters made daily offerings for his favour. Secondary attestation."
+ },
+ {
+  "id": "basque_mari",
+  "name": { "primary": "Mari", "alt": ["Anbotoko Mari", "Murumendiko Dama", "Maddi"], "transliterations": { "basque": "Mari" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "earth-nature-justice", "contextTag": "lifelong", "term": { "value": "Mari", "script": "Euskara", "rom": "Mari" }, "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Diccionario de mitología vasca; field accounts of Anboto" } ] }
+  ],
+  "faculties": [
+   { "id": "brew-the-weather", "name": "Brew storms or fair weather from her mountain caves", "term": { "value": "", "script": "Euskara", "rom": "" }, "inheritability": "none", "notes": "Clouds on Anboto mean she is home", "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Mitología vasca (1960)" } ] },
+   { "id": "punish-the-false", "name": "Punish lying, theft, pride and broken word", "term": { "value": "", "script": "Euskara", "rom": "" }, "inheritability": "none", "notes": "Chthonic enforcer of truth and reciprocity", "sources": [ { "kind": "secondary", "reference": "W. Douglass / J. M. Barandiarán, collected Mari legends" } ] }
+  ],
+  "materialCulture": [
+   { "id": "mari-golden-comb", "kind": "artifact", "name": "Golden comb", "term": { "value": "urrezko orrazia", "script": "Euskara", "rom": "urrezko orrazia" }, "role": "owner", "notes": "Combs her hair with gold in her cave", "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, field accounts of Mari" } ] }
+  ],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca; Anboto and Aralar legends" }, { "kind": "secondary", "reference": "J. Caro Baroja, Los vascos (1949)" } ], "weight": "secondary" } ],
+  "notes": "Chief goddess of Basque mythology, the Lady of Anboto; chthonic mistress of weather, earth and justice. Documented in oral tradition collected by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_sugaar",
+  "name": { "primary": "Sugaar", "alt": ["Sugoi", "Maju", "Sugar"], "transliterations": { "basque": "Sugaar" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "storm-serpent", "contextTag": "lifelong", "term": { "value": "Sugaar", "script": "Euskara", "rom": "Sugaar" }, "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Mitología vasca (serpent consort of Mari)" } ] }
+  ],
+  "faculties": [
+   { "id": "cross-sky-as-serpent", "name": "Cross the sky as a fiery serpent to raise storms", "term": { "value": "suge", "script": "Euskara", "rom": "suge" }, "inheritability": "none", "notes": "Name from suge 'serpent'", "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, collected Sugaar legends (Ataun, Biscay)" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Sugaar/Maju" }, { "kind": "secondary", "reference": "Basque suge 'serpent' + ar 'male'" } ], "weight": "secondary" } ],
+  "notes": "Basque serpent/dragon god of storms, consort of Mari; their Friday meetings beget the weather. Known from oral tradition collected by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_ortzi",
+  "name": { "primary": "Ortzi", "alt": ["Urtzi", "Ortz", "Urcia"], "transliterations": { "basque": "Ortzi" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "sky-thunder", "contextTag": "lifelong", "term": { "value": "Ortzi", "script": "Euskara", "rom": "Ortzi" }, "sources": [ { "kind": "primary", "reference": "Aymeric Picaud, Codex Calixtinus / Liber Sancti Jacobi V (c. 1140): 'Deum uocant Urcia'" } ] }
+  ],
+  "faculties": [
+   { "id": "name-sky-phenomena", "name": "Lend his name to sky, thunder and the storm", "term": { "value": "ortzadar", "script": "Euskara", "rom": "ortzadar" }, "inheritability": "none", "notes": "Survives in ostegun 'Thursday', ortzadar 'rainbow'", "sources": [ { "kind": "secondary", "reference": "Basque weekday ostegun/ortzegun ('Ortzi-day'); ortzi 'sky/firmament'" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Aymeric Picaud, Codex Calixtinus, Book V (c. 1140)" }, { "kind": "secondary", "reference": "J. M. Barandiarán, Mitología vasca; lexical survivals (ostegun, ortzadar)" } ], "weight": "secondary" } ],
+  "notes": "Basque sky/thunder god whose name survives in weekday and weather words; sole explicit witness is Picaud's 12th-c. gloss 'they call God Urcia'. No narrative myths survive (flagged honestly)."
+ },
+ {
+  "id": "basque_ilargi",
+  "name": { "primary": "Ilargi", "alt": ["Ilazki", "Iretargi", "Argizagi"], "transliterations": { "basque": "Ilargi" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Ilargi", "script": "Euskara", "rom": "Ilargi" }, "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Mitología vasca (the moon as daughter of the Earth)" } ] }
+  ],
+  "faculties": [
+   { "id": "light-the-dead", "name": "Light the night and the realm of departed souls", "term": { "value": "ilen argia", "script": "Euskara", "rom": "ilen argia" }, "inheritability": "none", "notes": "Folk etymology 'light of the dead'", "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, collected lunar beliefs and salutations" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Ilargi/Ilazki" }, { "kind": "secondary", "reference": "Basque ilargi 'moon', daughter of Amalur (Mother Earth)" } ], "weight": "secondary" } ],
+  "notes": "Basque moon goddess, daughter of the Earth-mother Amalur; her light protects the dead. Documented in folk belief collected by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_eate",
+  "name": { "primary": "Eate", "alt": ["Egata", "Ereeta", "Orots"], "transliterations": { "basque": "Eate" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "storm-fire", "contextTag": "lifelong", "term": { "value": "Eate", "script": "Euskara", "rom": "Eate" }, "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Mitología vasca (genie of storm, fire and flood)" } ] }
+  ],
+  "faculties": [
+   { "id": "herald-disaster", "name": "Roar warning of coming storms, floods and fire", "term": { "value": "", "script": "Euskara", "rom": "" }, "inheritability": "none", "notes": "His loud voice precedes the calamity", "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, collected Eate accounts" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Eate" }, { "kind": "secondary", "reference": "Name perhaps from errete 'to burn'" } ], "weight": "secondary" } ],
+  "notes": "Basque genie of storms, fire, floods and hurricanes whose roaring voice warns of disaster. Documented in oral tradition collected by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_basajaun",
+  "name": { "primary": "Basajaun", "alt": ["Basojaun", "Basa-jaun"], "transliterations": { "basque": "Basajaun" } },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "domains": [
+   { "sphereId": "forest-flocks", "contextTag": "lifelong", "term": { "value": "Basajaun", "script": "Euskara", "rom": "Basajaun" }, "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Mitología vasca ('lord of the woods')" } ] }
+  ],
+  "faculties": [
+   { "id": "guard-flocks", "name": "Guard shepherds' flocks and warn them of storms", "term": { "value": "baso", "script": "Euskara", "rom": "baso" }, "inheritability": "none", "notes": "Name from baso 'wood' + jaun 'lord'", "sources": [ { "kind": "secondary", "reference": "J. M. Barandiarán, collected Basajaun legends" } ] },
+   { "id": "teach-agriculture-craft", "name": "Teach humans agriculture, milling and smithing", "term": { "value": "", "script": "Euskara", "rom": "" }, "inheritability": "none", "notes": "Secrets of sawing, wheat and the mill stolen from him", "sources": [ { "kind": "secondary", "reference": "Basque tales of San Martin Txiki tricking Basajaun" } ] }
+  ],
+  "materialCulture": [],
+  "sources": [ { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Basajaun" }, { "kind": "secondary", "reference": "J. Caro Baroja, on Basque wild-man tradition" } ], "weight": "secondary" } ],
+  "notes": "Basque 'lord of the woods', a benevolent giant guardian of forests and flocks and culture-bringer of agriculture and craft. Documented in folklore collected by Barandiarán (secondary)."
+ }
+]
+```
+
+I authored 35 new figures across the five requested European traditions (8 Anglo-Saxon, 9 Gaulish, 8 Lithuanian, 6 Sámi, 6 Basque), matching the registry's exact schema as used in `/home/user/PantheonRepository/app/data.js` (the live `NEW_FIGURES` / `seedPeople` source; the build merges them via `addNewFigures`).
+
+Key facts and decisions:
+- **Schema conformance**: Verified field shapes against existing canon entries (e.g. `norse_aegir`, `canaanite_aqhat`). Used `origin:"canon"`, English-leading names, native `term` + `rom` (or `""` where unrecorded — never invented or disclaimed in the term itself), per-claim `sources`, and `sphereId` kebab-slugs consistent with existing free-text vocabulary. IDs follow `anglosaxon_/gaulish_/lithuanian_/sami_/basque_<name>`.
+- **Faculties vs. domains kept distinct**: domains are spheres of influence; faculties are verb-phrase powers (e.g. Woden "Work healing charms and runic magic" vs. domain `magic-charms`; Beowulf "Tear off Grendel's arm with his bare hands").
+- **Hero tier**: Wayland as `scion` (legendary smith, parentless in OE tradition), Beowulf as `mortal` — both with `heroic-age` era, attested material culture (Mimming/Franks Casket; Nægling/burial barrow).
+- **Honest reconstruction flagging**: Sámi figures carry `weight:"secondary"` (no native written sources — drum iconography + ethnography like Friis 1871, Manker 1938-50, Leem 1767). Basque figures cite J.M. Barandiarán's collected mythology as secondary; Ortzi notes the single primary witness (Picaud's *Codex Calixtinus* gloss "Deum uocant Urcia") and that no narrative myths survive. Eostre flags the *Austrōn-* reconstruction as secondary while Bede is primary.
+- **Real citations throughout**: Bede *De temporum ratione*, OE royal genealogies, Nine Herbs Charm/*Lacnunga*, Old Saxon Baptismal Vow, *Deor*/*Beowulf*/*Waldere*/Franks Casket; Caesar *DBG* VI.17, Lucan *Pharsalia* I + Berne scholia, Pillar of the Boatmen, Gundestrup, Tertullian/Ausonius, Epona corpus; Baltic *dainos*, Łasicki *De diis Samagitarum*, Praetorius, Romowe accounts, Gimbutas/Greimas/Biezais; Basque scholarship (Barandiarán, Caro Baroja).
+
+The complete JSON array is the last block above. I did not modify `data.js` — let me know if you'd like me to insert these into the `NEW_FIGURES` array (line 35701) and run any build/lint checks.

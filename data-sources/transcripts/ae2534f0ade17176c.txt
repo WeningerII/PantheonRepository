@@ -1,0 +1,1480 @@
+24 figures, balanced (Koryak 5, Ket 5, Nenets 5, Selkup 5, Itelmen 4), all unique, no collisions. I verified no banned coinages appear in my faculty names (all are verb-phrases like "shake down feathers that become geese and ducks", "hunt down Hosedem and burn her in the Arctic"). Here is the complete, corrected registry with the added Itelmen Tylval.
+
+```json
+[
+  {
+    "id": "koryak_big_raven",
+    "name": {
+      "primary": "Big-Raven",
+      "alt": ["Quikinnaqu", "Kutkinnaku", "Kutkynnaku", "Big-Grandfather (Acicenaqu)", "Creator (Tenanto'mwan)"],
+      "transliterations": { "koryak": "Quikinnaqu", "rom": "Kutkinnaku" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times (creation epoch)" },
+    "domains": [
+      {
+        "sphereId": "creation-and-ordering-of-the-world",
+        "contextTag": "lifelong",
+        "term": { "value": "Тэнантомван", "script": "Cyrillic (approx.)", "rom": "Tenanto'mwan" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak (Jesup North Pacific Expedition VI). Memoirs AMNH — Big-Raven as creator and culture-hero." }
+        ]
+      },
+      {
+        "sphereId": "raven-trickster-and-transformation",
+        "contextTag": "lifelong",
+        "term": { "value": "Куйкыняку", "script": "Cyrillic", "rom": "Kuykynyaku" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Religion and Myths of the Koryak; Koryak Texts — Big-Raven, Miti and their children as the core narrative cycle." }
+        ]
+      },
+      {
+        "sphereId": "shamanic-power",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Czaplicka, M.A. (1914). Aboriginal Siberia, ch. XIII (citing Jochelson) — Big-Raven makes a drum from a louse and becomes a shaman." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create-the-habitable-world",
+        "name": "make the earth fit for living beings",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique to Big-Raven; not transmitted",
+        "notes": "With his wife Miti and his children he creates the universe and renders the earth livable for people, animals, and other beings.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — creation by Big-Raven and family." }
+        ]
+      },
+      {
+        "id": "put-on-and-take-off-the-raven-shape",
+        "name": "put on and take off the raven shape",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared by his children (Ememqut, Yiniaaneut), who likewise transform",
+        "notes": "Quikinnaqu means 'big raven' (an augmentative of the word for raven); he shifts between raven and human form in the tales.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts — shape-changing of Big-Raven and his children." }
+        ]
+      },
+      {
+        "id": "make-a-drum-and-turn-shaman",
+        "name": "make a drum and turn shaman",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "demonstrative; mocked by neighbours in the tale",
+        "notes": "In one tale he makes himself a drum out of a small louse and becomes a shaman; Koryak shamans otherwise use the household drum.",
+        "sources": [
+          { "kind": "secondary", "reference": "Czaplicka, M.A. (1914). Aboriginal Siberia (after Jochelson) — Quikinnaqu's louse-drum." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "koryak_big_raven_drum",
+        "kind": "instrument",
+        "name": "shaman's drum",
+        "term": { "value": "яяр", "script": "Cyrillic", "rom": "yayar" },
+        "role": "the drum Big-Raven improvises from a louse to perform as a shaman; in life Koryak shamans use the family drum kept in the house",
+        "notes": "The flat single-headed drum (Koryak yayar) is the universal Koryak shamanic instrument; Big-Raven's louse-drum is the mythic prototype.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — Koryak drum (yayar); Czaplicka (1914) on Big-Raven's drum." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Big-Raven (Quikinnaqu / Kutkinnaku, also Acicenaqu 'Big-Grandfather' and Tenanto'mwan 'Creator') is the central Koryak creator and culture-hero, the protagonist of most Koryak tales together with his wife Miti and son Ememqut.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak. Jesup North Pacific Expedition, Vol. VI. Leiden/New York." },
+          { "kind": "tertiary", "reference": "Encyclopedia.com, 'Koriak' — names Quikinnaqu, Kutkinnaku, Acicenaqu, Tenantomwan." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "He is not an omnipotent god but an ambivalent creator-trickster, treated in the tales as both maker of the ordered world and as a comic, flawed figure.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Religion and Myths of the Koryak." },
+          { "kind": "secondary", "reference": "Dwyer, M.J. — Koryak Raven narratives (academia.edu), on the ambivalence of Big-Raven." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Culture-hero / creator-trickster tier. The Koryak raven-creator: native Quikinnaqu/Kutkynnaku ('Big Raven'), styled Acicenaqu ('Big-Grandfather') and Tenanto'mwan ('Creator'). Classed here as 'deity' (spirit-class creator) per schema; functionally a transformer/culture-hero. He is distinct from the more remote Supreme Being 'Universe' (see koryak_universe). Documented chiefly by Jochelson (Jesup Expedition) with parallels in Bogoras's Chukchee work."
+  },
+  {
+    "id": "koryak_miti",
+    "name": {
+      "primary": "Miti",
+      "alt": ["Mitiʼ", "Mity"],
+      "transliterations": { "koryak": "Miti", "rom": "Miti" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "household-and-the-first-family",
+        "contextTag": "lifelong",
+        "term": { "value": "Мити", "script": "Cyrillic", "rom": "Miti" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — Miti, wife of Big-Raven and mother of his children." }
+        ]
+      },
+      {
+        "sphereId": "trickery-and-cunning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts, no. 16 'Miti and Magpie-Man' — Miti's own trickster episodes." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spin-schemes-and-deceptions",
+        "name": "spin schemes and deceptions",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared trait of the raven family",
+        "notes": "Miti is herself a trickster figure in tales such as 'Miti and Magpie-Man', matching her husband's cunning.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts no. 16." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Miti is the wife of Big-Raven (Quikinnaqu) and mother of his children; she is co-protagonist of the Koryak Raven cycle and appears as a trickster in her own right.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — Big-Raven, his wife Miti and their children." },
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts, no. 16 'Miti and Magpie-Man'." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class consort of the raven-creator; classed 'deity'. The same figure recurs in Itelmen tradition as Kutkh's wife Mitiʼ/Miti (the 'wise wife' from whom, in one modern telling, the salmon-people are descended)."
+  },
+  {
+    "id": "koryak_ememqut",
+    "name": {
+      "primary": "Ememqut",
+      "alt": ["Emeʼmqut", "Ememkut"],
+      "transliterations": { "koryak": "Emeʼmqut", "rom": "Ememqut" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["koryak_big_raven", "koryak_miti"],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "raven-trickster-and-transformation",
+        "contextTag": "lifelong",
+        "term": { "value": "Эмэмкут", "script": "Cyrillic", "rom": "Ememkut" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — Ememqut, eldest son of Big-Raven, the best-known of the children." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "put-on-and-take-off-the-raven-shape",
+        "name": "put on and take off the raven shape",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "inherited from Big-Raven",
+        "notes": "Like his father he changes shape; his adventures (e.g. 'Ememqut and Ila', 'How Ememqut became a Cannibal') drive much of the cycle.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts nos. 8–9." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ememqut is the eldest and best-known son of Big-Raven and Miti, central to many Koryak tales.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — 'the eldest, their son Ememqut, is the best known'." },
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts nos. 8–9 (Ememqut tales)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Son of the raven-creator; classed 'demigod' as offspring of a creator-deity in the first-family cycle. The identical name (Ememkut) recurs as a son of Kutkh in Itelmen tradition, showing the shared Kamchatkan Raven mythology."
+  },
+  {
+    "id": "koryak_yiniaaneut",
+    "name": {
+      "primary": "Yiniaaneut",
+      "alt": ["Yineaʼneut", "Yiniaʼ-ñaut"],
+      "transliterations": { "koryak": "Yineaʼneut", "rom": "Yiniaaneut" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["koryak_big_raven", "koryak_miti"],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "raven-trickster-and-transformation",
+        "contextTag": "lifelong",
+        "term": { "value": "Йиниаʼнеут", "script": "Cyrillic (approx.)", "rom": "Yiniaaneut" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — Yiniaaneut, daughter of Big-Raven." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "trick-the-raven-that-swallowed-the-sun",
+        "name": "trick the raven that swallowed the sun",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "personal feat",
+        "notes": "Big-Raven's daughter uses deception to make the sun-swallowing raven disgorge the sun, then sets it back in the sky to restore daylight.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — Big-Raven's daughter restores the sun." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Yiniaaneut, a daughter of Big-Raven, recovers the swallowed sun by trickery and re-establishes daylight; she is a recurrent heroine of the Koryak Raven cycle.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — sun-restoration by Big-Raven's daughter." },
+          { "kind": "ethnography", "reference": "Jochelson, W. (1905). Koryak Texts, no. 17 'How Big-Raven's Daughter was swallowed by a Kamak'." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Daughter of the raven-creator; classed 'demigod'. The sun-recovery episode is one of the best-known Koryak light-origin myths recorded by Jochelson."
+  },
+  {
+    "id": "koryak_universe",
+    "name": {
+      "primary": "Universe",
+      "alt": ["The-One-on-High", "Supreme Being", "Master-on-High"],
+      "transliterations": { "koryak": "Naininen", "rom": "Naininen" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Koryak",
+    "primaryTradition": "Koryak",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "sky-and-cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "Наинынэн", "script": "Cyrillic", "rom": "Naininen" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — the Supreme Being 'Universe' (Naininen / 'The-One-on-High'), remote master of the world." }
+        ]
+      },
+      {
+        "sphereId": "rain-and-weather",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Czaplicka, M.A. (1914). Aboriginal Siberia (after Jochelson) — 'Universe sends rain upon the earth from the body of his wife'." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-down-rain-and-weather",
+        "name": "send down rain and weather",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the Supreme Being",
+        "notes": "Rain is described as falling from the body of Universe's wife; weather is in his gift.",
+        "sources": [
+          { "kind": "secondary", "reference": "Czaplicka (1914), after Jochelson — Universe and rain." }
+        ]
+      },
+      {
+        "id": "send-big-raven-to-order-human-affairs",
+        "name": "send Big-Raven to order human affairs",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a",
+        "notes": "The Supreme Being is too remote to act directly and dispatches Big-Raven to set the world in order for people.",
+        "sources": [
+          { "kind": "secondary", "reference": "Czaplicka (1914), after Jochelson — 'the Supreme Being sends Big-Raven to order human affairs'." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Koryak Supreme Being, called 'Universe' or 'The-One-on-High' (Naininen), is a remote sky-deity who sends rain and dispatches Big-Raven to order human affairs; Jochelson found only one tale dealing directly with him.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Jochelson, W. (1908). The Koryak — the Supreme Being." },
+          { "kind": "secondary", "reference": "Czaplicka, M.A. (1914). Aboriginal Siberia, ch. XIII (summarising Jochelson)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The remote Koryak high-god, distinct from the active creator-trickster Big-Raven. Names recorded as Naininen ('Universe / Outer-world') and synonyms; rarely the subject of narrative. Included to keep the divine hierarchy distinct from the raven-creator."
+  },
+  {
+    "id": "itelmen_kutkh",
+    "name": {
+      "primary": "Raven (Kutkh)",
+      "alt": ["Kutq", "Kutkhu", "Kutka", "Kutga"],
+      "transliterations": { "itelmen": "Kutq", "rom": "Kutkh" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times (creation of Kamchatka)" },
+    "domains": [
+      {
+        "sphereId": "creation-of-the-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Кутх", "script": "Cyrillic", "rom": "Kutkh" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of the Land of Kamchatka — Kutkh as demiurge and creator of Kamchatka." }
+        ]
+      },
+      {
+        "sphereId": "raven-trickster-and-transformation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Steller, G.W. (1774). Beschreibung von dem Lande Kamtschatka — Kutkh as ridiculous, thieving, hungry trickster." }
+        ]
+      },
+      {
+        "sphereId": "ancestry-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "'Kutkh' (en.wikipedia, citing Krasheninnikov & Steller) — Kutkh as fertile ancestor of mankind, giver of light, fire, language, fresh water, net-weaving." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make-the-land-by-feather-and-droppings",
+        "name": "make the land by dropping a feather and by defecating",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique to Kutkh",
+        "notes": "In some versions Kamchatka forms where Kutkh drops a feather in flight; in others islands and continents come from his droppings and rivers and lakes from his urine.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of Kamchatka — creation of the land by Kutkh." }
+        ]
+      },
+      {
+        "id": "bring-light-fire-and-the-arts-of-living",
+        "name": "bring light, fire, fresh water and the arts of living",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a (one-time gifts to humankind)",
+        "notes": "Kutkh is credited with giving people light, fire, language, fresh water, and skills such as net-weaving.",
+        "sources": [
+          { "kind": "secondary", "reference": "Meletinsky, E.M., on the Paleo-Asiatic Raven; summarised in 'Kutkh' (en.wikipedia)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Itelmen (Kamchadal) mythology the Raven Kutkh is the demiurge who created Kamchatka and is the forefather of humankind, yet is paradoxically held in derision — no worship is offered him and he is mocked as foolish, thieving and lustful.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of the Land of Kamchatka (Описание земли Камчатки)." },
+          { "kind": "ethnography", "reference": "Steller, G.W. (1774). Beschreibung von dem Lande Kamtschatka — the Itelmens 'speak of him only in derision'." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Kutkh and his wife Miti, with their children, are the protagonists of the Itelmen tale-cycle; their children in order of seniority are sons Ememkut and Kotkhanamtalkhan and daughters Sinanevt, Anʼ-oraklnavt, Mrorot and Nyaa.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Itelmen folklore corpus (arctic-megapedia, 'Фольклор ительменов'), listing Kutkh, Miti and their children." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Culture-hero / creator-trickster tier; the Itelmen raven-creator, cognate with Koryak Big-Raven and Chukchi Raven. Classed 'deity'. Documented by the 18th-c. Kamchatka expeditions of Krasheninnikov and Steller, who both stress the Itelmens' irreverent, comic attitude toward their creator. Native name leads as 'Raven', with Kutkh in term."
+  },
+  {
+    "id": "itelmen_miti",
+    "name": {
+      "primary": "Miti",
+      "alt": ["Mitiʼ", "Mitti"],
+      "transliterations": { "itelmen": "Mitiʼ", "rom": "Miti" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "household-and-the-first-family",
+        "contextTag": "lifelong",
+        "term": { "value": "Мити", "script": "Cyrillic", "rom": "Miti" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of Kamchatka — Kutkh and his wife Miti." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Miti is the wife of Kutkh and, with him, ancestress of the people; in one modern Itelmen telling the salmon-people are 'born from Mitti, the wise wife of Kutkh'.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of Kamchatka." },
+          { "kind": "tertiary", "reference": "Cultural Survival Quarterly, 'Our Itelmen Language Cannot Be Separated From Our Land' — salmon-people 'born from Mitti, a wise wife of Kutkh'." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Itelmen consort of the raven-creator, cognate with Koryak Miti; classed 'deity'. Included to anchor the shared Kamchatkan first-family across the Koryak and Itelmen entries."
+  },
+  {
+    "id": "itelmen_sinanevt",
+    "name": {
+      "primary": "Sinanevt",
+      "alt": ["Sineneut", "Sinanewt"],
+      "transliterations": { "itelmen": "Sinanevt", "rom": "Sinanevt" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["itelmen_kutkh", "itelmen_miti"],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "household-and-the-first-family",
+        "contextTag": "lifelong",
+        "term": { "value": "Синаневт", "script": "Cyrillic", "rom": "Sinanevt" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Itelmen folklore corpus (arctic-megapedia) — Sinanevt, eldest daughter of Kutkh and Miti." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sinanevt is the senior daughter of Kutkh and Miti and a recurring heroine of Itelmen tales.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Itelmen folklore corpus (arctic-megapedia, 'Фольклор ительменов'), children of Kutkh in order of seniority." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Daughter of the Itelmen raven-creator; classed 'demigod'. One of the most frequent protagonists of recorded Itelmen folktales."
+  },
+  {
+    "id": "itelmen_tylval",
+    "name": {
+      "primary": "Tylval",
+      "alt": ["Tylwal", "Tylvala"],
+      "transliterations": { "itelmen": "Tylval", "rom": "Tylval" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Itelmen",
+    "primaryTradition": "Itelmen",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic / legendary past" },
+    "domains": [
+      {
+        "sphereId": "strength-and-invincible-defence",
+        "contextTag": "lifelong",
+        "term": { "value": "Тылвал", "script": "Cyrillic", "rom": "Tylval" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of Kamchatka — Tylval, the invincible Kamchadal strongman of the upper Tigil." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "overcome-every-attacker",
+        "name": "overcome every man who attacks him",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "personal heroic strength",
+        "notes": "Tylval never attacked others but invariably defeated everyone who attacked him; 'Tylvala Hill' on the upper Tigil (Okhotsk-coast Kamchatka) is named for him.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of Kamchatka — Tylval and Tylvala Hill." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tylval (Tylwal) is a legendary Itelmen strongman-hero of the upper Tigil River who, though never an aggressor, defeated all who attacked him; a hill on the upper Tigil bears his name.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Krasheninnikov, S.P. (1755). Description of the Land of Kamchatka." },
+          { "kind": "ethnography", "reference": "Itelmen folklore corpus (arctic-megapedia, 'Фольклор ительменов') — Tylval / Tylvala Hill." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A mortal-born legendary champion (not of the raven-creator's line); classed 'demigod' for his superhuman, invincible strength in legend. Distinct from the Kutkh cycle — an Itelmen hero-tale figure recorded by Krasheninnikov. Native Tylval leads; no separate English gloss is attested for the name."
+  },
+  {
+    "id": "ket_es",
+    "name": {
+      "primary": "Sky-God",
+      "alt": ["Eś", "Es", "Esj", "Yes"],
+      "transliterations": { "ket": "Eś", "rom": "Es" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "sky-and-celestial-phenomena",
+        "contextTag": "lifelong",
+        "term": { "value": "Есь", "script": "Cyrillic", "rom": "Es" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Eś ('sky', 'god'), through whom the Ket personify the sky, thunder, lightning, clouds and the northern lights." }
+        ]
+      },
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2009/2010). Ket Shamanism — celestial phenomena attributed to Eś." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl-the-unfaithful-wife-from-the-sky",
+        "name": "hurl the unfaithful Hosedem from the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a",
+        "notes": "In one version Hosedem was Es's wife who betrayed him with (or fled to) the Moon, for which Es cast her down to the earth.",
+        "sources": [
+          { "kind": "tertiary", "reference": "Ket mythology overview (en.wikipedia, citing Anuchin/Alekseenko) — Es throws Hosedem down from heaven." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Eś (Ket for 'sky' and 'god') is the supreme sky-deity of the Ket, the personification of the sky and of thunder, lightning, clouds and the aurora.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. Univ. of Alaska / ANLC." },
+          { "kind": "ethnography", "reference": "Anuchin, V.I. (1914). Essay on the Shamanism of the Yenisei Ostiaks (Очерк шаманства у енисейских остяков)." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "In one tradition Hosedem was Es's wife who was unfaithful (going to the Moon) and was thrown down to earth, becoming the malevolent mistress of the cold north.",
+        "citations": [
+          { "kind": "tertiary", "reference": "Ket mythology summary (en.wikipedia), after Anuchin & Alekseenko." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "The Ket high-god; classed 'deity'. Yeniseian Eś (= Ket eś 'sky'); recorded by Anuchin (sent by the Imperial Academy of Sciences) and analysed by Alekseenko and Vajda. English 'Sky-God' leads, native Eś in term."
+  },
+  {
+    "id": "ket_hosedem",
+    "name": {
+      "primary": "Mistress of the North (Hosedem)",
+      "alt": ["Khosedem", "Hosedam", "Hosjadam", "Khosedam"],
+      "transliterations": { "ket": "Xōsedam", "rom": "Hosedem" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "Хоседэм", "script": "Cyrillic", "rom": "Khosedem" },
+        "sources": [
+          { "kind": "tertiary", "reference": "Ket mythology overview (en.wikipedia, after Anuchin/Alekseenko) — Hosedem as personification of evil and mistress of the underworld who devours souls." }
+        ]
+      },
+      {
+        "sphereId": "cold-north-and-winter",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Khosedem associated with the north and winter, opposite warm-south Tomam." }
+        ]
+      },
+      {
+        "sphereId": "disease-and-misfortune",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "Ket mythology overview (en.wikipedia) — Hosedem sends bad weather, pestilence, death and illness." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "swallow-the-souls-of-the-dead",
+        "name": "swallow the souls of the dead",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a",
+        "notes": "She sends sickness and death and devours the souls of those she kills.",
+        "sources": [
+          { "kind": "tertiary", "reference": "Ket mythology overview (en.wikipedia), after Anuchin/Alekseenko." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Hosedem (Khosedam / Hosedam) is the Ket personification of evil and mistress of the cold northern underworld; she sends bad weather, pestilence, illness and death and devours human souls.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Anuchin, V.I. (1914). Essay on the Shamanism of the Yenisei Ostiaks." },
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Khosedem and the north." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Ket evil female underworld being; classed 'deity' (malevolent spirit-class). Antithesis of warm-south Tomam and quarry of the hero Alba. English descriptor leads, native Khosedem in term. Documented by Anuchin and Alekseenko; landscape associations by Vajda."
+  },
+  {
+    "id": "ket_tomam",
+    "name": {
+      "primary": "Mother of Heat (Tomam)",
+      "alt": ["Tomam", "Toməm", "Mother of the South"],
+      "transliterations": { "ket": "Tomam", "rom": "Tomam" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "warmth-sun-and-the-south",
+        "contextTag": "lifelong",
+        "term": { "value": "Томэм", "script": "Cyrillic", "rom": "Tomam" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Tomam, 'mother of heat', goddess of the warm south and the sun." }
+        ]
+      },
+      {
+        "sphereId": "migratory-birds-and-their-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes — the down from Tomam's cape becomes the migratory geese and ducks." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shake-down-feathers-that-become-waterfowl",
+        "name": "shake down feathers that become geese and ducks",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a",
+        "notes": "Each spring she stands atop her southern mountains and shakes her feathery cape; the fuzz that falls from her sleeves and cape becomes the migratory waterfowl.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ket_tomam_feather_cape",
+        "kind": "garment",
+        "name": "feathered cape",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the down she shakes from her cape and sleeves each spring turns into the migrating geese and ducks",
+        "notes": "Attested as a feather/down cape in the bird-origin myth recorded by Vajda; native Ket term not given in the source.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Tomam's feathery cape." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tomam ('mother of heat') is the benevolent Ket goddess of the warm south and the sun; she dwells on mountains south of Ket country and each spring releases the migratory geese and ducks as down shaken from her feathered cape.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. ANLC." },
+          { "kind": "ethnography", "reference": "Alekseenko, E.A. (1976). Ket cosmology materials; cf. Ivanov & Toporov on Yeniseian myth." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The warm-south bird-mother; classed 'deity'. Polar opposite of cold-north Hosedem in Ket cosmic geography. English 'Mother of Heat' leads, native Tomam in term."
+  },
+  {
+    "id": "ket_alba",
+    "name": {
+      "primary": "Alba",
+      "alt": ["Albe", "Alben"],
+      "transliterations": { "ket": "Alba", "rom": "Alba" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "heroic-pursuit-and-monster-slaying",
+        "contextTag": "lifelong",
+        "term": { "value": "Альба", "script": "Cyrillic", "rom": "Alba" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Alba, the culture-hero who pursues Hosedam northward." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hunt-down-and-burn-the-evil-mistress",
+        "name": "hunt down Hosedem and burn her in the Arctic",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "personal heroic feat",
+        "notes": "Alba relentlessly pursues Hosedem down the Yenisei past its mouth into the frozen Arctic seas, where he burns her up; his trail across the sky is identified with the Milky Way.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes — 'the relentless Alba pursued Hosedam past the mouth of the Yenisei... where he burned her up'; the Milky Way is the path left by Alba." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Alba (Albe) is the Ket culture-hero who pursues the evil Hosedem northward along the Yenisei into the Arctic and burns her; the Milky Way is identified as the trail he left across the sky in this chase.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. ANLC — the Alba/Hosedam pursuit and the Milky Way." },
+          { "kind": "ethnography", "reference": "Alekseenko, E.A.; Anuchin, V.I. (1914) — Yenisei-Ostiak hero traditions." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / monster-slayer tier; classed 'demigod'. The chief Ket hero, defined by his cosmic pursuit of the death-goddess Hosedem; note that a separate Ket tradition makes the Milky Way the trail of the first shaman Doh — both star-path traditions are recorded."
+  },
+  {
+    "id": "ket_doh",
+    "name": {
+      "primary": "First Shaman (Doh)",
+      "alt": ["Doʼh", "Dox", "Doχ"],
+      "transliterations": { "ket": "Doχ", "rom": "Doh" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ket",
+    "primaryTradition": "Ket",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "shamanic-power",
+        "contextTag": "lifelong",
+        "term": { "value": "Дох", "script": "Cyrillic", "rom": "Doh" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture — Doh, the legendary first shaman." }
+        ]
+      },
+      {
+        "sphereId": "flight-between-worlds",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes — name 'Doh' possibly from a morpheme meaning 'to fly'; the Milky Way is called Doh's trail." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fly-the-sky-road-of-the-first-shaman",
+        "name": "fly the sky-road of the first shaman",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "prototype for all later Ket shamans",
+        "notes": "Doh's name is linked to a root 'to fly'; in one Ket cosmology the Milky Way is 'Doh's trail', the path of the first shaman's flight.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Doh is the legendary first shaman of the Ket; his name probably derives from a morpheme 'to fly', and in one cosmological version the Milky Way is called Doh's trail.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vajda, E.J. (2011). Siberian Landscapes in Ket Traditional Culture. ANLC." },
+          { "kind": "secondary", "reference": "Vajda, E.J. (2009/2010). Ket Shamanism." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-shaman tier; classed 'demigod'. Yeniseian Doχ. Included as the Ket prototype of shamanic flight, parallel to the first-shaman figures of neighbouring Siberian traditions. English 'First Shaman' leads, native Doh in term."
+  },
+  {
+    "id": "nenets_num",
+    "name": {
+      "primary": "Sky (Num)",
+      "alt": ["Num", "Num-Nisya (Sky-Father)", "Numgynboy"],
+      "transliterations": { "nenets": "Num", "rom": "Num" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "sky-and-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Нум", "script": "Cyrillic", "rom": "Num" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden (Mémoires de la Société Finno-Ougrienne 53) — Num as supreme sky-god and creator." }
+        ]
+      },
+      {
+        "sphereId": "weather-and-natural-order",
+        "contextTag": "lifelong",
+        "term": { "value": "Нум-Нися", "script": "Cyrillic", "rom": "Num-Nisya" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru, 'The Nenets. Spiritual culture' — Num-Nisya (Sky-Father) and Ya-Nebya (Earth-Mother) rule natural phenomena." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make-and-govern-the-world",
+        "name": "make and govern the world from on high",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the supreme god",
+        "notes": "Num creates the world but remains remote from people during life and after death; the world is shaped in dualistic interplay with his son Nga.",
+        "sources": [
+          { "kind": "secondary", "reference": "Hoppál, M. / Encyclopedia.com 'Num' — Num the remote creator, father of Nga." }
+        ]
+      },
+      {
+        "id": "give-the-reindeer",
+        "name": "give the reindeer as a sacred gift",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a",
+        "notes": "The reindeer, central to Nenets life, is regarded as a gift from Num, able to carry both people and souls.",
+        "sources": [
+          { "kind": "tertiary", "reference": "Nenets religion overviews (yamalpeninsulatravel; mythlok) — reindeer as Num's gift." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Num is the supreme sky-god and creator of the world of the Nenets (and the wider Samoyed peoples), a remote 'Sky-Father' (Num-Nisya) who governs natural phenomena and to whom animals, food, clothing and money are sacrificed.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden. Helsinki: Société Finno-Ougrienne." },
+          { "kind": "ethnography", "reference": "Castrén, M.A. (1853 ff.). Samoyedic religion and travel notes." },
+          { "kind": "secondary", "reference": "Hultkrantz, A. / Encyclopedia.com, 'Num'." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Num is the father of Nga, the god of evil and death, and his antipode; in one myth Num and Nga together create the world, cooperating and competing — a dualistic cosmology.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden." },
+          { "kind": "tertiary", "reference": "Encyclopedia.com 'Num'; 'Samoyed Religion'." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "The Nenets/Samoyed supreme sky-god; classed 'deity'. Same name (Num/Nom/Nop) recurs among the Selkup (see selkup_nom). Foundational sources: Castrén (mid-19th c.) and Lehtisalo's 1924 Jurak-Samoyed mythology. English 'Sky' leads, native Num in term."
+  },
+  {
+    "id": "nenets_nga",
+    "name": {
+      "primary": "Death-God (Nga)",
+      "alt": ["Nga", "Na", "Ngomulik", "Ŋa"],
+      "transliterations": { "nenets": "Ŋa", "rom": "Nga" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["nenets_num"],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "Нга", "script": "Cyrillic", "rom": "Nga" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden — Nga as god of the underworld, sickness and death." }
+        ]
+      },
+      {
+        "sphereId": "disease-and-pestilence",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "Encyclopedia.com 'Num'; 'Nentsy' — Nga (Ngomulik/Na) lord of diseases and death." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deal-out-death-and-disease",
+        "name": "deal out death and disease",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the death-god",
+        "notes": "Nga rules the lower world and sends sickness and death; offerings are made to him to avert illness.",
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopedia.com 'Num' — Nga, god of evil and death." }
+        ]
+      },
+      {
+        "id": "shape-the-world-in-rivalry-with-num",
+        "name": "shape the world in rivalry with Num",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a",
+        "notes": "In the dualistic creation Nga collaborates and competes with his father Num in forming the world.",
+        "sources": [
+          { "kind": "tertiary", "reference": "Nga (god) overview (en.wikipedia) — dualistic creation by Num and Nga." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nga is the Nenets god of evil, death and the underworld, lord of diseases; he is the son and antipode of the sky-god Num and one of the two demiurges of a dualistic creation.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden." },
+          { "kind": "tertiary", "reference": "Encyclopedia.com, 'Num' and 'Nentsy'; Nga (god), en.wikipedia." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Nenets underworld/death-god; classed 'deity'. Son of Num; the pair embodies the Samoyed sky/underworld dualism documented by Lehtisalo. English 'Death-God' leads, native Nga in term."
+  },
+  {
+    "id": "nenets_ya_nebya",
+    "name": {
+      "primary": "Mother Earth (Ya-Nebya)",
+      "alt": ["Ya-Nebya", "Ya-Mynya", "Earth-Mother"],
+      "transliterations": { "nenets": "Yaʼ Nebya", "rom": "Ya-Nebya" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Я-небя", "script": "Cyrillic", "rom": "Ya-nebya" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'The Nenets. Spiritual culture' — Ya-Nebya (Earth-Mother), paired with Num-Nisya, ruling life on earth." }
+        ]
+      },
+      {
+        "sphereId": "childbirth-and-protection-of-women",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden — earth-mother aiding women; cf. Encyclopedia.com 'Num'." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "stand-by-women-giving-birth",
+        "name": "stand by women giving birth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the earth-mother",
+        "notes": "Ya-Nebya is a special friend of women, aiding them in childbirth.",
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopedia.com 'Num' — 'Ya-nebya (Mother Earth) was a special friend of women, aiding in childbirth'." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ya-Nebya ('Mother Earth') is a benevolent Nenets earth-goddess, consort/counterpart of the Sky-Father Num-Nisya; she rules life on earth and is the protector of women, helping in childbirth.",
+        "citations": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru, 'The Nenets. Spiritual culture' — Num-Nisya and Ya-Nebya." },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Num' — Ya-nebya and childbirth." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Nenets earth-mother; classed 'deity'. Forms the Sky-Father / Earth-Mother pair with Num. English 'Mother Earth' leads, native Ya-Nebya in term."
+  },
+  {
+    "id": "nenets_num_to",
+    "name": {
+      "primary": "God's Lake (Num-to)",
+      "alt": ["Num-To", "Numto"],
+      "transliterations": { "nenets": "Num toʼ", "rom": "Num-to" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["nenets_num"],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "sacred-waters-and-place",
+        "contextTag": "lifelong",
+        "term": { "value": "Нум-то", "script": "Cyrillic", "rom": "Num-to" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru / Nenets sacred places — Lake Num-to ('god's lake'), chief shrine of the Forest Nenets, with its 'Heart island' sacrifice site." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "be-cast-down-and-turn-into-the-holy-lake",
+        "name": "be cast to earth and turn into the holy lake",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a (aetiological transformation)",
+        "notes": "By legend the son of the sky-god Num (Nymgiboy) was sent (kicked) down to earth and was transformed into Lake Num-to.",
+        "sources": [
+          { "kind": "tertiary", "reference": "Nenets sacred-places literature (atlaskmns.ru; ResearchGate, 'Sacred Places in the Nenets Traditional Culture')." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Num-to ('God's Lake') is the chief shrine of the Forest Nenets; by legend it is the son of the sky-god Num (Nymgiboy), who was cast down to earth and transformed into the lake, one of whose islands ('Heart island') is a sacrifice site.",
+        "citations": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru, Nenets sacred places — Lake Num-to and Nymgiboy." },
+          { "kind": "secondary", "reference": "ResearchGate (2018), 'Sacred Places in the Nenets Traditional Culture'." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "A localized son-of-Num deity fused with a sacred lake (Numto, in the Khanty-Mansi/Yamal borderland); classed 'deity'. Included per the brief's 'Num-to'. English 'God's Lake' leads, native Num-to in term. The lake is shared as a shrine with neighbouring Forest peoples."
+  },
+  {
+    "id": "nenets_syadei",
+    "name": {
+      "primary": "Idol-Spirits (Syadei)",
+      "alt": ["Syadei", "Siadei", "Syadai", "Sjadej"],
+      "transliterations": { "nenets": "syadei (pl.)", "rom": "syadei" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nenets",
+    "primaryTradition": "Nenets",
+    "sex": "unspecified",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / perennial cult" },
+    "domains": [
+      {
+        "sphereId": "guardian-and-master-spirits-of-place",
+        "contextTag": "lifelong",
+        "term": { "value": "сядей", "script": "Cyrillic", "rom": "syadei" },
+        "sources": [
+          { "kind": "museum", "reference": "University of Cambridge Museums (MAGIC project), 'Syadei: sacred objects' — syadei as living guardian/master-spirits embodied in carved figures." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-people-reindeer-and-game",
+        "name": "guard people, reindeer and game",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a (class of spirits)",
+        "notes": "For the Nenets the syadei are alive — they see, feel, communicate and act, mediating between people and their land, reindeer, game and ancestors.",
+        "sources": [
+          { "kind": "museum", "reference": "University of Cambridge Museums, 'Syadei: sacred objects'." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nenets_syadei_idol",
+        "kind": "cult-image",
+        "name": "carved spirit-idol",
+        "term": { "value": "сядей", "script": "Cyrillic", "rom": "syadei" },
+        "role": "wood- or stone-carved master-spirit image set at sacred sites and kept in the chum (tent); receives sacrificial rites and clothing",
+        "notes": "Master-spirit images carved in stone or wood (siadei) mark sites of worship; the oldest surviving Nenets idols stand on Vaygach Island. Larger figures may be a tent-protector or a powerful ancestor; smaller ones represent gods.",
+        "sources": [
+          { "kind": "museum", "reference": "University of Cambridge Museums, 'Syadei: sacred objects'." },
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden — Samoyed idol cult; cf. Vaygach Island idols (archaeological reports)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Syadei are Nenets master- and guardian-spirits embodied in carved wooden or stone idols, regarded as living beings that see, feel and act; they are kept in the chum and at sacred sites and receive sacrificial ritual.",
+        "citations": [
+          { "kind": "museum", "reference": "University of Cambridge Museums, MAGIC project, 'Syadei: sacred objects'." },
+          { "kind": "ethnography", "reference": "Lehtisalo, T. (1924). Entwurf einer Mythologie der Jurak-Samojeden." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class (master/guardian spirits), authored as a collective per the brief's 'syadei idols'; classed 'deity' since the schema forbids new types — these are a class of tutelary spirits, not a single named god. The carved idol itself is recorded under materialCulture. English 'Idol-Spirits' leads, native syadei in term."
+  },
+  {
+    "id": "selkup_nom",
+    "name": {
+      "primary": "Sky (Nom)",
+      "alt": ["Nop", "Num", "Nomy"],
+      "transliterations": { "selkup": "Nom", "rom": "Nom" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Selkup",
+    "primaryTradition": "Selkup",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "sky-and-creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Ном", "script": "Cyrillic", "rom": "Nom" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4) — Nom/Nop, the heavenly creator and 'good beginning'." }
+        ]
+      },
+      {
+        "sphereId": "weather-and-sustenance",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture' — Nom personifies the sky, creates weather and provides food." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "personify-the-sky-and-give-weather-and-food",
+        "name": "personify the sky and provide weather and food",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the supreme god",
+        "notes": "Nom is abstract and inaccessible, not addressed in prayer; he created weather and provides food.",
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture'." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Among the Selkup, Nom (Nop, = Samoyed Num) is the supreme heavenly deity and creator, the abstract 'good beginning' who personifies the sky, makes the weather and gives food; he is remote and not addressed in prayer.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A., Kuznetsova, A.I., Kazakevich, O.A. et al. (2010). Selkup Mythology. Budapest: Akadémiai Kiadó (Encyclopaedia of Uralic Mythologies 4)." },
+          { "kind": "ethnography", "reference": "Prokofyeva, E.D. — Selkup religion (mid-20th c. ethnography)." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "In Selkup belief the Living Old Woman (Ilyntyl Kota) preceded Nom as supreme deity, and in a later tradition the hero Icha is the son of Nom.",
+        "citations": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture'." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "The Selkup sky-god, cognate with Nenets/Samoyed Num; classed 'deity'. English 'Sky' leads, native Nom in term. Documented in the Encyclopaedia of Uralic Mythologies (Tuchkova et al.) and earlier by Prokofyeva and Pelikh."
+  },
+  {
+    "id": "selkup_ilyntyl_kota",
+    "name": {
+      "primary": "Living Old Woman (Ilyntyl Kota)",
+      "alt": ["Ilyntyl Kota", "Ylynta Kota", "Living-Old-Woman"],
+      "transliterations": { "selkup": "Ilyntyl kota", "rom": "Ilyntyl Kota" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Selkup",
+    "primaryTradition": "Selkup",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / cosmic" },
+    "domains": [
+      {
+        "sphereId": "life-birth-and-fate",
+        "contextTag": "lifelong",
+        "term": { "value": "Илынтыль кота", "script": "Cyrillic", "rom": "Ilyntyl kota" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology — the Living Old Woman (Ilyntyl Kota), giver/keeper of life, foremost deity of the northern Selkup." }
+        ]
+      },
+      {
+        "sphereId": "ancestral-grandmother-of-the-hero",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture' — Ilyntyl Kota is grandmother to Icha." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give-and-keep-human-life",
+        "name": "give and keep human life",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the life-goddess",
+        "notes": "Her name means 'Living/Life Old Woman'; she presides over life and birth and, in northern Selkup tradition, ranked above Nom as supreme.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Living Old Woman, Ilyntyl Kota, is a Selkup life- and birth-goddess; among the northern Selkup she preceded Nom as supreme deity and is the grandmother who raises the orphan hero Icha.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4)." },
+          { "kind": "tertiary", "reference": "atlaskmns.ru, 'Selkups. Spiritual culture' — Ilyntyl Kota, grandmother of Icha." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Selkup life-mother / supreme old-woman deity; classed 'deity'. English 'Living Old Woman' leads, native Ilyntyl Kota in term. Bridges to the Icha cycle as the hero's grandmother."
+  },
+  {
+    "id": "selkup_icha",
+    "name": {
+      "primary": "Icha",
+      "alt": ["Itja", "Itte", "Iy", "Ichakychyka", "Ichekichika"],
+      "transliterations": { "selkup": "Ichakychyka", "rom": "Icha" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Selkup",
+    "primaryTradition": "Selkup",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["selkup_nom"],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "culture-hero-and-protector-of-the-people",
+        "contextTag": "lifelong",
+        "term": { "value": "Ича", "script": "Cyrillic", "rom": "Icha" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture' — Icha, kind protector of the Selkup, raised by his grandmother Ilyntyl Kota." }
+        ]
+      },
+      {
+        "sphereId": "trickery-and-cunning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology — the Icha/Itte tale-cycle; Itte's combat with the giant." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "outwit-the-cannibal-giant-and-underworld-lord",
+        "name": "outwit the cannibal giant and the underworld lord",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "personal heroic feat",
+        "notes": "As northern Icha he is the antipode of his cousin Kyzy, lord of the underworld; as southern Itte he is locked in combat with the man-eating giant Pyunegusse. He defends the Selkup and wins by cunning.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology — Icha vs Kyzy; Itte vs Pyunegusse." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Icha (Itja; southern Selkup Itte) is the Selkup trickster culture-hero — a kind, pure-blooded Selkup, protector of his people — orphaned and raised by his grandmother Ilyntyl Kota (in a later tradition, son of the sky-god Nom); he lives at the river-head or in the sky.",
+        "citations": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru, 'Selkups. Spiritual culture' — Icha and his name-variants." },
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4)." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Icha's antagonist is his cousin Kyzy, the evil lord of the underworld; among the southern Selkup the parallel hero Itte fights the cannibal giant Pyunegusse, the pair explaining the two intermarrying halves of Selkup society.",
+        "citations": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology — Icha/Kyzy and Itte/Pyunegusse cycles." },
+          { "kind": "ethnography", "reference": "Prokofyeva, E.D.; Pelikh, G.I. — Selkup folklore." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Culture-hero / trickster tier; classed 'demigod'. The chief Selkup hero; northern name Icha/Itja, southern Itte. English-leading 'Icha' is the conventional name; native variants in term. Documented by Prokofyeva and Pelikh and synthesised in the Encyclopaedia of Uralic Mythologies (Tuchkova et al.). Note: parented to Nom per the 'later version' the sources cite, since the brief foregrounds Icha; the alternative orphan/grandmother tradition (raised by Ilyntyl Kota) is flagged in the claims."
+  },
+  {
+    "id": "selkup_kyzy",
+    "name": {
+      "primary": "Underworld Lord (Kyzy)",
+      "alt": ["Kyzy", "Kyzy-loz", "Kysa"],
+      "transliterations": { "selkup": "Kyzy", "rom": "Kyzy" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Selkup",
+    "primaryTradition": "Selkup",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / first-times" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "Кызы", "script": "Cyrillic", "rom": "Kyzy" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture' — Kyzy, lord of the underworld, source of all the Selkups' troubles." }
+        ]
+      },
+      {
+        "sphereId": "disease-and-misfortune",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology — Kyzy and the lower world; the loz spirits subordinate to him." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-sickness-and-misfortune-from-below",
+        "name": "send sickness and misfortune from the lower world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "function of the underworld lord",
+        "notes": "Kyzy rules the lower world and is blamed for the people's troubles, sickness and misfortune; the loz spirits act in his sphere.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kyzy is the Selkup evil lord of the underworld and source of the people's misfortunes; he is the cousin and antipode of the hero Icha, fathered by a foreign warrior, and heads one of the two intermarrying halves of the people.",
+        "citations": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru, 'Selkups. Spiritual culture' — Kyzy, Icha's cousin and underworld ruler." },
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Selkup underworld lord; classed 'deity' (malevolent spirit-class). English 'Underworld Lord' leads, native Kyzy in term. He commands the loz (see selkup_loz)."
+  },
+  {
+    "id": "selkup_loz",
+    "name": {
+      "primary": "Spirits (Loz)",
+      "alt": ["Loz", "Lozy (pl.)", "Looz"],
+      "transliterations": { "selkup": "loz / lozy", "rom": "loz" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Selkup",
+    "primaryTradition": "Selkup",
+    "sex": "unspecified",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic / perennial" },
+    "domains": [
+      {
+        "sphereId": "spirits-of-the-three-worlds",
+        "contextTag": "lifelong",
+        "term": { "value": "лозы", "script": "Cyrillic", "rom": "lozy" },
+        "sources": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru 'Selkups. Spiritual culture' — all supernatural beings of the worlds beyond the earth are loz." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inhabit-and-act-from-the-other-worlds",
+        "name": "inhabit and act from the upper and lower worlds",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "n/a (class of spirits)",
+        "notes": "The loz are the supernatural beings of the vertical universe (upper sky, middle earth, lower underworld), linked by the world-tree; some help, others (under Kyzy) harm.",
+        "sources": [
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology — loz spirits and the three-world cosmos." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Loz (pl. lozy) is the Selkup term for the supernatural beings/spirits inhabiting the worlds beyond the human earth; the cosmos is a vertical stack of upper, middle and lower worlds joined by a sacred birch or larch.",
+        "citations": [
+          { "kind": "tertiary", "reference": "atlaskmns.ru, 'Selkups. Spiritual culture' — loz spirits and the three-tier universe." },
+          { "kind": "ethnography", "reference": "Tuchkova, N.A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class collective (the loz), authored per the brief; classed 'deity' as the schema bars new types — loz are a category of spirits, malevolent or benevolent, not one named god. English 'Spirits' leads, native loz in term."
+  }
+]
+```
+
+result: 24 figures authored across 5 absent Siberian/Arctic traditions (Koryak 5, Itelmen 4, Ket 5, Nenets 5, Selkup 5), foregrounding raven-creators Big-Raven/Kutkh and culture-heroes Itja/Alba, schema-valid with real per-claim scholarship and no ID collisions.
+
+Summary of what I delivered and how I verified it:
+
+- **Coverage / balance**: Koryak (Big-Raven Quikinnaqu, Miti, Ememqut, Yiniaaneut, the remote Supreme Being "Universe"/Naininen), Itelmen (Raven Kutkh, Miti, Sinanevt, the strongman-hero Tylval), Ket (sky-god Eś, death-goddess Hosedem, warm-south bird-mother Tomam, hero Alba, first-shaman Doh), Nenets (sky-creator Num, death-god Nga, Mother Earth Ya-Nebya, the lake-deity Num-to, the syadei idol-spirits), Selkup (sky-god Nom, Living Old Woman Ilyntyl Kota, hero Icha/Itja, underworld lord Kyzy, the loz spirits).
+- **Schema compliance verified programmatically**: all 24 ids are snake_case `<tradition>_<name>`, unique, and have zero collisions against `/home/user/PantheonRepository/data-sources/existing-ids.json` (script output: `collisions: []`). All `type` values are within {deity, demigod}; spirit-classes/culture-heroes are typed deity/demigod with the rationale stated in `notes`. materialCulture entries use `id`/`name` keys (the louse-drum, Tomam's feather cape, the syadei idol). Faculties are verb-phrases; I avoided all banned coinages (kinesis/mancy/pathy/portation/kinetic/telepath).
+- **Sourcing**: real per-claim citations — Jochelson (The Koryak; Koryak Texts), Bogoras/Czaplicka, Krasheninnikov (1755) and Steller (1774) for Kutkh, Lehtisalo (Entwurf einer Mythologie der Jurak-Samojeden, 1924) and Castrén for Nenets/Samoyed, Vajda (Siberian Landscapes in Ket Traditional Culture; Ket Shamanism), Anuchin (1914) and Alekseenko for Ket, Prokofyeva/Pelikh and the Encyclopaedia of Uralic Mythologies 4 (Tuchkova et al., 2010) for Selkup, plus the Cambridge Museums MAGIC catalogue for the syadei.
+
+Two judgment calls worth flagging: I added Itelmen Tylval (attested by Krasheninnikov) as a 24th figure to balance the thin Itelmen set and meet the ~24 target; and I parented Selkup Icha to Nom following the "later version" the sources record (the alternative orphan/Ilyntyl-Kota-grandmother tradition is preserved in his claims and notes). I did not modify any repo files. One environment note: WebFetch was blocked (HTTP 403) across all sites in this sandbox, so I sourced everything via WebSearch result snippets rather than full-page fetches.

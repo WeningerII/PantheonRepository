@@ -1,0 +1,1505 @@
+I now have the key scholarly anchor for Mende art/Sande: Sylvia Ardyn Boone, "Radiance from the Waters: Ideals of Feminine Beauty in Mende Art" (Yale, 1986). I have everything needed. Let me author the complete registry array.
+
+I'll construct ~26 figures with rigorous per-claim citations. Here is the final output.
+
+```json
+[
+  {
+    "id": "hausa_sarkin_aljan_suleimanu",
+    "name": {
+      "primary": "King of the Spirits Solomon",
+      "alt": ["Sarki Aljan", "Tsumburbura"],
+      "transliterations": { "hausa": "Sarkin Aljan Sulemanu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hausa",
+    "primaryTradition": "Hausa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "pre-Islamic and Islamic-era Hausaland; living oral/Bori tradition" },
+    "domains": [
+      {
+        "sphereId": "kingship-spirit-world",
+        "contextTag": "lifelong",
+        "term": { "value": "Sarkin Aljan", "script": "Latin (Hausa orthography)", "rom": "Sarkin Aljan" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance (Zaria/Ahmadu Bello Univ. Press; Bergin & Garvey, 1983), on Jangare and the rulership of Sarkin Aljan Suleimanu" }
+        ]
+      },
+      {
+        "sphereId": "djinn-iskoki",
+        "contextTag": "lifelong",
+        "term": { "value": "aljannu / iskoki", "script": "Latin (Hausa orthography)", "rom": "aljannu / iskoki" },
+        "sources": [
+          { "kind": "secondary", "reference": "Wikipedia, 'Hausa animism', summarizing Tremearne and Besmer on Sarki Aljin/Tsumburbura as head of the iskoki" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_jangare",
+        "name": "to rule the spirit-city of Jangare as king",
+        "term": { "value": "Jangare", "script": "Latin (Hausa orthography)", "rom": "Jangare" },
+        "inheritability": "office passes within the royal spirit lineage of Jangare",
+        "notes": "In Besmer's account the bori spirits form a 'republic of spirits' of twelve houses; Sarkin Aljan Suleimanu reigns over them with a royal court mirroring a Hausa emirate. Name 'Suleimanu' = Solomon, the Qur'anic master of the jinn.",
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), description of Jangare and the twelve houses" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sarkin Aljan Suleimanu ('Solomon, King of the Djinn') is the supreme ruler of Jangare, the invisible city of the bori/iskoki spirits, to whom all other spirits are subordinate; an older Kano tradition names the head spirit Tsumburbura.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance (1983)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Hausa animism' (Maguzanci/Bori), citing A.J.N. Tremearne, The Ban of the Bori (1914)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Spirit-class (aljan/iska) classed here as a deity, being the supreme being of the bori pantheon. 'Tsumburbura' is recorded as the head spirit venerated at Dalla Hill in Kano in the older Maguzawa tradition and is often equated with Sarki Aljin. Principal scholarship: Besmer (1983); Tremearne, The Ban of the Bori (1914)."
+  },
+  {
+    "id": "hausa_inna",
+    "name": {
+      "primary": "Mother",
+      "alt": ["Uwargona", "Bakar Doguwa", "the Black Tall Woman"],
+      "transliterations": { "hausa": "Inna" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hausa",
+    "primaryTradition": "Hausa",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "living Bori tradition; pre-Islamic roots" },
+    "domains": [
+      {
+        "sphereId": "motherhood-women",
+        "contextTag": "lifelong",
+        "term": { "value": "Inna", "script": "Latin (Hausa orthography)", "rom": "Inna" },
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983); 'Inna' literally 'mother' in Hausa, a queen of Jangare" }
+        ]
+      },
+      {
+        "sphereId": "illness-affliction",
+        "contextTag": "lifelong",
+        "term": { "value": "Doguwa", "script": "Latin (Hausa orthography)", "rom": "Doguwa" },
+        "sources": [
+          { "kind": "secondary", "reference": "A.J.N. Tremearne, The Ban of the Bori (1914), on the Doguwa/Dogon Kasa spirits as bringers of affliction" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "afflict_with_possession",
+        "name": "to seize a person with possession-sickness and trance",
+        "term": { "value": "bori", "script": "Latin (Hausa orthography)", "rom": "bori" },
+        "inheritability": "not inherited; a spirit affliction transferred to chosen mounts (devotees)",
+        "notes": "As Uwar Gona ('owner/mother of the farm') and as a Doguwa spirit she 'rides' her devotee; Hausa idiom calls the possessed the spirit's 'horse' (doki).",
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), on the mount/horse metaphor of bori possession" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Inna ('Mother'), also called Uwargona/Uwar Gona and identified with Bakar Doguwa ('the black, tall woman'), is a principal queen of Jangare and a senior female bori spirit, linked to the wild Doguwa spirits and to her adulterous attachment to Kuturu the Leper.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods (1983)" },
+          { "kind": "secondary", "reference": "A.J.N. Tremearne, The Ban of the Bori: Demons and Demon-Dancing in West and North Africa (1914)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class figure entered as a deity (senior female iska). 'Inna' is the everyday Hausa word for 'mother'; 'Uwargona' ~ 'mother/owner of the farm field'. The Doguwa are a wild, dangerous category of bori spirits. Sources: Besmer (1983); Tremearne (1914)."
+  },
+  {
+    "id": "hausa_kuturu",
+    "name": {
+      "primary": "the Leper",
+      "alt": ["Kuturu", "Mai Gizo"],
+      "transliterations": { "hausa": "Kuturu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hausa",
+    "primaryTradition": "Hausa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "living Bori tradition" },
+    "domains": [
+      {
+        "sphereId": "leprosy-disease",
+        "contextTag": "lifelong",
+        "term": { "value": "kuturta", "script": "Latin (Hausa orthography)", "rom": "kuturta" },
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), on Kuturu as head of the House of Lepers (kuturta = leprosy)" }
+        ]
+      },
+      {
+        "sphereId": "counsel-statecraft",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), on Kuturu as chief counsellor (senior adviser) to Sarkin Aljan Suleimanu" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inflict_leprosy",
+        "name": "to strike the body with leprosy and wasting sores",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "As head of the House of Lepers, Kuturu is the bori spirit who causes and can lift leprosy; in possession he is portrayed with maimed hands and a limping gait.",
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kuturu, 'the Leper', heads the fourth house of Jangare (the House of Lepers) and is the senior counsellor to Sarkin Aljan Suleimanu; in lore he is the lover of the king's wife Inna and a rival of Kure the Hyena for her affection.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods (1983)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class figure entered as a deity (senior iska). 'Kuturu' = 'leper'; his domain is leprosy, an affliction Bori spirits both cause and cure. Source: Besmer (1983)."
+  },
+  {
+    "id": "hausa_kure",
+    "name": {
+      "primary": "the Hyena",
+      "alt": ["Kure", "Mai Dawa's beast"],
+      "transliterations": { "hausa": "Kure" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hausa",
+    "primaryTradition": "Hausa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "living Bori tradition; pre-Islamic bush-spirit roots" },
+    "domains": [
+      {
+        "sphereId": "wild-bush-predation",
+        "contextTag": "lifelong",
+        "term": { "value": "kura", "script": "Latin (Hausa orthography)", "rom": "kura (hyena)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983); 'kura' = hyena in Hausa, the bush predator the spirit embodies" }
+        ]
+      },
+      {
+        "sphereId": "witchcraft-sorcery",
+        "contextTag": "lifelong",
+        "term": { "value": "maita", "script": "Latin (Hausa orthography)", "rom": "maita (witchcraft)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Wikipedia, 'Hausa animism', and Hausa folklore associating hyenas with witches and shape-shifting" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "prowl_as_hyena",
+        "name": "to range the night bush in the shape of a hyena",
+        "term": { "value": "kura", "script": "Latin (Hausa orthography)", "rom": "kura" },
+        "inheritability": "not inherited",
+        "notes": "Kure embodies the hyena, an animal feared in Hausa lore as the disguise of witches; his dance in possession is bestial and crouching.",
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kure is the hyena-spirit of the Bori pantheon, a wild bush iska associated with predation and (in folk belief) witchcraft; he competes with Kuturu the Leper for the affection of Inna.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods (1983)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Hausa animism', on bush (daji) spirits and hyena symbolism" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class figure entered as a deity (wild/bush iska). 'Kure'/'kura' = hyena. Hausa lore treats hyenas as witches in disguise, marking Kure's pre-Islamic bush-spirit pedigree. Sources: Besmer (1983); Tremearne (1914)."
+  },
+  {
+    "id": "hausa_dan_galadima",
+    "name": {
+      "primary": "the Prince",
+      "alt": ["Son of the Galadima", "Dan Galadima"],
+      "transliterations": { "hausa": "Ɗan Galadima" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hausa",
+    "primaryTradition": "Hausa",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "living Bori tradition" },
+    "domains": [
+      {
+        "sphereId": "gambling-fortune",
+        "contextTag": "lifelong",
+        "term": { "value": "caca", "script": "Latin (Hausa orthography)", "rom": "caca (gambling)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), on Dan Galadima the spendthrift gambler-prince" }
+        ]
+      },
+      {
+        "sphereId": "wealth-largesse",
+        "contextTag": "lifelong",
+        "term": { "value": "arziki", "script": "Latin (Hausa orthography)", "rom": "arziki (wealth/fortune)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983), on Dan Galadima as a generous but exacting giver of money" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bestow_then_recall_fortune",
+        "name": "to lavish sudden wealth and luck, then demand it back with interest",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "Patron of gamblers, spendthrifts and the 'yan daudu; his gifts of luck are loans that bind the receiver. Popular with women in bori performance.",
+        "sources": [
+          { "kind": "secondary", "reference": "Besmer, Horses, Musicians, and Gods (1983)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Dan Galadima ('son of the Galadima', i.e. the prince) is the handsome, free-living gambler-spirit of Jangare, fathered by Sarkin Aljan Biddarene but raised in the household of Sarkin Aljan Suleimanu; a generous yet exacting giver of fortune popular among women and the 'yan daudu in bori events.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fremont E. Besmer, Horses, Musicians, and Gods (1983)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class figure entered as a deity. 'Galadima' is a senior Hausa court title; 'Ɗan Galadima' = 'son of the Galadima', the playboy prince. Source: Besmer (1983)."
+  },
+  {
+    "id": "songhai_dongo",
+    "name": {
+      "primary": "Thunder",
+      "alt": ["Dongo"],
+      "transliterations": { "songhai": "Dongo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["songhai_harakoy_dikko"],
+    "temporal": { "era": "Songhay/Zarma oral tradition; living holey possession cult" },
+    "domains": [
+      {
+        "sphereId": "thunder-storm",
+        "contextTag": "lifelong",
+        "term": { "value": "Dongo", "script": "Latin (Songhay orthography)", "rom": "Dongo" },
+        "sources": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (Univ. of Chicago Press, 1989), on Dongo, deity of thunder, chief of the Tooru" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (PUF, 1960; 2nd ed. 1989)" }
+        ]
+      },
+      {
+        "sphereId": "justice-retribution",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Dongo striking liars and wrongdoers with lightning" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_lightning",
+        "name": "to hurl lightning and crack the sky with thunder",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited; manifested through possession of his devotees",
+        "notes": "Dongo descends into the bodies of dancers at possession ceremonies; he is propitiated against drought and to bring rain. His displeasure burns villages.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      },
+      {
+        "id": "mount_a_dancer",
+        "name": "to descend into and ride the body of a possession dancer",
+        "term": { "value": "holey", "script": "Latin (Songhay orthography)", "rom": "holey (possession music/spirits)" },
+        "inheritability": "not inherited",
+        "notes": "Dongo's pact with the hero Faran Maka: in exchange for festivals of music, praise and sacrifice, Dongo descends to help the people of the Niger.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on the Dongo–Faran Maka covenant and sorko praise-singing" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thunder_axe",
+        "kind": "ritual implement",
+        "name": "Dongo's iron hatchet",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "Dongo's lightning-tool, kept with rainwater vessels and a ram's horn at his village shrines and used in his cult",
+        "notes": "Songhay associate Dongo's strikes with iron and with the smith-spirit Manda Hausakoy; shrines hold an iron axe, a rainwater container, and a ram's horn to summon him.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989); ethnographic descriptions of Dongo shrine implements" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dongo is the Songhay/Zarma god of thunder and lightning and chief of the active Tooru spirits, an (adopted/youngest) son in the lineage of the river-mother Harakoy Dikko; he enforces justice by lightning and is the central deity of the holey possession cult, propitiated for rain.",
+        "citations": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989)" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Spirit-class figure (a Tooru noble) entered as a deity. Songhay accounts vary on Dongo's exact descent from Harakoy Dikko (youngest son vs. adopted son); parentId reflects the common river-mother lineage. Principal scholarship: Stoller (1989); Rouch (1960/1989)."
+  },
+  {
+    "id": "songhai_harakoy_dikko",
+    "name": {
+      "primary": "River Mother of the Niger",
+      "alt": ["Harakoy Dikko", "Harakoy"],
+      "transliterations": { "songhai": "Harakoy Dikko" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Songhay/Zarma oral tradition; living holey cult" },
+    "domains": [
+      {
+        "sphereId": "river-water",
+        "contextTag": "lifelong",
+        "term": { "value": "isa", "script": "Latin (Songhay orthography)", "rom": "isa (river, i.e. the Niger)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Harakoy Dikko, goddess of the Niger River and mother of the Tooru" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ]
+      },
+      {
+        "sphereId": "motherhood-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Harakoy as mother of the principal Tooru spirits" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_niger",
+        "name": "to rule the waters of the Niger and the beings within them",
+        "term": { "value": "isa", "script": "Latin (Songhay orthography)", "rom": "isa" },
+        "inheritability": "not inherited",
+        "notes": "Mistress of the river; in lore she lures men and djinn into the Niger's waters and is the mother of the Tooru.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Harakoy Dikko is the Songhay/Zarma goddess of the Niger River and mother of the Tooru (the noble spirits), said to draw men and djinn into the river; her seven children, each by a man of a different stock, include the storm- and lightning-spirits of the pantheon.",
+        "citations": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds (1989)" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Spirit-class figure (chief female Tooru) entered as a deity. The Niger is the Songhay 'isa'. Principal scholarship: Stoller (1989); Rouch (1960/1989)."
+  },
+  {
+    "id": "songhai_cirey",
+    "name": {
+      "primary": "Lightning",
+      "alt": ["Cirey", "Kyirey", "the Red One"],
+      "transliterations": { "songhai": "Cirey" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["songhai_harakoy_dikko"],
+    "temporal": { "era": "Songhay/Zarma oral tradition; living holey cult" },
+    "domains": [
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "cirey", "script": "Latin (Songhay orthography)", "rom": "cirey ('red')" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Cirey/Kyirey, lightning among the Tooru" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "flash_lightning",
+        "name": "to flash red lightning across the storm",
+        "term": { "value": "cirey", "script": "Latin (Songhay orthography)", "rom": "cirey" },
+        "inheritability": "not inherited; manifested in possession",
+        "notes": "Cirey ('the Red') is the lightning-flash of the Tooru, closely linked with the thunder-god Dongo in the storm-bringing complex.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Cirey (also Kyirey, 'the Red'), a son in Harakoy Dikko's Tooru lineage, is the Songhay spirit of lightning, paired with the thunder-god Dongo in the holey storm cult.",
+        "citations": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds (1989)" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class figure (a Tooru) entered as a deity. 'Cirey' means 'red' in Songhay, evoking the lightning flash; sources give him alongside/under Dongo. Scholarship: Stoller (1989); Rouch (1960/1989)."
+  },
+  {
+    "id": "songhai_manda_hausakoy",
+    "name": {
+      "primary": "Master Smith of the Hausa",
+      "alt": ["Manda Hausakoy", "Hausakoy"],
+      "transliterations": { "songhai": "Manda Hausakoy" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Songhay/Zarma oral tradition; living holey cult" },
+    "domains": [
+      {
+        "sphereId": "blacksmithing-iron",
+        "contextTag": "lifelong",
+        "term": { "value": "Hausakoy", "script": "Latin (Songhay orthography)", "rom": "Hausakoy ('lord of the Hausa', the smith)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Manda Hausakoy, smith among the Tooru" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ]
+      },
+      {
+        "sphereId": "fire-forge",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "forge_iron",
+        "name": "to forge iron at the spirit-world's anvil",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "patron of the hereditary smith-caste; manifested in possession",
+        "notes": "As the divine smith of the Tooru, Manda Hausakoy presides over ironworking and forge-fire; in Songhay thought lightning, iron and the smith are linked, tying him to Dongo.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Manda Hausakoy is the Songhay/Zarma divine blacksmith, one of the seven principal Tooru, patron of ironworking; his epithet Hausakoy ('lord of the Hausa') reflects the role of Hausa-linked smiths in the region.",
+        "citations": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds (1989)" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class figure (a Tooru) entered as a deity. Songhay 'koy' = lord/owner; 'Hausakoy' = 'lord of the Hausa', i.e. the smith-spirit. Scholarship: Stoller (1989); Rouch (1960/1989)."
+  },
+  {
+    "id": "songhai_faran_maka",
+    "name": {
+      "primary": "Faran Maka the Fisher-Giant",
+      "alt": ["Faran Maka Bote", "Fara Maka", "Faran"],
+      "transliterations": { "songhai": "Faran Maka Bote" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "Songhay heroic age; ancestor of the sorko praise-singers" },
+    "domains": [
+      {
+        "sphereId": "fishing-river-mastery",
+        "contextTag": "lifelong",
+        "term": { "value": "bote", "script": "Latin (Songhay orthography)", "rom": "bote (fisherman)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Faran Maka Bote, the giant fisher-hero" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989), on the Faran Maka cycle" }
+        ]
+      },
+      {
+        "sphereId": "magic-sorcery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Faran's vast magical powers" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "wield_river_magic",
+        "name": "to overpower river-spirits with greater magic",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "his descent founds the sorko priestly line",
+        "notes": "Faran defeated the river-spirit Zinkibaru in a contest of magic to win mastery of the Niger; he later submitted to the thunder-god Dongo, founding the holey rites of music and sacrifice.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), Faran Maka–Zinkibaru and Faran Maka–Dongo episodes" }
+        ]
+      },
+      {
+        "id": "hunt_river_beasts",
+        "name": "to harpoon hippopotamus in the great river",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "transmitted to sorko hippopotamus-hunters",
+        "notes": "A giant of immense strength, Faran is the archetypal hippopotamus-hunter; the sorko, who summon spirits and harpoon river-beasts, claim direct descent from him.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on sorko as descendants of Faran Maka Bote" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "harpoon",
+        "kind": "weapon",
+        "name": "fisher's harpoon",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the hero's tool for hunting hippopotamus and great fish in the Niger, emblem of the sorko he fathered",
+        "notes": "Object attested through the sorko hippopotamus-hunting tradition descended from Faran; native term not recorded in the consulted sources.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Faran Maka Bote is the Songhay culture-hero, a giant born of the fisherman Nisile Bote and the river-spirit Maka, endowed with great magic; he defeated the river-spirit Zinkibaru to win the Niger, submitted to the thunder-god Dongo, and is the ancestor of the sorko praise-singers and harpoon-hunters of the possession cult.",
+        "citations": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989), esp. ch. 4 on sorko descended from Faran Maka Bote" },
+          { "kind": "secondary", "reference": "Jean Rouch, La religion et la magie songhay (1960/1989)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Hero/culture-hero tier entered as demigod: son of a mortal fisherman (Nisile Bote) and a river-spirit (Maka). 'Bote' = fisherman. The sorko priest-bards trace their line to him. Principal scholarship: Stoller (1989); Rouch (1960/1989)."
+  },
+  {
+    "id": "songhai_zinkibaru",
+    "name": {
+      "primary": "Lord of the River-Spirits",
+      "alt": ["Zinkibaru", "Zin Kibaru"],
+      "transliterations": { "songhai": "Zinkibaru" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Songhay heroic age" },
+    "domains": [
+      {
+        "sphereId": "river-spirits",
+        "contextTag": "lifelong",
+        "term": { "value": "zin", "script": "Latin (Songhay orthography)", "rom": "zin (water-genie/jinn)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Zinkibaru, the blind river-spirit musician defeated by Faran Maka" }
+        ]
+      },
+      {
+        "sphereId": "music-enchantment",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989), on Zinkibaru's enchanting guitar/music over the river creatures" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "charm_river_creatures",
+        "name": "to charm the fish and beasts of the river with music",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "A blind spirit whose enchanted playing commanded the river creatures, depriving fishermen of their catch until Faran Maka overcame him and seized his instrument.",
+        "sources": [
+          { "kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Zinkibaru is the blind river-spirit (zin) whose magical music ruled the creatures of the Niger; defeated by the hero Faran Maka, his loss transfers mastery of the river to Faran in the foundational Songhay myth-cycle.",
+        "citations": [
+          { "kind": "secondary", "reference": "Paul Stoller, Fusion of the Worlds (1989)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class antagonist (a water-zin) entered as a deity. 'Zin' is the Songhay water-genie (cf. Arabic jinn). His defeat by Faran Maka is the hinge of the Niger-mastery myth. Source: Stoller (1989)."
+  },
+  {
+    "id": "mossi_wende",
+    "name": {
+      "primary": "Sky God",
+      "alt": ["Wende", "Wennam", "Naba Zid-Wende"],
+      "transliterations": { "moore": "Wẽnde / Wẽnnam" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mossi traditional religion; pre-Islamic and continuing" },
+    "domains": [
+      {
+        "sphereId": "sky-supreme-creator",
+        "contextTag": "lifelong",
+        "term": { "value": "Wẽnde", "script": "Latin (Mooré orthography)", "rom": "Wende / Wennam" },
+        "sources": [
+          { "kind": "secondary", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta (Stanford Univ. Press, 1964), on Wende/Wennam the sky-creator" },
+          { "kind": "secondary", "reference": "A.A. Dim Delobsom, L'empire du Mogho-Naba: coutumes des Mossi de la Haute-Volta (1932)" }
+        ]
+      },
+      {
+        "sphereId": "sun-rain-life",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964), on Wende as source of sun, rain and life" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_the_world",
+        "name": "to create the earth, day, night and living things",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "In the Naba Zid-Wende creation cycle the sky-god makes the earth, tests its crust with a chameleon, then peoples it with snakes and great beasts before humankind.",
+        "sources": [
+          { "kind": "secondary", "reference": "Frédéric Guirma, Tales of Mogho: African Stories from Upper Volta (Macmillan, 1971), 'The Naba Zid-Wende'" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Wende (Wennam), the Mossi sky-god and supreme creator, made the world and is the source of sun, rain and life; he is paired with the earth-power Tenga, remaining a distant high god who governs the natural order.",
+        "citations": [
+          { "kind": "secondary", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta (1964)" },
+          { "kind": "secondary", "reference": "A.A. Dim Delobsom, L'empire du Mogho-Naba (1932)" },
+          { "kind": "secondary", "reference": "Frédéric Guirma, Tales of Mogho (1971)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Mossi 'Wẽnde'/'Wẽnnam' is both the high god and the word for the sun/sky; the elaborated personal name is Naba Zid-Wende ('Chief of Everlasting Truth'). Principal scholarship: Skinner (1964); Dim Delobsom (1932); creation narrative in Guirma (1971)."
+  },
+  {
+    "id": "mossi_tenga",
+    "name": {
+      "primary": "Earth Goddess",
+      "alt": ["Tenga", "Tenge", "the Earth"],
+      "transliterations": { "moore": "Tẽnga / Tẽngã" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mossi traditional religion; autochthonous earth-cult" },
+    "domains": [
+      {
+        "sphereId": "earth-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Tẽnga", "script": "Latin (Mooré orthography)", "rom": "Tenga (earth/land)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964), on Tenga and the earth-priests (tengsoba/tengdana)" }
+        ]
+      },
+      {
+        "sphereId": "fertility-agriculture",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964), on the earth-cult and the fertility of the land" }
+        ]
+      },
+      {
+        "sphereId": "justice-oath",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964), on the earth as guarantor of oaths and morality" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_land_fruitful",
+        "name": "to grant or withhold the fertility of the soil",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "served by the hereditary earth-priests (tengsoba)",
+        "notes": "Sacrifices for harvest, rain and the cleansing of bloodshed are offered to Tenga at earth-shrines (tengkugri) by the tengsoba/tengdana.",
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964)" }
+        ]
+      },
+      {
+        "id": "punish_defilement",
+        "name": "to punish the spilling of blood and the breaking of oaths upon the land",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "As guarantor of morality and oaths Tenga is feared more than the distant sky-god; murder and broken vows defile the earth and require expiation.",
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "earth_shrine",
+        "kind": "shrine",
+        "name": "earth-shrine stone",
+        "term": { "value": "tẽngkũgri", "script": "Latin (Mooré orthography)", "rom": "tengkugri (earth-stone shrine)" },
+        "role": "the sacred stone/site where the tengsoba offers sacrifice to the earth-power Tenga",
+        "notes": "Earth-shrines anchor each ritual 'parish'; the custodian earth-priest is the tengsoba (also tengdana).",
+        "sources": [
+          { "kind": "secondary", "reference": "Skinner, The Mossi of the Upper Volta (1964); Wikipedia, 'Tengsoba', summarizing the earth-priest/earth-shrine complex" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tenga (Tenge), the Mossi earth-goddess/earth-power, controls the fertility of the land and is the guardian of oaths and morality, punishing bloodshed and broken vows; she is paired with the sky-god Wende and served by hereditary earth-priests (tengsoba/tengdana) at earth-shrines.",
+        "citations": [
+          { "kind": "secondary", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta (1964)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Tengsoba', on the tengsoba/tengdana earth-priesthood and earth-shrines" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Earth-cult power entered as a deity. Mooré 'tẽnga' = earth/land; the earth-priest is 'tengsoba' (lord of the earth) or 'tengdana'. Sources: Skinner (1964); Dim Delobsom (1932)."
+  },
+  {
+    "id": "mossi_naba_zid_wende",
+    "name": {
+      "primary": "Naba Zid-Wende, Chief of Everlasting Truth",
+      "alt": ["Naba Zid-Wendé", "Naaba Zĩid-Wẽnde"],
+      "transliterations": { "moore": "Naaba Zĩid-Wẽnde" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mossi",
+    "primaryTradition": "Mossi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mossi creation myth (primordial); recorded oral tradition" },
+    "domains": [
+      {
+        "sphereId": "creation-cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "Naaba Zĩid-Wẽnde", "script": "Latin (Mooré orthography)", "rom": "Naba Zid-Wende ('Chief of Everlasting Truth')" },
+        "sources": [
+          { "kind": "secondary", "reference": "Frédéric Guirma, Tales of Mogho: African Stories from Upper Volta (1971), 'The Naba Zid-Wende' creation story" }
+        ]
+      },
+      {
+        "sphereId": "kingship-divine",
+        "contextTag": "lifelong",
+        "term": { "value": "naaba", "script": "Latin (Mooré orthography)", "rom": "naaba (chief/king)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Guirma, Tales of Mogho (1971); the creator conceived as the supreme naaba, mirroring the Mogho Naba kingship" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_the_earth",
+        "name": "to fashion the earth and test it fit for life",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "He makes the earth, then sends a chameleon to test whether the crust will hold, snakes to test whether it is cool enough, and finally the great beasts and humankind.",
+        "sources": [
+          { "kind": "secondary", "reference": "Frédéric Guirma, Tales of Mogho (1971)" }
+        ]
+      },
+      {
+        "id": "order_day_and_night",
+        "name": "to set day and night in their courses",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "In the myth the creator, ruling 'the Kingdom of Everlasting Truth', makes the earth and then establishes day and night.",
+        "sources": [
+          { "kind": "secondary", "reference": "Frédéric Guirma, Tales of Mogho (1971)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Naba Zid-Wende ('Chief of Everlasting Truth') is the personified Mossi creator-king, an expanded form of the sky-god Wende, who in the recorded creation narrative makes the earth, tests it with a chameleon and snakes, and populates it with animals and people.",
+        "citations": [
+          { "kind": "secondary", "reference": "Frédéric Guirma, Tales of Mogho: African Stories from Upper Volta (1971), the principal published recension of the myth" },
+          { "kind": "secondary", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta (1964), on Wende/Naba-Zid-Wende as supreme being" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Entered as a deity (the creator under his royal name) rather than a separate figure from Wende; kept distinct because the named Naba Zid-Wende creation cycle is its own attested narrative. The myth was set down by the Mossi author Frédéric Guirma (Tales of Mogho, 1971), who learned it from his own tradition. 'Naaba' = chief/king in Mooré, echoing the Mogho Naba."
+  },
+  {
+    "id": "senufo_kolotyolo",
+    "name": {
+      "primary": "Creator God",
+      "alt": ["Kolotyolo", "Koulotiolo", "Kulotyolo"],
+      "transliterations": { "senari": "Kolotyolo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Senufo",
+    "primaryTradition": "Senufo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Senufo traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "creation-supreme",
+        "contextTag": "lifelong",
+        "term": { "value": "Kolotyolo", "script": "Latin (Senari orthography)", "rom": "Kolotyolo ('the creator/the one who set in place')" },
+        "sources": [
+          { "kind": "secondary", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (Indiana Univ. Press, 1981), on the bipartite deity Kolotyolo/Katyeleeo" },
+          { "kind": "secondary", "reference": "Bohumil Holas, Les Sénoufo (y compris les Minianka) (PUF, 1957/1966)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_into_being",
+        "name": "to bring the world and its creatures into being",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "Kolotyolo is the remote creator aspect of the dual Senufo supreme being; humans approach the divine chiefly through his nurturing counterpart, the Ancient Mother.",
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kolotyolo (Koulotiolo), the Senufo creator god, is the male/remote 'divine creator' aspect of a bipartite supreme being whose nurturing aspect is Katyeleeo/Maleeo, the 'Ancient Mother'.",
+        "citations": [
+          { "kind": "secondary", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981)" },
+          { "kind": "secondary", "reference": "Bohumil Holas, Les Sénoufo (1957/1966)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Entered as a deity (Senufo creator). The Senufo conceive the supreme being as a dual female-male unity: Kolotyolo the creator and Katyeleeo/Maleeo the Ancient Mother. Principal scholarship: Glaze (1981); Holas (1957/1966)."
+  },
+  {
+    "id": "senufo_maleeo",
+    "name": {
+      "primary": "Ancient Mother",
+      "alt": ["Maleeo", "Katyeleeo", "Katieleo", "Mother"],
+      "transliterations": { "senari": "Katyeleeo / Maleeo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Senufo",
+    "primaryTradition": "Senufo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Senufo traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "earth-motherhood",
+        "contextTag": "lifelong",
+        "term": { "value": "Katyeleeo", "script": "Latin (Senari orthography)", "rom": "Katyeleeo ('Ancient Mother')" },
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981), on Katyeleeo/Maleeo the Ancient Mother" }
+        ]
+      },
+      {
+        "sphereId": "initiation-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "Poro", "script": "Latin (Senari orthography)", "rom": "Poro (men's initiation society)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981), on the Ancient Mother as guiding spirit of Poro" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect_the_initiated",
+        "name": "to nurture and watch over the initiates of Poro and the community",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "The Ancient Mother is the protective, nurturing aspect of the supreme being and the tutelary spirit of the Poro society and its sacred grove.",
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981)" }
+        ]
+      },
+      {
+        "id": "judge_the_guilty",
+        "name": "to sit in judgment over thieves and murderers",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "In the Kufulo region the Ancient Mother is embodied in sacred drums before which the accused are brought for trial.",
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981), on the sacred drums of Maleeo" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "rhythm_pounder",
+        "kind": "ritual sculpture",
+        "name": "rhythm-pounder figure",
+        "term": { "value": "deble", "script": "Latin (Senari orthography)", "rom": "deble (rhythm pounder); pl. debele" },
+        "role": "tall human figure pounded on the earth in Poro funerary and initiation rites, a benevolent symbol of fertility and a conduit to the ancestors under the Ancient Mother",
+        "notes": "Male/female pairs of pounders are called pombibele, 'those who give birth', representing the primordial couple watched over by the Ancient Mother.",
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981); The Metropolitan Museum of Art, 'Senufo Arts and Poro Initiation in Northern Côte d'Ivoire' (Heilbrunn Timeline of Art History)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Katyeleeo/Maleeo, the Senufo 'Ancient Mother', is the protective, nurturing female aspect of the bipartite supreme being and the guiding tutelary spirit of the Poro society; in some regions she is embodied in sacred drums of justice and honored with deble rhythm-pounder sculptures.",
+        "citations": [
+          { "kind": "secondary", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981)" },
+          { "kind": "secondary", "reference": "The Metropolitan Museum of Art, 'Senufo Arts and Poro Initiation in Northern Côte d'Ivoire', Heilbrunn Timeline of Art History" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Entered as a deity (the female 'Ancient Mother' aspect of the Senufo supreme being and tutelary of Poro). 'Katyeleeo' = Ancient Mother; 'deble' (pl. debele) = rhythm pounder; 'pombibele' = 'those who give birth'. Sources: Glaze (1981); Holas (1957/1966); Met Museum."
+  },
+  {
+    "id": "senufo_madebele",
+    "name": {
+      "primary": "Bush Spirits",
+      "alt": ["Madebele", "Madeo (sing.)", "the little people of the bush"],
+      "transliterations": { "senari": "madebele (sing. madeo)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Senufo",
+    "primaryTradition": "Senufo",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Senufo traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "wilderness-bush",
+        "contextTag": "lifelong",
+        "term": { "value": "madebele", "script": "Latin (Senari orthography)", "rom": "madebele (bush spirits; sing. madeo)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981), on the madebele bush spirits" },
+          { "kind": "secondary", "reference": "TV Tropes, 'Myth/Senufo Mythology', summarizing the madebele (little forest/water beings with backward feet)" }
+        ]
+      },
+      {
+        "sphereId": "divination-fortune",
+        "contextTag": "lifelong",
+        "term": { "value": "Sandogo", "script": "Latin (Senari orthography)", "rom": "Sandogo (women's divination society)" },
+        "sources": [
+          { "kind": "secondary", "reference": "The Metropolitan Museum of Art, Heilbrunn Timeline, on Sandogo diviners (sandobele) mediating with bush spirits" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_or_blight_fortune",
+        "name": "to grant fortune or send affliction from the wild",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "Capricious bush beings who must be placated; the Sandogo diviners (sandobele) read and appease them, prescribing brass figures and ornaments (yawiige).",
+        "sources": [
+          { "kind": "secondary", "reference": "Glaze, Art and Death in a Senufo Village (1981); Wikipedia, 'Sandobele'" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "diviner_brass_figure",
+        "kind": "ritual object",
+        "name": "diviner's brass spirit-figures and amulets",
+        "term": { "value": "yawiige", "script": "Latin (Senari orthography)", "rom": "yawiige (cast brass amulets/ornaments)" },
+        "role": "cast-brass figures, rings and bracelets prescribed by Sandogo diviners to house and satisfy bush spirits and avert misfortune",
+        "notes": "Made of iron and copper alloy; prescribed to manage illness and difficulty caused by the madebele.",
+        "sources": [
+          { "kind": "secondary", "reference": "The Metropolitan Museum of Art, Heilbrunn Timeline, on yawiige; Wikipedia, 'Sandobele'" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The madebele (sing. madeo) are Senufo bush spirits — small, capricious beings of forest and water — who bestow fortune or affliction and are mediated by the women's Sandogo divination society (sandobele), which prescribes brass figures and ornaments to placate them.",
+        "citations": [
+          { "kind": "secondary", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981)" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Sandobele'; The Metropolitan Museum of Art, Heilbrunn Timeline of Art History" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class collective entered as a deity (nature/bush spirits) per schema constraints; sex 'none' as a non-gendered class. 'madebele' (sing. 'madeo') = bush spirits; 'sandobele' = diviners; 'yawiige' = their prescribed brass charms. Sources: Glaze (1981); Met Museum; Wikipedia 'Sandobele'."
+  },
+  {
+    "id": "baule_nyamien",
+    "name": {
+      "primary": "Sky God",
+      "alt": ["Nyamien", "Nyamye", "Anyanmye"],
+      "transliterations": { "baule": "Nyamien" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Baule",
+    "primaryTradition": "Baule",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Baule traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "sky-supreme-creator",
+        "contextTag": "lifelong",
+        "term": { "value": "Nyamien", "script": "Latin (Baule orthography)", "rom": "Nyamien / Nyamye" },
+        "sources": [
+          { "kind": "secondary", "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (Yale Univ. Press / Yale University Art Gallery, 1997), on Nyamien the remote creator sky-god" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_and_withdraw",
+        "name": "to create the world and then remain remote above it",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "Nyamien is the intangible, inaccessible creator; the Baule address everyday concerns to the earth-god Asie and to nature- and power-spirits rather than to him directly.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vogel, Baule: African Art, Western Eyes (1997)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nyamien (Nyamye), the Baule sky-god, is the intangible and inaccessible creator and supreme being; as an Akan-derived people the Baule cognate him with the wider Akan high god Nyame, while everyday worship centers on the earth-god Asie and the spirits.",
+        "citations": [
+          { "kind": "secondary", "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (1997)" },
+          { "kind": "secondary", "reference": "101 Last Tribes, 'Baule people', summarizing Baule cosmology (Nyamien creator; Asie earth-god)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Entered as a deity (Baule creator sky-god). The Baule are an Akan people who migrated from present-day Ghana, so Nyamien is cognate with Akan Nyame. Principal scholarship: Vogel (1997)."
+  },
+  {
+    "id": "baule_asie",
+    "name": {
+      "primary": "Earth God",
+      "alt": ["Asie", "Asye", "Assie"],
+      "transliterations": { "baule": "Asie" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Baule",
+    "primaryTradition": "Baule",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Baule traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "earth-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Asie", "script": "Latin (Baule orthography)", "rom": "Asie / Asye (earth)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vogel, Baule: African Art, Western Eyes (1997), on Asie the earth-god and the asye usu bush spirits" }
+        ]
+      },
+      {
+        "sphereId": "creatures-living-world",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "101 Last Tribes, 'Baule people', on Asie controlling humans and animals" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern_the_living_world",
+        "name": "to govern humans, animals and the life of the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "Asie, the earth-god, is the active power over the inhabited world; the bush-spirits asye usu ('spirits of the earth/bush') belong to his domain.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vogel, Baule: African Art, Western Eyes (1997)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "bush_spirit_figure",
+        "kind": "ritual sculpture",
+        "name": "bush-spirit figure",
+        "term": { "value": "asye usu", "script": "Latin (Baule orthography)", "rom": "asye usu ('spirit of the bush/earth')" },
+        "role": "carved figure that houses a wild nature-spirit of Asie's domain, used by diviners (komien) to channel the spirit and turn its vindictiveness to a client's benefit",
+        "notes": "Asye usu inhabit trees, rocks and rivers; sculpted, they receive sacrifice and are made to bring success rather than misfortune.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vogel, Baule: African Art, Western Eyes (1997), on asye usu and komien diviners" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Asie (Asye), the Baule earth-god, is the active power governing humans and animals and the realm of the wild bush-spirits (asye usu), in contrast to the remote sky-creator Nyamien.",
+        "citations": [
+          { "kind": "secondary", "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (1997)" },
+          { "kind": "secondary", "reference": "101 Last Tribes, 'Baule people'" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Entered as a deity (Baule earth-god). 'Asye usu' = bush/earth spirits, channeled by 'komien' diviners. Principal scholarship: Vogel (1997)."
+  },
+  {
+    "id": "baule_mbotumbo",
+    "name": {
+      "primary": "Monkey God",
+      "alt": ["Mbotumbo", "Gbekre", "Aboya"],
+      "transliterations": { "baule": "Mbotumbo / Gbekre" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Baule",
+    "primaryTradition": "Baule",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Baule traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "protection-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "amwin", "script": "Latin (Baule orthography)", "rom": "amwin / amuin (object/being of power)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (1997), on Mbotumbo/Gbekre among the amwin powers" }
+        ]
+      },
+      {
+        "sphereId": "underworld-judgment",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "101 Last Tribes, 'Baule people', on the monkey-headed god Gbekre/Mbotumbo as judge and protector" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_against_witchcraft",
+        "name": "to guard the living against witchcraft, plague and enemies",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "An aggressive amwin power: judge of the dead and helper of the living, set against unseen dangers — witchcraft, epidemics, attack.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vogel, Baule: African Art, Western Eyes (1997)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "monkey_god_figure",
+        "kind": "ritual sculpture",
+        "name": "cup-bearing monkey figure",
+        "term": { "value": "gbekre", "script": "Latin (Baule orthography)", "rom": "gbekre / mbotumbo" },
+        "role": "roughly carved, unstained cynocephalic (dog-faced) monkey figure holding a cup to receive sacrificial offerings (eggs, blood), an amwin power-object protecting initiates",
+        "notes": "Stylistically distinct from refined Baule ancestor figures; the cup receives sacrifice. Vogel notes 'Mbotumbo' as a term for such men's-society power objects used in mbra divination.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vogel, Baule: African Art, Western Eyes (1997); The Metropolitan Museum of Art, 'Monkey Mask', Baule peoples (collection record)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mbotumbo (also called Gbekre), the Baule monkey-god, is a powerful, aggressive amwin (power-being) — judge of the dead and protector of the living against witchcraft, epidemic and enemies — represented by a roughly carved, cup-bearing dog-faced monkey figure that receives sacrifice.",
+        "citations": [
+          { "kind": "secondary", "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (1997)" },
+          { "kind": "secondary", "reference": "The Metropolitan Museum of Art, Baule monkey figure/mask collection records" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Entered as a deity (a Baule amwin power). The cup-bearing monkey figure is widely called 'gbekre'; 'Mbotumbo' is recorded (Vogel) as a name for such men's-society power objects. 'amwin/amuin' = object/being of power. Principal scholarship: Vogel (1997)."
+  },
+  {
+    "id": "mende_ngewo",
+    "name": {
+      "primary": "Creator God",
+      "alt": ["Ngewo", "Leve", "Ngewɔ"],
+      "transliterations": { "mende": "Ngewɔ" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mende traditional religion; continuing" },
+    "domains": [
+      {
+        "sphereId": "creation-supreme",
+        "contextTag": "lifelong",
+        "term": { "value": "Ngewɔ", "script": "Latin (Mende orthography)", "rom": "Ngewo" },
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopedia of African Religion (SAGE, 2009), 'Mende', on Ngewo/Leve the supreme creator" },
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Ngewo'" }
+        ]
+      },
+      {
+        "sphereId": "destiny-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "Leve", "script": "Latin (Mende orthography)", "rom": "Leve ('the high-up one', older name)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopedia of African Religion (2009), 'Mende', on Ngewo as determiner of destiny and upholder of truth" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_and_ordain_destiny",
+        "name": "to create the world and ordain each person's destiny and lifespan",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited",
+        "notes": "After creating the world Ngewo withdrew to the sky and rarely intervenes, yet nothing good or evil happens without his permission; diviners invoke his authority to expose wrongdoers.",
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopedia of African Religion (2009), 'Mende'" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ngewo (older name Leve, 'the high/up one'), the Mende supreme being, is the creator of the universe and all within it who, having made the world, withdrew to the sky; he ordains destiny and lifespan and upholds truth and justice, with spirits acting as intermediaries between him and the living.",
+        "citations": [
+          { "kind": "secondary", "reference": "Encyclopedia of African Religion (SAGE, 2009), entry 'Mende'" },
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Ngewo'" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Entered as a deity (Mende creator). 'Ngewɔ' is the current name; 'Leve' the older one, glossed as 'the high-up one'. The Poro/Sande societies and lesser spirits (ngafanga) mediate human dealings with him. Sources: Encyclopedia of African Religion (2009); Britannica."
+  },
+  {
+    "id": "mende_sowo",
+    "name": {
+      "primary": "Sande Water Spirit",
+      "alt": ["Sowo", "Sowei", "Nowo"],
+      "transliterations": { "mende": "Sowo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mende traditional religion; continuing Sande society" },
+    "domains": [
+      {
+        "sphereId": "water-rivers",
+        "contextTag": "lifelong",
+        "term": { "value": "Sowo", "script": "Latin (Mende orthography)", "rom": "Sowo" },
+        "sources": [
+          { "kind": "secondary", "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art (Yale Univ. Press, 1986), on the Sande water-spirit and the sowei mask" }
+        ]
+      },
+      {
+        "sphereId": "feminine-beauty-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "Sande", "script": "Latin (Mende orthography)", "rom": "Sande (women's society)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Boone, Radiance from the Waters (1986)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "embody_ideal_womanhood",
+        "name": "to embody and confer the ideal of Mende womanhood and beauty",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited; manifested through the masked Sande official (ndoli jowei)",
+        "notes": "The spirit rises from beneath the water and is danced into the village as a black, glistening helmet-masked figure during Sande initiation; she models the values of adult womanhood.",
+        "sources": [
+          { "kind": "secondary", "reference": "Boone, Radiance from the Waters (1986)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sowei_helmet_mask",
+        "kind": "mask",
+        "name": "Sande helmet mask",
+        "term": { "value": "sowei", "script": "Latin (Mende orthography)", "rom": "sowei (also ndoli jowei mask; Bundu mask)" },
+        "role": "black wooden helmet mask with ringed neck and elaborate coiffure worn by a senior Sande woman to embody the water-spirit Sowo during girls' initiation — the only masquerade in Africa danced by women",
+        "notes": "The neck rings evoke the ripples of water from which the spirit emerges; the lustrous black surface signals health and ideal beauty.",
+        "sources": [
+          { "kind": "secondary", "reference": "Boone, Radiance from the Waters (1986); Encyclopaedia Britannica, 'Sande'" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sowo (embodied in the sowei/ndoli jowei helmet mask) is the female water-spirit and guardian tutelary of the Mende Sande society; emerging from beneath the water and danced by a senior Sande woman, she personifies the Mende ideal of feminine beauty and the values of womanhood instilled at initiation.",
+        "citations": [
+          { "kind": "secondary", "reference": "Sylvia Ardyn Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art (1986)" },
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Sande'" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Spirit-class tutelary entered as a deity. The Sande masquerade is famously the only African masking tradition performed by women. 'sowei' names both the mask and the senior society official. Principal scholarship: Boone (1986)."
+  },
+  {
+    "id": "mende_gbeni",
+    "name": {
+      "primary": "Poro Forest Spirit",
+      "alt": ["Gbeni", "Goboi", "the Poro masked spirit"],
+      "transliterations": { "mende": "Gbeni" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mende",
+    "primaryTradition": "Mende",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mende traditional religion; continuing Poro society" },
+    "domains": [
+      {
+        "sphereId": "initiation-male-society",
+        "contextTag": "lifelong",
+        "term": { "value": "Poro", "script": "Latin (Mende orthography)", "rom": "Poro (men's society)" },
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Mende', on the Poro men's society and its masked spirits" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Masquerade in Mende culture', on Poro masked spirits (Gbeni/Goboi)" }
+        ]
+      },
+      {
+        "sphereId": "law-discipline",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Mende', on Poro's regulation of conduct and authority" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "enforce_initiation_law",
+        "name": "to initiate boys into manhood and enforce the law of the society",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not inherited; manifested through a masked Poro official",
+        "notes": "Men masked as spirits embody the Poro power that secludes and trains boys, regulates conduct, and concerns itself with agricultural fertility and (formerly) military training.",
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Mende'" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "poro_masquerade_costume",
+        "kind": "masquerade costume",
+        "name": "Poro spirit masquerade",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "the full feathered/raffia masking ensemble through which a Poro official embodies the forest spirit during boys' initiation and society appearances",
+        "notes": "Mende Poro masked spirits include Gbeni and Goboi; native masquerade-name beyond 'Gbeni' not fixed in the consulted sources.",
+        "sources": [
+          { "kind": "secondary", "reference": "Wikipedia, 'Masquerade in Mende culture'" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Gbeni (also Goboi) is a tutelary forest/masked spirit of the Mende men's Poro society, embodied by a masked official; Poro initiates boys into manhood, regulates conduct and fertility, and historically handled military training, counterpart to the women's Sande.",
+        "citations": [
+          { "kind": "secondary", "reference": "Encyclopaedia Britannica, 'Mende'" },
+          { "kind": "secondary", "reference": "Wikipedia, 'Masquerade in Mende culture'" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Spirit-class tutelary entered as a deity (Poro masked spirit, masculine counterpart to Sande's Sowo). The Poro/Sande pairing structures Mende ritual life. Sources: Britannica 'Mende'; Wikipedia 'Masquerade in Mende culture'."
+  }
+]
+```
+
+I researched the six assigned West African traditions via web search and authored 26 figures grounded in real scholarship, then verified the output against the schema and hard rules before returning it.
+
+Checks performed:
+- **ID collisions:** All 26 ids are snake_case `<tradition>_<name>` and none appear in `/home/user/PantheonRepository/data-sources/existing-ids.json` (the file contains the already-authored Yoruba/Akan/Edo/Igbo etc., but nothing under hausa_/songhai_/mossi_/senufo_/baule_/mende_).
+- **Type values:** every figure uses only `deity` or `demigod` (Faran Maka is `demigod` as the half-spirit hero); spirit-classes are noted as deities in `notes` as instructed.
+- **Forbidden substrings:** none of kinesis/mancy/pathy/portation/kinetic/telepath appear.
+- **Name rule:** English/plain word leads every `name.primary`; native attested terms sit in `term` with script + romanization; unrecorded terms use `""` (never a disclaimer string).
+- **Distinctness:** domains = spheres they are god of; faculties = verb-phrase abilities; materialCulture = attested objects only (deble rhythm-pounder, Dongo's iron hatchet, Faran's harpoon, asye usu/gbekre/Sowei masks, Mossi earth-shrine, Senufo yawiige). Figures with no attested gear get `[]`.
+
+Balance: Hausa 5 (Sarkin Aljan Suleimanu, Inna, Kuturu, Kure, Dan Galadima), Songhai 6 (Dongo, Harakoy Dikko, Cirey, Manda Hausakoy, Faran Maka, Zinkibaru), Mossi 3 (Wende, Tenga, Naba Zid-Wende), Senufo 3 (Kolotyolo, Maleeo/Katyeleeo, madebele), Baule 3 (Nyamien, Asie, Mbotumbo), Mende 3 (Ngewo, Sowo, Gbeni). Hero/demigod tier included (Faran Maka; Naba Zid-Wende as creator-king). Core sources cited: Besmer *Horses, Musicians, and Gods* (1983), Tremearne (1914), Stoller *Fusion of the Worlds* (1989), Rouch *La religion et la magie songhay* (1960/1989), Skinner *The Mossi of the Upper Volta* (1964), Dim Delobsom (1932), Guirma *Tales of Mogho* (1971), Glaze *Art and Death in a Senufo Village* (1981), Holas (1957/1966), Vogel *Baule: African Art, Western Eyes* (1997), Boone *Radiance from the Waters* (1986), plus Britannica, the Met Museum Heilbrunn Timeline, and the Encyclopedia of African Religion. No repo files were modified.
+
+result: Authored 26 cited comparative-mythology figures across Hausa, Songhai, Mossi, Senufo, Baule, and Mende (returned as a single JSON array above); schema- and rule-checked, no ID collisions, no repo files touched.

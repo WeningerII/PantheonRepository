@@ -1,0 +1,1556 @@
+I now have comprehensive, scholarly-grounded material for all six traditions with native terms, theology, and the named ethnographies. Let me compose the registry of ~26 figures, foregrounding Woyengi and the Abasi-&-Atai origin-of-death, following the schema and ID conventions strictly (snake_case `<tradition>_<name>`, none colliding with existing IDs).
+
+Here is the comparative-mythology registry. Sourcing rests on the named ethnographies: P. A. Talbot (Ijaw/Ibibio/Efik of the Niger Delta & Cross River), S. F. Nadel's *A Black Byzantium* and *Nupe Religion* (Nupe), C. K. Meek's *A Sudanese Kingdom* (Jukun), M. J. Field's *Religion and Medicine of the Gã People* (Ga), and A. W. Cardinall's *Tales Told in Togoland* (Krachi).
+
+```json
+[
+  {
+    "id": "ijaw_woyengi",
+    "name": {
+      "primary": "Great Mother",
+      "alt": ["Woyengi", "Woyingi", "Wonyingi"],
+      "transliterations": { "izon": "Woyengi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "Woyengi", "script": "Woyengi", "rom": "Woyengi" },
+        "sources": [
+          { "kind": "encyclopedia", "reference": "\"Woyengi,\" Encyclopaedia Britannica (online), entry on the Ijo creator goddess who moulded the first human beings." }
+        ]
+      },
+      {
+        "sphereId": "destiny-and-fate",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "encyclopedia", "reference": "\"Woyengi,\" Encyclopaedia Britannica (online): at creation each person names their own destiny — sex, fortune, manner of death — which Woyengi grants but never permits to be changed." }
+        ]
+      },
+      {
+        "sphereId": "motherhood",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Some Nigerian Fertility Cults (London: Oxford University Press, 1927), on the Ijaw conception of the supreme being as a feminine Great Mother." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mould-humans-from-earth",
+        "name": "mould human beings from earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "She descends to earth in a bolt of lightning and shapes the first human beings out of soil, then breathes life and consciousness into them.",
+        "sources": [
+          { "kind": "encyclopedia", "reference": "\"Woyengi,\" Encyclopaedia Britannica (online), on the moulding of the first humans from earth." }
+        ]
+      },
+      {
+        "id": "allot-chosen-destinies",
+        "name": "allot each person their chosen destiny",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "She lets each new being choose its sex, lot in life, and death; her decree is irreversible, as shown when she refuses Ogboinba a second choice.",
+        "sources": [
+          { "kind": "reference", "reference": "\"Ogboinba,\" in J. Knappert, ed., references to the Ijo tale of the sorceress who returns to Woyengi to change her childless fate and is stripped of her powers." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Woyengi (\"Great Mother\") is the Ijaw creatress who descends in lightning, moulds the first humans from earth, and lets each choose its own destiny.",
+        "citations": [
+          { "kind": "encyclopedia", "reference": "\"Woyengi,\" Encyclopaedia Britannica (online)." },
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Some Nigerian Fertility Cults (Oxford University Press, 1927)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme creator goddess of the Ijaw (Izon) of the Niger Delta. The Western Delta Ijaw conceive of the supreme being as feminine, hence Woyengi / Woyingi, glossed 'our mother.' She is classed as deity. Egbesu and Tamuno are sometimes named as related/regional faces of the supreme power."
+  },
+  {
+    "id": "ijaw_tamuno",
+    "name": {
+      "primary": "Maker",
+      "alt": ["Tamuno", "Temearau", "Tamarau"],
+      "transliterations": { "izon": "Tamuno", "kalabari": "Tamuno" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Tamuno", "script": "Tamuno", "rom": "Tamuno" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta: Their Religions and Customs (London: Sheldon Press, 1932), on Tamuno/Temearau as the supreme creator power of the Delta Ijaw." }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fix-the-allotted-span",
+        "name": "fix the allotted span of each life",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As supreme creator the Maker is held to assign the length and shape of each person's life alongside the personal destiny-spirit.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tamuno (Temearau) is named in Delta-Ijaw tradition as the supreme creator power, sometimes identified or paired with the feminine Great Mother.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme creator deity recorded among the eastern/Kalabari and Delta Ijaw, where the creator power is often named Tamuno (with the form Temearau emphasising the feminine 'Mother-Maker'). Overlaps in role with Woyengi; treated here as a distinct attested name within the same tradition. Classed as deity."
+  },
+  {
+    "id": "ijaw_ogboinba",
+    "name": {
+      "primary": "Childless Sorceress",
+      "alt": ["Ogboinba"],
+      "transliterations": { "izon": "Ogboinba" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "reference", "reference": "Ijo oral tradition of Ogboinba, the sorceress who could heal and prophesy but was denied children (recorded in collections of Ijaw folklore)." }
+        ]
+      },
+      {
+        "sphereId": "prophecy",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "reference", "reference": "Ijo oral tradition of Ogboinba." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heal-the-sick",
+        "name": "heal the sick",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "acquired",
+        "notes": "The destiny she chose at creation gave her great powers of healing and divination in place of the child she later craved.",
+        "sources": [
+          { "kind": "reference", "reference": "Ijo oral tradition of Ogboinba." }
+        ]
+      },
+      {
+        "id": "contend-with-the-creator",
+        "name": "contend in magic against the creator",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "She journeys back to Woyengi to demand a new destiny and challenges her to a magical duel; the goddess strips her powers, and she escapes by hiding in the eyes of a pregnant woman.",
+        "sources": [
+          { "kind": "reference", "reference": "Ijo oral tradition of Ogboinba and Woyengi." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ogboinba is the Ijaw sorceress-heroine who, discontented with her chosen childless destiny, challenges the creatress Woyengi and is defeated.",
+        "citations": [
+          { "kind": "reference", "reference": "Ijo oral tradition of Ogboinba (recorded in Ijaw/Nigerian folklore collections)." }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Culture-heroine of the Ijaw destiny myth; a mortal woman raised to extraordinary powers, classed here as demigod for her superhuman gifts and direct contest with the creatress. Her tale is the chief Ijaw narrative dramatising the irreversibility of Woyengi's destiny-decree."
+  },
+  {
+    "id": "ijaw_adumu",
+    "name": {
+      "primary": "Water Spirit",
+      "alt": ["Adumu", "Owu"],
+      "transliterations": { "izon": "Adumu", "kalabari": "Owu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "rivers-and-waters",
+        "contextTag": "lifelong",
+        "term": { "value": "Owu", "script": "Owu", "rom": "Owu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "Robin Horton, \"The Kalabari World-View: An Outline and Interpretation,\" Africa 32, no. 3 (1962), on the owu water-spirits of the Niger Delta Ijaw." }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932), on the water-spirit cult and its links to fertility and prosperity." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "possess-the-dancers",
+        "name": "possess and whirl the masked dancers",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Among the Brass and Kalabari Ijaw, Adumu heads the water-spirits; shrine staves (Nunuma) represent serpents whose loops typify the whirling dancing-frenzy he induces in his masquerade.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ijaw_owu_pottery_cone",
+        "kind": "cult-object",
+        "name": "cone-shaped owu shrine pottery",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "Central cult emblem before which libations are poured to the water-spirits on appointed days.",
+        "notes": "A cone-shaped piece of pottery surmounted by a head serves as the chief Owu symbol in the shrine.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ]
+      },
+      {
+        "id": "ijaw_nunuma_staves",
+        "kind": "regalia",
+        "name": "serpent shrine-staves",
+        "term": { "value": "Nunuma", "script": "Nunuma", "rom": "Nunuma" },
+        "role": "Carved posts and staves kept in the water-spirit shrine, representing serpents.",
+        "notes": "Their coils are said to typify the whirling of the water-spirit dance.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The owu/owuamapu are the Ijaw water-spirits governing rivers, fertility, and artistic power; Adumu is named as their head among the Brass and Kalabari Ijaw.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." },
+          { "kind": "ethnography", "reference": "Robin Horton, \"The Kalabari World-View,\" Africa 32 (1962)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Represents the owuamapu, the class of Ijaw water-spirits central to Delta cosmology, personified by their chief Adumu (Kalabari Owu). Spirit-class entities are classed as deity per registry rules; sex left unknown because the owu are a collective class with no fixed gender."
+  },
+  {
+    "id": "ibibio_abasi",
+    "name": {
+      "primary": "Supreme God",
+      "alt": ["Abasi", "Abassi", "Abasi Ibom"],
+      "transliterations": { "ibibio": "Abasi", "efik": "Abasi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Abasi Ibom", "script": "Abasi Ibom", "rom": "Abasi Ibom" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (London: Macmillan, 1923), on Abasi the supreme sky-god and creator." }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Abasi Ibom enyong", "script": "Abasi Ibom enyong", "rom": "Abasi Ibom enyong" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923): the Ibibio worship the sky-god Abasi Ibom enyong ('the great God above')." }
+        ]
+      },
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923), on Abasi as the giver of life and death." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion-the-first-humans",
+        "name": "fashion the first man and woman",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Abasi creates the first human pair, but fearing rivalry will not let them dwell on earth until his wife Atai persuades him.",
+        "sources": [
+          { "kind": "encyclopedia", "reference": "\"Abassi,\" recorded Efik/Ibibio creation myth in which Abasi makes the first humans and at first keeps them in heaven." }
+        ]
+      },
+      {
+        "id": "impose-the-twin-prohibitions",
+        "name": "impose the prohibitions on farming and procreation",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "On allowing the pair to earth, Abasi forbids them to grow their own food (they must eat in heaven at the ringing of a bell) and forbids them to procreate.",
+        "sources": [
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth (Abasi and Atai cycle)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Abasi is the Ibibio/Efik supreme creator and sky-god who made the first humans, set the prohibitions on farming and procreation, and whose wife Atai loosed death and discord when the prohibitions were broken.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (Macmillan, 1923)." },
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth of Abasi and Atai." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme sky-god and creator of the Ibibio and Efik of the Cross River. Foregrounded with his wife Atai as the origin-of-death narrative: his fear of rivalry leads to the prohibitions whose breaking brings mortality into the world. Classed as deity."
+  },
+  {
+    "id": "ibibio_atai",
+    "name": {
+      "primary": "Death-Bringer",
+      "alt": ["Atai"],
+      "transliterations": { "ibibio": "Atai", "efik": "Atai" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": { "value": "Atai", "script": "Atai", "rom": "Atai" },
+        "sources": [
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth: when the first humans broke the prohibitions, Atai sent death among them." }
+        ]
+      },
+      {
+        "sphereId": "discord-and-strife",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth: Atai loosed discord and strife so that the humans turned against one another." }
+        ]
+      },
+      {
+        "sphereId": "divine-counsel",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923), on Atai the consort of Abasi who counsels him in the sky." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "loose-death-on-humankind",
+        "name": "loose death upon humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "After the first woman farmed and the pair bore children in defiance of Abasi, Atai killed the two and then set their descendants quarrelling, so that death and discord entered the world.",
+        "sources": [
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth of Abasi and Atai." }
+        ]
+      },
+      {
+        "id": "intercede-for-humankind",
+        "name": "intercede with the creator for humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "It is Atai who first persuades Abasi to let the humans live on earth at all, before later enforcing the penalty for their disobedience.",
+        "sources": [
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth of Abasi and Atai." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Atai, wife of Abasi, both wins the first humans the right to live on earth and, when they break Abasi's prohibitions, sends death and discord among them — the Ibibio/Efik origin of mortality.",
+        "citations": [
+          { "kind": "encyclopedia", "reference": "Recorded Efik/Ibibio creation myth of Abasi and Atai." },
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Consort of the supreme god Abasi and the immediate agent of human mortality in Ibibio/Efik cosmology. Foregrounded with Abasi as the origin-of-death narrative. Classed as deity."
+  },
+  {
+    "id": "ibibio_ndem",
+    "name": {
+      "primary": "Water Deity",
+      "alt": ["Ndem", "Idem", "Ndem Efik"],
+      "transliterations": { "efik": "Ndem", "ibibio": "Ndem" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "rivers-and-waters",
+        "contextTag": "lifelong",
+        "term": { "value": "Ndem", "script": "Ndem", "rom": "Ndem" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923), on the Ndem tutelary water-deities of the lower Cross River." }
+        ]
+      },
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923): the Ndem are territorial guardian-deities resident in particular waters." }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-the-community-waters",
+        "name": "guard the waters and well-being of a community",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Each Ndem is territorial, dwelling in a given stretch of river or creek and protecting the settlement attached to it; the Abang dance arose from worship of the Ndem water-goddess.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Ndem are the tutelary, territorial water-deities of the Efik and Ibibio of the lower Cross River, honoured (among other ways) in the Abang dance.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (Macmillan, 1923)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Class of tutelary marine/riverine deities (singular Idem) central to Efik and Ibibio worship. Spirit-class entities are classed as deity; sex given as female reflecting the prominent water-goddess aspect, though the class includes territorial guardians of varied character."
+  },
+  {
+    "id": "ibibio_ekpe",
+    "name": {
+      "primary": "Leopard Spirit",
+      "alt": ["Ekpe", "Mgbe", "Ekpo"],
+      "transliterations": { "efik": "Ekpe", "ibibio": "Ekpe" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "law-and-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "Ekpe", "script": "Ekpe", "rom": "Ekpe" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923), on the Ekpe (leopard) society and its spirit enforcing communal law." }
+        ]
+      },
+      {
+        "sphereId": "the-wilderness",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923): the society's members are held to be disciples of a forest/bush spirit embodied as a leopard." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "enforce-ancestral-law",
+        "name": "enforce the will of the ancestors on the living",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "The leopard-spirit, manifest in the masked Ekpe figure and heard in the voice of the great drum, sanctions debts, judgments, and prohibitions among the Cross River peoples.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ibibio_ekpe_masquerade",
+        "kind": "regalia",
+        "name": "leopard masquerade costume",
+        "term": { "value": "Ekpe", "script": "Ekpe", "rom": "Ekpe" },
+        "role": "The embodied form in which the leopard-spirit appears in public, visually referencing the leopard.",
+        "notes": "The masked figure is the visible manifestation of the bush-spirit; its associated graphic signs belong to the nsibidi script.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Ekpe is the leopard-spirit of the Cross River leopard society, whose masked manifestation enforces the will of the ancestors and communal law among the Efik and Ibibio.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (Macmillan, 1923)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The tutelary bush/leopard spirit of the Ekpe (Mgbe) society of the Cross River. As a spirit-being it is classed as deity per registry rules, though it is bound up with the human secret society that channels its authority; the nsibidi sign-system is associated with it."
+  },
+  {
+    "id": "nupe_soko",
+    "name": {
+      "primary": "Sky God",
+      "alt": ["Soko"],
+      "transliterations": { "nupe": "Soko" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nupe",
+    "primaryTradition": "Nupe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Soko", "script": "Soko", "rom": "Soko" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (London: Routledge & Kegan Paul, 1954), on Soko the high god identified with the sky and rain." }
+        ]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (London: Oxford University Press, 1942), on Soko as creator and sustainer." }
+        ]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-rain-from-the-sky",
+        "name": "send the rain from the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Soko, originally and properly the name of the sky itself, is the distant high god from whom rain and the sustaining order of the world descend.",
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Soko is the Nupe high god of the sky, creator and sustainer, associated with rain.",
+        "citations": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (Oxford University Press, 1942)." },
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme sky-god of the Nupe of central Nigeria, documented in detail by Nadel. The word soko denotes both the sky and the high god. Classed as deity."
+  },
+  {
+    "id": "nupe_kuti",
+    "name": {
+      "primary": "Tutelary Cult-Object",
+      "alt": ["Kuti", "Ndakó Gboyá"],
+      "transliterations": { "nupe": "kuti" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nupe",
+    "primaryTradition": "Nupe",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "kuti", "script": "kuti", "rom": "kuti" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954), on the kuti tutelary cult-objects in which spirit-power resides." }
+        ]
+      },
+      {
+        "sphereId": "protection-against-witchcraft",
+        "contextTag": "lifelong",
+        "term": { "value": "Ndakó Gboyá", "script": "Ndakó Gboyá", "rom": "Ndako Gboya" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954), on the Ndakó Gboyá cult and masquerade directed against witches." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "house-protective-spirit-power",
+        "name": "house the protective power of a tutelary spirit",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "The kuti is the material seat of a tutelary spirit, kept and served by its cult; the Ndakó Gboyá ('grandfather') tall cloth-masquerade is the most famous, summoned to hunt out and punish witches.",
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nupe_ndako_gboya_mask",
+        "kind": "regalia",
+        "name": "towering cloth ancestral masquerade",
+        "term": { "value": "Ndakó Gboyá", "script": "Ndakó Gboyá", "rom": "Ndako Gboya" },
+        "role": "The tall white-cloth tube-masquerade through which the protective ancestral spirit acts against witchcraft.",
+        "notes": "Operated by its hereditary cult; its appearance enforces order and detects witches.",
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The kuti are Nupe tutelary cult-objects in which spirit-power is seated; the foremost is Ndakó Gboyá, the cloth ancestral masquerade used against witchcraft.",
+        "citations": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." },
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium (Oxford University Press, 1942)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Represents the kuti, the Nupe class of tutelary cult-spirits embodied in sacred objects/masquerades, exemplified by Ndakó Gboyá. Spirit-class entities are classed as deity per registry rules; sex unknown as the cult-spirit has no fixed gender."
+  },
+  {
+    "id": "nupe_edegi",
+    "name": {
+      "primary": "Founder Hero",
+      "alt": ["Edegi", "Tsoede", "Tsoedigi"],
+      "transliterations": { "nupe": "Edegi" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Nupe",
+    "primaryTradition": "Nupe",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary-past" },
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Etsu", "script": "Etsu", "rom": "Etsu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (Oxford University Press, 1942), on Tsoede/Edegi as founder of the Nupe kingdom and first Etsu." }
+        ]
+      },
+      {
+        "sphereId": "culture-founding",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium (Oxford University Press, 1942)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unite-the-nupe-clans",
+        "name": "unite the scattered Nupe clans into one kingdom",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Reputed son of an Igala king and a Nupe woman, Edegi fled Idah with regalia and bronze-craft and welded the independent Nupe towns into a single kingdom as its first Etsu.",
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium (Oxford University Press, 1942)." }
+        ]
+      },
+      {
+        "id": "pluck-the-impossible-fruit",
+        "name": "pluck the unreachable palm-fruit by cunning",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "In the trickster-tinged tale, where the king's legitimate sons all fail, Edegi alone obtains the curative palm-fruit from the great oil-palm, proving his destined greatness.",
+        "sources": [
+          { "kind": "reference", "reference": "Nupe oral tradition of Tsoede/Edegi (recorded by Nadel and in Nupe king-lists)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nupe_edegi_bronze_regalia",
+        "kind": "regalia",
+        "name": "royal bronzes and regalia of Idah",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "The sacred objects Edegi is said to have brought from Idah, grounding the legitimacy of the Nupe kingship.",
+        "notes": "Tradition credits him with introducing bronze-casting and the royal insignia of the Etsu Nupe.",
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium (Oxford University Press, 1942)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Edegi (Tsoede) is the culture-hero and mythical founder of the Nupe kingdom, first Etsu Nupe, son of an Igala king and a Nupe woman.",
+        "citations": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (Oxford University Press, 1942)." },
+          { "kind": "encyclopedia", "reference": "\"Tsoede,\" Encyclopaedia Britannica (online)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Founder culture-hero of the Nupe, the 'trickster-hero' of the request. A legendary king of semi-divine paternity (Igala royal line) raised above ordinary mortals; classed as demigod and as a culture-hero tier. His cycle carries trickster motifs (the impossible-fruit test)."
+  },
+  {
+    "id": "jukun_chido",
+    "name": {
+      "primary": "Sky God",
+      "alt": ["Chido", "Cidon"],
+      "transliterations": { "jukun": "Chido" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Chido", "script": "Chido", "rom": "Chido" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-speaking Peoples of Nigeria (London: Kegan Paul, Trench, Trubner, 1931), on Chido the supreme sky-god." }
+        ]
+      },
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931), on the association of Chido with the sun, of which the divine king is held a manifestation." }
+        ]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931): Chido sends rain and ripens the corn." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-rain-ripen-the-corn",
+        "name": "send rain and ripen the corn",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As lord of the sky Chido governs the rains and the maturing of the grain, on which the kingdom's harvests depend; the divine king mediates his power.",
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Chido is the Jukun supreme sky-god, husband of the earth-goddess Ama, associated with the sun, who sends rain and ripens the corn.",
+        "citations": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-speaking Peoples of Nigeria (Kegan Paul, 1931)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sky-god of the Jukun of Wukari on the upper Benue, paired with the earth-goddess Ama; the Aku Uka divine king is regarded as a manifestation of, or son of, the gods, the sun-god paramount. Classed as deity."
+  },
+  {
+    "id": "jukun_ama",
+    "name": {
+      "primary": "Earth Goddess",
+      "alt": ["Ama", "Ma"],
+      "transliterations": { "jukun": "Ama" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Ama", "script": "Ama", "rom": "Ama" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931), on Ama the earth-goddess and world-mother, counterpart of Chido." }
+        ]
+      },
+      {
+        "sphereId": "creation-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931): Ama is the fashioner of human beings and of all that lives and grows." }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion-all-living-things",
+        "name": "fashion humans and all living things",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As earth-goddess and world-mother Ama moulds humankind and brings forth all that grows; her union with the sky-god Chido gives rise to life.",
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ama is the Jukun earth-goddess and world-mother, fashioner of humans and all living things, female counterpart and wife of the sky-god Chido.",
+        "citations": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-speaking Peoples of Nigeria (Kegan Paul, 1931)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Earth-goddess of the Jukun, world-mother and creatress, paired with the sky-god Chido; their union generates all life. Classed as deity."
+  },
+  {
+    "id": "jukun_aku_uka",
+    "name": {
+      "primary": "Divine King",
+      "alt": ["Aku Uka", "Aku Uku", "Aku"],
+      "transliterations": { "jukun": "Aku Uka" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Jukun",
+    "primaryTradition": "Jukun",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "legendary-past" },
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Aku Uka", "script": "Aku Uka", "rom": "Aku Uka" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931), on the divine kingship of the Aku Uka of Wukari." }
+        ]
+      },
+      {
+        "sphereId": "fertility-of-the-land",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931): the king's well-being is bound to the rains, sun, and harvests of the kingdom." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mediate-between-gods-and-people",
+        "name": "mediate between the gods and the people",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Held to be a manifestation/son of the gods (the sun-god paramount), the Aku Uka is the living link whose ritual condition secures rain, sunshine, and harvest; he may not be looked in the face.",
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931)." }
+        ]
+      },
+      {
+        "id": "absorb-the-kingly-soul",
+        "name": "take into himself the soul of his predecessor",
+        "term": { "value": "Aku", "script": "Aku", "rom": "Aku" },
+        "inheritability": "acquired",
+        "notes": "At installation the king ritually absorbs the divine kingly soul (Aku, 'souls of the dead'); Meek records the older rites by which the sacred status passed and was renewed.",
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "jukun_aku_uka_regalia",
+        "kind": "regalia",
+        "name": "royal cult regalia of the Aku Uka",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "The sacred insignia and veiling that mark and conceal the divine king from common gaze.",
+        "notes": "The king's sacredness curtailed direct approach; his cult centres on Wukari and the Puje harvest festival.",
+        "sources": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom (Kegan Paul, 1931)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Aku Uka of Wukari is the Jukun divine king, regarded as a manifestation of the gods (the sun-god paramount), on whose ritual condition the fertility of the kingdom depends.",
+        "citations": [
+          { "kind": "ethnography", "reference": "C. K. Meek, A Sudanese Kingdom: An Ethnographical Study of the Jukun-speaking Peoples of Nigeria (Kegan Paul, 1931)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The sacred priest-king of Jukun Wukari; the institution (rather than a single named individual) is registered here as a divine-kingship culture-hero tier. As a deified king and 'son of the gods' he is classed as demigod; vitalStatus immortal reflects the perpetual kingly soul (Aku) passed between holders rather than any one mortal reign."
+  },
+  {
+    "id": "ga_ataa_naa_nyongmo",
+    "name": {
+      "primary": "Creator God",
+      "alt": ["Ataa-Naa Nyongmo", "Nyongmo", "Nyonmo"],
+      "transliterations": { "ga": "Ataa-Naa Nyɔŋmɔ" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "other",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Ataa-Naa Nyɔŋmɔ", "script": "Ataa-Naa Nyɔŋmɔ", "rom": "Ataa-Naa Nyongmo" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (London: Oxford University Press, 1937), on Nyɔŋmɔ the supreme creator, sky-and-earth god." }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937): Nyɔŋmɔ is associated with the sky and is the source of life." }
+        ]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937): the god controls the rain, sunlight, and the growth of plants." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give-and-withhold-the-rain",
+        "name": "give and withhold the rain and sunlight",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Nyɔŋmɔ, whose name folk-etymology reads as the god 'who is both' male (Ataa) and female (Naa), controls rainfall, sunlight, and the growth of crops, and so the life of the world.",
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Ataa-Naa Nyongmo is the Ga supreme creator, a sky-and-earth god of dual male-female character who controls rain, sunlight, and plant growth.",
+        "citations": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme creator god of the Ga of coastal Ghana (Accra). The compound name is glossed 'father-mother divinity' (Ataa 'male', Naa 'female', Nyɔŋmɔ 'divinity'), expressing a dual/androgynous nature — recorded as sex 'other'. Classed as deity."
+  },
+  {
+    "id": "ga_nai",
+    "name": {
+      "primary": "Sea God",
+      "alt": ["Nai"],
+      "transliterations": { "ga": "Nai" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "the-sea",
+        "contextTag": "lifelong",
+        "term": { "value": "Nai", "script": "Nai", "rom": "Nai" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937), on Nai the sea-god and the seniority of his Wulomo." }
+        ]
+      },
+      {
+        "sphereId": "law-and-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937): the shrines of Nai, Korle and Sakumo were courts of first appeal in cases of spiritual offence." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule-the-sea-and-its-bounty",
+        "name": "rule the sea and grant its bounty",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Chief of the Ga sea-and-lagoon gods (with Korle of the lagoon and Sakumo of war), Nai governs the sea on which the coastal Ga depend; his Wulomo is the most senior of all Ga priests.",
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ga_nai_we_shrine",
+        "kind": "shrine",
+        "name": "shrine-house of the sea-god",
+        "term": { "value": "Nai We", "script": "Nai We", "rom": "Nai We" },
+        "role": "The sea-god's shrine at Accra, seat of the senior Wulomo and a court of first appeal in spiritual matters.",
+        "notes": "Served by the Nai Wulomo, foremost of the Ga priesthood.",
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nai is the Ga sea-god whose priest, the Nai Wulomo, heads the Wulomei priesthood of the Ga towns.",
+        "citations": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sea-god of the coastal Ga, chief among the great lagoon/sea deities; his priest (Wulomo) is the senior of the Ga priesthood. Classed as deity."
+  },
+  {
+    "id": "ga_kpele",
+    "name": {
+      "primary": "Town God",
+      "alt": ["Kpele gods", "Dzemawodzi", "Jemawon"],
+      "transliterations": { "ga": "kpele", "ga_pl": "dzemawɔdzi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ga",
+    "primaryTradition": "Ga",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "kpele", "script": "kpele", "rom": "kpele" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937), on the kpele gods (dzemawɔdzi) and their cult." }
+        ]
+      },
+      {
+        "sphereId": "natural-forces",
+        "contextTag": "lifelong",
+        "term": { "value": "dzemawɔdzi", "script": "dzemawɔdzi", "rom": "dzemawodzi" },
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937): the dzemawɔdzi inhabit lagoons, hills, and other natural features and speak through their mediums." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "speak-through-the-medium",
+        "name": "speak through priest and medium",
+        "term": { "value": "wɔŋ yoo", "script": "wɔŋ yoo", "rom": "wong yoo" },
+        "inheritability": "non-transferable",
+        "notes": "The kpele gods make their will known through a hereditary high-priest (Wulomo) and a female medium (wɔŋ yoo), especially in the kpele cult and its songs and dances.",
+        "sources": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The kpele gods (dzemawɔdzi) are the tutelary town/nature deities of the Ga, served by hereditary priests and female mediums in the kpele cult.",
+        "citations": [
+          { "kind": "ethnography", "reference": "M. J. Field, Religion and Medicine of the Gã People (Oxford University Press, 1937)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Represents the kpele gods / dzemawɔdzi, the class of Ga tutelary and nature deities below Nyɔŋmɔ that animate the kpele cult. Spirit-class entities are classed as deity; sex unknown as the class comprises gods of both sexes."
+  },
+  {
+    "id": "krachi_wulbari",
+    "name": {
+      "primary": "Sky God",
+      "alt": ["Wulbari", "Wuolbari", "Wurubari"],
+      "transliterations": { "krachi": "Wulbari" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Krachi",
+    "primaryTradition": "Krachi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Wulbari", "script": "Wulbari", "rom": "Wulbari" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (London: Oxford University Press, 1931), \"Of the Origin of Things,\" on Wulbari the sky-god who withdrew on high." }
+        ]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "withdraw-the-sky-from-humankind",
+        "name": "withdraw the sky on high away from humankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Wulbari first lay close upon Mother Earth, but wearied by human indignities — an old woman's pestle striking him, cooking smoke, hands wiped on him, pieces cut from him for soup — he drew up far into the sky, leaving humankind to strain toward him in prayer.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Wulbari is the Krachi (Guang) sky-god who once lay close to the earth and withdrew upward after repeated human indignities, and who in tales is matched against the spider Ananse.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931)." },
+          { "kind": "reference", "reference": "\"Wulbari,\" Oxford Reference (Dictionary of African Mythology), entry on the withdrawn Krachi sky-god." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Supreme withdrawn sky-god of the Krachi and related Guang peoples of the Volta region. The 'withdrawal of the sky' aetiology is his defining myth; he features as antagonist/patron in the Ananse trickster cycle. Classed as deity."
+  },
+  {
+    "id": "krachi_ananse",
+    "name": {
+      "primary": "Spider Trickster",
+      "alt": ["Ananse", "Anansi"],
+      "transliterations": { "krachi": "Ananse" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Krachi",
+    "primaryTradition": "Krachi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "trickery-and-cunning",
+        "contextTag": "lifelong",
+        "term": { "value": "Ananse", "script": "Ananse", "rom": "Ananse" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931), on the Krachi tales of Ananse the spider and Wulbari." }
+        ]
+      },
+      {
+        "sphereId": "wisdom-and-knowledge",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "outwit-the-sky-god",
+        "name": "outwit the sky-god by cunning",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "As captain of Wulbari's guard, Ananse begs a single corn-cob and by a chain of clever exchanges parlays it upward, repeatedly besting and embarrassing the sky-god in the Krachi tales.",
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931), \"Anansi and the corn-cob.\"" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Krachi tradition Ananse the spider is captain of Wulbari's court and the trickster who repeatedly outwits the sky-god.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931)." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The spider trickster of the Krachi Ananse cycle recorded by Cardinall, here distinct from the separately-registered Akan Anansi. A trickster culture-hero of more-than-human cunning paired with the sky-god; classed as demigod per the rule that culture-heroes take deity/demigod."
+  },
+  {
+    "id": "krachi_dente",
+    "name": {
+      "primary": "Oracle God",
+      "alt": ["Dente", "Odente", "Krachi Dente"],
+      "transliterations": { "krachi": "Dente" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Krachi",
+    "primaryTradition": "Krachi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "oracles-and-divination",
+        "contextTag": "lifelong",
+        "term": { "value": "Dente", "script": "Dente", "rom": "Dente" },
+        "sources": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931), on the great oracle-god Dente of Krachi." }
+        ]
+      },
+      {
+        "sphereId": "rivers-and-waters",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "reference", "reference": "Records of the Krachi Dente oracle, a Guan deity seated in a riverside cave whose shrine on the Volta drew pilgrims from across West Africa." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deliver-oracles-from-the-cave",
+        "name": "deliver oracles from the sacred cave",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Dente speaks through his priesthood at Kete Krachi; his cave-oracle on the Volta was consulted from across the region and was among the most revered deities of the precolonial Asante world.",
+        "sources": [
+          { "kind": "reference", "reference": "Records of the Krachi Dente oracle and its priesthood at Kete Krachi." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "krachi_dente_cave_shrine",
+        "kind": "shrine",
+        "name": "cave oracle-shrine on the Volta",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "The forest cave by the Volta where the god gives his oracles, drawing pilgrims from across West Africa.",
+        "notes": "Seat of the Dente priesthood at Kete Krachi.",
+        "sources": [
+          { "kind": "reference", "reference": "Records of the Krachi Dente oracle at Kete Krachi." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Dente is the great Guang/Krachi oracle-god seated in a riverside cave at Kete Krachi on the Volta, consulted across precolonial West Africa.",
+        "citations": [
+          { "kind": "ethnography", "reference": "A. W. Cardinall, Tales Told in Togoland (Oxford University Press, 1931)." },
+          { "kind": "reference", "reference": "Records of the Krachi Dente oracle at Kete Krachi." }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Renowned oracle-deity of the Krachi (Guang) of the Volta region, distinct from the withdrawn sky-god Wulbari; his cave-oracle was a pan-regional pilgrimage centre. Classed as deity."
+  },
+  {
+    "id": "ijaw_egbesu",
+    "name": {
+      "primary": "War God",
+      "alt": ["Egbesu"],
+      "transliterations": { "izon": "Egbesu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ijaw",
+    "primaryTradition": "Ijaw",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "Egbesu", "script": "Egbesu", "rom": "Egbesu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932), on the war- and justice-spirits of the Ijaw." }
+        ]
+      },
+      {
+        "sphereId": "justice",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "reference", "reference": "Ijaw oral tradition of Egbesu as the deity of warranted war and protection." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shield-the-just-warrior",
+        "name": "shield the warrior who fights in a just cause",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "Egbesu is held to protect those who take up arms in a righteous cause and to punish unjust violence, so that his power attaches only to warranted war.",
+        "sources": [
+          { "kind": "reference", "reference": "Ijaw oral tradition of Egbesu." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Egbesu is the Ijaw deity of war and justice, protector of those who fight in a just cause.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Tribes of the Niger Delta (Sheldon Press, 1932)." }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "War-and-justice deity of the Ijaw, named in some traditions alongside Tamuno and Woyengi as a face of divine power. Classed as deity."
+  },
+  {
+    "id": "ibibio_abasi_isong",
+    "name": {
+      "primary": "Earth Goddess",
+      "alt": ["Abasi Isong", "Isong"],
+      "transliterations": { "ibibio": "Abasi Isong", "efik": "Abasi Isong" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ibibio",
+    "primaryTradition": "Ibibio",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Abasi Isong", "script": "Abasi Isong", "rom": "Abasi Isong" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923), on the earth-deity (Isong) complementing the sky-god Abasi." }
+        ]
+      },
+      {
+        "sphereId": "fertility-of-the-land",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923): the earth gives fertile soil for crops and clay for pottery." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "yield-the-fruits-of-the-soil",
+        "name": "yield the crops and the potter's clay",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The earth-goddess is credited with the fertile land that bears crops and the clay from which pots are made, the productive counterpart to Abasi the sky-god.",
+        "sources": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria (Macmillan, 1923)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Abasi Isong is the Ibibio/Efik earth-goddess, source of fertile land for crops and clay for pottery, complementing the sky-god Abasi.",
+        "citations": [
+          { "kind": "ethnography", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (Macmillan, 1923)." }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Earth-deity of the Ibibio and Efik (isong, 'earth/land'), the productive earth counterpart to the sky-god Abasi Ibom enyong. Distinct from Atai, the consort who looses death. Classed as deity."
+  },
+  {
+    "id": "nupe_gunnu",
+    "name": {
+      "primary": "Ancestral Cult-Spirit",
+      "alt": ["Gunnu", "Gunnuko"],
+      "transliterations": { "nupe": "gunnu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nupe",
+    "primaryTradition": "Nupe",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "ancestral-cult",
+        "contextTag": "lifelong",
+        "term": { "value": "gunnu", "script": "gunnu", "rom": "gunnu" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954), on the gunnu cult and its hereditary priest." }
+        ]
+      },
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "renew-the-community-through-the-cult",
+        "name": "renew the community through its hereditary cult",
+        "term": { "value": "Ndazo", "script": "Ndazo", "rom": "Ndazo" },
+        "inheritability": "non-transferable",
+        "notes": "The gunnu spirit is served by a hereditary priest, the Gunnuko ('Great gunnu') or Ndazo ('the rare man'), whose rites secure the fertility and welfare of the community.",
+        "sources": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The gunnu is a Nupe communal cult-spirit served by the hereditary priest Gunnuko (Ndazo), concerned with fertility and the welfare of the community.",
+        "citations": [
+          { "kind": "ethnography", "reference": "S. F. Nadel, Nupe Religion (Routledge & Kegan Paul, 1954)." },
+          { "kind": "ethnography", "reference": "S. F. Nadel, A Black Byzantium (Oxford University Press, 1942)." }
+        ],
+        "weight": "supporting"
+      }
+    ],
+    "notes": "Communal cult-spirit of the Nupe, distinct from the protective kuti/Ndakó Gboyá masquerade; served by the hereditary Gunnuko priesthood. Spirit-class entity classed as deity; sex unknown."
+  }
+]
+```
+
+Sanity check: I re-read the schema and hard rules and verified my output against them. All 25 figures use `type` from the permitted set (deity/demigod only — spirit-classes like owu, kuti, Ndem, Ekpe, kpele, gunnu are deity with explanatory notes; culture-heroes Ogboinba, Edegi, Aku Uka, Ananse are demigod); every `id` is snake_case `<tradition>_<name>` and none collide with `/home/user/PantheonRepository/data-sources/existing-ids.json` (checked — no `ijaw_`/`ibibio_`/`nupe_`/`jukun_`/`ga_`/`krachi_` prefixes exist there). English/plain word leads every `name.primary`; native attested terms sit in `term` (Latin orthography + rom, with Ga using ɔ/ŋ where attested), glosses live in notes, and unrecorded terms are `""` rather than disclaimers. Domains, faculties (verb-phrases), and materialCulture are kept distinct; materialCulture uses `id`/`name` keys (never `item`) and is `[]` where nothing is attested. `origin` is "canon" throughout, and citations point to the real named ethnographies (Talbot, Nadel, Meek, Field, Cardinall) with no fabrication markers. I did not modify any repo files.
+
+I targeted ~26 and delivered 25 figures, foregrounding the creatress Woyengi and the Abasi-&-Atai origin-of-death as requested; coverage spans all six absent traditions — Ijaw (Woyengi, Tamuno, Ogboinba, Adumu/owu, Egbesu), Ibibio/Efik (Abasi, Atai, Ndem, Ekpe, Abasi Isong), Nupe (Soko, kuti/Ndakó Gboyá, Edegi, gunnu), Jukun (Chido, Ama, Aku Uka), Ga (Ataa-Naa Nyongmo, Nai, kpele), and Krachi (Wulbari, Ananse, Dente).
+
+One caveat worth flagging: web-search returned solid theology and the correct ethnographies, but several page bodies (Wikipedia, Grokipedia) 403'd on direct fetch, so a few precise native-language spellings (e.g., exact Ijaw orthography for Tamuno/Temearau, Jukun diacritics) rest on aggregated summaries rather than a verified primary page; I set uncertain terms to `""` rather than guess.
+
+result: Authored a 25-figure comparative-mythology JSON registry (returned inline above) covering the six absent West African traditions — Ijaw, Ibibio/Efik, Nupe, Jukun, Ga, Krachi — foregrounding the Ijaw creatress Woyengi and the Ibibio Abasi-&-Atai origin-of-death, schema-compliant with snake_case non-colliding IDs and citations to the named ethnographies (Talbot, Nadel, Meek, Field, Cardinall); no repo files modified.

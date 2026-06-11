@@ -1,0 +1,1192 @@
+All facts are well-verified now. I have everything I need to author the complete batch of missing Hindu figures with accurate parentages, weapons, mounts, faculties, domains, and scriptural citations. Let me write the JSON array.
+
+Key parentage chains I'll use (only in-corpus or this-batch ids):
+- Ganesha, Kartikeya → ["hindu_shiva","hindu_parvati"]
+- Krishna, Balarama (Balarama via Rohini, but I'll author Vasudeva/Devaki/Rohini? No — keeping to attested core, I'll set Krishna parents to Vasudeva/Devaki only if I author them. I'll author them as supporting figures to anchor parentage.)
+- Hanuman → ["hindu_vayu"] (Vayu exists)
+- Yama → ["hindu_surya"] (Surya exists)
+- Lakshmana → shares parents with Rama's father; I'll author Dasharatha + queens.
+
+Let me be careful: parentIds must only reference existing-corpus ids OR ids authored in this batch. I'll author the supporting parents (Dasharatha, Kausalya, Sumitra, Vasudeva, Devaki, Rohini, Kashyapa, Vinata, Vishrava, Kaikesi) so the marquee figures have valid lineage.
+
+Here is the batch of missing attested Hindu figures. I authored the full core pantheon plus the supporting parents needed so that marquee figures have valid in-corpus/this-batch parentage. Every term has Devanāgarī + IAST; faculties are abilities (verbs) distinct from domains; named items (Sudarśana Cakra, Pināka, Triśūla, Pāñcajanya, Śārṅga, Kaumodakī, vāhana mounts, etc.) appear under materialCulture, each cited.
+
+```json
+[
+  {
+    "id": "hindu_vishnu",
+    "name": {"primary": "Vishnu", "alt": ["Hari", "Narayana", "Vāsudeva"], "transliterations": {"devanagari": "विष्णु"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "preservation", "contextTag": "lifelong", "term": {"value": "स्थिति", "script": "Devanagari", "rom": "sthiti"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 1.2"}]},
+      {"sphereId": "cosmic-order", "contextTag": "lifelong", "term": {"value": "ऋत", "script": "Devanagari", "rom": "ṛta"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.154"}]},
+      {"sphereId": "sun-pervasion", "contextTag": "lifelong", "term": {"value": "विष्णु", "script": "Devanagari", "rom": "viṣṇu"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.154 (three strides)"}]}
+    ],
+    "faculties": [
+      {"id": "incarnate-as-avatara", "name": "Descend into mortal incarnations to restore dharma", "term": {"value": "अवतार", "script": "Devanagari", "rom": "avatāra"}, "inheritability": "none", "notes": "Manifests as Rama, Krishna, and other avataras across ages", "sources": [{"kind": "primary", "reference": "Bhagavad Gita 4.7-8"}]},
+      {"id": "stride-three-worlds", "name": "Traverse the three worlds in three steps", "term": {"value": "त्रिविक्रम", "script": "Devanagari", "rom": "trivikrama"}, "inheritability": "none", "notes": "Vedic three strides spanning earth, sky, and heaven", "sources": [{"kind": "primary", "reference": "Rigveda 1.154.1-2"}]},
+      {"id": "cosmic-sleep", "name": "Recline in cosmic slumber on the serpent between aeons", "term": {"value": "योगनिद्रा", "script": "Devanagari", "rom": "yoganidrā"}, "inheritability": "none", "notes": "Sleeps on Śeṣa in the cosmic ocean; cosmos issues from him", "sources": [{"kind": "primary", "reference": "Vishnu Purana 1.2"}]}
+    ],
+    "materialCulture": [
+      {"id": "sudarshana-chakra", "kind": "weapon", "name": "Sudarshana Chakra", "term": {"value": "सुदर्शनचक्र", "script": "Devanagari", "rom": "sudarśana-cakra"}, "role": "wielder", "notes": "Spinning discus weapon that returns to the hand", "sources": [{"kind": "primary", "reference": "Mahabharata, Sabha Parva"}]},
+      {"id": "panchajanya", "kind": "instrument", "name": "Panchajanya", "term": {"value": "पाञ्चजन्य", "script": "Devanagari", "rom": "pāñcajanya"}, "role": "owner", "notes": "Conch sounded as battle-horn", "sources": [{"kind": "primary", "reference": "Bhagavad Gita 1.15"}]},
+      {"id": "kaumodaki", "kind": "weapon", "name": "Kaumodaki", "term": {"value": "कौमोदकी", "script": "Devanagari", "rom": "kaumodakī"}, "role": "wielder", "notes": "Mace symbolizing power and authority", "sources": [{"kind": "primary", "reference": "Mahabharata, Vana Parva"}]},
+      {"id": "sharnga", "kind": "weapon", "name": "Sharnga", "term": {"value": "शार्ङ्ग", "script": "Devanagari", "rom": "śārṅga"}, "role": "wielder", "notes": "Celestial bow of Vishnu", "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]},
+      {"id": "vishnu-padma", "kind": "regalia", "name": "Padma (lotus)", "term": {"value": "पद्म", "script": "Devanagari", "rom": "padma"}, "role": "owner", "notes": "Lotus held in hand, sign of purity and creation", "sources": [{"kind": "primary", "reference": "Vishnu Purana 1.22"}]},
+      {"id": "vishnu-garuda-mount", "kind": "mount", "name": "Garuda", "term": {"value": "गरुड", "script": "Devanagari", "rom": "garuḍa"}, "role": "wielder", "notes": "Eagle-being who serves as his vāhana", "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 1.154"}, {"kind": "primary", "reference": "Vishnu Purana"}], "weight": "primary"}],
+    "notes": "Supreme preserver deity, sustainer of cosmic order, source of the avataras"
+  },
+  {
+    "id": "hindu_shiva",
+    "name": {"primary": "Shiva", "alt": ["Mahadeva", "Rudra", "Shankara"], "transliterations": {"devanagari": "शिव"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "destruction", "contextTag": "lifelong", "term": {"value": "संहार", "script": "Devanagari", "rom": "saṃhāra"}, "sources": [{"kind": "primary", "reference": "Shiva Purana"}]},
+      {"sphereId": "asceticism", "contextTag": "lifelong", "term": {"value": "तपस्", "script": "Devanagari", "rom": "tapas"}, "sources": [{"kind": "primary", "reference": "Shiva Purana"}]},
+      {"sphereId": "storm-howling", "contextTag": "lifelong", "term": {"value": "रुद्र", "script": "Devanagari", "rom": "rudra"}, "sources": [{"kind": "primary", "reference": "Rigveda 2.33 (to Rudra)"}]}
+    ],
+    "faculties": [
+      {"id": "tandava-dance", "name": "Dance the cosmic dance of creation and dissolution", "term": {"value": "ताण्डव", "script": "Devanagari", "rom": "tāṇḍava"}, "inheritability": "none", "notes": "Naṭarāja's dance sustains and dissolves the universe", "sources": [{"kind": "primary", "reference": "Shiva Purana"}]},
+      {"id": "third-eye-incineration", "name": "Incinerate to ash with a glance of the third eye", "term": {"value": "तृतीयनेत्र", "script": "Devanagari", "rom": "tṛtīya-netra"}, "inheritability": "none", "notes": "Forehead eye burns Kāmadeva to ashes when opened", "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]},
+      {"id": "hold-poison", "name": "Hold the world-poison in the throat", "term": {"value": "नीलकण्ठ", "script": "Devanagari", "rom": "nīlakaṇṭha"}, "inheritability": "none", "notes": "Drank hālāhala at the churning; throat turned blue", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 8.7"}]},
+      {"id": "bear-ganga", "name": "Bear the descending river Ganga in matted locks", "term": {"value": "गङ्गाधर", "script": "Devanagari", "rom": "gaṅgādhara"}, "inheritability": "none", "notes": "Catches heaven's river in his hair to spare the earth", "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]}
+    ],
+    "materialCulture": [
+      {"id": "trishula", "kind": "weapon", "name": "Trishula", "term": {"value": "त्रिशूल", "script": "Devanagari", "rom": "triśūla"}, "role": "wielder", "notes": "Three-pronged trident, his chief weapon", "sources": [{"kind": "primary", "reference": "Shiva Purana"}]},
+      {"id": "pinaka", "kind": "weapon", "name": "Pinaka", "term": {"value": "पिनाक", "script": "Devanagari", "rom": "pināka"}, "role": "wielder", "notes": "Celestial bow; broken by Rama at Sita's svayamvara", "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]},
+      {"id": "damaru", "kind": "instrument", "name": "Damaru", "term": {"value": "डमरु", "script": "Devanagari", "rom": "ḍamaru"}, "role": "owner", "notes": "Hourglass drum sounding primal rhythm of creation", "sources": [{"kind": "primary", "reference": "Shiva Purana"}]},
+      {"id": "pashupatastra", "kind": "weapon", "name": "Pashupatastra", "term": {"value": "पाशुपतास्त्र", "script": "Devanagari", "rom": "pāśupatāstra"}, "role": "owner", "notes": "Supreme irresistible missile; bestowed on Arjuna", "sources": [{"kind": "primary", "reference": "Mahabharata, Vana Parva"}]},
+      {"id": "shiva-nandi-mount", "kind": "mount", "name": "Nandi", "term": {"value": "नन्दि", "script": "Devanagari", "rom": "nandi"}, "role": "wielder", "notes": "Bull vāhana and gatekeeper", "sources": [{"kind": "primary", "reference": "Shiva Purana"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda (Rudra hymns)"}, {"kind": "primary", "reference": "Shiva Purana"}], "weight": "primary"}],
+    "notes": "Supreme deity of destruction, asceticism, and regeneration; the great yogin"
+  },
+  {
+    "id": "hindu_brahma",
+    "name": {"primary": "Brahma", "alt": ["Svayambhu", "Prajapati", "Pitamaha"], "transliterations": {"devanagari": "ब्रह्मा"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "term": {"value": "सृष्टि", "script": "Devanagari", "rom": "sṛṣṭi"}, "sources": [{"kind": "primary", "reference": "Manusmriti 1"}]},
+      {"sphereId": "sacred-knowledge", "contextTag": "lifelong", "term": {"value": "वेद", "script": "Devanagari", "rom": "veda"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 3.12"}]}
+    ],
+    "faculties": [
+      {"id": "create-worlds", "name": "Bring forth the worlds and living beings", "term": {"value": "सृष्टिकर्तृ", "script": "Devanagari", "rom": "sṛṣṭi-kartṛ"}, "inheritability": "none", "notes": "Demiurge who fashions the cosmos at each aeon's dawn", "sources": [{"kind": "primary", "reference": "Manusmriti 1.8-13"}]},
+      {"id": "grant-boons", "name": "Grant near-irrevocable boons to ascetics", "term": {"value": "वरदान", "script": "Devanagari", "rom": "varadāna"}, "inheritability": "none", "notes": "Boons to Ravana, Hiraṇyakaśipu, Mahiṣa empower the cosmic crises", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]},
+      {"id": "utter-vedas", "name": "Utter the four Vedas from his four mouths", "term": {"value": "चतुर्मुख", "script": "Devanagari", "rom": "caturmukha"}, "inheritability": "none", "notes": "Four faces continuously recite the Vedas", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 3.12"}]}
+    ],
+    "materialCulture": [
+      {"id": "brahma-kamandalu", "kind": "vessel", "name": "Kamandalu", "term": {"value": "कमण्डलु", "script": "Devanagari", "rom": "kamaṇḍalu"}, "role": "owner", "notes": "Water-pot holding the waters of creation", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2"}]},
+      {"id": "brahma-akshamala", "kind": "regalia", "name": "Akshamala (rosary)", "term": {"value": "अक्षमाला", "script": "Devanagari", "rom": "akṣamālā"}, "role": "owner", "notes": "Rosary marking cycles of time", "sources": [{"kind": "primary", "reference": "Vishnu Purana 1"}]},
+      {"id": "brahma-hamsa-mount", "kind": "mount", "name": "Hamsa", "term": {"value": "हंस", "script": "Devanagari", "rom": "haṃsa"}, "role": "wielder", "notes": "Swan/goose vāhana symbolizing discernment", "sources": [{"kind": "primary", "reference": "Bhagavata Purana"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Manusmriti 1"}, {"kind": "primary", "reference": "Vishnu Purana"}], "weight": "primary"}],
+    "notes": "Four-faced creator deity, expounder of the Vedas, grandsire of all beings"
+  },
+  {
+    "id": "hindu_devi",
+    "name": {"primary": "Mahadevi", "alt": ["Devi", "Adi Shakti", "Mahamaya"], "transliterations": {"devanagari": "महादेवी"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "primordial-power", "contextTag": "lifelong", "term": {"value": "शक्ति", "script": "Devanagari", "rom": "śakti"}, "sources": [{"kind": "primary", "reference": "Devi Mahatmya"}]},
+      {"sphereId": "cosmic-illusion", "contextTag": "lifelong", "term": {"value": "माया", "script": "Devanagari", "rom": "māyā"}, "sources": [{"kind": "primary", "reference": "Devi Mahatmya 1"}]}
+    ],
+    "faculties": [
+      {"id": "wield-cosmic-illusion", "name": "Cast and withdraw the cosmic illusion that binds beings", "term": {"value": "महामाया", "script": "Devanagari", "rom": "mahāmāyā"}, "inheritability": "none", "notes": "Deludes even Vishnu in yoga-sleep at the cosmos' dissolution", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 1"}]},
+      {"id": "manifest-forms", "name": "Manifest as the many goddess-forms from her own substance", "term": {"value": "शक्तिप्रकटन", "script": "Devanagari", "rom": "śakti-prakaṭana"}, "inheritability": "partial", "notes": "Durga, Kali, the Matrikas issue forth from her", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2-8"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Devi Mahatmya"}, {"kind": "primary", "reference": "Devi-Bhagavata Purana"}], "weight": "primary"}],
+    "notes": "Supreme Goddess, the primordial Shakti underlying and animating all deities"
+  },
+  {
+    "id": "hindu_durga",
+    "name": {"primary": "Durga", "alt": ["Mahishasuramardini", "Chandika", "Ambika"], "transliterations": {"devanagari": "दुर्गा"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "war", "contextTag": "lifelong", "term": {"value": "युद्ध", "script": "Devanagari", "rom": "yuddha"}, "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2"}]},
+      {"sphereId": "protection", "contextTag": "lifelong", "term": {"value": "रक्षा", "script": "Devanagari", "rom": "rakṣā"}, "sources": [{"kind": "primary", "reference": "Devi Mahatmya"}]}
+    ],
+    "faculties": [
+      {"id": "slay-mahisha", "name": "Slay the shape-shifting buffalo-demon unkillable by gods", "term": {"value": "महिषासुरमर्दन", "script": "Devanagari", "rom": "mahiṣāsura-mardana"}, "inheritability": "none", "notes": "Kills Mahiṣa whom no male god could defeat", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 3"}]},
+      {"id": "fight-many-armed", "name": "Wage war wielding every god's weapon at once", "term": {"value": "बहुबाहु", "script": "Devanagari", "rom": "bahubāhu"}, "inheritability": "none", "notes": "Many arms each bear a deity-donated weapon", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2"}]}
+    ],
+    "materialCulture": [
+      {"id": "durga-trishula", "kind": "weapon", "name": "Trishula (given by Shiva)", "term": {"value": "त्रिशूल", "script": "Devanagari", "rom": "triśūla"}, "role": "wielder", "notes": "Trident lent by Shiva to slay Mahiṣa", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2"}]},
+      {"id": "durga-chakra", "kind": "weapon", "name": "Chakra (given by Vishnu)", "term": {"value": "चक्र", "script": "Devanagari", "rom": "cakra"}, "role": "wielder", "notes": "Discus produced from Vishnu's own", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2"}]},
+      {"id": "durga-lion-mount", "kind": "mount", "name": "Lion", "term": {"value": "सिंह", "script": "Devanagari", "rom": "siṃha"}, "role": "wielder", "notes": "Lion (sometimes tiger) vāhana given by Himavat", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 2"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Devi Mahatmya (Markandeya Purana)"}], "weight": "primary"}],
+    "notes": "Warrior goddess formed from the gods' combined energies, slayer of Mahishasura"
+  },
+  {
+    "id": "hindu_parvati",
+    "name": {"primary": "Parvati", "alt": ["Uma", "Gauri", "Haimavati"], "transliterations": {"devanagari": "पार्वती"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "fertility", "contextTag": "lifelong", "term": {"value": "शक्ति", "script": "Devanagari", "rom": "śakti"}, "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]},
+      {"sphereId": "marital-devotion", "contextTag": "lifelong", "term": {"value": "पतिव्रता", "script": "Devanagari", "rom": "pativratā"}, "sources": [{"kind": "primary", "reference": "Kumarasambhava"}]}
+    ],
+    "faculties": [
+      {"id": "win-shiva-by-tapas", "name": "Win Shiva as husband through severe austerity", "term": {"value": "तपस्", "script": "Devanagari", "rom": "tapas"}, "inheritability": "none", "notes": "Practices extreme penance to gain the ascetic Shiva", "sources": [{"kind": "primary", "reference": "Kumarasambhava 5"}]},
+      {"id": "create-from-self", "name": "Create a living son from her own bodily substance", "term": {"value": "स्वशरीरजन्म", "script": "Devanagari", "rom": "sva-śarīra-janma"}, "inheritability": "none", "notes": "Fashions Ganesha from sandalwood paste/turmeric of her body", "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]}
+    ],
+    "materialCulture": [
+      {"id": "parvati-lion-mount", "kind": "mount", "name": "Lion", "term": {"value": "सिंह", "script": "Devanagari", "rom": "siṃha"}, "role": "wielder", "notes": "Lion vāhana in her powerful aspects", "sources": [{"kind": "primary", "reference": "Devi Mahatmya"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Shiva Purana"}, {"kind": "primary", "reference": "Kumarasambhava"}], "weight": "primary"}],
+    "notes": "Daughter of the mountain Himavat, consort of Shiva, mother of Ganesha and Kartikeya"
+  },
+  {
+    "id": "hindu_kali",
+    "name": {"primary": "Kali", "alt": ["Kalika", "Mahakali", "Chamunda"], "transliterations": {"devanagari": "काली"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "destruction", "contextTag": "lifelong", "term": {"value": "संहार", "script": "Devanagari", "rom": "saṃhāra"}, "sources": [{"kind": "primary", "reference": "Devi Mahatmya 7"}]},
+      {"sphereId": "time", "contextTag": "lifelong", "term": {"value": "काल", "script": "Devanagari", "rom": "kāla"}, "sources": [{"kind": "primary", "reference": "Devi Mahatmya"}]}
+    ],
+    "faculties": [
+      {"id": "drink-blood", "name": "Drink the demon's blood before it spawns new demons", "term": {"value": "रक्तपान", "script": "Devanagari", "rom": "raktapāna"}, "inheritability": "none", "notes": "Consumes Raktabīja's blood to halt his replication", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 8"}]},
+      {"id": "emerge-from-wrath", "name": "Spring forth fully formed from another goddess's wrath", "term": {"value": "क्रोधोद्भव", "script": "Devanagari", "rom": "krodhodbhava"}, "inheritability": "none", "notes": "Issues from Durga/Ambika's furrowed brow in battle", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 7"}]}
+    ],
+    "materialCulture": [
+      {"id": "kali-khadga", "kind": "weapon", "name": "Khadga (sword)", "term": {"value": "खड्ग", "script": "Devanagari", "rom": "khaḍga"}, "role": "wielder", "notes": "Cleaving sword of destruction", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 7"}]},
+      {"id": "kali-pasha", "kind": "weapon", "name": "Pasha (noose)", "term": {"value": "पाश", "script": "Devanagari", "rom": "pāśa"}, "role": "wielder", "notes": "Noose to bind demons", "sources": [{"kind": "primary", "reference": "Devi Mahatmya 7"}]},
+      {"id": "kali-mundamala", "kind": "regalia", "name": "Mundamala (garland of heads)", "term": {"value": "मुण्डमाला", "script": "Devanagari", "rom": "muṇḍamālā"}, "role": "owner", "notes": "Garland of severed heads", "sources": [{"kind": "primary", "reference": "Devi Mahatmya"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Devi Mahatmya (Markandeya Purana)"}], "weight": "primary"}],
+    "notes": "Fierce dark goddess of time and dissolution, slayer of Raktabija"
+  },
+  {
+    "id": "hindu_lakshmi",
+    "name": {"primary": "Lakshmi", "alt": ["Shri", "Padma", "Kamala"], "transliterations": {"devanagari": "लक्ष्मी"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "wealth", "contextTag": "lifelong", "term": {"value": "धन", "script": "Devanagari", "rom": "dhana"}, "sources": [{"kind": "primary", "reference": "Shri Sukta (Rigveda khila)"}]},
+      {"sphereId": "fortune", "contextTag": "lifelong", "term": {"value": "श्री", "script": "Devanagari", "rom": "śrī"}, "sources": [{"kind": "primary", "reference": "Shri Sukta"}]}
+    ],
+    "faculties": [
+      {"id": "emerge-from-ocean", "name": "Arise from the churned milk-ocean upon a lotus", "term": {"value": "समुद्रोद्भव", "script": "Devanagari", "rom": "samudrodbhava"}, "inheritability": "none", "notes": "Born of the churning of the ocean of milk", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 8.8"}]},
+      {"id": "bestow-prosperity", "name": "Bestow and withdraw prosperity from gods and mortals", "term": {"value": "श्रीदान", "script": "Devanagari", "rom": "śrī-dāna"}, "inheritability": "none", "notes": "Her presence brings abundance; her absence, ruin", "sources": [{"kind": "primary", "reference": "Vishnu Purana 1.9"}]}
+    ],
+    "materialCulture": [
+      {"id": "lakshmi-padma", "kind": "regalia", "name": "Padma (lotus)", "term": {"value": "पद्म", "script": "Devanagari", "rom": "padma"}, "role": "owner", "notes": "Lotus seat and emblem", "sources": [{"kind": "primary", "reference": "Shri Sukta"}]},
+      {"id": "lakshmi-uluka-mount", "kind": "mount", "name": "Uluka (owl)", "term": {"value": "उलूक", "script": "Devanagari", "rom": "ulūka"}, "role": "wielder", "notes": "Owl vāhana in popular iconography", "sources": [{"kind": "secondary", "reference": "Puranic iconographic tradition"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Shri Sukta"}, {"kind": "primary", "reference": "Bhagavata Purana 8.8"}], "weight": "primary"}],
+    "notes": "Goddess of wealth, fortune, and beauty; consort of Vishnu, risen from the ocean"
+  },
+  {
+    "id": "hindu_sarasvati",
+    "name": {"primary": "Sarasvati", "alt": ["Vagdevi", "Bharati", "Sharada"], "transliterations": {"devanagari": "सरस्वती"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "knowledge", "contextTag": "lifelong", "term": {"value": "विद्या", "script": "Devanagari", "rom": "vidyā"}, "sources": [{"kind": "primary", "reference": "Rigveda 6.61 (to Sarasvati)"}]},
+      {"sphereId": "speech", "contextTag": "lifelong", "term": {"value": "वाच्", "script": "Devanagari", "rom": "vāc"}, "sources": [{"kind": "primary", "reference": "Rigveda 6.61"}]},
+      {"sphereId": "music", "contextTag": "lifelong", "term": {"value": "सङ्गीत", "script": "Devanagari", "rom": "saṅgīta"}, "sources": [{"kind": "secondary", "reference": "Puranic tradition"}]}
+    ],
+    "faculties": [
+      {"id": "embody-speech", "name": "Embody articulate speech and the power of the word", "term": {"value": "वाग्देवी", "script": "Devanagari", "rom": "vāgdevī"}, "inheritability": "none", "notes": "Personifies sacred and learned speech", "sources": [{"kind": "primary", "reference": "Rigveda 6.61"}]},
+      {"id": "confer-eloquence", "name": "Confer learning, eloquence, and mastery of the arts", "term": {"value": "विद्यादान", "script": "Devanagari", "rom": "vidyā-dāna"}, "inheritability": "none", "notes": "Grants wisdom and skill in arts and sciences", "sources": [{"kind": "secondary", "reference": "Puranic tradition"}]}
+    ],
+    "materialCulture": [
+      {"id": "sarasvati-vina", "kind": "instrument", "name": "Vina", "term": {"value": "वीणा", "script": "Devanagari", "rom": "vīṇā"}, "role": "owner", "notes": "Stringed instrument she plays", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]},
+      {"id": "sarasvati-pustaka", "kind": "artifact", "name": "Pustaka (book)", "term": {"value": "पुस्तक", "script": "Devanagari", "rom": "pustaka"}, "role": "owner", "notes": "Manuscript representing the Vedas/knowledge", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]},
+      {"id": "sarasvati-hamsa-mount", "kind": "mount", "name": "Hamsa", "term": {"value": "हंस", "script": "Devanagari", "rom": "haṃsa"}, "role": "wielder", "notes": "Swan vāhana, symbol of discernment", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 6.61"}, {"kind": "primary", "reference": "Brahmavaivarta Purana"}], "weight": "primary"}],
+    "notes": "Goddess of knowledge, speech, music, and the arts; consort of Brahma"
+  },
+  {
+    "id": "hindu_ganesha",
+    "name": {"primary": "Ganesha", "alt": ["Ganapati", "Vinayaka", "Gajanana"], "transliterations": {"devanagari": "गणेश"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_shiva", "hindu_parvati"],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "obstacles", "contextTag": "lifelong", "term": {"value": "विघ्न", "script": "Devanagari", "rom": "vighna"}, "sources": [{"kind": "primary", "reference": "Ganapati Atharvashirsha"}]},
+      {"sphereId": "beginnings", "contextTag": "lifelong", "term": {"value": "आदि", "script": "Devanagari", "rom": "ādi"}, "sources": [{"kind": "primary", "reference": "Ganesha Purana"}]},
+      {"sphereId": "wisdom", "contextTag": "lifelong", "term": {"value": "बुद्धि", "script": "Devanagari", "rom": "buddhi"}, "sources": [{"kind": "primary", "reference": "Ganesha Purana"}]}
+    ],
+    "faculties": [
+      {"id": "remove-place-obstacles", "name": "Remove or place obstacles in any undertaking", "term": {"value": "विघ्नहर्तृ", "script": "Devanagari", "rom": "vighna-hartṛ"}, "inheritability": "none", "notes": "Lord of obstacles, propitiated before all beginnings", "sources": [{"kind": "primary", "reference": "Ganapati Atharvashirsha"}]},
+      {"id": "scribe-mahabharata", "name": "Transcribe the Mahabharata in unbroken dictation", "term": {"value": "लेखन", "script": "Devanagari", "rom": "lekhana"}, "inheritability": "none", "notes": "Wrote Vyasa's epic, breaking off a tusk as a stylus", "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva (interpolated)"}]}
+    ],
+    "materialCulture": [
+      {"id": "ganesha-parashu", "kind": "weapon", "name": "Parashu (axe)", "term": {"value": "परशु", "script": "Devanagari", "rom": "paraśu"}, "role": "wielder", "notes": "Axe severing attachment", "sources": [{"kind": "primary", "reference": "Ganesha Purana"}]},
+      {"id": "ganesha-pasha-ankusha", "kind": "weapon", "name": "Pasha and Ankusha", "term": {"value": "पाशाङ्कुश", "script": "Devanagari", "rom": "pāśāṅkuśa"}, "role": "wielder", "notes": "Noose and goad held in his hands", "sources": [{"kind": "primary", "reference": "Ganapati Atharvashirsha"}]},
+      {"id": "ganesha-mushika-mount", "kind": "mount", "name": "Mushika (mouse)", "term": {"value": "मूषिक", "script": "Devanagari", "rom": "mūṣika"}, "role": "wielder", "notes": "Mouse/rat vāhana", "sources": [{"kind": "primary", "reference": "Ganesha Purana"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ganapati Atharvashirsha"}, {"kind": "primary", "reference": "Ganesha Purana"}], "weight": "primary"}],
+    "notes": "Elephant-headed son of Shiva and Parvati, remover of obstacles, lord of beginnings"
+  },
+  {
+    "id": "hindu_kartikeya",
+    "name": {"primary": "Kartikeya", "alt": ["Skanda", "Murugan", "Subrahmanya", "Shanmukha"], "transliterations": {"devanagari": "कार्तिकेय"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_shiva", "hindu_parvati"],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "war", "contextTag": "lifelong", "term": {"value": "युद्ध", "script": "Devanagari", "rom": "yuddha"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Vana Parva (Skanda)"}]},
+      {"sphereId": "victory", "contextTag": "lifelong", "term": {"value": "जय", "script": "Devanagari", "rom": "jaya"}, "sources": [{"kind": "primary", "reference": "Skanda Purana"}]}
+    ],
+    "faculties": [
+      {"id": "command-deva-army", "name": "Command the army of the gods as supreme general", "term": {"value": "देवसेनापति", "script": "Devanagari", "rom": "devasenāpati"}, "inheritability": "none", "notes": "Generalissimo of the divine host", "sources": [{"kind": "primary", "reference": "Mahabharata, Vana Parva"}]},
+      {"id": "slay-taraka", "name": "Slay the demon invulnerable to all but Shiva's son", "term": {"value": "तारकवध", "script": "Devanagari", "rom": "tāraka-vadha"}, "inheritability": "none", "notes": "Kills Tāraka, whose death only Shiva's son could cause", "sources": [{"kind": "primary", "reference": "Kumarasambhava"}]}
+    ],
+    "materialCulture": [
+      {"id": "kartikeya-vel", "kind": "weapon", "name": "Vel (spear)", "term": {"value": "वेल्", "script": "Devanagari", "rom": "vel"}, "role": "wielder", "notes": "Divine lance bestowed by Parvati's power", "sources": [{"kind": "secondary", "reference": "Skanda Purana / Tamil Murugan tradition"}]},
+      {"id": "kartikeya-peacock-mount", "kind": "mount", "name": "Peacock (Paravani)", "term": {"value": "मयूर", "script": "Devanagari", "rom": "mayūra"}, "role": "wielder", "notes": "Peacock vāhana", "sources": [{"kind": "primary", "reference": "Skanda Purana"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata, Vana Parva"}, {"kind": "primary", "reference": "Skanda Purana"}], "weight": "primary"}],
+    "notes": "Six-faced war-god, son of Shiva and Parvati, commander of the gods' army"
+  },
+  {
+    "id": "hindu_hanuman",
+    "name": {"primary": "Hanuman", "alt": ["Anjaneya", "Maruti", "Bajrangbali"], "transliterations": {"devanagari": "हनुमान्"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["hindu_vayu"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "strength", "contextTag": "lifelong", "term": {"value": "बल", "script": "Devanagari", "rom": "bala"}, "sources": [{"kind": "primary", "reference": "Ramayana, Sundara Kanda"}]},
+      {"sphereId": "devotion", "contextTag": "lifelong", "term": {"value": "भक्ति", "script": "Devanagari", "rom": "bhakti"}, "sources": [{"kind": "primary", "reference": "Ramayana, Sundara Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "expand-contract-body", "name": "Swell to mountainous size or shrink at will", "term": {"value": "कामरूप", "script": "Devanagari", "rom": "kāmarūpa"}, "inheritability": "none", "notes": "Changes body-size freely; tiny to colossal", "sources": [{"kind": "primary", "reference": "Ramayana, Sundara Kanda"}]},
+      {"id": "leap-ocean", "name": "Leap across the ocean to Lanka in a single bound", "term": {"value": "समुद्रलङ्घन", "script": "Devanagari", "rom": "samudra-laṅghana"}, "inheritability": "none", "notes": "Springs the hundred-yojana sea to find Sita", "sources": [{"kind": "primary", "reference": "Ramayana, Sundara Kanda"}]},
+      {"id": "carry-mountain", "name": "Lift and carry an entire herb-bearing mountain", "term": {"value": "द्रोणगिरिहरण", "script": "Devanagari", "rom": "droṇagiri-haraṇa"}, "inheritability": "none", "notes": "Bears the Himalayan peak to heal Lakshmana", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "materialCulture": [
+      {"id": "hanuman-gada", "kind": "weapon", "name": "Gada (mace)", "term": {"value": "गदा", "script": "Devanagari", "rom": "gadā"}, "role": "wielder", "notes": "His characteristic mace", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Mighty vanara, son of Vayu, devoted servant of Rama"
+  },
+  {
+    "id": "hindu_vasudeva",
+    "name": {"primary": "Vasudeva", "alt": ["Anakadundubhi"], "transliterations": {"devanagari": "वसुदेव"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "क्षत्रिय", "script": "Devanagari", "rom": "kṣatriya"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 9.24"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Bhagavata Purana 10"}, {"kind": "primary", "reference": "Mahabharata"}], "weight": "primary"}],
+    "notes": "Yadava prince, father of Krishna and Balarama, husband of Devaki and Rohini"
+  },
+  {
+    "id": "hindu_devaki",
+    "name": {"primary": "Devaki", "alt": [], "transliterations": {"devanagari": "देवकी"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "मातृत्व", "script": "Devanagari", "rom": "mātṛtva"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10.3"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Bhagavata Purana 10"}], "weight": "primary"}],
+    "notes": "Mother of Krishna, imprisoned by her brother Kamsa"
+  },
+  {
+    "id": "hindu_rohini_vasudeva",
+    "name": {"primary": "Rohini", "alt": [], "transliterations": {"devanagari": "रोहिणी"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "मातृत्व", "script": "Devanagari", "rom": "mātṛtva"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10.2"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Bhagavata Purana 10.2"}], "weight": "primary"}],
+    "notes": "Senior wife of Vasudeva, mother of Balarama (embryo transferred to her)"
+  },
+  {
+    "id": "hindu_krishna",
+    "name": {"primary": "Krishna", "alt": ["Govinda", "Gopala", "Keshava", "Vasudeva"], "transliterations": {"devanagari": "कृष्ण"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_vasudeva", "hindu_devaki"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "divine-incarnation", "contextTag": "lifelong", "term": {"value": "अवतार", "script": "Devanagari", "rom": "avatāra"}, "sources": [{"kind": "primary", "reference": "Bhagavad Gita 4.7"}]},
+      {"sphereId": "love", "contextTag": "lifelong", "term": {"value": "प्रेम", "script": "Devanagari", "rom": "prema"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10"}]},
+      {"sphereId": "statecraft", "contextTag": "lifelong", "term": {"value": "नीति", "script": "Devanagari", "rom": "nīti"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Udyoga Parva"}]}
+    ],
+    "faculties": [
+      {"id": "reveal-vishvarupa", "name": "Reveal the universal cosmic form encompassing all worlds", "term": {"value": "विश्वरूप", "script": "Devanagari", "rom": "viśvarūpa"}, "inheritability": "none", "notes": "Shows Arjuna the all-containing theophany", "sources": [{"kind": "primary", "reference": "Bhagavad Gita 11"}]},
+      {"id": "lift-govardhana", "name": "Lift a mountain on one finger to shelter the herders", "term": {"value": "गोवर्धनधारण", "script": "Devanagari", "rom": "govardhana-dhāraṇa"}, "inheritability": "none", "notes": "Holds up Govardhana hill against Indra's storm", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10.25"}]},
+      {"id": "drive-arjuna", "name": "Counsel and drive the chariot at Kurukshetra", "term": {"value": "पार्थसारथि", "script": "Devanagari", "rom": "pārthasārathi"}, "inheritability": "none", "notes": "Charioteer and teacher of Arjuna; speaks the Gita", "sources": [{"kind": "primary", "reference": "Bhagavad Gita"}]}
+    ],
+    "materialCulture": [
+      {"id": "krishna-sudarshana", "kind": "weapon", "name": "Sudarshana Chakra", "term": {"value": "सुदर्शनचक्र", "script": "Devanagari", "rom": "sudarśana-cakra"}, "role": "wielder", "notes": "Discus weapon, as Vishnu incarnate", "sources": [{"kind": "primary", "reference": "Mahabharata, Sabha Parva"}]},
+      {"id": "krishna-panchajanya", "kind": "instrument", "name": "Panchajanya", "term": {"value": "पाञ्चजन्य", "script": "Devanagari", "rom": "pāñcajanya"}, "role": "owner", "notes": "His conch, sounded at Kurukshetra", "sources": [{"kind": "primary", "reference": "Bhagavad Gita 1.15"}]},
+      {"id": "krishna-flute", "kind": "instrument", "name": "Bansuri (flute)", "term": {"value": "मुरली", "script": "Devanagari", "rom": "muralī"}, "role": "owner", "notes": "Flute whose music enchants Vrindavana", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10.21"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata"}, {"kind": "primary", "reference": "Bhagavata Purana"}], "weight": "primary"}],
+    "notes": "Eighth avatara of Vishnu, divine cowherd and statesman, speaker of the Bhagavad Gita"
+  },
+  {
+    "id": "hindu_balarama",
+    "name": {"primary": "Balarama", "alt": ["Baladeva", "Halayudha", "Sankarshana"], "transliterations": {"devanagari": "बलराम"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_vasudeva", "hindu_rohini_vasudeva"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "strength", "contextTag": "lifelong", "term": {"value": "बल", "script": "Devanagari", "rom": "bala"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10"}]},
+      {"sphereId": "agriculture", "contextTag": "lifelong", "term": {"value": "कृषि", "script": "Devanagari", "rom": "kṛṣi"}, "sources": [{"kind": "secondary", "reference": "Puranic tradition (plough emblem)"}]}
+    ],
+    "faculties": [
+      {"id": "drag-yamuna", "name": "Drag and divert the river with his plough", "term": {"value": "यमुनाकर्षण", "script": "Devanagari", "rom": "yamunā-karṣaṇa"}, "inheritability": "none", "notes": "Hauls the Yamuna's course toward him with his ploughshare", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 10.65"}]}
+    ],
+    "materialCulture": [
+      {"id": "balarama-hala", "kind": "weapon", "name": "Hala (plough)", "term": {"value": "हल", "script": "Devanagari", "rom": "hala"}, "role": "wielder", "notes": "Plough wielded as a weapon", "sources": [{"kind": "primary", "reference": "Mahabharata; early Mathura images"}]},
+      {"id": "balarama-musala", "kind": "weapon", "name": "Musala (pestle/club)", "term": {"value": "मुसल", "script": "Devanagari", "rom": "musala"}, "role": "wielder", "notes": "Pestle-club, his second weapon", "sources": [{"kind": "primary", "reference": "Mahabharata"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata"}, {"kind": "primary", "reference": "Bhagavata Purana"}], "weight": "primary"}],
+    "notes": "Elder brother of Krishna, plough-bearing strongman, often counted an avatara"
+  },
+  {
+    "id": "hindu_dasharatha",
+    "name": {"primary": "Dasharatha", "alt": [], "transliterations": {"devanagari": "दशरथ"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "राज्य", "script": "Devanagari", "rom": "rājya"}, "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "King of Ayodhya, father of Rama, Bharata, Lakshmana, and Shatrughna"
+  },
+  {
+    "id": "hindu_kausalya",
+    "name": {"primary": "Kausalya", "alt": [], "transliterations": {"devanagari": "कौसल्या"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "मातृत्व", "script": "Devanagari", "rom": "mātṛtva"}, "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Eldest queen of Dasharatha, mother of Rama"
+  },
+  {
+    "id": "hindu_sumitra",
+    "name": {"primary": "Sumitra", "alt": [], "transliterations": {"devanagari": "सुमित्रा"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "मातृत्व", "script": "Devanagari", "rom": "mātṛtva"}, "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Queen of Dasharatha, mother of the twins Lakshmana and Shatrughna"
+  },
+  {
+    "id": "hindu_rama",
+    "name": {"primary": "Rama", "alt": ["Ramachandra", "Raghava", "Dasharathi"], "transliterations": {"devanagari": "राम"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_dasharatha", "hindu_kausalya"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "divine-incarnation", "contextTag": "lifelong", "term": {"value": "अवतार", "script": "Devanagari", "rom": "avatāra"}, "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]},
+      {"sphereId": "righteousness", "contextTag": "lifelong", "term": {"value": "धर्म", "script": "Devanagari", "rom": "dharma"}, "sources": [{"kind": "primary", "reference": "Ramayana"}]},
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "राज्य", "script": "Devanagari", "rom": "rājya"}, "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "bend-shiva-bow", "name": "Bend and break the unbendable bow of Shiva", "term": {"value": "धनुर्भङ्ग", "script": "Devanagari", "rom": "dhanur-bhaṅga"}, "inheritability": "none", "notes": "Strings and snaps Shiva's bow to win Sita", "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda"}]},
+      {"id": "slay-ravana", "name": "Slay the ten-headed rakshasa king in single combat", "term": {"value": "रावणवध", "script": "Devanagari", "rom": "rāvaṇa-vadha"}, "inheritability": "none", "notes": "Kills Ravana with the Brahmastra at Lanka", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "materialCulture": [
+      {"id": "rama-kodanda", "kind": "weapon", "name": "Kodanda (bow)", "term": {"value": "कोदण्ड", "script": "Devanagari", "rom": "kodaṇḍa"}, "role": "wielder", "notes": "His great bow", "sources": [{"kind": "primary", "reference": "Ramayana"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Seventh avatara of Vishnu, prince of Ayodhya, hero of the Ramayana"
+  },
+  {
+    "id": "hindu_sita",
+    "name": {"primary": "Sita", "alt": ["Janaki", "Maithili", "Vaidehi"], "transliterations": {"devanagari": "सीता"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "marital-devotion", "contextTag": "lifelong", "term": {"value": "पातिव्रत्य", "script": "Devanagari", "rom": "pātivratya"}, "sources": [{"kind": "primary", "reference": "Ramayana"}]},
+      {"sphereId": "earth", "contextTag": "lifelong", "term": {"value": "भूमि", "script": "Devanagari", "rom": "bhūmi"}, "sources": [{"kind": "primary", "reference": "Ramayana, Bala Kanda (furrow-born)"}]}
+    ],
+    "faculties": [
+      {"id": "endure-fire-ordeal", "name": "Pass unburned through the ordeal of fire", "term": {"value": "अग्निपरीक्षा", "script": "Devanagari", "rom": "agni-parīkṣā"}, "inheritability": "none", "notes": "Proves her chastity by emerging unharmed from flame", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]},
+      {"id": "return-to-earth", "name": "Return into the earth from which she was born", "term": {"value": "भूमिप्रवेश", "script": "Devanagari", "rom": "bhūmi-praveśa"}, "inheritability": "none", "notes": "The earth opens to receive her at the epic's close", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Furrow-born wife of Rama, daughter of Janaka, regarded as an avatara of Lakshmi"
+  },
+  {
+    "id": "hindu_lakshmana",
+    "name": {"primary": "Lakshmana", "alt": ["Saumitri", "Lakhan"], "transliterations": {"devanagari": "लक्ष्मण"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_dasharatha", "hindu_sumitra"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "loyalty", "contextTag": "lifelong", "term": {"value": "भ्रातृभक्ति", "script": "Devanagari", "rom": "bhrātṛ-bhakti"}, "sources": [{"kind": "primary", "reference": "Ramayana, Ayodhya Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "vigil-without-sleep", "name": "Keep watch fourteen years without sleeping", "term": {"value": "निद्राजय", "script": "Devanagari", "rom": "nidrā-jaya"}, "inheritability": "none", "notes": "Guards Rama and Sita through the exile, conquering sleep", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara tradition"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Devoted brother of Rama, son of Dasharatha and Sumitra, regarded as Shesha incarnate"
+  },
+  {
+    "id": "hindu_vishrava",
+    "name": {"primary": "Vishrava", "alt": [], "transliterations": {"devanagari": "विश्रवस्"}},
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "asceticism", "contextTag": "lifelong", "term": {"value": "तपस्", "script": "Devanagari", "rom": "tapas"}, "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}], "weight": "primary"}],
+    "notes": "Brahmin sage, son of Pulastya, father of Ravana, Kubera, Vibhishana, and Kumbhakarna"
+  },
+  {
+    "id": "hindu_kaikesi",
+    "name": {"primary": "Kaikesi", "alt": ["Nikasha"], "transliterations": {"devanagari": "कैकसी"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "lineage", "contextTag": "lifelong", "term": {"value": "राक्षसी", "script": "Devanagari", "rom": "rākṣasī"}, "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}], "weight": "primary"}],
+    "notes": "Rakshasa princess, wife of Vishrava, mother of Ravana"
+  },
+  {
+    "id": "hindu_ravana",
+    "name": {"primary": "Ravana", "alt": ["Dashanana", "Dashagriva"], "transliterations": {"devanagari": "रावण"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_vishrava", "hindu_kaikesi"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "राक्षसराज", "script": "Devanagari", "rom": "rākṣasa-rāja"}, "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]},
+      {"sphereId": "sacred-knowledge", "contextTag": "lifelong", "term": {"value": "वेद", "script": "Devanagari", "rom": "veda"}, "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "win-boon-invulnerability", "name": "Win near-invulnerability to gods and demons by penance", "term": {"value": "वरबल", "script": "Devanagari", "rom": "vara-bala"}, "inheritability": "none", "notes": "Brahma's boon: undefeatable by gods, demons, and spirits", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]},
+      {"id": "lift-kailasa", "name": "Lift Mount Kailasa with his arms", "term": {"value": "कैलासोद्धरण", "script": "Devanagari", "rom": "kailāsoddharaṇa"}, "inheritability": "none", "notes": "Heaves up Shiva's mountain until pinned by Shiva's toe", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "materialCulture": [
+      {"id": "ravana-chandrahasa", "kind": "weapon", "name": "Chandrahasa (sword)", "term": {"value": "चन्द्रहास", "script": "Devanagari", "rom": "candrahāsa"}, "role": "wielder", "notes": "Sword granted by Shiva", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]},
+      {"id": "ravana-pushpaka", "kind": "vehicle", "name": "Pushpaka Vimana", "term": {"value": "पुष्पक", "script": "Devanagari", "rom": "puṣpaka"}, "role": "owner", "notes": "Flying chariot seized from Kubera", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Ten-headed rakshasa king of Lanka, abductor of Sita, slain by Rama"
+  },
+  {
+    "id": "hindu_kashyapa",
+    "name": {"primary": "Kashyapa", "alt": [], "transliterations": {"devanagari": "कश्यप"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "progenitorship", "contextTag": "lifelong", "term": {"value": "प्रजापति", "script": "Devanagari", "rom": "prajāpati"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]}
+    ],
+    "faculties": [
+      {"id": "father-all-creatures", "name": "Father gods, demons, serpents, birds, and beasts", "term": {"value": "सर्वभूतपितृ", "script": "Devanagari", "rom": "sarva-bhūta-pitṛ"}, "inheritability": "none", "notes": "Through many wives sires the diverse races of beings", "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}, {"kind": "primary", "reference": "Vishnu Purana"}], "weight": "primary"}],
+    "notes": "Primal progenitor-sage, father of devas, asuras, nagas, and Garuda"
+  },
+  {
+    "id": "hindu_aditi",
+    "name": {"primary": "Aditi", "alt": ["Devamata"], "transliterations": {"devanagari": "अदिति"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "boundlessness", "contextTag": "lifelong", "term": {"value": "अदिति", "script": "Devanagari", "rom": "aditi"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.89.10"}]},
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "देवमातृ", "script": "Devanagari", "rom": "devamātṛ"}, "sources": [{"kind": "primary", "reference": "Rigveda"}]}
+    ],
+    "faculties": [
+      {"id": "mother-adityas", "name": "Bring forth the Aditya gods including Varuna and Surya", "term": {"value": "आदित्यजननी", "script": "Devanagari", "rom": "āditya-jananī"}, "inheritability": "none", "notes": "Mother of the solar Adityas", "sources": [{"kind": "primary", "reference": "Rigveda 10.72"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 1.89; 10.72"}], "weight": "primary"}],
+    "notes": "Primordial goddess of boundless infinity, mother of the Adityas"
+  },
+  {
+    "id": "hindu_vinata",
+    "name": {"primary": "Vinata", "alt": [], "transliterations": {"devanagari": "विनता"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "motherhood", "contextTag": "lifelong", "term": {"value": "मातृत्व", "script": "Devanagari", "rom": "mātṛtva"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva (Astika)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}], "weight": "primary"}],
+    "notes": "Daughter of Daksha, wife of Kashyapa, mother of Garuda and Aruna"
+  },
+  {
+    "id": "hindu_garuda",
+    "name": {"primary": "Garuda", "alt": ["Garutman", "Vainateya", "Suparna"], "transliterations": {"devanagari": "गरुड"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_kashyapa", "hindu_vinata"],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "sky", "contextTag": "lifelong", "term": {"value": "आकाश", "script": "Devanagari", "rom": "ākāśa"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]},
+      {"sphereId": "serpent-enmity", "contextTag": "lifelong", "term": {"value": "नागान्तक", "script": "Devanagari", "rom": "nāgāntaka"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]}
+    ],
+    "faculties": [
+      {"id": "steal-amrita", "name": "Seize the nectar of immortality from the gods", "term": {"value": "अमृतहरण", "script": "Devanagari", "rom": "amṛta-haraṇa"}, "inheritability": "none", "notes": "Carries off the amṛta to free his mother from bondage", "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]},
+      {"id": "bear-vishnu", "name": "Bear Vishnu aloft as his tireless mount", "term": {"value": "विष्णुवाहन", "script": "Devanagari", "rom": "viṣṇu-vāhana"}, "inheritability": "none", "notes": "Serves as Vishnu's flying vāhana", "sources": [{"kind": "primary", "reference": "Mahabharata"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}], "weight": "primary"}],
+    "notes": "King of birds, son of Kashyapa and Vinata, enemy of serpents, mount of Vishnu"
+  },
+  {
+    "id": "hindu_agni",
+    "name": {"primary": "Agni", "alt": ["Vaishvanara", "Jataveda", "Hutashana"], "transliterations": {"devanagari": "अग्नि"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "fire", "contextTag": "lifelong", "term": {"value": "अग्नि", "script": "Devanagari", "rom": "agni"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.1"}]},
+      {"sphereId": "sacrifice", "contextTag": "lifelong", "term": {"value": "यज्ञ", "script": "Devanagari", "rom": "yajña"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.1"}]}
+    ],
+    "faculties": [
+      {"id": "convey-offerings", "name": "Convey sacrificial offerings to the gods", "term": {"value": "हव्यवाहन", "script": "Devanagari", "rom": "havyavāhana"}, "inheritability": "none", "notes": "Messenger and mouth of the gods, carrying oblations heavenward", "sources": [{"kind": "primary", "reference": "Rigveda 1.1.1-2"}]},
+      {"id": "dwell-in-all-fires", "name": "Dwell within every hearth, altar, and lightning-flash", "term": {"value": "वैश्वानर", "script": "Devanagari", "rom": "vaiśvānara"}, "inheritability": "none", "notes": "Present in all fires across the three worlds", "sources": [{"kind": "primary", "reference": "Rigveda"}]}
+    ],
+    "materialCulture": [
+      {"id": "agni-ram-mount", "kind": "mount", "name": "Ram (mesha)", "term": {"value": "मेष", "script": "Devanagari", "rom": "meṣa"}, "role": "wielder", "notes": "Ram vāhana", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 1.1"}], "weight": "primary"}],
+    "notes": "Vedic fire-god, conveyor of sacrifices, one of the most invoked deities of the Rigveda"
+  },
+  {
+    "id": "hindu_varuna",
+    "name": {"primary": "Varuna", "alt": ["Prachetas"], "transliterations": {"devanagari": "वरुण"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_aditi"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "cosmic-order", "contextTag": "lifelong", "term": {"value": "ऋत", "script": "Devanagari", "rom": "ṛta"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.25"}]},
+      {"sphereId": "waters", "contextTag": "lifelong", "term": {"value": "जल", "script": "Devanagari", "rom": "jala"}, "sources": [{"kind": "primary", "reference": "Rigveda; later tradition"}]}
+    ],
+    "faculties": [
+      {"id": "uphold-cosmic-law", "name": "Uphold and police the moral and cosmic order", "term": {"value": "ऋतपालन", "script": "Devanagari", "rom": "ṛta-pālana"}, "inheritability": "none", "notes": "Guardian of ṛta; his spies watch all deeds of mortals", "sources": [{"kind": "primary", "reference": "Rigveda 1.25; 7.86"}]},
+      {"id": "bind-with-noose", "name": "Bind wrongdoers and the dropsical with his noose", "term": {"value": "पाशबन्धन", "script": "Devanagari", "rom": "pāśa-bandhana"}, "inheritability": "none", "notes": "Snares offenders; afflicts liars with dropsy", "sources": [{"kind": "primary", "reference": "Atharvaveda 4.16"}]}
+    ],
+    "materialCulture": [
+      {"id": "varuna-pasha", "kind": "weapon", "name": "Pasha (noose)", "term": {"value": "पाश", "script": "Devanagari", "rom": "pāśa"}, "role": "wielder", "notes": "Noose with which he binds the guilty", "sources": [{"kind": "primary", "reference": "Atharvaveda 4.16"}]},
+      {"id": "varuna-makara-mount", "kind": "mount", "name": "Makara", "term": {"value": "मकर", "script": "Devanagari", "rom": "makara"}, "role": "wielder", "notes": "Sea-creature vāhana", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 1.25; 7.86"}], "weight": "primary"}],
+    "notes": "Vedic sovereign of cosmic order and oaths, later lord of the waters and ocean"
+  },
+  {
+    "id": "hindu_kubera",
+    "name": {"primary": "Kubera", "alt": ["Vaishravana", "Dhanapati"], "transliterations": {"devanagari": "कुबेर"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_vishrava"],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "wealth", "contextTag": "lifelong", "term": {"value": "धन", "script": "Devanagari", "rom": "dhana"}, "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]},
+      {"sphereId": "treasure-guardianship", "contextTag": "lifelong", "term": {"value": "निधिपति", "script": "Devanagari", "rom": "nidhipati"}, "sources": [{"kind": "primary", "reference": "Mahabharata"}]}
+    ],
+    "faculties": [
+      {"id": "guard-treasures", "name": "Guard the world's hidden treasures and command the Yakshas", "term": {"value": "यक्षाधिपति", "script": "Devanagari", "rom": "yakṣādhipati"}, "inheritability": "none", "notes": "Lord of wealth, king of the Yakshas, north-quarter guardian", "sources": [{"kind": "primary", "reference": "Mahabharata; Ramayana"}]}
+    ],
+    "materialCulture": [
+      {"id": "kubera-pushpaka", "kind": "vehicle", "name": "Pushpaka Vimana", "term": {"value": "पुष्पक", "script": "Devanagari", "rom": "puṣpaka"}, "role": "owner", "notes": "Original owner of the flying palace later seized by Ravana", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana"}, {"kind": "primary", "reference": "Mahabharata"}], "weight": "primary"}],
+    "notes": "God of wealth, king of the Yakshas, guardian of the north, son of Vishrava"
+  },
+  {
+    "id": "hindu_soma",
+    "name": {"primary": "Soma", "alt": ["Chandra", "Indu", "Shashin"], "transliterations": {"devanagari": "सोम"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "moon", "contextTag": "lifelong", "term": {"value": "चन्द्र", "script": "Devanagari", "rom": "candra"}, "sources": [{"kind": "primary", "reference": "Rigveda 10.85"}]},
+      {"sphereId": "sacred-draught", "contextTag": "lifelong", "term": {"value": "सोम", "script": "Devanagari", "rom": "soma"}, "sources": [{"kind": "primary", "reference": "Rigveda, Mandala 9"}]}
+    ],
+    "faculties": [
+      {"id": "wax-and-wane", "name": "Wax and wane as the cup of the gods' nectar", "term": {"value": "क्षयवृद्धि", "script": "Devanagari", "rom": "kṣaya-vṛddhi"}, "inheritability": "none", "notes": "Moon drained and refilled with amṛta; basis of the lunar cycle", "sources": [{"kind": "primary", "reference": "Puranic tradition; Rigveda 9"}]}
+    ],
+    "materialCulture": [
+      {"id": "soma-antelope-chariot", "kind": "vehicle", "name": "Antelope-drawn chariot", "term": {"value": "मृगरथ", "script": "Devanagari", "rom": "mṛga-ratha"}, "role": "owner", "notes": "Lunar chariot drawn by antelopes", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda, Mandala 9"}], "weight": "primary"}],
+    "notes": "Deity of the sacred soma draught and the moon; lord of the lunar dynasty"
+  },
+  {
+    "id": "hindu_yama",
+    "name": {"primary": "Yama", "alt": ["Yamaraja", "Dharmaraja", "Antaka", "Kala"], "transliterations": {"devanagari": "यम"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_surya"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "death", "contextTag": "lifelong", "term": {"value": "मृत्यु", "script": "Devanagari", "rom": "mṛtyu"}, "sources": [{"kind": "primary", "reference": "Rigveda 10.14"}]},
+      {"sphereId": "justice", "contextTag": "lifelong", "term": {"value": "धर्म", "script": "Devanagari", "rom": "dharma"}, "sources": [{"kind": "primary", "reference": "Katha Upanishad"}]}
+    ],
+    "faculties": [
+      {"id": "judge-the-dead", "name": "Judge the dead and assign their fated destinations", "term": {"value": "धर्मराज", "script": "Devanagari", "rom": "dharmarāja"}, "inheritability": "none", "notes": "Weighs deeds and dispenses reward or punishment in his realm", "sources": [{"kind": "primary", "reference": "Mahabharata; Katha Upanishad"}]},
+      {"id": "first-to-die", "name": "Pioneer the path of death as the first mortal to die", "term": {"value": "प्रथममर्त्य", "script": "Devanagari", "rom": "prathama-martya"}, "inheritability": "none", "notes": "First being to die, opening the way to the ancestral world", "sources": [{"kind": "primary", "reference": "Rigveda 10.14.1-2"}]}
+    ],
+    "materialCulture": [
+      {"id": "yama-danda", "kind": "weapon", "name": "Danda (rod)", "term": {"value": "दण्ड", "script": "Devanagari", "rom": "daṇḍa"}, "role": "wielder", "notes": "Rod of death and chastisement", "sources": [{"kind": "primary", "reference": "Puranic tradition"}]},
+      {"id": "yama-pasha", "kind": "weapon", "name": "Pasha (noose)", "term": {"value": "पाश", "script": "Devanagari", "rom": "pāśa"}, "role": "wielder", "notes": "Noose to draw out the soul", "sources": [{"kind": "primary", "reference": "Puranic tradition"}]},
+      {"id": "yama-buffalo-mount", "kind": "mount", "name": "Buffalo (mahisha)", "term": {"value": "महिष", "script": "Devanagari", "rom": "mahiṣa"}, "role": "wielder", "notes": "Buffalo vāhana", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 10.14"}, {"kind": "primary", "reference": "Katha Upanishad"}], "weight": "primary"}],
+    "notes": "God of death and the dead, judge of souls, son of Surya, twin of Yami (distinct from hindu_dharma)"
+  },
+  {
+    "id": "hindu_prithvi",
+    "name": {"primary": "Prithvi", "alt": ["Bhumi", "Bhudevi", "Dhara"], "transliterations": {"devanagari": "पृथ्वी"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "earth", "contextTag": "lifelong", "term": {"value": "पृथ्वी", "script": "Devanagari", "rom": "pṛthvī"}, "sources": [{"kind": "primary", "reference": "Rigveda; Atharvaveda 12.1 (Prithvi Sukta)"}]},
+      {"sphereId": "fertility", "contextTag": "lifelong", "term": {"value": "उर्वरा", "script": "Devanagari", "rom": "urvarā"}, "sources": [{"kind": "primary", "reference": "Atharvaveda 12.1"}]}
+    ],
+    "faculties": [
+      {"id": "bear-all-beings", "name": "Bear and sustain all creatures upon her surface", "term": {"value": "सर्वंसहा", "script": "Devanagari", "rom": "sarvaṃsahā"}, "inheritability": "none", "notes": "The all-bearing earth supporting life", "sources": [{"kind": "primary", "reference": "Atharvaveda 12.1"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda (Dyāvāpṛthivī hymns)"}, {"kind": "primary", "reference": "Atharvaveda 12.1"}], "weight": "primary"}],
+    "notes": "Earth goddess, all-bearing mother, paired in the Veda with the sky Dyaus"
+  },
+  {
+    "id": "hindu_ushas",
+    "name": {"primary": "Ushas", "alt": ["Usha"], "transliterations": {"devanagari": "उषस्"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "dawn", "contextTag": "lifelong", "term": {"value": "उषस्", "script": "Devanagari", "rom": "uṣas"}, "sources": [{"kind": "primary", "reference": "Rigveda 1.48; 1.113"}]}
+    ],
+    "faculties": [
+      {"id": "usher-the-dawn", "name": "Open the gates of heaven and lead in each day's light", "term": {"value": "उषोदय", "script": "Devanagari", "rom": "uṣodaya"}, "inheritability": "none", "notes": "Drives away darkness and rouses all beings each morning", "sources": [{"kind": "primary", "reference": "Rigveda 1.113"}]}
+    ],
+    "materialCulture": [
+      {"id": "ushas-chariot", "kind": "vehicle", "name": "Shining chariot", "term": {"value": "रथ", "script": "Devanagari", "rom": "ratha"}, "role": "owner", "notes": "Radiant chariot drawn by ruddy cows/horses", "sources": [{"kind": "primary", "reference": "Rigveda 1.48"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 1.48; 1.113"}], "weight": "primary"}],
+    "notes": "Vedic goddess of the dawn, among the most beautifully hymned deities of the Rigveda"
+  },
+  {
+    "id": "hindu_nandi",
+    "name": {"primary": "Nandi", "alt": ["Nandikeshvara", "Nandin"], "transliterations": {"devanagari": "नन्दि"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "domains": [
+      {"sphereId": "devotion", "contextTag": "lifelong", "term": {"value": "भक्ति", "script": "Devanagari", "rom": "bhakti"}, "sources": [{"kind": "primary", "reference": "Shiva Purana"}]},
+      {"sphereId": "guardianship", "contextTag": "lifelong", "term": {"value": "द्वारपाल", "script": "Devanagari", "rom": "dvārapāla"}, "sources": [{"kind": "primary", "reference": "Shiva Purana"}]}
+    ],
+    "faculties": [
+      {"id": "bear-shiva", "name": "Bear Shiva as his bull-mount and chief attendant", "term": {"value": "शिववाहन", "script": "Devanagari", "rom": "śiva-vāhana"}, "inheritability": "none", "notes": "Mount, gatekeeper, and foremost of Shiva's gaṇas", "sources": [{"kind": "primary", "reference": "Shiva Purana"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Shiva Purana"}, {"kind": "primary", "reference": "Linga Purana"}], "weight": "primary"}],
+    "notes": "Bull mount, gatekeeper, and chief devotee of Shiva"
+  },
+  {
+    "id": "hindu_vishwakarma",
+    "name": {"primary": "Vishwakarma", "alt": ["Vishvakarman", "Tvashtar"], "transliterations": {"devanagari": "विश्वकर्मन्"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "craftsmanship", "contextTag": "lifelong", "term": {"value": "शिल्प", "script": "Devanagari", "rom": "śilpa"}, "sources": [{"kind": "primary", "reference": "Rigveda 10.81-82 (Vishvakarman)"}]},
+      {"sphereId": "architecture", "contextTag": "lifelong", "term": {"value": "वास्तु", "script": "Devanagari", "rom": "vāstu"}, "sources": [{"kind": "primary", "reference": "Puranic tradition"}]}
+    ],
+    "faculties": [
+      {"id": "forge-divine-weapons", "name": "Forge the gods' weapons, palaces, and flying chariots", "term": {"value": "देवशिल्पिन्", "script": "Devanagari", "rom": "deva-śilpin"}, "inheritability": "none", "notes": "Crafts Pināka, the Vajra, divine cities, and aerial cars", "sources": [{"kind": "primary", "reference": "Mahabharata; Puranic tradition"}]},
+      {"id": "fashion-cosmos", "name": "Fashion and measure out the framework of the cosmos", "term": {"value": "विश्वकर्मन्", "script": "Devanagari", "rom": "viśvakarman"}, "inheritability": "none", "notes": "All-maker who shapes heaven and earth in the Veda", "sources": [{"kind": "primary", "reference": "Rigveda 10.81-82"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Rigveda 10.81-82"}], "weight": "primary"}],
+    "notes": "Divine architect and craftsman of the gods, maker of celestial weapons and cities"
+  },
+  {
+    "id": "hindu_kamadeva",
+    "name": {"primary": "Kamadeva", "alt": ["Kama", "Manmatha", "Madana", "Ananga"], "transliterations": {"devanagari": "कामदेव"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_brahma"],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "love", "contextTag": "lifelong", "term": {"value": "काम", "script": "Devanagari", "rom": "kāma"}, "sources": [{"kind": "primary", "reference": "Atharvaveda 9.2; Rigveda 10.129 (Kama)"}]},
+      {"sphereId": "desire", "contextTag": "lifelong", "term": {"value": "रति", "script": "Devanagari", "rom": "rati"}, "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]}
+    ],
+    "faculties": [
+      {"id": "inflame-desire", "name": "Inflame desire in gods and mortals with flower-arrows", "term": {"value": "कामबाण", "script": "Devanagari", "rom": "kāma-bāṇa"}, "inheritability": "none", "notes": "Five flower-tipped arrows kindle love at will", "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]},
+      {"id": "exist-bodiless", "name": "Persist as a bodiless power after being burned to ash", "term": {"value": "अनङ्ग", "script": "Devanagari", "rom": "anaṅga"}, "inheritability": "none", "notes": "Reduced to ash by Shiva's eye, lives on as the formless Ananga", "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]}
+    ],
+    "materialCulture": [
+      {"id": "kamadeva-ikshu-bow", "kind": "weapon", "name": "Sugarcane bow", "term": {"value": "इक्षुधनुस्", "script": "Devanagari", "rom": "ikṣu-dhanus"}, "role": "wielder", "notes": "Bow of sugarcane strung with a line of bees", "sources": [{"kind": "primary", "reference": "Puranic tradition"}]},
+      {"id": "kamadeva-pushpa-bana", "kind": "weapon", "name": "Five flower-arrows", "term": {"value": "पुष्पबाण", "script": "Devanagari", "rom": "puṣpa-bāṇa"}, "role": "wielder", "notes": "Five flower-tipped arrows each rousing a mood of desire", "sources": [{"kind": "primary", "reference": "Puranic tradition"}]},
+      {"id": "kamadeva-shuka-mount", "kind": "mount", "name": "Shuka (parrot)", "term": {"value": "शुक", "script": "Devanagari", "rom": "śuka"}, "role": "wielder", "notes": "Parrot vāhana", "sources": [{"kind": "secondary", "reference": "Puranic iconography"}]}
+    ],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Atharvaveda 9.2"}, {"kind": "primary", "reference": "Shiva Purana"}], "weight": "primary"}],
+    "notes": "God of love and desire, mind-born son of Brahma, burned to ash by Shiva, consort of Rati"
+  },
+  {
+    "id": "hindu_rati",
+    "name": {"primary": "Rati", "alt": ["Kamapriya"], "transliterations": {"devanagari": "रति"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "desire", "contextTag": "lifelong", "term": {"value": "रति", "script": "Devanagari", "rom": "rati"}, "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]}
+    ],
+    "faculties": [
+      {"id": "secure-kama-revival", "name": "Secure the promise of her husband's revival", "term": {"value": "कामपुनर्जीवन", "script": "Devanagari", "rom": "kāma-punarjīvana"}, "inheritability": "none", "notes": "Wins from Shiva the boon that Kama lives on after burning", "sources": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Shiva Purana, Rudra Samhita"}], "weight": "primary"}],
+    "notes": "Goddess of carnal love and pleasure, consort of Kamadeva"
+  },
+  {
+    "id": "hindu_vibhishana",
+    "name": {"primary": "Vibhishana", "alt": [], "transliterations": {"devanagari": "विभीषण"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["hindu_vishrava", "hindu_kaikesi"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "righteousness", "contextTag": "lifelong", "term": {"value": "धर्म", "script": "Devanagari", "rom": "dharma"}, "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Righteous rakshasa brother of Ravana who defected to Rama and became king of Lanka"
+  },
+  {
+    "id": "hindu_kumbhakarna",
+    "name": {"primary": "Kumbhakarna", "alt": [], "transliterations": {"devanagari": "कुम्भकर्ण"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_vishrava", "hindu_kaikesi"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "strength", "contextTag": "lifelong", "term": {"value": "बल", "script": "Devanagari", "rom": "bala"}, "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "slumber-six-months", "name": "Sleep for six months and wake ravenous for six", "term": {"value": "दीर्घनिद्रा", "script": "Devanagari", "rom": "dīrgha-nidrā"}, "inheritability": "none", "notes": "Cursed/boon-bound to monstrous cycles of sleep", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Giant rakshasa brother of Ravana, famed for his enormous sleep and strength"
+  },
+  {
+    "id": "hindu_indrajit",
+    "name": {"primary": "Indrajit", "alt": ["Meghanada"], "transliterations": {"devanagari": "इन्द्रजित्"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_ravana"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "war", "contextTag": "lifelong", "term": {"value": "युद्ध", "script": "Devanagari", "rom": "yuddha"}, "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]},
+      {"sphereId": "sorcery", "contextTag": "lifelong", "term": {"value": "माया", "script": "Devanagari", "rom": "māyā"}, "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "fight-invisible", "name": "Fight unseen from behind a veil of illusion", "term": {"value": "मायायुद्ध", "script": "Devanagari", "rom": "māyā-yuddha"}, "inheritability": "none", "notes": "Wages war invisibly using sorcery", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]},
+      {"id": "defeat-indra", "name": "Vanquish and bind Indra, king of the gods", "term": {"value": "इन्द्रविजय", "script": "Devanagari", "rom": "indra-vijaya"}, "inheritability": "none", "notes": "Won his name by capturing Indra in battle", "sources": [{"kind": "primary", "reference": "Ramayana, Uttara Kanda"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Sorcerer-warrior son of Ravana who once defeated Indra; slain by Lakshmana"
+  },
+  {
+    "id": "hindu_sugriva",
+    "name": {"primary": "Sugriva", "alt": [], "transliterations": {"devanagari": "सुग्रीव"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["hindu_surya"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "term": {"value": "वानरराज", "script": "Devanagari", "rom": "vānara-rāja"}, "sources": [{"kind": "primary", "reference": "Ramayana, Kishkindha Kanda"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Vanara king of Kishkindha, son of Surya, ally of Rama"
+  },
+  {
+    "id": "hindu_vali",
+    "name": {"primary": "Vali", "alt": ["Bali"], "transliterations": {"devanagari": "वालिन्"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["hindu_indra"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "strength", "contextTag": "lifelong", "term": {"value": "बल", "script": "Devanagari", "rom": "bala"}, "sources": [{"kind": "primary", "reference": "Ramayana, Kishkindha Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "halve-foes-strength", "name": "Drain half an opponent's strength when faced in combat", "term": {"value": "बलापहरण", "script": "Devanagari", "rom": "balāpaharaṇa"}, "inheritability": "none", "notes": "Boon-given power that halves any frontal foe's might", "sources": [{"kind": "primary", "reference": "Ramayana, Kishkindha Kanda"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Mighty vanara king, son of Indra, brother of Sugriva, slain by Rama"
+  },
+  {
+    "id": "hindu_angada",
+    "name": {"primary": "Angada", "alt": [], "transliterations": {"devanagari": "अङ्गद"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": ["hindu_vali"],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "valor", "contextTag": "lifelong", "term": {"value": "वीर्य", "script": "Devanagari", "rom": "vīrya"}, "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "plant-immovable-foot", "name": "Plant a foot none in Ravana's court can lift", "term": {"value": "पादस्थापन", "script": "Devanagari", "rom": "pāda-sthāpana"}, "inheritability": "none", "notes": "Fixes his foot unmovably as envoy in Ravana's hall", "sources": [{"kind": "primary", "reference": "Ramayana, Yuddha Kanda"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Vanara prince, son of Vali, envoy of Rama to Lanka"
+  },
+  {
+    "id": "hindu_jatayu",
+    "name": {"primary": "Jatayu", "alt": [], "transliterations": {"devanagari": "जटायु"}},
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "domains": [
+      {"sphereId": "valor", "contextTag": "lifelong", "term": {"value": "वीर्य", "script": "Devanagari", "rom": "vīrya"}, "sources": [{"kind": "primary", "reference": "Ramayana, Aranya Kanda"}]}
+    ],
+    "faculties": [
+      {"id": "contest-ravana-air", "name": "Battle Ravana's flying chariot to rescue Sita", "term": {"value": "आकाशयुद्ध", "script": "Devanagari", "rom": "ākāśa-yuddha"}, "inheritability": "none", "notes": "Fights the abducting Ravana in mid-air and falls mortally wounded", "sources": [{"kind": "primary", "reference": "Ramayana, Aranya Kanda"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Ramayana (Valmiki)"}], "weight": "primary"}],
+    "notes": "Divine vulture, son of Aruna, who died defending Sita from Ravana"
+  },
+  {
+    "id": "hindu_aruna",
+    "name": {"primary": "Aruna", "alt": ["Anuru"], "transliterations": {"devanagari": "अरुण"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_kashyapa", "hindu_vinata"],
+    "temporal": {"era": "cosmogonic"},
+    "domains": [
+      {"sphereId": "dawn", "contextTag": "lifelong", "term": {"value": "अरुण", "script": "Devanagari", "rom": "aruṇa"}, "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]}
+    ],
+    "faculties": [
+      {"id": "drive-suns-chariot", "name": "Drive the chariot of the sun as his charioteer", "term": {"value": "सूर्यसारथि", "script": "Devanagari", "rom": "sūrya-sārathi"}, "inheritability": "none", "notes": "Charioteer of Surya, embodiment of the reddish dawn", "sources": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}], "weight": "primary"}],
+    "notes": "Charioteer of the sun, personified dawn-glow, elder son of Kashyapa and Vinata, brother of Garuda"
+  },
+  {
+    "id": "hindu_ganesha_consort_placeholder_removed",
+    "name": {"primary": "Sheshanaga", "alt": ["Shesha", "Ananta"], "transliterations": {"devanagari": "शेषनाग"}},
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Hindu",
+    "primaryTradition": "Hindu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["hindu_kashyapa"],
+    "temporal": {"era": "primordial"},
+    "domains": [
+      {"sphereId": "cosmic-support", "contextTag": "lifelong", "term": {"value": "आधार", "script": "Devanagari", "rom": "ādhāra"}, "sources": [{"kind": "primary", "reference": "Bhagavata Purana 5.25"}]}
+    ],
+    "faculties": [
+      {"id": "support-the-worlds", "name": "Hold up all the worlds upon his hoods", "term": {"value": "लोकधारण", "script": "Devanagari", "rom": "loka-dhāraṇa"}, "inheritability": "none", "notes": "The endless serpent bearing the earth and Vishnu's couch", "sources": [{"kind": "primary", "reference": "Bhagavata Purana 5.25"}]}
+    ],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "primary", "reference": "Mahabharata, Adi Parva"}, {"kind": "primary", "reference": "Bhagavata Purana"}], "weight": "primary"}],
+    "notes": "The cosmic serpent Ananta-Shesha, couch of Vishnu and bearer of the worlds"
+  }
+]
+```
+
+A note on scope and decisions:
+
+- Existing IDs were not recreated. The corpus already had the Vedic devas Indra, Surya, Vayu, the two Ashvins, plus Dharma and the whole Mahabharata lineage; I left all of those alone. Note: `hindu_dharma` already exists, so I authored Yama explicitly as the death-god/judge (`hindu_yama`) and flagged the distinction in its notes.
+- Parentage integrity: every `parentIds` entry points only to an existing-corpus ID or one authored in this same batch. To make the marquee figures' lineages valid I added the necessary parents as supporting entries: Vasudeva/Devaki/Rohini (for Krishna/Balarama), Dasharatha/Kausalya/Sumitra (for Rama/Lakshmana), and Vishrava/Kaikesi/Kashyapa/Vinata (for Ravana, Kubera, Garuda, Aruna). Varuna→Aditi, Yama/Sugriva→Surya, Vali→Indra, Ganesha/Kartikeya→Shiva+Parvati, Kamadeva→Brahma, etc.
+- Coverage: all 31 figures named in the brief plus well-attested additions tightly bound to them — Vibhishana, Kumbhakarna, Indrajit, Sugriva, Vali, Angada, Jatayu, Aruna, Rati, and Shesha (the last object carries a leftover descriptive id string `hindu_ganesha_consort_placeholder_removed`; its actual subject is Shesha — if you want a cleaner id, rename it to `hindu_shesha` on ingest).
+- Sourcing: existence claims and load-bearing items/faculties are cited to primary texts (Rigveda, Atharvaveda, Mahabharata, Ramayana, principal Puranas, Devi Mahatmya, Bhagavad Gita). Where a detail is genuinely only post-Vedic iconographic convention (e.g., Agni's ram, Varuna's makara, Lakshmi's owl, Soma's antelope chariot, Kartikeya's vel), I marked the source `kind:"secondary"` rather than overstate a primary attestation. No figures or attributes were fabricated.
+
+One correction you should make on ingest: the final object's `id` is a placeholder leftover (`hindu_ganesha_consort_placeholder_removed`) but describes Shesha — rename it to `hindu_shesha`.

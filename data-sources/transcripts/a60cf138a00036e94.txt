@@ -1,0 +1,762 @@
+I now have all the verified data I need. Let me compile the registry of missing African figures.
+
+**Summary of what already exists (will NOT recreate):**
+- Yoruba: ogun, lakange, oranmiyan, torosi, shango, ajaka
+- Edo: erinmwinde, eweka_i, ewedo, oguola, uwaifiokun, ewuare_great, emotan, ozolua, esigie, orhogbua
+- Akan: akan_nyame, akan_asase_yaa (present), akan_anansi (present), + historical kings
+- Shilluk, Banyaruanda: present
+
+**Conventions confirmed:** Yoruba = bare ids; Edo = bare ids; Akan = `akan_` prefix. No Fon/Zulu sets exist, so I'll create them with `fon_`/`zulu_` prefixes (matching the pattern of other prefixed traditions like `akan_`, `inca_`, `slavic_`).
+
+Here is the completed registry:
+
+```json
+[
+  {
+    "id": "olodumare",
+    "name": { "primary": "Olodumare", "alt": ["Olorun", "Eledumare", "Olofin-Orun"], "transliterations": { "yoruba": "Olódùmarè" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "supreme-creator", "contextTag": "lifelong", "term": { "value": "Ẹlẹ́dàá", "script": "Yoruba", "rom": "Eleda" }, "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare: God in Yoruba Belief (1962)" }] },
+      { "sphereId": "sky-heavens", "contextTag": "lifelong", "term": { "value": "ọ̀run", "script": "Yoruba", "rom": "orun" }, "sources": [{ "kind": "secondary", "reference": "Bascom, The Yoruba of Southwestern Nigeria (1969)" }] },
+      { "sphereId": "destiny-ashe", "contextTag": "lifelong", "term": { "value": "àṣẹ", "script": "Yoruba", "rom": "ashe" }, "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] }
+    ],
+    "faculties": [
+      { "id": "grant-life-breath", "name": "Breathes the life-force into moulded bodies", "term": { "value": "èémí", "script": "Yoruba", "rom": "eemi" }, "inheritability": "none", "notes": "Sole giver of the vital breath animating humankind", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "id": "allot-destiny", "name": "Apportions and seals each being's destiny", "term": { "value": "àyànmọ́", "script": "Yoruba", "rom": "ayanmo" }, "inheritability": "none", "notes": "Confirms destiny chosen before each soul departs heaven", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "id": "dispense-ashe", "name": "Dispenses the cosmic life-power ashe", "term": { "value": "àṣẹ", "script": "Yoruba", "rom": "ashe" }, "inheritability": "partial", "notes": "Source of the power by which all orisa act", "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Idowu, Olodumare: God in Yoruba Belief (1962)" }], "weight": "secondary" }],
+    "notes": "Yoruba supreme being and creator; remote owner of all ashe and destiny."
+  },
+  {
+    "id": "oduduwa",
+    "name": { "primary": "Oduduwa", "alt": ["Odudua", "Odua"], "transliterations": { "yoruba": "Odùduwà" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "earth-creation", "contextTag": "lifelong", "term": { "value": "ilẹ̀", "script": "Yoruba", "rom": "ile" }, "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "sphereId": "kingship-progenitor", "contextTag": "lifelong", "term": { "value": "Ọba", "script": "Yoruba", "rom": "Oba" }, "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] }
+    ],
+    "faculties": [
+      { "id": "complete-earth-creation", "name": "Completes the forming of solid earth at Ile-Ife", "term": { "value": "dá ilẹ̀", "script": "Yoruba", "rom": "da ile" }, "inheritability": "none", "notes": "Finishes creation after Obatala fails the drunken task", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "id": "found-dynasty", "name": "Founds the Yoruba royal lineage", "term": { "value": "ìpilẹ̀ ọba", "script": "Yoruba", "rom": "ipile oba" }, "inheritability": "full", "notes": "Ancestral progenitor of crowned Yoruba kings", "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] }
+    ],
+    "materialCulture": [
+      { "id": "five-toed-fowl", "kind": "creature", "name": "Five-toed cock that scattered earth", "term": { "value": "adìẹ ẹlẹ́sẹ̀ márùn-ún", "script": "Yoruba", "rom": "adie elese marun" }, "role": "owner", "notes": "Spread sand over the primordial waters to make land", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Idowu, Olodumare: God in Yoruba Belief (1962)" }], "weight": "secondary" }],
+    "notes": "Progenitor orisa of the Yoruba and founder-king of Ile-Ife."
+  },
+  {
+    "id": "obatala",
+    "name": { "primary": "Obatala", "alt": ["Orishanla", "Orisha-Nla", "Obatala King of White Cloth"], "transliterations": { "yoruba": "Ọbàtálá" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation-craft", "contextTag": "lifelong", "term": { "value": "amọ̀kòkò ènìyàn", "script": "Yoruba", "rom": "amokoko eniyan" }, "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "sphereId": "purity-wisdom", "contextTag": "lifelong", "term": { "value": "funfun", "script": "Yoruba", "rom": "funfun" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọbatala; Idowu (1962)" }] }
+    ],
+    "faculties": [
+      { "id": "mould-human-bodies", "name": "Moulds human bodies from clay", "term": { "value": "ya ènìyàn", "script": "Yoruba", "rom": "ya eniyan" }, "inheritability": "none", "notes": "Sculpts forms for Olodumare to animate; patron of the disabled", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "id": "embody-purity", "name": "Embodies and enforces ritual purity", "term": { "value": "funfun", "script": "Yoruba", "rom": "funfun" }, "inheritability": "partial", "notes": "Demands whiteness, coolness, and abstention from palm wine", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọbatala" }] }
+    ],
+    "materialCulture": [
+      { "id": "white-cloth", "kind": "regalia", "name": "White cloth", "term": { "value": "aṣọ funfun", "script": "Yoruba", "rom": "aso funfun" }, "role": "owner", "notes": "Signature white garment giving his title King of White Cloth", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọbatala" }] },
+      { "id": "efun-chalk", "kind": "substance", "name": "White chalk", "term": { "value": "ẹfun", "script": "Yoruba", "rom": "efun" }, "role": "owner", "notes": "White chalk used in his worship and purifications", "sources": [{ "kind": "secondary", "reference": "Botanica She, Obatala" }] },
+      { "id": "snail-shell-sand", "kind": "tool", "name": "Snail shell of sand", "term": { "value": "ìkarawun ìgbín", "script": "Yoruba", "rom": "ikarawun igbin" }, "role": "wielder", "notes": "Creation kit: snail shell of sand, hen, palm-nut", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Idowu, Olodumare: God in Yoruba Belief (1962)" }], "weight": "secondary" }],
+    "notes": "Arch-divinity and sculptor of humankind; patron of purity and white."
+  },
+  {
+    "id": "orunmila",
+    "name": { "primary": "Orunmila", "alt": ["Orunla", "Ifa", "Agbonniregun"], "transliterations": { "yoruba": "Ọ̀rúnmìlà" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "divination-wisdom", "contextTag": "lifelong", "term": { "value": "Ifá", "script": "Yoruba", "rom": "Ifa" }, "sources": [{ "kind": "secondary", "reference": "Bascom, Ifa Divination (1969)" }] },
+      { "sphereId": "destiny-knowledge", "contextTag": "lifelong", "term": { "value": "Ẹlẹ́rìí-ìpín", "script": "Yoruba", "rom": "Eleri-ipin" }, "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] }
+    ],
+    "faculties": [
+      { "id": "perform-ifa-divination", "name": "Divines destiny through the Ifa oracle", "term": { "value": "dá Ifá", "script": "Yoruba", "rom": "da Ifa" }, "inheritability": "full", "notes": "Reads the 256 odu to reveal each person's fate", "sources": [{ "kind": "secondary", "reference": "Bascom, Ifa Divination (1969)" }] },
+      { "id": "witness-destiny", "name": "Witnesses the choosing of each destiny", "term": { "value": "Ẹlẹ́rìí-ìpín", "script": "Yoruba", "rom": "Eleri-ipin" }, "inheritability": "none", "notes": "Present when souls select their ori before birth", "sources": [{ "kind": "secondary", "reference": "Idowu, Olodumare (1962)" }] },
+      { "id": "prescribe-sacrifice", "name": "Prescribes corrective sacrifice ebo", "term": { "value": "ẹbọ", "script": "Yoruba", "rom": "ebo" }, "inheritability": "partial", "notes": "Diagnoses remedies to realign a client with destiny", "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] }
+    ],
+    "materialCulture": [
+      { "id": "opon-ifa", "kind": "tool", "name": "Ifa divination tray", "term": { "value": "ọpọ́n Ifá", "script": "Yoruba", "rom": "opon Ifa" }, "role": "owner", "notes": "Carved wooden tray on which odu marks are drawn", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Opon Ifá" }] },
+      { "id": "opele-chain", "kind": "tool", "name": "Divining chain", "term": { "value": "ọ̀pẹ̀lẹ̀", "script": "Yoruba", "rom": "opele" }, "role": "owner", "notes": "Seed-pod chain cast for rapid divination", "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] },
+      { "id": "ikin-palm-nuts", "kind": "tool", "name": "Sacred palm nuts", "term": { "value": "ikin", "script": "Yoruba", "rom": "ikin" }, "role": "owner", "notes": "Sixteen consecrated palm nuts manipulated to generate odu", "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] },
+      { "id": "iroke-tapper", "kind": "tool", "name": "Divination tapper", "term": { "value": "ìrókè Ifá", "script": "Yoruba", "rom": "iroke Ifa" }, "role": "owner", "notes": "Tapper struck on the tray to summon Orunmila", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ifá" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Bascom, Ifa Divination: Communication Between Gods and Men (1969)" }], "weight": "secondary" }],
+    "notes": "Orisa of wisdom and divination; patron of the Ifa oracle and destiny."
+  },
+  {
+    "id": "eshu",
+    "name": { "primary": "Eshu", "alt": ["Elegba", "Elegbara", "Eshu-Elegba", "Laalu"], "transliterations": { "yoruba": "Èṣù" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "trickster-chance", "contextTag": "lifelong", "term": { "value": "ayédèrú", "script": "Yoruba", "rom": "ayederu" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Eshu" }] },
+      { "sphereId": "crossroads-thresholds", "contextTag": "lifelong", "term": { "value": "orítamẹ́ta", "script": "Yoruba", "rom": "oritameta" }, "sources": [{ "kind": "secondary", "reference": "Bascom (1969)" }] },
+      { "sphereId": "messages-mediation", "contextTag": "lifelong", "term": { "value": "ìránṣẹ́", "script": "Yoruba", "rom": "iranse" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Eshu" }] }
+    ],
+    "faculties": [
+      { "id": "mediate-sacrifice", "name": "Carries and supervises sacrifices between worlds", "term": { "value": "gbé ẹbọ", "script": "Yoruba", "rom": "gbe ebo" }, "inheritability": "none", "notes": "Conveys ebo to orisa; indispensable to all ritual", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Eshu" }] },
+      { "id": "trickster-disruption", "name": "Sows confusion to test and restore order", "term": { "value": "dàrú", "script": "Yoruba", "rom": "daru" }, "inheritability": "none", "notes": "Provokes disorder that ultimately enforces balance", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Eshu" }] },
+      { "id": "speak-all-tongues", "name": "Translates between languages of gods and humans", "term": { "value": "èdè", "script": "Yoruba", "rom": "ede" }, "inheritability": "none", "notes": "Sole interpreter of divine speech, including Ifa's verdicts", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Eshu" }] }
+    ],
+    "materialCulture": [
+      { "id": "ogo-club", "kind": "weapon", "name": "Knobbed club", "term": { "value": "ọ̀gọ̀", "script": "Yoruba", "rom": "ogo" }, "role": "wielder", "notes": "Curved club carried as his characteristic emblem", "sources": [{ "kind": "secondary", "reference": "UMMA, Eshu Figure" }] },
+      { "id": "yangi-laterite", "kind": "object", "name": "Laterite shrine stone", "term": { "value": "yangí", "script": "Yoruba", "rom": "yangi" }, "role": "owner", "notes": "Rough laterite block enshrining him at thresholds", "sources": [{ "kind": "secondary", "reference": "Lam Museum, Yoruba Eshu Figure" }] },
+      { "id": "cowrie-ogo", "kind": "object", "name": "Cowrie-decked figure", "term": { "value": "ọ̀gọ̀ Ẹlẹ́gba", "script": "Yoruba", "rom": "ogo Elegba" }, "role": "owner", "notes": "Cowrie-covered effigy signifying wealth and watchfulness", "sources": [{ "kind": "secondary", "reference": "Lam Museum, Yoruba Eshu Figure" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Bascom, The Yoruba of Southwestern Nigeria (1969)" }], "weight": "secondary" }],
+    "notes": "Trickster, crossroads guardian, and divine messenger-mediator of sacrifice."
+  },
+  {
+    "id": "oshun",
+    "name": { "primary": "Oshun", "alt": ["Osun", "Ochun", "Oxum"], "transliterations": { "yoruba": "Ọ̀ṣun" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "rivers-sweet-waters", "contextTag": "lifelong", "term": { "value": "odò Ọ̀ṣun", "script": "Yoruba", "rom": "odo Osun" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Oshun" }] },
+      { "sphereId": "love-fertility", "contextTag": "lifelong", "term": { "value": "ìbímọ", "script": "Yoruba", "rom": "ibimo" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Oshun" }] },
+      { "sphereId": "beauty-wealth", "contextTag": "lifelong", "term": { "value": "ẹwà", "script": "Yoruba", "rom": "ewa" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Oshun" }] }
+    ],
+    "faculties": [
+      { "id": "heal-sweet-waters", "name": "Heals and purifies with sweet river water", "term": { "value": "omi tútù", "script": "Yoruba", "rom": "omi tutu" }, "inheritability": "partial", "notes": "Her fresh waters cure illness and restore fertility", "sources": [{ "kind": "secondary", "reference": "Mystery in History, Oshun" }] },
+      { "id": "grant-fertility", "name": "Bestows children on the barren", "term": { "value": "ìbímọ", "script": "Yoruba", "rom": "ibimo" }, "inheritability": "none", "notes": "Patroness petitioned by women seeking conception", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Oshun" }] },
+      { "id": "wield-sweetness", "name": "Wins favour through sweetness and allure", "term": { "value": "oyin", "script": "Yoruba", "rom": "oyin" }, "inheritability": "none", "notes": "Honey and charm secure love, prosperity, and diplomacy", "sources": [{ "kind": "secondary", "reference": "Beyond Roots, Oshun" }] }
+    ],
+    "materialCulture": [
+      { "id": "abebe-brass-fan", "kind": "regalia", "name": "Brass fan", "term": { "value": "abẹ̀bẹ̀", "script": "Yoruba", "rom": "abebe" }, "role": "owner", "notes": "Circular brass fan, her chief emblem of beauty", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Oshun; RitualScent" }] },
+      { "id": "mirror", "kind": "object", "name": "Mirror", "term": { "value": "dígí", "script": "Yoruba", "rom": "digi" }, "role": "owner", "notes": "Mirror reflecting her vanity and feminine allure", "sources": [{ "kind": "secondary", "reference": "Goddess Gift, Oshun" }] },
+      { "id": "honey", "kind": "substance", "name": "Honey", "term": { "value": "oyin", "script": "Yoruba", "rom": "oyin" }, "role": "owner", "notes": "Sacred offering embodying her sweetness and healing", "sources": [{ "kind": "secondary", "reference": "Beyond Roots, Oshun" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Oshun; Murphy & Sanford, Osun across the Waters (2001)" }], "weight": "secondary" }],
+    "notes": "Orisa of the Osun River, love, fertility, healing sweet-waters, and wealth."
+  },
+  {
+    "id": "yemoja",
+    "name": { "primary": "Yemoja", "alt": ["Yemonja", "Yemaya", "Iemanja"], "transliterations": { "yoruba": "Yemọja" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "waters-motherhood", "contextTag": "lifelong", "term": { "value": "ìyá omi", "script": "Yoruba", "rom": "iya omi" }, "sources": [{ "kind": "secondary", "reference": "Oriire, Yemoja" }] },
+      { "sphereId": "fertility-protection", "contextTag": "lifelong", "term": { "value": "ìyá ọmọ", "script": "Yoruba", "rom": "iya omo" }, "sources": [{ "kind": "secondary", "reference": "Oriire, Yemoja" }] }
+    ],
+    "faculties": [
+      { "id": "protect-mothers-children", "name": "Protects pregnant women and children", "term": { "value": "ìdáàbòbò", "script": "Yoruba", "rom": "idaabobo" }, "inheritability": "none", "notes": "Guardian of childbirth, motherhood, and the newborn", "sources": [{ "kind": "secondary", "reference": "Oriire, Yemoja" }] },
+      { "id": "generate-orisa", "name": "Gives birth to rivers and orisa", "term": { "value": "bí òrìṣà", "script": "Yoruba", "rom": "bi orisa" }, "inheritability": "full", "notes": "Her bursting waters bore Ogun, Shango, Oya and others", "sources": [{ "kind": "secondary", "reference": "Oriire, Yemoja" }] }
+    ],
+    "materialCulture": [
+      { "id": "white-blue-cloth", "kind": "regalia", "name": "White-and-blue cloth", "term": { "value": "aṣọ funfun-búlúù", "script": "Yoruba", "rom": "aso funfun-buluu" }, "role": "owner", "notes": "Flowing white-blue garb evoking sea and water", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Yemoja" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Oriire, Yemoja; Wikipedia, Yemọja" }], "weight": "secondary" }],
+    "notes": "Mother of waters and of the orisa; protector of women and children."
+  },
+  {
+    "id": "oya",
+    "name": { "primary": "Oya", "alt": ["Oya-Iyansan", "Yansan"], "transliterations": { "yoruba": "Ọya" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": ["yemoja"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "wind-storms", "contextTag": "lifelong", "term": { "value": "ẹ̀fúùfù", "script": "Yoruba", "rom": "efuufu" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọya" }] },
+      { "sphereId": "niger-river", "contextTag": "lifelong", "term": { "value": "odò Ọya", "script": "Yoruba", "rom": "odo Oya" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Oya" }] },
+      { "sphereId": "death-ancestral-spirits", "contextTag": "lifelong", "term": { "value": "eégún", "script": "Yoruba", "rom": "eegun" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọya" }] }
+    ],
+    "faculties": [
+      { "id": "command-winds", "name": "Summons winds, tornadoes, and lightning", "term": { "value": "afẹ́fẹ́", "script": "Yoruba", "rom": "afefe" }, "inheritability": "none", "notes": "Raises storms and gales as goddess of tempests", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Oya" }] },
+      { "id": "marshal-the-dead", "name": "Controls the spirits of the dead", "term": { "value": "eégún", "script": "Yoruba", "rom": "eegun" }, "inheritability": "none", "notes": "Only orisa able to command the ancestral masquerade spirits", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọya" }] },
+      { "id": "shapeshift-buffalo", "name": "Transforms into a buffalo", "term": { "value": "ẹ̀fọ̀n", "script": "Yoruba", "rom": "efon" }, "inheritability": "none", "notes": "Assumes buffalo form; her priests may not kill one", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Ọya" }] }
+    ],
+    "materialCulture": [
+      { "id": "horsetail-whisk", "kind": "tool", "name": "Horsetail whisk", "term": { "value": "ìrùkẹ̀rẹ̀", "script": "Yoruba", "rom": "irukere" }, "role": "wielder", "notes": "Switch she wields to drive winds and spirits", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Oya" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Ọya; Mythopedia, Oya" }], "weight": "secondary" }],
+    "notes": "Orisa of winds, storms, the Niger, and mistress of the ancestral dead; Shango's favorite wife."
+  },
+  {
+    "id": "olokun",
+    "name": { "primary": "Olokun", "alt": ["Olokun (Yoruba)"], "transliterations": { "yoruba": "Olókun" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": ["yemoja"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "deep-ocean", "contextTag": "lifelong", "term": { "value": "òkun", "script": "Yoruba", "rom": "okun" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Olokun" }] },
+      { "sphereId": "wealth-mysteries", "contextTag": "lifelong", "term": { "value": "ọrọ̀", "script": "Yoruba", "rom": "oro" }, "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Olokun" }] }
+    ],
+    "faculties": [
+      { "id": "rule-ocean-depths", "name": "Rules the unfathomable ocean depths", "term": { "value": "ìjìnlẹ̀ òkun", "script": "Yoruba", "rom": "ijinle okun" }, "inheritability": "none", "notes": "Governs the deep sea and its hidden mysteries", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Olokun" }] },
+      { "id": "bestow-wealth", "name": "Bestows wealth and prosperity", "term": { "value": "ọrọ̀", "script": "Yoruba", "rom": "oro" }, "inheritability": "partial", "notes": "Grants abundance drawn from the sea's riches", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Olokun" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Olokun" }], "weight": "secondary" }],
+    "notes": "Orisa of the deep ocean, wealth, and mysteries; venerated by Yoruba and Edo alike."
+  },
+  {
+    "id": "osanyin",
+    "name": { "primary": "Osanyin", "alt": ["Osain", "Ossain"], "transliterations": { "yoruba": "Ọ̀sanyìn" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["olodumare"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "herbal-medicine", "contextTag": "lifelong", "term": { "value": "ewé", "script": "Yoruba", "rom": "ewe" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Osanyin" }] },
+      { "sphereId": "forest", "contextTag": "lifelong", "term": { "value": "igbó", "script": "Yoruba", "rom": "igbo" }, "sources": [{ "kind": "secondary", "reference": "Grokipedia, Ọsanyìn" }] }
+    ],
+    "faculties": [
+      { "id": "command-healing-herbs", "name": "Commands the curative power of leaves", "term": { "value": " àṣẹ ewé", "script": "Yoruba", "rom": "ashe ewe" }, "inheritability": "full", "notes": "Holds the secret of every plant's medicinal virtue", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Osanyin" }] },
+      { "id": "transform-into-bird", "name": "Transforms into a bird to travel realms", "term": { "value": "ẹyẹ", "script": "Yoruba", "rom": "eye" }, "inheritability": "none", "notes": "Flies between heaven and earth in avian form", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Osanyin" }] }
+    ],
+    "materialCulture": [
+      { "id": "opa-osanyin", "kind": "tool", "name": "Iron herbalist's staff with birds", "term": { "value": "ọ̀pá Ọ̀sanyìn", "script": "Yoruba", "rom": "opa Osanyin" }, "role": "owner", "notes": "Iron staff crowned by sixteen birds for the principal odu", "sources": [{ "kind": "secondary", "reference": "Jamaica Gleaner, Yoruba Osanyin Staff" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Mythopedia, Osanyin; Grokipedia, Ọsanyìn" }], "weight": "secondary" }],
+    "notes": "One-limbed orisa of the forest, leaves, and herbal medicine; master herbalist."
+  },
+  {
+    "id": "aganju",
+    "name": { "primary": "Aganju", "alt": ["Aganyu", "Agayu"], "transliterations": { "yoruba": "Aganjú" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "volcanoes-wilderness", "contextTag": "lifelong", "term": { "value": "òkè iná", "script": "Yoruba", "rom": "oke ina" }, "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Aganju" }] },
+      { "sphereId": "rivers-deserts", "contextTag": "lifelong", "term": { "value": "aṣálẹ̀", "script": "Yoruba", "rom": "asale" }, "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Aganju" }] }
+    ],
+    "faculties": [
+      { "id": "command-volcanic-fire", "name": "Commands volcanic fire and the earth's heat", "term": { "value": "iná inú ilẹ̀", "script": "Yoruba", "rom": "ina inu ile" }, "inheritability": "none", "notes": "Embodies untamed magma, wilderness, and raw strength", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Aganju" }] },
+      { "id": "ferry-across-rivers", "name": "Bears travellers across deep waters", "term": { "value": "ọkọ̀ odò", "script": "Yoruba", "rom": "oko odo" }, "inheritability": "none", "notes": "Patron ferryman of rivers and wild crossings", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Aganju" }] }
+    ],
+    "materialCulture": [
+      { "id": "double-axe-aganju", "kind": "weapon", "name": "Double-headed axe", "term": { "value": "ọ̀ṣẹ́", "script": "Yoruba", "rom": "oshe" }, "role": "wielder", "notes": "Double axe echoing his close tie to Shango", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Aganju" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Originalbotanica, Aganju" }], "weight": "secondary" }],
+    "notes": "Orisa of volcanoes, wilderness, and rivers; raw untamed strength of the earth."
+  },
+  {
+    "id": "babalu_aye",
+    "name": { "primary": "Babalu-Aye", "alt": ["Obaluaye", "Shopona", "Sopona", "Soponna"], "transliterations": { "yoruba": "Ọbalúayé / Ṣọ̀pọ̀ná" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["nana_buruku"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "disease-smallpox", "contextTag": "lifelong", "term": { "value": "ṣọ̀pọ̀ná", "script": "Yoruba", "rom": "shopona" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Babalú-Ayé" }] },
+      { "sphereId": "healing-pestilence", "contextTag": "lifelong", "term": { "value": "àrùn", "script": "Yoruba", "rom": "arun" }, "sources": [{ "kind": "secondary", "reference": "Daily Ifa, Babalu-Aye" }] }
+    ],
+    "faculties": [
+      { "id": "inflict-and-cure-smallpox", "name": "Inflicts and cures smallpox and epidemics", "term": { "value": "ṣọ̀pọ̀ná", "script": "Yoruba", "rom": "shopona" }, "inheritability": "none", "notes": "Both sender and healer of pestilence and skin disease", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Babalú-Ayé" }] },
+      { "id": "wield-plant-medicine", "name": "Heals through knowledge of forest plants", "term": { "value": "egbòogi", "script": "Yoruba", "rom": "egboogi" }, "inheritability": "partial", "notes": "Allied with Osanyin in the medicine of the bush", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Babalú-Ayé" }] }
+    ],
+    "materialCulture": [
+      { "id": "ja-broom", "kind": "tool", "name": "Ritual broom of raffia", "term": { "value": "jà", "script": "Yoruba", "rom": "ja" }, "role": "wielder", "notes": "Raffia broom used to sweep away and carry disease", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Babalú-Ayé" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Babalú-Ayé" }], "weight": "secondary" }],
+    "notes": "Feared orisa of smallpox, disease, and healing, called Shopona; son of Nana Buruku."
+  },
+  {
+    "id": "ibeji",
+    "name": { "primary": "Ibeji", "alt": ["Ibejis", "Divine Twins", "Taiwo and Kehinde"], "transliterations": { "yoruba": "Ìbejì" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": ["shango", "oshun"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "twins-duality", "contextTag": "lifelong", "term": { "value": "ìbejì", "script": "Yoruba", "rom": "ibeji" }, "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Ibeji" }] }
+    ],
+    "faculties": [
+      { "id": "bless-twin-families", "name": "Bestows fortune and protection on twins' families", "term": { "value": "ìre ìbejì", "script": "Yoruba", "rom": "ire ibeji" }, "inheritability": "none", "notes": "Confer prosperity and spiritual strength to twins' kin", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Ibeji" }] }
+    ],
+    "materialCulture": [
+      { "id": "ere-ibeji", "kind": "object", "name": "Twin memorial figures", "term": { "value": "ère ìbejì", "script": "Yoruba", "rom": "ere ibeji" }, "role": "owner", "notes": "Carved figures housing the spirit of a deceased twin", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Ibeji" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Originalbotanica, Ibeji" }], "weight": "secondary" }],
+    "notes": "Sacred twin orisa embodying duality and balance; protectors of twins."
+  },
+  {
+    "id": "nana_buruku",
+    "name": { "primary": "Nana Buruku", "alt": ["Nana Buluku", "Nanan-bouclou", "Nana"], "transliterations": { "yoruba": "Nàná Bùrùkú" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yoruba",
+    "primaryTradition": "Yoruba",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "primordial-creation", "contextTag": "lifelong", "term": { "value": "ìpilẹ̀ ayé", "script": "Yoruba", "rom": "ipile aye" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Nana Buluku" }] },
+      { "sphereId": "swamps-mud", "contextTag": "lifelong", "term": { "value": "ẹrẹ̀", "script": "Yoruba", "rom": "ere" }, "sources": [{ "kind": "secondary", "reference": "Consult Ifa, Nana Buruku" }] }
+    ],
+    "faculties": [
+      { "id": "originate-world", "name": "Originates the structure of the universe", "term": { "value": "dá ìpilẹ̀ ayé", "script": "Yoruba", "rom": "da ipile aye" }, "inheritability": "full", "notes": "Primordial ancestress who delegates creation to her offspring", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Nana Buluku" }] },
+      { "id": "govern-birth-death", "name": "Governs birth, death, and renewal", "term": { "value": "ìbí àti ikú", "script": "Yoruba", "rom": "ibi ati iku" }, "inheritability": "none", "notes": "Ancient grandmother presiding over life's cycle from the swamp", "sources": [{ "kind": "secondary", "reference": "Consult Ifa, Nana Buruku" }] }
+    ],
+    "materialCulture": [
+      { "id": "ibiri-staff", "kind": "tool", "name": "Curved ritual staff", "term": { "value": "ìbìrí", "script": "Yoruba", "rom": "ibiri" }, "role": "owner", "notes": "Crescent ribbed staff of the swamp grandmother", "sources": [{ "kind": "secondary", "reference": "Originalbotanica, Nana Buruku" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Nana Buluku" }], "weight": "secondary" }],
+    "notes": "Ancient primordial grandmother-deity of swamps and creation, shared with the Fon."
+  },
+  {
+    "id": "akan_tano",
+    "name": { "primary": "Tano", "alt": ["Ta Kora", "Tano Akora"], "transliterations": { "akan": "Tano (Ta Kora)" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Akan",
+    "primaryTradition": "Akan",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["akan_nyame", "akan_asase_yaa"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "rivers-water", "contextTag": "lifelong", "term": { "value": "Tano", "script": "Akan", "rom": "Tano" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora)" }] },
+      { "sphereId": "war-thunder", "contextTag": "lifelong", "term": { "value": "Ta Kora", "script": "Akan", "rom": "Ta Kora" }, "sources": [{ "kind": "secondary", "reference": "Learn Alchemical, Tano" }] }
+    ],
+    "faculties": [
+      { "id": "rule-river-tano", "name": "Rules the life-giving Tano River", "term": { "value": "asubɔnten Tano", "script": "Akan", "rom": "asubonten Tano" }, "inheritability": "full", "notes": "Chief of the atano water-deities of southern Ghana", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora)" }] },
+      { "id": "sire-water-spirits", "name": "Fathers the river abosom", "term": { "value": "atano", "script": "Akan", "rom": "atano" }, "inheritability": "full", "notes": "Progenitor of the lesser river deities bearing his name", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Akan religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora); Akan religion" }], "weight": "secondary" }],
+    "notes": "Akan river-deity and war-spirit, chief of the atano; son of Nyame and Asase Yaa."
+  },
+  {
+    "id": "akan_bia",
+    "name": { "primary": "Bia", "alt": ["Bia (river god)"], "transliterations": { "akan": "Bia" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Akan",
+    "primaryTradition": "Akan",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["akan_nyame", "akan_asase_yaa"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "wilderness-bush", "contextTag": "lifelong", "term": { "value": "kwaeɛ", "script": "Akan", "rom": "kwae" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora)" }] },
+      { "sphereId": "rivers-water", "contextTag": "lifelong", "term": { "value": "Bia", "script": "Akan", "rom": "Bia" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora)" }] }
+    ],
+    "faculties": [
+      { "id": "preside-wild-animals", "name": "Presides over the bush and wild animals", "term": { "value": "mmoa", "script": "Akan", "rom": "mmoa" }, "inheritability": "none", "notes": "Abosom of wilderness, wild beasts, and the forest", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Tano (Ta Kora)" }], "weight": "secondary" }],
+    "notes": "Akan deity of the Bia River and wilderness; elder brother and rival of Tano."
+  },
+  {
+    "id": "edo_osanobua",
+    "name": { "primary": "Osanobua", "alt": ["Osanobwa", "Osa"], "transliterations": { "edo": "Osanobua" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Edo",
+    "primaryTradition": "Edo",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "supreme-creator", "contextTag": "lifelong", "term": { "value": "Osanobua", "script": "Edo", "rom": "Osanobua" }, "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }] }
+    ],
+    "faculties": [
+      { "id": "create-all-beings", "name": "Creates all beings of the visible and spirit worlds", "term": { "value": "Agbọn àti Erinmwin", "script": "Edo", "rom": "Agbon ati Erinmwin" }, "inheritability": "none", "notes": "Remote creator of both the human world and spirit realm", "sources": [{ "kind": "secondary", "reference": "Grokipedia, Osanobua" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion; Grokipedia, Osanobua" }], "weight": "secondary" }],
+    "notes": "Remote Edo supreme creator-deity, father of Olokun and Ogiuwu."
+  },
+  {
+    "id": "edo_olokun",
+    "name": { "primary": "Olokun", "alt": ["Olokun (Edo)"], "transliterations": { "edo": "Olokun" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Edo",
+    "primaryTradition": "Edo",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": ["edo_osanobua"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "waters-sea", "contextTag": "lifelong", "term": { "value": "Olokun", "script": "Edo", "rom": "Olokun" }, "sources": [{ "kind": "secondary", "reference": "Edofolks, The Olokun" }] },
+      { "sphereId": "wealth-fertility", "contextTag": "lifelong", "term": { "value": "ẹfe", "script": "Edo", "rom": "efe" }, "sources": [{ "kind": "secondary", "reference": "Amici di Lazzaro, The Olokun Tradition" }] }
+    ],
+    "faculties": [
+      { "id": "rule-waters", "name": "Rules the global waters", "term": { "value": "amẹ", "script": "Edo", "rom": "ame" }, "inheritability": "none", "notes": "King of the waters surrounding the land of the living", "sources": [{ "kind": "secondary", "reference": "Edofolks, The Olokun" }] },
+      { "id": "grant-wealth-children", "name": "Grants wealth and children", "term": { "value": "ìgho àti ọmọ", "script": "Edo", "rom": "igho ati omo" }, "inheritability": "partial", "notes": "Most-venerated Benin deity petitioned by women for offspring", "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion; Edofolks, The Olokun" }], "weight": "secondary" }],
+    "notes": "Most-venerated Benin deity, king of the waters and giver of wealth and children; senior child of Osanobua."
+  },
+  {
+    "id": "edo_ogiuwu",
+    "name": { "primary": "Ogiuwu", "alt": ["Ogiuwu, King of Death"], "transliterations": { "edo": "Ogiuwu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Edo",
+    "primaryTradition": "Edo",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["edo_osanobua"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "uwu", "script": "Edo", "rom": "uwu" }, "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }] }
+    ],
+    "faculties": [
+      { "id": "rule-death", "name": "Rules over death and claims mortal lives", "term": { "value": "ọba uwu", "script": "Edo", "rom": "oba uwu" }, "inheritability": "none", "notes": "King of death who takes the blood and lives of mortals", "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }], "weight": "secondary" }],
+    "notes": "Edo king of death, senior child of Osanobua; no longer actively worshipped."
+  },
+  {
+    "id": "edo_esu",
+    "name": { "primary": "Esu", "alt": ["Esu (Edo)"], "transliterations": { "edo": "Esu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Edo",
+    "primaryTradition": "Edo",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "trickster-misfortune", "contextTag": "lifelong", "term": { "value": "Esu", "script": "Edo", "rom": "Esu" }, "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }] }
+    ],
+    "faculties": [
+      { "id": "embody-disorder", "name": "Embodies disorder and chance", "term": { "value": "Esu", "script": "Edo", "rom": "Esu" }, "inheritability": "none", "notes": "Trickster power borrowed from the neighbouring Yoruba", "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Encyclopedia.com, Edo Religion" }], "weight": "secondary" }],
+    "notes": "Edo trickster deity adopted from the Yoruba Eshu, worshipped especially in border areas."
+  },
+  {
+    "id": "fon_nana_buluku",
+    "name": { "primary": "Nana Buluku", "alt": ["Nana Buruku", "Nanan-bouclou"], "transliterations": { "fon": "Nana Buluku" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "supreme-creator", "contextTag": "lifelong", "term": { "value": "Nana Buluku", "script": "Fon", "rom": "Nana Buluku" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Nana Buluku" }] }
+    ],
+    "faculties": [
+      { "id": "originate-cosmos", "name": "Originates the universe and bears Mawu-Lisa", "term": { "value": "Nana Buluku", "script": "Fon", "rom": "Nana Buluku" }, "inheritability": "full", "notes": "Androgynous primordial being; mother of Mawu and Lisa", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Nana Buluku; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon androgynous supreme being and primordial mother of the creator Mawu-Lisa."
+  },
+  {
+    "id": "fon_mawu_lisa",
+    "name": { "primary": "Mawu-Lisa", "alt": ["Mawu", "Lisa"], "transliterations": { "fon": "Mawu-Lisa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": ["fon_nana_buluku"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Mawu-Lisa", "script": "Fon", "rom": "Mawu-Lisa" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Mawu-Lisa" }] },
+      { "sphereId": "sun-moon", "contextTag": "lifelong", "term": { "value": "Mawu (sun), Lisa (moon)", "script": "Fon", "rom": "Mawu / Lisa" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Mawu-Lisa" }] }
+    ],
+    "faculties": [
+      { "id": "create-and-order-world", "name": "Creates the world and apportions realms to offspring", "term": { "value": "Mawu-Lisa", "script": "Fon", "rom": "Mawu-Lisa" }, "inheritability": "full", "notes": "Twin creator dividing earth, sky, and sea among children", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Mawu-Lisa" }] },
+      { "id": "join-sun-moon", "name": "Unites the powers of sun (Lisa) and moon (Mawu)", "term": { "value": "hwe àti sun", "script": "Fon", "rom": "hwe ati sun" }, "inheritability": "none", "notes": "Androgynous union of day-male Lisa and night-female Mawu", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Mawu-Lisa" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Herskovits, Dahomey (1938); Mythopedia, Mawu-Lisa" }], "weight": "secondary" }],
+    "notes": "Fon androgynous creator deity, twin union of moon (Mawu) and sun (Lisa)."
+  },
+  {
+    "id": "fon_sakpata",
+    "name": { "primary": "Sakpata", "alt": ["Sagbata", "Ainon"], "transliterations": { "fon": "Sakpata" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["fon_mawu_lisa"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "earth", "contextTag": "lifelong", "term": { "value": "Sakpata", "script": "Fon", "rom": "Sakpata" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Sakpata" }] },
+      { "sphereId": "disease-smallpox", "contextTag": "lifelong", "term": { "value": "Sakpata", "script": "Fon", "rom": "Sakpata" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Sakpata" }] }
+    ],
+    "faculties": [
+      { "id": "rule-earth", "name": "Rules the earth as eldest son of Mawu-Lisa", "term": { "value": "Ainon", "script": "Fon", "rom": "Ainon" }, "inheritability": "full", "notes": "Head of the earth pantheon; fathered the earth deities", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Sakpata" }] },
+      { "id": "send-smallpox", "name": "Sends and withdraws smallpox and disease", "term": { "value": "Sakpata", "script": "Fon", "rom": "Sakpata" }, "inheritability": "none", "notes": "Feared lord of pestilence afflicting the skin and earth", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Sakpata" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Mythopedia, Sakpata; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon eldest son of Mawu-Lisa, lord of the earth and smallpox; counterpart of Shopona."
+  },
+  {
+    "id": "fon_sogbo",
+    "name": { "primary": "Sogbo", "alt": ["Xevioso", "Hevioso", "So"], "transliterations": { "fon": "Sogbo (Xɛvioso)" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["fon_mawu_lisa"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "thunder-lightning", "contextTag": "lifelong", "term": { "value": "Xɛvioso", "script": "Fon", "rom": "Xevioso" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "faculties": [
+      { "id": "hurl-thunderbolts", "name": "Hurls thunder and lightning", "term": { "value": "Xɛvioso", "script": "Fon", "rom": "Xevioso" }, "inheritability": "none", "notes": "Chief of the thunder pantheon, casting fire from the sky", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "materialCulture": [
+      { "id": "so-axe", "kind": "weapon", "name": "Thunder-axe", "term": { "value": "sòkpɛ", "script": "Fon", "rom": "sokpe" }, "role": "wielder", "notes": "Stone thunder-axe hurled to earth as a lightning bolt", "sources": [{ "kind": "secondary", "reference": "Herskovits, Dahomey (1938)" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon god of thunder and lightning, chief of the sky/thunder pantheon."
+  },
+  {
+    "id": "fon_gu",
+    "name": { "primary": "Gu", "alt": ["Gou"], "transliterations": { "fon": "Gu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["fon_mawu_lisa"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "iron-war", "contextTag": "lifelong", "term": { "value": "Gu", "script": "Fon", "rom": "Gu" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "faculties": [
+      { "id": "forge-and-wage-war", "name": "Patronizes iron, smithing, and warfare", "term": { "value": "Gu", "script": "Fon", "rom": "Gu" }, "inheritability": "partial", "notes": "Gave humankind blacksmithing through Lisa; god of iron", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon god of iron and war, counterpart of Yoruba Ogun; brought smithing to humankind."
+  },
+  {
+    "id": "fon_dan",
+    "name": { "primary": "Dan", "alt": ["Dan Ayido Hwedo", "Aido-Hwedo", "Aidohwedo"], "transliterations": { "fon": "Dan Ayidohwɛdo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "other",
+    "vitalStatus": null,
+    "parentIds": ["fon_mawu_lisa"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "serpent-cosmic-order", "contextTag": "lifelong", "term": { "value": "Dan", "script": "Fon", "rom": "Dan" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] },
+      { "sphereId": "rainbow-wealth", "contextTag": "lifelong", "term": { "value": "Ayidohwɛdo", "script": "Fon", "rom": "Ayidohwedo" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "faculties": [
+      { "id": "uphold-the-world", "name": "Coils beneath and upholds the created world", "term": { "value": "Ayidohwɛdo", "script": "Fon", "rom": "Ayidohwedo" }, "inheritability": "none", "notes": "Cosmic serpent who carried Mawu-Lisa and supports the earth", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon cosmic rainbow-serpent who bore the creator and supports the world."
+  },
+  {
+    "id": "fon_legba",
+    "name": { "primary": "Legba", "alt": ["Aglosunto", "Papa Legba"], "transliterations": { "fon": "Legba" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": ["fon_mawu_lisa"],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "messages-mediation", "contextTag": "lifelong", "term": { "value": "Legba", "script": "Fon", "rom": "Legba" }, "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] },
+      { "sphereId": "crossroads-thresholds", "contextTag": "lifelong", "term": { "value": "Legba", "script": "Fon", "rom": "Legba" }, "sources": [{ "kind": "secondary", "reference": "Smithsonian, Fa Divination" }] }
+    ],
+    "faculties": [
+      { "id": "translate-divine-speech", "name": "Translates the messages of the gods and Fa", "term": { "value": "Legba", "script": "Fon", "rom": "Legba" }, "inheritability": "none", "notes": "Sole interpreter of Fa's oracular speech to humans", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] },
+      { "id": "guard-thresholds", "name": "Guards gateways between humans and vodun", "term": { "value": "Legba", "script": "Fon", "rom": "Legba" }, "inheritability": "none", "notes": "Youngest child and gatekeeper-messenger of Mawu-Lisa", "sources": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Mythopedia, Vodun Religion; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon trickster-messenger and gatekeeper, counterpart of Yoruba Eshu; interpreter of Fa."
+  },
+  {
+    "id": "fon_fa",
+    "name": { "primary": "Fa", "alt": ["Fa (oracle)"], "transliterations": { "fon": "Fa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fon",
+    "primaryTradition": "Fon",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "divination-fate", "contextTag": "lifelong", "term": { "value": "Fa", "script": "Fon", "rom": "Fa" }, "sources": [{ "kind": "secondary", "reference": "Smithsonian, Fa Divination of Benin" }] }
+    ],
+    "faculties": [
+      { "id": "reveal-destiny", "name": "Reveals fate through Fa divination", "term": { "value": "Fa", "script": "Fon", "rom": "Fa" }, "inheritability": "full", "notes": "God of destiny consulted via sixteen sacred palm nuts", "sources": [{ "kind": "secondary", "reference": "Smithsonian, Fa Divination of Benin" }] }
+    ],
+    "materialCulture": [
+      { "id": "fadekwin-palm-nuts", "kind": "tool", "name": "Sixteen sacred palm nuts", "term": { "value": "fádékwín", "script": "Fon", "rom": "fadekwin" }, "role": "owner", "notes": "Sixteen palm nuts tossed and read on the divining board", "sources": [{ "kind": "secondary", "reference": "Smithsonian, Fa Divination of Benin" }] }
+    ],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Smithsonian, Fa Divination of Benin; Herskovits, Dahomey (1938)" }], "weight": "secondary" }],
+    "notes": "Fon god of fate and divination, equivalent of Yoruba Ifa; his wife Gbadu sources his power."
+  },
+  {
+    "id": "zulu_unkulunkulu",
+    "name": { "primary": "Unkulunkulu", "alt": ["uNkulunkulu"], "transliterations": { "zulu": "uNkulunkulu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Zulu",
+    "primaryTradition": "Zulu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation-first-ancestor", "contextTag": "lifelong", "term": { "value": "uNkulunkulu", "script": "Zulu", "rom": "uNkulunkulu" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Unkulunkulu" }] }
+    ],
+    "faculties": [
+      { "id": "originate-humankind", "name": "Brings forth the first people from the reed-bed", "term": { "value": "uhlanga", "script": "Zulu", "rom": "uhlanga" }, "inheritability": "full", "notes": "First ancestor who sprang from and broke off the reeds", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Unkulunkulu; Callaway, Religious System of the Amazulu (1870)" }] },
+      { "id": "ordain-custom", "name": "Ordains social order and custom", "term": { "value": "uNkulunkulu", "script": "Zulu", "rom": "uNkulunkulu" }, "inheritability": "none", "notes": "Gave humankind language, marriage, and the chiefs", "sources": [{ "kind": "secondary", "reference": "Callaway, Religious System of the Amazulu (1870)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Callaway, The Religious System of the Amazulu (1870); Wikipedia, Unkulunkulu" }], "weight": "secondary" }],
+    "notes": "Zulu first-ancestor and creator who emerged from the primal reed-bed (uhlanga)."
+  },
+  {
+    "id": "zulu_umvelinqangi",
+    "name": { "primary": "Umvelinqangi", "alt": ["uMvelinqangi", "Unsondo"], "transliterations": { "zulu": "uMvelinqangi" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Zulu",
+    "primaryTradition": "Zulu",
+    "sex": "male",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sky-thunder", "contextTag": "lifelong", "term": { "value": "uMvelinqangi", "script": "Zulu", "rom": "uMvelinqangi" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Umvelinqangi" }] }
+    ],
+    "faculties": [
+      { "id": "command-thunder-quake", "name": "Commands thunder and earthquake", "term": { "value": "uMvelinqangi", "script": "Zulu", "rom": "uMvelinqangi" }, "inheritability": "none", "notes": "Sky-god of thunder and earthquake, he-who-was-first", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Umvelinqangi" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Umvelinqangi" }], "weight": "secondary" }],
+    "notes": "Zulu sky-god of thunder and earthquake, 'he who was in the very beginning'."
+  },
+  {
+    "id": "zulu_nomkhubulwane",
+    "name": { "primary": "Nomkhubulwane", "alt": ["uNomkhubulwana", "iNkosazana"], "transliterations": { "zulu": "uNomkhubulwane" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Zulu",
+    "primaryTradition": "Zulu",
+    "sex": "female",
+    "vitalStatus": null,
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "rain-agriculture", "contextTag": "lifelong", "term": { "value": "uNomkhubulwane", "script": "Zulu", "rom": "uNomkhubulwane" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Zulu traditional religion" }] },
+      { "sphereId": "rainbow-fertility", "contextTag": "lifelong", "term": { "value": "iNkosazana", "script": "Zulu", "rom": "iNkosazana" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, Zulu traditional religion" }] }
+    ],
+    "faculties": [
+      { "id": "grant-rain-harvest", "name": "Grants rain, fertility, and the harvest", "term": { "value": "uNomkhubulwane", "script": "Zulu", "rom": "uNomkhubulwane" }, "inheritability": "none", "notes": "Goddess of rain and agriculture, the 'Zulu Demeter'", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Zulu traditional religion" }] },
+      { "id": "invent-beer", "name": "Invents and gives beer to humankind", "term": { "value": "utshwala", "script": "Zulu", "rom": "utshwala" }, "inheritability": "none", "notes": "Credited with creating sorghum beer", "sources": [{ "kind": "secondary", "reference": "Wikipedia, Zulu traditional religion" }] }
+    ],
+    "materialCulture": [],
+    "sources": [{ "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wikipedia, Zulu traditional religion" }], "weight": "secondary" }],
+    "notes": "Zulu goddess of rain, agriculture, the rainbow, and beer; the sky-princess iNkosazana."
+  }
+]
+```
+
+**Note on conventions and decisions:**
+- **ID conventions followed exactly:** Yoruba and Edo use **bare ids** (e.g. `oshun`, `eshu`, `edo_olokun`) — matching `ogun`/`shango` and `erinmwinde`/`eweka_i`. Wait — Edo existing ids are bare (`erinmwinde`), but those are all *human dynasts*; the *deities* I added carry an `edo_` prefix to disambiguate from the Yoruba `olokun`/`esu` (since `olokun` and `eshu`/`esu` would otherwise collide across traditions in a flat id space). Akan keeps its established `akan_` prefix. Fon and Zulu are new traditions, given `fon_`/`zulu_` prefixes consistent with the file's prefixed-tradition pattern.
+- **Skipped (already exist):** Akan Asase Yaa (`akan_asase_yaa`) and Anansi (`akan_anansi`) — not recreated.
+- **parentIds** use real attested links within this batch/corpus (e.g. Tano→Nyame+Asase Yaa; Babalu-Aye→Nana Buruku; Oya/Olokun→Yemoja per the lagoon-birth myth; Fon children→Mawu-Lisa→Nana Buluku). Aganju, Nana Buruku, Osanobua, Esu, Fa, and the Zulu primordials left `[]` where parentage is not firmly attested.
+- **Cross-tradition duplicates intentional:** Nana Buruku appears as Yoruba (`nana_buruku`) and Fon (`fon_nana_buluku`), and Olokun as Yoruba (`olokun`) and Edo (`edo_olokun`), since both are independently and prominently attested in each tradition — matching the registry's existing practice of recension-specific entries (e.g. `macuxi_insikiran` vs `insikiran`).
+
+**Coverage:** 31 figures — Yoruba (15): Olodumare, Oduduwa, Obatala, Orunmila, Eshu, Oshun, Yemoja, Oya, Olokun, Osanyin, Aganju, Babalu-Aye, Ibeji, Nana Buruku; Akan (2): Tano, Bia; Edo (4): Osanobua, Olokun, Ogiuwu, Esu; Fon (8): Nana Buluku, Mawu-Lisa, Sakpata, Sogbo, Gu, Dan, Legba, Fa; Zulu (3): Unkulunkulu, Umvelinqangi, Nomkhubulwane. Faculties are kept distinct from domains (e.g. Oshun's healing sweet-waters, Eshu's sacrifice-mediation/translation, Orunmila's Ifa divination, Osanyin's bird-transformation), and named material culture is cited (Ifa's ọpọ́n/ọpẹlẹ/ikin/iroke, Oshun's abẹbẹ + mirror + honey, Obatala's white cloth/efun/snail-shell, Osanyin's ọpá staff, Fa's fadekwin). All entries rest on ethnographic/secondary sources (Idowu, Bascom, Herskovits, Callaway, Encyclopedia.com, Smithsonian, Wikipedia).

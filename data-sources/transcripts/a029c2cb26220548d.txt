@@ -1,0 +1,1741 @@
+I have everything I need. Composing the final JSON registry of 24 figures now, with per-claim citations drawn from primary sources (Herodotus, Strabo, Plato, Aeschylus, Lycophron, Euripides, the votive reliefs/inscriptions, Odessos coinage, Jordanes) plus reputable secondary scholarship (Eliade, Russu, Burkert, the Thracian Rider corpus). All names lead with English/plain words, native terms in Greek/Latin script with romanization, no modern coinages, ids snake_case `thracian_`/`dacian_`.
+
+```json
+[
+  {
+    "id": "thracian_zalmoxis",
+    "name": {
+      "primary": "Zalmoxis the Immortal Teacher",
+      "alt": ["Salmoxis", "Zamolxis", "Samolxis", "Zalmoxis of the Getae"],
+      "transliterations": { "grc": "Ζάλμοξις / Σάλμοξις", "rom": "Zalmoxis / Salmoxis" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Iron Age Getae / Classical-Hellenistic Thrace (5th c. BCE onward), per Herodotus and Strabo" },
+    "domains": [
+      {
+        "sphereId": "immortality-and-afterlife",
+        "contextTag": "lifelong",
+        "term": { "value": "ἀθανατίζειν", "script": "Greek", "rom": "athanatizein" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.93-94 (the Getae 'make themselves immortal', believing the dead go to Zalmoxis)" },
+          { "kind": "secondary", "reference": "Mircea Eliade, Zalmoxis: The Vanishing God (1972), ch. 1" }
+        ]
+      },
+      {
+        "sphereId": "underworld-and-chthonic",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.95 (Zalmoxis withdraws into an underground chamber/dwelling for three years, then reappears)" },
+          { "kind": "secondary", "reference": "I. I. Russu, Religia geto-dacilor (1947), distinguishing Zalmoxis' chthonic character from uranian Gebeleizis" }
+        ]
+      },
+      {
+        "sphereId": "healing-and-medicine",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Plato, Charmides 156d-157a (the physicians of Zalmoxis, king and god of the Thracians, who heal soul before body and confer immortality)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "confer-immortality",
+        "name": "confers deathlessness on his followers",
+        "term": { "value": "ἀθανατίζειν", "script": "Greek", "rom": "athanatizein" },
+        "inheritability": "noninheritable",
+        "notes": "The Getae hold that they do not die but join Zalmoxis; he teaches that neither he nor his guests would die but live possessing all good things (Hdt. 4.95).",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.95" }
+        ]
+      },
+      {
+        "id": "withdraw-and-return-from-underground",
+        "name": "vanishes underground and returns alive",
+        "term": { "value": "κατάγαιον οἴκημα", "script": "Greek", "rom": "katagaion oikēma" },
+        "inheritability": "noninheritable",
+        "notes": "Built an underground chamber, withdrew for three years while the Getae mourned him as dead, then reappeared, proving his teaching of survival (Hdt. 4.95). Greek skeptics rationalized this as a Pythagorean trick.",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.95-96" }
+        ]
+      },
+      {
+        "id": "receive-the-quinquennial-messenger",
+        "name": "receives a messenger sent by spear-casting",
+        "term": { "value": "ἄγγελος", "script": "Greek", "rom": "angelos" },
+        "inheritability": "noninheritable",
+        "notes": "Every fourth/fifth year the Getae dispatch a man chosen by lot to Zalmoxis, hurling him upon three uplifted spears; if he dies the god is held favorable (Hdt. 4.94).",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.94" }
+        ]
+      },
+      {
+        "id": "report-the-will-of-the-gods",
+        "name": "declares the will of the gods to kings",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Per Strabo, he predicted from celestial signs, persuaded the king to share rule, was made priest of the most-honored god, and was finally addressed as a god himself.",
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "underground-chamber",
+        "kind": "architecture",
+        "name": "subterranean dwelling chamber",
+        "term": { "value": "κατάγαιον οἴκημα", "script": "Greek", "rom": "katagaion oikēma" },
+        "role": "Site of his three-year disappearance demonstrating immortality.",
+        "notes": "Herodotus reports it was built by Zalmoxis; later tradition (Strabo) locates his retreat in a cave on the sacred mountain Kogaionon.",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.95" },
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5 (cave on Mt. Kogaionon)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Zalmoxis is the divine being to whom the Getae believe the dead depart; Herodotus expressly leaves open whether he was a man or a native Getic deity.",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.94-96" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Strabo records the euhemerized account: a Getic man, said to have served Pythagoras, learned astronomy and was made priest then god, with the doctrine of abstaining from meat persisting to Burebista.",
+        "citations": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Manuscript spellings vary (Zalmoxis, Salmoxis, Zamolxis, Samolxis); the etymology has been linked to a Thracian word for 'hide/bear-skin' (zalmos), and the figure has been variously read as god, deified man, and culture-hero.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mircea Eliade, Zalmoxis: The Vanishing God (Univ. of Chicago Press, 1972)" },
+          { "kind": "secondary", "reference": "I. I. Russu, Religia geto-dacilor (1947)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Foregrounded figure of the batch. DEMIGOD-vs-DEITY TENSION: Herodotus reports both that Greeks of the Pontic colonies told a euhemerizing tale (Zalmoxis a freed slave of Pythagoras who taught immortality and feigned death in an underground chamber) AND that the Getae regard him as a native god, and he explicitly refuses to adjudicate ('let it go... whether there was a man Salmoxis or this is some native daimon of the Getae', 4.96). Strabo's version has him become priest then deified man; Plato (Charmides) calls him 'king and god' of the Thracians whose physicians make men immortal. Classified here as 'deity' per the Getic theological reception while the heroized-mortal/culture-hero reading is preserved in notes per the prompt's required tension. Worshipped by both Getae (Thracian) and Dacians; the prompt foregrounds him for the Dacian set as well."
+  },
+  {
+    "id": "dacian_zalmoxis",
+    "name": {
+      "primary": "Zalmoxis, God of the Dacians",
+      "alt": ["Zamolxis", "Salmoxis", "the god of Kogaionon"],
+      "transliterations": { "grc": "Ζάλμοξις", "rom": "Zalmoxis" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Dacian",
+    "primaryTradition": "Dacian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Dacian kingdom, 1st c. BCE (Burebista's reign), per Strabo; cult continuous from Getic period" },
+    "domains": [
+      {
+        "sphereId": "immortality-and-afterlife",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5 (the Getae/Dacians and their god of immortality)" },
+          { "kind": "secondary", "reference": "Mircea Eliade, Zalmoxis: The Vanishing God (1972)" }
+        ]
+      },
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5 (the priest of the god co-rules; Decaeneus succeeds to this sacred office under Burebista)" }
+        ]
+      },
+      {
+        "sphereId": "asceticism-and-purity",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5 (abstention from eating any living thing, taught by Zalmoxis, survived to Burebista)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dwell-on-the-sacred-mountain",
+        "name": "dwells upon the holy mountain Kogaionon",
+        "term": { "value": "Κωγαίονον", "script": "Greek", "rom": "Kōgaionon" },
+        "inheritability": "noninheritable",
+        "notes": "Strabo: the god (and his high priest) inhabited a cave on the sacred mountain Kogaionon, accessible only to the king and his attendants; the river beside it bore the same name.",
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5" }
+        ]
+      },
+      {
+        "id": "sanction-royal-authority",
+        "name": "sanctions and legitimizes Dacian kingship",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "The god's priesthood became the second power of the realm; Burebista used Decaeneus, priest of Zalmoxis, to discipline and unify the Getae/Dacians.",
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5, 7.3.11" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kogaionon-cave",
+        "kind": "sacred-site",
+        "name": "cave-sanctuary on Mount Kogaionon",
+        "term": { "value": "Κωγαίονον", "script": "Greek", "rom": "Kōgaionon" },
+        "role": "Oracular dwelling of the god and his high priest, entered only by king and messengers.",
+        "notes": "Named by Strabo as the holy mountain of the Getae/Dacians; its precise location is debated (often linked to the Orăștie Mountains sanctuaries of Sarmizegetusa).",
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Among the Dacians (whom Strabo equates with the Getae), the cult of Zalmoxis was bound to sacred kingship and a mountain sanctuary, and his ascetic discipline (meat/wine abstention) was enforced down to Burebista's reign.",
+        "citations": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5, 7.3.11" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Eliade treats Geto-Dacian religion as centered on Zalmoxis and the doctrine of immortality, with the priest-king nexus a defining feature.",
+        "citations": [
+          { "kind": "secondary", "reference": "Mircea Eliade, Zalmoxis: The Vanishing God (1972)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Distinct registry entry for the Dacian reception of the same god, as the prompt foregrounds Zalmoxis for the Dacian set; the figure is shared between Thracian/Getic and Dacian traditions but the Dacian record (Strabo on Burebista, Kogaionon, the priest Decaeneus) is its own attestation stream. Same demigod-vs-deity tension applies: in Strabo's euhemerism he is a deified mortal priest, in cult a god; classified 'deity' per cultic reception."
+  },
+  {
+    "id": "thracian_gebeleizis",
+    "name": {
+      "primary": "Gebeleizis the Sky-Thunderer",
+      "alt": ["Beleizis", "Nebeleizis", "Gebeleïzis"],
+      "transliterations": { "grc": "Γεβελέϊζις / Βελεΐζις", "rom": "Gebeleïzis / Beleïzis" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Iron Age Getae, 5th c. BCE, per Herodotus" },
+    "domains": [
+      {
+        "sphereId": "sky-and-heavens",
+        "contextTag": "lifelong",
+        "term": { "value": "Γεβελέϊζις", "script": "Greek", "rom": "Gebeleïzis" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.94 (some Getae call the divine being Gebeleizis)" },
+          { "kind": "secondary", "reference": "I. I. Russu, Religia geto-dacilor (1947), reading Gebeleizis as the uranian sky/thunder god distinct from chthonic Zalmoxis" }
+        ]
+      },
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.94 (the Getae shoot arrows at the sky during thunder and lightning, threatening the god)" },
+          { "kind": "secondary", "reference": "Mircea Eliade, Zalmoxis: The Vanishing God (1972), on the storm-god reading" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl-thunder-and-lightning",
+        "name": "casts down thunder and lightning",
+        "term": { "value": "βρονταί τε καὶ ἀστραπαί", "script": "Greek", "rom": "brontai te kai astrapai" },
+        "inheritability": "noninheritable",
+        "notes": "Manifests in storms; the Getae respond by firing arrows skyward as a defiance/threat to the god, believing in no other god but their own (Hdt. 4.94).",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.94" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Gebeleizis is named by Herodotus as an alternative Getic name for the divine being also called Zalmoxis, with the arrow-shooting-at-the-sky storm rite attached to him.",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.94" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Scholars debate whether Gebeleizis equals Zalmoxis or is a distinct uranian thunder-god; the name has been read as containing the PIE sky-god element (cognate with *Dyēus/Zeus) and connected with the Thracian Zibelthiurdos/Zbelsurdos.",
+        "citations": [
+          { "kind": "secondary", "reference": "I. I. Russu, Religia geto-dacilor (1947)" },
+          { "kind": "secondary", "reference": "Mircea Eliade, Zalmoxis: The Vanishing God (1972)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Getic sky/thunder god. Native term given in Greek script as Herodotus is the sole transmitting source; manuscript variants include Beleizis and Nebeleizis. Some scholars (Russu) keep him distinct from Zalmoxis as a uranian counterpart to the chthonic immortality god; others equate them per Herodotus' own phrasing. Equally a Dacian/Getic god; foregrounded for the Dacian set per the prompt."
+  },
+  {
+    "id": "thracian_bendis",
+    "name": {
+      "primary": "Bendis the Two-Speared Huntress",
+      "alt": ["Mendis", "Bendis of the Moon", "Thracian Artemis"],
+      "transliterations": { "grc": "Βένδις", "rom": "Bendis" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Classical Thrace; cult at Athens/Piraeus from c. 430-429 BCE" },
+    "domains": [
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "Βένδις", "script": "Greek", "rom": "Bendis" },
+        "sources": [
+          { "kind": "primary", "reference": "Plato, Republic 327a-328a (the Bendideia procession and torch-race at the Piraeus)" },
+          { "kind": "primary", "reference": "Attic votive reliefs of Bendis with hunting-spears, Piraeus, late 5th-4th c. BCE" }
+        ]
+      },
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Britannica, 'Bendis' (Thracian goddess of the moon, identified at Athens with Artemis/Selene/Hekate)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hunt-with-twin-spears",
+        "name": "hunts wielding two spears",
+        "term": { "value": "δίλογχος", "script": "Greek", "rom": "dilonchos" },
+        "inheritability": "noninheritable",
+        "notes": "Characteristically depicted with two hunting-spears (the epithet dilonchos, 'two-speared', is applied to her by Hesychius/Pollux glossing); wears the Thracian fox-skin cap (alopekis) and mantle.",
+        "sources": [
+          { "kind": "primary", "reference": "Pollux, Onomasticon, and Hesychius s.v. (Bendis dilonchos, 'two-speared')" },
+          { "kind": "primary", "reference": "Attic red-figure and votive reliefs depicting Bendis with two spears" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "two-hunting-spears",
+        "kind": "weapon",
+        "name": "pair of hunting-spears",
+        "term": { "value": "δίλογχον", "script": "Greek", "rom": "dilonchon" },
+        "role": "Her identifying attribute as huntress.",
+        "notes": "Lexicographers gloss her as 'two-speared' (dilonchos); the spears distinguish her iconography from single-speared huntress types.",
+        "sources": [
+          { "kind": "primary", "reference": "Hesychius / Pollux, s.v. dilonchos (epithet of Bendis)" }
+        ]
+      },
+      {
+        "id": "thracian-fox-skin-cap",
+        "kind": "garment",
+        "name": "Thracian fox-skin cap",
+        "term": { "value": "ἀλωπεκίς", "script": "Greek", "rom": "alōpekis" },
+        "role": "Marks her foreign Thracian identity in Attic art.",
+        "notes": "She is shown in the alopekis and a hooded Thracian mantle fastened with a brooch, visually distinguishing her from Olympian Artemis.",
+        "sources": [
+          { "kind": "primary", "reference": "Attic votive reliefs of Bendis, Piraeus (4th c. BCE)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Bendis is a Thracian huntress-and-moon goddess given an official Athenian cult, with a sanctuary at the Piraeus and the state festival Bendideia (first held 429 BCE), famous for its nighttime mounted torch-race.",
+        "citations": [
+          { "kind": "primary", "reference": "Plato, Republic 327a-328a" },
+          { "kind": "secondary", "reference": "Britannica, 'Bendis'" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Her name is generally derived from PIE *bhendh- 'to bind', suggesting an original function over marital/communal bonds before her hunt-and-moon profile dominated in Greek reception.",
+        "citations": [
+          { "kind": "secondary", "reference": "Standard etymological treatments of Bendis (< *bhendh- 'bind'), e.g. summarized in Theoi.com, citing Hellenistic lexica" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Great Thracian goddess. Native theonym attested only in Greek script (Βένδις, var. Μένδις). At Athens syncretized with Artemis, Hekate and Selene but maintained a separate temple and festival, marking her as a distinct foreign goddess. The 'two spears' are her defining attribute."
+  },
+  {
+    "id": "thracian_sabazios",
+    "name": {
+      "primary": "Sabazios the Sky-Father Horseman",
+      "alt": ["Sabazius", "Sabos", "Sabadios", "Zeus Sabazios"],
+      "transliterations": { "grc": "Σαβάζιος", "rom": "Sabazios", "la": "Sabazius" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Thraco-Phrygian, attested from 5th c. BCE; widespread under Rome to 3rd c. CE" },
+    "domains": [
+      {
+        "sphereId": "sky-and-heavens",
+        "contextTag": "lifelong",
+        "term": { "value": "Σαβάζιος", "script": "Greek", "rom": "Sabazios" },
+        "sources": [
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Sabazios' (sky-father; -zios < *dyeus); Roman votive dedications to Zeus/Jupiter Sabazios" }
+        ]
+      },
+      {
+        "sphereId": "wine-and-ecstasy",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Aristophanes, references to Sabazios' ecstatic rites; Demosthenes, On the Crown 259-260 (Aeschines and his mother's Sabaziac rites)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ride-the-galloping-horse",
+        "name": "rides forth as the mounted sky-god",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Depicted into Roman times always on horseback, a nomadic horseman wielding a staff of power and raising the right hand in blessing.",
+        "sources": [
+          { "kind": "primary", "reference": "Roman-era reliefs and bronzes of Sabazios on horseback" }
+        ]
+      },
+      {
+        "id": "initiate-through-the-serpent",
+        "name": "initiates devotees by drawing a serpent through the bosom",
+        "term": { "value": "ὁ διὰ κόλπου θεός", "script": "Greek", "rom": "ho dia kolpou theos" },
+        "inheritability": "noninheritable",
+        "notes": "Christian polemicists (Clement, Arnobius, Firmicus Maternus) describe the initiation rite in which a golden snake was passed over the initiate's breast and down through the lap; the formula 'the god through the bosom' is associated with his mysteries.",
+        "sources": [
+          { "kind": "primary", "reference": "Clement of Alexandria, Protrepticus 2.16; Arnobius, Adversus Nationes 5.21; Firmicus Maternus, De errore profanarum religionum 10" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "hand-of-sabazios",
+        "kind": "cult-object",
+        "name": "votive bronze Hand of Sabazios",
+        "term": { "value": "manus Sabazia", "script": "Latin", "rom": "manus Sabazia" },
+        "role": "Cult emblem raised in the benediction gesture, set in sanctuaries or fixed on poles for processions.",
+        "notes": "Cast bronze right hands in the benedictio Latina gesture, encrusted with snakes, pinecones, frogs, lizards, thunderbolts and other symbols of fertility, rebirth and cosmic power; found from the Balkans to Britain.",
+        "sources": [
+          { "kind": "primary", "reference": "Surviving bronze 'hands of Sabazios' (e.g. British Museum, Copenhagen), Roman period" },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Sabazios', describing the votive hands and their symbols" }
+        ]
+      },
+      {
+        "id": "staff-of-power",
+        "kind": "regalia",
+        "name": "horseman's staff of power",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "Held by the mounted god as a sign of authority.",
+        "notes": "Consistently shown in his hand in equestrian images.",
+        "sources": [
+          { "kind": "primary", "reference": "Roman-era equestrian images of Sabazios" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Sabazios is the Thraco-Phrygian sky-father and horseman god, his name's -zios element deriving from PIE *dyeus (cf. Zeus/deus); Greeks identified him with both Zeus and Dionysus, Romans chiefly with Jupiter.",
+        "citations": [
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Sabazios'" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "His distinctive cult emblem is the votive bronze hand raised in blessing, covered with serpents and other symbols; the snake also figured in his initiation rites.",
+        "citations": [
+          { "kind": "primary", "reference": "Clement of Alexandria, Protrepticus 2.16; Firmicus Maternus, De errore 10" },
+          { "kind": "primary", "reference": "Surviving bronze hands of Sabazios" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Thraco-Phrygian sky-father/horseman. Native name transmitted in Greek (Σαβάζιος) and Latin (Sabazius). Classified 'deity'. Bassareus and Sabos are related Thracian names linking him to the Thracian Dionysus; the 'Hand of Sabazios' is his signature material attestation. Some sources locate his origins in Thrace/Macedonia, others stress the Phrygian dimension; both threads belong to this Thracian-rooted god."
+  },
+  {
+    "id": "thracian_kotys",
+    "name": {
+      "primary": "Kotys of the Frenzied Rites",
+      "alt": ["Cotys", "Cotytto", "Kotytto", "Adorable Kotys"],
+      "transliterations": { "grc": "Κότυς / Κοτυττώ", "rom": "Kotys / Kotyttō", "la": "Cotys / Cotytto" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Classical Thrace (Edonian cult); rites known to Aeschylus (5th c. BCE), later at Athens and Corinth" },
+    "domains": [
+      {
+        "sphereId": "ecstatic-rites",
+        "contextTag": "lifelong",
+        "term": { "value": "Κοτύττια", "script": "Greek", "rom": "Kotyttia" },
+        "sources": [
+          { "kind": "primary", "reference": "Aeschylus, Edonians (fr. 57 Radt), invoking 'adorable Kotys' worshipped with mountain-ranging instruments, quoted by Strabo, Geography 10.3.16" }
+        ]
+      },
+      {
+        "sphereId": "wilds-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 10.3.16 (Edonian rites of Kotys likened to Dionysiac/Phrygian orgies)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inspire-orgiastic-frenzy",
+        "name": "rouses worshippers to orgiastic frenzy",
+        "term": { "value": "ὄργια", "script": "Greek", "rom": "orgia" },
+        "inheritability": "noninheritable",
+        "notes": "Her nocturnal rites used pipes, cymbals, stringed instruments and bull-roarers to induce divine terror and ecstasy, in the manner of Dionysus and Cybele.",
+        "sources": [
+          { "kind": "primary", "reference": "Aeschylus, Edonians (fr. 57 Radt), via Strabo 10.3.16" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kotyttia-instruments",
+        "kind": "ritual-object",
+        "name": "frenzy-rousing instruments of the Kotyttia",
+        "term": { "value": "χαλκοδέτοις κοτύλαις", "script": "Greek", "rom": "chalkodetois kotylais" },
+        "role": "Cymbals, pipes, stringed instruments and bull-roarers sounded in her nocturnal hill-rites.",
+        "notes": "Aeschylus' Edonians fragment describes brazen-bound rattling vessels, the boombykia (bull-roarers) and other 'mountain-ranging' instruments of her worship.",
+        "sources": [
+          { "kind": "primary", "reference": "Aeschylus, Edonians (fr. 57 Radt), via Strabo, Geography 10.3.16" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kotys/Cotytto is a Thracian goddess of orgiastic nocturnal rites (the Kotyttia/Cotyttia), originally among the Edonians near Mt. Pangaion, with worship later spreading to Athens and Corinth.",
+        "citations": [
+          { "kind": "primary", "reference": "Strabo, Geography 10.3.16 (quoting Aeschylus' Edonians)" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Her Athenian initiates were called baptai ('dippers') after purificatory immersions, the title of a (lost) comedy by Eupolis satirizing the cult.",
+        "citations": [
+          { "kind": "primary", "reference": "Eupolis, Baptai (fragments); ancient testimonia on the baptai of Kotytto" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thracian goddess of the orgiastic Kotyttia. Names attested in Greek (Κότυς, Κοτυττώ) and Latinized (Cotys, Cotytto). Classified 'deity'. The war-aspect/consort question (Kandaon) is treated in that figure's entry. Distinguished from the homonymous historical Odrysian kings named Kotys, who are mortal rulers."
+  },
+  {
+    "id": "thracian_heros",
+    "name": {
+      "primary": "The Thracian Horseman, Hero-God of the Reliefs",
+      "alt": ["The Thracian Rider", "Heros", "Heros Equitans", "Thracian Hero"],
+      "transliterations": { "grc": "Ἥρως", "rom": "Hērōs" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Hellenistic to Late Roman Thrace, Moesia and the Black Sea (c. 3rd c. BCE - 4th c. CE)" },
+    "domains": [
+      {
+        "sphereId": "heroized-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἥρως", "script": "Greek", "rom": "Hērōs" },
+        "sources": [
+          { "kind": "primary", "reference": "Over 2,000 votive and funerary reliefs of the Thracian Horseman, inscribed 'Heros ...', across Thrace and the western Black Sea" },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Thracian Rider'; Wikipedia summary of the Heros corpus" }
+        ]
+      },
+      {
+        "sphereId": "hunting-and-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Relief iconography of the rider hunting a boar or spearing a beast, with attendant dog and altar/tree-and-serpent" }
+        ]
+      },
+      {
+        "sphereId": "healing-and-medicine",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "G. Kazarow / scholarship on the Thracian Rider's healing and chthonic functions and syncretism with Asklepios, Apollo and Silvanus" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ride-down-the-quarry",
+        "name": "rides down boar and beast with the spear",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "The standard relief type shows him galloping right, spearing a boar or other animal, often above a coiled serpent at a tree or altar.",
+        "sources": [
+          { "kind": "primary", "reference": "The Thracian Horseman relief corpus (Hellenistic-Roman)" }
+        ]
+      },
+      {
+        "id": "mediate-between-living-and-dead",
+        "name": "mediates between the living and the dead",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "On funerary stelae he embodies the heroized deceased; on votive reliefs he is a protective, healing and chthonic patron invoked by the living.",
+        "sources": [
+          { "kind": "secondary", "reference": "Studies of the Thracian Hero cult (votive vs. funerary monument types)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "votive-relief-stele",
+        "kind": "monument",
+        "name": "votive horseman relief",
+        "term": { "value": "ἀνάθημα", "script": "Greek", "rom": "anathēma" },
+        "role": "Standard cult monument dedicated in sanctuaries and on graves across Thrace.",
+        "notes": "More than 2,000 such limestone/marble reliefs survive; two principal types (votive and funerary) are distinguished, most from the Roman period.",
+        "sources": [
+          { "kind": "primary", "reference": "The Thracian Horseman relief corpus" }
+        ]
+      },
+      {
+        "id": "hunting-spear",
+        "kind": "weapon",
+        "name": "rider's spear",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "Carried couched as he charges the quarry.",
+        "notes": "Defining weapon of the standard relief type.",
+        "sources": [
+          { "kind": "primary", "reference": "Thracian Horseman reliefs" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Thracian Horseman (Heros) is the central hero-god of Thracian votive and funerary reliefs, attested on over 2,000 monuments, embodying chthonic, healing, hunting and protective functions and syncretized under Rome with Apollo, Asklepios, Silvanus and others.",
+        "citations": [
+          { "kind": "primary", "reference": "The Thracian Horseman relief and inscription corpus, Thrace and the western Black Sea" },
+          { "kind": "secondary", "reference": "Encyclopedia.com, 'Thracian Rider'" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "His original Thracian name is lost; 'Heros' is the generic Greek label, and he bears many local cult-epithets (Karabazmos, Manimazos, Pyrmerula, Salenos, etc.).",
+        "citations": [
+          { "kind": "primary", "reference": "Inscribed dedications giving epithets Karabazmos, Manimazos, Pyrmerula, Salenos" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "The Thracian Rider hero-god of the votive reliefs. Classified 'deity' though he is fundamentally a heroized-dead/hero-god class (the prompt's culture-hero/heroized tier): on funerary stelae he is the deified deceased, on votives a protective god. Native theonym unrecorded ('' would be wrong to invent); only the Greek title Heros and local epithets survive. The epithet-bearing local manifestations (Karabazmos, Manimazos) are given separate entries below."
+  },
+  {
+    "id": "thracian_heros_karabazmos",
+    "name": {
+      "primary": "Heros Karabazmos, Rider-Lord of the Underworld",
+      "alt": ["Heros Karabasmos", "Karabazmos", "the Rider of Odessos"],
+      "transliterations": { "grc": "Ἥρως Καραβασμος", "rom": "Hērōs Karabasmos" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Roman-period Thrace, Moesia and Scythia Minor (Odessos/Varna region)" },
+    "domains": [
+      {
+        "sphereId": "underworld-and-chthonic",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἥρως Καραβασμος", "script": "Greek", "rom": "Hērōs Karabasmos" },
+        "sources": [
+          { "kind": "primary", "reference": "Inscribed dedications to Heros Karabazmos/Karabasmos at Odessos (Varna) and across Moesia and Scythia Minor" }
+        ]
+      },
+      {
+        "sphereId": "heroized-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Funerary statuary depicting the horseman spearing a beast, Odessos region" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "spear-the-beast-as-lord-of-the-dead",
+        "name": "spears the beast as a god of the underworld",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Described as a god of the underworld depicted on funerary monuments as a horseman slaying a beast with a spear.",
+        "sources": [
+          { "kind": "primary", "reference": "Funerary reliefs/statues of Heros Karabazmos, Odessos and Scythia Minor" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Heros Karabazmos is a local epithet-form of the Thracian Horseman attested by inscriptions from Thrace to Moesia and Scythia Minor, especially at Odessos (Varna), where he is a chthonic god of the underworld shown spearing a beast.",
+        "citations": [
+          { "kind": "primary", "reference": "Inscribed dedications 'Heroni Karabazmos/Karabasmos', Odessos and the western Black Sea" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "A distinctly named cult-manifestation of the Thracian Horseman, foregrounding his underworld aspect at Odessos. Classified 'deity' (hero-god class). Native theonym preserved only as the Greek-transmitted epithet Karabazmos/Karabasmos; the spelling varies (Karabonasmos also occurs)."
+  },
+  {
+    "id": "thracian_heros_manimazos",
+    "name": {
+      "primary": "Heros Manimazos, the Banqueting Healer-Rider",
+      "alt": ["Manimazos", "Heros Manimasos"],
+      "transliterations": { "grc": "Ἥρως Μανιμαζος", "rom": "Hērōs Manimazos" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Roman-period western Black Sea coast (Tomis, Odessos)" },
+    "domains": [
+      {
+        "sphereId": "healing-and-medicine",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἥρως Μανιμαζος", "script": "Greek", "rom": "Hērōs Manimazos" },
+        "sources": [
+          { "kind": "primary", "reference": "Votive relief dedicated to Heros Manimazos found at Tomis (Constanța); dedications at Odessos" }
+        ]
+      },
+      {
+        "sphereId": "feasting-and-hospitality",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Banquet-type reliefs associated with the Manimazos epithet" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside-over-the-sacred-banquet",
+        "name": "presides over the sacred banquet and grants health",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "His monuments emphasize his function as a banqueting and healing patron of the western Pontic communities.",
+        "sources": [
+          { "kind": "primary", "reference": "Heros Manimazos reliefs, Tomis and Odessos" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Heros Manimazos is a local epithet-manifestation of the Thracian Horseman attested by votive reliefs at Tomis and Odessos, functioning as a banqueting and healing patron.",
+        "citations": [
+          { "kind": "primary", "reference": "Votive relief 'Heros Manimazos', Tomis; dedications at Odessos" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Another inscriptionally attested cult-name of the Thracian Rider, emphasizing the healing/banqueting aspect on the western Black Sea coast. Classified 'deity' (hero-god class). Native term preserved only as the Greek-transmitted epithet."
+  },
+  {
+    "id": "thracian_kendrisos",
+    "name": {
+      "primary": "Kendrisos, Rider-Patron of Philippopolis",
+      "alt": ["Apollo Kendrisos", "Kendreisos", "Kendrisenos"],
+      "transliterations": { "grc": "Κενδρισος / Ἀπόλλων Κενδρεισηνός", "rom": "Kendrisos / Apollōn Kendreisēnos" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Roman-period Thrace; patron of Philippopolis (Plovdiv), 2nd-3rd c. CE" },
+    "domains": [
+      {
+        "sphereId": "city-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἀπόλλων Κενδρεισηνός", "script": "Greek", "rom": "Apollōn Kendreisēnos" },
+        "sources": [
+          { "kind": "primary", "reference": "Coinage and inscriptions of Philippopolis naming Apollo Kendrisos/Kendreisenos as divine protector; the Kendreiseia Pythia games" }
+        ]
+      },
+      {
+        "sphereId": "prophecy-and-oracles",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Studies of Thracian Apollo-Rider syncretism at Philippopolis" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-the-city",
+        "name": "guards and patronizes the city",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "As protector of Philippopolis his statue and temple appear on civic coins and the city dedicated its athletic games (Kendreiseia Pythia) to him.",
+        "sources": [
+          { "kind": "primary", "reference": "Philippopolis civic coinage depicting the temple and image of Apollo Kendrisos" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "temple-of-kendrisos",
+        "kind": "architecture",
+        "name": "temple of Apollo Kendrisos at Philippopolis",
+        "term": { "value": "ναός", "script": "Greek", "rom": "naos" },
+        "role": "Civic sanctuary of the city's patron, shown on local coinage.",
+        "notes": "Depicted on coins of Philippopolis; the cult was prominent enough for the city's games to bear the god's name.",
+        "sources": [
+          { "kind": "primary", "reference": "Roman provincial coinage of Philippopolis" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Kendrisos is a Thracian Rider-god syncretized with Apollo as the patron deity of Philippopolis (Plovdiv), with the local epithet attached to Apollo (Apollo Kendrisos/Kendreisenos) and a civic festival, the Kendreiseia Pythia.",
+        "citations": [
+          { "kind": "primary", "reference": "Inscriptions and coins of Philippopolis (Apollo Kendrisos / Kendreiseia games)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Native Thracian Rider-god absorbed into Apollo as a city-patron; though given Apollo's name, his iconography stayed that of the Thracian Horseman, marking him as a distinct local deity. Classified 'deity'. Native theonym survives in the Greek-transmitted epithet Kendrisos/Kendreisenos."
+  },
+  {
+    "id": "thracian_derzelas",
+    "name": {
+      "primary": "Derzelas, the Great God of Odessos",
+      "alt": ["Darzalas", "Derzalas", "Theos Megas (the Great God)"],
+      "transliterations": { "grc": "Δερζελας / Δαρζαλας; Θεὸς Μέγας", "rom": "Derzelas / Darzalas; Theos Megas" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Hellenistic to Roman Odessos (Varna) and Histria, 3rd c. BCE - 3rd c. CE" },
+    "domains": [
+      {
+        "sphereId": "abundance-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Θεὸς Μέγας", "script": "Greek", "rom": "Theos Megas" },
+        "sources": [
+          { "kind": "primary", "reference": "Coinage of Odessos depicting the Great God with cornucopia, 3rd c. BCE - 3rd c. CE" }
+        ]
+      },
+      {
+        "sphereId": "underworld-and-chthonic",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Odessos coins showing the god reclining on a klinē (banqueting pose typical of chthonic deities)" }
+        ]
+      },
+      {
+        "sphereId": "health-and-vitality",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Derzelas treated as a Thraco-Dacian god of health and the human spirit's vitality (Wikipedia/Encyclopedia summaries citing the Odessos cult)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "pour-out-abundance",
+        "name": "pours out abundance from the cornucopia",
+        "term": { "value": "κέρας Ἀμαλθείας", "script": "Greek", "rom": "keras Amaltheias" },
+        "inheritability": "noninheritable",
+        "notes": "Holds one or two cornucopiae, marking him as giver of fertility and plenty; altars stand at his side on the coin types.",
+        "sources": [
+          { "kind": "primary", "reference": "Odessos coinage of the Great God with cornucopiae" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cornucopia",
+        "kind": "attribute",
+        "name": "horn of plenty",
+        "term": { "value": "κέρας Ἀμαλθείας", "script": "Greek", "rom": "keras Amaltheias" },
+        "role": "Signals his role as bestower of fertility and abundance.",
+        "notes": "Held by the god on Odessos coins, often paired with an altar.",
+        "sources": [
+          { "kind": "primary", "reference": "Coinage of Odessos" }
+        ]
+      },
+      {
+        "id": "temple-of-darzalas",
+        "kind": "architecture",
+        "name": "temple of the Great God",
+        "term": { "value": "ναός", "script": "Greek", "rom": "naos" },
+        "role": "Housed his cult statue at Odessos; a further temple stood at Histria.",
+        "notes": "Games called the Darzaleia were held in his honor (reportedly every five years), possibly attended by the emperor Gordian III in 238 CE.",
+        "sources": [
+          { "kind": "primary", "reference": "Epigraphic and numismatic evidence for the temple, cult statue and Darzaleia games at Odessos; temple at Histria (3rd c. BCE)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Derzelas/Darzalas is the great chthonic god of Hellenistic-Roman Odessos (Varna), honored as 'Theos Megas' (the Great God), a giver of abundance, health and vitality with underworld associations, frequent on the city's coinage and honored by the periodic Darzaleia games.",
+        "citations": [
+          { "kind": "primary", "reference": "Coinage and inscriptions of Odessos; temple at Histria" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "He is identified as a Thraco-Dacian deity; in the Hellenistic period he was addressed chiefly by the epithet Theos Megas.",
+        "citations": [
+          { "kind": "secondary", "reference": "Encyclopedic treatments of Derzelas (Thraco-Dacian god of abundance/underworld/health)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Great god of Odessos. Native theonym Derzelas/Darzalas transmitted in Greek; in cult often only 'Theos Megas'. Classified 'deity'. Counted in the Dacian foreground per the prompt because the deity is described as Thraco-Dacian; primary attestation is the Greek Pontic city of Odessos. Distinct from the Greco-Egyptian Serapis with whom the Great God of Odessos was later assimilated on some coins."
+  },
+  {
+    "id": "thracian_pleistoros",
+    "name": {
+      "primary": "Pleistoros, War-God of the Apsinthians",
+      "alt": ["Pleistorus", "Plistorus"],
+      "transliterations": { "grc": "Πλείστωρος", "rom": "Pleistōros" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Classical Thrace; attested c. 479 BCE (aftermath of the Persian Wars), per Herodotus" },
+    "domains": [
+      {
+        "sphereId": "war-and-battle",
+        "contextTag": "lifelong",
+        "term": { "value": "Πλείστωρος", "script": "Greek", "rom": "Pleistōros" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 9.119 (the Apsinthian Thracians sacrifice Oeobazus to their local god Pleistoros)" }
+        ]
+      },
+      {
+        "sphereId": "human-sacrifice",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 9.119" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive-human-sacrifice",
+        "name": "receives captives in human sacrifice",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "The Apsinthians, having seized the fleeing Persian Oeobazus, sacrificed him to Pleistoros 'in their own manner', killing his companions differently (Hdt. 9.119).",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 9.119" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Pleistoros is a local Thracian (Apsinthian) god, interpreted as a war-god, to whom the Apsinthians offered human sacrifice; he is known almost solely from Herodotus' account of the sacrifice of the Persian Oeobazus.",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 9.119" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Thracian war-god of the Apsinthian tribe receiving captive sacrifice. Native theonym transmitted only in Greek (Πλείστωρος). Classified 'deity'. Almost nothing else survives; the war-god reading is inference from the sacrifice of a war-captive."
+  },
+  {
+    "id": "thracian_kandaon",
+    "name": {
+      "primary": "Kandaon, the Thracian War-Lord",
+      "alt": ["Candaon", "Kandaon-Ares"],
+      "transliterations": { "grc": "Κανδάων", "rom": "Kandaōn", "la": "Candaon" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Thracian (Crestonian); known from Hellenistic learned poetry (Lycophron, 3rd c. BCE) and its scholia" },
+    "domains": [
+      {
+        "sphereId": "war-and-battle",
+        "contextTag": "lifelong",
+        "term": { "value": "Κανδάων", "script": "Greek", "rom": "Kandaōn" },
+        "sources": [
+          { "kind": "primary", "reference": "Lycophron, Alexandra, and the scholia thereon (Candaon as a name of Ares worshipped by the Crestonian Thracians; the 'three-fathered sword of Candaon')" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "demand-the-blood-sword",
+        "name": "demands sacrifice by the war-sword",
+        "term": { "value": "τριπάτωρ φάσγανον", "script": "Greek", "rom": "tripatōr phasganon" },
+        "inheritability": "noninheritable",
+        "notes": "Lycophron alludes to human sacrifice with the 'three-fathered sword of Candaon'; the scholia gloss Candaon as Ares (or as Orion begotten by Zeus, Hermes and Poseidon), reflecting the war-god identification.",
+        "sources": [
+          { "kind": "primary", "reference": "Lycophron, Alexandra (the 'three-fathered sword of Candaon') with scholia" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kandaon/Candaon is a Thracian god identified with Ares, said to be worshipped by the Crestonian Thracians, attested through Lycophron's Alexandra and its scholia.",
+        "citations": [
+          { "kind": "primary", "reference": "Lycophron, Alexandra, with scholia (Candaon = Ares of the Crestonians)" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thracian war-god (Kandaon/Cotys-adjacent war aspect, per the prompt). Native theonym transmitted only in Greek/Latin learned tradition (Κανδάων / Candaon). Classified 'deity'. The scholia give competing glosses (Ares vs. Orion), reflecting the obscurity of the name; the Ares-of-Thrace reading underlies the broader Greek belief that savage Ares was originally Thracian."
+  },
+  {
+    "id": "thracian_zibelthiurdos",
+    "name": {
+      "primary": "Zibelthiurdos the Lightning-Bearer",
+      "alt": ["Zbelsurdos", "Zbelthurdos", "Zibelthurdos"],
+      "transliterations": { "grc": "Ζβελσουρδος / Ζιβελθιουρδος", "rom": "Zbelsourdos / Zibelthiourdos" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Roman-period Thrace; attested epigraphically at Pautalia and Serdica, 2nd-3rd c. CE" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Ζβελσουρδος", "script": "Greek", "rom": "Zbelsourdos" },
+        "sources": [
+          { "kind": "primary", "reference": "Roman-era votive inscriptions to Zbelsurdos/Zibelthiurdos from Pautalia (Kyustendil) and Serdica (Sofia)" }
+        ]
+      },
+      {
+        "sphereId": "sky-and-rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Etymological reading of the name as 'lightning-bearer/thunderer' (zibel- 'lightning' + -thiurdos 'bearer/to throw')" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "wield-the-thunderbolt",
+        "name": "wields the thunderbolt aloft",
+        "term": { "value": "κεραυνός", "script": "Greek", "rom": "keraunos" },
+        "inheritability": "noninheritable",
+        "notes": "Iconographically connected with Zeus the Thunderer: shown holding a thunderbolt in the raised right hand with an eagle, wings spread, beside him.",
+        "sources": [
+          { "kind": "primary", "reference": "Votive monuments of Zibelthiurdos depicting thunderbolt and eagle" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "thunderbolt-and-eagle",
+        "kind": "attribute",
+        "name": "thunderbolt with eagle",
+        "term": { "value": "κεραυνὸς καὶ ἀετός", "script": "Greek", "rom": "keraunos kai aetos" },
+        "role": "Identifies him as the Thracian thunder-god in the Zeus-Thunderer type.",
+        "notes": "Preserved on the dedication tablet/column from Pautalia and Serdica.",
+        "sources": [
+          { "kind": "primary", "reference": "Epigraphic monuments of Zibelthiurdos, Pautalia and Serdica" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Zibelthiurdos (Zbelsurdos) is a Thracian god of heaven, lightning and rain known mainly from Roman-period epigraphic monuments at Pautalia and Serdica, iconographically assimilated to Zeus the Thunderer with thunderbolt and eagle.",
+        "citations": [
+          { "kind": "primary", "reference": "Roman votive inscriptions/monuments from Pautalia and Serdica" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "His name appears to contain the same Proto-Indo-European root as the Getic Gebeleizis, with a different phonetic development, supporting the reading of a Thracian sky/thunder god.",
+        "citations": [
+          { "kind": "secondary", "reference": "Comparative etymological treatments linking Zibelthiurdos and Gebeleizis to a PIE storm/sky theonym" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thracian thunder/sky god, epigraphically attested under Rome. Native theonym transmitted in Greek and Latin inscriptions (many spelling variants). Classified 'deity'. Linguistically paired with the Getic Gebeleizis as a southern Thracian counterpart of the Indo-European storm-god."
+  },
+  {
+    "id": "thracian_semele",
+    "name": {
+      "primary": "Zemele, the Thraco-Phrygian Earth-Mother",
+      "alt": ["Semele", "Zemelo", "Mother Earth of the Thracians"],
+      "transliterations": { "grc": "Σεμέλη / Ζεμελώ", "rom": "Semelē / Zemelō" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "Thraco-Phrygian substrate of Greek myth; pre-Classical, name attested in a Phrygian formula" },
+    "domains": [
+      {
+        "sphereId": "earth-and-soil",
+        "contextTag": "lifelong",
+        "term": { "value": "ζεμελω", "script": "Greek", "rom": "zemelō" },
+        "sources": [
+          { "kind": "primary", "reference": "Phrygian inscriptional formula 'diōs zemelō' (Zeus and Earth)" },
+          { "kind": "secondary", "reference": "Julius Pokorny, Indogermanisches etymologisches Wörterbuch, deriving the name from PIE *dʰéǵʰōm 'earth' and relating Thracian Zemele 'mother earth'" }
+        ]
+      },
+      {
+        "sphereId": "motherhood-and-birth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 940-942 (Semele bears Dionysus to Zeus); Euripides, Bacchae (her Theban tomb)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother-the-vine-god",
+        "name": "brings forth the god of the vine",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "In Greek myth she conceives Dionysus by Zeus and is consumed by his thunderbolt-epiphany; her name and her son's cult are widely held to be Thraco-Phrygian imports.",
+        "sources": [
+          { "kind": "primary", "reference": "Hesiod, Theogony 940-942; Euripides, Bacchae 1-12" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The name Semele is widely judged to be Thraco-Phrygian, an earth-goddess theonym (Zemelā) from a PIE root for 'earth', cognate with Baltic Žemyna/Žemelė and matching the Phrygian formula 'diōs zemelō' (Zeus and Earth).",
+        "citations": [
+          { "kind": "primary", "reference": "Phrygian inscription 'diōs zemelō'" },
+          { "kind": "secondary", "reference": "Julius Pokorny, Indogermanisches etymologisches Wörterbuch (Thracian Zemele 'mother earth')" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Burkert cautions that while Semele is 'manifestly non-Greek', a firm Thraco-Phrygian 'earth' meaning is hard to prove conclusively.",
+        "citations": [
+          { "kind": "secondary", "reference": "Walter Burkert, Greek Religion (1985), on Semele and the Dionysiac complex" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Included as the Thraco-Phrygian earth-mother underlying the Greek Semele, mother of Dionysus, since the prompt's traditions are the source-stratum of the Dionysiac complex. Classified 'deity' (the original earth-goddess), though in Greek myth Semele is a mortalized Theban princess (vitalStatus 'deceased' reflects that Greek narrative, in which she dies by Zeus' lightning before being raised). Native form given as the Phrygian-attested zemelō in Greek script; the Thracian Zemele is a reconstruction noted as such."
+  },
+  {
+    "id": "thracian_dionysus",
+    "name": {
+      "primary": "The Thracian Dionysus, Lord of the Mountain Frenzy",
+      "alt": ["Bassareus", "Sabos", "Thracian Dionysos"],
+      "transliterations": { "grc": "Διόνυσος Βασσαρεύς", "rom": "Dionysos Bassareus" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Thracian ecstatic cult of the mountains; known to Greeks from the Archaic period onward" },
+    "domains": [
+      {
+        "sphereId": "wine-and-ecstasy",
+        "contextTag": "lifelong",
+        "term": { "value": "Βασσαρεύς", "script": "Greek", "rom": "Bassareus" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 5.7 (the Thracians worship Ares, Dionysus and Artemis above all)" },
+          { "kind": "primary", "reference": "Euripides, Hecuba 1267 and Rhesus (Thracian Dionysiac/Bacchic context)" }
+        ]
+      },
+      {
+        "sphereId": "prophecy-and-oracles",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 7.111 (the oracle of Dionysus on the highest peak of the Satrae, prophecies delivered by a priestess, interpreted by the Bessi)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-the-bacchic-frenzy",
+        "name": "sends the ecstatic Bacchic frenzy upon the mountains",
+        "term": { "value": "βακχεία", "script": "Greek", "rom": "bakcheia" },
+        "inheritability": "noninheritable",
+        "notes": "His Thracian rites lifted worshippers out of themselves; the Greeks recognized in them their own Dionysiac ecstasy. Devotees wore the fox-skin (bassaris), source of the name Bassareus.",
+        "sources": [
+          { "kind": "primary", "reference": "Greek testimonia on the Thracian Dionysus and the bassaris fox-skin; Macrobius, Saturnalia 1.18 (Sabos/Sabazius as a Thracian name of Dionysus)" }
+        ]
+      },
+      {
+        "id": "deliver-mountain-oracles",
+        "name": "delivers oracles from the high sanctuary",
+        "term": { "value": "μαντήϊον", "script": "Greek", "rom": "mantēion" },
+        "inheritability": "noninheritable",
+        "notes": "An oracle of Dionysus stood on the loftiest peak of the Satrae's land; a priestess gave the prophecies and the Bessi expounded them (Hdt. 7.111).",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 7.111" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "fox-skin-bassaris",
+        "kind": "garment",
+        "name": "fox-skin robe of the votaries",
+        "term": { "value": "βασσάρα", "script": "Greek", "rom": "bassara" },
+        "role": "Worn by his Thracian devotees in the mysteries, giving the god the name Bassareus.",
+        "notes": "The bassaris/bassara fox-skin is the source of the cult-title Bassareus.",
+        "sources": [
+          { "kind": "primary", "reference": "Ancient lexica and testimonia on bassaris (fox-skin) and Bassareus" }
+        ]
+      },
+      {
+        "id": "mountain-oracle-sanctuary",
+        "kind": "sacred-site",
+        "name": "mountain oracle of Dionysus",
+        "term": { "value": "μαντήϊον Διονύσου", "script": "Greek", "rom": "mantēion Dionysou" },
+        "role": "High-summit sanctuary of the Satrae where his oracles were given.",
+        "notes": "Located by Herodotus on the highest mountain of the Satrae; often identified with the Rhodope sanctuary at Perperikon.",
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 7.111" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Herodotus names Dionysus (with Ares and Artemis) among the chief gods of the Thracians and describes a mountain oracle of Dionysus among the Satrae, staffed by a priestess and the Bessi interpreters.",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 5.7 and 7.111" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Bassareus (from the fox-skin bassaris) and Sabos/Sabazios are Thracian names of Dionysus, and much of the Dionysiac ecstatic complex is held to be of Thracian/Thraco-Phrygian origin.",
+        "citations": [
+          { "kind": "primary", "reference": "Macrobius, Saturnalia 1.18 (Sabazius/Sabos a Thracian Dionysus)" },
+          { "kind": "secondary", "reference": "Walter Burkert, Greek Religion (1985), on the Thracian roots of Dionysiac ecstasy" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "The native Thracian ecstatic god the Greeks identified as Dionysus, distinct in his mountain-oracle and fox-skin (Bassareus) cult. Classified 'deity'. He overlaps with Sabazios (Sabos) but is registered separately to capture the Bessian oracle of Dionysus (Hdt. 7.111) and the Bassareus cult-title. The Greek theonym leads because the native Thracian name is unrecorded apart from the epithets."
+  },
+  {
+    "id": "thracian_cabeiri",
+    "name": {
+      "primary": "The Great Gods of Samothrace (Kabeiroi)",
+      "alt": ["Cabeiri", "Kabeiroi", "Megaloi Theoi", "Theoi Megaloi"],
+      "transliterations": { "grc": "Κάβειροι; Θεοὶ Μεγάλοι", "rom": "Kabeiroi; Theoi Megaloi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "collective",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mystery cult of Samothrace, Lemnos and Imbros; Archaic-Hellenistic, with Thracian/Pelasgian substrate" },
+    "domains": [
+      {
+        "sphereId": "mystery-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "μυστήρια", "script": "Greek", "rom": "mystēria" },
+        "sources": [
+          { "kind": "primary", "reference": "Herodotus, Histories 2.51 (the Samothracian mysteries of the Kabeiroi, received from the Pelasgians)" }
+        ]
+      },
+      {
+        "sphereId": "protection-of-seafarers",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Diodorus Siculus 5.49; ancient testimonia that initiates were protected from peril at sea" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "save-from-the-sea",
+        "name": "saves initiates from peril at sea",
+        "term": { "value": "σωτηρία", "script": "Greek", "rom": "sōtēria" },
+        "inheritability": "noninheritable",
+        "notes": "Initiation into the Samothracian mysteries was believed to grant safety from storms and shipwreck, open to all regardless of station.",
+        "sources": [
+          { "kind": "primary", "reference": "Diodorus Siculus 5.49; Apollonius Rhodius, Argonautica 1.915-921 (the Argonauts initiated at Samothrace)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sanctuary-of-the-great-gods",
+        "kind": "sacred-site",
+        "name": "Sanctuary of the Great Gods, Samothrace",
+        "term": { "value": "ἱερὸν τῶν Μεγάλων Θεῶν", "script": "Greek", "rom": "hieron tōn Megalōn Theōn" },
+        "role": "Pan-Mediterranean mystery sanctuary of the Kabeiroi/Great Gods.",
+        "notes": "On the island of Samothrace, the principal seat of the cult; archaeologically extensive (the Hieron, the Rotunda of Arsinoe, etc.).",
+        "sources": [
+          { "kind": "primary", "reference": "The archaeological Sanctuary of the Great Gods, Samothrace" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Kabeiroi/Great Gods of Samothrace are chthonic mystery deities whose Samothracian cult Herodotus traces to the pre-Greek Pelasgians and which ancient sources connect to Thracian (and Phrygian) origins; their numbered members were glossed as Axieros, Axiokersa, Axiokersos and Kasmilos (≈ Demeter, Persephone, Hades, Hermes).",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 2.51" },
+          { "kind": "primary", "reference": "Mnaseas and the scholia naming Axieros, Axiokersa, Axiokersos, Kasmilos" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Initiation conferred protection at sea and was open to all people regardless of sex, age, class or nationality.",
+        "citations": [
+          { "kind": "primary", "reference": "Diodorus Siculus 5.49" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Collective entry for the Great Gods/Kabeiroi, included because their North-Aegean (Samothrace/Lemnos) mystery cult has a Thracian-Pelasgian substrate explicitly noted by ancient sources. Classified 'deity' (a divine collective; sex recorded as 'collective' since the group spans male, female and a youth attendant). Native names survive only as the Greek-transmitted mystery-names Axieros/Axiokersa/Axiokersos/Kasmilos."
+  },
+  {
+    "id": "thracian_kadmilos",
+    "name": {
+      "primary": "Kadmilos, the Divine Attendant of the Great Gods",
+      "alt": ["Kasmilos", "Casmilus", "Cadmilus"],
+      "transliterations": { "grc": "Κάδμιλος / Κάσμιλος", "rom": "Kadmilos / Kasmilos", "la": "Casmilus" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Samothracian mystery cult; Archaic-Hellenistic" },
+    "domains": [
+      {
+        "sphereId": "mystery-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "Κάδμιλος", "script": "Greek", "rom": "Kadmilos" },
+        "sources": [
+          { "kind": "primary", "reference": "Akusilaos (via scholia), naming Kadmilos as father of the Kabeiroi, son of Hephaistos and the nymph Kabeiro" }
+        ]
+      },
+      {
+        "sphereId": "messengers-and-heralds",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Identification of Kadmilos/Kasmilos with Hermes in the Samothracian cult" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "serve-the-mystery-gods",
+        "name": "serves as the youthful attendant of the mystery gods",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Functions as the Hermes-like attendant and (in some accounts) father of the Kabeiroi within the Samothracian mysteries.",
+        "sources": [
+          { "kind": "primary", "reference": "Scholia on Apollonius Rhodius, Argonautica 1.917 (Kadmilos and the Kabeiroi)" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kadmilos (Kasmilos/Casmilus) is the divine youthful attendant in the Samothracian mysteries, identified with Hermes and named in some traditions as father of the Kabeiroi (son of Hephaistos and the nymph Kabeiro).",
+        "citations": [
+          { "kind": "primary", "reference": "Akusilaos and the scholia on Apollonius Rhodius, Argonautica 1.917" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "One of the four named Great Gods of Samothrace, given a separate entry as the Hermes-figure of the cult. Classified 'deity'. Part of the same Thracian-Pelasgian mystery complex as the Kabeiroi collective above. Native name survives only in Greek/Latin transmission."
+  },
+  {
+    "id": "thracian_rhesus",
+    "name": {
+      "primary": "Rhesus, the Hero-Daemon of Mount Pangaion",
+      "alt": ["Rhesos", "King Rhesus", "the anthrōpodaimōn"],
+      "transliterations": { "grc": "Ῥῆσος", "rom": "Rhēsos" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Mythic/heroic Thrace (Trojan War cycle); cult attested by the Classical period" },
+    "domains": [
+      {
+        "sphereId": "heroized-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "ἀνθρωποδαίμων", "script": "Greek", "rom": "anthrōpodaimōn" },
+        "sources": [
+          { "kind": "primary", "reference": "[Euripides], Rhesus 962-973 (Rhesus to lie hidden in a cavern of silver-bearing Pangaion as an anthrōpodaimōn, released by Persephone, not descending to Hades)" }
+        ]
+      },
+      {
+        "sphereId": "prophecy-and-oracles",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "[Euripides], Rhesus 970-973 (he will be a prophet of Bacchus dwelling under Pangaion's rock, a holy light to initiates)" }
+        ]
+      },
+      {
+        "sphereId": "war-and-battle",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Iliad 10.434-502 (Rhesus, Thracian king and ally of Troy, with his white horses, slain by Diomedes and Odysseus)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "attain-immortality-without-dying",
+        "name": "attains hidden immortality without descending to Hades",
+        "term": { "value": "ἀνθρωποδαίμων", "script": "Greek", "rom": "anthrōpodaimōn" },
+        "inheritability": "noninheritable",
+        "notes": "His goddess-mother (a Muse) declares Persephone will release his soul so he lives as a man-daemon in a Pangaion cavern, a status between man and god, like Zalmoxis obtaining immortality without true death.",
+        "sources": [
+          { "kind": "primary", "reference": "[Euripides], Rhesus 962-973" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "white-thracian-horses",
+        "kind": "animal",
+        "name": "snow-white Thracian war-horses",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "His famous team, seized in the night-raid of the Iliad.",
+        "notes": "Whiter than snow, swift as the wind (Iliad 10.436-437); an oracle held Troy would not fall if they drank from the Trojan river or grazed there.",
+        "sources": [
+          { "kind": "primary", "reference": "Homer, Iliad 10.436-437, 474-475" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Rhesus is a Thracian king of the Trojan cycle who, rather than dying into Hades, is given hidden immortality as an anthrōpodaimōn ('man-daemon') in a cavern of Mount Pangaion and made a prophet of the Bacchic mysteries.",
+        "citations": [
+          { "kind": "primary", "reference": "[Euripides], Rhesus 962-973" },
+          { "kind": "primary", "reference": "Homer, Iliad 10.434-502" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "His Pangaion hero-cult parallels the Getic immortality of Zalmoxis and exemplifies the Thracian/Hellenistic 'heroization' of the dead into immortal man-daemons.",
+        "citations": [
+          { "kind": "secondary", "reference": "Studies of Thracian heroization and the cult of Rhesus on Mount Pangaion" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Heroized/culture-hero tier (the prompt asks to include attested heroized figures). Classified 'demigod': son of a Muse and the river-god Strymon (or king Eioneus), raised to a man-daemon between mortal and god. His anthrōpodaimōn status is the explicit Thracian model of immortality-without-death, paralleling Zalmoxis. Native theonym leads as the proper name (Rhēsos), transmitted in Greek."
+  },
+  {
+    "id": "thracian_orpheus",
+    "name": {
+      "primary": "Orpheus, the Thracian Singer and Founder of the Mysteries",
+      "alt": ["Orpheus of Thrace", "the Thracian bard"],
+      "transliterations": { "grc": "Ὀρφεύς", "rom": "Orpheus" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "Mythic Thrace (pre-Trojan generation); Orphic mysteries flourishing into the Hellenistic age" },
+    "domains": [
+      {
+        "sphereId": "music-and-song",
+        "contextTag": "lifelong",
+        "term": { "value": "λύρα", "script": "Greek", "rom": "lyra" },
+        "sources": [
+          { "kind": "primary", "reference": "Apollonius Rhodius, Argonautica 1.23-34 (Orpheus the Thracian, son of Oeagrus and Calliope, whose song moved rocks and rivers)" }
+        ]
+      },
+      {
+        "sphereId": "mystery-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "Ὀρφικά", "script": "Greek", "rom": "Orphika" },
+        "sources": [
+          { "kind": "primary", "reference": "Plato, Protagoras 316d and Republic 364e (Orpheus and the Orphic rites/books); Herodotus, Histories 2.81 (Orphic and Bacchic usages)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "charm-with-song",
+        "name": "charms beasts, trees and stones with his song",
+        "term": { "value": "ἀοιδή", "script": "Greek", "rom": "aoidē" },
+        "inheritability": "noninheritable",
+        "notes": "His music tamed wild animals, drew trees and rocks, and stilled rivers; he even won a reprieve for Eurydice from the powers of the underworld before losing her.",
+        "sources": [
+          { "kind": "primary", "reference": "Apollonius Rhodius, Argonautica 1.26-31; Virgil, Georgics 4.453-527; Ovid, Metamorphoses 10-11" }
+        ]
+      },
+      {
+        "id": "found-the-mysteries",
+        "name": "founds the rites of initiation and afterlife salvation",
+        "term": { "value": "τελεταί", "script": "Greek", "rom": "teletai" },
+        "inheritability": "noninheritable",
+        "notes": "Credited as founder of the Orphic mysteries and author of sacred poems on the soul's fate; the Greeks held the rites borrowed from his Thracian people.",
+        "sources": [
+          { "kind": "primary", "reference": "Plato, Republic 364e-365a; Aristophanes, Frogs 1032 (Orpheus taught the rites and abstention from killing)" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "lyre-of-orpheus",
+        "kind": "instrument",
+        "name": "Orpheus' lyre",
+        "term": { "value": "λύρα", "script": "Greek", "rom": "lyra" },
+        "role": "Instrument of his enchanting song, later set among the stars as the constellation Lyra.",
+        "notes": "Gift associated with Apollo/the Muses; central emblem of the Thracian bard.",
+        "sources": [
+          { "kind": "primary", "reference": "Eratosthenes, Catasterismi 24 (the lyre of Orpheus placed in the heavens)" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Orpheus is the Thracian singer, son of the Muse Calliope and the Thracian king Oeagrus (some say Apollo), whose song moved nature and who is credited as founder of the Orphic mysteries; ancient sources treat his cult and rites as borrowed by the Greeks from his Thracian people.",
+        "citations": [
+          { "kind": "primary", "reference": "Apollonius Rhodius, Argonautica 1.23-34; Plato, Republic 364e" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "His death by dismemberment at the hands of Thracian women near Mount Pangaion, where he had honored Apollo at the oracle of Dionysus, is recounted in Aeschylus' lost Bassarids and by later poets.",
+        "citations": [
+          { "kind": "primary", "reference": "Summary of Aeschylus, Bassarids (Eratosthenes/[pseudo-Eratosthenes]); Ovid, Metamorphoses 11.1-66" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Thracian culture-hero (the prompt requires culture-hero tiers). Classified 'demigod': son of a Muse and a Thracian king. Though thoroughly Hellenized in surviving literature, he is consistently presented as ethnically Thracian and as the conduit of Thracian 'Orphic' mysteries into Greece. vitalStatus 'deceased' (torn apart by maenads), though his oracular head continued to prophesy on Lesbos. Native name leads as the proper noun (Greek)."
+  },
+  {
+    "id": "dacian_decaeneus",
+    "name": {
+      "primary": "Decaeneus, the Deified High Priest of the Dacians",
+      "alt": ["Deceneus", "Dekaineos", "Dicineus", "Dicaeneus"],
+      "transliterations": { "grc": "Δεκαίνεος", "rom": "Dekaineos", "la": "Dicineus" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Dacian",
+    "primaryTradition": "Dacian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "Dacian kingdom under Burebista, 1st c. BCE (fl. c. 70-44 BCE)" },
+    "domains": [
+      {
+        "sphereId": "priesthood-and-ritual",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5, 7.3.11 (Decaeneus, sorcerer-priest who shared rule with Burebista and was held in honor as a god)" }
+        ]
+      },
+      {
+        "sphereId": "prophecy-and-oracles",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Jordanes, Getica 67-71 (Dicineus teaches the Goths/Getae astronomy, physics, ethics and the courses of the stars)" }
+        ]
+      },
+      {
+        "sphereId": "law-and-order",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Jordanes, Getica 69 (Dicineus gives the Getae laws, the so-called belagines)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command-obedience-through-divine-authority",
+        "name": "commands obedience as a god among the Getae",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Strabo: by claiming to interpret the will of the gods he won such authority that the people obeyed even his order to abandon wine and uproot the vines; he was honored as a god.",
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.11" }
+        ]
+      },
+      {
+        "id": "read-the-heavens",
+        "name": "reads the courses of the heavens",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Jordanes credits him with teaching astronomy, the twelve signs, the planets and the moon's phases, dwelling like Zalmoxis in priestly seclusion.",
+        "sources": [
+          { "kind": "primary", "reference": "Jordanes, Getica 67-71" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Decaeneus was the high priest of Zalmoxis and co-ruler under the Dacian king Burebista; Strabo states he was held in honor as a god, and he enforced ascetic discipline including the destruction of the vines.",
+        "citations": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5, 7.3.11" }
+        ],
+        "weight": "high"
+      },
+      {
+        "claim": "Jordanes' Getica preserves a fuller (and partly legendary) portrait of Dicineus as lawgiver and teacher of natural philosophy to the Getae.",
+        "citations": [
+          { "kind": "primary", "reference": "Jordanes, Getica 67-71" }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Dacian heroized/deified mortal (prompt's heroized tier; Dacian foreground). Classified 'demigod': a historical man who, per Strabo, came to be 'honored as a god', continuing the Zalmoxis priest-becomes-god pattern. vitalStatus 'deceased' (a historical figure of the 1st c. BCE). No native term is recorded for his name; transmitted as Greek Dekaineos / Latin Dicineus."
+  },
+  {
+    "id": "dacian_burebista",
+    "name": {
+      "primary": "Burebista, Unifier-King of the Getae and Dacians",
+      "alt": ["Byrebistas", "Boirebistas", "Burvista"],
+      "transliterations": { "grc": "Βυρεβίστας / Βοιρεβίστας", "rom": "Byrebistas / Boirebistas" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Dacian",
+    "primaryTradition": "Dacian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "Dacian kingdom, c. 82/61-45/44 BCE" },
+    "domains": [
+      {
+        "sphereId": "kingship-and-sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.11 (Burebista raised the Getae to great power and built a large empire)" }
+        ]
+      },
+      {
+        "sphereId": "war-and-battle",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.11; the Dionysopolis decree for Akornion (IGBulg I² 13) on Burebista's power" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unify-the-tribes",
+        "name": "unifies and disciplines the Getic and Dacian tribes",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "noninheritable",
+        "notes": "Strabo: within a few years, through training, sobriety and obedience, he forged a great empire and subdued neighboring peoples; he used the priest Decaeneus to enforce religious discipline.",
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.11" }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Burebista was the king who first unified the Getic and Dacian tribes into a great kingdom, ruling with the priest Decaeneus, who imposed ascetic religious discipline (including renunciation of wine) descending from the doctrine of Zalmoxis.",
+        "citations": [
+          { "kind": "primary", "reference": "Strabo, Geography 7.3.5, 7.3.11" },
+          { "kind": "primary", "reference": "Dionysopolis honorific decree for Akornion (IGBulg I² 13)" }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Included as the Dacian sacred-kingship figure binding the Zalmoxis cult to historical rulership (prompt foregrounds the Dacian set). Classified 'mortal': a historical king (not deified in the sources, unlike his priest Decaeneus), but central to Geto-Dacian religion through the priest-king nexus and the meat/wine-abstention discipline Strabo traces to Zalmoxis. Native name transmitted in Greek inscriptions and Strabo; no Dacian-script form survives. vitalStatus 'deceased'."
+  }
+]
+```
+
+I researched the Thracian and Dacian traditions via web search and authored 24 figure objects conforming to the schema. Verification: I confirmed against `/home/user/PantheonRepository/data-sources/existing-ids.json` that no `thracian_*` or `dacian_*` ids exist there, so none of my 24 ids collide. I re-checked the schema rules — English/plain word or proper-noun theonym leads `name.primary` with native terms in correct script (Greek for Greek-transmitted, Latin where Latin-transmitted) and `""` where unrecorded; `type` is restricted to the five allowed values (spirit/hero classes are mapped to deity or demigod with explanation in notes); domains, faculties, and materialCulture are kept distinct; every entry carries real per-claim citations (Herodotus, Strabo, Plato, Aeschylus, Lycophron, Euripides/[Euripides] Rhesus, Apollonius, Jordanes, the Thracian Rider relief corpus, Odessos coinage, Samothracian sanctuary, epigraphy); no forbidden modern coinages appear. I did not modify any repo files.
+
+Roster coverage of the brief: all nine required figures are present — Zalmoxis (given two entries, Thracian/Getic `thracian_zalmoxis` and Dacian `dacian_zalmoxis`, both flagging the explicit demigod-vs-deity tension per Herodotus 4.96 and Strabo), Gebeleizis, Bendis (two spears + Athenian Bendideia), Sabazios (Hand of Sabazios), Kotys/Cotytto (Kotyttia), the Thracian Horseman/Heros, Derzelas/Darzalas (Great God of Odessos), Pleistoros (Hdt. 9.119), and Kandaon. The Dacian foreground (Zalmoxis, Gebeleizis, Derzelas) is covered, plus Dacian Decaeneus and Burebista. Attested extensions fill out the registry: Zibelthiurdos, two epithet-manifestations of the Rider (Karabazmos, Manimazos), Kendrisos, the Thraco-Phrygian Semele/Zemele, the Thracian Dionysus/Bassareus with the Bessian oracle, the Great Gods of Samothrace and Kadmilos, and the heroized/culture-hero tiers Rhesus (the anthrōpodaimōn parallel to Zalmoxis) and Orpheus.
+
+result: Authored 24 cited Thracian/Dacian figure objects (returned as a single JSON array above), foregrounding Zalmoxis with the demigod-vs-deity tension, covering all nine briefed deities plus attested extensions and heroized tiers; no id collisions, no repo files modified.

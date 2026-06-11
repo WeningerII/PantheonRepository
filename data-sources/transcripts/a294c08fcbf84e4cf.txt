@@ -1,0 +1,1534 @@
+I now have all the verified information I need, including the exact Tibetan Unicode confirmed for Tönpa Shenrab (སྟོན་པ་གཤེན་རབ་མི་བོ་) and Shinje (གཤིན་རྗེ་). I have comprehensive, source-grounded data for all 19 figures across the three traditions.
+
+Let me compile the complete JSON array, applying the exact schema with English-leading domains/faculties, native scripts with romanization, distinct verb-phrase faculties, material culture items, and real citations.
+
+Here is my research synthesis and the complete registry.
+
+## Summary of figures authored (19 total)
+
+**Buddhist (11):** Śakra/Indra, Brahmā Sahāmpati, Māra, Yama, the Four Heavenly Kings (Vaiśravaṇa, Virūḍhaka, Dhṛtarāṣṭra, Virūpākṣa), Vemacitrin (asura lord — type `demigod`), Pṛthivī. Cited to the Pali Canon (Sakka-saṃyutta SN 11, Āṭānāṭiya Sutta DN 32, Devadūta Sutta MN 130, Ayācana Sutta SN 6.1, Padhāna Sutta Sn 3.2) and Mahāyāna sutras (Lalitavistara, Golden Light Sūtra).
+
+**Tibetan/Bön (6):** Tönpa Shenrab (Bön founder), Pehar, Palden Lhamo, Shinje/Yama Dharmarāja, the yul-lha (mountain-gods, type `spirit`), Nyenchen Tanglha. Cited to Bön termas (mDo 'dus, gZer mig, gZi brjid) and Tibetan-Buddhist protector/terma traditions.
+
+**Tamil/Dravidian (5):** Murugan (Tamil Kaḍavuḷ), Māriamman, Ayyanar, Korravai, Mayon. Cited to Sangam sources (Tolkāppiyam, Tirumurukāṟṟuppaṭai, Paripāṭal, Silappatikāram, Akanāṉūṟu) and attested folk worship.
+
+Key authoring decisions: asuras are typed `demigod` per the prompt's "demigod realm"; yul-lha typed `spirit` (a class of territorial deities); Śakra/Murugan flagged as bodhisattva/culture-hero tiers via notes and faculties; native terms use Devanāgarī+IAST (Sanskrit), Pali, Tibetan (Unicode + Wylie rom), and Tamil script + romanization. Where a specific native term is genuinely unrecorded for a sub-field, `value` is `""` with no invented text.
+
+```json
+[
+  {
+    "id": "buddhist_sakra",
+    "name": {
+      "primary": "Śakra",
+      "alt": ["Indra", "Sakka", "Śakro devānām indraḥ", "Taishakuten", "Kausika"],
+      "transliterations": { "sanskrit": "शक्र Śakra", "pali": "Sakka" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "heaven-trayastrimsha",
+        "contextTag": "lifelong",
+        "term": { "value": "त्रायस्त्रिंश", "script": "Sanskrit (Devanāgarī)", "rom": "Trāyastriṃśa" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Sakka-saṃyutta (SN 11)" }]
+      },
+      {
+        "sphereId": "kingship-of-the-devas",
+        "contextTag": "lifelong",
+        "term": { "value": "देवानामिन्द्र", "script": "Sanskrit (Devanāgarī)", "rom": "devānām indra" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Sakka-saṃyutta (SN 11)" }]
+      },
+      {
+        "sphereId": "thunderbolt-and-storm",
+        "contextTag": "lifelong",
+        "term": { "value": "वज्र", "script": "Sanskrit (Devanāgarī)", "rom": "vajra" },
+        "sources": [{ "kind": "secondary", "reference": "Buddhaghosa, identification of Sakka with Vajrapāṇi" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule-tavatimsa",
+        "name": "Rule the Heaven of the Thirty-Three gods",
+        "term": { "value": "त्रायस्त्रिंश", "script": "Sanskrit (Devanāgarī)", "rom": "trāyastriṃśa" },
+        "inheritability": "none",
+        "notes": "Sakka succeeds another deity who becomes the new Sakka.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Sakka-saṃyutta (SN 11)" }]
+      },
+      {
+        "id": "wield-vajra-thunderbolt",
+        "name": "Hurl the thunderbolt against the asuras",
+        "term": { "value": "वज्र", "script": "Sanskrit (Devanāgarī)", "rom": "vajra" },
+        "inheritability": "none",
+        "notes": "Leads the devas in war on the asuras.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Dhajagga-sutta (SN 11.3)" }]
+      },
+      {
+        "id": "protect-the-dharma",
+        "name": "Guard the Buddha and protect the Dharma",
+        "term": { "value": "धर्मपाल", "script": "Sanskrit (Devanāgarī)", "rom": "dharmapāla" },
+        "inheritability": "none",
+        "notes": "Aids the Buddha; venerated as a Bodhisattva.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Sakka-saṃyutta (SN 11)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sakra-vajra",
+        "name": "Vajra (thunderbolt)",
+        "term": { "value": "वज्र", "script": "Sanskrit (Devanāgarī)", "rom": "vajra" },
+        "notes": "Sakka's thunderbolt weapon, basis of his identification with Vajrapāṇi.",
+        "sources": [{ "kind": "secondary", "reference": "Buddhaghosa commentarial tradition" }]
+      },
+      {
+        "id": "sakra-vaijayanta-palace",
+        "name": "Vaijayanta palace",
+        "term": { "value": "वैजयन्त", "script": "Sanskrit (Devanāgarī)", "rom": "Vaijayanta" },
+        "notes": "Sakka's palace atop Mount Sumeru in Trāyastriṃśa.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Cūḷataṇhāsaṅkhaya-sutta (MN 37)" }]
+      },
+      {
+        "id": "sakra-airavata",
+        "name": "Airāvata, the divine elephant",
+        "term": { "value": "ऐरावत", "script": "Sanskrit (Devanāgarī)", "rom": "Airāvata" },
+        "notes": "Sakka's mount; called Erāvaṇa in Pali sources.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon (Erāvaṇa, deva-king mount)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Sakka-saṃyutta (SN 11), Saṃyutta Nikāya" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "identity-as-bodhisattva",
+        "citations": [
+          { "kind": "secondary", "reference": "Buddhaghosa, identification of Sakka with Vajrapāṇi" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Buddhist king of the devas, ruler of Trāyastriṃśa on Mount Sumeru. Long-lived but mortal; married to Sujā, daughter of the asura lord Vemacitrin."
+  },
+  {
+    "id": "buddhist_brahma_sahampati",
+    "name": {
+      "primary": "Brahmā Sahāmpati",
+      "alt": ["Sahampati", "Mahābrahmā", "Lord of the Sahā world"],
+      "transliterations": { "sanskrit": "ब्रह्मा सहाम्पति Brahmā Sahāmpati", "pali": "Brahmā Sahampati" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "brahma-world",
+        "contextTag": "lifelong",
+        "term": { "value": "ब्रह्मलोक", "script": "Sanskrit (Devanāgarī)", "rom": "brahmaloka" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Ayācana-sutta (SN 6.1)" }]
+      },
+      {
+        "sphereId": "patronage-of-the-dispensation",
+        "contextTag": "lifelong",
+        "term": { "value": "साहाम्पति", "script": "Sanskrit (Devanāgarī)", "rom": "Sahāmpati" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Ariyapariyesanā-sutta (MN 26)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "entreat-the-buddha-to-teach",
+        "name": "Entreat the Buddha to turn the Dharma wheel",
+        "term": { "value": "धर्मचक्र", "script": "Sanskrit (Devanāgarī)", "rom": "dharmacakra" },
+        "inheritability": "none",
+        "notes": "Requests the newly awakened Buddha to teach.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Ayācana-sutta (SN 6.1)" }]
+      },
+      {
+        "id": "preside-over-mahabrahmas",
+        "name": "Preside as senior of the Mahābrahmā gods",
+        "term": { "value": "महाब्रह्मा", "script": "Sanskrit (Devanāgarī)", "rom": "Mahābrahmā" },
+        "inheritability": "none",
+        "notes": "Said to be the most senior of the Mahābrahmās.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Brahma-saṃyutta (SN 6)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Ayācana-sutta (SN 6.1)" },
+          { "kind": "primary", "reference": "Pali Canon, Ariyapariyesanā-sutta (MN 26)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Senior Mahābrahmā who beseeches the Buddha to teach the Dharma after his awakening; representative of the Brahmā world as devoted to the Buddha. Never a creator-god in Buddhist sources."
+  },
+  {
+    "id": "buddhist_mara",
+    "name": {
+      "primary": "Māra",
+      "alt": ["Māra Pāpimā", "the Evil One", "Namuci", "Kāmadeva", "Mṛtyu"],
+      "transliterations": { "sanskrit": "मार Māra", "pali": "Māra" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "death-and-the-realm-of-desire",
+        "contextTag": "lifelong",
+        "term": { "value": "मार", "script": "Sanskrit (Devanāgarī)", "rom": "Māra" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Māra-saṃyutta (SN 4)" }]
+      },
+      {
+        "sphereId": "temptation-and-delusion",
+        "contextTag": "lifelong",
+        "term": { "value": "पापीमत्", "script": "Sanskrit (Devanāgarī)", "rom": "Pāpimā" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Padhāna-sutta (Sn 3.2)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "tempt-and-obstruct-awakening",
+        "name": "Tempt practitioners away from awakening",
+        "term": { "value": "मार", "script": "Sanskrit (Devanāgarī)", "rom": "Māra" },
+        "inheritability": "none",
+        "notes": "Deploys illusions and seductions against the path.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Māra-saṃyutta (SN 4)" }]
+      },
+      {
+        "id": "muster-the-armies-of-mara",
+        "name": "Muster armies to assail the Bodhisattva",
+        "term": { "value": "मारसेना", "script": "Sanskrit (Devanāgarī)", "rom": "Mārasenā" },
+        "inheritability": "none",
+        "notes": "Ten armies named in the Padhāna-sutta.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Padhāna-sutta (Sn 3.2)" }]
+      },
+      {
+        "id": "send-the-three-daughters",
+        "name": "Send seductive daughters to distract meditators",
+        "term": { "value": "तृष्णा अरति रागा", "script": "Sanskrit (Devanāgarī)", "rom": "Taṇhā, Aratī, Ragā" },
+        "inheritability": "none",
+        "notes": "Daughters Taṇhā, Aratī and Ragā attempt seduction.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Māra-saṃyutta (SN 4.25)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mara-bow-of-flowers",
+        "name": "Flower-arrow bow of desire",
+        "term": { "value": "", "script": "Sanskrit (Devanāgarī)", "rom": "" },
+        "notes": "Kāmadeva-Māra wields a flower bow in Mahāyāna depictions of the assault on the Bodhi tree.",
+        "sources": [{ "kind": "primary", "reference": "Lalitavistara Sūtra, Māra-dharṣaṇa chapter" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Māra-saṃyutta (SN 4)" },
+          { "kind": "primary", "reference": "Lalitavistara Sūtra" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The Buddhist 'Evil One', deity of death, desire and obstruction who assails the Bodhisattva at the awakening with armies and the three daughters; ruler of the highest desire-realm heaven in some schemes."
+  },
+  {
+    "id": "buddhist_yama",
+    "name": {
+      "primary": "Yama",
+      "alt": ["Yamarāja", "King Yama", "Lord of the Naraka", "Enma"],
+      "transliterations": { "sanskrit": "यम Yama", "pali": "Yama" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "realm-of-the-dead-naraka",
+        "contextTag": "lifelong",
+        "term": { "value": "नरक", "script": "Sanskrit (Devanāgarī)", "rom": "naraka" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Devadūta-sutta (MN 130)" }]
+      },
+      {
+        "sphereId": "judgement-of-the-departed",
+        "contextTag": "lifelong",
+        "term": { "value": "यम", "script": "Sanskrit (Devanāgarī)", "rom": "Yama" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Devadūta-sutta (MN 130)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "interrogate-the-divine-messengers",
+        "name": "Interrogate the dead on the divine messengers",
+        "term": { "value": "देवदूत", "script": "Sanskrit (Devanāgarī)", "rom": "devadūta" },
+        "inheritability": "none",
+        "notes": "Questions the dead on the five heavenly messengers.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Devadūta-sutta (MN 130)" }]
+      },
+      {
+        "id": "consign-to-karmic-rebirth",
+        "name": "Consign beings to their karmic destination",
+        "term": { "value": "कर्म", "script": "Sanskrit (Devanāgarī)", "rom": "karma" },
+        "inheritability": "none",
+        "notes": "Outcome follows from the being's own karma.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Devadūta-sutta (MN 130)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yama-mirror-of-karma",
+        "name": "Mirror of karma",
+        "term": { "value": "", "script": "Sanskrit (Devanāgarī)", "rom": "" },
+        "notes": "Mirror revealing past deeds, held by Yama in Tibetan iconography.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Yama Dharmarāja iconographic tradition" }]
+      },
+      {
+        "id": "yama-danda-noose",
+        "name": "Club (daṇḍa) and noose (pāśa)",
+        "term": { "value": "दण्ड पाश", "script": "Sanskrit (Devanāgarī)", "rom": "daṇḍa, pāśa" },
+        "notes": "Skull-staff and lasso to bind the dead.",
+        "sources": [{ "kind": "secondary", "reference": "Buddhist Yama iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Devadūta-sutta (MN 130), Majjhima Nikāya" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Buddhist lord of death and sovereign of the naraka realms who questions the dead about the divine messengers; their fate is the result of their own karma. A dharmapāla in Tibetan tradition (see Shinje)."
+  },
+  {
+    "id": "buddhist_vaishravana",
+    "name": {
+      "primary": "Vaiśravaṇa",
+      "alt": ["Kubera", "Vessavaṇa", "Namtöse", "Bishamonten", "Tamonten"],
+      "transliterations": { "sanskrit": "वैश्रवण Vaiśravaṇa", "pali": "Vessavaṇa", "tibetan": "རྣམ་ཐོས་སྲས་ (rnam thos sras)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "guardianship-of-the-north",
+        "contextTag": "lifelong",
+        "term": { "value": "उत्तर", "script": "Sanskrit (Devanāgarī)", "rom": "uttara" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "sphereId": "lordship-of-the-yaksas",
+        "contextTag": "lifelong",
+        "term": { "value": "यक्ष", "script": "Sanskrit (Devanāgarī)", "rom": "yakṣa" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "sphereId": "wealth-and-fortune",
+        "contextTag": "lifelong",
+        "term": { "value": "धनद", "script": "Sanskrit (Devanāgarī)", "rom": "Dhanada" },
+        "sources": [{ "kind": "secondary", "reference": "Vaiśravaṇa-Kubera tradition" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-northern-quarter",
+        "name": "Guard the northern quarter of the world",
+        "term": { "value": "लोकपाल", "script": "Sanskrit (Devanāgarī)", "rom": "lokapāla" },
+        "inheritability": "none",
+        "notes": "Chief of the Four Heavenly Kings.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "id": "command-the-yaksas",
+        "name": "Command the hosts of yakṣas",
+        "term": { "value": "यक्षसेना", "script": "Sanskrit (Devanāgarī)", "rom": "yakṣasenā" },
+        "inheritability": "none",
+        "notes": "Leads the yakṣas dwelling on Sumeru's slopes.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "id": "bestow-prosperity",
+        "name": "Bestow wealth upon the devout",
+        "term": { "value": "धन", "script": "Sanskrit (Devanāgarī)", "rom": "dhana" },
+        "inheritability": "none",
+        "notes": "As Kubera, dispenses riches and good fortune.",
+        "sources": [{ "kind": "primary", "reference": "Golden Light Sūtra (Suvarṇaprabhāsa)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vaishravana-banner",
+        "name": "Victory banner",
+        "term": { "value": "ध्वज", "script": "Sanskrit (Devanāgarī)", "rom": "dhvaja" },
+        "notes": "Held in the right hand in Tibetan iconography.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Vaiśravaṇa (Namtöse) iconography" }]
+      },
+      {
+        "id": "vaishravana-mongoose",
+        "name": "Jewel-spitting mongoose",
+        "term": { "value": "नकुल", "script": "Sanskrit (Devanāgarī)", "rom": "nakula" },
+        "notes": "Held in the left hand; emits jewels, sign of wealth.",
+        "sources": [{ "kind": "secondary", "reference": "Vaiśravaṇa-Kubera iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32), Dīgha Nikāya" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Chief of the Four Heavenly Kings, guardian of the north and lord of the yakṣas, dwelling on Mount Sumeru's lower slopes; identified with Kubera as a god of wealth."
+  },
+  {
+    "id": "buddhist_virudhaka",
+    "name": {
+      "primary": "Virūḍhaka",
+      "alt": ["Virūḷhaka", "Zōchōten", "King of the South"],
+      "transliterations": { "sanskrit": "विरूढक Virūḍhaka", "pali": "Virūḷhaka" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "guardianship-of-the-south",
+        "contextTag": "lifelong",
+        "term": { "value": "दक्षिण", "script": "Sanskrit (Devanāgarī)", "rom": "dakṣiṇa" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "sphereId": "lordship-of-the-kumbhandas",
+        "contextTag": "lifelong",
+        "term": { "value": "कुम्भाण्ड", "script": "Sanskrit (Devanāgarī)", "rom": "kumbhāṇḍa" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-southern-quarter",
+        "name": "Guard the southern quarter of the world",
+        "term": { "value": "लोकपाल", "script": "Sanskrit (Devanāgarī)", "rom": "lokapāla" },
+        "inheritability": "none",
+        "notes": "One of the Four Heavenly Kings.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "id": "command-the-kumbhandas",
+        "name": "Command the hosts of kumbhāṇḍa spirits",
+        "term": { "value": "कुम्भाण्ड", "script": "Sanskrit (Devanāgarī)", "rom": "kumbhāṇḍa" },
+        "inheritability": "none",
+        "notes": "Rules the kumbhāṇḍas of the south.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "virudhaka-sword",
+        "name": "Sword",
+        "term": { "value": "खड्ग", "script": "Sanskrit (Devanāgarī)", "rom": "khaḍga" },
+        "notes": "Brandished to defend the Dharma in East Asian iconography.",
+        "sources": [{ "kind": "secondary", "reference": "East Asian Shitennō iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32), Dīgha Nikāya" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Heavenly King of the south and lord of the kumbhāṇḍas, one of the Four Heavenly Kings guarding the world from Mount Sumeru."
+  },
+  {
+    "id": "buddhist_dhrtarastra",
+    "name": {
+      "primary": "Dhṛtarāṣṭra",
+      "alt": ["Dhataraṭṭha", "Jikokuten", "King of the East"],
+      "transliterations": { "sanskrit": "धृतराष्ट्र Dhṛtarāṣṭra", "pali": "Dhataraṭṭha" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "guardianship-of-the-east",
+        "contextTag": "lifelong",
+        "term": { "value": "पूर्व", "script": "Sanskrit (Devanāgarī)", "rom": "pūrva" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "sphereId": "lordship-of-the-gandharvas",
+        "contextTag": "lifelong",
+        "term": { "value": "गन्धर्व", "script": "Sanskrit (Devanāgarī)", "rom": "gandharva" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-eastern-quarter",
+        "name": "Guard the eastern quarter of the world",
+        "term": { "value": "लोकपाल", "script": "Sanskrit (Devanāgarī)", "rom": "lokapāla" },
+        "inheritability": "none",
+        "notes": "One of the Four Heavenly Kings.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "id": "command-the-gandharvas",
+        "name": "Command the celestial musician gandharvas",
+        "term": { "value": "गन्धर्व", "script": "Sanskrit (Devanāgarī)", "rom": "gandharva" },
+        "inheritability": "none",
+        "notes": "Rules the gandharvas of the east.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "dhrtarastra-lute",
+        "name": "Lute (pipa)",
+        "term": { "value": "वीणा", "script": "Sanskrit (Devanāgarī)", "rom": "vīṇā" },
+        "notes": "Played to harmonize the world in East Asian iconography.",
+        "sources": [{ "kind": "secondary", "reference": "East Asian Shitennō iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32), Dīgha Nikāya" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Heavenly King of the east and lord of the gandharvas (celestial musicians), one of the Four Heavenly Kings guarding the world from Mount Sumeru."
+  },
+  {
+    "id": "buddhist_virupaksa",
+    "name": {
+      "primary": "Virūpākṣa",
+      "alt": ["Virūpakkha", "Kōmokuten", "King of the West"],
+      "transliterations": { "sanskrit": "विरूपाक्ष Virūpākṣa", "pali": "Virūpakkha" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "guardianship-of-the-west",
+        "contextTag": "lifelong",
+        "term": { "value": "पश्चिम", "script": "Sanskrit (Devanāgarī)", "rom": "paścima" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "sphereId": "lordship-of-the-nagas",
+        "contextTag": "lifelong",
+        "term": { "value": "नाग", "script": "Sanskrit (Devanāgarī)", "rom": "nāga" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-western-quarter",
+        "name": "Guard the western quarter of the world",
+        "term": { "value": "लोकपाल", "script": "Sanskrit (Devanāgarī)", "rom": "lokapāla" },
+        "inheritability": "none",
+        "notes": "One of the Four Heavenly Kings.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      },
+      {
+        "id": "command-the-nagas",
+        "name": "Command the serpent nāgas",
+        "term": { "value": "नाग", "script": "Sanskrit (Devanāgarī)", "rom": "nāga" },
+        "inheritability": "none",
+        "notes": "Rules the nāgas of the west; his name means 'he of malformed eyes'.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "virupaksa-serpent",
+        "name": "Serpent and jewel",
+        "term": { "value": "नाग", "script": "Sanskrit (Devanāgarī)", "rom": "nāga" },
+        "notes": "Grasps a snake, sometimes coiled around a jewel or stupa, in East Asian iconography.",
+        "sources": [{ "kind": "secondary", "reference": "East Asian Shitennō iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Āṭānāṭiya-sutta (DN 32), Dīgha Nikāya" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Heavenly King of the west and lord of the nāgas, one of the Four Heavenly Kings guarding the world from Mount Sumeru."
+  },
+  {
+    "id": "buddhist_vemacitrin",
+    "name": {
+      "primary": "Vemacitrin",
+      "alt": ["Vepacitti", "Vemacitra", "lord of the asuras"],
+      "transliterations": { "sanskrit": "वेमचित्रिन् Vemacitrin", "pali": "Vepacitti" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "asura-realm",
+        "contextTag": "lifelong",
+        "term": { "value": "असुर", "script": "Sanskrit (Devanāgarī)", "rom": "asura" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Vepacitti-sutta (SN 11.4)" }]
+      },
+      {
+        "sphereId": "kingship-of-the-asuras",
+        "contextTag": "lifelong",
+        "term": { "value": "असुरिन्द", "script": "Sanskrit (Devanāgarī)", "rom": "asurinda" },
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Sakka-saṃyutta (SN 11)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead-asuras-against-devas",
+        "name": "Lead the asuras in war on the devas",
+        "term": { "value": "असुरसंग्राम", "script": "Sanskrit (Devanāgarī)", "rom": "asura-saṃgrāma" },
+        "inheritability": "none",
+        "notes": "Most prominent asura leader against Trāyastriṃśa.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Dhajagga-sutta (SN 11.3)" }]
+      },
+      {
+        "id": "contend-in-verse-with-sakka",
+        "name": "Contend in verse before devas and asuras",
+        "term": { "value": "गाथा", "script": "Sanskrit (Devanāgarī)", "rom": "gāthā" },
+        "inheritability": "none",
+        "notes": "Holds a verse-contest with Sakka.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Subhāsita-jaya-sutta (SN 11.5)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "vemacitrin-bonds",
+        "name": "The fivefold bond (pañcabandhana)",
+        "term": { "value": "पञ्चबन्धन", "script": "Sanskrit (Devanāgarī)", "rom": "pañcabandhana" },
+        "notes": "Magical bond binding Vepacitti when captured, loosening with his thoughts of peace.",
+        "sources": [{ "kind": "primary", "reference": "Pali Canon, Vepacitti-sutta (SN 11.4)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Vepacitti-sutta (SN 11.4), Saṃyutta Nikāya" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Lord of the asuras (the demigod realm) and chief antagonist of the devas of Trāyastriṃśa; father-in-law of Sakka through his daughter Sujā. Subdued and bound by Sakka, who bore his abuse with patience."
+  },
+  {
+    "id": "buddhist_prthivi",
+    "name": {
+      "primary": "Pṛthivī",
+      "alt": ["Dharaṇī", "Sthāvarā", "Phra Mae Thorani", "Earth Goddess"],
+      "transliterations": { "sanskrit": "पृथिवी Pṛthivī", "pali": "Pathavī" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buddhist",
+    "primaryTradition": "Buddhist",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "the-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "पृथिवी", "script": "Sanskrit (Devanāgarī)", "rom": "pṛthivī" },
+        "sources": [{ "kind": "primary", "reference": "Lalitavistara Sūtra, earth-witness episode" }]
+      },
+      {
+        "sphereId": "witness-of-merit",
+        "contextTag": "lifelong",
+        "term": { "value": "साक्षिन्", "script": "Sanskrit (Devanāgarī)", "rom": "sākṣin" },
+        "sources": [{ "kind": "primary", "reference": "Lalitavistara Sūtra" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bear-witness-to-awakening",
+        "name": "Bear witness to the Bodhisattva's merit",
+        "term": { "value": "भूमिस्पर्श", "script": "Sanskrit (Devanāgarī)", "rom": "bhūmisparśa" },
+        "inheritability": "none",
+        "notes": "Affirms the Buddha's right to the vajra-seat.",
+        "sources": [{ "kind": "primary", "reference": "Lalitavistara Sūtra, earth-witness episode" }]
+      },
+      {
+        "id": "flood-away-maras-host",
+        "name": "Wring waters from her hair to drown Māra's host",
+        "term": { "value": "", "script": "Sanskrit (Devanāgarī)", "rom": "" },
+        "inheritability": "none",
+        "notes": "Southeast Asian tradition (Phra Mae Thorani).",
+        "sources": [{ "kind": "secondary", "reference": "Southeast Asian Theravāda tradition of Phra Mae Thorani" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Lalitavistara Sūtra" },
+          { "kind": "secondary", "reference": "Southeast Asian Theravāda tradition of Phra Mae Thorani" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The earth goddess summoned by the Buddha's earth-touching gesture (bhūmisparśa mudrā) to witness his accumulated merit, dispelling Māra; in Southeast Asia she wrings flood-waters from her hair to wash away Māra's armies."
+  },
+  {
+    "id": "tibetan_tonpa_shenrab",
+    "name": {
+      "primary": "Tönpa Shenrab Miwoche",
+      "alt": ["Shenrab Miwo", "Buddha Shenrab", "Guru Shenrab"],
+      "transliterations": { "tibetan": "སྟོན་པ་གཤེན་རབ་མི་བོ་ཆེ་ (ston pa gshen rab mi bo che)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bön",
+    "primaryTradition": "Tibetan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "founding-of-bon",
+        "contextTag": "lifelong",
+        "term": { "value": "གཡུང་དྲུང་བོན", "script": "Tibetan", "rom": "g.yung drung bon" },
+        "sources": [{ "kind": "primary", "reference": "gZi brjid (Ziji), Bön biography of Tönpa Shenrab" }]
+      },
+      {
+        "sphereId": "olmo-lungring",
+        "contextTag": "lifelong",
+        "term": { "value": "འོལ་མོ་ལུང་རིང", "script": "Tibetan", "rom": "'ol mo lung ring" },
+        "sources": [{ "kind": "primary", "reference": "gZer mig (Zermik), Bön biography" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "reveal-the-bon-teachings",
+        "name": "Reveal the doctrines of Yungdrung Bön",
+        "term": { "value": "བོན", "script": "Tibetan", "rom": "bon" },
+        "inheritability": "none",
+        "notes": "Founder and revealer of the Bön Dharma.",
+        "sources": [{ "kind": "primary", "reference": "mDo 'dus (Dodü), Bön biography" }]
+      },
+      {
+        "id": "subdue-demons-of-olmo",
+        "name": "Subdue obstructing demons through ritual",
+        "term": { "value": "བདུད་འདུལ", "script": "Tibetan", "rom": "bdud 'dul" },
+        "inheritability": "none",
+        "notes": "Recounted among his Twelve Deeds.",
+        "sources": [{ "kind": "primary", "reference": "gZi brjid (Ziji), Twelve Deeds" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "shenrab-yungdrung",
+        "name": "Yungdrung (the eternal swastika)",
+        "term": { "value": "གཡུང་དྲུང", "script": "Tibetan", "rom": "g.yung drung" },
+        "notes": "Emblem of Bön, sign of indestructibility and eternity, held by Tönpa Shenrab.",
+        "sources": [{ "kind": "primary", "reference": "Bön iconographic and ritual tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "mDo 'dus (Dodü), gZer mig (Zermik) and gZi brjid (Ziji), the three Bön biographies of Tönpa Shenrab" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Legendary founder and reformer of the Bön (Yungdrung Bön) tradition of Tibet, born in Olmo Lungring; a royal who renounced his throne and attained enlightenment, occupying a place in Bön akin to Śākyamuni in Buddhism. His life is told in the mDo 'dus, gZer mig and gZi brjid."
+  },
+  {
+    "id": "tibetan_pehar",
+    "name": {
+      "primary": "Pehar Gyalpo",
+      "alt": ["Gyalpo Pehar", "Pekar", "Pedkar", "King Pehar", "Nechung deity"],
+      "transliterations": { "tibetan": "རྒྱལ་པོ་དཔེ་ཧར (rgyal po dpe har)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "worldly-protector-class",
+        "contextTag": "lifelong",
+        "term": { "value": "འཇིག་རྟེན་པའི་སྲུང་མ", "script": "Tibetan", "rom": "'jig rten pa'i srung ma" },
+        "sources": [{ "kind": "secondary", "reference": "Nyingma protector-deity tradition" }]
+      },
+      {
+        "sphereId": "kingship-of-the-gyalpo-spirits",
+        "contextTag": "lifelong",
+        "term": { "value": "རྒྱལ་པོ", "script": "Tibetan", "rom": "rgyal po" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan gyalpo-spirit lore" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-samye-monastery",
+        "name": "Guard the monastery of Samyé",
+        "term": { "value": "བསམ་ཡས", "script": "Tibetan", "rom": "bsam yas" },
+        "inheritability": "none",
+        "notes": "Installed by Padmasambhava as guardian of Samyé.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan account of the founding of Samyé under Trisong Detsen" }]
+      },
+      {
+        "id": "speak-through-the-nechung-oracle",
+        "name": "Speak through the Nechung state oracle",
+        "term": { "value": "གནས་ཆུང", "script": "Tibetan", "rom": "gnas chung" },
+        "inheritability": "none",
+        "notes": "Possesses the Nechung medium to give counsel.",
+        "sources": [{ "kind": "secondary", "reference": "Nechung Oracle tradition" }]
+      },
+      {
+        "id": "manifest-five-forms",
+        "name": "Manifest as five aspects of body, speech, mind, quality, activity",
+        "term": { "value": "སྐུ་གསུང་ཐུགས་ཡོན་ཏན་ཕྲིན་ལས", "script": "Tibetan", "rom": "sku gsung thugs yon tan phrin las" },
+        "inheritability": "none",
+        "notes": "Five forms; activity-Pehar is white, three-faced, six-armed, riding a lion.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Pehar iconographic tradition" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Tibetan Buddhist protector-deity literature; Nechung Oracle tradition" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "A gyalpo spirit subdued by Padmasambhava and installed as chief guardian of Samyé; regarded as leader of the worldly Dharma-protectors and the deity associated with the Nechung state oracle of Tibet. Originally connected with the Bhata Hor."
+  },
+  {
+    "id": "tibetan_palden_lhamo",
+    "name": {
+      "primary": "Palden Lhamo",
+      "alt": ["Panden Lhamo", "Śrīdevī", "Glorious Goddess", "Magzor Gyalmo"],
+      "transliterations": { "tibetan": "དཔལ་ལྡན་ལྷ་མོ་ (dpal ldan lha mo)", "sanskrit": "श्रीदेवी Śrīdevī" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "protection-of-tibet",
+        "contextTag": "lifelong",
+        "term": { "value": "བོད་སྲུང་མ", "script": "Tibetan", "rom": "bod srung ma" },
+        "sources": [{ "kind": "secondary", "reference": "Gelug dharmapāla tradition" }]
+      },
+      {
+        "sphereId": "dharmapala-class",
+        "contextTag": "lifelong",
+        "term": { "value": "ཆོས་སྐྱོང", "script": "Tibetan", "rom": "chos skyong" },
+        "sources": [{ "kind": "secondary", "reference": "Vajrayāna dharmapāla literature" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect-the-dalai-lama-lineage",
+        "name": "Protect the reincarnation lineage of the Dalai Lamas",
+        "term": { "value": "", "script": "Tibetan", "rom": "" },
+        "inheritability": "none",
+        "notes": "Vowed protection to the 1st Dalai Lama at Lhamo Latso.",
+        "sources": [{ "kind": "secondary", "reference": "Gelug tradition of the Dalai Lama lineage" }]
+      },
+      {
+        "id": "grant-visions-in-lhamo-latso",
+        "name": "Grant prophetic visions in the oracle lake",
+        "term": { "value": "ལྷ་མོ་བླ་མཚོ", "script": "Tibetan", "rom": "lha mo bla mtsho" },
+        "inheritability": "none",
+        "notes": "Guardian of the oracle lake Lhamo Latso.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan tradition of Lhamo Latso" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "palden-lhamo-mule",
+        "name": "White mule with an eye on its rump",
+        "term": { "value": "", "script": "Tibetan", "rom": "" },
+        "notes": "Mount of Palden Lhamo, ridden side-saddle across a sea of blood.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Palden Lhamo iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Vajrayāna dharmapāla literature; Gelug tradition of the Dalai Lamas" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Wrathful female dharmapāla, principal protectress of Tibet and special protector of the Dalai Lama and Panchen Lama lineages; depicted deep blue, riding a white mule across a sea of blood. Tibetan form of the Sanskrit Śrīdevī."
+  },
+  {
+    "id": "tibetan_shinje",
+    "name": {
+      "primary": "Shinje",
+      "alt": ["Yama Dharmarāja", "Shinje Chögyal", "Kālarūpa", "Lord of Death"],
+      "transliterations": { "tibetan": "གཤིན་རྗེ་ (gshin rje); ཆོས་ཀྱི་རྒྱལ་པོ་ (chos kyi rgyal po)", "sanskrit": "धर्मराज Dharmarāja" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Buddhist",
+    "primaryTradition": "Tibetan",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "lordship-of-death",
+        "contextTag": "lifelong",
+        "term": { "value": "གཤིན་རྗེ", "script": "Tibetan", "rom": "gshin rje" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Yama Dharmarāja tradition" }]
+      },
+      {
+        "sphereId": "king-of-the-religious-law",
+        "contextTag": "lifelong",
+        "term": { "value": "ཆོས་ཀྱི་རྒྱལ་པོ", "script": "Tibetan", "rom": "chos kyi rgyal po" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan dharmapāla literature (= Skt. Dharmarāja)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "judge-the-dead-by-karma",
+        "name": "Judge the dead by the law of karma",
+        "term": { "value": "ལས", "script": "Tibetan", "rom": "las" },
+        "inheritability": "none",
+        "notes": "Judge of those reborn in the hot and cold hells.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Yama Dharmarāja tradition" }]
+      },
+      {
+        "id": "guard-practice-as-dharmapala",
+        "name": "Guard spiritual practice as enlightened wrath",
+        "term": { "value": "ཆོས་སྐྱོང", "script": "Tibetan", "rom": "chos skyong" },
+        "inheritability": "none",
+        "notes": "Principal Gelug protector; subdued by Mañjuśrī as Yamāntaka.",
+        "sources": [{ "kind": "secondary", "reference": "Gelug dharmapāla tradition; Yamāntaka cycle" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "shinje-skull-staff",
+        "name": "Skull-topped staff (daṇḍa) and lasso",
+        "term": { "value": "ཁ་ཊྭཱཾ་ག", "script": "Tibetan", "rom": "kha ṭwāṃ ga" },
+        "notes": "Bone stick and lasso to bind negative forces.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan 'Outer' Yama Dharmarāja iconography" }]
+      },
+      {
+        "id": "shinje-karma-mirror",
+        "name": "Mirror of karma",
+        "term": { "value": "ལས་ཀྱི་མེ་ལོང", "script": "Tibetan", "rom": "las kyi me long" },
+        "notes": "Reveals the deeds of the dead.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Yama iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Pali Canon, Devadūta-sutta (MN 130) (Yama)" },
+          { "kind": "secondary", "reference": "Tibetan Yama Dharmarāja / Gelug protector tradition" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Tibetan form of Yama: lord of death, 'king of the religious law' (Dharmarāja), and a principal dharmapāla of the Gelug school depicted buffalo-headed and dark blue. His wrathful conqueror is Yamāntaka (Mañjuśrī), 'destroyer of Yama'."
+  },
+  {
+    "id": "tibetan_yullha",
+    "name": {
+      "primary": "Yul-lha",
+      "alt": ["yul lha", "territorial gods", "country gods", "mountain deities"],
+      "transliterations": { "tibetan": "ཡུལ་ལྷ་ (yul lha)" }
+    },
+    "type": "spirit",
+    "origin": "canon",
+    "tradition": "Tibetan Bön",
+    "primaryTradition": "Tibetan",
+    "sex": "unknown",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "territory-and-locality",
+        "contextTag": "lifelong",
+        "term": { "value": "ཡུལ", "script": "Tibetan", "rom": "yul" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan and Bhutanese yul-lha cult literature" }]
+      },
+      {
+        "sphereId": "sacred-mountains",
+        "contextTag": "lifelong",
+        "term": { "value": "རི", "script": "Tibetan", "rom": "ri" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan mountain-god tradition" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "protect-the-local-community",
+        "name": "Protect a valley, village, or peak",
+        "term": { "value": "ཡུལ་ལྷ", "script": "Tibetan", "rom": "yul lha" },
+        "inheritability": "none",
+        "notes": "Petitioned at each phase of the agricultural cycle.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan and Bhutanese yul-lha cult literature" }]
+      },
+      {
+        "id": "ensure-crops-and-herds",
+        "name": "Secure crops, herds, and good fortune",
+        "term": { "value": "གཡང", "script": "Tibetan", "rom": "g.yang" },
+        "inheritability": "none",
+        "notes": "May take offence at social or environmental wrongs.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan local-deity tradition" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yullha-lhato",
+        "name": "Lhatö cairn shrine",
+        "term": { "value": "ལྷ་ཐོ", "script": "Tibetan", "rom": "lha tho" },
+        "notes": "Cairn-altar erected on high ground as a seat for the territorial god.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan ritual practice of the lha tho" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Scholarship on Tibetan and Bhutanese territorial deities (yul lha)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "A class of indigenous Tibetan territorial deities ('gods of the local place'), often identified with sacred mountains, protecting a valley, village, or peak; predating Buddhism and later integrated as Buddhist and Bön protectors. Some, like Yarlha Shampo, manifest as a white yak."
+  },
+  {
+    "id": "tibetan_nyenchen_tanglha",
+    "name": {
+      "primary": "Nyenchen Tanglha",
+      "alt": ["Nyenchen Thanglha", "Gnyan chen thang lha", "god of the grassland"],
+      "transliterations": { "tibetan": "གཉན་ཆེན་ཐང་ལྷ་ (gnyan chen thang lha)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tibetan Bön",
+    "primaryTradition": "Tibetan",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "the-nyenchen-tanglha-range",
+        "contextTag": "lifelong",
+        "term": { "value": "གཉན་ཆེན་ཐང་ལྷ", "script": "Tibetan", "rom": "gnyan chen thang lha" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan mountain-god (gnyan) cult literature" }]
+      },
+      {
+        "sphereId": "guardianship-of-namtso",
+        "contextTag": "lifelong",
+        "term": { "value": "གནམ་མཚོ", "script": "Tibetan", "rom": "gnam mtsho" },
+        "sources": [{ "kind": "secondary", "reference": "Tibetan tradition associating the deity with Lake Namtso" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside-over-his-mountain-range",
+        "name": "Preside over the Nyenchen Tanglha range",
+        "term": { "value": "གཉན", "script": "Tibetan", "rom": "gnyan" },
+        "inheritability": "none",
+        "notes": "Mountain god of a great range of northern Tibet.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan mountain-god tradition" }]
+      },
+      {
+        "id": "protect-the-nyingma-teachings",
+        "name": "Protect the Nyingma teachings under oath",
+        "term": { "value": "རྙིང་མ", "script": "Tibetan", "rom": "rnying ma" },
+        "inheritability": "none",
+        "notes": "Bound by Padmasambhava; held a bodhisattva of the eighth level.",
+        "sources": [{ "kind": "secondary", "reference": "Nyingma terma tradition; Padmasambhava hagiography" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nyenchen-crystal-spear",
+        "name": "White crystal spear",
+        "term": { "value": "", "script": "Tibetan", "rom": "" },
+        "notes": "Wielded in his warrior form, helmeted with a crystal breastplate on a white horse.",
+        "sources": [{ "kind": "secondary", "reference": "Tibetan Nyenchen Tanglha iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Tibetan mountain-god literature; Nyingma protector tradition" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Mountain god of the great Nyenchen Tanglha range of northern Tibet and guardian of Lake Namtso, bound under oath by Padmasambhava as a protector of the Nyingma teachings; depicted as a white-robed warrior on a white horse. A pre-eminent yul-lha / gnyan deity."
+  },
+  {
+    "id": "tamil_murugan",
+    "name": {
+      "primary": "Murugan",
+      "alt": ["Murukaṉ", "Seyon", "Kumara", "Skanda", "Kārttikeya", "Subrahmaṇya", "Tamil Kaḍavuḷ"],
+      "transliterations": { "tamil": "முருகன் (Murukaṉ)", "sanskrit": "स्कन्द Skanda" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tamil",
+    "primaryTradition": "Tamil",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "kurinci-hill-country",
+        "contextTag": "lifelong",
+        "term": { "value": "குறிஞ்சி", "script": "Tamil", "rom": "kuṟiñci" },
+        "sources": [{ "kind": "primary", "reference": "Tolkāppiyam (Sangam grammar), tiṇai classification" }]
+      },
+      {
+        "sphereId": "war-and-victory",
+        "contextTag": "lifelong",
+        "term": { "value": "வேல்", "script": "Tamil", "rom": "vēl" },
+        "sources": [{ "kind": "primary", "reference": "Tirumurukāṟṟuppaṭai (Sangam), attributed to Nakkīrar" }]
+      },
+      {
+        "sphereId": "god-of-the-tamils",
+        "contextTag": "lifelong",
+        "term": { "value": "தமிழ்க் கடவுள்", "script": "Tamil", "rom": "tamiḻ kaḍavuḷ" },
+        "sources": [{ "kind": "secondary", "reference": "Tamil devotional tradition" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command-the-deva-army",
+        "name": "Command the army of the devas",
+        "term": { "value": "தேவசேனாபதி", "script": "Tamil", "rom": "tēvacēṉāpati" },
+        "inheritability": "none",
+        "notes": "Supreme general of the gods.",
+        "sources": [{ "kind": "primary", "reference": "Tirumurukāṟṟuppaṭai (Sangam)" }]
+      },
+      {
+        "id": "slay-surapadma",
+        "name": "Slay the asura Surapadma with the vēl",
+        "term": { "value": "சூரபத்மன்", "script": "Tamil", "rom": "Cūrapatmaṉ" },
+        "inheritability": "none",
+        "notes": "Splits Surapadma into peacock and rooster.",
+        "sources": [{ "kind": "secondary", "reference": "Kandapuranam / Skanda tradition" }]
+      },
+      {
+        "id": "preside-over-six-abodes",
+        "name": "Preside over the six battle-camp abodes",
+        "term": { "value": "அறுபடை வீடு", "script": "Tamil", "rom": "aṟupaṭai vīṭu" },
+        "inheritability": "none",
+        "notes": "Six sacred Tamil abodes (Arupadai Veedu).",
+        "sources": [{ "kind": "primary", "reference": "Tirumurukāṟṟuppaṭai (Sangam)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "murugan-vel",
+        "name": "Vēl (divine spear)",
+        "term": { "value": "வேல்", "script": "Tamil", "rom": "vēl" },
+        "notes": "His lance, emblem of his power, gifted by his mother (Korravai/Parvati).",
+        "sources": [{ "kind": "primary", "reference": "Tirumurukāṟṟuppaṭai (Sangam)" }]
+      },
+      {
+        "id": "murugan-peacock",
+        "name": "Peacock mount (Paravani)",
+        "term": { "value": "மயில்", "script": "Tamil", "rom": "mayil" },
+        "notes": "His vahana; Sangam verse calls him the Red God on a blue peacock.",
+        "sources": [{ "kind": "primary", "reference": "Sangam literature (Paripāṭal, Tirumurukāṟṟuppaṭai)" }]
+      },
+      {
+        "id": "murugan-rooster-banner",
+        "name": "Rooster banner",
+        "term": { "value": "சேவல் கொடி", "script": "Tamil", "rom": "cēval koṭi" },
+        "notes": "Cock-emblem pennant carried into battle.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil Skanda iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Tirumurukāṟṟuppaṭai (Sangam corpus); Tolkāppiyam" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Ancient Tamil god of war, beauty and the hill-country (kuṟiñci), called the 'god of the Tamils' (Tamiḻ Kaḍavuḷ); wields the vēl, rides the peacock Paravani, and presides over the six sacred abodes (Arupadai Veedu). Later identified with Skanda/Kārttikeya."
+  },
+  {
+    "id": "tamil_mariamman",
+    "name": {
+      "primary": "Māriamman",
+      "alt": ["Mariyamman", "Mari", "Mariaai", "Mariamma"],
+      "transliterations": { "tamil": "மாரியம்மன் (Māriyammaṉ)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tamil",
+    "primaryTradition": "Tamil",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "rain-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "மாரி", "script": "Tamil", "rom": "māri" },
+        "sources": [{ "kind": "secondary", "reference": "Tamil village-deity (grāmadēvatā) tradition" }]
+      },
+      {
+        "sphereId": "disease-and-epidemics",
+        "contextTag": "lifelong",
+        "term": { "value": "அம்மை", "script": "Tamil", "rom": "ammai" },
+        "sources": [{ "kind": "secondary", "reference": "Tamil folk worship of disease goddesses" }]
+      },
+      {
+        "sphereId": "village-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "கிராமதேவதை", "script": "Tamil", "rom": "kirāmatēvatai" },
+        "sources": [{ "kind": "secondary", "reference": "South Indian village-goddess tradition" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring-the-monsoon-rains",
+        "name": "Bring the monsoon rains to the village",
+        "term": { "value": "மாரி", "script": "Tamil", "rom": "māri" },
+        "inheritability": "none",
+        "notes": "Invoked for rain and agricultural prosperity.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil rain-goddess worship" }]
+      },
+      {
+        "id": "cure-and-send-pox-diseases",
+        "name": "Send and cure pox and fever diseases",
+        "term": { "value": "அம்மை", "script": "Tamil", "rom": "ammai" },
+        "inheritability": "none",
+        "notes": "Controls smallpox, measles, chickenpox, cholera.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil folk worship of Māriamman" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mariamman-neem",
+        "name": "Neem leaves (vēppilai)",
+        "term": { "value": "வேப்பிலை", "script": "Tamil", "rom": "vēppilai" },
+        "notes": "Neem, sacred to her and used in cooling rites against fever and pox.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil ritual practice in Māriamman worship" }]
+      },
+      {
+        "id": "mariamman-karagam",
+        "name": "Karagam water-pot",
+        "term": { "value": "கரகம்", "script": "Tamil", "rom": "karakam" },
+        "notes": "Decorated pot carried in dance for the goddess at her festivals.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil Karagāṭṭam festival tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "South Indian village-goddess (grāmadēvatā) tradition; Tamil folk worship" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Tamil folk mother-goddess (grāmadēvatā), bringer of rain and fertility and controller of epidemic diseases (especially smallpox); a fierce yet nurturing village guardian rooted in pre-Vedic Dravidian worship, later syncretized with Durga and Kali. Her name joins māri (rain/pestilence) with ammaṉ (mother)."
+  },
+  {
+    "id": "tamil_ayyanar",
+    "name": {
+      "primary": "Ayyanar",
+      "alt": ["Aiyaṉār", "Ayyanar", "Sastha", "Karuppasamy (as guardian aspect)"],
+      "transliterations": { "tamil": "ஐயனார் (Aiyaṉār)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tamil",
+    "primaryTradition": "Tamil",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "village-boundary-guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "எல்லை", "script": "Tamil", "rom": "ellai" },
+        "sources": [{ "kind": "secondary", "reference": "Tamil village guardian-deity tradition" }]
+      },
+      {
+        "sphereId": "rain-and-harvest",
+        "contextTag": "lifelong",
+        "term": { "value": "மழை", "script": "Tamil", "rom": "maḻai" },
+        "sources": [{ "kind": "secondary", "reference": "Tamil folk worship of Ayyanar" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "patrol-village-bounds-by-night",
+        "name": "Patrol the village bounds by night on horseback",
+        "term": { "value": "காவல்", "script": "Tamil", "rom": "kāval" },
+        "inheritability": "none",
+        "notes": "Rides his white stallion to drive off evil spirits.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil Ayyanar guardian tradition" }]
+      },
+      {
+        "id": "protect-cattle-and-crops",
+        "name": "Protect villagers, cattle, and harvest from calamity",
+        "term": { "value": "ஊர்க்காவல்", "script": "Tamil", "rom": "ūr-kāval" },
+        "inheritability": "none",
+        "notes": "Bestows the monsoons and wards off disaster.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil folk worship of Ayyanar" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ayyanar-terracotta-horses",
+        "name": "Votive terracotta horses",
+        "term": { "value": "மண் குதிரை", "script": "Tamil", "rom": "maṇ kutirai" },
+        "notes": "Painted clay horses offered as steeds for his night-patrols, made by Velar potter-priests.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil Ayyanar temple votive tradition" }]
+      },
+      {
+        "id": "ayyanar-whip",
+        "name": "Whip and sword",
+        "term": { "value": "சாட்டை", "script": "Tamil", "rom": "cāṭṭai" },
+        "notes": "Carried by the horse-riding guardian image.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil Ayyanar iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Hero-stones of hunting chieftains, Arcot, Tamil Nadu (c. 3rd century CE)" },
+          { "kind": "secondary", "reference": "Tamil village guardian-deity tradition" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Pre-Vedic Tamil guardian deity whose shrines stand at village boundaries marking settlement from wilderness; he patrols his domain at night on a white stallion, protecting people, cattle and crops and bringing rain. Worshipped with votive terracotta horses; usually enshrined with 21 sub-deities."
+  },
+  {
+    "id": "tamil_korravai",
+    "name": {
+      "primary": "Korravai",
+      "alt": ["Koṟṟavai", "Kotravai", "Kaali (later)", "goddess of victory"],
+      "transliterations": { "tamil": "கொற்றவை (Koṟṟavai)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tamil",
+    "primaryTradition": "Tamil",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "war-and-victory",
+        "contextTag": "lifelong",
+        "term": { "value": "கொற்றம்", "script": "Tamil", "rom": "koṟṟam" },
+        "sources": [{ "kind": "primary", "reference": "Tolkāppiyam (Sangam grammar)" }]
+      },
+      {
+        "sphereId": "palai-arid-wasteland",
+        "contextTag": "lifelong",
+        "term": { "value": "பாலை", "script": "Tamil", "rom": "pālai" },
+        "sources": [{ "kind": "primary", "reference": "Tolkāppiyam, tiṇai classification" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant-victory-in-battle",
+        "name": "Grant victory in battle and cattle-raids",
+        "term": { "value": "கொற்றம்", "script": "Tamil", "rom": "koṟṟam" },
+        "inheritability": "none",
+        "notes": "Invoked by the Eyiṉar before raids and hunts.",
+        "sources": [{ "kind": "primary", "reference": "Akanāṉūṟu (Sangam anthology)" }]
+      },
+      {
+        "id": "receive-battlefield-offerings",
+        "name": "Receive blood and self-sacrifice of warrior-devotees",
+        "term": { "value": "பலி", "script": "Tamil", "rom": "pali" },
+        "inheritability": "none",
+        "notes": "Devotees offer their own heads in frenzy.",
+        "sources": [{ "kind": "primary", "reference": "Silappatikāram, Vēṭṭuva Vari (Korravai worship)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "korravai-stag-mount",
+        "name": "Stag / blackbuck mount",
+        "term": { "value": "கலைமான்", "script": "Tamil", "rom": "kalaimāṉ" },
+        "notes": "Her vehicle; also depicted riding a lion in later sculpture.",
+        "sources": [{ "kind": "secondary", "reference": "Tamil Korravai iconographic tradition" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Tolkāppiyam; Silappatikāram, Vēṭṭuva Vari" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Ancient Tamil goddess of war and victory, patroness of the arid pālai landscape and mother of Murugan; one of the earliest deities attested in Sangam literature, worshipped with blood sacrifice by semi-nomadic hunter communities. Later syncretized with Durga/Kali."
+  },
+  {
+    "id": "tamil_mayon",
+    "name": {
+      "primary": "Mayon",
+      "alt": ["Māyōṉ", "Māl", "Māyavaṉ", "Netiyōṉ", "the Dark One"],
+      "transliterations": { "tamil": "மாயோன் (Māyōṉ)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tamil",
+    "primaryTradition": "Tamil",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      {
+        "sphereId": "mullai-pastoral-land",
+        "contextTag": "lifelong",
+        "term": { "value": "முல்லை", "script": "Tamil", "rom": "mullai" },
+        "sources": [{ "kind": "primary", "reference": "Tolkāppiyam, tiṇai classification" }]
+      },
+      {
+        "sphereId": "supreme-reality",
+        "contextTag": "lifelong",
+        "term": { "value": "பரம்பொருள்", "script": "Tamil", "rom": "paramporuḷ" },
+        "sources": [{ "kind": "primary", "reference": "Paripāṭal (Sangam anthology)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "preside-over-pastoral-land",
+        "name": "Preside over the pastoral mullai country",
+        "term": { "value": "முல்லை", "script": "Tamil", "rom": "mullai" },
+        "inheritability": "none",
+        "notes": "Tutelary god of forest-pasture and cattle-herders.",
+        "sources": [{ "kind": "primary", "reference": "Tolkāppiyam (Sangam grammar)" }]
+      },
+      {
+        "id": "create-sustain-and-destroy",
+        "name": "Create, sustain, and dissolve the universe",
+        "term": { "value": "பரம்பொருள்", "script": "Tamil", "rom": "paramporuḷ" },
+        "inheritability": "none",
+        "notes": "Sole Sangam deity granted Paramporuḷ status.",
+        "sources": [{ "kind": "primary", "reference": "Paripāṭal (Sangam anthology)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Tolkāppiyam; Paripāṭal (Sangam corpus)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The 'dark god' of Sangam Tamil religion, tutelary deity of the pastoral mullai landscape and the most frequently named god of the Sangam corpus, accorded supreme (paramporuḷ) status in the Paripāṭal; later identified with Viṣṇu/Kṛṣṇa but Dravidian in conception."
+  }
+]
+```

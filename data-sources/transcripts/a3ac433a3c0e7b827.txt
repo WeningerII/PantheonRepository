@@ -1,0 +1,295 @@
+I now have verified syllabary forms (ᏎᎷ Selu, ᎧᎾᏘ Kanati, ᎤᎦᏖᎾ Uktena, ᎤᏁᎳᏅᎯ Unetlanvhi) and the Sun = Unelanuhi "the Apportioner." I have enough verified, primary-sourced material to author all 13 figures faithfully. I'll be conservative: use syllabary only where attested above, romanization elsewhere, and leave term values empty rather than invent.
+
+Here is my research-backed registry.
+
+## Research summary
+
+I authored 13 figures (8 Cherokee, 5 Wabanaki), all `origin: "canon"`, citing the requested ethnography (Mooney 1900; Leland 1884; Rand 1894). Key sourced findings:
+
+- **Twin/culture-hero tier** is populated as requested: the **Thunder Boys** (Anisga'ya Tsunsdi', "the Little Men") as `demigod`, `parentIds: ["cherokee_kanati","cherokee_selu"]`; **Gluskap** as `demigod`/scion made from dust by the creator **Tabaldak**; and his wolf-twin **Malsum** (Leland: "Malsumsis," Wolf the younger).
+- **Genuine overlap noted factually**: Mooney records the Sun as **Une'lanu'hi "the Apportioner"** (the female Sun of "The Daughter of the Sun"), while the abstract Creator is rendered **Unetlanvhi**. I represented both as the task listed and flagged the shared epithet in notes rather than inventing a distinction.
+- **Faculties (powers, verb phrases)** are kept distinct from **domains**; `materialCulture` used only where attested (Ulunsuti crystal; Glooskap's belt/canoe; Selu's corn-storehouse). Native `term.value` left `""` where no word is recorded — never invented.
+- Cherokee syllabary used only where verified (ᏎᎷ, ᎧᎾᏘ, ᎤᎦᏖᎾ, ᎤᏁᎳᏅᎯ, ᎠᏂᏌᎦᏯ ᏧᏍᏗ); romanization elsewhere. Living traditions handled respectfully (`vitalStatus: "living"`, factual notes).
+
+```json
+[
+  {
+    "id": "cherokee_unetlanvhi",
+    "name": { "primary": "Unetlanvhi", "alt": ["the Apportioner", "the Provider", "Great Spirit", "Ouga", "Ugv"], "transliterations": { "cherokee": "ᎤᏁᎳᏅᎯ Unethlanv\u02bchi" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "unknown", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "ᎤᏁᎳᏅᎯ", "script": "Cherokee syllabary", "rom": "Unethlanv\u02bchi" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ] },
+      { "sphereId": "the-cosmos", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ] }
+    ],
+    "faculties": [
+      { "id": "fashion-the-world", "name": "Fashion and apportion the earth and its order", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Abstract maker, rarely personified", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]},
+      { "id": "uphold-cosmic-balance", "name": "Maintain balance between the worlds above and below", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [ { "kind": "secondary", "reference": "Mooney (1900), 'Cosmogonic Myths'" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "Cherokee supreme being and 'apportioner', an impersonal creating spirit not given human form; the epithet 'apportioner' (Une'lanu'hi) is also applied to the Sun."
+  },
+  {
+    "id": "cherokee_unelanuhi",
+    "name": { "primary": "Unelanuhi", "alt": ["the Sun", "the Apportioner", "Daughter of the Sun's mother"], "transliterations": { "cherokee": "ᎤᏁᎳᏅᎯ Une\u02bclanu\u02bchi" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "Une\u02bclanu\u02bchi" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), 'The Daughter of the Sun'" } ] },
+      { "sphereId": "the-sky", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ] }
+    ],
+    "faculties": [
+      { "id": "scorch-with-heat", "name": "Scorch people with deadly midday heat and fever", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "From 'The Daughter of the Sun'", "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'The Daughter of the Sun'" } ]},
+      { "id": "traverse-sky-vault", "name": "Cross the sky vault daily from east to west", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Dines at her daughter's house at noon", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "The Sun, a female being in Cherokee myth, called Une'lanu'hi 'the apportioner'; in 'The Daughter of the Sun' she hates humans for squinting at her and kills them with heat, until her own daughter dies."
+  },
+  {
+    "id": "cherokee_kanati",
+    "name": { "primary": "Kanati", "alt": ["the Lucky Hunter", "the Great Hunter"], "transliterations": { "cherokee": "ᎧᎾᏘ Kana\u02bct\u00ef" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "ᎧᎾᏘ", "script": "Cherokee syllabary", "rom": "Kana\u02bct\u00ef" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), 'Kana\u02bcti and Selu'" } ] },
+      { "sphereId": "wild-game", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ] }
+    ],
+    "faculties": [
+      { "id": "release-game", "name": "Release game animals from his sealed mountain cave", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Sons open the cave and loose the game", "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'Kana\u02bcti and Selu'" } ]},
+      { "id": "never-fail-hunt", "name": "Always return from the woods laden with game", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "Cherokee 'Lucky Hunter', first man, husband of Selu and keeper of the game animals in a sealed cave."
+  },
+  {
+    "id": "cherokee_selu",
+    "name": { "primary": "Selu", "alt": ["Corn Mother", "Corn", "First Woman"], "transliterations": { "cherokee": "ᏎᎷ Selu" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "female", "vitalStatus": "deceased",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "ᏎᎷ", "script": "Cherokee syllabary", "rom": "Selu" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), 'Kana\u02bcti and Selu'" } ] },
+      { "sphereId": "maize-corn", "contextTag": "lifelong", "term": { "value": "ᏎᎷ", "script": "Cherokee syllabary", "rom": "Selu" }, "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ] }
+    ],
+    "faculties": [
+      { "id": "produce-corn-from-body", "name": "Bring forth corn and beans from her own body", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Rubs her body to fill the basket", "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'Kana\u02bcti and Selu'" } ]},
+      { "id": "give-corn-through-death", "name": "Cause corn to spring where her blood touches the cleared ground", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Instructs sons to drag her body", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]}
+    ],
+    "materialCulture": [
+      { "id": "selu-storehouse", "name": "The corn-and-bean storehouse", "term": { "value": "", "script": "Cherokee", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'Kana\u02bcti and Selu'" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "Cherokee Corn Mother and first woman, wife of Kanati; slain by her sons, her death and dragged body give the people cultivated corn."
+  },
+  {
+    "id": "cherokee_thunder_boys",
+    "name": { "primary": "the Thunder Boys", "alt": ["the Little Men", "Anisga\u02bcya Tsunsdi\u02bc", "the Wild Boy and his brother", "Inage Utasunhi"], "transliterations": { "cherokee": "ᎠᏂᏌᎦᏯ ᏧᏍᏗ Anisga\u02bcya Tsunsdi\u02bc" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["cherokee_kanati", "cherokee_selu"], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "ᎠᏂᏌᎦᏯ ᏧᏍᏗ", "script": "Cherokee syllabary", "rom": "Anisga\u02bcya Tsunsdi\u02bc" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), 'Kana\u02bcti and Selu'" } ] }
+    ],
+    "faculties": [
+      { "id": "speak-as-thunder", "name": "Speak to one another as the low rolling thunder of the west", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Live at the edge of the world", "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'Kana\u02bcti and Selu'" } ]},
+      { "id": "magic-mischief", "name": "Work wonder-tales and mischief beyond ordinary men", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Wild Boy born from washed game-blood", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "Twin sons of Kanati and Selu; the Wild Boy (sprung from washed game-blood) and his brother. Their meddling releases the game and brings on Selu's death; they become the Anisga\u02bcya Tsunsdi\u02bc, 'Little Men', whose voices are thunder in the west."
+  },
+  {
+    "id": "cherokee_asgaya_gigagei",
+    "name": { "primary": "Asgaya Gigagei", "alt": ["the Red Man", "the Red Woman", "the Thunderer"], "transliterations": { "cherokee": "ᎠᏍᎦᏯ ᎩᎦᎨᎢ Asgaya Gigagei" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "varies", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "thunder", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "Asgaya Gigagei" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ] },
+      { "sphereId": "lightning", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Mooney, The Sacred Formulas of the Cherokees (1891)" } ] }
+    ],
+    "faculties": [
+      { "id": "summon-lightning", "name": "Strike with thunder and the red flash of lightning", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Clad in the red of lightning", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]},
+      { "id": "answer-conjurers", "name": "Answer conjurers' formulas to draw out disease", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Invoked as Red Man or Red Woman by patient's sex", "sources": [ { "kind": "primary", "reference": "Mooney, The Sacred Formulas of the Cherokees (1891)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" }, { "kind": "primary", "reference": "Mooney, The Sacred Formulas of the Cherokees (1891)" } ], "weight": "primary" }
+    ],
+    "notes": "The 'Red Man', Cherokee thunder-and-lightning spirit invoked in healing formulas; addressed as Red Man or Red Woman depending on the patient's sex. Red is the color of the east, of life and power."
+  },
+  {
+    "id": "cherokee_uktena",
+    "name": { "primary": "Uktena", "alt": ["the Horned Serpent", "Keen-eyed"], "transliterations": { "cherokee": "ᎤᎦᏖᎾ Uktena" } },
+    "type": "monster", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "unknown", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "monsters", "contextTag": "lifelong", "term": { "value": "ᎤᎦᏖᎾ", "script": "Cherokee syllabary", "rom": "Uktena" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), 'The Uktena and the Ulun\u02bcsu\u02bcti'" } ] }
+    ],
+    "faculties": [
+      { "id": "deadly-blazing-crest", "name": "Daze and draw prey toward the blazing crest on its brow", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Look at its crest and it draws you in", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]},
+      { "id": "near-invulnerability", "name": "Be wounded only by a shot to the seventh spot from the head", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Heart and life lie beneath that spot", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]}
+    ],
+    "materialCulture": [
+      { "id": "ulunsuti", "name": "The Ulun'suti, the great blazing diamond on its forehead", "term": { "value": "", "script": "Cherokee", "rom": "Ulun\u02bcsu\u02bcti" }, "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'The Uktena and the Ulun\u02bcsu\u02bcti'" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "Great horned serpent thick as a tree-trunk, scales blazing like fire, a diamond crest on its brow; said to have been a man transformed in a failed attempt to kill the Sun. The conjurer Aganunitsi slew one and won the Ulun'suti divining-crystal."
+  },
+  {
+    "id": "cherokee_nunnehi",
+    "name": { "primary": "the N\u00fb\u00f1nehi", "alt": ["the Immortals", "the People Who Live Anywhere", "the Travellers"], "transliterations": { "cherokee": "ᏄᏁᎯ N\u00fb\u00f1n\u00eb\u02bch\u00ef" } },
+    "type": "spirit", "origin": "canon",
+    "tradition": "Cherokee", "primaryTradition": "Cherokee",
+    "sex": "varies", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "spirit-folk", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "N\u00fb\u00f1n\u00eb\u02bch\u00ef" }, "sources": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900), 'The N\u00fb\u00f1n\u00eb\u02bch\u00ef and Other Spirit Folk'" } ] },
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "", "script": "Cherokee", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ] }
+    ],
+    "faculties": [
+      { "id": "become-invisible", "name": "Stay invisible until they choose to be seen", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Then appear and speak as ordinary people", "sources": [ { "kind": "primary", "reference": "Mooney (1900)" } ]},
+      { "id": "guide-and-defend", "name": "Shelter lost wanderers and fight unseen for the Cherokee", "term": { "value": "", "script": "Cherokee", "rom": "" }, "inheritability": "none", "notes": "Defended Nikwasi mound in battle", "sources": [ { "kind": "primary", "reference": "Mooney (1900), 'The N\u00fb\u00f1n\u00eb\u02bch\u00ef and Other Spirit Folk'" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Mooney, Myths of the Cherokee (1900)" } ], "weight": "primary" }
+    ],
+    "notes": "Immortal spirit-people of the Cherokee highlands ('people who live anywhere'), dwelling in townhouses under the bald mountains and mounds such as Nikwasi; fond of music and dance, they guide lost travellers and have come to the Cherokee's aid in war."
+  },
+  {
+    "id": "wabanaki_tabaldak",
+    "name": { "primary": "Tabaldak", "alt": ["Gici Niwaskw", "the Owner", "the Great Spirit", "Dabaldak", "Niwaskowogan"], "transliterations": { "abenaki": "Tabaldak; Gici Niwaskw" } },
+    "type": "deity", "origin": "canon",
+    "tradition": "Wabanaki", "primaryTradition": "Wabanaki",
+    "sex": "unknown", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "Abenaki", "rom": "Tabaldak" }, "sources": [ { "kind": "secondary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ] },
+      { "sphereId": "the-cosmos", "contextTag": "lifelong", "term": { "value": "", "script": "Abenaki", "rom": "Gici Niwaskw" }, "sources": [ { "kind": "secondary", "reference": "Leland (1884)" } ] }
+    ],
+    "faculties": [
+      { "id": "create-humans", "name": "Create the first humans from the earth", "term": { "value": "", "script": "Abenaki", "rom": "" }, "inheritability": "none", "notes": "Abenaki creator, the 'Owner'", "sources": [ { "kind": "secondary", "reference": "Speck / Abenaki tradition; cf. Leland (1884)" } ]},
+      { "id": "bring-forth-gluskap", "name": "Bring forth Gluskap from the dust of his hand", "term": { "value": "", "script": "Abenaki", "rom": "" }, "inheritability": "none", "notes": "Gives Gluskap power to shape a good world", "sources": [ { "kind": "secondary", "reference": "Abenaki tradition; cf. Leland (1884)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ], "weight": "secondary" }
+    ],
+    "notes": "Abenaki/Wabanaki supreme creator, 'the Owner' (Gici Niwaskw, the Great Spirit), an impersonal androgynous maker. After fashioning humans, the dust of his body becomes Gluskap; he grants Gluskap the power to make a good world."
+  },
+  {
+    "id": "wabanaki_gluskap",
+    "name": { "primary": "Gluskap", "alt": ["Glooskap", "Glooscap", "Kluskap", "Gluskabe", "Klooskomba", "the Liar", "the Master"], "transliterations": { "micmac": "Kluskap", "passamaquoddy": "Glooskap" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Wabanaki", "primaryTradition": "Wabanaki",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["wabanaki_tabaldak"], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "culture-hero", "contextTag": "lifelong", "term": { "value": "", "script": "Micmac", "rom": "Kluskap" }, "sources": [ { "kind": "primary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ] },
+      { "sphereId": "transformation", "contextTag": "lifelong", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Rand, Legends of the Micmacs (1894)" } ] }
+    ],
+    "faculties": [
+      { "id": "slay-malsum", "name": "Slay his wolf-brother Malsum with a fern-root", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "inheritability": "none", "notes": "His own secret weakness was an owl's feather / rush", "sources": [ { "kind": "primary", "reference": "Leland (1884), 'Of Glooskap's Birth'" } ]},
+      { "id": "shape-the-land", "name": "Shape the land, raising mountains and islands by his deeds", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "inheritability": "none", "notes": "Made islands of Fundy as a giant beaver", "sources": [ { "kind": "primary", "reference": "Leland (1884)" } ]},
+      { "id": "release-the-waters", "name": "Free the world's waters by killing the giant frog Aglebemu", "term": { "value": "", "script": "Wabanaki", "rom": "Aglebemu" }, "inheritability": "none", "notes": "≤14 words", "sources": [ { "kind": "primary", "reference": "Leland (1884), 'How Glooskap conquered the Great Bull-Frog'" } ]},
+      { "id": "tame-monsters", "name": "Subdue giants, sorcerers, and monstrous beasts of the first age", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "inheritability": "none", "notes": "Shrinks monstrous animals to present size", "sources": [ { "kind": "primary", "reference": "Rand, Legends of the Micmacs (1894)" } ]}
+    ],
+    "materialCulture": [
+      { "id": "gluskap-canoe", "name": "His great stone canoe, in which he departs to the world's edge", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Leland (1884)" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Leland, The Algonquin Legends of New England (1884)" }, { "kind": "primary", "reference": "Rand, Legends of the Micmacs (1894)" } ], "weight": "primary" }
+    ],
+    "notes": "Great Wabanaki culture-hero and transformer, made by the creator Tabaldak from the dust of his hand; shapes the land, slays his evil wolf-twin Malsum, releases the waters, tames monsters, and at last leaves the people by canoe, promising to return. Recorded first by Rand among the Mi'kmaq and by Leland among the Wabanaki."
+  },
+  {
+    "id": "wabanaki_malsum",
+    "name": { "primary": "Malsum", "alt": ["Malsumis", "Malsumsis", "the Wolf", "Wolf the Younger"], "transliterations": { "wabanaki": "Malsum; Malsumsis" } },
+    "type": "demigod", "origin": "canon",
+    "tradition": "Wabanaki", "primaryTradition": "Wabanaki",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": ["wabanaki_tabaldak"], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "wolves", "contextTag": "lifelong", "term": { "value": "", "script": "Wabanaki", "rom": "Malsum" }, "sources": [ { "kind": "primary", "reference": "Leland, The Algonquin Legends of New England (1884), 'Of Glooskap's Birth, and of his Brother Malsum the Wolf'" } ] },
+      { "sphereId": "evil-and-discord", "contextTag": "lifelong", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "sources": [ { "kind": "primary", "reference": "Leland (1884)" } ] }
+    ],
+    "faculties": [
+      { "id": "burst-from-mother", "name": "Burst into the world through his mother's side", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "inheritability": "none", "notes": "Too proud to be born as others are", "sources": [ { "kind": "primary", "reference": "Leland (1884), 'Of Glooskap's Birth'" } ]},
+      { "id": "plot-against-glooskap", "name": "Scheme to kill his brother by learning his secret weakness", "term": { "value": "", "script": "Wabanaki", "rom": "" }, "inheritability": "none", "notes": "Slain in turn by a blow of fern-root", "sources": [ { "kind": "primary", "reference": "Leland (1884)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ], "weight": "primary" }
+    ],
+    "notes": "Gluskap's evil wolf-twin (Leland: 'Malsumsis, Wolf the younger'), born by bursting from their mother. He schemes to destroy his brother; learning Gluskap's weakness, he is himself slain with a fern-root."
+  },
+  {
+    "id": "wabanaki_pamola",
+    "name": { "primary": "Pamola", "alt": ["Pomola", "Bmola", "the Storm Bird", "Spirit of Katahdin"], "transliterations": { "penobscot": "Pamola; Bmola" } },
+    "type": "spirit", "origin": "canon",
+    "tradition": "Wabanaki", "primaryTradition": "Wabanaki",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "storms", "contextTag": "lifelong", "term": { "value": "", "script": "Penobscot", "rom": "Pamola" }, "sources": [ { "kind": "secondary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ] },
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "", "script": "Penobscot", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Leland (1884)" } ] }
+    ],
+    "faculties": [
+      { "id": "raise-storms", "name": "Raise wind, snow, and cold storms over Mount Katahdin", "term": { "value": "", "script": "Penobscot", "rom": "" }, "inheritability": "none", "notes": "Storm-bird of the great mountain", "sources": [ { "kind": "secondary", "reference": "Leland (1884)" } ]},
+      { "id": "guard-the-summit", "name": "Carry off and forbid those who climb the sacred peak", "term": { "value": "", "script": "Penobscot", "rom": "" }, "inheritability": "none", "notes": "Climbing Katahdin held taboo", "sources": [ { "kind": "secondary", "reference": "Penobscot tradition; cf. Leland (1884)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ], "weight": "secondary" }
+    ],
+    "notes": "Penobscot storm-spirit of Mount Katahdin, described with the head of a moose, the body of a man, and the wings and talons of an eagle. He brews storms and seizes those who venture onto the sacred summit; climbing the peak was therefore taboo."
+  },
+  {
+    "id": "wabanaki_mateguas",
+    "name": { "primary": "Mateguas", "alt": ["the Rabbit", "Matiguas", "Matgwas"], "transliterations": { "abenaki": "Mateguas" } },
+    "type": "spirit", "origin": "canon",
+    "tradition": "Wabanaki", "primaryTradition": "Wabanaki",
+    "sex": "male", "vitalStatus": "deceased",
+    "parentIds": [], "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-dead", "contextTag": "lifelong", "term": { "value": "", "script": "Abenaki", "rom": "Mateguas" }, "sources": [ { "kind": "secondary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ] }
+    ],
+    "faculties": [
+      { "id": "rule-land-of-dead", "name": "Rule the land of the dead after his own death", "term": { "value": "", "script": "Abenaki", "rom": "" }, "inheritability": "none", "notes": "Abenaki tradition, Gluskap's brother", "sources": [ { "kind": "secondary", "reference": "Abenaki tradition; cf. Leland (1884)" } ]},
+      { "id": "counsel-from-beyond", "name": "Send wisdom and rites to his brother from beyond the grave", "term": { "value": "", "script": "Abenaki", "rom": "" }, "inheritability": "none", "notes": "Teaches purification and vision rites", "sources": [ { "kind": "secondary", "reference": "Abenaki tradition; cf. Leland (1884)" } ]}
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "secondary", "reference": "Leland, The Algonquin Legends of New England (1884)" } ], "weight": "secondary" }
+    ],
+    "notes": "Rabbit, brother of Gluskap in Abenaki tradition; a grave figure (not the trickster of other tribes). After his death he becomes ruler of the land of the dead and, from beyond the grave, gives his grieving brother spiritual guidance and ceremonies."
+  }
+]
+```

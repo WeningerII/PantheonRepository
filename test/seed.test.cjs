@@ -33,19 +33,21 @@ function loadSeed() {
   return {
     ctx,
     logs,
-    people: JSON.parse(ctx.localStorage.getItem('pantheon_registry_v8')),
+    people: JSON.parse(ctx.localStorage.getItem('pantheon_registry_v9')),
     atlas: JSON.parse(ctx.localStorage.getItem('pantheon_atlas_v2')),
   };
 }
 
 const { ctx, logs, people, atlas } = loadSeed();
 
-test('seeds 602 figures', () => {
-  assert.strictEqual(Object.keys(people).length, 602);
+test('seeds the full figure corpus (growing)', () => {
+  // The corpus is deliberately expanding as missing central figures are added;
+  // assert a floor rather than an exact count.
+  assert.ok(Object.keys(people).length >= 1850, `expected >= 1850 figures, got ${Object.keys(people).length}`);
 });
 
-test('seeds 56 atlas territories', () => {
-  assert.strictEqual(Object.keys(atlas).length, 56);
+test('seeds 170 atlas territories', () => {
+  assert.strictEqual(Object.keys(atlas).length, 170);
 });
 
 test('exposes the constants the UI reads on window.__PR', () => {
@@ -57,19 +59,42 @@ test('exposes the constants the UI reads on window.__PR', () => {
   assert.strictEqual(typeof pr.getEntryDates, 'function');
 });
 
-test('every figure has a string id and a valid type', () => {
+test('every figure has a string id (matching its map key) and a valid type', () => {
   const VALID = new Set(['deity', 'demigod', 'quartigod', 'scion', 'mortal']);
   for (const [key, p] of Object.entries(people)) {
     assert.strictEqual(typeof p.id, 'string', `figure ${key} has a non-string id`);
-    if (p.type !== undefined) {
-      assert.ok(VALID.has(p.type), `figure ${key} has invalid type "${p.type}"`);
-    }
+    assert.strictEqual(p.id, key, `figure keyed ${key} carries id ${p.id}`);
+    // Presence, not just validity: a regression that drops the type field
+    // from every figure must not pass as "all types valid".
+    assert.ok(VALID.has(p.type), `figure ${key} has missing/invalid type "${p.type}"`);
   }
 });
 
 test('migrate reports no hard-schema (Layer 1) violations', () => {
   const hard = logs.error.filter((m) => /Layer 1/.test(m));
   assert.deepStrictEqual(hard, [], `hard-schema errors:\n${hard.join('\n')}`);
+});
+
+test('warn-level integrity drift stays at its accepted ceilings', () => {
+  const all = logs.warn.join('\n');
+  const num = (re) => { const m = all.match(re); return m ? parseInt(m[1], 10) : 0; };
+  // Ceilings pin the KNOWN drift so it can only shrink deliberately — these
+  // counts could previously grow 100x without any test moving. Wanema/Alalu
+  // and the four ITEMS_GEN figures are authored now, so those two ceilings
+  // are hard zeros; the era-gap ceiling ratchets to 0 with the wave-6
+  // tradition-constants backfill.
+  const danglingCeiling = 0;
+  const unknownItemCeiling = 0;
+  const eraGapCeiling = 336;   // era values in the 68 traditions still awaiting wave-6b constants
+  assert.ok(num(/(\d+) dangling references/) <= danglingCeiling,
+    `dangling references grew past ${danglingCeiling}:\n${all.split('\n').filter((l) => /dangling/.test(l)).join('\n')}`);
+  const unknownItems = (all.match(/generated item for unknown figure/g) || []).length;
+  assert.ok(unknownItems <= unknownItemCeiling,
+    `ITEMS_GEN keys without an authored figure grew to ${unknownItems}`);
+  assert.ok(num(/(\d+) era values unresolvable/) <= eraGapCeiling,
+    'era values fell out of ERA_ORDER coverage (dates/sort silently degraded)');
+  const drift = num(/Tier-classification drift in (\d+) entries/);
+  assert.ok(drift <= 30, `tier-classification drift grew to ${drift} entries (accepted ceiling 30)`);
 });
 
 test('getEntryDates resolves a known entry to the documented shape', () => {
@@ -140,7 +165,7 @@ test('seeds the cited Thor figure with Mjǫllnir in his material culture', () =>
 test('exposes the item registry on window.__PR.items', () => {
   const items = ctx.window.__PR.items;
   assert.ok(items && typeof items === 'object', '__PR.items not exposed');
-  assert.ok(Object.keys(items).length > 30, `expected the full object corpus, got ${Object.keys(items).length}`);
+  assert.ok(Object.keys(items).length >= 1240, `expected the full object corpus, got ${Object.keys(items).length}`);
   // Every materialCulture object becomes an item with at least one holder.
   for (const it of Object.values(items)) {
     assert.strictEqual(typeof it.id, 'string', 'item missing id');
@@ -163,7 +188,7 @@ test('Mjǫllnir carries its multi-script names (incl. the runic form) and maker'
 test('every item in the registry carries cited lore and resolvable custody', () => {
   const items = ctx.window.__PR.items;
   const ids = Object.keys(items);
-  assert.ok(ids.length >= 78, `expected the full object corpus, got ${ids.length}`);
+  assert.ok(ids.length >= 1240, `expected the full object corpus, got ${ids.length}`);
   for (const it of Object.values(items)) {
     assert.ok(it.lore && it.lore.length > 20, `item ${it.id} is missing authored lore`);
     assert.ok(it.names.length >= 1 && it.names[0].value, `item ${it.id} is missing a name`);

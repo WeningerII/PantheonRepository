@@ -1,0 +1,44 @@
+All facts are now grounded. I have everything I need. Let me compile the output.
+
+Summary of verified attestations:
+- **Odin**: seiðr (Ynglinga saga ch. 6–7), shapeshifting/hamskipti (Ynglinga saga ch. 7 — body lies as dead, travels as bird/beast/fish/dragon), runic magic (Hávamál Rúnatal), galdr/spell-songs raising the dead (Hávamál Ljóðatal, e.g. st. 157 — speaking with hanged dead), waking/speaking to the dead via Mímir's head (Ynglinga saga / Sigrdrífumál). Items missing from {gungnir, draupnir}: Sleipnir (Gylfaginning 42, 49), Huginn & Muninn (Gylfaginning 38; Grímnismál 20), Geri & Freki (Gylfaginning 38; Grímnismál 19), Mímir's head (Ynglinga saga 4). Heritability: learned magic → none.
+- **Thor**: superhuman strength (innate; son Magni inherits it, Skáldskaparmál 17 → partial), summon thunder/lightning by hurling Mjölnir (Gylfaginning 21; chariot sparks), hallow/resurrect goats with Mjölnir (Gylfaginning 44). Items missing from {mjolnir, megingjord, jarngreipr}: the goats Tanngrisnir & Tanngnjóstr and his chariot (Gylfaginning 21).
+- **Njörðr**: control the wind, calm sea and fire (Gylfaginning 23), grant wealth in land/valuables (Gylfaginning 23). No attested signature item.
+- **Freyr**: command rain & sunshine / bring fruitful seasons & peace (ár ok friðr) (Gylfaginning 24). Item missing from {skidbladnir, sword, gullinbursti}: horse Blóðughófi (Kálfsvísa in Skáldskaparmál; Skírnismál).
+- **Sigi**: no attested exercisable powers or wielded signature items.
+
+=== norse_odin (Odin)
+norse_odin :: POWER work-seidr-sorcery | name=Work seiðr sorcery | term=seiðr | script=Old Norse | rom=seiðr | gloss=practices Vanir sorcery foretelling/manipulating fate, harming foes | inherit=none | src=Ynglinga saga ch. 6–7
+norse_odin :: POWER shapeshift-into-beasts | name=Shapeshift into beasts | term=hamskipti | script=Old Norse | rom=skipta hǫmum | gloss=body lies as dead; spirit travels as beast/fish/bird | inherit=none | src=Ynglinga saga ch. 7
+norse_odin :: POWER work-runic-magic | name=Work runic magic | term=rúnar | script=Old Norse | rom=rúnar | gloss=won runes hanging on Yggdrasill; carves them for power | inherit=none | src=Hávamál (Rúnatal) st. 138–145
+norse_odin :: POWER chant-spell-songs | name=Chant spell-songs (galdr) | term=galdr | script=Old Norse | rom=ljóð/galdr | gloss=knows eighteen songs: blunt blades, quench fire, heal | inherit=none | src=Hávamál (Ljóðatal) st. 146–163
+norse_odin :: POWER speak-with-the-hanged-dead | name=Raise and question the dead | term=vekja drauga | script=Old Norse | rom=vekja upp dauða | gloss=carves runes to make hanged corpses speak with him | inherit=none | src=Hávamál st. 157; Baldrs draumar
+norse_odin :: ITEM sleipnir | name=Sleipnir | term=Sleipnir | script=Old Norse | rom=Sleipnir | kind=vehicle (steed) | role=owner | gloss=eight-legged horse ridden over sky and to Hel | src=Gylfaginning 42, 49
+norse_odin :: ITEM huginn-ok-muninn | name=Huginn and Muninn | term=Huginn ok Muninn | script=Old Norse | rom=Huginn ok Muninn | kind=artifact (ravens) | role=owner | gloss=ravens fly the world daily, report all news | src=Gylfaginning 38; Grímnismál 20
+norse_odin :: ITEM geri-ok-freki | name=Geri and Freki | term=Geri ok Freki | script=Old Norse | rom=Geri ok Freki | kind=artifact (wolves) | role=owner | gloss=two wolves he feeds at his table in Valhǫll | src=Gylfaginning 38; Grímnismál 19
+norse_odin :: ITEM mimirs-head | name=Mímir's head | term=Míms hǫfuð | script=Old Norse | rom=Míms hǫfuð | kind=artifact (oracular relic) | role=owner | gloss=embalmed head he charms to reveal hidden things | src=Ynglinga saga ch. 4, 7
+
+=== norse_thor (Thor)
+norse_thor :: POWER exert-superhuman-strength | name=Exert superhuman strength | term=afl | script=Old Norse | rom=ǫflugr/megin | gloss=mightiest of gods; strength doubled by his belt | inherit=partial | src=Gylfaginning 21; Skáldskaparmál 17 (son Magni)
+norse_thor :: POWER summon-thunder-lightning | name=Summon thunder and lightning | term=reið/þruma | script=Old Norse | rom=reið | gloss=hurls Mjǫllnir; chariot strikes sparks and thunder | inherit=none | src=Gylfaginning 21
+norse_thor :: POWER hallow-and-resurrect | name=Hallow and resurrect with hammer | term=vígja | script=Old Norse | rom=vígja | gloss=blesses slain goats' skins with Mjǫllnir, restoring them living | inherit=none | src=Gylfaginning 44
+norse_thor :: ITEM tanngrisnir-ok-tanngnjostr | name=Tanngrisnir and Tanngnjóstr | term=Tanngrisnir ok Tanngnjóstr | script=Old Norse | rom=Tanngrisnir ok Tanngnjóstr | kind=artifact (goats) | role=owner | gloss=two goats draw his chariot; eaten then revived nightly | src=Gylfaginning 21, 44
+norse_thor :: ITEM thor-chariot | name=Thor's chariot | term=reið | script=Old Norse | rom=reið | kind=vehicle | role=owner | gloss=goat-drawn cart whose passage thunders across the sky | src=Gylfaginning 21
+
+=== norse_njord (Njǫrðr)
+norse_njord :: POWER command-the-wind | name=Command the wind | term=stýra vindi | script=Old Norse | rom=stýra gangi vinds | gloss=rules the wind's motion; invoked by seafarers and fishers | inherit=none | src=Gylfaginning 23
+norse_njord :: POWER calm-sea-and-fire | name=Calm sea and fire | term=stilla sjá ok eld | script=Old Norse | rom=stilla sjá ok eld | gloss=stills the sea and quenches fire at will | inherit=none | src=Gylfaginning 23
+norse_njord :: POWER grant-wealth | name=Grant wealth | term=gefa auð | script=Old Norse | rom=gefa auð landa ok lausafjár | gloss=bestows wealth in land and goods on petitioners | inherit=none | src=Gylfaginning 23
+
+=== norse_freyr (Freyr)
+norse_freyr :: POWER command-rain-and-sunshine | name=Command rain and sunshine | term=ráða regni ok sólskini | script=Old Norse | rom=ráða fyrir regni ok skini sólar | gloss=rules rain and sun, hence the earth's increase | inherit=none | src=Gylfaginning 24
+norse_freyr :: POWER grant-good-seasons-and-peace | name=Grant fruitful seasons and peace | term=ár ok friðr | script=Old Norse | rom=ár ok friðr | gloss=invoked to give bountiful harvests, peace and prosperity | inherit=none | src=Gylfaginning 24
+norse_freyr :: ITEM blodughofi | name=Blóðughófi | term=Blóðughófi | script=Old Norse | rom=Blóðughófi | kind=vehicle (steed) | role=owner | gloss=his horse; bears Skírnir through flame-wall to Gerðr | src=Kálfsvísa (Skáldskaparmál); Skírnismál
+
+Notes:
+- **Roster has 5 figures only.** Loki and Freyja are NOT present as ids in the Norse array, so per the instructions ("use the ids in the roster") I did not fabricate ids for them.
+- **norse_sigi** (Sigi): no entries — he is a euhemerized founder of the Vǫlsung line with no attested exercisable powers and no signature wielded item in the sources; nothing to add.
+- **Domains excluded as powers** as instructed (e.g. Odin's "kingship-of-Æsir," Freyr's "kingship-Yngling," Thor's "protection-of-Midgard," Njörðr's bare "wealth" domain) — only converted to powers where an attested *exercisable* act exists.
+- **Items already present were skipped**: Odin {gungnir, draupnir}; Thor {mjolnir, megingjord, jarngreipr}; Freyr {skidbladnir, sword, gullinbursti}. Njörðr has no attested signature artifact (Nóatún is a dwelling, not an item).
+- **Heritability**: only Thor's bodily strength is marked partial — directly attested via his three-night-old son Magni lifting Hrungnir's leg (Skáldskaparmál 17). All other powers are learned magic or divine office → none.
+- Old Norse glosses use the Gylfaginning/Hávamál phrasing where possible (e.g. Freyr's "ár ok friðr," Njörðr's "auð landa ok lausafjár").

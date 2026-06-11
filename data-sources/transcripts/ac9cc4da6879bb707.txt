@@ -1,0 +1,91 @@
+Both confirmed with primary text:
+
+- **Xiwangmu** (Shanhaijing 山海經, Xishanjing 西山經): "西王母其狀如人，豹尾虎齒而善嘯，蓬髮戴勝，是司天之厲及五殘" — human form with leopard tail (豹尾) and tiger teeth (虎齒), skilled at whistling/howling (善嘯), dishevelled hair wearing a sheng headdress (蓬髮戴勝), and **presides over/controls (司) the calamities of heaven (天之厲) and the five destructive forces/punishments (五殘)**. Sheng (勝/戴勝) is her item. The three blue birds (三青鳥) bringing her food appear elsewhere in Shanhaijing (Hainei Beijing/Dahuang Xijing). Elixir of immortality from her is attested in Huainanzi (Yi obtained 不死之藥 from Xiwangmu).
+
+- **Diku** (Shiji 史記·五帝本紀): "高辛生而神靈，自言其名" — born numinous/divine and named himself at birth. Plus Da Dai Liji: rode a dragon (乘龍) seasonally. 
+
+I now have complete, verified data. Let me compile the final records. 
+
+Final SKIP list (no genuine attested powers/items in scope): Yang Tianyou (modern TV character), Liu Yanchang (mortal husband, no powers, late folk source), Leizu (cultural-hero invention overlaps domain, weak canonical sourcing), Changyi (pure genealogy), Yao (administrative acts = domains, no personal supernatural power), Tomi-ya-bime (genealogical), Iku-tama-yori-bime (passive participant), Yoshichika/Yoshikuni/Yoshitada (historical, no supernatural), Yoshitomo (historical; transient sword-holder but roster flags no items), Yoshinaka (historical general).
+
+Wait — let me reconsider **Yoshiie** once more. He's flagged `hasItems: true`. The swords passed "to Yoriyoshi and Yoshiie" then to his son Tameyoshi who renamed them. So Yoshiie WAS a possessor of both swords. The roster expects items for him. I'll record the two swords for Yoshiie (owner/wielder). His "Hachimantarō" divine-favor and geese feats are apocryphal/non-supernatural, so no powers — but the items are attested. Good.
+
+Now let me write the final output. Native term scripts: Japanese = kanji/kana (rōmaji); Chinese = hanzi (pinyin); Korean = hangul/hanja (RR).
+
+Let me compile carefully with correct ids from the roster.
+
+```
+- japanese_hachiman (deity) — POWERS + ITEM (bow/arrow)
+- japanese_yoshiie — ITEMS (Higekiri, Hizamaru)
+- chinese_sanshengmu — ITEM (lotus lantern)
+- chinese_jade_emperor — POWER (commands heaven)
+- chinese_xiwangmu — POWERS + ITEM (sheng)
+- chinese_zhuanxu — POWER (sever heaven-earth)
+- chinese_diku — POWERS (riding dragon, born numinous self-named)
+- chinese_shun — POWERS (granary escape, well escape)
+- korean_hwanin — POWER (grant descent) + ITEM (cheonbu-in)
+- korean_ungnyeo — POWER (transformed via trial)
+- japanese_tameyoshi — ITEMS (the two swords)
+- japanese_yoritomo — ITEMS (the two swords, reunited)
+```
+
+Let me verify the romaji for Higekiri/Hizamaru renames and the Korean RR romanization of 천부인 (Cheonbu-in) and 웅녀 (Ungnyeo). Also Hachiman = 八幡 (Hachiman); kamikaze = 神風. Let me finalize the output now.
+
+```text
+japanese_hachiman :: POWER hachiman-divine-wind | name=Sends the divine wind (kamikaze) that scatters invading fleets | term=神風 | script=ja/kanji | rom=kamikaze | gloss=Raises storm-winds dispersing Mongol invasion fleets in answer to prayer | inherit=none | src=Hachiman Gudōkun; Mongol invasions 1274/1281
+japanese_hachiman :: POWER hachiman-oracle | name=Delivers oracles declaring the divine will | term=託宣 | script=ja/kanji | rom=takusen | gloss=769 Usa oracle thwarting Dōkyō, recorded in Shoku Nihongi | inherit=none | src=Shoku Nihongi (769); Hachiman Usagū Gotakusenshū
+japanese_hachiman :: POWER hachiman-protect | name=Protects the realm and grants victory to warriors | term=武運加護 | script=ja/kanji | rom=bu'un kago | gloss=Tutelary war-kami guarding nation and Minamoto warriors | inherit=none | src=Shoku Nihongi; Hachiman cult tradition
+japanese_hachiman :: ITEM hachiman-yumiya | name=Sacred bow and arrow | term=弓矢 | script=ja/kanji | rom=yumiya | kind=weapon | role=owner | gloss=Bow-and-arrow go-shintai embodying the war-kami | src=Hachiman shrine tradition (go-shintai)
+```
+
+Hmm, let me reconsider Hachiman's terms. "武運加護" is a constructed compound; better to use a more attested term. The protection concept: 加護 (kago, "divine protection") is attested. For "protector of the nation," the title 護国 (gokoku) is used. Let me use 加護 (kago) for divine protection. For the war-tutelary aspect, 弓矢八幡 (Yumiya Hachiman, "Hachiman of bow and arrow") is a real epithet. Let me refine to avoid coinages. I'll keep kamikaze (神風), takusen (託宣, oracle), and kago (加護, divine protection). These are all real attested terms.
+
+Now let me also reconsider: is 神風 (kamikaze) specifically attributed to Hachiman, or to the kami generally / Ise? Historically the kamikaze was credited to multiple kami (Ise, Hachiman, etc.). But Hachiman is prominently credited (World History Encyclopedia: "Hachiman is famously credited with sending the kamikaze"). I'll keep it but phrase as "credited with sending." Good.
+
+Let me write the final answer.
+
+I have completed my research across all 26 figures. Here are my findings.
+
+**Summary of approach:** I researched each figure against canonical/classical sources. Many figures in this batch are purely historical (the Heian/Kamakura Minamoto samurai) or modern/folk-derived (Lotus Lantern TV characters) with no attested supernatural powers — those I skipped per the rules. Twelve figures have genuinely attested powers and/or items.
+
+**Key skips and why:**
+- **chinese_yang_tianyou** — a character invented for the 2009 TV series *Prelude of Lotus Lantern*; no classical attestation.
+- **chinese_liu_yanchang** — mortal husband in the late folk *Baolian Deng* tale; no attested powers.
+- **chinese_leizu, chinese_changyi, chinese_yao** — sericulture-invention/genealogy/administrative acts overlap their domains; no personal attested supernatural feat.
+- **japanese_kojiki_tomi_ya_bime, japanese_kojiki_iku_tama_yori_hime** — genealogical/passive figures in Kojiki (the Mt. Miwa thread story happens *to* Iku-tama-yori-bime); no power or item of their own.
+- **japanese_yoshichika, japanese_yoshikuni, japanese_yoshitada, japanese_yoshitomo, japanese_yoshinaka** — historical samurai (rebellions, Genpei War); no supernatural attestation. (Yoshiie's famous geese/archery feats are explicitly later apocrypha, so no powers for him either — only his inherited swords.)
+
+```text
+japanese_hachiman :: POWER hachiman-kamikaze | name=Sends the divine wind that scatters invading fleets | term=神風 | script=ja/kanji | rom=kamikaze | gloss=Credited with raising typhoons dispersing Mongol fleets answering prayer | inherit=none | src=Hachiman Gudōkun; Mongol invasions 1274/1281
+japanese_hachiman :: POWER hachiman-takusen | name=Issues oracles declaring the divine will | term=託宣 | script=ja/kanji | rom=takusen | gloss=769 Usa oracle thwarting Dōkyō, recorded in chronicle | inherit=none | src=Shoku Nihongi (769); Hachiman Usagū Gotakusenshū
+japanese_hachiman :: POWER hachiman-kago | name=Extends divine protection over the nation and warriors | term=加護 | script=ja/kanji | rom=kago | gloss=Tutelary war-kami guarding realm and Minamoto warriors | inherit=none | src=Shoku Nihongi; Hachiman cult tradition
+japanese_hachiman :: ITEM hachiman-yumiya | name=Sacred bow and arrow | term=弓矢 | script=ja/kanji | rom=yumiya | kind=weapon | role=owner | gloss=Bow-and-arrow go-shintai embodying the war-kami | src=Hachiman shrine tradition (go-shintai)
+japanese_yoshiie :: ITEM higekiri | name=Beard-Cutter sword | term=髭切 | script=ja/kanji | rom=Higekiri | kind=weapon | role=wielder | gloss=Genji heirloom blade held by Yoshiie before Tameyoshi | src=Heike Monogatari, Tsurugi no maki
+japanese_yoshiie :: ITEM hizamaru | name=Knee-Cutter sword | term=膝丸 | script=ja/kanji | rom=Hizamaru | kind=weapon | role=wielder | gloss=Genji heirloom blade paired with Higekiri | src=Heike Monogatari, Tsurugi no maki
+japanese_tameyoshi :: ITEM higekiri | name=Beard-Cutter sword (as Tomogiri/Shishinoko) | term=髭切 | script=ja/kanji | rom=Higekiri | kind=weapon | role=owner | gloss=Renamed it Shishinoko then Tomogiri, bequeathed to Yoshitomo | src=Heike Monogatari, Tsurugi no maki
+japanese_tameyoshi :: ITEM hizamaru | name=Knee-Cutter sword (as Hoemaru) | term=膝丸 | script=ja/kanji | rom=Hizamaru | kind=weapon | role=owner | gloss=Renamed it Hoemaru within the Genji line | src=Heike Monogatari, Tsurugi no maki
+japanese_yoritomo :: ITEM higekiri | name=Beard-Cutter sword (Onikiri) | term=髭切 | script=ja/kanji | rom=Higekiri | kind=weapon | role=heir | gloss=Genji clan blade reunited under Yoritomo | src=Heike Monogatari, Tsurugi no maki
+japanese_yoritomo :: ITEM hizamaru | name=Knee-Cutter sword (Usumidori) | term=膝丸 | script=ja/kanji | rom=Hizamaru | kind=weapon | role=heir | gloss=Returned to Yoritomo after Yoshitsune's defeat | src=Heike Monogatari, Tsurugi no maki
+chinese_xiwangmu :: POWER xiwangmu-tianli | name=Presides over the calamities of heaven | term=司天之厲 | script=zh/hanzi | rom=sī tiān zhī lì | gloss=Controls heaven's pestilent disasters | inherit=none | src=Shanhaijing, Xishanjing
+chinese_xiwangmu :: POWER xiwangmu-wucan | name=Governs the five destructive forces (punishments) | term=五殘 | script=zh/hanzi | rom=wǔ cán | gloss=Commands the five baleful/punishing forces | inherit=none | src=Shanhaijing, Xishanjing
+chinese_xiwangmu :: POWER xiwangmu-xiao | name=Whistles/howls with beastly cry | term=善嘯 | script=zh/hanzi | rom=shàn xiào | gloss=Skilled at howling; leopard tail and tiger teeth | inherit=none | src=Shanhaijing, Xishanjing
+chinese_xiwangmu :: POWER xiwangmu-busi | name=Keeps the elixir of immortality | term=不死之藥 | script=zh/hanzi | rom=bùsǐ zhī yào | gloss=Holds drug of deathlessness Yi obtained from her | inherit=none | src=Huainanzi, Lanmingxun
+chinese_xiwangmu :: ITEM xiwangmu-sheng | name=Sheng headdress | term=勝 | script=zh/hanzi | rom=shèng | kind=garment | role=wearer | gloss=Distinctive crown worn over dishevelled hair | src=Shanhaijing, Xishanjing (蓬髮戴勝)
+chinese_jade_emperor :: POWER jade-emperor-tingming | name=Commands the celestial bureaucracy of gods | term=統御天庭 | script=zh/hanzi | rom=tǒngyù tiāntíng | gloss=Supreme heaven-ruler summoning gods and heavenly armies | inherit=none | src=Xiyouji (Journey to the West)
+chinese_zhuanxu :: POWER zhuanxu-juedi | name=Severs communication between heaven and earth | term=絕地天通 | script=zh/hanzi | rom=jué dì tiān tōng | gloss=Charged Chong and Li to cut heaven-earth passage | inherit=none | src=Shangshu, Lü Xing; Guoyu, Chuyu
+chinese_diku :: POWER diku-chenglong | name=Rides a dragon through the seasons | term=乘龍 | script=zh/hanzi | rom=chéng lóng | gloss=Travels by dragon in spring/autumn, horse otherwise | inherit=none | src=Da Dai Liji, Wudi De
+chinese_diku :: POWER diku-ziyan | name=Born numinous and named himself at birth | term=生而神靈，自言其名 | script=zh/hanzi | rom=shēng ér shénlíng, zì yán qí míng | gloss=Divine from birth; spoke and declared his own name | inherit=none | src=Shiji, Wudi benji
+chinese_shun :: POWER shun-cangtao | name=Escapes the burning granary by gliding down on hats | term=以兩笠自扞 | script=zh/hanzi | rom=yǐ liǎng lì zì hàn | gloss=Shielded by two reed hats, floats safely from blaze | inherit=none | src=Shiji, Wudi benji; Mencius, Wan Zhang
+chinese_shun :: POWER shun-jingtao | name=Escapes being buried alive in the well | term=匿空旁出 | script=zh/hanzi | rom=nì kǒng páng chū | gloss=Slips out a side tunnel when well is filled in | inherit=none | src=Shiji, Wudi benji; Mencius, Wan Zhang
+chinese_sanshengmu :: ITEM sanshengmu-baolian | name=Magic Lotus Lantern | term=寶蓮燈 | script=zh/hanzi | rom=bǎolián dēng | kind=relic | role=owner | gloss=Numinous lantern whose light subdues beasts and deities | src=Baoliandeng folk-opera/Qing-novel tradition
+korean_hwanin :: POWER hwanin-grant-descent | name=Grants a son leave and mandate to descend and rule mankind | term=許諾 | script=ko/hanja | rom=heonak | gloss=Surveys earth, sends Hwanung with seals and ministers | inherit=none | src=Samguk Yusa, Gojoseon
+korean_hwanin :: ITEM hwanin-cheonbu | name=Three Heavenly Seals | term=천부인 (天符印) | script=ko/hangul-hanja | rom=Cheonbu-in | kind=relic | role=owner | gloss=Three tokens of divine authority bestowed on Hwanung | src=Samguk Yusa, Gojoseon
+korean_ungnyeo :: POWER ungnyeo-transform | name=Becomes human by enduring the cave trial | term=웅녀 (熊女) | script=ko/hangul-hanja | rom=Ungnyeo | gloss=Bear eating mugwort and garlic, shunning sun, turns woman | inherit=none | src=Samguk Yusa, Gojoseon
+```
+
+**Notes for the curator:**
+- **Hachiman** (`japanese_hachiman`): not in Kojiki/Nihon Shoki (first attested in *Shoku Nihongi*, 8th c.); I cited *Shoku Nihongi* and the *Hachiman Gudōkun* / *Hachiman Usagū Gotakusenshū*. The kamikaze was credited to several kami, but Hachiman is prominently among them.
+- **chinese_sanshengmu**: the Lotus Lantern (`寶蓮燈`) is from the late-imperial *Baolian Deng* opera/novel tradition, NOT the listed canon (Shanhaijing/Huainanzi/Fengshen/Xiyouji/Soushen Ji). I recorded only the item (her defining attested attribute, matching `hasItems:true`) and gave no power, since the mountain-splitting is her son Chenxiang's feat. Flag for review if you want strictly canonical-source-only entries.
+- **The Genji swords** (Higekiri/Hizamaru) are attested in *Heike Monogatari* (Tsurugi no maki), not Kojiki/Nihon Shoki; their named transmission specifically lists Yoshiie → Tameyoshi → (Yoshitomo) → reunited under Yoritomo. I assigned items only to the roster figures flagged `hasItems:true` (Yoshiie, Tameyoshi, Yoritomo).
+- **chinese_shun** and **chinese_diku** rely on Shiji / Da Dai Liji / Mencius (real classical sources, though outside the explicitly-listed Chinese canon). Their entries are concrete attested feats, not moral/administrative platitudes.
+- **korean_ungnyeo**: her "power" is the endurance-transformation (granted via Hwanung's instruction) — borderline, included as her single distinctive attested deed.

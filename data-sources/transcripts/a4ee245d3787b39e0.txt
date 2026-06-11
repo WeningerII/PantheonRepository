@@ -1,0 +1,1563 @@
+I now have all native spellings and roles confirmed. I have enough verified, well-sourced material to author ~24 figures across the six traditions. Let me build the registry.
+
+Coverage plan (24 figures):
+- **Buryat (5)**: Esege Malan, Manzan Gurme Toodei, Khan Khormusta Tengri, Erlen Khan, Morgon-Kara (first shaman)
+- **Evenki (5)**: Buga/Enekan Buga, Seveki (Amaka), Khargi, Heglun (cosmic elk), Mangi (cosmic bear)
+- **Chukchi (4)**: Tenanto'mwan (Creator), Kurkil the Raven (transformer), the Pole-Star Being, the Dawn Being
+- **Nivkh (3)**: Pal-yz (mountain master), Tol-yz (sea master), the Bear (mountain-person)
+- **Khanty (3)**: Num-Torum (sky-god), Kul-Otyr (underworld), Yli-Torum
+- **Mansi (4)**: Mir-susne-khum (World-Surveyor), Kaltes-Ekwa (dawn/birth goddess), Numi-Torum (Mansi sky-father), and the World-watching-man variant — I'll keep Num-Torum under Khanty and Numi-Torum under Mansi as the proper tradition-label split, and give Mir-susne-khum + Kaltes-Ekwa + World-watching-man to Mansi.
+
+```json
+[
+  {
+    "id": "buryat_esege_malan",
+    "name": {
+      "primary": "Father Sky",
+      "alt": ["Esege Malan", "Esege Malaan Tengri", "Esege Malan Baabai"],
+      "transliterations": { "mong-cyrl": "Эсэгэ Малаан тэнгэри", "rom": "Esege Malaan tengeri" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buryat",
+    "primaryTradition": "Buryat",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["buryat_manzan_gurme"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "тэнгэри", "script": "Mong-Cyrl", "rom": "tengeri" },
+        "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology (Mythology of All Races IV), 1927, on the Buryat sky-father Esege Malan" }]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel (Julie Ann Stewart), Riding Windhorses: A Journey into the Heart of Mongolian Shamanism, 2000, on Esege Malan as creator of living things" }]
+      },
+      {
+        "sphereId": "fate-decree",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Caroline Humphrey, 'Shamans and Elders' (1996), on Esege Malan as supreme western sky-deity who decrees outcomes" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "decree-from-sky",
+        "name": "settles the fate of mortals from the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As head of the western (white) tengri he is appealed to for judgment and protection in the Geser cycle.",
+        "sources": [{ "kind": "secondary", "reference": "S. Yu. Neklyudov / cyberleninka, 'Buryat Hesariad: Tengrist mythology and the epic interpretation', on Esege Malan Tengri's hierarchical rank" }]
+      },
+      {
+        "id": "give-living-shape",
+        "name": "shapes earth, sun and stars into being",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Creator role; sometimes overlapped with the grandmother Manzan Gurme in the genealogy of the sky.",
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Riding Windhorses (2000), on Esege Malan as Great Creator" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Esege Malan is the Buryat sky-father, creator of living things, and head of the 55 western (white) tengri.",
+        "citations": [
+          { "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927" },
+          { "kind": "secondary", "reference": "cyberleninka.ru, 'Buryat Hesariad: Tengrist mythology and the epic interpretation'" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "In the divine genealogy the western deities descend in order Manzan Gurme, Esege Malan Tengri, Khan Khormusta Tengri.",
+        "citations": [{ "kind": "secondary", "reference": "cyberleninka.ru, Buryat Hesariad article, descending genealogy of western tengri" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Spirit-class sky-god (classed as deity). Native attested form Esege Malaan ('Bald/Wide Father'); the gloss 'bald, broad' is sometimes attached to malaan. Distinct from the steppe-Mongol Tengri pantheon already in the registry: this is the Mongolic Buryat shamanic sky-father."
+  },
+  {
+    "id": "buryat_manzan_gurme",
+    "name": {
+      "primary": "Grandmother of the Sky",
+      "alt": ["Manzan Gurme", "Manzan Gurme Toodei", "Manzan Gurme Toodei"],
+      "transliterations": { "mong-cyrl": "Манзан Гүрмэ тоодэй", "rom": "Manzan Gürme toodei" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buryat",
+    "primaryTradition": "Buryat",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "fate-record",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits: Following Your Shamanic Calling, 2001, on Manzan Gurme and the book of fate" }]
+      },
+      {
+        "sphereId": "ancestral-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits (2001), Manzan Gurme as ancestress of the gods, daughter of Ekhe Ekhe Burhan" }]
+      },
+      {
+        "sphereId": "wisdom-knowledge",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits (2001), 'greatest power and spiritual knowledge of all the sky spirits'" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch-all-in-mirrors",
+        "name": "watches all that happens on earth and sky in two shaman mirrors",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Possesses two great shaman mirrors (toli) through which she observes both worlds.",
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits (2001), on the two shaman mirrors" }]
+      },
+      {
+        "id": "read-the-book-of-fate",
+        "name": "reads the great book in which all that was, is, and will be is written",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Holds the great book of fate of past, present and future.",
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits (2001), book of fate" }]
+      },
+      {
+        "id": "revive-the-fifty-five",
+        "name": "sustains the fifty-five tengri with her silver cup",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Geser-epic verse: when fifty-five tenger were born of the Milky Way she supported a thousand gods and ten thousand tenger with her silver cup.",
+        "sources": [{ "kind": "tertiary", "reference": "Abai Geser epic invocation (buryatmongol.org), Manzan Gurme Toodei and her silver cup" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "two-shaman-mirrors",
+        "kind": "ritual-object",
+        "name": "two great shaman mirrors",
+        "term": { "value": "толи", "script": "Mong-Cyrl", "rom": "toli" },
+        "role": "scrying instruments for watching earth and sky",
+        "notes": "The toli (bronze mirror) is the standard Buryat shaman's pectoral mirror; here attributed to the grandmother goddess.",
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits (2001)" }]
+      },
+      {
+        "id": "great-silver-cup",
+        "kind": "vessel",
+        "name": "great silver cup",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "vessel from which she nourishes/sustains the tengri",
+        "notes": "Her most distinctive attribute in the Geser invocation.",
+        "sources": [{ "kind": "tertiary", "reference": "Abai Geser epic invocation (buryatmongol.org)" }]
+      },
+      {
+        "id": "book-of-fate",
+        "kind": "text-object",
+        "name": "great book of fate",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "register of all past, present and future events",
+        "notes": "",
+        "sources": [{ "kind": "tertiary", "reference": "Sarangerel, Chosen by the Spirits (2001)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Manzan Gurme Toodei is the highest goddess and ancestress of the gods in Buryat shamanic religion, keeper of the book of fate, with two shaman mirrors and a silver cup.",
+        "citations": [
+          { "kind": "tertiary", "reference": "Sarangerel (Julie Ann Stewart), Chosen by the Spirits, 2001" },
+          { "kind": "tertiary", "reference": "Abai Geser epic invocation, buryatmongol.org" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class grandmother goddess (classed as deity). 'Toodei' is the Buryat term for grandmother. The romanization Manzan Gürme follows Mongolian Cyrillic; documentation rests mainly on Buryat oral tradition recorded in the Geser epic and the Buryat-American shaman Sarangerel."
+  },
+  {
+    "id": "buryat_khan_khormusta",
+    "name": {
+      "primary": "Lord of the Western Sky",
+      "alt": ["Khan Khormusta", "Khan Khormusta Tengri", "Qormusta Tngri", "Khormusta-Tengri"],
+      "transliterations": { "mong-cyrl": "Хан Хормуста тэнгэри", "rom": "Khan Khormusta tengeri" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buryat",
+    "primaryTradition": "Buryat",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "тэнгэри", "script": "Mong-Cyrl", "rom": "tengeri" },
+        "sources": [{ "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia, 1980, on Qormusta as chief of the tngri" }]
+      },
+      {
+        "sphereId": "war-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "cyberleninka.ru, 'Buryat Hesariad', Khan Khormusta as head of the 55 western tengri who send a champion to earth" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead-the-white-tengri",
+        "name": "commands the fifty-five western (white) tengri",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Acting head of the 55 western tengri in all versions of the Abai Geser epic.",
+        "sources": [{ "kind": "secondary", "reference": "cyberleninka.ru, 'Buryat Hesariad: Tengrist mythology and the epic interpretation'" }]
+      },
+      {
+        "id": "send-down-a-champion",
+        "name": "sends his son down to earth as a divine champion",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Father of Geser; dispatches him to the middle world to fight the eastern (black) celestial forces.",
+        "sources": [{ "kind": "secondary", "reference": "cyberleninka.ru, 'Buryat Hesariad', on Khormusta as father of Geser" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Khan Khormusta Tengri is the chief of the 55 western tengri and the father of the hero Geser in the Buryat Abai Geser epic.",
+        "citations": [
+          { "kind": "secondary", "reference": "cyberleninka.ru, 'Buryat Hesariad: Tengrist mythology and the epic interpretation'" },
+          { "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia, 1980" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The theonym Khormusta derives via Sogdian/Uighur from the Zoroastrian Ahura Mazda, entering Mongolian by the 15th century.",
+        "citations": [{ "kind": "secondary", "reference": "Qormusta Tengri scholarship summarized on etymology (Heissig; cyberleninka Buryat Hesariad)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Spirit-class chief sky-god (classed as deity). Borrowed name (from Ahura Mazda) but fully naturalized as a Buryat/Mongolic tengri; included here in the Buryat shamanic-epic context, distinct from the steppe-Mongol pantheon already registered."
+  },
+  {
+    "id": "buryat_erlen_khan",
+    "name": {
+      "primary": "Lord of the Dead",
+      "alt": ["Erlen Khan", "Erlik Khan", "Erlig Khan"],
+      "transliterations": { "mong-cyrl": "Эрлэн хаан", "rom": "Erlen khaan" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Buryat",
+    "primaryTradition": "Buryat",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "death-underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927, on Erlik as lord of the lower world" }]
+      },
+      {
+        "sphereId": "judgment-of-souls",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Mircea Eliade, Shamanism: Archaic Techniques of Ecstasy, 1964, on Erlik as judge of the dead" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "judge-the-dead",
+        "name": "judges the souls of the dead in the lower world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Acts as a just judge of the dead; in the Altai parallel he administers by order of Ülgen.",
+        "sources": [{ "kind": "secondary", "reference": "Eliade, Shamanism (1964), Erlik as judge of souls" }]
+      },
+      {
+        "id": "lead-the-black-tengri",
+        "name": "leads the forty-four eastern (black) spirits against the western ones",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In Buryat shamanism Erlen Khan heads the cruel black/eastern spirits opposed to the friendly white/western spirits.",
+        "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology (1927), on Erlen khan and the 44 black gods of the east" }]
+      },
+      {
+        "id": "claim-the-soul",
+        "name": "sends sickness to seize the souls of the living",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Black shamans (Buryat khara böö) treat with him; he demands souls, prompting the shaman's rescue journeys.",
+        "sources": [{ "kind": "secondary", "reference": "M. N. Khangalov, Sobranie sochinenii (collected Buryat ethnography), on the black-shaman cult of Erlen khan" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Erlen Khan is the Buryat lord of the lower world, leader of the 44 eastern (black) spirits and judge of the dead.",
+        "citations": [
+          { "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927" },
+          { "kind": "secondary", "reference": "Mircea Eliade, Shamanism, 1964" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class lord of the dead (classed as deity). Buryat form Erlen Khan, cognate with Turkic-Altai Erlik and ultimately Tibetan/Indic Yama. Counterpart in the eastern (black) half of the 99-tengri dualism opposite Khan Khormusta."
+  },
+  {
+    "id": "buryat_morgon_kara",
+    "name": {
+      "primary": "First Shaman",
+      "alt": ["Morgon-Kara", "Morgon Khara", "Mörgön Khara"],
+      "transliterations": { "mong-cyrl": "Мэргэн хара", "rom": "Mergen khara" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Buryat",
+    "primaryTradition": "Buryat",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "shamanhood",
+        "contextTag": "lifelong",
+        "term": { "value": "бөө", "script": "Mong-Cyrl", "rom": "böö" },
+        "sources": [{ "kind": "secondary", "reference": "Mircea Eliade, Shamanism: Archaic Techniques of Ecstasy, 1964, recounting the Buryat tale of the first shaman who recovered souls" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ride-the-drum-to-the-sky",
+        "name": "rides his drum up into the spirit world",
+        "term": { "value": "хэсэ", "script": "Mong-Cyrl", "rom": "khese" },
+        "inheritability": "learned",
+        "notes": "His magic drum serves as a steed for the ascent; the founding precedent for Buryat shamanic flight.",
+        "sources": [{ "kind": "secondary", "reference": "Eliade, Shamanism (1964), the Buryat first-shaman narrative" }]
+      },
+      {
+        "id": "recover-stolen-souls",
+        "name": "brings the dead back to life by retrieving their souls",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "learned",
+        "notes": "His power to revive the dead angered the lord of the dead, who complained to the high god of heaven.",
+        "sources": [{ "kind": "secondary", "reference": "Eliade, Shamanism (1964)" }]
+      },
+      {
+        "id": "turn-into-a-wasp",
+        "name": "transforms into a wasp to steal back a hidden soul",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "learned",
+        "notes": "Found a soul trapped in a bottle by the high god, became a wasp, stung the god's forehead, and carried the soul down to earth.",
+        "sources": [{ "kind": "secondary", "reference": "Eliade, Shamanism (1964), wasp-and-bottle episode" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "magic-drum",
+        "kind": "instrument",
+        "name": "magic shaman drum",
+        "term": { "value": "хэсэ", "script": "Mong-Cyrl", "rom": "khese" },
+        "role": "vehicle for travel into the spirit world",
+        "notes": "Ridden like a horse into the spirit universe.",
+        "sources": [{ "kind": "secondary", "reference": "Eliade, Shamanism (1964)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Morgon-Kara is the first Buryat shaman, who could revive the dead, rode his drum into the spirit world, and recovered a soul the high god had bottled up by turning into a wasp.",
+        "citations": [{ "kind": "secondary", "reference": "Mircea Eliade, Shamanism: Archaic Techniques of Ecstasy, 1964 (Buryat first-shaman legend)" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / first-shaman tier (classed as demigod: a mortal man elevated to founding shaman). Name often anglicized 'Morgon-Kara'; the Buryat behind it is Mergen ('wise/marksman') Khara ('black'). The episode is a widely cited type-scene of Siberian soul-retrieval."
+  },
+  {
+    "id": "evenki_buga",
+    "name": {
+      "primary": "Sky-Universe",
+      "alt": ["Buga", "Boga", "Enekan Buga", "Ekseri"],
+      "transliterations": { "evk": "Буга", "rom": "Buga" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "буга", "script": "Cyrl", "rom": "buga" },
+        "sources": [{ "kind": "secondary", "reference": "S. M. Shirokogoroff, Psychomental Complex of the Tungus, 1935, on buga as sky/universe/locality and the supreme being" }]
+      },
+      {
+        "sphereId": "universe-totality",
+        "contextTag": "lifelong",
+        "term": { "value": "буга", "script": "Cyrl", "rom": "buga" },
+        "sources": [{ "kind": "secondary", "reference": "Shirokogoroff, Psychomental Complex of the Tungus (1935): buga as the greatest, omnipotent, eternal being and as 'universe'" }]
+      },
+      {
+        "sphereId": "fertility-of-game",
+        "contextTag": "lifelong",
+        "term": { "value": "мусун", "script": "Cyrl", "rom": "musun" },
+        "sources": [{ "kind": "secondary", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North (Russian, 1959), on Enekan Buga as Mistress of the Universe dispensing musun" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "renew-nature",
+        "name": "renews nature and the reproduction of game and reindeer",
+        "term": { "value": "мусун", "script": "Cyrl", "rom": "musun" },
+        "inheritability": "unique",
+        "notes": "As Enekan Buga ('Grandmother Universe') she dispenses the sacred life-force musun that renews living things.",
+        "sources": [{ "kind": "secondary", "reference": "Anisimov, Cosmological Concepts of the Peoples of the North (1959)" }]
+      },
+      {
+        "id": "stand-beyond-the-shaman",
+        "name": "remains the one power no shaman can master",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Uniquely among Tungus spirits, buga cannot be commanded by a shaman; everyone prays and sacrifices to it directly.",
+        "sources": [{ "kind": "secondary", "reference": "Shirokogoroff, Psychomental Complex of the Tungus (1935), buga as the one spirit not subject to the shaman" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Buga is the Evenki word for sky/universe/world and names the supreme, eternal being; in the personified form Enekan Buga she is the Mistress of the Universe who dispenses life-force (musun).",
+        "citations": [
+          { "kind": "secondary", "reference": "S. M. Shirokogoroff, Psychomental Complex of the Tungus, 1935" },
+          { "kind": "secondary", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North, 1959" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The Evenki cosmos is tripartite: Upper World (Ugu Buga), Middle World (Dulin Buga), Lower World (Hergu Buga).",
+        "citations": [{ "kind": "secondary", "reference": "Anisimov, Cosmological Concepts of the Peoples of the North (1959), three-world Evenki cosmology" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Spirit-class supreme/diffuse sky-being (classed as deity). Buga is impersonal 'sky/universe' in everyday speech but personified as the grandmother Enekan Buga in cult; sex given as female reflecting the Enekan ('grandmother') aspect. Ekseri/Eksheri is a regional name for the same upper-world power."
+  },
+  {
+    "id": "evenki_seveki",
+    "name": {
+      "primary": "Creator and Grandfather",
+      "alt": ["Seveki", "Seveki", "Amaka", "Eksheri"],
+      "transliterations": { "evk": "Сэвэки", "rom": "Seveki" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "сэвэки", "script": "Cyrl", "rom": "seveki" },
+        "sources": [{ "kind": "secondary", "reference": "G. M. Vasilevich, Evenki: Historical-Ethnographic Essays (Russian, 1969), on Seveki/Amaka the creator of living things and master of the upper world" }]
+      },
+      {
+        "sphereId": "upper-world-rule",
+        "contextTag": "lifelong",
+        "term": { "value": "угу буга", "script": "Cyrl", "rom": "ugu buga" },
+        "sources": [{ "kind": "secondary", "reference": "Vasilevich, Evenki (1969), Seveki ruling the upper world Ugu Buga" }]
+      },
+      {
+        "sphereId": "protection-of-people-and-herds",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Anisimov, Cosmological Concepts of the Peoples of the North (1959), on the benevolent upper-world creator who protects people and reindeer" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create-living-things",
+        "name": "fashions humans, animals and the living world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Creator deity of the upper world, complementary to Khargi who orders the lower world.",
+        "sources": [{ "kind": "secondary", "reference": "Vasilevich, Evenki (1969)" }]
+      },
+      {
+        "id": "make-the-upper-world-function",
+        "name": "keeps the upper world in working order",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Paired opposite Khargi: Seveki makes the upper world function, Khargi the lower.",
+        "sources": [{ "kind": "secondary", "reference": "Anisimov, Cosmological Concepts of the Peoples of the North (1959)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Seveki (also Amaka, 'grandfather') is the Evenki creator of living things and ruler of the upper world Ugu Buga, complementary to the lower-world lord Khargi.",
+        "citations": [
+          { "kind": "secondary", "reference": "G. M. Vasilevich, Evenki: Historical-Ethnographic Essays, 1969" },
+          { "kind": "secondary", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North, 1959" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class creator god (classed as deity). 'Amaka' ('grandfather') is also the respectful address for the bear; here it denotes the creator. The seve- root underlies sevek/seven, the Evenki word for spirit-helpers and idols, marking Seveki as the source of benevolent spirit-power."
+  },
+  {
+    "id": "evenki_khargi",
+    "name": {
+      "primary": "Lord of the Lower World",
+      "alt": ["Khargi", "Hargi", "Kharги"],
+      "transliterations": { "evk": "Харги", "rom": "Khargi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "хэргу буга", "script": "Cyrl", "rom": "hergu buga" },
+        "sources": [{ "kind": "secondary", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North (1959), Khargi ruling the lower world Hergu Buga and the land of the dead Buni" }]
+      },
+      {
+        "sphereId": "death",
+        "contextTag": "lifelong",
+        "term": { "value": "буни", "script": "Cyrl", "rom": "buni" },
+        "sources": [{ "kind": "secondary", "reference": "G. M. Vasilevich, Evenki (1969), on Buni the land of the dead at the lower reaches of the world-river" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule-the-land-of-the-dead",
+        "name": "governs the lower world and the land of the dead Buni",
+        "term": { "value": "буни", "script": "Cyrl", "rom": "buni" },
+        "inheritability": "unique",
+        "notes": "Counterpart of Seveki; makes the lower world function.",
+        "sources": [{ "kind": "secondary", "reference": "Anisimov, Cosmological Concepts of the Peoples of the North (1959)" }]
+      },
+      {
+        "id": "grant-shaman-spirit-helpers",
+        "name": "grants the shaman his clan animal-helper spirits",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In Anisimov's account Khargi is the patron of the clan shaman and source of his animal-double spirit-helpers in the lower world.",
+        "sources": [{ "kind": "secondary", "reference": "Anisimov, 'The Shaman's Tent of the Evenks' (in Henry Michael ed., Studies in Siberian Shamanism, 1963)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Khargi is the Evenki lord of the lower world Hergu Buga and the land of the dead Buni, complementary to the upper-world creator Seveki.",
+        "citations": [
+          { "kind": "secondary", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North, 1959" },
+          { "kind": "secondary", "reference": "A. F. Anisimov, 'The Shaman's Tent of the Evenks', in Studies in Siberian Shamanism, 1963" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class lower-world lord (classed as deity). The name hargi also denotes evil/lower spirits generally in Evenki; capitalized here for the personified ruler of Hergu Buga, who in shamanic cosmology is reached by travelling down the world-river Engdekit."
+  },
+  {
+    "id": "evenki_heglun",
+    "name": {
+      "primary": "Cosmic Elk",
+      "alt": ["Heglun", "Kheglen", "Kheglun", "Heglen"],
+      "transliterations": { "evk": "Хэглун", "rom": "Heglun" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sun-and-day",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "G. M. Vasilevich, 'Early Concepts about the Universe among the Evenks' (in Studies in Siberian Shamanism, 1963), on the cosmic elk carrying off the sun" }]
+      },
+      {
+        "sphereId": "heavens-constellation",
+        "contextTag": "lifelong",
+        "term": { "value": "хэглун", "script": "Cyrl", "rom": "heglun" },
+        "sources": [{ "kind": "secondary", "reference": "Evenk astronomy (talkingstories.uoregon.edu), kheglun = elk = the constellation of the Great Bear" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry-off-the-sun",
+        "name": "carries the sun away on her antlers each night",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The cosmic elk seizes the sun (or the day) on her antlers and runs into the dark thicket of the sky; a hunter must chase and recover it so light returns.",
+        "sources": [{ "kind": "secondary", "reference": "Vasilevich, 'Early Concepts about the Universe among the Evenks' (1963)" }]
+      },
+      {
+        "id": "become-the-great-bear",
+        "name": "wheels across the night sky as the four stars of the Great Bear",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Almost all Evenki call the Great Bear kheglun, 'elk'; the cosmic hunt of the elk is mapped onto the constellation, the chase-track becoming the Milky Way.",
+        "sources": [{ "kind": "secondary", "reference": "Evenk astronomy (talkingstories.uoregon.edu); Snowchange, 'Inuit and Chukchi Star lore' (2016), on the Siberian elk-constellation" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Heglun (Kheglen) is the Evenki cosmic elk who carries off the sun on her antlers and is identified with the constellation of the Great Bear, pursued by a cosmic hunter.",
+        "citations": [
+          { "kind": "secondary", "reference": "G. M. Vasilevich, 'Early Concepts about the Universe among the Evenks', in Studies in Siberian Shamanism, 1963" },
+          { "kind": "secondary", "reference": "Evenk astronomy, talkingstories.uoregon.edu" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class cosmic animal (classed as deity, a personified celestial being). Sex given as female because the chased elk (kheglun, the cow-elk) is typically the dam pursued with her calf in the cosmic-hunt versions; the hunter is the bear Mangi. The elk is the central Evenki sky-image: constellation, sun-bearer, and quarry of the primordial hunt."
+  },
+  {
+    "id": "evenki_mangi",
+    "name": {
+      "primary": "Cosmic Bear Ancestor",
+      "alt": ["Mangi", "Manги", "Mangɨ"],
+      "transliterations": { "evk": "Манги", "rom": "Mangi" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Evenki",
+    "primaryTradition": "Evenki",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "first-ancestor",
+        "contextTag": "lifelong",
+        "term": { "value": "манги", "script": "Cyrl", "rom": "mangi" },
+        "sources": [{ "kind": "secondary", "reference": "G. M. Vasilevich, 'Early Concepts about the Universe among the Evenks' (1963), on Mangi the half-man half-bear first ancestor" }]
+      },
+      {
+        "sphereId": "the-hunt",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Vasilevich (1963), Mangi as the celestial hunter pursuing the cosmic elk" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hunt-the-cosmic-elk",
+        "name": "chases the cosmic elk across the sky to win back the sun",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the bear variant of the cosmic hunt, Mangi the half-man-half-bear pursues the elk Heglun and is set in the sky as a constellation; his ski-track becomes the Milky Way.",
+        "sources": [{ "kind": "secondary", "reference": "Vasilevich, 'Early Concepts about the Universe among the Evenks' (1963)" }]
+      },
+      {
+        "id": "stand-between-man-and-beast",
+        "name": "embodies the kinship of humans and the bear as first ancestor",
+        "term": { "value": "амака", "script": "Cyrl", "rom": "amaka" },
+        "inheritability": "unique",
+        "notes": "The bear is addressed amaka ('grandfather'); Mangi personifies this ancestral bear of dual man-animal nature.",
+        "sources": [{ "kind": "secondary", "reference": "everyculture.com, Evenki (Northern Tungus) Religion, on the bear addressed as amaka 'grandfather'" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "cosmic-hunting-skis",
+        "kind": "equipment",
+        "name": "hunting skis",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "skis on which Mangi pursues the heavenly elk; their track becomes the Milky Way",
+        "notes": "Attested in the Vitim-Olekma and Angara cosmic-hunt versions.",
+        "sources": [{ "kind": "secondary", "reference": "Vasilevich (1963); judy-volker.com Ursa Major star-lore summary of the Evenk elk-hunt" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mangi is the Evenki cosmic bear of dual man-animal nature, the first ancestor, who hunts the heavenly elk on skis and is placed in the sky, his track becoming the Milky Way.",
+        "citations": [{ "kind": "secondary", "reference": "G. M. Vasilevich, 'Early Concepts about the Universe among the Evenks', in Studies in Siberian Shamanism, 1963" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / first-ancestor tier (classed as demigod: a half-man, half-bear primordial). Counterpart-hunter to the elk Heglun in the cosmic-hunt myth. The bear cult (address amaka, ritual apology before the kill) is the lived correlate of this figure."
+  },
+  {
+    "id": "chukchi_tenanto_mwan",
+    "name": {
+      "primary": "Creator",
+      "alt": ["Tenanto'mwan", "Tenantomgyn", "Tena'nto'mwan", "Creating-Being"],
+      "transliterations": { "ckt": "Тэнантомгын", "rom": "Tenantomgyn" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chukchi",
+    "primaryTradition": "Chukchi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "тэнантомгын", "script": "Cyrl", "rom": "tenantomgyn" },
+        "sources": [{ "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee (Jesup North Pacific Expedition VII), 1904–1909, on Tenanto'mwan 'the Creator'" }]
+      },
+      {
+        "sphereId": "supreme-being",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, Chukchee Mythology (Jesup North Pacific Expedition VIII, pt 1), 1910–1913, on the Creator among the superior beings" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "watch-through-the-sky-holes",
+        "name": "watches all that happens through holes in the sky about the Pole-Star",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The Creator observes the world through openings in the sky around the fixed Nail-Star (Pole-Star).",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909), on the Creator watching through the sky-holes" }]
+      },
+      {
+        "id": "establish-the-world",
+        "name": "brings the present world-order into being",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Often identical with or paired with Raven (Kurkil); 'Creator' is more a function-name than a sharply individual figure.",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, Chukchee Mythology (1910–1913)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tenanto'mwan ('the Creator') is the Chukchi creator-being, counted among the superior Beings, who watches the world through holes in the sky around the Pole-Star.",
+        "citations": [
+          { "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, Jesup North Pacific Expedition VII, 1904–1909" },
+          { "kind": "secondary", "reference": "Waldemar Bogoras, Chukchee Mythology, Jesup North Pacific Expedition VIII, 1910–1913" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class creator (classed as deity). Bogoras records the name as Tenanto'mwan, 'the one who induces/creates being'; in many tales the Creator's work is performed by Raven (Kurkil), so the two overlap. Cyrillic Тэнантомгын reflects the later Russian-orthography rendering of the Chukchi name."
+  },
+  {
+    "id": "chukchi_kurkil",
+    "name": {
+      "primary": "Raven the Transformer",
+      "alt": ["Kurkil", "Ku'urkil", "Kúrkil", "Kutkh"],
+      "transliterations": { "ckt": "Куркыль", "rom": "Kurkyl" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Chukchi",
+    "primaryTradition": "Chukchi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation-transformer",
+        "contextTag": "lifelong",
+        "term": { "value": "куркыль", "script": "Cyrl", "rom": "kurkyl" },
+        "sources": [{ "kind": "secondary", "reference": "Waldemar Bogoras, Chukchee Mythology, 1910–1913, on Raven (Ku'urkil) as creator and transformer" }]
+      },
+      {
+        "sphereId": "trickery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, Chukchee Mythology (1910–1913), Raven as trickster as well as benefactor" }]
+      },
+      {
+        "sphereId": "light-and-daylight",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Cross-Beringian Raven cycle; Bogoras, Chukchee Mythology (1910–1913), on Raven obtaining/releasing light" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring-the-daylight",
+        "name": "releases the daylight into the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the Raven cycle shared with the Koryak (where he is Quikinnaqu, 'Big Raven') he is credited with giving mankind light, fresh water, fire and skills.",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, Chukchee Mythology (1910–1913); Jochelson, The Koryak (Jesup NPE VI), on the Big-Raven light-bringing cycle" }]
+      },
+      {
+        "id": "shape-land-and-people",
+        "name": "forms the land, the first people and the animals",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Acts as fertile ancestor of mankind and architect of the natural world.",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, Chukchee Mythology (1910–1913)" }]
+      },
+      {
+        "id": "trick-and-transform",
+        "name": "disrupts and rearranges the world through trickery",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Mighty shaman and trickster who transforms himself and others; popular subject of Chukchi animist tales.",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, Chukchee Mythology (1910–1913), Raven as mighty shaman and trickster" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Among the Chukchi the Raven Kurkil (Ku'urkil) is the demiurge-trickster: creator and transformer, fertile ancestor of mankind, mighty shaman and bringer of light.",
+        "citations": [
+          { "kind": "secondary", "reference": "Waldemar Bogoras, Chukchee Mythology, Jesup North Pacific Expedition VIII, 1910–1913" },
+          { "kind": "secondary", "reference": "Waldemar Jochelson, The Koryak, Jesup North Pacific Expedition VI, on the parallel Big-Raven (Quikinnaqu) cycle" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / transformer tier (classed as demigod). The Raven creator-trickster (Chukchi Kurkil; Koryak Quikinnaqu/Kutkinnaku; Itelmen/Kamchadal Kutkh) is the central Beringian demiurge. Frequently identified with or acting for the Creator Tenanto'mwan."
+  },
+  {
+    "id": "chukchi_pole_star",
+    "name": {
+      "primary": "Nail-Star",
+      "alt": ["Pole-Star Being", "the Motionless Star", "Unp'ener"],
+      "transliterations": { "ckt": "Унпэнэр", "rom": "Unpener" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chukchi",
+    "primaryTradition": "Chukchi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "celestial-axis",
+        "contextTag": "lifelong",
+        "term": { "value": "унпэнэр", "script": "Cyrl", "rom": "unpener" },
+        "sources": [{ "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, 1904–1909, on the Pole-Star as the fixed 'Nail-Star' at the centre of the sky" }]
+      },
+      {
+        "sphereId": "the-directions",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909): the world's directions radiate from the Pole-Star with the Milky Way crossing" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hold-the-sky-fixed",
+        "name": "stands unmoving as the nail that pins the turning sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Alone among the stars it never moves; the others wheel around it. The Creator watches the earth through sky-holes near it.",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909)" }]
+      },
+      {
+        "id": "anchor-the-five-directions",
+        "name": "marks the centre from which the directions and Dawn are reckoned",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The Pole-Star sits at the hub of the Chukchi compass of sacred directions (Dawn, Mid-day, Zenith, Nadir, Darkness).",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909), Chukchi system of cardinal/sacred directions" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Chukchi Pole-Star is the 'Nail-Star', the one motionless star at the centre of the sky, counted among the superior Beings and the hub of the directions.",
+        "citations": [{ "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, Jesup North Pacific Expedition VII, 1904–1909" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class celestial Being (classed as deity), one of the vaʼirgьt (sacred Beings). Bogoras glosses the Pole-Star as the 'Nail-Star' / 'motionless star'; the romanized native term Unpener ('the driven-in one', i.e. nail) follows Chukchi star-names recorded by Bogoras. The four/five directions and Dawn, Mid-day and Zenith are likewise treated as Beings."
+  },
+  {
+    "id": "chukchi_dawn",
+    "name": {
+      "primary": "Dawn",
+      "alt": ["the Dawn Being", "Tne'sqan", "Morning-Dawn"],
+      "transliterations": { "ckt": "Тнэскын", "rom": "Tneskyn" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Chukchi",
+    "primaryTradition": "Chukchi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "dawn-light",
+        "contextTag": "lifelong",
+        "term": { "value": "тнэскын", "script": "Cyrl", "rom": "tneskyn" },
+        "sources": [{ "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, 1904–1909, listing Dawn among the benevolent Beings (vaʼirgьt) toward sunrise" }]
+      },
+      {
+        "sphereId": "benevolent-direction",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909): the principal sacrifices are directed toward the Dawn and the directions of sunrise" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive-the-sacrifice",
+        "name": "receives the people's principal sacrifices at the sunrise quarter",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The Dawn is the chief of the benevolent Beings; offerings are made facing the place of sunrise.",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909)" }]
+      },
+      {
+        "id": "guard-the-bright-quarter",
+        "name": "keeps the bright, life-giving side of the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Opposed to the dark/northern quarter associated with hostile spirits (ke'let).",
+        "sources": [{ "kind": "secondary", "reference": "Bogoras, The Chukchee (1904–1909), opposition of Dawn-quarter to the dark north" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Among the Chukchi sacred Beings, the Dawn (toward sunrise) is the foremost benevolent Being and the principal recipient of sacrifice.",
+        "citations": [{ "kind": "secondary", "reference": "Waldemar Bogoras, The Chukchee, Jesup North Pacific Expedition VII, 1904–1909" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class direction-Being (classed as deity), one of the vaʼirgьt. Bogoras records Dawn, Mid-day, Zenith and the Pole-Star as the chief 'Beings' (vaʼirgьt) to whom sacrifices go; Dawn is pre-eminent. The romanization Tneskyn follows Bogoras's Chukchi direction-terms for the sunrise quarter."
+  },
+  {
+    "id": "nivkh_pal_yz",
+    "name": {
+      "primary": "Master of the Mountain",
+      "alt": ["Pal-yz", "Pal Yz", "Pal-yz'", "Pal-Yngyt"],
+      "transliterations": { "niv": "Пал ыз", "rom": "Pal yz" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nivkh",
+    "primaryTradition": "Nivkh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "mountains-and-forest",
+        "contextTag": "lifelong",
+        "term": { "value": "пал", "script": "Cyrl", "rom": "pal" },
+        "sources": [{ "kind": "secondary", "reference": "Lev Shternberg, The Social Organization of the Gilyak (ed. Bruce Grant, 1999), on Pal-yz' master of the mountains and taiga" }]
+      },
+      {
+        "sphereId": "game-animals",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999): Pal-yz' supplies the Nivkh with wildlife and grants hunting luck" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "release-the-game",
+        "name": "sends forest game to the hunters who honor him",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Pal-yz' and the sea-master Tol-yz' between them supply the Nivkh with game and bless them with luck and health.",
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999)" }]
+      },
+      {
+        "id": "keep-the-bear-people",
+        "name": "keeps the bears as his mountain people and messengers",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Bears are revered as the mountain god's own people; the reared festival-bear is sent back to Pal-yz' as a messenger.",
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999), bears as messengers of the mountain god" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Pal-yz' is the Nivkh master-spirit (yz) of the mountains and taiga, supplier of game, whose people are the bears returned to him through the bear festival.",
+        "citations": [
+          { "kind": "secondary", "reference": "Lev Shternberg, The Social Organization of the Gilyak, ed. Bruce Grant, 1999" },
+          { "kind": "secondary", "reference": "Wikipedia/eHRAF summaries of Nivkh religion drawing on Shternberg, on Pal-yz' and Tol-yz'" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class master-of-the-mountain (classed as deity). 'Yz' (also yzng) is the Nivkh word for a master-spirit/god of a natural domain; pal = mountain. Documentation rests on Lev Shternberg's foundational Gilyak ethnography."
+  },
+  {
+    "id": "nivkh_tol_yz",
+    "name": {
+      "primary": "Master of the Sea",
+      "alt": ["Tol-yz", "Tol Yz", "Tol-yz'", "Tol-Ynгyt"],
+      "transliterations": { "niv": "Тол ыз", "rom": "Tol yz" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Nivkh",
+    "primaryTradition": "Nivkh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sea-and-water",
+        "contextTag": "lifelong",
+        "term": { "value": "тол", "script": "Cyrl", "rom": "tol" },
+        "sources": [{ "kind": "secondary", "reference": "Lev Shternberg, The Social Organization of the Gilyak (1999), on Tol-yz' master of the sea" }]
+      },
+      {
+        "sphereId": "fish-and-sea-game",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999): Tol-yz' supplies fish and sea-mammals" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "send-the-fish-and-seals",
+        "name": "sends fish and sea-mammals to the Nivkh",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Counterpart of the mountain-master Pal-yz'; together they supply land and sea game and grant luck and health.",
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999)" }]
+      },
+      {
+        "id": "rule-the-undersea-household",
+        "name": "keeps an undersea household to which sea-creatures return",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Like the mountain people of Pal-yz', the killer-whales and seals are reckoned the sea-master's own folk.",
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999), masters of the elements and their animal peoples" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tol-yz' is the Nivkh master-spirit (yz) of the sea, supplier of fish and sea-mammals, counterpart of the mountain-master Pal-yz'.",
+        "citations": [
+          { "kind": "secondary", "reference": "Lev Shternberg, The Social Organization of the Gilyak, ed. Bruce Grant, 1999" },
+          { "kind": "secondary", "reference": "Wikipedia/eHRAF summaries of Nivkh religion drawing on Shternberg" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class master-of-the-sea (classed as deity). tol = sea/water; yz = master-spirit. Forms with Pal-yz' the basic land/sea pair of the Nivkh animist cosmology recorded by Shternberg."
+  },
+  {
+    "id": "nivkh_bear",
+    "name": {
+      "primary": "Mountain-Person Bear",
+      "alt": ["the Bear", "Pal-nivkh", "the festival bear"],
+      "transliterations": { "niv": "чхыф", "rom": "chxyf" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Nivkh",
+    "primaryTradition": "Nivkh",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["nivkh_pal_yz"],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "mediation-with-spirits",
+        "contextTag": "lifelong",
+        "term": { "value": "чхыф", "script": "Cyrl", "rom": "chxyf" },
+        "sources": [{ "kind": "secondary", "reference": "Lev Shternberg, The Social Organization of the Gilyak (1999), on the bear as messenger between humans and the mountain god" }]
+      },
+      {
+        "sphereId": "the-bear-festival",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Chris Hann / Cambridge, and Shternberg (1999), on the Nivkh bear festival as the central rite of the cosmology" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry-the-message-home",
+        "name": "carries the people's gifts and message back to the mountain god",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The reared bear, ceremonially killed at the festival, returns to Pal-yz' bearing the clan's offerings and goodwill.",
+        "sources": [{ "kind": "secondary", "reference": "Shternberg, The Social Organization of the Gilyak (1999)" }]
+      },
+      {
+        "id": "renew-the-game-supply",
+        "name": "secures continued game and luck in exchange for honor",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "By honoring and 'sending home' the bear, the Nivkh renew the flow of wildlife from the mountain master.",
+        "sources": [{ "kind": "secondary", "reference": "Cambridge Business History Review, 'The Nivkh People's Sustainable Bear Hunting Enterprise', on the festival's reciprocity with the mountain spirits" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "festival-cage",
+        "kind": "structure",
+        "name": "bear-rearing cage",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "specially built enclosure in which the festival bear-cub is raised as honored kin",
+        "notes": "The cub is reared for years, fed and cleaned, before the ceremony.",
+        "sources": [{ "kind": "secondary", "reference": "Cambridge Business History Review, 'The Nivkh People's Sustainable Bear Hunting Enterprise'" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "In Nivkh cosmology the bear is a mountain-person and messenger of the mountain god Pal-yz'; the bear festival rears and ceremonially sends a bear back to the mountain spirits to renew game and luck.",
+        "citations": [
+          { "kind": "secondary", "reference": "Lev Shternberg, The Social Organization of the Gilyak, ed. Bruce Grant, 1999" },
+          { "kind": "secondary", "reference": "Cambridge, Business History Review, 'The Nivkh People's Sustainable Bear Hunting Enterprise, 17th–20th Centuries'" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero/mediator tier (classed as demigod: a sacred animal-person, not a free deity). Chxyf is the Nivkh word for bear. The bear festival is the keystone of Nivkh religion; the festival bear is treated as honored kin and as the envoy of Pal-yz'."
+  },
+  {
+    "id": "khanty_num_torum",
+    "name": {
+      "primary": "Sky Father",
+      "alt": ["Num-Torum", "Numi-Torum", "Num Turem", "Torum"],
+      "transliterations": { "kca": "Нум Турэм", "rom": "Num Turem", "mns": "Нуми-Торум" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khanty",
+    "primaryTradition": "Khanty",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "торум", "script": "Cyrl", "rom": "torum" },
+        "sources": [{ "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FF Communications), 1921–1927, on Num-Torum the sky/heaven god of the Ob-Ugrians" }]
+      },
+      {
+        "sphereId": "weather",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927), on the sky-god governing weather" }]
+      },
+      {
+        "sphereId": "world-order",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, 'Num-Turem' (citing Ob-Ugric scholarship), on the supreme sky-god and moral order" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule-the-seven-heavens",
+        "name": "rules from the highest of the seven heavens",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Dwells in the uppermost of seven sky-levels, distant from human affairs.",
+        "sources": [{ "kind": "secondary", "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927)" }]
+      },
+      {
+        "id": "father-the-sky-children",
+        "name": "begets the seven sons and the daughter who order the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Father of seven sons (incl. Mir-susne-khum) and one daughter by Kaltes-Ekwa; sends them to govern the middle world.",
+        "sources": [{ "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, on Numi-Torum's children" }]
+      },
+      {
+        "id": "send-down-the-earth-raiser",
+        "name": "sends a diver to raise the earth from the primal water",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In the earth-diver creation the sky-god commissions the raising of land from the waters (a loon/the Kul-Otyr in variants).",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921), Ob-Ugric earth-diver creation" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Num-Torum (Khanty Num Turem; Mansi Numi-Torum) is the Ob-Ugric supreme sky-god who rules the uppermost of seven heavens and fathers the divine children, including Mir-susne-khum, by Kaltes-Ekwa.",
+        "citations": [
+          { "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, FF Communications, 1921–1927" },
+          { "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection, 1892–1921" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class sky-god (classed as deity). Native compound: num/numi 'upper, high' + torum/torem 'sky, god'. Authored under the Khanty label (Num Turem Aśi, 'Upper Sky Father'); the Mansi form Numi-Torum is given as a transliteration and the Mansi figures (Mir-susne-khum, Kaltes-Ekwa) are authored separately under the Mansi label per the tradition split."
+  },
+  {
+    "id": "khanty_kul_otyr",
+    "name": {
+      "primary": "Lord of the Underworld",
+      "alt": ["Kul-Otyr", "Kul'-Otyr", "Khul-Otyr", "Kul- Otyr"],
+      "transliterations": { "kca": "Хынь ики", "rom": "Hyń iki", "mns": "Куль-отыр" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khanty",
+    "primaryTradition": "Khanty",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "underworld",
+        "contextTag": "lifelong",
+        "term": { "value": "куль", "script": "Cyrl", "rom": "kul" },
+        "sources": [{ "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (1921–1927), on Kul'/Khul' the underworld lord and bringer of disease" }]
+      },
+      {
+        "sphereId": "disease-and-death",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com / Ob-Ugric religion, on Kul-Otyr spreading sickness and misfortune" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise-the-earth-from-the-deep",
+        "name": "dives to bring up the first earth from beneath the water",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In a Mansi earth-diver variant Kul-Otyr fetches the mud from which the earth is made, at Numi-Torum's command.",
+        "sources": [{ "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection (1892–1921), earth-diver variant with Kul-Otyr" }]
+      },
+      {
+        "id": "send-sickness-among-people",
+        "name": "spreads disease and misfortune from the lower world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Chief antagonist of Ob-Ugric myth, ruler of the dark underworld.",
+        "sources": [{ "kind": "secondary", "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kul-Otyr is the Ob-Ugric (Khanty/Mansi) lord of the underworld, source of disease and death and chief adversary of the sky-god, who in some variants raises the first earth from the water.",
+        "citations": [
+          { "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, 1921–1927" },
+          { "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection, 1892–1921" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class underworld lord (classed as deity). kul/khul = evil spirit/devil; otyr = lord/hero. Authored under the Khanty label with the Mansi form Kul-Otyr as transliteration; counterpart of the sky-father Num-Torum in the upper/lower-world dualism."
+  },
+  {
+    "id": "khanty_yli_torum",
+    "name": {
+      "primary": "Lower Sky Lord",
+      "alt": ["Yli-Torum", "Il-Torum", "Yli-Torem"],
+      "transliterations": { "kca": "Ил Турэм", "rom": "Il Turem", "mns": "Йли-Торум" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Khanty",
+    "primaryTradition": "Khanty",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["khanty_num_torum"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "lower-sky-and-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "ил торум", "script": "Cyrl", "rom": "il torum" },
+        "sources": [{ "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (1921–1927), on the layered torum-deities including the lower (il) sky-power" }]
+      },
+      {
+        "sphereId": "support-of-the-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Ob-Ugric pantheon overviews (brickthology; Karjalainen), on the under-earth/lower-world torum balancing Numi-Torum" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "uphold-the-earth-from-below",
+        "name": "holds and steadies the earth from below",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As the 'lower' torum he is the counterweight beneath the world to the high sky-father Num-Torum.",
+        "sources": [{ "kind": "secondary", "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927)" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Yli-Torum (Il-Torum, 'Lower Torum') is the Ob-Ugric lower/under-earth sky-power, paired beneath the high sky-father Num-Torum in the layered torum cosmology.",
+        "citations": [{ "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, FF Communications, 1921–1927" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Spirit-class layered sky/earth deity (classed as deity). il/yli = 'lower, under'; contrasts with num/numi 'upper' in Num-Torum. Attestation is thinner and more variable than for Num-Torum, hence secondary weight; included per the brief's request for Yli-Torum, with the Ob-Ugric 'torum' layering documented by Karjalainen."
+  },
+  {
+    "id": "mansi_mir_susne_khum",
+    "name": {
+      "primary": "World-Surveyor Man",
+      "alt": ["Mir-susne-khum", "Mir-Susne-Khum", "World-Watching-Man", "World-Overseeing Man"],
+      "transliterations": { "mns": "Мир-суснэ-хум", "rom": "Mir-susne-xum", "kca": "Мир савитты хо" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Mansi",
+    "primaryTradition": "Mansi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["khanty_num_torum"],
+    "temporal": { "era": "mythic-age" },
+    "domains": [
+      {
+        "sphereId": "watching-over-the-world",
+        "contextTag": "lifelong",
+        "term": { "value": "мир-суснэ-хум", "script": "Cyrl", "rom": "mir-susne-xum" },
+        "sources": [{ "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, on Mir-susne-xum 'the man who watches the world'" }]
+      },
+      {
+        "sphereId": "intercession",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921): he mediates between gods and humans, carrying his father's word" }]
+      },
+      {
+        "sphereId": "fertility-and-fortune",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (1921–1927), on the World-Surveyor as giver of fertility and prosperity" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ride-the-circuit-of-the-world",
+        "name": "rides the daily circuit of the world to oversee mankind",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The radiant horseman who crosses the sky each day surveying humanity and keeping the cosmic balance; sometimes equated with the sun.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921)" }]
+      },
+      {
+        "id": "carry-the-fathers-word",
+        "name": "bears the sky-father's messages between the worlds",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Intermediary and protector; the youngest/seventh son entrusted with watching the world.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921)" }]
+      },
+      {
+        "id": "take-the-goose-form",
+        "name": "changes into a goose or crane to travel the sky",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Associated with the wild goose and crane; his symbol is the gold goose, his tree the birch.",
+        "sources": [{ "kind": "secondary", "reference": "folklore.ee, 'MOS'-Woman' and Ob-Ugric studies, on Mir-susne-xum's goose/crane associations and gold-goose emblem" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "winged-horse",
+        "kind": "mount",
+        "name": "sky-horse Tovlin-luva",
+        "term": { "value": "Товлынг лув", "script": "Cyrl", "rom": "Tovlyng luv" },
+        "role": "winged horse on which he rides the circuit of the sky",
+        "notes": "Tovlin-luva, the 'winged horse'; in some tales an iron horse with eight wings given after his transformation.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921); Ob-Ugric pantheon overviews on Tovlin-luva, the winged horse" }]
+      },
+      {
+        "id": "gold-goose-emblem",
+        "kind": "emblem",
+        "name": "golden goose",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "his sacred bird-emblem and shape of travel",
+        "notes": "The gold goose (and the birch) are his attributes in Ob-Ugric cult.",
+        "sources": [{ "kind": "secondary", "reference": "folklore.ee Ob-Ugric studies, gold goose and birch as Mir-susne-xum's symbols" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mir-susne-khum, the 'World-Surveyor / World-Watching Man', is the youngest son of Numi-Torum and Kaltes-Ekwa, a radiant sky-rider on the winged horse Tovlin-luva who oversees mankind and mediates between gods and humans.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection, 1892–1921" },
+          { "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, 1921–1927" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Culture-hero / divine-rider tier (classed as demigod: a divine son and mediator-hero). Mansi Mir-susne-xum; Khanty Mĭr Šawijti Xu ('World-Surveying Man'). The pre-eminent Ob-Ugric cultural ancestor and intercessor; documentation chiefly from Munkácsi's Vogul (Mansi) folklore corpus and Karjalainen."
+  },
+  {
+    "id": "mansi_kaltes_ekwa",
+    "name": {
+      "primary": "Dawn and Birth Goddess",
+      "alt": ["Kaltes-Ekwa", "Kaltas-Ekwa", "Kaltes", "Kaltash"],
+      "transliterations": { "mns": "Калтащ-эква", "rom": "Kaltaś-ekwa", "kca": "Калтащ" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mansi",
+    "primaryTradition": "Mansi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "birth-and-childbirth",
+        "contextTag": "lifelong",
+        "term": { "value": "эква", "script": "Cyrl", "rom": "ekwa" },
+        "sources": [{ "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection (1892–1921), on Kaltes-Ekwa the birth-giving goddess called on in childbirth" }]
+      },
+      {
+        "sphereId": "dawn",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (1921–1927), on Kaltes as goddess of the dawn" }]
+      },
+      {
+        "sphereId": "fate",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921), Kaltes as goddess of fate and the moon (month of April)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant-safe-birth",
+        "name": "grants safe birth to women who call on her",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The principal goddess of childbirth in Ob-Ugric cult; she allots each newborn its life-span and fate.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921)" }]
+      },
+      {
+        "id": "open-the-dawn",
+        "name": "brings the daylight and the dawn",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Goddess of dawn, associated with the moon and the month of April.",
+        "sources": [{ "kind": "secondary", "reference": "Karjalainen, Die Religion der Jugra-Völker (1921–1927)" }]
+      },
+      {
+        "id": "take-the-hare-form",
+        "name": "changes into a hare to move between the worlds",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "A shape-shifter often manifesting as a hare.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921), Kaltes as shape-shifter in hare form" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Kaltes-Ekwa is the Ob-Ugric (Mansi/Khanty) goddess of dawn, childbirth and fate, wife of Numi-Torum and mother of Mir-susne-khum, a shape-shifter manifesting as a hare.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection, 1892–1921" },
+          { "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, 1921–1927" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class mother/dawn goddess (classed as deity). 'Ekwa' = woman/old woman in Mansi; her name is also given Kaltaś. Mother of the World-Surveyor; her sphere joins birth, dawn, the moon and fate. The 'goose' association is properly her son Mir-susne-khum's, so it is not assigned to her here."
+  },
+  {
+    "id": "mansi_numi_torum",
+    "name": {
+      "primary": "Upper Sky Father",
+      "alt": ["Numi-Torum", "Numi-Torem", "Numi Torum Aś"],
+      "transliterations": { "mns": "Нуми-Торум", "rom": "Numi-Torum" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mansi",
+    "primaryTradition": "Mansi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "торум", "script": "Cyrl", "rom": "torum" },
+        "sources": [{ "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection (1892–1921), on Numi-Torum the Vogul (Mansi) sky-father" }]
+      },
+      {
+        "sphereId": "creation-of-the-world",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921), Numi-Torum ordering the earth-diver creation" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "order-the-creation",
+        "name": "orders the raising of the earth and the shaping of the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The Mansi sky-father directs the earth-diver creation and disposes the world; dwells in the topmost heaven.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921)" }]
+      },
+      {
+        "id": "lower-the-children-to-earth",
+        "name": "sends his sons down to govern and watch the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Father, by Kaltes-Ekwa, of the seven sons (incl. Mir-susne-khum) and a daughter who order the middle world.",
+        "sources": [{ "kind": "secondary", "reference": "Munkácsi, Vogul Folklore Collection (1892–1921), Numi-Torum's children" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Numi-Torum is the Mansi (Vogul) supreme sky-father, orderer of the earth-diver creation and father of the divine sons including Mir-susne-khum.",
+        "citations": [
+          { "kind": "secondary", "reference": "Bernát Munkácsi, Vogul Folklore Collection, 1892–1921" },
+          { "kind": "secondary", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, 1921–1927" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Spirit-class sky-father (classed as deity). This is the Mansi (Vogul) form of the same Ob-Ugric high god authored under the Khanty label as Num-Torum; both are included with the proper tradition labels per the brief, sharing the num/numi 'upper' + torum 'sky/god' etymology and the Munkácsi (Mansi) vs Karjalainen (both) source base."
+  }
+]
+```
+
+Now let me sanity-check the output against the schema and hard rules before finalizing.

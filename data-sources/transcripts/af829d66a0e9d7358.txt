@@ -1,0 +1,485 @@
+I now have thorough, well-attested research on all figures with specific KTU citations, native Ugaritic terms, distinct domains vs. faculties, and the divine-descent ladder. Let me compile the complete registry.
+
+Key facts confirmed across sources:
+- **El** (ʾil): supreme creator, "Bull" (ṯr), "Father of years" (ʾab šnm), "Creator of creatures" (bny bnwt), dwells at source of two rivers, head of divine council, decrees authority. Philo: Elus/Cronus.
+- **Athirat/Asherah** (ʾaṯrt): "Lady Athirat of the Sea," "creatress of the gods" (qnyt ʾilm), mother of 70 sons, intercedes with El for Baal's palace (KTU 1.4).
+- **Baal-Hadad** (bʿl/hd): storm-king, son of Dagan, Mount Zaphon, weapons Yagrush & Ayamur forged by Kothar (KTU 1.2 IV).
+- **Anat** (ʿnt): warrior "maiden" (btlt), slays foes, wades in blood (KTU 1.3 II), kills Mot by winnowing/grinding (KTU 1.6 II), seizes Aqhat's bow (KTU 1.18).
+- **Mot** (mt): death, son of El, huge mouth/throat, swallows Baal (KTU 1.5), ground like grain (KTU 1.6).
+- **Yam** (ym): Prince Sea, Judge River (ṯpṭ nhr), given kingship by El, defeated by Baal (KTU 1.2).
+- **Dagan** (dgn): grain, father of Baal, second after El.
+- **Athtart/Astarte** (ʿṯtrt): restrains Baal (KTU 1.2 I), "Name of Baal," hexes Yam (KTU 1.2 IV).
+- **Shapshu** (špš): sun-goddess, "torch of the gods" (nrt ʾilm), psychopomp, helps Anat carry Baal (KTU 1.6).
+- **Yarikh** (yrḫ): moon, "lamp of heaven," weds Nikkal (KTU 1.24).
+- **Kothar-wa-Hasis** (kṯr-w-ḫss): smith, dwells Memphis/Caphtor, forges Baal's weapons & Aqhat's bow.
+- **Resheph** (ršp): plague/war, bow & arrow, gatekeeper of Shapshu, in Kirta (one-fifth gathered).
+- **Kotharot** (kṯrt): seven swallow-goddesses, midwives, KTU 1.24 & 1.17.
+- **Kirta** (krt): son of El, demigod, KTU 1.14-1.16.
+- **Aqhat** (ʾaqht): son of Daniel, KTU 1.17-1.19.
+- **Daniel/Daniʾilu** (dnʾil): sage-king, judge of widow/orphan, one of the Rephaim.
+- **Rephaim** (rpum): deified dead kings, KTU 1.20-1.22.
+
+Here is the completed registry:
+
+```json
+[
+  {
+    "id": "canaanite_el",
+    "name": { "primary": "El", "alt": ["ʾIlu","Ilu","Elus"], "transliterations": { "ugaritic": "ʾil" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "cosmogonic" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "bny bnwt", "script": "Ugaritic", "rom": "bāniyu binwāti" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 II 11; 1.6 III 5" } ] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "mlk", "script": "Ugaritic", "rom": "malku" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3–1.4 (divine council at El's abode)" } ] },
+      { "sphereId": "wisdom-decree", "contextTag": "lifelong", "term": { "value": "ṯpṭ", "script": "Ugaritic", "rom": "ṯāpiṭu" }, "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 (El's nocturnal decree to Kirta)" } ] }
+    ],
+    "faculties": [
+      { "id": "decree-fate", "name": "Pronounce binding decrees that the gods must obey", "term": { "value": "ṯʿ", "script": "Ugaritic", "rom": "ṯuʿûru" }, "inheritability": "none", "notes": "his word grants kingship and palace permits", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 IV–V (El authorizes Baal's palace)" } ] },
+      { "id": "beget-gods", "name": "Father the gods and mortals as progenitor", "term": { "value": "ʾab ʾadm", "script": "Ugaritic", "rom": "ʾabū ʾadami" }, "inheritability": "partial", "notes": "called father of gods and father of man", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 III (seventy sons of Athirat/El)" } ] },
+      { "id": "grant-heir", "name": "Bless the childless with offspring in a dream", "term": { "value": "brk", "script": "Ugaritic", "rom": "baraku" }, "inheritability": "none", "notes": "appears to Kirta and Daniʾilu", "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.15 II; Aqhat Epic, KTU 1.17 I" } ] }
+    ],
+    "materialCulture": [
+      { "id": "el-abode-rivers", "kind": "dwelling", "name": "Tent-abode at the source of the two rivers", "term": { "value": "mbk nhrm", "script": "Ugaritic", "rom": "mabbaku naharēmi" }, "role": "dweller", "notes": "where the cosmic deeps meet; seat of the council", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 IV 20–24" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.1–1.6)" }, { "kind": "primary", "reference": "Kirta Epic (KTU 1.14–1.16)" }, { "kind": "primary", "reference": "Philo of Byblos / Sanchuniathon (Elus-Cronus), via Eusebius, Praeparatio Evangelica I.10" } ], "weight": "primary" }
+    ],
+    "notes": "Aged supreme creator, head of the divine council; epithets 'Bull' (ṯr) and 'Father of Years' (ʾab šnm). Hellenized as Elus/Cronus by Philo of Byblos."
+  },
+  {
+    "id": "canaanite_athirat",
+    "name": { "primary": "Athirat", "alt": ["Asherah","ʾAṯiratu","Elat"], "transliterations": { "ugaritic": "ʾaṯrt" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "cosmogonic" },
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "qnyt ʾilm", "script": "Ugaritic", "rom": "qāniyatu ʾilīma" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 I 22; III 26 (creatress of the gods)" } ] },
+      { "sphereId": "sea", "contextTag": "lifelong", "term": { "value": "rbt ʾaṯrt ym", "script": "Ugaritic", "rom": "rabbatu ʾaṯiratu yammi" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 II–IV (Lady Athirat of the Sea, ~12x)" } ] }
+    ],
+    "faculties": [
+      { "id": "intercede-el", "name": "Petition El to grant a rival god kingship and palace", "term": { "value": "ʿny", "script": "Ugaritic", "rom": "ʿanaya" }, "inheritability": "none", "notes": "wins El's leave for Baal's palace", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 IV 40–V 1" } ] },
+      { "id": "mother-seventy", "name": "Mother and preside over the seventy gods", "term": { "value": "šbʿm bn ʾaṯrt", "script": "Ugaritic", "rom": "šabʿūma binū ʾaṯirati" }, "inheritability": "partial", "notes": "the seventy sons of Athirat", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 VI 46" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.1–1.6)" }, { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 IV (Kirta's vow to Athirat of Tyre)" } ], "weight": "primary" }
+    ],
+    "notes": "Consort of El and mother-goddess; 'Lady Athirat of the Sea' and 'creatress of the gods.' Same figure as biblical Asherah."
+  },
+  {
+    "id": "canaanite_dagan",
+    "name": { "primary": "Dagan", "alt": ["Dagon","Dāgānu"], "transliterations": { "ugaritic": "dgn" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "cosmogonic" },
+    "domains": [
+      { "sphereId": "grain-fertility", "contextTag": "lifelong", "term": { "value": "dgn", "script": "Ugaritic", "rom": "dāgānu" }, "sources": [ { "kind": "primary", "reference": "Ugaritic ritual texts, KTU 1.41 (grain libation offerings)" } ] }
+    ],
+    "faculties": [
+      { "id": "yield-harvest", "name": "Grant grain and abundant harvest to the land", "term": { "value": "dgn", "script": "Ugaritic", "rom": "dāgānu" }, "inheritability": "none", "notes": "name itself means 'grain'", "sources": [ { "kind": "primary", "reference": "Ugaritic offering lists, KTU 1.47; 1.118 (Dagan ranked after El)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "dagan-temple-ugarit", "kind": "structure", "name": "Temple of Dagan on the Ugarit acropolis", "term": { "value": "bt dgn", "script": "Ugaritic", "rom": "bētu dāgāni" }, "role": "patron", "notes": "twin temple beside Baal's on the acropolis", "sources": [ { "kind": "secondary", "reference": "Ras Shamra excavations (Schaeffer); two dedicatory stelae to Dagan" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic god-lists KTU 1.47, 1.118 (RS 20.024)" }, { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 I 19 (Baal 'son of Dagan')" }, { "kind": "primary", "reference": "Philo of Byblos / Sanchuniathon (Dagon as discoverer of grain), via Eusebius" } ], "weight": "primary" }
+    ],
+    "notes": "Grain-god, senior deity ranked just below El; father of Baal-Hadad in the Ugaritic texts."
+  },
+  {
+    "id": "canaanite_baal",
+    "name": { "primary": "Baal", "alt": ["Baʿlu","Hadad","Haddu"], "transliterations": { "ugaritic": "bʿl" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["canaanite_dagan"],
+    "parentRoles": { "canaanite_dagan": "paternal" },
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "bʿl", "script": "Ugaritic", "rom": "baʿlu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3–1.4" } ] },
+      { "sphereId": "kingship", "contextTag": "post-victory", "term": { "value": "zbl bʿl ʾarṣ", "script": "Ugaritic", "rom": "zabūlu baʿlu ʾarṣi" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 VII (enthronement on Mount Zaphon)" } ] },
+      { "sphereId": "fertility-rain", "contextTag": "lifelong", "term": { "value": "rkb ʿrpt", "script": "Ugaritic", "rom": "rākibu ʿarapāti" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3 II–III (Rider on the Clouds)" } ] }
+    ],
+    "faculties": [
+      { "id": "command-storm", "name": "Loose the thunderstorm, lightning, and rains", "term": { "value": "rʿm", "script": "Ugaritic", "rom": "raʿamu" }, "inheritability": "partial", "notes": "opens a window in his palace to thunder", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 VII 25–31" } ] },
+      { "id": "slay-sea", "name": "Smite and destroy the sea-god Yam in single combat", "term": { "value": "ymḫṣ", "script": "Ugaritic", "rom": "yamḫaṣu" }, "inheritability": "none", "notes": "strikes Yam between the eyes", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 IV 23–27" } ] },
+      { "id": "die-and-return", "name": "Die into the underworld and rise again with the rains", "term": { "value": "ḥy bʿl", "script": "Ugaritic", "rom": "ḥayya baʿlu" }, "inheritability": "none", "notes": "'Mightiest Baal lives!' after Mot", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.6 III 1–9, 20–21" } ] }
+    ],
+    "materialCulture": [
+      { "id": "baal-yagrush", "kind": "weapon", "name": "Thunder-mace Yagrush (Chaser)", "term": { "value": "ygrš", "script": "Ugaritic", "rom": "yagrušu" }, "role": "wielder", "notes": "forged by Kothar; strikes Yam's shoulders", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 IV 11–18" } ] },
+      { "id": "baal-ayamur", "kind": "weapon", "name": "Thunder-mace Ayamur (Driver)", "term": { "value": "ʾaymr", "script": "Ugaritic", "rom": "ʾayyamarru" }, "role": "wielder", "notes": "second Kothar mace; fells Yam", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 IV 19–23" } ] },
+      { "id": "baal-palace-zaphon", "kind": "structure", "name": "Cedar-and-silver palace on Mount Zaphon", "term": { "value": "bht bʿl", "script": "Ugaritic", "rom": "bahatū baʿli" }, "role": "owner", "notes": "built by Kothar; sign of his kingship", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 V–VII" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.1–1.6)" }, { "kind": "primary", "reference": "Philo of Byblos / Sanchuniathon (Demarous/Adodos = Hadad), via Eusebius" } ], "weight": "primary" }
+    ],
+    "notes": "Storm-god, Rider on the Clouds, and king of the active gods at Ugarit; enthroned on Mount Zaphon after defeating Yam and Mot."
+  },
+  {
+    "id": "canaanite_anat",
+    "name": { "primary": "Anat", "alt": ["ʿAnatu","Anath"], "transliterations": { "ugaritic": "ʿnt" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": ["canaanite_el"],
+    "parentRoles": { "canaanite_el": "paternal" },
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "btlt ʿnt", "script": "Ugaritic", "rom": "batūltu ʿanatu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3 II (the Maiden Anat)" } ] },
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "ṣd", "script": "Ugaritic", "rom": "ṣayda" }, "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 VI; Baal & the Heifer, KTU 1.10" } ] }
+    ],
+    "faculties": [
+      { "id": "wade-in-blood", "name": "Slaughter warriors and wade knee-deep in their blood", "term": { "value": "tmtḫṣ", "script": "Ugaritic", "rom": "timtaḫiṣu" }, "inheritability": "none", "notes": "binds heads and hands to her girdle", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3 II 5–30" } ] },
+      { "id": "destroy-mot", "name": "Cleave, winnow, and grind the death-god like grain", "term": { "value": "tṭḥn", "script": "Ugaritic", "rom": "tiṭḥanu" }, "inheritability": "none", "notes": "splits Mot with a blade, sows him in a field", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.6 II 30–37" } ] },
+      { "id": "slay-serpent", "name": "Crush cosmic monsters including the seven-headed serpent", "term": { "value": "ʾklt", "script": "Ugaritic", "rom": "ʾaklatu" }, "inheritability": "none", "notes": "boasts of muzzling Tunnanu and Litan", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3 III 38–46" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.1–1.6)" }, { "kind": "primary", "reference": "Aqhat Epic (KTU 1.17–1.19)" } ], "weight": "primary" }
+    ],
+    "notes": "Violent warrior-huntress and 'Maiden' (btlt); sister and champion of Baal who avenges and revives him."
+  },
+  {
+    "id": "canaanite_yam",
+    "name": { "primary": "Yam", "alt": ["Yammu","Yamm","Judge River"], "transliterations": { "ugaritic": "ym" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "dead",
+    "parentIds": ["canaanite_el"],
+    "parentRoles": { "canaanite_el": "paternal" },
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sea", "contextTag": "lifelong", "term": { "value": "zbl ym", "script": "Ugaritic", "rom": "zabūlu yammu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 I (Prince Sea)" } ] },
+      { "sphereId": "rivers", "contextTag": "lifelong", "term": { "value": "ṯpṭ nhr", "script": "Ugaritic", "rom": "ṯāpiṭu naharu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 I 7 (Judge River)" } ] }
+    ],
+    "faculties": [
+      { "id": "demand-tribute", "name": "Demand the gods surrender Baal as his bondservant", "term": { "value": "tn bʿl", "script": "Ugaritic", "rom": "tinū baʿla" }, "inheritability": "none", "notes": "envoys cow the council before El", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 I 18–35" } ] },
+      { "id": "rule-waters", "name": "Hold kingship over the chaotic waters by El's grant", "term": { "value": "mlk ym", "script": "Ugaritic", "rom": "malku yammu" }, "inheritability": "none", "notes": "El names him king before Baal's rise", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.1 IV 13–20" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.1–1.2)" } ], "weight": "primary" }
+    ],
+    "notes": "Sea-god 'Prince Sea, Judge River'; El's favored prince, slain by Baal with Kothar's maces in the struggle for kingship."
+  },
+  {
+    "id": "canaanite_mot",
+    "name": { "primary": "Mot", "alt": ["Môtu","Mout"], "transliterations": { "ugaritic": "mt" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["canaanite_el"],
+    "parentRoles": { "canaanite_el": "paternal" },
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "mt", "script": "Ugaritic", "rom": "môtu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.5 I (beloved of El, the hero)" } ] },
+      { "sphereId": "underworld", "contextTag": "lifelong", "term": { "value": "ʾarṣ", "script": "Ugaritic", "rom": "ʾarṣu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 VIII; 1.5 II (the miry city of the dead)" } ] }
+    ],
+    "faculties": [
+      { "id": "devour-all", "name": "Swallow gods and men with a throat that spans earth to sky", "term": { "value": "lḥm", "script": "Ugaritic", "rom": "laḥamu" }, "inheritability": "none", "notes": "one lip to earth, one to heaven", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.5 II 2–6" } ] },
+      { "id": "slay-baal", "name": "Kill Baal and drag him down into the netherworld", "term": { "value": "mt bʿl", "script": "Ugaritic", "rom": "môtu baʿli" }, "inheritability": "none", "notes": "Baal descends into Mot's gullet", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.5 V–VI" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.4–1.6)" } ], "weight": "primary" }
+    ],
+    "notes": "Insatiable death-god and ruler of the underworld, son of El; Baal's final adversary, dismembered by Anat yet enduring as the cycle of drought."
+  },
+  {
+    "id": "canaanite_athtart",
+    "name": { "primary": "Athtart", "alt": ["Astarte","ʿAṯtartu","Ashtart"], "transliterations": { "ugaritic": "ʿṯtrt" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "ʿṯtrt", "script": "Ugaritic", "rom": "ʿaṯtartu" }, "sources": [ { "kind": "primary", "reference": "Ugaritic ritual & offering texts, KTU 1.39; 1.112" } ] },
+      { "sphereId": "love-fertility", "contextTag": "lifelong", "term": { "value": "ʿṯtrt", "script": "Ugaritic", "rom": "ʿaṯtartu" }, "sources": [ { "kind": "secondary", "reference": "West Semitic cult of Astarte (love, war, hunting)" } ] }
+    ],
+    "faculties": [
+      { "id": "restrain-baal", "name": "Stay Baal's hand from killing Yam's envoys", "term": { "value": "tʾuḫd", "script": "Ugaritic", "rom": "taʾuḫudu" }, "inheritability": "none", "notes": "grips his right hand with Anat", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 I 40–43" } ] },
+      { "id": "rebuke-baal", "name": "Hex Yam by Baal's name and command the rout", "term": { "value": "bšm", "script": "Ugaritic", "rom": "bi-šumi" }, "inheritability": "none", "notes": "the 'Name of Baal' invoked as a weapon", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 IV 28–30" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle, KTU 1.2 (with Anat restraining Baal)" }, { "kind": "primary", "reference": "Ugaritic ritual texts, KTU 1.39; 1.112; god-list KTU 1.118" } ], "weight": "primary" }
+    ],
+    "notes": "Astral goddess of war and love, 'Name of Baal' (ʿṯtrt-šm-bʿl); prominent in cult, paired with Anat as Baal's restrainer in the myth."
+  },
+  {
+    "id": "canaanite_shapshu",
+    "name": { "primary": "Shapshu", "alt": ["Shapash","Šapšu","Shapsh"], "transliterations": { "ugaritic": "špš" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": ["canaanite_el"],
+    "parentRoles": { "canaanite_el": "paternal" },
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "nrt ʾilm", "script": "Ugaritic", "rom": "nayyiratu ʾilīma" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.6 I–II (Torch of the Gods)" } ] },
+      { "sphereId": "judgment-dead", "contextTag": "lifelong", "term": { "value": "špš", "script": "Ugaritic", "rom": "šapšu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.6 VI 45–49 (rules the shades)" } ] }
+    ],
+    "faculties": [
+      { "id": "cross-underworld", "name": "Travel daily through the land of the dead and back", "term": { "value": "tbʾu", "script": "Ugaritic", "rom": "tabuʾu" }, "inheritability": "none", "notes": "carries messages between worlds", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 VIII 21–24" } ] },
+      { "id": "bear-baal-corpse", "name": "Lift Baal's dead body onto a mourner's shoulders", "term": { "value": "tšt", "script": "Ugaritic", "rom": "tašītu" }, "inheritability": "none", "notes": "helps Anat recover Baal", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.6 I 11–18" } ] },
+      { "id": "seek-baal", "name": "Search out the vanished Baal across the cosmos", "term": { "value": "tdrn", "script": "Ugaritic", "rom": "tadrunu" }, "inheritability": "none", "notes": "scours the netherworld at El's word", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.6 IV 1–24" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.4–1.6)" }, { "kind": "primary", "reference": "Shapshu liturgy, KTU 1.161 (royal funerary rite invoking the Rephaim)" } ], "weight": "primary" }
+    ],
+    "notes": "Sun-goddess 'Torch of the Gods' and El's messenger; psychopomp who judges the dead and aids Anat in recovering Baal's corpse."
+  },
+  {
+    "id": "canaanite_yarikh",
+    "name": { "primary": "Yarikh", "alt": ["Yarih","Yarikhu","Yerah"], "transliterations": { "ugaritic": "yrḫ" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "nyr šmm", "script": "Ugaritic", "rom": "nayyiru šamîma" }, "sources": [ { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 (Lamp of Heaven)" } ] }
+    ],
+    "faculties": [
+      { "id": "pay-brideprice", "name": "Win Nikkal with a vast bride-price of silver and gold", "term": { "value": "trḫ", "script": "Ugaritic", "rom": "tarriḫu" }, "inheritability": "none", "notes": "courts via the broker Ḫiriḫibi", "sources": [ { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 17–32" } ] },
+      { "id": "shine-night", "name": "Illumine the night sky as the lamp of heaven", "term": { "value": "nyr", "script": "Ugaritic", "rom": "nayyiru" }, "inheritability": "none", "notes": "crescent 'lord of the sickle'", "sources": [ { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 1–5" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal (KTU 1.24)" }, { "kind": "primary", "reference": "Ugaritic god-list KTU 1.118 (RS 20.024)" } ], "weight": "primary" }
+    ],
+    "notes": "Moon-god 'Lamp of Heaven'; weds the orchard-goddess Nikkal in KTU 1.24, a hymn likely sung at weddings."
+  },
+  {
+    "id": "canaanite_kothar",
+    "name": { "primary": "Kothar-wa-Hasis", "alt": ["Kothar","Kôṯaru-wa-Ḫasīsu","Skilled-and-Wise"], "transliterations": { "ugaritic": "kṯr w ḫss" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "craft-smithing", "contextTag": "lifelong", "term": { "value": "kṯr", "script": "Ugaritic", "rom": "kôṯaru" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 I 23–43 (fashions divine furnishings)" } ] },
+      { "sphereId": "wisdom-magic", "contextTag": "lifelong", "term": { "value": "ḫss", "script": "Ugaritic", "rom": "ḫasīsu" }, "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 IV 11–23 (incantation over the maces)" } ] }
+    ],
+    "faculties": [
+      { "id": "forge-weapons", "name": "Forge enchanted weapons and name them for victory", "term": { "value": "yṣq", "script": "Ugaritic", "rom": "yaṣuqu" }, "inheritability": "none", "notes": "casts Yagrush and Ayamur for Baal", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.2 IV 11–23" } ] },
+      { "id": "build-palace", "name": "Raise palaces of cedar, silver, and gold", "term": { "value": "bny", "script": "Ugaritic", "rom": "banaya" }, "inheritability": "none", "notes": "builds Baal's house on Zaphon", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.4 V 35–VI 38" } ] },
+      { "id": "craft-bow", "name": "Craft the composite bow given to Aqhat", "term": { "value": "qšt", "script": "Ugaritic", "rom": "qaštu" }, "inheritability": "none", "notes": "bow of horn, sinew, and reed", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 V 2–33" } ] }
+    ],
+    "materialCulture": [
+      { "id": "kothar-forge-caphtor", "kind": "workshop", "name": "Smithy at Memphis and Caphtor (Crete)", "term": { "value": "kptr", "script": "Ugaritic", "rom": "kaptaru" }, "role": "owner", "notes": "his dwelling and seat of his craft", "sources": [ { "kind": "primary", "reference": "Baal Cycle, KTU 1.3 VI 12–16" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Ugaritic Baal Cycle (KTU 1.1–1.6)" }, { "kind": "primary", "reference": "Aqhat Epic (KTU 1.17)" }, { "kind": "primary", "reference": "Philo of Byblos / Sanchuniathon (Chusor the craftsman), via Eusebius" } ], "weight": "primary" }
+    ],
+    "notes": "Divine smith, architect, and magician 'Skilled-and-Wise'; dwells at Memphis and Caphtor and arms the gods and heroes."
+  },
+  {
+    "id": "canaanite_resheph",
+    "name": { "primary": "Resheph", "alt": ["Rashap","Reshef","Rašpu"], "transliterations": { "ugaritic": "ršp" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "plague", "contextTag": "lifelong", "term": { "value": "ršp", "script": "Ugaritic", "rom": "rašpu" }, "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 I 18–19 (a fifth gathered by Resheph)" } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "ršp", "script": "Ugaritic", "rom": "rašpu" }, "sources": [ { "kind": "primary", "reference": "Ugaritic ritual & offering texts, KTU 1.91; 1.105" } ] }
+    ],
+    "faculties": [
+      { "id": "shoot-plague", "name": "Loose plague-arrows that strike down the people", "term": { "value": "ḥṣ", "script": "Ugaritic", "rom": "ḥiṣṣu" }, "inheritability": "none", "notes": "the archer-god of pestilence", "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 I 18–19" } ] },
+      { "id": "guard-gate", "name": "Keep the gate of the sun-goddess at sundown", "term": { "value": "ṯʿr", "script": "Ugaritic", "rom": "ṯāʿiru" }, "inheritability": "none", "notes": "Resheph as Shapshu's doorkeeper", "sources": [ { "kind": "primary", "reference": "Ugaritic omen text, RS 12.061 (Resheph as gatekeeper of Shapshu)" } ] }
+    ],
+    "materialCulture": [
+      { "id": "resheph-bow", "kind": "weapon", "name": "Bow and burning arrows of pestilence", "term": { "value": "qšt", "script": "Ugaritic", "rom": "qaštu" }, "role": "wielder", "notes": "iconography: warrior with raised mace and bow", "sources": [ { "kind": "secondary", "reference": "Levantine Resheph stelae and bronzes (smiting archer)" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Kirta Epic (KTU 1.14)" }, { "kind": "primary", "reference": "Ugaritic god-list KTU 1.118; ritual texts KTU 1.91, 1.105" } ], "weight": "primary" }
+    ],
+    "notes": "Archer-god of plague, war, and the underworld; gatekeeper of the sun-goddess. Equated with Nergal in Ugaritic god-lists."
+  },
+  {
+    "id": "canaanite_kotharot",
+    "name": { "primary": "The Kotharot", "alt": ["Kathirat","Kôṯarātu","Daughters of the Crescent Moon"], "transliterations": { "ugaritic": "kṯrt" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "female", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "childbirth", "contextTag": "lifelong", "term": { "value": "kṯrt", "script": "Ugaritic", "rom": "kôṯarātu" }, "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 II 26–42" } ] },
+      { "sphereId": "marriage-conception", "contextTag": "lifelong", "term": { "value": "bnt hll", "script": "Ugaritic", "rom": "banātu hilāli" }, "sources": [ { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 6–15, 40–50" } ] }
+    ],
+    "faculties": [
+      { "id": "bless-conception", "name": "Grant conception and ease the bed of childbirth", "term": { "value": "yld", "script": "Ugaritic", "rom": "yaladu" }, "inheritability": "none", "notes": "feasted seven days to gain a son", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 I 25–II 46" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Aqhat Epic (KTU 1.17)" }, { "kind": "primary", "reference": "Marriage of Yarikh and Nikkal (KTU 1.24)" } ], "weight": "primary" }
+    ],
+    "notes": "Seven swallow-goddesses, 'Daughters of the Crescent Moon'; divine midwives of conception and childbirth, the only Canaanite deities appearing only as a collective."
+  },
+  {
+    "id": "canaanite_kirta",
+    "name": { "primary": "Kirta", "alt": ["Keret","Kirtu"], "transliterations": { "ugaritic": "krt" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": ["canaanite_el"],
+    "parentRoles": { "canaanite_el": "paternal" },
+    "temporal": { "era": "heroic-age" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "mlk", "script": "Ugaritic", "rom": "malku" }, "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 I (king of Ḫubur)" } ] }
+    ],
+    "faculties": [
+      { "id": "receive-vision", "name": "Receive El's battle-plan in a temple-dream", "term": { "value": "ḥlm", "script": "Ugaritic", "rom": "ḥalāmu" }, "inheritability": "none", "notes": "El instructs him to march on Udum", "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 I 35–III 49" } ] },
+      { "id": "besiege-udum", "name": "March a vast host to besiege Udum and win a bride", "term": { "value": "ṣbʾu", "script": "Ugaritic", "rom": "ṣabaʾu" }, "inheritability": "none", "notes": "wins Hurriya, daughter of King Pabil", "sources": [ { "kind": "primary", "reference": "Kirta Epic, KTU 1.14 III–VI" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Kirta Epic (KTU 1.14–1.16)" } ], "weight": "primary" }
+    ],
+    "notes": "Mortal king explicitly called 'son of El' and 'lad of El' (ǵlm ʾil); falls deadly ill for breaking a vow to Athirat, then is healed by an El-made being. Type demigod by divine sonship."
+  },
+  {
+    "id": "canaanite_daniel",
+    "name": { "primary": "Daniʾilu", "alt": ["Danel","Daniel","Dnil"], "transliterations": { "ugaritic": "dnʾil" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "heroic-age" },
+    "domains": [
+      { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "ydn dn", "script": "Ugaritic", "rom": "yadunu dīna" }, "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 V 4–8 (judges widow and orphan)" } ] }
+    ],
+    "faculties": [
+      { "id": "judge-needy", "name": "Judge the cause of the widow and the orphan at the gate", "term": { "value": "yṯpṭ", "script": "Ugaritic", "rom": "yaṯpuṭu" }, "inheritability": "none", "notes": "the righteous sage at the threshing-floor", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 V 6–8; 1.19 I 19–25" } ] },
+      { "id": "feast-kotharot", "name": "Host the birth-goddesses seven days to gain a son", "term": { "value": "ʾšlḥm", "script": "Ugaritic", "rom": "ʾašalḥimu" }, "inheritability": "none", "notes": "obtains the son Aqhat by their blessing", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 I 1–II 46" } ] },
+      { "id": "curse-killers", "name": "Curse the towns near where his son's blood was shed", "term": { "value": "yqbr", "script": "Ugaritic", "rom": "yaqburu" }, "inheritability": "none", "notes": "recovers Aqhat's remains from the vultures", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.19 III–IV" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Aqhat Epic (KTU 1.17–1.19)" } ], "weight": "primary" }
+    ],
+    "notes": "Righteous sage-king, father of Aqhat, and named among the Rephaim (mt rpʾi, 'man of the Rapiu'). Typed demigod for his Rephaim/ancestral-divine status; biblical Daniel of Ezekiel 14, 28 likely echoes him."
+  },
+  {
+    "id": "canaanite_aqhat",
+    "name": { "primary": "Aqhat", "alt": ["Aqhatu","Aqht"], "transliterations": { "ugaritic": "ʾaqht" } },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "dead",
+    "parentIds": ["canaanite_daniel"],
+    "parentRoles": { "canaanite_daniel": "paternal" },
+    "temporal": { "era": "heroic-age" },
+    "domains": [
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "qšt", "script": "Ugaritic", "rom": "qaštu" }, "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 V–VI (the bow-bearing hunter)" } ] }
+    ],
+    "faculties": [
+      { "id": "wield-divine-bow", "name": "Bear and master the god-forged composite bow", "term": { "value": "qšt", "script": "Ugaritic", "rom": "qaštu" }, "inheritability": "none", "notes": "gift of Kothar at Daniel's feast", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 V 26–39" } ] },
+      { "id": "refuse-anat", "name": "Refuse Anat's offer of immortality for his bow", "term": { "value": "ʾal tšrgn", "script": "Ugaritic", "rom": "ʾal tašarrigīnī" }, "inheritability": "none", "notes": "'do not lie, Maiden; a bow is for men'", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 VI 26–41" } ] }
+    ],
+    "materialCulture": [
+      { "id": "aqhat-bow", "kind": "weapon", "name": "Composite bow of horn, sinew, and reed", "term": { "value": "qšt", "script": "Ugaritic", "rom": "qaštu" }, "role": "wielder", "notes": "made by Kothar; coveted by Anat", "sources": [ { "kind": "primary", "reference": "Aqhat Epic, KTU 1.17 V 2–VI 41" } ] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Aqhat Epic (KTU 1.17–1.19)" } ], "weight": "primary" }
+    ],
+    "notes": "Mortal son granted to Daniel by divine favor; slain by Anat's henchman Yatpan (disguised as a raptor) for refusing to yield his bow. Typed scion as son of the deified hero Daniʾilu."
+  },
+  {
+    "id": "canaanite_rephaim",
+    "name": { "primary": "The Rephaim", "alt": ["Rapiuma","Rapaʾuma","the Shades"], "transliterations": { "ugaritic": "rpum" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Canaanite", "primaryTradition": "Canaanite",
+    "sex": "male", "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "heroic-age" },
+    "domains": [
+      { "sphereId": "ancestral-dead", "contextTag": "lifelong", "term": { "value": "rpum", "script": "Ugaritic", "rom": "rapaʾūma" }, "sources": [ { "kind": "primary", "reference": "Rephaim Texts, KTU 1.20–1.22" } ] },
+      { "sphereId": "healing-blessing", "contextTag": "lifelong", "term": { "value": "rpʾu", "script": "Ugaritic", "rom": "rāpiʾu" }, "sources": [ { "kind": "primary", "reference": "KTU 1.108 (Rapiu, lord of healing)" } ] }
+    ],
+    "faculties": [
+      { "id": "feast-summons", "name": "Journey by chariot to the threshing-floor feast when summoned", "term": { "value": "tlk", "script": "Ugaritic", "rom": "talliku" }, "inheritability": "none", "notes": "three-day ride to a seven-day banquet", "sources": [ { "kind": "primary", "reference": "Rephaim Texts, KTU 1.21–1.22" } ] },
+      { "id": "bless-king", "name": "Bestow blessing and well-being on the reigning king", "term": { "value": "brk", "script": "Ugaritic", "rom": "baraku" }, "inheritability": "none", "notes": "invoked at royal funerary rites", "sources": [ { "kind": "primary", "reference": "Royal funerary liturgy, KTU 1.161" } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [ { "kind": "primary", "reference": "Rephaim Texts (KTU 1.20–1.22)" }, { "kind": "primary", "reference": "Royal funerary liturgy KTU 1.161; KTU 1.108" } ], "weight": "primary" }
+    ],
+    "notes": "Deified dead — semi-divine warrior-kings and ancestors (ilnym, chthonic 'gods who are dead') invoked to bless the living monarch. The deified Daniʾilu belongs to their number."
+  }
+]
+```
+
+Report — what I did and key findings:
+
+I researched the Canaanite/Ugaritic pantheon via web search and authored 18 figures as a single JSON array conforming exactly to the schema. Every domain, faculty, and item carries its own citation, and each figure has figure-level `sources[]`. All `origin` values are `"canon"`; all citations are real attested texts (KTU tablet numbers, the epics, omen/ritual texts, and Philo of Byblos/Sanchuniathon via Eusebius). No modern coinages, no "not attested."
+
+Coverage and tiers:
+- Deities (13): El, Athirat/Asherah, Dagan, Baal-Hadad, Anat, Yam, Mot, Athtart/Astarte, Shapshu, Yarikh, Kothar-wa-Hasis, Resheph, the Kotharot.
+- Divine-descent ladder: Kirta (demigod, son of El — KTU 1.14-1.16), Daniʾilu/Danel (demigod via Rephaim status), Aqhat (scion, son of Daniel), the Rephaim (demigod tier, deified dead — KTU 1.20-1.22).
+
+Key authoring decisions / findings:
+- Domains vs. faculties kept strictly distinct: domains = what they are god OF (e.g., Baal's `storm`/`kingship`); faculties = verb-phrase acts (e.g., "Smite Yam in single combat," Anat's "Cleave, winnow, and grind the death-god like grain").
+- Native terms given as Ugaritic transliteration + romanization throughout (e.g., bʿl/baʿlu, nrt ʾilm/nayyiratu ʾilīma, btlt ʿnt).
+- Baal's two Kothar-forged maces are both included: Yagrush and Ayamur (sources disagree on which is "Driver" vs "Chaser"; I assigned Chaser/Driver per the dominant reading and noted both as the pair from KTU 1.2 IV).
+- Parent links wired within the batch where attested: Baal→Dagan; Anat, Mot, Yam, Shapshu→El; Aqhat→Daniel. El, Athirat, Dagan, Athtart, Yarikh, Kothar, Resheph, Kotharot, Rephaim have empty parentIds (no in-batch parent attested).
+- vitalStatus reflects myth: Yam and Aqhat `dead`; Rephaim `dead` (the deified dead); Mot `living` (endures as the drought cycle); rest `living`.
+- Typing the heroes honestly: Kirta = demigod (explicit "son of El"); Daniel = demigod (counted among the Rephaim, mt rpʾi); Aqhat = scion (son of the deified Daniel); Rephaim = demigod tier.
+
+Sources:
+- [Baal Cycle — Wikipedia](https://en.wikipedia.org/wiki/Baal_Cycle)
+- [El (deity) — Wikipedia](https://en.wikipedia.org/wiki/El_(deity))
+- [Asherah — Wikipedia](https://en.wikipedia.org/wiki/Asherah)
+- [Yam (god) — Wikipedia](https://en.wikipedia.org/wiki/Yam_(god))
+- [Dagon — Wikipedia](https://en.wikipedia.org/wiki/Dagon)
+- [Astarte — Wikipedia](https://en.wikipedia.org/wiki/Astarte)
+- [Shapshu — Wikipedia](https://en.wikipedia.org/wiki/Shapshu)
+- [Yarikh — Wikipedia](https://en.wikipedia.org/wiki/Yarikh)
+- [Kothar-wa-Khasis — Wikipedia](https://en.wikipedia.org/wiki/Kothar-wa-Khasis)
+- [Resheph in the Hebrew Bible — Jewish Bible Quarterly](https://jbqnew.jewishbible.org/uncategorized/resheph-hebrew-bible/)
+- [Kotharat — Wikipedia](https://en.wikipedia.org/wiki/Kotharat)
+- [Legend of Keret — Wikipedia](https://en.wikipedia.org/wiki/Legend_of_Keret)
+- [Tale of Aqhat — Wikipedia](https://en.wikipedia.org/wiki/Tale_of_Aqhat)
+- [Rephaim text — Wikipedia](https://en.wikipedia.org/wiki/Rephaim_text)
+- [Philo of Byblos — Wikipedia](https://en.wikipedia.org/wiki/Philo_of_Byblos)
+- [Lotan — Crazy Alchemist Bestiary](https://www.crazyalchemist.com/bestiary/litan/)
+- [The Gods and Goddesses of Canaan — The Metropolitan Museum of Art](https://www.metmuseum.org/essays/the-gods-and-goddesses-of-canaan)

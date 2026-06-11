@@ -1,0 +1,854 @@
+I have all transliterations confirmed (Phoenician abjad consonantal forms; OSA musnad consonantal). The native scripts for ancient South Arabian use the musnad consonantal forms, which I'll romanize. For the schema's `term.value`, I'll use the romanized consonantal transliteration (standard scholarly practice when actual Unicode musnad isn't reliably renderable) with `script` labeling the writing system.
+
+I have enough to author all 27 figures with high fidelity. Let me construct the JSON array. I'll be careful that:
+- `faculties` = verb-phrase powers DISTINCT from domains (domains = spheres/jurisdictions; faculties = active abilities)
+- `materialCulture` = items with the full schema (`id`, `kind`, `name`, `term`, `role`, `notes`, `sources`)
+- Each domain/faculty/materialCulture/figure has `sources`/`citations`
+- `term` uses native consonantal value + romanization, `""` where unrecorded
+- ids prefixed correctly; `primaryTradition` per figure
+
+Let me write out the complete array now.
+
+Here is my research summary and the complete figure set.
+
+## Summary
+
+I researched 27 deities across five ancient Near Eastern traditions the registry lacked, using WebSearch (Wikipedia, Britannica, Encyclopaedia Iranica snippets, and the requested specialist scholarship). Key sourcing per tradition:
+
+- **Elamite** — Encyclopaedia Iranica, *ELAM vi. Elamite religion*; the divine triad Napirisha–Inshushinak–Kiririsha; Humban's *kitin* (divine protection); Naram-Sin treaty god-list; Šurpu commentary for Jabru (known only from Mesopotamian texts as the Elamite Anu).
+- **Phoenician/Punic** — Ugaritic/Phoenician corpus + Philo of Byblos (preserved in Eusebius, *Praeparatio Evangelica*); Melqart's *egersis* (Josephus); the Tophet, Eshmunazar II sarcophagus, sign-of-Tanit.
+- **Aramean** — Sefire steles, Zakkur stele, Sam'al/Zincirli royal inscriptions (Panamuwa, Bar-Rakib), Elephantine/Esarhaddon treaty for Bethel, Lucian *De Dea Syria* for Atargatis.
+- **Nabataean** — Healey, *The Religion of the Nabataeans: A Conspectus*; Nabataean inscriptions (Iram, Hegra tomb-curses, the "Eye Baetyl"); Khirbet et-Tannur for Qaws.
+- **South Arabian/Sabaean** — OSA musnad inscriptions; Awwam Temple (Mahram Bilqis) for Almaqah; the astral triad Almaqah–Athtar–Shams; the moon-god/national-god pattern (Wadd–Maʿin, ʿAmm–Qataban, Sayin–Hadramawt).
+
+Notes on a few judgment calls: native scripts are rendered as standard scholarly consonantal romanizations (Phoenician/Aramaic/Nabataean Aramaic abjads and OSA musnad are vowel-less abjads); `term.value` carries the consonantal transliteration with `script` naming the writing system, `""` where a specific term is unrecorded. Faculties are kept as active verb-phrase powers distinct from the jurisdictional domains. All deities are `vitalStatus: "living"` per the example pattern (including the dying-rising Melqart/Eshmun, who are revived).
+
+The registry data lives in `/home/user/PantheonRepository/app/data.js` (the existing Canaanite block, lines ~38460–40454, was my schema template). These figures are authored as new entries and are not yet inserted — below is the deliverable array.
+
+```json
+[
+  {
+    "id": "elamite_humban",
+    "name": { "primary": "Humban", "alt": ["Khumban", "Huban"], "transliterations": { "elamite": "Humban" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "kitin", "script": "Elamite", "rom": "kitin" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }] },
+      { "sphereId": "divine-sovereignty", "contextTag": "lifelong", "term": { "value": "Humban", "script": "Elamite", "rom": "Humban" },
+        "sources": [{ "kind": "primary", "reference": "Old Elamite treaty of Naram-Sin (god-list, second after Pinikir)" }] }
+    ],
+    "faculties": [
+      { "id": "bestow-kitin", "name": "Grant kings divinely-enforced royal power and legal authority", "term": { "value": "kitin", "script": "Elamite", "rom": "kitin" },
+        "inheritability": "none", "notes": "kitin most prized by Neo-Elamite kings", "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi" }] },
+      { "id": "guard-oaths", "name": "Sanction and protect sworn royal oaths and order", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "invoked in theophoric royal names", "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Old Elamite treaty of Naram-Sin (c. 2254–2218 BCE)" },
+        { "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }
+      ], "weight": "secondary" }
+    ],
+    "notes": "Great god of the Elamite highlands; bestower of kitin (divine royal protection), prominent from the Neo-Elamite period."
+  },
+  {
+    "id": "elamite_napirisha",
+    "name": { "primary": "Napirisha", "alt": ["Napir", "Napiriša"], "transliterations": { "elamite": "Napiriša" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fresh-water", "contextTag": "lifelong", "term": { "value": "Napiriša", "script": "Elamite", "rom": "Napiriša (GAL)" },
+        "sources": [{ "kind": "primary", "reference": "Kūrāngūn relief (living waters gushing from his hands)" }] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "napir riša", "script": "Elamite", "rom": "napir riša ('great god')" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }] }
+    ],
+    "faculties": [
+      { "id": "pour-living-waters", "name": "Send forth life-giving waters from disk and rod", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "Enki/Ea-like lord of the abyssal waters", "sources": [{ "kind": "primary", "reference": "Kūrāngūn relief" }] },
+      { "id": "enthroned-on-serpent", "name": "Rule enthroned upon a human-headed serpent", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "serpent throne marks chthonic protective power", "sources": [{ "kind": "secondary", "reference": "Iconography of Deities and Demons (god on serpent throne)" }] }
+    ],
+    "materialCulture": [
+      { "id": "serpent-throne-napirisha", "kind": "regalia", "name": "Human-headed serpent throne", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "role": "owner", "notes": "Coiled serpent seat on the Kūrāngūn relief", "sources": [{ "kind": "primary", "reference": "Kūrāngūn rock relief, Fars" }] },
+      { "id": "disk-and-rod-napirisha", "kind": "regalia", "name": "Disk and rod (orb and scepter)", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "role": "wielder", "notes": "Emblems of power from which living waters flow", "sources": [{ "kind": "primary", "reference": "Kūrāngūn relief" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Middle Elamite royal inscriptions of the Napirisha–Inshushinak–Kiririsha triad" },
+        { "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }
+      ], "weight": "secondary" }
+    ],
+    "notes": "The 'Great God' (napir riša) of Anshan, head of the Middle Elamite national triad; water and kingship god akin to Enki/Ea."
+  },
+  {
+    "id": "elamite_inshushinak",
+    "name": { "primary": "Inshushinak", "alt": ["Insusinak", "Šušinak"], "transliterations": { "elamite": "Inšušinak" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "underworld-justice", "contextTag": "lifelong", "term": { "value": "Inšušinak", "script": "Elamite", "rom": "Inšušinak ('lord of Susa')" },
+        "sources": [{ "kind": "primary", "reference": "Susa Funerary Texts (judgment of the dead)" }] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }] }
+    ],
+    "faculties": [
+      { "id": "judge-dead", "name": "Judge the souls of the dead in the underworld", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "deceased led before him by Lagamal and Ishmekarab", "sources": [{ "kind": "primary", "reference": "Susa Funerary Texts" }] },
+      { "id": "weigh-souls", "name": "Weigh the souls of the deceased in judgment", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "weighing motif unknown elsewhere in cuneiform", "sources": [{ "kind": "secondary", "reference": "J. Tavernier, on the Susa Funerary Texts" }] },
+      { "id": "guard-oaths-susa", "name": "Guard oaths and arbitrate legal proceedings", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "invoked as guarantor in Elamite law", "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Susa and Chogha Zanbil temple inscriptions" },
+        { "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }
+      ], "weight": "secondary" }
+    ],
+    "notes": "Lord of Susa, patron of the lowland capital; Elamite god of the underworld and justice who judges the dead."
+  },
+  {
+    "id": "elamite_kiririsha",
+    "name": { "primary": "Kiririsha", "alt": ["Kiririša"], "transliterations": { "elamite": "Kiririša" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "kiririša", "script": "Elamite", "rom": "kiririša ('great goddess')" },
+        "sources": [{ "kind": "primary", "reference": "Liyan inscriptions ('mother of the gods')" }] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi (epithet 'lady of death at Liyan')" }] }
+    ],
+    "faculties": [
+      { "id": "mother-the-gods", "name": "Bear and mother the gods of Elam", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "with Napirisha bears the god Hutran", "sources": [{ "kind": "primary", "reference": "Middle Elamite royal inscriptions" }] },
+      { "id": "preside-liyan", "name": "Watch over Liyan as its tutelary mistress", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "'Lady of Liyan', attested from the 19th c. BCE", "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Liyan and Chogha Zanbil inscriptions of the national triad" },
+        { "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }
+      ], "weight": "secondary" }
+    ],
+    "notes": "The 'Great Goddess' and 'mother of the gods'; consort of Napirisha, third member of the Middle Elamite triad, mistress of Liyan."
+  },
+  {
+    "id": "elamite_pinikir",
+    "name": { "primary": "Pinikir", "alt": ["Pinigir", "Pirengir", "Pininkir"], "transliterations": { "elamite": "Pinikir" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "love-and-sex", "contextTag": "lifelong", "term": { "value": "kikki galirra", "script": "Elamite", "rom": "kikki galirra ('mistress of heaven')" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }] },
+      { "sphereId": "the-stars", "contextTag": "lifelong", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Akkadian–Hurrian ritual texts from Hattusa (equated with dIŠTAR)" }] }
+    ],
+    "faculties": [
+      { "id": "command-heaven", "name": "Command the heavens as sovereign of the sky", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "titled 'Commander of Heaven'", "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi" }] },
+      { "id": "embody-venus", "name": "Shine as the astral planet Venus", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "astral deity equated with Ishtar/Ninsianna", "sources": [{ "kind": "primary", "reference": "Old Elamite treaty of Naram-Sin (heads the god-list)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Old Elamite treaty of Naram-Sin; Hattusa Akkadian–Hurrian rituals" },
+        { "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }
+      ], "weight": "secondary" }
+    ],
+    "notes": "Astral goddess of love and the sky, 'Commander of Heaven'; a cosmopolitan deity later absorbed into the Hurrian pantheon as Ishtar."
+  },
+  {
+    "id": "elamite_nahhunte",
+    "name": { "primary": "Nahhunte", "alt": ["Nahundi", "Nahiti"], "transliterations": { "elamite": "Nahhunte" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Nahhunte", "script": "Elamite", "rom": "Nahhunte ('creator of the day')" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }] },
+      { "sphereId": "justice", "contextTag": "lifelong", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Old Elamite treaty of Naram-Sin (god-list, after Humban)" }] }
+    ],
+    "faculties": [
+      { "id": "uphold-cosmic-justice", "name": "Uphold cosmic justice as the king's earthly executor", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "Elamite counterpart of Shamash", "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi" }] },
+      { "id": "create-the-day", "name": "Bring forth daylight as the rising sun", "term": { "value": "", "script": "Elamite", "rom": "" },
+        "inheritability": "none", "notes": "name read as 'creator of the day'", "sources": [{ "kind": "secondary", "reference": "J. Tavernier, Nahhunte" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Old Elamite treaty of Naram-Sin; Elamite theophoric royal names" },
+        { "kind": "secondary", "reference": "Encyclopaedia Iranica, ELAM vi. Elamite religion" }
+      ], "weight": "secondary" }
+    ],
+    "notes": "Elamite sun-god and divinity of justice, counterpart of Mesopotamian Shamash; common in royal theophoric names."
+  },
+  {
+    "id": "elamite_jabru",
+    "name": { "primary": "Jabru", "alt": ["Yabru", "Jabnu"], "transliterations": { "elamite": "Jabru" } },
+    "type": "deity", "origin": "canon", "tradition": "Elamite", "primaryTradition": "Elamite",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "Jabru", "script": "Akkadian", "rom": "Jabru" },
+        "sources": [{ "kind": "primary", "reference": "Šurpu commentary (Elamite equivalent of Anu)" }] }
+    ],
+    "faculties": [
+      { "id": "preside-sky-elam", "name": "Hold the heavens as the Elamite sky-sovereign", "term": { "value": "", "script": "Akkadian", "rom": "" },
+        "inheritability": "none", "notes": "Mesopotamian theologians equate him with Anu", "sources": [{ "kind": "primary", "reference": "Šurpu commentary" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Šurpu commentary; god-list An = Anum (as 'Enlil of Elam')" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Sky-god named the Elamite counterpart of Anu in a Šurpu commentary; known only from Mesopotamian theological texts."
+  },
+  {
+    "id": "phoenician_baal_hammon",
+    "name": { "primary": "Baal Hammon", "alt": ["Baʿal Ḥammon", "Baal Amon", "Baal Qarnaim"], "transliterations": { "phoenician": "bʿl ḥmn" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "supreme-sky", "contextTag": "lifelong", "term": { "value": "bʿl ḥmn", "script": "Phoenician", "rom": "Baʿal Ḥammon ('lord of the brazier')" },
+        "sources": [{ "kind": "primary", "reference": "Carthaginian Tophet dedicatory stelae" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Philo of Byblos (Kronos), in Eusebius, Praeparatio Evangelica" }] }
+    ],
+    "faculties": [
+      { "id": "preside-incense-altar", "name": "Receive offerings at the burning incense-altar", "term": { "value": "ḥmn", "script": "Phoenician", "rom": "ḥammon" },
+        "inheritability": "none", "notes": "title 'lord of the altar of incense'", "sources": [{ "kind": "primary", "reference": "Punic Tophet inscriptions, Carthage" }] },
+      { "id": "ripen-the-harvest", "name": "Quicken the grain and ripen the crops", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "agrarian Saturn-Baal of Roman Africa", "sources": [{ "kind": "secondary", "reference": "Punic religion (interpretatio of Saturn)" }] }
+    ],
+    "materialCulture": [
+      { "id": "ram-horns-baalhammon", "kind": "regalia", "name": "Curling ram's-horn headdress", "term": { "value": "qrnm", "script": "Phoenician", "rom": "qarnaim ('two horns')" },
+        "role": "wearer", "notes": "Worshipped as Baal Qarnaim, 'Lord of the Two Horns'", "sources": [{ "kind": "secondary", "reference": "Punic iconography; Britannica, Baal Hammon" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Punic dedicatory inscriptions, Tophet of Salammbô, Carthage" },
+        { "kind": "primary", "reference": "Philo of Byblos via Eusebius, Praeparatio Evangelica (Kronos)" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Supreme god of Carthage, 'Lord of the Brazier'; ram-horned, equated with Kronos/Saturn, head of the Tophet cult with Tanit."
+  },
+  {
+    "id": "phoenician_tanit",
+    "name": { "primary": "Tanit", "alt": ["Tinnit", "Tannit", "Pene Baal"], "transliterations": { "phoenician": "tnt" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "rbt", "script": "Phoenician", "rom": "rabbat ('great lady')" },
+        "sources": [{ "kind": "primary", "reference": "Carthaginian votive stelae (rbt tnt pn bʿl)" }] },
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "tnt pn bʿl", "script": "Phoenician", "rom": "Tinnit pene Baʿal ('face of Baal')" },
+        "sources": [{ "kind": "secondary", "reference": "Britannica, Tanit (crescent and astral symbolism)" }] }
+    ],
+    "faculties": [
+      { "id": "protect-carthage", "name": "Shield Carthage as its mother and patroness", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "listed before Baal Hammon from the 5th c. BCE", "sources": [{ "kind": "primary", "reference": "Punic Tophet dedications" }] },
+      { "id": "grant-fruitfulness", "name": "Grant fertility, offspring, and abundant increase", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "pomegranate and dove fertility emblems", "sources": [{ "kind": "secondary", "reference": "Britannica, Tanit" }] }
+    ],
+    "materialCulture": [
+      { "id": "sign-of-tanit", "kind": "symbol", "name": "Sign of Tanit (triangle, bar, disk)", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "role": "associated", "notes": "Triangle body, crossbar arms, crowning crescent/disk", "sources": [{ "kind": "primary", "reference": "Punic votive monuments, Carthage" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Carthaginian votive inscriptions to 'rbt tnt pn bʿl'" },
+        { "kind": "secondary", "reference": "Britannica, Tanit" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Great goddess and patroness of Carthage, 'Face of Baal'; lunar mother-goddess and consort of Baal Hammon, marked by the 'sign of Tanit'."
+  },
+  {
+    "id": "phoenician_melqart",
+    "name": { "primary": "Melqart", "alt": ["Milqart", "Melkart"], "transliterations": { "phoenician": "mlqrt" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "mlqrt", "script": "Phoenician", "rom": "milk-qart ('king of the city')" },
+        "sources": [{ "kind": "primary", "reference": "Tyrian and colonial Melqart dedications" }] },
+      { "sphereId": "sea-trade", "contextTag": "lifelong", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Melqart as patron of Tyrian commerce and colonies (Gades)" }] }
+    ],
+    "faculties": [
+      { "id": "egersis-revival", "name": "Die and be awakened annually at the spring egersis", "term": { "value": "", "script": "Greek", "rom": "egersis" },
+        "inheritability": "none", "notes": "awakening festival recorded by Josephus", "sources": [{ "kind": "primary", "reference": "Josephus, Antiquities (Hiram I institutes the egersis)" }] },
+      { "id": "found-colonies", "name": "Found and protect Tyrian colonies overseas", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "Temple of Melqart raised at new foundations", "sources": [{ "kind": "secondary", "reference": "Melqart founding-myths; equated with Herakles" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Tyrian inscriptions; Josephus, Antiquities (egersis of Herakles)" },
+        { "kind": "secondary", "reference": "E. Lipiński, on the etymology milk-qart" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Tutelary 'King of the City' of Tyre; dying-and-rising god revived at the annual egersis, equated with Herakles, patron of colonies."
+  },
+  {
+    "id": "phoenician_eshmun",
+    "name": { "primary": "Eshmun", "alt": ["Eshmoun", "Yasumunu"], "transliterations": { "phoenician": "ʾšmn" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "ʾšmn", "script": "Phoenician", "rom": "ʾEšmun" },
+        "sources": [{ "kind": "primary", "reference": "Eshmunazar II sarcophagus inscription, Sidon" }] },
+      { "sphereId": "renewal-of-life", "contextTag": "lifelong", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Punic–Greek–Latin trilingual equating Eshmun with Asclepius" }] }
+    ],
+    "faculties": [
+      { "id": "heal-the-sick", "name": "Cure disease and restore bodily health", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "depicted with the serpent-entwined staff", "sources": [{ "kind": "primary", "reference": "Gold plaque of Eshmun and Hygieia, Sidon temple" }] },
+      { "id": "be-revived-by-astarte", "name": "Be restored to divine life by Astarte's heat", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "young hunter revived after self-mutilation and death", "sources": [{ "kind": "secondary", "reference": "Phoenician myth (Damascius; Photius)" }] }
+    ],
+    "materialCulture": [
+      { "id": "serpent-staff-eshmun", "kind": "regalia", "name": "Serpent-entwined staff (rod of Asclepius)", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "role": "wielder", "notes": "Held on coins of Berytos and the Sidon gold plaque", "sources": [{ "kind": "primary", "reference": "Coins of Berytos; Sidon temple gold plaque" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Eshmunazar II sarcophagus; Temple of Eshmun, Bostrenus, Sidon" },
+        { "kind": "secondary", "reference": "Trilingual inscription equating Eshmun with Asclepius" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Healing god and tutelary deity of Sidon, equated with Asclepius; a youth revived by Astarte who renews bodily life."
+  },
+  {
+    "id": "phoenician_astarte",
+    "name": { "primary": "Astarte", "alt": ["Ashtart", "Athtart", "Ashtoreth"], "transliterations": { "phoenician": "ʿštrt" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "love-and-sex", "contextTag": "lifelong", "term": { "value": "ʿštrt", "script": "Phoenician", "rom": "ʿAštart" },
+        "sources": [{ "kind": "primary", "reference": "Tabnit and Eshmunazar sarcophagi (royal priests of Astarte)" }] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Astarte as armed war-goddess; Britannica, Astarte" }] }
+    ],
+    "faculties": [
+      { "id": "rouse-desire", "name": "Kindle sexual desire, beauty, and procreation", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "sacred dove as her emblem", "sources": [{ "kind": "secondary", "reference": "Britannica, Astarte" }] },
+      { "id": "lead-in-battle", "name": "Ride armed into battle as war-goddess", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "depicted riding lions and chariots", "sources": [{ "kind": "secondary", "reference": "Astarte iconography (lion mount)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Sidonian royal sarcophagi (Tabnit, Eshmunazar II); Byblos inscriptions" },
+        { "kind": "secondary", "reference": "Britannica, Astarte" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Great Phoenician goddess of love, war, and the evening-star (Venus); chief goddess of Sidon, Tyre, and Byblos, served by royal priests."
+  },
+  {
+    "id": "phoenician_resheph",
+    "name": { "primary": "Resheph", "alt": ["Reshef", "Rashap"], "transliterations": { "phoenician": "ršp" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "plague", "contextTag": "lifelong", "term": { "value": "ršp", "script": "Phoenician", "rom": "Rašap" },
+        "sources": [{ "kind": "secondary", "reference": "Resheph as god of plague, equated with Apollo at Idalion" }] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "ršp gn", "script": "Phoenician", "rom": "Rašap gn ('Resheph of the Garden')" },
+        "sources": [{ "kind": "primary", "reference": "Phoenician inscriptions (bʿl ḥṣ, 'lord of the arrow')" }] }
+    ],
+    "faculties": [
+      { "id": "loose-plague-arrows", "name": "Shoot arrows of plague and burning fever", "term": { "value": "bʿl ḥṣ", "script": "Phoenician", "rom": "baʿal ḥeṣ ('lord of the arrow')" },
+        "inheritability": "none", "notes": "name means flame, lightning, and arrow", "sources": [{ "kind": "primary", "reference": "Phoenician dedications to bʿl ḥṣ" }] },
+      { "id": "hurl-lightning", "name": "Hurl lightning as a destructive warrior", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "bears bow, mace, and gazelle-horn headdress", "sources": [{ "kind": "secondary", "reference": "Resheph iconography; bilingual 'gazelle/deer god'" }] }
+    ],
+    "materialCulture": [
+      { "id": "bow-resheph", "kind": "weapon", "name": "Bow and arrows", "term": { "value": "ḥṣ", "script": "Phoenician", "rom": "ḥeṣ ('arrow')" },
+        "role": "wielder", "notes": "His arrows carry plague, as Apollo's do the Danaans", "sources": [{ "kind": "primary", "reference": "Phoenician–Hittite bilinguals; Apollo equation" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Phoenician inscriptions (Resheph of the Garden, lord of the arrow)" },
+        { "kind": "secondary", "reference": "Idalion (Cyprus) Apollo–Resheph identification" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Phoenician god of plague, war, and lightning whose arrows bring fever; 'Lord of the Arrow', equated with Apollo at Idalion."
+  },
+  {
+    "id": "phoenician_baalshamin",
+    "name": { "primary": "Baalshamin", "alt": ["Baʿal Šamem", "Baal Shamem"], "transliterations": { "phoenician": "bʿl šmm" } },
+    "type": "deity", "origin": "canon", "tradition": "Phoenician", "primaryTradition": "Phoenician",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "bʿl šmm", "script": "Phoenician", "rom": "Baʿal Šamem ('lord of the heavens')" },
+        "sources": [{ "kind": "primary", "reference": "Early Phoenician and Aramaic inscriptions (proper name by c. 1000 BCE)" }] },
+      { "sphereId": "weather", "contextTag": "lifelong", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Baalshamin as rain-and-dew god in drought; Palmyra cult" }] }
+    ],
+    "faculties": [
+      { "id": "rule-the-heavens", "name": "Rule the sky as supreme celestial lord", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "eagle and lightning-bolt attributes", "sources": [{ "kind": "primary", "reference": "Palmyrene dedications to Baalshamin" }] },
+      { "id": "grant-rain", "name": "Send rain and dew in times of drought", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "inheritability": "none", "notes": "invoked for rain and prosperity", "sources": [{ "kind": "secondary", "reference": "Baalshamin weather cult, Roman Near East" }] }
+    ],
+    "materialCulture": [
+      { "id": "eagle-baalshamin", "kind": "symbol", "name": "Eagle and lightning-bolt", "term": { "value": "", "script": "Phoenician", "rom": "" },
+        "role": "associated", "notes": "Celestial emblems of the sky-lord", "sources": [{ "kind": "secondary", "reference": "Palmyrene iconography of Baalshamin" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Phoenician/Aramaic inscriptions; Temple of Baalshamin, Palmyra" },
+        { "kind": "secondary", "reference": "Wikipedia, Baalshamin (Canaanite–Phoenician sky god)" }
+      ], "weight": "primary" }
+    ],
+    "notes": "'Lord of the Heavens', supreme sky and weather god of Phoenician origin; rain-giver later paramount at Palmyra, marked by eagle and lightning."
+  },
+  {
+    "id": "aramean_hadad",
+    "name": { "primary": "Hadad", "alt": ["Adad", "Haddu", "Ramman"], "transliterations": { "aramaic": "hdd" } },
+    "type": "deity", "origin": "canon", "tradition": "Aramean", "primaryTradition": "Aramean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "hdd", "script": "Aramaic", "rom": "Hadad" },
+        "sources": [{ "kind": "primary", "reference": "Zakkur stele of Hamath (storm-god, Aramaic, 8th c. BCE)" }] },
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Sam'al inscriptions (grants the scepter of succession to Panamuwa II)" }] }
+    ],
+    "faculties": [
+      { "id": "wield-thunder", "name": "Command thunder, lightning, and the rains", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "stands on the back of a bull", "sources": [{ "kind": "primary", "reference": "North Syrian storm-god stelae (Tell Ahmar)" }] },
+      { "id": "grant-succession", "name": "Bestow the royal scepter of dynastic succession", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "head of the Sam'al pantheon", "sources": [{ "kind": "primary", "reference": "Panamuwa inscription, Zincirli" }] }
+    ],
+    "materialCulture": [
+      { "id": "bull-hadad", "kind": "animal", "name": "Sacred bull", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "role": "associated", "notes": "Mount on which the storm-god stands or is flanked", "sources": [{ "kind": "primary", "reference": "Dura-Europos and Tell Ahmar storm-god stelae" }] },
+      { "id": "thunder-club-hadad", "kind": "weapon", "name": "Club and lightning-fork", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "role": "wielder", "notes": "Brandished as thunder-weapon of the storm", "sources": [{ "kind": "secondary", "reference": "Hadad iconography, North Syrian reliefs" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Zakkur stele; Sam'al/Zincirli royal inscriptions; Sefire steles" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Aramean storm- and rain-god, head of city-state pantheons (Aleppo, Sam'al); thunder-wielding bull-god who grants royal succession."
+  },
+  {
+    "id": "aramean_atargatis",
+    "name": { "primary": "Atargatis", "alt": ["Atarʿate", "Derceto", "Dea Syria"], "transliterations": { "aramaic": "ʿtrʿth" } },
+    "type": "deity", "origin": "canon", "tradition": "Aramean", "primaryTradition": "Aramean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "ʿtrʿth", "script": "Aramaic", "rom": "ʿAtarʿate" },
+        "sources": [{ "kind": "primary", "reference": "Lucian, De Dea Syria (temple at Hierapolis)" }] },
+      { "sphereId": "fresh-water", "contextTag": "lifelong", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Atargatis and the sacred fish-pools; Britannica, Atargatis" }] }
+    ],
+    "faculties": [
+      { "id": "guard-sacred-fish", "name": "Hallow the fish and doves sacred to her", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "saved from a lake by a great fish", "sources": [{ "kind": "primary", "reference": "Lucian, De Dea Syria" }] },
+      { "id": "enthrone-on-lions", "name": "Reign enthroned and flanked by lions", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "Hadad's throne by bulls, hers by lions", "sources": [{ "kind": "primary", "reference": "Lucian, De Dea Syria (cult statues at Hierapolis)" }] }
+    ],
+    "materialCulture": [
+      { "id": "lion-throne-atargatis", "kind": "regalia", "name": "Lion-flanked throne", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "role": "owner", "notes": "Paired beside Hadad's bull-throne at Hierapolis", "sources": [{ "kind": "primary", "reference": "Lucian, De Dea Syria" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Lucian, De Dea Syria; Hierapolis (Manbij) cult evidence" },
+        { "kind": "secondary", "reference": "Oxford Classical Dictionary, Atargatis" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Great Syrian mother- and fertility-goddess ('Dea Syria') of Hierapolis; consort of Hadad, lady of the sacred fish, doves, and lions."
+  },
+  {
+    "id": "aramean_rakib_el",
+    "name": { "primary": "Rakib-El", "alt": ["Rākib-ʾEl", "Rakkabel"], "transliterations": { "aramaic": "rkb-ʾl" } },
+    "type": "deity", "origin": "canon", "tradition": "Aramean", "primaryTradition": "Aramean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "kingship", "contextTag": "lifelong", "term": { "value": "rkb-ʾl", "script": "Aramaic", "rom": "Rākib-ʾEl ('charioteer of El')" },
+        "sources": [{ "kind": "primary", "reference": "Bar-Rakib inscriptions, Sam'al (dynastic god)" }] }
+    ],
+    "faculties": [
+      { "id": "drive-el-chariot", "name": "Drive the chariot of El across the heavens", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "name 'charioteer of El'; possible lunar aspect", "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, Aramean Religion" }] },
+      { "id": "patronize-dynasty", "name": "Uphold and legitimize the royal house of Yadi", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "Bar-Rakib's tutelary dynastic god", "sources": [{ "kind": "primary", "reference": "Bar-Rakib statue inscription for Panamuwa II, Zincirli" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Aramaic royal inscriptions of Bar-Rakib, Sam'al/Zincirli (8th c. BCE)" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Dynastic 'Charioteer of El' of the Sam'alian kings; tutelary god of the royal house of Yadi, possibly a lunar deity."
+  },
+  {
+    "id": "aramean_bethel",
+    "name": { "primary": "Bethel", "alt": ["Bayt-ʾEl", "Baetyl", "Anat-Bethel"], "transliterations": { "aramaic": "bytʾl" } },
+    "type": "deity", "origin": "canon", "tradition": "Aramean", "primaryTradition": "Aramean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "oaths", "contextTag": "lifelong", "term": { "value": "bytʾl", "script": "Aramaic", "rom": "Bayt-ʾEl ('house of god')" },
+        "sources": [{ "kind": "primary", "reference": "Esarhaddon's treaty with Baʿal of Tyre (god policing oaths)" }] }
+    ],
+    "faculties": [
+      { "id": "enforce-oaths", "name": "Police treaty-oaths and punish their breakers", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "paired with Anat-Bethel in oath-lists", "sources": [{ "kind": "primary", "reference": "Neo-Assyrian treaty god-lists; Elephantine papyri" }] },
+      { "id": "indwell-the-stone", "name": "Indwell the sacred stone that bears his name", "term": { "value": "", "script": "Aramaic", "rom": "" },
+        "inheritability": "none", "notes": "the baetyl is 'house of god'", "sources": [{ "kind": "secondary", "reference": "Baetyl tradition; deified sacred stone" }] }
+    ],
+    "materialCulture": [
+      { "id": "baetyl-bethel", "kind": "relic", "name": "Sacred stone (baetyl)", "term": { "value": "bytʾl", "script": "Aramaic", "rom": "bayt-ʾel" },
+        "role": "embodied", "notes": "'House of god' stone thought to house the deity", "sources": [{ "kind": "secondary", "reference": "Baetyl (baitylos/bethel) tradition" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Esarhaddon's Tyre treaty; Sefire steles; Elephantine and Hermopolis papyri" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Deified 'House of God', an Aramean oath-guarantor (with Anat-Bethel) attested in Neo-Assyrian treaties and at Elephantine; a sacred-stone god."
+  },
+  {
+    "id": "nabataean_dushara",
+    "name": { "primary": "Dushara", "alt": ["Dusares", "Ḏū l-Šarā"], "transliterations": { "nabataean": "dwšrʾ" } },
+    "type": "deity", "origin": "canon", "tradition": "Nabataean", "primaryTradition": "Nabataean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "supreme-sky", "contextTag": "lifelong", "term": { "value": "dwšrʾ", "script": "Nabataean", "rom": "Ḏū-Šarā ('lord of the Shara')" },
+        "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans: A Conspectus" }] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Dushara as mountain/weather god compared to Dionysus" }] }
+    ],
+    "faculties": [
+      { "id": "patronize-nabataean-kings", "name": "Stand as dynastic god of the Nabataean kings", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "supreme god of Petra and Hegra", "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans" }] },
+      { "id": "dwell-in-betyl", "name": "Reside aniconically within a squared stone block", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "worshipped as a baetyl, not an image", "sources": [{ "kind": "primary", "reference": "Petra baetyls; Suda (Dusares as a black stone)" }] }
+    ],
+    "materialCulture": [
+      { "id": "block-betyl-dushara", "kind": "relic", "name": "Squared stone block (baetyl)", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "role": "embodied", "notes": "Aniconic cube housing the god at Petra", "sources": [{ "kind": "primary", "reference": "Petra baetyl niches; Nabataean inscriptions" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Nabataean inscriptions, Petra and Hegra; Khirbet et-Tannur" },
+        { "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans: A Conspectus" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Supreme 'Lord of the Shara' and dynastic god of the Nabataeans; aniconic mountain/weather god of Petra worshipped as a stone baetyl."
+  },
+  {
+    "id": "nabataean_allat",
+    "name": { "primary": "Allat", "alt": ["al-Lāt", "Allatu", "Alilat"], "transliterations": { "nabataean": "ʾlt" } },
+    "type": "deity", "origin": "canon", "tradition": "Nabataean", "primaryTradition": "Nabataean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "ʾlt", "script": "Nabataean", "rom": "al-Lāt ('the goddess')" },
+        "sources": [{ "kind": "primary", "reference": "Nabataean inscription, 'the goddess who is in Iram'" }] },
+      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans (mother of the gods / bride of Dushara)" }] }
+    ],
+    "faculties": [
+      { "id": "war-as-athena", "name": "Wage war and protect as armed Athena-like goddess", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "equated with Athena and Tyche in the Hawran", "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans" }] }
+    ],
+    "materialCulture": [
+      { "id": "betyl-allat-iram", "kind": "relic", "name": "Stone baetyl of Iram", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "role": "embodied", "notes": "Worshipped in a temple at Iram of the Pillars", "sources": [{ "kind": "primary", "reference": "Nabataean inscription of Allat at Iram" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Nabataean inscriptions (Iram, Bosra); Hawran dedications" },
+        { "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans: A Conspectus" }
+      ], "weight": "primary" }
+    ],
+    "notes": "'The Goddess' of the Nabataeans, bride of Dushara; armed protectress equated with Athena, 'the goddess who is in Iram'."
+  },
+  {
+    "id": "nabataean_al_uzza",
+    "name": { "primary": "al-Uzza", "alt": ["al-ʿUzzā", "Aphrodite Ourania"], "transliterations": { "nabataean": "ʾlʿzʾ" } },
+    "type": "deity", "origin": "canon", "tradition": "Nabataean", "primaryTradition": "Nabataean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "love-and-sex", "contextTag": "lifelong", "term": { "value": "ʾlʿzʾ", "script": "Nabataean", "rom": "al-ʿUzzā ('the mighty one')" },
+        "sources": [{ "kind": "primary", "reference": "Petra 'Eye Baetyl' inscription; Temple of al-Uzza" }] },
+      { "sphereId": "the-stars", "contextTag": "lifelong", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans (Venus / Aphrodite Ourania)" }] }
+    ],
+    "faculties": [
+      { "id": "shine-as-venus", "name": "Shine mightily as the morning and evening star", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "name means 'the Mighty'; identified with Venus", "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans" }] },
+      { "id": "stand-as-warrior", "name": "Stand armed as warrior beside a desert lynx", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "war-goddess and protector; caracal attendant", "sources": [{ "kind": "secondary", "reference": "al-Uzza iconography; Aphrodite Ourania equation" }] }
+    ],
+    "materialCulture": [
+      { "id": "eye-betyl-aluzza", "kind": "relic", "name": "Eye Baetyl (stone with schematic eyes)", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "role": "embodied", "notes": "Inscribed betyl confirming her as paramount goddess", "sources": [{ "kind": "primary", "reference": "Eye Baetyl inscription, Temple of al-Uzza, Petra" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Petra Eye Baetyl and Temple of al-Uzza inscriptions" },
+        { "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans: A Conspectus" }
+      ], "weight": "primary" }
+    ],
+    "notes": "'The Mighty', Nabataean goddess of the planet Venus and a bride of Dushara; warrior-protectress equated with Aphrodite Ourania."
+  },
+  {
+    "id": "nabataean_manat",
+    "name": { "primary": "Manat", "alt": ["Manāt", "Manawat", "Manōtu"], "transliterations": { "nabataean": "mnwtw" } },
+    "type": "deity", "origin": "canon", "tradition": "Nabataean", "primaryTradition": "Nabataean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fate", "contextTag": "lifelong", "term": { "value": "mnwtw", "script": "Nabataean", "rom": "Manawat" },
+        "sources": [{ "kind": "primary", "reference": "Hegra tomb inscriptions (with Dushara, in curses)" }] },
+      { "sphereId": "death", "contextTag": "lifelong", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans (goddess of fate and fortune)" }] }
+    ],
+    "faculties": [
+      { "id": "mete-out-fate", "name": "Mete out destiny, fortune, and the hour of death", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "name from manaya, 'to apportion'", "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans; Palmyra Nemesis equation" }] },
+      { "id": "curse-tomb-violators", "name": "Curse those who violate the protected tombs", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "invoked with Dushara in Hegra tomb-curses", "sources": [{ "kind": "primary", "reference": "Hegra (Madāʾin Ṣāliḥ) tomb inscriptions" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Hegra tomb inscriptions; Nabataean dedications" },
+        { "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans: A Conspectus" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Nabataean goddess of fate, fortune, and death, chiefly at Hegra; invoked with Dushara to curse tomb-violators, an Arabian Nemesis."
+  },
+  {
+    "id": "nabataean_qaws",
+    "name": { "primary": "Qaws", "alt": ["Qōs", "Qaus", "Quzaḥ"], "transliterations": { "nabataean": "qws" } },
+    "type": "deity", "origin": "canon", "tradition": "Nabataean", "primaryTradition": "Nabataean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "weather", "contextTag": "lifelong", "term": { "value": "qws", "script": "Nabataean", "rom": "Qaws" },
+        "sources": [{ "kind": "primary", "reference": "Khirbet et-Tannur inscription (syncretized with Dushara)" }] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans (Edomite warrior-god)" }] }
+    ],
+    "faculties": [
+      { "id": "draw-the-bow", "name": "Draw the bow and bend the rainbow as archer", "term": { "value": "qws", "script": "Nabataean", "rom": "qaws ('bow')" },
+        "inheritability": "none", "notes": "identified with Quzaḥ, the rainbow-archer", "sources": [{ "kind": "secondary", "reference": "Qaws/Quzaḥ 'the archer'; qaws quzaḥ (rainbow)" }] },
+      { "id": "hurl-thunderbolt", "name": "Hurl the multi-pronged thunderbolt as weather-god", "term": { "value": "", "script": "Nabataean", "rom": "" },
+        "inheritability": "none", "notes": "depicted with thunderbolt, flanked by bulls", "sources": [{ "kind": "primary", "reference": "Khirbet et-Tannur relief" }] }
+    ],
+    "materialCulture": [
+      { "id": "bow-qaws", "kind": "weapon", "name": "Bow (and rainbow)", "term": { "value": "qws", "script": "Nabataean", "rom": "qaws" },
+        "role": "wielder", "notes": "The bow names the god; the rainbow is his arc", "sources": [{ "kind": "secondary", "reference": "Qaws as bow/rainbow god" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Khirbet et-Tannur inscription; stele at Petra; Edomite Qōs theophorics" },
+        { "kind": "secondary", "reference": "Healey, The Religion of the Nabataeans: A Conspectus" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Edomite national god of bow, rainbow, and storm adopted into Nabataean cult; archer weather-god syncretized with Dushara at Khirbet et-Tannur."
+  },
+  {
+    "id": "sabaean_almaqah",
+    "name": { "primary": "Almaqah", "alt": ["Ilmuqah", "Ilumquh"], "transliterations": { "sabaic": "ʾlmqh" } },
+    "type": "deity", "origin": "canon", "tradition": "Sabaean", "primaryTradition": "Sabaean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "supreme-sky", "contextTag": "lifelong", "term": { "value": "ʾlmqh bʿl ʾwm", "script": "Old South Arabian", "rom": "Almaqah baʿl Awwām ('lord of Awwam')" },
+        "sources": [{ "kind": "primary", "reference": "Awwam Temple (Mahram Bilqis) inscriptions, Marib" }] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Britannica, Arabian religion (protector of irrigation)" }] }
+    ],
+    "faculties": [
+      { "id": "protect-irrigation", "name": "Protect the irrigation works of Saba", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "national god of the Sabaean tribal federation", "sources": [{ "kind": "secondary", "reference": "Britannica, Arabian religion" }] },
+      { "id": "consort-of-shams", "name": "Reign as male consort to the sun-goddess Shams", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "bull-head and vine mark him as a solar god", "sources": [{ "kind": "secondary", "reference": "J. Pirenne and G. Garbini (solar, Dionysiac attributes)" }] }
+    ],
+    "materialCulture": [
+      { "id": "bull-head-almaqah", "kind": "symbol", "name": "Bull's-head and vine emblem", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "role": "associated", "notes": "Solar and Dionysiac attributes of Almaqah", "sources": [{ "kind": "primary", "reference": "Awwam Temple votive bronzes, Marib" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Awwam Temple (Mahram Bilqis) and Marib inscriptions" },
+        { "kind": "secondary", "reference": "Britannica, Arabian religion; Pirenne–Garbini studies" }
+      ], "weight": "primary" }
+    ],
+    "notes": "National god of Saba, 'Lord of Awwam' at the Marib temple; protector of irrigation, now read as a bull-and-vine solar god, consort of Shams."
+  },
+  {
+    "id": "sabaean_athtar",
+    "name": { "primary": "Athtar", "alt": ["ʿAṯtar", "Attar", "Shariqan"], "transliterations": { "sabaic": "ʿṯtr" } },
+    "type": "deity", "origin": "canon", "tradition": "Sabaean", "primaryTradition": "Sabaean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-stars", "contextTag": "lifelong", "term": { "value": "ʿṯtr", "script": "Old South Arabian", "rom": "ʿAṯtar" },
+        "sources": [{ "kind": "secondary", "reference": "Britannica, Arabian religion (Venus deity)" }] },
+      { "sphereId": "fresh-water", "contextTag": "lifelong", "term": { "value": "ʿṯtr šrqn", "script": "Old South Arabian", "rom": "ʿAṯtar Shāriqān ('the Eastern One')" },
+        "sources": [{ "kind": "primary", "reference": "South Arabian inscriptions (patron of irrigation by rain)" }] }
+    ],
+    "faculties": [
+      { "id": "send-the-rains", "name": "Bring natural irrigation through thunderstorm rain", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "morning-star aspect ends night, brings dawn", "sources": [{ "kind": "secondary", "reference": "Britannica, Arabian religion" }] },
+      { "id": "avenge-as-eastern-one", "name": "Avenge worshippers against enemies as the Eastern One", "term": { "value": "šrqn", "script": "Old South Arabian", "rom": "Shāriqān" },
+        "inheritability": "none", "notes": "invoked under the epithet Shariqan", "sources": [{ "kind": "primary", "reference": "South Arabian dedicatory inscriptions" }] }
+    ],
+    "materialCulture": [
+      { "id": "pole-athtar", "kind": "regalia", "name": "Standing pole (staff of power)", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "role": "wielder", "notes": "Held by the standing figure in a long tunic", "sources": [{ "kind": "secondary", "reference": "South Arabian iconography of ʿAṯtar" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Sabaean and Qatabanian inscriptions; god-lists (Athtar, Almaqah, Shams)" },
+        { "kind": "secondary", "reference": "Britannica, Arabian religion" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Pan-South-Arabian Venus-god of rain and irrigation, third of the astral triad; avenger 'Eastern One' (Shariqan) who once headed the pantheon."
+  },
+  {
+    "id": "sabaean_wadd",
+    "name": { "primary": "Wadd", "alt": ["Wadd ab", "Wad"], "transliterations": { "sabaic": "wd" } },
+    "type": "deity", "origin": "canon", "tradition": "Sabaean", "primaryTradition": "Sabaean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "wd", "script": "Old South Arabian", "rom": "Wadd ('love')" },
+        "sources": [{ "kind": "primary", "reference": "Minaean altar and amulet inscriptions" }] }
+    ],
+    "faculties": [
+      { "id": "father-the-faithful", "name": "Stand as divine father over his worshippers", "term": { "value": "wd ʾb", "script": "Old South Arabian", "rom": "Wadd ʾab ('Wadd is father')" },
+        "inheritability": "none", "notes": "propitiatory formula on amulets and buildings", "sources": [{ "kind": "primary", "reference": "South Arabian amulets bearing 'Wadd ʾab'" }] },
+      { "id": "guard-by-serpent", "name": "Ward off harm through his serpent emblem", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "snake symbol with crescent and Venus-disk", "sources": [{ "kind": "primary", "reference": "Minaean altar with the three gods' symbols" }] }
+    ],
+    "materialCulture": [
+      { "id": "serpent-symbol-wadd", "kind": "symbol", "name": "Serpent emblem", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "role": "associated", "notes": "Wadd's snake, with crescent moon and Venus disk", "sources": [{ "kind": "primary", "reference": "Minaean altar inscriptions, Maʿin" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Minaean, Sabaean, and Qatabanian inscriptions; Wd ʾb amulets" }
+      ], "weight": "primary" }
+    ],
+    "notes": "National moon-god of Maʿin (Minaeans), 'Love'; invoked in the formula 'Wadd is father' and marked by the serpent emblem."
+  },
+  {
+    "id": "sabaean_amm",
+    "name": { "primary": "ʿAmm", "alt": ["Amm", "Anbay (paired)"], "transliterations": { "sabaic": "ʿm" } },
+    "type": "deity", "origin": "canon", "tradition": "Sabaean", "primaryTradition": "Sabaean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "ʿm", "script": "Old South Arabian", "rom": "ʿAmm ('paternal uncle')" },
+        "sources": [{ "kind": "primary", "reference": "Timnaʿ temple inscriptions, Qataban" }] },
+      { "sphereId": "weather", "contextTag": "lifelong", "term": { "value": "ḏ-šqr", "script": "Old South Arabian", "rom": "ḏ-šqr ('the bright-shining one')" },
+        "sources": [{ "kind": "secondary", "reference": "ʿAmm as weather-god with lightning attribute" }] }
+    ],
+    "faculties": [
+      { "id": "guard-qataban-kin", "name": "Guard the Qatabanians as kindred paternal uncle", "term": { "value": "bnw ʿm", "script": "Old South Arabian", "rom": "banū ʿAmm ('sons of ʿAmm')" },
+        "inheritability": "none", "notes": "protector of the Qatabanian dynasty", "sources": [{ "kind": "primary", "reference": "Qatabanian royal inscriptions, Timnaʿ" }] },
+      { "id": "wax-and-revolve", "name": "Wax and revolve through the lunar phases", "term": { "value": "ryʿn w-šhrm", "script": "Old South Arabian", "rom": "ryʿn w-shrm ('he who waxes and revolves')" },
+        "inheritability": "none", "notes": "lunar epithet of his nightly phases", "sources": [{ "kind": "secondary", "reference": "ʿAmm lunar epithets" }] }
+    ],
+    "materialCulture": [
+      { "id": "lightning-amm", "kind": "symbol", "name": "Lightning-bolts", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "role": "associated", "notes": "Weather-attribute of the moon-god of Qataban", "sources": [{ "kind": "secondary", "reference": "ʿAmm iconography (lightning)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Qatabanian inscriptions, capital Timnaʿ" }
+      ], "weight": "primary" }
+    ],
+    "notes": "National moon- and weather-god of Qataban, 'Paternal Uncle'; familial guardian of the 'sons of ʿAmm', bearing lunar and lightning attributes."
+  },
+  {
+    "id": "sabaean_sin",
+    "name": { "primary": "Sin", "alt": ["Sayin", "Syn"], "transliterations": { "sabaic": "syn" } },
+    "type": "deity", "origin": "canon", "tradition": "Sabaean", "primaryTradition": "Sabaean",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "syn", "script": "Old South Arabian", "rom": "Sayin" },
+        "sources": [{ "kind": "primary", "reference": "Shabwa temple inscriptions, Hadramawt" }] }
+    ],
+    "faculties": [
+      { "id": "patronize-hadramawt", "name": "Reign as national patron of Hadramawt", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "lord of the principal temple at Shabwa", "sources": [{ "kind": "primary", "reference": "Hadramitic inscriptions, Shabwa" }] },
+      { "id": "shine-by-crescent", "name": "Light the night under crescent-and-orb", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "crescent-and-disk at his temples; eagle and bull on coins", "sources": [{ "kind": "secondary", "reference": "Hadramawt coinage and temple symbols" }] }
+    ],
+    "materialCulture": [
+      { "id": "eagle-bull-sin", "kind": "symbol", "name": "Eagle and bull (on coinage)", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "role": "associated", "notes": "Animals of Sayin struck on Hadramawt coins", "sources": [{ "kind": "secondary", "reference": "Hadramawt coin iconography" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Hadramitic inscriptions; temple at the capital Shabwa" }
+      ], "weight": "primary" }
+    ],
+    "notes": "National god (Sayin) of Hadramawt, lord of the Shabwa temple; a moon-god by crescent symbols, with eagle and bull on the kingdom's coinage."
+  },
+  {
+    "id": "sabaean_shams",
+    "name": { "primary": "Shams", "alt": ["Shamsum", "Dhat-Baʿdan"], "transliterations": { "sabaic": "šms" } },
+    "type": "deity", "origin": "canon", "tradition": "Sabaean", "primaryTradition": "Sabaean",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "šms", "script": "Old South Arabian", "rom": "Shams ('sun', 'shining')" },
+        "sources": [{ "kind": "primary", "reference": "Sabaean inscriptions to the sun-goddess, Yemen" }] }
+    ],
+    "faculties": [
+      { "id": "protect-sabaean-dynasty", "name": "Guard the Sabaean dynasty as patron sun-goddess", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "feminine counterpart and consort of Almaqah", "sources": [{ "kind": "secondary", "reference": "Britannica, Arabian religion" }] },
+      { "id": "blaze-as-sun", "name": "Blaze across the sky as the burning sun", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "inheritability": "none", "notes": "worship by bowing east at sunrise, noon, sunset", "sources": [{ "kind": "primary", "reference": "South Arabian inscriptions; shrines at Sirwah and Marib" }] }
+    ],
+    "materialCulture": [
+      { "id": "sun-disk-shams", "kind": "symbol", "name": "Solar disk", "term": { "value": "", "script": "Old South Arabian", "rom": "" },
+        "role": "associated", "notes": "Emblem of the radiant sun-goddess", "sources": [{ "kind": "secondary", "reference": "Shams iconography, South Arabia" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Sabaean/Himyarite inscriptions; shrines at Sirwah and Marib" },
+        { "kind": "secondary", "reference": "Britannica, Shams; Wikipedia, Shams (deity)" }
+      ], "weight": "primary" }
+    ],
+    "notes": "South Arabian sun-goddess, patroness of the Sabaean (and later Himyarite) dynasty; feminine counterpart and consort of the god Almaqah."
+  }
+]
+```

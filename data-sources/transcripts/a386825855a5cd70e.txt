@@ -1,0 +1,573 @@
+Clean: 22 figures, zero collisions, zero dupes, all snake_case. Balance across 7 tradition labels (Salish, Crow, Cheyenne, Apache, Cree, Pomo, Miwok). I checked: no figure here re-authors any already-in tradition (Diné/Hopi/Zuni/Cherokee/Iroquois etc.), and culture-heroes/twins with attested gear are foregrounded (Sweet Medicine + Sacred Arrows, Erect Horns + Buffalo Hat, Child of the Water + blue-stone charm, Wîsahkêcâhk, the Apache twins).
+
+Here is the complete final registry.
+
+```json
+[
+  {
+    "id": "salish_old_one",
+    "name": { "primary": "Old-One", "alt": ["Old One", "Chief", "the Old Man", "Great Chief Above"], "transliterations": {} },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Salish",
+    "primaryTradition": "Salish",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / myth-age" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "James Teit, 'The Thompson Indians of British Columbia,' Memoirs of the American Museum of Natural History vol. 2 (1900), creation traditions." } ] },
+      { "sphereId": "world-ordering", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "James Teit, 'The Shuswap,' Memoirs of the American Museum of Natural History vol. 2 pt. 7 (1909)." } ] }
+    ],
+    "faculties": [
+      { "id": "create_the_earth", "name": "create the earth and the first beings", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In Thompson (Nlaka'pamux), Okanagan and Shuswap traditions the Old-One (also 'the Chief' or 'Great Chief Above') is the primal creator who shapes the earth and dispatches Coyote and other transformers to set the world in order before humans.", "sources": [ { "kind": "ethnography", "reference": "Teit, 'The Thompson Indians of British Columbia' (1900); introduction by Franz Boas." } ] },
+      { "id": "send_the_transformers", "name": "send transformers to prepare the world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The Old-One commissions Coyote (Sǝnk'lip) and the Qwo'qtqwal transformer brothers to travel the land making it fit for people.", "sources": [ { "kind": "ethnography", "reference": "James Teit, 'Mythology of the Thompson Indians,' Jesup North Pacific Expedition vol. 8 pt. 2 (1912)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Old-One is the supreme creator/sky-chief of the Interior Salish (Thompson, Okanagan, Shuswap) who makes the earth and sends Coyote to order it.", "citations": [ { "kind": "ethnography", "reference": "James Teit, 'The Thompson Indians of British Columbia,' Jesup North Pacific Expedition (1900)." }, { "kind": "ethnography", "reference": "James Teit, 'The Salishan Tribes of the Western Plateaus,' ed. Franz Boas, 45th Annual Report of the Bureau of American Ethnology (1930)." } ], "weight": "primary" }
+    ],
+    "notes": "Spirit-class creator/sky-deity; classed 'deity' per schema (no separate creator tier). Native theonym not consistently recorded in the early ethnographies — Teit translates it as 'Old-One' or 'the Chief'; term left empty rather than supplying a reconstruction."
+  },
+  {
+    "id": "salish_senklip",
+    "name": { "primary": "Coyote", "alt": ["Sǝnk'lip", "Sen'klip", "Senklip", "Snčĺé", "the Imitator"], "transliterations": { "okanagan": "sn̓k̓lip", "secwepemc-nlakapamux": "Snčĺé", "pronunciation": "SIN-kleep" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Salish",
+    "primaryTradition": "Salish",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "myth-age (animal-people / sptákwelh time)" },
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "sn̓k̓lip", "script": "Latn", "rom": "sn̓k̓lip" }, "sources": [ { "kind": "ethnography", "reference": "James Teit, 'The Salishan Tribes of the Western Plateaus' (BAE 45th Annual Report, 1930)." } ] },
+      { "sphereId": "transformation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "literary", "reference": "Mourning Dove (Christine Quintasket), 'Coyote Stories,' ed. Heister Dean Guie (Caxton, 1933)." } ] }
+    ],
+    "faculties": [
+      { "id": "transform_the_land", "name": "transform the land and its monsters", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "As the chief transformer sent by the Old-One, Coyote remakes the landscape, kills or transforms man-eating monsters, and fixes the order of animals and rivers.", "sources": [ { "kind": "ethnography", "reference": "Teit, 'Mythology of the Thompson Indians' (1912)." } ] },
+      { "id": "free_the_salmon", "name": "release the salmon up the rivers", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Coyote breaks the dam/weir held by the women (the Swallow sisters) at the river mouth so salmon can run upstream to all the Plateau peoples — a foundational Plateau 'salmon-bringer' episode.", "sources": [ { "kind": "ethnography", "reference": "James Teit, 'The Okanagon,' in 'The Salishan Tribes of the Western Plateaus' (BAE 45th Annual Report, 1930)." }, { "kind": "literary", "reference": "Mourning Dove, 'Coyote Stories' (1933)." } ] },
+      { "id": "abandon_the_castaway_children", "name": "lose his children to the sky as the Pleiades", "term": { "value": "Esʔsk̓ʷlelt", "script": "Latn", "rom": "Esʔsk̓ʷlelt" }, "inheritability": "unique", "notes": "In the Plateau star myth Coyote (Snčĺé) chases his wife for stealing his basket and abandons his children, who ascend and become the 'Castaway Children' — the Pleiades.", "sources": [ { "kind": "ethnography", "reference": "James Teit, in Franz Boas (ed.), 'Folk-Tales of Salishan and Sahaptin Tribes,' Memoirs of the American Folk-Lore Society vol. 11 (1917)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Coyote (Sǝnk'lip) is the principal trickster-transformer and culture-hero of the Interior Salish, sent by the Old-One to prepare the world and famed for freeing the salmon.", "citations": [ { "kind": "ethnography", "reference": "James Teit, 'The Salishan Tribes of the Western Plateaus,' ed. Franz Boas (BAE 45th Annual Report, 1930)." }, { "kind": "literary", "reference": "Mourning Dove (Christine Quintasket), 'Coyote Stories' (Caxton, 1933)." } ], "weight": "primary" },
+      { "claim": "Plateau star/sky myths (including the Pleiades as Coyote's abandoned children) are recorded by Teit in Boas's Salishan and Sahaptin folk-tales.", "citations": [ { "kind": "ethnography", "reference": "James Teit, in Boas (ed.), 'Folk-Tales of Salishan and Sahaptin Tribes' (1917)." } ], "weight": "secondary" }
+    ],
+    "notes": "Culture-hero/transformer trickster classed 'demigod' per schema. Okanagan orthography sn̓k̓lip; Secwépemc/Nlaka'pamux Snčĺé; popular 'sen'klip', pronounced SIN-kleep. No standardized attested gear, hence materialCulture []."
+  },
+  {
+    "id": "crow_old_man_coyote",
+    "name": { "primary": "Old Man Coyote", "alt": ["Isáahkawuattee", "Akbaatatdía", "Old-Man-Coyote", "First Worker", "First-Maker"], "transliterations": { "crow": "Isáahkawuattee", "crow-creator-title": "Akbaatatdía" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / creation-time" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Isáahkawuattee", "script": "Latn", "rom": "Isáahkawuattee" }, "sources": [ { "kind": "ethnography", "reference": "Robert H. Lowie, 'Myths and Traditions of the Crow Indians,' Anthropological Papers of the American Museum of Natural History vol. 25 pt. 1 (1918)." } ] },
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Robert H. Lowie, 'The Crow Indians' (Farrar & Rinehart, 1935)." } ] }
+    ],
+    "faculties": [
+      { "id": "raise_the_earth", "name": "raise the earth from the primal water", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Earth-diver creation: Old Man Coyote sends four ducks to dive; the fourth (Hell-Diver) brings up mud from which he spreads the land, mountains and rivers across the world.", "sources": [ { "kind": "ethnography", "reference": "Lowie, 'Myths and Traditions of the Crow Indians' (1918), Old-Man-Coyote creation cycle." } ] },
+      { "id": "make_the_first_people", "name": "shape the first people and animals", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "After making the land, Old Man Coyote forms people from earth and creates the animals, languages and customs; a second Coyote (Círape) accompanies and rivals him.", "sources": [ { "kind": "ethnography", "reference": "Lowie, 'The Crow Indians' (1935), creation and Old-Man-Coyote narratives." } ] },
+      { "id": "deceive_and_be_deceived", "name": "play tricks and suffer them in turn", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The same figure who creates the world is also the buffoon-trickster of countless episodes; Lowie stresses the fusion of demiurge and trickster in the Crow Old-Man-Coyote.", "sources": [ { "kind": "ethnography", "reference": "Lowie, 'Myths and Traditions of the Crow Indians' (1918)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Old Man Coyote (Isáahkawuattee / Akbaatatdía) is the Crow earth-diver creator and trickster who raises the land and makes the first people, often paired with a lesser Coyote (Círape).", "citations": [ { "kind": "ethnography", "reference": "Robert H. Lowie, 'Myths and Traditions of the Crow Indians,' Anthropological Papers AMNH vol. 25 pt. 1 (1918)." }, { "kind": "ethnography", "reference": "Robert H. Lowie, 'The Crow Indians' (Farrar & Rinehart, 1935)." } ], "weight": "primary" }
+    ],
+    "notes": "Creator-trickster ('First-Worker'/'First-Maker') classed 'deity' per schema. Akbaatatdía ('the one who made everything') is also used as a name for the supreme creator; Isáahkawuattee is the proper Coyote-trickster theonym. No standard attested personal gear, so materialCulture []."
+  },
+  {
+    "id": "crow_cirape",
+    "name": { "primary": "Little Coyote", "alt": ["Círape", "Shirape", "the younger Coyote"], "transliterations": { "crow": "Círape" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Crow",
+    "primaryTradition": "Crow",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "creation-time" },
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "Círape", "script": "Latn", "rom": "Círape" }, "sources": [ { "kind": "ethnography", "reference": "Robert H. Lowie, 'Myths and Traditions of the Crow Indians' (1918)." } ] }
+    ],
+    "faculties": [
+      { "id": "advise_the_creator", "name": "advise and contend with Old Man Coyote", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Círape ('Little Coyote') is the companion and foil of Old Man Coyote during creation, prompting some of the world's features and customs through their dialogue and rivalry.", "sources": [ { "kind": "ethnography", "reference": "Lowie, 'The Crow Indians' (1935)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Círape, the lesser/younger Coyote, accompanies Old Man Coyote through the Crow creation as companion and rival.", "citations": [ { "kind": "ethnography", "reference": "Robert H. Lowie, 'Myths and Traditions of the Crow Indians,' AMNH (1918)." } ], "weight": "secondary" }
+    ],
+    "notes": "Secondary trickster-companion; classed 'demigod'. Distinct from Old Man Coyote in those versions that separate the two Coyotes (Lowie 1918, 1935)."
+  },
+  {
+    "id": "cheyenne_maheo",
+    "name": { "primary": "All-Spirit", "alt": ["Maheo", "Ma'heo'o", "Maheoo", "Great Medicine", "Wise One Above"], "transliterations": { "cheyenne": "Ma'heo'o", "conventional": "Maheo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Ma'heo'o", "script": "Latn", "rom": "Ma'heo'o" }, "sources": [ { "kind": "ethnography", "reference": "George Bird Grinnell, 'The Cheyenne Indians: Their History and Ways of Life,' 2 vols. (Yale University Press, 1923)." } ] },
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Karl H. Schlesier, 'The Wolves of Heaven: Cheyenne Shamanism, Ceremonies, and Prehistoric Origins' (University of Oklahoma Press, 1987)." } ] }
+    ],
+    "faculties": [
+      { "id": "create_the_world", "name": "create the world from the primal water", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In the Cheyenne creation, Maheo ('All-Spirit') makes the water, the water-beings, then the land (an earth-diver brings up mud, raised on Grandmother Turtle's back), then the first man and woman.", "sources": [ { "kind": "ethnography", "reference": "Grinnell, 'The Cheyenne Indians' (1923), creation account." } ] },
+      { "id": "give_the_covenants", "name": "give the people their sacred covenants", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Maheo is the source of the Sacred Arrows given through Sweet Medicine and of the Sacred Buffalo Hat given through Erect Horns — the 'Two Great Covenants' of the Cheyenne.", "sources": [ { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine: The Continuing Role of the Sacred Arrows, the Sun Dance, and the Sacred Buffalo Hat in Northern Cheyenne History,' 2 vols. (University of Oklahoma Press, 1969)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Maheo (Ma'heo'o), the 'All-Spirit' or Great Medicine, is the supreme creator of the Cheyenne and the giver of their sacred covenants.", "citations": [ { "kind": "ethnography", "reference": "George Bird Grinnell, 'The Cheyenne Indians,' 2 vols. (Yale, 1923)." }, { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine,' 2 vols. (Univ. of Oklahoma Press, 1969)." } ], "weight": "primary" }
+    ],
+    "notes": "Supreme creator/sky-spirit classed 'deity'. Cheyenne Ma'heo'o ('All-Spirit', also 'Sacred/Great One'); the doubled form Maheo is the conventional English rendering."
+  },
+  {
+    "id": "cheyenne_sweet_medicine",
+    "name": { "primary": "Sweet Medicine", "alt": ["Mótsé'eóeve", "Motseyoef", "Sweet Root", "Arrow Boy"], "transliterations": { "cheyenne": "Mótsé'eóeve", "popular": "Motseyoef" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "myth-age / culture-hero age" },
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "Mótsé'eóeve", "script": "Latn", "rom": "Mótsé'eóeve" }, "sources": [ { "kind": "ethnography", "reference": "George Bird Grinnell, 'The Cheyenne Indians' (1923), vol. 2, Sweet Medicine cycle." } ] },
+      { "sphereId": "law-giving", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine,' vol. 1 (1969)." } ] }
+    ],
+    "faculties": [
+      { "id": "receive_the_sacred_arrows", "name": "receive the Sacred Arrows from Maheo", "term": { "value": "Maahotse", "script": "Latn", "rom": "Maahotse" }, "inheritability": "unique", "notes": "At Nóávóse (Bear Butte) Maheo gives Sweet Medicine the four Sacred Arrows (Maahotse) and the laws and ceremonies of the people — the founding Cheyenne covenant.", "sources": [ { "kind": "ethnography", "reference": "Grinnell, 'The Cheyenne Indians' (1923), vol. 2." }, { "kind": "ethnography", "reference": "Powell, 'Sweet Medicine' (1969), vol. 1." } ] },
+      { "id": "establish_the_council", "name": "establish the Council of Forty-Four and the law", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Sweet Medicine institutes the Council of Forty-Four chiefs, the military societies, and the rules against murder polluting the Arrows.", "sources": [ { "kind": "legal-ethnography", "reference": "Karl N. Llewellyn & E. Adamson Hoebel, 'The Cheyenne Way: Conflict and Case Law in Primitive Jurisprudence' (University of Oklahoma Press, 1941)." } ] },
+      { "id": "foretell_the_changes", "name": "foretell the horse, the white man, and the loss of the buffalo", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Before dying Sweet Medicine prophesies the coming of horses, of white people, the disappearance of the buffalo, and the transformation of Cheyenne life.", "sources": [ { "kind": "ethnography", "reference": "Grinnell, 'The Cheyenne Indians' (1923), vol. 2, Sweet Medicine's prophecy." } ] }
+    ],
+    "materialCulture": [
+      { "id": "cheyenne_sacred_arrows", "kind": "ritual regalia / sacred bundle", "name": "the Sacred Arrows", "term": { "value": "Maahotse", "script": "Latn", "rom": "Maahotse" }, "role": "Four sacred arrows given by Maheo through Sweet Medicine: two 'Man Arrows' (power over enemies in war) and two 'Buffalo Arrows' (power over the hunt). Held to be living and the holiest tribal possession, kept by a hereditary Arrow Keeper.", "notes": "Also called Mahuts. Renewed in the Arrow Renewal ceremony; murder within the tribe was believed to stain the Arrows.", "sources": [ { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine,' 2 vols. (1969), on the Maahotse." }, { "kind": "ethnography", "reference": "George Bird Grinnell, 'The Cheyenne Indians' (1923), vol. 2." } ] }
+    ],
+    "sources": [
+      { "claim": "Sweet Medicine (Mótsé'eóeve) is the Cheyenne prophet and law-giver who received the four Sacred Arrows (Maahotse) from Maheo at Bear Butte and founded Cheyenne government and ceremony.", "citations": [ { "kind": "ethnography", "reference": "George Bird Grinnell, 'The Cheyenne Indians,' 2 vols. (Yale, 1923)." }, { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine,' 2 vols. (Univ. of Oklahoma Press, 1969)." } ], "weight": "primary" },
+      { "claim": "The Sacred Arrows comprise two Man Arrows and two Buffalo Arrows, kept by a hereditary Keeper and central to Cheyenne law.", "citations": [ { "kind": "ethnography", "reference": "Powell, 'Sweet Medicine' (1969)." }, { "kind": "legal-ethnography", "reference": "Llewellyn & Hoebel, 'The Cheyenne Way' (1941)." } ], "weight": "primary" }
+    ],
+    "notes": "Culture-hero/prophet classed 'demigod' per schema (prophet/law-giver of the myth-age, recipient of a divine covenant). Cheyenne Mótsé'eóeve ('Sweet Medicine/Sweet Root'); popular Motseyoef; also widely 'Arrow Boy'."
+  },
+  {
+    "id": "cheyenne_erect_horns",
+    "name": { "primary": "Erect Horns", "alt": ["Tomsivi", "Tomȯsévėséhe", "Standing-On-The-Ground", "Rustling Corn Leaf"], "transliterations": { "cheyenne": "Tomȯsévėséhe", "popular": "Tomsivi" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Cheyenne",
+    "primaryTradition": "Cheyenne",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "myth-age / culture-hero age" },
+    "domains": [
+      { "sphereId": "prophecy", "contextTag": "lifelong", "term": { "value": "Tomȯsévėséhe", "script": "Latn", "rom": "Tomȯsévėséhe" }, "sources": [ { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine' (1969), on the Só'taeo'o (Sutaio) Buffalo Hat tradition." } ] },
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "George A. Dorsey, 'The Cheyenne, II: The Sun Dance,' Field Columbian Museum Publication 103 (1905)." } ] }
+    ],
+    "faculties": [
+      { "id": "receive_the_buffalo_hat", "name": "receive the Sacred Buffalo Hat from Maheo", "term": { "value": "Esevone", "script": "Latn", "rom": "Ésevone" }, "inheritability": "unique", "notes": "The Só'taeo'o (Sutaio) prophet Erect Horns enters a sacred mountain (Tȯhóonévose) and receives the Sacred Buffalo Hat (Ésevone / Is'siwun) and the Sun Dance — the second of the Cheyenne 'Two Great Covenants'.", "sources": [ { "kind": "ethnography", "reference": "Powell, 'Sweet Medicine' (1969)." } ] },
+      { "id": "bring_the_sun_dance", "name": "bring the Sun Dance and renew the buffalo", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Erect Horns establishes the Sun Dance (Medicine Lodge) and renews the buffalo for the people.", "sources": [ { "kind": "ethnography", "reference": "George A. Dorsey, 'The Cheyenne, II: The Sun Dance' (Field Columbian Museum, 1905)." } ] }
+    ],
+    "materialCulture": [
+      { "id": "cheyenne_buffalo_hat", "kind": "ritual regalia / sacred bundle", "name": "the Sacred Buffalo Hat", "term": { "value": "Esevone", "script": "Latn", "rom": "Ésevone" }, "role": "Sacred horned buffalo-skin cap given by Maheo through Erect Horns; counterpart of the Sacred Arrows, embodying the female/buffalo-renewing power. Kept by a hereditary Hat Keeper among the Northern Cheyenne.", "notes": "Also called Is'siwun (Issiwun). Together the Arrows (Maahotse) and the Hat (Ésevone) form the Two Great Covenants of the Cheyenne.", "sources": [ { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine' (1969), on Ésevone / Is'siwun." } ] }
+    ],
+    "sources": [
+      { "claim": "Erect Horns (Tomsivi / Tomȯsévėséhe) is the Sutaio prophet who received the Sacred Buffalo Hat (Ésevone / Is'siwun) and the Sun Dance from Maheo.", "citations": [ { "kind": "ethnography", "reference": "Peter J. Powell, 'Sweet Medicine,' 2 vols. (1969)." }, { "kind": "ethnography", "reference": "George A. Dorsey, 'The Cheyenne, I–II' (Field Columbian Museum, 1905)." } ], "weight": "primary" }
+    ],
+    "notes": "Sutaio culture-hero/prophet classed 'demigod'. The Só'taeo'o (Sutaio) were a distinct people absorbed into the Cheyenne; Erect Horns is their counterpart to Sweet Medicine. Cheyenne Tomȯsévėséhe; popular Tomsivi."
+  },
+  {
+    "id": "apache_ussen",
+    "name": { "primary": "Life-Giver", "alt": ["Ussen", "Yusn", "Bik'egu'indáán", "Giver of Life"], "transliterations": { "chiricahua": "Bik'egu'indáán", "popular": "Ussen / Yusn" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Apache",
+    "primaryTradition": "Apache",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Bik'egu'indáán", "script": "Latn", "rom": "Bik'egu'indáán" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'An Apache Life-Way: The Economic, Social, and Religious Institutions of the Chiricahua Indians' (University of Chicago Press, 1941)." } ] },
+      { "sphereId": "life", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians,' Memoirs of the American Folk-Lore Society vol. 37 (1942)." } ] }
+    ],
+    "faculties": [
+      { "id": "give_life", "name": "give life to all beings", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Ussen (Yusn), the Life-Giver, is the supreme creative power and source of life; the Chiricahua descriptive name Bik'egu'indáán means roughly 'the one through whom life moves / Life-Giver'.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'An Apache Life-Way' (1941)." } ] },
+      { "id": "ordain_the_powers", "name": "ordain the supernatural powers and ceremonies", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "From the Life-Giver derive the diyí ('powers') that come to shamans and the major ceremonies of the Apache.", "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'The Creative Role of Shamanism in Mescalero Apache Mythology,' Journal of American Folklore 59 (1946)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Ussen / Yusn (Chiricahua Bik'egu'indáán), the Life-Giver, is the supreme creator-deity of the Apache and source of all life and ceremonial power.", "citations": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'An Apache Life-Way' (Univ. of Chicago Press, 1941)." }, { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ], "weight": "primary" }
+    ],
+    "notes": "Supreme creator classed 'deity'. Ussen/Yusn is the common Chiricahua/Mescalero rendering; Opler records the descriptive Chiricahua name Bik'egu'indáán ('Life-Giver'). Female counterpart is White Painted Woman."
+  },
+  {
+    "id": "apache_white_painted_woman",
+    "name": { "primary": "White Painted Woman", "alt": ["Changing Woman", "Isdzánátł'éshn", "Esdzanadehe", "Painted White Woman", "White Shell Woman"], "transliterations": { "chiricahua-mescalero": "Isdzánátł'éshn", "popular": "Esdzanadehe" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Apache",
+    "primaryTradition": "Apache",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "myth-age / first-people time" },
+    "domains": [
+      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "Isdzánátł'éshn", "script": "Latn", "rom": "Isdzánátł'éshn" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'An Apache Life-Way' (1941), girls' puberty rite." } ] },
+      { "sphereId": "renewal", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] }
+    ],
+    "faculties": [
+      { "id": "renew_her_youth", "name": "grow old and become young again", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "When she ages she walks east toward the sun, meets her younger self, and merges with it to become young again — the 'Changing Woman' cycle of perpetual renewal.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] },
+      { "id": "bear_the_culture_heroes", "name": "bear the monster-slaying twins", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Impregnated by the Sun she bears Child of the Water (and, by Water/Rain, Killer of Enemies in some versions); she hides and rears the boys to rid the earth of monsters.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] },
+      { "id": "give_the_puberty_rite", "name": "give the girls' Sunrise Ceremony", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "transmissible", "notes": "She institutes the girls' puberty rite (na'íí'ees / Sunrise Ceremony), in which each initiate becomes White Painted Woman for its duration.", "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'An Apache Life-Way' (1941)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "White Painted Woman / Changing Woman (Isdzánátł'éshn, popular Esdzanadehe) is the chief female deity of the Apache, mother of the monster-slaying twins and giver of the girls' puberty ceremony, who renews her youth perpetually.", "citations": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'An Apache Life-Way' (Univ. of Chicago Press, 1941)." }, { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians,' Memoirs of the American Folk-Lore Society 37 (1942)." } ], "weight": "primary" }
+    ],
+    "notes": "Creator-mother goddess classed 'deity'. Apache Isdzánátł'éshn ('White-Painted Woman'); 'Changing Woman' is the renewal-aspect title (cf. Navajo Asdzą́ą́ Nádleehé). Esdzanadehe is a common English-source spelling."
+  },
+  {
+    "id": "apache_child_of_the_water",
+    "name": { "primary": "Child of the Water", "alt": ["Child of Water", "Tóbájíshchíní", "Water's Child"], "transliterations": { "chiricahua-mescalero": "Tóbájíshchíní" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Apache",
+    "primaryTradition": "Apache",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["apache_white_painted_woman"],
+    "temporal": { "era": "myth-age / first-people time" },
+    "domains": [
+      { "sphereId": "monster-slaying", "contextTag": "lifelong", "term": { "value": "Tóbájíshchíní", "script": "Latn", "rom": "Tóbájíshchíní" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Pliny Earle Goddard, 'Myths and Tales from the San Carlos Apache,' Anthropological Papers AMNH vol. 24 pt. 1 (1918)." } ] }
+    ],
+    "faculties": [
+      { "id": "slay_the_monsters", "name": "slay the monsters that devour people", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Son of White Painted Woman by the Sun (or Water), Child of the Water is the dominant Chiricahua/Mescalero hero who kills the man-eating monsters — chiefly Owl-Man Giant — to make the earth safe.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942), the monster-slaying texts." } ] },
+      { "id": "endure_the_sun_tests", "name": "endure his father the Sun's tests", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "He journeys to the Sun, is acknowledged as a son, and is given power to overcome the monsters.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] }
+    ],
+    "materialCulture": [
+      { "id": "apache_turquoise_charm", "kind": "amulet / protective charm", "name": "the blue stone protective charm", "term": { "value": "", "script": "", "rom": "" }, "role": "A brilliant blue stone (turquoise) that appears at Child of the Water's feet and speaks, telling him to carry it as protection; with it he survives the four deadly arrows of Owl-Man Giant before killing the monster.", "notes": "Attested in Opler's Chiricahua monster-slaying text; the blue stone shields him against the Giant's arrows. Apache term for the stone not transcribed in the source, hence term empty.", "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942), Child of the Water vs. Owl-Man Giant." } ] }
+    ],
+    "sources": [
+      { "claim": "Child of the Water (Tóbájíshchíní), son of White Painted Woman, is the dominant Chiricahua/Mescalero monster-slaying culture-hero who, protected by a blue stone, kills Owl-Man Giant and other monsters.", "citations": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians,' Memoirs of the American Folk-Lore Society 37 (1942)." }, { "kind": "ethnography", "reference": "Pliny Earle Goddard, 'Myths and Tales from the San Carlos Apache' (1918) and 'Myths and Tales from the White Mountain Apache' (1919)." } ], "weight": "primary" }
+    ],
+    "notes": "Monster-slaying twin culture-hero classed 'demigod' (son of a goddess and the Sun). Apache Tóbájíshchíní (cf. Navajo Tóbájíshchíní); in Chiricahua/Mescalero he, not Killer of Enemies, is the principal hero."
+  },
+  {
+    "id": "apache_killer_of_enemies",
+    "name": { "primary": "Killer of Enemies", "alt": ["Slayer of Enemies", "Naayéé'neizghání", "Nayenezgani"], "transliterations": { "chiricahua-mescalero": "Naayéé'neizghání" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Apache",
+    "primaryTradition": "Apache",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["apache_white_painted_woman"],
+    "temporal": { "era": "myth-age / first-people time" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Naayéé'neizghání", "script": "Latn", "rom": "Naayéé'neizghání" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] },
+      { "sphereId": "monster-slaying", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Harry Hoijer, 'Chiricahua and Mescalero Apache Texts' (University of Chicago Press, 1938)." } ] }
+    ],
+    "faculties": [
+      { "id": "fight_the_monsters", "name": "war on the monsters alongside his brother", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Twin brother of Child of the Water; in Chiricahua/Mescalero versions he is the elder but lesser, sometimes timid, partner in the monster-slaying, with Child of the Water taking the lead.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." } ] },
+      { "id": "give_power_over_enemies", "name": "give power over enemies and game", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Associated in some Apache groups with mastery of enemies and the source of war-power; in Western Apache he is the dominant hero (reversed roles).", "sources": [ { "kind": "ethnography", "reference": "Pliny Earle Goddard, 'Myths and Tales from the White Mountain Apache,' Anthropological Papers AMNH vol. 24 pt. 2 (1919)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Killer of Enemies (Naayéé'neizghání), twin of Child of the Water and son of White Painted Woman, is a monster-slaying culture-hero; dominant among Western Apache, secondary among Chiricahua/Mescalero.", "citations": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Chiricahua Apache Indians' (1942)." }, { "kind": "ethnography", "reference": "Harry Hoijer, 'Chiricahua and Mescalero Apache Texts' (Univ. of Chicago Press, 1938)." }, { "kind": "ethnography", "reference": "Pliny Earle Goddard, 'Myths and Tales from the White Mountain Apache' (1919)." } ], "weight": "primary" }
+    ],
+    "notes": "Monster-slaying twin classed 'demigod'. Apache Naayéé'neizghání (cf. Navajo Naayéé'neizghání 'Monster Slayer'). Relative prominence of the twins is reversed between Western Apache (Killer of Enemies dominant) and Chiricahua/Mescalero (Child of the Water dominant) per Opler and Goddard."
+  },
+  {
+    "id": "apache_hactcin",
+    "name": { "primary": "Holy Ones", "alt": ["Hactcin", "Hậctcin", "the Supernaturals"], "transliterations": { "jicarilla": "Hậctcin" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Apache",
+    "primaryTradition": "Apache",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / underworld-emergence time" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Hậctcin", "script": "Latn", "rom": "Hậctcin" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Jicarilla Apache Indians,' Memoirs of the American Folk-Lore Society vol. 31 (1938)." } ] },
+      { "sphereId": "emergence", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Jicarilla Apache Indians' (1938)." } ] }
+    ],
+    "faculties": [
+      { "id": "make_earth_and_sky", "name": "make the earth, underworld and sky", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "shared", "notes": "The Hactcin, the Jicarilla 'Holy Ones', personifications of the powers of objects and natural forces, make the earth as a woman facing up and the sky as a man facing down, and prepare the underworld from which people emerge.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Jicarilla Apache Indians' (1938), creation and emergence." } ] },
+      { "id": "lead_the_emergence", "name": "lead the people up into this world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "shared", "notes": "The Hactcin set up ladders/mountains and call the people up out of the underworld in the four-day emergence, Ancestral Man and Ancestral Woman climbing first.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Jicarilla Apache Indians' (1938)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Hactcin are the Jicarilla Apache class of 'Holy Ones' / supernatural powers who create the earth and sky and lead the people's emergence into this world.", "citations": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Jicarilla Apache Indians,' Memoirs of the American Folk-Lore Society vol. 31 (1938)." } ], "weight": "primary" }
+    ],
+    "notes": "A spirit-class (the Jicarilla creator-supernaturals), represented collectively and classed 'deity' per schema; 'sex':'none' for the non-gendered class. Jicarilla Hactcin ≈ 'holy/supernatural one' (cf. Navajo diyin diné'é). Distinct subfigure Black Hactcin given separately."
+  },
+  {
+    "id": "apache_black_hactcin",
+    "name": { "primary": "Black Holy One", "alt": ["Black Hactcin", "Black Hậctcin"], "transliterations": { "jicarilla": "Hậctcin Diłhił" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Apache",
+    "primaryTradition": "Apache",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / underworld time" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Hậctcin Diłhił", "script": "Latn", "rom": "Hậctcin Diłhił" }, "sources": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Jicarilla Apache Indians' (1938)." } ] }
+    ],
+    "faculties": [
+      { "id": "make_the_animals", "name": "make the first animals from clay", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The most powerful Hactcin of the underworld, Black Hactcin forms the first four-legged animal from clay and from its body brings forth all the kinds of animals, then makes the first man and gives him food and a companion.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Jicarilla Apache Indians' (1938), Black Hactcin and the origin of the animals." } ] },
+      { "id": "make_the_first_man", "name": "shape the first man", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Black Hactcin shapes the first man after his own reflection in water and gives him plants and cloven-hoofed animals for food.", "sources": [ { "kind": "ethnography", "reference": "Opler, 'Myths and Tales of the Jicarilla Apache Indians' (1938)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Black Hactcin is the chief Jicarilla underworld Holy One who creates the first animals from clay and shapes the first man.", "citations": [ { "kind": "ethnography", "reference": "Morris E. Opler, 'Myths and Tales of the Jicarilla Apache Indians,' Memoirs of the American Folk-Lore Society vol. 31 (1938)." } ], "weight": "primary" }
+    ],
+    "notes": "Leading creator-Hactcin classed 'deity'. Jicarilla color-named (Black) supernatural; paired with White Hactcin (of the sky/upper world). Term Hậctcin Diłhił reflects diłhił 'black' in Jicarilla; orthography per Opler."
+  },
+  {
+    "id": "cree_kise_manitow",
+    "name": { "primary": "Great Spirit", "alt": ["Kisê-manitow", "Kise-manito", "Kihci-manitow", "Great Manitou", "the Creator"], "transliterations": { "plains-cree-sro": "kisê-manitow", "swampy-cree": "kihci-manitow" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "kisê-manitow", "script": "Latn", "rom": "kisê-manitow" }, "sources": [ { "kind": "ethnography", "reference": "David G. Mandelbaum, 'The Plains Cree: An Ethnographic, Historical, and Comparative Study' (Canadian Plains Research Center, 1979; orig. AMNH 1940)." } ] },
+      { "sphereId": "spirit-power", "contextTag": "lifelong", "term": { "value": "manitow", "script": "Latn", "rom": "manitow" }, "sources": [ { "kind": "ethnography", "reference": "Leonard Bloomfield, 'Sacred Stories of the Sweet Grass Cree,' National Museum of Canada Bulletin 60 (1930)." } ] }
+    ],
+    "faculties": [
+      { "id": "create_and_uphold", "name": "create and uphold the world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Kisê-manitow ('Great/Kind Spirit') is the supreme manitow, source of life and the powers; in the sacred stories the shaping of the present world is delegated to Wîsahkêcâhk after the flood.", "sources": [ { "kind": "ethnography", "reference": "Mandelbaum, 'The Plains Cree' (1979)." } ] },
+      { "id": "grant_spirit_power", "name": "grant spirit-power to seekers", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The lesser manitôwak (spirit-powers) that come to people in vision quests derive their power from the Great Spirit.", "sources": [ { "kind": "ethnography", "reference": "Mandelbaum, 'The Plains Cree' (1979), religion." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Kisê-manitow, the 'Great Spirit', is the supreme creator-manitow of the Cree, source of life and of the spirit-powers, with world-shaping delegated to the trickster-transformer.", "citations": [ { "kind": "ethnography", "reference": "David G. Mandelbaum, 'The Plains Cree' (Canadian Plains Research Center, 1979; orig. AMNH 1940)." }, { "kind": "ethnography", "reference": "Leonard Bloomfield, 'Sacred Stories of the Sweet Grass Cree' (1930)." } ], "weight": "primary" }
+    ],
+    "notes": "Supreme creator/spirit classed 'deity'. Plains Cree Standard Roman Orthography kisê-manitow ('great/kind spirit'); Swampy Cree kihci-manitow. 'Manitow' is the general term for a spirit-power."
+  },
+  {
+    "id": "cree_wisahkecahk",
+    "name": { "primary": "Wîsahkêcâhk", "alt": ["Wisahketchahk", "Wesakechak", "Wisakedjak", "Whiskey Jack"], "transliterations": { "plains-cree-sro": "wîsahkêcâhk", "popular": "Wesakechak" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "myth-age (sacred-story / âtayôhkêwin time)" },
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "wîsahkêcâhk", "script": "Latn", "rom": "wîsahkêcâhk" }, "sources": [ { "kind": "ethnography", "reference": "Leonard Bloomfield, 'Sacred Stories of the Sweet Grass Cree,' National Museum of Canada Bulletin 60 (1930)." } ] },
+      { "sphereId": "transformation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Leonard Bloomfield, 'Plains Cree Texts,' American Ethnological Society Publications vol. 16 (1934)." } ] }
+    ],
+    "faculties": [
+      { "id": "remake_the_earth", "name": "remake the earth after the flood", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "After a great flood Wîsahkêcâhk floats on a raft and sends animals (muskrat/otter) to dive for mud, then re-creates the land — the Cree earth-diver narrative 'The Birth of Wîsahkêcâhk and the Origin of Mankind'.", "sources": [ { "kind": "ethnography", "reference": "Bloomfield, 'Sacred Stories of the Sweet Grass Cree' (1930), 'The Birth of Wisahketchahk and the Origin of Mankind'." } ] },
+      { "id": "name_the_animals", "name": "name the animals and fix their natures", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Through his adventures Wîsahkêcâhk gives animals their present forms and habits and teaches humans skills, often by comic misadventure.", "sources": [ { "kind": "ethnography", "reference": "Bloomfield, 'Plains Cree Texts' (1934)." } ] },
+      { "id": "trick_and_blunder", "name": "trick others and bungle his own schemes", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Benevolent trickster-transformer and friend of humankind, distinguished by Cree narrators from the dangerous Plains tricksters; his greed and vanity recoil on him.", "sources": [ { "kind": "ethnography", "reference": "Mandelbaum, 'The Plains Cree' (1979), wîsahkêcâhk cycle." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Wîsahkêcâhk is the Cree trickster-transformer and culture-hero who remakes the earth after the flood and shapes the animals, a benevolent friend of humankind.", "citations": [ { "kind": "ethnography", "reference": "Leonard Bloomfield, 'Sacred Stories of the Sweet Grass Cree,' National Museum of Canada Bulletin 60 (1930)." }, { "kind": "ethnography", "reference": "Leonard Bloomfield, 'Plains Cree Texts,' American Ethnological Society 16 (1934)." } ], "weight": "primary" }
+    ],
+    "notes": "Trickster-transformer/culture-hero classed 'demigod' per schema. Plains Cree SRO wîsahkêcâhk; widely Wesakechak/Wisahketchahk; the same Algonquian figure as Anishinaabe Nanabozho. English nickname 'Whiskey Jack' is a folk-etymology of the name. No standard attested gear, hence materialCulture []."
+  },
+  {
+    "id": "cree_memekwesiw",
+    "name": { "primary": "Little Water-Spirits", "alt": ["Memekwesiw", "Mêmêkwêsiw", "Memegwesi", "the Little People"], "transliterations": { "plains-cree-sro": "mêmêkwêsiw", "plural": "mêmêkwêsiwak" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Cree",
+    "primaryTradition": "Cree",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "myth-age and present" },
+    "domains": [
+      { "sphereId": "water", "contextTag": "lifelong", "term": { "value": "mêmêkwêsiw", "script": "Latn", "rom": "mêmêkwêsiw" }, "sources": [ { "kind": "ethnography", "reference": "David G. Mandelbaum, 'The Plains Cree' (1979)." } ] },
+      { "sphereId": "wilderness", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Alanson Skinner, 'Notes on the Eastern Cree and Northern Saulteaux,' Anthropological Papers AMNH vol. 9 pt. 1 (1911)." } ] }
+    ],
+    "faculties": [
+      { "id": "dwell_in_the_rocks", "name": "dwell in riverbank rocks and rapids", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "shared", "notes": "The mêmêkwêsiwak are a class of small water/rock spirits ('little people') living in cliffs and rapids; they may help or hinder humans and are linked to rock-paintings.", "sources": [ { "kind": "ethnography", "reference": "Skinner, 'Notes on the Eastern Cree and Northern Saulteaux' (1911)." } ] },
+      { "id": "grant_canoe_power", "name": "grant skill and power to those they favor", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "shared", "notes": "Encounters with the mêmêkwêsiwak can bring hunting or healing power, but offending them brings misfortune.", "sources": [ { "kind": "ethnography", "reference": "Mandelbaum, 'The Plains Cree' (1979)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The mêmêkwêsiwak are a class of Cree little water/rock spirits dwelling in cliffs and rapids, capable of helping or harming people.", "citations": [ { "kind": "ethnography", "reference": "Alanson Skinner, 'Notes on the Eastern Cree and Northern Saulteaux,' Anthropological Papers AMNH vol. 9 (1911)." }, { "kind": "ethnography", "reference": "David G. Mandelbaum, 'The Plains Cree' (1979)." } ], "weight": "secondary" }
+    ],
+    "notes": "A spirit-class (the 'little people' of the rocks/waters), represented collectively and classed 'deity' per schema. 'sex':'none' as a non-gendered collective. Plains Cree SRO mêmêkwêsiw (sing.), mêmêkwêsiwak (pl.); cf. Anishinaabe memegwesi."
+  },
+  {
+    "id": "pomo_marumda",
+    "name": { "primary": "Marumda", "alt": ["Marúmda", "Madúmda", "Old Man", "the Creator"], "transliterations": { "eastern-pomo": "Marúmda", "central-pomo": "Madúmda" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Marúmda", "script": "Latn", "rom": "Marúmda" }, "sources": [ { "kind": "ethnography", "reference": "Jaime de Angulo & William Ralganal Benson, 'The Creation Myth of the Pomo Indians,' Anthropos 27 (1932)." } ] },
+      { "sphereId": "world-ordering", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Samuel A. Barrett, 'Pomo Myths,' Bulletin of the Public Museum of the City of Milwaukee vol. 15 (1933)." } ] }
+    ],
+    "faculties": [
+      { "id": "create_the_world", "name": "create the world", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Marumda, dwelling in the north, decides to make the world and calls on his elder brother Kuksu for help; he shapes the earth and the first people.", "sources": [ { "kind": "ethnography", "reference": "de Angulo & Benson, 'The Creation Myth of the Pomo Indians' (1932)." } ] },
+      { "id": "destroy_and_remake", "name": "destroy and remake the world by flood and fire", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Dissatisfied with the first creations, Marumda (with Kuksu) destroys the world by flood and then by fire and remakes it, himself being rescued by the Old Mother Ragno.", "sources": [ { "kind": "ethnography", "reference": "Barrett, 'Pomo Myths' (1933)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Marumda (Eastern Pomo Marúmda, Central Pomo Madúmda), the 'Old Man', is the Pomo creator who makes and twice destroys-and-remakes the world with his elder brother Kuksu.", "citations": [ { "kind": "ethnography", "reference": "Jaime de Angulo & William Ralganal Benson, 'The Creation Myth of the Pomo Indians,' Anthropos 27 (1932)." }, { "kind": "ethnography", "reference": "Samuel A. Barrett, 'Pomo Myths,' Bull. Public Museum of Milwaukee vol. 15 (1933)." } ], "weight": "primary" }
+    ],
+    "notes": "Creator-deity classed 'deity'. Recorded from the Eastern Pomo narrator William Ralganal Benson with Jaime de Angulo; Eastern Pomo Marúmda, Central/dialectal Madúmda. Paired with Kuksu as co-creator."
+  },
+  {
+    "id": "pomo_kuksu",
+    "name": { "primary": "Kuksu", "alt": ["Guksu", "Kúksu", "the elder brother"], "transliterations": { "pomo": "Kúksu" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Kúksu", "script": "Latn", "rom": "Kúksu" }, "sources": [ { "kind": "ethnography", "reference": "Jaime de Angulo & William Ralganal Benson, 'The Creation Myth of the Pomo Indians,' Anthropos 27 (1932)." } ] },
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Edwin M. Loeb, 'The Western Kuksu Cult,' University of California Publications in American Archaeology and Ethnology vol. 33 (1932)." } ] }
+    ],
+    "faculties": [
+      { "id": "co_create_the_world", "name": "help create the world with Marumda", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Kuksu, elder brother of Marumda, is summoned to assist in making the world and shares in its creation and re-creation.", "sources": [ { "kind": "ethnography", "reference": "de Angulo & Benson, 'The Creation Myth of the Pomo Indians' (1932)." } ] },
+      { "id": "embody_healing_spirit", "name": "embody the impersonated healing-spirit of the dance", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "transmissible", "notes": "Kuksu (Guksu) is also the great healing/curing spirit impersonated by a masked dancer in the central-California Kuksu ceremonial system, bringing health and renewal.", "sources": [ { "kind": "ethnography", "reference": "Loeb, 'The Western Kuksu Cult' (1932)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Kuksu, elder brother of Marumda, is co-creator of the Pomo world and the great healing-spirit impersonated in the Kuksu ceremonial dances of central California.", "citations": [ { "kind": "ethnography", "reference": "Jaime de Angulo & William Ralganal Benson, 'The Creation Myth of the Pomo Indians,' Anthropos 27 (1932)." }, { "kind": "ethnography", "reference": "Edwin M. Loeb, 'The Western Kuksu Cult,' UC Publications in American Archaeology and Ethnology vol. 33 (1932)." } ], "weight": "primary" }
+    ],
+    "notes": "Creator/healing-spirit classed 'deity'. In creation he is Marumda's elder-brother co-creator (de Angulo & Benson); in ritual he is the masked healing-spirit of the Kuksu system (Loeb). Cf. Wintun/Maidu cognates documented by Kroeber."
+  },
+  {
+    "id": "pomo_ragno",
+    "name": { "primary": "Spider Old Woman", "alt": ["Ragno", "Old Mother", "Old Woman", "Spider Woman"], "transliterations": { "pomo": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "rescue", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Jaime de Angulo & William Ralganal Benson, 'The Creation Myth of the Pomo Indians,' Anthropos 27 (1932)." } ] }
+    ],
+    "faculties": [
+      { "id": "rescue_the_creators", "name": "rescue the creators from their own deluge and fire", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "When Marumda and Kuksu's flood and fire prove disastrous, the Old Mother (called Ragno in de Angulo & Benson's text) rescues them; she is associated with the spider/web that holds the world.", "sources": [ { "kind": "ethnography", "reference": "de Angulo & Benson, 'The Creation Myth of the Pomo Indians' (1932)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Old Mother (Ragno), a spider/ancestress figure, rescues the Pomo creators Marumda and Kuksu from the world-destroying flood and fire.", "citations": [ { "kind": "ethnography", "reference": "Jaime de Angulo & William Ralganal Benson, 'The Creation Myth of the Pomo Indians,' Anthropos 27 (1932)." } ], "weight": "secondary" }
+    ],
+    "notes": "Primordial 'Old Mother'/spider-ancestress classed 'deity'. 'Ragno' (Italian for 'spider') is the term in de Angulo's published text — his Italian gloss of a Pomo spider-grandmother name; native term not securely recorded, hence term empty."
+  },
+  {
+    "id": "pomo_coyote",
+    "name": { "primary": "Coyote", "alt": ["Old Man Coyote", "Coyote-Man", "the Trickster"], "transliterations": { "pomo": "" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Pomo",
+    "primaryTradition": "Pomo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "myth-age" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Samuel A. Barrett, 'Pomo Myths,' Bull. Public Museum of Milwaukee vol. 15 (1933)." } ] },
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Samuel A. Barrett, 'Pomo Myths' (1933)." } ] }
+    ],
+    "faculties": [
+      { "id": "make_the_people", "name": "make people and bring fire and customs", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In many Pomo narratives Coyote is the ancestor-creator who makes people (sometimes from feathers/sticks), brings fire, and institutes death and custom, acting alongside or in place of Marumda.", "sources": [ { "kind": "ethnography", "reference": "Barrett, 'Pomo Myths' (1933), Coyote creation and theft-of-fire texts." } ] },
+      { "id": "trick_and_transform", "name": "trick others and shape the world by mischief", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Coyote is the chief trickster whose appetites and schemes incidentally fix features of the world.", "sources": [ { "kind": "ethnography", "reference": "Barrett, 'Pomo Myths' (1933)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Coyote is a Pomo ancestor-creator and trickster who makes people, brings fire, and orders the world, in some traditions the principal creator.", "citations": [ { "kind": "ethnography", "reference": "Samuel A. Barrett, 'Pomo Myths,' Bull. Public Museum of Milwaukee vol. 15 (1933)." }, { "kind": "ethnography", "reference": "S. A. Barrett, 'The Ethno-Geography of the Pomo and Neighboring Indians,' UC Publications in American Archaeology and Ethnology vol. 6 (1908)." } ], "weight": "primary" }
+    ],
+    "notes": "Creator-trickster classed 'demigod'. Recorded as ancestor/creator and trickster by Barrett (1933); the Pomo personal name varies by dialect and is not consistently transcribed in the cited sources, hence term empty. Distinct from the co-creators Marumda and Kuksu."
+  },
+  {
+    "id": "miwok_coyote",
+    "name": { "primary": "Coyote", "alt": ["Coyote-Man", "the Creator", "Old Man Coyote"], "transliterations": { "sierra-miwok": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial / myth-age" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "C. Hart Merriam, 'The Dawn of the World: Myths and Weird Tales Told by the Mewan (Miwok) Indians of California' (Arthur H. Clark, 1910)." } ] },
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "ethnography", "reference": "Edward W. Gifford, 'Miwok Myths,' University of California Publications in American Archaeology and Ethnology vol. 12 (1917)." } ] }
+    ],
+    "faculties": [
+      { "id": "create_the_people", "name": "create the first people", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In Miwok tradition Coyote is the principal creator who makes the first people (in some versions from feathers planted in the ground) after a flood and orders the early world.", "sources": [ { "kind": "ethnography", "reference": "Merriam, 'The Dawn of the World' (1910), Miwok creation." } ] },
+      { "id": "contend_over_death", "name": "decide the coming of death", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Coyote figures in the Miwok 'origin of death' debate, where the permanence of death is established among the first people.", "sources": [ { "kind": "ethnography", "reference": "Gifford, 'Miwok Myths' (1917)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Coyote is the principal creator-trickster of the Miwok of central California, maker of the first people and orderer of the early world.", "citations": [ { "kind": "ethnography", "reference": "C. Hart Merriam, 'The Dawn of the World: Myths and Weird Tales Told by the Mewan (Miwok) Indians of California' (1910)." }, { "kind": "ethnography", "reference": "Edward W. Gifford, 'Miwok Myths,' UC Publications in American Archaeology and Ethnology vol. 12 (1917)." } ], "weight": "primary" }
+    ],
+    "notes": "Creator-trickster classed 'deity'. Miwok (Merriam's 'Mewan') neighbor the Pomo and share the central-California Coyote-creator and Kuksu complex; the Miwok personal name is not uniformly transcribed in the cited sources, hence term empty."
+  },
+  {
+    "id": "miwok_falcon",
+    "name": { "primary": "Falcon", "alt": ["Prairie Falcon", "Wek'-wek", "Wekwek"], "transliterations": { "sierra-miwok": "Wek'-wek" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Miwok",
+    "primaryTradition": "Miwok",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "myth-age (first-people / animal-people time)" },
+    "domains": [
+      { "sphereId": "culture-hero", "contextTag": "lifelong", "term": { "value": "Wek'-wek", "script": "Latn", "rom": "Wek'-wek" }, "sources": [ { "kind": "ethnography", "reference": "C. Hart Merriam, 'The Dawn of the World' (1910), Wek'-wek narratives." } ] }
+    ],
+    "faculties": [
+      { "id": "win_benefits_for_people", "name": "win fire and benefits for the first people", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Prairie Falcon (Wek'-wek), grandson of the creator Coyote, is the active culture-hero of Miwok myth, journeying, fighting monsters and helping secure fire and order for people.", "sources": [ { "kind": "ethnography", "reference": "Merriam, 'The Dawn of the World' (1910)." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Prairie Falcon (Wek'-wek), kin of the creator Coyote, is a Miwok culture-hero who acts to benefit the first people.", "citations": [ { "kind": "ethnography", "reference": "C. Hart Merriam, 'The Dawn of the World: Myths and Weird Tales Told by the Mewan (Miwok) Indians of California' (1910)." }, { "kind": "ethnography", "reference": "Edward W. Gifford, 'Miwok Myths,' UC Publications vol. 12 (1917)." } ], "weight": "secondary" }
+    ],
+    "notes": "Animal-person culture-hero classed 'demigod'. Wek'-wek (Prairie Falcon) is paired with Coyote across central-California (Miwok/Yokuts) creation; recorded by Merriam (1910)."
+  }
+]
+```
+
+Summary of what I delivered and how I checked it:
+
+- **Sanity checks run**: validated all 22 IDs against `/home/user/PantheonRepository/data-sources/existing-ids.json` (zero collisions, zero duplicates, all snake_case), and confirmed none of my traditions overlap the "already in" list. I did not modify any repo files.
+- **Coverage** (22 figures across 7 tradition labels): Salish (Old-One, Coyote/Sǝnk'lip), Crow (Old Man Coyote/Isáahkawuattee, Círape), Cheyenne (Maheo, Sweet Medicine, Erect Horns), Apache (Ussen/Yusn, White Painted Woman, Child of the Water, Killer of Enemies, the Hactcin, Black Hactcin), Cree (Kisê-manitow, Wîsahkêcâhk, Memekwesiw), Pomo (Marumda, Kuksu, Ragno, Coyote), Miwok (Coyote, Prairie Falcon).
+- **Culture-heroes/twins with attested gear foregrounded**: Sweet Medicine + the Sacred Arrows (Maahotse, two Man + two Buffalo Arrows); Erect Horns + the Sacred Buffalo Hat (Ésevone/Is'siwun); Child of the Water + the blue-stone protective charm vs. Owl-Man Giant; the Apache monster-slaying twins; Wîsahkêcâhk.
+- **Schema compliance**: English/plain word leads `name.primary` with native term in `term` (correct orthography where attested, else `""`); domains/faculties/materialCulture kept distinct (faculties are verb-phrases); `materialCulture` uses `id`/`name` keys and is `[]` where nothing is attested; no modern coinages; `origin:"canon"`; real per-claim citations throughout (Lowie, Grinnell, Powell, Opler, Goddard, Hoijer, Bloomfield, Mandelbaum, Skinner, Teit, Boas, Mourning Dove, Barrett, Loeb, de Angulo & Benson, Merriam, Gifford). Spirit-classes/culture-heroes mapped to deity/demigod with explanation in notes.
+
+result: Authored a 22-figure JSON registry (above) covering the absent North American traditions — Salish/Plateau, Crow, Cheyenne, Apache (incl. Jicarilla Hactcin), Cree, Pomo, and Miwok — with real scholarly citations, foregrounded culture-heroes/twins and their attested gear (Sacred Arrows, Sacred Buffalo Hat, Child of the Water's blue stone), schema-compliant, all IDs verified unique against existing-ids.json; no repo files modified.

@@ -1,0 +1,31 @@
+Confirmed: Takyayen has no distinctive attested item of his own. SKIP.
+
+For the Manipuri Chothe figure: the "Chothe Thangwai Pakhangba" is itself the title of a sacred manuscript (the text), and the paphal is a heraldic illustration. Neither is material culture (weapon/armor/mount/garment/instrument/relic/object) OWNED/WIELDED by the figure. There's no attested distinctive personal item. SKIP — honest about thin attestation.
+
+I now have my four solid records. Let me reconsider once more whether I'm being appropriately exhaustive vs. fabricating. The four with genuine attestation are Shun, Diku, Ungnyeo, Taranga. Let me reconsider the kind/role classifications carefully:
+
+- **Shun bamboo hats (笠 lì)**: He uses two bamboo rain-hats to shield/glide down from the burning granary. kind=object (they're not garments worn habitually but tools used; though a hat is wearable, here they function as gliding shields). A 笠 is a hat = wearable garment. But the load-bearing use is as an improvised glider/shield. I'll classify kind=garment (a bamboo rain-hat is worn headgear) with role=wielder (he uses them to escape). Hmm. Actually "wearer" fits a hat. But the deed is using them as a parachute/shield. The most defensible: kind=object, role=wielder (he wields two bamboo hats to descend safely). I'll go kind=object, role=wielder. Actually a hat is canonically a garment/headgear. Given the kinds list includes "garment," and a 笠 is literally headgear, but the function here is tool-like. I'll use kind=object (improvised implement) — defensible and matches "glides down on hats." Let me keep object.
+
+Actually, reconsider: the rules say kind=garment for things worn. A conical bamboo hat IS worn headgear. But the narrative role is as escape implements. I think kind=object is the cleaner descriptor for "two bamboo hats used to glide/shield." I'll use object, role=wielder.
+
+- **Shun five-string qin (五弦琴 wǔxián qín)**: kind=instrument, role=maker (he made it — "Shun made the five-stringed qin") and also player. maker is most precise and attested ("舜作五弦之琴"). role=maker.
+
+- **Diku dragon (龍 lóng)**: kind=mount, role=wielder (rider). role=wielder fits a mount-rider; could be owner. I'll use wielder (he rides it). Actually for a mount, "owner" or "wielder" both work; the figure rides it seasonally — role=owner is odd for a seasonal mount. I'll use role=wielder (rider) — but wielder connotes weapons. For mounts, owner is more standard. Hmm, the allowed roles are owner|wielder|wearer|maker|heir. For a mount, owner is the best fit. I'll use role=owner.
+
+- **Ungnyeo mugwort + garlic (艾 ssuk, 蒜 maneul)**: kind=object (consumed divine plants), role=owner (given to and possessed/eaten by her during the trial). I'll combine into one record naming both, or two records? They're a paired set given together. I'll do one record "spirit-mugwort and garlic" with term covering both. role=owner.
+
+- **Taranga topknot (tikitiki)**: kind=garment (her worn hair topknot), role=wearer (it's her own topknot which she wears, then uses to wrap Māui). role=wearer fits best — it's her worn topknot. Yes.
+
+Let me write the final output. I'll format native terms with script + romanization properly. Item ids will be short lowercase-hyphenated slugs.
+
+Final check on item-id slugs and completeness — I'm confident in these four. Let me produce the records.
+
+Based on my research across classical texts and recorded ethnography, here are the genuinely attested material-culture items. Nine of the thirteen figures (the Manipuri Chothe Pakhangba, Tagalog Tala, Bicolano Oryol and Magindara, Ifugao Ovug, Tinguian Takyayen, Chinese Zhuanxu, Korean Tangun, and Japanese Kushi-mikata) have NO distinctive attested personal item in the sources — their attestations are powers/symbols only (e.g., paphal is a heraldic illustration of the deity, not an owned object; Takyayen's family head-axe belongs to Aponitolau; Tangun's altar is a place; the Heavenly Seals belong to Hwanung) — so I have honestly skipped them rather than fabricate.
+
+```text
+chinese_shun :: ITEM bamboo-hats | name=Two bamboo rain-hats | term=笠 | script=hanzi | rom=lì | kind=object | role=wielder | gloss=Two conical bamboo hats he used to glide down the burning granary | src=Sima Qian, Shiji "Wudi benji" (舜乃以兩笠自扞而下)
+chinese_shun :: ITEM five-string-qin | name=Five-stringed zither | term=五弦琴 | script=hanzi | rom=wǔxián qín | kind=instrument | role=maker | gloss=He made the five-string qin to sing the South Wind ode | src=Liji "Yueji" (昔者舜作五弦之琴，以歌南風); Shiji
+chinese_diku :: ITEM dragon-mount | name=Dragon | term=龍 | script=hanzi | rom=lóng | kind=mount | role=owner | gloss=Rode a dragon in spring and summer, a horse in autumn-winter | src=Da Dai Liji "Wudi De" (春夏乘龍，秋冬乘馬); Shiji "Wudi benji"
+korean_ungnyeo :: ITEM mugwort-garlic | name=Spirit-mugwort and garlic | term=艾·蒜 (쑥·마늘) | script=hanja/hangul | rom=ae/san (ssuk/maneul) | kind=object | role=owner | gloss=Sacred mugwort and garlic she ate through the cave trial to become human | src=Iryeon, Samguk Yusa, Gojoseon (Dangun) account, 1281 (靈艾一炷、蒜二十枚)
+polynesian_taranga :: ITEM tikitiki-topknot | name=Hair topknot | term=tikitiki | script=Māori | rom=tikitiki | kind=garment | role=wearer | gloss=Her topknot, in which she wrapped premature Māui and cast him to sea | src=George Grey, Polynesian Mythology / Ngā Mahi a ngā Tūpuna (Māui-tikitiki-a-Taranga)
+```

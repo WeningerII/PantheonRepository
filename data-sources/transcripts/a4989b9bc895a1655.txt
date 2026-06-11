@@ -1,0 +1,120 @@
+Confirmed: Karṇa born with kavaca-kuṇḍala fused to body (innate, by-blood from Sūrya → this is bodily-born, so the invulnerability-power could be partial-heritable, but he had no surviving lineage who inherited it; Vṛṣaketu survived but no attestation of inherited armor — so heritability none for the armor). The Aśvins reviving-dead is attested in Vedic lore (raising/restoring, e.g., restoring Cyavana's youth, and they're "physicians who cure the incurable and even bring back the dead" per the earlier search). I have everything needed.
+
+I have enough verified material to produce the output. Let me reconcile item ownership against currentItems to identify what's MISSING and needs adding:
+
+- **Indra**: has indra-vajra. ✓ (no critical missing item)
+- **Yudhiṣṭhira**: has akshaya-patra, anantavijaya. ✓
+- **Bhīma**: has bhima-gada, bhima-paundra. ✓
+- **Arjuna**: has gandiva, pashupatastra, devadatta. MISSING: Kapidhvaja/Nandighoṣa chariot, akṣaya-tūṇīra (inexhaustible quivers). → add.
+- **Nakula**: has nakula-sughosha. ✓
+- **Sahadeva**: has sahadeva-manipushpaka. ✓
+- **Karṇa**: has kavacha-kundala, vasavi-shakti, vijaya. ✓
+- **Devas Sūrya/Vāyu/Dharma/Aśvins/Gaṅgā**: no items listed. Dharma/Yama owns daṇḍa + pāśa → ADD (these are genuinely missing, the classic Yama items). Sūrya — his items are more emblematic (chariot/rays); I'll add nothing forced, but Sūrya does wield/own things... actually the prompt wants items "object owned/wielded." Yama's daṇḍa and pāśa are the canonical missing items — definitely add. Sūrya doesn't have a famous personal weapon-item besides his chariot; skip forced items for Sūrya. Vāyu — no canonical item. Aśvins — they own a honey-whip (madhu-kaśā) and a three-wheeled chariot in the Rigveda; the madhukaśā (honey-whip) is attested → could add, but minor. I'll add the Aśvins' Rigvedic three-wheeled golden chariot as it's their signature owned object, and/or the madhu-kaśā. Keep it to the most attested: their tri-wheeled chariot (triṇacakra ratha). Gaṅgā — no wielded item.
+
+Let me write the final formatted output now. I'll be careful with Devanāgarī accuracy for each term.
+
+Final output:
+
+=== hindu_dharma (Dharma / Yama-Dharma)
+hindu_dharma :: POWER yama-judges-dead | name=Judges and assigns fate to the dead | term=धर्मविचार (dharmavicāra) | script=Sanskrit (Devanāgarī) | rom=dharmavicāra | gloss=As Yama, weighs each soul's deeds, allotting heaven, Naraka, or rebirth | inherit=none | src=MBh; Wikipedia "Yama"
+hindu_dharma :: POWER yama-revives | name=Revives the dead | term=संजीवन (saṃjīvana) | script=Sanskrit (Devanāgarī) | rom=saṃjīvana | gloss=Restored the slain Pāṇḍavas to life at the Yakṣa-praśna lake | inherit=none | src=MBh Vana Parva (Yakṣa-praśna)
+hindu_dharma :: POWER yama-tests | name=Tests righteousness in disguise | term=माया (māyā) | script=Sanskrit (Devanāgarī) | rom=māyā | gloss=Took the form of a crane/yakṣa to test Yudhiṣṭhira's dharma | inherit=none | src=MBh Vana Parva
+hindu_dharma :: ITEM yama-danda | name=Rod of death/punishment | term=दण्ड (daṇḍa) | script=Sanskrit (Devanāgarī) | rom=daṇḍa | kind=staff | role=instrument of death-dealing and punishment | gloss=The staff with which Yama metes out death and chastisement | src=Wikipedia "Yama"
+hindu_dharma :: ITEM yama-pasha | name=Noose of death | term=पाश (pāśa) | script=Sanskrit (Devanāgarī) | rom=pāśa | kind=noose | role=binds and draws out the soul at death | gloss=The rope-snare by which Yama seizes the dying | src=Wikipedia "Yama"
+
+Let me verify the Devanāgarī forms I'm using are correct: saṃjīvana संजीवन (or संजीवनी for the herb; saṃjīvana = "reviving" is fine), daṇḍa दण्ड, pāśa पाश, māyā माया, vajra वज्र, astra अस्त्र, gadā गदा, śāpa शाप, vara/varadāna वरदान, icchāmṛtyu इच्छामृत्यु / svecchāmṛtyu स्वेच्छामृत्यु, rūpa-parivartana रूपपरिवर्तन, tapas तपस्, prāṇa प्राण, tāpa ताप. These are all standard. Let me compose the complete answer.
+
+I have all the verified information needed. Here is the corrected registry, grouped by figure.
+
+---
+
+**Notes on scope:** Covered the 7 devas (Dharma/Yama, Vāyu, Indra, Sūrya, the two Aśvins, Gaṅgā) and the principal epic heroes (Yudhiṣṭhira, Bhīma, Arjuna, Nakula, Sahadeva, Karṇa, Bhīṣma). Also included **Ghaṭotkaca** and **Abhimanyu** despite their empty `domains`, because both are major battlefield actors with iconic *attested, exercised* powers (not genealogy). **Skipped** as purely genealogical / title-only with no exercised power or wielded item: Śāntanu, Draupadī (her one supernatural episode — the akṣaya-vastra — is a miracle done *to* her, neither exercised nor owned), Parīkṣit, Prativindhya, Sutasoma, Śrutakarma, Śatānīka, Śrutasena, Yaudheya, Sarvaga, Irāvān, Babhruvāhana, Niramitra, Suhotra, the five Karṇa-sons, Janamejaya, Añjanaparvan. (Note: Kṛṣṇa is absent from this dataset, so his Sudarśana cakra could not be assigned.)
+
+```
+=== hindu_dharma (Dharma / Yama-Dharma)
+hindu_dharma :: POWER yama-judge-dead | name=Judges the dead and allots their fate | term=धर्मविचार | script=Sanskrit (Devanāgarī) | rom=dharmavicāra | gloss=As Yama weighs each soul's deeds, assigning heaven, Naraka, or rebirth | inherit=none | src=MBh; en.wikipedia.org/wiki/Yama
+hindu_dharma :: POWER yama-revive | name=Restores the dead to life | term=संजीवन | script=Sanskrit (Devanāgarī) | rom=saṃjīvana | gloss=Revived the four fallen Pāṇḍavas at the Yakṣa-praśna lake | inherit=none | src=MBh Vana Parva (Yakṣa-praśna)
+hindu_dharma :: POWER yama-disguise | name=Assumes disguising forms to test righteousness | term=माया | script=Sanskrit (Devanāgarī) | rom=māyā | gloss=Took crane/yakṣa form to test Yudhiṣṭhira's dharma | inherit=none | src=MBh Vana Parva
+hindu_dharma :: ITEM yama-danda | name=Rod of death and punishment | term=दण्ड | script=Sanskrit (Devanāgarī) | rom=daṇḍa | kind=staff | role=instrument of death-dealing and chastisement | gloss=Staff with which Yama metes out death and punishment | src=en.wikipedia.org/wiki/Yama
+hindu_dharma :: ITEM yama-pasha | name=Noose of death | term=पाश | script=Sanskrit (Devanāgarī) | rom=pāśa | kind=noose | role=binds and draws out the soul at death | gloss=Rope-snare by which Yama seizes the lives of the dying | src=en.wikipedia.org/wiki/Yama
+
+=== hindu_vayu (Vāyu)
+hindu_vayu :: POWER vayu-wind-control | name=Commands and drives the winds | term=वायुचालन | script=Sanskrit (Devanāgarī) | rom=vāyucālana | gloss=Stirs winds from gale-force enough to topple peaks to gentlest breath | inherit=partial | src=Vayu (Wikipedia); divinehindu.com
+hindu_vayu :: POWER vayu-confer-strength | name=Confers superhuman strength on his sons | term=बलदान | script=Sanskrit (Devanāgarī) | rom=baladāna | gloss=Bodily gift of immense strength passed to Bhīma and Hanumān | inherit=full | src=MBh Ādi Parva; vedicfeed.com
+hindu_vayu :: POWER vayu-prana | name=Vivifies as the breath of life | term=प्राण | script=Sanskrit (Devanāgarī) | rom=prāṇa | gloss=Pervades all beings as the life-breath sustaining them | inherit=none | src=Upaniṣads; exoticindiaart.com
+
+=== hindu_indra (Indra)
+hindu_indra :: POWER indra-hurl-vajra | name=Hurls the thunderbolt to slay foes | term=वज्रपात | script=Sanskrit (Devanāgarī) | rom=vajrapāta | gloss=Smote Vṛtra and clove mountains, releasing the pent waters | inherit=none | src=Rigveda; en.wikipedia.org/wiki/Indra
+hindu_indra :: POWER indra-rain | name=Sends rain and storms | term=वृष्टि | script=Sanskrit (Devanāgarī) | rom=vṛṣṭi | gloss=Releases the rains and commands thunder, lightning, and storm | inherit=none | src=Rigveda; en.wikipedia.org/wiki/Indra
+hindu_indra :: POWER indra-shapeshift | name=Changes shape and disguises himself | term=रूपपरिवर्तन | script=Sanskrit (Devanāgarī) | rom=rūpaparivartana | gloss=Took Gautama's form to deceive Ahalyā; appeared as a brahmin to Karṇa | inherit=none | src=Rāmāyaṇa; MBh; en.wikipedia.org/wiki/Ahalya
+hindu_indra :: POWER indra-grant-boon | name=Grants boons and divine weapons | term=वरदान | script=Sanskrit (Devanāgarī) | rom=varadāna | gloss=Gave Arjuna celestial astras and Karṇa the Vāsavī Śakti | inherit=none | src=MBh Vana Parva (Indralokābhigamana)
+(items: indra-vajra already present and correct — no missing item)
+
+=== hindu_surya (Sūrya)
+hindu_surya :: POWER surya-radiate | name=Radiates blinding light and scorching heat | term=ताप | script=Sanskrit (Devanāgarī) | rom=tāpa | gloss=Pours out the burning brilliance of the sun across the worlds | inherit=none | src=mythology.net "Surya"; templepurohit.com
+hindu_surya :: POWER surya-grant-boon | name=Grants boons to devotees | term=वरदान | script=Sanskrit (Devanāgarī) | rom=varadāna | gloss=Gave Kunti the son Karṇa, his kavaca-kuṇḍala, and Yudhiṣṭhira the akṣaya-pātra | inherit=none | src=MBh; en.wikipedia.org/wiki/Yama (Akṣaya-pātra)
+
+=== hindu_nasatya (Nāsatya / elder Aśvin)
+hindu_nasatya :: POWER nasatya-heal | name=Heals the sick and cures the incurable | term=चिकित्सा | script=Sanskrit (Devanāgarī) | rom=cikitsā | gloss=Physician of the gods; restores sight, limbs, and health | inherit=partial | src=Rigveda; en.wikipedia.org/wiki/Ashvins
+hindu_nasatya :: POWER nasatya-rejuvenate | name=Restores youth and revives the dying | term=संजीवन | script=Sanskrit (Devanāgarī) | rom=saṃjīvana | gloss=Made aged Cyavana young again; bring even the dead back | inherit=none | src=Rigveda; ŚatapathaBr.; en.wikipedia.org/wiki/Ashvins
+hindu_nasatya :: ITEM ashvins-ratha | name=Three-wheeled golden chariot | term=त्रिचक्र रथ | script=Sanskrit (Devanāgarī) | rom=tricakra ratha | kind=vehicle | role=swift dawn-traversing car of the twin healers | gloss=Golden three-wheeled chariot the Aśvins drive across the sky | src=Rigveda; en.wikipedia.org/wiki/Ashvins
+
+=== hindu_dasra (Dasra / younger Aśvin)
+hindu_dasra :: POWER dasra-heal | name=Heals the sick and cures the incurable | term=चिकित्सा | script=Sanskrit (Devanāgarī) | rom=cikitsā | gloss=Twin physician of the gods; performs miraculous cures and surgery | inherit=partial | src=Rigveda; en.wikipedia.org/wiki/Ashvins
+hindu_dasra :: POWER dasra-rejuvenate | name=Restores youth and revives the dying | term=संजीवन | script=Sanskrit (Devanāgarī) | rom=saṃjīvana | gloss=With his twin rejuvenated Cyavana and revived the perishing | inherit=none | src=Rigveda; en.wikipedia.org/wiki/Ashvins
+(item ashvins-ratha is shared with Nāsatya, listed once above)
+
+=== hindu_ganga (Gaṅgā)
+hindu_ganga :: POWER ganga-purify | name=Purifies and washes away sins | term=पावन | script=Sanskrit (Devanāgarī) | rom=pāvana | gloss=Her waters cleanse all sin and grant mokṣa | inherit=none | src=en.wikipedia.org/wiki/Ganga_(goddess)
+hindu_ganga :: POWER ganga-liberate | name=Liberates souls into release | term=मोक्षदान | script=Sanskrit (Devanāgarī) | rom=mokṣadāna | gloss=Drowned the seven Vasus in her stream to free them from a curse | inherit=none | src=MBh Ādi Parva; en.wikipedia.org/wiki/Ganga_(goddess)
+hindu_ganga :: POWER ganga-tripathaga | name=Flows through heaven, earth, and netherworld | term=त्रिपथगा | script=Sanskrit (Devanāgarī) | rom=tripathagā | gloss=Courses simultaneously in all three worlds as the celestial river | inherit=none | src=MBh; en.wikipedia.org/wiki/Ganga_(goddess)
+
+=== hindu_yudhishthira (Yudhiṣṭhira)
+hindu_yudhishthira :: POWER yudhishthira-satya | name=Wields the power of unbroken truth | term=सत्य | script=Sanskrit (Devanāgarī) | rom=satya | gloss=His chariot floated four fingers above ground until his half-lie to Droṇa | inherit=none | src=MBh Droṇa Parva; quora/apam-napat
+(items: yudhishthira-akshaya-patra [from Sūrya] and yudhishthira-anantavijaya already present and correct)
+
+=== hindu_bhima (Bhīma)
+hindu_bhima :: POWER bhima-strength | name=Exerts superhuman, world-shaking strength | term=महाबल | script=Sanskrit (Devanāgarī) | rom=mahābala | gloss=Vāyu-born might of ten-thousand elephants; tore Jarāsandha apart | inherit=full | src=MBh Sabhā Parva; en.wikipedia.org/wiki/Bhima
+hindu_bhima :: POWER bhima-gada-mastery | name=Fights unmatched with the mace | term=गदायुद्ध | script=Sanskrit (Devanāgarī) | rom=gadāyuddha | gloss=Supreme mace-duelist; shattered Duryodhana's thighs | inherit=none | src=MBh Śalya Parva; en.wikipedia.org/wiki/Bhima
+(items: bhima-gada and bhima-paundra already present and correct)
+
+=== hindu_arjuna (Arjuna)
+hindu_arjuna :: POWER arjuna-astra | name=Invokes and discharges celestial weapons | term=दिव्यास्त्र | script=Sanskrit (Devanāgarī) | rom=divyāstra | gloss=Master of divine astras won from Śiva, Indra, Varuṇa, Yama | inherit=none | src=MBh Vana Parva; en.wikipedia.org/wiki/Astra_(weapon)
+hindu_arjuna :: POWER arjuna-ambidextrous | name=Shoots equally with either hand | term=सव्यसाचि | script=Sanskrit (Devanāgarī) | rom=savyasācī | gloss=Ambidextrous archer, hence the epithet Savyasācī | inherit=none | src=MBh; Arjuna epithets
+hindu_arjuna :: ITEM arjuna-ratha-kapidhvaja | name=Monkey-bannered chariot | term=कपिध्वज रथ | script=Sanskrit (Devanāgarī) | rom=kapidhvaja ratha | kind=chariot | role=war-car given by the gods, bearing Hanumān on its banner | gloss=Indestructible chariot whose flag carries Hanumān (Kapidhvaja) | src=MBh; Arjuna's celestial gifts (wisdomlib)
+hindu_arjuna :: ITEM arjuna-akshaya-tunira | name=Two inexhaustible quivers | term=अक्षयतूणीर | script=Sanskrit (Devanāgarī) | rom=akṣaya-tūṇīra | kind=quiver | role=never-emptying arrow-stores | gloss=Quivers gifted by Agni that never run out of arrows | src=MBh Ādi Parva (Khāṇḍava); sharathkomarraju.com
+(items: arjuna-gandiva, arjuna-pashupatastra, arjuna-devadatta already present and correct)
+
+=== hindu_nakula (Nakula)
+hindu_nakula :: POWER nakula-ashvavidya | name=Heals and masters horses | term=अश्वचिकित्सा | script=Sanskrit (Devanāgarī) | rom=aśvacikitsā | gloss=Knew the cure of every equine ailment; supreme horse-tamer | inherit=partial | src=MBh Virāṭa Parva; en.wikipedia.org/wiki/Nakula
+(item: nakula-sughosha already present and correct)
+
+=== hindu_sahadeva (Sahadeva)
+hindu_sahadeva :: POWER sahadeva-foreknow | name=Foreknows past, present, and future | term=त्रिकालज्ञ | script=Sanskrit (Devanāgarī) | rom=trikālajña | gloss=Knew all that would come, but was forbidden to reveal it unasked | inherit=none | src=MBh; en.wikipedia.org/wiki/Sahadeva
+hindu_sahadeva :: POWER sahadeva-jyotisha | name=Reads the stars and divines fate | term=ज्योतिष | script=Sanskrit (Devanāgarī) | rom=jyotiṣa | gloss=Foremost in astrology, foretelling outcomes from the heavens | inherit=none | src=MBh; en.wikipedia.org/wiki/Sahadeva
+(item: sahadeva-manipushpaka already present and correct)
+
+=== hindu_karna (Karṇa)
+hindu_karna :: POWER karna-astra | name=Invokes infallible celestial weapons | term=अस्त्र | script=Sanskrit (Devanāgarī) | rom=astra | gloss=Wielded the Bhārgavāstra and Indra's one-use Vāsavī Śakti | inherit=none | src=MBh Karṇa Parva; mythlok.com
+hindu_karna :: POWER karna-kavaca-invuln | name=Is invulnerable through inborn armor | term=अभेद्यकवच | script=Sanskrit (Devanāgarī) | rom=abhedya-kavaca | gloss=Born with skin-fused armor making him impervious until he gave it away | inherit=none | src=MBh; mythlok.com (Kavacha-Kundala)
+(items: karna-kavacha-kundala, karna-vasavi-shakti, karna-vijaya already present and correct)
+
+=== hindu_bhishma (Bhīṣma)
+hindu_bhishma :: POWER bhishma-icchamrityu | name=Dies only when he himself wills it | term=इच्छामृत्यु | script=Sanskrit (Devanāgarī) | rom=icchāmṛtyu | gloss=Boon of death-at-will; lay on the arrow-bed awaiting his chosen hour | inherit=none | src=MBh; en.wikipedia.org/wiki/Svecchāmṛtyu
+hindu_bhishma :: POWER bhishma-astra | name=Invokes celestial weapons in battle | term=दिव्यास्त्र | script=Sanskrit (Devanāgarī) | rom=divyāstra | gloss=Loosed the Āgneya and other astras; immune to stupor-weapons | inherit=none | src=MBh Bhīṣma Parva; en.wikipedia.org/wiki/Bhishma
+hindu_bhishma :: ITEM bhishma-dhanus | name=Bhīṣma's celestial bow | term=धनुस् | script=Sanskrit (Devanāgarī) | rom=dhanus | kind=bow | role=his principal weapon, holding the Pāṇḍava host ten days | gloss=The great bow with which he ravaged the Pāṇḍava army | src=MBh Bhīṣma Parva; vyasaonline.com
+
+=== hindu_ghatotkacha (Ghaṭotkaca) [included: empty domains but a major battlefield actor with attested exercised powers]
+hindu_ghatotkacha :: POWER ghatotkacha-maya | name=Conjures rākṣasa illusions | term=माया | script=Sanskrit (Devanāgarī) | rom=māyā | gloss=Multiplied himself, raised phantoms, and vanished to terrify the Kauravas | inherit=partial | src=MBh Droṇa Parva; en.wikipedia.org/wiki/Rakshasa
+hindu_ghatotkacha :: POWER ghatotkacha-grow | name=Swells to mountainous size | term=रूपवृद्धि | script=Sanskrit (Devanāgarī) | rom=rūpavṛddhi | gloss=Grew vast as a hill to trample armies underfoot | inherit=partial | src=MBh Droṇa Parva; glorioushinduism.com
+hindu_ghatotkacha :: POWER ghatotkacha-fly | name=Flies and strikes from the air | term=आकाशगमन | script=Sanskrit (Devanāgarī) | rom=ākāśagamana | gloss=Hovered and attacked from above, eluding chariots and arrows | inherit=partial | src=MBh Droṇa Parva
+hindu_ghatotkacha :: POWER ghatotkacha-night-might | name=Grows mightier at night | term=निशाबल | script=Sanskrit (Devanāgarī) | rom=niśābala | gloss=Rākṣasa strength waxed after dark, becoming nigh unstoppable | inherit=partial | src=MBh Droṇa Parva
+
+=== hindu_abhimanyu (Abhimanyu) [included: empty domains but a principal warrior with attested exercised feats]
+hindu_abhimanyu :: POWER abhimanyu-chakravyuha | name=Pierces the wheel-array formation | term=चक्रव्यूहभेदन | script=Sanskrit (Devanāgarī) | rom=cakravyūhabhedana | gloss=Alone broke into the Kaurava cakravyūha, knowledge heard in the womb | inherit=none | src=MBh Droṇa Parva; en.wikipedia.org/wiki/Abhimanyu
+hindu_abhimanyu :: POWER abhimanyu-astra | name=Invokes celestial weapons | term=दिव्यास्त्र | script=Sanskrit (Devanāgarī) | rom=divyāstra | gloss=Fought with divine astras, routing Droṇa, Karṇa, and Duryodhana within | inherit=none | src=MBh Droṇa Parva
+```
+
+**Verification basis (web-confirmed):** Yama's daṇḍa/pāśa, judging and reviving the dead (Yakṣa-praśna), and crane-disguise [Wikipedia "Yama"; MBh Vana Parva]; Vāyu's wind-control and bodily strength-conferral to Bhīma and Hanumān [Wikipedia "Vayu"; vedicfeed]; Indra's vajra/Vṛtra, rain, Gautama-disguise (rūpa-change), and boon-giving of astras + Vāsavī Śakti [Rigveda; Wikipedia "Indra"/"Ahalya"]; Sūrya's radiance and his boons (Karṇa, kavaca-kuṇḍala, akṣaya-pātra) [mythology.net; templepurohit; Wikipedia "Yama"]; Aśvins' healing/rejuvenation/raising-dead and three-wheeled chariot [Rigveda; Wikipedia "Ashvins"]; Gaṅgā's purification, mokṣa-liberation of the Vasus, and tripathagā nature [Wikipedia "Ganga (goddess)"]; Yudhiṣṭhira's truth-borne floating chariot [MBh Droṇa Parva]; Bhīma's Vāyu-strength and mace-mastery [Wikipedia "Bhima"]; Arjuna's divyāstras, ambidexterity, Kapidhvaja chariot, and Agni's inexhaustible quivers [MBh; wisdomlib]; Nakula's equine medicine [Wikipedia "Nakula"; MBh Virāṭa Parva]; Sahadeva's foreknowledge/astrology [Wikipedia "Sahadeva"]; Karṇa's astras and inborn invulnerable armor [mythlok; MBh]; Bhīṣma's icchāmṛtyu and astras/bow [Wikipedia "Svecchāmṛtyu"/"Bhishma"]; Ghaṭotkaca's māyā, size-change, flight, night-might [Wikipedia "Rakshasa"; MBh Droṇa Parva]; Abhimanyu's cakravyūha-penetration learned in the womb [Wikipedia "Abhimanyu"; MBh Droṇa Parva].
+
+**Heritability flagged where bodily-by-blood:** Vāyu→Bhīma/Hanumān strength (full); Aśvins→Nakula/Sahadeva healing aptitude and Nakula's horse-craft (partial); Ghaṭotkaca's rākṣasa powers (partial, by-blood via Hiḍimbā, passing on to his rākṣasa-line). All deity/astra/boon powers marked `none`.

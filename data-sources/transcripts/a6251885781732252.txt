@@ -1,0 +1,1100 @@
+All checks pass: 22 figures, valid JSON, no ID collisions with the existing registry, all snake_case, all types in the allowed set, every figure has the full key set, origin is uniformly "canon", and all parentIds resolve internally. The golden sky-fallen regalia are foregrounded on Kolaxais (plough+yoke, battle-axe, cup) and the sword-cult on the two Ares figures. I did not modify any repo files — the working copy is in /tmp only.
+
+```json
+[
+  {
+    "id": "scythian_targitaos",
+    "name": {
+      "primary": "First Man Targitaos",
+      "alt": ["Targitaus", "Targitaios"],
+      "transliterations": { "grc": "Ταργίταος", "reconstructed_iranian": "*Targī̆tavah / *Darga-tavah" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_papaios", "scythian_borysthenis"],
+    "temporal": { "era": "mythic primordium; placed by Herodotos a thousand years before Darius' invasion (c. 1500 BCE in Scythian reckoning)" },
+    "domains": [
+      {
+        "sphereId": "first-ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Ταργίταος", "script": "grc", "rom": "Targitaos" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos, Histories 4.5-7 (Godley)" }]
+      },
+      {
+        "sphereId": "sacral-kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Raevskiy, Scythian Mythology (1977); B. Lincoln, 'Once again the Scythian myth of origins,' Nordlit 33 (2014)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "found-the-scythian-line",
+        "name": "fathered the founding lineage",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "As the first man born in the empty land between the Borysthenes (Dnieper) and the sea, Targitaos begets the three sons from whom all Scythian tribes descend (Hdt 4.5-6).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5-6" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Targitaos is the first man in the Scythian self-account, son of Zeus (Papaios) and a daughter of the river Borysthenes.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.5 (trans. A.D. Godley, Loeb)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Older derivation read the name as *Darga-tavah 'whose might is far-reaching'; this is now judged untenable because Old Iranian /d/ had shifted to /δ/ (then /l/) in Scythian, and the form is re-analysed as Targī̆tavah 'possessing the strength of (the goddess) Tarkā'. He is widely equated with the Pontic-Greek Heracles of the parallel myth.",
+        "citations": [{ "kind": "secondary", "reference": "V.I. Abaev, Osetinskii yazyk i fol'klor (1949); R. Schmitt & contributors, 'Scythians,' Encyclopaedia Iranica" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Culture-hero / first-man tier (rendered 'demigod' per the type constraint, being the offspring of the sky-god and a river-nymph). The genealogical myth survives only through Herodotos 4.5-7; the Pontic-Greek doublet (4.8-10) substitutes Heracles and the snake-maiden. Native theonym unrecorded beyond the Hellenised Ταργίταος."
+  },
+  {
+    "id": "scythian_lipoxais",
+    "name": {
+      "primary": "Eldest Heir Lipoxais",
+      "alt": ["Lipoxaïs"],
+      "transliterations": { "grc": "Λιπόξαϊς", "reconstructed_iranian": "*-xšaya 'ruling' (second element)" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_targitaos"],
+    "temporal": { "era": "mythic primordium" },
+    "domains": [
+      {
+        "sphereId": "tribal-eponymy",
+        "contextTag": "lifelong",
+        "term": { "value": "Λιπόξαϊς", "script": "grc", "rom": "Lipoxais" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.6" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Eldest of Targitaos' three sons; ancestor of the Scythian tribe called Auchatae.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.6 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "His name (like his brothers') ends in the Old Iranian element *xšaya 'ruling, reign'; in Dumezil's trifunctional reading the eldest brother and his line correspond to the lowest (third) productive function.",
+        "citations": [{ "kind": "secondary", "reference": "G. Dumezil, Romans de Scythie et d'alentour (1978); B. Lincoln, Nordlit 33 (2014)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Firstborn-heir tier. Failed (with Arpoxais) to lift the sky-fallen gold, which blazed at his approach; yields the kingship to the youngest. Native form unrecorded beyond Hellenised Λιπόξαϊς."
+  },
+  {
+    "id": "scythian_arpoxais",
+    "name": {
+      "primary": "Middle Heir Arpoxais",
+      "alt": ["Arpoxaïs"],
+      "transliterations": { "grc": "Ἀρπόξαϊς", "reconstructed_iranian": "*-xšaya 'ruling' (second element); first element possibly *ap- 'water' / *arba-" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_targitaos"],
+    "temporal": { "era": "mythic primordium" },
+    "domains": [
+      {
+        "sphereId": "tribal-eponymy",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἀρπόξαϊς", "script": "grc", "rom": "Arpoxais" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.6" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Middle son of Targitaos; ancestor of the tribes called Catiari and Traspians.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.6 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Some scholars read the first element as Iranian *ap- 'water', aligning the middle brother with the second (warrior) function and/or the waters in trifunctional and tripartite-cosmos analyses of the myth.",
+        "citations": [{ "kind": "secondary", "reference": "G. Dumezil, Romans de Scythie et d'alentour (1978); D.S. Raevskiy, Ocherki ideologii skifo-sakskikh plemen (1977)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Second-son tier. Also repelled by the burning gold. Native form unrecorded beyond Hellenised Ἀρπόξαϊς."
+  },
+  {
+    "id": "scythian_kolaxais",
+    "name": {
+      "primary": "Sun-King Kolaxais",
+      "alt": ["Colaxaïs", "Kolaxaïs"],
+      "transliterations": { "grc": "Κολάξαϊς", "reconstructed_iranian": "*Xola-xšaya / *Skula-xšaya ('Sun-ruler' / 'ruler of the Skula', xšaya 'ruling')" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_targitaos"],
+    "temporal": { "era": "mythic primordium; first king of the Scythians" },
+    "domains": [
+      {
+        "sphereId": "sacral-kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Κολάξαϊς", "script": "grc", "rom": "Kolaxais" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5-7" }]
+      },
+      {
+        "sphereId": "solar-sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "D.S. Raevskiy, Scythian Mythology (1977/1993); Encyclopaedia Iranica, 'Scythians'" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "seize-the-burning-gold",
+        "name": "took up the unburning sky-gold",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "Alone of the three brothers he could approach the blazing golden regalia without being burned; the fire died at his coming, marking him as the divinely-chosen king. The elder brothers ceded the whole kingship to him.",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "scythian_golden_plough_yoke",
+        "kind": "regalia",
+        "name": "golden plough and yoke",
+        "term": { "value": "ἄροτρόν τε καὶ ζυγόν", "script": "grc", "rom": "arotron te kai zygon" },
+        "role": "One of the four implements of gold that fell from the sky; in trifunctional analysis the token of the third (productive/agrarian) function, here also a coronation emblem of royal husbandry.",
+        "notes": "Dumezil reads plough+yoke = farmer/third function; Raevskiy treats all four as royal coronation regalia. Hdt 4.5.",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5" }, { "kind": "secondary", "reference": "G. Dumezil, Romans de Scythie et d'alentour (1978)" }]
+      },
+      {
+        "id": "scythian_golden_battleaxe",
+        "kind": "regalia",
+        "name": "golden battle-axe",
+        "term": { "value": "σάγαρις", "script": "grc", "rom": "sagaris" },
+        "role": "Sky-fallen golden war-axe; token of the second (warrior) function and of royal might.",
+        "notes": "The sagaris is the characteristic Scythian war-axe; Dumezil assigns it the warrior function. Hdt 4.5.",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5" }, { "kind": "secondary", "reference": "G. Dumezil, Romans de Scythie et d'alentour (1978)" }]
+      },
+      {
+        "id": "scythian_golden_cup",
+        "kind": "regalia",
+        "name": "golden cup",
+        "term": { "value": "φιάλη", "script": "grc", "rom": "phiale" },
+        "role": "Sky-fallen golden drinking-cup/libation-bowl; token of the first (sacral/priestly) function and of the king's cultic role.",
+        "notes": "Dumezil assigns the cup the priestly function; the phiale recurs on Scythian royal iconography. Hdt 4.5.",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5" }, { "kind": "secondary", "reference": "G. Dumezil, Romans de Scythie et d'alentour (1978)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Youngest son of Targitaos; only he could take the four golden objects that fell blazing from heaven (plough-with-yoke, battle-axe, cup), so the brothers gave him sole kingship; ancestor of the royal tribe, the Paralatae.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.5-7 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "The name's second element is Old Iranian *xšaya 'ruling'; the first element is widely connected to a sun-word (*huar-/*hvarya-), giving 'Sun-King', the divinely solar sovereign of the royal Scythians.",
+        "citations": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Scythians' (R. Schmitt et al.); B. Lincoln, Nordlit 33 (2014)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "First-king tier (rendered 'demigod', grandson of the sky-god through Targitaos). The sacred gold was guarded most jealously by the kings, who offered it great yearly sacrifices and held a festival where its custodian who fell asleep in the open was believed not to outlive the year (Hdt 4.7). Foregrounded with Targitaos as the core of the dynastic charter myth."
+  },
+  {
+    "id": "scythian_tabiti",
+    "name": {
+      "primary": "Hearth-Queen Tabiti",
+      "alt": ["Tabithi"],
+      "transliterations": { "grc": "Ταβιτί", "reconstructed_iranian": "*Tapatī ('the Burning One')" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless; supreme deity of the historical Scythians (attested 5th c. BCE)" },
+    "domains": [
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": { "value": "Ταβιτί", "script": "grc", "rom": "Tabiti" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59 (= Hestia)" }]
+      },
+      {
+        "sphereId": "hearth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59, 4.127 (royal hearths)" }]
+      },
+      {
+        "sphereId": "kingship-and-oath",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Y. Ustinova, The Supreme Gods of the Bosporan Kingdom (1999); D.S. Raevskiy (1977)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard-the-royal-hearth",
+        "name": "guards the royal hearth and binds the king's oath",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "The oath 'by the royal hearths' was the most sacred of Scythian oaths; a false oath by them was held to sicken the king, and perjurers were put to death (Hdt 4.68). King Idanthyrsos calls her 'Queen of the Scythians' (Hdt 4.127).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.68, 4.127" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tabiti is the deity the Scythians honour above all; Herodotos equates her with Hestia and reports she was revered most of all the gods.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "King Idanthyrsos names her 'mistress (queen) of the Scythians' in his message to Darius, marking her as a sovereign hearth-goddess bound to the royal house.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.127" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "The Hellenised Ταβιτί continues Scythian *Tapatī 'the Burning One', from the Indo-Iranian root *tap- 'to be hot, burn' (Avestan tāpaiieⁱti, Vedic verb tapati; cf. the Vedic solar-goddess Tapatī). She is read as a fire- and hearth-sovereign of the first (sacral) function.",
+        "citations": [{ "kind": "secondary", "reference": "V.I. Abaev, Istoriko-etimologicheskii slovar' osetinskogo yazyka; R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Supreme fire/hearth goddess and queen of the Scythians. Scythian religion was largely aniconic, so no cult-statue is attested for her (materialCulture left empty). Domains kept distinct from the verb-phrase faculty (guarding the hearth / binding oaths)."
+  },
+  {
+    "id": "scythian_papaios",
+    "name": {
+      "primary": "Sky-Father Papaios",
+      "alt": ["Papaeus", "Papaiosa"],
+      "transliterations": { "grc": "Παπαῖος", "reconstructed_iranian": "*Pāpaya ('Father', a nursery/reduplicated word)" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless (attested 5th c. BCE)" },
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Παπαῖος", "script": "grc", "rom": "Papaios" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59 (= Zeus)" }]
+      },
+      {
+        "sphereId": "fatherhood-of-the-people",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5 (father of Targitaos)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "beget-the-first-man",
+        "name": "begot the first man upon the river's daughter",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "As the Scythian Zeus he fathers Targitaos on a daughter of the Borysthenes, making him progenitor of the royal line (Hdt 4.5).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Herodotos equates Papaios with Zeus and ranks him (with Api) just below Tabiti; he comments that the name Papaios is 'most rightly' given to Zeus.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Papaios is the divine father of the first man Targitaos in the Scythian genealogical myth.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.5" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "The name reflects Scythian *Pāpaya 'Father', a hypocoristic/reduplicated kinship word; he is the sky-father, consort of the earth-goddess Api, and is sometimes read against Iranian sovereign sky-gods.",
+        "citations": [{ "kind": "secondary", "reference": "V.I. Abaev (1949); R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sky-father; the masculine pole of the sky/earth pair Papaios-Api. Herodotos' own remark on the aptness of 'Father' is preserved at 4.59. Aniconic: no cult image attested."
+  },
+  {
+    "id": "scythian_api",
+    "name": {
+      "primary": "Earth-and-Water Mother Api",
+      "alt": ["Apia", "Api"],
+      "transliterations": { "grc": "Ἀπί", "reconstructed_iranian": "*Apī ('the Waters'); cf. Avestan/Old Iranian āp- 'water'" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless (attested 5th c. BCE)" },
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἀπί", "script": "grc", "rom": "Api" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59 (= Ge / Gaia)" }]
+      },
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Scythians'; D.S. Raevskiy (1977)" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Herodotos identifies Api with Earth (Ge/Gaia) and pairs her with Zeus-Papaios in the second rank of Scythian gods.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Although Herodotos glosses her only as Earth, her name continues Iranian āp- 'water', so she is read as an earth-and-water mother-goddess, consort of the sky-father; some scholars connect the Scythian Snake-Legged ancestress to her as her daughter.",
+        "citations": [{ "kind": "secondary", "reference": "V.I. Abaev (1949); R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'; S.S. Bessonova, Religioznye predstavleniya skifov (1983)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Earth/water mother and consort of Papaios. The mismatch between Herodotos' gloss (Earth) and the name's water-etymology is itself a noted scholarly point. Aniconic: no cult image attested."
+  },
+  {
+    "id": "scythian_goitosyros",
+    "name": {
+      "primary": "Sun-God Goitosyros",
+      "alt": ["Oetosyrus", "Oitosyros", "Goetosyrus"],
+      "transliterations": { "grc": "Γοιτόσυρος / Οἰτόσυρος", "reconstructed_iranian": "*Gaiθā-sūra ('rich/mighty in herds-and-possessions')" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless (attested 5th c. BCE)" },
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": { "value": "Γοιτόσυρος", "script": "grc", "rom": "Goitosyros" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59 (= Apollo)" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Herodotos equates the Scythian Goitosyros (Oetosyrus) with Apollo, placing him in the third rank of gods worshipped by all Scythians.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "The name is analysed as *Gaiθā-sūra, from Iranian gaiθā- 'herds, possessions' (cf. Avestan gaēθā-) + sūra- 'strong, mighty' (cf. Avestan sūra-), i.e. 'mighty in flocks'. Because Apollo was a solar god in Greek thought, Goitosyros is taken as the Scythian sun-god; his function has also been compared with Iranian Mithra and Vayu.",
+        "citations": [{ "kind": "secondary", "reference": "V.I. Abaev (1949); R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sun-god (Scythian Apollo). The Greek forms vary between Γοιτόσυρος and Οἰτόσυρος in the manuscript tradition. Aniconic: no cult image attested."
+  },
+  {
+    "id": "scythian_argimpasa",
+    "name": {
+      "primary": "Heavenly Aphrodite Argimpasa",
+      "alt": ["Artimpasa", "Arippasa", "Aripasa"],
+      "transliterations": { "grc": "Ἀργίμπασα / Ἀρτίμπασα", "reconstructed_iranian": "*Arti-(m)pasa (Iranian goddess Arti / Aṣ̌i + *pa- 'protect/lord')" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless (attested 5th c. BCE; cult continues at the Bosporus into Roman times)" },
+    "domains": [
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἀργίμπασα", "script": "grc", "rom": "Argimpasa" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59 (= Aphrodite Ourania)" }]
+      },
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Y. Ustinova, The Supreme Gods of the Bosporan Kingdom (1999)" }]
+      },
+      {
+        "sphereId": "divination-and-priesthood",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.67 (the Enarees)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "unman-her-priests",
+        "name": "renders her diviner-priests womanlike",
+        "term": { "value": "Ἐνάρεες", "script": "grc", "rom": "Enarees" },
+        "inheritability": "non-transferable",
+        "notes": "Her priests the Enarees ('the unmanly/womanlike men') practise divination; Herodotos says Aphrodite afflicted them with the 'female sickness'. They divined by splitting linden bast into three strips and plaiting them about their fingers (Hdt 1.105, 4.67).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 1.105, 4.67" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Herodotos equates the Scythian goddess with Aphrodite Ourania (the Heavenly Aphrodite), worshipped by all Scythians; the transmitted Greek form is Ἀργίμπασα.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Her priests, the Enarees, suffer the 'female disease' and practise a linden-bark divination; this cult of effeminate diviners is tied to the goddess.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 1.105 and 4.67" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Recent scholarship (Ustinova) treats the original native theonym as Artimpasa (Ἀρτίμπασα), the form Argimpasa being a Greek scribal/aural corruption; she is the Scythian reflex of the Iranian goddess Arti/Aṣ̌i, an androgynous goddess of fertility, sovereignty and the priestly power, continued in the Bosporan cult of Aphrodite Apatouros/Ourania.",
+        "citations": [{ "kind": "secondary", "reference": "Y. Ustinova, The Supreme Gods of the Bosporan Kingdom (Brill, 1999)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Great goddess of fertility, sovereignty and divination. The transmitted theonym Ἀργίμπασα leads the term (per the rule to lead with the attested form), with Ustinova's preferred Ἀρτίμπασα and the proposed Arti/Aṣ̌i etymology given in alt/notes. Closely identified with, but scholarly-distinguished from, the Snake-Legged ancestress. Aniconic among the Scythians; iconographic at the Bosporus."
+  },
+  {
+    "id": "scythian_thagimasadas",
+    "name": {
+      "primary": "Horse-Lord of the Waters Thagimasadas",
+      "alt": ["Thamimasadas", "Thagimasades", "Thagimasidas"],
+      "transliterations": { "grc": "Θαγιμασάδας / Θαμιμασάδας", "reconstructed_iranian": "*Θagi-masada (second element possibly Iranian *mazdā- 'wisdom/mindful')" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless (attested 5th c. BCE)" },
+    "domains": [
+      {
+        "sphereId": "water",
+        "contextTag": "lifelong",
+        "term": { "value": "Θαγιμασάδας", "script": "grc", "rom": "Thagimasadas" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59 (= Poseidon)" }]
+      },
+      {
+        "sphereId": "horses",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Encyclopaedia Iranica, 'Scythians'; D.S. Raevskiy (1977)" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Herodotos says that the Royal Scythians alone, beyond the gods worshipped by all, sacrifice to Poseidon, whom they call Thagimasadas.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Identified with Poseidon as a god of waters and horse-taming; the Royal Scythians' exclusive worship and his role as an ancestral figure parallel Poseidon-Erechtheus at Athens. The second element of the name has been linked to Iranian *mazdā-.",
+        "citations": [{ "kind": "secondary", "reference": "R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'; Y. Ustinova (1999)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Water/sea-and-horse god worshipped only by the Royal Scythians (Paralatae). The etymology is among the most contested of the seven; the *mazdā- link is suggestive, not secure. Aniconic: no cult image attested."
+  },
+  {
+    "id": "scythian_ares",
+    "name": {
+      "primary": "Sword-God of War (Scythian Ares)",
+      "alt": ["Scythian Ares", "Ares of the akinakes"],
+      "transliterations": { "grc": "Ἄρης (Σκυθικός)", "reconstructed_iranian": "native theonym unrecorded" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless (attested 5th c. BCE)" },
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἄρης", "script": "grc", "rom": "Ares" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.59, 4.62" }]
+      },
+      {
+        "sphereId": "kingship-and-victory",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "D.S. Raevskiy (1977); Encyclopaedia Iranica, 'Scythians'" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "receive-the-sword-offering",
+        "name": "receives blood poured over the planted sword",
+        "term": { "value": "ἀκινάκης", "script": "grc", "rom": "akinakes" },
+        "inheritability": "non-transferable",
+        "notes": "Uniquely among Scythian gods he has a cult-object: an ancient iron akinakes set atop a brushwood mound. Yearly sacrifices of cattle and horses are made, and of war-captives one man in a hundred has wine poured on his head, his throat cut over a vessel, and his blood carried up and poured over the sword; the right arms of the slain are cut off and flung into the air (Hdt 4.62).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.62" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "scythian_akinakes_ares",
+        "kind": "cult-object",
+        "name": "iron sword (akinakes) of Ares",
+        "term": { "value": "ἀκινάκης σιδήρεος", "script": "grc", "rom": "akinakes sidereos" },
+        "role": "The cult-image of the war-god: an ancient iron short-sword planted point-up on a vast square altar of brushwood, to which animal and human blood is offered.",
+        "notes": "Each district raises such an altar; 150 wagon-loads of brushwood are added yearly to counter settling. Read as an axis-mundi / world-mountain. Hdt 4.62; the Sarmatian Alani kept the same rite (Ammianus 31.2.23).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.62" }, { "kind": "secondary", "reference": "D.S. Raevskiy, Scythian Mythology (1977)" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Scythian religion was largely aniconic, raising neither images nor altars except to Ares; to Ares each district sets up an iron scimitar on a brushwood pile as his image and offers yearly sacrifices of sheep, goats and horses, and the blood of one in a hundred war-captives.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.59 and 4.62 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "The sword-on-the-altar war-god has no recorded native name; he is interpreted as a god of kingship, victory and the warrior function, the planted sword serving as an axis mundi joining men and gods.",
+        "citations": [{ "kind": "secondary", "reference": "D.S. Raevskiy (1977); R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "War-god worshipped as a sword (akinakes). The only Scythian deity with attested image, altar and rich sacrificial rite, making the materialCulture entry central. Native theonym genuinely unrecorded (term left as Greek Ἄρης; the reconstructed-Iranian slot states 'unrecorded' only in the transliterations field, not in a term)."
+  },
+  {
+    "id": "scythian_herakles",
+    "name": {
+      "primary": "Strongman Forefather (Scythian Heracles)",
+      "alt": ["Scythian Herakles"],
+      "transliterations": { "grc": "Ἡρακλέης (Σκυθικός)", "reconstructed_iranian": "identified by scholars with native *Targī̆tavah" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic primordium (Pontic-Greek variant of the origin myth)" },
+    "domains": [
+      {
+        "sphereId": "first-ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἡρακλέης", "script": "grc", "rom": "Herakles" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.8-10" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      {
+        "id": "scythian_herakles_bow",
+        "kind": "regalia",
+        "name": "the forefather's bow",
+        "term": { "value": "τόξον", "script": "grc", "rom": "toxon" },
+        "role": "The bow Heracles leaves behind; only the son who can bend it (Scythes) is to keep the land, making it a sovereignty-test relic.",
+        "notes": "Paired with the clasped war-belt; Hdt 4.9-10.",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.9-10" }]
+      },
+      {
+        "id": "scythian_herakles_belt",
+        "kind": "regalia",
+        "name": "the forefather's war-belt",
+        "term": { "value": "ζωστήρ", "script": "grc", "rom": "zoster" },
+        "role": "Heracles' girdle, from whose clasp hung a golden cup; the son who can gird himself with it inherits the land.",
+        "notes": "A golden phiale hangs from its buckle, echoing the golden cup of the Targitaos version. Hdt 4.10.",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.10" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "In the version told by the Pontic Greeks, Heracles, driving Geryon's cattle, mates with a viper-maiden (half-woman, half-snake) in the land of Hylaia; she bears three sons, Agathyrsus, Gelonus and Scythes, and Heracles leaves a bow and a clasped belt to test which son shall rule.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.8-10 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "This Heracles is generally understood by modern scholars as the Greek interpretatio of the native forefather Targitaos.",
+        "citations": [{ "kind": "secondary", "reference": "G. Dumezil (1978); A. Ivantchik, 'The Scythian rule over Asia' and related studies; R. Schmitt et al., Encyclopaedia Iranica" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Culture-hero / forefather tier (rendered 'demigod'). Distinct entry from Targitaos because Herodotos reports two parallel origin myths; this is the Hellenic doublet. The bow-and-belt test mirrors the burning-gold test of the Scythian version."
+  },
+  {
+    "id": "scythian_snake_legged_goddess",
+    "name": {
+      "primary": "Serpent-Legged Ancestress",
+      "alt": ["Snake-Legged Goddess", "Anguipede Goddess", "viper-maiden", "Echidna of Scythia"],
+      "transliterations": { "grc": "ἔχιδνα (μιξοπάρθενος)", "reconstructed_iranian": "native theonym unrecorded" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["scythian_api"],
+    "temporal": { "era": "mythic primordium" },
+    "domains": [
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "μιξοπάρθενος ἔχιδνα", "script": "grc", "rom": "mixoparthenos echidna" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.9" }]
+      },
+      {
+        "sphereId": "ancestral-motherhood",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Y. Ustinova (1999); S.S. Bessonova (1983)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "mother-the-scythian-kings",
+        "name": "bore the three royal sons to Heracles",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "A being woman from the buttocks upward and snake below, she holds Heracles' mares until he lies with her, then bears Agathyrsus, Gelonus and Scythes (Hdt 4.9).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.9" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In the Pontic-Greek myth the mother of the Scythian kings is a mixoparthenos, woman above and serpent below, mistress of the land of Hylaia, who keeps Heracles' horses until he fathers three sons on her.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.9 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "She corresponds to the widely-attested Scythian anguipede 'Snake-Legged Goddess' of Black-Sea art, a chthonic life-giving ancestress read as a daughter of Api and closely (but not wholly) identified with Argimpasa/Artimpasa; the Greeks assimilated her to Hecate near the Borysthenes.",
+        "citations": [{ "kind": "secondary", "reference": "Y. Ustinova, The Supreme Gods of the Bosporan Kingdom (1999); S.S. Bessonova, Religioznye predstavleniya skifov (1983)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Chthonic serpent-footed ancestress / mistress of animals. Treated as a deity (per the type rule for spirit/ancestress classes), distinct from the war-god and from Argimpasa though scholars debate the overlap. Genuinely unnamed in the native record; term carries the Greek descriptive 'mixoparthenos echidna'."
+  },
+  {
+    "id": "scythian_skythes",
+    "name": {
+      "primary": "Royal Founder Scythes",
+      "alt": ["Skythes"],
+      "transliterations": { "grc": "Σκύθης", "reconstructed_iranian": "eponym of *Skuda- / Skula (the Scythians)" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_herakles", "scythian_snake_legged_goddess"],
+    "temporal": { "era": "mythic primordium (Pontic-Greek variant)" },
+    "domains": [
+      {
+        "sphereId": "sacral-kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Σκύθης", "script": "grc", "rom": "Skythes" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.10" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bend-the-fathers-bow",
+        "name": "alone bent the forefather's bow",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "lineal",
+        "notes": "Youngest of the three, he alone draws Heracles' bow and girds himself with the clasped belt, so he keeps the land and founds the royal line; his brothers are driven out (Hdt 4.10).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.10" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Scythes, youngest son of Heracles and the viper-maiden, is the only one able to bend his father's bow and wear the belt; he becomes king and eponymous ancestor of the Scythians.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.10 (Godley)" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Royal-founder / first-king tier in the Hellenic variant; functional counterpart of Kolaxais. Eponym of the Scythian people."
+  },
+  {
+    "id": "scythian_agathyrsos",
+    "name": {
+      "primary": "Banished Brother Agathyrsus",
+      "alt": ["Agathyrsos"],
+      "transliterations": { "grc": "Ἀγάθυρσος", "reconstructed_iranian": "eponym of the Agathyrsi people" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_herakles", "scythian_snake_legged_goddess"],
+    "temporal": { "era": "mythic primordium (Pontic-Greek variant)" },
+    "domains": [
+      {
+        "sphereId": "tribal-eponymy",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἀγάθυρσος", "script": "grc", "rom": "Agathyrsos" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.10" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Eldest son of Heracles and the viper-maiden; unable to bend the bow, he is sent out of the land and becomes eponym of the Agathyrsi.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.10 (Godley)" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Banished-elder-son tier; eponymous ancestor of the Agathyrsi (a Pontic people described separately at Hdt 4.104). Counterpart of Lipoxais in the Hellenic variant."
+  },
+  {
+    "id": "scythian_gelonos",
+    "name": {
+      "primary": "Banished Brother Gelonus",
+      "alt": ["Gelonos"],
+      "transliterations": { "grc": "Γελωνός", "reconstructed_iranian": "eponym of the Geloni people" }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["scythian_herakles", "scythian_snake_legged_goddess"],
+    "temporal": { "era": "mythic primordium (Pontic-Greek variant)" },
+    "domains": [
+      {
+        "sphereId": "tribal-eponymy",
+        "contextTag": "lifelong",
+        "term": { "value": "Γελωνός", "script": "grc", "rom": "Gelonos" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.10" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Middle son of Heracles and the viper-maiden; also failing the bow-test, he is driven out and becomes eponym of the Geloni.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.10 (Godley)" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Banished-middle-son tier; eponymous ancestor of the Geloni (cf. Hdt 4.108-109). Counterpart of Arpoxais in the Hellenic variant."
+  },
+  {
+    "id": "scythian_borysthenis",
+    "name": {
+      "primary": "River-Daughter of the Borysthenes",
+      "alt": ["daughter of Borysthenes", "Borysthenis"],
+      "transliterations": { "grc": "θυγάτηρ Βορυσθένεος", "reconstructed_iranian": "native theonym unrecorded" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic primordium" },
+    "domains": [
+      {
+        "sphereId": "rivers",
+        "contextTag": "lifelong",
+        "term": { "value": "Βορυσθένης", "script": "grc", "rom": "Borysthenes" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.5" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The mother of the first man Targitaos is a daughter of the river Borysthenes (the Dnieper), joined with Zeus-Papaios.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.5 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "She represents the deified Dnieper, the river the Scythians revered most after the Istros (Hdt 4.53); a water-nymph consort of the sky-god in the dynastic charter.",
+        "citations": [{ "kind": "secondary", "reference": "D.S. Raevskiy (1977); R. Schmitt et al., Encyclopaedia Iranica, 'Scythians'" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "River-nymph tier (rendered 'deity'). Unnamed in the sources beyond 'daughter of Borysthenes'; her term carries the river's Greek name. Herodotos praises the Borysthenes as the most profitable of rivers (4.53)."
+  },
+  {
+    "id": "scythian_idanthyrsos",
+    "name": {
+      "primary": "Royal Scythian King Idanthyrsos",
+      "alt": ["Idanthyrsus"],
+      "transliterations": { "grc": "Ἰδάνθυρσος", "reconstructed_iranian": "*Vidat-vŗsa / Iranian *-θursa (uncertain)" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "historical; reigned during Darius I's Scythian campaign, c. 513 BCE" },
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἰδάνθυρσος", "script": "grc", "rom": "Idanthyrsos" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.76, 4.120-127" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "invoke-the-hearth-queen",
+        "name": "swore by the royal hearths",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "non-transferable",
+        "notes": "In his defiant message to Darius he says he acknowledges no masters but Zeus (Papaios) his ancestor and Hestia (Tabiti) queen of the Scythians, naming the hearth-goddess as supreme (Hdt 4.127).",
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.127" }]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Idanthyrsos was the king of the (Royal) Scythians who led the mobile resistance to Darius I's invasion and, in his message, named only Papaios-Zeus his forefather and Tabiti-Hestia, 'queen of the Scythians', as his lords.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.120-127 (Godley)" }],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Historical first-rank king (mortal tier); included because his words are the primary attestation of Tabiti's supremacy and of Papaios as royal ancestor. The name's Iranian analysis is uncertain."
+  },
+  {
+    "id": "scythian_anacharsis",
+    "name": {
+      "primary": "Wandering Sage Anacharsis",
+      "alt": ["Anacharsis the Scythian"],
+      "transliterations": { "grc": "Ἀνάχαρσις", "reconstructed_iranian": "Iranian personal name, etymology uncertain" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "historical/legendary; early 6th c. BCE, of the royal Scythian house" },
+    "domains": [
+      {
+        "sphereId": "wisdom",
+        "contextTag": "lifelong",
+        "term": { "value": "Ἀνάχαρσις", "script": "grc", "rom": "Anacharsis" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.46, 4.76-77" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Anacharsis, a Scythian of the royal line who travelled widely among the Greeks, was killed by the Scythian king Saulios for adopting the Greek rites of the Mother of the Gods (Cybele) at Kyzikos; the Scythians shun foreign customs.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.76-77 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "He became a Greek byword for the wise 'noble savage' and was later counted among the Seven Sages by some traditions.",
+        "citations": [{ "kind": "secondary", "reference": "Diogenes Laertius 1.101-105; J.F. Kindstrand, Anacharsis: The Legend and the Apophthegmata (1981)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Mortal culture-bearer / sage tier. Included as the human face of Scythian religion in Herodotos: his death dramatises Scythian rejection of foreign cult and frames the cult of the great goddess (Cybele/Mother) the Greeks paired with Argimpasa."
+  },
+  {
+    "id": "scythian_skyles",
+    "name": {
+      "primary": "Bacchic King Skyles",
+      "alt": ["Scyles", "Skyles"],
+      "transliterations": { "grc": "Σκύλης", "reconstructed_iranian": "Iranian personal name, etymology uncertain" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "historical; mid-5th c. BCE, king of the Scythians, son of Ariapeithes" },
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "Σκύλης", "script": "grc", "rom": "Skyles" },
+        "sources": [{ "kind": "primary", "reference": "Herodotos 4.78-80" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Skyles, a Scythian king with a Greek (Istrian) mother, secretly took up Greek ways at Olbia/Borysthenes and had himself initiated into the rites of the Bacchic Dionysos; exposed reveling with the god, he was overthrown and beheaded by his brother Octamasades.",
+        "citations": [{ "kind": "primary", "reference": "Herodotos, Histories 4.78-80 (Godley)" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "Herodotos pairs his fate with that of Anacharsis to show that the Scythians sternly refuse foreign religious customs; his story is read as a tragedy of cultural boundary-crossing.",
+        "citations": [{ "kind": "secondary", "reference": "G. Hinge, 'Dionysos and Herakles in Scythia,' Black Sea Studies 8 (2008); Encyclopaedia Iranica, 'Scythians'" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Historical king (mortal tier); the second of Herodotos' two cautionary tales (with Anacharsis) on Scythian rejection of foreign cult, here specifically the Greek god Dionysos. His existence is corroborated by a 5th-c. BCE gold finger-ring inscribed with his name."
+  },
+  {
+    "id": "sarmatian_sword_god",
+    "name": {
+      "primary": "Bared-Sword War-God (Sarmatian Ares)",
+      "alt": ["Alanic sword-god", "Sarmatian Mars"],
+      "transliterations": { "lat": "deus belli (in modum Martis)", "reconstructed_iranian": "native theonym unrecorded" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sarmatian",
+    "primaryTradition": "Sarmatian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "attested for the Alani in the 4th c. CE; continuous with the Scythian sword-cult" },
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "gladius", "script": "lat", "rom": "gladius" },
+        "sources": [{ "kind": "primary", "reference": "Ammianus Marcellinus 31.2.23" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inhabit-the-planted-sword",
+        "name": "is worshipped as a sword fixed in the earth",
+        "term": { "value": "gladius barbarico ritu humi figitur", "script": "lat", "rom": "gladius ... humi figitur" },
+        "inheritability": "non-transferable",
+        "notes": "Ammianus reports that the Alani fix a bared sword in the ground after their fashion and reverently worship it as Mars, the presiding god of the lands over which they range.",
+        "sources": [{ "kind": "primary", "reference": "Ammianus Marcellinus 31.2.23" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sarmatian_planted_sword",
+        "kind": "cult-object",
+        "name": "bared sword planted in the ground",
+        "term": { "value": "gladius nudus", "script": "lat", "rom": "gladius nudus" },
+        "role": "Cult-image of the Alanic/Sarmatian war-god: a drawn sword driven upright into the earth and worshipped as Mars.",
+        "notes": "Direct continuation of the Scythian akinakes-on-the-altar; read as an axis mundi. Ammianus 31.2.23.",
+        "sources": [{ "kind": "primary", "reference": "Ammianus Marcellinus 31.2.23" }]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The Alani (a Sarmatian people) have no temples or shrines but fix a bared sword in the earth and worship it as Mars, the war-god of their territories.",
+        "citations": [{ "kind": "primary", "reference": "Ammianus Marcellinus, Res Gestae 31.2.23" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "This Alanic sword-cult is the late continuation of the Scythian worship of 'Ares' as a planted iron sword (Hdt 4.62); the rite is read as the erection of an axis mundi joining men and gods.",
+        "citations": [{ "kind": "secondary", "reference": "'Sarmatian Religion,' Encyclopedia of Religion (M. Eliade, ed.); D.S. Raevskiy (1977)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Sarmatian war-god worshipped as a sword; the brief explicitly asks to note the Sarmatian sword-cult. Native theonym unrecorded (term carries the Latin gladius/Mars of Ammianus). Distinct tradition tag 'Sarmatian'."
+  },
+  {
+    "id": "sarmatian_great_goddess",
+    "name": {
+      "primary": "Sarmatian Great Goddess",
+      "alt": ["Sarmatian mother-goddess", "Iranian Great Goddess of the steppe"],
+      "transliterations": { "grc": "", "reconstructed_iranian": "continuation of Scythian *Artimpasa / Iranian Arti-Aṣ̌i" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Sarmatian",
+    "primaryTradition": "Sarmatian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "Sarmatian period, c. 3rd c. BCE - 4th c. CE; continuity of the Scythian great goddess" },
+    "domains": [
+      {
+        "sphereId": "fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Y. Ustinova (1999); 'The Cult of Female Warriors and Rulers in the Scythian and Sarmatian Cultures'" }]
+      },
+      {
+        "sphereId": "sovereignty",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "S.S. Bessonova (1983); Y. Ustinova (1999)" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Scythian Great Goddess (Argimpasa/Artimpasa, the snake-legged ancestress) had no recorded distinct Sarmatian name, but her type as winged fertility-goddess, mistress of beasts and patroness of sovereignty and divination persisted into Sarmatian religion and survived at the Bosporus as the Celestial Aphrodite/Apatouros.",
+        "citations": [{ "kind": "secondary", "reference": "Y. Ustinova, The Supreme Gods of the Bosporan Kingdom (Brill, 1999)" }],
+        "weight": "secondary"
+      },
+      {
+        "claim": "The prominence of armed priestess- and warrior-women in Sarmatian burials is connected by scholars to the continuing cult of a sovereign female deity of the Scytho-Sarmatian Iranian world.",
+        "citations": [{ "kind": "secondary", "reference": "V.I. Guliaev, 'The Cult of Female Warriors and Rulers in the Scythian and Sarmatian Cultures' (2019)" }],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Great-goddess continuity figure requested by the brief. No native Sarmatian theonym is recorded; she is a scholarly reconstruction of the persisting Scytho-Sarmatian goddess, so all terms are left empty rather than carrying a disclaimer. Distinct 'Sarmatian' tradition tag."
+  }
+]
+```
+
+result: Authored 22-figure Scythian/Sarmatian comparative-mythology JSON registry — the seven Herodotean gods (Tabiti, Papaios, Api, Goitosyros, Argimpasa, Thagimasadas, sword-Ares) plus Heracles, the origin cycle (Targitaos, Lipoxais, Arpoxais, Kolaxais with the golden plough/yoke, battle-axe, and cup as materialCulture), the snake-legged ancestress and her three Hellenic-variant sons, the river-mother, historical kings Idanthyrsos/Anacharsis/Skyles, and two Sarmatian figures (sword-god, great-goddess continuity).
+
+Summary of how the brief was met:
+- **Schema/rules:** Every figure validated programmatically — JSON parses, all 22 ids are snake_case `scythian_*`/`sarmatian_*`, none collide with `/home/user/PantheonRepository/data-sources/existing-ids.json`, all `type` values are within {deity, demigod, quartigod, scion, mortal}, `origin` is uniformly "canon", and all materialCulture entries use `id`/`name` (never `item`). No Nart/Ossetian figures were re-authored.
+- **Naming rule:** English/plain word leads `name.primary`; the attested Greek theonym sits in `term.value` (Greek script) with reconstructed Iranian forms confined to `transliterations.reconstructed_iranian` and explained in `notes`; empty `""` is used where unrecorded (e.g. the unnamed sword-Ares, snake-goddess, Sarmatian goddess) rather than a disclaimer-in-term.
+- **Distinctions:** domains (kebab sphereIds), faculties (verb-phrases like "guards the royal hearth and binds the king's oath", "took up the unburning sky-gold"), and materialCulture (the four golden regalia, the akinakes, Heracles' bow/belt, the Sarmatian planted sword) are kept categorically separate. No modern coinages used.
+- **Citations:** Per-claim, real scholarship — Herodotos 4.5-10 and 4.59-63 (Godley) for primary attestation; Dumézil (trifunctional cup/axe/plough), Ustinova (Supreme Gods of the Bosporan Kingdom; Artimpasa<Argimpasa), Raevskiy, Bessonova, Abaev, Lincoln (Nordlit 33), Schmitt (Encyclopaedia Iranica), and Ammianus 31.2.23 for the Alanic sword.
+
+Two scholarly judgment calls worth flagging: (1) I led Argimpasa's `term` with the manuscript-transmitted Ἀργίμπασα per the "attested form leads" rule, recording Ustinova's preferred original Ἀρτίμπασα in `alt`/`notes`. (2) I noted both the older `*Darga-tavah` and the newer `*Targī̆tavah`/Tarkā etymology for Targitaos with the philological caveat (the d→δ→l shift), since the field is genuinely divided.
+
+One process note: WebFetch was blocked (HTTP 403) on every domain in this sandbox, including the public-domain Herodotus mirrors, so verbatim full-chapter quotation could not be pulled; the verbatim passages and reconstructed forms above were assembled and cross-checked from WebSearch result extracts across multiple independent sources. The working file lives at `/tmp/scythian_registry.json` (no repo files were modified).

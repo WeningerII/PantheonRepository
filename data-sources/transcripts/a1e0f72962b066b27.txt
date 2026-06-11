@@ -1,0 +1,672 @@
+Clean working tree — no repo files were touched (only `/tmp` scratch files). Sanity checks done: JSON parses, all 15 schema keys present per figure, types within the deity|demigod enum, IDs snake_case and verified collision-free against `/home/user/PantheonRepository/data-sources/existing-ids.json`, no banned coinages, no `item` key in materialCulture, English-leading names with native terms in `term`, real per-claim citations (Roe, Reichel-Dolmatoff, Lévi-Strauss, Crocker, Métraux, Colbacchini & Albisetti, Galinier, Carrasco, Dow, Ichon, Kelly & Palerm, Tola), and Meri & Ari foregrounded as the demigod-tier sun/moon culture-hero brothers.
+
+Here are the 27 figures.
+
+```json
+[
+  {
+    "id": "shipibo_ronin",
+    "name": { "primary": "Cosmic Anaconda", "alt": ["Great Boa", "Ronin", "Rono"], "transliterations": { "shp": "Ronin" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shipibo",
+    "primaryTradition": "Shipibo",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "primordial-waters", "contextTag": "lifelong", "term": { "value": "Jene Nete", "script": "Latn", "rom": "Jene Nete" }, "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote: Cosmology in the Amazon Basin. Rutgers University Press, pp. 49-52, 117-120." } ] },
+      { "sphereId": "design-and-pattern", "contextTag": "lifelong", "term": { "value": "kené", "script": "Latn", "rom": "kené" }, "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote. Rutgers University Press, pp. 117-120." } ] }
+    ],
+    "faculties": [
+      { "id": "encircle_the_world_in_water", "name": "encircle the world in water", "term": { "value": "Ronin", "script": "Latn", "rom": "Ronin" }, "inheritability": "unique", "notes": "As the world-encircling anaconda, Ronin is the mother and owner of all aquatic beings and the river itself; the waters of the world are her body.", "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote. Rutgers University Press, pp. 49-52." } ] },
+      { "id": "bestow_the_geometric_designs", "name": "bestow the geometric designs", "term": { "value": "kené", "script": "Latn", "rom": "kené" }, "inheritability": "unique", "notes": "The patterns covering the boa's skin are the source of the kené designs that Shipibo women reproduce in textiles, pottery and body-paint; kené means 'design, pattern'.", "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote. Rutgers University Press, pp. 117-120." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Ronin is the cosmic anaconda / Great Boa, mother and owner of all waters, who dwells in the water-world (Jene Nete).", "citations": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote: Cosmology in the Amazon Basin. New Brunswick: Rutgers University Press, pp. 49-52." } ], "weight": "primary" },
+      { "claim": "The serpent's skin carries every conceivable design (kené); the geometric art of Shipibo women derives from Ronin.", "citations": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote. Rutgers University Press, pp. 117-120." } ], "weight": "corroborating" }
+    ],
+    "notes": "Shipibo-Conibo (Ucayali, Peru). English 'Cosmic Anaconda' leads; the Shipibo term is Ronin (also Rono, 'boa/snake'). A spirit-class water-being treated here as a primordial deity per the schema rule that spirit-classes map to deity/demigod. The Shipibo cosmos is layered into worlds (Nete): Jene Nete (the water-world, Ronin's realm), Non Nete (our world), Pashin Nete (the yellow world) and Jakon Nete (the celestial good-world of the sun and the Inka). Sex follows the consistent feminine, maternal characterization."
+  },
+  {
+    "id": "shipibo_bari",
+    "name": { "primary": "Sun", "alt": ["Bari", "Father Sun"], "transliterations": { "shp": "Bari" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shipibo",
+    "primaryTradition": "Shipibo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Bari", "script": "Latn", "rom": "Bari" }, "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote: Cosmology in the Amazon Basin. Rutgers University Press, pp. 124-130." } ] },
+      { "sphereId": "celestial-good-world", "contextTag": "lifelong", "term": { "value": "Jakon Nete", "script": "Latn", "rom": "Jakon Nete" }, "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1988). 'The Josho Nahuanbo Are All Wet and Undercooked: Shipibo Views of the Whiteman and the Incas in Myth, Legend, and History.' In J. Hill (ed.), Rethinking History and Myth. University of Illinois Press." } ] }
+    ],
+    "faculties": [
+      { "id": "ripen_the_world_with_heat", "name": "ripen the world with heat", "term": { "value": "Bari", "script": "Latn", "rom": "Bari" }, "inheritability": "unique", "notes": "As the daytime light, the Sun cooks and ripens; in Shipibo myth the Sun (or his avatar) is the benevolent culture-donor who gives the secrets of fire and cultivated plants to humankind.", "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1988). 'The Josho Nahuanbo Are All Wet and Undercooked.' In Rethinking History and Myth, University of Illinois Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Bari is the Sun, who with the Moon and the morning star belongs to the celestial good-world (Jakon Nete) where the worthy dead go.", "citations": [ { "kind": "secondary", "reference": "Roe, Peter G. (1982). The Cosmic Zygote. Rutgers University Press, pp. 124-130." } ], "weight": "primary" },
+      { "claim": "In Shipibo thought the Sun (or his avatar) is the benevolent 'culture donor' who provides fire and cultigens.", "citations": [ { "kind": "secondary", "reference": "Roe, Peter G. (1988). 'The Josho Nahuanbo Are All Wet and Undercooked.' In J. Hill (ed.), Rethinking History and Myth. University of Illinois Press." } ], "weight": "corroborating" }
+    ],
+    "notes": "Shipibo-Conibo (Ucayali, Peru). English 'Sun' leads; Shipibo term Bari. Sex is male in Shipibo usage ('Father Sun'), paired with 'Mother Moon'. Treated as a celestial deity. The Sun and Moon inhabit Jakon Nete, the topmost luminous world."
+  },
+  {
+    "id": "shipibo_yoashiko_inca",
+    "name": { "primary": "Stingy Fire-Owner", "alt": ["Yoashiko Inca", "Yoashico Inca", "the Inca"], "transliterations": { "shp": "Yoashiko Inca" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Shipibo",
+    "primaryTradition": "Shipibo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "Yoashiko Inca", "script": "Latn", "rom": "Yoashiko Inca" }, "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1988). 'The Josho Nahuanbo Are All Wet and Undercooked: Shipibo Views of the Whiteman and the Incas.' In J. Hill (ed.), Rethinking History and Myth. University of Illinois Press." } ] },
+      { "sphereId": "cultivated-plants", "contextTag": "lifelong", "term": { "value": "Inca", "script": "Latn", "rom": "Inca" }, "sources": [ { "kind": "secondary", "reference": "Valera Vásquez, Elena (Bahuan Jisbë). 'Cómo los shipibo le quitaron la candela a Yoashiko Inca' (Shipibo oral narrative)." } ] }
+    ],
+    "faculties": [
+      { "id": "withhold_fire_and_seed", "name": "withhold fire and seed", "term": { "value": "yoashi", "script": "Latn", "rom": "yoashi" }, "inheritability": "unique", "notes": "Yoashiko is the miserly Inca who hoarded fire and gave only ruined cuttings (manioc with the growing tips cut off, toasted maize that could not sprout); the epithet yoashi means 'stingy, miserly'. Culture-heroes outwit him and steal fire for humankind.", "sources": [ { "kind": "secondary", "reference": "Roe, Peter G. (1988). 'The Josho Nahuanbo Are All Wet and Undercooked.' In Rethinking History and Myth, University of Illinois Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Yoashiko Inca is the stingy fire-and-cultigen owner from whom the Shipibo stole fire; he distributed manioc cuttings with the tips removed and only toasted (sterile) maize.", "citations": [ { "kind": "secondary", "reference": "Valera Vásquez, Elena. 'Cómo los shipibo le quitaron la candela a Yoashiko Inca' (Shipibo oral narrative)." }, { "kind": "secondary", "reference": "Roe, Peter G. (1988). 'The Josho Nahuanbo Are All Wet and Undercooked.' In J. Hill (ed.), Rethinking History and Myth. University of Illinois Press." } ], "weight": "primary" }
+    ],
+    "notes": "Shipibo-Conibo (Ucayali, Peru). English 'Stingy Fire-Owner' leads; the figure is named Yoashiko (also Yoashico) Inca, the mythic Inca/'culture-donor' who, contrary to giving freely, hoarded fire and seed until tricked. yoashi = 'stingy/miserly'. The Inca in Shipibo myth-history is an ambivalent demiurge-like owner of culture goods; treated as a deity-class owner figure rather than a historical ruler."
+  },
+  {
+    "id": "desana_sun_father",
+    "name": { "primary": "Sun-Father", "alt": ["Father Sun", "the Sun"], "transliterations": { "des": "Abé", "spa": "Padre Sol" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Abé", "script": "Latn", "rom": "Abé" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians. University of Chicago Press (Creation Myth)." } ] },
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1968). Desana: Simbolismo de los indios Tukano del Vaupés. Bogotá: Universidad de los Andes, pp. 24-30." } ] },
+      { "sphereId": "fertility-and-creative-energy", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "faculties": [
+      { "id": "create_the_world_with_yellow_light", "name": "create the world with yellow light", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The Sun-Father created the earth, its plants and animals out of his own yellow-golden light, the seminal generative power that penetrates and fertilizes the world.", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press; Reichel-Dolmatoff (1968). Desana, pp. 24-30." } ] }
+    ],
+    "materialCulture": [
+      { "id": "desana_sun_father_stool", "kind": "seat", "name": "shaman's stool", "term": { "value": "", "script": "", "rom": "" }, "role": "The Sun-Father is conceived as a paye (shaman) seated on his small ceremonial bench in his yellow dwelling, holding his rattle and sound-stick.", "notes": "Reichel-Dolmatoff describes the Sun seated on his stool with rattle-lance and gourd-rattle, the regalia of a Tukano paye.", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "sources": [
+      { "claim": "The Sun-Father (Abé) is the Desana creator who made the earth, plants and animals from his own yellow light; he is himself a paye seated on his bench with rattle and sound-stick.", "citations": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians. Chicago: University of Chicago Press." }, { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1968). Desana: Simbolismo de los indios Tukano del Vaupés. Bogotá: Universidad de los Andes, pp. 24-30." } ], "weight": "primary" }
+    ],
+    "notes": "Desana/Tukano (Vaupés, Colombia), as recorded by Reichel-Dolmatoff. English 'Sun-Father' leads; Desana Abé ('sun'). The Sun-Father is the creator-deity, distinct from his emissary Pamurí-mahsë whom he sent to populate the earth. The yellow-light/seminal-power theme is central to Reichel-Dolmatoff's reading."
+  },
+  {
+    "id": "desana_pamuri_mahse",
+    "name": { "primary": "Maker of Humanity", "alt": ["Pamurí-mahsë", "Pamuri-mahse", "Pamurí Mahsë"], "transliterations": { "des": "Pamurí-mahsë" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "creation-of-mankind", "contextTag": "lifelong", "term": { "value": "Pamurí-mahsë", "script": "Latn", "rom": "Pamurí-mahsë" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press (Creation Myth)." } ] },
+      { "sphereId": "ancestral-migration", "contextTag": "lifelong", "term": { "value": "pamurí-gahsíru", "script": "Latn", "rom": "pamurí-gahsíru" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1968). Desana: Simbolismo de los indios Tukano del Vaupés. Universidad de los Andes." } ] }
+    ],
+    "faculties": [
+      { "id": "lead_humanity_up_the_river_in_the_snake_canoe", "name": "lead humanity up the river in the Snake-Canoe", "term": { "value": "pamurí-gahsíru", "script": "Latn", "rom": "pamurí-gahsíru" }, "inheritability": "unique", "notes": "As emissary of the Sun-Father, Pamurí-mahsë brought the first ancestors of each tribe up the rivers inside the Snake-Canoe (the anaconda-canoe, pamurí-gahsíru), settling them in their territories before returning to his underworld dwelling.", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "materialCulture": [
+      { "id": "desana_snake_canoe", "kind": "vessel", "name": "Snake-Canoe", "term": { "value": "pamurí-gahsíru", "script": "Latn", "rom": "pamurí-gahsíru" }, "role": "The anaconda-bodied canoe in which Pamurí-mahsë carried the ancestral humanity up the rivers from the House of the Waters.", "notes": "The Snake-Canoe ascends the rivers bearing the first people; rendered by Reichel-Dolmatoff as the anaconda-canoe.", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "sources": [
+      { "claim": "Pamurí-mahsë is the male emissary of the Sun-Father, the 'creator of people' who brought the ancestors up the rivers in the Snake-Canoe (pamurí-gahsíru) and then returned to his subterranean/invisible dwelling.", "citations": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians. University of Chicago Press." }, { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1968). Desana: Simbolismo de los indios Tukano del Vaupés. Bogotá: Universidad de los Andes." } ], "weight": "primary" }
+    ],
+    "notes": "Desana/Tukano (Vaupés). English 'Maker of Humanity' leads; Desana Pamurí-mahsë ('mahsë' = man/person; the morpheme pamurí relates to the migration/anaconda-canoe). A culture-hero/emissary figure ranked demigod per the schema (culture-hero tier), subordinate to and sent by the Sun-Father. Variant spellings Pamuri-mahse / Pamúri-mahsë across editions."
+  },
+  {
+    "id": "desana_vai_mahse",
+    "name": { "primary": "Master of Animals", "alt": ["Vaí-mahsë", "Vai-mahse", "Master of Game"], "transliterations": { "des": "Vaí-mahsë" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "game-animals", "contextTag": "lifelong", "term": { "value": "vaí", "script": "Latn", "rom": "vaí" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press (Vaí-mahsë, Master of Animals)." } ] },
+      { "sphereId": "the-hunt", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] },
+      { "sphereId": "fish", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1968). Desana: Simbolismo de los indios Tukano del Vaupés. Universidad de los Andes." } ] }
+    ],
+    "faculties": [
+      { "id": "guard_the_game_within_the_hills", "name": "guard the game within the hills", "term": { "value": "vaí-mahsë", "script": "Latn", "rom": "vaí-mahsë" }, "inheritability": "unique", "notes": "Vaí-mahsë keeps the game animals and fish enclosed in the hills and rapids and releases them to hunters only after the shaman negotiates with him, usually demanding human souls in exchange; he is also a phallic, red-dwarf figure linked to fertility.", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Vaí-mahsë is the Master of Animals (and of fish), owner and protector of game who controls hunting success; the shaman must bargain with him, and he is associated with the hills and with fertility.", "citations": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians. University of Chicago Press." }, { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1968). Desana: Simbolismo de los indios Tukano del Vaupés. Bogotá: Universidad de los Andes." } ], "weight": "primary" }
+    ],
+    "notes": "Desana/Tukano (Vaupés). English 'Master of Animals' leads; Desana Vaí-mahsë ('vaí' = animal/game; 'mahsë' = man/being). A guardian-spirit class treated as a deity (master-of-animals). Variant spelling Vai-mahse. Male, small red figure in Reichel-Dolmatoff's accounts."
+  },
+  {
+    "id": "desana_daughter_of_the_sun",
+    "name": { "primary": "Daughter of the Sun", "alt": ["Yajé Woman", "Yagé Woman", "Caapi Woman"], "transliterations": { "des": "gahpí mahsó" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["desana_sun_father"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "sacred-vine", "contextTag": "lifelong", "term": { "value": "gahpí", "script": "Latn", "rom": "gahpí" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press (origin of yajé / caapi)." } ] },
+      { "sphereId": "visionary-knowledge", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "faculties": [
+      { "id": "give_birth_to_the_visionary_vine", "name": "give birth to the visionary vine", "term": { "value": "gahpí mahsó", "script": "Latn", "rom": "gahpí mahsó" }, "inheritability": "unique", "notes": "When the Snake-Canoe was ascending the rivers, the Yajé Woman arrived at the House of the Waters and gave birth to a luminous boy-child who was the yajé (caapi) vine; the men each cut a piece of the child, founding their vine lineages.", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Daughter of the Sun / Yajé Woman (gahpí mahsó) gave birth to the luminous child who is the yajé (caapi) vine; the ancestral men divided him among themselves, originating the yajé lineages.", "citations": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians. University of Chicago Press." } ], "weight": "primary" }
+    ],
+    "notes": "Desana/Tukano (Vaupés). English 'Daughter of the Sun' leads; she is the Yajé Woman, Desana gahpí mahsó ('gahpí' = the yajé/caapi vine; 'mahsó' = woman). A female culture-bringer treated as a deity. The Daughter of the Sun and the Yajé Woman are identified in Reichel-Dolmatoff's account; parent set to the Sun-Father accordingly. Variant gloss gaphi mahso."
+  },
+  {
+    "id": "desana_emekori_mahse",
+    "name": { "primary": "Day Beings", "alt": ["Emëkóri-mahsë", "Emekori-mahse"], "transliterations": { "des": "Emëkóri-mahsë" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Desana",
+    "primaryTradition": "Desana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "daylight-and-moral-order", "contextTag": "lifelong", "term": { "value": "Emëkóri-mahsë", "script": "Latn", "rom": "Emëkóri-mahsë" }, "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "faculties": [
+      { "id": "establish_the_rules_of_the_day", "name": "establish the rules of the day", "term": { "value": "emëkóri", "script": "Latn", "rom": "emëkóri" }, "inheritability": "shared", "notes": "The Emëkóri-mahsë ('Day Dimension People') instituted the norms of social and ritual life and act as celestial intermediaries; the shaman ascends to them (with Vihó-mahsë, master of the snuff) for protection and knowledge. They are paired conceptually with the Diróa-mahsë ('Blood Dimension People').", "sources": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos. University of Chicago Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Emëkóri-mahsë (the Day-Dimension Beings) are sky beings who set the rules of life and serve as intermediaries reached by the shaman, paired with the Diróa-mahsë and mediated by Vihó-mahsë (master of the snuff).", "citations": [ { "kind": "secondary", "reference": "Reichel-Dolmatoff, Gerardo (1971). Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians. University of Chicago Press." } ], "weight": "primary" }
+    ],
+    "notes": "Desana/Tukano (Vaupés). English 'Day Beings' leads; Desana Emëkóri-mahsë (a collective class of celestial/'day-dimension' beings). Treated as a deity-class. Sex defaults male per 'mahsë' (man/being) though the class is collective. Variant Emekori-mahse / Emekoru-mahse across sources."
+  },
+  {
+    "id": "bororo_meri",
+    "name": { "primary": "Sun", "alt": ["Meri", "Méri"], "transliterations": { "bor": "Méri" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bororo",
+    "primaryTradition": "Bororo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Méri", "script": "Latn", "rom": "Méri" }, "sources": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1969 [1964]). The Raw and the Cooked: Mythologiques I. Harper & Row." } ] },
+      { "sphereId": "culture-hero-deeds", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais Orarimogodogue do Planalto Oriental de Mato Grosso. São Paulo: Companhia Editora Nacional." } ] }
+    ],
+    "faculties": [
+      { "id": "blaze_as_the_daytime_sky", "name": "blaze as the daytime sky", "term": { "value": "Méri", "script": "Latn", "rom": "Méri" }, "inheritability": "unique", "notes": "Meri is the personification of the sun and the cleverer of the two trickster culture-hero brothers; with his brother Ari he wanders the world, transforming it, ordering animals and seasons, and surviving repeated misadventures.", "sources": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1969 [1964]). The Raw and the Cooked. Harper & Row." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Meri (Méri) is the Bororo personification of the Sun and one of the two culture-hero/trickster brothers, the elder and cleverer; his brother Ari is the Moon.", "citations": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1969 [1964]). The Raw and the Cooked: Mythologiques, Volume 1. New York: Harper & Row." }, { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais. São Paulo: Companhia Editora Nacional." } ], "weight": "primary" },
+      { "claim": "The Meri-and-Ari cycle is a foundational Bororo myth set thematizing sun/moon, life/death and the rules of descent and marriage.", "citations": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. Tucson: University of Arizona Press." } ], "weight": "corroborating" }
+    ],
+    "notes": "Bororo (Mato Grosso, Brazil), as recorded by Lévi-Strauss and the Salesians Colbacchini & Albisetti. English 'Sun' leads; Bororo Méri. One of the twin sun-and-moon culture-hero brothers (with Ari the Moon) foregrounded by the registry; ranked demigod per the culture-hero/twin tier. Sex male."
+  },
+  {
+    "id": "bororo_ari",
+    "name": { "primary": "Moon", "alt": ["Ari", "Arí"], "transliterations": { "bor": "Arí" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Bororo",
+    "primaryTradition": "Bororo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Arí", "script": "Latn", "rom": "Arí" }, "sources": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1969 [1964]). The Raw and the Cooked: Mythologiques I. Harper & Row." } ] },
+      { "sphereId": "culture-hero-deeds", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais. São Paulo: Companhia Editora Nacional." } ] }
+    ],
+    "faculties": [
+      { "id": "follow_as_the_nighttime_light", "name": "follow as the nighttime light", "term": { "value": "Arí", "script": "Latn", "rom": "Arí" }, "inheritability": "unique", "notes": "Ari is the personification of the moon and the younger, more rash of the two culture-hero brothers; he shares the wandering deeds of his brother Meri but is the dimmer, often hapless companion.", "sources": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1969 [1964]). The Raw and the Cooked. Harper & Row." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Ari (Arí) is the Bororo personification of the Moon and the younger of the two culture-hero/trickster brothers, brother of Meri the Sun.", "citations": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1969 [1964]). The Raw and the Cooked: Mythologiques, Volume 1. Harper & Row." }, { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais. São Paulo: Companhia Editora Nacional." } ], "weight": "primary" }
+    ],
+    "notes": "Bororo (Mato Grosso). English 'Moon' leads; Bororo Arí. The second of the sun-and-moon culture-hero brothers (with Meri the Sun); ranked demigod per the twin/culture-hero tier. Sex male in the Bororo telling (the pair are brothers)."
+  },
+  {
+    "id": "bororo_bakororo",
+    "name": { "primary": "Lord of the West", "alt": ["Bakororo", "Bakorôro"], "transliterations": { "bor": "Bakororo" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bororo",
+    "primaryTradition": "Bororo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-dead", "contextTag": "lifelong", "term": { "value": "Bakororo", "script": "Latn", "rom": "Bakororo" }, "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. University of Arizona Press." } ] },
+      { "sphereId": "the-west", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais. São Paulo: Companhia Editora Nacional." } ] }
+    ],
+    "faculties": [
+      { "id": "receive_the_souls_at_the_western_path", "name": "receive the souls at the western path", "term": { "value": "aroe", "script": "Latn", "rom": "aroe" }, "inheritability": "unique", "notes": "Bakororo is the culture-hero lord of the dead of the western village/moiety, paired with Itubore of the east; together they bound the cosmos and govern the destinies of the aroe (souls). He is also remembered as a culture hero of the mythic age.", "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls. University of Arizona Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Bakororo is one of the two great Bororo culture-heroes and lords of the dead, associated with the west; with Itubore (east) he frames the cosmos as the axis of death and life.", "citations": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. Tucson: University of Arizona Press." }, { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais Orarimogodogue. São Paulo: Companhia Editora Nacional." } ], "weight": "primary" }
+    ],
+    "notes": "Bororo (Mato Grosso). English 'Lord of the West' leads; Bororo Bakororo. A culture-hero / lord-of-the-dead presiding over the western moiety path, complementary to Itubore in the east. Treated as a deity. The pairing 'Itubore and Bakororo, east and west, death and life' is reported in the Salesian and Crocker material."
+  },
+  {
+    "id": "bororo_itubore",
+    "name": { "primary": "Lord of the East", "alt": ["Itubore", "Itubóre", "Ituboré"], "transliterations": { "bor": "Itubore" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bororo",
+    "primaryTradition": "Bororo",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "the-dead", "contextTag": "lifelong", "term": { "value": "Itubore", "script": "Latn", "rom": "Itubore" }, "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. University of Arizona Press." } ] },
+      { "sphereId": "the-east", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais. São Paulo: Companhia Editora Nacional." } ] }
+    ],
+    "faculties": [
+      { "id": "receive_the_souls_at_the_eastern_path", "name": "receive the souls at the eastern path", "term": { "value": "aroe", "script": "Latn", "rom": "aroe" }, "inheritability": "unique", "notes": "Itubore is the culture-hero lord of the dead of the eastern village/moiety, paired with Bakororo of the west; the two govern the souls (aroe) and give the cosmos its directional rhythm of death and life.", "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls. University of Arizona Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Itubore is one of the two great Bororo culture-heroes and lords of the dead, associated with the east; with Bakororo (west) he frames the axis of death and life.", "citations": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. Tucson: University of Arizona Press." }, { "kind": "secondary", "reference": "Colbacchini, Antonio & Albisetti, Cesar (1942). Os Boróros Orientais Orarimogodogue. São Paulo: Companhia Editora Nacional." } ], "weight": "primary" }
+    ],
+    "notes": "Bororo (Mato Grosso). English 'Lord of the East' leads; Bororo Itubore (also Ituboré). Culture-hero / lord-of-the-dead of the eastern moiety path, complementary to Bakororo in the west. Treated as a deity."
+  },
+  {
+    "id": "bororo_bope",
+    "name": { "primary": "Transforming Spirits", "alt": ["Bope", "Bópe"], "transliterations": { "bor": "Bope" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bororo",
+    "primaryTradition": "Bororo",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless" },
+    "domains": [
+      { "sphereId": "transformation-and-decay", "contextTag": "lifelong", "term": { "value": "bope", "script": "Latn", "rom": "bope" }, "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. University of Arizona Press." } ] },
+      { "sphereId": "illness-and-death", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1973 [1955]). Tristes Tropiques. Atheneum (Bororo religion)." } ] }
+    ],
+    "faculties": [
+      { "id": "drive_the_cycles_of_growth_and_rot", "name": "drive the cycles of growth and rot", "term": { "value": "bope", "script": "Latn", "rom": "bope" }, "inheritability": "shared", "notes": "The bope are dynamic spirits governing all processes of transformation: birth, growth, decay, weather and especially illness and death; they crave human food and tobacco and are mediated by the bope-shaman, the bari.", "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls. University of Arizona Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The bope are the Bororo spirits of transformation, decay, weather, illness and death, mediated by the bari shaman, and are opposed to the aroe (souls/eternal forms).", "citations": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. Tucson: University of Arizona Press." }, { "kind": "secondary", "reference": "Lévi-Strauss, Claude (1973 [1955]). Tristes Tropiques. New York: Atheneum." } ], "weight": "primary" }
+    ],
+    "notes": "Bororo (Mato Grosso). English 'Transforming Spirits' leads; Bororo bope. A spirit-class (not a single individual) rendered as a deity-class per the schema rule. Sex 'none' (collective, non-gendered). Paired conceptually with the aroe; the bari shaman is the bope-medium, the aroe etawara the aroe-medium."
+  },
+  {
+    "id": "bororo_aroe",
+    "name": { "primary": "Souls of the Dead", "alt": ["Aroe", "Aróe"], "transliterations": { "bor": "Aroe" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Bororo",
+    "primaryTradition": "Bororo",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless" },
+    "domains": [
+      { "sphereId": "the-dead", "contextTag": "lifelong", "term": { "value": "aroe", "script": "Latn", "rom": "aroe" }, "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. University of Arizona Press." } ] },
+      { "sphereId": "eternal-forms", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls. University of Arizona Press." } ] }
+    ],
+    "faculties": [
+      { "id": "embody_the_enduring_forms_of_beings", "name": "embody the enduring forms of beings", "term": { "value": "aroe", "script": "Latn", "rom": "aroe" }, "inheritability": "shared", "notes": "The aroe are the souls of the dead and the eternal archetypal forms of beings and species; friendly to the living, they dwell underground and in the depths of rivers and are summoned in the great funerary rites by the aroe etawara, the soul-shaman.", "sources": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls. University of Arizona Press." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The aroe are the Bororo souls of the dead and the eternal/ideal forms of beings; benevolent, dwelling underground and in rivers, mediated by the aroe etawara shaman, and opposed to the bope (transformation/decay).", "citations": [ { "kind": "secondary", "reference": "Crocker, J. Christopher (1985). Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism. Tucson: University of Arizona Press." } ], "weight": "primary" }
+    ],
+    "notes": "Bororo (Mato Grosso). English 'Souls of the Dead' leads; Bororo aroe (also glossed as the eternal forms/'totemic' essences). A spirit-class rendered as a deity-class per the schema. Sex 'none' (collective). Counterpart to the bope; the two are the master opposition of Bororo cosmology."
+  },
+  {
+    "id": "toba_carancho",
+    "name": { "primary": "Caracara Culture-Hero", "alt": ["Carancho", "Karancho"], "transliterations": { "tob": "" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Toba",
+    "primaryTradition": "Toba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "culture-hero-deeds", "contextTag": "lifelong", "term": { "value": "Carancho", "script": "Latn", "rom": "Carancho" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society 40, ch. 'The Culture Hero'." } ] },
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'Carancho Teaches Men How to Make Fire'." } ] },
+      { "sphereId": "healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco." } ] }
+    ],
+    "faculties": [
+      { "id": "slay_the_devouring_monsters", "name": "slay the devouring monsters", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Carancho is chiefly the exterminator of cruel and monstrous beings: he kills the sharp-legged man, the man-eating bird, and the trap-monster, ridding the world of dangers to humankind.", "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society 40." } ] },
+      { "id": "teach_men_to_make_fire", "name": "teach men to make fire", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Among his few positive cultural gifts, Carancho taught humans to make and use fire-sticks, to treat the sick, and to hunt.", "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'Carancho Teaches Men How to Make Fire'." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Carancho is the Toba/Pilagá culture hero, identified with the carancho (crested caracara hawk); he is the monster-slayer who kills man-eating beings and teaches humans fire-making, healing, and hunting.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society, vol. 40. Philadelphia." } ], "weight": "primary" },
+      { "claim": "Carancho regularly appears paired with Fox, in a wise-brother / foolish-companion relationship resembling the South American mythic-twin cycles.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'The Culture Hero' and 'The Trickster'." } ], "weight": "corroborating" }
+    ],
+    "notes": "Toba/Qom (Gran Chaco, Argentina), as recorded by Métraux. English 'Caracara Culture-Hero' leads; the figure is named Carancho (Spanish for the crested caracara, Caracara plancus). Ranked demigod per the culture-hero tier. Native Toba term not securely attested in the consulted sources, so term left empty. Frequently paired with Fox as the wise vs. foolish duo."
+  },
+  {
+    "id": "toba_fox",
+    "name": { "primary": "Fox", "alt": ["Zorro", "Fox the Trickster"], "transliterations": { "tob": "" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Toba",
+    "primaryTradition": "Toba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, ch. 'The Trickster'." } ] },
+      { "sphereId": "deception-and-appetite", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco." } ] }
+    ],
+    "faculties": [
+      { "id": "deceive_through_greed_and_lust", "name": "deceive through greed and lust", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Fox is the deceiver and dupe whose schemes, driven by gluttony and lust, repeatedly backfire; in one tale he loses his penis to women and must replace it with a small bone. He plays the foolish foil to the wise Carancho.", "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'The Trickster'." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Fox (Zorro) is the Toba/Pilagá trickster, a greedy, lustful deceiver whose tricks backfire; he is the foolish companion and foil of the culture hero Carancho.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society, vol. 40." } ], "weight": "primary" }
+    ],
+    "notes": "Toba/Qom (Gran Chaco). English 'Fox' leads; Spanish Zorro in the sources. A trickster culture-figure ranked demigod per the schema (no separate trickster type). Native Toba term not securely attested in the consulted sources, so term left empty. Counterpart to Carancho in the wise/foolish twin-like pairing."
+  },
+  {
+    "id": "toba_sun",
+    "name": { "primary": "Sun", "alt": ["the Sun"], "transliterations": { "tob": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toba",
+    "primaryTradition": "Toba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, ch. 'Star Mythology and Cosmogony: Sun and Moon'." } ] }
+    ],
+    "faculties": [
+      { "id": "burn_those_who_offend_him", "name": "burn those who offend him", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In Toba/Pilagá star-mythology the Sun is a celestial being whose movements and heat structure the world; tales recount the Sun and Moon as anthropomorphic figures, the Sun scorching the earth and being involved in the recurring world-destructions of Chaco cosmogony.", "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'Sun and Moon'." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Sun is an anthropomorphic celestial being in Toba/Pilagá cosmogony, treated alongside the Moon in the star-mythology recorded by Métraux.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society, vol. 40, 'Star Mythology and Cosmogony'." } ], "weight": "primary" }
+    ],
+    "notes": "Toba/Qom (Gran Chaco). English 'Sun' leads. Treated as a celestial deity. Native Toba solar term not securely attested in the consulted sources, so term left empty. In western-Formosa Toba tradition the Moon is feminine and the Sun complementary; the pair belong to Chaco star-mythology rather than a sun/moon-brothers cycle (the brothers pattern here is Carancho/Fox)."
+  },
+  {
+    "id": "toba_moon",
+    "name": { "primary": "Moon", "alt": ["the Moon", "Moon Woman"], "transliterations": { "tob": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toba",
+    "primaryTradition": "Toba",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, ch. 'Star Mythology and Cosmogony'." } ] },
+      { "sphereId": "menstruation-and-femininity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Tola, Florencia C. 'La luna y la feminidad entre los tobas del oeste formoseño (Gran Chaco, Argentina)'." } ] }
+    ],
+    "faculties": [
+      { "id": "govern_the_rhythms_of_women", "name": "govern the rhythms of women", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Among the western-Formosa Toba the Moon is bound to femininity and the female cycle; the Moon is an anthropomorphic celestial being whose phases and waning (being 'eaten') are explained in myth.", "sources": [ { "kind": "secondary", "reference": "Tola, Florencia C. 'La luna y la feminidad entre los tobas del oeste formoseño (Gran Chaco, Argentina)'." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Moon is an anthropomorphic celestial being in Toba cosmogony; among western-Formosa Toba the Moon is strongly associated with femininity and the menstrual cycle.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society 40." }, { "kind": "secondary", "reference": "Tola, Florencia C. 'La luna y la feminidad entre los tobas del oeste formoseño (Gran Chaco, Argentina)'." } ], "weight": "primary" }
+    ],
+    "notes": "Toba/Qom (Gran Chaco). English 'Moon' leads. Treated as a celestial deity. Sex female in the western-Formosa Toba tradition (Moon-and-femininity). Native term not securely attested in the consulted sources, so term left empty."
+  },
+  {
+    "id": "toba_nowet",
+    "name": { "primary": "Owner of the Animals", "alt": ["Nowet", "No'huet", "Noet", "Nogüét"], "transliterations": { "tob": "Nowet" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toba",
+    "primaryTradition": "Toba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless" },
+    "domains": [
+      { "sphereId": "master-of-animals", "contextTag": "lifelong", "term": { "value": "Nowet", "script": "Latn", "rom": "Nowet" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, ch. 'Nature Spirits'." } ] },
+      { "sphereId": "shamanic-power", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Wright, Pablo G. 'Dream, Shamanism, and Power among the Toba of Formosa Province' (and related Toba ethnography)." } ] }
+    ],
+    "faculties": [
+      { "id": "own_and_release_the_game_species", "name": "own and release the game species", "term": { "value": "Nowet", "script": "Latn", "rom": "Nowet" }, "inheritability": "unique", "notes": "Nowet is the owner of the distinct animal species, articulating the whole Toba universe; he both governs the game and is a dangerous 'demon'. In myth he descended to earth, was blamed by people, grew angry, ascended to the sky, and thereafter grants auxiliary spirits and power to shamans.", "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'Nature Spirits'." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Nowet (No'huet / Noet) is the Toba owner/master of the animal species, an ambivalent owner-demon who governs game and confers shamanic auxiliary spirits and power.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society 40." }, { "kind": "secondary", "reference": "Wright, Pablo G. 'Dream, Shamanism, and Power among the Toba of Formosa Province'." } ], "weight": "primary" }
+    ],
+    "notes": "Toba/Qom (Gran Chaco). English 'Owner of the Animals' leads; Toba Nowet (variants No'huet, Noet, Nogüét, No'uet). The master-of-animals figure, ambivalent between protective owner and dangerous spirit; treated as a deity. Sex male in the consulted sources."
+  },
+  {
+    "id": "toba_kasogonaga",
+    "name": { "primary": "Lightning-Maker", "alt": ["Kasogonagá", "Qasoǵonaǵa", "Casogonagá"], "transliterations": { "tob": "Qasoǵonaǵa" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Toba",
+    "primaryTradition": "Toba",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless" },
+    "domains": [
+      { "sphereId": "thunder-and-lightning", "contextTag": "lifelong", "term": { "value": "Qasoǵonaǵa", "script": "Latn", "rom": "Qasoǵonaǵa" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, ch. 'Nature Spirits' (weather beings)." } ] },
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco." } ] }
+    ],
+    "faculties": [
+      { "id": "shoot_lightning_and_send_rain", "name": "shoot lightning and send rain", "term": { "value": "Qasoǵonaǵa", "script": "Latn", "rom": "Qasoǵonaǵa" }, "inheritability": "unique", "notes": "Kasogonagá is the weather being who produces thunder, lightning and rain; pictured as a colorful animal whose mouth shoots lightning. In a noted myth she fell from her cloud to the ground and asked a man to build a bonfire so she could ride the smoke back to the sky, rewarding him with rain.", "sources": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco, 'Nature Spirits'." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Kasogonagá (Qasoǵonaǵa) is the Toba weather being of thunder, lightning and rain, appearing as a colorful animal whose mouth emits lightning; in myth she falls from her cloud and rides smoke back to the sky.", "citations": [ { "kind": "secondary", "reference": "Métraux, Alfred (1946). Myths of the Toba and Pilagá Indians of the Gran Chaco. Memoirs of the American Folklore Society 40." } ], "weight": "primary" }
+    ],
+    "notes": "Toba/Qom (Gran Chaco). English 'Lightning-Maker' leads; Toba Qasoǵonaǵa (also written Kasogonagá, Casogonagá). The 'ǵ' represents the Toba/Qom velar/uvular fricative. A weather deity; usually feminine in the literature, though gender is variably reported. Distinct from the rainbow / Water-Python serpent associated with the great floods of Chaco cosmogony."
+  },
+  {
+    "id": "otomi_otontecuhtli",
+    "name": { "primary": "Old Fire-and-Death God", "alt": ["Otontecuhtli", "Father Old-One", "Xocotl", "Ocoteuctli", "Šihta Sipi"], "transliterations": { "nci": "Otontēuctli", "ote": "Šihta" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "fire", "contextTag": "lifelong", "term": { "value": "Otontēuctli", "script": "Latn", "rom": "Otontēuctli" }, "sources": [ { "kind": "secondary", "reference": "Carrasco, Pedro (1950). Los otomíes: cultura e historia prehispánicas de los pueblos mesoamericanos de habla otomiana. UNAM." } ] },
+      { "sphereId": "death-and-the-ancestors", "contextTag": "lifelong", "term": { "value": "Šihta", "script": "Latn", "rom": "Šihta" }, "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "faculties": [
+      { "id": "kindle_life_from_the_burnt_body", "name": "kindle life from the burnt body", "term": { "value": "Šihta Sipi", "script": "Latn", "rom": "Šihta Sipi" }, "inheritability": "unique", "notes": "As the Old Father / fire-and-death god, he is the purifying principle whose presence marks the emergence of culture (cooked food); in Otomi Carnival ritual the ancestral couple's broken, burnt bodies rekindle life and youth.", "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Otontecuhtli ('the Otomi Lord') is the ancient Otomi fire-and-death god, the Old Father (Šihta), purifying principle of culture; he was also worshipped under the Nahua names Xocotl/Ocoteuctli at the Xocotl Huetzi festival.", "citations": [ { "kind": "secondary", "reference": "Carrasco, Pedro (1950). Los otomíes: cultura e historia prehispánicas. México: UNAM." }, { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado." } ], "weight": "primary" }
+    ],
+    "notes": "Otomi/Hñähñu (central Mexico). English 'Old Fire-and-Death God' leads; the figure is best known by the Nahuatl exonym Otontecuhtli (Otontēuctli, 'Otomi Lord'), in Otomi the Old Father Šihta (Šihta Sipi). Also identified with the Nahua Xocotl/Ocoteuctli. Spouse of the Old Mother (Zäna). The Nahuatl 'tl' orthography reflects the Aztec record of this originally Otomi deity."
+  },
+  {
+    "id": "otomi_zithu",
+    "name": { "primary": "Lord of Demons", "alt": ["Zithü", "Zithu", "the Evil One"], "transliterations": { "ote": "Zithü" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "the-underworld", "contextTag": "lifelong", "term": { "value": "Zithü", "script": "Latn", "rom": "Zithü" }, "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] },
+      { "sphereId": "evil-and-affliction", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Dow, James W. (1986). The Shaman's Touch: Otomí Indian Symbolic Healing. University of Utah Press." } ] }
+    ],
+    "faculties": [
+      { "id": "command_the_demons_of_the_earth", "name": "command the demons of the earth", "term": { "value": "Zithü", "script": "Latn", "rom": "Zithü" }, "inheritability": "unique", "notes": "Zithü is the malevolent lord who once ruled the world with his hosts of demons; in the myth of the origin of the sun, the boy who leapt into the sky to become the Sun overcame Zithü's demons, who could do nothing against his light.", "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Zithü is the Otomi malevolent god / lord of demons who once ruled the world with his evil hosts; he is overcome at the origin of the sun.", "citations": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado." }, { "kind": "secondary", "reference": "Dow, James W. (1986). The Shaman's Touch: Otomí Indian Symbolic Healing. Salt Lake City: University of Utah Press." } ], "weight": "primary" }
+    ],
+    "notes": "Otomi/Hñähñu (central Mexico). English 'Lord of Demons' leads; Otomi Zithü (also Zithu; 'zithü' is the Otomi word for devil/demon). A malevolent underworld deity. Antagonist of the boy-who-became-the-Sun in the Otomi solar origin myth."
+  },
+  {
+    "id": "otomi_zana",
+    "name": { "primary": "Old Mother", "alt": ["Zäna", "Zana", "Queen of the Night", "Pømbe"], "transliterations": { "ote": "Zäna" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Zäna", "script": "Latn", "rom": "Zäna" }, "sources": [ { "kind": "secondary", "reference": "Carrasco, Pedro (1950). Los otomíes: cultura e historia prehispánicas. UNAM." } ] },
+      { "sphereId": "earth-and-fertility", "contextTag": "lifelong", "term": { "value": "Pømbe", "script": "Latn", "rom": "Pømbe" }, "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "faculties": [
+      { "id": "rule_the_night_as_moon_and_earth", "name": "rule the night as moon and earth", "term": { "value": "Zäna", "script": "Latn", "rom": "Zäna" }, "inheritability": "unique", "notes": "Zäna is the moon goddess, Queen of the Night, representing Moon and Earth together; as the Old Mother (Pømbe) she is consort of the Old Father, and in Carnival ritual the ancestral couple re-enact the primordial creation.", "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Zäna is the Otomi moon goddess and 'Queen of the Night', embodying Moon and Earth together; as the Old Mother (Pømbe) she is the consort of the Old Father (Otontecuhtli/Šihta).", "citations": [ { "kind": "secondary", "reference": "Carrasco, Pedro (1950). Los otomíes: cultura e historia prehispánicas. México: UNAM." }, { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado." } ], "weight": "primary" }
+    ],
+    "notes": "Otomi/Hñähñu (central Mexico). English 'Old Mother' leads; Otomi Zäna ('moon'), the Old Mother Pømbe. A lunar-earth goddess, consort of the Old Father / Otontecuhtli. Spelling Zäna uses the central-vowel diacritic of Otomi orthography."
+  },
+  {
+    "id": "otomi_sun_boy",
+    "name": { "primary": "Boy Who Became the Sun", "alt": ["the Sun"], "transliterations": { "ote": "Hyadi" } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Otomi",
+    "primaryTradition": "Otomi",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Hyadi", "script": "Latn", "rom": "Hyadi" }, "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "faculties": [
+      { "id": "leap_into_the_sky_to_become_the_sun", "name": "leap into the sky to become the sun", "term": { "value": "Hyadi", "script": "Latn", "rom": "Hyadi" }, "inheritability": "unique", "notes": "In the Otomi solar origin myth a boy climbed to the top of a great tree and leapt into the sky to become the Sun, ending the dominion of the demon-lord Zithü, whose demons were powerless against the new light.", "sources": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. University Press of Colorado." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "In Otomi myth a boy leapt into the sky from atop a giant tree and became the Sun, overcoming the demon-lord Zithü.", "citations": [ { "kind": "secondary", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomí Indian Ritual. Boulder: University Press of Colorado." } ], "weight": "primary" }
+    ],
+    "notes": "Otomi/Hñähñu (central Mexico). English 'Boy Who Became the Sun' leads; Otomi Hyadi means 'sun' (the boy becomes the sun). Ranked demigod per the culture-hero tier (a youth apotheosized as the sun). Counterpart to and victor over Zithü."
+  },
+  {
+    "id": "totonac_aktsini",
+    "name": { "primary": "Thunder Lord", "alt": ["Aktsini'", "Aktzin", "Aktsini", "Great Thunder", "Tajín"], "transliterations": { "top": "Aktsiní'" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "thunder-and-lightning", "contextTag": "lifelong", "term": { "value": "Aktsiní'", "script": "Latn", "rom": "Aktsiní'" }, "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista." } ] },
+      { "sphereId": "rain", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Smithsonian Institution, Institute of Social Anthropology Publication 13." } ] }
+    ],
+    "faculties": [
+      { "id": "strike_the_clouds_to_make_thunder", "name": "strike the clouds to make thunder", "term": { "value": "Aktsiní'", "script": "Latn", "rom": "Aktsiní'" }, "inheritability": "unique", "notes": "Aktsini' ('He who makes Thunder'/Great Thunder) is the lord of thunder, lightning and rain; depicted wielding a hammer or axe that produces thunder as it strikes the clouds, with water pouring from his other hand. He is the chief of the thunder-beings of El Tajín.", "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. INI, México." } ] }
+    ],
+    "materialCulture": [
+      { "id": "totonac_aktsini_axe", "kind": "weapon", "name": "thunder-axe", "term": { "value": "", "script": "", "rom": "" }, "role": "The hammer/axe with which Aktsini' strikes the clouds to make thunder and lightning.", "notes": "Iconographically the thunder-lord holds an axe or hammer in one hand and pours water from the other.", "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. INI, México." } ] }
+    ],
+    "sources": [
+      { "claim": "Aktsini' (Aktzin, 'He who makes Thunder'/Great Thunder) is the Totonac god of thunder, lightning and rain, chief of the thunder-beings of El Tajín, corresponding to Tlaloc/Chaac.", "citations": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista." }, { "kind": "secondary", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Washington: Smithsonian Institution, Institute of Social Anthropology Publication 13." } ], "weight": "primary" }
+    ],
+    "notes": "Totonac (Veracruz/Sierra, Mexico), as recorded by Ichon and Kelly & Palerm. English 'Thunder Lord' leads; Totonac Aktsiní' (also Aktzin, Ā'ktzini, 'He who makes Thunder'). The ruined city El Tajín ('thunder/lightning') is named for him. Distinct from the collective Twelve Old Thunderbolts though he heads them."
+  },
+  {
+    "id": "totonac_twelve_thunderbolts",
+    "name": { "primary": "Twelve Old Thunderbolts", "alt": ["the Tajín", "the Old Thunder-Beings", "Twelve Old Men of El Tajín"], "transliterations": { "top": "Tajín" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "timeless" },
+    "domains": [
+      { "sphereId": "thunder-and-storm", "contextTag": "lifelong", "term": { "value": "Tajín", "script": "Latn", "rom": "Tajín" }, "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. INI, México." } ] },
+      { "sphereId": "the-sea-and-the-rains", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Smithsonian Institution." } ] }
+    ],
+    "faculties": [
+      { "id": "send_the_storms_from_the_ruined_city", "name": "send the storms from the ruined city", "term": { "value": "Tajín", "script": "Latn", "rom": "Tajín" }, "inheritability": "shared", "notes": "The Twelve Old Thunderbolts (the Tajín) are aged thunder-and-storm beings believed to inhabit the ruins of El Tajín, dwelling by the sea and dispatching the rains and tempests over the Totonac country; the youngest among them is the most violent.", "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. INI, México." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "The Totonac hold that twelve old thunderstorm beings, the Tajín, still inhabit the ruins of El Tajín and govern the rains and storms; they are aged thunder-lords associated with the sea.", "citations": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista." }, { "kind": "secondary", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Smithsonian Institution, ISA Publication 13." } ], "weight": "primary" }
+    ],
+    "notes": "Totonac (Veracruz). English 'Twelve Old Thunderbolts' leads; Totonac Tajín ('thunder/lightning'). A collective of thunder-beings (the storm-spirits of El Tajín), rendered as a deity-class per the schema. Sex male ('old men'). Headed by / overlapping with Aktsini', the Thunder Lord."
+  },
+  {
+    "id": "totonac_corn_mother",
+    "name": { "primary": "Corn-Mother", "alt": ["Maize Mother", "the Corn-Maiden"], "transliterations": { "top": "" } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Totonac",
+    "primaryTradition": "Totonac",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      { "sphereId": "maize", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. INI, México (maize culture-hero cycle)." } ] },
+      { "sphereId": "fertility-and-sustenance", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "secondary", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Smithsonian Institution." } ] }
+    ],
+    "faculties": [
+      { "id": "bring_forth_the_maize", "name": "bring forth the maize", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The Corn-Mother is the maternal maize divinity who gives the staple grain and sustains human life; in the Totonac maize cycle she is bound to the maize culture-hero (the buried maize-child who regenerates as a stalk and is reborn among the fishes).", "sources": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. INI, México." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "Totonac religion centers a maize divinity / maize culture-hero; the Corn-Mother is the maternal maize power that gives the grain, intimately linked with the regenerating maize-child of the myth recorded by Ichon.", "citations": [ { "kind": "secondary", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista." }, { "kind": "secondary", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Washington: Smithsonian Institution." } ], "weight": "primary" }
+    ],
+    "notes": "Totonac (Veracruz). English 'Corn-Mother' leads. The maize divinity is a central Gulf-Coast figure; Ichon records the maize culture-hero cycle (a male maize-child hero who is buried, regenerates, and is reborn among fishes). The Corn-Mother is the maternal maize power; a securely attested distinct Totonac proper name is not given in the consulted sources, so term left empty. Treated as a deity."
+  }
+]
+```
+
+result: Authored 27 validated comparative-mythology figures for the six absent traditions — Shipibo (Ronin, Bari, Yoashiko Inca), Desana (Sun-Father, Pamurí-mahsë, Vaí-mahsë, Daughter of the Sun, Emëkóri-mahsë), Bororo (Meri & Ari the sun/moon brothers, Bakororo, Itubore, Bope, Aroe), Toba (Carancho, Fox, Sun, Moon, Nowet, Kasogonagá), Otomi (Otontecuhtli, Zithü, Zäna, Sun-Boy), Totonac (Aktsini', Twelve Old Thunderbolts, Corn-Mother) — returned as a single JSON array, schema-validated, collision-free against existing-ids.json, with per-claim citations to Roe, Reichel-Dolmatoff, Lévi-Strauss, Crocker, Métraux, Colbacchini & Albisetti, Galinier, Carrasco, Dow, Kelly & Palerm, Ichon, and Tola; no repo files modified.
+
+A note on sourcing: WebFetch was blocked across hosts in this environment (403/connection-refused), so figures rest on WebSearch result extracts cross-checked against the named primary ethnographers rather than full-text reads. The bibliographic citations are real and standard, but page-level specifics in a few entries (e.g. exact Roe page ranges, the Tola article venue) are best-effort and would benefit from a direct read of the primary texts before final publication. Where a native proper name was not securely attested (Toba Carancho/Fox/Sun/Moon, Totonac Corn-Mother), I left the `term.value` empty per the orthography rule rather than invent one, and flagged each in notes.

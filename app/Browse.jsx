@@ -8,8 +8,8 @@
 //
 //  Name is the visual hero (serif, weight 500, 14.5px). Alt names and
 //  transliterations sit underneath in italic serif as a real sub-line,
-//  not inline noise. Origin column is dropped — only 3 of 601 entries
-//  are non-canon, and those surface as an inline "ORIG" badge in the
+//  not inline noise. Origin column is dropped — non-canon entries are a
+//  rare exception, and those surface as an inline "ORIG" badge in the
 //  name cell.
 //
 //  Sort-aware grouping: A→Z gets letter section headers; sort-by-tradition
@@ -19,9 +19,13 @@
 
 const { useRef: __bRef, useEffect: __bEff, useMemo: __bMemo } = React;
 
-function BrowseRow({ entry, idx, cursor, selected, onOpen, onHover }) {
+const BrowseRow = React.memo(function BrowseRow({ entry, idx, cursor, selected, onOpen, onHover }) {
   const ref = __bRef(null);
   __bEff(() => {
+    // Only auto-scroll for keyboard-driven cursor moves. Scrolling on a
+    // hover-driven move slides new rows under the parked pointer, which
+    // fires another mouseenter and cascades.
+    if (Date.now() - (window.__kbNavTs || 0) > 400) return;
     if (cursor && ref.current) {
       const el = ref.current;
       const rect = el.getBoundingClientRect();
@@ -44,9 +48,7 @@ function BrowseRow({ entry, idx, cursor, selected, onOpen, onHover }) {
   const eraLabel = window.formatEra(entry.temporal?.era);
   const tradPigment = window.colorForTradition(entry.tradition);
 
-  const dateRange =
-    window.formatYearRangeSigned(dates.mythicStart, dates.mythicEnd) ||
-    window.formatYearRangeSigned(dates.textualStart, dates.textualEnd) || null;
+  const dateRange = window.entryDateRange(dates);
 
   const altDisplay = (() => {
     if (!alts.length) return null;
@@ -91,7 +93,7 @@ function BrowseRow({ entry, idx, cursor, selected, onOpen, onHover }) {
       </td>
     </tr>
   );
-}
+});
 
 // ── Sort-aware grouping ────────────────────────────────────────────────
 
@@ -133,6 +135,18 @@ function GroupHeader({ label, count }) {
 function Browse({ filters, selection, onOpen }) {
   const { filtered, sort, setSort, query, setQuery, types, setTypes, traditions, setTraditions, origin, setOrigin } = filters;
   const { cursorIdx, setCursorIdx, selectedId } = selection;
+
+  // Stable row callbacks so React.memo(BrowseRow) actually skips re-renders:
+  // the inline handlers from Shell/useSelection are fresh objects each render.
+  const onOpenRef = __bRef(null);  onOpenRef.current = onOpen;
+  const onHoverRef = __bRef(null); onHoverRef.current = setCursorIdx;
+  const stableOpen = __bMemo(() => (id) => onOpenRef.current && onOpenRef.current(id), []);
+  const stableHover = __bMemo(() => (idx) => {
+    // Keyboard navigation owns the cursor for a beat after each keypress —
+    // ignore the mouseenters produced by rows sliding under a parked pointer.
+    if (Date.now() - (window.__kbNavTs || 0) < 250) return;
+    onHoverRef.current && onHoverRef.current(idx);
+  }, []);
 
   // Pre-compute group boundaries so each row knows whether to emit a
   // group header before it, and the header knows the group's row count.
@@ -273,8 +287,8 @@ function Browse({ filters, selection, onOpen }) {
                       idx={idx}
                       cursor={idx === cursorIdx}
                       selected={entry.id === selectedId}
-                      onOpen={onOpen}
-                      onHover={setCursorIdx}
+                      onOpen={stableOpen}
+                      onHover={stableHover}
                     />
                   );
                 });

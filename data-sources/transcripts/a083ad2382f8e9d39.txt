@@ -1,0 +1,551 @@
+Everything validates cleanly. The JSON parses, all IDs are unique and correctly prefixed, every claim/domain/faculty carries citations, faculty verb-phrases are ≤14 words and distinct from domains, native terms are intact Inuktitut syllabics / Caddoan / Aymara / Tupi-Guarani / Yanomami with romanizations (and `""` where genuinely unrecorded), and all entries are `origin: "canon"` with real ethnographic citations.
+
+Here is the research summary and the complete figure array.
+
+## What was authored
+
+27 new figures across the five requested American traditions, matching the registry's existing schema (`id`, `name`/`transliterations`, `type`, `origin`, `tradition`/`primaryTradition`, `domains[]`, `faculties[]`, `materialCulture[]`, `sources[]`), with the prompt's enriched `domains`/`faculties` `term` + per-item `sources` shape:
+
+- **Inuit (6):** Sedna, Sila (cosmic), Anningan (moon), Nanook (bear-master), Pinga, Tekkeitsertok (caribou) — cited to Rasmussen (*Intellectual Culture of the Iglulik Eskimos*, 1929; *The Netsilik Eskimos*, 1931) and Boas (*The Central Eskimo*, 1888).
+- **Pawnee (6):** Tirawa (Atíʼas Tirawa), Morning Star, Evening Star, Shakuru (Sun), Pah (Moon), North Star — cited to Dorsey (*The Pawnee: Mythology*, 1906) and Chamberlain (*When Stars Came Down to Earth*).
+- **Aymara (5):** Tunupa/Viracocha, Pachamama, Inti, Mallku (achachila), Amaru (katari) — cited to Bertonio (*Vocabulario de la lengua aymara*, 1612) and Andean ethnography.
+- **Tupi (6):** Monan (creator), Maíra (demigod culture-hero), Tupã (thunder), Guaraci (sun), Jaci (moon), the Twins (demigod culture-hero pair) — cited to Métraux (*La religion des Tupinamba*, 1928), Thevet (*Cosmographie*, 1575), Nimuendajú (1914).
+- **Yanomami (4):** Omama (creator-demiurge), Omawë (demigod twin-hero), the xapiri (cosmic shaman-spirits), Periboriwë (moon/Moonblood) — cited to Kopenawa & Albert (*The Falling Sky*, 2013), Lizot, Wilbert & Simoneau (*Folk Literature of the Yanomami*, 1990), Chagnon.
+
+## Key authoring decisions
+- **Culture-hero/twin tier as demigods** per the brief: Tupi Maíra (`tupi_maira`, child of Monan) and the Tupi Twins (`tupi_twins`, children of Maíra), and Yanomami Omawë.
+- **Faculties are verb-phrase powers distinct from domains** (e.g. Sedna: "Withhold seals, walrus and whales from hunters" vs. domain `sea-sea-mammals`).
+- **Native terms with romanization**, `""` where a figure-specific term is unrecorded (never invented, never a disclaimer). Inuktitut in syllabics + rom; Pawnee uses the attested Caddoan glottal stop (ʼ, U+02BC).
+- **Living traditions handled respectfully**: `vitalStatus: "living"`, notes flag living cult (Pachamama, Mallku, xapiri) and the missionary-overlay caveat on Tupã.
+- All `origin: "canon"`, no coinages, no "not attested"/"series canon" language. No `materialCulture` items were asserted, as none of these figures has an attested iconic object in the cited ethnography (left as `[]`, per the "where attested" rule).
+
+Note: figures are returned as the JSON array only — they are not yet integrated into `app/data.js`. The registry's `id` format and field shapes match, so they can be dropped into `v2Entries` if desired; none of the 27 IDs collide with `data-sources/existing-ids.json`.
+
+```json
+[
+  {
+    "id": "inuit_sedna",
+    "name": { "primary": "Sedna", "alt": ["Nuliajuk", "Arnakuagsak", "Takanakapsaluk", "Sassuma Arnaa", "Sanna"], "transliterations": { "inuktitut": "ᓴᓐᓇ Sanna" } },
+    "type": "deity", "origin": "canon", "tradition": "Inuit", "primaryTradition": "Inuit",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sea-sea-mammals", "contextTag": "lifelong", "term": { "value": "ᓴᓐᓇ", "script": "Inuktitut syllabics", "rom": "Sanna" }, "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] },
+      { "sphereId": "underworld-adlivun", "contextTag": "lifelong", "term": { "value": "", "script": "Inuktitut", "rom": "Adlivun" }, "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "faculties": [
+      { "id": "withhold-the-sea-game", "name": "Withhold seals, walrus and whales from hunters", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "Released only when a shaman descends to comb her hair.", "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] },
+      { "id": "judge-tabu-breakers", "name": "Detect broken taboos as filth tangled in her hair", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }, { "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }], "weight": "primary" },
+      { "claim": "finger-joints-become-sea-mammals", "citations": [{ "kind": "primary", "reference": "Rasmussen (1929); Boas (1888)" }], "weight": "primary" }
+    ],
+    "notes": "Inuit mistress of the sea and its animals; dwells on the sea floor ruling the dead in Adlivun."
+  },
+  {
+    "id": "inuit_sila",
+    "name": { "primary": "Sila", "alt": ["Silap Inua", "Sila Inua", "Naarjuk", "Hila"], "transliterations": { "inuktitut": "ᓯᓚ Sila" } },
+    "type": "cosmic", "origin": "canon", "tradition": "Inuit", "primaryTradition": "Inuit",
+    "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "weather-air-breath", "contextTag": "lifelong", "term": { "value": "ᓯᓚ", "script": "Inuktitut syllabics", "rom": "Sila" }, "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] },
+      { "sphereId": "cosmic-order-intellect", "contextTag": "lifelong", "term": { "value": "", "script": "Inuktitut", "rom": "Silap inua" }, "sources": [{ "kind": "primary", "reference": "Rasmussen, The Netsilik Eskimos (1931)" }] }
+    ],
+    "faculties": [
+      { "id": "command-the-weather", "name": "Raise storms and calm against moral transgression", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "Sila punishes broken taboos with foul weather.", "sources": [{ "kind": "primary", "reference": "Rasmussen, The Netsilik Eskimos (1931)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }, { "kind": "primary", "reference": "Rasmussen, The Netsilik Eskimos (1931)" }], "weight": "primary" }
+    ],
+    "notes": "Indweller of the air and weather; among Netsilik and Copper Inuit a giant infant (Naarjuk) whose breath is the wind; the life-force pervading the universe."
+  },
+  {
+    "id": "inuit_anningan",
+    "name": { "primary": "Anningan", "alt": ["Aningaaq", "Igaluk", "Taqqiq", "Tarqeq"], "transliterations": { "inuktitut": "ᑕᖅᑭᖅ Taqqiq" } },
+    "type": "deity", "origin": "canon", "tradition": "Inuit", "primaryTradition": "Inuit",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "ᑕᖅᑭᖅ", "script": "Inuktitut syllabics", "rom": "Taqqiq" }, "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] },
+      { "sphereId": "hunting-fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "faculties": [
+      { "id": "drive-the-lunar-cycle", "name": "Wax and wane as he hunts his fleeing sister-sun", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "Thins from neglecting food during the chase.", "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }, { "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }], "weight": "primary" },
+      { "claim": "sun-moon-sibling-chase", "citations": [{ "kind": "primary", "reference": "Rasmussen (1929)" }], "weight": "primary" }
+    ],
+    "notes": "The Moon Man; brother who eternally pursues his sister the Sun (Siqiniq/Malina) across the sky, his hunger explaining the lunar phases."
+  },
+  {
+    "id": "inuit_nanook",
+    "name": { "primary": "Nanook", "alt": ["Nanuq", "Nanuk"], "transliterations": { "inuktitut": "ᓇᓄᖅ Nanuq" } },
+    "type": "deity", "origin": "canon", "tradition": "Inuit", "primaryTradition": "Inuit",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "polar-bears-bear-hunt", "contextTag": "lifelong", "term": { "value": "ᓇᓄᖅ", "script": "Inuktitut syllabics", "rom": "Nanuq" }, "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "faculties": [
+      { "id": "grant-or-deny-the-bear-hunt", "name": "Decide whether hunters find and take bears", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "Punishes violations of bear-hunting taboos.", "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }, { "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }], "weight": "primary" }
+    ],
+    "notes": "Master of bears; he rules the polar bears and decides the hunter's success, the slain bear's soul hosted for days to satisfy him."
+  },
+  {
+    "id": "inuit_pinga",
+    "name": { "primary": "Pinga", "alt": [], "transliterations": { "inuktitut": "ᐱᙶ Pinga" } },
+    "type": "deity", "origin": "canon", "tradition": "Inuit", "primaryTradition": "Inuit",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "land-game-caribou", "contextTag": "lifelong", "term": { "value": "ᐱᙶ", "script": "Inuktitut syllabics", "rom": "Pinga" }, "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] },
+      { "sphereId": "souls-of-the-dead", "contextTag": "lifelong", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] }
+    ],
+    "faculties": [
+      { "id": "guard-game-and-souls", "name": "Watch over the living, game, and the dead", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "Demands no waste of caribou meat.", "sources": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Rasmussen, Intellectual Culture of the Iglulik Eskimos (1929)" }], "weight": "primary" }
+    ],
+    "notes": "Iglulik sky-dwelling 'one up there'; keeper of land game and of human souls, overseeing the hunt and the conduct of the living."
+  },
+  {
+    "id": "inuit_tekkeitsertok",
+    "name": { "primary": "Tekkeitsertok", "alt": ["Teqqeitsertoq", "Tuktorssuaq"], "transliterations": { "inuktitut": "ᑐᒃᑐ tuktu (caribou)" } },
+    "type": "deity", "origin": "canon", "tradition": "Inuit", "primaryTradition": "Inuit",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "caribou-land-hunt", "contextTag": "lifelong", "term": { "value": "ᑐᒃᑐ", "script": "Inuktitut syllabics", "rom": "tuktu" }, "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "faculties": [
+      { "id": "master-the-caribou", "name": "Own and release the caribou to hunters", "term": { "value": "", "script": "Inuktitut", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Boas, The Central Eskimo (1888)" }], "weight": "primary" }
+    ],
+    "notes": "Master of the caribou and patron of the caribou hunt; chief among the land-game spirits in Boas's Baffin Land record."
+  },
+  {
+    "id": "pawnee_tirawa",
+    "name": { "primary": "Tirawa", "alt": ["Atius Tirawa", "Tirawahat", "Atiʼas Tirawa"], "transliterations": { "caddoan": "Atíʼas Tirawa ('Our Father Above')" } },
+    "type": "deity", "origin": "canon", "tradition": "Pawnee", "primaryTradition": "Pawnee",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "creator-supreme-sky", "contextTag": "lifelong", "term": { "value": "Atíʼas Tirawa", "script": "Pawnee (Caddoan)", "rom": "Atiʼas Tirawa" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] },
+      { "sphereId": "cosmic-order", "contextTag": "lifelong", "term": { "value": "", "script": "Pawnee", "rom": "Tirawahat" }, "sources": [{ "kind": "secondary", "reference": "Chamberlain, When Stars Came Down to Earth (1982)" }] }
+    ],
+    "faculties": [
+      { "id": "ordain-the-cosmos", "name": "Create all things and assign each star its station", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "none", "notes": "Works through the stars as his agents.", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] },
+      { "id": "supply-creatures-needs", "name": "Provide the needs of all created beings", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }, { "kind": "secondary", "reference": "Chamberlain, When Stars Came Down to Earth (1982)" }], "weight": "primary" }
+    ],
+    "notes": "'Our Father Above'; the Pawnee supreme being and creator who governs the cosmos through the star-gods and sends his messenger Paruxti in the thunder."
+  },
+  {
+    "id": "pawnee_morning_star",
+    "name": { "primary": "Morning Star", "alt": ["Great Star", "Opirikus", "Mars"], "transliterations": { "caddoan": "Uʼpirikucu' ('Great Star')" } },
+    "type": "deity", "origin": "canon", "tradition": "Pawnee", "primaryTradition": "Pawnee",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "dawn-star-war-male-principle", "contextTag": "lifelong", "term": { "value": "Uʼpirikucu'", "script": "Pawnee (Caddoan)", "rom": "Uʼpirikucu" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] },
+      { "sphereId": "fire-light-vitality", "contextTag": "lifelong", "term": { "value": "", "script": "Pawnee", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "faculties": [
+      { "id": "overcome-the-evening-star", "name": "Conquer Evening Star's western barriers to beget mankind", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "partial", "notes": "Their union produced the first girl.", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }, { "kind": "secondary", "reference": "Chamberlain, When Stars Came Down to Earth (1982)" }], "weight": "primary" }
+    ],
+    "notes": "The eastern, male warrior star (identified with Mars); pursues and overcomes the Evening Star so that creation may proceed. Honored in the Skidi Morning Star ceremony."
+  },
+  {
+    "id": "pawnee_evening_star",
+    "name": { "primary": "Evening Star", "alt": ["White Star Woman", "Cupiritta", "Venus"], "transliterations": { "caddoan": "('White Star Woman')" } },
+    "type": "deity", "origin": "canon", "tradition": "Pawnee", "primaryTradition": "Pawnee",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "evening-star-female-principle", "contextTag": "lifelong", "term": { "value": "", "script": "Pawnee (Caddoan)", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] },
+      { "sphereId": "garden-of-the-west-fertility", "contextTag": "lifelong", "term": { "value": "", "script": "Pawnee", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "faculties": [
+      { "id": "guard-the-western-garden", "name": "Set ordeals guarding her western garden of creation", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "partial", "notes": "Yields the first woman once overcome.", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }, { "kind": "secondary", "reference": "Chamberlain, When Stars Came Down to Earth (1982)" }], "weight": "primary" }
+    ],
+    "notes": "The western, female 'White Star Woman' (identified with Venus); keeper of the garden of the west whose union with Morning Star produced the first human being."
+  },
+  {
+    "id": "pawnee_shakuru_sun",
+    "name": { "primary": "Shakuru", "alt": ["The Sun", "Sakuru"], "transliterations": { "caddoan": "Sakuru ('Sun')" } },
+    "type": "deity", "origin": "canon", "tradition": "Pawnee", "primaryTradition": "Pawnee",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Sakuru", "script": "Pawnee (Caddoan)", "rom": "Sakuru" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "faculties": [
+      { "id": "give-daylight-and-warmth", "name": "Give light and heat by Tirawa's command", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "none", "notes": "Sun and Moon's union bore the first boy.", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }], "weight": "primary" }
+    ],
+    "notes": "The Sun, Shakuru; placed in the east by Tirawa. With the Moon (Pah) he begot the first boy, paralleling the Morning/Evening Star begetting of the first girl."
+  },
+  {
+    "id": "pawnee_pah_moon",
+    "name": { "primary": "Pah", "alt": ["The Moon", "Pa"], "transliterations": { "caddoan": "Pah ('Moon')" } },
+    "type": "deity", "origin": "canon", "tradition": "Pawnee", "primaryTradition": "Pawnee",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Pah", "script": "Pawnee (Caddoan)", "rom": "Pah" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "faculties": [
+      { "id": "rule-the-night-light", "name": "Light the night placed in the west", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "none", "notes": "Mother by the Sun of the first boy.", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }], "weight": "primary" }
+    ],
+    "notes": "The Moon, Pah; set in the west by Tirawa as the female counterpart of the Sun, with whom she bore the first boy of the Skidi creation account."
+  },
+  {
+    "id": "pawnee_north_star",
+    "name": { "primary": "North Star", "alt": ["The Star That Does Not Walk Around", "Chief Star", "Polaris"], "transliterations": { "caddoan": "('The Star That Does Not Move')" } },
+    "type": "deity", "origin": "canon", "tradition": "Pawnee", "primaryTradition": "Pawnee",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "north-star-chieftaincy", "contextTag": "lifelong", "term": { "value": "", "script": "Pawnee (Caddoan)", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] },
+      { "sphereId": "stability-leadership", "contextTag": "lifelong", "term": { "value": "", "script": "Pawnee", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Chamberlain, When Stars Came Down to Earth (1982)" }] }
+    ],
+    "faculties": [
+      { "id": "keep-the-stars-in-order", "name": "Stand fixed and keep the stars from straying", "term": { "value": "", "script": "Pawnee", "rom": "" }, "inheritability": "none", "notes": "'You shall not move; chief of all the gods.'", "sources": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Dorsey, The Pawnee: Mythology (1906)" }, { "kind": "secondary", "reference": "Chamberlain, When Stars Came Down to Earth (1982)" }], "weight": "primary" }
+    ],
+    "notes": "'The Star That Does Not Walk Around' (Polaris); appointed by Tirawa as chief of all the stars, standing motionless in the north to keep the others on their courses."
+  },
+  {
+    "id": "aymara_tunupa",
+    "name": { "primary": "Tunupa", "alt": ["Thunupa", "Tarapaca", "Tunupa-Viracocha"], "transliterations": { "aymara": "Tunupa" } },
+    "type": "deity", "origin": "canon", "tradition": "Aymara", "primaryTradition": "Aymara",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "thunder-lightning", "contextTag": "lifelong", "term": { "value": "Tunupa", "script": "Aymara", "rom": "Tunupa" }, "sources": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }] },
+      { "sphereId": "volcanoes-creation", "contextTag": "lifelong", "term": { "value": "", "script": "Aymara", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Métraux on Andean myth; Bertonio (1612)" }] },
+      { "sphereId": "water-rivers", "contextTag": "lifelong", "term": { "value": "", "script": "Aymara", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }] }
+    ],
+    "faculties": [
+      { "id": "order-the-world", "name": "Teach farming, weaving, language and moral law", "term": { "value": "", "script": "Aymara", "rom": "" }, "inheritability": "none", "notes": "Wandered the altiplano civilizing peoples.", "sources": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }] },
+      { "id": "wield-volcanic-fire", "name": "Hurl lightning and command volcanoes and waters", "term": { "value": "", "script": "Aymara", "rom": "" }, "inheritability": "none", "notes": "Crossed Lake Titicaca toward the south.", "sources": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }], "weight": "primary" },
+      { "claim": "equation-with-Viracocha", "citations": [{ "kind": "secondary", "reference": "Andean ethnohistory; the Quechua Viracocha largely absorbed the Aymara Tunupa" }], "weight": "secondary" }
+    ],
+    "notes": "The pre-Inca Aymara creator and thunder-lightning god of the Titicaca basin; a wandering civilizer (also called Tarapaca) whom the Quechua Viracocha later subsumed."
+  },
+  {
+    "id": "aymara_pachamama",
+    "name": { "primary": "Pachamama", "alt": ["Pacha Mama", "Mother Earth"], "transliterations": { "aymara": "Pachamama ('World/Time Mother')" } },
+    "type": "deity", "origin": "canon", "tradition": "Aymara", "primaryTradition": "Aymara",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "earth-fertility-harvest", "contextTag": "lifelong", "term": { "value": "Pachamama", "script": "Aymara", "rom": "Pachamama" }, "sources": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }] }
+    ],
+    "faculties": [
+      { "id": "make-the-soil-fertile", "name": "Make the soil fertile and grant good harvests", "term": { "value": "", "script": "Aymara", "rom": "" }, "inheritability": "none", "notes": "Requires libations (challa) and offerings.", "sources": [{ "kind": "secondary", "reference": "Andean ethnography of the challa / despacho offering" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Bertonio, Vocabulario de la lengua aymara (1612)" }, { "kind": "secondary", "reference": "Modern Aymara ethnography (living cult)" }], "weight": "primary" }
+    ],
+    "notes": "The earth mother, most sacred Aymara deity; she renders the soil fertile and is honored with libations. A living object of cult across the Aymara altiplano today."
+  },
+  {
+    "id": "aymara_inti",
+    "name": { "primary": "Inti", "alt": ["Tata Inti", "Willka"], "transliterations": { "aymara": "Inti ('Sun')" } },
+    "type": "deity", "origin": "canon", "tradition": "Aymara", "primaryTradition": "Aymara",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun-agriculture", "contextTag": "lifelong", "term": { "value": "Inti", "script": "Aymara", "rom": "Inti" }, "sources": [{ "kind": "secondary", "reference": "Andean ethnography (Aymara solar cult, shared with Quechua)" }] }
+    ],
+    "faculties": [
+      { "id": "ripen-the-crops", "name": "Ripen crops and regulate the seasons", "term": { "value": "", "script": "Aymara", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [{ "kind": "secondary", "reference": "Andean ethnography (Aymara solar cult)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Andean ethnography; Inti as Aymara as well as Quechua sun-deity" }], "weight": "secondary" }
+    ],
+    "notes": "The Sun, Tata Inti; solar deity of fertility, agriculture and the harvest, venerated across the Aymara highlands and shared with the wider Quechua-Andean world."
+  },
+  {
+    "id": "aymara_mallku",
+    "name": { "primary": "Mallku", "alt": ["Achachila", "Apu"], "transliterations": { "aymara": "Mallku ('lord / condor')" } },
+    "type": "deity", "origin": "canon", "tradition": "Aymara", "primaryTradition": "Aymara",
+    "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "mountains-protection", "contextTag": "lifelong", "term": { "value": "Mallku", "script": "Aymara", "rom": "Mallku" }, "sources": [{ "kind": "secondary", "reference": "Aymara ethnography of the achachila / mountain-lords" }] }
+    ],
+    "faculties": [
+      { "id": "guard-the-community", "name": "Protect the community from the high summits", "term": { "value": "", "script": "Aymara", "rom": "" }, "inheritability": "none", "notes": "Appears as a great condor; provides water.", "sources": [{ "kind": "secondary", "reference": "Aymara ethnography (achachila / mallku cult)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Aymara ethnography; Akapacha composed of Mallku, Pachamama and Amaru" }], "weight": "secondary" }
+    ],
+    "notes": "Mountain-lord spirit, the achachila or ancestor-protector of the high snow peaks (Illimani, Illampu), taking the form of a great condor and providing for the people. A living tradition."
+  },
+  {
+    "id": "aymara_amaru",
+    "name": { "primary": "Amaru", "alt": ["Katari", "Amaro"], "transliterations": { "aymara": "Katari ('serpent'); Q. Amaru" } },
+    "type": "deity", "origin": "canon", "tradition": "Aymara", "primaryTradition": "Aymara",
+    "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "serpent-water-renewal", "contextTag": "lifelong", "term": { "value": "Katari", "script": "Aymara", "rom": "Katari" }, "sources": [{ "kind": "secondary", "reference": "Andean ethnography (Aymara katari / Quechua amaru)" }] },
+      { "sphereId": "underworld-passage", "contextTag": "lifelong", "term": { "value": "", "script": "Aymara", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Andean cosmology of the three pacha" }] }
+    ],
+    "faculties": [
+      { "id": "overturn-the-order", "name": "Bring sudden violent change and join the worlds", "term": { "value": "", "script": "Aymara", "rom": "" }, "inheritability": "none", "notes": "Two-headed underground serpent of the waters.", "sources": [{ "kind": "secondary", "reference": "Andean ethnography (amaru/katari cosmology)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Andean ethnography; Aymara katari = Quechua amaru, serpent of the Akapacha" }], "weight": "secondary" }
+    ],
+    "notes": "The cosmic serpent (Aymara katari, Quechua amaru): a great two-headed underground serpent of water associated with sudden violent change and the renewal of the cosmic order, linking the earthly and spirit worlds."
+  },
+  {
+    "id": "tupi_monan",
+    "name": { "primary": "Monan", "alt": ["Maire-Monan", "Monan Tupinambá"], "transliterations": { "tupi": "Monan ('the old / ancient one')" } },
+    "type": "deity", "origin": "canon", "tradition": "Tupi", "primaryTradition": "Tupi",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "creation-primordial", "contextTag": "lifelong", "term": { "value": "Monan", "script": "Tupi", "rom": "Monan" }, "sources": [{ "kind": "primary", "reference": "Thevet, La Cosmographie universelle (1575)" }] },
+      { "sphereId": "fire-cataclysm", "contextTag": "lifelong", "term": { "value": "", "script": "Tupi", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "faculties": [
+      { "id": "create-without-beginning", "name": "Create the world and first men, without beginning or end", "term": { "value": "", "script": "Tupi", "rom": "" }, "inheritability": "none", "notes": "Shapes and transforms all beings at will.", "sources": [{ "kind": "primary", "reference": "Thevet, La Cosmographie universelle (1575)" }] },
+      { "id": "destroy-by-fire", "name": "Destroy the rebellious first men with celestial fire", "term": { "value": "", "script": "Tupi", "rom": "" }, "inheritability": "none", "notes": "Then quenched the fire with rain (the flood).", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Thevet, La Cosmographie universelle (1575)" }, { "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "weight": "primary" }
+    ],
+    "notes": "The Tupinambá creator 'ancient one', without beginning or end; he made the world and the first men, destroyed them by fire when they rebelled, then sent rain that formed the seas and rivers."
+  },
+  {
+    "id": "tupi_maira",
+    "name": { "primary": "Maíra", "alt": ["Maire-Monan", "Maíra-ata", "Maira"], "transliterations": { "tupi": "Maíra ('transformer')" } },
+    "type": "demigod", "origin": "canon", "tradition": "Tupi", "primaryTradition": "Tupi",
+    "sex": "male", "vitalStatus": "living", "parentIds": ["tupi_monan"],
+    "parentRoles": { "tupi_monan": "paternal" },
+    "temporal": { "era": "mythic" },
+    "relations": [
+      { "kind": "father", "personId": "tupi_monan", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "notes": "Maire-Monan presented as son/aspect of Monan the creator." }
+    ],
+    "domains": [
+      { "sphereId": "transformation-culture-hero", "contextTag": "lifelong", "term": { "value": "Maíra", "script": "Tupi", "rom": "Maira" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "faculties": [
+      { "id": "transform-beings", "name": "Transform creatures and impose the trials of fire and stone", "term": { "value": "", "script": "Tupi", "rom": "" }, "inheritability": "partial", "notes": "Maire = 'transformer'; teacher of arts.", "sources": [{ "kind": "primary", "reference": "Thevet, La Cosmographie universelle (1575)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Thevet, La Cosmographie universelle (1575)" }, { "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "weight": "primary" }
+    ],
+    "notes": "The transformer culture-hero of the Maíra cycle (Maire-Monan, 'the old transformer'); son of Monan, who reshapes beings and tests mankind. The name was later extended to the French and other foreigners."
+  },
+  {
+    "id": "tupi_tupa",
+    "name": { "primary": "Tupã", "alt": ["Tupan", "Tupave"], "transliterations": { "tupi": "Tupã ('thunder')" } },
+    "type": "deity", "origin": "canon", "tradition": "Tupi", "primaryTradition": "Tupi",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "thunder-storm", "contextTag": "lifelong", "term": { "value": "Tupã", "script": "Tupi-Guarani", "rom": "Tupã" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] },
+      { "sphereId": "creation-directing", "contextTag": "lifelong", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La civilisation matérielle des tribus Tupi-Guarani (1928)" }] }
+    ],
+    "faculties": [
+      { "id": "speak-in-thunder", "name": "Manifest as thunder and lightning over creation", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "inheritability": "none", "notes": "Father of the Sun-and-Moon twins.", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "weight": "secondary" }
+    ],
+    "notes": "Tupã, the thunder; the spirit of storm and lightning who in Tupi-Guarani tradition directs creation. Note: missionaries adopted 'Tupã' to translate the Christian God, but the thunder-power is the indigenous core."
+  },
+  {
+    "id": "tupi_guaraci",
+    "name": { "primary": "Guaraci", "alt": ["Kuarahy", "Coaraci", "Guarací"], "transliterations": { "tupi": "Kuarahy ('sun')" } },
+    "type": "deity", "origin": "canon", "tradition": "Tupi", "primaryTradition": "Tupi",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "sun-daylight", "contextTag": "lifelong", "term": { "value": "Kuarahy", "script": "Tupi-Guarani", "rom": "Kuarahy" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "faculties": [
+      { "id": "give-light-to-the-living", "name": "Provide light and warmth to living things", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "inheritability": "none", "notes": "≤14 words", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "weight": "secondary" }
+    ],
+    "notes": "Guaraci, the Sun (Tupi kuarahy); source of light and warmth and protector of living things, twin to the Moon Jaci in Tupi-Guarani cosmology."
+  },
+  {
+    "id": "tupi_jaci",
+    "name": { "primary": "Jaci", "alt": ["Jasy", "Yacy", "Araci"], "transliterations": { "tupi": "Jasy ('moon')" } },
+    "type": "deity", "origin": "canon", "tradition": "Tupi", "primaryTradition": "Tupi",
+    "sex": "female", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon-night", "contextTag": "lifelong", "term": { "value": "Jasy", "script": "Tupi-Guarani", "rom": "Jasy" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] },
+      { "sphereId": "lovers-dreams", "contextTag": "lifelong", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "sources": [{ "kind": "tertiary", "reference": "Brazilian folklore tradition" }] }
+    ],
+    "faculties": [
+      { "id": "watch-over-the-night", "name": "Guard the night, lovers, and dreams", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "inheritability": "none", "notes": "Threatened by the jaguar (Mars) who would eat her.", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "weight": "secondary" }
+    ],
+    "notes": "Jaci, the Moon (Tupi jasy); protector of the night and twin of the Sun Guaraci. In Tupinambá myth the moon is menaced by the jaguar, personified as the planet Mars."
+  },
+  {
+    "id": "tupi_twins",
+    "name": { "primary": "The Twins", "alt": ["Sun and Moon", "Maíra-Pochy and Rairu", "the heavenly Twins"], "transliterations": { "tupi": "(Tupi-Guarani 'Two Twins' cycle)" } },
+    "type": "demigod", "origin": "canon", "tradition": "Tupi", "primaryTradition": "Tupi",
+    "vitalStatus": "living", "parentIds": ["tupi_maira"],
+    "parentRoles": { "tupi_maira": "paternal" },
+    "temporal": { "era": "mythic" },
+    "relations": [
+      { "kind": "father", "personId": "tupi_maira", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }], "notes": "In the Twin cycle the boys are sons of the demiurge Maíra by a mortal/abandoned wife." }
+    ],
+    "domains": [
+      { "sphereId": "culture-heroes-vengeance", "contextTag": "lifelong", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] }
+    ],
+    "faculties": [
+      { "id": "avenge-the-mother", "name": "Trap and destroy the jaguars who killed their mother", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "inheritability": "partial", "notes": "One pregnant jaguar spared, ancestor of all jaguars.", "sources": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }] },
+      { "id": "order-the-world", "name": "Give the natural and social order its present form", "term": { "value": "", "script": "Tupi-Guarani", "rom": "" }, "inheritability": "partial", "notes": "Recorded across Tupi-Guarani territory.", "sources": [{ "kind": "secondary", "reference": "Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt (1914)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Métraux, La religion des Tupinamba (1928)" }, { "kind": "secondary", "reference": "Nimuendajú, Die Sagen von der Erschaffung und Vernichtung der Welt (1914)" }], "weight": "secondary" }
+    ],
+    "notes": "The heavenly Twins (Sun and Moon) of the widespread Tupi-Guarani Twin cycle: sons of the demiurge Maíra, raised by jaguars who had killed their mother, whom they avenge before ordering the world. The foundational culture-hero pair of Tupi-Guarani myth."
+  },
+  {
+    "id": "yanomami_omama",
+    "name": { "primary": "Omama", "alt": ["Omamë", "Omame"], "transliterations": { "yanomami": "Omama" } },
+    "type": "deity", "origin": "canon", "tradition": "Yanomami", "primaryTradition": "Yanomami",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "creation-demiurge", "contextTag": "lifelong", "term": { "value": "Omama", "script": "Yanomami", "rom": "Omama" }, "sources": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }] },
+      { "sphereId": "shaman-spirits-origin", "contextTag": "lifelong", "term": { "value": "", "script": "Yanomami", "rom": "xapiri" }, "sources": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }] }
+    ],
+    "faculties": [
+      { "id": "establish-the-world-order", "name": "Set the rules of society and prop up the sky", "term": { "value": "", "script": "Yanomami", "rom": "" }, "inheritability": "none", "notes": "Anchored the sky with metal foundations.", "sources": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }] },
+      { "id": "create-the-xapiri", "name": "Create the shamans' auxiliary spirits, the xapiri", "term": { "value": "", "script": "Yanomami", "rom": "xapiri" }, "inheritability": "none", "notes": "≤14 words", "sources": [{ "kind": "secondary", "reference": "Albert & Goodwin Gomez; Yanomami ethnography (ISA)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }, { "kind": "secondary", "reference": "Lizot, Yanomami ethnography; Instituto Socioambiental" }], "weight": "primary" }
+    ],
+    "notes": "The Yanomami creator-demiurge; from his union with the daughter of the water-monster Tëpërësiki the Yanomami descend. He fixed the sky, founded society's rules, and made the xapiri shaman-spirits. His brother Yoasi brought death and ills."
+  },
+  {
+    "id": "yanomami_omawe",
+    "name": { "primary": "Omawë", "alt": ["Omawa", "Omawö"], "transliterations": { "yanomami": "Omawë" } },
+    "type": "demigod", "origin": "canon", "tradition": "Yanomami", "primaryTradition": "Yanomami",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "relations": [
+      { "kind": "sibling", "externalRef": { "name": "Yoawë (twin culture-hero, brother of Omawë)", "tradition": "Yanomami" }, "era": "mythic", "sources": [{ "kind": "secondary", "reference": "Wilbert & Simoneau, Folk Literature of the Yanomami (1990)" }], "notes": "The Omawë/Yoawë twin cycle." }
+    ],
+    "domains": [
+      { "sphereId": "culture-hero-twins", "contextTag": "lifelong", "term": { "value": "Omawë", "script": "Yanomami", "rom": "Omawë" }, "sources": [{ "kind": "secondary", "reference": "Wilbert & Simoneau, Folk Literature of the Yanomami (1990)" }] },
+      { "sphereId": "water-rivers-origin", "contextTag": "lifelong", "term": { "value": "", "script": "Yanomami", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Lizot, Yanomami narratives" }] }
+    ],
+    "faculties": [
+      { "id": "win-water-and-plants", "name": "Win water and cultivated plants from the monster's daughter", "term": { "value": "", "script": "Yanomami", "rom": "" }, "inheritability": "partial", "notes": "Twin trickster-heroes of the flood cycle.", "sources": [{ "kind": "secondary", "reference": "Wilbert & Simoneau, Folk Literature of the Yanomami (1990)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wilbert & Simoneau, Folk Literature of the Yanomami (1990)" }, { "kind": "secondary", "reference": "Lizot, Yanomami ethnography" }], "weight": "secondary" }
+    ],
+    "notes": "Culture-hero of the Omawë and Yoawë twin cycle; with his brother he obtains water and cultivated plants and shapes Yanomami life. Humanity descends from the survivors of the great flood in the Omawë myth. (Omawë is sometimes identified with the demiurge Omama.)"
+  },
+  {
+    "id": "yanomami_xapiri",
+    "name": { "primary": "Xapiri", "alt": ["xapiripë", "hekura", "hekurapë"], "transliterations": { "yanomami": "xapiri / hekura" } },
+    "type": "cosmic", "origin": "canon", "tradition": "Yanomami", "primaryTradition": "Yanomami",
+    "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "shaman-auxiliary-spirits", "contextTag": "lifelong", "term": { "value": "xapiri", "script": "Yanomami", "rom": "xapiri" }, "sources": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }] },
+      { "sphereId": "forest-image-beings", "contextTag": "lifelong", "term": { "value": "hekura", "script": "Yanomami", "rom": "hekura" }, "sources": [{ "kind": "secondary", "reference": "Lizot; Albert, Yanomami ethnography" }] }
+    ],
+    "faculties": [
+      { "id": "uphold-the-sky", "name": "Aid shamans to heal and hold up the sky", "term": { "value": "xapiri", "script": "Yanomami", "rom": "xapiri" }, "inheritability": "none", "notes": "Summoned via yãkoana snuff; created by Omama.", "sources": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kopenawa & Albert, The Falling Sky (2013)" }, { "kind": "secondary", "reference": "Lizot, Yanomami ethnography" }], "weight": "primary" }
+    ],
+    "notes": "The xapiri (or hekura): the luminous ancestral image-spirits, created by Omama, who descend to the shaman drinking yãkoana. They heal, defend the people, and work to keep the sky from falling. A living shamanic tradition."
+  },
+  {
+    "id": "yanomami_periboriwe",
+    "name": { "primary": "Periboriwë", "alt": ["Peribo", "Poriporiwë", "Peeríboriwë"], "transliterations": { "yanomami": "Periboriwë ('Moon being')" } },
+    "type": "deity", "origin": "canon", "tradition": "Yanomami", "primaryTradition": "Yanomami",
+    "sex": "male", "vitalStatus": "living", "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Periboriwë", "script": "Yanomami", "rom": "Periboriwë" }, "sources": [{ "kind": "secondary", "reference": "Wilbert & Simoneau, Folk Literature of the Yanomami (1990)" }] },
+      { "sphereId": "origin-of-people-blood", "contextTag": "lifelong", "term": { "value": "", "script": "Yanomami", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Chagnon, Yanomamö (Moonblood myth)" }] }
+    ],
+    "faculties": [
+      { "id": "spill-the-blood-of-people", "name": "Bleed when shot, his blood becoming the first people", "term": { "value": "", "script": "Yanomami", "rom": "" }, "inheritability": "none", "notes": "Moonblood origin; warlike peoples from the thickest blood.", "sources": [{ "kind": "secondary", "reference": "Chagnon, Yanomamö (Moonblood myth)" }] }
+    ],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Wilbert & Simoneau, Folk Literature of the Yanomami (1990)" }, { "kind": "secondary", "reference": "Chagnon, Yanomamö" }], "weight": "secondary" }
+    ],
+    "notes": "The Moon, Periboriwë; in the 'Moonblood' myth an ancestor shoots him and the blood that falls to earth becomes the first Yanomami, the fiercest born where the blood lay thickest. His descendants were destroyed in a great flood."
+  }
+]
+```

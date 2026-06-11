@@ -1,0 +1,98 @@
+All verified. **Ilya Muromets**: horse Burushka Kosmatushka confirmed; the sword he has is "Svyatogor's sword" (which the roster ALREADY has as "sword-of-svyatogor"). So no new sword for Ilya — only the horse. The mace/club/bow are generic/unnamed in the bylina; I'll add the horse only.
+
+I now have a thoroughly verified set. Let me compile the final output. Let me organize by figure with exact figure_ids from the roster, ensuring no re-emission of currentItems.
+
+Verified MISSING items to emit:
+
+**Norse:**
+- norse_odin: Hliðskjálf (regalia/high-seat), Geri ok Freki (wolves/companions)
+- norse_freyr: Blóðughófi (mount)
+- (Thor, Njörðr, Sigi: no clean named missing items — Sigi has none; Njörðr only has Nóatún dwelling which isn't a portable item; Thor's named items all present)
+
+**Irish:**
+- irish_lugh: Failinis (hound)
+- irish_manannan: Cathbarr (helmet), lúireach/body-armour, Mucca Mhannanáin (regenerating swine)
+- irish_cuchulainn: Cruaidín Catutchenn (sword), Del Chliss (spear/javelin), Dubán (shield), Liath Macha (horse), Dub Sainglend (horse)
+
+**Welsh:**
+- welsh_rhiannon: her magic bag (the bag that can't be filled) — Rhiannon's bag
+
+**Finnish:**
+- finnish_ilmarinen: Golden Bride/Maiden (kultainen neito), Golden Plough
+- finnish_vainamoinen: birch-wood kantele (second kantele) — distinct from the first/pike-bone one (roster's "kantele")
+- finnish_kullervo: father's heirloom knife (puukko)
+
+**Slavic:**
+- slavic_ilya_muromets: Burushka (horse)
+- slavic_dobrynya_nikitich: silken whip (Shemakhan whip), gusli, Burko (horse)
+
+Let me reconsider a couple for rigor:
+- Väinämöinen birch kantele: The roster's "kantele" is generic. The first kantele (pike-jawbone) is lost in the sea (Runo 44); he then makes the birch kantele. These are genuinely two items. But if the roster's single "kantele" is meant to represent his kantele generally, adding "birch-wood kantele" is defensible as a distinct attested instrument. I'll include it but clearly mark it as the second/birch one.
+- Kullervo knife: distinct from his sword (roster's kullervo-sword = the talking suicide sword). The knife is the heirloom that breaks. Solid, attested (Runo 33). Include.
+- Dobrynya's gusli: attested he plays gusli; it's an instrument he owns/plays. Include but note it's a played instrument (some may consider generic). The whip is the strongest. Include both whip and gusli; Burko horse too.
+- Manannán lúireach: it's a common noun (body-armour) but specifically attested as HIS in OCT; I'll include with term=lúireach, name="Manannán's corslet/body-armour." Borderline on "named" but it's a distinct attested artifact. I'll keep it but could be trimmed. I'll keep Cathbarr (clearly named) + the body armour.
+
+Now compiling. I'll use kebab-case item ids, native scripts/terms, romanizations, and cite the primary source/scholarship for each.
+
+Let me write the final formatted output.
+
+---
+
+Research complete. Below are the verified missing items, grouped by exact roster figure_id. Each was checked against the relevant primary text (Prose/Poetic Edda, Táin/Ulster & Mythological cycles, the Mabinogi, the Kalevala, the bylina tradition) and cross-referenced across multiple sources. Items already in `currentItems` are not repeated. Unverifiable or genuinely unnamed candidates were dropped (notes at the end).
+
+=== norse_odin (Odin)
+norse_odin :: ITEM hlidskjalf | name=Hliðskjálf (the high-seat) | term=Hliðskjálf | script=Old Norse | rom=Hliðskjálf | kind=regalia | role=owner | gloss=all-seeing high-seat surveying every world | src=Prose Edda, Gylfaginning 17 & prose of Grímnismál/Skírnismál
+norse_odin :: ITEM geri-ok-freki | name=Geri and Freki | term=Geri ok Freki | script=Old Norse | rom=Geri ok Freki | kind=artifact | role=owner | gloss=Odin's two attendant wolves, fed at his table | src=Poetic Edda, Grímnismál 19; Prose Edda, Gylfaginning 38
+
+=== norse_freyr (Freyr)
+norse_freyr :: ITEM blodughofi | name=Blóðughófi ("Bloody-Hoof") | term=Blóðughófi | script=Old Norse | rom=Blóðughófi | kind=mount | role=owner | gloss=Freyr's steed that runs through fire | src=Prose Edda Nafnaþulur; Kálfsvísa (rider = "Slayer of Beli")
+
+=== irish_lugh (Lugh)
+irish_lugh :: ITEM failinis | name=Failinis (Lugh's hound) | term=Failinis | script=Irish | rom=Failinis | kind=artifact | role=owner | gloss=invincible hound exacted from the sons of Tuireann | src=Oidheadh Chloinne Tuireann; the dúan "Dám Thrír Táncatair Ille"; Acallam na Senórach
+
+=== irish_manannan (Manannán mac Lir)
+irish_manannan :: ITEM cathbarr | name=Cathbarr (Manannán's helmet) | term=Cathbarr | script=Irish | rom=Cathbarr | kind=armor | role=owner | gloss=gem-set helmet, later lent to Lugh | src=Oidheadh Chloinne Tuireann
+irish_manannan :: ITEM luireach-manannain | name=Manannán's corslet/body-armour | term=lúireach | script=Irish | rom=lúireach | kind=armor | role=owner | gloss=impenetrable body-armour lent to Lugh | src=Oidheadh Chloinne Tuireann
+irish_manannan :: ITEM mucca-mhannanain | name=Manannán's swine | term=Mucca Mhannanáin | script=Irish | rom=Mucca Mhannanáin | kind=artifact | role=owner | gloss=pigs that regenerate when eaten, granting immortality | src=Mythological Cycle (Tuatha Dé feast tradition); cf. Altram Tige Dá Medar
+
+=== irish_cuchulainn (Cú Chulainn)
+irish_cuchulainn :: ITEM cruaidin-catutchenn | name=Cruaidín Catutchenn ("Hard-headed Steeling") | term=Cruaidín Catutchenn | script=Irish | rom=Cruaidín Catutchenn | kind=weapon | role=wielder | gloss=his sword with gold hilt, glows at night | src=Aided Guill meic Carbada; Mesca Ulad tradition
+irish_cuchulainn :: ITEM del-chliss | name=Del Chliss | term=Del Chliss | script=Irish | rom=Del Chliss | kind=weapon | role=wielder | gloss=split-shaft javelin/goad; slew Nechtan Scéne's sons | src=Táin Bó Cúailnge (Macgnímrada Con Culainn)
+irish_cuchulainn :: ITEM duban-shield | name=Dubán ("Blackie") | term=Dubán | script=Irish | rom=Dubán | kind=armor | role=owner | gloss=his black shield, made by Mac Endge | src=Ulster Cycle shield-anecdote; cf. Táin
+irish_cuchulainn :: ITEM liath-macha | name=Liath Macha ("the Grey of Macha") | term=Liath Macha | script=Irish | rom=Liath Macha | kind=mount | role=owner | gloss=chief chariot-horse; wept blood at his death | src=Táin Bó Cúailnge; Aided Con Culainn
+irish_cuchulainn :: ITEM dub-sainglend | name=Dub Sainglend ("the Black of Saingliu") | term=Dub Sainglend | script=Irish | rom=Dub Sainglend | kind=mount | role=owner | gloss=his second chariot-horse | src=Táin Bó Cúailnge; Aided Con Culainn
+
+=== welsh_rhiannon (Rhiannon)
+welsh_rhiannon :: ITEM bag-of-rhiannon | name=Rhiannon's magic bag | term=cod (Rhiannon) | script=Welsh | rom=— | kind=artifact | role=owner | gloss=bag that can never be filled; traps Gwawl | src=First Branch of the Mabinogi (Pwyll)
+
+=== finnish_ilmarinen (Ilmarinen)
+finnish_ilmarinen :: ITEM golden-bride-ilmarinen | name=The Golden Bride/Maiden | term=kultainen neito | script=Finnish | rom=kultainen neito | kind=artifact | role=maker | gloss=gold-and-silver woman he forged, but lifeless | src=Kalevala, Runo 37
+finnish_ilmarinen :: ITEM golden-plough-ilmarinen | name=The Golden Plough | term=kultainen aura | script=Finnish | rom=kultainen aura | kind=artifact | role=maker | gloss=golden plough drawn from his forge | src=Kalevala, Runo 10
+
+=== finnish_vainamoinen (Väinämöinen)
+finnish_vainamoinen :: ITEM birch-kantele | name=The birch-wood kantele | term=koivuinen kantele | script=Finnish | rom=koivuinen kantele | kind=instrument | role=maker | gloss=second kantele, made of birch after first sank | src=Kalevala, Runo 44 (first/pike-bone kantele lost, Runo 40–41)
+
+=== finnish_kullervo (Kullervo)
+finnish_kullervo :: ITEM kullervo-knife | name=Kullervo's heirloom knife | term=puukko (Kalervon) | script=Finnish | rom=puukko | kind=weapon | role=owner | gloss=his father's knife; breaks on baked-in stone | src=Kalevala, Runo 33
+
+=== slavic_ilya_muromets (Ilya Muromets)
+slavic_ilya_muromets :: ITEM burushka | name=Burushka Kosmatushka | term=Бурушка Косматушка | script=Russian | rom=Burushka Kosmatushka | kind=mount | role=owner | gloss=his shaggy heroic warhorse | src=Russian byliny (Ilya Muromets cycle)
+
+=== slavic_dobrynya_nikitich (Dobrynya Nikitich)
+slavic_dobrynya_nikitich :: ITEM dobrynya-silk-whip | name=Silken whip (Shemakhan whip) | term=шёлковая плеть | script=Russian | rom=shyolkovaya plet' | kind=weapon | role=wielder | gloss=braided-silk whip; smites the dragon's blood-flood | src=Russian byliny (Dobrynya and the Dragon)
+slavic_dobrynya_nikitich :: ITEM dobrynya-gusli | name=Dobrynya's gusli | term=гусли | script=Russian | rom=gusli | kind=instrument | role=owner | gloss=stringed instrument marking his courtly refinement | src=Russian byliny (Dobrynya cycle; Dobrynya & Marinka / wedding-feast)
+slavic_dobrynya_nikitich :: ITEM burko-horse | name=Burko | term=Бурко | script=Russian | rom=Burko | kind=mount | role=owner | gloss=his heirloom horse for the dragon quest | src=Russian byliny (Dobrynya and the Dragon)
+
+---
+
+Notes / deliberately dropped (no verifiable proper-named item):
+- **norse_sigi**: no item of his own; the dynasty's sword Gram belongs to Sigmund (not in roster).
+- **norse_njord**: only Nóatún (a hall/place, not a portable named item) is attested — excluded.
+- **norse_thor**: all his named items (Mjǫllnir, Megingjǫrð, Járngreipr, the goats, Gríðarvǫlr) are already present.
+- **slavic_veles / slavic_mokosh**: no NAMED object in primary sources (Veles' horns and Mokosh's spindle/distaff are reconstruction/iconography, not attested named artifacts).
+- **slavic_perun**: "Perun's arrows"/thunder-stones are a folklore class, not one named item; his axe is already present.
+- **welsh figures (Pwyll, Pryderi, Manawydan, Math, Arianrhod, Llyr, etc.)**: the golden bowl (3rd Branch) is Llwyd's trap, not their possession; Pryderi's Annwfn pigs are unnamed; Arianrhod/Caer Arianrhod is a place; Math's wand already present. No new named items.
+- **irish_fraech**: the salmon-swallowed thumb-ring (Táin Bó Fraích) is attested but unnamed; the harp Uaithne belongs to the Dagda (not in roster).
+- **finnish_lemminkäinen / finnish_aino, irish_mongan, irish_be_find, irish_connla**: their attested objects are either unnamed (Lemminkäinen's blood-warning comb/brush; mail-shirt) or already present (Connla's ring). Dropped.
+
+One borderline judgment you may want to confirm: I included Manannán's lúireach (body-armour) and Väinämöinen's birch kantele even though the former is a common-noun term and the latter overlaps the roster's generic "kantele" — both are nonetheless distinct attested artifacts. If you want strict proper-name-only, drop `luireach-manannain` and `birch-kantele`.

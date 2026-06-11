@@ -1,0 +1,1692 @@
+I have everything I need. Notable nuance: Tsetse (the lightning) is sometimes feminine in the retellings; I'll note that gender is unrecorded/variable. Now I'll author the registry. Here's my plan for ~24 figures, balanced across the five traditions:
+
+- **Ewe (5):** Mawu-Lisa (pair-deity), Mawu, Lisa, So/Sogbo (thunder), Nana Buluku (primordial), Se (destiny) — that's 6, I'll trim to 5 by keeping the strongest.
+- **Kuba (5):** Mbombo/Bumba, Nyonye Ngana, Chonganda, Chedi Bumba, Woot (demigod culture-hero), Mweel — pick 5.
+- **Fang (5):** Mebege, Nzame, Mebere, Nkwa, Fam (demigod/first-man), Sekume (progenitor), Mbongwe — pick 5.
+- **Lugbara (5):** Adroa, Adro, Adroanzi, Gborogboro, Meme, Jaki, Dribidu — pick 5.
+- **Tiv (4):** Aondo, Tiv (eponymous ancestor/mortal), Takuruku (progenitor/mortal), Akombo (deity-class forces, explained in notes).
+
+That's 24. Let me write the JSON now.
+
+```json
+[
+  {
+    "id": "ewe_mawu_lisa",
+    "name": {
+      "primary": "Twofold Creator Pair",
+      "alt": ["Mawu-Lisa", "Mawu Sogbo Lisa"],
+      "transliterations": { "ewe": "Mawu-Lisa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ewe",
+    "primaryTradition": "Ewe",
+    "sex": "dual",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Mawu-Lisa", "script": "Latn", "rom": "Mawu-Lisa" },
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey: An Ancient West African Kingdom. New York: J.J. Augustin, 1938, vol. 2, pp. 101-105." }
+        ]
+      },
+      {
+        "sphereId": "sun-and-moon",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "\"Fon and Ewe Religion.\" Encyclopedia of Religion, 2nd ed., ed. Lindsay Jones. Detroit: Macmillan Reference, 2005." }
+        ]
+      },
+      {
+        "sphereId": "cosmic-order",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. Leipzig: Dieterich, 1911." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_the_world",
+        "name": "brings the ordered world into being",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As a complementary female-male pair (Mawu the moon/night, Lisa the sun/day), the conjoined creator orders the cosmos and apportions destiny; the two are often invoked together as a single force, simply 'Mawu'.",
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 101-110." }
+        ]
+      },
+      {
+        "id": "apportion_day_and_night",
+        "name": "divides day from night between the pair",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Lisa governs the day and heat (the sun), Mawu the night and coolness (the moon); their union is invoked at eclipse.",
+        "sources": [
+          { "kind": "tertiary", "reference": "\"Mawu-Lisa.\" Encyclopedia of Religion, 2nd ed. Detroit: Macmillan Reference, 2005." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Among most Ewe (and the neighbouring Fon), Mawu-Lisa is the high creator conceived as a complementary female-male pair, sometimes invoked as the single deity Mawu.",
+        "citations": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey: An Ancient West African Kingdom. 1938, vol. 2." },
+          { "kind": "tertiary", "reference": "\"Fon and Ewe Religion.\" Encyclopedia of Religion, 2nd ed., 2005." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Mawu is associated with the moon, night and coolness; Lisa with the sun, day and heat.",
+        "citations": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. Leipzig, 1911." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "The Ewe high god is most often the dual pair Mawu-Lisa, frequently elided into the single name Mawu (glossed by some Ewe as 'maa-wu-wo', 'he/she who will not kill you'). Distinct from Fon Vodun in that Ewe usage emphasizes Mawu as a near-monotheistic supreme being and frames the thunder vodu as So/Sogbo rather than the Fon Xevioso. Typed deity (high creator)."
+  },
+  {
+    "id": "ewe_mawu",
+    "name": {
+      "primary": "Supreme Sky Mother",
+      "alt": ["Mawu", "Se"],
+      "transliterations": { "ewe": "Mawu" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ewe",
+    "primaryTradition": "Ewe",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Mawu", "script": "Latn", "rom": "Mawu" },
+        "sources": [
+          { "kind": "secondary", "reference": "Gaba, Christian R. \"The Idea of a Supreme Being among the Anlo People of Ghana.\" Journal of Religion in Africa 2, no. 1 (1969): 64-79." }
+        ]
+      },
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 101-105." }
+        ]
+      },
+      {
+        "sphereId": "destiny",
+        "contextTag": "lifelong",
+        "term": { "value": "Se", "script": "Latn", "rom": "Se" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fiawoo, D.K. \"From Cult to 'Church': A Study of Some Aspects of Religious Change in Ghana.\" Ghana Journal of Sociology 4, no. 2 (1968)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fix_personal_destiny",
+        "name": "fixes each person's destiny before birth",
+        "term": { "value": "Se", "script": "Latn", "rom": "Se" },
+        "inheritability": "unique",
+        "notes": "In the aspect Mawu-Se (Dzogbe-Se), the supreme being allots each individual a pre-natal destiny that shapes their life path; Se also denotes law and order.",
+        "sources": [
+          { "kind": "secondary", "reference": "Gaba, Christian R. Journal of Religion in Africa 2, no. 1 (1969): 64-79." }
+        ]
+      },
+      {
+        "id": "uphold_the_sky",
+        "name": "holds up and orders the heavens",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As remote sky-dweller Mawu rarely intervenes directly, acting through the trɔwo (lesser deities) and the dead.",
+        "sources": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. 1911." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mawu is the Ewe supreme being, a creator-sky deity often regarded as near-monotheistic and identified with destiny (Se).",
+        "citations": [
+          { "kind": "secondary", "reference": "Gaba, Christian R. \"The Idea of a Supreme Being among the Anlo People of Ghana.\" Journal of Religion in Africa 2, no. 1 (1969): 64-79." },
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. Leipzig, 1911." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Some Ewe gloss the name Mawu as 'the one who will not kill', stressing the deity's benevolence.",
+        "citations": [
+          { "kind": "tertiary", "reference": "\"Mawu-Lisa.\" Encyclopedia of Religion, 2nd ed., 2005." }
+        ],
+        "weight": "tertiary"
+      }
+    ],
+    "notes": "When invoked alone, Mawu is the female supreme being (moon, night) and the head of the Ewe pantheon; in the pair Mawu-Lisa the name is also used for the conjoined creator. The native term goes in `term`; the etymological gloss is given in notes per schema rule 1. Typed deity."
+  },
+  {
+    "id": "ewe_lisa",
+    "name": {
+      "primary": "Sun Lord of Day",
+      "alt": ["Lisa"],
+      "transliterations": { "ewe": "Lisa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ewe",
+    "primaryTradition": "Ewe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": { "value": "Lisa", "script": "Latn", "rom": "Lisa" },
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 101-103." }
+        ]
+      },
+      {
+        "sphereId": "heat-and-strength",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "\"Fon and Ewe Religion.\" Encyclopedia of Religion, 2nd ed., 2005." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_day",
+        "name": "governs the daytime sun and its heat",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Male principle of the creator pair; bestows strength and endurance, complementing Mawu's coolness and wisdom.",
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Lisa is the male, solar half of the Ewe-Fon creator pair Mawu-Lisa, associated with the sun, day, heat and strength.",
+        "citations": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey: An Ancient West African Kingdom. 1938, vol. 2, pp. 101-105." },
+          { "kind": "tertiary", "reference": "\"Mawu-Lisa.\" Encyclopedia of Religion, 2nd ed., 2005." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Counterpart to Mawu; in some accounts Lisa is Mawu's twin or son rather than husband. Typed deity (solar)."
+  },
+  {
+    "id": "ewe_so",
+    "name": {
+      "primary": "Thunder God of the Storm",
+      "alt": ["So", "Sogbo", "Heviesso", "Xebieso"],
+      "transliterations": { "ewe": "So", "anlo_ewe": "Heviesso" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ewe",
+    "primaryTradition": "Ewe",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["ewe_mawu_lisa"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "thunder-and-lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "So", "script": "Latn", "rom": "So" },
+        "sources": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. Leipzig, 1911." }
+        ]
+      },
+      {
+        "sphereId": "rain",
+        "contextTag": "lifelong",
+        "term": { "value": "Sogbo", "script": "Latn", "rom": "Sogbo" },
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 150-155." }
+        ]
+      },
+      {
+        "sphereId": "divine-justice",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Rosenthal, Judy. Possession, Ecstasy, and Law in Ewe Voodoo. Charlottesville: University Press of Virginia, 1998, pp. 60-70." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl_the_thunderbolt",
+        "name": "hurls the thunderbolt as a stone axe",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Strikes the earth with a thunder-axe (neolithic celts found in fields were taken to be So's fallen 'thunderstones'); kills the guilty and oath-breakers.",
+        "sources": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. 1911." }
+        ]
+      },
+      {
+        "id": "send_the_fertilizing_rain",
+        "name": "sends the rains that fertilize the land",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As Sogbo the thunder-and-sea aspect, brings life-giving rain as well as destructive storm.",
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "so_thunder_axe",
+        "kind": "weapon",
+        "name": "thunder-axe (thunderstone)",
+        "term": { "value": "", "script": "", "rom": "" },
+        "role": "The polished stone celt with which So strikes; recovered prehistoric axe-heads are kept on his shrines as relics of his bolts.",
+        "notes": "Attested as the thunder-god's weapon and as physical cult objects on So/Heviesso shrines.",
+        "sources": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. 1911." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "So (Sogbo; Anlo Heviesso/Xebieso) is the Ewe thunder-and-lightning vodu, a child of the creator pair, who brings rain and punishes wrongdoers with the thunderbolt.",
+        "citations": [
+          { "kind": "secondary", "reference": "Spieth, Jakob. Die Religion der Eweer in Süd-Togo. Leipzig, 1911." },
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 150-155." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The Ewe thunder cult is organized as the exclusive Yewe (Yeʋe) fraternity, whose initiates receive new names and serve the thunder deities.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gilbert, Michelle. \"The Sudden Death of a Millionaire: Conversion and Consensus in a Ghanaian Kingdom.\" Africa 58, no. 3 (1988)." },
+          { "kind": "secondary", "reference": "Rosenthal, Judy. Possession, Ecstasy, and Law in Ewe Voodoo. 1998." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "The Ewe thunder god is properly So/Sogbo (Anlo: Heviesso, Xebieso), deliberately listed under the Ewe tradition and kept distinct from the Fon Vodun Xevioso/Hevioso. The English word leads name.primary; native forms in `term`/alt. Spirit-class deity per schema (typed deity, explained here)."
+  },
+  {
+    "id": "ewe_nana_buluku",
+    "name": {
+      "primary": "Primordial Grandmother of the Gods",
+      "alt": ["Nana Buluku", "Nana Bukú"],
+      "transliterations": { "ewe": "Nana Buluku" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ewe",
+    "primaryTradition": "Ewe",
+    "sex": "dual",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "primordial-origin",
+        "contextTag": "lifelong",
+        "term": { "value": "Nana Buluku", "script": "Latn", "rom": "Nana Buluku" },
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 101-102." }
+        ]
+      },
+      {
+        "sphereId": "ancestral-wisdom",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "tertiary", "reference": "\"Fon and Ewe Religion.\" Encyclopedia of Religion, 2nd ed., 2005." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "engender_the_creator_pair",
+        "name": "gives birth to the twin creator pair",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The androgynous first being who bore the twins Mawu and Lisa, then withdrew, leaving the ordering of the world to them.",
+        "sources": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey. 1938, vol. 2, pp. 101-102." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "In Ewe-Fon cosmology Nana Buluku is the androgynous primordial being who gave birth to the creator twins Mawu and Lisa and then withdrew from the world.",
+        "citations": [
+          { "kind": "secondary", "reference": "Herskovits, Melville J. Dahomey: An Ancient West African Kingdom. 1938, vol. 2, pp. 101-102." },
+          { "kind": "tertiary", "reference": "\"Mawu-Lisa.\" Encyclopedia of Religion, 2nd ed., 2005." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Deus otiosus standing behind the creator pair; 'Nana' is an honorific for an aged grandparent/ancestor. Typed deity (primordial)."
+  },
+  {
+    "id": "kuba_mbombo",
+    "name": {
+      "primary": "Vomiting Creator God",
+      "alt": ["Mbombo", "Bumba"],
+      "transliterations": { "kuba": "Mbombo", "bushongo": "Bumba" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kuba",
+    "primaryTradition": "Kuba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Mbombo", "script": "Latn", "rom": "Mbombo" },
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Notes ethnographiques sur les peuples communément appelés Bakuba, ainsi que sur les peuplades apparentées: Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 20-21." }
+        ]
+      },
+      {
+        "sphereId": "sky-and-cosmos",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot: A History of the Kuba Peoples. Madison: University of Wisconsin Press, 1978, pp. 30-32." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "vomit_the_cosmos",
+        "name": "vomits forth the sun, moon and living things",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Alone in primordial darkness and water, Bumba, in pain, vomited up first the sun (which dried the waters and made land), then the moon and stars, then nine animals, and finally human beings.",
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels, 1910, pp. 20-21." }
+        ]
+      },
+      {
+        "id": "set_the_waters_apart",
+        "name": "separates the dry land from the primal water",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The vomited sun evaporated the universal water, exposing the first dry hills.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978, pp. 30-32." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mbombo (Bumba) is the Kuba/Bushongo creator who, alone in darkness over the primal waters, vomited up the sun, moon, stars, nine animals and humankind.",
+        "citations": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 20-21." },
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot: A History of the Kuba Peoples. Madison, 1978." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Mbombo is described as a giant white being who had long been ill/lonely before the act of creation.",
+        "citations": [
+          { "kind": "tertiary", "reference": "\"Mbombo.\" In encyclopaedic surveys of Bushongo religion summarizing Torday & Joyce (1910)." }
+        ],
+        "weight": "tertiary"
+      }
+    ],
+    "notes": "Title 'chembe' is sometimes used for the creator in Bushongo. Native names go in `term`/alt; the English descriptor leads name.primary. Typed deity (creator)."
+  },
+  {
+    "id": "kuba_woot",
+    "name": {
+      "primary": "First-Man Culture Hero",
+      "alt": ["Woot", "Woto"],
+      "transliterations": { "kuba": "Woot" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kuba",
+    "primaryTradition": "Kuba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["kuba_mbombo"],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "culture-and-civilization",
+        "contextTag": "lifelong",
+        "term": { "value": "Woot", "script": "Latn", "rom": "Woot" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot: A History of the Kuba Peoples. Madison: University of Wisconsin Press, 1978, pp. 31-34." }
+        ]
+      },
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. Geschiedenis van de Kuba. Tervuren: Musée Royal de l'Afrique Centrale, 1963." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "name_all_things",
+        "name": "gives names to all the animals and things of the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Woot named the creatures Mbombo had brought forth and is credited with introducing the arts of civilization to the Kuba.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978, pp. 31-34." }
+        ]
+      },
+      {
+        "id": "found_the_peoples",
+        "name": "fathers the founding ancestors of the Kuba peoples",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "After incest with his sister Mweel he was driven from the first village; on his migration he begot the ancestors of the central Kuba and Lele groups, so the Kuba call themselves the 'Children of Woot' and their king (nyim) his descendant.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978, p. 32." }
+        ]
+      },
+      {
+        "id": "withhold_and_restore_light",
+        "name": "takes away and then restores the daylight",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "In versions of the myth Woot, in anger, hides the sun and brings darkness/drought, later relenting; an episode marking his power over the natural order.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Woot is the Kuba culture-hero and first man who named all things, committed incest with his sister Mweel, migrated, and became ancestor of the Kuba peoples and source of royal legitimacy.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot: A History of the Kuba Peoples. Madison: University of Wisconsin Press, 1978, pp. 31-34." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "The Kuba are known as the 'Children of Woot' and the king (nyim) is regarded as Woot's descendant.",
+        "citations": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978." },
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels, 1910." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Culture-hero / progenitor tier: typed demigod (first man and divine ancestor, son of the creator Mbombo) per the schema's instruction to use demigod for culture-heroes and explain here. His sister-wife is Mweel."
+  },
+  {
+    "id": "kuba_nyonye_ngana",
+    "name": {
+      "primary": "Ant-Bringing Son of the Creator",
+      "alt": ["Nyonye Ngana"],
+      "transliterations": { "kuba": "Nyonye Ngana" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kuba",
+    "primaryTradition": "Kuba",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["kuba_mbombo"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "soil-and-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Nyonye Ngana", "script": "Latn", "rom": "Nyonye Ngana" },
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 21-22." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "vomit_the_white_ants",
+        "name": "vomits forth the white ants that enrich the soil",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "First of Bumba's three sons to help finish creation; he brought up the white (termite) ants and died of the effort. In gratitude the ants dug deep for dark earth to bury him, turning the barren surface sand into fertile soil.",
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels, 1910, pp. 21-22." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nyonye Ngana, a son of Bumba, completed creation by bringing forth the white ants and died; the ants buried him and made the barren earth fertile.",
+        "citations": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 21-22." },
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "One of the three creator-sons who finish the world after Mbombo. Typed deity (origin of fertile soil)."
+  },
+  {
+    "id": "kuba_chonganda",
+    "name": {
+      "primary": "Plant-Originating Son of the Creator",
+      "alt": ["Chonganda", "Tsonganda"],
+      "transliterations": { "kuba": "Chonganda" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kuba",
+    "primaryTradition": "Kuba",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["kuba_mbombo"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "vegetation",
+        "contextTag": "lifelong",
+        "term": { "value": "Chonganda", "script": "Latn", "rom": "Chonganda" },
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 21-22." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_forth_the_first_plant",
+        "name": "brings forth the first plant from which all flora spring",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The second son of Bumba; he created the first plant, the source of all trees, grasses and flowers.",
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels, 1910, pp. 21-22." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Chonganda, second son of Bumba, created the first plant, ancestor of all vegetation.",
+        "citations": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 21-22." },
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Second of Mbombo's three creator-sons. Typed deity (origin of plants)."
+  },
+  {
+    "id": "kuba_tsetse_bumba",
+    "name": {
+      "primary": "Lightning Spirit Cast into the Sky",
+      "alt": ["Tsetse Bumba", "Tsetse"],
+      "transliterations": { "kuba": "Tsetse Bumba" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kuba",
+    "primaryTradition": "Kuba",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": ["kuba_mbombo"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "Tsetse Bumba", "script": "Latn", "rom": "Tsetse Bumba" },
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 21-23." }
+        ]
+      },
+      {
+        "sphereId": "fire",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978, pp. 31-32." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "strike_with_lightning",
+        "name": "strikes the earth with lightning bolts",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Among the nine creatures vomited by Bumba, Tsetse was so troublesome that Bumba drove it into the sky, where it became lightning; it still strikes the earth in frustration, and from it humans learned to make fire.",
+        "sources": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels, 1910, pp. 21-23." }
+        ]
+      },
+      {
+        "id": "give_fire_to_people",
+        "name": "becomes the source from which people take fire",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Lightning kindling trees gave humankind its first fire in the Bushongo account.",
+        "sources": [
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Tsetse, one of the nine creatures Bumba vomited, was driven into the sky where it became lightning and the source of fire on earth.",
+        "citations": [
+          { "kind": "primary", "reference": "Torday, Emil, and T.A. Joyce. Les Bushongo. Brussels: Musée du Congo Belge, 1910, pp. 21-23." },
+          { "kind": "secondary", "reference": "Vansina, Jan. The Children of Woot. 1978." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Gender is not consistently recorded (some retellings render Tsetse as 'she'), hence sex 'unknown'. Lightning personified; typed deity (storm/fire) and explained here."
+  },
+  {
+    "id": "fang_mebege",
+    "name": {
+      "primary": "Self-Begetting Creator God",
+      "alt": ["Mebege", "Mebeghe", "Mebere"],
+      "transliterations": { "fang": "Mebege" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Mebege", "script": "Latn", "rom": "Mebege" },
+        "sources": [
+          { "kind": "primary", "reference": "Tessmann, Günter. Die Pangwe: Völkerkundliche Monographie eines westafrikanischen Negerstammes. Berlin: Wasmuth, 1913, vol. 2." }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton: Princeton University Press, 1982, pp. 321-330." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "form_the_cosmic_egg",
+        "name": "forms the cosmic egg from parts of his own body",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Alone over the primordial waters with only the spider Dibobia, Mebege took a hair, the brain and a pebble from himself, fashioned an egg, and from it brought forth the beings that shaped earth, sky and water.",
+        "sources": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982, pp. 321-330." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mebege is the Fang creator god who, alone over the primal waters with the spider Dibobia, made a cosmic egg from parts of his own body and from it produced the first beings.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton, 1982, pp. 321-330." },
+          { "kind": "primary", "reference": "Tessmann, Günter. Die Pangwe. Berlin, 1913, vol. 2." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "In Bwiti and some Fang accounts the creator is Mebege; in others the creator/trinity is named Nzame. The names overlap and the divine principle is often spoken of as a triad (see Nzame, Mebere, Nkwa). Typed deity (creator)."
+  },
+  {
+    "id": "fang_nzame",
+    "name": {
+      "primary": "Supreme Creator of the Threefold Godhead",
+      "alt": ["Nzame", "Nsame", "Zambe"],
+      "transliterations": { "fang": "Nzame" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Nzame", "script": "Latn", "rom": "Nzame" },
+        "sources": [
+          { "kind": "primary", "reference": "Tessmann, Günter. Die Pangwe. Berlin: Wasmuth, 1913, vol. 2." }
+        ]
+      },
+      {
+        "sphereId": "rulership-and-power",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982, pp. 321-335." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_and_unmake_the_world",
+        "name": "creates the world and destroys it when humanity rebels",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Nzame, with Mebere and Nkwa, made the universe and the first man Fam; when Fam grew proud and impious, Nzame destroyed the surface of the earth with fire, then re-created it and made a new, mortal man, Sekume.",
+        "sources": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982." }
+        ]
+      },
+      {
+        "id": "appoint_the_ruler_of_creatures",
+        "name": "appoints a chief to rule over the animals",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "The threefold god set the first man over all living things as their master.",
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London: Aquarian/Diamond, 1990, s.v. 'Nzame'." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nzame is the Fang supreme creator, often conceived as a trinity with Mebere and Nkwa, who made the world and the first man Fam.",
+        "citations": [
+          { "kind": "primary", "reference": "Tessmann, Günter. Die Pangwe. Berlin, 1913, vol. 2." },
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton, 1982." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "When the first man Fam became impious, Nzame destroyed the earth and re-created it, making a new mortal man.",
+        "citations": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Head of the Fang creator triad Nzame–Mebere–Nkwa. Cognate forms (Zambe, Nsambe) occur across Beti-Pahuin (Bulu, Ewondo). Typed deity (supreme creator)."
+  },
+  {
+    "id": "fang_mebere",
+    "name": {
+      "primary": "Maker of the First Man",
+      "alt": ["Mebere", "Mébère"],
+      "transliterations": { "fang": "Mebere" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "authority-and-leadership",
+        "contextTag": "lifelong",
+        "term": { "value": "Mebere", "script": "Latn", "rom": "Mebere" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982, pp. 321-335." }
+        ]
+      },
+      {
+        "sphereId": "fashioning-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. 'Nzame'." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "shape_the_first_human_from_clay",
+        "name": "shapes the first human body from earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "As the second person of the creator triad Mebere modeled the first man from clay in the likeness of Nzame and endowed him with the gift of leadership.",
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Mebere is the second member of the Fang creator triad, associated with authority and the fashioning of the first man.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982, pp. 321-335." },
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Second person of the Nzame–Mebere–Nkwa triad (sometimes the triad is given as Nzame–Mebere–Nkwa, sometimes the names are reordered). Typed deity (creator-aspect)."
+  },
+  {
+    "id": "fang_nkwa",
+    "name": {
+      "primary": "Spirit of Beauty and Harmony",
+      "alt": ["Nkwa", "Nkva"],
+      "transliterations": { "fang": "Nkwa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "beauty",
+        "contextTag": "lifelong",
+        "term": { "value": "Nkwa", "script": "Latn", "rom": "Nkwa" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982, pp. 321-335." }
+        ]
+      },
+      {
+        "sphereId": "harmony",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. 'Nzame'." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "endow_with_beauty",
+        "name": "endows the first man with beauty",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Third person of the creator triad; from Nkwa the first man Fam received beauty, completing the gifts of strength (Nzame) and leadership (Mebere).",
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Nkwa is the third member of the Fang creator triad, embodying beauty and harmony, who gave the first man his beauty.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982, pp. 321-335." },
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Sex is variously reported; commonly the 'beauty' aspect is feminine. Third person of the Nzame–Mebere–Nkwa triad. Typed deity (creator-aspect)."
+  },
+  {
+    "id": "fang_sekume",
+    "name": {
+      "primary": "Mortal First Ancestor",
+      "alt": ["Sekume", "Sékoumé"],
+      "transliterations": { "fang": "Sekume" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Sekume", "script": "Latn", "rom": "Sekume" },
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990, s.v. 'Nzame'." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "fashion_the_first_woman",
+        "name": "fashions the first woman from a tree",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not-inheritable",
+        "notes": "Made by Nzame after the destruction of the first world, the mortal Sekume formed his wife Mbongwe from a tree at the god's instruction; from them descend the Fang.",
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Sekume is the second, mortal man created by Nzame after the first world's destruction; with his wife Mbongwe (made from a tree) he is the ancestor of the Fang.",
+        "citations": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. 'Nzame'." },
+          { "kind": "secondary", "reference": "Fernandez, James W. Bwiti. Princeton, 1982." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Progenitor tier: typed demigod (god-made first ancestor, mortal by design, contrasted with the immortal but cursed Fam). His wife is Mbongwe."
+  },
+  {
+    "id": "fang_fam",
+    "name": {
+      "primary": "Proud Immortal First Man",
+      "alt": ["Fam"],
+      "transliterations": { "fang": "Fam" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Fang",
+    "primaryTradition": "Fang",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "dominion-over-animals",
+        "contextTag": "lifelong",
+        "term": { "value": "Fam", "script": "Latn", "rom": "Fam" },
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990, s.v. 'Nzame'." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_over_all_creatures",
+        "name": "rules as master over all the animals",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not-inheritable",
+        "notes": "Endowed by the triad with strength, leadership and beauty, Fam was set over all living things but grew arrogant, ceased to honour Nzame, and was punished; though the earth was destroyed he kept the immortality he had been promised and is said to lurk beneath the world causing misfortune.",
+        "sources": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Fam is the first man created by the Fang triad, endowed with strength, leadership and beauty and set over the animals, who became impious and was punished but retained immortality.",
+        "citations": [
+          { "kind": "secondary", "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. 'Nzame'." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "First-man tier preceding Sekume; typed demigod (divinely created proto-human). Cited chiefly via the widely reproduced Fang creation narrative collected in the early 20th century (Trilles/Tessmann tradition) as compiled by Knappert."
+  },
+  {
+    "id": "lugbara_adroa",
+    "name": {
+      "primary": "Transcendent Sky Creator",
+      "alt": ["Adroa", "Adro 'ba o'bapiri"],
+      "transliterations": { "lugbara": "Adroa" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lugbara",
+    "primaryTradition": "Lugbara",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Adroa", "script": "Latn", "rom": "Adroa" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion: Ritual and Authority among an East African People. London: Oxford University Press for the International African Institute, 1960, pp. 27-30." }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 252-256." }
+        ]
+      },
+      {
+        "sphereId": "moral-order",
+        "contextTag": "lifelong",
+        "term": { "value": "onyiru", "script": "Latn", "rom": "onyiru" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_and_withdraw",
+        "name": "creates the world and then withdraws on high",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Adroa is the remote, good (onyiru) sky aspect of the single creator; having made the world he withdrew above and is now approached only through the dead and diviners.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 27-30, 252-256." }
+        ]
+      },
+      {
+        "id": "appear_as_half_a_body",
+        "name": "appears to the dying as a being of half a body",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Adroa is said to show himself, tall and white, with one eye, one arm, one leg, to those about to die.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Adroa is the transcendent, remote, good sky aspect of the single Lugbara creator deity, who made the world and then withdrew, approached only through intermediaries.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion: Ritual and Authority among an East African People. London, 1960, pp. 27-30, 252-256." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Adroa is pictured as appearing to the dying as a tall white being with only half a body.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." },
+          { "kind": "tertiary", "reference": "\"Adroa.\" The Oxford Dictionary of African Mythology / Oxford Reference." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Adroa (the 'good in the sky', Adro 'ba o'bapiri = 'the creator of men') is the transcendent half of one creator god whose immanent half is Adro. Typed deity (transcendent creator). Documented by John Middleton's 1960 ethnography."
+  },
+  {
+    "id": "lugbara_adro",
+    "name": {
+      "primary": "Immanent Earthly God of the Bushland",
+      "alt": ["Adro"],
+      "transliterations": { "lugbara": "Adro" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lugbara",
+    "primaryTradition": "Lugbara",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "wild-and-bushland",
+        "contextTag": "lifelong",
+        "term": { "value": "Adro", "script": "Latn", "rom": "Adro" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 252-256." }
+        ]
+      },
+      {
+        "sphereId": "rivers-and-streams",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      },
+      {
+        "sphereId": "death-and-danger",
+        "contextTag": "lifelong",
+        "term": { "value": "onzi", "script": "Latn", "rom": "onzi" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "haunt_the_wild_places",
+        "name": "dwells in and haunts the wild places of the earth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Adro is the immanent, dangerous, 'bad' (onzi) aspect of the creator who remained on earth, living in rivers, rocks and bush; encounters with him bring sickness and death.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 252-256." }
+        ]
+      },
+      {
+        "id": "father_the_water_spirits",
+        "name": "fathers the river spirits of the wild",
+        "term": { "value": "Adroanzi", "script": "Latn", "rom": "Adroanzi" },
+        "inheritability": "unique",
+        "notes": "The Adroanzi ('Adro-children') that haunt rivers, trees and rocks are his offspring.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Adro is the immanent, dangerous earthly aspect of the Lugbara creator, dwelling in rivers, rocks and bushland and bringing sickness and death.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion: Ritual and Authority among an East African People. London, 1960, pp. 252-256." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Adro and Adroa are two aspects of a single creator: Adro immanent/earthly/dangerous, Adroa transcendent/sky/good. Typed deity (immanent aspect)."
+  },
+  {
+    "id": "lugbara_adroanzi",
+    "name": {
+      "primary": "River and Tree Guardian Spirits",
+      "alt": ["Adroanzi", "Adro-children"],
+      "transliterations": { "lugbara": "Adroanzi" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Lugbara",
+    "primaryTradition": "Lugbara",
+    "sex": "dual",
+    "vitalStatus": "immortal",
+    "parentIds": ["lugbara_adro"],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "rivers-and-trees",
+        "contextTag": "lifelong",
+        "term": { "value": "Adroanzi", "script": "Latn", "rom": "Adroanzi" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 253-255." }
+        ]
+      },
+      {
+        "sphereId": "guardianship",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "follow_and_guard_travelers",
+        "name": "secretly follows and protects night travellers",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared-among-kind",
+        "notes": "By night an Adroanzi follows a lone traveller, guarding them from beasts and bandits — but only so long as the person does not look back; whoever turns to check is killed on the spot.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 253-255." }
+        ]
+      },
+      {
+        "id": "take_serpent_form",
+        "name": "appears as little people or as water-serpents",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared-among-kind",
+        "notes": "They manifest either as small men and women or as snakes haunting rivers, pools, large trees, rocks and rain-groves.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "The Adroanzi are Lugbara nature spirits, children of Adro, haunting rivers, trees and rocks, appearing as small people or water-serpents, who guard lone night travellers unless they look back.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion: Ritual and Authority among an East African People. London, 1960, pp. 253-255." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "A spirit-class collective (the 'Adro-children'); typed deity per schema constraint, with the spirit-class status explained here. Sex 'dual' since they appear as both men and women."
+  },
+  {
+    "id": "lugbara_gborogboro",
+    "name": {
+      "primary": "First Man from the Sky",
+      "alt": ["Gborogboro"],
+      "transliterations": { "lugbara": "Gborogboro" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Lugbara",
+    "primaryTradition": "Lugbara",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": ["lugbara_adroa"],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "human-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "Gborogboro", "script": "Latn", "rom": "Gborogboro" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 231-233." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "begin_the_human_line",
+        "name": "begins the line of humankind with his twin-wife",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not-inheritable",
+        "notes": "Created by Adroa and let down from the sky, Gborogboro ('the one who comes from the sky') with Meme produced successive boy-girl twin generations whose descendants became the Lugbara.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 231-233." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Gborogboro is the first man in Lugbara myth, created by Adroa and lowered from the sky; with Meme he founds the human line.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 231-233." },
+          { "kind": "tertiary", "reference": "\"Gborogboro and Meme.\" Oxford Reference / The Oxford Companion to World Mythology." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Progenitor tier: typed demigod (sky-created first man). His name is glossed 'the person who comes from the sky'. Paired with Meme."
+  },
+  {
+    "id": "lugbara_meme",
+    "name": {
+      "primary": "First Woman Who Bore the Animals",
+      "alt": ["Meme"],
+      "transliterations": { "lugbara": "Meme" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Lugbara",
+    "primaryTradition": "Lugbara",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": ["lugbara_adroa"],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "human-origins",
+        "contextTag": "lifelong",
+        "term": { "value": "Meme", "script": "Latn", "rom": "Meme" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 231-233." }
+        ]
+      },
+      {
+        "sphereId": "origin-of-animals",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bring_forth_the_animals",
+        "name": "brings forth the wild animals from her womb",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "not-inheritable",
+        "notes": "From Meme's womb the wild animals were born — a gazelle bursting forth first — and afterwards she bore the first human twins.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 231-233." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Meme is the first woman in Lugbara myth, from whose womb the wild animals and then the first human twins were born.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 231-233." },
+          { "kind": "tertiary", "reference": "\"Gborogboro and Meme.\" Oxford Reference." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Progenitor tier: typed demigod (first woman). Name glossed 'the person who came alone'. Paired with Gborogboro; their later descendants produce the hero-ancestors Jaki and Dribidu."
+  },
+  {
+    "id": "lugbara_dribidu",
+    "name": {
+      "primary": "Hairy Hero-Ancestor and Rainmaker",
+      "alt": ["Dribidu", "Banyale"],
+      "transliterations": { "lugbara": "Dribidu" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Lugbara",
+    "primaryTradition": "Lugbara",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      {
+        "sphereId": "rainmaking",
+        "contextTag": "lifelong",
+        "term": { "value": "Dribidu", "script": "Latn", "rom": "Dribidu" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. London, 1960, pp. 233-236." }
+        ]
+      },
+      {
+        "sphereId": "founding-of-clans",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "make_the_rain",
+        "name": "calls and controls the rain",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "patrilineal",
+        "notes": "One of the two hero-ancestors, the first rainmakers, who passed knowledge of rain-medicines to their descendants.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960, pp. 233-236." }
+        ]
+      },
+      {
+        "id": "father_the_clan_founders",
+        "name": "fathers the founders of the present clans",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "patrilineal",
+        "notes": "Dribidu came into the present Lugbara land and begot many sons who founded the major clans.",
+        "sources": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion. 1960." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Dribidu ('the hairy one', also Banyale 'eater of men') is one of the two Lugbara hero-ancestors and first rainmakers, who fathered clan founders and was exiled for cannibalism, dying at Mount Eti.",
+        "citations": [
+          { "kind": "primary", "reference": "Middleton, John. Lugbara Religion: Ritual and Authority among an East African People. London, 1960, pp. 233-236." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Hero-ancestor / culture-hero tier: typed demigod. Paired with Jaki (who died at Mount Liru); together they are the founding hero-ancestors of the Lugbara who introduced rain-medicine."
+  },
+  {
+    "id": "tiv_aondo",
+    "name": {
+      "primary": "Otiose Sky Creator",
+      "alt": ["Aondo", "Aôndo"],
+      "transliterations": { "tiv": "Aondo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "term": { "value": "Aondo", "script": "Latn", "rom": "Aondo" },
+        "sources": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London: International African Institute, 1953, pp. 84-86." }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "term": { "value": "Aondo", "script": "Latn", "rom": "Aondo" },
+        "sources": [
+          { "kind": "primary", "reference": "Akiga (Benjamin Akighirga Sai). Akiga's Story: The Tiv Tribe as Seen by One of Its Members. Trans. Rupert East. London: Oxford University Press for the IAI, 1939." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "create_then_depart",
+        "name": "creates the world and then takes no further interest in it",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "unique",
+        "notes": "Aondo ('Sky') made the earth and everything in it, including the forces of good and evil, then withdrew; the Tiv say he is not much interested in them as they are not in him, and address ritual instead to the akombo forces and the dead.",
+        "sources": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London, 1953, pp. 84-86." }
+        ]
+      },
+      {
+        "id": "establish_the_akombo",
+        "name": "sets the akombo forces in the sky to regulate the world",
+        "term": { "value": "akombo", "script": "Latn", "rom": "akombo" },
+        "inheritability": "unique",
+        "notes": "Aondo is held to have established the akombo, the non-human forces that govern the cosmos (tar) and must be activated by human tsav.",
+        "sources": [
+          { "kind": "secondary", "reference": "Downes, Rupert M. Tiv Religion. Ibadan: Ibadan University Press, 1971." }
+        ]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Aondo (literally 'Sky') is the Tiv otiose creator god who made the world and its forces of good and evil, then withdrew, taking no continuing interest in human affairs.",
+        "citations": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London: International African Institute, 1953, pp. 84-86." },
+          { "kind": "secondary", "reference": "Downes, Rupert M. Tiv Religion. Ibadan, 1971." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Tiv ritual life centres not on Aondo but on the akombo (mystical forces/emblems) activated by tsav (mystical power).",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga. Akiga's Story. Trans. Rupert East. London, 1939." },
+          { "kind": "secondary", "reference": "Wegh, Shagbaor F. Between Continuity and Change: Tiv Concept of Tradition and Modernity. Lagos: OVC, 1998." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "Tiv high god, a deus otiosus; the name simply means 'sky'. The English descriptor leads name.primary, native term in `term`. Typed deity (creator)."
+  },
+  {
+    "id": "tiv_akombo",
+    "name": {
+      "primary": "Mystical Forces That Govern the World",
+      "alt": ["Akombo", "akombo a sha", "akombo a shin"],
+      "transliterations": { "tiv": "akombo" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "none",
+    "vitalStatus": "immortal",
+    "parentIds": ["tiv_aondo"],
+    "temporal": { "era": "primordial" },
+    "domains": [
+      {
+        "sphereId": "cosmic-regulation",
+        "contextTag": "lifelong",
+        "term": { "value": "akombo", "script": "Latn", "rom": "akombo" },
+        "sources": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London, 1953, p. 85." }
+        ]
+      },
+      {
+        "sphereId": "health-and-affliction",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Bohannan, Paul. \"Concepts of Time among the Tiv of Nigeria.\" Southwestern Journal of Anthropology 9, no. 3 (1953): 251-262." }
+        ]
+      },
+      {
+        "sphereId": "fertility-of-land",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Downes, Rupert M. Tiv Religion. Ibadan, 1971." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "afflict_and_repair",
+        "name": "afflicts with sickness when disturbed and restores when set right",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "shared-among-kind",
+        "notes": "The akombo, when transgressed, 'seize' a person with characteristic illnesses; rituals to 'repair the akombo' (sora akombo) put the force and the sufferer right. They are divided into akombo a sha ('of the sky', great public emblems) and akombo a shin ('of the ground', smaller domestic ones).",
+        "sources": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London, 1953, p. 85." }
+        ]
+      },
+      {
+        "id": "require_activation_by_power",
+        "name": "must be activated by human mystical power to take effect",
+        "term": { "value": "tsav", "script": "Latn", "rom": "tsav" },
+        "inheritability": "shared-among-kind",
+        "notes": "The akombo exist but lie inert until set in motion by tsav, the mystical power/substance possessed by certain people; the Tiv hold Aondo higher than both tsav and akombo.",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga. Akiga's Story. Trans. Rupert East. London, 1939." }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "akombo_emblem",
+        "kind": "ritual-object",
+        "name": "akombo emblem",
+        "term": { "value": "akombo", "script": "Latn", "rom": "akombo" },
+        "role": "Physical objects (pots, plants, carvings, iron pieces) in which an akombo force is embodied and through which it is manipulated in ritual.",
+        "notes": "The same word names both the force and its material emblem; emblems are kept and 'repaired' by their owners.",
+        "sources": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London, 1953, p. 85." }
+        ]
+      },
+      {
+        "id": "imborivungu",
+        "kind": "ritual-object",
+        "name": "owl pipe",
+        "term": { "value": "imborivungu", "script": "Latn", "rom": "imborivungu" },
+        "role": "A bone (or brass) voice-disguising flute incorporating human remains, one of the most powerful akombo, used in rites for the repair/fertility of the land and associated with tsav and the night.",
+        "notes": "Described by Akiga as kept in the elders' chest among the akombo emblems.",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga. Akiga's Story. Trans. Rupert East. London, 1939." },
+          { "kind": "secondary", "reference": "Downes, Rupert M. Tiv Religion. Ibadan, 1971." }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "claim": "The akombo are the non-human mystical forces (and the emblems embodying them) that Aondo established to regulate the Tiv cosmos; they afflict transgressors with illness and are repaired by ritual.",
+        "citations": [
+          { "kind": "primary", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. London: International African Institute, 1953, pp. 84-86." },
+          { "kind": "secondary", "reference": "Downes, Rupert M. Tiv Religion. Ibadan: Ibadan University Press, 1971." }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "Akombo are distinguished as 'of the sky' (great, public) and 'of the ground' (lesser, domestic), and lie inert until activated by tsav.",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga. Akiga's Story: The Tiv Tribe as Seen by One of Its Members. Trans. Rupert East. London, 1939." }
+        ],
+        "weight": "corroborating"
+      }
+    ],
+    "notes": "A spirit/force-class collective rather than a personal god; typed deity per the schema's restricted type list, with the impersonal-force status explained here. Sex 'none'. Distinct from tsav (human mystical power) and from the ancestors."
+  },
+  {
+    "id": "tiv_takuruku",
+    "name": {
+      "primary": "Founding Ancestor of the Tiv",
+      "alt": ["Takuruku", "Takuruku Anyamazenga"],
+      "transliterations": { "tiv": "Takuruku" }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "legendary ancestral age" },
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Takuruku", "script": "Latn", "rom": "Takuruku" },
+        "sources": [
+          { "kind": "primary", "reference": "Akiga (B.A. Sai). Akiga's Story: The Tiv Tribe as Seen by One of Its Members. Trans. Rupert East. London: Oxford University Press for the IAI, 1939." }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "Takuruku is the apical ancestor of the Tiv in their genealogies; he is the father of Tiv (the eponymous ancestor) and Uke, from whom the two great Tiv divisions descend through Tiv's sons Ipusu and Ichongo.",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga. Akiga's Story. Trans. Rupert East. London, 1939." },
+          { "kind": "secondary", "reference": "Bohannan, Laura, and Paul Bohannan. The Tiv of Central Nigeria. London, 1953." }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Eponymous-genealogy progenitor tier: typed mortal (legendary human ancestor, not a god — Tiv reckon descent agnatically from him, not worship). Some traditions give the line as Shon–Takuruku–Awange. His son Tiv gives the people their name."
+  }
+]
+```
+
+Let me sanity-check my output before finalizing: validate the JSON parses, count figures per tradition, and confirm no forbidden substrings or ID collisions.

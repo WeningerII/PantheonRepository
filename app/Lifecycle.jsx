@@ -55,6 +55,10 @@ const AXIS_H = 28;          // height of the era ruler (band labels)
 const ROW_H  = 60;          // vertical room for stage nodes
 const PAD_X  = 24;
 
+// The corpus writes death as both 'dead' (~80 stages) and 'deceased' (~78) —
+// treat them as one vocabulary, or half the death phases render alive.
+const isDeadStatus = (v) => /^(dead|deceased)$/.test(String(v || '').toLowerCase());
+
 function nameForTypeStatus(ts) {
   if (!ts) return '—';
   return ts.charAt(0).toUpperCase() + ts.slice(1);
@@ -87,16 +91,30 @@ function buildEraSpans(tradition) {
     const era = order[i];
     const d = dates[era];
     if (!d) continue;
-    const start = d.mythicStart ?? d.textualStart;
-    let end     = d.mythicEnd   ?? d.textualEnd ?? null;
+    // Resolve the pair on ONE axis: if the span's start came from the mythic
+    // axis, its open end must be borrowed from the neighbor's mythic start
+    // too. Cross-axis borrowing produced inverted ruler labels like
+    // "1830 CE – 500 BCE" (a textual start beside the next era's mythic start).
+    const useMythic = d.mythicStart != null;
+    const start = useMythic ? d.mythicStart : d.textualStart;
+    let end     = useMythic ? d.mythicEnd   : d.textualEnd;
     // Some eras lack an end date (open-ended modern). Use a sensible
     // ceiling so the band still gets pixels.
     if (end == null) {
       const next = order.slice(i + 1).map(e => dates[e]).filter(Boolean)[0];
-      if (next) end = next.mythicStart ?? next.textualStart ?? (start != null ? start + 100 : null);
-      else if (start != null) end = Math.max(start + 100, 2025);
+      if (next) {
+        const nextStart = useMythic
+          ? (next.mythicStart ?? next.textualStart)
+          : (next.textualStart ?? next.mythicStart);
+        end = nextStart ?? (start != null ? start + 100 : null);
+      } else if (start != null) {
+        end = Math.max(start + 100, 2025);
+      }
     }
     if (start == null || end == null) continue;
+    // Authoring slips (or a neighbor on a wildly different scale) can still
+    // invert the band — clamp rather than print a backwards range.
+    if (end < start) end = start + 100;
     spans.push({ era, start, end, idx: i });
   }
   return spans;
@@ -182,7 +200,12 @@ function buildPlot(lc, tradition, width) {
   }
   nodes.sort((a, b) => a.originalIndex - b.originalIndex);
 
-  return { mode: 'scaled', bands, nodes, width: PAD_X * 2 + plotW };
+  // Stages whose era has no dated band can't be plotted on the axis — count
+  // them so the UI can say so instead of silently dropping them while the
+  // section heading still counts every stage.
+  const omitted = lc.length - nodes.length;
+
+  return { mode: 'scaled', bands, nodes, omitted, width: PAD_X * 2 + plotW };
 }
 
 // ── Components ─────────────────────────────────────────────────────────
@@ -191,7 +214,7 @@ function StageNode({ node, hover, onHover, onLeave }) {
   const ts = node.stage.typeStatus;
   const fill = TS_FILL[ts] || '#5A5550';
   const glyph = TS_GLYPH[ts] || '?';
-  const dead = (node.stage.vitalStatus || '').toLowerCase() === 'dead';
+  const dead = isDeadStatus(node.stage.vitalStatus);
   const isHover = hover === node;
   return (
     <g
@@ -227,6 +250,11 @@ function LifecycleTimeline({ lc, tradition }) {
   const [width, setWidth] = __lcState(640);
   const [hover, setHover] = __lcState(null);
 
+  const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
+
+  // Re-run when the mode flips: a session whose FIRST entry renders the
+  // fallback (no container div) must still attach the observer when a later
+  // scaled-mode entry mounts the container — Detail doesn't remount per entry.
   __lcEff(() => {
     if (!containerRef.current) return;
     const update = () => setWidth(containerRef.current.getBoundingClientRect().width);
@@ -234,9 +262,7 @@ function LifecycleTimeline({ lc, tradition }) {
     const ro = new ResizeObserver(update);
     ro.observe(containerRef.current);
     return () => ro.disconnect();
-  }, []);
-
-  const plot = __lcMemo(() => buildPlot(lc, tradition, width), [lc, tradition, width]);
+  }, [plot.mode]);
 
   if (plot.mode === 'fallback') {
     return <LifecycleFallback lc={lc} />;
@@ -250,10 +276,9 @@ function LifecycleTimeline({ lc, tradition }) {
   for (let i = 1; i < plot.nodes.length; i++) {
     const a = plot.nodes[i - 1];
     const b = plot.nodes[i];
-    const dead = (a.stage.vitalStatus || '').toLowerCase() === 'dead';
     segments.push({
       x1: a.x, x2: b.x, y: ROW_H / 2,
-      dashed: dead,
+      dashed: isDeadStatus(a.stage.vitalStatus),
     });
   }
 
@@ -395,6 +420,11 @@ function LifecycleTimeline({ lc, tradition }) {
             </span>
           ))}
           <span className="lifecycle-legend-note">dashed = deceased</span>
+          {plot.omitted > 0 && (
+            <span className="lifecycle-legend-note">
+              +{plot.omitted} stage{plot.omitted === 1 ? '' : 's'} in undated eras not plotted
+            </span>
+          )}
         </div>
       )}
 

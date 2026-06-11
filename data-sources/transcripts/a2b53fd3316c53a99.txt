@@ -1,0 +1,481 @@
+Everything checks out. All `name.primary` values lead with English/plain descriptors (native terms live in `term`), all faculties are verb-phrases, materialCulture uses `id`/`name` (never `item`), and the three foregrounded culture-heroes (Lingo Pen, Balumain, Gish) are present with attested gear (Lingo's dhol, Balumain's horse, Gish's shrine/effigy). No repo files were modified.
+
+result: 26-figure JSON registry for the five absent indigenous traditions (Santal 6, Gondi 5, Bhil 4, Kalash 6, Nuristani 5) — schema-valid, no ID collisions, culture-heroes Lingo Pen/Balumain/Gish foregrounded, all claims cited to real scholarship.
+
+Here is the final array:
+
+```json
+[
+  {
+    "id": "santal_thakur_jiu",
+    "name": { "primary": "Supreme Sun-Creator", "alt": ["Thakur Jiu", "Sing Bonga", "Sin Bonga", "Sing Chando", "Dharam"], "transliterations": { "ol-chiki": "ᱴᱷᱟᱠᱩᱨ ᱡᱤᱣ", "devanagari": "ठाकुर जिउ" } },
+    "type": "deity", "origin": "canon", "tradition": "Santal", "primaryTradition": "Santal", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "primordial / creation time (Hihiri-Pipiri)" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Thakur Jiu", "script": "ᱴᱷᱟᱠᱩᱨ ᱡᱤᱣ", "rom": "ṭhakur jiu" }, "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] },
+      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Sing Bonga", "script": "ᱥᱤᱝ ᱵᱳᱸᱜᱟ", "rom": "siṅ boṅga" }, "sources": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales." } ] }
+    ],
+    "faculties": [
+      { "id": "create_first_humans", "name": "fashions the first human pair from a bird's eggs", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Hatched from two eggs at Hihiri-Pipiri.", "sources": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales, vol. I." } ] },
+      { "id": "preserve_world", "name": "preserves and orders the created world", "term": { "value": "Dharam", "script": "ᱫᱷᱟᱨᱟᱢ", "rom": "dharam" }, "inheritability": "unique", "notes": "Also Dharam.", "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Thakur Jiu (Sing Bonga, the sun) is the supreme creator deity of the Santals.", "citations": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." }, { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales. Oslo." } ], "weight": "primary" } ],
+    "notes": "Pan-Munda high god; Sing Bonga = sun-god (Santali siṅ 'sun' + boṅga 'deity')."
+  },
+  {
+    "id": "santal_marang_buru",
+    "name": { "primary": "Great Mountain God", "alt": ["Marang Buru", "Maran Buru", "Lita", "Lita Haram"], "transliterations": { "ol-chiki": "ᱢᱟᱨᱟᱝ ᱵᱩᱨᱩ", "devanagari": "मरांग बुरु" } },
+    "type": "deity", "origin": "canon", "tradition": "Santal", "primaryTradition": "Santal", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "creation time onward" },
+    "domains": [
+      { "sphereId": "mountains", "contextTag": "lifelong", "term": { "value": "Marang Buru", "script": "ᱢᱟᱨᱟᱝ ᱵᱩᱨᱩ", "rom": "maraṅ buru" }, "sources": [ { "kind": "scholarship", "reference": "Archer, W.G. (1974). The Hill of Flutes." } ] },
+      { "sphereId": "rain-and-weather", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "faculties": [
+      { "id": "teach_rice_beer", "name": "teaches the first pair to brew rice-beer", "term": { "value": "handi", "script": "ᱦᱟᱸᱲᱤᱭᱟ", "rom": "hãṛiya" }, "inheritability": "non-inheritable", "notes": "Disguised as Lita he teaches Pilcu Haram and Pilcu Budhi to brew rice-beer and demands a libation.", "sources": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales." } ] },
+      { "id": "demand_libation", "name": "requires the first libation of rice-beer at his invocation", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Receives a white fowl or white goat at festivals.", "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Marang Buru ('Great Mountain') is a principal Santal deity, invoked with white fowl/goat and rice-beer, who (as Lita) teaches the first pair to brew rice-beer.", "citations": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales. Oslo." }, { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." }, { "kind": "scholarship", "reference": "Archer, W.G. (1974). The Hill of Flutes. Univ. of Pittsburgh Press." } ], "weight": "primary" } ],
+    "notes": "Santali maraṅ 'great' + buru 'mountain'. The alternate persona Lita is the rice-beer teacher."
+  },
+  {
+    "id": "santal_jaher_era",
+    "name": { "primary": "Lady of the Sacred Grove", "alt": ["Jaher Era", "Jaher Ayo", "Sarna Burhi"], "transliterations": { "ol-chiki": "ᱡᱟᱦᱮᱨ ᱮᱨᱟ", "devanagari": "जाहेर एरा" } },
+    "type": "deity", "origin": "canon", "tradition": "Santal", "primaryTradition": "Santal", "sex": "female", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "sacred-groves", "contextTag": "lifelong", "term": { "value": "Jaher", "script": "ᱡᱟᱦᱮᱨ", "rom": "jaher" }, "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] },
+      { "sphereId": "vegetation-and-trees", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Culshaw, W.J. (1949). Tribal Heritage." } ] }
+    ],
+    "faculties": [
+      { "id": "guard_grove", "name": "guards the village sacred grove and its sal trees", "term": { "value": "jaherthan", "script": "ᱡᱟᱦᱮᱨᱛᱷᱟᱱ", "rom": "jaherthan" }, "inheritability": "unique", "notes": "Presides over the grove of sal on the village edge; her worship anchors the spring Baha festival.", "sources": [ { "kind": "scholarship", "reference": "Archer, W.G. (1974). The Hill of Flutes." } ] },
+      { "id": "ensure_welfare", "name": "secures communal welfare, rain and protection from epidemics", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Worshipped with Marang Buru, Moreko-Turuiko, Gosae Era and Pargana.", "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Jaher Era ('Lady of the Grove') is the Santal goddess of the sacred grove (jaherthan), worshipped especially at the spring Baha festival.", "citations": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." }, { "kind": "scholarship", "reference": "Culshaw, W.J. (1949). Tribal Heritage. Lutterworth." } ], "weight": "primary" } ],
+    "notes": "Santali jaher 'sacred grove' + era/ayo 'woman, mother'; cognate with the Sarna Burhi."
+  },
+  {
+    "id": "santal_pilcu_haram",
+    "name": { "primary": "First Man", "alt": ["Pilcu Haram", "Pilchu Haram", "Pilchu Hadam"], "transliterations": { "ol-chiki": "ᱯᱤᱞᱪᱩ ᱦᱟᱲᱟᱢ", "devanagari": "पिलचु हड़ाम" } },
+    "type": "mortal", "origin": "canon", "tradition": "Santal", "primaryTradition": "Santal", "sex": "male", "vitalStatus": "deceased", "parentIds": [],
+    "temporal": { "era": "primordial first generation (Hihiri-Pipiri)" },
+    "domains": [
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "Pilcu Haram", "script": "ᱯᱤᱞᱪᱩ ᱦᱟᱲᱟᱢ", "rom": "pilcu haṛam" }, "sources": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales." } ] }
+    ],
+    "faculties": [
+      { "id": "father_lineages", "name": "fathers the seven sons who found the Santal clans", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-inheritable", "notes": "Seven sons and seven daughters originate the Santal paris (clans).", "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Pilcu Haram is the first man in Santal cosmogony, hatched at Hihiri-Pipiri, taught rice-beer by Maran Buru, and ancestor of the clans.", "citations": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales. Oslo." }, { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ], "weight": "primary" } ],
+    "notes": "Santali pilcu haṛam = 'old man'. Mortal first ancestor."
+  },
+  {
+    "id": "santal_pilcu_budhi",
+    "name": { "primary": "First Woman", "alt": ["Pilcu Budhi", "Pilchu Budhi"], "transliterations": { "ol-chiki": "ᱯᱤᱞᱪᱩ ᱵᱩᱲᱷᱤ", "devanagari": "पिलचु बुढ़ी" } },
+    "type": "mortal", "origin": "canon", "tradition": "Santal", "primaryTradition": "Santal", "sex": "female", "vitalStatus": "deceased", "parentIds": [],
+    "temporal": { "era": "primordial first generation (Hihiri-Pipiri)" },
+    "domains": [
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "Pilcu Budhi", "script": "ᱯᱤᱞᱪᱩ ᱵᱩᱲᱷᱤ", "rom": "pilcu buṛhi" }, "sources": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales." } ] }
+    ],
+    "faculties": [
+      { "id": "mother_lineages", "name": "bears the seven daughters who found the Santal clans", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "non-inheritable", "notes": "Founding ancestress of the Santal people.", "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Pilcu Budhi is the first woman in Santal cosmogony, hatched with Pilcu Haram at Hihiri-Pipiri and ancestress of the clans.", "citations": [ { "kind": "scholarship", "reference": "Bodding, P.O. (1942). Santal Folk Tales. Oslo." }, { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ], "weight": "primary" } ],
+    "notes": "Santali pilcu buṛhi = 'old woman'. Mortal first ancestress."
+  },
+  {
+    "id": "santal_moreko_turuiko",
+    "name": { "primary": "The Five-Six Village Guardians", "alt": ["Moreko-Turuiko", "More-ko Turui-ko"], "transliterations": { "ol-chiki": "ᱢᱳᱨᱮᱠᱳ ᱛᱩᱨᱩᱭᱠᱳ", "devanagari": "मोरेको तुरुइको" } },
+    "type": "deity", "origin": "canon", "tradition": "Santal", "primaryTradition": "Santal", "sex": "unknown", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "guardianship", "contextTag": "lifelong", "term": { "value": "Moreko-Turuiko", "script": "ᱢᱳᱨᱮᱠᱳ ᱛᱩᱨᱩᱭᱠᱳ", "rom": "moreko-turuiko" }, "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] },
+      { "sphereId": "disease-and-healing", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Culshaw, W.J. (1949). Tribal Heritage." } ] }
+    ],
+    "faculties": [
+      { "id": "avert_epidemic", "name": "wards off epidemic and secures rain and welfare", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "A collective deity in the jaher; the name encodes 'five' (more) and 'six' (turui).", "sources": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Moreko-Turuiko ('the Five-Six') is a collective Santal village tutelary deity invoked for welfare, rain and protection from epidemics.", "citations": [ { "kind": "scholarship", "reference": "Troisi, J. (2000). Tribal Religion. Manohar." }, { "kind": "scholarship", "reference": "Culshaw, W.J. (1949). Tribal Heritage. Lutterworth." } ], "weight": "secondary" } ],
+    "notes": "Santali more '5' + turui '6' + plural -ko; a collective spirit-class treated as deity. Sex unrecorded."
+  },
+  {
+    "id": "gondi_lingo_pen",
+    "name": { "primary": "Lingo the Culture-Bringer", "alt": ["Lingo Pen", "Pari Kupar Lingo", "Pahandi Pari Kupar Lingo", "Lingal"], "transliterations": { "devanagari": "लिंगो पेन" } },
+    "type": "demigod", "origin": "canon", "tradition": "Gondi", "primaryTradition": "Gondi", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "mythic founding age of Gond society" },
+    "domains": [
+      { "sphereId": "culture-and-civilization", "contextTag": "lifelong", "term": { "value": "Lingo Pen", "script": "", "rom": "liṅgo pen" }, "sources": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo (Papers Relating to the Aboriginal Tribes of the Central Provinces, ed. R. Temple)." } ] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1947). The Muria and their Ghotul." } ] },
+      { "sphereId": "music", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1947). The Muria and their Ghotul." } ] }
+    ],
+    "faculties": [
+      { "id": "release_clan_gods", "name": "frees the imprisoned clan-gods from the cave by music", "term": { "value": "Kachargad", "script": "", "rom": "kachargaḍ" }, "inheritability": "unique", "notes": "With music taught by Hirasuka he frees the Gond ancestors shut in the Kachargad cave; they become the Angadevs.", "sources": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo." }, { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India." } ] },
+      { "id": "found_saga_system", "name": "organizes the Gond into the clan-and-phratry system", "term": { "value": "Saga (Salla)", "script": "", "rom": "saga / salla" }, "inheritability": "unique", "notes": "Establishes the Koya Punem religion and the four-fold Saga grouping regulating exogamy.", "sources": [ { "kind": "scholarship", "reference": "Fuchs, S. (1960). The Gond and Bhumia of Eastern Mandla." } ] },
+      { "id": "institute_ghotul", "name": "institutes the ghotul youth-dormitory", "term": { "value": "ghotul", "script": "", "rom": "ghoṭul" }, "inheritability": "unique", "notes": "Founds the ghotul; his spirit dwells there and the dhol at its entrance represents him.", "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1947). The Muria and their Ghotul." } ] }
+    ],
+    "materialCulture": [
+      { "id": "gondi_lingo_dhol", "kind": "instrument", "name": "barrel drum of Lingo", "term": { "value": "dhol", "script": "", "rom": "ḍhol" }, "role": "Hung at the entrance of the ghotul and said to represent the god Lingo himself.", "notes": "Music is Lingo's defining attribute.", "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1947). The Muria and their Ghotul." } ] }
+    ],
+    "sources": [ { "claim": "Pari Kupar Lingo (Lingo Pen) is the great Gond culture-hero who frees the clan-gods from the Kachargad cave by music, founds the Koya Punem religion and Saga clan system, and brings agriculture, marriage, music and the ghotul; his deeds are sung by Pardhan and Ojha bards.", "citations": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo, in Papers Relating to the Aboriginal Tribes of the Central Provinces, ed. R. Temple. Nagpur." }, { "kind": "scholarship", "reference": "Elwin, V. (1947). The Muria and their Ghotul. Oxford University Press." }, { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India. Oxford University Press." } ], "weight": "primary" } ],
+    "notes": "Gondi pen 'god'. Culture-hero/demigod (half-divine founder). Modern Koitur revival venerates him as Pari Kupar Lingo; Kachargad cave is a pilgrimage site. Hislop's 1866 transcription of a Pardhan bard is the earliest recorded Lingo epic."
+  },
+  {
+    "id": "gondi_persa_pen",
+    "name": { "primary": "Great Clan-God", "alt": ["Persa Pen", "Pharsi Pen", "Bara Deo", "Budha Deo"], "transliterations": { "devanagari": "पेरसा पेन" } },
+    "type": "deity", "origin": "canon", "tradition": "Gondi", "primaryTradition": "Gondi", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "clan-and-kinship", "contextTag": "lifelong", "term": { "value": "Persa Pen", "script": "", "rom": "persa pen" }, "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] },
+      { "sphereId": "protection", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1955). The Religion of an Indian Tribe." } ] }
+    ],
+    "faculties": [
+      { "id": "embody_in_implement", "name": "manifests in an iron implement and a wooden pillar rather than an image", "term": { "value": "pharsi", "script": "", "rom": "pharsi" }, "inheritability": "unique", "notes": "No idol or temple; presence held in a sun-and-moon-marked wooden pillar or iron objects, often at a saja tree.", "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] },
+      { "id": "receive_pen_madai", "name": "is carried in procession at the pen madai festival", "term": { "value": "pen madai", "script": "", "rom": "pen māḍai" }, "inheritability": "unique", "notes": "In Bastar the clan-god is mounted on a standard (anga) and brought out for the gathering of the deos.", "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] }
+    ],
+    "materialCulture": [
+      { "id": "gondi_persa_kamk_pillar", "kind": "cult object", "name": "wooden clan-god pillar", "term": { "value": "kamk", "script": "", "rom": "kaṛsk" }, "role": "Aniconic seat of the clan-god marked with sun and moon, indicating the deity's presence without any image.", "notes": "The Persa Pen is famously imageless.", "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] },
+      { "id": "gondi_persa_pharsi", "kind": "weapon", "name": "iron battle-axe of the clan-god", "term": { "value": "pharsi", "script": "", "rom": "pharsi" }, "role": "Iron implement in which the clan-god (Pharsi Pen) is embodied and worshipped.", "notes": "Iron is sacred to the clan-gods; cf. the Agaria iron cult.", "sources": [ { "kind": "scholarship", "reference": "Fuchs, S. (1960). The Gond and Bhumia of Eastern Mandla." } ] }
+    ],
+    "sources": [ { "claim": "Persa Pen ('Great God') is the formless clan-deity of the Gonds, worshipped without idol or temple in an iron implement (Pharsi Pen) or a sun-and-moon-marked wooden pillar at the saja tree, and brought out at the pen madai.", "citations": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar. Oxford University Press." }, { "kind": "scholarship", "reference": "Fuchs, S. (1960). The Gond and Bhumia of Eastern Mandla. Asia Publishing House." } ], "weight": "primary" } ],
+    "notes": "Gondi persa 'great' + pen 'god'. Often equated with Bara Deo / Budha Deo and the saja tree. Aniconic spirit-class deity. (kaṛsk/kamk per ethnographic spellings.)"
+  },
+  {
+    "id": "gondi_bhimal_pen",
+    "name": { "primary": "Bhima the Rain-Giant", "alt": ["Bhimal Pen", "Bhimsen", "Bhim Deo"], "transliterations": { "devanagari": "भीमल पेन" } },
+    "type": "demigod", "origin": "canon", "tradition": "Gondi", "primaryTradition": "Gondi", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "mythic age" },
+    "domains": [
+      { "sphereId": "rain-and-weather", "contextTag": "lifelong", "term": { "value": "Bhimal Pen", "script": "", "rom": "bhimal pen" }, "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India." } ] },
+      { "sphereId": "strength-and-might", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Fuchs, S. (1960). The Gond and Bhumia of Eastern Mandla." } ] }
+    ],
+    "faculties": [
+      { "id": "bring_rain", "name": "brings the rains and fertilizes the fields", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Invoked for rain; in drought his stones are watered or dragged to compel the monsoon.", "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India." } ] },
+      { "id": "wield_giant_strength", "name": "performs feats of giant strength", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "A divinized hero of extraordinary strength who protects the community.", "sources": [ { "kind": "scholarship", "reference": "Fuchs, S. (1960). The Gond and Bhumia of Eastern Mandla." } ] }
+    ],
+    "materialCulture": [
+      { "id": "gondi_bhimal_stones", "kind": "cult object", "name": "rain-stones of Bhimsen", "term": { "value": "", "script": "", "rom": "" }, "role": "Unhewn stones identified with Bhimsen, watered or moved in drought to bring rain.", "notes": "Aniconic shrine-stones rather than images.", "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India." } ] }
+    ],
+    "sources": [ { "claim": "Bhimal Pen (Bhimsen) is a Gond rain-and-strength deity, a divinized giant-hero invoked for rainfall and harvest, identified with the epic Bhima but worshipped in his own aniconic cult.", "citations": [ { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India. Oxford University Press." }, { "kind": "scholarship", "reference": "Fuchs, S. (1960). The Gond and Bhumia of Eastern Mandla. Asia Publishing House." } ], "weight": "secondary" } ],
+    "notes": "The prompt's 'Bhimal/Bhima'. A culture-hero raised to divinity (demigod); name borrows from the Mahabharata Bhima but the tribal cult (rain-stones, no idol) is indigenous."
+  },
+  {
+    "id": "gondi_kali_kankali",
+    "name": { "primary": "Mother of the Gonds", "alt": ["Kali Kankali", "Kankali"], "transliterations": { "devanagari": "काली कंकाली" } },
+    "type": "deity", "origin": "canon", "tradition": "Gondi", "primaryTradition": "Gondi", "sex": "female", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "mythic founding age" },
+    "domains": [
+      { "sphereId": "motherhood-and-origins", "contextTag": "lifelong", "term": { "value": "Kali Kankali", "script": "", "rom": "kali kankali" }, "sources": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo." } ] }
+    ],
+    "faculties": [
+      { "id": "birth_first_gonds", "name": "brings forth the first Gonds released by Lingo", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In the Lingo legend the primeval Gonds issue from / are nurtured by her before being shut in the cave and freed by Lingo.", "sources": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Kali Kankali is the mother-goddess of the Lingo origin-legend, associated with the birth and nurture of the first Gonds later freed by Lingo.", "citations": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo, in Papers Relating to the Aboriginal Tribes of the Central Provinces, ed. R. Temple. Nagpur." }, { "kind": "scholarship", "reference": "Russell, R.V. & Hira Lal (1916). The Tribes and Castes of the Central Provinces of India, vol. III." } ], "weight": "secondary" } ],
+    "notes": "Gond goddess of the Lingo cycle; name overlaps pan-Indian Kali but the role is tradition-specific. Limited attestation."
+  },
+  {
+    "id": "gondi_anga_dev",
+    "name": { "primary": "The Clan-Standard Gods", "alt": ["Anga Dev", "Angadev", "Anga Pen", "Angadeo"], "transliterations": { "devanagari": "अंगा देव" } },
+    "type": "deity", "origin": "canon", "tradition": "Gondi", "primaryTradition": "Gondi", "sex": "unknown", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "mythic founding age onward" },
+    "domains": [
+      { "sphereId": "clan-and-kinship", "contextTag": "lifelong", "term": { "value": "Anga Dev", "script": "", "rom": "aṅga dev" }, "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] },
+      { "sphereId": "divination-and-oracle", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Elwin, V. (1949). Myths of Middle India." } ] }
+    ],
+    "faculties": [
+      { "id": "carry_clan_god_palanquin", "name": "carries the clan-god as an oracular palanquin-standard", "term": { "value": "anga", "script": "", "rom": "aṅga" }, "inheritability": "unique", "notes": "The anga is a wooden bier/standard bearing the clan-god; borne on bearers' shoulders it sways and 'speaks' as an oracle and is paraded at the pen madai gathering of the deos.", "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] },
+      { "id": "embody_rescued_children", "name": "embodies the first Gonds whom Lingo freed from the cave", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In the Lingo legend the Angadevs are the children of the mother-goddess Kali Kankali, rescued from the cave by Lingo and made the emissaries of his message; reckoned as a set of small idols.", "sources": [ { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo." } ] }
+    ],
+    "materialCulture": [
+      { "id": "gondi_anga_standard", "kind": "cult object", "name": "clan-god palanquin-standard", "term": { "value": "anga", "script": "", "rom": "aṅga" }, "role": "Wooden bier/standard carrying the small clan-god idols, borne by bearers and consulted as a moving oracle at festivals.", "notes": "Reckoned in some traditions as 33 small idols, the Angadevs; paraded at the pen madai.", "sources": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar." } ] }
+    ],
+    "sources": [ { "claim": "The Anga Dev (Angadevs) are Gond clan-gods carried as oracular wooden palanquin-standards (anga) at the pen madai; in the Lingo legend they are the children of Kali Kankali whom Lingo freed from the cave to become the emissaries of his message.", "citations": [ { "kind": "scholarship", "reference": "Grigson, W.V. (1938). The Maria Gonds of Bastar. Oxford University Press." }, { "kind": "scholarship", "reference": "Hislop, S. (1866). The Legend of Lingo, in Papers Relating to the Aboriginal Tribes of the Central Provinces, ed. R. Temple. Nagpur." } ], "weight": "primary" } ],
+    "notes": "Gondi aṅga 'palanquin/standard' + dev 'god'. A collective clan-god class (sex unrecorded) treated as deity per schema; materially expressed in the swaying anga oracle of Bastar. Tied to the Lingo origin-myth and to Persa Pen worship."
+  },
+  {
+    "id": "bhil_bhagwan",
+    "name": { "primary": "Creator God", "alt": ["Bhagwan", "Bholo Iswor", "Bhagavan"], "transliterations": { "devanagari": "भगवान" } },
+    "type": "deity", "origin": "canon", "tradition": "Bhil", "primaryTradition": "Bhil", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "creation time" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Bhagwan", "script": "", "rom": "bhagwān" }, "sources": [ { "kind": "scholarship", "reference": "Koppers, W. (1948). Die Bhil in Zentralindien." } ] },
+      { "sphereId": "fate-and-order", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study." } ] }
+    ],
+    "faculties": [
+      { "id": "create_first_pair", "name": "creates the first man and woman and starts the human race", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Makes a brother-sister pair; after the flood he turns them to face one another and they become husband and wife.", "sources": [ { "kind": "scholarship", "reference": "Koppers, W. & Jungblut, L. (1976). Bowmen of Mid-India." } ] },
+      { "id": "send_flood", "name": "sends and abates the world-flood", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Causes the deluge; the queen-fish Ro warns the maiden and humankind is renewed from the surviving pair.", "sources": [ { "kind": "scholarship", "reference": "Koppers, W. (1948). Die Bhil in Zentralindien." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Bhagwan (Bholo Iswor) is the supreme creator high-god of the Bhils, maker of the first human pair and sender of the world-flood from which humankind is renewed.", "citations": [ { "kind": "scholarship", "reference": "Koppers, W. (1948). Die Bhil in Zentralindien. Wien." }, { "kind": "scholarship", "reference": "Koppers, W. & Jungblut, L. (1976). Bowmen of Mid-India. Wien." }, { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study. Delhi." } ], "weight": "primary" } ],
+    "notes": "Bhil personal high god; the word is borrowed (Skt. bhagavān) but the creation-and-flood cycle is the indigenous Bhil cosmogony recorded by Koppers among the Jhabua Bhils."
+  },
+  {
+    "id": "bhil_mogra_dev",
+    "name": { "primary": "Goddess of Dev Mogra", "alt": ["Mogra Dev", "Dev Mogra", "Yahamogi"], "transliterations": { "devanagari": "मोगरा देव" } },
+    "type": "deity", "origin": "canon", "tradition": "Bhil", "primaryTradition": "Bhil", "sex": "female", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "harvest-and-fertility", "contextTag": "lifelong", "term": { "value": "Dev Mogra", "script": "", "rom": "dev mogrā" }, "sources": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study." } ] },
+      { "sphereId": "ancestry", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Koppers, W. & Jungblut, L. (1976). Bowmen of Mid-India." } ] }
+    ],
+    "faculties": [
+      { "id": "grant_harvest", "name": "grants the harvest and is given first-fruits", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Receives first-fruits; her shrine at Dev Mogra (Satpura range) draws Bhil and related communities at the spring fair.", "sources": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study." } ] },
+      { "id": "protect_lineage", "name": "protects the lineage as an ancestral mother-goddess", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Venerated as an ancestral, protective mother deity of the Satpura Bhils.", "sources": [ { "kind": "scholarship", "reference": "Koppers, W. & Jungblut, L. (1976). Bowmen of Mid-India." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Mogra Dev (Dev Mogra) is a major Bhil mother-and-harvest goddess of the Satpura range, an ancestral protective deity who receives first-fruits at the pilgrimage shrine of Dev Mogra.", "citations": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study. Delhi: Bharatiya Adimjati Sevak Sangh." }, { "kind": "scholarship", "reference": "Koppers, W. & Jungblut, L. (1976). Bowmen of Mid-India. Wien." } ], "weight": "secondary" } ],
+    "notes": "The prompt's 'Mogra Dev'. Female ancestral/harvest goddess centred on the Dev Mogra shrine in the Satpuras (Tapi/Narmada region), shared with Vasava and Kokni communities."
+  },
+  {
+    "id": "bhil_indi_raja",
+    "name": { "primary": "Rain-King Indi", "alt": ["Indi Raja", "Inddeo", "Indel Dev", "Baba Ind"], "transliterations": { "devanagari": "इंद राजा" } },
+    "type": "deity", "origin": "canon", "tradition": "Bhil", "primaryTradition": "Bhil", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "rain-and-weather", "contextTag": "lifelong", "term": { "value": "Baba Ind", "script": "", "rom": "bābā ind" }, "sources": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study." } ] },
+      { "sphereId": "cattle-and-herds", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Koppers, W. (1948). Die Bhil in Zentralindien." } ] }
+    ],
+    "faculties": [
+      { "id": "send_rain", "name": "sends the monsoon rain", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "God of rain (cf. Vedic Indra) and protector of livestock; propitiated for the monsoon.", "sources": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study." } ] },
+      { "id": "appear_in_pithora", "name": "appears among the mounted gods of the Pithora wall-painting", "term": { "value": "Pithora", "script": "", "rom": "pithorā" }, "inheritability": "unique", "notes": "Baba Ind figures among the deities depicted on horseback in the ritual Pithora frescoes.", "sources": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation." } ] }
+    ],
+    "materialCulture": [
+      { "id": "bhil_indi_pithora_horse", "kind": "image", "name": "painted Pithora horse", "term": { "value": "", "script": "", "rom": "" }, "role": "Votive horse painted on the house wall and offered to the rain-and-fertility gods including Baba Ind.", "notes": "Horses, sun and moon are the auspicious Pithora motifs.", "sources": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation." } ] }
+    ],
+    "sources": [ { "claim": "Indi Raja (Inddeo / Baba Ind), the Bhil rain-god and protector of animals (an indigenized Indra), is propitiated for the monsoon and depicted among the mounted deities of the Pithora wall-paintings.", "citations": [ { "kind": "scholarship", "reference": "Naik, T.B. (1956). The Bhils: A Study. Delhi." }, { "kind": "scholarship", "reference": "Koppers, W. (1948). Die Bhil in Zentralindien. Wien." }, { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation: Art and Ritual of an Indian Tribe. New Delhi: Lalit Kala Akademi." } ], "weight": "secondary" } ],
+    "notes": "The prompt's 'Inddeo'. Bhil/Bhilala rain-god, name from Indra but embedded in tribal rain-ritual and Pithora iconography (most elaborated among the related Rathwa/Bhilala)."
+  },
+  {
+    "id": "bhil_pithora",
+    "name": { "primary": "Pithora the Horse-Lord", "alt": ["Pithora Dev", "Baba Pithora", "Pithoro"], "transliterations": { "devanagari": "पिठोरा देव" } },
+    "type": "deity", "origin": "canon", "tradition": "Bhil", "primaryTradition": "Bhil", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "fertility-and-prosperity", "contextTag": "lifelong", "term": { "value": "Pithora", "script": "", "rom": "pithorā" }, "sources": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation." } ] }
+    ],
+    "faculties": [
+      { "id": "fulfil_vows", "name": "fulfils vows of prosperity in return for a painted wall", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "When a vow is met the lekhindra paints Pithora's horses; the badva enters trance and Pithoro manifests through him while inspecting the fresco.", "sources": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation." } ] },
+      { "id": "embody_cosmos", "name": "embodies the whole created cosmos in the wall-painting", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The fresco depicts the creation: sun, moon, gods, ancestors, animals and the horses on which the deities ride.", "sources": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation." } ] }
+    ],
+    "materialCulture": [
+      { "id": "bhil_pithora_wall", "kind": "image", "name": "Pithora wall-painting", "term": { "value": "", "script": "", "rom": "" }, "role": "Ritual fresco of horses and the creation, painted inside the house to honour Pithora and discharge a vow.", "notes": "Painted by the lekhindra and consecrated by the badva.", "sources": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation." } ] }
+    ],
+    "sources": [ { "claim": "Pithora (Baba Pithora/Pithoro) is the Bhil/Rathwa god of fertility and prosperity whose creation-myth is rendered as the ritual Pithora wall-painting of horses, consecrated by a badva possessed by the god.", "citations": [ { "kind": "scholarship", "reference": "Jain, J. (1984). Painted Myths of Creation: Art and Ritual of an Indian Tribe. New Delhi: Lalit Kala Akademi." }, { "kind": "scholarship", "reference": "Tilche, A. (2022). Adivasi Art and Activism. Univ. of Washington Press." } ], "weight": "secondary" } ],
+    "notes": "Central Bhil/Rathwa deity of the Pithora painting tradition (eastern Gujarat / western Madhya Pradesh). The painting is the cult: a vow-discharging ritual fresco depicting the Bhil creation."
+  },
+  {
+    "id": "kalash_dezau",
+    "name": { "primary": "Creator Sky-God", "alt": ["Dezau", "Dezalik", "Khodai"], "transliterations": { "kalasha-rom": "ḍezáw" } },
+    "type": "deity", "origin": "canon", "tradition": "Kalash", "primaryTradition": "Kalash", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "creation time / perennial" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "ḍezáw", "script": "ḍezáw", "rom": "ḍezáw" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion (extract from The Rgvedic Religious System and its Central Asian and Hindukush Antecedents)." } ] },
+      { "sphereId": "sky-and-heavens", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan." } ] }
+    ],
+    "faculties": [
+      { "id": "fashion_world", "name": "fashions the world and the lesser gods", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Supreme creator; the root of his name (*dheigh, 'to mould/form') marks him as the fashioner. A distant high god, less ritually active than the Indra-figures and Mahandeo.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Dezau (ḍezáw) is the supreme creator/sky god of the still-practised Kalash religion, also called Khodai; his name derives from PIE *dheigh- 'to fashion', and he has a female counterpart Dezalik.", "citations": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten." }, { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan. Rome: IsIAO." } ], "weight": "primary" } ],
+    "notes": "Kalasha of the Hindu Kush (Chitral) - the only surviving pre-Islamic 'Kafir' religion. Dezalik is the female counterpart, goddess of childbirth and the bashali (birth-house). Equivalent to Nuristani Imra."
+  },
+  {
+    "id": "kalash_balumain",
+    "name": { "primary": "Balumain the Festival-Bringer", "alt": ["Balumain", "Balimain", "Balomain"], "transliterations": { "kalasha-rom": "balimaín" } },
+    "type": "demigod", "origin": "canon", "tradition": "Kalash", "primaryTradition": "Kalash", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "mythic; returns each winter solstice" },
+    "domains": [
+      { "sphereId": "festival-and-rite", "contextTag": "lifelong", "term": { "value": "Chaumos", "script": "", "rom": "caumós" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "sphereId": "fertility-and-fortune", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1." } ] }
+    ],
+    "faculties": [
+      { "id": "teach_chaumos", "name": "teaches the people how to keep the Chaumos festival", "term": { "value": "caumós", "script": "", "rom": "caumós" }, "inheritability": "unique", "notes": "Culture-hero who instituted the rites of Chaumos (winter solstice); rides into the valleys from the west (the Kati/Bashgal direction) before solstice and leaves the next day.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "id": "return_from_tsiyam", "name": "returns each year from the homeland Tsiyam like Indra reborn", "term": { "value": "Tsiyam", "script": "", "rom": "tsíam" }, "inheritability": "unique", "notes": "Cheated of supremacy by Mahandeo when the gods slept at the Shawalo meadow, he withdrew to Tsiyam and returns each winter, which Witzel compares to the reborn Vedic Indra (Rigveda 10.86).", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "materialCulture": [
+      { "id": "kalash_balumain_horse", "kind": "mount", "name": "Balumain's horse", "term": { "value": "", "script": "", "rom": "" }, "role": "He arrives riding a horse from the west at the winter solstice to bless the valleys during Chaumos.", "notes": "Equestrian arrival is the signature image of the Chaumos visitation.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "sources": [ { "claim": "Balumain (Balimain) is the Kalash culture-hero/demigod who taught the people the Chaumos winter-solstice festival; cheated by Mahandeo at the Shawalo meadow he retired to the homeland Tsiyam and returns yearly on horseback, a pattern Witzel likens to the reborn Vedic Indra.", "citations": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten." }, { "kind": "scholarship", "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1: The Religion of the Kafirs. Aris & Phillips." } ], "weight": "primary" } ],
+    "notes": "Foregrounded demigod culture-hero. Chaumos is the great Kalash midwinter festival; Tsiyam (tsíam) the ancestral homeland. The 'budulak' shepherd-boy figure of Chaumos is connected to his cult."
+  },
+  {
+    "id": "kalash_mahandeo",
+    "name": { "primary": "Lord of Crops and War", "alt": ["Mahandeo", "Mahandeu", "Mahadeo"], "transliterations": { "kalasha-rom": "mahandéo" } },
+    "type": "deity", "origin": "canon", "tradition": "Kalash", "primaryTradition": "Kalash", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "mahandéo", "script": "mahandéo", "rom": "mahandéo" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.S. (2016). Temple of Imra, Temple of Mahandeu, BSOAS 79(1)." } ] }
+    ],
+    "faculties": [
+      { "id": "mediate_with_creator", "name": "mediates between the people and the highest god", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Acts as negotiator/intercessor with Dezau; the most actively worshipped male god across the valleys.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "id": "cheat_balumain", "name": "cheats Balumain of supremacy at the Shawalo meadow", "term": { "value": "Shawalo", "script": "", "rom": "šawalo" }, "inheritability": "unique", "notes": "Deceives Balumain of pre-eminence when the gods sleep together at the Shawalo meadow, driving him back to Tsiyam.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "materialCulture": [
+      { "id": "kalash_mahandeo_altar", "kind": "altar", "name": "wooden horse-headed altar", "term": { "value": "", "script": "", "rom": "" }, "role": "Open-air stone-plinth altar of a major male god, topped with carved wooden horse-heads, where juniper is burned and blood offerings made.", "notes": "Altars to the high male gods are barred to women; horse-head carvings are characteristic.", "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.S. (2016). Temple of Imra, Temple of Mahandeu, BSOAS 79(1)." } ] }
+    ],
+    "sources": [ { "claim": "Mahandeo (mahandéo) is the Kalash god of crops and of war and chief intercessor with the creator; in myth he cheats the culture-hero Balumain of supremacy at the Shawalo meadow. His altars carry carved horse-heads and are barred to women.", "citations": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten." }, { "kind": "scholarship", "reference": "Cacopardo, A.S. (2016). Temple of Imra, Temple of Mahandeu: a Kafir sanctuary in Kalasha cosmology. Bulletin of SOAS 79(1): 95-116." } ], "weight": "primary" } ],
+    "notes": "Kalasha mahandéo corresponds to Nuristani Mon/Mandi; the name is ultimately from Skt. Mahadeva but the figure is the indigenous Hindu Kush war-and-crop god, not Puranic Shiva."
+  },
+  {
+    "id": "kalash_sajigor",
+    "name": { "primary": "Sajigor the Unrivalled", "alt": ["Sajigor", "Sajjigor", "Shura Verin"], "transliterations": { "kalasha-rom": "sajigór" } },
+    "type": "deity", "origin": "canon", "tradition": "Kalash", "primaryTradition": "Kalash", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "cattle-and-herds", "contextTag": "lifelong", "term": { "value": "sajigór", "script": "sajigór", "rom": "sajigór" }, "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Shura Verin", "script": "", "rom": "šúra verín" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "faculties": [
+      { "id": "guard_herds", "name": "guards the goats and herds of the valley", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Protector of livestock - central to the pastoral Kalash economy; one of the most powerful 'pure' (onjesta) male gods.", "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan." } ] }
+    ],
+    "materialCulture": [
+      { "id": "kalash_sajigor_altar", "kind": "altar", "name": "open horse-head altar of Sajigor", "term": { "value": "", "script": "", "rom": "" }, "role": "Stone-plinth altar in the open, crowned with rough wooden horse-heads, where juniper is burned and goats sacrificed; forbidden to women.", "notes": "His chief shrine stands where, in myth, a god 'landed' in the valley.", "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan." } ] }
+    ],
+    "sources": [ { "claim": "Sajigor (Sajjigor) is among the mightiest 'pure' male gods of the Kalash, protector of herds and a form of Indra (titled Shura Verin, 'the unrivalled hero-Indra'); his open horse-head altars are barred to women.", "citations": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan: History, Religion and Society in the Hindu Kush. Rome: IsIAO." }, { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten." } ], "weight": "primary" } ],
+    "notes": "The prompt's 'Sajigor/Sajjgor'. An Indra-aspect onjesta ('pure') deity whose cult excludes the impure (pragata) sphere associated with women."
+  },
+  {
+    "id": "kalash_jestak",
+    "name": { "primary": "Goddess of Hearth and Lineage", "alt": ["Jestak", "Jeshtak", "Jasṭak"], "transliterations": { "kalasha-rom": "jeṣṭak" } },
+    "type": "deity", "origin": "canon", "tradition": "Kalash", "primaryTradition": "Kalash", "sex": "female", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "household-and-hearth", "contextTag": "lifelong", "term": { "value": "jeṣṭak", "script": "jeṣṭak", "rom": "jeṣṭak" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "sphereId": "marriage-and-birth", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan." } ] }
+    ],
+    "faculties": [
+      { "id": "preside_lineage_house", "name": "presides over the lineage house and its rites of marriage and birth", "term": { "value": "jeṣṭak-han", "script": "jeṣṭak-han", "rom": "jeṣṭak-han" }, "inheritability": "unique", "notes": "Each clan (kam) has a shrine to her, the Jeṣṭak-han, a wooden hall where weddings and birth/lineage ceremonies are held - a rare Kalash sacred space open to women.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "materialCulture": [
+      { "id": "kalash_jestak_han", "kind": "building", "name": "lineage house-temple", "term": { "value": "jeṣṭak-han", "script": "jeṣṭak-han", "rom": "jeṣṭak-han" }, "role": "Clan's wooden temple/hall dedicated to Jeshtak, used for weddings and family/lineage ceremonies.", "notes": "The social-ritual centre of the kam (clan); open to women.", "sources": [ { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan." } ] }
+    ],
+    "sources": [ { "claim": "Jeshtak (jeṣṭak) is the Kalash goddess of domestic life, family, marriage and lineage; each clan keeps her wooden house-temple, the jeṣṭak-han, where weddings and birth/lineage rites are performed.", "citations": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten." }, { "kind": "scholarship", "reference": "Cacopardo, A.M. & Cacopardo, A.S. (2001). Gates of Peristan. Rome: IsIAO." } ], "weight": "primary" } ],
+    "notes": "The prompt's 'Jestak the lineage goddess'. Her han is one of the few Kalash sanctuaries not barred to women."
+  },
+  {
+    "id": "kalash_indr",
+    "name": { "primary": "Indr the Storm-Lord", "alt": ["Indr", "Warin", "Warén", "Munjem Malik"], "transliterations": { "kalasha-rom": "índr / warín" } },
+    "type": "deity", "origin": "canon", "tradition": "Kalash", "primaryTradition": "Kalash", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "perennial" },
+    "domains": [
+      { "sphereId": "storm-and-thunder", "contextTag": "lifelong", "term": { "value": "warín", "script": "warín", "rom": "warín" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "sphereId": "earth-and-underworld", "contextTag": "lifelong", "term": { "value": "munjem malék", "script": "munjem malék", "rom": "munjem malék" }, "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "faculties": [
+      { "id": "wield_the_storm", "name": "wields the storm as the most dangerous of gods", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "The Kalash Indra is splintered into forms - Warin (the mightiest, most dangerous), Sajigor/Shura Verin, and Munjem Malik (Lord of Middle Earth).", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] },
+      { "id": "slay_his_father", "name": "slays his father to win the middle earth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "As Munjem Malik he kills his father (a Vedic Indra motif) to become Lord of Middle Earth.", "sources": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Indr/Warin is the Kalash storm-god, the mightiest and most dangerous deity, appearing in several Indra-forms - Warendr, Sajigor (Shura Verin) and Munjem Malik (Lord of Middle Earth, who slays his father) - preserving Rigvedic Indra motifs.", "citations": [ { "kind": "scholarship", "reference": "Witzel, M. (2004). Kalash Religion. Groningen: Forsten." }, { "kind": "scholarship", "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1. Aris & Phillips." } ], "weight": "primary" } ],
+    "notes": "Kalasha índr/warín; the most conservatively Indo-Aryan of the Kalash gods. Munjem 'middle', malék < Arabic malik 'king'. The 'earth-and-underworld' domain covers his Munjem Malik (Middle Earth) aspect."
+  },
+  {
+    "id": "nuristani_imra",
+    "name": { "primary": "Imra the Creator", "alt": ["Imra", "Imro", "Mara", "Yama Raja"], "transliterations": { "kamviri-rom": "imró", "kati-rom": "yamrā́i" } },
+    "type": "deity", "origin": "canon", "tradition": "Nuristani", "primaryTradition": "Nuristani", "sex": "male", "vitalStatus": "immortal", "parentIds": [],
+    "temporal": { "era": "creation time / perennial (pre-Islamic Kafiristan)" },
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "term": { "value": "Imró", "script": "Imró", "rom": "imró" }, "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "sphereId": "sky-and-heavens", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1960). Zur Mythologie der Prasun-Kafiren, Paideuma 7." } ] }
+    ],
+    "faculties": [
+      { "id": "breathe_out_the_gods", "name": "creates the other great gods from his breath", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "By his breath Imra brings forth the chief gods (Mon/Moni, Gish, Bagisht); Disani springs from his right breast. He fashions earth and sky.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." }, { "kind": "scholarship", "reference": "Allen, N.J. (1998). Imra, Pentads and Catastrophes. Ethnos 63(3)." } ] }
+    ],
+    "materialCulture": [
+      { "id": "nuristani_imra_temple", "kind": "building", "name": "great wooden temple of Imra", "term": { "value": "", "script": "", "rom": "" }, "role": "Principal Kafir sanctuary (in Prasun), a carved wooden temple housing the god's image, described by Robertson as Kafiristan's chief temple.", "notes": "Elaborately carved pillars with a wooden idol and attached sacrificial space.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "id": "nuristani_imra_idol", "kind": "image", "name": "wooden idol of Imra", "term": { "value": "", "script": "", "rom": "" }, "role": "Carved wooden cult-image of the creator, receiving animal sacrifice; the supreme god Mara was also represented on horseback.", "notes": "Kafir gods were shown standing, seated or equestrian; many effigies were looted to Kabul at the 1896 conquest.", "sources": [ { "kind": "scholarship", "reference": "Edelberg, L. & Jones, S. (1979). Nuristan." } ] }
+    ],
+    "sources": [ { "claim": "Imra (Imro/Mara, etymologically Yama-raja) is the supreme creator and sky god of the pre-Islamic Nuristani (Kafir) pantheon, who created the other great gods from his breath and was worshipped in Kafiristan's chief carved-wooden temple.", "citations": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush. London: Lawrence & Bullen." }, { "kind": "scholarship", "reference": "Buddruss, G. (1960). Zur Mythologie der Prasun-Kafiren. Paideuma 7: 200-209." }, { "kind": "scholarship", "reference": "Allen, N.J. (1998). Imra, Pentads and Catastrophes. Ethnos 63(3): 405-420." } ], "weight": "primary" } ],
+    "notes": "Nuristani/Kafir creator; name from Indo-Aryan *Yama-raja(n) ('King Yama'). The religion was largely suppressed when Kafiristan was conquered and Islamized (renamed Nuristan, 'land of light') in 1895-96. Counterpart of Kalash Dezau."
+  },
+  {
+    "id": "nuristani_gish",
+    "name": { "primary": "Gish the War-God", "alt": ["Gish", "Giwish", "Gywysh", "Great Gish"], "transliterations": { "kamviri-rom": "gíš", "waigali-rom": "gīweš" } },
+    "type": "deity", "origin": "canon", "tradition": "Nuristani", "primaryTradition": "Nuristani", "sex": "male", "vitalStatus": "immortal", "parentIds": ["nuristani_imra"],
+    "temporal": { "era": "perennial (pre-Islamic Kafiristan)" },
+    "domains": [
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Gíš", "script": "Gíš", "rom": "gíš" }, "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "sphereId": "victory-and-glory", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1." } ] }
+    ],
+    "faculties": [
+      { "id": "lead_raiders_to_victory", "name": "leads warriors to victory in raid and battle", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Invoked for victory and clan protection; the favourite god of the Siah-Posh of the Bashgal, with one or more shrines in every village. Warrior-honour and head-taking raids were under his patronage.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "id": "rank_below_moni", "name": "ranks next after the prophet Moni among the gods", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Created by Imra (son of Imra and Utr in some accounts); in the divine hierarchy Gish stands next to Moni, the chief prophet of Imra.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] }
+    ],
+    "materialCulture": [
+      { "id": "nuristani_gish_shrine", "kind": "cult object", "name": "shrine and effigy of Gish", "term": { "value": "", "script": "", "rom": "" }, "role": "Village war-shrine of Gish, with a wooden or stone effigy (sometimes equestrian) before which sacrifices were made and war-honours proclaimed.", "notes": "Multiple shrines per Bashgal village; Kafir effigies came in standing, seated and equestrian types.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." }, { "kind": "scholarship", "reference": "Edelberg, L. & Jones, S. (1979). Nuristan." } ] }
+    ],
+    "sources": [ { "claim": "Gish (Giwish), son of the creator Imra, is the war-god and warrior culture-hero of the Nuristani Kafirs - the most popular deity of the Siah-Posh of the Bashgal, invoked for victory and clan protection, with shrines and effigies in every village.", "citations": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush. London: Lawrence & Bullen." }, { "kind": "scholarship", "reference": "Jettmar, K. (1986). The Religions of the Hindukush, vol. 1: The Religion of the Kafirs. Aris & Phillips." } ], "weight": "primary" } ],
+    "notes": "Foregrounded war-god/culture-hero. Kamviri gíš, Waigali gīweš; centre of the most active cult among the Siah-Posh ('black-robed') Kafirs of the Bashgal valley. parentId links to Imra, his creator."
+  },
+  {
+    "id": "nuristani_moni",
+    "name": { "primary": "Moni the Prophet-Hero", "alt": ["Moni", "Mon", "Mandi", "Māndi"], "transliterations": { "kamviri-rom": "mâni / mandi" } },
+    "type": "demigod", "origin": "canon", "tradition": "Nuristani", "primaryTradition": "Nuristani", "sex": "male", "vitalStatus": "immortal", "parentIds": ["nuristani_imra"],
+    "temporal": { "era": "mythic age (pre-Islamic Kafiristan)" },
+    "domains": [
+      { "sphereId": "prophecy-and-revelation", "contextTag": "lifelong", "term": { "value": "Moni", "script": "Moni", "rom": "moni" }, "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Māndi", "script": "Māndi", "rom": "māndi" }, "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1960). Zur Mythologie der Prasun-Kafiren, Paideuma 7." } ] }
+    ],
+    "faculties": [
+      { "id": "march_against_demons", "name": "marches against and slays the demons", "term": { "value": "yuš", "script": "", "rom": "yuš" }, "inheritability": "unique", "notes": "As Mandi he changes into a boy, infiltrates the demoness Espereg-era's household, then gathers the gods and marches to destroy the demons (yuš).", "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1960). Zur Mythologie der Prasun-Kafiren, Paideuma 7." } ] },
+      { "id": "serve_as_imra_prophet", "name": "serves as Imra's foremost prophet and intermediary", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Chief prophet/mouthpiece of the creator Imra; closest associate of Imra and outranking the war-god Gish.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] }
+    ],
+    "materialCulture": [],
+    "sources": [ { "claim": "Moni (Mon/Mandi), created by Imra and his closest associate, is the prophet-hero of the Nuristani Kafirs - ranked above the war-god Gish - and the demon-slaying culture-hero who gathers the gods to destroy the demons.", "citations": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush. London: Lawrence & Bullen." }, { "kind": "scholarship", "reference": "Buddruss, G. (1960). Zur Mythologie der Prasun-Kafiren. Paideuma 7: 200-209." } ], "weight": "primary" } ],
+    "notes": "The prompt's 'Mon/Moni the prophet-hero'. Demigod culture-hero (prophet + demon-slayer); corresponds to Kalash Mahandeo. Kamviri Mâni/Mandi. parentId links to Imra, his creator."
+  },
+  {
+    "id": "nuristani_disani",
+    "name": { "primary": "Disani the Earth-Mother", "alt": ["Disani", "Disni", "Dizane", "Nirmali"], "transliterations": { "kamviri-rom": "disâni", "prasun-rom": "dízane" } },
+    "type": "deity", "origin": "canon", "tradition": "Nuristani", "primaryTradition": "Nuristani", "sex": "female", "vitalStatus": "immortal", "parentIds": ["nuristani_imra"],
+    "temporal": { "era": "perennial (pre-Islamic Kafiristan)" },
+    "domains": [
+      { "sphereId": "fertility-and-fortune", "contextTag": "lifelong", "term": { "value": "Disâni", "script": "Disâni", "rom": "disâni" }, "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "sphereId": "agriculture", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1974). Some Reflections on a Kafir Myth, in Cultures of the Hindukush." } ] }
+    ],
+    "faculties": [
+      { "id": "grant_fertility", "name": "grants fertility of fields, herds and women", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Supreme goddess of fertility; milk and milk-products were offered to her at hillside altars. Appears as a woman wearing a golden garland, dwelling in the earthly world.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "id": "spring_from_imra", "name": "springs from the creator's right breast", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "In Kalasha/Prasun accounts Imra threw her up from his right breast; other traditions make her daughter of Sudrem or of Indr by Nangi-Wutr. Mother of Bagisht.", "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1974). Some Reflections on a Kafir Myth, in Cultures of the Hindukush." } ] }
+    ],
+    "materialCulture": [
+      { "id": "nuristani_disani_altar", "kind": "altar", "name": "hillside milk-altar of Disani", "term": { "value": "", "script": "", "rom": "" }, "role": "Open altar on the hillside where milk and dairy offerings were made to the goddess.", "notes": "Dairy offerings reflect her pastoral-fertility character.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] }
+    ],
+    "sources": [ { "claim": "Disani (Dizane/Nirmali) is the great fertility goddess of the Nuristani Kafirs, born from the creator Imra, mother of Bagisht, giver of agrarian and human fertility, receiving milk offerings at hillside altars.", "citations": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush. London: Lawrence & Bullen." }, { "kind": "scholarship", "reference": "Buddruss, G. (1974). Some Reflections on a Kafir Myth, in K. Jettmar & L. Edelberg (eds.), Cultures of the Hindukush. Wiesbaden: Steiner." } ], "weight": "primary" } ],
+    "notes": "The prompt's 'Disani the fertility goddess'. Kamviri Disâni, Prasun Dízane; cognate with Kalash Dizane/Dezalik. Parentage varies; parentId links to Imra per the dominant account."
+  },
+  {
+    "id": "nuristani_bagisht",
+    "name": { "primary": "Bagisht the River-Lord", "alt": ["Bagisht", "Bagisto", "Pagisht"], "transliterations": { "kamviri-rom": "bagíšt", "prasun-rom": "bagišt" } },
+    "type": "deity", "origin": "canon", "tradition": "Nuristani", "primaryTradition": "Nuristani", "sex": "male", "vitalStatus": "immortal", "parentIds": ["nuristani_disani"],
+    "temporal": { "era": "perennial (pre-Islamic Kafiristan)" },
+    "domains": [
+      { "sphereId": "rivers-and-waters", "contextTag": "lifelong", "term": { "value": "Bagíšt", "script": "Bagíšt", "rom": "bagíšt" }, "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "sphereId": "wealth-and-prosperity", "contextTag": "lifelong", "term": { "value": "", "script": "", "rom": "" }, "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1974). Some Reflections on a Kafir Myth, in Cultures of the Hindukush." } ] }
+    ],
+    "faculties": [
+      { "id": "smooth_the_torrent", "name": "calms the river torrent at his birth", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "Born in the current of the Prasun river, whereupon the turbulent waters became smooth and parted to let the infant reach the bank; son of the goddess Disani.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] },
+      { "id": "grant_flood_prosperity", "name": "grants the prosperity of flood-watered fields", "term": { "value": "", "script": "", "rom": "" }, "inheritability": "unique", "notes": "God of flood-waters and prosperity, celebrated at the main festivals of the Kafir agricultural year and given sacrificial portions of meat.", "sources": [ { "kind": "scholarship", "reference": "Buddruss, G. (1974). Some Reflections on a Kafir Myth, in Cultures of the Hindukush." } ] }
+    ],
+    "materialCulture": [
+      { "id": "nuristani_bagisht_waterside_shrine", "kind": "cult object", "name": "waterside shrine of Bagisht", "term": { "value": "", "script": "", "rom": "" }, "role": "Simple shrine placed close to running water (river or spring) where the god received meat offerings; he had no elaborate temple.", "notes": "His cult was bound to water-sources rather than to large sanctuaries.", "sources": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush." } ] }
+    ],
+    "sources": [ { "claim": "Bagisht, son of the goddess Disani, is the Nuristani Kafir god of river flood-waters and prosperity, born in the Prasun river current (which he calmed), with simple shrines set beside water and sacrificial meat at the agricultural festivals.", "citations": [ { "kind": "scholarship", "reference": "Robertson, G.S. (1896). The Kafirs of the Hindu-Kush. London: Lawrence & Bullen." }, { "kind": "scholarship", "reference": "Buddruss, G. (1974). Some Reflections on a Kafir Myth, in K. Jettmar & L. Edelberg (eds.), Cultures of the Hindukush. Wiesbaden: Steiner." } ], "weight": "primary" } ],
+    "notes": "One of the gods created by Imra (with Mon and Gish) in the standard account, though birth-myths make him son of Disani. River/wealth god; Kamviri bagíšt. parentId links to Disani per the birth-myth."
+  }
+]
+```
+
+Summary of what I delivered and how I verified it:
+
+- **Coverage (26 figures)**: Santal 6 (Thakur Jiu/Sing Bonga, Marang Buru, Jaher Era, Pilcu Haram, Pilcu Budhi, Moreko-Turuiko), Gondi 5 (Lingo Pen, Persa Pen, Bhimal Pen, Kali Kankali, Anga Dev), Bhil 4 (Bhagwan, Mogra Dev, Indi Raja/Inddeo, Pithora), Kalash 6 (Dezau, Balumain, Mahandeo, Sajigor, Jeshtak, Indr), Nuristani 5 (Imra, Gish, Moni, Disani, Bagisht).
+- **Culture-heroes foregrounded** with attested gear: **Lingo Pen** (frees the gods from Kachargad cave by music, founds Koya Punem/Saga system; the ghotul dhol), **Balumain** (taught Chaumos, returns from Tsiyam on horseback — Witzel's Indra/RV 10.86 parallel), **Gish** (Siah-Posh war-cult; village shrines/effigies).
+- **Schema/rules verified by script**: valid JSON; all `type` values in the allowed enum; every `origin` = "canon"; ids snake_case `<tradition>_<name>` with **no collisions** against existing-ids.json; no banned coinages (kinesis/mancy/pathy/portation/kinetic/telepath); domains use kebab `sphereId`; faculties are verb-phrases with verb-slug ids; materialCulture uses `id`/`name` (never `item`) and only lists attested objects (else `[]`); English/plain word leads every `name.primary`, native term in `term` with script+rom (Ol Chiki + Devanagari for Santal, Latin+rom for Kalash/Nuristani, Devanagari for Gondi/Bhil), gloss in notes.
+- **Citations** are real comparative-mythology/ethnographic scholarship: Robertson (1896), Witzel (2004), Cacopardo & Cacopardo (Gates of Peristan; BSOAS 2016), Jettmar (1986), Buddruss (1960/1974), N.J. Allen (1998); Hislop's "Legend of Lingo" (1866), Elwin, Fuchs, Grigson, Russell & Hira Lal; Bodding, Troisi, Culshaw, Archer; Koppers, Naik, Jain.
+
+Note on method: `WebFetch` was blocked for every host in this sandbox (HTTP 403), so all research was conducted via `WebSearch`, which returned rich enough snippets to extract specific facts and citations. No repository files were modified. (My working JSON lives at `/tmp/indigenous_figures_v2.json`, but the authoritative deliverable is the fenced array above.)
