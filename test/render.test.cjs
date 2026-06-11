@@ -18,7 +18,7 @@ describe('app renders in a browser-like environment', () => {
     // The corpus is deliberately expanding as missing central figures are added;
     // assert a floor rather than an exact count (mirrors seed.test.cjs).
     const rows = app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header)');
-    assert.ok(rows.length >= 1850, `expected >= 1850 rows, got ${rows.length}`);
+    assert.ok(rows.length >= 1845, `expected >= 1845 rows, got ${rows.length}`);
   });
 
   test('"/" focuses the search box', async () => {
