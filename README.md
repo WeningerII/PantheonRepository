@@ -58,7 +58,7 @@ npm test      # node --test
 ```
 
 - `test/seed.test.cjs` runs `app/data.js` in an isolated VM and checks the seeded
-  corpus (≥1,850 figures, exactly 56 territories, the `window.__PR` surface,
+  corpus (≥1,850 figures, exactly 170 territories, the `window.__PR` surface,
   no hard-schema violations, and ceilings on warn-level integrity drift).
 - `test/render.test.cjs` boots the whole app in jsdom and exercises the views,
   keyboard navigation (j/k/Enter/Escape, ⌘K and Ctrl+K), the detail panel, the

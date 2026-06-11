@@ -46,8 +46,8 @@ test('seeds the full figure corpus (growing)', () => {
   assert.ok(Object.keys(people).length >= 1850, `expected >= 1850 figures, got ${Object.keys(people).length}`);
 });
 
-test('seeds 56 atlas territories', () => {
-  assert.strictEqual(Object.keys(atlas).length, 56);
+test('seeds 170 atlas territories', () => {
+  assert.strictEqual(Object.keys(atlas).length, 170);
 });
 
 test('exposes the constants the UI reads on window.__PR', () => {
@@ -85,7 +85,7 @@ test('warn-level integrity drift stays at its accepted ceilings', () => {
   // tradition-constants backfill.
   const danglingCeiling = 0;
   const unknownItemCeiling = 0;
-  const eraGapCeiling = 1200;  // unmapped-tradition era values (constants backfill pending)
+  const eraGapCeiling = 336;   // era values in the 68 traditions still awaiting wave-6b constants
   assert.ok(num(/(\d+) dangling references/) <= danglingCeiling,
     `dangling references grew past ${danglingCeiling}:\n${all.split('\n').filter((l) => /dangling/.test(l)).join('\n')}`);
   const unknownItems = (all.match(/generated item for unknown figure/g) || []).length;
