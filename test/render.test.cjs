@@ -48,11 +48,38 @@ describe('app renders in a browser-like environment', () => {
     // serves a basemap fixture, so a placeholder here means Atlas broke).
     const asvg = app.document.querySelector('.atlas-canvas svg');
     assert.ok(asvg, 'atlas svg did not mount');
-    assert.ok(asvg.querySelectorAll('path').length >= 100,
+    assert.ok(asvg.querySelectorAll('path').length >= 250,
       `expected territory polygons on the map, got ${asvg.querySelectorAll('path').length} paths`);
+    // EVERY tradition renders: the stats line counts renderedTraditions, and
+    // a stale-storage or projection regression that drops coverage must fail
+    // here, not in a user's screenshot.
+    const stats = app.document.querySelector('.atlas-stats')?.textContent || '';
+    const m = stats.match(/(\d+)\s*traditions/);
+    assert.ok(m && parseInt(m[1], 10) >= 238,
+      `expected all 238 mapped traditions on the atlas, stats read "${stats}"`);
     await app.clickButton('Browse');
     assert.ok(app.document.querySelector('.browse-table'), 'did not return to browse');
     assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('rail-filtering to a backfilled tradition still shows it on the atlas', async () => {
+    // Screenshot regression: selecting only wave-6b traditions in the rail
+    // showed "0 traditions · 0 polygons" when the browser held a stale atlas.
+    // With a current atlas, a filter of one new tradition must render it.
+    const rail = [...app.document.querySelectorAll('.rail-row-trad')]
+      .find((r) => r.textContent.includes('Cherokee'));
+    assert.ok(rail, 'Cherokee not in the tradition rail');
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+    await app.clickButton('Atlas');
+    const stats = app.document.querySelector('.atlas-stats')?.textContent || '';
+    assert.match(stats, /1\s*traditions/, `filtered atlas stats read "${stats}"`);
+    assert.ok(app.document.querySelectorAll('.atlas-canvas svg path').length > 3,
+      'the filtered tradition rendered no polygons');
+    // Clear the filter and return to Browse for the tests that follow.
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+    await app.clickButton('Browse');
   });
 
   test('the corpus exceeds the localStorage quota: people unpersisted, atlas still persists', () => {

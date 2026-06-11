@@ -120,7 +120,10 @@ dist/
 - **Data layer.** `app/data.js` is plain, IIFE-wrapped JavaScript (no JSX, no
   React). On load it builds the seed data, exposes it on `window.__PR`, and
   *attempts* to persist it to `localStorage` (`pantheon_registry_v9` for figures,
-  `pantheon_atlas_v2` for territories), seeding only when storage is empty. The
+  `pantheon_atlas_v3` for territories). The figure corpus is seeded only when
+  storage is empty (preserving edits where a write can succeed at all); the
+  atlas — pure seed data with no editing UI — is overwritten on every load so
+  returning visitors can never be pinned to a stale territory set. The
   corpus now exceeds the ~5 MB localStorage quota in every mainstream browser, so
   the figure write is refused and the UI runs from the in-memory seed on
   `window.__PR` — meaning **edits to the figure corpus do not survive a reload at
