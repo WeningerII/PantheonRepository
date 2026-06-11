@@ -89,7 +89,7 @@ app/
   Shell.jsx                   Top bar, left rail, main column; owns keyboard nav
   Browse.jsx                  Dense table view (type tier / tradition / era)
   Graph.jsx                   Cross-tradition relation graph (d3)
-  Atlas.jsx                   Plate-carrée world map of tradition territories
+  Atlas.jsx                   Natural Earth world map of tradition territories
   Items.jsx                   Material-culture registry: index + item detail
   Detail.jsx                  Slide-over entry detail panel
   Lineage.jsx                 Per-entry parentage tree (ancestors / descendants)
