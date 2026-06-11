@@ -1,5 +1,18 @@
 # Pantheon Registry — Repository Code Review
 
+> ## ✅ Remediation status: ALL FINDINGS RESOLVED
+> Every finding below (1 Critical · 11 High · 22 Medium · 28 Low · 12 Nit) was
+> fixed in the commits following this review — see PRs **#3** (review
+> remediation: UI wiring, date-axis family, perf, storage, build/CI hardening,
+> six newly authored figures, suite 39→50+ tests), **#4** (tradition-constants
+> backfill wave 6), and **#5** (Atlas production renderer + wave 6b: 100%
+> territory/date/pigment coverage, integrity ceilings ratcheted to hard zero).
+> Exceptions, deliberately accepted: D7 (actions pinned by tag, not SHA — no
+> offline way to verify SHAs from the build sandbox) and the `github-pages`
+> environment's deployment-branches rule (a repo *setting*, not code — it still
+> blocks `main`; see README's deployment section). This document is preserved
+> unchanged below as the point-in-time review of commit `adce2fc`.
+
 **Commit reviewed:** `adce2fc` ("Bump seed cache key v8→v9 to flush stale localStorage corpus")
 **Date:** 2026-06-09
 **Scope:** entire repository — `app/*.jsx`, `app/data.js` (all executable regions + programmatic audit of the generated corpus), `app/styles.css` (structural pass), `index.html`, `build.py`, `package.json`, `.github/workflows/*`, `scripts/*`, `test/*`, `dist/` (seams + reproducibility), `data-sources/` (consumption), `README.md`, `DOGFOOD.md`.
