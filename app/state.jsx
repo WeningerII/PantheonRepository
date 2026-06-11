@@ -10,7 +10,7 @@ const { useState, useEffect, useMemo, useCallback, useRef } = React;
 // exactly how a stale-corpus desync happens. Literal fallbacks only guard
 // the impossible no-__PR case.
 const PEOPLE_KEY = (window.__PR && window.__PR.PEOPLE_KEY) || 'pantheon_registry_v9';
-const ATLAS_KEY  = (window.__PR && window.__PR.ATLAS_KEY)  || 'pantheon_atlas_v2';
+const ATLAS_KEY  = (window.__PR && window.__PR.ATLAS_KEY)  || 'pantheon_atlas_v3';
 
 // Type-tier metadata. The five tiers form an ordinal scale of divinity:
 // deity (1) → demigod (½) → quartigod (¼) → scion (trace) → mortal (0).
