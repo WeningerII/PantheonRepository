@@ -213,6 +213,46 @@ describe('app renders in a browser-like environment', () => {
     assert.ok(!app.document.querySelector('.cmdk'), 'Escape did not close the palette');
   });
 
+  test('#/atlas/<tradition> deep-links to a focused territory', async () => {
+    await app.act(async () => {
+      app.window.location.hash = '#/atlas/' + encodeURIComponent('Greek');
+      app.window.dispatchEvent(new app.window.Event('hashchange'));
+    });
+    await app.flush();
+    const chip = app.document.querySelector('.graph-focused-label');
+    assert.ok(chip, 'focus chip did not render for the deep link');
+    assert.match(chip.textContent, /Greek/, 'deep link focused the wrong tradition');
+    // Clear focus + return to browse for the tests that follow.
+    await app.act(async () => {
+      app.window.location.hash = '#/browse';
+      app.window.dispatchEvent(new app.window.Event('hashchange'));
+    });
+    await app.flush();
+  });
+
+  test('atlas geometry: rings wind spherically and smoothing stays inside the hull', () => {
+    const { chaikinSmooth, ringToFeature } = app.window.__atlasGeo;
+    const d3 = app.window.d3;
+    // A small Mediterranean box, authored in either direction, must come out
+    // as a SMALL spherical polygon — the wrong winding denotes the rest of
+    // the globe and floods the world with one territory's fill.
+    const ring = [[10, 35], [25, 35], [25, 45], [10, 45], [10, 35]];
+    for (const candidate of [ring, ring.slice().reverse()]) {
+      const f = ringToFeature(candidate, false);
+      assert.ok(f, 'feature not built');
+      assert.ok(d3.geoArea(f) < Math.PI / 2,
+        `ring wound to cover ${d3.geoArea(f).toFixed(2)} sr — flooded the globe`);
+    }
+    // Chaikin: corner-cutting quadruples the point count over two passes and,
+    // being a convex combination, can never leave the hull's bounding box.
+    const smooth = chaikinSmooth(ring);
+    assert.ok(smooth.length >= (ring.length - 1) * 4 - 2, 'smoothing lost points');
+    for (const [lon, lat] of smooth) {
+      assert.ok(lon >= 10 && lon <= 25 && lat >= 35 && lat <= 45,
+        `smoothed point (${lon},${lat}) escaped the authored hull`);
+    }
+  });
+
   test('item detail Prev/Next follows the on-screen index order', async () => {
     await app.clickButton('Items');
     const rows = [...app.document.querySelectorAll('.item-row')];
