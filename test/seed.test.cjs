@@ -101,6 +101,18 @@ test('warn-level integrity drift stays at its accepted ceilings', () => {
   assert.ok(!/Layer 3 era inversions/.test(all), 'era inversions reappeared');
 });
 
+test('family-graph parity floors hold (wave-7 enrichment)', () => {
+  // The generated waves arrived with ZERO family links; wave 7 authored 248
+  // figures' worth of cited genealogy. These floors pin the result: total
+  // relation edges (after auto-mirroring) and the count of figures with no
+  // family links at all can only improve from here.
+  const ppl = Object.values(people);
+  const rels = ppl.reduce((n, p) => n + (p.relations || []).length, 0);
+  const noFam = ppl.filter(p => !(p.parentIds || []).length && !(p.relations || []).length).length;
+  assert.ok(rels >= 2300, `relation edges fell to ${rels} (floor 2300)`);
+  assert.ok(noFam <= 675, `figures with no family links grew to ${noFam} (ceiling 675)`);
+});
+
 test('documented authored-tier stances are exactly the reviewed ten', () => {
   const line = logs.info.find((m) => /authored-tier stances/.test(m)) || '';
   const m = line.match(/(\d+) documented authored-tier stances/);
