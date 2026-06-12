@@ -412,7 +412,7 @@ const RELATION_FAMILIES = [
   },
   {
     name: 'Cross-tradition',
-    kinds: ['interpretatio', 'syncretism', 'equated with',
+    kinds: ['interpretatio', 'syncretism', 'equated with', 'equated-with',
             'foundational precursor to', 'post death continuation',
             'sex exchange with', 'primary', 'secondary'],
   },
