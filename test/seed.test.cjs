@@ -113,6 +113,22 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   assert.ok(noFam <= 675, `figures with no family links grew to ${noFam} (ceiling 675)`);
 });
 
+test('cross-tradition equivalence network parity floor (wave-7c)', () => {
+  // The Graph's default mode renders the BETWEEN-pantheon layer. It shipped
+  // with ~33 pairs (all Greco-Roman-Etruscan); wave 7c authored the attested
+  // world network — Herodotus's tables, the Anatolian storm chain, the
+  // Polynesian cognates, the Sakra reception chain... This floor pins it.
+  let directed = 0;
+  for (const p of Object.values(people)) {
+    for (const r of p.relations || []) {
+      const k = (r.kind || '').toLowerCase();
+      if (!['equated-with', 'interpretatio', 'syncretism'].includes(k)) continue;
+      if (people[r.personId] && people[r.personId].tradition !== p.tradition) directed++;
+    }
+  }
+  assert.ok(directed >= 450, `cross-tradition refs fell to ${directed} (floor 450 ≈ 225 pairs)`);
+});
+
 test('documented authored-tier stances are exactly the reviewed ten', () => {
   const line = logs.info.find((m) => /authored-tier stances/.test(m)) || '';
   const m = line.match(/(\d+) documented authored-tier stances/);
