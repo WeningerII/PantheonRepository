@@ -821,8 +821,10 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 .tier-tag.tier-scion     { color: #2A6840; }
 .tier-tag.tier-mortal    { color: #2A2A26; }  /* match detail eyebrow */
 
-/* ORIG flag — non-canon origin marker. Only 3 of 601 entries; cost of the
-   badge is per-row so it must stay quiet. Italic serif glyph, no fill. */
+/* ORIG flag — non-canon origin marker, shown beside a name only when its
+   origin isn't 'canon'. Currently latent (every entry in the corpus is canon),
+   kept defensively; the badge cost is per-row so it must stay quiet. Italic
+   serif glyph, no fill. */
 .orig-flag {
   font: italic 500 11px/1 var(--font-serif);
   letter-spacing: 0.02em;
