@@ -507,9 +507,10 @@ function IconographyBlock({ entry }) {
 function CultBlock({ entry }) {
   const c = entry.cult;
   if (!c) return null;
-  const centers   = Array.isArray(c.cultCenters) ? c.cultCenters : [];
-  const festivals = Array.isArray(c.festivals)   ? c.festivals   : [];
-  if (!centers.length && !festivals.length) return null;
+  const centers     = Array.isArray(c.cultCenters) ? c.cultCenters : [];
+  const festivals   = Array.isArray(c.festivals)   ? c.festivals   : [];
+  const priesthoods = Array.isArray(c.priesthoods) ? c.priesthoods : [];
+  if (!centers.length && !festivals.length && !priesthoods.length) return null;
   return (
     <div className="section section-cult-wrap">
       <h2>
@@ -518,6 +519,7 @@ function CultBlock({ entry }) {
           {[
             centers.length > 0 ? `${centers.length} center${centers.length === 1 ? '' : 's'}` : null,
             festivals.length > 0 ? `${festivals.length} festival${festivals.length === 1 ? '' : 's'}` : null,
+            priesthoods.length > 0 ? `${priesthoods.length} priesthood${priesthoods.length === 1 ? '' : 's'}` : null,
           ].filter(Boolean).join(' · ')}
         </span>
       </h2>
@@ -552,6 +554,23 @@ function CultBlock({ entry }) {
           }}
           metas={f => [f.type, f.date || f.cadence]}
           notes={f => f.notes}
+        />
+      )}
+      {priesthoods.length > 0 && (
+        <RichSection
+          flavor="cult"
+          title="Priesthood"
+          subSection
+          items={priesthoods}
+          name={pr => {
+            const base = (typeof pr.title === 'string' ? pr.title : null)
+              || (typeof pr.name === 'string' ? pr.name : null) || (pr.id ? String(pr.id).replace(/[-_]+/g, ' ') : null) || safeLabel(pr);
+            return pr.term && pr.term.value
+              ? <span>{base} <span className="domain-term">{pr.term.value}{pr.term.rom && <span className="domain-term-rom"> {pr.term.rom}</span>}</span></span>
+              : base;
+          }}
+          metas={pr => [pr.type, pr.period]}
+          notes={pr => pr.notes}
         />
       )}
     </div>
