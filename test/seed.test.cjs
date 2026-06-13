@@ -242,6 +242,27 @@ test('priesthood coverage floor (wave-7j)', () => {
   assert.deepStrictEqual(bad, [], `uncited/untitled/untyped priesthoods:\n${bad.slice(0, 20).join('\n')}`);
 });
 
+test('offering coverage floor (wave-7k)', () => {
+  // Offerings/sacrifices (the WHAT of cult) had 0% coverage. Wave 7k documented
+  // the attested sacrifices, libations, food/first-fruits, incense, votives,
+  // and ritual taboos for each figure — each with a type and (mostly) a
+  // native-script term — lifting it to ~460 figures / ~497 offerings. This
+  // completes the cult complex (where/when/who/what); floor pins it so the new
+  // Cult "Offerings & sacrifices" sub-section can't silently empty again.
+  const ppl = Object.values(people);
+  const of = (p) => (p.cult && Array.isArray(p.cult.offerings)) ? p.cult.offerings : [];
+  const withOff = ppl.filter(p => of(p).length).length;
+  const total = ppl.reduce((n, p) => n + of(p).length, 0);
+  assert.ok(withOff >= 430, `figures with offerings fell to ${withOff} (floor 430)`);
+  assert.ok(total >= 460, `total offerings fell to ${total} (floor 460)`);
+  // Every offering must carry an offering description, a type, and a citation.
+  const bad = [];
+  for (const p of ppl) for (const o of of(p)) {
+    if (!o.offering || !o.type || !(o.sources || []).length) bad.push(`${p.id}: ${o.offering || '∅'}`);
+  }
+  assert.deepStrictEqual(bad, [], `uncited/untyped/empty offerings:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('epithet coverage floor (wave-7e)', () => {
   // The Epithets panel rendered for nobody (4 figures' epithets were stranded
   // at linguistic.epithets; the rest were unauthored). Wave 7e lifted those

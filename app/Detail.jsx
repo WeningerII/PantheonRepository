@@ -510,7 +510,8 @@ function CultBlock({ entry }) {
   const centers     = Array.isArray(c.cultCenters) ? c.cultCenters : [];
   const festivals   = Array.isArray(c.festivals)   ? c.festivals   : [];
   const priesthoods = Array.isArray(c.priesthoods) ? c.priesthoods : [];
-  if (!centers.length && !festivals.length && !priesthoods.length) return null;
+  const offerings   = Array.isArray(c.offerings)   ? c.offerings   : [];
+  if (!centers.length && !festivals.length && !priesthoods.length && !offerings.length) return null;
   return (
     <div className="section section-cult-wrap">
       <h2>
@@ -520,6 +521,7 @@ function CultBlock({ entry }) {
             centers.length > 0 ? `${centers.length} center${centers.length === 1 ? '' : 's'}` : null,
             festivals.length > 0 ? `${festivals.length} festival${festivals.length === 1 ? '' : 's'}` : null,
             priesthoods.length > 0 ? `${priesthoods.length} priesthood${priesthoods.length === 1 ? '' : 's'}` : null,
+            offerings.length > 0 ? `${offerings.length} offering${offerings.length === 1 ? '' : 's'}` : null,
           ].filter(Boolean).join(' · ')}
         </span>
       </h2>
@@ -571,6 +573,23 @@ function CultBlock({ entry }) {
           }}
           metas={pr => [pr.type, pr.period]}
           notes={pr => pr.notes}
+        />
+      )}
+      {offerings.length > 0 && (
+        <RichSection
+          flavor="festivals"
+          title="Offerings & sacrifices"
+          subSection
+          items={offerings}
+          name={of => {
+            const base = (typeof of.offering === 'string' ? of.offering : null)
+              || (typeof of.name === 'string' ? of.name : null) || (of.id ? String(of.id).replace(/[-_]+/g, ' ') : null) || safeLabel(of);
+            return of.term && of.term.value
+              ? <span>{base} <span className="domain-term">{of.term.value}{of.term.rom && <span className="domain-term-rom"> {of.term.rom}</span>}</span></span>
+              : base;
+          }}
+          metas={of => [of.type, of.period]}
+          notes={of => of.notes}
         />
       )}
     </div>
