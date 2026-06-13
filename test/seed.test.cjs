@@ -222,6 +222,26 @@ test('cult-site coverage floor (wave-7i)', () => {
   assert.deepStrictEqual(bad, [], `uncited or unnamed cult sites:\n${bad.slice(0, 20).join('\n')}`);
 });
 
+test('priesthood coverage floor (wave-7j)', () => {
+  // Priesthoods (the WHO of cult: clergy/orders/colleges) had ~0% coverage
+  // (1 figure). Wave 7j documented the attested priestly offices that served
+  // each figure — each with a type and (mostly) a native-script title —
+  // lifting it to ~497 figures / ~540 offices. Floor pins it so the new Cult
+  // "Priesthood" sub-section can't silently empty again.
+  const ppl = Object.values(people);
+  const pr = (p) => (p.cult && Array.isArray(p.cult.priesthoods)) ? p.cult.priesthoods : [];
+  const withPriest = ppl.filter(p => pr(p).length).length;
+  const total = ppl.reduce((n, p) => n + pr(p).length, 0);
+  assert.ok(withPriest >= 470, `figures with priesthoods fell to ${withPriest} (floor 470)`);
+  assert.ok(total >= 500, `total priesthood offices fell to ${total} (floor 500)`);
+  // Every office must carry a title, a type, and at least one cited source.
+  const bad = [];
+  for (const p of ppl) for (const o of pr(p)) {
+    if (!o.title || !o.type || !(o.sources || []).length) bad.push(`${p.id}: ${o.title || '∅'}`);
+  }
+  assert.deepStrictEqual(bad, [], `uncited/untitled/untyped priesthoods:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('epithet coverage floor (wave-7e)', () => {
   // The Epithets panel rendered for nobody (4 figures' epithets were stranded
   // at linguistic.epithets; the rest were unauthored). Wave 7e lifted those
