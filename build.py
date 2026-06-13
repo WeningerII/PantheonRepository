@@ -102,6 +102,7 @@ def main() -> None:
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pantheon Registry</title>
+<meta name="description" content="A browsable, source-cited index of the world's mythological and historical figures — their genealogies, domains, epithets, iconography, and cult (sites, festivals, priesthoods, offerings) — across hundreds of traditions. Client-rendered single-page app." />
 
 <!-- Early error trap. Surfaces boot-time errors into the visible boot overlay. -->
 <script>
