@@ -133,6 +133,28 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   assert.ok(noFam <= 380, `figures with no family links grew to ${noFam} (ceiling 380)`);
 });
 
+test('iconography coverage floor (wave-7g)', () => {
+  // Iconography (attributes/sacred animals/plants) was authored for 240
+  // figures but rendered for NONE (Detail had no iconography section).
+  // Wave 7g added the section and authored the attested visual emblems
+  // across the deity/demigod tier. Floor pins it.
+  const ppl = Object.values(people);
+  const items = (p) => { const i = p.iconography || {}; return (i.attributes || []).length + (i.sacredAnimals || []).length + (i.sacredPlants || []).length; };
+  const withIco = ppl.filter(p => items(p) > 0).length;
+  const total = ppl.reduce((n, p) => n + items(p), 0);
+  assert.ok(withIco >= 500, `figures with iconography fell to ${withIco} (floor 500)`);
+  assert.ok(total >= 1200, `total iconography items fell to ${total} (floor 1200)`);
+  // Every iconography item must carry an id + a citation.
+  const bad = [];
+  for (const p of ppl) {
+    const i = p.iconography || {};
+    for (const sub of ['attributes', 'sacredAnimals', 'sacredPlants']) {
+      for (const it of (i[sub] || [])) if (!it.id || !(it.sources || []).length) bad.push(`${p.id}.${sub}: ${it.id || '∅'}`);
+    }
+  }
+  assert.deepStrictEqual(bad, [], `uncited or id-less iconography:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('cult-practice coverage floor (wave-7f)', () => {
   // Festivals/rites/ceremonies were 5% coverage (28 figures); wave 7f
   // authored the attested practices across the deity/demigod tier. Floor
