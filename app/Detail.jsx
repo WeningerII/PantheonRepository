@@ -494,11 +494,17 @@ function CultBlock({ entry }) {
       {festivals.length > 0 && (
         <RichSection
           flavor="festivals"
-          title="Festivals"
+          title="Festivals & rites"
           subSection
           items={festivals}
-          name={f => (typeof f.name === 'string' ? f.name : null) || f.id || safeLabel(f)}
-          metas={f => [f.type, f.date]}
+          name={f => {
+            const base = (typeof f.name === 'string' ? f.name : null)
+              || (f.id ? String(f.id).replace(/[-_]+/g, ' ') : null) || safeLabel(f);
+            return f.term && f.term.value
+              ? <span>{base} <span className="domain-term">{f.term.value}{f.term.rom && <span className="domain-term-rom"> {f.term.rom}</span>}</span></span>
+              : base;
+          }}
+          metas={f => [f.type, f.date || f.cadence]}
           notes={f => f.notes}
         />
       )}
