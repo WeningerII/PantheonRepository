@@ -200,6 +200,28 @@ test('cult-practice coverage floor (wave-7f)', () => {
   assert.deepStrictEqual(bad, [], `uncited or unnamed cult practices:\n${bad.slice(0, 20).join('\n')}`);
 });
 
+test('cult-site coverage floor (wave-7i)', () => {
+  // Cult CENTERS (temples/sanctuaries/shrines/oracles/sacred places) were 4%
+  // coverage (79 figures, 126 sites). Wave 7i documented the attested places
+  // of worship across the deity/demigod tier — each with a type and (mostly) a
+  // native-script site name — lifting it to ~627 figures / ~848 sites. Floor
+  // pins it so the Cult "Centers" panel can't silently empty again.
+  const ppl = Object.values(people);
+  const cc = (p) => (p.cult && Array.isArray(p.cult.cultCenters)) ? p.cult.cultCenters : [];
+  const withCenters = ppl.filter(p => cc(p).length).length;
+  const total = ppl.reduce((n, p) => n + cc(p).length, 0);
+  const typed = ppl.reduce((n, p) => n + cc(p).filter(s => s.type).length, 0);
+  assert.ok(withCenters >= 600, `figures with cult sites fell to ${withCenters} (floor 600)`);
+  assert.ok(total >= 800, `total cult sites fell to ${total} (floor 800)`);
+  assert.ok(typed >= 700, `typed cult sites fell to ${typed} (floor 700)`);
+  // Every cult site must carry a placeName and at least one cited source.
+  const bad = [];
+  for (const p of ppl) for (const s of cc(p)) {
+    if (!s.placeName || !(s.sources || []).length) bad.push(`${p.id}: ${s.placeName || '∅'}`);
+  }
+  assert.deepStrictEqual(bad, [], `uncited or unnamed cult sites:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('epithet coverage floor (wave-7e)', () => {
   // The Epithets panel rendered for nobody (4 figures' epithets were stranded
   // at linguistic.epithets; the rest were unauthored). Wave 7e lifted those
