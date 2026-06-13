@@ -101,6 +101,26 @@ test('warn-level integrity drift stays at its accepted ceilings', () => {
   assert.ok(!/Layer 3 era inversions/.test(all), 'era inversions reappeared');
 });
 
+test('every name is verified: each figure has an edge OR a recorded solitary verdict', () => {
+  // The wave-7d exhaustive pass gave every figure a verdict. This is the
+  // permanent invariant: a figure with no parentIds and no relations MUST be
+  // listed in data-sources/verified-solitary.json (with a cited reason).
+  // Any future figure added without a verdict fails here — "every name
+  // verified" is now a property of the corpus, not a one-time effort.
+  const ledger = require('../data-sources/verified-solitary.json');
+  const unverified = [];
+  for (const [id, p] of Object.entries(people)) {
+    const edged = (p.parentIds || []).length || (p.relations || []).length;
+    if (!edged && !ledger[id]) unverified.push(id);
+  }
+  assert.deepStrictEqual(unverified, [],
+    `${unverified.length} figures have neither an edge nor a solitary verdict:\n${unverified.slice(0, 30).join('\n')}`);
+  // Every ledger entry must carry a non-trivial reason.
+  for (const [id, reason] of Object.entries(ledger)) {
+    assert.ok(typeof reason === 'string' && reason.length >= 10, `solitary verdict for ${id} lacks a reason`);
+  }
+});
+
 test('family-graph parity floors hold (wave-7 enrichment)', () => {
   // The generated waves arrived with ZERO family links; wave 7 authored 248
   // figures' worth of cited genealogy. These floors pin the result: total
@@ -109,8 +129,8 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   const ppl = Object.values(people);
   const rels = ppl.reduce((n, p) => n + (p.relations || []).length, 0);
   const noFam = ppl.filter(p => !(p.parentIds || []).length && !(p.relations || []).length).length;
-  assert.ok(rels >= 2300, `relation edges fell to ${rels} (floor 2300)`);
-  assert.ok(noFam <= 675, `figures with no family links grew to ${noFam} (ceiling 675)`);
+  assert.ok(rels >= 2500, `relation edges fell to ${rels} (floor 2500)`);
+  assert.ok(noFam <= 380, `figures with no family links grew to ${noFam} (ceiling 380)`);
 });
 
 test('cross-tradition equivalence network parity floor (wave-7c)', () => {
