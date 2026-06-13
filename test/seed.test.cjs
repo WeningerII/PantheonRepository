@@ -155,6 +155,34 @@ test('iconography coverage floor (wave-7g)', () => {
   assert.deepStrictEqual(bad, [], `uncited or id-less iconography:\n${bad.slice(0, 20).join('\n')}`);
 });
 
+test('etymology coverage floor (wave-7h)', () => {
+  // Name etymologies existed for 119 figures (the Detail "Etymology" section
+  // already rendered them). Wave 7h authored cited name-origin reconstructions
+  // — language family + native-script prose + sources — across the deity/
+  // demigod tier, lifting coverage to ~768. This floor pins that result and
+  // requires every wave-authored etymology to carry a real citation.
+  const ppl = Object.values(people);
+  const withEtym = ppl.filter(p => p.linguistic && p.linguistic.etymology).length;
+  const withFam  = ppl.filter(p => p.linguistic && p.linguistic.languageFamily).length;
+  const withSrc  = ppl.filter(p => p.linguistic && (p.linguistic.sources || []).length).length;
+  assert.ok(withEtym >= 740, `figures with etymology fell to ${withEtym} (floor 740)`);
+  assert.ok(withFam  >= 740, `figures with languageFamily fell to ${withFam} (floor 740)`);
+  assert.ok(withSrc  >= 620, `cited etymologies fell to ${withSrc} (floor 620)`);
+  // Every etymology must be accompanied by a languageFamily, and any sources
+  // attached must cite a real reference (no bare/empty citations).
+  const bad = [];
+  for (const p of ppl) {
+    const L = p.linguistic;
+    if (!L || !L.etymology) continue;
+    if (!L.languageFamily) bad.push(`${p.id}: etymology without languageFamily`);
+    for (const s of (L.sources || [])) {
+      const ref = typeof s === 'string' ? s : (s && s.reference);
+      if (!ref) bad.push(`${p.id}: source missing reference`);
+    }
+  }
+  assert.deepStrictEqual(bad, [], `malformed etymology metadata:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('cult-practice coverage floor (wave-7f)', () => {
   // Festivals/rites/ceremonies were 5% coverage (28 figures); wave 7f
   // authored the attested practices across the deity/demigod tier. Floor
