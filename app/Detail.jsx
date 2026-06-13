@@ -527,7 +527,12 @@ function CultBlock({ entry }) {
           title="Centers"
           subSection
           items={centers}
-          name={cc => cc.placeName || (typeof cc.name === 'string' ? cc.name : null) || cc.id || safeLabel(cc)}
+          name={cc => {
+            const base = cc.placeName || (typeof cc.name === 'string' ? cc.name : null) || cc.id || safeLabel(cc);
+            return cc.term && cc.term.value
+              ? <span>{base} <span className="domain-term">{cc.term.value}{cc.term.rom && <span className="domain-term-rom"> {cc.term.rom}</span>}</span></span>
+              : base;
+          }}
           metas={cc => [cc.type, cc.period]}
           notes={cc => cc.notes}
         />
