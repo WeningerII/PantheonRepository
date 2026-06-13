@@ -142,8 +142,8 @@ test('iconography coverage floor (wave-7g)', () => {
   const items = (p) => { const i = p.iconography || {}; return (i.attributes || []).length + (i.sacredAnimals || []).length + (i.sacredPlants || []).length; };
   const withIco = ppl.filter(p => items(p) > 0).length;
   const total = ppl.reduce((n, p) => n + items(p), 0);
-  assert.ok(withIco >= 500, `figures with iconography fell to ${withIco} (floor 500)`);
-  assert.ok(total >= 1200, `total iconography items fell to ${total} (floor 1200)`);
+  assert.ok(withIco >= 720, `figures with iconography fell to ${withIco} (floor 720)`);
+  assert.ok(total >= 1500, `total iconography items fell to ${total} (floor 1500)`);
   // Every iconography item must carry an id + a citation.
   const bad = [];
   for (const p of ppl) {
@@ -190,8 +190,8 @@ test('cult-practice coverage floor (wave-7f)', () => {
   const ppl = Object.values(people);
   const withFest = ppl.filter(p => (p.cult && p.cult.festivals || []).length).length;
   const total = ppl.reduce((n, p) => n + ((p.cult && p.cult.festivals) || []).length, 0);
-  assert.ok(withFest >= 200, `figures with festivals/rites fell to ${withFest} (floor 200)`);
-  assert.ok(total >= 280, `total cult practices fell to ${total} (floor 280)`);
+  assert.ok(withFest >= 520, `figures with festivals/rites fell to ${withFest} (floor 520)`);
+  assert.ok(total >= 600, `total cult practices fell to ${total} (floor 600)`);
   // Every authored practice must carry a name + a citation.
   const bad = [];
   for (const p of ppl) for (const f of ((p.cult && p.cult.festivals) || [])) {
@@ -271,8 +271,8 @@ test('epithet coverage floor (wave-7e)', () => {
   const ppl = Object.values(people);
   const withEp = ppl.filter(p => (p.epithets || []).length).length;
   const total = ppl.reduce((n, p) => n + (p.epithets || []).length, 0);
-  assert.ok(withEp >= 210, `figures with epithets fell to ${withEp} (floor 210)`);
-  assert.ok(total >= 600, `total epithets fell to ${total} (floor 600)`);
+  assert.ok(withEp >= 470, `figures with epithets fell to ${withEp} (floor 470)`);
+  assert.ok(total >= 1000, `total epithets fell to ${total} (floor 1000)`);
   // Every epithet must carry a native original + a citation (no bare labels).
   const bad = [];
   for (const p of ppl) for (const e of (p.epithets || [])) {
