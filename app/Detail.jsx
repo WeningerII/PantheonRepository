@@ -798,6 +798,17 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
               <div className="etym-body">
                 {entry.linguistic.etymology}
               </div>
+              {Array.isArray(entry.linguistic.sources) && entry.linguistic.sources.length > 0 && (
+                <div className="etym-cites">
+                  {entry.linguistic.sources.map((s, i) => (
+                    <div className="etym-cite" key={i}>
+                      <span className="source-cite-ref">
+                        {typeof s === 'string' ? s : (s.reference || '')}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
 
