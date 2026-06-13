@@ -463,6 +463,47 @@ function Chapter({ label }) {
   );
 }
 
+// Iconography — the figure's visual attributes: emblems/objects they bear,
+// their sacred animals and plants. Each item is { id, term?, notes?, sources }.
+// (Authored for 240 figures but never rendered until now — Zeus's thunderbolt,
+// eagle, and oak; Apollo's lyre, silver bow, and laurel.)
+function IconographyBlock({ entry }) {
+  const ico = entry.iconography;
+  if (!ico) return null;
+  const attrs   = Array.isArray(ico.attributes)    ? ico.attributes    : [];
+  const animals = Array.isArray(ico.sacredAnimals) ? ico.sacredAnimals : [];
+  const plants  = Array.isArray(ico.sacredPlants)  ? ico.sacredPlants  : [];
+  if (!attrs.length && !animals.length && !plants.length) return null;
+  const iconName = (it) => {
+    const base = String(it.id || '').replace(/[-_]+/g, ' ') || safeLabel(it);
+    return it.term && it.term.value
+      ? <span>{base} <span className="domain-term">{it.term.value}{it.term.rom && <span className="domain-term-rom"> {it.term.rom}</span>}</span></span>
+      : base;
+  };
+  const counts = [
+    attrs.length   ? `${attrs.length} attribute${attrs.length === 1 ? '' : 's'}` : null,
+    animals.length ? `${animals.length} animal${animals.length === 1 ? '' : 's'}` : null,
+    plants.length  ? `${plants.length} plant${plants.length === 1 ? '' : 's'}` : null,
+  ].filter(Boolean).join(' · ');
+  return (
+    <div className="section section-iconography-wrap">
+      <h2>Iconography <span className="count">{counts}</span></h2>
+      {attrs.length > 0 && (
+        <RichSection flavor="iconography" title="Attributes & emblems" subSection
+          items={attrs} name={iconName} metas={it => [it.contextTag]} notes={it => it.notes} />
+      )}
+      {animals.length > 0 && (
+        <RichSection flavor="iconography" title="Sacred animals" subSection
+          items={animals} name={iconName} notes={it => it.notes} />
+      )}
+      {plants.length > 0 && (
+        <RichSection flavor="iconography" title="Sacred plants" subSection
+          items={plants} name={iconName} notes={it => it.notes} />
+      )}
+    </div>
+  );
+}
+
 function CultBlock({ entry }) {
   const c = entry.cult;
   if (!c) return null;
@@ -713,7 +754,9 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
           {entry.relations?.length > 0 && <Chapter label="Network" />}
           <Relations entry={entry} byId={byId} onOpen={onOpen} />
 
-          {(entry.domains?.length || entry.epithets?.length || entry.materialCulture?.length) ? (
+          {(entry.domains?.length || entry.epithets?.length || entry.materialCulture?.length
+            || entry.iconography?.attributes?.length || entry.iconography?.sacredAnimals?.length
+            || entry.iconography?.sacredPlants?.length) ? (
             <Chapter label="Attributes" />
           ) : null}
           <RichSection
@@ -739,6 +782,7 @@ function Detail({ entry: entryProp, byId, childrenOf, onClose, onPrev, onNext, c
             nameStyle="rich-row-name-epithet"
           />
           <MaterialCulture entry={entry} onOpenItem={onOpenItem} />
+          <IconographyBlock entry={entry} />
           {(entry.cult?.cultCenters?.length || entry.cult?.festivals?.length || entry.linguistic?.etymology) ? (
             <Chapter label="Practice & Language" />
           ) : null}
