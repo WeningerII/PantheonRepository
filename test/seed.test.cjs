@@ -133,6 +133,24 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   assert.ok(noFam <= 380, `figures with no family links grew to ${noFam} (ceiling 380)`);
 });
 
+test('epithet coverage floor (wave-7e)', () => {
+  // The Epithets panel rendered for nobody (4 figures' epithets were stranded
+  // at linguistic.epithets; the rest were unauthored). Wave 7e lifted those
+  // and authored cited native-script epithets across the deity/demigod tier.
+  // This floor pins the result so the panel can't silently empty again.
+  const ppl = Object.values(people);
+  const withEp = ppl.filter(p => (p.epithets || []).length).length;
+  const total = ppl.reduce((n, p) => n + (p.epithets || []).length, 0);
+  assert.ok(withEp >= 210, `figures with epithets fell to ${withEp} (floor 210)`);
+  assert.ok(total >= 600, `total epithets fell to ${total} (floor 600)`);
+  // Every epithet must carry a native original + a citation (no bare labels).
+  const bad = [];
+  for (const p of ppl) for (const e of (p.epithets || [])) {
+    if (!e.original || !(e.sources || []).length) bad.push(`${p.id}: ${e.original || '∅'}`);
+  }
+  assert.deepStrictEqual(bad, [], `uncited or label-only epithets:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('cross-tradition equivalence network parity floor (wave-7c)', () => {
   // The Graph's default mode renders the BETWEEN-pantheon layer. It shipped
   // with ~33 pairs (all Greco-Roman-Etruscan); wave 7c authored the attested
