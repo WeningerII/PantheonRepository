@@ -1460,6 +1460,18 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   max-width: 64ch;
   letter-spacing: -0.002em;
 }
+.section.section-etymology .etym-cites {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.section.section-etymology .etym-cite {
+  font: 400 11px/1.5 var(--font-mono);
+  color: var(--mute);
+  padding-left: 10px;
+  border-left: 1px solid var(--rule-2);
+}
 
 /* Parentage table */
 .parentage {
