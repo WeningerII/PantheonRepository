@@ -133,6 +133,23 @@ test('family-graph parity floors hold (wave-7 enrichment)', () => {
   assert.ok(noFam <= 380, `figures with no family links grew to ${noFam} (ceiling 380)`);
 });
 
+test('cult-practice coverage floor (wave-7f)', () => {
+  // Festivals/rites/ceremonies were 5% coverage (28 figures); wave 7f
+  // authored the attested practices across the deity/demigod tier. Floor
+  // pins it so the "Festivals & rites" panel can't silently empty again.
+  const ppl = Object.values(people);
+  const withFest = ppl.filter(p => (p.cult && p.cult.festivals || []).length).length;
+  const total = ppl.reduce((n, p) => n + ((p.cult && p.cult.festivals) || []).length, 0);
+  assert.ok(withFest >= 200, `figures with festivals/rites fell to ${withFest} (floor 200)`);
+  assert.ok(total >= 280, `total cult practices fell to ${total} (floor 280)`);
+  // Every authored practice must carry a name + a citation.
+  const bad = [];
+  for (const p of ppl) for (const f of ((p.cult && p.cult.festivals) || [])) {
+    if (!(f.name || f.id) || !(f.sources || []).length) bad.push(`${p.id}: ${f.name || f.id || '∅'}`);
+  }
+  assert.deepStrictEqual(bad, [], `uncited or unnamed cult practices:\n${bad.slice(0, 20).join('\n')}`);
+});
+
 test('epithet coverage floor (wave-7e)', () => {
   // The Epithets panel rendered for nobody (4 figures' epithets were stranded
   // at linguistic.epithets; the rest were unauthored). Wave 7e lifted those
