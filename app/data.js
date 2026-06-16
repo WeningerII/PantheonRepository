@@ -225059,6 +225059,51 @@ const ETYMOLOGY = {
     "sources": [
       { "kind": "secondary", "reference": "Donald L. Philippi (trans.), Kojiki (1968), with name glosses" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8g ETYMOLOGY (LOWER TIERS) — "caution-zone" oral/dynastic traditions,
+  //  authored ONLY where a name's meaning is verifiable in scholarship or in a
+  //  named tradition (Egharevba for Benin; peer-reviewed work for Yoruba). This
+  //  wave is the product of a dedicated multi-source research pass over 23 Edo,
+  //  Shilluk and Yoruba lower-tier names; of those, only the four below had a
+  //  reliably-sourced etymology. The other nineteen — Esigie, Ewedo, Oguola,
+  //  Orhogbua, Uwaifiokun, Erinmwinde, Emotan; Ajaka, Torosi, Lakange; and the
+  //  nine Shilluk Nyikang-cycle/reth names (Okwa, Akec, Dak, Bwor, Cal, Anongo,
+  //  Gilo, Dhokoth, Tugo) — have NO reliable published etymology and are
+  //  deliberately left unwritten rather than guessed (an honest gap is correct).
+  // ═══════════════════════════════════════════════════════════════════════════
+  "ewuare_great": {
+    "languageFamily": "Niger-Congo (Edoid; Edo/Bini)",
+    "etymology": "Edo (Bini). Born Prince Ogun, on his accession (c. 1440) he took the regnal name Ewuare, contracted from Oworuare (also written \"Owo ru are\"), which the Benin tradition recorded by Egharevba glosses as \"the trouble has ceased\" / \"it is cool\" — marking the end of the violent succession struggle with his brother Uwaifiokun and the burning of Benin City. The phrase-level meaning is the attested part; the name's internal morphology is not independently analysed.",
+    "sources": [
+      { "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin (the gloss of Oworuare at Ewuare's accession)" },
+      { "kind": "secondary", "reference": "Encyclopedia.com, \"Oba Ewuare Ogidigan\" (relaying Egharevba's gloss \"the trouble has ceased / it is cool\")" }
+    ]
+  },
+  "ozolua": {
+    "languageFamily": "Niger-Congo (Edoid; Edo/Bini)",
+    "etymology": "Edo (Bini). Born Prince Okpame, this warrior-oba (r. c. 1481–1504) is known by the praise-epithet Ozolua n'Ibaromi, \"Ozolua the Conqueror,\" commemorating his many campaigns. Benin historiography records the meaning of the epithet; the bare regnal name Ozolua itself has no separately attested etymology.",
+    "sources": [
+      { "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin" },
+      { "kind": "secondary", "reference": "Encyclopædia Britannica, \"Ozolua\" (the epithet n'Ibaromi, \"the Conqueror\")" }
+    ]
+  },
+  "eweka_i": {
+    "languageFamily": "Niger-Congo; name of Yoruba (Yoruboid) origin, bini-ised into Edo",
+    "etymology": "Edo (Bini), from a Yoruba phrase. Benin oral tradition — the Ife/Oranmiyan origin story recorded by Egharevba — derives the name from Yoruba owó mi kà \"my hand has struck it\" / \"I have succeeded,\" said to have been exclaimed by the boy-prince at the akhuẹ seed-game and then contracted to Eweka; a competing popular gloss is \"his ways are not crooked.\" This is a traditional etiological etymology, not an independent linguistic reconstruction.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jacob U. Egharevba, A Short History of Benin (the Owomika / Ife-origin tradition)" },
+      { "kind": "secondary", "reference": "Usuanlele & Falola, \"The Scholarship of Jacob Egharevba of Benin,\" History in Africa 21 (1994)" }
+    ]
+  },
+  "shango": {
+    "languageFamily": "Niger-Congo (Yoruboid; Yoruba); theonym probably of Nupoid origin",
+    "etymology": "Yoruba Ṣàngó. The name is not transparently analysable within Yoruba and its origin is debated: the older view derives it from a Nupe sky-and-lightning deity (commonly linked to Nupe Sòkó), while a recent study (Capo Chichi 2025) derives it from Gbari ɛtswaʃɛ̰gʷo \"ruler of the sky\" (ɛtsu \"ruler\" + ʃɛ̰go \"sky\"), borrowed via Nupe and reinterpreted as a royal name in Old Ọyọ. The popular gloss \"to strike\" is a folk etymology. Ṣàngó was the deified third Aláàfin of Ọyọ; the cult-cry Ọba kò so, \"the king did not hang,\" denies the tradition of his death by hanging.",
+    "sources": [
+      { "kind": "secondary", "reference": "Sandro Capo Chichi, \"On the Etymology of the Yoruba Theonym Shango,\" Yoruba Studies Review 10(1) (2025)" },
+      { "kind": "primary", "reference": "Samuel Johnson, The History of the Yorubas (1921) — the deified Aláàfin and the cult-cry Ọba kò so" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
