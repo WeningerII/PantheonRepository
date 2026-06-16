@@ -224640,6 +224640,173 @@ const ETYMOLOGY = {
       { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. parīkṣit, īkṣ" },
       { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Parīkṣit" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8d ETYMOLOGY (LOWER TIERS) — the Egyptian cohort: New Kingdom royals
+  //  of the 18th–20th Dynasties (the Thutmosid and Ramesside houses). Egyptian
+  //  royal and personal names are well-read theophoric compounds with standard
+  //  Egyptological translations; given here in scholarly transliteration with
+  //  the lexical elements. Cited to Hermann Ranke, Die ägyptischen
+  //  Personennamen (1935–52); Jürgen von Beckerath, Handbuch der ägyptischen
+  //  Königsnamen (1999); and Gardiner, Egyptian Grammar (1957). Names of
+  //  genuinely uncertain meaning (Pentaweret, Tuya, Tyti) are flagged as such.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "egyptian_ahmose": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian jꜥḥ-ms(j.w) (Ahmose), \"Iah is born\" or \"born of the moon-god,\" from jꜥḥ \"the moon (Iah)\" and ms \"to bear, be born\" — the -mose element familiar from Thutmose and the name Moses.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), on jꜥḥ and ms" }
+    ]
+  },
+  "egyptian_akhenaten": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ꜣḫ-n-jtn (Akhenaten), \"beneficial/effective for the Aten\" (sometimes rendered \"radiance of the Aten\"), from ꜣḫ \"effective, glorious, beneficial\", n \"for\", and jtn \"the Aten (sun-disk)\" — the name Amenhotep IV took for his solar reform.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ꜣḫ" }
+    ]
+  },
+  "egyptian_amunherkhepeshef": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian jmn-ḥr-ḫpš=f (Amunherkhepeshef), \"Amun is upon his strong arm,\" from Jmn \"Amun\", ḥr \"upon\", ḫpš \"the strong arm; the curved scimitar\", and =f \"his\" — a Ramesside crown-prince name.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ḫpš" }
+    ]
+  },
+  "egyptian_iset_ta_hemdjert": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ꜣst (Iset/Isis), \"she of the throne\" (the goddess-name from st \"seat, throne\"), here with the distinguishing epithet Ta-Hemdjeret. A chief queen of Ramesses III.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), on ꜣst / st" }
+    ]
+  },
+  "egyptian_khaemwaset_c": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst (Khaemwaset), \"appearing in glory in Thebes,\" from ḫꜥj \"to rise, appear in glory (as the sun or king)\", m \"in\", and Wꜣst \"Thebes\"; the letter C is a modern prosopographic disambiguator.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.vv. ḫꜥj, Wꜣst" }
+    ]
+  },
+  "egyptian_khaemweset": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst (Khaemweset), \"appearing in glory in Thebes,\" from ḫꜥj \"to appear in glory\", m \"in\", and Wꜣst \"Thebes\" — borne by the learned priest-prince and sem-priest, son of Ramesses II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.vv. ḫꜥj, Wꜣst" }
+    ]
+  },
+  "egyptian_kheredu_ankh": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Kheredankh / Kheredu-ankh) appears to contain ẖrd \"child\" and ꜥnḫ \"to live, life,\" roughly \"the child lives\"; the reading and exact sense are uncertain. Named in later tradition as the mother of the deified Imhotep.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_merneptah": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian mr(y)-n-ptḥ (Merneptah), \"beloved of Ptah,\" from mry \"beloved\", n, and Ptḥ \"Ptah\" — the son and successor of Ramesses II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_mutemwiya": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian mwt-m-wjꜣ (Mutemwiya), \"Mut is in the (sacred) barque,\" from the goddess Mwt \"Mut\", m \"in\", and wjꜣ \"the divine barque\" — mother of Amenhotep III.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. wjꜣ" }
+    ]
+  },
+  "egyptian_neferure": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian nfrw-rꜥ (Neferure), \"the perfection of Ra,\" from nfrw \"beauty, perfection, goodness\" and Rꜥ \"Ra\" — the daughter of Hatshepsut and Thutmose II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. nfr" }
+    ]
+  },
+  "egyptian_pentaweret": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Pentaweret), the name recorded in the Judicial Papyrus of Turin for the prince condemned in the harem conspiracy against Ramesses III. It is very likely a substitute name used in the trial record rather than his true name; the sense is uncertain (perhaps pꜣ-n-tꜣ-wrt, \"he of the Great One\").",
+    "sources": [
+      { "kind": "primary", "reference": "Judicial Papyrus of Turin (the harem-conspiracy trial of Ramesses III)" },
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_ramesses_iv": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian rꜥ-ms-sw (Ramesses), \"Ra is he who bore him\" / \"born of Ra,\" from Rꜥ \"Ra\", ms \"to bear, fashion\", and sw \"him\"; the regnal numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ms" }
+    ]
+  },
+  "egyptian_ramesses_vi": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian rꜥ-ms-sw (Ramesses), \"Ra is he who bore him\" / \"born of Ra,\" from Rꜥ \"Ra\", ms \"to bear, fashion\", and sw \"him\"; the regnal numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ms" }
+    ]
+  },
+  "egyptian_seti_ii": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian stẖy (Sety/Seti), \"he of (the god) Seth,\" a name derived from Stẖ \"Seth\"; the numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_setnakhte": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian stẖ-nḫt (Setnakhte), \"Seth is victorious / strong,\" from Stẖ \"Seth\" and nḫt \"strong, victorious\" — the founder of the 20th Dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. nḫt" }
+    ]
+  },
+  "egyptian_sitamun": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian sꜣt-jmn (Sitamun), \"daughter of Amun,\" from sꜣt \"daughter\" and Jmn \"Amun\" — a daughter and later great royal wife of Amenhotep III.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. sꜣt" }
+    ]
+  },
+  "egyptian_tausret": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian tꜣ-wsrt (Tausret / Twosret), \"the mighty lady,\" from the feminine article tꜣ and wsr(t) \"powerful, mighty\" — the female pharaoh who closed the 19th Dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. wsr" }
+    ]
+  },
+  "egyptian_tiy_merenese": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Tiy-Merenese / Tiy-Mereniset) combines the personal name Tiy with mr(y).t-n-ꜣst \"beloved of Isis\" (mry \"beloved\" + the goddess Isis); a queen of Setnakhte and mother of Ramesses III. The element Tiy is a common name of uncertain meaning.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_tuya": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Tuya, also Mut-Tuya), a personal name of uncertain meaning, linked through the compound form Mut-Tuya to the goddess Mut; the wife of Seti I and mother of Ramesses II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_tyti": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Tyti / Titi), a queen of the 20th Dynasty buried in the Valley of the Queens; the name is a personal name of uncertain meaning.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
