@@ -224300,6 +224300,346 @@ const ETYMOLOGY = {
       { "kind": "primary", "reference": "Suetonius, Gaius (Caligula) 9 (the nickname from caliga)" },
       { "kind": "primary", "reference": "Tacitus, Annals 1.41" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8c ETYMOLOGY (LOWER TIERS) — the Hindu cohort: the Mahābhārata circle
+  //  (the Bhārata-dynasty elders, the sons of the Pāṇḍavas and of Karṇa, the
+  //  Janamejaya line) and the Rāmāyaṇa princes and rākṣasas. Sanskrit names are
+  //  highly transparent compounds; the epics frequently gloss them outright
+  //  (Pāṇḍu's pallor, Ghaṭotkaca's pot-shaped head, Rāvaṇa named for his roar,
+  //  Indrajit for defeating Indra). Cited to Monier-Williams (A Sanskrit-English
+  //  Dictionary, 1899) for the lexical bases, Vettam Mani's Purāṇic Encyclopaedia
+  //  for the figures and their naming, and the primary epic where it supplies
+  //  the etymology. IAST transliteration throughout.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "hindu_shantanu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit शान्तनु (Śāntanu), from śam \"to be calm, appeased, wholesome\" and tanu \"body,\" \"he who is wholesome for the body\"; the Mahābhārata (Ādi Parva) glosses the name from the health and calm his touch conferred. The Kuru king, husband of Gaṅgā and Satyavatī.",
+    "sources": [
+      { "kind": "primary", "reference": "Mahābhārata, Ādi Parva (the gloss of Śāntanu's name)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śam, tanu" }
+    ]
+  },
+  "hindu_satyavati": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सत्यवती (Satyavatī), from satya \"truth\" and the possessive -vatī, \"she who possesses truth, the truthful one\"; her earlier epithets Matsyagandhā \"fish-scented\" and Yojanagandhā \"whose fragrance carries a yojana\" recall her fisher origin. Mother of Vyāsa and queen of Śāntanu.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. satya, -vat" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Satyavatī" }
+    ]
+  },
+  "hindu_pandu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit पाण्डु (Pāṇḍu), \"pale, whitish, yellow-white,\" \"the Pale One\" — the Mahābhārata (Ādi Parva) explains that he was born pale because of his mother's fear at his conception. Father of the Pāṇḍavas.",
+    "sources": [
+      { "kind": "primary", "reference": "Mahābhārata, Ādi Parva (Pāṇḍu born pale)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. pāṇḍu" }
+    ]
+  },
+  "hindu_kunti": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit कुन्ती (Kuntī), \"the lady of the Kuntis,\" a matronymic from her adoptive father Kuntibhoja; her birth-name was Pṛthā (पृथा) \"the broad/ample one\" (from pṛthu \"broad, wide\"). The mother of the elder Pāṇḍavas.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. Kuntī, pṛthu" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Kuntī" }
+    ]
+  },
+  "hindu_madri": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit माद्री (Mādrī), \"the princess of the Madra people\" (the Madra kingdom of the Punjab); the name is the feminine ethnonym. Second wife of Pāṇḍu, mother of the twins Nakula and Sahadeva.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. Madra/Mādrī" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Mādrī" }
+    ]
+  },
+  "hindu_draupadi": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit द्रौपदी (Draupadī), a patronymic \"daughter of Drupada\" (Drupada \"wooden post, pillar,\" from dru \"wood, tree\" + pada); her further names Pāñcālī \"princess of Pañcāla\" and Yājñasenī \"daughter of Yajñasena (Drupada)\" are likewise patronymic/dynastic.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. Draupadī, drupada" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Draupadī" }
+    ]
+  },
+  "hindu_devaki": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit देवकी (Devakī), \"the divine one\" / matronymic \"daughter of Devaka,\" from deva \"god, divine\" — the mother of Kṛṣṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. deva, Devakī" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Devakī" }
+    ]
+  },
+  "hindu_vasudeva": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वसुदेव (Vasudeva), from vasu \"wealth; bright, good; the class of Vasu deities\" and deva \"god,\" \"the bright/wealth-giving god\" — father of Kṛṣṇa, whence Kṛṣṇa's patronymic Vāsudeva. His epithet Ānakadundubhi marks the ānaka and dundubhi drums that sounded at his birth.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. vasu, deva" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vasudeva" }
+    ]
+  },
+  "hindu_rohini_vasudeva": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit रोहिणी (Rohiṇī), \"the red one; the ascending/growing one\" (from ruh \"to ascend, grow\"); also the name of the ruddy lunar mansion (Aldebaran). Wife of Vasudeva, mother of Balarāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. rohiṇī, ruh" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Rohiṇī" }
+    ]
+  },
+  "hindu_vishrava": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit विश्रवस् (Viśravas), from vi- (intensive) and śravas \"fame, glory, renown\" (√śru \"to hear\"), \"of wide renown, far-famed\" — the sage son of Pulastya, father of Rāvaṇa, Kubera, Kumbhakarṇa and Vibhīṣaṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śravas, śru" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Viśravas" }
+    ]
+  },
+  "hindu_amba": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अम्बा (Ambā), \"mother,\" a respectful term for a woman or mother; the eldest princess of Kāśī, reborn as Śikhaṇḍin (śikhaṇḍin \"crested, tufted,\" from śikhaṇḍa \"crest, peacock's tail\") to bring about Bhīṣma's death.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. ambā, śikhaṇḍin" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Ambā" }
+    ]
+  },
+  "hindu_shatanika_janamejaya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit शतानीक (Śatānīka), from śata \"hundred\" and anīka \"army, battle-front,\" \"he of a hundred armies\" — a Bhārata king of the lunar dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śata, anīka" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śatānīka" }
+    ]
+  },
+  "hindu_dasharatha": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit दशरथ (Daśaratha), from daśa \"ten\" and ratha \"chariot,\" \"he of ten chariots\" (or whose chariot ranges the ten directions) — a great warrior; the Ikṣvāku king of Ayodhyā and father of Rāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. daśa, ratha" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Daśaratha" }
+    ]
+  },
+  "hindu_kausalya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit कौसल्या (Kausalyā), \"the princess of Kosala\" (the Kosala kingdom), a feminine derivative of the realm-name. Chief queen of Daśaratha and mother of Rāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. Kosala/Kausalyā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Kausalyā" }
+    ]
+  },
+  "hindu_sumitra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुमित्रा (Sumitrā), from su- \"good, well\" and mitra \"friend,\" \"having good friends, well-befriended\" — a queen of Daśaratha, mother of Lakṣmaṇa and Śatrughna.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. su, mitra" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Sumitrā" }
+    ]
+  },
+  "hindu_abhimanyu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अभिमन्यु (Abhimanyu), from abhi- \"towards, intensely\" and manyu \"spirit, ardour, wrath,\" \"full of heroic ardour, impetuous\" — son of Arjuna and Subhadrā (whence Saubhadra), slain breaking the cakra-vyūha.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. abhi, manyu" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Abhimanyu" }
+    ]
+  },
+  "hindu_angada": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अङ्गद (Aṅgada), \"an armlet, bracelet worn on the upper arm\" (from aṅga \"limb\") — the name of the vānara prince, son of Vālin, in the Rāmāyaṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. aṅgada" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Aṅgada" }
+    ]
+  },
+  "hindu_babhruvahana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit बभ्रुवाहन (Babhruvāhana), from babhru \"tawny, reddish-brown\" and vāhana \"mount, vehicle,\" \"he of the tawny mount\" — son of Arjuna and Citrāṅgadā, king of Maṇipūra.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. babhru, vāhana" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Babhruvāhana" }
+    ]
+  },
+  "hindu_chitrasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit चित्रसेन (Citrasena), from citra \"bright, variegated, conspicuous\" and senā \"army,\" \"having a brilliant army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. citra, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Citrasena" }
+    ]
+  },
+  "hindu_ghatotkacha": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit घटोत्कच (Ghaṭotkaca), from ghaṭa \"pot, pitcher\" and utkaca \"bald, hairless\" (the head smooth and pot-like), \"pot-headed\"; the Mahābhārata names him so for his bald, pot-shaped head. Son of Bhīma and the rākṣasī Hiḍimbā.",
+    "sources": [
+      { "kind": "primary", "reference": "Mahābhārata, Ādi Parva (Ghaṭotkaca named for his pot-like bald head)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. ghaṭa, utkaca" }
+    ]
+  },
+  "hindu_iravan": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit इरावान् (Irāvān, also Irāvat), from irā \"draught, refreshment, water, comfort,\" \"endowed with comfort/water\" — son of Arjuna and the Nāga princess Ulūpī (the Tamil Aravāṇ).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. irā, irāvat" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Irāvān" }
+    ]
+  },
+  "hindu_kumbhakarna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit कुम्भकर्ण (Kumbhakarṇa), from kumbha \"pot, pitcher\" and karṇa \"ear,\" \"pot-eared, he whose ears are like pots\" — the giant brother of Rāvaṇa, famed for his months-long sleep.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. kumbha, karṇa" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Kumbhakarṇa" }
+    ]
+  },
+  "hindu_niramitra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit निरमित्र (Niramitra), from nis/nir- \"without\" and amitra \"enemy\" (a- + mitra \"non-friend, foe\"), \"free of enemies, without a foe\" — a son of Nakula.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. nis, amitra" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Niramitra" }
+    ]
+  },
+  "hindu_prativindhya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit प्रतिविन्ध्य (Prativindhya), from prati \"facing, towards\" and Vindhya (the Vindhya range), \"facing the Vindhya\" — said to be born facing those mountains; eldest of the Upapāṇḍavas, son of Yudhiṣṭhira and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. prati, Vindhya" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Prativindhya" }
+    ]
+  },
+  "hindu_ravana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit रावण (Rāvaṇa), from the causative of √ru \"to roar, cry out,\" \"he who makes (the worlds) scream\"; the Uttarakāṇḍa relates that Śiva named him Rāvaṇa for his roar when pinned beneath Mount Kailāsa. His epithets Daśānana / Daśagrīva mean \"ten-faced / ten-necked.\"",
+    "sources": [
+      { "kind": "primary", "reference": "Rāmāyaṇa, Uttarakāṇḍa (Śiva names Rāvaṇa for his roar)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. rāvaṇa, ru" }
+    ]
+  },
+  "hindu_sarvaga": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सर्वग (Sarvaga), from sarva \"all\" and -ga \"going\" (√gam), \"all-pervading, going everywhere\" — a son of Bhīma (by Balandharā).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. sarva, gam" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Sarvaga" }
+    ]
+  },
+  "hindu_satyasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सत्यसेन (Satyasena), from satya \"true, truthful\" and senā \"army,\" \"having a true army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. satya, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Satyasena" }
+    ]
+  },
+  "hindu_shatanika": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit शतानीक (Śatānīka), from śata \"hundred\" and anīka \"army, battle-front,\" \"he of a hundred armies\" — a son of Nakula and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śata, anīka" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śatānīka" }
+    ]
+  },
+  "hindu_shrutakarma": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit श्रुतकर्मन् (Śrutakarman), from śruta \"famed, renowned (lit. heard)\" and karman \"deed, act,\" \"of famous deeds\" — son of Arjuna and Draupadī (the variant Śrutakīrti means \"of famed renown\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śruta, karman" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śrutakarmā" }
+    ]
+  },
+  "hindu_shrutasena": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit श्रुतसेन (Śrutasena), from śruta \"famed, renowned\" and senā \"army,\" \"having a famous army\" — son of Sahadeva and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śruta, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śrutasena" }
+    ]
+  },
+  "hindu_suhotra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुहोत्र (Suhotra), from su- \"good, well\" and hotra \"oblation, sacrificial offering\" (√hu \"to offer\"), \"performing good oblations\" — a son of Sahadeva (the name also borne by a Bhārata ancestor).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. su, hotra" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Suhotra" }
+    ]
+  },
+  "hindu_sushena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुषेण (Suṣeṇa), from su- \"good, mighty\" and senā \"army\" (sandhi -ṣeṇa), \"having a goodly/mighty army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. su, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Suṣeṇa" }
+    ]
+  },
+  "hindu_sutasoma": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुतसोम (Sutasoma), from suta \"pressed, extracted\" and soma \"the soma juice\" (also the moon), \"for whom the soma was pressed\" — born, per the epic, when his father had performed a soma sacrifice. Son of Bhīma and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. suta, soma" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Sutasoma" }
+    ]
+  },
+  "hindu_vibhishana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit विभीषण (Vibhīṣaṇa), from vi- (intensive) and bhīṣaṇa \"terrifying, frightful\" (√bhī \"to fear\"), \"the terrifying one\" — borne, with characteristic irony, by the righteous rākṣasa brother of Rāvaṇa who sides with Rāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. bhīṣaṇa, bhī" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vibhīṣaṇa" }
+    ]
+  },
+  "hindu_vrishaketu_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वृषकेतु (Vṛṣaketu), from vṛṣa \"bull\" and ketu \"banner, ensign,\" \"he whose banner bears a bull\" — the surviving son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. vṛṣa, ketu" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vṛṣaketu" }
+    ]
+  },
+  "hindu_vrishasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वृषसेन (Vṛṣasena), from vṛṣa \"bull; the mighty one\" and senā \"army,\" \"having a bull-strong army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. vṛṣa, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vṛṣasena" }
+    ]
+  },
+  "hindu_yaudheya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit यौधेय (Yaudheya), \"warrior, son of a warrior,\" from yodha \"fighter\" (√yudh \"to fight\"); also the name of the martial Yaudheya republic. A son of Yudhiṣṭhira (by Devikā).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. yaudheya, yodha, yudh" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Yaudheya" }
+    ]
+  },
+  "hindu_anjanaparvan": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अञ्जनपर्वन् (Añjanaparvan), from añjana \"collyrium, dark eye-salve (also Mount Añjana)\" and parvan \"knot, joint, mountain-ridge,\" \"dark as collyrium\" or \"of the Añjana peak\" — son of Ghaṭotkaca.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. añjana, parvan" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Añjanaparvan" }
+    ]
+  },
+  "hindu_indrajit": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit इन्द्रजित् (Indrajit), \"conqueror of Indra,\" from Indra and -jit \"conquering\" (√ji); the title won by Rāvaṇa's son Meghanāda (\"thunder-roar,\" megha \"cloud\" + nāda \"roar\") after defeating Indra in battle.",
+    "sources": [
+      { "kind": "primary", "reference": "Rāmāyaṇa, Uttarakāṇḍa (Meghanāda earns the name Indrajit)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. indrajit, ji, megha, nāda" }
+    ]
+  },
+  "hindu_janamejaya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit जनमेजय (Janamejaya), from jana \"men, people\" and the causative mejaya \"causing to tremble\" (√ji/ej), \"he who makes men tremble\" — the Kuru king whose snake-sacrifice frames the recitation of the Mahābhārata.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. jana, Janamejaya" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Janamejaya" }
+    ]
+  },
+  "hindu_parikshit": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit परीक्षित् (Parīkṣit), from pari- \"around\" and √īkṣ \"to look, examine,\" \"the examiner\"; the epic also links it to the tested/dwindling (parikṣīṇa) Kuru line into which he was born. Grandson of Arjuna and the king to whom the Bhāgavata is told.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. parīkṣit, īkṣ" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Parīkṣit" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
