@@ -224807,6 +224807,152 @@ const ETYMOLOGY = {
     "sources": [
       { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8e ETYMOLOGY (LOWER TIERS) — the Mesopotamian cohort: the Sargonic
+  //  (Akkad) dynasty, the kings of the Third Dynasty of Ur, and figures of the
+  //  Uruk tradition (Lugalbanda) and the cult (the entu-priestesses Enheduanna,
+  //  Enmaḫgalanna). Sumerian and Akkadian royal names are largely transparent
+  //  (Šarru-kīn "the king is legitimate," Narām-Sîn "beloved of Sîn,"
+  //  Amar-Suen "calf of Suen"). Cited to Frayne's Royal Inscriptions of
+  //  Mesopotamia (RIME), the Pennsylvania Sumerian Dictionary and the Chicago
+  //  Assyrian Dictionary for the lexical bases, and Stamm's Die akkadische
+  //  Namengebung. Kassite and otherwise uncertain names are flagged.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "mesopotamian_sargon": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Šarru-kīn (Šarrum-kēn), \"the king is legitimate/true,\" from šarru \"king\" and kīnu \"firm, true, legitimate\" — a programmatic throne-name for the usurper who founded the Akkadian Empire.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2 (Sargonic and Gutian Periods)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.vv. šarru, kīnu" }
+    ]
+  },
+  "mesopotamian_rimush": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Rīmuš, generally connected with rīmu \"wild bull\" (a common symbol of royal might), roughly \"his wild bull / the wild bull (of the god)\"; the precise formation is debated. The second king of Akkad, son of Sargon.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. rīmu" }
+    ]
+  },
+  "mesopotamian_manishtushu": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Man-ištušu, plausibly the question-name mannu-ištū-šu \"who is with him?\" — a name-type asserting the bearer's incomparability; the analysis is not certain. A king of Akkad, son of Sargon.",
+    "sources": [
+      { "kind": "secondary", "reference": "J. J. Stamm, Die akkadische Namengebung (1939)" },
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" }
+    ]
+  },
+  "mesopotamian_naram_sin": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Narām-Sîn, \"beloved of Sîn (the moon-god),\" from narāmu \"beloved\" and the divine name Sîn — the king of Akkad who first styled himself a god.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. narāmu" }
+    ]
+  },
+  "mesopotamian_shar_kali_sharri": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Šar-kali-šarrī, \"king of all kings,\" from šar \"king,\" kali \"all, totality,\" and šarrī \"of kings\" — the last great king of Akkad.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. šarru" }
+    ]
+  },
+  "mesopotamian_ur_nammu": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Ur-Namma (Ur-Nammu), \"man/servant of (the goddess) Namma,\" from ur \"man, servant; warrior\" and the primeval goddess Namma — founder of the Third Dynasty of Ur and promulgator of the earliest known law-code.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. ur" }
+    ]
+  },
+  "mesopotamian_amar_sin": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Amar-Suen, \"calf of (the moon-god) Suen/Sîn,\" from amar \"calf, young animal\" and the divine name Suen — the third king of the Ur III dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. amar" }
+    ]
+  },
+  "mesopotamian_shu_sin": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Šu-Suen, \"the one of (the moon-god) Suen/Sîn\" (Sumerian šu, here \"the one belonging to\") — the fourth king of the Ur III dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. šu" }
+    ]
+  },
+  "mesopotamian_ibbi_sin": {
+    "languageFamily": "Semitic (Akkadian) name of a Sumerian dynasty",
+    "etymology": "Akkadian Ibbi-Sîn, \"Sîn has named/called (this child),\" from nabû \"to name, call\" (preterite ibbi) and the moon-god Sîn — the last king of Ur III, in whose reign the empire fell.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. nabû" }
+    ]
+  },
+  "mesopotamian_enheduanna": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian En-ḫedu-Ana, \"high-priestess, ornament of An (the sky-god),\" from en \"high priest(ess), lord,\" ḫe-du₇ \"(fitting) ornament,\" and the god An — the en-priestess of Nanna at Ur, daughter of Sargon, and the earliest author known by name.",
+    "sources": [
+      { "kind": "secondary", "reference": "W. W. Hallo & J. J. A. van Dijk, The Exaltation of Inanna (1968)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.vv. en, ḫedu" }
+    ]
+  },
+  "mesopotamian_enmahgalanna": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian En-maḫgal-ana, an en-priestess ceremonial name built on en \"high priest(ess)\" and elements maḫ \"exalted, supreme\" and gal \"great,\" with the god An — roughly \"exalted great priestess of An\"; the precise parsing is uncertain. An entu-priestess of the Ur III house.",
+    "sources": [
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.vv. en, maḫ, gal" }
+    ]
+  },
+  "mesopotamian_geme_ninlilla": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Geme-Ninlila, \"female servant of (the goddess) Ninlil,\" from geme \"female servant, slave-woman\" and the goddess Ninlil — a royal woman of the Ur III court.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. geme" }
+    ]
+  },
+  "mesopotamian_lugalbanda": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Lugal-banda, from lugal \"king\" (literally lú-gal \"big man\") and banda \"junior, fierce, wild; little,\" hence \"the fierce/junior king\" — the deified hero-king of Uruk, husband of Ninsun and, in tradition, father of Gilgamesh.",
+    "sources": [
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.vv. lugal, banda" },
+      { "kind": "primary", "reference": "Sumerian King List (the First Dynasty of Uruk)" }
+    ]
+  },
+  "mesopotamian_ur_nungal": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Ur-Nungal, \"man/servant of (the deity) Nungal,\" from ur \"man, servant\" and the divine name Nungal; the parsing of the theonym is not fully certain. Listed in the Sumerian King List as a son of Gilgamesh and king of Uruk.",
+    "sources": [
+      { "kind": "primary", "reference": "Sumerian King List (the First Dynasty of Uruk)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. ur" }
+    ]
+  },
+  "mesopotamian_ashur_dan_i": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Aššur-dān, \"Ashur is mighty,\" from the national god Aššur and dān \"strong, mighty\" (dānu) — a Middle Assyrian king; the numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "J. J. Stamm, Die akkadische Namengebung (1939)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. dannu/dānu" }
+    ]
+  },
+  "mesopotamian_meli_shipak_ii": {
+    "languageFamily": "Kassite (unclassified)",
+    "etymology": "A Kassite royal name (Meli-Šipak / Melišiḫu) of the Kassite dynasty of Babylon; the element meli- is Kassite and the name is generally taken to mean \"man/servant of (the goddess) Šipak (= the Babylonian Marduk),\" though Kassite is poorly understood and the sense is not secure. The numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "K. Balkan, Kassitenstudien: Die Sprache der Kassiten (1954)" }
+    ]
+  },
+  "mesopotamian_ninurta_apal_ekur": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Ninurta-apal-Ekur, \"Ninurta is the heir of the Ekur,\" from the god Ninurta, aplu \"heir, son,\" and Ekur (the temple of Enlil at Nippur) — a Middle Assyrian king.",
+    "sources": [
+      { "kind": "secondary", "reference": "J. J. Stamm, Die akkadische Namengebung (1939)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. aplu" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
