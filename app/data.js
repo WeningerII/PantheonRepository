@@ -224139,6 +224139,167 @@ const ETYMOLOGY = {
       { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
       { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κλέος" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8b ETYMOLOGY (LOWER TIERS) — the Roman cohort: the Alban-king Silvian
+  //  line (Livy 1.3; Virgil Aen. 6) and the Julio-Claudian dynasty. Latin
+  //  onomastics are exceptionally well documented; several names carry an
+  //  explicit ancient etymology (Augustus < augeo, Caligula < caliga, the
+  //  Drusus agnomen, Tiberius < the Tiber), cited to the primary source
+  //  (Suetonius, Ovid, Livy, the Historia Augusta) alongside Lewis & Short for
+  //  the common-noun bases. Uncertain nomina (Caesar, the gens names) are given
+  //  the range of ancient explanations rather than a single invented origin.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "roman_rhea_silvia": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Rhea Silvia. The cognomen Silvia derives from silva \"forest, woodland\" — \"she of the forest,\" the dynastic name of the Alban Silvii; the first name Rhea is the Greek Titaness-name attached to her in the later tradition. The Vestal mother of Romulus and Remus by Mars.",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3–4" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. silva" }
+    ]
+  },
+  "roman_daunus": {
+    "languageFamily": "Messapic/Illyrian (non-Latin)",
+    "etymology": "Daunus, eponymous king of Daunia (northern Apulia). The name is Messapic/Illyrian rather than Latin and has been connected with an Illyrian word for \"wolf\" (the wolf being a totem of the region); Greek sources render it Δαῦνος. The etymology is reconstructed and not certain.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hans Krahe, studies of Illyrian and Messapic onomastics" }
+    ]
+  },
+  "iulius_proculus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Iulius Proculus. The cognomen Proculus is an old Roman name traditionally explained from procul \"far off, at a distance,\" said to mark a son born while the father was abroad; the gens-name Iulius the family traced to Iulus (Ascanius). The senator who testified to Romulus' apotheosis.",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.16 (Proculus Iulius and Romulus' apotheosis)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. procul" }
+    ]
+  },
+  "roman_latinus_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Latinus Silvius, an Alban king of the Silvian line. Latinus is the eponym of the Latini and of Latium; Silvius (from silva \"forest\") is the hereditary cognomen of the Alban kings, said to derive from an ancestor born in the woodland.",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. silva" }
+    ]
+  },
+  "roman_alba_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Alba Silvius, an Alban king. Alba reflects albus \"white\" (whence Alba Longa, the \"long white\" mother-city of Rome); Silvius is the Alban dynastic cognomen from silva \"forest.\"",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.vv. albus, silva" }
+    ]
+  },
+  "greek_apollod_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Silvius, first of the Alban dynastic line and son of Ascanius. The name derives from silva \"forest,\" because (per Livy and Virgil) he was born and reared in the woodland; it became the hereditary cognomen of the Alban kings.",
+    "sources": [
+      { "kind": "primary", "reference": "Virgil, Aeneid 6.760–766 (Silvius in the parade of Alban kings)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. silva" }
+    ]
+  },
+  "roman_aeneas_silvius": {
+    "languageFamily": "Italic (Latin), with a Greek/Pre-Greek first name",
+    "etymology": "Latin Aeneas Silvius, an Alban king combining the Trojan founder-name Aeneas (Greek Αἰνείας, linked by the Greeks to αἶνος, aînos \"praise, tale,\" though the name is probably Pre-Greek) with the Alban dynastic cognomen Silvius (silva \"forest\").",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Αἰνείας" }
+    ]
+  },
+  "roman_iulius_caesar_iii": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Gaius Iulius Caesar. The gens Iulia traced its nomen to Iulus (Ascanius), son of Aeneas; the cognomen Caesar was explained variously by the ancients (from caesaries \"a fine head of hair,\" caesius \"blue-grey eyes,\" an ancestor who slew an elephant, or caesus \"cut,\" born by incision), its true origin uncertain. The father of the dictator.",
+    "sources": [
+      { "kind": "primary", "reference": "Historia Augusta, Aelius 2.3–5 (the ancient etymologies of Caesar)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Caesar" }
+    ]
+  },
+  "roman_aurelia_cotta": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Aurelia, of the gens Aurelia, whose nomen the Roman antiquarians connected with aureus \"golden\" or with a Sabine word ausel \"sun\" (the family honored by the Sabines for sun-worship); the cognomen Cotta is an old Roman name of uncertain meaning. The mother of Julius Caesar.",
+    "sources": [
+      { "kind": "primary", "reference": "Festus / Paulus ex Festo, s.v. Aureliam familiam (the Sabine ausel 'sun')" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. aureus" }
+    ]
+  },
+  "roman_caesar_dictator": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Gaius Iulius Caesar. The cognomen Caesar carried four competing ancient etymologies — from caesaries \"a head of hair,\" caesius \"blue-grey (eyes),\" the Moorish word for an elephant slain by an ancestor, or caesus \"cut\" (a forebear born a caeso matris utero, cut from the womb) — none demonstrably correct; the gens Iulia traced its nomen to Iulus son of Aeneas.",
+    "sources": [
+      { "kind": "primary", "reference": "Pliny, Natural History 7.47 (a caeso matris utero)" },
+      { "kind": "primary", "reference": "Historia Augusta, Aelius 2.3–5 (the four etymologies of Caesar)" }
+    ]
+  },
+  "roman_iulia_caesaris": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Iulia, feminine of the nomen of the gens Iulia, which the family traced to Iulus (Ascanius), son of Aeneas; Roman women bore the gens-name as their personal name. The elder sister of Julius Caesar.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Iulius" },
+      { "kind": "secondary", "reference": "Chase, The Origin of Roman Praenomina (Harvard Studies in Classical Philology 8, 1897)" }
+    ]
+  },
+  "roman_atia_balba": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Atia, of the gens Atia (an Aricine family; nomen of uncertain origin); the cognomen Balba derives from balbus \"stammering, stuttering.\" The mother of Augustus.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Divus Augustus 4" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. balbus" }
+    ]
+  },
+  "roman_octavia_minor": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Octavia, feminine of the gens Octavia, whose nomen derives from the numeral/praenomen octavus \"eighth\" (octo \"eight\"); the epithet Minor \"the younger\" distinguishes her from her elder half-sister. The sister of Augustus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.vv. octavus, octo" },
+      { "kind": "primary", "reference": "Suetonius, Divus Augustus 4" }
+    ]
+  },
+  "roman_augustus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Augustus, the honorific conferred on Octavian in 27 BCE, from the adjective augustus \"venerable, majestic, consecrated by augury\" (akin to augeo \"to increase, augment\" and augur). Suetonius and Ovid explain it as marking him the consecrated and revered one, more than merely human.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Divus Augustus 7" },
+      { "kind": "primary", "reference": "Ovid, Fasti 1.587–616 (the name Augustus)" }
+    ]
+  },
+  "roman_iulia_the_elder": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Iulia, feminine of the nomen of the gens Iulia (traced to Iulus son of Aeneas); the only child of Augustus, she bore the gens-name as her personal name in the Roman manner.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Iulius" },
+      { "kind": "secondary", "reference": "Chase, The Origin of Roman Praenomina (Harvard Studies in Classical Philology 8, 1897)" }
+    ]
+  },
+  "roman_tiberius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Tiberius, an old Roman praenomen derived from the river-name Tiberis (the Tiber), \"(child) of the Tiber.\" The emperor Tiberius Claudius Nero.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Tiberis / Tiberius" },
+      { "kind": "secondary", "reference": "Chase, The Origin of Roman Praenomina (Harvard Studies in Classical Philology 8, 1897)" }
+    ]
+  },
+  "roman_drusus_the_elder": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Drusus, a cognomen of the Livii and Claudii; Suetonius reports it was first borne by an ancestor who slew an enemy leader named Drausus and assumed his name. Nero Claudius Drusus, brother of Tiberius.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Tiberius 3.2 (origin of the Drusus cognomen)" }
+    ]
+  },
+  "roman_germanicus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Germanicus, an agnomen \"(conqueror) of Germania,\" from Germani/Germania; first won by his father Drusus for campaigns beyond the Rhine and inherited as a hereditary honorific. The general Germanicus Iulius Caesar.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Divus Claudius 1.3 (the agnomen Germanicus)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Germanicus" }
+    ]
+  },
+  "roman_caligula": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Caligula, \"Little Boot,\" a diminutive of caliga \"the hobnailed military boot,\" a nickname given in childhood by his father Germanicus' troops when he was dressed in a miniature soldier's outfit in camp; his formal name was Gaius.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Gaius (Caligula) 9 (the nickname from caliga)" },
+      { "kind": "primary", "reference": "Tacitus, Annals 1.41" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
