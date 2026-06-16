@@ -225545,6 +225545,111 @@ const ETYMOLOGY = {
       { "kind": "secondary", "reference": "Juan Álvarez Delgado, studies of Guanche/Canarian onomastics (Benchomo ‹ wen-chum \"the greatest\")" },
       { "kind": "secondary", "reference": "Ignacio Reyes García, Diccionario ínsuloamaziq (Benytomo ‹ we-n-ytum \"ambitious\")" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8m ETYMOLOGY (LOWER TIERS) — researched Asian/American/Pacific oral
+  //  tail and the held Near-Eastern/European gaps. Of 25 names put through the
+  //  research pass, the twelve below had a defensible sourced meaning; thirteen
+  //  returned none and are left as honest gaps: Aromadapuén, the (unnamed)
+  //  Quechua Andean woman, Mulukwausi, Tomo, Datu Paubari, White-Beaver-Skin
+  //  Woman, Skeena Chief's Daughter, Aqhat, Burebista, Sulkalmakhi, and the
+  //  three Lepcha names (Fodongthing, Nazongnyu, Tashe-thing). Data flags for
+  //  later: the Wiininwaa entry conflates the Ojibwe figure with Dakota
+  //  "Winona"; "Tashe-thing" is a variant name of the first man, not a son.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "nandesy": {
+    "languageFamily": "Tupian (Tupí-Guaraní; Guaraní)",
+    "etymology": "Guaraní Ñandesy (also Ñandecy), \"Our Mother,\" from ñande \"our\" (first-person plural inclusive) and sy \"mother\" — the mother-principle paired with Ñande Ru \"Our Father.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Guaraní grammar: ñande \"our (incl.)\" + sy \"mother\"" },
+      { "kind": "secondary", "reference": "Guaraní (Tupí-Guaraní) creation tradition (Ñande Ru / Ñande Sy)" }
+    ]
+  },
+  "chinese_yang_tianyou": {
+    "languageFamily": "Sino-Tibetan (Sinitic; Chinese)",
+    "etymology": "Chinese 杨天佑 (Yáng Tiānyòu): the surname 杨 (yáng) \"poplar\" with the given name 天佑 (tiānyòu) \"Heaven protects,\" from 天 (tiān) \"heaven\" and 佑 (yòu) \"to protect, bless, aid from above\" — the mortal father of the god Erlang Shen (Yang Jian) in the Ming-era Erlang/Journey-to-the-West tradition.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hanyu Da Cidian / zdic.net, s.v. 天佑 (天 + 佑 \"heaven protects\")" },
+      { "kind": "secondary", "reference": "Baidu Baike, 杨天佑 (father of Erlang Shen)" }
+    ]
+  },
+  "chinese_liu_yanchang": {
+    "languageFamily": "Sino-Tibetan (Sinitic; Chinese)",
+    "etymology": "Chinese 刘彦昌 (Liú Yànchāng): the surname 刘 (liú) with the given name 彦昌 (yànchāng), from 彦 (yàn) \"a man of talent and virtue, scholar\" and 昌 (chāng) \"flourishing, prosperous\" — \"the flourishing scholar.\" The mortal scholar of the Baolian-deng (Lotus Lantern) legend, husband of the Third Holy Mother and father of Chenxiang.",
+    "sources": [
+      { "kind": "secondary", "reference": "zi.tools, s.vv. 彦 (\"man of virtue\"), 昌 (\"flourishing\")" },
+      { "kind": "secondary", "reference": "Baidu Baike, 刘彦昌 (the Lotus Lantern scholar)" }
+    ]
+  },
+  "wiininwaa": {
+    "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabemowin)",
+    "etymology": "Ojibwe (Anishinaabemowin) Wiininwaa, \"Nourishment / the one who nourishes\" (to the stem wiinin- \"fat, tallow,\" the substance of nourishment) — in Ojibwe tradition the human mother of Nanabozho. Distinct from the Dakota (Siouan) name Winona \"firstborn daughter,\" with which it is sometimes confused.",
+    "sources": [
+      { "kind": "secondary", "reference": "The Ojibwe People's Dictionary (U. Minnesota), s.vv. wiininw-, wiinin" }
+    ]
+  },
+  "soatsaki": {
+    "languageFamily": "Algic (Algonquian; Blackfoot/Niitsi'powahsin)",
+    "etymology": "Blackfoot (Niitsi'powahsin) Soatsaki, glossed \"Feather Woman\" — the woman who married Morning Star (Apisirahts) and bore Star Boy (Poia), tied to the origin of the Sun Dance. The gloss is well-attested; a morpheme-by-morpheme breakdown is not.",
+    "sources": [
+      { "kind": "primary", "reference": "Walter McClintock, The Old North Trail (1910) — Brings-Down-the-Sun's narrative" },
+      { "kind": "secondary", "reference": "native-languages.org, \"Feather Woman (Soatsaki)\"" }
+    ]
+  },
+  "tapun_sa_win": {
+    "languageFamily": "Siouan (Lakota)",
+    "etymology": "Lakota Tȟapȟúŋ Šá Wíŋ, \"Red Cheek Woman,\" from tȟapȟúŋ \"cheek,\" šá \"red,\" and wíŋ \"woman\" — the woman who married a Star Man (who became the unmoving North Star) and bore Fallen Star.",
+    "sources": [
+      { "kind": "secondary", "reference": "New Lakota Dictionary (šá \"red\"; wíŋ \"woman\")" },
+      { "kind": "secondary", "reference": "Aktá Lakota Museum & Cultural Center, \"Tapun Sa Win\"" }
+    ]
+  },
+  "estonian_linda": {
+    "languageFamily": "name of Germanic origin, in the Estonian (Finnic) tradition",
+    "etymology": "Estonian. In Kreutzwald's epic Kalevipoeg (1861) the name Linda was taken from the then-current Germanic name Linda, on the assumption that the Tallinn place-name Lindanise contained a personal name Linda; the popular association with Estonian lind \"bird\" (Proto-Finnic *lintu) is a folk etymology.",
+    "sources": [
+      { "kind": "secondary", "reference": "Wiktionary, s.v. Linda (Germanic origin via Lindanise; the lind \"bird\" link flagged folk-etymology)" }
+    ]
+  },
+  "kartvelian_badri": {
+    "languageFamily": "name of Arabic origin, in the Georgian (Kartvelian) tradition",
+    "etymology": "The Georgian name Badri (Badria) is of Arabic origin, from badr (بدر) \"full moon\" — borne by a foster-brother of Amirani (with Usup) in the Georgian Amiraniani folk-epic cycle.",
+    "sources": [
+      { "kind": "secondary", "reference": "Arabic badr \"full moon\"; standard onomastics of the name" }
+    ]
+  },
+  "kartvelian_darejan": {
+    "languageFamily": "name of Persian origin, in the Georgian (Kartvelian) tradition",
+    "etymology": "The Georgian name Darejani is of Persian origin; in Rustaveli's coined compound Nestan-Darejan the element is referred to Persian (nist) andar jahān \"(nothing) in the world\" → \"matchless,\" though the standalone name's exact morphology is debated (a folk reading takes Dārā \"ruler\" + jān \"dear, soul\").",
+    "sources": [
+      { "kind": "secondary", "reference": "N. Gogochuri, Literary Researches (litinfo.ge), on the Darejani name" },
+      { "kind": "secondary", "reference": "Behind the Name, \"Nestan-Darejan\" (Persian nist andar jahān \"matchless\")" }
+    ]
+  },
+  "khasi_hynniew_trep": {
+    "languageFamily": "Austroasiatic (Khasic; Khasi)",
+    "etymology": "Khasi Hynñiew Trep, \"the Seven Huts,\" from hynñiew \"seven\" and trep \"hut, dwelling\" — paired in the couplet Hynñiew Trep, Hynñiew Skum \"Seven Huts, Seven Nests\" (skum \"nest\"). The seven primeval human families who remained on earth, ancestors of the Khasi sub-groups.",
+    "sources": [
+      { "kind": "secondary", "reference": "Khasi numeral hynñiew \"seven\"; trep \"hut\" / skum \"nest\"" },
+      { "kind": "secondary", "reference": "The Hynñiewtrep–Hynñiewskum (\"Seven Huts, Seven Nests\") origin tradition" }
+    ]
+  },
+  "santal_pilcu_haram": {
+    "languageFamily": "Austroasiatic (Munda; Santali)",
+    "etymology": "Santali (Munda) Pilcu Haram, \"Pilcu the Old Man\": haṛam \"old man, elder\" — the primeval first man, hatched with his consort from the eggs laid by the bird Hãs in the Thakur Jiu creation. The element Pilcu, marking the primeval pair, is unexplained.",
+    "sources": [
+      { "kind": "secondary", "reference": "P. O. Bodding, A Santal Dictionary (1932–36), s.v. haṛam \"old man\"" },
+      { "kind": "primary", "reference": "C. H. Bompas / P. O. Bodding, Folklore of the Santal Parganas (1909)" }
+    ]
+  },
+  "santal_pilcu_budhi": {
+    "languageFamily": "Austroasiatic (Munda; Santali)",
+    "etymology": "Santali (Munda) Pilcu Budhi, \"Pilcu the Old Woman\": budhi (burhi) \"old woman\" — an Indo-Aryan loan (cf. Hindi būṛhī) — the primeval first woman. The element Pilcu, marking the primeval pair, is unexplained.",
+    "sources": [
+      { "kind": "secondary", "reference": "P. O. Bodding, A Santal Dictionary (1932–36), s.v. buḍhi \"old woman\"" },
+      { "kind": "primary", "reference": "C. H. Bompas / P. O. Bodding, Folklore of the Santal Parganas (1909)" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
