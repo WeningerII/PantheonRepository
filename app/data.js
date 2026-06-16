@@ -225330,6 +225330,185 @@ const ETYMOLOGY = {
       { "kind": "primary", "reference": "Genesis 30:24 (the naming of Joseph: yōsēp̄ \"may he add\")" },
       { "kind": "secondary", "reference": "Standard onomastics: Caucasian Usup/Yusup ← Arabic Yūsuf ← Hebrew Yōsēp̄" }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8k ETYMOLOGY (LOWER TIERS) — the obscure Greek tail: the transparently
+  //  analysable names among the minor Apollodoran/Homeric figures. Standard
+  //  compounds are authored (von Kamptz; LSJ; Beekes), debated ones hedged.
+  //  The many bare genealogical or Pre-Greek names with no secure etymology —
+  //  Megara, Iole, Tithonus, Tyndareus, Tyro, Io, Elara, Oeagrus, Hermione,
+  //  Otrera, Cyrene, Hyrmine, Pierus, Echemus, Munitus, Ascanius, Etias,
+  //  Podalirius, Aratus, Syrnus, Anogon, Niobe, Amyclas, Acastus, Lamus,
+  //  Maraphius, Aethiolas, Evadne — are left as honest gaps.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "greek_eur_macaria": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μακαρία (Makaría), from μάκαρ / μακάριος (mákar) \"blessed, happy\" — \"the blessed one.\" The daughter of Heracles who gave her life for the Athenian victory.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. μάκαρ" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_echephron": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἐχέφρων (Echéphrōn), from ἔχω (échō) \"to hold, have\" and φρήν (phrḗn) \"mind, wits\" — \"prudent, possessed of sense\" (cf. the adjective ἐχέφρων \"sensible\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἐχέφρων" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_laodamia_lycian": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Λαοδάμεια (Laodámeia), from λαός (lāós) \"host, war-folk, people\" and the stem of δαμάω (damáō) \"to tame, subdue\" — \"she who subdues the host / tamer of the people.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. λαός, δαμάω" }
+    ]
+  },
+  "greek_eurynome": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυνόμη (Eurynómē), from εὐρύς (eurýs) \"broad, wide\" and the stem of νέμω (némō) \"to deal out, manage, rule; to pasture\" — \"wide-ruling\" (or \"of wide pastures\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. εὐρύς, νέμω" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_nicostratus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Νικόστρατος (Nikóstratos), from νίκη (níkē) \"victory\" and στρατός (stratós) \"army, host\" — \"victorious army / victory of the host.\" A son of Menelaus and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. νίκη, στρατός" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_pleisthenes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πλεισθένης (Pleisthénēs), from πλεῖστος (pleîstos) \"most, greatest\" (superlative of πολύς) and σθένος (sthénos) \"strength\" — \"of greatest strength.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. πλεῖστος, σθένος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_aganus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀγανός (Aganós), the adjective \"gentle, mild, kindly\" — \"the gentle one.\" A son of Paris and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἀγανός" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀγανός" }
+    ]
+  },
+  "greek_idaeus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰδαῖος (Idaîos), \"of Ida, Idaean,\" a derivative of the mountain-name Ἴδη (Mount Ida) — a toponymic name. A son of Paris and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. Ἴδη / Ἰδαῖος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_corythus_helen": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κόρυθος (Kórythos), from κόρυς, gen. κόρυθος (kórys) \"helmet\" — \"the helmeted one.\" A son of Paris.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κόρυς" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_eurypylus_telephus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρύπυλος (Eurýpylos), from εὐρύς (eurýs) \"broad, wide\" and πύλη (pýlē) \"gate\" — \"of the wide gates, wide-gated.\" The Mysian prince, son of Telephus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. εὐρύς, πύλη" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_melanippus_theseus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μελάνιππος (Melánippos), from μέλας (mélas) \"black, dark\" and ἵππος (híppos) \"horse\" — \"black horse, of the dark steed.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. μέλας, ἵππος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_nicomachus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Νικόμαχος (Nikómachos), from νίκη (níkē) \"victory\" and μάχη (máchē) \"battle\" — \"victorious in battle.\" A son of Machaon the healer.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. νίκη, μάχη" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_chloris": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Χλωρίς (Chlōrís), from χλωρός (chlōrós) \"pale-green, fresh, verdant; greenish-yellow\" — \"the verdant / fresh one.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. χλωρός" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. χλωρός" }
+    ]
+  },
+  "greek_bunomus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Βούνομος (Boúnomos), from βοῦς (boûs) \"ox, cattle\" and the stem of νέμω (némō) \"to pasture, graze\" — \"ox-herd, grazer of cattle\" (cf. the adjective βούνομος \"feeding oxen\"). A son of Paris and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. βοῦς, νέμω" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_gorgasus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Γόργασος (Górgasos), connected with γοργός (gorgós) \"grim, fierce, terrible\" — \"the fierce one.\" A son of Machaon, honoured as a healer at Pharae.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. γοργός" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_amphitryon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek); etymology debated",
+    "etymology": "Greek Ἀμφιτρύων (Amphitryōn). The traditional analysis takes it from ἀμφι- (amphi-) \"on both sides, about\" and the stem of τρύω (trýō) \"to wear out, harass\" — \"harasser on both sides\"; the formation is uncertain and possibly Pre-Greek. The mortal husband of Alcmene.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Ἀμφιτρύων" }
+    ]
+  },
+  "greek_apollod_iolaus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰόλαος (Iólaos), analysed by von Kamptz as a compound with λαός (lāós) \"host, people\"; the first element ἰο- is uncertain (variously to ἰός \"arrow\" or to ἴον \"violet\"). The nephew and charioteer of Heracles.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. λαός" }
+    ]
+  },
+  "greek_apollod_omphale": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek); etymology debated",
+    "etymology": "Greek Ὀμφάλη (Omphálē). The name is connected either with ὀμφαλός (omphalós) \"navel, boss, central point\" or with ὀμφή (omphḗ) \"divine voice, oracle\"; the choice is debated. The Lydian queen whom Heracles served.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.vv. ὀμφαλός, ὀμφή" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_anticleia_periphetes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντίκλεια (Antíkleia), from ἀντί (antí) \"facing, in place of, against\" and κλέος (kléos) \"glory, fame\" — roughly \"she who faces / stands for glory.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἀντί, κλέος" }
+    ]
+  },
+  "greek_apollod_hippolochus_podalirius": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἱππόλοχος (Hippólochos), from ἵππος (híppos) \"horse\" and λόχος (lóchos) \"ambush, band of warriors\" (also \"childbed\") — variously \"horse-ambush\" or \"born of horses.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἵππος, λόχος" }
+    ]
+  },
+  "greek_mnesileos": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μνησίλεως (Mnēsíleōs), from the stem of μνάομαι / μιμνήσκω (mnē-) \"to be mindful of, remember\" and λεώς/λαός (leṓs) \"people, host\" — \"mindful of the people.\" A son of Helen by Menelaus (variant Mnasinous).",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. μνάομαι, λεώς" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
