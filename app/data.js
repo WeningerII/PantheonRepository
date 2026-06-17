@@ -234882,6 +234882,64 @@ const EPITHETS_X = {
     { original: 'the Venus-star', scriptId: 'latin', rom: 'Athtar', gloss: 'The masculine morning-star god; the most widespread deity of ancient South Arabia, giver of water', language: 'sabaean', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Ancient South Arabian (Sabaean/Minaean/Qatabanian) inscriptions' }] },
   ],
 
+  // ── Wave NE8: Central & North Asia / Siberia — Turkic-Mongol (Orkhon
+  // inscriptions; Secret History), and Tungus, Ainu, Ob-Ugric, Samoyedic, and
+  // Yeniseian ethnography. Eighteen figures move 0->1. Safe new keys.
+  'turkic_umay': [
+    { original: 'Umay', scriptId: 'latin', rom: 'Umay', gloss: 'The mother-goddess of the womb, birth, and children; invoked beside Tengri in the royal inscriptions', language: 'turkic', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Orkhon inscriptions (Kül Tigin, “my mother the Khatun, like Umay”)' }] },
+  ],
+  'turkic_ulgen': [
+    { original: 'Ülgen', scriptId: 'latin', rom: 'Ulgen', gloss: 'The benevolent sky-creator of the upper world, dwelling above the layered heavens', language: 'turkic', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. V. Anokhin, on Altai shamanism' }] },
+  ],
+  'turkic_erlik': [
+    { original: 'Erlik Khan', scriptId: 'latin', rom: 'Erlik Khan', gloss: 'Lord of the underworld and the dead; first-formed being who fell into darkness', language: 'turkic', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. V. Anokhin / W. Radloff, on Altai-Turkic belief' }] },
+  ],
+  'mongol_etugen': [
+    { original: 'Etügen eke', scriptId: 'latin', rom: 'Etugen eke', gloss: 'Mother Earth; the earth-goddess paired with Eternal Heaven (Köke Tengri)', language: 'mongolian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'The Secret History of the Mongols' }] },
+  ],
+  'yakut_uruung_aiyy_toyon': [
+    { original: 'Ürüng Aiyy Toyon', scriptId: 'latin', rom: 'Urung Aiyy Toyon', gloss: 'The White Creator Lord; the supreme sky-god of the Sakha, enthroned in the highest heaven', language: 'yakut', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'W. Sieroszewski; G. Ksenofontov, on Sakha (Yakut) belief' }] },
+  ],
+  'evenki_buga': [
+    { original: 'Buga', scriptId: 'latin', rom: 'Buga', gloss: 'The universe and the sky as the supreme being; the living cosmos itself', language: 'evenki', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. F. Anisimov; S. Shirokogoroff, on Tungus cosmology' }] },
+  ],
+  'evenki_seveki': [
+    { original: 'Seveki', scriptId: 'latin', rom: 'Seveki', gloss: 'The benevolent creator and master of the upper world and of the animals (Amaka)', language: 'evenki', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. F. Anisimov, on Evenki religion' }] },
+  ],
+  'ainu_kamuy_fuchi': [
+    { original: 'Ape-huci Kamuy', scriptId: 'latin', rom: 'Ape-huci Kamuy', gloss: 'The hearth-fire grandmother; the central household deity who carries words to the gods', language: 'ainu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'John Batchelor; Neil Gordon Munro, Ainu Creed and Cult' }] },
+  ],
+  'ainu_kim_un_kamuy': [
+    { original: 'Kim-un Kamuy', scriptId: 'latin', rom: 'Kim-un Kamuy', gloss: 'The god of the mountains; the bear who gives his flesh and is sent home at the Iyomante', language: 'ainu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Neil Gordon Munro, Ainu Creed and Cult' }] },
+  ],
+  'ainu_repun_kamuy': [
+    { original: 'Repun Kamuy', scriptId: 'latin', rom: 'Repun Kamuy', gloss: 'The god of the open sea; the orca who drives whales to the shore for the people', language: 'ainu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ainu oral epics (yukar); John Batchelor' }] },
+  ],
+  'mansi_numi_torum': [
+    { original: 'Numi-Torum', scriptId: 'latin', rom: 'Numi-Torum', gloss: 'The supreme sky-god of the upper world, who orders the cosmos from above', language: 'mansi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'B. Munkácsi, on Vogul (Mansi) religion' }] },
+  ],
+  'mansi_mir_susne_khum': [
+    { original: 'Mir-susne-khum', scriptId: 'latin', rom: 'Mir-susne-khum', gloss: 'The Man who watches over the world; youngest son of Numi-Torum, who rides the sky on a winged horse', language: 'mansi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'B. Munkácsi, on Vogul (Mansi) religion' }] },
+  ],
+  'khanty_num_torum': [
+    { original: 'Num-Torum', scriptId: 'latin', rom: 'Num-Torum', gloss: 'The high sky-god and creator of the Khanty upper world', language: 'khanty', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'K. F. Karjalainen, on Ob-Ugric religion' }] },
+  ],
+  'nenets_num': [
+    { original: 'Num', scriptId: 'latin', rom: 'Num', gloss: 'The supreme sky-god and maker of the world', language: 'nenets', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'T. Lehtisalo, on Nenets (Samoyed) mythology' }] },
+  ],
+  'nenets_nga': [
+    { original: 'Nga', scriptId: 'latin', rom: 'Nga', gloss: 'God of death, sickness, and the underworld; son of Num', language: 'nenets', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'T. Lehtisalo, on Nenets (Samoyed) mythology' }] },
+  ],
+  'koryak_big_raven': [
+    { original: 'Quikinnaqu', scriptId: 'latin', rom: 'Quikinnaqu (Big Raven)', gloss: 'Big Raven; the first man, creator and trickster-ancestor whom The-One-on-High made', language: 'koryak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Waldemar Jochelson, The Koryak' }] },
+  ],
+  'ket_es': [
+    { original: 'Es', scriptId: 'latin', rom: 'Es', gloss: 'The supreme sky-god and creator of the Ket', language: 'ket', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'V. I. Anuchin, on Yeniseian (Ket) shamanism' }] },
+  ],
+  'ket_hosedem': [
+    { original: 'Hosedem', scriptId: 'latin', rom: 'Hosedem', gloss: 'The malevolent goddess of the cold north and death; Es’s estranged wife', language: 'ket', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'V. I. Anuchin, on Yeniseian (Ket) belief' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
