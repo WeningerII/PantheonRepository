@@ -234940,6 +234940,63 @@ const EPITHETS_X = {
     { original: 'Hosedem', scriptId: 'latin', rom: 'Hosedem', gloss: 'The malevolent goddess of the cold north and death; Es’s estranged wife', language: 'ket', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'V. I. Anuchin, on Yeniseian (Ket) belief' }] },
   ],
 
+  // ── Wave NE9: the Americas cont. — Zapotec, Muisca (Spanish chronicles),
+  // Mapuche, Tupi, Selk'nam (Gusinde), and Yanomami. Eighteen figures move 0->1.
+  'zapotec_cocijo': [
+    { original: 'Cocijo', scriptId: 'latin', rom: 'Cocijo', gloss: 'The great rain-and-lightning god; the foremost Zapotec deity, who looses the four rains', language: 'zapotec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'J. de Córdova, Vocabulario; colonial Oaxaca sources' }] },
+  ],
+  'zapotec_pitao_cozobi': [
+    { original: 'Pitao Cozobi', scriptId: 'latin', rom: 'Pitao Cozobi', gloss: 'The great spirit of maize and abundant sustenance', language: 'zapotec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'J. de Córdova, Vocabulario en lengua zapoteca' }] },
+  ],
+  'zapotec_coqui_xee': [
+    { original: 'Coqui Xee', scriptId: 'latin', rom: 'Coqui Xee', gloss: 'The infinite, uncreated supreme being without beginning or end (Pije-Tao)', language: 'zapotec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Fray Juan de Córdova; colonial Zapotec sources' }] },
+  ],
+  'muisca_bachue': [
+    { original: 'Furachogua', scriptId: 'latin', rom: 'Bachué (Furachogua)', gloss: 'The Good Woman; mother of humankind who rose from Lake Iguaque and returned as a serpent', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_chibchacum': [
+    { original: 'the earth-bearer', scriptId: 'latin', rom: 'Chibchacum', gloss: 'Patron of farmers and merchants who upholds the earth; shifting it from shoulder to shoulder makes it quake', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_chia': [
+    { original: 'Chía', scriptId: 'latin', rom: 'Chia', gloss: 'The Moon goddess; measure of months and the calendar', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_sue': [
+    { original: 'Sué', scriptId: 'latin', rom: 'Sue', gloss: 'The Sun god, lord of Sogamoso and of Bacatá (whence the name of the city)', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_huitaca': [
+    { original: 'Huitaca', scriptId: 'latin', rom: 'Huitaca', gloss: 'Goddess of pleasure, license, and the moon; Bochica’s adversary, turned into an owl', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_cuchavira': [
+    { original: 'Cuchavira', scriptId: 'latin', rom: 'Cuchavira', gloss: 'The Rainbow; protector of women in childbirth and of the sick', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'mapuche_antu': [
+    { original: 'Antü', scriptId: 'latin', rom: 'Antu', gloss: 'The Sun; a great power of the celestial tetrad, source of light and life', language: 'mapudungun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ricardo Latcham; Tomás Guevara, on Mapuche religion' }] },
+  ],
+  'mapuche_trentren_vilu': [
+    { original: 'Treng-Treng Vilu', scriptId: 'latin', rom: 'Trentren Vilu', gloss: 'The serpent of land and the heights who raises the hills to save the people from the flood', language: 'mapudungun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mapuche oral tradition (the epew of the great flood)' }] },
+  ],
+  'mapuche_kaikai_vilu': [
+    { original: 'Kai-Kai Vilu', scriptId: 'latin', rom: 'Kaikai Vilu', gloss: 'The serpent of the sea and the waters who looses the flood against humankind', language: 'mapudungun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mapuche oral tradition (the epew of the great flood)' }] },
+  ],
+  'tupi_guaraci': [
+    { original: 'Guaraci', scriptId: 'latin', rom: 'Guaraci', gloss: 'The Sun, “mother/origin of the living”; creator of the creatures of day', language: 'tupi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'André Thevet; José de Anchieta, on Tupi belief' }] },
+  ],
+  'tupi_jaci': [
+    { original: 'Jaci', scriptId: 'latin', rom: 'Jaci', gloss: 'The Moon, mother of the plants and waters; ruler of the night and the tides', language: 'tupi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'André Thevet, on Tupi belief' }] },
+  ],
+  'tupi_monan': [
+    { original: 'Monan', scriptId: 'latin', rom: 'Monan', gloss: 'The ancient creator without beginning, who made the world and purged it with fire and flood', language: 'tupi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'André Thevet, Les Singularitez de la France Antarctique' }] },
+  ],
+  'selknam_temaukel': [
+    { original: 'Temáukel', scriptId: 'latin', rom: 'Temaukel', gloss: 'The supreme, eternal, uncreated being “up there,” to whom no image is made', language: 'selknam', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martin Gusinde, Die Feuerland-Indianer' }] },
+  ],
+  'selknam_kenos': [
+    { original: 'Kénos', scriptId: 'latin', rom: 'Kenos', gloss: 'The first ancestor sent by Temáukel to order the world and establish the moral law', language: 'selknam', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martin Gusinde, Die Feuerland-Indianer' }] },
+  ],
+  'yanomami_omama': [
+    { original: 'Omama', scriptId: 'latin', rom: 'Omama', gloss: 'The creator-demiurge who shaped present humanity and gave the shamans the xapiri spirits', language: 'yanomami', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Davi Kopenawa & Bruce Albert, The Falling Sky; Jacques Lizot' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
