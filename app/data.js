@@ -235153,6 +235153,64 @@ const EPITHETS_X = {
     { original: 'Ortzi', scriptId: 'latin', rom: 'Ortzi (Urtzi)', gloss: 'The sky and thunder; the very word for the firmament and the weather of the heavens', language: 'basque', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Basque etymology of sky/weather terms; Barandiarán' }] },
   ],
 
+  // ── Wave NE13: African supreme beings & creators — the documented high-gods
+  // and demiurges of many peoples (Evans-Pritchard, Smith & Dale, Field,
+  // Dieterlen, Torday). Eighteen figures move 0->1. Safe new keys.
+  'bambara_faro': [
+    { original: 'master of the Word and the waters', scriptId: 'latin', rom: 'Faro', gloss: 'The demiurge of water and of speech who reorganized the world and set its order', language: 'bambara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Germaine Dieterlen, Essai sur la religion bambara' }] },
+  ],
+  'bambara_pemba': [
+    { original: 'the balanza-tree creator', scriptId: 'latin', rom: 'Pemba', gloss: 'The creator who descended as the balanza (acacia) and from whose body the first beings sprang', language: 'bambara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Germaine Dieterlen, Essai sur la religion bambara' }] },
+  ],
+  'ewe_mawu': [
+    { original: 'Mawu', scriptId: 'latin', rom: 'Mawu', gloss: 'The supreme creator and sky-deity, giver of rain and breath', language: 'ewe', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Jakob Spieth, Die Ewe-Stämme; M. J. Herskovits' }] },
+  ],
+  'fang_nzame': [
+    { original: 'Nzame', scriptId: 'latin', rom: 'Nzame', gloss: 'The creator god, first of the Fang trinity (Nzame, Mebere, Nkwa)', language: 'fang', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Henri Trilles, Le Totémisme chez les Fân' }] },
+  ],
+  'ga_ataa_naa_nyongmo': [
+    { original: 'Ataa-Naa Nyɔŋmɔ', scriptId: 'latin', rom: 'Ataa-Naa Nyongmo', gloss: 'The Father-Mother God; the supreme being who sends the rain and the lightning', language: 'ga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'M. J. Field, Religion and Medicine of the Gã People' }] },
+  ],
+  'ibibio_abasi': [
+    { original: 'Abasi', scriptId: 'latin', rom: 'Abasi', gloss: 'The supreme creator and sky-god, who with Atai set the order of the world', language: 'ibibio', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ibibio/Efik ethnography (D. A. Talbot)' }] },
+  ],
+  'ijaw_woyengi': [
+    { original: 'Our Mother', scriptId: 'latin', rom: 'Woyengi', gloss: 'The great mother-creator who moulds each person from earth and grants the destiny they choose', language: 'ijaw', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ijo (Izon) oral tradition; Gabriel Okara' }] },
+  ],
+  'kuba_mbombo': [
+    { original: 'the white giant', scriptId: 'latin', rom: 'Mbombo (Bumba)', gloss: 'The creator who, in pain, vomited up the sun, moon, stars, and all living beings', language: 'kuba', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. Torday & T. A. Joyce, on the Bushongo (Kuba)' }] },
+  ],
+  'kuba_woot': [
+    { original: 'the first king', scriptId: 'latin', rom: 'Woot', gloss: 'The culture-hero and first ancestor-king from whom the Kuba kings descend', language: 'kuba', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Jan Vansina, on Kuba history and tradition' }] },
+  ],
+  'lozi_nyambe': [
+    { original: 'Nyambe', scriptId: 'latin', rom: 'Nyambe', gloss: 'The supreme creator who dwelt on earth, then withdrew to the sky up a spider’s thread', language: 'lozi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'É. Jacottet, on Barotse (Lozi) tradition' }] },
+  ],
+  'mende_ngewo': [
+    { original: 'Ngewo', scriptId: 'latin', rom: 'Ngewo', gloss: 'The supreme creator and sky-god, the distant maker of all', language: 'mende', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mende ethnography (Sierra Leone); K. L. Little' }] },
+  ],
+  'nuer_kwoth': [
+    { original: 'Kwoth Nhial', scriptId: 'latin', rom: 'Kwoth Nhial', gloss: 'Spirit of the Sky; the one supreme God who is everywhere and in all the lesser spirits', language: 'nuer', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. E. Evans-Pritchard, Nuer Religion' }] },
+  ],
+  'serer_roog': [
+    { original: 'Roog Sene', scriptId: 'latin', rom: 'Roog Sene', gloss: 'The supreme, merciful creator-god of the Serer, source and end of all things', language: 'serer', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Henry Gravrand, on Serer religion (Cosaan)' }] },
+  ],
+  'shilluk_nyikang': [
+    { original: 'the first reth', scriptId: 'latin', rom: 'Nyikang', gloss: 'The semi-divine founder-king and culture-hero, incarnate in every reigning Shilluk king', language: 'shilluk', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. E. Evans-Pritchard, The Divine Kingship of the Shilluk' }] },
+  ],
+  'tonga_leza': [
+    { original: 'Leza', scriptId: 'latin', rom: 'Leza', gloss: 'The supreme high-god and rain-giver; “the Besetting One” who orders birth and death', language: 'tonga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. W. Smith & A. M. Dale, The Ila-speaking Peoples of Northern Rhodesia' }] },
+  ],
+  'senufo_kolotyolo': [
+    { original: 'Kolotyolo', scriptId: 'latin', rom: 'Kolotyolo', gloss: 'The Creator; the remote demiurge “who gives the day,” balanced by the Ancient Mother Maleeo', language: 'senufo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Anita Glaze, Art and Death in a Senufo Village' }] },
+  ],
+  'herero_mukuru': [
+    { original: 'Mukuru', scriptId: 'latin', rom: 'Mukuru', gloss: 'The supreme divine ancestor; the rain-giver and healer who blesses through the holy fire', language: 'herero', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Herero ethnography (H. Vedder, on the Ovaherero)' }] },
+  ],
+  'herero_ndjambi': [
+    { original: 'Ndjambi Karunga', scriptId: 'latin', rom: 'Ndjambi Karunga', gloss: 'The remote celestial high-god of the heavens, to whom the dead return', language: 'herero', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Herero ethnography (H. Vedder, on the Ovaherero)' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
