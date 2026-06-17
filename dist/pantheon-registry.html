@@ -33846,6 +33846,10 @@ const ITEM_PROVENANCE = {
   },
   'hera-golden-apples': {
     maker: { name: 'Gaia (Earth)', role: 'given by', personId: 'greek_hesiod_gaia', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.11 (Earth’s gift of the golden apples to Hera at her wedding to Zeus, kept by the Hesperides)' }] },
+    custody: [
+      { role: 'kept in', externalRef: { name: 'the garden of the Hesperides, guarded by the hundred-headed dragon Ladon', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.11; Hesiod, Theogony 215–216, 333–335' }] },
+      { role: 'fetched and restored', externalRef: { name: 'taken by Heracles for his eleventh labour, then carried back to the Hesperides by Athena', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.11' }] },
+    ],
   },
   'odysseus-bow': {
     custody: [
@@ -33869,6 +33873,16 @@ const ITEM_PROVENANCE = {
   'aegeus-sandals': {
     custody: [
       { role: 'left as a recognition-token by', externalRef: { name: 'Aegeus (hidden with his sword under the rock at Troezen for Theseus)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+    ],
+  },
+
+  // ── Wave I6: custody/descent for famous items. To avoid duplicate keys, the
+  // Palladium / Helm-of-Hades / golden-apples custody is merged into each item's
+  // existing maker entry (below / above). The Golden Bough is the only new key.
+  'aeneas-golden-bough': {
+    custody: [
+      { role: 'sacred to', externalRef: { name: 'Proserpina — the bough that must be plucked to enter the underworld alive', tradition: 'Roman' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 6.136–148' }] },
+      { role: 'plucked by', externalRef: { name: 'Aeneas, led by Venus’s twin doves and the Sibyl, to win passage past Charon to Dis', tradition: 'Roman' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 6.190–211, 403–410' }] },
     ],
   },
 
@@ -34012,18 +34026,33 @@ const ITEM_PROVENANCE = {
   },
   'helm-of-darkness': {
     maker: { name: 'the Cyclopes (Brontes, Steropes, Arges)', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes give Hades the helmet of invisibility, Zeus the thunderbolt, Poseidon the trident); Hesiod, Theogony 501–506' }] },
+    custody: [
+      { role: 'worn by', externalRef: { name: 'Athena, who dons the cap of Hades so that raging Ares cannot see her at Troy', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.844–845' }] },
+      { role: 'lent to', externalRef: { name: 'Perseus, furnished by the Stygian nymphs for the Gorgon-quest', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2' }] },
+    ],
   },
   palladium: {
     maker: { name: 'Athena', role: 'carved by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 3.12.3 (Athena fashioned an image — the Palladium — in the likeness of Pallas)' }] },
+    custody: [
+      { role: 'safeguarded at', externalRef: { name: 'Troy — the city’s safety depended on the heaven-sent image', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Epitome 5.10–13' }] },
+      { role: 'stolen by', externalRef: { name: 'Odysseus and Diomedes, who carry it off as a precondition for Troy’s fall', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Epitome 5.13' }] },
+    ],
   },
   'palladium-athens': {
     maker: { name: 'Athena', role: 'carved by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 3.12.3 (the Palladium, the image Athena made of Pallas)' }] },
+    custody: [
+      { role: 'claimed by', externalRef: { name: 'Athens — the Palladion Diomedes brought from Troy, housed at the homicide-court “epi Palladiōi”', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pausanias 1.28.8–9' }] },
+    ],
   },
   'shield-of-aeneas': {
     maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.626–731 (the shield Vulcan wrought, emblazoned with the destiny of Rome)' }] },
   },
   'helm-of-hades': {
     maker: { name: 'the Cyclopes', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forged the cap of invisibility for Hades/Pluto in the war on the Titans)' }] },
+    custody: [
+      { role: 'worn by', externalRef: { name: 'Athena, who dons the cap of Hades so that raging Ares cannot see her at Troy', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.844–845' }] },
+      { role: 'lent to', externalRef: { name: 'Perseus, furnished by the Stygian nymphs for the Gorgon-quest', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2' }] },
+    ],
   },
   'neptunus-tridens': {
     maker: { name: 'the Cyclopes', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forged the trident for Poseidon/Neptune in the war on the Titans)' }] },
