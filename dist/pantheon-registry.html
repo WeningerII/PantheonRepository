@@ -33786,6 +33786,92 @@ const ITEM_ALIASES = {
 // un-forged regalia) have no named maker and are deliberately left blank. Grown
 // in waves by tradition.
 const ITEM_PROVENANCE = {
+  // ── Wave I3: Greek heroic divine-gifts — the canonical arming passages
+  // (Apollodorus 2.4.2 for Perseus, 2.4.11 for Heracles), the Iliad sceptre-
+  // genealogy, and the Hermes/Apollo lyre-and-staff tradition. Fill-only;
+  // custody chains added where the source tracks the object's descent. The
+  // earlier waves left some of these blank as "no maker-myth" — but the sceptre
+  // (Il. 2.101) and Hera's throne (Paus. 1.20.3) do have attested makers.
+  'perseus-harpe': {
+    maker: { name: 'Hermes', role: 'given by', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (Hermes gives Perseus an adamantine harpē/sickle for the beheading)' }] },
+  },
+  'perseus-talaria': {
+    maker: { name: 'the Stygian Nymphs', role: 'furnished by', kind: 'nymphs', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (the nymphs furnish the winged sandals, the kibisis, and the cap of Hades)' }] },
+  },
+  'perseus-kibisis': {
+    maker: { name: 'the Stygian Nymphs', role: 'furnished by', kind: 'nymphs', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (the kibisis — the special wallet for Medusa’s head — furnished by the nymphs)' }] },
+  },
+  'perseus-kynee': {
+    maker: { name: 'the Cyclopes', role: 'forged by', kind: 'smith-giants', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forge the Cap of Hades / kynéē); furnished to Perseus by the nymphs, Apollod. 2.4.2' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Cyclopes (for Hades, when the gods armed against the Titans)', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 1.2.1' }] },
+      { role: 'furnished to Perseus by', externalRef: { name: 'the Stygian Nymphs', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2' }] },
+    ],
+  },
+  'perseus-shield-mirror': {
+    maker: { name: 'Athena', role: 'given by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2–3 (Athena guides Perseus’s hand and provides the bright bronze shield he sights Medusa in, to avoid her petrifying gaze)' }] },
+  },
+  'heracles-sword': {
+    maker: { name: 'Hermes', role: 'given by', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Hermes a sword)' }] },
+  },
+  'heracles-bow': {
+    maker: { name: 'Apollo', role: 'given by', personId: 'greek_hesiod_apollo', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Apollo a bow and arrows)' }] },
+  },
+  'heracles-quiver': {
+    maker: { name: 'Apollo', role: 'given by', personId: 'greek_hesiod_apollo', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (Apollo’s gift of bow and arrows — the quiver holds the arrows Heracles later poisons with Hydra venom)' }] },
+  },
+  'heracles-club': {
+    maker: { name: 'Heracles himself (cut from a wild olive)', role: 'cut by', personId: 'greek_apollod_heracles', kind: 'hero', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (Heracles cuts himself a club at Nemea); Theocritus 25.207–211 (the wild-olive club, torn up root and all)' }] },
+  },
+  'zeus-sceptre': {
+    maker: { name: 'Hephaestus', role: 'made by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Homer, Iliad 2.101–108 (the sceptre Hephaestus wrought for Zeus, passed Zeus→Hermes→Pelops→Atreus→Thyestes→Agamemnon)' }] },
+    custody: [
+      { role: 'made by', externalRef: { name: 'Hephaestus', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Iliad 2.101' }] },
+      { role: 'given to', externalRef: { name: 'Zeus, who gave it to Hermes the messenger', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Iliad 2.102–104' }] },
+      { role: 'descended through', externalRef: { name: 'Pelops → Atreus → Thyestes → Agamemnon', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Iliad 2.104–108' }] },
+    ],
+  },
+  caduceus: {
+    maker: { name: 'Apollo (bestowed the golden wand on Hermes)', role: 'given by', personId: 'greek_hesiod_apollo', kind: 'god', sources: [{ kind: 'primary', reference: 'Homeric Hymn to Hermes 528–532 (Apollo gives Hermes the golden, three-leaved rhabdos — the kērykeion/caduceus — in the exchange that follows the theft of the cattle and the gift of the lyre)' }] },
+  },
+  'lyre-of-orpheus': {
+    maker: { name: 'Hermes (who invented the lyre)', role: 'invented by', kind: 'god', sources: [{ kind: 'primary', reference: 'Homeric Hymn to Hermes 24–61 (the infant Hermes hollows a tortoise-shell and strings the first lyre); Apollodorus 1.3.2 (Orpheus’s lyre-craft, taught by the Muses)' }] },
+  },
+  'hera-golden-throne': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Pausanias 1.20.3 (the throne with hidden bonds Hephaestus made for Hera, who cast him from Olympus)' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Hephaestus (a golden throne with invisible fetters, to avenge his casting-down)', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Pausanias 1.20.3' }] },
+      { role: 'sprung on', externalRef: { name: 'Hera (bound fast when she sat; freed only when Dionysus brought Hephaestus back to Olympus, drunk)', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'secondary', reference: 'the archaic Return-of-Hephaestus tradition (depicted on the François Vase, c. 570 BCE)' }] },
+    ],
+  },
+  'hera-golden-apples': {
+    maker: { name: 'Gaia (Earth)', role: 'given by', personId: 'greek_hesiod_gaia', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.11 (Earth’s gift of the golden apples to Hera at her wedding to Zeus, kept by the Hesperides)' }] },
+  },
+  'odysseus-bow': {
+    custody: [
+      { role: 'owned by', externalRef: { name: 'Eurytus of Oechalia', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 21.13–33' }] },
+      { role: 'passed to', externalRef: { name: 'Iphitus (Eurytus’s son), who gave it to Odysseus as a guest-gift at Messene', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Odyssey 21.31–41' }] },
+      { role: 'strung by', externalRef: { name: 'Odysseus, to win Penelope’s contest and open the slaying of the suitors', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Odyssey 21.404–423' }] },
+    ],
+  },
+  'theseus-sword': {
+    custody: [
+      { role: 'left as a token by', externalRef: { name: 'Aegeus (hidden with sandals under a great rock at Troezen for his unborn son to lift)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+      { role: 'recovered by', externalRef: { name: 'Theseus (the tokens later prove his paternity to Aegeus at Athens)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6, 12' }] },
+    ],
+  },
+  'theseus-sandals': {
+    custody: [
+      { role: 'left as a token by', externalRef: { name: 'Aegeus (with the sword, beneath the rock at Troezen)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+      { role: 'recovered by', externalRef: { name: 'Theseus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6' }] },
+    ],
+  },
+  'aegeus-sandals': {
+    custody: [
+      { role: 'left as a recognition-token by', externalRef: { name: 'Aegeus (hidden with his sword under the rock at Troezen for Theseus)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+    ],
+  },
+
   // ── Wave I1: Norse dwarven craft + Greek/Roman smith-forged (primary-sourced)
   brisingamen: {
     maker: { name: 'four dwarfs — Alfrigg, Dvalinn, Berlingr, and Grerr', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1 (the four dwarfs forge the necklace; Freyja obtains it from them)' }] },
