@@ -30440,6 +30440,11 @@ const ITEM_PROVENANCE = {
   // ── Wave I1: Norse dwarven craft + Greek/Roman smith-forged (primary-sourced)
   brisingamen: {
     maker: { name: 'four dwarfs — Alfrigg, Dvalinn, Berlingr, and Grerr', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1 (the four dwarfs forge the necklace; Freyja obtains it from them)' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the four dwarfs (Alfrigg, Dvalinn, Berlingr, Grerr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1' }] },
+      { role: 'obtained by', externalRef: { name: 'Freyja (from the dwarfs)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1' }] },
+      { role: 'stolen and recovered', externalRef: { name: 'taken by Loki; recovered for Freyja by Heimdall after their struggle (as seals) at Singasteinn', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Húsdrápa (the Heimdall–Loki contest for the Brísingamen); Skáldskaparmál 8' }] },
+    ],
   },
   hildisvini: {
     maker: { name: 'the dwarfs Dáinn and Nabbi', role: 'made by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Hyndluljóð 7 (Dáinn and Nabbi wrought the boar Hildisvíni for Freyja)' }] },
@@ -30452,6 +30457,11 @@ const ITEM_PROVENANCE = {
   },
   talos: {
     maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.9.26 (the bronze man Talos, made by Hephaestus; a scholiast variant credits Daedalus)' }] },
+    custody: [
+      { role: 'made by', externalRef: { name: 'Hephaestus', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.26' }] },
+      { role: 'set to guard Crete', externalRef: { name: 'given to Minos to patrol Crete, circling the island thrice daily', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.26; Apollonius, Argonautica 4.1638–1648' }] },
+      { role: 'destroyed by', externalRef: { name: 'Medea (who drew the bronze pin from his ankle, draining his ichor)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 4.1654–1688' }] },
+    ],
   },
   'heracles-golden-breastplate': {
     maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Hephaestus a golden breastplate)' }] },
@@ -30547,6 +30557,11 @@ const ITEM_PROVENANCE = {
   },
   'kubera-pushpaka': {
     maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the Pushpaka Vimana Vishvakarma made for Kubera)' }] },
+    custody: [
+      { role: 'built by', externalRef: { name: 'Vishvakarma (for Brahma, who gave it to Kubera)', tradition: 'Hindu' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda' }] },
+      { role: 'seized by', externalRef: { name: 'Ravana (who took it from his half-brother Kubera)', tradition: 'Hindu' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda' }] },
+      { role: 'flown by', externalRef: { name: 'Rama (back to Ayodhyā after Rāvana’s defeat; later returned to Kubera)', tradition: 'Hindu' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Ramayana, Yuddha Kanda' }] },
+    ],
   },
   'ravana-pushpaka': {
     maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the Pushpaka Vimana, built by Vishvakarma for Kubera and seized by Ravana)' }] },
@@ -30569,6 +30584,39 @@ const ITEM_PROVENANCE = {
   },
   'mace-of-marduk': {
     maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV (Marduk takes up the mace among the weapons he fashions for the battle with Tiamat)' }] },
+  },
+
+  // ── Wave I4: Chinese (verified, Fengshen Yanyi / Xiyouji / Huainanzi) + custody
+  // backfill for marquee items. Erlang's blade, the lotus-lantern axe, and the
+  // self-swelling soil have no clearly-attested maker and are left blank.
+  'qiankun-quan': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'bestowed by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Universe Ring, one of the spiritual treasures of Taiyi Zhenren that Nezha bears)' }] },
+  },
+  'huntian-ling': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'bestowed by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Red Armillary Sash, a treasure of Taiyi Zhenren borne by Nezha)' }] },
+  },
+  'feng-huo-lun': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'given by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Wind-Fire Wheels, among the tools Taiyi Zhenren furnishes Nezha)' }] },
+  },
+  'huojian-qiang': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'given by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Fire-Tipped Spear presented to Nezha by Taiyi Zhenren)' }] },
+  },
+  'houyi-bow': {
+    maker: { name: 'Dìjùn (the god Jun)', role: 'given by', kind: 'god', sources: [{ kind: 'primary', reference: 'Shanhaijing, Hainei jing (Dìjùn bestowed on Yi a vermilion bow and white arrows to succour the lands below)' }] },
+  },
+  'five-colored-stones': {
+    maker: { name: 'Nüwa (who smelted them)', role: 'smelted by', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Huainanzi, Lanming xun (Nüwa smelted stones of five colours to mend the broken azure sky)' }] },
+  },
+  'ruyi-jingu-bang': {
+    maker: { name: 'Yu the Great (cast it as a sea-fathoming pillar) — a chapter-75 poem instead credits Taishang Laozi', role: 'cast by', kind: 'culture-hero', sources: [{ kind: 'primary', reference: 'Wu Cheng’en, Journey to the West, ch. 3 (the Sea-Stabilizing Pillar left from Yu the Great’s flood-control, kept in the East Sea Dragon-King’s treasury); ch. 75 poem (forged in Laozi’s furnace)' }] },
+    custody: [
+      { role: 'cast by', externalRef: { name: 'Yu the Great (as the sea-depth-fixing pillar; var. forged by Taishang Laozi)', tradition: 'Chinese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Journey to the West ch. 3' }] },
+      { role: 'kept in', externalRef: { name: 'the treasury of Ao Guang, Dragon-King of the East Sea', tradition: 'Chinese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Journey to the West ch. 3' }] },
+      { role: 'claimed by', externalRef: { name: 'Sun Wukong (who alone could lift it; it became his lifelong weapon)', tradition: 'Chinese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Journey to the West ch. 3' }] },
+    ],
+  },
+  'dinghai-shenzhen': {
+    maker: { name: 'Yu the Great', role: 'cast by', kind: 'culture-hero', sources: [{ kind: 'primary', reference: 'Journey to the West, ch. 3 (the Sea-Stabilizing Divine Pillar of Yu the Great’s flood-works — the same iron that becomes Sun Wukong’s staff)' }] },
   },
 };
 
