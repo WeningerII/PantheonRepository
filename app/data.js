@@ -245118,11 +245118,84 @@ const ICONOGRAPHY_X = {
   }
 };
 
+// ─── Power scope-tag derivation ─────────────────────────────────────────────
+// scopeTags categorise each faculty for the Detail view's power chips and were
+// only ~7% filled. The faculty ids are descriptive verb-phrases (hurl-lightning,
+// judge-the-dead, heal-the-sick), so tags are derived from a high-precision
+// keyword lexicon mapping into the existing scope vocabulary. Applied fill-only
+// (never overrides hand-authored scopeTags); ids matching no rule are left
+// untagged rather than force-tagged — taxonomy without inventing claims.
+const POWER_SCOPE_RULES = [
+  [/\b(lightning|thunder|thunderbolt|storm|storms|tempest|gale|hail|vajra)\b/, ['weather']],
+  [/\b(rain|cloud|clouds|wind|winds|weather|monsoon|drought)\b/, ['weather']],
+  [/\b(sea|ocean|water|waters|river|rivers|flood|floods|wave|waves|tide|tides|aquatic|moisture|deluge|fountain|whirlpool)\b/, ['water']],
+  [/\b(fire|flame|flames|fiery|pyre|blaze|ember|inferno)\b/, ['fire']],
+  [/\b(earth|earthquake|land|soil|mountain|mountains|stone|rock|quake|terrestrial)\b/, ['earth']],
+  [/\b(sky|heaven|heavens|heavenly|celestial|firmament|star|stars)\b/, ['celestial']],
+  [/\b(cosmos|cosmic|cosmogon|primordial)\b/, ['cosmogonic']],
+  [/\b(sun|solar|dawn|daylight|sunrise)\b/, ['solar']],
+  [/\b(moon|lunar|moonlight)\b/, ['lunar']],
+  [/\b(death|dead|dying|underworld|chthonic|grave|tomb|netherworld|soul|souls|funeral|corpse|perish)\b/, ['death']],
+  [/\b(judge|judges|judgment|judgement|verdict)\b/, ['judgment']],
+  [/\b(king|kings|kingship|royal|royalty|sovereign|reign|reigns|rule|rules|ruler|throne|crown|enthrone|dynasty|monarch|emperor)\b/, ['kingship']],
+  [/\b(war|battle|battles|combat|martial|fight|fights|warrior|slay|slays|slaying|smite|smites|conquer|conquest|victory|vanquish|duel|warfare)\b/, ['combat']],
+  [/\b(strength|strong|might|mighty|powerful|superhuman|herculean|titanic|gigantic|colossal|uproot|strongman)\b/, ['strength']],
+  [/\b(heal|heals|healing|cure|cures|medicine|physician|restore|rejuvenat|revive|revives|resurrect|resurrection|incubation|remedy)\b/, ['healing']],
+  [/\b(prophe|prophecy|prophesy|prophesies|oracle|oracles|oracular|divination|augur|augury|seer|omen|omens|foresee|foresight|foretell|destiny|portent|portents)\b/, ['divination']],
+  [/\b(shapeshift|shapeshifts|shapeshifting|transform|transforms|transforming|metamorph|metamorphose|polymorph|theriomorph|disguise|disguises)\b/, ['shapeshifting']],
+  [/\b(ritual|rituals|rite|rites|sacrifice|sacrifices|offering|offerings|libation|libations|worship)\b/, ['ritual']],
+  [/\b(dream|dreams)\b/, ['divination']],
+  [/\b(curse|curses|cursing)\b/, ['magic']],
+  [/\b(plough|plow|plant|planting)\b/, ['fertility']],
+  [/\b(dance|dances|dancing)\b/, ['ritual']],
+  [/\b(fly|flies|flight|winged|wings|aerial|levitate|soar|soars)\b/, ['flight']],
+  [/\b(steed|horse|horses|chariot|mount|ferry|ferries|psychopomp)\b/, ['locomotion']],
+  [/\b(music|musical|lyre|song|songs|sing|sung|sings|flute|harp|kantele|chant|melody)\b/, ['music']],
+  [/\b(smith|forge|forges|forging|craft|crafts|crafted|invent|invents|fashion|fashions|build|builds|construct|sculpt|carve|carves|weave|weaves)\b/, ['craft']],
+  [/\b(magic|magical|sorcer|sorcery|enchant|enchantment|spell|spells|heka|witch|incantation|conjure|conjures|bewitch)\b/, ['magic']],
+  [/\b(wealth|riches|prosper|prosperity|fortune|abundance|treasure)\b/, ['prosperity']],
+  [/\b(fertil|harvest|grain|grains|crop|crops|agricultur|sow|sows|cultivate|vegetation|maize)\b/, ['fertility']],
+  [/\b(love|desire|beauty|erotic|seduce|seduces|seduction|passion|lust)\b/, ['love']],
+  [/\b(trick|trickster|cunning|guile|deceit|deceive|deceives|thief|steal|steals|theft|infiltrate|outwit)\b/, ['trickster']],
+  [/\b(hunt|hunts|hunter|hunting|chase|prey|quarry)\b/, ['hunting']],
+  [/\b(serpent|serpents|snake|snakes|dragon|dragons|naga|python)\b/, ['serpent']],
+  [/\b(monster|monsters|beast|beasts|demon|demons|devs?|ogre|giant|giants|fiend)\b/, ['monster-slaying', 'combat']],
+  [/\b(bird|birds|raven|eagle|hawk|owl|crow|swan|feather)\b/, ['birds']],
+  [/\b(speech|tongue|language|naming|utter)\b/, ['language']],
+  [/\b(invisible|invisibility|unseen|vanish|conceal)\b/, ['invisibility']],
+  [/\b(immortal|immortality|deathless|apotheosis|deify|deified|ambrosia|nectar|elixir|undying)\b/, ['immortality']],
+  [/\b(found|founds|founder|foundation|progenitor|ancestor|ancestors|sire|sires|beget|begets|lineage|unify|unite)\b/, ['foundational']],
+  [/\b(wisdom|wise|knowledge|sage|teach|teaches|counsel|insight)\b/, ['wisdom']],
+  [/\b(protect|protects|protection|guard|guards|guardian|ward|wards|defend|defends|shelter)\b/, ['protection']],
+  [/\b(plague|pestilence|disease|sickness|blight|poison|venom|affliction|misfortune|decay)\b/, ['affliction']],
+  [/\b(create|creates|creation|order|orders|generate|emerge|emerges|separate)\b.*\b(world|cosmos|people|man|woman|ancestor|ancestors|heaven|earth|land)\b/, ['cosmogonic']],
+];
+const deriveScopeTags = (id) => {
+  const s = ' ' + String(id || '').replace(/[-_]+/g, ' ').toLowerCase() + ' ';
+  const out = [];
+  for (const [re, tags] of POWER_SCOPE_RULES) {
+    if (re.test(s)) for (const t of tags) if (!out.includes(t)) out.push(t);
+  }
+  return out.slice(0, 4);
+};
+const applyPowerScopes = (peopleMap) => {
+  for (const p of Object.values(peopleMap)) {
+    for (const f of (p.faculties || [])) {
+      if (f && (!Array.isArray(f.scopeTags) || !f.scopeTags.length)) {
+        const t = deriveScopeTags(f.id);
+        if (t.length) f.scopeTags = t;
+      }
+    }
+  }
+  return peopleMap;
+};
+
 // Build + migrate seed data, then attach item holders and run the
 // content-integrity passes (term scrub + provenance inheritance) last,
-// finishing with the consolidation/QA pass over the whole map.
-const seedPeople = consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
-  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(addNewFigures(buildPeopleSeed()))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
+// finishing with the consolidation/QA pass over the whole map, and the
+// fill-only power scope-tag derivation as the final faculty pass.
+const seedPeople = applyPowerScopes(consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
+  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(addNewFigures(buildPeopleSeed()))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X)))))))))));
 const seedAtlas  = buildTerritorySeed();
 
 // Final-map integrity pass. migrate's detectors ran BEFORE the item/term
