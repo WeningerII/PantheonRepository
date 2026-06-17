@@ -234689,6 +234689,29 @@ const EPITHETS_X = {
     { original: 'Apu Qun Tiqsi Wiraqucha', scriptId: 'latin', rom: 'Apu Kon Tici Viracocha', gloss: 'Lord Foundation Viracocha; the supreme creator of the great Cusco prayers', language: 'quechua', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Cristóbal de Molina, Relación de las fábulas y ritos de los Incas' }] },
   ],
 
+  // ── Wave NE2: Oceania — Māori (George Grey; Elsdon Best) and Hawaiian (Martha
+  // Beckwith; David Malo). Safe new keys (kanaloa/lono are keyed elsewhere).
+  'polynesian_tane': [
+    { original: 'Tāne Mahuta', scriptId: 'latin', rom: 'Tane Mahuta', gloss: 'Tāne of the forest; lord of trees, birds, and all that dwells in the woods', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology; George Grey, Polynesian Mythology' }] },
+    { original: 'Tāne-nui-a-Rangi', scriptId: 'latin', rom: 'Tane-nui-a-Rangi', gloss: 'Great Tāne, son of Rangi; who thrust apart Sky and Earth and made the light', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology' }] },
+  ],
+  'polynesian_maui': [
+    { original: 'Māui-tikitiki-a-Taranga', scriptId: 'latin', rom: 'Maui-tikitiki-a-Taranga', gloss: 'Māui formed in the topknot of Taranga; the demigod’s full name', language: 'maori', contextTag: 'literary', sources: [{ kind: 'secondary', reference: 'George Grey, Polynesian Mythology (Nga Mahi a nga Tupuna)' }] },
+    { original: 'Māui-pōtiki', scriptId: 'latin', rom: 'Maui-potiki', gloss: 'Māui the last-born; youngest of the five Māui brothers', language: 'maori', contextTag: 'literary', sources: [{ kind: 'secondary', reference: 'George Grey, Polynesian Mythology' }] },
+  ],
+  'polynesian_rongo': [
+    { original: 'Rongo-mā-Tāne', scriptId: 'latin', rom: 'Rongo-ma-Tane', gloss: 'Rongo-and-Tāne; god of the kūmara and cultivated foods, and of peace', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology' }] },
+  ],
+  'polynesian_hinenuitepo': [
+    { original: 'Hine-tītama', scriptId: 'latin', rom: 'Hine-titama', gloss: 'The Dawn Maiden; her name before she fled to the underworld to become Great Lady of Night', language: 'maori', contextTag: 'literary', sources: [{ kind: 'secondary', reference: 'George Grey, Polynesian Mythology' }] },
+  ],
+  'polynesian_whiro': [
+    { original: 'Whiro-te-tipua', scriptId: 'latin', rom: 'Whiro-te-tipua', gloss: 'Whiro the demon; lord of darkness, disease, and the underworld Taiwhetuki', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology' }] },
+  ],
+  'polynesian_namaka': [
+    { original: 'Nā-maka-o-Kahaʻi', scriptId: 'latin', rom: "Na-maka-o-Kaha'i", gloss: 'The eyes of Kahaʻi; the sea-goddess, Pele’s elder sister and rival', language: 'hawaiian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martha Beckwith, Hawaiian Mythology' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
