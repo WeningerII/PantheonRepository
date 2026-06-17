@@ -248476,7 +248476,7 @@ const ICONOGRAPHY_X = {
 // untagged rather than force-tagged — taxonomy without inventing claims.
 const POWER_SCOPE_RULES = [
   [/\b(lightning|thunder|thunderbolt|storm|storms|tempest|gale|hail|vajra)\b/, ['weather']],
-  [/\b(rain|cloud|clouds|wind|winds|weather|monsoon|drought)\b/, ['weather']],
+  [/\b(rain|rains|cloud|clouds|wind|winds|weather|monsoon|drought)\b/, ['weather']],
   [/\b(sea|ocean|water|waters|river|rivers|flood|floods|wave|waves|tide|tides|aquatic|moisture|deluge|fountain|whirlpool)\b/, ['water']],
   [/\b(fire|flame|flames|fiery|pyre|blaze|ember|inferno)\b/, ['fire']],
   [/\b(earth|earthquake|land|soil|mountain|mountains|stone|rock|quake|terrestrial)\b/, ['earth']],
@@ -248487,7 +248487,7 @@ const POWER_SCOPE_RULES = [
   [/\b(death|dead|dying|underworld|chthonic|grave|tomb|netherworld|soul|souls|funeral|corpse|perish)\b/, ['death']],
   [/\b(judge|judges|judgment|judgement|verdict|punish|punishes|avenge|avenges|vengeance|retribution|atonement|justice)\b/, ['judgment']],
   [/\b(king|kings|kingship|royal|royalty|sovereign|reign|reigns|rule|rules|ruler|throne|crown|enthrone|dynasty|monarch|emperor)\b/, ['kingship']],
-  [/\b(war|battle|battles|combat|martial|fight|fights|warrior|slay|slays|slaying|smite|smites|conquer|conquest|victory|vanquish|duel|warfare)\b/, ['combat']],
+  [/\b(war|battle|battles|combat|martial|fight|fights|warrior|slay|slays|slaying|smite|smites|conquer|conquest|victory|vanquish|duel|warfare|win|wins|defeat|defeats)\b/, ['combat']],
   [/\b(strength|strong|might|mighty|powerful|superhuman|herculean|titanic|gigantic|colossal|uproot|strongman)\b/, ['strength']],
   [/\b(heal|heals|healing|cure|cures|medicine|physician|restore|rejuvenat|revive|revives|resurrect|resurrection|incubation|remedy)\b/, ['healing']],
   [/\b(prophe|prophecy|prophesy|prophesies|oracle|oracles|oracular|divination|augur|augury|seer|omen|omens|foresee|foresight|foretell|fate|fates|destiny|portent|portents)\b/, ['divination']],
@@ -248503,7 +248503,7 @@ const POWER_SCOPE_RULES = [
   [/\b(smith|forge|forges|forging|craft|crafts|crafted|invent|invents|fashion|fashions|build|builds|construct|sculpt|carve|carves|weave|weaves)\b/, ['craft']],
   [/\b(magic|magical|sorcer|sorcery|enchant|enchantment|spell|spells|heka|witch|incantation|conjure|conjures|bewitch)\b/, ['magic']],
   [/\b(wealth|riches|prosper|prosperity|fortune|abundance|treasure)\b/, ['prosperity']],
-  [/\b(fertil|harvest|grain|grains|crop|crops|agricultur|sow|sows|cultivate|vegetation|maize|ripen|ripens|growth|grow|grows|seed|seeds|fruit|fruits|rice|procreat|procreation)\b/, ['fertility']],
+  [/\b(fertil|fertile|fertility|harvest|grain|grains|crop|crops|agricultur|sow|sows|cultivate|vegetation|maize|ripen|ripens|growth|grow|grows|seed|seeds|fruit|fruits|rice|procreat|procreation)\b/, ['fertility']],
   [/\b(love|desire|beauty|erotic|seduce|seduces|seduction|passion|lust)\b/, ['love']],
   [/\b(trick|trickster|cunning|guile|deceit|deceive|deceives|thief|steal|steals|theft|infiltrate|outwit)\b/, ['trickster']],
   [/\b(hunt|hunts|hunter|hunting|chase|prey|quarry)\b/, ['hunting']],
@@ -248517,12 +248517,14 @@ const POWER_SCOPE_RULES = [
   [/\b(wisdom|wise|knowledge|sage|teach|teaches|counsel|insight)\b/, ['wisdom']],
   [/\b(protect|protects|protection|guard|guards|guardian|ward|wards|defend|defends|shelter)\b/, ['protection']],
   [/\b(plague|pestilence|disease|sickness|blight|poison|venom|affliction|misfortune|decay)\b/, ['affliction']],
-  [/\b(creator|cosmogon)\b/, ['cosmogonic']],
-  [/\b(create|creates|creation|generate|generates|originate|originates|order|orders|emerge|emerges|separate|fashion|shape)\b.*\b(world|worlds|cosmos|people|humanity|mankind|man|woman|men|gods|beings|ancestor|ancestors|heaven|earth|land|egg|clans|life)\b/, ['cosmogonic']],
+  [/\b(creator|creation|cosmogon)\b/, ['cosmogonic']],
+  [/\b(create|creates|creation|make|makes|made|generate|generates|originate|originates|order|orders|emerge|emerges|separate|fashion|shape)\b.*\b(world|worlds|cosmos|people|humanity|mankind|man|woman|men|gods|beings|ancestor|ancestors|heaven|earth|land|egg|clans|life)\b/, ['cosmogonic']],
   [/\b(light|lights|radiance|radiate|radiates|illuminate|illuminates|shine|shines|shining|glow|luminous|brilliance)\b/, ['light']],
   [/\b(govern|governs|preside|presides|ordain|ordains|decree|decrees|command|commands|oversee|oversees|administer|uphold|upholds|sustain|sustains|maintain|maintains|order|orders)\b/, ['authority']],
   [/\b(birth|birthing|born|childbirth|procreate|father|fathers|mother|mothers|spawn|spawns)\b/, ['foundational']],
   [/\b(life|living|vitality|renew|renews)\b/, ['vitality']],
+  [/\b(lead|leads|leader|leaders|leadership)\b/, ['leadership']],
+  [/\b(shaman|shamanic|shamanism|seidr|trance)\b/, ['shamanism']],
 ];
 const deriveScopeTags = (id) => {
   const s = ' ' + String(id || '').replace(/[-_]+/g, ' ').toLowerCase() + ' ';
