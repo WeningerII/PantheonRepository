@@ -30459,6 +30459,47 @@ const ITEM_PROVENANCE = {
   'heracles-peplos': {
     maker: { name: 'Athena', role: 'woven by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Athena a robe)' }] },
   },
+
+  // ── Wave I2: Greek/Roman — Cyclopean, Hephaestean, and primordial craft.
+  // Only items with an attested maker; the many divine attributes with no
+  // maker-myth (sceptres, chariots, the golden fleece, natural objects) are left
+  // blank.
+  khalkotauroi: {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.9.23 (the fire-breathing bronze bulls of Aeëtes, the work of Hephaestus); Apollonius, Argonautica 3.229–231' }] },
+  },
+  'hephaestus-golden-tripods': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.373–377 (the twenty self-moving golden tripods Hephaestus wrought for the gods’ halls)' }] },
+  },
+  'hephaestus-golden-net': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 8.272–276 (the unbreakable net of fine bonds Hephaestus forged to snare Ares and Aphrodite)' }] },
+  },
+  'adamantine-sickle': {
+    maker: { name: 'Gaia (Earth)', role: 'fashioned by', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 161–162 (Gaia straightway made a great sickle of grey adamant)' }] },
+  },
+  'harpe-sickle': {
+    maker: { name: 'Gaia (Earth)', role: 'fashioned by', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 161–166 (the adamantine sickle Gaia made, with which Cronus unmanned Uranus)' }] },
+  },
+  'helm-of-darkness': {
+    maker: { name: 'the Cyclopes (Brontes, Steropes, Arges)', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes give Hades the helmet of invisibility, Zeus the thunderbolt, Poseidon the trident); Hesiod, Theogony 501–506' }] },
+  },
+  palladium: {
+    maker: { name: 'Athena', role: 'carved by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 3.12.3 (Athena fashioned an image — the Palladium — in the likeness of Pallas)' }] },
+  },
+  'palladium-athens': {
+    maker: { name: 'Athena', role: 'carved by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 3.12.3 (the Palladium, the image Athena made of Pallas)' }] },
+  },
+  'shield-of-aeneas': {
+    maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.626–731 (the shield Vulcan wrought, emblazoned with the destiny of Rome)' }] },
+  },
+  'helm-of-hades': {
+    maker: { name: 'the Cyclopes', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forged the cap of invisibility for Hades/Pluto in the war on the Titans)' }] },
+  },
+  'neptunus-tridens': {
+    maker: { name: 'the Cyclopes', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forged the trident for Poseidon/Neptune in the war on the Titans)' }] },
+  },
+  ancilia: {
+    maker: { name: 'Mamurius Veturius (the eleven copies)', role: 'forged by', kind: 'mortal smith', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.259–392 (the original ancile fell from heaven in Numa’s reign; Mamurius Veturius forged eleven indistinguishable copies)' }] },
+  },
 };
 
 const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
