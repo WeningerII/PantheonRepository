@@ -235558,6 +235558,64 @@ const EPITHETS_X = {
     { original: 'the Wandjina', scriptId: 'latin', rom: 'Wandjina', gloss: 'The cloud-and-rain ancestral creators of the Kimberley, who shaped the land and bring the wet season', language: 'worrorra', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Kimberley (Worrorra/Mowanjum) tradition; A. P. Elkin' }] },
   ],
 
+  // ── Wave NE20: remaining Americas + Southeast Asia — Apache (Opler), Crow
+  // (Lowie), Tsimshian (Boas), Pomo (Barrett), Toba (Métraux), Shipibo,
+  // Purépecha (Relación de Michoacán), Hmong, Sundanese, Toraja, Bicolano.
+  'apache_ussen': [
+    { original: 'Ussen', scriptId: 'latin', rom: 'Ussen (Yusn)', gloss: 'The Life-Giver; the supreme creator and source of power of the Apache', language: 'apache', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Morris Opler, An Apache Life-Way' }] },
+  ],
+  'apache_white_painted_woman': [
+    { original: 'White Painted Woman', scriptId: 'latin', rom: 'Isánáklésh', gloss: 'The mother of the people, honoured in the girls’ Sunrise Ceremony; bearer of the monster-slaying twins', language: 'apache', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Morris Opler, An Apache Life-Way' }] },
+  ],
+  'apache_child_of_the_water': [
+    { original: 'Child of the Water', scriptId: 'latin', rom: 'Tóbájíshchíní', gloss: 'The culture-hero who, with Killer of Enemies, rid the world of the monsters', language: 'apache', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Morris Opler, An Apache Life-Way' }] },
+  ],
+  'crow_old_man_coyote': [
+    { original: 'Old Man Coyote', scriptId: 'latin', rom: 'Isáahkawuattee', gloss: 'The creator-trickster who shaped the earth and people from mud brought up out of the waters', language: 'crow', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Robert H. Lowie, The Religion of the Crow Indians' }] },
+  ],
+  'asdiwal': [
+    { original: 'Asdiwal', scriptId: 'latin', rom: 'Asdiwal', gloss: 'The hunter-hero of the Skeena whose journeys between sky, sea, and mountain frame the great Tsimshian cycle', language: 'tsimshian', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Franz Boas, Tsimshian Mythology; Lévi-Strauss, The Story of Asdiwal' }] },
+  ],
+  'pomo_marumda': [
+    { original: 'Marumda', scriptId: 'latin', rom: 'Marumda', gloss: 'The creator who made and remade the world; the old earth-maker of the Pomo', language: 'pomo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'S. A. Barrett, Pomo Myths' }] },
+  ],
+  'pomo_kuksu': [
+    { original: 'Kuksu', scriptId: 'latin', rom: 'Kuksu', gloss: 'The first-man and healer spirit of the south, patron of the great Kuksu dance-society', language: 'pomo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'S. A. Barrett, Pomo Myths' }] },
+  ],
+  'toba_kasogonaga': [
+    { original: 'Kasogonaga', scriptId: 'latin', rom: 'Kasogonaga', gloss: 'The sky-being of rain and weather, who hangs above and looses the storms', language: 'toba', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Alfred Métraux, Myths of the Toba and Pilagá Indians of the Gran Chaco' }] },
+  ],
+  'shipibo_ronin': [
+    { original: 'Ronin', scriptId: 'latin', rom: 'Ronin', gloss: 'The cosmic anaconda whose shimmering skin holds the patterns (kené) and the waters of the world', language: 'shipibo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Shipibo-Conibo ethnography (P. Roe, The Cosmic Zygote)' }] },
+  ],
+  'shipibo_bari': [
+    { original: 'Bari', scriptId: 'latin', rom: 'Bari', gloss: 'The Sun, who measures the day and ripens the forest and the gardens', language: 'shipibo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Shipibo-Conibo ethnography' }] },
+  ],
+  'purepecha_curicaueri': [
+    { original: 'Curicaueri', scriptId: 'latin', rom: 'Curicaueri', gloss: 'The Great Burning One; the chief fire-and-sun god of the Tarascans, lord of the ruling dynasty', language: 'purepecha', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Relación de Michoacán' }] },
+  ],
+  'purepecha_cuerauaperi': [
+    { original: 'Cuerauáperi', scriptId: 'latin', rom: 'Cuerauaperi', gloss: 'The creator-mother goddess who looses the rains and to whom the harvest returns', language: 'purepecha', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Relación de Michoacán' }] },
+  ],
+  'purepecha_xaratanga': [
+    { original: 'Xarátanga', scriptId: 'latin', rom: 'Xaratanga', gloss: 'The moon and earth goddess of growth, the sea, and the maguey', language: 'purepecha', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Relación de Michoacán' }] },
+  ],
+  'hmong_saub': [
+    { original: 'Saub', scriptId: 'latin', rom: 'Saub', gloss: 'The benevolent creator-sage who counsels humankind and renews the world after the flood', language: 'hmong', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Hmong oral tradition' }] },
+  ],
+  'sundanese_sang_hyang_kersa': [
+    { original: 'Sang Hyang Kersa', scriptId: 'latin', rom: 'Sang Hyang Kersa', gloss: 'The Almighty Will; the supreme, invisible god of Sunda Wiwitan from whom all proceeds', language: 'sundanese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Sundanese Wiwitan tradition; the Carita Parahyangan' }] },
+  ],
+  'sundanese_nyi_pohaci': [
+    { original: 'Nyi Pohaci Sanghyang Asri', scriptId: 'latin', rom: 'Nyi Pohaci Sanghyang Asri', gloss: 'The rice-goddess; the beloved giver of the sustaining grain', language: 'sundanese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Sundanese tradition; the Wawacan Sulanjana' }] },
+  ],
+  'toraja_puang_matua': [
+    { original: 'Puang Matua', scriptId: 'latin', rom: 'Puang Matua', gloss: 'The Old Lord; the creator-god of the Aluk To Dolo who forged the first ancestors in his bellows', language: 'toraja', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Toraja (Aluk To Dolo) tradition' }] },
+  ],
+  'bicolano_asuang': [
+    { original: 'Asuang', scriptId: 'latin', rom: 'Asuang', gloss: 'The god of evil and the dark, eternal rival of the good Gugurang for fire and souls', language: 'bicolano', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Bicolano oral tradition (the Ibalon epic milieu)' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
