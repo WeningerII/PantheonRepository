@@ -14500,7 +14500,7 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'secondary', reference: 'Schoolcraft, Algic Researches (1839)' }], weight: 'primary' },
         { claim: 'parentage-of-nanabozho', citations: [{ kind: 'secondary', reference: 'Coleman, Ojibwa Myths and Legends' }], weight: 'primary' },
       ],
-      notes: 'Mortal woman; daughter of Nookomis (Grandmother). Mother of Wenabozho/Nanabozho and his brothers by E-bangishimog (West Wind). Dies in childbirth in most versions of the cycle, leaving Nookomis to raise the children.',
+      notes: 'Mortal woman; daughter of Nookomis (Grandmother). Mother of Wenabozho/Nanabozho and his brothers by E-bangishimog (West Wind). Dies in childbirth in most versions of the cycle, leaving Nookomis to raise the children. The "Winona" alt is the Dakota-derived "Wenonah" ("firstborn daughter") of the Schoolcraft (Algic Researches, 1839) → Longfellow (Hiawatha) tradition, attached to this Ojibwe figure in the popular literature; her authentically Ojibwe name is Wiininwaa ("nourishment").',
     },
     {
       id: 'nanabozho',
@@ -225554,9 +225554,13 @@ const ETYMOLOGY = {
   //  returned none and are left as honest gaps: Aromadapuén, the (unnamed)
   //  Quechua Andean woman, Mulukwausi, Tomo, Datu Paubari, White-Beaver-Skin
   //  Woman, Skeena Chief's Daughter, Aqhat, Burebista, Sulkalmakhi, and the
-  //  three Lepcha names (Fodongthing, Nazongnyu, Tashe-thing). Data flags for
-  //  later: the Wiininwaa entry conflates the Ojibwe figure with Dakota
-  //  "Winona"; "Tashe-thing" is a variant name of the first man, not a son.
+  //  three Lepcha names (Fodongthing, Nazongnyu, Tashe-thing). On review the
+  //  two "data flags" the research raised proved overstated: the Wiininwaa
+  //  record is correct (Anishinaabe mother of Nanabozho; the "Winona" alt is
+  //  the Dakota-derived "Wenonah" of the Schoolcraft→Longfellow tradition,
+  //  now documented in her notes), and lepcha_tashe_thing deliberately follows
+  //  Morris's son-tradition with the rival "alternate name of the first man"
+  //  reading already disclosed in its own notes and sources.
   // ═══════════════════════════════════════════════════════════════════════════
   "nandesy": {
     "languageFamily": "Tupian (Tupí-Guaraní; Guaraní)",
@@ -225584,7 +225588,7 @@ const ETYMOLOGY = {
   },
   "wiininwaa": {
     "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabemowin)",
-    "etymology": "Ojibwe (Anishinaabemowin) Wiininwaa, \"Nourishment / the one who nourishes\" (to the stem wiinin- \"fat, tallow,\" the substance of nourishment) — in Ojibwe tradition the human mother of Nanabozho. Distinct from the Dakota (Siouan) name Winona \"firstborn daughter,\" with which it is sometimes confused.",
+    "etymology": "Ojibwe (Anishinaabemowin) Wiininwaa, \"Nourishment / the one who nourishes\" (to the stem wiinin- \"fat, tallow,\" the substance of nourishment) — in Ojibwe tradition the human mother of Nanabozho. Her \"Winona\" alt is a separate, Dakota-derived name (Wenonah \"firstborn daughter\") attached to the figure in the Schoolcraft–Longfellow popular tradition, not an Ojibwe form of Wiininwaa.",
     "sources": [
       { "kind": "secondary", "reference": "The Ojibwe People's Dictionary (U. Minnesota), s.vv. wiininw-, wiinin" }
     ]
