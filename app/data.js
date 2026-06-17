@@ -11950,6 +11950,9 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 2 },
       ],
       domains: [{ id: 'Haykazuni-third-generation' }, { id: 'Armavir-foundation', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12' }] }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_amasia', era: 'haykazuni-mythohistorical' },
+      ],
       iconography: {
         attributes: [{ id: 'city-founder-attribute' }],
       },
@@ -11972,6 +11975,102 @@ const buildPeopleSeed = () => {
       notes: 'Third-generation Haykazuni patriarch; son of Aramaneak; founder of Armavir, the first Armenian capital city. Armavir on the Araxes River served as Haykazuni capital throughout the legendary period and into the Orontid (Yervanduni) Persian-period satrapy, until the 2nd-c. BCE Artaxiad relocation to Artaxata. Archaeologically attested as a major Iron-Age and Achaemenid-period settlement, providing some material-historical grounding to the Khorenatsi foundation-tradition.',
     },
 
+    // ── Genealogy march, Wave G1 (Armenian Haykazuni patriarchs): materialize
+    // the Aramayis → Amasia → Gegham → Harma → Aram chain that Khorenatsi (1.12)
+    // names but the registry had deferred to prose. Mortal patriarchs, one era.
+    {
+      id: 'armenian_amasia',
+      schemaVersion: 2,
+      name: {
+        primary: 'Amasia',
+        alt: ['Ամասիա', 'Son of Aramayis'],
+        transliterations: { 'armenian-classical': 'Ամասիա', 'armenian-romanization': 'Amasia' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: ['armenian_aramayis'],
+      parentRoles: { armenian_aramayis: 'paternal' },
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12' }] },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Haykazuni-fourth-generation' }, { id: 'Mount-Masis-eponym', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12 — the mountain Masis (Ararat) named from Amasia' }] }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_gegham', era: 'haykazuni-mythohistorical' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Ամասիա Amasia; per Khorenatsi the great mountain Masis (Mt. Ararat) takes its name from him.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12' }], weight: 'primary' },
+      ],
+      notes: 'Fourth-generation Haykazuni patriarch; son of Aramayis and father of Gegham. Per Khorenatsi (1.12) he settled at the foot of the great mountain that took from him the name Masis (Mt. Ararat). One of the chain-filler patriarchs bridging Aramayis to Aram, here materialized as a linked node.',
+    },
+
+    {
+      id: 'armenian_gegham',
+      schemaVersion: 2,
+      name: {
+        primary: 'Gegham',
+        alt: ['Գեղամ', 'Son of Amasia'],
+        transliterations: { 'armenian-classical': 'Գեղամ', 'armenian-romanization': 'Gegham' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: ['armenian_amasia'],
+      parentRoles: { armenian_amasia: 'paternal' },
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12' }] },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Haykazuni-fifth-generation' }, { id: 'Lake-Gegham-and-Geghama-mountains-eponym', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12' }] }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_harma', era: 'haykazuni-mythohistorical' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Գեղամ Gegham; the Geghama mountain range, the lake Gegham (Sevan), and the province Gegharkunik preserve his name per Khorenatsi.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12' }], weight: 'primary' },
+      ],
+      notes: 'Fifth-generation Haykazuni patriarch; son of Amasia and father of Harma. Per Khorenatsi (1.12) he settled the north-east by the lake and mountains that bear his name (the Geghama range, Lake Gegham = Lake Sevan, the province Gegharkunik) and built the dwelling Gegh; his descendant Sisak is the eponym of Syunik. A chain-filler patriarch bridging Amasia to Aram.',
+    },
+
+    {
+      id: 'armenian_harma',
+      schemaVersion: 2,
+      name: {
+        primary: 'Harma',
+        alt: ['Հարմա', 'Son of Gegham', 'Father of Aram'],
+        transliterations: { 'armenian-classical': 'Հարմա', 'armenian-romanization': 'Harma' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: ['armenian_gegham'],
+      parentRoles: { armenian_gegham: 'paternal' },
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12-13' }] },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Haykazuni-sixth-generation' }, { id: 'father-of-Aram' }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_aram', era: 'haykazuni-mythohistorical' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Հարմա Harma; continuation of the early Haykazuni patriarchal name-series.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12-13' }], weight: 'primary' },
+      ],
+      notes: 'Sixth-generation Haykazuni patriarch; son of Gegham and father of Aram (the eponym of Armenia). The last of the chain-filler patriarchs bridging Aramayis to Aram, here materialized as a linked node to complete the Hayk → Aram descent.',
+    },
+
     {
       id: 'armenian_aram',
       schemaVersion: 2,
@@ -11982,10 +12081,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['armenian_harma'],
+      parentRoles: { armenian_harma: 'paternal' },
       temporal: { era: 'haykazuni-mythohistorical' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, startEvent: 'birth-in-Haykazuni-dynasty', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.13-14' }], notes: 'Per Khorenatsi, descended from Aramayis through Amasya, Gegham, and Harma (Aram is Harma\'s son; the Amasya-Gegham-Harma chain is the chain-filler between Aramayis and Aram). The registry treats Aram\'s parentIds as empty, deferring the chain-filler intermediates (Amasya, Gegham, Harma) to entry notes.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, startEvent: 'birth-in-Haykazuni-dynasty', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.13-14' }], notes: 'Per Khorenatsi, descended from Aramayis through Amasya, Gegham, and Harma (Aram is Harma\'s son; the Amasya-Gegham-Harma chain is the chain-filler between Aramayis and Aram). These intermediate patriarchs (Amasia, Gegham, Harma) are now materialized as linked figures, completing the chain from Aramayis to Aram.' },
         { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 1, startEvent: 'territorial-expansion-conquests', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.13-14' }], notes: 'Conducted successful military campaigns expanding Armenian territory in all four directions — westward against the Cappadocians, southward against Bel-Mesopotamia successors, eastward against the Medes, northward against Caucasian polities. The conquests established the territorial extent of the Haykazuni Armenian polity.' },
         { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 2, startEvent: 'eponymous-naming-of-Armenia-by-foreign-peoples', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.14' }], notes: 'Per Khorenatsi, the name "Armenia" derives from Aram\'s reputation: foreign peoples (Greeks, Persians, Syrians) called the country "Armenia" or "Land of Aram" after his conquests, distinct from the Armenian-internal endonym Hayk\'/Hayastan derived from Hayk. The Aram-Armenia exonym thus complements the Hayk-Hayastan endonym in Khorenatsi\'s dual-naming framework.' },
         { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 3 },
@@ -12011,7 +12111,7 @@ const buildPeopleSeed = () => {
           { kind: 'secondary', reference: 'Thomson trans. (1978) commentary on the Aram-Armenia derivation' },
         ], weight: 'primary' },
       ],
-      notes: 'Haykazuni patriarch and conqueror-king from whose name the exonym "Armenia" derives per Khorenatsi (1.14). The Aram-Armenia exonym complements the Hayk-Hayastan endonym in Khorenatsi\'s dual-naming framework: foreign peoples (Greeks, Persians, Syrians) call the country "Armenia" / "Land of Aram" after Aram\'s conquests, while Armenians themselves call it Hayk\' / Hayastan after the founder Hayk. The territorial-expansion campaigns in all four directions establish the conventional geographic extent of the Haykazuni Armenian polity. The Khorenatsi-genealogical chain from Aramayis through Amasya, Gegham, Harma, to Aram constitutes a 4-generation chain-filler bridge that the registry treats as empty parentIds for Aram with the chain documented in entry notes.',
+      notes: 'Haykazuni patriarch and conqueror-king from whose name the exonym "Armenia" derives per Khorenatsi (1.14). The Aram-Armenia exonym complements the Hayk-Hayastan endonym in Khorenatsi\'s dual-naming framework: foreign peoples (Greeks, Persians, Syrians) call the country "Armenia" / "Land of Aram" after Aram\'s conquests, while Armenians themselves call it Hayk\' / Hayastan after the founder Hayk. The territorial-expansion campaigns in all four directions establish the conventional geographic extent of the Haykazuni Armenian polity. The Khorenatsi-genealogical chain from Aramayis through Amasya, Gegham, Harma, to Aram is here materialized as a chain of linked figures: Aramayis → Amasia → Gegham → Harma → Aram.',
     },
 
     {
