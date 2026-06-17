@@ -234569,6 +234569,54 @@ const EPITHETS_X = {
     { original: 'hvíti áss', gloss: 'The white god; brightest of the Æsir', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Gylfaginning 27 (Prose Edda); Þrymskviða 15' }] },
   ],
 
+  // ── Wave E3: Vedic epithets, anchored in the Rigveda (plus the Śatarudrīya
+  // Rudra-litany, the Bhagavad Gītā, and the Rāmāyaṇa's Āditya-hṛdaya). Safe new
+  // keys (hindu_vayu is keyed elsewhere in EPITHETS_X and left untouched).
+  'hindu_indra': [
+    { original: 'वज्रिन्', scriptId: 'sanskrit', rom: 'Vajrin', gloss: 'Wielder of the vajra (the thunderbolt)', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32.2 (the slaying of Vṛtra)' }] },
+    { original: 'गोत्रभिद्', scriptId: 'sanskrit', rom: 'Gotrabhid', gloss: 'Cleaver of the cow-pens; releaser of the imprisoned cattle and waters', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 6.17.1; 10.103' }] },
+    { original: 'सहस्राक्ष', scriptId: 'sanskrit', rom: 'Sahasrākṣa', gloss: 'The thousand-eyed', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata; later Purāṇic tradition' }] },
+  ],
+  'hindu_agni': [
+    { original: 'पावक', scriptId: 'sanskrit', rom: 'Pāvaka', gloss: 'The Purifier; the cleansing flame', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 5.26.1' }] },
+    { original: 'तनूनपात्', scriptId: 'sanskrit', rom: 'Tanūnapāt', gloss: 'Son of his own body; the self-generated fire', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.13.2; 1.142.3 (the Āprī hymns)' }] },
+    { original: 'सप्तजिह्व', scriptId: 'sanskrit', rom: 'Saptajihva', gloss: 'The seven-tongued; the fire of seven flames', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Muṇḍaka Upaniṣad 1.2.4' }] },
+  ],
+  'hindu_varuna': [
+    { original: 'सम्राज्', scriptId: 'sanskrit', rom: 'Samrāj', gloss: 'Universal sovereign; the all-ruling king', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.25.10; 5.85.3' }] },
+    { original: 'ऋतस्य गोपा', scriptId: 'sanskrit', rom: 'Ṛtasya gopā', gloss: 'Guardian of ṛta — keeper of cosmic order and truth', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.23.5; 8.41' }] },
+    { original: 'यादसाम्पति', scriptId: 'sanskrit', rom: 'Yādasāṃpati', gloss: 'Lord of the aquatic creatures; sovereign of the deep', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata; Purāṇic tradition' }] },
+  ],
+  'hindu_vishnu': [
+    { original: 'त्रिविक्रम', scriptId: 'sanskrit', rom: 'Trivikrama', gloss: 'He of the three strides, who measured out the worlds', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.154.1–2 (the three steps of Viṣṇu)' }] },
+    { original: 'गोविन्द', scriptId: 'sanskrit', rom: 'Govinda', gloss: 'Finder and protector of cows; a name of Kṛṣṇa-Viṣṇu', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.32; Viṣṇu Sahasranāma' }] },
+    { original: 'अच्युत', scriptId: 'sanskrit', rom: 'Acyuta', gloss: 'The Imperishable; he who never falls away', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 11.42; Ṛgveda 1.156' }] },
+  ],
+  'hindu_shiva': [
+    { original: 'पशुपति', scriptId: 'sanskrit', rom: 'Paśupati', gloss: 'Lord of creatures and beasts', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Śatarudrīya (Vājasaneyi Saṃhitā 16; Taittirīya Saṃhitā 4.5)' }] },
+    { original: 'गिरीश', scriptId: 'sanskrit', rom: 'Girīśa', gloss: 'Lord of the mountain (Kailāsa)', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Śatarudrīya (Vājasaneyi Saṃhitā 16.2, 16.20)' }] },
+    { original: 'गङ्गाधर', scriptId: 'sanskrit', rom: 'Gaṅgādhara', gloss: 'Bearer of the Ganges, caught in his matted locks', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Śiva Purāṇa; the descent-of-Gaṅgā tradition (Rāmāyaṇa 1.43)' }] },
+  ],
+  'hindu_soma': [
+    { original: 'पवमान', scriptId: 'sanskrit', rom: 'Pavamāna', gloss: 'The self-clarifying; Soma flowing bright through the filter', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda, Maṇḍala 9 (the Pavamāna hymns)' }] },
+    { original: 'राजन्', scriptId: 'sanskrit', rom: 'Soma rājan', gloss: 'King Soma; the royal draught and moon-lord', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 9.1.1ff.' }] },
+  ],
+  'hindu_surya': [
+    { original: 'भास्कर', scriptId: 'sanskrit', rom: 'Bhāskara', gloss: 'The light-maker', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Rāmāyaṇa, Yuddhakāṇḍa 6.105 (Āditya-hṛdaya)' }] },
+    { original: 'दिवाकर', scriptId: 'sanskrit', rom: 'Divākara', gloss: 'The day-maker', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Rāmāyaṇa, Yuddhakāṇḍa 6.105 (Āditya-hṛdaya)' }] },
+    { original: 'सहस्ररश्मि', scriptId: 'sanskrit', rom: 'Sahasraraśmi', gloss: 'The thousand-rayed', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Rāmāyaṇa, Yuddhakāṇḍa 6.105 (Āditya-hṛdaya)' }] },
+  ],
+  'hindu_yama': [
+    { original: 'पितृपति', scriptId: 'sanskrit', rom: 'Pitṛpati', gloss: 'Lord of the ancestors; king of the departed fathers', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 10.14 (Yama and the pitṛs)' }] },
+    { original: 'काल', scriptId: 'sanskrit', rom: 'Kāla', gloss: 'Time; the all-devouring ender', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata (Yama as Kāla)' }] },
+    { original: 'दण्डधर', scriptId: 'sanskrit', rom: 'Daṇḍadhara', gloss: 'Bearer of the rod of punishment', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic tradition (Yama with the daṇḍa)' }] },
+  ],
+  'hindu_brahma': [
+    { original: 'हिरण्यगर्भ', scriptId: 'sanskrit', rom: 'Hiraṇyagarbha', gloss: 'The Golden Embryo; the cosmic germ from which creation arose', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 10.121.1' }] },
+    { original: 'विरिञ्च', scriptId: 'sanskrit', rom: 'Viriñca', gloss: 'The creator; Brahmā the disposer', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic and classical Sanskrit tradition' }] },
+    { original: 'कमलासन', scriptId: 'sanskrit', rom: 'Kamalāsana', gloss: 'The lotus-seated', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic tradition (Brahmā on the lotus from Viṣṇu’s navel)' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
