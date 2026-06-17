@@ -33872,6 +33872,46 @@ const ITEM_PROVENANCE = {
     ],
   },
 
+  // ── Wave I4: cross-tradition divine artificers named in primary texts —
+  // the Eddic dwarf-smiths, the Hindu artificer Viśvakarman/Tvaṣṭṛ (whose
+  // forging of the gods' weapons is his defining role), and the Kojiki sword's
+  // custody. Fill-only; consistent with the existing Vishvakarma/Sons-of-Ivaldi
+  // attributions already in this map.
+  'sif-golden-hair': {
+    maker: { name: 'the Sons of Ivaldi', role: 'made by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35 (after Loki shears Sif, the Sons of Ivaldi forge living golden hair for her — the same smithing that yields Skíðblaðnir and Gungnir)' }] },
+  },
+  'devi-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the Sudarśana discus Viśvakarman forged from the pared radiance of Sūrya (Viṣṇu Purāṇa 3.2; Markaṇḍeya Purāṇa); given to the Goddess by Viṣṇu, Devī Māhātmya 2' }] },
+  },
+  'durga-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'Viṣṇu’s Sudarśana discus, forged by Viśvakarman from Sūrya’s trimmed radiance; bestowed on Durgā by Viṣṇu, Devī Māhātmya 2.9–19' }] },
+  },
+  'narasimha-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the Sudarśana discus of Viṣṇu (borne by his avatar Narasiṃha), forged by Viśvakarman from the pared radiance of Sūrya (Viṣṇu Purāṇa 3.2)' }] },
+  },
+  'varaha-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the Sudarśana discus of Viṣṇu (borne by his avatar Varāha), forged by Viśvakarman from the pared radiance of Sūrya (Viṣṇu Purāṇa 3.2)' }] },
+  },
+  'devi-trishula': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the triśūla Viśvakarman forged for Śiva from Sūrya’s trimmed radiance (Markaṇḍeya Purāṇa solar myth); given to the Goddess by Śiva, Devī Māhātmya 2' }] },
+  },
+  'durga-trishula': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'Śiva’s triśūla, forged by Viśvakarman from Sūrya’s pared radiance; bestowed on Durgā by Śiva, Devī Māhātmya 2.9–19' }] },
+  },
+  'devi-vajra': {
+    maker: { name: 'Tvaṣṭṛ (Viśvakarman)', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the vajra fashioned from the bones of the sage Dadhīci (Mahābhārata, Vana Parva 100); given to the Goddess by Indra, Devī Māhātmya 2' }] },
+  },
+  'sakra-vajra': {
+    maker: { name: 'Tvaṣṭṛ (Viśvakarman)', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the vajra of Śakra (Indra), forged from the spine of the sage Dadhīci — the only substance hard enough to slay Vṛtra (Mahābhārata, Vana Parva 100)' }] },
+  },
+  'kusanagi-no-tsurugi': {
+    custody: [
+      { role: 'found by', externalRef: { name: 'Susanoo, in the tail of the eight-forked serpent Yamata-no-Orochi', tradition: 'Japanese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kojiki I (the slaying of Yamata-no-Orochi)' }] },
+      { role: 'presented to', externalRef: { name: 'Amaterasu (Susanoo offers the sword to his sister); it passes into the Three Sacred Treasures of the imperial line', tradition: 'Japanese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kojiki I; Nihon Shoki' }] },
+      { role: 'wielded by', externalRef: { name: 'Yamato Takeru, who mows away burning grass with it — whence the name Kusanagi, “grass-mower”', tradition: 'Japanese' }, era: 'legendary', sources: [{ kind: 'primary', reference: 'Nihon Shoki (the Yamato Takeru cycle)' }] },
+    ],
+  },
+
   // ── Wave I1: Norse dwarven craft + Greek/Roman smith-forged (primary-sourced)
   brisingamen: {
     maker: { name: 'four dwarfs — Alfrigg, Dvalinn, Berlingr, and Grerr', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1 (the four dwarfs forge the necklace; Freyja obtains it from them)' }] },
