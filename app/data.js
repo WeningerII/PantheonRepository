@@ -234464,6 +234464,78 @@ const CULT_PRACTICES_X = {
   ]
 };
 const EPITHETS_X = {
+  // ── Wave E1: canonical Homeric/Hesiodic formulae + major cult-titles for the
+  // Greek Olympians, deepening figures that already carry their best-known names.
+  // All primary-attested; dedup is by `original`, so none collide with existing
+  // entries. (ares/hestia/rhea are keyed below and handled there, not here.)
+  'greek_hesiod_zeus': [
+    { original: 'αἰγίοχος', scriptId: 'greek', rom: 'aigíokhos', gloss: 'Aegis-bearing; wielder of the storm-shield', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.202; Hesiod, Theogony 11' }] },
+    { original: 'τερπικέραυνος', scriptId: 'greek', rom: 'terpikéraunos', gloss: 'Who delights in the thunderbolt', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.419; Hesiod, Theogony 286' }] },
+    { original: 'ὑψιβρεμέτης', scriptId: 'greek', rom: 'hypsibremétēs', gloss: 'The high-thundering one', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.354; Hesiod, Works and Days 8' }] },
+    { original: 'εὐρύοπα', scriptId: 'greek', rom: 'eurýopa', gloss: 'Wide-thundering / far-sounding (or far-seeing)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.498' }] },
+    { original: 'μητίετα', scriptId: 'greek', rom: 'mētíeta', gloss: 'The all-wise counsellor', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.175; Hesiod, Theogony 56' }] },
+  ],
+  'greek_hesiod_hera': [
+    { original: 'χρυσόθρονος', scriptId: 'greek', rom: 'khrysóthronos', gloss: 'Golden-throned', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.611' }] },
+    { original: 'πότνια Ἥρη', scriptId: 'greek', rom: 'pótnia Hḗrē', gloss: 'Queenly/revered Hera; the formulaic title of address', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.551' }] },
+    { original: 'Ἀκραία', scriptId: 'greek', rom: 'Akraía', gloss: 'Of the heights; Hera of the citadel (Argos, Corinth)', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 2.24.1' }] },
+  ],
+  'greek_hesiod_poseidon': [
+    { original: 'ἐννοσίγαιος', scriptId: 'greek', rom: 'ennosígaios', gloss: 'Earth-shaker; he who makes the earth quake', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 13.43' }] },
+    { original: 'Ἑλικώνιος', scriptId: 'greek', rom: 'Helikṓnios', gloss: 'Of Helike; god of the Panionian league at Mykale', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Homer, Iliad 20.404; Herodotus 1.148' }] },
+    { original: 'Φυτάλμιος', scriptId: 'greek', rom: 'Phytálmios', gloss: 'The nurturing; fosterer of growth (cult at Troezen)', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 2.32.8' }] },
+  ],
+  'greek_hesiod_athena': [
+    { original: 'Ἀτρυτώνη', scriptId: 'greek', rom: 'Atrytṓnē', gloss: 'The unwearying / indefatigable', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 2.157; Odyssey 4.762' }] },
+    { original: 'ὀβριμοπάτρη', scriptId: 'greek', rom: 'obrimopátrē', gloss: 'Daughter of a mighty father', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.747' }] },
+    { original: 'Ἀλέα', scriptId: 'greek', rom: 'Aléa', gloss: 'Athena Alea of Tegea, chief cult of Arcadia', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 8.45.4' }] },
+  ],
+  'greek_hesiod_apollo': [
+    { original: 'ἀργυρότοξος', scriptId: 'greek', rom: 'argyrótoxos', gloss: 'Of the silver bow', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.37' }] },
+    { original: 'ἑκάεργος', scriptId: 'greek', rom: 'hekáergos', gloss: 'The far-worker; who strikes from afar', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.479' }] },
+    { original: 'Δήλιος', scriptId: 'greek', rom: 'Dḗlios', gloss: 'Delian; of his birth-island Delos', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Homeric Hymn to Apollo (3) 16; Thucydides 3.104' }] },
+    { original: 'Νόμιος', scriptId: 'greek', rom: 'Nómios', gloss: 'The herdsman; pastoral Apollo who tended Admetus’s flocks', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Callimachus, Hymn 2 (to Apollo) 47–49' }] },
+  ],
+  'greek_hesiod_demeter': [
+    { original: 'Χθονία', scriptId: 'greek', rom: 'Khthonía', gloss: 'Of the earth; Demeter of Hermione', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 2.35.4–8' }] },
+    { original: 'Ἀνησιδώρα', scriptId: 'greek', rom: 'Anēsidṓra', gloss: 'Sender-up of gifts (from the earth)', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 1.31.4' }] },
+    { original: 'Σιτώ', scriptId: 'greek', rom: 'Sitṓ', gloss: 'Giver of grain and food', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Athenaeus, Deipnosophistae 3.109a; Pollux, Onomasticon' }] },
+  ],
+  'greek_hesiod_artemis': [
+    { original: 'χρυσηλάκατος', scriptId: 'greek', rom: 'khrysēlákatos', gloss: 'Of the golden distaff / golden arrows', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 16.183; Odyssey 4.122' }] },
+    { original: 'κελαδεινή', scriptId: 'greek', rom: 'keladeinḗ', gloss: 'The resounding; goddess of the noisy chase', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 16.183, 21.511' }] },
+    { original: 'Ταυροπόλος', scriptId: 'greek', rom: 'Tauropólos', gloss: 'Bull-tender; the Artemis of Tauris and Brauron/Halae', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Euripides, Iphigenia among the Taurians 1457' }] },
+    { original: 'Βραυρωνία', scriptId: 'greek', rom: 'Braurōnía', gloss: 'Of Brauron; the Attic bear-maiden cult', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 1.23.7; Aristophanes, Lysistrata 645' }] },
+  ],
+  'greek_hesiod_hermes': [
+    { original: 'χρυσόρραπις', scriptId: 'greek', rom: 'khrysórrhapis', gloss: 'Of the golden wand (the kerykeion)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 5.87; Homeric Hymn to Demeter (2) 335' }] },
+    { original: 'ἐύσκοπος', scriptId: 'greek', rom: 'eúskopos', gloss: 'The keen-sighted; sharp-eyed watcher', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 24.24; Odyssey 1.38' }] },
+    { original: 'Κριοφόρος', scriptId: 'greek', rom: 'Kriophóros', gloss: 'Ram-bearer; who carried a ram round Tanagra to avert plague', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 9.22.1' }] },
+  ],
+  'greek_hesiod_aphrodite': [
+    { original: 'χρυσέη', scriptId: 'greek', rom: 'khryséē', gloss: 'Golden (the formulaic “golden Aphrodite”)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 3.64; Odyssey 8.337' }] },
+    { original: 'ἐϋστέφανος', scriptId: 'greek', rom: 'eustéphanos', gloss: 'Fair-crowned / well-garlanded', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 196, 1008; Homeric Hymn 6.1' }] },
+    { original: 'Παφία', scriptId: 'greek', rom: 'Paphía', gloss: 'Paphian; of her great Cyprian sanctuary at Paphos', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 1.14.7; Tacitus, Histories 2.2–3' }] },
+  ],
+  'greek_hesiod_hephaestus': [
+    { original: 'περικλυτός', scriptId: 'greek', rom: 'periklytós', gloss: 'The far-famed / very renowned', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.607; Odyssey 8.300' }] },
+    { original: 'Λήμνιος', scriptId: 'greek', rom: 'Lḗmnios', gloss: 'Lemnian; of Lemnos, where he fell and his fire-cult centred', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.593; Sophocles, Philoctetes 986–987' }] },
+  ],
+  'greek_hesiod_dionysus': [
+    { original: 'Βάκχος', scriptId: 'greek', rom: 'Bákkhos', gloss: 'Bacchus; the ecstatic god of the bacchic cry', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae (passim); Sophocles, Antigone 1121' }] },
+    { original: 'Εὔιος', scriptId: 'greek', rom: 'Eúios', gloss: 'God of the cry “euoi!”', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae 566, 579' }] },
+  ],
+  'greek_hesiod_hades': [
+    { original: 'Ἀϊδωνεύς', scriptId: 'greek', rom: 'Aïdōneús', gloss: 'Aïdoneus; the lengthened epic form of the name', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.190, 20.61; Homeric Hymn to Demeter (2) 84' }] },
+    { original: 'Ζεὺς καταχθόνιος', scriptId: 'greek', rom: 'Zeùs katakhthónios', gloss: 'The chthonic Zeus; Zeus beneath the earth', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 9.457' }] },
+  ],
+  'greek_hesiod_persephone': [
+    { original: 'ἁγνή', scriptId: 'greek', rom: 'hagnḗ', gloss: 'The holy/pure one (formulaic “holy Persephone”)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 11.386; Homeric Hymn to Demeter (2) 337' }] },
+  ],
+  'greek_hesiod_uranus': [
+    { original: 'ἀστερόεις', scriptId: 'greek', rom: 'asteróeis', gloss: 'The starry; starry Heaven', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 127' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
