@@ -235732,6 +235732,64 @@ const EPITHETS_X = {
     { original: 'the planted sword', scriptId: 'latin', rom: 'the sword-god', gloss: 'The war-god worshipped as a naked sword fixed upright in the earth and honoured with offerings', language: 'sarmatian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Ammianus Marcellinus 31.2.23 (on the Alans)' }] },
   ],
 
+  // ── Wave NE23: final mop-up II — the last well-attested figures of the
+  // remaining traditions (Radin, Glasse, Gusinde, Reichel-Dolmatoff, Cadogan,
+  // Chatelain, van Baal). Eighteen figures move 0->1. Safe new keys.
+  'hausa_inna': [
+    { original: 'Inna', scriptId: 'latin', rom: 'Inna (Uwar Gona)', gloss: 'The Mother; chief female spirit of the Bori, “Owner of the Farm,” bringer of the cool winds and of illness', language: 'hausa', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Fremont Besmer, on the Hausa Bori cult' }] },
+  ],
+  'redhorn': [
+    { original: 'He-Who-Wears-Human-Heads-as-Earrings', scriptId: 'latin', rom: 'Red Horn', gloss: 'Red Horn; the culture-hero who wins the races and the war against the giants', language: 'ho-chunk', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Paul Radin, The Winnebago Tribe' }] },
+  ],
+  'huli_datagaliwabe': [
+    { original: 'Datagaliwabe', scriptId: 'latin', rom: 'Datagaliwabe', gloss: 'The great sky-being who watches over kinship duty and strikes down those who break it', language: 'huli', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Robert Glasse, Huli of Papua' }] },
+  ],
+  'huli_ni': [
+    { original: 'Ni', scriptId: 'latin', rom: 'Ni', gloss: 'The Sun; the great male power of the sky and source of generative life', language: 'huli', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Huli (Papua New Guinea) ethnography' }] },
+  ],
+  'manipuri_chothe_thangwai_pakhangba': [
+    { original: 'Pakhangba', scriptId: 'latin', rom: 'Pakhangba', gloss: 'The primordial dragon-serpent god of the Meitei, encircling power of kingship and the cosmos', language: 'manipuri', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Meitei (Sanamahi) tradition of Manipur' }] },
+  ],
+  'fallen_star': [
+    { original: 'Fallen Star', scriptId: 'latin', rom: 'Fallen Star', gloss: 'The star-born culture-hero who travels the camps righting wrongs and rescuing the people', language: 'lakota', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Lakota/Dakota oral tradition (the Fallen Star cycle)' }] },
+  ],
+  'suludnon_alunsina': [
+    { original: 'Alunsina', scriptId: 'latin', rom: 'Alunsina', gloss: 'The goddess of the eastern sky; mother of the three hero-brothers of the Hinilawod', language: 'suludnon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'The Hinilawod epic (Sulod of Panay)' }] },
+  ],
+  'suludnon_labaw_donggon': [
+    { original: 'Labaw Donggon', scriptId: 'latin', rom: 'Labaw Donggon', gloss: 'The great hero of the Hinilawod, whose bride-quests and battles fill the epic', language: 'suludnon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'The Hinilawod epic (Sulod of Panay)' }] },
+  ],
+  'yamana_watauinewa': [
+    { original: 'Watauinewa', scriptId: 'latin', rom: 'Watauinewa', gloss: 'The Most Ancient One; the supreme being of the Yámana (Yaghan), giver and taker of life', language: 'yamana', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martin Gusinde, Die Feuerland-Indianer (the Yamana)' }] },
+  ],
+  'desana_sun_father': [
+    { original: 'Pagÿ Abé', scriptId: 'latin', rom: 'Page Abe (Sun Father)', gloss: 'The Sun Father, who created the world with the light of his yellow intention and set its order', language: 'desana', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Gerardo Reichel-Dolmatoff, Amazonian Cosmos' }] },
+  ],
+  'namandu': [
+    { original: 'Ñamandú', scriptId: 'latin', rom: 'Namandu', gloss: 'The self-created First Father, who unfolded the world and human speech from the primal darkness', language: 'guarani', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'León Cadogan, Ayvu Rapyta (Mbyá-Guaraní); Nimuendajú' }] },
+  ],
+  'banyaruanda_ryangombe': [
+    { original: 'Ryangombe', scriptId: 'latin', rom: 'Ryangombe', gloss: 'The great hero-spirit and lord of the dead, head of the Kubandwa initiates', language: 'kinyarwanda', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Rwanda/Rundi ethnography of the Kubandwa cult' }] },
+  ],
+  'krachi_wulbari': [
+    { original: 'Wulbari', scriptId: 'latin', rom: 'Wulbari', gloss: 'The supreme sky-god who once lay close above the earth, then withdrew on high from the press of mankind', language: 'krachi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'A. W. Cardinall, Tales Told in Togoland' }] },
+  ],
+  'ambundu_sudika_mbambi': [
+    { original: 'Sudika-Mbambi', scriptId: 'latin', rom: 'Sudika-Mbambi', gloss: 'The thunder-hero, born already speaking and armed, who slays the monsters of the Mbundu epic', language: 'ambundu', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Héli Chatelain, Folk-Tales of Angola' }] },
+  ],
+  'marind_sosom': [
+    { original: 'Sosom', scriptId: 'latin', rom: 'Sosom', gloss: 'The giant ogre-dema who comes each year for the boys’ initiation and returns them as men', language: 'marind', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Jan van Baal, Dema: Description and Analysis of Marind-anim Culture' }] },
+  ],
+  'marind_geb': [
+    { original: 'Geb', scriptId: 'latin', rom: 'Geb', gloss: 'The dema who rose encrusted from the earth; ancestor and bringer of fire and the coconut', language: 'marind', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Jan van Baal, Dema: Marind-anim Culture' }] },
+  ],
+  'miwok_coyote': [
+    { original: 'Coyote', scriptId: 'latin', rom: 'Coyote', gloss: 'The creator-trickster who shaped the people and the world at the dawn of things', language: 'miwok', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'C. Hart Merriam, The Dawn of the World (Miwok)' }] },
+  ],
+  'aboriginal_wagyl': [
+    { original: 'the Waugal', scriptId: 'latin', rom: 'Wagyl', gloss: 'The Rainbow Serpent of the Noongar, who carved the rivers, lakes, and waterways of the south-west', language: 'noongar', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Noongar (south-west Australian) tradition' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
