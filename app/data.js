@@ -235384,6 +235384,64 @@ const EPITHETS_X = {
     { original: 'Jestak', scriptId: 'latin', rom: 'Jestak', gloss: 'The goddess of home, family, lineage, and birth, whose hall (Jestak-han) is the clan’s shrine', language: 'kalasha', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Kalasha ethnography of Chitral (Cacopardo; Parkes)' }] },
   ],
 
+  // ── Wave NE17: remaining North & South America — Hopi, Tlingit,
+  // Kwakwaka'wakw, Wabanaki, Pemon, Bororo, Huichol, Aymara (Voth, Swanton,
+  // Boas, Koch-Grünberg, Lumholtz). Eighteen figures move 0->1.
+  'hopi_taawa': [
+    { original: 'Taawa', scriptId: 'latin', rom: 'Taawa', gloss: 'The Sun Spirit and creator, who made the first beings and the worlds', language: 'hopi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'H. R. Voth, The Traditions of the Hopi' }] },
+  ],
+  'hopi_masauwu': [
+    { original: 'Maasaw', scriptId: 'latin', rom: 'Maasaw', gloss: 'The earth-god and keeper of fire and death; caretaker and guardian of the present Fourth World', language: 'hopi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'H. R. Voth, The Traditions of the Hopi' }] },
+  ],
+  'hopi_kokopelli': [
+    { original: 'Kókopölö', scriptId: 'latin', rom: 'Kokopelli', gloss: 'The humpbacked flute-player; spirit of fertility, seed, music, and travel', language: 'hopi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Hopi katsina tradition' }] },
+  ],
+  'tlingit_raven': [
+    { original: 'Yéil', scriptId: 'latin', rom: 'Yeil (Raven)', gloss: 'Raven; the trickster-transformer who freed the sun, moon, and stars and set the world in order', language: 'tlingit', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'John R. Swanton, Tlingit Myths and Texts' }] },
+  ],
+  'kwakwakawakw_thunderbird': [
+    { original: 'Kwanusila', scriptId: 'latin', rom: 'Thunderbird', gloss: 'The Thunderbird, whose wing-beats are the thunder and whose blink is the lightning', language: 'kwakwala', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Franz Boas, on the Kwakiutl' }] },
+  ],
+  'kwakwakawakw_sisiutl': [
+    { original: 'Sisiutl', scriptId: 'latin', rom: 'Sisiutl', gloss: 'The double-headed serpent; a dangerous and powerful being whose glance can turn the foe to stone', language: 'kwakwala', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Franz Boas, on the Kwakiutl' }] },
+  ],
+  'wabanaki_gluskap': [
+    { original: 'Gluskap', scriptId: 'latin', rom: 'Gluskap (Glooscap)', gloss: 'The benevolent culture-hero and transformer who shaped the land and taught the people', language: 'wabanaki', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Wabanaki oral tradition; Leland, Algonquin Legends' }] },
+  ],
+  'wabanaki_malsum': [
+    { original: 'Malsum', scriptId: 'latin', rom: 'Malsum', gloss: 'The wolf; Gluskap’s contrary brother who shapes the rough and harmful things', language: 'wabanaki', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Wabanaki oral tradition; Leland, Algonquin Legends' }] },
+  ],
+  'makunaima': [
+    { original: 'Makunaima', scriptId: 'latin', rom: 'Makunaima', gloss: 'The trickster culture-hero and youngest creator-brother of the Pemon and Taulipang', language: 'pemon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Theodor Koch-Grünberg, Vom Roroima zum Orinoco' }] },
+  ],
+  'wei': [
+    { original: 'Wei', scriptId: 'latin', rom: 'Wei', gloss: 'The Sun; father of Makunaima and his brothers', language: 'pemon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Theodor Koch-Grünberg, Vom Roroima zum Orinoco' }] },
+  ],
+  'bororo_meri': [
+    { original: 'Meri', scriptId: 'latin', rom: 'Meri', gloss: 'The Sun; the central culture-hero of the Bororo (with Ari, the Moon)', language: 'bororo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Colbacchini & Albisetti, Os Bororos Orientais; Lévi-Strauss' }] },
+  ],
+  'bororo_bope': [
+    { original: 'the Bope', scriptId: 'latin', rom: 'Bope', gloss: 'The transformative spirits that govern blood, death, storms, and the powers of nature', language: 'bororo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Colbacchini & Albisetti, Os Bororos Orientais' }] },
+  ],
+  'huichol_tatewari': [
+    { original: 'Tatewarí', scriptId: 'latin', rom: 'Tatewari', gloss: 'Our Grandfather Fire; the oldest god and the first shaman, who guides the peyote pilgrimage', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Carl Lumholtz, Unknown Mexico; Barbara Myerhoff, Peyote Hunt' }] },
+  ],
+  'huichol_nakawe': [
+    { original: 'Takutsi Nakawé', scriptId: 'latin', rom: 'Nakawe', gloss: 'Our Grandmother Growth; the aged earth- and fertility-goddess, creator of vegetation', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Carl Lumholtz, Unknown Mexico; R. M. Zingg, The Huichols' }] },
+  ],
+  'huichol_tau': [
+    { original: 'Tayaupá', scriptId: 'latin', rom: 'Tau (Tayaupa)', gloss: 'Our Father Sun, who rose from the underworld to light the world', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Carl Lumholtz, Unknown Mexico' }] },
+  ],
+  'huichol_kauyumari': [
+    { original: 'Kauyumari', scriptId: 'latin', rom: 'Kauyumari', gloss: 'The sacred Deer-Person and trickster, the shaman’s guide and the spirit of peyote', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Barbara Myerhoff, Peyote Hunt' }] },
+  ],
+  'aymara_inti': [
+    { original: 'Inti', scriptId: 'latin', rom: 'Inti', gloss: 'The Sun, giver of warmth and the harvest, the great celestial power of the Andes', language: 'aymara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Andean (Aymara) ethnography; colonial chronicles' }] },
+  ],
+  'aymara_tunupa': [
+    { original: 'Tunupa', scriptId: 'latin', rom: 'Tunupa', gloss: 'The wandering god of thunder, volcanoes, and weather, who crossed the altiplano shaping the land', language: 'aymara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Andean ethnography; Bertonio, Vocabulario de la lengua aymara' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
