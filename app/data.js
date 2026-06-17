@@ -235674,6 +235674,64 @@ const EPITHETS_X = {
     { original: 'Santas', scriptId: 'latin', rom: 'Santas (Sandon)', gloss: 'The warrior-god identified with Heracles, an ancient Anatolian power of Lydia', language: 'lydian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Anatolian/Lydian tradition (Santas–Sandon)' }] },
   ],
 
+  // ── Wave NE22: final mop-up I — the smallest still-empty traditions across
+  // Africa, the Americas, Anatolia, the Caucasus-steppe, the Andamans, Kamchatka,
+  // and NE India. Eighteen figures move 0->1. Safe new keys.
+  'berber_gurzil': [
+    { original: 'Gurzil', scriptId: 'latin', rom: 'Gurzil', gloss: 'The bull-formed war-god of the Laguatan Berbers, borne into battle at the army’s head', language: 'berber', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Corippus, Iohannis (the wars in North Africa)' }] },
+  ],
+  'berber_ifri': [
+    { original: 'Ifri', scriptId: 'latin', rom: 'Ifri', gloss: 'The cave-goddess, protective local deity of the grottoes (the Dii Ifru of inscriptions)', language: 'berber', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Romano-Berber votive inscriptions of North Africa' }] },
+  ],
+  'ipisowaahs': [
+    { original: 'Morning Star', scriptId: 'latin', rom: 'Ipisowaahs', gloss: 'The Morning Star; son of the Sun and Feather Woman, who shines between sky and earth', language: 'blackfoot', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'George Bird Grinnell, Blackfoot Lodge Tales' }] },
+  ],
+  'poia': [
+    { original: 'Scarface', scriptId: 'latin', rom: 'Poia', gloss: 'Star Boy, who journeyed to the Sun, had his scar removed, and brought the people the Sun Dance', language: 'blackfoot', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'George Bird Grinnell, Blackfoot Lodge Tales' }] },
+  ],
+  'cheyenne_maheo': [
+    { original: 'Maheo', scriptId: 'latin', rom: 'Maheo', gloss: 'The All-Spirit; the supreme creator who made the world from the primal waters', language: 'cheyenne', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Cheyenne oral tradition (Grinnell; Powell, Sweet Medicine)' }] },
+  ],
+  'cheyenne_sweet_medicine': [
+    { original: 'Sweet Medicine', scriptId: 'latin', rom: 'Motseyoef', gloss: 'The prophet-hero who received the Sacred Arrows and the laws of the people at Bear Butte', language: 'cheyenne', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Peter J. Powell, Sweet Medicine' }] },
+  ],
+  'lycian_trqqas': [
+    { original: 'Trqqas', scriptId: 'latin', rom: 'Trqqas (Trqqñt)', gloss: 'The Lycian storm-and-weather god (cognate of Luwian Tarhunt)', language: 'lycian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Lycian inscriptions; the Letoon trilingual' }] },
+  ],
+  'lycian_maliya': [
+    { original: 'Maliya', scriptId: 'latin', rom: 'Maliya', gloss: 'A great Lycian goddess of springs and crafts, akin to Athena', language: 'lycian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Lycian inscriptions' }] },
+  ],
+  'veps_vedenizand': [
+    { original: 'Vedenizand', scriptId: 'latin', rom: 'Vedenizand', gloss: 'The Master of the Water; spirit-lord of lakes and rivers and their fish', language: 'veps', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Veps (Finnic) folk belief' }] },
+  ],
+  'veps_metsanisand': [
+    { original: 'Metsanisand', scriptId: 'latin', rom: 'Metsanisand', gloss: 'The Master of the Forest; spirit-lord of the woods and their game', language: 'veps', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Veps (Finnic) folk belief' }] },
+  ],
+  'ovambo_kalunga': [
+    { original: 'Kalunga', scriptId: 'latin', rom: 'Kalunga', gloss: 'The supreme creator and lord of the dead of the Ovambo', language: 'ovambo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ovambo (Aawambo) ethnography' }] },
+  ],
+  'ndebele_unkulunkulu': [
+    { original: 'uNkulunkulu', scriptId: 'latin', rom: 'uNkulunkulu', gloss: 'The Great-Great-One; the first ancestor and creator who came forth from the reeds', language: 'ndebele', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Nguni (Ndebele/Zulu) ethnography' }] },
+  ],
+  'jukun_chido': [
+    { original: 'Chido', scriptId: 'latin', rom: 'Chido', gloss: 'The Sky; the supreme god of the Jukun, joined with the divine king', language: 'jukun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'C. K. Meek, A Sudanese Kingdom (the Jukun)' }] },
+  ],
+  'chaga_ruwa': [
+    { original: 'Ruwa', scriptId: 'latin', rom: 'Ruwa', gloss: 'The Sun and supreme god of the Chaga, merciful liberator and giver of life', language: 'chaga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Bruno Gutmann, on the Chaga of Kilimanjaro' }] },
+  ],
+  'andamanese_biliku': [
+    { original: 'Biliku', scriptId: 'latin', rom: 'Biliku (Puluga)', gloss: 'The great sky-and-storm being, source of the wind and the seasons', language: 'andamanese', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'A. R. Radcliffe-Brown, The Andaman Islanders' }] },
+  ],
+  'itelmen_kutkh': [
+    { original: 'Kutkh', scriptId: 'latin', rom: 'Kutkh', gloss: 'The Raven; creator and trickster who made Kamchatka and its first people', language: 'itelmen', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'G. W. Steller; W. Jochelson, on the Itelmen (Kamchadal)' }] },
+  ],
+  'karbi_hemphu': [
+    { original: 'Hemphu', scriptId: 'latin', rom: 'Hemphu', gloss: 'The supreme creator and house-god of the Karbi, lord of the people', language: 'karbi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Karbi (Mikir) ethnography of Assam' }] },
+  ],
+  'sarmatian_sword_god': [
+    { original: 'the planted sword', scriptId: 'latin', rom: 'the sword-god', gloss: 'The war-god worshipped as a naked sword fixed upright in the earth and honoured with offerings', language: 'sarmatian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Ammianus Marcellinus 31.2.23 (on the Alans)' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
