@@ -26364,6 +26364,10 @@ const buildPeopleSeed = () => {
         { id: 'cunning-and-wit-over-strength' },
         { id: 'wednesday-day-name-Kwaku' },
       ],
+      relations: [
+        { kind: 'spouse', personId: 'akan_aso', sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }] },
+        { kind: 'father-of', personId: 'akan_ntikuma', sources: [{ kind: 'primary', reference: 'Rattray 1930; the pot-of-wisdom narrative' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'spider-form', sources: [{ kind: 'primary', reference: 'Pervasive Anansi-iconography — the eight-legged spider-form' }] },
@@ -26390,6 +26394,101 @@ const buildPeopleSeed = () => {
       notes: 'Spider-trickster son of Nyame and Asase Yaa; the most-narratively-developed figure of the Akan pantheon. Math-clean deity-deity → deity classification (f=1.0). The foundational Anansi-cycle narrative — Anansi acquiring ownership of all stories from Nyame by capturing the python Onini, the leopard Osebo, the hornets Mmoboro, and the dwarf Mmoatia through cunning rather than force — established the term Anansesem ("Anansi-stories") as the canonical Akan word for traditional folk-narrative. The pot-of-wisdom narrative encodes a structurally-distinctive Akan epistemological humility: even the trickster-deity does not possess all wisdom, and the scattering of wisdom from the broken pot establishes the universal-distribution of knowledge across the world. The Anansi-cycle was transmitted through the Atlantic slave trade to the Caribbean, where it survives as the Jamaican Anancy stories, Surinamese Anansi-tori, and Cuban-Caribbean Hermano Araña tales — making Anansi one of the most-widely-distributed African mythological figures in the Americas. The diaspora-transmission preserved the trickster-deity\'s structural role as cunning-over-strength figure that resonated with the slavery-era resistance ethos.',
     },
 
+    // ── Genealogy march, Wave G2: Akan kin materialized from prose ──
+    {
+      id: 'akan_aso', schemaVersion: 2,
+      name: { primary: 'Aso', alt: ['Okonore Yaa', 'Wife of Anansi'], transliterations: { 'twi-akan': 'Aso' } },
+      type: 'deity', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'living',
+      origin: 'canon', parentIds: [], temporal: { era: 'cosmogonic' },
+      lifecycle: [{ typeStatus: 'deity', era: 'cosmogonic', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'R. S. Rattray, Akan-Ashanti Folk-Tales (1930)' }] }],
+      domains: [{ id: 'wife-of-Anansi' }, { id: 'mother-of-Ntikuma' }],
+      relations: [
+        { kind: 'spouse', personId: 'akan_anansi', sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }] },
+        { kind: 'mother-of', personId: 'akan_ntikuma', sources: [{ kind: 'primary', reference: 'Rattray 1930' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'R. S. Rattray, Akan-Ashanti Folk-Tales (1930) — recurring wife of Anansi in the Anansesem' }], weight: 'primary' }],
+      notes: 'Aso, the wife of Anansi and mother of Ntikuma; a recurring figure of the Akan Anansesem (spider-tales) recorded by Rattray. Materialized to complete the household of Anansi.',
+    },
+    {
+      id: 'akan_ntikuma', schemaVersion: 2,
+      name: { primary: 'Ntikuma', alt: ['Intikuma', 'Son of Anansi'], transliterations: { 'twi-akan': 'Ntikuma' } },
+      type: 'deity', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: ['akan_anansi', 'akan_aso'], parentRoles: { akan_anansi: 'paternal', akan_aso: 'maternal' },
+      temporal: { era: 'cosmogonic' },
+      lifecycle: [{ typeStatus: 'deity', era: 'cosmogonic', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930); the pot-of-wisdom narrative' }] }],
+      domains: [{ id: 'eldest-son-of-Anansi' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }], weight: 'primary' }],
+      notes: 'Ntikuma, eldest son of Anansi and Aso. In the pot-of-wisdom tale it is Ntikuma whose remark — that the pot would be easier carried on the back — shows Anansi he had not gathered all the world wisdom after all (the moment already recounted in the Anansi entry). Materialized as the named son of the household.',
+    },
+    {
+      id: 'akan_manu_kotosi', schemaVersion: 2,
+      name: { primary: 'Manu Kotosi', alt: ['Maanu Kotosii', 'Manu Kotosii', 'Oyoko matriarch'], transliterations: { 'twi-akan': 'Manu Kotosi' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'pre-asante' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-asante', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Wilks, Asante in the Nineteenth Century (1975); Fynn, Asante and Its Neighbours (1971)' }], notes: 'Oyoko-clan matriarch of Kwaman; sister of the Kwaman chief Obiri Yeboa; mother of Osei Tutu I (by Owusu Panyin) and of Nyaako Kusiaa.' },
+        { vitalStatus: 'dead', era: 'pre-asante', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'oyoko-clan-matriarch' }, { id: 'mother-of-Osei-Tutu-I' }],
+      relations: [
+        { kind: 'sibling', personId: 'akan_obiri_yeboa', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }] },
+        { kind: 'spouse', personId: 'akan_owusu_panyin', sources: [{ kind: 'secondary', reference: 'Asante royal genealogy' }] },
+        { kind: 'mother-of', personId: 'akan_osei_tutu_i', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }] },
+        { kind: 'mother-of', personId: 'akan_nyaako_kusiaa', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971 — Manu Kotosi, sister of Obiri Yeboa, mother of Osei Tutu I' }], weight: 'secondary' }],
+      notes: 'Oyoko-clan matriarch and the genealogical hinge of the early Asante royal line: sister of the Kwaman chief Obiri Yeboa, and mother of both Osei Tutu I (the founder of Asante) and Nyaako Kusiaa. Akan succession being matrilineal, it is through her that Osei Tutu inherited the Kwaman stool from his maternal uncle Obiri Yeboa, and through her daughter Nyaako Kusiaa that the stool passed to Opoku Ware I. Documented in prose in the existing royal entries; materialized here as the connecting node.',
+    },
+    {
+      id: 'akan_nyaako_kusiaa', schemaVersion: 2,
+      name: { primary: 'Nyaako Kusiaa', alt: ['Nyaako Kusi Amoa', 'First Asantehemaa'], transliterations: { 'twi-akan': 'Nyaako Kusiaa' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: ['akan_manu_kotosi'], parentRoles: { akan_manu_kotosi: 'maternal' },
+      temporal: { era: 'asante-empire-founding' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Daughter of Manu Kotosi and sister of Osei Tutu I; mother of Opoku Ware I. Listed as the first Asantehemaa (Nyaako Kusi Amoa) in some Oyoko regnal lists.' },
+        { vitalStatus: 'dead', era: 'asante-empire-founding', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'asantehemaa-queen-mother' }, { id: 'mother-of-Opoku-Ware-I' }],
+      relations: [
+        { kind: 'mother-of', personId: 'akan_opoku_ware_i', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971 — Nyaako Kusiaa, sister of Osei Tutu I, mother of Opoku Ware I' }], weight: 'secondary' }],
+      notes: 'Sister of Osei Tutu I and mother of Opoku Ware I, the second Asantehene; reckoned the first Asantehemaa (queen-mother) of Asante in the Oyoko regnal tradition. Through her, Opoku Ware succeeded his maternal uncle Osei Tutu per Akan matrilineal succession.',
+    },
+    {
+      id: 'akan_owusu_panyin', schemaVersion: 2,
+      name: { primary: 'Owusu Panyin', alt: ['Owusu Panin', 'Father of Osei Tutu I'], transliterations: { 'twi-akan': 'Owusu Panyin' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'pre-asante' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-asante', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Asante royal genealogy; Wilks 1975' }], notes: 'Akan noble of Nyameani; husband of Manu Kotosi and father of Osei Tutu I.' },
+        { vitalStatus: 'dead', era: 'pre-asante', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'father-of-Osei-Tutu-I' }],
+      relations: [
+        { kind: 'spouse', personId: 'akan_manu_kotosi', sources: [{ kind: 'secondary', reference: 'Asante royal genealogy' }] },
+        { kind: 'father-of', personId: 'akan_osei_tutu_i', sources: [{ kind: 'secondary', reference: 'Asante royal genealogy; Wilks 1975' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Asante royal genealogy; Wilks, Asante in the Nineteenth Century (1975)' }], weight: 'secondary' }],
+      notes: 'Akan noble of Nyameani; husband of Manu Kotosi and father of Osei Tutu I. In Akan matriliny, descent and succession pass through the mother rather than the father, so Owusu Panyin lies outside the royal succession line; recorded for genealogical completeness as the attested father of the Asante founder.',
+    },
+    {
+      id: 'akan_yaa_akyaa', schemaVersion: 2,
+      name: { primary: 'Yaa Akyaa', alt: ['Nana Yaa Akyaa', 'Asantehemaa Yaa Akyaa'], transliterations: { 'twi-akan': 'Nana Yaa Akyaa' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'asante-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Wilks, Asante in the Nineteenth Century (1975)' }], notes: 'Asantehemaa (queen-mother of Asante) from the 1880s; mother of Asantehene Prempeh I and a dominant figure of the late-19th-century Kumasi court.' },
+        { vitalStatus: 'dead', era: 'colonial-resistance', eraOrdering: 1, startEvent: 'exile-to-Seychelles-with-Prempeh-I', sources: [{ kind: 'primary', reference: 'British colonial archives' }], notes: 'Deposed and exiled to the Seychelles with her son Prempeh I and the senior royals (1896/1900).' },
+      ],
+      domains: [{ id: 'asantehemaa-queen-mother' }, { id: 'mother-of-Prempeh-I' }],
+      relations: [
+        { kind: 'mother-of', personId: 'akan_prempeh_i', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Wilks, Asante in the Nineteenth Century (1975); British colonial archives' }], weight: 'primary' }],
+      notes: 'Asantehemaa (queen-mother) of Asante from the 1880s and a dominant force at the late-19th-century Kumasi court; mother of Asantehene Prempeh I, with whom she was deposed and exiled by the British to the Seychelles. Materialized as the attested mother in the Prempeh-I line.',
+    },
     {
       id: 'akan_obiri_yeboa',
       schemaVersion: 2,
@@ -26411,6 +26510,9 @@ const buildPeopleSeed = () => {
         { id: 'kwaman-chief-pre-asante' },
         { id: 'oyoko-clan-line-leadership' },
         { id: 'matrilineal-uncle-of-Osei-Tutu' },
+      ],
+      relations: [
+        { kind: 'sibling', personId: 'akan_manu_kotosi', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971 — Manu Kotosi, sister of Obiri Yeboa and mother of Osei Tutu' }] },
       ],
       iconography: {
         attributes: [
@@ -26445,10 +26547,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['akan_owusu_panyin', 'akan_manu_kotosi'],
+      parentRoles: { akan_owusu_panyin: 'paternal', akan_manu_kotosi: 'maternal' },
       temporal: { era: 'asante-empire-founding' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1660-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and an unnamed father. The matrilineal-uncle Obiri Yeboa was the political-cultural-parent figure transmitting Kwaman chiefly legitimacy. Per Akan succession norms, parentIds are left empty in this registry, with the matrilineal-uncle relation to Obiri Yeboa documented in prose; the biological mother Manu Kotosi is not given a separate entry due to the 10-entry budget for the cluster.' },
+        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1660-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and his father Owusu Panyin. The maternal uncle Obiri Yeboa transmitted Kwaman chiefly legitimacy per Akan matrilineal succession; the mother Manu Kotosi, father Owusu Panyin, and sister Nyaako Kusiaa are now materialized as linked figures.' },
         { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 1, startEvent: 'youth-at-Akwamu-and-Denkyira-courts', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }], notes: 'Spent his youth at the Akwamu court (where he formed the foundational political-personal alliance with Komfo Anokye) and at the Denkyira court (as a hostage-resident under Denkyirahene Boamponsem). The hostage-residence provided strategic intelligence on Denkyira military and administrative practice that subsequently informed Asante state-formation.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-empire-founding', eraOrdering: 2, startEvent: 'accession-as-Kwaman-chief-c-1680', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Acceded to the Kwaman chiefly stool c. 1680 CE after Obiri Yeboa\'s death in the Domaa war. With Komfo Anokye, transformed Kwaman into Kumasi (the new imperial capital) and consolidated the Oyoko clan-line\'s authority over the surrounding Akan polities.' },
         { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 3, startEvent: 'foundational-council-and-Sika-Dwa-Kofi-conjuration-1701', sources: [{ kind: 'primary', reference: 'Asante oral tradition; Bowdich 1819; Rattray 1929 Ashanti Law and Constitution' }], notes: 'In 1701 CE, at the foundational council of Kumasi, Komfo Anokye conjured the Sika Dwa Kofi (Golden Stool) down from heaven — the gold-leafed wooden stool containing the soul of the Asante nation. The Sika Dwa Kofi event constitutionally established the Asante Empire and its sovereignty: the stool was never to touch the ground, the Asantehene himself never sat on it (only proximately), and its capture by enemies would mean the destruction of the Asante nation.' },
@@ -26487,7 +26590,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Asante oral tradition; Rattray, Ashanti Law and Constitution (1929)' },
         ], weight: 'primary' },
       ],
-      notes: 'Founder of the Asante Empire (Asanteman); first Asantehene; the central figure of Akan imperial history. Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and an unnamed father; inherited the Kwaman chiefly stool from his maternal uncle Obiri Yeboa per Akan matrilineal succession norms. The 1701 foundational council of Kumasi — at which Komfo Anokye conjured the Sika Dwa Kofi (Golden Stool) down from heaven, containing the soul of the Asante nation — constitutionally established the Asante Empire and its sovereignty. The same year, Osei Tutu defeated the Denkyira Empire at the battle of Feyiase, ending Asante tributary submission and inaugurating the imperial expansion. The Sika Dwa Kofi remains the sacred constitutional anchor of the Asante nation: it was never to touch the ground; the Asantehene himself never sat on it (only proximately); its capture by enemies would mean the destruction of the Asante nation. (The 1900 War of the Golden Stool under Yaa Asantewaa was triggered by British attempts to seize and sit on the Sika Dwa Kofi.) Killed in war with the Akyem polity in 1717 CE; the Asante state-mourning produced the conventional Akan funerary rituals subsequently elaborated as the imperial-Asante death-ritual canon.',
+      notes: 'Founder of the Asante Empire (Asanteman); first Asantehene; the central figure of Akan imperial history. Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and his father Owusu Panyin; inherited the Kwaman chiefly stool from his maternal uncle Obiri Yeboa per Akan matrilineal succession norms. The 1701 foundational council of Kumasi — at which Komfo Anokye conjured the Sika Dwa Kofi (Golden Stool) down from heaven, containing the soul of the Asante nation — constitutionally established the Asante Empire and its sovereignty. The same year, Osei Tutu defeated the Denkyira Empire at the battle of Feyiase, ending Asante tributary submission and inaugurating the imperial expansion. The Sika Dwa Kofi remains the sacred constitutional anchor of the Asante nation: it was never to touch the ground; the Asantehene himself never sat on it (only proximately); its capture by enemies would mean the destruction of the Asante nation. (The 1900 War of the Golden Stool under Yaa Asantewaa was triggered by British attempts to seize and sit on the Sika Dwa Kofi.) Killed in war with the Akyem polity in 1717 CE; the Asante state-mourning produced the conventional Akan funerary rituals subsequently elaborated as the imperial-Asante death-ritual canon.',
     },
 
     {
@@ -26557,10 +26660,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['akan_nyaako_kusiaa'],
+      parentRoles: { akan_nyaako_kusiaa: 'maternal' },
       temporal: { era: 'asante-imperial' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1700-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father. Per Akan matrilineal succession, his political-cultural-parent was Osei Tutu I (the maternal uncle), not his biological father. parentIds left empty per registry conventions for matrilineal-succession figures.' },
+        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1700-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father. Per Akan matrilineal succession, his political-cultural-parent was Osei Tutu I (the maternal uncle), not his biological father. His mother Nyaako Kusiaa is now materialized as a linked figure.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-imperial', eraOrdering: 0, startEvent: 'accession-as-second-Asantehene-1720', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }], notes: 'Acceded as second Asantehene in 1720 CE after the three-year regency-and-civil-war period following Osei Tutu I\'s death.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-imperial', eraOrdering: 1, startEvent: 'imperial-expansion-conquests-1720s-1750', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Conducted the great imperial expansion of the Asante Empire 1720s-1750: defeated Akyem (1742, avenging Osei Tutu\'s death), Akwamu, Akwapim, Aowin, Wassa, Sefwi, Tekyiman, and Bono — establishing Asante territorial dominance over most of modern southern Ghana and parts of Côte d\'Ivoire. Earned the praise-name Katakyie ("the Brave").' },
         { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 2, startEvent: 'institutional-elaboration', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Rattray 1929' }], notes: 'Institutionally elaborated the Asante imperial structure: established the formal kingdom-tributary-vassal hierarchy, the imperial-state goldweighting and goldweight-currency standards (using the foundational mrammuo brass weights), and the elaborated military-state organization centered on the imperial Mponponsuo regiment.' },
@@ -26583,7 +26687,7 @@ const buildPeopleSeed = () => {
           { kind: 'secondary', reference: 'Fynn, Asante and Its Neighbours (1971)' },
         ], weight: 'primary' },
       ],
-      notes: 'Second Asantehene; nephew (sister-son) and matrilineal-uncle-successor of Osei Tutu I. Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father; acceded in 1720 CE after the three-year regency-and-civil-war period following Osei Tutu I\'s death. Conducted the great imperial expansion of the Asante Empire (1720s-1750), defeating Akyem (1742, avenging Osei Tutu\'s death), Akwamu, Akwapim, Aowin, Wassa, Sefwi, Tekyiman, and Bono — establishing Asante territorial dominance over most of modern southern Ghana and parts of Côte d\'Ivoire. Earned the praise-name Katakyie ("the Brave"). Institutionally elaborated the Asante imperial structure: established the formal kingdom-tributary-vassal hierarchy, the imperial-state goldweighting and goldweight-currency standards, and the elaborated military-state organization centered on the imperial Mponponsuo regiment. parentIds left empty per registry conventions for Akan matrilineal-succession figures; the maternal-uncle relation to Osei Tutu I is documented in prose. Died 1750 CE.',
+      notes: 'Second Asantehene; nephew (sister-son) and matrilineal-uncle-successor of Osei Tutu I. Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father; acceded in 1720 CE after the three-year regency-and-civil-war period following Osei Tutu I\'s death. Conducted the great imperial expansion of the Asante Empire (1720s-1750), defeating Akyem (1742, avenging Osei Tutu\'s death), Akwamu, Akwapim, Aowin, Wassa, Sefwi, Tekyiman, and Bono — establishing Asante territorial dominance over most of modern southern Ghana and parts of Côte d\'Ivoire. Earned the praise-name Katakyie ("the Brave"). Institutionally elaborated the Asante imperial structure: established the formal kingdom-tributary-vassal hierarchy, the imperial-state goldweighting and goldweight-currency standards, and the elaborated military-state organization centered on the imperial Mponponsuo regiment. His mother Nyaako Kusiaa (sister of Osei Tutu I) is now materialized as a linked figure; the maternal-uncle relation to Osei Tutu I follows from their shared matriline through Manu Kotosi. Died 1750 CE.',
     },
 
     {
@@ -26650,10 +26754,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['akan_yaa_akyaa'],
+      parentRoles: { akan_yaa_akyaa: 'maternal' },
       temporal: { era: 'colonial-resistance' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 0, startEvent: 'birth-1872-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Manhyia palace records' }], notes: 'Born December 18, 1872 CE; member of the royal Oyoko clan-line. parentIds left empty per registry conventions for matrilineal-succession figures.' },
+        { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 0, startEvent: 'birth-1872-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Manhyia palace records' }], notes: 'Born December 18, 1872 CE; member of the royal Oyoko clan-line. His mother, the Asantehemaa Yaa Akyaa, is now materialized as a linked figure.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-imperial', eraOrdering: 1, startEvent: 'accession-as-Asantehene-1888', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }], notes: 'Acceded as 13th Asantehene in 1888 CE at age 16, after the 1884-1888 succession-civil-war period.' },
         { typeStatus: 'mortal', vitalStatus: 'exiled-prisoner', era: 'colonial-resistance', eraOrdering: 0, startEvent: 'British-deposition-and-exile-1896', sources: [{ kind: 'primary', reference: 'British colonial archives' }, { kind: 'secondary', reference: 'Wilks 1975' }], notes: 'In 1896, British forces under Sir Francis Scott invaded Kumasi and demanded that the Asantehene submit to British protectorate-status; Prempeh I refused. Was deposed, captured, and exiled with his mother Yaa Akyaa, his father, and senior royals first to Elmina Castle, then to Sierra Leone, and finally to Seychelles in 1900. The exile produced the political-cultural rupture that contributed to Yaa Asantewaa\'s 1900 War of the Golden Stool.' },
         { typeStatus: 'mortal', vitalStatus: 'returned-from-exile', era: 'colonial-resistance', eraOrdering: 1, startEvent: 'return-from-Seychelles-exile-1924', sources: [{ kind: 'primary', reference: 'British colonial archives' }], notes: 'Returned to Kumasi in 1924 CE after 28 years of exile; recognized by the British colonial administration as Kumasihene (chief of Kumasi only, not full Asantehene) due to the British policy of suppressing the Asante imperial-state structure.' },
@@ -27890,6 +27995,10 @@ const buildPeopleSeed = () => {
         { id: 'law-instituting-ancestor' },
         { id: 'shaper-of-southeastern-Country' },
       ],
+      relations: [
+        { kind: 'spouse', personId: 'aboriginal_birrahgnooloo', sources: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905)' }] },
+        { kind: 'father-of', personId: 'aboriginal_daramulun', sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904)' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'baiame-cave-rock-painting-Milbrodale-NSW', sources: [{ kind: 'archaeological', reference: 'Baiame Cave at Milbrodale (Hunter Valley, NSW) — large-scale ochre-painted figure with extended-outstretched arms; canonical Wonnarua-Kamilaroi cult-iconographic anchor' }] },
@@ -27943,6 +28052,9 @@ const buildPeopleSeed = () => {
         { id: 'institutor-of-moiety-division-with-Waa-the-Crow' },
         { id: 'wedge-tailed-eagle-form' },
       ],
+      relations: [
+        { kind: 'father-of', personId: 'aboriginal_binbeal', sources: [{ kind: 'primary', reference: 'Howitt 1904; R. B. Smyth, The Aborigines of Victoria (1878)' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'wedge-tailed-eagle-form', sources: [{ kind: 'primary', reference: 'Kulin nation tradition' }] },
@@ -27975,6 +28087,43 @@ const buildPeopleSeed = () => {
       notes: 'Eaglehawk creator deity of the Kulin nation (confederation of five language groups in central Victoria). Per canonical-Kulin narrative, created the people, the landscape, the law, and (with his brother Waa the Crow) instituted the foundational moiety division structuring Kulin kinship — the canonical Australian-Aboriginal eaglehawk-and-crow moiety pattern that recurs across multiple language-group Dreaming-traditions. Ascended to the sky after completing his creator-work, where he continues to oversee Country in the form of the wedge-tailed eagle (Aquila audax). The Bunjil\'s Shelter rock-art panel at Black Range State Park (Victoria) — small ochre-painted Bunjil figure flanked by two dingoes — is one of the most-iconic Victorian Aboriginal rock-art sites and the canonical iconographic anchor of the Bunjil-cult. Continues as central cultural-religious framework for contemporary Wurundjeri, Boon Wurrung, and other Kulin-nation communities, with public-art commissions across Melbourne and Victoria (notably the Bunjil sculpture at Docklands by Bruce Armstrong, 2002) preserving the figure in contemporary Australian visual-culture.',
     },
 
+    // ── Genealogy march, Wave G2: families of Baiame and Bunjil ──
+    {
+      id: 'aboriginal_birrahgnooloo', schemaVersion: 2,
+      name: { primary: 'Birrahgnooloo', alt: ['Birra-nulu', 'Birrahgnooloo the All-Mother'], transliterations: { 'kamilaroi-euahlayi': 'Birrahgnooloo' } },
+      type: 'deity', tradition: 'Kamilaroi', primaryTradition: 'Kamilaroi', sex: 'female', vitalStatus: 'living',
+      origin: 'canon', parentIds: [], temporal: { era: 'dreaming-creator-era' },
+      lifecycle: [{ typeStatus: 'deity', era: 'dreaming-creator-era', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905)' }] }],
+      domains: [{ id: 'all-mother-rain-and-flood' }, { id: 'senior-wife-of-Baiame' }],
+      relations: [
+        { kind: 'spouse', personId: 'aboriginal_baiame', sources: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905)' }] },
+        { kind: 'mother-of', personId: 'aboriginal_daramulun', sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); Parker (1905)' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905) — Birrahgnooloo, senior wife of Baiame, the flood-and-rain All-Mother' }], weight: 'primary' }],
+      notes: 'Birrahgnooloo, the All-Mother associated with rain and floodwater; senior wife of the sky-father Baiame in the Euahlayi (Kamilaroi-related) tradition recorded by K. Langloh Parker. Reckoned mother of Daramulun in the southeastern All-Father complex.',
+    },
+    {
+      id: 'aboriginal_daramulun', schemaVersion: 2,
+      name: { primary: 'Daramulun', alt: ['Dhurramulan', 'Dhuramoolan', 'Daramulun the Bullroarer-Voice'], transliterations: { 'wiradjuri': 'Daramulun' } },
+      type: 'deity', tradition: 'Kamilaroi', primaryTradition: 'Kamilaroi', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: ['aboriginal_baiame', 'aboriginal_birrahgnooloo'], parentRoles: { aboriginal_baiame: 'paternal', aboriginal_birrahgnooloo: 'maternal' },
+      temporal: { era: 'dreaming-creator-era' },
+      lifecycle: [{ typeStatus: 'deity', era: 'dreaming-creator-era', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); R. H. Mathews, ethnographic papers' }] }],
+      domains: [{ id: 'initiation-Bora-deity' }, { id: 'bullroarer-voice-and-thunder' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); R. H. Mathews on the Bora initiation' }], weight: 'primary' }],
+      notes: 'Daramulun, the initiation deity of the southeastern Australian Bora ceremony, whose voice is heard in the bullroarer and the thunder; reckoned a son of Baiame in the Wiradjuri/Kamilaroi All-Father complex synthesized by Howitt. Regional variation is significant: among the Yuin, Daramulun is himself the supreme being and son of a great mother rather than of Baiame — recorded here under the Baiame-father tradition.',
+    },
+    {
+      id: 'aboriginal_binbeal', schemaVersion: 2,
+      name: { primary: 'Binbeal', alt: ['Binbeal the Rainbow', 'Son of Bunjil'], transliterations: { 'woiwurrung': 'Binbeal' } },
+      type: 'deity', tradition: 'Kulin', primaryTradition: 'Kulin', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: ['aboriginal_bunjil'], parentRoles: { aboriginal_bunjil: 'paternal' },
+      temporal: { era: 'dreaming-creator-era' },
+      lifecycle: [{ typeStatus: 'deity', era: 'dreaming-creator-era', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); R. B. Smyth, The Aborigines of Victoria (1878)' }] }],
+      domains: [{ id: 'rainbow' }, { id: 'son-of-Bunjil' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Howitt 1904; R. B. Smyth, The Aborigines of Victoria (1878) — Binbeal the rainbow, son of Bunjil' }], weight: 'primary' }],
+      notes: 'Binbeal, the rainbow, son of the Kulin creator Bunjil; his wife is the fainter secondary bow. Recorded by Smyth (1878) and Howitt (1904) in the Kulin Bunjil tradition.',
+    },
     {
       id: 'aboriginal_wagyl',
       schemaVersion: 2,
