@@ -234536,6 +234536,39 @@ const EPITHETS_X = {
     { original: 'ἀστερόεις', scriptId: 'greek', rom: 'asteróeis', gloss: 'The starry; starry Heaven', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 127' }] },
   ],
 
+  // ── Wave E2: Norse heiti, anchored by Óðinn's names from Grímnismál (the
+  // densest name-catalogue in Eddic verse). All Poetic/Prose Edda; safe new keys.
+  'norse_odin': [
+    { original: 'Herjann', gloss: 'Host-lord; lord of armies (the war-leader of the einherjar)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 46 (Poetic Edda); Völuspá 30' }] },
+    { original: 'Þundr', gloss: 'The thunderer / the roaring one', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 46, 54 (Poetic Edda)' }] },
+    { original: 'Yggr', gloss: 'The terrible one (whence Yggdrasill, “Yggr’s steed”)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 53–54 (Poetic Edda)' }] },
+    { original: 'Hroptatýr', gloss: 'God of the cry / the sage-god', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 54; Hávamál 160 (Poetic Edda)' }] },
+    { original: 'Veratýr', gloss: 'God of men / of beings', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 3 (Poetic Edda)' }] },
+    { original: 'Gautr', gloss: 'The Geat; ancestral progenitor of the Gautar', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 54 (Poetic Edda)' }] },
+    { original: 'Báleygr', gloss: 'Flame-eyed', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47 (Poetic Edda)' }] },
+    { original: 'Bileygr', gloss: 'Weak-eyed / one-eyed (he gave one eye for wisdom)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47 (Poetic Edda)' }] },
+    { original: 'Síðhǫttr', gloss: 'Broad-hat; the low-slouched-hat wanderer', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 48 (Poetic Edda)' }] },
+    { original: 'Fjǫlnir', gloss: 'The concealer / much-knowing', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47 (Poetic Edda)' }] },
+    { original: 'Hnikarr', gloss: 'The inciter; the storm-stiller invoked by seafarers', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47; Reginsmál 18–19 (Poetic Edda)' }] },
+    { original: 'Farmatýr', gloss: 'God of cargoes; patron of burdens and seafaring', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 48 (Poetic Edda)' }] },
+    { original: 'Óski', gloss: 'God of wishes; fulfiller of desire', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 49 (Poetic Edda)' }] },
+    { original: 'Hárbarðr', gloss: 'Grey-beard; the ferryman who taunts Þórr', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 49; Hárbarðsljóð (Poetic Edda)' }] },
+  ],
+  'norse_thor': [
+    { original: 'Véurr', gloss: 'The hallower / protector (of gods and men)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Hymiskviða 11, 21 (Poetic Edda)' }] },
+    { original: 'Ásabragr', gloss: 'Prince/foremost of the Æsir', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Snorri, Skáldskaparmál (the heiti of Þórr)' }] },
+  ],
+  'norse_loki': [
+    { original: 'Hveðrungr', gloss: 'The roarer; Loki as father of Fenrir and Hel', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Völuspá 55 (“Hveðrungs mǫgr”); Ynglingatal' }] },
+    { original: 'Býleists bróðir', gloss: 'Brother of Býleistr; Loki by his kin-name', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Völuspá 51; Hyndluljóð 40 (Poetic Edda)' }] },
+  ],
+  'norse_freyr': [
+    { original: 'Ingunar-Freyr', gloss: 'Freyr of the Ingvaeones / of Ingun; the ancestral Yngling lord', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Lokasenna 43 (Poetic Edda)' }] },
+  ],
+  'norse_heimdall': [
+    { original: 'hvíti áss', gloss: 'The white god; brightest of the Æsir', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Gylfaginning 27 (Prose Edda); Þrymskviða 15' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
@@ -236896,6 +236929,18 @@ const EPITHETS_X = {
         {
           "kind": "primary",
           "reference": "Grímnismál 7"
+        }
+      ]
+    },
+    {
+      "original": "Fjǫrgvinsdóttir",
+      "scriptId": "old-norse",
+      "rom": "Fjǫrgvinsdóttir",
+      "gloss": "Daughter of Fjǫrgynn (the masculine ancestor)",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Lokasenna 26 (Poetic Edda)"
         }
       ]
     }
