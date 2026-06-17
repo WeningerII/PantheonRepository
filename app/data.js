@@ -234617,6 +234617,26 @@ const EPITHETS_X = {
     { original: 'कमलासन', scriptId: 'sanskrit', rom: 'Kamalāsana', gloss: 'The lotus-seated', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic tradition (Brahmā on the lotus from Viṣṇu’s navel)' }] },
   ],
 
+  // ── Wave E4: Mesopotamian + Egyptian — anchored by Marduk's Fifty Names from
+  // Enūma Eliš VI–VII (the great name-litany), with Enlil and two major Egyptian
+  // syncretisms. All safe new keys.
+  'mesopotamian_marduk': [
+    { original: 'Nēberu', scriptId: 'akkadian', rom: 'Neberu', gloss: 'The Crossing (Ford of heaven); the star (Jupiter) that fixes the stations of the gods', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.124–131' }] },
+    { original: 'Šazu', scriptId: 'akkadian', rom: 'Shazu', gloss: 'Who knows the heart of the gods, who perceives the inmost mind', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.35' }] },
+    { original: 'Enbilulu', scriptId: 'akkadian', rom: 'Enbilulu', gloss: 'Lord of abundance; god of rivers, canals, and irrigation', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.57–61' }] },
+    { original: 'Asaru', scriptId: 'akkadian', rom: 'Asaru', gloss: 'Bestower of cultivation; creator of grain and green growing things', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.1–2' }] },
+    { original: 'Sirsir', scriptId: 'akkadian', rom: 'Sirsir', gloss: 'Who heaped a mountain over Tiamat; subduer of the deep', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.70–74' }] },
+  ],
+  'mesopotamian_enlil': [
+    { original: 'bēl šīmāti', scriptId: 'akkadian', rom: 'bel shimati', gloss: 'Lord of destinies; holder of the Tablet of Destinies', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'The Epic of Anzû (the theft of Enlil’s Tablet of Destinies); Sumerian Enlil hymns' }] },
+  ],
+  'egyptian_ra': [
+    { original: 'jtm', scriptId: 'egyptian', rom: 'Atum', gloss: 'Ra-Atum: the Complete One; the evening and primeval self-created sun of Heliopolis', language: 'egyptian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pyramid Texts; the Heliopolitan cosmogony (Ra-Atum)' }] },
+  ],
+  'egyptian_amun': [
+    { original: 'jmn-rꜥ', scriptId: 'egyptian', rom: 'Amun-Ra', gloss: 'Amun-Ra: the hidden god fused with the sun; supreme deity of the New Kingdom', language: 'egyptian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Cairo Hymn to Amun-Ra (Papyrus Boulaq 17); the Leiden Amun hymns' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
