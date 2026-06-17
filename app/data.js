@@ -11950,6 +11950,9 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 2 },
       ],
       domains: [{ id: 'Haykazuni-third-generation' }, { id: 'Armavir-foundation', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12' }] }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_amasia', era: 'haykazuni-mythohistorical' },
+      ],
       iconography: {
         attributes: [{ id: 'city-founder-attribute' }],
       },
@@ -11972,6 +11975,102 @@ const buildPeopleSeed = () => {
       notes: 'Third-generation Haykazuni patriarch; son of Aramaneak; founder of Armavir, the first Armenian capital city. Armavir on the Araxes River served as Haykazuni capital throughout the legendary period and into the Orontid (Yervanduni) Persian-period satrapy, until the 2nd-c. BCE Artaxiad relocation to Artaxata. Archaeologically attested as a major Iron-Age and Achaemenid-period settlement, providing some material-historical grounding to the Khorenatsi foundation-tradition.',
     },
 
+    // ── Genealogy march, Wave G1 (Armenian Haykazuni patriarchs): materialize
+    // the Aramayis → Amasia → Gegham → Harma → Aram chain that Khorenatsi (1.12)
+    // names but the registry had deferred to prose. Mortal patriarchs, one era.
+    {
+      id: 'armenian_amasia',
+      schemaVersion: 2,
+      name: {
+        primary: 'Amasia',
+        alt: ['Ամասիա', 'Son of Aramayis'],
+        transliterations: { 'armenian-classical': 'Ամասիա', 'armenian-romanization': 'Amasia' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: ['armenian_aramayis'],
+      parentRoles: { armenian_aramayis: 'paternal' },
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12' }] },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Haykazuni-fourth-generation' }, { id: 'Mount-Masis-eponym', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12 — the mountain Masis (Ararat) named from Amasia' }] }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_gegham', era: 'haykazuni-mythohistorical' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Ամասիա Amasia; per Khorenatsi the great mountain Masis (Mt. Ararat) takes its name from him.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12' }], weight: 'primary' },
+      ],
+      notes: 'Fourth-generation Haykazuni patriarch; son of Aramayis and father of Gegham. Per Khorenatsi (1.12) he settled at the foot of the great mountain that took from him the name Masis (Mt. Ararat). One of the chain-filler patriarchs bridging Aramayis to Aram, here materialized as a linked node.',
+    },
+
+    {
+      id: 'armenian_gegham',
+      schemaVersion: 2,
+      name: {
+        primary: 'Gegham',
+        alt: ['Գեղամ', 'Son of Amasia'],
+        transliterations: { 'armenian-classical': 'Գեղամ', 'armenian-romanization': 'Gegham' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: ['armenian_amasia'],
+      parentRoles: { armenian_amasia: 'paternal' },
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12' }] },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Haykazuni-fifth-generation' }, { id: 'Lake-Gegham-and-Geghama-mountains-eponym', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12' }] }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_harma', era: 'haykazuni-mythohistorical' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Գեղամ Gegham; the Geghama mountain range, the lake Gegham (Sevan), and the province Gegharkunik preserve his name per Khorenatsi.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12' }], weight: 'primary' },
+      ],
+      notes: 'Fifth-generation Haykazuni patriarch; son of Amasia and father of Harma. Per Khorenatsi (1.12) he settled the north-east by the lake and mountains that bear his name (the Geghama range, Lake Gegham = Lake Sevan, the province Gegharkunik) and built the dwelling Gegh; his descendant Sisak is the eponym of Syunik. A chain-filler patriarch bridging Amasia to Aram.',
+    },
+
+    {
+      id: 'armenian_harma',
+      schemaVersion: 2,
+      name: {
+        primary: 'Harma',
+        alt: ['Հարմա', 'Son of Gegham', 'Father of Aram'],
+        transliterations: { 'armenian-classical': 'Հարմա', 'armenian-romanization': 'Harma' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: ['armenian_gegham'],
+      parentRoles: { armenian_gegham: 'paternal' },
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Khorenatsi 1.12-13' }] },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Haykazuni-sixth-generation' }, { id: 'father-of-Aram' }],
+      relations: [
+        { kind: 'father-of', personId: 'armenian_aram', era: 'haykazuni-mythohistorical' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Հարմա Harma; continuation of the early Haykazuni patriarchal name-series.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.12-13' }], weight: 'primary' },
+      ],
+      notes: 'Sixth-generation Haykazuni patriarch; son of Gegham and father of Aram (the eponym of Armenia). The last of the chain-filler patriarchs bridging Aramayis to Aram, here materialized as a linked node to complete the Hayk → Aram descent.',
+    },
+
     {
       id: 'armenian_aram',
       schemaVersion: 2,
@@ -11982,10 +12081,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['armenian_harma'],
+      parentRoles: { armenian_harma: 'paternal' },
       temporal: { era: 'haykazuni-mythohistorical' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, startEvent: 'birth-in-Haykazuni-dynasty', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.13-14' }], notes: 'Per Khorenatsi, descended from Aramayis through Amasya, Gegham, and Harma (Aram is Harma\'s son; the Amasya-Gegham-Harma chain is the chain-filler between Aramayis and Aram). The registry treats Aram\'s parentIds as empty, deferring the chain-filler intermediates (Amasya, Gegham, Harma) to entry notes.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, startEvent: 'birth-in-Haykazuni-dynasty', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.13-14' }], notes: 'Per Khorenatsi, descended from Aramayis through Amasya, Gegham, and Harma (Aram is Harma\'s son; the Amasya-Gegham-Harma chain is the chain-filler between Aramayis and Aram). These intermediate patriarchs (Amasia, Gegham, Harma) are now materialized as linked figures, completing the chain from Aramayis to Aram.' },
         { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 1, startEvent: 'territorial-expansion-conquests', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.13-14' }], notes: 'Conducted successful military campaigns expanding Armenian territory in all four directions — westward against the Cappadocians, southward against Bel-Mesopotamia successors, eastward against the Medes, northward against Caucasian polities. The conquests established the territorial extent of the Haykazuni Armenian polity.' },
         { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 2, startEvent: 'eponymous-naming-of-Armenia-by-foreign-peoples', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.14' }], notes: 'Per Khorenatsi, the name "Armenia" derives from Aram\'s reputation: foreign peoples (Greeks, Persians, Syrians) called the country "Armenia" or "Land of Aram" after his conquests, distinct from the Armenian-internal endonym Hayk\'/Hayastan derived from Hayk. The Aram-Armenia exonym thus complements the Hayk-Hayastan endonym in Khorenatsi\'s dual-naming framework.' },
         { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 3 },
@@ -12011,7 +12111,7 @@ const buildPeopleSeed = () => {
           { kind: 'secondary', reference: 'Thomson trans. (1978) commentary on the Aram-Armenia derivation' },
         ], weight: 'primary' },
       ],
-      notes: 'Haykazuni patriarch and conqueror-king from whose name the exonym "Armenia" derives per Khorenatsi (1.14). The Aram-Armenia exonym complements the Hayk-Hayastan endonym in Khorenatsi\'s dual-naming framework: foreign peoples (Greeks, Persians, Syrians) call the country "Armenia" / "Land of Aram" after Aram\'s conquests, while Armenians themselves call it Hayk\' / Hayastan after the founder Hayk. The territorial-expansion campaigns in all four directions establish the conventional geographic extent of the Haykazuni Armenian polity. The Khorenatsi-genealogical chain from Aramayis through Amasya, Gegham, Harma, to Aram constitutes a 4-generation chain-filler bridge that the registry treats as empty parentIds for Aram with the chain documented in entry notes.',
+      notes: 'Haykazuni patriarch and conqueror-king from whose name the exonym "Armenia" derives per Khorenatsi (1.14). The Aram-Armenia exonym complements the Hayk-Hayastan endonym in Khorenatsi\'s dual-naming framework: foreign peoples (Greeks, Persians, Syrians) call the country "Armenia" / "Land of Aram" after Aram\'s conquests, while Armenians themselves call it Hayk\' / Hayastan after the founder Hayk. The territorial-expansion campaigns in all four directions establish the conventional geographic extent of the Haykazuni Armenian polity. The Khorenatsi-genealogical chain from Aramayis through Amasya, Gegham, Harma, to Aram is here materialized as a chain of linked figures: Aramayis → Amasia → Gegham → Harma → Aram.',
     },
 
     {
@@ -14500,7 +14600,7 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'secondary', reference: 'Schoolcraft, Algic Researches (1839)' }], weight: 'primary' },
         { claim: 'parentage-of-nanabozho', citations: [{ kind: 'secondary', reference: 'Coleman, Ojibwa Myths and Legends' }], weight: 'primary' },
       ],
-      notes: 'Mortal woman; daughter of Nookomis (Grandmother). Mother of Wenabozho/Nanabozho and his brothers by E-bangishimog (West Wind). Dies in childbirth in most versions of the cycle, leaving Nookomis to raise the children.',
+      notes: 'Mortal woman; daughter of Nookomis (Grandmother). Mother of Wenabozho/Nanabozho and his brothers by E-bangishimog (West Wind). Dies in childbirth in most versions of the cycle, leaving Nookomis to raise the children. The "Winona" alt is the Dakota-derived "Wenonah" ("firstborn daughter") of the Schoolcraft (Algic Researches, 1839) → Longfellow (Hiawatha) tradition, attached to this Ojibwe figure in the popular literature; her authentically Ojibwe name is Wiininwaa ("nourishment").',
     },
     {
       id: 'nanabozho',
@@ -22915,6 +23015,10 @@ const buildPeopleSeed = () => {
         { id: 'cunning-and-wit-over-strength' },
         { id: 'wednesday-day-name-Kwaku' },
       ],
+      relations: [
+        { kind: 'spouse', personId: 'akan_aso', sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }] },
+        { kind: 'father-of', personId: 'akan_ntikuma', sources: [{ kind: 'primary', reference: 'Rattray 1930; the pot-of-wisdom narrative' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'spider-form', sources: [{ kind: 'primary', reference: 'Pervasive Anansi-iconography — the eight-legged spider-form' }] },
@@ -22941,6 +23045,101 @@ const buildPeopleSeed = () => {
       notes: 'Spider-trickster son of Nyame and Asase Yaa; the most-narratively-developed figure of the Akan pantheon. Math-clean deity-deity → deity classification (f=1.0). The foundational Anansi-cycle narrative — Anansi acquiring ownership of all stories from Nyame by capturing the python Onini, the leopard Osebo, the hornets Mmoboro, and the dwarf Mmoatia through cunning rather than force — established the term Anansesem ("Anansi-stories") as the canonical Akan word for traditional folk-narrative. The pot-of-wisdom narrative encodes a structurally-distinctive Akan epistemological humility: even the trickster-deity does not possess all wisdom, and the scattering of wisdom from the broken pot establishes the universal-distribution of knowledge across the world. The Anansi-cycle was transmitted through the Atlantic slave trade to the Caribbean, where it survives as the Jamaican Anancy stories, Surinamese Anansi-tori, and Cuban-Caribbean Hermano Araña tales — making Anansi one of the most-widely-distributed African mythological figures in the Americas. The diaspora-transmission preserved the trickster-deity\'s structural role as cunning-over-strength figure that resonated with the slavery-era resistance ethos.',
     },
 
+    // ── Genealogy march, Wave G2: Akan kin materialized from prose ──
+    {
+      id: 'akan_aso', schemaVersion: 2,
+      name: { primary: 'Aso', alt: ['Okonore Yaa', 'Wife of Anansi'], transliterations: { 'twi-akan': 'Aso' } },
+      type: 'deity', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'living',
+      origin: 'canon', parentIds: [], temporal: { era: 'cosmogonic' },
+      lifecycle: [{ typeStatus: 'deity', era: 'cosmogonic', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'R. S. Rattray, Akan-Ashanti Folk-Tales (1930)' }] }],
+      domains: [{ id: 'wife-of-Anansi' }, { id: 'mother-of-Ntikuma' }],
+      relations: [
+        { kind: 'spouse', personId: 'akan_anansi', sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }] },
+        { kind: 'mother-of', personId: 'akan_ntikuma', sources: [{ kind: 'primary', reference: 'Rattray 1930' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'R. S. Rattray, Akan-Ashanti Folk-Tales (1930) — recurring wife of Anansi in the Anansesem' }], weight: 'primary' }],
+      notes: 'Aso, the wife of Anansi and mother of Ntikuma; a recurring figure of the Akan Anansesem (spider-tales) recorded by Rattray. Materialized to complete the household of Anansi.',
+    },
+    {
+      id: 'akan_ntikuma', schemaVersion: 2,
+      name: { primary: 'Ntikuma', alt: ['Intikuma', 'Son of Anansi'], transliterations: { 'twi-akan': 'Ntikuma' } },
+      type: 'deity', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: ['akan_anansi', 'akan_aso'], parentRoles: { akan_anansi: 'paternal', akan_aso: 'maternal' },
+      temporal: { era: 'cosmogonic' },
+      lifecycle: [{ typeStatus: 'deity', era: 'cosmogonic', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930); the pot-of-wisdom narrative' }] }],
+      domains: [{ id: 'eldest-son-of-Anansi' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }], weight: 'primary' }],
+      notes: 'Ntikuma, eldest son of Anansi and Aso. In the pot-of-wisdom tale it is Ntikuma whose remark — that the pot would be easier carried on the back — shows Anansi he had not gathered all the world wisdom after all (the moment already recounted in the Anansi entry). Materialized as the named son of the household.',
+    },
+    {
+      id: 'akan_manu_kotosi', schemaVersion: 2,
+      name: { primary: 'Manu Kotosi', alt: ['Maanu Kotosii', 'Manu Kotosii', 'Oyoko matriarch'], transliterations: { 'twi-akan': 'Manu Kotosi' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'pre-asante' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-asante', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Wilks, Asante in the Nineteenth Century (1975); Fynn, Asante and Its Neighbours (1971)' }], notes: 'Oyoko-clan matriarch of Kwaman; sister of the Kwaman chief Obiri Yeboa; mother of Osei Tutu I (by Owusu Panyin) and of Nyaako Kusiaa.' },
+        { vitalStatus: 'dead', era: 'pre-asante', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'oyoko-clan-matriarch' }, { id: 'mother-of-Osei-Tutu-I' }],
+      relations: [
+        { kind: 'sibling', personId: 'akan_obiri_yeboa', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }] },
+        { kind: 'spouse', personId: 'akan_owusu_panyin', sources: [{ kind: 'secondary', reference: 'Asante royal genealogy' }] },
+        { kind: 'mother-of', personId: 'akan_osei_tutu_i', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }] },
+        { kind: 'mother-of', personId: 'akan_nyaako_kusiaa', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971 — Manu Kotosi, sister of Obiri Yeboa, mother of Osei Tutu I' }], weight: 'secondary' }],
+      notes: 'Oyoko-clan matriarch and the genealogical hinge of the early Asante royal line: sister of the Kwaman chief Obiri Yeboa, and mother of both Osei Tutu I (the founder of Asante) and Nyaako Kusiaa. Akan succession being matrilineal, it is through her that Osei Tutu inherited the Kwaman stool from his maternal uncle Obiri Yeboa, and through her daughter Nyaako Kusiaa that the stool passed to Opoku Ware I. Documented in prose in the existing royal entries; materialized here as the connecting node.',
+    },
+    {
+      id: 'akan_nyaako_kusiaa', schemaVersion: 2,
+      name: { primary: 'Nyaako Kusiaa', alt: ['Nyaako Kusi Amoa', 'First Asantehemaa'], transliterations: { 'twi-akan': 'Nyaako Kusiaa' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: ['akan_manu_kotosi'], parentRoles: { akan_manu_kotosi: 'maternal' },
+      temporal: { era: 'asante-empire-founding' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Daughter of Manu Kotosi and sister of Osei Tutu I; mother of Opoku Ware I. Listed as the first Asantehemaa (Nyaako Kusi Amoa) in some Oyoko regnal lists.' },
+        { vitalStatus: 'dead', era: 'asante-empire-founding', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'asantehemaa-queen-mother' }, { id: 'mother-of-Opoku-Ware-I' }],
+      relations: [
+        { kind: 'mother-of', personId: 'akan_opoku_ware_i', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971 — Nyaako Kusiaa, sister of Osei Tutu I, mother of Opoku Ware I' }], weight: 'secondary' }],
+      notes: 'Sister of Osei Tutu I and mother of Opoku Ware I, the second Asantehene; reckoned the first Asantehemaa (queen-mother) of Asante in the Oyoko regnal tradition. Through her, Opoku Ware succeeded his maternal uncle Osei Tutu per Akan matrilineal succession.',
+    },
+    {
+      id: 'akan_owusu_panyin', schemaVersion: 2,
+      name: { primary: 'Owusu Panyin', alt: ['Owusu Panin', 'Father of Osei Tutu I'], transliterations: { 'twi-akan': 'Owusu Panyin' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'pre-asante' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-asante', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Asante royal genealogy; Wilks 1975' }], notes: 'Akan noble of Nyameani; husband of Manu Kotosi and father of Osei Tutu I.' },
+        { vitalStatus: 'dead', era: 'pre-asante', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'father-of-Osei-Tutu-I' }],
+      relations: [
+        { kind: 'spouse', personId: 'akan_manu_kotosi', sources: [{ kind: 'secondary', reference: 'Asante royal genealogy' }] },
+        { kind: 'father-of', personId: 'akan_osei_tutu_i', sources: [{ kind: 'secondary', reference: 'Asante royal genealogy; Wilks 1975' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Asante royal genealogy; Wilks, Asante in the Nineteenth Century (1975)' }], weight: 'secondary' }],
+      notes: 'Akan noble of Nyameani; husband of Manu Kotosi and father of Osei Tutu I. In Akan matriliny, descent and succession pass through the mother rather than the father, so Owusu Panyin lies outside the royal succession line; recorded for genealogical completeness as the attested father of the Asante founder.',
+    },
+    {
+      id: 'akan_yaa_akyaa', schemaVersion: 2,
+      name: { primary: 'Yaa Akyaa', alt: ['Nana Yaa Akyaa', 'Asantehemaa Yaa Akyaa'], transliterations: { 'twi-akan': 'Nana Yaa Akyaa' } },
+      type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'asante-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 0, sources: [{ kind: 'secondary', reference: 'Wilks, Asante in the Nineteenth Century (1975)' }], notes: 'Asantehemaa (queen-mother of Asante) from the 1880s; mother of Asantehene Prempeh I and a dominant figure of the late-19th-century Kumasi court.' },
+        { vitalStatus: 'dead', era: 'colonial-resistance', eraOrdering: 1, startEvent: 'exile-to-Seychelles-with-Prempeh-I', sources: [{ kind: 'primary', reference: 'British colonial archives' }], notes: 'Deposed and exiled to the Seychelles with her son Prempeh I and the senior royals (1896/1900).' },
+      ],
+      domains: [{ id: 'asantehemaa-queen-mother' }, { id: 'mother-of-Prempeh-I' }],
+      relations: [
+        { kind: 'mother-of', personId: 'akan_prempeh_i', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'secondary', reference: 'Wilks, Asante in the Nineteenth Century (1975); British colonial archives' }], weight: 'primary' }],
+      notes: 'Asantehemaa (queen-mother) of Asante from the 1880s and a dominant force at the late-19th-century Kumasi court; mother of Asantehene Prempeh I, with whom she was deposed and exiled by the British to the Seychelles. Materialized as the attested mother in the Prempeh-I line.',
+    },
     {
       id: 'akan_obiri_yeboa',
       schemaVersion: 2,
@@ -22962,6 +23161,9 @@ const buildPeopleSeed = () => {
         { id: 'kwaman-chief-pre-asante' },
         { id: 'oyoko-clan-line-leadership' },
         { id: 'matrilineal-uncle-of-Osei-Tutu' },
+      ],
+      relations: [
+        { kind: 'sibling', personId: 'akan_manu_kotosi', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971 — Manu Kotosi, sister of Obiri Yeboa and mother of Osei Tutu' }] },
       ],
       iconography: {
         attributes: [
@@ -22996,10 +23198,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['akan_owusu_panyin', 'akan_manu_kotosi'],
+      parentRoles: { akan_owusu_panyin: 'paternal', akan_manu_kotosi: 'maternal' },
       temporal: { era: 'asante-empire-founding' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1660-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and an unnamed father. The matrilineal-uncle Obiri Yeboa was the political-cultural-parent figure transmitting Kwaman chiefly legitimacy. Per Akan succession norms, parentIds are left empty in this registry, with the matrilineal-uncle relation to Obiri Yeboa documented in prose; the biological mother Manu Kotosi is not given a separate entry due to the 10-entry budget for the cluster.' },
+        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1660-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and his father Owusu Panyin. The maternal uncle Obiri Yeboa transmitted Kwaman chiefly legitimacy per Akan matrilineal succession; the mother Manu Kotosi, father Owusu Panyin, and sister Nyaako Kusiaa are now materialized as linked figures.' },
         { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 1, startEvent: 'youth-at-Akwamu-and-Denkyira-courts', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }], notes: 'Spent his youth at the Akwamu court (where he formed the foundational political-personal alliance with Komfo Anokye) and at the Denkyira court (as a hostage-resident under Denkyirahene Boamponsem). The hostage-residence provided strategic intelligence on Denkyira military and administrative practice that subsequently informed Asante state-formation.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-empire-founding', eraOrdering: 2, startEvent: 'accession-as-Kwaman-chief-c-1680', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Acceded to the Kwaman chiefly stool c. 1680 CE after Obiri Yeboa\'s death in the Domaa war. With Komfo Anokye, transformed Kwaman into Kumasi (the new imperial capital) and consolidated the Oyoko clan-line\'s authority over the surrounding Akan polities.' },
         { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 3, startEvent: 'foundational-council-and-Sika-Dwa-Kofi-conjuration-1701', sources: [{ kind: 'primary', reference: 'Asante oral tradition; Bowdich 1819; Rattray 1929 Ashanti Law and Constitution' }], notes: 'In 1701 CE, at the foundational council of Kumasi, Komfo Anokye conjured the Sika Dwa Kofi (Golden Stool) down from heaven — the gold-leafed wooden stool containing the soul of the Asante nation. The Sika Dwa Kofi event constitutionally established the Asante Empire and its sovereignty: the stool was never to touch the ground, the Asantehene himself never sat on it (only proximately), and its capture by enemies would mean the destruction of the Asante nation.' },
@@ -23038,7 +23241,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Asante oral tradition; Rattray, Ashanti Law and Constitution (1929)' },
         ], weight: 'primary' },
       ],
-      notes: 'Founder of the Asante Empire (Asanteman); first Asantehene; the central figure of Akan imperial history. Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and an unnamed father; inherited the Kwaman chiefly stool from his maternal uncle Obiri Yeboa per Akan matrilineal succession norms. The 1701 foundational council of Kumasi — at which Komfo Anokye conjured the Sika Dwa Kofi (Golden Stool) down from heaven, containing the soul of the Asante nation — constitutionally established the Asante Empire and its sovereignty. The same year, Osei Tutu defeated the Denkyira Empire at the battle of Feyiase, ending Asante tributary submission and inaugurating the imperial expansion. The Sika Dwa Kofi remains the sacred constitutional anchor of the Asante nation: it was never to touch the ground; the Asantehene himself never sat on it (only proximately); its capture by enemies would mean the destruction of the Asante nation. (The 1900 War of the Golden Stool under Yaa Asantewaa was triggered by British attempts to seize and sit on the Sika Dwa Kofi.) Killed in war with the Akyem polity in 1717 CE; the Asante state-mourning produced the conventional Akan funerary rituals subsequently elaborated as the imperial-Asante death-ritual canon.',
+      notes: 'Founder of the Asante Empire (Asanteman); first Asantehene; the central figure of Akan imperial history. Born c. 1660 CE in Kwaman to Manu Kotosi (sister of Obiri Yeboa) and his father Owusu Panyin; inherited the Kwaman chiefly stool from his maternal uncle Obiri Yeboa per Akan matrilineal succession norms. The 1701 foundational council of Kumasi — at which Komfo Anokye conjured the Sika Dwa Kofi (Golden Stool) down from heaven, containing the soul of the Asante nation — constitutionally established the Asante Empire and its sovereignty. The same year, Osei Tutu defeated the Denkyira Empire at the battle of Feyiase, ending Asante tributary submission and inaugurating the imperial expansion. The Sika Dwa Kofi remains the sacred constitutional anchor of the Asante nation: it was never to touch the ground; the Asantehene himself never sat on it (only proximately); its capture by enemies would mean the destruction of the Asante nation. (The 1900 War of the Golden Stool under Yaa Asantewaa was triggered by British attempts to seize and sit on the Sika Dwa Kofi.) Killed in war with the Akyem polity in 1717 CE; the Asante state-mourning produced the conventional Akan funerary rituals subsequently elaborated as the imperial-Asante death-ritual canon.',
     },
 
     {
@@ -23108,10 +23311,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['akan_nyaako_kusiaa'],
+      parentRoles: { akan_nyaako_kusiaa: 'maternal' },
       temporal: { era: 'asante-imperial' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1700-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father. Per Akan matrilineal succession, his political-cultural-parent was Osei Tutu I (the maternal uncle), not his biological father. parentIds left empty per registry conventions for matrilineal-succession figures.' },
+        { typeStatus: 'mortal', era: 'asante-empire-founding', eraOrdering: 0, startEvent: 'birth-c-1700-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father. Per Akan matrilineal succession, his political-cultural-parent was Osei Tutu I (the maternal uncle), not his biological father. His mother Nyaako Kusiaa is now materialized as a linked figure.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-imperial', eraOrdering: 0, startEvent: 'accession-as-second-Asantehene-1720', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }], notes: 'Acceded as second Asantehene in 1720 CE after the three-year regency-and-civil-war period following Osei Tutu I\'s death.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-imperial', eraOrdering: 1, startEvent: 'imperial-expansion-conquests-1720s-1750', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Fynn 1971' }], notes: 'Conducted the great imperial expansion of the Asante Empire 1720s-1750: defeated Akyem (1742, avenging Osei Tutu\'s death), Akwamu, Akwapim, Aowin, Wassa, Sefwi, Tekyiman, and Bono — establishing Asante territorial dominance over most of modern southern Ghana and parts of Côte d\'Ivoire. Earned the praise-name Katakyie ("the Brave").' },
         { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 2, startEvent: 'institutional-elaboration', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Rattray 1929' }], notes: 'Institutionally elaborated the Asante imperial structure: established the formal kingdom-tributary-vassal hierarchy, the imperial-state goldweighting and goldweight-currency standards (using the foundational mrammuo brass weights), and the elaborated military-state organization centered on the imperial Mponponsuo regiment.' },
@@ -23134,7 +23338,7 @@ const buildPeopleSeed = () => {
           { kind: 'secondary', reference: 'Fynn, Asante and Its Neighbours (1971)' },
         ], weight: 'primary' },
       ],
-      notes: 'Second Asantehene; nephew (sister-son) and matrilineal-uncle-successor of Osei Tutu I. Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father; acceded in 1720 CE after the three-year regency-and-civil-war period following Osei Tutu I\'s death. Conducted the great imperial expansion of the Asante Empire (1720s-1750), defeating Akyem (1742, avenging Osei Tutu\'s death), Akwamu, Akwapim, Aowin, Wassa, Sefwi, Tekyiman, and Bono — establishing Asante territorial dominance over most of modern southern Ghana and parts of Côte d\'Ivoire. Earned the praise-name Katakyie ("the Brave"). Institutionally elaborated the Asante imperial structure: established the formal kingdom-tributary-vassal hierarchy, the imperial-state goldweighting and goldweight-currency standards, and the elaborated military-state organization centered on the imperial Mponponsuo regiment. parentIds left empty per registry conventions for Akan matrilineal-succession figures; the maternal-uncle relation to Osei Tutu I is documented in prose. Died 1750 CE.',
+      notes: 'Second Asantehene; nephew (sister-son) and matrilineal-uncle-successor of Osei Tutu I. Born c. 1700 CE to Nyaako Kusiaa (sister of Osei Tutu I) and an unnamed father; acceded in 1720 CE after the three-year regency-and-civil-war period following Osei Tutu I\'s death. Conducted the great imperial expansion of the Asante Empire (1720s-1750), defeating Akyem (1742, avenging Osei Tutu\'s death), Akwamu, Akwapim, Aowin, Wassa, Sefwi, Tekyiman, and Bono — establishing Asante territorial dominance over most of modern southern Ghana and parts of Côte d\'Ivoire. Earned the praise-name Katakyie ("the Brave"). Institutionally elaborated the Asante imperial structure: established the formal kingdom-tributary-vassal hierarchy, the imperial-state goldweighting and goldweight-currency standards, and the elaborated military-state organization centered on the imperial Mponponsuo regiment. His mother Nyaako Kusiaa (sister of Osei Tutu I) is now materialized as a linked figure; the maternal-uncle relation to Osei Tutu I follows from their shared matriline through Manu Kotosi. Died 1750 CE.',
     },
 
     {
@@ -23201,10 +23405,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Akan', primaryTradition: 'Akan', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['akan_yaa_akyaa'],
+      parentRoles: { akan_yaa_akyaa: 'maternal' },
       temporal: { era: 'colonial-resistance' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 0, startEvent: 'birth-1872-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Manhyia palace records' }], notes: 'Born December 18, 1872 CE; member of the royal Oyoko clan-line. parentIds left empty per registry conventions for matrilineal-succession figures.' },
+        { typeStatus: 'mortal', era: 'asante-imperial', eraOrdering: 0, startEvent: 'birth-1872-ce', sources: [{ kind: 'secondary', reference: 'Wilks 1975; Manhyia palace records' }], notes: 'Born December 18, 1872 CE; member of the royal Oyoko clan-line. His mother, the Asantehemaa Yaa Akyaa, is now materialized as a linked figure.' },
         { typeStatus: 'mortal', vitalStatus: 'asantehene-reigning', era: 'asante-imperial', eraOrdering: 1, startEvent: 'accession-as-Asantehene-1888', sources: [{ kind: 'secondary', reference: 'Wilks 1975' }], notes: 'Acceded as 13th Asantehene in 1888 CE at age 16, after the 1884-1888 succession-civil-war period.' },
         { typeStatus: 'mortal', vitalStatus: 'exiled-prisoner', era: 'colonial-resistance', eraOrdering: 0, startEvent: 'British-deposition-and-exile-1896', sources: [{ kind: 'primary', reference: 'British colonial archives' }, { kind: 'secondary', reference: 'Wilks 1975' }], notes: 'In 1896, British forces under Sir Francis Scott invaded Kumasi and demanded that the Asantehene submit to British protectorate-status; Prempeh I refused. Was deposed, captured, and exiled with his mother Yaa Akyaa, his father, and senior royals first to Elmina Castle, then to Sierra Leone, and finally to Seychelles in 1900. The exile produced the political-cultural rupture that contributed to Yaa Asantewaa\'s 1900 War of the Golden Stool.' },
         { typeStatus: 'mortal', vitalStatus: 'returned-from-exile', era: 'colonial-resistance', eraOrdering: 1, startEvent: 'return-from-Seychelles-exile-1924', sources: [{ kind: 'primary', reference: 'British colonial archives' }], notes: 'Returned to Kumasi in 1924 CE after 28 years of exile; recognized by the British colonial administration as Kumasihene (chief of Kumasi only, not full Asantehene) due to the British policy of suppressing the Asante imperial-state structure.' },
@@ -24441,6 +24646,10 @@ const buildPeopleSeed = () => {
         { id: 'law-instituting-ancestor' },
         { id: 'shaper-of-southeastern-Country' },
       ],
+      relations: [
+        { kind: 'spouse', personId: 'aboriginal_birrahgnooloo', sources: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905)' }] },
+        { kind: 'father-of', personId: 'aboriginal_daramulun', sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904)' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'baiame-cave-rock-painting-Milbrodale-NSW', sources: [{ kind: 'archaeological', reference: 'Baiame Cave at Milbrodale (Hunter Valley, NSW) — large-scale ochre-painted figure with extended-outstretched arms; canonical Wonnarua-Kamilaroi cult-iconographic anchor' }] },
@@ -24494,6 +24703,9 @@ const buildPeopleSeed = () => {
         { id: 'institutor-of-moiety-division-with-Waa-the-Crow' },
         { id: 'wedge-tailed-eagle-form' },
       ],
+      relations: [
+        { kind: 'father-of', personId: 'aboriginal_binbeal', sources: [{ kind: 'primary', reference: 'Howitt 1904; R. B. Smyth, The Aborigines of Victoria (1878)' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'wedge-tailed-eagle-form', sources: [{ kind: 'primary', reference: 'Kulin nation tradition' }] },
@@ -24526,6 +24738,43 @@ const buildPeopleSeed = () => {
       notes: 'Eaglehawk creator deity of the Kulin nation (confederation of five language groups in central Victoria). Per canonical-Kulin narrative, created the people, the landscape, the law, and (with his brother Waa the Crow) instituted the foundational moiety division structuring Kulin kinship — the canonical Australian-Aboriginal eaglehawk-and-crow moiety pattern that recurs across multiple language-group Dreaming-traditions. Ascended to the sky after completing his creator-work, where he continues to oversee Country in the form of the wedge-tailed eagle (Aquila audax). The Bunjil\'s Shelter rock-art panel at Black Range State Park (Victoria) — small ochre-painted Bunjil figure flanked by two dingoes — is one of the most-iconic Victorian Aboriginal rock-art sites and the canonical iconographic anchor of the Bunjil-cult. Continues as central cultural-religious framework for contemporary Wurundjeri, Boon Wurrung, and other Kulin-nation communities, with public-art commissions across Melbourne and Victoria (notably the Bunjil sculpture at Docklands by Bruce Armstrong, 2002) preserving the figure in contemporary Australian visual-culture.',
     },
 
+    // ── Genealogy march, Wave G2: families of Baiame and Bunjil ──
+    {
+      id: 'aboriginal_birrahgnooloo', schemaVersion: 2,
+      name: { primary: 'Birrahgnooloo', alt: ['Birra-nulu', 'Birrahgnooloo the All-Mother'], transliterations: { 'kamilaroi-euahlayi': 'Birrahgnooloo' } },
+      type: 'deity', tradition: 'Kamilaroi', primaryTradition: 'Kamilaroi', sex: 'female', vitalStatus: 'living',
+      origin: 'canon', parentIds: [], temporal: { era: 'dreaming-creator-era' },
+      lifecycle: [{ typeStatus: 'deity', era: 'dreaming-creator-era', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905)' }] }],
+      domains: [{ id: 'all-mother-rain-and-flood' }, { id: 'senior-wife-of-Baiame' }],
+      relations: [
+        { kind: 'spouse', personId: 'aboriginal_baiame', sources: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905)' }] },
+        { kind: 'mother-of', personId: 'aboriginal_daramulun', sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); Parker (1905)' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'K. Langloh Parker, The Euahlayi Tribe (1905) — Birrahgnooloo, senior wife of Baiame, the flood-and-rain All-Mother' }], weight: 'primary' }],
+      notes: 'Birrahgnooloo, the All-Mother associated with rain and floodwater; senior wife of the sky-father Baiame in the Euahlayi (Kamilaroi-related) tradition recorded by K. Langloh Parker. Reckoned mother of Daramulun in the southeastern All-Father complex.',
+    },
+    {
+      id: 'aboriginal_daramulun', schemaVersion: 2,
+      name: { primary: 'Daramulun', alt: ['Dhurramulan', 'Dhuramoolan', 'Daramulun the Bullroarer-Voice'], transliterations: { 'wiradjuri': 'Daramulun' } },
+      type: 'deity', tradition: 'Kamilaroi', primaryTradition: 'Kamilaroi', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: ['aboriginal_baiame', 'aboriginal_birrahgnooloo'], parentRoles: { aboriginal_baiame: 'paternal', aboriginal_birrahgnooloo: 'maternal' },
+      temporal: { era: 'dreaming-creator-era' },
+      lifecycle: [{ typeStatus: 'deity', era: 'dreaming-creator-era', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); R. H. Mathews, ethnographic papers' }] }],
+      domains: [{ id: 'initiation-Bora-deity' }, { id: 'bullroarer-voice-and-thunder' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); R. H. Mathews on the Bora initiation' }], weight: 'primary' }],
+      notes: 'Daramulun, the initiation deity of the southeastern Australian Bora ceremony, whose voice is heard in the bullroarer and the thunder; reckoned a son of Baiame in the Wiradjuri/Kamilaroi All-Father complex synthesized by Howitt. Regional variation is significant: among the Yuin, Daramulun is himself the supreme being and son of a great mother rather than of Baiame — recorded here under the Baiame-father tradition.',
+    },
+    {
+      id: 'aboriginal_binbeal', schemaVersion: 2,
+      name: { primary: 'Binbeal', alt: ['Binbeal the Rainbow', 'Son of Bunjil'], transliterations: { 'woiwurrung': 'Binbeal' } },
+      type: 'deity', tradition: 'Kulin', primaryTradition: 'Kulin', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: ['aboriginal_bunjil'], parentRoles: { aboriginal_bunjil: 'paternal' },
+      temporal: { era: 'dreaming-creator-era' },
+      lifecycle: [{ typeStatus: 'deity', era: 'dreaming-creator-era', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Howitt, Native Tribes of South-East Australia (1904); R. B. Smyth, The Aborigines of Victoria (1878)' }] }],
+      domains: [{ id: 'rainbow' }, { id: 'son-of-Bunjil' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Howitt 1904; R. B. Smyth, The Aborigines of Victoria (1878) — Binbeal the rainbow, son of Bunjil' }], weight: 'primary' }],
+      notes: 'Binbeal, the rainbow, son of the Kulin creator Bunjil; his wife is the fainter secondary bow. Recorded by Smyth (1878) and Howitt (1904) in the Kulin Bunjil tradition.',
+    },
     {
       id: 'aboriginal_wagyl',
       schemaVersion: 2,
@@ -27036,6 +27285,136 @@ const buildPeopleSeed = () => {
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Song of Kumarbi / Kingship in Heaven (CTH 344)' }, { kind: 'secondary', reference: 'Hoffner, Hittite Myths (1998)' }], weight: 'primary' },
         { claim: 'deposition by Anu', citations: [{ kind: 'primary', reference: 'CTH 344 i 5-24' }], weight: 'primary' },
       ],
+    },
+    // ════════════════════════════════════════════════════════════════════════
+    //  GENEALOGY MARCH — kin figures appended in id-wave order. Identity records
+    //  only; descent/spousal links are applied through the ENRICHMENTS map (which
+    //  fills empty parentIds, dedupes relations, and auto-mirrors symmetric kinds),
+    //  so these also link the generated NEW_FIGURES figures (e.g. Beowulf, Wayland).
+    // ════════════════════════════════════════════════════════════════════════
+    // ── Wave G3 (anglosaxon_*): the Geatish royal line of Beowulf and the
+    //    family of Wayland the Smith, per the Old English heroic poems. ──
+    {
+      id: 'anglosaxon_hrethel', schemaVersion: 2,
+      name: { primary: 'Hrethel', alt: ['Hrēðel', 'Hredel', 'King of the Geats'], transliterations: { 'old-english': 'Hrēðel' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf (OE epic), ll. 2425-2471; Klaeber\'s Beowulf 4th ed.' }] }],
+      domains: [{ id: 'king-of-the-Geats' }, { id: 'grandfather-of-Beowulf' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 373-375, 2425-2471 — Hrethel, king of the Geats, father of Hygelac and grandfather of Beowulf' }], weight: 'primary' }],
+      notes: 'King of the Geats; father of Herebeald, Hæthcyn, and Hygelac and of the daughter who married Ecgtheow and bore Beowulf. Foster-reared the young Beowulf at his court. His grief at the accidental killing of his eldest son Herebeald by Hæthcyn is one of the poem\'s great elegiac passages.',
+    },
+    {
+      id: 'anglosaxon_herebeald', schemaVersion: 2,
+      name: { primary: 'Herebeald', alt: ['Eldest son of Hrethel'], transliterations: { 'old-english': 'Herebeald' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2435-2443' }] }],
+      domains: [{ id: 'eldest-son-of-Hrethel' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 2435-2443 — accidentally killed by his brother Hæthcyn\'s arrow' }], weight: 'primary' }],
+      notes: 'Eldest son of King Hrethel of the Geats, killed accidentally by his brother Hæthcyn with a misaimed arrow — a death the poem likens to a hanged man\'s for which no vengeance can be taken, the source of Hrethel\'s fatal grief.',
+    },
+    {
+      id: 'anglosaxon_haethcyn', schemaVersion: 2,
+      name: { primary: 'Haethcyn', alt: ['Hæþcyn', 'Haethcen'], transliterations: { 'old-english': 'Hæðcyn' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2435-2483' }] }],
+      domains: [{ id: 'son-of-Hrethel' }, { id: 'king-of-the-Geats' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 2435-2483 — killed Herebeald by accident; later king of the Geats, fell at Ravenswood' }], weight: 'primary' }],
+      notes: 'Second son of Hrethel; accidentally killed his elder brother Herebeald. Succeeded as king of the Geats and fell in the war with the Swedes at Ravenswood (Hrefnesholt), slain by Ongentheow.',
+    },
+    {
+      id: 'anglosaxon_hygelac', schemaVersion: 2,
+      name: { primary: 'Hygelac', alt: ['Hygelāc', 'Hugleikr', 'Chlochilaicus', 'King of the Geats'], transliterations: { 'old-english': 'Hygelāc' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf; Gregory of Tours, Historia Francorum III.3 (the raid of "Chlochilaicus")' }] }],
+      domains: [{ id: 'king-of-the-Geats' }, { id: 'uncle-and-lord-of-Beowulf' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 1202-1214, 2354-2379; Gregory of Tours III.3 — the only externally-datable Beowulf figure, his Frankish raid c. 521 CE' }], weight: 'primary' }],
+      notes: 'Youngest son of Hrethel; king of the Geats and lord and maternal uncle of Beowulf. The one Beowulf-figure with external historical anchoring: his fatal raid on the Frankish/Frisian coast is the "Chlochilaicus" raid recorded by Gregory of Tours (c. 521 CE). After his death Beowulf eventually took the Geatish throne.',
+    },
+    {
+      id: 'anglosaxon_heardred', schemaVersion: 2,
+      name: { primary: 'Heardred', alt: ['Son of Hygelac'], transliterations: { 'old-english': 'Heardred' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2202-2390' }] }],
+      domains: [{ id: 'king-of-the-Geats' }, { id: 'son-of-Hygelac' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 2202-2390 — young king of the Geats under Beowulf\'s guardianship, killed by the Swede Onela' }], weight: 'primary' }],
+      notes: 'Son of Hygelac and the queen Hygd; king of the Geats with Beowulf as his guardian and regent. Killed by the Swedish king Onela for having sheltered Onela\'s nephews Eanmund and Eadgils; Beowulf then took the throne.',
+    },
+    {
+      id: 'anglosaxon_hrethels_daughter', schemaVersion: 2,
+      name: { primary: 'Daughter of Hrethel', alt: ['unnamed-by-tradition', 'mother of Beowulf', 'wife of Ecgtheow'], transliterations: { etymology: 'unnamed in Beowulf; identified only as the daughter of Hrethel given to Ecgtheow and as the mother of Beowulf (ll. 373-375).' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 373-375' }] }],
+      domains: [{ id: 'daughter-of-Hrethel' }, { id: 'mother-of-Beowulf' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 373-375 — the only daughter of Hrethel, given to Ecgtheow, mother of Beowulf' }], weight: 'primary' }],
+      notes: 'The unnamed daughter of King Hrethel, given in marriage to the Waegmunding warrior Ecgtheow; mother of Beowulf. Named here only descriptively (the tradition does not record her name); materialized as the maternal link joining Beowulf to the Geatish royal house.',
+    },
+    {
+      id: 'anglosaxon_ecgtheow', schemaVersion: 2,
+      name: { primary: 'Ecgtheow', alt: ['Ecgþēow', 'Ecgtheow the Waegmunding', 'Father of Beowulf'], transliterations: { 'old-english': 'Ecgþēow' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 262-266, 372-376, 459-472' }] }],
+      domains: [{ id: 'Waegmunding-warrior' }, { id: 'father-of-Beowulf' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 262-266, 459-472 — Ecgtheow of the Waegmundings, father of Beowulf, sheltered by Hrothgar after slaying Heatholaf' }], weight: 'primary' }],
+      notes: 'Waegmunding warrior; father of Beowulf by the daughter of Hrethel. Having slain Heatholaf of the Wylfings, he was sheltered by the Danish king Hrothgar, who settled the feud with wergild — the old bond of gratitude Beowulf invokes when he comes to rid Heorot of Grendel.',
+    },
+    {
+      id: 'anglosaxon_wiglaf', schemaVersion: 2,
+      name: { primary: 'Wiglaf', alt: ['Wīglāf', 'Son of Weohstan', 'Wiglaf the Waegmunding'], transliterations: { 'old-english': 'Wīglāf' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2602-2891, 3076-3182' }] }],
+      domains: [{ id: 'Waegmunding-kinsman-of-Beowulf' }, { id: 'last-loyal-retainer-and-heir' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Beowulf, ll. 2602-2891 — Wiglaf son of Weohstan, the Waegmunding kinsman who alone stood by Beowulf against the dragon' }], weight: 'primary' }],
+      notes: 'Son of Weohstan; a Waegmunding and thus kinsman of Beowulf (whose father Ecgtheow was also a Waegmunding). The one retainer who did not flee the dragon but fought at Beowulf\'s side, received his dying words, and became his heir and the bearer of the Geats\' bleak future.',
+    },
+    {
+      id: 'anglosaxon_wade', schemaVersion: 2,
+      name: { primary: 'Wade', alt: ['Wada', 'Vaði', 'Father of Wayland'], transliterations: { 'old-english': 'Wada' } },
+      type: 'quartigod', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'living',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'quartigod', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Þiðreks saga; allusions in Chaucer (Troilus II.614, "Wades boot"); Widsith milieu' }] }],
+      // Tier note: classified quartigod (¼) so the genealogical arithmetic yields his
+      // son Wayland's authored scion-tier (⅛); the "sea-giant" is a descriptive epithet.
+      domains: [{ id: 'sea-giant' }, { id: 'father-of-Wayland-the-Smith' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Þiðreks saga af Bern (Velents þáttr) — Vaði the giant, father of the smith Velent (Wayland); Old English Wada of the Widsith/Chaucer tradition' }], weight: 'primary' }],
+      notes: 'The sea-giant Wade (Old Norse Vaði), father of Wayland the Smith. Famous in a lost Germanic legend (Chaucer twice alludes to "Wade\'s boat"); in Þiðreks saga he carries his son Velent on his shoulders through the sea to apprentice him to the smiths.',
+    },
+    {
+      id: 'anglosaxon_nithhad', schemaVersion: 2,
+      name: { primary: 'Nithhad', alt: ['Níðuðr', 'Niðhad', 'Nidung', 'King Nithhad'], transliterations: { 'old-english': 'Nīðhād' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Deor (OE); Völundarkviða (Poetic Edda); Þiðreks saga' }] }],
+      domains: [{ id: 'king-captor-of-Wayland' }, { id: 'father-of-Beadohild' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Völundarkviða; Deor ll. 1-13 — Níðuðr/Nithhad, the king who hamstrung and enslaved Wayland' }], weight: 'primary' }],
+      notes: 'The king (Old Norse Níðuðr) who captured the smith Wayland, hamstrung him, and set him to forge on an island. Father of Beadohild and of two sons whom Wayland killed in revenge, fashioning cups from their skulls; Wayland then begot Widia on Beadohild and escaped by flight.',
+    },
+    {
+      id: 'anglosaxon_beadohild', schemaVersion: 2,
+      name: { primary: 'Beadohild', alt: ['Bēaduhild', 'Böðvildr', 'Daughter of Nithhad'], transliterations: { 'old-english': 'Bēaduhild' } },
+      type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'mortal', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Deor ll. 8-13; Völundarkviða' }] }],
+      domains: [{ id: 'daughter-of-Nithhad' }, { id: 'mother-of-Widia' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Deor ll. 8-13; Völundarkviða st. 35-41 — Beadohild, daughter of Nithhad, bore Widia to Wayland' }], weight: 'primary' }],
+      notes: 'Daughter of King Nithhad. Wayland, taking revenge on her father, ravished her; she bore the hero Widia. The Old English Deor names her sorrow at her pregnancy as one of the griefs that, like all others, passed away.',
+    },
+    {
+      id: 'anglosaxon_widia', schemaVersion: 2,
+      name: { primary: 'Widia', alt: ['Wudga', 'Viðga', 'Witige', 'Son of Wayland'], transliterations: { 'old-english': 'Widia / Wudga' } },
+      type: 'scion', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
+      lifecycle: [{ typeStatus: 'scion', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Waldere; Widsith ll. 124-130; Þiðreks saga' }] }],
+      domains: [{ id: 'son-of-Wayland-and-Beadohild' }, { id: 'hero-and-warrior' }],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Widsith ll. 124-130; Waldere; Þiðreks saga — Widia/Wudga, son of Wayland, a famed warrior (Viðga of the Dietrich cycle)' }], weight: 'primary' }],
+      notes: 'Son of Wayland the Smith and Beadohild; a celebrated warrior of Germanic legend (the Viðga/Witige of the later Dietrich von Bern cycle). Named in Widsith and Waldere among the great heroes; his descent from the divine smith gave him his renown and his sword Mimming.',
     },
   ];
 
@@ -30428,6 +30807,399 @@ const ITEM_ALIASES = {
   'ada-benin': 'eweka-ada',
 };
 
+// ─── Item provenance backfill (maker / custody / location) ──────────────────
+// Fill-only companion to ITEM_LORE for the "who forged/made it" provenance gap
+// (maker was ~5% filled across the 1,241-item registry). Keyed by canonical item
+// id; merged in buildItemRegistry AFTER ITEM_LORE so it never overrides richer
+// lore, and only annotates items that already exist (are held by some figure).
+// Author only where a maker is genuinely attested — many items (natural objects,
+// un-forged regalia) have no named maker and are deliberately left blank. Grown
+// in waves by tradition.
+const ITEM_PROVENANCE = {
+  // ── Wave I3: Greek heroic divine-gifts — the canonical arming passages
+  // (Apollodorus 2.4.2 for Perseus, 2.4.11 for Heracles), the Iliad sceptre-
+  // genealogy, and the Hermes/Apollo lyre-and-staff tradition. Fill-only;
+  // custody chains added where the source tracks the object's descent. The
+  // earlier waves left some of these blank as "no maker-myth" — but the sceptre
+  // (Il. 2.101) and Hera's throne (Paus. 1.20.3) do have attested makers.
+  'perseus-harpe': {
+    maker: { name: 'Hermes', role: 'given by', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (Hermes gives Perseus an adamantine harpē/sickle for the beheading)' }] },
+  },
+  'perseus-talaria': {
+    maker: { name: 'the Stygian Nymphs', role: 'furnished by', kind: 'nymphs', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (the nymphs furnish the winged sandals, the kibisis, and the cap of Hades)' }] },
+  },
+  'perseus-kibisis': {
+    maker: { name: 'the Stygian Nymphs', role: 'furnished by', kind: 'nymphs', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2 (the kibisis — the special wallet for Medusa’s head — furnished by the nymphs)' }] },
+  },
+  'perseus-kynee': {
+    maker: { name: 'the Cyclopes', role: 'forged by', kind: 'smith-giants', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forge the Cap of Hades / kynéē); furnished to Perseus by the nymphs, Apollod. 2.4.2' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the Cyclopes (for Hades, when the gods armed against the Titans)', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 1.2.1' }] },
+      { role: 'furnished to Perseus by', externalRef: { name: 'the Stygian Nymphs', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2' }] },
+    ],
+  },
+  'perseus-shield-mirror': {
+    maker: { name: 'Athena', role: 'given by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.2–3 (Athena guides Perseus’s hand and provides the bright bronze shield he sights Medusa in, to avoid her petrifying gaze)' }] },
+  },
+  'heracles-sword': {
+    maker: { name: 'Hermes', role: 'given by', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Hermes a sword)' }] },
+  },
+  'heracles-bow': {
+    maker: { name: 'Apollo', role: 'given by', personId: 'greek_hesiod_apollo', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Apollo a bow and arrows)' }] },
+  },
+  'heracles-quiver': {
+    maker: { name: 'Apollo', role: 'given by', personId: 'greek_hesiod_apollo', kind: 'god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (Apollo’s gift of bow and arrows — the quiver holds the arrows Heracles later poisons with Hydra venom)' }] },
+  },
+  'heracles-club': {
+    maker: { name: 'Heracles himself (cut from a wild olive)', role: 'cut by', personId: 'greek_apollod_heracles', kind: 'hero', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (Heracles cuts himself a club at Nemea); Theocritus 25.207–211 (the wild-olive club, torn up root and all)' }] },
+  },
+  'zeus-sceptre': {
+    maker: { name: 'Hephaestus', role: 'made by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Homer, Iliad 2.101–108 (the sceptre Hephaestus wrought for Zeus, passed Zeus→Hermes→Pelops→Atreus→Thyestes→Agamemnon)' }] },
+    custody: [
+      { role: 'made by', externalRef: { name: 'Hephaestus', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Iliad 2.101' }] },
+      { role: 'given to', externalRef: { name: 'Zeus, who gave it to Hermes the messenger', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Iliad 2.102–104' }] },
+      { role: 'descended through', externalRef: { name: 'Pelops → Atreus → Thyestes → Agamemnon', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Iliad 2.104–108' }] },
+    ],
+  },
+  caduceus: {
+    maker: { name: 'Apollo (bestowed the golden wand on Hermes)', role: 'given by', personId: 'greek_hesiod_apollo', kind: 'god', sources: [{ kind: 'primary', reference: 'Homeric Hymn to Hermes 528–532 (Apollo gives Hermes the golden, three-leaved rhabdos — the kērykeion/caduceus — in the exchange that follows the theft of the cattle and the gift of the lyre)' }] },
+  },
+  'lyre-of-orpheus': {
+    maker: { name: 'Hermes (who invented the lyre)', role: 'invented by', kind: 'god', sources: [{ kind: 'primary', reference: 'Homeric Hymn to Hermes 24–61 (the infant Hermes hollows a tortoise-shell and strings the first lyre); Apollodorus 1.3.2 (Orpheus’s lyre-craft, taught by the Muses)' }] },
+  },
+  'hera-golden-throne': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Pausanias 1.20.3 (the throne with hidden bonds Hephaestus made for Hera, who cast him from Olympus)' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'Hephaestus (a golden throne with invisible fetters, to avenge his casting-down)', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Pausanias 1.20.3' }] },
+      { role: 'sprung on', externalRef: { name: 'Hera (bound fast when she sat; freed only when Dionysus brought Hephaestus back to Olympus, drunk)', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'secondary', reference: 'the archaic Return-of-Hephaestus tradition (depicted on the François Vase, c. 570 BCE)' }] },
+    ],
+  },
+  'hera-golden-apples': {
+    maker: { name: 'Gaia (Earth)', role: 'given by', personId: 'greek_hesiod_gaia', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.5.11 (Earth’s gift of the golden apples to Hera at her wedding to Zeus, kept by the Hesperides)' }] },
+    custody: [
+      { role: 'kept in', externalRef: { name: 'the garden of the Hesperides, guarded by the hundred-headed dragon Ladon', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.11; Hesiod, Theogony 215–216, 333–335' }] },
+      { role: 'fetched and restored', externalRef: { name: 'taken by Heracles for his eleventh labour, then carried back to the Hesperides by Athena', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.11' }] },
+    ],
+  },
+  'odysseus-bow': {
+    custody: [
+      { role: 'owned by', externalRef: { name: 'Eurytus of Oechalia', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 21.13–33' }] },
+      { role: 'passed to', externalRef: { name: 'Iphitus (Eurytus’s son), who gave it to Odysseus as a guest-gift at Messene', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Odyssey 21.31–41' }] },
+      { role: 'strung by', externalRef: { name: 'Odysseus, to win Penelope’s contest and open the slaying of the suitors', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Odyssey 21.404–423' }] },
+    ],
+  },
+  'theseus-sword': {
+    custody: [
+      { role: 'left as a token by', externalRef: { name: 'Aegeus (hidden with sandals under a great rock at Troezen for his unborn son to lift)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+      { role: 'recovered by', externalRef: { name: 'Theseus (the tokens later prove his paternity to Aegeus at Athens)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6, 12' }] },
+    ],
+  },
+  'theseus-sandals': {
+    custody: [
+      { role: 'left as a token by', externalRef: { name: 'Aegeus (with the sword, beneath the rock at Troezen)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+      { role: 'recovered by', externalRef: { name: 'Theseus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6' }] },
+    ],
+  },
+  'aegeus-sandals': {
+    custody: [
+      { role: 'left as a recognition-token by', externalRef: { name: 'Aegeus (hidden with his sword under the rock at Troezen for Theseus)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+    ],
+  },
+
+  // ── Wave I6: custody/descent for famous items. To avoid duplicate keys, the
+  // Palladium / Helm-of-Hades / golden-apples custody is merged into each item's
+  // existing maker entry (below / above). The Golden Bough is the only new key.
+  'aeneas-golden-bough': {
+    custody: [
+      { role: 'sacred to', externalRef: { name: 'Proserpina — the bough that must be plucked to enter the underworld alive', tradition: 'Roman' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 6.136–148' }] },
+      { role: 'plucked by', externalRef: { name: 'Aeneas, led by Venus’s twin doves and the Sibyl, to win passage past Charon to Dis', tradition: 'Roman' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 6.190–211, 403–410' }] },
+    ],
+  },
+
+  // ── Wave I5: legendary smiths + famous item-provenance (custody where no
+  // smith is named — the Celtic Four Treasures come "from the four cities," the
+  // Golden Fleece from a living ram, Freyr's sword passes to Skírnir). Fill-only.
+  'mimming-sword': {
+    maker: { name: 'Völundr (Wayland the Smith)', role: 'forged by', kind: 'master-smith', sources: [{ kind: 'primary', reference: 'Þiðreks saga af Bern (Velent/Wayland forges the sword Mimung, proving it by splitting an anvil and shearing wool floated against its edge in the river)' }] },
+  },
+  'karelian_sampo': {
+    maker: { name: 'Ilmarinen', role: 'forged by', kind: 'smith-hero', sources: [{ kind: 'primary', reference: 'Kalevala, runo 10 (the eternal smith Ilmarinen hammers out the Sampo with its many-coloured lid at Pohjola)' }] },
+  },
+  'spear-of-lugh': {
+    custody: [
+      { role: 'brought from', externalRef: { name: 'the city of Gorias — one of the Four Treasures of the Tuatha Dé Danann', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §1–8; Lebor Gabála Érenn (the treasures from Falias, Gorias, Findias, and Murias)' }] },
+      { role: 'borne by', externalRef: { name: 'Lugh — the victory-spear, so deadly it was kept resting in a cauldron of water', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired' }] },
+    ],
+  },
+  'nuada-sword': {
+    custody: [
+      { role: 'brought from', externalRef: { name: 'the city of Findias — one of the Four Treasures of the Tuatha Dé Danann', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §1–8; Lebor Gabála Érenn' }] },
+      { role: 'borne by', externalRef: { name: 'Nuada — the sword of light from whose stroke none escaped once it was drawn', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired' }] },
+    ],
+  },
+  'golden-fleece': {
+    custody: [
+      { role: 'borne by', externalRef: { name: 'the golden ram (sent by Nephele/Hermes) that carries Phrixus to Colchis, where he sacrifices it and hangs the fleece in the grove of Ares', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.1' }] },
+      { role: 'guarded by', externalRef: { name: 'the sleepless dragon of Colchis, at the court of Aeëtes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.1; Apollonius, Argonautica 4.123–161' }] },
+      { role: 'won by', externalRef: { name: 'Jason, with Medea’s help (she lulls the dragon)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.23; Apollonius, Argonautica 4.123–182' }] },
+    ],
+  },
+  'freyr-sword': {
+    custody: [
+      { role: 'owned by', externalRef: { name: 'Freyr — the sword that swings itself against the giants if its bearer is wise', tradition: 'Norse' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Skírnismál (prose & st. 8–9); Gylfaginning 37' }] },
+      { role: 'given away to', externalRef: { name: 'Skírnir, as the price of winning the giantess Gerðr', tradition: 'Norse' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Skírnismál; Gylfaginning 37 (the wooing of Gerðr) and 51 (lacking the sword, Freyr falls to Surtr at Ragnarök)' }] },
+    ],
+  },
+  'three-sacred-treasures': {
+    custody: [
+      { role: 'bestowed by', externalRef: { name: 'Amaterasu, who gives the mirror, sword, and jewel to her grandson Ninigi at his descent to rule the land below', tradition: 'Japanese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kojiki I; Nihon Shoki (the tenson kōrin — the descent of the heavenly grandchild)' }] },
+    ],
+  },
+  'aegeus-sword': {
+    custody: [
+      { role: 'hidden as a recognition-token by', externalRef: { name: 'Aegeus (placed with sandals beneath a great rock at Troezen for his unborn son to recover)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+      { role: 'recovered by', externalRef: { name: 'Theseus, who lifts the rock on reaching manhood and bears the tokens to Athens', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6, 12' }] },
+    ],
+  },
+
+  // ── Wave I4: cross-tradition divine artificers named in primary texts —
+  // the Eddic dwarf-smiths, the Hindu artificer Viśvakarman/Tvaṣṭṛ (whose
+  // forging of the gods' weapons is his defining role), and the Kojiki sword's
+  // custody. Fill-only; consistent with the existing Vishvakarma/Sons-of-Ivaldi
+  // attributions already in this map.
+  'sif-golden-hair': {
+    maker: { name: 'the Sons of Ivaldi', role: 'made by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Skáldskaparmál 35 (after Loki shears Sif, the Sons of Ivaldi forge living golden hair for her — the same smithing that yields Skíðblaðnir and Gungnir)' }] },
+  },
+  'devi-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the Sudarśana discus Viśvakarman forged from the pared radiance of Sūrya (Viṣṇu Purāṇa 3.2; Markaṇḍeya Purāṇa); given to the Goddess by Viṣṇu, Devī Māhātmya 2' }] },
+  },
+  'durga-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'Viṣṇu’s Sudarśana discus, forged by Viśvakarman from Sūrya’s trimmed radiance; bestowed on Durgā by Viṣṇu, Devī Māhātmya 2.9–19' }] },
+  },
+  'narasimha-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the Sudarśana discus of Viṣṇu (borne by his avatar Narasiṃha), forged by Viśvakarman from the pared radiance of Sūrya (Viṣṇu Purāṇa 3.2)' }] },
+  },
+  'varaha-chakra': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the Sudarśana discus of Viṣṇu (borne by his avatar Varāha), forged by Viśvakarman from the pared radiance of Sūrya (Viṣṇu Purāṇa 3.2)' }] },
+  },
+  'devi-trishula': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the triśūla Viśvakarman forged for Śiva from Sūrya’s trimmed radiance (Markaṇḍeya Purāṇa solar myth); given to the Goddess by Śiva, Devī Māhātmya 2' }] },
+  },
+  'durga-trishula': {
+    maker: { name: 'Viśvakarman', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'Śiva’s triśūla, forged by Viśvakarman from Sūrya’s pared radiance; bestowed on Durgā by Śiva, Devī Māhātmya 2.9–19' }] },
+  },
+  'devi-vajra': {
+    maker: { name: 'Tvaṣṭṛ (Viśvakarman)', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the vajra fashioned from the bones of the sage Dadhīci (Mahābhārata, Vana Parva 100); given to the Goddess by Indra, Devī Māhātmya 2' }] },
+  },
+  'sakra-vajra': {
+    maker: { name: 'Tvaṣṭṛ (Viśvakarman)', role: 'forged by', kind: 'divine artificer', sources: [{ kind: 'primary', reference: 'the vajra of Śakra (Indra), forged from the spine of the sage Dadhīci — the only substance hard enough to slay Vṛtra (Mahābhārata, Vana Parva 100)' }] },
+  },
+  'kusanagi-no-tsurugi': {
+    custody: [
+      { role: 'found by', externalRef: { name: 'Susanoo, in the tail of the eight-forked serpent Yamata-no-Orochi', tradition: 'Japanese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kojiki I (the slaying of Yamata-no-Orochi)' }] },
+      { role: 'presented to', externalRef: { name: 'Amaterasu (Susanoo offers the sword to his sister); it passes into the Three Sacred Treasures of the imperial line', tradition: 'Japanese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kojiki I; Nihon Shoki' }] },
+      { role: 'wielded by', externalRef: { name: 'Yamato Takeru, who mows away burning grass with it — whence the name Kusanagi, “grass-mower”', tradition: 'Japanese' }, era: 'legendary', sources: [{ kind: 'primary', reference: 'Nihon Shoki (the Yamato Takeru cycle)' }] },
+    ],
+  },
+
+  // ── Wave I1: Norse dwarven craft + Greek/Roman smith-forged (primary-sourced)
+  brisingamen: {
+    maker: { name: 'four dwarfs — Alfrigg, Dvalinn, Berlingr, and Grerr', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1 (the four dwarfs forge the necklace; Freyja obtains it from them)' }] },
+    custody: [
+      { role: 'forged by', externalRef: { name: 'the four dwarfs (Alfrigg, Dvalinn, Berlingr, Grerr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1' }] },
+      { role: 'obtained by', externalRef: { name: 'Freyja (from the dwarfs)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1' }] },
+      { role: 'stolen and recovered', externalRef: { name: 'taken by Loki; recovered for Freyja by Heimdall after their struggle (as seals) at Singasteinn', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Húsdrápa (the Heimdall–Loki contest for the Brísingamen); Skáldskaparmál 8' }] },
+    ],
+  },
+  hildisvini: {
+    maker: { name: 'the dwarfs Dáinn and Nabbi', role: 'made by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Hyndluljóð 7 (Dáinn and Nabbi wrought the boar Hildisvíni for Freyja)' }] },
+  },
+  'aeneas-armor': {
+    maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.370–453 (at Venus’s plea Vulcan forges the arms at the Cyclopes’ Aetnan forge, incl. the prophetic shield)' }] },
+  },
+  'aeneas-divine-arms': {
+    maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.370–453 (the divine arms — helmet, corslet, sword, and the shield of Rome’s destiny)' }] },
+  },
+  talos: {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.9.26 (the bronze man Talos, made by Hephaestus; a scholiast variant credits Daedalus)' }] },
+    custody: [
+      { role: 'made by', externalRef: { name: 'Hephaestus', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.26' }] },
+      { role: 'set to guard Crete', externalRef: { name: 'given to Minos to patrol Crete, circling the island thrice daily', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.26; Apollonius, Argonautica 4.1638–1648' }] },
+      { role: 'destroyed by', externalRef: { name: 'Medea (who drew the bronze pin from his ankle, draining his ichor)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollonius, Argonautica 4.1654–1688' }] },
+    ],
+  },
+  'heracles-golden-breastplate': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Hephaestus a golden breastplate)' }] },
+  },
+  'heracles-peplos': {
+    maker: { name: 'Athena', role: 'woven by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Athena a robe)' }] },
+  },
+
+  // ── Wave I2: Greek/Roman — Cyclopean, Hephaestean, and primordial craft.
+  // Only items with an attested maker; the many divine attributes with no
+  // maker-myth (sceptres, chariots, the golden fleece, natural objects) are left
+  // blank.
+  khalkotauroi: {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.9.23 (the fire-breathing bronze bulls of Aeëtes, the work of Hephaestus); Apollonius, Argonautica 3.229–231' }] },
+  },
+  'hephaestus-golden-tripods': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Homer, Iliad 18.373–377 (the twenty self-moving golden tripods Hephaestus wrought for the gods’ halls)' }] },
+  },
+  'hephaestus-golden-net': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 8.272–276 (the unbreakable net of fine bonds Hephaestus forged to snare Ares and Aphrodite)' }] },
+  },
+  'adamantine-sickle': {
+    maker: { name: 'Gaia (Earth)', role: 'fashioned by', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 161–162 (Gaia straightway made a great sickle of grey adamant)' }] },
+  },
+  'harpe-sickle': {
+    maker: { name: 'Gaia (Earth)', role: 'fashioned by', kind: 'primordial goddess', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 161–166 (the adamantine sickle Gaia made, with which Cronus unmanned Uranus)' }] },
+  },
+  'helm-of-darkness': {
+    maker: { name: 'the Cyclopes (Brontes, Steropes, Arges)', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes give Hades the helmet of invisibility, Zeus the thunderbolt, Poseidon the trident); Hesiod, Theogony 501–506' }] },
+    custody: [
+      { role: 'worn by', externalRef: { name: 'Athena, who dons the cap of Hades so that raging Ares cannot see her at Troy', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.844–845' }] },
+      { role: 'lent to', externalRef: { name: 'Perseus, furnished by the Stygian nymphs for the Gorgon-quest', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2' }] },
+    ],
+  },
+  palladium: {
+    maker: { name: 'Athena', role: 'carved by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 3.12.3 (Athena fashioned an image — the Palladium — in the likeness of Pallas)' }] },
+    custody: [
+      { role: 'safeguarded at', externalRef: { name: 'Troy — the city’s safety depended on the heaven-sent image', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Epitome 5.10–13' }] },
+      { role: 'stolen by', externalRef: { name: 'Odysseus and Diomedes, who carry it off as a precondition for Troy’s fall', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus, Epitome 5.13' }] },
+    ],
+  },
+  'palladium-athens': {
+    maker: { name: 'Athena', role: 'carved by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 3.12.3 (the Palladium, the image Athena made of Pallas)' }] },
+    custody: [
+      { role: 'claimed by', externalRef: { name: 'Athens — the Palladion Diomedes brought from Troy, housed at the homicide-court “epi Palladiōi”', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pausanias 1.28.8–9' }] },
+    ],
+  },
+  'shield-of-aeneas': {
+    maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.626–731 (the shield Vulcan wrought, emblazoned with the destiny of Rome)' }] },
+  },
+  'helm-of-hades': {
+    maker: { name: 'the Cyclopes', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forged the cap of invisibility for Hades/Pluto in the war on the Titans)' }] },
+    custody: [
+      { role: 'worn by', externalRef: { name: 'Athena, who dons the cap of Hades so that raging Ares cannot see her at Troy', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.844–845' }] },
+      { role: 'lent to', externalRef: { name: 'Perseus, furnished by the Stygian nymphs for the Gorgon-quest', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.2' }] },
+    ],
+  },
+  'neptunus-tridens': {
+    maker: { name: 'the Cyclopes', role: 'forged by', kind: 'cyclopean smiths', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.2.1 (the Cyclopes forged the trident for Poseidon/Neptune in the war on the Titans)' }] },
+  },
+  ancilia: {
+    maker: { name: 'Mamurius Veturius (the eleven copies)', role: 'forged by', kind: 'mortal smith', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.259–392 (the original ancile fell from heaven in Numa’s reign; Mamurius Veturius forged eleven indistinguishable copies)' }] },
+  },
+
+  // ── Wave I3: Irish, Finnish, Japanese, Hindu, Mesopotamian — attested makers.
+  // Skips the many Otherworld/divine objects with no named artificer (the Four
+  // Treasures from the four cities, Manannán's gear, the Pandava conches, the
+  // royal steles whose patron is the holder).
+  // Irish — Dian Cécht's silver arm (Cath Maige Tuired §33)
+  'silver-arm': {
+    maker: { name: 'Dian Cécht (with Creidne the brazier)', role: 'made by', kind: 'physician-god & brazier', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §33 (Dian Cécht fits Nuada a silver arm with Creidne’s help; Miach later grows flesh over it)' }] },
+  },
+  'nuada-silver-arm': {
+    maker: { name: 'Dian Cécht (with Creidne the brazier)', role: 'made by', kind: 'physician-god & brazier', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §33 (the silver arm that earns Nuada the epithet Airgetlám)' }] },
+  },
+  // Finnish — the eternal smith Ilmarinen; Väinämöinen the rune-singer (Kalevala)
+  'sky-dome-of-ilmarinen': {
+    maker: { name: 'Ilmarinen', role: 'forged by', personId: 'finnish_ilmarinen', kind: 'smith', sources: [{ kind: 'primary', reference: 'Kalevala, Runo X (Ilmarinen, who forged the dome of the sky/heaven, is said to have hammered it so finely no trace of his tongs remains)' }] },
+  },
+  'golden-bride-ilmarinen': {
+    maker: { name: 'Ilmarinen', role: 'forged by', personId: 'finnish_ilmarinen', kind: 'smith', sources: [{ kind: 'primary', reference: 'Kalevala, Runo 37 (Ilmarinen forges a maiden of gold and silver to replace his dead wife; she remains cold)' }] },
+  },
+  'golden-plough-ilmarinen': {
+    maker: { name: 'Ilmarinen', role: 'forged by', personId: 'finnish_ilmarinen', kind: 'smith', sources: [{ kind: 'secondary', reference: 'Kalevala (the smith Ilmarinen, forger of the Sampo and of golden objects, among them a golden plough)' }] },
+  },
+  'birch-kantele': {
+    maker: { name: 'Väinämöinen', role: 'made by', personId: 'finnish_vainamoinen', kind: 'rune-singer', sources: [{ kind: 'primary', reference: 'Kalevala, Runo 44 (having lost the pike-bone kantele, Väinämöinen makes a new one of birch-wood)' }] },
+  },
+  // Japanese — the Kojiki regalia-makers (Ame-no-Iwato episode)
+  'yata-no-kagami': {
+    maker: { name: 'Ishikoridome-no-Mikoto', role: 'cast by', kind: 'mirror-maker deity', sources: [{ kind: 'primary', reference: 'Kojiki I (Ishikoridome makes the eight-span mirror to lure Amaterasu from the Heavenly Rock-Cave)' }] },
+  },
+  'yasakani-no-magatama': {
+    maker: { name: 'Tamanoya-no-Mikoto (Ame-no-Futodama’s jewel-maker)', role: 'strung by', kind: 'jewel-maker deity', sources: [{ kind: 'primary', reference: 'Kojiki I (Tamanoya makes the long string of five-hundred magatama beads for the Rock-Cave rite)' }] },
+  },
+  // Hindu — Vishvakarma's sun-paring masterworks; the Vajra from Dadhīci's bones
+  'sudarshana-chakra': {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (Vishvakarma trims the Sun on his lathe; from the parings he makes Vishnu’s discus, Shiva’s trident, and other divine weapons)' }] },
+  },
+  'krishna-sudarshana': {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (the Sudarshana discus, made from the parings of the Sun)' }] },
+  },
+  'vishvakarma-sudarshana': {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (Vishvakarma fashions Vishnu’s discus from the Sun’s effulgence)' }] },
+  },
+  'vishvakarma-pushpaka': {
+    maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the self-moving aerial palace Vishvakarma built, given to Kubera, later seized by Ravana)' }] },
+  },
+  'kubera-pushpaka': {
+    maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the Pushpaka Vimana Vishvakarma made for Kubera)' }] },
+    custody: [
+      { role: 'built by', externalRef: { name: 'Vishvakarma (for Brahma, who gave it to Kubera)', tradition: 'Hindu' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda' }] },
+      { role: 'seized by', externalRef: { name: 'Ravana (who took it from his half-brother Kubera)', tradition: 'Hindu' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda' }] },
+      { role: 'flown by', externalRef: { name: 'Rama (back to Ayodhyā after Rāvana’s defeat; later returned to Kubera)', tradition: 'Hindu' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Ramayana, Yuddha Kanda' }] },
+    ],
+  },
+  'ravana-pushpaka': {
+    maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the Pushpaka Vimana, built by Vishvakarma for Kubera and seized by Ravana)' }] },
+  },
+  trishula: {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (Shiva’s trident, made by Vishvakarma from the parings of the Sun)' }] },
+  },
+  'vishvakarma-vajra': {
+    maker: { name: 'Tvaṣṭṛ / Vishvakarma (from the bones of the sage Dadhīci)', role: 'forged by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Mahabharata, Vana Parva 100 (Indra’s vajra forged from Dadhīci’s bones); Bhagavata Purana 6.10' }] },
+  },
+  'arjuna-vajrastra': {
+    maker: { name: 'Tvaṣṭṛ (from the bones of the sage Dadhīci)', role: 'forged by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Mahabharata, Vana Parva 100 (Indra’s thunderbolt, made from Dadhīci’s bones)' }] },
+  },
+  // Mesopotamian — Marduk's self-forged arsenal (Enuma Elish IV)
+  'bow-of-marduk': {
+    maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV.35–37 (Marduk made a bow and marked it as his weapon against Tiamat)' }] },
+  },
+  'net-of-marduk': {
+    maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV.41–44 (Marduk made a net to enmesh Tiamat, with the four winds set at its corners)' }] },
+  },
+  'mace-of-marduk': {
+    maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV (Marduk takes up the mace among the weapons he fashions for the battle with Tiamat)' }] },
+  },
+
+  // ── Wave I4: Chinese (verified, Fengshen Yanyi / Xiyouji / Huainanzi) + custody
+  // backfill for marquee items. Erlang's blade, the lotus-lantern axe, and the
+  // self-swelling soil have no clearly-attested maker and are left blank.
+  'qiankun-quan': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'bestowed by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Universe Ring, one of the spiritual treasures of Taiyi Zhenren that Nezha bears)' }] },
+  },
+  'huntian-ling': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'bestowed by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Red Armillary Sash, a treasure of Taiyi Zhenren borne by Nezha)' }] },
+  },
+  'feng-huo-lun': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'given by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Wind-Fire Wheels, among the tools Taiyi Zhenren furnishes Nezha)' }] },
+  },
+  'huojian-qiang': {
+    maker: { name: 'Taiyi Zhenren (Nezha’s master)', role: 'given by', kind: 'immortal master', sources: [{ kind: 'primary', reference: 'Fengshen Yanyi (the Fire-Tipped Spear presented to Nezha by Taiyi Zhenren)' }] },
+  },
+  'houyi-bow': {
+    maker: { name: 'Dìjùn (the god Jun)', role: 'given by', kind: 'god', sources: [{ kind: 'primary', reference: 'Shanhaijing, Hainei jing (Dìjùn bestowed on Yi a vermilion bow and white arrows to succour the lands below)' }] },
+  },
+  'five-colored-stones': {
+    maker: { name: 'Nüwa (who smelted them)', role: 'smelted by', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Huainanzi, Lanming xun (Nüwa smelted stones of five colours to mend the broken azure sky)' }] },
+  },
+  'ruyi-jingu-bang': {
+    maker: { name: 'Yu the Great (cast it as a sea-fathoming pillar) — a chapter-75 poem instead credits Taishang Laozi', role: 'cast by', kind: 'culture-hero', sources: [{ kind: 'primary', reference: 'Wu Cheng’en, Journey to the West, ch. 3 (the Sea-Stabilizing Pillar left from Yu the Great’s flood-control, kept in the East Sea Dragon-King’s treasury); ch. 75 poem (forged in Laozi’s furnace)' }] },
+    custody: [
+      { role: 'cast by', externalRef: { name: 'Yu the Great (as the sea-depth-fixing pillar; var. forged by Taishang Laozi)', tradition: 'Chinese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Journey to the West ch. 3' }] },
+      { role: 'kept in', externalRef: { name: 'the treasury of Ao Guang, Dragon-King of the East Sea', tradition: 'Chinese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Journey to the West ch. 3' }] },
+      { role: 'claimed by', externalRef: { name: 'Sun Wukong (who alone could lift it; it became his lifelong weapon)', tradition: 'Chinese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Journey to the West ch. 3' }] },
+    ],
+  },
+  'dinghai-shenzhen': {
+    maker: { name: 'Yu the Great', role: 'cast by', kind: 'culture-hero', sources: [{ kind: 'primary', reference: 'Journey to the West, ch. 3 (the Sea-Stabilizing Divine Pillar of Yu the Great’s flood-works — the same iron that becomes Sun Wukong’s staff)' }] },
+  },
+};
+
 const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
   const items = {};
   const ensure = (id) => (items[id] || (items[id] = {
@@ -30458,6 +31230,19 @@ const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
     for (const c of (L.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
     for (const s of (L.maker?.sources || [])) it.sources.push(s);
     for (const s of (L.sources || [])) it.sources.push(s);
+  }
+  // Provenance backfill — fill-only maker/custody/location from ITEM_PROVENANCE,
+  // merged after ITEM_LORE so it never overrides richer lore; looks up existing
+  // items only, so it cannot mint holderless ghost items.
+  for (const [id, P] of Object.entries(ITEM_PROVENANCE || {})) {
+    const it = items[ITEM_ALIASES[id] || id];
+    if (!it) continue;
+    if (!it.maker && P.maker) it.maker = P.maker;
+    if (!it.location && P.location) it.location = P.location;
+    for (const c of (P.custody || [])) it.custody.push(c);
+    for (const s of (P.maker?.sources || [])) it.sources.push(s);
+    for (const c of (P.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
+    for (const s of (P.sources || [])) it.sources.push(s);
   }
   for (const it of Object.values(items)) {
     if (!it.names.length) {
@@ -171445,6 +172230,28 @@ const ENRICHMENTS = {
       { kind: 'companion', personId: 'anglosaxon_woden', sources: [{ kind: 'primary', reference: 'Old Saxon Baptismal Vow (9th c.)' }], notes: 'Renounced together - \'Thunaer ende Uuoden ende Saxnote\' - as the three great gods.' },
     ],
   },
+  // ── Genealogy march, Wave G3 (anglosaxon): Beowulf's Geatish royal line and the family of Wayland the Smith ──
+  'anglosaxon_beowulf': { parentIds: ['anglosaxon_ecgtheow', 'anglosaxon_hrethels_daughter'], parentRoles: { anglosaxon_ecgtheow: 'paternal', anglosaxon_hrethels_daughter: 'maternal' },
+    relations: [ { kind: 'companion', personId: 'anglosaxon_wiglaf', sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2602-2891' }], notes: 'Waegmunding kinsman and last loyal retainer against the dragon; Beowulf\'s heir.' } ] },
+  'anglosaxon_hrethels_daughter': { parentIds: ['anglosaxon_hrethel'], parentRoles: { anglosaxon_hrethel: 'paternal' },
+    relations: [ { kind: 'spouse', personId: 'anglosaxon_ecgtheow', sources: [{ kind: 'primary', reference: 'Beowulf, ll. 373-375' }] } ] },
+  'anglosaxon_herebeald': { parentIds: ['anglosaxon_hrethel'], parentRoles: { anglosaxon_hrethel: 'paternal' } },
+  'anglosaxon_haethcyn': { parentIds: ['anglosaxon_hrethel'], parentRoles: { anglosaxon_hrethel: 'paternal' } },
+  'anglosaxon_hygelac': { parentIds: ['anglosaxon_hrethel'], parentRoles: { anglosaxon_hrethel: 'paternal' } },
+  'anglosaxon_heardred': { parentIds: ['anglosaxon_hygelac'], parentRoles: { anglosaxon_hygelac: 'paternal' } },
+  'anglosaxon_wayland': { parentIds: ['anglosaxon_wade'], parentRoles: { anglosaxon_wade: 'paternal' },
+    relations: [ { kind: 'enemy', personId: 'anglosaxon_nithhad', sources: [{ kind: 'primary', reference: 'Völundarkviða; Deor' }], notes: 'Nithhad hamstrung and enslaved Wayland, who took revenge on the king\'s sons and daughter before escaping by flight.' } ] },
+  'anglosaxon_beadohild': { parentIds: ['anglosaxon_nithhad'], parentRoles: { anglosaxon_nithhad: 'paternal' } },
+  'anglosaxon_widia': { parentIds: ['anglosaxon_wayland', 'anglosaxon_beadohild'], parentRoles: { anglosaxon_wayland: 'paternal', anglosaxon_beadohild: 'maternal' } },
+  'anglosaxon_hrethel': { relations: [
+    { kind: 'father-of', personId: 'anglosaxon_hygelac', sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2434-2443' }] },
+    { kind: 'father-of', personId: 'anglosaxon_herebeald', sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2434-2443' }] },
+    { kind: 'father-of', personId: 'anglosaxon_haethcyn', sources: [{ kind: 'primary', reference: 'Beowulf, ll. 2434-2443' }] },
+    { kind: 'father-of', personId: 'anglosaxon_hrethels_daughter', sources: [{ kind: 'primary', reference: 'Beowulf, ll. 373-375' }] },
+  ] },
+  'anglosaxon_wade': { relations: [
+    { kind: 'father-of', personId: 'anglosaxon_wayland', sources: [{ kind: 'primary', reference: 'Þiðreks saga (Velents þáttr); Chaucer, Troilus II.614' }] },
+  ] },
   'apache_black_hactcin': {
     relations: [
       { kind: 'companion', personId: 'apache_hactcin', sources: [{ kind: 'secondary', reference: 'M. E. Opler, Myths and Tales of the Jicarilla Apache Indians (1938)' }], notes: 'Foremost of the Jicarilla Holy Ones, who shaped the animals and the first man in the underworld before the emergence.' },
@@ -223625,6 +224432,2035 @@ const ETYMOLOGY = {
         "reference": "González de Pérez, Diccionario y gramática chibcha (1987), s.v. sua 'sol/día'"
       }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8a ETYMOLOGY (LOWER TIERS) — first extension of the enrichment program
+  //  below the deity/demigod tier. Name origins for quartigod/scion/mortal
+  //  figures of the Greek cohort (the largest and best-attested lower-tier
+  //  group: heroes, kings, and mythological mortals of the Apollodoran/Homeric
+  //  genealogies). Authored conservatively from the standard reference lexica
+  //  (Beekes EDG 2010; Chantraine DELG; von Kamptz, Homerische Personennamen
+  //  1982; LSJ) and, where an ancient author gives the etymology, the primary
+  //  text; uncertain or Pre-Greek names are flagged as such rather than
+  //  invented. Same additive shape as Wave-7h; runs through applyEtymology.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "greek_apollod_andromeda": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀνδρομέδα (Andromédā), Ionic Ἀνδρομέδη. A transparent compound of ἀνήρ, gen. ἀνδρός (anḗr, andrós) \"man\" and the verbal stem μέδ- (μέδομαι/μέδω, médomai \"to be mindful of, attend to, rule over\"), giving \"she who is mindful of / rules over men.\" The same -μέδων/-μέδη element recurs in Iphimedon and Ganymedes.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. μέδομαι" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_danae": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek); name possibly Pre-Greek",
+    "etymology": "Greek Δανάη (Danáē), connected with the Δαναοί (Danaoí), Homer's collective name for the Greeks, and with her ancestor Danaus (Δαναός). Beekes treats the Δαναοί group as of Pre-Greek (non-Indo-European) origin, so the personal name has no secure Indo-European etymology; an old association links it to a root for \"parched, dry,\" recalling the waterless Argive plain that the Danaids supplied with wells.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Δαναοί" },
+      { "kind": "secondary", "reference": "Chantraine, Dictionnaire étymologique de la langue grecque, s.v. Δαναοί" }
+    ]
+  },
+  "greek_apollod_deianira": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Δηϊάνειρα (Dēiáneira), compound of the stem δηϊ-/δάϊος (dḗïos \"hostile, destroying,\" cf. δηϊόω \"to slay, ravage\") and ἀνήρ \"man, husband,\" yielding \"man-destroyer\" or \"husband-slayer\" — grimly apt for the wife whose poisoned robe kills Heracles.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. δάϊος" }
+    ]
+  },
+  "greek_apollod_iphicles": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰφικλῆς (Iphiklês), from ἶφι (íphi) \"with might, mightily\" (instrumental of ἴς, ís \"force, sinew\") and κλέος (kléos) \"glory, fame,\" \"famed for might\" — the mortal twin of Heracles.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἴς, κλέος" }
+    ]
+  },
+  "greek_apollod_auge": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Αὐγή (Augḗ), the common noun \"radiance, sunlight, gleam (of dawn)\" personified — \"Light, Radiance.\" The Tegean priestess of Athena, mother of Telephus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. αὐγή" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. αὐγή" }
+    ]
+  },
+  "greek_apollod_astyoche": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀστυόχη (Astyóchē), from ἄστυ (ásty) \"town, citadel\" and the holding-stem -οχος (ἔχω, échō \"to hold, possess, guard\"), \"she who holds/guards the city.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἄστυ" }
+    ]
+  },
+  "greek_apollod_argeia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀργεία (Argeía), either \"the Argive (woman)\" (Ἀργεῖος, \"of Argos\") or directly from ἀργός (argós) \"bright, shining; swift,\" \"the bright one.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. Ἀργεῖος, ἀργός" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀργός" }
+    ]
+  },
+  "greek_anchises": {
+    "languageFamily": "Hellenic (Ancient Greek); name of uncertain, probably Pre-Greek origin",
+    "etymology": "Greek Ἀγχίσης (Anchísēs). The name has been associated with ἄγχι (ánchi) \"near\" but has no secure Greek etymology; Beekes lists it among names of probably Pre-Greek origin. The mortal father of Aeneas by Aphrodite.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Ἀγχίσης" },
+      { "kind": "secondary", "reference": "Chantraine, Dictionnaire étymologique de la langue grecque, s.v. ἄγχι" }
+    ]
+  },
+  "greek_leda": {
+    "languageFamily": "Anatolian loan into Greek (Lycian)",
+    "etymology": "Greek Λήδα (Lḗda), widely derived from the Anatolian (Lycian) word lada \"wife, woman,\" making the name \"Lady, Wife\"; the form has no Greek etymology and points to a Bronze-Age Anatolian borrowing.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Λήδα" }
+    ]
+  },
+  "greek_castor": {
+    "languageFamily": "Hellenic (Ancient Greek); name of uncertain, probably Pre-Greek origin",
+    "etymology": "Greek Κάστωρ (Kástōr), identical in form with the common noun κάστωρ \"beaver\"; as a personal name its sense is uncertain, sometimes linked to a root \"to excel, shine.\" Beekes regards the animal-name, and hence the hero-name, as Pre-Greek. The mortal Dioscurus, twin of the immortal Polydeuces.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. κάστωρ" },
+      { "kind": "secondary", "reference": "Chantraine, Dictionnaire étymologique de la langue grecque, s.v. κάστωρ" }
+    ]
+  },
+  "greek_phlegyas": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Φλεγύας (Phlegýas), from φλέγω (phlégō) \"to burn, blaze, set on fire,\" \"the fiery one\" — the Lapith king who burned Apollo's temple at Delphi.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. φλέγω" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. φλέγω" }
+    ]
+  },
+  "greek_coronis": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κορωνίς (Korōnís), \"curved one\" or \"crow-maiden,\" from κορώνη (korṓnē) \"crow; anything curved or hooked.\" The crow is the bird of Apollo that reports her infidelity in the Coronis–Asclepius story, and the link to κορώνη is transparent.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κορώνη" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. κορώνη" }
+    ]
+  },
+  "greek_glaucus_corinth": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Γλαῦκος (Glaûkos), from the adjective γλαυκός (glaukós) \"gleaming, silvery, blue-grey; bright-eyed,\" \"the gleaming/grey one\" — the Corinthian king devoured by his own mares.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. γλαυκός" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. γλαυκός" }
+    ]
+  },
+  "greek_antiope_thebes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντιόπη (Antiópē), from ἀντί (antí) \"facing, opposite, against\" and ὤψ/ὄψ (ṓps) \"face, eye, voice,\" \"confronting in face or voice\" — the Theban mother of Amphion and Zethus.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἀντί" }
+    ]
+  },
+  "greek_aethra": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Αἴθρα (Aíthra), the common noun \"bright clear sky, fair weather\" (from αἴθω, aíthō \"to kindle, blaze\"), \"clear bright sky\" — the mother of Theseus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. αἴθρα" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. αἴθω" }
+    ]
+  },
+  "greek_aegeus": {
+    "languageFamily": "Hellenic (Ancient Greek); formation obscure, possibly Pre-Greek",
+    "etymology": "Greek Αἰγεύς (Aigeús), usually connected with αἴξ, gen. αἰγός (aíx, aigós) \"goat\" (a -εύς formation, roughly \"goat-man\"); ancient aetiology instead derived the Aegean Sea (Αἰγαῖον) from his death-leap into it. Beekes treats the formation as obscure.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. αἴξ" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. αἴξ" }
+    ]
+  },
+  "greek_apollod_acrisius": {
+    "languageFamily": "Hellenic (Ancient Greek); etymology uncertain",
+    "etymology": "Greek Ἀκρίσιος (Akrísios). An ancient analysis takes it from the privative ἀ- and κρίσις (krísis) \"judgment, decision\" (κρίνω \"to judge\"), \"the one of no/poor judgment\"; the etymology is uncertain. The Argive king who imprisons Danae.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κρίσις" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_electryon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἠλεκτρύων (Ēlektrýōn), from the family of ἤλεκτρον / ἠλέκτωρ (ḗlektōr) \"gleaming; the beaming sun; amber,\" \"the radiant one\" — son of Perseus and Andromeda, father of Alcmene.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἠλέκτωρ" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἤλεκτρον" }
+    ]
+  },
+  "greek_apollod_alcmene": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀλκμήνη (Alkmḗnē), generally analyzed from ἀλκή (alkḗ) \"prowess, defensive might\" with a second element -μήνη/-μένη (cf. μένος, ménos \"might, spirit\"), \"strong in might\" — the mother of Heracles.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀλκή" }
+    ]
+  },
+  "greek_sthenelus_perseus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Σθένελος (Sthénelos), a derivative of σθένος (sthénos) \"strength, might,\" \"the strong one\" — son of Perseus and father of Eurystheus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. σθένος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυσθεύς (Eurystheús), from εὐρύς (eurýs) \"broad, wide\" and σθένος (sthénos) \"strength, might,\" \"he of wide strength\" — the Mycenaean king who imposes the Twelve Labours on Heracles.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. σθένος" }
+    ]
+  },
+  "greek_apollod_alexander_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀλέξανδρος (Aléxandros), from ἀλέξω (aléxō) \"to ward off, defend\" and ἀνήρ, gen. ἀνδρός \"man,\" \"defender of men\" — a son of Eurystheus (the name borne also by Paris of Troy).",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἀλέξω" }
+    ]
+  },
+  "greek_apollod_iphimedon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰφιμέδων (Iphimédōn), from ἶφι (íphi) \"mightily\" (ἴς \"force\") and the ruling-stem μέδων (médōn, μέδομαι \"to rule, be mindful of\"), \"mighty ruler\" — a son of Eurystheus.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. μέδομαι" }
+    ]
+  },
+  "greek_apollod_eurybios": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρύβιος (Eurýbios), from εὐρύς (eurýs) \"broad, wide\" and βίη/βία (bíē) \"force, might,\" \"of wide force\" — a son of Eurystheus.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. βία" }
+    ]
+  },
+  "greek_apollod_mentor_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μέντωρ (Méntōr), an agent-noun from the Indo-European root *men- \"to think, be mindful\" (cf. μένος, μιμνήσκω), \"adviser, the mindful one\" — a son of Eurystheus; the common noun mentor descends from the like-named guardian in the Odyssey.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. μένος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_perimedes_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Περιμήδης (Perimḗdēs), from περί (perí) \"exceedingly, around\" and μῆδος/μήδομαι (mêdos \"counsel, cunning\"), \"of abounding counsel, exceedingly cunning\" — a son of Eurystheus.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. μήδομαι" }
+    ]
+  },
+  "greek_apollod_hyllus": {
+    "languageFamily": "Hellenic (Ancient Greek); etymology uncertain",
+    "etymology": "Greek Ὕλλος (Hýllos), the eldest son of Heracles and Deianira and eponym of the Dorian Hylleis tribe; the name has no secure etymology and is sometimes connected with ὕλη (hýlē) \"wood, forest,\" though this is uncertain.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ὕλη" }
+    ]
+  },
+  "greek_apollod_cleodaeus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κλεόδαιος (Kleódaios), containing κλέος (kléos) \"glory, fame\"; the second element is referred to the battle-stem δαϊ-/δάϊος, giving roughly \"famed in battle\" — a Heraclid ancestor of the Dorian kings.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κλέος" }
+    ]
+  },
+  "greek_apollod_aristomachus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀριστόμαχος (Aristómachos), from ἄριστος (áristos) \"best, noblest\" and μάχη (máchē) \"battle,\" \"best in battle\" — a Heraclid of the generation before the return to the Peloponnese.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἄριστος, μάχη" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_aristodemus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀριστόδημος (Aristódēmos), from ἄριστος (áristos) \"best\" and δῆμος (dêmos) \"people, district,\" \"best of the people\" — the Heraclid father of the Spartan co-founders Eurysthenes and Procles.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἄριστος, δῆμος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_temenus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τήμενος (Tḗmenos), from τέμενος (témenos) \"a piece of land cut off and set apart, sacred precinct\" (τέμνω, témnō \"to cut\"), \"the allotted domain\" — the Heraclid who won Argos in the division of the Peloponnese.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. τέμενος" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. τέμνω" }
+    ]
+  },
+  "greek_apollod_cresphontes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κρεσφόντης (Kresphóntēs), analyzed from κρέσσων/κρείσσων (kreíssōn) \"stronger, superior\" and the slayer-element -φόντης (φένω/θείνω \"to slay\"), \"the superior slayer\" — the Heraclid who gained Messenia.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. θείνω" }
+    ]
+  },
+  "greek_hdt_eurysthenes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυσθένης (Eurysthénēs), from εὐρύς (eurýs) \"broad, wide\" and σθένος (sthénos) \"strength,\" \"of wide strength\" — the Heraclid co-founder of the Agiad royal line of Sparta.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. εὐρύς, σθένος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_hdt_procles": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Προκλῆς (Proklês), from πρό (pró) \"before, foremost\" and κλέος (kléos) \"glory, fame,\" \"of foremost glory\" — the Heraclid founder of the Eurypontid royal line of Sparta.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. πρό, κλέος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_telephus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τήλεφος (Tḗlephos), analyzed as τῆλε (têle) \"afar, far off\" and φάος/φῶς (pháos) \"light,\" \"the far-shining one.\" The myth supplies a competing folk-etymology from θηλή (thēlḗ) \"teat\" and ἔλαφος (élaphos) \"deer,\" \"suckled by a hind,\" because the exposed infant was nursed by a doe.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "primary", "reference": "Apollodorus, Bibliotheca 2.7.4 & 3.9.1 (Telephus suckled by a hind)" }
+    ]
+  },
+  "greek_homer_tlepolemus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τληπόλεμος (Tlēpólemos), from the stem τλη-/τλῆναι (tlênai) \"to bear, endure, dare\" and πόλεμος (pólemos) \"war,\" \"he who endures/dares in war\" — the Heraclid leader of the Rhodians at Troy.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. πόλεμος" }
+    ]
+  },
+  "greek_apollod_hippolytus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἱππόλυτος (Hippólytos), from ἵππος (híppos) \"horse\" and the stem λυ- (λύω, lýō \"to loose, let go\"), \"looser/unleasher of horses\" — tragically literalized when his own horses, panicked by a bull from the sea, drag him to death.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. λύω" }
+    ]
+  },
+  "greek_apollod_acamas": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀκάμας (Akámas), from the privative ἀ- and the verb κάμνω (kámnō) \"to grow weary,\" \"the unwearying, tireless one\" (ἀκάμας is a Homeric epithet of fire and of rivers) — a son of Theseus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἀκάμας" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_demophon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Δημοφῶν / Δημοφόων (Dēmophôn), from δῆμος (dêmos) \"people, district\" and the stem of φάος/φῶς (pháos) \"light,\" \"light of the people\" — a son of Theseus, king of Athens.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. δῆμος" }
+    ]
+  },
+  "greek_apollod_machaon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μαχάων (Macháōn), connected with μάχη (máchē) \"battle\" and μάχομαι (máchomai) \"to fight,\" \"the fighter\" — the warrior-surgeon son of Asclepius who tends the wounded at Troy.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. μάχη" }
+    ]
+  },
+  "greek_hygieia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὑγίεια / Ὑγεία (Hygíeia), the common noun \"health, soundness of body\" (from ὑγιής, hygiḗs \"healthy, sound\") personified; Asclepius' daughter simply is \"Health.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ὑγίεια" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ὑγιής" }
+    ]
+  },
+  "greek_iaso": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰασώ (Iasṓ), from ἰάομαι (iáomai) \"to heal, cure\" (ἴασις, íasis \"healing\"), \"Healing, Cure\" — one of Asclepius' healer-daughters.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἴασις" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἰάομαι" }
+    ]
+  },
+  "greek_aceso": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀκεσώ (Akesṓ), from ἄκος (ákos) \"cure, remedy\" and ἀκέομαι (akéomai) \"to heal,\" \"the healing, convalescence\" — the daughter of Asclepius personifying the process of recovery.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἄκος, ἄκεσις" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀκέομαι" }
+    ]
+  },
+  "greek_panacea": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πανάκεια (Panákeia), from πᾶν (pân) \"all\" and ἄκος (ákos) \"cure\" (ἀκέομαι \"to heal\"), \"all-healing, cure-all\" — Asclepius' daughter, whose name became the common word panacea.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. πανάκεια" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἄκος" }
+    ]
+  },
+  "greek_aegle_asclepius": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Αἴγλη (Aíglē), the common noun \"radiance, gleam, splendor (of the sun or of health)\" personified, \"Brightness\" — named among the daughters of Asclepius.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. αἴγλη" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. αἴγλη" }
+    ]
+  },
+  "greek_telesphorus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τελεσφόρος (Telesphóros), from τέλος (télos) \"completion, fulfillment, end\" and -φόρος (-phóros, φέρω \"to bring, bear\"), \"the bringer-to-completion / accomplisher\" — the hooded boy-god of convalescence who brings a cure to its end.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. τελεσφόρος" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. τέλος" }
+    ]
+  },
+  "greek_menelaus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μενέλαος (Menélāos), an old compound of μένω (ménō) \"to stand fast, withstand\" (with the -ε- of μένος \"might, spirit\") and λαός (lāós) \"host, war-folk, people,\" \"he who withstands the war-host\" or \"strength of the people.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. λαός" }
+    ]
+  },
+  "greek_paris": {
+    "languageFamily": "Anatolian (name); Greek by-name Ἀλέξανδρος",
+    "etymology": "Greek Πάρις (Páris) has no convincing Greek etymology and is generally taken as Anatolian (compared with names in Hittite/Luwian sources); his alternative name Ἀλέξανδρος (Aléxandros) is transparently Greek, from ἀλέξω (aléxō) \"to ward off, defend\" and ἀνήρ \"man,\" \"defender of men.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Ἀλέξανδρος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_odysseus": {
+    "languageFamily": "Hellenic (Ancient Greek); name probably Pre-Greek",
+    "etymology": "Greek Ὀδυσσεύς (Odysseús), with dialectal variants Ὀλυσσεύς/Οὐλίξης (whence Latin Ulixes). Homer offers a folk-etymology linking the name to ὀδύσσομαι (odýssomai) \"to be angry at, hate, cause pain\": Autolycus names the child \"the man of wrath,\" come hating and hated by many (Od. 19.406–409). The variant consonants point to a Pre-Greek origin behind the Homeric play.",
+    "sources": [
+      { "kind": "primary", "reference": "Homer, Odyssey 19.406–409 (Autolycus names Odysseus)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Ὀδυσσεύς" }
+    ]
+  },
+  "greek_pandora": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πανδώρα (Pandṓra), from πᾶν (pân) \"all\" and δῶρον (dôron) \"gift.\" Hesiod gives the explicit etymology: all the Olympians gave her a gift (Works and Days 81–82), \"the all-endowed\"; the same epithet also belonged to Earth as \"the all-giving.\"",
+    "sources": [
+      { "kind": "primary", "reference": "Hesiod, Works and Days 80–82 (the naming of Pandora)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. δῶρον" }
+    ]
+  },
+  "greek_europa": {
+    "languageFamily": "Hellenic (Ancient Greek), with a competing Semitic proposal; probably Pre-Greek",
+    "etymology": "Greek Εὐρώπη (Eurṓpē). Two analyses compete: an inner-Greek compound of εὐρύς (eurýs) \"broad, wide\" and ὤψ (ṓps) \"face, eye, look,\" \"broad-faced / wide-gazing\"; or a borrowing from a Semitic root ʿrb \"to set (of the sun), west\" (cf. Akkadian erēbu), \"the land of the sunset.\" Beekes regards the name as probably Pre-Greek.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Εὐρώπη" },
+      { "kind": "secondary", "reference": "Chantraine, Dictionnaire étymologique de la langue grecque, s.v. Εὐρώπη" }
+    ]
+  },
+  "greek_callisto": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Καλλιστώ (Kallistṓ), from the superlative κάλλιστος (kállistos) \"most beautiful\" (καλός \"beautiful\"), \"the most beautiful one\" — the Arcadian companion of Artemis turned into the Great Bear.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κάλλιστος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_chione": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Χιόνη (Chiónē), from χιών (chiṓn) \"snow,\" \"snow-maiden, the snowy one.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. χιών" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. χιών" }
+    ]
+  },
+  "greek_oreithyia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὠρείθυια / Ὀρείθυια (Ōreíthyia), from ὄρος (óros) \"mountain\" and θύω (thýō) \"to rush, rage, storm,\" \"she who rages on the mountains\" — the Athenian princess carried off by Boreas the north wind.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. θύω" }
+    ]
+  },
+  "greek_creusa_athens": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κρέουσα (Kréousa), the feminine of κρείων (kreíōn) \"ruler, lord\" (participial \"ruling\"), \"princess, the ruling woman\" — a royal name borne by the Athenian daughter of Erechtheus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κρείων" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_clymene_merops": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κλυμένη (Klyménē), from the stem of κλυτός/κλύω (klytós \"famous,\" klýō \"to be spoken of, be renowned\"), \"the renowned one\" (cf. the masculine Κλύμενος).",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κλυτός" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_manto": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μαντώ (Mantṓ), from μάντις (mántis) \"seer, prophet\" (μαντεία, manteía \"prophecy\"), \"the prophetess\" — the seer-daughter of Tiresias.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. μάντις" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. μάντις" }
+    ]
+  },
+  "greek_dia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Δῖα (Dîa), the feminine of δῖος (dîos) \"heavenly, divine, bright\" (from the stem of Ζεύς / *diw-), \"the divine/bright one.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. δῖος" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. δῖος" }
+    ]
+  },
+  "greek_polymele": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πολυμήλη (Polymḗlē), from πολύς (polýs) \"many\" and μῆλον (mêlon) \"sheep, head of small cattle,\" \"rich in flocks\" — a name marking pastoral wealth.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. πολύς, μῆλον" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_alcestis": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἄλκηστις (Álkēstis), from ἀλκή (alkḗ) \"valor, defensive might,\" \"the valiant one\" — fitting the wife who dares to die in her husband's place.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἀλκή" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_olympias": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὀλυμπιάς (Olympiás), \"the Olympian (woman),\" a derivative of Ὄλυμπος / Ὀλύμπιος; the same word names the four-year Olympic period. The Molossian mother of Alexander the Great.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. Ὀλυμπιάς" }
+    ]
+  },
+  "greek_philip_ii": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Φίλιππος (Phílippos), a transparent compound of φίλος (phílos) \"dear; loving, fond of\" and ἵππος (híppos) \"horse,\" \"lover of horses\" — an aristocratic name fitting the horse-owning Macedonian elite.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. φίλος, ἵππος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_cleopatra_of_macedon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κλεοπάτρα (Kleopátra), from κλέος (kléos) \"glory, fame\" and πατήρ (patḗr) \"father,\" \"glory of the father\" or \"of a famous father\" — an old heroic compound (a Κλεοπάτρη already appears in the Iliad).",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κλέος" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8b ETYMOLOGY (LOWER TIERS) — the Roman cohort: the Alban-king Silvian
+  //  line (Livy 1.3; Virgil Aen. 6) and the Julio-Claudian dynasty. Latin
+  //  onomastics are exceptionally well documented; several names carry an
+  //  explicit ancient etymology (Augustus < augeo, Caligula < caliga, the
+  //  Drusus agnomen, Tiberius < the Tiber), cited to the primary source
+  //  (Suetonius, Ovid, Livy, the Historia Augusta) alongside Lewis & Short for
+  //  the common-noun bases. Uncertain nomina (Caesar, the gens names) are given
+  //  the range of ancient explanations rather than a single invented origin.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "roman_rhea_silvia": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Rhea Silvia. The cognomen Silvia derives from silva \"forest, woodland\" — \"she of the forest,\" the dynastic name of the Alban Silvii; the first name Rhea is the Greek Titaness-name attached to her in the later tradition. The Vestal mother of Romulus and Remus by Mars.",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3–4" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. silva" }
+    ]
+  },
+  "roman_daunus": {
+    "languageFamily": "Messapic/Illyrian (non-Latin)",
+    "etymology": "Daunus, eponymous king of Daunia (northern Apulia). The name is Messapic/Illyrian rather than Latin and has been connected with an Illyrian word for \"wolf\" (the wolf being a totem of the region); Greek sources render it Δαῦνος. The etymology is reconstructed and not certain.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hans Krahe, studies of Illyrian and Messapic onomastics" }
+    ]
+  },
+  "iulius_proculus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Iulius Proculus. The cognomen Proculus is an old Roman name traditionally explained from procul \"far off, at a distance,\" said to mark a son born while the father was abroad; the gens-name Iulius the family traced to Iulus (Ascanius). The senator who testified to Romulus' apotheosis.",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.16 (Proculus Iulius and Romulus' apotheosis)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. procul" }
+    ]
+  },
+  "roman_latinus_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Latinus Silvius, an Alban king of the Silvian line. Latinus is the eponym of the Latini and of Latium; Silvius (from silva \"forest\") is the hereditary cognomen of the Alban kings, said to derive from an ancestor born in the woodland.",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. silva" }
+    ]
+  },
+  "roman_alba_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Alba Silvius, an Alban king. Alba reflects albus \"white\" (whence Alba Longa, the \"long white\" mother-city of Rome); Silvius is the Alban dynastic cognomen from silva \"forest.\"",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.vv. albus, silva" }
+    ]
+  },
+  "greek_apollod_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Silvius, first of the Alban dynastic line and son of Ascanius. The name derives from silva \"forest,\" because (per Livy and Virgil) he was born and reared in the woodland; it became the hereditary cognomen of the Alban kings.",
+    "sources": [
+      { "kind": "primary", "reference": "Virgil, Aeneid 6.760–766 (Silvius in the parade of Alban kings)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. silva" }
+    ]
+  },
+  "roman_aeneas_silvius": {
+    "languageFamily": "Italic (Latin), with a Greek/Pre-Greek first name",
+    "etymology": "Latin Aeneas Silvius, an Alban king combining the Trojan founder-name Aeneas (Greek Αἰνείας, linked by the Greeks to αἶνος, aînos \"praise, tale,\" though the name is probably Pre-Greek) with the Alban dynastic cognomen Silvius (silva \"forest\").",
+    "sources": [
+      { "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Αἰνείας" }
+    ]
+  },
+  "roman_iulius_caesar_iii": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Gaius Iulius Caesar. The gens Iulia traced its nomen to Iulus (Ascanius), son of Aeneas; the cognomen Caesar was explained variously by the ancients (from caesaries \"a fine head of hair,\" caesius \"blue-grey eyes,\" an ancestor who slew an elephant, or caesus \"cut,\" born by incision), its true origin uncertain. The father of the dictator.",
+    "sources": [
+      { "kind": "primary", "reference": "Historia Augusta, Aelius 2.3–5 (the ancient etymologies of Caesar)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Caesar" }
+    ]
+  },
+  "roman_aurelia_cotta": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Aurelia, of the gens Aurelia, whose nomen the Roman antiquarians connected with aureus \"golden\" or with a Sabine word ausel \"sun\" (the family honored by the Sabines for sun-worship); the cognomen Cotta is an old Roman name of uncertain meaning. The mother of Julius Caesar.",
+    "sources": [
+      { "kind": "primary", "reference": "Festus / Paulus ex Festo, s.v. Aureliam familiam (the Sabine ausel 'sun')" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. aureus" }
+    ]
+  },
+  "roman_caesar_dictator": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Gaius Iulius Caesar. The cognomen Caesar carried four competing ancient etymologies — from caesaries \"a head of hair,\" caesius \"blue-grey (eyes),\" the Moorish word for an elephant slain by an ancestor, or caesus \"cut\" (a forebear born a caeso matris utero, cut from the womb) — none demonstrably correct; the gens Iulia traced its nomen to Iulus son of Aeneas.",
+    "sources": [
+      { "kind": "primary", "reference": "Pliny, Natural History 7.47 (a caeso matris utero)" },
+      { "kind": "primary", "reference": "Historia Augusta, Aelius 2.3–5 (the four etymologies of Caesar)" }
+    ]
+  },
+  "roman_iulia_caesaris": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Iulia, feminine of the nomen of the gens Iulia, which the family traced to Iulus (Ascanius), son of Aeneas; Roman women bore the gens-name as their personal name. The elder sister of Julius Caesar.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Iulius" },
+      { "kind": "secondary", "reference": "Chase, The Origin of Roman Praenomina (Harvard Studies in Classical Philology 8, 1897)" }
+    ]
+  },
+  "roman_atia_balba": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Atia, of the gens Atia (an Aricine family; nomen of uncertain origin); the cognomen Balba derives from balbus \"stammering, stuttering.\" The mother of Augustus.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Divus Augustus 4" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. balbus" }
+    ]
+  },
+  "roman_octavia_minor": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Octavia, feminine of the gens Octavia, whose nomen derives from the numeral/praenomen octavus \"eighth\" (octo \"eight\"); the epithet Minor \"the younger\" distinguishes her from her elder half-sister. The sister of Augustus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.vv. octavus, octo" },
+      { "kind": "primary", "reference": "Suetonius, Divus Augustus 4" }
+    ]
+  },
+  "roman_augustus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Augustus, the honorific conferred on Octavian in 27 BCE, from the adjective augustus \"venerable, majestic, consecrated by augury\" (akin to augeo \"to increase, augment\" and augur). Suetonius and Ovid explain it as marking him the consecrated and revered one, more than merely human.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Divus Augustus 7" },
+      { "kind": "primary", "reference": "Ovid, Fasti 1.587–616 (the name Augustus)" }
+    ]
+  },
+  "roman_iulia_the_elder": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Iulia, feminine of the nomen of the gens Iulia (traced to Iulus son of Aeneas); the only child of Augustus, she bore the gens-name as her personal name in the Roman manner.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Iulius" },
+      { "kind": "secondary", "reference": "Chase, The Origin of Roman Praenomina (Harvard Studies in Classical Philology 8, 1897)" }
+    ]
+  },
+  "roman_tiberius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Tiberius, an old Roman praenomen derived from the river-name Tiberis (the Tiber), \"(child) of the Tiber.\" The emperor Tiberius Claudius Nero.",
+    "sources": [
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Tiberis / Tiberius" },
+      { "kind": "secondary", "reference": "Chase, The Origin of Roman Praenomina (Harvard Studies in Classical Philology 8, 1897)" }
+    ]
+  },
+  "roman_drusus_the_elder": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Drusus, a cognomen of the Livii and Claudii; Suetonius reports it was first borne by an ancestor who slew an enemy leader named Drausus and assumed his name. Nero Claudius Drusus, brother of Tiberius.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Tiberius 3.2 (origin of the Drusus cognomen)" }
+    ]
+  },
+  "roman_germanicus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Germanicus, an agnomen \"(conqueror) of Germania,\" from Germani/Germania; first won by his father Drusus for campaigns beyond the Rhine and inherited as a hereditary honorific. The general Germanicus Iulius Caesar.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Divus Claudius 1.3 (the agnomen Germanicus)" },
+      { "kind": "secondary", "reference": "Lewis & Short, A Latin Dictionary, s.v. Germanicus" }
+    ]
+  },
+  "roman_caligula": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Latin Caligula, \"Little Boot,\" a diminutive of caliga \"the hobnailed military boot,\" a nickname given in childhood by his father Germanicus' troops when he was dressed in a miniature soldier's outfit in camp; his formal name was Gaius.",
+    "sources": [
+      { "kind": "primary", "reference": "Suetonius, Gaius (Caligula) 9 (the nickname from caliga)" },
+      { "kind": "primary", "reference": "Tacitus, Annals 1.41" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8c ETYMOLOGY (LOWER TIERS) — the Hindu cohort: the Mahābhārata circle
+  //  (the Bhārata-dynasty elders, the sons of the Pāṇḍavas and of Karṇa, the
+  //  Janamejaya line) and the Rāmāyaṇa princes and rākṣasas. Sanskrit names are
+  //  highly transparent compounds; the epics frequently gloss them outright
+  //  (Pāṇḍu's pallor, Ghaṭotkaca's pot-shaped head, Rāvaṇa named for his roar,
+  //  Indrajit for defeating Indra). Cited to Monier-Williams (A Sanskrit-English
+  //  Dictionary, 1899) for the lexical bases, Vettam Mani's Purāṇic Encyclopaedia
+  //  for the figures and their naming, and the primary epic where it supplies
+  //  the etymology. IAST transliteration throughout.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "hindu_shantanu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit शान्तनु (Śāntanu), from śam \"to be calm, appeased, wholesome\" and tanu \"body,\" \"he who is wholesome for the body\"; the Mahābhārata (Ādi Parva) glosses the name from the health and calm his touch conferred. The Kuru king, husband of Gaṅgā and Satyavatī.",
+    "sources": [
+      { "kind": "primary", "reference": "Mahābhārata, Ādi Parva (the gloss of Śāntanu's name)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śam, tanu" }
+    ]
+  },
+  "hindu_satyavati": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सत्यवती (Satyavatī), from satya \"truth\" and the possessive -vatī, \"she who possesses truth, the truthful one\"; her earlier epithets Matsyagandhā \"fish-scented\" and Yojanagandhā \"whose fragrance carries a yojana\" recall her fisher origin. Mother of Vyāsa and queen of Śāntanu.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. satya, -vat" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Satyavatī" }
+    ]
+  },
+  "hindu_pandu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit पाण्डु (Pāṇḍu), \"pale, whitish, yellow-white,\" \"the Pale One\" — the Mahābhārata (Ādi Parva) explains that he was born pale because of his mother's fear at his conception. Father of the Pāṇḍavas.",
+    "sources": [
+      { "kind": "primary", "reference": "Mahābhārata, Ādi Parva (Pāṇḍu born pale)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. pāṇḍu" }
+    ]
+  },
+  "hindu_kunti": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit कुन्ती (Kuntī), \"the lady of the Kuntis,\" a matronymic from her adoptive father Kuntibhoja; her birth-name was Pṛthā (पृथा) \"the broad/ample one\" (from pṛthu \"broad, wide\"). The mother of the elder Pāṇḍavas.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. Kuntī, pṛthu" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Kuntī" }
+    ]
+  },
+  "hindu_madri": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit माद्री (Mādrī), \"the princess of the Madra people\" (the Madra kingdom of the Punjab); the name is the feminine ethnonym. Second wife of Pāṇḍu, mother of the twins Nakula and Sahadeva.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. Madra/Mādrī" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Mādrī" }
+    ]
+  },
+  "hindu_draupadi": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit द्रौपदी (Draupadī), a patronymic \"daughter of Drupada\" (Drupada \"wooden post, pillar,\" from dru \"wood, tree\" + pada); her further names Pāñcālī \"princess of Pañcāla\" and Yājñasenī \"daughter of Yajñasena (Drupada)\" are likewise patronymic/dynastic.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. Draupadī, drupada" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Draupadī" }
+    ]
+  },
+  "hindu_devaki": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit देवकी (Devakī), \"the divine one\" / matronymic \"daughter of Devaka,\" from deva \"god, divine\" — the mother of Kṛṣṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. deva, Devakī" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Devakī" }
+    ]
+  },
+  "hindu_vasudeva": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वसुदेव (Vasudeva), from vasu \"wealth; bright, good; the class of Vasu deities\" and deva \"god,\" \"the bright/wealth-giving god\" — father of Kṛṣṇa, whence Kṛṣṇa's patronymic Vāsudeva. His epithet Ānakadundubhi marks the ānaka and dundubhi drums that sounded at his birth.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. vasu, deva" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vasudeva" }
+    ]
+  },
+  "hindu_rohini_vasudeva": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit रोहिणी (Rohiṇī), \"the red one; the ascending/growing one\" (from ruh \"to ascend, grow\"); also the name of the ruddy lunar mansion (Aldebaran). Wife of Vasudeva, mother of Balarāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. rohiṇī, ruh" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Rohiṇī" }
+    ]
+  },
+  "hindu_vishrava": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit विश्रवस् (Viśravas), from vi- (intensive) and śravas \"fame, glory, renown\" (√śru \"to hear\"), \"of wide renown, far-famed\" — the sage son of Pulastya, father of Rāvaṇa, Kubera, Kumbhakarṇa and Vibhīṣaṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śravas, śru" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Viśravas" }
+    ]
+  },
+  "hindu_amba": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अम्बा (Ambā), \"mother,\" a respectful term for a woman or mother; the eldest princess of Kāśī, reborn as Śikhaṇḍin (śikhaṇḍin \"crested, tufted,\" from śikhaṇḍa \"crest, peacock's tail\") to bring about Bhīṣma's death.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. ambā, śikhaṇḍin" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Ambā" }
+    ]
+  },
+  "hindu_shatanika_janamejaya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit शतानीक (Śatānīka), from śata \"hundred\" and anīka \"army, battle-front,\" \"he of a hundred armies\" — a Bhārata king of the lunar dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śata, anīka" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śatānīka" }
+    ]
+  },
+  "hindu_dasharatha": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit दशरथ (Daśaratha), from daśa \"ten\" and ratha \"chariot,\" \"he of ten chariots\" (or whose chariot ranges the ten directions) — a great warrior; the Ikṣvāku king of Ayodhyā and father of Rāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. daśa, ratha" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Daśaratha" }
+    ]
+  },
+  "hindu_kausalya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit कौसल्या (Kausalyā), \"the princess of Kosala\" (the Kosala kingdom), a feminine derivative of the realm-name. Chief queen of Daśaratha and mother of Rāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. Kosala/Kausalyā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Kausalyā" }
+    ]
+  },
+  "hindu_sumitra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुमित्रा (Sumitrā), from su- \"good, well\" and mitra \"friend,\" \"having good friends, well-befriended\" — a queen of Daśaratha, mother of Lakṣmaṇa and Śatrughna.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. su, mitra" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Sumitrā" }
+    ]
+  },
+  "hindu_abhimanyu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अभिमन्यु (Abhimanyu), from abhi- \"towards, intensely\" and manyu \"spirit, ardour, wrath,\" \"full of heroic ardour, impetuous\" — son of Arjuna and Subhadrā (whence Saubhadra), slain breaking the cakra-vyūha.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. abhi, manyu" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Abhimanyu" }
+    ]
+  },
+  "hindu_angada": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अङ्गद (Aṅgada), \"an armlet, bracelet worn on the upper arm\" (from aṅga \"limb\") — the name of the vānara prince, son of Vālin, in the Rāmāyaṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. aṅgada" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Aṅgada" }
+    ]
+  },
+  "hindu_babhruvahana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit बभ्रुवाहन (Babhruvāhana), from babhru \"tawny, reddish-brown\" and vāhana \"mount, vehicle,\" \"he of the tawny mount\" — son of Arjuna and Citrāṅgadā, king of Maṇipūra.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. babhru, vāhana" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Babhruvāhana" }
+    ]
+  },
+  "hindu_chitrasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit चित्रसेन (Citrasena), from citra \"bright, variegated, conspicuous\" and senā \"army,\" \"having a brilliant army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. citra, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Citrasena" }
+    ]
+  },
+  "hindu_ghatotkacha": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit घटोत्कच (Ghaṭotkaca), from ghaṭa \"pot, pitcher\" and utkaca \"bald, hairless\" (the head smooth and pot-like), \"pot-headed\"; the Mahābhārata names him so for his bald, pot-shaped head. Son of Bhīma and the rākṣasī Hiḍimbā.",
+    "sources": [
+      { "kind": "primary", "reference": "Mahābhārata, Ādi Parva (Ghaṭotkaca named for his pot-like bald head)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. ghaṭa, utkaca" }
+    ]
+  },
+  "hindu_iravan": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit इरावान् (Irāvān, also Irāvat), from irā \"draught, refreshment, water, comfort,\" \"endowed with comfort/water\" — son of Arjuna and the Nāga princess Ulūpī (the Tamil Aravāṇ).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. irā, irāvat" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Irāvān" }
+    ]
+  },
+  "hindu_kumbhakarna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit कुम्भकर्ण (Kumbhakarṇa), from kumbha \"pot, pitcher\" and karṇa \"ear,\" \"pot-eared, he whose ears are like pots\" — the giant brother of Rāvaṇa, famed for his months-long sleep.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. kumbha, karṇa" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Kumbhakarṇa" }
+    ]
+  },
+  "hindu_niramitra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit निरमित्र (Niramitra), from nis/nir- \"without\" and amitra \"enemy\" (a- + mitra \"non-friend, foe\"), \"free of enemies, without a foe\" — a son of Nakula.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. nis, amitra" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Niramitra" }
+    ]
+  },
+  "hindu_prativindhya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit प्रतिविन्ध्य (Prativindhya), from prati \"facing, towards\" and Vindhya (the Vindhya range), \"facing the Vindhya\" — said to be born facing those mountains; eldest of the Upapāṇḍavas, son of Yudhiṣṭhira and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. prati, Vindhya" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Prativindhya" }
+    ]
+  },
+  "hindu_ravana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit रावण (Rāvaṇa), from the causative of √ru \"to roar, cry out,\" \"he who makes (the worlds) scream\"; the Uttarakāṇḍa relates that Śiva named him Rāvaṇa for his roar when pinned beneath Mount Kailāsa. His epithets Daśānana / Daśagrīva mean \"ten-faced / ten-necked.\"",
+    "sources": [
+      { "kind": "primary", "reference": "Rāmāyaṇa, Uttarakāṇḍa (Śiva names Rāvaṇa for his roar)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. rāvaṇa, ru" }
+    ]
+  },
+  "hindu_sarvaga": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सर्वग (Sarvaga), from sarva \"all\" and -ga \"going\" (√gam), \"all-pervading, going everywhere\" — a son of Bhīma (by Balandharā).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. sarva, gam" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Sarvaga" }
+    ]
+  },
+  "hindu_satyasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सत्यसेन (Satyasena), from satya \"true, truthful\" and senā \"army,\" \"having a true army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. satya, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Satyasena" }
+    ]
+  },
+  "hindu_shatanika": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit शतानीक (Śatānīka), from śata \"hundred\" and anīka \"army, battle-front,\" \"he of a hundred armies\" — a son of Nakula and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śata, anīka" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śatānīka" }
+    ]
+  },
+  "hindu_shrutakarma": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit श्रुतकर्मन् (Śrutakarman), from śruta \"famed, renowned (lit. heard)\" and karman \"deed, act,\" \"of famous deeds\" — son of Arjuna and Draupadī (the variant Śrutakīrti means \"of famed renown\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śruta, karman" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śrutakarmā" }
+    ]
+  },
+  "hindu_shrutasena": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit श्रुतसेन (Śrutasena), from śruta \"famed, renowned\" and senā \"army,\" \"having a famous army\" — son of Sahadeva and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. śruta, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Śrutasena" }
+    ]
+  },
+  "hindu_suhotra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुहोत्र (Suhotra), from su- \"good, well\" and hotra \"oblation, sacrificial offering\" (√hu \"to offer\"), \"performing good oblations\" — a son of Sahadeva (the name also borne by a Bhārata ancestor).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. su, hotra" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Suhotra" }
+    ]
+  },
+  "hindu_sushena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुषेण (Suṣeṇa), from su- \"good, mighty\" and senā \"army\" (sandhi -ṣeṇa), \"having a goodly/mighty army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. su, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Suṣeṇa" }
+    ]
+  },
+  "hindu_sutasoma": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुतसोम (Sutasoma), from suta \"pressed, extracted\" and soma \"the soma juice\" (also the moon), \"for whom the soma was pressed\" — born, per the epic, when his father had performed a soma sacrifice. Son of Bhīma and Draupadī.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. suta, soma" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Sutasoma" }
+    ]
+  },
+  "hindu_vibhishana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit विभीषण (Vibhīṣaṇa), from vi- (intensive) and bhīṣaṇa \"terrifying, frightful\" (√bhī \"to fear\"), \"the terrifying one\" — borne, with characteristic irony, by the righteous rākṣasa brother of Rāvaṇa who sides with Rāma.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. bhīṣaṇa, bhī" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vibhīṣaṇa" }
+    ]
+  },
+  "hindu_vrishaketu_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वृषकेतु (Vṛṣaketu), from vṛṣa \"bull\" and ketu \"banner, ensign,\" \"he whose banner bears a bull\" — the surviving son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. vṛṣa, ketu" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vṛṣaketu" }
+    ]
+  },
+  "hindu_vrishasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वृषसेन (Vṛṣasena), from vṛṣa \"bull; the mighty one\" and senā \"army,\" \"having a bull-strong army\" — a son of Karṇa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. vṛṣa, senā" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Vṛṣasena" }
+    ]
+  },
+  "hindu_yaudheya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit यौधेय (Yaudheya), \"warrior, son of a warrior,\" from yodha \"fighter\" (√yudh \"to fight\"); also the name of the martial Yaudheya republic. A son of Yudhiṣṭhira (by Devikā).",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. yaudheya, yodha, yudh" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Yaudheya" }
+    ]
+  },
+  "hindu_anjanaparvan": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अञ्जनपर्वन् (Añjanaparvan), from añjana \"collyrium, dark eye-salve (also Mount Añjana)\" and parvan \"knot, joint, mountain-ridge,\" \"dark as collyrium\" or \"of the Añjana peak\" — son of Ghaṭotkaca.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. añjana, parvan" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Añjanaparvan" }
+    ]
+  },
+  "hindu_indrajit": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit इन्द्रजित् (Indrajit), \"conqueror of Indra,\" from Indra and -jit \"conquering\" (√ji); the title won by Rāvaṇa's son Meghanāda (\"thunder-roar,\" megha \"cloud\" + nāda \"roar\") after defeating Indra in battle.",
+    "sources": [
+      { "kind": "primary", "reference": "Rāmāyaṇa, Uttarakāṇḍa (Meghanāda earns the name Indrajit)" },
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. indrajit, ji, megha, nāda" }
+    ]
+  },
+  "hindu_janamejaya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit जनमेजय (Janamejaya), from jana \"men, people\" and the causative mejaya \"causing to tremble\" (√ji/ej), \"he who makes men tremble\" — the Kuru king whose snake-sacrifice frames the recitation of the Mahābhārata.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. jana, Janamejaya" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Janamejaya" }
+    ]
+  },
+  "hindu_parikshit": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit परीक्षित् (Parīkṣit), from pari- \"around\" and √īkṣ \"to look, examine,\" \"the examiner\"; the epic also links it to the tested/dwindling (parikṣīṇa) Kuru line into which he was born. Grandson of Arjuna and the king to whom the Bhāgavata is told.",
+    "sources": [
+      { "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.vv. parīkṣit, īkṣ" },
+      { "kind": "secondary", "reference": "Vettam Mani, Purāṇic Encyclopaedia (1975), s.v. Parīkṣit" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8d ETYMOLOGY (LOWER TIERS) — the Egyptian cohort: New Kingdom royals
+  //  of the 18th–20th Dynasties (the Thutmosid and Ramesside houses). Egyptian
+  //  royal and personal names are well-read theophoric compounds with standard
+  //  Egyptological translations; given here in scholarly transliteration with
+  //  the lexical elements. Cited to Hermann Ranke, Die ägyptischen
+  //  Personennamen (1935–52); Jürgen von Beckerath, Handbuch der ägyptischen
+  //  Königsnamen (1999); and Gardiner, Egyptian Grammar (1957). Names of
+  //  genuinely uncertain meaning (Pentaweret, Tuya, Tyti) are flagged as such.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "egyptian_ahmose": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian jꜥḥ-ms(j.w) (Ahmose), \"Iah is born\" or \"born of the moon-god,\" from jꜥḥ \"the moon (Iah)\" and ms \"to bear, be born\" — the -mose element familiar from Thutmose and the name Moses.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), on jꜥḥ and ms" }
+    ]
+  },
+  "egyptian_akhenaten": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ꜣḫ-n-jtn (Akhenaten), \"beneficial/effective for the Aten\" (sometimes rendered \"radiance of the Aten\"), from ꜣḫ \"effective, glorious, beneficial\", n \"for\", and jtn \"the Aten (sun-disk)\" — the name Amenhotep IV took for his solar reform.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ꜣḫ" }
+    ]
+  },
+  "egyptian_amunherkhepeshef": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian jmn-ḥr-ḫpš=f (Amunherkhepeshef), \"Amun is upon his strong arm,\" from Jmn \"Amun\", ḥr \"upon\", ḫpš \"the strong arm; the curved scimitar\", and =f \"his\" — a Ramesside crown-prince name.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ḫpš" }
+    ]
+  },
+  "egyptian_iset_ta_hemdjert": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ꜣst (Iset/Isis), \"she of the throne\" (the goddess-name from st \"seat, throne\"), here with the distinguishing epithet Ta-Hemdjeret. A chief queen of Ramesses III.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), on ꜣst / st" }
+    ]
+  },
+  "egyptian_khaemwaset_c": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst (Khaemwaset), \"appearing in glory in Thebes,\" from ḫꜥj \"to rise, appear in glory (as the sun or king)\", m \"in\", and Wꜣst \"Thebes\"; the letter C is a modern prosopographic disambiguator.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.vv. ḫꜥj, Wꜣst" }
+    ]
+  },
+  "egyptian_khaemweset": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst (Khaemweset), \"appearing in glory in Thebes,\" from ḫꜥj \"to appear in glory\", m \"in\", and Wꜣst \"Thebes\" — borne by the learned priest-prince and sem-priest, son of Ramesses II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.vv. ḫꜥj, Wꜣst" }
+    ]
+  },
+  "egyptian_kheredu_ankh": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Kheredankh / Kheredu-ankh) appears to contain ẖrd \"child\" and ꜥnḫ \"to live, life,\" roughly \"the child lives\"; the reading and exact sense are uncertain. Named in later tradition as the mother of the deified Imhotep.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_merneptah": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian mr(y)-n-ptḥ (Merneptah), \"beloved of Ptah,\" from mry \"beloved\", n, and Ptḥ \"Ptah\" — the son and successor of Ramesses II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_mutemwiya": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian mwt-m-wjꜣ (Mutemwiya), \"Mut is in the (sacred) barque,\" from the goddess Mwt \"Mut\", m \"in\", and wjꜣ \"the divine barque\" — mother of Amenhotep III.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. wjꜣ" }
+    ]
+  },
+  "egyptian_neferure": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian nfrw-rꜥ (Neferure), \"the perfection of Ra,\" from nfrw \"beauty, perfection, goodness\" and Rꜥ \"Ra\" — the daughter of Hatshepsut and Thutmose II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. nfr" }
+    ]
+  },
+  "egyptian_pentaweret": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Pentaweret), the name recorded in the Judicial Papyrus of Turin for the prince condemned in the harem conspiracy against Ramesses III. It is very likely a substitute name used in the trial record rather than his true name; the sense is uncertain (perhaps pꜣ-n-tꜣ-wrt, \"he of the Great One\").",
+    "sources": [
+      { "kind": "primary", "reference": "Judicial Papyrus of Turin (the harem-conspiracy trial of Ramesses III)" },
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_ramesses_iv": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian rꜥ-ms-sw (Ramesses), \"Ra is he who bore him\" / \"born of Ra,\" from Rꜥ \"Ra\", ms \"to bear, fashion\", and sw \"him\"; the regnal numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ms" }
+    ]
+  },
+  "egyptian_ramesses_vi": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian rꜥ-ms-sw (Ramesses), \"Ra is he who bore him\" / \"born of Ra,\" from Rꜥ \"Ra\", ms \"to bear, fashion\", and sw \"him\"; the regnal numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. ms" }
+    ]
+  },
+  "egyptian_seti_ii": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian stẖy (Sety/Seti), \"he of (the god) Seth,\" a name derived from Stẖ \"Seth\"; the numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_setnakhte": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian stẖ-nḫt (Setnakhte), \"Seth is victorious / strong,\" from Stẖ \"Seth\" and nḫt \"strong, victorious\" — the founder of the 20th Dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. nḫt" }
+    ]
+  },
+  "egyptian_sitamun": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian sꜣt-jmn (Sitamun), \"daughter of Amun,\" from sꜣt \"daughter\" and Jmn \"Amun\" — a daughter and later great royal wife of Amenhotep III.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. sꜣt" }
+    ]
+  },
+  "egyptian_tausret": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian tꜣ-wsrt (Tausret / Twosret), \"the mighty lady,\" from the feminine article tꜣ and wsr(t) \"powerful, mighty\" — the female pharaoh who closed the 19th Dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+      { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), s.v. wsr" }
+    ]
+  },
+  "egyptian_tiy_merenese": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Tiy-Merenese / Tiy-Mereniset) combines the personal name Tiy with mr(y).t-n-ꜣst \"beloved of Isis\" (mry \"beloved\" + the goddess Isis); a queen of Setnakhte and mother of Ramesses III. The element Tiy is a common name of uncertain meaning.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_tuya": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Tuya, also Mut-Tuya), a personal name of uncertain meaning, linked through the compound form Mut-Tuya to the goddess Mut; the wife of Seti I and mother of Ramesses II.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+  "egyptian_tyti": {
+    "languageFamily": "Afro-Asiatic (Egyptian)",
+    "etymology": "Egyptian (Tyti / Titi), a queen of the 20th Dynasty buried in the Valley of the Queens; the name is a personal name of uncertain meaning.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8e ETYMOLOGY (LOWER TIERS) — the Mesopotamian cohort: the Sargonic
+  //  (Akkad) dynasty, the kings of the Third Dynasty of Ur, and figures of the
+  //  Uruk tradition (Lugalbanda) and the cult (the entu-priestesses Enheduanna,
+  //  Enmaḫgalanna). Sumerian and Akkadian royal names are largely transparent
+  //  (Šarru-kīn "the king is legitimate," Narām-Sîn "beloved of Sîn,"
+  //  Amar-Suen "calf of Suen"). Cited to Frayne's Royal Inscriptions of
+  //  Mesopotamia (RIME), the Pennsylvania Sumerian Dictionary and the Chicago
+  //  Assyrian Dictionary for the lexical bases, and Stamm's Die akkadische
+  //  Namengebung. Kassite and otherwise uncertain names are flagged.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "mesopotamian_sargon": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Šarru-kīn (Šarrum-kēn), \"the king is legitimate/true,\" from šarru \"king\" and kīnu \"firm, true, legitimate\" — a programmatic throne-name for the usurper who founded the Akkadian Empire.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2 (Sargonic and Gutian Periods)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.vv. šarru, kīnu" }
+    ]
+  },
+  "mesopotamian_rimush": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Rīmuš, generally connected with rīmu \"wild bull\" (a common symbol of royal might), roughly \"his wild bull / the wild bull (of the god)\"; the precise formation is debated. The second king of Akkad, son of Sargon.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. rīmu" }
+    ]
+  },
+  "mesopotamian_manishtushu": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Man-ištušu, plausibly the question-name mannu-ištū-šu \"who is with him?\" — a name-type asserting the bearer's incomparability; the analysis is not certain. A king of Akkad, son of Sargon.",
+    "sources": [
+      { "kind": "secondary", "reference": "J. J. Stamm, Die akkadische Namengebung (1939)" },
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" }
+    ]
+  },
+  "mesopotamian_naram_sin": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Narām-Sîn, \"beloved of Sîn (the moon-god),\" from narāmu \"beloved\" and the divine name Sîn — the king of Akkad who first styled himself a god.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. narāmu" }
+    ]
+  },
+  "mesopotamian_shar_kali_sharri": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Šar-kali-šarrī, \"king of all kings,\" from šar \"king,\" kali \"all, totality,\" and šarrī \"of kings\" — the last great king of Akkad.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 2" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. šarru" }
+    ]
+  },
+  "mesopotamian_ur_nammu": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Ur-Namma (Ur-Nammu), \"man/servant of (the goddess) Namma,\" from ur \"man, servant; warrior\" and the primeval goddess Namma — founder of the Third Dynasty of Ur and promulgator of the earliest known law-code.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. ur" }
+    ]
+  },
+  "mesopotamian_amar_sin": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Amar-Suen, \"calf of (the moon-god) Suen/Sîn,\" from amar \"calf, young animal\" and the divine name Suen — the third king of the Ur III dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. amar" }
+    ]
+  },
+  "mesopotamian_shu_sin": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Šu-Suen, \"the one of (the moon-god) Suen/Sîn\" (Sumerian šu, here \"the one belonging to\") — the fourth king of the Ur III dynasty.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. šu" }
+    ]
+  },
+  "mesopotamian_ibbi_sin": {
+    "languageFamily": "Semitic (Akkadian) name of a Sumerian dynasty",
+    "etymology": "Akkadian Ibbi-Sîn, \"Sîn has named/called (this child),\" from nabû \"to name, call\" (preterite ibbi) and the moon-god Sîn — the last king of Ur III, in whose reign the empire fell.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. nabû" }
+    ]
+  },
+  "mesopotamian_enheduanna": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian En-ḫedu-Ana, \"high-priestess, ornament of An (the sky-god),\" from en \"high priest(ess), lord,\" ḫe-du₇ \"(fitting) ornament,\" and the god An — the en-priestess of Nanna at Ur, daughter of Sargon, and the earliest author known by name.",
+    "sources": [
+      { "kind": "secondary", "reference": "W. W. Hallo & J. J. A. van Dijk, The Exaltation of Inanna (1968)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.vv. en, ḫedu" }
+    ]
+  },
+  "mesopotamian_enmahgalanna": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian En-maḫgal-ana, an en-priestess ceremonial name built on en \"high priest(ess)\" and elements maḫ \"exalted, supreme\" and gal \"great,\" with the god An — roughly \"exalted great priestess of An\"; the precise parsing is uncertain. An entu-priestess of the Ur III house.",
+    "sources": [
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.vv. en, maḫ, gal" }
+    ]
+  },
+  "mesopotamian_geme_ninlilla": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Geme-Ninlila, \"female servant of (the goddess) Ninlil,\" from geme \"female servant, slave-woman\" and the goddess Ninlil — a royal woman of the Ur III court.",
+    "sources": [
+      { "kind": "secondary", "reference": "Douglas Frayne, Royal Inscriptions of Mesopotamia: Early Periods, vol. 3/2 (Ur III Period)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. geme" }
+    ]
+  },
+  "mesopotamian_lugalbanda": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Lugal-banda, from lugal \"king\" (literally lú-gal \"big man\") and banda \"junior, fierce, wild; little,\" hence \"the fierce/junior king\" — the deified hero-king of Uruk, husband of Ninsun and, in tradition, father of Gilgamesh.",
+    "sources": [
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.vv. lugal, banda" },
+      { "kind": "primary", "reference": "Sumerian King List (the First Dynasty of Uruk)" }
+    ]
+  },
+  "mesopotamian_ur_nungal": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Ur-Nungal, \"man/servant of (the deity) Nungal,\" from ur \"man, servant\" and the divine name Nungal; the parsing of the theonym is not fully certain. Listed in the Sumerian King List as a son of Gilgamesh and king of Uruk.",
+    "sources": [
+      { "kind": "primary", "reference": "Sumerian King List (the First Dynasty of Uruk)" },
+      { "kind": "secondary", "reference": "The Pennsylvania Sumerian Dictionary (ePSD), s.v. ur" }
+    ]
+  },
+  "mesopotamian_ashur_dan_i": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Aššur-dān, \"Ashur is mighty,\" from the national god Aššur and dān \"strong, mighty\" (dānu) — a Middle Assyrian king; the numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "J. J. Stamm, Die akkadische Namengebung (1939)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. dannu/dānu" }
+    ]
+  },
+  "mesopotamian_meli_shipak_ii": {
+    "languageFamily": "Kassite (unclassified)",
+    "etymology": "A Kassite royal name (Meli-Šipak / Melišiḫu) of the Kassite dynasty of Babylon; the element meli- is Kassite and the name is generally taken to mean \"man/servant of (the goddess) Šipak (= the Babylonian Marduk),\" though Kassite is poorly understood and the sense is not secure. The numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "K. Balkan, Kassitenstudien: Die Sprache der Kassiten (1954)" }
+    ]
+  },
+  "mesopotamian_ninurta_apal_ekur": {
+    "languageFamily": "Semitic (Akkadian)",
+    "etymology": "Akkadian Ninurta-apal-Ekur, \"Ninurta is the heir of the Ekur,\" from the god Ninurta, aplu \"heir, son,\" and Ekur (the temple of Enlil at Nippur) — a Middle Assyrian king.",
+    "sources": [
+      { "kind": "secondary", "reference": "J. J. Stamm, Die akkadische Namengebung (1939)" },
+      { "kind": "secondary", "reference": "The Assyrian Dictionary of the Oriental Institute (CAD), s.v. aplu" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8f ETYMOLOGY (LOWER TIERS) — the Japanese cohort: the Minamoto (Seiwa
+  //  Genji) warriors of the late-Heian and Genpei era (the 義/yoshi, 頼/yori and
+  //  為/tame generational characters of the line), the woman-warrior Tomoe
+  //  Gozen, and two Kojiki figures. Japanese personal names are written in
+  //  meaning-bearing kanji; given here with the characters, their readings and
+  //  senses, and the clan's recurring name-character. Cited to Nelson's
+  //  Japanese-English Character Dictionary for the graphs, the Sonpi Bunmyaku
+  //  genealogy for the Minamoto line, and Philippi's Kojiki for the mythic names.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "japanese_yoritomo": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源頼朝 (Minamoto no Yoritomo). The given name 頼朝 joins 頼 (yori) \"to rely on, trust, request\" with 朝 (tomo; also asa \"morning,\" chō \"court, dynasty\"); 頼 is one of the recurring name-characters of the Minamoto (Seiwa Genji) line. Founder of the Kamakura shogunate.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 頼, 朝" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_yoshitsune": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源義経 (Minamoto no Yoshitsune). The name 義経 joins 義 (yoshi) \"righteousness, honour, duty\" — the recurring character of the Seiwa Genji line — with 経 (tsune) \"the warp of cloth; to pass through; the classics/sutras.\" The celebrated general, younger half-brother of Yoritomo.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 義, 経" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_yoshinaka": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源義仲 (Kiso no Yoshinaka). 義 (yoshi) \"righteousness, duty\" — the Seiwa Genji character — with 仲 (naka) \"relationship, intermediacy, the middle.\" The Minamoto general from Kiso.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 義, 仲" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_yoshitomo": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源義朝 (Minamoto no Yoshitomo). 義 (yoshi) \"righteousness\" with 朝 (tomo; \"morning, court\"). Head of the Minamoto in the Heiji disturbance and father of Yoritomo and Yoshitsune.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 義, 朝" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_tameyoshi": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源為義 (Minamoto no Tameyoshi). 為 (tame) \"for the sake of; to do, act\" with 義 (yoshi) \"righteousness, duty\" — the Seiwa Genji character. Head of the Minamoto in the Hōgen disturbance.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 為, 義" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_tametomo": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源為朝 (Minamoto no Tametomo). 為 (tame) \"for the sake of, to act\" with 朝 (tomo; \"morning, court\"). The famed archer of the Hōgen disturbance.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 為, 朝" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_yoshichika": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源義親 (Minamoto no Yoshichika). 義 (yoshi) \"righteousness\" with 親 (chika) \"parent; intimacy, closeness.\" A Minamoto whose revolt was suppressed by Taira no Masamori.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 義, 親" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_yoshikuni": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源義国 (Minamoto no Yoshikuni). 義 (yoshi) \"righteousness\" with 国 (kuni) \"land, province, country.\" Ancestor of the Nitta and Ashikaga houses.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 義, 国" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_yoshitada": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 源義忠 (Minamoto no Yoshitada). 義 (yoshi) \"righteousness\" with 忠 (tada) \"loyalty, faithfulness.\" A Minamoto chieftain assassinated in 1109.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 義, 忠" },
+      { "kind": "primary", "reference": "Sonpi Bunmyaku (medieval genealogy of the Minamoto)" }
+    ]
+  },
+  "japanese_tomoe_gozen": {
+    "languageFamily": "Japonic (Japanese)",
+    "etymology": "Japanese 巴御前 (Tomoe Gozen). 巴 (tomoe) names the comma-shaped swirl emblem (as in the triple-tomoe crest); 御前 (gozen) is an honorific for a noble lady — \"(one before the august) presence,\" i.e. \"Lady.\" The woman warrior who rode with Yoshinaka in the Genpei War.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew N. Nelson, The Modern Reader's Japanese-English Character Dictionary, s.vv. 巴, 御前" },
+      { "kind": "primary", "reference": "Heike Monogatari (The Tale of the Heike), the Tomoe episode" }
+    ]
+  },
+  "japanese_kojiki_iku_tama_yori_hime": {
+    "languageFamily": "Japonic (Old Japanese)",
+    "etymology": "Japanese 活玉依毘売 (Iku-tama-yori-bime), from iku 活 \"living,\" tama 玉 \"jewel; spirit,\" yori 依 \"to draw near, to be possessed (by a kami),\" and hime/bime 毘売 \"princess, lady\" — \"the living spirit-jewel princess,\" a divine medium of the Kojiki's Miwa cycle.",
+    "sources": [
+      { "kind": "secondary", "reference": "Donald L. Philippi (trans.), Kojiki (1968), with name glosses" },
+      { "kind": "primary", "reference": "Kojiki (712 CE), the Miwa/Ōmononushi narrative" }
+    ]
+  },
+  "japanese_kojiki_tomi_ya_bime": {
+    "languageFamily": "Japonic (Old Japanese)",
+    "etymology": "Japanese (Tomiya-bime), a princess of the Kojiki's early Yamato genealogies; the name appears to contain tomi \"abundance, wealth\" and hime/bime \"princess,\" but the medial element and the overall sense are uncertain.",
+    "sources": [
+      { "kind": "secondary", "reference": "Donald L. Philippi (trans.), Kojiki (1968), with name glosses" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8g ETYMOLOGY (LOWER TIERS) — "caution-zone" oral/dynastic traditions,
+  //  authored ONLY where a name's meaning is verifiable in scholarship or in a
+  //  named tradition (Egharevba for Benin; peer-reviewed work for Yoruba). This
+  //  wave is the product of a dedicated multi-source research pass over 23 Edo,
+  //  Shilluk and Yoruba lower-tier names; of those, only the four below had a
+  //  reliably-sourced etymology. The other nineteen — Esigie, Ewedo, Oguola,
+  //  Orhogbua, Uwaifiokun, Erinmwinde, Emotan; Ajaka, Torosi, Lakange; and the
+  //  nine Shilluk Nyikang-cycle/reth names (Okwa, Akec, Dak, Bwor, Cal, Anongo,
+  //  Gilo, Dhokoth, Tugo) — have NO reliable published etymology and are
+  //  deliberately left unwritten rather than guessed (an honest gap is correct).
+  // ═══════════════════════════════════════════════════════════════════════════
+  "ewuare_great": {
+    "languageFamily": "Niger-Congo (Edoid; Edo/Bini)",
+    "etymology": "Edo (Bini). Born Prince Ogun, on his accession (c. 1440) he took the regnal name Ewuare, contracted from Oworuare (also written \"Owo ru are\"), which the Benin tradition recorded by Egharevba glosses as \"the trouble has ceased\" / \"it is cool\" — marking the end of the violent succession struggle with his brother Uwaifiokun and the burning of Benin City. The phrase-level meaning is the attested part; the name's internal morphology is not independently analysed.",
+    "sources": [
+      { "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin (the gloss of Oworuare at Ewuare's accession)" },
+      { "kind": "secondary", "reference": "Encyclopedia.com, \"Oba Ewuare Ogidigan\" (relaying Egharevba's gloss \"the trouble has ceased / it is cool\")" }
+    ]
+  },
+  "ozolua": {
+    "languageFamily": "Niger-Congo (Edoid; Edo/Bini)",
+    "etymology": "Edo (Bini). Born Prince Okpame, this warrior-oba (r. c. 1481–1504) is known by the praise-epithet Ozolua n'Ibaromi, \"Ozolua the Conqueror,\" commemorating his many campaigns. Benin historiography records the meaning of the epithet; the bare regnal name Ozolua itself has no separately attested etymology.",
+    "sources": [
+      { "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin" },
+      { "kind": "secondary", "reference": "Encyclopædia Britannica, \"Ozolua\" (the epithet n'Ibaromi, \"the Conqueror\")" }
+    ]
+  },
+  "eweka_i": {
+    "languageFamily": "Niger-Congo; name of Yoruba (Yoruboid) origin, bini-ised into Edo",
+    "etymology": "Edo (Bini), from a Yoruba phrase. Benin oral tradition — the Ife/Oranmiyan origin story recorded by Egharevba — derives the name from Yoruba owó mi kà \"my hand has struck it\" / \"I have succeeded,\" said to have been exclaimed by the boy-prince at the akhuẹ seed-game and then contracted to Eweka; a competing popular gloss is \"his ways are not crooked.\" This is a traditional etiological etymology, not an independent linguistic reconstruction.",
+    "sources": [
+      { "kind": "secondary", "reference": "Jacob U. Egharevba, A Short History of Benin (the Owomika / Ife-origin tradition)" },
+      { "kind": "secondary", "reference": "Usuanlele & Falola, \"The Scholarship of Jacob Egharevba of Benin,\" History in Africa 21 (1994)" }
+    ]
+  },
+  "shango": {
+    "languageFamily": "Niger-Congo (Yoruboid; Yoruba); theonym probably of Nupoid origin",
+    "etymology": "Yoruba Ṣàngó. The name is not transparently analysable within Yoruba and its origin is debated: the older view derives it from a Nupe sky-and-lightning deity (commonly linked to Nupe Sòkó), while a recent study (Capo Chichi 2025) derives it from Gbari ɛtswaʃɛ̰gʷo \"ruler of the sky\" (ɛtsu \"ruler\" + ʃɛ̰go \"sky\"), borrowed via Nupe and reinterpreted as a royal name in Old Ọyọ. The popular gloss \"to strike\" is a folk etymology. Ṣàngó was the deified third Aláàfin of Ọyọ; the cult-cry Ọba kò so, \"the king did not hang,\" denies the tradition of his death by hanging.",
+    "sources": [
+      { "kind": "secondary", "reference": "Sandro Capo Chichi, \"On the Etymology of the Yoruba Theonym Shango,\" Yoruba Studies Review 10(1) (2025)" },
+      { "kind": "primary", "reference": "Samuel Johnson, The History of the Yorubas (1921) — the deified Aláàfin and the cult-cry Ọba kò so" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8h ETYMOLOGY (LOWER TIERS) — the Iranian cohort: the Zoroastrian /
+  //  Avestan–Shahnameh heroes and the Scytho-Sarmatian (Scythian) figures.
+  //  Old Iranian names are well-read theophoric/heroic compounds. Cited to the
+  //  Encyclopaedia Iranica (Avestan Names; Scythian Language), Mayrhofer, and
+  //  Szemerényi/Abaev. Scythian names that survive only as Hellenized forms of
+  //  uncertain origin (Anacharsis, Skyles, Agathyrsos, Gelonos) are left as
+  //  honest gaps; secure elements (the royal -xais "king") are kept distinct
+  //  from debated first elements.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "zoroastrian_yima": {
+    "languageFamily": "Indo-European (Indo-Iranian; Avestan)",
+    "etymology": "Avestan Yima, \"twin\" — cognate with Vedic Sanskrit Yama and continuing Proto-Indo-European *yemo- \"twin,\" the primordial first-mortal/twin of Indo-Iranian tradition. The later Persian Jamshid continues Yima xšaēta \"Yima the radiant/regal\" (xšaēta \"shining, royal\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Personal Names, Iranian ii. Avestan Names\" (Mayrhofer/Schmitt)" },
+      { "kind": "secondary", "reference": "Mallory & Adams, Encyclopedia of Indo-European Culture (1997), on *Yemo- \"twin\"" }
+    ]
+  },
+  "zoroastrian_keresaspa": {
+    "languageFamily": "Indo-European (Indo-Iranian; Avestan)",
+    "etymology": "Avestan Kərəsāspa, \"possessing slender horses,\" from kərəsa- \"lean, slender\" and aspa- \"horse\" — the dragon-slaying hero; the later Persian form is Garshāsp.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Personal Names, Iranian ii. Avestan Names\"" },
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Kərəsāspa / Garšāsp\"" }
+    ]
+  },
+  "zoroastrian_siyavash": {
+    "languageFamily": "Indo-European (Indo-Iranian; Avestan)",
+    "etymology": "Avestan Syāuuaršan (Siyāvaršan), \"possessing black stallions,\" from syāva- \"black, dark\" and aršan- \"stallion, male\" — the martyred prince; the later Persian form is Siyāvaš.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Personal Names, Iranian ii. Avestan Names\"" },
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Siyāvaš\"" }
+    ]
+  },
+  "zoroastrian_kay_khosrow": {
+    "languageFamily": "Indo-European (Indo-Iranian; Avestan)",
+    "etymology": "Avestan Kavi Haosravah, \"(the kavi) of good fame,\" from the dynastic title kavi \"prince, seer\" and Haosravah \"having good renown\" (hu- \"good\" + sravah- \"fame\"; cognate with Vedic Suśravas) — the later Persian Kay Khosrow.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Personal Names, Iranian ii. Avestan Names\"" },
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Kayānids\" (the Kavi titulature and Haosravah)" }
+    ]
+  },
+  "zoroastrian_thraetaona": {
+    "languageFamily": "Indo-European (Indo-Iranian; Avestan)",
+    "etymology": "Avestan Θraētaona, the dragon-slayer who binds Aži Dahāka; the name is generally connected with the stem of θri- \"three\" (and with the kindred figure Thrita). The later Persian form is Frēdōn / Fereydun.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Ferēdūn\" (Avestan Θraētaona)" },
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Personal Names, Iranian ii. Avestan Names\"" }
+    ]
+  },
+  "zoroastrian_rostam": {
+    "languageFamily": "Indo-European (Iranian; Old Iranian → Middle Persian)",
+    "etymology": "Middle Persian Rōdastahm (‹ Old Iranian *Rautas-taxma), most often read \"of river-strength / mighty as a river,\" from *rautas- \"river\" and taxma- \"strong, brave\" — the element taxma- also yielding his epithet Tahamtan \"the strong-bodied.\" The first element is debated (some connect it instead with *rauda- \"growth\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Rostam\"" },
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Personal Names, Iranian\" (the -taxma element)" }
+    ]
+  },
+  "scythian_skythes": {
+    "languageFamily": "Indo-European (Iranian; Scytho-Sarmatian)",
+    "etymology": "The eponym Skythēs is the Greek rendering of the Scythian self-designation, reconstructed as *Skuda- \"archer, shooter\" (from Proto-Indo-European *skeud- \"to shoot, hurl\"); in the Pontic dialect *Skuda- became *Skula- (with d > l). The analysis is Szemerényi's.",
+    "sources": [
+      { "kind": "secondary", "reference": "Oswald Szemerényi, Four Old Iranian Ethnic Names: Scythian – Skudra – Sogdian – Saka (1980)" },
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Scythian Language\"" }
+    ]
+  },
+  "scythian_lipoxais": {
+    "languageFamily": "Indo-European (Iranian; Scytho-Sarmatian)",
+    "etymology": "A Scythian name whose second element -xais continues Iranian *xšaya- \"ruler, king\" (the same element in Arpoxais and Colaxais of Herodotus's origin myth). The first element Lipo- is debated — proposed as \"mountain\" — giving roughly \"mountain-king.\" The royal -xais element is secure; the first element is not.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Scythian Language\"" },
+      { "kind": "secondary", "reference": "V. I. Abaev, on the Scythian -xais (Iranian *xšaya-) names" }
+    ]
+  },
+  "scythian_arpoxais": {
+    "languageFamily": "Indo-European (Iranian; Scytho-Sarmatian)",
+    "etymology": "A Scythian name whose second element -xais continues Iranian *xšaya- \"ruler, king\"; the first element Arpo- is debated — proposed as \"water, deep\" (cf. Iranian āp- \"water\") — giving roughly \"water-king.\" Second of the three brothers in Herodotus's Scythian origin myth. The royal -xais element is secure; the first element is not.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Scythian Language\"" },
+      { "kind": "secondary", "reference": "V. I. Abaev, on the Scythian -xais (Iranian *xšaya-) names" }
+    ]
+  },
+  "scythian_idanthyrsos": {
+    "languageFamily": "Indo-European (Iranian; Scytho-Sarmatian)",
+    "etymology": "Idánthyrsos is the Hellenized form of a Scythian name not preserved in its original shape; the Iranian character is accepted but the reconstruction is tentative — *Vinda(t)- \"finding, attaining\" (Justi, Markwart) or *Hiθāmθrauša \"prospering the ally\" (Schwartz). The Scythian king who eluded Darius I's invasion.",
+    "sources": [
+      { "kind": "secondary", "reference": "Encyclopaedia Iranica, \"Scythians\"" },
+      { "kind": "secondary", "reference": "Martin Schwartz, reconstruction of *Hiθāmθrauša for Idanthyrsos" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8i ETYMOLOGY (LOWER TIERS) — the Celtic and Polynesian cohorts: Welsh
+  //  (Mabinogi), Old Irish (Ulster Cycle), and Māori/Polynesian figures, where
+  //  the name is transparently lexical. Cited to the standard dictionaries —
+  //  Geiriadur Prifysgol Cymru (GPC) for Welsh, eDIL for Old Irish, and
+  //  Tregear/Williams for Māori. Names of genuinely uncertain or contested
+  //  etymology (Welsh Efnisien; Irish Deichtire, Sualtam, Connla; Māori
+  //  Taranga, Tāwhaki, Rata) are left as honest gaps.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "welsh_pwyll": {
+    "languageFamily": "Celtic (Brythonic; Welsh)",
+    "etymology": "Welsh Pwyll, the common noun pwyll \"sense, prudence, discretion, sound judgement\" — the prince of Dyfed and protagonist of the First Branch of the Mabinogi; the name literally signifies Prudence.",
+    "sources": [
+      { "kind": "secondary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. pwyll" },
+      { "kind": "primary", "reference": "Pwyll Pendefig Dyfed (First Branch of the Mabinogi)" }
+    ]
+  },
+  "welsh_gwern": {
+    "languageFamily": "Celtic (Brythonic; Welsh)",
+    "etymology": "Welsh Gwern, \"alder(s); alder-marsh\" — the boy-king son of Branwen and the Irish king Matholwch in the Second Branch of the Mabinogi.",
+    "sources": [
+      { "kind": "secondary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. gwern" },
+      { "kind": "primary", "reference": "Branwen ferch Llŷr (Second Branch of the Mabinogi)" }
+    ]
+  },
+  "welsh_hyfaidd_hir": {
+    "languageFamily": "Celtic (Brythonic; Welsh)",
+    "etymology": "Welsh Hyfaidd Hir, \"Hyfaidd the Tall\": the epithet Hir is the common adjective \"long, tall.\" The personal name Hyfaidd itself is of uncertain etymology.",
+    "sources": [
+      { "kind": "secondary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. hir" },
+      { "kind": "primary", "reference": "Pwyll / Manawydan (the Mabinogi; Hyfaidd Hir, father of Rhiannon)" }
+    ]
+  },
+  "polynesian_kaitangata": {
+    "languageFamily": "Austronesian (Polynesian; Māori)",
+    "etymology": "Māori Kaitangata, \"man-eater,\" from kai \"to eat; food\" and tangata \"person, man\" — the ancestor who married the lightning-being Whaitiri; despite the ominous name he was, in the tradition, a gentle man.",
+    "sources": [
+      { "kind": "secondary", "reference": "Edward Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.vv. kai, tangata" },
+      { "kind": "secondary", "reference": "H. W. Williams, A Dictionary of the Maori Language" }
+    ]
+  },
+  "polynesian_wahieroa": {
+    "languageFamily": "Austronesian (Polynesian; Māori)",
+    "etymology": "Māori Wahieroa, \"long piece of firewood,\" from wahie \"firewood\" and roa \"long\" — son of Tāwhaki, named (per tradition) for the long log his mother fetched for his father's fire. Hawaiian Wahieloa, Tahitian Vahieroa.",
+    "sources": [
+      { "kind": "secondary", "reference": "Edward Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.vv. wahie, roa" },
+      { "kind": "secondary", "reference": "H. W. Williams, A Dictionary of the Maori Language" }
+    ]
+  },
+  "irish_caintigern": {
+    "languageFamily": "Celtic (Goidelic; Old Irish)",
+    "etymology": "Old Irish Caíntigern, \"fair/gentle lady,\" from caín \"fair, kind, gentle, beautiful\" and tigern \"lord, lady, sovereign\" (the same -tigern element seen in Echtigern \"horse-lord\").",
+    "sources": [
+      { "kind": "secondary", "reference": "eDIL (Electronic Dictionary of the Irish Language), s.vv. caín, tigern" }
+    ]
+  },
+  "irish_fiachna_mac_baetain": {
+    "languageFamily": "Celtic (Goidelic; Old Irish)",
+    "etymology": "Old Irish Fíachna, a derivative of fíach \"raven,\" roughly \"raven-like / of the raven\" — a recurring Irish heroic name-element (cf. Fíachra, Fiacha).",
+    "sources": [
+      { "kind": "secondary", "reference": "eDIL (Electronic Dictionary of the Irish Language), s.v. fíach" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8j ETYMOLOGY (LOWER TIERS) — the smaller historical-language cohorts:
+  //  Hittite (Anatolian), Anglo-Saxon (Germanic), Levantine/Ugaritic (Semitic),
+  //  Aztec (Nahuatl), Korean (Sino-Korean), and one Kartvelian name of Semitic
+  //  origin. Authored after source-verification, with debated cases hedged.
+  //  Names of uncertain etymology — Kushite Abar & Pebatjma, Canaanite Aqhat,
+  //  Dacian Burebista, Estonian Linda, the two Chinese names, and Kartvelian
+  //  Sulkalmakhi/Darejan/Badri — are left as honest gaps.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "hittite_suppiluliuma_ii": {
+    "languageFamily": "Indo-European (Anatolian; Hittite)",
+    "etymology": "Hittite Šuppiluliuma, \"(of the) pure spring,\" from šuppi- \"pure, sacred, ritually clean\" and luli- \"pool, spring, fountain\" — the first Hittite great king to bear a name of distinctly Hittite form. The numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Alwin Kloekhorst, Etymological Dictionary of the Hittite Inherited Lexicon (2008), s.vv. šuppi-, luli-" },
+      { "kind": "secondary", "reference": "Trevor Bryce, The Kingdom of the Hittites (2005)" }
+    ]
+  },
+  "hittite_tudhaliya_iv": {
+    "languageFamily": "Indo-European (Anatolian; Hittite)",
+    "etymology": "Hittite Tudḫaliya, borne by several Hittite kings; the name is generally connected with the deified Mount Tudḫaliya, but its own etymology is uncertain (Anatolian). The numeral is a modern convention.",
+    "sources": [
+      { "kind": "secondary", "reference": "Trevor Bryce, The Kingdom of the Hittites (2005), on the deified Mount Tudḫaliya" }
+    ]
+  },
+  "anglosaxon_beowulf": {
+    "languageFamily": "Indo-European (Germanic; Old English)",
+    "etymology": "Old English Bēowulf, most famously read as a kenning \"bee-wolf\" (bēo \"bee\" + wulf \"wolf\"), \"the bees' foe\" = the honey-raiding bear (Sweet, Skeat); competing proposals read \"Beow's wolf\" (the god Beow) or link it to a word for woodpecker. The bear-kenning is the traditional reading.",
+    "sources": [
+      { "kind": "secondary", "reference": "Klaeber's Beowulf, 4th ed. (2008), on the name" },
+      { "kind": "secondary", "reference": "Henry Sweet / W. W. Skeat — the \"bee-wolf\" = bear etymology" }
+    ]
+  },
+  "anglosaxon_wayland": {
+    "languageFamily": "Indo-European (Germanic; Old English / Proto-Germanic)",
+    "etymology": "Old English Wēland (Old Norse Vǫlundr, German Wieland), from Proto-Germanic *Wēlandaz, generally \"the crafting / skilled one\" (to *wēla- \"craft, cunning, artifice\") — fitting the legendary master-smith; a competing analysis derives it from *Wēla-nanþaz \"brave in battle.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Rudolf Simek, Dictionary of Northern Mythology (1993), s.v. Wayland / Vǫlundr" },
+      { "kind": "secondary", "reference": "Guus Kroonen, Etymological Dictionary of Proto-Germanic (2013), on *Wēlandaz" }
+    ]
+  },
+  "levantine_ammurapi": {
+    "languageFamily": "Semitic (Amorite/Ugaritic)",
+    "etymology": "Ugaritic ʿAmmurāpiʾ, \"the (divine) kinsman is a healer,\" from ʿammu \"paternal kinsman\" and rāpiʾ \"healer\" (root rpʾ) — the same name as the Babylonian Hammurabi. The last king of Ugarit (c. 1215–1180 BCE). The \"healer\" sense of rpʾ is the traditional reading, though some prefer a sense \"to be great.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Herbert B. Huffmon, Amorite Personal Names in the Mari Texts (1965), on the ʿammu and rpʾ elements" }
+    ]
+  },
+  "chimalman": {
+    "languageFamily": "Uto-Aztecan (Nahuatl)",
+    "etymology": "Nahuatl Chīmalmān, \"shield-hand,\" from chīmal(li) \"war-shield,\" -man(i) \"to be / lie in the manner of,\" and mā(itl) \"hand, arm\" — the mother of Quetzalcoatl in the Toltec-Aztec tradition.",
+    "sources": [
+      { "kind": "secondary", "reference": "Online Nahuatl Dictionary (Wired Humanities Projects), s.v. Chimalman" },
+      { "kind": "secondary", "reference": "Frances Karttunen, An Analytical Dictionary of Nahuatl (1983), s.vv. chīmalli, māitl" }
+    ]
+  },
+  "korean_ungnyeo": {
+    "languageFamily": "Koreanic (Sino-Korean compound)",
+    "etymology": "Korean 웅녀, Sino-Korean 熊女 \"bear-woman,\" from ung 熊 \"bear\" and nyeo 女 \"woman\" — the she-bear who, having endured Hwanung's trial, became human and bore Dangun, the founder-figure of Korea.",
+    "sources": [
+      { "kind": "primary", "reference": "Iryeon, Samguk Yusa (13th c.) — the Dangun foundation myth" }
+    ]
+  },
+  "kartvelian_usup": {
+    "languageFamily": "name of Semitic origin (Hebrew Yōsēp̄ ← Arabic Yūsuf), borne in the Georgian (Kartvelian) tradition",
+    "etymology": "The Georgian/Caucasian name Usup (also Usupi, Yusup) is the regional rendering of Yūsuf — Joseph — ultimately Hebrew Yōsēp̄ \"may (God) add\" (from yāsap̄ \"to add\"), transmitted via Arabic Yūsuf into the Caucasus.",
+    "sources": [
+      { "kind": "primary", "reference": "Genesis 30:24 (the naming of Joseph: yōsēp̄ \"may he add\")" },
+      { "kind": "secondary", "reference": "Standard onomastics: Caucasian Usup/Yusup ← Arabic Yūsuf ← Hebrew Yōsēp̄" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8k ETYMOLOGY (LOWER TIERS) — the obscure Greek tail: the transparently
+  //  analysable names among the minor Apollodoran/Homeric figures. Standard
+  //  compounds are authored (von Kamptz; LSJ; Beekes), debated ones hedged.
+  //  The many bare genealogical or Pre-Greek names with no secure etymology —
+  //  Megara, Iole, Tithonus, Tyndareus, Tyro, Io, Elara, Oeagrus, Hermione,
+  //  Otrera, Cyrene, Hyrmine, Pierus, Echemus, Munitus, Ascanius, Etias,
+  //  Podalirius, Aratus, Syrnus, Anogon, Niobe, Amyclas, Acastus, Lamus,
+  //  Maraphius, Aethiolas, Evadne — are left as honest gaps.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "greek_eur_macaria": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μακαρία (Makaría), from μάκαρ / μακάριος (mákar) \"blessed, happy\" — \"the blessed one.\" The daughter of Heracles who gave her life for the Athenian victory.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. μάκαρ" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_echephron": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἐχέφρων (Echéphrōn), from ἔχω (échō) \"to hold, have\" and φρήν (phrḗn) \"mind, wits\" — \"prudent, possessed of sense\" (cf. the adjective ἐχέφρων \"sensible\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἐχέφρων" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_laodamia_lycian": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Λαοδάμεια (Laodámeia), from λαός (lāós) \"host, war-folk, people\" and the stem of δαμάω (damáō) \"to tame, subdue\" — \"she who subdues the host / tamer of the people.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. λαός, δαμάω" }
+    ]
+  },
+  "greek_eurynome": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυνόμη (Eurynómē), from εὐρύς (eurýs) \"broad, wide\" and the stem of νέμω (némō) \"to deal out, manage, rule; to pasture\" — \"wide-ruling\" (or \"of wide pastures\").",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. εὐρύς, νέμω" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_nicostratus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Νικόστρατος (Nikóstratos), from νίκη (níkē) \"victory\" and στρατός (stratós) \"army, host\" — \"victorious army / victory of the host.\" A son of Menelaus and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. νίκη, στρατός" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_pleisthenes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πλεισθένης (Pleisthénēs), from πλεῖστος (pleîstos) \"most, greatest\" (superlative of πολύς) and σθένος (sthénos) \"strength\" — \"of greatest strength.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. πλεῖστος, σθένος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_aganus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀγανός (Aganós), the adjective \"gentle, mild, kindly\" — \"the gentle one.\" A son of Paris and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. ἀγανός" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀγανός" }
+    ]
+  },
+  "greek_idaeus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰδαῖος (Idaîos), \"of Ida, Idaean,\" a derivative of the mountain-name Ἴδη (Mount Ida) — a toponymic name. A son of Paris and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. Ἴδη / Ἰδαῖος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_corythus_helen": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κόρυθος (Kórythos), from κόρυς, gen. κόρυθος (kórys) \"helmet\" — \"the helmeted one.\" A son of Paris.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. κόρυς" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_eurypylus_telephus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρύπυλος (Eurýpylos), from εὐρύς (eurýs) \"broad, wide\" and πύλη (pýlē) \"gate\" — \"of the wide gates, wide-gated.\" The Mysian prince, son of Telephus.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. εὐρύς, πύλη" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_melanippus_theseus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μελάνιππος (Melánippos), from μέλας (mélas) \"black, dark\" and ἵππος (híppos) \"horse\" — \"black horse, of the dark steed.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. μέλας, ἵππος" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_nicomachus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Νικόμαχος (Nikómachos), from νίκη (níkē) \"victory\" and μάχη (máchē) \"battle\" — \"victorious in battle.\" A son of Machaon the healer.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. νίκη, μάχη" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_chloris": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Χλωρίς (Chlōrís), from χλωρός (chlōrós) \"pale-green, fresh, verdant; greenish-yellow\" — \"the verdant / fresh one.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. χλωρός" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. χλωρός" }
+    ]
+  },
+  "greek_bunomus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Βούνομος (Boúnomos), from βοῦς (boûs) \"ox, cattle\" and the stem of νέμω (némō) \"to pasture, graze\" — \"ox-herd, grazer of cattle\" (cf. the adjective βούνομος \"feeding oxen\"). A son of Paris and Helen.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. βοῦς, νέμω" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_gorgasus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Γόργασος (Górgasos), connected with γοργός (gorgós) \"grim, fierce, terrible\" — \"the fierce one.\" A son of Machaon, honoured as a healer at Pharae.",
+    "sources": [
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. γοργός" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_apollod_amphitryon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek); etymology debated",
+    "etymology": "Greek Ἀμφιτρύων (Amphitryōn). The traditional analysis takes it from ἀμφι- (amphi-) \"on both sides, about\" and the stem of τρύω (trýō) \"to wear out, harass\" — \"harasser on both sides\"; the formation is uncertain and possibly Pre-Greek. The mortal husband of Alcmene.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. Ἀμφιτρύων" }
+    ]
+  },
+  "greek_apollod_iolaus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰόλαος (Iólaos), analysed by von Kamptz as a compound with λαός (lāós) \"host, people\"; the first element ἰο- is uncertain (variously to ἰός \"arrow\" or to ἴον \"violet\"). The nephew and charioteer of Heracles.",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.v. λαός" }
+    ]
+  },
+  "greek_apollod_omphale": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek); etymology debated",
+    "etymology": "Greek Ὀμφάλη (Omphálē). The name is connected either with ὀμφαλός (omphalós) \"navel, boss, central point\" or with ὀμφή (omphḗ) \"divine voice, oracle\"; the choice is debated. The Lydian queen whom Heracles served.",
+    "sources": [
+      { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.vv. ὀμφαλός, ὀμφή" },
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" }
+    ]
+  },
+  "greek_anticleia_periphetes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντίκλεια (Antíkleia), from ἀντί (antí) \"facing, in place of, against\" and κλέος (kléos) \"glory, fame\" — roughly \"she who faces / stands for glory.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἀντί, κλέος" }
+    ]
+  },
+  "greek_apollod_hippolochus_podalirius": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἱππόλοχος (Hippólochos), from ἵππος (híppos) \"horse\" and λόχος (lóchos) \"ambush, band of warriors\" (also \"childbed\") — variously \"horse-ambush\" or \"born of horses.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. ἵππος, λόχος" }
+    ]
+  },
+  "greek_mnesileos": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μνησίλεως (Mnēsíleōs), from the stem of μνάομαι / μιμνήσκω (mnē-) \"to be mindful of, remember\" and λεώς/λαός (leṓs) \"people, host\" — \"mindful of the people.\" A son of Helen by Menelaus (variant Mnasinous).",
+    "sources": [
+      { "kind": "secondary", "reference": "von Kamptz, Homerische Personennamen (1982)" },
+      { "kind": "secondary", "reference": "Liddell–Scott–Jones, Greek–English Lexicon, s.vv. μνάομαι, λεώς" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8l ETYMOLOGY (LOWER TIERS) — researched African oral/dynastic cohort.
+  //  A dedicated research pass over 18 African names (Bantu founders, E/W
+  //  African heroes, Chewa/Tonga/Guanche, Akan/Kushite) yielded only the three
+  //  below with a defensible meaning; the other fifteen — Wamara, Charwe,
+  //  Malope, Le-eyo, Ramogi, Murile, Kamangundu, Takuruku, Prempeh, Abar,
+  //  Pebatjma, Mlauli, Salima, the Tonga "first pair", and the unnamed Tonga
+  //  old woman — returned no reliable published etymology and are left blank.
+  //  (Rejected leads: Wamara "Lord of Depth"; the contradictory Prempeh glosses;
+  //  Pebatjma "beloved of Napata" via the disputed Pabtamer identification.)
+  // ═══════════════════════════════════════════════════════════════════════════
+  "bemba_chitimukulu": {
+    "languageFamily": "Niger-Congo (Bantu; Bemba/ChiBemba)",
+    "etymology": "Bemba (ChiBemba). The paramountcy-title Chitimukulu joins the founder's personal name Chiti with the honorific mukulu \"the great, the elder, the senior\" (the pan-Bantu stem -kulu \"great, old\"), i.e. \"Chiti the Great.\" Tradition traces the founder to Chiti Muluba (\"Chiti the Luba\"), with mukulu marking his seniority; every later paramount inherits the title.",
+    "sources": [
+      { "kind": "secondary", "reference": "Andrew D. Roberts, A History of the Bemba (1973)" },
+      { "kind": "secondary", "reference": "Pan-Bantu honorific stem -kulu \"great, elder\"" }
+    ]
+  },
+  "lozi_kamonu": {
+    "languageFamily": "Niger-Congo (Bantu; Lozi/Silozi)",
+    "etymology": "Lozi (Silozi). Kamonu (Kamunu) is the first man created by the god Nyambe, representing humankind. The name transparently contains the Bantu word for \"person\" — Proto-Bantu *mùntù (cf. muntu) — with the class-12 diminutive prefix ka-, i.e. \"the (little) human, Man.\" This is the transparent morphological reading (the figure is explicitly the first man); the sources narrate the myth but do not gloss the name word-for-word.",
+    "sources": [
+      { "kind": "secondary", "reference": "Proto-Bantu *mùntù \"person\" with the class-12 diminutive ka-" },
+      { "kind": "secondary", "reference": "Lozi creation myth of Nyambe and Kamunu (cf. Max Gluckman's Lozi ethnography)" }
+    ]
+  },
+  "guanche_bencomo": {
+    "languageFamily": "Afro-Asiatic (Berber/Amazigh; Guanche of Tenerife)",
+    "etymology": "Guanche (Insular Tamazight, the extinct Berber language of the Canaries). The name (also Benchomo, Benytomo) is read by Canarian philologists as a Berber relative compound we-/wen- \"the one who, he of\" plus a root of surpassing: Álvarez Delgado's wen-chum (‹ echchem \"to be better\") \"the greatest,\" or Ignacio Reyes's we-n-ytum \"the ambitious one.\" Guanche is poorly attested so the reconstruction is debated, but both readings converge on \"greatest / superior.\" The mencey of Taoro who resisted the Castilian conquest.",
+    "sources": [
+      { "kind": "secondary", "reference": "Juan Álvarez Delgado, studies of Guanche/Canarian onomastics (Benchomo ‹ wen-chum \"the greatest\")" },
+      { "kind": "secondary", "reference": "Ignacio Reyes García, Diccionario ínsuloamaziq (Benytomo ‹ we-n-ytum \"ambitious\")" }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  //  WAVE-8m ETYMOLOGY (LOWER TIERS) — researched Asian/American/Pacific oral
+  //  tail and the held Near-Eastern/European gaps. Of 25 names put through the
+  //  research pass, the twelve below had a defensible sourced meaning; thirteen
+  //  returned none and are left as honest gaps: Aromadapuén, the (unnamed)
+  //  Quechua Andean woman, Mulukwausi, Tomo, Datu Paubari, White-Beaver-Skin
+  //  Woman, Skeena Chief's Daughter, Aqhat, Burebista, Sulkalmakhi, and the
+  //  three Lepcha names (Fodongthing, Nazongnyu, Tashe-thing). On review the
+  //  two "data flags" the research raised proved overstated: the Wiininwaa
+  //  record is correct (Anishinaabe mother of Nanabozho; the "Winona" alt is
+  //  the Dakota-derived "Wenonah" of the Schoolcraft→Longfellow tradition,
+  //  now documented in her notes), and lepcha_tashe_thing deliberately follows
+  //  Morris's son-tradition with the rival "alternate name of the first man"
+  //  reading already disclosed in its own notes and sources.
+  // ═══════════════════════════════════════════════════════════════════════════
+  "nandesy": {
+    "languageFamily": "Tupian (Tupí-Guaraní; Guaraní)",
+    "etymology": "Guaraní Ñandesy (also Ñandecy), \"Our Mother,\" from ñande \"our\" (first-person plural inclusive) and sy \"mother\" — the mother-principle paired with Ñande Ru \"Our Father.\"",
+    "sources": [
+      { "kind": "secondary", "reference": "Guaraní grammar: ñande \"our (incl.)\" + sy \"mother\"" },
+      { "kind": "secondary", "reference": "Guaraní (Tupí-Guaraní) creation tradition (Ñande Ru / Ñande Sy)" }
+    ]
+  },
+  "chinese_yang_tianyou": {
+    "languageFamily": "Sino-Tibetan (Sinitic; Chinese)",
+    "etymology": "Chinese 杨天佑 (Yáng Tiānyòu): the surname 杨 (yáng) \"poplar\" with the given name 天佑 (tiānyòu) \"Heaven protects,\" from 天 (tiān) \"heaven\" and 佑 (yòu) \"to protect, bless, aid from above\" — the mortal father of the god Erlang Shen (Yang Jian) in the Ming-era Erlang/Journey-to-the-West tradition.",
+    "sources": [
+      { "kind": "secondary", "reference": "Hanyu Da Cidian / zdic.net, s.v. 天佑 (天 + 佑 \"heaven protects\")" },
+      { "kind": "secondary", "reference": "Baidu Baike, 杨天佑 (father of Erlang Shen)" }
+    ]
+  },
+  "chinese_liu_yanchang": {
+    "languageFamily": "Sino-Tibetan (Sinitic; Chinese)",
+    "etymology": "Chinese 刘彦昌 (Liú Yànchāng): the surname 刘 (liú) with the given name 彦昌 (yànchāng), from 彦 (yàn) \"a man of talent and virtue, scholar\" and 昌 (chāng) \"flourishing, prosperous\" — \"the flourishing scholar.\" The mortal scholar of the Baolian-deng (Lotus Lantern) legend, husband of the Third Holy Mother and father of Chenxiang.",
+    "sources": [
+      { "kind": "secondary", "reference": "zi.tools, s.vv. 彦 (\"man of virtue\"), 昌 (\"flourishing\")" },
+      { "kind": "secondary", "reference": "Baidu Baike, 刘彦昌 (the Lotus Lantern scholar)" }
+    ]
+  },
+  "wiininwaa": {
+    "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabemowin)",
+    "etymology": "Ojibwe (Anishinaabemowin) Wiininwaa, \"Nourishment / the one who nourishes\" (to the stem wiinin- \"fat, tallow,\" the substance of nourishment) — in Ojibwe tradition the human mother of Nanabozho. Her \"Winona\" alt is a separate, Dakota-derived name (Wenonah \"firstborn daughter\") attached to the figure in the Schoolcraft–Longfellow popular tradition, not an Ojibwe form of Wiininwaa.",
+    "sources": [
+      { "kind": "secondary", "reference": "The Ojibwe People's Dictionary (U. Minnesota), s.vv. wiininw-, wiinin" }
+    ]
+  },
+  "soatsaki": {
+    "languageFamily": "Algic (Algonquian; Blackfoot/Niitsi'powahsin)",
+    "etymology": "Blackfoot (Niitsi'powahsin) Soatsaki, glossed \"Feather Woman\" — the woman who married Morning Star (Apisirahts) and bore Star Boy (Poia), tied to the origin of the Sun Dance. The gloss is well-attested; a morpheme-by-morpheme breakdown is not.",
+    "sources": [
+      { "kind": "primary", "reference": "Walter McClintock, The Old North Trail (1910) — Brings-Down-the-Sun's narrative" },
+      { "kind": "secondary", "reference": "native-languages.org, \"Feather Woman (Soatsaki)\"" }
+    ]
+  },
+  "tapun_sa_win": {
+    "languageFamily": "Siouan (Lakota)",
+    "etymology": "Lakota Tȟapȟúŋ Šá Wíŋ, \"Red Cheek Woman,\" from tȟapȟúŋ \"cheek,\" šá \"red,\" and wíŋ \"woman\" — the woman who married a Star Man (who became the unmoving North Star) and bore Fallen Star.",
+    "sources": [
+      { "kind": "secondary", "reference": "New Lakota Dictionary (šá \"red\"; wíŋ \"woman\")" },
+      { "kind": "secondary", "reference": "Aktá Lakota Museum & Cultural Center, \"Tapun Sa Win\"" }
+    ]
+  },
+  "estonian_linda": {
+    "languageFamily": "name of Germanic origin, in the Estonian (Finnic) tradition",
+    "etymology": "Estonian. In Kreutzwald's epic Kalevipoeg (1861) the name Linda was taken from the then-current Germanic name Linda, on the assumption that the Tallinn place-name Lindanise contained a personal name Linda; the popular association with Estonian lind \"bird\" (Proto-Finnic *lintu) is a folk etymology.",
+    "sources": [
+      { "kind": "secondary", "reference": "Wiktionary, s.v. Linda (Germanic origin via Lindanise; the lind \"bird\" link flagged folk-etymology)" }
+    ]
+  },
+  "kartvelian_badri": {
+    "languageFamily": "name of Arabic origin, in the Georgian (Kartvelian) tradition",
+    "etymology": "The Georgian name Badri (Badria) is of Arabic origin, from badr (بدر) \"full moon\" — borne by a foster-brother of Amirani (with Usup) in the Georgian Amiraniani folk-epic cycle.",
+    "sources": [
+      { "kind": "secondary", "reference": "Arabic badr \"full moon\"; standard onomastics of the name" }
+    ]
+  },
+  "kartvelian_darejan": {
+    "languageFamily": "name of Persian origin, in the Georgian (Kartvelian) tradition",
+    "etymology": "The Georgian name Darejani is of Persian origin; in Rustaveli's coined compound Nestan-Darejan the element is referred to Persian (nist) andar jahān \"(nothing) in the world\" → \"matchless,\" though the standalone name's exact morphology is debated (a folk reading takes Dārā \"ruler\" + jān \"dear, soul\").",
+    "sources": [
+      { "kind": "secondary", "reference": "N. Gogochuri, Literary Researches (litinfo.ge), on the Darejani name" },
+      { "kind": "secondary", "reference": "Behind the Name, \"Nestan-Darejan\" (Persian nist andar jahān \"matchless\")" }
+    ]
+  },
+  "khasi_hynniew_trep": {
+    "languageFamily": "Austroasiatic (Khasic; Khasi)",
+    "etymology": "Khasi Hynñiew Trep, \"the Seven Huts,\" from hynñiew \"seven\" and trep \"hut, dwelling\" — paired in the couplet Hynñiew Trep, Hynñiew Skum \"Seven Huts, Seven Nests\" (skum \"nest\"). The seven primeval human families who remained on earth, ancestors of the Khasi sub-groups.",
+    "sources": [
+      { "kind": "secondary", "reference": "Khasi numeral hynñiew \"seven\"; trep \"hut\" / skum \"nest\"" },
+      { "kind": "secondary", "reference": "The Hynñiewtrep–Hynñiewskum (\"Seven Huts, Seven Nests\") origin tradition" }
+    ]
+  },
+  "santal_pilcu_haram": {
+    "languageFamily": "Austroasiatic (Munda; Santali)",
+    "etymology": "Santali (Munda) Pilcu Haram, \"Pilcu the Old Man\": haṛam \"old man, elder\" — the primeval first man, hatched with his consort from the eggs laid by the bird Hãs in the Thakur Jiu creation. The element Pilcu, marking the primeval pair, is unexplained.",
+    "sources": [
+      { "kind": "secondary", "reference": "P. O. Bodding, A Santal Dictionary (1932–36), s.v. haṛam \"old man\"" },
+      { "kind": "primary", "reference": "C. H. Bompas / P. O. Bodding, Folklore of the Santal Parganas (1909)" }
+    ]
+  },
+  "santal_pilcu_budhi": {
+    "languageFamily": "Austroasiatic (Munda; Santali)",
+    "etymology": "Santali (Munda) Pilcu Budhi, \"Pilcu the Old Woman\": budhi (burhi) \"old woman\" — an Indo-Aryan loan (cf. Hindi būṛhī) — the primeval first woman. The element Pilcu, marking the primeval pair, is unexplained.",
+    "sources": [
+      { "kind": "secondary", "reference": "P. O. Bodding, A Santal Dictionary (1932–36), s.v. buḍhi \"old woman\"" },
+      { "kind": "primary", "reference": "C. H. Bompas / P. O. Bodding, Folklore of the Santal Parganas (1909)" }
+    ]
   }
 };
 const applyEtymology = (peopleMap, extra = ETYMOLOGY) => {
@@ -232029,6 +234865,1375 @@ const CULT_PRACTICES_X = {
   ]
 };
 const EPITHETS_X = {
+  // ── Wave E1: canonical Homeric/Hesiodic formulae + major cult-titles for the
+  // Greek Olympians, deepening figures that already carry their best-known names.
+  // All primary-attested; dedup is by `original`, so none collide with existing
+  // entries. (ares/hestia/rhea are keyed below and handled there, not here.)
+  'greek_hesiod_zeus': [
+    { original: 'αἰγίοχος', scriptId: 'greek', rom: 'aigíokhos', gloss: 'Aegis-bearing; wielder of the storm-shield', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.202; Hesiod, Theogony 11' }] },
+    { original: 'τερπικέραυνος', scriptId: 'greek', rom: 'terpikéraunos', gloss: 'Who delights in the thunderbolt', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.419; Hesiod, Theogony 286' }] },
+    { original: 'ὑψιβρεμέτης', scriptId: 'greek', rom: 'hypsibremétēs', gloss: 'The high-thundering one', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.354; Hesiod, Works and Days 8' }] },
+    { original: 'εὐρύοπα', scriptId: 'greek', rom: 'eurýopa', gloss: 'Wide-thundering / far-sounding (or far-seeing)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.498' }] },
+    { original: 'μητίετα', scriptId: 'greek', rom: 'mētíeta', gloss: 'The all-wise counsellor', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.175; Hesiod, Theogony 56' }] },
+  ],
+  'greek_hesiod_hera': [
+    { original: 'χρυσόθρονος', scriptId: 'greek', rom: 'khrysóthronos', gloss: 'Golden-throned', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.611' }] },
+    { original: 'πότνια Ἥρη', scriptId: 'greek', rom: 'pótnia Hḗrē', gloss: 'Queenly/revered Hera; the formulaic title of address', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.551' }] },
+    { original: 'Ἀκραία', scriptId: 'greek', rom: 'Akraía', gloss: 'Of the heights; Hera of the citadel (Argos, Corinth)', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 2.24.1' }] },
+  ],
+  'greek_hesiod_poseidon': [
+    { original: 'ἐννοσίγαιος', scriptId: 'greek', rom: 'ennosígaios', gloss: 'Earth-shaker; he who makes the earth quake', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 13.43' }] },
+    { original: 'Ἑλικώνιος', scriptId: 'greek', rom: 'Helikṓnios', gloss: 'Of Helike; god of the Panionian league at Mykale', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Homer, Iliad 20.404; Herodotus 1.148' }] },
+    { original: 'Φυτάλμιος', scriptId: 'greek', rom: 'Phytálmios', gloss: 'The nurturing; fosterer of growth (cult at Troezen)', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 2.32.8' }] },
+  ],
+  'greek_hesiod_athena': [
+    { original: 'Ἀτρυτώνη', scriptId: 'greek', rom: 'Atrytṓnē', gloss: 'The unwearying / indefatigable', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 2.157; Odyssey 4.762' }] },
+    { original: 'ὀβριμοπάτρη', scriptId: 'greek', rom: 'obrimopátrē', gloss: 'Daughter of a mighty father', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.747' }] },
+    { original: 'Ἀλέα', scriptId: 'greek', rom: 'Aléa', gloss: 'Athena Alea of Tegea, chief cult of Arcadia', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 8.45.4' }] },
+  ],
+  'greek_hesiod_apollo': [
+    { original: 'ἀργυρότοξος', scriptId: 'greek', rom: 'argyrótoxos', gloss: 'Of the silver bow', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.37' }] },
+    { original: 'ἑκάεργος', scriptId: 'greek', rom: 'hekáergos', gloss: 'The far-worker; who strikes from afar', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.479' }] },
+    { original: 'Δήλιος', scriptId: 'greek', rom: 'Dḗlios', gloss: 'Delian; of his birth-island Delos', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Homeric Hymn to Apollo (3) 16; Thucydides 3.104' }] },
+    { original: 'Νόμιος', scriptId: 'greek', rom: 'Nómios', gloss: 'The herdsman; pastoral Apollo who tended Admetus’s flocks', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Callimachus, Hymn 2 (to Apollo) 47–49' }] },
+  ],
+  'greek_hesiod_demeter': [
+    { original: 'Χθονία', scriptId: 'greek', rom: 'Khthonía', gloss: 'Of the earth; Demeter of Hermione', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 2.35.4–8' }] },
+    { original: 'Ἀνησιδώρα', scriptId: 'greek', rom: 'Anēsidṓra', gloss: 'Sender-up of gifts (from the earth)', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 1.31.4' }] },
+    { original: 'Σιτώ', scriptId: 'greek', rom: 'Sitṓ', gloss: 'Giver of grain and food', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Athenaeus, Deipnosophistae 3.109a; Pollux, Onomasticon' }] },
+  ],
+  'greek_hesiod_artemis': [
+    { original: 'χρυσηλάκατος', scriptId: 'greek', rom: 'khrysēlákatos', gloss: 'Of the golden distaff / golden arrows', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 16.183; Odyssey 4.122' }] },
+    { original: 'κελαδεινή', scriptId: 'greek', rom: 'keladeinḗ', gloss: 'The resounding; goddess of the noisy chase', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 16.183, 21.511' }] },
+    { original: 'Ταυροπόλος', scriptId: 'greek', rom: 'Tauropólos', gloss: 'Bull-tender; the Artemis of Tauris and Brauron/Halae', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Euripides, Iphigenia among the Taurians 1457' }] },
+    { original: 'Βραυρωνία', scriptId: 'greek', rom: 'Braurōnía', gloss: 'Of Brauron; the Attic bear-maiden cult', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 1.23.7; Aristophanes, Lysistrata 645' }] },
+  ],
+  'greek_hesiod_hermes': [
+    { original: 'χρυσόρραπις', scriptId: 'greek', rom: 'khrysórrhapis', gloss: 'Of the golden wand (the kerykeion)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 5.87; Homeric Hymn to Demeter (2) 335' }] },
+    { original: 'ἐύσκοπος', scriptId: 'greek', rom: 'eúskopos', gloss: 'The keen-sighted; sharp-eyed watcher', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 24.24; Odyssey 1.38' }] },
+    { original: 'Κριοφόρος', scriptId: 'greek', rom: 'Kriophóros', gloss: 'Ram-bearer; who carried a ram round Tanagra to avert plague', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 9.22.1' }] },
+  ],
+  'greek_hesiod_aphrodite': [
+    { original: 'χρυσέη', scriptId: 'greek', rom: 'khryséē', gloss: 'Golden (the formulaic “golden Aphrodite”)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 3.64; Odyssey 8.337' }] },
+    { original: 'ἐϋστέφανος', scriptId: 'greek', rom: 'eustéphanos', gloss: 'Fair-crowned / well-garlanded', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 196, 1008; Homeric Hymn 6.1' }] },
+    { original: 'Παφία', scriptId: 'greek', rom: 'Paphía', gloss: 'Paphian; of her great Cyprian sanctuary at Paphos', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pausanias 1.14.7; Tacitus, Histories 2.2–3' }] },
+  ],
+  'greek_hesiod_hephaestus': [
+    { original: 'περικλυτός', scriptId: 'greek', rom: 'periklytós', gloss: 'The far-famed / very renowned', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.607; Odyssey 8.300' }] },
+    { original: 'Λήμνιος', scriptId: 'greek', rom: 'Lḗmnios', gloss: 'Lemnian; of Lemnos, where he fell and his fire-cult centred', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Homer, Iliad 1.593; Sophocles, Philoctetes 986–987' }] },
+  ],
+  'greek_hesiod_dionysus': [
+    { original: 'Βάκχος', scriptId: 'greek', rom: 'Bákkhos', gloss: 'Bacchus; the ecstatic god of the bacchic cry', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae (passim); Sophocles, Antigone 1121' }] },
+    { original: 'Εὔιος', scriptId: 'greek', rom: 'Eúios', gloss: 'God of the cry “euoi!”', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Euripides, Bacchae 566, 579' }] },
+  ],
+  'greek_hesiod_hades': [
+    { original: 'Ἀϊδωνεύς', scriptId: 'greek', rom: 'Aïdōneús', gloss: 'Aïdoneus; the lengthened epic form of the name', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 5.190, 20.61; Homeric Hymn to Demeter (2) 84' }] },
+    { original: 'Ζεὺς καταχθόνιος', scriptId: 'greek', rom: 'Zeùs katakhthónios', gloss: 'The chthonic Zeus; Zeus beneath the earth', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Iliad 9.457' }] },
+  ],
+  'greek_hesiod_persephone': [
+    { original: 'ἁγνή', scriptId: 'greek', rom: 'hagnḗ', gloss: 'The holy/pure one (formulaic “holy Persephone”)', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 11.386; Homeric Hymn to Demeter (2) 337' }] },
+  ],
+  'greek_hesiod_uranus': [
+    { original: 'ἀστερόεις', scriptId: 'greek', rom: 'asteróeis', gloss: 'The starry; starry Heaven', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Hesiod, Theogony 127' }] },
+  ],
+
+  // ── Wave E2: Norse heiti, anchored by Óðinn's names from Grímnismál (the
+  // densest name-catalogue in Eddic verse). All Poetic/Prose Edda; safe new keys.
+  'norse_odin': [
+    { original: 'Herjann', gloss: 'Host-lord; lord of armies (the war-leader of the einherjar)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 46 (Poetic Edda); Völuspá 30' }] },
+    { original: 'Þundr', gloss: 'The thunderer / the roaring one', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 46, 54 (Poetic Edda)' }] },
+    { original: 'Yggr', gloss: 'The terrible one (whence Yggdrasill, “Yggr’s steed”)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 53–54 (Poetic Edda)' }] },
+    { original: 'Hroptatýr', gloss: 'God of the cry / the sage-god', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 54; Hávamál 160 (Poetic Edda)' }] },
+    { original: 'Veratýr', gloss: 'God of men / of beings', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 3 (Poetic Edda)' }] },
+    { original: 'Gautr', gloss: 'The Geat; ancestral progenitor of the Gautar', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 54 (Poetic Edda)' }] },
+    { original: 'Báleygr', gloss: 'Flame-eyed', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47 (Poetic Edda)' }] },
+    { original: 'Bileygr', gloss: 'Weak-eyed / one-eyed (he gave one eye for wisdom)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47 (Poetic Edda)' }] },
+    { original: 'Síðhǫttr', gloss: 'Broad-hat; the low-slouched-hat wanderer', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 48 (Poetic Edda)' }] },
+    { original: 'Fjǫlnir', gloss: 'The concealer / much-knowing', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47 (Poetic Edda)' }] },
+    { original: 'Hnikarr', gloss: 'The inciter; the storm-stiller invoked by seafarers', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 47; Reginsmál 18–19 (Poetic Edda)' }] },
+    { original: 'Farmatýr', gloss: 'God of cargoes; patron of burdens and seafaring', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 48 (Poetic Edda)' }] },
+    { original: 'Óski', gloss: 'God of wishes; fulfiller of desire', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 49 (Poetic Edda)' }] },
+    { original: 'Hárbarðr', gloss: 'Grey-beard; the ferryman who taunts Þórr', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Grímnismál 49; Hárbarðsljóð (Poetic Edda)' }] },
+  ],
+  'norse_thor': [
+    { original: 'Véurr', gloss: 'The hallower / protector (of gods and men)', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Hymiskviða 11, 21 (Poetic Edda)' }] },
+    { original: 'Ásabragr', gloss: 'Prince/foremost of the Æsir', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Snorri, Skáldskaparmál (the heiti of Þórr)' }] },
+  ],
+  'norse_loki': [
+    { original: 'Hveðrungr', gloss: 'The roarer; Loki as father of Fenrir and Hel', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Völuspá 55 (“Hveðrungs mǫgr”); Ynglingatal' }] },
+    { original: 'Býleists bróðir', gloss: 'Brother of Býleistr; Loki by his kin-name', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Völuspá 51; Hyndluljóð 40 (Poetic Edda)' }] },
+  ],
+  'norse_freyr': [
+    { original: 'Ingunar-Freyr', gloss: 'Freyr of the Ingvaeones / of Ingun; the ancestral Yngling lord', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Lokasenna 43 (Poetic Edda)' }] },
+  ],
+  'norse_heimdall': [
+    { original: 'hvíti áss', gloss: 'The white god; brightest of the Æsir', language: 'old-norse', contextTag: 'eddic', sources: [{ kind: 'primary', reference: 'Gylfaginning 27 (Prose Edda); Þrymskviða 15' }] },
+  ],
+
+  // ── Wave E3: Vedic epithets, anchored in the Rigveda (plus the Śatarudrīya
+  // Rudra-litany, the Bhagavad Gītā, and the Rāmāyaṇa's Āditya-hṛdaya). Safe new
+  // keys (hindu_vayu is keyed elsewhere in EPITHETS_X and left untouched).
+  'hindu_indra': [
+    { original: 'वज्रिन्', scriptId: 'sanskrit', rom: 'Vajrin', gloss: 'Wielder of the vajra (the thunderbolt)', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.32.2 (the slaying of Vṛtra)' }] },
+    { original: 'गोत्रभिद्', scriptId: 'sanskrit', rom: 'Gotrabhid', gloss: 'Cleaver of the cow-pens; releaser of the imprisoned cattle and waters', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 6.17.1; 10.103' }] },
+    { original: 'सहस्राक्ष', scriptId: 'sanskrit', rom: 'Sahasrākṣa', gloss: 'The thousand-eyed', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata; later Purāṇic tradition' }] },
+  ],
+  'hindu_agni': [
+    { original: 'पावक', scriptId: 'sanskrit', rom: 'Pāvaka', gloss: 'The Purifier; the cleansing flame', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 5.26.1' }] },
+    { original: 'तनूनपात्', scriptId: 'sanskrit', rom: 'Tanūnapāt', gloss: 'Son of his own body; the self-generated fire', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.13.2; 1.142.3 (the Āprī hymns)' }] },
+    { original: 'सप्तजिह्व', scriptId: 'sanskrit', rom: 'Saptajihva', gloss: 'The seven-tongued; the fire of seven flames', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Muṇḍaka Upaniṣad 1.2.4' }] },
+  ],
+  'hindu_varuna': [
+    { original: 'सम्राज्', scriptId: 'sanskrit', rom: 'Samrāj', gloss: 'Universal sovereign; the all-ruling king', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.25.10; 5.85.3' }] },
+    { original: 'ऋतस्य गोपा', scriptId: 'sanskrit', rom: 'Ṛtasya gopā', gloss: 'Guardian of ṛta — keeper of cosmic order and truth', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.23.5; 8.41' }] },
+    { original: 'यादसाम्पति', scriptId: 'sanskrit', rom: 'Yādasāṃpati', gloss: 'Lord of the aquatic creatures; sovereign of the deep', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata; Purāṇic tradition' }] },
+  ],
+  'hindu_vishnu': [
+    { original: 'त्रिविक्रम', scriptId: 'sanskrit', rom: 'Trivikrama', gloss: 'He of the three strides, who measured out the worlds', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 1.154.1–2 (the three steps of Viṣṇu)' }] },
+    { original: 'गोविन्द', scriptId: 'sanskrit', rom: 'Govinda', gloss: 'Finder and protector of cows; a name of Kṛṣṇa-Viṣṇu', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 1.32; Viṣṇu Sahasranāma' }] },
+    { original: 'अच्युत', scriptId: 'sanskrit', rom: 'Acyuta', gloss: 'The Imperishable; he who never falls away', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Bhagavad Gītā 11.42; Ṛgveda 1.156' }] },
+  ],
+  'hindu_shiva': [
+    { original: 'पशुपति', scriptId: 'sanskrit', rom: 'Paśupati', gloss: 'Lord of creatures and beasts', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Śatarudrīya (Vājasaneyi Saṃhitā 16; Taittirīya Saṃhitā 4.5)' }] },
+    { original: 'गिरीश', scriptId: 'sanskrit', rom: 'Girīśa', gloss: 'Lord of the mountain (Kailāsa)', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Śatarudrīya (Vājasaneyi Saṃhitā 16.2, 16.20)' }] },
+    { original: 'गङ्गाधर', scriptId: 'sanskrit', rom: 'Gaṅgādhara', gloss: 'Bearer of the Ganges, caught in his matted locks', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Śiva Purāṇa; the descent-of-Gaṅgā tradition (Rāmāyaṇa 1.43)' }] },
+  ],
+  'hindu_soma': [
+    { original: 'पवमान', scriptId: 'sanskrit', rom: 'Pavamāna', gloss: 'The self-clarifying; Soma flowing bright through the filter', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda, Maṇḍala 9 (the Pavamāna hymns)' }] },
+    { original: 'राजन्', scriptId: 'sanskrit', rom: 'Soma rājan', gloss: 'King Soma; the royal draught and moon-lord', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 9.1.1ff.' }] },
+  ],
+  'hindu_surya': [
+    { original: 'भास्कर', scriptId: 'sanskrit', rom: 'Bhāskara', gloss: 'The light-maker', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Rāmāyaṇa, Yuddhakāṇḍa 6.105 (Āditya-hṛdaya)' }] },
+    { original: 'दिवाकर', scriptId: 'sanskrit', rom: 'Divākara', gloss: 'The day-maker', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Rāmāyaṇa, Yuddhakāṇḍa 6.105 (Āditya-hṛdaya)' }] },
+    { original: 'सहस्ररश्मि', scriptId: 'sanskrit', rom: 'Sahasraraśmi', gloss: 'The thousand-rayed', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Rāmāyaṇa, Yuddhakāṇḍa 6.105 (Āditya-hṛdaya)' }] },
+  ],
+  'hindu_yama': [
+    { original: 'पितृपति', scriptId: 'sanskrit', rom: 'Pitṛpati', gloss: 'Lord of the ancestors; king of the departed fathers', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 10.14 (Yama and the pitṛs)' }] },
+    { original: 'काल', scriptId: 'sanskrit', rom: 'Kāla', gloss: 'Time; the all-devouring ender', contextTag: 'epic', sources: [{ kind: 'primary', reference: 'Mahābhārata (Yama as Kāla)' }] },
+    { original: 'दण्डधर', scriptId: 'sanskrit', rom: 'Daṇḍadhara', gloss: 'Bearer of the rod of punishment', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic tradition (Yama with the daṇḍa)' }] },
+  ],
+  'hindu_brahma': [
+    { original: 'हिरण्यगर्भ', scriptId: 'sanskrit', rom: 'Hiraṇyagarbha', gloss: 'The Golden Embryo; the cosmic germ from which creation arose', contextTag: 'veda', sources: [{ kind: 'primary', reference: 'Ṛgveda 10.121.1' }] },
+    { original: 'विरिञ्च', scriptId: 'sanskrit', rom: 'Viriñca', gloss: 'The creator; Brahmā the disposer', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic and classical Sanskrit tradition' }] },
+    { original: 'कमलासन', scriptId: 'sanskrit', rom: 'Kamalāsana', gloss: 'The lotus-seated', contextTag: 'purana', sources: [{ kind: 'primary', reference: 'Purāṇic tradition (Brahmā on the lotus from Viṣṇu’s navel)' }] },
+  ],
+
+  // ── Wave E4: Mesopotamian + Egyptian — anchored by Marduk's Fifty Names from
+  // Enūma Eliš VI–VII (the great name-litany), with Enlil and two major Egyptian
+  // syncretisms. All safe new keys.
+  'mesopotamian_marduk': [
+    { original: 'Nēberu', scriptId: 'akkadian', rom: 'Neberu', gloss: 'The Crossing (Ford of heaven); the star (Jupiter) that fixes the stations of the gods', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.124–131' }] },
+    { original: 'Šazu', scriptId: 'akkadian', rom: 'Shazu', gloss: 'Who knows the heart of the gods, who perceives the inmost mind', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.35' }] },
+    { original: 'Enbilulu', scriptId: 'akkadian', rom: 'Enbilulu', gloss: 'Lord of abundance; god of rivers, canals, and irrigation', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.57–61' }] },
+    { original: 'Asaru', scriptId: 'akkadian', rom: 'Asaru', gloss: 'Bestower of cultivation; creator of grain and green growing things', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.1–2' }] },
+    { original: 'Sirsir', scriptId: 'akkadian', rom: 'Sirsir', gloss: 'Who heaped a mountain over Tiamat; subduer of the deep', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Enūma Eliš VII.70–74' }] },
+  ],
+  'mesopotamian_enlil': [
+    { original: 'bēl šīmāti', scriptId: 'akkadian', rom: 'bel shimati', gloss: 'Lord of destinies; holder of the Tablet of Destinies', language: 'akkadian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'The Epic of Anzû (the theft of Enlil’s Tablet of Destinies); Sumerian Enlil hymns' }] },
+  ],
+  'egyptian_ra': [
+    { original: 'jtm', scriptId: 'egyptian', rom: 'Atum', gloss: 'Ra-Atum: the Complete One; the evening and primeval self-created sun of Heliopolis', language: 'egyptian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Pyramid Texts; the Heliopolitan cosmogony (Ra-Atum)' }] },
+  ],
+  'egyptian_amun': [
+    { original: 'jmn-rꜥ', scriptId: 'egyptian', rom: 'Amun-Ra', gloss: 'Amun-Ra: the hidden god fused with the sun; supreme deity of the New Kingdom', language: 'egyptian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Cairo Hymn to Amun-Ra (Papyrus Boulaq 17); the Leiden Amun hymns' }] },
+  ],
+
+  // ── Wave E5: breadth + depth for Aztec deities (Sahagún's Florentine Codex,
+  // already the corpus's Nahua source) and the Morrígan's war-goddess triad.
+  // Three Aztec figures move 0->≥1, lifting the breadth metric. Safe new keys.
+  'aztec_mictlantecuhtli': [
+    { original: 'Tzontemoc', scriptId: 'nahuatl', rom: 'Tzontemoc', gloss: 'He who descends head-first; the plunging (setting) sun-aspect of the death-lord', language: 'nahuatl', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Sahagún, Florentine Codex, Books 3 & 7' }] },
+  ],
+  'aztec_chalchiuhtlicue': [
+    { original: 'Matlalcueye', scriptId: 'nahuatl', rom: 'Matlalcueye', gloss: 'She of the blue-green skirt; the water-goddess’s alternate name (and of Mount Malinche)', language: 'nahuatl', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Sahagún, Florentine Codex, Book 1' }, { kind: 'secondary', reference: 'Muñoz Camargo, Historia de Tlaxcala' }] },
+  ],
+  'aztec_huitzilopochtli': [
+    { original: 'Mēxihtli', scriptId: 'nahuatl', rom: 'Mexihtli', gloss: 'Mexitl; the eponym from whom the Mexica took their name', language: 'nahuatl', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Durán, Historia de las Indias de Nueva España; Sahagún, Florentine Codex, Book 3' }] },
+  ],
+  'aztec_tlaloc': [
+    { original: 'Tlālocān tēuctli', scriptId: 'nahuatl', rom: 'Tlalocan teuctli', gloss: 'Lord of Tlalocan; sovereign of the paradise of rain and the watery dead', language: 'nahuatl', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Sahagún, Florentine Codex, Book 3 (Tlalocan)' }] },
+  ],
+  'irish_morrigan': [
+    { original: 'Macha', scriptId: 'latin', rom: 'Macha', gloss: 'One of the three Morrígna (war-goddess triad); the sovereignty- and battle-goddess of Emain Macha', language: 'irish', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Lebor Gabála Érenn; Cath Maige Tuired; the medieval glossaries' }] },
+    { original: 'Nemain', scriptId: 'latin', rom: 'Nemain', gloss: 'The Venomous / Battle-frenzy; one of the war-fury triad who terrifies armies', language: 'irish', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired; Táin Bó Cúailnge' }] },
+  ],
+
+  // ── Wave NE1: the Americas — Maya (Popol Vuh, Landa, the Dresden Codex) and
+  // Inca (Molina, Betanzos, Garcilaso). Correcting a corpus that left these
+  // richly-attested traditions near-empty. Most figures move 0->≥1. Safe new keys.
+  'maya_huracan': [
+    { original: 'Kaqulja Huracán', scriptId: 'latin', rom: 'Kaqulja Huracan', gloss: 'Thunderbolt Hurricane; first of the three storm-aspects of Heart of Sky', language: 'kiche', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Popol Vuh (the creation; Christenson trans.)' }] },
+    { original: 'Chʼipi-Kaqulja', scriptId: 'latin', rom: "Ch'ipi-Kaqulja", gloss: 'Newborn (Sudden) Thunderbolt; second aspect of Heart of Sky', language: 'kiche', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Popol Vuh (Christenson trans.)' }] },
+    { original: 'Raxa-Kaqulja', scriptId: 'latin', rom: 'Raxa-Kaqulja', gloss: 'Raw (Green) Thunderbolt; third aspect of Heart of Sky', language: 'kiche', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Popol Vuh (Christenson trans.)' }] },
+  ],
+  'maya_gucumatz': [
+    { original: 'Tepew Qʼuqʼumatz', scriptId: 'latin', rom: "Tepew Q'uq'umatz", gloss: 'Sovereign Plumed Serpent; the feathered-serpent creator in the primordial sea', language: 'kiche', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Popol Vuh (Christenson trans.)' }] },
+  ],
+  'maya_ah_puch': [
+    { original: 'Kisin', scriptId: 'latin', rom: 'Kisin', gloss: 'The Stinking One; the Yucatec death-god of the lowest hell', language: 'yucatec', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Diego de Landa, Relación de las cosas de Yucatán' }] },
+    { original: 'Yum Kimil', scriptId: 'latin', rom: 'Yum Kimil', gloss: 'Lord of Death; sovereign of Mitnal, the Yucatec underworld', language: 'yucatec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Yucatec Maya tradition; J. E. S. Thompson, Maya History and Religion' }] },
+  ],
+  'maya_ix_chel': [
+    { original: 'Chak Chel', scriptId: 'latin', rom: 'Chak Chel', gloss: 'Great/Red Rainbow; the aged jaguar-goddess of weaving, medicine, and birth', language: 'yucatec', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Dresden Codex (Goddess O)' }, { kind: 'secondary', reference: 'Taube, The Major Gods of Ancient Yucatan' }] },
+  ],
+  'maya_kinich_ahau': [
+    { original: 'Kʼinich Kʼakʼmoʼ', scriptId: 'latin', rom: "K'inich K'ak' Mo'", gloss: 'Sun-Eyed Fire-Macaw; the sun descending at noon upon Izamal', language: 'yucatec', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Diego de Landa, Relación de las cosas de Yucatán' }] },
+  ],
+  'maya_hun_hunahpu': [
+    { original: 'Hun Nal Ye', scriptId: 'latin', rom: 'Hun Nal Ye', gloss: 'One Maize Revealed; the resurrected Tonsured Maize God, father of the Hero Twins', language: 'kiche', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Karl Taube, on the Classic Maya Maize God; the Popol Vuh resurrection of Hun Hunahpu' }] },
+  ],
+  'maya_chaac': [
+    { original: 'Chaakob', scriptId: 'latin', rom: 'the Four Chaacs', gloss: 'The four directional rain-gods — Chak Xib, Sak Xib, Ek Xib, Kan Xib Chaac (east/north/west/south)', language: 'yucatec', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Diego de Landa, Relación; the Dresden Codex' }] },
+  ],
+  'inca_viracocha': [
+    { original: 'Con Tiqsi Wiraqucha', scriptId: 'latin', rom: 'Con Tici Viracocha', gloss: 'The ceremonial name of the creator who rose from Lake Titicaca to order the world', language: 'quechua', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Juan de Betanzos, Suma y narración de los Incas' }] },
+    { original: 'Apu Qun Tiqsi Wiraqucha', scriptId: 'latin', rom: 'Apu Kon Tici Viracocha', gloss: 'Lord Foundation Viracocha; the supreme creator of the great Cusco prayers', language: 'quechua', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Cristóbal de Molina, Relación de las fábulas y ritos de los Incas' }] },
+  ],
+
+  // ── Wave NE2: Oceania — Māori (George Grey; Elsdon Best) and Hawaiian (Martha
+  // Beckwith; David Malo). Safe new keys (kanaloa/lono are keyed elsewhere).
+  'polynesian_tane': [
+    { original: 'Tāne Mahuta', scriptId: 'latin', rom: 'Tane Mahuta', gloss: 'Tāne of the forest; lord of trees, birds, and all that dwells in the woods', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology; George Grey, Polynesian Mythology' }] },
+    { original: 'Tāne-nui-a-Rangi', scriptId: 'latin', rom: 'Tane-nui-a-Rangi', gloss: 'Great Tāne, son of Rangi; who thrust apart Sky and Earth and made the light', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology' }] },
+  ],
+  'polynesian_maui': [
+    { original: 'Māui-tikitiki-a-Taranga', scriptId: 'latin', rom: 'Maui-tikitiki-a-Taranga', gloss: 'Māui formed in the topknot of Taranga; the demigod’s full name', language: 'maori', contextTag: 'literary', sources: [{ kind: 'secondary', reference: 'George Grey, Polynesian Mythology (Nga Mahi a nga Tupuna)' }] },
+    { original: 'Māui-pōtiki', scriptId: 'latin', rom: 'Maui-potiki', gloss: 'Māui the last-born; youngest of the five Māui brothers', language: 'maori', contextTag: 'literary', sources: [{ kind: 'secondary', reference: 'George Grey, Polynesian Mythology' }] },
+  ],
+  'polynesian_rongo': [
+    { original: 'Rongo-mā-Tāne', scriptId: 'latin', rom: 'Rongo-ma-Tane', gloss: 'Rongo-and-Tāne; god of the kūmara and cultivated foods, and of peace', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology' }] },
+  ],
+  'polynesian_hinenuitepo': [
+    { original: 'Hine-tītama', scriptId: 'latin', rom: 'Hine-titama', gloss: 'The Dawn Maiden; her name before she fled to the underworld to become Great Lady of Night', language: 'maori', contextTag: 'literary', sources: [{ kind: 'secondary', reference: 'George Grey, Polynesian Mythology' }] },
+  ],
+  'polynesian_whiro': [
+    { original: 'Whiro-te-tipua', scriptId: 'latin', rom: 'Whiro-te-tipua', gloss: 'Whiro the demon; lord of darkness, disease, and the underworld Taiwhetuki', language: 'maori', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Elsdon Best, Maori Religion and Mythology' }] },
+  ],
+  'polynesian_namaka': [
+    { original: 'Nā-maka-o-Kahaʻi', scriptId: 'latin', rom: "Na-maka-o-Kaha'i", gloss: 'The eyes of Kahaʻi; the sea-goddess, Pele’s elder sister and rival', language: 'hawaiian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martha Beckwith, Hawaiian Mythology' }] },
+  ],
+
+  // ── Wave NE3: West Africa — Yoruba oríkì (Idowu; Awolalu; Abimbola; Verger)
+  // and Akan praise-names (Rattray; Danquah). Sàngó, with one of the richest
+  // praise traditions anywhere, was wholly absent. Safe new keys.
+  'shango': [
+    { original: 'Ọba Kòso', scriptId: 'latin', rom: 'Oba Koso', gloss: 'The king did not hang; the cult-cry affirming Sàngó’s apotheosis at Koso', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'E. B. Idowu, Olódùmarè: God in Yoruba Belief; J. O. Awolalu, Yoruba Beliefs and Sacrificial Rites' }] },
+    { original: 'Jàkúta', scriptId: 'latin', rom: 'Jakuta', gloss: 'Hurler of stones; the older thunder-deity of the hurled thunderstone, merged with Sàngó', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'E. B. Idowu, Olódùmarè: God in Yoruba Belief' }] },
+    { original: 'Aláàfin', scriptId: 'latin', rom: 'Alaafin', gloss: 'The deified fourth Aláàfin (king) of Ọ̀yọ́, from whom the thunder-orisha derives', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'J. O. Awolalu, Yoruba Beliefs and Sacrificial Rites' }] },
+  ],
+  'obatala': [
+    { original: 'Òrìṣà-ńlá', scriptId: 'latin', rom: 'Orisha-nla', gloss: 'The great orisha; Ọbàtálá’s supreme title as arch-divinity', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'E. B. Idowu, Olódùmarè: God in Yoruba Belief' }] },
+    { original: 'Alámọ̀rere', scriptId: 'latin', rom: 'Alamorere', gloss: 'Owner of the finest white clay; the sculptor who moulds human bodies', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'J. O. Awolalu, Yoruba Beliefs and Sacrificial Rites' }] },
+  ],
+  'eshu': [
+    { original: 'Èṣù Òdàrà', scriptId: 'latin', rom: 'Eshu Odara', gloss: 'Èṣù the wonder-worker; the gracious, unpredictable doer of marvels', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'Wande Abimbola, Ifá; Pierre Verger, Notes sur le culte des orisa' }] },
+  ],
+  'olodumare': [
+    { original: 'Ẹlẹ́dàá', scriptId: 'latin', rom: 'Eleda', gloss: 'The Creator; maker and source of all destinies', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'E. B. Idowu, Olódùmarè: God in Yoruba Belief' }] },
+  ],
+  'orunmila': [
+    { original: 'Agbọnnìrègún', scriptId: 'latin', rom: 'Agbonniregun', gloss: 'The founder of Ifá; Ọ̀rúnmìlà’s praise-name as master of divination', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'Wande Abimbola, Ifá: An Exposition of Ifá Literary Corpus' }] },
+  ],
+  'ogun': [
+    { original: 'Ògún Láàkáyé', scriptId: 'latin', rom: 'Ogun Laakaye', gloss: 'Ogun whose presence fills the world; the opening of his great oríkì', language: 'yoruba', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'J. O. Awolalu, Yoruba Beliefs and Sacrificial Rites' }] },
+  ],
+  'akan_nyame': [
+    { original: 'Onyankopɔn', scriptId: 'latin', rom: 'Onyankopon', gloss: 'The Supreme/Greater One; Nyame as the all-surpassing God', language: 'akan', contextTag: 'praise-name', sources: [{ kind: 'secondary', reference: 'R. S. Rattray, Ashanti; J. B. Danquah, The Akan Doctrine of God' }] },
+  ],
+
+  // ── Wave NE4: Africa cont. — Dogon (Griaule & Dieterlen) and Dinka
+  // (Lienhardt). Only genuinely distinct attested titles, not name-glosses.
+  // All four figures move 0->1. Safe new keys.
+  'dogon_ogo': [
+    { original: 'Yurugu', scriptId: 'latin', rom: 'Yurugu', gloss: 'The Pale Fox; Ogo after his solitary revolt — the incomplete being who loosed disorder on the world', language: 'dogon', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Marcel Griaule & Germaine Dieterlen, Le Renard pâle' }] },
+  ],
+  'dogon_nommo': [
+    { original: 'the Masters of the Water', scriptId: 'latin', rom: 'Nommo, masters of the water', gloss: 'The primordial Nommo, perfect twin beings — masters of water and of the Word', language: 'dogon', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Marcel Griaule, Conversations with Ogotemmêli; Griaule & Dieterlen, Le Renard pâle' }] },
+  ],
+  'dinka_macardit': [
+    { original: 'the Great Black One', scriptId: 'latin', rom: 'Macardit', gloss: 'The great black one; the free divinity of sterility, death, and sudden misfortune', language: 'dinka', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Godfrey Lienhardt, Divinity and Experience: The Religion of the Dinka' }] },
+  ],
+  'dinka_abuk': [
+    { original: 'the first woman', scriptId: 'latin', rom: 'Abuk', gloss: 'The first woman; patroness of women, gardens, and grain, and mother of Deng', language: 'dinka', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Godfrey Lienhardt, Divinity and Experience: The Religion of the Dinka' }] },
+  ],
+
+  // ── Wave NE5: Zoroastrian — the Yashts, Gāθās, and Bundahišn. The six Amesha
+  // Spentas and several yazatas were empty despite dense Avestan attestation.
+  // Safe new keys (atar/haoma/tishtrya already carry their epithets).
+  'zoroastrian_verethragna': [
+    { original: 'Vārəγna', scriptId: 'avestan', rom: 'Varengna', gloss: 'The bird Vārəγna (falcon/raven); the swift winged form, one of his ten incarnations', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'Bahrām Yašt (Yašt 14.19–21)' }] },
+  ],
+  'zoroastrian_aredvi_sura_anahita': [
+    { original: 'frādaṱ.gaēθā', scriptId: 'avestan', rom: 'fradat-gaetha', gloss: 'Who furthers the living world; increaser of herds, households, and lands', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'Ābān Yašt (Yašt 5)' }] },
+  ],
+  'zoroastrian_rashnu': [
+    { original: 'razišta', scriptId: 'avestan', rom: 'razishta', gloss: 'The straightest, most just; the yazata who weighs souls at the Chinvat bridge', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'Rašn Yašt (Yašt 12)' }] },
+  ],
+  'zoroastrian_vayu': [
+    { original: 'uparō.kairiia', scriptId: 'avestan', rom: 'uparo-kairya', gloss: 'Who works on high; Vayu the wind, moving between the realms of Ohrmazd and Ahriman', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'Rām Yašt (Yašt 15)' }] },
+  ],
+  'zoroastrian_azhi_dahaka': [
+    { original: 'θrizafan', scriptId: 'avestan', rom: 'thrizafan', gloss: 'Three-jawed, three-headed, six-eyed; the dragon Aži Dahāka of a thousand wiles', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'Ābān Yašt (Yašt 5.34); Yasna 9.8' }] },
+  ],
+  'zoroastrian_khshathra_vairya': [
+    { original: 'Xšaθra Vairiia', scriptId: 'avestan', rom: 'Khshathra Vairya', gloss: 'Desirable Dominion; the Amesha Spenta of God’s just power, guardian of metals and the sky', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'the Gāθās; Bundahišn (his guardianship of metals)' }] },
+  ],
+  'zoroastrian_spenta_armaiti': [
+    { original: 'Spəṇtā Ārmaiti', scriptId: 'avestan', rom: 'Spenta Armaiti', gloss: 'Holy Devotion; the Amesha Spenta and daughter of Ahura Mazda, guardian of the Earth', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'the Gāθās; Bundahišn' }] },
+  ],
+  'zoroastrian_haurvatat': [
+    { original: 'Hauruuatāt', scriptId: 'avestan', rom: 'Haurvatat', gloss: 'Wholeness and Health; the Amesha Spenta who guards the Waters, paired with Ameretat', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'the Gāθās; Bundahišn' }] },
+  ],
+  'zoroastrian_ameretat': [
+    { original: 'Amərətāt', scriptId: 'avestan', rom: 'Ameretat', gloss: 'Immortality; the Amesha Spenta who guards Plants, paired with Haurvatat', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'the Gāθās; Bundahišn' }] },
+  ],
+  'zoroastrian_spenta_mainyu': [
+    { original: 'Spəṇta Mainiiu', scriptId: 'avestan', rom: 'Spenta Mainyu', gloss: 'The Bounteous Spirit; the creative will of Ahura Mazda, opposed to Angra Mainyu', language: 'avestan', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'the Gāθās (Yasna 30, 45)' }] },
+  ],
+  'zoroastrian_angra_mainyu': [
+    { original: 'Ahriman', scriptId: 'pahlavi', rom: 'Ahriman', gloss: 'The Destructive Spirit (Middle Persian Ahriman); the hostile mind of the Lie (Druj)', language: 'pahlavi', contextTag: 'avesta', sources: [{ kind: 'primary', reference: 'the Gāθās (Yasna 30); the Bundahišn' }] },
+  ],
+
+  // ── Wave NE6: the "non-classical" European paganisms, equally shortchanged —
+  // Finnic (Kalevala), Slavic (Primary Chronicle, Tale of Igor, Helmold,
+  // Ebbo/Herbord), and Baltic (dainos). All eleven figures move 0->1.
+  'finnish_ilmatar': [
+    { original: 'Luonnotar', scriptId: 'latin', rom: 'Luonnotar', gloss: 'Daughter of Nature; the air-virgin who descended to the sea as the Water-Mother and bore Väinämöinen', language: 'finnish', contextTag: 'kalevala', sources: [{ kind: 'primary', reference: 'Kalevala, runo 1' }] },
+  ],
+  'finnish_pellervoinen': [
+    { original: 'Sampsa Pellervoinen', scriptId: 'latin', rom: 'Sampsa Pellervoinen', gloss: 'The boy of the fields; the sower who scatters the trees and plants over the bare earth', language: 'finnish', contextTag: 'kalevala', sources: [{ kind: 'primary', reference: 'Kalevala, runo 2' }] },
+  ],
+  'finnish_tuoni': [
+    { original: 'Tuonelan isäntä', scriptId: 'latin', rom: 'Tuonelan isanta', gloss: 'Lord of Tuonela (Manala); master of the dark death-river realm', language: 'finnish', contextTag: 'kalevala', sources: [{ kind: 'primary', reference: 'Kalevala, runo 16' }] },
+  ],
+  'slavic_perun': [
+    { original: 'Perun Gromovnik', scriptId: 'latin', rom: 'Perun the Thunderer', gloss: 'The Thunderer; head of Vladimir’s pantheon, whose Kyiv idol had a silver head and a golden moustache', language: 'slavic', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Primary Chronicle (Povest’ vremennykh let), s.a. 980' }] },
+  ],
+  'slavic_dazhbog': [
+    { original: 'Dazhbozhi vnuci', scriptId: 'latin', rom: "Dazhbog's grandchildren", gloss: 'The Sun-giver; the Rus’ are called “Dazhbog’s grandchildren”', language: 'slavic', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'The Tale of Igor’s Campaign (Slovo o polku Igoreve)' }] },
+  ],
+  'slavic_stribog': [
+    { original: 'Stribozhi vnuci', scriptId: 'latin', rom: "Stribog's grandsons", gloss: 'God of the winds; the winds blow as “Stribog’s grandsons”', language: 'slavic', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'The Tale of Igor’s Campaign (Slovo o polku Igoreve)' }] },
+  ],
+  'slavic_svarog': [
+    { original: 'the heavenly smith', scriptId: 'latin', rom: 'Svarog the smith', gloss: 'The sky-and-fire god glossed with Hephaestus; the heavenly smith, father of the Sun (Dazhbog)', language: 'slavic', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Hypatian Codex (s.a. 1114), the Malalas interpolation' }] },
+  ],
+  'slavic_chernobog': [
+    { original: 'the Black God', scriptId: 'latin', rom: 'Chernobog', gloss: 'The black god, invoked to avert evil and misfortune among the Wendish Slavs', language: 'slavic', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Helmold of Bosau, Chronica Slavorum' }] },
+  ],
+  'slavic_triglav': [
+    { original: 'the Three-Headed', scriptId: 'latin', rom: 'Triglav', gloss: 'The three-headed god of Szczecin, his eyes and lips veiled with gold so he might not see men’s sins', language: 'slavic', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Ebbo & Herbord, Lives of Otto of Bamberg' }] },
+  ],
+  'lithuanian_saule': [
+    { original: 'Saulė motulė', scriptId: 'latin', rom: 'Saule motule', gloss: 'Dear Mother Sun; the sun-goddess of the dainos who drives her chariot across the sky', language: 'lithuanian', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Lithuanian dainos; Gimbutas, on Baltic religion' }] },
+  ],
+  'lithuanian_laima': [
+    { original: 'Laima lėmėja', scriptId: 'latin', rom: 'Laima the decreer', gloss: 'The decreer of fate; who fixes each person’s lot at birth', language: 'lithuanian', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Lithuanian/Latvian folklore; Gimbutas, on Baltic religion' }] },
+  ],
+
+  // ── Wave NE7: the ancient Near East & Anatolia — Hurrian (the Kumarbi cycle),
+  // Luwian and Hattic (Hittite-archive texts), Phoenician, Aramean, and Sabaean
+  // (inscriptions). Sixteen figures move 0->1. Safe new keys.
+  'hurrian_ullikummi': [
+    { original: 'the deaf-and-blind stone', scriptId: 'latin', rom: 'Ullikummi', gloss: 'The diorite monster Kumarbi begot on a rock, grown on Upelluri’s shoulder to topple Teshub', language: 'hurrian', contextTag: 'myth', sources: [{ kind: 'primary', reference: 'Song of Ullikummi (Hurrian-Hittite, Kumarbi cycle)' }] },
+  ],
+  'hurrian_hedammu': [
+    { original: 'the voracious sea-dragon', scriptId: 'latin', rom: 'Hedammu', gloss: 'The insatiable sea-serpent, son of Kumarbi and Šertapšuruḫi, lured by Šauška', language: 'hurrian', contextTag: 'myth', sources: [{ kind: 'primary', reference: 'Song of Hedammu (Hurrian-Hittite, Kumarbi cycle)' }] },
+  ],
+  'hurrian_aranzah': [
+    { original: 'Aranzah', scriptId: 'latin', rom: 'Aranzah', gloss: 'The deified Tigris; born of Kumarbi with Teshub and Tasmisu', language: 'hurrian', contextTag: 'myth', sources: [{ kind: 'primary', reference: 'Song of Kingship in Heaven (Kumarbi cycle)' }] },
+  ],
+  'hurrian_alalu': [
+    { original: 'the first king in heaven', scriptId: 'latin', rom: 'Alalu', gloss: 'The primeval king of the gods, served then overthrown by Anu, who fled to the dark earth', language: 'hurrian', contextTag: 'myth', sources: [{ kind: 'primary', reference: 'Song of Kingship in Heaven (Kumarbi cycle)' }] },
+  ],
+  'luwian_tarhunz': [
+    { original: 'Tarhunzas of the Vineyard', scriptId: 'latin', rom: 'Tarhunzas tuwarsas', gloss: 'The storm-god who grants the vine and grain; the thundering lord of the Luwian lands', language: 'luwian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Iron Age Hieroglyphic Luwian inscriptions (e.g. the İVRİZ relief)' }] },
+  ],
+  'luwian_tiwaz': [
+    { original: 'Tiwaz', scriptId: 'latin', rom: 'Tiwaz', gloss: 'The Sun-god; overseer of oaths and justice (from PIE *Dyeus)', language: 'luwian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Hittite-Luwian texts; Hieroglyphic Luwian inscriptions' }] },
+  ],
+  'luwian_runtiya': [
+    { original: 'the Stag-god', scriptId: 'latin', rom: 'Runtiya', gloss: 'Tutelary god of the open country and the hunt, who stands upon a stag', language: 'luwian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Hieroglyphic Luwian inscriptions and reliefs' }] },
+  ],
+  'luwian_kamrusepa': [
+    { original: 'goddess of magic', scriptId: 'latin', rom: 'Kamrusepa', gloss: 'Goddess of healing and magic, whose spells cure the anger of the vanished god', language: 'luwian', contextTag: 'myth', sources: [{ kind: 'primary', reference: 'Hittite-Luwian ritual texts; the Telipinu myth' }] },
+  ],
+  'hattic_telipinu': [
+    { original: 'the vanished god', scriptId: 'latin', rom: 'Telipinu', gloss: 'The fertility-god whose angry disappearance withers the land until he is found and appeased', language: 'hattic', contextTag: 'myth', sources: [{ kind: 'primary', reference: 'The Telipinu Myth (Hittite archives)' }] },
+  ],
+  'hattic_wurunkatte': [
+    { original: 'King of the Land', scriptId: 'latin', rom: 'Wurunkatte', gloss: 'The Hattic war-god, “king of the land”', language: 'hattic', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Hittite cult inventories and offering-lists' }] },
+  ],
+  'phoenician_resheph': [
+    { original: 'Resheph of the Arrow', scriptId: 'latin', rom: 'Resheph Hetz', gloss: 'Lord of plague, war, and the netherworld; the archer-god whose arrows are pestilence', language: 'phoenician', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Phoenician and Ugaritic inscriptions; identified with Nergal and Apollo' }] },
+  ],
+  'aramean_hadad': [
+    { original: 'Hadad the Thunderer', scriptId: 'latin', rom: 'Hadad', gloss: 'The storm-god of thunder and rain; great god of Aram-Damascus and Aleppo', language: 'aramaic', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'The Zakkur and Sefire inscriptions; the Hadad statue of Panamuwa (Zincirli)' }] },
+  ],
+  'aramean_atargatis': [
+    { original: 'the Syrian Goddess', scriptId: 'latin', rom: 'Atargatis (Dea Syria)', gloss: 'The great goddess of Hierapolis-Bambyce; consort of Hadad, lady of fish and doves', language: 'aramaic', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Lucian, De Dea Syria; Aramaic dedications' }] },
+  ],
+  'aramean_rakib_el': [
+    { original: 'Charioteer of El', scriptId: 'latin', rom: 'Rakib-El', gloss: 'The dynastic tutelary god of the kings of Samʼal (Zincirli)', language: 'aramaic', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'The Kilamuwa, Hadad, and Panamuwa inscriptions' }] },
+  ],
+  'sabaean_almaqah': [
+    { original: 'lord of Awwam', scriptId: 'latin', rom: 'Almaqah', gloss: 'The national god of Sabaʼ (Sheba), master of the great Awwam temple at Marib', language: 'sabaean', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Sabaean inscriptions (the Mahram Bilqis / Awwam temple)' }] },
+  ],
+  'sabaean_athtar': [
+    { original: 'the Venus-star', scriptId: 'latin', rom: 'Athtar', gloss: 'The masculine morning-star god; the most widespread deity of ancient South Arabia, giver of water', language: 'sabaean', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Ancient South Arabian (Sabaean/Minaean/Qatabanian) inscriptions' }] },
+  ],
+
+  // ── Wave NE8: Central & North Asia / Siberia — Turkic-Mongol (Orkhon
+  // inscriptions; Secret History), and Tungus, Ainu, Ob-Ugric, Samoyedic, and
+  // Yeniseian ethnography. Eighteen figures move 0->1. Safe new keys.
+  'turkic_umay': [
+    { original: 'Umay', scriptId: 'latin', rom: 'Umay', gloss: 'The mother-goddess of the womb, birth, and children; invoked beside Tengri in the royal inscriptions', language: 'turkic', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Orkhon inscriptions (Kül Tigin, “my mother the Khatun, like Umay”)' }] },
+  ],
+  'turkic_ulgen': [
+    { original: 'Ülgen', scriptId: 'latin', rom: 'Ulgen', gloss: 'The benevolent sky-creator of the upper world, dwelling above the layered heavens', language: 'turkic', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. V. Anokhin, on Altai shamanism' }] },
+  ],
+  'turkic_erlik': [
+    { original: 'Erlik Khan', scriptId: 'latin', rom: 'Erlik Khan', gloss: 'Lord of the underworld and the dead; first-formed being who fell into darkness', language: 'turkic', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. V. Anokhin / W. Radloff, on Altai-Turkic belief' }] },
+  ],
+  'mongol_etugen': [
+    { original: 'Etügen eke', scriptId: 'latin', rom: 'Etugen eke', gloss: 'Mother Earth; the earth-goddess paired with Eternal Heaven (Köke Tengri)', language: 'mongolian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'The Secret History of the Mongols' }] },
+  ],
+  'yakut_uruung_aiyy_toyon': [
+    { original: 'Ürüng Aiyy Toyon', scriptId: 'latin', rom: 'Urung Aiyy Toyon', gloss: 'The White Creator Lord; the supreme sky-god of the Sakha, enthroned in the highest heaven', language: 'yakut', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'W. Sieroszewski; G. Ksenofontov, on Sakha (Yakut) belief' }] },
+  ],
+  'evenki_buga': [
+    { original: 'Buga', scriptId: 'latin', rom: 'Buga', gloss: 'The universe and the sky as the supreme being; the living cosmos itself', language: 'evenki', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. F. Anisimov; S. Shirokogoroff, on Tungus cosmology' }] },
+  ],
+  'evenki_seveki': [
+    { original: 'Seveki', scriptId: 'latin', rom: 'Seveki', gloss: 'The benevolent creator and master of the upper world and of the animals (Amaka)', language: 'evenki', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. F. Anisimov, on Evenki religion' }] },
+  ],
+  'ainu_kamuy_fuchi': [
+    { original: 'Ape-huci Kamuy', scriptId: 'latin', rom: 'Ape-huci Kamuy', gloss: 'The hearth-fire grandmother; the central household deity who carries words to the gods', language: 'ainu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'John Batchelor; Neil Gordon Munro, Ainu Creed and Cult' }] },
+  ],
+  'ainu_kim_un_kamuy': [
+    { original: 'Kim-un Kamuy', scriptId: 'latin', rom: 'Kim-un Kamuy', gloss: 'The god of the mountains; the bear who gives his flesh and is sent home at the Iyomante', language: 'ainu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Neil Gordon Munro, Ainu Creed and Cult' }] },
+  ],
+  'ainu_repun_kamuy': [
+    { original: 'Repun Kamuy', scriptId: 'latin', rom: 'Repun Kamuy', gloss: 'The god of the open sea; the orca who drives whales to the shore for the people', language: 'ainu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ainu oral epics (yukar); John Batchelor' }] },
+  ],
+  'mansi_numi_torum': [
+    { original: 'Numi-Torum', scriptId: 'latin', rom: 'Numi-Torum', gloss: 'The supreme sky-god of the upper world, who orders the cosmos from above', language: 'mansi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'B. Munkácsi, on Vogul (Mansi) religion' }] },
+  ],
+  'mansi_mir_susne_khum': [
+    { original: 'Mir-susne-khum', scriptId: 'latin', rom: 'Mir-susne-khum', gloss: 'The Man who watches over the world; youngest son of Numi-Torum, who rides the sky on a winged horse', language: 'mansi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'B. Munkácsi, on Vogul (Mansi) religion' }] },
+  ],
+  'khanty_num_torum': [
+    { original: 'Num-Torum', scriptId: 'latin', rom: 'Num-Torum', gloss: 'The high sky-god and creator of the Khanty upper world', language: 'khanty', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'K. F. Karjalainen, on Ob-Ugric religion' }] },
+  ],
+  'nenets_num': [
+    { original: 'Num', scriptId: 'latin', rom: 'Num', gloss: 'The supreme sky-god and maker of the world', language: 'nenets', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'T. Lehtisalo, on Nenets (Samoyed) mythology' }] },
+  ],
+  'nenets_nga': [
+    { original: 'Nga', scriptId: 'latin', rom: 'Nga', gloss: 'God of death, sickness, and the underworld; son of Num', language: 'nenets', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'T. Lehtisalo, on Nenets (Samoyed) mythology' }] },
+  ],
+  'koryak_big_raven': [
+    { original: 'Quikinnaqu', scriptId: 'latin', rom: 'Quikinnaqu (Big Raven)', gloss: 'Big Raven; the first man, creator and trickster-ancestor whom The-One-on-High made', language: 'koryak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Waldemar Jochelson, The Koryak' }] },
+  ],
+  'ket_es': [
+    { original: 'Es', scriptId: 'latin', rom: 'Es', gloss: 'The supreme sky-god and creator of the Ket', language: 'ket', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'V. I. Anuchin, on Yeniseian (Ket) shamanism' }] },
+  ],
+  'ket_hosedem': [
+    { original: 'Hosedem', scriptId: 'latin', rom: 'Hosedem', gloss: 'The malevolent goddess of the cold north and death; Es’s estranged wife', language: 'ket', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'V. I. Anuchin, on Yeniseian (Ket) belief' }] },
+  ],
+
+  // ── Wave NE9: the Americas cont. — Zapotec, Muisca (Spanish chronicles),
+  // Mapuche, Tupi, Selk'nam (Gusinde), and Yanomami. Eighteen figures move 0->1.
+  'zapotec_cocijo': [
+    { original: 'Cocijo', scriptId: 'latin', rom: 'Cocijo', gloss: 'The great rain-and-lightning god; the foremost Zapotec deity, who looses the four rains', language: 'zapotec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'J. de Córdova, Vocabulario; colonial Oaxaca sources' }] },
+  ],
+  'zapotec_pitao_cozobi': [
+    { original: 'Pitao Cozobi', scriptId: 'latin', rom: 'Pitao Cozobi', gloss: 'The great spirit of maize and abundant sustenance', language: 'zapotec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'J. de Córdova, Vocabulario en lengua zapoteca' }] },
+  ],
+  'zapotec_coqui_xee': [
+    { original: 'Coqui Xee', scriptId: 'latin', rom: 'Coqui Xee', gloss: 'The infinite, uncreated supreme being without beginning or end (Pije-Tao)', language: 'zapotec', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Fray Juan de Córdova; colonial Zapotec sources' }] },
+  ],
+  'muisca_bachue': [
+    { original: 'Furachogua', scriptId: 'latin', rom: 'Bachué (Furachogua)', gloss: 'The Good Woman; mother of humankind who rose from Lake Iguaque and returned as a serpent', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_chibchacum': [
+    { original: 'the earth-bearer', scriptId: 'latin', rom: 'Chibchacum', gloss: 'Patron of farmers and merchants who upholds the earth; shifting it from shoulder to shoulder makes it quake', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_chia': [
+    { original: 'Chía', scriptId: 'latin', rom: 'Chia', gloss: 'The Moon goddess; measure of months and the calendar', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_sue': [
+    { original: 'Sué', scriptId: 'latin', rom: 'Sue', gloss: 'The Sun god, lord of Sogamoso and of Bacatá (whence the name of the city)', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_huitaca': [
+    { original: 'Huitaca', scriptId: 'latin', rom: 'Huitaca', gloss: 'Goddess of pleasure, license, and the moon; Bochica’s adversary, turned into an owl', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'muisca_cuchavira': [
+    { original: 'Cuchavira', scriptId: 'latin', rom: 'Cuchavira', gloss: 'The Rainbow; protector of women in childbirth and of the sick', language: 'chibcha', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Fray Pedro Simón, Noticias historiales' }] },
+  ],
+  'mapuche_antu': [
+    { original: 'Antü', scriptId: 'latin', rom: 'Antu', gloss: 'The Sun; a great power of the celestial tetrad, source of light and life', language: 'mapudungun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ricardo Latcham; Tomás Guevara, on Mapuche religion' }] },
+  ],
+  'mapuche_trentren_vilu': [
+    { original: 'Treng-Treng Vilu', scriptId: 'latin', rom: 'Trentren Vilu', gloss: 'The serpent of land and the heights who raises the hills to save the people from the flood', language: 'mapudungun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mapuche oral tradition (the epew of the great flood)' }] },
+  ],
+  'mapuche_kaikai_vilu': [
+    { original: 'Kai-Kai Vilu', scriptId: 'latin', rom: 'Kaikai Vilu', gloss: 'The serpent of the sea and the waters who looses the flood against humankind', language: 'mapudungun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mapuche oral tradition (the epew of the great flood)' }] },
+  ],
+  'tupi_guaraci': [
+    { original: 'Guaraci', scriptId: 'latin', rom: 'Guaraci', gloss: 'The Sun, “mother/origin of the living”; creator of the creatures of day', language: 'tupi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'André Thevet; José de Anchieta, on Tupi belief' }] },
+  ],
+  'tupi_jaci': [
+    { original: 'Jaci', scriptId: 'latin', rom: 'Jaci', gloss: 'The Moon, mother of the plants and waters; ruler of the night and the tides', language: 'tupi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'André Thevet, on Tupi belief' }] },
+  ],
+  'tupi_monan': [
+    { original: 'Monan', scriptId: 'latin', rom: 'Monan', gloss: 'The ancient creator without beginning, who made the world and purged it with fire and flood', language: 'tupi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'André Thevet, Les Singularitez de la France Antarctique' }] },
+  ],
+  'selknam_temaukel': [
+    { original: 'Temáukel', scriptId: 'latin', rom: 'Temaukel', gloss: 'The supreme, eternal, uncreated being “up there,” to whom no image is made', language: 'selknam', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martin Gusinde, Die Feuerland-Indianer' }] },
+  ],
+  'selknam_kenos': [
+    { original: 'Kénos', scriptId: 'latin', rom: 'Kenos', gloss: 'The first ancestor sent by Temáukel to order the world and establish the moral law', language: 'selknam', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martin Gusinde, Die Feuerland-Indianer' }] },
+  ],
+  'yanomami_omama': [
+    { original: 'Omama', scriptId: 'latin', rom: 'Omama', gloss: 'The creator-demiurge who shaped present humanity and gave the shamans the xapiri spirits', language: 'yanomami', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Davi Kopenawa & Bruce Albert, The Falling Sky; Jacques Lizot' }] },
+  ],
+
+  // ── Wave NE10: Southeast Asia, the Pacific, and the Santal — Philippine
+  // colonial accounts and Austronesian/Melanesian/Micronesian/Adivasi
+  // ethnography. Sixteen figures move 0->1. Safe new keys.
+  'tagalog_bathala': [
+    { original: 'Bathala Maykapal', scriptId: 'latin', rom: 'Bathala Maykapal', gloss: 'Bathala the Creator; the supreme god who made earth and the first man and woman from a bamboo', language: 'tagalog', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Juan de Plasencia, Customs of the Tagalogs (1589)' }] },
+  ],
+  'batak_mula_jadi_na_bolon': [
+    { original: 'Mula Jadi Na Bolon', scriptId: 'latin', rom: 'Mula Jadi Na Bolon', gloss: 'The Great Beginning of Becoming; the supreme Toba Batak creator of the three worlds', language: 'batak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Johannes Warneck, Die Religion der Batak' }] },
+  ],
+  'batak_si_boru_deak_parujar': [
+    { original: 'the weaver who made the earth', scriptId: 'latin', rom: 'Si Boru Deak Parujar', gloss: 'The weaver-goddess who descended from the sky and spread the earth upon the primeval waters', language: 'batak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Johannes Warneck, Die Religion der Batak' }] },
+  ],
+  'batak_naga_padoha': [
+    { original: 'the earth-bearing serpent', scriptId: 'latin', rom: 'Naga Padoha', gloss: 'The serpent of the underworld on whom the earth rests; his writhing makes the ground quake', language: 'batak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Johannes Warneck, Die Religion der Batak' }] },
+  ],
+  'dayak_mahatala': [
+    { original: 'Mahatala', scriptId: 'latin', rom: 'Mahatala (Hatala)', gloss: 'The supreme upperworld god, the hornbill and the male principle of the Ngaju cosmos', language: 'ngaju', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Hans Schärer, Ngaju Religion' }] },
+  ],
+  'dayak_jata': [
+    { original: 'Jata', scriptId: 'latin', rom: 'Jata', gloss: 'The watersnake goddess of the underworld, the female principle, paired with Mahatala', language: 'ngaju', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Hans Schärer, Ngaju Religion' }] },
+  ],
+  'burmese_min_mahagiri': [
+    { original: 'Lord of the Great Mountain', scriptId: 'latin', rom: 'Min Mahagiri', gloss: 'Chief of the Thirty-Seven Nats; the house-guardian spirit of Mount Popa', language: 'burmese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. C. Temple, The Thirty-Seven Nats' }] },
+  ],
+  'fijian_degei': [
+    { original: 'Degei', scriptId: 'latin', rom: 'Degei', gloss: 'The great serpent-god of Nakauvadra; creator and judge of the souls of the dead', language: 'fijian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Basil Thomson, The Fijians; A. M. Hocart' }] },
+  ],
+  'fijian_dakuwaqa': [
+    { original: 'Dakuwaqa', scriptId: 'latin', rom: 'Dakuwaqa', gloss: 'The shark-god, guardian of reef-passages and protector of fishermen and seafarers', language: 'fijian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Fijian oral tradition; A. M. Hocart' }] },
+  ],
+  'vanuatu_tagaro': [
+    { original: 'Tagaro', scriptId: 'latin', rom: 'Tagaro', gloss: 'The creator and culture-hero of north Vanuatu, the well-doing power who shaped the world', language: 'vanuatu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. H. Codrington, The Melanesians' }] },
+  ],
+  'vanuatu_qat': [
+    { original: 'Qat', scriptId: 'latin', rom: 'Qat', gloss: 'The creator-trickster hero of the Banks Islands who made men, day and night, and the first canoe', language: 'vanuatu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. H. Codrington, The Melanesians' }] },
+  ],
+  'kiribati_nareau_elder': [
+    { original: 'Nareau the Elder', scriptId: 'latin', rom: 'Nareau te Moa-ni-bai', gloss: 'The spider-creator (“First of Things”) who made the world from the primal darkness of Te Bo ma Te Maki', language: 'kiribati', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Arthur Grimble, Tungaru Traditions' }] },
+  ],
+  'chuukese_anulap': [
+    { original: 'Anulap', scriptId: 'latin', rom: 'Anulap', gloss: 'The great god of knowledge and magic, who taught divination and dwells in the sky', language: 'chuukese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chuukese (Trukese) ethnography; Bollig, Die Bewohner der Truk-Inseln' }] },
+  ],
+  'chuukese_lugeilan': [
+    { original: 'Lugeilang', scriptId: 'latin', rom: 'Lugeilang', gloss: 'The sky-god who brought knowledge (tattooing, agriculture) to humankind; father of Olofat', language: 'chuukese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chuukese (Trukese) ethnography; Bollig, Die Bewohner der Truk-Inseln' }] },
+  ],
+  'santal_marang_buru': [
+    { original: 'Marang Buru', scriptId: 'latin', rom: 'Marang Buru', gloss: 'The Great Mountain; the supreme deity of the Santal, giver of rain and rice-beer', language: 'santali', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'P. O. Bodding; W. G. Archer, on Santal religion' }] },
+  ],
+  'santal_thakur_jiu': [
+    { original: 'Thakur Jiu', scriptId: 'latin', rom: 'Thakur Jiu', gloss: 'The Lord of Life; the sun and creator-god who fashioned the first beings', language: 'santali', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'P. O. Bodding, Santal folk tales' }] },
+  ],
+
+  // ── Wave NE11: North America — from the standard public ethnographic record
+  // (Matthews, Cushing, Mooney, Swanton, Rasmussen, Dorsey). Widely-published
+  // figures only, not restricted ceremonial knowledge. Sixteen move 0->1.
+  'dine_changing_woman': [
+    { original: 'Asdzą́ą́ Nádleehé', scriptId: 'latin', rom: 'Asdzaa Nadleehe', gloss: 'Changing Woman; the beloved Holy Person of seasonal renewal who made the clans and bore the Hero Twins', language: 'navajo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Washington Matthews, Navaho Legends; Paul Zolbrod, Diné Bahaneʼ' }] },
+  ],
+  'dine_monster_slayer': [
+    { original: 'Naayééʼ Neizghání', scriptId: 'latin', rom: 'Nayee Neizghani', gloss: 'Monster Slayer; elder of the Hero Twins, son of Changing Woman and the Sun, who rid the world of the Naayééʼ', language: 'navajo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Washington Matthews, Navaho Legends' }] },
+  ],
+  'dine_born_for_water': [
+    { original: 'Tóbájíshchíní', scriptId: 'latin', rom: 'Tobajishchini', gloss: 'Born-for-Water; younger of the Hero Twins, who supports his brother in slaying the monsters', language: 'navajo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Washington Matthews, Navaho Legends' }] },
+  ],
+  'dine_spider_woman': [
+    { original: 'Naʼashjéʼii Asdzáá', scriptId: 'latin', rom: "Na'ashje'ii Asdzaa", gloss: 'Spider Woman; who teaches weaving and gives the Twins the counsel that saves them', language: 'navajo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Washington Matthews, Navaho Legends' }] },
+  ],
+  'zuni_awonawilona': [
+    { original: 'Awonawilona', scriptId: 'latin', rom: 'Awonawilona', gloss: 'The all-container; the supreme life-giver from whose substance sun and world arose', language: 'zuni', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Frank Hamilton Cushing, Zuñi Creation Myths' }] },
+  ],
+  'nanabozho': [
+    { original: 'Nanabozho', scriptId: 'latin', rom: 'Nanabozho', gloss: 'The Great Hare; culture-hero and transformer who remade the world after the flood and taught the people', language: 'ojibwe', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Anishinaabe oral tradition; Basil Johnston, Ojibway Heritage' }] },
+  ],
+  'cherokee_selu': [
+    { original: 'Selu', scriptId: 'latin', rom: 'Selu', gloss: 'Corn; the First Woman who gave maize from her own body', language: 'cherokee', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'James Mooney, Myths of the Cherokee' }] },
+  ],
+  'cherokee_kanati': [
+    { original: 'Kanati', scriptId: 'latin', rom: 'Kanati', gloss: 'The Lucky Hunter; the First Man, husband of Selu', language: 'cherokee', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'James Mooney, Myths of the Cherokee' }] },
+  ],
+  'cherokee_unetlanvhi': [
+    { original: 'Unetlanvhi', scriptId: 'latin', rom: 'Unetlanvhi', gloss: 'The Apportioner / Provider; the Creator and supreme being', language: 'cherokee', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'James Mooney, Myths of the Cherokee' }] },
+  ],
+  'haida_raven': [
+    { original: 'Yáahl', scriptId: 'latin', rom: 'Yaahl (Raven)', gloss: 'Raven; the trickster-transformer who released the sun, moon, stars, and fresh water into the world', language: 'haida', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'John R. Swanton, Haida Texts and Myths' }] },
+  ],
+  'inuit_nanook': [
+    { original: 'Nanuq', scriptId: 'latin', rom: 'Nanook', gloss: 'The master of bears, whom hunters must honour so the bear gives itself again', language: 'inuktitut', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Knud Rasmussen, Intellectual Culture of the Iglulik Eskimos' }] },
+  ],
+  'inuit_pinga': [
+    { original: 'Pinga', scriptId: 'latin', rom: 'Pinga', gloss: '“The one on high”; goddess of the hunt, fertility, and the keeper of souls', language: 'inuktitut', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Knud Rasmussen, Intellectual Culture of the Caribou Eskimos' }] },
+  ],
+  'pawnee_tirawa': [
+    { original: 'Tirawáhat', scriptId: 'latin', rom: 'Tirawahat', gloss: 'The Expanse; the supreme power above who set the star-gods their stations and decrees through them', language: 'pawnee', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'George A. Dorsey; James Murie, Pawnee Indian Societies' }] },
+  ],
+  'iroquois_sky_woman': [
+    { original: 'the Woman who fell from the Sky', scriptId: 'latin', rom: 'Sky Woman', gloss: 'The primal mother who fell from the Sky World; earth grew on the Great Turtle’s back to receive her', language: 'iroquoian', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'J. N. B. Hewitt, Iroquoian Cosmology' }] },
+  ],
+  'cree_wisahkecahk': [
+    { original: 'Wîsahkêcâhk', scriptId: 'latin', rom: 'Wisahkecahk', gloss: 'The trickster-transformer and culture-hero who renews the flooded world on a muskrat’s scrap of earth', language: 'cree', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Cree oral tradition; Bloomfield, Sacred Stories of the Sweet Grass Cree' }] },
+  ],
+  'cree_kise_manitow': [
+    { original: 'Kisê-Manitow', scriptId: 'latin', rom: 'Kise-Manitow', gloss: 'The Great/Kind Spirit; the benevolent creator', language: 'cree', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Cree oral tradition; Bloomfield, Sacred Stories of the Sweet Grass Cree' }] },
+  ],
+
+  // ── Wave NE12: under-covered Europe & the Mediterranean — Welsh (Mabinogi),
+  // Gaulish (inscriptions; Lucan), Etruscan, Armenian (Khorenatsi), Basque.
+  // Sixteen figures move 0->1. Safe new keys.
+  'welsh_ceridwen': [
+    { original: 'keeper of the Cauldron of Awen', scriptId: 'latin', rom: 'Ceridwen', gloss: 'The enchantress whose cauldron brews the draught of poetic inspiration (awen); mother of Taliesin', language: 'welsh', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Ystoria Taliesin (Hanes Taliesin)' }] },
+  ],
+  'welsh_gofannon': [
+    { original: 'the divine smith', scriptId: 'latin', rom: 'Gofannon', gloss: 'Son of Dôn, the smith-god of the Welsh (cognate of Irish Goibniu)', language: 'welsh', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy; the Welsh Triads' }] },
+  ],
+  'welsh_amaethon': [
+    { original: 'the divine ploughman', scriptId: 'latin', rom: 'Amaethon', gloss: 'Son of Dôn, god of husbandry (amaeth, “ploughman”); over whose spoils Cad Goddeu was fought', language: 'welsh', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Cad Goddeu; Culhwch ac Olwen' }] },
+  ],
+  'welsh_rhiannon': [
+    { original: 'lady of the wondrous birds', scriptId: 'latin', rom: 'Rhiannon', gloss: 'The Otherworld rider on her white horse, whose three birds (Adar Rhiannon) wake the dead and lull the living', language: 'welsh', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Pwyll Pendefig Dyfed; Branwen ferch Llŷr' }] },
+  ],
+  'welsh_gwydion': [
+    { original: 'the enchanter of Gwynedd', scriptId: 'latin', rom: 'Gwydion', gloss: 'Son of Dôn; the great magician who conjures Blodeuwedd and an army of trees', language: 'welsh', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy' }] },
+  ],
+  'welsh_don': [
+    { original: 'Dôn', scriptId: 'latin', rom: 'Don', gloss: 'The mother-goddess, ancestress of the Children of Dôn (cognate of Irish Danu)', language: 'welsh', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Math fab Mathonwy; the Welsh genealogies' }] },
+  ],
+  'gaulish_epona': [
+    { original: 'the Great Mare', scriptId: 'latin', rom: 'Epona', gloss: 'The horse-goddess, protectress of horses, mares, and cavalry — honoured even in the Roman army calendar', language: 'gaulish', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Gallo-Roman dedicatory inscriptions and reliefs' }] },
+  ],
+  'gaulish_sucellus': [
+    { original: 'the Good Striker', scriptId: 'latin', rom: 'Sucellus', gloss: 'The god of the long-handled mallet and the olla; lord of agriculture, wine, and the dead', language: 'gaulish', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Gallo-Roman inscriptions and statuary' }] },
+  ],
+  'gaulish_nantosuelta': [
+    { original: 'the Winding River', scriptId: 'latin', rom: 'Nantosuelta', gloss: 'Goddess of home, hearth, and nature; consort of Sucellus, shown with a raven and a house-topped sceptre', language: 'gaulish', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Gallo-Roman dedications (e.g. Sarrebourg)' }] },
+  ],
+  'etruscan_menrva': [
+    { original: 'Menrva', scriptId: 'latin', rom: 'Menrva', gloss: 'Goddess of wisdom, war, and the arts; one of the nine who hurl the lightning, of the great triad with Tinia and Uni', language: 'etruscan', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Etruscan mirrors and inscriptions; the Piacenza Liver' }] },
+  ],
+  'armenian_hayk': [
+    { original: 'Hayk Nahapet', scriptId: 'latin', rom: 'Hayk Nahapet', gloss: 'Hayk the Patriarch; the giant archer who slew the tyrant Bel and fathered the Armenian nation (Hayastan)', language: 'armenian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, History of the Armenians' }] },
+  ],
+  'armenian_ara_the_beautiful': [
+    { original: 'Ara Geghetsik', scriptId: 'latin', rom: 'Ara Geghetsik', gloss: 'Ara the Beautiful; the handsome king desired by Queen Semiramis (Shamiram)', language: 'armenian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, History of the Armenians' }] },
+  ],
+  'armenian_david_of_sassoun': [
+    { original: 'Sasuntsi Davit', scriptId: 'latin', rom: 'Sasuntsi Davit', gloss: 'David of Sassoun; the giant-hero who defends his land in the Armenian national epic', language: 'armenian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Sasna Tsrer (Daredevils of Sassoun)' }] },
+  ],
+  'basque_basajaun': [
+    { original: 'the Lord of the Woods', scriptId: 'latin', rom: 'Basajaun', gloss: 'The hairy wild-man of the forest; guardian of flocks who gave humankind agriculture and the smith’s craft', language: 'basque', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'José Miguel de Barandiarán, on Basque mythology' }] },
+  ],
+  'basque_sugaar': [
+    { original: 'Sugaar', scriptId: 'latin', rom: 'Sugaar (Maju)', gloss: 'The male serpent-dragon, consort of Mari; his crossing of the sky in flame portends storms', language: 'basque', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'José Miguel de Barandiarán, on Basque mythology' }] },
+  ],
+  'basque_ortzi': [
+    { original: 'Ortzi', scriptId: 'latin', rom: 'Ortzi (Urtzi)', gloss: 'The sky and thunder; the very word for the firmament and the weather of the heavens', language: 'basque', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Basque etymology of sky/weather terms; Barandiarán' }] },
+  ],
+
+  // ── Wave NE13: African supreme beings & creators — the documented high-gods
+  // and demiurges of many peoples (Evans-Pritchard, Smith & Dale, Field,
+  // Dieterlen, Torday). Eighteen figures move 0->1. Safe new keys.
+  'bambara_faro': [
+    { original: 'master of the Word and the waters', scriptId: 'latin', rom: 'Faro', gloss: 'The demiurge of water and of speech who reorganized the world and set its order', language: 'bambara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Germaine Dieterlen, Essai sur la religion bambara' }] },
+  ],
+  'bambara_pemba': [
+    { original: 'the balanza-tree creator', scriptId: 'latin', rom: 'Pemba', gloss: 'The creator who descended as the balanza (acacia) and from whose body the first beings sprang', language: 'bambara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Germaine Dieterlen, Essai sur la religion bambara' }] },
+  ],
+  'ewe_mawu': [
+    { original: 'Mawu', scriptId: 'latin', rom: 'Mawu', gloss: 'The supreme creator and sky-deity, giver of rain and breath', language: 'ewe', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Jakob Spieth, Die Ewe-Stämme; M. J. Herskovits' }] },
+  ],
+  'fang_nzame': [
+    { original: 'Nzame', scriptId: 'latin', rom: 'Nzame', gloss: 'The creator god, first of the Fang trinity (Nzame, Mebere, Nkwa)', language: 'fang', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Henri Trilles, Le Totémisme chez les Fân' }] },
+  ],
+  'ga_ataa_naa_nyongmo': [
+    { original: 'Ataa-Naa Nyɔŋmɔ', scriptId: 'latin', rom: 'Ataa-Naa Nyongmo', gloss: 'The Father-Mother God; the supreme being who sends the rain and the lightning', language: 'ga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'M. J. Field, Religion and Medicine of the Gã People' }] },
+  ],
+  'ibibio_abasi': [
+    { original: 'Abasi', scriptId: 'latin', rom: 'Abasi', gloss: 'The supreme creator and sky-god, who with Atai set the order of the world', language: 'ibibio', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ibibio/Efik ethnography (D. A. Talbot)' }] },
+  ],
+  'ijaw_woyengi': [
+    { original: 'Our Mother', scriptId: 'latin', rom: 'Woyengi', gloss: 'The great mother-creator who moulds each person from earth and grants the destiny they choose', language: 'ijaw', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ijo (Izon) oral tradition; Gabriel Okara' }] },
+  ],
+  'kuba_mbombo': [
+    { original: 'the white giant', scriptId: 'latin', rom: 'Mbombo (Bumba)', gloss: 'The creator who, in pain, vomited up the sun, moon, stars, and all living beings', language: 'kuba', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. Torday & T. A. Joyce, on the Bushongo (Kuba)' }] },
+  ],
+  'kuba_woot': [
+    { original: 'the first king', scriptId: 'latin', rom: 'Woot', gloss: 'The culture-hero and first ancestor-king from whom the Kuba kings descend', language: 'kuba', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Jan Vansina, on Kuba history and tradition' }] },
+  ],
+  'lozi_nyambe': [
+    { original: 'Nyambe', scriptId: 'latin', rom: 'Nyambe', gloss: 'The supreme creator who dwelt on earth, then withdrew to the sky up a spider’s thread', language: 'lozi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'É. Jacottet, on Barotse (Lozi) tradition' }] },
+  ],
+  'mende_ngewo': [
+    { original: 'Ngewo', scriptId: 'latin', rom: 'Ngewo', gloss: 'The supreme creator and sky-god, the distant maker of all', language: 'mende', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mende ethnography (Sierra Leone); K. L. Little' }] },
+  ],
+  'nuer_kwoth': [
+    { original: 'Kwoth Nhial', scriptId: 'latin', rom: 'Kwoth Nhial', gloss: 'Spirit of the Sky; the one supreme God who is everywhere and in all the lesser spirits', language: 'nuer', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. E. Evans-Pritchard, Nuer Religion' }] },
+  ],
+  'serer_roog': [
+    { original: 'Roog Sene', scriptId: 'latin', rom: 'Roog Sene', gloss: 'The supreme, merciful creator-god of the Serer, source and end of all things', language: 'serer', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Henry Gravrand, on Serer religion (Cosaan)' }] },
+  ],
+  'shilluk_nyikang': [
+    { original: 'the first reth', scriptId: 'latin', rom: 'Nyikang', gloss: 'The semi-divine founder-king and culture-hero, incarnate in every reigning Shilluk king', language: 'shilluk', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. E. Evans-Pritchard, The Divine Kingship of the Shilluk' }] },
+  ],
+  'tonga_leza': [
+    { original: 'Leza', scriptId: 'latin', rom: 'Leza', gloss: 'The supreme high-god and rain-giver; “the Besetting One” who orders birth and death', language: 'tonga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'E. W. Smith & A. M. Dale, The Ila-speaking Peoples of Northern Rhodesia' }] },
+  ],
+  'senufo_kolotyolo': [
+    { original: 'Kolotyolo', scriptId: 'latin', rom: 'Kolotyolo', gloss: 'The Creator; the remote demiurge “who gives the day,” balanced by the Ancient Mother Maleeo', language: 'senufo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Anita Glaze, Art and Death in a Senufo Village' }] },
+  ],
+  'herero_mukuru': [
+    { original: 'Mukuru', scriptId: 'latin', rom: 'Mukuru', gloss: 'The supreme divine ancestor; the rain-giver and healer who blesses through the holy fire', language: 'herero', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Herero ethnography (H. Vedder, on the Ovaherero)' }] },
+  ],
+  'herero_ndjambi': [
+    { original: 'Ndjambi Karunga', scriptId: 'latin', rom: 'Ndjambi Karunga', gloss: 'The remote celestial high-god of the heavens, to whom the dead return', language: 'herero', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Herero ethnography (H. Vedder, on the Ovaherero)' }] },
+  ],
+
+  // ── Wave NE14: Iberia + Mesoamerica — Lusitanian/Celtiberian/Cantabrian
+  // (Roman-era votive inscriptions) and Mixtec/Otomi/Totonac (codices and
+  // colonial sources). Eighteen figures move 0->1. Safe new keys.
+  'lusitanian_endovelicus': [
+    { original: 'Endovelicus', scriptId: 'latin', rom: 'Endovelicus', gloss: 'The great chthonic god of healing and prophecy; his oracle gave cures through dream-incubation', language: 'lusitanian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Votive inscriptions of São Miguel da Mota (Alandroal)' }] },
+  ],
+  'lusitanian_ataecina': [
+    { original: 'Ataecina', scriptId: 'latin', rom: 'Ataecina', gloss: 'The chthonic goddess of the underworld, renewal, and fertility, equated with Proserpina', language: 'lusitanian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hispano-Roman votive and curse inscriptions (defixiones)' }] },
+  ],
+  'lusitanian_bandua': [
+    { original: 'Bandua', scriptId: 'latin', rom: 'Bandua', gloss: 'The tutelary god of communities and their places, equated at times with Mars or Fortuna', language: 'lusitanian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hispano-Roman votive inscriptions' }] },
+  ],
+  'lusitanian_nabia': [
+    { original: 'Nabia', scriptId: 'latin', rom: 'Nabia', gloss: 'The goddess of rivers, springs, and running water', language: 'lusitanian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'The Fonte do Ídolo (Braga); Hispano-Roman inscriptions' }] },
+  ],
+  'lusitanian_reve': [
+    { original: 'Reve', scriptId: 'latin', rom: 'Reue', gloss: 'A great god of the heights and waters, often equated with Jupiter', language: 'lusitanian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hispano-Roman votive inscriptions; the Cabeço das Fráguas inscription' }] },
+  ],
+  'lusitanian_trebaruna': [
+    { original: 'Trebaruna', scriptId: 'latin', rom: 'Trebaruna', gloss: 'Goddess of the home, the community (treba), and of battle', language: 'lusitanian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hispano-Roman votive inscriptions' }] },
+  ],
+  'celtiberian_lugus': [
+    { original: 'Lugus', scriptId: 'latin', rom: 'Lugus', gloss: 'The pan-Celtic god of crafts, oaths, and sovereignty (cf. Irish Lugh, Welsh Lleu)', language: 'celtiberian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'The Peñalba de Villastar inscription; the Lugoves dedications' }] },
+  ],
+  'celtiberian_neto': [
+    { original: 'Neto', scriptId: 'latin', rom: 'Neto (Neton)', gloss: 'The war-god of the Celtiberians and Lusitanians, worshipped with martial honours', language: 'celtiberian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Macrobius, Saturnalia 1.19; Hispano-Roman inscriptions' }] },
+  ],
+  'cantabrian_candamius': [
+    { original: 'Candamius', scriptId: 'latin', rom: 'Candamius', gloss: 'The Cantabrian sky-and-mountain god, equated with Jupiter (the Mons Candamius)', language: 'cantabrian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hispano-Roman votive inscriptions of the Cantabrian north' }] },
+  ],
+  'cantabrian_mater_deva': [
+    { original: 'Mater Deva', scriptId: 'latin', rom: 'Mater Deva', gloss: 'The mother-goddess of the river Deva; the deified sacred river', language: 'cantabrian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hispano-Roman votive inscriptions' }] },
+  ],
+  'cantabrian_erudinus': [
+    { original: 'Erudinus', scriptId: 'latin', rom: 'Erudinus', gloss: 'A Cantabrian god honoured on the heights of Dobra', language: 'cantabrian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'The dated rock inscription of Monte Dobra (Cantabria)' }] },
+  ],
+  'mixtec_lord_9_wind': [
+    { original: 'Koo Sau (9 Wind)', scriptId: 'latin', rom: '9 Wind', gloss: 'Nine Wind, the Mixtec Plumed Serpent; the culture-hero who descended from the sky bearing civilization', language: 'mixtec', contextTag: 'codex', sources: [{ kind: 'primary', reference: 'Codex Vienna (Vindobonensis Mexicanus 1)' }] },
+  ],
+  'mixtec_lord_1_deer': [
+    { original: 'Puma Serpent (1 Deer)', scriptId: 'latin', rom: '1 Deer (male)', gloss: 'Lord 1 Deer; with Lady 1 Deer, the primordial creator-couple from whom gods and lineages spring', language: 'mixtec', contextTag: 'codex', sources: [{ kind: 'primary', reference: 'Codex Vienna (Vindobonensis); Codex Nuttall' }] },
+  ],
+  'mixtec_lady_1_deer': [
+    { original: 'Jaguar Serpent (1 Deer)', scriptId: 'latin', rom: '1 Deer (female)', gloss: 'Lady 1 Deer; with Lord 1 Deer, the primordial creator-couple of the Mixtec', language: 'mixtec', contextTag: 'codex', sources: [{ kind: 'primary', reference: 'Codex Vienna (Vindobonensis); Codex Nuttall' }] },
+  ],
+  'otomi_otontecuhtli': [
+    { original: 'Otontecuhtli', scriptId: 'latin', rom: 'Otontecuhtli', gloss: 'Lord of the Otomi; the old fire-and-death god, patron of the people', language: 'otomi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Sahagún, Florentine Codex (on the Otomi); Carrasco, Los Otomíes' }] },
+  ],
+  'otomi_zana': [
+    { original: 'Zǎnä', scriptId: 'latin', rom: 'Zana', gloss: 'The Moon, the old grandmother-goddess and great mother of the Otomi', language: 'otomi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Pedro Carrasco, Los Otomíes' }] },
+  ],
+  'totonac_aktsini': [
+    { original: "Aktsini'", scriptId: 'latin', rom: 'Aktsini', gloss: 'The thunder-and-rain god, lord of the storms (associated with El Tajín)', language: 'totonac', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Totonac ethnography (Ichon, La religión de los totonacas)' }] },
+  ],
+  'totonac_corn_mother': [
+    { original: 'the Maize Mother', scriptId: 'latin', rom: 'Corn Mother', gloss: 'The young maize-goddess who gives and guards the sustaining corn', language: 'totonac', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Alain Ichon, La religión de los totonacas de la sierra' }] },
+  ],
+
+  // ── Wave NE15: the Caucasus (Nart sagas; Dumézil) + ancient Elam & Urartu
+  // (cuneiform inscriptions). Eighteen figures move 0->1. Safe new keys.
+  'ossetian_satana': [
+    { original: 'Satana', scriptId: 'latin', rom: 'Satana', gloss: 'The wise matriarch of the Narts; resourceful mother and counsellor of the heroes', language: 'ossetian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Georges Dumézil, Le Livre des héros (the Nart sagas)' }] },
+  ],
+  'ossetian_batraz': [
+    { original: 'the steel hero', scriptId: 'latin', rom: 'Batraz', gloss: 'The steel-tempered champion of the Narts, forged hard by the smith and quenched in the sea', language: 'ossetian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Georges Dumézil, Le Livre des héros (the Nart sagas)' }] },
+  ],
+  'ossetian_donbettyr': [
+    { original: 'Donbettyr', scriptId: 'latin', rom: 'Donbettyr', gloss: 'Lord of the waters and the sea; ancestor of the water-folk and of Satana', language: 'ossetian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Georges Dumézil, Le Livre des héros (the Nart sagas)' }] },
+  ],
+  'circassian_tlepsh': [
+    { original: 'the smith of the Narts', scriptId: 'latin', rom: 'Tlepsh', gloss: 'The divine blacksmith who forges the weapons of the Narts and tempers their heroes', language: 'circassian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'The Adyghe (Circassian) Nart sagas; J. Colarusso, Nart Sagas' }] },
+  ],
+  'circassian_setenaya': [
+    { original: 'Setenaya', scriptId: 'latin', rom: 'Setenaya (Satanaya)', gloss: 'The wise and beautiful mother of the Narts, mistress of counsel and plenty', language: 'circassian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'J. Colarusso, Nart Sagas from the Caucasus' }] },
+  ],
+  'circassian_sosruquo': [
+    { original: 'the fire-bringer', scriptId: 'latin', rom: 'Sosruquo', gloss: 'The steel-bodied trickster-hero, born from a stone, who carried fire back to the Narts', language: 'circassian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'J. Colarusso, Nart Sagas from the Caucasus' }] },
+  ],
+  'circassian_shible': [
+    { original: 'Shible', scriptId: 'latin', rom: 'Shible', gloss: 'The god of thunder and lightning; the storm whose stroke is holy', language: 'circassian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Circassian (Adyghe) ethnography' }] },
+  ],
+  'vainakh_dela': [
+    { original: 'Dela', scriptId: 'latin', rom: 'Dela', gloss: 'The supreme creator-god, head of the Nakh pantheon', language: 'vainakh', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chechen-Ingush (Vainakh) ethnography' }] },
+  ],
+  'vainakh_pkharmat': [
+    { original: 'the fire-thief', scriptId: 'latin', rom: 'Pkharmat', gloss: 'The Nart smith who stole fire from Sela for humankind and was chained to a peak for it (the Nakh Prometheus)', language: 'vainakh', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Vainakh (Chechen-Ingush) Nart tradition' }] },
+  ],
+  'vainakh_tusholi': [
+    { original: 'Tusholi', scriptId: 'latin', rom: 'Tusholi', gloss: 'The goddess of fertility and the spring, daughter of Dela; her day opens the farming year', language: 'vainakh', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chechen-Ingush (Vainakh) ethnography' }] },
+  ],
+  'kartvelian_dali': [
+    { original: 'Dali', scriptId: 'latin', rom: 'Dali', gloss: 'The golden-haired goddess of the hunt and the wild beasts of the high crags', language: 'georgian', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Svan and Georgian highland tradition' }] },
+  ],
+  'kartvelian_amirani': [
+    { original: 'the chained Titan', scriptId: 'latin', rom: 'Amirani', gloss: 'The culture-hero chained to the Caucasus for defying the chief god (the Georgian Prometheus)', language: 'georgian', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'The Georgian epic of Amirani' }] },
+  ],
+  'elamite_inshushinak': [
+    { original: 'Lord of Susa', scriptId: 'latin', rom: 'Inshushinak', gloss: 'The great god of the Elamite capital; judge of the dead in the underworld', language: 'elamite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Elamite royal inscriptions (Susa, Chogha Zanbil)' }] },
+  ],
+  'elamite_napirisha': [
+    { original: 'the Great God', scriptId: 'latin', rom: 'Napirisha', gloss: 'The supreme deity of Elam, lord of the waters of the deep', language: 'elamite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Elamite royal inscriptions (Chogha Zanbil)' }] },
+  ],
+  'elamite_kiririsha': [
+    { original: 'the Great Lady', scriptId: 'latin', rom: 'Kiririsha', gloss: 'The great mother-goddess of Elam, “lady of Liyan,” consort of Napirisha', language: 'elamite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Elamite royal inscriptions (Liyan, Chogha Zanbil)' }] },
+  ],
+  'urartian_haldi': [
+    { original: 'Haldi', scriptId: 'latin', rom: 'Haldi', gloss: 'The supreme war-god and head of the Urartian pantheon, lord of Ardini (Musasir)', language: 'urartian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Urartian royal inscriptions (the Van/Mher Kapısı stele)' }] },
+  ],
+  'urartian_teisheba': [
+    { original: 'Teisheba', scriptId: 'latin', rom: 'Teisheba', gloss: 'The storm-god of Urartu (cognate of Hurrian Teshub), second of the great triad', language: 'urartian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Urartian royal inscriptions (Mher Kapısı)' }] },
+  ],
+  'urartian_shivini': [
+    { original: 'Shivini', scriptId: 'latin', rom: 'Shivini', gloss: 'The sun-god of Urartu (cognate of Hurrian Shimige), third of the great triad', language: 'urartian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Urartian royal inscriptions (Mher Kapısı)' }] },
+  ],
+
+  // ── Wave NE16: South Asian & Himalayan Adivasi traditions — Bhil, Gondi,
+  // Khasi, Naga, Kirati, Lepcha, Bodo, Garo, Nuristani, Kalash (Elwin, Hutton,
+  // Robertson, Siiger, and the ethnographic record). Eighteen move 0->1.
+  'bhil_bhagwan': [
+    { original: 'Bhagwan', scriptId: 'latin', rom: 'Bhagwan', gloss: 'The supreme god of the Bhil, the high creator over the lesser deities', language: 'bhil', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Bhil ethnography (the Pithora tradition of central India)' }] },
+  ],
+  'gondi_lingo_pen': [
+    { original: 'Pari Kupar Lingo', scriptId: 'latin', rom: 'Pari Kupar Lingo', gloss: 'The culture-hero who freed and ordered the Gond clans and founded their law and song', language: 'gondi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Verrier Elwin; W. V. Grigson, on Gond tradition' }] },
+  ],
+  'gondi_persa_pen': [
+    { original: 'Bara Deo', scriptId: 'latin', rom: 'Persa Pen', gloss: 'The Great God; the clan-deity who dwells in the saja tree and guards the lineage', language: 'gondi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Verrier Elwin, on the religion of the Gond' }] },
+  ],
+  'khasi_u_blei_nongthaw': [
+    { original: 'U Blei Nongthaw', scriptId: 'latin', rom: 'U Blei Nongthaw', gloss: 'God the Creator; the maker who set the world in order', language: 'khasi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Khasi ethnography (P. R. T. Gurdon, The Khasis)' }] },
+  ],
+  'khasi_ka_mei_ramew': [
+    { original: 'Ka Mei Ramew', scriptId: 'latin', rom: 'Ka Mei Ramew', gloss: 'Mother Earth; the great goddess who sustains the living', language: 'khasi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Khasi ethnography (P. R. T. Gurdon, The Khasis)' }] },
+  ],
+  'naga_kepenuopfu': [
+    { original: 'Kepenuopfü', scriptId: 'latin', rom: 'Kepenuopfu', gloss: 'The birth-spirit and creator who brings each soul into being (Angami Naga)', language: 'naga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'J. H. Hutton, The Angami Nagas' }] },
+  ],
+  'naga_lijaba': [
+    { original: 'Lijaba', scriptId: 'latin', rom: 'Lijaba', gloss: 'The earth-entering creator who becomes the soil and gives the harvest (Ao Naga)', language: 'naga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ao Naga ethnography (J. P. Mills, The Ao Nagas)' }] },
+  ],
+  'kirati_tagera_ningwaphuma': [
+    { original: 'Tagera Ningwaphuma', scriptId: 'latin', rom: 'Tagera Ningwaphuma', gloss: 'The supreme, all-knowing being; the source from whom Yuma proceeds (Limbu)', language: 'limbu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Limbu (Kirati) Mundhum tradition' }] },
+  ],
+  'kirati_yuma_sammang': [
+    { original: 'Yuma Sammang', scriptId: 'latin', rom: 'Yuma Sammang', gloss: 'The great grandmother-goddess, protector and giver of life among the Limbu', language: 'limbu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Limbu (Kirati) Mundhum tradition' }] },
+  ],
+  'lepcha_itbu_moo': [
+    { original: 'Itbu-moo', scriptId: 'latin', rom: 'Itbu-moo', gloss: 'The mother-creator who shaped the first Lepcha from the pure snows of Kanchenjunga', language: 'lepcha', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Halfdan Siiger, The Lepchas' }] },
+  ],
+  'lepcha_kongchen': [
+    { original: 'Kongchen', scriptId: 'latin', rom: 'Kongchen (Kanchenjunga)', gloss: 'The great mountain-god and guardian of the Lepcha land', language: 'lepcha', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Geoffrey Gorer, Himalayan Village; Siiger, The Lepchas' }] },
+  ],
+  'bodo_bathoubwrai': [
+    { original: 'Bathou Bwrai', scriptId: 'latin', rom: 'Bathou Bwrai', gloss: 'The supreme god, the elder, present in the living sijou plant of the household shrine', language: 'bodo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Bodo (Boro) ethnography of the Bathou faith' }] },
+  ],
+  'garo_tatara_rabuga': [
+    { original: 'Tatara-Rabuga', scriptId: 'latin', rom: 'Tatara-Rabuga', gloss: 'The creator who commanded that the earth be shaped from the primeval waters', language: 'garo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. Playfair, The Garos' }] },
+  ],
+  'garo_nostu_nopantu': [
+    { original: 'Nostu-Nopantu', scriptId: 'latin', rom: 'Nostu-Nopantu', gloss: 'The goddess who, at the creator’s word, fashioned the earth upon the waters', language: 'garo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'A. Playfair, The Garos' }] },
+  ],
+  'nuristani_imra': [
+    { original: 'Imra', scriptId: 'latin', rom: 'Imra (Yamrāʼi)', gloss: 'The great creator-god of the Kafirs of Nuristan, maker of the other gods', language: 'nuristani', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'George Scott Robertson, The Kafirs of the Hindu-Kush' }] },
+  ],
+  'nuristani_disani': [
+    { original: 'Disani', scriptId: 'latin', rom: 'Disani', gloss: 'The great fertility and earth goddess, the most beloved of the Kafir deities', language: 'nuristani', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'George Scott Robertson, The Kafirs of the Hindu-Kush' }] },
+  ],
+  'kalash_mahandeo': [
+    { original: 'Mahandeo', scriptId: 'latin', rom: 'Mahandeo', gloss: 'A principal god of the Kalash, invoked for crops, war, and counsel', language: 'kalasha', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Kalasha ethnography of Chitral (Cacopardo; Parkes)' }] },
+  ],
+  'kalash_jestak': [
+    { original: 'Jestak', scriptId: 'latin', rom: 'Jestak', gloss: 'The goddess of home, family, lineage, and birth, whose hall (Jestak-han) is the clan’s shrine', language: 'kalasha', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Kalasha ethnography of Chitral (Cacopardo; Parkes)' }] },
+  ],
+
+  // ── Wave NE17: remaining North & South America — Hopi, Tlingit,
+  // Kwakwaka'wakw, Wabanaki, Pemon, Bororo, Huichol, Aymara (Voth, Swanton,
+  // Boas, Koch-Grünberg, Lumholtz). Eighteen figures move 0->1.
+  'hopi_taawa': [
+    { original: 'Taawa', scriptId: 'latin', rom: 'Taawa', gloss: 'The Sun Spirit and creator, who made the first beings and the worlds', language: 'hopi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'H. R. Voth, The Traditions of the Hopi' }] },
+  ],
+  'hopi_masauwu': [
+    { original: 'Maasaw', scriptId: 'latin', rom: 'Maasaw', gloss: 'The earth-god and keeper of fire and death; caretaker and guardian of the present Fourth World', language: 'hopi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'H. R. Voth, The Traditions of the Hopi' }] },
+  ],
+  'hopi_kokopelli': [
+    { original: 'Kókopölö', scriptId: 'latin', rom: 'Kokopelli', gloss: 'The humpbacked flute-player; spirit of fertility, seed, music, and travel', language: 'hopi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Hopi katsina tradition' }] },
+  ],
+  'tlingit_raven': [
+    { original: 'Yéil', scriptId: 'latin', rom: 'Yeil (Raven)', gloss: 'Raven; the trickster-transformer who freed the sun, moon, and stars and set the world in order', language: 'tlingit', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'John R. Swanton, Tlingit Myths and Texts' }] },
+  ],
+  'kwakwakawakw_thunderbird': [
+    { original: 'Kwanusila', scriptId: 'latin', rom: 'Thunderbird', gloss: 'The Thunderbird, whose wing-beats are the thunder and whose blink is the lightning', language: 'kwakwala', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Franz Boas, on the Kwakiutl' }] },
+  ],
+  'kwakwakawakw_sisiutl': [
+    { original: 'Sisiutl', scriptId: 'latin', rom: 'Sisiutl', gloss: 'The double-headed serpent; a dangerous and powerful being whose glance can turn the foe to stone', language: 'kwakwala', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Franz Boas, on the Kwakiutl' }] },
+  ],
+  'wabanaki_gluskap': [
+    { original: 'Gluskap', scriptId: 'latin', rom: 'Gluskap (Glooscap)', gloss: 'The benevolent culture-hero and transformer who shaped the land and taught the people', language: 'wabanaki', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Wabanaki oral tradition; Leland, Algonquin Legends' }] },
+  ],
+  'wabanaki_malsum': [
+    { original: 'Malsum', scriptId: 'latin', rom: 'Malsum', gloss: 'The wolf; Gluskap’s contrary brother who shapes the rough and harmful things', language: 'wabanaki', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Wabanaki oral tradition; Leland, Algonquin Legends' }] },
+  ],
+  'makunaima': [
+    { original: 'Makunaima', scriptId: 'latin', rom: 'Makunaima', gloss: 'The trickster culture-hero and youngest creator-brother of the Pemon and Taulipang', language: 'pemon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Theodor Koch-Grünberg, Vom Roroima zum Orinoco' }] },
+  ],
+  'wei': [
+    { original: 'Wei', scriptId: 'latin', rom: 'Wei', gloss: 'The Sun; father of Makunaima and his brothers', language: 'pemon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Theodor Koch-Grünberg, Vom Roroima zum Orinoco' }] },
+  ],
+  'bororo_meri': [
+    { original: 'Meri', scriptId: 'latin', rom: 'Meri', gloss: 'The Sun; the central culture-hero of the Bororo (with Ari, the Moon)', language: 'bororo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Colbacchini & Albisetti, Os Bororos Orientais; Lévi-Strauss' }] },
+  ],
+  'bororo_bope': [
+    { original: 'the Bope', scriptId: 'latin', rom: 'Bope', gloss: 'The transformative spirits that govern blood, death, storms, and the powers of nature', language: 'bororo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Colbacchini & Albisetti, Os Bororos Orientais' }] },
+  ],
+  'huichol_tatewari': [
+    { original: 'Tatewarí', scriptId: 'latin', rom: 'Tatewari', gloss: 'Our Grandfather Fire; the oldest god and the first shaman, who guides the peyote pilgrimage', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Carl Lumholtz, Unknown Mexico; Barbara Myerhoff, Peyote Hunt' }] },
+  ],
+  'huichol_nakawe': [
+    { original: 'Takutsi Nakawé', scriptId: 'latin', rom: 'Nakawe', gloss: 'Our Grandmother Growth; the aged earth- and fertility-goddess, creator of vegetation', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Carl Lumholtz, Unknown Mexico; R. M. Zingg, The Huichols' }] },
+  ],
+  'huichol_tau': [
+    { original: 'Tayaupá', scriptId: 'latin', rom: 'Tau (Tayaupa)', gloss: 'Our Father Sun, who rose from the underworld to light the world', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Carl Lumholtz, Unknown Mexico' }] },
+  ],
+  'huichol_kauyumari': [
+    { original: 'Kauyumari', scriptId: 'latin', rom: 'Kauyumari', gloss: 'The sacred Deer-Person and trickster, the shaman’s guide and the spirit of peyote', language: 'huichol', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Barbara Myerhoff, Peyote Hunt' }] },
+  ],
+  'aymara_inti': [
+    { original: 'Inti', scriptId: 'latin', rom: 'Inti', gloss: 'The Sun, giver of warmth and the harvest, the great celestial power of the Andes', language: 'aymara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Andean (Aymara) ethnography; colonial chronicles' }] },
+  ],
+  'aymara_tunupa': [
+    { original: 'Tunupa', scriptId: 'latin', rom: 'Tunupa', gloss: 'The wandering god of thunder, volcanoes, and weather, who crossed the altiplano shaping the land', language: 'aymara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Andean ethnography; Bertonio, Vocabulario de la lengua aymara' }] },
+  ],
+
+  // ── Wave NE18: remaining Pacific + Siberia — Micronesian/Melanesian
+  // (Malinowski, Landtman) and Siberian (Bogoras) ethnography. Eighteen
+  // figures move 0->1. Safe new keys.
+  'palauan_uchelianged': [
+    { original: 'Uchelianged', scriptId: 'latin', rom: 'Uchelianged', gloss: 'The first/highest of the heavens; the supreme sky-deity of Palau', language: 'palauan', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Palauan oral tradition' }] },
+  ],
+  'palauan_latmikaik': [
+    { original: 'Latmikaik', scriptId: 'latin', rom: 'Latmikaik', gloss: 'The primal mother in the sea who bore the first beings and gods', language: 'palauan', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Palauan oral tradition' }] },
+  ],
+  'palauan_milad': [
+    { original: 'Milad', scriptId: 'latin', rom: 'Milad', gloss: 'The woman who alone survived the flood and became mother of the four chiefly polities of Palau', language: 'palauan', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Palauan oral tradition' }] },
+  ],
+  'pohnpeian_nahnisohn_sahpw': [
+    { original: 'Nahnisohn Sahpw', scriptId: 'latin', rom: 'Nahnisohn Sahpw', gloss: 'The Great Spirit of the Land; lord of agriculture and the soil', language: 'pohnpeian', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Pohnpeian oral tradition' }] },
+  ],
+  'pohnpeian_isokelekel': [
+    { original: 'Isokelekel', scriptId: 'latin', rom: 'Isokelekel', gloss: 'The “shining noble”; the hero-warrior who overthrew the Saudeleur dynasty of Nan Madol', language: 'pohnpeian', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Pohnpeian oral history of Nan Madol' }] },
+  ],
+  'marshallese_lowa': [
+    { original: 'Lowa', scriptId: 'latin', rom: 'Lowa', gloss: 'The creator who, from the primal sea, hummed the islands and living things into being', language: 'marshallese', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Marshallese oral tradition' }] },
+  ],
+  'marshallese_wulleb': [
+    { original: 'Wūllep', scriptId: 'latin', rom: 'Wulleb', gloss: 'A primal being of the first creation; father of the trickster Letao', language: 'marshallese', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Marshallese oral tradition' }] },
+  ],
+  'chamorro_puntan': [
+    { original: 'Puntan', scriptId: 'latin', rom: 'Puntan', gloss: 'The primordial being from whose body the sky, earth, sun, and moon were formed', language: 'chamorro', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Chamorro (Mariana Islands) creation tradition' }] },
+  ],
+  'chamorro_fuuna': [
+    { original: "Fu'una", scriptId: 'latin', rom: 'Fuuna', gloss: 'The sister who shaped the world from Puntan’s body and, as Fouha Rock, brought forth humankind', language: 'chamorro', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Chamorro (Mariana Islands) creation tradition' }] },
+  ],
+  'trobriand_tudava': [
+    { original: 'Tudava', scriptId: 'latin', rom: 'Tudava', gloss: 'The culture-hero who taught yam-gardening and slew the ogre Dokonikan', language: 'kilivila', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Bronisław Malinowski, on the Trobriand Islanders' }] },
+  ],
+  'kiwai_sido': [
+    { original: 'Sido', scriptId: 'latin', rom: 'Sido', gloss: 'The first man to die, whose long journey opened and founded the road of the dead', language: 'kiwai', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Gunnar Landtman, The Kiwai Papuans of British New Guinea' }] },
+  ],
+  'buryat_esege_malan': [
+    { original: 'Esege Malan', scriptId: 'latin', rom: 'Esege Malan Tengri', gloss: 'Father Bald-Heaven; the supreme sky-god, source of life and light', language: 'buryat', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Buryat (Mongol) shamanic tradition; Jeremiah Curtin' }] },
+  ],
+  'buryat_khan_khormusta': [
+    { original: 'Khan Khormusta', scriptId: 'latin', rom: 'Khan Khormusta Tengri', gloss: 'Chief of the fifty-five western (benevolent) tengri of the sky', language: 'buryat', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Buryat (Mongol) shamanic tradition' }] },
+  ],
+  'buryat_manzan_gurme': [
+    { original: 'Manzan Gurme', scriptId: 'latin', rom: 'Manzan Gurme Toodei', gloss: 'The wise old grandmother-goddess who keeps the book of the gods’ fates', language: 'buryat', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Buryat (Mongol) shamanic tradition' }] },
+  ],
+  'chukchi_tenanto_mwan': [
+    { original: 'Tenantomwan', scriptId: 'latin', rom: "Tenanto'mwan", gloss: 'The Creator, “the One who Comes into Being”; maker of the Chukchi world', language: 'chukchi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Waldemar Bogoras, The Chukchee' }] },
+  ],
+  'chukchi_kurkil': [
+    { original: 'Kurkil', scriptId: 'latin', rom: 'Kurkil', gloss: 'The Raven; creator-trickster who made the land, light, and the first people', language: 'chukchi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Waldemar Bogoras, The Chukchee' }] },
+  ],
+  'selkup_nom': [
+    { original: 'Nom', scriptId: 'latin', rom: 'Nom', gloss: 'The sky and supreme being; the benevolent celestial god of the Selkup', language: 'selkup', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Selkup (Samoyedic) ethnography' }] },
+  ],
+  'nivkh_pal_yz': [
+    { original: 'Pal Yz', scriptId: 'latin', rom: 'Pal Yz', gloss: 'The Master of the Mountain; lord of the land, the forest, and its game', language: 'nivkh', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Nivkh (Gilyak) ethnography; Lev Shternberg' }] },
+  ],
+
+  // ── Wave NE19: remaining Africa + Finno-Ugric + Australian — supreme beings,
+  // creators, and All-Fathers (Hahn, Rouch, Howitt, and the ethnographic
+  // record; the Australian figures are widely-published). Eighteen move 0->1.
+  'chewa_chiuta': [
+    { original: 'Chiuta', scriptId: 'latin', rom: 'Chiuta (Chauta)', gloss: 'The self-existent supreme creator and rain-giver, seen in the great bow of the rainbow', language: 'chewa', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chewa (Maravi) religion; J. M. Schoffeleers' }] },
+  ],
+  'songhai_dongo': [
+    { original: 'Dongo', scriptId: 'latin', rom: 'Dongo', gloss: 'The thunder-god, who hurls the lightning and is summoned in the holey spirit-possession', language: 'songhai', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Jean Rouch, La religion et la magie songhay' }] },
+  ],
+  'songhai_harakoy_dikko': [
+    { original: 'Harakoy Dikko', scriptId: 'latin', rom: 'Harakoy Dikko', gloss: 'The goddess of the Niger River waters, mother of the water-spirits', language: 'songhai', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Jean Rouch, La religion et la magie songhay' }] },
+  ],
+  'luo_nyasaye': [
+    { original: 'Nyasaye', scriptId: 'latin', rom: 'Nyasaye', gloss: 'The supreme God of the Luo, source of life, approached through the ancestors', language: 'luo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Luo (Nilotic) ethnography' }] },
+  ],
+  'luo_were': [
+    { original: 'Were', scriptId: 'latin', rom: 'Were', gloss: 'The high god of the sky (Were Nyakalaga), the omnipresent one; a name of God among the Luo', language: 'luo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Luo (Nilotic) ethnography' }] },
+  ],
+  'khoekhoe_tsui_goab': [
+    { original: 'Tsui-ǁGoab', scriptId: 'latin', rom: 'Tsui-Goab', gloss: 'The supreme being and ancestor, the red dawn and rain-giver who each year defeats death', language: 'khoekhoe', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Theophilus Hahn, Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi' }] },
+  ],
+  'khoekhoe_gaunab': [
+    { original: 'ǁGaunab', scriptId: 'latin', rom: 'Gaunab', gloss: 'The malevolent being of death and the dark sky, the adversary of Tsui-ǁGoab', language: 'khoekhoe', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Theophilus Hahn, Tsuni-ǁGoam' }] },
+  ],
+  'guanche_achaman': [
+    { original: 'Achamán', scriptId: 'latin', rom: 'Achaman', gloss: 'The supreme sky-god and creator of the Guanches of Tenerife, “the heavens”', language: 'guanche', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Guanche tradition recorded by early Castilian chroniclers' }] },
+  ],
+  'guanche_chaxiraxi': [
+    { original: 'Chaxiraxi', scriptId: 'latin', rom: 'Chaxiraxi', gloss: 'The great mother sun-goddess, “she who holds up the heavens”', language: 'guanche', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Guanche tradition (later syncretized with the Virgin of Candelaria)' }] },
+  ],
+  'guanche_guayota': [
+    { original: 'Guayota', scriptId: 'latin', rom: 'Guayota', gloss: 'The malevolent being who dwells in the volcano Echeyde (Teide) and seizes the sun', language: 'guanche', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Guanche tradition recorded by early Castilian chroniclers' }] },
+  ],
+  'mossi_wende': [
+    { original: 'Wende', scriptId: 'latin', rom: 'Wende', gloss: 'The supreme sky-and-sun god of the Mossi, source of order and destiny', language: 'mossi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mossi (Burkina Faso) ethnography' }] },
+  ],
+  'mari_kugu_yumo': [
+    { original: 'Kugu Yumo', scriptId: 'latin', rom: 'Kugu Yumo', gloss: 'The Great God; the supreme sky-deity of the Mari', language: 'mari', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mari (Cheremis) ethnography' }] },
+  ],
+  'udmurt_inmar': [
+    { original: 'Inmar', scriptId: 'latin', rom: 'Inmar', gloss: 'The supreme sky-god and creator of the Udmurt', language: 'udmurt', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Udmurt (Votyak) ethnography' }] },
+  ],
+  'mordvin_ineshkipaz': [
+    { original: 'Ineshkipaz', scriptId: 'latin', rom: 'Ineshkipaz', gloss: 'The great creator-god of the Erzya Mordvins, maker of the world', language: 'mordvin', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Mordvin (Erzya/Moksha) ethnography' }] },
+  ],
+  'komi_jen': [
+    { original: 'Jen', scriptId: 'latin', rom: 'Jen', gloss: 'The benevolent creator and sky-god, who shapes the good world against his rival Omöl', language: 'komi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Komi (Zyrian) ethnography' }] },
+  ],
+  'aboriginal_baiame': [
+    { original: 'Baiame', scriptId: 'latin', rom: 'Baiame', gloss: 'The Sky-Father and All-Father; creator of the land and giver of the law to the south-eastern nations', language: 'kamilaroi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'A. W. Howitt, The Native Tribes of South-East Australia; R. H. Mathews' }] },
+  ],
+  'aboriginal_bunjil': [
+    { original: 'Bunjil', scriptId: 'latin', rom: 'Bunjil', gloss: 'The eaglehawk creator and All-Father of the Kulin, who made the land, the animals, and the first people', language: 'kulin', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'A. W. Howitt, The Native Tribes of South-East Australia' }] },
+  ],
+  'aboriginal_wandjina': [
+    { original: 'the Wandjina', scriptId: 'latin', rom: 'Wandjina', gloss: 'The cloud-and-rain ancestral creators of the Kimberley, who shaped the land and bring the wet season', language: 'worrorra', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Kimberley (Worrorra/Mowanjum) tradition; A. P. Elkin' }] },
+  ],
+
+  // ── Wave NE20: remaining Americas + Southeast Asia — Apache (Opler), Crow
+  // (Lowie), Tsimshian (Boas), Pomo (Barrett), Toba (Métraux), Shipibo,
+  // Purépecha (Relación de Michoacán), Hmong, Sundanese, Toraja, Bicolano.
+  'apache_ussen': [
+    { original: 'Ussen', scriptId: 'latin', rom: 'Ussen (Yusn)', gloss: 'The Life-Giver; the supreme creator and source of power of the Apache', language: 'apache', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Morris Opler, An Apache Life-Way' }] },
+  ],
+  'apache_white_painted_woman': [
+    { original: 'White Painted Woman', scriptId: 'latin', rom: 'Isánáklésh', gloss: 'The mother of the people, honoured in the girls’ Sunrise Ceremony; bearer of the monster-slaying twins', language: 'apache', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Morris Opler, An Apache Life-Way' }] },
+  ],
+  'apache_child_of_the_water': [
+    { original: 'Child of the Water', scriptId: 'latin', rom: 'Tóbájíshchíní', gloss: 'The culture-hero who, with Killer of Enemies, rid the world of the monsters', language: 'apache', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Morris Opler, An Apache Life-Way' }] },
+  ],
+  'crow_old_man_coyote': [
+    { original: 'Old Man Coyote', scriptId: 'latin', rom: 'Isáahkawuattee', gloss: 'The creator-trickster who shaped the earth and people from mud brought up out of the waters', language: 'crow', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Robert H. Lowie, The Religion of the Crow Indians' }] },
+  ],
+  'asdiwal': [
+    { original: 'Asdiwal', scriptId: 'latin', rom: 'Asdiwal', gloss: 'The hunter-hero of the Skeena whose journeys between sky, sea, and mountain frame the great Tsimshian cycle', language: 'tsimshian', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Franz Boas, Tsimshian Mythology; Lévi-Strauss, The Story of Asdiwal' }] },
+  ],
+  'pomo_marumda': [
+    { original: 'Marumda', scriptId: 'latin', rom: 'Marumda', gloss: 'The creator who made and remade the world; the old earth-maker of the Pomo', language: 'pomo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'S. A. Barrett, Pomo Myths' }] },
+  ],
+  'pomo_kuksu': [
+    { original: 'Kuksu', scriptId: 'latin', rom: 'Kuksu', gloss: 'The first-man and healer spirit of the south, patron of the great Kuksu dance-society', language: 'pomo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'S. A. Barrett, Pomo Myths' }] },
+  ],
+  'toba_kasogonaga': [
+    { original: 'Kasogonaga', scriptId: 'latin', rom: 'Kasogonaga', gloss: 'The sky-being of rain and weather, who hangs above and looses the storms', language: 'toba', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Alfred Métraux, Myths of the Toba and Pilagá Indians of the Gran Chaco' }] },
+  ],
+  'shipibo_ronin': [
+    { original: 'Ronin', scriptId: 'latin', rom: 'Ronin', gloss: 'The cosmic anaconda whose shimmering skin holds the patterns (kené) and the waters of the world', language: 'shipibo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Shipibo-Conibo ethnography (P. Roe, The Cosmic Zygote)' }] },
+  ],
+  'shipibo_bari': [
+    { original: 'Bari', scriptId: 'latin', rom: 'Bari', gloss: 'The Sun, who measures the day and ripens the forest and the gardens', language: 'shipibo', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Shipibo-Conibo ethnography' }] },
+  ],
+  'purepecha_curicaueri': [
+    { original: 'Curicaueri', scriptId: 'latin', rom: 'Curicaueri', gloss: 'The Great Burning One; the chief fire-and-sun god of the Tarascans, lord of the ruling dynasty', language: 'purepecha', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Relación de Michoacán' }] },
+  ],
+  'purepecha_cuerauaperi': [
+    { original: 'Cuerauáperi', scriptId: 'latin', rom: 'Cuerauaperi', gloss: 'The creator-mother goddess who looses the rains and to whom the harvest returns', language: 'purepecha', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Relación de Michoacán' }] },
+  ],
+  'purepecha_xaratanga': [
+    { original: 'Xarátanga', scriptId: 'latin', rom: 'Xaratanga', gloss: 'The moon and earth goddess of growth, the sea, and the maguey', language: 'purepecha', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Relación de Michoacán' }] },
+  ],
+  'hmong_saub': [
+    { original: 'Saub', scriptId: 'latin', rom: 'Saub', gloss: 'The benevolent creator-sage who counsels humankind and renews the world after the flood', language: 'hmong', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Hmong oral tradition' }] },
+  ],
+  'sundanese_sang_hyang_kersa': [
+    { original: 'Sang Hyang Kersa', scriptId: 'latin', rom: 'Sang Hyang Kersa', gloss: 'The Almighty Will; the supreme, invisible god of Sunda Wiwitan from whom all proceeds', language: 'sundanese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Sundanese Wiwitan tradition; the Carita Parahyangan' }] },
+  ],
+  'sundanese_nyi_pohaci': [
+    { original: 'Nyi Pohaci Sanghyang Asri', scriptId: 'latin', rom: 'Nyi Pohaci Sanghyang Asri', gloss: 'The rice-goddess; the beloved giver of the sustaining grain', language: 'sundanese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Sundanese tradition; the Wawacan Sulanjana' }] },
+  ],
+  'toraja_puang_matua': [
+    { original: 'Puang Matua', scriptId: 'latin', rom: 'Puang Matua', gloss: 'The Old Lord; the creator-god of the Aluk To Dolo who forged the first ancestors in his bellows', language: 'toraja', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Toraja (Aluk To Dolo) tradition' }] },
+  ],
+  'bicolano_asuang': [
+    { original: 'Asuang', scriptId: 'latin', rom: 'Asuang', gloss: 'The god of evil and the dark, eternal rival of the good Gugurang for fire and souls', language: 'bicolano', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Bicolano oral tradition (the Ibalon epic milieu)' }] },
+  ],
+
+  // ── Wave NE21: remaining Africa + Europe — African supreme beings and the
+  // Scythian/Dacian/Hungarian/Lydian gods (Herodotus; the ethnographic and
+  // historical record). Eighteen figures move 0->1.
+  'tiv_aondo': [
+    { original: 'Aondo', scriptId: 'latin', rom: 'Aondo', gloss: 'The Sky; the supreme god of the Tiv, remote source of all', language: 'tiv', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Tiv (Nigeria) ethnography (R. & L. Bohannan)' }] },
+  ],
+  'nupe_soko': [
+    { original: 'Soko', scriptId: 'latin', rom: 'Soko', gloss: 'The supreme sky-god and creator of the Nupe', language: 'nupe', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'S. F. Nadel, Nupe Religion' }] },
+  ],
+  'sotho_tswana_modimo': [
+    { original: 'Modimo', scriptId: 'latin', rom: 'Modimo', gloss: 'The supreme being and remote creator, approached through the ancestors (badimo)', language: 'sotho-tswana', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Sotho-Tswana ethnography' }] },
+  ],
+  'bemba_lesa': [
+    { original: 'Lesa', scriptId: 'latin', rom: 'Lesa', gloss: 'The supreme creator and rain-giver of the Bemba', language: 'bemba', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Bemba (Zambia) ethnography' }] },
+  ],
+  'baule_nyamien': [
+    { original: 'Nyamien', scriptId: 'latin', rom: 'Nyamien', gloss: 'The supreme sky-god and creator, remote above the world', language: 'baule', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Baule (Côte d’Ivoire) ethnography' }] },
+  ],
+  'baule_asie': [
+    { original: 'Asie', scriptId: 'latin', rom: 'Asie', gloss: 'The Earth; the goddess of the ground from whom the spirits (asie usu) arise', language: 'baule', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Baule (Côte d’Ivoire) ethnography (S. Vogel)' }] },
+  ],
+  'bunyoro_ruhanga': [
+    { original: 'Ruhanga', scriptId: 'latin', rom: 'Ruhanga', gloss: 'The creator-god of the Nyoro, maker and orderer of the world', language: 'nyoro', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Bunyoro (Uganda) ethnography (J. Beattie)' }] },
+  ],
+  'lugbara_adroa': [
+    { original: 'Adroa', scriptId: 'latin', rom: 'Adroa (Adro)', gloss: 'The supreme creator-god, transcendent in the sky (Adroa) and immanent on earth (Adro)', language: 'lugbara', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'John Middleton, Lugbara Religion' }] },
+  ],
+  'san_kaggen': [
+    { original: 'ǀKaggen', scriptId: 'latin', rom: 'Kaggen', gloss: 'The Mantis; the trickster-creator who made the eland and the moon (ǀXam San)', language: 'san', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Bleek & Lloyd, Specimens of Bushman Folklore' }] },
+  ],
+  'scythian_api': [
+    { original: 'Api', scriptId: 'latin', rom: 'Api', gloss: 'The earth-goddess, consort of Papaios (whom Herodotus equates with Ge)', language: 'scythian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Herodotus 4.59' }] },
+  ],
+  'scythian_thagimasadas': [
+    { original: 'Thagimasadas', scriptId: 'latin', rom: 'Thagimasadas', gloss: 'God of the waters and horses, whom the Royal Scythians worship (equated with Poseidon)', language: 'scythian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Herodotus 4.59' }] },
+  ],
+  'scythian_goitosyros': [
+    { original: 'Goitosyros', scriptId: 'latin', rom: 'Goitosyros (Oetosyrus)', gloss: 'The solar god whom Herodotus equates with Apollo', language: 'scythian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Herodotus 4.59' }] },
+  ],
+  'scythian_snake_legged_goddess': [
+    { original: 'the Snake-legged Goddess', scriptId: 'latin', rom: 'the serpent-footed mother', gloss: 'The serpent-bodied ancestral mother who bore the first Scythians to Heracles', language: 'scythian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Herodotus 4.8–10' }] },
+  ],
+  'dacian_zalmoxis': [
+    { original: 'Zalmoxis', scriptId: 'latin', rom: 'Zalmoxis', gloss: 'The god of immortality of the Getae, to whom they send a messenger every fourth year', language: 'dacian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Herodotus 4.94–96' }] },
+  ],
+  'hungarian_isten': [
+    { original: 'Öregisten', scriptId: 'latin', rom: 'Isten (Öregisten)', gloss: 'The Old God; the supreme sky-being of the ancient Magyars', language: 'hungarian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Hungarian ethnography (the táltos tradition)' }] },
+  ],
+  'hungarian_turul': [
+    { original: 'Turul', scriptId: 'latin', rom: 'Turul', gloss: 'The great falcon-bird of the heavens, ancestral guardian of Árpád’s line', language: 'hungarian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Anonymus, Gesta Hungarorum; Simon of Kéza' }] },
+  ],
+  'lydian_kuvava': [
+    { original: 'Kuvava', scriptId: 'latin', rom: 'Kuvava (Kybebe)', gloss: 'The great mother-goddess of Sardis, the Lydian Cybele', language: 'lydian', contextTag: 'cult', sources: [{ kind: 'primary', reference: 'Lydian inscriptions; Herodotus 5.102 (the shrine of Kybebe at Sardis)' }] },
+  ],
+  'lydian_santas': [
+    { original: 'Santas', scriptId: 'latin', rom: 'Santas (Sandon)', gloss: 'The warrior-god identified with Heracles, an ancient Anatolian power of Lydia', language: 'lydian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Anatolian/Lydian tradition (Santas–Sandon)' }] },
+  ],
+
+  // ── Wave NE22: final mop-up I — the smallest still-empty traditions across
+  // Africa, the Americas, Anatolia, the Caucasus-steppe, the Andamans, Kamchatka,
+  // and NE India. Eighteen figures move 0->1. Safe new keys.
+  'berber_gurzil': [
+    { original: 'Gurzil', scriptId: 'latin', rom: 'Gurzil', gloss: 'The bull-formed war-god of the Laguatan Berbers, borne into battle at the army’s head', language: 'berber', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Corippus, Iohannis (the wars in North Africa)' }] },
+  ],
+  'berber_ifri': [
+    { original: 'Ifri', scriptId: 'latin', rom: 'Ifri', gloss: 'The cave-goddess, protective local deity of the grottoes (the Dii Ifru of inscriptions)', language: 'berber', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Romano-Berber votive inscriptions of North Africa' }] },
+  ],
+  'ipisowaahs': [
+    { original: 'Morning Star', scriptId: 'latin', rom: 'Ipisowaahs', gloss: 'The Morning Star; son of the Sun and Feather Woman, who shines between sky and earth', language: 'blackfoot', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'George Bird Grinnell, Blackfoot Lodge Tales' }] },
+  ],
+  'poia': [
+    { original: 'Scarface', scriptId: 'latin', rom: 'Poia', gloss: 'Star Boy, who journeyed to the Sun, had his scar removed, and brought the people the Sun Dance', language: 'blackfoot', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'George Bird Grinnell, Blackfoot Lodge Tales' }] },
+  ],
+  'cheyenne_maheo': [
+    { original: 'Maheo', scriptId: 'latin', rom: 'Maheo', gloss: 'The All-Spirit; the supreme creator who made the world from the primal waters', language: 'cheyenne', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Cheyenne oral tradition (Grinnell; Powell, Sweet Medicine)' }] },
+  ],
+  'cheyenne_sweet_medicine': [
+    { original: 'Sweet Medicine', scriptId: 'latin', rom: 'Motseyoef', gloss: 'The prophet-hero who received the Sacred Arrows and the laws of the people at Bear Butte', language: 'cheyenne', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Peter J. Powell, Sweet Medicine' }] },
+  ],
+  'lycian_trqqas': [
+    { original: 'Trqqas', scriptId: 'latin', rom: 'Trqqas (Trqqñt)', gloss: 'The Lycian storm-and-weather god (cognate of Luwian Tarhunt)', language: 'lycian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Lycian inscriptions; the Letoon trilingual' }] },
+  ],
+  'lycian_maliya': [
+    { original: 'Maliya', scriptId: 'latin', rom: 'Maliya', gloss: 'A great Lycian goddess of springs and crafts, akin to Athena', language: 'lycian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Lycian inscriptions' }] },
+  ],
+  'veps_vedenizand': [
+    { original: 'Vedenizand', scriptId: 'latin', rom: 'Vedenizand', gloss: 'The Master of the Water; spirit-lord of lakes and rivers and their fish', language: 'veps', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Veps (Finnic) folk belief' }] },
+  ],
+  'veps_metsanisand': [
+    { original: 'Metsanisand', scriptId: 'latin', rom: 'Metsanisand', gloss: 'The Master of the Forest; spirit-lord of the woods and their game', language: 'veps', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Veps (Finnic) folk belief' }] },
+  ],
+  'ovambo_kalunga': [
+    { original: 'Kalunga', scriptId: 'latin', rom: 'Kalunga', gloss: 'The supreme creator and lord of the dead of the Ovambo', language: 'ovambo', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Ovambo (Aawambo) ethnography' }] },
+  ],
+  'ndebele_unkulunkulu': [
+    { original: 'uNkulunkulu', scriptId: 'latin', rom: 'uNkulunkulu', gloss: 'The Great-Great-One; the first ancestor and creator who came forth from the reeds', language: 'ndebele', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Nguni (Ndebele/Zulu) ethnography' }] },
+  ],
+  'jukun_chido': [
+    { original: 'Chido', scriptId: 'latin', rom: 'Chido', gloss: 'The Sky; the supreme god of the Jukun, joined with the divine king', language: 'jukun', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'C. K. Meek, A Sudanese Kingdom (the Jukun)' }] },
+  ],
+  'chaga_ruwa': [
+    { original: 'Ruwa', scriptId: 'latin', rom: 'Ruwa', gloss: 'The Sun and supreme god of the Chaga, merciful liberator and giver of life', language: 'chaga', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Bruno Gutmann, on the Chaga of Kilimanjaro' }] },
+  ],
+  'andamanese_biliku': [
+    { original: 'Biliku', scriptId: 'latin', rom: 'Biliku (Puluga)', gloss: 'The great sky-and-storm being, source of the wind and the seasons', language: 'andamanese', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'A. R. Radcliffe-Brown, The Andaman Islanders' }] },
+  ],
+  'itelmen_kutkh': [
+    { original: 'Kutkh', scriptId: 'latin', rom: 'Kutkh', gloss: 'The Raven; creator and trickster who made Kamchatka and its first people', language: 'itelmen', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'G. W. Steller; W. Jochelson, on the Itelmen (Kamchadal)' }] },
+  ],
+  'karbi_hemphu': [
+    { original: 'Hemphu', scriptId: 'latin', rom: 'Hemphu', gloss: 'The supreme creator and house-god of the Karbi, lord of the people', language: 'karbi', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Karbi (Mikir) ethnography of Assam' }] },
+  ],
+  'sarmatian_sword_god': [
+    { original: 'the planted sword', scriptId: 'latin', rom: 'the sword-god', gloss: 'The war-god worshipped as a naked sword fixed upright in the earth and honoured with offerings', language: 'sarmatian', contextTag: 'literary', sources: [{ kind: 'primary', reference: 'Ammianus Marcellinus 31.2.23 (on the Alans)' }] },
+  ],
+
+  // ── Wave NE23: final mop-up II — the last well-attested figures of the
+  // remaining traditions (Radin, Glasse, Gusinde, Reichel-Dolmatoff, Cadogan,
+  // Chatelain, van Baal). Eighteen figures move 0->1. Safe new keys.
+  'hausa_inna': [
+    { original: 'Inna', scriptId: 'latin', rom: 'Inna (Uwar Gona)', gloss: 'The Mother; chief female spirit of the Bori, “Owner of the Farm,” bringer of the cool winds and of illness', language: 'hausa', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Fremont Besmer, on the Hausa Bori cult' }] },
+  ],
+  'redhorn': [
+    { original: 'He-Who-Wears-Human-Heads-as-Earrings', scriptId: 'latin', rom: 'Red Horn', gloss: 'Red Horn; the culture-hero who wins the races and the war against the giants', language: 'ho-chunk', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Paul Radin, The Winnebago Tribe' }] },
+  ],
+  'huli_datagaliwabe': [
+    { original: 'Datagaliwabe', scriptId: 'latin', rom: 'Datagaliwabe', gloss: 'The great sky-being who watches over kinship duty and strikes down those who break it', language: 'huli', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Robert Glasse, Huli of Papua' }] },
+  ],
+  'huli_ni': [
+    { original: 'Ni', scriptId: 'latin', rom: 'Ni', gloss: 'The Sun; the great male power of the sky and source of generative life', language: 'huli', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Huli (Papua New Guinea) ethnography' }] },
+  ],
+  'manipuri_chothe_thangwai_pakhangba': [
+    { original: 'Pakhangba', scriptId: 'latin', rom: 'Pakhangba', gloss: 'The primordial dragon-serpent god of the Meitei, encircling power of kingship and the cosmos', language: 'manipuri', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Meitei (Sanamahi) tradition of Manipur' }] },
+  ],
+  'fallen_star': [
+    { original: 'Fallen Star', scriptId: 'latin', rom: 'Fallen Star', gloss: 'The star-born culture-hero who travels the camps righting wrongs and rescuing the people', language: 'lakota', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Lakota/Dakota oral tradition (the Fallen Star cycle)' }] },
+  ],
+  'suludnon_alunsina': [
+    { original: 'Alunsina', scriptId: 'latin', rom: 'Alunsina', gloss: 'The goddess of the eastern sky; mother of the three hero-brothers of the Hinilawod', language: 'suludnon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'The Hinilawod epic (Sulod of Panay)' }] },
+  ],
+  'suludnon_labaw_donggon': [
+    { original: 'Labaw Donggon', scriptId: 'latin', rom: 'Labaw Donggon', gloss: 'The great hero of the Hinilawod, whose bride-quests and battles fill the epic', language: 'suludnon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'The Hinilawod epic (Sulod of Panay)' }] },
+  ],
+  'yamana_watauinewa': [
+    { original: 'Watauinewa', scriptId: 'latin', rom: 'Watauinewa', gloss: 'The Most Ancient One; the supreme being of the Yámana (Yaghan), giver and taker of life', language: 'yamana', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Martin Gusinde, Die Feuerland-Indianer (the Yamana)' }] },
+  ],
+  'desana_sun_father': [
+    { original: 'Pagÿ Abé', scriptId: 'latin', rom: 'Page Abe (Sun Father)', gloss: 'The Sun Father, who created the world with the light of his yellow intention and set its order', language: 'desana', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Gerardo Reichel-Dolmatoff, Amazonian Cosmos' }] },
+  ],
+  'namandu': [
+    { original: 'Ñamandú', scriptId: 'latin', rom: 'Namandu', gloss: 'The self-created First Father, who unfolded the world and human speech from the primal darkness', language: 'guarani', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'León Cadogan, Ayvu Rapyta (Mbyá-Guaraní); Nimuendajú' }] },
+  ],
+  'banyaruanda_ryangombe': [
+    { original: 'Ryangombe', scriptId: 'latin', rom: 'Ryangombe', gloss: 'The great hero-spirit and lord of the dead, head of the Kubandwa initiates', language: 'kinyarwanda', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Rwanda/Rundi ethnography of the Kubandwa cult' }] },
+  ],
+  'krachi_wulbari': [
+    { original: 'Wulbari', scriptId: 'latin', rom: 'Wulbari', gloss: 'The supreme sky-god who once lay close above the earth, then withdrew on high from the press of mankind', language: 'krachi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'A. W. Cardinall, Tales Told in Togoland' }] },
+  ],
+  'ambundu_sudika_mbambi': [
+    { original: 'Sudika-Mbambi', scriptId: 'latin', rom: 'Sudika-Mbambi', gloss: 'The thunder-hero, born already speaking and armed, who slays the monsters of the Mbundu epic', language: 'ambundu', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Héli Chatelain, Folk-Tales of Angola' }] },
+  ],
+  'marind_sosom': [
+    { original: 'Sosom', scriptId: 'latin', rom: 'Sosom', gloss: 'The giant ogre-dema who comes each year for the boys’ initiation and returns them as men', language: 'marind', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Jan van Baal, Dema: Description and Analysis of Marind-anim Culture' }] },
+  ],
+  'marind_geb': [
+    { original: 'Geb', scriptId: 'latin', rom: 'Geb', gloss: 'The dema who rose encrusted from the earth; ancestor and bringer of fire and the coconut', language: 'marind', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Jan van Baal, Dema: Marind-anim Culture' }] },
+  ],
+  'miwok_coyote': [
+    { original: 'Coyote', scriptId: 'latin', rom: 'Coyote', gloss: 'The creator-trickster who shaped the people and the world at the dawn of things', language: 'miwok', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'C. Hart Merriam, The Dawn of the World (Miwok)' }] },
+  ],
+  'aboriginal_wagyl': [
+    { original: 'the Waugal', scriptId: 'latin', rom: 'Wagyl', gloss: 'The Rainbow Serpent of the Noongar, who carved the rivers, lakes, and waterways of the south-west', language: 'noongar', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Noongar (south-west Australian) tradition' }] },
+  ],
+
+  // ── Wave NE24: clearing the final thirteen — one attested figure for each of
+  // the last empty traditions (incl. Hittite/Ugaritic royal styles, the deities
+  // of those lands being covered under Hattic/Luwian/Hurrian/Canaanite).
+  'asmat_fumeripits': [
+    { original: 'Fumeripits', scriptId: 'latin', rom: 'Fumeripits', gloss: 'The creator-hero who carved the first people from wood and drummed them into life', language: 'asmat', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Asmat origin tradition (G. Zegwaard)' }] },
+  ],
+  'elema_ma_hevehe': [
+    { original: 'Ma-Hevehe', scriptId: 'latin', rom: 'Ma-Hevehe', gloss: 'The great sea-spirit whose long visit and return is enacted in the Hevehe masked cycle', language: 'elema', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'F. E. Williams, Drama of Orokolo' }] },
+  ],
+  'enga_aitawe': [
+    { original: 'Aitawe', scriptId: 'latin', rom: 'Aitawe', gloss: 'The sky-being and remote creator of the Enga', language: 'enga', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'M. J. Meggitt, on the Enga of the New Guinea Highlands' }] },
+  ],
+  'ifugao_ovug': [
+    { original: 'Ovug', scriptId: 'latin', rom: 'Ovug', gloss: 'The deity of thunder and lightning, whose bolt splits the sky', language: 'ifugao', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. F. Barton, The Religion of the Ifugaos' }] },
+  ],
+  'kapon_makonaima': [
+    { original: 'Makonaima', scriptId: 'latin', rom: 'Makonaima', gloss: 'The supreme creator “who works in the night,” maker of the Akawaio world', language: 'kapon', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Kapon (Akawaio) tradition; Im Thurn, Among the Indians of Guiana' }] },
+  ],
+  'macuxi_insikiran': [
+    { original: 'Insikiran', scriptId: 'latin', rom: 'Insikiran', gloss: 'The culture-hero brother of the Macushi creation, who orders the world with his kin', language: 'macuxi', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Theodor Koch-Grünberg, on the Roraima cycle' }] },
+  ],
+  'mountain_ok_afek': [
+    { original: 'Afek', scriptId: 'latin', rom: 'Afek', gloss: 'The great ancestress-creator who founded the cult-houses and the sacred knowledge of the Mountain Ok', language: 'mountain-ok', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Fredrik Barth, Ritual and Knowledge among the Baktaman; Telefol tradition' }] },
+  ],
+  'salish_old_one': [
+    { original: 'the Old One', scriptId: 'latin', rom: 'Amotken', gloss: 'The Old One; the creator who made the earth and the first people and set them in their lands', language: 'salish', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Ella Clark, Indian Legends from the Northern Rockies' }] },
+  ],
+  'semang_karei': [
+    { original: 'Karei', scriptId: 'latin', rom: 'Karei', gloss: 'The supreme thunder-god, who sends the storm against those who break the law (the blood-offering)', language: 'semang', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Paul Schebesta, Among the Forest Dwarfs of Malaya; I. H. N. Evans' }] },
+  ],
+  'tinguian_gagayoma': [
+    { original: 'Gagayoma', scriptId: 'latin', rom: 'Gagayoma', gloss: 'The star-maiden of the sky-world who descends to the people of the lowland', language: 'tinguian', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Fay-Cooper Cole, Traditions of the Tinguian' }] },
+  ],
+  'yapese_yalafath': [
+    { original: 'Yalafath', scriptId: 'latin', rom: 'Yalafath', gloss: 'The high god of the heavens, the benevolent creator and overseer of Yap', language: 'yapese', contextTag: 'oral', sources: [{ kind: 'secondary', reference: 'Yapese (Micronesian) tradition' }] },
+  ],
+  'levantine_ammurapi': [
+    { original: 'last king of Ugarit', scriptId: 'latin', rom: 'Ammurapi', gloss: 'The final king of Ugarit, who pleaded for aid as the Sea Peoples bore down upon his coast', language: 'ugaritic', contextTag: 'historical', sources: [{ kind: 'primary', reference: 'The Ugaritic correspondence (RS 18.147 and the last archive)' }] },
+  ],
+  'hittite_tudhaliya_iv': [
+    { original: 'dUTU-ŠI', scriptId: 'latin', rom: 'My Sun (Great King, Labarna)', gloss: 'My Sun; the divine-solar style of the Hittite Great King, bearer of the throne-name Labarna', language: 'hittite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Hittite royal titulary (e.g. the Yazılıkaya and Hatti-land inscriptions)' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
@@ -234389,6 +238594,18 @@ const EPITHETS_X = {
         {
           "kind": "primary",
           "reference": "Grímnismál 7"
+        }
+      ]
+    },
+    {
+      "original": "Fjǫrgvinsdóttir",
+      "scriptId": "old-norse",
+      "rom": "Fjǫrgvinsdóttir",
+      "gloss": "Daughter of Fjǫrgynn (the masculine ancestor)",
+      "sources": [
+        {
+          "kind": "primary",
+          "reference": "Lokasenna 26 (Poetic Edda)"
         }
       ]
     }
@@ -242884,11 +247101,91 @@ const ICONOGRAPHY_X = {
   }
 };
 
+// ─── Power scope-tag derivation ─────────────────────────────────────────────
+// scopeTags categorise each faculty for the Detail view's power chips and were
+// only ~7% filled. The faculty ids are descriptive verb-phrases (hurl-lightning,
+// judge-the-dead, heal-the-sick), so tags are derived from a high-precision
+// keyword lexicon mapping into the existing scope vocabulary. Applied fill-only
+// (never overrides hand-authored scopeTags); ids matching no rule are left
+// untagged rather than force-tagged — taxonomy without inventing claims.
+const POWER_SCOPE_RULES = [
+  [/\b(lightning|thunder|thunderbolt|storm|storms|tempest|gale|hail|vajra)\b/, ['weather']],
+  [/\b(rain|rains|cloud|clouds|wind|winds|weather|monsoon|drought)\b/, ['weather']],
+  [/\b(sea|ocean|water|waters|river|rivers|flood|floods|wave|waves|tide|tides|aquatic|moisture|deluge|fountain|whirlpool)\b/, ['water']],
+  [/\b(fire|flame|flames|fiery|pyre|blaze|ember|inferno)\b/, ['fire']],
+  [/\b(earth|earthquake|land|soil|mountain|mountains|stone|rock|quake|terrestrial)\b/, ['earth']],
+  [/\b(sky|heaven|heavens|heavenly|celestial|firmament|star|stars)\b/, ['celestial']],
+  [/\b(cosmos|cosmic|cosmogon|primordial)\b/, ['cosmogonic']],
+  [/\b(sun|solar|dawn|daylight|sunrise)\b/, ['solar']],
+  [/\b(moon|lunar|moonlight)\b/, ['lunar']],
+  [/\b(death|dead|dying|underworld|chthonic|grave|tomb|netherworld|soul|souls|funeral|corpse|perish)\b/, ['death']],
+  [/\b(judge|judges|judgment|judgement|verdict|punish|punishes|avenge|avenges|vengeance|retribution|atonement|justice)\b/, ['judgment']],
+  [/\b(king|kings|kingship|royal|royalty|sovereign|reign|reigns|rule|rules|ruler|throne|crown|enthrone|dynasty|monarch|emperor)\b/, ['kingship']],
+  [/\b(war|battle|battles|combat|martial|fight|fights|warrior|slay|slays|slaying|smite|smites|conquer|conquest|victory|vanquish|duel|warfare|win|wins|defeat|defeats)\b/, ['combat']],
+  [/\b(strength|strong|might|mighty|powerful|superhuman|herculean|titanic|gigantic|colossal|uproot|strongman)\b/, ['strength']],
+  [/\b(heal|heals|healing|cure|cures|medicine|physician|restore|rejuvenat|revive|revives|resurrect|resurrection|incubation|remedy)\b/, ['healing']],
+  [/\b(prophe|prophecy|prophesy|prophesies|oracle|oracles|oracular|divination|augur|augury|seer|omen|omens|foresee|foresight|foretell|fate|fates|destiny|portent|portents)\b/, ['divination']],
+  [/\b(shapeshift|shapeshifts|shapeshifting|transform|transforms|transforming|metamorph|metamorphose|polymorph|theriomorph|disguise|disguises)\b/, ['shapeshifting']],
+  [/\b(ritual|rituals|rite|rites|sacrifice|sacrifices|offering|offerings|libation|libations|worship)\b/, ['ritual']],
+  [/\b(dream|dreams)\b/, ['divination']],
+  [/\b(curse|curses|cursing)\b/, ['magic']],
+  [/\b(plough|plow|plant|planting)\b/, ['fertility']],
+  [/\b(dance|dances|dancing)\b/, ['ritual']],
+  [/\b(fly|flies|flight|winged|wings|aerial|levitate|soar|soars)\b/, ['flight']],
+  [/\b(steed|horse|horses|chariot|mount|ferry|ferries|psychopomp)\b/, ['locomotion']],
+  [/\b(music|musical|lyre|song|songs|sing|sung|sings|flute|harp|kantele|chant|melody)\b/, ['music']],
+  [/\b(smith|forge|forges|forging|craft|crafts|crafted|invent|invents|fashion|fashions|build|builds|construct|sculpt|carve|carves|weave|weaves)\b/, ['craft']],
+  [/\b(magic|magical|sorcer|sorcery|enchant|enchantment|spell|spells|heka|witch|incantation|conjure|conjures|bewitch)\b/, ['magic']],
+  [/\b(wealth|riches|prosper|prosperity|fortune|abundance|treasure)\b/, ['prosperity']],
+  [/\b(fertil|fertile|fertility|harvest|grain|grains|crop|crops|agricultur|sow|sows|cultivate|vegetation|maize|ripen|ripens|growth|grow|grows|seed|seeds|fruit|fruits|rice|procreat|procreation)\b/, ['fertility']],
+  [/\b(love|desire|beauty|erotic|seduce|seduces|seduction|passion|lust)\b/, ['love']],
+  [/\b(trick|trickster|cunning|guile|deceit|deceive|deceives|thief|steal|steals|theft|infiltrate|outwit)\b/, ['trickster']],
+  [/\b(hunt|hunts|hunter|hunting|chase|prey|quarry)\b/, ['hunting']],
+  [/\b(serpent|serpents|snake|snakes|dragon|dragons|naga|python)\b/, ['serpent']],
+  [/\b(monster|monsters|beast|beasts|demon|demons|devs?|ogre|giant|giants|fiend)\b/, ['monster-slaying', 'combat']],
+  [/\b(bird|birds|raven|eagle|hawk|owl|crow|swan|feather)\b/, ['birds']],
+  [/\b(speech|tongue|language|naming|utter|utters|speak|speaks|word|words|name|names)\b/, ['language']],
+  [/\b(invisible|invisibility|unseen|vanish|conceal)\b/, ['invisibility']],
+  [/\b(immortal|immortality|deathless|apotheosis|deify|deified|ambrosia|nectar|elixir|undying)\b/, ['immortality']],
+  [/\b(found|founds|founder|foundation|progenitor|ancestor|ancestors|sire|sires|beget|begets|lineage|unify|unite)\b/, ['foundational']],
+  [/\b(wisdom|wise|knowledge|sage|teach|teaches|counsel|insight)\b/, ['wisdom']],
+  [/\b(protect|protects|protection|guard|guards|guardian|ward|wards|defend|defends|shelter)\b/, ['protection']],
+  [/\b(plague|pestilence|disease|sickness|blight|poison|venom|affliction|misfortune|decay)\b/, ['affliction']],
+  [/\b(creator|creation|cosmogon)\b/, ['cosmogonic']],
+  [/\b(create|creates|creation|make|makes|made|generate|generates|originate|originates|order|orders|emerge|emerges|separate|fashion|shape)\b.*\b(world|worlds|cosmos|people|humanity|mankind|man|woman|men|gods|beings|ancestor|ancestors|heaven|earth|land|egg|clans|life)\b/, ['cosmogonic']],
+  [/\b(light|lights|radiance|radiate|radiates|illuminate|illuminates|shine|shines|shining|glow|luminous|brilliance)\b/, ['light']],
+  [/\b(govern|governs|preside|presides|ordain|ordains|decree|decrees|command|commands|oversee|oversees|administer|uphold|upholds|sustain|sustains|maintain|maintains|order|orders)\b/, ['authority']],
+  [/\b(birth|birthing|born|childbirth|procreate|father|fathers|mother|mothers|spawn|spawns)\b/, ['foundational']],
+  [/\b(life|living|vitality|renew|renews)\b/, ['vitality']],
+  [/\b(lead|leads|leader|leaders|leadership)\b/, ['leadership']],
+  [/\b(shaman|shamanic|shamanism|seidr|trance)\b/, ['shamanism']],
+];
+const deriveScopeTags = (id) => {
+  const s = ' ' + String(id || '').replace(/[-_]+/g, ' ').toLowerCase() + ' ';
+  const out = [];
+  for (const [re, tags] of POWER_SCOPE_RULES) {
+    if (re.test(s)) for (const t of tags) if (!out.includes(t)) out.push(t);
+  }
+  return out.slice(0, 4);
+};
+const applyPowerScopes = (peopleMap) => {
+  for (const p of Object.values(peopleMap)) {
+    for (const f of (p.faculties || [])) {
+      if (f && (!Array.isArray(f.scopeTags) || !f.scopeTags.length)) {
+        const t = deriveScopeTags(f.id);
+        if (t.length) f.scopeTags = t;
+      }
+    }
+  }
+  return peopleMap;
+};
+
 // Build + migrate seed data, then attach item holders and run the
 // content-integrity passes (term scrub + provenance inheritance) last,
-// finishing with the consolidation/QA pass over the whole map.
-const seedPeople = consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
-  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(addNewFigures(buildPeopleSeed()))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
+// finishing with the consolidation/QA pass over the whole map, and the
+// fill-only power scope-tag derivation as the final faculty pass.
+const seedPeople = applyPowerScopes(consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
+  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(addNewFigures(buildPeopleSeed()))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X)))))))))));
 const seedAtlas  = buildTerritorySeed();
 
 // Final-map integrity pass. migrate's detectors ran BEFORE the item/term
