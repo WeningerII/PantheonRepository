@@ -234997,6 +234997,58 @@ const EPITHETS_X = {
     { original: 'Omama', scriptId: 'latin', rom: 'Omama', gloss: 'The creator-demiurge who shaped present humanity and gave the shamans the xapiri spirits', language: 'yanomami', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Davi Kopenawa & Bruce Albert, The Falling Sky; Jacques Lizot' }] },
   ],
 
+  // ── Wave NE10: Southeast Asia, the Pacific, and the Santal — Philippine
+  // colonial accounts and Austronesian/Melanesian/Micronesian/Adivasi
+  // ethnography. Sixteen figures move 0->1. Safe new keys.
+  'tagalog_bathala': [
+    { original: 'Bathala Maykapal', scriptId: 'latin', rom: 'Bathala Maykapal', gloss: 'Bathala the Creator; the supreme god who made earth and the first man and woman from a bamboo', language: 'tagalog', contextTag: 'chronicle', sources: [{ kind: 'primary', reference: 'Juan de Plasencia, Customs of the Tagalogs (1589)' }] },
+  ],
+  'batak_mula_jadi_na_bolon': [
+    { original: 'Mula Jadi Na Bolon', scriptId: 'latin', rom: 'Mula Jadi Na Bolon', gloss: 'The Great Beginning of Becoming; the supreme Toba Batak creator of the three worlds', language: 'batak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Johannes Warneck, Die Religion der Batak' }] },
+  ],
+  'batak_si_boru_deak_parujar': [
+    { original: 'the weaver who made the earth', scriptId: 'latin', rom: 'Si Boru Deak Parujar', gloss: 'The weaver-goddess who descended from the sky and spread the earth upon the primeval waters', language: 'batak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Johannes Warneck, Die Religion der Batak' }] },
+  ],
+  'batak_naga_padoha': [
+    { original: 'the earth-bearing serpent', scriptId: 'latin', rom: 'Naga Padoha', gloss: 'The serpent of the underworld on whom the earth rests; his writhing makes the ground quake', language: 'batak', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Johannes Warneck, Die Religion der Batak' }] },
+  ],
+  'dayak_mahatala': [
+    { original: 'Mahatala', scriptId: 'latin', rom: 'Mahatala (Hatala)', gloss: 'The supreme upperworld god, the hornbill and the male principle of the Ngaju cosmos', language: 'ngaju', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Hans Schärer, Ngaju Religion' }] },
+  ],
+  'dayak_jata': [
+    { original: 'Jata', scriptId: 'latin', rom: 'Jata', gloss: 'The watersnake goddess of the underworld, the female principle, paired with Mahatala', language: 'ngaju', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Hans Schärer, Ngaju Religion' }] },
+  ],
+  'burmese_min_mahagiri': [
+    { original: 'Lord of the Great Mountain', scriptId: 'latin', rom: 'Min Mahagiri', gloss: 'Chief of the Thirty-Seven Nats; the house-guardian spirit of Mount Popa', language: 'burmese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. C. Temple, The Thirty-Seven Nats' }] },
+  ],
+  'fijian_degei': [
+    { original: 'Degei', scriptId: 'latin', rom: 'Degei', gloss: 'The great serpent-god of Nakauvadra; creator and judge of the souls of the dead', language: 'fijian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Basil Thomson, The Fijians; A. M. Hocart' }] },
+  ],
+  'fijian_dakuwaqa': [
+    { original: 'Dakuwaqa', scriptId: 'latin', rom: 'Dakuwaqa', gloss: 'The shark-god, guardian of reef-passages and protector of fishermen and seafarers', language: 'fijian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Fijian oral tradition; A. M. Hocart' }] },
+  ],
+  'vanuatu_tagaro': [
+    { original: 'Tagaro', scriptId: 'latin', rom: 'Tagaro', gloss: 'The creator and culture-hero of north Vanuatu, the well-doing power who shaped the world', language: 'vanuatu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. H. Codrington, The Melanesians' }] },
+  ],
+  'vanuatu_qat': [
+    { original: 'Qat', scriptId: 'latin', rom: 'Qat', gloss: 'The creator-trickster hero of the Banks Islands who made men, day and night, and the first canoe', language: 'vanuatu', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'R. H. Codrington, The Melanesians' }] },
+  ],
+  'kiribati_nareau_elder': [
+    { original: 'Nareau the Elder', scriptId: 'latin', rom: 'Nareau te Moa-ni-bai', gloss: 'The spider-creator (“First of Things”) who made the world from the primal darkness of Te Bo ma Te Maki', language: 'kiribati', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Arthur Grimble, Tungaru Traditions' }] },
+  ],
+  'chuukese_anulap': [
+    { original: 'Anulap', scriptId: 'latin', rom: 'Anulap', gloss: 'The great god of knowledge and magic, who taught divination and dwells in the sky', language: 'chuukese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chuukese (Trukese) ethnography; Bollig, Die Bewohner der Truk-Inseln' }] },
+  ],
+  'chuukese_lugeilan': [
+    { original: 'Lugeilang', scriptId: 'latin', rom: 'Lugeilang', gloss: 'The sky-god who brought knowledge (tattooing, agriculture) to humankind; father of Olofat', language: 'chuukese', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chuukese (Trukese) ethnography; Bollig, Die Bewohner der Truk-Inseln' }] },
+  ],
+  'santal_marang_buru': [
+    { original: 'Marang Buru', scriptId: 'latin', rom: 'Marang Buru', gloss: 'The Great Mountain; the supreme deity of the Santal, giver of rain and rice-beer', language: 'santali', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'P. O. Bodding; W. G. Archer, on Santal religion' }] },
+  ],
+  'santal_thakur_jiu': [
+    { original: 'Thakur Jiu', scriptId: 'latin', rom: 'Thakur Jiu', gloss: 'The Lord of Life; the sun and creator-god who fashioned the first beings', language: 'santali', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'P. O. Bodding, Santal folk tales' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
