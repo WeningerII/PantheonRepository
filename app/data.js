@@ -30500,6 +30500,76 @@ const ITEM_PROVENANCE = {
   ancilia: {
     maker: { name: 'Mamurius Veturius (the eleven copies)', role: 'forged by', kind: 'mortal smith', sources: [{ kind: 'primary', reference: 'Ovid, Fasti 3.259–392 (the original ancile fell from heaven in Numa’s reign; Mamurius Veturius forged eleven indistinguishable copies)' }] },
   },
+
+  // ── Wave I3: Irish, Finnish, Japanese, Hindu, Mesopotamian — attested makers.
+  // Skips the many Otherworld/divine objects with no named artificer (the Four
+  // Treasures from the four cities, Manannán's gear, the Pandava conches, the
+  // royal steles whose patron is the holder).
+  // Irish — Dian Cécht's silver arm (Cath Maige Tuired §33)
+  'silver-arm': {
+    maker: { name: 'Dian Cécht (with Creidne the brazier)', role: 'made by', kind: 'physician-god & brazier', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §33 (Dian Cécht fits Nuada a silver arm with Creidne’s help; Miach later grows flesh over it)' }] },
+  },
+  'nuada-silver-arm': {
+    maker: { name: 'Dian Cécht (with Creidne the brazier)', role: 'made by', kind: 'physician-god & brazier', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §33 (the silver arm that earns Nuada the epithet Airgetlám)' }] },
+  },
+  // Finnish — the eternal smith Ilmarinen; Väinämöinen the rune-singer (Kalevala)
+  'sky-dome-of-ilmarinen': {
+    maker: { name: 'Ilmarinen', role: 'forged by', personId: 'finnish_ilmarinen', kind: 'smith', sources: [{ kind: 'primary', reference: 'Kalevala, Runo X (Ilmarinen, who forged the dome of the sky/heaven, is said to have hammered it so finely no trace of his tongs remains)' }] },
+  },
+  'golden-bride-ilmarinen': {
+    maker: { name: 'Ilmarinen', role: 'forged by', personId: 'finnish_ilmarinen', kind: 'smith', sources: [{ kind: 'primary', reference: 'Kalevala, Runo 37 (Ilmarinen forges a maiden of gold and silver to replace his dead wife; she remains cold)' }] },
+  },
+  'golden-plough-ilmarinen': {
+    maker: { name: 'Ilmarinen', role: 'forged by', personId: 'finnish_ilmarinen', kind: 'smith', sources: [{ kind: 'secondary', reference: 'Kalevala (the smith Ilmarinen, forger of the Sampo and of golden objects, among them a golden plough)' }] },
+  },
+  'birch-kantele': {
+    maker: { name: 'Väinämöinen', role: 'made by', personId: 'finnish_vainamoinen', kind: 'rune-singer', sources: [{ kind: 'primary', reference: 'Kalevala, Runo 44 (having lost the pike-bone kantele, Väinämöinen makes a new one of birch-wood)' }] },
+  },
+  // Japanese — the Kojiki regalia-makers (Ame-no-Iwato episode)
+  'yata-no-kagami': {
+    maker: { name: 'Ishikoridome-no-Mikoto', role: 'cast by', kind: 'mirror-maker deity', sources: [{ kind: 'primary', reference: 'Kojiki I (Ishikoridome makes the eight-span mirror to lure Amaterasu from the Heavenly Rock-Cave)' }] },
+  },
+  'yasakani-no-magatama': {
+    maker: { name: 'Tamanoya-no-Mikoto (Ame-no-Futodama’s jewel-maker)', role: 'strung by', kind: 'jewel-maker deity', sources: [{ kind: 'primary', reference: 'Kojiki I (Tamanoya makes the long string of five-hundred magatama beads for the Rock-Cave rite)' }] },
+  },
+  // Hindu — Vishvakarma's sun-paring masterworks; the Vajra from Dadhīci's bones
+  'sudarshana-chakra': {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (Vishvakarma trims the Sun on his lathe; from the parings he makes Vishnu’s discus, Shiva’s trident, and other divine weapons)' }] },
+  },
+  'krishna-sudarshana': {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (the Sudarshana discus, made from the parings of the Sun)' }] },
+  },
+  'vishvakarma-sudarshana': {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (Vishvakarma fashions Vishnu’s discus from the Sun’s effulgence)' }] },
+  },
+  'vishvakarma-pushpaka': {
+    maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the self-moving aerial palace Vishvakarma built, given to Kubera, later seized by Ravana)' }] },
+  },
+  'kubera-pushpaka': {
+    maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the Pushpaka Vimana Vishvakarma made for Kubera)' }] },
+  },
+  'ravana-pushpaka': {
+    maker: { name: 'Vishvakarma', role: 'built by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Ramayana, Uttara Kanda (the Pushpaka Vimana, built by Vishvakarma for Kubera and seized by Ravana)' }] },
+  },
+  trishula: {
+    maker: { name: 'Vishvakarma', role: 'fashioned by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Vishnu Purana 3.2 (Shiva’s trident, made by Vishvakarma from the parings of the Sun)' }] },
+  },
+  'vishvakarma-vajra': {
+    maker: { name: 'Tvaṣṭṛ / Vishvakarma (from the bones of the sage Dadhīci)', role: 'forged by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Mahabharata, Vana Parva 100 (Indra’s vajra forged from Dadhīci’s bones); Bhagavata Purana 6.10' }] },
+  },
+  'arjuna-vajrastra': {
+    maker: { name: 'Tvaṣṭṛ (from the bones of the sage Dadhīci)', role: 'forged by', kind: 'artificer of the gods', sources: [{ kind: 'primary', reference: 'Mahabharata, Vana Parva 100 (Indra’s thunderbolt, made from Dadhīci’s bones)' }] },
+  },
+  // Mesopotamian — Marduk's self-forged arsenal (Enuma Elish IV)
+  'bow-of-marduk': {
+    maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV.35–37 (Marduk made a bow and marked it as his weapon against Tiamat)' }] },
+  },
+  'net-of-marduk': {
+    maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV.41–44 (Marduk made a net to enmesh Tiamat, with the four winds set at its corners)' }] },
+  },
+  'mace-of-marduk': {
+    maker: { name: 'Marduk (himself)', role: 'made by', kind: 'god', sources: [{ kind: 'primary', reference: 'Enūma Eliš IV (Marduk takes up the mace among the weapons he fashions for the battle with Tiamat)' }] },
+  },
 };
 
 const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
