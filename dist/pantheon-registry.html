@@ -33872,6 +33872,52 @@ const ITEM_PROVENANCE = {
     ],
   },
 
+  // ── Wave I5: legendary smiths + famous item-provenance (custody where no
+  // smith is named — the Celtic Four Treasures come "from the four cities," the
+  // Golden Fleece from a living ram, Freyr's sword passes to Skírnir). Fill-only.
+  'mimming-sword': {
+    maker: { name: 'Völundr (Wayland the Smith)', role: 'forged by', kind: 'master-smith', sources: [{ kind: 'primary', reference: 'Þiðreks saga af Bern (Velent/Wayland forges the sword Mimung, proving it by splitting an anvil and shearing wool floated against its edge in the river)' }] },
+  },
+  'karelian_sampo': {
+    maker: { name: 'Ilmarinen', role: 'forged by', kind: 'smith-hero', sources: [{ kind: 'primary', reference: 'Kalevala, runo 10 (the eternal smith Ilmarinen hammers out the Sampo with its many-coloured lid at Pohjola)' }] },
+  },
+  'spear-of-lugh': {
+    custody: [
+      { role: 'brought from', externalRef: { name: 'the city of Gorias — one of the Four Treasures of the Tuatha Dé Danann', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §1–8; Lebor Gabála Érenn (the treasures from Falias, Gorias, Findias, and Murias)' }] },
+      { role: 'borne by', externalRef: { name: 'Lugh — the victory-spear, so deadly it was kept resting in a cauldron of water', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired' }] },
+    ],
+  },
+  'nuada-sword': {
+    custody: [
+      { role: 'brought from', externalRef: { name: 'the city of Findias — one of the Four Treasures of the Tuatha Dé Danann', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired §1–8; Lebor Gabála Érenn' }] },
+      { role: 'borne by', externalRef: { name: 'Nuada — the sword of light from whose stroke none escaped once it was drawn', tradition: 'Irish' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired' }] },
+    ],
+  },
+  'golden-fleece': {
+    custody: [
+      { role: 'borne by', externalRef: { name: 'the golden ram (sent by Nephele/Hermes) that carries Phrixus to Colchis, where he sacrifices it and hangs the fleece in the grove of Ares', tradition: 'Greek' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.1' }] },
+      { role: 'guarded by', externalRef: { name: 'the sleepless dragon of Colchis, at the court of Aeëtes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.1; Apollonius, Argonautica 4.123–161' }] },
+      { role: 'won by', externalRef: { name: 'Jason, with Medea’s help (she lulls the dragon)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 1.9.23; Apollonius, Argonautica 4.123–182' }] },
+    ],
+  },
+  'freyr-sword': {
+    custody: [
+      { role: 'owned by', externalRef: { name: 'Freyr — the sword that swings itself against the giants if its bearer is wise', tradition: 'Norse' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Skírnismál (prose & st. 8–9); Gylfaginning 37' }] },
+      { role: 'given away to', externalRef: { name: 'Skírnir, as the price of winning the giantess Gerðr', tradition: 'Norse' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Skírnismál; Gylfaginning 37 (the wooing of Gerðr) and 51 (lacking the sword, Freyr falls to Surtr at Ragnarök)' }] },
+    ],
+  },
+  'three-sacred-treasures': {
+    custody: [
+      { role: 'bestowed by', externalRef: { name: 'Amaterasu, who gives the mirror, sword, and jewel to her grandson Ninigi at his descent to rule the land below', tradition: 'Japanese' }, era: 'mythic', sources: [{ kind: 'primary', reference: 'Kojiki I; Nihon Shoki (the tenson kōrin — the descent of the heavenly grandchild)' }] },
+    ],
+  },
+  'aegeus-sword': {
+    custody: [
+      { role: 'hidden as a recognition-token by', externalRef: { name: 'Aegeus (placed with sandals beneath a great rock at Troezen for his unborn son to recover)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.15.7; Plutarch, Theseus 3–4' }] },
+      { role: 'recovered by', externalRef: { name: 'Theseus, who lifts the rock on reaching manhood and bears the tokens to Athens', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plutarch, Theseus 6, 12' }] },
+    ],
+  },
+
   // ── Wave I4: cross-tradition divine artificers named in primary texts —
   // the Eddic dwarf-smiths, the Hindu artificer Viśvakarman/Tvaṣṭṛ (whose
   // forging of the gods' weapons is his defining role), and the Kojiki sword's
