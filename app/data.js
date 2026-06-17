@@ -235269,6 +235269,63 @@ const EPITHETS_X = {
     { original: 'the Maize Mother', scriptId: 'latin', rom: 'Corn Mother', gloss: 'The young maize-goddess who gives and guards the sustaining corn', language: 'totonac', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Alain Ichon, La religión de los totonacas de la sierra' }] },
   ],
 
+  // ── Wave NE15: the Caucasus (Nart sagas; Dumézil) + ancient Elam & Urartu
+  // (cuneiform inscriptions). Eighteen figures move 0->1. Safe new keys.
+  'ossetian_satana': [
+    { original: 'Satana', scriptId: 'latin', rom: 'Satana', gloss: 'The wise matriarch of the Narts; resourceful mother and counsellor of the heroes', language: 'ossetian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Georges Dumézil, Le Livre des héros (the Nart sagas)' }] },
+  ],
+  'ossetian_batraz': [
+    { original: 'the steel hero', scriptId: 'latin', rom: 'Batraz', gloss: 'The steel-tempered champion of the Narts, forged hard by the smith and quenched in the sea', language: 'ossetian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Georges Dumézil, Le Livre des héros (the Nart sagas)' }] },
+  ],
+  'ossetian_donbettyr': [
+    { original: 'Donbettyr', scriptId: 'latin', rom: 'Donbettyr', gloss: 'Lord of the waters and the sea; ancestor of the water-folk and of Satana', language: 'ossetian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Georges Dumézil, Le Livre des héros (the Nart sagas)' }] },
+  ],
+  'circassian_tlepsh': [
+    { original: 'the smith of the Narts', scriptId: 'latin', rom: 'Tlepsh', gloss: 'The divine blacksmith who forges the weapons of the Narts and tempers their heroes', language: 'circassian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'The Adyghe (Circassian) Nart sagas; J. Colarusso, Nart Sagas' }] },
+  ],
+  'circassian_setenaya': [
+    { original: 'Setenaya', scriptId: 'latin', rom: 'Setenaya (Satanaya)', gloss: 'The wise and beautiful mother of the Narts, mistress of counsel and plenty', language: 'circassian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'J. Colarusso, Nart Sagas from the Caucasus' }] },
+  ],
+  'circassian_sosruquo': [
+    { original: 'the fire-bringer', scriptId: 'latin', rom: 'Sosruquo', gloss: 'The steel-bodied trickster-hero, born from a stone, who carried fire back to the Narts', language: 'circassian', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'J. Colarusso, Nart Sagas from the Caucasus' }] },
+  ],
+  'circassian_shible': [
+    { original: 'Shible', scriptId: 'latin', rom: 'Shible', gloss: 'The god of thunder and lightning; the storm whose stroke is holy', language: 'circassian', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Circassian (Adyghe) ethnography' }] },
+  ],
+  'vainakh_dela': [
+    { original: 'Dela', scriptId: 'latin', rom: 'Dela', gloss: 'The supreme creator-god, head of the Nakh pantheon', language: 'vainakh', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chechen-Ingush (Vainakh) ethnography' }] },
+  ],
+  'vainakh_pkharmat': [
+    { original: 'the fire-thief', scriptId: 'latin', rom: 'Pkharmat', gloss: 'The Nart smith who stole fire from Sela for humankind and was chained to a peak for it (the Nakh Prometheus)', language: 'vainakh', contextTag: 'nart', sources: [{ kind: 'secondary', reference: 'Vainakh (Chechen-Ingush) Nart tradition' }] },
+  ],
+  'vainakh_tusholi': [
+    { original: 'Tusholi', scriptId: 'latin', rom: 'Tusholi', gloss: 'The goddess of fertility and the spring, daughter of Dela; her day opens the farming year', language: 'vainakh', contextTag: 'cult', sources: [{ kind: 'secondary', reference: 'Chechen-Ingush (Vainakh) ethnography' }] },
+  ],
+  'kartvelian_dali': [
+    { original: 'Dali', scriptId: 'latin', rom: 'Dali', gloss: 'The golden-haired goddess of the hunt and the wild beasts of the high crags', language: 'georgian', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'Svan and Georgian highland tradition' }] },
+  ],
+  'kartvelian_amirani': [
+    { original: 'the chained Titan', scriptId: 'latin', rom: 'Amirani', gloss: 'The culture-hero chained to the Caucasus for defying the chief god (the Georgian Prometheus)', language: 'georgian', contextTag: 'folklore', sources: [{ kind: 'secondary', reference: 'The Georgian epic of Amirani' }] },
+  ],
+  'elamite_inshushinak': [
+    { original: 'Lord of Susa', scriptId: 'latin', rom: 'Inshushinak', gloss: 'The great god of the Elamite capital; judge of the dead in the underworld', language: 'elamite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Elamite royal inscriptions (Susa, Chogha Zanbil)' }] },
+  ],
+  'elamite_napirisha': [
+    { original: 'the Great God', scriptId: 'latin', rom: 'Napirisha', gloss: 'The supreme deity of Elam, lord of the waters of the deep', language: 'elamite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Elamite royal inscriptions (Chogha Zanbil)' }] },
+  ],
+  'elamite_kiririsha': [
+    { original: 'the Great Lady', scriptId: 'latin', rom: 'Kiririsha', gloss: 'The great mother-goddess of Elam, “lady of Liyan,” consort of Napirisha', language: 'elamite', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Elamite royal inscriptions (Liyan, Chogha Zanbil)' }] },
+  ],
+  'urartian_haldi': [
+    { original: 'Haldi', scriptId: 'latin', rom: 'Haldi', gloss: 'The supreme war-god and head of the Urartian pantheon, lord of Ardini (Musasir)', language: 'urartian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Urartian royal inscriptions (the Van/Mher Kapısı stele)' }] },
+  ],
+  'urartian_teisheba': [
+    { original: 'Teisheba', scriptId: 'latin', rom: 'Teisheba', gloss: 'The storm-god of Urartu (cognate of Hurrian Teshub), second of the great triad', language: 'urartian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Urartian royal inscriptions (Mher Kapısı)' }] },
+  ],
+  'urartian_shivini': [
+    { original: 'Shivini', scriptId: 'latin', rom: 'Shivini', gloss: 'The sun-god of Urartu (cognate of Hurrian Shimige), third of the great triad', language: 'urartian', contextTag: 'inscription', sources: [{ kind: 'primary', reference: 'Urartian royal inscriptions (Mher Kapısı)' }] },
+  ],
+
   "greek_apollod_perseus": [
     {
       "original": "Περσεὺς Γοργοφόνος",
