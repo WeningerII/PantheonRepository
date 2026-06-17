@@ -33777,6 +33777,39 @@ const ITEM_ALIASES = {
   'ada-benin': 'eweka-ada',
 };
 
+// ─── Item provenance backfill (maker / custody / location) ──────────────────
+// Fill-only companion to ITEM_LORE for the "who forged/made it" provenance gap
+// (maker was ~5% filled across the 1,241-item registry). Keyed by canonical item
+// id; merged in buildItemRegistry AFTER ITEM_LORE so it never overrides richer
+// lore, and only annotates items that already exist (are held by some figure).
+// Author only where a maker is genuinely attested — many items (natural objects,
+// un-forged regalia) have no named maker and are deliberately left blank. Grown
+// in waves by tradition.
+const ITEM_PROVENANCE = {
+  // ── Wave I1: Norse dwarven craft + Greek/Roman smith-forged (primary-sourced)
+  brisingamen: {
+    maker: { name: 'four dwarfs — Alfrigg, Dvalinn, Berlingr, and Grerr', role: 'forged by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Sörla þáttr 1 (the four dwarfs forge the necklace; Freyja obtains it from them)' }] },
+  },
+  hildisvini: {
+    maker: { name: 'the dwarfs Dáinn and Nabbi', role: 'made by', kind: 'dwarf-smiths', sources: [{ kind: 'primary', reference: 'Hyndluljóð 7 (Dáinn and Nabbi wrought the boar Hildisvíni for Freyja)' }] },
+  },
+  'aeneas-armor': {
+    maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.370–453 (at Venus’s plea Vulcan forges the arms at the Cyclopes’ Aetnan forge, incl. the prophetic shield)' }] },
+  },
+  'aeneas-divine-arms': {
+    maker: { name: 'Vulcan (Hephaestus)', role: 'forged by', personId: 'roman_volcanus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Virgil, Aeneid 8.370–453 (the divine arms — helmet, corslet, sword, and the shield of Rome’s destiny)' }] },
+  },
+  talos: {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 1.9.26 (the bronze man Talos, made by Hephaestus; a scholiast variant credits Daedalus)' }] },
+  },
+  'heracles-golden-breastplate': {
+    maker: { name: 'Hephaestus', role: 'forged by', personId: 'greek_hesiod_hephaestus', kind: 'smith-god', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Hephaestus a golden breastplate)' }] },
+  },
+  'heracles-peplos': {
+    maker: { name: 'Athena', role: 'woven by', personId: 'greek_hesiod_athena', kind: 'goddess', sources: [{ kind: 'primary', reference: 'Apollodorus, Bibliotheca 2.4.11 (the gods’ arming-gifts to Heracles: from Athena a robe)' }] },
+  },
+};
+
 const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
   const items = {};
   const ensure = (id) => (items[id] || (items[id] = {
@@ -33807,6 +33840,19 @@ const buildItemRegistry = (peopleMap, lore = ITEM_LORE) => {
     for (const c of (L.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
     for (const s of (L.maker?.sources || [])) it.sources.push(s);
     for (const s of (L.sources || [])) it.sources.push(s);
+  }
+  // Provenance backfill — fill-only maker/custody/location from ITEM_PROVENANCE,
+  // merged after ITEM_LORE so it never overrides richer lore; looks up existing
+  // items only, so it cannot mint holderless ghost items.
+  for (const [id, P] of Object.entries(ITEM_PROVENANCE || {})) {
+    const it = items[ITEM_ALIASES[id] || id];
+    if (!it) continue;
+    if (!it.maker && P.maker) it.maker = P.maker;
+    if (!it.location && P.location) it.location = P.location;
+    for (const c of (P.custody || [])) it.custody.push(c);
+    for (const s of (P.maker?.sources || [])) it.sources.push(s);
+    for (const c of (P.custody || [])) for (const s of (c.sources || [])) it.sources.push(s);
+    for (const s of (P.sources || [])) it.sources.push(s);
   }
   for (const it of Object.values(items)) {
     if (!it.names.length) {
