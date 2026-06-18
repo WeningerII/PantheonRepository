@@ -22753,8 +22753,97 @@ const buildPeopleSeed = () => {
         { kind: 'father-of', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Saqqara Serapeum stelae' }], notes: 'Fourth son by Isetnofret; High Priest of Ptah at Memphis.' },
         { kind: 'father-of', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Karnak inscriptions' }], notes: 'Thirteenth son by Isetnofret; succeeded as pharaoh after the deaths of all twelve elder Ramesside princes.' },
         { kind: 'father-of', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs; QV55 tomb' }], notes: 'Firstborn son by Nefertari; predeceased him by some 41 years.' },
+        { kind: 'spouse', personId: 'egyptian_nefertari', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple; QV66' }], notes: 'His first and most-beloved Great Royal Wife.' },
+        { kind: 'spouse', personId: 'egyptian_isetnofret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }], notes: 'Second Great Royal Wife, principal queen after Nefertari\'s death.' },
       ],
       notes: 'Pharaoh of the 19th Dynasty (~1279-1213 BCE). The longest-reigning and most-attested Egyptian pharaoh. Battle of Kadesh, Egyptian-Hittite treaty, monumental construction at Abu Simbel and the Ramesseum. Subject of Shelley\'s Ozymandias. Less developed Birth Cycle than the 18th Dynasty pharaohs but full claim of divine paternity through royal titulary.',
+    },
+
+    // ── Genealogy march, Wave G9 (Egyptian, 19th-dynasty Ramesside queens):
+    //    materialize the Great Royal Wives Nefertari and Isetnofret (wives of
+    //    Ramesses II) and Isetnofret II (wife of Merneptah), carried only as
+    //    externalRefs on their children. All mortal-tier; as with the Amarna
+    //    queens, adding them as maternal parents leaves the children's
+    //    quartigod/scion tiers unchanged (the divine descent runs through the
+    //    paternal Amun line). ──
+    {
+      id: 'egyptian_nefertari', schemaVersion: 2,
+      name: { primary: 'Nefertari', alt: ['Nefertari Meritmut', 'Great Royal Wife Nefertari'], transliterations: { 'mdc-transliteration': 'nfrt-iri', etymology: 'Egyptian nfrt-iri "the most beautiful"; her epithet Meritmut, "beloved of Mut."' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1300, mythicEnd: -1255, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Ramesses-II-as-first-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Abu Simbel small temple; QV66 tomb of Nefertari' }], notes: 'First and most-beloved Great Royal Wife of Ramesses II; mother of his firstborn Amunherkhepeshef. Honored with the small temple at Abu Simbel — built for her and the goddess Hathor — and the painted tomb QV66 in the Valley of the Queens, among the finest in Egypt.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'first-Great-Royal-Wife-of-Ramesses-II' },
+        { id: 'honoured-at-Abu-Simbel-and-QV66' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple; QV66' }] },
+        { kind: 'mother-of', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; QV55' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Abu Simbel small temple of Nefertari/Hathor; QV66 (tomb of Nefertari); Ramesseum and Karnak reliefs' }], weight: 'primary' },
+      ],
+      notes: 'First and most-beloved Great Royal Wife of Ramesses II; mother of his firstborn son Amunherkhepeshef. The small temple at Abu Simbel was dedicated to her alongside Hathor, and her tomb QV66 in the Valley of the Queens is among the most beautifully painted in Egypt. Mortal-tier by descent. Carried in the registry only as an externalRef on Amunherkhepeshef until materialized here.',
+    },
+
+    {
+      id: 'egyptian_isetnofret', schemaVersion: 2,
+      name: { primary: 'Isetnofret', alt: ['Isisnofret', 'Great Royal Wife Isetnofret'], transliterations: { 'mdc-transliteration': 'ist-nfrt', etymology: 'Egyptian ist-nfrt "Isis is beautiful / good."' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1298, mythicEnd: -1245, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Ramesses-II-as-second-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel; Gebel el-Silsila stela' }], notes: 'Second Great Royal Wife of Ramesses II, who rose to the chief position after Nefertari\'s death. Mother of the prince Khaemweset (High Priest of Ptah) and of Merneptah, who succeeded as pharaoh.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'second-Great-Royal-Wife-of-Ramesses-II' },
+        { id: 'mother-of-Khaemweset-and-the-pharaoh-Merneptah' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan chapel' }] },
+        { kind: 'mother-of', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }] },
+        { kind: 'mother-of', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Karnak inscriptions' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel of Isetnofret; Gebel el-Silsila stela; Saqqara Serapeum (with her son Khaemweset)' }], weight: 'primary' },
+      ],
+      notes: 'Second Great Royal Wife of Ramesses II, who became the principal queen after Nefertari\'s death; mother of the famous antiquarian-prince Khaemweset (High Priest of Ptah) and of Merneptah, the thirteenth son who eventually succeeded to the throne. Mortal-tier by descent. Carried in the registry only as an externalRef on Khaemweset and Merneptah until materialized here.',
+    },
+
+    {
+      id: 'egyptian_isetnofret_ii', schemaVersion: 2,
+      name: { primary: 'Isetnofret II', alt: ['Isisnofret II', 'Great Royal Wife of Merneptah'], transliterations: { 'mdc-transliteration': 'ist-nfrt', etymology: 'Egyptian ist-nfrt "Isis is beautiful," named for her grandmother Isetnofret, first wife of Merneptah.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1260, mythicEnd: -1205, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Merneptah-as-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }], notes: 'Great Royal Wife of Merneptah; in the dominant interpretation also his sister (under the Ramesside brother-sister royal-marriage convention). Mother of Seti II and, probably, of the female pharaoh Tausret.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'Great-Royal-Wife-of-Merneptah' },
+        { id: 'mother-of-Seti-II' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
+        { kind: 'mother-of', personId: 'egyptian_seti_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
+        { kind: 'mother-of', personId: 'egyptian_tausret', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Karnak inscriptions; Western Theban monuments of Merneptah\'s reign' }], weight: 'primary' },
+      ],
+      notes: 'Great Royal Wife of Merneptah (and, in the dominant reading, his sister, per the Ramesside brother-sister royal-marriage convention); mother of Seti II and probably of the female pharaoh Tausret. Mortal-tier by descent. Carried in the registry only as an externalRef on Seti II and Tausret until materialized here.',
     },
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -25523,8 +25612,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Khaemweset', alt: ['Khaemwaset'], transliterations: { 'egyptian-hieroglyphic': '𓆣𓅓𓌀𓏏𓊨', 'mdc-transliteration': 'ḫꜥ-m-wꜣs-t', etymology: 'Egyptian: ḫꜥ ("appearing, manifesting") + m ("in") + wꜣst ("Thebes, the city of the Was-scepter") — "Appearing in Thebes" or "The one who appears in Thebes." The name links his royal divinity-manifestation to the canonical Theban-Amun cult-center.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_ii'],
-      parentRoles: { egyptian_ramesses_ii: 'paternal' },
+      parentIds: ['egyptian_ramesses_ii', 'egyptian_isetnofret'],
+      parentRoles: { egyptian_ramesses_ii: 'paternal', egyptian_isetnofret: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1281,
@@ -25540,7 +25629,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Karnak inscriptions' }] },
-        { kind: 'mother', externalRef: { name: 'Isetnofret (Ramesses II\'s second Great Royal Wife after Nefertari)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel' }] },
         { kind: 'sibling', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Karnak inscriptions' }] },
         { kind: 'half-sibling', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs; QV55 tomb inscriptions' }], notes: 'Half-sibling through their shared father Ramesses II; Amunherkhepeshef is Ramesses II\'s firstborn son by Nefertari.' },
       ],
@@ -25557,8 +25646,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Merneptah', alt: ['Merenptah', 'Baenre-meriamun'], transliterations: { 'egyptian-hieroglyphic': '𓌻𓂋𓂋𓊪𓏏𓎛', 'mdc-transliteration': 'mr-n-ptḥ', etymology: 'Egyptian: mry ("beloved") + n ("of") + ptḥ ("Ptah, the Memphis creator-god") — "Beloved of Ptah." The name encodes the Memphis-Ptah cult connection that Khaemweset (his elder brother) had built; Merneptah continued the Ptah-cult patronage as Khaemweset\'s successor.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_ii'],
-      parentRoles: { egyptian_ramesses_ii: 'paternal' },
+      parentIds: ['egyptian_ramesses_ii', 'egyptian_isetnofret'],
+      parentRoles: { egyptian_ramesses_ii: 'paternal', egyptian_isetnofret: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1287,
@@ -25574,9 +25663,10 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs' }] },
-        { kind: 'mother', externalRef: { name: 'Isetnofret', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }] },
         { kind: 'sibling', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Karnak inscriptions' }] },
         { kind: 'half-sibling', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs' }] },
+        { kind: 'spouse', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }], notes: 'His Great Royal Wife (in the dominant reading also his sister); mother of Seti II.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Merneptah Stele (Cairo Egyptian Museum CG 34025, the "Israel Stele"); Karnak Cour de la Cachette inscriptions; Theban Tomb KV8 (his royal tomb); Abu Simbel reliefs; Aswan Stela; Anastasi Papyri' }], weight: 'primary' },
@@ -25591,8 +25681,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Amunherkhepeshef', alt: ['Amunherkhepeshef A', 'Amun-her-khepeshef'], transliterations: { 'egyptian-hieroglyphic': '𓇋𓏠𓈖𓇋𓂋𓆣𓊪𓋴𓆑', 'mdc-transliteration': 'ı͗mn-ḥr-ḫpš=f', etymology: 'Egyptian: ı͗mn ("Amun") + ḥr ("upon, over") + ḫpš ("the strong-arm, the khepesh-sword") + =f ("his") — "Amun is upon his strong-arm" or "Amun-protects-his-arm." The name embeds both the Theban-Amun divine-paternity claim and the warrior-strength-virtue.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_ii'],
-      parentRoles: { egyptian_ramesses_ii: 'paternal' },
+      parentIds: ['egyptian_ramesses_ii', 'egyptian_nefertari'],
+      parentRoles: { egyptian_ramesses_ii: 'paternal', egyptian_nefertari: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1290,
@@ -25607,7 +25697,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Karnak inscriptions' }] },
-        { kind: 'mother', externalRef: { name: 'Nefertari (Ramesses II\'s first and most-beloved Great Royal Wife)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple of Nefertari; QV66 tomb of Nefertari' }] },
+        { kind: 'mother', personId: 'egyptian_nefertari', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple of Nefertari; QV66 tomb of Nefertari' }] },
         { kind: 'half-sibling', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs' }] },
         { kind: 'half-sibling', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs' }] },
       ],
@@ -25646,8 +25736,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Seti II', alt: ['Setos II', 'Sethos II', 'Userkheperure-Setepenre'], transliterations: { 'egyptian-hieroglyphic': '𓇩𓏏𓆭', 'mdc-transliteration': 'wsr-ḫprw-rꜤ stp-n-rꜤ', etymology: 'Throne name Userkheperure-Setepenre ("Powerful are the manifestations of Re, Chosen of Re"); birth name Sety-merenptah ("Man of Set, beloved of Ptah") — the Set-name is a 19th-Dynasty dynastic marker, the Ptah-name a Memphite-cult marker.' } },
       type: 'scion', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_merneptah'],
-      parentRoles: { egyptian_merneptah: 'paternal' },
+      parentIds: ['egyptian_merneptah', 'egyptian_isetnofret_ii'],
+      parentRoles: { egyptian_merneptah: 'paternal', egyptian_isetnofret_ii: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1240,
@@ -25663,7 +25753,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions; KV15' }] },
-        { kind: 'mother', externalRef: { name: 'Isetnofret II (Great Royal Wife of Merneptah; sister of Seti II per the dominant interpretation, possibly also his consort under the Ramesside brother-sister marriage convention)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
         { kind: 'spouse', personId: 'egyptian_tausret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'KV14 (joint tomb of Seti II and Tausret); Manetho Epitome' }] },
         { kind: 'enemy', externalRef: { name: 'Amenmesse (rival king who seized Upper Egypt and Kush during Seti II\'s reign; possibly another son of Merneptah by Takhat or, less likely, a son of Ramesses II)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak Hall of Records; cartouche-erasure pattern across Upper Egyptian monuments' }] },
       ],
@@ -25680,8 +25770,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Tausret', alt: ['Twosret', 'Tawosret', 'Sitre Meryamun'], transliterations: { 'egyptian-hieroglyphic': '𓍿𓄿𓅱𓊃𓂋𓏏', 'mdc-transliteration': 'tꜢ-wsr.t', etymology: 'Egyptian: tꜢ ("the [feminine]") + wsr.t ("powerful one [feminine]") — "the powerful one" or "she of power." Throne name Sitre-Meryamun ("Daughter of Re, beloved of Amun") asserts both solar-legitimacy and Theban-Amun cult patronage.' } },
       type: 'scion', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['egyptian_merneptah'],
-      parentRoles: { egyptian_merneptah: 'paternal' },
+      parentIds: ['egyptian_merneptah', 'egyptian_isetnofret_ii'],
+      parentRoles: { egyptian_merneptah: 'paternal', egyptian_isetnofret_ii: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1230,
@@ -25699,7 +25789,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Pearce Creasman 2013 (architectural-style argument)' }], notes: 'Probable but not definitively attested in surviving inscriptions.' },
-        { kind: 'mother', externalRef: { name: 'Isetnofret II (probable; Great Royal Wife of Merneptah)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
         { kind: 'spouse', personId: 'egyptian_seti_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'KV14' }] },
         { kind: 'enemy', externalRef: { name: 'Setnakhte (founder of the 20th Dynasty; her overthrower per the Elephantine Stela)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Setnakhte\'s Elephantine Stela' }] },
       ],
@@ -25732,7 +25822,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'spouse', personId: 'egyptian_setnakhte', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela' }] },
-        { kind: 'mother-of', externalRef: { name: 'Ramesses III (registered as egyptian_ramesses_iii — see entry)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
+        { kind: 'mother-of', personId: 'egyptian_ramesses_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Sandstone stela JE 20395 from Abydos (Egyptian Museum); Abydos architectural blocks; Brussels Musées Royaux d\'Art et d\'Histoire relief fragment' }], weight: 'primary' },
@@ -25763,7 +25853,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'spouse', personId: 'egyptian_tiy_merenese', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela' }] },
-        { kind: 'father-of', externalRef: { name: 'Ramesses III (registered as egyptian_ramesses_iii — see entry)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
+        { kind: 'father-of', personId: 'egyptian_ramesses_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
         { kind: 'enemy', externalRef: { name: 'Tausret (last 19th-Dynasty pharaoh, the queen he overthrew per the Elephantine Stela)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Elephantine Stela; KV14 usurpation' }] },
       ],
       sources: [
