@@ -12450,7 +12450,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'wushan-mountain', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Song Yu, Gaotang Fu and Shennü Fu (3rd c. BCE)' }], notes: 'In the older Wushan Goddess (巫山神女) tradition Yáojī is the goddess of Mount Wu on the Yangtze gorges, who appears to King Huai of Chu in dreams. The Investiture-of-the-Gods Yáojī absorbs this older tradition.' },
       ],
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Jade Emperor (Chinese supreme deity of the celestial bureaucracy in canonical-Daoist tradition; not registered as standalone entry per the registry\'s deity-only-as-required-parent-anchor principle)', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Investiture of the Gods; Erlang Baojuan' }], notes: 'Jade Emperor (Yùhuáng Dàdì 玉皇大帝) entry pending — sister to him, making Erlang Shen the Heavenly Court\'s nephew.' },
+        { kind: 'sibling', personId: 'chinese_jade_emperor', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Investiture of the Gods; Erlang Baojuan' }], notes: 'Sister of the Jade Emperor (Yùhuáng Dàdì 玉皇大帝), making her son Erlang Shen the Heavenly Court\'s nephew.' },
         { kind: 'lover', personId: 'chinese_yang_tianyou', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Erlang Baojuan; Bao Lian Deng tradition' }], notes: 'Descended from Heaven to take the mortal scholar Yang Tianyou as husband — the union for which the Jade Emperor punished her by imprisonment beneath Mount Tao.' },
       ],
       associations: [
@@ -12785,6 +12785,9 @@ const buildPeopleSeed = () => {
         ],
         celestialAssociation: 'celestial-vault-supreme-throne',
       },
+      relations: [
+        { kind: 'sibling', personId: 'chinese_yaoji', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Investiture of the Gods (Fengshen Yanyi); Erlang Baojuan' }], notes: 'His sister Yaoji (Yúnhuá), whose son by a mortal is Erlang Shen — the Heavenly Court\'s nephew.' },
+      ],
       linguistic: {
         etymology: 'Chinese 玉皇 Yu Huang ("Jade Emperor"; yu "jade" + huang "emperor, sovereign," with jade encoding both supreme-mineral and imperial-cultural-association) + 大帝 Da Di ("Great Emperor"; da "great" + di "emperor, supreme deity"). The compound Yu Huang Da Di literally "Jade Emperor Great Sovereign-Deity." The Tang-period institutionalization of the Jade-Emperor-cult by Emperor Xuanzong (713-756 CE) elevated the figure from local-folk-religion to imperial-state pantheon supremacy; the Song-period elaborated the celestial-bureaucracy framework.',
         languageFamily: 'Sino-Tibetan (Sinitic, Mandarin Chinese)',
@@ -13113,6 +13116,10 @@ const buildPeopleSeed = () => {
         { id: 'meritocratic-succession-pioneer' },
         { id: 'calendar-regulation-and-Xi-He-commissioning' },
       ],
+      relations: [
+        { kind: 'father-of', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Gave his two daughters Ehuang and Nuying to Shun in marriage to test his virtue.' },
+        { kind: 'father-of', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'sage-king-imperial-robes', sources: [{ kind: 'primary', reference: 'Confucian-canonical iconography' }] },
@@ -13143,10 +13150,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['chinese_gusou', 'chinese_wo_deng'],
+      parentRoles: { chinese_gusou: 'paternal', chinese_wo_deng: 'maternal' },
       temporal: { era: 'mythic-prehistory' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }], notes: 'Per Shiji, descended from Huangdi through Zhuanxu → Qiaoniu → several intermediate generations → Gusou → Shun. The Shiji explicitly attaches Shun to the Huangdi line through a multi-generation chain that the registry treats as parentIds=[] with the chain documented in notes. Shun\'s biological parents were Gusou ("Blind Old Man," nominal blindness or moral-blindness; mortal) and Wo Deng (mortal); after Wo Deng\'s death, Gusou took a second wife who, with Gusou and Shun\'s younger half-brother Xiang, formed the abusive-stepfamily that the Confucian-canonical tradition uses as backdrop for Shun\'s exemplary filial-piety despite mistreatment.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }], notes: 'Per Shiji, descended from Huangdi through Zhuanxu → Qiaoniu → several intermediate generations → Gusou → Shun. The registry models Shun\'s immediate parents Gusou and Wo Deng in parentIds, with the deeper multi-generation Huangdi chain documented here. Shun\'s biological parents were Gusou ("Blind Old Man," nominal blindness or moral-blindness; mortal) and Wo Deng (mortal); after Wo Deng\'s death, Gusou took a second wife who, with Gusou and Shun\'s younger half-brother Xiang, formed the abusive-stepfamily that the Confucian-canonical tradition uses as backdrop for Shun\'s exemplary filial-piety despite mistreatment.' },
         { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'exemplary-filial-piety-despite-stepfamily-abuse', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Mencius 4A.28, 5A.1-4' }], notes: 'Per the Confucian-canonical tradition, Gusou + the stepmother + the half-brother Xiang together repeatedly attempted to kill Shun (poisoning, burying alive, burning the granary) to seize his property. Shun\'s exemplary filial-piety despite this abusive treatment — continuing to honor and serve his father, even after multiple murder attempts — became the foundational filial-piety case-study of the Confucian-Mencian tradition.' },
         { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 2, startEvent: 'discovery-by-Yao-and-marriage-to-his-daughters', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Yao, hearing of Shun\'s exemplary virtue, tested him through multiple trials and gave him his two daughters Ehuang and Nuying in marriage as further test of his moral character.' },
         { typeStatus: 'mortal', vitalStatus: 'sage-king-reigning', era: 'mythic-prehistory', eraOrdering: 3, startEvent: 'accession-as-fifth-of-Five-Emperors', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }], notes: 'Acceded as fifth and final of the Wu Di (Five Emperors) per the Shiji canonical-historical framework after Yao\'s abdication; reigned 39 years per the Shiji.' },
@@ -13160,9 +13168,8 @@ const buildPeopleSeed = () => {
         { id: 'abdicator-to-Yu-the-Great' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Gusou ("Blind Old Man"), mortal; Shun\'s biological father who repeatedly attempted to kill him', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
-        { kind: 'mother', externalRef: { name: 'Wo Deng, mortal; Shun\'s biological mother who died when he was young', tradition: 'Chinese' }, era: 'mythic-prehistory' },
-        { kind: 'spouse', externalRef: { name: 'Ehuang and Nuying, daughters of Yao; principal consorts; followed him in death and became deities of the Xiang River (Xiang Fei)', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shanhaijing' }] },
+        { kind: 'spouse', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Elder daughter of Yao, given to Shun in marriage as a test of his virtue; drowned at his death and became a goddess of the Xiang River.' },
+        { kind: 'spouse', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Younger daughter of Yao, given to Shun in marriage; with her sister Ehuang became a goddess of the Xiang River (Xiang Fei).' },
       ],
       linguistic: {
         etymology: 'Chinese 舜 Shun; the character contains components suggesting "to flow swiftly" or "swift-as-deer" semantic content. The alternate clan-name You Yu Shi 有虞氏 ("Lord You Yu") derives from his clan-seat at Yu.',
@@ -13175,7 +13182,143 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Mencius / Mengzi 4A.28, 5A.1-4' },
         ], weight: 'primary' },
       ],
-      notes: 'Fifth and final of the Wu Di (Five Emperors) per the Shiji canonical-historical framework; foundational filial-piety exemplar of the Confucian-canonical tradition; son of Gusou ("Blind Old Man," mortal) and Wo Deng (mortal). Per Shiji, descended from Huangdi through Zhuanxu via several intermediate generations; the registry treats parentIds=[] with the multi-generation chain documented in notes. The Shun-stepfamily-abuse-and-filial-piety narrative — Shun continuing to honor and serve his father Gusou despite the multiple murder attempts orchestrated by Gusou, the stepmother, and the half-brother Xiang — became the foundational filial-piety case-study of the Confucian-Mencian tradition (Mencius 4A.28, 5A.1-4). The Yao-Shun-Yu abdication chain that completes with Shun\'s abdication to Yu the Great (the flood-controller minister) constitutes the foundational meritocratic-succession case-study of Confucian-canonical political theory: the throne is the gift of Heaven and the people based on virtue, not heritable property of the sovereign.',
+      notes: 'Fifth and final of the Wu Di (Five Emperors) per the Shiji canonical-historical framework; foundational filial-piety exemplar of the Confucian-canonical tradition; son of Gusou ("Blind Old Man," mortal) and Wo Deng (mortal). Per Shiji, descended from Huangdi through Zhuanxu via several intermediate generations; the registry models his immediate parents Gusou and Wo Deng in parentIds, with the deeper Huangdi chain documented in notes. The Shun-stepfamily-abuse-and-filial-piety narrative — Shun continuing to honor and serve his father Gusou despite the multiple murder attempts orchestrated by Gusou, the stepmother, and the half-brother Xiang — became the foundational filial-piety case-study of the Confucian-Mencian tradition (Mencius 4A.28, 5A.1-4). The Yao-Shun-Yu abdication chain that completes with Shun\'s abdication to Yu the Great (the flood-controller minister) constitutes the foundational meritocratic-succession case-study of Confucian-canonical political theory: the throne is the gift of Heaven and the people based on virtue, not heritable property of the sovereign.',
+    },
+
+    // ── Genealogy march, Wave G6 (Chinese): materialize Shun's immediate
+    //    family — his father Gusou and mother Wo Deng, and his two wives
+    //    Ehuang and Nuying (daughters of the already-registered sage-king Yao,
+    //    who become the goddesses of the Xiang River) — all formerly carried
+    //    only as externalRefs on Shun. ──
+    {
+      id: 'chinese_gusou', schemaVersion: 2,
+      name: {
+        primary: 'Gusou',
+        alt: ['瞽叟', 'Gu Sou', 'The Blind Old Man', 'Father of Shun'],
+        transliterations: { 'chinese-traditional': '瞽叟', 'chinese-simplified': '瞽叟', 'pinyin': 'Gǔsǒu' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Mencius 5A.1-4' }], notes: 'The "Blind Old Man" (the name glosses literal or moral blindness); per Shiji a descendant of Huangdi through Zhuanxu. Father of the sage-king Shun by his first wife Wo Deng.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'attempts-on-Shuns-life', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Mencius' }], notes: 'After Wo Deng died, Gusou took a second wife; with her and Shun\'s half-brother Xiang he repeatedly tried to kill Shun (the burning granary, the well filled in over him) to seize his property. Shun\'s undiminished filial devotion despite this is the foundational Confucian filial-piety exemplar.' },
+        { vitalStatus: 'dead', era: 'mythic-prehistory', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'blind-father-of-Shun' },
+        { id: 'abusive-patriarch-of-the-filial-piety-narrative' },
+      ],
+      relations: [
+        { kind: 'father-of', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1' },
+          { kind: 'primary', reference: 'Mencius / Mengzi 5A.1-4' },
+        ], weight: 'primary' },
+      ],
+      notes: 'Father of the sage-king Shun; the "Blind Old Man" of the Confucian-canonical filial-piety narrative. With his second wife and Shun\'s half-brother Xiang, he repeatedly attempted to murder Shun, who nevertheless continued to honor and serve him — the foundational Mencian case-study of filial piety persisting through mistreatment. Carried in the registry only as an externalRef on Shun until materialized here.',
+    },
+
+    {
+      id: 'chinese_wo_deng', schemaVersion: 2,
+      name: {
+        primary: 'Wo Deng',
+        alt: ['握登', 'Woaeng', 'Mother of Shun'],
+        transliterations: { 'chinese-traditional': '握登', 'chinese-simplified': '握登', 'pinyin': 'Wòdēng' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; later commentarial tradition' }], notes: 'First wife of Gusou and biological mother of Shun; per the commentarial tradition she conceived Shun after beholding a great rainbow. She died while Shun was young, after which Gusou remarried into the abusive-stepfamily of the filial-piety narrative.' },
+        { vitalStatus: 'dead', era: 'mythic-prehistory', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'mother-of-Shun' },
+      ],
+      relations: [
+        { kind: 'mother-of', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1; Chinese commentarial tradition on the ancestry of Shun' }], weight: 'primary' },
+      ],
+      notes: 'Biological mother of the sage-king Shun by Gusou; she died when Shun was young. The commentarial tradition gives her a rainbow-conception of Shun. Carried in the registry only as an externalRef on Shun until materialized here as the maternal link.',
+    },
+
+    {
+      id: 'chinese_ehuang', schemaVersion: 2,
+      name: {
+        primary: 'Ehuang',
+        alt: ['娥皇', 'E Huang', 'Xiang Goddess (with Nuying)'],
+        transliterations: { 'chinese-traditional': '娥皇', 'chinese-simplified': '娥皇', 'pinyin': 'Éhuáng' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'female', vitalStatus: 'apotheosed',
+      origin: 'canon',
+      parentIds: ['chinese_yao'],
+      parentRoles: { chinese_yao: 'paternal' },
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Elder of the two daughters of the sage-king Yao, given (with her sister Nuying) in marriage to Shun as Yao\'s test of his virtue and his fitness to rule.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'death-at-the-Xiang-and-apotheosis', sources: [{ kind: 'primary', reference: 'Shanhaijing; Liexian Zhuan; Xiang River goddess tradition' }], notes: 'On news of Shun\'s death at Cangwu she and Nuying wept until their tears spotted the bamboo (the mottled "tear-bamboo" of the Xiang), then drowned in the Xiang River, becoming its presiding goddesses (the Xiang Fei / Xiang Jun).' },
+        { typeStatus: 'apotheosed', era: 'mythic-prehistory', eraOrdering: 2, startEvent: 'veneration-as-goddess-of-the-Xiang', sources: [{ kind: 'primary', reference: 'Chuci (Songs of Chu) — Xiang Jun and Xiang Furen' }] },
+      ],
+      domains: [
+        { id: 'elder-daughter-of-Yao' },
+        { id: 'wife-of-Shun' },
+        { id: 'goddess-of-the-Xiang-River' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+        { kind: 'sibling', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1 — both daughters of Yao' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1; Shujing Yao Dian' },
+          { kind: 'primary', reference: 'Chuci (Songs of Chu), "Xiang Jun" / "Xiang Furen"' },
+        ], weight: 'primary' },
+        { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Shiji Ch. 1 — daughter of Yao' }], weight: 'primary' },
+      ],
+      notes: 'Elder daughter of the sage-king Yao and, with her younger sister Nuying, a wife of Shun — the marriage by which Yao tested Shun\'s virtue. On Shun\'s death the two sisters wept until their tears mottled the bamboo of the Xiang, then drowned in the river and became its goddesses (the Xiang Fei). Daughters of the mortal Yao, the sisters are mortal-tier by descent; their godhood is by apotheosis, recorded in vitalStatus. Carried in the registry only as an externalRef on Shun until materialized here.',
+    },
+
+    {
+      id: 'chinese_nuying', schemaVersion: 2,
+      name: {
+        primary: 'Nuying',
+        alt: ['女英', 'Nü Ying', 'Xiang Goddess (with Ehuang)'],
+        transliterations: { 'chinese-traditional': '女英', 'chinese-simplified': '女英', 'pinyin': 'Nǚyīng' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'female', vitalStatus: 'apotheosed',
+      origin: 'canon',
+      parentIds: ['chinese_yao'],
+      parentRoles: { chinese_yao: 'paternal' },
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Younger of the two daughters of Yao, given with her elder sister Ehuang in marriage to Shun.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'death-at-the-Xiang-and-apotheosis', sources: [{ kind: 'primary', reference: 'Shanhaijing; Xiang River goddess tradition' }], notes: 'With Ehuang, drowned in the Xiang River in grief at Shun\'s death and became its presiding goddess (the Xiang Fei / Xiang Furen).' },
+        { typeStatus: 'apotheosed', era: 'mythic-prehistory', eraOrdering: 2, startEvent: 'veneration-as-goddess-of-the-Xiang', sources: [{ kind: 'primary', reference: 'Chuci (Songs of Chu) — Xiang Jun and Xiang Furen' }] },
+      ],
+      domains: [
+        { id: 'younger-daughter-of-Yao' },
+        { id: 'wife-of-Shun' },
+        { id: 'goddess-of-the-Xiang-River' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+        { kind: 'sibling', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1 — both daughters of Yao' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1; Shujing Yao Dian' },
+          { kind: 'primary', reference: 'Chuci (Songs of Chu), "Xiang Jun" / "Xiang Furen"' },
+        ], weight: 'primary' },
+        { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Shiji Ch. 1 — daughter of Yao' }], weight: 'primary' },
+      ],
+      notes: 'Younger daughter of the sage-king Yao and, with her elder sister Ehuang, a wife of Shun. The two sisters drowned in the Xiang River in grief at Shun\'s death and became its goddesses (the Xiang Fei), invoked in the Chuci. Mortal-tier by descent from the mortal Yao; godhood by apotheosis. Carried in the registry only as an externalRef on Shun until materialized here.',
     },
 
     {
