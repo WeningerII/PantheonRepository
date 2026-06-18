@@ -25976,8 +25976,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Suppiluliuma II', alt: ['Šuppiluliuma II', 'Šuppiluliama'], transliterations: { 'hittite-hieroglyphic-luwian': 'BONUS-li-li-u-ma', 'akkadian': 'Šu-up-pi-lu-li-u-ma', etymology: 'Hittite throne-name evoking Suppiluliuma I (the New Kingdom founder, r. 1344-1322 BCE) — the deliberate name-recursion is a Hittite legitimation strategy parallel to the Ramesside use of "Ramesses" in the 20th Dynasty. The element šuppi- is "pure, sacred."' } },
       type: 'scion', origin: 'canon', tradition: 'Hittite', primaryTradition: 'Hittite',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: [],
-      parentRoles: {},
+      parentIds: ['hittite_tudhaliya_iv'],
+      parentRoles: { hittite_tudhaliya_iv: 'paternal' },
       temporal: {
         era: 'late-bronze-age',
         mythicStart: -1235,
@@ -25996,8 +25996,8 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'fate-unknown', era: 'late-bronze-age', eraOrdering: 7, startEvent: 'final-records-and-disappearance', sources: [{ kind: 'primary', reference: 'Cessation of Hittite imperial records c. 1178 BCE' }], notes: 'Final fate unknown. Some traditions claim he was killed in the sack of Hattusa in 1190 BCE; others that he simply "vanished." The current consensus is that he or his potential successors moved court elsewhere but never reestablished Hattusa, and the Hittite Empire as such disappeared by approximately 1178 BCE. Alive at c. 1172 BCE is plausible but not certain — he may already have been dead or in exile by that point.' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Tudhaliya IV (Hittite Great King, r. c. 1237-1209 BCE; registered as hittite_tudhaliya_iv — see entry)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite royal genealogies' }] },
-        { kind: 'sibling', externalRef: { name: 'Arnuwanda III (elder brother, briefly Hittite Great King between Tudhaliya IV and Suppiluliuma II)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite oath-tablets' }] },
+        { kind: 'father', personId: 'hittite_tudhaliya_iv', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite royal genealogies' }] },
+        { kind: 'sibling', personId: 'hittite_arnuwanda_iii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite oath-tablets' }] },
         { kind: 'enemy', externalRef: { name: 'Tukulti-Ninurta I of Assyria (Middle Assyrian, contemporary)', tradition: 'Mesopotamian' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'KBo 28.61-64 (letter from Tukulti-Ninurta to Suppiluliuma II)' }] },
         { kind: 'ally', externalRef: { name: 'Talmi-Teššub (vassal king of Carchemish; Hittite royal house member)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite-Carchemish treaty fragments' }] },
         { kind: 'overlord-of', externalRef: { name: 'Ammurapi of Ugarit (last king of Ugarit, c. 1215-1180 BCE; vassal under Suppiluliuma II)', tradition: 'Levantine' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'RS 34.129 ("Great King" letter)' }] },
@@ -26034,13 +26034,41 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father-of', personId: 'hittite_suppiluliuma_ii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite royal genealogies' }] },
-        { kind: 'father-of', externalRef: { name: 'Arnuwanda III (briefly Hittite Great King between Tudhaliya IV and Suppiluliuma II)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite king lists' }] },
+        { kind: 'father-of', personId: 'hittite_arnuwanda_iii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite king lists' }] },
         { kind: 'enemy', externalRef: { name: 'Tukulti-Ninurta I of Assyria (defeated him at Nihriya c. 1245 BCE)', tradition: 'Mesopotamian' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Tukulti-Ninurta epic' }] },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Yazılıkaya rock sanctuary; Hattusa archives; CTH 88 succession-treaty; Tukulti-Ninurta epic' }], weight: 'primary' },
       ],
       notes: 'Hittite Great King r. c. 1237-1209 BCE; father of Suppiluliuma II. Scion-tier under the Hittite divine-kingship convention. Defeated by Tukulti-Ninurta I of Assyria at the Battle of Nihriya c. 1245 BCE (a major late-13th-century reversal). Memorialized at Yazılıkaya Chamber B. Already dead by c. 1172 BCE — added for genealogical anchoring of Suppiluliuma II.',
+    },
+
+    // ── Genealogy march, Wave G11 (Hittite): materialize Arnuwanda III, the
+    //    elder son of Tudhaliya IV who reigned briefly between his father and
+    //    his brother Suppiluliuma II — carried as an externalRef on both. ──
+    {
+      id: 'hittite_arnuwanda_iii', schemaVersion: 2,
+      name: { primary: 'Arnuwanda III', alt: ['Arnuwanda', 'Hittite Great King Arnuwanda III'], transliterations: { 'hittite-cuneiform': 'mAr-nu-wa-an-da', etymology: 'Hittite Arnuwanda, a recurring Hittite royal name; third Great King to bear it.' } },
+      type: 'scion', origin: 'canon', tradition: 'Hittite', primaryTradition: 'Hittite', sex: 'male', vitalStatus: 'dead',
+      parentIds: ['hittite_tudhaliya_iv'],
+      parentRoles: { hittite_tudhaliya_iv: 'paternal' },
+      temporal: { era: 'late-bronze-age', mythicStart: -1240, mythicEnd: -1207, mythicPrecision: 'generation-bracket' },
+      lifecycle: [
+        { typeStatus: 'scion', startEvent: 'brief-reign-as-Hittite-Great-King', era: 'late-bronze-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Hittite king lists; CTH 125 (the loyalty-edict invoking his subjects)' }], notes: 'Elder son of Tudhaliya IV; succeeded his father as Hittite Great King but reigned only briefly and died without a son, so the throne passed to his younger brother Suppiluliuma II. Scion-tier under the Hittite divine-kingship convention.' },
+        { vitalStatus: 'dead', era: 'late-bronze-age', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'Hittite-Great-King' },
+        { id: 'short-reigning-elder-son-of-Tudhaliya-IV' },
+      ],
+      relations: [
+        { kind: 'father', personId: 'hittite_tudhaliya_iv', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite king lists' }] },
+        { kind: 'sibling', personId: 'hittite_suppiluliuma_ii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite oath-tablets' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hittite king lists; CTH 125; Hattusa archives' }], weight: 'primary' },
+      ],
+      notes: 'Hittite Great King, elder son of Tudhaliya IV; he reigned briefly between his father and his younger brother Suppiluliuma II and died without issue. Scion-tier under the Hittite divine-kingship convention. Carried in the registry only as an externalRef on Tudhaliya IV and Suppiluliuma II until materialized here.',
     },
 
     // ─── Ammurapi of Ugarit (last king, r. c. 1215-1180 BCE) ───────────────
