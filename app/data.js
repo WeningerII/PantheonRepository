@@ -19348,6 +19348,7 @@ const buildPeopleSeed = () => {
         { kind: 'father-of', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Boundary Stela K; Soleb temple reliefs' }] },
         { kind: 'father-of', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; KV46 chair' }] },
         { kind: 'spouse', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef year 30 Sed Festival inscriptions' }], notes: 'Father-daughter Royal-Marriage at his First Sed Festival.' },
+        { kind: 'spouse', personId: 'egyptian_tiye', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amenhotep III commemorative marriage scarabs' }], notes: 'His principal Great Royal Wife and mother of Akhenaten.' },
       ],
       notes: 'Pharaoh of the 18th Dynasty (~1391-1353 BCE). Reign of monumental scale; the Colossi of Memnon and Luxor Temple. Birth Cycle at Luxor Temple parallels the Hatshepsut iconographic program. Father of Akhenaten.',
     },
@@ -22045,8 +22046,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Akhenaten', alt: ['Amenhotep IV (pre-name-change)', 'Neferkheperure-waenre'], transliterations: { 'egyptian-hieroglyphic': '𓅜𓈖𓏏𓈖𓇋𓏏𓈖', 'mdc-transliteration': 'ꜣḫ-n-ı͗tn', etymology: 'Egyptian: ꜣḫ ("effective, beneficial, glorious-spirit") + n ("of, for") + ı͗tn ("the Aten, the solar-disk") — "Effective for the Aten" or "The Glorious-Spirit of the Aten." The name was adopted in year 5 of his reign as part of the religious revolution shifting the state cult from Amun-Ra to the solar-disk Aten; his birth-name Amenhotep ("Amun is satisfied") was abandoned at the same point.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_amenhotep_iii'],
-      parentRoles: { egyptian_amenhotep_iii: 'paternal' },
+      parentIds: ['egyptian_amenhotep_iii', 'egyptian_tiye'],
+      parentRoles: { egyptian_amenhotep_iii: 'paternal', egyptian_tiye: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1351,
@@ -22062,8 +22063,8 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Boundary Stela K; Soleb temple reliefs' }] },
-        { kind: 'mother', externalRef: { name: 'Queen Tiye (Great Royal Wife of Amenhotep III)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; Sedeinga temple inscription' }] },
-        { kind: 'spouse', externalRef: { name: 'Nefertiti (Neferneferuaten Nefertiti, Great Royal Wife)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Royal Tomb; the Berlin Bust' }] },
+        { kind: 'mother', personId: 'egyptian_tiye', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; Sedeinga temple inscription' }] },
+        { kind: 'spouse', personId: 'egyptian_nefertiti', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Royal Tomb; the Berlin Bust' }] },
         { kind: 'sibling', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Soleb temple reliefs; Tomb of Kheruef' }], notes: 'Half-sister-married-by-father — Sitamun was Amenhotep III\'s daughter by Tiye who was also taken as Great Royal Wife by her own father late in his reign.' },
         { kind: 'father-of', externalRef: { name: 'Tutankhamun (per KV55 DNA-paternity, Hawass et al. 2010 JAMA)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Hawass et al. 2010, JAMA 303.7; Tutankhamun tomb inscriptions' }] },
       ],
@@ -22080,8 +22081,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Sitamun', alt: ['Sitamen'], transliterations: { 'egyptian-hieroglyphic': '𓅓𓆭𓏏', 'mdc-transliteration': 'sꜣt-ı͗mn', etymology: 'Egyptian: sꜣt ("daughter") + ı͗mn ("Amun, the hidden god") — "Daughter of Amun." The name encodes the divine-paternity claim through the Amun-line, paralleling her own canonical theogenic-birth-portrait at Luxor Temple inherited from her father.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['egyptian_amenhotep_iii'],
-      parentRoles: { egyptian_amenhotep_iii: 'paternal' },
+      parentIds: ['egyptian_amenhotep_iii', 'egyptian_tiye'],
+      parentRoles: { egyptian_amenhotep_iii: 'paternal', egyptian_tiye: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1370,
@@ -22095,7 +22096,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; KV46 chair' }] },
-        { kind: 'mother', externalRef: { name: 'Queen Tiye', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef' }] },
+        { kind: 'mother', personId: 'egyptian_tiye', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef' }] },
         { kind: 'spouse', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef year 30 Sed Festival inscriptions' }], notes: 'Father-daughter Royal-Marriage at her father\'s First Sed Festival.' },
         { kind: 'sibling', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Soleb temple reliefs' }] },
       ],
@@ -22104,6 +22105,67 @@ const buildPeopleSeed = () => {
         { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Tomb of Kheruef; KV46 chair' }], weight: 'primary' },
       ],
       notes: 'Quartigod eldest daughter of Amenhotep III by Tiye. Elevated to Great Royal Wife of her own father in the period of his First Sed Festival (year 30, c. 1361 BCE) — the canonical Egyptian-pharaonic father-daughter Royal-Marriage that paralleled the divine-renewal Sed Festival. The Sitamun chair found in the tomb of her maternal grandparents Yuya and Tjuyu (KV46) bears her Great Royal Wife titulary.',
+    },
+
+    // ── Genealogy march, Wave G8 (Egyptian, 18th-dynasty Amarna queens):
+    //    materialize the Great Royal Wives Tiye (mother of Akhenaten & Sitamun)
+    //    and Nefertiti (wife of Akhenaten), carried only as externalRefs. Both
+    //    mortal-tier by descent; adding them as maternal parents leaves the
+    //    children's quartigod tiers unchanged (the sum/max(2,n) math already
+    //    treated the unlisted mother as 0). The pharaohs' divine descent runs
+    //    through the paternal Amun-Ra line, untouched here. ──
+    {
+      id: 'egyptian_tiye', schemaVersion: 2,
+      name: { primary: 'Tiye', alt: ['Tiy', 'Queen Tiye', 'Great Royal Wife Tiye'], transliterations: { 'mdc-transliteration': 'tiy', etymology: 'Egyptian tiy; Great Royal Wife of Amenhotep III, daughter of the non-royal courtiers Yuya and Tjuyu.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1398, mythicEnd: -1338, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Amenhotep-III-as-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Amenhotep III commemorative marriage scarabs; Tomb of Kheruef (TT192)' }], notes: 'Daughter of the non-royal Yuya and Tjuyu; married Amenhotep III early in his reign and was elevated to unprecedented public prominence as Great Royal Wife, named beside the king on official monuments and scarabs.' },
+        { typeStatus: 'mortal', startEvent: 'motherhood-of-Akhenaten-and-diplomatic-role', era: 'new-kingdom', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Amarna Letters; Sedeinga temple; Tomb of Kheruef' }], notes: 'Mother of Akhenaten and Sitamun; her Nubian temple at Sedeinga worshipped her as a form of Hathor, and the Amarna Letters show foreign kings corresponding with her directly into her son\'s reign.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'Great-Royal-Wife-of-Amenhotep-III' },
+        { id: 'queen-mother-of-the-Amarna-age' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amenhotep III marriage scarabs' }] },
+        { kind: 'mother-of', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; Sedeinga temple' }] },
+        { kind: 'mother-of', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Amenhotep III commemorative marriage scarabs; Tomb of Kheruef (TT192); Sedeinga temple; Amarna Letters; the "Elder Lady" mummy (KV35EL) identified as Tiye by Hawass et al. 2010 (JAMA 303.7)' }], weight: 'primary' },
+      ],
+      notes: 'Great Royal Wife of Amenhotep III and the most prominent Egyptian queen of the 18th Dynasty; daughter of the non-royal Yuya and Tjuyu. Mother of Akhenaten and of Sitamun (whom Amenhotep III later took as Great Royal Wife). Her unprecedented public prominence — named beside the king on monuments and scarabs, a Nubian temple at Sedeinga where she was worshipped as a form of Hathor, and direct diplomatic correspondence in the Amarna Letters — set the stage for the elevated royal women of the Amarna period. Mortal-tier by descent (non-royal parents); the Sedeinga deification is a cultic honor recorded in the notes, not in the divinity fraction. Carried in the registry only as an externalRef on Akhenaten and Sitamun until materialized here.',
+    },
+
+    {
+      id: 'egyptian_nefertiti', schemaVersion: 2,
+      name: { primary: 'Nefertiti', alt: ['Neferneferuaten Nefertiti', 'Great Royal Wife Nefertiti'], transliterations: { 'mdc-transliteration': 'nfrt-iiti', etymology: 'Egyptian nfrt-ii.ti "the beautiful one has come"; her fuller name Neferneferuaten ("perfect are the perfections of the Aten") marks her Aten devotion.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1370, mythicEnd: -1330, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Akhenaten-and-the-Aten-revolution', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Amarna talatat blocks; Boundary Stelae; the Berlin Bust (AM 21300)' }], notes: 'Great Royal Wife of Akhenaten, depicted with unprecedented prominence in Amarna art — co-officiating the Aten cult and even shown in the king\'s enemy-smiting posture. Mother of six daughters, including Ankhesenpaaten (later Ankhesenamun, wife of Tutankhamun).' },
+        { typeStatus: 'mortal', startEvent: 'possible-coregency-as-Neferneferuaten', era: 'new-kingdom', eraOrdering: 1, sources: [{ kind: 'secondary', reference: 'the Neferneferuaten coregency hypothesis (Reeves and others)' }], notes: 'In one leading reconstruction she ruled as the coregent/successor pharaoh Neferneferuaten in the final Amarna years; the identification remains debated.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'Great-Royal-Wife-of-Akhenaten' },
+        { id: 'co-celebrant-of-the-Aten-cult' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Royal Tomb; the Berlin Bust' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Amarna talatat blocks; Amarna Boundary Stelae; the Berlin Bust (Agyptisches Museum AM 21300); the Amarna Royal Tomb' }], weight: 'primary' },
+      ],
+      notes: 'Great Royal Wife of Akhenaten and one of the most-recognized figures of ancient Egypt (the painted Berlin Bust). She held unprecedented prominence in Amarna art and the Aten cult — co-officiating and even shown in the king\'s smiting posture — and may have ruled as the coregent/successor Neferneferuaten in the final Amarna years. Mother of six daughters including Ankhesenamun (wife of Tutankhamun). Mortal-tier by descent. Carried in the registry only as an externalRef on Akhenaten until materialized here.',
     },
 
     // ─── Khaemweset (Ramesses II × Isetnofret) ───────────────────────────
