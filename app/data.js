@@ -12138,9 +12138,9 @@ const buildPeopleSeed = () => {
         { id: 'aralez-spirit-resurrection-attempt', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
       ],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Nuard, mortal Armenian noblewoman; mother of Anushavan Sosanver', tradition: 'Armenian' }, era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
+        { kind: 'spouse', personId: 'armenian_nuard', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
         { kind: 'father-of', personId: 'armenian_anushavan_sosanver', era: 'haykazuni-mythohistorical' },
-        { kind: 'killed-by', externalRef: { name: 'Semiramis (Shamiram), Assyrian queen of Khorenatsi tradition (semi-historical conflation of multiple Assyrian-period queens)', tradition: 'Armenian' }, era: 'haykazuni-mythohistorical' },
+        { kind: 'killed-by', personId: 'armenian_shamiram', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
       ],
       iconography: {
         attributes: [
@@ -12174,8 +12174,8 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['armenian_ara_the_beautiful'],
-      parentRoles: { armenian_ara_the_beautiful: 'paternal' },
+      parentIds: ['armenian_ara_the_beautiful', 'armenian_nuard'],
+      parentRoles: { armenian_ara_the_beautiful: 'paternal', armenian_nuard: 'maternal' },
       temporal: { era: 'haykazuni-mythohistorical' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Khorenatsi 1.20' }], notes: 'Son of Ara the Beautiful by Nuard. The epithet Sosanver ("Dedicated to the Plane Tree," from sos- "plane tree" + nver "dedicated, gifted") preserves a distinctive Armenian dendrolatric ritual association: the sacred plane-tree at Armavir was the divinatory oracle of the Haykazuni court, with rustling leaves interpreted as divine speech.' },
@@ -12196,6 +12196,138 @@ const buildPeopleSeed = () => {
       notes: 'Son of Ara the Beautiful and Nuard; restorer of Haykazuni sovereignty after the Semiramis Assyrian-occupation period. The Sosanver epithet ("Dedicated to the Plane Tree") preserves a distinctive Armenian dendrolatric ritual association: the sacred plane-tree at Armavir was the divinatory oracle of the Haykazuni court, with the rustling of leaves interpreted as divine speech (Khorenatsi 1.20). The ritual association is one of the most-distinctive non-Iranic-syncretic survivals in Armenian mythology, preserving an indigenous Armenian arboreal-cult complex predating the Achaemenid-Parthian Iranic-syncretic overlay.',
     },
 
+    // ── Genealogy march, Wave G4 (Armenian): materialize three figures the
+    // Khorenatsi and Sasna Tsřer cycles name as full narrative participants but
+    // the registry had carried only as externalRefs — Nuard (Ara's wife, mother
+    // of Anushavan), Shamiram / Semiramis (the Assyrian queen who kills Ara),
+    // and Tsovinar (the sea-conceived matriarch of the Sassoun line). Mortal-
+    // class all three; promoting them converts the dangling externalRefs on Ara,
+    // Anushavan, Sanasar, and Baghdasar into real graph edges. Continues the G1
+    // Armenian thread (Haykazuni patriarchs) into the Khorenatsi-Sasna corpus.
+    // The Sasna Tsřer wives (Armaghan/Misra Khanum, Khandut) stay externalRefs:
+    // they are defined only by whom they marry and bear, per the corpus's
+    // convention for peripheral consorts (cf. Aram's wife Nuard, now promoted).
+    {
+      id: 'armenian_nuard',
+      schemaVersion: 2,
+      name: {
+        primary: 'Nuard',
+        alt: ['Նուարդ', 'Nvard', 'Queen Nuard', 'Wife of Ara the Beautiful'],
+        transliterations: { 'armenian-classical': 'Նուարդ', 'armenian-romanization': 'Nuard' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15' }], notes: 'Wife of Ara the Beautiful; the bond to which Ara stays faithful when he rejects the marriage proposal of the Assyrian queen Semiramis.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 1, startEvent: 'motherhood-of-Anushavan', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.20' }], notes: 'Mother of Anushavan Sosanver, who restored Haykazuni sovereignty after the Semiramis occupation.' },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'wife-of-Ara-the-Beautiful' },
+        { id: 'mother-of-Anushavan-Sosanver' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'armenian_ara_the_beautiful', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
+        { kind: 'mother-of', personId: 'armenian_anushavan_sosanver', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.20' }] },
+      ],
+      linguistic: {
+        etymology: 'Armenian Նուարդ Nuard, conventionally read with the element vard (վարդ) "rose" of the common Armenian rose-maiden name-type; Nvard is the modern Eastern Armenian rendering.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15, 1.20' },
+          { kind: 'secondary', reference: 'Thomson trans. (1978) commentary' },
+        ], weight: 'primary' },
+      ],
+      notes: 'Wife of Ara the Beautiful and mother of Anushavan Sosanver in the Khorenatsi Haykazuni tradition. Her faithful marriage is the narrative foil to the Ara-Semiramis episode: it is fidelity to Nuard that motivates Ara\'s fatal rejection of the Assyrian queen\'s proposal (Khorenatsi 1.15), and through their son Anushavan the Haykazuni line continues past the Semiramis occupation. Carried in the registry only as an externalRef on Ara until materialized here as the maternal link between Ara and Anushavan.',
+    },
+
+    {
+      id: 'armenian_shamiram',
+      schemaVersion: 2,
+      name: {
+        primary: 'Shamiram',
+        alt: ['Շամիրամ', 'Semiramis', 'Sammuramat', 'Queen of Assyria'],
+        transliterations: { 'armenian-classical': 'Շամիրամ', 'armenian-romanization': 'Shamiram' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15-16' }], notes: 'Queen of Assyria; in Khorenatsi a semi-historical conflation of Assyrian-period queens, the regent Sammu-ramat (c. 811-808 BCE) being the strongest historical candidate.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 1, startEvent: 'invasion-of-Armenia-and-killing-of-Ara', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }], notes: 'After Ara the Beautiful refused her marriage proposal she invaded Armenia; Ara fell in the battle despite her order to take him alive, and her attempt to revive him through the aralez-spirits failed.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 2, startEvent: 'building-of-the-city-on-Lake-Van', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.16' }], notes: 'Built the fortified summer-city, gardens, and great canal on the eastern shore of Lake Van — the "works of Semiramis" / Shamiramakert of the Khorenatsi tradition, an Armenian etiology for the Urartian remains at Van.' },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 3 },
+      ],
+      domains: [
+        { id: 'queen-of-Assyria' },
+        { id: 'slayer-of-Ara-the-Beautiful' },
+        { id: 'builder-of-the-Van-canal-and-city' },
+      ],
+      relations: [
+        { kind: 'killer-of', personId: 'armenian_ara_the_beautiful', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }], notes: 'Invaded Armenia after Ara rejected her proposal; Ara fell in the battle despite her order to capture him alive.' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Շամիրամ Shamiram, the Armenian reflex of Greek Semiramis (Σεμίραμις) rendering Akkadian Sammu-ramat. Khorenatsi attaches the name to the Lake Van building-works (Shamiramakert, "built by Shamiram").',
+        languageFamily: 'Akkadian/Assyrian name in Armenian transmission',
+      },
+      cult: {
+        cultCenters: [
+          { placeName: 'Van (Tushpa), eastern shore of Lake Van — the "city of Shamiram" (Shamiramakert)', period: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.16' }] },
+        ],
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15-16' },
+          { kind: 'secondary', reference: 'Thomson trans. (1978) commentary on the Ara-Semiramis episode and the Van building-tradition' },
+        ], weight: 'primary' },
+      ],
+      notes: 'The Assyrian queen Semiramis (Armenian Shamiram) of the Khorenatsi tradition — antagonist of the Ara the Beautiful legend, one of the most-famous narratives of Movses Khorenatsi (1.15) and a recurring motif in modern Armenian literature, painting, and theater. Captivated by Ara\'s beauty she proposed marriage; when he refused, out of faithfulness to his wife Nuard, she invaded Armenia, where Ara was killed despite her order to take him alive, and the aralez-spirit resurrection failed. Khorenatsi 1.16 makes her the builder of the city, gardens, and canal on Lake Van (the Shamiramakert), an Armenian etiology for the visible Urartian works there. A semi-historical conflation of multiple Assyrian-period queens, the regent Sammu-ramat (c. 811-808 BCE) the strongest candidate; tagged here under the Armenian tradition in which she is a narrative participant, mortal-class, as the materialized slayer of Ara (formerly an externalRef).',
+    },
+
+    {
+      id: 'armenian_tsovinar',
+      schemaVersion: 2,
+      name: {
+        primary: 'Tsovinar',
+        alt: ['Ծովինար', 'Dzovinar', 'Tsovinar of the Sea', 'Princess of Baghdad'],
+        transliterations: { 'armenian-classical': 'Ծովինար', 'armenian-romanization': 'Tsovinar / Dzovinar' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'medieval-sasna-tsrer' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Manuk Abeghian (1936-1951) Vol. I Cycle 1' }], notes: 'Daughter of the Caliph (in some recensions the king) of Baghdad, given in a tribute-marriage that frames Cycle 1 of the epic.' },
+        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 1, startEvent: 'miraculous-conception-from-the-Milky-Fountain', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 1' }], notes: 'Conceived the twins Sanasar and Baghdasar by drinking sacred water — a handful and a half from the Milky Fountain (Katnaghbiur) — with no human father; the uneven draught explains the twins\' unequal strength in some recensions.' },
+        { vitalStatus: 'dead', era: 'medieval-sasna-tsrer', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'sea-born-matriarch-of-Sassoun' },
+        { id: 'miraculous-conception-of-the-twin-founders' },
+      ],
+      relations: [
+        { kind: 'mother-of', personId: 'armenian_sanasar', era: 'medieval-sasna-tsrer', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 1' }] },
+        { kind: 'mother-of', personId: 'armenian_baghdasar', era: 'medieval-sasna-tsrer', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 1' }] },
+      ],
+      linguistic: {
+        etymology: 'Armenian Ծովինար Tsovinar, from tsov (ծով) "sea" — "of the sea," marking the marine-conception motif; the variant Dzovinar reflects the dialectal ts-/dz- alternation. The form carries the older Armenian storm-and-sea spirit Tsovinar into the medieval epic.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sasna Tsřer ed. Manuk Abeghian (1936-1951) Vol. I Cycle 1' },
+          { kind: 'primary', reference: 'Levon Surmelian trans., Daredevils of Sassoun (1964)' },
+          { kind: 'secondary', reference: 'Garegin Srvandzteants, Grots u Brots / Mokats Mirza (1873) — first textual collection' },
+        ], weight: 'primary' },
+      ],
+      notes: 'The sea-conceived matriarch of the Sassoun line in the Sasna Tsřer (Daredevils of Sassoun). A princess of Baghdad given in tribute-marriage, she conceives the twin founders Sanasar and Baghdasar by drinking sacred water from the Milky Fountain (Katnaghbiur), with no human father — the miraculous-conception motif that opens the four-generation epic. Her name (Armenian Tsovinar, "of the sea") and the older Armenian storm-and-sea spirit of the same name lie behind the marine conception. Carried in the registry only as an externalRef on Sanasar and Baghdasar until materialized here; she is mortal-class, and the sacred-water conception is not a forbidden-parent-class pattern, so her sons retain strict-pass eligibility.',
+    },
+
     {
       id: 'armenian_sanasar',
       schemaVersion: 2,
@@ -12206,10 +12338,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['armenian_tsovinar'],
+      parentRoles: { armenian_tsovinar: 'maternal' },
       temporal: { era: 'medieval-sasna-tsrer' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, startEvent: 'miraculous-conception-by-Tsovinar-from-sacred-water', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I (1936) Cycle 1' }], notes: 'Conceived by his mother Tsovinar (princess of Baghdad) through her drinking of sacred water from the Milky Sea (Katnaghbiur); Tsovinar gave birth to twins, Sanasar and Baghdasar, with no human father involved. The registry treats Sanasar as mortal with empty parentIds — Tsovinar is mortal-class and the sacred-water conception is not a forbidden-parent-class pattern.' },
+        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, startEvent: 'miraculous-conception-by-Tsovinar-from-sacred-water', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I (1936) Cycle 1' }], notes: 'Conceived by his mother Tsovinar (princess of Baghdad) through her drinking of sacred water from the Milky Sea (Katnaghbiur), with no human father; Tsovinar gave birth to the twins Sanasar and Baghdasar. The registry now records Tsovinar (mortal-class) as Sanasar\'s mother in parentIds; the sacred-water conception is not a forbidden-parent-class pattern, so Sanasar retains strict-pass eligibility.' },
         { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 1, startEvent: 'flight-from-Baghdad-and-founding-of-Sassoun', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I' }], notes: 'Fled Baghdad with his twin Baghdasar to escape the Caliph\'s persecution; founded the city-fortress of Sassoun (Sasun) in the highland-region southwest of Lake Van — the eponymous capital of the heroic dynasty.' },
         { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 2, startEvent: 'fathering-of-Mher-the-Elder', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 2' }] },
         { vitalStatus: 'dead', era: 'medieval-sasna-tsrer', eraOrdering: 3 },
@@ -12221,7 +12354,6 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'sibling', personId: 'armenian_baghdasar', era: 'medieval-sasna-tsrer', notes: 'Twin brother; co-founder of Sassoun.' },
-        { kind: 'mother', externalRef: { name: 'Tsovinar (Թովինար, "of-the-sea"), princess of Baghdad / Caliphate of Baghdad; conceived the twins through drinking sacred water from the Milky Sea', tradition: 'Armenian' }, era: 'medieval-sasna-tsrer' },
         { kind: 'father-of', personId: 'armenian_mher_the_elder', era: 'medieval-sasna-tsrer' },
       ],
       iconography: {
@@ -12259,7 +12391,8 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['armenian_tsovinar'],
+      parentRoles: { armenian_tsovinar: 'maternal' },
       temporal: { era: 'medieval-sasna-tsrer' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, startEvent: 'twin-conception-with-Sanasar', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I Cycle 1' }] },
@@ -12273,7 +12406,6 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'sibling', personId: 'armenian_sanasar', era: 'medieval-sasna-tsrer' },
-        { kind: 'mother', externalRef: { name: 'Tsovinar', tradition: 'Armenian' }, era: 'medieval-sasna-tsrer' },
       ],
       linguistic: {
         etymology: 'Armenian Բաղդասար Baghdasar; the name is the Armenian form of Belshazzar (Babylonian Bēl-šar-uṣur, "Bel protect the king"; Old Testament Daniel 5). The twin-name pair Sanasar-Baghdasar preserves the Old Testament Sanasar-Belshazzar onomastic complex (2 Kings 19:37), reflecting medieval-Armenian-Christian liturgical-Biblical transmission of Mesopotamian royal names into the Sassoun heroic-epic frame.',
