@@ -10230,7 +10230,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'aswang-class-creator', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Bicolano tradition' }], notes: 'Eponymous progenitor of the broader Filipino aswang class of folkloric night-flesh-eaters via the dark-gift transmission to mortal worshippers.' },
       ],
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Gugurang (Bicolano supreme deity)', tradition: 'Bicolano' }, era: 'primordial', sources: [{ kind: 'primary', reference: 'Ibalong cosmological framework' }] },
+        { kind: 'sibling', personId: 'bicolano_gugurang', era: 'primordial', sources: [{ kind: 'primary', reference: 'Ibalong cosmological framework' }] },
         { kind: 'father-of', personId: 'bicolano_oryol', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
         { kind: 'father-of', personId: 'bicolano_magindara', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
       ],
@@ -10263,8 +10263,7 @@ const buildPeopleSeed = () => {
       },
       relations: [
         { kind: 'sibling', personId: 'bicolano_magindara', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition — both daughters of Asuang' }] },
-        { kind: 'sibling', externalRef: { name: 'Magindara (half-eel demigoddess)', tradition: 'Bicolano' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
-        { kind: 'lover', externalRef: { name: 'Handyong (mortal ruler of Ibalong)', tradition: 'Bicolano' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol folk-tale' }], notes: 'The defining love-relationship that transforms Oryol from antagonist to ally and central to the Bicolano civilizing-narrative.' },
+        { kind: 'lover', personId: 'bicolano_handyong', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol folk-tale' }], notes: 'The defining love-relationship that transforms Oryol from antagonist to ally and central to the Bicolano civilizing-narrative.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Ibalong epic (Bicolano oral epic, ~60-stanza fragment recorded; Bicolano Poetry Archives via L. G. Dato 1965; Castaño Treatise on the Bicol Region 1895; Melendreras de la Trinidad Ibal Manuscript 1815-1867 in Franciscan Archives Albay; National Commission for Culture and the Arts Philippine Epics and Folklore: Ibalong 2020); Three Tales From Bicol, Perla S. Intia, New Day Publishers, 1982' }], weight: 'primary' },
@@ -10305,6 +10304,61 @@ const buildPeopleSeed = () => {
         { kind: 'eponym-of', externalRef: { name: 'the Magindara-mermaid-species ("aswang ng dagat") — the canonical-Bicolano vicious flesh-eating mermaid-race that emerged in the sea where the original Magindara was last seen, taking her name as species-eponym; iconographically distinguished from the original kind-and-tender-hearted demigoddess', tradition: 'Bicolano' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
       ],
       notes: 'Half-divine half-eel daughter of the Bicolano deity Asuang by an unnamed mortal woman. Sister of Oryol (the half-serpent demigoddess of the Ibalong epic). Defined in Bicolano oral tradition by her kind-and-tender-hearted character — the deliberate contrast to her cunning serpent-sister. Possessed of a beautiful voice with the dual canonical-Bicolano power to summon storms or to calm them. When asked by her father Asuang to summon storms against the human settlers of Ibalong, she refused; banished by Asuang into the sea as punishment. After her banishment, the canonical-Bicolano vicious-mermaid race emerged from the place where she was last seen, taking her name as species-eponym ("Magindara" / "aswang ng dagat"); iconographically distinguished from the original demigoddess. The kindness-and-mercy character-note and the storm-controlling vocal faculty are the defining elements of her individual-figure iconography.',
+    },
+
+    // ── Genealogy march, Wave G5 (Bicolano): materialize the supreme deity
+    //    Gugurang (Asuang's sibling-rival, formerly an externalRef) and the
+    //    Ibalong hero-ruler Handyong (Oryol's lover, formerly an externalRef). ──
+    {
+      id: 'bicolano_gugurang', schemaVersion: 2,
+      name: { primary: 'Gugurang', alt: ['Gugúrang'], transliterations: { bicolano: 'Gugurang', etymology: 'Bicolano: the supreme creator-deity of the pre-Hispanic Bicol pantheon.' } },
+      type: 'deity', origin: 'canon', tradition: 'Bicolano', primaryTradition: 'Bicolano',
+      sex: 'male', vitalStatus: 'living',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'primordial' },
+      lifecycle: [
+        { typeStatus: 'deity', startEvent: 'existence-as-supreme-creator-and-keeper-of-fire', era: 'primordial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Ibalong epic; Bicolano cosmological tradition' }], notes: 'Supreme deity of the Bicolano pantheon; the good god who dwells within Mount Mayon and keeps the sacred fire of creation. Brother and one-time equal of Asuang, the deity of evil and chaos. Mortals appealed to him for good harvest and were punished with eruptions of Mayon for wrongdoing.' },
+        { typeStatus: 'deity', startEvent: 'defeat-of-Asuangs-fire-theft', era: 'primordial', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Ibalong; Bicolano cosmological tradition' }], notes: 'When Asuang stole his sacred fire, Gugurang retrieved it, called rain to quench the flames, and struck Asuang\'s mountain with a thunderbolt, sealing his brother beneath Mount Malinao — the structural subordination of the once-equal evil deity.' },
+      ],
+      domains: [
+        { id: 'supreme-creator-deity' },
+        { id: 'keeper-of-the-sacred-fire-of-Mount-Mayon' },
+      ],
+      relations: [
+        { kind: 'sibling', personId: 'bicolano_asuang', era: 'primordial', sources: [{ kind: 'primary', reference: 'Ibalong cosmological framework — Gugurang and Asuang as brother-deities and one-time equals' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Ibalong epic (Bicolano oral epic); Bicolano cosmological tradition; Felix B. Regalado ethnographic compilation' }], weight: 'primary' },
+      ],
+      notes: 'Supreme creator-deity of the pre-Hispanic Bicolano pantheon; the benevolent god who dwells in Mount Mayon and keeps the sacred fire of creation, sending eruptions to punish wrongdoing. Brother and one-time equal of Asuang, the deity of evil; when Asuang tried to steal his fire, Gugurang sealed him beneath Mount Malinao. The Gugurang-Asuang opposition is the central dualism of Bicolano cosmology. Carried in the registry only as an externalRef on Asuang until materialized here as the sibling-rival supreme deity.',
+    },
+
+    {
+      id: 'bicolano_handyong', schemaVersion: 2,
+      name: { primary: 'Handyong', alt: ['Handiong'], transliterations: { bicolano: 'Handyong', etymology: 'Bicolano: the second of the three heroes of the Ibalong epic, after Baltog and before Bantong.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Bicolano', primaryTradition: 'Bicolano',
+      sex: 'male', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'heroic-age' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'clearing-of-Ibalong-of-monsters', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Ibalong epic' }], notes: 'Hero-ruler of Ibalong (the ancient name of the Bicol region). With his warriors he cleared the land of monsters — the giant crocodiles, the wild carabaos, the snakes of Mount Hantik, and the one-eyed three-throated Puong — making the land safe for human settlement.' },
+        { typeStatus: 'mortal', startEvent: 'campaign-against-Oryol-and-alliance', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol tradition' }], notes: 'Long pursued the cunning half-serpent demigoddess Oryol, who repeatedly eluded his traps; she fell in love with him and turned from antagonist to ally, revealing the secrets of governing the land that brought prosperity to Ibalong.' },
+        { typeStatus: 'mortal', startEvent: 'civilizing-works-and-laws', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Ibalong epic' }], notes: 'Instituted the first laws, agriculture, the plow and carabao-yoke, the boat, and writing among his people — the Bicolano culture-bringer; succeeded by Bantong, who slew the last monster Rabot.' },
+        { vitalStatus: 'dead', era: 'heroic-age', eraOrdering: 3 },
+      ],
+      domains: [
+        { id: 'hero-ruler-of-Ibalong' },
+        { id: 'monster-clearer-and-culture-bringer' },
+      ],
+      relations: [
+        { kind: 'lover', personId: 'bicolano_oryol', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol folk-tale' }], notes: 'The serpent-demigoddess Oryol, won from antagonist to ally and lover, revealed the secrets of governance to him.' },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Ibalong epic (Bicolano oral epic, ~60-stanza fragment; NCCA Philippine Epics and Folklore: Ibalong); Three Tales From Bicol, Perla S. Intia (New Day Publishers, 1982)' }], weight: 'primary' },
+      ],
+      notes: 'The second of the three great heroes of the Ibalong epic of the Bicol region, between Baltog (the first) and Bantong (the slayer of Rabot). Cleared Ibalong of its monsters and instituted laws, agriculture, the plow, the boat, and writing — the Bicolano culture-bringer. His campaign against and eventual love-alliance with the half-serpent demigoddess Oryol is the central narrative of the middle Ibalong cycle. Carried in the registry only as an externalRef on Oryol until materialized here.',
     },
 
     // ─── Dumagid ───────────────────────────────────────────────────────────
@@ -10628,7 +10682,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'kingship-of-the-imandwa-spirits', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
       ],
       relations: [
-        { kind: 'lover', externalRef: { name: 'Kalimulore (later Nyiraryang\'ombe, mortal-with-shapeshifter-powers)', tradition: 'Banyaruanda' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+        { kind: 'lover', personId: 'banyaruanda_kalimulore', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
         { kind: 'father-of', personId: 'banyaruanda_ryangombe', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
       ],
       sources: [
@@ -10643,8 +10697,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Ryangombe', alt: ['Ryang\'ombe', 'Kiranga (Burundi equivalent)'], transliterations: { kinyarwanda: 'Ryangombe', etymology: 'Kinyarwanda: from a root associated with cattle and hunting domains; the figure\'s domain-specific honorifics include "the prominent hunter" and "king of the imandwa."' } },
       type: 'demigod', origin: 'canon', tradition: 'Banyaruanda', primaryTradition: 'Banyaruanda',
       sex: 'male', vitalStatus: 'apotheosed',
-      parentIds: ['banyaruanda_babinga'],
-      parentRoles: { banyaruanda_babinga: 'paternal' },
+      parentIds: ['banyaruanda_babinga', 'banyaruanda_kalimulore'],
+      parentRoles: { banyaruanda_babinga: 'paternal', banyaruanda_kalimulore: 'maternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
         { typeStatus: 'demigod', startEvent: 'birth-to-Babinga-and-Kalimulore', era: 'heroic-age', eraOrdering: 100, sources: [{ kind: 'primary', reference: 'Werner Myths and Legends of the Bantu 1933 ch. VIII' }], notes: 'Born to Babinga (king of the imandwa) and Kalimulore (mortal-with-shapeshifter-powers, later renamed Nyiraryang\'ombe). The mother\'s lioness-shapeshifter-and-cattle-killer biography establishes the supernatural-family-context that the Werner narrative preserves in elaborate detail.' },
@@ -10654,8 +10708,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'apotheosed', startEvent: 'apotheosis-on-Mount-Muhavura-as-imandwa-king', era: 'mythic-present', eraOrdering: 104, sources: [{ kind: 'primary', reference: 'Werner 1933; Banyaruanda Kubandwa tradition' }], notes: 'Apotheosed and translated to Mount Muhavura (the volcano on the Rwanda-Uganda border), where he continues to live with his imandwa-relatives and dependents. Inhabits the slopes of Mount Karisimbi per other traditions. Initiated Kubandwa-cult members are believed to live with him after death on the volcano-slopes, drinking, gambling, and smoking pleasantly — the more-pleasant-afterlife than the standard bazimu-ghost destiny.' },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Kalimulore / Nyiraryang\'ombe (mortal-with-shapeshifter-powers)', tradition: 'Banyaruanda' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
-        { kind: 'father-of', externalRef: { name: 'Binego (his successor)', tradition: 'Banyaruanda' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+        { kind: 'father-of', personId: 'banyaruanda_binego', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
       ],
       death: {
         manner: { kind: 'killed-by-buffalo-arranged-by-unwed-woman', notes: 'The eponymous "Killed by an Unwed Mother" tale-title.' },
@@ -10668,6 +10721,61 @@ const buildPeopleSeed = () => {
         { claim: 'apotheosis', citations: [{ kind: 'primary', reference: 'Werner 1933; Kubandwa-cult tradition' }], weight: 'primary' },
       ],
       notes: 'Half-divine son of Babinga (king of the imandwa-spirits) by Kalimulore (mortal-with-shapeshifter-powers, later renamed Nyiraryang\'ombe "Mother of Ryang\'ombe"). Prominent hunter-and-warrior whose social-norm-transgression (hunting-gambling-sexual-preoccupation, neglect of cultural-obligations) is both his power-source and his eventual undoing. Killed by a buffalo arranged by an unwed mother per the eponymous Werner tale-title. Apotheosized as king of the imandwa on Mount Muhavura (the Rwanda-Uganda border volcano) and Mount Karisimbi. Foundational figure of the Kubandwa cult of imandwa-veneration — the central Banyaruanda polytheistic religious system. The Burundi equivalent figure is Kiranga; the cult-pair (Ryangombe in Rwanda, Kiranga in Burundi) constitutes one of the major East-African demigod-deity-traditions.',
+    },
+
+    // ── Genealogy march, Wave G5 (Banyaruanda): materialize Kalimulore /
+    //    Nyiraryang'ombe (Ryangombe's mother, Babinga's lover) and Binego
+    //    (Ryangombe's son and named successor) — both formerly externalRefs. ──
+    {
+      id: 'banyaruanda_kalimulore', schemaVersion: 2,
+      name: { primary: 'Kalimulore', alt: ['Nyiraryang\'ombe', 'Nyiraryangombe', 'Mother of Ryangombe'], transliterations: { kinyarwanda: 'Nyiraryang\'ombe', etymology: 'Kinyarwanda: renamed Nyiraryang\'ombe ("Mother of Ryang\'ombe") after the birth of her son.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Banyaruanda', primaryTradition: 'Banyaruanda',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'heroic-age' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'existence-as-shapeshifter-and-lioness', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII' }], notes: 'A powerful figure with the ability to turn into a lioness and a reputation as a cattle-killer; her status is treated by the dominant Werner-tradition as mortal-with-supernatural-powers (mortal-tier), the threshold-class mother of the strict-criterion demigod Ryangombe.' },
+        { typeStatus: 'mortal', startEvent: 'union-with-Babinga-and-motherhood-of-Ryangombe', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Werner 1933 ch. VIII' }], notes: 'Bore Ryangombe to Babinga, king of the imandwa; thereafter renamed Nyiraryang\'ombe, "Mother of Ryang\'ombe." A bloodstained leaf falling on her breast confirmed her warning-dream of her son\'s death.' },
+        { vitalStatus: 'dead', era: 'heroic-age', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'lioness-shapeshifter' },
+        { id: 'mother-of-Ryangombe' },
+      ],
+      relations: [
+        { kind: 'lover', personId: 'banyaruanda_babinga', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+        { kind: 'mother-of', personId: 'banyaruanda_ryangombe', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII; Banyaruanda Kubandwa-cult tradition' }], weight: 'primary' },
+      ],
+      notes: 'Mother of the demigod Ryangombe by Babinga, king of the imandwa-spirits; a lioness-shapeshifter and cattle-killer of ambiguous status whom the dominant Werner-tradition treats as mortal-with-supernatural-powers. Renamed Nyiraryang\'ombe ("Mother of Ryang\'ombe") after her son\'s birth; the falling of a bloodstained leaf on her breast confirmed her foreknowledge of his death. Carried in the registry only as an externalRef on Babinga and Ryangombe until materialized here.',
+    },
+
+    {
+      id: 'banyaruanda_binego', schemaVersion: 2,
+      name: { primary: 'Binego', alt: ['Binégo'], transliterations: { kinyarwanda: 'Binego', etymology: 'Kinyarwanda: an imandwa-spirit, son and named successor of Ryangombe.' } },
+      type: 'quartigod', origin: 'canon', tradition: 'Banyaruanda', primaryTradition: 'Banyaruanda',
+      sex: 'male', vitalStatus: 'apotheosed',
+      parentIds: ['banyaruanda_ryangombe'],
+      parentRoles: { banyaruanda_ryangombe: 'paternal' },
+      temporal: { era: 'heroic-age' },
+      lifecycle: [
+        { typeStatus: 'quartigod', startEvent: 'birth-as-son-of-Ryangombe', era: 'heroic-age', eraOrdering: 100, sources: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII' }], notes: 'Son of the demigod Ryangombe; came with his grandmother Nyiraryang\'ombe to the dying Ryangombe.' },
+        { typeStatus: 'quartigod', startEvent: 'vengeance-on-the-buffalo-woman', era: 'heroic-age', eraOrdering: 101, sources: [{ kind: 'primary', reference: 'Werner 1933 ch. VIII' }], notes: 'After hearing how his father was slain by a buffalo dispatched by an unwed woman, Binego pursued the buffalo-woman and killed her and her child, cutting them to pieces in vengeance.' },
+        { typeStatus: 'quartigod', startEvent: 'succession-as-imandwa-leader', era: 'heroic-age', eraOrdering: 102, sources: [{ kind: 'primary', reference: 'Werner 1933' }], notes: 'Named by Ryangombe as his successor at the moment his throat tightened in death; joins the imandwa under his father on the volcano-slopes.' },
+        { typeStatus: 'apotheosed', startEvent: 'apotheosis-among-the-imandwa', era: 'mythic-present', eraOrdering: 103, sources: [{ kind: 'primary', reference: 'Werner 1933; Kubandwa tradition' }] },
+      ],
+      domains: [
+        { id: 'successor-of-Ryangombe' },
+        { id: 'avenger-of-his-father' },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII; Banyaruanda Kubandwa-cult tradition' }], weight: 'primary' },
+        { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Werner 1933 ch. VIII' }], weight: 'primary' },
+      ],
+      notes: 'Son and named successor of the demigod Ryangombe in the Banyaruanda Kubandwa tradition. When Ryangombe was slain by a buffalo arranged by an unwed woman, Binego avenged him by killing the buffalo-woman and her child. Ryangombe named Binego his successor among the imandwa at the moment of death; he joins his apotheosed father among the imandwa-spirits on the volcano. Quartigod-tier (¼) as the son of the half-divine Ryangombe by an unnamed mother. Carried in the registry only as an externalRef on Ryangombe until materialized here.',
     },
 
     // ─── Pollux ──────────────────────────────────────────────────────────
