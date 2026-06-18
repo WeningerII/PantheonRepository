@@ -15475,7 +15475,7 @@ const buildPeopleSeed = () => {
         { id: 'creator-of-the-original-Diné-clans' },
       ],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Jóhonaaʼéí (the Sun, deity-class), father of Monster Slayer; the Sun is the foundational male-creator-figure of the Diné cosmology and is not registered as standalone entry within this 2-entry Diné budget', tradition: 'Diné' }, era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+        { kind: 'spouse', personId: 'dine_johonaai', era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
         { kind: 'mother-of', personId: 'dine_monster_slayer', era: 'hero-twins-monster-slaying' },
       ],
       iconography: {
@@ -15537,7 +15537,7 @@ const buildPeopleSeed = () => {
         { id: 'foundational-homeland-purifier' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Jóhonaaʼéí (the Sun, deity-class)', tradition: 'Diné' }, era: 'hero-twins-monster-slaying' },
+        { kind: 'father', personId: 'dine_johonaai', era: 'hero-twins-monster-slaying' },
         { kind: 'sibling', personId: 'dine_born_for_water', era: 'hero-twins-monster-slaying' },
       ],
       iconography: {
@@ -15558,7 +15558,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Zolbrod (1984); Matthews (1897); Haile (1938)' },
         ], weight: 'primary' },
       ],
-      notes: 'Hero Twin son of Asdzą́ą́ Nádleehé (Changing Woman) by Jóhonaaʼéí (the Sun); foundational homeland-purifier of the Diné Bahaneʼ. Demigod-tier per registry math (1 deity-parent registered, Sun-father external; if both deity-parents were registered would author as deity, but the 2-entry Diné budget defers Sun-father registration). Twin of Tó Bájíshchíní (Born for Water, fathered by a waterfall). With his twin, undertook the canonical pilgrimage to the Sun-Father\'s house in the eastern sky to claim paternity-recognition and receive weapons; underwent the foundational Diné four-tests (sweatlodge, knives, rocks, lightning) administered by the Sun before paternity-recognition. Slew the alien-monsters (Naayééʼ) preventing safe Diné occupation of the homeland — Yéʼiitsoh (the Big Giant, killed at Mount Taylor / Tsoodził by lightning-arrows from the Sun), Déélgééd, Tsé Niinájihí, Bináʼ Yéʼ Aghání, and others — with each slain monster\'s body becoming a recognizable landscape feature of the Diné homeland (Yéʼiitsoh\'s blood becoming the Mount Taylor lava-flow, etc.). The monster-slaying cycle is the foundational Diné homeland-purification narrative. Spared four old monsters (Cold, Hunger, Old Age, Poverty) at the request of the people — the canonical Diné theodicy-narrative explaining the persistence of these conditions in human life.',
+      notes: 'Hero Twin son of Asdzą́ą́ Nádleehé (Changing Woman) by Jóhonaaʼéí (the Sun); foundational homeland-purifier of the Diné Bahaneʼ. Demigod-tier per registry math: only his mother Changing Woman is carried in parentIds; his father Jóhonaaʼéí (the Sun) is now registered and linked as a father relation but deliberately kept out of parentIds, since two deity-parents would compute to deity-tier and override the authored demigod hero-tier. Twin of Tó Bájíshchíní (Born for Water, fathered by a waterfall). With his twin, undertook the canonical pilgrimage to the Sun-Father\'s house in the eastern sky to claim paternity-recognition and receive weapons; underwent the foundational Diné four-tests (sweatlodge, knives, rocks, lightning) administered by the Sun before paternity-recognition. Slew the alien-monsters (Naayééʼ) preventing safe Diné occupation of the homeland — Yéʼiitsoh (the Big Giant, killed at Mount Taylor / Tsoodził by lightning-arrows from the Sun), Déélgééd, Tsé Niinájihí, Bináʼ Yéʼ Aghání, and others — with each slain monster\'s body becoming a recognizable landscape feature of the Diné homeland (Yéʼiitsoh\'s blood becoming the Mount Taylor lava-flow, etc.). The monster-slaying cycle is the foundational Diné homeland-purification narrative. Spared four old monsters (Cold, Hunger, Old Age, Poverty) at the request of the people — the canonical Diné theodicy-narrative explaining the persistence of these conditions in human life.',
     },
 
     {
@@ -15661,6 +15661,57 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Wisdom-teacher and weaving-teacher of the Diné; resident at Spider Rock (the 750-foot sandstone spire in Canyon de Chelly National Monument, Arizona). Per the canonical Diné Bahaneʼ tradition, taught the Hero Twins (Monster Slayer and Born for Water) the protective spells and the navigation-techniques required for their pilgrimage to the Sun-Father\'s house — without Spider Woman\'s guidance, the Hero Twins would have failed the Sun-Father\'s four-tests and been unable to receive the lightning-arrow weapons needed for the homeland-purification monster-slaying. Subsequently taught Diné women the art of weaving — the foundational Diné textile-craft tradition that produces the canonical Diné rug-and-blanket weaving heritage. The "spider hole" left in the center of traditional Diné rugs (a small unfinished-section that allows the weaving-spirit to leave the rug) preserves the Spider Woman teaching-tradition explicitly. The Spider Woman figure is structurally parallel to but distinct from cognate-figures across other Indigenous American traditions: the Hopi Spider Grandmother (Kókyangwùuti), the Pueblo Spider Woman, and others — all preserving the broader Indigenous-American spider-as-wisdom-and-weaving-teacher mythologem. The Diné Spider Woman is treated in the registry as deity-class with parents=[] per pantheon-deity convention; her cosmological-totem identification (spider as her natural-form-and-totem) is treated as cosmogonic-class rather than spirit-class.',
+    },
+
+    // ── Genealogy march, Wave G7 (Diné): materialize Jóhonaaʼéí, the Sun —
+    //    husband of Changing Woman and father of the Hero Twin Monster Slayer,
+    //    formerly carried only as externalRefs under the old "2-entry Diné
+    //    budget." Linked to Monster Slayer by a `father` relation but kept out
+    //    of the twin's parentIds: two registered deity-parents would compute
+    //    Monster Slayer to deity-tier, overriding his authored demigod hero-tier. ──
+    {
+      id: 'dine_johonaai',
+      schemaVersion: 2,
+      name: {
+        primary: 'Jóhonaaʼéí',
+        alt: ['The Sun', 'Sun Bearer', 'Sun-Father', 'Tsóhanoai'],
+        transliterations: { 'dine-bizaad-navajo': 'Jóhonaaʼéí', 'english-translation': 'the One Who Rules the Day / Sun Bearer' },
+      },
+      type: 'deity', tradition: 'Diné', primaryTradition: 'Diné', sex: 'male', vitalStatus: 'living',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'cosmogonic-emergence' },
+      lifecycle: [
+        { typeStatus: 'deity', era: 'cosmogonic-emergence', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ; Zolbrod 1984; Matthews 1897' }], notes: 'The Sun-bearer who carries the sun (a turquoise disk) across the sky each day and hangs it on the western wall of his house at night; the foundational male luminary of the Diné cosmos, dwelling in a house of turquoise in the eastern sky.' },
+        { typeStatus: 'deity', era: 'hero-twins-monster-slaying', eraOrdering: 1, startEvent: 'fathering-of-Monster-Slayer-and-the-four-tests', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }], notes: 'Fathered Monster Slayer (Naayééʼ Neizghání) upon Changing Woman. When the Hero Twins came to his eastern house to claim paternity, he tested them with the four ordeals — sweatlodge, knives, rocks, and lightning; on their survival he acknowledged them and gave Monster Slayer the lightning-arrows and stone-knife to clear the homeland of monsters.' },
+      ],
+      domains: [
+        { id: 'sun-bearer-of-the-Dine-cosmos' },
+        { id: 'father-of-the-Hero-Twin-Monster-Slayer' },
+        { id: 'administrator-of-the-four-tests' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'dine_changing_woman', era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+        { kind: 'father-of', personId: 'dine_monster_slayer', era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+      ],
+      iconography: {
+        attributes: [
+          { id: 'turquoise-sun-disk', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ — the sun carried as a turquoise disk' }] },
+          { id: 'house-of-turquoise-in-the-eastern-sky', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+        ],
+      },
+      linguistic: {
+        etymology: 'Diné Bizaad Jóhonaaʼéí, conventionally glossed "the one who rules the day"; also called Sun Bearer (the bearer of the sun-disk). The older ethnographic literature (Matthews 1897) renders the Sun-bearer as Tsóhanoai.',
+        languageFamily: 'Na-Dene (Athabaskan, Southern Athabaskan, Diné Bizaad)',
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Diné Bahaneʼ (multiple Diné-community-authorized recensions)' },
+          { kind: 'primary', reference: 'Paul Zolbrod, Diné Bahaneʼ: The Navajo Creation Story (1984)' },
+          { kind: 'primary', reference: 'Washington Matthews, Navaho Legends (1897)' },
+        ], weight: 'primary' },
+      ],
+      notes: 'Jóhonaaʼéí, the Sun, of the Diné Bahaneʼ — the Sun-bearer who carries the turquoise sun-disk across the sky and dwells in a turquoise house in the eastern sky. Husband of Changing Woman (Asdzą́ą́ Nádleehé) and father of the Hero Twin Naayééʼ Neizghání (Monster Slayer). When the Hero Twins journeyed to his eastern house to claim their paternity, he subjected them to the four ordeals — sweatlodge, knives, rocks, lightning — and on their survival acknowledged them and armed Monster Slayer for the homeland-purification. Carried in the registry only as an externalRef on Changing Woman and Monster Slayer (under the former "2-entry Diné budget") until materialized here. Linked to Monster Slayer by a father relation but kept out of the twin\'s parentIds, since registering two deity-parents would compute Monster Slayer to deity-tier and override his authored demigod hero-tier.',
     },
 
     // ═══════════════════════════════════════════════════════════════════════════
