@@ -13326,10 +13326,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['finnish_lempi'],
+      parentRoles: { finnish_lempi: 'maternal' },
       temporal: { era: 'kalevala-mythic-prehistoric' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-to-Lempi-mortal-mother', sources: [{ kind: 'primary', reference: 'Kalevala Canto 11; Honko 1990' }], notes: 'Born to his mortal mother Lempi (the canonical Lempi being a mortal Finnish woman, no named father in most recensions). parentIds left empty per registry conventions for figures whose mother is unregistered within the 3-entry Finnish budget.' },
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-to-Lempi-mortal-mother', sources: [{ kind: 'primary', reference: 'Kalevala Canto 11; Honko 1990' }], notes: 'Born to his mortal mother Lempi (a mortal Finnish woman, with no named father in most recensions); parentIds now carries Lempi as his maternal parent.' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 1, startEvent: 'reckless-lover-and-warrior-cycles', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 11-15, 26-30' }], notes: 'The canonical reckless-lover-hero of the Kalevala: pursued multiple romantic-and-military adventures including the abduction of Kyllikki (Canto 11), the bride-quest at Pohjola (Cantos 13-15), the swan-of-Tuonela hunt (Cantos 14-15), and the bee-honey-resurrection by his mother (Canto 15).' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 2, startEvent: 'death-at-Tuonela-river-and-resurrection', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 14-15' }], notes: 'Killed at the Tuonela River (the canonical Finnish underworld-river) by the cattle-herder of Tuonela while attempting to shoot the Swan of Tuonela for Louhi\'s bride-quest task; his body was thrown into the river and chopped to pieces. His mother Lempi gathered all the pieces from the river-bottom using a copper rake, sewed them together, and resurrected him through the canonical bee-honey-from-heaven incantation — one of the most-mythopoetic episodes of the Kalevala. Subsequently lived through additional adventures including the Sampo-theft expedition, but the Tuonela-death-and-resurrection establishes his foundational dying-and-rising-mortal-hero status.' },
         { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 3 },
@@ -13341,7 +13342,7 @@ const buildPeopleSeed = () => {
         { id: 'sampo-theft-expedition-participant' },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Lempi (mortal Finnish woman; mother of Lemminkäinen; resurrected him from the Tuonela-river-pieces by bee-honey incantation)', tradition: 'Finnish' }, era: 'kalevala-mythic-prehistoric' },
+        { kind: 'mother', personId: 'finnish_lempi', era: 'kalevala-mythic-prehistoric' },
       ],
       iconography: {
         attributes: [
@@ -13373,10 +13374,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['finnish_kalervo'],
+      parentRoles: { finnish_kalervo: 'paternal' },
       temporal: { era: 'kalevala-mythic-prehistoric' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-into-Kalervo-Untamo-feud', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }], notes: 'Born to Kalervo (mortal Karelian-tribal chief) and an unnamed mortal mother during the canonical Kalervo-Untamo blood-feud — Untamo (Kalervo\'s brother) had massacred Kalervo\'s family except the pregnant mother and the unborn Kullervo, who was raised in slavery in Untamo\'s household. parentIds left empty per registry conventions for figures whose parents are unregistered within the 3-entry Finnish budget.' },
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-into-Kalervo-Untamo-feud', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }], notes: 'Born to Kalervo (mortal Karelian-tribal chief) and an unnamed mortal mother during the canonical Kalervo-Untamo blood-feud — Untamo (Kalervo\'s brother) had massacred Kalervo\'s family except the pregnant mother and the unborn Kullervo, who was raised in slavery in Untamo\'s household. parentIds carries his father Kalervo (mortal); the mother is unnamed in the tradition.' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 1, startEvent: 'preternatural-strength-as-infant', sources: [{ kind: 'primary', reference: 'Kalevala Canto 31' }], notes: 'Per canonical narrative, demonstrated preternatural strength as an infant (broke his cradle, broke the swaddling-clothes, etc. — the canonical "preternaturally-strong-tragic-hero" infancy-trope). Untamo attempted to kill the infant Kullervo through multiple means (drowning, burning, hanging) but the child survived all attempts. Was sold into slavery to Ilmarinen, where his destructive labor-failures (the destruction of the cattle-herd Kullervo was tasked with herding, transformed by his curse into wolves and bears that killed Ilmarinen\'s wife Pohjolan tytär — Louhi\'s daughter) caused further tragedy.' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 2, startEvent: 'unwitting-incest-with-sister', sources: [{ kind: 'primary', reference: 'Kalevala Canto 35' }], notes: 'Returning to his ancestral homeland, encountered an unknown maiden whom he seduced — discovering only after the act that she was his long-lost sister, separated from him in childhood by the Kalervo-Untamo feud. The sister, upon recognition, threw herself into the river to her death.' },
         { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 3, startEvent: 'suicide-on-his-sword', sources: [{ kind: 'primary', reference: 'Kalevala Canto 36' }], notes: 'After avenging Kalervo\'s family by killing Untamo and destroying his household, returned to find his ancestral home empty and his entire family dead. In the canonical Kalevala-tragic climax, addressed his sword and asked whether it would willingly drink his blood; the sword answered that it had drunk innocent blood and would drink guilty blood as readily. Kullervo fell on his sword in the canonical-Finnish suicide-of-the-tragic-hero, ending the Kullervo-cycle. The Kullervo-cycle is the most-extensively-tragic episode of the Kalevala and a foundational influence on subsequent Finnish-and-European tragic-literary tradition (J. R. R. Tolkien\'s "The Story of Kullervo," 1914-1915, an early influence on the Túrin Turambar tragedy of The Silmarillion; Jean Sibelius\'s Kullervo Symphony, Op. 7, 1892, the foundational Finnish-national-romantic symphonic work).' },
@@ -13389,7 +13391,7 @@ const buildPeopleSeed = () => {
         { id: 'foundational-Finnish-tragic-hero-template' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Kalervo (mortal Karelian-tribal chief; Kullervo\'s father; killed by Untamo in the canonical blood-feud)', tradition: 'Finnish' }, era: 'kalevala-mythic-prehistoric' },
+        { kind: 'father', personId: 'finnish_kalervo', era: 'kalevala-mythic-prehistoric' },
       ],
       iconography: {
         attributes: [
@@ -13412,6 +13414,58 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Tragic-slave-warrior of the Kalevala; son of Kalervo (mortal Karelian-tribal chief) and an unnamed mortal mother. Born during the canonical Kalervo-Untamo blood-feud — Untamo (Kalervo\'s brother) had massacred Kalervo\'s family except the pregnant mother and the unborn Kullervo, who was raised in slavery in Untamo\'s household. Demonstrated preternatural strength as an infant (broke his cradle, broke the swaddling-clothes); Untamo attempted to kill him through multiple means (drowning, burning, hanging) but the child survived all attempts. Sold into slavery to Ilmarinen, where his destructive labor-failures (the cattle-herd Kullervo was tasked with herding was transformed by his curse into wolves and bears that killed Ilmarinen\'s wife) caused further tragedy. Returning to his ancestral homeland, encountered an unknown maiden whom he seduced — discovering only after the act that she was his long-lost sister, separated from him in childhood by the Kalervo-Untamo feud; the sister threw herself into the river to her death upon recognition. After avenging Kalervo\'s family by killing Untamo, returned to find his ancestral home empty and his entire family dead, and fell on his own sword in the canonical-Finnish suicide-of-the-tragic-hero. The Kullervo-cycle is the most-extensively-tragic episode of the Kalevala and a foundational influence on subsequent Finnish-and-European tragic-literary tradition: J. R. R. Tolkien\'s "The Story of Kullervo" (1914-1915) was an early influence on the Túrin Turambar tragedy of The Silmarillion; Jean Sibelius\'s Kullervo Symphony Op. 7 (1892) is the foundational Finnish-national-romantic symphonic work and was the breakthrough composition that established Sibelius as the central Finnish national composer.',
+    },
+
+    // ── Genealogy march, Wave G10 (Finnish, Kalevala): materialize Kalervo
+    //    (Kullervo's father) and Lempi (Lemminkäinen's mother), both mortal and
+    //    both carried only as externalRefs. ──
+    {
+      id: 'finnish_kalervo', schemaVersion: 2,
+      name: { primary: 'Kalervo', alt: ['Kalervo', 'Father of Kullervo'], transliterations: { 'modern-finnish': 'Kalervo', etymology: 'Finnish Kalervo, possibly from kala "fish" + the -rvo suffix; the patronymic of Kullervo (Kalervon poika, "son of Kalervo").' } },
+      type: 'mortal', origin: 'canon', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'male', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'kalevala-mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'the-Kalervo-Untamo-blood-feud', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }], notes: 'A Karelian tribal chief; father of Kullervo. His brother Untamo made war on him and massacred his household, sparing only Kullervo\'s pregnant mother — the origin of the Kullervo tragedy. In the New Kalevala, Kalervo and most of his family are reunited or found dead by Kullervo on his return.' },
+        { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'Karelian-tribal-chief' },
+        { id: 'father-of-Kullervo-and-victim-of-the-Untamo-feud' },
+      ],
+      relations: [
+        { kind: 'father-of', personId: 'finnish_kullervo', era: 'kalevala-mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Elias Lönnrot, Kalevala (1849 New Kalevala) Cantos 31-36' }], weight: 'primary' },
+      ],
+      notes: 'Karelian tribal chief and father of the tragic hero Kullervo. The blood-feud in which his brother Untamo destroyed his household — sparing only Kullervo\'s pregnant mother — sets the entire Kullervo cycle in motion. Carried in the registry only as an externalRef on Kullervo until materialized here.',
+    },
+
+    {
+      id: 'finnish_lempi', schemaVersion: 2,
+      name: { primary: 'Lempi', alt: ['Mother of Lemminkäinen'], transliterations: { 'modern-finnish': 'Lempi', etymology: 'Finnish lempi "love, ardour"; the mother of the reckless lover-hero Lemminkäinen (Lempi-nen, "of Lempi").' } },
+      type: 'mortal', origin: 'canon', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'kalevala-mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'motherhood-of-Lemminkainen', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 11-15' }], notes: 'A mortal Finnish woman; mother of the reckless lover-hero Lemminkäinen. To her he entrusted the hairbrush that would bleed if he were slain.' },
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 1, startEvent: 'resurrection-of-Lemminkainen-at-Tuonela', sources: [{ kind: 'primary', reference: 'Kalevala Canto 15' }], notes: 'When Lemminkäinen was killed at the Tuonela River and his body chopped to pieces and thrown in, she raked every piece from the river-bottom with a copper rake, sewed him back together, and resurrected him with a bee-honey-from-heaven incantation — one of the most-mythopoetic episodes of the Kalevala (Gallen-Kallela\'s 1897 "Lemminkäinen\'s Mother").' },
+        { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'mother-of-Lemminkainen' },
+        { id: 'resurrector-from-the-Tuonela-river' },
+      ],
+      relations: [
+        { kind: 'mother-of', personId: 'finnish_lemminkainen', era: 'kalevala-mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 11-15' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Elias Lönnrot, Kalevala (1849 New Kalevala) Cantos 11-15' }], weight: 'primary' },
+      ],
+      notes: 'Mortal Finnish woman and mother of the lover-hero Lemminkäinen. Her gathering of her son\'s dismembered body from the river of the dead and his resurrection by a bee-honey incantation (Kalevala Canto 15) is among the most-celebrated episodes of the epic, immortalized in Akseli Gallen-Kallela\'s painting "Lemminkäinen\'s Mother" (1897). Carried in the registry only as an externalRef on Lemminkäinen until materialized here.',
     },
 
     {
