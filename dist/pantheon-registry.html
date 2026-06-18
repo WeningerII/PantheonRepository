@@ -21930,7 +21930,7 @@ const buildPeopleSeed = () => {
       ],
       domains: [{ id: 'sapa-inca-third' }, { id: 'left-handed-trait', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 15 — name etymology' }] }],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Cahua-Pata, mortal noblewoman of the Oma lineage; mother of Mayta Cápac', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
+        { kind: 'spouse', personId: 'inca_mama_cahua_pata', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
         { kind: 'father-of', personId: 'inca_mayta_capac', era: 'pre-imperial' },
       ],
       iconography: {
@@ -21968,8 +21968,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_lloque_yupanqui'],
-      parentRoles: { inca_lloque_yupanqui: 'paternal' },
+      parentIds: ['inca_lloque_yupanqui', 'inca_mama_cahua_pata'],
+      parentRoles: { inca_lloque_yupanqui: 'paternal', inca_mama_cahua_pata: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16; Garcilaso Bk. II Ch. 20' }], notes: 'Born at Cuzco; conventionally c. 1290 CE. Per Sarmiento, marked by precocious physical maturity (walked and spoke at three months, full-strength warrior-trait at one year).' },
@@ -21978,7 +21978,7 @@ const buildPeopleSeed = () => {
       ],
       domains: [{ id: 'sapa-inca-fourth' }, { id: 'precocious-warrior-trait', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] }, { id: 'alcabicas-conquest' }],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Tacucaray, mortal noblewoman; mother of Capac Yupanqui per Sarmiento', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
+        { kind: 'spouse', personId: 'inca_mama_tacucaray', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
         { kind: 'father-of', personId: 'inca_capac_yupanqui', era: 'pre-imperial' },
       ],
       iconography: {
@@ -22013,8 +22013,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_mayta_capac'],
-      parentRoles: { inca_mayta_capac: 'paternal' },
+      parentIds: ['inca_mayta_capac', 'inca_mama_tacucaray'],
+      parentRoles: { inca_mayta_capac: 'paternal', inca_mama_tacucaray: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }], notes: 'Born at Cuzco; conventionally c. 1320 CE.' },
@@ -22023,7 +22023,7 @@ const buildPeopleSeed = () => {
       ],
       domains: [{ id: 'sapa-inca-fifth' }, { id: 'first-road-construction' }],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Curi-Hilpay, mortal noblewoman of the Ayarmaca lineage; mother of Inca Roca', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
+        { kind: 'spouse', personId: 'inca_mama_curi_hilpay', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
         { kind: 'father-of', personId: 'inca_inca_roca', era: 'pre-imperial' },
       ],
       iconography: {
@@ -22058,8 +22058,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_capac_yupanqui'],
-      parentRoles: { inca_capac_yupanqui: 'paternal' },
+      parentIds: ['inca_capac_yupanqui', 'inca_mama_curi_hilpay'],
+      parentRoles: { inca_capac_yupanqui: 'paternal', inca_mama_curi_hilpay: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }], notes: 'Born at Cuzco; conventionally c. 1350 CE.' },
@@ -22072,7 +22072,7 @@ const buildPeopleSeed = () => {
         { id: 'panaca-of-Wikakirau' },
       ],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Micay, daughter of the Lord of Pataguaylla / Huayllacan; mother of Yahuar Huacac. Politically significant marriage securing alliance with the Huayllacan polity', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }] },
+        { kind: 'spouse', personId: 'inca_mama_micay', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }] },
         { kind: 'father-of', personId: 'inca_yahuar_huacac', era: 'pre-imperial' },
       ],
       iconography: {
@@ -22108,8 +22108,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_inca_roca'],
-      parentRoles: { inca_inca_roca: 'paternal' },
+      parentIds: ['inca_inca_roca', 'inca_mama_micay'],
+      parentRoles: { inca_inca_roca: 'paternal', inca_mama_micay: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19' }], notes: 'Born at Cuzco; conventionally c. 1380 CE.' },
@@ -22142,6 +22142,89 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Seventh Sapa Inca; son of Inca Roca and Mama Micay. The Yawar Waqaq ("Blood-Weeper") regnal name derives from the kidnapping-and-divine-sign childhood episode — an event-as-name pattern that becomes the model for the later imperial-defining regnal name of Pachacuti ("World-Overturner"). His marriage to Mama Chicya/Cuca-Cocollo of Ayarmaca settled the kidnapping conflict and integrated the Ayarmaca polity into the dynastic network. Conventional dating c. 1380 CE. The variant chronicle account of his death by assassination (rather than natural causes) is taken by some modern historians (Rostworowski) as preserving an underlying succession-conflict narrative subsequently smoothed over by the imperial-state-cult chronicle tradition.',
+    },
+
+    // ── Genealogy march, Wave G12 (Inca, pre-imperial qoyas): materialize the
+    //    four dynastic queen-consorts that Sarmiento names as the mother of the
+    //    next Sapa Inca but the registry carried only as spouse externalRefs.
+    //    All mortal noblewomen; each enters as a maternal parent where the
+    //    sum/max(2,n) math already counted the unlisted mother as 0, so the
+    //    sons' scion tiers are unchanged. (Mama Chicya → Viracocha Inca and
+    //    Mama Anahuarque → the unregistered Túpac Inka are left for later.) ──
+    {
+      id: 'inca_mama_cahua_pata', schemaVersion: 2,
+      name: { primary: 'Mama Cahua-Pata', alt: ['Mama Cava', 'Coya Cahua-Pata'], transliterations: { quechua: 'Mama Cahua-Pata', etymology: 'Quechua mama "lady, mother"; a noblewoman of the Oma lineage.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }], notes: 'Noblewoman of the Oma lineage; coya (principal wife) of the third Sapa Inca Lloque Yupanqui and mother of Mayta Cápac.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Lloque-Yupanqui' }, { id: 'mother-of-Mayta-Capac' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_lloque_yupanqui', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
+        { kind: 'mother-of', personId: 'inca_mayta_capac', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 16' }], weight: 'primary' }],
+      notes: 'Coya of the third Sapa Inca Lloque Yupanqui and mother of Mayta Cápac, per Sarmiento; a noblewoman of the Oma lineage. Mortal-tier. Carried in the registry only as a spouse externalRef on Lloque Yupanqui until materialized here.',
+    },
+
+    {
+      id: 'inca_mama_tacucaray', schemaVersion: 2,
+      name: { primary: 'Mama Tacucaray', alt: ['Mama Tancaray-yacchi', 'Coya Tacucaray'], transliterations: { quechua: 'Mama Tacucaray', etymology: 'Quechua mama "lady, mother"; coya of Mayta Cápac.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }], notes: 'Coya of the fourth Sapa Inca Mayta Cápac and mother of Capac Yupanqui per Sarmiento.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Mayta-Capac' }, { id: 'mother-of-Capac-Yupanqui' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_mayta_capac', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
+        { kind: 'mother-of', personId: 'inca_capac_yupanqui', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 17' }], weight: 'primary' }],
+      notes: 'Coya of the fourth Sapa Inca Mayta Cápac and mother of Capac Yupanqui per Sarmiento. Mortal-tier. Carried in the registry only as a spouse externalRef on Mayta Cápac until materialized here.',
+    },
+
+    {
+      id: 'inca_mama_curi_hilpay', schemaVersion: 2,
+      name: { primary: 'Mama Curi-Hilpay', alt: ['Mama Curihilpay', 'Coya Curi-Hilpay'], transliterations: { quechua: 'Mama Curi-Hilpay', etymology: 'Quechua mama "lady, mother" + curi (quri "gold"); a noblewoman of the Ayarmaca lineage.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }], notes: 'Noblewoman of the Ayarmaca lineage; coya of the fifth Sapa Inca Capac Yupanqui and mother of Inca Roca.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Capac-Yupanqui' }, { id: 'mother-of-Inca-Roca' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_capac_yupanqui', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
+        { kind: 'mother-of', personId: 'inca_inca_roca', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 18' }], weight: 'primary' }],
+      notes: 'Coya of the fifth Sapa Inca Capac Yupanqui and mother of Inca Roca, per Sarmiento; a noblewoman of the Ayarmaca lineage. Mortal-tier. Carried in the registry only as a spouse externalRef on Capac Yupanqui until materialized here.',
+    },
+
+    {
+      id: 'inca_mama_micay', schemaVersion: 2,
+      name: { primary: 'Mama Micay', alt: ['Coya Micay', 'Mama Micay of Huayllacan'], transliterations: { quechua: 'Mama Micay', etymology: 'Quechua mama "lady, mother"; daughter of the lord of the Huayllacan polity.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }], notes: 'Daughter of the lord of Pataguaylla / Huayllacan; coya of the sixth Sapa Inca Inca Roca and mother of Yahuar Huacac. The marriage secured a politically significant alliance with the Huayllacan polity — though Yahuar Huacac was later kidnapped by the rival Ayarmaca.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Inca-Roca' }, { id: 'mother-of-Yahuar-Huacac' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_inca_roca', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }] },
+        { kind: 'mother-of', personId: 'inca_yahuar_huacac', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 19; Cieza de León, Crónica del Perú Pt. II' }], weight: 'primary' }],
+      notes: 'Coya of the sixth Sapa Inca Inca Roca and mother of Yahuar Huacac; daughter of the lord of Huayllacan, her marriage sealing an Inca-Huayllacan alliance. Mortal-tier. Carried in the registry only as a spouse externalRef on Inca Roca until materialized here.',
     },
 
     {
