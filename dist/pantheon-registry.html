@@ -14146,6 +14146,68 @@ const buildPeopleSeed = () => {
       notes: 'Major Tuatha Dé Danann figure; samildánach (master of all crafts) and lámfada (long-armed). King of the Tuatha Dé during the Second Battle of Mag Tuired campaign, when he killed his maternal grandfather Balor of the Evil Eye with a sling-stone through the eye. Inaugurator of the Lughnasadh harvest assembly at Tailtin in honor of his foster-mother Tailtiu. Continental cognate Lugus attested across Gaul and Iberia (Lugdunum, Lugudunum, Luguvalium, etc.). Father of Cú Chulainn by Deichtire under the dominant Compert Con Culainn tradition.',
     },
 
+    // ── Genealogy march, Wave G16 (Irish, Ulster Cycle): materialize three
+    //    major figures carried only as externalRefs — Emer (Cú Chulainn's wife),
+    //    Conchobar mac Nessa (king of Ulaid, Deichtire's brother), and Fergus
+    //    mac Róich (exiled former king, Sualtam's brother). All mortal; the
+    //    links are spouse/sibling, so no tier effects. ──
+    {
+      id: 'irish_emer', schemaVersion: 2,
+      name: { primary: 'Emer', alt: ['Emer ingen Forgaill', 'Emer of the Six Gifts'], transliterations: { 'old-irish': 'Emer', etymology: 'Old Irish Emer; daughter of Forgall Manach; the tradition credits her with the six gifts of beauty, voice, sweet speech, needlework, wisdom, and chastity.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'ulster-cycle' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Tochmarc Emire (The Wooing of Emer)' }], notes: 'Daughter of Forgall Manach; wooed by Cú Chulainn, who undertook the training with Scáthach and the feats of the Tochmarc Emire to win her over her father\'s opposition.' },
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 1, startEvent: 'marriage-to-Cu-Chulainn', sources: [{ kind: 'primary', reference: 'Tochmarc Emire; Serglige Con Culainn; Aided Con Culainn' }], notes: 'Wife of Cú Chulainn through his career; her jealousy and reconciliation in the Fand episode (Serglige Con Culainn) and her lament at his death are central Ulster-Cycle scenes.' },
+        { vitalStatus: 'dead', era: 'ulster-cycle', eraOrdering: 2 },
+      ],
+      domains: [{ id: 'wife-of-Cu-Chulainn' }, { id: 'lady-of-the-six-gifts' }],
+      relations: [
+        { kind: 'spouse', personId: 'irish_cuchulainn', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Tochmarc Emire (The Wooing of Emer); Serglige Con Culainn; Aided Con Culainn' }], weight: 'primary' }],
+      notes: 'Wife of Cú Chulainn and daughter of Forgall Manach; the "lady of the six gifts" of the Tochmarc Emire. Her jealousy of the Otherworld-woman Fand and her great lament at Cú Chulainn\'s death are among the most-quoted passages of the Ulster Cycle. Mortal-tier. Carried in the registry only as an externalRef on Cú Chulainn until materialized here.',
+    },
+
+    {
+      id: 'irish_conchobar', schemaVersion: 2,
+      name: { primary: 'Conchobar mac Nessa', alt: ['Conchobar', 'Conor mac Nessa', 'King of Ulaid'], transliterations: { 'old-irish': 'Conchobar mac Nessa', etymology: 'Old Irish Conchobar; matronymic "mac Nessa" (son of Ness), unusual in naming him for his mother.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'male', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'ulster-cycle' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge; Longes mac nUislenn' }], notes: 'King of Ulaid at Emain Macha during Cú Chulainn\'s lifetime; brother (in the dominant tradition) of Deichtire, Cú Chulainn\'s mother. His betrayal of the guarantee over the Sons of Uisliu (driving Fergus into exile) and his rule through the Táin are central to the cycle.' },
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 1, startEvent: 'death-by-the-brain-ball-of-Mes-Gegra', sources: [{ kind: 'primary', reference: 'Aided Chonchobair' }], notes: 'Died, in the canonical account, when the calcified brain-ball of Mes Gegra (lodged in his skull) burst on the day he raged at the news of the Crucifixion.' },
+        { vitalStatus: 'dead', era: 'ulster-cycle', eraOrdering: 2 },
+      ],
+      domains: [{ id: 'king-of-Ulaid-at-Emain-Macha' }, { id: 'brother-of-Deichtire' }],
+      relations: [
+        { kind: 'sibling', personId: 'irish_deichtire', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge; Longes mac nUislenn; Aided Chonchobair' }], weight: 'primary' }],
+      notes: 'King of Ulaid at Emain Macha through the Ulster Cycle; brother of Deichtire and so maternal uncle of Cú Chulainn. His treacherous breaking of the safe-conduct of the Sons of Uisliu drove Fergus mac Róich and other warriors into exile to Connacht — a defection that shapes the Táin. Died when the embedded brain-ball of Mes Gegra burst as he raged at news of Christ\'s death. Mortal-tier. Carried in the registry only as an externalRef on Deichtire until materialized here.',
+    },
+
+    {
+      id: 'irish_fergus', schemaVersion: 2,
+      name: { primary: 'Fergus mac Róich', alt: ['Fergus mac Roich', 'Fergus', 'Exiled King of Ulaid'], transliterations: { 'old-irish': 'Fergus mac Róich', etymology: 'Old Irish Fergus "manly vigour"; patronymic mac Róich.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'male', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'ulster-cycle' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; Longes mac nUislenn' }], notes: 'Former king of Ulaid, displaced by Conchobar through the trick of Ness; brother of Sualtam (Cú Chulainn\'s mortal father). After Conchobar\'s betrayal of the Sons of Uisliu, whom Fergus had guaranteed, he went into exile in Connacht.' },
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 1, startEvent: 'exile-to-Connacht-and-the-Tain', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge' }], notes: 'In exile he became a leader of Medb and Ailill\'s host against Ulster in the Táin and the lover of Medb; he confronted his foster-son Cú Chulainn but withdrew under an earlier pact. Famed for his great sword Caladbolg.' },
+        { vitalStatus: 'dead', era: 'ulster-cycle', eraOrdering: 2 },
+      ],
+      domains: [{ id: 'exiled-former-king-of-Ulaid' }, { id: 'brother-of-Sualtam' }],
+      relations: [
+        { kind: 'sibling', personId: 'irish_sualtam', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Ulster Cycle genealogies' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; Longes mac nUislenn; Fled Bricrenn' }], weight: 'primary' }],
+      notes: 'Exiled former king of Ulaid and brother of Sualtam; foster-father of Cú Chulainn and, in exile, leader in Medb and Ailill\'s host against Ulster and the lover of Medb. His outrage at Conchobar\'s betrayal of the Sons of Uisliu drove his defection to Connacht, and his withdrawal from single combat with Cú Chulainn in the Táin (honoring an earlier pact) is a pivotal episode. Wielder of Caladbolg. Mortal-tier. Carried in the registry only as an externalRef on Sualtam until materialized here.',
+    },
+
     // ─── Deichtire — mortal princess of Ulaid, mother of Cú Chulainn ─────
     {
       id: 'irish_deichtire', schemaVersion: 2,
@@ -14165,7 +14227,7 @@ const buildPeopleSeed = () => {
         mythicPrecision: 'generation-bracket',
       },
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Conchobar mac Nessa (king of Ulster during Cú Chulainn\'s lifetime)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }], notes: 'Sister of Conchobar mac Nessa, king of Ulaid. Conchobar entry pending.' },
+        { kind: 'sibling', personId: 'irish_conchobar', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }], notes: 'Sister of Conchobar mac Nessa, king of Ulaid.' },
         { kind: 'spouse', personId: 'irish_sualtam', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn (the late-stratum continuation); Táin Bó Cúailnge' }], notes: 'Married Sualtam mac Róich; he is the legal/social father of Cú Chulainn (and biological father per minority readings).' },
         { kind: 'lover', personId: 'irish_lugh', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn (Lebor na hUidre)' }], notes: 'Conceived Cú Chulainn by Lugh at Brug na Bóinne (Newgrange) when Conchobar\'s hunting party took shelter there.' },
       ],
@@ -14194,7 +14256,7 @@ const buildPeopleSeed = () => {
         mythicPrecision: 'generation-bracket',
       },
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Fergus mac Roich (former king of Ulster, exiled after the betrayal of the Sons of Uisliu, foster-father and lover of Medb)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; multiple Ulster Cycle texts' }], notes: 'Brother of Fergus mac Róich, the exiled former king of Ulaid. Fergus entry pending.' },
+        { kind: 'sibling', personId: 'irish_fergus', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; multiple Ulster Cycle texts' }], notes: 'Brother of Fergus mac Róich, the exiled former king of Ulaid.' },
         { kind: 'spouse', personId: 'irish_deichtire', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }] },
         { kind: 'foster-parent', personId: 'irish_cuchulainn', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }], notes: 'Foster/legal father of Cú Chulainn under the dominant Lugh-paternity reading; biological father under minority Sualtam-paternity readings (some text-strata of Compert Con Culainn).' },
       ],
@@ -14262,7 +14324,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Emer (wife of Cú Chulainn, daughter of Forgall Manach)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }], notes: 'Emer ingen Forgaill. Emer entry pending.' },
+        { kind: 'spouse', personId: 'irish_emer', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }], notes: 'Emer ingen Forgaill, his wife.' },
         { kind: 'lover', externalRef: { name: 'Aífe (warrior-woman of Alba, lover of Cú Chulainn, mother of Connla)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire; Aided Óenfhir Aífe' }], notes: 'Aífe, warrior-woman of Alba, sister-rival of Scáthach. Mother of Connla. Aífe entry pending.' },
         { kind: 'father-of', personId: 'irish_connla', era: 'ulster-cycle', endingEvent: 'killing-by-Cú-Chulainn-at-the-ford', sources: [{ kind: 'primary', reference: 'Aided Óenfhir Aífe' }] },
         { kind: 'killer-of', personId: 'irish_connla', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Aided Óenfhir Aífe' }], notes: 'Killed his unknowing son with the Gáe Bulg at the ford; recognized him only as he was dying.' },
