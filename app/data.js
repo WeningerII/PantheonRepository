@@ -214540,6 +214540,147 @@ const applyEpithets = (peopleMap, extra = EPITHETS) => {
 //  Runs pre-migrate; touches no relation/parent/tier data.
 // ═════════════════════════════════════════════════════════════════════════════
 const ETYMOLOGY = {
+  // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
+  //    each figure's notes; formalized here and cited to the standard corpus —
+  //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
+  //    remaining well-documented Greek/Roman names (Beekes EDG, de Vaan EDL).
+  //    Honest "Pre-Greek / no secure etymology" where that is the scholarly state.
+  "lusitanian_arentia": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Arentia, the feminine counterpart of Arentius and, like him, generally derived from an Indo-European water-stem (the *ar- element widespread in Hispano-Celtic hydronymy), consistent with the watery character of many Lusitanian divine pairs. Known only from epigraphy; no fuller analysis is secured.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_arentius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Arentius (with the epithets Amrunaeco, Arantoniceo, Tanginiciaeco, Cronisensi). The theonym is usually traced to an Indo-European water-root (*ar-), the Arentius–Arentia pair forming a god-and-consort of the spring/stream type common in the Lusitanian-Vettonian zone; the name is known only from epigraphy.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_ataecina": {
+    "languageFamily": "Indo-European (Hispano-Celtic), contested",
+    "etymology": "Latin votive Ataecina / Ataegina. The native etymon is debated: the favoured analysis is Hispano-Celtic *attegina / *atte-genā 'the reborn one' (prefix ate- 'again' + the root *gen- 'to be born'), suiting her chthonic interpretatio as Proserpina in the Mérida defixio; a rival derivation links the name to a 'goat' word, matching the goat as her sacred animal.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }, { "kind": "primary", "reference": "CIL II 462 (Mérida defixio)" }]
+  },
+  "lusitanian_bandua": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Bandua / Bandi / Bandue (Galaico-Lusitanian dative). Most often derived from the Indo-European root *bhendh- 'to bind', construing the god as binder and warden of the community; the geographic split (Bandue/Bandua north of the Douro, Bandi/Bande to the south) reflects dialectal variation.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, Los dioses de la Hispania céltica (Madrid 2002)" }]
+  },
+  "lusitanian_bormanicus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Bormanico (dative). From the Celtic thermal-spring root *bormo- / *borvo- 'to boil, bubble' — the same element seen in Gaulish Borvo/Bormo and the Bormani — marking him as the god of the hot springs at Caldas de Vizela; cognate with Gaulish Borvo.",
+    "sources": [{ "kind": "secondary", "reference": "A. Tranoy, La Galice romaine (1981); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_crouga": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested in the Lamas de Moledo inscription (Crougeai, dative). Generally derived from the Celtic root *krouka- 'mound, cairn, heap of stones', linking the god to the sacred cairn; the related Crougin Toudadigoe in NW Hispania is a community deity. Some scholars doubt whether the form is a theonym at all.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (2002)" }]
+  },
+  "lusitanian_duberdicus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Duberdico. The traditional reading derives the name from the Celtic root *dubro- 'water' (cf. Gaulish dubron, Welsh dwfr), marking a water-numen; J. de Alarcão has instead proposed a connection with a fortress-name. The single inscription leaves the question open.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975)" }]
+  },
+  "lusitanian_endovelicus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Latin votive Endovellicus, the most-attested indigenous god of Roman Lusitania (São Miguel da Mota). Most often analysed as Hispano-Celtic *ande-wellicos, with the intensive prefix ande- 'very' on a base read either as *wel- 'good' ('the very good one') or as a 'dark/nether' element fitting his oracular-healing, partly chthonic cult; the etymon remains debated.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_iccona": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Iccona Loiminna (Cabeço das Fráguas). Reconstructed as *Ekwonā 'she of the horse', the Hispano-Celtic cognate of Gaulish Epona, from the Indo-European horse-word *ekwos; the epithet Loiminna is glossed 'shining'.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (2002)" }]
+  },
+  "lusitanian_laebo": {
+    "languageFamily": "Indo-European (Lusitanian), etymology unresolved",
+    "etymology": "Attested Laebo / Labbo (dative), at Cabeço das Fráguas and Plasencia. The etymology — and even the deity's number and gender — is unresolved; no secure derivation has been established, and the name is recorded honestly as opaque.",
+    "sources": [{ "kind": "secondary", "reference": "K. T. Witczak (1999); Palaeohispanica / Dialnet study (2021)" }]
+  },
+  "lusitanian_munidis": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Munidi / Munis. Usually derived from an Indo-European *men- / *mon- 'to project; hill', characterising a god of heights and high places; a rival derivation connects the name with Latin moneo 'to warn'. Known from central-Lusitanian dedications only.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975)" }]
+  },
+  "lusitanian_nabia": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Latin votive Nabia. From the Indo-European *nāu- / *nabh- 'water-course, stream', the element surviving in the hydronyms Navia, Neiva and Nabão; Olivares Pedreño suspects more than one goddess hides behind the name. The Fonte do Ídolo inscription binds her to Tongoe (TONGOE NABIAGOI).",
+    "sources": [{ "kind": "secondary", "reference": "A. Tranoy, La Galice romaine (1981); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_quangeius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Quangeio (dative). From the Indo-European *kuwon- 'dog' (Hispano-Celtic reflex *kwank- / kuno-); the hound-god's psychopomp/traveller characterisation is a scholarly inference from the canine root, not from any surviving myth or iconography.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_reve": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Reve / Reo (dative). Two derivations compete: Prósper connects the name with the Indo-European *deiwo- complex, reading a sky / 'Jupiter-like' high god; others derive it from *Hreu- 'to flow', a water-god (note 'Reo Bormarico' beside Bormanicus). The Cabeço das Fráguas invocatio is the key attestation.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (Salamanca 2002)" }]
+  },
+  "lusitanian_runesocesius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Runesocesius (Évora). The 'lord of the javelin' reading depends on segmenting the name as Runesus + Cesius, the latter from Celtic *gaiso- 'spear, javelin' (cf. gaesum); a single inscription, with no iconography or narrative.",
+    "sources": [{ "kind": "secondary", "reference": "J. M. Blázquez Martínez, Primitivas religiones ibéricas (Madrid 1983)" }]
+  },
+  "lusitanian_tongoenabiagus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Tongoe Nabiagoi (Fonte do Ídolo, Braga), the name bound to that of Nabia. The first element is connected with the Indo-European *tong- 'to swear, declare' (cf. Latin tongēre, Old Irish tongu 'I swear'), giving an oath-god of the spring; the oath-function is an etymological inference.",
+    "sources": [{ "kind": "secondary", "reference": "A. Rodríguez Colmenero, study of the Fonte do Ídolo; Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_trebaruna": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Trebaruna / Trebarune. Analysed as Celtic *trebo- 'house, dwelling' + *runā 'secret' or 'protectress' — the guardian of the home and community; generally taken as a goddess and paired with Reve.",
+    "sources": [{ "kind": "secondary", "reference": "J. Leite de Vasconcelos, Religiões da Lusitânia (Lisbon 1905)" }]
+  },
+  "lusitanian_trebopala": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Trebopala (vocative, in the Cabeço das Fráguas invocatio). From Celtic *trebo- 'dwelling' + a second element *-pala, read either as 'protector' or as 'flat stone / sacred ground'; probably a goddess of the hearth and community.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, 'We give you this lamb, o Trebopala!', Palaeohispanica (2014); Lenguas y religiones prerromanas (2002)" }]
+  },
+  // ── Greek / Roman remainder ──
+  "greek_pelias": {
+    "languageFamily": "Ancient Greek (folk-etymology from πελιός)",
+    "etymology": "Greek Πελίας (Pelías). The ancients derived the name from πελιός / πελιδνός 'livid, blue-black', explaining it from the bruise (πελιόν) a mare's kick left on his face when he was exposed as an infant; modern scholarship treats this as a transparent folk-etymology built on the adjective πελιός.",
+    "sources": [{ "kind": "primary", "reference": "Apollodorus 1.9.8" }, { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. πελιός" }]
+  },
+  "greek_sarpedon_cretan": {
+    "languageFamily": "Pre-Greek / Anatolian",
+    "etymology": "Greek Σαρπηδών (Sarpēdṓn). The suffix -ηδών is a characteristic Pre-Greek formant, and the name is widely connected with the Lycian onomastic sphere (cf. the Lycian Sarpedon), consistent with the figure's Anatolian associations. No Indo-European Greek etymology is secured.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the -ηδών suffix and Pre-Greek substrate" }]
+  },
+  "greek_sarpedon_lycian": {
+    "languageFamily": "Pre-Greek / Anatolian",
+    "etymology": "Greek Σαρπηδών (Sarpēdṓn), borne by the Lycian ally of Troy. The -ηδών suffix is a typical Pre-Greek formant and the name belongs to the Lycian–Anatolian onomastic sphere; no secure Indo-European Greek derivation exists.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the -ηδών suffix and Pre-Greek substrate" }]
+  },
+  "greek_tityus": {
+    "languageFamily": "Pre-Greek substrate",
+    "etymology": "Greek Τιτυός (Tityós), the earth-born giant punished in Tartarus. The reduplicated shape and the absence of a clear Indo-European base mark the name as Pre-Greek; no secure etymology has been established.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_zethus": {
+    "languageFamily": "Pre-Greek substrate",
+    "etymology": "Greek Ζῆθος (Zêthos), twin of Amphion and co-founder of Thebes. Ancient sources punningly linked the name with ζητέω 'to seek' (from Antiope's flight), but this is folk-etymology; the name is generally taken as Pre-Greek.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_calais": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek",
+    "etymology": "Greek Κάλαϊς (Kálais), twin of Zetes among the winged Boreads. The name has no secure Indo-European etymology; like much of the Boread–Thracian onomastic material it is best assigned to the Pre-Greek substrate, the ancient connection to their father's north-wind nature being thematic rather than linguistic.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_zetes": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek",
+    "etymology": "Greek Ζήτης (Zḗtēs), twin of Calais. Ancient folk-etymology connected the name with ζητέω 'to seek/pursue', fitting the Boreads' pursuit of the Harpies, but this is not a secure derivation; the name is generally assigned, with Calais, to the Pre-Greek substrate.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "roman_remus": {
+    "languageFamily": "Indo-European (Italic, Latin)",
+    "etymology": "Latin Remus. The name is bound to that of Rōma / Rōmulus: most analyses derive both from a stem *Rōmo-, with Remus a secondary form beside the diminutive Rōmulus. Ancient etymologies linking Remus to a 'delay' root (cf. remorari) are folk-etymological; T. P. Wiseman reads the twin and his name as a relatively late elaboration of the foundation legend.",
+    "sources": [{ "kind": "secondary", "reference": "M. de Vaan, Etymological Dictionary of Latin (2008), s.v. Roma" }, { "kind": "secondary", "reference": "T. P. Wiseman, Remus: A Roman Myth (1995)" }]
+  },
+  "roman_modius_fabidius": {
+    "languageFamily": "Indo-European (Sabellic / Sabine)",
+    "etymology": "The name Modius Fabidius is Sabellic-Sabine in form; the sources present the founder of Cures through the Sabine origin-narrative rather than offering a linguistic derivation, and no secure etymology of the name has been established. It stands outside the well-analysed Latin onomastic stock.",
+    "sources": [{ "kind": "primary", "reference": "Dionysius of Halicarnassus, Roman Antiquities 2.48-49" }]
+  },
   "greek_hesiod_zeus": {
     "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
     "etymology": "Greek Ζεύς (Zeús), genitive Διός (Diós), continues Proto-Indo-European *Dyēus (ph₂tḗr) \"Sky-Father / god of the bright daytime sky,\" from the root *dyew- \"to shine; sky, day.\" The same etymon yields Latin Iū-piter (< *Dyēu-pater), Vedic Sanskrit Dyaús (Pitā) and the common noun *deiwos \"god\" (Latin deus). The Greek nominative reflects *Dyēus > Zdeús > Zeús; the oblique stem Δι(ϝ)- preserves the original *diw-.",
