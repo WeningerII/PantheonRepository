@@ -216843,6 +216843,123 @@ const ETYMOLOGY = {
     "etymology": "Santali thakur 'lord' (an Indo-Aryan loanword) + jiu 'life, soul', i.e. 'Lord of life' (the life-giver), an epithet of the Santal supreme creator god.",
     "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): thakur 'lord' (IA loan), jiu 'life, soul'" }, { "kind": "encyclopaedia", "reference": "'Santals', Encyclopedia.com (Thakur Jiu = 'life giver', supreme creator)" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Thakur Jiu the supreme god" }]
   },
+  // ══ Alphabetical sweep batch 12 (indices 815-894: Scythian, Selkup, Semang, Senufo,
+  //    Serer, Shona, Songhai, Sotho-Tswana, Shipibo, Tagalog, Taino) ══
+  "scythian_arpoxais": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Hellenised Ἀρπόξαϊς (Arpoxais), second of the three sons of Targitaos in Herodotus 4.5-6. The second element -xais securely reflects Old Iranian *xšaya- 'rule, ruling (over), king', the same element seen in the brothers' names Lipoxais and Kolaxais. The first element Arpo- is uncertain; Abaev proposed *arpa- (< *apra-) 'water/deep', whence the gloss 'Deep King', but this reconstruction is not secure. Only the royal/ruler element is firmly attested.",
+    "sources": [{ "kind": "etymological dictionary / reference grammar", "reference": "R. Schmitt, 'Andere altiranische Dialekte' (Skythisch), in R. Schmitt (ed.), Compendium Linguarum Iranicarum (Wiesbaden 1989), pp. 86-94, esp. 92-94: the names of Targitaos' sons 'probably contain the Iranian word xšay- \"to rule\"; the initial elements are more uncertain'." }, { "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): the element *xšaya- 'ruling over' appears in Arpó-, Lipó- and Kolá-xaïs." }, { "kind": "etymological dictionary", "reference": "V. I. Abaev, Historical-Etymological Dictionary of the Ossetic Language / 'Scythian Language' essay: reconstruction of the Scythian onomastic lexicon, with the -xais names analysed via Iranian *xšaya- 'king' (first element Arpo- < *arpa-/*apra- 'water', proposed, uncertain)." }]
+  },
+  "scythian_lipoxais": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Hellenised Λιπόξαϊς (Lipoxais), the firstborn of the three sons of Targitaos in Herodotus 4.5-6. The second element -xais securely reflects Old Iranian *xšaya- 'rule, ruling (over), king' (so Schmitt; Encyclopaedia Iranica), shared with Arpoxais and Kolaxais. The first element Lipo- is uncertain; Abaev proposed *ripa- 'mountain/height', whence the gloss 'Mountain King', but the initial element is explicitly regarded by Schmitt as not securely reconstructable. Only the royal/ruler element is firmly attested.",
+    "sources": [{ "kind": "etymological dictionary / reference grammar", "reference": "R. Schmitt, 'Andere altiranische Dialekte' (Skythisch), in R. Schmitt (ed.), Compendium Linguarum Iranicarum (Wiesbaden 1989), pp. 86-94, esp. 92-94: the sons' names 'probably contain the Iranian word xšay- \"to rule\"; the initial elements are more uncertain'." }, { "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): the element *xšaya- 'ruling over' is identified in Lipó-, Arpó- and Kolá-xaïs (sons of Targitaos, Hdt. 4.5.2)." }, { "kind": "etymological dictionary", "reference": "V. I. Abaev, Historical-Etymological Dictionary of the Ossetic Language / 'Scythian Language' essay: -xais names from Iranian *xšaya- 'king'; first element Lipo- < *ripa- 'mountain' proposed (uncertain)." }]
+  },
+  "scythian_skyles": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Σκύλης (Skyles), 5th-c. BCE Scythian king (Hdt. 4.78-80; his name is also attested on a contemporary gold signet ring, ΣΚΥΛΕΩ). The name Hellenises Scythian *Skula, a later dialectal form of the ethnonym *Skuδa- 'archer' after the regular Scythian sound change ð > l; hence the name means 'archer / the Scythian'. Same Iranian etymon as the self-name underlying Skythes/Skolotoi.",
+    "sources": [{ "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): Scythian *Skuδa- > later *Skula via ð > l; the king's name Σκύλης reflects this *Skula 'archer'." }, { "kind": "monograph / onomastic study", "reference": "O. Szemerényi, Four Old Iranian Ethnic Names (Vienna 1980), with R. Schmitt, Die skythischen Personennamen bei Herodot (2003): the ethnonym/onym *Skuδa- 'shooter, archer' and its dialectal reflex *Skula underlying Σκύλης." }]
+  },
+  "scythian_skythes": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Σκύθης (Skythes), Greek-transmitted eponym of the Scythians (Hdt. 4.10), is the personal-name form of the people's self-designation. The ethnonym is reconstructed as Old Iranian *Skuda- / *Skuδa- 'shooter, archer' (Greek Skýthēs rendering the spirantised dental [ð]), from PIE *(s)keud- 'to shoot, throw'. The etymology is debated (the precise source form is not certain) but is the standard, widely accepted scholarly analysis.",
+    "sources": [{ "kind": "monograph", "reference": "O. Szemerényi, Four Old Iranian Ethnic Names: Scythian – Skudra – Sogdian – Saka (Sitzungsberichte der Österreichischen Akademie der Wissenschaften, phil.-hist. Kl. 371; Vienna 1980): self-name *Skuda- 'shooter, archer' from IE *(s)kewd-/*skeud-." }, { "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): Greek Skýthēs reflects *Skuδa-, 'shooter, archer', from PIE *skeud-; the precise reconstruction is noted as not fully certain." }]
+  },
+  "selkup_ilyntyl_kota": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Selkup Ilyntyl kota, conventionally rendered 'Life(-giving) Old Woman' / 'Living Old Woman'. The head noun kota (Northern Selkup qota, as in ima-qota 'old woman') means 'old woman'; the modifier ilyntyl is built on the Selkup verbal root ilɨ- 'to live, life', so the compound names her as the old woman who governs life (she sends souls to be born and aids childbirth). Documented in the Encyclopaedia of Uralic Mythologies treatment of Selkup myth.",
+    "sources": [{ "kind": "book", "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4). Budapest: Akadémiai Kiadó. — Ilyntyl Kota as 'Living Old Woman' / life-mother." }, { "kind": "book", "reference": "Helimski, E. 'Selkup', in D. Abondolo (ed.), The Uralic Languages (1998). — Selkup (ima-)qota 'old woman'; verbal root ilɨ- 'to live'." }]
+  },
+  "selkup_loz": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Selkup loz (pl. lozy), the generic term for a 'spirit' — any of the supernatural inhabitants of the otherworlds, malevolent or benevolent, against whom shamans contend. It is not a single named god but the Selkup common noun for spirit-beings, as recorded in Selkup ethnography and folklore.",
+    "sources": [{ "kind": "book", "reference": "Tuchkova, N. A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4). — loz/lozy as the class of spirits in the three-tier Selkup cosmos." }, { "kind": "scholar", "reference": "E. D. Prokofyeva, ethnography of Tas Selkup religion (mid-20th c.). — loz spirits." }]
+  },
+  "selkup_nom": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Selkup Nom 'sky, firmament' and, by extension, the supreme sky-god. It continues Proto-Samoyedic *num 'sky; (sky-)god', the same etymon as Nenets/Yurak Num; the word denotes literally 'the heaven above' and the highest deity who resides there. Cognate above-/sky- forms (nu-, num) recur across Samoyedic and in neighbouring Ob-Ugric.",
+    "sources": [{ "kind": "reference-work", "reference": "'Samoyed Religion', Encyclopedia of Religion (Encyclopedia.com). — num 'sky/firmament' and 'highest god', reconstructible for Proto-Samoyed." }, { "kind": "book", "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4). — Selkup Nom, sky-god cognate with Samoyed Num." }]
+  },
+  "semang_naga": {
+    "languageFamily": "Austroasiatic (Aslian); loanword from Indo-Aryan",
+    "etymology": "Semang naga' (with final glottal stop), the world-supporting earth-serpent, is a Malay loan ultimately from Sanskrit nāgá 'snake, serpent, cobra'. The word was borrowed into Semang (among numerous Malay loans in the Aslian languages) and applied to the chthonic serpent on whose back the earth rests, whose shifting causes subterranean waters to rise.",
+    "sources": [{ "kind": "reference-work", "reference": "'Negrito Religions: Negritos of the Malay Peninsula', Encyclopedia of Religion (Encyclopedia.com). — the earth rests on the serpent Naga; Semang cosmology." }, { "kind": "book", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie (1957). — Naga' as the earth-supporting serpent / earth-deity." }]
+  },
+  "senufo_madebele": {
+    "languageFamily": "Niger-Congo (Gur/Senufo)",
+    "etymology": "Senufo madebele 'bush spirits' (singular madeo), the capricious tutelary nature-genies of the bush and water who must be propitiated through diviners. The form shows the regular Senufo singular~plural class alternation (sing. madeo : pl. madebele), parallel to ndeo : ndebele and tugu : tugubele in cognate dialect terms for the same divinatory spirits.",
+    "sources": [{ "kind": "book", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981). — madebele/madeo, the bush spirits and their cult." }, { "kind": "reference-work", "reference": "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History, 'Divination and Senufo Sculpture in West Africa'. — ndebele/madebele/tugubele (sing. ndeo/madeo/tugu) as Senufo bush spirits." }]
+  },
+  "senufo_maleeo": {
+    "languageFamily": "Niger-Congo (Gur/Senufo)",
+    "etymology": "Senufo Maleeo, equivalently Katyeleeo, the female 'Ancient Mother' (glossed 'old mother' / 'ancient woman') — the maternal, nurturing aspect of the bipartite Senufo supreme being (paired with the creator Kolo Tyolo) and tutelary of the Poro society. The name is built on the Senufo word for 'mother' qualified as ancient/old, hence the standard rendering 'Ancient Mother'.",
+    "sources": [{ "kind": "reference-work", "reference": "'Senoufo', Encyclopedia of World Cultures (Encyclopedia.com). — bipartite deity Koulo Tyolo (creator) and Katyelééó / 'Ancient Mother'." }, { "kind": "book", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981). — Katyeleeo/Maleeo, the Ancient Mother and Poro patroness." }]
+  },
+  "serer_pangool": {
+    "languageFamily": "Niger-Congo (Senegambian; Serer)",
+    "etymology": "Serer Pangool (singular Fangool), the ancestral intercessor-spirits and saints who mediate between the living and the supreme being Roog. The term derives from the Serer phrase Fang Qool 'the sacred serpent': Fangool means 'serpent', the Pangool being symbolised by (and spiritually linked to) the snake, often shown as two coiled serpents. The initial f~p alternation marks the singular~plural.",
+    "sources": [{ "kind": "book", "reference": "Henry Gravrand, La Civilisation Sereer: Pangool (Dakar, 1990). — Pangool / sing. Fangool as ancestral serpent-spirits and intercessors with Roog." }]
+  },
+  "serer_roog": {
+    "languageFamily": "Niger-Congo (Senegambian; Serer)",
+    "etymology": "Serer Roog (also Rog; Koox/Kooh in the Cangin languages), the genderless supreme creator. In Serer roog means 'sky, the heavens', reflecting the deity's celestial nature. He is honoured as Roog Sene, 'Roog the Immensity' (hence, by extension, 'the merciful God'), the source to whom life returns and who is approached only through the ancestral Pangool.",
+    "sources": [{ "kind": "book", "reference": "Henry Gravrand, La Civilisation Sereer: Cosaan (Dakar, 1983). — Roog/Roog Sene, the Serer supreme being." }, { "kind": "book", "reference": "Henry Gravrand, La Civilisation Sereer: Pangool (Dakar, 1990). — Roog as the immensity worshipped through the Pangool; roog 'sky'." }]
+  },
+  "shango": {
+    "languageFamily": "Niger-Congo (Volta-Niger / Yoruboid; Yoruba)",
+    "etymology": "The etymology of the Yoruba theonym Ṣàngó is debated and unsettled, with several named scholars offering competing glosses. (1) A. B. Ellis (1894) analyzed it as a Yoruba compound of the verb ṣán 'to strike violently (as lightning)' + gɔ/go 'to bewilder, to daze' — an internal Yoruba derivation now generally regarded by later scholarship as unsubstantiated. (2) E. B. Idowu proposed it was a corruption of the Nupe lightning/rain deity name Soko. (3) Sandro Capo Chichi (Yoruba Studies Review, 2025) argues on tonal, morphological and comparative-phonological grounds that the name derives ultimately from Gbari (Gbagyi) ɛtswaʃɛ̰gʷo 'God', literally 'ruler (ɛtsu) of the sky (ʃɛ̰go)', borrowed into Nupe (reinterpreted as etsu ʃjə̰gʷo 'King ʃjə̰go') and thence into Old Ọyọ Yoruba, the royal reinterpretation merging a sky/thunder divinity with the historical Aláàfin. No single etymology is established; the Gbari-via-Nupe 'ruler of the sky' account is the most recent scholarly proposal.",
+    "sources": [{ "kind": "journal-article", "reference": "Sandro Capo Chichi, \"On the Etymology of the Yoruba Theonym Shango,\" Yoruba Studies Review, Vol. 10, No. 1 (Spring 2025) — derives Ṣàngó from Gbari ɛtswaʃɛ̰gʷo 'ruler of the sky' via Nupe." }, { "kind": "book", "reference": "A. B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894) — proposes Yoruba ṣán 'to strike' + go 'to bewilder'." }, { "kind": "book", "reference": "E. Bọlaji Idowu, Olódùmarè: God in Yoruba Belief (1962) — relates Ṣàngó to Nupe Soko." }]
+  },
+  "shipibo_bari": {
+    "languageFamily": "Panoan (Shipibo-Konibo)",
+    "etymology": "Shipibo-Konibo bari 'sun', a common noun used as the name of the male solar deity ('Father Sun', paired with the Moon). The lexeme bari 'sun' is attested in standard Shipibo-Konibo lexicography; in Roe's analysis of Shipibo cosmology the Sun is a celestial being inhabiting the topmost luminous world (Jakon Nete). No further internal morphological segmentation of bari is given by the cited sources; it is simply the ordinary Shipibo word for 'sun' raised to a theonym.",
+    "sources": [{ "kind": "dictionary", "reference": "James Loriot, Erwin Lauriault & Dwight Day, Diccionario shipibo–castellano (Serie Lingüística Peruana 31; Ministerio de Educación / Instituto Lingüístico de Verano, 1993) — Shipibo bari 'sol/sun'." }, { "kind": "book", "reference": "Peter G. Roe, The Cosmic Zygote: Cosmology in the Amazon Basin (Rutgers University Press, 1982), pp. 124-130 — Shipibo solar deity (Sun/Father) in the layered cosmos." }]
+  },
+  "shipibo_ronin": {
+    "languageFamily": "Panoan (Shipibo-Konibo)",
+    "etymology": "Shipibo-Konibo ronin denotes the primordial cosmic anaconda / World-Anaconda (the 'Great Boa'), built on the ordinary Shipibo noun rono 'snake, boa' (ronin being the augmented/enlarged form, the great water-serpent — also rendered rono ewa 'big snake'). rono 'snake' is attested in standard Shipibo-Konibo lexicography. In Roe's account the ronin is the mother/source of the kené designs and a water-being of Jene Nete, the water-world; the figure is a spirit-class water-serpent treated as a primordial divinity. The native form is therefore the common ophidian noun rono 'snake/boa' specialized as the name of the mythic World-Anaconda.",
+    "sources": [{ "kind": "dictionary", "reference": "James Loriot, Erwin Lauriault & Dwight Day, Diccionario shipibo–castellano (Serie Lingüística Peruana 31; Ministerio de Educación / Instituto Lingüístico de Verano, 1993) — Shipibo rono 'culebra/snake (boa)'." }, { "kind": "book", "reference": "Peter G. Roe, The Cosmic Zygote: Cosmology in the Amazon Basin (Rutgers University Press, 1982), pp. 49-52 — the cosmic anaconda (ronin) and the layered water-world cosmology." }]
+  },
+  "shona_dzivaguru": {
+    "languageFamily": "Niger-Congo > Bantu > Shona (S10)",
+    "etymology": "Shona Dzivaguru 'the great pool', a transparent compound of dziva 'pool, deep water' + guru 'great, big'. It is recorded both as a praise-name of the high god Mwari (the rain-giver, 'the Great Pool') and, among the north-eastern (Korekore) Shona, as the name of a distinct territorial rain divinity.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Daneel, M. L. The God of the Matopo Hills: An Essay on the Mwari Cult in Rhodesia (1970) — gives Dzivaguru ('the Great Pool') as the principal praise-name of Mwari the rain-giver." }, { "kind": "scholarly monograph", "reference": "Bourdillon, M. F. C. The Cults of Dzivaguru and Karuva amongst the North-Eastern Shona Peoples; cf. The Shona Peoples (1976/1987) — on Dzivaguru as a north-eastern Shona territorial divinity." }]
+  },
+  "soatsaki": {
+    "languageFamily": "Algic > Algonquian > Blackfoot (Siksika)",
+    "etymology": "Blackfoot So-at-sa-ki, glossed 'Feather Woman'; the second element -aakii (-aki) is the ordinary Blackfoot word for 'woman'. The name is given as that of the Piegan woman taken to the Sky Country by Morning Star and mother of Poia/Star Boy.",
+    "sources": [{ "kind": "scholarly ethnography (primary collection)", "reference": "Grinnell, George Bird. Blackfoot Lodge Tales: The Story of a Prairie People (1892) — records the figure So-at-sa-ki and translates the name as 'Feather Woman'." }]
+  },
+  "songhai_manda_hausakoy": {
+    "languageFamily": "Nilo-Saharan > Songhay (Songhay-Zarma)",
+    "etymology": "Songhay Hausakoy is a compound Hausa + koy, where koy means 'lord, master, owner' (cf. laabu koy 'master(s) of the earth', kwaara koy 'village chief'); Hausakoy thus = 'lord/master of the Hausa', the name of the smith-spirit among the Tooru/Holey. The accompanying element Manda is not securely glossed in the cited scholarship.",
+    "sources": [{ "kind": "scholarly ethnography", "reference": "Stoller, Paul. Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989) — uses koy as 'master/chief/owner' and treats (Manda) Hausakoy as the smith of the Tooru spirits." }, { "kind": "scholarly ethnography", "reference": "Rouch, Jean. La religion et la magie songhay (1960/1989) — Songhay -koy 'lord/owner' in spirit and title names." }]
+  },
+  "sotho_tswana_badimo": {
+    "languageFamily": "Niger-Congo > Bantu > Sotho-Tswana (S30)",
+    "etymology": "Sotho-Tswana Badimo 'the ancestors / ancestral spirits' is the class-2 plural (prefix ba-) corresponding to singular modimo, sharing the root -dimo < proto-Bantu/Bantu *-dimu (~ *-zimu) 'ancestral spirit, divinity'. It denotes the collective ancestral dead venerated as spirit-powers.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Setiloane, Gabriel M. The Image of God among the Sotho-Tswana (1976) — badimo as plural to modimo and the -dimo root." }, { "kind": "reference encyclopedia (scholarly)", "reference": "'Tswana Religion', drawn from the Encyclopedia of Religion (via Encyclopedia.com) — badimo 'ancestors', plural of modimo." }]
+  },
+  "sotho_tswana_modimo": {
+    "languageFamily": "Niger-Congo > Bantu > Sotho-Tswana (S30)",
+    "etymology": "Sotho-Tswana Modimo, the Supreme Being, is morphologically mo- (the singular personal/agentive class prefix) + the root -dimo, reflex of the proto-Bantu/Bantu root *-dimu (~ *-zimu) 'ancestral spirit, divinity'. (The popular surface glosses 'the One Above' / 'the Great One' are theological renderings; the secure linguistic content is the derivation from the *-dimu/-zimu root, which also yields the plural badimo 'the ancestors'.)",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Setiloane, Gabriel M. The Image of God among the Sotho-Tswana (1976) — analysis of Modimo and its relation to badimo / the -dimo root." }, { "kind": "reference encyclopedia (scholarly)", "reference": "'Tswana Religion', drawn from the Encyclopedia of Religion (via Encyclopedia.com) — Modimo and badimo, the -dimo root from Bantu -dzimu 'spirit'." }]
+  },
+  "tagalog_bathala": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; Central Philippine, Tagalog) with Sanskrit (Indo-Aryan) loan",
+    "etymology": "Tagalog Bathala (also Batala, in full Bathalang Maykapal 'Bathala the Creator') derives from Sanskrit bhaṭṭāra 'noble lord, great lord' (cf. the honorific bhaṭṭāraka), which entered the maritime Southeast Asian region as the 16th-century title batara (Indonesian batara 'god', feminine batari; Malay betara 'holy', applied to the great Hindu gods of Java). The Sanskritic derivation reflects the Indianization of pre-Hispanic Tagalog religion.",
+    "sources": [{ "kind": "scholarly monograph (named linguist)", "reference": "Jean-Paul G. Potet, Ancient Beliefs and Customs of the Tagalogs (Lulu, 2018) — derives Bathala from Sanskrit bhaṭṭāra 'noble lord' via the regional title batara." }, { "kind": "early colonial primary source", "reference": "Relación de las Islas Filipinas (c. 1595–1602) — attests the form 'Bathalang Maykapál' glossed 'God the Creator'." }]
+  },
+  "tagalog_tala": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; Central Philippine, Tagalog) with Sanskrit (Indo-Aryan) loan",
+    "etymology": "Tagalog tala 'bright star' (the morning/evening star, the planet Venus) — and hence the star-goddess Tala — is the standard scholarly account derived from Sanskrit tārā 'star', transmitted through pre-Hispanic Indianized contact; the goddess is identified with the Hindu Tārā. (Some authors note the Sanskrit derivation is not the only proposed source, but tārā 'star' is the mainstream etymology and the meaning 'star' is uncontested.)",
+    "sources": [{ "kind": "scholarly work on Tagalog loanwords (named linguist)", "reference": "Jean-Paul G. Potet, Tagalog Borrowings and Cognates (Lulu, 2016) — treats Sanskrit loanwords in Tagalog including the tala / Sanskrit tārā 'star' correspondence." }, { "kind": "mythological compilation (named scholar)", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969) — documents Tala as the Tagalog star-goddess." }]
+  },
+  "taino_atabey": {
+    "languageFamily": "Arawakan (Maipurean; Taíno)",
+    "etymology": "Taíno Atabey (also Atabeyra, Atabex), the primordial mother-goddess of fresh water and fertility, is analyzed by José Juan Arrom as containing the Arawakan element atte / attete 'mother' (a form also used as a respectful term of address for older women), matching the goddess's character as the primordial maternal principle; the name is rendered 'mother of the waters'.",
+    "sources": [{ "kind": "scholarly monograph (named Taínist)", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (Siglo XXI, 1975; rev. eds.) — etymologizes Atabey/Atabeyra via atte 'mother'." }, { "kind": "early colonial primary source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498) — first records Atabey as the mother of the zemi Yúcahu." }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
