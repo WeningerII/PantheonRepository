@@ -242884,11 +242884,183 @@ const ICONOGRAPHY_X = {
   }
 };
 
+// ═════════════════════════════════════════════════════════════════════════════
+//  DOMAIN_SUPPLEMENT — backfill the sphere-of-influence tag for the deity/demigod
+//  figures the breadth waves left without one. Each sphere is the figure's own
+//  attested role, cited to the figure's own primary/ethnographic sources (the
+//  same convention every other domain follows: a descriptive slug + optional
+//  native term + sources[]). Additive, merged by id, deduped by sphereId, run
+//  pre-migrate. No coinage, no invented attestation — only what the notes already
+//  carry, tagged. Closes the last 36 deity/demigod domain gaps.
+// ═════════════════════════════════════════════════════════════════════════════
+const DOMAIN_SUPPLEMENT = {
+  // ── Greek heroic-age demigods ───────────────────────────────────────────────
+  'greek_iphigenia_helen_variant': [
+    { sphereId: 'sacrificial-victim-at-aulis', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Cypria fragments (via Proclus, Chrestomathia); Apollodorus Epitome 3.21-22' }] },
+  ],
+  'greek_arcas': [
+    { sphereId: 'eponymous-founder-of-arcadia', contextTag: 'lifelong', term: { value: 'Ἀρκάς', script: 'Greek', rom: 'Arkás' }, sources: [{ kind: 'primary', reference: 'Pausanias 8.4.1-3; Apollodorus 3.9.1' }] },
+    { sphereId: 'civilizing-arts-agriculture-weaving-bread', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Pausanias 8.4.1' }] },
+    { sphereId: 'catasterism-as-bootes', contextTag: 'post-mortem', term: { value: 'Ἀρκτοφύλαξ', script: 'Greek', rom: 'Arktophýlax' }, sources: [{ kind: 'primary', reference: 'Hyginus Astronomica 2.4; Eratosthenes Catasterismi 8' }] },
+  ],
+  'greek_hyacinthus': [
+    { sphereId: 'dying-and-reborn-vegetation-youth', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Pausanias 3.19.3-5; Apollodorus 1.3.3' }] },
+    { sphereId: 'eponym-of-the-hyacinthia', contextTag: 'festival', term: { value: 'Ὑακίνθια', script: 'Greek', rom: 'Hyakínthia' }, sources: [{ kind: 'primary', reference: 'Pausanias 3.1.3; Athenaeus 4.139d-f' }] },
+  ],
+  'greek_ion_athens': [
+    { sphereId: 'eponymous-ancestor-of-the-ionians', contextTag: 'lifelong', term: { value: 'Ἴωνες', script: 'Greek', rom: 'Íōnes' }, sources: [{ kind: 'primary', reference: 'Euripides Ion; Herodotus 7.94' }] },
+    { sphereId: 'founder-of-the-four-ionian-tribes', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Euripides Ion; Pausanias 7.1.2-4; Strabo 8.7.1' }] },
+  ],
+  'greek_hippolyta': [
+    { sphereId: 'amazon-queenship', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.9; Diodorus 4.16' }] },
+    { sphereId: 'war-belt-of-ares', contextTag: 'lifelong', term: { value: 'ζωστὴρ Ἄρεος', script: 'Greek', rom: 'zōstḕr Áreos' }, sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.9' }] },
+  ],
+  'greek_penthesilea': [
+    { sphereId: 'amazon-queenship', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollodorus Epitome 5.1; Quintus Smyrnaeus Posthomerica 1' }] },
+    { sphereId: 'aristeia-and-death-at-troy', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Aethiopis (via Proclus, Chrestomathia); Quintus Smyrnaeus Posthomerica 1' }] },
+  ],
+  'greek_calais': [
+    { sphereId: 'winged-flight', contextTag: 'lifelong', term: { value: 'πτερωτός', script: 'Greek', rom: 'pterōtós' }, sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 1.211-223; Apollodorus 1.9.21' }] },
+    { sphereId: 'pursuit-of-the-harpies', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 2.234-300' }] },
+  ],
+  'greek_zetes': [
+    { sphereId: 'winged-flight', contextTag: 'lifelong', term: { value: 'πτερωτός', script: 'Greek', rom: 'pterōtós' }, sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 1.211-223; Apollodorus 1.9.21' }] },
+    { sphereId: 'pursuit-of-the-harpies', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 2.234-300' }] },
+  ],
+  'greek_cleopatra_boread': [
+    { sphereId: 'tragic-paradigm-of-unjust-suffering', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Sophocles Antigone 966-987; Apollodorus 3.15.3' }] },
+  ],
+  'greek_ceyx': [
+    { sphereId: 'kingship-of-trachis', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollodorus 1.7.4; Sophocles Trachiniae' }] },
+    { sphereId: 'halcyon-metamorphosis', contextTag: 'post-mortem', term: { value: 'ἀλκυονίδες ἡμέραι', script: 'Greek', rom: 'alkyonídes hēmérai' }, sources: [{ kind: 'primary', reference: 'Ovid Metamorphoses 11.410-748' }] },
+  ],
+  'greek_pirithous': [
+    { sphereId: 'kingship-of-the-lapiths', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Homer Iliad 1.262-272; Apollodorus Epitome 1.21' }] },
+    { sphereId: 'failed-descent-to-the-underworld', contextTag: 'final-phase', sources: [{ kind: 'primary', reference: 'Apollodorus Epitome 1.23-24; Plutarch Theseus 31, 35' }] },
+  ],
+  // ── Norse ─────────────────────────────────────────────────────────────────────
+  'norse_sigi': [
+    { sphereId: 'founder-of-the-volsung-line', contextTag: 'lineage-foundation', term: { value: 'Vǫlsungar', script: 'Old Norse', rom: 'Volsungar' }, sources: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }] },
+  ],
+  // ── Irish ───────────────────────────────────────────────────────────────────
+  'irish_be_find': [
+    { sphereId: 'tuatha-de-danann-otherworld-maternity', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Táin Bó Fraích §§1-3; Lebor Gabála Érenn' }] },
+  ],
+  'irish_fraech': [
+    { sphereId: 'martial-beauty', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Táin Bó Fraích (Old Irish, 8th-9th c.)' }] },
+    { sphereId: 'otherworld-endowed-hero', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Táin Bó Fraích; Táin Bó Cúailnge (death-at-the-ford)' }] },
+  ],
+  // ── Japanese ──────────────────────────────────────────────────────────────────
+  'japanese_yoshiie': [
+    { sphereId: 'minamoto-tutelary-ancestral-kami', contextTag: 'post-mortem', term: { value: '八幡太郎', script: 'Japanese', rom: 'Hachimantarō' }, sources: [{ kind: 'secondary', reference: 'Heike Monogatari book 11; Mutsu Waki (c. 1062)' }] },
+    { sphereId: 'martial-valor-of-the-minamoto', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Ōshū Gosannenki; Mutsu Waki' }] },
+  ],
+  // ── Manipuri (Meitei) ─────────────────────────────────────────────────────────
+  'manipuri_chothe_thangwai_pakhangba': [
+    { sphereId: 'serpent-divinity-of-moirang', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Chothe Thangwai Pakhangba puya; Cheitharol Kumbaba' }] },
+  ],
+  // ── Suludnon (Hinilawod / Sugidanon epic, Panay) ─────────────────────────────
+  'suludnon_alunsina': [
+    { sphereId: 'goddess-of-the-eastern-sky', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod / Sugidanon epic; F. Landa Jocano' }] },
+    { sphereId: 'divine-mother-of-the-hinilawod-triplets', contextTag: 'genealogical', sources: [{ kind: 'secondary', reference: 'Hinilawod epic (F. Landa Jocano transcription)' }] },
+  ],
+  'suludnon_labaw_donggon': [
+    { sphereId: 'martial-bridal-quest-hero', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod epic, Labaw Donggon cycle (Jocano)' }] },
+  ],
+  'suludnon_humadapnon': [
+    { sphereId: 'voyaging-revenge-quest-hero', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod epic, Humadapnon cycle (Jocano)' }] },
+  ],
+  'suludnon_dumalapdap': [
+    { sphereId: 'monster-slaying-bridal-quest-hero', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod epic, Dumalapdap cycle (Jocano)' }] },
+  ],
+  // ── Bicolano (Ibalong epic) ──────────────────────────────────────────────────
+  'bicolano_oryol': [
+    { sphereId: 'serpent-shapeshifting-enchantress', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Ibalong epic (Castaño, Breve Noticia 1895; L. G. Dato 1965)' }] },
+  ],
+  'bicolano_magindara': [
+    { sphereId: 'mermaid-of-storm-and-calm', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Bicolano oral tradition (Ibalong cycle); NCCA folklore archives' }] },
+  ],
+  // ── Ifugao ────────────────────────────────────────────────────────────────────
+  'ifugao_dumagid': [
+    { sphereId: 'skyworld-culture-teacher', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Barton, Mythology of the Ifugaos (1946); Beyer 1913' }] },
+  ],
+  'ifugao_ovug': [
+    { sphereId: 'thunder-and-lightning', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Beyer, Origin Myths of the Mountain Peoples (1913); Barton, The Religion of the Ifugaos' }] },
+  ],
+  // ── Tinguian (Itneg) ──────────────────────────────────────────────────────────
+  'tinguian_gagayoma': [
+    { sphereId: 'star-goddess', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Cole, Traditions of the Tinguian (1915), pp. 65-77' }] },
+    { sphereId: 'commander-of-the-stars', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Cole, Traditions of the Tinguian (1915)' }] },
+  ],
+  'tinguian_takyayen': [
+    { sphereId: 'finger-born-demigod', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Cole, Traditions of the Tinguian (1915), pp. 65-77' }] },
+  ],
+  // ── Ambundu (Mbundu, Angola) ─────────────────────────────────────────────────
+  'ambundu_sun_moon_daughter': [
+    { sphereId: 'daughter-of-sun-and-moon', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+    { sphereId: 'divine-mother-of-the-thunder-twins', contextTag: 'genealogical', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+  ],
+  'ambundu_sudika_mbambi': [
+    { sphereId: 'thunder-of-the-eastern-sky', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu (1933)' }] },
+    { sphereId: 'wonder-child-warrior', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+  ],
+  'ambundu_kabundungulu': [
+    { sphereId: 'thunder-echo-of-the-western-sky', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894); Werner 1933' }] },
+    { sphereId: 'reviver-of-the-slain-twin', contextTag: 'narrative-position', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+  ],
+  // ── Shilluk ───────────────────────────────────────────────────────────────────
+  'shilluk_nyikang': [
+    { sphereId: 'founder-of-the-shilluk-kingdom', contextTag: 'lineage-foundation', term: { value: 'Nyikango', script: 'Shilluk', rom: 'Nyikango' }, sources: [{ kind: 'ethnography', reference: 'Hofmayr, Die Schilluk (1925); Seligman 1911' }] },
+    { sphereId: 'rain-mastery-and-royal-possession', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Hofmayr, Die Schilluk (1925); Frazer, The Golden Bough (1916)' }] },
+  ],
+  'shilluk_duwat': [
+    { sphereId: 'rival-twin-and-southern-kingship', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Hofmayr, Die Schilluk (1925); Diedrich 1912' }] },
+  ],
+  // ── Banyaruanda (Rwanda) ─────────────────────────────────────────────────────
+  'banyaruanda_ryangombe': [
+    { sphereId: 'founder-of-the-kubandwa-possession-cult', contextTag: 'lifelong', term: { value: 'kubandwa', script: 'Kinyarwanda', rom: 'kubandwa' }, sources: [{ kind: 'ethnography', reference: 'Werner, Myths and Legends of the Bantu (1933); Maquet' }] },
+  ],
+  // ── Macuxi / Kapon (Guiana Highlands, Carib) ─────────────────────────────────
+  'macuxi_insikiran': [
+    { sphereId: 'cosmological-lineage-founder', contextTag: 'cosmogonic', sources: [{ kind: 'ethnography', reference: 'Koch-Grünberg, Vom Roraima zum Orinoco vol. II (1924)' }] },
+  ],
+  'kapon_makonaima': [
+    { sphereId: 'creator-and-founder-of-the-piaiman-tradition', contextTag: 'cosmogonic', sources: [{ kind: 'ethnography', reference: 'Brett, Legends and Myths of British Guiana (1880); Butt Colson 1971' }] },
+    { sphereId: 'fire-flood-and-tree-of-life', contextTag: 'cosmogonic', sources: [{ kind: 'ethnography', reference: 'Brett 1880; Im Thurn, Among the Indians of Guiana (1883)' }] },
+  ],
+  // ── Buganda ───────────────────────────────────────────────────────────────────
+  'buganda_wanema': [
+    { sphereId: 'ssese-islands-lubaale', contextTag: 'lifelong', term: { value: 'lubaale', script: 'Luganda', rom: 'lubaale' }, sources: [{ kind: 'ethnography', reference: 'Roscoe, The Baganda (1911)' }] },
+    { sphereId: 'progenitor-of-the-balubaale', contextTag: 'genealogical', sources: [{ kind: 'ethnography', reference: 'Roscoe, The Baganda (1911); Kaggwa (1934 tr.)' }] },
+  ],
+  // ── Hurrian-Hittite (Kingship in Heaven cycle) ───────────────────────────────
+  'hurrian_alalu': [
+    { sphereId: 'primordial-kingship-of-heaven', contextTag: 'cosmogonic', sources: [{ kind: 'primary', reference: 'Song of Kumarbi / Kingship in Heaven (CTH 344); Hoffner, Hittite Myths (1998)' }] },
+  ],
+};
+
+// Merge DOMAIN_SUPPLEMENT onto figures by id (additive, dedupe by sphereId).
+const applyDomainSupplement = (peopleMap, extra = DOMAIN_SUPPLEMENT) => {
+  for (const [id, list] of Object.entries(extra)) {
+    const p = peopleMap[id];
+    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] domain for unknown figure', id); continue; }
+    if (!Array.isArray(list) || !list.length) continue;
+    p.domains = Array.isArray(p.domains) ? p.domains : [];
+    for (const d of list) {
+      if (!d || !d.sphereId) continue;
+      const key = (x) => String(x || '').toLowerCase().trim();
+      if (p.domains.some((x) => key(x.sphereId) === key(d.sphereId))) continue;
+      p.domains.push(d);
+    }
+  }
+  return peopleMap;
+};
+
 // Build + migrate seed data, then attach item holders and run the
 // content-integrity passes (term scrub + provenance inheritance) last,
 // finishing with the consolidation/QA pass over the whole map.
 const seedPeople = consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
-  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(addNewFigures(buildPeopleSeed()))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
+  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(applyDomainSupplement(addNewFigures(buildPeopleSeed())))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
 const seedAtlas  = buildTerritorySeed();
 
 // Final-map integrity pass. migrate's detectors ran BEFORE the item/term
