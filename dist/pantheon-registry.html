@@ -217889,6 +217889,84 @@ const applyEpithets = (peopleMap, extra = EPITHETS) => {
 //  Runs pre-migrate; touches no relation/parent/tier data.
 // ═════════════════════════════════════════════════════════════════════════════
 const ETYMOLOGY = {
+  // ══ Alphabetical etymology sweep (full corpus, every tier; in figure-id order
+  //    so none is skipped; authored wherever the name is securely attestable,
+  //    deferred — never invented — where the language lacks the apparatus) ══
+  "abkhaz_afy": {
+    "languageFamily": "Northwest Caucasian (Abkhaz)",
+    "etymology": "Abkhaz Афы (Afə), god of thunder and lightning. The theonym is the ordinary Abkhaz noun afə 'lightning', the deity being lightning personified; under herding/hunting taboo he is invoked by oblique by-names rather than the bare word.",
+    "sources": [{ "kind": "secondary", "reference": "V. Chirikba, on Abkhaz traditional religion (afy 'lightning')" }]
+  },
+  "abkhaz_antswa": {
+    "languageFamily": "Northwest Caucasian (Abkhaz)",
+    "etymology": "Abkhaz Анцәа (Ancʷa), the supreme god. The name is generally analysed as an old plural — 'the powers / the gods' — the single supreme deity being conceived as an embracing plurality; the cult-title Анцәа Дуу (Ancʷa Duu) 'the Great God' accompanies it.",
+    "sources": [{ "kind": "secondary", "reference": "V. Chirikba, on Abkhaz traditional religion (Ancʷa as an old plural)" }]
+  },
+  "aganju": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Aganjù, orisha of the untamed wilderness, volcanoes and the wild earth. The name is connected with aginjù 'wilderness, uninhabited bush, savanna' — the wild expanse he personifies.",
+    "sources": [{ "kind": "secondary", "reference": "R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "ainu_kamuy_fuchi": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Kamuy Huci (also Fuchi), goddess of the hearth-fire. The name is kamuy 'deity, spiritual being' + huci 'grandmother, venerable old woman' — 'the grandmother deity', mistress of the domestic fire (ape-huci).",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "ainu_kim_un_kamuy": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Kim-un-kamuy 'the deity who dwells in the mountains' (kim 'mountain' + un 'residing at' + kamuy 'deity') — the brown-bear god, honoured as a mountain deity who visits the human world.",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "ainu_kotan_kar_kamuy": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Kotan-kar-kamuy 'the land-making deity' (kotan 'village, land' + kar 'to make' + kamuy 'deity') — the creator who shaped the Ainu world, Ainu Mosir.",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "ainu_repun_kamuy": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Repun-kamuy 'the deity of the offing' (rep 'open sea, offshore' + un 'at' + kamuy 'deity') — the orca-god of the sea, who drives whales toward the coastal Ainu.",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "akan_tano": {
+    "languageFamily": "Niger-Congo (Kwa, Akan)",
+    "etymology": "Akan (Twi) Tano (also Ta Kora), the great river-god, named for the River Tano of central Ghana of which he is the deified spirit; the river and its tutelary ɔbosom share the name.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. Rattray, Ashanti (1923); Religion and Art in Ashanti (1927)" }]
+  },
+  "anglosaxon_beowulf": {
+    "languageFamily": "Indo-European (Germanic, Old English)",
+    "etymology": "Old English Bēowulf, most often read as a kenning bēo 'bee' + wulf 'wolf' = 'bee-wolf', i.e. the bear (the honey-raiding beast); an alternative connects the first element with Bēow, the barley-figure. The bear reading suits the hero's crushing grip.",
+    "sources": [{ "kind": "secondary", "reference": "F. Klaeber, Beowulf, 4th ed., ed. Fulk, Bjork & Niles (2008)" }]
+  },
+  "anglosaxon_wayland": {
+    "languageFamily": "Indo-European (Germanic, Old English)",
+    "etymology": "Old English Wēland (Old Norse Vǫlundr, Old High German Wiolant), the smith. The name is generally derived from a Germanic base *wēla- / *wīla- 'craft, cunning artifice', giving 'the skilled (or wily) one'; the precise root is debated.",
+    "sources": [{ "kind": "secondary", "reference": "V. Orel, A Handbook of Germanic Etymology (2003)" }]
+  },
+  "aramean_atargatis": {
+    "languageFamily": "Afro-Asiatic (Semitic, Aramaic)",
+    "etymology": "Aramaic ʿAtarʿatā (ʿtrʿth), Hellenized Atargatis. The name fuses two Semitic theonyms — ʿAttar / ʿAštart (Astarte) and ʿAttā / ʿAnat — into the single 'Syrian Goddess' (Dea Syria) of Hierapolis-Bambyce.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Atargatis" }]
+  },
+  "aramean_bethel": {
+    "languageFamily": "Afro-Asiatic (Northwest Semitic)",
+    "etymology": "Northwest Semitic Bethel, from bēt 'house' + ʾēl 'El, god' — 'House of El': the divinized sacred stone / 'house of god', attested as an independent deity in Aramaic contexts and at Elephantine.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Bethel" }]
+  },
+  "aramean_hadad": {
+    "languageFamily": "Afro-Asiatic (Northwest Semitic)",
+    "etymology": "Northwest Semitic Hadad (Haddu, Adad), the storm-god. The name derives from a Semitic root h-d-d 'to thunder, crash, resound', naming the thunder of the storm; the title Baʿal 'lord' frequently stands in for it.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Hadad" }]
+  },
+  "aramean_rakib_el": {
+    "languageFamily": "Afro-Asiatic (Semitic, Aramaic)",
+    "etymology": "Aramaic Rakib-El (rkb ʾl), dynastic god of Samʾal (Zincirli). The name means 'Charioteer of El' (rākib 'rider, charioteer' + ʾEl) — the god who rides as charioteer of the high god.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Rakib-El" }]
+  },
+  "asturian_aernus": {
+    "languageFamily": "Indo-European (Hispano-Celtic)",
+    "etymology": "Attested Deo Aerno (dative), tutelary god of the Asturian Zoelae. The native etymon is debated — usually linked either to a word for high/rocky ground or to a tree-name — and the god is known only from the Bragança-area inscriptions.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005); A. Tranoy, La Galice romaine (1981)" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
