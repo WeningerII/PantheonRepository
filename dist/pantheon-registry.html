@@ -249471,11 +249471,44 @@ const applyFacultySupplement = (peopleMap, extra = FACULTY_SUPPLEMENT) => {
   return peopleMap;
 };
 
-// Build + migrate seed data, then attach item holders and run the
-// content-integrity passes (term scrub + provenance inheritance) last,
-// finishing with the consolidation/QA pass over the whole map.
-const seedPeople = consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
-  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(applyFacultySupplement(applyDomainSupplement(addNewFigures(buildPeopleSeed()))))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
+// The seed is assembled by threading buildPeopleSeed() through an ordered list
+// of transforms: figure injection → enrichment overlays → migration/QA →
+// item-and-term merges → content-integrity passes (term scrub + provenance
+// inheritance) → final consolidation/QA over the whole map. Order is
+// significant (later overlays and the integrity passes assume earlier ones ran).
+// Each step is `(peopleMap) => peopleMap`; reduce applies them left-to-right.
+// Steps are written one-arg so the default by-id map (ENRICHMENTS, EPITHETS, …)
+// applies; the `(m) => fn(m, MAP)` wrappers are the overlays that run a second
+// pass against a different map (CROSS_/VERIFY_ENRICHMENTS, the *_X overlays).
+const SEED_PIPELINE = [
+  addNewFigures,                                  // NEW_FIGURES
+  applyDomainSupplement,                          // DOMAIN_SUPPLEMENT
+  applyFacultySupplement,                         // FACULTY_SUPPLEMENT
+  applyCorrections,                               // CORRECTIONS
+  applyEnrichments,                               // ENRICHMENTS
+  (m) => applyEnrichments(m, CROSS_ENRICHMENTS),
+  (m) => applyEnrichments(m, VERIFY_ENRICHMENTS),
+  applyEpithets,                                  // EPITHETS
+  applyCult,                                      // CULT_PRACTICES
+  applyIconography,                               // ICONOGRAPHY
+  applyEtymology,                                 // ETYMOLOGY
+  applyCultSites,                                 // CULT_SITES
+  applyPriesthoods,                               // PRIESTHOODS
+  applyOfferings,                                 // OFFERINGS
+  (m) => applyIconography(m, ICONOGRAPHY_X),
+  (m) => applyCult(m, CULT_PRACTICES_X),
+  (m) => applyEpithets(m, EPITHETS_X),
+  migrate,
+  mergeMaterialCulture,
+  mergeGeneratedItems,
+  populateCustodyHolders,
+  mergeDomainTerms,
+  deriveAndMergeFaculties,
+  scrubTerms,                                     // content-integrity pass
+  inheritProvenance,                              // content-integrity pass
+  consolidateRegistry,                            // final consolidation/QA
+];
+const seedPeople = SEED_PIPELINE.reduce((m, step) => step(m), buildPeopleSeed());
 const seedAtlas  = buildTerritorySeed();
 
 // Final-map integrity pass. migrate's detectors ran BEFORE the item/term
