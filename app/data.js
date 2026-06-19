@@ -214830,6 +214830,233 @@ const ETYMOLOGY = {
     "etymology": "Twin sons of Kanati and Selu, known as the Anisga'ya Tsunsdi' 'the Little Men', a compound of anisga'ya 'men' (plural of asga'ya 'man') + tsunsdi' 'little' (plural of usdi' 'small'); they dwell above the sky vault (Usûñhi'yï) and their voices are heard as thunder in the west.",
     "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Anisga'ya Tsunsdi' 'the Little Men')" }]
   },
+  // ══ Alphabetical sweep batch 3 (worklist indices 95-174: research-sourced,
+  //    vetted; Egyptian royal names, Elamite, Dacian, Dinka, Dogon, Cherokee, etc.) ══
+  "cherokee_uktena": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Uktena, glossed by Mooney as 'The Keen-eyed.' In his telling the Little Men 'changed a man into a monster snake, which they called Uktena, \"The Keen-eyed\"' and sent it to kill the Sun, the name evidently referencing the serpent's deadly, paralyzing gaze. Mooney records the native form and this gloss directly; he offers no further morpheme-by-morpheme breakdown.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900)" }]
+  },
+  "cherokee_unelanuhi": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Une'länûñ'hï (Unelanuhi), which Mooney glosses as 'the great Apportioner,' an epithet of the Sun (a female being in Cherokee myth); the name characterizes the Sun as the one who apportions, i.e. measures out, time and the day. Mooney supplies the native form and the 'apportioner' meaning but no segmented morphological derivation.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900)" }]
+  },
+  "cherokee_unetlanvhi": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "The Cherokee supreme being is named with the same 'apportioner' epithet (Une'länûñ'hï / Unetlanvhi) that Mooney records for the Sun, denoting the one who apportions or ordains; the impersonal creator and the Sun thus share this title in Cherokee. The 'apportioner' gloss is explicitly Mooney's; the precise internal morphology of the form is not segmented by the source, so the derivation beyond the 'apportion' sense is left open.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900)" }]
+  },
+  "chewa_chiuta": {
+    "languageFamily": "Niger-Congo (Bantu, Chewa/Nyanja)",
+    "etymology": "Chewa Chiuta / Chauta, analyzed by Wendland as 'Great-[God]-of-the-Bow': the element -uta means 'bow,' the 'bow' here read as the rainbow or 'great bow in the heavens,' so the name presents the high god through the sky-bow theophany. Wendland makes this the basis for adopting Chauta to render Yahweh; he discusses the bow/rainbow reading explicitly.",
+    "sources": [{ "kind": "secondary", "reference": "Ernst R. Wendland, 'Yahweh — The Case for Chauta \"Great-[God]-of-the-Bow\",' The Bible Translator 43(4) (1992)" }]
+  },
+  "cheyenne_maheo": {
+    "languageFamily": "Algonquian (Cheyenne)",
+    "etymology": "Cheyenne Ma'heo'o, the term for the supreme sacred being (plural ma'heono 'sacred beings'); Cheyenne linguists (Wayne Leman, Chief Dull Knife College) hold that the word cannot be further segmented into meaningful parts and specifically reject the popular parse 'All-Father'/'All-Spirit', because the morpheme for 'all' is the aspirated mȧhe- (distinct from the plain m- of Ma'heo'o). The attested sense is therefore 'sacred one / sacred being,' with the 'All-' etymology treated as folk etymology.",
+    "sources": [{ "kind": "secondary", "reference": "Wayne Leman, 'A sacred error: Cheyenne Ma'heo'o doesn't mean \"All-Father\"' / Cheyenne Dictionary (cheyennelanguage.org, Chief Dull Knife College)" }, { "kind": "ethnography", "reference": "Peter J. Powell, Sweet Medicine, 2 vols. (Univ. of Oklahoma Press, 1969)" }]
+  },
+  "cheyenne_sweet_medicine": {
+    "languageFamily": "Algonquian (Cheyenne)",
+    "etymology": "Cheyenne Mótsé'eóeve, a transparent calque rendered 'Sweet Medicine' (also 'Sweet Root'), from the element motse- 'sweet' applied to a sacred medicinal plant/root; the prophet is correspondingly known in English as Sweet Medicine and popularly as Arrow Boy. The native form and the 'sweet medicine/sweet root' gloss are attested; the figure and name are documented by Powell and in Cheyenne-language reference sources.",
+    "sources": [{ "kind": "secondary", "reference": "Peter J. Powell, Sweet Medicine (Univ. of Oklahoma Press, 1969); motse- ‘sweet’ per W. Leman, Cheyenne Dictionary" }]
+  },
+  "chimalman": {
+    "languageFamily": "Uto-Aztecan (Nahuatl)",
+    "etymology": "Nahuatl Chimalman, from chimalli 'shield'; the second element is disputed. The translators of Ruiz de Alarcón's Treatise on the Heathen Superstitions (J. Richard Andrews and Ross Hassig) analyze it with mani 'to be/lie extended (of a flat-bottomed thing)', giving roughly 'One-who-has-lain/sat like a shield' (i.e. '-man' = 'she lies like a shield'), and note that the common reading from maitl 'hand' (yielding 'shield-hand'/'shield-bearer') does not fit the form, even though a hand appears on her huipil in the Codex Aubin as a possible phonetic cue for the -man ending. So 'shield-hand' is a recognized but contested folk parse beside the chimalli + mani analysis.",
+    "sources": [{ "kind": "secondary", "reference": "Hernando Ruiz de Alarcón, Treatise on the Heathen Superstitions, trans. & ed. J. Richard Andrews and Ross Hassig (Univ. of Oklahoma Press, 1984)" }, { "kind": "secondary", "reference": "Frances Karttunen, An Analytical Dictionary of Nahuatl (Univ. of Texas Press, 1983; Univ. of Oklahoma Press, 1992)" }]
+  },
+  "chuukese_anulap": {
+    "languageFamily": "Austronesian (Oceanic; Chuukic — Chuukese/Trukese)",
+    "etymology": "Chuukese Anulap (also Enúúnap, Onulap) is the high creator-spirit whose name is glossed 'Great Spirit'. It is transparently the noun for 'spirit/god' plus an augmentative 'great, big': the first element corresponds to Chuukese énú 'god, spirit, ghost; supernatural being' and the final element is the productive Chuukese augmentative -lap / -nap 'big, great' (whence the Enúúnap variant). The 'great spirit' reading is the gloss given in the ethnographic literature; the morpheme énú 'god/spirit' and the augmentative -(n)ap 'big' are those documented for Chuukese in Goodenough & Sugita's dictionary.",
+    "sources": [{ "kind": "ethnography", "reference": "Laurentius Bollig, Die Bewohner der Truk-Inseln (Anthropos-Bibliothek, 1927), which records Anulap as the Chuukese high god ('great spirit')." }, { "kind": "secondary", "reference": "Ward H. Goodenough & Hiroshi Sugita, Trukese-English Dictionary / Pwpwuken tettenin fóós, Chuuk-Ingenes (American Philosophical Society Memoirs 141, 1980), for Chuukese énú 'god, spirit' and the augmentative -(n)ap 'big, great'." }]
+  },
+  "chuukese_lugeilan": {
+    "languageFamily": "Austronesian (Oceanic; Chuukic — Carolinian/Chuukese)",
+    "etymology": "Carolinian/Chuukese Lugeilang (also Lugeleng, Lukeilang, Lugeilan, shortened Lug), the sky-god's son and bringer of useful arts, bears a name conventionally rendered 'middle/lord of heaven'. Its final element is the Carolinian noun lááng / -lang 'sky, heaven', which descends from Proto-Chuukic and Proto-Micronesian *laŋi 'sky, heaven, storm' (ultimately Proto-Oceanic *laŋit, Proto-Malayo-Polynesian *laŋit). The deity belongs to the genealogy Anulap > Lugeilang > Olifat.",
+    "sources": [{ "kind": "secondary", "reference": "Proto-Micronesian *laŋi 'sky, heaven, storm' as reconstructed by Byron W. Bender et al., 'Proto-Micronesian Reconstructions' (Oceanic Linguistics, 2003), giving the Chuukic lááng/-lang reflex." }, { "kind": "ethnography", "reference": "Micronesian religion reference literature (e.g. the 'Micronesian Religions' survey in the Encyclopedia of Religion, drawing on Bollig 1927 and William A. Lessa's Carolinian work) glossing Lugeilang as 'middle of heaven' within the Anulap–Lugeilang–Olifat genealogy." }]
+  },
+  "cree_kise_manitow": {
+    "languageFamily": "Algonquian (Plains Cree / nêhiyawêwin)",
+    "etymology": "Plains Cree kisê-manitow (Standard Roman Orthography), glossed 'the Creator, the Great Spirit / God', is a compound of the preverb/element kisê- 'great; kind, compassionate' and the noun manitow 'spirit, sacred power, God'. The noun manitow continues Proto-Algonquian *maneto·wa 'supernatural being, spirit' (the same etymon underlying Ojibwe manidoo and the Anglicized 'manitou'/'Gitche Manitou'). The Swampy (n-dialect) cognate is kihci-manitow, with kihci- 'great, chief' in place of y-dialect kisê-.",
+    "sources": [{ "kind": "secondary", "reference": "Arok Wolvengrey, Cree: Words / nêhiyawêwin: itwêwina (University of Regina Press, 2001), the dictionary corpus underlying the itwêwina Plains Cree dictionary, which lists kisê-manitow 'the Creator, the Great Spirit' and manitow 'spirit, God'." }, { "kind": "secondary", "reference": "Proto-Algonquian *maneto·wa 'supernatural being' as reconstructed in the comparative Algonquian tradition (cf. Leonard Bloomfield's Algonquian work; summarized with the Cree manito·w reflex in standard etymological references for 'manitou')." }]
+  },
+  "crow_old_man_coyote": {
+    "languageFamily": "Siouan (Missouri Valley; Crow / Apsáalooke)",
+    "etymology": "The Crow creator-trickster is known by several descriptive Apsáalooke names whose meanings are transparent translations: Isáahkawuattee 'Old Man Coyote' (the proper Coyote-trickster theonym); Akbaatatdía 'the One Who Has Made Everything / Maker of All Things Above' (used of the supreme creator); and Iichíkbaalee 'the First Maker / First Doer'. Robert H. Lowie documents this creator-trickster ('First-Worker'/'First-Maker') figure in Crow narrative; the Crow-language name glosses are given by Crow/Apsáalooke sources.",
+    "sources": [{ "kind": "ethnography", "reference": "Robert H. Lowie, The Crow Indians (Farrar & Rinehart, 1935), and 'Myths and Traditions of the Crow Indians,' Anthropological Papers AMNH 25.1 (1918), documenting the Old-Man-Coyote / First-Maker creator-trickster." }, { "kind": "secondary", "reference": "Little Big Horn College (Apsáalooke tribal college) Crow-language resources, glossing Akbaatatdía 'One Who Has Made Everything / Maker of All Things Above', Iichíkbaalee 'First Maker', and Isáahkawuattee 'Old Man Coyote'." }]
+  },
+  "dacian_zalmoxis": {
+    "languageFamily": "Thracian (Paleo-Balkan, fragmentarily attested Indo-European)",
+    "etymology": "The name (Greek Zalmoxis, with an attested metathetic variant Zamolxis ~ Zamolxis) is anciently and modernly debated, and the registry presents the debate rather than choosing. (1) Bear-skin/'hide' etymology: Porphyry, in his Vita Pythagorae (Life of Pythagoras), reports that zalmos is the Thracian word for 'hide/skin' (Greek dora) and tells an aetiological tale that the infant god was wrapped in a bear's skin at birth; Diogenes Laertius likewise glosses the name as 'bear-skin'. (2) Indo-Europeanist 'earth/men' etymology: Paul Kretschmer connected the metathetic form Zamolxis with the Thraco-Phrygian earth-goddess name Zemelo (cf. Greek Semele) and Slavic zemlja 'earth', construing the name as roughly 'lord/master of men', and linking the doublet Gebeleizis to the same root *g'hem-el- 'earth'. (3) Dimiter Detschev (Die thrakischen Sprachreste, 1957, p. 175) observed that Indo-European correspondents of zalmos also carry the sense 'shield, protection', a meaning he found apt for both a god and a high priest. The native segmentation of the individuating element thus remains genuinely contested among Thracologists, with the -lm- order generally held to be older than the -ml- order required by the 'earth' derivation.",
+    "sources": [{ "kind": "primary", "reference": "Porphyry, Vita Pythagorae (Life of Pythagoras) 14-15, on Thracian zalmos 'hide' and the bear-skin aetiology" }, { "kind": "primary", "reference": "Diogenes Laertius, Lives of the Eminent Philosophers 8.1 (glossing the name as 'bear-skin'); cf. Herodotus, Histories 4.94-96 for the figure" }, { "kind": "secondary", "reference": "Paul Kretschmer, comparison of Zamolxis with Zemelo and Slavic zemlja ('lord of men' / 'earth' etymology), as reported in the Encyclopedia of Religion 'Geto-Dacian Religion' / 'Zalmoxis' entries" }, { "kind": "secondary", "reference": "Dimiter Detschew (Detschev), Die thrakischen Sprachreste (Vienna, 1957), p. 175, on zalmos and IE cognates meaning 'shield, protection'" }]
+  },
+  "dayak_mahatala": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; Ngaju, Barito group of southern Borneo)",
+    "etymology": "Ngaju Mahatala (also Hatala, Lahatala; priestly title Ranying Hatalla Langit) names the upper-world half of the bisexual supreme godhead described by Hans Schaerer, who paired Mahatala (upperworld, hornbill, sun) with Jata (underworld, watersnake). The name itself is not native Ngaju but a borrowing, and its source is debated among named scholars: the prevailing view (G. A. Wilken and the standard Indonesian/Borneo literature) derives Hatala/Mahatala/Lahatala from the Arabic invocation Allah taʿala 'God, be exalted', borne inland through Malay-Islamic contact; against this, Ferdinand Blumentritt analysed Mahatala/Mahatara as a contraction of Mahabatara (Sanskrit-derived Maha-batara) 'the Great Lord'. The registry records both attributed derivations rather than adjudicating between them.",
+    "sources": [{ "kind": "ethnography", "reference": "Hans Schaerer, Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham (The Hague: Martinus Nijhoff, 1963 [Dutch orig. 1946]) - for Mahatala/Jata as the dual godhead and the priestly name Ranying Hatalla Langit" }, { "kind": "secondary", "reference": "G. A. Wilken (and standard Borneo/Malay scholarship): derivation of Hatala/Mahatala/Lahatala from Arabic Allah taʿala" }, { "kind": "secondary", "reference": "Ferdinand Blumentritt: derivation of Mahatala/Mahatara from Mahabatara 'the Great Lord'" }]
+  },
+  "desana_daughter_of_the_sun": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "Identified by Reichel-Dolmatoff with the Yaje Woman, Desana gahpi mahso. The compound is transparently glossable from elements he himself defines: gahpi is the Desana name of the yaje / caapi vine (Banisteriopsis caapi), and mahso is the feminine 'woman' (the feminine counterpart of mahse 'man, person, thinking being'), so the appellation means literally 'yaje woman / woman of the caapi vine'. The honorific 'Daughter of the Sun' is a relational title rather than a lexical etymology of the name.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - gahpi as the Desana name of the yaje/caapi vine; mahse 'man/person/being' (fem. mahso 'woman'); identification of the Yaje Woman with the Daughter of the Sun" }]
+  },
+  "desana_emekori_mahse": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "A collective class of celestial 'day-dimension' beings in Reichel-Dolmatoff's account of Desana cosmology (Emekori-mahse), created by the Sun and set in the sky, representing the principle of good. The final element mahse is explicitly glossed by Reichel-Dolmatoff as 'man, a person, a thinking being' (he derives it from the same root as mahsiri 'to know'), and recurs across the Desana spirit-names (Vai-mahse, Pamuri-mahse). The individuating element emekori- is not given a secure morphemic gloss in the sources and is left unanalysed here.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - mahse defined as 'man, a person, a thinking being'; Emekori-mahse as celestial beings created by the Sun" }]
+  },
+  "desana_pamuri_mahse": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "The emissary/culture-hero whom the Sun sent to populate the earth in the Snake-Canoe (pamuri-gahsiru). The final element mahse is explicitly glossed by Reichel-Dolmatoff as 'man, a person, a thinking being', so the name designates the 'Pamuri person/being'. The individuating element pamuri- is associated by Reichel-Dolmatoff with the primordial migration and the anaconda/snake-canoe complex (it also forms the canoe-name pamuri-gahsiru), but the sources do not provide a clean, separable morphemic meaning for pamuri- itself, which is therefore left unanalysed rather than guessed.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - mahse 'man/person/being'; Pamuri-mahse and the Snake-Canoe pamuri-gahsiru" }, { "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios Tukano del Vaupes (Bogota: Universidad de los Andes, 1968)" }]
+  },
+  "desana_sun_father": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "The Desana creator-deity, the Sun-Father, named Abe 'sun' in Reichel-Dolmatoff's record; he is distinguished from his emissary Pamuri-mahse whom he dispatched to populate the earth. The native lexeme Abe is thus the ordinary Desana word for the sun, transferred to the deity; the 'father' element is a relational epithet (Sun-Father) rather than part of the lexical name. Reichel-Dolmatoff reads the figure through a pervasive symbolism of yellow light and seminal/fertilising power.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - Abe 'sun'; the Sun-Father as creator, distinct from Pamuri-mahse" }, { "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios Tukano del Vaupes (Bogota: Universidad de los Andes, 1968), pp. 24-30" }]
+  },
+  "desana_vai_mahse": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "The Master of Animals, a guardian-spirit of game (a small red anthropomorph in Reichel-Dolmatoff's accounts). The name is a transparent compound of two elements both glossed by Reichel-Dolmatoff: vai 'animal, game (especially fish/game animals)' + mahse 'man, a person, a thinking being'. Vai-mahse therefore means literally 'game person / animal-being', i.e. the personified Master/Owner of the game, who regulates hunting so that humans do not take more than their due.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - Vai-mahse as Master of Animals; mahse 'man/person/thinking being'; vai 'animal/game'" }, { "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios Tukano del Vaupes (Bogota: Universidad de los Andes, 1968)" }]
+  },
+  "dinka_deng": {
+    "languageFamily": "Nilotic (Western Nilotic; Dinka / Thuongjang, Nilo-Saharan)",
+    "etymology": "Deng (augmented Dengdit, with -dit 'great/big') is the foremost free-divinity of rain and sky. The name is the ordinary Dinka common noun deng 'rain', transferred to the divinity, so that the rain-power and the deity bear one and the same word, as recorded in Lienhardt's account of the free-divinities. Lienhardt himself was known to the Dinka by a name incorporating this element (Thienydeng).",
+    "sources": [{ "kind": "ethnography", "reference": "Godfrey Lienhardt, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961) - Deng/Dengdit as free-divinity of rain and sky; deng as the Dinka word for 'rain'" }]
+  },
+  "dinka_nhialic": {
+    "languageFamily": "Nilotic (Western Nilotic; Dinka / Thuongjang, Nilo-Saharan)",
+    "etymology": "Nhialic, the supreme Divinity identified with the sky, is the locative/derived form of the Dinka adverb-noun nhial 'up, above', used where English would speak of 'the sky'; Lienhardt accordingly renders Nhialic as 'that which is in the sky / above'. The divine name is thus literally 'the above / that which is on high', the same word the Dinka use for the sky from which rain and life descend.",
+    "sources": [{ "kind": "ethnography", "reference": "Godfrey Lienhardt, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961) - Nhialic as the locative of nhial 'up/above', glossed as 'that which is above [in the sky]'" }]
+  },
+  "dogon_amma": {
+    "languageFamily": "Dogon (independent branch within Niger-Congo; Mali)",
+    "etymology": "Amma, the genderless Dogon creator and sky-god who made the world-egg and the Nommo, bears a name that the Griaule-Dieterlen tradition glosses from the Dogon verb amma 'to hold firm, to grasp, to establish' - Amma being conceived as the god who holds the world firmly in both hands. The name is thus read as descriptive of the creator's sustaining grip on the cosmos rather than as an opaque proper noun.",
+    "sources": [{ "kind": "ethnography", "reference": "Marcel Griaule & Germaine Dieterlen, Le renard pale (Paris: Institut d'Ethnologie, 1965); cf. Marcel Griaule, Dieu d'eau / Conversations with Ogotemmeli (1948) - Amma as creator; the verbal sense 'to hold firm/grasp/establish' as reported in the Encyclopedia of Religion 'Dogon Religion' entry drawing on Griaule and Dieterlen" }]
+  },
+  "e_bangishimog": {
+    "languageFamily": "Algic (Anishinaabe / Ojibwe)",
+    "etymology": "Ojibwe (Anishinaabemowin) e-bangishimog, a participial/changed-conjunct nominalization of the verb bangishimo (stem /bangishimo-/) 'it sets, is sunset (of the sun)'; the conjunct form bangishimog literally means '(where/when the sun) sets', i.e. 'the West / the place of sunset'. The element joins bangishin 'to fall down' + the directional/medial referring to the sun's descent. As a personified manidoo, E-bangishimog is thus the West Wind, 'the one of the place where the sun sets', father of Wenabozho in the Anishinaabe tradition.",
+    "sources": [{ "kind": "secondary", "reference": "John D. Nichols & Earl Nyholm, A Concise Dictionary of Minnesota Ojibwe (Minneapolis: Univ. of Minnesota Press, 1995), s.v. bangishimo" }, { "kind": "secondary", "reference": "The Ojibwe People's Dictionary (Univ. of Minnesota; John D. Nichols, ed.), entry 'bangishimo (vai/vii)' — '(the sun) sets, is sunset'" }]
+  },
+  "edo_ogiuwu": {
+    "languageFamily": "Niger-Congo (Edoid / Edo-Bini)",
+    "etymology": "Edo (Bini) Ogiuwu, 'king of death', a transparent compound of ogie 'king, ruler, lord' + uwu 'death' (both elements attested as headwords in Melzian's Bini dictionary). In Benin cosmology Ogiuwu is the personified king/lord of death, a senior child of the creator Osanobua, whose terrifying messenger is Ofoe; his cult had a central shrine and chief priest in Benin City but is no longer actively maintained.",
+    "sources": [{ "kind": "secondary", "reference": "Hans Melzian, A Concise Dictionary of the Bini Language of Southern Nigeria (London: Kegan Paul, 1937), s.vv. ogie 'king/ruler', uwu 'death'" }, { "kind": "ethnography", "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-Speaking Peoples of South-Western Nigeria (London: International African Institute, 1957) — Edo high god and his children" }]
+  },
+  "edo_olokun": {
+    "languageFamily": "Niger-Congo (Edoid / Edo-Bini)",
+    "etymology": "Edo (Bini) Olokun, glossed by the Encyclopedia of African Religion as 'the owner of (the great) waters'. The name is transparently compositional from Edo okun 'sea, ocean' (attested in Melzian's Bini dictionary) prefixed by an agentive/possessive element (ol-/olo- 'owner, lord'; cf. the cognate Yoruba oní 'owner' + òkun 'sea'), hence 'owner of the sea'. In Benin tradition Olokun is the senior child of Osanobua and the deity of the waters, wealth and fertility.",
+    "sources": [{ "kind": "secondary", "reference": "Molefi Kete Asante & Ama Mazama (eds.), Encyclopedia of African Religion (Thousand Oaks: SAGE, 2008), 'Olokun' — 'the owner of great waters'" }, { "kind": "secondary", "reference": "Hans Melzian, A Concise Dictionary of the Bini Language of Southern Nigeria (London: Kegan Paul, 1937), s.v. okun 'sea'" }]
+  },
+  "egyptian_ahmose": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian jꜥḥ-ms(j.w) (conventionally Ahmose / Ahmes), a theophoric birth-name 'Iah is born' or 'the Moon is born', compounding the lunar god-name jꜥḥ 'Moon/Iah' with the participial/stative of the verb msj 'to bear, give birth'. The name was extremely common at the start of the 18th Dynasty and was borne by the queen Ahmose, Great Royal Wife of Thutmose I and mother of Hatshepsut.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. jꜥḥ-ms" }, { "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, 2013) — on jꜥḥ/ms name-formation" }]
+  },
+  "egyptian_akhenaten": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ꜣḫ-n-jtn, the regnal name adopted by Amenhotep IV in his Year 5, meaning 'Effective for the Aten' (also rendered 'Beneficial/Serviceable to the Sun-disk', or, taking ꜣḫ as the noun, 'Radiant spirit of the Aten'): the element ꜣḫ 'effective, glorious, beneficial; transfigured spirit' + n 'for/to' + the divine name jtn 'the (sun-)disk, Aten'. The change replaced his earlier theophoric of Amun (jmn-ḥtp 'Amun is content') as part of his solar-Aten reform.",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, 2013)" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, 1999), 18th Dynasty" }]
+  },
+  "egyptian_amunherkhepeshef": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian jmn-ḥr-ḫpš=f, 'Amun is with his strong arm', a theophoric sentence-name: the god-name jmn 'Amun' + ḥr 'upon/with' + ḫpš 'strong/foreleg arm, scimitar-arm' + the 3rd-person suffix =f 'his'. Borne by the eldest son of Ramesses II by Nefertari; the prince had earlier carried the variant jmn-ḥr-wnm=f 'Amun is with his right arm' before adopting this form.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. jmn-ḥr-ḫpš=f" }]
+  },
+  "egyptian_iset_ta_hemdjert": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ꜣst-tꜣ-ḥmḏrt, 'Isis, she of Hemdjeret', compounding the goddess-name ꜣst 'Isis' (the theophoric core, also written simply Iset/Isis in her tomb) with the epithet tꜣ-ḥmḏrt 'she of Hemdjeret'. The second element Hemdjert is generally taken to be non-Egyptian (probably Syrian), reflecting the queen's foreign maternal line; she was Great Royal Wife of Ramesses III and mother of Ramesses VI.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. ꜣst (Isis-compound names)" }, { "kind": "secondary", "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (London: Thames & Hudson, 2004) — on the non-Egyptian element Hemdjert" }]
+  },
+  "egyptian_khaemwaset_c": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst, 'Appearing/Arising in Thebes', a sentence-name: ḫꜥ 'to rise, appear in glory, shine forth (as a god or the king at his coronation)' + m 'in' + the toponym wꜣst 'Thebes (Waset)'. Here borne by a son of Ramesses III named after the more famous antiquarian prince; he served as High Priest of Ptah at Memphis and was buried in QV44.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. ḫꜥ-m-wꜣst" }]
+  },
+  "egyptian_khaemweset": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst, 'Appearing/Arising in Thebes', the same formation as the name above: ḫꜥ 'to appear/shine forth in glory' + m 'in' + wꜣst 'Thebes (Waset)'. Borne by the fourth son of Ramesses II by Isetnofret, High Priest of Ptah at Memphis and overseer of the Apis (Serapeum) burials, later celebrated in Roman-period Demotic tales as Setne Khamuas.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. ḫꜥ-m-wꜣst" }]
+  },
+  "egyptian_merneptah": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian mr(.y)-n-ptḥ (Merneptah/Merenptah), the birth-name 'Beloved of Ptah': the passive participle mr(y) 'beloved' + the genitival n 'of' + the Memphite creator-god ptḥ 'Ptah'. Borne by the 13th son of Ramesses II by Isetnofret who succeeded as the fourth king of the 19th Dynasty; his prenomen was bꜣ-n-rꜥ mr(y)-nṯrw 'The soul of Re, beloved of the gods'.",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, 2013), 19th Dynasty" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, 1999)" }]
+  },
+  "egyptian_mutemwiya": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian mwt-m-wjꜣ, 'Mut is in the (sacred) barque', a theophoric sentence-name: the Theban goddess-name mwt 'Mut' + m 'in' + wjꜣ 'sacred/processional barque'. The name is illustrated as a rebus by a Karnak granite statue showing the goddess Mut seated in a barque. Borne by the wife of Thutmose IV and mother of Amenhotep III.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. mwt-m-wjꜣ" }]
+  },
+  "egyptian_neferure": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Nfrw-Rꜥ, a theophoric feminine name combining nfrw 'beauty, perfection, goodness' (an abstract/plural formation of the adjective nfr 'good, beautiful, perfect') with the solar god Rꜥ (Re), yielding 'the beauty (perfection) of Re.' The compound follows the regular New Kingdom royal pattern of pairing an abstract quality with a divine name.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), s.v. names compounded with nfr-/nfrw-" }, { "kind": "secondary", "reference": "Rainer Hannig, Die Sprache der Pharaonen: Großes Handwörterbuch Ägyptisch–Deutsch (Mainz: von Zabern), s.vv. nfr / nfrw" }]
+  },
+  "egyptian_pentaweret": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Pn-tꜣ-wr.t, literally 'He of Taweret,' i.e. 'the one belonging to (the goddess) Taweret' (tꜣ-wr.t 'the Great One,' the hippopotamus goddess of childbirth). The element pn is the demonstrative/relational 'this one of / he of.' The form is a documentary pseudonym substituted for the prince's true name in the trial record, not his birth name.",
+    "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin (harem-conspiracy trial record), which supplies the substitute name Pn-tꜣ-wr.t" }, { "kind": "secondary", "reference": "Hans Goedicke, 'Was Magic Used in the Harem Conspiracy against Ramesses III?', Journal of Egyptian Archaeology 49 (1963): 71-92" }]
+  },
+  "egyptian_ramesses_iv": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Nomen (birth name) Rꜥ-ms-sw 'Ra has fashioned him,' a theophoric construction: Rꜥ (the sun god Re) + ms (perfective active participle of the verb msj 'to bear, give birth, fashion') + the dependent pronoun sw 'him' = 'Re is the one who fashioned/bore him.' Borne with the epithet mri-Jmn 'beloved of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: Society of Biblical Literature, Writings from the Ancient World 33, 2013), pp. 129-131" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 168-169" }]
+  },
+  "egyptian_ramesses_vi": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Nomen (birth name) Rꜥ-ms-sw 'Ra has fashioned him,' the same theophoric formula as the other Ramessides: Rꜥ (Re) + ms (participle of msj 'to fashion, bear') + sw 'him.' His fuller nomen incorporates the princely name Imn-ḥr-ḫpš.f ('Amun is upon his strong arm'); the throne name was Nb-mꜣꜥt-Rꜥ.",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, Writings from the Ancient World 33, 2013), p. 131" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 170-171" }]
+  },
+  "egyptian_seti_ii": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Nomen Stẖy (mr-n-Ptḥ) 'He of Seth, beloved of Ptah.' The base Stẖy is a nisbe ('belonging-to' adjective) formed on the god-name Stẖ (Seth/Sutekh), thus 'the one of Seth / man of Seth'; the epithet mr-n-Ptḥ 'beloved of Ptah' follows. Throne name Wsr-ḫprw-Rꜥ stp-n-Rꜥ 'Powerful are the manifestations of Re, chosen of Re.'",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, Writings from the Ancient World 33, 2013), pp. 124-125" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 162-163" }]
+  },
+  "egyptian_setnakhte": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Stẖ-nḫt 'Seth is victorious (strong),' a verbal-sentence name: the god-name Stẖ (Seth) as subject + nḫt 'to be strong, be victorious, prevail.' Borne with the epithet mri-Jmn-Rꜥ. The throne name was Wsr-ḫꜤw-Rꜥ mri-Jmn 'Powerful of appearances is Re, beloved of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, Writings from the Ancient World 33, 2013), p. 129" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 166-167" }]
+  },
+  "egyptian_sitamun": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Sꜣt-Jmn (also written zꜣt-jmn) 'Daughter of Amun,' a genitival theophoric name: sꜣt 'daughter' + the divine name Jmn (Amun), expressing the bearer's filial dedication to the god. The masculine counterpart is Sꜣ-Jmn (Siamun) 'Son of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), p. 289 (names compounded with sꜣt 'daughter of' + divine name)" }, { "kind": "secondary", "reference": "Rainer Hannig, Die Sprache der Pharaonen: Großes Handwörterbuch Ägyptisch–Deutsch (Mainz: von Zabern), s.v. sꜣt 'daughter'" }]
+  },
+  "egyptian_tausret": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Tꜣ-wsr.t 'The Mighty One' (feminine): the feminine definite article/determiner tꜣ 'the' + wsr 'mighty, powerful, strong' + feminine ending -t, i.e. 'the powerful lady.' The throne name was Sꜣt-Rꜥ-mri.t-Jmn 'Daughter of Re, beloved of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 164-165" }, { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), s.v. names in tꜣ- + wsr" }]
+  },
+  "egyptian_tiy_merenese": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Tjy-mr.t-n-Ꜣst 'Tiy (Teye), beloved of Isis': the personal name Tjy/Tiy followed by the theophoric epithet mr.t-n-Ꜣst 'beloved of Isis' (mr 'to love' + the goddess Ꜣst/Isis). The Isis-dedicated second element is a recurrent device in late 19th/early 20th Dynasty royal-women's names.",
+    "sources": [{ "kind": "secondary", "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (London: Thames & Hudson, 2004), section on the early Twentieth Dynasty (Setnakhte's queen)" }, { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), s.vv. Tjy and mri-n-(deity) epithets" }]
+  },
+  "elamite_humban": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "Elamite Humban, understood as 'the commander / the one who commands,' analyzed as a derivative of the Elamite verbal root huba- 'to command.' As chief god he bestows kitin (god-given royal/legal protection). The name is widely embedded in Neo-Elamite theophoric royal names (e.g. Humban-numena, Humban-haltash).",
+    "sources": [{ "kind": "secondary", "reference": "Gwendolyn Leick, A Dictionary of Ancient Near Eastern Mythology (London: Routledge, 1991), s.v. Humban" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. huba- / Humban" }]
+  },
+  "elamite_inshushinak": {
+    "languageFamily": "Elamite (theonym borrowed from Sumerian)",
+    "etymology": "Elamite Inšušinak, a loan from Sumerian d nin-šušinak 'Lord/Lady of Susa' (nin 'lord/lady' + Šušin 'Susa' + genitival -ak). The Elamite form arose by apheresis of the initial nin- (a process otherwise rare in the borrowing language), giving In-šušinak. He is the tutelary god of Susa and the lowland capital.",
+    "sources": [{ "kind": "secondary", "reference": "Jan Tavernier, 'Inshushinak,' in Reallexikon der Assyriologie und Vorderasiatischen Archäologie (and related study), on the Sumerian origin nin-šušinak 'lord of Susa' and the apheresis" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. Inšušinak" }]
+  },
+  "elamite_kiririsha": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "Elamite Kiririša 'Great Goddess (Great Lady),' a compound of kiri / kirir 'goddess, lady' + riš(a) 'great' (cf. the Elamite adjective rišair 'great'). The formation exactly parallels that of her consort Napiriša 'Great God' (napir 'god' + riša 'great'). She is the 'mother of the gods' and mistress of Liyan.",
+    "sources": [{ "kind": "secondary", "reference": "Walther Hinz, The Lost World of Elam (London: Sidgwick & Jackson, 1972), on Kiririša / Napiriša 'great goddess' / 'great god'" }, { "kind": "secondary", "reference": "Heidemarie Koch, studies of the Elamite pantheon (1977; 1995); cf. Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (1987), s.vv. kiri / riša" }]
+  },
+  "elamite_nahhunte": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "Elamite Nahhunte, the sun-god and god of justice (counterpart of Mesopotamian Šamaš). The theonym is identical with the Elamite common noun for 'sun' and in curse formulae stands metonymically for the sun itself. It is morphologically a compound, but its precise internal derivation cannot be securely established.",
+    "sources": [{ "kind": "secondary", "reference": "Matthew W. Stolper, on Nahhunte as a compound noun that is a cognate/homonym of the Elamite word for 'sun' whose precise etymology is undeterminable (Elamite onomastics/lexicography)" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. Nahhunte / nan 'day, sun'" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
