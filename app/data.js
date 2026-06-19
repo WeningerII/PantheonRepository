@@ -216960,6 +216960,188 @@ const ETYMOLOGY = {
     "etymology": "Taíno Atabey (also Atabeyra, Atabex), the primordial mother-goddess of fresh water and fertility, is analyzed by José Juan Arrom as containing the Arawakan element atte / attete 'mother' (a form also used as a respectful term of address for older women), matching the goddess's character as the primordial maternal principle; the name is rendered 'mother of the waters'.",
     "sources": [{ "kind": "scholarly monograph (named Taínist)", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (Siglo XXI, 1975; rev. eds.) — etymologizes Atabey/Atabeyra via atte 'mother'." }, { "kind": "early colonial primary source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498) — first records Atabey as the mother of the zemi Yúcahu." }]
   },
+  // ══ Alphabetical sweep batch 13 (indices 895-974: Turkic/Tengrist, Udmurt, Urartian,
+  //    Vainakh, Vanuatu, Veps, Taino, Tonga, Toraja, Tibetan, Tiv, Tlingit, Wabanaki) ══
+  "taino_boinayel": {
+    "languageFamily": "Arawakan (Taíno)",
+    "etymology": "Boinayel parses as boína 'brown/dark serpent' (the Antillean reflex of an Arawakan serpent term, cf. Amazonian boiúna) + the suffix -el 'son', hence 'Son of the Brown (Rain-)Serpent'. The theonym is built on the same boína element seen in his mother's name Iguanaboína ('iguana-serpent'), where the dark serpent metaphorizes the grey rain-laden clouds; Boinayel is accordingly the rain-bringing twin.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (Mexico: Siglo XXI, 1975/1989) — etymological analysis of Boinayel as 'Hijo de la Serpiente Parda' (boína + -el)." }, { "kind": "primary ethnographic source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios, c. 1498, ch. 25 (Boinayel and his twin Márohu as the cave-zemis of rain)." }]
+  },
+  "taino_maquetaurie_guayaba": {
+    "languageFamily": "Arawakan (Taíno)",
+    "etymology": "The cognomen Guayaba is the Taíno/Arawak word for the guava fruit (guayaba; English 'guava' is borrowed from it), linking this lord of Coaybay (the land of the dead) to the guava, the food the dead were said to crave when they roamed at night. The first element Maquetaurie (var. Maketaori) has no securely established meaning and is left unetymologized; only the Guayaba element is attested with a meaning.",
+    "sources": [{ "kind": "primary ethnographic source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios, c. 1498, chs. 12-13 (Maquetaurie Guayaba, lord of Coaybay, and the dead's association with the guava)." }, { "kind": "scholarly monograph", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (1975); Arrom glosses Coaybay as the 'dwelling place of the dead' and treats guayaba as the Taíno guava in the death-cult complex." }]
+  },
+  "taino_yucahu": {
+    "languageFamily": "Arawakan (Taíno)",
+    "etymology": "The triple name Yúcahu Bagua Maórocoti recorded by Pané analyzes as: Yúcahu = yuca 'cassava/manioc' + -hu (a personal/agentive ending), i.e. 'spirit/giver of cassava'; Bagua 'the sea' (also read 'lord of the sea'); Maórocoti 'without male progenitor / having no male ancestor'. Together Arrom renders it 'Spirit of cassava and of the sea, being without male ancestor', the supreme spirit born of the goddess Atabey.",
+    "sources": [{ "kind": "scholarly article", "reference": "José J. Arrom, 'Taíno Mythology: Notes on the Supreme Being', Latin American Literary Review (1980); also Mitología y artes prehispánicas de las Antillas (1975) — analysis of Yúcahu (yuca + -hu), Bagua 'sea', Maórocoti 'without male progenitor'." }, { "kind": "primary ethnographic source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios, c. 1498 (opening: 'le llaman Yúcahu Bagua Maórocoti')." }]
+  },
+  "tapun_sa_win": {
+    "languageFamily": "Siouan (Lakota)",
+    "etymology": "Lakota Tȟapȟúŋ Šá Wíŋ = tȟapȟúŋ 'cheek' + šá 'red' + wíŋ 'woman', i.e. 'Red Cheek Woman'. She is the mortal Lakota heroine of the Star-Husband narrative; her son, born after her fall from the sky, is named Wičháȟpi Hiŋȟpáya 'Fallen Star' (wičháȟpi 'star' + hiŋȟpáya 'to fall').",
+    "sources": [{ "kind": "primary ethnographic source", "reference": "James R. Walker, The Sun Dance and Other Ceremonies of the Oglala Division of the Teton Dakota (AMNH Anthropological Papers 16, 1917) — recorder of the Lakota Fallen Star (Wičháȟpi Hiŋȟpáya) cycle." }, { "kind": "cultural institution gloss", "reference": "Akta Lakota Museum & Cultural Center, 'Tapun Sa Win' (translates the name as 'Red Cheek Woman'); concurring Lakota-language gloss tȟapȟúŋ 'cheek' / šá 'red' / wíŋ 'woman'." }]
+  },
+  "thracian_heros": {
+    "languageFamily": "Indo-European (Greek-transmitted; Thracian)",
+    "etymology": "On the votive and funerary reliefs the Thracian Rider is named simply Heros (Greek ἥρως 'hero'), the deified-dead/hero-god designation; no native Thracian theonym is recorded for the figure as such. Detschew proposed that this 'hero' label also answers to a genuine Thracian cognate *ierus / *iarus 'hero' (with Celtic parallels), so the appellation means 'hero' whether taken as the Greek word or its Thracian counterpart.",
+    "sources": [{ "kind": "scholarly reference work", "reference": "Dimiter Detschew, Die thrakischen Sprachreste (Vienna, 1957), p. 200 — derives the Rider's name from a Thracian term for 'hero', *ierus/*iarus, with Celtic parallels." }, { "kind": "encyclopedia", "reference": "'Thracian Rider', Encyclopedia.com (Encyclopedia of Religion) — reports the inscriptional title Heros/ἥρως 'hero' and cites Detschew 1957:200 for the Thracian 'hero' etymology." }]
+  },
+  "tibetan_nyenchen_tanglha": {
+    "languageFamily": "Sino-Tibetan (Tibetic / Classical Tibetan)",
+    "etymology": "gNyan-chen Thang-lha analyzes transparently in Tibetan as gnyan 'a class of fierce wild mountain/land spirit' (the same word denotes the wild argali, emblem of untamed fierceness) + chen 'great' + thang 'plain, steppe, flatland' + lha 'god, deity'; i.e. 'Great gNyan(-spirit), God of the Plain (of the Northern Plateau/Byang-thang)'. He is a pre-eminent yul-lha / gnyan mountain-god of northern Tibet and guardian of Lake gNam-mtsho.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (The Hague: Mouton, 1956) — standard treatment of gNyan-chen Thang-lha as a gnyan/yul-lha mountain deity." }, { "kind": "lexical / philological", "reference": "Classical Tibetan lexicography for the constituent morphemes (gnyan 'fierce mountain/land numen; argali', chen 'great', thang 'plain', lha 'deity'); cf. the dedicated study by B. Bellezza and the academic monograph 'The cult of the mountain god gNyan chen thang lha in Tibet'." }]
+  },
+  "tibetan_tonpa_shenrab": {
+    "languageFamily": "Sino-Tibetan (Tibetic; Classical Tibetan)",
+    "etymology": "Tibetan (Wylie) ston pa gShen rab, 'Teacher Shenrab'. The honorific ston pa ('teacher, founder, expounder') prefixes the name gShen rab (gShen rab Mi bo che), the legendary expounder of g.yung drung (Everlasting) Bon. Snellgrove's translation of the gZi brjid renders gShen rab Mi bo che 'the teacher gShen rab', and ston pa is the standard Tibetan term for the founding teacher of a doctrine (paralleling its use for Sakyamuni in Buddhist Tibetan).",
+    "sources": [{ "kind": "book", "reference": "Snellgrove, David L. The Nine Ways of Bon: Excerpts from the gZi-brjid. London Oriental Series 18. London: Oxford University Press, 1967 (translation glossing gShen rab Mi bo che as 'the teacher gShen rab')." }, { "kind": "book", "reference": "Karmay, Samten G. The Treasury of Good Sayings: A Tibetan History of Bon. London Oriental Series 26. London: Oxford University Press, 1972 (ston pa gShen rab in the Bon historical tradition)." }]
+  },
+  "tibetan_yullha": {
+    "languageFamily": "Sino-Tibetan (Tibetic)",
+    "etymology": "Tibetan (Wylie) yul lha, lit. 'god of the place/country', a compound of yul 'country, place, territory, locality' + lha 'god, deity'. Denotes the class of indigenous territorial deities who preside over a defined valley, district or settlement, typically resident on an overlooking mountain or ridge.",
+    "sources": [{ "kind": "article", "reference": "Pommaret, Francoise. 'Yul and yul lha: The Territory and its Deity in Bhutan.' Bulletin of Tibetology 40.1 (2004): 39-67 (analysing yul 'territory' + lha 'deity')." }, { "kind": "reference", "reference": "Rangjung Yeshe Tibetan-English Dharma Dictionary, s.v. 'yul lha' ('local deity, god of the country/place'); yul 'country, place' + lha 'god'." }]
+  },
+  "tiv_akombo": {
+    "languageFamily": "Niger-Congo (Bantoid; Tivoid)",
+    "etymology": "Tiv akombo, glossed by Akiga and Downes as the 'magical emblems and magical forces' (the cult emblems / fetishes) standing behind every life contingency; an impersonal spirit-force class, distinct from tsav (human mystical power) and from the ancestors. Each akombo is identified by a material emblem (of sticks, soil, animal parts, shells, stones, feathers) through which the unseen power is accessed.",
+    "sources": [{ "kind": "book", "reference": "Akiga (Sai). Akiga's Story: The Tiv Tribe as Seen by One of Its Members. Translated and annotated by Rupert East. London: Oxford University Press for IAI, 1939 (akombo = magical emblems/forces)." }, { "kind": "book", "reference": "Downes, Rupert M. Tiv Religion. Ibadan: Ibadan University Press, 1971 (the akombo cult)." }]
+  },
+  "tiv_aondo": {
+    "languageFamily": "Niger-Congo (Bantoid; Tivoid)",
+    "etymology": "Tiv Aondo, the high god, whose name simply means 'sky'. A deus otiosus: the Tiv say he created the earth and then withdrew. The same word denotes the physical sky/heaven, so the high god is identified with the sky itself.",
+    "sources": [{ "kind": "book", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. Ethnographic Survey of Africa, Western Africa Part VIII. London: International African Institute, 1953 (Aondo = 'sky', a withdrawn high god)." }, { "kind": "encyclopedia", "reference": "Encyclopedia.com / Encyclopedia of Religion, s.v. 'Tiv Religion' (Aondo 'sky', the disengaged sky-god of the central Benue valley)." }]
+  },
+  "tlingit_raven": {
+    "languageFamily": "Na-Dene (Tlingit)",
+    "etymology": "Tlingit Yeil (Yel), 'raven', the name of the bird and of the trickster-demiurge culture-hero; it also names the Yeil (Raven) moiety of Tlingit social organisation. Recorded by Swanton in his Tlingit texts and confirmed in modern Tlingit lexicography (Naish-Story; Sealaska Heritage), where yeil is the standard word for 'raven'.",
+    "sources": [{ "kind": "book", "reference": "Swanton, John R. Tlingit Myths and Texts. Bureau of American Ethnology Bulletin 39. Washington: Smithsonian Institution, 1909 (the Raven cycle; Yeil)." }, { "kind": "reference", "reference": "Story, Gillian L., and Constance M. Naish. Tlingit Verb Dictionary / Tlingit Noun Dictionary (SIL), and Sealaska Heritage Institute Tlingit Dictionary, s.v. yeil 'raven'." }]
+  },
+  "tonga_leza": {
+    "languageFamily": "Niger-Congo (Bantu; Central/Botatwe)",
+    "etymology": "Leza, the widespread Central-Bantu high-god name shared across the Tonga–Ila of southern Zambia. Historical-linguistic reconstruction derives it from the proto-Bantu verbal root *-ded- 'to nurture, cherish, nurse (as a parent cares for a child)' with a causative formation, yielding the sense of the deity as 'the Nurturer/Sustainer' — a development distinct from the older Bantu conception of God as a remote creator. The form is unwritten/Latin-script (no native orthography).",
+    "sources": [{ "kind": "book", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan (locus classicus for Leza among the Ila/Tonga)." }, { "kind": "journal-article", "reference": "Fourshey, Catherine Cymone, 'Leza, Sungu, and Samba: Digital Humanities and Early Bantu History', History in Africa (Cambridge University Press), deriving Leza from proto-Bantu *-ded- 'to nurture/cherish'." }]
+  },
+  "tonga_leza_shikakunamo": {
+    "languageFamily": "Niger-Congo (Bantu; Central/Botatwe)",
+    "etymology": "Shikakunamo, an epithet of the high god Leza among the Ila/Tonga, glossed 'the besetting one / he who does not let go' — the one who will never leave a person alone, sending one affliction after another (illustrated in the recorded saying that 'Shikakunamo sits on the back of every one of us, and we cannot shake him off'). Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan, on the name Shikakunamo as 'the besetting one'." }, { "kind": "book", "reference": "Werner, Alice (1933). Myths and Legends of the Bantu, ch. III 'Legends of the High Gods', reporting Shikakunamo 'the besetting one, the one who will never let you alone' (after Smith & Dale)." }]
+  },
+  "toraja_pong_banggai_di_rante": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; South Sulawesi, Toraja-Sa'dan)",
+    "etymology": "Pong Banggai di Rante, the earth-god of the Sa'dan-Toraja cosmic triad, glossed by the scholarship as 'master/lord of the plains' (the earth as a level expanse): pong 'lord, master' + rante 'plain, level field/ceremonial ground', the deity ruling the earthly plane between sky and underworld. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I. The Hague: Martinus Nijhoff (the three cosmic gods; Pong Banggai di Rante as god of the earth)." }, { "kind": "encyclopedia", "reference": "'Toraja Religion', Encyclopedia of Religion (drawing on Nooy-Palm), glossing Pong Banggai di Rante as 'the master of the plains', god of the earth." }]
+  },
+  "toraja_pong_tulak_padang": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; South Sulawesi, Toraja-Sa'dan)",
+    "etymology": "Pong Tulak Padang, the underworld god who upholds the earth — 'the lord who supports the earth': pong 'lord, master' + tulak 'to support, prop up, push up' + padang 'earth, land'. In Toraja cosmology he carries the earth (in the palms of his hands), keeping the world of mankind in equilibrium. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Martinus Nijhoff ('Pong Tulak Padang is the Toraja Atlas; he carries the earth ... in the palms of his hands')." }, { "kind": "dictionary", "reference": "van der Veen, H. (1940). Tae' (Zuid-Toradjasch)–Nederlandsch Woordenboek. 's-Gravenhage: Nijhoff (Toraja lexicon: padang 'earth/land', pong 'lord', tulak 'to support/prop')." }]
+  },
+  "toraja_puang_matua": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; South Sulawesi, Toraja-Sa'dan)",
+    "etymology": "Puang Matua, the high/creator god of Aluk To Dolo, literally 'the Old Lord / the Ancient One': puang 'lord, master' + matua 'old, aged, ancient'. Selected by van der Veen as the term rendering 'God' in the Toraja Bible. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I. The Hague: Martinus Nijhoff (Puang Matua as the high god)." }, { "kind": "dictionary", "reference": "van der Veen, H. (1940). Tae' (Zuid-Toradjasch)–Nederlandsch Woordenboek. 's-Gravenhage: Nijhoff (puang 'lord/master', matua 'old'); van der Veen adopted Puang Matua = 'God' in his Bible translation." }]
+  },
+  "totonac_aktsini": {
+    "languageFamily": "Totonacan (Totonac-Tepehua)",
+    "etymology": "Aktsini' (also Aktzin, Ā'ktzini'), the Totonac thunder/storm god, glossed in the Totonac language as 'He who makes Thunder / He who thunders'. He is the 'Old Thunder' (Sp. Trueno Viejo) of Gulf-Coast Totonac belief, and the ruined city El Tajín ('thunder/lightning') is named for this storm power.",
+    "sources": [{ "kind": "book", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista (Totonac thunder deity Aktsini'/Tajín)." }, { "kind": "book", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Washington: Smithsonian Institution, Institute of Social Anthropology Publication 13 (Aktsini' as the Thunder Lord, 'He who makes Thunder')." }]
+  },
+  "totonac_twelve_thunderbolts": {
+    "languageFamily": "Totonacan (Totonac-Tepehua)",
+    "etymology": "The collective of twelve old thunder-beings (storm-spirits) bears the Totonac name Tajín, meaning 'thunder / lightning' in the Totonac language — the same word that names the ancient city El Tajín, said still to be inhabited by these twelve thunders. They are headed by / overlap with Aktsini', the Thunder Lord.",
+    "sources": [{ "kind": "book", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista (the twelve thunders / Tajín)." }, { "kind": "book", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Washington: Smithsonian Institution, Institute of Social Anthropology Publication 13 (Tajín 'thunder/lightning'; the thunder-beings of El Tajín)." }]
+  },
+  "turkic_erlik": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic ärklig / erklig 'mighty, powerful, possessing authority', a deverbal/denominal adjective in -lig built on erk 'power, strength, authority, free will'. The epithet 'the Mighty One' is already attested of an underworld ruler in the Old Turkic (Yenisei/Altai) runic corpus and survives as the name of the death- and underworld-god Erlik.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (Oxford: Clarendon Press, 1972), s.vv. erk, ärklig 'having power, mighty'" }, { "kind": "philology", "reference": "Old Turkic runic attestation of ärklig 'mighty' as an epithet of the lord of the dead (Yenisei/Altai inscriptions, 8th-9th c.)" }]
+  },
+  "turkic_od": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic ot 'fire' (Proto-Turkic *ōt), the ordinary word for fire, here personified as the fire-spirit/fire-father of the hearth in Turko-Mongol religion.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. ot 'fire'" }, { "kind": "monograph", "reference": "J.-P. Roux, La religion des Turcs et des Mongols (Paris: Payot, 1984), on the cult of fire (ot) among the Turks" }]
+  },
+  "turkic_tengri": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic teŋri 'sky, heaven; God, the supreme sky-deity'. The form is attested from the 8th-century Orkhon inscriptions onward as both 'sky/heaven' and the name of the supreme Sky-God; its ultimate (possibly non-Turkic / Wanderwort) origin is debated, but the gloss 'sky, heaven, God' is firmly established.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. teŋri: 'sky, heaven; God' (pp. 523-524)" }, { "kind": "epigraphy", "reference": "Orkhon inscriptions (Kül Tegin / Bilge Kagan), 8th c., where teŋri denotes both the sky and the Sky-God" }]
+  },
+  "turkic_umay": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic umay 'placenta, afterbirth, womb'; the same word is used as the name of the protective goddess of birth and of women and children. The theonym is attested already in the Kül Tegin inscription (umay teg ögüm katun 'my mother the Khatun, like (the goddess) Umay').",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. umay 'placenta, afterbirth', also as the name of the goddess (pp. 164-165)" }, { "kind": "epigraphy", "reference": "Orkhon inscription of Kül Tegin, 8th c. (umay teg ögüm katun ...)" }]
+  },
+  "udmurt_inmar": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Udmurt theonym whose first element is in 'sky, heaven' (the regular Udmurt word for the sky); the name (also recorded Ilmar) is connected to the Finno-Ugric stem *ilma 'air, sky, weather' (cf. Finnic Ilmarinen). The exact analysis of the second element -mar is debated, but the 'sky/heaven' base of the high sky-god's name is secure.",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05" }, { "kind": "monograph", "reference": "Uno Holmberg (Harva), Permalaisten uskonto (1914), on Inmar / Ilmar and the FU *ilma 'sky' connection" }]
+  },
+  "udmurt_inmumy": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Transparent Udmurt compound in 'sky, heaven' + mumy 'mother' = 'Sky-Mother / Heaven-Mother', one of the -mumy ('-mother') mother-goddesses of the Udmurt pantheon (alongside Shundy-mumy 'Sun-Mother', Gudyri-mumy 'Thunder-Mother').",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05 (in-, mumy 'mother', the series of -mumy goddesses)" }]
+  },
+  "udmurt_kyldysin": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Udmurt theonym (also Kylchin) built on the verbal root kyl-/kyldy- 'to create, bring forth, beget' (cf. kyldytis 'creator'); the god is accordingly a creator and patron of fertility, livestock-increase and childbirth. The precise segmentation of the second element is not fully settled.",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05" }, { "kind": "monograph", "reference": "V. Vladykin, Religiozno-mifologicheskaia kartina mira udmurtov (Izhevsk, 1994), on Kyldysin / kyldy- 'create'" }]
+  },
+  "udmurt_shundy_mumy": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Transparent Udmurt compound shundy 'sun' + mumy 'mother', literally 'Sun-Mother', the solar mother-goddess; member of the -mumy goddess series.",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05 (shundy 'sun', mumy 'mother')" }]
+  },
+  "udmurt_vumurt": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Transparent Udmurt compound vu 'water' (Finno-Ugric *wete) + murt 'man, person' (a borrowing from Indo-Iranian *mertV 'man, mortal'), literally 'Water-Man', the master-spirit of the water; parallel to Nules-murt 'Forest-Man'.",
+    "sources": [{ "kind": "monograph", "reference": "Uno Holmberg (Harva), Permalaisten uskonto (1914), on Vu-murt 'water-man'" }, { "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05 (vu 'water', murt 'man/person')" }]
+  },
+  "urartian_haldi": {
+    "languageFamily": "Hurro-Urartian",
+    "etymology": "National god of Urartu. The leading scholarly etymology connects the name with Hurrian heldi 'high, exalted', suiting his position as head of the state pantheon; the name is, however, not of clearly Urartian origin (it appears beside Assyrian personal names already in the 13th c. BCE), so the derivation remains a hypothesis.",
+    "sources": [{ "kind": "scholarly_etymology", "reference": "M. C. Astour, connecting Urartian/Hurrian Haldi with Hurrian heldi 'high, exalted' (leading hypothesis cited in the Urartian-studies literature)" }, { "kind": "epigraphy", "reference": "Meher Kapisi god-list (CTU A 3-1), where Haldi heads the pantheon with the largest sacrificial allotment" }]
+  },
+  "urartian_shivini": {
+    "languageFamily": "Hurro-Urartian (theonym of Indo-European/Hittite origin)",
+    "etymology": "Urartian Šiuini (read Šiwini/Siwini), the sun-god of the Urartian triad. Per Diakonoff and Vyacheslav Ivanov, the equation with Hurrian Šimige is linguistically impossible; instead the name was borrowed from a Hittite (Anatolian) dialect, Hittite šiu- / šiuni- / šiuanni- 'god' (earlier 'sun-god'), cf. šiuatt- 'daytime', ultimately from Proto-Indo-European *dyeu- 'god of the bright daytime sky'. Meaning: '(the) god / sun-god'.",
+    "sources": [{ "kind": "scholar", "reference": "I. M. Diakonoff and V. V. Ivanov, on the etymology of Urartian Šiuini as a Hittite/Indo-European *dyeu- 'god' borrowing (Hittite šiu-/šiuni-/šiuanni-), rejecting the Hurrian Šimige equation" }, { "kind": "book", "reference": "M. Salvini (ed.), Corpus dei testi urartei (CTU); cf. the Mehir Kapısı inscription CTU A 3-1 listing Šiuini in the triad with Ḫaldi and Teišeba" }]
+  },
+  "vainakh_dela": {
+    "languageFamily": "Nakh (Northeast Caucasian)",
+    "etymology": "Chechen Dela (Дела), Ingush Djala/Djаla (Дяла), the supreme creator-god. The name is the Nakh appellative del-/dal- 'god, deity' itself; the same element forms compound theonyms (e.g. Dela-malkh 'sun-god') and survives as the living Chechen/Ingush word for God. Meaning: '(the) God, deity'.",
+    "sources": [{ "kind": "book", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), chapter on religion and mythology, list of reconstructed Vainakh deities (Dela; del- 'god')" }]
+  },
+  "vainakh_pkharmat": {
+    "languageFamily": "Nakh (Northeast Caucasian)",
+    "etymology": "Chechen Pẖarmat (Пхьармат), the Nart fire-bringer (counterpart of Prometheus and of Georgian Amirani). Transparent compound of pẖar 'smith, blacksmith' + mat(t) 'land, country', i.e. 'smith of the land/country'; the figure is himself a blacksmith who steals heavenly fire from Sela. The element pẖar 'smith' is an attested Chechen lexeme.",
+    "sources": [{ "kind": "book", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), mythology chapter (Pkharmat as Nart smith and fire-bringer)" }, { "kind": "dictionary", "reference": "A. D. Vagapov, Etimologicheskii slovar' chechenskogo yazyka (Etymological Dictionary of the Chechen Language), Tbilisi: Meridiani, 2011 / Grozny 2019, s.v. pẖar 'smith'" }]
+  },
+  "vanuatu_marawa": {
+    "languageFamily": "Oceanic (Austronesian; Mota, Banks Islands)",
+    "etymology": "Marawa, the spider-spirit (vui) and rival/helper of Qat in the Banks Islands cycle. The name is the Mota (Banks Islands) word marawa 'spider'; the being is inseparable from the spider itself. Meaning: 'spider'.",
+    "sources": [{ "kind": "book", "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-lore (Oxford, 1891), ch. 10 (Marawa the spider in the Qat cycle)" }, { "kind": "dictionary", "reference": "R. H. Codrington and J. Palmer, A Dictionary of the Language of Mota, Sugarloaf Island, Banks' Islands (1896), s.v. marawa 'spider'" }]
+  },
+  "veps_metsanisand": {
+    "languageFamily": "Finnic (Uralic)",
+    "etymology": "Vepsian mecan ižand 'forest-master', the master-spirit of the forest. Transparent compound: mec 'forest' (genitive mecan) + ižand 'master, lord, head of household'. Meaning: 'master/lord of the forest'.",
+    "sources": [{ "kind": "book", "reference": "Irina Yu. Vinokurova, Mifologiya vepsov: entsiklopediya (Mythology of the Veps: an Encyclopaedia), Petrozavodsk, 2015 (forest master-spirit; mec 'forest', ižand 'master')" }]
+  },
+  "veps_pertinizand": {
+    "languageFamily": "Finnic (Uralic)",
+    "etymology": "Vepsian pertin ižand 'house-master', the domestic master-spirit (counterpart of the Russian domovoi). Transparent compound: pert' 'house, hut' (genitive pertin) + ižand 'master, lord'. Meaning: 'master/lord of the house'.",
+    "sources": [{ "kind": "book", "reference": "Irina Yu. Vinokurova, Mifologiya vepsov: entsiklopediya, Petrozavodsk, 2015 (pertin ižand, the house master-spirit; pert' 'house', ižand 'master')" }]
+  },
+  "veps_vedenizand": {
+    "languageFamily": "Finnic (Uralic)",
+    "etymology": "Vepsian veden ižand 'water-master', the master-spirit of the waters (paired with the mistress veden emag). Transparent compound: vezi 'water' (genitive veden) + ižand 'master, lord'. Meaning: 'master/lord of the water'.",
+    "sources": [{ "kind": "book", "reference": "Irina Yu. Vinokurova, Mifologiya vepsov: entsiklopediya, Petrozavodsk, 2015 (veden ižand 'master of water', alongside veden emag 'mistress of water'; vezi 'water', ižand 'master')" }]
+  },
+  "wabanaki_gluskap": {
+    "languageFamily": "Algonquian (Eastern Algonquian)",
+    "etymology": "Wabanaki culture-hero, recorded as Gluskap / Glooscap / Gluskabe. The name means 'liar, deceiver', built on the attested Eastern Algonquian verb stem for 'to tell lies': Maliseet-Passamaquoddy koluskap- (koluskapiw 'he tells lies') and Mi'kmaq kluskap- (kluskapewit), so understood as 'the deceiver/liar' (in legend, from his deceiving an evil being about his weakness). NOT 'man from nothing', a gloss that properly belongs to the distinct figure Odzihozo.",
+    "sources": [{ "kind": "book", "reference": "Charles G. Leland, The Algonquin Legends of New England (1884), recording the Gluskap/Glooskap cycle (with S. T. Rand, Legends of the Micmacs, 1894)" }, { "kind": "dictionary", "reference": "David A. Francis and Robert M. Leavitt, A Passamaquoddy-Maliseet Dictionary (Peskotomuhkati Wolastoqewi Latuwewakon), documenting koluskap- 'to tell lies' (Mi'kmaq kluskap-), the lexical basis of the name 'liar'" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
