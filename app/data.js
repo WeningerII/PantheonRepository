@@ -216601,6 +216601,248 @@ const ETYMOLOGY = {
     "etymology": "Ovambo (and wider Atlantic-coast Bantu) Kalunga / Karunga, the high-god name whose attested semantic range is 'God / the creator', 'Death (and the lord of the netherworld)', and 'the sea / abyss'. The same form is shared into Herero (Ndjambi Karunga) and Kimbundu/Umbundu (Kalunga = Death, netherworld, or the sea), reflecting an old Bantu term for the divine ordering power and the boundary between worlds.",
     "sources": [{ "kind": "book", "reference": "Aarni, Teddy (1982). The Kalunga Concept in Ovambo Religion from 1870 Onwards. Stockholm: Almqvist & Wiksell (Kalunga as the Ovambo high-god concept covering God, Death, and the unknown)" }, { "kind": "book", "reference": "Estermann, Carlos (1976). The Ethnography of Southwestern Angola, vol. 1: The Ambo Ethnic Group. New York: Africana (Kalunga as the otiose creator/high god of the Ambo)" }]
   },
+  // ══ Alphabetical sweep batch 11 (indices 735-814: Roman historical names, Sabaean,
+  //    Sami, Santal, San, Pawnee, Purepecha, Polynesian, Ndebele) ══
+  "pawnee_morning_star": {
+    "languageFamily": "Caddoan",
+    "etymology": "The Morning Star (identified with the planet Mars) is named u-pirikucu, recorded by Ralph Linton as meaning literally 'big star'. In the Morning Star sacrifice the destined captive was ritually pronounced Opirikuts, a related dedicatory form derived from the same 'star' stem (pirik(u)-).",
+    "sources": [{ "kind": "book", "reference": "Linton, Ralph. The Sacrifice to the Morning Star by the Skidi Pawnee (Field Museum of Natural History, Anthropology Leaflet 6, 1922): 'The Morning Star is Mars, u-pirikucu (literally, big star), or the god of war.'" }, { "kind": "journal", "reference": "Linton, Ralph. 'The Origin of the Skidi Pawnee Sacrifice to the Morning Star.' American Anthropologist 28(3), 1926." }]
+  },
+  "pawnee_north_star": {
+    "languageFamily": "Caddoan",
+    "etymology": "The North Star (Polaris) bears a descriptive Pawnee name meaning literally 'the Star That Does Not Walk Around' (i.e., the star that does not move). Appointed by Tirawa to stand motionless in the north as chief of the stars, it was likened by the Skidi to Tirawahat himself. (The meaning is securely attested by a named scholar; the underlying native word-form is recorded only in tertiary sources and is therefore not asserted here.)",
+    "sources": [{ "kind": "book", "reference": "Williamson, Ray A. Living the Sky: The Cosmos of the American Indian (Houghton Mifflin, 1984): the North Star's name in Pawnee is literally 'the Star That Does Not Walk Around', and it was compared to the god Tirawahat." }]
+  },
+  "pawnee_pah_moon": {
+    "languageFamily": "Caddoan",
+    "etymology": "Pah is the ordinary Pawnee/Skiri noun for 'the moon'; the deity name is the bare common noun. In the Skidi creation account the Moon (Pah) is set by Tirawa in the west as the female counterpart of the Sun (Sakuru), the pair begetting the first boy.",
+    "sources": [{ "kind": "book", "reference": "Parks, Douglas R. & Pratt, Lula Nora. A Dictionary of Skiri Pawnee (University of Nebraska Press, 2008), glossing the Skiri noun for 'moon' (pah)." }, { "kind": "book", "reference": "Dorsey, George A. The Pawnee: Mythology, Part I (Carnegie Institution, 1906) — Skidi account placing Pah, the Moon, in the west opposite the Sun." }]
+  },
+  "pawnee_shakuru_sun": {
+    "languageFamily": "Caddoan",
+    "etymology": "Shakuru (Skiri Pawnee Sakuuru', also written Sakuru) is simply the ordinary Pawnee/Skiri noun for 'the sun'; the divine name is the bare common noun. Placed by Tirawa in the east, the Sun (Sakuru) is paired with the Moon (Pah). The element appears in personal names such as that of the ethnographer James R. Murie (Pawnee name Sa-ku-ru-ta).",
+    "sources": [{ "kind": "book", "reference": "Parks, Douglas R. & Pratt, Lula Nora. A Dictionary of Skiri Pawnee (University of Nebraska Press, 2008) — the first dictionary of a Caddoan language, glossing sakuuru' 'sun'." }, { "kind": "book", "reference": "Dorsey, George A. The Pawnee: Mythology, Part I (Carnegie Institution, 1906) — Skidi creation account in which Sakuru/Shakuru, the Sun, is set in the east." }]
+  },
+  "phrygian_attis": {
+    "languageFamily": "Phrygian (Indo-European, Anatolian-area)",
+    "etymology": "The etymology of Attis is genuinely debated and is not securely attested in the surviving Paleo-Phrygian inscriptions. (1) An ancient folk-etymology preserved by the Christian apologist Arnobius derives the name from a Phrygian word for the he-goat: Arnobius glosses attagus as Phrygian for 'hircus' (he-goat), and the aetiological myth has the exposed child suckled by a goat and hence called Attis (Phrygian attagi 'goat'). The Greek by-form atthgos/attagos for a kind of bird/goat is noted by ancient lexicographers (e.g. Hesychius, Eustathius). (2) Modern scholarship treats this as folk-etymology: Attis (with by-forms Ates, Ata) was a common Anatolian/Phrygian personal name and priestly title, and any link to roots for 'father' (at-) or to vegetation ('evergreen', 'year') is unproven. Presented honestly: the name is most defensibly described as a native Phrygian/Anatolian personal name of uncertain meaning, with the ancient 'he-goat' gloss recorded but not endorsed by current scholars.",
+    "sources": [{ "kind": "ancient-source", "reference": "Arnobius of Sicca, Adversus Nationes V.6-7 (early 4th c. CE), reporting the Phrygian aetiology that derives Attis from the Phrygian word for the he-goat (attagus = hircus)." }, { "kind": "book", "reference": "Roller, Lynn E. In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999) — argues 'Attis' (with Ates/Ata) was a common Anatolian personal name and priestly title, and that its etymology is uncertain." }, { "kind": "book", "reference": "Vermaseren, M. J. Cybele and Attis: The Myth and the Cult (Thames & Hudson, 1977)." }]
+  },
+  "poia": {
+    "languageFamily": "Algonquian (Blackfoot/Siksika)",
+    "etymology": "Blackfoot Poïa, glossed 'Scarface' (Scar-Face), the name borne by the hero in derision because of the scar on his face before the Sun removes it.",
+    "sources": [{ "kind": "book", "reference": "George Bird Grinnell, Blackfoot Lodge Tales: The Story of a Prairie People (1892) — Scarface / origin-of-the-Medicine-Lodge narrative" }, { "kind": "book", "reference": "Walter McClintock, The Old North Trail (1910), ch. 'Legend of Poïa', which glosses 'Poïa (Scarface)'" }]
+  },
+  "polynesian_kaitangata": {
+    "languageFamily": "Austronesian (Polynesian, Māori)",
+    "etymology": "Compound Kai-tangata 'man-eater / eat-people': kai 'to eat; food' + tangata 'person, man'. The cannibal sky-goddess Whaitiri, deceived by the name into thinking him a fellow cannibal, descended to marry him.",
+    "sources": [{ "kind": "dictionary", "reference": "Edward Tregear, The Maori-Polynesian Comparative Dictionary (1891) — entries KAI ('food; to eat') and TANGATA ('a man'); name discussed under Kaitangata/Whaitiri" }, { "kind": "book", "reference": "George Grey, Polynesian Mythology (1855) — Tāwhaki cycle, where Kai-tangata ('man-eater') is so understood by Whaitiri" }]
+  },
+  "polynesian_wahieroa": {
+    "languageFamily": "Austronesian (Polynesian, Māori)",
+    "etymology": "Compound Wahie-roa 'long firewood / long piece of firewood': wahie 'firewood' + roa 'long'. Per Grey, Tāwhaki's wife had brought home a long piece of firewood to warm him, and the son born thereafter was named to fix the wrong done to Tāwhaki and the duty of vengeance.",
+    "sources": [{ "kind": "dictionary", "reference": "Edward Tregear, The Maori-Polynesian Comparative Dictionary (1891) — entries WAHIE ('firewood') and ROA ('long')" }, { "kind": "book", "reference": "George Grey, Polynesian Mythology (1855) — Tāwhaki/Rata cycle, narrating the naming of Wahieroa" }]
+  },
+  "purepecha_cuerauaperi": {
+    "languageFamily": "Language isolate (Purépecha/Tarascan)",
+    "etymology": "Cuerauáperi 'she who unties (loosens) in the womb', i.e. 'she who gives birth / the creatress', from the verb cuerani 'to untie; to die' + the particle -ua 'in the womb'; the same verb underlies the Tarascan conception of death as 'untying', making her a deity of both life and death.",
+    "sources": [{ "kind": "book", "reference": "Roberto Martínez González, Cuiripu: cuerpo y persona entre los antiguos p'urhépecha (UNAM, Instituto de Investigaciones Históricas) — morphological analysis of Cuerauáperi and the verb cuerani 'desatar/morir'" }, { "kind": "manuscript", "reference": "Relación de Michoacán (c. 1539-41) — primary attestation of Cuerauáperi as creator-mother of the gods" }]
+  },
+  "purepecha_curicaueri": {
+    "languageFamily": "Language isolate (Purépecha/Tarascan)",
+    "etymology": "Curicaueri (Curicaveri) 'the Great Fire / the Great Bonfire' (El Gran Fuego / La Gran Hoguera): curi 'fire' + caheri 'great'. The same root curi underlies curiti/curita (fire-priests, lit. tied to 'fire') and the title curí-htsit-acha ('the lord who takes charge of the fire').",
+    "sources": [{ "kind": "article", "reference": "Instituto de Investigaciones Sociales, UNAM — 'Tarascos o Purépechas: información etnográfica', giving curi 'fuego' + caheri 'grande' = 'El Gran Fuego/La Gran Hoguera'" }, { "kind": "manuscript", "reference": "Relación de Michoacán (c. 1539-41) — primary attestation of Curicaueri as the Tarascan fire/sun god, patron of the Uacúsecha" }]
+  },
+  "purepecha_xaratanga": {
+    "languageFamily": "Tarascan (Purépecha; language isolate)",
+    "etymology": "Tarascan (Purépecha) theonym Xarátanga, analyzed by Cristina Monzón as built on the verbal root xara- 'to appear / to show oneself, become visible' (cf. Tarascan xarani 'to appear'), yielding a sense for the moon-goddess such as 'she who appears (everywhere)' / 'the one who shows herself, who shines'. Monzón notes competing readings ('the one who lights up/shines'; 'the one who makes another have pleasure/contentment'); the 'appearing/becoming visible' analysis is the one consonant with her lunar character. Native name recorded in the 16th-c. Relación de Michoacán.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Cristina Monzón García, 'Los principales dioses tarascos: un ensayo de análisis etimológico en la cosmología tarasca', Relaciones: Estudios de Historia y Sociedad 26, no. 104 (2005): 136–168 (El Colegio de Michoacán)" }, { "kind": "primary-source", "reference": "Relación de Michoacán (anon., attr. Fray Jerónimo de Alcalá), c. 1539–41" }]
+  },
+  "redhorn": {
+    "languageFamily": "Siouan (Hočąk / Winnebago)",
+    "etymology": "English 'Red Horn' is a translation of the Hočąk (Winnebago) name Hešucka, glossed 'Red-horn' (he- 'horn' + šuc 'red' + -ka proper-name suffix), after the red horn-shaped lock of hair at his ear. He bears two further Hočąk names recorded by Radin: Wągíšcahorùšika 'He-who-wears(-human/man-)faces-on-his-ears' (the sacred name, = registry's 'He-who-wears-human-heads-as-earrings'; cf. shorter Įcorúšika 'Wears Faces on his Ears'), and a name rendered 'He-who-is-hit-with-deer-lungs'.",
+    "sources": [{ "kind": "scholarly-ethnography", "reference": "Paul Radin, The Winnebago Tribe (37th Annual Report, Bureau of American Ethnology, 1923); also Radin, Winnebago Hero Cycles (1948)" }, { "kind": "scholarly-reference", "reference": "Richard L. Dieterle, The Encyclopedia of Hočąk (Winnebago) Mythology (hotcakencyclopedia.com), s.v. Redhorn — citing Radin for the Hočąk name-forms Hešucka, Wągíšcahorùšika, Įcorúšika" }]
+  },
+  "roman_aeneas_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The dynastic cognomen Silvius (of the Alban kings) derives from Latin silva 'forest, woodland', with the aetiology in Livy and Dionysius that the line's progenitor was born in the woods; hence 'of the forest / forest-born'. (The praenomen Aeneas is the Latinized Greek name of his demigod ancestor.) Latin silva is treated by de Vaan in his Etymological Dictionary of Latin.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.v. silva" }, { "kind": "primary-source", "reference": "Livy, Ab Urbe Condita 1.3.6–7 (Silvius so named 'casu quodam in silvis natus'); Dionysius of Halicarnassus, Roman Antiquities 1.70–71" }]
+  },
+  "roman_alba_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Bears the Alban dynastic cognomen Silvius < Latin silva 'forest, woodland' ('forest-born'; aetiology in Livy/Dionysius). The personal name Alba is the eponym shared with Alba Longa, from Latin albus 'white' (the traditional 'white' she-sow / white town association); per Livy 1.3.8 a king Silvius Alba gives the city its name.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.vv. silva, albus" }, { "kind": "primary-source", "reference": "Livy, Ab Urbe Condita 1.3.8; Dionysius of Halicarnassus, Roman Antiquities 1.71.3" }]
+  },
+  "roman_augustus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Honorific title Augustus, 'the venerable / consecrated, majestic one', a derivative of the same root as augeō 'to increase, augment' and augur (Proto-Italic *aug-, PIE *h₂eug- 'increase'); originally of things consecrated/sanctioned by augury, hence 'august, venerable'. Voted to Octavian by the Senate in 27 BCE. de Vaan derives augustus, augeō and augur from this root.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.vv. augeō / augur / augustus" }, { "kind": "primary-source", "reference": "Suetonius, Divus Augustus 7 (sense 'sancta … augusta', linked to augury); Augustus, Res Gestae 34" }]
+  },
+  "roman_aurelia_cotta": {
+    "languageFamily": "Italic (Latin, from Sabine)",
+    "etymology": "The nomen Aurelia (gens Aurelia) derives, per Festus, from an older form Auselii, from the Sabine word for the sun (Sabine *ausel, cf. Etruscan usil 'Sun'), i.e. 'of the Sun' — the family being said to have had a public cult of Sol; later assimilated toward Latin aureus 'golden'. The cognomen Cotta is of obscure/uncertain origin.",
+    "sources": [{ "kind": "primary-source", "reference": "Festus, De verborum significatu, s.v. Aurelia (gens) — 'Auselii … a Sole … Sabini'" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008) (Sabine ausel / Etruscan usil 'sun'); standard onomastic discussion (e.g. Chase / RE on the Sabine solar derivation of Aurelius)" }]
+  },
+  "roman_caesar_dictator": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Cognomen Caesar of uncertain true origin; ancient nameable sources transmit competing (folk-)etymologies: (1) from caesariēs 'a (fine) head of hair' (the SHA's first explanation; born with abundant hair); (2) a caeso matris utero, 'cut from the mother's womb', from caedō 'to cut' (Pliny, NH 7.47); (3) from caesius '(blue-)grey-eyed'; (4) from an ancestor who killed an elephant, said to be caesai in 'Moorish'. de Vaan/standard scholarship treat all as folk-etymological; the formation aligns with the root of caedō / caesius.",
+    "sources": [{ "kind": "primary-source", "reference": "Pliny the Elder, Naturalis Historia 7.47 (a caeso matris utero); Historia Augusta, Aelius 2.3–5 (caesariēs / caesius / elephant-caesai explanations); Festus s.v. Caesar" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.vv. caedō / caesius (cognomen explanations noted as folk-etymological)" }]
+  },
+  "roman_caligula": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Nickname Caligula, 'little (soldier's) boot', diminutive (-ula) of caliga, the hobnailed military boot of the Roman common soldier; given to the boy Gaius by his father's Rhine legionaries, who dressed him in a miniature soldier's outfit (so Tacitus and Suetonius). The base noun caliga is itself of unknown ulterior origin, but the diminutive formation and 'little boot' sense are securely attested.",
+    "sources": [{ "kind": "primary-source", "reference": "Suetonius, Caligula 9 ('Caligulae cognomen castrensi ioco traxit, quia … caligae … habitu'); Tacitus, Annales 1.41" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.v. caliga" }]
+  },
+  "roman_daunus": {
+    "languageFamily": "Paleo-Balkan (Messapic / Illyrian) — non-Latin Italic-region name",
+    "etymology": "Pre-Roman Iapygian (Messapic/Illyrian) name; in comparative Messapic/Illyrian onomastics the base *daunos is glossed 'wolf' (ancient glosses; the Illyrian outcome of PIE *dh- distinguishes it from Latin faunus / Oscan), connecting Daunus and the region-name Daunia to the wolf, taken as the people's totemic animal. The 'wolf' gloss is transmitted by ancient grammarians and adopted in Indo-European/Iapygian scholarship (e.g. Krahe), but remains uncertain.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Hans Krahe and subsequent Messapic/Iapygian onomastic scholarship deriving Daunus/Daunia from a base *daunos 'wolf' (ancient gloss tradition; cf. Greek θαῦνον 'thērion'/wolf)" }, { "kind": "primary-source", "reference": "Ancient glossographic tradition (Hesychius/Festus-type glosses) equating daunos with 'wolf'" }]
+  },
+  "roman_drusus_the_elder": {
+    "languageFamily": "Italic (Latin); cognomen of (Celtic) onomastic origin",
+    "etymology": "Inherited the Livian cognomen Drusus, whose origin Suetonius gives aetiologically: the first Livius Drusus won it by slaying in single combat an enemy (Gaulish) chieftain named Drausus, and passed it to his descendants. The underlying Drausus is of uncertain (probably Celtic) etymology — sometimes connected to a Celtic *dru- 'strong'. (Drusus the Elder additionally received the posthumous victory-title Germanicus.)",
+    "sources": [{ "kind": "primary-source", "reference": "Suetonius, Tiberius 3.2 (cognomen Drusus won from the slain chieftain Drausus)" }, { "kind": "scholarly-reference", "reference": "Dictionary of Greek and Roman Biography and Mythology (Smith), s.v. Drusus (reporting and discussing the Suetonian aetiology and its uncertainty)" }]
+  },
+  "roman_germanicus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Victory cognomen Germanicus, 'the Germanic one / conqueror of Germania (of the Germani)', formed with the adjectival suffix -icus from Germani / Germania; voted posthumously to his father Drusus the Elder for victories across the Rhine and inherited by him (and his line). A standard Roman triumphal cognomen ex virtute.",
+    "sources": [{ "kind": "primary-source", "reference": "Suetonius, Claudius 1.3 (cognomen Germanicus granted to Drusus and his posterity); Cassius Dio 55.2.3" }, { "kind": "scholarly-reference", "reference": "Standard Latin onomastics on triumphal cognomina ex virtute in -icus (e.g. Kajanto, The Latin Cognomina, 1965)" }]
+  },
+  "roman_iulia_caesaris": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Nomen of the gens Iulia, traced in the ancient (and family-promoted) tradition to Iulus, the alternative name of Ascanius son of Aeneas, from whom the Iulii claimed descent; thus the gentilician Iulius/Iulia = 'of the line of Iulus'. The deeper origin of Iulus is debated (popularly linked to iulus 'down, first soft beard'); the eponymic derivation from Iulus is the attested onomastic tradition.",
+    "sources": [{ "kind": "primary-source", "reference": "Vergil, Aeneid 1.267–268 (Ascanius cui nunc cognomen Iulo additur); Servius ad Aen. 1.267; Festus s.v. — on the Iulus eponym of the gens Iulia" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008) / standard onomastics, on Iūlius and the Iulus eponym" }]
+  },
+  "roman_iulia_the_elder": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Bears the nomen of the gens Iulia, derived in the ancient onomastic tradition from Iulus (= Ascanius, son of Aeneas), the dynasty's claimed eponymous ancestor; Iulius/Iulia = 'of the line of Iulus'. The ulterior etymology of Iulus is uncertain (popularly tied to iulus 'soft down / first beard').",
+    "sources": [{ "kind": "primary-source", "reference": "Vergil, Aeneid 1.267–268; Servius ad Aen. 1.267 (Iulus eponym of gens Iulia)" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008) / standard Latin onomastics, s.v. Iūlius" }]
+  },
+  "roman_iulius_caesar_iii": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Roman name in three parts. The nomen gentile Iūlius is the eponymic name of the gens Iulia, derived in the ancient genealogical tradition from Iūlus, the alternate name of Ascanius son of Aeneas (Vergil, Aeneid 1.267-268; Servius ad loc.); Iūlus itself is connected by the grammatical tradition to iūlus 'down, catkin, woolly tuft'. The cognomen Caesar is of uncertain origin; the ancient folk-etymology of Pliny (Naturalis Historia 7.47) and the Historia Augusta connects it to caesariēs 'head of hair' (the first bearer supposedly born with a full head of hair), with rival ancient derivations from caedere 'to cut' (caesarean birth) and caesius 'blue-grey (eyes)'; de Vaan and modern etymologists leave it unexplained.",
+    "sources": [{ "kind": "primary", "reference": "Vergil, Aeneid 1.267-268 (Ascanius/Iulus as eponym of the gens Iulia); Servius, Commentary ad Aeneidem 1.267" }, { "kind": "primary", "reference": "Pliny the Elder, Naturalis Historia 7.47 (Caesar < caesaries 'hair'); Historia Augusta, Aelius 2 (the three folk-etymologies of Caesar)" }, { "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. (Caesar treated as of uncertain/unexplained origin)" }]
+  },
+  "roman_latinus_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The dynastic cognomen Silvius borne by the Alban kings is derived in the Roman aetiological tradition from Latin silva 'wood, forest', the king being said to have been born or reared in the woodland (Livy, Ab Urbe Condita 1.3.6-8; Dionysius of Halicarnassus, Roman Antiquities 1.70-71). Latin silva 'forest, woodland' is a securely attested Latin lexeme (its own deeper Indo-European etymology is left open by de Vaan). The given name Latīnus is the eponym of the Latīnī and of Latium.",
+    "sources": [{ "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.6-8 (Silvius so named because born in silva); Dionysius of Halicarnassus, Roman Antiquities 1.70-71" }, { "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. 'silva' (forest; deeper etymology left open)" }]
+  },
+  "roman_octavia_minor": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Octāvia is the feminine of the nomen gentile Octāvius, an ordinal-numeral gentilicium from Latin octāvus 'eighth' (the ordinal of octō 'eight'), reflecting Proto-Italic *oktāwos < PIE *oḱtṓ(u)- (de Vaan, s.v. 'octo', pp. 424-425). The distinguishing epithet Minor means 'the younger / the lesser', the comparative of parvus used to distinguish her from an elder Octavia (Octavia Maior).",
+    "sources": [{ "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. 'octo' (pp. 424-425): Latin octavus 'eighth' < Proto-Italic *oktawos < PIE *oḱtṓ(u)-" }]
+  },
+  "roman_rhea_silvia": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The cognomen Silvia is the feminine of Silvius, the Alban dynastic name derived in the Roman tradition from Latin silva 'wood, forest' (cf. Livy 1.3; Dionysius of Halicarnassus 1.70-71). Latin silva 'forest, woodland' is a securely attested Latin lexeme (its further Indo-European origin is left open by de Vaan). The given name Rhea is a Greek theonymic borrowing (the Titaness Rhea), here used as a personal name.",
+    "sources": [{ "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.6-8; Dionysius of Halicarnassus, Roman Antiquities 1.70-71 (Silvius/Silvia < silva)" }, { "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. 'silva' ('forest')" }]
+  },
+  "roman_tiberius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The praenomen Tiberius is a denominal name from the river-name Tiberis (the Tiber), i.e. 'of/belonging to the Tiber' (cf. Tiberīnus, the river's tutelary form). The praenomen is generally held to be derived from this Italic hydronym; the deeper origin of Tiberis itself is non-Latin and uncertain (variously linked to an Italic/Etruscan or pre-Italic substrate, alongside the legendary derivation in Livy 1.3.8 from the drowned Alban king Tiberinus).",
+    "sources": [{ "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.8 (river formerly Albula renamed Tiberis after Tiberinus); cf. Varro, De Lingua Latina 5.30" }, { "kind": "lexical", "reference": "Standard onomastic treatment (e.g. de Vaan, Etymological Dictionary of Latin, 2008): praenomen Tiberius denominal from the hydronym Tiberis; the hydronym itself of uncertain pre-Latin origin" }]
+  },
+  "sabaean_amm": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "The Qatabanian national god ʿAmm (ASA ʿm), whose worshippers called themselves the 'children of ʿAmm' (Banū ʿAmm). The name is the common Semitic kinship term ʿamm 'paternal uncle, (paternal) kinsman', used as a divine appellative in the sense of patron/protector (cf. Arabic ʿamm 'paternal uncle', and the element in West-Semitic personal names such as ʿAmmī-).",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston, M. A. Ghul, W. W. Müller, J. Ryckmans, Sabaic Dictionary (English-French-Arabic) (Louvain-la-Neuve / Beirut, 1982), s.v. ʿm" }, { "kind": "secondary", "reference": "Jacques Ryckmans, on ancient South Arabian religion (Qataban: the national god ʿAmm 'paternal uncle', well-known Semitic divine name)" }]
+  },
+  "sabaean_athtar": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "ʿAṯtar (ASA ʿṯtr), the pan-South-Arabian astral god of the planet Venus (morning/evening star). The name is the South Arabian reflex of the common Semitic deity-name ʿAṯtar; it is the masculine counterpart of the West-Semitic goddess ʿAṯtart (Astarte) and is cognate with Akkadian Ištar — in South Arabia the deity is masculine, unlike the feminine forms elsewhere in the Semitic world.",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. ʿṯtr" }, { "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion: ʿAṯtar the Venus-god, masculine counterpart of West Semitic ʿAṯtart/Astarte and cognate of Mesopotamian Ištar" }]
+  },
+  "sabaean_shams": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "Shams (ASA s²ms¹, šams), the South Arabian sun-goddess (national deity of Ḥimyar, also at Sabaʾ). The name is simply the common Semitic word for the sun, šams 'sun', cognate with Akkadian Šamaš, Hebrew šemeš, Aramaic šimšā — here the divine name is identical with the appellative 'the Sun' and is grammatically feminine.",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. s2ms1 (šams 'sun')" }, { "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion (Encyclopaedia Britannica, 'Arabian religion'): the sun-goddess Shams ('Sun'); cognate Akkadian Šamaš, Hebrew šemeš" }]
+  },
+  "sabaean_sin": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "Sīn / Sayīn (ASA syn), national god of Ḥaḍramawt with his temple at Shabwa. The name is standardly identified as a borrowing of the Mesopotamian moon-god name Suen / Sîn (Sumerian/Akkadian). The identification is the prevailing scholarly view but is debated: some scholars note phonetic difficulties and solar (eagle/bull) attributes on Hadramitic coinage, arguing Syn was rather a sun-god, so the loan-etymology is not certain.",
+    "sources": [{ "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion (Encyclopaedia Britannica, 'Arabian religion'): Ḥaḍramawt national god Syn, identification with Mesopotamian Sin/Suen noted with reservations" }, { "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. syn" }]
+  },
+  "sabaean_wadd": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "Wadd / Waddum (ASA wd), national moon-god of Maʿīn (the Minaeans). The name derives from the common Semitic root wdd 'to love, to be affectionate / to agree', hence the appellative sense 'Love, Affection'; it appears in the recurrent dedicatory formula Wd ʾb 'Wadd is father'. Cognate with Arabic wadda 'to love' (cf. wadūd 'loving').",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. wd (root wdd 'to love')" }, { "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion (Encyclopaedia Britannica, 'Arabian religion'): the Minaean national god Wadd ('Love'), root wdd; formula 'Wadd is father'" }]
+  },
+  "salish_senklip": {
+    "languageFamily": "Salishan (Southern Interior; Okanagan-Colville / Nsyilxcən)",
+    "etymology": "Senklip (Syilx/Okanagan orthography sn̓k̓lip, popularly pronounced SIN-kleep) is the ordinary Okanagan-Colville (Nsyilxcən) common noun meaning 'coyote'. The transformer/trickster culture-hero is named directly by this animal word; there is no separate honorific form (cognate Secwepemctsin/Nlakaʼpamuxtsn Snčĺéʔ).",
+    "sources": [{ "kind": "secondary", "reference": "Mourning Dove (Christine Quintasket / Humishuma), Coyote Stories (Caxton, 1933) — the Okanagan culture-hero Coyote = sen'klip" }, { "kind": "secondary", "reference": "James Teit, 'The Salishan Tribes of the Western Plateaus,' ed. Franz Boas, 45th Annual Report of the Bureau of American Ethnology (1930) (Okanagan Coyote-cycle); Syilx/Okanagan Nation usage senklip 'coyote'" }]
+  },
+  "sami_beaivi": {
+    "languageFamily": "Uralic (Sámi; North Sámi)",
+    "etymology": "Beaivi, the Sámi sun-deity, is named by the ordinary North Sámi common noun beaivi 'sun; day'. The divine name is identical with the appellative for the sun, and the deity also appears as Beaivvi nieida 'the sun-maiden'.",
+    "sources": [{ "kind": "lexical", "reference": "North Sámi beaivi 'sun, day' (standard North Sámi lexicon); the theonym = the appellative" }, { "kind": "secondary", "reference": "Sámi mythology scholarship (e.g. Knud Leem, 1767; comparative treatments of the witch-drum sun-symbol): the sun-deity Beaivi ('sun', 'day'), also Beaivvi nieida 'sun maiden'" }]
+  },
+  "sami_horagalles": {
+    "languageFamily": "Uralic (Sámi) — loan from North Germanic (Old Norse)",
+    "etymology": "Horagalles, the western-Sámi thunder-god, is now generally explained as a loan/calque of Old Norse Þórr karl 'Thor the (old) man / Thor the carl-fellow', reflecting Sámi-Norse contact (cf. Norwegian Tor(e)kall; equated by Sámi with the indigenous thunder-figures Tiermes / Aijeke / Äijah 'old man'). The name is absent from the older Sámi dictionaries, consistent with a relatively late Norse loan.",
+    "sources": [{ "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (Christiania, 1871); K. Leem (1767): the thunder-god Horagalles ('Thor-man')" }, { "kind": "secondary", "reference": "Sámi mythology scholarship: Horagalles < Old Norse Þórr karl 'Thor the old man/carl', a Norse-contact loan (name not in older Sámi dictionaries)" }]
+  },
+  "sami_jabmeahkka": {
+    "languageFamily": "Uralic (Sámi; North Sámi)",
+    "etymology": "Jabmeahkka (North Sámi Jábmiidáhkká), the goddess and mistress of the realm of the dead (Jábmiidáibmu). The name is a transparent Sámi compound: jábme- / jábmi 'dead (one), the dead' + áhkká 'old woman, hag; mother-goddess' — hence 'old-woman / hag of the dead, death-crone'. The element áhkká recurs in the Sámi female deity-names Sáráhkká, Juoksáhkká, Uksáhkká.",
+    "sources": [{ "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871): the death-goddess Jabme-akka, ruler of the underworld of the dead" }, { "kind": "lexical", "reference": "North Sámi morphemes jábmi 'dead' + áhkká 'old woman / hag, goddess' (the -áhkká female-deity element, cf. Sáráhkká, Juoksáhkká)" }]
+  },
+  "sami_leib_olmai": {
+    "languageFamily": "Uralic (Sámi)",
+    "etymology": "North Sámi compound leaibi 'alder' + olmmái 'man', i.e. 'alder-man'. The theonym is recorded ethnographically (Leib-olmai / Lieaibolmmai); the alder and its blood-red bark-sap were central to the bear-cult over which this hunting god presided.",
+    "sources": [{ "kind": "encyclopaedia", "reference": "'Leib-olmai', Encyclopædia Britannica (gloss 'alder-man'; god of the hunt and the bear)" }, { "kind": "reference_work", "reference": "'Leib-olmai', Oxford Reference (Oxford Dictionary of World Mythology / J. Simpson & S. Roud tradition)" }, { "kind": "scholarly_book", "reference": "J. A. Friis, Lappisk Mythologi (1871); on olmaj/olbma 'man' and the bear-feast ritual use of alder bark" }]
+  },
+  "sami_mano": {
+    "languageFamily": "Uralic (Sámi)",
+    "etymology": "From North Sámi mánnu 'moon, month' (Mano / Manno / Mánnu), the personified Moon worshipped especially at midwinter and depicted on the noaidi drums.",
+    "sources": [{ "kind": "encyclopaedia", "reference": "'Sami Religion', Encyclopedia.com (the Moon, Aske or Manno, received sacrifices at midwinter)" }, { "kind": "scholarly_record", "reference": "E. Manker, Die lappische Zaubertrommel / drum-figure surveys (1938–50), drum iconography of the moon" }, { "kind": "lexical", "reference": "North Sámi mánnu 'moon, month' (standard Sámi lexicography; cf. Mánnu-stállu)" }]
+  },
+  "sami_radien_attje": {
+    "languageFamily": "Uralic (Sámi)",
+    "etymology": "Title rather than personal name: radie / ráđđi 'rule, governing power' (cf. the agentive 'Radien' = 'ruler', as in Veralden-radien 'Ruler of the World') + áhttje / attje 'father', i.e. 'the ruling father', the remote celestial high god.",
+    "sources": [{ "kind": "encyclopaedia", "reference": "'Veralden-radien', Encyclopædia Britannica ('Ruler of the World'; Radien = ruler, from the root meaning 'to rule')" }, { "kind": "scholarly_book", "reference": "J. A. Friis, Lappisk Mythologi (1871); on olmaj/attje and the celestial high god" }, { "kind": "scholarly_book", "reference": "L. Bäckman & Å. Hultkrantz, Studies in Lapp Shamanism (1978), on Radien and Sámi high-god conceptions" }]
+  },
+  "san_kaggen": {
+    "languageFamily": "Khoisan (Tuu / ǀXam)",
+    "etymology": "ǀXam ǀKaggen (Bleek–Lloyd dental-click orthography; ASCII '/Kaggen'; Maloti/Drakensberg form 'Cagn'). The word denotes 'the Mantis' (the praying mantis), with which the trickster-creator is identified; the internal morphology is not transparently analysable and the precise gloss has been debated, but the lexical sense 'mantis' is the standard attested meaning.",
+    "sources": [{ "kind": "scholarly_book", "reference": "W. H. I. Bleek & L. C. Lloyd, Specimens of Bushman Folklore (1911), ǀkaggen = 'the Mantis'" }, { "kind": "dictionary", "reference": "D. F. Bleek, A Bushman Dictionary (1956), ǀXam entry for the mantis term" }, { "kind": "scholarly_book", "reference": "M. Guenther, Tricksters and Trancers: Bushman Religion and Society (1999), on ǀKaggen/Mantis" }]
+  },
+  "san_kwammanga": {
+    "languageFamily": "Khoisan (Tuu / ǀXam)",
+    "etymology": "ǀXam Kwammanga (Kwammang-a), the proper name for (the red part of) the rainbow; the First-Race being who is 'a part of the rainbow' bears this name. The form is a recorded ǀXam designation rather than a transparent compound.",
+    "sources": [{ "kind": "scholarly_book", "reference": "W. H. I. Bleek & L. C. Lloyd, Specimens of Bushman Folklore (1911), Kwammanga as the rainbow being" }, { "kind": "scholarly_book", "reference": "D. F. Bleek, The Mantis and His Friends: Bushman Folklore (1923)" }, { "kind": "scholarly_book", "reference": "R. Hewitt, Structure, Meaning and Ritual in the Narratives of the Southern San (1986), Kwammang-a in the Mantis-family narratives" }]
+  },
+  "santal_jaher_era": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali jaher 'sacred grove' (cf. jaherthan, the grove sanctuary) + era 'woman, wife, lady', i.e. 'Lady of the Sacred Grove', the presiding goddess who resides in the jaher.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): jaher 'sacred grove', era 'woman, wife'" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Jaher Era / Jaher Budhi, Lady of the Sacred Grove" }, { "kind": "scholarly_book", "reference": "W. J. Culshaw, Tribal Heritage: A Study of the Santals (1949)" }]
+  },
+  "santal_marang_buru": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali maraṅ 'great, big' + buru 'mountain, hill', i.e. 'Great Mountain' (Great Hill), the name/title of the Santal supreme deity.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): maraṅ 'great' and buru 'mountain, hill'" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Marang Buru 'the Great Mountain', supreme deity" }, { "kind": "scholarly_book", "reference": "W. G. Archer, The Hill of Flutes (1974)" }]
+  },
+  "santal_moreko_turuiko": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali moṛe 'five' + turui 'six' + animate plural suffix -ko, i.e. 'the five-six (ones)', a collective class of village godlings (the five brothers and six sisters).",
+    "sources": [{ "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Moṛeko-Turuiko 'the five and the six', village deities" }, { "kind": "scholarly_book", "reference": "W. J. Culshaw, Tribal Heritage: A Study of the Santals (1949)" }, { "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): moṛe 'five', turui 'six', plural -ko" }]
+  },
+  "santal_pilcu_budhi": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali pilcu buṛhi, glossed 'old woman'; buṛhi 'old (married) woman' is an Indo-Aryan loan. The name of the first human female ancestor.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): buṛhi 'old woman' (Aryan word); pilcu" }, { "kind": "scholarly_book", "reference": "P. O. Bodding, Traditions and Institutions of the Santals (1942), Pilcu Haram & Pilcu Budhi 'an Old Man and an Old Woman', the first pair" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000)" }]
+  },
+  "santal_pilcu_haram": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali pilcu haṛam, glossed 'old man'; haṛam 'elderly man'. The name of the first human male ancestor.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): haṛam 'old man'; pilcu" }, { "kind": "scholarly_book", "reference": "P. O. Bodding, Traditions and Institutions of the Santals (1942), Pilcu Haram & Pilcu Budhi 'an Old Man and an Old Woman', the first pair" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000)" }]
+  },
+  "santal_thakur_jiu": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali thakur 'lord' (an Indo-Aryan loanword) + jiu 'life, soul', i.e. 'Lord of life' (the life-giver), an epithet of the Santal supreme creator god.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): thakur 'lord' (IA loan), jiu 'life, soul'" }, { "kind": "encyclopaedia", "reference": "'Santals', Encyclopedia.com (Thakur Jiu = 'life giver', supreme creator)" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Thakur Jiu the supreme god" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
