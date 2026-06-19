@@ -215057,6 +215057,193 @@ const ETYMOLOGY = {
     "etymology": "Elamite Nahhunte, the sun-god and god of justice (counterpart of Mesopotamian Šamaš). The theonym is identical with the Elamite common noun for 'sun' and in curse formulae stands metonymically for the sun itself. It is morphologically a compound, but its precise internal derivation cannot be securely established.",
     "sources": [{ "kind": "secondary", "reference": "Matthew W. Stolper, on Nahhunte as a compound noun that is a cognate/homonym of the Elamite word for 'sun' whose precise etymology is undeterminable (Elamite onomastics/lexicography)" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. Nahhunte / nan 'day, sun'" }]
   },
+  // ══ Alphabetical sweep batch 4 (worklist indices 175-254: research-sourced +
+  //    vetted; Elamite, Evenki, Benin obas, Gondi, and the Greek heroic block) ══
+  "elamite_napirisha": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "A transparent Elamite compound napir-riša 'Great God', from Elamite napir (also nap) 'god' + riša 'great' (cf. the Sumerian writing DINGIR.GAL and Akkadian ilu rabu used for the same deity). The reading napir + riša was established by Walther Hinz (1965) and is the standard analysis in Elamite lexicography, including Hinz & Koch's Elamisches Wörterbuch (1987). The same riša 'great' element recurs in the goddess-name Kiririsha.",
+    "sources": [{ "kind": "secondary", "reference": "W. Hinz (1965), reading of the name as napir 'god' + riša 'great' = 'Great God'; standard in Elamite scholarship and reflected in W. Hinz & H. Koch, Elamisches Wörterbuch (Berlin, 1987)." }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'ELAM vi. Elamite religion' (Napirisha 'Great God' of Anshan)." }]
+  },
+  "elamite_pinikir": {
+    "languageFamily": "Elamite (language isolate); name possibly of Sumerian origin",
+    "etymology": "The etymology is debated. The hittitologist Gary Beckman proposes that the name (Elamite Pinikir, with variants Pinigir/Pirengir/Pirinkir/Parakaras) is of Sumerian origin, derived from pirig.gal 'great feline / great lion' (pirig 'lion, feline' + gal 'great'). Piotr Taracha cautions that this derivation cannot be conclusively proven. The deity is an astral love-and-sky goddess later identified with Ishtar in Hurro-Hittite ritual.",
+    "sources": [{ "kind": "secondary", "reference": "Gary Beckman, proposed Sumerian etymology pirig.gal 'great feline' for Pinikir; with Piotr Taracha's caveat that it cannot be conclusively demonstrated." }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'ELAM vi. Elamite religion' (Pinikir as astral goddess)." }]
+  },
+  "elema_eharo": {
+    "languageFamily": "Trans-New Guinea (Eleman; Elema/Orokolo)",
+    "etymology": "The Elema described the eharo masks as maea morava eharu, glossed by the ethnographer F. E. Williams as 'things of gladness' - lighthearted, festive masked beings danced as a playful prelude to the more sacred hevehe cycle, by contrast with the awe-laden ma-hevehe. The native phrase and its meaning are attested in Williams' Drama of Orokolo (1940); a morpheme-by-morpheme derivation of eharo is not given in the source, so the etymology rests on this attested glossed phrase rather than a segmentation.",
+    "sources": [{ "kind": "ethnography", "reference": "F. E. Williams, Drama of Orokolo: The Social and Ceremonial Life of the Elema (Oxford University Press / Clarendon, 1940): eharo = maea morava eharu 'things of gladness'." }]
+  },
+  "enga_kana_moon": {
+    "languageFamily": "Trans-New Guinea (Engan; Enga)",
+    "etymology": "Enga kana means 'moon'; the moon is reckoned a female sky-power opposite the male sun (cf. the Enga idiom 'niki langapu, kana langapu', 'cheat the sun, cheat the moon'). The word is the regular Engan reflex of reconstructed Proto-Engan/Proto-Trans-Enga *kana 'moon' and is recorded in the standard lexical authority, Adrianne Lang's Enga Dictionary with English Index (Pacific Linguistics, 1973).",
+    "sources": [{ "kind": "secondary", "reference": "Adrianne Lang, Enga Dictionary with English Index (Pacific Linguistics C-20, 1973): kana 'moon'." }, { "kind": "ethnography", "reference": "P. W. Brennan, Let Sleeping Snakes Lie: Central Enga Religious Belief and Ritual (1977): the moon as female sky-power opposite the male sun (Aitawe)." }]
+  },
+  "estonian_linda": {
+    "languageFamily": "Finnic (Estonian); the personal name itself of Germanic origin",
+    "etymology": "Debated, with a literary/folk-etymological history. The name Linda is a Latinate form of Germanic names ending in -linda (e.g. Old High German Thiotlinde) and was already current in Estonia when F. R. Kreutzwald adopted it for the mother of Kalevipoeg in his epic Kalevipoeg (1857-1861), on the assumption that the Tallinn place-name Lindanise derived from a personal name Linda (the epic explains Lindanise, glossed roughly 'Linda's bosom', as named in her honour). By folk etymology the name is further associated with Estonian lind 'bird' and lendama 'to fly', consonant with folklore in which Linda is hatched from a grouse's egg.",
+    "sources": [{ "kind": "primary", "reference": "F. R. Kreutzwald, Kalevipoeg (1857-1861): the figure Linda and the in-epic derivation of the place-name Lindanise (Tallinn) from her name." }, { "kind": "secondary", "reference": "Scholarly treatment of the epic Linda as a personification of Germanic-origin name with folk-etymological link to Estonian lind 'bird' (e.g. the study 'Mothers of the Land: Baltic German and Estonian Personifications ... to the Epic Linda')." }]
+  },
+  "evenki_buga": {
+    "languageFamily": "Tungusic (Northern Tungus / Evenki)",
+    "etymology": "From Evenki buga (also recorded buya, boya, boga) meaning 'sky', 'universe', 'world/locality', and by extension the supreme, eternal, omnipotent being and the cosmos as a whole. In cult the term is personified, notably as the grandmother Enekan Buga ('Grandmother Universe'); the three Evenki worlds are likewise named with buga (Ugu Buga 'upper world', Dulin/Doolin Buga 'middle world', Hergu Buga 'lower world'). S. M. Shirokogoroff recorded that buga is an old, indigenous term (not introduced by Christian missionaries) ranging in sense from cosmos to spirit-master.",
+    "sources": [{ "kind": "ethnography", "reference": "S. M. Shirokogoroff, Psychomental Complex of the Tungus (1935): buga as 'sky/universe/world' and the supreme being, an old non-missionary term." }, { "kind": "ethnography", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North (1959): three-world Evenki cosmology with buga (Ugu/Dulin/Hergu Buga)." }]
+  },
+  "evenki_heglun": {
+    "languageFamily": "Tungusic (Evenki)",
+    "etymology": "From Evenki kheglun / heglun (variants Kheglen, Keglun, Xeglun) 'elk' (the animal is an elk/moose, called 'elk' in Eurasia). The word names the heavenly elk identified with the constellation Ursa Major (the Great Bear): in the widespread Cosmic Hunt myth the stars of the Dipper's bowl are the elk and the handle-stars are its pursuer(s), with variant tellings in which a hunter or the bear Mangi chases the cow-elk and her calf, the ski-track becoming the Milky Way. Documented by G. M. Vasilevich and A. F. Anisimov.",
+    "sources": [{ "kind": "ethnography", "reference": "G. M. Vasilevich, 'Early Concepts about the Universe among the Evenks', in Studies in Siberian Shamanism (1963): kheglun 'elk' as the Great Bear / cosmic-hunt quarry." }, { "kind": "ethnography", "reference": "A. F. Anisimov (1963), on Evenki cosmic-hunt mythology and the heavenly elk." }]
+  },
+  "evenki_seveki": {
+    "languageFamily": "Tungusic (Northern Tungusic; Evenki)",
+    "etymology": "The theonym Seveki (also Sevek, Amaka) is built on the Evenki/Tungus stem sevek ~ seven, the ordinary word for a 'spirit-helper' or 'idol'. Dioszegi and Hoppal, in the 'Tunguz Religion' article of the Encyclopedia of Religion, state that among all Tungus peoples seven (sevek) means 'shaman's spirit-helper', and that this same word underlies one of the names of the high god, Sevek or Seveki, the spirit who creates living things and upholds the behavioral code; the cognate taboo light-colored reindeer (sevek 'heavenly reindeer') and the ceremonial term sevenchedek 'the place where a ceremony with seven is performed' belong to the same root. The figure is thus named as the source of benevolent spirit-power rather than by a descriptive epithet. (The alternative respectful address Amaka 'grandfather' is the same honorific used for the bear.)",
+    "sources": [{ "kind": "ethnography", "reference": "S. M. Shirokogoroff, Psychomental Complex of the Tungus (London/Beijing, 1935) - primary ethnographic documentation of sevek/seven 'spirit, idol' and the high god Sevek/Seveki" }, { "kind": "secondary", "reference": "Vilmos Dioszegi and Mihaly Hoppal, 'Tunguz Religion,' in the Encyclopedia of Religion (ed. M. Eliade), which explicitly glosses seven (sevek) as 'shaman's spirit-helper' and connects it to the high-god name Sevek/Seveki" }]
+  },
+  "eweka_i": {
+    "languageFamily": "Edo (Edoid, Volta-Niger; Bini/Edo of Benin)",
+    "etymology": "According to the canonical Benin chronicle, the regnal name Eweka is an Edo (Bini) corruption of the exclamation Owomika, uttered by the young son of Oranmiyan and understood as 'I have got (succeeded in obtaining) my desire' / 'I have got it'. Jacob U. Egharevba's A Short History of Benin (1968) records that the Benin people contracted Owomika into Eweka and conferred it as the title of the first Oba of the new dynasty, marking the transition from the Ogiso line to the Obaship. The name is therefore an Edo phrase-name, not a borrowing from his father's Yoruba.",
+    "sources": [{ "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin (Ibadan University Press, 1968) - canonical chronicle deriving Eweka from Owomika 'I have got my desire'" }, { "kind": "secondary", "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-speaking Peoples of South-Western Nigeria (London: International African Institute, 1957)" }]
+  },
+  "ewuare_great": {
+    "languageFamily": "Edo (Edoid, Volta-Niger; Bini/Edo of Benin)",
+    "etymology": "Ewuare is a regnal name, an Edo (Bini) contraction of Oworuare (Owo ru are), glossed 'the trouble has ceased' (and rendered by some as 'it is cool', i.e. calm/peace restored). Egharevba's A Short History of Benin (1968) records that Prince Ogun, after the strife and the Uwaifiokun usurpation that surrounded his violent accession (c. 1440), took the throne-name Ewuare to mark the end of the upheaval; the honorific Ogidigan 'the Great' was added later. The name is thus a transparent Edo phrase-name commemorating the restoration of order.",
+    "sources": [{ "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin (Ibadan University Press, 1968) - derives Ewuare/Oworuare as 'the trouble has ceased'" }, { "kind": "secondary", "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-speaking Peoples of South-Western Nigeria (London, 1957)" }]
+  },
+  "fallen_star": {
+    "languageFamily": "Siouan (Mississippi Valley Siouan; Lakota/Dakota)",
+    "etymology": "The English name 'Fallen Star' is a calque of the Lakota name Wicahpi Hinhpaya (Wicahpi Hinhpaya). It is a transparent compound of wicahpi 'star' and the verb hinhpaya 'to fall, fall down', i.e. 'star-fallen' / '(the) star (that) fell', referring to the hero born of the Star-Husband's wife after she fell from the Sky Country. Both morphemes are standard Lakota lexicon documented in Eugene Buechel's Lakota dictionary (wicahpi 'star'; hinhpaya 'to fall down'), and the personal name in this form attaches to the monster-slaying culture-hero of the Walker and Dorsey narrative cycles. The name is descriptive of the birth-circumstance rather than a fossilized or opaque theonym.",
+    "sources": [{ "kind": "primary", "reference": "James R. Walker, The Sun Dance and Other Ceremonies of the Oglala Division of the Teton Dakota (Anthropological Papers of the AMNH 16.2, 1917) - the Lakota Fallen Star cycle in which the hero is so named" }, { "kind": "secondary", "reference": "Eugene Buechel (ed. Paul Manhart), Lakota Dictionary: Lakota-English/English-Lakota - lexical attestation of wicahpi 'star' and hinhpaya 'to fall down' that compose the name" }]
+  },
+  "fon_fa": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Volta-Niger > Gbe (Fon/Fongbe)",
+    "etymology": "Fon Fa is the Fon-language reflex of the name of the Yoruba divination system Ifa (Yoruba Ifa). Herskovits documented the cult as a direct cultural and linguistic borrowing from the Yoruba: 'Ifa, or Fa as it is called in Dahomey' (Herskovits, Dahomey, 1938, treatment of Fa divination at pp. 201-230); the same Yoruba origin of the Fon term is affirmed by William Bascom (Ifa Divination, 1969), who lists the Fon Fa, Ewe Afa and Yoruba Ifa as reflexes of one borrowed system, and by Bernard Maupoil, whose monograph La geomancie a l'ancienne Cote des Esclaves treats the Dahomean Fa as the Yoruba Ifa adopted by the Fon. The reduction Ifa > Fa (loss of the initial vowel) is regular for a Yoruba loan entering Gbe. This is a borrowing etymology, not a native Gbe coinage.",
+    "sources": [{ "kind": "ethnography", "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938), Fa divination, pp. 201-230." }, { "kind": "secondary", "reference": "William R. Bascom, Ifa Divination: Communication Between Gods and Men in West Africa (Indiana University Press, 1969) — Fon Fa / Ewe Afa as reflexes of Yoruba Ifa." }, { "kind": "ethnography", "reference": "Bernard Maupoil, La geomancie a l'ancienne Cote des Esclaves (Institut d'Ethnologie, 1943) — Dahomean Fa as the borrowed Yoruba Ifa system." }]
+  },
+  "fon_mawu_lisa": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Volta-Niger > Gbe (Fon/Ewe)",
+    "etymology": "Geoffrey Parrinder, a standard authority on West African religion, discusses the names of the paired creator and explicitly labels the etymology of Mawu as uncertain: 'The origin and meaning of the word is obscure; \"none greater\" or \"overstretching\" have been suggested as possible meanings' (Parrinder, West African Religion). For the partner name Lisa, Parrinder reports the indigenous association of Lisa with the chameleon (an animal emblem of changeability). DEBATED/uncertain etymology: no single agreed derivation exists, and the proposals are presented by Parrinder as suggestions rather than established. A separate, popular claim that Fon Lisa is borrowed from Yoruba orisa appears in reference works but is NOT attributable in convergent sources to a specific named scholar, so it is noted only as folk/unverified and is not relied on here.",
+    "sources": [{ "kind": "secondary", "reference": "Geoffrey Parrinder, West African Religion (Epworth Press; 2nd ed. 1961) — etymology of Mawu given as obscure ('none greater' / 'overstretching'); Lisa linked to the chameleon." }]
+  },
+  "garo_saljong": {
+    "languageFamily": "Sino-Tibetan > Tibeto-Burman > Sal > Bodo-Garo (Garo / A-chik)",
+    "etymology": "The first element of the Garo sun-and-harvest god's name, Saljong, is Garo sal 'sun, day'. This root is a defining lexical innovation of the 'Sal' sub-branch of Tibeto-Burman, named precisely for this word: Paul K. Benedict reconstructed the shared distinctive roots for 'sun' and 'fire' uniting Bodo-Garo, Konyak and Jingpho/Kachin (Benedict, Sino-Tibetan: A Conspectus, Cambridge University Press, 1972, p. 7), and the branch label 'Sal languages' is taken directly from the word sal 'sun/day'. The deity Saljong is documented by A. Playfair (The Garos, 1909) as the sun god honoured at the Wangala harvest festival, consistent with the sal 'sun' element. The full compound (sal + -jong) and the coupled title Misi Saljong (with Misi, the rice/crop power) are attested in the Garo ethnography; the secure, named-source etymological claim here is specifically the sal = 'sun' element.",
+    "sources": [{ "kind": "primary", "reference": "Paul K. Benedict, Sino-Tibetan: A Conspectus (Cambridge University Press, 1972), p. 7 — shared 'sun'/'fire' roots of Bodo-Garo, Konyak, Jingpho; basis of the 'Sal' branch (sal 'sun/day')." }, { "kind": "ethnography", "reference": "A. Playfair, The Garos (David Nutt, London, 1909) — Saljong / Misi Saljong as the Garo sun and harvest deity (Wangala festival)." }]
+  },
+  "gondi_anga_dev": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (South-Central Dravidian) clan-god class. The element dev/deo is 'god' (Indo-Aryan loan widely used across Central-Indian tribal religion); anga denotes the wooden clan-deity standard itself - the swaying palanquin-oracle of Bastar, represented (per Grigson) by parallel saja-wood logs lashed to cross-beams and carried by bearers (the 'Anga Deo'). The name thus designates the materially-embodied, oracular clan god rather than an anthropomorphic figure. Tied to the Lingo origin-myth and the Persa Pen / clan-deity complex.",
+    "sources": [{ "kind": "ethnography", "reference": "W. V. Grigson, The Maria Gonds of Bastar, Oxford University Press, 1938 (describes the Anga Deo clan-god of the Maria and Muria as saja logs borne in oracular procession)" }]
+  },
+  "gondi_bhimal_pen": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (Dravidian) deified culture-hero. The generic element pen is the Gondi word for 'god/deity' (the same element seen in persa pen 'great god' and the clan persa pen). The personal name Bhimal/Bhima is borrowed from the Mahabharata hero Bhima, but as documented by Elwin and Fuchs the tribal cult (rain-stones, no idol) is indigenous rather than a transfer of the epic figure - i.e. an autochthonous rain/strength divinity given a Sanskritic-epic name. Secure, attributed point: pen = 'god'; the Bhima name-borrowing is noted in the ethnographic literature.",
+    "sources": [{ "kind": "ethnography", "reference": "Verrier Elwin, Myths of Middle India, Oxford University Press, 1949" }, { "kind": "ethnography", "reference": "Stephen Fuchs, The Gond and Bhumia of Eastern Mandla, Asia Publishing House, 1960" }]
+  },
+  "gondi_lingo_pen": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (Dravidian) culture-hero/demigod. The generic element pen is the Gondi word for 'god/deity'; Lingo is the proper name of the half-divine founder-hero of the Gond origin-epic who released the Gonds from their cave-captivity and taught cultivation. Stephen Hislop's 1866 transcription, taken down in Gondi from a Pardhan bard and rendered in Roman script, is the earliest recorded form of the Lingo epic; Elwin records the wider cycle. The first element pen 'god' is well attested; the proper name Lingo itself is not given a secure native etymology by the cited sources.",
+    "sources": [{ "kind": "primary", "reference": "Stephen Hislop, 'The Legend of Lingo', in Papers Relating to the Aboriginal Tribes of the Central Provinces, ed. R. Temple, Nagpur, 1866 (earliest transcription, from a Pardhan bard)" }, { "kind": "ethnography", "reference": "Verrier Elwin, Myths of Middle India, Oxford University Press, 1949" }]
+  },
+  "gondi_persa_pen": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (South-Central Dravidian) clan-deity. A transparent two-element compound: persa 'great' + pen 'god', i.e. 'great god' - the canonical Gondi gloss recorded in the ethnographic literature, where pen is the general Gondi word for 'deity' and each Gond clan worships its own persa pen ('great god'). Often equated with Bara Deo / Budha Deo and embodied aniconically (the saja tree, no idol). This is the textbook example of Gondi pen 'god'.",
+    "sources": [{ "kind": "ethnography", "reference": "W. V. Grigson, The Maria Gonds of Bastar, Oxford University Press, 1938 (records persa pen 'great god' as the Gond clan-deity)" }, { "kind": "ethnography", "reference": "Verrier Elwin, Myths of Middle India, Oxford University Press, 1949" }]
+  },
+  "greek_aceso": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Ἀκεσώ (Akeso), daughter of Asclepius personifying the curative process. The name is a transparent agent-type derivative (with the productive -ω feminine personal-name suffix, as in Σαπφώ, Ἠχώ) of the verb ἀκέομαι 'to heal, cure, mend' (cf. ἄκος 'cure, remedy', ἀκεστής 'healer'), hence roughly 'Healer / the one who heals'. Beekes discusses the ἀκέομαι / ἄκος family, noting the difficulty of a secure Indo-European reconstruction (a form *ih2k- is considered possible); the verbal base and its meaning 'to heal' are nonetheless well established.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. ἀκέομαι / ἄκος" }]
+  },
+  "greek_aegeus": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Αἰγεύς (Aigeus), Athenian king and eponym of the Aegean Sea. The etymology is genuinely debated. The name is usually connected to αἴξ (gen. αἰγός) 'goat'; the same word in the plural αἶγες was glossed 'waves, high seas' already by the lexicographer Hesychius of Alexandria (a metaphor of leaping goats for breaking waves), which links Aigeus to the 'wavy/sea' sense and to the Aegean. Beekes treats αἴξ as inherited (PIE *h2eig-). Alternative ancient explanations derive the sea-name from the town Aigai, from the Amazon Aigea, or from Aigaion; the personal name has no single secure etymology and the goat/wave connection is best labelled a learned/folk association.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. αἴξ" }, { "kind": "primary", "reference": "Hesychius of Alexandria, Lexicon, s.v. αἶγες (glossed 'waves, high seas')" }]
+  },
+  "greek_aegle_asclepius": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Αἴγλη (Aigle), daughter of Asclepius personifying the radiance/glow of bodily health. The name is the common noun αἴγλη 'brightness, gleam, radiance, splendour' used as a personal name. Beekes states that αἴγλη has no accepted Indo-European etymology and may well be of Pre-Greek origin (the αἰγλ- / ἀσγ(ε)λ- variation he regards as characteristically Pre-Greek; the old comparison with Sanskrit ejati 'to tremble' is rejected). The lexical meaning 'radiance' is secure; the deeper origin of the word is, per Beekes, probably Pre-Greek.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. αἴγλη (no IE etymology; probably Pre-Greek)" }]
+  },
+  "greek_aethra": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Αἴθρα (Aithra), princess of Troezen and mother of Theseus. The name is the noun αἴθρη 'clear sky, bright/fair weather, clear air', a derivative of the root in αἰθήρ 'upper air, sky' and αἴθω 'to kindle, burn, blaze' - hence 'Clear-sky / Bright-air'. Beekes derives αἰθήρ and its family from the inherited Indo-European root *h2eidh- 'to burn, kindle' (cf. Latin aether, aestus, aedes), making the αἴθρη group securely Indo-European. The personal name is a transparent use of αἴθρη 'clear sky'.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. αἰθήρ / αἴθω (root *h2eidh- 'to burn')" }]
+  },
+  "greek_alcestis": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Ἄλκηστις (Alkestis), daughter of Pelias, wife of Admetus, who died in his stead. The name is built on the noun ἀλκή 'might, strength, prowess, defence (in battle)' (cf. ἄλκιμος 'strong, valiant', the agent-noun ἀλκηστής 'defender'), aptly echoing her role as the one who 'wards off' death for her husband. Beekes derives ἀλκή from the Indo-European root *h2elk- 'to ward off, defend' (cf. ἀλέξω, ἀλκάθω), so the name means roughly 'Defender / the strong/protecting one'.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. ἀλκή / ἀλέξω (root *h2elk- 'to ward off')" }]
+  },
+  "greek_anticleia_periphetes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντίκλεια (Antíkleia), a compound of ἀντί 'against, in place of' + κλέος 'glory, fame' — variously read 'she who is in place of glory' or 'set against fame'; the same κλέος element is ubiquitous in Greek heroic names (Cleopatra, Pericles).",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982), on names in -κλεια/-κλέης" }]
+  },
+  "greek_antiope_thebes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντιόπη (Antiópē), a compound of ἀντί 'facing, against' + ὤψ/ὀπ- 'face, eye, countenance' — 'she who faces/confronts', literally 'with face set against'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982), on names in -όπη" }]
+  },
+  "greek_apollod_acamas": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀκάμας (Akámas), 'untiring, unwearying', from the privative ἀ- + the verb κάμνω 'to grow weary' (verbal adjective stem -καμ-) — an epithet of tirelessness borne by several heroes.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); R. Beekes, Etymological Dictionary of Greek (2010), s.v. κάμνω" }]
+  },
+  "greek_apollod_alcmene": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀλκμήνη (Alkmḗnē), mother of Heracles. The first element is clearly ἀλκή 'might, prowess, defensive strength'; the second is debated (variously connected with μῆνις 'wrath' / μένος 'force' or with μήνη 'moon'), so the name is read broadly as 'mighty' with the precise second member uncertain.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀλκή" }]
+  },
+  "greek_apollod_alexander_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀλέξανδρος (Aléxandros), a compound of the verb ἀλέξω 'to ward off, defend' + ἀνήρ/ἀνδρ- 'man' — 'defender of men'; the name is already Mycenaean (Linear B a-re-ka-sa-da-ra).",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀλέξω" }]
+  },
+  "greek_apollod_amyclas": {
+    "languageFamily": "Greek (eponym) of a Pre-Greek toponym",
+    "etymology": "Amyclas (Ἀμύκλας) is the mythological eponym of the Laconian town Amyklai (Ἀμύκλαι), the cult-site of Apollo Amyklaios south of Sparta; the personal name is back-formed from the place name rather than built from transparent Greek lexical elements. R. Beekes, Etymological Dictionary of Greek (2010), classifies Ἀμύκλαι as Pre-Greek (marked 'PG', 'probably a Pre-Greek place name'), i.e. belonging to the pre-Hellenic substrate of the Peloponnese and lacking a secure Indo-European/Greek etymology. The name therefore has no reliable internal Greek meaning; honestly, it is a substrate toponym personified as a Spartan founder-figure. (Note: this entry concerns Amyclas the Niobid; he shares the name with Amyclas son of Lacedaemon, the Spartan founder, both deriving from the same Pre-Greek toponym.)",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes (with L. van Beek), Etymological Dictionary of Greek (Leiden Indo-European Etymological Dictionary Series 10; Leiden/Boston: Brill, 2010), s.v. Ἀμύκλαι, classified as Pre-Greek ('PG'), 'probably a Pre-Greek place name'." }]
+  },
+  "greek_apollod_andromeda": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀνδρομέδα (Androméda), a transparent compound of ἀνήρ/ἀνδρ- 'man' + the verb μέδω/μέδομαι 'to rule, protect, be mindful of' — 'she who rules over (or is mindful of) men', the same -μεδ- element seen in Diomedes and Ganymedes.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀνήρ, μέδω" }]
+  },
+  "greek_apollod_argeia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀργεία (Argeía) 'the Argive (woman)', the feminine ethnic of Ἄργος; the place-name itself reflects ἀργός 'bright, shining, white', so the name carries the sense 'the bright/Argive one'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀργός, Ἄργος" }]
+  },
+  "greek_apollod_aristodemus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀριστόδημος (Aristódēmos), a transparent compound of ἄριστος 'best, noblest' + δῆμος 'people, district' — 'best of the people'; one of the standard ἀριστο- names.",
+    "sources": [{ "kind": "secondary", "reference": "Transparent compound: ἄριστος 'best' + δῆμος 'people' (LSJ, A Greek-English Lexicon, s.vv.)" }]
+  },
+  "greek_apollod_aristomachus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀριστόμαχος (Aristómachos), a transparent compound of ἄριστος 'best' + μάχη 'battle, combat' — 'best in battle', a fitting name for the Heraclid father of Temenus.",
+    "sources": [{ "kind": "secondary", "reference": "Transparent compound: ἄριστος 'best' + μάχη 'battle' (LSJ, A Greek-English Lexicon, s.vv.)" }]
+  },
+  "greek_apollod_ascanius": {
+    "languageFamily": "Pre-Greek (Anatolian; non-Indo-European substrate)",
+    "etymology": "The name Ἀσκάνιος (Askanios) is of non-Greek, Anatolian origin and is bound to the toponym Askania (the lake/region named at Iliad 2.862-863, where Phorkys and Askanios lead the Phrygians 'from faraway Askania'). Milena Anfosso reconstructs the name as *aska-(w)ani-os, analysing the first element as Hittite āška- 'door, gate' (compare the Sumerogram KÁ(.GAL) 'door/gate of the city' in the oldest Hittite texts, and the Old Hittite anthroponym Āška-liya-, ruler of Hurma). She follows Puhvel's view that āška- is a word of indigenous Anatolian origin with no known cognates elsewhere, preferring this Anatolian account over the proposed Indo-European etymologies. On this analysis Askanios is an originally Anatolian eponymous-hero name attached to the Bithynian/Phrygian toponym, only secondarily drawn into the Trojan-Roman (Aeneas/Iulus) genealogy.",
+    "sources": [{ "kind": "secondary", "reference": "Milena Anfosso, \"'Godlike Askanios, from faraway Askania', or the Anatolian Connection of an Eponymous Hero,\" paper presented at the 2021 (Virtual) Annual Meeting of the Society for Classical Studies; reconstructs Askanios < *aska-(w)ani-os with first element Hittite aska- 'door'." }, { "kind": "secondary", "reference": "Jaan Puhvel, Hittite Etymological Dictionary (1984- ), s.v. aska- 'door/gate', cited by Anfosso as the basis for treating aska- as an indigenous Anatolian word without external cognates." }]
+  },
+  "greek_apollod_astyoche": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀστυόχη (Astyóchē), a compound of ἄστυ 'city, town' + the verb ἔχω 'to hold, keep, protect' — 'she who holds/guards the city', a name shared by several heroines.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_auge": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Αὐγή (Augḗ) is the ordinary noun αὐγή 'ray of light, gleam, daylight, dawn-radiance', the heroine's name being the common word for radiance personified.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. αὐγή" }]
+  },
+  "greek_apollod_chloris": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Χλωρίς (Chlōrís), feminine of the adjective χλωρός 'pale green, greenish-yellow, fresh' — 'the pale-green / fresh one'; the heroine of Odyssey 11.281 bears the colour-word as her name.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. χλωρός" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
