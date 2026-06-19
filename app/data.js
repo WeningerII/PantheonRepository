@@ -10995,6 +10995,26 @@ const buildPeopleSeed = () => {
       notes: 'The Hound of Ulster; demigod son of Lugh by Deichtire under the dominant Compert Con Culainn tradition. Birth name Sétanta. Earned the name Cú Chulainn at age 7 by killing Culann\'s smith-dog with a sliotar through its throat and offering to take the hound\'s place. Trained by the warrior-woman Scáthach on her island in Alba, where he received the Gáe Bulg (the dread thirty-barbed spear cast underfoot from the water). Sole defender of Ulster during the Macha-curse phase of the Táin Bó Cúailnge — his half-divine paternity exempted him from the birth-pangs that pinned every other adult Ulsterman, allowing him to hold Medb of Connacht\'s invading army at the fords for three months. The four-day combat with his foster-brother Ferdiad at the ford (Comrac Fir Diad) is the most extended single-combat in medieval Irish literature. The ríastrad (warp-spasm) — battle-frenzy transformation with body distortion, eye-displacement, and the lon láith (hero-light) springing from the head — is among the most detailed transformation scenes in medieval European literature. Killed his own son Connla unrecognized at the ford (Aided Óenfhir Aífe). Died at age 27 strapped to the standing stone Cloich an Ghaill at Mag Muirthemne so he could die upright facing his enemies; identified as dead only when the Morrígan in raven-form lit on his shoulder and his hero-light went out. The Sheppard bronze of this final scene was installed at the GPO in Dublin in 1935 as the Easter Rising memorial.',
     },
 
+    // ── Genealogy march, Wave G17 (Irish, Tuatha Dé): materialize Fand,
+    //    Manannán's Otherworld wife, and promote his parent→Lir externalRef to
+    //    the already-registered Lir. ──
+    {
+      id: 'irish_fand', schemaVersion: 2,
+      name: { primary: 'Fand', alt: ['Fann', 'Pearl of Beauty'], transliterations: { 'old-irish': 'Fand', etymology: 'Old Irish Fand, glossed "tear" or "pearl of beauty"; an Otherworld (síd) woman.' } },
+      type: 'deity', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'female', vitalStatus: 'living',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'mythological-cycle' },
+      lifecycle: [
+        { typeStatus: 'deity', era: 'mythological-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Serglige Con Culainn (The Wasting Sickness of Cú Chulainn)' }], notes: 'An Otherworld woman, wife of the sea-god Manannán mac Lir. Abandoned for a time by Manannán, she summoned Cú Chulainn to the síd as her lover; when Emer came for her and then yielded, Fand chose to return to Manannán, who shook his cloak of mist between her and Cú Chulainn so the two would never meet again.' },
+      ],
+      domains: [{ id: 'Otherworld-woman-of-the-sid' }, { id: 'wife-of-Manannan' }],
+      relations: [
+        { kind: 'spouse', personId: 'irish_manannan', era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Serglige Con Culainn (The Wasting Sickness of Cú Chulainn), Lebor na hUidre' }], weight: 'primary' }],
+      notes: 'An Otherworld (síd) woman, wife of the sea-god Manannán mac Lir; the central female figure of Serglige Con Culainn, in which she draws the ailing Cú Chulainn to the Otherworld as her lover before returning to Manannán, who shakes his cloak of mist between the parted lovers. Carried in the registry only as an externalRef on Manannán until materialized here.',
+    },
+
     // ─── Manannán mac Lir — Tuatha Dé sea-deity, father of Mongán ────────
     {
       id: 'irish_manannan', schemaVersion: 2,
@@ -11029,8 +11049,8 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'parent', externalRef: { name: 'Lir (sea-god of the Tuatha Dé Danann, father of Manannán)', tradition: 'Irish' }, era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Lebor Gabála Érenn; multiple texts' }], notes: 'Father Lir (older sea-god whom Manannán supplanted in role). Lir entry pending. Some traditions make him son of Allod instead (Lebor Gabála variant).' },
-        { kind: 'spouse', externalRef: { name: 'Fand (Otherworld-woman, wife of Manannán, lover of Cú Chulainn in Serglige Con Culainn)', tradition: 'Irish' }, era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }], notes: 'Fand entry pending. Wife who had the affair with Cú Chulainn in Serglige Con Culainn (Wasting Sickness of Cú Chulainn); Manannán shook the cloak of mists between them to make them forget each other.' },
+        { kind: 'parent', personId: 'irish_lir', era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Lebor Gabála Érenn; multiple texts' }], notes: 'Father Lir, the older sea-god whom Manannán supplanted in role; some traditions make Manannán son of Allod instead (Lebor Gabála variant).' },
+        { kind: 'spouse', personId: 'irish_fand', era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }], notes: 'His wife Fand, who had the affair with Cú Chulainn in Serglige Con Culainn; Manannán shook the cloak of mists between them to make them forget each other.' },
         { kind: 'lover', personId: 'irish_caintigern', era: 'cycles-of-kings', sources: [{ kind: 'primary', reference: 'Compert Mongáin (Lebor na hUidre, Yellow Book of Lecan, Book of Fermoy variants); Immram Brain' }], notes: 'Three-variant tradition of how the union came about — all three preserve the bargain structure: Manannán saved Fíachna mac Báetáin\'s life in battle in exchange for a night with Caintigern. (a) Manannán took Fíachna\'s form and went to Caintigern with her unwitting consent; (b) Manannán bargained directly with Caintigern with her witting consent; (c) Manannán visited Caintigern in disguise as a stranger and told her he would protect her husband if she lay with him.' },
         { kind: 'father-of', personId: 'irish_mongan', era: 'cycles-of-kings', sources: [{ kind: 'primary', reference: 'Compert Mongáin; Immram Brain' }] },
         { kind: 'foster-parent', personId: 'irish_mongan', era: 'cycles-of-kings', sources: [{ kind: 'primary', reference: 'Compert Mongáin' }], notes: 'Took Mongán to the Otherworld three days after birth and raised him in Tír Tairngire until age twelve (or sixteen per variant) before returning him to Ulster.' },
