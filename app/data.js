@@ -217142,6 +217142,168 @@ const ETYMOLOGY = {
     "etymology": "Wabanaki culture-hero, recorded as Gluskap / Glooscap / Gluskabe. The name means 'liar, deceiver', built on the attested Eastern Algonquian verb stem for 'to tell lies': Maliseet-Passamaquoddy koluskap- (koluskapiw 'he tells lies') and Mi'kmaq kluskap- (kluskapewit), so understood as 'the deceiver/liar' (in legend, from his deceiving an evil being about his weakness). NOT 'man from nothing', a gloss that properly belongs to the distinct figure Odzihozo.",
     "sources": [{ "kind": "book", "reference": "Charles G. Leland, The Algonquin Legends of New England (1884), recording the Gluskap/Glooskap cycle (with S. T. Rand, Legends of the Micmacs, 1894)" }, { "kind": "dictionary", "reference": "David A. Francis and Robert M. Leavitt, A Passamaquoddy-Maliseet Dictionary (Peskotomuhkati Wolastoqewi Latuwewakon), documenting koluskap- 'to tell lies' (Mi'kmaq kluskap-), the lexical basis of the name 'liar'" }]
   },
+  // ══ Alphabetical sweep batch 14 (indices 975-1021: Wabanaki, Welsh, Yakut, Yamana,
+  //    Yapese, Zapotec, Zoroastrian/Kayanian, Zulu, Zuni) — final wave ══
+  "wabanaki_malsum": {
+    "languageFamily": "Algic (Algonquian; Eastern Algonquian, Maliseet-Passamaquoddy/Mi'kmaq)",
+    "etymology": "Malsum (Leland's form Malsumsis, glossed by him 'Wolf the younger'), the wolf-brother/evil twin of Glooskap. The name is the Eastern-Algonquian word for 'wolf': Maliseet-Passamaquoddy malsom 'wolf' (the diminutive -sis in Leland's Malsumsis = 'the younger/little wolf'). The figure is unwritten/Latin-script as recorded.",
+    "sources": [{ "kind": "book", "reference": "Leland, Charles Godfrey (1884). The Algonquin Legends of New England. Boston: Houghton Mifflin, ch. III ('Of Glooskap's Birth, and of his Brother Malsum the Wolf'), giving the form 'Malsumsis, Wolf the younger'." }, { "kind": "dictionary", "reference": "Francis, David A. & Leavitt, Robert M. (2008). A Passamaquoddy-Maliseet Dictionary (Peskotomuhkati Wolastoqewi Latuwewakon). Orono: Univ. of Maine Press, s.v. malsom 'wolf' (the native lexeme underlying the name; -sis diminutive)." }]
+  },
+  "wabanaki_mateguas": {
+    "languageFamily": "Algic (Algonquian; Eastern Algonquian, Abenaki)",
+    "etymology": "Mateguas (also Matgwas, Mahtegwas, Matiguas; pron. mah-tuh-gwoss), the rabbit-brother of Glooskap who becomes ruler of the land of the dead. The name is the Abenaki word for 'rabbit' (cognate with Passamaquoddy-Maliseet mahtoqehs / Mahtigwess 'rabbit, the Great Rabbit'). Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Leland, Charles Godfrey (1884). The Algonquin Legends of New England. Boston: Houghton Mifflin (Mateguas the Rabbit, brother of Glooskap, lord of the dead)." }, { "kind": "encyclopedia", "reference": "Native Languages of the Americas (Redish, Laura & Lewis, Orrin, eds.), entries 'Mateguas, the Ghost Rabbit' and 'Mahtoqehs the Rabbit (Mahtigwess)', glossing the name as Abenaki/Wabanaki 'rabbit'." }]
+  },
+  "wabanaki_tabaldak": {
+    "languageFamily": "Algic (Algonquian; Eastern Algonquian, Abenaki)",
+    "etymology": "Tabaldak (also Dabaldak, Tobaldak), the Abenaki/Wabanaki supreme creator, an impersonal androgynous maker (identified with Gici Niwaskw, 'the Great Spirit'). The name is glossed 'the Owner' (i.e. owner/lord of all created things), from the Abenaki verb root for 'to own, possess, be master of'. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Native Languages of the Americas (Redish, Laura & Lewis, Orrin, eds.), 'Gici Niwaskw (Tabaldak), the Wabanaki Creator', glossing Tabaldak as 'the Owner'." }, { "kind": "book", "reference": "Leland, Charles Godfrey (1884). The Algonquin Legends of New England (the impersonal Wabanaki creator behind Glooskap), with the 'Owner/Great Spirit' creator-figure of southern Wabanaki tradition." }]
+  },
+  "wabosso": {
+    "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabe)",
+    "etymology": "Wabosso (Schoolcraft's romanized Wau-boozoo; later poeticized by Longfellow as Wabasso 'the White Rabbit ... of the North'), third of the four sons of the West Wind in the Anishinaabe Nanabozho cycle. The name is the Ojibwe word for 'rabbit', waabooz (specifically the snowshoe hare), reinforced by the initial /waab-/ 'white, bright, pale' (whence the 'white one of the north' association of the rabbit who turns white in winter). Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Schoolcraft, Henry Rowe (1839). Algic Researches, Comprising Inquiries Respecting the Mental Characteristics of the North American Indians, 2 vols. New York: Harper (the four sons of the West Wind; the rabbit-son Wau-boozoo)." }, { "kind": "dictionary", "reference": "The Ojibwe People's Dictionary (Nichols, John D., Linguistic Editor; Univ. of Minnesota), s.v. waabooz 'rabbit (snowshoe hare)' and initial /waab-/ 'white, bright, pale'." }]
+  },
+  "wei": {
+    "languageFamily": "Cariban (Pemón/Taurepang-Arekuna)",
+    "etymology": "Wei, the Pemón sun-deity, father of the Makunaima brothers by the mortal woman Aromadapuén. The theonym is simply the Pemón (Cariban) common noun wei 'sun, day' — the deity is the personified Sun, recorded as such by Koch-Grünberg from his Taurepang/Arekuna informants. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Koch-Grünberg, Theodor (1924). Vom Roroima zum Orinoco, Bd. II: Mythen und Legenden der Taulipáng- und Arekuná-Indianer. Stuttgart: Strecker und Schröder (Wei the sun as father of Makunaima)." }, { "kind": "encyclopedia", "reference": "Wikipedia/standard Pemón-language references corroborating wei as the Pemón word for 'sun/day' (the lexical base of the solar deity's name); convergent with the Koch-Grünberg attestation of the Sun named Wei." }]
+  },
+  "welsh_efnisien": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Efnisien (Efnysien) fab Eurosswydd, the strife-provoking half-brother in the Second Branch (Branwen), twin/counterpart of the peaceable Nisien. The names form a deliberate antonymic pair: Efnisien is built on the Welsh adjective efnys 'hostile, unpeaceful, savage' (GPC s.v. efnys), the un-peaceful one, set against Nisien the peaceful — their names encoding the good/evil dyad of the tale.",
+    "sources": [{ "kind": "manuscript-text", "reference": "Pedeir Keinc y Mabinogi, Second Branch (Branwen uerch Lyr); ed. Ifor Williams, Pedeir Keinc y Mabinogi (Cardiff: Univ. of Wales Press, 1930), for the Nisien/Efnisien pair." }, { "kind": "journal-article", "reference": "Sayers, William / scholarship in Studia Celtica Posnaniensia ('Efnisien's Trickster Wiles: Meanings, Motives, and Mental Illness in the Second Branch of the Mabinogi', 2016), with the standard etymology Efnisien < efnys 'hostile/unpeaceful' opposed to Nisien 'peaceful'; cf. GPC (Geiriadur Prifysgol Cymru) s.v. efnys." }]
+  },
+  "welsh_gwern": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Gwern, the boy-king son of Branwen and Matholwch in the Second Branch, acclaimed king of Ireland and burned to death by his uncle Efnisien. The name is the Welsh common noun gwern 'alder, alder-tree' (collective; GPC s.v. gwern; < Proto-Celtic *werno- 'alder'), thematically linked to the alder symbolism around Bran (whose shield bears 'sprigs of alder', gwern) in the tale.",
+    "sources": [{ "kind": "manuscript-text", "reference": "Pedeir Keinc y Mabinogi, Second Branch (Branwen uerch Lyr); ed. Ifor Williams, Pedeir Keinc y Mabinogi (Cardiff, 1930) — Gwern son of Branwen and Matholwch." }, { "kind": "dictionary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. gwern 'alder, alder-tree' (< Proto-Celtic *werno-); the common noun underlying the personal name." }]
+  },
+  "welsh_hyfaidd_hir": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Hyfaidd Hir, 'Hyfaidd the Tall', a warrior named in the Mabinogi/Culhwch ac Olwen court-lists. The etymologically transparent element is the epithet Hir, the Welsh adjective hir 'long, tall' (GPC s.v. hir), a stock descriptive byname for tall heroes (cf. Hychddwn Hir); the personal name Hyfaidd itself is generally connected with Welsh hy- 'bold, daring' ('the bold one'). Unwritten in the sense of medieval-Welsh orthography.",
+    "sources": [{ "kind": "reference-work", "reference": "Bartrum, Peter C. (1993). A Welsh Classical Dictionary: People in History and Legend up to about A.D. 1000. Aberystwyth: National Library of Wales (entry on Hyfaidd Hir among the figures of the Mabinogi/Arthurian court-lists)." }, { "kind": "dictionary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. hir 'long, tall' (the epithet element); and hy- 'bold, daring' bearing on the name Hyfaidd." }]
+  },
+  "welsh_pwyll": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Pwyll Pendefig Dyfed ('Pwyll, prince of Dyfed'), protagonist of the First Branch. The name is the Welsh common noun pwyll 'sense, reason, wisdom, prudence, discretion, deliberation' (GPC s.v. pwyll; cognate with Old Irish cíall 'sense, reason'). The tale partly turns on his living up to the name — learning prudence over rashness.",
+    "sources": [{ "kind": "manuscript-text", "reference": "Pedeir Keinc y Mabinogi, First Branch (Pwyll Pendeuic Dyuet); ed. Ifor Williams, Pedeir Keinc y Mabinogi (Cardiff, 1930)." }, { "kind": "dictionary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. pwyll 'sense, discretion, reason, prudence, wisdom, deliberation' (cognate OIr. cíall); the common noun identical with the prince's name." }]
+  },
+  "wiininwaa": {
+    "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabe)",
+    "etymology": "Wiininwaa, the mortal mother of Nanabozho and his brothers (by the West Wind), who dies in childbirth. Two sourced readings of the name exist: (1) the Anishinaabe traditional gloss 'Nourishment / nourished one' (associated with the Ojibwe stem wiin- pertaining to fat/richness/nourishment); (2) Schoolcraft's derivation of the name from Dakota/Siouan Winona 'first-born daughter'. Unwritten/Latin-script form; the etymology is contested between these named interpretations.",
+    "sources": [{ "kind": "book", "reference": "Schoolcraft, Henry Rowe (1839). Algic Researches, 2 vols. New York: Harper — records the mother of the Nanabozho brothers and connects the name to Dakota Winona ('first-born daughter')." }, { "kind": "book", "reference": "Coleman, Sister Bernard et al., Ojibwa Myths and Legends; and Anishinaabe oral tradition, giving the community gloss 'Nourishment/nourished one' for Wiininwaa (the alternative to Schoolcraft's Siouan derivation)." }]
+  },
+  "yakut_abaasy": {
+    "languageFamily": "Turkic (Siberian Turkic; Sakha/Yakut)",
+    "etymology": "Abaasy (Sakha абаасы / абааһы, abaası), the malevolent, iron-toothed spirits/demons of the Sakha lower world (Olonkho). The native lexeme abaası itself denotes 'evil spirit, devil, demon' in Yakut; it is generally taken as cognate with the wider Turkic word albasty (a malevolent spirit). Recorded in Cyrillic/Sakha orthography.",
+    "sources": [{ "kind": "dictionary", "reference": "Pekarsky, E. K. (1907–1930). Slovar' iakutskago iazyka (Dictionary of the Yakut Language), 3 vols. St Petersburg/Leningrad — s.v. абааһы (abaası) 'evil spirit, devil'." }, { "kind": "ethnography", "reference": "Sieroszewski, Wacław (1896). Yakuty: Opyt etnograficheskogo issledovaniya. St Petersburg — on the abaası as the malevolent lower-world spirits of Sakha belief; cf. the Olonkho 'Nurgun Bootur the Swift'. Turkic cognate albasty noted in comparative-Turkic mythology." }]
+  },
+  "yakut_ai_toyon": {
+    "languageFamily": "Turkic (Siberian Turkic; Sakha/Yakut)",
+    "etymology": "Ai Toyon (Sakha Айыы Тойон, Ayыы Toyon), the Yakut god of light, imaged as an eagle atop the world-tree. The name compounds aiyy (Sakha айыы, ayыы 'creation; creator-deity, benevolent celestial being' — a derivative of the verb ай-/ay- 'to create') + toyon ('lord, master, chief'): thus 'Creator-Lord' / 'Lord of the Aiyy'. Closely paired with (and in some accounts a by-name of) the supreme white god Ürüng Aiyy Toyon. Cyrillic/Sakha orthography.",
+    "sources": [{ "kind": "ethnography", "reference": "Sieroszewski, Wacław (1896). Yakuty (Yakuty: Opyt etnograficheskogo issledovaniya). St Petersburg — the sky-god hierarchy, with Aiyy/Ürüng-Aïy-Toyon as 'white' light-god (after Sieroszewski and Priklonski)." }, { "kind": "dictionary", "reference": "Pekarsky, E. K. (1907–1930). Slovar' iakutskago iazyka, s.v. айыы (ayыы) 'creation' (< ай- 'to create'; benevolent creator-spirit) and тойон (toyon) 'lord, master, chief'." }]
+  },
+  "yakut_uruung_aiyy_toyon": {
+    "languageFamily": "Turkic (Siberian Turkic; Sakha/Yakut)",
+    "etymology": "Ürüng Aiyy Toyon (Sakha Үрүҥ Айыы Тойон), the 'White Creator Lord', supreme head of the benevolent Aiyy of the upper world and personified sky/light. The name is a three-part compound: ürüŋ 'white' + aiyy 'creator-deity, creation' (< ay- 'to create') + toyon 'lord, master' — literally 'White Creator-Lord'. Originally the Yakut god of the sun, retained as the chief 'white' god after the northward migration. Cyrillic/Sakha orthography.",
+    "sources": [{ "kind": "ethnography", "reference": "Sieroszewski, Wacław (1896). Yakuty: Opyt etnograficheskogo issledovaniya. St Petersburg — Urun-Aïy-Toyon as the supreme 'white' god, father of light / former sun-god; cf. Olonkho 'Nurgun Bootur the Swift'." }, { "kind": "dictionary", "reference": "Pekarsky, E. K. (1907–1930). Slovar' iakutskago iazyka, s.v. үрүҥ (ürüŋ) 'white', айыы (ayыы) 'creation / creator-deity' (< ай- 'to create'), and тойон (toyon) 'lord, master' — the three morphemes of the name." }]
+  },
+  "yamana_watauinewa": {
+    "languageFamily": "Yámana (Yaghan) — language isolate, Tierra del Fuego",
+    "etymology": "Native form Watauinéiwa (also Watauinewa, Watauineiwa). Gusinde records that the Yámana did not interpret the name literally and avoided uttering it, addressing the supreme being instead by epithets, chiefly Hitápuan ('my Father') and circumlocutions meaning 'the One up there.' He is characterized as the eternal, unchanging owner of life ('The Most Ancient One' / 'He Who Does Not Change'); these are descriptive titles of his eternity rather than a transparent morphological gloss of the name Watauinéiwa, which Gusinde reports as semantically opaque to the Yámana themselves.",
+    "sources": [{ "kind": "monograph", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana — Vom Leben und Denken der Wassernomaden am Kap Hoorn. Mödling bei Wien: Anthropos, 1937 (fieldwork 1918-1924)." }, { "kind": "translation", "reference": "Gusinde, Martin (trans. F. Schütze). The Yamana: The Life and Thought of the Water Nomads of Cape Horn. HRAF, 1961 [Eng. ed. of Bd. II]." }]
+  },
+  "yapese_taliw": {
+    "languageFamily": "Austronesian (Oceanic) — Yapese, Micronesia",
+    "etymology": "Native terms kan 'spirit, god' and taliw (talíu) 'sacred', the latter denoting the shrines and groves where the kan are worshipped. Müller (1917) glosses talíu as 'sacred' and reports that the name attaches to two kinds of consecrated place — burial grounds and the groves in which the communal (national) kan receive cult — so the deity-class label derives from taliw 'sacred (place/shrine)' by metonymy from the cult site to its resident spirits.",
+    "sources": [{ "kind": "monograph", "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B, Bd. 2. Hamburg: Friederichsen, 1917 (taliw/talíu 'sacred'; kan 'spirit/god')." }, { "kind": "monograph", "reference": "Lingenfelter, Sherwood G. Yap: Political Leadership and Culture Change in an Island Society. Honolulu: University of Hawaii Press, 1975." }]
+  },
+  "zapotec_cocijo": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "Colonial Valley Zapotec cocijo (also cociyo, Cordova's <cocijo>) is the common noun 'lightning' (and by extension thunderstorm / the rains), used both for the meteorological phenomenon and for its divine personification. The rain-and-lightning deity therefore bears the ordinary word for 'lightning' as his name. Attested in Cordova's 1578 Vocabulario and discussed as such in the Monte Alban urn iconography literature.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca. Mexico: Pedro Charte y Antonio Ricardo, 1578 (cocijo = 'rayo, relampago')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization: How Urban Society Evolved in Mexico's Oaxaca Valley. London: Thames & Hudson, 1996." }, { "kind": "journal-article", "reference": "Sellen, Adam T. 'Storm-God Impersonators from Ancient Oaxaca.' Ancient Mesoamerica 13 (2002): 3-19 (cocijo 'lightning')." }]
+  },
+  "zapotec_coqui_xee": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "Compound of coqui 'lord' (the Zapotec royal/divine title) + the element pèe ~ pi ~ pij ~ piye ~ xee, a root cluster meaning 'wind, breath' and, by extension, 'vital spirit, the living animating force' (Cordova derives pij/pije/piyèe/pèe from a verb 'to whirl/turn,' hence 'that which whirls' = wind > breath > spirit). The supreme uncreated deity is thus named with difrasismo-like titles such as Coqui Xee / Pije-Tao ('Great Spirit / Great Wind' = the infinite, beginningless lord). coqui 'lord' is the same title used of human kings.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (coqui 'senor'; pij/pije/piyèe/pèe 'viento, espiritu')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996 (coqui as lordly/divine title)." }, { "kind": "monograph", "reference": "Lind, Michael. Ancient Zapotec Religion: An Ethnohistorical and Archaeological Perspective. Boulder: University Press of Colorado, 2015 (Pije-Tao/Coqui Xee, pèe 'wind/spirit')." }]
+  },
+  "zapotec_pitao_bezelao": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "The title-element pitao (Cordova <pitao>) means 'great spirit, god, deity' (the generic word for a major god, roughly equivalent to Nahuatl teotl), prefixed to deity names. Pitao Bezelao (Pezèlao, Coqui Bezelao) is the chief god of death and the underworld, patron of Mitla (Lyobaa); Cordova glosses the figure as 'el dios del infierno.' The element pitao 'god/great spirit' is securely attested; the proper element bezelao is not given a transparent native gloss in the colonial sources beyond the deity's identity, so only the pitao component is etymologized here.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (pitao 'dios'; Pezelao 'el dios del infierno')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996." }, { "kind": "monograph", "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Bezelao, Mitla)." }]
+  },
+  "zapotec_pitao_cozobi": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "pitao 'god, great spirit' (Cordova <pitao> 'dios') + cozobi, the element associated with maize and agricultural abundance — Pitao Cozobi being the maize/harvest god ('god of abundant sustenance'). pitao is the firmly attested generic 'god' title; the maize association of cozobi is recorded in the colonial and urn-iconographic literature (the deity appears emerging from maize), though a clean lexical gloss of cozobi itself is less securely transmitted than the pitao element.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (pitao 'dios')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996 (Pitao Cozobi, maize deity)." }, { "kind": "monograph", "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. Norman: University of Oklahoma Press, 1977." }]
+  },
+  "zapotec_xonaxi_quecuya": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "The title-element xonaxi (Cordova <xonàxi>) is the feminine honorific 'lady, queen', the female counterpart of coqui 'lord' — applied both to human queens (Cordova's composite titles Coquì xonàxi 'queen/princess') and to goddesses. Xonaxi Quecuya is the death-goddess of the underworld, consort of Pitao Bezelao and co-patron of Mitla (Lyobaa). The xonaxi 'lady/queen' element is securely attested; the proper element Quecuya lacks a transparent native gloss in the sources, so only the title-element is etymologized.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (xonàxi 'senora, reina')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996 (coqui/xonaxi as lord/lady titles)." }, { "kind": "monograph", "reference": "Caso, Alfonso & Ignacio Bernal. Urnas de Oaxaca. Memorias del INAH II. Mexico: INAH, 1952 (Xonaxi Quecuya, Lyobaa)." }]
+  },
+  "zigue": {
+    "languageFamily": "Cariban — Pemón (Taurepang/Arekuna), Roraima/Gran Sabana",
+    "etymology": "Zigue (also Zige; Brazilianized Jigue in Mario de Andrade's Macunaima, 1928) is, per de Cora's recension of the Pemon Makunaima cycle, the name meaning 'chigger' — the parasitic burrowing flea/mite (Tunga penetrans, the bicho-de-pe / nigua). He is the middle brother in the Pemon five-brother set, between Maanape and Makunaima, the episode going back to Koch-Grunberg's recording from the narrator Mayuluaipu.",
+    "sources": [{ "kind": "monograph", "reference": "de Cora, Maria Manuela. Kuai-Mare: Mitos aborigenes de Venezuela. Caracas, 1957 (Zigue = 'chigger/nigua')." }, { "kind": "monograph", "reference": "Koch-Grunberg, Theodor. Vom Roraima zum Orinoco, Bd. II: Mythen und Legenden der Taulipang- und Arekuna-Indianer. Stuttgart: Strecker und Schroder, 1924 (recorded from Mayuluaipu)." }, { "kind": "monograph", "reference": "de Armellada, Cesareo. Tauron Panton: Cuentos y leyendas de los indios pemon. Caracas, 1973/1989." }]
+  },
+  "zoroastrian_kay_khosrow": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Kauui Haosrauuah, a bahuvrīhi compound meaning 'he who has good fame/glory': hu-/hao- 'good' (Proto-Iranian *hu-, Proto-Indo-European *h₁su-) + srauuah- 'fame, glory, renown' (Proto-Iranian *sravah-, Proto-Indo-European *ḱléwos), i.e. *Hu-sravah- 'of good fame'. Avestan kauui- (> Middle/New Persian kay) denotes a 'poet-priest, seer' and dynastically 'king'. The whole yields Middle Persian Kay Husrōy / New Persian Kay Ḵosrow.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'KAYĀNIĀN' series (esp. i. Kavi: Avestan kauui, Pahlavi kay; and the Haosrauuah entry)" }, { "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'PERSONAL NAMES, IRANIAN ii. AVESTAN NAMES' (Haosrauuah-, 'having good fame')" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.vv. haosrauuah-, hu-, srauuah-" }]
+  },
+  "zoroastrian_keresaspa": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Kərəsāspa-, a bahuvrīhi compound 'having lean/meager horses': kərəsa- 'lean, thin, meager' + aspa- 'horse' (Proto-Iranian *aspa-, Proto-Indo-Iranian *aćua-, Proto-Indo-European *h₁éḱwos). Mayrhofer compares Old Indic kṛśáśva- 'having lean horses', confirming the inherited Indo-Iranian formation. The name yields Middle Persian Kirsāsp / New Persian Garšāsp.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'KARSĀSP' (Avestan Kərəsāspa- 'he with meager horses', citing Mayrhofer 1977, p. I/60, cf. Old Indic kṛśáśva-)" }, { "kind": "dictionary", "reference": "M. Mayrhofer, Etymologisches Wörterbuch des Altindoarischen (EWAia) / Die altiranischen Namen (1977), I/60" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.vv. kərəsa-, aspa-" }]
+  },
+  "zoroastrian_rostam": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Middle Persian)",
+    "etymology": "Attested as Middle Persian Rōdastahm (Pahlavi *Rōdastahm); the underlying form and sense are debated. The most widely cited derivation reconstructs *rautas-taxma- 'river-strong / whose course is like a river', from rautah- 'river, stream' + taxma- 'strong, brave, valiant' (cf. the common Iranian second element -taxma in heroic names). Mehrdad Bahar similarly proposed *Rauta-staxma- 'the descending river', linking Rostam to an old deity of the Helmand. No single etymon is established with certainty; only the Middle Persian form Rōdastahm is secure, and scholarship presents the analysis of its components as unsettled.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, articles on Rostam and 'PERSONAL NAMES, IRANIAN' (Middle Persian Rōdastahm; proposed *rautas-taxma- 'river-strong', etymology debated)" }, { "kind": "scholarship", "reference": "M. Bahar, proposing *Rauta-staxma- 'the river that descends' (reported in Iranica and Iranian onomastic scholarship)" }]
+  },
+  "zoroastrian_siyavash": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Siiāuuaršan- (Yašt 13.132), a bahuvrīhi compound 'having black/dark stallions': syāva- 'black, dark' (Proto-Iranian *syāva-, cf. Old Indic śyāvá- 'dark brown, black') + aršan- 'male, stallion' (cf. Old Indic ṛ́ṣan-). It is one of the Avestan kauui names ending in aršan 'male', and is held to have replaced an older parallel *Siiāuuāspa- 'having dark horses'. The form yields Middle Persian Syāwaxš / New Persian Siyāwaš.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'KAYĀNIĀN vi. Siiāuuaršan, Siyāwaxš, Siāvaš' (P. O. Skjærvø): 'the one with black stallions', syāva- + aršan-" }, { "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'PERSONAL NAMES, IRANIAN ii. AVESTAN NAMES', no. 282 Siiāuuaršan- 'Possessing dark stallions'" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.vv. syāva-, aršan-" }]
+  },
+  "zoroastrian_thraetaona": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Θraētaona- (son of Āθβiia), from Proto-Iranian *Θraitauna-, Proto-Indo-Iranian *Traitauna-, a derivative (with the augmentative/patronymic suffix -auna-) of *Trita- 'the third', the name of the figure reflected in Avestan Θrita- and Vedic Tritá-. The name is thus interpretable as 'the great (son) of Trita / the third', the dragon-slayer paralleling Vedic Tritá Āptya. Yields Middle Persian Frēdōn / New Persian Fereydun.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'FERĒDŪN' (Avestan Θraētaona < *Θraitauna-, derivative of *Trita- 'the third'; cf. Vedic Tritá Āptya, Avestan father Āθβiia ~ Vedic Āptya)" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.v. Θraētaona-" }]
+  },
+  "zoroastrian_yima": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Yima-, identical with the common noun meaning 'twin', preserved with the inherited internal vowel in the Old Avestan dual yə̄mā 'the twins' (later yima- from Proto-Iranian *yama-). Exactly cognate with Old Indic/Vedic Yamá- 'twin', both sons of a solar father (Avestan Vīuuaŋhant- ~ Vedic Vivásvant-). The figure (with epithet xšaēta- 'shining, radiant') yields Middle Persian Jam/Jamšēd, New Persian Jamšid.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'JAMŠID' (Avestan Yima, Old Indic cognate Yama; common noun 'twin' attested in Old Avestan dual yə̄mā; epithet xšaēta)" }, { "kind": "dictionary", "reference": "M. Mayrhofer, Etymologisches Wörterbuch des Altindoarischen (EWAia), s.v. yamá- 'twin'" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.v. yima- / yə̄ma- 'twin'" }]
+  },
+  "zulu_umvelinqangi": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Benue-Congo > Bantu > Nguni (isiZulu/isiXhosa)",
+    "etymology": "Agentive/personal noun (class 1a, prefix u-) from the verb -vela 'to come forth, appear, come into being' + the stem -nqangi 'first, original, that which has priority'. The compound is glossed 'the First to Appear / the First to Come Forth / the First to Exist', hence 'the Creator'; used as a praise-name for the supreme being among isiZulu- and isiXhosa-speakers.",
+    "sources": [{ "kind": "dictionary", "reference": "Dictionary of South African English (DSAE), s.v. 'umvelinqangi': from -vela 'appear, come forth' + -nqangi (stem indicating priority/first), 'the First to Emerge / First to Exist, hence the Creator'" }]
+  },
+  "zulu_unkulunkulu": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Benue-Congo > Bantu > Nguni (isiZulu)",
+    "etymology": "Personal noun (class 1a, prefix u-) nkulunkulu, a reduplication of the adjective stem -khulu 'great, big, old, senior', the reduplication intensifying the sense to 'the great-great one / the old-old one'. In pre-colonial usage it denoted the most senior ancestor (literally 'great-great-grandfather'), the first man and progenitor, only later equated with a creator/supreme being.",
+    "sources": [{ "kind": "dictionary", "reference": "Dictionary of South African English (DSAE), s.v. 'unkulunkulu': reduplication of -khulu 'great', 'the old, old one', the first ancestor" }, { "kind": "scholarship", "reference": "H. Callaway, The Religious System of the Amazulu (1868–1870), documenting unkulunkulu as the 'old-old one' / first ancestor" }]
+  },
+  "zuni_awonawilona": {
+    "languageFamily": "Language isolate (Zuni / Shiwi'ma)",
+    "etymology": "Zuni theonym glossed by Cushing as 'the Maker and Container of All' (commonly rendered 'All-Container'), the bisexual supreme life-giver who existed before all else and who made himself into the Sun. The translation 'Maker/Container of All' is the meaning attested by the recording ethnographer; the internal Zuni morphology is not segmented in the primary sources, so only the scholar-supplied gloss is asserted here.",
+    "sources": [{ "kind": "ethnography", "reference": "F. H. Cushing, Outlines of Zuñi Creation Myths (1896): Áwonawílona, 'the Maker and Container of All'" }, { "kind": "ethnography", "reference": "M. C. Stevenson, The Zuni Indians (BAE 23rd Annual Report, 1904)" }]
+  },
+  "zuni_malokyattsiki": {
+    "languageFamily": "Language isolate (Zuni / Shiwi'ma)",
+    "etymology": "Zuni Ma'l Oyattsik'i (also Ma'lokyattsik'i), glossed by the recording ethnographers as 'Salt Woman / Salt Mother', the deity embodied in the sacred Salt Lake whose flesh is the gathered salt. The first element corresponds to Zuni ma'le 'salt'; the gloss 'Salt Woman/Mother' is the meaning attested in the primary ethnography, while a full morpheme-by-morpheme segmentation is not given in the sources.",
+    "sources": [{ "kind": "ethnography", "reference": "M. C. Stevenson, The Zuni Indians (BAE 23rd Annual Report, 1904): Ma'l Oyattsik'i, 'Salt Woman/Mother'" }, { "kind": "ethnography", "reference": "F. H. Cushing, Zuni Folk Tales (1901)" }]
+  },
+  "zuni_yatokka": {
+    "languageFamily": "Language isolate (Zuni / Shiwi'ma)",
+    "etymology": "Zuni Yätokka Tä'chu 'Sun Father', the manifestation of Awonawilona. The first element is Zuni yätokä 'sun' (recorded as Yatoka/Yatokka in the ethnographies); tä'chu is 'father'. The whole is glossed 'Sun Father' by the recording ethnographers; thus both the native element yätokä 'sun' and the compound meaning are attested.",
+    "sources": [{ "kind": "ethnography", "reference": "F. H. Cushing, Outlines of Zuñi Creation Myths (1896): Awonawilona makes himself into the Sun Father, Yatoka" }, { "kind": "ethnography", "reference": "D./B. Tedlock, Zuni narrative scholarship: Yatokka Tacchu 'Sun Father'" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
