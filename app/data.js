@@ -11693,7 +11693,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling', personId: 'ossetian_uryzmaeg', era: 'cosmogonic' },
         { kind: 'sibling', personId: 'ossetian_satana', era: 'cosmogonic' },
-        { kind: 'spouse', externalRef: { name: 'Bytsenon, mortal woman of the Bytsentæ; mother of Batraz; killed before Batraz\'s birth', tradition: 'Ossetian' }, era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III' }] },
+        { kind: 'spouse', personId: 'ossetian_bytsenon', era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III' }] },
         { kind: 'father-of', personId: 'ossetian_batraz', era: 'classical-nart' },
       ],
       linguistic: {
@@ -11769,8 +11769,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Ossetian', primaryTradition: 'Ossetian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['ossetian_khaemyts'],
-      parentRoles: { ossetian_khaemyts: 'paternal' },
+      parentIds: ['ossetian_khaemyts', 'ossetian_bytsenon'],
+      parentRoles: { ossetian_khaemyts: 'paternal', ossetian_bytsenon: 'maternal' },
       temporal: { era: 'classical-nart' },
       lifecycle: [
         { typeStatus: 'scion', era: 'classical-nart', eraOrdering: 0, startEvent: 'tragic-conception-and-back-tumor-gestation', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. IV — Batraz cycle' }], notes: 'Bytsenon (Batraz\'s mother) was killed before his birth; Khæmyts cut the foetus from her body and carried it as a tumor in his back. After full-term gestation, the steel-bodied Batraz emerged from Khæmyts\'s back, fully-formed.' },
@@ -11786,7 +11786,7 @@ const buildPeopleSeed = () => {
         { id: 'sacred-spring-tear-progenitor' },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Bytsenon, mortal woman of the Bytsentæ; killed before his birth', tradition: 'Ossetian' }, era: 'classical-nart' },
+        { kind: 'mother', personId: 'ossetian_bytsenon', era: 'classical-nart' },
       ],
       iconography: {
         attributes: [
@@ -11811,6 +11811,27 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Steel-bodied champion of the Narts; foremost hero of the classical-Nart heroic age. Scion by registry math (Khæmyts quartigod + Bytsenon mortal → f=0.125). The tragic-conception narrative (Bytsenon killed before birth, Khæmyts back-tumor gestation, emergence from his back fully-formed) and the Kurdalægon forge-tempering episode together produce the steel-body iconography that defines his heroic identity. Excepting one vulnerable point (varying by recension — navel, heel, or other body part), his entire body is indestructible steel. His death in the final-age destruction by divine retaliation, with his tears becoming the sacred springs of the central Caucasus, is the climactic event of the Nart cycle\'s Departure (the Narts\' rejection of God and consequent destruction). The cognate Northwest Caucasian Pataraz (Adyghe) and Abkhaz Patraz figures preserve the shared pan-Caucasian Nart-substrate beneath the Ossetian Iranic recension. Comparative-mythological readings (Dumézil 1965; Sergent 2000) treat Batraz as a Caucasian reflex of the Indo-European "third-function" steel-warrior figure, with structural parallels to Achilles (heel-vulnerable hero) and Sigurd (forge-tempered hero of the Volsung cycle).',
+    },
+
+    // ── Genealogy march, Wave G15 (Ossetian, Nart saga): materialize Bytsenon,
+    //    wife of Khæmyts and mother of Batraz, carried as an externalRef on both. ──
+    {
+      id: 'ossetian_bytsenon', schemaVersion: 2,
+      name: { primary: 'Bytsenon', alt: ['Bicenon', 'Woman of the Bytsentæ'], transliterations: { ossetian: 'Bycenon', etymology: 'Ossetian; a woman of the Bytsentæ family.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Ossetian', primaryTradition: 'Ossetian', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'classical-nart' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'classical-nart', eraOrdering: 0, startEvent: 'marriage-to-Khaemyts-and-death-before-Batrazs-birth', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III-IV — Batraz cycle' }], notes: 'A woman of the Bytsentæ; wife of the Nart Khæmyts. Pregnant with Batraz, she was killed before his birth; Khæmyts cut the foetus from her body and carried it as a swelling in his back until the steel-bodied Batraz emerged.' },
+        { vitalStatus: 'dead', era: 'classical-nart', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'wife-of-Khaemyts' }, { id: 'mother-of-Batraz' }],
+      relations: [
+        { kind: 'spouse', personId: 'ossetian_khaemyts', era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III' }] },
+        { kind: 'mother-of', personId: 'ossetian_batraz', era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. IV' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Narty Kaddzhytæ (Ossetian Nart sagas) Vol. III-IV — Batraz cycle; Dumézil, Le Livre des Héros (1965)' }], weight: 'primary' }],
+      notes: 'A woman of the Bytsentæ and wife of the Nart Khæmyts; mother of the steel-bodied champion Batraz. Killed while pregnant, she died before Batraz\'s birth — Khæmyts carried the foetus as a swelling in his back until Batraz emerged fully formed, the tragic conception that opens the Batraz cycle. Mortal-tier. Carried in the registry only as an externalRef on Khæmyts and Batraz until materialized here.',
     },
 
     // ═══════════════════════════════════════════════════════════════════════════
