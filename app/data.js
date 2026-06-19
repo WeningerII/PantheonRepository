@@ -214618,6 +214618,218 @@ const ETYMOLOGY = {
     "etymology": "Attested Deo Aerno (dative), tutelary god of the Asturian Zoelae. The native etymon is debated — usually linked either to a word for high/rocky ground or to a tree-name — and the god is known only from the Bragança-area inscriptions.",
     "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005); A. Tranoy, La Galice romaine (1981)" }]
   },
+  // ══ Alphabetical sweep batch 2 (worklist indices 15-94: research-sourced via
+  //    multi-source web verification, each entry vetted; deferrals left empty) ══
+  "apache_black_hactcin": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Jicarilla Apache)",
+    "etymology": "A color-named member of the Jicarilla creator-class the Hactcin, which Opler glosses as 'supernaturals, personifications of the power of objects and natural forces.' The modifier is Jicarilla diłhił 'black/dark,' marking this as the leading, most powerful Black Hactcin (paired with White Hactcin); the compound thus reads 'Black Hactcin,' i.e. the black-aspect personified power that shapes the first animals and birds.",
+    "sources": [{ "kind": "secondary", "reference": "Morris E. Opler, Myths and Tales of the Jicarilla Apache Indians, Memoirs of the American Folk-Lore Society vol. 31 (1938), s.v. Hactcin (explanatory note)" }]
+  },
+  "apache_child_of_the_water": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Apache, cognate with Navajo)",
+    "etymology": "Apache Tóbájíshchíní, identical with Navajo Tóbájíshchíní 'Born for/of Water,' the younger monster-slaying twin. The Navajo cognate is analyzed as tó 'water' + bá 'for it' + jízhchį́ 'he was born' + -í (nominalizer); in Chiricahua/Mescalero Apache texts he, rather than Killer of Enemies, is the principal hero.",
+    "sources": [{ "kind": "secondary", "reference": "Robert W. Young, William Morgan & Sally Midgette, Analytical Lexicon of Navajo (1992), s.v. Tóbájíshchíní" }, { "kind": "secondary", "reference": "Harry Hoijer, Chiricahua and Mescalero Apache Texts (Univ. of Chicago Press, 1938)" }]
+  },
+  "apache_hactcin": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Jicarilla Apache)",
+    "etymology": "Jicarilla Apache Hactcin, the class of creator-supernaturals, which Opler defines as 'supernaturals, personifications of the power of objects and natural forces' — functionally parallel to the Navajo diyin diné'é ('Holy People'). The term denotes personified sacred power rather than an individually named god.",
+    "sources": [{ "kind": "secondary", "reference": "Morris E. Opler, Myths and Tales of the Jicarilla Apache Indians, Memoirs of the American Folk-Lore Society vol. 31 (1938), s.v. Hactcin (explanatory note)" }]
+  },
+  "apache_killer_of_enemies": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Apache, cognate with Navajo)",
+    "etymology": "Apache Naayéé'neizghání, identical with Navajo Naayééʼ Neizghání 'Monster/Enemy Slayer,' the monster-slaying twin. The Navajo cognate is naayééʼ 'monsters, enemies' + neizghání 'the one who went about killing them' (a relativized verb of repeated killing). His prominence relative to his twin is reversed between Western Apache (where he dominates) and Chiricahua/Mescalero.",
+    "sources": [{ "kind": "secondary", "reference": "Robert W. Young & William Morgan, The Navajo Language: A Grammar and Colloquial Dictionary (1987), s.v. Naayééʼ Neizghání" }, { "kind": "secondary", "reference": "Harry Hoijer, Chiricahua and Mescalero Apache Texts (Univ. of Chicago Press, 1938)" }]
+  },
+  "apache_white_painted_woman": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Chiricahua/Mescalero Apache)",
+    "etymology": "Apache Isdzánátł'éshn 'White-Painted Woman,' built on isdzán 'woman' plus a stem denoting 'painted white' — the creator-mother and origin of the girls' puberty rite. 'Changing Woman' is her renewal-aspect title (cf. Navajo Asdzą́ą́ Nádleehé, literally 'woman who changes/becomes again'); 'Esdzanadehe' is a common English-source spelling.",
+    "sources": [{ "kind": "secondary", "reference": "Morris E. Opler, An Apache Life-Way (Univ. of Chicago Press, 1941)" }, { "kind": "secondary", "reference": "Morris E. Opler, Myths and Tales of the Chiricahua Apache Indians, Memoirs of the American Folk-Lore Society vol. 37 (1942)" }]
+  },
+  "bambara_mousso_koroni": {
+    "languageFamily": "Niger-Congo (Mande; Bambara/Bamana)",
+    "etymology": "Bambara Muso Kɔrɔni (Mousso Koroni), from muso 'woman' + kɔrɔ 'old' with the diminutive -nin, i.e. 'little old woman'; Dieterlen records the fuller epithet Mousso Koroni Koundyé 'little old woman with a white head,' the chaotic first woman associated with air and fire. The morphemes muso 'woman' and kɔrɔ 'old' are standard, transparently attested Bambara lexemes.",
+    "sources": [{ "kind": "ethnography", "reference": "Germaine Dieterlen, Essai sur la religion bambara (Paris, 1951)" }, { "kind": "secondary", "reference": "An ka taa Bambara/Dioula Dictionary, s.v. muso 'woman', kɔrɔ 'old'" }]
+  },
+  "basque_eate": {
+    "languageFamily": "Basque (language isolate)",
+    "etymology": "Basque Eate, the genie of storms, fire, floods and hurricanes in the Goierri (Gipuzkoa) and Arakil (Navarre). Barandiarán records a popular/folk etymology deriving the name from errete 'to burn', suggesting an original fire-spirit (the flames of a fire are imagined as the locks of his beard); this derivation is tentative and not a secure linguistic reconstruction.",
+    "sources": [{ "kind": "ethnography", "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Eate" }]
+  },
+  "batak_batara_guru": {
+    "languageFamily": "Austronesian (Toba Batak), name from Indo-Aryan (Sanskrit)",
+    "etymology": "Batara Guru (Bhattara Guru) is a borrowing of Sanskrit bhaṭṭāra/bhaṭṭāraka 'noble lord, venerable one' plus guru 'teacher, spiritual master' (an epithet also of Bṛhaspati). Among the Toba Batak the title is reassigned to one of the three primal gods (the Debata na Tolu); the Sanskritic name reflects the Indianised stratum of Batak religion rather than a native Batak coinage.",
+    "sources": [{ "kind": "secondary", "reference": "J. Warneck, Die Religion der Batak (1909); the title from Sanskrit bhaṭṭāra ‘noble lord’ + guru" }]
+  },
+  "batak_mula_jadi_na_bolon": {
+    "languageFamily": "Austronesian (Toba Batak)",
+    "etymology": "Toba Batak Mulajadi na Bolon, analysable as mula 'origin, beginning' + jadi 'to become, come into being' + na 'that which' + bolon 'great', i.e. 'the great origin/beginning of becoming'. Tobing, following Warneck, renders it 'The Origin of Genesis' (Sang Asal Kejadian); the figure is the transcendent high god and creator.",
+    "sources": [{ "kind": "secondary", "reference": "Ph. L. Tobing, The Structure of the Toba-Batak Belief in the High God (Amsterdam, 1956)" }]
+  },
+  "batak_naga_padoha": {
+    "languageFamily": "Austronesian (Toba Batak), generic element from Indo-Aryan (Sanskrit)",
+    "etymology": "The generic element Naga is the Sanskrit loanword nāga 'snake, serpent, cobra' (borrowed into Indonesian/Batak), here the primordial underworld dragon-serpent whose writhing causes earthquakes. The epithet Padoha is of uncertain origin and is not securely explained in the linguistic literature; only the naga element has a clear, attested etymology.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. nāga; Batak usage in J. Warneck, Die Religion der Batak (1909)" }]
+  },
+  "batak_si_boru_deak_parujar": {
+    "languageFamily": "Austronesian (Toba Batak)",
+    "etymology": "In the name Si Boru Deak Parujar, the leading elements are transparent Toba Batak: si is the personal-name article and boru means 'daughter, woman', so 'Si Boru ...' = 'the woman/daughter (called) ...', marking her as the creatrix daughter of Batara Guru. The epithet Deak Parujar (associated in the myths with spinning/weaving, she being the maker of the first ulos cloth) has no secure published etymology and is left unexplained here.",
+    "sources": [{ "kind": "ethnography", "reference": "Sandra Niessen, Legacy in Cloth: Batak Textiles of Indonesia (2009), on Si Boru Deak Parujar as weaver/creatrix (boru 'daughter/woman'); Warneck, Die Religion der Batak (1909)" }]
+  },
+  "baule_nyamien": {
+    "languageFamily": "Niger-Congo (Kwa, Akan)",
+    "etymology": "Baule Nyamien is the local reflex of Akan Nyame/Onyame, the supreme sky-creator (the Baule being an Akan group that migrated from present-day Ghana). The etymology is debated: one school (presented in the Encyclopedia of African Religion) derives it from nya 'to get, obtain' + me 'to be full/satisfied' ('the one in whom one is satisfied, god of fullness'), while J. B. Danquah rejected this and connected it instead to enyim-nyam 'splendour/glory of the face'; Christaller declined to give an etymology, glossing it only as the boundless, inexhaustibly rich Being.",
+    "sources": [{ "kind": "secondary", "reference": "Molefi Kete Asante & Ama Mazama (eds.), Encyclopedia of African Religion (2009), s.v. Nyame; with J. B. Danquah, The Akan Doctrine of God (1944) for the competing enyim-nyam etymology" }]
+  },
+  "bemba_chitimukulu": {
+    "languageFamily": "Niger-Congo (Bantu, Bemba)",
+    "etymology": "Bemba Chitimukulu is Chiti Mukulu 'Chiti the Great', from the personal name Chiti (the first paramount, said to have been born Chiti Muluba) plus mukulu 'great, elder, senior, most respected'; later paramount chiefs of the Bemba assume the title. The common gloss 'the Great Tree' (as if from citi 'tree') is a secondary, debated folk reading rather than the derivation supported by the oral king-lists.",
+    "sources": [{ "kind": "secondary", "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-Eastern Zambia before 1900 (1973)" }]
+  },
+  "berber_amun_siwa": {
+    "languageFamily": "Afro-Asiatic (Egyptian); cult localised among Libyans/Amazigh",
+    "etymology": "The oracular god of Siwa is the Egyptian Amun, whose name is attested as ỉmn (jmn), conventionally rendered 'the hidden one / the concealed one' (from the root meaning 'to be hidden, conceal'), reflecting his invisible, all-pervading nature; the feminine counterpart Amunet bears the same name. The Libyan/Amazigh and Greek (Ammon) forms are adaptations of this Egyptian theonym at the desert oracle.",
+    "sources": [{ "kind": "secondary", "reference": "Richard H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Amun ('the hidden one', Egyptian ỉmn)" }]
+  },
+  "berber_anti": {
+    "languageFamily": "Hellenic (Greek); figure localised among Libyans/Amazigh",
+    "etymology": "The name known to the classical sources as Antaeus is Greek Antaîos (Ἀνταῖος), from the adjective antaîos 'set over against, opposed, hostile' (built on antáō 'to meet, face, oppose' and the preposition antí 'against, opposite', ultimately PIE *h₂ent- 'front, face'); thus roughly 'the opponent / he who confronts'. The form is a Greek interpretation of the Libyan earth-giant localised at Tingis (Tangier); the underlying native Berber name, if any, is not preserved.",
+    "sources": [{ "kind": "secondary", "reference": "H. G. Liddell & R. Scott, A Greek-English Lexicon (LSJ), s.v. ἀνταῖος 'set over against, opposite; hostile'" }]
+  },
+  "berber_ifri": {
+    "languageFamily": "Afro-Asiatic (Berber)",
+    "etymology": "The native theonym is Tamazight Ifri/Ifru, identical with the common noun ifri 'cave' (plural ifran); the goddess is the personified Dea Africa, and on the dominant etymology the name of the continent itself derives from the tribal name Afri < Berber ifri 'cave' (in reference to cave-dwellers), a derivation formally proposed by Michel Desfayes in 1981. This competes with an older Semitic etymology connecting Latin Africa to Phoenician ʿafar 'dust', so the derivation is debated rather than settled.",
+    "sources": [{ "kind": "secondary", "reference": "Tamazight ifri ‘cave’ (pl. ifran); M. Desfayes, on Afri/Africa < Berber ifri (1981)" }]
+  },
+  "bhil_bhagwan": {
+    "languageFamily": "Indo-European (Indo-Aryan; Sanskrit loanword into Bhil)",
+    "etymology": "The Bhil high-god name Bhagwan is a borrowing of Sanskrit bhagavān (stem bhaga-vant-), literally 'possessing fortune, prosperous, glorious/adorable', formed from the noun bhaga 'fortune, share, dispensed good' (itself from the verbal root bhaj- 'to apportion, allot, share') plus the possessive suffix -vant- 'endowed with'. The indigenous element among the Bhil is the cosmogony, not the word, which is a Sanskritic loan.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M., A Sanskrit-English Dictionary (1899), s.v. 'bhagavat' / 'bhaga'." }]
+  },
+  "bhil_indi_raja": {
+    "languageFamily": "Indo-European (Indo-Aryan; Sanskrit theonym adapted into Bhil)",
+    "etymology": "The Bhil/Bhilala rain-god (the prompt's 'Inddeo', locally Baba Ind / Raja Indra) takes its name from the Vedic thunder-and-rain god Indra (Sanskrit Índra-), here embedded in tribal rain-ritual rather than inherited Vedic cult. The deeper etymology of Indra itself is uncertain: a popular folk parsing reads indu 'drop' + -ra 'possessing', while a leading scholarly proposal derives it from PIE *h₃eid- 'to swell, be strong' (with nasal infix) yielding an adjective 'strong' > the god-name; Mayrhofer's standard dictionary treats the origin as unresolved.",
+    "sources": [{ "kind": "secondary", "reference": "Mayrhofer, M., Etymologisches Wörterbuch des Altindoarischen (1992-2001), s.v. 'índra-' (origin uncertain)." }]
+  },
+  "bicolano_asuang": {
+    "languageFamily": "Austronesian (Bikol/Philippine); etymology of theonym debated",
+    "etymology": "Asuang is the eponymous Bicolano deity behind the Filipino aswang/asuwang category, and the name's origin is genuinely contested. The widely repeated derivation from Sanskrit asura 'demon' is a popular/folk etymology with no demonstrated philological pathway; it goes back to Isabelo de los Reyes (1909), who linked pre-Hispanic Filipino demon-concepts to the Indic asura. A second folk derivation parses aso 'dog' + (Visayan) buang/wang 'crazy/wicked' ('dog-like'). No rigorous comparative-linguistic source establishes any single origin.",
+    "sources": [{ "kind": "secondary", "reference": "de los Reyes, Isabelo, La Religión Antigua de los Filipinos (1909) — associates Filipino demon-belief with Sanskrit asura (basis of the popular asura etymology, here labeled folk)." }]
+  },
+  "bodo_bathoubwrai": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman, Bodo-Garo)",
+    "etymology": "Bathou Bwrai is the Bodo (Boro) supreme creator: Bathou is analysed as Bodo ba 'five' + thou 'deep/profound (principle)', i.e. 'the five profound principles' (the five elements dwi water, ha earth, bar air, okhrang sky, or fire), while Bwrai means 'elder, old man' (the eldest in power/knowledge). He is also called Sibrai (Jiu/Siu Bwrai), glossed 'father of life/soul'. A minority Bodo derivation instead takes Bathou from bao 'to worship/adore' + thou 'to move forward'.",
+    "sources": [{ "kind": "secondary", "reference": "Narzary, Hargouri, Myths in Bodo Society: A Folkloric Study (2018), ch. on the Bathou religion (etymology of Bathou, Bwrai, Sibrai)." }]
+  },
+  "bodo_mainao": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman, Bodo-Garo)",
+    "etymology": "The Bodo rice/fertility goddess Mainao bears a transparent compound name: mai 'paddy, rice' (from Proto-Bodo-Garo *mai, ultimately Proto-Sino-Tibetan *mej 'grain') + no/nao 'house', i.e. roughly 'paddy/grain of the house' — the deified granary-grain and guardian of the family's wealth, ritually 'brought home' from the field in the Mainao-lainai rite.",
+    "sources": [{ "kind": "secondary", "reference": "Narzary, Hargouri, Myths in Bodo Society: A Folkloric Study (2018), section on goddess Mainao (mai 'paddy' + no 'house')." }]
+  },
+  "bororo_meri": {
+    "languageFamily": "Macro-Jê (Bororoan / Boe Wadáru)",
+    "etymology": "The name is simply the ordinary Bororo common noun méri 'sun', personified as the solar culture-hero (paired with his twin Ari, the Moon). It is not a compound or descriptive epithet but the everyday word for the daystar used as a proper name; this is a lexical identity ('Sun') rather than a deeper derivable etymology.",
+    "sources": [{ "kind": "ethnography", "reference": "Colbacchini, Antonio & Albisetti, Cesar, Os Boróros Orientais (1942), grammatical-lexical material on Bororo; cf. Lévi-Strauss, The Raw and the Cooked: Mythologiques I (1969 [1964]) for the Méri/Ari sun-and-moon cycle" }]
+  },
+  "bunyoro_ruhanga": {
+    "languageFamily": "Niger-Congo (Bantu, Rutara / Runyoro-Rutooro)",
+    "etymology": "Runyoro Ruhanga 'the Creator, He Who Creates', an agentive (ru- prefix) formation on the verb -hanga 'to create'. The verb continues Proto-Bantu *pánga 'to create, make', whose initial *p- regularly became h- in the Rutara languages, so *ku-panga > okuhanga 'to create' and Ruhanga 'Creator'.",
+    "sources": [{ "kind": "secondary", "reference": "'Ruhanga', Encyclopædia Britannica, s.v. (creator god of the Nkole/Nyankore and Haya), glossing the name as 'He Who Creates'; Proto-Bantu *panga > Rutara -hanga per standard Bantu historical phonology" }]
+  },
+  "buryat_erlen_khan": {
+    "languageFamily": "Mongolic (Buryat), name of Turkic origin",
+    "etymology": "Buryat Erlen (Khan), the Mongolic reflex of Turkic Erlik, lord of the dead. The name is generally derived from Old Turkic erklig 'mighty, powerful, having authority' (from erk 'power, authority'), used as a euphemistic title of the underworld ruler; the derivation is the standard one though the semantics are debated. The Indic/Tibetan equation with Yama is secondary syncretism, not the etymological source of the name.",
+    "sources": [{ "kind": "secondary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. erklig ‘mighty’; Encyclopedia of Religion, s.v. Erlik" }]
+  },
+  "buryat_esege_malan": {
+    "languageFamily": "Mongolic (Buryat)",
+    "etymology": "Buryat Esege Malaan (Tengri), literally 'Father Bald (Sky)'. Esege means 'father'; malaan means 'bald, bare', here understood of the open, cloudless sky, so the epithet is read both literally 'Bald-Headed Father' and figuratively 'Father of the Clear/Cloudless Sky'. In Buryat the related expression malaan tolgoiton 'bald-headed' was popularly extended to mean 'wise-headed', which colours the figure as a venerable patriarch.",
+    "sources": [{ "kind": "secondary", "reference": "D. A. Nikolaeva et al., 'Image of Esege Malan Tengri in the Context of Religious and Mythological Tradition of the Buryats' (peer-reviewed art., libmonster), glossing Esege 'father' + malaan 'bald/cloudless'; cf. U. Harva (Holmberg), Finno-Ugric and Siberian Mythology (1927)" }]
+  },
+  "buryat_khan_khormusta": {
+    "languageFamily": "Mongolic (Buryat); ultimately Iranian (Avestan) loan via Sogdian and Old Uyghur",
+    "etymology": "Mongolic Qormusta / Khormusta (Tengri) is a naturalized loan from the Iranian theonym Ahura Mazdā. The chain runs Avestan Ahura Mazdā > Middle Persian Ohrmazd > Sogdian Xwrmztʼ (Xormuzta) > Old Uyghur > Mongolic Qormusta, the Sogdian Buddhist/ Manichaean form being transmitted to the Mongols via the Uyghurs; among the Buryats he is fully assimilated as chief of the western (white) tengri.",
+    "sources": [{ "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia (1980), on Qormusta Tngri deriving his name from Ahura Mazda and occurring in Mongol shamanic fire-prayers; Sogdian Xwrmztʼ < Avestan Ahura Mazdā" }]
+  },
+  "buryat_morgon_kara": {
+    "languageFamily": "Mongolic (Buryat)",
+    "etymology": "The anglicized 'Morgon-Kara' renders Buryat Mergen Khara. Mergen is the well-attested Mongolic/Turkic word 'wise, skilled (one), expert marksman/archer' (continuing Proto-Mongolic *mergen, with cognates such as Khalkha mergen 'wise', Bashkir märgän 'marksman'); Khara is the common Mongolic adjective 'black'. The hero's name thus means roughly 'the Wise/Sharpshooting Black (One)'.",
+    "sources": [{ "kind": "secondary", "reference": "N. Poppe, Introduction to Mongolian Comparative Studies (1955) (Mongolic *mergen ‘wise, skilled archer’); the figure in M. Eliade, Shamanism (1964)" }]
+  },
+  "cantabrian_candamius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Cantabrian-Asturian)",
+    "etymology": "Theonym Candamius, attested as the epithet Iuppiter Candamius in the Asturo-Cantabrian north. The name is generally derived from the Indo-European root *kand- 'to shine, glow, burn' (whence Latin candēre), fitting a luminous sky/storm god of the mountain heights; it is echoed by oronyms and toponyms of the same family (Candamo, Candanedo, Candina). A minority alternative connects it instead to a pre-Latin *kanda 'stone, rocky ground'.",
+    "sources": [{ "kind": "secondary", "reference": "M. L. Albertos Firmat (deriving Candam- from *kand- 'brillar, arder, resplandecer'), cited s.v. Candamius; J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "cantabrian_erudinus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Cantabrian)",
+    "etymology": "Theonym attested as the dative Erudino on the Pico Dobra altar (AD 161), Cantabria. B. M. Prósper analyses it from an Indo-European *peruntino- 'that of last year, of the previous (year)' (to the root *per- 'last year / a year ago', as in Greek pérusi), with the regular Celtic loss of initial *p- (*peruntino- > *eruntino- > Erudino-); the sense suits a vegetation/first-harvest god, since the new crop springs from the prior year's seed.",
+    "sources": [{ "kind": "secondary", "reference": "Blanca María Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (Salamanca: Ediciones Universidad de Salamanca, 2002), reconstructing Erudino- < *peruntino- 'of last year'" }]
+  },
+  "cantabrian_mater_deva": {
+    "languageFamily": "Celtic (Hispano-Celtic / Cantabrian)",
+    "etymology": "The theonym is the Latin epithet Deva in Mater Deva ('Mother Goddess / River-Mother'), from Celtic *dēwā 'goddess, divine female one' (< Proto-Indo-European *deiwos 'god', the same root as Latin deus/diva). The form is the regular source of the widespread Iberian river-name Deva, the river being conceived as a divinized goddess; hence the cult of the river-mother at Mount Cildá.",
+    "sources": [{ "kind": "secondary", "reference": "Ranko Matasović, Etymological Dictionary of Proto-Celtic (Brill, 2009), s.v. *dēwo- / *dēwā 'god, goddess'" }, { "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005) (Cantabrian river/mother-goddess Deva)" }]
+  },
+  "celtiberian_cariociecus": {
+    "languageFamily": "Celtic (Hispano-Celtic / Lusitanian-Galician)",
+    "etymology": "Attested only as the epithet of Mars Cariociecus (dedication at Tude/Tuy, Galicia); the underlying native theonym is uncertain. The traditional scholarly hypothesis, due to José Leite de Vasconcelos, derives the first element cario- from Celtic *corio- 'host, body of troops, war-band' (cf. Gaulish corio-, Old Irish cuire 'troop'), fitting a war-god; the second element -ciecus remains unexplained, so the etymology is partial and debated.",
+    "sources": [{ "kind": "secondary", "reference": "José Leite de Vasconcelos, Religiões da Lusitânia, vol. 2 (Lisbon, 1905) (cario- < Celtic corio- 'body of troops')" }, { "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "celtiberian_lugus": {
+    "languageFamily": "Celtic (Hispano-Celtic / Celtiberian)",
+    "etymology": "Celtiberian theonym attested as dat. sg. Luguei (Peñalba de Villastar) and, characteristically in the plural, Latin dat. pl. Lugovibus 'to the Lugoves' (Uxama), from Proto-Celtic *Lugus. The root is genuinely contested: the most-cited proposal connects it to PIE *leugh- 'to bind by oath' via Celtic *lugiyo- 'oath' (cf. Old Irish luige, Welsh llw 'oath'); rival derivations from *leug- 'black' (Gaulish lugos 'raven', per Pokorny) or from a root meaning 'light' have also been advanced and none is secure.",
+    "sources": [{ "kind": "secondary", "reference": "Ranko Matasović, Etymological Dictionary of Proto-Celtic (Brill, 2009), s.v. *lug-" }, { "kind": "secondary", "reference": "Xavier Delamarre, Dictionnaire de la langue gauloise (2nd ed., Errance, 2003), s.v. Lugus / lugus" }]
+  },
+  "celtiberian_neto": {
+    "languageFamily": "Celtic (Hispano-Celtic / Celtiberian)",
+    "etymology": "War-god attested as Celtiberian Neito (Botorrita bronze), Latinized Neto/Neton (Macrobius, votive altars, later as Mars Neto). The name is generally derived from a Proto-Celtic root *nei-t- / *nītu- 'fighting fury, passion, ardour' (cf. Old Irish níth 'combat, fury'), and is cognate with the name of the Irish war-god Neit; the connection is widely accepted, though the precise reconstruction is debated.",
+    "sources": [{ "kind": "secondary", "reference": "Ranko Matasović, Etymological Dictionary of Proto-Celtic (Brill, 2009), s.v. *nītu- 'fury, combat'" }, { "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005); Macrobius, Saturnalia I.19.5 (primary attestation of Neton)" }]
+  },
+  "chaga_ruwa": {
+    "languageFamily": "Niger-Congo (Bantu, Chaga/Kichagga)",
+    "etymology": "Chaga Ruwa (western variant Iruva), the supreme/sun high-god, is the ordinary Chaga (Kichagga) word for 'sun'; the deity is identified with, or conceived as dwelling in, the sun. Dundas notes the Chaga themselves were not agreed whether Ruwa is the sun itself or its indweller.",
+    "sources": [{ "kind": "ethnography", "reference": "Charles Dundas, Kilimanjaro and Its People (Witherby, 1924), pp. 107-109" }, { "kind": "ethnography", "reference": "Bruno Gutmann, Das Recht der Dschagga (C. H. Beck, 1926)" }]
+  },
+  "chamorro_fuuna": {
+    "languageFamily": "Austronesian (Chamorro/CHamoru)",
+    "etymology": "Primordial creator-sister whose name is recorded in early Spanish sources as Fo'na/Fouha (the petrification site Lasso' Fu'a / Fouha Bay preserves it). In Chamorro Fo'na is connected with the word for 'first, ahead, origin' (mo'na 'before/in front'), fitting the first-creator; later scholarship cautions that the now-common spelling Fu'una has no clear meaning in Chamorro, so the original form and sense are debated.",
+    "sources": [{ "kind": "secondary", "reference": "Lawrence J. Cunningham, Ancient Chamorro Society (Bess Press, 1992)" }, { "kind": "secondary", "reference": "Scott Russell, Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands (Micronesian Archaeological Survey Report 32, CNMI, 1998)" }]
+  },
+  "chamorro_puntan": {
+    "languageFamily": "Austronesian (Chamorro/CHamoru)",
+    "etymology": "Primordial creator-brother recorded in early sources as Pontan/Puntan. The name is widely judged not to be of native origin: as spelled, Puntan corresponds to Spanish punta 'point, tip, end' (with an excrescent -n), reflecting post-contact transmission of the myth; the genuinely indigenous form and meaning are uncertain and debated.",
+    "sources": [{ "kind": "secondary", "reference": "Scott Russell, Tiempon I Manmofo'na (Micronesian Archaeological Survey Report 32, CNMI, 1998)" }, { "kind": "secondary", "reference": "Lawrence J. Cunningham, Ancient Chamorro Society (Bess Press, 1992)" }]
+  },
+  "chamorro_taotaomona": {
+    "languageFamily": "Austronesian (Chamorro/CHamoru)",
+    "etymology": "Class of ancestral spirits, taotaomo'na, a transparent compound of Chamorro taotao 'person, people' + mo'na 'before, in front, formerly' — literally 'people of before / people of the past' (the ante or aniti of the ancestors, recast as ghosts under Spanish Christianization).",
+    "sources": [{ "kind": "secondary", "reference": "Donald M. Topping, Pedro M. Ogo & Bernadita C. Dungca, Chamorro-English Dictionary (University of Hawaii Press, 1975), s.v. taotao, mo'na" }, { "kind": "secondary", "reference": "Lawrence J. Cunningham, Ancient Chamorro Society (Bess Press, 1992)" }]
+  },
+  "cherokee_asgaya_gigagei": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Asga'ya Gi'gagei 'Red Man', the thunder/lightning spirit of the healing formulas, a compound of asga'ya 'man' + gi'gage(i) 'red' (red being the color of the east, of power and success); addressed as Red Woman (with the corresponding feminine) according to the patient's sex.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, The Sacred Formulas of the Cherokees (1891)" }, { "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900)" }]
+  },
+  "cherokee_kanati": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Kana'ti, the 'Lucky Hunter', first man and keeper of the game; Mooney records the traditional rendering 'Lucky Hunter' (also 'the great rabbit-hunter') for the name. Some present-day Cherokee speakers contest the 'lucky' gloss, connecting the word instead to the root for 'hunter' (kanohalidohi), so the precise literal sense is debated even though the figure and the traditional translation are well attested.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Kana'ti glossed 'Lucky Hunter')" }]
+  },
+  "cherokee_nunnehi": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Nûñnë'hï, the immortal spirit-people of the highlands; Mooney translates the name literally as 'people who live anywhere', interpreted as 'those who live forever / the immortals'. They dwell in townhouses under the bald mountains and mounds such as Nikwasi.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Nûñnë'hï 'people who live anywhere')" }]
+  },
+  "cherokee_selu": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Selu (ᏎᎷ) literally 'corn, maize', the Corn-Mother and first woman whose slain, dragged body yields cultivated corn to the people.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Selu 'corn')" }]
+  },
+  "cherokee_thunder_boys": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Twin sons of Kanati and Selu, known as the Anisga'ya Tsunsdi' 'the Little Men', a compound of anisga'ya 'men' (plural of asga'ya 'man') + tsunsdi' 'little' (plural of usdi' 'small'); they dwell above the sky vault (Usûñhi'yï) and their voices are heard as thunder in the west.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Anisga'ya Tsunsdi' 'the Little Men')" }]
+  },
   // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
   //    each figure's notes; formalized here and cited to the standard corpus —
   //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
