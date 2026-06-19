@@ -246405,11 +246405,84 @@ const applyDomainSupplement = (peopleMap, extra = DOMAIN_SUPPLEMENT) => {
   return peopleMap;
 };
 
+// ═════════════════════════════════════════════════════════════════════════════
+//  FACULTY_SUPPLEMENT — author the active powers for the deity/demigod figures
+//  whose narrated supernatural deeds support them but which the waves left with
+//  an empty Powers section. Scope is deliberately narrow: ONLY figures with a
+//  specific attested deed/ability (an avatar's cosmogonic act, a transformation,
+//  a signature divine implement). Figures that are purely inscriptional
+//  (Lusitanian/Cantabrian/Celtiberian theonyms), purely genealogical, or marked
+//  "no faculties asserted" are left empty on purpose — inventing deeds there
+//  would be fabrication. Each faculty is a verb-phrase grounded in the figure's
+//  own sources, native term only where securely transcribed. Merged pre-migrate,
+//  deduped by id.
+// ═════════════════════════════════════════════════════════════════════════════
+const FACULTY_SUPPLEMENT = {
+  'hindu_vishnu_narasimha': [
+    { id: 'narasimha-disembowel-threshold-tyrant', name: 'Disembowel the boon-proof tyrant on the threshold', term: { value: 'नृसिंह', script: 'Sanskrit', rom: 'Narasiṃha' }, notes: 'Bursts from the pillar at twilight — neither man nor beast, neither in nor out, by no weapon — to tear open Hiraṇyakaśipu and satisfy every clause of his boon.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Bhāgavata Purāṇa 7.8' }], ability: true },
+  ],
+  'hindu_vishnu_varaha': [
+    { id: 'varaha-raise-earth-on-tusks', name: 'Raise the drowned earth from the cosmic ocean on his tusks', term: { value: 'वराह', script: 'Sanskrit', rom: 'Varāha' }, notes: 'Dives as the boar into the cosmic waters to lift the earth-goddess Bhūmi and re-found the world at the start of the kalpa.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Bhāgavata Purāṇa 3.13-3.19' }], ability: true },
+    { id: 'varaha-slay-hiranyaksha', name: 'Slay the daitya Hiraṇyākṣa', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Bhāgavata Purāṇa 3.17-3.19' }], ability: true },
+  ],
+  'welsh_blodeuwedd': [
+    { id: 'blodeuwedd-conjured-from-flowers', name: 'Be conjured into a woman from oak, broom, and meadowsweet', term: { value: 'Blodeuwedd', script: 'Welsh', rom: 'Blodeuwedd' }, notes: 'Made by Math and Gwydion from the flowers of three plants to be a wife for Lleu.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pedair Cainc y Mabinogi, Fourth Branch (Math)' }], ability: true },
+    { id: 'blodeuwedd-owl-transformation', name: 'Be transformed into an owl, shunned by all other birds', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pedair Cainc y Mabinogi, Fourth Branch (Math)' }], ability: true },
+  ],
+  'welsh_amaethon': [
+    { id: 'amaethon-divine-ploughman', name: 'Plough and master the tilled earth', notes: 'The divine ploughman of the Children of Dôn.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Culhwch ac Olwen' }], ability: true },
+    { id: 'amaethon-win-beasts-of-annwn', name: 'Win the beasts of Annwn, occasioning the Cad Goddeu', notes: 'His theft from the Otherworld provokes the Battle of the Trees.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Cad Goddeu (Llyfr Taliesin)' }], ability: true },
+  ],
+  'greek_hesiod_erinyes': [
+    { id: 'erinyes-pursue-kin-slayer', name: 'Pursue and madden the kin-slayer and oath-breaker', notes: 'Chthonic avengers of blood-guilt who hound Orestes to madness across Greece.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Aeschylus Eumenides; Hesiod Theogony 183-187' }], ability: true },
+  ],
+  'chinese_sanshengmu': [
+    { id: 'sanshengmu-magic-lotus-lantern', name: 'Wield the magic lotus lantern', term: { value: '寶蓮燈', script: 'Chinese', rom: 'bǎo lián dēng' }, notes: 'Her divine treasure, the lamp of the Magic Lotus Lantern cycle.', inheritability: 'none', sources: [{ kind: 'secondary', reference: 'Bao Lian Deng (Magic Lotus Lantern) folk-cycle' }], ability: true },
+  ],
+  'greek_hesiod_hebe': [
+    { id: 'hebe-bestow-youth', name: 'Bestow and restore youthful prime', term: { value: 'ἥβη', script: 'Greek', rom: 'hḗbē' }, notes: 'Goddess of youth and cupbearer of the gods before Ganymede, pouring their nectar.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Hesiod Theogony 921-922, 950-955' }], ability: true },
+  ],
+  'greek_hesiod_tyche': [
+    { id: 'tyche-turn-of-fortune', name: 'Raise and cast down mortals by the turn of fortune', term: { value: 'τύχη', script: 'Greek', rom: 'týchē' }, notes: 'Goddess of fortune and chance; by the Hellenistic age the city-fortune with rudder and cornucopia.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pindar Olympian 12.1-2; Hesiod Theogony 360' }], ability: true },
+  ],
+  'greek_hesiod_calliope': [
+    { id: 'calliope-inspire-epic-song', name: 'Inspire epic song', notes: 'Eldest of the Muses and patron of epic poetry; mother of Orpheus.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Hesiod Theogony 75-80; Apollonius Rhodius Argonautica 1.23-25' }], ability: true },
+  ],
+  'greek_hesiod_clio': [
+    { id: 'clio-inspire-record-of-glory', name: 'Inspire the record of glory and history', notes: 'Muse of history; keeper of kleos, the fame of deeds.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Hesiod Theogony 76-79; Diodorus 4.7' }], ability: true },
+  ],
+  'irish_nuada': [
+    { id: 'nuada-silver-arm', name: 'Bear the silver arm that restored his kingship', term: { value: 'Airgetlám', script: 'Irish', rom: 'Airgetlám' }, notes: 'Lost the kingship with his hand at Mag Tuired and regained it when Dian Cécht wrought him a working arm of silver.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired; Lebor Gabála Érenn' }], ability: true },
+  ],
+  'hindu_sugriva': [
+    { id: 'sugriva-command-vanara-host', name: 'Command the vanara host of Kishkindha', notes: 'Vanara king, son of Sūrya, who marshals the monkey armies that search for Sītā and storm Laṅkā.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Valmiki Ramayana, Kishkindha Kanda' }], ability: true },
+  ],
+  'greek_arcas': [
+    { id: 'arcas-teach-civilizing-arts', name: 'Teach the arts of agriculture, weaving, and breadmaking', notes: 'The culture-hero who taught the Arcadians to sow grain, spin wool, and bake bread.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pausanias 8.4.1' }], ability: true },
+  ],
+};
+
+// Merge FACULTY_SUPPLEMENT onto figures by id (additive, dedupe by faculty id).
+const applyFacultySupplement = (peopleMap, extra = FACULTY_SUPPLEMENT) => {
+  for (const [id, list] of Object.entries(extra)) {
+    const p = peopleMap[id];
+    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] faculty for unknown figure', id); continue; }
+    if (!Array.isArray(list) || !list.length) continue;
+    p.faculties = Array.isArray(p.faculties) ? p.faculties : [];
+    for (const f of list) {
+      if (!f || !f.id) continue;
+      if (p.faculties.some((x) => x.id === f.id)) continue;
+      p.faculties.push(f);
+    }
+  }
+  return peopleMap;
+};
+
 // Build + migrate seed data, then attach item holders and run the
 // content-integrity passes (term scrub + provenance inheritance) last,
 // finishing with the consolidation/QA pass over the whole map.
 const seedPeople = consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
-  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(applyDomainSupplement(addNewFigures(buildPeopleSeed())))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
+  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(applyFacultySupplement(applyDomainSupplement(addNewFigures(buildPeopleSeed()))))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X))))))))));
 const seedAtlas  = buildTerritorySeed();
 
 // Final-map integrity pass. migrate's detectors ran BEFORE the item/term
