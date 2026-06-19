@@ -6355,7 +6355,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'demigod', startEvent: 'death-by-brothers-in-law-conspiracy', era: 'mythic-prehistoric', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Killed in old age by his wife\'s brothers in conspiracy. His son Rerir avenged the killing and inherited the kingdom; the Volsung line continues through Rerir → Volsung → Sigmund → Sigurd.' },
       ],
       relations: [
-        { kind: 'father-of', externalRef: { name: 'Rerir', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Avenger of Sigi\'s death and inheritor of the kingdom; the next generation in the Volsung line.' },
+        { kind: 'father-of', personId: 'norse_rerir', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Avenger of Sigi\'s death and inheritor of the kingdom; the next generation in the Volsung line.' },
         { kind: 'foundational-precursor-to', externalRef: { name: 'Sigurd Fáfnisbani', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga' }], notes: 'Great-great-grandfather of Sigurd the dragon-slayer through Rerir → Volsung → Sigmund. The genealogical anchor of the Volsung-Niebelung tradition.' },
       ],
       death: {
@@ -13617,6 +13617,46 @@ const buildPeopleSeed = () => {
 
     // ─── NORSE — Æsir-Vanir cluster ───────────────────────────────────────
 
+    // ── Genealogy march, Wave G14 (Norse): materialize Jǫrð (Thor's mother)
+    //    and Rerir (Sigi's son, the Völsung line), both carried only as
+    //    externalRefs. The spouse/sibling/father-of links to the already-
+    //    registered Frigg and Freyja are promoted to personId on the
+    //    hand-authored Odin/Njörd/Freyr, with reciprocals via ENRICHMENTS. ──
+    {
+      id: 'norse_jord', schemaVersion: 2,
+      name: { primary: 'Jǫrð', alt: ['Jord', 'Fjǫrgyn', 'Hlóðyn', 'Earth'], transliterations: { 'old-norse': 'Jǫrð', 'english-translation': 'Earth' } },
+      type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse', sex: 'female', vitalStatus: 'living',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'deity', era: 'mythic-prehistoric', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Gylfaginning 9, 36; Skáldskaparmál; Vǫluspá' }], notes: 'The personified Earth (also Fjǫrgyn, Hlóðyn); a giantess reckoned among the goddesses. By Odin she is the mother of Thor, who is repeatedly called Jarðar burr ("son of Jǫrð").' },
+      ],
+      domains: [{ id: 'personified-earth' }, { id: 'mother-of-Thor' }],
+      relations: [
+        { kind: 'mother-of', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Snorri Sturluson, Gylfaginning 9, 36; Skáldskaparmál (Thor as Jarðar burr, "son of Jǫrð"); Vǫluspá' }], weight: 'primary' }],
+      notes: 'The personified Earth of Norse cosmology (also Fjǫrgyn and Hlóðyn), counted among the goddesses though of giant-kind; by Odin she is the mother of Thor, who is repeatedly called Jarðar burr ("son of Jǫrð"). Carried in the registry only as an externalRef on Thor until materialized here.',
+    },
+
+    {
+      id: 'norse_rerir', schemaVersion: 2,
+      name: { primary: 'Rerir', alt: ['Rerir', 'Refir'], transliterations: { 'old-norse': 'Rerir' } },
+      type: 'quartigod', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse', sex: 'male', vitalStatus: 'dead',
+      parentIds: ['norse_sigi'], parentRoles: { norse_sigi: 'paternal' },
+      temporal: { era: 'mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'quartigod', era: 'mythic-prehistoric', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }], notes: 'Son of Sigi and the next king of the Völsung line; avenged his father\'s murder by his maternal uncles and won the kingdom. Long childless, he and his wife received the apple of fertility from Frigg (sent by the wish-maiden Hljóð), conceiving Völsung, eponym of the dynasty.' },
+        { vitalStatus: 'dead', era: 'mythic-prehistoric', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Volsung-line-king' }, { id: 'avenger-of-Sigi' }],
+      relations: [
+        { kind: 'father', personId: 'norse_sigi', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }], weight: 'primary' }],
+      notes: 'Son of Sigi and second king of the Völsung line; avenged his father and won the kingdom, then with his wife obtained the apple of fertility from Frigg to conceive Völsung, eponym of the Völsung dynasty. Quartigod-tier as the son of the demigod Sigi. Carried in the registry only as an externalRef on Sigi until materialized here.',
+    },
+
     // ─── Odin — chief of the Æsir ─────────────────────────────────────────
     {
       id: 'norse_odin', schemaVersion: 2,
@@ -13657,7 +13697,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Frigg (queen of the Æsir, wife of Odin, mother of Baldr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál; Lokasenna 26-27' }], notes: 'Frigg entry pending. Mother of Baldr by Odin.' },
+        { kind: 'spouse', personId: 'norse_frigg', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál; Lokasenna 26-27' }], notes: 'Queen of the Æsir, wife of Odin and mother of Baldr.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Vǫluspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, etc.); Snorri\'s Prose Edda (Gylfaginning, Skáldskaparmál); Heimskringla (Ynglinga saga); Háleygjatal; Tacitus Germania 9 (1st c. CE — the earliest external attestation, identifying Mercury as the chief Germanic deity); Adam of Bremen Gesta Hammaburgensis 4.26-27 (Uppsala temple)' }], weight: 'primary' },
@@ -13692,7 +13732,7 @@ const buildPeopleSeed = () => {
         { id: 'jarngreipr', classId: 'gauntlets', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the iron gloves needed to wield Mjǫllnir)' }] },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Jǫrð (the earth-giantess; mother of Thor by Odin)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
+        { kind: 'mother', personId: 'norse_jord', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
         { kind: 'enemy', externalRef: { name: 'Jǫrmungandr (the Midgard Serpent; Thor\'s doom at Ragnarǫk)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫluspá 56; Gylfaginning 51' }], notes: 'They slay each other at Ragnarǫk; Thor walks nine steps before falling from the serpent\'s venom.' },
       ],
       sources: [
@@ -13740,7 +13780,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling-and-spouse', externalRef: { name: 'the unnamed sister-wife of Njörðr (Vanir tradition of sibling-incest pre-hostage-exchange; mother of Freyr and Freyja per Lokasenna 36)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Heimskringla, Ynglinga saga 4; Lokasenna 36' }], notes: 'Unnamed Vanir sister-wife in Vanaheim, mother of Freyr and Freyja. Entry pending if needed; tradition identifies her with Nerthus in some readings.' },
         { kind: 'father-of', personId: 'norse_freyr', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Gylfaginning 23-24; Lokasenna 36' }] },
-        { kind: 'father-of', externalRef: { name: 'Freyja (Vanir goddess of love, war, and seiðr; daughter of Njörðr; sister-and-twin of Freyr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Gylfaginning 23-24; Lokasenna 36' }], notes: 'Freyja entry pending.' },
+        { kind: 'father-of', personId: 'norse_freyja', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Gylfaginning 23-24; Lokasenna 36' }], notes: 'His daughter, the Vanir goddess of love, war, and seiðr; twin of Freyr.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Vǫluspá 21-24; Vafþrúðnismál 39; Grímnismál 16; Lokasenna 35-36; Snorri, Gylfaginning 23-24, Skáldskaparmál 1; Heimskringla, Ynglinga saga 4. Pre-Norse: Tac. Germ. 40 (the Nerthus cult, the feminine Proto-Germanic cognate)' }], weight: 'primary' },
@@ -13779,7 +13819,7 @@ const buildPeopleSeed = () => {
       },
       relations: [
         { kind: 'parent', personId: 'norse_njord', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál 38; Gylfaginning 23' }], notes: 'Njǫrðr entry pending. Father (Vanir).' },
-        { kind: 'sibling', externalRef: { name: 'Freyja (Vanir goddess of love, war, and seiðr; daughter of Njörðr; sister-and-twin of Freyr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Lokasenna 32; Gylfaginning 24' }], notes: 'Freyja entry pending. Twin sister.' },
+        { kind: 'sibling', personId: 'norse_freyja', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Lokasenna 32; Gylfaginning 24' }], notes: 'His twin sister, the Vanir goddess Freyja.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Vǫluspá 53, Skírnismál, Lokasenna 35-37, Grímnismál 5); Prose Edda (Gylfaginning 24, 37, 49; Skáldskaparmál); Ynglinga saga 9-10; Adam of Bremen 4.26-27; multiple sagas (Hrafnkels saga Freysgoða, Víga-Glúms saga); the Lerchenborg figurine and other archaeological phallic male figures' }], weight: 'primary' },
@@ -172950,6 +172990,20 @@ const CORRECTIONS = {
 //  reciprocity invariant holds by construction.
 // ═════════════════════════════════════════════════════════════════════════════
 const ENRICHMENTS = {
+  // Genealogy march, Wave G14 (Norse): reciprocal family edges for the
+  // generated figures Frigg and Freyja (their source-side links are promoted
+  // from externalRef to personId on the hand-authored Odin/Njörd/Freyr; these
+  // entries supply the reciprocal and auto-mirror the symmetric kinds).
+  'norse_frigg': {
+    relations: [
+      { kind: 'spouse', personId: 'norse_odin', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál; Lokasenna 26-27; Gylfaginning' }], notes: 'Queen of the Æsir, wife of Odin and mother of Baldr.' },
+    ],
+  },
+  'norse_freyja': {
+    relations: [
+      { kind: 'sibling', personId: 'norse_freyr', sources: [{ kind: 'primary', reference: 'Lokasenna 32; Gylfaginning 24' }], notes: 'Her twin brother, the Vanir god Freyr; both children of Njörðr.' },
+    ],
+  },
   'andamanese_biliku': {
     relations: [
       { kind: 'spouse', personId: 'andamanese_tarai', sources: [{ kind: 'secondary', reference: 'A. R. Radcliffe-Brown, The Andaman Islanders (1922)' }], notes: 'The NE and SW monsoon pair; by band the two are spouses (the birds their children), siblings, or rivals.' },
