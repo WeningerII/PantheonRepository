@@ -6355,7 +6355,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'demigod', startEvent: 'death-by-brothers-in-law-conspiracy', era: 'mythic-prehistoric', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Killed in old age by his wife\'s brothers in conspiracy. His son Rerir avenged the killing and inherited the kingdom; the Volsung line continues through Rerir → Volsung → Sigmund → Sigurd.' },
       ],
       relations: [
-        { kind: 'father-of', externalRef: { name: 'Rerir', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Avenger of Sigi\'s death and inheritor of the kingdom; the next generation in the Volsung line.' },
+        { kind: 'father-of', personId: 'norse_rerir', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Avenger of Sigi\'s death and inheritor of the kingdom; the next generation in the Volsung line.' },
         { kind: 'foundational-precursor-to', externalRef: { name: 'Sigurd Fáfnisbani', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga' }], notes: 'Great-great-grandfather of Sigurd the dragon-slayer through Rerir → Volsung → Sigmund. The genealogical anchor of the Volsung-Niebelung tradition.' },
       ],
       death: {
@@ -6881,7 +6881,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'aswang-class-creator', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Bicolano tradition' }], notes: 'Eponymous progenitor of the broader Filipino aswang class of folkloric night-flesh-eaters via the dark-gift transmission to mortal worshippers.' },
       ],
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Gugurang (Bicolano supreme deity)', tradition: 'Bicolano' }, era: 'primordial', sources: [{ kind: 'primary', reference: 'Ibalong cosmological framework' }] },
+        { kind: 'sibling', personId: 'bicolano_gugurang', era: 'primordial', sources: [{ kind: 'primary', reference: 'Ibalong cosmological framework' }] },
         { kind: 'father-of', personId: 'bicolano_oryol', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
         { kind: 'father-of', personId: 'bicolano_magindara', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
       ],
@@ -6914,8 +6914,7 @@ const buildPeopleSeed = () => {
       },
       relations: [
         { kind: 'sibling', personId: 'bicolano_magindara', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition — both daughters of Asuang' }] },
-        { kind: 'sibling', externalRef: { name: 'Magindara (half-eel demigoddess)', tradition: 'Bicolano' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
-        { kind: 'lover', externalRef: { name: 'Handyong (mortal ruler of Ibalong)', tradition: 'Bicolano' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol folk-tale' }], notes: 'The defining love-relationship that transforms Oryol from antagonist to ally and central to the Bicolano civilizing-narrative.' },
+        { kind: 'lover', personId: 'bicolano_handyong', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol folk-tale' }], notes: 'The defining love-relationship that transforms Oryol from antagonist to ally and central to the Bicolano civilizing-narrative.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Ibalong epic (Bicolano oral epic, ~60-stanza fragment recorded; Bicolano Poetry Archives via L. G. Dato 1965; Castaño Treatise on the Bicol Region 1895; Melendreras de la Trinidad Ibal Manuscript 1815-1867 in Franciscan Archives Albay; National Commission for Culture and the Arts Philippine Epics and Folklore: Ibalong 2020); Three Tales From Bicol, Perla S. Intia, New Day Publishers, 1982' }], weight: 'primary' },
@@ -6956,6 +6955,61 @@ const buildPeopleSeed = () => {
         { kind: 'eponym-of', externalRef: { name: 'the Magindara-mermaid-species ("aswang ng dagat") — the canonical-Bicolano vicious flesh-eating mermaid-race that emerged in the sea where the original Magindara was last seen, taking her name as species-eponym; iconographically distinguished from the original kind-and-tender-hearted demigoddess', tradition: 'Bicolano' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Bicolano oral tradition' }] },
       ],
       notes: 'Half-divine half-eel daughter of the Bicolano deity Asuang by an unnamed mortal woman. Sister of Oryol (the half-serpent demigoddess of the Ibalong epic). Defined in Bicolano oral tradition by her kind-and-tender-hearted character — the deliberate contrast to her cunning serpent-sister. Possessed of a beautiful voice with the dual canonical-Bicolano power to summon storms or to calm them. When asked by her father Asuang to summon storms against the human settlers of Ibalong, she refused; banished by Asuang into the sea as punishment. After her banishment, the canonical-Bicolano vicious-mermaid race emerged from the place where she was last seen, taking her name as species-eponym ("Magindara" / "aswang ng dagat"); iconographically distinguished from the original demigoddess. The kindness-and-mercy character-note and the storm-controlling vocal faculty are the defining elements of her individual-figure iconography.',
+    },
+
+    // ── Genealogy march, Wave G5 (Bicolano): materialize the supreme deity
+    //    Gugurang (Asuang's sibling-rival, formerly an externalRef) and the
+    //    Ibalong hero-ruler Handyong (Oryol's lover, formerly an externalRef). ──
+    {
+      id: 'bicolano_gugurang', schemaVersion: 2,
+      name: { primary: 'Gugurang', alt: ['Gugúrang'], transliterations: { bicolano: 'Gugurang', etymology: 'Bicolano: the supreme creator-deity of the pre-Hispanic Bicol pantheon.' } },
+      type: 'deity', origin: 'canon', tradition: 'Bicolano', primaryTradition: 'Bicolano',
+      sex: 'male', vitalStatus: 'living',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'primordial' },
+      lifecycle: [
+        { typeStatus: 'deity', startEvent: 'existence-as-supreme-creator-and-keeper-of-fire', era: 'primordial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Ibalong epic; Bicolano cosmological tradition' }], notes: 'Supreme deity of the Bicolano pantheon; the good god who dwells within Mount Mayon and keeps the sacred fire of creation. Brother and one-time equal of Asuang, the deity of evil and chaos. Mortals appealed to him for good harvest and were punished with eruptions of Mayon for wrongdoing.' },
+        { typeStatus: 'deity', startEvent: 'defeat-of-Asuangs-fire-theft', era: 'primordial', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Ibalong; Bicolano cosmological tradition' }], notes: 'When Asuang stole his sacred fire, Gugurang retrieved it, called rain to quench the flames, and struck Asuang\'s mountain with a thunderbolt, sealing his brother beneath Mount Malinao — the structural subordination of the once-equal evil deity.' },
+      ],
+      domains: [
+        { id: 'supreme-creator-deity' },
+        { id: 'keeper-of-the-sacred-fire-of-Mount-Mayon' },
+      ],
+      relations: [
+        { kind: 'sibling', personId: 'bicolano_asuang', era: 'primordial', sources: [{ kind: 'primary', reference: 'Ibalong cosmological framework — Gugurang and Asuang as brother-deities and one-time equals' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Ibalong epic (Bicolano oral epic); Bicolano cosmological tradition; Felix B. Regalado ethnographic compilation' }], weight: 'primary' },
+      ],
+      notes: 'Supreme creator-deity of the pre-Hispanic Bicolano pantheon; the benevolent god who dwells in Mount Mayon and keeps the sacred fire of creation, sending eruptions to punish wrongdoing. Brother and one-time equal of Asuang, the deity of evil; when Asuang tried to steal his fire, Gugurang sealed him beneath Mount Malinao. The Gugurang-Asuang opposition is the central dualism of Bicolano cosmology. Carried in the registry only as an externalRef on Asuang until materialized here as the sibling-rival supreme deity.',
+    },
+
+    {
+      id: 'bicolano_handyong', schemaVersion: 2,
+      name: { primary: 'Handyong', alt: ['Handiong'], transliterations: { bicolano: 'Handyong', etymology: 'Bicolano: the second of the three heroes of the Ibalong epic, after Baltog and before Bantong.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Bicolano', primaryTradition: 'Bicolano',
+      sex: 'male', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'heroic-age' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'clearing-of-Ibalong-of-monsters', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Ibalong epic' }], notes: 'Hero-ruler of Ibalong (the ancient name of the Bicol region). With his warriors he cleared the land of monsters — the giant crocodiles, the wild carabaos, the snakes of Mount Hantik, and the one-eyed three-throated Puong — making the land safe for human settlement.' },
+        { typeStatus: 'mortal', startEvent: 'campaign-against-Oryol-and-alliance', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol tradition' }], notes: 'Long pursued the cunning half-serpent demigoddess Oryol, who repeatedly eluded his traps; she fell in love with him and turned from antagonist to ally, revealing the secrets of governing the land that brought prosperity to Ibalong.' },
+        { typeStatus: 'mortal', startEvent: 'civilizing-works-and-laws', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Ibalong epic' }], notes: 'Instituted the first laws, agriculture, the plow and carabao-yoke, the boat, and writing among his people — the Bicolano culture-bringer; succeeded by Bantong, who slew the last monster Rabot.' },
+        { vitalStatus: 'dead', era: 'heroic-age', eraOrdering: 3 },
+      ],
+      domains: [
+        { id: 'hero-ruler-of-Ibalong' },
+        { id: 'monster-clearer-and-culture-bringer' },
+      ],
+      relations: [
+        { kind: 'lover', personId: 'bicolano_oryol', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Ibalong epic; Handyong-Oryol folk-tale' }], notes: 'The serpent-demigoddess Oryol, won from antagonist to ally and lover, revealed the secrets of governance to him.' },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Ibalong epic (Bicolano oral epic, ~60-stanza fragment; NCCA Philippine Epics and Folklore: Ibalong); Three Tales From Bicol, Perla S. Intia (New Day Publishers, 1982)' }], weight: 'primary' },
+      ],
+      notes: 'The second of the three great heroes of the Ibalong epic of the Bicol region, between Baltog (the first) and Bantong (the slayer of Rabot). Cleared Ibalong of its monsters and instituted laws, agriculture, the plow, the boat, and writing — the Bicolano culture-bringer. His campaign against and eventual love-alliance with the half-serpent demigoddess Oryol is the central narrative of the middle Ibalong cycle. Carried in the registry only as an externalRef on Oryol until materialized here.',
     },
 
     // ─── Dumagid ───────────────────────────────────────────────────────────
@@ -7279,7 +7333,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'kingship-of-the-imandwa-spirits', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
       ],
       relations: [
-        { kind: 'lover', externalRef: { name: 'Kalimulore (later Nyiraryang\'ombe, mortal-with-shapeshifter-powers)', tradition: 'Banyaruanda' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+        { kind: 'lover', personId: 'banyaruanda_kalimulore', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
         { kind: 'father-of', personId: 'banyaruanda_ryangombe', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
       ],
       sources: [
@@ -7294,8 +7348,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Ryangombe', alt: ['Ryang\'ombe', 'Kiranga (Burundi equivalent)'], transliterations: { kinyarwanda: 'Ryangombe', etymology: 'Kinyarwanda: from a root associated with cattle and hunting domains; the figure\'s domain-specific honorifics include "the prominent hunter" and "king of the imandwa."' } },
       type: 'demigod', origin: 'canon', tradition: 'Banyaruanda', primaryTradition: 'Banyaruanda',
       sex: 'male', vitalStatus: 'apotheosed',
-      parentIds: ['banyaruanda_babinga'],
-      parentRoles: { banyaruanda_babinga: 'paternal' },
+      parentIds: ['banyaruanda_babinga', 'banyaruanda_kalimulore'],
+      parentRoles: { banyaruanda_babinga: 'paternal', banyaruanda_kalimulore: 'maternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
         { typeStatus: 'demigod', startEvent: 'birth-to-Babinga-and-Kalimulore', era: 'heroic-age', eraOrdering: 100, sources: [{ kind: 'primary', reference: 'Werner Myths and Legends of the Bantu 1933 ch. VIII' }], notes: 'Born to Babinga (king of the imandwa) and Kalimulore (mortal-with-shapeshifter-powers, later renamed Nyiraryang\'ombe). The mother\'s lioness-shapeshifter-and-cattle-killer biography establishes the supernatural-family-context that the Werner narrative preserves in elaborate detail.' },
@@ -7305,8 +7359,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'apotheosed', startEvent: 'apotheosis-on-Mount-Muhavura-as-imandwa-king', era: 'mythic-present', eraOrdering: 104, sources: [{ kind: 'primary', reference: 'Werner 1933; Banyaruanda Kubandwa tradition' }], notes: 'Apotheosed and translated to Mount Muhavura (the volcano on the Rwanda-Uganda border), where he continues to live with his imandwa-relatives and dependents. Inhabits the slopes of Mount Karisimbi per other traditions. Initiated Kubandwa-cult members are believed to live with him after death on the volcano-slopes, drinking, gambling, and smoking pleasantly — the more-pleasant-afterlife than the standard bazimu-ghost destiny.' },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Kalimulore / Nyiraryang\'ombe (mortal-with-shapeshifter-powers)', tradition: 'Banyaruanda' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
-        { kind: 'father-of', externalRef: { name: 'Binego (his successor)', tradition: 'Banyaruanda' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+        { kind: 'father-of', personId: 'banyaruanda_binego', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
       ],
       death: {
         manner: { kind: 'killed-by-buffalo-arranged-by-unwed-woman', notes: 'The eponymous "Killed by an Unwed Mother" tale-title.' },
@@ -7319,6 +7372,61 @@ const buildPeopleSeed = () => {
         { claim: 'apotheosis', citations: [{ kind: 'primary', reference: 'Werner 1933; Kubandwa-cult tradition' }], weight: 'primary' },
       ],
       notes: 'Half-divine son of Babinga (king of the imandwa-spirits) by Kalimulore (mortal-with-shapeshifter-powers, later renamed Nyiraryang\'ombe "Mother of Ryang\'ombe"). Prominent hunter-and-warrior whose social-norm-transgression (hunting-gambling-sexual-preoccupation, neglect of cultural-obligations) is both his power-source and his eventual undoing. Killed by a buffalo arranged by an unwed mother per the eponymous Werner tale-title. Apotheosized as king of the imandwa on Mount Muhavura (the Rwanda-Uganda border volcano) and Mount Karisimbi. Foundational figure of the Kubandwa cult of imandwa-veneration — the central Banyaruanda polytheistic religious system. The Burundi equivalent figure is Kiranga; the cult-pair (Ryangombe in Rwanda, Kiranga in Burundi) constitutes one of the major East-African demigod-deity-traditions.',
+    },
+
+    // ── Genealogy march, Wave G5 (Banyaruanda): materialize Kalimulore /
+    //    Nyiraryang'ombe (Ryangombe's mother, Babinga's lover) and Binego
+    //    (Ryangombe's son and named successor) — both formerly externalRefs. ──
+    {
+      id: 'banyaruanda_kalimulore', schemaVersion: 2,
+      name: { primary: 'Kalimulore', alt: ['Nyiraryang\'ombe', 'Nyiraryangombe', 'Mother of Ryangombe'], transliterations: { kinyarwanda: 'Nyiraryang\'ombe', etymology: 'Kinyarwanda: renamed Nyiraryang\'ombe ("Mother of Ryang\'ombe") after the birth of her son.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Banyaruanda', primaryTradition: 'Banyaruanda',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'heroic-age' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'existence-as-shapeshifter-and-lioness', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII' }], notes: 'A powerful figure with the ability to turn into a lioness and a reputation as a cattle-killer; her status is treated by the dominant Werner-tradition as mortal-with-supernatural-powers (mortal-tier), the threshold-class mother of the strict-criterion demigod Ryangombe.' },
+        { typeStatus: 'mortal', startEvent: 'union-with-Babinga-and-motherhood-of-Ryangombe', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Werner 1933 ch. VIII' }], notes: 'Bore Ryangombe to Babinga, king of the imandwa; thereafter renamed Nyiraryang\'ombe, "Mother of Ryang\'ombe." A bloodstained leaf falling on her breast confirmed her warning-dream of her son\'s death.' },
+        { vitalStatus: 'dead', era: 'heroic-age', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'lioness-shapeshifter' },
+        { id: 'mother-of-Ryangombe' },
+      ],
+      relations: [
+        { kind: 'lover', personId: 'banyaruanda_babinga', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+        { kind: 'mother-of', personId: 'banyaruanda_ryangombe', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Werner 1933' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII; Banyaruanda Kubandwa-cult tradition' }], weight: 'primary' },
+      ],
+      notes: 'Mother of the demigod Ryangombe by Babinga, king of the imandwa-spirits; a lioness-shapeshifter and cattle-killer of ambiguous status whom the dominant Werner-tradition treats as mortal-with-supernatural-powers. Renamed Nyiraryang\'ombe ("Mother of Ryang\'ombe") after her son\'s birth; the falling of a bloodstained leaf on her breast confirmed her foreknowledge of his death. Carried in the registry only as an externalRef on Babinga and Ryangombe until materialized here.',
+    },
+
+    {
+      id: 'banyaruanda_binego', schemaVersion: 2,
+      name: { primary: 'Binego', alt: ['Binégo'], transliterations: { kinyarwanda: 'Binego', etymology: 'Kinyarwanda: an imandwa-spirit, son and named successor of Ryangombe.' } },
+      type: 'quartigod', origin: 'canon', tradition: 'Banyaruanda', primaryTradition: 'Banyaruanda',
+      sex: 'male', vitalStatus: 'apotheosed',
+      parentIds: ['banyaruanda_ryangombe'],
+      parentRoles: { banyaruanda_ryangombe: 'paternal' },
+      temporal: { era: 'heroic-age' },
+      lifecycle: [
+        { typeStatus: 'quartigod', startEvent: 'birth-as-son-of-Ryangombe', era: 'heroic-age', eraOrdering: 100, sources: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII' }], notes: 'Son of the demigod Ryangombe; came with his grandmother Nyiraryang\'ombe to the dying Ryangombe.' },
+        { typeStatus: 'quartigod', startEvent: 'vengeance-on-the-buffalo-woman', era: 'heroic-age', eraOrdering: 101, sources: [{ kind: 'primary', reference: 'Werner 1933 ch. VIII' }], notes: 'After hearing how his father was slain by a buffalo dispatched by an unwed woman, Binego pursued the buffalo-woman and killed her and her child, cutting them to pieces in vengeance.' },
+        { typeStatus: 'quartigod', startEvent: 'succession-as-imandwa-leader', era: 'heroic-age', eraOrdering: 102, sources: [{ kind: 'primary', reference: 'Werner 1933' }], notes: 'Named by Ryangombe as his successor at the moment his throat tightened in death; joins the imandwa under his father on the volcano-slopes.' },
+        { typeStatus: 'apotheosed', startEvent: 'apotheosis-among-the-imandwa', era: 'mythic-present', eraOrdering: 103, sources: [{ kind: 'primary', reference: 'Werner 1933; Kubandwa tradition' }] },
+      ],
+      domains: [
+        { id: 'successor-of-Ryangombe' },
+        { id: 'avenger-of-his-father' },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'A. C. Werner Myths and Legends of the Bantu (1933) ch. VIII; Banyaruanda Kubandwa-cult tradition' }], weight: 'primary' },
+        { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Werner 1933 ch. VIII' }], weight: 'primary' },
+      ],
+      notes: 'Son and named successor of the demigod Ryangombe in the Banyaruanda Kubandwa tradition. When Ryangombe was slain by a buffalo arranged by an unwed woman, Binego avenged him by killing the buffalo-woman and her child. Ryangombe named Binego his successor among the imandwa at the moment of death; he joins his apotheosed father among the imandwa-spirits on the volcano. Quartigod-tier (¼) as the son of the half-divine Ryangombe by an unnamed mother. Carried in the registry only as an externalRef on Ryangombe until materialized here.',
     },
 
     // ─── Pollux ──────────────────────────────────────────────────────────
@@ -8993,7 +9101,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'wushan-mountain', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Song Yu, Gaotang Fu and Shennü Fu (3rd c. BCE)' }], notes: 'In the older Wushan Goddess (巫山神女) tradition Yáojī is the goddess of Mount Wu on the Yangtze gorges, who appears to King Huai of Chu in dreams. The Investiture-of-the-Gods Yáojī absorbs this older tradition.' },
       ],
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Jade Emperor (Chinese supreme deity of the celestial bureaucracy in canonical-Daoist tradition; not registered as standalone entry per the registry\'s deity-only-as-required-parent-anchor principle)', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Investiture of the Gods; Erlang Baojuan' }], notes: 'Jade Emperor (Yùhuáng Dàdì 玉皇大帝) entry pending — sister to him, making Erlang Shen the Heavenly Court\'s nephew.' },
+        { kind: 'sibling', personId: 'chinese_jade_emperor', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Investiture of the Gods; Erlang Baojuan' }], notes: 'Sister of the Jade Emperor (Yùhuáng Dàdì 玉皇大帝), making her son Erlang Shen the Heavenly Court\'s nephew.' },
         { kind: 'lover', personId: 'chinese_yang_tianyou', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Erlang Baojuan; Bao Lian Deng tradition' }], notes: 'Descended from Heaven to take the mortal scholar Yang Tianyou as husband — the union for which the Jade Emperor punished her by imprisonment beneath Mount Tao.' },
       ],
       associations: [
@@ -9328,6 +9436,9 @@ const buildPeopleSeed = () => {
         ],
         celestialAssociation: 'celestial-vault-supreme-throne',
       },
+      relations: [
+        { kind: 'sibling', personId: 'chinese_yaoji', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Investiture of the Gods (Fengshen Yanyi); Erlang Baojuan' }], notes: 'His sister Yaoji (Yúnhuá), whose son by a mortal is Erlang Shen — the Heavenly Court\'s nephew.' },
+      ],
       linguistic: {
         etymology: 'Chinese 玉皇 Yu Huang ("Jade Emperor"; yu "jade" + huang "emperor, sovereign," with jade encoding both supreme-mineral and imperial-cultural-association) + 大帝 Da Di ("Great Emperor"; da "great" + di "emperor, supreme deity"). The compound Yu Huang Da Di literally "Jade Emperor Great Sovereign-Deity." The Tang-period institutionalization of the Jade-Emperor-cult by Emperor Xuanzong (713-756 CE) elevated the figure from local-folk-religion to imperial-state pantheon supremacy; the Song-period elaborated the celestial-bureaucracy framework.',
         languageFamily: 'Sino-Tibetan (Sinitic, Mandarin Chinese)',
@@ -9656,6 +9767,10 @@ const buildPeopleSeed = () => {
         { id: 'meritocratic-succession-pioneer' },
         { id: 'calendar-regulation-and-Xi-He-commissioning' },
       ],
+      relations: [
+        { kind: 'father-of', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Gave his two daughters Ehuang and Nuying to Shun in marriage to test his virtue.' },
+        { kind: 'father-of', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }] },
+      ],
       iconography: {
         attributes: [
           { id: 'sage-king-imperial-robes', sources: [{ kind: 'primary', reference: 'Confucian-canonical iconography' }] },
@@ -9686,10 +9801,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['chinese_gusou', 'chinese_wo_deng'],
+      parentRoles: { chinese_gusou: 'paternal', chinese_wo_deng: 'maternal' },
       temporal: { era: 'mythic-prehistory' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }], notes: 'Per Shiji, descended from Huangdi through Zhuanxu → Qiaoniu → several intermediate generations → Gusou → Shun. The Shiji explicitly attaches Shun to the Huangdi line through a multi-generation chain that the registry treats as parentIds=[] with the chain documented in notes. Shun\'s biological parents were Gusou ("Blind Old Man," nominal blindness or moral-blindness; mortal) and Wo Deng (mortal); after Wo Deng\'s death, Gusou took a second wife who, with Gusou and Shun\'s younger half-brother Xiang, formed the abusive-stepfamily that the Confucian-canonical tradition uses as backdrop for Shun\'s exemplary filial-piety despite mistreatment.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }], notes: 'Per Shiji, descended from Huangdi through Zhuanxu → Qiaoniu → several intermediate generations → Gusou → Shun. The registry models Shun\'s immediate parents Gusou and Wo Deng in parentIds, with the deeper multi-generation Huangdi chain documented here. Shun\'s biological parents were Gusou ("Blind Old Man," nominal blindness or moral-blindness; mortal) and Wo Deng (mortal); after Wo Deng\'s death, Gusou took a second wife who, with Gusou and Shun\'s younger half-brother Xiang, formed the abusive-stepfamily that the Confucian-canonical tradition uses as backdrop for Shun\'s exemplary filial-piety despite mistreatment.' },
         { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'exemplary-filial-piety-despite-stepfamily-abuse', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Mencius 4A.28, 5A.1-4' }], notes: 'Per the Confucian-canonical tradition, Gusou + the stepmother + the half-brother Xiang together repeatedly attempted to kill Shun (poisoning, burying alive, burning the granary) to seize his property. Shun\'s exemplary filial-piety despite this abusive treatment — continuing to honor and serve his father, even after multiple murder attempts — became the foundational filial-piety case-study of the Confucian-Mencian tradition.' },
         { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 2, startEvent: 'discovery-by-Yao-and-marriage-to-his-daughters', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Yao, hearing of Shun\'s exemplary virtue, tested him through multiple trials and gave him his two daughters Ehuang and Nuying in marriage as further test of his moral character.' },
         { typeStatus: 'mortal', vitalStatus: 'sage-king-reigning', era: 'mythic-prehistory', eraOrdering: 3, startEvent: 'accession-as-fifth-of-Five-Emperors', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }], notes: 'Acceded as fifth and final of the Wu Di (Five Emperors) per the Shiji canonical-historical framework after Yao\'s abdication; reigned 39 years per the Shiji.' },
@@ -9703,9 +9819,8 @@ const buildPeopleSeed = () => {
         { id: 'abdicator-to-Yu-the-Great' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Gusou ("Blind Old Man"), mortal; Shun\'s biological father who repeatedly attempted to kill him', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
-        { kind: 'mother', externalRef: { name: 'Wo Deng, mortal; Shun\'s biological mother who died when he was young', tradition: 'Chinese' }, era: 'mythic-prehistory' },
-        { kind: 'spouse', externalRef: { name: 'Ehuang and Nuying, daughters of Yao; principal consorts; followed him in death and became deities of the Xiang River (Xiang Fei)', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shanhaijing' }] },
+        { kind: 'spouse', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Elder daughter of Yao, given to Shun in marriage as a test of his virtue; drowned at his death and became a goddess of the Xiang River.' },
+        { kind: 'spouse', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Younger daughter of Yao, given to Shun in marriage; with her sister Ehuang became a goddess of the Xiang River (Xiang Fei).' },
       ],
       linguistic: {
         etymology: 'Chinese 舜 Shun; the character contains components suggesting "to flow swiftly" or "swift-as-deer" semantic content. The alternate clan-name You Yu Shi 有虞氏 ("Lord You Yu") derives from his clan-seat at Yu.',
@@ -9718,7 +9833,143 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Mencius / Mengzi 4A.28, 5A.1-4' },
         ], weight: 'primary' },
       ],
-      notes: 'Fifth and final of the Wu Di (Five Emperors) per the Shiji canonical-historical framework; foundational filial-piety exemplar of the Confucian-canonical tradition; son of Gusou ("Blind Old Man," mortal) and Wo Deng (mortal). Per Shiji, descended from Huangdi through Zhuanxu via several intermediate generations; the registry treats parentIds=[] with the multi-generation chain documented in notes. The Shun-stepfamily-abuse-and-filial-piety narrative — Shun continuing to honor and serve his father Gusou despite the multiple murder attempts orchestrated by Gusou, the stepmother, and the half-brother Xiang — became the foundational filial-piety case-study of the Confucian-Mencian tradition (Mencius 4A.28, 5A.1-4). The Yao-Shun-Yu abdication chain that completes with Shun\'s abdication to Yu the Great (the flood-controller minister) constitutes the foundational meritocratic-succession case-study of Confucian-canonical political theory: the throne is the gift of Heaven and the people based on virtue, not heritable property of the sovereign.',
+      notes: 'Fifth and final of the Wu Di (Five Emperors) per the Shiji canonical-historical framework; foundational filial-piety exemplar of the Confucian-canonical tradition; son of Gusou ("Blind Old Man," mortal) and Wo Deng (mortal). Per Shiji, descended from Huangdi through Zhuanxu via several intermediate generations; the registry models his immediate parents Gusou and Wo Deng in parentIds, with the deeper Huangdi chain documented in notes. The Shun-stepfamily-abuse-and-filial-piety narrative — Shun continuing to honor and serve his father Gusou despite the multiple murder attempts orchestrated by Gusou, the stepmother, and the half-brother Xiang — became the foundational filial-piety case-study of the Confucian-Mencian tradition (Mencius 4A.28, 5A.1-4). The Yao-Shun-Yu abdication chain that completes with Shun\'s abdication to Yu the Great (the flood-controller minister) constitutes the foundational meritocratic-succession case-study of Confucian-canonical political theory: the throne is the gift of Heaven and the people based on virtue, not heritable property of the sovereign.',
+    },
+
+    // ── Genealogy march, Wave G6 (Chinese): materialize Shun's immediate
+    //    family — his father Gusou and mother Wo Deng, and his two wives
+    //    Ehuang and Nuying (daughters of the already-registered sage-king Yao,
+    //    who become the goddesses of the Xiang River) — all formerly carried
+    //    only as externalRefs on Shun. ──
+    {
+      id: 'chinese_gusou', schemaVersion: 2,
+      name: {
+        primary: 'Gusou',
+        alt: ['瞽叟', 'Gu Sou', 'The Blind Old Man', 'Father of Shun'],
+        transliterations: { 'chinese-traditional': '瞽叟', 'chinese-simplified': '瞽叟', 'pinyin': 'Gǔsǒu' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'male', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Mencius 5A.1-4' }], notes: 'The "Blind Old Man" (the name glosses literal or moral blindness); per Shiji a descendant of Huangdi through Zhuanxu. Father of the sage-king Shun by his first wife Wo Deng.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'attempts-on-Shuns-life', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Mencius' }], notes: 'After Wo Deng died, Gusou took a second wife; with her and Shun\'s half-brother Xiang he repeatedly tried to kill Shun (the burning granary, the well filled in over him) to seize his property. Shun\'s undiminished filial devotion despite this is the foundational Confucian filial-piety exemplar.' },
+        { vitalStatus: 'dead', era: 'mythic-prehistory', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'blind-father-of-Shun' },
+        { id: 'abusive-patriarch-of-the-filial-piety-narrative' },
+      ],
+      relations: [
+        { kind: 'father-of', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1' },
+          { kind: 'primary', reference: 'Mencius / Mengzi 5A.1-4' },
+        ], weight: 'primary' },
+      ],
+      notes: 'Father of the sage-king Shun; the "Blind Old Man" of the Confucian-canonical filial-piety narrative. With his second wife and Shun\'s half-brother Xiang, he repeatedly attempted to murder Shun, who nevertheless continued to honor and serve him — the foundational Mencian case-study of filial piety persisting through mistreatment. Carried in the registry only as an externalRef on Shun until materialized here.',
+    },
+
+    {
+      id: 'chinese_wo_deng', schemaVersion: 2,
+      name: {
+        primary: 'Wo Deng',
+        alt: ['握登', 'Woaeng', 'Mother of Shun'],
+        transliterations: { 'chinese-traditional': '握登', 'chinese-simplified': '握登', 'pinyin': 'Wòdēng' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; later commentarial tradition' }], notes: 'First wife of Gusou and biological mother of Shun; per the commentarial tradition she conceived Shun after beholding a great rainbow. She died while Shun was young, after which Gusou remarried into the abusive-stepfamily of the filial-piety narrative.' },
+        { vitalStatus: 'dead', era: 'mythic-prehistory', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'mother-of-Shun' },
+      ],
+      relations: [
+        { kind: 'mother-of', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1; Chinese commentarial tradition on the ancestry of Shun' }], weight: 'primary' },
+      ],
+      notes: 'Biological mother of the sage-king Shun by Gusou; she died when Shun was young. The commentarial tradition gives her a rainbow-conception of Shun. Carried in the registry only as an externalRef on Shun until materialized here as the maternal link.',
+    },
+
+    {
+      id: 'chinese_ehuang', schemaVersion: 2,
+      name: {
+        primary: 'Ehuang',
+        alt: ['娥皇', 'E Huang', 'Xiang Goddess (with Nuying)'],
+        transliterations: { 'chinese-traditional': '娥皇', 'chinese-simplified': '娥皇', 'pinyin': 'Éhuáng' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'female', vitalStatus: 'apotheosed',
+      origin: 'canon',
+      parentIds: ['chinese_yao'],
+      parentRoles: { chinese_yao: 'paternal' },
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Elder of the two daughters of the sage-king Yao, given (with her sister Nuying) in marriage to Shun as Yao\'s test of his virtue and his fitness to rule.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'death-at-the-Xiang-and-apotheosis', sources: [{ kind: 'primary', reference: 'Shanhaijing; Liexian Zhuan; Xiang River goddess tradition' }], notes: 'On news of Shun\'s death at Cangwu she and Nuying wept until their tears spotted the bamboo (the mottled "tear-bamboo" of the Xiang), then drowned in the Xiang River, becoming its presiding goddesses (the Xiang Fei / Xiang Jun).' },
+        { typeStatus: 'apotheosed', era: 'mythic-prehistory', eraOrdering: 2, startEvent: 'veneration-as-goddess-of-the-Xiang', sources: [{ kind: 'primary', reference: 'Chuci (Songs of Chu) — Xiang Jun and Xiang Furen' }] },
+      ],
+      domains: [
+        { id: 'elder-daughter-of-Yao' },
+        { id: 'wife-of-Shun' },
+        { id: 'goddess-of-the-Xiang-River' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+        { kind: 'sibling', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1 — both daughters of Yao' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1; Shujing Yao Dian' },
+          { kind: 'primary', reference: 'Chuci (Songs of Chu), "Xiang Jun" / "Xiang Furen"' },
+        ], weight: 'primary' },
+        { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Shiji Ch. 1 — daughter of Yao' }], weight: 'primary' },
+      ],
+      notes: 'Elder daughter of the sage-king Yao and, with her younger sister Nuying, a wife of Shun — the marriage by which Yao tested Shun\'s virtue. On Shun\'s death the two sisters wept until their tears mottled the bamboo of the Xiang, then drowned in the river and became its goddesses (the Xiang Fei). Daughters of the mortal Yao, the sisters are mortal-tier by descent; their godhood is by apotheosis, recorded in vitalStatus. Carried in the registry only as an externalRef on Shun until materialized here.',
+    },
+
+    {
+      id: 'chinese_nuying', schemaVersion: 2,
+      name: {
+        primary: 'Nuying',
+        alt: ['女英', 'Nü Ying', 'Xiang Goddess (with Ehuang)'],
+        transliterations: { 'chinese-traditional': '女英', 'chinese-simplified': '女英', 'pinyin': 'Nǚyīng' },
+      },
+      type: 'mortal', tradition: 'Chinese', primaryTradition: 'Chinese', sex: 'female', vitalStatus: 'apotheosed',
+      origin: 'canon',
+      parentIds: ['chinese_yao'],
+      parentRoles: { chinese_yao: 'paternal' },
+      temporal: { era: 'mythic-prehistory' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Younger of the two daughters of Yao, given with her elder sister Ehuang in marriage to Shun.' },
+        { typeStatus: 'mortal', era: 'mythic-prehistory', eraOrdering: 1, startEvent: 'death-at-the-Xiang-and-apotheosis', sources: [{ kind: 'primary', reference: 'Shanhaijing; Xiang River goddess tradition' }], notes: 'With Ehuang, drowned in the Xiang River in grief at Shun\'s death and became its presiding goddess (the Xiang Fei / Xiang Furen).' },
+        { typeStatus: 'apotheosed', era: 'mythic-prehistory', eraOrdering: 2, startEvent: 'veneration-as-goddess-of-the-Xiang', sources: [{ kind: 'primary', reference: 'Chuci (Songs of Chu) — Xiang Jun and Xiang Furen' }] },
+      ],
+      domains: [
+        { id: 'younger-daughter-of-Yao' },
+        { id: 'wife-of-Shun' },
+        { id: 'goddess-of-the-Xiang-River' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'chinese_shun', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
+        { kind: 'sibling', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1 — both daughters of Yao' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sima Qian, Shiji Ch. 1; Shujing Yao Dian' },
+          { kind: 'primary', reference: 'Chuci (Songs of Chu), "Xiang Jun" / "Xiang Furen"' },
+        ], weight: 'primary' },
+        { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Shiji Ch. 1 — daughter of Yao' }], weight: 'primary' },
+      ],
+      notes: 'Younger daughter of the sage-king Yao and, with her elder sister Ehuang, a wife of Shun. The two sisters drowned in the Xiang River in grief at Shun\'s death and became its goddesses (the Xiang Fei), invoked in the Chuci. Mortal-tier by descent from the mortal Yao; godhood by apotheosis. Carried in the registry only as an externalRef on Shun until materialized here.',
     },
 
     {
@@ -10546,6 +10797,68 @@ const buildPeopleSeed = () => {
       notes: 'Major Tuatha Dé Danann figure; samildánach (master of all crafts) and lámfada (long-armed). King of the Tuatha Dé during the Second Battle of Mag Tuired campaign, when he killed his maternal grandfather Balor of the Evil Eye with a sling-stone through the eye. Inaugurator of the Lughnasadh harvest assembly at Tailtin in honor of his foster-mother Tailtiu. Continental cognate Lugus attested across Gaul and Iberia (Lugdunum, Lugudunum, Luguvalium, etc.). Father of Cú Chulainn by Deichtire under the dominant Compert Con Culainn tradition.',
     },
 
+    // ── Genealogy march, Wave G16 (Irish, Ulster Cycle): materialize three
+    //    major figures carried only as externalRefs — Emer (Cú Chulainn's wife),
+    //    Conchobar mac Nessa (king of Ulaid, Deichtire's brother), and Fergus
+    //    mac Róich (exiled former king, Sualtam's brother). All mortal; the
+    //    links are spouse/sibling, so no tier effects. ──
+    {
+      id: 'irish_emer', schemaVersion: 2,
+      name: { primary: 'Emer', alt: ['Emer ingen Forgaill', 'Emer of the Six Gifts'], transliterations: { 'old-irish': 'Emer', etymology: 'Old Irish Emer; daughter of Forgall Manach; the tradition credits her with the six gifts of beauty, voice, sweet speech, needlework, wisdom, and chastity.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'ulster-cycle' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Tochmarc Emire (The Wooing of Emer)' }], notes: 'Daughter of Forgall Manach; wooed by Cú Chulainn, who undertook the training with Scáthach and the feats of the Tochmarc Emire to win her over her father\'s opposition.' },
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 1, startEvent: 'marriage-to-Cu-Chulainn', sources: [{ kind: 'primary', reference: 'Tochmarc Emire; Serglige Con Culainn; Aided Con Culainn' }], notes: 'Wife of Cú Chulainn through his career; her jealousy and reconciliation in the Fand episode (Serglige Con Culainn) and her lament at his death are central Ulster-Cycle scenes.' },
+        { vitalStatus: 'dead', era: 'ulster-cycle', eraOrdering: 2 },
+      ],
+      domains: [{ id: 'wife-of-Cu-Chulainn' }, { id: 'lady-of-the-six-gifts' }],
+      relations: [
+        { kind: 'spouse', personId: 'irish_cuchulainn', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Tochmarc Emire (The Wooing of Emer); Serglige Con Culainn; Aided Con Culainn' }], weight: 'primary' }],
+      notes: 'Wife of Cú Chulainn and daughter of Forgall Manach; the "lady of the six gifts" of the Tochmarc Emire. Her jealousy of the Otherworld-woman Fand and her great lament at Cú Chulainn\'s death are among the most-quoted passages of the Ulster Cycle. Mortal-tier. Carried in the registry only as an externalRef on Cú Chulainn until materialized here.',
+    },
+
+    {
+      id: 'irish_conchobar', schemaVersion: 2,
+      name: { primary: 'Conchobar mac Nessa', alt: ['Conchobar', 'Conor mac Nessa', 'King of Ulaid'], transliterations: { 'old-irish': 'Conchobar mac Nessa', etymology: 'Old Irish Conchobar; matronymic "mac Nessa" (son of Ness), unusual in naming him for his mother.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'male', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'ulster-cycle' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge; Longes mac nUislenn' }], notes: 'King of Ulaid at Emain Macha during Cú Chulainn\'s lifetime; brother (in the dominant tradition) of Deichtire, Cú Chulainn\'s mother. His betrayal of the guarantee over the Sons of Uisliu (driving Fergus into exile) and his rule through the Táin are central to the cycle.' },
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 1, startEvent: 'death-by-the-brain-ball-of-Mes-Gegra', sources: [{ kind: 'primary', reference: 'Aided Chonchobair' }], notes: 'Died, in the canonical account, when the calcified brain-ball of Mes Gegra (lodged in his skull) burst on the day he raged at the news of the Crucifixion.' },
+        { vitalStatus: 'dead', era: 'ulster-cycle', eraOrdering: 2 },
+      ],
+      domains: [{ id: 'king-of-Ulaid-at-Emain-Macha' }, { id: 'brother-of-Deichtire' }],
+      relations: [
+        { kind: 'sibling', personId: 'irish_deichtire', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge; Longes mac nUislenn; Aided Chonchobair' }], weight: 'primary' }],
+      notes: 'King of Ulaid at Emain Macha through the Ulster Cycle; brother of Deichtire and so maternal uncle of Cú Chulainn. His treacherous breaking of the safe-conduct of the Sons of Uisliu drove Fergus mac Róich and other warriors into exile to Connacht — a defection that shapes the Táin. Died when the embedded brain-ball of Mes Gegra burst as he raged at news of Christ\'s death. Mortal-tier. Carried in the registry only as an externalRef on Deichtire until materialized here.',
+    },
+
+    {
+      id: 'irish_fergus', schemaVersion: 2,
+      name: { primary: 'Fergus mac Róich', alt: ['Fergus mac Roich', 'Fergus', 'Exiled King of Ulaid'], transliterations: { 'old-irish': 'Fergus mac Róich', etymology: 'Old Irish Fergus "manly vigour"; patronymic mac Róich.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'male', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'ulster-cycle' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; Longes mac nUislenn' }], notes: 'Former king of Ulaid, displaced by Conchobar through the trick of Ness; brother of Sualtam (Cú Chulainn\'s mortal father). After Conchobar\'s betrayal of the Sons of Uisliu, whom Fergus had guaranteed, he went into exile in Connacht.' },
+        { typeStatus: 'mortal', era: 'ulster-cycle', eraOrdering: 1, startEvent: 'exile-to-Connacht-and-the-Tain', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge' }], notes: 'In exile he became a leader of Medb and Ailill\'s host against Ulster in the Táin and the lover of Medb; he confronted his foster-son Cú Chulainn but withdrew under an earlier pact. Famed for his great sword Caladbolg.' },
+        { vitalStatus: 'dead', era: 'ulster-cycle', eraOrdering: 2 },
+      ],
+      domains: [{ id: 'exiled-former-king-of-Ulaid' }, { id: 'brother-of-Sualtam' }],
+      relations: [
+        { kind: 'sibling', personId: 'irish_sualtam', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Ulster Cycle genealogies' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; Longes mac nUislenn; Fled Bricrenn' }], weight: 'primary' }],
+      notes: 'Exiled former king of Ulaid and brother of Sualtam; foster-father of Cú Chulainn and, in exile, leader in Medb and Ailill\'s host against Ulster and the lover of Medb. His outrage at Conchobar\'s betrayal of the Sons of Uisliu drove his defection to Connacht, and his withdrawal from single combat with Cú Chulainn in the Táin (honoring an earlier pact) is a pivotal episode. Wielder of Caladbolg. Mortal-tier. Carried in the registry only as an externalRef on Sualtam until materialized here.',
+    },
+
     // ─── Deichtire — mortal princess of Ulaid, mother of Cú Chulainn ─────
     {
       id: 'irish_deichtire', schemaVersion: 2,
@@ -10565,7 +10878,7 @@ const buildPeopleSeed = () => {
         mythicPrecision: 'generation-bracket',
       },
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Conchobar mac Nessa (king of Ulster during Cú Chulainn\'s lifetime)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }], notes: 'Sister of Conchobar mac Nessa, king of Ulaid. Conchobar entry pending.' },
+        { kind: 'sibling', personId: 'irish_conchobar', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }], notes: 'Sister of Conchobar mac Nessa, king of Ulaid.' },
         { kind: 'spouse', personId: 'irish_sualtam', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn (the late-stratum continuation); Táin Bó Cúailnge' }], notes: 'Married Sualtam mac Róich; he is the legal/social father of Cú Chulainn (and biological father per minority readings).' },
         { kind: 'lover', personId: 'irish_lugh', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn (Lebor na hUidre)' }], notes: 'Conceived Cú Chulainn by Lugh at Brug na Bóinne (Newgrange) when Conchobar\'s hunting party took shelter there.' },
       ],
@@ -10594,7 +10907,7 @@ const buildPeopleSeed = () => {
         mythicPrecision: 'generation-bracket',
       },
       relations: [
-        { kind: 'sibling', externalRef: { name: 'Fergus mac Roich (former king of Ulster, exiled after the betrayal of the Sons of Uisliu, foster-father and lover of Medb)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; multiple Ulster Cycle texts' }], notes: 'Brother of Fergus mac Róich, the exiled former king of Ulaid. Fergus entry pending.' },
+        { kind: 'sibling', personId: 'irish_fergus', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Táin Bó Cúailnge; multiple Ulster Cycle texts' }], notes: 'Brother of Fergus mac Róich, the exiled former king of Ulaid.' },
         { kind: 'spouse', personId: 'irish_deichtire', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }] },
         { kind: 'foster-parent', personId: 'irish_cuchulainn', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Compert Con Culainn; Táin Bó Cúailnge' }], notes: 'Foster/legal father of Cú Chulainn under the dominant Lugh-paternity reading; biological father under minority Sualtam-paternity readings (some text-strata of Compert Con Culainn).' },
       ],
@@ -10662,7 +10975,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Emer (wife of Cú Chulainn, daughter of Forgall Manach)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }], notes: 'Emer ingen Forgaill. Emer entry pending.' },
+        { kind: 'spouse', personId: 'irish_emer', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire' }], notes: 'Emer ingen Forgaill, his wife.' },
         { kind: 'lover', externalRef: { name: 'Aífe (warrior-woman of Alba, lover of Cú Chulainn, mother of Connla)', tradition: 'Irish' }, era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Tochmarc Emire; Aided Óenfhir Aífe' }], notes: 'Aífe, warrior-woman of Alba, sister-rival of Scáthach. Mother of Connla. Aífe entry pending.' },
         { kind: 'father-of', personId: 'irish_connla', era: 'ulster-cycle', endingEvent: 'killing-by-Cú-Chulainn-at-the-ford', sources: [{ kind: 'primary', reference: 'Aided Óenfhir Aífe' }] },
         { kind: 'killer-of', personId: 'irish_connla', era: 'ulster-cycle', sources: [{ kind: 'primary', reference: 'Aided Óenfhir Aífe' }], notes: 'Killed his unknowing son with the Gáe Bulg at the ford; recognized him only as he was dying.' },
@@ -10680,6 +10993,26 @@ const buildPeopleSeed = () => {
         { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Compert Con Culainn — dominant Lugh+Deichtire tradition' }], weight: 'primary' },
       ],
       notes: 'The Hound of Ulster; demigod son of Lugh by Deichtire under the dominant Compert Con Culainn tradition. Birth name Sétanta. Earned the name Cú Chulainn at age 7 by killing Culann\'s smith-dog with a sliotar through its throat and offering to take the hound\'s place. Trained by the warrior-woman Scáthach on her island in Alba, where he received the Gáe Bulg (the dread thirty-barbed spear cast underfoot from the water). Sole defender of Ulster during the Macha-curse phase of the Táin Bó Cúailnge — his half-divine paternity exempted him from the birth-pangs that pinned every other adult Ulsterman, allowing him to hold Medb of Connacht\'s invading army at the fords for three months. The four-day combat with his foster-brother Ferdiad at the ford (Comrac Fir Diad) is the most extended single-combat in medieval Irish literature. The ríastrad (warp-spasm) — battle-frenzy transformation with body distortion, eye-displacement, and the lon láith (hero-light) springing from the head — is among the most detailed transformation scenes in medieval European literature. Killed his own son Connla unrecognized at the ford (Aided Óenfhir Aífe). Died at age 27 strapped to the standing stone Cloich an Ghaill at Mag Muirthemne so he could die upright facing his enemies; identified as dead only when the Morrígan in raven-form lit on his shoulder and his hero-light went out. The Sheppard bronze of this final scene was installed at the GPO in Dublin in 1935 as the Easter Rising memorial.',
+    },
+
+    // ── Genealogy march, Wave G17 (Irish, Tuatha Dé): materialize Fand,
+    //    Manannán's Otherworld wife, and promote his parent→Lir externalRef to
+    //    the already-registered Lir. ──
+    {
+      id: 'irish_fand', schemaVersion: 2,
+      name: { primary: 'Fand', alt: ['Fann', 'Pearl of Beauty'], transliterations: { 'old-irish': 'Fand', etymology: 'Old Irish Fand, glossed "tear" or "pearl of beauty"; an Otherworld (síd) woman.' } },
+      type: 'deity', origin: 'canon', tradition: 'Irish', primaryTradition: 'Irish', sex: 'female', vitalStatus: 'living',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'mythological-cycle' },
+      lifecycle: [
+        { typeStatus: 'deity', era: 'mythological-cycle', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Serglige Con Culainn (The Wasting Sickness of Cú Chulainn)' }], notes: 'An Otherworld woman, wife of the sea-god Manannán mac Lir. Abandoned for a time by Manannán, she summoned Cú Chulainn to the síd as her lover; when Emer came for her and then yielded, Fand chose to return to Manannán, who shook his cloak of mist between her and Cú Chulainn so the two would never meet again.' },
+      ],
+      domains: [{ id: 'Otherworld-woman-of-the-sid' }, { id: 'wife-of-Manannan' }],
+      relations: [
+        { kind: 'spouse', personId: 'irish_manannan', era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Serglige Con Culainn (The Wasting Sickness of Cú Chulainn), Lebor na hUidre' }], weight: 'primary' }],
+      notes: 'An Otherworld (síd) woman, wife of the sea-god Manannán mac Lir; the central female figure of Serglige Con Culainn, in which she draws the ailing Cú Chulainn to the Otherworld as her lover before returning to Manannán, who shakes his cloak of mist between the parted lovers. Carried in the registry only as an externalRef on Manannán until materialized here.',
     },
 
     // ─── Manannán mac Lir — Tuatha Dé sea-deity, father of Mongán ────────
@@ -10716,8 +11049,8 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'parent', externalRef: { name: 'Lir (sea-god of the Tuatha Dé Danann, father of Manannán)', tradition: 'Irish' }, era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Lebor Gabála Érenn; multiple texts' }], notes: 'Father Lir (older sea-god whom Manannán supplanted in role). Lir entry pending. Some traditions make him son of Allod instead (Lebor Gabála variant).' },
-        { kind: 'spouse', externalRef: { name: 'Fand (Otherworld-woman, wife of Manannán, lover of Cú Chulainn in Serglige Con Culainn)', tradition: 'Irish' }, era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }], notes: 'Fand entry pending. Wife who had the affair with Cú Chulainn in Serglige Con Culainn (Wasting Sickness of Cú Chulainn); Manannán shook the cloak of mists between them to make them forget each other.' },
+        { kind: 'parent', personId: 'irish_lir', era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Lebor Gabála Érenn; multiple texts' }], notes: 'Father Lir, the older sea-god whom Manannán supplanted in role; some traditions make Manannán son of Allod instead (Lebor Gabála variant).' },
+        { kind: 'spouse', personId: 'irish_fand', era: 'mythological-cycle', sources: [{ kind: 'primary', reference: 'Serglige Con Culainn' }], notes: 'His wife Fand, who had the affair with Cú Chulainn in Serglige Con Culainn; Manannán shook the cloak of mists between them to make them forget each other.' },
         { kind: 'lover', personId: 'irish_caintigern', era: 'cycles-of-kings', sources: [{ kind: 'primary', reference: 'Compert Mongáin (Lebor na hUidre, Yellow Book of Lecan, Book of Fermoy variants); Immram Brain' }], notes: 'Three-variant tradition of how the union came about — all three preserve the bargain structure: Manannán saved Fíachna mac Báetáin\'s life in battle in exchange for a night with Caintigern. (a) Manannán took Fíachna\'s form and went to Caintigern with her unwitting consent; (b) Manannán bargained directly with Caintigern with her witting consent; (c) Manannán visited Caintigern in disguise as a stranger and told her he would protect her husband if she lay with him.' },
         { kind: 'father-of', personId: 'irish_mongan', era: 'cycles-of-kings', sources: [{ kind: 'primary', reference: 'Compert Mongáin; Immram Brain' }] },
         { kind: 'foster-parent', personId: 'irish_mongan', era: 'cycles-of-kings', sources: [{ kind: 'primary', reference: 'Compert Mongáin' }], notes: 'Took Mongán to the Otherworld three days after birth and raised him in Tír Tairngire until age twelve (or sixteen per variant) before returning him to Ulster.' },
@@ -11442,7 +11775,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling', personId: 'ossetian_uryzmaeg', era: 'cosmogonic' },
         { kind: 'sibling', personId: 'ossetian_satana', era: 'cosmogonic' },
-        { kind: 'spouse', externalRef: { name: 'Bytsenon, mortal woman of the Bytsentæ; mother of Batraz; killed before Batraz\'s birth', tradition: 'Ossetian' }, era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III' }] },
+        { kind: 'spouse', personId: 'ossetian_bytsenon', era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III' }] },
         { kind: 'father-of', personId: 'ossetian_batraz', era: 'classical-nart' },
       ],
       linguistic: {
@@ -11518,8 +11851,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Ossetian', primaryTradition: 'Ossetian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['ossetian_khaemyts'],
-      parentRoles: { ossetian_khaemyts: 'paternal' },
+      parentIds: ['ossetian_khaemyts', 'ossetian_bytsenon'],
+      parentRoles: { ossetian_khaemyts: 'paternal', ossetian_bytsenon: 'maternal' },
       temporal: { era: 'classical-nart' },
       lifecycle: [
         { typeStatus: 'scion', era: 'classical-nart', eraOrdering: 0, startEvent: 'tragic-conception-and-back-tumor-gestation', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. IV — Batraz cycle' }], notes: 'Bytsenon (Batraz\'s mother) was killed before his birth; Khæmyts cut the foetus from her body and carried it as a tumor in his back. After full-term gestation, the steel-bodied Batraz emerged from Khæmyts\'s back, fully-formed.' },
@@ -11535,7 +11868,7 @@ const buildPeopleSeed = () => {
         { id: 'sacred-spring-tear-progenitor' },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Bytsenon, mortal woman of the Bytsentæ; killed before his birth', tradition: 'Ossetian' }, era: 'classical-nart' },
+        { kind: 'mother', personId: 'ossetian_bytsenon', era: 'classical-nart' },
       ],
       iconography: {
         attributes: [
@@ -11560,6 +11893,27 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Steel-bodied champion of the Narts; foremost hero of the classical-Nart heroic age. Scion by registry math (Khæmyts quartigod + Bytsenon mortal → f=0.125). The tragic-conception narrative (Bytsenon killed before birth, Khæmyts back-tumor gestation, emergence from his back fully-formed) and the Kurdalægon forge-tempering episode together produce the steel-body iconography that defines his heroic identity. Excepting one vulnerable point (varying by recension — navel, heel, or other body part), his entire body is indestructible steel. His death in the final-age destruction by divine retaliation, with his tears becoming the sacred springs of the central Caucasus, is the climactic event of the Nart cycle\'s Departure (the Narts\' rejection of God and consequent destruction). The cognate Northwest Caucasian Pataraz (Adyghe) and Abkhaz Patraz figures preserve the shared pan-Caucasian Nart-substrate beneath the Ossetian Iranic recension. Comparative-mythological readings (Dumézil 1965; Sergent 2000) treat Batraz as a Caucasian reflex of the Indo-European "third-function" steel-warrior figure, with structural parallels to Achilles (heel-vulnerable hero) and Sigurd (forge-tempered hero of the Volsung cycle).',
+    },
+
+    // ── Genealogy march, Wave G15 (Ossetian, Nart saga): materialize Bytsenon,
+    //    wife of Khæmyts and mother of Batraz, carried as an externalRef on both. ──
+    {
+      id: 'ossetian_bytsenon', schemaVersion: 2,
+      name: { primary: 'Bytsenon', alt: ['Bicenon', 'Woman of the Bytsentæ'], transliterations: { ossetian: 'Bycenon', etymology: 'Ossetian; a woman of the Bytsentæ family.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Ossetian', primaryTradition: 'Ossetian', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'classical-nart' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'classical-nart', eraOrdering: 0, startEvent: 'marriage-to-Khaemyts-and-death-before-Batrazs-birth', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III-IV — Batraz cycle' }], notes: 'A woman of the Bytsentæ; wife of the Nart Khæmyts. Pregnant with Batraz, she was killed before his birth; Khæmyts cut the foetus from her body and carried it as a swelling in his back until the steel-bodied Batraz emerged.' },
+        { vitalStatus: 'dead', era: 'classical-nart', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'wife-of-Khaemyts' }, { id: 'mother-of-Batraz' }],
+      relations: [
+        { kind: 'spouse', personId: 'ossetian_khaemyts', era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. III' }] },
+        { kind: 'mother-of', personId: 'ossetian_batraz', era: 'classical-nart', sources: [{ kind: 'primary', reference: 'Narty Kaddzhytæ Vol. IV' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Narty Kaddzhytæ (Ossetian Nart sagas) Vol. III-IV — Batraz cycle; Dumézil, Le Livre des Héros (1965)' }], weight: 'primary' }],
+      notes: 'A woman of the Bytsentæ and wife of the Nart Khæmyts; mother of the steel-bodied champion Batraz. Killed while pregnant, she died before Batraz\'s birth — Khæmyts carried the foetus as a swelling in his back until Batraz emerged fully formed, the tragic conception that opens the Batraz cycle. Mortal-tier. Carried in the registry only as an externalRef on Khæmyts and Batraz until materialized here.',
     },
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -12138,9 +12492,9 @@ const buildPeopleSeed = () => {
         { id: 'aralez-spirit-resurrection-attempt', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
       ],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Nuard, mortal Armenian noblewoman; mother of Anushavan Sosanver', tradition: 'Armenian' }, era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
+        { kind: 'spouse', personId: 'armenian_nuard', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
         { kind: 'father-of', personId: 'armenian_anushavan_sosanver', era: 'haykazuni-mythohistorical' },
-        { kind: 'killed-by', externalRef: { name: 'Semiramis (Shamiram), Assyrian queen of Khorenatsi tradition (semi-historical conflation of multiple Assyrian-period queens)', tradition: 'Armenian' }, era: 'haykazuni-mythohistorical' },
+        { kind: 'killed-by', personId: 'armenian_shamiram', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
       ],
       iconography: {
         attributes: [
@@ -12174,8 +12528,8 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['armenian_ara_the_beautiful'],
-      parentRoles: { armenian_ara_the_beautiful: 'paternal' },
+      parentIds: ['armenian_ara_the_beautiful', 'armenian_nuard'],
+      parentRoles: { armenian_ara_the_beautiful: 'paternal', armenian_nuard: 'maternal' },
       temporal: { era: 'haykazuni-mythohistorical' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Khorenatsi 1.20' }], notes: 'Son of Ara the Beautiful by Nuard. The epithet Sosanver ("Dedicated to the Plane Tree," from sos- "plane tree" + nver "dedicated, gifted") preserves a distinctive Armenian dendrolatric ritual association: the sacred plane-tree at Armavir was the divinatory oracle of the Haykazuni court, with rustling leaves interpreted as divine speech.' },
@@ -12196,6 +12550,138 @@ const buildPeopleSeed = () => {
       notes: 'Son of Ara the Beautiful and Nuard; restorer of Haykazuni sovereignty after the Semiramis Assyrian-occupation period. The Sosanver epithet ("Dedicated to the Plane Tree") preserves a distinctive Armenian dendrolatric ritual association: the sacred plane-tree at Armavir was the divinatory oracle of the Haykazuni court, with the rustling of leaves interpreted as divine speech (Khorenatsi 1.20). The ritual association is one of the most-distinctive non-Iranic-syncretic survivals in Armenian mythology, preserving an indigenous Armenian arboreal-cult complex predating the Achaemenid-Parthian Iranic-syncretic overlay.',
     },
 
+    // ── Genealogy march, Wave G4 (Armenian): materialize three figures the
+    // Khorenatsi and Sasna Tsřer cycles name as full narrative participants but
+    // the registry had carried only as externalRefs — Nuard (Ara's wife, mother
+    // of Anushavan), Shamiram / Semiramis (the Assyrian queen who kills Ara),
+    // and Tsovinar (the sea-conceived matriarch of the Sassoun line). Mortal-
+    // class all three; promoting them converts the dangling externalRefs on Ara,
+    // Anushavan, Sanasar, and Baghdasar into real graph edges. Continues the G1
+    // Armenian thread (Haykazuni patriarchs) into the Khorenatsi-Sasna corpus.
+    // The Sasna Tsřer wives (Armaghan/Misra Khanum, Khandut) stay externalRefs:
+    // they are defined only by whom they marry and bear, per the corpus's
+    // convention for peripheral consorts (cf. Aram's wife Nuard, now promoted).
+    {
+      id: 'armenian_nuard',
+      schemaVersion: 2,
+      name: {
+        primary: 'Nuard',
+        alt: ['Նուարդ', 'Nvard', 'Queen Nuard', 'Wife of Ara the Beautiful'],
+        transliterations: { 'armenian-classical': 'Նուարդ', 'armenian-romanization': 'Nuard' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15' }], notes: 'Wife of Ara the Beautiful; the bond to which Ara stays faithful when he rejects the marriage proposal of the Assyrian queen Semiramis.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 1, startEvent: 'motherhood-of-Anushavan', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.20' }], notes: 'Mother of Anushavan Sosanver, who restored Haykazuni sovereignty after the Semiramis occupation.' },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'wife-of-Ara-the-Beautiful' },
+        { id: 'mother-of-Anushavan-Sosanver' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'armenian_ara_the_beautiful', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }] },
+        { kind: 'mother-of', personId: 'armenian_anushavan_sosanver', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.20' }] },
+      ],
+      linguistic: {
+        etymology: 'Armenian Նուարդ Nuard, conventionally read with the element vard (վարդ) "rose" of the common Armenian rose-maiden name-type; Nvard is the modern Eastern Armenian rendering.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15, 1.20' },
+          { kind: 'secondary', reference: 'Thomson trans. (1978) commentary' },
+        ], weight: 'primary' },
+      ],
+      notes: 'Wife of Ara the Beautiful and mother of Anushavan Sosanver in the Khorenatsi Haykazuni tradition. Her faithful marriage is the narrative foil to the Ara-Semiramis episode: it is fidelity to Nuard that motivates Ara\'s fatal rejection of the Assyrian queen\'s proposal (Khorenatsi 1.15), and through their son Anushavan the Haykazuni line continues past the Semiramis occupation. Carried in the registry only as an externalRef on Ara until materialized here as the maternal link between Ara and Anushavan.',
+    },
+
+    {
+      id: 'armenian_shamiram',
+      schemaVersion: 2,
+      name: {
+        primary: 'Shamiram',
+        alt: ['Շամիրամ', 'Semiramis', 'Sammuramat', 'Queen of Assyria'],
+        transliterations: { 'armenian-classical': 'Շամիրամ', 'armenian-romanization': 'Shamiram' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'haykazuni-mythohistorical' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15-16' }], notes: 'Queen of Assyria; in Khorenatsi a semi-historical conflation of Assyrian-period queens, the regent Sammu-ramat (c. 811-808 BCE) being the strongest historical candidate.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 1, startEvent: 'invasion-of-Armenia-and-killing-of-Ara', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }], notes: 'After Ara the Beautiful refused her marriage proposal she invaded Armenia; Ara fell in the battle despite her order to take him alive, and her attempt to revive him through the aralez-spirits failed.' },
+        { typeStatus: 'mortal', era: 'haykazuni-mythohistorical', eraOrdering: 2, startEvent: 'building-of-the-city-on-Lake-Van', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.16' }], notes: 'Built the fortified summer-city, gardens, and great canal on the eastern shore of Lake Van — the "works of Semiramis" / Shamiramakert of the Khorenatsi tradition, an Armenian etiology for the Urartian remains at Van.' },
+        { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 3 },
+      ],
+      domains: [
+        { id: 'queen-of-Assyria' },
+        { id: 'slayer-of-Ara-the-Beautiful' },
+        { id: 'builder-of-the-Van-canal-and-city' },
+      ],
+      relations: [
+        { kind: 'killer-of', personId: 'armenian_ara_the_beautiful', era: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.15' }], notes: 'Invaded Armenia after Ara rejected her proposal; Ara fell in the battle despite her order to capture him alive.' },
+      ],
+      linguistic: {
+        etymology: 'Armenian Շամիրամ Shamiram, the Armenian reflex of Greek Semiramis (Σεμίραμις) rendering Akkadian Sammu-ramat. Khorenatsi attaches the name to the Lake Van building-works (Shamiramakert, "built by Shamiram").',
+        languageFamily: 'Akkadian/Assyrian name in Armenian transmission',
+      },
+      cult: {
+        cultCenters: [
+          { placeName: 'Van (Tushpa), eastern shore of Lake Van — the "city of Shamiram" (Shamiramakert)', period: 'haykazuni-mythohistorical', sources: [{ kind: 'primary', reference: 'Khorenatsi 1.16' }] },
+        ],
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Movses Khorenatsi, Patmutyun Hayots 1.15-16' },
+          { kind: 'secondary', reference: 'Thomson trans. (1978) commentary on the Ara-Semiramis episode and the Van building-tradition' },
+        ], weight: 'primary' },
+      ],
+      notes: 'The Assyrian queen Semiramis (Armenian Shamiram) of the Khorenatsi tradition — antagonist of the Ara the Beautiful legend, one of the most-famous narratives of Movses Khorenatsi (1.15) and a recurring motif in modern Armenian literature, painting, and theater. Captivated by Ara\'s beauty she proposed marriage; when he refused, out of faithfulness to his wife Nuard, she invaded Armenia, where Ara was killed despite her order to take him alive, and the aralez-spirit resurrection failed. Khorenatsi 1.16 makes her the builder of the city, gardens, and canal on Lake Van (the Shamiramakert), an Armenian etiology for the visible Urartian works there. A semi-historical conflation of multiple Assyrian-period queens, the regent Sammu-ramat (c. 811-808 BCE) the strongest candidate; tagged here under the Armenian tradition in which she is a narrative participant, mortal-class, as the materialized slayer of Ara (formerly an externalRef).',
+    },
+
+    {
+      id: 'armenian_tsovinar',
+      schemaVersion: 2,
+      name: {
+        primary: 'Tsovinar',
+        alt: ['Ծովինար', 'Dzovinar', 'Tsovinar of the Sea', 'Princess of Baghdad'],
+        transliterations: { 'armenian-classical': 'Ծովինար', 'armenian-romanization': 'Tsovinar / Dzovinar' },
+      },
+      type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'female', vitalStatus: 'dead',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'medieval-sasna-tsrer' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Manuk Abeghian (1936-1951) Vol. I Cycle 1' }], notes: 'Daughter of the Caliph (in some recensions the king) of Baghdad, given in a tribute-marriage that frames Cycle 1 of the epic.' },
+        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 1, startEvent: 'miraculous-conception-from-the-Milky-Fountain', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 1' }], notes: 'Conceived the twins Sanasar and Baghdasar by drinking sacred water — a handful and a half from the Milky Fountain (Katnaghbiur) — with no human father; the uneven draught explains the twins\' unequal strength in some recensions.' },
+        { vitalStatus: 'dead', era: 'medieval-sasna-tsrer', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'sea-born-matriarch-of-Sassoun' },
+        { id: 'miraculous-conception-of-the-twin-founders' },
+      ],
+      relations: [
+        { kind: 'mother-of', personId: 'armenian_sanasar', era: 'medieval-sasna-tsrer', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 1' }] },
+        { kind: 'mother-of', personId: 'armenian_baghdasar', era: 'medieval-sasna-tsrer', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 1' }] },
+      ],
+      linguistic: {
+        etymology: 'Armenian Ծովինար Tsovinar, from tsov (ծով) "sea" — "of the sea," marking the marine-conception motif; the variant Dzovinar reflects the dialectal ts-/dz- alternation. The form carries the older Armenian storm-and-sea spirit Tsovinar into the medieval epic.',
+        languageFamily: 'Indo-European (Armenian)',
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Sasna Tsřer ed. Manuk Abeghian (1936-1951) Vol. I Cycle 1' },
+          { kind: 'primary', reference: 'Levon Surmelian trans., Daredevils of Sassoun (1964)' },
+          { kind: 'secondary', reference: 'Garegin Srvandzteants, Grots u Brots / Mokats Mirza (1873) — first textual collection' },
+        ], weight: 'primary' },
+      ],
+      notes: 'The sea-conceived matriarch of the Sassoun line in the Sasna Tsřer (Daredevils of Sassoun). A princess of Baghdad given in tribute-marriage, she conceives the twin founders Sanasar and Baghdasar by drinking sacred water from the Milky Fountain (Katnaghbiur), with no human father — the miraculous-conception motif that opens the four-generation epic. Her name (Armenian Tsovinar, "of the sea") and the older Armenian storm-and-sea spirit of the same name lie behind the marine conception. Carried in the registry only as an externalRef on Sanasar and Baghdasar until materialized here; she is mortal-class, and the sacred-water conception is not a forbidden-parent-class pattern, so her sons retain strict-pass eligibility.',
+    },
+
     {
       id: 'armenian_sanasar',
       schemaVersion: 2,
@@ -12206,10 +12692,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['armenian_tsovinar'],
+      parentRoles: { armenian_tsovinar: 'maternal' },
       temporal: { era: 'medieval-sasna-tsrer' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, startEvent: 'miraculous-conception-by-Tsovinar-from-sacred-water', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I (1936) Cycle 1' }], notes: 'Conceived by his mother Tsovinar (princess of Baghdad) through her drinking of sacred water from the Milky Sea (Katnaghbiur); Tsovinar gave birth to twins, Sanasar and Baghdasar, with no human father involved. The registry treats Sanasar as mortal with empty parentIds — Tsovinar is mortal-class and the sacred-water conception is not a forbidden-parent-class pattern.' },
+        { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, startEvent: 'miraculous-conception-by-Tsovinar-from-sacred-water', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I (1936) Cycle 1' }], notes: 'Conceived by his mother Tsovinar (princess of Baghdad) through her drinking of sacred water from the Milky Sea (Katnaghbiur), with no human father; Tsovinar gave birth to the twins Sanasar and Baghdasar. The registry now records Tsovinar (mortal-class) as Sanasar\'s mother in parentIds; the sacred-water conception is not a forbidden-parent-class pattern, so Sanasar retains strict-pass eligibility.' },
         { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 1, startEvent: 'flight-from-Baghdad-and-founding-of-Sassoun', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I' }], notes: 'Fled Baghdad with his twin Baghdasar to escape the Caliph\'s persecution; founded the city-fortress of Sassoun (Sasun) in the highland-region southwest of Lake Van — the eponymous capital of the heroic dynasty.' },
         { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 2, startEvent: 'fathering-of-Mher-the-Elder', sources: [{ kind: 'primary', reference: 'Sasna Tsřer Cycle 2' }] },
         { vitalStatus: 'dead', era: 'medieval-sasna-tsrer', eraOrdering: 3 },
@@ -12221,7 +12708,6 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'sibling', personId: 'armenian_baghdasar', era: 'medieval-sasna-tsrer', notes: 'Twin brother; co-founder of Sassoun.' },
-        { kind: 'mother', externalRef: { name: 'Tsovinar (Թովինար, "of-the-sea"), princess of Baghdad / Caliphate of Baghdad; conceived the twins through drinking sacred water from the Milky Sea', tradition: 'Armenian' }, era: 'medieval-sasna-tsrer' },
         { kind: 'father-of', personId: 'armenian_mher_the_elder', era: 'medieval-sasna-tsrer' },
       ],
       iconography: {
@@ -12259,7 +12745,8 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Armenian', primaryTradition: 'Armenian', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['armenian_tsovinar'],
+      parentRoles: { armenian_tsovinar: 'maternal' },
       temporal: { era: 'medieval-sasna-tsrer' },
       lifecycle: [
         { typeStatus: 'mortal', era: 'medieval-sasna-tsrer', eraOrdering: 0, startEvent: 'twin-conception-with-Sanasar', sources: [{ kind: 'primary', reference: 'Sasna Tsřer ed. Abeghian Vol. I Cycle 1' }] },
@@ -12273,7 +12760,6 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'sibling', personId: 'armenian_sanasar', era: 'medieval-sasna-tsrer' },
-        { kind: 'mother', externalRef: { name: 'Tsovinar', tradition: 'Armenian' }, era: 'medieval-sasna-tsrer' },
       ],
       linguistic: {
         etymology: 'Armenian Բաղդասար Baghdasar; the name is the Armenian form of Belshazzar (Babylonian Bēl-šar-uṣur, "Bel protect the king"; Old Testament Daniel 5). The twin-name pair Sanasar-Baghdasar preserves the Old Testament Sanasar-Belshazzar onomastic complex (2 Kings 19:37), reflecting medieval-Armenian-Christian liturgical-Biblical transmission of Mesopotamian royal names into the Sassoun heroic-epic frame.',
@@ -12943,10 +13429,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['finnish_lempi'],
+      parentRoles: { finnish_lempi: 'maternal' },
       temporal: { era: 'kalevala-mythic-prehistoric' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-to-Lempi-mortal-mother', sources: [{ kind: 'primary', reference: 'Kalevala Canto 11; Honko 1990' }], notes: 'Born to his mortal mother Lempi (the canonical Lempi being a mortal Finnish woman, no named father in most recensions). parentIds left empty per registry conventions for figures whose mother is unregistered within the 3-entry Finnish budget.' },
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-to-Lempi-mortal-mother', sources: [{ kind: 'primary', reference: 'Kalevala Canto 11; Honko 1990' }], notes: 'Born to his mortal mother Lempi (a mortal Finnish woman, with no named father in most recensions); parentIds now carries Lempi as his maternal parent.' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 1, startEvent: 'reckless-lover-and-warrior-cycles', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 11-15, 26-30' }], notes: 'The canonical reckless-lover-hero of the Kalevala: pursued multiple romantic-and-military adventures including the abduction of Kyllikki (Canto 11), the bride-quest at Pohjola (Cantos 13-15), the swan-of-Tuonela hunt (Cantos 14-15), and the bee-honey-resurrection by his mother (Canto 15).' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 2, startEvent: 'death-at-Tuonela-river-and-resurrection', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 14-15' }], notes: 'Killed at the Tuonela River (the canonical Finnish underworld-river) by the cattle-herder of Tuonela while attempting to shoot the Swan of Tuonela for Louhi\'s bride-quest task; his body was thrown into the river and chopped to pieces. His mother Lempi gathered all the pieces from the river-bottom using a copper rake, sewed them together, and resurrected him through the canonical bee-honey-from-heaven incantation — one of the most-mythopoetic episodes of the Kalevala. Subsequently lived through additional adventures including the Sampo-theft expedition, but the Tuonela-death-and-resurrection establishes his foundational dying-and-rising-mortal-hero status.' },
         { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 3 },
@@ -12958,7 +13445,7 @@ const buildPeopleSeed = () => {
         { id: 'sampo-theft-expedition-participant' },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Lempi (mortal Finnish woman; mother of Lemminkäinen; resurrected him from the Tuonela-river-pieces by bee-honey incantation)', tradition: 'Finnish' }, era: 'kalevala-mythic-prehistoric' },
+        { kind: 'mother', personId: 'finnish_lempi', era: 'kalevala-mythic-prehistoric' },
       ],
       iconography: {
         attributes: [
@@ -12990,10 +13477,11 @@ const buildPeopleSeed = () => {
       },
       type: 'mortal', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: [],
+      parentIds: ['finnish_kalervo'],
+      parentRoles: { finnish_kalervo: 'paternal' },
       temporal: { era: 'kalevala-mythic-prehistoric' },
       lifecycle: [
-        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-into-Kalervo-Untamo-feud', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }], notes: 'Born to Kalervo (mortal Karelian-tribal chief) and an unnamed mortal mother during the canonical Kalervo-Untamo blood-feud — Untamo (Kalervo\'s brother) had massacred Kalervo\'s family except the pregnant mother and the unborn Kullervo, who was raised in slavery in Untamo\'s household. parentIds left empty per registry conventions for figures whose parents are unregistered within the 3-entry Finnish budget.' },
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'birth-into-Kalervo-Untamo-feud', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }], notes: 'Born to Kalervo (mortal Karelian-tribal chief) and an unnamed mortal mother during the canonical Kalervo-Untamo blood-feud — Untamo (Kalervo\'s brother) had massacred Kalervo\'s family except the pregnant mother and the unborn Kullervo, who was raised in slavery in Untamo\'s household. parentIds carries his father Kalervo (mortal); the mother is unnamed in the tradition.' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 1, startEvent: 'preternatural-strength-as-infant', sources: [{ kind: 'primary', reference: 'Kalevala Canto 31' }], notes: 'Per canonical narrative, demonstrated preternatural strength as an infant (broke his cradle, broke the swaddling-clothes, etc. — the canonical "preternaturally-strong-tragic-hero" infancy-trope). Untamo attempted to kill the infant Kullervo through multiple means (drowning, burning, hanging) but the child survived all attempts. Was sold into slavery to Ilmarinen, where his destructive labor-failures (the destruction of the cattle-herd Kullervo was tasked with herding, transformed by his curse into wolves and bears that killed Ilmarinen\'s wife Pohjolan tytär — Louhi\'s daughter) caused further tragedy.' },
         { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 2, startEvent: 'unwitting-incest-with-sister', sources: [{ kind: 'primary', reference: 'Kalevala Canto 35' }], notes: 'Returning to his ancestral homeland, encountered an unknown maiden whom he seduced — discovering only after the act that she was his long-lost sister, separated from him in childhood by the Kalervo-Untamo feud. The sister, upon recognition, threw herself into the river to her death.' },
         { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 3, startEvent: 'suicide-on-his-sword', sources: [{ kind: 'primary', reference: 'Kalevala Canto 36' }], notes: 'After avenging Kalervo\'s family by killing Untamo and destroying his household, returned to find his ancestral home empty and his entire family dead. In the canonical Kalevala-tragic climax, addressed his sword and asked whether it would willingly drink his blood; the sword answered that it had drunk innocent blood and would drink guilty blood as readily. Kullervo fell on his sword in the canonical-Finnish suicide-of-the-tragic-hero, ending the Kullervo-cycle. The Kullervo-cycle is the most-extensively-tragic episode of the Kalevala and a foundational influence on subsequent Finnish-and-European tragic-literary tradition (J. R. R. Tolkien\'s "The Story of Kullervo," 1914-1915, an early influence on the Túrin Turambar tragedy of The Silmarillion; Jean Sibelius\'s Kullervo Symphony, Op. 7, 1892, the foundational Finnish-national-romantic symphonic work).' },
@@ -13006,7 +13494,7 @@ const buildPeopleSeed = () => {
         { id: 'foundational-Finnish-tragic-hero-template' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Kalervo (mortal Karelian-tribal chief; Kullervo\'s father; killed by Untamo in the canonical blood-feud)', tradition: 'Finnish' }, era: 'kalevala-mythic-prehistoric' },
+        { kind: 'father', personId: 'finnish_kalervo', era: 'kalevala-mythic-prehistoric' },
       ],
       iconography: {
         attributes: [
@@ -13029,6 +13517,58 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Tragic-slave-warrior of the Kalevala; son of Kalervo (mortal Karelian-tribal chief) and an unnamed mortal mother. Born during the canonical Kalervo-Untamo blood-feud — Untamo (Kalervo\'s brother) had massacred Kalervo\'s family except the pregnant mother and the unborn Kullervo, who was raised in slavery in Untamo\'s household. Demonstrated preternatural strength as an infant (broke his cradle, broke the swaddling-clothes); Untamo attempted to kill him through multiple means (drowning, burning, hanging) but the child survived all attempts. Sold into slavery to Ilmarinen, where his destructive labor-failures (the cattle-herd Kullervo was tasked with herding was transformed by his curse into wolves and bears that killed Ilmarinen\'s wife) caused further tragedy. Returning to his ancestral homeland, encountered an unknown maiden whom he seduced — discovering only after the act that she was his long-lost sister, separated from him in childhood by the Kalervo-Untamo feud; the sister threw herself into the river to her death upon recognition. After avenging Kalervo\'s family by killing Untamo, returned to find his ancestral home empty and his entire family dead, and fell on his own sword in the canonical-Finnish suicide-of-the-tragic-hero. The Kullervo-cycle is the most-extensively-tragic episode of the Kalevala and a foundational influence on subsequent Finnish-and-European tragic-literary tradition: J. R. R. Tolkien\'s "The Story of Kullervo" (1914-1915) was an early influence on the Túrin Turambar tragedy of The Silmarillion; Jean Sibelius\'s Kullervo Symphony Op. 7 (1892) is the foundational Finnish-national-romantic symphonic work and was the breakthrough composition that established Sibelius as the central Finnish national composer.',
+    },
+
+    // ── Genealogy march, Wave G10 (Finnish, Kalevala): materialize Kalervo
+    //    (Kullervo's father) and Lempi (Lemminkäinen's mother), both mortal and
+    //    both carried only as externalRefs. ──
+    {
+      id: 'finnish_kalervo', schemaVersion: 2,
+      name: { primary: 'Kalervo', alt: ['Kalervo', 'Father of Kullervo'], transliterations: { 'modern-finnish': 'Kalervo', etymology: 'Finnish Kalervo, possibly from kala "fish" + the -rvo suffix; the patronymic of Kullervo (Kalervon poika, "son of Kalervo").' } },
+      type: 'mortal', origin: 'canon', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'male', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'kalevala-mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'the-Kalervo-Untamo-blood-feud', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }], notes: 'A Karelian tribal chief; father of Kullervo. His brother Untamo made war on him and massacred his household, sparing only Kullervo\'s pregnant mother — the origin of the Kullervo tragedy. In the New Kalevala, Kalervo and most of his family are reunited or found dead by Kullervo on his return.' },
+        { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'Karelian-tribal-chief' },
+        { id: 'father-of-Kullervo-and-victim-of-the-Untamo-feud' },
+      ],
+      relations: [
+        { kind: 'father-of', personId: 'finnish_kullervo', era: 'kalevala-mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Elias Lönnrot, Kalevala (1849 New Kalevala) Cantos 31-36' }], weight: 'primary' },
+      ],
+      notes: 'Karelian tribal chief and father of the tragic hero Kullervo. The blood-feud in which his brother Untamo destroyed his household — sparing only Kullervo\'s pregnant mother — sets the entire Kullervo cycle in motion. Carried in the registry only as an externalRef on Kullervo until materialized here.',
+    },
+
+    {
+      id: 'finnish_lempi', schemaVersion: 2,
+      name: { primary: 'Lempi', alt: ['Mother of Lemminkäinen'], transliterations: { 'modern-finnish': 'Lempi', etymology: 'Finnish lempi "love, ardour"; the mother of the reckless lover-hero Lemminkäinen (Lempi-nen, "of Lempi").' } },
+      type: 'mortal', origin: 'canon', tradition: 'Finnish', primaryTradition: 'Finnish', sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'kalevala-mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 0, startEvent: 'motherhood-of-Lemminkainen', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 11-15' }], notes: 'A mortal Finnish woman; mother of the reckless lover-hero Lemminkäinen. To her he entrusted the hairbrush that would bleed if he were slain.' },
+        { typeStatus: 'mortal', era: 'kalevala-mythic-prehistoric', eraOrdering: 1, startEvent: 'resurrection-of-Lemminkainen-at-Tuonela', sources: [{ kind: 'primary', reference: 'Kalevala Canto 15' }], notes: 'When Lemminkäinen was killed at the Tuonela River and his body chopped to pieces and thrown in, she raked every piece from the river-bottom with a copper rake, sewed him back together, and resurrected him with a bee-honey-from-heaven incantation — one of the most-mythopoetic episodes of the Kalevala (Gallen-Kallela\'s 1897 "Lemminkäinen\'s Mother").' },
+        { vitalStatus: 'dead', era: 'kalevala-mythic-prehistoric', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'mother-of-Lemminkainen' },
+        { id: 'resurrector-from-the-Tuonela-river' },
+      ],
+      relations: [
+        { kind: 'mother-of', personId: 'finnish_lemminkainen', era: 'kalevala-mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 11-15' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Elias Lönnrot, Kalevala (1849 New Kalevala) Cantos 11-15' }], weight: 'primary' },
+      ],
+      notes: 'Mortal Finnish woman and mother of the lover-hero Lemminkäinen. Her gathering of her son\'s dismembered body from the river of the dead and his resurrection by a bee-honey incantation (Kalevala Canto 15) is among the most-celebrated episodes of the epic, immortalized in Akseli Gallen-Kallela\'s painting "Lemminkäinen\'s Mother" (1897). Carried in the registry only as an externalRef on Lemminkäinen until materialized here.',
     },
 
     {
@@ -13180,6 +13720,46 @@ const buildPeopleSeed = () => {
 
     // ─── NORSE — Æsir-Vanir cluster ───────────────────────────────────────
 
+    // ── Genealogy march, Wave G14 (Norse): materialize Jǫrð (Thor's mother)
+    //    and Rerir (Sigi's son, the Völsung line), both carried only as
+    //    externalRefs. The spouse/sibling/father-of links to the already-
+    //    registered Frigg and Freyja are promoted to personId on the
+    //    hand-authored Odin/Njörd/Freyr, with reciprocals via ENRICHMENTS. ──
+    {
+      id: 'norse_jord', schemaVersion: 2,
+      name: { primary: 'Jǫrð', alt: ['Jord', 'Fjǫrgyn', 'Hlóðyn', 'Earth'], transliterations: { 'old-norse': 'Jǫrð', 'english-translation': 'Earth' } },
+      type: 'deity', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse', sex: 'female', vitalStatus: 'living',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'deity', era: 'mythic-prehistoric', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Gylfaginning 9, 36; Skáldskaparmál; Vǫluspá' }], notes: 'The personified Earth (also Fjǫrgyn, Hlóðyn); a giantess reckoned among the goddesses. By Odin she is the mother of Thor, who is repeatedly called Jarðar burr ("son of Jǫrð").' },
+      ],
+      domains: [{ id: 'personified-earth' }, { id: 'mother-of-Thor' }],
+      relations: [
+        { kind: 'mother-of', personId: 'norse_thor', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Snorri Sturluson, Gylfaginning 9, 36; Skáldskaparmál (Thor as Jarðar burr, "son of Jǫrð"); Vǫluspá' }], weight: 'primary' }],
+      notes: 'The personified Earth of Norse cosmology (also Fjǫrgyn and Hlóðyn), counted among the goddesses though of giant-kind; by Odin she is the mother of Thor, who is repeatedly called Jarðar burr ("son of Jǫrð"). Carried in the registry only as an externalRef on Thor until materialized here.',
+    },
+
+    {
+      id: 'norse_rerir', schemaVersion: 2,
+      name: { primary: 'Rerir', alt: ['Rerir', 'Refir'], transliterations: { 'old-norse': 'Rerir' } },
+      type: 'quartigod', origin: 'canon', tradition: 'Norse', primaryTradition: 'Norse', sex: 'male', vitalStatus: 'dead',
+      parentIds: ['norse_sigi'], parentRoles: { norse_sigi: 'paternal' },
+      temporal: { era: 'mythic-prehistoric' },
+      lifecycle: [
+        { typeStatus: 'quartigod', era: 'mythic-prehistoric', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }], notes: 'Son of Sigi and the next king of the Völsung line; avenged his father\'s murder by his maternal uncles and won the kingdom. Long childless, he and his wife received the apple of fertility from Frigg (sent by the wish-maiden Hljóð), conceiving Völsung, eponym of the dynasty.' },
+        { vitalStatus: 'dead', era: 'mythic-prehistoric', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'Volsung-line-king' }, { id: 'avenger-of-Sigi' }],
+      relations: [
+        { kind: 'father', personId: 'norse_sigi', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }], weight: 'primary' }],
+      notes: 'Son of Sigi and second king of the Völsung line; avenged his father and won the kingdom, then with his wife obtained the apple of fertility from Frigg to conceive Völsung, eponym of the Völsung dynasty. Quartigod-tier as the son of the demigod Sigi. Carried in the registry only as an externalRef on Sigi until materialized here.',
+    },
+
     // ─── Odin — chief of the Æsir ─────────────────────────────────────────
     {
       id: 'norse_odin', schemaVersion: 2,
@@ -13220,7 +13800,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Frigg (queen of the Æsir, wife of Odin, mother of Baldr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál; Lokasenna 26-27' }], notes: 'Frigg entry pending. Mother of Baldr by Odin.' },
+        { kind: 'spouse', personId: 'norse_frigg', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál; Lokasenna 26-27' }], notes: 'Queen of the Æsir, wife of Odin and mother of Baldr.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Vǫluspá, Hávamál, Vafþrúðnismál, Grímnismál, Lokasenna, etc.); Snorri\'s Prose Edda (Gylfaginning, Skáldskaparmál); Heimskringla (Ynglinga saga); Háleygjatal; Tacitus Germania 9 (1st c. CE — the earliest external attestation, identifying Mercury as the chief Germanic deity); Adam of Bremen Gesta Hammaburgensis 4.26-27 (Uppsala temple)' }], weight: 'primary' },
@@ -13255,7 +13835,7 @@ const buildPeopleSeed = () => {
         { id: 'jarngreipr', classId: 'gauntlets', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the iron gloves needed to wield Mjǫllnir)' }] },
       ],
       relations: [
-        { kind: 'mother', externalRef: { name: 'Jǫrð (the earth-giantess; mother of Thor by Odin)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
+        { kind: 'mother', personId: 'norse_jord', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
         { kind: 'enemy', externalRef: { name: 'Jǫrmungandr (the Midgard Serpent; Thor\'s doom at Ragnarǫk)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫluspá 56; Gylfaginning 51' }], notes: 'They slay each other at Ragnarǫk; Thor walks nine steps before falling from the serpent\'s venom.' },
       ],
       sources: [
@@ -13303,7 +13883,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling-and-spouse', externalRef: { name: 'the unnamed sister-wife of Njörðr (Vanir tradition of sibling-incest pre-hostage-exchange; mother of Freyr and Freyja per Lokasenna 36)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Heimskringla, Ynglinga saga 4; Lokasenna 36' }], notes: 'Unnamed Vanir sister-wife in Vanaheim, mother of Freyr and Freyja. Entry pending if needed; tradition identifies her with Nerthus in some readings.' },
         { kind: 'father-of', personId: 'norse_freyr', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Gylfaginning 23-24; Lokasenna 36' }] },
-        { kind: 'father-of', externalRef: { name: 'Freyja (Vanir goddess of love, war, and seiðr; daughter of Njörðr; sister-and-twin of Freyr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Gylfaginning 23-24; Lokasenna 36' }], notes: 'Freyja entry pending.' },
+        { kind: 'father-of', personId: 'norse_freyja', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Snorri, Gylfaginning 23-24; Lokasenna 36' }], notes: 'His daughter, the Vanir goddess of love, war, and seiðr; twin of Freyr.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Vǫluspá 21-24; Vafþrúðnismál 39; Grímnismál 16; Lokasenna 35-36; Snorri, Gylfaginning 23-24, Skáldskaparmál 1; Heimskringla, Ynglinga saga 4. Pre-Norse: Tac. Germ. 40 (the Nerthus cult, the feminine Proto-Germanic cognate)' }], weight: 'primary' },
@@ -13342,7 +13922,7 @@ const buildPeopleSeed = () => {
       },
       relations: [
         { kind: 'parent', personId: 'norse_njord', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál 38; Gylfaginning 23' }], notes: 'Njǫrðr entry pending. Father (Vanir).' },
-        { kind: 'sibling', externalRef: { name: 'Freyja (Vanir goddess of love, war, and seiðr; daughter of Njörðr; sister-and-twin of Freyr)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Lokasenna 32; Gylfaginning 24' }], notes: 'Freyja entry pending. Twin sister.' },
+        { kind: 'sibling', personId: 'norse_freyja', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Lokasenna 32; Gylfaginning 24' }], notes: 'His twin sister, the Vanir goddess Freyja.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Poetic Edda (Vǫluspá 53, Skírnismál, Lokasenna 35-37, Grímnismál 5); Prose Edda (Gylfaginning 24, 37, 49; Skáldskaparmál); Ynglinga saga 9-10; Adam of Bremen 4.26-27; multiple sagas (Hrafnkels saga Freysgoða, Víga-Glúms saga); the Lerchenborg figurine and other archaeological phallic male figures' }], weight: 'primary' },
@@ -13399,7 +13979,7 @@ const buildPeopleSeed = () => {
         ],
       },
       relations: [
-        { kind: 'parent', externalRef: { name: 'Anu (Sumerian An, supreme sky-god, father of the gods)', tradition: 'Mesopotamian' }, era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Multiple Ninsun texts identifying Anu as her father' }], notes: 'An (Sumerian sky-god) entry pending. Father per the dominant tradition (Klein, Wilcke). Some texts treat parentage as opaque.' },
+        { kind: 'parent', personId: 'mesopotamian_anu', era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Multiple Ninsun texts identifying Anu as her father' }], notes: 'Anu (Sumerian An) as her father per the dominant tradition (Klein, Wilcke); some texts treat the parentage as opaque. Kept as a relation rather than a parentId so Ninsun\'s deity-tier is unaffected.' },
         { kind: 'parent', externalRef: { name: 'Uraš (earth-goddess, consort of Anu in the Sumerian tradition; mother of Ninsun)', tradition: 'Mesopotamian' }, era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Multiple texts' }], notes: 'Uraš (Sumerian earth-goddess) entry pending. Mother per the dominant tradition.' },
         { kind: 'spouse', personId: 'mesopotamian_lugalbanda', era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Weidner god-list, An = Anum forerunner and An = Anum god lists, the Standard Emesal lexical list (the canonical Lugalbanda-Ninsun pairing); fragmentary myth of their marriage' }], notes: 'A fragmentary myth (sole copy, difficult to translate) describes their courtship — Ninsun offers beer-bread to Lugalbanda, they spend a night together at Iri\'aza in Elam, then go to Uruk where Inanna instructs Lugalbanda how to approach Ninsun\'s father for permission to marry. The myth may have culminated in Gilgamesh\'s birth (Lisman) — proposed but unproven.' },
         { kind: 'mother-of', personId: 'mesopotamian_gilgamesh', era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Earliest Sumerian Gilgamesh poems (Bilgames cycle); Standard Babylonian Epic of Gilgamesh I, III' }], notes: 'The defining maternal relationship of Mesopotamian literature.' },
@@ -13497,7 +14077,7 @@ const buildPeopleSeed = () => {
       },
       relations: [
         { kind: 'beloved', externalRef: { name: 'Enkidu (the wild-man companion of Gilgamesh, created by Aruru from clay to be his match)', tradition: 'Mesopotamian' }, era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Standard Babylonian Epic of Gilgamesh I-XII' }], notes: 'Enkidu (mortal, created by the gods from clay to challenge Gilgamesh) entry pending. The defining male-friendship pair of Mesopotamian literature.' },
-        { kind: 'father-of', externalRef: { name: 'Ur-Nungal (son of Gilgamesh per the Sumerian King List, ruled Uruk after his father)', tradition: 'Mesopotamian' }, era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Sumerian King List' }], notes: 'Ur-Nungal (¼ quartigod by lineage) entry pending. Successor to the throne; reigned 30 years per Sumerian King List.' },
+        { kind: 'father-of', personId: 'mesopotamian_ur_nungal', era: 'early-dynastic-sumer', sources: [{ kind: 'primary', reference: 'Sumerian King List' }], notes: 'Ur-Nungal, his son and successor at Uruk (reigned 30 years per the Sumerian King List); already carries Gilgamesh as parent.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Sumerian King List (postdiluvian First Dynasty of Uruk, fifth king after Enmerkar, Lugalbanda, Dumuzid the Fisherman); Tummal Inscription (1953-1920 BCE — 34-line text, the earliest historical attestation); Sumerian Bilgames cycle (Bilgames and Akka, Bilgames and Huwawa, Bilgames and the Bull of Heaven, Death of Bilgames) c. 21st-c. BCE redaction; Old Babylonian Epic of Gilgamesh c. 1800 BCE; Standard Babylonian Epic of Gilgamesh (Sîn-lēqi-unninni redaction c. 1300-1000 BCE), eleven tablets preserved at Ashurbanipal\'s library, Nineveh; the Pennsylvania, Yale, and Megiddo tablets' }], weight: 'primary' },
@@ -15092,7 +15672,7 @@ const buildPeopleSeed = () => {
         { id: 'creator-of-the-original-Diné-clans' },
       ],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Jóhonaaʼéí (the Sun, deity-class), father of Monster Slayer; the Sun is the foundational male-creator-figure of the Diné cosmology and is not registered as standalone entry within this 2-entry Diné budget', tradition: 'Diné' }, era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+        { kind: 'spouse', personId: 'dine_johonaai', era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
         { kind: 'mother-of', personId: 'dine_monster_slayer', era: 'hero-twins-monster-slaying' },
       ],
       iconography: {
@@ -15154,7 +15734,7 @@ const buildPeopleSeed = () => {
         { id: 'foundational-homeland-purifier' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Jóhonaaʼéí (the Sun, deity-class)', tradition: 'Diné' }, era: 'hero-twins-monster-slaying' },
+        { kind: 'father', personId: 'dine_johonaai', era: 'hero-twins-monster-slaying' },
         { kind: 'sibling', personId: 'dine_born_for_water', era: 'hero-twins-monster-slaying' },
       ],
       iconography: {
@@ -15175,7 +15755,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Zolbrod (1984); Matthews (1897); Haile (1938)' },
         ], weight: 'primary' },
       ],
-      notes: 'Hero Twin son of Asdzą́ą́ Nádleehé (Changing Woman) by Jóhonaaʼéí (the Sun); foundational homeland-purifier of the Diné Bahaneʼ. Demigod-tier per registry math (1 deity-parent registered, Sun-father external; if both deity-parents were registered would author as deity, but the 2-entry Diné budget defers Sun-father registration). Twin of Tó Bájíshchíní (Born for Water, fathered by a waterfall). With his twin, undertook the canonical pilgrimage to the Sun-Father\'s house in the eastern sky to claim paternity-recognition and receive weapons; underwent the foundational Diné four-tests (sweatlodge, knives, rocks, lightning) administered by the Sun before paternity-recognition. Slew the alien-monsters (Naayééʼ) preventing safe Diné occupation of the homeland — Yéʼiitsoh (the Big Giant, killed at Mount Taylor / Tsoodził by lightning-arrows from the Sun), Déélgééd, Tsé Niinájihí, Bináʼ Yéʼ Aghání, and others — with each slain monster\'s body becoming a recognizable landscape feature of the Diné homeland (Yéʼiitsoh\'s blood becoming the Mount Taylor lava-flow, etc.). The monster-slaying cycle is the foundational Diné homeland-purification narrative. Spared four old monsters (Cold, Hunger, Old Age, Poverty) at the request of the people — the canonical Diné theodicy-narrative explaining the persistence of these conditions in human life.',
+      notes: 'Hero Twin son of Asdzą́ą́ Nádleehé (Changing Woman) by Jóhonaaʼéí (the Sun); foundational homeland-purifier of the Diné Bahaneʼ. Demigod-tier per registry math: only his mother Changing Woman is carried in parentIds; his father Jóhonaaʼéí (the Sun) is now registered and linked as a father relation but deliberately kept out of parentIds, since two deity-parents would compute to deity-tier and override the authored demigod hero-tier. Twin of Tó Bájíshchíní (Born for Water, fathered by a waterfall). With his twin, undertook the canonical pilgrimage to the Sun-Father\'s house in the eastern sky to claim paternity-recognition and receive weapons; underwent the foundational Diné four-tests (sweatlodge, knives, rocks, lightning) administered by the Sun before paternity-recognition. Slew the alien-monsters (Naayééʼ) preventing safe Diné occupation of the homeland — Yéʼiitsoh (the Big Giant, killed at Mount Taylor / Tsoodził by lightning-arrows from the Sun), Déélgééd, Tsé Niinájihí, Bináʼ Yéʼ Aghání, and others — with each slain monster\'s body becoming a recognizable landscape feature of the Diné homeland (Yéʼiitsoh\'s blood becoming the Mount Taylor lava-flow, etc.). The monster-slaying cycle is the foundational Diné homeland-purification narrative. Spared four old monsters (Cold, Hunger, Old Age, Poverty) at the request of the people — the canonical Diné theodicy-narrative explaining the persistence of these conditions in human life.',
     },
 
     {
@@ -15278,6 +15858,57 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Wisdom-teacher and weaving-teacher of the Diné; resident at Spider Rock (the 750-foot sandstone spire in Canyon de Chelly National Monument, Arizona). Per the canonical Diné Bahaneʼ tradition, taught the Hero Twins (Monster Slayer and Born for Water) the protective spells and the navigation-techniques required for their pilgrimage to the Sun-Father\'s house — without Spider Woman\'s guidance, the Hero Twins would have failed the Sun-Father\'s four-tests and been unable to receive the lightning-arrow weapons needed for the homeland-purification monster-slaying. Subsequently taught Diné women the art of weaving — the foundational Diné textile-craft tradition that produces the canonical Diné rug-and-blanket weaving heritage. The "spider hole" left in the center of traditional Diné rugs (a small unfinished-section that allows the weaving-spirit to leave the rug) preserves the Spider Woman teaching-tradition explicitly. The Spider Woman figure is structurally parallel to but distinct from cognate-figures across other Indigenous American traditions: the Hopi Spider Grandmother (Kókyangwùuti), the Pueblo Spider Woman, and others — all preserving the broader Indigenous-American spider-as-wisdom-and-weaving-teacher mythologem. The Diné Spider Woman is treated in the registry as deity-class with parents=[] per pantheon-deity convention; her cosmological-totem identification (spider as her natural-form-and-totem) is treated as cosmogonic-class rather than spirit-class.',
+    },
+
+    // ── Genealogy march, Wave G7 (Diné): materialize Jóhonaaʼéí, the Sun —
+    //    husband of Changing Woman and father of the Hero Twin Monster Slayer,
+    //    formerly carried only as externalRefs under the old "2-entry Diné
+    //    budget." Linked to Monster Slayer by a `father` relation but kept out
+    //    of the twin's parentIds: two registered deity-parents would compute
+    //    Monster Slayer to deity-tier, overriding his authored demigod hero-tier. ──
+    {
+      id: 'dine_johonaai',
+      schemaVersion: 2,
+      name: {
+        primary: 'Jóhonaaʼéí',
+        alt: ['The Sun', 'Sun Bearer', 'Sun-Father', 'Tsóhanoai'],
+        transliterations: { 'dine-bizaad-navajo': 'Jóhonaaʼéí', 'english-translation': 'the One Who Rules the Day / Sun Bearer' },
+      },
+      type: 'deity', tradition: 'Diné', primaryTradition: 'Diné', sex: 'male', vitalStatus: 'living',
+      origin: 'canon',
+      parentIds: [],
+      temporal: { era: 'cosmogonic-emergence' },
+      lifecycle: [
+        { typeStatus: 'deity', era: 'cosmogonic-emergence', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ; Zolbrod 1984; Matthews 1897' }], notes: 'The Sun-bearer who carries the sun (a turquoise disk) across the sky each day and hangs it on the western wall of his house at night; the foundational male luminary of the Diné cosmos, dwelling in a house of turquoise in the eastern sky.' },
+        { typeStatus: 'deity', era: 'hero-twins-monster-slaying', eraOrdering: 1, startEvent: 'fathering-of-Monster-Slayer-and-the-four-tests', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }], notes: 'Fathered Monster Slayer (Naayééʼ Neizghání) upon Changing Woman. When the Hero Twins came to his eastern house to claim paternity, he tested them with the four ordeals — sweatlodge, knives, rocks, and lightning; on their survival he acknowledged them and gave Monster Slayer the lightning-arrows and stone-knife to clear the homeland of monsters.' },
+      ],
+      domains: [
+        { id: 'sun-bearer-of-the-Dine-cosmos' },
+        { id: 'father-of-the-Hero-Twin-Monster-Slayer' },
+        { id: 'administrator-of-the-four-tests' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'dine_changing_woman', era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+        { kind: 'father-of', personId: 'dine_monster_slayer', era: 'hero-twins-monster-slaying', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+      ],
+      iconography: {
+        attributes: [
+          { id: 'turquoise-sun-disk', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ — the sun carried as a turquoise disk' }] },
+          { id: 'house-of-turquoise-in-the-eastern-sky', sources: [{ kind: 'primary', reference: 'Diné Bahaneʼ' }] },
+        ],
+      },
+      linguistic: {
+        etymology: 'Diné Bizaad Jóhonaaʼéí, conventionally glossed "the one who rules the day"; also called Sun Bearer (the bearer of the sun-disk). The older ethnographic literature (Matthews 1897) renders the Sun-bearer as Tsóhanoai.',
+        languageFamily: 'Na-Dene (Athabaskan, Southern Athabaskan, Diné Bizaad)',
+      },
+      sources: [
+        { claim: 'existence', citations: [
+          { kind: 'primary', reference: 'Diné Bahaneʼ (multiple Diné-community-authorized recensions)' },
+          { kind: 'primary', reference: 'Paul Zolbrod, Diné Bahaneʼ: The Navajo Creation Story (1984)' },
+          { kind: 'primary', reference: 'Washington Matthews, Navaho Legends (1897)' },
+        ], weight: 'primary' },
+      ],
+      notes: 'Jóhonaaʼéí, the Sun, of the Diné Bahaneʼ — the Sun-bearer who carries the turquoise sun-disk across the sky and dwells in a turquoise house in the eastern sky. Husband of Changing Woman (Asdzą́ą́ Nádleehé) and father of the Hero Twin Naayééʼ Neizghání (Monster Slayer). When the Hero Twins journeyed to his eastern house to claim their paternity, he subjected them to the four ordeals — sweatlodge, knives, rocks, lightning — and on their survival acknowledged them and armed Monster Slayer for the homeland-purification. Carried in the registry only as an externalRef on Changing Woman and Monster Slayer (under the former "2-entry Diné budget") until materialized here. Linked to Monster Slayer by a father relation but kept out of the twin\'s parentIds, since registering two deity-parents would compute Monster Slayer to deity-tier and override his authored demigod hero-tier.',
     },
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -18093,7 +18724,7 @@ const buildPeopleSeed = () => {
       ],
       domains: [{ id: 'sapa-inca-third' }, { id: 'left-handed-trait', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 15 — name etymology' }] }],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Cahua-Pata, mortal noblewoman of the Oma lineage; mother of Mayta Cápac', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
+        { kind: 'spouse', personId: 'inca_mama_cahua_pata', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
         { kind: 'father-of', personId: 'inca_mayta_capac', era: 'pre-imperial' },
       ],
       iconography: {
@@ -18131,8 +18762,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_lloque_yupanqui'],
-      parentRoles: { inca_lloque_yupanqui: 'paternal' },
+      parentIds: ['inca_lloque_yupanqui', 'inca_mama_cahua_pata'],
+      parentRoles: { inca_lloque_yupanqui: 'paternal', inca_mama_cahua_pata: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16; Garcilaso Bk. II Ch. 20' }], notes: 'Born at Cuzco; conventionally c. 1290 CE. Per Sarmiento, marked by precocious physical maturity (walked and spoke at three months, full-strength warrior-trait at one year).' },
@@ -18141,7 +18772,7 @@ const buildPeopleSeed = () => {
       ],
       domains: [{ id: 'sapa-inca-fourth' }, { id: 'precocious-warrior-trait', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] }, { id: 'alcabicas-conquest' }],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Tacucaray, mortal noblewoman; mother of Capac Yupanqui per Sarmiento', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
+        { kind: 'spouse', personId: 'inca_mama_tacucaray', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
         { kind: 'father-of', personId: 'inca_capac_yupanqui', era: 'pre-imperial' },
       ],
       iconography: {
@@ -18176,8 +18807,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_mayta_capac'],
-      parentRoles: { inca_mayta_capac: 'paternal' },
+      parentIds: ['inca_mayta_capac', 'inca_mama_tacucaray'],
+      parentRoles: { inca_mayta_capac: 'paternal', inca_mama_tacucaray: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }], notes: 'Born at Cuzco; conventionally c. 1320 CE.' },
@@ -18186,7 +18817,7 @@ const buildPeopleSeed = () => {
       ],
       domains: [{ id: 'sapa-inca-fifth' }, { id: 'first-road-construction' }],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Curi-Hilpay, mortal noblewoman of the Ayarmaca lineage; mother of Inca Roca', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
+        { kind: 'spouse', personId: 'inca_mama_curi_hilpay', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
         { kind: 'father-of', personId: 'inca_inca_roca', era: 'pre-imperial' },
       ],
       iconography: {
@@ -18221,8 +18852,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_capac_yupanqui'],
-      parentRoles: { inca_capac_yupanqui: 'paternal' },
+      parentIds: ['inca_capac_yupanqui', 'inca_mama_curi_hilpay'],
+      parentRoles: { inca_capac_yupanqui: 'paternal', inca_mama_curi_hilpay: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }], notes: 'Born at Cuzco; conventionally c. 1350 CE.' },
@@ -18235,7 +18866,7 @@ const buildPeopleSeed = () => {
         { id: 'panaca-of-Wikakirau' },
       ],
       relations: [
-        { kind: 'spouse', externalRef: { name: 'Mama Micay, daughter of the Lord of Pataguaylla / Huayllacan; mother of Yahuar Huacac. Politically significant marriage securing alliance with the Huayllacan polity', tradition: 'Inca' }, era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }] },
+        { kind: 'spouse', personId: 'inca_mama_micay', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }] },
         { kind: 'father-of', personId: 'inca_yahuar_huacac', era: 'pre-imperial' },
       ],
       iconography: {
@@ -18271,8 +18902,8 @@ const buildPeopleSeed = () => {
       },
       type: 'scion', tradition: 'Inca', primaryTradition: 'Inca', sex: 'male', vitalStatus: 'dead',
       origin: 'canon',
-      parentIds: ['inca_inca_roca'],
-      parentRoles: { inca_inca_roca: 'paternal' },
+      parentIds: ['inca_inca_roca', 'inca_mama_micay'],
+      parentRoles: { inca_inca_roca: 'paternal', inca_mama_micay: 'maternal' },
       temporal: { era: 'pre-imperial' },
       lifecycle: [
         { typeStatus: 'scion', era: 'pre-imperial', eraOrdering: 0, startEvent: 'birth-at-Cuzco', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19' }], notes: 'Born at Cuzco; conventionally c. 1380 CE.' },
@@ -18305,6 +18936,89 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
       ],
       notes: 'Seventh Sapa Inca; son of Inca Roca and Mama Micay. The Yawar Waqaq ("Blood-Weeper") regnal name derives from the kidnapping-and-divine-sign childhood episode — an event-as-name pattern that becomes the model for the later imperial-defining regnal name of Pachacuti ("World-Overturner"). His marriage to Mama Chicya/Cuca-Cocollo of Ayarmaca settled the kidnapping conflict and integrated the Ayarmaca polity into the dynastic network. Conventional dating c. 1380 CE. The variant chronicle account of his death by assassination (rather than natural causes) is taken by some modern historians (Rostworowski) as preserving an underlying succession-conflict narrative subsequently smoothed over by the imperial-state-cult chronicle tradition.',
+    },
+
+    // ── Genealogy march, Wave G12 (Inca, pre-imperial qoyas): materialize the
+    //    four dynastic queen-consorts that Sarmiento names as the mother of the
+    //    next Sapa Inca but the registry carried only as spouse externalRefs.
+    //    All mortal noblewomen; each enters as a maternal parent where the
+    //    sum/max(2,n) math already counted the unlisted mother as 0, so the
+    //    sons' scion tiers are unchanged. (Mama Chicya → Viracocha Inca and
+    //    Mama Anahuarque → the unregistered Túpac Inka are left for later.) ──
+    {
+      id: 'inca_mama_cahua_pata', schemaVersion: 2,
+      name: { primary: 'Mama Cahua-Pata', alt: ['Mama Cava', 'Coya Cahua-Pata'], transliterations: { quechua: 'Mama Cahua-Pata', etymology: 'Quechua mama "lady, mother"; a noblewoman of the Oma lineage.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }], notes: 'Noblewoman of the Oma lineage; coya (principal wife) of the third Sapa Inca Lloque Yupanqui and mother of Mayta Cápac.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Lloque-Yupanqui' }, { id: 'mother-of-Mayta-Capac' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_lloque_yupanqui', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
+        { kind: 'mother-of', personId: 'inca_mayta_capac', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 16' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 16' }], weight: 'primary' }],
+      notes: 'Coya of the third Sapa Inca Lloque Yupanqui and mother of Mayta Cápac, per Sarmiento; a noblewoman of the Oma lineage. Mortal-tier. Carried in the registry only as a spouse externalRef on Lloque Yupanqui until materialized here.',
+    },
+
+    {
+      id: 'inca_mama_tacucaray', schemaVersion: 2,
+      name: { primary: 'Mama Tacucaray', alt: ['Mama Tancaray-yacchi', 'Coya Tacucaray'], transliterations: { quechua: 'Mama Tacucaray', etymology: 'Quechua mama "lady, mother"; coya of Mayta Cápac.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }], notes: 'Coya of the fourth Sapa Inca Mayta Cápac and mother of Capac Yupanqui per Sarmiento.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Mayta-Capac' }, { id: 'mother-of-Capac-Yupanqui' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_mayta_capac', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
+        { kind: 'mother-of', personId: 'inca_capac_yupanqui', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 17' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 17' }], weight: 'primary' }],
+      notes: 'Coya of the fourth Sapa Inca Mayta Cápac and mother of Capac Yupanqui per Sarmiento. Mortal-tier. Carried in the registry only as a spouse externalRef on Mayta Cápac until materialized here.',
+    },
+
+    {
+      id: 'inca_mama_curi_hilpay', schemaVersion: 2,
+      name: { primary: 'Mama Curi-Hilpay', alt: ['Mama Curihilpay', 'Coya Curi-Hilpay'], transliterations: { quechua: 'Mama Curi-Hilpay', etymology: 'Quechua mama "lady, mother" + curi (quri "gold"); a noblewoman of the Ayarmaca lineage.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }], notes: 'Noblewoman of the Ayarmaca lineage; coya of the fifth Sapa Inca Capac Yupanqui and mother of Inca Roca.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Capac-Yupanqui' }, { id: 'mother-of-Inca-Roca' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_capac_yupanqui', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
+        { kind: 'mother-of', personId: 'inca_inca_roca', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 18' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 18' }], weight: 'primary' }],
+      notes: 'Coya of the fifth Sapa Inca Capac Yupanqui and mother of Inca Roca, per Sarmiento; a noblewoman of the Ayarmaca lineage. Mortal-tier. Carried in the registry only as a spouse externalRef on Capac Yupanqui until materialized here.',
+    },
+
+    {
+      id: 'inca_mama_micay', schemaVersion: 2,
+      name: { primary: 'Mama Micay', alt: ['Coya Micay', 'Mama Micay of Huayllacan'], transliterations: { quechua: 'Mama Micay', etymology: 'Quechua mama "lady, mother"; daughter of the lord of the Huayllacan polity.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Inca', primaryTradition: 'Inca', sex: 'female', vitalStatus: 'dead',
+      parentIds: [], parentRoles: {},
+      temporal: { era: 'pre-imperial' },
+      lifecycle: [
+        { typeStatus: 'mortal', era: 'pre-imperial', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }], notes: 'Daughter of the lord of Pataguaylla / Huayllacan; coya of the sixth Sapa Inca Inca Roca and mother of Yahuar Huacac. The marriage secured a politically significant alliance with the Huayllacan polity — though Yahuar Huacac was later kidnapped by the rival Ayarmaca.' },
+        { vitalStatus: 'dead', era: 'pre-imperial', eraOrdering: 1 },
+      ],
+      domains: [{ id: 'coya-of-Inca-Roca' }, { id: 'mother-of-Yahuar-Huacac' }],
+      relations: [
+        { kind: 'spouse', personId: 'inca_inca_roca', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19; Cieza' }] },
+        { kind: 'mother-of', personId: 'inca_yahuar_huacac', era: 'pre-imperial', sources: [{ kind: 'primary', reference: 'Sarmiento Ch. 19' }] },
+      ],
+      sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Sarmiento de Gamboa, Historia de los Incas, Ch. 19; Cieza de León, Crónica del Perú Pt. II' }], weight: 'primary' }],
+      notes: 'Coya of the sixth Sapa Inca Inca Roca and mother of Yahuar Huacac; daughter of the lord of Huayllacan, her marriage sealing an Inca-Huayllacan alliance. Mortal-tier. Carried in the registry only as a spouse externalRef on Inca Roca until materialized here.',
     },
 
     {
@@ -18914,6 +19628,7 @@ const buildPeopleSeed = () => {
         { kind: 'father-of', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Boundary Stela K; Soleb temple reliefs' }] },
         { kind: 'father-of', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; KV46 chair' }] },
         { kind: 'spouse', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef year 30 Sed Festival inscriptions' }], notes: 'Father-daughter Royal-Marriage at his First Sed Festival.' },
+        { kind: 'spouse', personId: 'egyptian_tiye', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amenhotep III commemorative marriage scarabs' }], notes: 'His principal Great Royal Wife and mother of Akhenaten.' },
       ],
       notes: 'Pharaoh of the 18th Dynasty (~1391-1353 BCE). Reign of monumental scale; the Colossi of Memnon and Luxor Temple. Birth Cycle at Luxor Temple parallels the Hatshepsut iconographic program. Father of Akhenaten.',
     },
@@ -18969,8 +19684,97 @@ const buildPeopleSeed = () => {
         { kind: 'father-of', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Saqqara Serapeum stelae' }], notes: 'Fourth son by Isetnofret; High Priest of Ptah at Memphis.' },
         { kind: 'father-of', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Karnak inscriptions' }], notes: 'Thirteenth son by Isetnofret; succeeded as pharaoh after the deaths of all twelve elder Ramesside princes.' },
         { kind: 'father-of', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs; QV55 tomb' }], notes: 'Firstborn son by Nefertari; predeceased him by some 41 years.' },
+        { kind: 'spouse', personId: 'egyptian_nefertari', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple; QV66' }], notes: 'His first and most-beloved Great Royal Wife.' },
+        { kind: 'spouse', personId: 'egyptian_isetnofret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }], notes: 'Second Great Royal Wife, principal queen after Nefertari\'s death.' },
       ],
       notes: 'Pharaoh of the 19th Dynasty (~1279-1213 BCE). The longest-reigning and most-attested Egyptian pharaoh. Battle of Kadesh, Egyptian-Hittite treaty, monumental construction at Abu Simbel and the Ramesseum. Subject of Shelley\'s Ozymandias. Less developed Birth Cycle than the 18th Dynasty pharaohs but full claim of divine paternity through royal titulary.',
+    },
+
+    // ── Genealogy march, Wave G9 (Egyptian, 19th-dynasty Ramesside queens):
+    //    materialize the Great Royal Wives Nefertari and Isetnofret (wives of
+    //    Ramesses II) and Isetnofret II (wife of Merneptah), carried only as
+    //    externalRefs on their children. All mortal-tier; as with the Amarna
+    //    queens, adding them as maternal parents leaves the children's
+    //    quartigod/scion tiers unchanged (the divine descent runs through the
+    //    paternal Amun line). ──
+    {
+      id: 'egyptian_nefertari', schemaVersion: 2,
+      name: { primary: 'Nefertari', alt: ['Nefertari Meritmut', 'Great Royal Wife Nefertari'], transliterations: { 'mdc-transliteration': 'nfrt-iri', etymology: 'Egyptian nfrt-iri "the most beautiful"; her epithet Meritmut, "beloved of Mut."' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1300, mythicEnd: -1255, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Ramesses-II-as-first-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Abu Simbel small temple; QV66 tomb of Nefertari' }], notes: 'First and most-beloved Great Royal Wife of Ramesses II; mother of his firstborn Amunherkhepeshef. Honored with the small temple at Abu Simbel — built for her and the goddess Hathor — and the painted tomb QV66 in the Valley of the Queens, among the finest in Egypt.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'first-Great-Royal-Wife-of-Ramesses-II' },
+        { id: 'honoured-at-Abu-Simbel-and-QV66' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple; QV66' }] },
+        { kind: 'mother-of', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; QV55' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Abu Simbel small temple of Nefertari/Hathor; QV66 (tomb of Nefertari); Ramesseum and Karnak reliefs' }], weight: 'primary' },
+      ],
+      notes: 'First and most-beloved Great Royal Wife of Ramesses II; mother of his firstborn son Amunherkhepeshef. The small temple at Abu Simbel was dedicated to her alongside Hathor, and her tomb QV66 in the Valley of the Queens is among the most beautifully painted in Egypt. Mortal-tier by descent. Carried in the registry only as an externalRef on Amunherkhepeshef until materialized here.',
+    },
+
+    {
+      id: 'egyptian_isetnofret', schemaVersion: 2,
+      name: { primary: 'Isetnofret', alt: ['Isisnofret', 'Great Royal Wife Isetnofret'], transliterations: { 'mdc-transliteration': 'ist-nfrt', etymology: 'Egyptian ist-nfrt "Isis is beautiful / good."' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1298, mythicEnd: -1245, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Ramesses-II-as-second-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel; Gebel el-Silsila stela' }], notes: 'Second Great Royal Wife of Ramesses II, who rose to the chief position after Nefertari\'s death. Mother of the prince Khaemweset (High Priest of Ptah) and of Merneptah, who succeeded as pharaoh.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'second-Great-Royal-Wife-of-Ramesses-II' },
+        { id: 'mother-of-Khaemweset-and-the-pharaoh-Merneptah' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan chapel' }] },
+        { kind: 'mother-of', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }] },
+        { kind: 'mother-of', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Karnak inscriptions' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel of Isetnofret; Gebel el-Silsila stela; Saqqara Serapeum (with her son Khaemweset)' }], weight: 'primary' },
+      ],
+      notes: 'Second Great Royal Wife of Ramesses II, who became the principal queen after Nefertari\'s death; mother of the famous antiquarian-prince Khaemweset (High Priest of Ptah) and of Merneptah, the thirteenth son who eventually succeeded to the throne. Mortal-tier by descent. Carried in the registry only as an externalRef on Khaemweset and Merneptah until materialized here.',
+    },
+
+    {
+      id: 'egyptian_isetnofret_ii', schemaVersion: 2,
+      name: { primary: 'Isetnofret II', alt: ['Isisnofret II', 'Great Royal Wife of Merneptah'], transliterations: { 'mdc-transliteration': 'ist-nfrt', etymology: 'Egyptian ist-nfrt "Isis is beautiful," named for her grandmother Isetnofret, first wife of Merneptah.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1260, mythicEnd: -1205, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Merneptah-as-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }], notes: 'Great Royal Wife of Merneptah; in the dominant interpretation also his sister (under the Ramesside brother-sister royal-marriage convention). Mother of Seti II and, probably, of the female pharaoh Tausret.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'Great-Royal-Wife-of-Merneptah' },
+        { id: 'mother-of-Seti-II' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
+        { kind: 'mother-of', personId: 'egyptian_seti_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
+        { kind: 'mother-of', personId: 'egyptian_tausret', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Karnak inscriptions; Western Theban monuments of Merneptah\'s reign' }], weight: 'primary' },
+      ],
+      notes: 'Great Royal Wife of Merneptah (and, in the dominant reading, his sister, per the Ramesside brother-sister royal-marriage convention); mother of Seti II and probably of the female pharaoh Tausret. Mortal-tier by descent. Carried in the registry only as an externalRef on Seti II and Tausret until materialized here.',
     },
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -21611,8 +22415,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Akhenaten', alt: ['Amenhotep IV (pre-name-change)', 'Neferkheperure-waenre'], transliterations: { 'egyptian-hieroglyphic': '𓅜𓈖𓏏𓈖𓇋𓏏𓈖', 'mdc-transliteration': 'ꜣḫ-n-ı͗tn', etymology: 'Egyptian: ꜣḫ ("effective, beneficial, glorious-spirit") + n ("of, for") + ı͗tn ("the Aten, the solar-disk") — "Effective for the Aten" or "The Glorious-Spirit of the Aten." The name was adopted in year 5 of his reign as part of the religious revolution shifting the state cult from Amun-Ra to the solar-disk Aten; his birth-name Amenhotep ("Amun is satisfied") was abandoned at the same point.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_amenhotep_iii'],
-      parentRoles: { egyptian_amenhotep_iii: 'paternal' },
+      parentIds: ['egyptian_amenhotep_iii', 'egyptian_tiye'],
+      parentRoles: { egyptian_amenhotep_iii: 'paternal', egyptian_tiye: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1351,
@@ -21628,8 +22432,8 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Boundary Stela K; Soleb temple reliefs' }] },
-        { kind: 'mother', externalRef: { name: 'Queen Tiye (Great Royal Wife of Amenhotep III)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; Sedeinga temple inscription' }] },
-        { kind: 'spouse', externalRef: { name: 'Nefertiti (Neferneferuaten Nefertiti, Great Royal Wife)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Royal Tomb; the Berlin Bust' }] },
+        { kind: 'mother', personId: 'egyptian_tiye', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; Sedeinga temple inscription' }] },
+        { kind: 'spouse', personId: 'egyptian_nefertiti', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Royal Tomb; the Berlin Bust' }] },
         { kind: 'sibling', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Soleb temple reliefs; Tomb of Kheruef' }], notes: 'Half-sister-married-by-father — Sitamun was Amenhotep III\'s daughter by Tiye who was also taken as Great Royal Wife by her own father late in his reign.' },
         { kind: 'father-of', externalRef: { name: 'Tutankhamun (per KV55 DNA-paternity, Hawass et al. 2010 JAMA)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Hawass et al. 2010, JAMA 303.7; Tutankhamun tomb inscriptions' }] },
       ],
@@ -21646,8 +22450,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Sitamun', alt: ['Sitamen'], transliterations: { 'egyptian-hieroglyphic': '𓅓𓆭𓏏', 'mdc-transliteration': 'sꜣt-ı͗mn', etymology: 'Egyptian: sꜣt ("daughter") + ı͗mn ("Amun, the hidden god") — "Daughter of Amun." The name encodes the divine-paternity claim through the Amun-line, paralleling her own canonical theogenic-birth-portrait at Luxor Temple inherited from her father.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['egyptian_amenhotep_iii'],
-      parentRoles: { egyptian_amenhotep_iii: 'paternal' },
+      parentIds: ['egyptian_amenhotep_iii', 'egyptian_tiye'],
+      parentRoles: { egyptian_amenhotep_iii: 'paternal', egyptian_tiye: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1370,
@@ -21661,7 +22465,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; KV46 chair' }] },
-        { kind: 'mother', externalRef: { name: 'Queen Tiye', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef' }] },
+        { kind: 'mother', personId: 'egyptian_tiye', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef' }] },
         { kind: 'spouse', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef year 30 Sed Festival inscriptions' }], notes: 'Father-daughter Royal-Marriage at her father\'s First Sed Festival.' },
         { kind: 'sibling', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Soleb temple reliefs' }] },
       ],
@@ -21672,14 +22476,75 @@ const buildPeopleSeed = () => {
       notes: 'Quartigod eldest daughter of Amenhotep III by Tiye. Elevated to Great Royal Wife of her own father in the period of his First Sed Festival (year 30, c. 1361 BCE) — the canonical Egyptian-pharaonic father-daughter Royal-Marriage that paralleled the divine-renewal Sed Festival. The Sitamun chair found in the tomb of her maternal grandparents Yuya and Tjuyu (KV46) bears her Great Royal Wife titulary.',
     },
 
+    // ── Genealogy march, Wave G8 (Egyptian, 18th-dynasty Amarna queens):
+    //    materialize the Great Royal Wives Tiye (mother of Akhenaten & Sitamun)
+    //    and Nefertiti (wife of Akhenaten), carried only as externalRefs. Both
+    //    mortal-tier by descent; adding them as maternal parents leaves the
+    //    children's quartigod tiers unchanged (the sum/max(2,n) math already
+    //    treated the unlisted mother as 0). The pharaohs' divine descent runs
+    //    through the paternal Amun-Ra line, untouched here. ──
+    {
+      id: 'egyptian_tiye', schemaVersion: 2,
+      name: { primary: 'Tiye', alt: ['Tiy', 'Queen Tiye', 'Great Royal Wife Tiye'], transliterations: { 'mdc-transliteration': 'tiy', etymology: 'Egyptian tiy; Great Royal Wife of Amenhotep III, daughter of the non-royal courtiers Yuya and Tjuyu.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1398, mythicEnd: -1338, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Amenhotep-III-as-Great-Royal-Wife', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Amenhotep III commemorative marriage scarabs; Tomb of Kheruef (TT192)' }], notes: 'Daughter of the non-royal Yuya and Tjuyu; married Amenhotep III early in his reign and was elevated to unprecedented public prominence as Great Royal Wife, named beside the king on official monuments and scarabs.' },
+        { typeStatus: 'mortal', startEvent: 'motherhood-of-Akhenaten-and-diplomatic-role', era: 'new-kingdom', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Amarna Letters; Sedeinga temple; Tomb of Kheruef' }], notes: 'Mother of Akhenaten and Sitamun; her Nubian temple at Sedeinga worshipped her as a form of Hathor, and the Amarna Letters show foreign kings corresponding with her directly into her son\'s reign.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'Great-Royal-Wife-of-Amenhotep-III' },
+        { id: 'queen-mother-of-the-Amarna-age' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amenhotep III marriage scarabs' }] },
+        { kind: 'mother-of', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef; Sedeinga temple' }] },
+        { kind: 'mother-of', personId: 'egyptian_sitamun', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Tomb of Kheruef' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Amenhotep III commemorative marriage scarabs; Tomb of Kheruef (TT192); Sedeinga temple; Amarna Letters; the "Elder Lady" mummy (KV35EL) identified as Tiye by Hawass et al. 2010 (JAMA 303.7)' }], weight: 'primary' },
+      ],
+      notes: 'Great Royal Wife of Amenhotep III and the most prominent Egyptian queen of the 18th Dynasty; daughter of the non-royal Yuya and Tjuyu. Mother of Akhenaten and of Sitamun (whom Amenhotep III later took as Great Royal Wife). Her unprecedented public prominence — named beside the king on monuments and scarabs, a Nubian temple at Sedeinga where she was worshipped as a form of Hathor, and direct diplomatic correspondence in the Amarna Letters — set the stage for the elevated royal women of the Amarna period. Mortal-tier by descent (non-royal parents); the Sedeinga deification is a cultic honor recorded in the notes, not in the divinity fraction. Carried in the registry only as an externalRef on Akhenaten and Sitamun until materialized here.',
+    },
+
+    {
+      id: 'egyptian_nefertiti', schemaVersion: 2,
+      name: { primary: 'Nefertiti', alt: ['Neferneferuaten Nefertiti', 'Great Royal Wife Nefertiti'], transliterations: { 'mdc-transliteration': 'nfrt-iiti', etymology: 'Egyptian nfrt-ii.ti "the beautiful one has come"; her fuller name Neferneferuaten ("perfect are the perfections of the Aten") marks her Aten devotion.' } },
+      type: 'mortal', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
+      sex: 'female', vitalStatus: 'dead',
+      parentIds: [],
+      parentRoles: {},
+      temporal: { era: 'new-kingdom', mythicStart: -1370, mythicEnd: -1330, mythicPrecision: 'specific' },
+      lifecycle: [
+        { typeStatus: 'mortal', startEvent: 'marriage-to-Akhenaten-and-the-Aten-revolution', era: 'new-kingdom', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Amarna talatat blocks; Boundary Stelae; the Berlin Bust (AM 21300)' }], notes: 'Great Royal Wife of Akhenaten, depicted with unprecedented prominence in Amarna art — co-officiating the Aten cult and even shown in the king\'s enemy-smiting posture. Mother of six daughters, including Ankhesenpaaten (later Ankhesenamun, wife of Tutankhamun).' },
+        { typeStatus: 'mortal', startEvent: 'possible-coregency-as-Neferneferuaten', era: 'new-kingdom', eraOrdering: 1, sources: [{ kind: 'secondary', reference: 'the Neferneferuaten coregency hypothesis (Reeves and others)' }], notes: 'In one leading reconstruction she ruled as the coregent/successor pharaoh Neferneferuaten in the final Amarna years; the identification remains debated.' },
+        { vitalStatus: 'dead', era: 'new-kingdom', eraOrdering: 2 },
+      ],
+      domains: [
+        { id: 'Great-Royal-Wife-of-Akhenaten' },
+        { id: 'co-celebrant-of-the-Aten-cult' },
+      ],
+      relations: [
+        { kind: 'spouse', personId: 'egyptian_akhenaten', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amarna Royal Tomb; the Berlin Bust' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Amarna talatat blocks; Amarna Boundary Stelae; the Berlin Bust (Agyptisches Museum AM 21300); the Amarna Royal Tomb' }], weight: 'primary' },
+      ],
+      notes: 'Great Royal Wife of Akhenaten and one of the most-recognized figures of ancient Egypt (the painted Berlin Bust). She held unprecedented prominence in Amarna art and the Aten cult — co-officiating and even shown in the king\'s smiting posture — and may have ruled as the coregent/successor Neferneferuaten in the final Amarna years. Mother of six daughters including Ankhesenamun (wife of Tutankhamun). Mortal-tier by descent. Carried in the registry only as an externalRef on Akhenaten until materialized here.',
+    },
+
     // ─── Khaemweset (Ramesses II × Isetnofret) ───────────────────────────
     {
       id: 'egyptian_khaemweset', schemaVersion: 2,
       name: { primary: 'Khaemweset', alt: ['Khaemwaset'], transliterations: { 'egyptian-hieroglyphic': '𓆣𓅓𓌀𓏏𓊨', 'mdc-transliteration': 'ḫꜥ-m-wꜣs-t', etymology: 'Egyptian: ḫꜥ ("appearing, manifesting") + m ("in") + wꜣst ("Thebes, the city of the Was-scepter") — "Appearing in Thebes" or "The one who appears in Thebes." The name links his royal divinity-manifestation to the canonical Theban-Amun cult-center.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_ii'],
-      parentRoles: { egyptian_ramesses_ii: 'paternal' },
+      parentIds: ['egyptian_ramesses_ii', 'egyptian_isetnofret'],
+      parentRoles: { egyptian_ramesses_ii: 'paternal', egyptian_isetnofret: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1281,
@@ -21695,7 +22560,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Karnak inscriptions' }] },
-        { kind: 'mother', externalRef: { name: 'Isetnofret (Ramesses II\'s second Great Royal Wife after Nefertari)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Western-Aswan rock-cut chapel' }] },
         { kind: 'sibling', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Karnak inscriptions' }] },
         { kind: 'half-sibling', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs; QV55 tomb inscriptions' }], notes: 'Half-sibling through their shared father Ramesses II; Amunherkhepeshef is Ramesses II\'s firstborn son by Nefertari.' },
       ],
@@ -21712,8 +22577,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Merneptah', alt: ['Merenptah', 'Baenre-meriamun'], transliterations: { 'egyptian-hieroglyphic': '𓌻𓂋𓂋𓊪𓏏𓎛', 'mdc-transliteration': 'mr-n-ptḥ', etymology: 'Egyptian: mry ("beloved") + n ("of") + ptḥ ("Ptah, the Memphis creator-god") — "Beloved of Ptah." The name encodes the Memphis-Ptah cult connection that Khaemweset (his elder brother) had built; Merneptah continued the Ptah-cult patronage as Khaemweset\'s successor.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_ii'],
-      parentRoles: { egyptian_ramesses_ii: 'paternal' },
+      parentIds: ['egyptian_ramesses_ii', 'egyptian_isetnofret'],
+      parentRoles: { egyptian_ramesses_ii: 'paternal', egyptian_isetnofret: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1287,
@@ -21729,9 +22594,10 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs' }] },
-        { kind: 'mother', externalRef: { name: 'Isetnofret', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela' }] },
         { kind: 'sibling', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Aswan Stela; Karnak inscriptions' }] },
         { kind: 'half-sibling', personId: 'egyptian_amunherkhepeshef', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs' }] },
+        { kind: 'spouse', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }], notes: 'His Great Royal Wife (in the dominant reading also his sister); mother of Seti II.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Merneptah Stele (Cairo Egyptian Museum CG 34025, the "Israel Stele"); Karnak Cour de la Cachette inscriptions; Theban Tomb KV8 (his royal tomb); Abu Simbel reliefs; Aswan Stela; Anastasi Papyri' }], weight: 'primary' },
@@ -21746,8 +22612,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Amunherkhepeshef', alt: ['Amunherkhepeshef A', 'Amun-her-khepeshef'], transliterations: { 'egyptian-hieroglyphic': '𓇋𓏠𓈖𓇋𓂋𓆣𓊪𓋴𓆑', 'mdc-transliteration': 'ı͗mn-ḥr-ḫpš=f', etymology: 'Egyptian: ı͗mn ("Amun") + ḥr ("upon, over") + ḫpš ("the strong-arm, the khepesh-sword") + =f ("his") — "Amun is upon his strong-arm" or "Amun-protects-his-arm." The name embeds both the Theban-Amun divine-paternity claim and the warrior-strength-virtue.' } },
       type: 'quartigod', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_ramesses_ii'],
-      parentRoles: { egyptian_ramesses_ii: 'paternal' },
+      parentIds: ['egyptian_ramesses_ii', 'egyptian_nefertari'],
+      parentRoles: { egyptian_ramesses_ii: 'paternal', egyptian_nefertari: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1290,
@@ -21762,7 +22628,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_ramesses_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel reliefs; Karnak inscriptions' }] },
-        { kind: 'mother', externalRef: { name: 'Nefertari (Ramesses II\'s first and most-beloved Great Royal Wife)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple of Nefertari; QV66 tomb of Nefertari' }] },
+        { kind: 'mother', personId: 'egyptian_nefertari', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel small temple of Nefertari; QV66 tomb of Nefertari' }] },
         { kind: 'half-sibling', personId: 'egyptian_khaemweset', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs' }] },
         { kind: 'half-sibling', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Abu Simbel temple reliefs' }] },
       ],
@@ -21801,8 +22667,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Seti II', alt: ['Setos II', 'Sethos II', 'Userkheperure-Setepenre'], transliterations: { 'egyptian-hieroglyphic': '𓇩𓏏𓆭', 'mdc-transliteration': 'wsr-ḫprw-rꜤ stp-n-rꜤ', etymology: 'Throne name Userkheperure-Setepenre ("Powerful are the manifestations of Re, Chosen of Re"); birth name Sety-merenptah ("Man of Set, beloved of Ptah") — the Set-name is a 19th-Dynasty dynastic marker, the Ptah-name a Memphite-cult marker.' } },
       type: 'scion', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: ['egyptian_merneptah'],
-      parentRoles: { egyptian_merneptah: 'paternal' },
+      parentIds: ['egyptian_merneptah', 'egyptian_isetnofret_ii'],
+      parentRoles: { egyptian_merneptah: 'paternal', egyptian_isetnofret_ii: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1240,
@@ -21818,7 +22684,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions; KV15' }] },
-        { kind: 'mother', externalRef: { name: 'Isetnofret II (Great Royal Wife of Merneptah; sister of Seti II per the dominant interpretation, possibly also his consort under the Ramesside brother-sister marriage convention)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
         { kind: 'spouse', personId: 'egyptian_tausret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'KV14 (joint tomb of Seti II and Tausret); Manetho Epitome' }] },
         { kind: 'enemy', externalRef: { name: 'Amenmesse (rival king who seized Upper Egypt and Kush during Seti II\'s reign; possibly another son of Merneptah by Takhat or, less likely, a son of Ramesses II)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak Hall of Records; cartouche-erasure pattern across Upper Egyptian monuments' }] },
       ],
@@ -21835,8 +22701,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Tausret', alt: ['Twosret', 'Tawosret', 'Sitre Meryamun'], transliterations: { 'egyptian-hieroglyphic': '𓍿𓄿𓅱𓊃𓂋𓏏', 'mdc-transliteration': 'tꜢ-wsr.t', etymology: 'Egyptian: tꜢ ("the [feminine]") + wsr.t ("powerful one [feminine]") — "the powerful one" or "she of power." Throne name Sitre-Meryamun ("Daughter of Re, beloved of Amun") asserts both solar-legitimacy and Theban-Amun cult patronage.' } },
       type: 'scion', origin: 'canon', tradition: 'Egyptian', primaryTradition: 'Egyptian',
       sex: 'female', vitalStatus: 'dead',
-      parentIds: ['egyptian_merneptah'],
-      parentRoles: { egyptian_merneptah: 'paternal' },
+      parentIds: ['egyptian_merneptah', 'egyptian_isetnofret_ii'],
+      parentRoles: { egyptian_merneptah: 'paternal', egyptian_isetnofret_ii: 'maternal' },
       temporal: {
         era: 'new-kingdom',
         mythicStart: -1230,
@@ -21854,7 +22720,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Pearce Creasman 2013 (architectural-style argument)' }], notes: 'Probable but not definitively attested in surviving inscriptions.' },
-        { kind: 'mother', externalRef: { name: 'Isetnofret II (probable; Great Royal Wife of Merneptah)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
+        { kind: 'mother', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
         { kind: 'spouse', personId: 'egyptian_seti_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'KV14' }] },
         { kind: 'enemy', externalRef: { name: 'Setnakhte (founder of the 20th Dynasty; her overthrower per the Elephantine Stela)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Setnakhte\'s Elephantine Stela' }] },
       ],
@@ -21887,7 +22753,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'spouse', personId: 'egyptian_setnakhte', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela' }] },
-        { kind: 'mother-of', externalRef: { name: 'Ramesses III (registered as egyptian_ramesses_iii — see entry)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
+        { kind: 'mother-of', personId: 'egyptian_ramesses_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Sandstone stela JE 20395 from Abydos (Egyptian Museum); Abydos architectural blocks; Brussels Musées Royaux d\'Art et d\'Histoire relief fragment' }], weight: 'primary' },
@@ -21918,7 +22784,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'spouse', personId: 'egyptian_tiy_merenese', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela' }] },
-        { kind: 'father-of', externalRef: { name: 'Ramesses III (registered as egyptian_ramesses_iii — see entry)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
+        { kind: 'father-of', personId: 'egyptian_ramesses_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'JE 20395 stela; Abydos blocks' }] },
         { kind: 'enemy', externalRef: { name: 'Tausret (last 19th-Dynasty pharaoh, the queen he overthrew per the Elephantine Stela)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Elephantine Stela; KV14 usurpation' }] },
       ],
       sources: [
@@ -21987,8 +22853,8 @@ const buildPeopleSeed = () => {
       name: { primary: 'Suppiluliuma II', alt: ['Šuppiluliuma II', 'Šuppiluliama'], transliterations: { 'hittite-hieroglyphic-luwian': 'BONUS-li-li-u-ma', 'akkadian': 'Šu-up-pi-lu-li-u-ma', etymology: 'Hittite throne-name evoking Suppiluliuma I (the New Kingdom founder, r. 1344-1322 BCE) — the deliberate name-recursion is a Hittite legitimation strategy parallel to the Ramesside use of "Ramesses" in the 20th Dynasty. The element šuppi- is "pure, sacred."' } },
       type: 'scion', origin: 'canon', tradition: 'Hittite', primaryTradition: 'Hittite',
       sex: 'male', vitalStatus: 'dead',
-      parentIds: [],
-      parentRoles: {},
+      parentIds: ['hittite_tudhaliya_iv'],
+      parentRoles: { hittite_tudhaliya_iv: 'paternal' },
       temporal: {
         era: 'late-bronze-age',
         mythicStart: -1235,
@@ -22007,8 +22873,8 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'fate-unknown', era: 'late-bronze-age', eraOrdering: 7, startEvent: 'final-records-and-disappearance', sources: [{ kind: 'primary', reference: 'Cessation of Hittite imperial records c. 1178 BCE' }], notes: 'Final fate unknown. Some traditions claim he was killed in the sack of Hattusa in 1190 BCE; others that he simply "vanished." The current consensus is that he or his potential successors moved court elsewhere but never reestablished Hattusa, and the Hittite Empire as such disappeared by approximately 1178 BCE. Alive at c. 1172 BCE is plausible but not certain — he may already have been dead or in exile by that point.' },
       ],
       relations: [
-        { kind: 'father', externalRef: { name: 'Tudhaliya IV (Hittite Great King, r. c. 1237-1209 BCE; registered as hittite_tudhaliya_iv — see entry)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite royal genealogies' }] },
-        { kind: 'sibling', externalRef: { name: 'Arnuwanda III (elder brother, briefly Hittite Great King between Tudhaliya IV and Suppiluliuma II)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite oath-tablets' }] },
+        { kind: 'father', personId: 'hittite_tudhaliya_iv', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite royal genealogies' }] },
+        { kind: 'sibling', personId: 'hittite_arnuwanda_iii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite oath-tablets' }] },
         { kind: 'enemy', externalRef: { name: 'Tukulti-Ninurta I of Assyria (Middle Assyrian, contemporary)', tradition: 'Mesopotamian' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'KBo 28.61-64 (letter from Tukulti-Ninurta to Suppiluliuma II)' }] },
         { kind: 'ally', externalRef: { name: 'Talmi-Teššub (vassal king of Carchemish; Hittite royal house member)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite-Carchemish treaty fragments' }] },
         { kind: 'overlord-of', externalRef: { name: 'Ammurapi of Ugarit (last king of Ugarit, c. 1215-1180 BCE; vassal under Suppiluliuma II)', tradition: 'Levantine' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'RS 34.129 ("Great King" letter)' }] },
@@ -22045,13 +22911,41 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'father-of', personId: 'hittite_suppiluliuma_ii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite royal genealogies' }] },
-        { kind: 'father-of', externalRef: { name: 'Arnuwanda III (briefly Hittite Great King between Tudhaliya IV and Suppiluliuma II)', tradition: 'Hittite' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite king lists' }] },
+        { kind: 'father-of', personId: 'hittite_arnuwanda_iii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite king lists' }] },
         { kind: 'enemy', externalRef: { name: 'Tukulti-Ninurta I of Assyria (defeated him at Nihriya c. 1245 BCE)', tradition: 'Mesopotamian' }, era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Tukulti-Ninurta epic' }] },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Yazılıkaya rock sanctuary; Hattusa archives; CTH 88 succession-treaty; Tukulti-Ninurta epic' }], weight: 'primary' },
       ],
       notes: 'Hittite Great King r. c. 1237-1209 BCE; father of Suppiluliuma II. Scion-tier under the Hittite divine-kingship convention. Defeated by Tukulti-Ninurta I of Assyria at the Battle of Nihriya c. 1245 BCE (a major late-13th-century reversal). Memorialized at Yazılıkaya Chamber B. Already dead by c. 1172 BCE — added for genealogical anchoring of Suppiluliuma II.',
+    },
+
+    // ── Genealogy march, Wave G11 (Hittite): materialize Arnuwanda III, the
+    //    elder son of Tudhaliya IV who reigned briefly between his father and
+    //    his brother Suppiluliuma II — carried as an externalRef on both. ──
+    {
+      id: 'hittite_arnuwanda_iii', schemaVersion: 2,
+      name: { primary: 'Arnuwanda III', alt: ['Arnuwanda', 'Hittite Great King Arnuwanda III'], transliterations: { 'hittite-cuneiform': 'mAr-nu-wa-an-da', etymology: 'Hittite Arnuwanda, a recurring Hittite royal name; third Great King to bear it.' } },
+      type: 'scion', origin: 'canon', tradition: 'Hittite', primaryTradition: 'Hittite', sex: 'male', vitalStatus: 'dead',
+      parentIds: ['hittite_tudhaliya_iv'],
+      parentRoles: { hittite_tudhaliya_iv: 'paternal' },
+      temporal: { era: 'late-bronze-age', mythicStart: -1240, mythicEnd: -1207, mythicPrecision: 'generation-bracket' },
+      lifecycle: [
+        { typeStatus: 'scion', startEvent: 'brief-reign-as-Hittite-Great-King', era: 'late-bronze-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Hittite king lists; CTH 125 (the loyalty-edict invoking his subjects)' }], notes: 'Elder son of Tudhaliya IV; succeeded his father as Hittite Great King but reigned only briefly and died without a son, so the throne passed to his younger brother Suppiluliuma II. Scion-tier under the Hittite divine-kingship convention.' },
+        { vitalStatus: 'dead', era: 'late-bronze-age', eraOrdering: 1 },
+      ],
+      domains: [
+        { id: 'Hittite-Great-King' },
+        { id: 'short-reigning-elder-son-of-Tudhaliya-IV' },
+      ],
+      relations: [
+        { kind: 'father', personId: 'hittite_tudhaliya_iv', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite king lists' }] },
+        { kind: 'sibling', personId: 'hittite_suppiluliuma_ii', era: 'late-bronze-age', sources: [{ kind: 'primary', reference: 'Hittite oath-tablets' }] },
+      ],
+      sources: [
+        { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hittite king lists; CTH 125; Hattusa archives' }], weight: 'primary' },
+      ],
+      notes: 'Hittite Great King, elder son of Tudhaliya IV; he reigned briefly between his father and his younger brother Suppiluliuma II and died without issue. Scion-tier under the Hittite divine-kingship convention. Carried in the registry only as an externalRef on Tudhaliya IV and Suppiluliuma II until materialized here.',
     },
 
     // ─── Ammurapi of Ugarit (last king, r. c. 1215-1180 BCE) ───────────────
@@ -172199,6 +173093,20 @@ const CORRECTIONS = {
 //  reciprocity invariant holds by construction.
 // ═════════════════════════════════════════════════════════════════════════════
 const ENRICHMENTS = {
+  // Genealogy march, Wave G14 (Norse): reciprocal family edges for the
+  // generated figures Frigg and Freyja (their source-side links are promoted
+  // from externalRef to personId on the hand-authored Odin/Njörd/Freyr; these
+  // entries supply the reciprocal and auto-mirror the symmetric kinds).
+  'norse_frigg': {
+    relations: [
+      { kind: 'spouse', personId: 'norse_odin', sources: [{ kind: 'primary', reference: 'Vafþrúðnismál; Lokasenna 26-27; Gylfaginning' }], notes: 'Queen of the Æsir, wife of Odin and mother of Baldr.' },
+    ],
+  },
+  'norse_freyja': {
+    relations: [
+      { kind: 'sibling', personId: 'norse_freyr', sources: [{ kind: 'primary', reference: 'Lokasenna 32; Gylfaginning 24' }], notes: 'Her twin brother, the Vanir god Freyr; both children of Njörðr.' },
+    ],
+  },
   'andamanese_biliku': {
     relations: [
       { kind: 'spouse', personId: 'andamanese_tarai', sources: [{ kind: 'secondary', reference: 'A. R. Radcliffe-Brown, The Andaman Islanders (1922)' }], notes: 'The NE and SW monsoon pair; by band the two are spouses (the birds their children), siblings, or rivals.' },
