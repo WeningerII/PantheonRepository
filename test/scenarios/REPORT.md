@@ -1,7 +1,7 @@
 # Capability scenario report
 
 Evaluation: binary PASS/FAIL via assertions over the real app booted in jsdom.
-Quality bar: every scenario PASS. **Result: 32/32 passed.**
+Quality bar: every scenario PASS. **Result: 34/34 passed.**
 
 | ID | Capability | Criterion | Result | Evidence |
 |----|-----------|-----------|--------|----------|
@@ -37,3 +37,5 @@ Quality bar: every scenario PASS. **Result: 32/32 passed.**
 | S30 | Browse — tradition filter | selecting a tradition in the rail narrows the table | ✅ PASS | Norse filter: 1904 → 33 → 1904 |
 | S31 | Command palette — navigate | typing a name and confirming opens that figure | ✅ PASS | palette opened "Heracles" |
 | S32 | Graph — year scope | toggling year-scope engages without error | ✅ PASS | year-scope engaged and reverted, no errors |
+| S33 | Detail → Graph cross-link | the "show in graph" control opens the graph focused on the figure | ✅ PASS | show-in-graph → focused "Heracles" |
+| S34 | Detail — figure nav | Prev/Next step through the filtered list and return | ✅ PASS | Prev/Next: "'Antara ibn Shaddad" ↔ "Abaasy" |
