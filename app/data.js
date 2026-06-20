@@ -32700,6 +32700,20 @@ const MATERIAL_CULTURE_BY_FIGURE = {
   "greek_hesiod_persephone": [
     {"id":"persephone-pomegranate","name":"Pomegranate seed","kind":"symbol","term":{"value":"ῥοιή","rom":"rhoiē"},"notes":"The pomegranate seed Hades secretly gives Persephone to eat, binding her to the underworld for a portion of each year; her defining attribute in cult and art.","sources":[{"kind":"primary","reference":"Homeric Hymn to Demeter (Hymn 2) 371-374, and Persephone's own account at 411-413 (ῥοιῆς κόκκον)"},{"kind":"secondary","reference":"N. J. Richardson, The Homeric Hymn to Demeter (Oxford, 1974), commentary on lines 371-374"}]}
   ],
+  // ══ Material-culture sweep batch 6 (worklist indices 400-479, alphabetical) ══
+  "greek_ion_athens": [
+    {"id":"ion-serpentnecklace","name":"Necklace of Golden Serpents","kind":"garment","notes":"Ion's infant recognition-token: a pair of golden serpents worn as a necklace, the Erechthid amulet given by Athena in memory of Erichthonius, by which Creusa proves him her son.","sources":[{"kind":"primary","reference":"Euripides, Ion 1417-1436 (recognition scene; the gold serpents as Athena's gift worn by Athenian newborns, ~ll. 1427-1429)"},{"kind":"secondary","reference":"N. Weiss, \"Recognition and the Aesthetics of Vision in Euripides' Ion\" / cf. analyses of the gnorismata in the basket (the woven aegis-Gorgon, gold serpents, olive wreath)"}]}
+  ],
+  "greek_leda": [
+    {"id":"leda-egg","name":"Egg of Leda","kind":"ritual-object","notes":"The legendary egg Leda brought forth (whence Helen and the Dioscuri); a Spartan cult relic shown in Pausanias' day, hung by ribbons from the roof of a temple near the sanctuary of Hilaeira and Phoebe.","sources":[{"kind":"primary","reference":"Pausanias, Description of Greece 3.16.1 (the egg tied with ribbons hung from the roof, said to be the famous egg Leda brought forth)"}]}
+  ],
+  "greek_otrera": [
+    {"id":"otrera-ephesion","name":"Temple of Artemis at Ephesus","kind":"monument","notes":"The great Ephesian sanctuary (one of the Seven Wonders) whose original foundation tradition credits to Otrera, first Amazon queen and consort of Ares.","sources":[{"kind":"primary","reference":"Pseudo-Hyginus, Fabulae 225 (\"Otrera, an Amazon, wife of Mars, first founded the temple of Diana at Ephesus\"); cf. Fabulae 223 listing it among the Seven Wonders"},{"kind":"primary","reference":"Callimachus, Hymn 3 (to Artemis) 237-250, attributing the earliest Ephesian shrine to the Amazons"}]}
+  ],
+  "hindu_indrajit": [
+    {"id":"indrajit-nagapasha","name":"Nagapasha (serpent-noose)","kind":"weapon","term":{"value":"नागपाश","rom":"nāgapāśa"},"notes":"Indrajit's serpentine missile-noose that materialized into venomous snakes, with which he bound and immobilized Rama and Lakshmana on the battlefield; the captives were later freed by Garuda.","sources":[{"kind":"primary","reference":"Valmiki, Ramayana, Yuddha Kanda, sargas 44-45 (binding of Rama and Lakshmana by the nāgapāśa) and sarga 50 (release by Garuda)"},{"kind":"secondary","reference":"Robert P. Goldman & Sally J. Sutherland Goldman (trans.), The Ramayana of Valmiki, Vol. VI: Yuddhakanda (Princeton University Press, 2009), notes on the nāgapāśa episode"}]},
+    {"id":"indrajit-chariot","name":"Invincible chariot of the Nikumbhila rite","kind":"vehicle","notes":"Celestial chariot-and-horses that, by Brahma's boon, emerged from Indrajit's completed sacrificial fire and rendered him unconquerable in battle so long as the rite at Nikumbhila was not disrupted; his death followed when Lakshmana broke the rite.","sources":[{"kind":"primary","reference":"Valmiki, Ramayana, Yuddha Kanda (Indrajit's Nikumbhila sacrifice and Brahma's boon of the war-chariot; Lakshmana's slaying of Indrajit at the interrupted rite, sargas 86-90)"}]}
+  ],
   // MC-BY-FIGURE-END (batches inserted above this marker)
 };
 
