@@ -1,7 +1,7 @@
 # Capability scenario report
 
 Evaluation: binary PASS/FAIL via assertions over the real app booted in jsdom.
-Quality bar: every scenario PASS. **Result: 23/23 passed.**
+Quality bar: every scenario PASS. **Result: 32/32 passed.**
 
 | ID | Capability | Criterion | Result | Evidence |
 |----|-----------|-----------|--------|----------|
@@ -28,3 +28,12 @@ Quality bar: every scenario PASS. **Result: 23/23 passed.**
 | S21 | Persistence — quota | oversized corpus stays in memory; the atlas still persists | ✅ PASS | people=null (quota), atlas persisted, UI populated |
 | S22 | Persistence — corruption | corrupted localStorage JSON falls back to the seed | ✅ PASS | fell back to seed (1904 rows), no errors |
 | S23 | Persistence — user edit | a user-edited corpus in storage wins over the seed | ✅ PASS | stored 2-figure corpus won over seed |
+| S24 | Search — empty state | a no-match query yields zero rows without error | ✅ PASS | no-match → 0 rows, no error, restores |
+| S25 | Routing — unknown id | deep-linking a non-existent figure does not crash the app | ✅ PASS | unknown id handled gracefully |
+| S26 | Detail — minimal figure | a figure with no powers/items/domains renders cleanly | ✅ PASS | minimal figure rendered, no powers, no errors |
+| S27 | Detail — cult block | a major deity renders festivals, priesthoods, and offerings | ✅ PASS | cult block: "4 centers · 3 festivals · 3 priesthoods · 3 offerings" |
+| S28 | Detail — iconography | a figure with iconography renders the iconography block | ✅ PASS | iconography rendered (705 chars) |
+| S29 | Browse — sort | sorting by tradition reorders the table | ✅ PASS | reordered from alpha "'Antara ibn Shaddad" |
+| S30 | Browse — tradition filter | selecting a tradition in the rail narrows the table | ✅ PASS | Norse filter: 1904 → 33 → 1904 |
+| S31 | Command palette — navigate | typing a name and confirming opens that figure | ✅ PASS | palette opened "Heracles" |
+| S32 | Graph — year scope | toggling year-scope engages without error | ✅ PASS | year-scope engaged and reverted, no errors |

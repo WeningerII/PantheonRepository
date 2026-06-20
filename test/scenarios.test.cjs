@@ -297,6 +297,126 @@ describe('Pantheon Registry — capability scenarios', () => {
     return `cursor "${name}" opened + closed`;
   });
 
+  // ── Wave 2: edge cases, negative paths, finer-grained capabilities ──────────
+  S('S24', 'Search — empty state', 'a no-match query yields zero rows without error', async (app) => {
+    await toBrowse(app);
+    const input = app.document.querySelector('[aria-label="Search registry"]');
+    const before = app.errors.length;
+    await app.act(async () => { setInputValue(app, input, 'zzqxnotarealfigure'); });
+    await app.flush();
+    assert.strictEqual(rows(app), 0, `expected 0 rows, got ${rows(app)}`);
+    assert.strictEqual(app.errors.length, before, 'no-match search raised errors');
+    await app.act(async () => { setInputValue(app, input, ''); });
+    await app.flush();
+    return 'no-match → 0 rows, no error, restores';
+  });
+
+  S('S25', 'Routing — unknown id', 'deep-linking a non-existent figure does not crash the app', async (app) => {
+    const before = app.errors.length;
+    await app.openFigure('this_figure_does_not_exist_xyz');
+    assert.strictEqual(app.errors.length, before, 'unknown deep-link raised errors');
+    await toBrowse(app);
+    assert.ok(app.document.querySelector('.browse-table'), 'app did not recover to Browse');
+    return 'unknown id handled gracefully';
+  });
+
+  S('S26', 'Detail — minimal figure', 'a figure with no powers/items/domains renders cleanly', async (app) => {
+    const before = app.errors.length;
+    await app.openFigure('greek_apollod_acrisius');
+    const d = app.document.querySelector('.detail');
+    assert.ok(d, 'detail did not open for the minimal figure');
+    assert.strictEqual(app.errors.length, before, 'minimal figure raised errors');
+    assert.ok(!d.querySelector('.section-powers .power-row'), 'unexpected powers on a minimal figure');
+    await app.act(async () => { app.key('Escape'); });
+    await settle(app);
+    return 'minimal figure rendered, no powers, no errors';
+  });
+
+  S('S27', 'Detail — cult block', 'a major deity renders festivals, priesthoods, and offerings', async (app) => {
+    await app.openFigure('greek_hesiod_zeus');
+    const cult = app.document.querySelector('.section-cult-wrap');
+    assert.ok(cult, 'cult block did not render');
+    const t = cult.textContent;
+    assert.match(t, /festival/i, 'no festivals');
+    assert.match(t, /priesthood/i, 'no priesthoods');
+    assert.match(t, /offering/i, 'no offerings');
+    return `cult block: "${(cult.querySelector('.count')?.textContent || '').trim()}"`;
+  });
+
+  S('S28', 'Detail — iconography', 'a figure with iconography renders the iconography block', async (app) => {
+    await app.openFigure('greek_hesiod_zeus');
+    const ico = app.document.querySelector('.section-iconography-wrap');
+    assert.ok(ico, 'iconography block did not render');
+    assert.ok(ico.textContent.trim().length > 20, 'iconography block is empty');
+    return `iconography rendered (${ico.textContent.trim().length} chars)`;
+  });
+
+  S('S29', 'Browse — sort', 'sorting by tradition reorders the table', async (app) => {
+    await toBrowse(app);
+    const firstNames = (app) => [...app.document.querySelectorAll('.browse-table tbody tr:not(.browse-group-header) .name-text')].slice(0, 4).map((e) => e.textContent);
+    await app.act(async () => { app.document.querySelector('.th-name')?.click(); });
+    await app.flush();
+    const alpha = firstNames(app);
+    const th = app.document.querySelector('.th-tradition');
+    assert.ok(th, 'tradition sort header not found');
+    await app.act(async () => { th.click(); });
+    await app.flush();
+    assert.ok(app.document.querySelector('.th-tradition.th-on'), 'tradition sort did not engage');
+    assert.notDeepStrictEqual(firstNames(app), alpha, 'table did not reorder on tradition sort');
+    await app.act(async () => { app.document.querySelector('.th-name')?.click(); });
+    await app.flush();
+    return `reordered from alpha "${alpha[0]}"`;
+  });
+
+  S('S30', 'Browse — tradition filter', 'selecting a tradition in the rail narrows the table', async (app) => {
+    await toBrowse(app);
+    const full = rows(app);
+    const rail = [...app.document.querySelectorAll('.rail-row-trad')].find((r) => /Norse/.test(r.textContent));
+    assert.ok(rail, 'Norse rail row not found');
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+    const filtered = rows(app);
+    assert.ok(filtered > 0 && filtered < full, `rail filter did not narrow: ${filtered} vs ${full}`);
+    await app.act(async () => { rail.click(); });
+    await app.flush();
+    assert.strictEqual(rows(app), full, 'clearing the rail filter did not restore');
+    return `Norse filter: ${full} → ${filtered} → ${full}`;
+  });
+
+  S('S31', 'Command palette — navigate', 'typing a name and confirming opens that figure', async (app) => {
+    await toBrowse(app);
+    await app.act(async () => { app.key('k', { metaKey: true }); });
+    const input = app.document.querySelector('.cmdk input');
+    assert.ok(input, 'palette input not found');
+    await app.act(async () => { setInputValue(app, input, 'Heracles'); });
+    await app.flush();
+    const result = app.document.querySelector('.cmdk [data-cmdk-idx="0"]');
+    assert.ok(result, 'no palette result for "Heracles"');
+    await app.act(async () => { result.click(); });
+    await app.flush();
+    const detail = app.document.querySelector('.detail');
+    assert.ok(detail, 'palette pick did not open a detail');
+    assert.match(detail.querySelector('h1')?.textContent || '', /era[ck]l/i, 'palette opened the wrong figure');
+    await app.act(async () => { app.key('Escape'); });
+    await settle(app);
+    return `palette opened "${detail.querySelector('h1')?.textContent}"`;
+  });
+
+  S('S32', 'Graph — year scope', 'toggling year-scope engages without error', async (app) => {
+    await app.clickButton('Graph');
+    await app.flush();
+    const toggle = [...app.document.querySelectorAll('button')].find((b) => /scope by year/i.test(b.textContent));
+    assert.ok(toggle, 'year-scope toggle not found');
+    await app.act(async () => { toggle.click(); });
+    await app.flush();
+    const off = [...app.document.querySelectorAll('button')].find((b) => /all time/i.test(b.textContent));
+    assert.ok(off, 'year-scope did not engage (no "All time" toggle appeared)');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+    await app.act(async () => { off.click(); });
+    await app.flush();
+    return 'year-scope engaged and reverted, no errors';
+  });
+
   SB('S21', 'Persistence — quota', 'oversized corpus stays in memory; the atlas still persists', async () => {
     const a = await bootApp();
     try {
