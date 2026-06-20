@@ -180549,22 +180549,40 @@ const CULT_PRACTICES = {
   ],
 };
 
-const applyCult = (peopleMap, extra = CULT_PRACTICES) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] cult practice for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.festivals = Array.isArray(p.cult.festivals) ? p.cult.festivals : [];
-    for (const f of list) {
-      if (!f || !f.name) continue;
-      const key = (s) => String(s || '').toLowerCase();
-      if (p.cult.festivals.some((x) => key(x.name) === key(f.name) || (x.id && key(x.id) === key(f.name)))) continue;
-      p.cult.festivals.push(f);
-    }
-  }
-  return peopleMap;
+// The cult/domain/faculty supplements all share one shape: for each figure id in
+// the by-id map, append the list items to a target array, skipping duplicates by
+// a key field. The per-overlay differences are explicit params: `getList(p)`
+// resolves/creates the destination array; `field` is the dedupe key; `norm` is
+// how that key is compared (default case-insensitive + trimmed; faculties compare
+// ids exactly, festivals are case-folded only); `idAlt` also dedupes an item
+// against an existing entry's `id` (festivals). One-arg-safe so the SEED_PIPELINE
+// bare entries fall through to `defaultMap`.
+const cultList = (sub) => (p) => {
+  p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
+  p.cult[sub] = Array.isArray(p.cult[sub]) ? p.cult[sub] : [];
+  return p.cult[sub];
 };
+const topList = (field) => (p) => {
+  p[field] = Array.isArray(p[field]) ? p[field] : [];
+  return p[field];
+};
+const makeListApplier = ({ label, defaultMap, getList, field, norm = (v) => String(v || '').toLowerCase().trim(), idAlt = false }) =>
+  (peopleMap, extra = defaultMap) => {
+    for (const [id, list] of Object.entries(extra)) {
+      const p = peopleMap[id];
+      if (!p) { if (typeof console !== 'undefined') console.warn(`[Pantheon] ${label} for unknown figure`, id); continue; }
+      if (!Array.isArray(list) || !list.length) continue;
+      const arr = getList(p);
+      for (const it of list) {
+        if (!it || !it[field]) continue;
+        const k = norm(it[field]);
+        if (arr.some((x) => norm(x[field]) === k || (idAlt && x.id && norm(x.id) === k))) continue;
+        arr.push(it);
+      }
+    }
+    return peopleMap;
+  };
+const applyCult = makeListApplier({ label: 'cult practice', defaultMap: CULT_PRACTICES, getList: cultList('festivals'), field: 'name', norm: (v) => String(v || '').toLowerCase(), idAlt: true });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7i CULT SITES — temples, sanctuaries, shrines, oracles, tomb-cults,
@@ -195815,22 +195833,7 @@ const CULT_SITES = {
     }
   ]
 };
-const applyCultSites = (peopleMap, extra = CULT_SITES) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] cult site for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.cultCenters = Array.isArray(p.cult.cultCenters) ? p.cult.cultCenters : [];
-    for (const s of list) {
-      if (!s || !s.placeName) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.cult.cultCenters.some((x) => key(x.placeName) === key(s.placeName))) continue;
-      p.cult.cultCenters.push(s);
-    }
-  }
-  return peopleMap;
-};
+const applyCultSites = makeListApplier({ label: 'cult site', defaultMap: CULT_SITES, getList: cultList('cultCenters'), field: 'placeName' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7j PRIESTHOODS — the WHO of cult: the priestly offices, orders, and
@@ -207828,22 +207831,7 @@ const PRIESTHOODS = {
     }
   ]
 };
-const applyPriesthoods = (peopleMap, extra = PRIESTHOODS) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] priesthood for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.priesthoods = Array.isArray(p.cult.priesthoods) ? p.cult.priesthoods : [];
-    for (const o of list) {
-      if (!o || !o.title) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.cult.priesthoods.some((x) => key(x.title) === key(o.title))) continue;
-      p.cult.priesthoods.push(o);
-    }
-  }
-  return peopleMap;
-};
+const applyPriesthoods = makeListApplier({ label: 'priesthood', defaultMap: PRIESTHOODS, getList: cultList('priesthoods'), field: 'title' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7k OFFERINGS — the WHAT of cult: the sacrifices and offerings made to
@@ -217570,22 +217558,7 @@ const OFFERINGS = {
     }
   ]
 };
-const applyOfferings = (peopleMap, extra = OFFERINGS) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] offering for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.offerings = Array.isArray(p.cult.offerings) ? p.cult.offerings : [];
-    for (const o of list) {
-      if (!o || !o.offering) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.cult.offerings.some((x) => key(x.offering) === key(o.offering))) continue;
-      p.cult.offerings.push(o);
-    }
-  }
-  return peopleMap;
-};
+const applyOfferings = makeListApplier({ label: 'offering', defaultMap: OFFERINGS, getList: cultList('offerings'), field: 'offering' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7e EPITHETS — lift authored epithets to the top level the UI renders,
@@ -253678,21 +253651,7 @@ const DOMAIN_SUPPLEMENT = {
 };
 
 // Merge DOMAIN_SUPPLEMENT onto figures by id (additive, dedupe by sphereId).
-const applyDomainSupplement = (peopleMap, extra = DOMAIN_SUPPLEMENT) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] domain for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.domains = Array.isArray(p.domains) ? p.domains : [];
-    for (const d of list) {
-      if (!d || !d.sphereId) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.domains.some((x) => key(x.sphereId) === key(d.sphereId))) continue;
-      p.domains.push(d);
-    }
-  }
-  return peopleMap;
-};
+const applyDomainSupplement = makeListApplier({ label: 'domain', defaultMap: DOMAIN_SUPPLEMENT, getList: topList('domains'), field: 'sphereId' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  FACULTY_SUPPLEMENT — author the active powers for the deity/demigod figures
@@ -253752,20 +253711,7 @@ const FACULTY_SUPPLEMENT = {
 };
 
 // Merge FACULTY_SUPPLEMENT onto figures by id (additive, dedupe by faculty id).
-const applyFacultySupplement = (peopleMap, extra = FACULTY_SUPPLEMENT) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] faculty for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.faculties = Array.isArray(p.faculties) ? p.faculties : [];
-    for (const f of list) {
-      if (!f || !f.id) continue;
-      if (p.faculties.some((x) => x.id === f.id)) continue;
-      p.faculties.push(f);
-    }
-  }
-  return peopleMap;
-};
+const applyFacultySupplement = makeListApplier({ label: 'faculty', defaultMap: FACULTY_SUPPLEMENT, getList: topList('faculties'), field: 'id', norm: (v) => v });
 
 // The seed is assembled by threading buildPeopleSeed() through an ordered list
 // of transforms: figure injection → enrichment overlays → migration/QA →
