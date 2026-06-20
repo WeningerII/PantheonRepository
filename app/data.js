@@ -177233,7 +177233,7 @@ const makeListApplier = ({ label, defaultMap, getList, field, norm = (v) => Stri
     }
     return peopleMap;
   };
-const applyCult = makeListApplier({ label: 'cult practice', defaultMap: CULT_PRACTICES, getList: cultList('festivals'), field: 'name', norm: (v) => String(v || '').toLowerCase(), idAlt: true });
+const applyCult = makeListApplier({ label: 'cult practice', defaultMap: CULT_PRACTICES, getList: cultList('festivals'), field: 'name', idAlt: true });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7i CULT SITES — temples, sanctuaries, shrines, oracles, tomb-cults,
