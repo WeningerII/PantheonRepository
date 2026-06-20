@@ -417,6 +417,40 @@ describe('Pantheon Registry — capability scenarios', () => {
     return 'year-scope engaged and reverted, no errors';
   });
 
+  // ── Wave 3: remaining cross-cutting capabilities ────────────────────────────
+  S('S33', 'Detail → Graph cross-link', 'the "show in graph" control opens the graph focused on the figure', async (app) => {
+    await app.openFigure('greek_apollod_heracles');
+    const btn = [...app.document.querySelectorAll('.detail button')].find((b) => /relations in the graph/i.test(b.getAttribute('title') || ''));
+    assert.ok(btn, 'show-in-graph control not found');
+    await app.act(async () => { btn.click(); });
+    await settle(app);
+    const card = app.document.querySelector('.graph-focus-card');
+    assert.ok(card, 'graph did not open focused after show-in-graph');
+    assert.match(card.querySelector('.graph-focus-name')?.textContent || '', /era[ck]l/i, 'focused the wrong figure');
+    await toBrowse(app);
+    return `show-in-graph → focused "${card.querySelector('.graph-focus-name')?.textContent}"`;
+  });
+
+  S('S34', 'Detail — figure nav', 'Prev/Next step through the filtered list and return', async (app) => {
+    await toBrowse(app);
+    await app.openFirstFigure();
+    const name0 = app.document.querySelector('.detail h1')?.textContent;
+    const next = [...app.document.querySelectorAll('.detail button')].find((b) => /Next/.test(b.textContent));
+    assert.ok(next && !next.disabled, 'Next button missing or disabled');
+    await app.act(async () => { next.click(); });
+    await app.flush();
+    const name1 = app.document.querySelector('.detail h1')?.textContent;
+    assert.notStrictEqual(name1, name0, 'Next did not advance the figure');
+    const prev = [...app.document.querySelectorAll('.detail button')].find((b) => /Prev/.test(b.textContent));
+    assert.ok(prev, 'Prev button not found');
+    await app.act(async () => { prev.click(); });
+    await app.flush();
+    assert.strictEqual(app.document.querySelector('.detail h1')?.textContent, name0, 'Prev did not return to the first figure');
+    await app.act(async () => { app.key('Escape'); });
+    await settle(app);
+    return `Prev/Next: "${name0}" ↔ "${name1}"`;
+  });
+
   SB('S21', 'Persistence — quota', 'oversized corpus stays in memory; the atlas still persists', async () => {
     const a = await bootApp();
     try {
