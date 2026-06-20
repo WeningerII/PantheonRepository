@@ -32804,6 +32804,20 @@ const MATERIAL_CULTURE_BY_FIGURE = {
   "phoenician_melqart": [
     {"id":"melqart-pillars","name":"Twin pillars of the temple of Melqart at Tyre","kind":"monument","notes":"Two freestanding pillars (stelai) in Melqart's Tyrian sanctuary that Herodotus saw on his visit, one of pure gold and one of an emerald-green stone said to shine by night; emblematic cult-monuments of the god's temple.","sources":[{"kind":"primary","reference":"Herodotus, Histories 2.44 (the temple of Heracles/Melqart at Tyre, with its two pillars, one of gold and one of emerald stone shining by night)"},{"kind":"secondary","reference":"Corinne Bonnet, Melqart. Cultes et mythes de l'Heracles tyrien en Mediterranee (Studia Phoenicia 8; Leuven, 1988)"}]}
   ],
+  // ══ Material-culture sweep batch 12 (worklist indices 880-959, alphabetical) ══
+  "roman_caligula": [
+    {"id":"caligula-breastplate","name":"Breastplate of Alexander the Great","kind":"garment","notes":"Cuirass that Caligula reportedly removed from the sarcophagus of Alexander the Great at Alexandria and wore as part of his triumphal dress.","sources":[{"kind":"primary","reference":"Suetonius, De vita Caesarum, Caligula 52 (he is said to have worn the breastplate/thorax taken from Alexander's tomb)"},{"kind":"secondary","reference":"Anthony A. Barrett, Caligula: The Corruption of Power (London 1989)"}]}
+  ],
+  "roman_proserpina": [
+    {"id":"proserpina-pomegranate","name":"Pomegranate","kind":"symbol","notes":"The pomegranate whose seeds Proserpina eats in the underworld, binding her to Pluto and dividing her year between the world above and below; her defining attribute.","sources":[{"kind":"primary","reference":"Ovid, Metamorphoses 5.534-538 (Proserpina chews seven seeds from a pomegranate, witnessed by Ascalaphus)"},{"kind":"primary","reference":"Ovid, Fasti 4.607-608 (the eaten pomegranate seeds bind her below)"}]}
+  ],
+  "scythian_skyles": [
+    {"id":"skyles-ring","name":"Signet Ring of Scyles (the Argotas Ring)","kind":"regalia","notes":"A gold finger-ring whose bezel shows the great goddess Artimpasa enthroned, holding a mirror in one hand and a sceptre in the other, with the genitive ΣΚΥΛΕΩ ('of Scyles') engraved beside her and a Greek legend naming an earlier king, Argotas, on the hoop; understood as a dynastic token of royal legitimacy passed down the Scythian royal line.","sources":[{"kind":"primary","reference":"Inscribed gold ring bearing the legends ΣΚΥΛΕΩ and the name Argotas (the 'Argotas ring' / 'Scyles ring'), published by Yu. G. Vinogradov, 'Drevnegrecheskaya nadpis' iz okrestnostey Istrii' (the Scyles signet-ring inscription); cf. SEG"},{"kind":"secondary","reference":"Yulia Ustinova, The Supreme Gods of the Bosporan Kingdom: Celestial Aphrodite and the Most High God (Brill, 1999), discussion of Artimpasa and the Argotas/Scyles ring as a sovereignty emblem"}]}
+  ],
+  "scythian_skythes": [
+    {"id":"skythes-bow","name":"Bow of Heracles","kind":"weapon","notes":"The great bow left in Scythia by Heracles; of his three sons by the viper-maiden only Scythes, the youngest, could draw it as required, by which feat he won the land and founded the Scythian royal line.","sources":[{"kind":"primary","reference":"Herodotus, Histories 4.9-10"}]},
+    {"id":"skythes-belt","name":"Girdle of Heracles with the Golden Cup","kind":"regalia","notes":"The belt (girdle) of Heracles, bearing a golden drinking-cup fastened at the tip of its clasp; Scythes alone could buckle it as required, winning the kingship, and Herodotus offers it as the aition for the Scythian custom of wearing cups on the belt.","sources":[{"kind":"primary","reference":"Herodotus, Histories 4.9-10"}]}
+  ],
   // MC-BY-FIGURE-END (batches inserted above this marker)
 };
 
