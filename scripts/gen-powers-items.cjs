@@ -11,38 +11,10 @@
  * harvesting from a live session), then REWRITES app/data.js between the
  * POWERS_ITEMS sentinels in place and prints stats.
  */
-const fs = require('fs');
-const path = require('path');
-const TASKS = process.env.TASKS_DIR ||
-  '/tmp/claude-0/-home-user-PantheonRepository/9979a762-a2ad-53fd-85cf-871f7627ba99/tasks';
-const SRC = path.join(__dirname, '..', 'data-sources', 'transcripts');
+const { sources, makeSrcKind, serializeFigureMap, writeSentinelBlock } = require('./gen-lib.cjs');
 
-function lastAssistantText(file) {
-  let txt = '';
-  for (const ln of fs.readFileSync(file, 'utf8').split('\n')) {
-    if (!ln.trim()) continue;
-    let o; try { o = JSON.parse(ln); } catch { continue; }
-    if (o.type !== 'assistant' || !o.message) continue;
-    const c = o.message.content;
-    let t = '';
-    if (typeof c === 'string') t = c;
-    else if (Array.isArray(c)) t = c.filter((b) => b && b.type === 'text').map((b) => b.text).join('\n');
-    if (t.trim()) txt = t;
-  }
-  return txt;
-}
-// Prefer the committed research-output snapshot (reproducible on a clean
-// checkout); fall back to the live /tmp session transcripts when absent.
-function sources() {
-  if (fs.existsSync(SRC)) {
-    return fs.readdirSync(SRC).filter((n) => n.endsWith('.txt')).sort()
-      .map((n) => ({ name: n, text: fs.readFileSync(path.join(SRC, n), 'utf8') }));
-  }
-  return fs.readdirSync(TASKS).filter((n) => n.endsWith('.output')).sort()
-    .map((n) => { try { return { name: n, text: lastAssistantText(path.join(TASKS, n)) }; } catch { return { name: n, text: '' }; } });
-}
 const SECONDARY = /\bWb\b|Wikipedia|Britannica|Dum[eé]zil|Lincoln|Lindow|Simek|Ellis Davidson|Abraham|Idowu|encyclopedia|dictionary|grammar|ethnograph/i;
-const srcKind = (s) => (SECONDARY.test(s) ? 'secondary' : 'primary');
+const srcKind = makeSrcKind(SECONDARY);
 const isDash = (v) => { const t = String(v || '').trim(); return !t || t === '—' || t === '-' || t.startsWith('—'); };
 // A term VALUE is not a real native term if it's empty/dashed or an agent
 // disclaimer (a language label + em-dash, or a "(no recorded name)" note).
@@ -97,14 +69,8 @@ for (const { text } of sources()) {
 }
 
 // Serialize a {figureId: [obj,...]} map, one line per record (diff-friendly).
-const serialize = (map) => Object.keys(map).sort().map((fig) =>
-  `${JSON.stringify(fig)}: [\n` + map[fig].slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)).map((o) => '  ' + JSON.stringify(o)).join(',\n') + '\n]').join(',\n');
-const block = `/* POWERS_ITEMS_START */\nconst POWERS_ABILITIES = {\n${serialize(powers)}\n};\nconst ITEMS_GEN = {\n${serialize(items)}\n};\n/* POWERS_ITEMS_END */`;
-const DATA = path.join(__dirname, '..', 'app', 'data.js');
-let data = fs.readFileSync(DATA, 'utf8');
-const re = /\/\* POWERS_ITEMS_START \*\/[\s\S]*?\/\* POWERS_ITEMS_END \*\//;
-if (!re.test(data)) { console.error('POWERS_ITEMS sentinels not found in data.js'); process.exit(1); }
-fs.writeFileSync(DATA, data.replace(re, block));
+const block = `/* POWERS_ITEMS_START */\nconst POWERS_ABILITIES = {\n${serializeFigureMap(powers)}\n};\nconst ITEMS_GEN = {\n${serializeFigureMap(items)}\n};\n/* POWERS_ITEMS_END */`;
+writeSentinelBlock('POWERS_ITEMS', block);
 console.log(`transcripts: ${stats.files} | figures: ${stats.figs.size}`);
 console.log(`POWERS (abilities): ${stats.powers}  (with native term: ${stats.pTermed})`);
 console.log(`ITEMS: ${stats.items}  (with native term: ${stats.iTermed})`);

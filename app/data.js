@@ -178108,22 +178108,40 @@ const CULT_PRACTICES = {
   ],
 };
 
-const applyCult = (peopleMap, extra = CULT_PRACTICES) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] cult practice for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.festivals = Array.isArray(p.cult.festivals) ? p.cult.festivals : [];
-    for (const f of list) {
-      if (!f || !f.name) continue;
-      const key = (s) => String(s || '').toLowerCase();
-      if (p.cult.festivals.some((x) => key(x.name) === key(f.name) || (x.id && key(x.id) === key(f.name)))) continue;
-      p.cult.festivals.push(f);
-    }
-  }
-  return peopleMap;
+// The cult/domain/faculty supplements all share one shape: for each figure id in
+// the by-id map, append the list items to a target array, skipping duplicates by
+// a key field. The per-overlay differences are explicit params: `getList(p)`
+// resolves/creates the destination array; `field` is the dedupe key; `norm` is
+// how that key is compared (default case-insensitive + trimmed; faculties compare
+// ids exactly, festivals are case-folded only); `idAlt` also dedupes an item
+// against an existing entry's `id` (festivals). One-arg-safe so the SEED_PIPELINE
+// bare entries fall through to `defaultMap`.
+const cultList = (sub) => (p) => {
+  p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
+  p.cult[sub] = Array.isArray(p.cult[sub]) ? p.cult[sub] : [];
+  return p.cult[sub];
 };
+const topList = (field) => (p) => {
+  p[field] = Array.isArray(p[field]) ? p[field] : [];
+  return p[field];
+};
+const makeListApplier = ({ label, defaultMap, getList, field, norm = (v) => String(v || '').toLowerCase().trim(), idAlt = false }) =>
+  (peopleMap, extra = defaultMap) => {
+    for (const [id, list] of Object.entries(extra)) {
+      const p = peopleMap[id];
+      if (!p) { if (typeof console !== 'undefined') console.warn(`[Pantheon] ${label} for unknown figure`, id); continue; }
+      if (!Array.isArray(list) || !list.length) continue;
+      const arr = getList(p);
+      for (const it of list) {
+        if (!it || !it[field]) continue;
+        const k = norm(it[field]);
+        if (arr.some((x) => norm(x[field]) === k || (idAlt && x.id && norm(x.id) === k))) continue;
+        arr.push(it);
+      }
+    }
+    return peopleMap;
+  };
+const applyCult = makeListApplier({ label: 'cult practice', defaultMap: CULT_PRACTICES, getList: cultList('festivals'), field: 'name', idAlt: true });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7i CULT SITES — temples, sanctuaries, shrines, oracles, tomb-cults,
@@ -193374,22 +193392,7 @@ const CULT_SITES = {
     }
   ]
 };
-const applyCultSites = (peopleMap, extra = CULT_SITES) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] cult site for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.cultCenters = Array.isArray(p.cult.cultCenters) ? p.cult.cultCenters : [];
-    for (const s of list) {
-      if (!s || !s.placeName) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.cult.cultCenters.some((x) => key(x.placeName) === key(s.placeName))) continue;
-      p.cult.cultCenters.push(s);
-    }
-  }
-  return peopleMap;
-};
+const applyCultSites = makeListApplier({ label: 'cult site', defaultMap: CULT_SITES, getList: cultList('cultCenters'), field: 'placeName' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7j PRIESTHOODS — the WHO of cult: the priestly offices, orders, and
@@ -205387,22 +205390,7 @@ const PRIESTHOODS = {
     }
   ]
 };
-const applyPriesthoods = (peopleMap, extra = PRIESTHOODS) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] priesthood for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.priesthoods = Array.isArray(p.cult.priesthoods) ? p.cult.priesthoods : [];
-    for (const o of list) {
-      if (!o || !o.title) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.cult.priesthoods.some((x) => key(x.title) === key(o.title))) continue;
-      p.cult.priesthoods.push(o);
-    }
-  }
-  return peopleMap;
-};
+const applyPriesthoods = makeListApplier({ label: 'priesthood', defaultMap: PRIESTHOODS, getList: cultList('priesthoods'), field: 'title' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7k OFFERINGS — the WHAT of cult: the sacrifices and offerings made to
@@ -215129,22 +215117,7 @@ const OFFERINGS = {
     }
   ]
 };
-const applyOfferings = (peopleMap, extra = OFFERINGS) => {
-  for (const [id, list] of Object.entries(extra)) {
-    const p = peopleMap[id];
-    if (!p) { if (typeof console !== 'undefined') console.warn('[Pantheon] offering for unknown figure', id); continue; }
-    if (!Array.isArray(list) || !list.length) continue;
-    p.cult = (p.cult && typeof p.cult === 'object') ? p.cult : {};
-    p.cult.offerings = Array.isArray(p.cult.offerings) ? p.cult.offerings : [];
-    for (const o of list) {
-      if (!o || !o.offering) continue;
-      const key = (x) => String(x || '').toLowerCase().trim();
-      if (p.cult.offerings.some((x) => key(x.offering) === key(o.offering))) continue;
-      p.cult.offerings.push(o);
-    }
-  }
-  return peopleMap;
-};
+const applyOfferings = makeListApplier({ label: 'offering', defaultMap: OFFERINGS, getList: cultList('offerings'), field: 'offering' });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  WAVE-7e EPITHETS — lift authored epithets to the top level the UI renders,
@@ -216255,6 +216228,2999 @@ const applyEpithets = (peopleMap, extra = EPITHETS) => {
 //  Runs pre-migrate; touches no relation/parent/tier data.
 // ═════════════════════════════════════════════════════════════════════════════
 const ETYMOLOGY = {
+  // ══ Alphabetical etymology sweep (full corpus, every tier; in figure-id order
+  //    so none is skipped; authored wherever the name is securely attestable,
+  //    deferred — never invented — where the language lacks the apparatus) ══
+  "abkhaz_afy": {
+    "languageFamily": "Northwest Caucasian (Abkhaz)",
+    "etymology": "Abkhaz Афы (Afə), god of thunder and lightning. The theonym is the ordinary Abkhaz noun afə 'lightning', the deity being lightning personified; under herding/hunting taboo he is invoked by oblique by-names rather than the bare word.",
+    "sources": [{ "kind": "secondary", "reference": "V. Chirikba, on Abkhaz traditional religion (afy 'lightning')" }]
+  },
+  "abkhaz_antswa": {
+    "languageFamily": "Northwest Caucasian (Abkhaz)",
+    "etymology": "Abkhaz Анцәа (Ancʷa), the supreme god. The name is generally analysed as an old plural — 'the powers / the gods' — the single supreme deity being conceived as an embracing plurality; the cult-title Анцәа Дуу (Ancʷa Duu) 'the Great God' accompanies it.",
+    "sources": [{ "kind": "secondary", "reference": "V. Chirikba, on Abkhaz traditional religion (Ancʷa as an old plural)" }]
+  },
+  "aganju": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Aganjù, orisha of the untamed wilderness, volcanoes and the wild earth. The name is connected with aginjù 'wilderness, uninhabited bush, savanna' — the wild expanse he personifies.",
+    "sources": [{ "kind": "secondary", "reference": "R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "ainu_kamuy_fuchi": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Kamuy Huci (also Fuchi), goddess of the hearth-fire. The name is kamuy 'deity, spiritual being' + huci 'grandmother, venerable old woman' — 'the grandmother deity', mistress of the domestic fire (ape-huci).",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "ainu_kim_un_kamuy": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Kim-un-kamuy 'the deity who dwells in the mountains' (kim 'mountain' + un 'residing at' + kamuy 'deity') — the brown-bear god, honoured as a mountain deity who visits the human world.",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "ainu_kotan_kar_kamuy": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Kotan-kar-kamuy 'the land-making deity' (kotan 'village, land' + kar 'to make' + kamuy 'deity') — the creator who shaped the Ainu world, Ainu Mosir.",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "ainu_repun_kamuy": {
+    "languageFamily": "Ainu (language isolate)",
+    "etymology": "Ainu Repun-kamuy 'the deity of the offing' (rep 'open sea, offshore' + un 'at' + kamuy 'deity') — the orca-god of the sea, who drives whales toward the coastal Ainu.",
+    "sources": [{ "kind": "secondary", "reference": "J. Batchelor, An Ainu-English-Japanese Dictionary (1905)" }]
+  },
+  "akan_tano": {
+    "languageFamily": "Niger-Congo (Kwa, Akan)",
+    "etymology": "Akan (Twi) Tano (also Ta Kora), the great river-god, named for the River Tano of central Ghana of which he is the deified spirit; the river and its tutelary ɔbosom share the name.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. Rattray, Ashanti (1923); Religion and Art in Ashanti (1927)" }]
+  },
+  "anglosaxon_beowulf": {
+    "languageFamily": "Indo-European (Germanic, Old English)",
+    "etymology": "Old English Bēowulf, most often read as a kenning bēo 'bee' + wulf 'wolf' = 'bee-wolf', i.e. the bear (the honey-raiding beast); an alternative connects the first element with Bēow, the barley-figure. The bear reading suits the hero's crushing grip.",
+    "sources": [{ "kind": "secondary", "reference": "F. Klaeber, Beowulf, 4th ed., ed. Fulk, Bjork & Niles (2008)" }]
+  },
+  "anglosaxon_wayland": {
+    "languageFamily": "Indo-European (Germanic, Old English)",
+    "etymology": "Old English Wēland (Old Norse Vǫlundr, Old High German Wiolant), the smith. The name is generally derived from a Germanic base *wēla- / *wīla- 'craft, cunning artifice', giving 'the skilled (or wily) one'; the precise root is debated.",
+    "sources": [{ "kind": "secondary", "reference": "V. Orel, A Handbook of Germanic Etymology (2003)" }]
+  },
+  "aramean_atargatis": {
+    "languageFamily": "Afro-Asiatic (Semitic, Aramaic)",
+    "etymology": "Aramaic ʿAtarʿatā (ʿtrʿth), Hellenized Atargatis. The name fuses two Semitic theonyms — ʿAttar / ʿAštart (Astarte) and ʿAttā / ʿAnat — into the single 'Syrian Goddess' (Dea Syria) of Hierapolis-Bambyce.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Atargatis" }]
+  },
+  "aramean_bethel": {
+    "languageFamily": "Afro-Asiatic (Northwest Semitic)",
+    "etymology": "Northwest Semitic Bethel, from bēt 'house' + ʾēl 'El, god' — 'House of El': the divinized sacred stone / 'house of god', attested as an independent deity in Aramaic contexts and at Elephantine.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Bethel" }]
+  },
+  "aramean_hadad": {
+    "languageFamily": "Afro-Asiatic (Northwest Semitic)",
+    "etymology": "Northwest Semitic Hadad (Haddu, Adad), the storm-god. The name derives from a Semitic root h-d-d 'to thunder, crash, resound', naming the thunder of the storm; the title Baʿal 'lord' frequently stands in for it.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Hadad" }]
+  },
+  "aramean_rakib_el": {
+    "languageFamily": "Afro-Asiatic (Semitic, Aramaic)",
+    "etymology": "Aramaic Rakib-El (rkb ʾl), dynastic god of Samʾal (Zincirli). The name means 'Charioteer of El' (rākib 'rider, charioteer' + ʾEl) — the god who rides as charioteer of the high god.",
+    "sources": [{ "kind": "secondary", "reference": "Dictionary of Deities and Demons in the Bible (DDD), 2nd ed. (1999), s.v. Rakib-El" }]
+  },
+  "asturian_aernus": {
+    "languageFamily": "Indo-European (Hispano-Celtic)",
+    "etymology": "Attested Deo Aerno (dative), tutelary god of the Asturian Zoelae. The native etymon is debated — usually linked either to a word for high/rocky ground or to a tree-name — and the god is known only from the Bragança-area inscriptions.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005); A. Tranoy, La Galice romaine (1981)" }]
+  },
+  // ══ Alphabetical sweep batch 2 (worklist indices 15-94: research-sourced via
+  //    multi-source web verification, each entry vetted; deferrals left empty) ══
+  "apache_black_hactcin": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Jicarilla Apache)",
+    "etymology": "A color-named member of the Jicarilla creator-class the Hactcin, which Opler glosses as 'supernaturals, personifications of the power of objects and natural forces.' The modifier is Jicarilla diłhił 'black/dark,' marking this as the leading, most powerful Black Hactcin (paired with White Hactcin); the compound thus reads 'Black Hactcin,' i.e. the black-aspect personified power that shapes the first animals and birds.",
+    "sources": [{ "kind": "secondary", "reference": "Morris E. Opler, Myths and Tales of the Jicarilla Apache Indians, Memoirs of the American Folk-Lore Society vol. 31 (1938), s.v. Hactcin (explanatory note)" }]
+  },
+  "apache_child_of_the_water": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Apache, cognate with Navajo)",
+    "etymology": "Apache Tóbájíshchíní, identical with Navajo Tóbájíshchíní 'Born for/of Water,' the younger monster-slaying twin. The Navajo cognate is analyzed as tó 'water' + bá 'for it' + jízhchį́ 'he was born' + -í (nominalizer); in Chiricahua/Mescalero Apache texts he, rather than Killer of Enemies, is the principal hero.",
+    "sources": [{ "kind": "secondary", "reference": "Robert W. Young, William Morgan & Sally Midgette, Analytical Lexicon of Navajo (1992), s.v. Tóbájíshchíní" }, { "kind": "secondary", "reference": "Harry Hoijer, Chiricahua and Mescalero Apache Texts (Univ. of Chicago Press, 1938)" }]
+  },
+  "apache_hactcin": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Jicarilla Apache)",
+    "etymology": "Jicarilla Apache Hactcin, the class of creator-supernaturals, which Opler defines as 'supernaturals, personifications of the power of objects and natural forces' — functionally parallel to the Navajo diyin diné'é ('Holy People'). The term denotes personified sacred power rather than an individually named god.",
+    "sources": [{ "kind": "secondary", "reference": "Morris E. Opler, Myths and Tales of the Jicarilla Apache Indians, Memoirs of the American Folk-Lore Society vol. 31 (1938), s.v. Hactcin (explanatory note)" }]
+  },
+  "apache_killer_of_enemies": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Apache, cognate with Navajo)",
+    "etymology": "Apache Naayéé'neizghání, identical with Navajo Naayééʼ Neizghání 'Monster/Enemy Slayer,' the monster-slaying twin. The Navajo cognate is naayééʼ 'monsters, enemies' + neizghání 'the one who went about killing them' (a relativized verb of repeated killing). His prominence relative to his twin is reversed between Western Apache (where he dominates) and Chiricahua/Mescalero.",
+    "sources": [{ "kind": "secondary", "reference": "Robert W. Young & William Morgan, The Navajo Language: A Grammar and Colloquial Dictionary (1987), s.v. Naayééʼ Neizghání" }, { "kind": "secondary", "reference": "Harry Hoijer, Chiricahua and Mescalero Apache Texts (Univ. of Chicago Press, 1938)" }]
+  },
+  "apache_white_painted_woman": {
+    "languageFamily": "Na-Dené (Southern Athabaskan; Chiricahua/Mescalero Apache)",
+    "etymology": "Apache Isdzánátł'éshn 'White-Painted Woman,' built on isdzán 'woman' plus a stem denoting 'painted white' — the creator-mother and origin of the girls' puberty rite. 'Changing Woman' is her renewal-aspect title (cf. Navajo Asdzą́ą́ Nádleehé, literally 'woman who changes/becomes again'); 'Esdzanadehe' is a common English-source spelling.",
+    "sources": [{ "kind": "secondary", "reference": "Morris E. Opler, An Apache Life-Way (Univ. of Chicago Press, 1941)" }, { "kind": "secondary", "reference": "Morris E. Opler, Myths and Tales of the Chiricahua Apache Indians, Memoirs of the American Folk-Lore Society vol. 37 (1942)" }]
+  },
+  "bambara_mousso_koroni": {
+    "languageFamily": "Niger-Congo (Mande; Bambara/Bamana)",
+    "etymology": "Bambara Muso Kɔrɔni (Mousso Koroni), from muso 'woman' + kɔrɔ 'old' with the diminutive -nin, i.e. 'little old woman'; Dieterlen records the fuller epithet Mousso Koroni Koundyé 'little old woman with a white head,' the chaotic first woman associated with air and fire. The morphemes muso 'woman' and kɔrɔ 'old' are standard, transparently attested Bambara lexemes.",
+    "sources": [{ "kind": "ethnography", "reference": "Germaine Dieterlen, Essai sur la religion bambara (Paris, 1951)" }, { "kind": "secondary", "reference": "An ka taa Bambara/Dioula Dictionary, s.v. muso 'woman', kɔrɔ 'old'" }]
+  },
+  "basque_eate": {
+    "languageFamily": "Basque (language isolate)",
+    "etymology": "Basque Eate, the genie of storms, fire, floods and hurricanes in the Goierri (Gipuzkoa) and Arakil (Navarre). Barandiarán records a popular/folk etymology deriving the name from errete 'to burn', suggesting an original fire-spirit (the flames of a fire are imagined as the locks of his beard); this derivation is tentative and not a secure linguistic reconstruction.",
+    "sources": [{ "kind": "ethnography", "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Eate" }]
+  },
+  "batak_batara_guru": {
+    "languageFamily": "Austronesian (Toba Batak), name from Indo-Aryan (Sanskrit)",
+    "etymology": "Batara Guru (Bhattara Guru) is a borrowing of Sanskrit bhaṭṭāra/bhaṭṭāraka 'noble lord, venerable one' plus guru 'teacher, spiritual master' (an epithet also of Bṛhaspati). Among the Toba Batak the title is reassigned to one of the three primal gods (the Debata na Tolu); the Sanskritic name reflects the Indianised stratum of Batak religion rather than a native Batak coinage.",
+    "sources": [{ "kind": "secondary", "reference": "J. Warneck, Die Religion der Batak (1909); the title from Sanskrit bhaṭṭāra ‘noble lord’ + guru" }]
+  },
+  "batak_mula_jadi_na_bolon": {
+    "languageFamily": "Austronesian (Toba Batak)",
+    "etymology": "Toba Batak Mulajadi na Bolon, analysable as mula 'origin, beginning' + jadi 'to become, come into being' + na 'that which' + bolon 'great', i.e. 'the great origin/beginning of becoming'. Tobing, following Warneck, renders it 'The Origin of Genesis' (Sang Asal Kejadian); the figure is the transcendent high god and creator.",
+    "sources": [{ "kind": "secondary", "reference": "Ph. L. Tobing, The Structure of the Toba-Batak Belief in the High God (Amsterdam, 1956)" }]
+  },
+  "batak_naga_padoha": {
+    "languageFamily": "Austronesian (Toba Batak), generic element from Indo-Aryan (Sanskrit)",
+    "etymology": "The generic element Naga is the Sanskrit loanword nāga 'snake, serpent, cobra' (borrowed into Indonesian/Batak), here the primordial underworld dragon-serpent whose writhing causes earthquakes. The epithet Padoha is of uncertain origin and is not securely explained in the linguistic literature; only the naga element has a clear, attested etymology.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. nāga; Batak usage in J. Warneck, Die Religion der Batak (1909)" }]
+  },
+  "batak_si_boru_deak_parujar": {
+    "languageFamily": "Austronesian (Toba Batak)",
+    "etymology": "In the name Si Boru Deak Parujar, the leading elements are transparent Toba Batak: si is the personal-name article and boru means 'daughter, woman', so 'Si Boru ...' = 'the woman/daughter (called) ...', marking her as the creatrix daughter of Batara Guru. The epithet Deak Parujar (associated in the myths with spinning/weaving, she being the maker of the first ulos cloth) has no secure published etymology and is left unexplained here.",
+    "sources": [{ "kind": "ethnography", "reference": "Sandra Niessen, Legacy in Cloth: Batak Textiles of Indonesia (2009), on Si Boru Deak Parujar as weaver/creatrix (boru 'daughter/woman'); Warneck, Die Religion der Batak (1909)" }]
+  },
+  "baule_nyamien": {
+    "languageFamily": "Niger-Congo (Kwa, Akan)",
+    "etymology": "Baule Nyamien is the local reflex of Akan Nyame/Onyame, the supreme sky-creator (the Baule being an Akan group that migrated from present-day Ghana). The etymology is debated: one school (presented in the Encyclopedia of African Religion) derives it from nya 'to get, obtain' + me 'to be full/satisfied' ('the one in whom one is satisfied, god of fullness'), while J. B. Danquah rejected this and connected it instead to enyim-nyam 'splendour/glory of the face'; Christaller declined to give an etymology, glossing it only as the boundless, inexhaustibly rich Being.",
+    "sources": [{ "kind": "secondary", "reference": "Molefi Kete Asante & Ama Mazama (eds.), Encyclopedia of African Religion (2009), s.v. Nyame; with J. B. Danquah, The Akan Doctrine of God (1944) for the competing enyim-nyam etymology" }]
+  },
+  "bemba_chitimukulu": {
+    "languageFamily": "Niger-Congo (Bantu, Bemba)",
+    "etymology": "Bemba Chitimukulu is Chiti Mukulu 'Chiti the Great', from the personal name Chiti (the first paramount, said to have been born Chiti Muluba) plus mukulu 'great, elder, senior, most respected'; later paramount chiefs of the Bemba assume the title. The common gloss 'the Great Tree' (as if from citi 'tree') is a secondary, debated folk reading rather than the derivation supported by the oral king-lists.",
+    "sources": [{ "kind": "secondary", "reference": "Andrew D. Roberts, A History of the Bemba: Political Growth and Change in North-Eastern Zambia before 1900 (1973)" }]
+  },
+  "berber_amun_siwa": {
+    "languageFamily": "Afro-Asiatic (Egyptian); cult localised among Libyans/Amazigh",
+    "etymology": "The oracular god of Siwa is the Egyptian Amun, whose name is attested as ỉmn (jmn), conventionally rendered 'the hidden one / the concealed one' (from the root meaning 'to be hidden, conceal'), reflecting his invisible, all-pervading nature; the feminine counterpart Amunet bears the same name. The Libyan/Amazigh and Greek (Ammon) forms are adaptations of this Egyptian theonym at the desert oracle.",
+    "sources": [{ "kind": "secondary", "reference": "Richard H. Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Amun ('the hidden one', Egyptian ỉmn)" }]
+  },
+  "berber_anti": {
+    "languageFamily": "Hellenic (Greek); figure localised among Libyans/Amazigh",
+    "etymology": "The name known to the classical sources as Antaeus is Greek Antaîos (Ἀνταῖος), from the adjective antaîos 'set over against, opposed, hostile' (built on antáō 'to meet, face, oppose' and the preposition antí 'against, opposite', ultimately PIE *h₂ent- 'front, face'); thus roughly 'the opponent / he who confronts'. The form is a Greek interpretation of the Libyan earth-giant localised at Tingis (Tangier); the underlying native Berber name, if any, is not preserved.",
+    "sources": [{ "kind": "secondary", "reference": "H. G. Liddell & R. Scott, A Greek-English Lexicon (LSJ), s.v. ἀνταῖος 'set over against, opposite; hostile'" }]
+  },
+  "berber_ifri": {
+    "languageFamily": "Afro-Asiatic (Berber)",
+    "etymology": "The native theonym is Tamazight Ifri/Ifru, identical with the common noun ifri 'cave' (plural ifran); the goddess is the personified Dea Africa, and on the dominant etymology the name of the continent itself derives from the tribal name Afri < Berber ifri 'cave' (in reference to cave-dwellers), a derivation formally proposed by Michel Desfayes in 1981. This competes with an older Semitic etymology connecting Latin Africa to Phoenician ʿafar 'dust', so the derivation is debated rather than settled.",
+    "sources": [{ "kind": "secondary", "reference": "Tamazight ifri ‘cave’ (pl. ifran); M. Desfayes, on Afri/Africa < Berber ifri (1981)" }]
+  },
+  "bhil_bhagwan": {
+    "languageFamily": "Indo-European (Indo-Aryan; Sanskrit loanword into Bhil)",
+    "etymology": "The Bhil high-god name Bhagwan is a borrowing of Sanskrit bhagavān (stem bhaga-vant-), literally 'possessing fortune, prosperous, glorious/adorable', formed from the noun bhaga 'fortune, share, dispensed good' (itself from the verbal root bhaj- 'to apportion, allot, share') plus the possessive suffix -vant- 'endowed with'. The indigenous element among the Bhil is the cosmogony, not the word, which is a Sanskritic loan.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M., A Sanskrit-English Dictionary (1899), s.v. 'bhagavat' / 'bhaga'." }]
+  },
+  "bhil_indi_raja": {
+    "languageFamily": "Indo-European (Indo-Aryan; Sanskrit theonym adapted into Bhil)",
+    "etymology": "The Bhil/Bhilala rain-god (the prompt's 'Inddeo', locally Baba Ind / Raja Indra) takes its name from the Vedic thunder-and-rain god Indra (Sanskrit Índra-), here embedded in tribal rain-ritual rather than inherited Vedic cult. The deeper etymology of Indra itself is uncertain: a popular folk parsing reads indu 'drop' + -ra 'possessing', while a leading scholarly proposal derives it from PIE *h₃eid- 'to swell, be strong' (with nasal infix) yielding an adjective 'strong' > the god-name; Mayrhofer's standard dictionary treats the origin as unresolved.",
+    "sources": [{ "kind": "secondary", "reference": "Mayrhofer, M., Etymologisches Wörterbuch des Altindoarischen (1992-2001), s.v. 'índra-' (origin uncertain)." }]
+  },
+  "bicolano_asuang": {
+    "languageFamily": "Austronesian (Bikol/Philippine); etymology of theonym debated",
+    "etymology": "Asuang is the eponymous Bicolano deity behind the Filipino aswang/asuwang category, and the name's origin is genuinely contested. The widely repeated derivation from Sanskrit asura 'demon' is a popular/folk etymology with no demonstrated philological pathway; it goes back to Isabelo de los Reyes (1909), who linked pre-Hispanic Filipino demon-concepts to the Indic asura. A second folk derivation parses aso 'dog' + (Visayan) buang/wang 'crazy/wicked' ('dog-like'). No rigorous comparative-linguistic source establishes any single origin.",
+    "sources": [{ "kind": "secondary", "reference": "de los Reyes, Isabelo, La Religión Antigua de los Filipinos (1909) — associates Filipino demon-belief with Sanskrit asura (basis of the popular asura etymology, here labeled folk)." }]
+  },
+  "bodo_bathoubwrai": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman, Bodo-Garo)",
+    "etymology": "Bathou Bwrai is the Bodo (Boro) supreme creator: Bathou is analysed as Bodo ba 'five' + thou 'deep/profound (principle)', i.e. 'the five profound principles' (the five elements dwi water, ha earth, bar air, okhrang sky, or fire), while Bwrai means 'elder, old man' (the eldest in power/knowledge). He is also called Sibrai (Jiu/Siu Bwrai), glossed 'father of life/soul'. A minority Bodo derivation instead takes Bathou from bao 'to worship/adore' + thou 'to move forward'.",
+    "sources": [{ "kind": "secondary", "reference": "Narzary, Hargouri, Myths in Bodo Society: A Folkloric Study (2018), ch. on the Bathou religion (etymology of Bathou, Bwrai, Sibrai)." }]
+  },
+  "bodo_mainao": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman, Bodo-Garo)",
+    "etymology": "The Bodo rice/fertility goddess Mainao bears a transparent compound name: mai 'paddy, rice' (from Proto-Bodo-Garo *mai, ultimately Proto-Sino-Tibetan *mej 'grain') + no/nao 'house', i.e. roughly 'paddy/grain of the house' — the deified granary-grain and guardian of the family's wealth, ritually 'brought home' from the field in the Mainao-lainai rite.",
+    "sources": [{ "kind": "secondary", "reference": "Narzary, Hargouri, Myths in Bodo Society: A Folkloric Study (2018), section on goddess Mainao (mai 'paddy' + no 'house')." }]
+  },
+  "bororo_meri": {
+    "languageFamily": "Macro-Jê (Bororoan / Boe Wadáru)",
+    "etymology": "The name is simply the ordinary Bororo common noun méri 'sun', personified as the solar culture-hero (paired with his twin Ari, the Moon). It is not a compound or descriptive epithet but the everyday word for the daystar used as a proper name; this is a lexical identity ('Sun') rather than a deeper derivable etymology.",
+    "sources": [{ "kind": "ethnography", "reference": "Colbacchini, Antonio & Albisetti, Cesar, Os Boróros Orientais (1942), grammatical-lexical material on Bororo; cf. Lévi-Strauss, The Raw and the Cooked: Mythologiques I (1969 [1964]) for the Méri/Ari sun-and-moon cycle" }]
+  },
+  "bunyoro_ruhanga": {
+    "languageFamily": "Niger-Congo (Bantu, Rutara / Runyoro-Rutooro)",
+    "etymology": "Runyoro Ruhanga 'the Creator, He Who Creates', an agentive (ru- prefix) formation on the verb -hanga 'to create'. The verb continues Proto-Bantu *pánga 'to create, make', whose initial *p- regularly became h- in the Rutara languages, so *ku-panga > okuhanga 'to create' and Ruhanga 'Creator'.",
+    "sources": [{ "kind": "secondary", "reference": "'Ruhanga', Encyclopædia Britannica, s.v. (creator god of the Nkole/Nyankore and Haya), glossing the name as 'He Who Creates'; Proto-Bantu *panga > Rutara -hanga per standard Bantu historical phonology" }]
+  },
+  "buryat_erlen_khan": {
+    "languageFamily": "Mongolic (Buryat), name of Turkic origin",
+    "etymology": "Buryat Erlen (Khan), the Mongolic reflex of Turkic Erlik, lord of the dead. The name is generally derived from Old Turkic erklig 'mighty, powerful, having authority' (from erk 'power, authority'), used as a euphemistic title of the underworld ruler; the derivation is the standard one though the semantics are debated. The Indic/Tibetan equation with Yama is secondary syncretism, not the etymological source of the name.",
+    "sources": [{ "kind": "secondary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. erklig ‘mighty’; Encyclopedia of Religion, s.v. Erlik" }]
+  },
+  "buryat_esege_malan": {
+    "languageFamily": "Mongolic (Buryat)",
+    "etymology": "Buryat Esege Malaan (Tengri), literally 'Father Bald (Sky)'. Esege means 'father'; malaan means 'bald, bare', here understood of the open, cloudless sky, so the epithet is read both literally 'Bald-Headed Father' and figuratively 'Father of the Clear/Cloudless Sky'. In Buryat the related expression malaan tolgoiton 'bald-headed' was popularly extended to mean 'wise-headed', which colours the figure as a venerable patriarch.",
+    "sources": [{ "kind": "secondary", "reference": "D. A. Nikolaeva et al., 'Image of Esege Malan Tengri in the Context of Religious and Mythological Tradition of the Buryats' (peer-reviewed art., libmonster), glossing Esege 'father' + malaan 'bald/cloudless'; cf. U. Harva (Holmberg), Finno-Ugric and Siberian Mythology (1927)" }]
+  },
+  "buryat_khan_khormusta": {
+    "languageFamily": "Mongolic (Buryat); ultimately Iranian (Avestan) loan via Sogdian and Old Uyghur",
+    "etymology": "Mongolic Qormusta / Khormusta (Tengri) is a naturalized loan from the Iranian theonym Ahura Mazdā. The chain runs Avestan Ahura Mazdā > Middle Persian Ohrmazd > Sogdian Xwrmztʼ (Xormuzta) > Old Uyghur > Mongolic Qormusta, the Sogdian Buddhist/ Manichaean form being transmitted to the Mongols via the Uyghurs; among the Buryats he is fully assimilated as chief of the western (white) tengri.",
+    "sources": [{ "kind": "secondary", "reference": "Walther Heissig, The Religions of Mongolia (1980), on Qormusta Tngri deriving his name from Ahura Mazda and occurring in Mongol shamanic fire-prayers; Sogdian Xwrmztʼ < Avestan Ahura Mazdā" }]
+  },
+  "buryat_morgon_kara": {
+    "languageFamily": "Mongolic (Buryat)",
+    "etymology": "The anglicized 'Morgon-Kara' renders Buryat Mergen Khara. Mergen is the well-attested Mongolic/Turkic word 'wise, skilled (one), expert marksman/archer' (continuing Proto-Mongolic *mergen, with cognates such as Khalkha mergen 'wise', Bashkir märgän 'marksman'); Khara is the common Mongolic adjective 'black'. The hero's name thus means roughly 'the Wise/Sharpshooting Black (One)'.",
+    "sources": [{ "kind": "secondary", "reference": "N. Poppe, Introduction to Mongolian Comparative Studies (1955) (Mongolic *mergen ‘wise, skilled archer’); the figure in M. Eliade, Shamanism (1964)" }]
+  },
+  "cantabrian_candamius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Cantabrian-Asturian)",
+    "etymology": "Theonym Candamius, attested as the epithet Iuppiter Candamius in the Asturo-Cantabrian north. The name is generally derived from the Indo-European root *kand- 'to shine, glow, burn' (whence Latin candēre), fitting a luminous sky/storm god of the mountain heights; it is echoed by oronyms and toponyms of the same family (Candamo, Candanedo, Candina). A minority alternative connects it instead to a pre-Latin *kanda 'stone, rocky ground'.",
+    "sources": [{ "kind": "secondary", "reference": "M. L. Albertos Firmat (deriving Candam- from *kand- 'brillar, arder, resplandecer'), cited s.v. Candamius; J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "cantabrian_erudinus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Cantabrian)",
+    "etymology": "Theonym attested as the dative Erudino on the Pico Dobra altar (AD 161), Cantabria. B. M. Prósper analyses it from an Indo-European *peruntino- 'that of last year, of the previous (year)' (to the root *per- 'last year / a year ago', as in Greek pérusi), with the regular Celtic loss of initial *p- (*peruntino- > *eruntino- > Erudino-); the sense suits a vegetation/first-harvest god, since the new crop springs from the prior year's seed.",
+    "sources": [{ "kind": "secondary", "reference": "Blanca María Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (Salamanca: Ediciones Universidad de Salamanca, 2002), reconstructing Erudino- < *peruntino- 'of last year'" }]
+  },
+  "cantabrian_mater_deva": {
+    "languageFamily": "Celtic (Hispano-Celtic / Cantabrian)",
+    "etymology": "The theonym is the Latin epithet Deva in Mater Deva ('Mother Goddess / River-Mother'), from Celtic *dēwā 'goddess, divine female one' (< Proto-Indo-European *deiwos 'god', the same root as Latin deus/diva). The form is the regular source of the widespread Iberian river-name Deva, the river being conceived as a divinized goddess; hence the cult of the river-mother at Mount Cildá.",
+    "sources": [{ "kind": "secondary", "reference": "Ranko Matasović, Etymological Dictionary of Proto-Celtic (Brill, 2009), s.v. *dēwo- / *dēwā 'god, goddess'" }, { "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005) (Cantabrian river/mother-goddess Deva)" }]
+  },
+  "celtiberian_cariociecus": {
+    "languageFamily": "Celtic (Hispano-Celtic / Lusitanian-Galician)",
+    "etymology": "Attested only as the epithet of Mars Cariociecus (dedication at Tude/Tuy, Galicia); the underlying native theonym is uncertain. The traditional scholarly hypothesis, due to José Leite de Vasconcelos, derives the first element cario- from Celtic *corio- 'host, body of troops, war-band' (cf. Gaulish corio-, Old Irish cuire 'troop'), fitting a war-god; the second element -ciecus remains unexplained, so the etymology is partial and debated.",
+    "sources": [{ "kind": "secondary", "reference": "José Leite de Vasconcelos, Religiões da Lusitânia, vol. 2 (Lisbon, 1905) (cario- < Celtic corio- 'body of troops')" }, { "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "celtiberian_lugus": {
+    "languageFamily": "Celtic (Hispano-Celtic / Celtiberian)",
+    "etymology": "Celtiberian theonym attested as dat. sg. Luguei (Peñalba de Villastar) and, characteristically in the plural, Latin dat. pl. Lugovibus 'to the Lugoves' (Uxama), from Proto-Celtic *Lugus. The root is genuinely contested: the most-cited proposal connects it to PIE *leugh- 'to bind by oath' via Celtic *lugiyo- 'oath' (cf. Old Irish luige, Welsh llw 'oath'); rival derivations from *leug- 'black' (Gaulish lugos 'raven', per Pokorny) or from a root meaning 'light' have also been advanced and none is secure.",
+    "sources": [{ "kind": "secondary", "reference": "Ranko Matasović, Etymological Dictionary of Proto-Celtic (Brill, 2009), s.v. *lug-" }, { "kind": "secondary", "reference": "Xavier Delamarre, Dictionnaire de la langue gauloise (2nd ed., Errance, 2003), s.v. Lugus / lugus" }]
+  },
+  "celtiberian_neto": {
+    "languageFamily": "Celtic (Hispano-Celtic / Celtiberian)",
+    "etymology": "War-god attested as Celtiberian Neito (Botorrita bronze), Latinized Neto/Neton (Macrobius, votive altars, later as Mars Neto). The name is generally derived from a Proto-Celtic root *nei-t- / *nītu- 'fighting fury, passion, ardour' (cf. Old Irish níth 'combat, fury'), and is cognate with the name of the Irish war-god Neit; the connection is widely accepted, though the precise reconstruction is debated.",
+    "sources": [{ "kind": "secondary", "reference": "Ranko Matasović, Etymological Dictionary of Proto-Celtic (Brill, 2009), s.v. *nītu- 'fury, combat'" }, { "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005); Macrobius, Saturnalia I.19.5 (primary attestation of Neton)" }]
+  },
+  "chaga_ruwa": {
+    "languageFamily": "Niger-Congo (Bantu, Chaga/Kichagga)",
+    "etymology": "Chaga Ruwa (western variant Iruva), the supreme/sun high-god, is the ordinary Chaga (Kichagga) word for 'sun'; the deity is identified with, or conceived as dwelling in, the sun. Dundas notes the Chaga themselves were not agreed whether Ruwa is the sun itself or its indweller.",
+    "sources": [{ "kind": "ethnography", "reference": "Charles Dundas, Kilimanjaro and Its People (Witherby, 1924), pp. 107-109" }, { "kind": "ethnography", "reference": "Bruno Gutmann, Das Recht der Dschagga (C. H. Beck, 1926)" }]
+  },
+  "chamorro_fuuna": {
+    "languageFamily": "Austronesian (Chamorro/CHamoru)",
+    "etymology": "Primordial creator-sister whose name is recorded in early Spanish sources as Fo'na/Fouha (the petrification site Lasso' Fu'a / Fouha Bay preserves it). In Chamorro Fo'na is connected with the word for 'first, ahead, origin' (mo'na 'before/in front'), fitting the first-creator; later scholarship cautions that the now-common spelling Fu'una has no clear meaning in Chamorro, so the original form and sense are debated.",
+    "sources": [{ "kind": "secondary", "reference": "Lawrence J. Cunningham, Ancient Chamorro Society (Bess Press, 1992)" }, { "kind": "secondary", "reference": "Scott Russell, Tiempon I Manmofo'na: Ancient Chamorro Culture and History of the Northern Mariana Islands (Micronesian Archaeological Survey Report 32, CNMI, 1998)" }]
+  },
+  "chamorro_puntan": {
+    "languageFamily": "Austronesian (Chamorro/CHamoru)",
+    "etymology": "Primordial creator-brother recorded in early sources as Pontan/Puntan. The name is widely judged not to be of native origin: as spelled, Puntan corresponds to Spanish punta 'point, tip, end' (with an excrescent -n), reflecting post-contact transmission of the myth; the genuinely indigenous form and meaning are uncertain and debated.",
+    "sources": [{ "kind": "secondary", "reference": "Scott Russell, Tiempon I Manmofo'na (Micronesian Archaeological Survey Report 32, CNMI, 1998)" }, { "kind": "secondary", "reference": "Lawrence J. Cunningham, Ancient Chamorro Society (Bess Press, 1992)" }]
+  },
+  "chamorro_taotaomona": {
+    "languageFamily": "Austronesian (Chamorro/CHamoru)",
+    "etymology": "Class of ancestral spirits, taotaomo'na, a transparent compound of Chamorro taotao 'person, people' + mo'na 'before, in front, formerly' — literally 'people of before / people of the past' (the ante or aniti of the ancestors, recast as ghosts under Spanish Christianization).",
+    "sources": [{ "kind": "secondary", "reference": "Donald M. Topping, Pedro M. Ogo & Bernadita C. Dungca, Chamorro-English Dictionary (University of Hawaii Press, 1975), s.v. taotao, mo'na" }, { "kind": "secondary", "reference": "Lawrence J. Cunningham, Ancient Chamorro Society (Bess Press, 1992)" }]
+  },
+  "cherokee_asgaya_gigagei": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Asga'ya Gi'gagei 'Red Man', the thunder/lightning spirit of the healing formulas, a compound of asga'ya 'man' + gi'gage(i) 'red' (red being the color of the east, of power and success); addressed as Red Woman (with the corresponding feminine) according to the patient's sex.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, The Sacred Formulas of the Cherokees (1891)" }, { "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900)" }]
+  },
+  "cherokee_kanati": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Kana'ti, the 'Lucky Hunter', first man and keeper of the game; Mooney records the traditional rendering 'Lucky Hunter' (also 'the great rabbit-hunter') for the name. Some present-day Cherokee speakers contest the 'lucky' gloss, connecting the word instead to the root for 'hunter' (kanohalidohi), so the precise literal sense is debated even though the figure and the traditional translation are well attested.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Kana'ti glossed 'Lucky Hunter')" }]
+  },
+  "cherokee_nunnehi": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Nûñnë'hï, the immortal spirit-people of the highlands; Mooney translates the name literally as 'people who live anywhere', interpreted as 'those who live forever / the immortals'. They dwell in townhouses under the bald mountains and mounds such as Nikwasi.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Nûñnë'hï 'people who live anywhere')" }]
+  },
+  "cherokee_selu": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Selu (ᏎᎷ) literally 'corn, maize', the Corn-Mother and first woman whose slain, dragged body yields cultivated corn to the people.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Selu 'corn')" }]
+  },
+  "cherokee_thunder_boys": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Twin sons of Kanati and Selu, known as the Anisga'ya Tsunsdi' 'the Little Men', a compound of anisga'ya 'men' (plural of asga'ya 'man') + tsunsdi' 'little' (plural of usdi' 'small'); they dwell above the sky vault (Usûñhi'yï) and their voices are heard as thunder in the west.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (1900) (Anisga'ya Tsunsdi' 'the Little Men')" }]
+  },
+  // ══ Alphabetical sweep batch 3 (worklist indices 95-174: research-sourced,
+  //    vetted; Egyptian royal names, Elamite, Dacian, Dinka, Dogon, Cherokee, etc.) ══
+  "cherokee_uktena": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Uktena, glossed by Mooney as 'The Keen-eyed.' In his telling the Little Men 'changed a man into a monster snake, which they called Uktena, \"The Keen-eyed\"' and sent it to kill the Sun, the name evidently referencing the serpent's deadly, paralyzing gaze. Mooney records the native form and this gloss directly; he offers no further morpheme-by-morpheme breakdown.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900)" }]
+  },
+  "cherokee_unelanuhi": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "Cherokee Une'länûñ'hï (Unelanuhi), which Mooney glosses as 'the great Apportioner,' an epithet of the Sun (a female being in Cherokee myth); the name characterizes the Sun as the one who apportions, i.e. measures out, time and the day. Mooney supplies the native form and the 'apportioner' meaning but no segmented morphological derivation.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900)" }]
+  },
+  "cherokee_unetlanvhi": {
+    "languageFamily": "Iroquoian (Cherokee)",
+    "etymology": "The Cherokee supreme being is named with the same 'apportioner' epithet (Une'länûñ'hï / Unetlanvhi) that Mooney records for the Sun, denoting the one who apportions or ordains; the impersonal creator and the Sun thus share this title in Cherokee. The 'apportioner' gloss is explicitly Mooney's; the precise internal morphology of the form is not segmented by the source, so the derivation beyond the 'apportion' sense is left open.",
+    "sources": [{ "kind": "ethnography", "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900)" }]
+  },
+  "chewa_chiuta": {
+    "languageFamily": "Niger-Congo (Bantu, Chewa/Nyanja)",
+    "etymology": "Chewa Chiuta / Chauta, analyzed by Wendland as 'Great-[God]-of-the-Bow': the element -uta means 'bow,' the 'bow' here read as the rainbow or 'great bow in the heavens,' so the name presents the high god through the sky-bow theophany. Wendland makes this the basis for adopting Chauta to render Yahweh; he discusses the bow/rainbow reading explicitly.",
+    "sources": [{ "kind": "secondary", "reference": "Ernst R. Wendland, 'Yahweh — The Case for Chauta \"Great-[God]-of-the-Bow\",' The Bible Translator 43(4) (1992)" }]
+  },
+  "cheyenne_maheo": {
+    "languageFamily": "Algonquian (Cheyenne)",
+    "etymology": "Cheyenne Ma'heo'o, the term for the supreme sacred being (plural ma'heono 'sacred beings'); Cheyenne linguists (Wayne Leman, Chief Dull Knife College) hold that the word cannot be further segmented into meaningful parts and specifically reject the popular parse 'All-Father'/'All-Spirit', because the morpheme for 'all' is the aspirated mȧhe- (distinct from the plain m- of Ma'heo'o). The attested sense is therefore 'sacred one / sacred being,' with the 'All-' etymology treated as folk etymology.",
+    "sources": [{ "kind": "secondary", "reference": "Wayne Leman, 'A sacred error: Cheyenne Ma'heo'o doesn't mean \"All-Father\"' / Cheyenne Dictionary (cheyennelanguage.org, Chief Dull Knife College)" }, { "kind": "ethnography", "reference": "Peter J. Powell, Sweet Medicine, 2 vols. (Univ. of Oklahoma Press, 1969)" }]
+  },
+  "cheyenne_sweet_medicine": {
+    "languageFamily": "Algonquian (Cheyenne)",
+    "etymology": "Cheyenne Mótsé'eóeve, a transparent calque rendered 'Sweet Medicine' (also 'Sweet Root'), from the element motse- 'sweet' applied to a sacred medicinal plant/root; the prophet is correspondingly known in English as Sweet Medicine and popularly as Arrow Boy. The native form and the 'sweet medicine/sweet root' gloss are attested; the figure and name are documented by Powell and in Cheyenne-language reference sources.",
+    "sources": [{ "kind": "secondary", "reference": "Peter J. Powell, Sweet Medicine (Univ. of Oklahoma Press, 1969); motse- ‘sweet’ per W. Leman, Cheyenne Dictionary" }]
+  },
+  "chimalman": {
+    "languageFamily": "Uto-Aztecan (Nahuatl)",
+    "etymology": "Nahuatl Chimalman, from chimalli 'shield'; the second element is disputed. The translators of Ruiz de Alarcón's Treatise on the Heathen Superstitions (J. Richard Andrews and Ross Hassig) analyze it with mani 'to be/lie extended (of a flat-bottomed thing)', giving roughly 'One-who-has-lain/sat like a shield' (i.e. '-man' = 'she lies like a shield'), and note that the common reading from maitl 'hand' (yielding 'shield-hand'/'shield-bearer') does not fit the form, even though a hand appears on her huipil in the Codex Aubin as a possible phonetic cue for the -man ending. So 'shield-hand' is a recognized but contested folk parse beside the chimalli + mani analysis.",
+    "sources": [{ "kind": "secondary", "reference": "Hernando Ruiz de Alarcón, Treatise on the Heathen Superstitions, trans. & ed. J. Richard Andrews and Ross Hassig (Univ. of Oklahoma Press, 1984)" }, { "kind": "secondary", "reference": "Frances Karttunen, An Analytical Dictionary of Nahuatl (Univ. of Texas Press, 1983; Univ. of Oklahoma Press, 1992)" }]
+  },
+  "chuukese_anulap": {
+    "languageFamily": "Austronesian (Oceanic; Chuukic — Chuukese/Trukese)",
+    "etymology": "Chuukese Anulap (also Enúúnap, Onulap) is the high creator-spirit whose name is glossed 'Great Spirit'. It is transparently the noun for 'spirit/god' plus an augmentative 'great, big': the first element corresponds to Chuukese énú 'god, spirit, ghost; supernatural being' and the final element is the productive Chuukese augmentative -lap / -nap 'big, great' (whence the Enúúnap variant). The 'great spirit' reading is the gloss given in the ethnographic literature; the morpheme énú 'god/spirit' and the augmentative -(n)ap 'big' are those documented for Chuukese in Goodenough & Sugita's dictionary.",
+    "sources": [{ "kind": "ethnography", "reference": "Laurentius Bollig, Die Bewohner der Truk-Inseln (Anthropos-Bibliothek, 1927), which records Anulap as the Chuukese high god ('great spirit')." }, { "kind": "secondary", "reference": "Ward H. Goodenough & Hiroshi Sugita, Trukese-English Dictionary / Pwpwuken tettenin fóós, Chuuk-Ingenes (American Philosophical Society Memoirs 141, 1980), for Chuukese énú 'god, spirit' and the augmentative -(n)ap 'big, great'." }]
+  },
+  "chuukese_lugeilan": {
+    "languageFamily": "Austronesian (Oceanic; Chuukic — Carolinian/Chuukese)",
+    "etymology": "Carolinian/Chuukese Lugeilang (also Lugeleng, Lukeilang, Lugeilan, shortened Lug), the sky-god's son and bringer of useful arts, bears a name conventionally rendered 'middle/lord of heaven'. Its final element is the Carolinian noun lááng / -lang 'sky, heaven', which descends from Proto-Chuukic and Proto-Micronesian *laŋi 'sky, heaven, storm' (ultimately Proto-Oceanic *laŋit, Proto-Malayo-Polynesian *laŋit). The deity belongs to the genealogy Anulap > Lugeilang > Olifat.",
+    "sources": [{ "kind": "secondary", "reference": "Proto-Micronesian *laŋi 'sky, heaven, storm' as reconstructed by Byron W. Bender et al., 'Proto-Micronesian Reconstructions' (Oceanic Linguistics, 2003), giving the Chuukic lááng/-lang reflex." }, { "kind": "ethnography", "reference": "Micronesian religion reference literature (e.g. the 'Micronesian Religions' survey in the Encyclopedia of Religion, drawing on Bollig 1927 and William A. Lessa's Carolinian work) glossing Lugeilang as 'middle of heaven' within the Anulap–Lugeilang–Olifat genealogy." }]
+  },
+  "cree_kise_manitow": {
+    "languageFamily": "Algonquian (Plains Cree / nêhiyawêwin)",
+    "etymology": "Plains Cree kisê-manitow (Standard Roman Orthography), glossed 'the Creator, the Great Spirit / God', is a compound of the preverb/element kisê- 'great; kind, compassionate' and the noun manitow 'spirit, sacred power, God'. The noun manitow continues Proto-Algonquian *maneto·wa 'supernatural being, spirit' (the same etymon underlying Ojibwe manidoo and the Anglicized 'manitou'/'Gitche Manitou'). The Swampy (n-dialect) cognate is kihci-manitow, with kihci- 'great, chief' in place of y-dialect kisê-.",
+    "sources": [{ "kind": "secondary", "reference": "Arok Wolvengrey, Cree: Words / nêhiyawêwin: itwêwina (University of Regina Press, 2001), the dictionary corpus underlying the itwêwina Plains Cree dictionary, which lists kisê-manitow 'the Creator, the Great Spirit' and manitow 'spirit, God'." }, { "kind": "secondary", "reference": "Proto-Algonquian *maneto·wa 'supernatural being' as reconstructed in the comparative Algonquian tradition (cf. Leonard Bloomfield's Algonquian work; summarized with the Cree manito·w reflex in standard etymological references for 'manitou')." }]
+  },
+  "crow_old_man_coyote": {
+    "languageFamily": "Siouan (Missouri Valley; Crow / Apsáalooke)",
+    "etymology": "The Crow creator-trickster is known by several descriptive Apsáalooke names whose meanings are transparent translations: Isáahkawuattee 'Old Man Coyote' (the proper Coyote-trickster theonym); Akbaatatdía 'the One Who Has Made Everything / Maker of All Things Above' (used of the supreme creator); and Iichíkbaalee 'the First Maker / First Doer'. Robert H. Lowie documents this creator-trickster ('First-Worker'/'First-Maker') figure in Crow narrative; the Crow-language name glosses are given by Crow/Apsáalooke sources.",
+    "sources": [{ "kind": "ethnography", "reference": "Robert H. Lowie, The Crow Indians (Farrar & Rinehart, 1935), and 'Myths and Traditions of the Crow Indians,' Anthropological Papers AMNH 25.1 (1918), documenting the Old-Man-Coyote / First-Maker creator-trickster." }, { "kind": "secondary", "reference": "Little Big Horn College (Apsáalooke tribal college) Crow-language resources, glossing Akbaatatdía 'One Who Has Made Everything / Maker of All Things Above', Iichíkbaalee 'First Maker', and Isáahkawuattee 'Old Man Coyote'." }]
+  },
+  "dacian_zalmoxis": {
+    "languageFamily": "Thracian (Paleo-Balkan, fragmentarily attested Indo-European)",
+    "etymology": "The name (Greek Zalmoxis, with an attested metathetic variant Zamolxis ~ Zamolxis) is anciently and modernly debated, and the registry presents the debate rather than choosing. (1) Bear-skin/'hide' etymology: Porphyry, in his Vita Pythagorae (Life of Pythagoras), reports that zalmos is the Thracian word for 'hide/skin' (Greek dora) and tells an aetiological tale that the infant god was wrapped in a bear's skin at birth; Diogenes Laertius likewise glosses the name as 'bear-skin'. (2) Indo-Europeanist 'earth/men' etymology: Paul Kretschmer connected the metathetic form Zamolxis with the Thraco-Phrygian earth-goddess name Zemelo (cf. Greek Semele) and Slavic zemlja 'earth', construing the name as roughly 'lord/master of men', and linking the doublet Gebeleizis to the same root *g'hem-el- 'earth'. (3) Dimiter Detschev (Die thrakischen Sprachreste, 1957, p. 175) observed that Indo-European correspondents of zalmos also carry the sense 'shield, protection', a meaning he found apt for both a god and a high priest. The native segmentation of the individuating element thus remains genuinely contested among Thracologists, with the -lm- order generally held to be older than the -ml- order required by the 'earth' derivation.",
+    "sources": [{ "kind": "primary", "reference": "Porphyry, Vita Pythagorae (Life of Pythagoras) 14-15, on Thracian zalmos 'hide' and the bear-skin aetiology" }, { "kind": "primary", "reference": "Diogenes Laertius, Lives of the Eminent Philosophers 8.1 (glossing the name as 'bear-skin'); cf. Herodotus, Histories 4.94-96 for the figure" }, { "kind": "secondary", "reference": "Paul Kretschmer, comparison of Zamolxis with Zemelo and Slavic zemlja ('lord of men' / 'earth' etymology), as reported in the Encyclopedia of Religion 'Geto-Dacian Religion' / 'Zalmoxis' entries" }, { "kind": "secondary", "reference": "Dimiter Detschew (Detschev), Die thrakischen Sprachreste (Vienna, 1957), p. 175, on zalmos and IE cognates meaning 'shield, protection'" }]
+  },
+  "dayak_mahatala": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; Ngaju, Barito group of southern Borneo)",
+    "etymology": "Ngaju Mahatala (also Hatala, Lahatala; priestly title Ranying Hatalla Langit) names the upper-world half of the bisexual supreme godhead described by Hans Schaerer, who paired Mahatala (upperworld, hornbill, sun) with Jata (underworld, watersnake). The name itself is not native Ngaju but a borrowing, and its source is debated among named scholars: the prevailing view (G. A. Wilken and the standard Indonesian/Borneo literature) derives Hatala/Mahatala/Lahatala from the Arabic invocation Allah taʿala 'God, be exalted', borne inland through Malay-Islamic contact; against this, Ferdinand Blumentritt analysed Mahatala/Mahatara as a contraction of Mahabatara (Sanskrit-derived Maha-batara) 'the Great Lord'. The registry records both attributed derivations rather than adjudicating between them.",
+    "sources": [{ "kind": "ethnography", "reference": "Hans Schaerer, Ngaju Religion: The Conception of God among a South Borneo People, trans. Rodney Needham (The Hague: Martinus Nijhoff, 1963 [Dutch orig. 1946]) - for Mahatala/Jata as the dual godhead and the priestly name Ranying Hatalla Langit" }, { "kind": "secondary", "reference": "G. A. Wilken (and standard Borneo/Malay scholarship): derivation of Hatala/Mahatala/Lahatala from Arabic Allah taʿala" }, { "kind": "secondary", "reference": "Ferdinand Blumentritt: derivation of Mahatala/Mahatara from Mahabatara 'the Great Lord'" }]
+  },
+  "desana_daughter_of_the_sun": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "Identified by Reichel-Dolmatoff with the Yaje Woman, Desana gahpi mahso. The compound is transparently glossable from elements he himself defines: gahpi is the Desana name of the yaje / caapi vine (Banisteriopsis caapi), and mahso is the feminine 'woman' (the feminine counterpart of mahse 'man, person, thinking being'), so the appellation means literally 'yaje woman / woman of the caapi vine'. The honorific 'Daughter of the Sun' is a relational title rather than a lexical etymology of the name.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - gahpi as the Desana name of the yaje/caapi vine; mahse 'man/person/being' (fem. mahso 'woman'); identification of the Yaje Woman with the Daughter of the Sun" }]
+  },
+  "desana_emekori_mahse": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "A collective class of celestial 'day-dimension' beings in Reichel-Dolmatoff's account of Desana cosmology (Emekori-mahse), created by the Sun and set in the sky, representing the principle of good. The final element mahse is explicitly glossed by Reichel-Dolmatoff as 'man, a person, a thinking being' (he derives it from the same root as mahsiri 'to know'), and recurs across the Desana spirit-names (Vai-mahse, Pamuri-mahse). The individuating element emekori- is not given a secure morphemic gloss in the sources and is left unanalysed here.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - mahse defined as 'man, a person, a thinking being'; Emekori-mahse as celestial beings created by the Sun" }]
+  },
+  "desana_pamuri_mahse": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "The emissary/culture-hero whom the Sun sent to populate the earth in the Snake-Canoe (pamuri-gahsiru). The final element mahse is explicitly glossed by Reichel-Dolmatoff as 'man, a person, a thinking being', so the name designates the 'Pamuri person/being'. The individuating element pamuri- is associated by Reichel-Dolmatoff with the primordial migration and the anaconda/snake-canoe complex (it also forms the canoe-name pamuri-gahsiru), but the sources do not provide a clean, separable morphemic meaning for pamuri- itself, which is therefore left unanalysed rather than guessed.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - mahse 'man/person/being'; Pamuri-mahse and the Snake-Canoe pamuri-gahsiru" }, { "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios Tukano del Vaupes (Bogota: Universidad de los Andes, 1968)" }]
+  },
+  "desana_sun_father": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "The Desana creator-deity, the Sun-Father, named Abe 'sun' in Reichel-Dolmatoff's record; he is distinguished from his emissary Pamuri-mahse whom he dispatched to populate the earth. The native lexeme Abe is thus the ordinary Desana word for the sun, transferred to the deity; the 'father' element is a relational epithet (Sun-Father) rather than part of the lexical name. Reichel-Dolmatoff reads the figure through a pervasive symbolism of yellow light and seminal/fertilising power.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - Abe 'sun'; the Sun-Father as creator, distinct from Pamuri-mahse" }, { "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios Tukano del Vaupes (Bogota: Universidad de los Andes, 1968), pp. 24-30" }]
+  },
+  "desana_vai_mahse": {
+    "languageFamily": "Tucanoan (Eastern Tukano; Desana of the Vaupes, Colombia)",
+    "etymology": "The Master of Animals, a guardian-spirit of game (a small red anthropomorph in Reichel-Dolmatoff's accounts). The name is a transparent compound of two elements both glossed by Reichel-Dolmatoff: vai 'animal, game (especially fish/game animals)' + mahse 'man, a person, a thinking being'. Vai-mahse therefore means literally 'game person / animal-being', i.e. the personified Master/Owner of the game, who regulates hunting so that humans do not take more than their due.",
+    "sources": [{ "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Amazonian Cosmos: The Sexual and Religious Symbolism of the Tukano Indians (Chicago: University of Chicago Press, 1971) - Vai-mahse as Master of Animals; mahse 'man/person/thinking being'; vai 'animal/game'" }, { "kind": "ethnography", "reference": "Gerardo Reichel-Dolmatoff, Desana: Simbolismo de los indios Tukano del Vaupes (Bogota: Universidad de los Andes, 1968)" }]
+  },
+  "dinka_deng": {
+    "languageFamily": "Nilotic (Western Nilotic; Dinka / Thuongjang, Nilo-Saharan)",
+    "etymology": "Deng (augmented Dengdit, with -dit 'great/big') is the foremost free-divinity of rain and sky. The name is the ordinary Dinka common noun deng 'rain', transferred to the divinity, so that the rain-power and the deity bear one and the same word, as recorded in Lienhardt's account of the free-divinities. Lienhardt himself was known to the Dinka by a name incorporating this element (Thienydeng).",
+    "sources": [{ "kind": "ethnography", "reference": "Godfrey Lienhardt, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961) - Deng/Dengdit as free-divinity of rain and sky; deng as the Dinka word for 'rain'" }]
+  },
+  "dinka_nhialic": {
+    "languageFamily": "Nilotic (Western Nilotic; Dinka / Thuongjang, Nilo-Saharan)",
+    "etymology": "Nhialic, the supreme Divinity identified with the sky, is the locative/derived form of the Dinka adverb-noun nhial 'up, above', used where English would speak of 'the sky'; Lienhardt accordingly renders Nhialic as 'that which is in the sky / above'. The divine name is thus literally 'the above / that which is on high', the same word the Dinka use for the sky from which rain and life descend.",
+    "sources": [{ "kind": "ethnography", "reference": "Godfrey Lienhardt, Divinity and Experience: The Religion of the Dinka (Oxford: Clarendon Press, 1961) - Nhialic as the locative of nhial 'up/above', glossed as 'that which is above [in the sky]'" }]
+  },
+  "dogon_amma": {
+    "languageFamily": "Dogon (independent branch within Niger-Congo; Mali)",
+    "etymology": "Amma, the genderless Dogon creator and sky-god who made the world-egg and the Nommo, bears a name that the Griaule-Dieterlen tradition glosses from the Dogon verb amma 'to hold firm, to grasp, to establish' - Amma being conceived as the god who holds the world firmly in both hands. The name is thus read as descriptive of the creator's sustaining grip on the cosmos rather than as an opaque proper noun.",
+    "sources": [{ "kind": "ethnography", "reference": "Marcel Griaule & Germaine Dieterlen, Le renard pale (Paris: Institut d'Ethnologie, 1965); cf. Marcel Griaule, Dieu d'eau / Conversations with Ogotemmeli (1948) - Amma as creator; the verbal sense 'to hold firm/grasp/establish' as reported in the Encyclopedia of Religion 'Dogon Religion' entry drawing on Griaule and Dieterlen" }]
+  },
+  "e_bangishimog": {
+    "languageFamily": "Algic (Anishinaabe / Ojibwe)",
+    "etymology": "Ojibwe (Anishinaabemowin) e-bangishimog, a participial/changed-conjunct nominalization of the verb bangishimo (stem /bangishimo-/) 'it sets, is sunset (of the sun)'; the conjunct form bangishimog literally means '(where/when the sun) sets', i.e. 'the West / the place of sunset'. The element joins bangishin 'to fall down' + the directional/medial referring to the sun's descent. As a personified manidoo, E-bangishimog is thus the West Wind, 'the one of the place where the sun sets', father of Wenabozho in the Anishinaabe tradition.",
+    "sources": [{ "kind": "secondary", "reference": "John D. Nichols & Earl Nyholm, A Concise Dictionary of Minnesota Ojibwe (Minneapolis: Univ. of Minnesota Press, 1995), s.v. bangishimo" }, { "kind": "secondary", "reference": "The Ojibwe People's Dictionary (Univ. of Minnesota; John D. Nichols, ed.), entry 'bangishimo (vai/vii)' — '(the sun) sets, is sunset'" }]
+  },
+  "edo_ogiuwu": {
+    "languageFamily": "Niger-Congo (Edoid / Edo-Bini)",
+    "etymology": "Edo (Bini) Ogiuwu, 'king of death', a transparent compound of ogie 'king, ruler, lord' + uwu 'death' (both elements attested as headwords in Melzian's Bini dictionary). In Benin cosmology Ogiuwu is the personified king/lord of death, a senior child of the creator Osanobua, whose terrifying messenger is Ofoe; his cult had a central shrine and chief priest in Benin City but is no longer actively maintained.",
+    "sources": [{ "kind": "secondary", "reference": "Hans Melzian, A Concise Dictionary of the Bini Language of Southern Nigeria (London: Kegan Paul, 1937), s.vv. ogie 'king/ruler', uwu 'death'" }, { "kind": "ethnography", "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-Speaking Peoples of South-Western Nigeria (London: International African Institute, 1957) — Edo high god and his children" }]
+  },
+  "edo_olokun": {
+    "languageFamily": "Niger-Congo (Edoid / Edo-Bini)",
+    "etymology": "Edo (Bini) Olokun, glossed by the Encyclopedia of African Religion as 'the owner of (the great) waters'. The name is transparently compositional from Edo okun 'sea, ocean' (attested in Melzian's Bini dictionary) prefixed by an agentive/possessive element (ol-/olo- 'owner, lord'; cf. the cognate Yoruba oní 'owner' + òkun 'sea'), hence 'owner of the sea'. In Benin tradition Olokun is the senior child of Osanobua and the deity of the waters, wealth and fertility.",
+    "sources": [{ "kind": "secondary", "reference": "Molefi Kete Asante & Ama Mazama (eds.), Encyclopedia of African Religion (Thousand Oaks: SAGE, 2008), 'Olokun' — 'the owner of great waters'" }, { "kind": "secondary", "reference": "Hans Melzian, A Concise Dictionary of the Bini Language of Southern Nigeria (London: Kegan Paul, 1937), s.v. okun 'sea'" }]
+  },
+  "egyptian_ahmose": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian jꜥḥ-ms(j.w) (conventionally Ahmose / Ahmes), a theophoric birth-name 'Iah is born' or 'the Moon is born', compounding the lunar god-name jꜥḥ 'Moon/Iah' with the participial/stative of the verb msj 'to bear, give birth'. The name was extremely common at the start of the 18th Dynasty and was borne by the queen Ahmose, Great Royal Wife of Thutmose I and mother of Hatshepsut.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. jꜥḥ-ms" }, { "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, 2013) — on jꜥḥ/ms name-formation" }]
+  },
+  "egyptian_akhenaten": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ꜣḫ-n-jtn, the regnal name adopted by Amenhotep IV in his Year 5, meaning 'Effective for the Aten' (also rendered 'Beneficial/Serviceable to the Sun-disk', or, taking ꜣḫ as the noun, 'Radiant spirit of the Aten'): the element ꜣḫ 'effective, glorious, beneficial; transfigured spirit' + n 'for/to' + the divine name jtn 'the (sun-)disk, Aten'. The change replaced his earlier theophoric of Amun (jmn-ḥtp 'Amun is content') as part of his solar-Aten reform.",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, 2013)" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, 1999), 18th Dynasty" }]
+  },
+  "egyptian_amunherkhepeshef": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian jmn-ḥr-ḫpš=f, 'Amun is with his strong arm', a theophoric sentence-name: the god-name jmn 'Amun' + ḥr 'upon/with' + ḫpš 'strong/foreleg arm, scimitar-arm' + the 3rd-person suffix =f 'his'. Borne by the eldest son of Ramesses II by Nefertari; the prince had earlier carried the variant jmn-ḥr-wnm=f 'Amun is with his right arm' before adopting this form.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. jmn-ḥr-ḫpš=f" }]
+  },
+  "egyptian_iset_ta_hemdjert": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ꜣst-tꜣ-ḥmḏrt, 'Isis, she of Hemdjeret', compounding the goddess-name ꜣst 'Isis' (the theophoric core, also written simply Iset/Isis in her tomb) with the epithet tꜣ-ḥmḏrt 'she of Hemdjeret'. The second element Hemdjert is generally taken to be non-Egyptian (probably Syrian), reflecting the queen's foreign maternal line; she was Great Royal Wife of Ramesses III and mother of Ramesses VI.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. ꜣst (Isis-compound names)" }, { "kind": "secondary", "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (London: Thames & Hudson, 2004) — on the non-Egyptian element Hemdjert" }]
+  },
+  "egyptian_khaemwaset_c": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst, 'Appearing/Arising in Thebes', a sentence-name: ḫꜥ 'to rise, appear in glory, shine forth (as a god or the king at his coronation)' + m 'in' + the toponym wꜣst 'Thebes (Waset)'. Here borne by a son of Ramesses III named after the more famous antiquarian prince; he served as High Priest of Ptah at Memphis and was buried in QV44.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. ḫꜥ-m-wꜣst" }]
+  },
+  "egyptian_khaemweset": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian ḫꜥ-m-wꜣst, 'Appearing/Arising in Thebes', the same formation as the name above: ḫꜥ 'to appear/shine forth in glory' + m 'in' + wꜣst 'Thebes (Waset)'. Borne by the fourth son of Ramesses II by Isetnofret, High Priest of Ptah at Memphis and overseer of the Apis (Serapeum) burials, later celebrated in Roman-period Demotic tales as Setne Khamuas.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. ḫꜥ-m-wꜣst" }]
+  },
+  "egyptian_merneptah": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian mr(.y)-n-ptḥ (Merneptah/Merenptah), the birth-name 'Beloved of Ptah': the passive participle mr(y) 'beloved' + the genitival n 'of' + the Memphite creator-god ptḥ 'Ptah'. Borne by the 13th son of Ramesses II by Isetnofret who succeeded as the fourth king of the 19th Dynasty; his prenomen was bꜣ-n-rꜥ mr(y)-nṯrw 'The soul of Re, beloved of the gods'.",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, 2013), 19th Dynasty" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, 1999)" }]
+  },
+  "egyptian_mutemwiya": {
+    "languageFamily": "Afroasiatic (Egyptian)",
+    "etymology": "Egyptian mwt-m-wjꜣ, 'Mut is in the (sacred) barque', a theophoric sentence-name: the Theban goddess-name mwt 'Mut' + m 'in' + wjꜣ 'sacred/processional barque'. The name is illustrated as a rebus by a Karnak granite statue showing the goddess Mut seated in a barque. Borne by the wife of Thutmose IV and mother of Amenhotep III.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (Glückstadt: Augustin, 1935), s.v. mwt-m-wjꜣ" }]
+  },
+  "egyptian_neferure": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Nfrw-Rꜥ, a theophoric feminine name combining nfrw 'beauty, perfection, goodness' (an abstract/plural formation of the adjective nfr 'good, beautiful, perfect') with the solar god Rꜥ (Re), yielding 'the beauty (perfection) of Re.' The compound follows the regular New Kingdom royal pattern of pairing an abstract quality with a divine name.",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), s.v. names compounded with nfr-/nfrw-" }, { "kind": "secondary", "reference": "Rainer Hannig, Die Sprache der Pharaonen: Großes Handwörterbuch Ägyptisch–Deutsch (Mainz: von Zabern), s.vv. nfr / nfrw" }]
+  },
+  "egyptian_pentaweret": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Pn-tꜣ-wr.t, literally 'He of Taweret,' i.e. 'the one belonging to (the goddess) Taweret' (tꜣ-wr.t 'the Great One,' the hippopotamus goddess of childbirth). The element pn is the demonstrative/relational 'this one of / he of.' The form is a documentary pseudonym substituted for the prince's true name in the trial record, not his birth name.",
+    "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin (harem-conspiracy trial record), which supplies the substitute name Pn-tꜣ-wr.t" }, { "kind": "secondary", "reference": "Hans Goedicke, 'Was Magic Used in the Harem Conspiracy against Ramesses III?', Journal of Egyptian Archaeology 49 (1963): 71-92" }]
+  },
+  "egyptian_ramesses_iv": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Nomen (birth name) Rꜥ-ms-sw 'Ra has fashioned him,' a theophoric construction: Rꜥ (the sun god Re) + ms (perfective active participle of the verb msj 'to bear, give birth, fashion') + the dependent pronoun sw 'him' = 'Re is the one who fashioned/bore him.' Borne with the epithet mri-Jmn 'beloved of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: Society of Biblical Literature, Writings from the Ancient World 33, 2013), pp. 129-131" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 168-169" }]
+  },
+  "egyptian_ramesses_vi": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Nomen (birth name) Rꜥ-ms-sw 'Ra has fashioned him,' the same theophoric formula as the other Ramessides: Rꜥ (Re) + ms (participle of msj 'to fashion, bear') + sw 'him.' His fuller nomen incorporates the princely name Imn-ḥr-ḫpš.f ('Amun is upon his strong arm'); the throne name was Nb-mꜣꜥt-Rꜥ.",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, Writings from the Ancient World 33, 2013), p. 131" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 170-171" }]
+  },
+  "egyptian_seti_ii": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Nomen Stẖy (mr-n-Ptḥ) 'He of Seth, beloved of Ptah.' The base Stẖy is a nisbe ('belonging-to' adjective) formed on the god-name Stẖ (Seth/Sutekh), thus 'the one of Seth / man of Seth'; the epithet mr-n-Ptḥ 'beloved of Ptah' follows. Throne name Wsr-ḫprw-Rꜥ stp-n-Rꜥ 'Powerful are the manifestations of Re, chosen of Re.'",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, Writings from the Ancient World 33, 2013), pp. 124-125" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 162-163" }]
+  },
+  "egyptian_setnakhte": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Stẖ-nḫt 'Seth is victorious (strong),' a verbal-sentence name: the god-name Stẖ (Seth) as subject + nḫt 'to be strong, be victorious, prevail.' Borne with the epithet mri-Jmn-Rꜥ. The throne name was Wsr-ḫꜤw-Rꜥ mri-Jmn 'Powerful of appearances is Re, beloved of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Ronald J. Leprohon, The Great Name: Ancient Egyptian Royal Titulary (Atlanta: SBL, Writings from the Ancient World 33, 2013), p. 129" }, { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 166-167" }]
+  },
+  "egyptian_sitamun": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Sꜣt-Jmn (also written zꜣt-jmn) 'Daughter of Amun,' a genitival theophoric name: sꜣt 'daughter' + the divine name Jmn (Amun), expressing the bearer's filial dedication to the god. The masculine counterpart is Sꜣ-Jmn (Siamun) 'Son of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), p. 289 (names compounded with sꜣt 'daughter of' + divine name)" }, { "kind": "secondary", "reference": "Rainer Hannig, Die Sprache der Pharaonen: Großes Handwörterbuch Ägyptisch–Deutsch (Mainz: von Zabern), s.v. sꜣt 'daughter'" }]
+  },
+  "egyptian_tausret": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Tꜣ-wsr.t 'The Mighty One' (feminine): the feminine definite article/determiner tꜣ 'the' + wsr 'mighty, powerful, strong' + feminine ending -t, i.e. 'the powerful lady.' The throne name was Sꜣt-Rꜥ-mri.t-Jmn 'Daughter of Re, beloved of Amun.'",
+    "sources": [{ "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen, 2nd ed. (Mainz: von Zabern, MÄS 49, 1999), pp. 164-165" }, { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), s.v. names in tꜣ- + wsr" }]
+  },
+  "egyptian_tiy_merenese": {
+    "languageFamily": "Afro-Asiatic (Ancient Egyptian)",
+    "etymology": "Egyptian Tjy-mr.t-n-Ꜣst 'Tiy (Teye), beloved of Isis': the personal name Tjy/Tiy followed by the theophoric epithet mr.t-n-Ꜣst 'beloved of Isis' (mr 'to love' + the goddess Ꜣst/Isis). The Isis-dedicated second element is a recurrent device in late 19th/early 20th Dynasty royal-women's names.",
+    "sources": [{ "kind": "secondary", "reference": "Aidan Dodson & Dyan Hilton, The Complete Royal Families of Ancient Egypt (London: Thames & Hudson, 2004), section on the early Twentieth Dynasty (Setnakhte's queen)" }, { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen, Bd. I (Glückstadt: J. J. Augustin, 1935), s.vv. Tjy and mri-n-(deity) epithets" }]
+  },
+  "elamite_humban": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "Elamite Humban, understood as 'the commander / the one who commands,' analyzed as a derivative of the Elamite verbal root huba- 'to command.' As chief god he bestows kitin (god-given royal/legal protection). The name is widely embedded in Neo-Elamite theophoric royal names (e.g. Humban-numena, Humban-haltash).",
+    "sources": [{ "kind": "secondary", "reference": "Gwendolyn Leick, A Dictionary of Ancient Near Eastern Mythology (London: Routledge, 1991), s.v. Humban" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. huba- / Humban" }]
+  },
+  "elamite_inshushinak": {
+    "languageFamily": "Elamite (theonym borrowed from Sumerian)",
+    "etymology": "Elamite Inšušinak, a loan from Sumerian d nin-šušinak 'Lord/Lady of Susa' (nin 'lord/lady' + Šušin 'Susa' + genitival -ak). The Elamite form arose by apheresis of the initial nin- (a process otherwise rare in the borrowing language), giving In-šušinak. He is the tutelary god of Susa and the lowland capital.",
+    "sources": [{ "kind": "secondary", "reference": "Jan Tavernier, 'Inshushinak,' in Reallexikon der Assyriologie und Vorderasiatischen Archäologie (and related study), on the Sumerian origin nin-šušinak 'lord of Susa' and the apheresis" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. Inšušinak" }]
+  },
+  "elamite_kiririsha": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "Elamite Kiririša 'Great Goddess (Great Lady),' a compound of kiri / kirir 'goddess, lady' + riš(a) 'great' (cf. the Elamite adjective rišair 'great'). The formation exactly parallels that of her consort Napiriša 'Great God' (napir 'god' + riša 'great'). She is the 'mother of the gods' and mistress of Liyan.",
+    "sources": [{ "kind": "secondary", "reference": "Walther Hinz, The Lost World of Elam (London: Sidgwick & Jackson, 1972), on Kiririša / Napiriša 'great goddess' / 'great god'" }, { "kind": "secondary", "reference": "Heidemarie Koch, studies of the Elamite pantheon (1977; 1995); cf. Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (1987), s.vv. kiri / riša" }]
+  },
+  "elamite_nahhunte": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "Elamite Nahhunte, the sun-god and god of justice (counterpart of Mesopotamian Šamaš). The theonym is identical with the Elamite common noun for 'sun' and in curse formulae stands metonymically for the sun itself. It is morphologically a compound, but its precise internal derivation cannot be securely established.",
+    "sources": [{ "kind": "secondary", "reference": "Matthew W. Stolper, on Nahhunte as a compound noun that is a cognate/homonym of the Elamite word for 'sun' whose precise etymology is undeterminable (Elamite onomastics/lexicography)" }, { "kind": "secondary", "reference": "Walther Hinz & Heidemarie Koch, Elamisches Wörterbuch (Berlin: Reimer, AMI Ergänzungsband 17, 1987), s.v. Nahhunte / nan 'day, sun'" }]
+  },
+  // ══ Alphabetical sweep batch 4 (worklist indices 175-254: research-sourced +
+  //    vetted; Elamite, Evenki, Benin obas, Gondi, and the Greek heroic block) ══
+  "elamite_napirisha": {
+    "languageFamily": "Elamite (language isolate)",
+    "etymology": "A transparent Elamite compound napir-riša 'Great God', from Elamite napir (also nap) 'god' + riša 'great' (cf. the Sumerian writing DINGIR.GAL and Akkadian ilu rabu used for the same deity). The reading napir + riša was established by Walther Hinz (1965) and is the standard analysis in Elamite lexicography, including Hinz & Koch's Elamisches Wörterbuch (1987). The same riša 'great' element recurs in the goddess-name Kiririsha.",
+    "sources": [{ "kind": "secondary", "reference": "W. Hinz (1965), reading of the name as napir 'god' + riša 'great' = 'Great God'; standard in Elamite scholarship and reflected in W. Hinz & H. Koch, Elamisches Wörterbuch (Berlin, 1987)." }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'ELAM vi. Elamite religion' (Napirisha 'Great God' of Anshan)." }]
+  },
+  "elamite_pinikir": {
+    "languageFamily": "Elamite (language isolate); name possibly of Sumerian origin",
+    "etymology": "The etymology is debated. The hittitologist Gary Beckman proposes that the name (Elamite Pinikir, with variants Pinigir/Pirengir/Pirinkir/Parakaras) is of Sumerian origin, derived from pirig.gal 'great feline / great lion' (pirig 'lion, feline' + gal 'great'). Piotr Taracha cautions that this derivation cannot be conclusively proven. The deity is an astral love-and-sky goddess later identified with Ishtar in Hurro-Hittite ritual.",
+    "sources": [{ "kind": "secondary", "reference": "Gary Beckman, proposed Sumerian etymology pirig.gal 'great feline' for Pinikir; with Piotr Taracha's caveat that it cannot be conclusively demonstrated." }, { "kind": "secondary", "reference": "Encyclopaedia Iranica, 'ELAM vi. Elamite religion' (Pinikir as astral goddess)." }]
+  },
+  "elema_eharo": {
+    "languageFamily": "Trans-New Guinea (Eleman; Elema/Orokolo)",
+    "etymology": "The Elema described the eharo masks as maea morava eharu, glossed by the ethnographer F. E. Williams as 'things of gladness' - lighthearted, festive masked beings danced as a playful prelude to the more sacred hevehe cycle, by contrast with the awe-laden ma-hevehe. The native phrase and its meaning are attested in Williams' Drama of Orokolo (1940); a morpheme-by-morpheme derivation of eharo is not given in the source, so the etymology rests on this attested glossed phrase rather than a segmentation.",
+    "sources": [{ "kind": "ethnography", "reference": "F. E. Williams, Drama of Orokolo: The Social and Ceremonial Life of the Elema (Oxford University Press / Clarendon, 1940): eharo = maea morava eharu 'things of gladness'." }]
+  },
+  "enga_kana_moon": {
+    "languageFamily": "Trans-New Guinea (Engan; Enga)",
+    "etymology": "Enga kana means 'moon'; the moon is reckoned a female sky-power opposite the male sun (cf. the Enga idiom 'niki langapu, kana langapu', 'cheat the sun, cheat the moon'). The word is the regular Engan reflex of reconstructed Proto-Engan/Proto-Trans-Enga *kana 'moon' and is recorded in the standard lexical authority, Adrianne Lang's Enga Dictionary with English Index (Pacific Linguistics, 1973).",
+    "sources": [{ "kind": "secondary", "reference": "Adrianne Lang, Enga Dictionary with English Index (Pacific Linguistics C-20, 1973): kana 'moon'." }, { "kind": "ethnography", "reference": "P. W. Brennan, Let Sleeping Snakes Lie: Central Enga Religious Belief and Ritual (1977): the moon as female sky-power opposite the male sun (Aitawe)." }]
+  },
+  "estonian_linda": {
+    "languageFamily": "Finnic (Estonian); the personal name itself of Germanic origin",
+    "etymology": "Debated, with a literary/folk-etymological history. The name Linda is a Latinate form of Germanic names ending in -linda (e.g. Old High German Thiotlinde) and was already current in Estonia when F. R. Kreutzwald adopted it for the mother of Kalevipoeg in his epic Kalevipoeg (1857-1861), on the assumption that the Tallinn place-name Lindanise derived from a personal name Linda (the epic explains Lindanise, glossed roughly 'Linda's bosom', as named in her honour). By folk etymology the name is further associated with Estonian lind 'bird' and lendama 'to fly', consonant with folklore in which Linda is hatched from a grouse's egg.",
+    "sources": [{ "kind": "primary", "reference": "F. R. Kreutzwald, Kalevipoeg (1857-1861): the figure Linda and the in-epic derivation of the place-name Lindanise (Tallinn) from her name." }, { "kind": "secondary", "reference": "Scholarly treatment of the epic Linda as a personification of Germanic-origin name with folk-etymological link to Estonian lind 'bird' (e.g. the study 'Mothers of the Land: Baltic German and Estonian Personifications ... to the Epic Linda')." }]
+  },
+  "evenki_buga": {
+    "languageFamily": "Tungusic (Northern Tungus / Evenki)",
+    "etymology": "From Evenki buga (also recorded buya, boya, boga) meaning 'sky', 'universe', 'world/locality', and by extension the supreme, eternal, omnipotent being and the cosmos as a whole. In cult the term is personified, notably as the grandmother Enekan Buga ('Grandmother Universe'); the three Evenki worlds are likewise named with buga (Ugu Buga 'upper world', Dulin/Doolin Buga 'middle world', Hergu Buga 'lower world'). S. M. Shirokogoroff recorded that buga is an old, indigenous term (not introduced by Christian missionaries) ranging in sense from cosmos to spirit-master.",
+    "sources": [{ "kind": "ethnography", "reference": "S. M. Shirokogoroff, Psychomental Complex of the Tungus (1935): buga as 'sky/universe/world' and the supreme being, an old non-missionary term." }, { "kind": "ethnography", "reference": "A. F. Anisimov, Cosmological Concepts of the Peoples of the North (1959): three-world Evenki cosmology with buga (Ugu/Dulin/Hergu Buga)." }]
+  },
+  "evenki_heglun": {
+    "languageFamily": "Tungusic (Evenki)",
+    "etymology": "From Evenki kheglun / heglun (variants Kheglen, Keglun, Xeglun) 'elk' (the animal is an elk/moose, called 'elk' in Eurasia). The word names the heavenly elk identified with the constellation Ursa Major (the Great Bear): in the widespread Cosmic Hunt myth the stars of the Dipper's bowl are the elk and the handle-stars are its pursuer(s), with variant tellings in which a hunter or the bear Mangi chases the cow-elk and her calf, the ski-track becoming the Milky Way. Documented by G. M. Vasilevich and A. F. Anisimov.",
+    "sources": [{ "kind": "ethnography", "reference": "G. M. Vasilevich, 'Early Concepts about the Universe among the Evenks', in Studies in Siberian Shamanism (1963): kheglun 'elk' as the Great Bear / cosmic-hunt quarry." }, { "kind": "ethnography", "reference": "A. F. Anisimov (1963), on Evenki cosmic-hunt mythology and the heavenly elk." }]
+  },
+  "evenki_seveki": {
+    "languageFamily": "Tungusic (Northern Tungusic; Evenki)",
+    "etymology": "The theonym Seveki (also Sevek, Amaka) is built on the Evenki/Tungus stem sevek ~ seven, the ordinary word for a 'spirit-helper' or 'idol'. Dioszegi and Hoppal, in the 'Tunguz Religion' article of the Encyclopedia of Religion, state that among all Tungus peoples seven (sevek) means 'shaman's spirit-helper', and that this same word underlies one of the names of the high god, Sevek or Seveki, the spirit who creates living things and upholds the behavioral code; the cognate taboo light-colored reindeer (sevek 'heavenly reindeer') and the ceremonial term sevenchedek 'the place where a ceremony with seven is performed' belong to the same root. The figure is thus named as the source of benevolent spirit-power rather than by a descriptive epithet. (The alternative respectful address Amaka 'grandfather' is the same honorific used for the bear.)",
+    "sources": [{ "kind": "ethnography", "reference": "S. M. Shirokogoroff, Psychomental Complex of the Tungus (London/Beijing, 1935) - primary ethnographic documentation of sevek/seven 'spirit, idol' and the high god Sevek/Seveki" }, { "kind": "secondary", "reference": "Vilmos Dioszegi and Mihaly Hoppal, 'Tunguz Religion,' in the Encyclopedia of Religion (ed. M. Eliade), which explicitly glosses seven (sevek) as 'shaman's spirit-helper' and connects it to the high-god name Sevek/Seveki" }]
+  },
+  "eweka_i": {
+    "languageFamily": "Edo (Edoid, Volta-Niger; Bini/Edo of Benin)",
+    "etymology": "According to the canonical Benin chronicle, the regnal name Eweka is an Edo (Bini) corruption of the exclamation Owomika, uttered by the young son of Oranmiyan and understood as 'I have got (succeeded in obtaining) my desire' / 'I have got it'. Jacob U. Egharevba's A Short History of Benin (1968) records that the Benin people contracted Owomika into Eweka and conferred it as the title of the first Oba of the new dynasty, marking the transition from the Ogiso line to the Obaship. The name is therefore an Edo phrase-name, not a borrowing from his father's Yoruba.",
+    "sources": [{ "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin (Ibadan University Press, 1968) - canonical chronicle deriving Eweka from Owomika 'I have got my desire'" }, { "kind": "secondary", "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-speaking Peoples of South-Western Nigeria (London: International African Institute, 1957)" }]
+  },
+  "ewuare_great": {
+    "languageFamily": "Edo (Edoid, Volta-Niger; Bini/Edo of Benin)",
+    "etymology": "Ewuare is a regnal name, an Edo (Bini) contraction of Oworuare (Owo ru are), glossed 'the trouble has ceased' (and rendered by some as 'it is cool', i.e. calm/peace restored). Egharevba's A Short History of Benin (1968) records that Prince Ogun, after the strife and the Uwaifiokun usurpation that surrounded his violent accession (c. 1440), took the throne-name Ewuare to mark the end of the upheaval; the honorific Ogidigan 'the Great' was added later. The name is thus a transparent Edo phrase-name commemorating the restoration of order.",
+    "sources": [{ "kind": "primary", "reference": "Jacob U. Egharevba, A Short History of Benin (Ibadan University Press, 1968) - derives Ewuare/Oworuare as 'the trouble has ceased'" }, { "kind": "secondary", "reference": "R. E. Bradbury, The Benin Kingdom and the Edo-speaking Peoples of South-Western Nigeria (London, 1957)" }]
+  },
+  "fallen_star": {
+    "languageFamily": "Siouan (Mississippi Valley Siouan; Lakota/Dakota)",
+    "etymology": "The English name 'Fallen Star' is a calque of the Lakota name Wicahpi Hinhpaya (Wicahpi Hinhpaya). It is a transparent compound of wicahpi 'star' and the verb hinhpaya 'to fall, fall down', i.e. 'star-fallen' / '(the) star (that) fell', referring to the hero born of the Star-Husband's wife after she fell from the Sky Country. Both morphemes are standard Lakota lexicon documented in Eugene Buechel's Lakota dictionary (wicahpi 'star'; hinhpaya 'to fall down'), and the personal name in this form attaches to the monster-slaying culture-hero of the Walker and Dorsey narrative cycles. The name is descriptive of the birth-circumstance rather than a fossilized or opaque theonym.",
+    "sources": [{ "kind": "primary", "reference": "James R. Walker, The Sun Dance and Other Ceremonies of the Oglala Division of the Teton Dakota (Anthropological Papers of the AMNH 16.2, 1917) - the Lakota Fallen Star cycle in which the hero is so named" }, { "kind": "secondary", "reference": "Eugene Buechel (ed. Paul Manhart), Lakota Dictionary: Lakota-English/English-Lakota - lexical attestation of wicahpi 'star' and hinhpaya 'to fall down' that compose the name" }]
+  },
+  "fon_fa": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Volta-Niger > Gbe (Fon/Fongbe)",
+    "etymology": "Fon Fa is the Fon-language reflex of the name of the Yoruba divination system Ifa (Yoruba Ifa). Herskovits documented the cult as a direct cultural and linguistic borrowing from the Yoruba: 'Ifa, or Fa as it is called in Dahomey' (Herskovits, Dahomey, 1938, treatment of Fa divination at pp. 201-230); the same Yoruba origin of the Fon term is affirmed by William Bascom (Ifa Divination, 1969), who lists the Fon Fa, Ewe Afa and Yoruba Ifa as reflexes of one borrowed system, and by Bernard Maupoil, whose monograph La geomancie a l'ancienne Cote des Esclaves treats the Dahomean Fa as the Yoruba Ifa adopted by the Fon. The reduction Ifa > Fa (loss of the initial vowel) is regular for a Yoruba loan entering Gbe. This is a borrowing etymology, not a native Gbe coinage.",
+    "sources": [{ "kind": "ethnography", "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938), Fa divination, pp. 201-230." }, { "kind": "secondary", "reference": "William R. Bascom, Ifa Divination: Communication Between Gods and Men in West Africa (Indiana University Press, 1969) — Fon Fa / Ewe Afa as reflexes of Yoruba Ifa." }, { "kind": "ethnography", "reference": "Bernard Maupoil, La geomancie a l'ancienne Cote des Esclaves (Institut d'Ethnologie, 1943) — Dahomean Fa as the borrowed Yoruba Ifa system." }]
+  },
+  "fon_mawu_lisa": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Volta-Niger > Gbe (Fon/Ewe)",
+    "etymology": "Geoffrey Parrinder, a standard authority on West African religion, discusses the names of the paired creator and explicitly labels the etymology of Mawu as uncertain: 'The origin and meaning of the word is obscure; \"none greater\" or \"overstretching\" have been suggested as possible meanings' (Parrinder, West African Religion). For the partner name Lisa, Parrinder reports the indigenous association of Lisa with the chameleon (an animal emblem of changeability). DEBATED/uncertain etymology: no single agreed derivation exists, and the proposals are presented by Parrinder as suggestions rather than established. A separate, popular claim that Fon Lisa is borrowed from Yoruba orisa appears in reference works but is NOT attributable in convergent sources to a specific named scholar, so it is noted only as folk/unverified and is not relied on here.",
+    "sources": [{ "kind": "secondary", "reference": "Geoffrey Parrinder, West African Religion (Epworth Press; 2nd ed. 1961) — etymology of Mawu given as obscure ('none greater' / 'overstretching'); Lisa linked to the chameleon." }]
+  },
+  "garo_saljong": {
+    "languageFamily": "Sino-Tibetan > Tibeto-Burman > Sal > Bodo-Garo (Garo / A-chik)",
+    "etymology": "The first element of the Garo sun-and-harvest god's name, Saljong, is Garo sal 'sun, day'. This root is a defining lexical innovation of the 'Sal' sub-branch of Tibeto-Burman, named precisely for this word: Paul K. Benedict reconstructed the shared distinctive roots for 'sun' and 'fire' uniting Bodo-Garo, Konyak and Jingpho/Kachin (Benedict, Sino-Tibetan: A Conspectus, Cambridge University Press, 1972, p. 7), and the branch label 'Sal languages' is taken directly from the word sal 'sun/day'. The deity Saljong is documented by A. Playfair (The Garos, 1909) as the sun god honoured at the Wangala harvest festival, consistent with the sal 'sun' element. The full compound (sal + -jong) and the coupled title Misi Saljong (with Misi, the rice/crop power) are attested in the Garo ethnography; the secure, named-source etymological claim here is specifically the sal = 'sun' element.",
+    "sources": [{ "kind": "primary", "reference": "Paul K. Benedict, Sino-Tibetan: A Conspectus (Cambridge University Press, 1972), p. 7 — shared 'sun'/'fire' roots of Bodo-Garo, Konyak, Jingpho; basis of the 'Sal' branch (sal 'sun/day')." }, { "kind": "ethnography", "reference": "A. Playfair, The Garos (David Nutt, London, 1909) — Saljong / Misi Saljong as the Garo sun and harvest deity (Wangala festival)." }]
+  },
+  "gondi_anga_dev": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (South-Central Dravidian) clan-god class. The element dev/deo is 'god' (Indo-Aryan loan widely used across Central-Indian tribal religion); anga denotes the wooden clan-deity standard itself - the swaying palanquin-oracle of Bastar, represented (per Grigson) by parallel saja-wood logs lashed to cross-beams and carried by bearers (the 'Anga Deo'). The name thus designates the materially-embodied, oracular clan god rather than an anthropomorphic figure. Tied to the Lingo origin-myth and the Persa Pen / clan-deity complex.",
+    "sources": [{ "kind": "ethnography", "reference": "W. V. Grigson, The Maria Gonds of Bastar, Oxford University Press, 1938 (describes the Anga Deo clan-god of the Maria and Muria as saja logs borne in oracular procession)" }]
+  },
+  "gondi_bhimal_pen": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (Dravidian) deified culture-hero. The generic element pen is the Gondi word for 'god/deity' (the same element seen in persa pen 'great god' and the clan persa pen). The personal name Bhimal/Bhima is borrowed from the Mahabharata hero Bhima, but as documented by Elwin and Fuchs the tribal cult (rain-stones, no idol) is indigenous rather than a transfer of the epic figure - i.e. an autochthonous rain/strength divinity given a Sanskritic-epic name. Secure, attributed point: pen = 'god'; the Bhima name-borrowing is noted in the ethnographic literature.",
+    "sources": [{ "kind": "ethnography", "reference": "Verrier Elwin, Myths of Middle India, Oxford University Press, 1949" }, { "kind": "ethnography", "reference": "Stephen Fuchs, The Gond and Bhumia of Eastern Mandla, Asia Publishing House, 1960" }]
+  },
+  "gondi_lingo_pen": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (Dravidian) culture-hero/demigod. The generic element pen is the Gondi word for 'god/deity'; Lingo is the proper name of the half-divine founder-hero of the Gond origin-epic who released the Gonds from their cave-captivity and taught cultivation. Stephen Hislop's 1866 transcription, taken down in Gondi from a Pardhan bard and rendered in Roman script, is the earliest recorded form of the Lingo epic; Elwin records the wider cycle. The first element pen 'god' is well attested; the proper name Lingo itself is not given a secure native etymology by the cited sources.",
+    "sources": [{ "kind": "primary", "reference": "Stephen Hislop, 'The Legend of Lingo', in Papers Relating to the Aboriginal Tribes of the Central Provinces, ed. R. Temple, Nagpur, 1866 (earliest transcription, from a Pardhan bard)" }, { "kind": "ethnography", "reference": "Verrier Elwin, Myths of Middle India, Oxford University Press, 1949" }]
+  },
+  "gondi_persa_pen": {
+    "languageFamily": "Dravidian (Gondi)",
+    "etymology": "Gondi (South-Central Dravidian) clan-deity. A transparent two-element compound: persa 'great' + pen 'god', i.e. 'great god' - the canonical Gondi gloss recorded in the ethnographic literature, where pen is the general Gondi word for 'deity' and each Gond clan worships its own persa pen ('great god'). Often equated with Bara Deo / Budha Deo and embodied aniconically (the saja tree, no idol). This is the textbook example of Gondi pen 'god'.",
+    "sources": [{ "kind": "ethnography", "reference": "W. V. Grigson, The Maria Gonds of Bastar, Oxford University Press, 1938 (records persa pen 'great god' as the Gond clan-deity)" }, { "kind": "ethnography", "reference": "Verrier Elwin, Myths of Middle India, Oxford University Press, 1949" }]
+  },
+  "greek_aceso": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Ἀκεσώ (Akeso), daughter of Asclepius personifying the curative process. The name is a transparent agent-type derivative (with the productive -ω feminine personal-name suffix, as in Σαπφώ, Ἠχώ) of the verb ἀκέομαι 'to heal, cure, mend' (cf. ἄκος 'cure, remedy', ἀκεστής 'healer'), hence roughly 'Healer / the one who heals'. Beekes discusses the ἀκέομαι / ἄκος family, noting the difficulty of a secure Indo-European reconstruction (a form *ih2k- is considered possible); the verbal base and its meaning 'to heal' are nonetheless well established.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. ἀκέομαι / ἄκος" }]
+  },
+  "greek_aegeus": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Αἰγεύς (Aigeus), Athenian king and eponym of the Aegean Sea. The etymology is genuinely debated. The name is usually connected to αἴξ (gen. αἰγός) 'goat'; the same word in the plural αἶγες was glossed 'waves, high seas' already by the lexicographer Hesychius of Alexandria (a metaphor of leaping goats for breaking waves), which links Aigeus to the 'wavy/sea' sense and to the Aegean. Beekes treats αἴξ as inherited (PIE *h2eig-). Alternative ancient explanations derive the sea-name from the town Aigai, from the Amazon Aigea, or from Aigaion; the personal name has no single secure etymology and the goat/wave connection is best labelled a learned/folk association.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. αἴξ" }, { "kind": "primary", "reference": "Hesychius of Alexandria, Lexicon, s.v. αἶγες (glossed 'waves, high seas')" }]
+  },
+  "greek_aegle_asclepius": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Αἴγλη (Aigle), daughter of Asclepius personifying the radiance/glow of bodily health. The name is the common noun αἴγλη 'brightness, gleam, radiance, splendour' used as a personal name. Beekes states that αἴγλη has no accepted Indo-European etymology and may well be of Pre-Greek origin (the αἰγλ- / ἀσγ(ε)λ- variation he regards as characteristically Pre-Greek; the old comparison with Sanskrit ejati 'to tremble' is rejected). The lexical meaning 'radiance' is secure; the deeper origin of the word is, per Beekes, probably Pre-Greek.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. αἴγλη (no IE etymology; probably Pre-Greek)" }]
+  },
+  "greek_aethra": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Αἴθρα (Aithra), princess of Troezen and mother of Theseus. The name is the noun αἴθρη 'clear sky, bright/fair weather, clear air', a derivative of the root in αἰθήρ 'upper air, sky' and αἴθω 'to kindle, burn, blaze' - hence 'Clear-sky / Bright-air'. Beekes derives αἰθήρ and its family from the inherited Indo-European root *h2eidh- 'to burn, kindle' (cf. Latin aether, aestus, aedes), making the αἴθρη group securely Indo-European. The personal name is a transparent use of αἴθρη 'clear sky'.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. αἰθήρ / αἴθω (root *h2eidh- 'to burn')" }]
+  },
+  "greek_alcestis": {
+    "languageFamily": "Indo-European (Hellenic)",
+    "etymology": "Greek Ἄλκηστις (Alkestis), daughter of Pelias, wife of Admetus, who died in his stead. The name is built on the noun ἀλκή 'might, strength, prowess, defence (in battle)' (cf. ἄλκιμος 'strong, valiant', the agent-noun ἀλκηστής 'defender'), aptly echoing her role as the one who 'wards off' death for her husband. Beekes derives ἀλκή from the Indo-European root *h2elk- 'to ward off, defend' (cf. ἀλέξω, ἀλκάθω), so the name means roughly 'Defender / the strong/protecting one'.",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes, Etymological Dictionary of Greek, Leiden: Brill, 2010, s.v. ἀλκή / ἀλέξω (root *h2elk- 'to ward off')" }]
+  },
+  "greek_anticleia_periphetes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντίκλεια (Antíkleia), a compound of ἀντί 'against, in place of' + κλέος 'glory, fame' — variously read 'she who is in place of glory' or 'set against fame'; the same κλέος element is ubiquitous in Greek heroic names (Cleopatra, Pericles).",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982), on names in -κλεια/-κλέης" }]
+  },
+  "greek_antiope_thebes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀντιόπη (Antiópē), a compound of ἀντί 'facing, against' + ὤψ/ὀπ- 'face, eye, countenance' — 'she who faces/confronts', literally 'with face set against'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982), on names in -όπη" }]
+  },
+  "greek_apollod_acamas": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀκάμας (Akámas), 'untiring, unwearying', from the privative ἀ- + the verb κάμνω 'to grow weary' (verbal adjective stem -καμ-) — an epithet of tirelessness borne by several heroes.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); R. Beekes, Etymological Dictionary of Greek (2010), s.v. κάμνω" }]
+  },
+  "greek_apollod_alcmene": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀλκμήνη (Alkmḗnē), mother of Heracles. The first element is clearly ἀλκή 'might, prowess, defensive strength'; the second is debated (variously connected with μῆνις 'wrath' / μένος 'force' or with μήνη 'moon'), so the name is read broadly as 'mighty' with the precise second member uncertain.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀλκή" }]
+  },
+  "greek_apollod_alexander_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀλέξανδρος (Aléxandros), a compound of the verb ἀλέξω 'to ward off, defend' + ἀνήρ/ἀνδρ- 'man' — 'defender of men'; the name is already Mycenaean (Linear B a-re-ka-sa-da-ra).",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀλέξω" }]
+  },
+  "greek_apollod_amyclas": {
+    "languageFamily": "Greek (eponym) of a Pre-Greek toponym",
+    "etymology": "Amyclas (Ἀμύκλας) is the mythological eponym of the Laconian town Amyklai (Ἀμύκλαι), the cult-site of Apollo Amyklaios south of Sparta; the personal name is back-formed from the place name rather than built from transparent Greek lexical elements. R. Beekes, Etymological Dictionary of Greek (2010), classifies Ἀμύκλαι as Pre-Greek (marked 'PG', 'probably a Pre-Greek place name'), i.e. belonging to the pre-Hellenic substrate of the Peloponnese and lacking a secure Indo-European/Greek etymology. The name therefore has no reliable internal Greek meaning; honestly, it is a substrate toponym personified as a Spartan founder-figure. (Note: this entry concerns Amyclas the Niobid; he shares the name with Amyclas son of Lacedaemon, the Spartan founder, both deriving from the same Pre-Greek toponym.)",
+    "sources": [{ "kind": "secondary", "reference": "R. S. P. Beekes (with L. van Beek), Etymological Dictionary of Greek (Leiden Indo-European Etymological Dictionary Series 10; Leiden/Boston: Brill, 2010), s.v. Ἀμύκλαι, classified as Pre-Greek ('PG'), 'probably a Pre-Greek place name'." }]
+  },
+  "greek_apollod_andromeda": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀνδρομέδα (Androméda), a transparent compound of ἀνήρ/ἀνδρ- 'man' + the verb μέδω/μέδομαι 'to rule, protect, be mindful of' — 'she who rules over (or is mindful of) men', the same -μεδ- element seen in Diomedes and Ganymedes.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀνήρ, μέδω" }]
+  },
+  "greek_apollod_argeia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀργεία (Argeía) 'the Argive (woman)', the feminine ethnic of Ἄργος; the place-name itself reflects ἀργός 'bright, shining, white', so the name carries the sense 'the bright/Argive one'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀργός, Ἄργος" }]
+  },
+  "greek_apollod_aristodemus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀριστόδημος (Aristódēmos), a transparent compound of ἄριστος 'best, noblest' + δῆμος 'people, district' — 'best of the people'; one of the standard ἀριστο- names.",
+    "sources": [{ "kind": "secondary", "reference": "Transparent compound: ἄριστος 'best' + δῆμος 'people' (LSJ, A Greek-English Lexicon, s.vv.)" }]
+  },
+  "greek_apollod_aristomachus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀριστόμαχος (Aristómachos), a transparent compound of ἄριστος 'best' + μάχη 'battle, combat' — 'best in battle', a fitting name for the Heraclid father of Temenus.",
+    "sources": [{ "kind": "secondary", "reference": "Transparent compound: ἄριστος 'best' + μάχη 'battle' (LSJ, A Greek-English Lexicon, s.vv.)" }]
+  },
+  "greek_apollod_ascanius": {
+    "languageFamily": "Pre-Greek (Anatolian; non-Indo-European substrate)",
+    "etymology": "The name Ἀσκάνιος (Askanios) is of non-Greek, Anatolian origin and is bound to the toponym Askania (the lake/region named at Iliad 2.862-863, where Phorkys and Askanios lead the Phrygians 'from faraway Askania'). Milena Anfosso reconstructs the name as *aska-(w)ani-os, analysing the first element as Hittite āška- 'door, gate' (compare the Sumerogram KÁ(.GAL) 'door/gate of the city' in the oldest Hittite texts, and the Old Hittite anthroponym Āška-liya-, ruler of Hurma). She follows Puhvel's view that āška- is a word of indigenous Anatolian origin with no known cognates elsewhere, preferring this Anatolian account over the proposed Indo-European etymologies. On this analysis Askanios is an originally Anatolian eponymous-hero name attached to the Bithynian/Phrygian toponym, only secondarily drawn into the Trojan-Roman (Aeneas/Iulus) genealogy.",
+    "sources": [{ "kind": "secondary", "reference": "Milena Anfosso, \"'Godlike Askanios, from faraway Askania', or the Anatolian Connection of an Eponymous Hero,\" paper presented at the 2021 (Virtual) Annual Meeting of the Society for Classical Studies; reconstructs Askanios < *aska-(w)ani-os with first element Hittite aska- 'door'." }, { "kind": "secondary", "reference": "Jaan Puhvel, Hittite Etymological Dictionary (1984- ), s.v. aska- 'door/gate', cited by Anfosso as the basis for treating aska- as an indigenous Anatolian word without external cognates." }]
+  },
+  "greek_apollod_astyoche": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἀστυόχη (Astyóchē), a compound of ἄστυ 'city, town' + the verb ἔχω 'to hold, keep, protect' — 'she who holds/guards the city', a name shared by several heroines.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_auge": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Αὐγή (Augḗ) is the ordinary noun αὐγή 'ray of light, gleam, daylight, dawn-radiance', the heroine's name being the common word for radiance personified.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. αὐγή" }]
+  },
+  "greek_apollod_chloris": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Χλωρίς (Chlōrís), feminine of the adjective χλωρός 'pale green, greenish-yellow, fresh' — 'the pale-green / fresh one'; the heroine of Odyssey 11.281 bears the colour-word as her name.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. χλωρός" }]
+  },
+  // ══ Alphabetical sweep batch 5 (worklist indices 255-334: the Greek heroic block,
+  //    authored directly from Beekes EDG / von Kamptz / LSJ; Pre-Greek names labeled) ══
+  "greek_apollod_cleodaeus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κλεόδαιος (Kleódaios), Heraclid; the first element is κλέος 'glory, fame' (the productive κλεο- of Greek heroic names), the second element being of less certain sense.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. κλέος" }]
+  },
+  "greek_apollod_cresphontes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κρεσφόντης (Kresphóntēs), generally read as 'the stronger slayer', from κρέσσων/κρείσσων 'stronger' + the -φόντης element 'slayer' (φόνος 'slaughter', cf. Bellerophontes).",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982), on -φόντης names" }]
+  },
+  "greek_apollod_danae": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek), debated",
+    "etymology": "Greek Δανάη (Danáē), mother of Perseus; the etymology is debated, the name being connected either with the Δαναοί (the 'Danaans') or with a word for 'parched, dry' (cf. δανός), with no secure derivation.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Δαναοί, δανός" }]
+  },
+  "greek_apollod_deianira": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Δηϊάνειρα (Dēïáneira) 'man-destroyer / destroyer of her husband', from δηι-/δάϊος 'destroying, hostile' (δηιόω 'to slay') + ἀνήρ 'man, husband' — grimly apt for the wife whose gift kills Heracles.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); N. Kanavou, The Names of Homeric Heroes (2015)" }]
+  },
+  "greek_apollod_demophon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Δημοφῶν (Dēmophôn), older Δημοφόων, 'voice of the people', from δῆμος 'people, district' + the root of φημί/φωνή 'speak, voice'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_echephron": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἐχέφρων (Echéphrōn) 'prudent, sensible', the ordinary adjective ἐχέφρων 'in possession of one's wits', from ἔχω 'to hold, keep' + φρήν 'mind, wits'.",
+    "sources": [{ "kind": "secondary", "reference": "LSJ, A Greek-English Lexicon, s.v. ἐχέφρων" }]
+  },
+  "greek_apollod_electryon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἠλεκτρύων (Ēlektrýōn) 'the gleaming/radiant one', from ἠλέκτωρ 'the beaming sun' / ἤλεκτρον 'amber, electrum' (the bright shining metal-amber).",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἤλεκτρον, ἠλέκτωρ" }]
+  },
+  "greek_apollod_eurybios": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρύβιος (Eurýbios), a compound of εὐρύς 'wide, broad' + βίη 'force, might' — 'of wide strength'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. εὐρύς, βίη" }]
+  },
+  "greek_apollod_eurypylus_telephus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρύπυλος (Eurýpylos) 'wide-gated', from εὐρύς 'wide' + πύλη 'gate', i.e. ruler of a wide-gated city.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυσθεύς (Eurystheús) 'of wide strength', from εὐρύς 'wide, broad' + σθένος 'strength, might' — the taskmaster-king who imposed the Labours.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); N. Kanavou, The Names of Homeric Heroes (2015)" }]
+  },
+  "greek_apollod_hippolochus_podalirius": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἱππόλοχος (Hippólochos), from ἵππος 'horse' + λόχος 'ambush, armed band' (also 'childbed') — 'horse-ambush' or 'born of horses'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_hippolytus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἱππόλυτος (Hippólytos), from ἵππος 'horse' + λύω 'to loose, unleash' — 'looser of horses', read passively ('destroyed by horses') it darkly foretells his death dragged by his team.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); N. Kanavou, The Names of Homeric Heroes (2015)" }]
+  },
+  "greek_apollod_iphicles": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰφικλῆς (Iphiklês) 'famed for might', from ἶφι 'with might, mightily' + κλέος 'glory, fame' — the mortal twin of Heracles.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_iphimedon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰφιμέδων (Iphimédōn), from ἶφι 'with might' + μέδων 'ruler' (μέδω 'to rule, protect') — 'ruling by might'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἶφι, μέδω" }]
+  },
+  "greek_apollod_machaon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μαχάων (Macháōn), the warrior-physician of the Iliad; the name is generally connected with μάχη 'battle' / μάχομαι 'to fight'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. μάχομαι" }]
+  },
+  "greek_apollod_megara": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek), uncertain",
+    "etymology": "Greek Μεγάρα (Megára), Heracles's first wife; the name is connected either with μέγας 'great' or with μέγαρον 'great hall, chamber', without a secure decision.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. μέγας, μέγαρον" }]
+  },
+  "greek_apollod_melanippus_theseus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μελάνιππος (Melánippos) 'black horse', from μέλας 'black, dark' + ἵππος 'horse'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_apollod_mentor_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μέντωρ (Méntōr) 'adviser, counsellor', an agent-noun from the Indo-European root *men- 'to think' (cf. μένος 'spirit', Latin mentor) — hence the English common noun 'mentor'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Μέντωρ, μένος" }]
+  },
+  "greek_apollod_nicomachus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Νικόμαχος (Nikómachos) 'victorious in battle', from νίκη 'victory' + μάχη 'battle'.",
+    "sources": [{ "kind": "secondary", "reference": "LSJ, A Greek-English Lexicon, s.v. νίκη, μάχη" }]
+  },
+  "greek_apollod_niobe": {
+    "languageFamily": "Pre-Greek substrate",
+    "etymology": "Greek Νιόβη (Nióbē); the name has no secure Indo-European etymology and is generally regarded as belonging to the Pre-Greek substrate, ancient connections (e.g. with νέος 'new') being folk-etymological.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_apollod_omphale": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὀμφάλη (Omphálē), the Lydian queen; the name is generally connected with ὀμφαλός 'navel, central boss' (the central or ruling point).",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ὀμφαλός" }]
+  },
+  "greek_apollod_perimedes_eurystheus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Περιμήδης (Perimḗdēs) 'exceedingly cunning', from περί 'exceedingly, beyond' + μῆδος 'counsel, scheme' (μήδομαι 'to devise').",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. μήδομαι" }]
+  },
+  "greek_apollod_silvius": {
+    "languageFamily": "Indo-European (Italic, Latin)",
+    "etymology": "Latin Silvius, from silva 'forest, woodland' — 'of the woods', the posthumous son of Aeneas said to have been born or reared in the forest, eponym of the Alban Silvii.",
+    "sources": [{ "kind": "secondary", "reference": "M. de Vaan, Etymological Dictionary of Latin (2008), s.v. silva" }]
+  },
+  "greek_apollod_telephus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek), debated",
+    "etymology": "Greek Τήλεφος (Tḗlephos); the name is read either as τῆλε 'far' + φάος 'light' ('far-shining'), or by folk-etymology as 'suckled by a deer' (ἔλαφος, from the tale of the doe that nursed him).",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. τῆλε, ἔλαφος" }]
+  },
+  "greek_apollod_temenus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τήμενος (Tḗmenos), the Heraclid who won Argos; the name reflects τέμενος 'a piece of land cut off and dedicated, sacred precinct', from τέμνω 'to cut, divide'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. τέμνω, τέμενος" }]
+  },
+  "greek_aratus_asclepius": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἄρατος (Áratos) 'prayed for, longed for', the verbal adjective of ἀράομαι 'to pray, invoke'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἀράομαι" }]
+  },
+  "greek_bunomus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Βούνομος (Boúnomos), a son of Helen and Paris; the name is transparently βοῦς 'ox, cattle' + νομός 'pasture' / νέμω 'to graze' — 'ox-pasture, cattle-grazing'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. βοῦς, νέμω" }]
+  },
+  "greek_callisto": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Καλλιστώ (Kallistṓ) 'the most beautiful', from κάλλιστος, superlative of καλός 'beautiful, fair'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. καλός" }]
+  },
+  "greek_castor": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κάστωρ (Kástōr), one of the Dioscuri; the name coincides with the noun κάστωρ 'beaver', though a connection with the root of κέκασμαι 'to excel, surpass' ('the one who excels') has also been proposed.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. κάστωρ" }]
+  },
+  "greek_chione": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Χιόνη (Chiónē) 'snow-maiden', from χιών 'snow'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. χιών" }]
+  },
+  "greek_cleopatra_of_macedon": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κλεοπάτρα (Kleopátra) 'glory of the father / of a famous father', from κλέος 'glory, fame' + πατήρ 'father'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_clymene_merops": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κλυμένη (Klyménē) 'famous, renowned', feminine of κλύμενος 'celebrated', from κλύω 'to hear, be spoken of'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. κλύω" }]
+  },
+  "greek_coronis": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κορωνίς (Korōnís), mother of Asclepius, from κορώνη 'crow' (also 'anything curved') — the 'crow' name resonant with Apollo's crow-messenger in her myth.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. κορώνη" }]
+  },
+  "greek_corythus_helen": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κόρυθος (Kórythos), from κόρυς 'helmet' — 'the helmeted one'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. κόρυς" }]
+  },
+  "greek_creusa_athens": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Κρέουσα (Kréousa) 'princess, queen', the feminine of κρείων 'ruler, lord' (related to κράτος 'power', κρέσσων 'stronger').",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. κρείων" }]
+  },
+  "greek_dia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Δία (Día), feminine 'heavenly, divine, shining', related to Ζεύς (gen. Διός) and δῖος 'of Zeus, divine', from Proto-Indo-European *diw- 'sky, to shine'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. δῖος, Ζεύς" }]
+  },
+  "greek_eur_macaria": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μακαρία (Makaría) 'blessedness, blessed happiness', from μάκαρ 'blessed, happy' — fitting for the maiden whose self-sacrifice won posthumous hero-cult.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. μάκαρ" }]
+  },
+  "greek_europa": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek), debated",
+    "etymology": "Greek Εὐρώπη (Eurṓpē); the Greek analysis is εὐρύς 'wide' + ὤψ 'face, eye' ('broad-faced, wide-eyed'), while a rival proposal derives it from a Semitic root ʿrb 'sunset, west' — the debate is unresolved.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Εὐρώπη" }]
+  },
+  "greek_eurynome": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυνόμη (Eurynómē) 'wide-ruling', from εὐρύς 'wide' + νόμος/νέμω 'rule, distribute' (or 'wide-pasturing').",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. εὐρύς, νέμω" }]
+  },
+  "greek_glaucus_corinth": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Γλαῦκος (Glaûkos), from γλαυκός 'gleaming, blue-grey, bright-eyed' — the Corinthian king devoured by his own mares.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. γλαυκός" }]
+  },
+  "greek_hdt_eurysthenes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Εὐρυσθένης (Eurysthénēs) 'of wide strength', from εὐρύς 'wide' + σθένος 'strength' — eponymous founder of the Spartan Agiad house.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. εὐρύς, σθένος" }]
+  },
+  "greek_hdt_procles": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Προκλῆς (Proklês) 'foremost in fame', from προ- 'before, foremost' + κλέος 'glory, fame' — founder of the Spartan Eurypontid house.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_helen_the_younger": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek, debated",
+    "etymology": "Greek Ἑλένη (Helénē); no secure etymology — variously linked to a root for 'shining' (cf. ἑλένη 'torch', σελήνη 'moon') and often regarded as Pre-Greek.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Ἑλένη" }]
+  },
+  "greek_hermione": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἑρμιόνη (Hermiónē), daughter of Helen and Menelaus; the name is connected with Ἑρμῆς (Hermes) / ἕρμα 'stone heap, support' (and is also borne by a Greek city).",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Ἑρμῆς, ἕρμα" }]
+  },
+  "greek_homer_tlepolemus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τληπόλεμος (Tlēpólemos) 'enduring in war', from τλῆναι 'to endure, bear' + πόλεμος 'war' — the Rhodian colonizer slain by Sarpedon.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_hygieia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὑγίεια (Hygíeia) 'Health' personified, from ὑγιής 'healthy, sound, whole' — daughter of Asclepius.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ὑγιής" }]
+  },
+  "greek_iaso": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰασώ (Iasṓ) 'Healing' personified, from ἰάομαι 'to heal, cure' — a daughter of Asclepius.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἰάομαι" }]
+  },
+  "greek_idaeus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ἰδαῖος (Idaîos) 'of Mount Ida', a toponymic name from the Trojan (and Cretan) mountain Ἴδη.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Ἴδη" }]
+  },
+  "greek_io": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek, debated",
+    "etymology": "Greek Ἰώ (Iṓ); no secure etymology — connected by the ancients with ἴον 'violet' or the cry ἰώ, and frequently judged Pre-Greek.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Ἰώ" }]
+  },
+  "greek_laodamia_lycian": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Λαοδάμεια (Laodámeia) 'subduer of the people', from λαός 'people, host' + δαμάω 'to tame, subdue' — daughter of Bellerophon and mother of Sarpedon.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982)" }]
+  },
+  "greek_leda": {
+    "languageFamily": "Anatolian (Lycian), borrowed into Greek",
+    "etymology": "Greek Λήδα (Lḗda) is generally derived from Lycian lada 'wife, woman' — an Anatolian loan, fitting her Spartan-queen role.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Λήδα" }]
+  },
+  "greek_manto": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μαντώ (Mantṓ) 'seeress, prophetess', from μάντις 'seer, diviner' (root of μαίνομαι 'to be inspired, frenzied') — daughter of the seer Tiresias.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. μάντις" }]
+  },
+  "greek_menelaus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μενέλαος (Menélaos) 'withstanding the people / steadfast amid the host', from μένω 'to stand fast, withstand' + λαός 'people, war-host'.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); N. Kanavou, The Names of Homeric Heroes (2015)" }]
+  },
+  "greek_mnesileos": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Μνησίλεως (Mnēsíleōs), Attic for Μνησίλαος 'mindful of the people', from μνάομαι/μιμνῄσκω 'to be mindful, remember' + λαός/λεώς 'people'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. μιμνῄσκω, λαός" }]
+  },
+  "greek_nicostratus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Νικόστρατος (Nikóstratos) 'victorious army / conquering host', from νίκη 'victory' + στρατός 'army'.",
+    "sources": [{ "kind": "secondary", "reference": "LSJ, A Greek-English Lexicon, s.v. νίκη, στρατός" }]
+  },
+  "greek_odysseus": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek, debated",
+    "etymology": "Greek Ὀδυσσεύς (Odysseús); the Odyssey itself (19.407) puns the name on ὀδύσσομαι 'to be wroth, to be hated' ('the man of wrath / the hated one'), but this is a folk-etymology — the variant Ὀλυσσεύς and the suffix point to a Pre-Greek origin.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Ὀδυσσεύς" }]
+  },
+  "greek_oeagrus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Οἴαγρος (Oíagros), the Thracian father of Orpheus; apparently a compound of οἶος 'alone' + ἀγρός 'field, open country' / ἄγρα 'hunt' — 'of the lone wild'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. οἶος, ἀγρός" }]
+  },
+  "greek_olympias": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὀλυμπιάς (Olympiás) 'of Olympus, Olympian', from Ὄλυμπος — the mother of Alexander the Great.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Ὄλυμπος" }]
+  },
+  "greek_oreithyia": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὠρείθυια (Ōreíthyia) 'she who rages on the mountains', from ὄρος 'mountain' + θύω 'to rush, rage, storm' — carried off by the north wind Boreas.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ὄρος, θύω" }]
+  },
+  "greek_otrera": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Ὀτρηρή (Otrērḗ), first Amazon queen and consort of Ares; the name is connected with ὀτρηρός 'quick, nimble, ready' (ὀτρύνω 'to rouse, urge on').",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ὀτρηρός" }]
+  },
+  "greek_panacea": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πανάκεια (Panákeia) 'All-Cure', from πᾶν 'all' + ἄκος 'cure, remedy' (ἀκέομαι 'to heal') — daughter of Asclepius, source of English 'panacea'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. ἄκος" }]
+  },
+  "greek_pandora": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πανδώρα (Pandṓra) 'All-Gifts / All-Giving', from πᾶν 'all' + δῶρον 'gift'; Hesiod glosses it as 'because all the Olympians gave her a gift'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. δῶρον; Hesiod, Works and Days 80-82" }]
+  },
+  "greek_paris": {
+    "languageFamily": "Anatolian (Pre-Greek)",
+    "etymology": "Greek Πάρις (Páris), the Trojan prince also called Ἀλέξανδρος; the name is of Anatolian origin (commonly linked to Luwian/Hittite onomastics of the Wilusa-Alaksandu sphere) and has no Greek etymology.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. Πάρις" }]
+  },
+  "greek_philip_ii": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Φίλιππος (Phílippos) 'lover of horses, fond of horses', from φίλος 'loving, dear' + ἵππος 'horse' — king of Macedon, father of Alexander.",
+    "sources": [{ "kind": "secondary", "reference": "H. von Kamptz, Homerische Personennamen (1982); LSJ s.v. φίλος, ἵππος" }]
+  },
+  // ══ Alphabetical sweep batch 6 (indices 335-414: Hindu epic block via Monier-
+  //    Williams, + Guanche/Hattic/Hausa research and recovered Greek compounds) ══
+  "greek_phlegyas": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Φλεγύας (Phlegýas) 'fiery, blazing', from φλέγω 'to burn, blaze' — the Lapith king who burned Apollo's temple at Delphi.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. φλέγω (transparent derivative)" }]
+  },
+  "greek_pleisthenes": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πλεισθένης (Pleisthénēs) 'of greatest strength', a transparent compound of πλεῖστος 'most, greatest' + σθένος 'strength'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.vv. πλεῖστος, σθένος" }]
+  },
+  "greek_polymele": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Πολυμήλη (Polymḗlē) 'rich in flocks', a transparent compound of πολύς 'much, many' + μῆλον 'sheep, flock'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.vv. πολύς, μῆλον" }]
+  },
+  "greek_sthenelus_perseus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Σθένελος (Sthénelos) 'the strong one', a derivative of σθένος 'strength, might'.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.v. σθένος" }]
+  },
+  "greek_telesphorus": {
+    "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+    "etymology": "Greek Τελεσφόρος (Telesphóros) 'bringer of fulfilment, accomplishing', a compound of τέλος 'end, fulfilment, completion' + φέρω 'to bring, bear' — the child-god of convalescence who attends Asclepius.",
+    "sources": [{ "kind": "secondary", "reference": "R. Beekes, Etymological Dictionary of Greek (2010), s.vv. τέλος, φέρω" }]
+  },
+  "greek_tyro": {
+    "languageFamily": "Hellenic (Greek)",
+    "etymology": "Ancient Greek Τυρώ (Tyrṓ). The 1st-c. BCE historian Diodorus Siculus offers an explicit folk (aetiological) etymology, deriving the name from τυρός (tyrós) 'cheese' because Tyro's body was said to be as white and soft as fresh cheese. This is a popular/learned-aetiological etymology recorded in antiquity rather than a demonstrated linguistic derivation; the form is more plausibly of pre-Greek or otherwise opaque origin, but no rigorous modern derivation surfaced in named sources.",
+    "sources": [{ "kind": "primary", "reference": "Diodorus Siculus, Bibliotheca Historica (Library of History) 4.68 / 6.6 (1st c. BCE): name derived from τυρός 'cheese' after her complexion." }]
+  },
+  "guanche_achaman": {
+    "languageFamily": "Berber (Amazigh) / Guanche substrate",
+    "etymology": "Guanche Achamán, the supreme sky-god of Tenerife, glossed in the early chronicles as 'the skies / the heavens' (with ach- functioning as a definite-article prefix). Fray Alonso de Espinosa (1594) records the syncretic divine title 'Achguayaxerax... Achaman' interpreted as 'sustainer of heaven and earth', and Juan de Abreu Galindo (c. 1602) lists divine names glossed 'the great, the sublime, the all-sustaining'. The deeper Berber morphological reconstruction (e.g. aššaman 'the celestial') is proposed by modern linguists but is not securely attributable to a single named author in the consulted record, so only the chronicle-attested sense 'the sky/heavens (the highest)' is asserted here.",
+    "sources": [{ "kind": "ethnography", "reference": "Espinosa, A. de (1594), Historia de Nuestra Señora de Candelaria (Seville): divine title 'Achguayaxerax... Achaman' glossed 'sustainer of heaven and earth'." }, { "kind": "ethnography", "reference": "Abreu Galindo, J. de (c. 1602), Historia de la conquista de las siete islas de Canaria: God named with epithets meaning 'the great, the sublime, the all-sustaining'." }, { "kind": "secondary", "reference": "Tejera Gaspar, A. (1988), La religión de los guanches (La Laguna: Universidad de La Laguna): modern synthesis of the Tenerife supreme sky-god Achamán." }]
+  },
+  "guanche_acoran": {
+    "languageFamily": "Berber (Amazigh) / Guanche substrate",
+    "etymology": "Acorán (variant Alcorac), the supreme being of the pre-conquest Canarii of Gran Canaria. D. J. Wölfel, in his Monumenta Linguae Canariae, proposed a Berber/Amazigh analysis a-kor-an glossed 'the greatest, the most high, the sublime', consistent with the early-source description of 'a thing on high that governed the things of the earth'. The attribution to Wölfel is reproduced verbatim in the academic ULPGC 'Los Guanchismos' lexical database (Acorán entry).",
+    "sources": [{ "kind": "secondary", "reference": "Wölfel, D. J. (1965), Monumenta Linguae Canariae (Graz): Berber analysis a-kor-an 'the greatest / most high / sublime', as cited in ULPGC 'Los Guanchismos', entry Acorán (item 11171)." }, { "kind": "secondary", "reference": "Tejera Gaspar, A. (1988), La religión de los guanches (La Laguna): Acorán as the Gran Canaria high-god." }]
+  },
+  "guanche_bencomo": {
+    "languageFamily": "Berber (Amazigh) / Guanche substrate",
+    "etymology": "Bencomo (also Benchomo / Benitomo), the historical mencey of Taoro (Tenerife). The poet-historian Antonio de Viana, in his Antigüedades de las Islas Afortunadas (1604), simplified and glossed the name as 'el potentísimo' ('the most powerful'). The modern Canarian philologist Ignacio Reyes proposes an Amazigh derivation (we-n-ytum > benchom) glossed 'very strong / proud (ambitious) man', consistent with Viana's sense. A name, not a divine epithet.",
+    "sources": [{ "kind": "primary", "reference": "Viana, A. de (1604), Antigüedades de las Islas Afortunadas: name of the mencey of Taoro glossed 'el potentísimo' ('the most powerful')." }, { "kind": "secondary", "reference": "Reyes García, I. (modern Canarian philology): Amazigh analysis we-n-ytum > benchom 'very strong / proud man', as cited in ULPGC 'Los Guanchismos' (Taoro entry, item 14225) and EnciclopediaGuanche, 'Bencomo'." }]
+  },
+  "guanche_chaxiraxi": {
+    "languageFamily": "Berber (Amazigh) / Guanche substrate",
+    "etymology": "Chaxiraxi, the Tenerife mother-goddess (Sun-Mother). Fray Alonso de Espinosa (1594) records the associated divine phrase 'Achmayex Guayaxerax' and glosses the goddess as 'mother of the sustainer of heaven and earth' / 'Mother of the Sun', whence the standard rendering 'she who carries (sustains) the firmament'. A reconstructed Amazigh primitive form ta-ɣir-aɣi 'the one who sustains the firmament' is proposed in the modern literature. Her cult underlies the later Marian cult of Candelaria.",
+    "sources": [{ "kind": "ethnography", "reference": "Espinosa, A. de (1594), Historia de Nuestra Señora de Candelaria (Seville): 'Achmayex Guayaxerax', goddess glossed 'mother of the sustainer of heaven and earth' / 'Mother of the Sun'." }, { "kind": "secondary", "reference": "Barrios García, J. (1997), 'Tara: a study of the Canarian astronomical pantheon', Archaeoastronomy 22 (JHA suppl.): Chaxiraxi within the Tenerife astronomical pantheon." }]
+  },
+  "hatsenas": {
+    "languageFamily": "Tsimshianic (Tsimshian)",
+    "etymology": "Hatsenas (Tsimshian) 'a bird of good omen'. The bird-form supernatural who marries the famine-stricken chief's daughter and fathers Asdiwal is named Hatsenas, glossed 'a bird of good omen'.",
+    "sources": [{ "kind": "secondary", "reference": "Lévi-Strauss, Claude, 'The Story of Asdiwal' (La geste d'Asdiwal, 1958; English trans. in The Structural Study of Myth and Totemism, ed. E. Leach, 1967), which states Hatsenas is 'a term which means a bird of good omen'; resting on the Tsimshian text and translation in Franz Boas, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)." }]
+  },
+  "hattic_estan": {
+    "languageFamily": "Hattic (language isolate)",
+    "etymology": "Eštan (Hattic); Hittite transcription Ištanu 'Hattic solar deity ('sun'); the Hattic name underlying the Hittite sun-god name Ištanu'. The Hittite sun-god name Ištanu is a borrowing of the Hattic theonym Eštan, the indigenous Hattian sun-deity. Oğuz Soysal's Hattic lexicon explicitly derives Hittite Ištanu from Hattic eštan; Piotr Taracha lists the four Anatolian sun-deities including 'Ištanu (Hatt.",
+    "sources": [{ "kind": "secondary", "reference": "Soysal, Oğuz (2004), Hattischer Wortschatz in hethitischer Textüberlieferung (Leiden/Boston: Brill), p. 276: Hittite Ištanu derived from Hattic eštan; corroborated by Piotr Taracha (2009), Religions of Second Millennium Anatolia (Dresdner Beiträge zur Hethitologie 27; Wiesbaden: Harrassowitz), listing 'Ištanu (Hatt. Eštan)'." }]
+  },
+  "hattic_wurunkatte": {
+    "languageFamily": "Hattic (language isolate)",
+    "etymology": "Wurunkatte (Hattic; also Wurukatte) 'king of the land'. Hattic war-god whose name is analysed as wur(un) 'land, earth' (genitival -un) + katte 'king', i.e. 'king of the land'. Volkert Haas glosses the name 'king of the land' and compares it to the Akkadian epithet šār mātim ('king of the land') applied to Dagan.",
+    "sources": [{ "kind": "secondary", "reference": "Haas, Volkert (1994), Geschichte der hethitischen Religion (Handbuch der Orientalistik I/15; Leiden: Brill): Wurunkatte = 'king of the land', cf. Akkadian šār mātim (Dagan); with Hattic katte 'king' documented in Oğuz Soysal (2004), Hattischer Wortschatz in hethitischer Textüberlieferung (Brill)." }]
+  },
+  "hausa_inna": {
+    "languageFamily": "Afro-Asiatic (Chadic, Hausa)",
+    "etymology": "Inna (Hausa) 'mother' (everyday Hausa kin-term); as a Bori title, 'Mother (of us all)'. Senior female Bori (iska) spirit. The name is the ordinary Hausa word inna 'mother'; in the Bori cult the leading priestess and the senior female spirit bear the title Inna, glossed 'Mother of us all'. A. J. N.",
+    "sources": [{ "kind": "ethnography", "reference": "Tremearne, A. J. N. (1914), The Ban of the Bori: Demons and Demon-Dancing in West and North Africa (London: Heath, Cranton & Ouseley): the Inna titled 'Mother of us all'; corroborated by Fremont E. Besmer (1983), Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance (Cambridge / Zaria)." }]
+  },
+  "hausa_kure": {
+    "languageFamily": "Afro-Asiatic (Chadic, Hausa)",
+    "etymology": "Kure (Hausa; cf. kura 'hyena') 'hyena' (specifically a male hyena)'. Wild/bush Bori (iska) spirit. The name is the Hausa word for the animal: A. J. N. Tremearne states plainly that 'Kure is a male hyaena', the proper sacrifice to whom is a young red he-goat; the common Hausa noun is kura 'hyena'.",
+    "sources": [{ "kind": "ethnography", "reference": "Tremearne, A. J. N. (1914), The Ban of the Bori: Demons and Demon-Dancing in West and North Africa (London: Heath, Cranton & Ouseley): 'Kure is a male hyaena'; corroborated by Fremont E. Besmer (1983), Horses, Musicians, and Gods: The Hausa Cult of Possession-Trance." }]
+  },
+  "hindu_abhimanyu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अभिमन्यु (IAST: abhimanyu) '(possessed) of wrath/passion directed forwards', i.e. impetuous, high-spirited'. Tatpuruṣa/avyayībhāva compound of the prefix abhi- 'towards, against, over' (Monier-Williams 1899 s.v. अभि) + the noun manyu (मन्यु) 'spirit, mind, ardour, high-spirit; anger, wrath, passion, rage' (Monier-Williams 1899 s.v. मन्यु).",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary, etymologically and philologically arranged. Oxford: Clarendon Press, s.vv. अभि (abhi) and मन्यु (manyu)." }]
+  },
+  "hindu_amba": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अम्बा (IAST: ambā) 'mother', also a respectful term of address to a woman ('good woman, mother')'. Monier-Williams 1899 gives अम्बा ambā = 'a mother, good woman (as a title of respect)', related to ambī and ambikā 'little mother'. As the personal name of the eldest Kāśī princess it is simply this kinship/honorific noun used as a proper name.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.v. अम्बा (ambā)." }]
+  },
+  "hindu_angada": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit अङ्गद (IAST: aṅgada) 'an armlet, bracelet worn on the upper arm'. Monier-Williams 1899 s.v. अङ्गद aṅgada = 'a bracelet (worn on the upper arm), an armlet'. Transparently a bahuvrīhi/compound of aṅga (अङ्ग) 'a limb, the body, a member' + -da (द) 'giving, bestowing' (root √dā 'to give'), i.e. 'that which is given to / adorns the limb (arm)'.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. अङ्गद (aṅgada), अङ्ग (aṅga), द (da)." }]
+  },
+  "hindu_babhruvahana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit बभ्रुवाहन (IAST: babhruvāhana) 'having a tawny/brown mount (or vehicle)'; as a name, that of a son of Arjuna by Citrāṅgadā, king of Maṇipūra'. Compound of babhru (बभ्रु) 'tawny, reddish-brown, deep-brown' (Monier-Williams 1899 s.v. बभ्रु) + vāhana (वाहन) 'that which carries or draws, a vehicle, conveyance, mount, draught-animal' (Monier-Williams 1899 s.v. वाहन, from √vah 'to carry').",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. बभ्रुवाहन (babhruvāhana), बभ्रु (babhru), वाहन (vāhana)." }]
+  },
+  "hindu_chitrasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit चित्रसेन (IAST: citrasena) 'having a bright / variegated / brilliant army'. Bahuvrīhi compound of citra (चित्र) 'conspicuous, bright, clear; variegated, many-coloured; brilliant, excellent, extraordinary' (Monier-Williams 1899 s.v. चित्र) + senā (सेना) 'an army, a host; a missile, dart, weapon' (Monier-Williams 1899 s.v. सेना).",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. चित्रसेन (citrasena), चित्र (citra), सेना (senā)." }]
+  },
+  "hindu_dasharatha": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit दशरथ (IAST: daśaratha) 'having ten chariots' (epithet of a powerful warrior); as a name, the king of Ayodhyā, father of Rāma'. Bahuvrīhi compound of daśa (दश) 'ten' (Monier-Williams 1899 s.v. दशन्/दश) + ratha (रथ) 'a chariot, car, war-chariot, vehicle' (Monier-Williams 1899 s.v. रथ). MW 1899 records दशरथ daśaratha as 'having ten chariots' and as the proper name of the sovereign of Ayodhyā and father of Rāma.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. दशरथ (daśaratha), दश (daśa), रथ (ratha)." }]
+  },
+  "hindu_devaki": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit देवकी (IAST: devakī) 'as a name, 'the daughter of Devaka', mother of Kṛṣṇa; ultimately built on deva 'god, divine, celestial'. Feminine patronymic in -ī formed on the masculine stem devaka (देवक), itself a -ka derivative of deva (देव) 'a deity, god; divine, celestial, shining' (Monier-Williams 1899 s.v. देव, from the root √div 'to shine').",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. देवकी (devakī), देवक (devaka), देव (deva)." }]
+  },
+  "hindu_draupadi": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit द्रौपदी (IAST: draupadī); base द्रुपद (IAST: drupada) 'patronymic 'daughter of Drupada'; the base Drupada = 'wooden pillar / firm-footed post'. Draupadī (द्रौपदी) is a vṛddhi-derivative feminine patronymic 'daughter of Drupada' (Monier-Williams 1899 s.v. द्रौपदी).",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. द्रौपदी (draupadī), द्रुपद (drupada), द्रु (dru), पद (pada)." }]
+  },
+  "hindu_ghatotkacha": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit घटोत्कच (IAST: ghaṭotkaca) 'pot-headed', i.e. one whose (bald) head is shaped like a pot'. Compound (ghaṭa + utkaca) of ghaṭa (घट) 'a jar, pitcher, pot, water-pot' (Monier-Williams 1899 s.v. घट) + utkaca (उत्कच) 'having the hair erect; hairless, bald' (ut- 'up, away' + kaca केश/केश-related 'hair'; Monier-Williams 1899 s.v. उत्कच / कच).",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. घटोत्कच (ghaṭotkaca), घट (ghaṭa), उत्कच (utkaca)." }]
+  },
+  "hindu_indrajit": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit इन्द्रजित् (IAST: indrajit) 'conqueror of Indra'. Tatpuruṣa compound of Indra (इन्द्र), the king of the gods, + -jit (जित्) 'conquering, victorious, who conquers' (an agent form of the root √ji 'to conquer, win'; Monier-Williams 1899 s.v. जित्).",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. इन्द्रजित् (indrajit), जित् (jit)." }]
+  },
+  "hindu_iravan": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit इरावान् (IAST: irāvān), nom. of इरावत् (IAST: irāvat) 'possessed of food/refreshment, endowed with provisions; (hence) comfortable', ultimately from irā 'food, draught, refreshment; (also) water'. Possessive -vat formation: irā (इरा / iḍā इडा) 'any drinkable fluid, draught, refreshment, food; comfort; (also) water, the earth' (Monier-Williams 1899 s.v.",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. इरावत् (irāvat), इरा (irā). Supplementary scholarly attribution: A. Hiltebeitel and M. Biardeau (cited in reference literature) on the iḍā-vant / 'sacrificial-victim' readings." }]
+  },
+  "hindu_janamejaya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit जनमेजय (IAST: janamejaya / jána-m-ejayá) 'causing men/people to tremble'. Irregular accusative-governing compound: jana (जन) 'a creature, man, person; people, subjects, mankind' (accusative janam) (Monier-Williams 1899 s.v. जन) + ejaya (एजय) 'causing to shake or tremble' (causative agent of the root √ej 'to stir, move, tremble'; Monier-Williams 1899 s.v. एजय).",
+    "sources": [{ "kind": "secondary", "reference": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press, s.vv. जनमेजय (janamejaya), जन (jana), एजय (ejaya)." }]
+  },
+  "hindu_kausalya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Kausalyā (कौसल्या) 'belonging to / pertaining to the Kosalas', i.e. 'the Kosalan (princess)', a vṛddhi-derivative (patronymic/gentilic) of the kingdom-name Kosala (capital Ayodhyā). Used as the name of the eldest queen of Daśaratha and mother of Rāma.'. vṛddhi-formation kosala- > kausalya- ('relating to Kosala / of the Kosala people'), feminine kausalyā-.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. kausalya / Kauśalyā ('belonging to the Kosalas; Name of the mother of Rāma'), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_kumbhakarna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Kumbhakarṇa (कुम्भकर्ण) 'pot-eared', literally 'jar's-ear'; a rākṣasa, the giant brother of Rāvaṇa.'. bahuvrīhi compound kumbha- ('a jar, pitcher, pot') + karṇa- ('ear') = 'having ears (shaped/large) like pots'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. kumbha-karṇa ('pot-eared, Name of a brother of Rāvaṇa'), via the Cologne MW digitisation reproduced on wisdomlib.org (kumbha-karṇa glossed 'jar's-ear')." }]
+  },
+  "hindu_kunti": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Kuntī (कुन्ती) '(woman) of the Kuntis', a gentilic name attaching the princess to the Kunti people / to her adoptive father Kuntibhoja (king of the Kuntis). Her birth-name was Pṛthā (daughter of the Yādava Śūra), the name Kuntī being acquired on her adoption.'. feminine gentilic kuntī- from the people-/king-name Kunti(-bhoja); birth-name Pṛthā- ('the broad/wide one').",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. Pṛthā ('Kunti, wife of Pāṇḍu') and s.v. Kuntī / Kuntibhoja, via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_madri": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Mādrī (माद्री) '(princess) of Madra', i.e. 'the Madra woman', the gentilic feminine of the northwestern kingdom-name Madra; second wife of Pāṇḍu, mother of Nakula and Sahadeva.'. feminine vṛddhi-gentilic madra- > mādrī- ('pertaining to / of Madra'); cf. MW mādravatī 'princess of the Madras'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. Mādrī / mādravatī ('princess of the Madras'); the derivation of Mādrī from Madra is expressly attributed to Monier-Williams in the secondary literature (Wikipedia 'Mādrī', citing Monier Monier-Williams)." }]
+  },
+  "hindu_niramitra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Niramitra (निरमित्र) 'free from enemies, having no foe'; used as a proper name, specifically (per MW) of a son of Nakula.'. compound/bahuvrīhi nir- (nis-, 'without, free from') + amitra- ('enemy, foe'; itself a-mitra 'non-friend') = 'free from enemies'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. nir-amitra ('free from enemies; Name of a son of Nakula', also of a son of the king of Trigarta and of a son of Khaṇḍapāṇi), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_pandu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Pāṇḍu (पाण्डु) 'pale, pale-yellow, whitish, yellowish-white'; as a proper name, the Kuru king Pāṇḍu, said to be so named for his pallid complexion.'. adjective/noun pāṇḍu- 'pale or yellowish-white colour' (also 'jaundice; white elephant'); used as the king's name.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. pāṇḍu ('pale, yellowish-white; m. pale or yellowish-white colour; Name of a prince'), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_parikshit": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Parikṣit (परिक्षित्) 'extending / dwelling / spreading around, surrounding' (from pari + the root kṣi 'to abide, dwell, rule over'); the personal name of the Kuru king, grandson of Arjuna.'. pari- ('around, all about') + √kṣi (in the sense 'to abide, dwell, extend over, rule') > pari-kṣít- 'extending/dwelling all around'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. parikṣit / pari-kṣi ('dwelling or spreading around, surrounding, extending over'), via the Cologne MW digitisation reproduced on sanskritdictionary.com and wisdomlib.org." }]
+  },
+  "hindu_ravana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Rāvaṇa (रावण) '(one) causing to cry out / making (the world / people) scream, roaring, bewailing'; the ten-headed rākṣasa king of Laṅkā.'. causative (ṇic) of √ru ('to roar, cry, howl, make any loud sound') > rāvaṇa- 'causing to cry/scream'; MW notes the form is applied specifically to the famous Rākṣasa.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. rāvaṇa ('crying, screaming, roaring, bewailing; [from the causative] causing to cry or scream, applied to the celebrated Rākṣasa') and s.v. √ru, via the Cologne MW digitisation reproduced on wisdomlib.org and the hosted MW page sanskrit.inria.fr/MW/219.html." }]
+  },
+  "hindu_rohini_vasudeva": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Rohiṇī (रोहिणी) 'the red one, ruddy' (also 'a red cow'); the lexeme that names the fourth/ninth lunar mansion whose principal star is Aldebaran. Here borne by the senior wife of Vasudeva, mother of Balarāma.'. feminine of rohiṇa-/rohita- 'red, reddish' (from √ruh 'to ascend/grow', via the colour-sense), rohiṇī- 'the red one'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. rohiṇī ('red, ruddy; a red cow; Name of the fourth [or ninth] lunar mansion ... the principal star being Aldebaran'), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_sarvaga": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Sarvaga (सर्वग) 'all-pervading, omnipresent, going everywhere'; used as a proper name, specifically (per MW) of a son of Bhīma-sena.'. compound sarva- ('all, whole') + -ga ('going, moving; pervading', from √gam) = 'going through all, all-pervading'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. sarva-ga ('all-pervading, omnipresent; m. ... a son of Bhīma-sena'), via the Cologne MW digitisation reproduced on wisdomlib.org and the hosted MW page sanskrit.uohyd.ac.in/SKT/MW/287.html." }]
+  },
+  "hindu_satyavati": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Satyavatī (सत्यवती) 'truthful, possessing truth / containing truth'; the name of the wife of Śaṃtanu (earlier of Parāśara) and mother of Vyāsa.'. possessive (matup/-vat) formation: satya- ('truth, true, real') + feminine possessive suffix -vatī ('having, possessing') = 'she who possesses truth, the truthful one'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. satyavatī ([satya-vatī, from satya-vat > satya > sat] 'Name of the wife of Parāśara (Śāṃtanu) and mother of Vyāsa') and s.v. satya-vat ('truthful, veracious'), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_shantanu": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Śaṃtanu (शंतनु) 'wholesome / beneficial to the body or person' (later epic form Śāntanu); the Kuru king of Hastināpura, father of Bhīṣma.'. compound śam- ('beneficial, salutary, wholesome, auspicious; calm') + tanu- ('body, person') = 'wholesome for the body, beneficial to the person'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. śaṃ-tanu ('wholesome for the body or person; Name of an ancient king'), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_shatanika": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Śatānīka (शतानीक) 'having a hundred armies / a hundred forms of battle-array'; here the Upapāṇḍava, son of Nakula by Draupadī.'. bahuvrīhi compound śata- ('a hundred') + anīka- ('army, troop, battle-array, front/face of an army') = 'possessing a hundred armies/arrays'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. śatānīka ('having a hundred forms of array / a hundred armies; Name of various men') and s.v. anīka ('army, array, front of an army'), via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_shatanika_janamejaya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit Śatānīka (शतानीक) 'having a hundred armies / a hundred forms of battle-array'; the same lexeme borne by the son of Janamejaya in the post-Mahābhārata Kuru line (distinct figure from the Upapāṇḍava of the same name).'. bahuvrīhi compound śata- ('a hundred') + anīka- ('army, battle-array, front of an army') = 'possessing a hundred armies/arrays'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary (1899), s.v. śatānīka ('having a hundred forms of array / a hundred armies; Name of various men') and s.v. anīka, via the Cologne MW digitisation reproduced on wisdomlib.org." }]
+  },
+  "hindu_shrutakarma": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit श्रुतकर्मन् (Śrutakarman) 'famed deed', 'he whose deeds are famous / heard of'. Sanskrit tatpuruṣa/bahuvrīhi compound of śruta (श्रुत) 'heard, famed, celebrated, well-known' (past participle of √śru 'to hear') + karman (कर्मन्) 'act, action, deed, work'. Monier-Williams glosses śruta as 'heard, listened to ..",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. śruta (p. 1101) and karman (p. 258); compound elements explicitly glossed." }]
+  },
+  "hindu_shrutasena": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit श्रुतसेन (Śrutasena) 'famed army', 'he whose army is renowned'. Sanskrit compound of śruta (श्रुत) 'heard, famed, renowned' (pp. of √śru) + senā (सेना) 'army, host, armament'. Monier-Williams glosses śruta as 'famous, celebrated, well known' and senā as 'a missile, dart, javelin (only in Veda); an army, armament, host, armed force'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. śruta (p. 1101) and senā (p. 1246); both elements explicitly attested." }]
+  },
+  "hindu_suhotra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुहोत्र (Suhotra) 'making/offering a good oblation', 'good sacrificer'. Sanskrit compound of the prefix su (सु) 'good, well, excellent; right(ly)' + hotra (होत्र) 'the office of the hotṛ priest; sacrifice, oblation, burnt-offering'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. su (p. 1219, laudatory prefix) and hotra (p. 1306); both elements explicitly attested." }]
+  },
+  "hindu_sumitra": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुमित्र / सुमित्रा (Sumitra / Sumitrā) 'good friend', 'having a good friend / good friends'. Sanskrit compound of the prefix su (सु) 'good, well' + mitra (मित्र) 'friend, companion, ally'. Monier-Williams glosses su as the laudatory prefix 'good, excellent, well' and mitra as 'a friend, companion'; the feminine Sumitrā is the queen-name. The compound reads '(having a) good friend'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. su (p. 1219) and mitra (p. 816); compound su-mitra attested." }]
+  },
+  "hindu_sushena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुषेण (Suṣeṇa) 'having a good army / a good missile', 'of fair host'. Sanskrit compound of the prefix su (सु) 'good, well' + ṣeṇa (< senā सेना) 'army, host' (and in Vedic usage 'missile, dart, javelin'). Monier-Williams lists Suṣeṇa s.v. and glosses senā as 'a missile, dart, javelin (only in Veda); an army, host, armed force'. The name reads 'he of the good army'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. su (p. 1219) and senā (p. 1246); Suṣeṇa attested as proper name." }]
+  },
+  "hindu_sutasoma": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit सुतसोम (Sutasoma) 'one who has pressed/extracted the Soma', 'offerer of a Soma libation'; also read as suta 'son' + soma'. Sanskrit compound of suta (सुत) + soma (सोम). Monier-Williams glosses suta in two relevant senses: (1) pp. of √su 'pressed out, extracted (esp. of the Soma juice), prepared'; (2) 'a son, child'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. sutá-soma (p. 1219) glossed 'one who has extracted the Soma, offerer of a Soma libation'; suta and soma each attested." }]
+  },
+  "hindu_vasudeva": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वसुदेव (Vasudeva) 'god of wealth' / 'shining (good) god'; patronymic Vāsudeva 'son of Vasudeva'. Sanskrit compound of vasu (वसु) + deva (देव). Monier-Williams glosses vasu as 'sweet; dry; excellent, good, beneficent' and as the noun 'wealth, riches, property, goods; a ray of light; the Vasus (a class of deities)', and deva as 'a deity, god'.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. vasu (pp. 930-931) and deva (p. 492); Vasudeva listed as proper name." }]
+  },
+  "hindu_vibhishana": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit विभीषण (Vibhīṣaṇa) 'terrifying', 'frightful'; (as neuter abstract) 'the act of terrifying, intimidation'. Sanskrit derivation from the intensifying prefix vi (वि) + bhīṣaṇa (भीषण) 'terrifying, frightful, formidable' (a causative-based form on √bhī 'to fear'). Monier-Williams gives vibhīṣaṇa as adj. 'terrifying, frightful' and n.",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. vibhīṣaṇa (p. 978) and bhīṣaṇa (p. 758)." }]
+  },
+  "hindu_vishrava": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit विश्रवस् / विश्रवा (Viśravas / Viśravā) 'renown', 'wide fame'; '(possessing) far-reaching fame'. Sanskrit compound of the prefix vi (वि) 'apart, asunder; widely, intensively' + śravas (श्रवस्) 'fame, glory, renown; sound, call' (an s-stem on √śru 'to hear').",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. viśravas / viśravā (p. 991) and śravas (p. 1096)." }]
+  },
+  "hindu_vrishaketu_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वृषकेतु (Vṛṣaketu) 'bull-bannered', 'having a bull for his ensign'. Sanskrit bahuvrīhi compound of vṛṣa (वृष) 'a bull; the strong/best of its kind; the male' + ketu (केतु) 'banner, flag, ensign, sign, mark; comet, ray of light'. Monier-Williams glosses vṛṣa as 'a man, male, bull ..",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. vṛṣa (p. 1011) and ketu (p. 309). (Note: vṛṣa-ketu 'bull-bannered' is the standard epithet structure, as in the parallel śiva-epithet vṛṣa-dhvaja.)" }]
+  },
+  "hindu_vrishasena_karna": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit वृषसेन (Vṛṣasena) 'having a bull('s) army', 'he whose host is (strong as) a bull'. Sanskrit compound of vṛṣa (वृष) 'bull; the strong/best of its kind; the male' + senā (सेना) 'army, host'. Monier-Williams glosses vṛṣa as 'bull .. the best or chief of its kind, the strongest' and senā as 'an army, host, armed force' (Vedic also 'missile, dart').",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. vṛṣa (p. 1011) and senā (p. 1246)." }]
+  },
+  "hindu_yaudheya": {
+    "languageFamily": "Indo-European (Indo-Aryan, Sanskrit)",
+    "etymology": "Sanskrit यौधेय (Yaudheya) 'warrior', 'belonging to/descended from a warrior'; also the eponymous warrior-tribe name'. Sanskrit vṛddhi-derivative on the root yudh (युध्) 'to fight, wage war' / the stem yodha (योध) 'warrior, soldier', formed with the taddhita suffix -ḍhak (giving yaudh-eya).",
+    "sources": [{ "kind": "secondary", "reference": "M. Monier-Williams, A Sanskrit-English Dictionary, (1899), s.v. yaudheya (p. 859), derived from yudh (p. 854); glossed 'a warrior, soldier' and tribal name." }]
+  },
+  // ══ Alphabetical sweep batch 7 (indices 415-494: Hopi, Hungarian, Ibibio, Inuit,
+  //    Kalash (Witzel), Irish/Roman, + recovered Nanook/Ikenga) ══
+  "hopi_kokopelli": {
+    "languageFamily": "Uto-Aztecan",
+    "etymology": "The English name 'Kokopelli' is a non-Hopi corruption of the Hopi katsina name Kookopölö (also written Kokopölö). In his book-length study, the linguist Ekkehart Malotki analyzes the term as ending in pölö, a Hopi element meaning 'lump, ball, knob, hump' (descriptive of the figure's pronounced hunchback, modeled on the humpbacked robber fly), while the initial element kooko- is of obscure/unknown meaning (Malotki notes a possible but unproven link to Zuni kokko 'katsina'). Malotki stresses that the popular 'Kokopelli' flute-player image is a misidentification, the actual Hopi flute being associated with the cicada katsina Maahu rather than with Kookopölö.",
+    "sources": [{ "kind": "book", "reference": "Ekkehart Malotki, Kokopelli: The Making of an Icon (Lincoln: University of Nebraska Press, 2000)" }]
+  },
+  "hopi_kookyangwsowuuti": {
+    "languageFamily": "Uto-Aztecan",
+    "etymology": "Hopi Kookyangwso'wuuti 'Spider Old-Woman / Spider Grandmother', a transparent compound of kookyangw 'spider' + so'wuuti 'old woman' (so'wuuti itself being the lexicalized term for an aged woman, related to wuuti 'woman'). The component lexemes kookyangw 'spider' and so'wuuti / wuuti are attested as headwords in the Third Mesa lexicon documented by the Hopi Dictionary Project.",
+    "sources": [{ "kind": "dictionary", "reference": "Hopi Dictionary Project (Kenneth C. Hill, Ekkehart Malotki, Mary E. Black, eds.), Hopi Dictionary / Hopìikwa Lavàytutuveni: A Hopi-English Dictionary of the Third Mesa Dialect (Tucson: University of Arizona Press, 1998), s.vv. kookyangw, so'wuuti / wuuti" }]
+  },
+  "hopi_masauwu": {
+    "languageFamily": "Uto-Aztecan",
+    "etymology": "Hopi Maasaw (also written Maasawu, Masauwu), the name of the god of death, fire, and the earth, is glossed by Ekkehart Malotki and Michael Lomatuway'ma as denoting essentially the 'animate conceptualization of death' (i.e., death personified / a death-spirit, hence the English label 'Skeleton Man'). On morphophonemic grounds the authors explicitly rule out any derivation from the Hopi color term maasi 'gray' (whose compound base is masi-, as in masilelwi 'to paint it gray', masilelent 'Gray Flute society members'), and they regard a possible connection of the Hopi root mas- to the reconstructed Uto-Aztecan element *mas- 'deer' as undemonstrated.",
+    "sources": [{ "kind": "book", "reference": "Ekkehart Malotki and Michael Lomatuway'ma, Maasaw: Profile of a Hopi God (American Tribal Religions, vol. 11; Lincoln: University of Nebraska Press, 1987)" }]
+  },
+  "hopi_taawa": {
+    "languageFamily": "Uto-Aztecan",
+    "etymology": "Hopi taawa 'sun' (also extended to 'day'), the ordinary noun for the sun in the Third Mesa dialect, used in the mythological register as the name of the sun-spirit/creator. The lexeme is documented in the Third Mesa lexicon of the Hopi Dictionary Project.",
+    "sources": [{ "kind": "dictionary", "reference": "Hopi Dictionary Project (Kenneth C. Hill, Ekkehart Malotki, Mary E. Black, eds.), Hopi Dictionary / Hopìikwa Lavàytutuveni: A Hopi-English Dictionary of the Third Mesa Dialect (Tucson: University of Arizona Press, 1998), s.v. taawa" }]
+  },
+  "hungarian_hadur": {
+    "languageFamily": "Uralic (Finno-Ugric) > Hungarian",
+    "etymology": "Hungarian Hadúr is a transparent compound of had 'army, war' + úr 'lord, master', a contraction of the older phrase Hadak Ura 'Lord of the Hosts/Armies'. The constituent had derives from Proto-Finno-Ugric *kunta (compare Finnish kunta), while úr is the inherited Hungarian word for 'lord'. The compound name itself, however, is a 19th-century literary formation: it was popularised by Arnold Ipolyi and the Romantic poets (Vörösmarty, Arany) as the name of a reconstructed war-/smith-god of the pagan Magyars, so the morphology is genuine Hungarian but the theonym is a learned coinage rather than an attested pre-Christian divine name.",
+    "sources": [{ "kind": "etymological dictionary", "reference": "Zaicz, Gábor (ed.), Etimológiai szótár: Magyar szavak és toldalékok eredete (Budapest: Tinta Könyvkiadó, 2006), s.vv. 'had' and 'úr' (constituent morphemes and meanings)." }, { "kind": "scholarly monograph", "reference": "Ipolyi, Arnold, Magyar Mythologia (Pest, 1854) — the work that established Hadúr / Hadak Ura as the name of the war-god; see also Géza Róheim, Hungarian and Vogul Mythology (American Ethnological Society Monographs XXII; New York: J. J. Augustin, 1954)." }]
+  },
+  "hungarian_nimrod": {
+    "languageFamily": "Uralic (Finno-Ugric) > Hungarian (with biblical/Hebrew loan name)",
+    "etymology": "Hungarian Nimród (medieval chronicle form Ménrót) is not a native Magyar formation but the biblical name Nimrod (Hebrew Nimrōḏ), the 'mighty hunter before the Lord' of Genesis 10, taken into the Hun–Hungarian origin legend. In the chronicle tradition the giant Ménrót/Nimród is made the father of Hunor and Magor (eponyms of the Huns and Magyars), his wife being Enéh ('hind'). The etymology is therefore that of a scriptural loan-name adopted as a legendary progenitor; the Hungarian-internal sense is simply 'the (biblical) hunter-giant Nimrod' rather than an analysable Hungarian word.",
+    "sources": [{ "kind": "medieval chronicle", "reference": "Simon of Kéza, Gesta Hunnorum et Hungarorum, c. 1283 (identifies Ménrót/Nimród with the biblical Nimrod and makes him father of Hunor and Magor)." }, { "kind": "medieval chronicle", "reference": "Kálti, Márk (attrib.), Chronicon Pictum (Képes Krónika), c. 1360 (Nimród and the wondrous-stag origin legend)." }]
+  },
+  "hungarian_turul": {
+    "languageFamily": "Uralic (Finno-Ugric) > Hungarian (Turkic loanword)",
+    "etymology": "Hungarian turul denoted a kind of large falcon / bird of prey and is most probably an Old Turkic loanword, from toġrïl ~ toġrul, the name of a medium-to-large raptor of the Accipitridae (glossed 'goshawk' or 'red kite'); the same Turkic etymon underlies the personal names Toġrïl / Tuğrul. It belongs to the stratum of Turkic loanwords in Hungarian (alongside other raptor terms such as kerecsen and zongor). In Hungarian mythography the turul is the totemic bird of prey of the Árpád dynasty's origin legend (the Emese dream).",
+    "sources": [{ "kind": "etymological dictionary", "reference": "Zaicz, Gábor (ed.), Etimológiai szótár: Magyar szavak és toldalékok eredete (Budapest: Tinta Könyvkiadó, 2006), s.v. 'turul' (derivation from Turkic toġrïl, 'bird of prey/falcon'); the Turkic-loanword analysis follows the tradition of Z. Gombocz's studies of Turkic loanwords in Hungarian." }]
+  },
+  "ibibio_abasi": {
+    "languageFamily": "Niger-Congo > Benue-Congo > Cross River > Ibibio-Efik",
+    "etymology": "Abasi is the ordinary Ibibio/Efik word for 'God', applied to the supreme sky-god and creator (also expanded as Abasi Ibom, where ibom conveys 'great/vast'). P. Amaury Talbot records Abasi as the high god of the Ibibio of the Cross River. The form is the common noun/theonym 'God, supreme being'.",
+    "sources": [{ "kind": "ethnographic monograph", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (London: Macmillan, 1923) — Abasi as the Ibibio supreme deity / word for God." }]
+  },
+  "ibibio_abasi_isong": {
+    "languageFamily": "Niger-Congo > Benue-Congo > Cross River > Ibibio-Efik",
+    "etymology": "Abasi Isong is a transparent compound, Abasi 'God' + isong 'earth, ground, land', i.e. 'God of the earth' — the earth/land aspect or earth-deity counterpart of the sky-god (Abasi Enyong / Abasi Ibom enyong, with enyong 'sky, above'). The gloss isong 'earth/ground' is the everyday Ibibio-Efik lexeme.",
+    "sources": [{ "kind": "ethnographic monograph", "reference": "P. Amaury Talbot, Life in Southern Nigeria: The Magic, Beliefs and Customs of the Ibibio Tribe (London: Macmillan, 1923) — Abasi Isong as the earth-deity (isong 'earth/land')." }]
+  },
+  "ibibio_ekpe": {
+    "languageFamily": "Niger-Congo > Benue-Congo > Cross River > Ibibio-Efik",
+    "etymology": "Ekpe (Efik/Ibibio; also Mgbe/Egbo among neighbouring groups) is the word for 'leopard', and the masquerade institution (the Ekpe or 'leopard' society of the Cross River) takes its name from it, the leopard being the emblem of political authority. The native form ékpè means 'leopard'.",
+    "sources": [{ "kind": "peer-reviewed article", "reference": "Ivor L. Miller, \"Ékpè 'leopard' society in Africa and the Americas: influence and values of an ancient tradition,\" Ethnic and Racial Studies 36, no. 2 (2013): 287-305 (title and text gloss ékpè = 'leopard')." }, { "kind": "scholarly monograph", "reference": "Ivor L. Miller, Voice of the Leopard: African Secret Societies and Cuba (Jackson: University Press of Mississippi, 2009)." }]
+  },
+  "ifugao_ovug": {
+    "languageFamily": "Austronesian > Malayo-Polynesian > Northern Luzon > Ifugao",
+    "etymology": "Ovug is the Ifugao word for/figure of thunder: the half-divine son of the skyworld deity Dumagid and the mortal woman Dugai, who when split into two halves yields two thunder-voices (the skyworld half = sharp lightning-crack thunder, the earth half = low rolling thunder). The name designates thunder, as recorded in the Ifugao thunder-origin myth.",
+    "sources": [{ "kind": "ethnographic monograph", "reference": "Roy Franklin Barton, The Religion of the Ifugaos (American Anthropologist, Memoir 65; American Anthropological Association, 1946) — Ifugao deities and the thunder-figure Ovug." }, { "kind": "ethnographic article", "reference": "H. Otley Beyer, \"Origin Myths among the Mountain Peoples of the Philippines,\" Philippine Journal of Science, sec. D, vol. 8 (1913): 85-117 — the Dumagid-Dugai-Ovug thunder-origin narrative." }]
+  },
+  "igbo_agwu": {
+    "languageFamily": "Niger-Congo > Benue-Congo > Igboid > Igbo",
+    "etymology": "Agwu is the Igbo tutelary deity of divination, medicine and the dibia (diviner-healer), embodying the dualities of fortune/misfortune and clarity/confusion. It is frequently invoked as Agwu Nsi, where nsi means 'medicine' (also 'poison'), i.e. the divination-and-medicine spirit. A connection of the name agwu to agwa 'manner, behaviour' is also reported. Jude C. U. Aguwa's monograph is the standard study attesting Agwu as the patron spirit of divination and its name.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Jude C. U. Aguwa, The Agwu Deity in Igbo Religion: A Study of the Patron Spirit of Divination and Medicine in an African Society (Enugu: Fourth Dimension Publishing, 1995) — Agwu / Agwu Nsi as the deity of divination and medicine (nsi 'medicine')." }]
+  },
+  "igbo_ikenga": {
+    "languageFamily": "Niger-Congo (Igboid, Igbo)",
+    "etymology": "Igbo Ikenga, the carved icon of personal power, achievement and the strong right hand, is built on ike 'strength, power, force'; the second element -nga is less securely analysed.",
+    "sources": [{ "kind": "secondary", "reference": "H. M. Cole & C. C. Aniakor, Igbo Arts: Community and Cosmos (1984), glossing ike 'power'" }]
+  },
+  "ijaw_woyengi": {
+    "languageFamily": "Ijoid (Izon/Ijo, Niger-Congo)",
+    "etymology": "Izon (Ijo) Woyengi, also Woyingi, glossed 'Our Mother': the supreme creator conceived as feminine among the Central and Western Delta Ijo, who name God simply Woyengi, 'Our Mother' (also paired with Tamara/Woyin). The reading reflects the Ijo theology that the supreme being is a procreator-mother rather than only a creator; the holistic gloss 'our mother' is the form attested in the scholarship of E. J. Alagoa on Izon religion.",
+    "sources": [{ "kind": "book", "reference": "E. J. Alagoa & T. N. Tamuno (eds.), The Izon of the Niger Delta (Onyoma Research Publications, 2009) — Izon supreme being named Woyengi/Woyin, 'Our Mother'." }, { "kind": "essay", "reference": "E. J. Alagoa, 'God is Mother: A Historical Review of Women in the Development of Niger Delta Communities' — Woyengi as 'Our Mother', supremacy of the feminine in Ijo religious thought." }]
+  },
+  "inkarri": {
+    "languageFamily": "Quechuan (with Spanish loan element; colonial Andean hybrid)",
+    "etymology": "Inkarri (also Inkarrí, Inka Rey) is a colonial-era hybrid: Quechua Inka 'Inca' + a Quechua-ized pronunciation of Spanish rey 'king', yielding 'Inca King'. The compound form itself postdates the Spanish conquest and is the linguistic signature of the post-1533 messianic 'dying-and-reviving Inca' myth treated in the canonical scholarship on the figure.",
+    "sources": [{ "kind": "book", "reference": "Juan M. Ossio (ed.), Ideología mesiánica del mundo andino (Lima, 1973) — standard anthology framing the Inkarri (Inka Rey) myth." }, { "kind": "book", "reference": "Alberto Flores Galindo, Buscando un Inca: Identidad y utopía en los Andes (1986) — Inkarri as Quechua-Spanish 'Inca king' in Andean messianism." }]
+  },
+  "inuit_anningan": {
+    "languageFamily": "Eskimo-Aleut (Inuit; Inuktitut)",
+    "etymology": "Inuktitut Aningaat (also Aningaaq, Aningaq; Netsilik Aningait), the Moon Man. Bernard Saladin d'Anglure derives the name as 'favourite brother': from ani 'brother' (the term a woman uses to address her brother) plus one of the synonymous diminutive/endearment suffixes -ngaq / -ngaat / -ngaaq 'favourite' — fitting the myth in which the Moon eternally pursues his sister the Sun (Siqiniq).",
+    "sources": [{ "kind": "article", "reference": "Bernard Saladin d'Anglure, 'Frère-Lune (Taqqiq), sœur-soleil (Siqiniq) et l'intelligence du Monde (Sila). Cosmologie inuit, cosmographie arctique et espace-temps chamanique', Études/Inuit/Studies 14 (1990) — etymology of Aningaat/Aningaaq as 'favourite brother' (ani + -ngaq/-ngaat/-ngaaq)." }]
+  },
+  "inuit_nanook": {
+    "languageFamily": "Eskimo-Aleut (Inuktitut)",
+    "etymology": "Inuktitut Nanuq (anglicized Nanook), the master and keeper of bears, is the ordinary Inuktitut noun nanuq 'polar bear' personified.",
+    "sources": [{ "kind": "secondary", "reference": "L. Schneider, Ulirnaisigutiit: An Inuktitut-English Dictionary (1985); cf. F. Boas, The Central Eskimo (1888)" }]
+  },
+  "inuit_sedna": {
+    "languageFamily": "Eskimo-Aleut (Inuit; Inuktitut)",
+    "etymology": "Inuktitut Sanna (recorded by Boas in the older orthography as Sedna / Sidne), the mistress of the sea and sea-animals dwelling on the ocean floor. Franz Boas, in The Central Eskimo (1888) — his Baffin Island monograph — gives the name as Sedna, which he reads as meaning approximately 'the one down there' (her father is named Anguta). She is also known regionally as Nuliajuk and Takannaaluk.",
+    "sources": [{ "kind": "book", "reference": "Franz Boas, The Central Eskimo (Sixth Annual Report of the Bureau of Ethnology, Smithsonian Institution, 1888) — records the sea-goddess Sedna/Sidne, name read as 'the one down there'." }]
+  },
+  "inuit_sila": {
+    "languageFamily": "Eskimo-Aleut (Inuit; Inuktitut)",
+    "etymology": "Inuktitut sila (personified as Silap Inua, 'indweller/owner of the sila'), the indweller of the air and weather. The word covers a cluster of meanings — air, weather, sky, outer/universe, and intellect/wisdom. Knud Rasmussen describes Sila among the Iglulik as the great spirit that lives 'up in the air... between sky and sea', a personification of the weather (silap inua, 'spirit of the air'); Bernard Saladin d'Anglure renders Sila as 'l'intelligence du Monde' (the intelligence/intellect of the world).",
+    "sources": [{ "kind": "book", "reference": "Knud Rasmussen, Intellectual Culture of the Iglulik Eskimos (Report of the Fifth Thule Expedition 1921–24, vol. VII, 1929), ch. 3 — Sila / silap inua as the spirit of the air and personification of weather." }, { "kind": "article", "reference": "Bernard Saladin d'Anglure, 'Frère-Lune (Taqqiq), sœur-soleil (Siqiniq) et l'intelligence du Monde (Sila)', Études/Inuit/Studies 14 (1990) — Sila glossed as the intelligence/intellect of the world." }]
+  },
+  "irish_fiachna_mac_baetain": {
+    "languageFamily": "Celtic (Goidelic; Old/Middle Irish)",
+    "etymology": "The personal name Fiachna (Old Irish Fíachnae) is built on the Old Irish noun fíach 'raven' (the carrion-bird, glossing Latin corvus), with the masculine name-forming suffix; the name thus carries the sense 'raven(-like one)'. fíach is the same element seen in the related names Fíachra and Féchín ('little raven'). The raven was a martial/ominous bird in early Irish tradition, an apt element in the name of a king of the Dál nAraide.",
+    "sources": [{ "kind": "dictionary", "reference": "Electronic Dictionary of the Irish Language (eDIL), s.v. '1 fíach' (= dil.ie/21873), defining fíach as 'a raven' and glossing Latin corvus." }, { "kind": "onomastic-reference", "reference": "Donnchadh Ó Corráin & Fidelma Maguire, Irish Names (Dublin: Lilliput Press; orig. Gaelic Personal Names, 1981), s.v. Fiachna/Fiachnae, deriving the name from Old Irish fiach 'raven'." }]
+  },
+  "iulius_proculus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The Latin name Proculus is a praenomen (later used as a cognomen) derived by the Roman antiquarian tradition from the adverb procul 'far off, at a distance'. The grammarian Festus (in the epitome of Paulus Diaconus) explains Proculus as the name given to a son born while his father was abroad/far away (procul a patre, i.e. patre peregrinante), with a secondary analogical explanation that it was given to children of fathers already 'far advanced' in age (procul progressis aetate). The name borne by the witness to Romulus' apotheosis, (Iulius) Proculus, belongs to this onomastic type.",
+    "sources": [{ "kind": "ancient-onomastic-source", "reference": "Festus, De verborum significatu, epitomized by Paulus Diaconus (Epitome Festi), s.v. Proculus, deriving the name from procul ('far off') as a child born while the father was abroad; standard edition W. M. Lindsay, Sexti Pompei Festi De verborum significatu (Leipzig: Teubner, 1913)." }]
+  },
+  "kalash_dezau": {
+    "languageFamily": "Indo-European > Indo-Iranian > Indo-Aryan (Dardic, Kalasha)",
+    "etymology": "Kalasha Dezau (ḍezáw), the creator god, identified with the Nuristani supreme creator Imrā. Witzel derives the theonym from Proto-Indo-European *dheiǵh- 'to form, to shape, to build', the same root that yields Vedic dih- and, more immediately, the Kati (Nuristani) verb dez 'to create' (Turner, Comparative Dictionary of the Indo-Aryan Languages [CDIAL] no. 14621); the god is thus the 'Shaper/Maker'. The name is used interchangeably in Kalasha with the borrowed Persian/Pashto epithet Khodái 'God'.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Witzel, Michael. 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents.' In A. Griffiths & J.E.M. Houben (eds.), The Vedas: Texts, Language and Ritual (Proceedings of the Third International Vedic Workshop, Leiden 2002), Groningen: Egbert Forsten, 2004 (cited in the worklist as Witzel 2004, 'Kalash Religion')." }, { "kind": "etymological-dictionary", "reference": "R. L. Turner, A Comparative Dictionary of the Indo-Aryan Languages (London: Oxford University Press, 1962-66), entry 14621 (PIE *dheiǵh- 'to form'), as cited by Witzel for ḍezáw." }]
+  },
+  "kalash_indr": {
+    "languageFamily": "Indo-European > Indo-Iranian > Indo-Aryan (Dardic, Kalasha)",
+    "etymology": "Kalasha Indr (also índr) is, per Witzel, the direct living reflex of Vedic Indra and the most conservatively Indo-Aryan figure in the Kalash pantheon, retaining Indra's rainbow, eagle, father-slaying and sun-releasing mythemes. A variant form Warén̄(dr-)/werín (also In Warín) is explained by Witzel as continuing *aparendra 'the unrivalled Indra'. His chthonic aspect Munjem Malik 'Lord of Middle Earth' shows munjem < Old Indo-Aryan *madhyama 'middle' compounded with the Arabic loan malék < malik 'king'.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Witzel, Michael. 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents.' In The Vedas: Texts, Language and Ritual, Groningen: Egbert Forsten, 2004 (worklist: Witzel 2004, 'Kalash Religion')." }, { "kind": "scholarly-monograph", "reference": "Jettmar, Karl. The Religions of the Hindukush, vol. 1: The Religion of the Kafirs. Warminster: Aris & Phillips, 1986 (on Indr/Indra continuity in the Hindu Kush)." }]
+  },
+  "kalash_jestak": {
+    "languageFamily": "Indo-European > Indo-Iranian > Indo-Aryan (Dardic, Kalasha)",
+    "etymology": "Kalasha Jestak (jéṣṭak), the goddess of lineage, domestic life, family and marriage, whose clan shrine is the Jéṣṭak-hán. Witzel derives the theonym from Old Indo-Aryan *jyeṣṭhā 'the eldest/most eminent (goddess)' (cf. the Hindu goddess Jyeṣṭhā), while flagging an alternative derivation from *deṣṭrī 'she who directs/apportions' as possible (a tentative variant marked with a query in his own discussion).",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Witzel, Michael. 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents.' In The Vedas: Texts, Language and Ritual, Groningen: Egbert Forsten, 2004 (worklist: Witzel 2004, 'Kalash Religion'). Witzel: 'Jeṣṭak (jéṣṭak, from *jyeṣṭhā, or *deṣṭrī?)'." }]
+  },
+  "kalash_mahandeo": {
+    "languageFamily": "Indo-European > Indo-Iranian > Indo-Aryan (Dardic, Kalasha)",
+    "etymology": "Kalasha Mahandeo (mahandéo), the god of crops who is also a war-god and the intermediary/negotiator with the supreme deity, corresponding to the Nuristani deity Mon/Māndi. Witzel reconstructs the name from *mahān deva, i.e. ultimately Sanskrit Mahādeva 'great god'; despite this Sanskritic etymology the figure is the indigenous Hindu Kush crop-and-war deity, not the Puranic Śiva. A.S. Cacopardo independently treats this figure and his sanctuary (the Kalasha 'Temple of Mahandeu', mythologically identified with the Nuristani 'Temple of Imrā').",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Witzel, Michael. 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents.' In The Vedas: Texts, Language and Ritual, Groningen: Egbert Forsten, 2004 (worklist: Witzel 2004, 'Kalash Religion'): 'Mahandeo (mahandéo, cf. the Nuristani Mon/Māndi, from *mahān deva)'." }, { "kind": "peer-reviewed-article", "reference": "Cacopardo, Augusto S. 'Temple of Imra, Temple of Mahandeu: a Kafir sanctuary in Kalasha cosmology.' Bulletin of the School of Oriental and African Studies 79(1), 2016: 95-116." }]
+  },
+  "kalash_sajigor": {
+    "languageFamily": "Indo-European > Indo-Iranian > Indo-Aryan (Dardic, Kalasha)",
+    "etymology": "Kalasha Sajigor (Sajigōr), a major and dangerous god whose shrine stands in the Rumbur valley, is treated by Witzel as one of the local manifestations of Indra. Witzel identifies Sajigōr with the epithet Shura Verin (Šúra Werín), which he derives from *śūra *aparendra 'the hero, the unrivalled Indra' (*śūra 'hero' + *aparendra 'Indra-without-equal'). NOTE: the etymological reconstruction attaches to the epithet Šúra Werín; the surface form 'Sajigor/Saj' itself is not given a separate native etymology by Witzel, and the worklist hint 'cf. *yajña?' is a query, not an attested derivation, so it is deliberately not asserted here.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Witzel, Michael. 'The Ṛgvedic Religious System and its Central Asian and Hindukush Antecedents.' In The Vedas: Texts, Language and Ritual, Groningen: Egbert Forsten, 2004 (worklist: Witzel 2004, 'Kalash Religion'): Sajigōr 'also called Šúra Werín (< *śūra *aparendra, the hero, the unrivalled Indra)'." }, { "kind": "scholarly-monograph", "reference": "Cacopardo, Alberto M. & Augusto S. Cacopardo. Gates of Peristan: History, Religion and Society in the Hindu Kush. Rome: IsIAO, 2001 (on Sajigōr as a principal Kalasha deity)." }]
+  },
+  // ══ Alphabetical sweep batch 8 (indices 495-574: Karelian/Finnic, Kartvelian,
+  //    Ket, Khanty, Khasi, Khoekhoe, Kikuyu, Komi, Kongo, Korean, Koryak, Lepcha) ══
+  "karelian_ilmarinen": {
+    "languageFamily": "Uralic (Finnic; Karelian)",
+    "etymology": "Native form Ilmarinen, derivative of Ilmari < Proto-Finnic *Ilmar(i), formed from the noun ilma 'air, sky, weather' (< Proto-Finno-Ugric *ilma 'sky') plus the Proto-Finnic agentive/possessive suffix -r(i) deriving a being associated with the root; thus '(divine) being of the air/sky', the smith-god. The same *ilma underlies cognate divine names in Khanty (Num-Iləm), Komi (Jen) and Udmurt (Inmar). The original deity is reconstructed as a Finno-Ugric sky-god later reshaped into the heaven-forging smith.",
+    "sources": [{ "kind": "academic_article", "reference": "Frog, 'Evolution, Revolution and Ethnocultural Substrata: From Finno-Ugric Sky-God to the God-Smith Ilmarinen', in Mythic Discourses: Studies in Uralic Traditions (Studia Fennica Folkloristica 20), eds. F. Frog, A.-L. Siikala & E. Stepanova, 2012" }, { "kind": "reference_work", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology (The Mythology of All Races IV), Boston, 1927 — ilma 'air/sky' as the base of the sky-god's name" }]
+  },
+  "karelian_ukko": {
+    "languageFamily": "Uralic (Finnic; Karelian)",
+    "etymology": "Native form Ukko, identical with the Finnic common noun ukko 'old man, grandfather, male elder' (used as a respectful epithet); the diminutive ukkonen also denotes 'thunder'. The thunder-god is thus named 'the Old Man', paralleled by his epithets Isä 'father' and Vaari 'grandfather' and by the Sami 'grandfather' thunder-figure (Horagalles) and Estonian Uku. Noted as a comparatively young theonym, restricted to Finnish, Estonian and (modified) Sami areas.",
+    "sources": [{ "kind": "scholar", "reference": "M. A. Castrén, Föreläsningar i finsk mytologi (Nordiska resor och forskningar III), 1853 — Ukko as theonym from the appellative 'old man'; observes its limited Finno-Ugric distribution" }, { "kind": "reference_work", "reference": "Britannica / Encyclopedia.com s.v. 'Ukko' (convergent): name = 'old man'; ukko/ukkonen also = 'thunder'" }]
+  },
+  "karelian_vainamoinen": {
+    "languageFamily": "Uralic (Finnic; Karelian)",
+    "etymology": "Native form Väinämöinen < Proto-Finnic *väinämöinen, traditionally derived from väinä 'wide, slow-flowing river; strait, river-mouth pool' (cf. Estonian väin 'strait', Livonian vēna 'river-mouth') plus a diminutive/agentive suffix, marking the sage-hero as originally a water-associated figure. DEBATED: the Suomen sanojen alkuperä (SSA) connects it instead to dialectal väineä 'slow' (a 'slowly-flowing river'), and J. Saarikivi has proposed a loan from early Germanic reflexes of *Wōdanaz (Odin); no derivation commands consensus, but the väinä etymology remains the leading native (Uralic) account.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "Suomen sanojen alkuperä: etymologinen sanakirja (SSA), eds. E. Itkonen & U.-M. Kulonen, Helsinki 1992–2000 — väinä 'slow/wide river', väineä 'slow' as the proposed base" }, { "kind": "academic_article", "reference": "Anna-Leena Siikala, Mythic Images and Shamanism (FF Communications 280), 2002 — Väinämöinen and the water/river associations of the name; survey of the etymological debate" }]
+  },
+  "kartvelian_badri": {
+    "languageFamily": "loanword onomastic (Arabic badr via Perso-Georgian naming), borne by a Svan (Kartvelian) epic figure",
+    "etymology": "The personal name Badri borne by Amirani's foster-brother is glossed 'full moon' (and by extension 'snow-white'), an onomastic borrowing of Arabic badr 'full moon' into the Perso-Georgian name stock; it is not an inherited Kartvelian lexeme. The gloss matches the character's beauty-register in the Svan epigraph. Authored at low confidence: the meaning is convergently reported and the Arabic etymon is secure, but the scholarly attestation specific to the epic figure is limited.",
+    "sources": [{ "kind": "academic_article", "reference": "Dodona Kiziria, 'Amirani, a Georgian Folk Hero' (Indiana University, Slavic Dept.; scholarworks.iu.edu) — names of the heroic trio; Badri glossed 'full moon'" }]
+  },
+  "ket_doh": {
+    "languageFamily": "Yeniseian (Ket)",
+    "etymology": "Native form Doh (Yeniseian Doχ), the name of the first shaman, attested by E. J. Vajda as possibly deriving from a homonymous Ket morpheme meaning 'to fly' — fitting his role traversing the seven sky-layers; the Milky Way is correspondingly called 'Doh's trail' (Dohara qoʔt). Authored with the source's own hedge ('possibly').",
+    "sources": [{ "kind": "academic_monograph", "reference": "Edward J. Vajda, 'Siberian Landscapes in Ket Traditional Culture', 2011 (Alaska Native Language Center / UAF) — Doh < morpheme 'to fly'; 'Doh's trail' = Milky Way" }, { "kind": "academic_article", "reference": "Edward J. Vajda, 'Ket Shamanism' (2009/2010) — Doh as the prototypical first shaman" }]
+  },
+  "ket_es": {
+    "languageFamily": "Yeniseian (isolate); Ket language",
+    "etymology": "From Ket eś (ēś) 'sky', extended to mean 'sky-god, deified sky, God'. Eś is the personified sky and supreme deity of the Ket, and the same word denotes both the physical sky and the high-god; manifestations such as thunder are expressed with the word, e.g. Eś deśij '(the) screams/cries of Eś'. The term has Yeniseian cognates for 'sky/God': Yug es, Kott ēš, Arin es, Pumpokol eč 'sky' (eg 'God'), as gathered in the comparative-historical Yeniseian materials of Werner and Vajda.",
+    "sources": [{ "kind": "book/monograph", "reference": "Vajda, E. J. (2011). Siberian Landscapes in Ket Traditional Culture. University of Alaska / Alaska Native Language Center — Eś glossed as 'sky/God', the supreme deity." }, { "kind": "dictionary/comparative", "reference": "Werner, H. & Vajda, E. J., Comparative-Historical Yeniseian Dictionary (Lincom Europa) / Yeniseian etymological data (Ket ēś 'sky'; Yug es, Kott ēš, Arin es, Pumpokol eč 'sky')." }, { "kind": "ethnography (primary)", "reference": "Anuchin, V. I. (1914). Essay on the Shamanism of the Yenisei Ostiaks (Очерк шаманства у енисейских остяков) — foundational record of Eś as Ket high-god." }]
+  },
+  "khanty_kul_otyr": {
+    "languageFamily": "Uralic > Finno-Ugric > Ugric > Ob-Ugric; Khanty (Mansi form Kul-Otyr / Kul'-otyr)",
+    "etymology": "A compound naming the lord of the underworld: kul / khul / xul' 'evil spirit, spirit of disease, devil' (cf. the kulis/kuli disease-demons he commands) + otyr / otar / otǝr 'lord, prince, hero' (the common Ob-Ugric heroic/lordly title). Hence roughly 'Lord of the Evil Spirits / Underworld Lord'. Karjalainen documents him (under names including Kul-iki / Kul-Otar) as the malevolent brother and antagonist of the sky-god Torum, ruler of the lower (dark) world.",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Karjalainen, K. F. Die Religion der Jugra-Völker (FF Communications, 1921–1927; Jugralaisten uskonto, 1918) — Kul-Otar/Kul-iki as the death/sickness spirit, brother of Torum." }, { "kind": "ethnography (primary)", "reference": "Munkácsi, B. Vogul (Mansi) Folklore Collection (1892–1921) — kul' 'evil spirit/devil' and the otyr 'lord/hero' title in Ob-Ugric tradition." }]
+  },
+  "khanty_num_torum": {
+    "languageFamily": "Uralic > Finno-Ugric > Ugric > Ob-Ugric; Khanty (with Mansi cognate)",
+    "etymology": "A compound 'Upper God / Upper Sky(-god)': num / numi 'upper, high, above' + torum / torem / turem 'sky, heaven, god, high god, weather, world (cosmic order)'. The Khanty title is also recorded as Num Turem Aśi 'Upper Sky Father'; the Mansi cognate is Numi-Torum. The element torum/torem (cf. Samoyedic Num 'sky-god') is the general Ob-Ugric word for 'sky/god/weather' and is also the source of words for atmospheric phenomena.",
+    "sources": [{ "kind": "encyclopedia (scholarly)", "reference": "'Num-Tūrem', Encyclopedia of Religion (entry on the Ob-Ugric supreme being): num/numi 'upper, sky' + torum/torem/turem 'sky, air, world, high god'." }, { "kind": "ethnography (primary)", "reference": "Karjalainen, K. F. Die Religion der Jugra-Völker (FF Communications, 1921–1927; Finnish orig. Jugralaisten uskonto, 1918) — foundational documentation of Num-Torum." }, { "kind": "ethnography (primary)", "reference": "Munkácsi, B. Vogul (Mansi) Folklore Collection (1892–1921) — Numi-Torum in Ob-Ugric mythology." }]
+  },
+  "khasi_hynniew_trep": {
+    "languageFamily": "Austroasiatic > Khasian; Khasi (Latin/Roman script)",
+    "etymology": "'Seven Huts': hynniew (Khasi hynñiew) 'seven' + trep 'huts'; the Khasi call themselves Ki Khun u Hynñiewtrep 'the Children of the Seven Huts'. The fuller formula Hynñiew Trep Hynñiew Skum adds skum 'nest(s)/root(s)', i.e. 'seven huts, seven nests', referring to the seven founding human clans who remained on earth (of an original sixteen) in the Sohpetbneng origin myth.",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Gurdon, P. R. T. (1907). The Khasis. Macmillan, London — Hynñiew Trep, 'the Seven Huts', the founding Khasi clans." }, { "kind": "dictionary/linguistic", "reference": "Khasi lexicon: hynñiew 'seven', trep 'hut', skum 'nest' (cf. Soso Tham, Ki Sngi Barim u Hynñiew Trep, 1936, on the Hynñiew Trep ancestors)." }]
+  },
+  "khasi_ka_mei_ramew": {
+    "languageFamily": "Austroasiatic > Khasian; Khasi (Latin/Roman script)",
+    "etymology": "'Mother Earth': ka (feminine article) + mei 'mother' + ramew (ram-ew / ramaw) 'earth, ground'. In Khasi cosmology Ka Mei Ramew is the earth-mother (consort of the world-guardian U Basa), invoked as 'Mother Earth' (also in the doublet Ka Mei Mariang–Ka Mei Ramew).",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Gurdon, P. R. T. (1907). The Khasis. Macmillan, London — Khasi religion, ka 'feminine' article and earth/nature spirits." }, { "kind": "secondary (scholarly)", "reference": "Mawrie, H. O. / B. L. Mawrie, studies of Khasi religion (Ka Niam Khasi) — Mei Ramew 'Mother Earth' as earth-mother deity." }]
+  },
+  "khasi_ka_sngi": {
+    "languageFamily": "Austroasiatic > Khasian; Khasi (Latin/Roman script)",
+    "etymology": "'The Sun', feminine: ka (feminine singular article/gender marker) + sngi 'sun, day'. The feminine gender of the sun (and masculine of the moon) is an explicit feature of Khasi recorded by Gurdon; ka sngi is paired with u bnai 'the moon'.",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Gurdon, P. R. T. (1907). The Khasis. Macmillan, London — ka (feminine) sngi 'sun' vs u (masculine) bnai 'moon'; Khasi gender of celestial bodies." }]
+  },
+  "khasi_u_blei_nongthaw": {
+    "languageFamily": "Austroasiatic > Khasian; Khasi (written in Latin/Roman script)",
+    "etymology": "'God the Creator/Maker': u (masculine singular article/gender marker) + blei 'god, God' + nongthaw 'maker, creator' (nong- agentive prefix 'one who…' + thaw 'to make, create'). Often expanded as U Blei Nongbuh Nongthaw 'God the Designer and Maker' (nongbuh 'planner/designer'). Gurdon records U Blei as the Khasi supreme being, with U marking masculine gender, though the deity is regarded as formless/genderless.",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Gurdon, P. R. T. (1907). The Khasis. Macmillan, London — 'U Blei Nong-thaw', God the Creator; U masculine, blei 'god'." }, { "kind": "dictionary", "reference": "Khasi–English Dictionary (ed. assoc. with P. R. T. Gurdon) — blei 'God, a god'; nongthaw 'maker, creator'." }]
+  },
+  "khasi_u_bnai": {
+    "languageFamily": "Austroasiatic > Khasian; Khasi (Latin/Roman script)",
+    "etymology": "'The Moon', masculine: u (masculine singular article/gender marker) + bnai 'moon, month'. Counterpart of the feminine sun ka sngi; Gurdon records the moon as masculine and the sun as feminine in Khasi.",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Gurdon, P. R. T. (1907). The Khasis. Macmillan, London — u (masculine) bnai 'moon'; Khasi celestial gender pairing with ka sngi 'sun'." }]
+  },
+  "khasi_u_lei_shyllong": {
+    "languageFamily": "Austroasiatic > Khasian; Khasi (Latin/Roman script)",
+    "etymology": "'The God of Shyllong (Shillong)': u (masculine article) + lei 'god' (contracted form of blei) + Shyllong, the name of the sacred peak (the variant U Blei Shyllong shows the full form blei). He is the chief of the Khasi U Ryngkew / U Basa land-guardian deities of Shillong Peak; the place-name Shillong itself derives from this deity. (Note: the meaning of the element Shyllong is disputed — treated as the peak/place-name in the standard analysis, while a folk legend re-derives the name from a man U Shyllong who first venerated the mountain-god; the secure component is lei < blei 'god'.)",
+    "sources": [{ "kind": "ethnography (primary)", "reference": "Gurdon, P. R. T. (1907). The Khasis. Macmillan, London — U Lei/U Blei Shyllong, tutelary deity of Shillong Peak; lei a contraction of blei 'god'." }]
+  },
+  "khoekhoe_tsui_goab": {
+    "languageFamily": "Khoe-Kwadi (Central Khoisan) > Khoekhoe (Nama/Damara)",
+    "etymology": "Tsui-ǁGoab (Tsũi-ǁgoab; click ǁ = lateral click). The name is famously ambiguous and was analysed at length by Theophilus Hahn (1881). The popular/surface reading is 'wounded (sore) knee': tsû 'wounded, sore, painful' + ǁgoa-b 'knee' — tied to the myth in which Tsui-ǁGoab's knee is injured in his combat with the antagonist ǁGaunab. Hahn himself, however, argued this was a folk-etymological misreading and that the original sense was 'Red Dawn / red daybreak': he connected ǁgoa- 'to approach/come on (the approaching day)', ǁgoab 'morning, daybreak', ǁgoara 'dawn', with tsû / tsu 'making a wound; red (as of a fresh wound)', yielding 'the red approaching morning'. The two readings exploit the homonymy of ǁgoa-b as both 'knee' and 'the on-coming one (dawn)'. Hahn's 'red dawn' derivation was criticised by contemporaries (e.g. Andrew Lang) as strained; it is re-examined by Hartmann (2022).",
+    "sources": [{ "kind": "book/monograph (primary)", "reference": "Hahn, T. (1881). Tsuni-ǁGoam: The Supreme Being of the Khoi-Khoi. Trübner, London — original etymological analysis (knee vs. 'red dawn')." }, { "kind": "journal article (scholarly)", "reference": "Hartmann, ... (2022/2024). 'The interrelatedness between the Nama Khoikhoi supreme being and celestial objects', HTS Teologiese Studies / Theological Studies — restates Hahn's morphemes: ǁgoab 'morning/daybreak', tsū 'wound', tsu 'red' → 'red dawn'." }, { "kind": "secondary (critical reception)", "reference": "Lang, A. Custom and Myth, 'Hottentot Mythology' — records and critiques Hahn's 'Red Dawn' vs. 'Wounded Knee' argument." }]
+  },
+  "kikuyu_gikuyu": {
+    "languageFamily": "Niger-Congo > Bantu (Northeast Bantu, E.51); Gĩkũyũ (Kikuyu)",
+    "etymology": "The ancestor-name Gĩkũyũ derives from mũkũyũ 'sycamore fig tree' (Ficus sycomorus); thus the ethnonym Agĩkũyũ (a-/agĩ- noun-class plural prefix) means 'the people/children of the big mũkũyũ (sycamore-fig)'. In the origin tradition the god Ngai (Mũrungu) created Gĩkũyũ as the first man and gave him Mũmbi, the couple founding the clans at Mũkũrwe wa Nyagathanga.",
+    "sources": [{ "kind": "book/monograph (primary)", "reference": "Kenyatta, J. (1938). Facing Mount Kenya: The Tribal Life of the Gikuyu. Secker & Warburg — Gĩkũyũ as divinely-created progenitor; tribe named from him." }, { "kind": "ethnography (scholarly)", "reference": "Leakey, L. S. B. (1977). The Southern Kikuyu before 1903 — Gĩkũyũ/Agĩkũyũ ethnography and origin tradition; Gĩkũyũ < mũkũyũ 'fig (sycamore) tree'." }]
+  },
+  "kikuyu_mumbi": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Bantu (Central Kenya / Thagicu; Gĩkũyũ)",
+    "etymology": "Gĩkũyũ Mũmbi, an agent noun from the Bantu verb -umba 'to mould, shape, fashion, create' (with class-1 personal prefix mũ-), hence 'the moulder / fashioner / creator'. Kenyatta glosses the figure as the first woman fashioned alongside Gĩkũyũ; the -umba 'to mould (esp. pottery/clay)' root is the regular Bantu source of words for a moulder/creator. The cognate divine epithet Mũmbi/Mwũmbi 'creator' is applied to the high god as well.",
+    "sources": [{ "kind": "ethnography (insider)", "reference": "Kenyatta, Jomo. Facing Mount Kenya: The Tribal Life of the Gikuyu (London: Secker & Warburg, 1938), ch. 1 (the Gĩkũyũ–Mũmbi origin narrative; Mũmbi as the fashioned first woman)." }, { "kind": "lexicon", "reference": "Benson, T. G. (ed.), Kikuyu-English Dictionary (Oxford: Clarendon Press, 1964), s.vv. -umba 'mould/create', mũmbi 'moulder, creator'." }]
+  },
+  "kikuyu_ngai": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Bantu (Central Kenya / Thagicu; Gĩkũyũ)",
+    "etymology": "High god, also named Mũgai/Mogai, glossed by Kenyatta as 'the Divider (of the Universe)' / distributor and apportioner of land and goods — an agent noun (class-1 mũ-) on the Bantu verb -gaya/-gaa 'to divide, apportion, distribute'. The mountain epithet Mwene-Nyaga is rendered 'Possessor/Owner of (the) Nyaga (brightness/whiteness; the ostrich-like white of Kĩrĩnyaga, Mt Kenya)', mwene 'owner, possessor'.",
+    "sources": [{ "kind": "ethnography (insider)", "reference": "Kenyatta, Jomo. Facing Mount Kenya (London, 1938), ch. 1: 'the man Gĩkũyũ ... was called by the Mogai (the Divider of the Universe)'; on Mwene-Nyaga and Kĩrĩnyaga." }]
+  },
+  "kiribati_naatibu": {
+    "languageFamily": "Austronesian > Malayo-Polynesian > Oceanic > Micronesian (Gilbertese / Kiribati; Tungaru)",
+    "etymology": "Gilbertese Na-Atibu: na, the masculine personal article/prefix used before personal names, + atibu 'stone, rock', hence '(the personified) Stone / Rock' — the primordial being whose dismembered body forms the world in the Beru creation chant recorded by Grimble. The common noun atibu 'stone' is standard Gilbertese.",
+    "sources": [{ "kind": "ethnography", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands, ed. H. E. Maude (Honolulu: University of Hawaiʻi Press, 1989) — the Nareau / Na Atibu creation account; cf. Grimble, 'Myths from the Gilbert Islands', Folklore 33 (1922)." }]
+  },
+  "kiribati_nareau_elder": {
+    "languageFamily": "Austronesian > Malayo-Polynesian > Oceanic > Micronesian (Gilbertese / Kiribati; Tungaru)",
+    "etymology": "Gilbertese Nareau, the creator 'spider' of the Tungaru cosmogony; na, masculine personal article + a base glossed 'spider' in Grimble's recension (Nareau te moa 'Nareau the first/foremost', the senior of the two Nareau). Grimble renders the figure the 'Lord Spider' / spider-creator who floats over the primal void.",
+    "sources": [{ "kind": "ethnography", "reference": "Grimble, Arthur. 'Myths from the Gilbert Islands', Folklore, vol. 33 (1922); collected in Tungaru Traditions, ed. H. E. Maude (University of Hawaiʻi Press, 1989) — Nareau the Elder (Na Reau te moa)." }]
+  },
+  "kiribati_nareau_younger": {
+    "languageFamily": "Austronesian > Malayo-Polynesian > Oceanic > Micronesian (Gilbertese / Kiribati; Tungaru)",
+    "etymology": "Same name as Nareau the Elder: Gilbertese Nareau (na, masculine personal article + base glossed 'spider' in Grimble), the younger/second spider-creator (Nareau te kikiteia, the active world-shaper) distinguished in tradition from Nareau te moa. The name's sense is 'Spider (Lord)'.",
+    "sources": [{ "kind": "ethnography", "reference": "Grimble, Arthur. 'Myths from the Gilbert Islands', Folklore, vol. 33 (1922); collected in Tungaru Traditions, ed. H. E. Maude (University of Hawaiʻi Press, 1989) — the distinction of Nareau the Younger from Nareau the Elder." }]
+  },
+  "komi_jen": {
+    "languageFamily": "Uralic (Permian; Komi-Zyrian)",
+    "etymology": "Komi Ен (En), also cited Jen, the high creator/sky demiurge. The theonym continues a Proto-(Finno-)Uralic sky-and-weather word reconstructed *ilma 'sky, air, weather', the same etymon that yields Udmurt Inmar, Khanty Num-Iləm and Finnish ilma / the smith-deity Ilmarinen; Holmberg (Harva) already linked the Permian creator-name to Finnish ilma, and Helimski and Napolskikh reconstruct a Proto-Uralic background creator sky-god from this set. (The popular gloss 'Strength/the Good' has no scholarly attestation and is not asserted here.)",
+    "sources": [{ "kind": "book", "reference": "Uno Holmberg (Harva), Permalaisten uskonto (The Religion of the Permian Peoples), Helsinki, 1914 — links the Permian sky/creator theonym to Finnish ilma." }, { "kind": "encyclopedia", "reference": "N. D. Konakov & V. V. Napolskikh (eds.), Komi Mythology (Encyclopaedia of Uralic Mythologies, Vol. I), Budapest/Helsinki: Akademiai Kiado & Finnish Literature Society, 2003 — En as the upper/light creator demiurge." }, { "kind": "scholar", "reference": "E. Helimski & V. Napolskikh, on the Proto-Uralic creator sky-god and the *ilma > Komi Jen / Udmurt Inmar theonym set (summarised in standard Uralic-mythology surveys)." }]
+  },
+  "kongo_nzambi_a_mpungu": {
+    "languageFamily": "Niger-Congo (Bantu; Kikongo)",
+    "etymology": "Kikongo Nzambi a Mpungu, the supreme being. Nzambi is the Kongo reflex of a widely attested Bantu theonym (Proto-Bantu *nyambe / *jambe), cognate with Nyambe (Lozi), Nzame, Njambi, Nyame etc. across Bantu and Kwa; Mpungu is an intensifying title sense 'the supreme / almighty / all-completing' (associated by Kikongo lexicography with the root -pungu / -pungula 'to perfect, complete'). Together: roughly 'God the Supreme / Almighty Creator'. Note: Laman-based and MacGaffey's analysis of precolonial Kongo texts argues the bare term Nzambi was originally less a 'creator' than a remote/death-associated power, the active life-power being assigned to the bisimbi; the 'high creator' reading is partly a colonial-Christian reframing.",
+    "sources": [{ "kind": "dictionary", "reference": "Karl E. Laman, Dictionnaire Kikongo-Francais, Brussels, 1936 — Kikongo lexemes Nzambi and the -pungu/-pungula 'complete, perfect' root underlying Mpungu." }, { "kind": "book", "reference": "Wyatt MacGaffey, Religion and Society in Central Africa: The BaKongo of Lower Zaire, University of Chicago Press, 1986." }, { "kind": "journal", "reference": "W. MacGaffey, 'Precolonial Beliefs in God, Nzambi, and Chthonic Beings: Evidence from Kongo Texts', Journal of Religion in Africa 52(1-2), 2022 — on the semantic history of Nzambi (originally a remote/death-linked power) vs. the bisimbi as life-power." }]
+  },
+  "kongo_simbi": {
+    "languageFamily": "Niger-Congo (Bantu; Kikongo)",
+    "etymology": "Kikongo (ki)simbi, plural bisimbi / basimbi, the chthonic water-and-earth nature-spirits. The noun is derived within Kikongo from the verb simba / kusimba 'to hold, grasp, seize, keep, preserve' (MacGaffey glosses the simbi as 'seizers / holders'), expressing their role as binders and guardians of natural forces, springs and the land (isimba ia nsi 'guardians of the land').",
+    "sources": [{ "kind": "book", "reference": "Wyatt MacGaffey, Religion and Society in Central Africa: The BaKongo of Lower Zaire, University of Chicago Press, 1986 — bisimbi as nature-spirits and the simba 'to hold/seize' association." }, { "kind": "article", "reference": "Wyatt MacGaffey, 'Twins, Simbi Spirits and Lwas in Kongo and Haiti' (Haverford anthropology faculty publications) — simbi as 'seizers/possessors' in Kongo ritual." }, { "kind": "dictionary", "reference": "Karl E. Laman, Dictionnaire Kikongo-Francais, Brussels, 1936 — Kikongo verb simba/kusimba 'to hold, grasp, keep' and (ki)simbi 'water/nature spirit'." }]
+  },
+  "korean_ungnyeo": {
+    "languageFamily": "Koreanic (Sino-Korean compound)",
+    "etymology": "Korean 웅녀, written with the Sino-Korean characters 熊女 in the source text: 熊 ung 'bear' + 女 nyeo 'woman' = 'Bear-Woman'. The name is given to the she-bear at the moment of her transformation into a woman in the Dangun foundation narrative; the very hanja that spell out the meaning are those used by Iryeon in the Samguk Yusa (1281).",
+    "sources": [{ "kind": "primary-source", "reference": "Iryeon, Samguk Yusa, Book 1 (Gi-i), Dangun Wanggeom section, 1281 CE — the figure named 熊女 (Ungnyeo) 'bear-woman'." }]
+  },
+  "koryak_big_raven": {
+    "languageFamily": "Chukotko-Kamchatkan (Koryak)",
+    "etymology": "Koryak Quikinnaqu (Kamenskoye Kutkynnaku/Kuykynnyaku), an augmentative formation on the word for 'raven' = 'Big Raven', the raven creator-transformer. Jochelson records the further epithets Acicenaqu 'Big-Grandfather' and Tenanto'mwan 'Creator' (the latter, he notes, somewhat a misnomer for what is functionally a transformer/culture-hero).",
+    "sources": [{ "kind": "book", "reference": "Waldemar Jochelson, The Koryak (Jesup North Pacific Expedition Vol. VI; Memoirs of the AMNH X), Leiden/New York, 1908 — Quikinnaqu/Kutkynnaku as augmentative of 'raven' = 'Big Raven', with epithets Acicenaqu 'Big-Grandfather' and Tenanto'mwan 'Creator'." }, { "kind": "book", "reference": "Waldemar Jochelson, Koryak Texts (Jesup Expedition / Publications of the AMNH), 1905 — Big-Raven narrative cycle." }]
+  },
+  "koryak_universe": {
+    "languageFamily": "Chukotko-Kamchatkan (Koryak)",
+    "etymology": "Koryak Naininen (also Naynginen), the remote benevolent Supreme Being, the name glossed by Jochelson as 'Universe / World / The-Outer-One'. Recorded among a set of abstract designations for the same being: Etin 'Master', Gicholan 'The-One-on-High', Inahitelan/Ginagitelan 'Supervisor', Thairgin 'Dawn'.",
+    "sources": [{ "kind": "book", "reference": "Waldemar Jochelson, The Koryak (Jesup North Pacific Expedition Vol. VI), 1908 — the Supreme Being Naininen 'Universe/World/Outer-one' and its synonyms (Etin 'Master', Gicholan 'The-One-on-High', etc.)." }, { "kind": "book", "reference": "M. A. Czaplicka, Aboriginal Siberia: A Study in Social Anthropology, Oxford: Clarendon Press, 1914, ch. XIII — summarising Jochelson on the Koryak Supreme Being's names and meanings." }]
+  },
+  "lepcha_azaor_bongthing": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman; Lepcha/Róng)",
+    "etymology": "Lepcha compound name whose head element is bóngthíng (also bong thing), the technical Lepcha term for the male shaman-priest of the Mun/Lepcha religion, contrasted with the female mun priestess. Siiger's glossary of Lepcha religious vocabulary records 'bong thing' = 'a Lepcha priest' (alongside 'mung' = demon and 'rum' = deity), and the term is documented in the Lepcha lexical tradition beginning with Mainwaring's grammar. The figure Azaor-Bongthing (Tamsangthing) is thus named as 'Azaor, the Bongthing (priest)', the mythic first holder of the bongthing office created to combat the mung. Only the office-term bóngthíng has a securely attested meaning; the element 'Azaor' is left unglossed.",
+    "sources": [{ "kind": "book", "reference": "Siiger, Halfdan. The Lepchas: Culture and Religion of a Himalayan People, Part I. Copenhagen: National Museum of Denmark, 1967 (glossary of Lepcha religious terms: 'bong thing' = a Lepcha priest; 'rum' = deity; 'mung' = demon)." }, { "kind": "book", "reference": "Mainwaring, George Byres. A Grammar of the Róng (Lepcha) Language, as it Exists in the Dorjeling and Sikim Hills. Calcutta, 1876 (Lepcha lexicon attesting bóngthíng as the priest term)." }]
+  },
+  "lepcha_itbu_moo": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman; Lepcha/Róng)",
+    "etymology": "Name of the Lepcha supreme creatress, transcribed Itbu-mu / Itbu-moo / Itbu-rum. Gorer, recording the Lepcha origin myth, explicitly glosses the figure: 'Itbu-mu, the Mother-Creator, made the earth and the heavens and all that they contained,' and has her shape the first man Fudong-thing from the snows of Kanchenjunga. The variant Itbu-rum carries the Lepcha element rum 'deity / benevolent supernatural being' (Siiger's religious glossary: rum = a deity, opposed to mung = demon), so 'Itbu-rum' = 'the deity Itbu' and 'Itbu-mu' = the (mother-)creator Itbu. The stem 'Itbu' itself is not separately glossed by a named source and is left unanalysed.",
+    "sources": [{ "kind": "book", "reference": "Gorer, Geoffrey. Himalayan Village: An Account of the Lepchas of Sikkim. London: Michael Joseph, 1938 ('Itbu-mu, the Mother-Creator, made the earth and the heavens...')." }, { "kind": "book", "reference": "Siiger, Halfdan. The Lepchas: Culture and Religion of a Himalayan People, Part I. Copenhagen: National Museum of Denmark, 1967 (Lepcha 'rum' = deity / benevolent supernatural being)." }]
+  },
+  "lepcha_kongchen": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman; Lepcha/Róng)",
+    "etymology": "Lepcha name of the deified sacred mountain (Kanchenjunga), addressed as a rum (deity). The full ceremonial Lepcha name is Kingtsoom-zaongbu Chu, morphemically glossed by the Lepcha lexicographer K. P. Tamsang as Kingtsoom 'forehead' + zaongboo 'auspicious' + Chu/Choo 'peak', i.e. 'the auspicious-forehead peak' (commonly rendered 'the bright/auspicious forehead'). The shorter Lepcha form Kongchen designates the same peak, revered as paternal protector and elder brother and as the source of the creation-snow from which the first Lepcha ancestors were formed; the deific status is marked by the Lepcha term rum 'deity' (Siiger). The element 'Kong-' in Kongchen is not independently glossed by a named source and is left unanalysed.",
+    "sources": [{ "kind": "dictionary", "reference": "Tamsang, K. P. The Lepcha-English Encyclopedic Dictionary. Kalimpong: Mani Printing Press / Lepcha Association (glossing Kingtsoom = 'forehead', zaongboo = 'auspicious', Choo = 'peak')." }, { "kind": "book", "reference": "Siiger, Halfdan. The Lepchas: Culture and Religion of a Himalayan People, Part I. Copenhagen: National Museum of Denmark, 1967 (Lepcha 'rum' = deity)." }]
+  },
+  // ══ Alphabetical sweep batch 9 (indices 575-654: Anatolian (Luwian/Lycian/Lydian),
+  //    Mesopotamian royal names, Maasai, Mari, Mapuche, Mansi, Lugbara, Luo) ══
+  "levantine_ammurapi": {
+    "languageFamily": "Afro-Asiatic (West Semitic, Ugaritic)",
+    "etymology": "Ugaritic ʿmrpʾ (vocalized ʿAmmurāpiʾ), a sentence-name 'the (divine) paternal-kinsman is a healer / has healed', from the Semitic element ʿamm 'paternal kinsman, (divine) kinsman' + the root rpʾ 'to heal' (cognate with the rpʾ behind the Rephaim). The 'healer' value of rpʾ in this name is the traditional reading and is noted by scholars as debated, since rpʾ is not otherwise attested meaning 'heal' in the Ugaritic corpus.",
+    "sources": [{ "kind": "lexicon", "reference": "G. del Olmo Lete & J. Sanmartín, A Dictionary of the Ugaritic Language in the Alphabetic Tradition (DULAT), s.vv. ʿmm and rpʾ" }, { "kind": "onomastic-study", "reference": "F. Gröndahl, Die Personennamen der Texte aus Ugarit (PTU), Rome 1967, on the elements ʿmm and rpʾ" }, { "kind": "scholar", "reference": "Seth L. Sanders, 'Hammurapi, King of the Dead' (2019), glossing ʿmrpʾ as '(divine) kinsman is a healer' and discussing the disputed value of rpʾ" }]
+  },
+  "lozi_nasilele": {
+    "languageFamily": "Niger-Congo (Bantu, Luyana/Lozi)",
+    "etymology": "Luyana/Lozi Nasilele, glossed 'she who is associated with (the) long things', name of the consort of the creator Nyambe, identified as the moon.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Alice Werner, Myths and Legends of the Bantu (London: Harrap, 1933), ch. on the Luyi/Zambezi creator, giving 'Nasilele' = 'she who is associated with long things'" }]
+  },
+  "lozi_nyambe": {
+    "languageFamily": "Niger-Congo (Bantu, Luyana/Lozi)",
+    "etymology": "Lozi/Luyana Nyambe, high-god / sky-creator, continuing Proto-Bantu *nyàmbé 'creator, high god' (widespread as Nzambi/Nyambi/Njambe across Bantu), commonly derived in the linguistic literature from the verbal root *-àmb- 'to begin, originate'. (A separate popular Luyana gloss 'he who does not speak' circulates but is not securely attached to a named scholarly authority and is excluded here.)",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "Alice Werner, Myths and Legends of the Bantu (London: Harrap, 1933), recording Nyambe as the creator of the Luyi of the Zambezi" }, { "kind": "reference-work", "reference": "Survey of Bantu theonyms deriving *nyàmbé from the root *-àmb- 'to begin' (Proto-Bantu high-god name); convergent across Bantu-religion reference literature" }]
+  },
+  "lugbara_adro": {
+    "languageFamily": "Nilo-Saharan (Central Sudanic, Lugbara)",
+    "etymology": "Lugbara adro 'God', here the immanent/earthly aspect: 'God on earth' (Adro), close to mankind and onzi 'bad', as opposed to the transcendent Adroa. Native term adro = 'God / spirit-power'.",
+    "sources": [{ "kind": "ethnographic-monograph", "reference": "John Middleton, Lugbara Religion: Ritual and Authority among an East African People (London: Oxford University Press, 1960), pp. 252-256, glossing Adro as immanent 'God on earth'" }]
+  },
+  "lugbara_adroa": {
+    "languageFamily": "Nilo-Saharan (Central Sudanic, Lugbara)",
+    "etymology": "Lugbara Adroa, the transcendent/sky aspect of adro 'God': 'God in the sky', remote from mankind and onyiru 'good'; titled Adroa 'ba o'bapiri 'God the creator of men' (o'ba 'to create' + -piri agentive). Same lexeme adro 'God' as the immanent Adro.",
+    "sources": [{ "kind": "ethnographic-monograph", "reference": "John Middleton, Lugbara Religion: Ritual and Authority among an East African People (London: Oxford University Press, 1960), pp. 27-30, 252-256, glossing Adroa as transcendent 'God in the sky' and Adroa 'ba o'bapiri 'creator of men'" }]
+  },
+  "lugbara_adroanzi": {
+    "languageFamily": "Nilo-Saharan (Central Sudanic, Lugbara)",
+    "etymology": "Lugbara Adroanzi, 'the Adro-children / children of God', a compound of adro 'God, spirit-power' + anzi 'children' (plural of an entity term); a class of nature/guardian spirits.",
+    "sources": [{ "kind": "ethnographic-monograph", "reference": "John Middleton, Lugbara Religion: Ritual and Authority among an East African People (London: Oxford University Press, 1960), pp. 253-255, treating the Adroanzi ('Adro-children') as a spirit class" }]
+  },
+  "lugbara_dribidu": {
+    "languageFamily": "Nilo-Saharan (Central Sudanic, Lugbara)",
+    "etymology": "Lugbara Dribidu, glossed 'the hairy one', name of one of the two founding hero-ancestors; his alternate name Banyale is glossed 'eater of men'.",
+    "sources": [{ "kind": "ethnographic-monograph", "reference": "John Middleton, Lugbara Religion: Ritual and Authority among an East African People (London: Oxford University Press, 1960), pp. 233-236, giving Dribidu 'the hairy one' and Banyale 'eater of men'" }]
+  },
+  "lugbara_gborogboro": {
+    "languageFamily": "Nilo-Saharan (Central Sudanic, Lugbara)",
+    "etymology": "Lugbara Gborogboro, glossed 'the person who comes (down) from the sky', the sky-created first man, paired with Meme.",
+    "sources": [{ "kind": "ethnographic-monograph", "reference": "John Middleton, Lugbara Religion (London: Oxford University Press, 1960), pp. 231-233, on Gborogboro and Meme" }, { "kind": "reference-work", "reference": "David A. Leeming, The Oxford Companion to World Mythology (Oxford University Press), s.v. Gborogboro and Meme, glossing Gborogboro 'the person coming from the sky'" }]
+  },
+  "lugbara_meme": {
+    "languageFamily": "Nilo-Saharan (Central Sudanic, Lugbara)",
+    "etymology": "Lugbara Meme, glossed 'the person who came alone', the first woman, paired with Gborogboro.",
+    "sources": [{ "kind": "ethnographic-monograph", "reference": "John Middleton, Lugbara Religion (London: Oxford University Press, 1960), pp. 231-233, on Gborogboro and Meme" }, { "kind": "reference-work", "reference": "David A. Leeming, The Oxford Companion to World Mythology (Oxford University Press), s.v. Gborogboro and Meme, glossing Meme 'the person who came alone'" }]
+  },
+  "luo_juogi": {
+    "languageFamily": "Nilo-Saharan (Western Nilotic, Luo)",
+    "etymology": "Luo juogi, plural of juok / jok 'spirit, divinity, vital force' — the pervasive Nilotic concept of jok (a spirit-power that is the essence of things and equated with God); juogi denotes the collective spirits, often ancestral.",
+    "sources": [{ "kind": "scholarly-article", "reference": "B. A. Ogot, 'The Concept of Jok', African Studies 20(2) (1961), 123-130, analysing jok as Nilotic spirit-force/divinity" }, { "kind": "scholarly-monograph", "reference": "Okot p'Bitek, Religion of the Central Luo (Nairobi: East African Literature Bureau, 1971), on jok and the juogi" }]
+  },
+  "luo_luanda_magere": {
+    "languageFamily": "Nilotic (Western Nilotic, Dholuo/Luo)",
+    "etymology": "Compound of Dholuo 'luanda' (also rendered 'lwanda') 'rock, stone, large flat rock' + the personal name 'Magere'. The hero-name thus literally evokes 'Magere the stone/rock', matching the legend in which his flesh was said to be stone; 'luanda' is the securely attested appellative element ('rock/stone'), while the sense of 'Magere' as a personal name is not lexically transparent (popularly glossed 'the fierce/unyielding one').",
+    "sources": [{ "kind": "book", "reference": "Ogot, B. A. (1967). History of the Southern Luo, Vol. I: Migration and Settlement. Nairobi: East African Publishing House (Luanda Magere tradition of the Kano/Sidho Luo)." }, { "kind": "lexical-consensus", "reference": "Convergent attestation that Dholuo 'luanda/lwanda' = 'rock/stone' (basic Dholuo lexicon), reflected uniformly in the Luanda Magere material." }]
+  },
+  "luo_nyasaye": {
+    "languageFamily": "Nilotic (Western Nilotic, Dholuo/Luo)",
+    "etymology": "Theonym for the Supreme Being, derived from the Luo verbal root 'sayo' / 'rica' 'to beg, beseech, supplicate', i.e. 'the one who is begged / before whom one kneels to petition'. Widely regarded as a Bantu-area religious term shared with neighbouring Bantu peoples (Luhya, Gusii/Kisii), and so possibly a Bantu loan diffused across the Lake Victoria region rather than an inherited Nilotic word.",
+    "sources": [{ "kind": "book", "reference": "p'Bitek, O. (1971). Religion of the Central Luo. Nairobi: East African Literature Bureau (discussion of Luo high-god names Nyasaye/Jok/Were)." }, { "kind": "article", "reference": "Ogot, B. A. (1961). 'The Concept of Jok', African Studies 20(2), 123-130 (Luo high-god terminology and its regional sharing)." }]
+  },
+  "luwian_arma": {
+    "languageFamily": "Indo-European (Anatolian, Luwian)",
+    "etymology": "Luwian theonym 'Arma-' = the Moon-god, literally 'moon'; the appellative also underlies the divine name. Cognate Anatolian forms include Lycian Erm̃ma-/Arm̃ma-, Carian Armo-, Lydian Arm-. Derived by Kloekhorst from Proto-Anatolian *ʿOrmo- 'wanderer' (i.e. the wandering luminary).",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Luwian moon-god Arma)." }, { "kind": "dictionary", "reference": "Kloekhorst, A., Etymological Dictionary of the Hittite Inherited Lexicon (s.v. arma- 'moon'; Proto-Anatolian *ʿOrmo- 'wanderer')." }]
+  },
+  "luwian_iyarri": {
+    "languageFamily": "Indo-European (Anatolian, Luwian)",
+    "etymology": "Luwian theonym 'Iyarri' (Hittite-transmitted variants Yarri, Yarriš), an archer-god of plague and war. The name is taken to be of Luwian origin; one scholarly proposal connects it to an Indo-European root ('uproar, violence, bane', compared with terms such as Greek arē 'ruin' and Sanskrit irin- 'violent'), while an alternative links it (inconclusively) to the name of Greek Ares. The appellative meaning remains debated.",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Iyarri as Luwian-origin plague/war god, paired with Šanta)." }, { "kind": "dictionary", "reference": "Kloekhorst, A., Etymological Dictionary of the Hittite Inherited Lexicon (discussion of Iyarri/Yarri and proposed IE connection)." }]
+  },
+  "luwian_kamrusepa": {
+    "languageFamily": "Indo-European (Anatolian, Luwian/Hittite)",
+    "etymology": "Theonym 'Kamrušepa' (Luwian form Kamri(ya)šepa), goddess of magic and healing. The final element '-šepa' is the well-known Anatolian theonymic component for a divine spirit/genius; the first element has been connected to Hittite 'kammara' 'smoke, mist, cloud', yielding the traditional gloss 'spirit/genius of the cloud/smoke' (Genius der Wolke/des Qualms) — though this association is flagged in the literature as possibly a folk etymology, and a Luwian (rather than Hattic) origin is argued.",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Kamrušepa as Luwian-Hittite goddess of magic/healing)." }, { "kind": "scholarly-gloss", "reference": "Standard gloss 'Genius der Wolke/des Qualms' for the name, with '-šepa' = divine spirit/genius and first element ~ Hittite kammara 'smoke/cloud' (noted as possibly folk-etymological)." }]
+  },
+  "luwian_runtiya": {
+    "languageFamily": "Indo-European (Anatolian, Luwian)",
+    "etymology": "Luwian tutelary stag-/hunting-god 'Runtiya' (written with the CERVUS/antler logogram; older reconstructed form *Krunti(ya)-, paralleling Hittite Kurunta). The name has been connected to a word for 'horn/antler', but the cited authorities themselves regard all etymologies proposed to date as problematic, and some posit a pre-Indo-European Anatolian source; the native theonym is secure, its appellative meaning is not.",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Runtiya / Kurunta, the stag-god)." }, { "kind": "epigraphic-scholarship", "reference": "J. D. Hawkins / H. C. Melchert: equation of Luwian Runtiya with Hittite Kurunta and the (problematic) 'horn/antler' etymology of the name." }]
+  },
+  "luwian_santa": {
+    "languageFamily": "Indo-European (Anatolian, Luwian)",
+    "etymology": "Luwian warlike, death-/plague-bringing god 'Šanta' (later Cilician Sandas/Sandes/Sandon, equated with Herakles). A current scholarly proposal derives the name from the Luwian verb 'šā(i)-' 'to be angry', giving the sense 'the furious / angry one', consistent with his martial character; he is frequently invoked together with Iyarri.",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Šanta as Luwian war/plague god, paired with Iyarri)." }, { "kind": "scholarly-proposal", "reference": "Derivation of Šanta < Luwian šā(i)- 'to be angry' ('the furious one'); cf. I. Rutherford on the young, warlike character of Šanta and Iyarri." }]
+  },
+  "luwian_tarhunz": {
+    "languageFamily": "Indo-European (Anatolian, Luwian)",
+    "etymology": "Luwian storm-god and head of the pantheon 'Tarḫunz' (stem Tarḫunt-), reflecting Proto-Anatolian *Tṛḫu-ent- 'conquering, overcoming', a participial formation to the Anatolian/PIE root *terh2- (*tarh-) 'to cross over, pass through, overcome'. Closely cognate with Hittite Tarḫunna; per Oettinger the IE weather-god functions of *Perkʷunos were here recast under this new 'conquering' epithet (assonant with Hattic Taru).",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Tarḫunz as Luwian weather-god and pantheon head)." }, { "kind": "scholarly-analysis", "reference": "N. Oettinger: Proto-Anatolian *Tṛḫu-ent- 'conquering' (root *terh2- 'to overcome'); H. C. Melchert, Cuneiform Luvian Lexicon (1993), s.v. tarh- 'to conquer/overcome'." }]
+  },
+  "luwian_tiwaz": {
+    "languageFamily": "Indo-European (Anatolian, Luwian)",
+    "etymology": "Luwian sun-god and oath-god 'Tiwaz' (stem Tiwat-), bearing the epithet 'Father'. The name 'tiwat-' is the Luwian word for 'sun/day', cognate with Hittite 'šiwat-' 'day', both reflecting an Anatolian formation on the Indo-European root *dyew-/*dei- 'sky, day, to shine, be bright' (the family of *deiwos 'god'; cf. Latin dies). The male sun-god is thus the Anatolian reflex of the IE bright-sky/sky-father word.",
+    "sources": [{ "kind": "book-chapter", "reference": "Hutter, M. (2003). 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians. Leiden: Brill (Tiwaz as Luwian sun-/oath-god)." }, { "kind": "dictionary", "reference": "H. C. Melchert, Cuneiform Luvian Lexicon (1993), s.v. Tiwat- (sun-god / 'day'), cognate Hittite šiwat- 'day'; from PIE *dyew-/*dei- 'shine, sky, day'." }]
+  },
+  "lycian_ertemi": {
+    "languageFamily": "Indo-European (Anatolian, Lycian)",
+    "etymology": "Lycian theonym 'Ertemi' (also attested in the personal name Erttimeli), the Lycian form of the goddess identified with Greek Artemis, worshipped at the Letoon as daughter of Lada (Leto). The name is the Lycian adaptation of (the same name as) Greek Artemis rather than an independently transparent Lycian appellative.",
+    "sources": [{ "kind": "dictionary", "reference": "Melchert, H. C. (2004). A Dictionary of the Lycian Language. Ann Arbor/New York: Beech Stave Press (s.v. Lycian forms of the Artemis-name)." }]
+  },
+  "lycian_lada": {
+    "languageFamily": "Indo-European (Anatolian, Lycian)",
+    "etymology": "Lycian 'lada' is the ordinary appellative noun 'wife, woman', and is used as the title/name of the mother-goddess (ẽni mahanahi, 'mother of the gods') worshipped at the Letoon and identified with Greek Leto. The traditional derivation of the Greek name Leto from Lycian lada 'wife' reflects this same word.",
+    "sources": [{ "kind": "dictionary", "reference": "Melchert, H. C. (2004). A Dictionary of the Lycian Language. Ann Arbor/New York: Beech Stave Press (s.v. lada 'wife, woman')." }]
+  },
+  "lycian_trqqas": {
+    "languageFamily": "Indo-European (Anatolian, Lycian/Milyan)",
+    "etymology": "Lycian storm-god 'Trqqas' (Lycian A; Lycian B / Milyan 'Trqqñt-', Lycian B Trqqiz), the direct continuation/cognate of Luwian Tarḫunt-, later identified with Zeus. The name reflects Proto-Anatolian *Tṛḫu-ent- 'conquering', to the IE root *terh2- (*tarh-) 'to cross over, overcome'; the same theonym recurs across Anatolian (Luwian Tarḫunz-, Carian Trquδ-).",
+    "sources": [{ "kind": "dictionary", "reference": "Melchert, H. C. (2004). A Dictionary of the Lycian Language. Ann Arbor/New York: Beech Stave Press (Lycian Trqqas/Trqqñt-, storm-god)." }, { "kind": "scholarly-analysis", "reference": "Cognacy with Luwian Tarḫunt- < Proto-Anatolian *Tṛḫu-ent- 'conquering' (root *terh2- 'to overcome'); cf. N. Oettinger; the theonym attested across Anatolian languages." }]
+  },
+  "lydian_artimus": {
+    "languageFamily": "Anatolian (Indo-European); Lydian",
+    "etymology": "Lydian theonym attested epigraphically as Artimu- (nom. Artimuś / Artimuk, dat. Artimul), the Lydian name of the goddess Artemis. The Lydian form preserves the same pre-Greek Anatolian goddess-name underlying Greek Ártemis; the Sardis cult of Artimu(ś) is the most frequently attested deity in the Lydian inscriptional corpus (6th–4th c. BC).",
+    "sources": [{ "kind": "lexicon", "reference": "R. Gusmani, Lydisches Wörterbuch (Heidelberg: Winter, 1964), s.v. Artimu-" }, { "kind": "secondary", "reference": "H. C. Melchert, 'Lydian Language and Inscriptions', in Sardis essays (Sardis Expedition), on Artimu- as Lydian Artemis" }]
+  },
+  "lydian_kufaws": {
+    "languageFamily": "Anatolian (Indo-European); Lydian",
+    "etymology": "Lydian theonym Kufaw- (the lion-attended mother goddess), the Lydian reflex of the Syro-Anatolian goddess-name Kubaba > Lydian Kuvav-/Kufaw-. This Lydian name (Sardis form) underlies Greek Kybebe (and is connected by Munn et al. with the development toward Kybele/Cybele via Phrygian Kubeleya). Scholars stress the Sardis goddess is properly Kybebe / Kuvava, not 'Cybele'.",
+    "sources": [{ "kind": "lexicon", "reference": "R. Gusmani, Lydisches Wörterbuch (1964), s.v. Kufaw-/Kuvav-" }, { "kind": "secondary", "reference": "M. Hutter, 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians (Brill, 2003), on Lydian Kuvava/Kufaws < Kubaba" }]
+  },
+  "lydian_kuvava": {
+    "languageFamily": "Anatolian (Indo-European); Lydian",
+    "etymology": "Lydian Kuvav- (variant of Kufaw-), the Lydian continuation of the name of the Syro-Anatolian goddess Kubaba (tutelary deity of Carchemish). At Sardis her cult is, per Hutter, gradually overlaid by Phrygian Cybele; the Lydian theonym is the local Iron-Age outcome of Kubaba.",
+    "sources": [{ "kind": "lexicon", "reference": "R. Gusmani, Lydisches Wörterbuch (1964), s.v. Kuvav-/Kufaw-" }, { "kind": "secondary", "reference": "M. Hutter, 'Aspects of Luwian Religion', in H. C. Melchert (ed.), The Luwians (Brill, 2003); cf. M. Munn on Kubaba > Lydian Kuvav-" }]
+  },
+  "lydian_lefs": {
+    "languageFamily": "Anatolian (Indo-European); Lydian",
+    "etymology": "Lydian theonym Lefs, the Lydian name of (the storm/rain) Zeus, developed Lews > Lefs as the Lydian adaptation of Greek Zeús; attested in 4th-c. BC votive and funerary texts. The development illustrates Lydian phonology (Greek Zeu- borrowed and reshaped); the variant Zeusis (from Lydian *div- 'god') is a separate Lydian designation of the same god.",
+    "sources": [{ "kind": "secondary", "reference": "Z. Sasseville, 'Lefs: a Greek god in Lydian disguise. Ζεῦσις: a Lydian god in Greek disguise, and some Luwian gods too', in Studies on the History and Archaeology of Lydia (Presses universitaires de Franche-Comté, 2023)" }, { "kind": "lexicon", "reference": "R. Gusmani, Lydisches Wörterbuch (1964), s.v. Lev-/Lef- (Lydian Zeus)" }]
+  },
+  "lydian_santas": {
+    "languageFamily": "Anatolian (Indo-European); Lydian",
+    "etymology": "Lydian Santas, the Lydian continuation of the Luwian/Bronze-Age Anatolian god Šanta (Santa), a warlike deity attested from the Old Assyrian period onward and venerated westward into Lydia. In Greco-Roman sources he appears as Sandas/Sandon (tutelary god of Tarsus) and was equated through interpretatio graeca with Heracles. The name is generally connected with the Luwian root šā(i)- 'to be(come) angry'.",
+    "sources": [{ "kind": "lexicon", "reference": "R. Gusmani, Lydisches Wörterbuch (1964), s.v. Sant-/Santas" }, { "kind": "secondary", "reference": "Scholarship on Luwian Šanta = Lydian Santas / Greek Sandas (e.g. studies on Šanta and its western Anatolian and Lydian attestations; cf. H. C. Melchert on Anatolian theonyms)" }]
+  },
+  "maasai_enkai": {
+    "languageFamily": "Nilotic (Eastern Nilotic); Maa (Maasai)",
+    "etymology": "Maa en-kai (Anglicised Enkai/Engai/Ngai; Maa orthography Eŋai), the common Maa noun denoting 'God', and also 'sky' and 'rain' — the high god being manifest in the rain that brings grass and life. The same lexeme carries the divine, celestial and meteorological senses; documented in the earliest folklore record (Hollis 1905) and in Maa lexicography.",
+    "sources": [{ "kind": "primary", "reference": "A. C. Hollis, The Masai: Their Language and Folklore (Oxford: Clarendon Press, 1905)" }, { "kind": "lexicon", "reference": "F. Mol, Maa: A Dictionary of the Maasai Language and Folklore (1978) / Maasai Language & Culture Dictionary (1996), s.v. Enkai; cf. Tucker & Mpaayei, A Maasai Grammar with Vocabulary (1955)" }]
+  },
+  "maasai_enkai_nanyokie": {
+    "languageFamily": "Nilotic (Eastern Nilotic); Maa (Maasai)",
+    "etymology": "Maa compound Enkai (e)nanyokie 'the Red God' — the wrathful, vengeful aspect of Enkai (associated with lightning, drought and famine). The qualifier nanyokie is the Maa adjective 'red' (root -nyokie 'red'), in feminine/agreement form qualifying the genderless deity.",
+    "sources": [{ "kind": "lexicon", "reference": "F. Mol, Maa: A Dictionary of the Maasai Language and Folklore (1978), on nanyokie 'red' and the Enkai Nanyokie / Enkai Narok pair" }, { "kind": "primary", "reference": "A. C. Hollis, The Masai: Their Language and Folklore (1905), on Maasai cosmology and the divine colour-aspects" }]
+  },
+  "maasai_enkai_narok": {
+    "languageFamily": "Nilotic (Eastern Nilotic); Maa (Maasai)",
+    "etymology": "Maa compound Enkai (e)narok 'the Black God' — the benevolent aspect of Enkai (associated with dark rain-clouds, thunder, grass and prosperity). The qualifier narok is the Maa adjective 'black/dark' (root -rok 'black'), here qualifying the deity.",
+    "sources": [{ "kind": "lexicon", "reference": "F. Mol, Maa: A Dictionary of the Maasai Language and Folklore (1978), on narok 'black' and the Enkai Narok / Enkai Nanyokie pair" }, { "kind": "primary", "reference": "A. C. Hollis, The Masai: Their Language and Folklore (1905), on Maasai cosmology and the divine colour-aspects" }]
+  },
+  "maasai_naiteru_kop": {
+    "languageFamily": "Nilotic (Eastern Nilotic); Maa (Maasai)",
+    "etymology": "Maa Naiteru-kop, glossed 'the (one who) began/created the earth' (i.e. 'the beginner of the earth'), a demiurge/mediating figure. The name contains the Maa verb a-iteru 'to begin/start' and en-kop 'the earth/land/ground'; hence 'that which began the earth'. Attested in the Hollis narratives and in Maa lexicography.",
+    "sources": [{ "kind": "primary", "reference": "A. C. Hollis, The Masai: Their Language and Folklore (1905), Naiteru-kop narratives" }, { "kind": "lexicon", "reference": "F. Mol, Maa: A Dictionary of the Maasai Language and Folklore (1978), s.v. en-kop 'earth/land' and a-iteru 'to begin'" }]
+  },
+  "maasai_olapa": {
+    "languageFamily": "Nilotic (Eastern Nilotic); Maa (Maasai)",
+    "etymology": "Maa ol-apa 'moon' (also 'month'), here personified as the moon-deity in Hollis's 'Sun and the Moon' narrative. The form bears the Maa masculine singular prefix ol-; the lexeme olapa 'moon/month' is the ordinary Maa word, secondarily personified.",
+    "sources": [{ "kind": "primary", "reference": "A. C. Hollis, The Masai: Their Language and Folklore (1905), 'The Sun and the Moon'" }, { "kind": "lexicon", "reference": "A. N. Tucker & J. T. Ole Mpaayei, A Maasai Grammar with Vocabulary (Longmans, 1955), s.v. ol-apa 'moon/month'; F. Mol, Maa Dictionary (1978)" }]
+  },
+  "mansi_kaltes_ekwa": {
+    "languageFamily": "Uralic (Ob-Ugric); Mansi (Vogul)",
+    "etymology": "Mansi theonym Kaltes-Ekwa (also Kaltaś), mother/dawn goddess. The second element is Mansi ēkwa 'woman, old woman/wife', a productive epithet for female spirits; the first element Kaltes/Kaltaś is the goddess-name proper (compared by some, e.g. Napolskikh & Belykh, with Permic Kyldysin). Documented in Munkácsi's Vogul folklore corpus.",
+    "sources": [{ "kind": "primary", "reference": "B. Munkácsi, Vogul (Mansi) Folklore Collection / Vogul Népköltési Gyűjtemény (Budapest, 1892–1921)" }, { "kind": "lexicon", "reference": "B. Munkácsi & B. Kálmán, Wogulisches Wörterbuch (Budapest, 1986), s.v. ēkwa 'woman/old woman'" }]
+  },
+  "mansi_mir_susne_khum": {
+    "languageFamily": "Uralic (Ob-Ugric); Mansi (Vogul)",
+    "etymology": "Mansi Mir-susne-xum, 'World-Surveying / World-Watching Man' — the pre-eminent Ob-Ugric culture-hero and intercessor (youngest son of Numi-Torum). The name is a transparent compound: mir 'world, people' + susne (participle of the verb 'to watch/survey/look over') + xum 'man'; cf. the Khanty equivalent Mĭr Šawijti Xu 'World-Surveying Man'.",
+    "sources": [{ "kind": "primary", "reference": "B. Munkácsi, Vogul (Mansi) Folklore Collection / Vogul Népköltési Gyűjtemény (Budapest, 1892–1921)" }, { "kind": "lexicon", "reference": "B. Munkácsi & B. Kálmán, Wogulisches Wörterbuch (1986), s.v. xum 'man', mir 'world/people'; cf. B. Kálmán, Chrestomathia Vogulica" }]
+  },
+  "mansi_numi_torum": {
+    "languageFamily": "Uralic > Finno-Ugric > Ugric > Ob-Ugric (Mansi/Vogul)",
+    "etymology": "Mansi (Vogul) Numi-Tōrəm, a compound of num/numi 'upper, high, above' + tōrəm 'sky, heaven; god', hence 'Upper Sky-God' / 'God of the Upper World'. tōrəm is the Ob-Ugric word denoting both 'sky/weather' and the celestial high god (cf. Khanty Num-Torum).",
+    "sources": [{ "kind": "monograph", "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, and Die Weltgottheiten der wogulischen Mythologie (1908): num/numi 'upper' + torum 'sky/god'." }, { "kind": "monograph", "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker, vols. I–III, FF Communications, 1921–1927: Ob-Ugric torum 'sky/god' and the Upper-God Num-Torum." }]
+  },
+  "mapuche_antu": {
+    "languageFamily": "Araucanian (Mapudungun, language isolate)",
+    "etymology": "Mapudungun antü 'sun; day; daylight', personified as the solar power paired with the moon Küyen. The mythological figure simply bears the common noun antü 'sun'.",
+    "sources": [{ "kind": "dictionary", "reference": "Félix José de Augusta, Diccionario araucano-español y español-araucano, Santiago, 1916: antü 'sol / sun, day'." }, { "kind": "dictionary", "reference": "Esteban Erize, Diccionario comentado Mapuche-Español, Bahía Blanca, 1960: antü 'sol/sun', personified solar entity." }]
+  },
+  "mapuche_kaikai_vilu": {
+    "languageFamily": "Araucanian (Mapudungun, language isolate)",
+    "etymology": "Mapudungun Kaykay-filu / Kaikai-Vilu, of which the attested lexical element is vilu (filu) 'snake, serpent'; the name thus means '(the) Kaikai serpent', the water/sea serpent. The first element Kaykay is a proper/onomatopoeic name (associated with the sea/flood) without an independently attested common-noun gloss.",
+    "sources": [{ "kind": "dictionary", "reference": "Félix José de Augusta, Diccionario araucano-español y español-araucano, Santiago, 1916: filu/vilu 'culebra, serpiente / snake'." }, { "kind": "monograph", "reference": "Ricardo E. Latcham, La organización social y las creencias religiosas de los antiguos araucanos, 1924: Kaikai-Vilu the water/sea serpent (vilu 'snake')." }]
+  },
+  "mapuche_kushe": {
+    "languageFamily": "Araucanian (Mapudungun, language isolate)",
+    "etymology": "Mapudungun kushe (kuše/kuse) 'old woman, elderly woman, granny; old (of a female)', the elder feminine aspect of the fourfold Ngenechen, paired with the old man Fücha (fücha 'old man').",
+    "sources": [{ "kind": "dictionary", "reference": "Félix José de Augusta, Diccionario araucano-español y español-araucano, Santiago, 1916: kushe/kuše 'vieja / old woman'." }, { "kind": "grammar", "reference": "Ineke Smeets, A Grammar of Mapuche (Mouton Grammar Library), with lexicon: kushe 'old woman, granny; old (woman/house)'." }]
+  },
+  "mapuche_ngenechen": {
+    "languageFamily": "Araucanian (Mapudungun, language isolate)",
+    "etymology": "Mapudungun Ngünechen / Ngenechen, a compound of ngen (ngün) 'owner, master, lord; the one who has dominion over' + che 'people, person', hence 'owner/master of the people', 'ruler of the people'. Originally the tutelary ngen-spirit governing the Mapuche, later (through syncretism) the supreme being.",
+    "sources": [{ "kind": "monograph", "reference": "Louis C. Faron, Hawks of the Sun: Mapuche Morality and Its Ritual Attributes, University of Pittsburgh Press, 1964: Ngenechen / Ngünechen as 'master of the people', the supreme ruling spirit." }, { "kind": "dictionary", "reference": "Félix José de Augusta, Diccionario araucano-español y español-araucano, Santiago, 1916: ngen 'dueño/owner' and che 'gente/people'." }]
+  },
+  "mapuche_trentren_vilu": {
+    "languageFamily": "Araucanian (Mapudungun, language isolate)",
+    "etymology": "Mapudungun Trentren-filu / Trentren-Vilu (also Trenten/Tentén), of which the attested lexical element is vilu (filu) 'snake, serpent'; the name thus means '(the) Trentren serpent', the earth serpent who raised the mountains against the flood. The reduplicated first element Trentren is a proper name (earth-associated) lacking an independently attested common-noun gloss.",
+    "sources": [{ "kind": "dictionary", "reference": "Félix José de Augusta, Diccionario araucano-español y español-araucano, Santiago, 1916: filu/vilu 'culebra, serpiente / snake'." }, { "kind": "monograph", "reference": "Ricardo E. Latcham, La organización social y las creencias religiosas de los antiguos araucanos, 1924: Trentren-Vilu the earth serpent (vilu 'snake')." }]
+  },
+  "mapuche_wangulen": {
+    "languageFamily": "Araucanian (Mapudungun, language isolate)",
+    "etymology": "Mapudungun wangülen (wangelen/wanglen) 'star', personified as the star-women / benevolent star-spirits of the sky-land (Wenu Mapu). The mythological figure bears the common noun wangülen 'star'.",
+    "sources": [{ "kind": "dictionary", "reference": "Félix José de Augusta, Diccionario araucano-español y español-araucano, Santiago, 1916: wangülen 'estrella / star'." }, { "kind": "dictionary", "reference": "Esteban Erize, Diccionario comentado Mapuche-Español, Bahía Blanca, 1960: wangülen 'estrella/star' (distinguished from wünelfe, the morning star Venus)." }]
+  },
+  "mari_keremet": {
+    "languageFamily": "Uralic > Finno-Ugric > Mari (Cheremis), Volga branch (loanword of ultimately Semitic/Arabic origin)",
+    "etymology": "Mari Керемет Keremet, denoting both a chthonic adversary-deity and the sacred grove/cult-place dedicated to it. Not native Uralic vocabulary: it is a borrowing of Arabic karāmat (karāma) 'saintly marvel, wonder, miracle; (grave of a) venerated saint', transmitted into Mari through Volga-Turkic (Bulgar/Tatar) intermediaries and indigenized as the name of the malevolent/chthonic spirit and its grove.",
+    "sources": [{ "kind": "journal-article", "reference": "L. S. Toidybekova, 'The Character of Keremet in the Mari Religious Tradition' (folklore.ee/rl/pubte/ee/usund/fbt/toidybekova): Keremet as deity and sacred grove, < Arabic karāmat via Turkic." }, { "kind": "journal-article", "reference": "R. R. Ilikaev, 'The Cult of Sultan Keremet among the Peoples of the Ural-Volga Region', Finno-Ugric World (Финно-угорский мир), 2024: keremet < Arabic-Islamic karāmat, syncretized with local belief through Bulgar-Islamic saint veneration." }]
+  },
+  "mari_kugu_yumo": {
+    "languageFamily": "Uralic > Finno-Ugric > Mari (Cheremis), Volga branch",
+    "etymology": "Meadow Mari Кугу Юмо Kugu Jumo, a compound of kugu 'great, big' + jumo 'god; sky' (Proto-Mari *jŭmǝ 'sky; god'), hence 'Great God'. The deity is also styled Kugurak 'the senior/elder one'.",
+    "sources": [{ "kind": "encyclopedia", "reference": "L. S. Toidybekova, Mari Mythology: Encyclopedic Reference (Марийская мифология: этнографический справочник), Yoshkar-Ola, 2007: Kugu Jumo, kugu 'great' + jumo 'god/sky'." }, { "kind": "monograph", "reference": "Thomas A. Sebeok & Frances J. Ingemann, Studies in Cheremis: The Supernatural, Viking Fund Publications in Anthropology 22, 1956: Mari supreme god Jumo and the kugu-/jumo lexemes." }]
+  },
+  "mari_mlande_ava": {
+    "languageFamily": "Uralic > Finno-Ugric > Mari (Cheremis), Volga branch",
+    "etymology": "Meadow Mari Мланде Ава Mlande Ava, a compound of mlande 'earth, land' + ava 'mother', hence 'Earth-Mother'. One of the personified natural-force '-ava' (mother) deities alongside Tul-Ava (fire-mother), Vüd-Ava (water-mother) and Mardezh-Ava (wind-mother).",
+    "sources": [{ "kind": "encyclopedia", "reference": "L. S. Toidybekova, Mari Mythology: Encyclopedic Reference, Yoshkar-Ola, 2007: Mlande Ava, mlande 'earth' + ava 'mother'; the -ava mother series." }, { "kind": "monograph", "reference": "Thomas A. Sebeok & Frances J. Ingemann, Studies in Cheremis: The Supernatural, 1956: the Cheremis '-ava' (mother) nature-spirits including the earth-mother." }]
+  },
+  "mari_tul_ava": {
+    "languageFamily": "Uralic > Finno-Ugric > Mari (Cheremis), Volga branch",
+    "etymology": "Meadow Mari Тул Ава Tul Ava, a compound of tul 'fire' + ava 'mother', hence 'Fire-Mother'. tul 'fire' is the same lexeme seen in Tul Jumo 'fire-god'; ava 'mother' is the recurring element of the Mari nature-mother series (Mlande-Ava, Vüd-Ava, Mardezh-Ava).",
+    "sources": [{ "kind": "monograph", "reference": "Thomas A. Sebeok & Frances J. Ingemann, Studies in Cheremis: The Supernatural, Viking Fund Publications in Anthropology 22, 1956: tul 'fire' (Tul-jumo) and the '-ava' mother spirits." }, { "kind": "encyclopedia", "reference": "L. S. Toidybekova, Mari Mythology: Encyclopedic Reference, Yoshkar-Ola, 2007: Tul Ava, tul 'fire' + ava 'mother'." }]
+  },
+  "maudjee_kawiss": {
+    "languageFamily": "Algic (Anishinaabe / Ojibwe)",
+    "etymology": "Anishinaabe (Ojibwe) Maudjee-kawiss (= maajiigawiz / majiikiwis), a structural-position name meaning 'first-born son / beginning (eldest) son' (the feminine counterpart Maudjee-quawiss marks a first-born daughter). Borne by the eldest of the four sons of E-bangishimog (the West Wind) by Winonah/Wiininwaa.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "B. Johnston (Anishinaabe author), The Manitous: The Spiritual World of the Ojibway, HarperCollins, 1995 (Maudjee-kawiss, eldest/first son of Epingishmook and Winonah)" }, { "kind": "ethnographic-source", "reference": "H. R. Schoolcraft, Algic Researches (1839), vols. I-II (the foundational record of the Mudjekeewis/Maudjee-kawiss narrative)" }]
+  },
+  "mende_ngewo": {
+    "languageFamily": "Niger-Congo (Mande; Mende)",
+    "etymology": "Mende Ngewɔ, the supreme/creator god; in older usage the high god bore the name Leve, glossed by scholarship as 'the high-up one / the one who is above' (i.e. the elevated, supreme being). Ngewɔ is the current designation for this same sky/creator divinity.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "K. Little, The Mende of Sierra Leone: A West African People in Transition, Routledge & Kegan Paul, 1951 (Mende religion; Ngewo/Leve as the high god)" }, { "kind": "reference-encyclopedia", "reference": "Encyclopedia of African Religion (SAGE, 2009), entries 'Mende' and 'Ngewo' (Leve 'one who is above')" }]
+  },
+  "mende_sowo": {
+    "languageFamily": "Niger-Congo (Mande; Mende)",
+    "etymology": "Mende sowo (sowei), the tutelary spirit/mask of the women's Sande society; the term denotes a senior official of the Sande society and, by extension, the black helmet-mask she wears (the ndoli jowei, 'dancing sowei'), and is associated with hale 'medicine' — the spiritual/medicinal force of the society. The gloss is a lexical/referential sense attested by specialists rather than a decomposed morphological etymology.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "S. A. Boone, Radiance from the Waters: Ideals of Feminine Beauty in Mende Art, Yale University Press, 1986 (chapter 'Sowo: The Good Made Visible')" }, { "kind": "scholarly-monograph", "reference": "R. B. Phillips, Representing Woman: Sande Masquerades of the Mende of Sierra Leone, UCLA Fowler Museum, 1995 (sowei; ndoli jowei 'dancing sowei')" }]
+  },
+  "mesopotamian_amar_sin": {
+    "languageFamily": "Sumerian (with Akkadian theonym)",
+    "etymology": "Sumerian Amar-Sîn (also Amar-Suen; cuneiform DAmar-DSuen), 'calf of (the moon-god) Sîn/Suen': amar 'calf, young bull' + the theonym Suen/Sîn (Sumerian Nanna). The name follows the transparent Sumerian compound pattern seen in Amar-Utu (Marduk, 'calf of Utu'). It is generally regarded as a throne-name adopted at accession (4th king of the Ur III dynasty).",
+    "sources": [{ "kind": "scholarly-edition", "reference": "D. Frayne, Ur III Period (2112-2004 BC), Royal Inscriptions of Mesopotamia: Early Periods 3/2 (RIME 3/2), University of Toronto Press, 1997 (Amar-Suen inscriptions)" }, { "kind": "reference-dictionary", "reference": "J. Black & A. Green, Gods, Demons and Symbols of Ancient Mesopotamia: An Illustrated Dictionary, British Museum Press, 1992 (Sumerian amar 'calf'; Nanna/Suen/Sin)" }]
+  },
+  "mesopotamian_ashur_dan_i": {
+    "languageFamily": "Akkadian (Assyrian dialect)",
+    "etymology": "Akkadian Aššur-dan, 'Ashur is strong/mighty': the theonym Aššur (national god of Assyria) + the predicative adjective dān (< dannu 'strong, powerful, mighty'; cf. the verb danānu 'to be strong'). A typical theophoric sentence-name of Assyrian royalty, asserting the strength of the state god.",
+    "sources": [{ "kind": "reference-lexicon", "reference": "Oracc / Assyrian-language lexical corpora s.v. dannu 'strong, powerful', danānu 'to be strong' (after CAD D, The Assyrian Dictionary of the Oriental Institute of the University of Chicago)" }, { "kind": "reference-dictionary", "reference": "J. Black & A. Green, Gods, Demons and Symbols of Ancient Mesopotamia, British Museum Press, 1992 (the god Aššur)" }]
+  },
+  "mesopotamian_enheduanna": {
+    "languageFamily": "Sumerian",
+    "etymology": "Sumerian En-hedu-Ana, 'En-priestess (high priestess), ornament of An/heaven': en 'high priest(ess), lord/lady' + hedu(g) 'ornament' + An (the sky-god / 'heaven'). The name was conferred on Sargon of Akkad's daughter at her installation as en-priestess of the moon-god Nanna at Ur.",
+    "sources": [{ "kind": "museum-scholarship", "reference": "Penn Museum (University of Pennsylvania), Expedition Magazine, 'Goddesses, Mothers, Rulers' and associated Enheduanna scholarship (Disk of Enheduanna, CBS 16665)" }, { "kind": "reference-dictionary", "reference": "J. Black & A. Green, Gods, Demons and Symbols of Ancient Mesopotamia, British Museum Press, 1992 (Sumerian en; An)" }]
+  },
+  "mesopotamian_enmahgalanna": {
+    "languageFamily": "Sumerian",
+    "etymology": "Sumerian En-mah-gal-an-na, an en-priestess title-name of the type 'exalted/great en(-priestess) of An (heaven)': en 'high priest(ess)' + mah 'exalted, great' + gal 'great' + An (the sky-god / 'heaven'). The morphemes are individually well-attested Sumerian lexemes and the name follows the canonical en-...-an-na priestess-naming pattern of the moon-god Nanna's high priestesses at Ur (cf. Enheduanna, Ennigaldi-Nanna). Gloss is morphological/structural rather than a directly quoted single-source translation.",
+    "sources": [{ "kind": "scholarly-monograph", "reference": "W. Sallaberger, Der kultische Kalender der Ur III-Zeit (Untersuchungen zur Assyriologie und Vorderasiatischen Archäologie 7/1-2), de Gruyter, 1993 (Ur III en-priestesses of Nanna at Ur)" }, { "kind": "reference-dictionary", "reference": "J. Black & A. Green, Gods, Demons and Symbols of Ancient Mesopotamia, British Museum Press, 1992 (Sumerian en; mah; An)" }]
+  },
+  "mesopotamian_geme_ninlilla": {
+    "languageFamily": "Sumerian",
+    "etymology": "Sumerian Geme-Ninlila, 'servant-woman / female servant of (the goddess) Ninlil': geme 'female servant, slave-woman' + the theonym Ninlil (consort of Enlil). A devotional theophoric name; the bearer was a principal lukur (royal consort) of Šulgi.",
+    "sources": [{ "kind": "scholarly-article", "reference": "P. Michalowski, 'Royal Women of the Ur III Period: Part II: Geme-Ninlila', Journal of Cuneiform Studies 31 (1979): 171-176" }, { "kind": "reference-dictionary", "reference": "J. Black & A. Green, Gods, Demons and Symbols of Ancient Mesopotamia, British Museum Press, 1992 (the goddess Ninlil)" }]
+  },
+  "mesopotamian_ibbi_sin": {
+    "languageFamily": "Akkadian (with theonym; Sumerian writing Ibbi-Suen)",
+    "etymology": "Akkadian Ibbi-Sîn (Sumerian writing I-bi-DSuen), a theophoric sentence-name '(the god) Sîn has named/called': verbal element ibbi (G-preterite of nabû 'to name, call, summon') + the theonym Sîn/Suen (the moon-god Nanna). The accepted translation given in the Assyriological literature is '(the god) Sîn has called/named (the child)'.",
+    "sources": [{ "kind": "scholarly-article", "reference": "I. Such-Gutiérrez et al., study of the Sumerian term in-bu/in-bux (Aula Orientalis, Univ. de Barcelona, IPOA), citing the accepted translation of Ibbi-Suen as '(the god) SIN has called'" }, { "kind": "text-corpus", "reference": "ETCSL 2.4.5.1-2.4.5.4 (royal hymns of Ibbi-Suen to Suen/Nanna), supporting the theophoric 'named with a good name (by Suen)' motif" }]
+  },
+  // ══ Alphabetical sweep batch 10 (indices 655-734: Mesopotamian kings, Nuristani,
+  //    Nuer, Nupe, Nenets, Mossi, Mordvin, Naga, Ndebele, Guarani, Otomi, Ovambo) ══
+  "mesopotamian_lugalbanda": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian compound lugal-banda: lugal 'king, lord' (lit. lu₂ 'man' + gal 'great') + banda 'junior, young; fierce, wild, impetuous'. The name is read as 'fierce/young king' (a hero-king epithet).",
+    "sources": [{ "kind": "reference work", "reference": "Jeremy Black & Anthony Green, Gods, Demons and Symbols of Ancient Mesopotamia: An Illustrated Dictionary (British Museum Press, 1992), s.v. Lugalbanda" }, { "kind": "text corpus", "reference": "Electronic Text Corpus of Sumerian Literature (ETCSL), Oxford, compositions 1.8.2.1 (Lugalbanda in the Mountain Cave) and 1.8.2.2 (Lugalbanda and the Anzud Bird); standard lexical glosses lugal 'king', banda 'junior/fierce'" }]
+  },
+  "mesopotamian_manishtushu": {
+    "languageFamily": "Semitic > East Semitic (Old Akkadian)",
+    "etymology": "Old Akkadian sentence-name Man-ištû-šu, conventionally rendered 'Who is with him?' (interrogative mannu(m) 'who' + ištu 'with/from' + pronominal suffix -šu 'him') — a protective question-name.",
+    "sources": [{ "kind": "reference work", "reference": "Douglas R. Frayne, The Royal Inscriptions of Mesopotamia, Early Periods, vol. 2: Sargonic and Gutian Periods (2334-2113 BC), Univ. of Toronto Press, 1993 (RIME 2.1.3), inscriptions and name-form of Man-ištušu" }, { "kind": "convergent web snippets", "reference": "Convergent encyclopedic/Assyriological summaries giving the standard gloss 'Who is with him?' for Man-ištušu" }]
+  },
+  "mesopotamian_meli_shipak_ii": {
+    "languageFamily": "Kassite (unclassified, non-Semitic non-Sumerian)",
+    "etymology": "Kassite theophoric name Meli-Šipak: meli 'servant, slave' + the Kassite deity name Šipak (a god equated in Kassite-Babylonian god lists; the variant Meli-Šiḫu suggests an identification of the divine element with Marduk). Sense: 'servant of (the god) Šipak'.",
+    "sources": [{ "kind": "reference work", "reference": "Kemal Balkan, Kassitenstudien I: Die Sprache der Kassiten (American Oriental Series 37, 1954) — foundational treatment of Kassite onomastics, element meli 'servant' and divine name Šipak" }, { "kind": "reference work", "reference": "J. A. Brinkman, A Political History of Post-Kassite Babylonia / Materials and Studies for Kassite History — Kassite royal nomenclature; cf. 'The Names of the Last Eight Kings of the Kassite Dynasty'" }]
+  },
+  "mesopotamian_naram_sin": {
+    "languageFamily": "Semitic > East Semitic (Old Akkadian)",
+    "etymology": "Old Akkadian Narām-Sîn: narām, construct/verbal-adjective of narāmu (root n-r-m) 'to love' = 'beloved (of)', + the divine name Sîn (Su'en), the moon-god. Meaning: 'beloved of (the moon-god) Sîn'.",
+    "sources": [{ "kind": "reference work", "reference": "Douglas R. Frayne, RIME 2 (Sargonic and Gutian Periods), Univ. of Toronto Press, 1993, inscriptions of Naram-Sin (writing dNa-ra-am dSîn)" }, { "kind": "convergent web snippets", "reference": "Convergent Assyriological summaries: narāmu 'to love/beloved' + Sîn, glossing 'Beloved of (the moon-god) Sîn'" }]
+  },
+  "mesopotamian_ninurta_apal_ekur": {
+    "languageFamily": "mixed Sumerian/Akkadian theophoric (Akkadian sentence-name with Sumerian temple-name)",
+    "etymology": "Sentence-name Ninurta-apal-Ekur 'Ninurta is the heir of the Ekur': divine name Ninurta + Akkadian aplu 'heir, (eldest) son' (here apal, construct) + Ekur, the Sumerian name (e₂-kur 'House-Mountain') of Enlil's great temple at Nippur.",
+    "sources": [{ "kind": "convergent web snippets", "reference": "Convergent Assyriological summaries glossing 'Ninurta is the heir of the Ekur'; aplu 'heir' (CAD A/2), Ekur = Enlil's temple at Nippur" }, { "kind": "reference work", "reference": "Standard Middle Assyrian king-list scholarship (Nassouhi / Khorsabad / SDAS lists) on the reign and name of Ninurta-apal-Ekur" }]
+  },
+  "mesopotamian_sargon": {
+    "languageFamily": "Semitic > East Semitic (Old Akkadian)",
+    "etymology": "Akkadian Šarru-kīn (also Šarru-kēn / Šarru-ukīn): šarru 'king' + kīnu 'firm, true, legitimate' (adjective from kânu 'to be firm/established'). Meaning: 'the king is legitimate / true / firmly established' (a throne-name implying legitimization).",
+    "sources": [{ "kind": "reference work", "reference": "Douglas R. Frayne, RIME 2 (Sargonic and Gutian Periods), Univ. of Toronto Press, 1993, inscriptions and name-form Šarru-kīn" }, { "kind": "convergent web snippets", "reference": "Convergent Assyriological summaries: šarru 'king' + kīnu/kēnu 'true, legitimate, established'; gloss 'the king is legitimate'" }]
+  },
+  "mesopotamian_shar_kali_sharri": {
+    "languageFamily": "Semitic > East Semitic (Old Akkadian)",
+    "etymology": "Akkadian genitive phrase used as throne-name Šar-kali-šarrī 'King of all kings': šar (construct of šarru) 'king' + kali 'all, totality' (construct of kalu) + šarrī 'of kings' (genitive plural of šarru).",
+    "sources": [{ "kind": "reference work", "reference": "Douglas R. Frayne, RIME 2 (Sargonic and Gutian Periods), Univ. of Toronto Press, 1993 (RIME 2.1.5), inscriptions of Šar-kali-šarri" }, { "kind": "convergent web snippets", "reference": "Convergent Assyriological summaries glossing Šar-kali-šarri as 'King of all kings'" }]
+  },
+  "mesopotamian_shu_sin": {
+    "languageFamily": "Semitic > East Semitic (Old Akkadian theophoric)",
+    "etymology": "Akkadian Šu-Sîn: the determinative-relative/possessive element šū 'he of, the one of' + the divine name Sîn (Su'en), the moon-god. Meaning: 'he of (the moon-god) Sîn'. Written dŠu-dSîn.",
+    "sources": [{ "kind": "reference work", "reference": "Douglas R. Frayne, The Royal Inscriptions of Mesopotamia, Early Periods, vol. 3/2: Ur III Period (RIME 3/2), Univ. of Toronto Press, 1997, inscriptions of Šu-Sîn" }, { "kind": "convergent web snippets", "reference": "Convergent Assyriological summaries: element šu 'he of' + Sîn; the moon-god Nanna/Su'en/Sîn (Oracc/AMGG)" }]
+  },
+  "mesopotamian_ur_nammu": {
+    "languageFamily": "Sumerian (language isolate)",
+    "etymology": "Sumerian Ur-Nammu: ur 'servant, man; warrior/hero' + the goddess-name Nammu (the primeval mother/sea goddess). Meaning: 'servant/man of (the goddess) Nammu'. (Note: the precise value of the element ur and whether the theonym is intended is debated among Sumerologists.)",
+    "sources": [{ "kind": "reference work", "reference": "Douglas R. Frayne, RIME 3/2 (Ur III Period), Univ. of Toronto Press, 1997, inscriptions of Ur-Nammu" }, { "kind": "convergent web snippets", "reference": "Convergent Sumerological summaries: ur 'servant/man/warrior' + the goddess Nammu; with noted scholarly caution on the ur-element" }]
+  },
+  "mordvin_ineshkipaz": {
+    "languageFamily": "Uralic > Finno-Ugric > Mordvinic (Erzya)",
+    "etymology": "Erzya Ineškipaz (Ine-ška-paz): ine 'great, big' + ška(j)/ški (divine element, cf. škaj 'god/creator') + -paz/-pas 'god'. Meaning: 'Great God' — the supreme/originating sky-god of the Erzya (also Niške-paz, lit. 'god Niške'); Moksha counterpart Škaj/Škajbaz.",
+    "sources": [{ "kind": "journal article", "reference": "Tatiana Deviatkina, 'Some Aspects of Mordvin Mythology', Folklore: Electronic Journal of Folklore 17 (Tartu, 2001), pp. 96-106, doi:10.7592/FEJF2001.17.mordmyth (Ineshkipaz/Nishkepaz as supreme god; -paz 'god', element Ine-)" }, { "kind": "convergent web snippets", "reference": "Convergent Mordvinic-religion summaries: -paz/-pas 'god' (as in Niške-paz 'god Niške'), ine 'great'; the supreme Erzya deity Ineškipaz" }]
+  },
+  "mordvin_norovava": {
+    "languageFamily": "Uralic > Finno-Ugric > Mordvinic (Erzya)",
+    "etymology": "Erzya compound Norov-ava: norov 'grain, corn, crop' + ava 'woman, mother'. Meaning: 'Grain-mother / Harvest-mother' — the tutelary mother (ava) of the cornfield, consort of Chipaz in Erzya tradition.",
+    "sources": [{ "kind": "journal article", "reference": "Tatiana Deviatkina, 'Some Aspects of Mordvin Mythology', Folklore: Electronic Journal of Folklore 17 (Tartu, 2001), pp. 96-106, doi:10.7592/FEJF2001.17.mordmyth (Norovava as the Harvest/Grain Mother; ava 'woman/mother')" }, { "kind": "reference work", "reference": "H. Paasonen, Mordwinisches Wörterbuch / H. Paasonens Mordwinisches Wörterbuch (ed. Heikki Paasonen, Helsinki) — Mordvin lexemes ava 'mother/woman' and norov 'grain'" }]
+  },
+  "mordvin_vedeava": {
+    "languageFamily": "Uralic (Finno-Ugric, Mordvinic)",
+    "etymology": "A transparent compound of Erzya ved' (also vedə) 'water' + ava 'mother', i.e. 'Water-Mother' (Moksha Ved'-ava). The figure is the Mordvin water-spirit, the 'water mother' who rules the waters and their bounty, cognate in pattern to Mari Vüd-Ava, Estonian Vete-ema and Finnish Veen emo.",
+    "sources": [{ "kind": "reference_work", "reference": "Encyclopaedia Britannica, s.v. 'Ved-ava', glossing the figure as the Mordvin 'water mother' (ved' 'water' + ava 'mother')" }, { "kind": "dictionary", "reference": "Heikki Paasonen, Mordwinisches Wörterbuch (Mordwinian Dictionary, ed. Kahla), documenting Erzya/Moksha ved' 'water' and ava 'mother'" }, { "kind": "monograph", "reference": "Uno Harva (Holmberg), Die religiösen Vorstellungen der mordwinischen Völker, FFC 142 (1952)" }]
+  },
+  "mossi_naba_zid_wende": {
+    "languageFamily": "Niger-Congo (Gur / Oti-Volta, Mooré)",
+    "etymology": "The supreme being invoked under a royal title: Mooré naba (naaba) 'chief, king, ruler' + Wende 'God' (the high god / sun-sky), i.e. the creator styled as the divine sovereign, paralleling the human title Mogho Naba. The traditional gloss of the full epithet is 'Chief of Everlasting Truth' (the medial Zid- 'truth' element rests on the popular recension rather than a linguistic source).",
+    "sources": [{ "kind": "monograph", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta (1964), on Wende and the naba/naam complex of chiefly authority" }, { "kind": "reference_work", "reference": "Encyclopaedia Britannica / Encyclopedia.com, 'Mossi', glossing naba (naaba) as the single Mooré term for ruler/king/chief" }, { "kind": "primary_recension", "reference": "Frédéric Guirma, Tales of Mogho: African Stories from Upper Volta (1971), the principal published recension of the Naba Zid-Wende creation cycle" }]
+  },
+  "mossi_tenga": {
+    "languageFamily": "Niger-Congo (Gur / Oti-Volta, Mooré)",
+    "etymology": "Mooré tẽnga 'earth, land, ground' personified as the earth-power/earth-god; the same word names the earth-shrine, and its custodian is the tengsoba ('earth-owner/lord of the earth', tẽnga + soba 'owner') or tengdana, the earth-priest descended from the first settlers.",
+    "sources": [{ "kind": "monograph", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta (1964), on tẽnga, the tengsoba 'earth-owner' and the earth-cult" }, { "kind": "monograph", "reference": "A. A. Dim Delobsom, L'empire du Mogho-Naba (1932), on the earth-priesthood and earth-shrines" }]
+  },
+  "mossi_wende": {
+    "languageFamily": "Niger-Congo (Gur / Oti-Volta, Mooré)",
+    "etymology": "Mooré Wẽnde (expanded Wẽnnam, 'God's power', with -nam/naam 'power, rule') is the name of the supreme creator and is simultaneously the ordinary word for the sun/sky; the deity is the distant all-powerful sky-god of the Mossi.",
+    "sources": [{ "kind": "monograph", "reference": "Elliott P. Skinner, The Mossi of the Upper Volta: The Political Development of a Sudanese People (1964), on Wende/Wennam as the supreme being" }, { "kind": "reference_work", "reference": "Encyclopedia.com, 'Mossi' (Encyclopedia of World Cultures), glossing Wende / Wennam 'God('s power)' and its association with the sun" }]
+  },
+  "naga_alhou": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman, Sumi / Sema)",
+    "etymology": "Sumi (Sema) supreme creator, the name resting on the Sumi verb lho 'to create' (Al-lho > Alhou, 'the creator'); he is the omniscient, otiose high god above the kungumi (sky-spirits) and tughami (earth-spirits).",
+    "sources": [{ "kind": "monograph", "reference": "J. H. Hutton, The Sema Nagas (London: Macmillan, 1921), documenting Alhou as the Sema supreme creator" }, { "kind": "ethnographic_survey", "reference": "Sümi Naga ethnographic survey (accessed June 2026), noting that in Sumi lho means 'create', underlying the creator-name Alhou" }]
+  },
+  "naga_kepenuopfu": {
+    "languageFamily": "Sino-Tibetan (Tibeto-Burman, Angami / Tenyidie)",
+    "etymology": "Angami (Tenyidie) supreme creatress whose name is literally glossed 'birth-spirit', built on the feminine birth-element -pfü; she is the high creator-mother set above the lesser terhoma/terhuomia spirits (variant forms Ukepenuopfü, Okemenüpü).",
+    "sources": [{ "kind": "monograph", "reference": "J. H. Hutton, The Angami Nagas, with Some Notes on Neighbouring Tribes (London: Macmillan, 1921), documenting Kepenuopfü as the Angami creator and the gloss 'birth-spirit'" }]
+  },
+  "nanderu_mbaekua": {
+    "languageFamily": "Tupian (Tupi-Guarani)",
+    "etymology": "Guarani Ñanderu Mba'ekua(a), a compound theonym. Ñande-ru = ñande '1st person plural inclusive: our' + ru 'father' (i.e. 'Our Father'); the inclusive possessive ñande is standard Guarani grammar and ñande-ru 'nuestro padre' is recorded lexicographically. The epithet Mba'ekua(a) = mba'e 'thing' + kuaa 'to know/be able', i.e. 'the one who possesses (all) knowledge/power, the omniscient', used in the Mbya cosmogony for the demiurge. Overall sense: 'Our Father, possessor of (divine) knowledge'.",
+    "sources": [{ "kind": "dictionary", "reference": "Guasch, Antonio. Diccionario Guarani-Castellano (s.v. ñande-ru 'nuestro padre'; ñande 'nuestro', ru 'padre')." }, { "kind": "book", "reference": "Cadogan, Leon. Ayvu Rapyta: Textos miticos de los Mbya-Guarani del Guaira (Sao Paulo, 1959), and his Diccionario Mbya-Guarani-Castellano, glossing Nande Ru and the mba'ekuaa ('possessor of knowledge') epithet in the cosmogonic texts." }]
+  },
+  "nandesy": {
+    "languageFamily": "Tupian (Tupi-Guarani)",
+    "etymology": "Guarani Ñandesy 'Our Mother' = ñande '1st person plural inclusive: our' + sy 'mother'. The form ñande-sy is recorded lexicographically and glossed 'nuestra madre'.",
+    "sources": [{ "kind": "dictionary", "reference": "Guasch, Antonio. Diccionario Guarani-Castellano: 'nande-sy = nuestra madre' (ñande 'nuestro', sy 'madre')." }, { "kind": "book", "reference": "Cadogan, Leon. Ayvu Rapyta: Textos miticos de los Mbya-Guarani del Guaira (1959), where Nande Sy / Nandesy 'Our Mother' is attested in the Mbya texts." }]
+  },
+  "ndebele_amadlozi": {
+    "languageFamily": "Niger-Congo (Bantu, Nguni)",
+    "etymology": "Nguni (Zulu/Ndebele) amadlozi 'the ancestral spirits, the shades', the noun-class-6 plural (prefix ama-) of singular idlozi (class 5, prefix i-) 'an ancestral spirit / shade of the dead'. The lexeme idlozi/amadlozi 'ancestor-spirit(s)' is documented in Nguni lexicography and ethnography.",
+    "sources": [{ "kind": "book", "reference": "Berglund, Axel-Ivar. Zulu Thought-Patterns and Symbolism (London: Hurst, 1976), on idlozi / amadlozi 'shade(s), ancestral spirit(s)'." }, { "kind": "dictionary", "reference": "Doke, C. M. & Vilakazi, B. W. Zulu-English Dictionary (Johannesburg: Witwatersrand Univ. Press), s.v. idlozi (pl. amadlozi) 'ancestral spirit, shade'." }]
+  },
+  "ndebele_unkulunkulu": {
+    "languageFamily": "Niger-Congo (Bantu, Nguni)",
+    "etymology": "Nguni (Zulu/Ndebele) uNkulunkulu, formed by reduplication of the adjective stem -khulu 'great, big; old' (class 1a personal noun, prefix u-): literally 'the great-great (one)' / 'the old, old one'. The morphology is corroborated by the kinship-intensification series ubaba-mkhulu 'grandfather', unkulunkulwana 'great-great-grandfather', unkulunkulu 'great-great-great-ancestor', i.e. the primordial ancestor; later applied to the creator-God.",
+    "sources": [{ "kind": "book", "reference": "Callaway, Henry. The Religious System of the Amazulu (Springvale: Springvale Mission Press, 1870), pp. 1-7: uNkulunkulu as the 'Old-Old One' / first ancestor." }, { "kind": "dictionary", "reference": "Dictionary of South African English (DSAE), s.v. 'Unkulunkulu': from Zulu, the reduplicated -khulu 'great/old', 'the Great-Great', with the genealogical kinship series." }]
+  },
+  "nenets_num": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Tundra Nenets Num (also Nom/Nop), the supreme sky-god, from the common noun num 'sky, firmament'. The term is found across the Samoyedic languages and is reconstructable for Proto-Samoyedic with the senses 'heaven/sky above' and 'highest god'; cf. the Ob-Ugric (Khanty/Mansi) element nu-/num- 'up, above, top, sky'.",
+    "sources": [{ "kind": "encyclopedia", "reference": "The Encyclopedia of Religion (ed. M. Eliade / L. Jones), entries 'Num' and 'Samoyed Religion': num = 'the highest god who resides in the heavens', also 'sky, firmament', reconstructable for proto-Samoyed." }, { "kind": "book", "reference": "Lehtisalo, Toivo. Entwurf einer Mythologie der Jurak-Samojeden (Helsinki: Societe Finno-Ougrienne, 1924), foundational documentation of Num as Jurak (Nenets) sky-deity; cf. M. A. Castren's Samoyedic materials." }]
+  },
+  "nenets_ya_nebya": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Tundra Nenets Ya-Nebya 'Earth-Mother', a compound of ya' 'earth, land, ground' + nebya 'mother' (cf. ne 'woman'). She forms the Earth-Mother counterpart to the Sky-Father Num and is a tutelary spirit of women and childbirth.",
+    "sources": [{ "kind": "encyclopedia", "reference": "The Encyclopedia of Religion (ed. Eliade / Jones), entry 'Num': Ya-nebya as the Earth-Mother associated with childbirth, paired with Num." }, { "kind": "grammar", "reference": "Nikolaeva, Irina. A Grammar of Tundra Nenets (Berlin: De Gruyter Mouton, 2014), and Tereshchenko, N. M. Nenetsko-russkii slovar' (1965): lexemes ya' 'earth' and nebya 'mother' (ne 'woman')." }]
+  },
+  "nivkh_pal_yz": {
+    "languageFamily": "Language isolate (Nivkh/Gilyak; Amuric)",
+    "etymology": "Nivkh Pal-yz' (also written Pal Ys, Pal yz), a compound of pal 'mountain, taiga' + yz (~ ŷz, yzng) 'master-spirit, lord (of a natural domain)' — hence 'master of the mountain/forest'. The yz/yzng class denotes the tutelary 'masters' presiding over the discrete domains (mountain, sea, river, sky) of Nivkh animist cosmology; Pal-yz' is the master of the land/taiga, of whom the bear is a manifestation and messenger.",
+    "sources": [{ "kind": "book", "reference": "Lev Shternberg, The Social Organization of the Gilyak, ed. Bruce Grant (American Museum of Natural History, 1999) [foundational ethnography recording the pal/tol 'yz' masters of Nivkh religion]" }, { "kind": "reference-summary", "reference": "Ethnographic summaries of Nivkh religion drawing on Shternberg (e.g. Missouri DICE 'Nivkh' culture profile; Encyclopedia.com 'Nivkhs'), which attest pal 'mountain' + yz/yzng 'master' and Pal-yz' as the mountain/taiga master" }]
+  },
+  "nivkh_tol_yz": {
+    "languageFamily": "Language isolate (Nivkh/Gilyak; Amuric)",
+    "etymology": "Nivkh Tol-yz' (also Tol Ys; Cyrillic тол ыз), a compound of tol 'sea, water' + yz (~ yzng) 'master-spirit, lord' — hence 'master of the sea/waters'. With Pal-yz' it forms the basic land/sea pair of the Nivkh 'masters of the domains' system; the killer whale is a manifestation of Tol-yz'.",
+    "sources": [{ "kind": "book", "reference": "Lev Shternberg, The Social Organization of the Gilyak, ed. Bruce Grant (American Museum of Natural History, 1999)" }, { "kind": "reference-summary", "reference": "Ethnographic summaries of Nivkh religion drawing on Shternberg (Missouri DICE 'Nivkh' profile and allied sources) attesting tol 'sea/water' + yz 'master' and the Pal-yz'/Tol-yz' land-sea pair" }]
+  },
+  "nuer_buk": {
+    "languageFamily": "Nilo-Saharan (Western Nilotic; Nuer)",
+    "etymology": "Buk, a Nuer theonym (proper name) for a female spirit of the above, commonly called the mother of Deng and associated with rivers and streams; the most important of the river-linked spirits of the above. Recorded as an ungloss­able proper name within the kuth nhial ('spirits of the above') category rather than a transparent common noun.",
+    "sources": [{ "kind": "book", "reference": "E. E. Evans-Pritchard, Nuer Religion (Oxford: Clarendon Press, 1956) [Buk as a female spirit of the above, mother of Deng, associated with rivers]" }]
+  },
+  "nuer_colwic": {
+    "languageFamily": "Nilo-Saharan (Western Nilotic; Nuer)",
+    "etymology": "Nuer colwic (col wic), the term for the metamorphosed souls of persons killed by lightning ('God's fire'), who thereby become spirits of the above united with Kwoth nhial and act as guardian spirits of their lineages. Built on col, the element associated with the lightning/storm sphere (cf. the spirit Col); a category-name within Nuer religion rather than a borrowing.",
+    "sources": [{ "kind": "book", "reference": "E. E. Evans-Pritchard, Nuer Religion (Oxford: Clarendon Press, 1956) [colwic = souls of those struck by lightning who become spirits of the above]" }]
+  },
+  "nuer_deng": {
+    "languageFamily": "Nilo-Saharan (Western Nilotic; Nuer)",
+    "etymology": "Deng, a Nuer theonym (proper name) for a prominent spirit of the above associated with rain and sickness, reckoned the son of Buk; directly cognate with the Dinka sky/rain divinity Deng (Dengdit). A shared Nilotic theonym carried as a proper name, not a transparent appellative in Nuer.",
+    "sources": [{ "kind": "book", "reference": "E. E. Evans-Pritchard, Nuer Religion (Oxford: Clarendon Press, 1956) [Deng as a spirit of the above linked with rain, cognate with Dinka Deng]" }]
+  },
+  "nuer_kwoth": {
+    "languageFamily": "Nilo-Saharan (Western Nilotic; Nuer)",
+    "etymology": "Nuer kwoth (plural kuth) 'Spirit, God', the central concept of Nuer religion; the same word denotes the intangible quality of air and the action of breathing/blowing out air, so that God is conceived as like wind and air — invisible and ubiquitous. The supreme refraction is Kwoth nhial 'Spirit/God of the sky (nhial = the sky, the above)'; particular spirits are each also kwoth and are gaat kwoth 'children of God'.",
+    "sources": [{ "kind": "book", "reference": "E. E. Evans-Pritchard, Nuer Religion (Oxford: Clarendon Press, 1956) [kwoth 'Spirit', pl. kuth; sense 'air/breath'; kwoth nhial 'God of the sky']" }]
+  },
+  "nupe_edegi": {
+    "languageFamily": "Niger-Congo (Volta-Niger; Nupoid: Nupe)",
+    "etymology": "Edegi (also Edzigi; = Tsoede), the Nupe theonym/personal name for the semi-divine culture-hero and mythical first king/founder of the Nupe kingdom, of part-Igala royal paternity. Carried as a proper name within Nupe tradition (its further morphology is not given a settled scholarly gloss).",
+    "sources": [{ "kind": "book", "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (Oxford University Press, 1942) [Tsoede/Edegi as culture-hero and founder]" }, { "kind": "encyclopedia", "reference": "'Tsoede', Encyclopaedia Britannica (Edegi as alternative name of Tsoede, founder of the Nupe ruling dynasties)" }]
+  },
+  "nupe_gunnu": {
+    "languageFamily": "Niger-Congo (Volta-Niger; Nupoid: Nupe)",
+    "etymology": "Nupe gunnu, the name of a communal cult/fertility ritual (and its tutelary sphere), regarded by the Nupe as the kuti ('cult/ritual power') of Soko (God) and served by the hereditary Gunnuko ('Great gunnu') priesthood; celebrated in the dry season for renewed fertility of the land. A native Nupe cult-term documented by Nadel.",
+    "sources": [{ "kind": "article", "reference": "S. F. Nadel, 'Gunnu, a Fertility Cult of the Nupe in Northern Nigeria', Journal of the Royal Anthropological Institute 67 (1937)" }, { "kind": "book", "reference": "S. F. Nadel, Nupe Religion (London: Routledge & Kegan Paul, 1954) [gunnu as the kuti of God, with the Gunnuko priesthood]" }]
+  },
+  "nupe_kuti": {
+    "languageFamily": "Niger-Congo (Volta-Niger; Nupoid: Nupe)",
+    "etymology": "Nupe kuti, the native class-term for tutelary cult-spirits / ritual cult-powers embodied in sacred objects and masquerade-divinities (e.g. Kuti Mamma, the masquerade divinity of leaves and grasses; the Ndakó Gboyá complex), with an associated sense 'ritual/cult power, medicine'. A general Nupe term for the cult-spirit category rather than a single named deity; documented by Nadel.",
+    "sources": [{ "kind": "book", "reference": "S. F. Nadel, Nupe Religion (London: Routledge & Kegan Paul, 1954) [kuti as the class of cult-spirits/cult-objects, e.g. Ndakó Gboyá]" }, { "kind": "book", "reference": "S. F. Nadel, A Black Byzantium: The Kingdom of Nupe in Nigeria (Oxford University Press, 1942)" }]
+  },
+  "nupe_soko": {
+    "languageFamily": "Niger-Congo (Volta-Niger; Nupoid: Nupe)",
+    "etymology": "Nupe Soko (Sokó), the word denoting both 'the sky' and the supreme sky-god/High God conceived as creator who withdrew from the world; the Nupe conceive the Supreme Being as Sokó. The dual reference (sky / sky-god) is the documented gloss.",
+    "sources": [{ "kind": "book", "reference": "S. F. Nadel, Nupe Religion (London: Routledge & Kegan Paul, 1954) [Soko as the supreme sky-god]" }, { "kind": "dictionary", "reference": "A. W. Banfield, A Dictionary of the Nupe Language (Shonga: Niger Press, 1914) [Nupe lexicon recording soko 'sky/God']" }]
+  },
+  "nuristani_bagisht": {
+    "languageFamily": "Indo-European (Indo-Iranian; Nuristani — Hindu Kush)",
+    "etymology": "Nuristani Bagisht (Kamviri Bagišt; Prasun forms attested across dialects), god of flowing/flood waters and prosperity, in myth born in the current of the Prasun river, whereupon the turbulent waters became smooth and parted for the infant. The theonym is generally connected with the Indo-Aryan/Indo-Iranian root *bhaga- 'apportioner, dispenser of wealth, fortune' (cf. Vedic Bhaga), fitting his role as a god of water-borne abundance; the precise reconstruction remains debated among Nuristani specialists.",
+    "sources": [{ "kind": "book", "reference": "K. Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs (Warminster: Aris & Phillips, 1986; trans. of Die Religionen des Hindukusch) [Bagisht as river/wealth god]" }, { "kind": "lexicon", "reference": "R. F. Strand, Nuristani Etymological Lexicon / Nuristani Etymological Dictionary (NurED), s.v. Bagišt [Nuristani theonym and its Indo-Iranian connections]" }]
+  },
+  "nuristani_disani": {
+    "languageFamily": "Indo-European (Indo-Iranian; Nuristani — Hindu Kush)",
+    "etymology": "Nuristani Disani (Kamviri Disâni; Prasun Dízane/Dísni; with cognate forms Dísëňi, Dízëňi, Dísëi, Dísën̆i across Kata-vari/Waigali dialects; cognate with Kalasha Dezane/Dezalik), the great mother/fertility goddess. Georg Morgenstierne derived the name from Vedic Sanskrit Dhiṣáṇā (a goddess of abundance) via a preform *Dhiṣanikā. A speaker folk-etymology analyses it as di 'sky' + saňi 'soldier' (< *Devasenikā), but Morgenstierne and Strand reject this as secondary.",
+    "sources": [{ "kind": "book", "reference": "G. Morgenstierne, Irano-Dardica / studies on Nuristani (Kafir) languages [derivation of Disani < Vedic Dhiṣáṇā via *Dhiṣanikā]" }, { "kind": "lexicon", "reference": "R. F. Strand, Nuristani Etymological Lexicon / NurED, s.v. Disani [dialect forms; rejection of the di+saňi folk etymology]" }]
+  },
+  "nuristani_gish": {
+    "languageFamily": "Indo-European (Indo-Iranian; Nuristani — Hindu Kush)",
+    "etymology": "Nuristani war-god Gish (Kamkata-vari Giṣ/Gaviṣ; Kati Giwīṣ/Gyīṣ; Waigali Giwiš/gīweš; Prasun Gīṣ), the most actively worshipped god among the Siah-Posh (Kafirs) of the Bashgal valley. Richard Strand (Nuristani Etymological Lexicon) derives the name from Sanskrit gavíṣ/gaviṣá 'desirous of cattle, eager', an epithet of Indra (with whom Gish is functionally equivalent), ultimately from Proto-Indo-Iranian *gawHíšH-, with a later semantic shift to 'war'.",
+    "sources": [{ "kind": "lexicon", "reference": "R. F. Strand, Nuristani Etymological Lexicon / NurED, s.v. Giṣ [< Skt. gavíṣ/gaviṣá 'desire for cows, eager', epithet of Indra; PIIr *gawHíšH-]" }, { "kind": "book", "reference": "K. Jettmar, The Religions of the Hindukush, Vol. 1: The Religion of the Kafirs (Aris & Phillips, 1986) [Gish/Giwish as war-god and culture-hero of the Bashgal Kafirs]" }]
+  },
+  "nuristani_imra": {
+    "languageFamily": "Indo-European (Indo-Iranian; Nuristani — Hindu Kush)",
+    "etymology": "Nuristani/Kafir creator-god Imra (Kamkata-vari Imro/Yum; cognates Waigali Yamrai, Kalasha Imbro, Ashkun Imra, Prasun Yumr'a), derived from Indo-Aryan/Sanskrit Yama-rāja(n) 'King Yama' via a Middle Indo-Aryan form showing the characteristic northwestern sound change of j > y (Yamarāja > *Yamrā > Imro/Imra). Counterpart of Kalasha Dezau.",
+    "sources": [{ "kind": "article", "reference": "M. Witzel, 'The Religions of the Hindukush' / Kalash religion (in Languages and Scripts of Asia and the Mediterranean / related work, 2004) [Imra as a reflex of Indo-Iranian Yama; Yama-rāja 'King Yama']" }, { "kind": "article", "reference": "J. Halfmann, 'Nuristani Theonyms in Light of Historical Phonology' (2022) [Kamkata-vari Imro/Yum < Skt. Yama-rāja via MIA j > y; cognate set Yamrai/Imbro/Imra/Yumr'a]" }]
+  },
+  "nuristani_moni": {
+    "languageFamily": "Indo-European (Indo-Iranian; Nuristani — Hindu Kush)",
+    "etymology": "Nuristani prophet-deity and demon-slayer Moni/Mone (Kamkata-vari Mone/Mune; Kamviri Mâni/Mandi), the second god after Imra, selected by Imra as his prophet. The standard scholarly etymology derives Mandi/Moni from a borrowing of Sanskrit Mahādeva (Prasun Mandi < Mahān Deva, a title of Shiva), with whom Moni shares the bow, the bull, and the slaying of demons' cattle; corresponds to Kalasha Mahandeo. (The older suggestion of a derivation from *Manu is not supported by the phonology and is set aside.)",
+    "sources": [{ "kind": "article", "reference": "M. Witzel, Kalash religion / 'The Religions of the Hindukush' (2004) [Mandi < Mahān Deva (Mahādeva); the Sun-release myth performed by Mandi]" }, { "kind": "article", "reference": "J. Halfmann, 'Nuristani Theonyms in Light of Historical Phonology' (2022) [Moni/Mandi < Skt. Mahādeva]" }]
+  },
+  "otomi_otontecuhtli": {
+    "languageFamily": "Oto-Manguean (Otomi/Hñähñu); name recorded in Nahuatl (Uto-Aztecan)",
+    "etymology": "Best known by the Nahuatl exonym Otontēuctli (Hispanized Otontecuhtli), a transparent compound of Nahuatl otontli 'an Otomi (person)' + tēuctli 'lord', i.e. 'Otomi Lord'. The name is the Aztec designation for the old Otomi fire-and-death god (in Otomi tradition the Old Father, Šihta Sipi), whom the Nahua also equated with Xocotl/Ocotēuctli.",
+    "sources": [{ "kind": "dictionary", "reference": "Nahuatl Dictionary (Wired Humanities Projects, Univ. of Oregon), s.v. 'Otontecuhtli' and 'Otomitl' (otontli 'Otomi' + tecuhtli 'lord' = 'the Otomi lord')" }, { "kind": "reference-encyclopedia", "reference": "'Otomi Religion,' Encyclopedia.com (Encyclopedia of World Cultures / Gale), glossing Otontecuhtli 'the Otomi lord' as the old Otomi fire god, the 'Old Father'" }, { "kind": "book", "reference": "Carrasco, Pedro (1950). Los otomies: cultura e historia prehispanicas. Mexico: UNAM (Otontecuhtli/Old Father as principal Otomi fire-and-death deity)" }]
+  },
+  "otomi_zana": {
+    "languageFamily": "Oto-Manguean (Otomi/Hñähñu)",
+    "etymology": "Otomi Zana (also written Zaena/Zana with the central-vowel diacritic), literally 'the moon'. The theonym is the ordinary Otomi word for the moon, personified as the lunar goddess and 'Old Mother', heavenly counterpart of the earth and consort of the Old Father (Otontecuhtli).",
+    "sources": [{ "kind": "reference-encyclopedia", "reference": "'Otomi Religion,' Encyclopedia.com (Encyclopedia of World Cultures / Gale): 'Zana' = the moon, principal goddess and 'queen of the world', counterpart of the earth goddess Hmuhoi" }, { "kind": "book", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomi Indian Ritual. Boulder: Univ. Press of Colorado (Zana, the moon, as a dual-gendered lunar deity)" }, { "kind": "book", "reference": "Carrasco, Pedro (1950). Los otomies: cultura e historia prehispanicas. Mexico: UNAM" }]
+  },
+  "otomi_zithu": {
+    "languageFamily": "Oto-Manguean (Otomi/Hñähñu)",
+    "etymology": "Otomi zithu (also Zithu, Zithue), the common Otomi noun for 'devil/demon'; as a theonym it names the malevolent lord of the dead/underworld. In Eastern Otomi (Hidalgo) sources the form Zithu'na is glossed 'el diablo' / 'ese que dicen diablo' ('the devil / the one they call the devil'), identified with the lord of death and fertility.",
+    "sources": [{ "kind": "book", "reference": "Galinier, Jacques (2004 [1990]). The World Below: Body and Cosmos in Otomi Indian Ritual. Boulder: Univ. Press of Colorado (zithu 'devil/demon', lord of the underworld)" }, { "kind": "book", "reference": "Gallardo Arias, Patricia. Ritual, palabra y cosmos otomi (UNAM, Instituto de Investigaciones Historicas): Zithu / Zithu'na as 'lord of the dead', glossed 'diablo' among Eastern Otomi" }, { "kind": "book", "reference": "Dow, James W. (1986). The Shaman's Touch: Otomi Indian Symbolic Healing. Salt Lake City: Univ. of Utah Press" }]
+  },
+  "ovambo_kalunga": {
+    "languageFamily": "Bantu (Niger-Congo); Ovambo/Aawambo (Oshindonga, Oshikwanyama)",
+    "etymology": "Ovambo (and wider Atlantic-coast Bantu) Kalunga / Karunga, the high-god name whose attested semantic range is 'God / the creator', 'Death (and the lord of the netherworld)', and 'the sea / abyss'. The same form is shared into Herero (Ndjambi Karunga) and Kimbundu/Umbundu (Kalunga = Death, netherworld, or the sea), reflecting an old Bantu term for the divine ordering power and the boundary between worlds.",
+    "sources": [{ "kind": "book", "reference": "Aarni, Teddy (1982). The Kalunga Concept in Ovambo Religion from 1870 Onwards. Stockholm: Almqvist & Wiksell (Kalunga as the Ovambo high-god concept covering God, Death, and the unknown)" }, { "kind": "book", "reference": "Estermann, Carlos (1976). The Ethnography of Southwestern Angola, vol. 1: The Ambo Ethnic Group. New York: Africana (Kalunga as the otiose creator/high god of the Ambo)" }]
+  },
+  // ══ Alphabetical sweep batch 11 (indices 735-814: Roman historical names, Sabaean,
+  //    Sami, Santal, San, Pawnee, Purepecha, Polynesian, Ndebele) ══
+  "pawnee_morning_star": {
+    "languageFamily": "Caddoan",
+    "etymology": "The Morning Star (identified with the planet Mars) is named u-pirikucu, recorded by Ralph Linton as meaning literally 'big star'. In the Morning Star sacrifice the destined captive was ritually pronounced Opirikuts, a related dedicatory form derived from the same 'star' stem (pirik(u)-).",
+    "sources": [{ "kind": "book", "reference": "Linton, Ralph. The Sacrifice to the Morning Star by the Skidi Pawnee (Field Museum of Natural History, Anthropology Leaflet 6, 1922): 'The Morning Star is Mars, u-pirikucu (literally, big star), or the god of war.'" }, { "kind": "journal", "reference": "Linton, Ralph. 'The Origin of the Skidi Pawnee Sacrifice to the Morning Star.' American Anthropologist 28(3), 1926." }]
+  },
+  "pawnee_north_star": {
+    "languageFamily": "Caddoan",
+    "etymology": "The North Star (Polaris) bears a descriptive Pawnee name meaning literally 'the Star That Does Not Walk Around' (i.e., the star that does not move). Appointed by Tirawa to stand motionless in the north as chief of the stars, it was likened by the Skidi to Tirawahat himself. (The meaning is securely attested by a named scholar; the underlying native word-form is recorded only in tertiary sources and is therefore not asserted here.)",
+    "sources": [{ "kind": "book", "reference": "Williamson, Ray A. Living the Sky: The Cosmos of the American Indian (Houghton Mifflin, 1984): the North Star's name in Pawnee is literally 'the Star That Does Not Walk Around', and it was compared to the god Tirawahat." }]
+  },
+  "pawnee_pah_moon": {
+    "languageFamily": "Caddoan",
+    "etymology": "Pah is the ordinary Pawnee/Skiri noun for 'the moon'; the deity name is the bare common noun. In the Skidi creation account the Moon (Pah) is set by Tirawa in the west as the female counterpart of the Sun (Sakuru), the pair begetting the first boy.",
+    "sources": [{ "kind": "book", "reference": "Parks, Douglas R. & Pratt, Lula Nora. A Dictionary of Skiri Pawnee (University of Nebraska Press, 2008), glossing the Skiri noun for 'moon' (pah)." }, { "kind": "book", "reference": "Dorsey, George A. The Pawnee: Mythology, Part I (Carnegie Institution, 1906) — Skidi account placing Pah, the Moon, in the west opposite the Sun." }]
+  },
+  "pawnee_shakuru_sun": {
+    "languageFamily": "Caddoan",
+    "etymology": "Shakuru (Skiri Pawnee Sakuuru', also written Sakuru) is simply the ordinary Pawnee/Skiri noun for 'the sun'; the divine name is the bare common noun. Placed by Tirawa in the east, the Sun (Sakuru) is paired with the Moon (Pah). The element appears in personal names such as that of the ethnographer James R. Murie (Pawnee name Sa-ku-ru-ta).",
+    "sources": [{ "kind": "book", "reference": "Parks, Douglas R. & Pratt, Lula Nora. A Dictionary of Skiri Pawnee (University of Nebraska Press, 2008) — the first dictionary of a Caddoan language, glossing sakuuru' 'sun'." }, { "kind": "book", "reference": "Dorsey, George A. The Pawnee: Mythology, Part I (Carnegie Institution, 1906) — Skidi creation account in which Sakuru/Shakuru, the Sun, is set in the east." }]
+  },
+  "phrygian_attis": {
+    "languageFamily": "Phrygian (Indo-European, Anatolian-area)",
+    "etymology": "The etymology of Attis is genuinely debated and is not securely attested in the surviving Paleo-Phrygian inscriptions. (1) An ancient folk-etymology preserved by the Christian apologist Arnobius derives the name from a Phrygian word for the he-goat: Arnobius glosses attagus as Phrygian for 'hircus' (he-goat), and the aetiological myth has the exposed child suckled by a goat and hence called Attis (Phrygian attagi 'goat'). The Greek by-form atthgos/attagos for a kind of bird/goat is noted by ancient lexicographers (e.g. Hesychius, Eustathius). (2) Modern scholarship treats this as folk-etymology: Attis (with by-forms Ates, Ata) was a common Anatolian/Phrygian personal name and priestly title, and any link to roots for 'father' (at-) or to vegetation ('evergreen', 'year') is unproven. Presented honestly: the name is most defensibly described as a native Phrygian/Anatolian personal name of uncertain meaning, with the ancient 'he-goat' gloss recorded but not endorsed by current scholars.",
+    "sources": [{ "kind": "ancient-source", "reference": "Arnobius of Sicca, Adversus Nationes V.6-7 (early 4th c. CE), reporting the Phrygian aetiology that derives Attis from the Phrygian word for the he-goat (attagus = hircus)." }, { "kind": "book", "reference": "Roller, Lynn E. In Search of God the Mother: The Cult of Anatolian Cybele (University of California Press, 1999) — argues 'Attis' (with Ates/Ata) was a common Anatolian personal name and priestly title, and that its etymology is uncertain." }, { "kind": "book", "reference": "Vermaseren, M. J. Cybele and Attis: The Myth and the Cult (Thames & Hudson, 1977)." }]
+  },
+  "poia": {
+    "languageFamily": "Algonquian (Blackfoot/Siksika)",
+    "etymology": "Blackfoot Poïa, glossed 'Scarface' (Scar-Face), the name borne by the hero in derision because of the scar on his face before the Sun removes it.",
+    "sources": [{ "kind": "book", "reference": "George Bird Grinnell, Blackfoot Lodge Tales: The Story of a Prairie People (1892) — Scarface / origin-of-the-Medicine-Lodge narrative" }, { "kind": "book", "reference": "Walter McClintock, The Old North Trail (1910), ch. 'Legend of Poïa', which glosses 'Poïa (Scarface)'" }]
+  },
+  "polynesian_kaitangata": {
+    "languageFamily": "Austronesian (Polynesian, Māori)",
+    "etymology": "Compound Kai-tangata 'man-eater / eat-people': kai 'to eat; food' + tangata 'person, man'. The cannibal sky-goddess Whaitiri, deceived by the name into thinking him a fellow cannibal, descended to marry him.",
+    "sources": [{ "kind": "dictionary", "reference": "Edward Tregear, The Maori-Polynesian Comparative Dictionary (1891) — entries KAI ('food; to eat') and TANGATA ('a man'); name discussed under Kaitangata/Whaitiri" }, { "kind": "book", "reference": "George Grey, Polynesian Mythology (1855) — Tāwhaki cycle, where Kai-tangata ('man-eater') is so understood by Whaitiri" }]
+  },
+  "polynesian_wahieroa": {
+    "languageFamily": "Austronesian (Polynesian, Māori)",
+    "etymology": "Compound Wahie-roa 'long firewood / long piece of firewood': wahie 'firewood' + roa 'long'. Per Grey, Tāwhaki's wife had brought home a long piece of firewood to warm him, and the son born thereafter was named to fix the wrong done to Tāwhaki and the duty of vengeance.",
+    "sources": [{ "kind": "dictionary", "reference": "Edward Tregear, The Maori-Polynesian Comparative Dictionary (1891) — entries WAHIE ('firewood') and ROA ('long')" }, { "kind": "book", "reference": "George Grey, Polynesian Mythology (1855) — Tāwhaki/Rata cycle, narrating the naming of Wahieroa" }]
+  },
+  "purepecha_cuerauaperi": {
+    "languageFamily": "Language isolate (Purépecha/Tarascan)",
+    "etymology": "Cuerauáperi 'she who unties (loosens) in the womb', i.e. 'she who gives birth / the creatress', from the verb cuerani 'to untie; to die' + the particle -ua 'in the womb'; the same verb underlies the Tarascan conception of death as 'untying', making her a deity of both life and death.",
+    "sources": [{ "kind": "book", "reference": "Roberto Martínez González, Cuiripu: cuerpo y persona entre los antiguos p'urhépecha (UNAM, Instituto de Investigaciones Históricas) — morphological analysis of Cuerauáperi and the verb cuerani 'desatar/morir'" }, { "kind": "manuscript", "reference": "Relación de Michoacán (c. 1539-41) — primary attestation of Cuerauáperi as creator-mother of the gods" }]
+  },
+  "purepecha_curicaueri": {
+    "languageFamily": "Language isolate (Purépecha/Tarascan)",
+    "etymology": "Curicaueri (Curicaveri) 'the Great Fire / the Great Bonfire' (El Gran Fuego / La Gran Hoguera): curi 'fire' + caheri 'great'. The same root curi underlies curiti/curita (fire-priests, lit. tied to 'fire') and the title curí-htsit-acha ('the lord who takes charge of the fire').",
+    "sources": [{ "kind": "article", "reference": "Instituto de Investigaciones Sociales, UNAM — 'Tarascos o Purépechas: información etnográfica', giving curi 'fuego' + caheri 'grande' = 'El Gran Fuego/La Gran Hoguera'" }, { "kind": "manuscript", "reference": "Relación de Michoacán (c. 1539-41) — primary attestation of Curicaueri as the Tarascan fire/sun god, patron of the Uacúsecha" }]
+  },
+  "purepecha_xaratanga": {
+    "languageFamily": "Tarascan (Purépecha; language isolate)",
+    "etymology": "Tarascan (Purépecha) theonym Xarátanga, analyzed by Cristina Monzón as built on the verbal root xara- 'to appear / to show oneself, become visible' (cf. Tarascan xarani 'to appear'), yielding a sense for the moon-goddess such as 'she who appears (everywhere)' / 'the one who shows herself, who shines'. Monzón notes competing readings ('the one who lights up/shines'; 'the one who makes another have pleasure/contentment'); the 'appearing/becoming visible' analysis is the one consonant with her lunar character. Native name recorded in the 16th-c. Relación de Michoacán.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Cristina Monzón García, 'Los principales dioses tarascos: un ensayo de análisis etimológico en la cosmología tarasca', Relaciones: Estudios de Historia y Sociedad 26, no. 104 (2005): 136–168 (El Colegio de Michoacán)" }, { "kind": "primary-source", "reference": "Relación de Michoacán (anon., attr. Fray Jerónimo de Alcalá), c. 1539–41" }]
+  },
+  "redhorn": {
+    "languageFamily": "Siouan (Hočąk / Winnebago)",
+    "etymology": "English 'Red Horn' is a translation of the Hočąk (Winnebago) name Hešucka, glossed 'Red-horn' (he- 'horn' + šuc 'red' + -ka proper-name suffix), after the red horn-shaped lock of hair at his ear. He bears two further Hočąk names recorded by Radin: Wągíšcahorùšika 'He-who-wears(-human/man-)faces-on-his-ears' (the sacred name, = registry's 'He-who-wears-human-heads-as-earrings'; cf. shorter Įcorúšika 'Wears Faces on his Ears'), and a name rendered 'He-who-is-hit-with-deer-lungs'.",
+    "sources": [{ "kind": "scholarly-ethnography", "reference": "Paul Radin, The Winnebago Tribe (37th Annual Report, Bureau of American Ethnology, 1923); also Radin, Winnebago Hero Cycles (1948)" }, { "kind": "scholarly-reference", "reference": "Richard L. Dieterle, The Encyclopedia of Hočąk (Winnebago) Mythology (hotcakencyclopedia.com), s.v. Redhorn — citing Radin for the Hočąk name-forms Hešucka, Wągíšcahorùšika, Įcorúšika" }]
+  },
+  "roman_aeneas_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The dynastic cognomen Silvius (of the Alban kings) derives from Latin silva 'forest, woodland', with the aetiology in Livy and Dionysius that the line's progenitor was born in the woods; hence 'of the forest / forest-born'. (The praenomen Aeneas is the Latinized Greek name of his demigod ancestor.) Latin silva is treated by de Vaan in his Etymological Dictionary of Latin.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.v. silva" }, { "kind": "primary-source", "reference": "Livy, Ab Urbe Condita 1.3.6–7 (Silvius so named 'casu quodam in silvis natus'); Dionysius of Halicarnassus, Roman Antiquities 1.70–71" }]
+  },
+  "roman_alba_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Bears the Alban dynastic cognomen Silvius < Latin silva 'forest, woodland' ('forest-born'; aetiology in Livy/Dionysius). The personal name Alba is the eponym shared with Alba Longa, from Latin albus 'white' (the traditional 'white' she-sow / white town association); per Livy 1.3.8 a king Silvius Alba gives the city its name.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.vv. silva, albus" }, { "kind": "primary-source", "reference": "Livy, Ab Urbe Condita 1.3.8; Dionysius of Halicarnassus, Roman Antiquities 1.71.3" }]
+  },
+  "roman_augustus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Honorific title Augustus, 'the venerable / consecrated, majestic one', a derivative of the same root as augeō 'to increase, augment' and augur (Proto-Italic *aug-, PIE *h₂eug- 'increase'); originally of things consecrated/sanctioned by augury, hence 'august, venerable'. Voted to Octavian by the Senate in 27 BCE. de Vaan derives augustus, augeō and augur from this root.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.vv. augeō / augur / augustus" }, { "kind": "primary-source", "reference": "Suetonius, Divus Augustus 7 (sense 'sancta … augusta', linked to augury); Augustus, Res Gestae 34" }]
+  },
+  "roman_aurelia_cotta": {
+    "languageFamily": "Italic (Latin, from Sabine)",
+    "etymology": "The nomen Aurelia (gens Aurelia) derives, per Festus, from an older form Auselii, from the Sabine word for the sun (Sabine *ausel, cf. Etruscan usil 'Sun'), i.e. 'of the Sun' — the family being said to have had a public cult of Sol; later assimilated toward Latin aureus 'golden'. The cognomen Cotta is of obscure/uncertain origin.",
+    "sources": [{ "kind": "primary-source", "reference": "Festus, De verborum significatu, s.v. Aurelia (gens) — 'Auselii … a Sole … Sabini'" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008) (Sabine ausel / Etruscan usil 'sun'); standard onomastic discussion (e.g. Chase / RE on the Sabine solar derivation of Aurelius)" }]
+  },
+  "roman_caesar_dictator": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Cognomen Caesar of uncertain true origin; ancient nameable sources transmit competing (folk-)etymologies: (1) from caesariēs 'a (fine) head of hair' (the SHA's first explanation; born with abundant hair); (2) a caeso matris utero, 'cut from the mother's womb', from caedō 'to cut' (Pliny, NH 7.47); (3) from caesius '(blue-)grey-eyed'; (4) from an ancestor who killed an elephant, said to be caesai in 'Moorish'. de Vaan/standard scholarship treat all as folk-etymological; the formation aligns with the root of caedō / caesius.",
+    "sources": [{ "kind": "primary-source", "reference": "Pliny the Elder, Naturalis Historia 7.47 (a caeso matris utero); Historia Augusta, Aelius 2.3–5 (caesariēs / caesius / elephant-caesai explanations); Festus s.v. Caesar" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.vv. caedō / caesius (cognomen explanations noted as folk-etymological)" }]
+  },
+  "roman_caligula": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Nickname Caligula, 'little (soldier's) boot', diminutive (-ula) of caliga, the hobnailed military boot of the Roman common soldier; given to the boy Gaius by his father's Rhine legionaries, who dressed him in a miniature soldier's outfit (so Tacitus and Suetonius). The base noun caliga is itself of unknown ulterior origin, but the diminutive formation and 'little boot' sense are securely attested.",
+    "sources": [{ "kind": "primary-source", "reference": "Suetonius, Caligula 9 ('Caligulae cognomen castrensi ioco traxit, quia … caligae … habitu'); Tacitus, Annales 1.41" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008), s.v. caliga" }]
+  },
+  "roman_daunus": {
+    "languageFamily": "Paleo-Balkan (Messapic / Illyrian) — non-Latin Italic-region name",
+    "etymology": "Pre-Roman Iapygian (Messapic/Illyrian) name; in comparative Messapic/Illyrian onomastics the base *daunos is glossed 'wolf' (ancient glosses; the Illyrian outcome of PIE *dh- distinguishes it from Latin faunus / Oscan), connecting Daunus and the region-name Daunia to the wolf, taken as the people's totemic animal. The 'wolf' gloss is transmitted by ancient grammarians and adopted in Indo-European/Iapygian scholarship (e.g. Krahe), but remains uncertain.",
+    "sources": [{ "kind": "scholarly-etymology", "reference": "Hans Krahe and subsequent Messapic/Iapygian onomastic scholarship deriving Daunus/Daunia from a base *daunos 'wolf' (ancient gloss tradition; cf. Greek θαῦνον 'thērion'/wolf)" }, { "kind": "primary-source", "reference": "Ancient glossographic tradition (Hesychius/Festus-type glosses) equating daunos with 'wolf'" }]
+  },
+  "roman_drusus_the_elder": {
+    "languageFamily": "Italic (Latin); cognomen of (Celtic) onomastic origin",
+    "etymology": "Inherited the Livian cognomen Drusus, whose origin Suetonius gives aetiologically: the first Livius Drusus won it by slaying in single combat an enemy (Gaulish) chieftain named Drausus, and passed it to his descendants. The underlying Drausus is of uncertain (probably Celtic) etymology — sometimes connected to a Celtic *dru- 'strong'. (Drusus the Elder additionally received the posthumous victory-title Germanicus.)",
+    "sources": [{ "kind": "primary-source", "reference": "Suetonius, Tiberius 3.2 (cognomen Drusus won from the slain chieftain Drausus)" }, { "kind": "scholarly-reference", "reference": "Dictionary of Greek and Roman Biography and Mythology (Smith), s.v. Drusus (reporting and discussing the Suetonian aetiology and its uncertainty)" }]
+  },
+  "roman_germanicus": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Victory cognomen Germanicus, 'the Germanic one / conqueror of Germania (of the Germani)', formed with the adjectival suffix -icus from Germani / Germania; voted posthumously to his father Drusus the Elder for victories across the Rhine and inherited by him (and his line). A standard Roman triumphal cognomen ex virtute.",
+    "sources": [{ "kind": "primary-source", "reference": "Suetonius, Claudius 1.3 (cognomen Germanicus granted to Drusus and his posterity); Cassius Dio 55.2.3" }, { "kind": "scholarly-reference", "reference": "Standard Latin onomastics on triumphal cognomina ex virtute in -icus (e.g. Kajanto, The Latin Cognomina, 1965)" }]
+  },
+  "roman_iulia_caesaris": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Nomen of the gens Iulia, traced in the ancient (and family-promoted) tradition to Iulus, the alternative name of Ascanius son of Aeneas, from whom the Iulii claimed descent; thus the gentilician Iulius/Iulia = 'of the line of Iulus'. The deeper origin of Iulus is debated (popularly linked to iulus 'down, first soft beard'); the eponymic derivation from Iulus is the attested onomastic tradition.",
+    "sources": [{ "kind": "primary-source", "reference": "Vergil, Aeneid 1.267–268 (Ascanius cui nunc cognomen Iulo additur); Servius ad Aen. 1.267; Festus s.v. — on the Iulus eponym of the gens Iulia" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008) / standard onomastics, on Iūlius and the Iulus eponym" }]
+  },
+  "roman_iulia_the_elder": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Bears the nomen of the gens Iulia, derived in the ancient onomastic tradition from Iulus (= Ascanius, son of Aeneas), the dynasty's claimed eponymous ancestor; Iulius/Iulia = 'of the line of Iulus'. The ulterior etymology of Iulus is uncertain (popularly tied to iulus 'soft down / first beard').",
+    "sources": [{ "kind": "primary-source", "reference": "Vergil, Aeneid 1.267–268; Servius ad Aen. 1.267 (Iulus eponym of gens Iulia)" }, { "kind": "scholarly-etymology", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Brill, 2008) / standard Latin onomastics, s.v. Iūlius" }]
+  },
+  "roman_iulius_caesar_iii": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Roman name in three parts. The nomen gentile Iūlius is the eponymic name of the gens Iulia, derived in the ancient genealogical tradition from Iūlus, the alternate name of Ascanius son of Aeneas (Vergil, Aeneid 1.267-268; Servius ad loc.); Iūlus itself is connected by the grammatical tradition to iūlus 'down, catkin, woolly tuft'. The cognomen Caesar is of uncertain origin; the ancient folk-etymology of Pliny (Naturalis Historia 7.47) and the Historia Augusta connects it to caesariēs 'head of hair' (the first bearer supposedly born with a full head of hair), with rival ancient derivations from caedere 'to cut' (caesarean birth) and caesius 'blue-grey (eyes)'; de Vaan and modern etymologists leave it unexplained.",
+    "sources": [{ "kind": "primary", "reference": "Vergil, Aeneid 1.267-268 (Ascanius/Iulus as eponym of the gens Iulia); Servius, Commentary ad Aeneidem 1.267" }, { "kind": "primary", "reference": "Pliny the Elder, Naturalis Historia 7.47 (Caesar < caesaries 'hair'); Historia Augusta, Aelius 2 (the three folk-etymologies of Caesar)" }, { "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. (Caesar treated as of uncertain/unexplained origin)" }]
+  },
+  "roman_latinus_silvius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The dynastic cognomen Silvius borne by the Alban kings is derived in the Roman aetiological tradition from Latin silva 'wood, forest', the king being said to have been born or reared in the woodland (Livy, Ab Urbe Condita 1.3.6-8; Dionysius of Halicarnassus, Roman Antiquities 1.70-71). Latin silva 'forest, woodland' is a securely attested Latin lexeme (its own deeper Indo-European etymology is left open by de Vaan). The given name Latīnus is the eponym of the Latīnī and of Latium.",
+    "sources": [{ "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.6-8 (Silvius so named because born in silva); Dionysius of Halicarnassus, Roman Antiquities 1.70-71" }, { "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. 'silva' (forest; deeper etymology left open)" }]
+  },
+  "roman_octavia_minor": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "Octāvia is the feminine of the nomen gentile Octāvius, an ordinal-numeral gentilicium from Latin octāvus 'eighth' (the ordinal of octō 'eight'), reflecting Proto-Italic *oktāwos < PIE *oḱtṓ(u)- (de Vaan, s.v. 'octo', pp. 424-425). The distinguishing epithet Minor means 'the younger / the lesser', the comparative of parvus used to distinguish her from an elder Octavia (Octavia Maior).",
+    "sources": [{ "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. 'octo' (pp. 424-425): Latin octavus 'eighth' < Proto-Italic *oktawos < PIE *oḱtṓ(u)-" }]
+  },
+  "roman_rhea_silvia": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The cognomen Silvia is the feminine of Silvius, the Alban dynastic name derived in the Roman tradition from Latin silva 'wood, forest' (cf. Livy 1.3; Dionysius of Halicarnassus 1.70-71). Latin silva 'forest, woodland' is a securely attested Latin lexeme (its further Indo-European origin is left open by de Vaan). The given name Rhea is a Greek theonymic borrowing (the Titaness Rhea), here used as a personal name.",
+    "sources": [{ "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.6-8; Dionysius of Halicarnassus, Roman Antiquities 1.70-71 (Silvius/Silvia < silva)" }, { "kind": "lexical", "reference": "Michiel de Vaan, Etymological Dictionary of Latin and the Other Italic Languages (Leiden: Brill, 2008), s.v. 'silva' ('forest')" }]
+  },
+  "roman_tiberius": {
+    "languageFamily": "Italic (Latin)",
+    "etymology": "The praenomen Tiberius is a denominal name from the river-name Tiberis (the Tiber), i.e. 'of/belonging to the Tiber' (cf. Tiberīnus, the river's tutelary form). The praenomen is generally held to be derived from this Italic hydronym; the deeper origin of Tiberis itself is non-Latin and uncertain (variously linked to an Italic/Etruscan or pre-Italic substrate, alongside the legendary derivation in Livy 1.3.8 from the drowned Alban king Tiberinus).",
+    "sources": [{ "kind": "primary", "reference": "Livy, Ab Urbe Condita 1.3.8 (river formerly Albula renamed Tiberis after Tiberinus); cf. Varro, De Lingua Latina 5.30" }, { "kind": "lexical", "reference": "Standard onomastic treatment (e.g. de Vaan, Etymological Dictionary of Latin, 2008): praenomen Tiberius denominal from the hydronym Tiberis; the hydronym itself of uncertain pre-Latin origin" }]
+  },
+  "sabaean_amm": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "The Qatabanian national god ʿAmm (ASA ʿm), whose worshippers called themselves the 'children of ʿAmm' (Banū ʿAmm). The name is the common Semitic kinship term ʿamm 'paternal uncle, (paternal) kinsman', used as a divine appellative in the sense of patron/protector (cf. Arabic ʿamm 'paternal uncle', and the element in West-Semitic personal names such as ʿAmmī-).",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston, M. A. Ghul, W. W. Müller, J. Ryckmans, Sabaic Dictionary (English-French-Arabic) (Louvain-la-Neuve / Beirut, 1982), s.v. ʿm" }, { "kind": "secondary", "reference": "Jacques Ryckmans, on ancient South Arabian religion (Qataban: the national god ʿAmm 'paternal uncle', well-known Semitic divine name)" }]
+  },
+  "sabaean_athtar": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "ʿAṯtar (ASA ʿṯtr), the pan-South-Arabian astral god of the planet Venus (morning/evening star). The name is the South Arabian reflex of the common Semitic deity-name ʿAṯtar; it is the masculine counterpart of the West-Semitic goddess ʿAṯtart (Astarte) and is cognate with Akkadian Ištar — in South Arabia the deity is masculine, unlike the feminine forms elsewhere in the Semitic world.",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. ʿṯtr" }, { "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion: ʿAṯtar the Venus-god, masculine counterpart of West Semitic ʿAṯtart/Astarte and cognate of Mesopotamian Ištar" }]
+  },
+  "sabaean_shams": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "Shams (ASA s²ms¹, šams), the South Arabian sun-goddess (national deity of Ḥimyar, also at Sabaʾ). The name is simply the common Semitic word for the sun, šams 'sun', cognate with Akkadian Šamaš, Hebrew šemeš, Aramaic šimšā — here the divine name is identical with the appellative 'the Sun' and is grammatically feminine.",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. s2ms1 (šams 'sun')" }, { "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion (Encyclopaedia Britannica, 'Arabian religion'): the sun-goddess Shams ('Sun'); cognate Akkadian Šamaš, Hebrew šemeš" }]
+  },
+  "sabaean_sin": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "Sīn / Sayīn (ASA syn), national god of Ḥaḍramawt with his temple at Shabwa. The name is standardly identified as a borrowing of the Mesopotamian moon-god name Suen / Sîn (Sumerian/Akkadian). The identification is the prevailing scholarly view but is debated: some scholars note phonetic difficulties and solar (eagle/bull) attributes on Hadramitic coinage, arguing Syn was rather a sun-god, so the loan-etymology is not certain.",
+    "sources": [{ "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion (Encyclopaedia Britannica, 'Arabian religion'): Ḥaḍramawt national god Syn, identification with Mesopotamian Sin/Suen noted with reservations" }, { "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. syn" }]
+  },
+  "sabaean_wadd": {
+    "languageFamily": "Semitic (Ancient South Arabian / Sabaic)",
+    "etymology": "Wadd / Waddum (ASA wd), national moon-god of Maʿīn (the Minaeans). The name derives from the common Semitic root wdd 'to love, to be affectionate / to agree', hence the appellative sense 'Love, Affection'; it appears in the recurrent dedicatory formula Wd ʾb 'Wadd is father'. Cognate with Arabic wadda 'to love' (cf. wadūd 'loving').",
+    "sources": [{ "kind": "lexical", "reference": "A. F. L. Beeston et al., Sabaic Dictionary (1982), s.v. wd (root wdd 'to love')" }, { "kind": "secondary", "reference": "Jacques Ryckmans, ancient South Arabian religion (Encyclopaedia Britannica, 'Arabian religion'): the Minaean national god Wadd ('Love'), root wdd; formula 'Wadd is father'" }]
+  },
+  "salish_senklip": {
+    "languageFamily": "Salishan (Southern Interior; Okanagan-Colville / Nsyilxcən)",
+    "etymology": "Senklip (Syilx/Okanagan orthography sn̓k̓lip, popularly pronounced SIN-kleep) is the ordinary Okanagan-Colville (Nsyilxcən) common noun meaning 'coyote'. The transformer/trickster culture-hero is named directly by this animal word; there is no separate honorific form (cognate Secwepemctsin/Nlakaʼpamuxtsn Snčĺéʔ).",
+    "sources": [{ "kind": "secondary", "reference": "Mourning Dove (Christine Quintasket / Humishuma), Coyote Stories (Caxton, 1933) — the Okanagan culture-hero Coyote = sen'klip" }, { "kind": "secondary", "reference": "James Teit, 'The Salishan Tribes of the Western Plateaus,' ed. Franz Boas, 45th Annual Report of the Bureau of American Ethnology (1930) (Okanagan Coyote-cycle); Syilx/Okanagan Nation usage senklip 'coyote'" }]
+  },
+  "sami_beaivi": {
+    "languageFamily": "Uralic (Sámi; North Sámi)",
+    "etymology": "Beaivi, the Sámi sun-deity, is named by the ordinary North Sámi common noun beaivi 'sun; day'. The divine name is identical with the appellative for the sun, and the deity also appears as Beaivvi nieida 'the sun-maiden'.",
+    "sources": [{ "kind": "lexical", "reference": "North Sámi beaivi 'sun, day' (standard North Sámi lexicon); the theonym = the appellative" }, { "kind": "secondary", "reference": "Sámi mythology scholarship (e.g. Knud Leem, 1767; comparative treatments of the witch-drum sun-symbol): the sun-deity Beaivi ('sun', 'day'), also Beaivvi nieida 'sun maiden'" }]
+  },
+  "sami_horagalles": {
+    "languageFamily": "Uralic (Sámi) — loan from North Germanic (Old Norse)",
+    "etymology": "Horagalles, the western-Sámi thunder-god, is now generally explained as a loan/calque of Old Norse Þórr karl 'Thor the (old) man / Thor the carl-fellow', reflecting Sámi-Norse contact (cf. Norwegian Tor(e)kall; equated by Sámi with the indigenous thunder-figures Tiermes / Aijeke / Äijah 'old man'). The name is absent from the older Sámi dictionaries, consistent with a relatively late Norse loan.",
+    "sources": [{ "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (Christiania, 1871); K. Leem (1767): the thunder-god Horagalles ('Thor-man')" }, { "kind": "secondary", "reference": "Sámi mythology scholarship: Horagalles < Old Norse Þórr karl 'Thor the old man/carl', a Norse-contact loan (name not in older Sámi dictionaries)" }]
+  },
+  "sami_jabmeahkka": {
+    "languageFamily": "Uralic (Sámi; North Sámi)",
+    "etymology": "Jabmeahkka (North Sámi Jábmiidáhkká), the goddess and mistress of the realm of the dead (Jábmiidáibmu). The name is a transparent Sámi compound: jábme- / jábmi 'dead (one), the dead' + áhkká 'old woman, hag; mother-goddess' — hence 'old-woman / hag of the dead, death-crone'. The element áhkká recurs in the Sámi female deity-names Sáráhkká, Juoksáhkká, Uksáhkká.",
+    "sources": [{ "kind": "secondary", "reference": "J. A. Friis, Lappisk Mythologi (1871): the death-goddess Jabme-akka, ruler of the underworld of the dead" }, { "kind": "lexical", "reference": "North Sámi morphemes jábmi 'dead' + áhkká 'old woman / hag, goddess' (the -áhkká female-deity element, cf. Sáráhkká, Juoksáhkká)" }]
+  },
+  "sami_leib_olmai": {
+    "languageFamily": "Uralic (Sámi)",
+    "etymology": "North Sámi compound leaibi 'alder' + olmmái 'man', i.e. 'alder-man'. The theonym is recorded ethnographically (Leib-olmai / Lieaibolmmai); the alder and its blood-red bark-sap were central to the bear-cult over which this hunting god presided.",
+    "sources": [{ "kind": "encyclopaedia", "reference": "'Leib-olmai', Encyclopædia Britannica (gloss 'alder-man'; god of the hunt and the bear)" }, { "kind": "reference_work", "reference": "'Leib-olmai', Oxford Reference (Oxford Dictionary of World Mythology / J. Simpson & S. Roud tradition)" }, { "kind": "scholarly_book", "reference": "J. A. Friis, Lappisk Mythologi (1871); on olmaj/olbma 'man' and the bear-feast ritual use of alder bark" }]
+  },
+  "sami_mano": {
+    "languageFamily": "Uralic (Sámi)",
+    "etymology": "From North Sámi mánnu 'moon, month' (Mano / Manno / Mánnu), the personified Moon worshipped especially at midwinter and depicted on the noaidi drums.",
+    "sources": [{ "kind": "encyclopaedia", "reference": "'Sami Religion', Encyclopedia.com (the Moon, Aske or Manno, received sacrifices at midwinter)" }, { "kind": "scholarly_record", "reference": "E. Manker, Die lappische Zaubertrommel / drum-figure surveys (1938–50), drum iconography of the moon" }, { "kind": "lexical", "reference": "North Sámi mánnu 'moon, month' (standard Sámi lexicography; cf. Mánnu-stállu)" }]
+  },
+  "sami_radien_attje": {
+    "languageFamily": "Uralic (Sámi)",
+    "etymology": "Title rather than personal name: radie / ráđđi 'rule, governing power' (cf. the agentive 'Radien' = 'ruler', as in Veralden-radien 'Ruler of the World') + áhttje / attje 'father', i.e. 'the ruling father', the remote celestial high god.",
+    "sources": [{ "kind": "encyclopaedia", "reference": "'Veralden-radien', Encyclopædia Britannica ('Ruler of the World'; Radien = ruler, from the root meaning 'to rule')" }, { "kind": "scholarly_book", "reference": "J. A. Friis, Lappisk Mythologi (1871); on olmaj/attje and the celestial high god" }, { "kind": "scholarly_book", "reference": "L. Bäckman & Å. Hultkrantz, Studies in Lapp Shamanism (1978), on Radien and Sámi high-god conceptions" }]
+  },
+  "san_kaggen": {
+    "languageFamily": "Khoisan (Tuu / ǀXam)",
+    "etymology": "ǀXam ǀKaggen (Bleek–Lloyd dental-click orthography; ASCII '/Kaggen'; Maloti/Drakensberg form 'Cagn'). The word denotes 'the Mantis' (the praying mantis), with which the trickster-creator is identified; the internal morphology is not transparently analysable and the precise gloss has been debated, but the lexical sense 'mantis' is the standard attested meaning.",
+    "sources": [{ "kind": "scholarly_book", "reference": "W. H. I. Bleek & L. C. Lloyd, Specimens of Bushman Folklore (1911), ǀkaggen = 'the Mantis'" }, { "kind": "dictionary", "reference": "D. F. Bleek, A Bushman Dictionary (1956), ǀXam entry for the mantis term" }, { "kind": "scholarly_book", "reference": "M. Guenther, Tricksters and Trancers: Bushman Religion and Society (1999), on ǀKaggen/Mantis" }]
+  },
+  "san_kwammanga": {
+    "languageFamily": "Khoisan (Tuu / ǀXam)",
+    "etymology": "ǀXam Kwammanga (Kwammang-a), the proper name for (the red part of) the rainbow; the First-Race being who is 'a part of the rainbow' bears this name. The form is a recorded ǀXam designation rather than a transparent compound.",
+    "sources": [{ "kind": "scholarly_book", "reference": "W. H. I. Bleek & L. C. Lloyd, Specimens of Bushman Folklore (1911), Kwammanga as the rainbow being" }, { "kind": "scholarly_book", "reference": "D. F. Bleek, The Mantis and His Friends: Bushman Folklore (1923)" }, { "kind": "scholarly_book", "reference": "R. Hewitt, Structure, Meaning and Ritual in the Narratives of the Southern San (1986), Kwammang-a in the Mantis-family narratives" }]
+  },
+  "santal_jaher_era": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali jaher 'sacred grove' (cf. jaherthan, the grove sanctuary) + era 'woman, wife, lady', i.e. 'Lady of the Sacred Grove', the presiding goddess who resides in the jaher.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): jaher 'sacred grove', era 'woman, wife'" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Jaher Era / Jaher Budhi, Lady of the Sacred Grove" }, { "kind": "scholarly_book", "reference": "W. J. Culshaw, Tribal Heritage: A Study of the Santals (1949)" }]
+  },
+  "santal_marang_buru": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali maraṅ 'great, big' + buru 'mountain, hill', i.e. 'Great Mountain' (Great Hill), the name/title of the Santal supreme deity.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): maraṅ 'great' and buru 'mountain, hill'" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Marang Buru 'the Great Mountain', supreme deity" }, { "kind": "scholarly_book", "reference": "W. G. Archer, The Hill of Flutes (1974)" }]
+  },
+  "santal_moreko_turuiko": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali moṛe 'five' + turui 'six' + animate plural suffix -ko, i.e. 'the five-six (ones)', a collective class of village godlings (the five brothers and six sisters).",
+    "sources": [{ "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Moṛeko-Turuiko 'the five and the six', village deities" }, { "kind": "scholarly_book", "reference": "W. J. Culshaw, Tribal Heritage: A Study of the Santals (1949)" }, { "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): moṛe 'five', turui 'six', plural -ko" }]
+  },
+  "santal_pilcu_budhi": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali pilcu buṛhi, glossed 'old woman'; buṛhi 'old (married) woman' is an Indo-Aryan loan. The name of the first human female ancestor.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): buṛhi 'old woman' (Aryan word); pilcu" }, { "kind": "scholarly_book", "reference": "P. O. Bodding, Traditions and Institutions of the Santals (1942), Pilcu Haram & Pilcu Budhi 'an Old Man and an Old Woman', the first pair" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000)" }]
+  },
+  "santal_pilcu_haram": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali pilcu haṛam, glossed 'old man'; haṛam 'elderly man'. The name of the first human male ancestor.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): haṛam 'old man'; pilcu" }, { "kind": "scholarly_book", "reference": "P. O. Bodding, Traditions and Institutions of the Santals (1942), Pilcu Haram & Pilcu Budhi 'an Old Man and an Old Woman', the first pair" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000)" }]
+  },
+  "santal_thakur_jiu": {
+    "languageFamily": "Austroasiatic (Munda / Santali)",
+    "etymology": "Santali thakur 'lord' (an Indo-Aryan loanword) + jiu 'life, soul', i.e. 'Lord of life' (the life-giver), an epithet of the Santal supreme creator god.",
+    "sources": [{ "kind": "dictionary", "reference": "P. O. Bodding, A Santal Dictionary (1929–36): thakur 'lord' (IA loan), jiu 'life, soul'" }, { "kind": "encyclopaedia", "reference": "'Santals', Encyclopedia.com (Thakur Jiu = 'life giver', supreme creator)" }, { "kind": "scholarly_book", "reference": "J. Troisi, Tribal Religion (2000), Thakur Jiu the supreme god" }]
+  },
+  // ══ Alphabetical sweep batch 12 (indices 815-894: Scythian, Selkup, Semang, Senufo,
+  //    Serer, Shona, Songhai, Sotho-Tswana, Shipibo, Tagalog, Taino) ══
+  "scythian_arpoxais": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Hellenised Ἀρπόξαϊς (Arpoxais), second of the three sons of Targitaos in Herodotus 4.5-6. The second element -xais securely reflects Old Iranian *xšaya- 'rule, ruling (over), king', the same element seen in the brothers' names Lipoxais and Kolaxais. The first element Arpo- is uncertain; Abaev proposed *arpa- (< *apra-) 'water/deep', whence the gloss 'Deep King', but this reconstruction is not secure. Only the royal/ruler element is firmly attested.",
+    "sources": [{ "kind": "etymological dictionary / reference grammar", "reference": "R. Schmitt, 'Andere altiranische Dialekte' (Skythisch), in R. Schmitt (ed.), Compendium Linguarum Iranicarum (Wiesbaden 1989), pp. 86-94, esp. 92-94: the names of Targitaos' sons 'probably contain the Iranian word xšay- \"to rule\"; the initial elements are more uncertain'." }, { "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): the element *xšaya- 'ruling over' appears in Arpó-, Lipó- and Kolá-xaïs." }, { "kind": "etymological dictionary", "reference": "V. I. Abaev, Historical-Etymological Dictionary of the Ossetic Language / 'Scythian Language' essay: reconstruction of the Scythian onomastic lexicon, with the -xais names analysed via Iranian *xšaya- 'king' (first element Arpo- < *arpa-/*apra- 'water', proposed, uncertain)." }]
+  },
+  "scythian_lipoxais": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Hellenised Λιπόξαϊς (Lipoxais), the firstborn of the three sons of Targitaos in Herodotus 4.5-6. The second element -xais securely reflects Old Iranian *xšaya- 'rule, ruling (over), king' (so Schmitt; Encyclopaedia Iranica), shared with Arpoxais and Kolaxais. The first element Lipo- is uncertain; Abaev proposed *ripa- 'mountain/height', whence the gloss 'Mountain King', but the initial element is explicitly regarded by Schmitt as not securely reconstructable. Only the royal/ruler element is firmly attested.",
+    "sources": [{ "kind": "etymological dictionary / reference grammar", "reference": "R. Schmitt, 'Andere altiranische Dialekte' (Skythisch), in R. Schmitt (ed.), Compendium Linguarum Iranicarum (Wiesbaden 1989), pp. 86-94, esp. 92-94: the sons' names 'probably contain the Iranian word xšay- \"to rule\"; the initial elements are more uncertain'." }, { "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): the element *xšaya- 'ruling over' is identified in Lipó-, Arpó- and Kolá-xaïs (sons of Targitaos, Hdt. 4.5.2)." }, { "kind": "etymological dictionary", "reference": "V. I. Abaev, Historical-Etymological Dictionary of the Ossetic Language / 'Scythian Language' essay: -xais names from Iranian *xšaya- 'king'; first element Lipo- < *ripa- 'mountain' proposed (uncertain)." }]
+  },
+  "scythian_skyles": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Σκύλης (Skyles), 5th-c. BCE Scythian king (Hdt. 4.78-80; his name is also attested on a contemporary gold signet ring, ΣΚΥΛΕΩ). The name Hellenises Scythian *Skula, a later dialectal form of the ethnonym *Skuδa- 'archer' after the regular Scythian sound change ð > l; hence the name means 'archer / the Scythian'. Same Iranian etymon as the self-name underlying Skythes/Skolotoi.",
+    "sources": [{ "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): Scythian *Skuδa- > later *Skula via ð > l; the king's name Σκύλης reflects this *Skula 'archer'." }, { "kind": "monograph / onomastic study", "reference": "O. Szemerényi, Four Old Iranian Ethnic Names (Vienna 1980), with R. Schmitt, Die skythischen Personennamen bei Herodot (2003): the ethnonym/onym *Skuδa- 'shooter, archer' and its dialectal reflex *Skula underlying Σκύλης." }]
+  },
+  "scythian_skythes": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Scythian/Old North Iranian)",
+    "etymology": "Σκύθης (Skythes), Greek-transmitted eponym of the Scythians (Hdt. 4.10), is the personal-name form of the people's self-designation. The ethnonym is reconstructed as Old Iranian *Skuda- / *Skuδa- 'shooter, archer' (Greek Skýthēs rendering the spirantised dental [ð]), from PIE *(s)keud- 'to shoot, throw'. The etymology is debated (the precise source form is not certain) but is the standard, widely accepted scholarly analysis.",
+    "sources": [{ "kind": "monograph", "reference": "O. Szemerényi, Four Old Iranian Ethnic Names: Scythian – Skudra – Sogdian – Saka (Sitzungsberichte der Österreichischen Akademie der Wissenschaften, phil.-hist. Kl. 371; Vienna 1980): self-name *Skuda- 'shooter, archer' from IE *(s)kewd-/*skeud-." }, { "kind": "encyclopaedia article", "reference": "R. Schmitt, 'Scythian Language', Encyclopaedia Iranica (iranicaonline.org): Greek Skýthēs reflects *Skuδa-, 'shooter, archer', from PIE *skeud-; the precise reconstruction is noted as not fully certain." }]
+  },
+  "selkup_ilyntyl_kota": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Selkup Ilyntyl kota, conventionally rendered 'Life(-giving) Old Woman' / 'Living Old Woman'. The head noun kota (Northern Selkup qota, as in ima-qota 'old woman') means 'old woman'; the modifier ilyntyl is built on the Selkup verbal root ilɨ- 'to live, life', so the compound names her as the old woman who governs life (she sends souls to be born and aids childbirth). Documented in the Encyclopaedia of Uralic Mythologies treatment of Selkup myth.",
+    "sources": [{ "kind": "book", "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4). Budapest: Akadémiai Kiadó. — Ilyntyl Kota as 'Living Old Woman' / life-mother." }, { "kind": "book", "reference": "Helimski, E. 'Selkup', in D. Abondolo (ed.), The Uralic Languages (1998). — Selkup (ima-)qota 'old woman'; verbal root ilɨ- 'to live'." }]
+  },
+  "selkup_loz": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Selkup loz (pl. lozy), the generic term for a 'spirit' — any of the supernatural inhabitants of the otherworlds, malevolent or benevolent, against whom shamans contend. It is not a single named god but the Selkup common noun for spirit-beings, as recorded in Selkup ethnography and folklore.",
+    "sources": [{ "kind": "book", "reference": "Tuchkova, N. A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4). — loz/lozy as the class of spirits in the three-tier Selkup cosmos." }, { "kind": "scholar", "reference": "E. D. Prokofyeva, ethnography of Tas Selkup religion (mid-20th c.). — loz spirits." }]
+  },
+  "selkup_nom": {
+    "languageFamily": "Uralic (Samoyedic)",
+    "etymology": "Selkup Nom 'sky, firmament' and, by extension, the supreme sky-god. It continues Proto-Samoyedic *num 'sky; (sky-)god', the same etymon as Nenets/Yurak Num; the word denotes literally 'the heaven above' and the highest deity who resides there. Cognate above-/sky- forms (nu-, num) recur across Samoyedic and in neighbouring Ob-Ugric.",
+    "sources": [{ "kind": "reference-work", "reference": "'Samoyed Religion', Encyclopedia of Religion (Encyclopedia.com). — num 'sky/firmament' and 'highest god', reconstructible for Proto-Samoyed." }, { "kind": "book", "reference": "Tuchkova, N. A., Kuznetsova, A. I., Kazakevich, O. A. et al. (2010). Selkup Mythology (Encyclopaedia of Uralic Mythologies 4). — Selkup Nom, sky-god cognate with Samoyed Num." }]
+  },
+  "semang_naga": {
+    "languageFamily": "Austroasiatic (Aslian); loanword from Indo-Aryan",
+    "etymology": "Semang naga' (with final glottal stop), the world-supporting earth-serpent, is a Malay loan ultimately from Sanskrit nāgá 'snake, serpent, cobra'. The word was borrowed into Semang (among numerous Malay loans in the Aslian languages) and applied to the chthonic serpent on whose back the earth rests, whose shifting causes subterranean waters to rise.",
+    "sources": [{ "kind": "reference-work", "reference": "'Negrito Religions: Negritos of the Malay Peninsula', Encyclopedia of Religion (Encyclopedia.com). — the earth rests on the serpent Naga; Semang cosmology." }, { "kind": "book", "reference": "Paul Schebesta, Die Negrito Asiens, vol. II.1: Religion und Mythologie (1957). — Naga' as the earth-supporting serpent / earth-deity." }]
+  },
+  "senufo_madebele": {
+    "languageFamily": "Niger-Congo (Gur/Senufo)",
+    "etymology": "Senufo madebele 'bush spirits' (singular madeo), the capricious tutelary nature-genies of the bush and water who must be propitiated through diviners. The form shows the regular Senufo singular~plural class alternation (sing. madeo : pl. madebele), parallel to ndeo : ndebele and tugu : tugubele in cognate dialect terms for the same divinatory spirits.",
+    "sources": [{ "kind": "book", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981). — madebele/madeo, the bush spirits and their cult." }, { "kind": "reference-work", "reference": "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History, 'Divination and Senufo Sculpture in West Africa'. — ndebele/madebele/tugubele (sing. ndeo/madeo/tugu) as Senufo bush spirits." }]
+  },
+  "senufo_maleeo": {
+    "languageFamily": "Niger-Congo (Gur/Senufo)",
+    "etymology": "Senufo Maleeo, equivalently Katyeleeo, the female 'Ancient Mother' (glossed 'old mother' / 'ancient woman') — the maternal, nurturing aspect of the bipartite Senufo supreme being (paired with the creator Kolo Tyolo) and tutelary of the Poro society. The name is built on the Senufo word for 'mother' qualified as ancient/old, hence the standard rendering 'Ancient Mother'.",
+    "sources": [{ "kind": "reference-work", "reference": "'Senoufo', Encyclopedia of World Cultures (Encyclopedia.com). — bipartite deity Koulo Tyolo (creator) and Katyelééó / 'Ancient Mother'." }, { "kind": "book", "reference": "Anita J. Glaze, Art and Death in a Senufo Village (1981). — Katyeleeo/Maleeo, the Ancient Mother and Poro patroness." }]
+  },
+  "serer_pangool": {
+    "languageFamily": "Niger-Congo (Senegambian; Serer)",
+    "etymology": "Serer Pangool (singular Fangool), the ancestral intercessor-spirits and saints who mediate between the living and the supreme being Roog. The term derives from the Serer phrase Fang Qool 'the sacred serpent': Fangool means 'serpent', the Pangool being symbolised by (and spiritually linked to) the snake, often shown as two coiled serpents. The initial f~p alternation marks the singular~plural.",
+    "sources": [{ "kind": "book", "reference": "Henry Gravrand, La Civilisation Sereer: Pangool (Dakar, 1990). — Pangool / sing. Fangool as ancestral serpent-spirits and intercessors with Roog." }]
+  },
+  "serer_roog": {
+    "languageFamily": "Niger-Congo (Senegambian; Serer)",
+    "etymology": "Serer Roog (also Rog; Koox/Kooh in the Cangin languages), the genderless supreme creator. In Serer roog means 'sky, the heavens', reflecting the deity's celestial nature. He is honoured as Roog Sene, 'Roog the Immensity' (hence, by extension, 'the merciful God'), the source to whom life returns and who is approached only through the ancestral Pangool.",
+    "sources": [{ "kind": "book", "reference": "Henry Gravrand, La Civilisation Sereer: Cosaan (Dakar, 1983). — Roog/Roog Sene, the Serer supreme being." }, { "kind": "book", "reference": "Henry Gravrand, La Civilisation Sereer: Pangool (Dakar, 1990). — Roog as the immensity worshipped through the Pangool; roog 'sky'." }]
+  },
+  "shango": {
+    "languageFamily": "Niger-Congo (Volta-Niger / Yoruboid; Yoruba)",
+    "etymology": "The etymology of the Yoruba theonym Ṣàngó is debated and unsettled, with several named scholars offering competing glosses. (1) A. B. Ellis (1894) analyzed it as a Yoruba compound of the verb ṣán 'to strike violently (as lightning)' + gɔ/go 'to bewilder, to daze' — an internal Yoruba derivation now generally regarded by later scholarship as unsubstantiated. (2) E. B. Idowu proposed it was a corruption of the Nupe lightning/rain deity name Soko. (3) Sandro Capo Chichi (Yoruba Studies Review, 2025) argues on tonal, morphological and comparative-phonological grounds that the name derives ultimately from Gbari (Gbagyi) ɛtswaʃɛ̰gʷo 'God', literally 'ruler (ɛtsu) of the sky (ʃɛ̰go)', borrowed into Nupe (reinterpreted as etsu ʃjə̰gʷo 'King ʃjə̰go') and thence into Old Ọyọ Yoruba, the royal reinterpretation merging a sky/thunder divinity with the historical Aláàfin. No single etymology is established; the Gbari-via-Nupe 'ruler of the sky' account is the most recent scholarly proposal.",
+    "sources": [{ "kind": "journal-article", "reference": "Sandro Capo Chichi, \"On the Etymology of the Yoruba Theonym Shango,\" Yoruba Studies Review, Vol. 10, No. 1 (Spring 2025) — derives Ṣàngó from Gbari ɛtswaʃɛ̰gʷo 'ruler of the sky' via Nupe." }, { "kind": "book", "reference": "A. B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894) — proposes Yoruba ṣán 'to strike' + go 'to bewilder'." }, { "kind": "book", "reference": "E. Bọlaji Idowu, Olódùmarè: God in Yoruba Belief (1962) — relates Ṣàngó to Nupe Soko." }]
+  },
+  "shipibo_bari": {
+    "languageFamily": "Panoan (Shipibo-Konibo)",
+    "etymology": "Shipibo-Konibo bari 'sun', a common noun used as the name of the male solar deity ('Father Sun', paired with the Moon). The lexeme bari 'sun' is attested in standard Shipibo-Konibo lexicography; in Roe's analysis of Shipibo cosmology the Sun is a celestial being inhabiting the topmost luminous world (Jakon Nete). No further internal morphological segmentation of bari is given by the cited sources; it is simply the ordinary Shipibo word for 'sun' raised to a theonym.",
+    "sources": [{ "kind": "dictionary", "reference": "James Loriot, Erwin Lauriault & Dwight Day, Diccionario shipibo–castellano (Serie Lingüística Peruana 31; Ministerio de Educación / Instituto Lingüístico de Verano, 1993) — Shipibo bari 'sol/sun'." }, { "kind": "book", "reference": "Peter G. Roe, The Cosmic Zygote: Cosmology in the Amazon Basin (Rutgers University Press, 1982), pp. 124-130 — Shipibo solar deity (Sun/Father) in the layered cosmos." }]
+  },
+  "shipibo_ronin": {
+    "languageFamily": "Panoan (Shipibo-Konibo)",
+    "etymology": "Shipibo-Konibo ronin denotes the primordial cosmic anaconda / World-Anaconda (the 'Great Boa'), built on the ordinary Shipibo noun rono 'snake, boa' (ronin being the augmented/enlarged form, the great water-serpent — also rendered rono ewa 'big snake'). rono 'snake' is attested in standard Shipibo-Konibo lexicography. In Roe's account the ronin is the mother/source of the kené designs and a water-being of Jene Nete, the water-world; the figure is a spirit-class water-serpent treated as a primordial divinity. The native form is therefore the common ophidian noun rono 'snake/boa' specialized as the name of the mythic World-Anaconda.",
+    "sources": [{ "kind": "dictionary", "reference": "James Loriot, Erwin Lauriault & Dwight Day, Diccionario shipibo–castellano (Serie Lingüística Peruana 31; Ministerio de Educación / Instituto Lingüístico de Verano, 1993) — Shipibo rono 'culebra/snake (boa)'." }, { "kind": "book", "reference": "Peter G. Roe, The Cosmic Zygote: Cosmology in the Amazon Basin (Rutgers University Press, 1982), pp. 49-52 — the cosmic anaconda (ronin) and the layered water-world cosmology." }]
+  },
+  "shona_dzivaguru": {
+    "languageFamily": "Niger-Congo > Bantu > Shona (S10)",
+    "etymology": "Shona Dzivaguru 'the great pool', a transparent compound of dziva 'pool, deep water' + guru 'great, big'. It is recorded both as a praise-name of the high god Mwari (the rain-giver, 'the Great Pool') and, among the north-eastern (Korekore) Shona, as the name of a distinct territorial rain divinity.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Daneel, M. L. The God of the Matopo Hills: An Essay on the Mwari Cult in Rhodesia (1970) — gives Dzivaguru ('the Great Pool') as the principal praise-name of Mwari the rain-giver." }, { "kind": "scholarly monograph", "reference": "Bourdillon, M. F. C. The Cults of Dzivaguru and Karuva amongst the North-Eastern Shona Peoples; cf. The Shona Peoples (1976/1987) — on Dzivaguru as a north-eastern Shona territorial divinity." }]
+  },
+  "soatsaki": {
+    "languageFamily": "Algic > Algonquian > Blackfoot (Siksika)",
+    "etymology": "Blackfoot So-at-sa-ki, glossed 'Feather Woman'; the second element -aakii (-aki) is the ordinary Blackfoot word for 'woman'. The name is given as that of the Piegan woman taken to the Sky Country by Morning Star and mother of Poia/Star Boy.",
+    "sources": [{ "kind": "scholarly ethnography (primary collection)", "reference": "Grinnell, George Bird. Blackfoot Lodge Tales: The Story of a Prairie People (1892) — records the figure So-at-sa-ki and translates the name as 'Feather Woman'." }]
+  },
+  "songhai_manda_hausakoy": {
+    "languageFamily": "Nilo-Saharan > Songhay (Songhay-Zarma)",
+    "etymology": "Songhay Hausakoy is a compound Hausa + koy, where koy means 'lord, master, owner' (cf. laabu koy 'master(s) of the earth', kwaara koy 'village chief'); Hausakoy thus = 'lord/master of the Hausa', the name of the smith-spirit among the Tooru/Holey. The accompanying element Manda is not securely glossed in the cited scholarship.",
+    "sources": [{ "kind": "scholarly ethnography", "reference": "Stoller, Paul. Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989) — uses koy as 'master/chief/owner' and treats (Manda) Hausakoy as the smith of the Tooru spirits." }, { "kind": "scholarly ethnography", "reference": "Rouch, Jean. La religion et la magie songhay (1960/1989) — Songhay -koy 'lord/owner' in spirit and title names." }]
+  },
+  "sotho_tswana_badimo": {
+    "languageFamily": "Niger-Congo > Bantu > Sotho-Tswana (S30)",
+    "etymology": "Sotho-Tswana Badimo 'the ancestors / ancestral spirits' is the class-2 plural (prefix ba-) corresponding to singular modimo, sharing the root -dimo < proto-Bantu/Bantu *-dimu (~ *-zimu) 'ancestral spirit, divinity'. It denotes the collective ancestral dead venerated as spirit-powers.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Setiloane, Gabriel M. The Image of God among the Sotho-Tswana (1976) — badimo as plural to modimo and the -dimo root." }, { "kind": "reference encyclopedia (scholarly)", "reference": "'Tswana Religion', drawn from the Encyclopedia of Religion (via Encyclopedia.com) — badimo 'ancestors', plural of modimo." }]
+  },
+  "sotho_tswana_modimo": {
+    "languageFamily": "Niger-Congo > Bantu > Sotho-Tswana (S30)",
+    "etymology": "Sotho-Tswana Modimo, the Supreme Being, is morphologically mo- (the singular personal/agentive class prefix) + the root -dimo, reflex of the proto-Bantu/Bantu root *-dimu (~ *-zimu) 'ancestral spirit, divinity'. (The popular surface glosses 'the One Above' / 'the Great One' are theological renderings; the secure linguistic content is the derivation from the *-dimu/-zimu root, which also yields the plural badimo 'the ancestors'.)",
+    "sources": [{ "kind": "scholarly monograph", "reference": "Setiloane, Gabriel M. The Image of God among the Sotho-Tswana (1976) — analysis of Modimo and its relation to badimo / the -dimo root." }, { "kind": "reference encyclopedia (scholarly)", "reference": "'Tswana Religion', drawn from the Encyclopedia of Religion (via Encyclopedia.com) — Modimo and badimo, the -dimo root from Bantu -dzimu 'spirit'." }]
+  },
+  "tagalog_bathala": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; Central Philippine, Tagalog) with Sanskrit (Indo-Aryan) loan",
+    "etymology": "Tagalog Bathala (also Batala, in full Bathalang Maykapal 'Bathala the Creator') derives from Sanskrit bhaṭṭāra 'noble lord, great lord' (cf. the honorific bhaṭṭāraka), which entered the maritime Southeast Asian region as the 16th-century title batara (Indonesian batara 'god', feminine batari; Malay betara 'holy', applied to the great Hindu gods of Java). The Sanskritic derivation reflects the Indianization of pre-Hispanic Tagalog religion.",
+    "sources": [{ "kind": "scholarly monograph (named linguist)", "reference": "Jean-Paul G. Potet, Ancient Beliefs and Customs of the Tagalogs (Lulu, 2018) — derives Bathala from Sanskrit bhaṭṭāra 'noble lord' via the regional title batara." }, { "kind": "early colonial primary source", "reference": "Relación de las Islas Filipinas (c. 1595–1602) — attests the form 'Bathalang Maykapál' glossed 'God the Creator'." }]
+  },
+  "tagalog_tala": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; Central Philippine, Tagalog) with Sanskrit (Indo-Aryan) loan",
+    "etymology": "Tagalog tala 'bright star' (the morning/evening star, the planet Venus) — and hence the star-goddess Tala — is the standard scholarly account derived from Sanskrit tārā 'star', transmitted through pre-Hispanic Indianized contact; the goddess is identified with the Hindu Tārā. (Some authors note the Sanskrit derivation is not the only proposed source, but tārā 'star' is the mainstream etymology and the meaning 'star' is uncontested.)",
+    "sources": [{ "kind": "scholarly work on Tagalog loanwords (named linguist)", "reference": "Jean-Paul G. Potet, Tagalog Borrowings and Cognates (Lulu, 2016) — treats Sanskrit loanwords in Tagalog including the tala / Sanskrit tārā 'star' correspondence." }, { "kind": "mythological compilation (named scholar)", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969) — documents Tala as the Tagalog star-goddess." }]
+  },
+  "taino_atabey": {
+    "languageFamily": "Arawakan (Maipurean; Taíno)",
+    "etymology": "Taíno Atabey (also Atabeyra, Atabex), the primordial mother-goddess of fresh water and fertility, is analyzed by José Juan Arrom as containing the Arawakan element atte / attete 'mother' (a form also used as a respectful term of address for older women), matching the goddess's character as the primordial maternal principle; the name is rendered 'mother of the waters'.",
+    "sources": [{ "kind": "scholarly monograph (named Taínist)", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (Siglo XXI, 1975; rev. eds.) — etymologizes Atabey/Atabeyra via atte 'mother'." }, { "kind": "early colonial primary source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios (c. 1498) — first records Atabey as the mother of the zemi Yúcahu." }]
+  },
+  // ══ Alphabetical sweep batch 13 (indices 895-974: Turkic/Tengrist, Udmurt, Urartian,
+  //    Vainakh, Vanuatu, Veps, Taino, Tonga, Toraja, Tibetan, Tiv, Tlingit, Wabanaki) ══
+  "taino_boinayel": {
+    "languageFamily": "Arawakan (Taíno)",
+    "etymology": "Boinayel parses as boína 'brown/dark serpent' (the Antillean reflex of an Arawakan serpent term, cf. Amazonian boiúna) + the suffix -el 'son', hence 'Son of the Brown (Rain-)Serpent'. The theonym is built on the same boína element seen in his mother's name Iguanaboína ('iguana-serpent'), where the dark serpent metaphorizes the grey rain-laden clouds; Boinayel is accordingly the rain-bringing twin.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (Mexico: Siglo XXI, 1975/1989) — etymological analysis of Boinayel as 'Hijo de la Serpiente Parda' (boína + -el)." }, { "kind": "primary ethnographic source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios, c. 1498, ch. 25 (Boinayel and his twin Márohu as the cave-zemis of rain)." }]
+  },
+  "taino_maquetaurie_guayaba": {
+    "languageFamily": "Arawakan (Taíno)",
+    "etymology": "The cognomen Guayaba is the Taíno/Arawak word for the guava fruit (guayaba; English 'guava' is borrowed from it), linking this lord of Coaybay (the land of the dead) to the guava, the food the dead were said to crave when they roamed at night. The first element Maquetaurie (var. Maketaori) has no securely established meaning and is left unetymologized; only the Guayaba element is attested with a meaning.",
+    "sources": [{ "kind": "primary ethnographic source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios, c. 1498, chs. 12-13 (Maquetaurie Guayaba, lord of Coaybay, and the dead's association with the guava)." }, { "kind": "scholarly monograph", "reference": "José Juan Arrom, Mitología y artes prehispánicas de las Antillas (1975); Arrom glosses Coaybay as the 'dwelling place of the dead' and treats guayaba as the Taíno guava in the death-cult complex." }]
+  },
+  "taino_yucahu": {
+    "languageFamily": "Arawakan (Taíno)",
+    "etymology": "The triple name Yúcahu Bagua Maórocoti recorded by Pané analyzes as: Yúcahu = yuca 'cassava/manioc' + -hu (a personal/agentive ending), i.e. 'spirit/giver of cassava'; Bagua 'the sea' (also read 'lord of the sea'); Maórocoti 'without male progenitor / having no male ancestor'. Together Arrom renders it 'Spirit of cassava and of the sea, being without male ancestor', the supreme spirit born of the goddess Atabey.",
+    "sources": [{ "kind": "scholarly article", "reference": "José J. Arrom, 'Taíno Mythology: Notes on the Supreme Being', Latin American Literary Review (1980); also Mitología y artes prehispánicas de las Antillas (1975) — analysis of Yúcahu (yuca + -hu), Bagua 'sea', Maórocoti 'without male progenitor'." }, { "kind": "primary ethnographic source", "reference": "Fray Ramón Pané, Relación acerca de las antigüedades de los indios, c. 1498 (opening: 'le llaman Yúcahu Bagua Maórocoti')." }]
+  },
+  "tapun_sa_win": {
+    "languageFamily": "Siouan (Lakota)",
+    "etymology": "Lakota Tȟapȟúŋ Šá Wíŋ = tȟapȟúŋ 'cheek' + šá 'red' + wíŋ 'woman', i.e. 'Red Cheek Woman'. She is the mortal Lakota heroine of the Star-Husband narrative; her son, born after her fall from the sky, is named Wičháȟpi Hiŋȟpáya 'Fallen Star' (wičháȟpi 'star' + hiŋȟpáya 'to fall').",
+    "sources": [{ "kind": "primary ethnographic source", "reference": "James R. Walker, The Sun Dance and Other Ceremonies of the Oglala Division of the Teton Dakota (AMNH Anthropological Papers 16, 1917) — recorder of the Lakota Fallen Star (Wičháȟpi Hiŋȟpáya) cycle." }, { "kind": "cultural institution gloss", "reference": "Akta Lakota Museum & Cultural Center, 'Tapun Sa Win' (translates the name as 'Red Cheek Woman'); concurring Lakota-language gloss tȟapȟúŋ 'cheek' / šá 'red' / wíŋ 'woman'." }]
+  },
+  "thracian_heros": {
+    "languageFamily": "Indo-European (Greek-transmitted; Thracian)",
+    "etymology": "On the votive and funerary reliefs the Thracian Rider is named simply Heros (Greek ἥρως 'hero'), the deified-dead/hero-god designation; no native Thracian theonym is recorded for the figure as such. Detschew proposed that this 'hero' label also answers to a genuine Thracian cognate *ierus / *iarus 'hero' (with Celtic parallels), so the appellation means 'hero' whether taken as the Greek word or its Thracian counterpart.",
+    "sources": [{ "kind": "scholarly reference work", "reference": "Dimiter Detschew, Die thrakischen Sprachreste (Vienna, 1957), p. 200 — derives the Rider's name from a Thracian term for 'hero', *ierus/*iarus, with Celtic parallels." }, { "kind": "encyclopedia", "reference": "'Thracian Rider', Encyclopedia.com (Encyclopedia of Religion) — reports the inscriptional title Heros/ἥρως 'hero' and cites Detschew 1957:200 for the Thracian 'hero' etymology." }]
+  },
+  "tibetan_nyenchen_tanglha": {
+    "languageFamily": "Sino-Tibetan (Tibetic / Classical Tibetan)",
+    "etymology": "gNyan-chen Thang-lha analyzes transparently in Tibetan as gnyan 'a class of fierce wild mountain/land spirit' (the same word denotes the wild argali, emblem of untamed fierceness) + chen 'great' + thang 'plain, steppe, flatland' + lha 'god, deity'; i.e. 'Great gNyan(-spirit), God of the Plain (of the Northern Plateau/Byang-thang)'. He is a pre-eminent yul-lha / gnyan mountain-god of northern Tibet and guardian of Lake gNam-mtsho.",
+    "sources": [{ "kind": "scholarly monograph", "reference": "René de Nebesky-Wojkowitz, Oracles and Demons of Tibet: The Cult and Iconography of the Tibetan Protective Deities (The Hague: Mouton, 1956) — standard treatment of gNyan-chen Thang-lha as a gnyan/yul-lha mountain deity." }, { "kind": "lexical / philological", "reference": "Classical Tibetan lexicography for the constituent morphemes (gnyan 'fierce mountain/land numen; argali', chen 'great', thang 'plain', lha 'deity'); cf. the dedicated study by B. Bellezza and the academic monograph 'The cult of the mountain god gNyan chen thang lha in Tibet'." }]
+  },
+  "tibetan_tonpa_shenrab": {
+    "languageFamily": "Sino-Tibetan (Tibetic; Classical Tibetan)",
+    "etymology": "Tibetan (Wylie) ston pa gShen rab, 'Teacher Shenrab'. The honorific ston pa ('teacher, founder, expounder') prefixes the name gShen rab (gShen rab Mi bo che), the legendary expounder of g.yung drung (Everlasting) Bon. Snellgrove's translation of the gZi brjid renders gShen rab Mi bo che 'the teacher gShen rab', and ston pa is the standard Tibetan term for the founding teacher of a doctrine (paralleling its use for Sakyamuni in Buddhist Tibetan).",
+    "sources": [{ "kind": "book", "reference": "Snellgrove, David L. The Nine Ways of Bon: Excerpts from the gZi-brjid. London Oriental Series 18. London: Oxford University Press, 1967 (translation glossing gShen rab Mi bo che as 'the teacher gShen rab')." }, { "kind": "book", "reference": "Karmay, Samten G. The Treasury of Good Sayings: A Tibetan History of Bon. London Oriental Series 26. London: Oxford University Press, 1972 (ston pa gShen rab in the Bon historical tradition)." }]
+  },
+  "tibetan_yullha": {
+    "languageFamily": "Sino-Tibetan (Tibetic)",
+    "etymology": "Tibetan (Wylie) yul lha, lit. 'god of the place/country', a compound of yul 'country, place, territory, locality' + lha 'god, deity'. Denotes the class of indigenous territorial deities who preside over a defined valley, district or settlement, typically resident on an overlooking mountain or ridge.",
+    "sources": [{ "kind": "article", "reference": "Pommaret, Francoise. 'Yul and yul lha: The Territory and its Deity in Bhutan.' Bulletin of Tibetology 40.1 (2004): 39-67 (analysing yul 'territory' + lha 'deity')." }, { "kind": "reference", "reference": "Rangjung Yeshe Tibetan-English Dharma Dictionary, s.v. 'yul lha' ('local deity, god of the country/place'); yul 'country, place' + lha 'god'." }]
+  },
+  "tiv_akombo": {
+    "languageFamily": "Niger-Congo (Bantoid; Tivoid)",
+    "etymology": "Tiv akombo, glossed by Akiga and Downes as the 'magical emblems and magical forces' (the cult emblems / fetishes) standing behind every life contingency; an impersonal spirit-force class, distinct from tsav (human mystical power) and from the ancestors. Each akombo is identified by a material emblem (of sticks, soil, animal parts, shells, stones, feathers) through which the unseen power is accessed.",
+    "sources": [{ "kind": "book", "reference": "Akiga (Sai). Akiga's Story: The Tiv Tribe as Seen by One of Its Members. Translated and annotated by Rupert East. London: Oxford University Press for IAI, 1939 (akombo = magical emblems/forces)." }, { "kind": "book", "reference": "Downes, Rupert M. Tiv Religion. Ibadan: Ibadan University Press, 1971 (the akombo cult)." }]
+  },
+  "tiv_aondo": {
+    "languageFamily": "Niger-Congo (Bantoid; Tivoid)",
+    "etymology": "Tiv Aondo, the high god, whose name simply means 'sky'. A deus otiosus: the Tiv say he created the earth and then withdrew. The same word denotes the physical sky/heaven, so the high god is identified with the sky itself.",
+    "sources": [{ "kind": "book", "reference": "Bohannan, Paul, and Laura Bohannan. The Tiv of Central Nigeria. Ethnographic Survey of Africa, Western Africa Part VIII. London: International African Institute, 1953 (Aondo = 'sky', a withdrawn high god)." }, { "kind": "encyclopedia", "reference": "Encyclopedia.com / Encyclopedia of Religion, s.v. 'Tiv Religion' (Aondo 'sky', the disengaged sky-god of the central Benue valley)." }]
+  },
+  "tlingit_raven": {
+    "languageFamily": "Na-Dene (Tlingit)",
+    "etymology": "Tlingit Yeil (Yel), 'raven', the name of the bird and of the trickster-demiurge culture-hero; it also names the Yeil (Raven) moiety of Tlingit social organisation. Recorded by Swanton in his Tlingit texts and confirmed in modern Tlingit lexicography (Naish-Story; Sealaska Heritage), where yeil is the standard word for 'raven'.",
+    "sources": [{ "kind": "book", "reference": "Swanton, John R. Tlingit Myths and Texts. Bureau of American Ethnology Bulletin 39. Washington: Smithsonian Institution, 1909 (the Raven cycle; Yeil)." }, { "kind": "reference", "reference": "Story, Gillian L., and Constance M. Naish. Tlingit Verb Dictionary / Tlingit Noun Dictionary (SIL), and Sealaska Heritage Institute Tlingit Dictionary, s.v. yeil 'raven'." }]
+  },
+  "tonga_leza": {
+    "languageFamily": "Niger-Congo (Bantu; Central/Botatwe)",
+    "etymology": "Leza, the widespread Central-Bantu high-god name shared across the Tonga–Ila of southern Zambia. Historical-linguistic reconstruction derives it from the proto-Bantu verbal root *-ded- 'to nurture, cherish, nurse (as a parent cares for a child)' with a causative formation, yielding the sense of the deity as 'the Nurturer/Sustainer' — a development distinct from the older Bantu conception of God as a remote creator. The form is unwritten/Latin-script (no native orthography).",
+    "sources": [{ "kind": "book", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan (locus classicus for Leza among the Ila/Tonga)." }, { "kind": "journal-article", "reference": "Fourshey, Catherine Cymone, 'Leza, Sungu, and Samba: Digital Humanities and Early Bantu History', History in Africa (Cambridge University Press), deriving Leza from proto-Bantu *-ded- 'to nurture/cherish'." }]
+  },
+  "tonga_leza_shikakunamo": {
+    "languageFamily": "Niger-Congo (Bantu; Central/Botatwe)",
+    "etymology": "Shikakunamo, an epithet of the high god Leza among the Ila/Tonga, glossed 'the besetting one / he who does not let go' — the one who will never leave a person alone, sending one affliction after another (illustrated in the recorded saying that 'Shikakunamo sits on the back of every one of us, and we cannot shake him off'). Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Smith, E. W. & Dale, A. M. (1920). The Ila-speaking Peoples of Northern Rhodesia, 2 vols. London: Macmillan, on the name Shikakunamo as 'the besetting one'." }, { "kind": "book", "reference": "Werner, Alice (1933). Myths and Legends of the Bantu, ch. III 'Legends of the High Gods', reporting Shikakunamo 'the besetting one, the one who will never let you alone' (after Smith & Dale)." }]
+  },
+  "toraja_pong_banggai_di_rante": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; South Sulawesi, Toraja-Sa'dan)",
+    "etymology": "Pong Banggai di Rante, the earth-god of the Sa'dan-Toraja cosmic triad, glossed by the scholarship as 'master/lord of the plains' (the earth as a level expanse): pong 'lord, master' + rante 'plain, level field/ceremonial ground', the deity ruling the earthly plane between sky and underworld. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I. The Hague: Martinus Nijhoff (the three cosmic gods; Pong Banggai di Rante as god of the earth)." }, { "kind": "encyclopedia", "reference": "'Toraja Religion', Encyclopedia of Religion (drawing on Nooy-Palm), glossing Pong Banggai di Rante as 'the master of the plains', god of the earth." }]
+  },
+  "toraja_pong_tulak_padang": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; South Sulawesi, Toraja-Sa'dan)",
+    "etymology": "Pong Tulak Padang, the underworld god who upholds the earth — 'the lord who supports the earth': pong 'lord, master' + tulak 'to support, prop up, push up' + padang 'earth, land'. In Toraja cosmology he carries the earth (in the palms of his hands), keeping the world of mankind in equilibrium. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja, Vol. I. The Hague: Martinus Nijhoff ('Pong Tulak Padang is the Toraja Atlas; he carries the earth ... in the palms of his hands')." }, { "kind": "dictionary", "reference": "van der Veen, H. (1940). Tae' (Zuid-Toradjasch)–Nederlandsch Woordenboek. 's-Gravenhage: Nijhoff (Toraja lexicon: padang 'earth/land', pong 'lord', tulak 'to support/prop')." }]
+  },
+  "toraja_puang_matua": {
+    "languageFamily": "Austronesian (Malayo-Polynesian; South Sulawesi, Toraja-Sa'dan)",
+    "etymology": "Puang Matua, the high/creator god of Aluk To Dolo, literally 'the Old Lord / the Ancient One': puang 'lord, master' + matua 'old, aged, ancient'. Selected by van der Veen as the term rendering 'God' in the Toraja Bible. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Nooy-Palm, Hetty (1979). The Sa'dan-Toraja: A Study of Their Social Life and Religion, Vol. I. The Hague: Martinus Nijhoff (Puang Matua as the high god)." }, { "kind": "dictionary", "reference": "van der Veen, H. (1940). Tae' (Zuid-Toradjasch)–Nederlandsch Woordenboek. 's-Gravenhage: Nijhoff (puang 'lord/master', matua 'old'); van der Veen adopted Puang Matua = 'God' in his Bible translation." }]
+  },
+  "totonac_aktsini": {
+    "languageFamily": "Totonacan (Totonac-Tepehua)",
+    "etymology": "Aktsini' (also Aktzin, Ā'ktzini'), the Totonac thunder/storm god, glossed in the Totonac language as 'He who makes Thunder / He who thunders'. He is the 'Old Thunder' (Sp. Trueno Viejo) of Gulf-Coast Totonac belief, and the ruined city El Tajín ('thunder/lightning') is named for this storm power.",
+    "sources": [{ "kind": "book", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista (Totonac thunder deity Aktsini'/Tajín)." }, { "kind": "book", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Washington: Smithsonian Institution, Institute of Social Anthropology Publication 13 (Aktsini' as the Thunder Lord, 'He who makes Thunder')." }]
+  },
+  "totonac_twelve_thunderbolts": {
+    "languageFamily": "Totonacan (Totonac-Tepehua)",
+    "etymology": "The collective of twelve old thunder-beings (storm-spirits) bears the Totonac name Tajín, meaning 'thunder / lightning' in the Totonac language — the same word that names the ancient city El Tajín, said still to be inhabited by these twelve thunders. They are headed by / overlap with Aktsini', the Thunder Lord.",
+    "sources": [{ "kind": "book", "reference": "Ichon, Alain (1969). La religión de los totonacas de la sierra. México: Instituto Nacional Indigenista (the twelve thunders / Tajín)." }, { "kind": "book", "reference": "Kelly, Isabel & Palerm, Angel (1952). The Tajín Totonac, Part 1. Washington: Smithsonian Institution, Institute of Social Anthropology Publication 13 (Tajín 'thunder/lightning'; the thunder-beings of El Tajín)." }]
+  },
+  "turkic_erlik": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic ärklig / erklig 'mighty, powerful, possessing authority', a deverbal/denominal adjective in -lig built on erk 'power, strength, authority, free will'. The epithet 'the Mighty One' is already attested of an underworld ruler in the Old Turkic (Yenisei/Altai) runic corpus and survives as the name of the death- and underworld-god Erlik.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (Oxford: Clarendon Press, 1972), s.vv. erk, ärklig 'having power, mighty'" }, { "kind": "philology", "reference": "Old Turkic runic attestation of ärklig 'mighty' as an epithet of the lord of the dead (Yenisei/Altai inscriptions, 8th-9th c.)" }]
+  },
+  "turkic_od": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic ot 'fire' (Proto-Turkic *ōt), the ordinary word for fire, here personified as the fire-spirit/fire-father of the hearth in Turko-Mongol religion.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. ot 'fire'" }, { "kind": "monograph", "reference": "J.-P. Roux, La religion des Turcs et des Mongols (Paris: Payot, 1984), on the cult of fire (ot) among the Turks" }]
+  },
+  "turkic_tengri": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic teŋri 'sky, heaven; God, the supreme sky-deity'. The form is attested from the 8th-century Orkhon inscriptions onward as both 'sky/heaven' and the name of the supreme Sky-God; its ultimate (possibly non-Turkic / Wanderwort) origin is debated, but the gloss 'sky, heaven, God' is firmly established.",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. teŋri: 'sky, heaven; God' (pp. 523-524)" }, { "kind": "epigraphy", "reference": "Orkhon inscriptions (Kül Tegin / Bilge Kagan), 8th c., where teŋri denotes both the sky and the Sky-God" }]
+  },
+  "turkic_umay": {
+    "languageFamily": "Turkic",
+    "etymology": "From Old Turkic umay 'placenta, afterbirth, womb'; the same word is used as the name of the protective goddess of birth and of women and children. The theonym is attested already in the Kül Tegin inscription (umay teg ögüm katun 'my mother the Khatun, like (the goddess) Umay').",
+    "sources": [{ "kind": "etymological_dictionary", "reference": "G. Clauson, An Etymological Dictionary of Pre-Thirteenth-Century Turkish (1972), s.v. umay 'placenta, afterbirth', also as the name of the goddess (pp. 164-165)" }, { "kind": "epigraphy", "reference": "Orkhon inscription of Kül Tegin, 8th c. (umay teg ögüm katun ...)" }]
+  },
+  "udmurt_inmar": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Udmurt theonym whose first element is in 'sky, heaven' (the regular Udmurt word for the sky); the name (also recorded Ilmar) is connected to the Finno-Ugric stem *ilma 'air, sky, weather' (cf. Finnic Ilmarinen). The exact analysis of the second element -mar is debated, but the 'sky/heaven' base of the high sky-god's name is secure.",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05" }, { "kind": "monograph", "reference": "Uno Holmberg (Harva), Permalaisten uskonto (1914), on Inmar / Ilmar and the FU *ilma 'sky' connection" }]
+  },
+  "udmurt_inmumy": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Transparent Udmurt compound in 'sky, heaven' + mumy 'mother' = 'Sky-Mother / Heaven-Mother', one of the -mumy ('-mother') mother-goddesses of the Udmurt pantheon (alongside Shundy-mumy 'Sun-Mother', Gudyri-mumy 'Thunder-Mother').",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05 (in-, mumy 'mother', the series of -mumy goddesses)" }]
+  },
+  "udmurt_kyldysin": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Udmurt theonym (also Kylchin) built on the verbal root kyl-/kyldy- 'to create, bring forth, beget' (cf. kyldytis 'creator'); the god is accordingly a creator and patron of fertility, livestock-increase and childbirth. The precise segmentation of the second element is not fully settled.",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05" }, { "kind": "monograph", "reference": "V. Vladykin, Religiozno-mifologicheskaia kartina mira udmurtov (Izhevsk, 1994), on Kyldysin / kyldy- 'create'" }]
+  },
+  "udmurt_shundy_mumy": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Transparent Udmurt compound shundy 'sun' + mumy 'mother', literally 'Sun-Mother', the solar mother-goddess; member of the -mumy goddess series.",
+    "sources": [{ "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05 (shundy 'sun', mumy 'mother')" }]
+  },
+  "udmurt_vumurt": {
+    "languageFamily": "Uralic (Finno-Ugric, Permic)",
+    "etymology": "Transparent Udmurt compound vu 'water' (Finno-Ugric *wete) + murt 'man, person' (a borrowing from Indo-Iranian *mertV 'man, mortal'), literally 'Water-Man', the master-spirit of the water; parallel to Nules-murt 'Forest-Man'.",
+    "sources": [{ "kind": "monograph", "reference": "Uno Holmberg (Harva), Permalaisten uskonto (1914), on Vu-murt 'water-man'" }, { "kind": "journal_article", "reference": "Aado Lintrop, 'The Udmurt Pantheon', Sator 22 (Tartu, 2021), DOI 10.7592/Sator.2021.22.05 (vu 'water', murt 'man/person')" }]
+  },
+  "urartian_haldi": {
+    "languageFamily": "Hurro-Urartian",
+    "etymology": "National god of Urartu. The leading scholarly etymology connects the name with Hurrian heldi 'high, exalted', suiting his position as head of the state pantheon; the name is, however, not of clearly Urartian origin (it appears beside Assyrian personal names already in the 13th c. BCE), so the derivation remains a hypothesis.",
+    "sources": [{ "kind": "scholarly_etymology", "reference": "M. C. Astour, connecting Urartian/Hurrian Haldi with Hurrian heldi 'high, exalted' (leading hypothesis cited in the Urartian-studies literature)" }, { "kind": "epigraphy", "reference": "Meher Kapisi god-list (CTU A 3-1), where Haldi heads the pantheon with the largest sacrificial allotment" }]
+  },
+  "urartian_shivini": {
+    "languageFamily": "Hurro-Urartian (theonym of Indo-European/Hittite origin)",
+    "etymology": "Urartian Šiuini (read Šiwini/Siwini), the sun-god of the Urartian triad. Per Diakonoff and Vyacheslav Ivanov, the equation with Hurrian Šimige is linguistically impossible; instead the name was borrowed from a Hittite (Anatolian) dialect, Hittite šiu- / šiuni- / šiuanni- 'god' (earlier 'sun-god'), cf. šiuatt- 'daytime', ultimately from Proto-Indo-European *dyeu- 'god of the bright daytime sky'. Meaning: '(the) god / sun-god'.",
+    "sources": [{ "kind": "scholar", "reference": "I. M. Diakonoff and V. V. Ivanov, on the etymology of Urartian Šiuini as a Hittite/Indo-European *dyeu- 'god' borrowing (Hittite šiu-/šiuni-/šiuanni-), rejecting the Hurrian Šimige equation" }, { "kind": "book", "reference": "M. Salvini (ed.), Corpus dei testi urartei (CTU); cf. the Mehir Kapısı inscription CTU A 3-1 listing Šiuini in the triad with Ḫaldi and Teišeba" }]
+  },
+  "vainakh_dela": {
+    "languageFamily": "Nakh (Northeast Caucasian)",
+    "etymology": "Chechen Dela (Дела), Ingush Djala/Djаla (Дяла), the supreme creator-god. The name is the Nakh appellative del-/dal- 'god, deity' itself; the same element forms compound theonyms (e.g. Dela-malkh 'sun-god') and survives as the living Chechen/Ingush word for God. Meaning: '(the) God, deity'.",
+    "sources": [{ "kind": "book", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), chapter on religion and mythology, list of reconstructed Vainakh deities (Dela; del- 'god')" }]
+  },
+  "vainakh_pkharmat": {
+    "languageFamily": "Nakh (Northeast Caucasian)",
+    "etymology": "Chechen Pẖarmat (Пхьармат), the Nart fire-bringer (counterpart of Prometheus and of Georgian Amirani). Transparent compound of pẖar 'smith, blacksmith' + mat(t) 'land, country', i.e. 'smith of the land/country'; the figure is himself a blacksmith who steals heavenly fire from Sela. The element pẖar 'smith' is an attested Chechen lexeme.",
+    "sources": [{ "kind": "book", "reference": "Amjad Jaimoukha, The Chechens: A Handbook (RoutledgeCurzon, 2005), mythology chapter (Pkharmat as Nart smith and fire-bringer)" }, { "kind": "dictionary", "reference": "A. D. Vagapov, Etimologicheskii slovar' chechenskogo yazyka (Etymological Dictionary of the Chechen Language), Tbilisi: Meridiani, 2011 / Grozny 2019, s.v. pẖar 'smith'" }]
+  },
+  "vanuatu_marawa": {
+    "languageFamily": "Oceanic (Austronesian; Mota, Banks Islands)",
+    "etymology": "Marawa, the spider-spirit (vui) and rival/helper of Qat in the Banks Islands cycle. The name is the Mota (Banks Islands) word marawa 'spider'; the being is inseparable from the spider itself. Meaning: 'spider'.",
+    "sources": [{ "kind": "book", "reference": "R. H. Codrington, The Melanesians: Studies in their Anthropology and Folk-lore (Oxford, 1891), ch. 10 (Marawa the spider in the Qat cycle)" }, { "kind": "dictionary", "reference": "R. H. Codrington and J. Palmer, A Dictionary of the Language of Mota, Sugarloaf Island, Banks' Islands (1896), s.v. marawa 'spider'" }]
+  },
+  "veps_metsanisand": {
+    "languageFamily": "Finnic (Uralic)",
+    "etymology": "Vepsian mecan ižand 'forest-master', the master-spirit of the forest. Transparent compound: mec 'forest' (genitive mecan) + ižand 'master, lord, head of household'. Meaning: 'master/lord of the forest'.",
+    "sources": [{ "kind": "book", "reference": "Irina Yu. Vinokurova, Mifologiya vepsov: entsiklopediya (Mythology of the Veps: an Encyclopaedia), Petrozavodsk, 2015 (forest master-spirit; mec 'forest', ižand 'master')" }]
+  },
+  "veps_pertinizand": {
+    "languageFamily": "Finnic (Uralic)",
+    "etymology": "Vepsian pertin ižand 'house-master', the domestic master-spirit (counterpart of the Russian domovoi). Transparent compound: pert' 'house, hut' (genitive pertin) + ižand 'master, lord'. Meaning: 'master/lord of the house'.",
+    "sources": [{ "kind": "book", "reference": "Irina Yu. Vinokurova, Mifologiya vepsov: entsiklopediya, Petrozavodsk, 2015 (pertin ižand, the house master-spirit; pert' 'house', ižand 'master')" }]
+  },
+  "veps_vedenizand": {
+    "languageFamily": "Finnic (Uralic)",
+    "etymology": "Vepsian veden ižand 'water-master', the master-spirit of the waters (paired with the mistress veden emag). Transparent compound: vezi 'water' (genitive veden) + ižand 'master, lord'. Meaning: 'master/lord of the water'.",
+    "sources": [{ "kind": "book", "reference": "Irina Yu. Vinokurova, Mifologiya vepsov: entsiklopediya, Petrozavodsk, 2015 (veden ižand 'master of water', alongside veden emag 'mistress of water'; vezi 'water', ižand 'master')" }]
+  },
+  "wabanaki_gluskap": {
+    "languageFamily": "Algonquian (Eastern Algonquian)",
+    "etymology": "Wabanaki culture-hero, recorded as Gluskap / Glooscap / Gluskabe. The name means 'liar, deceiver', built on the attested Eastern Algonquian verb stem for 'to tell lies': Maliseet-Passamaquoddy koluskap- (koluskapiw 'he tells lies') and Mi'kmaq kluskap- (kluskapewit), so understood as 'the deceiver/liar' (in legend, from his deceiving an evil being about his weakness). NOT 'man from nothing', a gloss that properly belongs to the distinct figure Odzihozo.",
+    "sources": [{ "kind": "book", "reference": "Charles G. Leland, The Algonquin Legends of New England (1884), recording the Gluskap/Glooskap cycle (with S. T. Rand, Legends of the Micmacs, 1894)" }, { "kind": "dictionary", "reference": "David A. Francis and Robert M. Leavitt, A Passamaquoddy-Maliseet Dictionary (Peskotomuhkati Wolastoqewi Latuwewakon), documenting koluskap- 'to tell lies' (Mi'kmaq kluskap-), the lexical basis of the name 'liar'" }]
+  },
+  // ══ Alphabetical sweep batch 14 (indices 975-1021: Wabanaki, Welsh, Yakut, Yamana,
+  //    Yapese, Zapotec, Zoroastrian/Kayanian, Zulu, Zuni) — final wave ══
+  "wabanaki_malsum": {
+    "languageFamily": "Algic (Algonquian; Eastern Algonquian, Maliseet-Passamaquoddy/Mi'kmaq)",
+    "etymology": "Malsum (Leland's form Malsumsis, glossed by him 'Wolf the younger'), the wolf-brother/evil twin of Glooskap. The name is the Eastern-Algonquian word for 'wolf': Maliseet-Passamaquoddy malsom 'wolf' (the diminutive -sis in Leland's Malsumsis = 'the younger/little wolf'). The figure is unwritten/Latin-script as recorded.",
+    "sources": [{ "kind": "book", "reference": "Leland, Charles Godfrey (1884). The Algonquin Legends of New England. Boston: Houghton Mifflin, ch. III ('Of Glooskap's Birth, and of his Brother Malsum the Wolf'), giving the form 'Malsumsis, Wolf the younger'." }, { "kind": "dictionary", "reference": "Francis, David A. & Leavitt, Robert M. (2008). A Passamaquoddy-Maliseet Dictionary (Peskotomuhkati Wolastoqewi Latuwewakon). Orono: Univ. of Maine Press, s.v. malsom 'wolf' (the native lexeme underlying the name; -sis diminutive)." }]
+  },
+  "wabanaki_mateguas": {
+    "languageFamily": "Algic (Algonquian; Eastern Algonquian, Abenaki)",
+    "etymology": "Mateguas (also Matgwas, Mahtegwas, Matiguas; pron. mah-tuh-gwoss), the rabbit-brother of Glooskap who becomes ruler of the land of the dead. The name is the Abenaki word for 'rabbit' (cognate with Passamaquoddy-Maliseet mahtoqehs / Mahtigwess 'rabbit, the Great Rabbit'). Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Leland, Charles Godfrey (1884). The Algonquin Legends of New England. Boston: Houghton Mifflin (Mateguas the Rabbit, brother of Glooskap, lord of the dead)." }, { "kind": "encyclopedia", "reference": "Native Languages of the Americas (Redish, Laura & Lewis, Orrin, eds.), entries 'Mateguas, the Ghost Rabbit' and 'Mahtoqehs the Rabbit (Mahtigwess)', glossing the name as Abenaki/Wabanaki 'rabbit'." }]
+  },
+  "wabanaki_tabaldak": {
+    "languageFamily": "Algic (Algonquian; Eastern Algonquian, Abenaki)",
+    "etymology": "Tabaldak (also Dabaldak, Tobaldak), the Abenaki/Wabanaki supreme creator, an impersonal androgynous maker (identified with Gici Niwaskw, 'the Great Spirit'). The name is glossed 'the Owner' (i.e. owner/lord of all created things), from the Abenaki verb root for 'to own, possess, be master of'. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Native Languages of the Americas (Redish, Laura & Lewis, Orrin, eds.), 'Gici Niwaskw (Tabaldak), the Wabanaki Creator', glossing Tabaldak as 'the Owner'." }, { "kind": "book", "reference": "Leland, Charles Godfrey (1884). The Algonquin Legends of New England (the impersonal Wabanaki creator behind Glooskap), with the 'Owner/Great Spirit' creator-figure of southern Wabanaki tradition." }]
+  },
+  "wabosso": {
+    "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabe)",
+    "etymology": "Wabosso (Schoolcraft's romanized Wau-boozoo; later poeticized by Longfellow as Wabasso 'the White Rabbit ... of the North'), third of the four sons of the West Wind in the Anishinaabe Nanabozho cycle. The name is the Ojibwe word for 'rabbit', waabooz (specifically the snowshoe hare), reinforced by the initial /waab-/ 'white, bright, pale' (whence the 'white one of the north' association of the rabbit who turns white in winter). Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Schoolcraft, Henry Rowe (1839). Algic Researches, Comprising Inquiries Respecting the Mental Characteristics of the North American Indians, 2 vols. New York: Harper (the four sons of the West Wind; the rabbit-son Wau-boozoo)." }, { "kind": "dictionary", "reference": "The Ojibwe People's Dictionary (Nichols, John D., Linguistic Editor; Univ. of Minnesota), s.v. waabooz 'rabbit (snowshoe hare)' and initial /waab-/ 'white, bright, pale'." }]
+  },
+  "wei": {
+    "languageFamily": "Cariban (Pemón/Taurepang-Arekuna)",
+    "etymology": "Wei, the Pemón sun-deity, father of the Makunaima brothers by the mortal woman Aromadapuén. The theonym is simply the Pemón (Cariban) common noun wei 'sun, day' — the deity is the personified Sun, recorded as such by Koch-Grünberg from his Taurepang/Arekuna informants. Unwritten/Latin-script form.",
+    "sources": [{ "kind": "book", "reference": "Koch-Grünberg, Theodor (1924). Vom Roroima zum Orinoco, Bd. II: Mythen und Legenden der Taulipáng- und Arekuná-Indianer. Stuttgart: Strecker und Schröder (Wei the sun as father of Makunaima)." }, { "kind": "encyclopedia", "reference": "Wikipedia/standard Pemón-language references corroborating wei as the Pemón word for 'sun/day' (the lexical base of the solar deity's name); convergent with the Koch-Grünberg attestation of the Sun named Wei." }]
+  },
+  "welsh_efnisien": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Efnisien (Efnysien) fab Eurosswydd, the strife-provoking half-brother in the Second Branch (Branwen), twin/counterpart of the peaceable Nisien. The names form a deliberate antonymic pair: Efnisien is built on the Welsh adjective efnys 'hostile, unpeaceful, savage' (GPC s.v. efnys), the un-peaceful one, set against Nisien the peaceful — their names encoding the good/evil dyad of the tale.",
+    "sources": [{ "kind": "manuscript-text", "reference": "Pedeir Keinc y Mabinogi, Second Branch (Branwen uerch Lyr); ed. Ifor Williams, Pedeir Keinc y Mabinogi (Cardiff: Univ. of Wales Press, 1930), for the Nisien/Efnisien pair." }, { "kind": "journal-article", "reference": "Sayers, William / scholarship in Studia Celtica Posnaniensia ('Efnisien's Trickster Wiles: Meanings, Motives, and Mental Illness in the Second Branch of the Mabinogi', 2016), with the standard etymology Efnisien < efnys 'hostile/unpeaceful' opposed to Nisien 'peaceful'; cf. GPC (Geiriadur Prifysgol Cymru) s.v. efnys." }]
+  },
+  "welsh_gwern": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Gwern, the boy-king son of Branwen and Matholwch in the Second Branch, acclaimed king of Ireland and burned to death by his uncle Efnisien. The name is the Welsh common noun gwern 'alder, alder-tree' (collective; GPC s.v. gwern; < Proto-Celtic *werno- 'alder'), thematically linked to the alder symbolism around Bran (whose shield bears 'sprigs of alder', gwern) in the tale.",
+    "sources": [{ "kind": "manuscript-text", "reference": "Pedeir Keinc y Mabinogi, Second Branch (Branwen uerch Lyr); ed. Ifor Williams, Pedeir Keinc y Mabinogi (Cardiff, 1930) — Gwern son of Branwen and Matholwch." }, { "kind": "dictionary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. gwern 'alder, alder-tree' (< Proto-Celtic *werno-); the common noun underlying the personal name." }]
+  },
+  "welsh_hyfaidd_hir": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Hyfaidd Hir, 'Hyfaidd the Tall', a warrior named in the Mabinogi/Culhwch ac Olwen court-lists. The etymologically transparent element is the epithet Hir, the Welsh adjective hir 'long, tall' (GPC s.v. hir), a stock descriptive byname for tall heroes (cf. Hychddwn Hir); the personal name Hyfaidd itself is generally connected with Welsh hy- 'bold, daring' ('the bold one'). Unwritten in the sense of medieval-Welsh orthography.",
+    "sources": [{ "kind": "reference-work", "reference": "Bartrum, Peter C. (1993). A Welsh Classical Dictionary: People in History and Legend up to about A.D. 1000. Aberystwyth: National Library of Wales (entry on Hyfaidd Hir among the figures of the Mabinogi/Arthurian court-lists)." }, { "kind": "dictionary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. hir 'long, tall' (the epithet element); and hy- 'bold, daring' bearing on the name Hyfaidd." }]
+  },
+  "welsh_pwyll": {
+    "languageFamily": "Indo-European (Celtic; Brittonic, Middle Welsh)",
+    "etymology": "Pwyll Pendefig Dyfed ('Pwyll, prince of Dyfed'), protagonist of the First Branch. The name is the Welsh common noun pwyll 'sense, reason, wisdom, prudence, discretion, deliberation' (GPC s.v. pwyll; cognate with Old Irish cíall 'sense, reason'). The tale partly turns on his living up to the name — learning prudence over rashness.",
+    "sources": [{ "kind": "manuscript-text", "reference": "Pedeir Keinc y Mabinogi, First Branch (Pwyll Pendeuic Dyuet); ed. Ifor Williams, Pedeir Keinc y Mabinogi (Cardiff, 1930)." }, { "kind": "dictionary", "reference": "Geiriadur Prifysgol Cymru (GPC), s.v. pwyll 'sense, discretion, reason, prudence, wisdom, deliberation' (cognate OIr. cíall); the common noun identical with the prince's name." }]
+  },
+  "wiininwaa": {
+    "languageFamily": "Algic (Algonquian; Ojibwe/Anishinaabe)",
+    "etymology": "Wiininwaa, the mortal mother of Nanabozho and his brothers (by the West Wind), who dies in childbirth. Two sourced readings of the name exist: (1) the Anishinaabe traditional gloss 'Nourishment / nourished one' (associated with the Ojibwe stem wiin- pertaining to fat/richness/nourishment); (2) Schoolcraft's derivation of the name from Dakota/Siouan Winona 'first-born daughter'. Unwritten/Latin-script form; the etymology is contested between these named interpretations.",
+    "sources": [{ "kind": "book", "reference": "Schoolcraft, Henry Rowe (1839). Algic Researches, 2 vols. New York: Harper — records the mother of the Nanabozho brothers and connects the name to Dakota Winona ('first-born daughter')." }, { "kind": "book", "reference": "Coleman, Sister Bernard et al., Ojibwa Myths and Legends; and Anishinaabe oral tradition, giving the community gloss 'Nourishment/nourished one' for Wiininwaa (the alternative to Schoolcraft's Siouan derivation)." }]
+  },
+  "yakut_abaasy": {
+    "languageFamily": "Turkic (Siberian Turkic; Sakha/Yakut)",
+    "etymology": "Abaasy (Sakha абаасы / абааһы, abaası), the malevolent, iron-toothed spirits/demons of the Sakha lower world (Olonkho). The native lexeme abaası itself denotes 'evil spirit, devil, demon' in Yakut; it is generally taken as cognate with the wider Turkic word albasty (a malevolent spirit). Recorded in Cyrillic/Sakha orthography.",
+    "sources": [{ "kind": "dictionary", "reference": "Pekarsky, E. K. (1907–1930). Slovar' iakutskago iazyka (Dictionary of the Yakut Language), 3 vols. St Petersburg/Leningrad — s.v. абааһы (abaası) 'evil spirit, devil'." }, { "kind": "ethnography", "reference": "Sieroszewski, Wacław (1896). Yakuty: Opyt etnograficheskogo issledovaniya. St Petersburg — on the abaası as the malevolent lower-world spirits of Sakha belief; cf. the Olonkho 'Nurgun Bootur the Swift'. Turkic cognate albasty noted in comparative-Turkic mythology." }]
+  },
+  "yakut_ai_toyon": {
+    "languageFamily": "Turkic (Siberian Turkic; Sakha/Yakut)",
+    "etymology": "Ai Toyon (Sakha Айыы Тойон, Ayыы Toyon), the Yakut god of light, imaged as an eagle atop the world-tree. The name compounds aiyy (Sakha айыы, ayыы 'creation; creator-deity, benevolent celestial being' — a derivative of the verb ай-/ay- 'to create') + toyon ('lord, master, chief'): thus 'Creator-Lord' / 'Lord of the Aiyy'. Closely paired with (and in some accounts a by-name of) the supreme white god Ürüng Aiyy Toyon. Cyrillic/Sakha orthography.",
+    "sources": [{ "kind": "ethnography", "reference": "Sieroszewski, Wacław (1896). Yakuty (Yakuty: Opyt etnograficheskogo issledovaniya). St Petersburg — the sky-god hierarchy, with Aiyy/Ürüng-Aïy-Toyon as 'white' light-god (after Sieroszewski and Priklonski)." }, { "kind": "dictionary", "reference": "Pekarsky, E. K. (1907–1930). Slovar' iakutskago iazyka, s.v. айыы (ayыы) 'creation' (< ай- 'to create'; benevolent creator-spirit) and тойон (toyon) 'lord, master, chief'." }]
+  },
+  "yakut_uruung_aiyy_toyon": {
+    "languageFamily": "Turkic (Siberian Turkic; Sakha/Yakut)",
+    "etymology": "Ürüng Aiyy Toyon (Sakha Үрүҥ Айыы Тойон), the 'White Creator Lord', supreme head of the benevolent Aiyy of the upper world and personified sky/light. The name is a three-part compound: ürüŋ 'white' + aiyy 'creator-deity, creation' (< ay- 'to create') + toyon 'lord, master' — literally 'White Creator-Lord'. Originally the Yakut god of the sun, retained as the chief 'white' god after the northward migration. Cyrillic/Sakha orthography.",
+    "sources": [{ "kind": "ethnography", "reference": "Sieroszewski, Wacław (1896). Yakuty: Opyt etnograficheskogo issledovaniya. St Petersburg — Urun-Aïy-Toyon as the supreme 'white' god, father of light / former sun-god; cf. Olonkho 'Nurgun Bootur the Swift'." }, { "kind": "dictionary", "reference": "Pekarsky, E. K. (1907–1930). Slovar' iakutskago iazyka, s.v. үрүҥ (ürüŋ) 'white', айыы (ayыы) 'creation / creator-deity' (< ай- 'to create'), and тойон (toyon) 'lord, master' — the three morphemes of the name." }]
+  },
+  "yamana_watauinewa": {
+    "languageFamily": "Yámana (Yaghan) — language isolate, Tierra del Fuego",
+    "etymology": "Native form Watauinéiwa (also Watauinewa, Watauineiwa). Gusinde records that the Yámana did not interpret the name literally and avoided uttering it, addressing the supreme being instead by epithets, chiefly Hitápuan ('my Father') and circumlocutions meaning 'the One up there.' He is characterized as the eternal, unchanging owner of life ('The Most Ancient One' / 'He Who Does Not Change'); these are descriptive titles of his eternity rather than a transparent morphological gloss of the name Watauinéiwa, which Gusinde reports as semantically opaque to the Yámana themselves.",
+    "sources": [{ "kind": "monograph", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana — Vom Leben und Denken der Wassernomaden am Kap Hoorn. Mödling bei Wien: Anthropos, 1937 (fieldwork 1918-1924)." }, { "kind": "translation", "reference": "Gusinde, Martin (trans. F. Schütze). The Yamana: The Life and Thought of the Water Nomads of Cape Horn. HRAF, 1961 [Eng. ed. of Bd. II]." }]
+  },
+  "yapese_taliw": {
+    "languageFamily": "Austronesian (Oceanic) — Yapese, Micronesia",
+    "etymology": "Native terms kan 'spirit, god' and taliw (talíu) 'sacred', the latter denoting the shrines and groves where the kan are worshipped. Müller (1917) glosses talíu as 'sacred' and reports that the name attaches to two kinds of consecrated place — burial grounds and the groves in which the communal (national) kan receive cult — so the deity-class label derives from taliw 'sacred (place/shrine)' by metonymy from the cult site to its resident spirits.",
+    "sources": [{ "kind": "monograph", "reference": "Müller, Wilhelm. Yap. Ergebnisse der Südsee-Expedition 1908-1910, II.B, Bd. 2. Hamburg: Friederichsen, 1917 (taliw/talíu 'sacred'; kan 'spirit/god')." }, { "kind": "monograph", "reference": "Lingenfelter, Sherwood G. Yap: Political Leadership and Culture Change in an Island Society. Honolulu: University of Hawaii Press, 1975." }]
+  },
+  "zapotec_cocijo": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "Colonial Valley Zapotec cocijo (also cociyo, Cordova's <cocijo>) is the common noun 'lightning' (and by extension thunderstorm / the rains), used both for the meteorological phenomenon and for its divine personification. The rain-and-lightning deity therefore bears the ordinary word for 'lightning' as his name. Attested in Cordova's 1578 Vocabulario and discussed as such in the Monte Alban urn iconography literature.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca. Mexico: Pedro Charte y Antonio Ricardo, 1578 (cocijo = 'rayo, relampago')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization: How Urban Society Evolved in Mexico's Oaxaca Valley. London: Thames & Hudson, 1996." }, { "kind": "journal-article", "reference": "Sellen, Adam T. 'Storm-God Impersonators from Ancient Oaxaca.' Ancient Mesoamerica 13 (2002): 3-19 (cocijo 'lightning')." }]
+  },
+  "zapotec_coqui_xee": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "Compound of coqui 'lord' (the Zapotec royal/divine title) + the element pèe ~ pi ~ pij ~ piye ~ xee, a root cluster meaning 'wind, breath' and, by extension, 'vital spirit, the living animating force' (Cordova derives pij/pije/piyèe/pèe from a verb 'to whirl/turn,' hence 'that which whirls' = wind > breath > spirit). The supreme uncreated deity is thus named with difrasismo-like titles such as Coqui Xee / Pije-Tao ('Great Spirit / Great Wind' = the infinite, beginningless lord). coqui 'lord' is the same title used of human kings.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (coqui 'senor'; pij/pije/piyèe/pèe 'viento, espiritu')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996 (coqui as lordly/divine title)." }, { "kind": "monograph", "reference": "Lind, Michael. Ancient Zapotec Religion: An Ethnohistorical and Archaeological Perspective. Boulder: University Press of Colorado, 2015 (Pije-Tao/Coqui Xee, pèe 'wind/spirit')." }]
+  },
+  "zapotec_pitao_bezelao": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "The title-element pitao (Cordova <pitao>) means 'great spirit, god, deity' (the generic word for a major god, roughly equivalent to Nahuatl teotl), prefixed to deity names. Pitao Bezelao (Pezèlao, Coqui Bezelao) is the chief god of death and the underworld, patron of Mitla (Lyobaa); Cordova glosses the figure as 'el dios del infierno.' The element pitao 'god/great spirit' is securely attested; the proper element bezelao is not given a transparent native gloss in the colonial sources beyond the deity's identity, so only the pitao component is etymologized here.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (pitao 'dios'; Pezelao 'el dios del infierno')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996." }, { "kind": "monograph", "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Bezelao, Mitla)." }]
+  },
+  "zapotec_pitao_cozobi": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "pitao 'god, great spirit' (Cordova <pitao> 'dios') + cozobi, the element associated with maize and agricultural abundance — Pitao Cozobi being the maize/harvest god ('god of abundant sustenance'). pitao is the firmly attested generic 'god' title; the maize association of cozobi is recorded in the colonial and urn-iconographic literature (the deity appears emerging from maize), though a clean lexical gloss of cozobi itself is less securely transmitted than the pitao element.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (pitao 'dios')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996 (Pitao Cozobi, maize deity)." }, { "kind": "monograph", "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. Norman: University of Oklahoma Press, 1977." }]
+  },
+  "zapotec_xonaxi_quecuya": {
+    "languageFamily": "Oto-Manguean (Zapotecan) — Valley Zapotec, Oaxaca",
+    "etymology": "The title-element xonaxi (Cordova <xonàxi>) is the feminine honorific 'lady, queen', the female counterpart of coqui 'lord' — applied both to human queens (Cordova's composite titles Coquì xonàxi 'queen/princess') and to goddesses. Xonaxi Quecuya is the death-goddess of the underworld, consort of Pitao Bezelao and co-patron of Mitla (Lyobaa). The xonaxi 'lady/queen' element is securely attested; the proper element Quecuya lacks a transparent native gloss in the sources, so only the title-element is etymologized.",
+    "sources": [{ "kind": "colonial-dictionary", "reference": "Cordova, Juan de. Vocabulario en lengua çapoteca, 1578 (xonàxi 'senora, reina')." }, { "kind": "monograph", "reference": "Marcus, Joyce & Kent V. Flannery. Zapotec Civilization. Thames & Hudson, 1996 (coqui/xonaxi as lord/lady titles)." }, { "kind": "monograph", "reference": "Caso, Alfonso & Ignacio Bernal. Urnas de Oaxaca. Memorias del INAH II. Mexico: INAH, 1952 (Xonaxi Quecuya, Lyobaa)." }]
+  },
+  "zigue": {
+    "languageFamily": "Cariban — Pemón (Taurepang/Arekuna), Roraima/Gran Sabana",
+    "etymology": "Zigue (also Zige; Brazilianized Jigue in Mario de Andrade's Macunaima, 1928) is, per de Cora's recension of the Pemon Makunaima cycle, the name meaning 'chigger' — the parasitic burrowing flea/mite (Tunga penetrans, the bicho-de-pe / nigua). He is the middle brother in the Pemon five-brother set, between Maanape and Makunaima, the episode going back to Koch-Grunberg's recording from the narrator Mayuluaipu.",
+    "sources": [{ "kind": "monograph", "reference": "de Cora, Maria Manuela. Kuai-Mare: Mitos aborigenes de Venezuela. Caracas, 1957 (Zigue = 'chigger/nigua')." }, { "kind": "monograph", "reference": "Koch-Grunberg, Theodor. Vom Roraima zum Orinoco, Bd. II: Mythen und Legenden der Taulipang- und Arekuna-Indianer. Stuttgart: Strecker und Schroder, 1924 (recorded from Mayuluaipu)." }, { "kind": "monograph", "reference": "de Armellada, Cesareo. Tauron Panton: Cuentos y leyendas de los indios pemon. Caracas, 1973/1989." }]
+  },
+  "zoroastrian_kay_khosrow": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Kauui Haosrauuah, a bahuvrīhi compound meaning 'he who has good fame/glory': hu-/hao- 'good' (Proto-Iranian *hu-, Proto-Indo-European *h₁su-) + srauuah- 'fame, glory, renown' (Proto-Iranian *sravah-, Proto-Indo-European *ḱléwos), i.e. *Hu-sravah- 'of good fame'. Avestan kauui- (> Middle/New Persian kay) denotes a 'poet-priest, seer' and dynastically 'king'. The whole yields Middle Persian Kay Husrōy / New Persian Kay Ḵosrow.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'KAYĀNIĀN' series (esp. i. Kavi: Avestan kauui, Pahlavi kay; and the Haosrauuah entry)" }, { "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'PERSONAL NAMES, IRANIAN ii. AVESTAN NAMES' (Haosrauuah-, 'having good fame')" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.vv. haosrauuah-, hu-, srauuah-" }]
+  },
+  "zoroastrian_keresaspa": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Kərəsāspa-, a bahuvrīhi compound 'having lean/meager horses': kərəsa- 'lean, thin, meager' + aspa- 'horse' (Proto-Iranian *aspa-, Proto-Indo-Iranian *aćua-, Proto-Indo-European *h₁éḱwos). Mayrhofer compares Old Indic kṛśáśva- 'having lean horses', confirming the inherited Indo-Iranian formation. The name yields Middle Persian Kirsāsp / New Persian Garšāsp.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'KARSĀSP' (Avestan Kərəsāspa- 'he with meager horses', citing Mayrhofer 1977, p. I/60, cf. Old Indic kṛśáśva-)" }, { "kind": "dictionary", "reference": "M. Mayrhofer, Etymologisches Wörterbuch des Altindoarischen (EWAia) / Die altiranischen Namen (1977), I/60" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.vv. kərəsa-, aspa-" }]
+  },
+  "zoroastrian_rostam": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian (Middle Persian)",
+    "etymology": "Attested as Middle Persian Rōdastahm (Pahlavi *Rōdastahm); the underlying form and sense are debated. The most widely cited derivation reconstructs *rautas-taxma- 'river-strong / whose course is like a river', from rautah- 'river, stream' + taxma- 'strong, brave, valiant' (cf. the common Iranian second element -taxma in heroic names). Mehrdad Bahar similarly proposed *Rauta-staxma- 'the descending river', linking Rostam to an old deity of the Helmand. No single etymon is established with certainty; only the Middle Persian form Rōdastahm is secure, and scholarship presents the analysis of its components as unsettled.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, articles on Rostam and 'PERSONAL NAMES, IRANIAN' (Middle Persian Rōdastahm; proposed *rautas-taxma- 'river-strong', etymology debated)" }, { "kind": "scholarship", "reference": "M. Bahar, proposing *Rauta-staxma- 'the river that descends' (reported in Iranica and Iranian onomastic scholarship)" }]
+  },
+  "zoroastrian_siyavash": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Siiāuuaršan- (Yašt 13.132), a bahuvrīhi compound 'having black/dark stallions': syāva- 'black, dark' (Proto-Iranian *syāva-, cf. Old Indic śyāvá- 'dark brown, black') + aršan- 'male, stallion' (cf. Old Indic ṛ́ṣan-). It is one of the Avestan kauui names ending in aršan 'male', and is held to have replaced an older parallel *Siiāuuāspa- 'having dark horses'. The form yields Middle Persian Syāwaxš / New Persian Siyāwaš.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'KAYĀNIĀN vi. Siiāuuaršan, Siyāwaxš, Siāvaš' (P. O. Skjærvø): 'the one with black stallions', syāva- + aršan-" }, { "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'PERSONAL NAMES, IRANIAN ii. AVESTAN NAMES', no. 282 Siiāuuaršan- 'Possessing dark stallions'" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.vv. syāva-, aršan-" }]
+  },
+  "zoroastrian_thraetaona": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Θraētaona- (son of Āθβiia), from Proto-Iranian *Θraitauna-, Proto-Indo-Iranian *Traitauna-, a derivative (with the augmentative/patronymic suffix -auna-) of *Trita- 'the third', the name of the figure reflected in Avestan Θrita- and Vedic Tritá-. The name is thus interpretable as 'the great (son) of Trita / the third', the dragon-slayer paralleling Vedic Tritá Āptya. Yields Middle Persian Frēdōn / New Persian Fereydun.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'FERĒDŪN' (Avestan Θraētaona < *Θraitauna-, derivative of *Trita- 'the third'; cf. Vedic Tritá Āptya, Avestan father Āθβiia ~ Vedic Āptya)" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.v. Θraētaona-" }]
+  },
+  "zoroastrian_yima": {
+    "languageFamily": "Indo-European > Indo-Iranian > Iranian > Avestan",
+    "etymology": "From Avestan Yima-, identical with the common noun meaning 'twin', preserved with the inherited internal vowel in the Old Avestan dual yə̄mā 'the twins' (later yima- from Proto-Iranian *yama-). Exactly cognate with Old Indic/Vedic Yamá- 'twin', both sons of a solar father (Avestan Vīuuaŋhant- ~ Vedic Vivásvant-). The figure (with epithet xšaēta- 'shining, radiant') yields Middle Persian Jam/Jamšēd, New Persian Jamšid.",
+    "sources": [{ "kind": "encyclopedia", "reference": "Encyclopaedia Iranica, 'JAMŠID' (Avestan Yima, Old Indic cognate Yama; common noun 'twin' attested in Old Avestan dual yə̄mā; epithet xšaēta)" }, { "kind": "dictionary", "reference": "M. Mayrhofer, Etymologisches Wörterbuch des Altindoarischen (EWAia), s.v. yamá- 'twin'" }, { "kind": "dictionary", "reference": "C. Bartholomae, Altiranisches Wörterbuch (1904), s.v. yima- / yə̄ma- 'twin'" }]
+  },
+  "zulu_umvelinqangi": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Benue-Congo > Bantu > Nguni (isiZulu/isiXhosa)",
+    "etymology": "Agentive/personal noun (class 1a, prefix u-) from the verb -vela 'to come forth, appear, come into being' + the stem -nqangi 'first, original, that which has priority'. The compound is glossed 'the First to Appear / the First to Come Forth / the First to Exist', hence 'the Creator'; used as a praise-name for the supreme being among isiZulu- and isiXhosa-speakers.",
+    "sources": [{ "kind": "dictionary", "reference": "Dictionary of South African English (DSAE), s.v. 'umvelinqangi': from -vela 'appear, come forth' + -nqangi (stem indicating priority/first), 'the First to Emerge / First to Exist, hence the Creator'" }]
+  },
+  "zulu_unkulunkulu": {
+    "languageFamily": "Niger-Congo > Atlantic-Congo > Benue-Congo > Bantu > Nguni (isiZulu)",
+    "etymology": "Personal noun (class 1a, prefix u-) nkulunkulu, a reduplication of the adjective stem -khulu 'great, big, old, senior', the reduplication intensifying the sense to 'the great-great one / the old-old one'. In pre-colonial usage it denoted the most senior ancestor (literally 'great-great-grandfather'), the first man and progenitor, only later equated with a creator/supreme being.",
+    "sources": [{ "kind": "dictionary", "reference": "Dictionary of South African English (DSAE), s.v. 'unkulunkulu': reduplication of -khulu 'great', 'the old, old one', the first ancestor" }, { "kind": "scholarship", "reference": "H. Callaway, The Religious System of the Amazulu (1868–1870), documenting unkulunkulu as the 'old-old one' / first ancestor" }]
+  },
+  "zuni_awonawilona": {
+    "languageFamily": "Language isolate (Zuni / Shiwi'ma)",
+    "etymology": "Zuni theonym glossed by Cushing as 'the Maker and Container of All' (commonly rendered 'All-Container'), the bisexual supreme life-giver who existed before all else and who made himself into the Sun. The translation 'Maker/Container of All' is the meaning attested by the recording ethnographer; the internal Zuni morphology is not segmented in the primary sources, so only the scholar-supplied gloss is asserted here.",
+    "sources": [{ "kind": "ethnography", "reference": "F. H. Cushing, Outlines of Zuñi Creation Myths (1896): Áwonawílona, 'the Maker and Container of All'" }, { "kind": "ethnography", "reference": "M. C. Stevenson, The Zuni Indians (BAE 23rd Annual Report, 1904)" }]
+  },
+  "zuni_malokyattsiki": {
+    "languageFamily": "Language isolate (Zuni / Shiwi'ma)",
+    "etymology": "Zuni Ma'l Oyattsik'i (also Ma'lokyattsik'i), glossed by the recording ethnographers as 'Salt Woman / Salt Mother', the deity embodied in the sacred Salt Lake whose flesh is the gathered salt. The first element corresponds to Zuni ma'le 'salt'; the gloss 'Salt Woman/Mother' is the meaning attested in the primary ethnography, while a full morpheme-by-morpheme segmentation is not given in the sources.",
+    "sources": [{ "kind": "ethnography", "reference": "M. C. Stevenson, The Zuni Indians (BAE 23rd Annual Report, 1904): Ma'l Oyattsik'i, 'Salt Woman/Mother'" }, { "kind": "ethnography", "reference": "F. H. Cushing, Zuni Folk Tales (1901)" }]
+  },
+  "zuni_yatokka": {
+    "languageFamily": "Language isolate (Zuni / Shiwi'ma)",
+    "etymology": "Zuni Yätokka Tä'chu 'Sun Father', the manifestation of Awonawilona. The first element is Zuni yätokä 'sun' (recorded as Yatoka/Yatokka in the ethnographies); tä'chu is 'father'. The whole is glossed 'Sun Father' by the recording ethnographers; thus both the native element yätokä 'sun' and the compound meaning are attested.",
+    "sources": [{ "kind": "ethnography", "reference": "F. H. Cushing, Outlines of Zuñi Creation Myths (1896): Awonawilona makes himself into the Sun Father, Yatoka" }, { "kind": "ethnography", "reference": "D./B. Tedlock, Zuni narrative scholarship: Yatokka Tacchu 'Sun Father'" }]
+  },
+  // ── Etymology supplement: Lusitanian theonyms (etymology already analysed in
+  //    each figure's notes; formalized here and cited to the standard corpus —
+  //    Prósper 2002, Olivares Pedreño e-Keltoi 6, d'Encarnação 1975) plus the
+  //    remaining well-documented Greek/Roman names (Beekes EDG, de Vaan EDL).
+  //    Honest "Pre-Greek / no secure etymology" where that is the scholarly state.
+  "lusitanian_arentia": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Arentia, the feminine counterpart of Arentius and, like him, generally derived from an Indo-European water-stem (the *ar- element widespread in Hispano-Celtic hydronymy), consistent with the watery character of many Lusitanian divine pairs. Known only from epigraphy; no fuller analysis is secured.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_arentius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Arentius (with the epithets Amrunaeco, Arantoniceo, Tanginiciaeco, Cronisensi). The theonym is usually traced to an Indo-European water-root (*ar-), the Arentius–Arentia pair forming a god-and-consort of the spring/stream type common in the Lusitanian-Vettonian zone; the name is known only from epigraphy.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_ataecina": {
+    "languageFamily": "Indo-European (Hispano-Celtic), contested",
+    "etymology": "Latin votive Ataecina / Ataegina. The native etymon is debated: the favoured analysis is Hispano-Celtic *attegina / *atte-genā 'the reborn one' (prefix ate- 'again' + the root *gen- 'to be born'), suiting her chthonic interpretatio as Proserpina in the Mérida defixio; a rival derivation links the name to a 'goat' word, matching the goat as her sacred animal.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, 'Celtic Gods of the Iberian Peninsula', e-Keltoi 6 (2005)" }, { "kind": "primary", "reference": "CIL II 462 (Mérida defixio)" }]
+  },
+  "lusitanian_bandua": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Bandua / Bandi / Bandue (Galaico-Lusitanian dative). Most often derived from the Indo-European root *bhendh- 'to bind', construing the god as binder and warden of the community; the geographic split (Bandue/Bandua north of the Douro, Bandi/Bande to the south) reflects dialectal variation.",
+    "sources": [{ "kind": "secondary", "reference": "J. C. Olivares Pedreño, Los dioses de la Hispania céltica (Madrid 2002)" }]
+  },
+  "lusitanian_bormanicus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Bormanico (dative). From the Celtic thermal-spring root *bormo- / *borvo- 'to boil, bubble' — the same element seen in Gaulish Borvo/Bormo and the Bormani — marking him as the god of the hot springs at Caldas de Vizela; cognate with Gaulish Borvo.",
+    "sources": [{ "kind": "secondary", "reference": "A. Tranoy, La Galice romaine (1981); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_crouga": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested in the Lamas de Moledo inscription (Crougeai, dative). Generally derived from the Celtic root *krouka- 'mound, cairn, heap of stones', linking the god to the sacred cairn; the related Crougin Toudadigoe in NW Hispania is a community deity. Some scholars doubt whether the form is a theonym at all.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (2002)" }]
+  },
+  "lusitanian_duberdicus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Duberdico. The traditional reading derives the name from the Celtic root *dubro- 'water' (cf. Gaulish dubron, Welsh dwfr), marking a water-numen; J. de Alarcão has instead proposed a connection with a fortress-name. The single inscription leaves the question open.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975)" }]
+  },
+  "lusitanian_endovelicus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Latin votive Endovellicus, the most-attested indigenous god of Roman Lusitania (São Miguel da Mota). Most often analysed as Hispano-Celtic *ande-wellicos, with the intensive prefix ande- 'very' on a base read either as *wel- 'good' ('the very good one') or as a 'dark/nether' element fitting his oracular-healing, partly chthonic cult; the etymon remains debated.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_iccona": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Iccona Loiminna (Cabeço das Fráguas). Reconstructed as *Ekwonā 'she of the horse', the Hispano-Celtic cognate of Gaulish Epona, from the Indo-European horse-word *ekwos; the epithet Loiminna is glossed 'shining'.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (2002)" }]
+  },
+  "lusitanian_laebo": {
+    "languageFamily": "Indo-European (Lusitanian), etymology unresolved",
+    "etymology": "Attested Laebo / Labbo (dative), at Cabeço das Fráguas and Plasencia. The etymology — and even the deity's number and gender — is unresolved; no secure derivation has been established, and the name is recorded honestly as opaque.",
+    "sources": [{ "kind": "secondary", "reference": "K. T. Witczak (1999); Palaeohispanica / Dialnet study (2021)" }]
+  },
+  "lusitanian_munidis": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Munidi / Munis. Usually derived from an Indo-European *men- / *mon- 'to project; hill', characterising a god of heights and high places; a rival derivation connects the name with Latin moneo 'to warn'. Known from central-Lusitanian dedications only.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975)" }]
+  },
+  "lusitanian_nabia": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Latin votive Nabia. From the Indo-European *nāu- / *nabh- 'water-course, stream', the element surviving in the hydronyms Navia, Neiva and Nabão; Olivares Pedreño suspects more than one goddess hides behind the name. The Fonte do Ídolo inscription binds her to Tongoe (TONGOE NABIAGOI).",
+    "sources": [{ "kind": "secondary", "reference": "A. Tranoy, La Galice romaine (1981); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_quangeius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Quangeio (dative). From the Indo-European *kuwon- 'dog' (Hispano-Celtic reflex *kwank- / kuno-); the hound-god's psychopomp/traveller characterisation is a scholarly inference from the canine root, not from any surviving myth or iconography.",
+    "sources": [{ "kind": "secondary", "reference": "J. d'Encarnação, Divindades indígenas sob o domínio romano em Portugal (1975); Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_reve": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Reve / Reo (dative). Two derivations compete: Prósper connects the name with the Indo-European *deiwo- complex, reading a sky / 'Jupiter-like' high god; others derive it from *Hreu- 'to flow', a water-god (note 'Reo Bormarico' beside Bormanicus). The Cabeço das Fráguas invocatio is the key attestation.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, Lenguas y religiones prerromanas del occidente de la Península Ibérica (Salamanca 2002)" }]
+  },
+  "lusitanian_runesocesius": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Runesocesius (Évora). The 'lord of the javelin' reading depends on segmenting the name as Runesus + Cesius, the latter from Celtic *gaiso- 'spear, javelin' (cf. gaesum); a single inscription, with no iconography or narrative.",
+    "sources": [{ "kind": "secondary", "reference": "J. M. Blázquez Martínez, Primitivas religiones ibéricas (Madrid 1983)" }]
+  },
+  "lusitanian_tongoenabiagus": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Tongoe Nabiagoi (Fonte do Ídolo, Braga), the name bound to that of Nabia. The first element is connected with the Indo-European *tong- 'to swear, declare' (cf. Latin tongēre, Old Irish tongu 'I swear'), giving an oath-god of the spring; the oath-function is an etymological inference.",
+    "sources": [{ "kind": "secondary", "reference": "A. Rodríguez Colmenero, study of the Fonte do Ídolo; Olivares Pedreño, e-Keltoi 6 (2005)" }]
+  },
+  "lusitanian_trebaruna": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Votive Trebaruna / Trebarune. Analysed as Celtic *trebo- 'house, dwelling' + *runā 'secret' or 'protectress' — the guardian of the home and community; generally taken as a goddess and paired with Reve.",
+    "sources": [{ "kind": "secondary", "reference": "J. Leite de Vasconcelos, Religiões da Lusitânia (Lisbon 1905)" }]
+  },
+  "lusitanian_trebopala": {
+    "languageFamily": "Indo-European (Hispano-Celtic / Lusitanian)",
+    "etymology": "Attested Trebopala (vocative, in the Cabeço das Fráguas invocatio). From Celtic *trebo- 'dwelling' + a second element *-pala, read either as 'protector' or as 'flat stone / sacred ground'; probably a goddess of the hearth and community.",
+    "sources": [{ "kind": "secondary", "reference": "B. M. Prósper, 'We give you this lamb, o Trebopala!', Palaeohispanica (2014); Lenguas y religiones prerromanas (2002)" }]
+  },
+  // ── Greek / Roman remainder ──
+  "greek_pelias": {
+    "languageFamily": "Ancient Greek (folk-etymology from πελιός)",
+    "etymology": "Greek Πελίας (Pelías). The ancients derived the name from πελιός / πελιδνός 'livid, blue-black', explaining it from the bruise (πελιόν) a mare's kick left on his face when he was exposed as an infant; modern scholarship treats this as a transparent folk-etymology built on the adjective πελιός.",
+    "sources": [{ "kind": "primary", "reference": "Apollodorus 1.9.8" }, { "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. πελιός" }]
+  },
+  "greek_sarpedon_cretan": {
+    "languageFamily": "Pre-Greek / Anatolian",
+    "etymology": "Greek Σαρπηδών (Sarpēdṓn). The suffix -ηδών is a characteristic Pre-Greek formant, and the name is widely connected with the Lycian onomastic sphere (cf. the Lycian Sarpedon), consistent with the figure's Anatolian associations. No Indo-European Greek etymology is secured.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the -ηδών suffix and Pre-Greek substrate" }]
+  },
+  "greek_sarpedon_lycian": {
+    "languageFamily": "Pre-Greek / Anatolian",
+    "etymology": "Greek Σαρπηδών (Sarpēdṓn), borne by the Lycian ally of Troy. The -ηδών suffix is a typical Pre-Greek formant and the name belongs to the Lycian–Anatolian onomastic sphere; no secure Indo-European Greek derivation exists.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the -ηδών suffix and Pre-Greek substrate" }]
+  },
+  "greek_tityus": {
+    "languageFamily": "Pre-Greek substrate",
+    "etymology": "Greek Τιτυός (Tityós), the earth-born giant punished in Tartarus. The reduplicated shape and the absence of a clear Indo-European base mark the name as Pre-Greek; no secure etymology has been established.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_zethus": {
+    "languageFamily": "Pre-Greek substrate",
+    "etymology": "Greek Ζῆθος (Zêthos), twin of Amphion and co-founder of Thebes. Ancient sources punningly linked the name with ζητέω 'to seek' (from Antiope's flight), but this is folk-etymology; the name is generally taken as Pre-Greek.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_calais": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek",
+    "etymology": "Greek Κάλαϊς (Kálais), twin of Zetes among the winged Boreads. The name has no secure Indo-European etymology; like much of the Boread–Thracian onomastic material it is best assigned to the Pre-Greek substrate, the ancient connection to their father's north-wind nature being thematic rather than linguistic.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "greek_zetes": {
+    "languageFamily": "Pre-Greek substrate / Ancient Greek",
+    "etymology": "Greek Ζήτης (Zḗtēs), twin of Calais. Ancient folk-etymology connected the name with ζητέω 'to seek/pursue', fitting the Boreads' pursuit of the Harpies, but this is not a secure derivation; the name is generally assigned, with Calais, to the Pre-Greek substrate.",
+    "sources": [{ "kind": "secondary", "reference": "Beekes, Etymological Dictionary of Greek (2010), on the Pre-Greek substrate" }]
+  },
+  "roman_remus": {
+    "languageFamily": "Indo-European (Italic, Latin)",
+    "etymology": "Latin Remus. The name is bound to that of Rōma / Rōmulus: most analyses derive both from a stem *Rōmo-, with Remus a secondary form beside the diminutive Rōmulus. Ancient etymologies linking Remus to a 'delay' root (cf. remorari) are folk-etymological; T. P. Wiseman reads the twin and his name as a relatively late elaboration of the foundation legend.",
+    "sources": [{ "kind": "secondary", "reference": "M. de Vaan, Etymological Dictionary of Latin (2008), s.v. Roma" }, { "kind": "secondary", "reference": "T. P. Wiseman, Remus: A Roman Myth (1995)" }]
+  },
+  "roman_modius_fabidius": {
+    "languageFamily": "Indo-European (Sabellic / Sabine)",
+    "etymology": "The name Modius Fabidius is Sabellic-Sabine in form; the sources present the founder of Cures through the Sabine origin-narrative rather than offering a linguistic derivation, and no secure etymology of the name has been established. It stands outside the well-analysed Latin onomastic stock.",
+    "sources": [{ "kind": "primary", "reference": "Dionysius of Halicarnassus, Roman Antiquities 2.48-49" }]
+  },
+  // ── Yoruba orisha (transparent compound theonyms; debated names framed
+  //    honestly — Idowu 1962, Abraham, Dictionary of Modern Yoruba 1958) ──
+  "obatala": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Ọbàtálá, the arch-divinity and sculptor of humankind. The name is transparently Ọba-ti-àlà 'king of the white cloth' (ọba 'king' + àlà 'white cloth'), matching his association with whiteness and purity; he is also titled Òrìṣà-nlá 'the great orisha'.",
+    "sources": [{ "kind": "secondary", "reference": "E. B. Idowu, Olódùmarè: God in Yoruba Belief (1962); R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "olokun": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Olókun, orisha of the deep sea. The name is olú/oní + okun 'owner/lord of the ocean' (okun 'sea'); the same formation underlies the Edo Olokun venerated at Benin.",
+    "sources": [{ "kind": "secondary", "reference": "R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "yemoja": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Yemọja, mother of waters and of the orisha. The name contracts Yèyé-ọmọ-ẹja 'mother whose children are fish' (yèyé 'mother' + ọmọ 'children' + ẹja 'fish'), originally the orisha of the Ògùn River.",
+    "sources": [{ "kind": "secondary", "reference": "E. B. Idowu, Olódùmarè: God in Yoruba Belief (1962); R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "ibeji": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Ìbejì, the sacred twins. The name is ìbí-èjì 'two births / born-two' (bí 'to give birth' + èjì 'two'), the Yoruba word for twins themselves, embodied in the ère ìbejì twin-figures.",
+    "sources": [{ "kind": "secondary", "reference": "R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "babalu_aye": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Babalúayé, the dreaded orisha of smallpox and healing (also called Ṣọ̀pọ̀ná). The name is a euphemistic praise-title, bàbá-olú-ayé 'father, lord of the world' (bàbá 'father' + olú 'lord' + ayé 'world'), used to avoid naming the feared deity directly.",
+    "sources": [{ "kind": "secondary", "reference": "E. B. Idowu, Olódùmarè: God in Yoruba Belief (1962)" }]
+  },
+  "oshun": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Ọ̀ṣun, orisha of love, fertility and sweet waters. The theonym is that of the Ọ̀ṣun River (which flows past Òṣogbo), goddess and river bearing the same name in the characteristic Yoruba river-deity pattern.",
+    "sources": [{ "kind": "secondary", "reference": "R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "oya": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Ọya, orisha of winds and storms and mistress of the dead. The name is that of the River Ọya — the Yoruba name of the Niger (Odò Ọya) — of which she is the deified personification.",
+    "sources": [{ "kind": "secondary", "reference": "R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "orunmila": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Ọ̀rúnmìlà, orisha of wisdom and the Ifá oracle (also called Ifá). The name is traditionally explained by the sentence-etymology Ọ̀run-mọ̀-ohun-tí-yóò-là 'Heaven knows who will be saved', a transparent praise-derivation.",
+    "sources": [{ "kind": "secondary", "reference": "E. B. Idowu, Olódùmarè: God in Yoruba Belief (1962); R. C. Abraham, Dictionary of Modern Yoruba (1958)" }]
+  },
+  "olodumare": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Olódùmarè, the supreme being. The etymology is debated: Idowu analyses it around odù 'the great/full one' with elements conveying permanence and supremacy while conceding no consensus. He is commonly paired with the by-name Olòrun 'owner of the sky' (olú + ọ̀run).",
+    "sources": [{ "kind": "secondary", "reference": "E. B. Idowu, Olódùmarè: God in Yoruba Belief (1962)" }]
+  },
+  "oduduwa": {
+    "languageFamily": "Niger-Congo (Volta-Niger, Yoruba)",
+    "etymology": "Yoruba Odùduwà, progenitor of the Yoruba and founder-king of Ilé-Ifẹ̀. The etymology is contested; Idowu offers odù-tí-ó-dá-ìwà 'the principal one who created existence', while others read a contraction involving odù 'great vessel'. No derivation commands consensus.",
+    "sources": [{ "kind": "secondary", "reference": "E. B. Idowu, Olódùmarè: God in Yoruba Belief (1962)" }]
+  },
+  // ── Buganda balubaale (transparent Luganda theonyms — Roscoe 1911) ──
+  "buganda_katonda": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Katonda, the supreme creator. From the verb -tonda 'to create' (oku-tonda) with the agentive prefix ka-: 'the Creator, the Maker', standing above the balubaale pantheon.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911); J. D. Murphy, Luganda-English Dictionary (1972)" }]
+  },
+  "buganda_ggulu": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Ggulu, sky-father of the Kintu cycle. The theonym is the common noun ggulu 'sky, heaven', personified as the celestial father of Nambi, Walumbe and Kayikuuzi.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911)" }]
+  },
+  "buganda_walumbe": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Walumbe, who brought death into the world. From olumbe 'death, fatal illness' with the personal prefix Wa-: 'the one of Death', i.e. Death personified — the son of Ggulu who followed Kintu to earth.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911)" }]
+  },
+  "buganda_musisi": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Musisi, lubaale of earthquakes. The theonym is the common noun musisi 'earthquake', personified as its lubaale and reckoned a forebear of Mukasa and Kibuka.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911)" }]
+  },
+  "buganda_kawumpuli": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Kawumpuli, lubaale of plague. The name is the common noun kawumpuli 'plague, pestilence' personified as the disease's lubaale.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911)" }]
+  },
+  "buganda_kintu": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Kintu, the first man and progenitor of the Baganda. The name is the noun kintu 'thing, created being' (ki- class): 'the (first) created being'.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911)" }]
+  },
+  "buganda_kibuka": {
+    "languageFamily": "Niger-Congo (Bantu, Luganda)",
+    "etymology": "Luganda Kibuka, the war lubaale. The name is connected with the verb -buuka 'to fly, leap', referring to his hovering in the air above the battlefield to rain arrows on the Banyoro; he was undone when he descended for a captured woman.",
+    "sources": [{ "kind": "secondary", "reference": "J. Roscoe, The Baganda (1911)" }]
+  },
   "greek_hesiod_zeus": {
     "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
     "etymology": "Greek Ζεύς (Zeús), genitive Διός (Diós), continues Proto-Indo-European *Dyēus (ph₂tḗr) \"Sky-Father / god of the bright daytime sky,\" from the root *dyew- \"to shine; sky, day.\" The same etymon yields Latin Iū-piter (< *Dyēu-pater), Vedic Sanskrit Dyaús (Pitā) and the common noun *deiwos \"god\" (Latin deus). The Greek nominative reflects *Dyēus > Zdeús > Zeús; the oblique stem Δι(ϝ)- preserves the original *diw-.",
@@ -248088,12 +251054,263 @@ const applyPowerScopes = (peopleMap) => {
   return peopleMap;
 };
 
-// Build + migrate seed data, then attach item holders and run the
-// content-integrity passes (term scrub + provenance inheritance) last,
-// finishing with the consolidation/QA pass over the whole map, and the
-// fill-only power scope-tag derivation as the final faculty pass.
-const seedPeople = applyPowerScopes(consolidateRegistry(inheritProvenance(scrubTerms(deriveAndMergeFaculties(mergeDomainTerms(populateCustodyHolders(
-  mergeGeneratedItems(mergeMaterialCulture(migrate(applyEpithets(applyCult(applyIconography(applyOfferings(applyPriesthoods(applyCultSites(applyEtymology(applyIconography(applyCult(applyEpithets(applyEnrichments(applyEnrichments(applyEnrichments(applyCorrections(addNewFigures(buildPeopleSeed()))), CROSS_ENRICHMENTS), VERIFY_ENRICHMENTS)))))))), ICONOGRAPHY_X), CULT_PRACTICES_X), EPITHETS_X)))))))))));
+// ═════════════════════════════════════════════════════════════════════════════
+//  DOMAIN_SUPPLEMENT — backfill the sphere-of-influence tag for the deity/demigod
+//  figures the breadth waves left without one. Each sphere is the figure's own
+//  attested role, cited to the figure's own primary/ethnographic sources (the
+//  same convention every other domain follows: a descriptive slug + optional
+//  native term + sources[]). Additive, merged by id, deduped by sphereId, run
+//  pre-migrate. No coinage, no invented attestation — only what the notes already
+//  carry, tagged. Closes the last 36 deity/demigod domain gaps.
+// ═════════════════════════════════════════════════════════════════════════════
+const DOMAIN_SUPPLEMENT = {
+  // ── Greek heroic-age demigods ───────────────────────────────────────────────
+  'greek_iphigenia_helen_variant': [
+    { sphereId: 'sacrificial-victim-at-aulis', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Cypria fragments (via Proclus, Chrestomathia); Apollodorus Epitome 3.21-22' }] },
+  ],
+  'greek_arcas': [
+    { sphereId: 'eponymous-founder-of-arcadia', contextTag: 'lifelong', term: { value: 'Ἀρκάς', script: 'Greek', rom: 'Arkás' }, sources: [{ kind: 'primary', reference: 'Pausanias 8.4.1-3; Apollodorus 3.9.1' }] },
+    { sphereId: 'civilizing-arts-agriculture-weaving-bread', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Pausanias 8.4.1' }] },
+    { sphereId: 'catasterism-as-bootes', contextTag: 'post-mortem', term: { value: 'Ἀρκτοφύλαξ', script: 'Greek', rom: 'Arktophýlax' }, sources: [{ kind: 'primary', reference: 'Hyginus Astronomica 2.4; Eratosthenes Catasterismi 8' }] },
+  ],
+  'greek_hyacinthus': [
+    { sphereId: 'dying-and-reborn-vegetation-youth', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Pausanias 3.19.3-5; Apollodorus 1.3.3' }] },
+    { sphereId: 'eponym-of-the-hyacinthia', contextTag: 'festival', term: { value: 'Ὑακίνθια', script: 'Greek', rom: 'Hyakínthia' }, sources: [{ kind: 'primary', reference: 'Pausanias 3.1.3; Athenaeus 4.139d-f' }] },
+  ],
+  'greek_ion_athens': [
+    { sphereId: 'eponymous-ancestor-of-the-ionians', contextTag: 'lifelong', term: { value: 'Ἴωνες', script: 'Greek', rom: 'Íōnes' }, sources: [{ kind: 'primary', reference: 'Euripides Ion; Herodotus 7.94' }] },
+    { sphereId: 'founder-of-the-four-ionian-tribes', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Euripides Ion; Pausanias 7.1.2-4; Strabo 8.7.1' }] },
+  ],
+  'greek_hippolyta': [
+    { sphereId: 'amazon-queenship', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.9; Diodorus 4.16' }] },
+    { sphereId: 'war-belt-of-ares', contextTag: 'lifelong', term: { value: 'ζωστὴρ Ἄρεος', script: 'Greek', rom: 'zōstḕr Áreos' }, sources: [{ kind: 'primary', reference: 'Apollodorus 2.5.9' }] },
+  ],
+  'greek_penthesilea': [
+    { sphereId: 'amazon-queenship', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollodorus Epitome 5.1; Quintus Smyrnaeus Posthomerica 1' }] },
+    { sphereId: 'aristeia-and-death-at-troy', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Aethiopis (via Proclus, Chrestomathia); Quintus Smyrnaeus Posthomerica 1' }] },
+  ],
+  'greek_calais': [
+    { sphereId: 'winged-flight', contextTag: 'lifelong', term: { value: 'πτερωτός', script: 'Greek', rom: 'pterōtós' }, sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 1.211-223; Apollodorus 1.9.21' }] },
+    { sphereId: 'pursuit-of-the-harpies', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 2.234-300' }] },
+  ],
+  'greek_zetes': [
+    { sphereId: 'winged-flight', contextTag: 'lifelong', term: { value: 'πτερωτός', script: 'Greek', rom: 'pterōtós' }, sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 1.211-223; Apollodorus 1.9.21' }] },
+    { sphereId: 'pursuit-of-the-harpies', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Apollonius Argonautica 2.234-300' }] },
+  ],
+  'greek_cleopatra_boread': [
+    { sphereId: 'tragic-paradigm-of-unjust-suffering', contextTag: 'narrative-position', sources: [{ kind: 'primary', reference: 'Sophocles Antigone 966-987; Apollodorus 3.15.3' }] },
+  ],
+  'greek_ceyx': [
+    { sphereId: 'kingship-of-trachis', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollodorus 1.7.4; Sophocles Trachiniae' }] },
+    { sphereId: 'halcyon-metamorphosis', contextTag: 'post-mortem', term: { value: 'ἀλκυονίδες ἡμέραι', script: 'Greek', rom: 'alkyonídes hēmérai' }, sources: [{ kind: 'primary', reference: 'Ovid Metamorphoses 11.410-748' }] },
+  ],
+  'greek_pirithous': [
+    { sphereId: 'kingship-of-the-lapiths', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Homer Iliad 1.262-272; Apollodorus Epitome 1.21' }] },
+    { sphereId: 'failed-descent-to-the-underworld', contextTag: 'final-phase', sources: [{ kind: 'primary', reference: 'Apollodorus Epitome 1.23-24; Plutarch Theseus 31, 35' }] },
+  ],
+  // ── Norse ─────────────────────────────────────────────────────────────────────
+  'norse_sigi': [
+    { sphereId: 'founder-of-the-volsung-line', contextTag: 'lineage-foundation', term: { value: 'Vǫlsungar', script: 'Old Norse', rom: 'Volsungar' }, sources: [{ kind: 'primary', reference: 'Vǫlsunga saga ch. 1-2' }] },
+  ],
+  // ── Irish ───────────────────────────────────────────────────────────────────
+  'irish_be_find': [
+    { sphereId: 'tuatha-de-danann-otherworld-maternity', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Táin Bó Fraích §§1-3; Lebor Gabála Érenn' }] },
+  ],
+  'irish_fraech': [
+    { sphereId: 'martial-beauty', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Táin Bó Fraích (Old Irish, 8th-9th c.)' }] },
+    { sphereId: 'otherworld-endowed-hero', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Táin Bó Fraích; Táin Bó Cúailnge (death-at-the-ford)' }] },
+  ],
+  // ── Japanese ──────────────────────────────────────────────────────────────────
+  'japanese_yoshiie': [
+    { sphereId: 'minamoto-tutelary-ancestral-kami', contextTag: 'post-mortem', term: { value: '八幡太郎', script: 'Japanese', rom: 'Hachimantarō' }, sources: [{ kind: 'secondary', reference: 'Heike Monogatari book 11; Mutsu Waki (c. 1062)' }] },
+    { sphereId: 'martial-valor-of-the-minamoto', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Ōshū Gosannenki; Mutsu Waki' }] },
+  ],
+  // ── Manipuri (Meitei) ─────────────────────────────────────────────────────────
+  'manipuri_chothe_thangwai_pakhangba': [
+    { sphereId: 'serpent-divinity-of-moirang', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Chothe Thangwai Pakhangba puya; Cheitharol Kumbaba' }] },
+  ],
+  // ── Suludnon (Hinilawod / Sugidanon epic, Panay) ─────────────────────────────
+  'suludnon_alunsina': [
+    { sphereId: 'goddess-of-the-eastern-sky', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod / Sugidanon epic; F. Landa Jocano' }] },
+    { sphereId: 'divine-mother-of-the-hinilawod-triplets', contextTag: 'genealogical', sources: [{ kind: 'secondary', reference: 'Hinilawod epic (F. Landa Jocano transcription)' }] },
+  ],
+  'suludnon_labaw_donggon': [
+    { sphereId: 'martial-bridal-quest-hero', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod epic, Labaw Donggon cycle (Jocano)' }] },
+  ],
+  'suludnon_humadapnon': [
+    { sphereId: 'voyaging-revenge-quest-hero', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod epic, Humadapnon cycle (Jocano)' }] },
+  ],
+  'suludnon_dumalapdap': [
+    { sphereId: 'monster-slaying-bridal-quest-hero', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Hinilawod epic, Dumalapdap cycle (Jocano)' }] },
+  ],
+  // ── Bicolano (Ibalong epic) ──────────────────────────────────────────────────
+  'bicolano_oryol': [
+    { sphereId: 'serpent-shapeshifting-enchantress', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Ibalong epic (Castaño, Breve Noticia 1895; L. G. Dato 1965)' }] },
+  ],
+  'bicolano_magindara': [
+    { sphereId: 'mermaid-of-storm-and-calm', contextTag: 'lifelong', sources: [{ kind: 'secondary', reference: 'Bicolano oral tradition (Ibalong cycle); NCCA folklore archives' }] },
+  ],
+  // ── Ifugao ────────────────────────────────────────────────────────────────────
+  'ifugao_dumagid': [
+    { sphereId: 'skyworld-culture-teacher', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Barton, Mythology of the Ifugaos (1946); Beyer 1913' }] },
+  ],
+  'ifugao_ovug': [
+    { sphereId: 'thunder-and-lightning', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Beyer, Origin Myths of the Mountain Peoples (1913); Barton, The Religion of the Ifugaos' }] },
+  ],
+  // ── Tinguian (Itneg) ──────────────────────────────────────────────────────────
+  'tinguian_gagayoma': [
+    { sphereId: 'star-goddess', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Cole, Traditions of the Tinguian (1915), pp. 65-77' }] },
+    { sphereId: 'commander-of-the-stars', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Cole, Traditions of the Tinguian (1915)' }] },
+  ],
+  'tinguian_takyayen': [
+    { sphereId: 'finger-born-demigod', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Cole, Traditions of the Tinguian (1915), pp. 65-77' }] },
+  ],
+  // ── Ambundu (Mbundu, Angola) ─────────────────────────────────────────────────
+  'ambundu_sun_moon_daughter': [
+    { sphereId: 'daughter-of-sun-and-moon', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+    { sphereId: 'divine-mother-of-the-thunder-twins', contextTag: 'genealogical', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+  ],
+  'ambundu_sudika_mbambi': [
+    { sphereId: 'thunder-of-the-eastern-sky', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu (1933)' }] },
+    { sphereId: 'wonder-child-warrior', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+  ],
+  'ambundu_kabundungulu': [
+    { sphereId: 'thunder-echo-of-the-western-sky', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894); Werner 1933' }] },
+    { sphereId: 'reviver-of-the-slain-twin', contextTag: 'narrative-position', sources: [{ kind: 'ethnography', reference: 'Chatelain, Folk-Tales of Angola (1894)' }] },
+  ],
+  // ── Shilluk ───────────────────────────────────────────────────────────────────
+  'shilluk_nyikang': [
+    { sphereId: 'founder-of-the-shilluk-kingdom', contextTag: 'lineage-foundation', term: { value: 'Nyikango', script: 'Shilluk', rom: 'Nyikango' }, sources: [{ kind: 'ethnography', reference: 'Hofmayr, Die Schilluk (1925); Seligman 1911' }] },
+    { sphereId: 'rain-mastery-and-royal-possession', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Hofmayr, Die Schilluk (1925); Frazer, The Golden Bough (1916)' }] },
+  ],
+  'shilluk_duwat': [
+    { sphereId: 'rival-twin-and-southern-kingship', contextTag: 'lifelong', sources: [{ kind: 'ethnography', reference: 'Hofmayr, Die Schilluk (1925); Diedrich 1912' }] },
+  ],
+  // ── Banyaruanda (Rwanda) ─────────────────────────────────────────────────────
+  'banyaruanda_ryangombe': [
+    { sphereId: 'founder-of-the-kubandwa-possession-cult', contextTag: 'lifelong', term: { value: 'kubandwa', script: 'Kinyarwanda', rom: 'kubandwa' }, sources: [{ kind: 'ethnography', reference: 'Werner, Myths and Legends of the Bantu (1933); Maquet' }] },
+  ],
+  // ── Macuxi / Kapon (Guiana Highlands, Carib) ─────────────────────────────────
+  'macuxi_insikiran': [
+    { sphereId: 'cosmological-lineage-founder', contextTag: 'cosmogonic', sources: [{ kind: 'ethnography', reference: 'Koch-Grünberg, Vom Roraima zum Orinoco vol. II (1924)' }] },
+  ],
+  'kapon_makonaima': [
+    { sphereId: 'creator-and-founder-of-the-piaiman-tradition', contextTag: 'cosmogonic', sources: [{ kind: 'ethnography', reference: 'Brett, Legends and Myths of British Guiana (1880); Butt Colson 1971' }] },
+    { sphereId: 'fire-flood-and-tree-of-life', contextTag: 'cosmogonic', sources: [{ kind: 'ethnography', reference: 'Brett 1880; Im Thurn, Among the Indians of Guiana (1883)' }] },
+  ],
+  // ── Buganda ───────────────────────────────────────────────────────────────────
+  'buganda_wanema': [
+    { sphereId: 'ssese-islands-lubaale', contextTag: 'lifelong', term: { value: 'lubaale', script: 'Luganda', rom: 'lubaale' }, sources: [{ kind: 'ethnography', reference: 'Roscoe, The Baganda (1911)' }] },
+    { sphereId: 'progenitor-of-the-balubaale', contextTag: 'genealogical', sources: [{ kind: 'ethnography', reference: 'Roscoe, The Baganda (1911); Kaggwa (1934 tr.)' }] },
+  ],
+  // ── Hurrian-Hittite (Kingship in Heaven cycle) ───────────────────────────────
+  'hurrian_alalu': [
+    { sphereId: 'primordial-kingship-of-heaven', contextTag: 'cosmogonic', sources: [{ kind: 'primary', reference: 'Song of Kumarbi / Kingship in Heaven (CTH 344); Hoffner, Hittite Myths (1998)' }] },
+  ],
+};
+
+// Merge DOMAIN_SUPPLEMENT onto figures by id (additive, dedupe by sphereId).
+const applyDomainSupplement = makeListApplier({ label: 'domain', defaultMap: DOMAIN_SUPPLEMENT, getList: topList('domains'), field: 'sphereId' });
+
+// ═════════════════════════════════════════════════════════════════════════════
+//  FACULTY_SUPPLEMENT — author the active powers for the deity/demigod figures
+//  whose narrated supernatural deeds support them but which the waves left with
+//  an empty Powers section. Scope is deliberately narrow: ONLY figures with a
+//  specific attested deed/ability (an avatar's cosmogonic act, a transformation,
+//  a signature divine implement). Figures that are purely inscriptional
+//  (Lusitanian/Cantabrian/Celtiberian theonyms), purely genealogical, or marked
+//  "no faculties asserted" are left empty on purpose — inventing deeds there
+//  would be fabrication. Each faculty is a verb-phrase grounded in the figure's
+//  own sources, native term only where securely transcribed. Merged pre-migrate,
+//  deduped by id.
+// ═════════════════════════════════════════════════════════════════════════════
+const FACULTY_SUPPLEMENT = {
+  'hindu_vishnu_narasimha': [
+    { id: 'narasimha-disembowel-threshold-tyrant', name: 'Disembowel the boon-proof tyrant on the threshold', term: { value: 'नृसिंह', script: 'Sanskrit', rom: 'Narasiṃha' }, notes: 'Bursts from the pillar at twilight — neither man nor beast, neither in nor out, by no weapon — to tear open Hiraṇyakaśipu and satisfy every clause of his boon.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Bhāgavata Purāṇa 7.8' }], ability: true },
+  ],
+  'hindu_vishnu_varaha': [
+    { id: 'varaha-raise-earth-on-tusks', name: 'Raise the drowned earth from the cosmic ocean on his tusks', term: { value: 'वराह', script: 'Sanskrit', rom: 'Varāha' }, notes: 'Dives as the boar into the cosmic waters to lift the earth-goddess Bhūmi and re-found the world at the start of the kalpa.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Bhāgavata Purāṇa 3.13-3.19' }], ability: true },
+    { id: 'varaha-slay-hiranyaksha', name: 'Slay the daitya Hiraṇyākṣa', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Bhāgavata Purāṇa 3.17-3.19' }], ability: true },
+  ],
+  'welsh_blodeuwedd': [
+    { id: 'blodeuwedd-conjured-from-flowers', name: 'Be conjured into a woman from oak, broom, and meadowsweet', term: { value: 'Blodeuwedd', script: 'Welsh', rom: 'Blodeuwedd' }, notes: 'Made by Math and Gwydion from the flowers of three plants to be a wife for Lleu.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pedair Cainc y Mabinogi, Fourth Branch (Math)' }], ability: true },
+    { id: 'blodeuwedd-owl-transformation', name: 'Be transformed into an owl, shunned by all other birds', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pedair Cainc y Mabinogi, Fourth Branch (Math)' }], ability: true },
+  ],
+  'welsh_amaethon': [
+    { id: 'amaethon-divine-ploughman', name: 'Plough and master the tilled earth', notes: 'The divine ploughman of the Children of Dôn.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Culhwch ac Olwen' }], ability: true },
+    { id: 'amaethon-win-beasts-of-annwn', name: 'Win the beasts of Annwn, occasioning the Cad Goddeu', notes: 'His theft from the Otherworld provokes the Battle of the Trees.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Cad Goddeu (Llyfr Taliesin)' }], ability: true },
+  ],
+  'greek_hesiod_erinyes': [
+    { id: 'erinyes-pursue-kin-slayer', name: 'Pursue and madden the kin-slayer and oath-breaker', notes: 'Chthonic avengers of blood-guilt who hound Orestes to madness across Greece.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Aeschylus Eumenides; Hesiod Theogony 183-187' }], ability: true },
+  ],
+  'chinese_sanshengmu': [
+    { id: 'sanshengmu-magic-lotus-lantern', name: 'Wield the magic lotus lantern', term: { value: '寶蓮燈', script: 'Chinese', rom: 'bǎo lián dēng' }, notes: 'Her divine treasure, the lamp of the Magic Lotus Lantern cycle.', inheritability: 'none', sources: [{ kind: 'secondary', reference: 'Bao Lian Deng (Magic Lotus Lantern) folk-cycle' }], ability: true },
+  ],
+  'greek_hesiod_hebe': [
+    { id: 'hebe-bestow-youth', name: 'Bestow and restore youthful prime', term: { value: 'ἥβη', script: 'Greek', rom: 'hḗbē' }, notes: 'Goddess of youth and cupbearer of the gods before Ganymede, pouring their nectar.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Hesiod Theogony 921-922, 950-955' }], ability: true },
+  ],
+  'greek_hesiod_tyche': [
+    { id: 'tyche-turn-of-fortune', name: 'Raise and cast down mortals by the turn of fortune', term: { value: 'τύχη', script: 'Greek', rom: 'týchē' }, notes: 'Goddess of fortune and chance; by the Hellenistic age the city-fortune with rudder and cornucopia.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pindar Olympian 12.1-2; Hesiod Theogony 360' }], ability: true },
+  ],
+  'greek_hesiod_calliope': [
+    { id: 'calliope-inspire-epic-song', name: 'Inspire epic song', notes: 'Eldest of the Muses and patron of epic poetry; mother of Orpheus.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Hesiod Theogony 75-80; Apollonius Rhodius Argonautica 1.23-25' }], ability: true },
+  ],
+  'greek_hesiod_clio': [
+    { id: 'clio-inspire-record-of-glory', name: 'Inspire the record of glory and history', notes: 'Muse of history; keeper of kleos, the fame of deeds.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Hesiod Theogony 76-79; Diodorus 4.7' }], ability: true },
+  ],
+  'irish_nuada': [
+    { id: 'nuada-silver-arm', name: 'Bear the silver arm that restored his kingship', term: { value: 'Airgetlám', script: 'Irish', rom: 'Airgetlám' }, notes: 'Lost the kingship with his hand at Mag Tuired and regained it when Dian Cécht wrought him a working arm of silver.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Cath Maige Tuired; Lebor Gabála Érenn' }], ability: true },
+  ],
+  'hindu_sugriva': [
+    { id: 'sugriva-command-vanara-host', name: 'Command the vanara host of Kishkindha', notes: 'Vanara king, son of Sūrya, who marshals the monkey armies that search for Sītā and storm Laṅkā.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Valmiki Ramayana, Kishkindha Kanda' }], ability: true },
+  ],
+  'greek_arcas': [
+    { id: 'arcas-teach-civilizing-arts', name: 'Teach the arts of agriculture, weaving, and breadmaking', notes: 'The culture-hero who taught the Arcadians to sow grain, spin wool, and bake bread.', inheritability: 'none', sources: [{ kind: 'primary', reference: 'Pausanias 8.4.1' }], ability: true },
+  ],
+};
+
+// Merge FACULTY_SUPPLEMENT onto figures by id (additive, dedupe by faculty id).
+const applyFacultySupplement = makeListApplier({ label: 'faculty', defaultMap: FACULTY_SUPPLEMENT, getList: topList('faculties'), field: 'id', norm: (v) => v });
+
+// The seed is assembled by threading buildPeopleSeed() through an ordered list
+// of transforms: figure injection → enrichment overlays → migration/QA →
+// item-and-term merges → content-integrity passes (term scrub + provenance
+// inheritance) → final consolidation/QA over the whole map. Order is
+// significant (later overlays and the integrity passes assume earlier ones ran).
+// Each step is `(peopleMap) => peopleMap`; reduce applies them left-to-right.
+// Steps are written one-arg so the default by-id map (ENRICHMENTS, EPITHETS, …)
+// applies; the `(m) => fn(m, MAP)` wrappers are the overlays that run a second
+// pass against a different map (CROSS_/VERIFY_ENRICHMENTS, the *_X overlays).
+const SEED_PIPELINE = [
+  addNewFigures,                                  // NEW_FIGURES
+  applyDomainSupplement,                          // DOMAIN_SUPPLEMENT
+  applyFacultySupplement,                         // FACULTY_SUPPLEMENT
+  applyCorrections,                               // CORRECTIONS
+  applyEnrichments,                               // ENRICHMENTS
+  (m) => applyEnrichments(m, CROSS_ENRICHMENTS),
+  (m) => applyEnrichments(m, VERIFY_ENRICHMENTS),
+  applyEpithets,                                  // EPITHETS
+  applyCult,                                      // CULT_PRACTICES
+  applyIconography,                               // ICONOGRAPHY
+  applyEtymology,                                 // ETYMOLOGY
+  applyCultSites,                                 // CULT_SITES
+  applyPriesthoods,                               // PRIESTHOODS
+  applyOfferings,                                 // OFFERINGS
+  (m) => applyIconography(m, ICONOGRAPHY_X),
+  (m) => applyCult(m, CULT_PRACTICES_X),
+  (m) => applyEpithets(m, EPITHETS_X),
+  migrate,
+  mergeMaterialCulture,
+  mergeGeneratedItems,
+  populateCustodyHolders,
+  mergeDomainTerms,
+  deriveAndMergeFaculties,
+  scrubTerms,                                     // content-integrity pass
+  inheritProvenance,                              // content-integrity pass
+  consolidateRegistry,                            // final consolidation/QA
+  applyPowerScopes,                               // fill-only power scope-tag derivation (final pass)
+];
+const seedPeople = SEED_PIPELINE.reduce((m, step) => step(m), buildPeopleSeed());
 const seedAtlas  = buildTerritorySeed();
 
 // Final-map integrity pass. migrate's detectors ran BEFORE the item/term
