@@ -257810,85 +257810,11 @@ function figureActiveAt(entry, year) {
   if (end < start) return false;
   return year >= start && year <= end;
 }
-function Graph({
-  people,
-  byId,
-  focusId,
-  setFocusId,
-  onOpenDetail
-}) {
-  const [mode, setMode] = __gState('cross-tradition');
-  const [hoverNode, setHoverNode] = __gState(null); // id
-  const [hoverPos, setHoverPos] = __gState(null); // {x, y} for info chip
-  const [hoverEdge, setHoverEdge] = __gState(null); // { kind, family, x, y, a, b }
-  const [pathMode, setPathMode] = __gState(false);
-  const [pathStart, setPathStart] = __gState(null);
-  const [pathEnd, setPathEnd] = __gState(null);
-  const [hiddenFamilies, setHiddenFamilies] = __gState(() => new Set());
-  const [hiddenTiers, setHiddenTiers] = __gState(() => new Set());
-  const [yearScope, setYearScope] = __gState(false);
-  const [year, setYear] = __gState(0);
-  const containerRef = __gRef(null);
-  const svgRef = __gRef(null);
-  const gRef = __gRef(null);
-  const [size, setSize] = __gState({
-    w: 0,
-    h: 0
-  });
-  const [zoomK, setZoomK] = __gState(1);
 
-  // Path mode forces the full graph view so endpoints + intermediate nodes
-  // always exist in the rendered set, no matter what relation family the
-  // user was browsing when they toggled path on.
-  __gEff(() => {
-    if (pathMode && mode !== 'all') setMode('all');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathMode]);
-  __gEff(() => {
-    if (!containerRef.current) return;
-    const update = () => {
-      const r = containerRef.current.getBoundingClientRect();
-      setSize({
-        w: Math.round(r.width),
-        h: Math.round(r.height)
-      });
-    };
-    update();
-    const ro = new ResizeObserver(update);
-    ro.observe(containerRef.current);
-    return () => ro.disconnect();
-  }, []);
-
-  // Year-scope: pre-filter the people set before handing to buildGraph.
-  // Keep this OUTSIDE buildGraph so the year dependency doesn't tear up
-  // the rest of the layout pipeline; only the visible set changes.
-  const scopedPeople = __gMemo(() => {
-    if (!yearScope) return people;
-    return people.filter(p => figureActiveAt(p, year));
-  }, [people, yearScope, year]);
-
-  // A focus that the active filters / year scope exclude cannot be rendered:
-  // buildGraph can't recover a node whose figure isn't in `people`, and
-  // seeding the BFS at a linkless phantom empties the whole graph behind the
-  // focus card. Treat it as unfocused and say so (notice rendered below).
-  const focusInScope = __gMemo(() => !focusId || scopedPeople.some(p => p.id === focusId), [focusId, scopedPeople]);
-  const graph = __gMemo(() => buildGraph(scopedPeople, byId, mode, focusInScope ? focusId : null), [scopedPeople, byId, mode, focusId, focusInScope]);
-  // Position memory survives graph rebuilds so dragging the year slider
-  // doesn't re-explode the layout every frame. See useForceSim above.
-  const positionsRef = __gRef(new Map());
-  // Seed coordinates during render so the first committed frame of every
-  // rebuild already carries cached/seeded positions (see seedPositions).
-  __gMemo(() => {
-    seedPositions(graph, size.w, size.h, positionsRef);
-  }, [graph, size.w, size.h]);
-  // Per-node and per-link SVG element refs. Populated by ref callbacks on
-  // the rendered <g> / <line> elements; consumed by useForceSim's tick
-  // handler to mutate transforms directly without going through React.
-  const nodeElRefs = __gRef(new Map());
-  const linkElRefs = __gRef(new Map());
-  useForceSim(graph, size.w, size.h, positionsRef, nodeElRefs, linkElRefs);
-  const zoomRef = useZoomPan(svgRef, gRef, setZoomK, [graph, size.w, size.h]);
-
+// Path-finding between two figures: full-relation adjacency + BFS shortest
+// path, plus the node/edge highlight sets the renderer uses. Pure (no refs or
+// DOM), so it lives as a hook and keeps the Graph body on layout + rendering.
+function usePathFind(people, byId, pathMode, pathStart, pathEnd) {
   // ── Path-find adjacency (independent of mode) ──────────────────────────
   // The path search always considers the full relation set, not just the
   // currently-rendered slice. Built lazily — only when pathMode is on.
@@ -257994,6 +257920,95 @@ function Graph({
     });
     return s;
   }, [pathResult]);
+  return {
+    pathResult,
+    pathNodeSet,
+    pathEdgeSet
+  };
+}
+function Graph({
+  people,
+  byId,
+  focusId,
+  setFocusId,
+  onOpenDetail
+}) {
+  const [mode, setMode] = __gState('cross-tradition');
+  const [hoverNode, setHoverNode] = __gState(null); // id
+  const [hoverPos, setHoverPos] = __gState(null); // {x, y} for info chip
+  const [hoverEdge, setHoverEdge] = __gState(null); // { kind, family, x, y, a, b }
+  const [pathMode, setPathMode] = __gState(false);
+  const [pathStart, setPathStart] = __gState(null);
+  const [pathEnd, setPathEnd] = __gState(null);
+  const [hiddenFamilies, setHiddenFamilies] = __gState(() => new Set());
+  const [hiddenTiers, setHiddenTiers] = __gState(() => new Set());
+  const [yearScope, setYearScope] = __gState(false);
+  const [year, setYear] = __gState(0);
+  const containerRef = __gRef(null);
+  const svgRef = __gRef(null);
+  const gRef = __gRef(null);
+  const [size, setSize] = __gState({
+    w: 0,
+    h: 0
+  });
+  const [zoomK, setZoomK] = __gState(1);
+
+  // Path mode forces the full graph view so endpoints + intermediate nodes
+  // always exist in the rendered set, no matter what relation family the
+  // user was browsing when they toggled path on.
+  __gEff(() => {
+    if (pathMode && mode !== 'all') setMode('all');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathMode]);
+  __gEff(() => {
+    if (!containerRef.current) return;
+    const update = () => {
+      const r = containerRef.current.getBoundingClientRect();
+      setSize({
+        w: Math.round(r.width),
+        h: Math.round(r.height)
+      });
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(containerRef.current);
+    return () => ro.disconnect();
+  }, []);
+
+  // Year-scope: pre-filter the people set before handing to buildGraph.
+  // Keep this OUTSIDE buildGraph so the year dependency doesn't tear up
+  // the rest of the layout pipeline; only the visible set changes.
+  const scopedPeople = __gMemo(() => {
+    if (!yearScope) return people;
+    return people.filter(p => figureActiveAt(p, year));
+  }, [people, yearScope, year]);
+
+  // A focus that the active filters / year scope exclude cannot be rendered:
+  // buildGraph can't recover a node whose figure isn't in `people`, and
+  // seeding the BFS at a linkless phantom empties the whole graph behind the
+  // focus card. Treat it as unfocused and say so (notice rendered below).
+  const focusInScope = __gMemo(() => !focusId || scopedPeople.some(p => p.id === focusId), [focusId, scopedPeople]);
+  const graph = __gMemo(() => buildGraph(scopedPeople, byId, mode, focusInScope ? focusId : null), [scopedPeople, byId, mode, focusId, focusInScope]);
+  // Position memory survives graph rebuilds so dragging the year slider
+  // doesn't re-explode the layout every frame. See useForceSim above.
+  const positionsRef = __gRef(new Map());
+  // Seed coordinates during render so the first committed frame of every
+  // rebuild already carries cached/seeded positions (see seedPositions).
+  __gMemo(() => {
+    seedPositions(graph, size.w, size.h, positionsRef);
+  }, [graph, size.w, size.h]);
+  // Per-node and per-link SVG element refs. Populated by ref callbacks on
+  // the rendered <g> / <line> elements; consumed by useForceSim's tick
+  // handler to mutate transforms directly without going through React.
+  const nodeElRefs = __gRef(new Map());
+  const linkElRefs = __gRef(new Map());
+  useForceSim(graph, size.w, size.h, positionsRef, nodeElRefs, linkElRefs);
+  const zoomRef = useZoomPan(svgRef, gRef, setZoomK, [graph, size.w, size.h]);
+  const {
+    pathResult,
+    pathNodeSet,
+    pathEdgeSet
+  } = usePathFind(people, byId, pathMode, pathStart, pathEnd);
 
   // Active edge families (for the legend — only show what's actually here).
   const activeFamilies = __gMemo(() => {
