@@ -10,42 +10,10 @@
  * and rewrites data.js between the POWERS_TERMS sentinels. Idempotent: re-run as
  * more agents complete. Run: node scripts/gen-powers-terms.cjs
  */
-const fs = require('fs');
-const path = require('path');
-
-const TASKS = process.env.TASKS_DIR ||
-  '/tmp/claude-0/-home-user-PantheonRepository/9979a762-a2ad-53fd-85cf-871f7627ba99/tasks';
-const DATA = path.join(__dirname, '..', 'app', 'data.js');
-const SRC = path.join(__dirname, '..', 'data-sources', 'transcripts');
-
-// Pull the last assistant text message out of a JSONL transcript.
-function lastAssistantText(file) {
-  let txt = '';
-  for (const ln of fs.readFileSync(file, 'utf8').split('\n')) {
-    if (!ln.trim()) continue;
-    let o; try { o = JSON.parse(ln); } catch { continue; }
-    if (o.type !== 'assistant' || !o.message) continue;
-    const c = o.message.content;
-    let t = '';
-    if (typeof c === 'string') t = c;
-    else if (Array.isArray(c)) t = c.filter(b => b && b.type === 'text').map(b => b.text).join('\n');
-    if (t.trim()) txt = t; // keep the latest
-  }
-  return txt;
-}
-// Prefer the committed research-output snapshot (reproducible on a clean
-// checkout); fall back to the live /tmp session transcripts when absent.
-function sources() {
-  if (fs.existsSync(SRC)) {
-    return fs.readdirSync(SRC).filter((n) => n.endsWith('.txt')).sort()
-      .map((n) => ({ name: n, text: fs.readFileSync(path.join(SRC, n), 'utf8') }));
-  }
-  return fs.readdirSync(TASKS).filter((n) => n.endsWith('.output')).sort()
-    .map((n) => { try { return { name: n, text: lastAssistantText(path.join(TASKS, n)) }; } catch { return { name: n, text: '' }; } });
-}
+const { sources, makeSrcKind, serializeFigureMap, writeSentinelBlock } = require('./gen-lib.cjs');
 
 const SECONDARY = /\bWb\b|Wilkinson|LSJ|eDIL|GPC|CAD|PSD|ETCSL|Rilly|Britannica|Wikipedia|Healey|Ivanov|Toporov|Afanasyev|Rybakov|Bonfante|Pallottino|de Grummond|Dum[eé]zil|Nimuendaj|Koch-Gr[üu]nberg|Propp|Abaev|Charachidz[eé]|Tuite|Tedlock|Taube|Jansen|Caso|Zuidema|Hyslop|Christenson|Alvarado|Vocabulario|dictionary|Stetkevych|Westenholz|Frayne|grammar|ethnograph|Garcilaso|Sarmiento|Betanzos|Cobo|Cieza|Guaman Poma/i;
-const srcKind = (s) => (SECONDARY.test(s) ? 'secondary' : 'primary');
+const srcKind = makeSrcKind(SECONDARY);
 const INH = new Set(['none', 'partial', 'full', 'trace']);
 const isDash = (v) => {
   if (!v) return true;
@@ -106,17 +74,8 @@ for (const { text } of sources()) {
 
 // Serialize: one line per faculty, grouped by figure (diff-friendly).
 const figs = Object.keys(out).sort();
-const body = figs.map((fig) =>
-  `${JSON.stringify(fig)}: [\n` +
-  out[fig].slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)).map((f) => '  ' + JSON.stringify(f)).join(',\n') +
-  '\n]').join(',\n');
-const block = `/* POWERS_TERMS_START */\nconst POWERS_TERMS = {\n${body}\n};\n/* POWERS_TERMS_END */`;
-
-let data = fs.readFileSync(DATA, 'utf8');
-const re = /\/\* POWERS_TERMS_START \*\/[\s\S]*?\/\* POWERS_TERMS_END \*\//;
-if (!re.test(data)) { console.error('sentinels not found in data.js'); process.exit(1); }
-data = data.replace(re, block);
-fs.writeFileSync(DATA, data);
+const block = `/* POWERS_TERMS_START */\nconst POWERS_TERMS = {\n${serializeFigureMap(out)}\n};\n/* POWERS_TERMS_END */`;
+writeSentinelBlock('POWERS_TERMS', block);
 
 console.log(`transcripts parsed: ${stats.files}`);
 console.log(`figures: ${figs.length} | faculties termed: ${stats.count} | em-dash (no native word): ${stats.emdash} | dups skipped: ${stats.dups}`);
