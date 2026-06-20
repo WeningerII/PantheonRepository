@@ -32686,6 +32686,20 @@ const MATERIAL_CULTURE_BY_FIGURE = {
   "greek_apollod_andromeda": [
     {"id":"andromeda-chains","name":"The Chains of Andromeda","kind":"symbol","notes":"The fetters by which Andromeda was bound to the seaside rock as a sacrifice to the sea-monster before Perseus freed her; her defining iconographic attribute, with the chain-marks shown as relics on the rock at Joppa (Jaffa).","sources":[{"kind":"primary","reference":"Pliny the Elder, Natural History 5.69 (the rock before Joppa where the marks of the chains binding Andromeda are pointed out)"},{"kind":"primary","reference":"Pseudo-Apollodorus, Library 2.4.3 (Andromeda bound to the rock and freed by Perseus)"},{"kind":"secondary","reference":"K. Schauenburg, 'Andromeda I', Lexicon Iconographicum Mythologiae Classicae (LIMC) vol. I (1981), pp. 774-790"}]}
   ],
+  // ══ Material-culture sweep batch 5 (worklist indices 320-399, alphabetical) ══
+  "greek_apollod_danae": [
+    {"id":"danae-larnax","name":"The Chest (Larnax)","kind":"vessel","term":{"value":"λάρναξ","rom":"larnax"},"notes":"The wooden chest in which Acrisius set Danae adrift on the sea with the infant Perseus; it washed ashore on Seriphos.","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 2.4.1 (Danae and Perseus enclosed in a larnax and cast into the sea)"},{"kind":"primary","reference":"Simonides, fr. 543 PMG (Page) = fr. 271 Poltera, the 'Danae' fragment, lament from within the carved chest (larnax)"}]},
+    {"id":"danae-bronze-chamber","name":"The Brazen Chamber","kind":"monument","notes":"The underground bronze chamber Acrisius built to imprison Danae, into which Zeus came as a shower of gold through the roof.","sources":[{"kind":"primary","reference":"Apollodorus, Bibliotheca 2.4.1 (Acrisius builds a brazen chamber underground and guards Danae there)"},{"kind":"secondary","reference":"Timothy Gantz, Early Greek Myth (1993), pp. 300–303 (Danae, the bronze chamber, and the golden rain)"}]}
+  ],
+  "greek_creusa_athens": [
+    {"id":"creusa-gorgonblood","name":"Drops of Gorgon Blood","kind":"ritual-object","notes":"Heirloom of the Erechtheid house: two drops of the Gorgon's blood mounted in gold and worn by Creusa as a bracelet, one drop a deadly poison and the other a healing remedy, which she uses in her attempt to poison Ion.","sources":[{"kind":"primary","reference":"Euripides, Ion 999-1017 (Creusa describes the two drops of Gorgon blood given by Athena to Erichthonius, set in gold and worn at her wrist)"},{"kind":"primary","reference":"Euripides, Ion 1185-1228 (the poisoned drop deployed against Ion at the banquet)"}]}
+  ],
+  "greek_hesiod_atlas": [
+    {"id":"atlas-pillars","name":"Pillars of Heaven and Earth","kind":"monument","term":{"value":"κίονες","rom":"kiones"},"notes":"The tall cosmic pillars that Atlas holds at the world's edge, keeping the sky and the earth apart; in Hesiod he bears the broad heaven itself on his head and arms.","sources":[{"kind":"primary","reference":"Homer, Odyssey 1.52-54 (Atlas 'holds the tall pillars, kionas makras, that keep earth and heaven apart')"},{"kind":"primary","reference":"Hesiod, Theogony 517-520 (Atlas upholds the wide heaven with head and unwearying arms at the edge of the earth before the Hesperides)"},{"kind":"secondary","reference":"M. L. West, The East Face of Helicon (Oxford, 1997), 'The Pillars of Heaven and Earth', p. 148"}]}
+  ],
+  "greek_hesiod_persephone": [
+    {"id":"persephone-pomegranate","name":"Pomegranate seed","kind":"symbol","term":{"value":"ῥοιή","rom":"rhoiē"},"notes":"The pomegranate seed Hades secretly gives Persephone to eat, binding her to the underworld for a portion of each year; her defining attribute in cult and art.","sources":[{"kind":"primary","reference":"Homeric Hymn to Demeter (Hymn 2) 371-374, and Persephone's own account at 411-413 (ῥοιῆς κόκκον)"},{"kind":"secondary","reference":"N. J. Richardson, The Homeric Hymn to Demeter (Oxford, 1974), commentary on lines 371-374"}]}
+  ],
   // MC-BY-FIGURE-END (batches inserted above this marker)
 };
 
