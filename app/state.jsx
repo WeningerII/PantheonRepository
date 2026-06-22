@@ -655,6 +655,123 @@ function itemsForEntry(entry) {
   } catch (_) { return []; }
 }
 
+// ── Power & domain registries ───────────────────────────────────────────────
+// Built lazily at runtime from window.__PR.seedPeople (so data.js — which is
+// byte-exact-regen-gated — stays untouched). A power record gathers the figures
+// who DECLARE the faculty plus, for the descent view, the figures who INHERIT it
+// (from __PR.inheritedPowers, each edge naming the ancestor it descends from).
+// A domain record gathers the figures who govern the sphere.
+let _powerReg = null, _domainReg = null;
+const humanizeTag = (s) => String(s == null ? '' : s).replace(/[-_]+/g, ' ').trim();
+const dedupeSources = (arr) => {
+  const seen = new Set();
+  return (arr || []).filter((s) => {
+    const k = (s && s.reference) || JSON.stringify(s);
+    if (seen.has(k)) return false; seen.add(k); return true;
+  });
+};
+
+function buildPowerRegistry() {
+  if (_powerReg) return _powerReg;
+  const people = (window.__PR && window.__PR.seedPeople) || {};
+  const inh = (window.__PR && window.__PR.inheritedPowers) || {};
+  const reg = {};
+  const ensure = (id) => (reg[id] || (reg[id] = {
+    id, displayName: humanizeTag(id), domainTag: null, term: null,
+    holders: [], inheritors: [], scopeTags: [], sources: [],
+    heritCounts: {}, inheritability: null, holderCount: 0, inheritorCount: 0, figureCount: 0,
+  }));
+  // Declarers — figures whose faculties[] include the power (attested).
+  for (const pid of Object.keys(people)) {
+    for (const f of (people[pid].faculties || [])) {
+      if (!f || !f.id) continue;
+      const rec = ensure(f.id);
+      rec.holders.push({
+        personId: pid, inheritability: f.inheritability || null,
+        scopeTags: f.scopeTags || [], sources: f.sources || [],
+        notes: f.notes || null, term: f.term || null,
+      });
+      if (f.name && rec.displayName === humanizeTag(f.id)) rec.displayName = f.name;
+      if (!rec.domainTag && f.domainTag) rec.domainTag = f.domainTag;
+      if (!rec.term && f.term && f.term.value) rec.term = f.term;
+      for (const t of (f.scopeTags || [])) if (!rec.scopeTags.includes(t)) rec.scopeTags.push(t);
+      for (const s of (f.sources || [])) rec.sources.push(s);
+      if (f.inheritability) rec.heritCounts[f.inheritability] = (rec.heritCounts[f.inheritability] || 0) + 1;
+    }
+  }
+  // Inheritors — descent edges (candidate, not attested) from __PR.inheritedPowers.
+  for (const pid of Object.keys(inh)) {
+    for (const c of (inh[pid] || [])) {
+      if (!c || !c.facultyId) continue;
+      ensure(c.facultyId).inheritors.push({
+        personId: pid, fromAncestorId: c.fromAncestorId, generation: c.generation, level: c.level,
+      });
+    }
+  }
+  for (const id of Object.keys(reg)) {
+    const rec = reg[id];
+    rec.holderCount = rec.holders.length;
+    rec.inheritorCount = rec.inheritors.length;
+    rec.figureCount = rec.holderCount;
+    rec.sources = dedupeSources(rec.sources);
+    let best = null, bestN = -1;
+    for (const k of Object.keys(rec.heritCounts)) if (rec.heritCounts[k] > bestN) { best = k; bestN = rec.heritCounts[k]; }
+    rec.inheritability = best;
+  }
+  _powerReg = reg;
+  return reg;
+}
+
+function buildDomainRegistry() {
+  if (_domainReg) return _domainReg;
+  const people = (window.__PR && window.__PR.seedPeople) || {};
+  const reg = {};
+  const ensure = (id) => (reg[id] || (reg[id] = {
+    id, displayName: humanizeTag(id), term: null,
+    holders: [], contextTags: [], sources: [], holderCount: 0, figureCount: 0,
+  }));
+  for (const pid of Object.keys(people)) {
+    for (const d of (people[pid].domains || [])) {
+      if (!d || !d.sphereId) continue;
+      const rec = ensure(d.sphereId);
+      rec.holders.push({
+        personId: pid, contextTag: d.contextTag || null,
+        sources: d.sources || [], notes: d.notes || null, term: d.term || null,
+      });
+      if (d.contextTag && !rec.contextTags.includes(d.contextTag)) rec.contextTags.push(d.contextTag);
+      if (!rec.term && d.term && d.term.value) rec.term = d.term;
+      for (const s of (d.sources || [])) rec.sources.push(s);
+    }
+  }
+  for (const id of Object.keys(reg)) {
+    const rec = reg[id];
+    rec.holderCount = rec.holders.length;
+    rec.figureCount = rec.holderCount;
+    rec.sources = dedupeSources(rec.sources);
+  }
+  _domainReg = reg;
+  return reg;
+}
+
+// Index sort: most-attested first, then alphabetical. Mirrors allItems().
+function allPowers() {
+  try {
+    return Object.values(buildPowerRegistry()).sort((a, b) =>
+      (b.figureCount - a.figureCount) ||
+      (b.inheritorCount - a.inheritorCount) ||
+      String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+  } catch (_) { return []; }
+}
+function powerById(id) { try { return (id && buildPowerRegistry()[id]) || null; } catch (_) { return null; } }
+function allDomains() {
+  try {
+    return Object.values(buildDomainRegistry()).sort((a, b) =>
+      (b.figureCount - a.figureCount) ||
+      String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+  } catch (_) { return []; }
+}
+function domainById(id) { try { return (id && buildDomainRegistry()[id]) || null; } catch (_) { return null; } }
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
@@ -669,4 +786,5 @@ Object.assign(window, {
   divinityInfo, traditionMix, fmtFraction,
   inheritedPowers, nameRecords,
   allItems, itemById, itemsForEntry,
+  allPowers, powerById, allDomains, domainById,
 });

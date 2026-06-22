@@ -25,7 +25,7 @@ DIST.mkdir(exist_ok=True)
 
 JSX_FILES = [
     'state.jsx', 'Browse.jsx', 'Lineage.jsx', 'Lifecycle.jsx', 'Detail.jsx',
-    'Items.jsx', 'Graph.jsx', 'Atlas.jsx', 'CommandPalette.jsx', 'Shell.jsx', 'main.jsx',
+    'Items.jsx', 'Powers.jsx', 'Domains.jsx', 'Graph.jsx', 'Atlas.jsx', 'CommandPalette.jsx', 'Shell.jsx', 'main.jsx',
 ]
 
 

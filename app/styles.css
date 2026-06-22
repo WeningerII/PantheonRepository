@@ -3153,6 +3153,49 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 }
 .item-source-ref { font: 400 12.5px/1.55 var(--font-serif); color: var(--ink-3); }
 
+/* ── Powers & domains registries (index reuses the items-* index layout) ──── */
+.power-index-row .power-herit, .domain-index-row .power-herit { margin-left: 2px; }
+.power-badge-descent { color: var(--accent); background: var(--accent-bg); }
+.power-badge-multi, .domain-badge-multi { color: var(--ink-2); background: var(--surface-2); }
+
+/* Power/domain detail — bearers (declarers) & governors reuse the holder chip */
+.power-bearers, .domain-govs { display: flex; flex-direction: column; gap: 6px; }
+.power-bearer, .domain-gov-who {
+  display: inline-flex; align-items: center; gap: 7px; flex-wrap: wrap; width: fit-content;
+  padding: 5px 9px; border-radius: 3px; background: var(--surface);
+  border: 1px solid var(--rule-2); cursor: pointer; text-align: left;
+}
+.power-bearer:hover, .domain-gov-who:hover { border-color: var(--accent-ring); }
+.power-bearer-name, .domain-gov-name { font: 500 14px/1.3 var(--font-serif); color: var(--ink); }
+.power-bearer:hover .power-bearer-name, .domain-gov-who:hover .domain-gov-name { color: var(--accent); }
+.power-bearer-meta, .domain-gov-meta {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--mute);
+}
+.domain-gov-ctx {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-2); padding: 1px 5px; border-radius: 2px; background: var(--surface-2);
+}
+
+/* Power detail — descent: the genealogical inheritance chain (candidate edges) */
+.power-descent { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.power-descent-note {
+  margin-left: 8px; text-transform: none; letter-spacing: 0;
+  font: italic 400 11px/1 var(--font-serif); color: var(--mute);
+}
+.power-descent-step {
+  display: flex; align-items: baseline; gap: 9px; padding: 3px 0; flex-wrap: wrap;
+  font: 400 13px/1.45 var(--font-serif); color: var(--ink);
+}
+.power-descent-who .link, .power-descent-from .link { cursor: pointer; }
+.power-descent-who .link:hover, .power-descent-from .link:hover { color: var(--accent); }
+.power-descent-from { font: 400 11.5px/1.4 var(--font-mono); color: var(--mute); }
+.power-scopes { display: flex; flex-wrap: wrap; gap: 5px; }
+
+/* Domain detail — governor rows */
+.domain-gov { display: flex; flex-direction: column; gap: 3px; padding: 5px 0; }
+.domain-gov-note { font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
+.domain-gov-cite { font: 400 12px/1.5 var(--font-serif); color: var(--ink-3); }
+
 /* ── Material culture cross-link (figure detail → item registry) ─────────── */
 .material-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .material-item {

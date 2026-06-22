@@ -38,6 +38,8 @@ function TopBar({ totalCount, view, setView, query, setQuery, searchRef, onCmdK 
           <button className={'btn' + (view === 'graph'  ? ' btn-on' : '')} onClick={() => setView('graph')}  role="tab" aria-selected={view === 'graph'}>Graph</button>
           <button className={'btn' + (view === 'atlas'  ? ' btn-on' : '')} onClick={() => setView('atlas')}  role="tab" aria-selected={view === 'atlas'}>Atlas</button>
           <button className={'btn' + (view === 'items'  ? ' btn-on' : '')} onClick={() => setView('items')}  role="tab" aria-selected={view === 'items'}>Items</button>
+          <button className={'btn' + (view === 'powers' ? ' btn-on' : '')} onClick={() => setView('powers')} role="tab" aria-selected={view === 'powers'}>Powers</button>
+          <button className={'btn' + (view === 'domains'? ' btn-on' : '')} onClick={() => setView('domains')} role="tab" aria-selected={view === 'domains'}>Domains</button>
         </div>
       </div>
     </div>
@@ -205,12 +207,18 @@ function Shell() {
   const [graphFocusId, setGraphFocusId] = __sState(null);
   const [atlasFocus, setAtlasFocus] = __sState(null);   // tradition name
   const [selectedItemId, setSelectedItemId] = __sState(null);
+  const [selectedPowerId, setSelectedPowerId] = __sState(null);
+  const [selectedDomainId, setSelectedDomainId] = __sState(null);
   const searchRef = __sRef(null);
 
   // Item registry (built in data.js, read once). The sorted list drives the
   // Items index and the j/k navigation between open items.
   const itemList = __sMemo(() => (window.allItems ? window.allItems() : []), []);
   const selectedItem = selectedItemId && window.itemById ? window.itemById(selectedItemId) : null;
+  const powerList = __sMemo(() => (window.allPowers ? window.allPowers() : []), []);
+  const selectedPower = selectedPowerId && window.powerById ? window.powerById(selectedPowerId) : null;
+  const domainList = __sMemo(() => (window.allDomains ? window.allDomains() : []), []);
+  const selectedDomain = selectedDomainId && window.domainById ? window.domainById(selectedDomainId) : null;
 
   // ── URL sync ─────────────────────────────────────────────────────────
   // Hash schema: #/<view>[/<id>]
@@ -224,13 +232,13 @@ function Shell() {
   // Push vs replace: opening or closing a detail is a navigation (push);
   // j/k between two detail entries is a continuation (replace) so the
   // history doesn't fill with every keypress.
-  const urlPrevRef = __sRef({ view: 'browse', selId: null, gFocus: null, aFocus: null, itemId: null, initialized: false });
+  const urlPrevRef = __sRef({ view: 'browse', selId: null, gFocus: null, aFocus: null, itemId: null, powerId: null, domainId: null, initialized: false });
 
   const applyHash = __sCb(() => {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas', 'items'].includes(v)) return;
+    if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v)) return;
     // Malformed escapes (#/browse/%zz) must not crash applyHash — it runs in
     // a mount effect, so a throw here would loop the ErrorBoundary forever.
     let id = null;
@@ -238,27 +246,20 @@ function Shell() {
       try { id = decodeURIComponent(parts[1]); } catch (_) { id = parts[1]; }
     }
     setView(v);
-    if (v === 'browse') {
-      selection.setSelectedId(id);
-      setGraphFocusId(null);
-      setAtlasFocus(null);
-      setSelectedItemId(null);
-    } else if (v === 'graph') {
-      setGraphFocusId(id);
-      selection.setSelectedId(null);
-      setAtlasFocus(null);
-      setSelectedItemId(null);
-    } else if (v === 'items') {
-      setSelectedItemId(id);
-      selection.setSelectedId(null);
-      setGraphFocusId(null);
-      setAtlasFocus(null);
-    } else {
-      setAtlasFocus(id);
-      selection.setSelectedId(null);
-      setGraphFocusId(null);
-      setSelectedItemId(null);
-    }
+    // Clear every detail axis, then set the one this view owns — keeps the
+    // slide-overs mutually exclusive however the hash arrives.
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    if (v === 'browse') selection.setSelectedId(id);
+    else if (v === 'graph') setGraphFocusId(id);
+    else if (v === 'atlas') setAtlasFocus(id);
+    else if (v === 'items') setSelectedItemId(id);
+    else if (v === 'powers') setSelectedPowerId(id);
+    else if (v === 'domains') setSelectedDomainId(id);
   }, [selection]);
 
   __sEff(() => {
@@ -285,9 +286,13 @@ function Shell() {
       target += '/' + encodeURIComponent(atlasFocus);
     } else if (view === 'items' && selectedItemId) {
       target += '/' + encodeURIComponent(selectedItemId);
+    } else if (view === 'powers' && selectedPowerId) {
+      target += '/' + encodeURIComponent(selectedPowerId);
+    } else if (view === 'domains' && selectedDomainId) {
+      target += '/' + encodeURIComponent(selectedDomainId);
     }
     if (target === window.location.hash) {
-      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, initialized: true };
+      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, powerId: selectedPowerId, domainId: selectedDomainId, initialized: true };
       return;
     }
     const prev = urlPrevRef.current;
@@ -297,10 +302,10 @@ function Shell() {
       // with #/browse and corrupt the history entry. The hash is the source
       // of truth at boot: only canonicalize when there is no usable hash.
       const first = (window.location.hash || '').replace(/^#\/?/, '').split('/')[0];
-      if (!['browse', 'graph', 'atlas', 'items'].includes(first)) {
+      if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(first)) {
         window.history.replaceState({}, '', target);
       }
-      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, initialized: true };
+      urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, powerId: selectedPowerId, domainId: selectedDomainId, initialized: true };
       return;
     }
     // Replace if: same view, moving between two non-null detail entries
@@ -311,15 +316,17 @@ function Shell() {
         (view === 'browse' && prev.selId != null && selection.selectedId != null) ||
         (view === 'graph' && prev.gFocus != null && graphFocusId != null) ||
         (view === 'atlas' && prev.aFocus != null && atlasFocus != null) ||
-        (view === 'items' && prev.itemId != null && selectedItemId != null)
+        (view === 'items' && prev.itemId != null && selectedItemId != null) ||
+        (view === 'powers' && prev.powerId != null && selectedPowerId != null) ||
+        (view === 'domains' && prev.domainId != null && selectedDomainId != null)
       );
     if (continuation) {
       window.history.replaceState({}, '', target);
     } else {
       window.history.pushState({}, '', target);
     }
-    urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, initialized: true };
-  }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId]);
+    urlPrevRef.current = { view, selId: selection.selectedId, gFocus: graphFocusId, aFocus: atlasFocus, itemId: selectedItemId, powerId: selectedPowerId, domainId: selectedDomainId, initialized: true };
+  }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId, selectedPowerId, selectedDomainId]);
   // ─────────────────────────────────────────────────────────────────────
 
   const selectedEntry = selection.selectedId ? byId.get(selection.selectedId) : null;
@@ -356,6 +363,29 @@ function Shell() {
     if (nextId) setSelectedItemId(nextId);
   }, [selectedItemId, itemList]);
 
+  // Step between open powers / domains (mirrors moveItem — uses the index's
+  // reported visible order, falling back to registry order).
+  const powerOrderRef = __sRef(null);
+  const movePower = __sCb((delta) => {
+    if (!selectedPowerId) return;
+    const order = (powerOrderRef.current && powerOrderRef.current.length)
+      ? powerOrderRef.current : powerList.map((p) => p.id);
+    const idx = order.indexOf(selectedPowerId);
+    if (idx < 0) return;
+    const nextId = order[idx + delta];
+    if (nextId) setSelectedPowerId(nextId);
+  }, [selectedPowerId, powerList]);
+  const domainOrderRef = __sRef(null);
+  const moveDomain = __sCb((delta) => {
+    if (!selectedDomainId) return;
+    const order = (domainOrderRef.current && domainOrderRef.current.length)
+      ? domainOrderRef.current : domainList.map((d) => d.id);
+    const idx = order.indexOf(selectedDomainId);
+    if (idx < 0) return;
+    const nextId = order[idx + delta];
+    if (nextId) setSelectedDomainId(nextId);
+  }, [selectedDomainId, domainList]);
+
   // Open an item from anywhere (the index, or a figure's material culture).
   // Opening an item is an Items-view navigation: switch views and clear the
   // figure selection so the two slide-overs never stack.
@@ -384,6 +414,8 @@ function Shell() {
     if (e.key === 'Escape') {
       if (cmdkOpen) { setCmdkOpen(false); return; }
       if (selectedItemId) { setSelectedItemId(null); return; }
+      if (selectedPowerId) { setSelectedPowerId(null); return; }
+      if (selectedDomainId) { setSelectedDomainId(null); return; }
       if (selection.selectedId) { selection.setSelectedId(null); return; }
       if (inField) { e.target.blur(); return; }
       if (filters.query) { filters.setQuery(''); return; }
@@ -409,6 +441,20 @@ function Shell() {
     if (selectedItemId) {
       if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveItem(1); return; }
       if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveItem(-1); return; }
+      return;
+    }
+
+    // Power-detail navigation
+    if (selectedPowerId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); movePower(1); return; }
+      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); movePower(-1); return; }
+      return;
+    }
+
+    // Domain-detail navigation
+    if (selectedDomainId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') { e.preventDefault(); markKbNav(); moveDomain(1); return; }
+      if (e.key === 'k' || e.key === 'ArrowUp')   { e.preventDefault(); markKbNav(); moveDomain(-1); return; }
       return;
     }
 
@@ -504,6 +550,24 @@ function Shell() {
               onVisibleOrder={(ids) => { itemOrderRef.current = ids; }}
             />
           )}
+          {view === 'powers' && (
+            <window.PowersView
+              powers={powerList}
+              byId={byId}
+              selectedPowerId={selectedPowerId}
+              onOpenPower={(id) => setSelectedPowerId(id)}
+              onVisibleOrder={(ids) => { powerOrderRef.current = ids; }}
+            />
+          )}
+          {view === 'domains' && (
+            <window.Domains
+              domains={domainList}
+              byId={byId}
+              selectedDomainId={selectedDomainId}
+              onOpenDomain={(id) => setSelectedDomainId(id)}
+              onVisibleOrder={(ids) => { domainOrderRef.current = ids; }}
+            />
+          )}
         </div>
       </div>
 
@@ -542,6 +606,32 @@ function Shell() {
         }}
       />
 
+      <window.PowerDetail
+        power={selectedPower}
+        byId={byId}
+        onClose={() => setSelectedPowerId(null)}
+        onPrev={() => movePower(-1)}
+        onNext={() => movePower(1)}
+        onOpenFigure={(id) => {
+          setView('browse');
+          setSelectedPowerId(null);
+          selection.setSelectedId(id);
+        }}
+      />
+
+      <window.DomainDetail
+        domain={selectedDomain}
+        byId={byId}
+        onClose={() => setSelectedDomainId(null)}
+        onPrev={() => moveDomain(-1)}
+        onNext={() => moveDomain(1)}
+        onOpenFigure={(id) => {
+          setView('browse');
+          setSelectedDomainId(null);
+          selection.setSelectedId(id);
+        }}
+      />
+
       {cmdkOpen && (
         <window.CommandPalette
           people={people}
@@ -552,6 +642,8 @@ function Shell() {
             // Always drop any open item panel first so the two slide-overs
             // never stack (mirror of openItem clearing the figure selection).
             setSelectedItemId(null);
+            setSelectedPowerId(null);
+            setSelectedDomainId(null);
             if (view === 'graph') {
               setGraphFocusId(id);
             } else {

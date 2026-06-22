@@ -3226,6 +3226,49 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 }
 .item-source-ref { font: 400 12.5px/1.55 var(--font-serif); color: var(--ink-3); }
 
+/* ── Powers & domains registries (index reuses the items-* index layout) ──── */
+.power-index-row .power-herit, .domain-index-row .power-herit { margin-left: 2px; }
+.power-badge-descent { color: var(--accent); background: var(--accent-bg); }
+.power-badge-multi, .domain-badge-multi { color: var(--ink-2); background: var(--surface-2); }
+
+/* Power/domain detail — bearers (declarers) & governors reuse the holder chip */
+.power-bearers, .domain-govs { display: flex; flex-direction: column; gap: 6px; }
+.power-bearer, .domain-gov-who {
+  display: inline-flex; align-items: center; gap: 7px; flex-wrap: wrap; width: fit-content;
+  padding: 5px 9px; border-radius: 3px; background: var(--surface);
+  border: 1px solid var(--rule-2); cursor: pointer; text-align: left;
+}
+.power-bearer:hover, .domain-gov-who:hover { border-color: var(--accent-ring); }
+.power-bearer-name, .domain-gov-name { font: 500 14px/1.3 var(--font-serif); color: var(--ink); }
+.power-bearer:hover .power-bearer-name, .domain-gov-who:hover .domain-gov-name { color: var(--accent); }
+.power-bearer-meta, .domain-gov-meta {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--mute);
+}
+.domain-gov-ctx {
+  font: 400 9px/1.4 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-2); padding: 1px 5px; border-radius: 2px; background: var(--surface-2);
+}
+
+/* Power detail — descent: the genealogical inheritance chain (candidate edges) */
+.power-descent { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.power-descent-note {
+  margin-left: 8px; text-transform: none; letter-spacing: 0;
+  font: italic 400 11px/1 var(--font-serif); color: var(--mute);
+}
+.power-descent-step {
+  display: flex; align-items: baseline; gap: 9px; padding: 3px 0; flex-wrap: wrap;
+  font: 400 13px/1.45 var(--font-serif); color: var(--ink);
+}
+.power-descent-who .link, .power-descent-from .link { cursor: pointer; }
+.power-descent-who .link:hover, .power-descent-from .link:hover { color: var(--accent); }
+.power-descent-from { font: 400 11.5px/1.4 var(--font-mono); color: var(--mute); }
+.power-scopes { display: flex; flex-wrap: wrap; gap: 5px; }
+
+/* Domain detail — governor rows */
+.domain-gov { display: flex; flex-direction: column; gap: 3px; padding: 5px 0; }
+.domain-gov-note { font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
+.domain-gov-cite { font: 400 12px/1.5 var(--font-serif); color: var(--ink-3); }
+
 /* ── Material culture cross-link (figure detail → item registry) ─────────── */
 .material-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .material-item {
@@ -255814,6 +255857,164 @@ function itemsForEntry(entry) {
   }
 }
 
+// ── Power & domain registries ───────────────────────────────────────────────
+// Built lazily at runtime from window.__PR.seedPeople (so data.js — which is
+// byte-exact-regen-gated — stays untouched). A power record gathers the figures
+// who DECLARE the faculty plus, for the descent view, the figures who INHERIT it
+// (from __PR.inheritedPowers, each edge naming the ancestor it descends from).
+// A domain record gathers the figures who govern the sphere.
+let _powerReg = null,
+  _domainReg = null;
+const humanizeTag = s => String(s == null ? '' : s).replace(/[-_]+/g, ' ').trim();
+const dedupeSources = arr => {
+  const seen = new Set();
+  return (arr || []).filter(s => {
+    const k = s && s.reference || JSON.stringify(s);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+};
+function buildPowerRegistry() {
+  if (_powerReg) return _powerReg;
+  const people = window.__PR && window.__PR.seedPeople || {};
+  const inh = window.__PR && window.__PR.inheritedPowers || {};
+  const reg = {};
+  const ensure = id => reg[id] || (reg[id] = {
+    id,
+    displayName: humanizeTag(id),
+    domainTag: null,
+    term: null,
+    holders: [],
+    inheritors: [],
+    scopeTags: [],
+    sources: [],
+    heritCounts: {},
+    inheritability: null,
+    holderCount: 0,
+    inheritorCount: 0,
+    figureCount: 0
+  });
+  // Declarers — figures whose faculties[] include the power (attested).
+  for (const pid of Object.keys(people)) {
+    for (const f of people[pid].faculties || []) {
+      if (!f || !f.id) continue;
+      const rec = ensure(f.id);
+      rec.holders.push({
+        personId: pid,
+        inheritability: f.inheritability || null,
+        scopeTags: f.scopeTags || [],
+        sources: f.sources || [],
+        notes: f.notes || null,
+        term: f.term || null
+      });
+      if (f.name && rec.displayName === humanizeTag(f.id)) rec.displayName = f.name;
+      if (!rec.domainTag && f.domainTag) rec.domainTag = f.domainTag;
+      if (!rec.term && f.term && f.term.value) rec.term = f.term;
+      for (const t of f.scopeTags || []) if (!rec.scopeTags.includes(t)) rec.scopeTags.push(t);
+      for (const s of f.sources || []) rec.sources.push(s);
+      if (f.inheritability) rec.heritCounts[f.inheritability] = (rec.heritCounts[f.inheritability] || 0) + 1;
+    }
+  }
+  // Inheritors — descent edges (candidate, not attested) from __PR.inheritedPowers.
+  for (const pid of Object.keys(inh)) {
+    for (const c of inh[pid] || []) {
+      if (!c || !c.facultyId) continue;
+      ensure(c.facultyId).inheritors.push({
+        personId: pid,
+        fromAncestorId: c.fromAncestorId,
+        generation: c.generation,
+        level: c.level
+      });
+    }
+  }
+  for (const id of Object.keys(reg)) {
+    const rec = reg[id];
+    rec.holderCount = rec.holders.length;
+    rec.inheritorCount = rec.inheritors.length;
+    rec.figureCount = rec.holderCount;
+    rec.sources = dedupeSources(rec.sources);
+    let best = null,
+      bestN = -1;
+    for (const k of Object.keys(rec.heritCounts)) if (rec.heritCounts[k] > bestN) {
+      best = k;
+      bestN = rec.heritCounts[k];
+    }
+    rec.inheritability = best;
+  }
+  _powerReg = reg;
+  return reg;
+}
+function buildDomainRegistry() {
+  if (_domainReg) return _domainReg;
+  const people = window.__PR && window.__PR.seedPeople || {};
+  const reg = {};
+  const ensure = id => reg[id] || (reg[id] = {
+    id,
+    displayName: humanizeTag(id),
+    term: null,
+    holders: [],
+    contextTags: [],
+    sources: [],
+    holderCount: 0,
+    figureCount: 0
+  });
+  for (const pid of Object.keys(people)) {
+    for (const d of people[pid].domains || []) {
+      if (!d || !d.sphereId) continue;
+      const rec = ensure(d.sphereId);
+      rec.holders.push({
+        personId: pid,
+        contextTag: d.contextTag || null,
+        sources: d.sources || [],
+        notes: d.notes || null,
+        term: d.term || null
+      });
+      if (d.contextTag && !rec.contextTags.includes(d.contextTag)) rec.contextTags.push(d.contextTag);
+      if (!rec.term && d.term && d.term.value) rec.term = d.term;
+      for (const s of d.sources || []) rec.sources.push(s);
+    }
+  }
+  for (const id of Object.keys(reg)) {
+    const rec = reg[id];
+    rec.holderCount = rec.holders.length;
+    rec.figureCount = rec.holderCount;
+    rec.sources = dedupeSources(rec.sources);
+  }
+  _domainReg = reg;
+  return reg;
+}
+
+// Index sort: most-attested first, then alphabetical. Mirrors allItems().
+function allPowers() {
+  try {
+    return Object.values(buildPowerRegistry()).sort((a, b) => b.figureCount - a.figureCount || b.inheritorCount - a.inheritorCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+  } catch (_) {
+    return [];
+  }
+}
+function powerById(id) {
+  try {
+    return id && buildPowerRegistry()[id] || null;
+  } catch (_) {
+    return null;
+  }
+}
+function allDomains() {
+  try {
+    return Object.values(buildDomainRegistry()).sort((a, b) => b.figureCount - a.figureCount || String(a.displayName || a.id).localeCompare(String(b.displayName || b.id)));
+  } catch (_) {
+    return [];
+  }
+}
+function domainById(id) {
+  try {
+    return id && buildDomainRegistry()[id] || null;
+  } catch (_) {
+    return null;
+  }
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER,
@@ -255843,7 +256044,11 @@ Object.assign(window, {
   nameRecords,
   allItems,
   itemById,
-  itemsForEntry
+  itemsForEntry,
+  allPowers,
+  powerById,
+  allDomains,
+  domainById
 });
 </script>
 <!-- Browse.jsx (pre-transformed) -->
@@ -258332,6 +258537,662 @@ Object.assign(window, {
   ItemDetail
 });
 </script>
+<!-- Powers.jsx (pre-transformed) -->
+<script>
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+// ═══════════════════════════════════════════════════════════════════════════
+//  Powers.jsx — the power registry: index + power detail slide-over.
+//  Where items are traced by CUSTODY (who held the object), powers are traced
+//  by DESCENT — a faculty is DECLARED by the figures who wield it (attested)
+//  and may be INHERITED down a bloodline. The registry is aggregated in
+//  state.jsx (window.allPowers / window.powerById) from every figure's
+//  faculties[] merged with the genealogical inheritance edges in
+//  window.__PR.inheritedPowers; this view reads it and the detail traces the
+//  declarers and the descent.
+// ═══════════════════════════════════════════════════════════════════════════
+
+const {
+  useMemo: __pMemo,
+  useEffect: __pEff,
+  useState: __pState,
+  useRef: __pRef
+} = React;
+const humanizePow = s => String(s == null ? '' : s).replace(/[-_]+/g, ' ');
+const POW_GLYPH = /greek|runic|futhark|cuneiform|kanji|kana|japanese|hierogl|devanagari|hebrew|arabic|chinese|hanzi|brahmi/i;
+const powIsGlyph = script => !!script && POW_GLYPH.test(script);
+
+// Index buckets: powers have no small categorical key (domainTag is attested on
+// only a handful), so a 2,500-strong catalog is grouped by initial letter.
+function powGroupKey(name) {
+  const c = String(name || '').trim().charAt(0).toUpperCase();
+  return /[A-Z]/.test(c) ? c : '#';
+}
+
+// Index-row badge — a traced descent beats a plain multi-bearer count.
+function powerBadge(p) {
+  if (p.inheritorCount > 0) return {
+    label: `${p.inheritorCount} inherit`,
+    cls: 'power-badge-descent'
+  };
+  if (p.holderCount > 1) return {
+    label: `${p.holderCount} bearers`,
+    cls: 'power-badge-multi'
+  };
+  return null;
+}
+
+// ── Powers index ─────────────────────────────────────────────────────────────
+function PowersView({
+  powers,
+  byId,
+  selectedPowerId,
+  onOpenPower,
+  onVisibleOrder
+}) {
+  const [q, setQ] = __pState('');
+  const groups = __pMemo(() => {
+    const query = q.trim().toLowerCase();
+    const filtered = !query ? powers : powers.filter(p => {
+      const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value, ...(p.scopeTags || [])].join(' ').toLowerCase();
+      return hay.includes(query);
+    });
+    const byLetter = new Map();
+    for (const p of filtered) {
+      const k = powGroupKey(p.displayName);
+      if (!byLetter.has(k)) byLetter.set(k, []);
+      byLetter.get(k).push(p);
+    }
+    return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
+  }, [powers, q]);
+  __pEff(() => {
+    if (!onVisibleOrder) return;
+    const ids = [];
+    for (const [, list] of groups) for (const p of list) ids.push(p.id);
+    onVisibleOrder(ids);
+  }, [groups, onVisibleOrder]);
+  const heritable = __pMemo(() => powers.filter(p => p.inheritorCount > 0).length, [powers]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "items-view powers-view"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "items-head"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "items-head-row"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "items-title"
+  }, "Powers ", /*#__PURE__*/React.createElement("span", {
+    className: "items-count"
+  }, powers.length)), heritable > 0 && /*#__PURE__*/React.createElement("span", {
+    className: "items-showcased"
+  }, heritable, " traced down a bloodline")), /*#__PURE__*/React.createElement("p", {
+    className: "items-sub"
+  }, "Faculties across the pantheon \u2014 who wields each, and how it descends by blood."), /*#__PURE__*/React.createElement("div", {
+    className: "items-search"
+  }, /*#__PURE__*/React.createElement("input", {
+    placeholder: "Filter powers\u2026",
+    value: q,
+    onChange: e => setQ(e.target.value),
+    "aria-label": "Filter powers"
+  }), q && /*#__PURE__*/React.createElement("button", {
+    className: "items-search-clear",
+    onClick: () => setQ(''),
+    title: "Clear"
+  }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+    className: "items-grid powers-grid"
+  }, groups.map(([letter, list]) => /*#__PURE__*/React.createElement("div", {
+    className: "items-group powers-group",
+    key: letter
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "items-group-head"
+  }, letter, " ", /*#__PURE__*/React.createElement("span", {
+    className: "items-group-count"
+  }, list.length)), /*#__PURE__*/React.createElement("div", {
+    className: "items-rows"
+  }, list.map(p => {
+    const badge = powerBadge(p);
+    return /*#__PURE__*/React.createElement("button", {
+      key: p.id,
+      className: 'item-row power-index-row' + (p.id === selectedPowerId ? ' on' : ''),
+      onClick: () => onOpenPower(p.id)
+    }, /*#__PURE__*/React.createElement("span", {
+      className: 'item-row-name' + (powIsGlyph(p.term && p.term.script) ? ' glyph' : '')
+    }, p.displayName), /*#__PURE__*/React.createElement("span", {
+      className: "item-row-meta"
+    }, p.domainTag && /*#__PURE__*/React.createElement("span", {
+      className: "item-row-class"
+    }, humanizePow(p.domainTag)), p.inheritability && p.inheritability !== 'none' && /*#__PURE__*/React.createElement("span", {
+      className: 'power-herit herit-' + p.inheritability
+    }, p.inheritability), badge && /*#__PURE__*/React.createElement("span", {
+      className: 'item-badge ' + badge.cls
+    }, badge.label)));
+  })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
+    className: "items-empty"
+  }, "No powers match \"", q, "\".")));
+}
+
+// ── Power detail sub-sections ────────────────────────────────────────────────
+// Declarers — the figures who actually wield the faculty (attested, the roots
+// of any descent). The concrete cross-link back to figure entries.
+function PowerBearers({
+  holders,
+  byId,
+  onOpenFigure
+}) {
+  const inReg = (holders || []).filter(h => byId.get(h.personId));
+  if (!inReg.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-power-bearers"
+  }, /*#__PURE__*/React.createElement("h2", null, "Wielded by ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+    className: "power-bearers"
+  }, inReg.map((h, i) => {
+    const p = byId.get(h.personId);
+    return /*#__PURE__*/React.createElement("button", {
+      className: "power-bearer",
+      key: h.personId + '-' + i,
+      onClick: () => onOpenFigure(h.personId)
+    }, /*#__PURE__*/React.createElement(window.TierIcon, {
+      type: p.type,
+      size: 12
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "power-bearer-name"
+    }, window.displayName(p)), /*#__PURE__*/React.createElement("span", {
+      className: "power-bearer-meta"
+    }, p.tradition), h.inheritability && h.inheritability !== 'none' && /*#__PURE__*/React.createElement("span", {
+      className: 'power-herit herit-' + h.inheritability
+    }, h.inheritability));
+  })));
+}
+
+// The descent — the faculty's biography down a bloodline. Each edge links the
+// heir to the ancestor it descends from (a candidate inheritance, not attested).
+function PowerDescent({
+  inheritors,
+  byId,
+  onOpenFigure
+}) {
+  if (!inheritors || !inheritors.length) return null;
+  const genLabel = g => g === 1 ? 'parent' : g === 2 ? 'grandparent' : `${g} generations up`;
+  const sorted = [...inheritors].sort((a, b) => a.generation - b.generation);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-power-descent"
+  }, /*#__PURE__*/React.createElement("h2", null, "Descent ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, inheritors.length), /*#__PURE__*/React.createElement("span", {
+    className: "power-descent-note"
+  }, "candidate \u2014 by bloodline, not attested")), /*#__PURE__*/React.createElement("ol", {
+    className: "power-descent"
+  }, sorted.map((c, i) => {
+    const heir = byId.get(c.personId);
+    const anc = c.fromAncestorId ? byId.get(c.fromAncestorId) : null;
+    return /*#__PURE__*/React.createElement("li", {
+      className: "power-descent-step",
+      key: (c.personId || '') + '-' + i
+    }, /*#__PURE__*/React.createElement("span", {
+      className: 'power-cand-level level-' + c.level
+    }, c.level), /*#__PURE__*/React.createElement("span", {
+      className: "power-descent-who"
+    }, heir ? /*#__PURE__*/React.createElement("span", _extends({
+      className: "link"
+    }, window.pressable(() => onOpenFigure(c.personId), 'link')), window.displayName(heir)) : c.personId || '—'), /*#__PURE__*/React.createElement("span", {
+      className: "power-descent-from"
+    }, "via ", anc ? /*#__PURE__*/React.createElement("span", _extends({
+      className: "link"
+    }, window.pressable(() => onOpenFigure(c.fromAncestorId), 'link')), window.displayName(anc)) : c.fromAncestorId || '—', ' · ', genLabel(c.generation)));
+  })));
+}
+function PowerScopes({
+  scopeTags
+}) {
+  if (!scopeTags || !scopeTags.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-power-scopes"
+  }, /*#__PURE__*/React.createElement("h2", null, "Scope ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, scopeTags.length)), /*#__PURE__*/React.createElement("div", {
+    className: "power-scopes"
+  }, scopeTags.map((t, i) => /*#__PURE__*/React.createElement("span", {
+    className: "power-scope",
+    key: i
+  }, humanizePow(t)))));
+}
+function PowerSources({
+  sources
+}) {
+  if (!sources || !sources.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-power-sources"
+  }, /*#__PURE__*/React.createElement("h2", null, "Sources ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, sources.length)), /*#__PURE__*/React.createElement("div", {
+    className: "item-sources"
+  }, sources.map((s, i) => /*#__PURE__*/React.createElement("div", {
+    className: "item-source",
+    key: i
+  }, s.kind && /*#__PURE__*/React.createElement("span", {
+    className: "item-source-kind"
+  }, s.kind), /*#__PURE__*/React.createElement("span", {
+    className: "item-source-ref"
+  }, s.reference || (typeof s === 'string' ? s : ''))))));
+}
+
+// ── Power detail slide-over ──────────────────────────────────────────────────
+function PowerDetail({
+  power,
+  byId,
+  onClose,
+  onPrev,
+  onNext,
+  onOpenFigure
+}) {
+  const [local, setLocal] = __pState(power || null);
+  const [closing, setClosing] = __pState(false);
+  const panelRef = __pRef(null);
+  const openerRef = __pRef(null);
+  __pEff(() => {
+    if (power) {
+      setLocal(power);
+      setClosing(false);
+      return;
+    }
+    if (local) {
+      setClosing(true);
+      const t = setTimeout(() => {
+        setLocal(null);
+        setClosing(false);
+        const opener = openerRef.current;
+        openerRef.current = null;
+        if (opener && opener.focus && document.contains(opener)) {
+          try {
+            opener.focus({
+              preventScroll: true
+            });
+          } catch (_) {}
+        }
+      }, 180);
+      return () => clearTimeout(t);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [power && power.id]);
+  const hadRef = __pRef(false);
+  __pEff(() => {
+    const has = !!local;
+    if (has && !hadRef.current) {
+      if (!openerRef.current) openerRef.current = document.activeElement;
+      if (panelRef.current) {
+        try {
+          panelRef.current.focus({
+            preventScroll: true
+          });
+        } catch (_) {}
+      }
+    }
+    hadRef.current = has;
+  }, [!!local]);
+  __pEff(() => {
+    if (!local) return;
+    const el = document.querySelector('.power-detail .detail-scroll');
+    if (el) el.scrollTop = 0;
+  }, [local && local.id]);
+  if (!local) return null;
+  const p = local;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    className: 'detail-backdrop' + (closing ? ' closing' : ''),
+    onClick: onClose
+  }), /*#__PURE__*/React.createElement("aside", {
+    ref: panelRef,
+    tabIndex: -1,
+    className: 'detail item-detail power-detail' + (closing ? ' closing' : ''),
+    role: "dialog",
+    "aria-modal": "true",
+    "aria-label": p.displayName
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "detail-bar"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "nav"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "btn btn-ghost btn-sm",
+    onClick: onPrev,
+    title: "Previous (k)"
+  }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
+    className: "btn btn-ghost btn-sm",
+    onClick: onNext,
+    title: "Next (j)"
+  }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
+    className: "spacer"
+  }), /*#__PURE__*/React.createElement("button", {
+    className: "close",
+    onClick: onClose,
+    title: "Close (esc)",
+    "aria-label": "Close"
+  }, "\xD7")), /*#__PURE__*/React.createElement("div", {
+    className: "detail-scroll"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "detail-header"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "eyebrow"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "eyebrow-tier"
+  }, "Power"), p.domainTag && /*#__PURE__*/React.createElement("span", null, humanizePow(p.domainTag)), p.inheritability && /*#__PURE__*/React.createElement("span", {
+    className: 'power-herit herit-' + p.inheritability
+  }, p.inheritability === 'none' ? 'not heritable' : p.inheritability + ' heritable')), /*#__PURE__*/React.createElement("h1", null, p.displayName), p.term && p.term.value && /*#__PURE__*/React.createElement("div", {
+    className: "power-term"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: 'power-term-native' + (powIsGlyph(p.term.script) ? ' glyph' : '')
+  }, p.term.value), p.term.rom && /*#__PURE__*/React.createElement("span", {
+    className: "power-term-rom"
+  }, p.term.rom))), /*#__PURE__*/React.createElement(PowerBearers, {
+    holders: p.holders,
+    byId: byId,
+    onOpenFigure: onOpenFigure
+  }), /*#__PURE__*/React.createElement(PowerDescent, {
+    inheritors: p.inheritors,
+    byId: byId,
+    onOpenFigure: onOpenFigure
+  }), /*#__PURE__*/React.createElement(PowerScopes, {
+    scopeTags: p.scopeTags
+  }), /*#__PURE__*/React.createElement(PowerSources, {
+    sources: p.sources
+  }))));
+}
+Object.assign(window, {
+  PowersView,
+  PowerDetail
+});
+</script>
+<!-- Domains.jsx (pre-transformed) -->
+<script>
+// ═══════════════════════════════════════════════════════════════════════════
+//  Domains.jsx — the domain registry: index + domain detail slide-over.
+//  A domain is a sphere of governance (sky, war, the sea…). Where a power is a
+//  faculty a figure wields, a domain is a realm a figure presides over. The
+//  registry is aggregated in state.jsx (window.allDomains / window.domainById)
+//  from every figure's domains[]; this view reads it and the detail lists the
+//  figures who govern each sphere, with the context and citation for each.
+// ═══════════════════════════════════════════════════════════════════════════
+
+const {
+  useMemo: __dmMemo,
+  useEffect: __dmEff,
+  useState: __dmState,
+  useRef: __dmRef
+} = React;
+const humanizeDom = s => String(s == null ? '' : s).replace(/[-_]+/g, ' ');
+const DOM_GLYPH = /greek|runic|futhark|cuneiform|kanji|kana|japanese|hierogl|devanagari|hebrew|arabic|chinese|hanzi|brahmi/i;
+const domIsGlyph = script => !!script && DOM_GLYPH.test(script);
+function domGroupKey(name) {
+  const c = String(name || '').trim().charAt(0).toUpperCase();
+  return /[A-Z]/.test(c) ? c : '#';
+}
+function domainBadge(d) {
+  if (d.holderCount > 1) return {
+    label: `${d.holderCount} figures`,
+    cls: 'domain-badge-multi'
+  };
+  return null;
+}
+
+// ── Domains index ────────────────────────────────────────────────────────────
+function Domains({
+  domains,
+  byId,
+  selectedDomainId,
+  onOpenDomain,
+  onVisibleOrder
+}) {
+  const [q, setQ] = __dmState('');
+  const groups = __dmMemo(() => {
+    const query = q.trim().toLowerCase();
+    const filtered = !query ? domains : domains.filter(d => {
+      const hay = [d.displayName, d.id, d.term && d.term.value, ...(d.contextTags || [])].join(' ').toLowerCase();
+      return hay.includes(query);
+    });
+    const byLetter = new Map();
+    for (const d of filtered) {
+      const k = domGroupKey(d.displayName);
+      if (!byLetter.has(k)) byLetter.set(k, []);
+      byLetter.get(k).push(d);
+    }
+    return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
+  }, [domains, q]);
+  __dmEff(() => {
+    if (!onVisibleOrder) return;
+    const ids = [];
+    for (const [, list] of groups) for (const d of list) ids.push(d.id);
+    onVisibleOrder(ids);
+  }, [groups, onVisibleOrder]);
+  const shared = __dmMemo(() => domains.filter(d => d.holderCount > 1).length, [domains]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "items-view domains-view"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "items-head"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "items-head-row"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "items-title"
+  }, "Domains ", /*#__PURE__*/React.createElement("span", {
+    className: "items-count"
+  }, domains.length)), shared > 0 && /*#__PURE__*/React.createElement("span", {
+    className: "items-showcased"
+  }, shared, " shared across figures")), /*#__PURE__*/React.createElement("p", {
+    className: "items-sub"
+  }, "Spheres of governance \u2014 the realms each figure presides over."), /*#__PURE__*/React.createElement("div", {
+    className: "items-search"
+  }, /*#__PURE__*/React.createElement("input", {
+    placeholder: "Filter domains\u2026",
+    value: q,
+    onChange: e => setQ(e.target.value),
+    "aria-label": "Filter domains"
+  }), q && /*#__PURE__*/React.createElement("button", {
+    className: "items-search-clear",
+    onClick: () => setQ(''),
+    title: "Clear"
+  }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+    className: "items-grid domains-grid"
+  }, groups.map(([letter, list]) => /*#__PURE__*/React.createElement("div", {
+    className: "items-group domains-group",
+    key: letter
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "items-group-head"
+  }, letter, " ", /*#__PURE__*/React.createElement("span", {
+    className: "items-group-count"
+  }, list.length)), /*#__PURE__*/React.createElement("div", {
+    className: "items-rows"
+  }, list.map(d => {
+    const badge = domainBadge(d);
+    return /*#__PURE__*/React.createElement("button", {
+      key: d.id,
+      className: 'item-row domain-index-row' + (d.id === selectedDomainId ? ' on' : ''),
+      onClick: () => onOpenDomain(d.id)
+    }, /*#__PURE__*/React.createElement("span", {
+      className: 'item-row-name' + (domIsGlyph(d.term && d.term.script) ? ' glyph' : '')
+    }, d.displayName), /*#__PURE__*/React.createElement("span", {
+      className: "item-row-meta"
+    }, badge && /*#__PURE__*/React.createElement("span", {
+      className: 'item-badge ' + badge.cls
+    }, badge.label)));
+  })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
+    className: "items-empty"
+  }, "No domains match \"", q, "\".")));
+}
+
+// ── Domain detail sub-sections ───────────────────────────────────────────────
+// Governing figures — the registry entries that preside over this sphere, with
+// the context (lifelong, post-mortem…) and citation each carries.
+function DomainGovernors({
+  holders,
+  byId,
+  onOpenFigure
+}) {
+  const inReg = (holders || []).filter(h => byId.get(h.personId));
+  if (!inReg.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-domain-govs"
+  }, /*#__PURE__*/React.createElement("h2", null, "Governed by ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, inReg.length)), /*#__PURE__*/React.createElement("div", {
+    className: "domain-govs"
+  }, inReg.map((h, i) => {
+    const p = byId.get(h.personId);
+    const ref = h.sources && h.sources[0] && h.sources[0].reference;
+    return /*#__PURE__*/React.createElement("div", {
+      className: "domain-gov",
+      key: h.personId + '-' + i
+    }, /*#__PURE__*/React.createElement("button", {
+      className: "domain-gov-who",
+      onClick: () => onOpenFigure(h.personId)
+    }, /*#__PURE__*/React.createElement(window.TierIcon, {
+      type: p.type,
+      size: 12
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "domain-gov-name"
+    }, window.displayName(p)), /*#__PURE__*/React.createElement("span", {
+      className: "domain-gov-meta"
+    }, p.tradition), h.contextTag && /*#__PURE__*/React.createElement("span", {
+      className: "domain-gov-ctx"
+    }, humanizeDom(h.contextTag))), h.notes && /*#__PURE__*/React.createElement("div", {
+      className: "domain-gov-note"
+    }, h.notes), ref && /*#__PURE__*/React.createElement("div", {
+      className: "domain-gov-cite"
+    }, ref));
+  })));
+}
+function DomainSources({
+  sources
+}) {
+  if (!sources || !sources.length) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "section section-domain-sources"
+  }, /*#__PURE__*/React.createElement("h2", null, "Sources ", /*#__PURE__*/React.createElement("span", {
+    className: "count"
+  }, sources.length)), /*#__PURE__*/React.createElement("div", {
+    className: "item-sources"
+  }, sources.map((s, i) => /*#__PURE__*/React.createElement("div", {
+    className: "item-source",
+    key: i
+  }, s.kind && /*#__PURE__*/React.createElement("span", {
+    className: "item-source-kind"
+  }, s.kind), /*#__PURE__*/React.createElement("span", {
+    className: "item-source-ref"
+  }, s.reference || (typeof s === 'string' ? s : ''))))));
+}
+
+// ── Domain detail slide-over ─────────────────────────────────────────────────
+function DomainDetail({
+  domain,
+  byId,
+  onClose,
+  onPrev,
+  onNext,
+  onOpenFigure
+}) {
+  const [local, setLocal] = __dmState(domain || null);
+  const [closing, setClosing] = __dmState(false);
+  const panelRef = __dmRef(null);
+  const openerRef = __dmRef(null);
+  __dmEff(() => {
+    if (domain) {
+      setLocal(domain);
+      setClosing(false);
+      return;
+    }
+    if (local) {
+      setClosing(true);
+      const t = setTimeout(() => {
+        setLocal(null);
+        setClosing(false);
+        const opener = openerRef.current;
+        openerRef.current = null;
+        if (opener && opener.focus && document.contains(opener)) {
+          try {
+            opener.focus({
+              preventScroll: true
+            });
+          } catch (_) {}
+        }
+      }, 180);
+      return () => clearTimeout(t);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [domain && domain.id]);
+  const hadRef = __dmRef(false);
+  __dmEff(() => {
+    const has = !!local;
+    if (has && !hadRef.current) {
+      if (!openerRef.current) openerRef.current = document.activeElement;
+      if (panelRef.current) {
+        try {
+          panelRef.current.focus({
+            preventScroll: true
+          });
+        } catch (_) {}
+      }
+    }
+    hadRef.current = has;
+  }, [!!local]);
+  __dmEff(() => {
+    if (!local) return;
+    const el = document.querySelector('.domain-detail .detail-scroll');
+    if (el) el.scrollTop = 0;
+  }, [local && local.id]);
+  if (!local) return null;
+  const d = local;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    className: 'detail-backdrop' + (closing ? ' closing' : ''),
+    onClick: onClose
+  }), /*#__PURE__*/React.createElement("aside", {
+    ref: panelRef,
+    tabIndex: -1,
+    className: 'detail item-detail domain-detail' + (closing ? ' closing' : ''),
+    role: "dialog",
+    "aria-modal": "true",
+    "aria-label": d.displayName
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "detail-bar"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "nav"
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "btn btn-ghost btn-sm",
+    onClick: onPrev,
+    title: "Previous (k)"
+  }, "\u2191 Prev"), /*#__PURE__*/React.createElement("button", {
+    className: "btn btn-ghost btn-sm",
+    onClick: onNext,
+    title: "Next (j)"
+  }, "\u2193 Next")), /*#__PURE__*/React.createElement("div", {
+    className: "spacer"
+  }), /*#__PURE__*/React.createElement("button", {
+    className: "close",
+    onClick: onClose,
+    title: "Close (esc)",
+    "aria-label": "Close"
+  }, "\xD7")), /*#__PURE__*/React.createElement("div", {
+    className: "detail-scroll"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "detail-header"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "eyebrow"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "eyebrow-tier"
+  }, "Domain"), d.holderCount > 1 && /*#__PURE__*/React.createElement("span", null, d.holderCount, " figures")), /*#__PURE__*/React.createElement("h1", null, d.displayName), d.term && d.term.value && /*#__PURE__*/React.createElement("div", {
+    className: "power-term"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: 'power-term-native' + (domIsGlyph(d.term.script) ? ' glyph' : '')
+  }, d.term.value), d.term.rom && /*#__PURE__*/React.createElement("span", {
+    className: "power-term-rom"
+  }, d.term.rom))), /*#__PURE__*/React.createElement(DomainGovernors, {
+    holders: d.holders,
+    byId: byId,
+    onOpenFigure: onOpenFigure
+  }), /*#__PURE__*/React.createElement(DomainSources, {
+    sources: d.sources
+  }))));
+}
+Object.assign(window, {
+  Domains,
+  DomainDetail
+});
+</script>
 <!-- Graph.jsx (pre-transformed) -->
 <script>
 // ═══════════════════════════════════════════════════════════════════════════
@@ -260691,7 +261552,17 @@ function TopBar({
     onClick: () => setView('items'),
     role: "tab",
     "aria-selected": view === 'items'
-  }, "Items"))));
+  }, "Items"), /*#__PURE__*/React.createElement("button", {
+    className: 'btn' + (view === 'powers' ? ' btn-on' : ''),
+    onClick: () => setView('powers'),
+    role: "tab",
+    "aria-selected": view === 'powers'
+  }, "Powers"), /*#__PURE__*/React.createElement("button", {
+    className: 'btn' + (view === 'domains' ? ' btn-on' : ''),
+    onClick: () => setView('domains'),
+    role: "tab",
+    "aria-selected": view === 'domains'
+  }, "Domains"))));
 }
 function Rail({
   filters,
@@ -260896,12 +261767,18 @@ function Shell() {
   const [graphFocusId, setGraphFocusId] = __sState(null);
   const [atlasFocus, setAtlasFocus] = __sState(null); // tradition name
   const [selectedItemId, setSelectedItemId] = __sState(null);
+  const [selectedPowerId, setSelectedPowerId] = __sState(null);
+  const [selectedDomainId, setSelectedDomainId] = __sState(null);
   const searchRef = __sRef(null);
 
   // Item registry (built in data.js, read once). The sorted list drives the
   // Items index and the j/k navigation between open items.
   const itemList = __sMemo(() => window.allItems ? window.allItems() : [], []);
   const selectedItem = selectedItemId && window.itemById ? window.itemById(selectedItemId) : null;
+  const powerList = __sMemo(() => window.allPowers ? window.allPowers() : [], []);
+  const selectedPower = selectedPowerId && window.powerById ? window.powerById(selectedPowerId) : null;
+  const domainList = __sMemo(() => window.allDomains ? window.allDomains() : [], []);
+  const selectedDomain = selectedDomainId && window.domainById ? window.domainById(selectedDomainId) : null;
 
   // ── URL sync ─────────────────────────────────────────────────────────
   // Hash schema: #/<view>[/<id>]
@@ -260921,13 +261798,15 @@ function Shell() {
     gFocus: null,
     aFocus: null,
     itemId: null,
+    powerId: null,
+    domainId: null,
     initialized: false
   });
   const applyHash = __sCb(() => {
     const raw = (window.location.hash || '').replace(/^#\/?/, '');
     const parts = raw.split('/').filter(Boolean);
     const v = parts[0];
-    if (!['browse', 'graph', 'atlas', 'items'].includes(v)) return;
+    if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(v)) return;
     // Malformed escapes (#/browse/%zz) must not crash applyHash — it runs in
     // a mount effect, so a throw here would loop the ErrorBoundary forever.
     let id = null;
@@ -260939,27 +261818,15 @@ function Shell() {
       }
     }
     setView(v);
-    if (v === 'browse') {
-      selection.setSelectedId(id);
-      setGraphFocusId(null);
-      setAtlasFocus(null);
-      setSelectedItemId(null);
-    } else if (v === 'graph') {
-      setGraphFocusId(id);
-      selection.setSelectedId(null);
-      setAtlasFocus(null);
-      setSelectedItemId(null);
-    } else if (v === 'items') {
-      setSelectedItemId(id);
-      selection.setSelectedId(null);
-      setGraphFocusId(null);
-      setAtlasFocus(null);
-    } else {
-      setAtlasFocus(id);
-      selection.setSelectedId(null);
-      setGraphFocusId(null);
-      setSelectedItemId(null);
-    }
+    // Clear every detail axis, then set the one this view owns — keeps the
+    // slide-overs mutually exclusive however the hash arrives.
+    selection.setSelectedId(null);
+    setGraphFocusId(null);
+    setAtlasFocus(null);
+    setSelectedItemId(null);
+    setSelectedPowerId(null);
+    setSelectedDomainId(null);
+    if (v === 'browse') selection.setSelectedId(id);else if (v === 'graph') setGraphFocusId(id);else if (v === 'atlas') setAtlasFocus(id);else if (v === 'items') setSelectedItemId(id);else if (v === 'powers') setSelectedPowerId(id);else if (v === 'domains') setSelectedDomainId(id);
   }, [selection]);
   __sEff(() => {
     applyHash();
@@ -260984,6 +261851,10 @@ function Shell() {
       target += '/' + encodeURIComponent(atlasFocus);
     } else if (view === 'items' && selectedItemId) {
       target += '/' + encodeURIComponent(selectedItemId);
+    } else if (view === 'powers' && selectedPowerId) {
+      target += '/' + encodeURIComponent(selectedPowerId);
+    } else if (view === 'domains' && selectedDomainId) {
+      target += '/' + encodeURIComponent(selectedDomainId);
     }
     if (target === window.location.hash) {
       urlPrevRef.current = {
@@ -260992,6 +261863,8 @@ function Shell() {
         gFocus: graphFocusId,
         aFocus: atlasFocus,
         itemId: selectedItemId,
+        powerId: selectedPowerId,
+        domainId: selectedDomainId,
         initialized: true
       };
       return;
@@ -261003,7 +261876,7 @@ function Shell() {
       // with #/browse and corrupt the history entry. The hash is the source
       // of truth at boot: only canonicalize when there is no usable hash.
       const first = (window.location.hash || '').replace(/^#\/?/, '').split('/')[0];
-      if (!['browse', 'graph', 'atlas', 'items'].includes(first)) {
+      if (!['browse', 'graph', 'atlas', 'items', 'powers', 'domains'].includes(first)) {
         window.history.replaceState({}, '', target);
       }
       urlPrevRef.current = {
@@ -261012,13 +261885,15 @@ function Shell() {
         gFocus: graphFocusId,
         aFocus: atlasFocus,
         itemId: selectedItemId,
+        powerId: selectedPowerId,
+        domainId: selectedDomainId,
         initialized: true
       };
       return;
     }
     // Replace if: same view, moving between two non-null detail entries
     // (continuation) so the history doesn't fill with every j/k press.
-    const continuation = prev.view === view && (view === 'browse' && prev.selId != null && selection.selectedId != null || view === 'graph' && prev.gFocus != null && graphFocusId != null || view === 'atlas' && prev.aFocus != null && atlasFocus != null || view === 'items' && prev.itemId != null && selectedItemId != null);
+    const continuation = prev.view === view && (view === 'browse' && prev.selId != null && selection.selectedId != null || view === 'graph' && prev.gFocus != null && graphFocusId != null || view === 'atlas' && prev.aFocus != null && atlasFocus != null || view === 'items' && prev.itemId != null && selectedItemId != null || view === 'powers' && prev.powerId != null && selectedPowerId != null || view === 'domains' && prev.domainId != null && selectedDomainId != null);
     if (continuation) {
       window.history.replaceState({}, '', target);
     } else {
@@ -261030,9 +261905,11 @@ function Shell() {
       gFocus: graphFocusId,
       aFocus: atlasFocus,
       itemId: selectedItemId,
+      powerId: selectedPowerId,
+      domainId: selectedDomainId,
       initialized: true
     };
-  }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId]);
+  }, [view, selection.selectedId, graphFocusId, atlasFocus, selectedItemId, selectedPowerId, selectedDomainId]);
   // ─────────────────────────────────────────────────────────────────────
 
   const selectedEntry = selection.selectedId ? byId.get(selection.selectedId) : null;
@@ -261066,6 +261943,27 @@ function Shell() {
     if (nextId) setSelectedItemId(nextId);
   }, [selectedItemId, itemList]);
 
+  // Step between open powers / domains (mirrors moveItem — uses the index's
+  // reported visible order, falling back to registry order).
+  const powerOrderRef = __sRef(null);
+  const movePower = __sCb(delta => {
+    if (!selectedPowerId) return;
+    const order = powerOrderRef.current && powerOrderRef.current.length ? powerOrderRef.current : powerList.map(p => p.id);
+    const idx = order.indexOf(selectedPowerId);
+    if (idx < 0) return;
+    const nextId = order[idx + delta];
+    if (nextId) setSelectedPowerId(nextId);
+  }, [selectedPowerId, powerList]);
+  const domainOrderRef = __sRef(null);
+  const moveDomain = __sCb(delta => {
+    if (!selectedDomainId) return;
+    const order = domainOrderRef.current && domainOrderRef.current.length ? domainOrderRef.current : domainList.map(d => d.id);
+    const idx = order.indexOf(selectedDomainId);
+    if (idx < 0) return;
+    const nextId = order[idx + delta];
+    if (nextId) setSelectedDomainId(nextId);
+  }, [selectedDomainId, domainList]);
+
   // Open an item from anywhere (the index, or a figure's material culture).
   // Opening an item is an Items-view navigation: switch views and clear the
   // figure selection so the two slide-overs never stack.
@@ -261098,6 +261996,14 @@ function Shell() {
       }
       if (selectedItemId) {
         setSelectedItemId(null);
+        return;
+      }
+      if (selectedPowerId) {
+        setSelectedPowerId(null);
+        return;
+      }
+      if (selectedDomainId) {
+        setSelectedDomainId(null);
         return;
       }
       if (selection.selectedId) {
@@ -261143,6 +262049,40 @@ function Shell() {
         e.preventDefault();
         markKbNav();
         moveItem(-1);
+        return;
+      }
+      return;
+    }
+
+    // Power-detail navigation
+    if (selectedPowerId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        markKbNav();
+        movePower(1);
+        return;
+      }
+      if (e.key === 'k' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        markKbNav();
+        movePower(-1);
+        return;
+      }
+      return;
+    }
+
+    // Domain-detail navigation
+    if (selectedDomainId) {
+      if (e.key === 'j' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        markKbNav();
+        moveDomain(1);
+        return;
+      }
+      if (e.key === 'k' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        markKbNav();
+        moveDomain(-1);
         return;
       }
       return;
@@ -261251,6 +262191,22 @@ function Shell() {
     onVisibleOrder: ids => {
       itemOrderRef.current = ids;
     }
+  }), view === 'powers' && /*#__PURE__*/React.createElement(window.PowersView, {
+    powers: powerList,
+    byId: byId,
+    selectedPowerId: selectedPowerId,
+    onOpenPower: id => setSelectedPowerId(id),
+    onVisibleOrder: ids => {
+      powerOrderRef.current = ids;
+    }
+  }), view === 'domains' && /*#__PURE__*/React.createElement(window.Domains, {
+    domains: domainList,
+    byId: byId,
+    selectedDomainId: selectedDomainId,
+    onOpenDomain: id => setSelectedDomainId(id),
+    onVisibleOrder: ids => {
+      domainOrderRef.current = ids;
+    }
   }))), /*#__PURE__*/React.createElement(window.Detail, {
     entry: selectedEntry,
     byId: byId,
@@ -261278,6 +262234,28 @@ function Shell() {
       setSelectedItemId(null);
       selection.setSelectedId(id);
     }
+  }), /*#__PURE__*/React.createElement(window.PowerDetail, {
+    power: selectedPower,
+    byId: byId,
+    onClose: () => setSelectedPowerId(null),
+    onPrev: () => movePower(-1),
+    onNext: () => movePower(1),
+    onOpenFigure: id => {
+      setView('browse');
+      setSelectedPowerId(null);
+      selection.setSelectedId(id);
+    }
+  }), /*#__PURE__*/React.createElement(window.DomainDetail, {
+    domain: selectedDomain,
+    byId: byId,
+    onClose: () => setSelectedDomainId(null),
+    onPrev: () => moveDomain(-1),
+    onNext: () => moveDomain(1),
+    onOpenFigure: id => {
+      setView('browse');
+      setSelectedDomainId(null);
+      selection.setSelectedId(id);
+    }
   }), cmdkOpen && /*#__PURE__*/React.createElement(window.CommandPalette, {
     people: people,
     onClose: () => setCmdkOpen(false),
@@ -261287,6 +262265,8 @@ function Shell() {
       // Always drop any open item panel first so the two slide-overs
       // never stack (mirror of openItem clearing the figure selection).
       setSelectedItemId(null);
+      setSelectedPowerId(null);
+      setSelectedDomainId(null);
       if (view === 'graph') {
         setGraphFocusId(id);
       } else {
