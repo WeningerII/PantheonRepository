@@ -22,7 +22,7 @@ Quality bar: every scenario PASS. **Result: 34/34 passed.**
 | S15 | Atlas view | the atlas mounts all mapped territories | ✅ PASS | 331 paths, 238 traditions |
 | S16 | Atlas deep-link | #/atlas/<tradition> focuses that territory | ✅ PASS | focused Greek territory |
 | S17 | Lifecycle | a dense lifecycle lays out stages without overlap | ✅ PASS | 17 stages, min gap 30px |
-| S18 | Items registry | the Items view lists the object corpus grouped by kind | ✅ PASS | 1241 item rows, grouped |
+| S18 | Items registry | the Items view lists the object corpus grouped by kind | ✅ PASS | 1336 item rows, grouped |
 | S19 | Item custody | an item detail names its custody chain and links registry holders | ✅ PASS | custody chain with linked holder |
 | S20 | Keyboard nav | j/k move the cursor, Enter opens it, Escape closes | ✅ PASS | cursor "Abaasy" opened + closed |
 | S21 | Persistence — quota | oversized corpus stays in memory; the atlas still persists | ✅ PASS | people=null (quota), atlas persisted, UI populated |
