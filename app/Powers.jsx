@@ -29,13 +29,50 @@ function powerBadge(p) {
   return null;
 }
 
+// Heritability is authored as free text — dozens of variants ("none",
+// "non-inheritable", "unique-to-bearer", "patrilineal", "lineage-conferred",
+// "function of the supreme god"…). Canonicalize into a small, meaningful set so
+// it can be faceted and badged consistently.
+const POWER_HERIT_LABEL = {
+  full: 'Full', partial: 'Partial', trace: 'Trace', lineage: 'By lineage',
+  shared: 'Shared', learned: 'Learned', innate: 'Innate', unique: 'Unique to bearer',
+  none: 'Not heritable', unspecified: 'Unspecified', other: 'Other',
+};
+const POWER_HERIT_RANK = {
+  full: 0, partial: 1, trace: 2, lineage: 3, shared: 4, learned: 5,
+  innate: 6, unique: 7, none: 8, unspecified: 9, other: 10,
+};
+function powerHeritLabel(b) { return POWER_HERIT_LABEL[b] || humanizePow(b); }
+function powerHeritBucket(raw) {
+  const s = String(raw == null ? '' : raw).toLowerCase().trim();
+  if (!s) return 'unspecified';
+  if (/\bfull\b|fully|^heritable$/.test(s)) return 'full';
+  if (/\bpartial\b/.test(s)) return 'partial';
+  if (/\btrace\b/.test(s)) return 'trace';
+  if (/linea(l|ge)|patrilineal|matrilineal|hereditary|\bdescent\b|dynast|\boffice\b|priestly|earth-priest|smith-caste|\broyal\b/.test(s)) return 'lineage';
+  if (/shared|collective|class-wide|among.?kind|\bkin\b|family/.test(s)) return 'shared';
+  if (/learn|cultivat|acquir|transmiss|transmit|taught|served by/.test(s)) return 'learned';
+  if (/innate/.test(s)) return 'innate';
+  if (/unique|personal|one.?time|prototype|to bearer|to kutkh|to big-raven|demonstrative/.test(s)) return 'unique';
+  if (/none|non-?inherit|not-?inherit|not inherit|non-?herit|non-?transfer|not transfer|\bno\b|n\/a|function of|manifest|possession|cursed|aetiolog/.test(s)) return 'none';
+  return 'other';
+}
+
 // ── Powers index ─────────────────────────────────────────────────────────────
 function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisibleOrder }) {
   const [q, setQ] = __pState('');
+  const [herit, setHerit] = __pState(() => new Set());
+
+  const heritOptions = __pMemo(
+    () => window.buildFacetOptions(powers, (p) => powerHeritBucket(p.inheritability), powerHeritLabel, POWER_HERIT_RANK),
+    [powers]);
+  const faceted = __pMemo(
+    () => (herit.size ? powers.filter((p) => herit.has(powerHeritBucket(p.inheritability))) : powers),
+    [powers, herit]);
 
   const groups = __pMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? powers : powers.filter((p) => {
+    const filtered = !query ? faceted : faceted.filter((p) => {
       const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value,
         ...(p.scopeTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
@@ -48,7 +85,7 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
     }
     return [...byLetter.entries()].sort((a, b) =>
       (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [powers, q]);
+  }, [faceted, q]);
 
   __pEff(() => {
     if (!onVisibleOrder) return;
@@ -58,14 +95,17 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
   }, [groups, onVisibleOrder]);
 
   const heritable = __pMemo(() => powers.filter((p) => p.inheritorCount > 0).length, [powers]);
+  const toggleHerit = (v) => setHerit((prev) => {
+    const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
+  });
 
   return (
     <div className="items-view powers-view">
       <div className="items-head">
         <div className="items-head-row">
-          <h2 className="items-title">Powers <span className="items-count">{powers.length}</span></h2>
-          {total > powers.length ? (
-            <span className="items-showcased">filtered — {powers.length} of {total}</span>
+          <h2 className="items-title">Powers <span className="items-count">{faceted.length}</span></h2>
+          {total > faceted.length ? (
+            <span className="items-showcased">filtered — {faceted.length} of {total}</span>
           ) : heritable > 0 && (
             <span className="items-showcased">{heritable} traced down a bloodline</span>
           )}
@@ -82,6 +122,13 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
           />
           {q && <button className="items-search-clear" onClick={() => setQ('')} title="Clear">×</button>}
         </div>
+        <window.FacetBar
+          label="Heritability"
+          options={heritOptions}
+          active={herit}
+          onToggle={toggleHerit}
+          onClear={() => setHerit(new Set())}
+        />
       </div>
 
       <div className="items-grid powers-grid">
@@ -93,6 +140,7 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
             <div className="items-rows">
               {list.map((p) => {
                 const badge = powerBadge(p);
+                const hb = powerHeritBucket(p.inheritability);
                 return (
                   <button
                     key={p.id}
@@ -104,8 +152,8 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
                     </span>
                     <span className="item-row-meta">
                       {p.domainTag && <span className="item-row-class">{humanizePow(p.domainTag)}</span>}
-                      {p.inheritability && p.inheritability !== 'none' && (
-                        <span className={'power-herit herit-' + p.inheritability}>{p.inheritability}</span>
+                      {hb !== 'none' && hb !== 'unspecified' && (
+                        <span className={'power-herit herit-' + hb}>{powerHeritLabel(hb)}</span>
                       )}
                       {badge && <span className={'item-badge ' + badge.cls}>{badge.label}</span>}
                     </span>
@@ -117,7 +165,7 @@ function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisib
         ))}
         {groups.length === 0 && (
           <div className="items-empty">
-            {powers.length === 0 ? 'No powers match the active filters.' : `No powers match "${q}".`}
+            {faceted.length === 0 ? 'No powers match the active filters.' : `No powers match "${q}".`}
           </div>
         )}
       </div>

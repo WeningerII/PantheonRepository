@@ -3196,6 +3196,30 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 .domain-gov-note { font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
 .domain-gov-cite { font: 400 12px/1.5 var(--font-serif); color: var(--ink-3); }
 
+/* ── Faceted-filter bar (Items / Powers / Domains headers) ────────────────── */
+.facet-bar { display: flex; align-items: baseline; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.facet-bar-label {
+  font: 500 9px/1.4 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--mute); flex: 0 0 auto; padding-top: 4px;
+}
+.facet-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.facet-chip {
+  display: inline-flex; align-items: center; gap: 5px; cursor: pointer;
+  padding: 3px 9px; border-radius: 999px; border: 1px solid var(--rule-2);
+  background: var(--surface); color: var(--ink-2, var(--ink));
+  font: 500 11.5px/1.4 var(--font-serif);
+  transition: border-color .12s, background .12s, color .12s;
+}
+.facet-chip:hover { border-color: var(--accent-ring); }
+.facet-chip.on { background: var(--accent-bg); border-color: var(--accent-ring); color: var(--accent); }
+.facet-chip-count {
+  font: 500 9.5px/1 var(--font-mono); color: var(--mute);
+  padding: 1px 4px; border-radius: 999px; background: var(--surface-2);
+}
+.facet-chip.on .facet-chip-count { background: var(--surface); color: var(--accent); }
+.facet-clear { color: var(--mute); border-style: dashed; }
+.facet-clear:hover { color: var(--ink); }
+
 /* ── Material culture cross-link (figure detail → item registry) ─────────── */
 .material-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .material-item {

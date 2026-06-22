@@ -3269,6 +3269,30 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
 .domain-gov-note { font: italic 400 12.5px/1.5 var(--font-serif); color: var(--mute); }
 .domain-gov-cite { font: 400 12px/1.5 var(--font-serif); color: var(--ink-3); }
 
+/* ── Faceted-filter bar (Items / Powers / Domains headers) ────────────────── */
+.facet-bar { display: flex; align-items: baseline; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.facet-bar-label {
+  font: 500 9px/1.4 var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--mute); flex: 0 0 auto; padding-top: 4px;
+}
+.facet-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.facet-chip {
+  display: inline-flex; align-items: center; gap: 5px; cursor: pointer;
+  padding: 3px 9px; border-radius: 999px; border: 1px solid var(--rule-2);
+  background: var(--surface); color: var(--ink-2, var(--ink));
+  font: 500 11.5px/1.4 var(--font-serif);
+  transition: border-color .12s, background .12s, color .12s;
+}
+.facet-chip:hover { border-color: var(--accent-ring); }
+.facet-chip.on { background: var(--accent-bg); border-color: var(--accent-ring); color: var(--accent); }
+.facet-chip-count {
+  font: 500 9.5px/1 var(--font-mono); color: var(--mute);
+  padding: 1px 4px; border-radius: 999px; background: var(--surface-2);
+}
+.facet-chip.on .facet-chip-count { background: var(--surface); color: var(--accent); }
+.facet-clear { color: var(--mute); border-style: dashed; }
+.facet-clear:hover { color: var(--ink); }
+
 /* ── Material culture cross-link (figure detail → item registry) ─────────── */
 .material-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .material-item {
@@ -256015,6 +256039,62 @@ function domainById(id) {
   }
 }
 
+// Shared faceted-filter bar — a labelled row of multi-select chips with live
+// counts, rendered in the Items / Powers / Domains headers. Stateless: the
+// owning view holds the active Set and owns the filter predicate; this only
+// draws the chips and reports toggles. Hidden when there's nothing to facet
+// (fewer than two distinct values).
+function FacetBar({
+  label,
+  options,
+  active,
+  onToggle,
+  onClear
+}) {
+  if (!options || options.length < 2) return null;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "facet-bar"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "facet-bar-label"
+  }, label), /*#__PURE__*/React.createElement("div", {
+    className: "facet-chips"
+  }, options.map(o => {
+    const on = active.has(o.value);
+    return /*#__PURE__*/React.createElement("button", {
+      key: o.value,
+      type: "button",
+      className: 'facet-chip' + (on ? ' on' : ''),
+      "aria-pressed": on,
+      onClick: () => onToggle(o.value)
+    }, o.label, /*#__PURE__*/React.createElement("span", {
+      className: "facet-chip-count"
+    }, o.count));
+  }), active.size > 0 && /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    className: "facet-chip facet-clear",
+    onClick: onClear
+  }, "clear")));
+}
+
+// Build sorted facet options from a list: bucket each entry, tally counts, and
+// order by an optional rank map (then count, then label). `bucketOf` may return
+// a string (single-valued) or an array of strings (multi-valued, e.g. a domain
+// with several contexts — it then tallies toward each).
+function buildFacetOptions(list, bucketOf, labelOf, rank) {
+  const counts = new Map();
+  for (const x of list) {
+    let bs = bucketOf(x);
+    if (bs == null) continue;
+    if (!Array.isArray(bs)) bs = [bs];
+    for (const b of bs) if (b != null) counts.set(b, (counts.get(b) || 0) + 1);
+  }
+  return [...counts.entries()].map(([value, count]) => ({
+    value,
+    label: labelOf(value),
+    count
+  })).sort((a, b) => (rank && rank[a.value] != null ? rank[a.value] : 50) - (rank && rank[b.value] != null ? rank[b.value] : 50) || b.count - a.count || String(a.label).localeCompare(String(b.label)));
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER,
@@ -256048,7 +256128,9 @@ Object.assign(window, {
   allPowers,
   powerById,
   allDomains,
-  domainById
+  domainById,
+  FacetBar,
+  buildFacetOptions
 });
 </script>
 <!-- Browse.jsx (pre-transformed) -->
@@ -258150,6 +258232,67 @@ const humanizeItem = s => String(s || '').replace(/[-_]+/g, ' ');
 const GLYPH_SCRIPTS = /greek|runic|futhark|cuneiform|kanji|kana|japanese|hierogl|devanagari|hebrew|arabic|chinese|hanzi|brahmi/i;
 const isGlyphScript = script => !!script && GLYPH_SCRIPTS.test(script);
 
+// `kind` is authored as free text — 118 distinct values, most of them
+// singletons ("blade", "thunderbolt-weapon", "cult object" vs "cult-object"…).
+// Canonicalize into a small set of macro families for faceting; the index still
+// groups by the raw kind within a family. Ordered keyword match, first wins.
+const ITEM_BUCKET_LABEL = {
+  weapon: 'Weapons',
+  armor: 'Armor',
+  regalia: 'Regalia',
+  garment: 'Worn & borne',
+  symbol: 'Symbols',
+  sculpture: 'Sculpture & image',
+  monument: 'Monuments & sites',
+  vessel: 'Vessels',
+  instrument: 'Instruments',
+  tool: 'Tools',
+  mount: 'Mounts & beasts',
+  text: 'Texts',
+  substance: 'Substances',
+  ritual: 'Ritual & sacred',
+  other: 'Other'
+};
+const ITEM_BUCKET_RANK = {
+  weapon: 0,
+  armor: 1,
+  regalia: 2,
+  garment: 3,
+  symbol: 4,
+  sculpture: 5,
+  monument: 6,
+  vessel: 7,
+  instrument: 8,
+  tool: 9,
+  mount: 10,
+  text: 11,
+  substance: 12,
+  ritual: 13,
+  other: 14
+};
+function itemBucketLabel(b) {
+  return ITEM_BUCKET_LABEL[b] || humanizeItem(b);
+}
+function itemKindBucket(kind) {
+  const s = String(kind || '').toLowerCase().trim();
+  if (!s || s === 'other' || s === 'object' || s === 'concept' || s === 'artifact') return 'other';
+  if (/weapon|blade|sword|\baxe\b|club|mace|spear|lance|\bbow\b|arrow|quiver|sling|noose|thunderbolt|dagger|hammer|\barms\b|war-band|drowning-chain|whip|trident/.test(s)) return 'weapon';
+  if (/armor|armour|shield|helmet|aegis|\bmail\b|breastplate|gauntlet/.test(s)) return 'armor';
+  if (/regalia|crown|throne|scepter|sceptre|diadem|\bseat\b|insignia|\bring\b|valuable|wealth|treasure|emblem/.test(s)) return 'regalia';
+  if (/garment|cloak|robe|mantle|girdle|belt|sandal|\bshoe\b|\bmask\b|costume|veil|\bhat\b|\bcap\b|cloth|\bskin\b|\bhide\b|sash|ornament|jewel/.test(s)) return 'garment';
+  if (/instrument|\bdrum\b|\bhorn\b|lyre|harp|\bbell\b|flute|\bpipe\b|trumpet|rattle/.test(s)) return 'instrument';
+  if (/vessel|\bcup\b|bowl|cauldron|vase|\bjar\b|\bjug\b|chalice|grail|\bpot\b|kettle|\bvat\b/.test(s)) return 'vessel';
+  if (/mount|steed|chariot|vehicle|wagon|\bcart\b|barque|companion|\banimal\b|creature|\bbeast\b|\bbird\b|raven|\bwolf\b|\bgoat\b|horse|serpent|\bfish\b/.test(s)) return 'mount';
+  if (/\btext\b|grimoire|\bbook\b|inscription|scroll|tablet|codex|scripture|stave/.test(s)) return 'text';
+  if (/sculpt|statue|effig|\bimage\b|\bicon\b|\bidol\b|relief|\bbust\b|iconograph/.test(s)) return 'sculpture';
+  if (/monument|structure|architectur|building|\bhall\b|temple|dwelling|\bhouse\b|\bsite\b|\bplace\b|shrine|tomb|pillar|tower|\bwall\b|\bgate\b|sanctuar|workshop|cosmic-structure/.test(s)) return 'monument';
+  if (/substance|elixir|potion|\bearth\b|\bfire\b|\bplant\b|\btree\b|herb|flower|fruit|\bwater\b|blood|\bmead\b|ambrosia/.test(s)) return 'substance';
+  if (/ritual|\bcult\b|sacred|offering|votive|amulet|talisman|charm|bundle|fetish|\brelic\b|altar|reliquary/.test(s)) return 'ritual';
+  if (/\btool\b|implement|equipment|\bstaff\b|\brod\b|\bhook\b|\bnet\b|\bkey\b|wheel|loom|plough|plow|anvil|mirror|\blamp\b|torch|sickle|scythe|spindle/.test(s)) return 'tool';
+  if (/symbol|\bsign\b|cosmic|attribute|emblem/.test(s)) return 'symbol';
+  return 'other';
+}
+
 // Index-row badge: a custody chain beats a plain holder count.
 function itemBadge(it) {
   if (it.custodyCount > 0) return {
@@ -258181,9 +258324,17 @@ function Items({
   onVisibleOrder
 }) {
   const [q, setQ] = __iState('');
+  const [kinds, setKinds] = __iState(() => new Set());
+  const kindOptions = __iMemo(() => window.buildFacetOptions(items, it => itemKindBucket(it.kind), itemBucketLabel, ITEM_BUCKET_RANK), [items]);
+  const faceted = __iMemo(() => kinds.size ? items.filter(it => kinds.has(itemKindBucket(it.kind))) : items, [items, kinds]);
+  const toggleKind = v => setKinds(prev => {
+    const n = new Set(prev);
+    n.has(v) ? n.delete(v) : n.add(v);
+    return n;
+  });
   const groups = __iMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? items : items.filter(it => {
+    const filtered = !query ? faceted : faceted.filter(it => {
       const hay = [it.displayName, it.id, it.classId, it.kind, ...(it.names || []).map(n => n.value)].join(' ').toLowerCase();
       return hay.includes(query);
     });
@@ -258194,7 +258345,7 @@ function Items({
       byKind.get(k).push(it);
     }
     return [...byKind.entries()].sort((a, b) => itemKindRank(a[0]) - itemKindRank(b[0]) || itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
-  }, [items, q]);
+  }, [faceted, q]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
   // detail's Prev/Next walks the same sequence the index displays, not the
@@ -258216,9 +258367,9 @@ function Items({
     className: "items-title"
   }, "Items ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, items.length)), total > items.length ? /*#__PURE__*/React.createElement("span", {
+  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", items.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", faceted.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, showcased, " with a traced custody chain")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -258233,7 +258384,13 @@ function Items({
     className: "items-search-clear",
     onClick: () => setQ(''),
     title: "Clear"
-  }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+  }, "\xD7")), /*#__PURE__*/React.createElement(window.FacetBar, {
+    label: "Kind",
+    options: kindOptions,
+    active: kinds,
+    onToggle: toggleKind,
+    onClear: () => setKinds(new Set())
+  })), /*#__PURE__*/React.createElement("div", {
     className: "items-grid"
   }, groups.map(([kind, list]) => /*#__PURE__*/React.createElement("div", {
     className: "items-group",
@@ -258264,7 +258421,7 @@ function Items({
     }, badge.label)));
   })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
     className: "items-empty"
-  }, items.length === 0 ? 'No items match the active filters.' : `No items match "${q}".`)));
+  }, faceted.length === 0 ? 'No items match the active filters.' : `No items match "${q}".`)));
 }
 
 // ── Item detail sub-sections ────────────────────────────────────────────────
@@ -258584,6 +258741,54 @@ function powerBadge(p) {
   return null;
 }
 
+// Heritability is authored as free text — dozens of variants ("none",
+// "non-inheritable", "unique-to-bearer", "patrilineal", "lineage-conferred",
+// "function of the supreme god"…). Canonicalize into a small, meaningful set so
+// it can be faceted and badged consistently.
+const POWER_HERIT_LABEL = {
+  full: 'Full',
+  partial: 'Partial',
+  trace: 'Trace',
+  lineage: 'By lineage',
+  shared: 'Shared',
+  learned: 'Learned',
+  innate: 'Innate',
+  unique: 'Unique to bearer',
+  none: 'Not heritable',
+  unspecified: 'Unspecified',
+  other: 'Other'
+};
+const POWER_HERIT_RANK = {
+  full: 0,
+  partial: 1,
+  trace: 2,
+  lineage: 3,
+  shared: 4,
+  learned: 5,
+  innate: 6,
+  unique: 7,
+  none: 8,
+  unspecified: 9,
+  other: 10
+};
+function powerHeritLabel(b) {
+  return POWER_HERIT_LABEL[b] || humanizePow(b);
+}
+function powerHeritBucket(raw) {
+  const s = String(raw == null ? '' : raw).toLowerCase().trim();
+  if (!s) return 'unspecified';
+  if (/\bfull\b|fully|^heritable$/.test(s)) return 'full';
+  if (/\bpartial\b/.test(s)) return 'partial';
+  if (/\btrace\b/.test(s)) return 'trace';
+  if (/linea(l|ge)|patrilineal|matrilineal|hereditary|\bdescent\b|dynast|\boffice\b|priestly|earth-priest|smith-caste|\broyal\b/.test(s)) return 'lineage';
+  if (/shared|collective|class-wide|among.?kind|\bkin\b|family/.test(s)) return 'shared';
+  if (/learn|cultivat|acquir|transmiss|transmit|taught|served by/.test(s)) return 'learned';
+  if (/innate/.test(s)) return 'innate';
+  if (/unique|personal|one.?time|prototype|to bearer|to kutkh|to big-raven|demonstrative/.test(s)) return 'unique';
+  if (/none|non-?inherit|not-?inherit|not inherit|non-?herit|non-?transfer|not transfer|\bno\b|n\/a|function of|manifest|possession|cursed|aetiolog/.test(s)) return 'none';
+  return 'other';
+}
+
 // ── Powers index ─────────────────────────────────────────────────────────────
 function PowersView({
   powers,
@@ -258594,9 +258799,12 @@ function PowersView({
   onVisibleOrder
 }) {
   const [q, setQ] = __pState('');
+  const [herit, setHerit] = __pState(() => new Set());
+  const heritOptions = __pMemo(() => window.buildFacetOptions(powers, p => powerHeritBucket(p.inheritability), powerHeritLabel, POWER_HERIT_RANK), [powers]);
+  const faceted = __pMemo(() => herit.size ? powers.filter(p => herit.has(powerHeritBucket(p.inheritability))) : powers, [powers, herit]);
   const groups = __pMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? powers : powers.filter(p => {
+    const filtered = !query ? faceted : faceted.filter(p => {
       const hay = [p.displayName, p.id, p.domainTag, p.term && p.term.value, ...(p.scopeTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
@@ -258607,7 +258815,7 @@ function PowersView({
       byLetter.get(k).push(p);
     }
     return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [powers, q]);
+  }, [faceted, q]);
   __pEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -258615,6 +258823,11 @@ function PowersView({
     onVisibleOrder(ids);
   }, [groups, onVisibleOrder]);
   const heritable = __pMemo(() => powers.filter(p => p.inheritorCount > 0).length, [powers]);
+  const toggleHerit = v => setHerit(prev => {
+    const n = new Set(prev);
+    n.has(v) ? n.delete(v) : n.add(v);
+    return n;
+  });
   return /*#__PURE__*/React.createElement("div", {
     className: "items-view powers-view"
   }, /*#__PURE__*/React.createElement("div", {
@@ -258625,9 +258838,9 @@ function PowersView({
     className: "items-title"
   }, "Powers ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, powers.length)), total > powers.length ? /*#__PURE__*/React.createElement("span", {
+  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", powers.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", faceted.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, heritable, " traced down a bloodline")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -258642,7 +258855,13 @@ function PowersView({
     className: "items-search-clear",
     onClick: () => setQ(''),
     title: "Clear"
-  }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+  }, "\xD7")), /*#__PURE__*/React.createElement(window.FacetBar, {
+    label: "Heritability",
+    options: heritOptions,
+    active: herit,
+    onToggle: toggleHerit,
+    onClear: () => setHerit(new Set())
+  })), /*#__PURE__*/React.createElement("div", {
     className: "items-grid powers-grid"
   }, groups.map(([letter, list]) => /*#__PURE__*/React.createElement("div", {
     className: "items-group powers-group",
@@ -258655,6 +258874,7 @@ function PowersView({
     className: "items-rows"
   }, list.map(p => {
     const badge = powerBadge(p);
+    const hb = powerHeritBucket(p.inheritability);
     return /*#__PURE__*/React.createElement("button", {
       key: p.id,
       className: 'item-row power-index-row' + (p.id === selectedPowerId ? ' on' : ''),
@@ -258665,14 +258885,14 @@ function PowersView({
       className: "item-row-meta"
     }, p.domainTag && /*#__PURE__*/React.createElement("span", {
       className: "item-row-class"
-    }, humanizePow(p.domainTag)), p.inheritability && p.inheritability !== 'none' && /*#__PURE__*/React.createElement("span", {
-      className: 'power-herit herit-' + p.inheritability
-    }, p.inheritability), badge && /*#__PURE__*/React.createElement("span", {
+    }, humanizePow(p.domainTag)), hb !== 'none' && hb !== 'unspecified' && /*#__PURE__*/React.createElement("span", {
+      className: 'power-herit herit-' + hb
+    }, powerHeritLabel(hb)), badge && /*#__PURE__*/React.createElement("span", {
       className: 'item-badge ' + badge.cls
     }, badge.label)));
   })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
     className: "items-empty"
-  }, powers.length === 0 ? 'No powers match the active filters.' : `No powers match "${q}".`)));
+  }, faceted.length === 0 ? 'No powers match the active filters.' : `No powers match "${q}".`)));
 }
 
 // ── Power detail sub-sections ────────────────────────────────────────────────
@@ -258938,6 +259158,49 @@ function domainBadge(d) {
   return null;
 }
 
+// Context is authored as free text, dominated by "lifelong" with a long tail
+// (post-mortem, posthumous, apotheosed, cosmogonic, genealogical…). A domain may
+// carry several across its governors, so a record buckets to a SET of contexts.
+const DOMAIN_CTX_LABEL = {
+  lifelong: 'Lifelong',
+  'post-mortem': 'Post-mortem',
+  cosmogonic: 'Cosmogonic',
+  genealogical: 'Genealogical',
+  festival: 'Festival',
+  narrative: 'Narrative',
+  unspecified: 'Unspecified',
+  other: 'Other'
+};
+const DOMAIN_CTX_RANK = {
+  lifelong: 0,
+  'post-mortem': 1,
+  cosmogonic: 2,
+  genealogical: 3,
+  festival: 4,
+  narrative: 5,
+  unspecified: 6,
+  other: 7
+};
+function domainCtxLabel(b) {
+  return DOMAIN_CTX_LABEL[b] || humanizeDom(b);
+}
+function domainCtxBucket(raw) {
+  const s = String(raw == null ? '' : raw).toLowerCase().trim();
+  if (!s) return 'unspecified';
+  if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
+  if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
+  if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
+  if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
+  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
+  if (/lifelong/.test(s)) return 'lifelong';
+  return 'other';
+}
+function domainCtxBuckets(d) {
+  const set = new Set();
+  for (const c of d.contextTags || []) set.add(domainCtxBucket(c));
+  return [...set];
+}
+
 // ── Domains index ────────────────────────────────────────────────────────────
 function Domains({
   domains,
@@ -258948,9 +259211,12 @@ function Domains({
   onVisibleOrder
 }) {
   const [q, setQ] = __dmState('');
+  const [ctx, setCtx] = __dmState(() => new Set());
+  const ctxOptions = __dmMemo(() => window.buildFacetOptions(domains, domainCtxBuckets, domainCtxLabel, DOMAIN_CTX_RANK), [domains]);
+  const faceted = __dmMemo(() => ctx.size ? domains.filter(d => domainCtxBuckets(d).some(b => ctx.has(b))) : domains, [domains, ctx]);
   const groups = __dmMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? domains : domains.filter(d => {
+    const filtered = !query ? faceted : faceted.filter(d => {
       const hay = [d.displayName, d.id, d.term && d.term.value, ...(d.contextTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
     });
@@ -258961,7 +259227,7 @@ function Domains({
       byLetter.get(k).push(d);
     }
     return [...byLetter.entries()].sort((a, b) => (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [domains, q]);
+  }, [faceted, q]);
   __dmEff(() => {
     if (!onVisibleOrder) return;
     const ids = [];
@@ -258969,6 +259235,11 @@ function Domains({
     onVisibleOrder(ids);
   }, [groups, onVisibleOrder]);
   const shared = __dmMemo(() => domains.filter(d => d.holderCount > 1).length, [domains]);
+  const toggleCtx = v => setCtx(prev => {
+    const n = new Set(prev);
+    n.has(v) ? n.delete(v) : n.add(v);
+    return n;
+  });
   return /*#__PURE__*/React.createElement("div", {
     className: "items-view domains-view"
   }, /*#__PURE__*/React.createElement("div", {
@@ -258979,9 +259250,9 @@ function Domains({
     className: "items-title"
   }, "Domains ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, domains.length)), total > domains.length ? /*#__PURE__*/React.createElement("span", {
+  }, faceted.length)), total > faceted.length ? /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
-  }, "filtered \u2014 ", domains.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
+  }, "filtered \u2014 ", faceted.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, shared, " shared across figures")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -258996,7 +259267,13 @@ function Domains({
     className: "items-search-clear",
     onClick: () => setQ(''),
     title: "Clear"
-  }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+  }, "\xD7")), /*#__PURE__*/React.createElement(window.FacetBar, {
+    label: "Context",
+    options: ctxOptions,
+    active: ctx,
+    onToggle: toggleCtx,
+    onClear: () => setCtx(new Set())
+  })), /*#__PURE__*/React.createElement("div", {
     className: "items-grid domains-grid"
   }, groups.map(([letter, list]) => /*#__PURE__*/React.createElement("div", {
     className: "items-group domains-group",
@@ -259022,7 +259299,7 @@ function Domains({
     }, badge.label)));
   })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
     className: "items-empty"
-  }, domains.length === 0 ? 'No domains match the active filters.' : `No domains match "${q}".`)));
+  }, faceted.length === 0 ? 'No domains match the active filters.' : `No domains match "${q}".`)));
 }
 
 // ── Domain detail sub-sections ───────────────────────────────────────────────

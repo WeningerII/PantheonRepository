@@ -42,6 +42,41 @@ const humanizeItem = (s) => String(s || '').replace(/[-_]+/g, ' ');
 const GLYPH_SCRIPTS = /greek|runic|futhark|cuneiform|kanji|kana|japanese|hierogl|devanagari|hebrew|arabic|chinese|hanzi|brahmi/i;
 const isGlyphScript = (script) => !!script && GLYPH_SCRIPTS.test(script);
 
+// `kind` is authored as free text — 118 distinct values, most of them
+// singletons ("blade", "thunderbolt-weapon", "cult object" vs "cult-object"…).
+// Canonicalize into a small set of macro families for faceting; the index still
+// groups by the raw kind within a family. Ordered keyword match, first wins.
+const ITEM_BUCKET_LABEL = {
+  weapon: 'Weapons', armor: 'Armor', regalia: 'Regalia', garment: 'Worn & borne',
+  symbol: 'Symbols', sculpture: 'Sculpture & image', monument: 'Monuments & sites',
+  vessel: 'Vessels', instrument: 'Instruments', tool: 'Tools', mount: 'Mounts & beasts',
+  text: 'Texts', substance: 'Substances', ritual: 'Ritual & sacred', other: 'Other',
+};
+const ITEM_BUCKET_RANK = {
+  weapon: 0, armor: 1, regalia: 2, garment: 3, symbol: 4, sculpture: 5, monument: 6,
+  vessel: 7, instrument: 8, tool: 9, mount: 10, text: 11, substance: 12, ritual: 13, other: 14,
+};
+function itemBucketLabel(b) { return ITEM_BUCKET_LABEL[b] || humanizeItem(b); }
+function itemKindBucket(kind) {
+  const s = String(kind || '').toLowerCase().trim();
+  if (!s || s === 'other' || s === 'object' || s === 'concept' || s === 'artifact') return 'other';
+  if (/weapon|blade|sword|\baxe\b|club|mace|spear|lance|\bbow\b|arrow|quiver|sling|noose|thunderbolt|dagger|hammer|\barms\b|war-band|drowning-chain|whip|trident/.test(s)) return 'weapon';
+  if (/armor|armour|shield|helmet|aegis|\bmail\b|breastplate|gauntlet/.test(s)) return 'armor';
+  if (/regalia|crown|throne|scepter|sceptre|diadem|\bseat\b|insignia|\bring\b|valuable|wealth|treasure|emblem/.test(s)) return 'regalia';
+  if (/garment|cloak|robe|mantle|girdle|belt|sandal|\bshoe\b|\bmask\b|costume|veil|\bhat\b|\bcap\b|cloth|\bskin\b|\bhide\b|sash|ornament|jewel/.test(s)) return 'garment';
+  if (/instrument|\bdrum\b|\bhorn\b|lyre|harp|\bbell\b|flute|\bpipe\b|trumpet|rattle/.test(s)) return 'instrument';
+  if (/vessel|\bcup\b|bowl|cauldron|vase|\bjar\b|\bjug\b|chalice|grail|\bpot\b|kettle|\bvat\b/.test(s)) return 'vessel';
+  if (/mount|steed|chariot|vehicle|wagon|\bcart\b|barque|companion|\banimal\b|creature|\bbeast\b|\bbird\b|raven|\bwolf\b|\bgoat\b|horse|serpent|\bfish\b/.test(s)) return 'mount';
+  if (/\btext\b|grimoire|\bbook\b|inscription|scroll|tablet|codex|scripture|stave/.test(s)) return 'text';
+  if (/sculpt|statue|effig|\bimage\b|\bicon\b|\bidol\b|relief|\bbust\b|iconograph/.test(s)) return 'sculpture';
+  if (/monument|structure|architectur|building|\bhall\b|temple|dwelling|\bhouse\b|\bsite\b|\bplace\b|shrine|tomb|pillar|tower|\bwall\b|\bgate\b|sanctuar|workshop|cosmic-structure/.test(s)) return 'monument';
+  if (/substance|elixir|potion|\bearth\b|\bfire\b|\bplant\b|\btree\b|herb|flower|fruit|\bwater\b|blood|\bmead\b|ambrosia/.test(s)) return 'substance';
+  if (/ritual|\bcult\b|sacred|offering|votive|amulet|talisman|charm|bundle|fetish|\brelic\b|altar|reliquary/.test(s)) return 'ritual';
+  if (/\btool\b|implement|equipment|\bstaff\b|\brod\b|\bhook\b|\bnet\b|\bkey\b|wheel|loom|plough|plow|anvil|mirror|\blamp\b|torch|sickle|scythe|spindle/.test(s)) return 'tool';
+  if (/symbol|\bsign\b|cosmic|attribute|emblem/.test(s)) return 'symbol';
+  return 'other';
+}
+
 // Index-row badge: a custody chain beats a plain holder count.
 function itemBadge(it) {
   if (it.custodyCount > 0) return { label: `${it.custodyCount}-step custody`, cls: 'item-badge-custody' };
@@ -60,10 +95,21 @@ function externalName(ext) {
 // ── Items index ────────────────────────────────────────────────────────────
 function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
   const [q, setQ] = __iState('');
+  const [kinds, setKinds] = __iState(() => new Set());
+
+  const kindOptions = __iMemo(
+    () => window.buildFacetOptions(items, (it) => itemKindBucket(it.kind), itemBucketLabel, ITEM_BUCKET_RANK),
+    [items]);
+  const faceted = __iMemo(
+    () => (kinds.size ? items.filter((it) => kinds.has(itemKindBucket(it.kind))) : items),
+    [items, kinds]);
+  const toggleKind = (v) => setKinds((prev) => {
+    const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
+  });
 
   const groups = __iMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? items : items.filter((it) => {
+    const filtered = !query ? faceted : faceted.filter((it) => {
       const hay = [it.displayName, it.id, it.classId, it.kind,
         ...(it.names || []).map((n) => n.value)].join(' ').toLowerCase();
       return hay.includes(query);
@@ -77,7 +123,7 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
     return [...byKind.entries()].sort((a, b) =>
       (itemKindRank(a[0]) - itemKindRank(b[0])) ||
       itemKindLabel(a[0]).localeCompare(itemKindLabel(b[0])));
-  }, [items, q]);
+  }, [faceted, q]);
 
   // Report the flattened on-screen order (grouped + filtered) so the item
   // detail's Prev/Next walks the same sequence the index displays, not the
@@ -95,9 +141,9 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
     <div className="items-view">
       <div className="items-head">
         <div className="items-head-row">
-          <h2 className="items-title">Items <span className="items-count">{items.length}</span></h2>
-          {total > items.length ? (
-            <span className="items-showcased">filtered — {items.length} of {total}</span>
+          <h2 className="items-title">Items <span className="items-count">{faceted.length}</span></h2>
+          {total > faceted.length ? (
+            <span className="items-showcased">filtered — {faceted.length} of {total}</span>
           ) : showcased > 0 && (
             <span className="items-showcased">{showcased} with a traced custody chain</span>
           )}
@@ -114,6 +160,13 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
           />
           {q && <button className="items-search-clear" onClick={() => setQ('')} title="Clear">×</button>}
         </div>
+        <window.FacetBar
+          label="Kind"
+          options={kindOptions}
+          active={kinds}
+          onToggle={toggleKind}
+          onClear={() => setKinds(new Set())}
+        />
       </div>
 
       <div className="items-grid">
@@ -148,7 +201,7 @@ function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder 
         ))}
         {groups.length === 0 && (
           <div className="items-empty">
-            {items.length === 0 ? 'No items match the active filters.' : `No items match "${q}".`}
+            {faceted.length === 0 ? 'No items match the active filters.' : `No items match "${q}".`}
           </div>
         )}
       </div>
