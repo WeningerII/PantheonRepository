@@ -220,6 +220,26 @@ function Shell() {
   const domainList = __sMemo(() => (window.allDomains ? window.allDomains() : []), []);
   const selectedDomain = selectedDomainId && window.domainById ? window.domainById(selectedDomainId) : null;
 
+  // Scope the registries by the rail. The rail filters (type / origin /
+  // tradition) and the figure search narrow `filters.filtered`; each registry
+  // is keyed to figures through its holders, so an item/power/domain stays
+  // visible whenever a connected figure survives the filter. This makes
+  // selecting a pantheon narrow these views the way it already narrows
+  // Browse / Graph / Atlas. No narrowing → pass the full list untouched.
+  const activeFigureIds = __sMemo(() => new Set(filters.filtered.map((p) => p.id)), [filters.filtered]);
+  const narrowed = filters.filtered.length < people.length;
+  const visibleItems = __sMemo(() => (!narrowed ? itemList : itemList.filter((it) =>
+    (it.holders || []).some((h) => activeFigureIds.has(h.personId)) ||
+    (it.custody || []).some((c) => activeFigureIds.has(c.personId))
+  )), [itemList, activeFigureIds, narrowed]);
+  const visiblePowers = __sMemo(() => (!narrowed ? powerList : powerList.filter((p) =>
+    (p.holders || []).some((h) => activeFigureIds.has(h.personId)) ||
+    (p.inheritors || []).some((i) => activeFigureIds.has(i.personId))
+  )), [powerList, activeFigureIds, narrowed]);
+  const visibleDomains = __sMemo(() => (!narrowed ? domainList : domainList.filter((d) =>
+    (d.holders || []).some((h) => activeFigureIds.has(h.personId))
+  )), [domainList, activeFigureIds, narrowed]);
+
   // ── URL sync ─────────────────────────────────────────────────────────
   // Hash schema: #/<view>[/<id>]
   //   #/browse              — table only
@@ -543,7 +563,8 @@ function Shell() {
           )}
           {view === 'items' && (
             <window.Items
-              items={itemList}
+              items={visibleItems}
+              total={itemList.length}
               byId={byId}
               selectedItemId={selectedItemId}
               onOpenItem={(id) => setSelectedItemId(id)}
@@ -552,7 +573,8 @@ function Shell() {
           )}
           {view === 'powers' && (
             <window.PowersView
-              powers={powerList}
+              powers={visiblePowers}
+              total={powerList.length}
               byId={byId}
               selectedPowerId={selectedPowerId}
               onOpenPower={(id) => setSelectedPowerId(id)}
@@ -561,7 +583,8 @@ function Shell() {
           )}
           {view === 'domains' && (
             <window.Domains
-              domains={domainList}
+              domains={visibleDomains}
+              total={domainList.length}
               byId={byId}
               selectedDomainId={selectedDomainId}
               onOpenDomain={(id) => setSelectedDomainId(id)}

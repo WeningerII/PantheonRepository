@@ -58,7 +58,7 @@ function externalName(ext) {
 }
 
 // ── Items index ────────────────────────────────────────────────────────────
-function Items({ items, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
+function Items({ items, total, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
   const [q, setQ] = __iState('');
 
   const groups = __iMemo(() => {
@@ -96,7 +96,9 @@ function Items({ items, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
       <div className="items-head">
         <div className="items-head-row">
           <h2 className="items-title">Items <span className="items-count">{items.length}</span></h2>
-          {showcased > 0 && (
+          {total > items.length ? (
+            <span className="items-showcased">filtered — {items.length} of {total}</span>
+          ) : showcased > 0 && (
             <span className="items-showcased">{showcased} with a traced custody chain</span>
           )}
         </div>
@@ -144,7 +146,11 @@ function Items({ items, byId, selectedItemId, onOpenItem, onVisibleOrder }) {
             </div>
           </div>
         ))}
-        {groups.length === 0 && <div className="items-empty">No items match "{q}".</div>}
+        {groups.length === 0 && (
+          <div className="items-empty">
+            {items.length === 0 ? 'No items match the active filters.' : `No items match "${q}".`}
+          </div>
+        )}
       </div>
     </div>
   );

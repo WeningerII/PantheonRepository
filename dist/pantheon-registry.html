@@ -258174,6 +258174,7 @@ function externalName(ext) {
 // ── Items index ────────────────────────────────────────────────────────────
 function Items({
   items,
+  total,
   byId,
   selectedItemId,
   onOpenItem,
@@ -258215,7 +258216,9 @@ function Items({
     className: "items-title"
   }, "Items ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, items.length)), showcased > 0 && /*#__PURE__*/React.createElement("span", {
+  }, items.length)), total > items.length ? /*#__PURE__*/React.createElement("span", {
+    className: "items-showcased"
+  }, "filtered \u2014 ", items.length, " of ", total) : showcased > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, showcased, " with a traced custody chain")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -258261,7 +258264,7 @@ function Items({
     }, badge.label)));
   })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
     className: "items-empty"
-  }, "No items match \"", q, "\".")));
+  }, items.length === 0 ? 'No items match the active filters.' : `No items match "${q}".`)));
 }
 
 // ── Item detail sub-sections ────────────────────────────────────────────────
@@ -258584,6 +258587,7 @@ function powerBadge(p) {
 // ── Powers index ─────────────────────────────────────────────────────────────
 function PowersView({
   powers,
+  total,
   byId,
   selectedPowerId,
   onOpenPower,
@@ -258621,7 +258625,9 @@ function PowersView({
     className: "items-title"
   }, "Powers ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, powers.length)), heritable > 0 && /*#__PURE__*/React.createElement("span", {
+  }, powers.length)), total > powers.length ? /*#__PURE__*/React.createElement("span", {
+    className: "items-showcased"
+  }, "filtered \u2014 ", powers.length, " of ", total) : heritable > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, heritable, " traced down a bloodline")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -258666,7 +258672,7 @@ function PowersView({
     }, badge.label)));
   })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
     className: "items-empty"
-  }, "No powers match \"", q, "\".")));
+  }, powers.length === 0 ? 'No powers match the active filters.' : `No powers match "${q}".`)));
 }
 
 // ── Power detail sub-sections ────────────────────────────────────────────────
@@ -258935,6 +258941,7 @@ function domainBadge(d) {
 // ── Domains index ────────────────────────────────────────────────────────────
 function Domains({
   domains,
+  total,
   byId,
   selectedDomainId,
   onOpenDomain,
@@ -258972,7 +258979,9 @@ function Domains({
     className: "items-title"
   }, "Domains ", /*#__PURE__*/React.createElement("span", {
     className: "items-count"
-  }, domains.length)), shared > 0 && /*#__PURE__*/React.createElement("span", {
+  }, domains.length)), total > domains.length ? /*#__PURE__*/React.createElement("span", {
+    className: "items-showcased"
+  }, "filtered \u2014 ", domains.length, " of ", total) : shared > 0 && /*#__PURE__*/React.createElement("span", {
     className: "items-showcased"
   }, shared, " shared across figures")), /*#__PURE__*/React.createElement("p", {
     className: "items-sub"
@@ -259013,7 +259022,7 @@ function Domains({
     }, badge.label)));
   })))), groups.length === 0 && /*#__PURE__*/React.createElement("div", {
     className: "items-empty"
-  }, "No domains match \"", q, "\".")));
+  }, domains.length === 0 ? 'No domains match the active filters.' : `No domains match "${q}".`)));
 }
 
 // ── Domain detail sub-sections ───────────────────────────────────────────────
@@ -261780,6 +261789,18 @@ function Shell() {
   const domainList = __sMemo(() => window.allDomains ? window.allDomains() : [], []);
   const selectedDomain = selectedDomainId && window.domainById ? window.domainById(selectedDomainId) : null;
 
+  // Scope the registries by the rail. The rail filters (type / origin /
+  // tradition) and the figure search narrow `filters.filtered`; each registry
+  // is keyed to figures through its holders, so an item/power/domain stays
+  // visible whenever a connected figure survives the filter. This makes
+  // selecting a pantheon narrow these views the way it already narrows
+  // Browse / Graph / Atlas. No narrowing → pass the full list untouched.
+  const activeFigureIds = __sMemo(() => new Set(filters.filtered.map(p => p.id)), [filters.filtered]);
+  const narrowed = filters.filtered.length < people.length;
+  const visibleItems = __sMemo(() => !narrowed ? itemList : itemList.filter(it => (it.holders || []).some(h => activeFigureIds.has(h.personId)) || (it.custody || []).some(c => activeFigureIds.has(c.personId))), [itemList, activeFigureIds, narrowed]);
+  const visiblePowers = __sMemo(() => !narrowed ? powerList : powerList.filter(p => (p.holders || []).some(h => activeFigureIds.has(h.personId)) || (p.inheritors || []).some(i => activeFigureIds.has(i.personId))), [powerList, activeFigureIds, narrowed]);
+  const visibleDomains = __sMemo(() => !narrowed ? domainList : domainList.filter(d => (d.holders || []).some(h => activeFigureIds.has(h.personId))), [domainList, activeFigureIds, narrowed]);
+
   // ── URL sync ─────────────────────────────────────────────────────────
   // Hash schema: #/<view>[/<id>]
   //   #/browse              — table only
@@ -262184,7 +262205,8 @@ function Shell() {
       setView('browse');
     }
   }), view === 'items' && /*#__PURE__*/React.createElement(window.Items, {
-    items: itemList,
+    items: visibleItems,
+    total: itemList.length,
     byId: byId,
     selectedItemId: selectedItemId,
     onOpenItem: id => setSelectedItemId(id),
@@ -262192,7 +262214,8 @@ function Shell() {
       itemOrderRef.current = ids;
     }
   }), view === 'powers' && /*#__PURE__*/React.createElement(window.PowersView, {
-    powers: powerList,
+    powers: visiblePowers,
+    total: powerList.length,
     byId: byId,
     selectedPowerId: selectedPowerId,
     onOpenPower: id => setSelectedPowerId(id),
@@ -262200,7 +262223,8 @@ function Shell() {
       powerOrderRef.current = ids;
     }
   }), view === 'domains' && /*#__PURE__*/React.createElement(window.Domains, {
-    domains: domainList,
+    domains: visibleDomains,
+    total: domainList.length,
     byId: byId,
     selectedDomainId: selectedDomainId,
     onOpenDomain: id => setSelectedDomainId(id),

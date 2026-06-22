@@ -24,7 +24,7 @@ function domainBadge(d) {
 }
 
 // ── Domains index ────────────────────────────────────────────────────────────
-function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder }) {
+function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisibleOrder }) {
   const [q, setQ] = __dmState('');
 
   const groups = __dmMemo(() => {
@@ -58,7 +58,9 @@ function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder
       <div className="items-head">
         <div className="items-head-row">
           <h2 className="items-title">Domains <span className="items-count">{domains.length}</span></h2>
-          {shared > 0 && (
+          {total > domains.length ? (
+            <span className="items-showcased">filtered — {domains.length} of {total}</span>
+          ) : shared > 0 && (
             <span className="items-showcased">{shared} shared across figures</span>
           )}
         </div>
@@ -103,7 +105,11 @@ function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder
             </div>
           </div>
         ))}
-        {groups.length === 0 && <div className="items-empty">No domains match "{q}".</div>}
+        {groups.length === 0 && (
+          <div className="items-empty">
+            {domains.length === 0 ? 'No domains match the active filters.' : `No domains match "${q}".`}
+          </div>
+        )}
       </div>
     </div>
   );

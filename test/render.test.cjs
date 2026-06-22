@@ -348,4 +348,35 @@ describe('app renders in a browser-like environment', () => {
     await settle();
     await app.clickButton('Browse');
   });
+
+  test('the left-rail tradition filter narrows Items, Powers, and Domains', async () => {
+    // Regression: these three registries were built from the full corpus and
+    // ignored the rail, so selecting a pantheon did nothing (while it scopes
+    // Browse / Graph / Atlas). Each must now narrow to entries with a connected
+    // figure in the filtered set, and surface a "filtered — N of M" count.
+    const greekRow = () => [...app.document.querySelectorAll('.rail-row-trad')]
+      .find((r) => r.textContent.includes('Greek'));
+    for (const [tab, view, rowSel] of [
+      ['Items', '.items-view', '.item-row'],
+      ['Powers', '.powers-view', '.power-index-row'],
+      ['Domains', '.domains-view', '.domain-index-row'],
+    ]) {
+      await app.clickButton(tab);
+      const before = app.document.querySelectorAll(rowSel).length;
+      assert.ok(before > 0, `${tab} index did not populate`);
+      const row = greekRow();
+      assert.ok(row, 'Greek not in the tradition rail');
+      await app.act(async () => { row.click(); });
+      await app.flush();
+      const after = app.document.querySelectorAll(rowSel).length;
+      assert.ok(after > 0 && after < before,
+        `${tab} did not narrow on the Greek filter (${before} -> ${after})`);
+      assert.match(
+        app.document.querySelector(view + ' .items-showcased')?.textContent || '',
+        /filtered/, `${tab} header did not show the filtered count`);
+      await app.act(async () => { greekRow().click(); });  // clear for next iteration
+      await app.flush();
+    }
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
 });

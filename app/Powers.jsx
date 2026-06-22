@@ -30,7 +30,7 @@ function powerBadge(p) {
 }
 
 // ── Powers index ─────────────────────────────────────────────────────────────
-function PowersView({ powers, byId, selectedPowerId, onOpenPower, onVisibleOrder }) {
+function PowersView({ powers, total, byId, selectedPowerId, onOpenPower, onVisibleOrder }) {
   const [q, setQ] = __pState('');
 
   const groups = __pMemo(() => {
@@ -64,7 +64,9 @@ function PowersView({ powers, byId, selectedPowerId, onOpenPower, onVisibleOrder
       <div className="items-head">
         <div className="items-head-row">
           <h2 className="items-title">Powers <span className="items-count">{powers.length}</span></h2>
-          {heritable > 0 && (
+          {total > powers.length ? (
+            <span className="items-showcased">filtered — {powers.length} of {total}</span>
+          ) : heritable > 0 && (
             <span className="items-showcased">{heritable} traced down a bloodline</span>
           )}
         </div>
@@ -113,7 +115,11 @@ function PowersView({ powers, byId, selectedPowerId, onOpenPower, onVisibleOrder
             </div>
           </div>
         ))}
-        {groups.length === 0 && <div className="items-empty">No powers match "{q}".</div>}
+        {groups.length === 0 && (
+          <div className="items-empty">
+            {powers.length === 0 ? 'No powers match the active filters.' : `No powers match "${q}".`}
+          </div>
+        )}
       </div>
     </div>
   );
