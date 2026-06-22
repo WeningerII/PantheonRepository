@@ -296,4 +296,56 @@ describe('app renders in a browser-like environment', () => {
     await app.act(async () => { app.key('Escape'); });
     await settle();
   });
+
+  test('the Powers view lists the power registry, grouped, flagging heritable powers', async () => {
+    await app.clickButton('Powers');
+    const view = app.document.querySelector('.powers-view');
+    assert.ok(view, 'Powers view did not mount');
+    assert.ok(view.querySelectorAll('.power-index-row').length >= 2000, 'expected the power corpus in the index');
+    assert.ok(view.querySelector('.items-group'), 'expected grouped index');
+    assert.ok(view.querySelector('.power-badge-descent'), 'expected at least one power flagged with a descent badge');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('a power detail traces its bearers and genealogical descent', async () => {
+    await app.act(async () => {
+      app.window.location.hash = '#/powers/' + encodeURIComponent('physical-strength-extreme');
+      app.window.dispatchEvent(new app.window.Event('hashchange'));
+    });
+    await app.flush();
+    const detail = app.document.querySelector('.power-detail');
+    assert.ok(detail, 'power detail did not open');
+    assert.ok(detail.querySelector('.section-power-bearers'), 'expected the wielded-by (declarers) section');
+    const descent = detail.querySelector('.section-power-descent');
+    assert.ok(descent, 'Descent section did not render');
+    assert.ok(descent.querySelector('.power-descent-step'), 'expected at least one inheritance edge');
+    assert.match(descent.textContent, /via/, 'descent edges name the ancestor the power descends from');
+    await app.act(async () => { app.key('Escape'); });
+    await settle();
+  });
+
+  test('the Domains view lists the sphere registry', async () => {
+    await app.clickButton('Domains');
+    const view = app.document.querySelector('.domains-view');
+    assert.ok(view, 'Domains view did not mount');
+    assert.ok(view.querySelectorAll('.domain-index-row').length >= 1200, 'expected the sphere corpus in the index');
+    assert.ok(view.querySelector('.items-group'), 'expected grouped index');
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('a domain detail lists the figures who govern the sphere', async () => {
+    await app.act(async () => {
+      app.window.location.hash = '#/domains/' + encodeURIComponent('war');
+      app.window.dispatchEvent(new app.window.Event('hashchange'));
+    });
+    await app.flush();
+    const detail = app.document.querySelector('.domain-detail');
+    assert.ok(detail, 'domain detail did not open');
+    const govs = detail.querySelector('.section-domain-govs');
+    assert.ok(govs, 'governed-by section did not render');
+    assert.ok(govs.querySelectorAll('.domain-gov').length >= 2, 'expected multiple governing figures for war');
+    await app.act(async () => { app.key('Escape'); });
+    await settle();
+    await app.clickButton('Browse');
+  });
 });

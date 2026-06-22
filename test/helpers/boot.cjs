@@ -26,7 +26,7 @@ const LIB_FILES = [
 ].map((p) => path.join(NM, p));
 
 // Same order build.py / index.html load them in.
-const JSX = ['state', 'Browse', 'Lineage', 'Lifecycle', 'Detail', 'Items', 'Graph',
+const JSX = ['state', 'Browse', 'Lineage', 'Lifecycle', 'Detail', 'Items', 'Powers', 'Domains', 'Graph',
             'Atlas', 'CommandPalette', 'Shell', 'main'];
 
 async function bootApp({ panelWidth = 1200, preSeedStorage = null } = {}) {
