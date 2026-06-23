@@ -1,0 +1,942 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Circassian (Adyghe), Northwest Caucasus
+Registered era vocabulary: mythic ; mythic / Nart age
+Author batch: weningerii@gmail.com — 2026-06-23
+
+PURPOSE
+-------
+This transcript supplies the well-attested CORE of Circassian (Adyghe) mythology
+that was still missing from the Pantheon Registry, complementing the seven figures
+already held: circassian_tha (Tha/Theshxwe, sky/supreme god), circassian_shible
+(Shible, thunder), circassian_tlepsh (Tlepsh/Lhepsh, divine smith), circassian_mezitha
+(Mezitha, forest/hunt), circassian_sozeresh (Sozeresh, fertility/hearth), circassian_setenaya
+(Setenaya/Satanaya, Mother of the Narts), and circassian_sosruquo (Sosruquo, fire-bringer
+born of stone, son of Setenaya).
+
+The figures here are drawn from the standard scholarly and ethnographic corpus of
+Circassian myth — chiefly John Colarusso, "Nart Sagas from the Caucasus: Myths and
+Legends from the Circassians, Abazas, Abkhaz, and Ubykhs" (Princeton UP, 2002) and his
+study "Prometheus among the Circassians"; Georges Dumézil, "Légendes sur les Nartes"
+(1930) and "Le livre des héros" (1965); and the Adyghe-religion ethnography synthesized
+in Amjad Jaimoukha, "The Circassians: A Handbook" (Curzon, 2001) and "The Circassian
+Pantheon," with corroboration from the standard surveys of Circassian paganism. No
+figure or citation here is invented; where a detail is a single-witness or interpretive
+gloss it is flagged in the notes. Adyghe/Kabardian words are given only where they are
+real, sourced forms (psa "soul/life," tha/tḥə "god"); where the exact Cyrillic
+orthography of a divine name could not be source-verified for this batch, the term-object
+is omitted per the registry's "real-word-only" rule and the romanized name is kept.
+
+SCOPE NOTE — what was VERIFIED-IN and what was deliberately SKIPPED
+------------------------------------------------------------------
+The Circassian agrarian/pastoral pantheon distributes the "herd" function across TWO
+distinct deities, contrary to a single "god of cattle/herds": Amish (Amisch) is the god
+of SHEEP and shepherds, while Akhin (Ahin) is the patron of CATTLE. Both are authored,
+each in its correct, separately-attested role. Thagaledj (god of flora and crops /
+harvest) and Psathha (Psetha, god of life and souls) are likewise firmly attested and
+functionally distinct from the existing Sozeresh, and are authored. Two well-known Nart
+heroes treated as semi-divine in the cycle — Warzameg (the "Great Nart," husband of the
+existing Setenaya) and Pataraz (Khimishuquo Pataraz, the avenger) — are authored as
+demigods.
+
+DELIBERATELY SKIPPED (to avoid padding):
+ • "Zheguthe / Wered," a putative patron of singers. No deity of this name is attested
+   in the sources; the song-and-dance specialist of Adyghe society is the human roving
+   minstrel, the dzheguako / jegwak'we (a social role, not a god). The musical/pastoral
+   "song" theme that does exist in the pantheon attaches to Amish and his reed-flute,
+   which is captured under circassian_amish. No singing-deity figure is created.
+ • "Lady Nart / Adiyukh." Adiyukh ("the luminous-/white-armed") is a Nart lady with a
+   tale in Colarusso, but her tier (deity vs. mortal heroine) and her kin-wiring are not
+   cleanly attestable from the sources available for this batch; per the don't-pad rule
+   she is omitted rather than authored on thin evidence.
+
+FIGURES AUTHORED (6)
+--------------------
+1. circassian_amish     — Amish / Amisch / Yemish, god of sheep and of fauna; the first
+                          shepherd, patron of shepherds, protector of the flocks; player
+                          of the magic reed-flute that turns barren ewes fertile.
+2. circassian_akhin     — Akhin / Ahin, patron of cattle; honored in the rite of the
+                          sacred "self-walking" sacrificial cow (esp. among the coastal
+                          Shapsug). Distinct from Amish (sheep).
+3. circassian_thagaledj — Thagaledj / Thageledj / Theghelej, god of flora, crops and the
+                          harvest; "Lord of wonder" invoked over the plough to multiply
+                          the harvest. Distinct from the existing Sozeresh.
+4. circassian_psathha   — Psathha / Psetha / Pseta, the god of life and souls (psa); a
+                          cosmogonic "god without image" governing the breath/soul of the
+                          living and the souls of the ancestral dead.
+5. circassian_warzameg  — Warzameg / Wseraseg / Worzameg, the "Great Nart," leader of the
+                          Nart host and husband of the existing Setenaya; son of Lady
+                          Meghazash. Demigod (Nart).
+6. circassian_pataraz   — Pataraz / Bataraz (Khimishuquo Pataraz), the avenger-hero;
+                          son of the Nart Khimish (slain by jealous Narts for marrying the
+                          water-sprite Lady Isp), he swears vengeance in the womb and is
+                          "vengeance incarnate." Demigod (Nart).
+
+RELATION WIRING NOTES
+---------------------
+- Warzameg is the husband of the EXISTING circassian_setenaya: a symmetric "spouse" edge
+  toward Setenaya requires a reciprocal on Setenaya (flagged RECIPROCAL-NEEDED). NOTE:
+  Setenaya is Warzameg's WIFE, not his mother — Warzameg's mother is Lady Meghazash (not
+  in corpus), so his parentIds are [].
+- The "four great Narts" of the Circassian cycle are Sosruquo, Warzameg, Pataraz and
+  Sos*/She Bardinuquo; Warzameg and Pataraz are companions of each other (reciprocal
+  "companion" within this batch) and each is a companion of the EXISTING circassian_sosruquo
+  (symmetric "companion" toward an existing figure → flagged RECIPROCAL-NEEDED for both).
+- Pataraz is the son of Khimish and the water-sprite Lady Isp (neither in corpus); his
+  parentIds are [] and the genealogy is recorded in notes.
+- The four deities Amish, Akhin, Thagaledj and Psathha are functional cosmic/patron gods
+  with no parentage, consort or offspring attested in the sources; each carries a SOLITARY
+  flag with a cited reason. (Amish/sheep and Akhin/cattle share the livestock-protector
+  sphere but no narrative kin-bond between them is attested, so no symmetric relation is
+  fabricated.)
+
+```json
+[
+ {
+  "id": "circassian_amish",
+  "name": {
+   "primary": "God of Sheep and Shepherds",
+   "alt": [
+    "Amish",
+    "Amisch",
+    "Yemish",
+    "Emish"
+   ],
+   "transliterations": {
+    "circassian": "Amish (Amysch)",
+    "etymology": "Adyghe divine name; Amish is glossed in the ethnography as the god of fauna who specialized as the god of sheep — the first shepherd and patron of the flocks. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Stands from the first as the divine shepherd of the Circassian pastoral world, tending the flocks in his vast pasture-lands.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (CircassianWorld); Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001), religion chapter."
+     }
+    ],
+    "notes": "A 'god of fauna' specialized to sheep; figured as the original/ideal herdsman."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "herds-and-flocks",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001); 'The Circassian Pantheon' (Amisch as god of sheep, first shepherd, protector of flocks)."
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-of-livestock",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (barren ewes brought to Amisch so that he engenders lambs)."
+     }
+    ]
+   },
+   {
+    "sphereId": "pastoral-music",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (he plays a reed/horn pipe and sings ancient arias as he tends the sheep)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shepherd_the_flocks",
+    "name": "tends and multiplies the sheep in his vast pasture-lands",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001); 'The Circassian Pantheon' (Amisch the first shepherd and protector of sheep)."
+     }
+    ],
+    "notes": "As patron of shepherds he guards the flocks; pastoral ceremonies were devoted to him."
+   },
+   {
+    "id": "quicken_barren_ewes",
+    "name": "makes barren ewes fertile by playing his magic tune",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (barren ewes are brought to Amisch and his tune carries them from barrenness to fertility)."
+     }
+    ],
+    "notes": "The crossover from barrenness to lambing is effected by his flute-music."
+   },
+   {
+    "id": "bend_the_ram_horns",
+    "name": "shapes and bends the horns of the rams",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (among his pastimes is the bending of ram horns)."
+     }
+    ],
+    "notes": "An emblematic feat marking him as master of the flock."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "amish_magic_flute",
+    "name": "the magic reed-flute (shepherd's pipe)",
+    "kind": "instrument",
+    "role": "The reed/horn pipe on which Amisch plays his blessing-tune over the flocks; its music turns barren ewes fertile and accompanies his ancient arias.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (CircassianWorld)."
+     }
+    ]
+   },
+   {
+    "id": "amish_shepherds_horn",
+    "name": "the shepherd's horn",
+    "kind": "instrument",
+    "role": "A horn he sounds while singing over the sheep; pastoral rites devoted to him were accompanied by music on a reed or horn.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute'; Amjad Jaimoukha, The Circassians (pastoral ceremonies with reed/horn)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Amish (Amisch/Yemish) is the Circassian (Adyghe) god of sheep and of fauna — the first shepherd, patron of shepherds and protector of the flocks, who plays a magic reed-flute that renders barren ewes fertile.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001), chapter on traditional religion; 'The Circassian Pantheon'."
+     },
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Music of the Gods: Amisch and His Magic Flute' (CircassianWorld)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Distinct from the existing Sozeresh (fertility/hearth) and from the cattle-god Akhin (circassian_akhin): the Circassian herd-function is split, with Amish over SHEEP and Akhin over CATTLE. No kin attested — see SOLITARY flag."
+ },
+ {
+  "id": "circassian_akhin",
+  "name": {
+   "primary": "Patron of Cattle",
+   "alt": [
+    "Akhin",
+    "Ahin",
+    "Axin",
+    "Akhina"
+   ],
+   "transliterations": {
+    "circassian": "Akhin (Ahin)",
+    "etymology": "Adyghe divine name; Akhin is glossed in the ethnography as the patron/god of cattle, one of the most vital deities of the herding cult. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Presides as the divine guardian of the cattle-herds; central to the pastoral cult, especially among the coastal Shapsug.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Survey of Circassian paganism / Religion in Circassia (Ahin, patron of cattle, one of the most vital deities); the Shapsug rite of the self-walking sacrificial cow."
+     }
+    ],
+    "notes": "Ranked among the principal deities of the herding economy."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cattle-and-herding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Survey of Circassian paganism / Religion in Circassia (Ahin/Akhin, patron of cattle); Amjad Jaimoukha, The Circassians (Akhin and Khakustash as protectors of cattle-breeding among the Shapsug)."
+     }
+    ]
+   },
+   {
+    "sphereId": "pastoral-sacrifice",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Survey of Circassian paganism (the prominent myth of the sacred 'self-walking' sacrificial cow of Akhina)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard_the_cattle",
+    "name": "protects and prospers the cattle-herds",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Survey of Circassian paganism / Religion in Circassia (Akhin as patron-protector of cattle-breeding, esp. among the Shapsug)."
+     }
+    ],
+    "notes": "Honored by herders so that the cattle thrive; paired in the Shapsug cult with the cattle-protector Khakustash."
+   },
+   {
+    "id": "send_the_self_walking_cow",
+    "name": "sends the sacred cow that walks of its own accord to the sacrifice",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Survey of Circassian paganism (the myth of Akhina's self-walking sacrificial cow)."
+     }
+    ],
+    "notes": "A devoted cow goes unled to the place of offering — the charter-myth of his sacrifice."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "akhin_sacrificial_cow",
+    "name": "the self-walking sacrificial cow (Akhin's cow)",
+    "kind": "ritual-object",
+    "role": "The sacred cow that walks unled to the appointed place of sacrifice in Akhin's rite; the centrepiece of his pastoral cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Survey of Circassian paganism (the sacred self-walking cow of Akhina); Shapsug coastal ethnography."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Akhin (Ahin) is the Circassian (Adyghe) patron-god of cattle, one of the most vital deities of the herding cult, honored above all in the rite of the sacred 'self-walking' sacrificial cow, especially among the coastal Shapsug.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism / Religion in Circassia (Ahin, patron of cattle; self-walking cow of Akhina)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001) (Akhin and Khakustash, Shapsug protectors of cattle-breeding)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Distinct from the sheep-god Amish (circassian_amish): the Circassian herd-function is split between Amish (sheep) and Akhin (cattle). No kin attested — see SOLITARY flag."
+ },
+ {
+  "id": "circassian_thagaledj",
+  "name": {
+   "primary": "God of Crops and the Harvest",
+   "alt": [
+    "Thagaledj",
+    "Thageledj",
+    "Theghelej",
+    "Thagalej",
+    "Thaghalej"
+   ],
+   "transliterations": {
+    "circassian": "Thagaledj (Theghelej)",
+    "etymology": "Adyghe divine name incorporating tha (tḥə) 'god'; glossed as the god of flora and crops. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Presides over the tilled fields and the growth of grain as the anthropomorphic god of crops and the harvest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism (Thageledj, god of flora and crops, listed among the anthropomorphic gods)."
+     }
+    ],
+    "notes": "Reckoned among the anthropomorphic (humanoid) gods, beside Mezitha and Tlepsh."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "grain-and-tillage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism (Thageledj, god of flora and crops); Amjad Jaimoukha, The Circassians (Thaghaledj, harvest-god of the agrarian cult)."
+     }
+    ]
+   },
+   {
+    "sphereId": "harvest-and-plenty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Recorded Circassian prayer: 'Our god, Theghelej, Lord of wonder, We pray thee: multiply our harvest!' (Adyghe agrarian ritual)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "multiply_the_harvest",
+    "name": "multiplies the grain-harvest at the prayer of the tillers",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Recorded Circassian prayer to Theghelej: 'Lord of wonder, we pray thee: multiply our harvest!'"
+     }
+    ],
+    "notes": "Invoked as 'Lord of wonder' to swell the crop; the agrarian counterpart-partner of the hearth/fertility god Sozeresh."
+   },
+   {
+    "id": "ripen_the_flora",
+    "name": "ripens the plants and the fruits of the field",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism (Thageledj as god of flora and crops)."
+     }
+    ],
+    "notes": "His sphere is the whole vegetal world, not only grain."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "thagaledj_plough",
+    "name": "the plough (symbol of plenty)",
+    "kind": "tool",
+    "role": "The plough over which libations and prayers for harvest were made in the agrarian cult of which Thagaledj is the patron; in Circassian ritual the plough is the very emblem of plenty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001) (libations over the plough as symbol of plenty in Adyghe agrarian rite); standard survey of Circassian paganism."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Thagaledj (Theghelej) is the Circassian (Adyghe) god of flora, crops and the harvest — an anthropomorphic deity invoked as 'Lord of wonder' to multiply the harvest, distinct from the hearth/fertility god Sozeresh.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism / Religion in Circassia (Thageledj, god of flora and crops)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001), chapter on traditional religion; recorded harvest-prayer to Theghelej."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "The existing circassian_sozeresh notes already pair Sozeresh 'in the agrarian cult with the harvest-god Thaghaledj.' Distinct deities: Sozeresh governs fertility/hearth/household, Thagaledj governs flora/crops/harvest. No kin attested — see SOLITARY flag."
+ },
+ {
+  "id": "circassian_psathha",
+  "name": {
+   "primary": "God of Life and Souls",
+   "alt": [
+    "Psathha",
+    "Psetha",
+    "Pseta",
+    "Psyhwe",
+    "Psatha"
+   ],
+   "transliterations": {
+    "circassian": "Psathha (Psetha)",
+    "etymology": "Adyghe psa 'soul, life, breath' + tha (tḥə) 'god' = 'god of the soul/life'; the soul is psa in Circassian belief. Exact Cyrillic orthography of the divine name not source-verified for this batch."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Exists as a cosmogonic 'god without image,' overseeing the life-force (psa) of the living and the souls of the ancestral dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism (Psetha, the god of life and souls, among the cosmogonic 'gods without image' beside Thashkhue, Uashkhue and Schyble)."
+     }
+    ],
+    "notes": "Imageless/cosmogonic, in contrast to the anthropomorphic gods such as Tlepsh and Thagaledj."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "soul-and-life-force",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism (Psetha oversees life-forces and souls); Adyghe belief in the soul (psa)."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-dead-and-the-ancestors",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001) (the cult of the soul/psa and the watching ancestral dead in the afterlife realm hedrixe)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "grant_and_keep_the_soul",
+    "name": "grants the breath-soul (psa) of the living and keeps the souls of the dead",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism (Psetha, god of life and souls); Adyghe concept of psa."
+     }
+    ],
+    "notes": "Vitality is conceived as psa permeating beings and landscape; the immortality of the soul is a core Adyghe tenet."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Psathha (Psetha/Pseta) is the Circassian (Adyghe) god of life and souls — a cosmogonic 'god without image' governing the soul/life-force (psa) of the living and the souls of the ancestral dead.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Standard survey of Circassian paganism / Religion in Circassia (Psetha among the imageless cosmogonic gods; god of life and souls)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Amjad Jaimoukha, The Circassians: A Handbook (Curzon, 2001) (Adyghe belief in the soul psa and the immortality of the soul)."
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Name = psa 'soul/life' + tha 'god'. Classed as a cosmogonic deity of the 'gods without image' group. No material cult-image is attested (imageless by definition); no kin attested — see SOLITARY flag."
+ },
+ {
+  "id": "circassian_warzameg",
+  "name": {
+   "primary": "The Great Nart",
+   "alt": [
+    "Warzameg",
+    "Wseraseg",
+    "Worzameg",
+    "Werzemeg",
+    "Wəzərmes"
+   ],
+   "transliterations": {
+    "circassian": "Warzameg (Wseraseg)",
+    "etymology": "Adyghe Nart name; the Circassian counterpart of Ossetian Wyryzmæg/Urizhmag. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic / Nart age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic / Nart age",
+    "eraOrdering": 1,
+    "startEvent": "Born to the Nart Lady Meghazash (with his brothers Yimis and Pshimaruquo); rises to be the eldest/leading Nart and husband of Setenaya.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), 'The Tale of How Warzameg and Yimis Came to Be' (Lady Meghazash's sons); Warzameg cycle."
+     }
+    ],
+    "notes": "Treated as a semi-divine culture-hero within the Nart race."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "leadership-and-kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Warzameg cycle (the 'Great Nart,' senior leader of the Nart host)."
+     }
+    ]
+   },
+   {
+    "sphereId": "heroic-warfare",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Georges Dumézil, Légendes sur les Nartes (1930) (Wseraseg/Wyryzmæg as the chief Nart hero of the elder generation)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lead_the_nart_host",
+    "name": "leads and counsels the assembly of the Narts",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Warzameg cycle."
+     }
+    ],
+    "notes": "As eldest of the great Narts he heads the host; his wisdom is doubled by that of his wife Setenaya."
+   },
+   {
+    "id": "survive_by_cunning",
+    "name": "escapes giants and enemies by guile, often guided by Setenaya",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Warzameg-and-Setenaya tales."
+     }
+    ],
+    "notes": "Warzameg's adventures repeatedly turn on Setenaya's foreknowledge and stratagems."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "warzameg_steed",
+    "name": "the war-steed of the Great Nart",
+    "kind": "mount",
+    "role": "Warzameg's horse, the mount of the leading Nart in his raids and journeys; the speaking/heroic war-horse is a recurrent Nart motif.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Warzameg cycle (the hero's mount)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "circassian_setenaya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Warzameg-and-Setenaya cycle (Setenaya is the wife of Warzameg); the existing circassian_setenaya record names her 'wife of Warzameg'."
+     }
+    ],
+    "notes": "Setenaya, the Nart matriarch, is Warzameg's wife and counsellor. RECIPROCAL-NEEDED on circassian_setenaya."
+   },
+   {
+    "kind": "companion",
+    "personId": "circassian_pataraz",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (Warzameg and Pataraz among the four great Narts of the host)."
+     }
+    ],
+    "notes": "Fellow members of the Nart host. Reciprocated within this batch on circassian_pataraz."
+   },
+   {
+    "kind": "companion",
+    "personId": "circassian_sosruquo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (Sosruquo and Warzameg among the four great Narts)."
+     }
+    ],
+    "notes": "Comrades in the Nart host. RECIPROCAL-NEEDED on the existing circassian_sosruquo."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Warzameg (Wseraseg/Worzameg), the 'Great Nart,' is the senior leader of the Circassian Nart host and the husband of the matriarch Setenaya; he is a son of Lady Meghazash and the Circassian counterpart of Ossetian Wyryzmæg/Urizhmag.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), Warzameg cycle and 'How Warzameg and Yimis Came to Be'."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Georges Dumézil, Légendes sur les Nartes (1930) (the elder Nart hero Wyryzmæg, husband of Satana)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Adyghe Nart; counterpart of Ossetian Wyryzmæg but a distinct Circassian figure. His MOTHER is Lady Meghazash (not in corpus → parentIds []); Setenaya is his WIFE, not his mother — wired as a spouse relation. Classed demigod (Nart culture-hero); the Narts are a semi-divine race."
+ },
+ {
+  "id": "circassian_pataraz",
+  "name": {
+   "primary": "The Avenger Nart",
+   "alt": [
+    "Pataraz",
+    "Bataraz",
+    "Khimishuquo Pataraz",
+    "Pataraj",
+    "Batraz"
+   ],
+   "transliterations": {
+    "circassian": "Pataraz (Khimishuquo Pataraz)",
+    "etymology": "Adyghe Nart name; the patronymic Khimishuquo = 'son of Khimish' (Khimish + qʷə 'son'). Counterpart of Ossetian Batraz. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic / Nart age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic / Nart age",
+    "eraOrdering": 1,
+    "startEvent": "Conceived by the Nart Khimish and the water-sprite Lady Isp; while still in the womb he swears to avenge his father, whom jealous Narts have treacherously slain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), Pataraz cycle; 'Prometheus among the Circassians' (Pataraz swears vengeance in the womb; father Khimish killed for marrying Lady Isp)."
+     }
+    ],
+    "notes": "A 'twice-resurrected' hero; vengeance incarnate."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "vengeance-and-justice",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Prometheus among the Circassians' and Nart Sagas from the Caucasus (2002) (Pataraz as the embodiment of the blood-vengeance obligation)."
+     }
+    ]
+   },
+   {
+    "sphereId": "heroic-warfare",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Pataraz tales ('How Pataraz Freed Bearded Nasran, Who Was Chained to the High Mountain'; 'How Khimishuquo Pataraz Won the Three Magical Whetstones')."
+     }
+    ]
+   },
+   {
+    "sphereId": "liberation-of-the-bound",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), 'How Pataraz Freed Bearded Nasran, Who Was Chained to the High Mountain' (the Promethean chained-prisoner motif)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "avenge_the_slain_father",
+    "name": "exacts blood-vengeance/wergeld for his murdered father",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Prometheus among the Circassians'; Nart Sagas from the Caucasus (2002) (Pataraz bursts in on the Narts' feast and demands impossible recompense for Khimish)."
+     }
+    ],
+    "notes": "He vows the feud in the womb and pursues the guilty Narts — 'vengeance incarnate.'"
+   },
+   {
+    "id": "free_the_chained_prisoner",
+    "name": "frees Bearded Nasran chained to the high mountain",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), 'How Pataraz Freed Bearded Nasran, Who Was Chained to the High Mountain'."
+     }
+    ],
+    "notes": "The Caucasian 'Prometheus' episode: he releases the hero bound to the peak."
+   },
+   {
+    "id": "win_the_magical_whetstones",
+    "name": "wins the three magical whetstones",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), 'How Khimishuquo Pataraz Won the Three Magical Whetstones'."
+     }
+    ],
+    "notes": "A named heroic quest of the Pataraz cycle."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pataraz_three_whetstones",
+    "name": "the three magical whetstones",
+    "kind": "relic",
+    "role": "The three wonder-whetstones Pataraz wins in his named quest; sharpening-stones of supernatural virtue.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), 'How Khimishuquo Pataraz Won the Three Magical Whetstones'."
+     }
+    ]
+   },
+   {
+    "id": "pataraz_sword",
+    "name": "the avenger's sword",
+    "kind": "weapon",
+    "role": "Pataraz's blade, the instrument of his vengeance against the Narts who killed his father.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), Pataraz cycle (the hero's arms)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "circassian_warzameg",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (Pataraz and Warzameg among the four great Narts of the host)."
+     }
+    ],
+    "notes": "Fellow great Narts. Reciprocated within this batch on circassian_warzameg."
+   },
+   {
+    "kind": "companion",
+    "personId": "circassian_sosruquo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (Sosruquo and Pataraz among the four great Narts)."
+     }
+    ],
+    "notes": "Comrades in the Nart host. RECIPROCAL-NEEDED on the existing circassian_sosruquo."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pataraz (Bataraz / Khimishuquo Pataraz) is a central Circassian Nart hero — the avenger who, conceived by Khimish and the water-sprite Lady Isp, swears vengeance in the womb for his treacherously slain father, frees Bearded Nasran from the mountain, and wins the three magical whetstones; the counterpart of Ossetian Batraz.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), Pataraz cycle (tales 'How Pataraz Freed Bearded Nasran...' and 'How Khimishuquo Pataraz Won the Three Magical Whetstones')."
+     },
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, 'Prometheus among the Circassians'; Georges Dumézil, Légendes sur les Nartes (1930) (Batraz, the storm/steel avenger-hero, son of Xæmyc/Khimish)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Adyghe Nart; counterpart of Ossetian Batraz but a distinct Circassian figure. His parents — the Nart Khimish and the water-sprite Lady Isp — are not in the corpus, so parentIds []; genealogy recorded here. Classed demigod (Nart culture-hero)."
+ }
+]
+```
+
+SOLITARY:
+- circassian_amish — Amish (god of sheep / first shepherd) is attested only as a functional pastoral deity, with no parentage, consort, or offspring named in the sources (Jaimoukha, The Circassians, 2001; Colarusso, 'Music of the Gods: Amisch and His Magic Flute'). He shares the livestock-protector sphere with the cattle-god Akhin, but no narrative kin-bond between them is attested, so no relation is fabricated.
+- circassian_akhin — Akhin (patron of cattle) is attested only as a functional herding deity centred on the self-walking-cow sacrifice, with no kin named in the sources (standard survey of Circassian paganism / Religion in Circassia; Shapsug ethnography).
+- circassian_thagaledj — Thagaledj (god of flora, crops and harvest) is attested only as a functional agrarian deity invoked in harvest-prayer, with no parentage, consort, or offspring named (standard survey of Circassian paganism; Jaimoukha, The Circassians, 2001).
+- circassian_psathha — Psathha/Psetha (god of life and souls) is a cosmogonic 'god without image' with no kin attested in the sources (standard survey of Circassian paganism / Religion in Circassia).
+
+RECIPROCAL-NEEDED:
+- circassian_setenaya spouse circassian_warzameg   (add reciprocal spouse-relation to the existing circassian_setenaya: Setenaya is the wife of Warzameg — Colarusso, Nart Sagas from the Caucasus, 2002, Warzameg-and-Setenaya cycle; the existing Setenaya record already names her 'wife of Warzameg')
+- circassian_sosruquo companion circassian_warzameg   (add reciprocal companion-relation to the existing circassian_sosruquo: Sosruquo and Warzameg are comrades among the four great Narts — Colarusso, Nart Sagas from the Caucasus, 2002)
+- circassian_sosruquo companion circassian_pataraz   (add reciprocal companion-relation to the existing circassian_sosruquo: Sosruquo and Pataraz are comrades among the four great Narts — Colarusso, Nart Sagas from the Caucasus, 2002)

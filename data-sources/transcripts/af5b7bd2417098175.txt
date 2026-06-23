@@ -307,7 +307,31 @@ Here is the registry. I researched each tradition via web search and cited real 
     "weight": "medium"
    }
   ],
-  "notes": "Kabardian/Adyghe ⟨Сосрыкъуэ⟩ Sosrəqʷə; the element ⟨къуэ⟩ qʷə = 'son'. He is the Circassian counterpart of Ossetian Soslan/Sozyryko but treated here as a distinct Circassian figure. Classed demigod (culture-hero/Nart) per the schema; the Narts are a semi-divine race."
+  "notes": "Kabardian/Adyghe ⟨Сосрыкъуэ⟩ Sosrəqʷə; the element ⟨къуэ⟩ qʷə = 'son'. He is the Circassian counterpart of Ossetian Soslan/Sozyryko but treated here as a distinct Circassian figure. Classed demigod (culture-hero/Nart) per the schema; the Narts are a semi-divine race.",
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "circassian_warzameg",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colarusso, Nart Sagas from the Caucasus (2002)"
+     }
+    ],
+    "notes": "Comrades among the four great Narts."
+   },
+   {
+    "kind": "companion",
+    "personId": "circassian_pataraz",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colarusso, Nart Sagas from the Caucasus (2002)"
+     }
+    ],
+    "notes": "Comrades among the four great Narts."
+   }
+  ]
  },
  {
   "id": "circassian_setenaya",
@@ -436,7 +460,20 @@ Here is the registry. I researched each tradition via web search and cited real 
     "weight": "high"
    }
   ],
-  "notes": "Cognate of Ossetian Satana but a distinct Circassian figure. A folk gloss reads the name as 'mother of a hundred'. Treated as a goddess-tier matriarch within the semi-divine Nart family."
+  "notes": "Cognate of Ossetian Satana but a distinct Circassian figure. A folk gloss reads the name as 'mother of a hundred'. Treated as a goddess-tier matriarch within the semi-divine Nart family.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "circassian_warzameg",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colarusso, Nart Sagas from the Caucasus (2002), the Warzameg-and-Setenaya cycle"
+     }
+    ],
+    "notes": "Setenaya is the wife of Warzameg, the Great Nart."
+   }
+  ]
  },
  {
   "id": "circassian_tlepsh",
@@ -1220,7 +1257,20 @@ Here is the registry. I researched each tradition via web search and cited real 
     "weight": "medium"
    }
   ],
-  "notes": "Ingush/Chechen ⟨Тушоли⟩ Tušoli. Among the Ingush her cult was the most prominent of the goddess-figures, with a sanctuary at Tхаба-Ерды region."
+  "notes": "Ingush/Chechen ⟨Тушоли⟩ Tušoli. Among the Ingush her cult was the most prominent of the goddess-figures, with a sanctuary at Tхаба-Ерды region.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "vainakh_elta",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jaimoukha, The Chechens (2005); Tsaroïeva (2005)"
+     }
+    ],
+    "notes": "Tusholi and the hunt-god Elta are both children of the supreme god Dela."
+   }
+  ]
  },
  {
   "id": "vainakh_pkharmat",
@@ -1352,7 +1402,20 @@ Here is the registry. I researched each tradition via web search and cited real 
     "weight": "high"
    }
   ],
-  "notes": "Chechen ⟨Пхьармат⟩ Pẖarmat (from pẖar 'smith'); Ingush form Kurkho/Kʼurko. Classed demigod (Nart). Counterpart of Greek Prometheus and Georgian Amirani; helped by Sela Sata."
+  "notes": "Chechen ⟨Пхьармат⟩ Pẖarmat (from pẖar 'smith'); Ingush form Kurkho/Kʼurko. Classed demigod (Nart). Counterpart of Greek Prometheus and Georgian Amirani; helped by Sela Sata.",
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "vainakh_sela_sata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Tsaroïeva (2005); the Nart fire-theft cycle"
+     }
+    ],
+    "notes": "Sela Sata aids Pkharmat in the theft of fire from Sela."
+   }
+  ]
  },
  {
   "id": "vainakh_maetsill",
