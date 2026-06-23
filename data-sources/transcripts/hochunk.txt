@@ -1,0 +1,262 @@
+Ho-Chunk (Winnebago) core pantheon — research transcript.
+
+Sources verified by web search against the standard scholarship: Paul Radin, *The Winnebago Tribe* (1923, Bureau of American Ethnology, 37th Annual Report, 1915–1916, pp. 35–550); Paul Radin, *The Trickster: A Study in American Indian Mythology* (1956); Paul Radin, *The Road of Life and Death: A Ritual Drama of the American Indians* (1945); Paul Radin, *Winnebago Hero Cycles: A Study in Aboriginal Literature* (1948); Paul Radin, *The Winnebago Myth of the Twins* (BAE notebooks); and Richard L. Dieterle's *Encyclopedia of Hočąk (Winnebago) Mythology* (hotcakencyclopedia.com), which the existing Red Horn corpus already cites and which compiles and cross-references Radin's Winnebago Notebooks at the American Philosophical Society.
+
+The well-attested core that the existing corpus (which holds only the Red Horn cycle: `redhorn`, `redhorn_son`, `white_beaver_woman`) is missing is the creator Earthmaker and the series of saving "culture-hero" spirits he fashioned and sent down to make the world safe for humanity. In the canonical Hare-cycle series these spirits are, in order, Trickster (Wakdjąkaga), Bladder (Wadexúga), Turtle (Kecągega), Redhorn (already in the corpus), and Hare (Wašjįgega / Wacdjįgega), the fifth and last, who founded the Medicine Rite. To these I add Disease-Giver (Hošereʼųwahira), the dispenser of life and death attested across Radin's war-bundle material, and the two heroes of the Twin Cycle, Flesh (Warora) and Stump / Little Ghost (Wanaghi). The Winnebago themselves draw a clear distinction between Trickster and Hare, so they are kept as separate figures. Native-language spellings follow Radin/Dieterle; where a specific term is not securely attested for a given attribute it is omitted rather than invented. I omit the Thunderbirds (Wakąja) as a standalone figure because in the sources they are a collective clan-class of upper-world war spirits rather than a single named individual.
+
+```json
+[
+  {
+    "id": "hochunk_earthmaker",
+    "name": { "primary": "Earthmaker", "alt": ["Mą'ųna", "Ma-ona", "Man'una", "Mą'una"], "transliterations": { "hochunk": "Mą'ųna", "etymology": "Ho-Chunk mą 'earth' + ('ų)na 'maker', i.e. 'Earth-maker', the creator." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "earthmaker-creation" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "earthmaker-creation", "eraOrdering": 0, "startEvent": "creation-of-the-world", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923), Origin Myth (BAE 37th Annual Report)" }], "notes": "In the origin myth Earthmaker comes to consciousness alone in space; he weeps, and his tears become the primal waters; he then wishes for light and earth and they come into being, and he makes the first human in his own likeness from a piece of clay, giving it mind, tongue, soul, and breath." },
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 1, "startEvent": "sending-of-the-saving-spirits", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'; Radin, Winnebago Hero Cycles (1948)" }], "notes": "Seeing humanity preyed upon by evil spirits, Earthmaker fashions a series of spirits with his own hands and sends them down to make the earth safe — in the Hare-cycle order Trickster, Bladder, Turtle, Redhorn, and Hare, giving the survivors charge of the earth and otherworldly paradises." }
+    ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923)" }] },
+      { "sphereId": "sky", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923)" }] },
+      { "sphereId": "tobacco", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923); Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker'" }] }
+    ],
+    "faculties": [
+      { "id": "world-creation", "name": "World-creation", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923), Origin Myth" }], "notes": "Created the waters, light, earth, plants, animals, and the first human." }
+    ],
+    "materialCulture": [
+      { "id": "tobacco-hochunk", "name": "Tobacco", "kind": "ritual-object", "role": "originator", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker'; Radin, The Winnebago Tribe (1923)" }] }
+    ],
+    "relations": [
+      { "kind": "creator-of", "personId": "hochunk_trickster", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster' / 'The Sons of Earthmaker'" }], "notes": "Fashioned Trickster, the first of the saving spirits, and sent him to teach humans how to live." },
+      { "kind": "creator-of", "personId": "hochunk_bladder", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'" }], "notes": "Created Bladder, his third son among the saving spirits." },
+      { "kind": "creator-of", "personId": "hochunk_turtle", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'" }], "notes": "Made Turtle, gave him a knife, and charged him to make the earth good." },
+      { "kind": "creator-of", "personId": "redhorn", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Redhorn Cycle' / 'The Sons of Earthmaker'" }], "notes": "Sent Redhorn down as one of the spirits fashioned to save humanity." },
+      { "kind": "creator-of", "personId": "hochunk_hare", "sources": [{ "kind": "secondary", "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }], "notes": "Fashioned Hare, the fifth and last of the saving spirits, and put him in charge of this earth." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, The Winnebago Tribe (1923), BAE 37th Annual Report" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker'" }], "weight": "secondary" }
+    ],
+    "notes": "Earthmaker (Mą'ųna, 'Earth-maker') is the creator and supreme spirit of the Ho-Chunk. In Radin's recorded origin myth he awakens alone in empty space, and his tears form the primal waters before he calls light and the earth into being and shapes the first human from clay in his own likeness, giving tobacco to humanity as his special gift. Confronted with the suffering of human beings preyed upon by evil spirits, he fashions a series of culture-hero spirits with his own hands and sends them to earth to make it safe — Trickster, Bladder, Turtle, Redhorn, and Hare — assigning the survivors dominion over the earth and over otherworldly realms."
+  },
+  {
+    "id": "hochunk_trickster",
+    "name": { "primary": "Trickster", "alt": ["Wakdjąkaga", "Wakjąkága", "Wakdjunkaga", "Kunu"], "transliterations": { "hochunk": "Wakdjąkaga", "etymology": "Ho-Chunk wakdjąkaga, glossed by Radin as 'the tricky one' / 'the cunning one'; as the first-created he is also called Kunu, 'First-Born'." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "created-and-sent-by-earthmaker", "sources": [{ "kind": "secondary", "reference": "Radin, The Trickster (1956); Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster'" }], "notes": "The first of the great spirits Earthmaker created in the image of a man and charged to go forth and teach humans how to live; his foolishness and uncontrolled appetites made it necessary to recall him." }
+    ],
+    "domains": [
+      { "sphereId": "trickery", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Trickster (1956)" }] },
+      { "sphereId": "transformation", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Trickster (1956)" }] }
+    ],
+    "faculties": [
+      { "id": "shapeshifting", "name": "Shape- and sex-shifting", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Radin, The Trickster (1956)" }], "notes": "Changes his form and even his sex; in one episode disguises himself as a woman and marries a chief's son." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "created-by", "personId": "hochunk_earthmaker", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster'; Radin, The Trickster (1956)" }], "notes": "The first of the saving spirits fashioned and sent down by Earthmaker." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, The Trickster: A Study in American Indian Mythology (1956)" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster'" }], "weight": "secondary" }
+    ],
+    "notes": "Wakdjąkaga, 'Trickster', is the great trickster of the Winnebago Trickster Cycle, the forty-nine-episode narrative that is the centerpiece of Radin's *The Trickster* (1956). The first spirit Earthmaker created to rescue humankind and sent forth to teach people how to live, he is driven entirely by his own appetites: he wanders the world, dismembers and reattaches his own body, transforms his shape and sex, and lurches from one self-inflicted disaster to another, serving as a model of what not to do. Because his foolishness defeated his civilizing mission he was recalled, and the task passed in turn to Bladder, Turtle, Redhorn, and Hare. The Winnebago themselves carefully distinguish Trickster from the culture-hero Hare."
+  },
+  {
+    "id": "hochunk_bladder",
+    "name": { "primary": "Bladder", "alt": ["Wadexúga", "Wadexuga", "Wató'ka"], "transliterations": { "hochunk": "Wadexúga", "etymology": "Ho-Chunk name rendered 'Bladder'; the spirit named for and identified with an (inflatable) animal bladder." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "created-and-sent-by-earthmaker", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'; Radin, 'The Bladder', Winnebago Notebooks" }], "notes": "Earthmaker's third son among the saving spirits; he created numerous brothers (some say as many as twenty), boasted that no spirit was his equal and that they had nothing to fear, but through his overconfidence all but one of the brothers were killed, and he was recalled for his arrogance." }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "narrative", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "created-by", "personId": "hochunk_earthmaker", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'" }], "notes": "Earthmaker's third son among the spirits sent to save humanity." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, 'The Bladder', Winnebago Notebooks (compiled in Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker')" }], "weight": "secondary" }
+    ],
+    "notes": "Bladder (Wadexúga) is the third of the saving spirits Earthmaker fashioned and sent to earth in the Hare-cycle series. He created a band of brothers — by some accounts as many as twenty — and, puffed up with his own sense of power, declared that no spirit was his equal and that they had nothing to fear; but he was not serious enough to exercise proper leadership, and all of his brothers save one were killed. Because of this arrogance Earthmaker recalled him, as he had recalled Trickster before him, and the mission passed onward to Turtle, Redhorn, and finally Hare."
+  },
+  {
+    "id": "hochunk_turtle",
+    "name": { "primary": "Turtle", "alt": ["Kecągega", "Kečągega", "Kecungega"], "transliterations": { "hochunk": "Kecągega", "etymology": "Ho-Chunk kecąk 'turtle' + -ega (personal-name suffix), 'the Turtle'." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "created-and-sent-by-earthmaker", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'" }], "notes": "Earthmaker told him, 'You are going to make the earth good, Turtle,' and caused him to have a knife; but when Turtle came to earth he made war instead of caring for the creation, and so Earthmaker took him back." }
+    ],
+    "domains": [
+      { "sphereId": "war", "contextTag": "narrative", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "turtle-knife", "name": "Knife", "kind": "weapon", "role": "wielder", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'" }] }
+    ],
+    "relations": [
+      { "kind": "created-by", "personId": "hochunk_earthmaker", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'" }], "notes": "Made by Earthmaker, given a knife, and sent to make the earth good." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, The Winnebago Tribe (1923)" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Turtle' / 'Turtle Spirits'" }], "weight": "secondary" }
+    ],
+    "notes": "Turtle (Kecągega) is one of the culture-hero spirits Earthmaker sent down to rescue humanity, counted among the canonical Hare-cycle series. Earthmaker told him, 'You are going to make the earth good, Turtle,' and gave him a knife; but on reaching the earth Turtle turned to war rather than to the ordering of creation, so Earthmaker recalled him, as he had Trickster and Bladder. Despite this failure Turtle remains a popular and heroic warrior-spirit throughout Ho-Chunk narrative, the patron of warlike valor."
+  },
+  {
+    "id": "hochunk_hare",
+    "name": { "primary": "Hare", "alt": ["Wašjįgega", "Wacdjįgega", "Wash-ching-geka", "Little Hare"], "transliterations": { "hochunk": "Wašjįgega", "etymology": "Ho-Chunk wašjįk 'hare/rabbit' + -ega (personal-name suffix), 'the Hare'." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "created-and-sent-by-earthmaker", "sources": [{ "kind": "secondary", "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }], "notes": "The fifth and last of the spirits Earthmaker dispatched; he conquered the bad spirits that had preyed on humanity and remade the world so that it would be survivable for his human 'aunts and uncles'." },
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 1, "startEvent": "origin-of-death-and-the-medicine-rite", "sources": [{ "kind": "secondary", "reference": "Radin, The Road of Life and Death (1945); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }], "notes": "When Hare sought to give human beings everlasting life his Grandmother (the Earth) told him death had been made to prevent overcrowding; by accident he then let death into the world, but in compensation he founded the Medicine Rite (Medicine Lodge), through whose discipline its members could attain a fullness of life." }
+    ],
+    "domains": [
+      { "sphereId": "culture-hero", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, Winnebago Hero Cycles (1948)" }] },
+      { "sphereId": "medicine", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Road of Life and Death (1945)" }] },
+      { "sphereId": "death", "contextTag": "narrative", "sources": [{ "kind": "secondary", "reference": "Radin, The Road of Life and Death (1945); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }] }
+    ],
+    "faculties": [
+      { "id": "monster-slaying", "name": "Monster-slaying", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }], "notes": "Conquered and destroyed the evil spirits and monsters that preyed on humanity, making the earth safe." }
+    ],
+    "materialCulture": [
+      { "id": "hochunk-medicine-rite", "name": "The Medicine Rite (Medicine Lodge)", "kind": "ritual-object", "role": "originator", "sources": [{ "kind": "secondary", "reference": "Radin, The Road of Life and Death (1945); Dieterle, Encyclopedia of Hočąk Mythology, 'Hare Secures the Creation Lodge of the Medicine Rite'" }] }
+    ],
+    "relations": [
+      { "kind": "created-by", "personId": "hochunk_earthmaker", "sources": [{ "kind": "secondary", "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }], "notes": "The fifth and last of the saving spirits Earthmaker fashioned; Earthmaker placed him in charge of this earth." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, Winnebago Hero Cycles: A Study in Aboriginal Literature (1948)" }, { "kind": "secondary", "reference": "Paul Radin, The Road of Life and Death (1945)" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'" }], "weight": "secondary" }
+    ],
+    "notes": "Hare (Wašjįgega, 'the Hare') is the great culture-hero of the Ho-Chunk and the fifth and last of the saving spirits Earthmaker sent to earth. Born to live among human beings, whom he calls his 'aunts and uncles', he conquered the bad spirits and monsters that had preyed on humanity and remade the world so that it would be survivable. When he tried to win everlasting life for people, his Grandmother — the Earth herself — explained that death had been ordained to prevent overcrowding; Hare then loosed death into the world by accident, but made amends by founding the Medicine Rite (the Medicine Lodge), through whose ritual discipline its members might attain a fullness of life and a measure of immortality. Earthmaker set Hare in charge of this earth, and his deeds are recorded in the Hare Cycle and in the Medicine Rite drama Radin published as *The Road of Life and Death*. The Winnebago carefully distinguish Hare, the benevolent world-shaper, from Trickster."
+  },
+  {
+    "id": "hochunk_disease_giver",
+    "name": { "primary": "Disease-Giver", "alt": ["Hošereʼųwahira", "Hošere'ų́wahira", "Hoxereʼųwahira"], "transliterations": { "hochunk": "Hošereʼųwahira", "etymology": "Ho-Chunk hošereʼų 'to cause sickness/disease' + -wahira, 'the one who deals out disease', the Disease-Giver." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "attestation-as-dispenser-of-life-and-death", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923); Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'" }], "notes": "A great spirit who dispenses both life and death and is the source of sickness; one of the principal spirits invoked in the war-bundle ceremony, alongside Earthmaker, the Thunderbirds, the Night Spirits, the Sun, the Moon, the Morning Star, the Earth, and the Water. Dogs were offered to him as messengers in response to sickness." }
+    ],
+    "domains": [
+      { "sphereId": "disease", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'" }] },
+      { "sphereId": "death", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Tribe (1923); Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'" }] }
+    ],
+    "faculties": [
+      { "id": "dispensing-life-and-death", "name": "Dispenser of life and death", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'" }], "notes": "Holds power over both the giving of life and the dealing of death and disease to human beings." }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, The Winnebago Tribe (1923)" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'" }], "weight": "secondary" }
+    ],
+    "notes": "Disease-Giver (Hošereʼųwahira) is the Ho-Chunk spirit who dispenses both life and death and is the source of sickness — in effect the god of death. He is one of the great spirits honored in the war-bundle ceremony, named alongside Earthmaker, the Thunderbirds, the Night Spirits, the Sun, the Moon, the Morning Star, the Earth, and the Water, and dogs were sacrificed to him as messengers in time of illness. His narrative profile is preserved in stories such as 'The Man who Defied Disease Giver'. He stands as an independent power in the Ho-Chunk pantheon, with no genealogical kinship to the other spirits attested in the sources."
+  },
+  {
+    "id": "hochunk_twin_flesh",
+    "name": { "primary": "Flesh", "alt": ["Warora", "Waroka", "Warädjexega"], "transliterations": { "hochunk": "Warora", "etymology": "Ho-Chunk name glossed 'Flesh' (the body), one of the Twin heroes; the twins embody the pairing of body and soul/ghost." } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "demigod", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "birth-of-the-twins", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "notes": "Born when his pregnant mother was killed and her womb cut open by an old man (his grandfather); this twin was left behind in the lodge by their father, while the other was hidden in a hollow stump, and the two were later reunited." },
+      { "typeStatus": "demigod", "era": "soteriological-spirits", "eraOrdering": 1, "startEvent": "monster-slaying-adventures", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "notes": "With his brother he ranges the world as a monster-slayer — killing serpents they call 'fish', leeches they call 'turtles', thunderbirds they call 'pigeons', and an ogre — sometimes overstepping by killing beings they should have spared." }
+    ],
+    "domains": [
+      { "sphereId": "monster-slaying", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "hochunk_twin_stump", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "notes": "Flesh (the body) and Stump / Little Ghost (the soul) are twin brothers, conceived as body and soul paired together." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, The Winnebago Myth of the Twins: A Comparative Study" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "weight": "secondary" }
+    ],
+    "notes": "Flesh (Warora) is one of the two heroes of the Ho-Chunk Twin Cycle, representing the body in a pairing where his twin brother represents the soul or ghost. The twins were born when their pregnant mother was killed and her womb opened by an old man; one boy was hidden in a hollow stump and the other left in the lodge, and after their father reunited them they became famous monster-slayers, ranging the world to destroy serpents, leeches, thunderbirds, and ogres — though at times they killed creatures they ought to have spared. Radin treated their story as one of the central Winnebago hero cycles."
+  },
+  {
+    "id": "hochunk_twin_stump",
+    "name": { "primary": "Stump", "alt": ["Little Ghost", "Wanaghi", "Wanąǧi", "Warädjexega"], "transliterations": { "hochunk": "Wanaghi", "etymology": "Ho-Chunk wanąǧi 'ghost/spirit', glossed 'Little Ghost'; in the Twins Cycle the dominant twin is also called 'Stump' because he was hidden in, and says his grandmother is, a hollow stump." } },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Ho-Chunk",
+    "primaryTradition": "Ho-Chunk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "soteriological-spirits" },
+    "lifecycle": [
+      { "typeStatus": "demigod", "era": "soteriological-spirits", "eraOrdering": 0, "startEvent": "birth-of-the-twins", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle' / 'The Birth of the Twins'" }], "notes": "Born when his pregnant mother was killed and her womb cut open; this twin was hidden by his grandfather in the hollow of a stump (whence his name), while his brother was left in the lodge, and the two were later reunited by their father." },
+      { "typeStatus": "demigod", "era": "soteriological-spirits", "eraOrdering": 1, "startEvent": "monster-slaying-adventures", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "notes": "The bolder of the two; with his brother he sets out for forbidden places and slays serpents, leeches, thunderbirds, and an ogre, and the pair are even feared by their own father." }
+    ],
+    "domains": [
+      { "sphereId": "monster-slaying", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "hochunk_twin_flesh", "sources": [{ "kind": "secondary", "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "notes": "Stump / Little Ghost (the soul) and Flesh (the body) are twin brothers, conceived as soul and body paired together." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Paul Radin, The Winnebago Myth of the Twins: A Comparative Study" }, { "kind": "secondary", "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'" }], "weight": "secondary" }
+    ],
+    "notes": "Stump — also called Little Ghost (Wanaghi) — is the dominant of the two heroes of the Ho-Chunk Twin Cycle, representing the soul or ghost to his brother Flesh's body. He takes the name 'Stump' because, after their pregnant mother was killed and her womb opened, this boy was hidden in the hollow of a stump (and says that his grandmother is a stump), while his twin was kept in the lodge. Reunited by their father, the twins became renowned monster-slayers who killed serpents, leeches, thunderbirds, and ogres and grew so powerful that even their father feared them. Radin recorded and analyzed their cycle as one of the principal Winnebago hero narratives."
+  }
+]
+```
+
+SOLITARY: hochunk_disease_giver — Disease-Giver (Hošereʼųwahira) is attested in Radin's *The Winnebago Tribe* (1923) and Dieterle's Hočąk Encyclopedia only as an independent power who dispenses life and death and is invoked among the great war-bundle spirits (Earthmaker, Thunderbirds, Night Spirits, Sun, Moon, Morning Star, Earth, Water); the sources record no genealogical kinship or other defined relation tying him to another named figure.

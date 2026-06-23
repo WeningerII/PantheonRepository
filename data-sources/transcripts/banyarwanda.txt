@@ -1,0 +1,275 @@
+PANTHEON REGISTRY — BANYARWANDA (RWANDA-RUNDI) CORE
+Tradition string: Banyaruanda
+Authored: 2026-06-23
+
+Scope of this batch: the well-attested supreme-creator and dynastic-founder CORE that the
+existing corpus (the Ryangombe / kubandwa-imandwa cult cluster: banyaruanda_babinga,
+banyaruanda_ryangombe, banyaruanda_kalimulore, banyaruanda_binego) was missing. Three new
+figures are authored:
+
+  1. banyaruanda_imana   — Imana, the supreme creator High God of Rwanda AND Burundi
+                           (Banyarwanda + Barundi). THE central absent figure.
+  2. banyaruanda_gihanga — Gihanga (Gihanga Ngomijana), the divine culture-hero / founder-king
+                           of the Nyiginya dynasty; introducer of cattle, fire, ironworking,
+                           pottery, hunting, and the dynastic drum.
+  3. banyaruanda_nkuba   — Nkuba ("Lightning/Thunder"), Umwami wo Hejuru ("King of the Sky"),
+                           head of the Ibimanuka celestial line (Nkuba > Kigwa/Sabizeze > Muntu
+                           > ... > Gihanga). The sky-father that wires the dynastic line.
+
+Source basis (real scholarship, verified):
+  - Alexis Kagame, Inganji Karinga (1943/1959) and the dynastic poem Ubucurabwenge — the
+    classic native genealogical/dynastic recension (Nkuba > Kigwa > Muntu > ... > Gihanga;
+    Gihanga the founder of the cow and the drum).
+  - Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda: texte, traduction
+    et commentaire de son rituel (Tervuren: Musée royal de l'Afrique Centrale, 1964) — the
+    sacred-kingship ritual corpus; Nkuba as king of the sky and father of Gihanga's lineage;
+    the sacred Fire of Gihanga.
+  - Jacques J. Maquet, The Premise of Inequality in Ruanda (Oxford UP / IAI, 1961) — "Imana,
+    the maker, created Kazikamuntu, the common ancestor of all humans"; the king as the
+    incarnation of Imana.
+  - Pierre Smith, Le récit populaire au Rwanda (Paris: Armand Colin, Classiques africains 17,
+    1975) — the popular-narrative corpus (apologues, legends, tales) in which Imana and the
+    Ibimanuka origin cycle are transmitted.
+  - Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (Madison: Univ. of
+    Wisconsin Press, 2004) — critical history treating Gihanga as the legendary founder-
+    archetype of the Nyiginya kingdom and the ibimanuka ("those fallen from the heavens").
+  - Supporting: A. C. Werner, Myths and Legends of the Bantu (1933), ch. on Rwanda ("Imana and
+    the Childless Couple": Imana gives Kigwa and Lututsi to Nyinakigwa).
+
+Genealogical / theological notes used in the wiring:
+  - Imana is the transcendent High God and Creator of Rwanda and Burundi; he is the principal
+    agent behind the celestial origin of the royal line ("the sky was the point of departure
+    ... for which the Creator is the principal agent": Habyarimana = "it is Imana who
+    engenders"). He is not the biological father in the genealogy but the creator/origin of the
+    line and of the first ancestor (Kazikamuntu, per Maquet). Hence Imana is wired creator-of
+    Gihanga (origin of the line) and creator-of Nkuba (the Creator above the king of the sky),
+    NOT as a genealogical father.
+  - Nkuba (Lightning), king of the sky, is the head of the Ibimanuka line: "Nkuba (the
+    thunder) begat Kigwa (the fallen one), who begat Muntu," and the line continues to Gihanga.
+    Nkuba is therefore wired ancestor-of Gihanga (multi-generational celestial descent), NOT a
+    direct father (the intervening links Kigwa/Sabizeze, Muntu, Kazikamuntu, etc., are not in
+    this corpus, so directed ancestor-of/descendant-of is used rather than father/father-of).
+  - Gihanga's type = demigod: a divinely-descended founder-hero of the Ibimanuka line who is
+    venerated with a perpetual sacred fire and royal cult, but whom Vansina treats as a
+    legendary archetype rather than a god proper; his divine progenitor (the sky-line) is
+    several generations removed and not an in-corpus direct parent, so parentIds is left empty
+    and the descent is carried as relations.
+
+Note on the era key for Nkuba: the celestial-origin cycle and the descent to Gihanga belong to
+the deep mythic past, so Nkuba is placed in `mythic-prehistoric` (alongside Imana); Gihanga,
+the dynastic founder, is `heroic-age` per the registry instruction.
+
+Note on omitted candidates: Nyabingi (the borderland Kigezi/Mpororo spirit-queen possession
+cult) and Kigwa/Sabizeze were considered but NOT authored here. Nyabingi is a peripheral
+borderland figure whose cult is largely a 19th–20th c. (colonial-era) anti-colonial resistance
+phenomenon distinct from the central kubandwa and dynastic core, and is better treated in a
+separate borderland batch. Kigwa/Sabizeze and Kazikamuntu are intermediate genealogical links
+that would pad the batch without adding to the well-attested CORE the corpus was missing; they
+can be materialized later as a genealogical bridge between Nkuba and Gihanga.
+
+```json
+[
+  {
+    "id": "banyaruanda_imana",
+    "name": {
+      "primary": "Imana",
+      "alt": ["Imaana", "Imana yacu"],
+      "transliterations": {
+        "kinyarwanda": "Imana",
+        "etymology": "Kinyarwanda/Kirundi Imana, the supreme being; popularly glossed 'the Almighty / the source of all good fortune'. The same name is the ordinary word for God across Rwanda and Burundi."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Banyaruanda",
+    "primaryTradition": "Banyaruanda",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "the-high-god-creator-of-rwanda-and-burundi",
+        "sources": [{ "kind": "secondary", "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (Oxford UP / IAI, 1961); Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)" }],
+        "notes": "Imana is the supreme, transcendent High God and creator of the Banyarwanda and Barundi, the maker and sustainer of the universe and the source of all good fortune; per Maquet, 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans.' Benevolent but remote, he is not the object of a direct organized cult, mediating with the human world through ancestral spirits (abazimu) and the imandwa."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 1,
+        "startEvent": "the-potter-who-fashions-and-gives-children",
+        "sources": [{ "kind": "secondary", "reference": "A. C. Werner, Myths and Legends of the Bantu (1933), 'Imana and the Childless Couple'; Pierre Smith, Le récit populaire au Rwanda (1975)" }],
+        "notes": "Imana is figured as the Potter (Umubumbyi) who molds human beings and bestows children: in the popular tale 'Imana and the Childless Couple' he grants the barren Nyinakigwa three children — the sons Kigwa and Lututsi and a daughter — on condition she not reveal their origin, an episode that links the High God to the origin of the celestial Kigwa line that descends to the kings."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic-present",
+        "eraOrdering": 2,
+        "startEvent": "imana-yirirwa-ahandi-igataha-i-rwanda",
+        "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, La poesie dynastique au Rwanda (1951) and Inganji Karinga; Aimable Twagilimana, Historical Dictionary of Rwanda (proverb 'Imana yirirwa ahandi igataha i Rwanda')" }],
+        "notes": "Proverbially 'Imana yacu' ('our Imana'), the High God is held to favour Rwanda above all lands: 'Imana yirirwa ahandi igataha i Rwanda' — 'Imana spends the day elsewhere but comes home to Rwanda to sleep.' He is conventionally pictured with very long arms, able to reach into human affairs and to ward off death."
+      }
+    ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Maquet, The Premise of Inequality in Ruanda (1961); d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)" }] },
+      { "sphereId": "supreme-high-god", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, La philosophie bantu-rwandaise de l'Etre (1956); d'Hertefelt & Coupez (1964)" }] },
+      { "sphereId": "fertility-giver-of-children", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "A. C. Werner, Myths and Legends of the Bantu (1933); Pierre Smith, Le recit populaire au Rwanda (1975)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "creator-of", "personId": "banyaruanda_gihanga", "era": "mythic-prehistoric", "sources": [{ "kind": "secondary", "reference": "Maquet (1961) — 'Imana the maker created Kazikamuntu, the common ancestor of all humans'; Kagame, Inganji Karinga (the line of Gihanga descends from the celestial origin Imana engenders)" }], "notes": "Imana is the creator and ultimate origin of the dynastic line that issues in Gihanga; he is the principal agent behind its celestial descent ('it is Imana who engenders'), not its genealogical father." },
+      { "kind": "creator-of", "personId": "banyaruanda_nkuba", "era": "mythic-prehistoric", "sources": [{ "kind": "secondary", "reference": "Kagame, La philosophie bantu-rwandaise de l'Etre (1956); d'Hertefelt & Coupez (1964) — Imana as the transcendent Creator over the celestial order of which Nkuba is the king of the sky" }], "notes": "The transcendent High God stands above and is the creator of the celestial order, of which Nkuba (the king of the sky) is the apex; the supremacy of Imana over the sky-king is the cosmological frame of the dynastic origin myth." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Alexis Kagame, Inganji Karinga (1943/1959) and La philosophie bantu-rwandaise de l'Etre (1956); Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Jacques J. Maquet, The Premise of Inequality in Ruanda (1961); Pierre Smith, Le recit populaire au Rwanda (1975)" }], "weight": "secondary" },
+      { "claim": "supreme-creator-of-rwanda-and-burundi", "citations": [{ "kind": "secondary", "reference": "Maquet (1961); d'Hertefelt & Coupez (1964)" }], "weight": "secondary" }
+    ],
+    "notes": "Imana is the supreme creator and High God of the Banyarwanda of Rwanda and the Barundi of Burundi, the maker and sustainer of the cosmos and the wellspring of all good fortune. Per Maquet (1961) 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans,' and per the dynastic cosmology he is the principal agent behind the celestial origin of the royal line ('it is Imana who engenders'). Imagined with very long arms and figured as the Potter who fashions humans and grants children to the childless (the tale 'Imana and the Childless Couple'), he is benevolent but remote, receiving no direct organized cult and mediating with humanity through the ancestral abazimu and the imandwa spirits (whose king is Babinga and whose cult-hero is Ryangombe). The proverb 'Imana yirirwa ahandi igataha i Rwanda' — 'Imana spends the day elsewhere but comes home to Rwanda to sleep' — expresses the Banyarwanda sense of him as 'Imana yacu,' our own High God. With Christian missionization the name was retained for the Christian God across the Great Lakes."
+  },
+  {
+    "id": "banyaruanda_gihanga",
+    "name": {
+      "primary": "Gihanga",
+      "alt": ["Gihanga Ngomijana", "Gihanga I"],
+      "transliterations": {
+        "kinyarwanda": "Gihanga",
+        "etymology": "Kinyarwanda Gihanga, 'the Founder / the Creator / the one who establishes' (from guhanga, 'to create, found, originate'); the epithet Ngomijana is glossed 'the begetter / he of a hundred drums (ingoma)'."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Banyaruanda",
+    "primaryTradition": "Banyaruanda",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "heroic-age" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 100,
+        "startEvent": "descent-from-the-ibimanuka-celestial-line",
+        "sources": [{ "kind": "secondary", "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004); Alexis Kagame, Inganji Karinga and Ubucurabwenge" }],
+        "notes": "Gihanga belongs to the Ibimanuka ('those fallen from the heavens'), the divinely-descended ancestors of the kings: the dynastic poem Ubucurabwenge traces the line Nkuba (Lightning, king of the sky) > Kigwa/Sabizeze (the fallen one) > Muntu > ... > Gihanga. Vansina treats him as the legendary founder-archetype of the Nyiginya kingdom rather than a single historical man."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 101,
+        "startEvent": "introducer-of-cattle-fire-iron-and-the-arts-of-civilization",
+        "sources": [{ "kind": "secondary", "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Inganji Karinga" }],
+        "notes": "As culture-hero Gihanga is credited with introducing the foundational arts of Great Lakes civilization — cattle-keeping, fire, ironworking and the forge, pottery, hunting and woodworking — and with founding centralized kingship; he is 'the first of Rwanda who introduced the cow and the drum.'"
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 102,
+        "startEvent": "founding-of-the-nyiginya-dynasty-and-the-dynastic-drum",
+        "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, Inganji Karinga; Jan Vansina, Antecedents to Modern Rwanda (2004)" }],
+        "notes": "Gihanga founded the Nyiginya dynasty and instituted the dynastic drum Kalinga (Karinga), the palladium of the kingdom; he is reckoned the ancestor of the Rwandan kings and was succeeded by his son Kanyarwanda I Gahima, the eponym of Rwanda, who in tradition fathered the ancestors of the Tutsi, Hutu and Twa."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-present",
+        "eraOrdering": 103,
+        "startEvent": "the-perpetual-fire-of-gihanga",
+        "sources": [{ "kind": "secondary", "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)" }],
+        "notes": "The 'Fire of Gihanga' (an eternal flame kept perpetually alight at the royal court, at the place where the royal cattle are milked) was said to have burned continuously since Gihanga's reign; the well-being of the kingdom was held to be magically bound to its continuity, making Gihanga the living emblem of dynastic legitimacy and the covenant of heaven and earth."
+      }
+    ],
+    "domains": [
+      { "sphereId": "founding-kingship", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)" }] },
+      { "sphereId": "cattle", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)" }] },
+      { "sphereId": "fire", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "d'Hertefelt & Coupez (1964) — the perpetual Fire of Gihanga" }] },
+      { "sphereId": "ironworking-and-smithing", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      {
+        "id": "kalinga-dynastic-drum",
+        "name": "Kalinga (Karinga), the dynastic drum",
+        "kind": "regalia",
+        "role": "instituted",
+        "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, Inganji Karinga (the title itself, 'the victorious Karinga'); Jan Vansina, Antecedents to Modern Rwanda (2004)" }]
+      },
+      {
+        "id": "fire-of-gihanga",
+        "name": "The perpetual Fire of Gihanga",
+        "kind": "sacred-fire",
+        "role": "instituted",
+        "sources": [{ "kind": "secondary", "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)" }]
+      }
+    ],
+    "relations": [
+      { "kind": "created-by", "personId": "banyaruanda_imana", "era": "mythic-prehistoric", "sources": [{ "kind": "secondary", "reference": "Maquet (1961); Kagame, Inganji Karinga — Imana as creator and origin of the dynastic line" }], "notes": "Reciprocal of Imana creator-of Gihanga: Imana is the creator and ultimate origin of the line of which Gihanga is the founder, not his genealogical father." },
+      { "kind": "descendant-of", "personId": "banyaruanda_nkuba", "era": "heroic-age", "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, Ubucurabwenge / Inganji Karinga; d'Hertefelt & Coupez (1964) — Nkuba > Kigwa > Muntu > ... > Gihanga" }], "notes": "Gihanga descends, through the Ibimanuka line (Kigwa/Sabizeze, Muntu, Kazikamuntu, etc.), from the celestial king Nkuba; the intervening links are not in this corpus, so the relation is directed multi-generational descent rather than direct fatherhood." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Alexis Kagame, Inganji Karinga (1943/1959) and Ubucurabwenge; Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004); Pierre Smith, Le recit populaire au Rwanda (1975)" }], "weight": "secondary" },
+      { "claim": "founder-of-the-nyiginya-dynasty-and-culture-hero", "citations": [{ "kind": "secondary", "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)" }], "weight": "secondary" },
+      { "claim": "descent-from-the-ibimanuka-sky-line", "citations": [{ "kind": "secondary", "reference": "Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964)" }], "weight": "secondary" }
+    ],
+    "notes": "Gihanga (Gihanga Ngomijana, 'the Founder'), the divine culture-hero and founder-king of the Nyiginya dynasty in Rwandan oral tradition. He belongs to the Ibimanuka ('those fallen from the heavens'), the celestial royal ancestry that the dynastic poem Ubucurabwenge traces from Nkuba (Lightning, king of the sky) through Kigwa/Sabizeze and Muntu down to Gihanga. As culture-hero he is credited with introducing cattle-keeping, fire, ironworking and the forge, pottery, hunting and woodworking, and with instituting centralized kingship and the dynastic drum Kalinga (Karinga); the perpetual 'Fire of Gihanga' at the royal court, bound to the kingdom's well-being, embodied his founding act. He is the reputed ancestor of the Rwandan kings, succeeded by his son Kanyarwanda I Gahima, eponym of Rwanda. Jan Vansina, applying critical method to the oral corpus, treats Gihanga as a legendary archetype of the transition from clan leadership to monarchy rather than a single historical individual; he is here typed demigod as a divinely-descended, cultically-venerated founder-hero whose direct parents do not figure in this corpus."
+  },
+  {
+    "id": "banyaruanda_nkuba",
+    "name": {
+      "primary": "Nkuba",
+      "alt": ["Umwami wo Hejuru", "King of the Sky"],
+      "transliterations": {
+        "kinyarwanda": "Nkuba",
+        "etymology": "Kinyarwanda Nkuba, 'lightning / thunderbolt' (the thunder-flash); as a personage he is titled Umwami wo Hejuru, 'the King of the Sky / lord of heaven'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Banyaruanda",
+    "primaryTradition": "Banyaruanda",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "king-of-the-sky-lord-of-lightning",
+        "sources": [{ "kind": "secondary", "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Ubucurabwenge / Inganji Karinga" }],
+        "notes": "Nkuba is Lightning personified, Umwami wo Hejuru ('the King of the Sky'), lord of the celestial realm in the dynastic origin myth; the sky over which he rules is 'the point of departure' from which the royal line descends to earth."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 1,
+        "startEvent": "father-of-kigwa-and-head-of-the-ibimanuka-line",
+        "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, Ubucurabwenge; Jan Vansina, Antecedents to Modern Rwanda (2004)" }],
+        "notes": "In the genealogy of the Ibimanuka, 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu'; the line continues through the celestial ancestors down to the founder-king Gihanga, making Nkuba the apical sky-father of the Rwandan royal lineage."
+      }
+    ],
+    "domains": [
+      { "sphereId": "sky-and-lightning", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)" }] },
+      { "sphereId": "celestial-kingship", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Kagame, Ubucurabwenge / Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "ancestor-of", "personId": "banyaruanda_gihanga", "era": "heroic-age", "sources": [{ "kind": "secondary", "reference": "Alexis Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964) — Nkuba > Kigwa > Muntu > ... > Gihanga" }], "notes": "Reciprocal of Gihanga descendant-of Nkuba: Nkuba is the apical sky-father of the Ibimanuka line that descends (through Kigwa/Sabizeze, Muntu, etc.) to the founder-king Gihanga." },
+      { "kind": "created-by", "personId": "banyaruanda_imana", "era": "mythic-prehistoric", "sources": [{ "kind": "secondary", "reference": "Kagame, La philosophie bantu-rwandaise de l'Etre (1956); d'Hertefelt & Coupez (1964) — Imana the transcendent Creator above the celestial order" }], "notes": "Reciprocal of Imana creator-of Nkuba: the transcendent High God Imana is the creator standing above the celestial order of which Nkuba is the king of the sky." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Ubucurabwenge / Inganji Karinga; Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004)" }], "weight": "secondary" },
+      { "claim": "king-of-the-sky-and-father-of-the-ibimanuka-line", "citations": [{ "kind": "secondary", "reference": "Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964)" }], "weight": "secondary" }
+    ],
+    "notes": "Nkuba ('Lightning / Thunderbolt'), titled Umwami wo Hejuru, 'the King of the Sky,' is the celestial sovereign at the head of the Ibimanuka ('those fallen from the heavens') in the Rwandan dynastic origin myth recorded by d'Hertefelt & Coupez and in Kagame's dynastic poem Ubucurabwenge. In the royal genealogy 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu,' and the line continues through the celestial ancestors down to the founder-king Gihanga, so that Nkuba is the apical sky-father of the Rwandan kings. The sky he rules is the 'point of departure' from which the royal line descends to earth; above him stands the transcendent creator Imana, who is the principal agent of that engendering. Nkuba is distinct from (though comparable to) the Nyanga lightning-god of the same name in neighboring Great Lakes Bantu traditions."
+  }
+]
+```
