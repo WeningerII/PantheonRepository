@@ -1,0 +1,1312 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Basque (Euskal Herria)
+Registered era vocabulary: mythic (only)
+Author batch: weningerii@gmail.com — 2026-06-23
+
+PURPOSE
+-------
+This transcript supplies the well-attested CORE of Basque (Euskal) mythology that
+was still missing from the Pantheon Registry, complementing the six figures already
+held (basque_mari, basque_sugaar, basque_basajaun, basque_eate, basque_ilargi,
+basque_ortzi). All figures are drawn from the standard ethnographic corpus of
+Basque mythology — chiefly José Miguel de Barandiarán's "Mitología vasca" (1960)
+and "Diccionario ilustrado de mitología vasca," Julio Caro Baroja's "Los vascos"
+(1949), "Algunos mitos españoles" (1941) and "Mitos vascos y mitos sobre los
+vascos" (1985), and Wentworth Webster's "Basque Legends" (London, 1879). No figure
+or citation here is invented; where a detail is uncertain or a single-witness claim,
+it is flagged in the notes. Euskara terms are given only where they are real,
+sourced words (lur "earth," eki/eguzki "sun," suge "serpent," gau "night," etc.).
+
+FIGURES AUTHORED (8)
+--------------------
+1. basque_amalur   — Amalur / Lur / Ama Lurra, Mother Earth; the cosmic womb and
+                     source of the Sun and Moon. Mother-of the existing
+                     basque_ilargi and of the new basque_eguzki. Created the
+                     eguzkilore (sun-thistle) to guard human doorways.
+2. basque_eguzki   — Eguzki / Eki / Ekhi, the Sun; daughter of Amalur, "grandmother"
+                     of the Basques and the eye of day, protector against night
+                     spirits, sister of the Moon (basque_ilargi). Returns nightly
+                     through Itxasgorrieta ("the Reddish Seas") into her mother's womb.
+3. basque_mikelats — Mikelats, the malevolent twin son of Mari and Sugaar; spirit
+                     of storm and hail; brother of Atarrabi. parentIds: Mari, Sugaar.
+4. basque_atarrabi — Atarrabi, the benevolent twin son of Mari and Sugaar; escaped
+                     the Devil's school, became a saved priest. parentIds: Mari, Sugaar.
+5. basque_gaueko   — Gaueko, the Lord of the Night, of the oldest mythic stratum,
+                     who punishes those who flaunt the dark ("the night for the one
+                     of the night, the day for the one of the day").
+6. basque_aatxe    — Aatxe / Aatxegorri / Beigorri / Etsai, the cave young-red-bull
+                     spirit, a guise of Mari's chthonic domain, who emerges in storms
+                     to drive the good home and punish wrongdoers.
+7. basque_lamia    — The Lamiak (sing. Lamia/Lamina), river-and-spring nymphs with
+                     duck/bird feet who comb their hair with a golden comb and build
+                     bridges and dolmens overnight in exchange for offerings.
+8. basque_tartalo  — Tartalo / Tartaro / Torto, the one-eyed cave giant (cyclops)
+                     who devours shepherds; undone by his own crying ring.
+9. basque_inguma   — Inguma (Mauma), the night-demon of nightmares and suffocation
+                     who presses sleepers' throats; warded by a counting-charm.
+
+(Note: "Lur" is NOT authored as a separate figure — in the sources Lur / Ama Lurra /
+Lurbira is the bare and the maternal name of the very same Mother-Earth deity given
+here as basque_amalur, with "Lur" recorded as an alt name. Mari and Amalur are
+sometimes conflated in the literature; they are kept distinct per the existing
+basque_mari and the explicit mother-of-Sun-and-Moon genealogy attached only to Amalur.)
+
+RELATION WIRING NOTES
+---------------------
+- Parent→child edges use the corpus's directed kinds "mother-of" / "father-of";
+  child→parent edges use "mother" / "father"; these are non-symmetric.
+- Amalur is wired mother-of the EXISTING basque_ilargi and the new basque_eguzki.
+- Eguzki and Ilargi are sisters: a symmetric "sibling" edge from Eguzki toward the
+  existing basque_ilargi requires a reciprocal on Ilargi (flagged below).
+- Mikelats and Atarrabi are twin brothers (reciprocal "twin sibling" within this
+  batch) and are children of the EXISTING basque_mari and basque_sugaar.
+- Aatxe is a guise/aspect of Mari; expressed as a directed "aspect-of" edge toward
+  the existing basque_mari (non-symmetric; informational, no reciprocal required).
+
+```json
+[
+ {
+  "id": "basque_amalur",
+  "name": {
+   "primary": "Amalur",
+   "alt": [
+    "Ama Lurra",
+    "Lur",
+    "Lurra",
+    "Lurbira",
+    "Ama Lur"
+   ],
+   "transliterations": {
+    "basque": "Amalur",
+    "etymology": "Basque ama 'mother' + lur 'earth/land' = 'Mother Earth'; the bare form Lur(ra) is the earth itself"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "primordial",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Exists from the beginning as the Earth herself, the cosmic womb from which the divinities, the dead, and all living things proceed and to which they return",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960), on Lur / Ama Lur as the receptacle of the gods and the dead"
+     }
+    ],
+    "notes": "Amalur is not born; she is the ground of being. The Sun (Eguzki) and Moon (Ilargi) are her daughters who return into her each night."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-mother-and-cosmic-womb",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ama Lur",
+     "script": "Euskara",
+     "rom": "Ama Lur"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Lur / Amalur"
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld-abode-of-the-dead",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960): the subterranean Earth as the dwelling to which souls return"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-vegetation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949), on the Earth as the source of life and growth"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "amalur-bear-the-luminaries",
+    "name": "Bring forth the Sun and the Moon and receive them back nightly into her womb",
+    "inheritability": "none",
+    "notes": "She first made Ilargi (the Moon) for light; finding it too dim, she made Eguzki (the Sun). The luminaries are her daughters.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960), on Eguzki and Ilargi as daughters of Amalur"
+     }
+    ]
+   },
+   {
+    "id": "amalur-receive-the-dead",
+    "name": "Receive the souls of the dead into the subterranean earth",
+    "inheritability": "none",
+    "notes": "Barandiarán: by night the surface of the earth belongs to spirits and the dead, for whom the Moon shines on its way back to the mother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, collected beliefs on the earth, the dead and the night"
+     }
+    ]
+   },
+   {
+    "id": "amalur-make-eguzkilore",
+    "name": "Create the eguzkilore, the sun-thistle that guards human doorways from night-evils",
+    "term": {
+     "value": "eguzkilore",
+     "script": "Euskara",
+     "rom": "eguzkilore"
+    },
+    "inheritability": "none",
+    "notes": "Eguzkilore 'flower of the sun' (Carlina acanthifolia); placed dried on doors so that the evils of the night, mistaking it for the sun, flee.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basque etiological legend of the eguzkilore created by Ama Lur; J. M. Barandiarán, on apotropaic plants"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "eguzkilore-thistle",
+    "name": "Eguzkilore (sun-thistle)",
+    "kind": "plant-emblem",
+    "term": {
+     "value": "eguzkilore",
+     "script": "Euskara",
+     "rom": "eguzkilore"
+    },
+    "role": "creator",
+    "notes": "The dried Carlina flower hung on Basque farmhouse doors; Amalur's gift and a solar surrogate against witches, lamiak and night-demons.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basque ethnographic tradition of the eguzkilore as door-amulet; J. M. Barandiarán, Mitología vasca"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "basque_eguzki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960): Eguzki/Eki, daughter of Amalur"
+     }
+    ],
+    "notes": "The Sun is Amalur's daughter, returning into her womb at sunset."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "basque_ilargi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Ilargi: the Moon as daughter of the Earth"
+     }
+    ],
+    "notes": "The Moon is Amalur's daughter; she was made first, before the Sun. (Reciprocal mother-relation should be added to the existing basque_ilargi.)"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca; Mitología vasca (1960), s.v. Lur / Amalur"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949); Mitos vascos y mitos sobre los vascos (1985)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "mother-of-the-sun-and-moon",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960): Eguzki and Ilargi as daughters of Ama Lur returning into the earth"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Amalur (Ama Lurra, 'Mother Earth'; bare form Lur/Lurra/Lurbira) is the great Earth of Basque cosmology — the womb from which the Sun (Eguzki) and Moon (Ilargi) are born and into which they and the souls of the dead return. She is sometimes conflated with Mari in the literature (kept distinct here per the corpus). Documented by Barandiarán and Caro Baroja (secondary)."
+ },
+ {
+  "id": "basque_eguzki",
+  "name": {
+   "primary": "Eguzki",
+   "alt": [
+    "Eki",
+    "Ekhi",
+    "Iguzki",
+    "Iduzki",
+    "Eguzku",
+    "Iuski"
+   ],
+   "transliterations": {
+    "basque": "Eguzki",
+    "etymology": "Basque eguzki / eki 'sun'; called amandrea 'grandmother' and begi 'eye (of day / of God)' in folk salutations"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "basque_amalur"
+  ],
+  "parentRoles": {
+   "basque_amalur": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "born",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Made by Amalur after the Moon, to give fuller light; rises daily from beneath the earth and sets into Itxasgorrieta ('the Reddish Seas') back into her mother's womb",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960), on Eguzki/Eki as daughter of Ama Lur"
+     }
+    ],
+    "notes": "Her daily death-and-return into the earth is greeted at sunset: 'Eguzki amandrea badoia bere amangana' — 'Grandmother Sun goes to her mother.'"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun-and-daylight",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Eguzki",
+     "script": "Euskara",
+     "rom": "Eguzki"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Eguzki / Eki"
+     }
+    ]
+   },
+   {
+    "sphereId": "protection-against-night-spirits",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on the Sun as enemy of evil spirits and patron of the day; the eguzkilore as her surrogate"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "eguzki-eye-of-day",
+    "name": "Cross the sky daily as the eye of day and return through the Reddish Seas into the earth",
+    "term": {
+     "value": "Itxasgorrieta",
+     "script": "Euskara",
+     "rom": "Itxasgorrieta"
+    },
+    "inheritability": "none",
+    "notes": "At sunset she sinks into Itxasgorrieta ('the Reddish Seas') beneath the earth into the womb of Amalur/Lurbira.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, collected solar beliefs and sunset salutations"
+     }
+    ]
+   },
+   {
+    "id": "eguzki-ward-evil",
+    "name": "Drive off and frighten the spirits and demons of the night with her light",
+    "inheritability": "none",
+    "notes": "The Sun is 'the enemy of all evil spirits'; her dried surrogate, the eguzkilore, protects doorways by night.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basque tradition of the Sun as protector of humanity; eguzkilore door-amulet (Barandiarán)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "eguzki-eguzkilore-emblem",
+    "name": "Eguzkilore (her solar emblem on the doorway)",
+    "kind": "plant-emblem",
+    "term": {
+     "value": "eguzkilore",
+     "script": "Euskara",
+     "rom": "eguzkilore"
+    },
+    "role": "symbolized-by",
+    "notes": "The sun-thistle stands for Eguzki herself during the dark hours, holding her protective power at the threshold.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Basque ethnographic tradition; J. M. Barandiarán, Mitología vasca, on the eguzkilore"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "basque_amalur",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960): Eguzki, daughter of Ama Lur"
+     }
+    ],
+    "notes": "Daughter of Mother Earth, to whom she returns each night."
+   },
+   {
+    "kind": "sibling",
+    "personId": "basque_ilargi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Eguzki (Sun) and Ilargi (Moon) as the two daughters of Ama Lur"
+     }
+    ],
+    "notes": "The Sun and the Moon are sisters, both daughters of Amalur. (Reciprocal sibling-relation should be added to the existing basque_ilargi.)"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Eguzki / Eki / Ekhi"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949), on the solar cult and sunset rites"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "daughter-of-amalur-and-sister-of-the-moon",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960): Eguzki and Ilargi, daughters of Ama Lur"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Eguzki (Eki / Ekhi), the Sun, daughter of Amalur and sister of the Moon (Ilargi). Conceived as feminine, the 'grandmother' and the eye of day, protector of humanity and enemy of night-spirits; she sinks each evening through Itxasgorrieta into the earth-womb. The eguzkilore is her emblem. Documented by Barandiarán and Caro Baroja (secondary)."
+ },
+ {
+  "id": "basque_mikelats",
+  "name": {
+   "primary": "Mikelats",
+   "alt": [
+    "Mikelatz"
+   ],
+   "transliterations": {
+    "basque": "Mikelats",
+    "etymology": "Personal name, a Basque hypocoristic form related to Mikel(e) 'Michael'; the malevolent twin"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "basque_mari",
+   "basque_sugaar"
+  ],
+  "parentRoles": {
+   "basque_mari": "maternal",
+   "basque_sugaar": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "born",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born, with his twin Atarrabi, of the union of Mari and Sugaar; of dark and malevolent nature",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Mari / Mikelats"
+     }
+    ],
+    "notes": "The two brothers are of opposite character; Mikelats is the evil one, sometimes assimilated to the storm-genius Hodei and to the red bull."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "storm-and-hail",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Mikelats as a spirit of storms and hail"
+     }
+    ]
+   },
+   {
+    "sphereId": "malevolence-and-misfortune",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960): Mikelats, the wicked son of Mari"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mikelats-raise-hailstorms",
+    "name": "Raise storms and hail and work misfortune",
+    "inheritability": "none",
+    "notes": "His wild, destructive nature is identified with hail and tempest, and at times with Hodei, the storm-cloud genius.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, collected Mari legends; Mikelats as hail-bringer"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "basque_atarrabi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Atarrabi and Mikelats, twin sons of Mari of opposite nature"
+     }
+    ],
+    "notes": "The good twin (Atarrabi) and the evil twin (Mikelats)."
+   },
+   {
+    "kind": "mother",
+    "personId": "basque_mari",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Mari: her sons Atarrabi and Mikelats"
+     }
+    ],
+    "notes": "Son of Mari. (Reciprocal child-relation may be added to the existing basque_mari.)"
+   },
+   {
+    "kind": "father",
+    "personId": "basque_sugaar",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán / Basque tradition: the twins born of Mari and Sugaar"
+     }
+    ],
+    "notes": "Son of Sugaar. (Reciprocal child-relation may be added to the existing basque_sugaar.)"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Mari; Mikelats"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949), on Mari's progeny"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mikelats (Mikelatz), the malevolent twin son of Mari and Sugaar, brother of Atarrabi; a spirit of storm and hail. Documented by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_atarrabi",
+  "name": {
+   "primary": "Atarrabi",
+   "alt": [
+    "Atxular",
+    "Atarrabe",
+    "Mikelatz's brother"
+   ],
+   "transliterations": {
+    "basque": "Atarrabi",
+    "etymology": "Personal name of the benevolent twin; in some tellings conflated with the legendary cleric Atxular/Axular of the Devil's school of Salamanca"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "basque_mari",
+   "basque_sugaar"
+  ],
+  "parentRoles": {
+   "basque_mari": "maternal",
+   "basque_sugaar": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "born",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born, with his twin Mikelats, of the union of Mari and Sugaar; of radiant and benevolent nature",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Mari / Atarrabi"
+     }
+    ],
+    "notes": "The good twin; escaped the Devil's school by trickery."
+   },
+   {
+    "typeStatus": "death-by-legend",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Having lost his shadow to the Devil, becomes a priest and asks his sacristan to slay him at the consecration; wood-pigeons bear away his body, the sign that he is saved",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Legend of Atarrabi and the Devil, collected in J. M. Barandiarán, Mitología vasca; cf. W. Webster, Basque Legends (1879)"
+     }
+    ],
+    "notes": "A redemption-death: the soul saved despite the lost shadow held by the Devil."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "benevolence-and-deliverance",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Atarrabi, the good son of Mari"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "atarrabi-outwit-the-devil",
+    "name": "Outwit the Devil and escape his school, leaving only his shadow behind",
+    "inheritability": "none",
+    "notes": "Taught a sieve to answer in his place while he walked out backwards from the Devil's cave-school; the Devil seized only his shadow.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Legend of Atarrabi and the Devil (Barandiarán; Webster, Basque Legends, 1879)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "basque_mikelats",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Atarrabi and Mikelats, twin sons of Mari of opposite nature"
+     }
+    ],
+    "notes": "The good twin (Atarrabi) and the evil twin (Mikelats)."
+   },
+   {
+    "kind": "mother",
+    "personId": "basque_mari",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Mari: her sons Atarrabi and Mikelats"
+     }
+    ],
+    "notes": "Son of Mari. (Reciprocal child-relation may be added to the existing basque_mari.)"
+   },
+   {
+    "kind": "father",
+    "personId": "basque_sugaar",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán / Basque tradition: the twins born of Mari and Sugaar"
+     }
+    ],
+    "notes": "Son of Sugaar. (Reciprocal child-relation may be added to the existing basque_sugaar.)"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Mari; Atarrabi"
+     },
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (London, 1879), 'The Devil's School' cycle"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Atarrabi (Atarrabe), the benevolent twin son of Mari and Sugaar, brother of Mikelats. The hero of the 'Atarrabi and the Devil' legend who escapes the Devil's cave-school by trickery, loses his shadow, becomes a priest, and is saved at death. Documented by Barandiarán and Webster (secondary)."
+ },
+ {
+  "id": "basque_gaueko",
+  "name": {
+   "primary": "Gaueko",
+   "alt": [
+    "Gaueko Jaun",
+    "Lord of the Night"
+   ],
+   "transliterations": {
+    "basque": "Gaueko",
+    "etymology": "Basque gau 'night' + -ko (genitive/relational suffix) = 'the one of the night'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "primordial",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Belongs to the oldest stratum of Basque belief as the personified force ruling the night",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Gaueko"
+     }
+    ],
+    "notes": "An impersonal-personal genius of the dark, variously taken for a devil, a jentil, or a cow-/monster-shaped power."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "night-and-darkness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "gau",
+     "script": "Euskara",
+     "rom": "gau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1960), s.v. Gaueko"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "gaueko-claim-the-night",
+    "name": "Claim the night for himself and forbid outdoor work and boasting after dark",
+    "inheritability": "none",
+    "notes": "His formula: 'Gaua gauekoarentzat, eguna egunezkoarentzat' — 'the night for the one of the night, the day for the one of the day.'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, collected sayings and accounts of Gaueko"
+     }
+    ]
+   },
+   {
+    "id": "gaueko-punish-the-rash",
+    "name": "Punish those who flaunt courage in the dark, striking as a gust of wind, a cow, or a monster",
+    "inheritability": "none",
+    "notes": "He especially seizes the boastful who claim not to fear the night; manifests as a sudden wind or a shapeshifting beast.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Gaueko"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Gaueko"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949), on night-genii of Basque belief"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Gaueko, the Lord of the Night, of the oldest mythic stratum, who rules the dark and punishes those who work or boast outdoors at night ('the night for the one of the night, the day for the one of the day'). No genealogy is attested — see SOLITARY flag. Documented by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_aatxe",
+  "name": {
+   "primary": "Aatxe",
+   "alt": [
+    "Aatxegorri",
+    "Beigorri",
+    "Etsai",
+    "Aitxe"
+   ],
+   "transliterations": {
+    "basque": "Aatxe",
+    "etymology": "Basque (a)atxe / aretxe 'young bull'; Aatxegorri 'young red bull' and Beigorri 'red cow' (behi 'cow' + gorri 'red')"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "primordial",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells in caves and chasms as a young red bull (or cow), a guise of Mari's chthonic power, emerging chiefly in storms and at night",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Aatxe / Aatxegorri"
+     }
+    ],
+    "notes": "Regarded as a manifestation of the supreme goddess Mari and of the underworld; can take human form."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "caves-and-chthonic-guardianship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Aatxe as cave-spirit and guardian of subterranean places"
+     }
+    ]
+   },
+   {
+    "sphereId": "storm-and-night-justice",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca: Aatxe emerging in storms to punish wrongdoers"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "aatxe-bull-shape",
+    "name": "Appear as a young red bull or cow and shift into human form",
+    "term": {
+     "value": "Aatxegorri",
+     "script": "Euskara",
+     "rom": "Aatxegorri"
+    },
+    "inheritability": "none",
+    "notes": "Aatxegorri 'young red bull'; Beigorri 'red cow' — the fiery-red animal guise of the cave.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Aatxe"
+     }
+    ]
+   },
+   {
+    "id": "aatxe-storm-warden",
+    "name": "Emerge from his cave in storms and at night to drive the good home and punish evildoers",
+    "inheritability": "none",
+    "notes": "His coming-forth is signalled by, and bound up with, tempest; he shelters the upright and chastises those who profane sacred places.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, collected Aatxe accounts; Aatxe as enforcer of Mari's justice"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "aspect-of",
+    "personId": "basque_mari",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Aatxe as a guise/manifestation of Mari"
+     }
+    ],
+    "notes": "Aatxe is a chthonic guise of Mari's domain (directed, non-symmetric)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Aatxe / Aatxegorri / Etsai"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949), on the bull-genius of Basque caves"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Aatxe (Aatxegorri, Beigorri, also Etsai 'the enemy'), the cave young-red-bull spirit, understood as a guise of Mari's chthonic domain; he comes forth in storms and by night to shelter the good and punish wrongdoers. Documented by Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_lamia",
+  "name": {
+   "primary": "Lamia",
+   "alt": [
+    "Lamina",
+    "Lamiak",
+    "Laminak",
+    "Lamiñak",
+    "Amilamia"
+   ],
+   "transliterations": {
+    "basque": "Lamia",
+    "etymology": "Basque lamia / lamina (pl. lamiak/laminak); the word is of Latin origin (lamia) but the Basque figure is unrelated to the classical lamia"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "primordial",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwell about rivers, springs and fountains as long-haired women with the feet of a duck or bird (a fish-tail in coastal tellings), combing their hair on the shore",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Lamia; W. Webster, Basque Legends (1879)"
+     }
+    ],
+    "notes": "Some accounts say the lamiak vanished from the land with the coming of Christianity and the ringing of church bells."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rivers-springs-and-fountains",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lamia",
+     "script": "Euskara",
+     "rom": "lamia"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on the lamiak of Basque waters"
+     }
+    ]
+   },
+   {
+    "sphereId": "craft-of-night-building",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca: bridges and dolmens built overnight by lamiak"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lamia-comb-golden-hair",
+    "name": "Sit at the water's edge combing long hair with a golden comb",
+    "inheritability": "none",
+    "notes": "The golden comb is their chief treasure; one who steals it is pursued and his line cursed until it is returned.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán; W. Webster, Basque Legends (1879), lamia tales of the golden comb"
+     }
+    ]
+   },
+   {
+    "id": "lamia-build-overnight",
+    "name": "Build bridges, dolmens and houses in a single night in exchange for offerings",
+    "inheritability": "none",
+    "notes": "Famous works ascribed to them at Ebrain (Bidarrai), Azalain (Andoain), Urkulu (Aretxabaleta); they must depart if the work is unfinished at cockcrow.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on lamia-built bridges and the cockcrow rule"
+     }
+    ]
+   },
+   {
+    "id": "lamia-aid-for-offerings",
+    "name": "Aid farmers and households who leave food, finishing fieldwork by night",
+    "inheritability": "none",
+    "notes": "Generous when given presents and offerings of food left at the riverside; capricious and exacting otherwise.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca, on offerings to the lamiak"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lamia-golden-comb",
+    "name": "Golden comb",
+    "kind": "artifact",
+    "term": {
+     "value": "urrezko orrazia",
+     "script": "Euskara",
+     "rom": "urrezko orrazia"
+    },
+    "role": "owner",
+    "notes": "The prized golden comb with which the lamiak dress their hair at the water; its theft brings their wrath and a curse on the thief's descendants.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán; W. Webster, Basque Legends (1879), the golden comb of the lamiak"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Lamia / Lamina"
+     },
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (London, 1879), tales of the laminak"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, Los vascos (1949)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Lamiak (sing. Lamia/Lamina), water-nymphs of Basque rivers, springs and fountains: beautiful, long-haired, with the feet of a duck or bird (or a fish-tail by the sea), combing their hair with a golden comb. They build bridges and dolmens overnight and aid those who leave them offerings. Treated as a collective/type figure. Documented by Barandiarán and Webster (secondary)."
+ },
+ {
+  "id": "basque_tartalo",
+  "name": {
+   "primary": "Tartalo",
+   "alt": [
+    "Tartaro",
+    "Torto",
+    "Anxo",
+    "Alarabi"
+   ],
+   "transliterations": {
+    "basque": "Tartalo",
+    "etymology": "Basque Tartalo / Tartaro / Torto; Cerquand (and tentatively Webster) linked the name to 'Tartar', as 'ogre' to 'Hungarian' — uncertain"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "primordial",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells in a mountain cave with his flock of sheep as a huge one-eyed giant who seizes and devours young people",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (1879), Tartaro cycle; J. M. Barandiarán, Diccionario de mitología vasca, s.v. Tartalo"
+     }
+    ],
+    "notes": "The Basque cyclops, closely paralleling Homer's Polyphemus; undone when the hero escapes and his crying ring betrays him."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "mountain-caves-and-herding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, on Tartalo the cave-giant and his sheep"
+     }
+    ]
+   },
+   {
+    "sphereId": "man-eating-monstrosity",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (1879), 'one for today and the other for tomorrow'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tartalo-single-eye",
+    "name": "See with a single eye in the middle of the forehead and overpower and eat his captives",
+    "inheritability": "none",
+    "notes": "Blinded by the trapped hero (cf. Odysseus and Polyphemus, and the Irish Balor parallel noted by Webster).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (1879), the blinding of Tartaro"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tartalo-crying-ring",
+    "name": "The crying ring",
+    "kind": "artifact",
+    "role": "owner",
+    "notes": "A magic ring Tartalo slips onto the fleeing hero's finger; it shouts 'Here I am! Here I am!' so he can be chased. The hero cuts off the finger and throws it into a well/lake, and Tartalo, following the cry, falls in and drowns.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (1879); J. M. Barandiarán, Diccionario de mitología vasca, s.v. Tartalo — the crying ring motif"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "W. Webster, Basque Legends (London, 1879), Tartaro / 'The Tartaro' tales"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca, s.v. Tartalo / Tartaro / Torto"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tartalo (Tartaro, Torto, Alarabi), the one-eyed man-eating cave-giant of Basque mythology — the Basque cyclops — undone by his own crying ring after the hero blinds and outwits him. Closely paralleling the Polyphemus episode of the Odyssey (and the Irish Balor), as Webster noted. Documented by Webster and Barandiarán (secondary)."
+ },
+ {
+  "id": "basque_inguma",
+  "name": {
+   "primary": "Inguma",
+   "alt": [
+    "Mauma",
+    "Ynguma"
+   ],
+   "transliterations": {
+    "basque": "Inguma",
+    "etymology": "Basque Inguma (Mauma in Baigorri); a night-demon of sleep, comparable to the incubus/mare of European folklore"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Basque",
+  "primaryTradition": "Basque",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "primordial",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Slips into houses through windows and locks when the household is deep asleep, to press on sleepers and bring nightmares",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Mitología vasca (1972 ed.), s.v. Inguma"
+     }
+    ],
+    "notes": "Personifies sleep paralysis, suffocation and night-dread; warded off by a spoken counting-charm."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "nightmares-and-sleep-paralysis",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario de mitología vasca, s.v. Inguma"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "inguma-press-the-sleeper",
+    "name": "Sit on the sleeper's chest and squeeze the throat, bringing nightmares and sometimes death",
+    "inheritability": "none",
+    "notes": "Attacks in the deepest, quietest hours while the victim lies paralyzed; charms were placed above beds against him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, collected Inguma beliefs and protective formulas"
+     }
+    ]
+   },
+   {
+    "id": "inguma-warded-by-charm",
+    "name": "Be repelled by a counting-charm invoking God and the Virgin",
+    "inheritability": "none",
+    "notes": "The Ezpeleta formula: 'Inguma, enauk hire bildur, Jinkoa eta Andre Maria artzentiat lagun...' — 'Inguma, I do not fear you; I take God and Lady Mary as helpers; stars in the sky, grass on the earth, sand on the coast — until you have counted all these, do not appear before me.'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, the Inguma counting-charm recorded at Ezpeleta (Labourd)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. M. Barandiarán, Diccionario ilustrado de mitología vasca; Mitología vasca, s.v. Inguma / Mauma"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Caro Baroja, on Basque night-demons and protective charms"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Inguma (Mauma), the night-demon of nightmares and suffocation who enters sleeping houses to press the throats of sleepers — the Basque embodiment of sleep paralysis — repelled by a counting-charm invoking God and the Virgin. No genealogy is attested — see SOLITARY flag. Documented by Barandiarán (secondary)."
+ }
+]
+```
+
+SOLITARY:
+- basque_gaueko — The Lord of the Night is attested only as a primordial, impersonal-personal genius of the dark with no parents, consort, or offspring in the sources (J. M. Barandiarán, Diccionario de mitología vasca, s.v. Gaueko).
+- basque_lamia — The Lamiak are a collective/type of water-spirit with no individual genealogy; they relate to mortals (lovers, helped farmers) but no kin among the gods is attested (Barandiarán; Webster, Basque Legends, 1879).
+- basque_tartalo — The cyclops-giant Tartalo is a solitary man-eater of the caves with no attested parentage or kin (W. Webster, Basque Legends, 1879; Barandiarán, s.v. Tartalo).
+- basque_inguma — The nightmare-demon Inguma is attested only as a free-acting night-spirit with no parents, consort, or offspring (J. M. Barandiarán, s.v. Inguma).
+
+RECIPROCAL-NEEDED:
+- basque_ilargi sibling basque_eguzki   (add reciprocal sibling-relation to existing figure basque_ilargi: the Moon and the Sun are sisters, daughters of Amalur — Barandiarán, Mitología vasca, 1960)
+- basque_ilargi mother basque_amalur   (informational: the existing basque_ilargi should carry a directed mother-relation to the new basque_amalur, mirroring Amalur's mother-of edge; Barandiarán, s.v. Ilargi)
+- basque_mari child basque_mikelats AND basque_mari child basque_atarrabi   (informational: the existing basque_mari should carry directed child-relations to her sons Mikelats and Atarrabi; Barandiarán, s.v. Mari)
+- basque_sugaar child basque_mikelats AND basque_sugaar child basque_atarrabi   (informational: the existing basque_sugaar should carry directed child-relations to his sons; Barandiarán / Basque tradition)
+- basque_mari aspect basque_aatxe   (informational: Aatxe is a guise of Mari; the existing basque_mari may carry a reciprocal aspect/manifestation note — Barandiarán, s.v. Aatxe)

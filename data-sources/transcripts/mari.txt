@@ -1,0 +1,429 @@
+Pantheon Registry — figure-authoring transcript
+Tradition: Mari (Cheremis), Volga region. Registered era: mythic (the only era in ERA_ORDER['Mari']).
+
+TASK RECAP
+Author the well-attested CORE figures still missing from the Mari pantheon, beside the four
+already in the corpus (mari_kugu_yumo, mari_keremet, mari_mlande_ava, mari_tul_ava). The Mari
+pantheon pairs sky-gods (Jumo) with mother-spirits (Ava); the documented structure is
+henotheistic, with most named powers treated as hypostases / manifestations of the supreme
+sky-god Osh Kugu Jumo.
+
+RESEARCH AND SOURCING
+Verified each candidate by web search against the standard literature. Primary/secondary works
+cited at figure level are the real, foundational ethnographies the prompt named:
+ - Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology = The Mythology of All Races, Vol. IV
+   (Boston: Marshall Jones, 1927); fieldwork among the Cheremis on the Volga 1911–1913. Holmberg's
+   doctoral work was on the water-gods of the Finno-Ugric peoples (Die Wassergottheiten der
+   finnisch-ugrischen Völker, 1913) and he edited Tsheremissien uskonto / the religion of the Mari
+   (1914).
+ - Thomas A. Sebeok & Frances J. Ingemann, Studies in Cheremis: The Supernatural (Viking Fund
+   Publications in Anthropology 22, New York, 1956) — an exhaustive catalogue of Mari supernatural
+   beings.
+ - L. S. Toidybekova, Mari Mythology: Encyclopedic Reference (Yoshkar-Ola, 2007), and her study of
+   Keremet in Folk Belief Today (Tartu, 1995) — used for native spellings and cult detail; the
+   corpus already cites both for the existing four Mari figures.
+
+FIGURES AUTHORED (4) — all CORE, none padded:
+ 1. mari_keche       — Keče, the Sun-god (Keche-Jumo). Attested: "Keče is the god of the sun";
+                       counted among the principal deities, a hypostasis of Osh Kugu Jumo (sky/light).
+ 2. mari_tylze       — Tõlze/Tylze, the Moon-god and protector of marriage and birth. Attested:
+                       "Tõlze is the god of the moon, and is a protector of marriage and birth."
+ 3. mari_mardezh_ava — Mardezh-Ava, the Wind-mother (the -ava counterpart of the wind-god Mardež).
+                       Attested: "Mardež is the god of wind"; the natural-force gods have female
+                       -ava ("mother") counterparts (Tul-Ava, Mlande-Ava, Kudurcho-Ava …). Authored
+                       as the wind-mother to complete the ava series modelled on the existing Tul-Ava.
+ 4. mari_shochyn_ava — Shochyn-Ava (Šočyn-Ava), the Birth-mother / goddess of childbirth. Attested
+                       repeatedly as the goddess of birth, "particularly popular."
+
+DELIBERATELY NOT AUTHORED (verification was honest; the prompt forbids invention/padding):
+ - Vüd-Ava / "water-mother": across many targeted searches NO discrete Mari "Vüd-Ava" theonym could
+   be confirmed. The well-attested Finno-Ugric water-mother of this exact shape is the MORDVIN
+   Ved-ava (Britannica: "Ved-ava … Estonian Vete-ema, Finnish Veen emo"), not a Mari figure. In the
+   Mari corpus the water sphere is already held by Keremet ("lord of earth and especially water"),
+   and the river/lake function is attributed in sources to Vir Yumo. Authoring a Mari "Vüd-Ava" would
+   be invention, so it is omitted (HARD RULE 1).
+ - Kugurak: attested only as an alternative name/epithet of Kugu Jumo ("the Elder"; already listed in
+   mari_kugu_yumo.name.alt) or as a vague hero-ancestor. A standalone figure would duplicate the
+   existing supreme god — omitted.
+ - Piambar: appears only as a marginal, inconsistently-described folkloric/prophetic figure — omitted
+   to avoid padding with a poorly-attested entry.
+
+MODELLING NOTES
+ - era: every figure uses "mythic" (the only registered Mari era).
+ - inheritability uses the schema enum none|partial|full (HARD RULE 4). Divine, non-transferable
+   powers are "none"; the moon's protector-of-marriage tutelage that it confers on couples is
+   marked "partial".
+ - The henotheistic tie to the supreme god is expressed with a NON-symmetric relation kind
+   ("manifestation-of"), which is the accurate hierarchical (hypostasis) relationship and is NOT in
+   the validator's symmetric set, so it needs no reciprocal. The ava/celestial powers are otherwise
+   kinless independent powers and are flagged SOLITARY honestly (see end).
+ - materialCulture attaches the attested shared cult apparatus where the source ties it to the figure:
+   the sacred grove (küsoto), the fir-branch altar laid by the sacred tree, and the bird/animal
+   blood-offerings and candles of grove worship.
+
+```json
+[
+  {
+    "id": "mari_keche",
+    "name": {
+      "primary": "Sun-God of the Mari",
+      "alt": ["Keče", "Keche", "Keche-Jumo", "Kече Юмо", "Кече"],
+      "transliterations": { "chm": "Кече / Кече Юмо", "rom": "Keče / Keče Jumo", "etymology": "Meadow Mari keče 'sun, day' + jumo 'god/sky'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Set in the sky among the manifestations of Osh Kugu Jumo as the god of the sun and daylight.",
+        "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology (The Mythology of All Races IV, 1927), Cheremis sections (celestial deities)." }],
+        "notes": "Keče is named the god of the sun and is reckoned a hypostasis of the supreme sky-god."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun-and-daylight",
+        "contextTag": "lifelong",
+        "term": { "value": "Кече", "script": "Cyrl", "rom": "Keče" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference, Yoshkar-Ola, 2007 (Keče, god of the sun)." }]
+      },
+      {
+        "sphereId": "light-and-warmth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Uno Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (the sun as a heaven-deity of light and warmth, a manifestation of Jumo of the sky and light)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "drive_the_sun_across_the_sky",
+        "name": "bears the sun across the heavens and gives daylight to the world",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "As Keče-Jumo he is the sun itself personified; the daily course of the sun is his action. A unique divine office, not transferable.",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, Mari Mythology, 2007; Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927." }]
+      },
+      {
+        "id": "ripen_field_and_warm_the_earth",
+        "name": "warms the soil and ripens the grain with his light",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The sun's warmth and light were prayed for at the grove together with the earth-mother for the harvest; the agricultural deities were especially propitiated.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (agrarian sky/sun worship of the Cheremis); Sebeok & Ingemann, Studies in Cheremis, 1956." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mari_kusoto_grove",
+        "name": "the sacred grove (küsoto)",
+        "kind": "ritual-site",
+        "role": "The fenced forest grove that served as the Mari open-air temple, where the heaven-gods including the sun were addressed and bird/animal offerings burned.",
+        "term": { "value": "кӱсото", "script": "Cyrl", "rom": "küsoto" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956 (grove cult); Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927." }]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "manifestation-of",
+        "personId": "mari_kugu_yumo",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927; Mari religion is henotheistic — the sun-god is a hypostasis of Osh Kugu Jumo (god of the sky and light)." }],
+        "notes": "Keče is treated as a manifestation/hypostasis of the supreme sky-god Kugu Jumo, not a kinsman; hierarchical, not a symmetric kin tie."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Keče (Keche-Jumo) is the Mari god of the sun and daylight, a heaven-deity of light counted among the principal gods and regarded as a hypostasis of the supreme sky-god Osh Kugu Jumo.",
+        "citations": [
+          { "kind": "secondary", "reference": "Holmberg, Uno (Harva). Finno-Ugric and Siberian Mythology (The Mythology of All Races, Vol. IV). Marshall Jones, 1927, Cheremis sections." },
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007 (Keče)." },
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. Viking Fund, 1956." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Кече⟩ Keče (keče 'sun, day'); fuller Keče Jumo. Solitary celestial power, propitiated in the küsoto grove with the other heaven-gods; an emanation of the henotheistic high god Kugu Jumo."
+  },
+  {
+    "id": "mari_tylze",
+    "name": {
+      "primary": "Moon-God of the Mari",
+      "alt": ["Tõlze", "Tylze", "Tylze-Jumo", "Тылзе", "Тылзе Юмо"],
+      "transliterations": { "chm": "Тылзе / Тылзе Юмо", "rom": "Tõlze / Tõlze Jumo", "etymology": "Meadow Mari tylze 'moon, month' + jumo 'god/sky'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Set in the night sky as the god of the moon and the guardian of marriage and birth.",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007; Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (the moon among the Cheremis heaven-gods)." }],
+        "notes": "Tõlze is named the god of the moon and protector of marriage and birth, a hypostasis of the sky-god."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon-and-night",
+        "contextTag": "lifelong",
+        "term": { "value": "Тылзе", "script": "Cyrl", "rom": "Tõlze" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference, Yoshkar-Ola, 2007 (Tõlze, god of the moon)." }]
+      },
+      {
+        "sphereId": "marriage-and-birth",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927; the moon-god is the protector of marriage and of birth in Mari belief." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "carry_the_moon_through_the_night",
+        "name": "bears the moon through the night sky and marks the months",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "Tõlze is the moon personified (tylze 'moon, month'); the lunar cycle is his action. A unique divine office.",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, Mari Mythology, 2007; Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927." }]
+      },
+      {
+        "id": "guard_marriage_and_childbirth",
+        "name": "watches over marriages and the safe bearing of children",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "partial",
+        "notes": "Named protector of marriage and birth; this tutelage is conferred upon the couples and mothers under his care (hence 'partial'), working alongside the birth-mother Shochyn-Ava.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (moon as guardian of marriage and birth)." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mari_kusoto_grove",
+        "name": "the sacred grove (küsoto)",
+        "kind": "ritual-site",
+        "role": "The grove-temple where the heaven-gods, the moon among them, were honoured and offerings made by the kart priest.",
+        "term": { "value": "кӱсото", "script": "Cyrl", "rom": "küsoto" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956; Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927." }]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "manifestation-of",
+        "personId": "mari_kugu_yumo",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927; the moon-god is a hypostasis of the supreme sky-god in henotheistic Mari religion." }],
+        "notes": "Hierarchical hypostasis tie to Kugu Jumo, not a kin relation."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Tõlze (Tylze) is the Mari god of the moon and the protector of marriage and birth, a night-sky deity counted among the principal gods and a hypostasis of the supreme sky-god.",
+        "citations": [
+          { "kind": "secondary", "reference": "Holmberg, Uno (Harva). Finno-Ugric and Siberian Mythology (The Mythology of All Races, Vol. IV). Marshall Jones, 1927, Cheremis sections." },
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007 (Tõlze)." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Тылзе⟩ Tõlze (tylze 'moon, month'); fuller Tõlze Jumo. A solitary celestial power tied to Kugu Jumo as a manifestation; his marriage/birth guardianship complements the birth-mother Shochyn-Ava and the moon-god Tõlze appears in the standard lists of Mari deities."
+  },
+  {
+    "id": "mari_mardezh_ava",
+    "name": {
+      "primary": "Wind-Mother of the Mari",
+      "alt": ["Mardezh-Ava", "Mardež-Ava", "Mardezh Ava", "Мардеж Ава", "Мардеж"],
+      "transliterations": { "chm": "Мардеж Ава", "rom": "Mardež Ava", "etymology": "Meadow Mari mardež 'wind' + ava 'mother'; the female -ava counterpart of the wind-god Mardež." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Personified as the mother-spirit of the wind, the female counterpart of the wind-god Mardež.",
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956 (the natural-force gods and their -ava 'mother' counterparts)." }],
+        "notes": "Authored as the wind-mother of the attested ava series (Tul-Ava, Mlande-Ava, Kudurcho-Ava …), counterpart of the wind-god Mardež."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wind-and-air",
+        "contextTag": "lifelong",
+        "term": { "value": "Мардеж Ава", "script": "Cyrl", "rom": "Mardež Ava" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007 (Mardež, god of wind, with the female -ava counterpart in the mother-spirit series)." }]
+      },
+      {
+        "sphereId": "weather-and-storm",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (personified 'mothers' of the natural elements among the Cheremis)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise_and_still_the_winds",
+        "name": "raises the winds and lays them down again",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "As the mother-spirit of the wind she governs the blowing of the wind, paired with the wind-god Mardež exactly as Tul-Ava the fire-mother is paired with the fire-god Tul. A unique divine office.",
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis, 1956; Toidybekova, Mari Mythology, 2007." }]
+      },
+      {
+        "id": "receive_offerings_for_fair_wind",
+        "name": "is propitiated for favourable winds and spared from storm-harm",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "Like the other element-mothers she received offerings in the grove cult so that her element would be benign rather than destructive.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (cult of the element-mothers); Sebeok & Ingemann, Studies in Cheremis, 1956." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mari_grove_offering",
+        "name": "grove blood-offering and candles",
+        "kind": "offering",
+        "role": "The food and animal offerings (geese, ducks, blood-and-grain pies) and candles burned for the gods and element-spirits at the küsoto grove by the kart priest.",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956 (grove sacrifices); Toidybekova, Mari Mythology, 2007." }]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "manifestation-of",
+        "personId": "mari_kugu_yumo",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927; in henotheistic Mari religion the element-powers are manifestations of the supreme god." }],
+        "notes": "Hierarchical hypostasis tie to Kugu Jumo, not a kin relation. The element-mothers are otherwise independent powers."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Mardezh-Ava ('Wind-Mother') is the Mari mother-spirit of the wind, the female -ava counterpart of the wind-god Mardež, one of the personified 'mother' (ava) deities of the natural elements alongside Tul-Ava, Mlande-Ava and Kudurcho-Ava.",
+        "citations": [
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. Viking Fund, 1956 (the ava 'mother' deities of natural forces)." },
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007 (Mardež; the -ava counterparts)." },
+          { "kind": "secondary", "reference": "Holmberg, Uno (Harva). Finno-Ugric and Siberian Mythology (The Mythology of All Races, Vol. IV). Marshall Jones, 1927, Cheremis sections." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Мардеж Ава⟩ Mardež Ava (mardež 'wind' + ava 'mother'). The wind-god is attested as Mardež; the -ava form is the female element-mother, modelled exactly on the existing Tul-Ava entry. Completes the ava series with Mlande-Ava (earth) and Tul-Ava (fire)."
+  },
+  {
+    "id": "mari_shochyn_ava",
+    "name": {
+      "primary": "Birth-Mother of the Mari",
+      "alt": ["Shochyn-Ava", "Šočyn-Ava", "Shochyn Ava", "Šočõn Ava", "Шочынава", "Шочын Ава"],
+      "transliterations": { "chm": "Шочынава / Шочын Ава", "rom": "Šočyn Ava", "etymology": "Meadow Mari šoč- 'to be born' + ava 'mother' = 'mother of birth / birth-giving mother'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mari",
+    "primaryTradition": "Mari",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Personified as the mother who gives and watches over birth.",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology, 2007 (Shochyn-Ava, goddess of birth); Sebeok & Ingemann, Studies in Cheremis, 1956 (the ava 'mother' deities)." }],
+        "notes": "Shochyn-Ava is the goddess of birth/childbirth and is named as particularly popular among the Mari deities."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "birth-and-childbirth",
+        "contextTag": "lifelong",
+        "term": { "value": "Шочынава", "script": "Cyrl", "rom": "Šočyn Ava" },
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference, Yoshkar-Ola, 2007 (Shochyn-Ava, goddess of childbirth)." }]
+      },
+      {
+        "sphereId": "fertility-and-new-life",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927 (the birth-giving mother-spirit; the 'mother' deities of the Cheremis)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give_and_protect_birth",
+        "name": "grants children and brings them safely to birth",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "The 'mother of birth' (šoč- 'to be born'); invoked for conception and safe childbirth, she is one of the most popular of the ava goddesses. A unique divine office.",
+        "sources": [{ "kind": "secondary", "reference": "Toidybekova, Mari Mythology, 2007; Sebeok & Ingemann, Studies in Cheremis, 1956." }]
+      },
+      {
+        "id": "receive_offerings_for_offspring",
+        "name": "receives prayers and offerings from those seeking or expecting children",
+        "term": { "value": "", "script": "", "rom": "" },
+        "inheritability": "none",
+        "notes": "Among the deities especially honoured by the people (with the agricultural protectors); offerings were made to her for offspring and the wellbeing of mother and child.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927; Toidybekova, Mari Mythology, 2007." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mari_fir_branch_altar",
+        "name": "the fir-branch altar by the sacred tree",
+        "kind": "ritual-object",
+        "role": "The altar of fir-branch flooring laid by the sacred tree in the küsoto grove, on/before which offerings to the gods and mother-spirits were placed.",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Sebeok & Ingemann, Studies in Cheremis: The Supernatural, 1956 (grove altar and offerings); Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927." }]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "manifestation-of",
+        "personId": "mari_kugu_yumo",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Finno-Ugric and Siberian Mythology, 1927; the birth-mother is reckoned among the manifestations of the supreme god in henotheistic Mari religion." }],
+        "notes": "Hierarchical hypostasis tie to Kugu Jumo, not a kin relation; she is otherwise an independent mother-power."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Shochyn-Ava (Šočyn-Ava, 'Birth-Mother') is the Mari goddess of birth and childbirth, one of the most popular of the 'mother' (ava) deities, invoked for conception and safe delivery.",
+        "citations": [
+          { "kind": "secondary", "reference": "Toidybekova, L. S. Mari Mythology: Encyclopedic Reference. Yoshkar-Ola, 2007 (Shochyn-Ava)." },
+          { "kind": "secondary", "reference": "Holmberg, Uno (Harva). Finno-Ugric and Siberian Mythology (The Mythology of All Races, Vol. IV). Marshall Jones, 1927, Cheremis sections." },
+          { "kind": "secondary", "reference": "Sebeok, Thomas A., and Frances J. Ingemann. Studies in Cheremis: The Supernatural. Viking Fund, 1956." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Meadow Mari ⟨Шочынава⟩ Šočyn Ava (šoč- 'to be born' + ava 'mother'). A solitary mother-power; her birth-tutelage complements the moon-god Tõlze's guardianship of marriage and birth. Part of the ava series with Mlande-Ava, Tul-Ava and Mardezh-Ava."
+  }
+]
+```
+
+SOLITARY: mari_keche — Keče the Sun-god is a kinless, independent celestial power; no spouse, parent, sibling or child is attested in the Cheremis sources (Holmberg 1927; Toidybekova 2007). Its only documented vertical link is as a manifestation/hypostasis of Osh Kugu Jumo (non-kin), expressed via a non-symmetric "manifestation-of" relation.
+SOLITARY: mari_tylze — Tõlze the Moon-god is a kinless, independent celestial power; no kin tie is attested (Holmberg 1927; Toidybekova 2007). Documented only as a hypostasis of Kugu Jumo (non-kin) and as protector of (other people's) marriage and birth.
+SOLITARY: mari_mardezh_ava — Mardezh-Ava the Wind-Mother is an independent element-power; the ava 'mothers' are not given kin in the sources beyond pairing with the same-element god (Mardež), which is a functional doublet, not an attested marriage/sibling tie (Sebeok & Ingemann 1956; Holmberg 1927). Hypostasis of Kugu Jumo (non-kin).
+SOLITARY: mari_shochyn_ava — Shochyn-Ava the Birth-Mother is an independent mother-power; no kin is attested in the sources (Toidybekova 2007; Holmberg 1927). Hypostasis of Kugu Jumo (non-kin).
+
+RECIPROCAL-NEEDED: (none) — the only relations toward an existing corpus figure are "manifestation-of" -> mari_kugu_yumo, which is a hierarchical (hypostasis) relation and is NOT in the validator's symmetric set, so no reciprocal edge is required. If a future curator wishes to record the henotheistic structure on the supreme god, an optional inverse note ("manifested-as" -> mari_keche / mari_tylze / mari_mardezh_ava / mari_shochyn_ava) could be added to mari_kugu_yumo, but it is not a schema-required reciprocal.
