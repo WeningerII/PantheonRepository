@@ -156558,6 +156558,883 @@ const NEW_FIGURES = [
   "notes": "Daughter/emanation of Sang Hyang Kersa in some Sunda Wiwitan accounts. Counterpart to the male high-god as the maternal divine principle."
  },
  {
+  "id": "tagalog_amanikable",
+  "name": {
+   "primary": "Amanikable",
+   "alt": [
+    "Aman Ikabli"
+   ],
+   "transliterations": {
+    "tagalog": "Amanikable",
+    "rom": "Amanikable",
+    "etymology": "Tagalog god of the sea (in older strata a god of hunters); the ill-tempered sea-lord who succeeded Aman Sinaya."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-sea-god",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     }
+    ],
+    "notes": "A first-generation deity of Bathala's pantheon; lord of the sea, whose moods raise the storms and waves that wreck the unlucky."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Amanikable",
+     "script": "Tagalog",
+     "rom": "Amanikable"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contemporary",
+    "personId": "tagalog_bathala",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "A first-generation deity contemporary with Bathala in the Tagalog pantheon."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog god of the sea, a first-generation deity of Bathala's pantheon. Originally a god of hunters in the older accounts, he came to be the ill-tempered ruler of the waters who replaced the primordial sea-goddess Aman Sinaya."
+ },
+ {
+  "id": "tagalog_anagolay",
+  "name": {
+   "primary": "Anagolay",
+   "alt": [],
+   "transliterations": {
+    "tagalog": "Anagolay",
+    "rom": "Anagolay",
+    "etymology": "Tagalog goddess of lost things."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_lakapati",
+   "tagalog_mapulon"
+  ],
+  "parentRoles": {
+   "tagalog_lakapati": "maternal",
+   "tagalog_mapulon": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-lost-things",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "Goddess invoked to recover what is lost; daughter of Lakapati and Mapulon, wife of Dumakulem."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lost-things",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anagolay",
+     "script": "Tagalog",
+     "rom": "Anagolay"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_dumakulem",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Wife of the mountain-god Dumakulem."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog goddess of lost things, daughter of Lakapati and Mapulon. Wife of Dumakulem and mother of Diyan Masalanta, the goddess of love."
+ },
+ {
+  "id": "tagalog_anitun_tabu",
+  "name": {
+   "primary": "Anitun Tabu",
+   "alt": [
+    "Anitan Tauo"
+   ],
+   "transliterations": {
+    "tagalog": "Anitun Tabu",
+    "rom": "Anitun Tabu",
+    "etymology": "Tagalog goddess of wind and rain."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_idianale",
+   "tagalog_dimangan"
+  ],
+  "parentRoles": {
+   "tagalog_idianale": "maternal",
+   "tagalog_dimangan": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-wind-goddess",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "Fickle goddess of wind and rain; daughter of Idianale and Dimangan."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wind-and-rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anitun Tabu",
+     "script": "Tagalog",
+     "rom": "Anitun Tabu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tagalog_dumakulem",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Sister of the mountain-god Dumakulem."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog goddess of wind and rain, daughter of Idianale and Dimangan and sister of Dumakulem. Known for a changeable temper that governs the weather."
+ },
+ {
+  "id": "tagalog_apolaki",
+  "name": {
+   "primary": "Apolaki",
+   "alt": [
+    "Apolake"
+   ],
+   "transliterations": {
+    "tagalog": "Apolaki",
+    "rom": "Apolaki",
+    "etymology": "Tagalog/Pangasinan-Pampangan sun- and war-god; son of Bathala."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_bathala"
+  ],
+  "parentRoles": {
+   "tagalog_bathala": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "attestation-as-sun-and-war-god",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     }
+    ],
+    "notes": "Patron of warriors and the sun; son of Bathala. In the moon-myth he quarrels with his sister Mayari over ruling the world, and the fight leaves the moon (Mayari) dimmer than the sun."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun-and-war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Apolaki",
+     "script": "Tagalog",
+     "rom": "Apolaki"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tagalog_bathala",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Son of the supreme god Bathala; brother of the moon-goddess Mayari."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog sun- and war-god, son of Bathala and brother of the moon-goddess Mayari. Their contest for dominion over the world is the Tagalog explanation for why the moon shines more faintly than the sun."
+ },
+ {
+  "id": "tagalog_dimangan",
+  "name": {
+   "primary": "Dimangan",
+   "alt": [
+    "Dumangan"
+   ],
+   "transliterations": {
+    "tagalog": "Dimangan",
+    "rom": "Dimangan",
+    "etymology": "Tagalog god of good harvest; Dumangan in some accounts."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-harvest-god",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "P. de San Buenaventura, Vocabulario de lengua Tagala (1613)"
+     }
+    ],
+    "notes": "God of the good harvest, who grants the ripening and increase of the rice crop. Husband of Idianale."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "harvest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Dimangan",
+     "script": "Tagalog",
+     "rom": "Dimangan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_idianale",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Husband of Idianale."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog god of the good harvest. Husband of Idianale; father, in Jocano's reconstruction, of the mountain-god Dumakulem and the wind-goddess Anitun Tabu."
+ },
+ {
+  "id": "tagalog_diyan_masalanta",
+  "name": {
+   "primary": "Diyan Masalanta",
+   "alt": [
+    "Dian Masalanta"
+   ],
+   "transliterations": {
+    "tagalog": "Diyan Masalanta",
+    "rom": "Diyan Masalanta",
+    "etymology": "Tagalog goddess of love and childbirth; recorded by Plasencia as Dian Masalanta, patroness of lovers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_anagolay",
+   "tagalog_dumakulem"
+  ],
+  "parentRoles": {
+   "tagalog_anagolay": "maternal",
+   "tagalog_dumakulem": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-love",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Juan de Plasencia, Customs of the Tagalogs (1589)"
+     }
+    ],
+    "notes": "Goddess of love, conception and childbirth, named by Plasencia as the patroness of lovers and generation; daughter of Anagolay and Dumakulem."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "love-and-childbirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Diyan Masalanta",
+     "script": "Tagalog",
+     "rom": "Diyan Masalanta"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plasencia, Customs of the Tagalogs (1589)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Juan de Plasencia, Customs of the Tagalogs (1589)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog goddess of love, conception and childbirth — the deity Plasencia singles out as patroness of lovers, whose worship the friars most sought to suppress. Daughter of Anagolay and Dumakulem in Jocano's reconstruction."
+ },
+ {
+  "id": "tagalog_dumakulem",
+  "name": {
+   "primary": "Dumakulem",
+   "alt": [],
+   "transliterations": {
+    "tagalog": "Dumakulem",
+    "rom": "Dumakulem",
+    "etymology": "Tagalog guardian god of the mountains."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_idianale",
+   "tagalog_dimangan"
+  ],
+  "parentRoles": {
+   "tagalog_idianale": "maternal",
+   "tagalog_dimangan": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-mountain-god",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "The strong guardian of the mountains; son of Idianale and Dimangan. Married Anagolay."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "mountains",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Dumakulem",
+     "script": "Tagalog",
+     "rom": "Dumakulem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_anagolay",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Husband of Anagolay, goddess of lost things."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tagalog_anitun_tabu",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Brother of the wind-goddess Anitun Tabu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog guardian god of the mountains, son of Idianale and Dimangan. Married Anagolay, the goddess of lost things; their daughter is Diyan Masalanta, goddess of love. The genealogy follows Jocano's reconstruction."
+ },
+ {
+  "id": "tagalog_idianale",
+  "name": {
+   "primary": "Idianale",
+   "alt": [
+    "Idiyanale",
+    "Idianali"
+   ],
+   "transliterations": {
+    "tagalog": "Idianale",
+    "rom": "Idianale",
+    "etymology": "Tagalog goddess of labour and good deeds, invoked for success in work."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-labour",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "Patroness of labour and good works; the people called on her for success in their undertakings. Wife of Dimangan."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "labour-and-good-deeds",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Idianale",
+     "script": "Tagalog",
+     "rom": "Idianale"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_dimangan",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Wife of Dimangan, god of good harvest."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tagalog deity lists in the early Spanish accounts"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog goddess of labour and good deeds. Wife of Dimangan and, in Jocano's systematization of the pantheon, mother of Dumakulem and Anitun Tabu."
+ },
+ {
+  "id": "tagalog_lakapati",
+  "name": {
+   "primary": "Lakapati",
+   "alt": [
+    "Ikapati",
+    "Lacapati"
+   ],
+   "transliterations": {
+    "tagalog": "Lakapati",
+    "rom": "Lakapati",
+    "etymology": "Tagalog hermaphrodite deity of fertility and agriculture; named Lacapati in the early vocabularies."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "nonbinary",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-fertility-deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613); Boxer Codex (c. 1590)"
+     }
+    ],
+    "notes": "The great fertility deity, androgynous, protector of the sown fields; farmers raised a child in the field and prayed 'Lakapati, feed thy servant' for a good crop."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fertility-and-agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Lakapati",
+     "script": "Tagalog",
+     "rom": "Lakapati"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_mapulon",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Paired with Mapulon, god of seasons."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613); Boxer Codex (c. 1590)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog hermaphrodite deity of fertility and cultivated land, one of the most-invoked gods of the rice-farming Tagalogs. Worshipped at planting with the prayer 'Lakapati, feed thy servant.' In Jocano's reconstruction the consort of Mapulon and mother of Anagolay."
+ },
+ {
+  "id": "tagalog_mapulon",
+  "name": {
+   "primary": "Mapulon",
+   "alt": [],
+   "transliterations": {
+    "tagalog": "Mapulon",
+    "rom": "Mapulon",
+    "etymology": "Tagalog god of the seasons."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-god-of-seasons",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "God of the seasons, who turns the agricultural year. Husband of Lakapati."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "seasons",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mapulon",
+     "script": "Tagalog",
+     "rom": "Mapulon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_lakapati",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Husband of the fertility deity Lakapati."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog god of the seasons. Husband of Lakapati and father of Anagolay in Jocano's systematization of the pantheon."
+ },
+ {
   "id": "taino_atabey",
   "name": {
    "primary": "Mother of Waters",
