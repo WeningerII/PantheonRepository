@@ -1,0 +1,554 @@
+Mangaian (Cook Islands) pantheon — authored from scratch from William Wyatt Gill's classic record, the Mangaian cosmos being entirely absent from the registry. Primary source throughout: William Wyatt Gill, Myths and Songs from the South Pacific (London: Henry S. King & Co., 1876), supplemented by Gill, Historical Sketches of Savage Life in Polynesia; with Illustrative Clan Songs (Wellington: Government Printer, 1880).
+
+## Research synthesis
+
+I authored 12 firmly-attested figures of the Mangaian core, all verified against Gill's record and cross-checked against the standard handbooks (Roland B. Dixon, Oceanic Mythology, 1916; E. R. Tregear, The Maori-Polynesian Comparative Dictionary, 1891; Robert D. Craig, Dictionary of Polynesian Mythology, 1989). All carry origin "canon", tradition "Mangaian", ids prefixed mangaian_, and eras drawn only from primordial / mythic / mythic-prehistoric.
+
+Key findings and decisions:
+
+- COSMOGONY: Gill's Mangaian universe is the hollow of a vast coconut shell; its interior is Avaiki (the underworld), at whose narrow base — where the imaginary shell's sides almost meet, so that her knees touch her chin — dwells the primal mother Vari-ma-te-takere ("the very beginning"). She had no parents; I flag her SOLITARY at the apex of the genealogy (her descendants are wired). She plucked six children from her sides — three from the right (males: Vatea, Tinirau, Tango), three from the left (females: Tumu-te-ana-oa the Echo, Raka lord of winds, Tu-metua the loved one kept beside her). I author Vatea and Tinirau (firmly attested, narratively central); Tango, Tumu-te-ana-oa, Raka and Tu-metua are real but minor — I cite them in Vari's notes rather than authoring thin stubs (the brief asks for ~7–10 firmly-attested core figures).
+
+- VATEA / AVATEA = "noon"; Vari's first-born, plucked from her right side; a being split vertically, the right half a man and the left half a fish; the father of gods and men. He took to wife Papa, whom Gill gives as daughter of Timatekore ("Nothing-more") and Tamaiti-ngava-ringavari; Timatekore and Tamaiti are cited in Papa's notes, not authored.
+
+- TANGAROA and RONGO are the twin sons of Vatea and Papa. Gill records the famous precedence dispute: Tangaroa was the first-born (the elder, here typed accordingly), with light/fair (yellow) hair — so that the Mangaians at first took Europeans for his children — and his portion is everything red (red taro, red fish); but Vatea favoured the younger Rongo, who was given precedence and became the great god of Mangaia (agriculture, the taro, and war). Tangaroa in pique emigrated (to Rarotonga and Aitutaki). I wire them as reciprocal twin siblings, both children of Vatea+Papa.
+
+- TANE, TANGIIA and TONGA-ITI (Motoro) are further sons / tribal gods; Gill names Rongo as elder brother to Tonga-iti (the lizard-god), to Tangiia and to Tāne. Wired as sons of Vatea+Papa and siblings of the twins.
+
+- INA / INA-MOE-AITU is the Mangaian form of the pan-Polynesian Hina: she beats out tapa (cloth) in the moon, and is the heroine of the Tuna (eel) tale from which the first coconut sprang. Her divine parentage is not fixed in Gill's core Mangaian account (the eel-tale gives only the maiden Ina), so I flag her SOLITARY with that cited reason.
+
+- MAUI is the youngest, the fire-bringer and sun-snarer, typed demigod. In the Mangaian legend his parents are Ru (supporter of the heavens) and Buataranga (guardian of the lower world); he wrests the secret of fire from the fire-god Mauike in Avaiki and snares the sun Ra. Ru and Buataranga are not in this batch, so Maui carries no within-batch kin — flagged SOLITARY with that cited reason (parents named in notes).
+
+- MIRU (Miru-kura, "the red") is the hag of Avaiki who receives the souls of the (common) dead, stupefies them with kava and cooks them in her oven; the Tapairu are her daughters. No parentage is given her in Gill — flagged SOLITARY.
+
+- TINIRAU, second child of Vari (plucked from her right side), is the lord/guardian of all fish, himself half-fish; wired as Vari's child and Vatea's brother.
+
+faculties are kept distinct from domains (verb-phrase powers vs. spheres) and from materialCulture (attested objects: Rongo's sacred drum and his marae Akaoro and Orongo; Maui's fire and the sun-snare; Ina's tapa-mallet and cloth; the coconut). Every figure carries ≥1 citation, and every domain / faculty / materialCulture entry a non-empty reference. Inheritability is "none" throughout (these powers are not represented as heritable in the source). Native Mangaian/Rarotongan terms are given only where I could verify a real word; the `term` object is omitted otherwise (no invented forms).
+
+```json
+[
+  {
+    "id": "mangaian_vari_ma_te_takere",
+    "name": {
+      "primary": "Vari-ma-te-takere",
+      "alt": ["Vari", "Vari-ma-te-takere", "Varima-te-takere", "Vari-mate-takere"],
+      "transliterations": {
+        "mangaian": "Vari-ma-te-takere",
+        "etymology": "Mangaian, glossed by Gill as 'the very beginning' (also read as 'the mud / primeval slime at the bottom', vari being the primeval mud at the base of Avaiki); the self-existent primal mother at the narrow base of the coconut-shell underworld."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "self-existence-at-the-base-of-avaiki", "sources": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation', pp. 1–5" }], "notes": "The self-existent primal mother dwelling in perpetual darkness at the very bottom of Avaiki — the interior of the hollow coconut that is the Mangaian universe — where the sides of the imaginary shell so nearly meet that she sits doubled, her knees touching her chin." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "plucking-of-the-six-children-from-her-sides", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9" }, { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11–13" }], "notes": "Longing for offspring, she plucked living children from her own body: three from her right side — Vatea (the first-born), Tinirau, and Tango — and three from her left — Tumu-te-ana-oa (the Echo), Raka (lord of the winds), and Tu-metua (the loved one she kept beside her at the base of Avaiki). These six are the primal gods from whom the Mangaian pantheon descends." }
+    ],
+    "domains": [
+      { "sphereId": "primordial-origin", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation'" }] },
+      { "sphereId": "underworld-avaiki", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 1–5" }] },
+      { "sphereId": "creation-of-the-gods", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Vari-ma-te-takere'" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_pluck_children_from_sides", "name": "pluck living children from her own sides", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9" }], "notes": "She brings forth her six children not by birth but by tearing pieces of flesh from her right and left sides and shaping them into gods — Vatea, Tinirau and Tango from the right, Tumu-te-ana-oa, Raka and Tu-metua from the left." },
+      { "id": "mangaian_self_existence", "name": "exist of herself at the root of all things", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation'" }], "notes": "The 'very beginning', without parent or origin, the foundation from which the cosmos of Avaiki and its gods proceeds." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "mother-of", "personId": "mangaian_vatea", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–5" }], "notes": "Vatea, plucked from her right side, is her first-born." },
+      { "kind": "mother-of", "personId": "mangaian_tinirau", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9" }], "notes": "Tinirau, lord of fish, the second child plucked from her right side." }
+    ],
+    "sources": [
+      { "claim": "Vari-ma-te-takere ('the very beginning') is the self-existent primal mother at the base of Avaiki, the hollow-coconut underworld, who plucked six children from her sides — the primal gods of Mangaia.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation', pp. 1–9" }], "weight": "primary" },
+      { "claim": "The Mangaian cosmos is conceived as the hollow of a vast coconut shell, its interior the underworld Avaiki, at whose cramped base Vari sits doubled with her knees against her chin.", "citations": [{ "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11–13" }], "weight": "high" }
+    ],
+    "notes": "Primordial mother of the Mangaian pantheon (Gill 1876). Her four other children — Tango (lord of the right side), Tumu-te-ana-oa ('the Echo'), Raka (lord of the winds, to whom she gave a great basket holding the winds), and Tu-metua ('the loved one', the youngest, kept ever beside her) — are attested by Gill but minor; they are cited here rather than authored as separate stubs. SOLITARY (as to ancestry): she is the self-existent 'very beginning' with no parent, spouse, or sibling — by definition the root of the genealogy (Gill 1876, Ch. I). Her descendants are wired."
+  },
+  {
+    "id": "mangaian_vatea",
+    "name": {
+      "primary": "Vatea",
+      "alt": ["Avatea", "Vatea", "Atea"],
+      "transliterations": {
+        "mangaian": "Vatea / Avatea",
+        "etymology": "Mangaian avatea 'noon, daylight, the light of day'; Gill renders the name 'noon'. Cognate with the wider Polynesian Atea / Wakea ('space, light, the sky-father')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vari_ma_te_takere"],
+    "parentRoles": { "mangaian_vari_ma_te_takere": "maternal" },
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "plucked-as-first-born-from-vari-right-side", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–5" }], "notes": "The first-born of Vari-ma-te-takere, plucked from her right side; a being divided vertically down the middle — the right half a man, the left half a fish — dwelling in Te-papa-rairai ('the thin land') in the upper part of Avaiki." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "father-of-gods-and-men", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12" }, { "kind": "secondary", "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Atea / Vatea'" }], "notes": "As 'noon', the lord of light and day; he wins Papa and by her becomes father of the great gods (the twins Rongo and Tangaroa, and Tane, Tangiia and Tonga-iti) — hence the father of gods and men." }
+    ],
+    "domains": [
+      { "sphereId": "noon-and-daylight", "contextTag": "lifelong", "term": { "value": "avatea", "script": "Latin (Mangaian)", "rom": "avatea" }, "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, p. 3 (the name 'noon')" }] },
+      { "sphereId": "sky-and-light", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Avatea'" }] },
+      { "sphereId": "fatherhood-of-the-gods", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–14" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_vatea_half_fish_form", "name": "exist as a being half man and half fish", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–5" }], "notes": "Divided vertically: the right side a man, the left side a fish — the mark of his descent from the primal mother and of his lordship of the upper, lighted region." },
+      { "id": "mangaian_vatea_bring_the_light_of_noon", "name": "embody and bring the light of noon-day", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, p. 3" }], "notes": "His name is 'noon'; he is the personified light of day over the world of mortals on the outside of the coconut-shell." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mangaian_papa", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12" }], "notes": "Vatea takes Papa to wife; she bears him the great gods of Mangaia." },
+      { "kind": "sibling", "personId": "mangaian_tinirau", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9" }], "notes": "Brother of Tinirau; both plucked from the right side of Vari, Vatea the first and Tinirau the second." },
+      { "kind": "father-of", "personId": "mangaian_tangaroa", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Father of the first-born twin Tangaroa." },
+      { "kind": "father-of", "personId": "mangaian_rongo", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Father of Rongo, whom he favoured and gave precedence over the elder twin." },
+      { "kind": "father-of", "personId": "mangaian_tane", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "father-of", "personId": "mangaian_tangiia", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "father-of", "personId": "mangaian_tonga_iti", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "sources": [
+      { "claim": "Vatea (Avatea), 'noon', is the first-born of Vari-ma-te-takere, plucked from her right side, a being half man and half fish, lord of light and father of the great gods of Mangaia.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–14" }], "weight": "primary" },
+      { "claim": "Vatea / Atea is the Mangaian sky-and-light father, husband of Papa.", "citations": [{ "kind": "secondary", "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Atea / Vatea'" }], "weight": "high" }
+    ],
+    "notes": "Sky/light father of Mangaia (Gill 1876). Right half man, left half fish. By Papa the father of Rongo and Tangaroa and of Tane, Tangiia and Tonga-iti."
+  },
+  {
+    "id": "mangaian_papa",
+    "name": {
+      "primary": "Papa",
+      "alt": ["Papa", "Papa-rairai"],
+      "transliterations": {
+        "mangaian": "Papa",
+        "etymology": "Mangaian / pan-Polynesian papa 'foundation, stratum, flat rock; the earth as a stratum'; the earth-mother, consort of the sky-light father Vatea."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "won-by-vatea-as-his-wife", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12" }], "notes": "The earth-mother whom Vatea took to wife; Gill gives her as daughter of Timatekore ('Nothing-more') and Tamaiti-ngava-ringavari ('the soft-bodied'), of the deeper part of Avaiki." },
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "mother-of-the-great-gods", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "By Vatea she bore the twins Rongo and Tangaroa, and Tane, Tangiia and Tonga-iti — the tribal gods of Mangaia. Gill records that she could not eat with her first-born Tangaroa, which led to the younger Rongo being given precedence." }
+    ],
+    "domains": [
+      { "sphereId": "earth-and-foundation", "contextTag": "lifelong", "term": { "value": "papa", "script": "Latin (Mangaian)", "rom": "papa" }, "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12" }] },
+      { "sphereId": "motherhood-of-the-gods", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Papa'" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_papa_bear_the_great_gods", "name": "bear the great gods of Mangaia", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Mother by Vatea of Rongo, Tangaroa, Tane, Tangiia and Tonga-iti." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "mangaian_vatea", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12" }], "notes": "Wife of Vatea, the light-father." },
+      { "kind": "mother-of", "personId": "mangaian_tangaroa", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "mother-of", "personId": "mangaian_rongo", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "mother-of", "personId": "mangaian_tane", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "mother-of", "personId": "mangaian_tangiia", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "mother-of", "personId": "mangaian_tonga_iti", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "sources": [
+      { "claim": "Papa, the earth-mother, is the wife of Vatea and by him mother of the great gods of Mangaia (Rongo, Tangaroa, Tane, Tangiia, Tonga-iti).", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–14" }], "weight": "primary" }
+    ],
+    "notes": "Earth-mother of Mangaia, wife of Vatea (Gill 1876). Gill gives her parents as Timatekore ('Nothing-more') and Tamaiti-ngava-ringavari ('the soft-bodied') of the lower Avaiki — cited here, not authored as stubs. The rule that she could not eat with her first-born underlies Rongo's precedence over Tangaroa."
+  },
+  {
+    "id": "mangaian_tangaroa",
+    "name": {
+      "primary": "Tangaroa",
+      "alt": ["Tangaroa", "Tanga-roa"],
+      "transliterations": {
+        "mangaian": "Tangaroa",
+        "etymology": "Mangaian / pan-Polynesian Tangaroa (Maori Tangaroa, Hawaiian Kanaloa, Samoan Tagaloa); in Mangaia the elder twin son of Vatea and Papa, the fair-haired god whose portion is all things red."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vatea", "mangaian_papa"],
+    "parentRoles": { "mangaian_vatea": "paternal", "mangaian_papa": "maternal" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "born-first-born-twin-of-vatea-and-papa", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "First-born of the twin sons of Vatea and Papa, and so the elder; distinguished by fair, yellow hair — so that when the Mangaians first saw Europeans they took them for the children of Tangaroa." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "passed-over-for-rongo-and-emigration", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tangaroa'" }], "notes": "Although the elder, Tangaroa was set below his younger twin Rongo, whom Vatea favoured; his appointed portion was everything red (red taro, red fish, and the like). Slighted, he left Mangaia and his worship passed to other islands (Rarotonga, Aitutaki)." }
+    ],
+    "domains": [
+      { "sphereId": "the-sea", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Tangaroa'" }, { "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I" }] },
+      { "sphereId": "all-things-red", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "sphereId": "abundance-and-property", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tangaroa'" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_tangaroa_claim_all_things_red", "name": "claim as his portion everything red", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "In the division of food and goods with Rongo, all that is red — red taro, red fish, red feathers — falls to Tangaroa." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "twin sibling", "personId": "mangaian_rongo", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Elder twin of Rongo, his younger brother who was given precedence." },
+      { "kind": "sibling", "personId": "mangaian_tane", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tangiia", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tonga_iti", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "sources": [
+      { "claim": "Tangaroa is the first-born (elder) twin son of Vatea and Papa, the fair/yellow-haired god whose portion is all things red, set below his younger twin Rongo whom Vatea favoured.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "weight": "primary" },
+      { "claim": "When the Mangaians first saw white men they supposed them children of the fair-haired Tangaroa.", "citations": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tangaroa'" }], "weight": "high" }
+    ],
+    "notes": "Elder twin son of Vatea and Papa (Gill 1876); golden/yellow-haired; god of the sea and of all things red; passed over for the younger Rongo and so departing Mangaia, his cult flourishing instead on Rarotonga and Aitutaki."
+  },
+  {
+    "id": "mangaian_rongo",
+    "name": {
+      "primary": "Rongo",
+      "alt": ["Rongo", "Ro'o"],
+      "transliterations": {
+        "mangaian": "Rongo",
+        "etymology": "Mangaian / pan-Polynesian Rongo (Maori Rongo, Hawaiian Lono, Tahitian Ro'o); the great god of Mangaia, the younger twin given precedence — god of taro-agriculture and of war."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vatea", "mangaian_papa"],
+    "parentRoles": { "mangaian_vatea": "paternal", "mangaian_papa": "maternal" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "born-younger-twin-and-given-precedence", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "The younger twin of Tangaroa, but favoured by his father Vatea and given precedence over the elder; the rule that Papa could not eat with her first-born underlay his elevation. He became the great national god of Mangaia." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "established-as-the-great-god-of-mangaia", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I and Ch. XV (the drum of peace; human sacrifice to Rongo)" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'" }], "notes": "God of agriculture (the taro) and of war; worshipped at the two great marae of the Keia district — inland Akaoro and coastal Orongo — where cooked taro was offered for the fertility of the land and human victims for success in battle. His was the sacred drum of peace." }
+    ],
+    "domains": [
+      { "sphereId": "agriculture-and-the-taro", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I and XV" }] },
+      { "sphereId": "war", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV (Rongo and human sacrifice)" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'" }] },
+      { "sphereId": "tutelary-of-mangaia", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_rongo_grant_the_taro_harvest", "name": "grant the fertility of the taro and the land", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I and XV" }], "notes": "As god of agriculture, cooked taro is offered to him to secure the harvest and the fertility of Mangaia." },
+      { "id": "mangaian_rongo_grant_victory_in_war", "name": "grant victory in war and demand the sacrifice", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV (human sacrifice to Rongo)" }], "notes": "As war-god of Mangaia he gives the victory; human victims were offered upon his marae after battle, and his name stood as a byword for deadly hate." }
+    ],
+    "materialCulture": [
+      { "id": "mangaian_rongo_sacred_drum", "name": "the sacred drum of Rongo (the drum of peace)", "kind": "ritual-instrument", "role": "the great sacred drum sounded in Rongo's worship at Mangaia, the 'drum of peace' beaten to proclaim the inauguration of a new ruler (the Lord of Mangaia) and the seasons of peace", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV; and Gill, Historical Sketches of Savage Life in Polynesia (1880)" }] },
+      { "id": "mangaian_rongo_marae_akaoro", "name": "Akaoro marae", "kind": "sacred-site", "role": "the great inland marae of Rongo in the Keia district of Mangaia, a chief centre of his worship and sacrifice", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'" }] },
+      { "id": "mangaian_rongo_marae_orongo", "name": "Orongo marae", "kind": "sacred-site", "role": "the great coastal marae of Rongo in the Keia district of Mangaia, where cooked taro and human victims were offered to him", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV" }, { "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'" }] }
+    ],
+    "relations": [
+      { "kind": "twin sibling", "personId": "mangaian_tangaroa", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Younger twin of Tangaroa, but given precedence over the elder." },
+      { "kind": "sibling", "personId": "mangaian_tane", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Rongo is named elder brother to Tane." },
+      { "kind": "sibling", "personId": "mangaian_tangiia", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Rongo is named elder brother to Tangiia." },
+      { "kind": "sibling", "personId": "mangaian_tonga_iti", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Rongo is named elder brother to Tonga-iti, the lizard-god." }
+    ],
+    "sources": [
+      { "claim": "Rongo, the younger twin son of Vatea and Papa, was favoured over his elder twin Tangaroa and made the great national god of Mangaia — god of agriculture (the taro) and of war.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14, and Ch. XV" }], "weight": "primary" },
+      { "claim": "Rongo's principal worship was at the inland Akaoro and coastal Orongo marae of the Keia district, where cooked taro and human victims were offered; his was the sacred drum.", "citations": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'" }], "weight": "high" }
+    ],
+    "notes": "The patron god of Mangaia (Gill 1876), god of agriculture and the sacred drum, and of war. Younger twin of Tangaroa, given precedence by Vatea. Worshipped at Akaoro (inland) and Orongo (coastal) marae."
+  },
+  {
+    "id": "mangaian_tane",
+    "name": {
+      "primary": "Tane",
+      "alt": ["Tane", "Tāne", "Tane-papa-kai"],
+      "transliterations": {
+        "mangaian": "Tane",
+        "etymology": "Mangaian / pan-Polynesian Tane (Maori Tāne, Hawaiian Kāne); in Mangaia a son of Vatea and Papa and a tribal god, the younger brother of Rongo. Gill records the by-name Tane-papa-kai ('Tane of the food-stratum / provider of food')."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vatea", "mangaian_papa"],
+    "parentRoles": { "mangaian_vatea": "paternal", "mangaian_papa": "maternal" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "born-a-son-of-vatea-and-papa", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "A son of Vatea and Papa and one of the tribal gods of Mangaia, the younger brother of whom Rongo is named the elder; by-named Tane-papa-kai, associated with the provision of food." }
+    ],
+    "domains": [
+      { "sphereId": "tribal-god-of-mangaia", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "sphereId": "provision-of-food", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tane (Mangaia)'" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_tane_provide_food", "name": "provide the food of the people", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tane (Mangaia)'" }], "notes": "His Mangaian by-name Tane-papa-kai marks him as a giver of food / the food-stratum among the tribal gods." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "sibling", "personId": "mangaian_rongo", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Rongo is named his elder brother." },
+      { "kind": "sibling", "personId": "mangaian_tangaroa", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tangiia", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tonga_iti", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "sources": [
+      { "claim": "Tane (Tane-papa-kai) is a son of Vatea and Papa and one of the tribal gods of Mangaia, a younger brother of Rongo.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "weight": "primary" }
+    ],
+    "notes": "Mangaian tribal god, son of Vatea and Papa, brother of the twins (Gill 1876). Gill's by-name Tane-papa-kai connects him with the provision of food."
+  },
+  {
+    "id": "mangaian_tangiia",
+    "name": {
+      "primary": "Tangiia",
+      "alt": ["Tangiia", "Tangi'ia"],
+      "transliterations": {
+        "mangaian": "Tangiia",
+        "etymology": "Mangaian Tangiia; in Gill's Mangaian genealogy a son of Vatea and Papa and one of the tribal gods, a younger brother of Rongo. (Distinct from the later Rarotongan voyaging-chief Tangiia.)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vatea", "mangaian_papa"],
+    "parentRoles": { "mangaian_vatea": "paternal", "mangaian_papa": "maternal" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "born-a-son-of-vatea-and-papa", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "A son of Vatea and Papa and one of the tribal gods of Mangaia, to whom Rongo stands as elder brother." }
+    ],
+    "domains": [
+      { "sphereId": "tribal-god-of-mangaia", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_tangiia_tutelary_of_his_tribe", "name": "stand tutelary over his tribe of Mangaia", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "As one of the tribal gods sprung from Vatea and Papa, he is the divine patron of his line on Mangaia." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "sibling", "personId": "mangaian_rongo", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Rongo is named his elder brother." },
+      { "kind": "sibling", "personId": "mangaian_tangaroa", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tane", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tonga_iti", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "sources": [
+      { "claim": "Tangiia is a son of Vatea and Papa and one of the tribal gods of Mangaia, a younger brother of Rongo.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "weight": "primary" }
+    ],
+    "notes": "Mangaian tribal god, son of Vatea and Papa, brother of the twins (Gill 1876). Not to be confused with the Rarotongan canoe-chief Tangiia of the migration traditions."
+  },
+  {
+    "id": "mangaian_tonga_iti",
+    "name": {
+      "primary": "Tonga-iti",
+      "alt": ["Tonga-iti", "Tongaiti", "Motoro", "Moko"],
+      "transliterations": {
+        "mangaian": "Tonga-iti / Motoro",
+        "etymology": "Mangaian Tonga-iti, also called Motoro; the lizard-god among the sons of Vatea and Papa, a tribal god and (in the Ngariki tradition) the chief national god of the soil; younger brother of Rongo."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vatea", "mangaian_papa"],
+    "parentRoles": { "mangaian_vatea": "paternal", "mangaian_papa": "maternal" },
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "born-a-son-of-vatea-and-papa", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "A son of Vatea and Papa, the lizard-god (also called Motoro), to whom Rongo stands as elder brother; one of the tribal gods of Mangaia." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "worshipped-as-motoro-god-of-the-soil", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Motoro / Tonga-iti'" }], "notes": "Under the name Motoro he was a chief tutelary god of Mangaia, a god of the soil revered by the ruling Ngariki, manifest in the lizard." }
+    ],
+    "domains": [
+      { "sphereId": "tribal-god-of-mangaia", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "sphereId": "lizards-and-reptiles", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tonga-iti'" }] },
+      { "sphereId": "the-soil-and-land", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Motoro'" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_tonga_iti_manifest_as_lizard", "name": "manifest in the body of the lizard", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tonga-iti'" }], "notes": "The lizard-god of Mangaia; his living manifestation is the lizard." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "sibling", "personId": "mangaian_rongo", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "notes": "Rongo is named his elder brother." },
+      { "kind": "sibling", "personId": "mangaian_tangaroa", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tane", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] },
+      { "kind": "sibling", "personId": "mangaian_tangiia", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }] }
+    ],
+    "sources": [
+      { "claim": "Tonga-iti (Motoro), the lizard-god, is a son of Vatea and Papa and one of the tribal gods of Mangaia, a younger brother of Rongo.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14" }], "weight": "primary" },
+      { "claim": "Under the name Motoro he was a chief tutelary god of the soil of Mangaia, revered by the Ngariki and manifest in the lizard.", "citations": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Motoro / Tonga-iti'" }], "weight": "high" }
+    ],
+    "notes": "Mangaian lizard-god, son of Vatea and Papa, brother of the twins (Gill 1876); also called Motoro, a chief god of the soil of Mangaia."
+  },
+  {
+    "id": "mangaian_tinirau",
+    "name": {
+      "primary": "Tinirau",
+      "alt": ["Tinirau", "Tini-rau"],
+      "transliterations": {
+        "mangaian": "Tinirau",
+        "etymology": "Mangaian / pan-Polynesian Tinirau ('myriad' — tini 'host, multitude' + rau 'hundred'), referring to the multitude of the fishes; the second child of Vari-ma-te-takere, lord of all fish."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["mangaian_vari_ma_te_takere"],
+    "parentRoles": { "mangaian_vari_ma_te_takere": "maternal" },
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "plucked-from-vari-right-side", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9" }], "notes": "The second of Vari's children plucked from her right side; himself half-fish, set as lord and guardian over all the fishes of the sea." }
+    ],
+    "domains": [
+      { "sphereId": "lord-of-fish", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9" }] },
+      { "sphereId": "the-sea", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Tinirau'" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_tinirau_guard_all_fish", "name": "guard and command all the fishes of the sea", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9" }], "notes": "As lord of fish, the whole multitude of the sea (whence his name 'myriad') is under his keeping." }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "sibling", "personId": "mangaian_vatea", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9" }], "notes": "Brother of Vatea; both plucked from the right side of Vari, Vatea the first and Tinirau the second." }
+    ],
+    "sources": [
+      { "claim": "Tinirau, the second child of Vari-ma-te-takere plucked from her right side, is the half-fish lord and guardian of all the fishes of the sea.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9" }], "weight": "primary" }
+    ],
+    "notes": "Lord of fish, second child of Vari and brother of Vatea (Gill 1876). His name 'myriad' marks the multitude of the sea-creatures in his charge. (The wider Polynesian Tinirau–Hina cycle stands apart from this Mangaian cosmogonic placement.)"
+  },
+  {
+    "id": "mangaian_ina",
+    "name": {
+      "primary": "Ina",
+      "alt": ["Ina", "Ina-moe-aitu", "Hina", "Sina"],
+      "transliterations": {
+        "mangaian": "Ina / Ina-moe-aitu",
+        "etymology": "Mangaian Ina (the pan-Polynesian Hina / Sina; Mangaian regularly drops the initial h-). The by-name Ina-moe-aitu is glossed 'Ina who slept with (had a god for) a lover'."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-eel-tuna-and-the-first-coconut", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V 'The story of Ina', and the Tuna / coconut myth, pp. 77–88" }], "notes": "Bathing in her pool, Ina was wooed by the eel Tuna, who cast off his eel-form to reveal a beautiful youth; at his death (by Ina's act) she buried his severed head, and from it sprang the first coconut-palm — the two eyes and mouth of Tuna seen to this day in the three marks of the nut." },
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 1, "startEvent": "ascent-to-the-moon-to-beat-tapa", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V (Ina in the moon)" }, { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 88–90" }], "notes": "Ina is the woman in the moon: she went up to the moon, where she dwells as Ina-the-housekeeper of the moon, eternally beating out tapa (bark-cloth); the clouds are the sheets of cloth she spreads to dry, and the thunder of her mallet is heard on earth." }
+    ],
+    "domains": [
+      { "sphereId": "the-moon", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V (Ina in the moon)" }] },
+      { "sphereId": "tapa-and-barkcloth", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V" }] },
+      { "sphereId": "origin-of-the-coconut", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), the Tuna / coconut myth, pp. 77–88" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_ina_beat_tapa_in_the_moon", "name": "beat out tapa (bark-cloth) in the moon", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V" }], "notes": "From the moon she eternally beats bark-cloth; the spread cloths are the clouds and the sound of her mallet the thunder." },
+      { "id": "mangaian_ina_bring_forth_the_coconut", "name": "bring forth the first coconut from the eel's head", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), the Tuna / coconut myth, pp. 77–88" }], "notes": "By burying the head of the slain eel-lover Tuna she causes the first coconut-palm to spring up, the three marks of the nut being Tuna's two eyes and mouth." }
+    ],
+    "materialCulture": [
+      { "id": "mangaian_ina_tapa_mallet", "name": "Ina's tapa-beating mallet", "kind": "tool", "role": "the wooden beater (i'e) with which Ina pounds bark-cloth in the moon; the sound of its beating is heard on earth as thunder", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V" }] },
+      { "id": "mangaian_ina_moon_tapa_cloth", "name": "the tapa-cloth of the moon (the clouds)", "kind": "made-object", "role": "the sheets of bark-cloth Ina beats and spreads out to dry in the moon, seen on earth as the clouds", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Ina (Ina-moe-aitu), the Mangaian Hina, beats out tapa in the moon (her cloths the clouds, her mallet the thunder) and is the heroine of the Tuna-eel tale from which the first coconut sprang.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. V and the Tuna / coconut myth, pp. 77–88" }], "weight": "primary" },
+      { "claim": "Ina is the woman in the moon of Mangaian belief, eternally beating bark-cloth.", "citations": [{ "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 88–90" }], "weight": "high" }
+    ],
+    "notes": "The Mangaian Hina (Gill 1876): the woman in the moon who beats tapa, and the maiden of the Tuna-eel and first-coconut tale. SOLITARY: Gill's Mangaian account fixes no divine parentage, spouse, or sibling for Ina within the cosmogonic genealogy — the eel-tale gives only the maiden and her god-lover Tuna; her kin are therefore not wired (Gill 1876, Ch. V)."
+  },
+  {
+    "id": "mangaian_maui",
+    "name": {
+      "primary": "Maui",
+      "alt": ["Maui", "Māui", "Maui-tikitiki"],
+      "transliterations": {
+        "mangaian": "Maui",
+        "etymology": "Mangaian / pan-Polynesian Maui; in the Mangaian legend the youngest, the fire-bringer and sun-snarer, son of Ru and Buataranga."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      { "typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 0, "startEvent": "the-youngest-of-the-maui-brothers", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III 'The story of Maui', pp. 51–63" }], "notes": "The youngest and cleverest of the Maui brothers; in the Mangaian legend the son of Ru, the supporter of the heavens, and of Buataranga, the guardian of the path to the lower world." },
+      { "typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 1, "startEvent": "wresting-of-fire-from-mauike-in-avaiki", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the fire-god Mauike), pp. 51–63" }], "notes": "Maui descends to Avaiki and wrests from the fire-god Mauike the secret of fire — winning the fire hidden in the wood (the au and other fire-yielding trees) after a wrestling-contest with the fire-god, whom he overcomes; thereby fire is brought to mankind." },
+      { "typeStatus": "demigod", "era": "mythic-prehistoric", "eraOrdering": 2, "startEvent": "snaring-of-the-sun-ra", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)" }, { "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 41–45" }], "notes": "Maui snares the sun Ra with cords (a net of ropes) to slow its course across the sky and so lengthen the day for the good of men." }
+    ],
+    "domains": [
+      { "sphereId": "fire-bringing", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III" }] },
+      { "sphereId": "the-sun", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)" }] },
+      { "sphereId": "trickster-culture-hero", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 41–53" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_maui_wrest_fire_from_mauike", "name": "wrest the secret of fire from the fire-god Mauike", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III, pp. 51–63" }], "notes": "Descending to Avaiki he overcomes the fire-god Mauike and carries off fire, lodging it in the fire-trees from which men thereafter draw it by friction." },
+      { "id": "mangaian_maui_snare_the_sun", "name": "snare the sun to lengthen the day", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)" }], "notes": "He catches the sun Ra in a noose of cords and beats it until it agrees to move more slowly, giving men longer days." }
+    ],
+    "materialCulture": [
+      { "id": "mangaian_maui_fire_from_mauike", "name": "the fire won from Mauike", "kind": "elemental-boon", "role": "the fire that Maui wrests from the fire-god Mauike in Avaiki and gives to mankind, hidden thereafter in the fire-yielding trees", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III, pp. 51–63" }] },
+      { "id": "mangaian_maui_sun_snare", "name": "the snare of cords for the sun", "kind": "tool", "role": "the noose / net of ropes with which Maui catches and holds the sun Ra to compel it to slow its course", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Maui, the youngest of the brothers and son of Ru and Buataranga, wrests fire from the fire-god Mauike in Avaiki and snares the sun Ra to lengthen the day.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. III 'The story of Maui', pp. 51–63" }], "weight": "primary" },
+      { "claim": "In the Mangaian (and wider Cook Islands) version Maui kills / overcomes the fire-god and obtains fire for mankind.", "citations": [{ "kind": "secondary", "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 41–53" }], "weight": "high" }
+    ],
+    "notes": "The Mangaian Maui (Gill 1876): demigod fire-bringer and sun-snarer, son of Ru (supporter of the heavens) and Buataranga (guardian of the lower world), who wrests fire from Mauike. SOLITARY: his parents Ru and Buataranga and his brothers are named by Gill but are not authored in this batch, so no within-batch kin edge is wired; the parentage is recorded here for the record (Gill 1876, Ch. III)."
+  },
+  {
+    "id": "mangaian_miru",
+    "name": {
+      "primary": "Miru",
+      "alt": ["Miru", "Miru-kura", "Miru the Ruddy"],
+      "transliterations": {
+        "mangaian": "Miru / Miru-kura",
+        "etymology": "Mangaian Miru, by-named Miru-kura ('Miru the red/ruddy', kura 'red'), her face reddened by the heat of her oven; the hag of Avaiki who receives and cooks the souls of the dead."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mangaian",
+    "primaryTradition": "Mangaian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "mistress-of-nether-avaiki-the-oven-of-the-dead", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX 'The spirit-world', pp. 152–171 (Miru and the ovens of Avaiki)" }], "notes": "The dreaded hag of the nether part of Avaiki who receives the souls of the (common) dead: she stupefies them with her intoxicating kava and then cooks and eats them in her great oven. Her face is red from the heat of her oven, whence Miru-kura, 'Miru the red'." }
+    ],
+    "domains": [
+      { "sphereId": "the-dead-and-the-oven-of-souls", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171" }] },
+      { "sphereId": "underworld-avaiki", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX" }] }
+    ],
+    "faculties": [
+      { "id": "mangaian_miru_stupefy_souls_with_kava", "name": "stupefy the souls of the dead with kava", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171" }], "notes": "She gives the arriving souls her strong kava to drink, robbing them of sense before the oven." },
+      { "id": "mangaian_miru_cook_souls_in_her_oven", "name": "cook and devour the souls of the dead in her oven", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171" }], "notes": "The stupefied souls are baked in her oven (itself called Avaiki) and consumed; the fate of the common dead in Mangaian belief." }
+    ],
+    "materialCulture": [
+      { "id": "mangaian_miru_oven_of_souls", "name": "the oven of Miru (the oven of the dead)", "kind": "instrument-of-fate", "role": "the great earth-oven in nether Avaiki in which Miru bakes the souls of the dead", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171" }] },
+      { "id": "mangaian_miru_kava_bowl", "name": "Miru's bowl of kava", "kind": "ritual-vessel", "role": "the intoxicating kava with which Miru stupefies the souls of the dead before the oven", "sources": [{ "kind": "primary", "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171" }] }
+    ],
+    "relations": [],
+    "sources": [
+      { "claim": "Miru (Miru-kura, 'the red'), the hag of nether Avaiki, receives the souls of the dead, stupefies them with kava, and cooks them in her oven.", "citations": [{ "kind": "primary", "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. IX 'The spirit-world', pp. 152–171" }], "weight": "primary" },
+      { "claim": "Miru is the red-faced underworld goddess of Mangaia whose daughters are the Tapairu and whose oven consumes the common dead.", "citations": [{ "kind": "secondary", "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Miru'" }], "weight": "high" }
+    ],
+    "notes": "The red hag of Avaiki who cooks the souls of the dead (Gill 1876). Her daughters are the beautiful Tapairu (cited, not authored). SOLITARY: Gill gives Miru no parentage, spouse, or sibling — only her daughters the Tapairu and her function over the dead; her ancestry is therefore not wired (Gill 1876, Ch. IX)."
+  }
+]
+```
+
+SOLITARY: mangaian_vari_ma_te_takere — the self-existent primal mother, glossed by Gill as 'the very beginning', has by definition no parent, spouse, or sibling; she stands at the apex/root of the Mangaian genealogy and her descendants (Vatea, Tinirau, and through them the whole pantheon) are wired (William Wyatt Gill, Myths and Songs from the South Pacific, 1876, Ch. I 'Creation').
+SOLITARY: mangaian_ina — Gill's Mangaian account fixes no divine parentage, spouse, or sibling for Ina/Ina-moe-aitu within the cosmogonic genealogy; the Tuna-eel tale supplies only the maiden and her god-lover Tuna (not authored). Her kin are therefore left unwired (Gill 1876, Ch. V).
+SOLITARY: mangaian_maui — the Mangaian Maui's parents Ru (supporter of the heavens) and Buataranga (guardian of the lower world), and his elder brothers, are named by Gill but are not authored in this batch; no within-batch kin edge is wired, the parentage being recorded in his notes (Gill 1876, Ch. III 'The story of Maui').
+SOLITARY: mangaian_miru — Gill gives Miru (Miru-kura) of Avaiki no parent, spouse, or sibling, only her daughters the Tapairu (not authored) and her office over the souls of the dead; her ancestry is therefore left unwired (Gill 1876, Ch. IX 'The spirit-world').

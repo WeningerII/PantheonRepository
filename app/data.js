@@ -53350,6 +53350,174 @@ const NEW_FIGURES = [
   "notes": "The earth-diver/earth-spreader creatrix; her epithet links her to weaving (she was let down on a spun thread in some versions). 'Deak Parujar' is associated with spinning/weaving skill."
  },
  {
+  "id": "baule_anangama",
+  "name": {
+   "primary": "the Creator who Ordered the World",
+   "alt": [
+    "Anangama",
+    "Anangaman",
+    "Anangaman Nyamien",
+    "Annangaman"
+   ],
+   "transliterations": {
+    "baule": "Anangaman",
+    "etymology": "Baule divine name of the supreme creator of the firmament; attested in the formula 'Anangaman Nyamien' (God of the heaven/firmament) and 'Anangaman Boli-Alliè', glossed 'God the creator of the universe'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Baule",
+  "primaryTradition": "Baule",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "Baule traditional religion; continuing"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "Baule traditional religion; continuing",
+    "eraOrdering": 0,
+    "startEvent": "Named in Baule cosmology as Anangaman Nyamien, the god of the firmament — the creator who set in place and ordered the three-tiered Baule universe (firmament; the terrestrial world of living beings and spirits; and the otherworld, blolo, of the dead).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' (Baoulé cosmology: the universe of three realities, the firmament being the domain of God, Anangaman Nyamien)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Vincent Guerry, Life with the Baoulé (Three Continents Press, 1975; orig. La Vie quotidienne dans un village Baoulé, INADES, 1972)"
+     }
+    ],
+    "notes": "Continuing cult: Baule traditional religion persists into the present alongside Christianity and Islam."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-ordering-of-the-world",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anangaman",
+     "script": "Latin (Baule orthography)",
+     "rom": "Anangaman (Boli-Alliè) — 'God the creator of the universe'"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rezo-Ivoire.net, 'Origine des Baoulé Agba' / 'Les valeurs culturelles ancestrales … chez les Baoulé' (the formula 'Anangaman Boli-Alliè' = 'Dieu le créateur de l'univers')"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-creator",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anangaman Nyamien",
+     "script": "Latin (Baule orthography)",
+     "rom": "Anangaman Nyamien — the god of the firmament/heaven"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' (the firmament is the domain of God, Anangaman Nyamien; the creator god, intangible and inaccessible)"
+     }
+    ]
+   },
+   {
+    "sphereId": "souls-of-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "blôlô",
+     "script": "Latin (Baule orthography)",
+     "rom": "blolo — the otherworld whence souls come at birth and whither they return at death"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "baoule.ci, 'Étude approfondie sur les funérailles et la mort en pays Baoulé' (the real world is the opposite of the spirit world, blôlô, whence souls come at birth and to which they return at death); Vincent Guerry, Life with the Baoulé (1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "order_the_created_world",
+    "name": "to create and set in order the world and its three tiers",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As Anangaman Nyamien, the creator who ordered the firmament, the terrestrial world of living beings and spirits, and the otherworld (blolo). 'Anangaman Boli-Alliè' is glossed 'God the creator of the universe'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' and 'Les valeurs culturelles ancestrales … chez les Baoulé'; Vincent Guerry, Life with the Baoulé (1975)"
+     }
+    ]
+   },
+   {
+    "id": "receive_the_souls_of_the_dead",
+    "name": "to receive the souls of the dead returning from the world",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Baule eschatology turns on the immortality of the soul: souls issue from the otherworld (blolo) at birth and return at death. The creator-god of the firmament stands at the head of this cycle between worlds; in some accounts he is figured as keeping the threshold between the living world and the world of the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "baoule.ci, 'Étude approfondie sur les funérailles et la mort en pays Baoulé' (immortality of the soul; souls come from and return to blôlô); Susan Mullin Vogel, Baule: African Art, Western Eyes (1997)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "subordinate-to",
+    "personId": "baule_nyamien",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' (the supreme creator of the firmament is named 'Anangaman Nyamien'; in the ethnographic framing, Anangaman is the active creator-aspect set beneath the remote, intangible high god Nyamien); Vincent Guerry, Life with the Baoulé (1975)"
+     }
+    ],
+    "notes": "Directed (non-symmetric): Anangaman is bound to Nyamien — in the compound divine name 'Anangaman Nyamien' the two may be read as one supreme creator, and in the scholarly framing Anangaman is the creator-demiurge who ordered the world below the remote high god. No reciprocal required."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Anangaman (Anangaman Nyamien), in Baule religion, is the named creator-god of the firmament — the active creator who ordered the three-tiered Baule cosmos and at whose head stands the cycle by which souls issue from and return to the otherworld (blolo); the formula 'Anangaman Boli-Alliè' is glossed 'God the creator of the universe'. He is bound to the remote supreme sky-god Nyamien, with whom he is sometimes identified as a single compound name and sometimes distinguished as the creator-demiurge below him.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Vincent Guerry, Life with the Baoulé (Three Continents Press, 1975; orig. La Vie quotidienne dans un village Baoulé, Abidjan: INADES, 1972)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Susan Mullin Vogel, Baule: African Art, Western Eyes (Yale University Press / Yale University Art Gallery, 1997)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Rezo-Ivoire.net, 'Croyance en pays Baoulé' and 'Les valeurs culturelles ancestrales et les interpénétrations culturelles chez les Baoulé' (Anangaman Nyamien, god of the firmament; 'Anangaman Boli-Alliè' = 'Dieu le créateur de l'univers')"
+     },
+     {
+      "kind": "secondary",
+      "reference": "baoule.ci, 'Étude approfondie sur les funérailles et la mort en pays Baoulé de Côte d'Ivoire' (Baoulé eschatology: souls come from and return to the otherworld blôlô; immortality of the soul)"
+     }
+    ],
+    "weight": "medium"
+   }
+  ],
+  "notes": "Entered as a deity (the Baule creator-god of the firmament, 'Anangaman Nyamien'). IMPORTANT INTERPRETIVE NOTE: the Baule sources treat 'Anangaman' and 'Nyamien' both as a single compound name for the one supreme creator AND (in the ethnographic/scholarly framing after Guerry and Étienne) as a creator-demiurge aspect set just below the remote, intangible high god Nyamien (baule_nyamien) — hence the directed subordinate-to relation rather than an identity merge. The Baule are an Akan people, so the creator is cognate with the wider Akan high god Nyame. 'blolo' (otherworld), 'asye usu' (bush spirits) and 'amwin/amuin' (power-beings) are CLASSES of spirits, not individuated figures, and are not authored. Principal scholarship: Guerry (1975); Vogel (1997); Étienne."
+ },
+ {
   "id": "baule_asie",
   "name": {
    "primary": "Earth God",
@@ -80877,6 +81045,1165 @@ const NEW_FIGURES = [
   "notes": "Spirit-class creator god (classed as deity). 'Amaka' ('grandfather') is also the respectful address for the bear; here it denotes the creator. The seve- root underlies sevek/seven, the Evenki word for spirit-helpers and idols, marking Seveki as the source of benevolent spirit-power."
  },
  {
+  "id": "ewe_afa",
+  "name": {
+   "primary": "Vodu of Divination and Destiny",
+   "alt": [
+    "Afa",
+    "Fa",
+    "Fá"
+   ],
+   "transliterations": {
+    "ewe": "Afa",
+    "etymology": "Ewe Afa (Fon Fa), the vodu and oracle of divination and of personal destiny — the Gbe form of the Yoruba Ifa. The diviner reads a person's destiny-sign (kpoli/dzogbe) from the falls of the palm-kernels or the divining chain."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Stands from the first as the oracle of destiny — the knowledge, kept in heaven, of the fate Mawu allots each person before birth, set out in the sixteen principal signs (du) and their combinations and made known on earth through the diviner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961): Fa/Ifa the system of divination and the god of destiny among the Ewe, Fon and Yoruba."
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: the cult of Fa, the destiny-oracle, whose power is held to derive from the female sky-spirit Gbadu and whose messages Legba alone interprets."
+     }
+    ],
+    "notes": "Afa is not consistently one of the begotten sons of Mawu-Lisa; it is the oracle/vodu of fate (in Fon theology its source is the female spirit Gbadu set by Mawu in the palm-tree). Hence the SOLITARY flag for genealogy."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Afa",
+     "script": "Latn",
+     "rom": "Afa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961): Afa/Fa divination among the Ewe of Togo and the Fon."
+     }
+    ]
+   },
+   {
+    "sphereId": "destiny-and-fate",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kpoli",
+     "script": "Latn",
+     "rom": "kpoli"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Fa as a person's destiny, the kpoli/du read in the divination."
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-knowledge-and-counsel",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Fa as the body of oracular wisdom guiding human action."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-afa-reveal-destiny",
+    "name": "Reveal the destiny (kpoli) that Mawu has set for each person",
+    "inheritability": "none",
+    "notes": "Afa discloses the fate fixed for the individual before birth — the destiny-sign read in the divination; to know one's Afa is to know one's proper path. Power of the oracle-vodu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, Fa and personal destiny."
+     }
+    ]
+   },
+   {
+    "id": "ewe-afa-speak-through-the-signs",
+    "name": "Speak through the sixteen signs (du) and their two hundred and fifty-six combinations",
+    "inheritability": "none",
+    "notes": "The oracle answers in the binary figures cast with the palm-kernels or the divining chain: sixteen principal du, multiplying to 256, each carrying its verses and prescriptions, interpreted by the trained diviner.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the sixteen-fold Fa/Ifa system and its figures."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-afa-palm-kernels",
+    "name": "the sixteen sacred palm-kernels (deki)",
+    "kind": "implement",
+    "role": "The diviner passes sixteen palm-kernels rapidly from hand to hand and, by whether one or two remain, marks the strokes that build the oracular figure — the central instrument of Afa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the palm-nuts of Fa/Ifa divination."
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the casting of the palm-kernels in Fa."
+     }
+    ]
+   },
+   {
+    "id": "ewe-afa-divining-chain",
+    "name": "the divining chain (afakala / agumaga)",
+    "kind": "implement",
+    "role": "A chain strung with four or eight half-seeds or shells, cast on the ground so the figure is read at a single throw — the quicker divining instrument of the Afa priest.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the divining chain of the Fa/Ifa diviner."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Afa (Fon Fa; the Gbe form of Yoruba Ifa) is the Ewe vodu and oracle of divination and of personal destiny, made known through the sixteen signs (du) cast with the sacred palm-kernels or the divining chain.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), Fa/Afa divination."
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the cult of Fa."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vodu of divination and destiny — the Fa/Ifa oracle. The descriptive title leads name.primary; the Ewe name Afa and the Fon Fa stand in alt/etymology. Its messages are interpreted by Legba (see ewe_legba 'associate of' edge); in Fon theology its power-source is the female spirit Gbadu set by Mawu in the palm-tree. Not a consistently-begotten son of Mawu-Lisa — see SOLITARY flag. Typed deity. Documented for the Ewe of Togo by Parrinder (1961) and for the cognate Fon by Herskovits (1938)."
+ },
+ {
+  "id": "ewe_age",
+  "name": {
+   "primary": "Vodu of the Bush and the Hunt",
+   "alt": [
+    "Age",
+    "Age"
+   ],
+   "transliterations": {
+    "ewe": "Age",
+    "etymology": "Gbe Age (Aje), the vodu of the wild bush, the hunt and the beasts; given in the cosmogony command of the animals and birds and set to live in the forest as a hunter. Borne in common by Ewe and Fon."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born of Mawu-Lisa and given command of the wild animals and the birds; he is told to dwell in the bush, away from the towns, as the hunter and master of the untamed land",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Age, son of Mawu-Lisa, given the animals and birds and set to live in the bush as a hunter."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Age the vodu of the wild and of the hunt among the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Lord of all that lies outside the cleared and settled land; hunters are his people and seek his leave before the chase."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wilderness-and-the-bush",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age set to dwell in and rule the bush."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hunt",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age the hunter, patron of hunters."
+     }
+    ]
+   },
+   {
+    "sphereId": "wild-animals-and-game",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Age given command of the animals and birds."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-age-command-the-beasts",
+    "name": "Command the wild animals and the birds of the bush",
+    "inheritability": "none",
+    "notes": "At the apportioning of the world Mawu-Lisa gives Age authority over all wild creatures; the game belong to him and are loosed or withheld at his will. Power of the deity, not heritable.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the giving of the animals to Age."
+     }
+    ]
+   },
+   {
+    "id": "ewe-age-grant-the-hunt",
+    "name": "Grant or deny success to the hunter in the bush",
+    "inheritability": "none",
+    "notes": "As the master-hunter dwelling in the forest, he gives or withholds the kill; hunters propitiate him before entering his domain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age the patron of hunters."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-age-hunters-shrine",
+    "name": "the hunters' bush-shrine of Age",
+    "kind": "site",
+    "role": "Hunters keep a shrine to Age at the bush-edge, where they make offering before and after the chase to the lord of the wild animals; the trophies and the first of the kill are his due.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the cult of Age among hunters."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age and Gu among the brothers born of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Age and Sogbo among the great vodu children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Age (Aje) is the Gbe vodu of the wild bush, the hunt and the wild animals — a son of Mawu-Lisa given command of the beasts and birds and set to dwell in the forest as the hunter.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the vodu Age."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vodu of the bush, the hunt and the wild animals; son of Mawu-Lisa and brother of the other great vodu. The English descriptor leads name.primary; the Gbe name Age stands in alt/etymology. Typed deity. Documented for the Ewe-Fon complex by Herskovits (1938); the cult is that of hunters at the bush-edge."
+ },
+ {
+  "id": "ewe_avlekete",
+  "name": {
+   "primary": "Vodu of the Sea and Shore",
+   "alt": [
+    "Avlekete",
+    "Avrekete",
+    "Aflekete"
+   ],
+   "transliterations": {
+    "ewe": "Avlekete",
+    "etymology": "Gbe Avlekete (Avrekete), a vodu of the sea and the lagoon-shore, of the water-pantheon; a town by the saltwater lagoon east of Whydah/Ouidah bears the name. Reckoned variously the consort/younger power of the sea-deity Agbe or a junior of the thunderer Sogbo."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Belongs from the first to the water-pantheon, dwelling in the sea and along the lagoon-shore; she guards those who go upon the water and the treasures of the deep, and gives abundance from the sea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Avlekete among the vodu of the sea-pantheon ruled by Agbe and Naete."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on the sea- and lagoon-gods of the coast (Hu/Wu)."
+     }
+    ],
+    "notes": "Parentage is given variously — junior of the sea-deity Agbe and his sister-wife Naete, or of the thunderer Sogbo — and neither parent is authored in this batch; recorded with a SOLITARY flag."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sea-and-ocean",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Avlekete a vodu of the sea-pantheon."
+     }
+    ]
+   },
+   {
+    "sphereId": "lagoon-and-shore",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Avlekete",
+     "script": "Latn",
+     "rom": "Avlekete"
+    },
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): the lagoon-shore vodu Avlekete and the place of that name by the Whydah lagoon."
+     }
+    ]
+   },
+   {
+    "sphereId": "abundance-and-protection-of-seafarers",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: the sea-vodu as guardians of those on the water and givers of the sea's bounty."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-avlekete-rule-the-shore-waters",
+    "name": "Rule the lagoon-shore and the near sea, guarding seafarers and fishers",
+    "inheritability": "none",
+    "notes": "As a vodu of the water-pantheon she holds the shore-waters and the lagoon, protecting those who cross them and guarding the treasures of the sea. Power of the deity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the sea-pantheon and its vodu."
+     }
+    ]
+   },
+   {
+    "id": "ewe-avlekete-give-the-seas-abundance",
+    "name": "Give the abundance of the sea — fish, salt and the gifts of the water",
+    "inheritability": "none",
+    "notes": "She bestows the bounty drawn from sea and lagoon, the catch and the wealth of the shore.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005), the gifts of the sea-vodu."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-avlekete-lagoon-shore-shrine",
+    "name": "the lagoon-shore shrine of Avlekete",
+    "kind": "site",
+    "role": "Her shrines stand by the saltwater lagoon and the strand (the town of Avlekete east of Whydah is named for her), where offerings are made for safe passage and the sea's bounty.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): the place and cult of Avlekete on the Whydah lagoon."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Avlekete (Avrekete) is a Gbe vodu of the sea and the lagoon-shore, of the water-pantheon, guardian of seafarers and giver of the sea's abundance, whose name is borne by a town on the Whydah lagoon.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the sea-pantheon."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005), Avlekete."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "A vodu of the sea and lagoon-shore of the water-pantheon. The descriptive title leads name.primary; the Gbe name Avlekete (Avrekete) stands in alt/etymology. Sex recorded female (the original West African spirit; some Diaspora traditions make Avrekete male). Parentage variously reported (junior of Agbe/Naete or of Sogbo), neither parent authored here — see SOLITARY flag. Typed deity. Authored as firmly attested per the task option; documented for the Gbe complex by Herskovits (1938) with the coastal sea-cult noted by Ellis (1890)."
+ },
+ {
+  "id": "ewe_da",
+  "name": {
+   "primary": "Rainbow-Serpent that Girdles the World",
+   "alt": [
+    "Da",
+    "Dã",
+    "Dan",
+    "Aido-Hwedo",
+    "Ayido Hwedo",
+    "Anyi-eʋo",
+    "Anyiewo"
+   ],
+   "transliterations": {
+    "ewe": "Da",
+    "anlo_ewe": "Anyi-eʋo",
+    "etymology": "Gbe Da/Dã (Fon Dã), 'serpent,' the cosmic snake; the world-serpent is Aido-Hwedo (Ayido Hwedo). Among the Ewe the rainbow-serpent is Anyi-eʋo (Anyiewo). Da denotes both the snake and the principle of sinuous motion, and so of wealth (the coil of cowries)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "dual",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Exists already at the making of the world as the great primordial serpent; he carries the creator through the cosmos in his mouth, and where the pair rest his droppings become the mountains, his winding the river-beds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Aido-Hwedo the serpent who bears Mawu-Lisa about in the work of creation; the mountains are his excreta, full of riches."
+     }
+    ],
+    "notes": "The serpent is pre-existent and is not numbered among the begotten children of Mawu-Lisa; he is the helper and vehicle of creation (hence the SOLITARY flag)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "When the finished earth proves too heavy, he is set to coil beneath it and around it, resting in the sea and upholding the world on his coils; his arching is the rainbow in the sky and his sign is the snake biting its own tail",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Aido-Hwedo coiled in many thousands of coils beneath the earth, in the sea, supporting it; the rainbow is his celestial form."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890): the Ewe rainbow-serpent Anyi-eʋo, whose temples are painted in rainbow stripes and who drinks from the sky."
+     }
+    ],
+    "notes": "He feeds on iron, and when at the last the iron fails and he gnaws his own tail, his shifting will let the over-burdened earth fall into the sea — a Gbe eschatology."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cosmic-serpent-and-world-support",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aido-Hwedo",
+     "script": "Latn",
+     "rom": "Aido-Hwedo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: the serpent coiled beneath and around the world, holding it up."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-rainbow",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anyi-eʋo",
+     "script": "Latn",
+     "rom": "Anyi-eʋo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890): the Ewe rainbow-serpent Anyi-eʋo arching from earth to sky."
+     }
+    ]
+   },
+   {
+    "sphereId": "motion-water-and-wealth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: the serpent as the principle of sinuous motion and as the giver of riches (the mountains of minerals, the coil of cowries)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-da-bear-the-creator-and-shape-the-land",
+    "name": "Carry the creator through the cosmos and shape the contours of the land",
+    "inheritability": "none",
+    "notes": "He bears Mawu-Lisa about in his mouth during the making of the world; his winding traces the river-beds and his droppings, left where they rest, become the mineral-rich mountains. The cosmogonic office is his alone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the serpent and the shaping of the earth."
+     }
+    ]
+   },
+   {
+    "id": "ewe-da-uphold-the-world",
+    "name": "Coil beneath and around the world and uphold it in the sea",
+    "inheritability": "none",
+    "notes": "The finished earth being too heavy, he lies coiled under and about it, resting in the encircling waters, bearing it on his thousands of coils so it does not sink.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, Aido-Hwedo supporting the world."
+     }
+    ]
+   },
+   {
+    "id": "ewe-da-arch-as-rainbow-and-drink-the-sky",
+    "name": "Arch across the sky as the rainbow and draw up the waters",
+    "inheritability": "none",
+    "notes": "His sky-form is the rainbow; the Ewe say the serpent rears its head into the sky to drink from Mawu's store of water, and the moisture it spills falls as rain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the rainbow-serpent Anyi-eʋo drinking from the sky."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-da-rainbow-striped-temple",
+    "name": "rainbow-striped serpent-temple",
+    "kind": "site",
+    "role": "Among the (western) Ewe the temples of the rainbow-serpent Anyi-eʋo are painted in stripes of prismatic colour, with a drawing of the snake set amid the bands — the built sign of the rainbow-snake.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the rainbow-painted temples of the serpent."
+     }
+    ]
+   },
+   {
+    "id": "ewe-da-coiled-serpent-pot",
+    "name": "the coiled clay serpent on the offering-pot",
+    "kind": "idol",
+    "role": "A piece of pottery is dedicated to the serpent: a crude clay snake modelled coiled around a shallow earthen pot or calabash, with small red feathers stuck on to represent its horns — the cult-image of Anyi-eʋo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the clay serpent coiled round the pot, feathered for horns."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Da/Dã (the world-serpent Aido-Hwedo; the Ewe rainbow-serpent Anyi-eʋo) is the great primordial snake who bears the creator through the cosmos, shapes the land, and then coils beneath and around the world to uphold it, resting in the sea; his arc in the sky is the rainbow, and he embodies motion and wealth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, Aido-Hwedo the cosmic serpent."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the Ewe rainbow-serpent Anyi-eʋo."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The rainbow-serpent who girdles and upholds the world, coiled in the sea — the principle of motion and wealth. The descriptive title leads name.primary; the Gbe name Da/Dã, the world-serpent name Aido-Hwedo and the Ewe rainbow-serpent name Anyi-eʋo stand in alt/etymology. Sex recorded 'dual': the serpent-power is paired/androgynous in the tradition (the Fon couple it as Aido-Hwedo and its female counterpart). Pre-existent cosmic serpent, NOT a begotten child of Mawu-Lisa — see SOLITARY flag. Typed deity. Documented for the Ewe by Ellis (1890) and for the cognate Fon by Herskovits (1938); compare the corpus figure fon_dan."
+ },
+ {
+  "id": "ewe_gu",
+  "name": {
+   "primary": "Vodu of Iron and War",
+   "alt": [
+    "Gu",
+    "Gun"
+   ],
+   "transliterations": {
+    "ewe": "Gu",
+    "etymology": "Gbe Gu (Fon Gu/Gun), the vodu of iron and war, cognate of the Yoruba Ogun; the name denotes both the god and worked iron itself. Borne in common by Ewe, Fon and Aja."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born of Mawu-Lisa and made the vodu of iron; in the cosmogony he is the divine smith sent down to clear the bush, open the roads, and put the unfinished world in order with the cutting edge of metal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Gu, child of Mawu-Lisa, the iron-vodu who makes the world habitable; his body is iron and his head a cutlass."
+     }
+    ],
+    "notes": "In the Dahomean myth Gu is the instrument of Mawu-Lisa for finishing creation: it is by iron that the forest is cleared and men are given tools and weapons."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "Becomes the patron of smiths, warriors, hunters and all who use the blade; the first smithy and the forge are his, and oaths and war are sworn upon his iron",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), the iron- and war-god Gu, counterpart of the Yoruba Ogun."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on the god of war and iron."
+     }
+    ],
+    "notes": "Cognate and functional twin of the Yoruba Ogun; the smith's craft is held to descend from him."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "iron-and-metalworking",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gu",
+     "script": "Latn",
+     "rom": "Gu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu the vodu of iron, patron of the smiths."
+     }
+    ]
+   },
+   {
+    "sphereId": "war-and-weapons",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961): Gu the war-god, cognate of Ogun."
+     }
+    ]
+   },
+   {
+    "sphereId": "crafts-and-tools",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu gives men the cutting tools of farming, hunting and building."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-gu-forge-and-give-iron",
+    "name": "Forge iron and bestow on humankind the blade, the tool and the weapon",
+    "inheritability": "none",
+    "notes": "Gu is the divine smith; from him come the cutlass, the hoe, the axe and the spear, and the craft of the forge itself. The power is the deity's, not a heritable gift.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the iron-vodu and the institution of smithing."
+     }
+    ]
+   },
+   {
+    "id": "ewe-gu-clear-the-bush-open-the-roads",
+    "name": "Clear the primordial bush and open the roads, making the world fit for men",
+    "inheritability": "none",
+    "notes": "In the cosmogony the iron-vodu is sent to cut back the wild and lay open the paths; the order of the inhabited world is his work with the edge of metal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu as the agent by which Mawu-Lisa completes and orders creation."
+     }
+    ]
+   },
+   {
+    "id": "ewe-gu-give-victory-in-war",
+    "name": "Give victory in war and strength to the warrior's arm",
+    "inheritability": "none",
+    "notes": "As war-vodu, cognate of Ogun, he is invoked by warriors and his iron carries the oath; success in battle is sought from him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the war-god Gu."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-gu-cutlass",
+    "name": "cutlass / sword of Gu",
+    "kind": "weapon",
+    "role": "The cutting blade is the very body and emblem of the iron-vodu — in the myth his head is itself a cutlass; the sword and machete are his sign and the smith's chief work.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the iron-vodu embodied in worked iron and the cutlass (cf. the corpus figure fon_gu, iron-and-cutlass)."
+     }
+    ]
+   },
+   {
+    "id": "ewe-gu-forge-and-iron-assemblage",
+    "name": "the smith's forge and iron cult-assemblage",
+    "kind": "site",
+    "role": "The first smithy is Gu's; his shrines centre on worked-iron assemblages (the asen-like iron objects), bundles of tools and weapons set up as the seat of the iron-vodu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the iron cult-objects of Gu."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu and Age (iron and the hunt) among the brothers born of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch; the hunter Age depends on the iron of Gu for his weapons."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Gu and Sogbo among the great vodu children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Gu is the Gbe vodu of iron, war, smiths and tools — the divine smith and cognate of the Yoruba Ogun — a child of Mawu-Lisa who in the cosmogony clears the bush and gives mankind the blade.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the iron-vodu Gu."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), Gu the iron- and war-god, counterpart of Ogun."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Vodu of iron, war and smithing; child of Mawu-Lisa and brother of the other great vodu. The English descriptor leads name.primary; the Gbe name Gu stands in alt/term. Cognate of the Yoruba Ogun and the corpus figure fon_gu. Typed deity. Documented for the Ewe by Ellis (1890) and Parrinder (1961) and for the cognate Fon by Herskovits (1938)."
+ },
+ {
+  "id": "ewe_legba",
+  "name": {
+   "primary": "Trickster-Linguist of the Crossroads",
+   "alt": [
+    "Legba",
+    "Aflakete",
+    "Alegba",
+    "Egbo"
+   ],
+   "transliterations": {
+    "ewe": "Legba",
+    "anlo_ewe": "Alegba",
+    "etymology": "Gbe Legba (Anlo-Ewe Alegba), the youngest son of Mawu-Lisa and messenger of the vodu. The by-name Aflakete is glossed 'I have tricked you,' marking his trickster character. Guardian of thresholds and crossroads, the linguist who carries speech between gods and men."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born as the youngest of the children of Mawu-Lisa; alone of the brood he is given no single province of nature but is made the linguist and messenger of the gods, knowing all their tongues",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2: Legba the youngest son of Mawu-Lisa, made linguist and messenger of the vodu and given the speech of all of them."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Legba the youngest, the linguist whom even the other gods must address first."
+     }
+    ],
+    "notes": "Because he alone knows the languages of all the vodu and of men, every approach to Mawu — even by the other gods — must pass through him; he carries every message between heaven and earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "Takes his post at the threshold, the gate and the crossroads as guardian and gatekeeper, the trickster Aflakete who can open or confuse the way between the worlds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on Legba/Elegba the phallic guardian-god set before house and town."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), on Alegba/Legba in Anlo-Ewe practice as the opener of the way."
+     }
+    ],
+    "notes": "His image of mound or post stands at every door, village-gate and fork of the road; nothing can be obtained from the other vodu unless Legba is first satisfied."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "messengers-and-divine-speech",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba the linguist and messenger of the gods."
+     }
+    ]
+   },
+   {
+    "sphereId": "thresholds-and-crossroads",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890): the guardian-god set at the doorway and the crossroad."
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-and-chance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aflakete",
+     "script": "Latn",
+     "rom": "Aflakete"
+    },
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Legba/Aflakete the trickster, 'I have tricked you.'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-legba-translate-between-gods-and-men",
+    "name": "Carry and translate speech between the vodu and humankind, knowing every tongue",
+    "inheritability": "none",
+    "notes": "As linguist of the gods he alone understands and conveys the languages of all the vodu and of men; every prayer and every divine answer passes through him. The office is his alone.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, Legba the linguist and intermediary."
+     }
+    ]
+   },
+   {
+    "id": "ewe-legba-guard-and-open-the-way",
+    "name": "Guard the threshold and open or close the way between the worlds",
+    "inheritability": "none",
+    "notes": "Set at door, gate and crossroads, he opens the path to the other vodu for those who satisfy him and bars or confounds it for those who do not; the rite begins by 'feeding' Legba.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the guardian at the doorway and crossroad."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), Alegba the opener of the way."
+     }
+    ]
+   },
+   {
+    "id": "ewe-legba-trick-and-confound",
+    "name": "Trick, confuse and overturn — the play of the crossroads",
+    "inheritability": "none",
+    "notes": "The by-name Aflakete, 'I have tricked you,' marks his character: he sows confusion, tests, and reverses, the unpredictable element at every passage and choice.",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Tricksters: African Tricksters,\" Encyclopedia of Religion (2005): Legba/Aflakete the Gbe trickster."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-legba-crossroad-shrine",
+    "name": "the Legba mound at the door and crossroad",
+    "kind": "site",
+    "role": "A mound, cone or guardian-figure of Legba/Alegba is set at the entrance of every house, the village-gate and the fork of the road; it is the first to receive offering, the seat from which he watches and opens the way.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the Legba figures at doorways and crossroads."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), Anlo-Ewe Alegba shrines."
+     }
+    ]
+   },
+   {
+    "id": "ewe-legba-phallic-post",
+    "name": "the phallic stick / post of Legba",
+    "kind": "symbol",
+    "role": "Legba's image is markedly phallic — a stick or erect post — standing before the dwelling as the sign of the generative, boundary-crossing power that 'reshapes the world' at every passage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the phallic guardian-image."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Legba's phallic image before Fon and Ewe dwellings."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba the youngest, Sogbo the thunderer, both children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   },
+   {
+    "kind": "associate of",
+    "personId": "ewe_afa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba is the indispensable interpreter of the Fa oracle, alone able to translate the messages of Fa/Gbadu, which are reached through the palm-kernels."
+     }
+    ],
+    "notes": "Non-symmetric: Legba is the interpreter and opener of the Fa oracle (ewe_afa); no reciprocal required. The converse is noted on ewe_afa."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Legba (Anlo-Ewe Alegba; by-name Aflakete 'I have tricked you') is the youngest son of Mawu-Lisa, the trickster-linguist and messenger of the vodu who knows all their tongues, guardian of thresholds and crossroads, through whom alone humans and even the other gods may reach Mawu.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, Legba the linguist."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), the phallic guardian-god of doorways and crossroads."
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Rosenthal, Possession, Ecstasy, and Law in Ewe Voodoo (1998), Alegba in Anlo-Ewe practice."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The youngest son of Mawu-Lisa: trickster-linguist, messenger, gatekeeper of the crossroads and carrier of speech between humans and the vodu. The descriptive title leads name.primary; the Gbe name Legba, the Anlo form Alegba and the trickster by-name Aflakete stand in alt/etymology. Typed deity. Documented for the Ewe by Ellis (1890) and (in Anlo practice) Rosenthal (1998), and for the cognate Fon by Herskovits (1938)."
+ },
+ {
   "id": "ewe_lisa",
   "name": {
    "primary": "Sun Lord of Day",
@@ -81328,6 +82655,237 @@ const NEW_FIGURES = [
   "notes": "Deus otiosus standing behind the creator pair; 'Nana' is an honorific for an aged grandparent/ancestor. Typed deity (primordial)."
  },
  {
+  "id": "ewe_sakpata",
+  "name": {
+   "primary": "Earth Lord of Smallpox",
+   "alt": [
+    "Sakpata",
+    "Sapata",
+    "Anyigbato",
+    "Ainon"
+   ],
+   "transliterations": {
+    "ewe": "Sakpata",
+    "etymology": "Worshipped across the Gbe-speaking peoples (Ewe, Fon, Aja) as Sakpata. Among the Ewe the earth-and-sickness power bears the praise-name Anyigbato, from anyigba 'the earth, the ground' + -to 'owner, master/lord of' — 'Lord of the Earth' (cf. Fon Ainon, Aïnon 'proprietor/owner of the earth')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ewe",
+  "primaryTradition": "Ewe",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "ewe_mawu_lisa"
+  ],
+  "parentRoles": {
+   "ewe_mawu_lisa": "the creator pair (engendering)"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Born of the creator pair Mawu-Lisa as the eldest of their great vodu children; to him is entrusted dominion over the earth, the soil on which humankind lives, and he is set to dwell upon it",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the earth-pantheon: Sakpata the eldest son of Mawu-Lisa, given the earth."
+     },
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): the three pantheons sky, earth (Sakpata) and thunder-sea, the latter two the offspring of Mawu-Lisa."
+     }
+    ],
+    "notes": "Heads the earth-pantheon, the second of the three great Gbe pantheons. In the myth he and his brother Sogbo (the thunder-god, existing ewe_so) contend over the rule of the earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "Becomes the dreaded sender and stayer of smallpox and the eruptive fevers, striking the bodies of the living from the earth and afterwards withdrawing the affliction from those who appease him",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890), on the earth-god and the disease that comes out of the ground."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), on the Gbe earth-and-smallpox vodu Sakpata/Shapata."
+     }
+    ],
+    "notes": "His name is so dangerous it is avoided in speech, the deity being addressed by praise-names; the pox-marks are 'the grains' he sows on the body."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-soil",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "anyigba",
+     "script": "Latn",
+     "rom": "anyigba"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Sakpata as the vodu of the earth, the eldest of Mawu-Lisa's children."
+     }
+    ]
+   },
+   {
+    "sphereId": "smallpox-and-pestilence",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961): the earth-god is also the god of smallpox and contagious disease across the Gbe and Yoruba area."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the disease sent from the ground."
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-affliction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "tertiary",
+      "reference": "\"Fon and Ewe Religion,\" Encyclopedia of Religion, 2nd ed. (2005): Sakpata as both sender of and protector against the pox; the earth-pantheon priests as healers."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ewe-sakpata-rule-the-earth",
+    "name": "Hold dominion over the earth and the soil that bears mankind",
+    "inheritability": "none",
+    "notes": "As the eldest son of Mawu-Lisa he is given the earth itself; the Ewe praise-name Anyigbato, 'Lord of the Earth,' marks this charge. The proprietorship is his alone and not transmitted.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the earth-pantheon and the apportioning of realms among Mawu-Lisa's children."
+     }
+    ]
+   },
+   {
+    "id": "ewe-sakpata-send-and-stay-smallpox",
+    "name": "Send the smallpox and the eruptive fevers, and withdraw them from the appeased",
+    "inheritability": "none",
+    "notes": "The pox is conceived as 'grains' the earth-god sows on the body; he both inflicts and, when propitiated through his priesthood, lifts the affliction. Power of the deity, not heritable.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast (1890), the earth-god and the disease from the ground."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (1961), the smallpox-god Sakpata/Shapata."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ewe-sakpata-raffia-broom",
+    "name": "raffia broom (sweep of the earth-god)",
+    "kind": "implement",
+    "role": "The earth-and-smallpox vodu is served with the raffia broom, with which the pestilence is symbolically swept away from the sufferer and the village; a defining object of his cult.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the cult of the earth-god (cf. the corpus figure fon_sakpata, raffia broom)."
+     }
+    ]
+   },
+   {
+    "id": "ewe-sakpata-spotted-cloth",
+    "name": "red-and-white spotted cloth",
+    "kind": "regalia",
+    "role": "Cloth patterned with spots evoking the marks of the pox is worn by his devotees and dancers, signifying the affliction the earth-god both sends and heals.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the dress and emblems of the Sakpata cult."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Sakpata, Age, Gu and the rest born of Mawu-Lisa as brothers."
+     }
+    ],
+    "notes": "Fellow great vodu born of Mawu-Lisa; reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2, the children of Mawu-Lisa."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Legba the youngest of the same brood of Mawu-Lisa's children."
+     }
+    ],
+    "notes": "Reciprocal within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey (1938), vol. 2: Sakpata (eldest, earth) and Sogbo (thunder) are brothers, sons of Mawu-Lisa, who contend over the rule of the earth."
+     }
+    ],
+    "notes": "Sibling of the existing thunder-god ewe_so (Sogbo/Heviesso); their quarrel over the earth is a stock Gbe myth. RECIPROCAL-NEEDED on ewe_so."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sakpata (Ewe praise-name Anyigbato, 'Lord of the Earth') is the Gbe vodu of the earth and of smallpox/contagious disease, the eldest son of the creator pair Mawu-Lisa and head of the earth-pantheon, brother of the thunder-god Sogbo with whom he disputes the rule of the earth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "M. J. Herskovits, Dahomey: An Ancient West African Kingdom (1938), vol. 2, the earth-pantheon."
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. G. Parrinder, West African Religion (2nd ed. 1961), the earth-and-smallpox vodu."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (1890)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The earth- and smallpox-vodu, eldest of Mawu-Lisa's children and head of the earth-pantheon. The English descriptor leads name.primary; the Gbe name Sakpata and the Ewe earth-praise-name Anyigbato (anyigba 'earth' + -to 'lord/owner of') stand in alt and the etymology. Typed deity. Documented for the Ewe by Ellis (1890) and Parrinder (1961) and for the cognate Fon in detail by Herskovits (1938); compare the corpus figure fon_sakpata."
+ },
+ {
   "id": "ewe_so",
   "name": {
    "primary": "Thunder God of the Storm",
@@ -81487,7 +83045,53 @@ const NEW_FIGURES = [
     "weight": "corroborating"
    }
   ],
-  "notes": "The Ewe thunder god is properly So/Sogbo (Anlo: Heviesso, Xebieso), deliberately listed under the Ewe tradition and kept distinct from the Fon Vodun Xevioso/Hevioso. The English word leads name.primary; native forms in `term`/alt. Spirit-class deity per schema (typed deity, explained here)."
+  "notes": "The Ewe thunder god is properly So/Sogbo (Anlo: Heviesso, Xebieso), deliberately listed under the Ewe tradition and kept distinct from the Fon Vodun Xevioso/Hevioso. The English word leads name.primary; native forms in `term`/alt. Spirit-class deity per schema (typed deity, explained here).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey (1938); Parrinder, West African Religion (1961) — Sogbo (So), Sakpata, Gu, Age, and Legba are the great vodu children of Mawu-Lisa"
+     }
+    ],
+    "notes": "Fellow great vodu child of Mawu-Lisa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey (1938); Parrinder, West African Religion (1961) — Sogbo (So), Sakpata, Gu, Age, and Legba are the great vodu children of Mawu-Lisa"
+     }
+    ],
+    "notes": "Fellow great vodu child of Mawu-Lisa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey (1938); Parrinder, West African Religion (1961) — Sogbo (So), Sakpata, Gu, Age, and Legba are the great vodu children of Mawu-Lisa"
+     }
+    ],
+    "notes": "Fellow great vodu child of Mawu-Lisa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Herskovits, Dahomey (1938); Parrinder, West African Religion (1961) — Sogbo (So), Sakpata, Gu, Age, and Legba are the great vodu children of Mawu-Lisa"
+     }
+    ],
+    "notes": "Fellow great vodu child of Mawu-Lisa."
+   }
+  ]
  },
  {
   "id": "fang_fam",
@@ -132963,6 +134567,2070 @@ const NEW_FIGURES = [
   "notes": "Classed as deity (a celestial being). Olapa is the common Maa noun for 'moon', here personified per Hollis's sun-and-moon narrative. Some popular sources instead pair Olapa with Enkai; the Hollis 1905 text gives the sun-and-moon spousal quarrel, which is the primary attestation used here."
  },
  {
+  "id": "mangaian_ina",
+  "name": {
+   "primary": "Ina",
+   "alt": [
+    "Ina",
+    "Ina-moe-aitu",
+    "Hina",
+    "Sina"
+   ],
+   "transliterations": {
+    "mangaian": "Ina / Ina-moe-aitu",
+    "etymology": "Mangaian Ina (the pan-Polynesian Hina / Sina; Mangaian regularly drops the initial h-). The by-name Ina-moe-aitu is glossed 'Ina who slept with (had a god for) a lover'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-eel-tuna-and-the-first-coconut",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V 'The story of Ina', and the Tuna / coconut myth, pp. 77–88"
+     }
+    ],
+    "notes": "Bathing in her pool, Ina was wooed by the eel Tuna, who cast off his eel-form to reveal a beautiful youth; at his death (by Ina's act) she buried his severed head, and from it sprang the first coconut-palm — the two eyes and mouth of Tuna seen to this day in the three marks of the nut."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "ascent-to-the-moon-to-beat-tapa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V (Ina in the moon)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 88–90"
+     }
+    ],
+    "notes": "Ina is the woman in the moon: she went up to the moon, where she dwells as Ina-the-housekeeper of the moon, eternally beating out tapa (bark-cloth); the clouds are the sheets of cloth she spreads to dry, and the thunder of her mallet is heard on earth."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-moon",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V (Ina in the moon)"
+     }
+    ]
+   },
+   {
+    "sphereId": "tapa-and-barkcloth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-the-coconut",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), the Tuna / coconut myth, pp. 77–88"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_ina_beat_tapa_in_the_moon",
+    "name": "beat out tapa (bark-cloth) in the moon",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V"
+     }
+    ],
+    "notes": "From the moon she eternally beats bark-cloth; the spread cloths are the clouds and the sound of her mallet the thunder."
+   },
+   {
+    "id": "mangaian_ina_bring_forth_the_coconut",
+    "name": "bring forth the first coconut from the eel's head",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), the Tuna / coconut myth, pp. 77–88"
+     }
+    ],
+    "notes": "By burying the head of the slain eel-lover Tuna she causes the first coconut-palm to spring up, the three marks of the nut being Tuna's two eyes and mouth."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mangaian_ina_tapa_mallet",
+    "name": "Ina's tapa-beating mallet",
+    "kind": "tool",
+    "role": "the wooden beater (i'e) with which Ina pounds bark-cloth in the moon; the sound of its beating is heard on earth as thunder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V"
+     }
+    ]
+   },
+   {
+    "id": "mangaian_ina_moon_tapa_cloth",
+    "name": "the tapa-cloth of the moon (the clouds)",
+    "kind": "made-object",
+    "role": "the sheets of bark-cloth Ina beats and spreads out to dry in the moon, seen on earth as the clouds",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. V"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Ina (Ina-moe-aitu), the Mangaian Hina, beats out tapa in the moon (her cloths the clouds, her mallet the thunder) and is the heroine of the Tuna-eel tale from which the first coconut sprang.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. V and the Tuna / coconut myth, pp. 77–88"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Ina is the woman in the moon of Mangaian belief, eternally beating bark-cloth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 88–90"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Mangaian Hina (Gill 1876): the woman in the moon who beats tapa, and the maiden of the Tuna-eel and first-coconut tale. SOLITARY: Gill's Mangaian account fixes no divine parentage, spouse, or sibling for Ina within the cosmogonic genealogy — the eel-tale gives only the maiden and her god-lover Tuna; her kin are therefore not wired (Gill 1876, Ch. V)."
+ },
+ {
+  "id": "mangaian_maui",
+  "name": {
+   "primary": "Maui",
+   "alt": [
+    "Maui",
+    "Māui",
+    "Maui-tikitiki"
+   ],
+   "transliterations": {
+    "mangaian": "Maui",
+    "etymology": "Mangaian / pan-Polynesian Maui; in the Mangaian legend the youngest, the fire-bringer and sun-snarer, son of Ru and Buataranga."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-youngest-of-the-maui-brothers",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III 'The story of Maui', pp. 51–63"
+     }
+    ],
+    "notes": "The youngest and cleverest of the Maui brothers; in the Mangaian legend the son of Ru, the supporter of the heavens, and of Buataranga, the guardian of the path to the lower world."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "wresting-of-fire-from-mauike-in-avaiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the fire-god Mauike), pp. 51–63"
+     }
+    ],
+    "notes": "Maui descends to Avaiki and wrests from the fire-god Mauike the secret of fire — winning the fire hidden in the wood (the au and other fire-yielding trees) after a wrestling-contest with the fire-god, whom he overcomes; thereby fire is brought to mankind."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "snaring-of-the-sun-ra",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 41–45"
+     }
+    ],
+    "notes": "Maui snares the sun Ra with cords (a net of ropes) to slow its course across the sky and so lengthen the day for the good of men."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fire-bringing",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sun",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickster-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 41–53"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_maui_wrest_fire_from_mauike",
+    "name": "wrest the secret of fire from the fire-god Mauike",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III, pp. 51–63"
+     }
+    ],
+    "notes": "Descending to Avaiki he overcomes the fire-god Mauike and carries off fire, lodging it in the fire-trees from which men thereafter draw it by friction."
+   },
+   {
+    "id": "mangaian_maui_snare_the_sun",
+    "name": "snare the sun to lengthen the day",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)"
+     }
+    ],
+    "notes": "He catches the sun Ra in a noose of cords and beats it until it agrees to move more slowly, giving men longer days."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mangaian_maui_fire_from_mauike",
+    "name": "the fire won from Mauike",
+    "kind": "elemental-boon",
+    "role": "the fire that Maui wrests from the fire-god Mauike in Avaiki and gives to mankind, hidden thereafter in the fire-yielding trees",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III, pp. 51–63"
+     }
+    ]
+   },
+   {
+    "id": "mangaian_maui_sun_snare",
+    "name": "the snare of cords for the sun",
+    "kind": "tool",
+    "role": "the noose / net of ropes with which Maui catches and holds the sun Ra to compel it to slow its course",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. III (Maui and the sun)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Maui, the youngest of the brothers and son of Ru and Buataranga, wrests fire from the fire-god Mauike in Avaiki and snares the sun Ra to lengthen the day.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. III 'The story of Maui', pp. 51–63"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "In the Mangaian (and wider Cook Islands) version Maui kills / overcomes the fire-god and obtains fire for mankind.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (1916), pp. 41–53"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Mangaian Maui (Gill 1876): demigod fire-bringer and sun-snarer, son of Ru (supporter of the heavens) and Buataranga (guardian of the lower world), who wrests fire from Mauike. SOLITARY: his parents Ru and Buataranga and his brothers are named by Gill but are not authored in this batch, so no within-batch kin edge is wired; the parentage is recorded here for the record (Gill 1876, Ch. III)."
+ },
+ {
+  "id": "mangaian_miru",
+  "name": {
+   "primary": "Miru",
+   "alt": [
+    "Miru",
+    "Miru-kura",
+    "Miru the Ruddy"
+   ],
+   "transliterations": {
+    "mangaian": "Miru / Miru-kura",
+    "etymology": "Mangaian Miru, by-named Miru-kura ('Miru the red/ruddy', kura 'red'), her face reddened by the heat of her oven; the hag of Avaiki who receives and cooks the souls of the dead."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "mistress-of-nether-avaiki-the-oven-of-the-dead",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX 'The spirit-world', pp. 152–171 (Miru and the ovens of Avaiki)"
+     }
+    ],
+    "notes": "The dreaded hag of the nether part of Avaiki who receives the souls of the (common) dead: she stupefies them with her intoxicating kava and then cooks and eats them in her great oven. Her face is red from the heat of her oven, whence Miru-kura, 'Miru the red'."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-dead-and-the-oven-of-souls",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171"
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld-avaiki",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_miru_stupefy_souls_with_kava",
+    "name": "stupefy the souls of the dead with kava",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171"
+     }
+    ],
+    "notes": "She gives the arriving souls her strong kava to drink, robbing them of sense before the oven."
+   },
+   {
+    "id": "mangaian_miru_cook_souls_in_her_oven",
+    "name": "cook and devour the souls of the dead in her oven",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171"
+     }
+    ],
+    "notes": "The stupefied souls are baked in her oven (itself called Avaiki) and consumed; the fate of the common dead in Mangaian belief."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mangaian_miru_oven_of_souls",
+    "name": "the oven of Miru (the oven of the dead)",
+    "kind": "instrument-of-fate",
+    "role": "the great earth-oven in nether Avaiki in which Miru bakes the souls of the dead",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171"
+     }
+    ]
+   },
+   {
+    "id": "mangaian_miru_kava_bowl",
+    "name": "Miru's bowl of kava",
+    "kind": "ritual-vessel",
+    "role": "the intoxicating kava with which Miru stupefies the souls of the dead before the oven",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. IX, pp. 152–171"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Miru (Miru-kura, 'the red'), the hag of nether Avaiki, receives the souls of the dead, stupefies them with kava, and cooks them in her oven.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. IX 'The spirit-world', pp. 152–171"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Miru is the red-faced underworld goddess of Mangaia whose daughters are the Tapairu and whose oven consumes the common dead.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Miru'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The red hag of Avaiki who cooks the souls of the dead (Gill 1876). Her daughters are the beautiful Tapairu (cited, not authored). SOLITARY: Gill gives Miru no parentage, spouse, or sibling — only her daughters the Tapairu and her function over the dead; her ancestry is therefore not wired (Gill 1876, Ch. IX)."
+ },
+ {
+  "id": "mangaian_papa",
+  "name": {
+   "primary": "Papa",
+   "alt": [
+    "Papa",
+    "Papa-rairai"
+   ],
+   "transliterations": {
+    "mangaian": "Papa",
+    "etymology": "Mangaian / pan-Polynesian papa 'foundation, stratum, flat rock; the earth as a stratum'; the earth-mother, consort of the sky-light father Vatea."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "won-by-vatea-as-his-wife",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12"
+     }
+    ],
+    "notes": "The earth-mother whom Vatea took to wife; Gill gives her as daughter of Timatekore ('Nothing-more') and Tamaiti-ngava-ringavari ('the soft-bodied'), of the deeper part of Avaiki."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-the-great-gods",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "By Vatea she bore the twins Rongo and Tangaroa, and Tane, Tangiia and Tonga-iti — the tribal gods of Mangaia. Gill records that she could not eat with her first-born Tangaroa, which led to the younger Rongo being given precedence."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-foundation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "papa",
+     "script": "Latin (Mangaian)",
+     "rom": "papa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12"
+     }
+    ]
+   },
+   {
+    "sphereId": "motherhood-of-the-gods",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Papa'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_papa_bear_the_great_gods",
+    "name": "bear the great gods of Mangaia",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Mother by Vatea of Rongo, Tangaroa, Tane, Tangiia and Tonga-iti."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mangaian_vatea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12"
+     }
+    ],
+    "notes": "Wife of Vatea, the light-father."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_tangaroa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_rongo",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_tane",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_tangiia",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_tonga_iti",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Papa, the earth-mother, is the wife of Vatea and by him mother of the great gods of Mangaia (Rongo, Tangaroa, Tane, Tangiia, Tonga-iti).",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–14"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Earth-mother of Mangaia, wife of Vatea (Gill 1876). Gill gives her parents as Timatekore ('Nothing-more') and Tamaiti-ngava-ringavari ('the soft-bodied') of the lower Avaiki — cited here, not authored as stubs. The rule that she could not eat with her first-born underlies Rongo's precedence over Tangaroa."
+ },
+ {
+  "id": "mangaian_rongo",
+  "name": {
+   "primary": "Rongo",
+   "alt": [
+    "Rongo",
+    "Ro'o"
+   ],
+   "transliterations": {
+    "mangaian": "Rongo",
+    "etymology": "Mangaian / pan-Polynesian Rongo (Maori Rongo, Hawaiian Lono, Tahitian Ro'o); the great god of Mangaia, the younger twin given precedence — god of taro-agriculture and of war."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vatea",
+   "mangaian_papa"
+  ],
+  "parentRoles": {
+   "mangaian_vatea": "paternal",
+   "mangaian_papa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-younger-twin-and-given-precedence",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "The younger twin of Tangaroa, but favoured by his father Vatea and given precedence over the elder; the rule that Papa could not eat with her first-born underlay his elevation. He became the great national god of Mangaia."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "established-as-the-great-god-of-mangaia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I and Ch. XV (the drum of peace; human sacrifice to Rongo)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'"
+     }
+    ],
+    "notes": "God of agriculture (the taro) and of war; worshipped at the two great marae of the Keia district — inland Akaoro and coastal Orongo — where cooked taro was offered for the fertility of the land and human victims for success in battle. His was the sacred drum of peace."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "agriculture-and-the-taro",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I and XV"
+     }
+    ]
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV (Rongo and human sacrifice)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'"
+     }
+    ]
+   },
+   {
+    "sphereId": "tutelary-of-mangaia",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_rongo_grant_the_taro_harvest",
+    "name": "grant the fertility of the taro and the land",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I and XV"
+     }
+    ],
+    "notes": "As god of agriculture, cooked taro is offered to him to secure the harvest and the fertility of Mangaia."
+   },
+   {
+    "id": "mangaian_rongo_grant_victory_in_war",
+    "name": "grant victory in war and demand the sacrifice",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV (human sacrifice to Rongo)"
+     }
+    ],
+    "notes": "As war-god of Mangaia he gives the victory; human victims were offered upon his marae after battle, and his name stood as a byword for deadly hate."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mangaian_rongo_sacred_drum",
+    "name": "the sacred drum of Rongo (the drum of peace)",
+    "kind": "ritual-instrument",
+    "role": "the great sacred drum sounded in Rongo's worship at Mangaia, the 'drum of peace' beaten to proclaim the inauguration of a new ruler (the Lord of Mangaia) and the seasons of peace",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV; and Gill, Historical Sketches of Savage Life in Polynesia (1880)"
+     }
+    ]
+   },
+   {
+    "id": "mangaian_rongo_marae_akaoro",
+    "name": "Akaoro marae",
+    "kind": "sacred-site",
+    "role": "the great inland marae of Rongo in the Keia district of Mangaia, a chief centre of his worship and sacrifice",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'"
+     }
+    ]
+   },
+   {
+    "id": "mangaian_rongo_marae_orongo",
+    "name": "Orongo marae",
+    "kind": "sacred-site",
+    "role": "the great coastal marae of Rongo in the Keia district of Mangaia, where cooked taro and human victims were offered to him",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. XV"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "mangaian_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Younger twin of Tangaroa, but given precedence over the elder."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tane",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Rongo is named elder brother to Tane."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangiia",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Rongo is named elder brother to Tangiia."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tonga_iti",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Rongo is named elder brother to Tonga-iti, the lizard-god."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Rongo, the younger twin son of Vatea and Papa, was favoured over his elder twin Tangaroa and made the great national god of Mangaia — god of agriculture (the taro) and of war.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14, and Ch. XV"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Rongo's principal worship was at the inland Akaoro and coastal Orongo marae of the Keia district, where cooked taro and human victims were offered; his was the sacred drum.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Rongo'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The patron god of Mangaia (Gill 1876), god of agriculture and the sacred drum, and of war. Younger twin of Tangaroa, given precedence by Vatea. Worshipped at Akaoro (inland) and Orongo (coastal) marae."
+ },
+ {
+  "id": "mangaian_tane",
+  "name": {
+   "primary": "Tane",
+   "alt": [
+    "Tane",
+    "Tāne",
+    "Tane-papa-kai"
+   ],
+   "transliterations": {
+    "mangaian": "Tane",
+    "etymology": "Mangaian / pan-Polynesian Tane (Maori Tāne, Hawaiian Kāne); in Mangaia a son of Vatea and Papa and a tribal god, the younger brother of Rongo. Gill records the by-name Tane-papa-kai ('Tane of the food-stratum / provider of food')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vatea",
+   "mangaian_papa"
+  ],
+  "parentRoles": {
+   "mangaian_vatea": "paternal",
+   "mangaian_papa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-a-son-of-vatea-and-papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "A son of Vatea and Papa and one of the tribal gods of Mangaia, the younger brother of whom Rongo is named the elder; by-named Tane-papa-kai, associated with the provision of food."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-god-of-mangaia",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "sphereId": "provision-of-food",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tane (Mangaia)'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_tane_provide_food",
+    "name": "provide the food of the people",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tane (Mangaia)'"
+     }
+    ],
+    "notes": "His Mangaian by-name Tane-papa-kai marks him as a giver of food / the food-stratum among the tribal gods."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mangaian_rongo",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Rongo is named his elder brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangiia",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tonga_iti",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tane (Tane-papa-kai) is a son of Vatea and Papa and one of the tribal gods of Mangaia, a younger brother of Rongo.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mangaian tribal god, son of Vatea and Papa, brother of the twins (Gill 1876). Gill's by-name Tane-papa-kai connects him with the provision of food."
+ },
+ {
+  "id": "mangaian_tangaroa",
+  "name": {
+   "primary": "Tangaroa",
+   "alt": [
+    "Tangaroa",
+    "Tanga-roa"
+   ],
+   "transliterations": {
+    "mangaian": "Tangaroa",
+    "etymology": "Mangaian / pan-Polynesian Tangaroa (Maori Tangaroa, Hawaiian Kanaloa, Samoan Tagaloa); in Mangaia the elder twin son of Vatea and Papa, the fair-haired god whose portion is all things red."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vatea",
+   "mangaian_papa"
+  ],
+  "parentRoles": {
+   "mangaian_vatea": "paternal",
+   "mangaian_papa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-first-born-twin-of-vatea-and-papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "First-born of the twin sons of Vatea and Papa, and so the elder; distinguished by fair, yellow hair — so that when the Mangaians first saw Europeans they took them for the children of Tangaroa."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "passed-over-for-rongo-and-emigration",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tangaroa'"
+     }
+    ],
+    "notes": "Although the elder, Tangaroa was set below his younger twin Rongo, whom Vatea favoured; his appointed portion was everything red (red taro, red fish, and the like). Slighted, he left Mangaia and his worship passed to other islands (Rarotonga, Aitutaki)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Tangaroa'"
+     },
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I"
+     }
+    ]
+   },
+   {
+    "sphereId": "all-things-red",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "sphereId": "abundance-and-property",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tangaroa'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_tangaroa_claim_all_things_red",
+    "name": "claim as his portion everything red",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "In the division of food and goods with Rongo, all that is red — red taro, red fish, red feathers — falls to Tangaroa."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "mangaian_rongo",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Elder twin of Rongo, his younger brother who was given precedence."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tane",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangiia",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tonga_iti",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tangaroa is the first-born (elder) twin son of Vatea and Papa, the fair/yellow-haired god whose portion is all things red, set below his younger twin Rongo whom Vatea favoured.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "When the Mangaians first saw white men they supposed them children of the fair-haired Tangaroa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tangaroa'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Elder twin son of Vatea and Papa (Gill 1876); golden/yellow-haired; god of the sea and of all things red; passed over for the younger Rongo and so departing Mangaia, his cult flourishing instead on Rarotonga and Aitutaki."
+ },
+ {
+  "id": "mangaian_tangiia",
+  "name": {
+   "primary": "Tangiia",
+   "alt": [
+    "Tangiia",
+    "Tangi'ia"
+   ],
+   "transliterations": {
+    "mangaian": "Tangiia",
+    "etymology": "Mangaian Tangiia; in Gill's Mangaian genealogy a son of Vatea and Papa and one of the tribal gods, a younger brother of Rongo. (Distinct from the later Rarotongan voyaging-chief Tangiia.)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vatea",
+   "mangaian_papa"
+  ],
+  "parentRoles": {
+   "mangaian_vatea": "paternal",
+   "mangaian_papa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-a-son-of-vatea-and-papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "A son of Vatea and Papa and one of the tribal gods of Mangaia, to whom Rongo stands as elder brother."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-god-of-mangaia",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_tangiia_tutelary_of_his_tribe",
+    "name": "stand tutelary over his tribe of Mangaia",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "As one of the tribal gods sprung from Vatea and Papa, he is the divine patron of his line on Mangaia."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mangaian_rongo",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Rongo is named his elder brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tane",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tonga_iti",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tangiia is a son of Vatea and Papa and one of the tribal gods of Mangaia, a younger brother of Rongo.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mangaian tribal god, son of Vatea and Papa, brother of the twins (Gill 1876). Not to be confused with the Rarotongan canoe-chief Tangiia of the migration traditions."
+ },
+ {
+  "id": "mangaian_tinirau",
+  "name": {
+   "primary": "Tinirau",
+   "alt": [
+    "Tinirau",
+    "Tini-rau"
+   ],
+   "transliterations": {
+    "mangaian": "Tinirau",
+    "etymology": "Mangaian / pan-Polynesian Tinirau ('myriad' — tini 'host, multitude' + rau 'hundred'), referring to the multitude of the fishes; the second child of Vari-ma-te-takere, lord of all fish."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vari_ma_te_takere"
+  ],
+  "parentRoles": {
+   "mangaian_vari_ma_te_takere": "maternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "plucked-from-vari-right-side",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9"
+     }
+    ],
+    "notes": "The second of Vari's children plucked from her right side; himself half-fish, set as lord and guardian over all the fishes of the sea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lord-of-fish",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Tinirau'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_tinirau_guard_all_fish",
+    "name": "guard and command all the fishes of the sea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9"
+     }
+    ],
+    "notes": "As lord of fish, the whole multitude of the sea (whence his name 'myriad') is under his keeping."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mangaian_vatea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9"
+     }
+    ],
+    "notes": "Brother of Vatea; both plucked from the right side of Vari, Vatea the first and Tinirau the second."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tinirau, the second child of Vari-ma-te-takere plucked from her right side, is the half-fish lord and guardian of all the fishes of the sea.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Lord of fish, second child of Vari and brother of Vatea (Gill 1876). His name 'myriad' marks the multitude of the sea-creatures in his charge. (The wider Polynesian Tinirau–Hina cycle stands apart from this Mangaian cosmogonic placement.)"
+ },
+ {
+  "id": "mangaian_tonga_iti",
+  "name": {
+   "primary": "Tonga-iti",
+   "alt": [
+    "Tonga-iti",
+    "Tongaiti",
+    "Motoro",
+    "Moko"
+   ],
+   "transliterations": {
+    "mangaian": "Tonga-iti / Motoro",
+    "etymology": "Mangaian Tonga-iti, also called Motoro; the lizard-god among the sons of Vatea and Papa, a tribal god and (in the Ngariki tradition) the chief national god of the soil; younger brother of Rongo."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vatea",
+   "mangaian_papa"
+  ],
+  "parentRoles": {
+   "mangaian_vatea": "paternal",
+   "mangaian_papa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-a-son-of-vatea-and-papa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "A son of Vatea and Papa, the lizard-god (also called Motoro), to whom Rongo stands as elder brother; one of the tribal gods of Mangaia."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "worshipped-as-motoro-god-of-the-soil",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Motoro / Tonga-iti'"
+     }
+    ],
+    "notes": "Under the name Motoro he was a chief tutelary god of Mangaia, a god of the soil revered by the ruling Ngariki, manifest in the lizard."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tribal-god-of-mangaia",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "sphereId": "lizards-and-reptiles",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tonga-iti'"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-soil-and-land",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Motoro'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_tonga_iti_manifest_as_lizard",
+    "name": "manifest in the body of the lizard",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Tonga-iti'"
+     }
+    ],
+    "notes": "The lizard-god of Mangaia; his living manifestation is the lizard."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mangaian_rongo",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Rongo is named his elder brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tane",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tangiia",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tonga-iti (Motoro), the lizard-god, is a son of Vatea and Papa and one of the tribal gods of Mangaia, a younger brother of Rongo.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Under the name Motoro he was a chief tutelary god of the soil of Mangaia, revered by the Ngariki and manifest in the lizard.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Motoro / Tonga-iti'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Mangaian lizard-god, son of Vatea and Papa, brother of the twins (Gill 1876); also called Motoro, a chief god of the soil of Mangaia."
+ },
+ {
+  "id": "mangaian_vari_ma_te_takere",
+  "name": {
+   "primary": "Vari-ma-te-takere",
+   "alt": [
+    "Vari",
+    "Vari-ma-te-takere",
+    "Varima-te-takere",
+    "Vari-mate-takere"
+   ],
+   "transliterations": {
+    "mangaian": "Vari-ma-te-takere",
+    "etymology": "Mangaian, glossed by Gill as 'the very beginning' (also read as 'the mud / primeval slime at the bottom', vari being the primeval mud at the base of Avaiki); the self-existent primal mother at the narrow base of the coconut-shell underworld."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "self-existence-at-the-base-of-avaiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation', pp. 1–5"
+     }
+    ],
+    "notes": "The self-existent primal mother dwelling in perpetual darkness at the very bottom of Avaiki — the interior of the hollow coconut that is the Mangaian universe — where the sides of the imaginary shell so nearly meet that she sits doubled, her knees touching her chin."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "plucking-of-the-six-children-from-her-sides",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11–13"
+     }
+    ],
+    "notes": "Longing for offspring, she plucked living children from her own body: three from her right side — Vatea (the first-born), Tinirau, and Tango — and three from her left — Tumu-te-ana-oa (the Echo), Raka (lord of the winds), and Tu-metua (the loved one she kept beside her at the base of Avaiki). These six are the primal gods from whom the Mangaian pantheon descends."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-origin",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation'"
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld-avaiki",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 1–5"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-the-gods",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Vari-ma-te-takere'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_pluck_children_from_sides",
+    "name": "pluck living children from her own sides",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9"
+     }
+    ],
+    "notes": "She brings forth her six children not by birth but by tearing pieces of flesh from her right and left sides and shaping them into gods — Vatea, Tinirau and Tango from the right, Tumu-te-ana-oa, Raka and Tu-metua from the left."
+   },
+   {
+    "id": "mangaian_self_existence",
+    "name": "exist of herself at the root of all things",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation'"
+     }
+    ],
+    "notes": "The 'very beginning', without parent or origin, the foundation from which the cosmos of Avaiki and its gods proceeds."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_vatea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–5"
+     }
+    ],
+    "notes": "Vatea, plucked from her right side, is her first-born."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "mangaian_tinirau",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 5–9"
+     }
+    ],
+    "notes": "Tinirau, lord of fish, the second child plucked from her right side."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Vari-ma-te-takere ('the very beginning') is the self-existent primal mother at the base of Avaiki, the hollow-coconut underworld, who plucked six children from her sides — the primal gods of Mangaia.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I 'Creation', pp. 1–9"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "The Mangaian cosmos is conceived as the hollow of a vast coconut shell, its interior the underworld Avaiki, at whose cramped base Vari sits doubled with her knees against her chin.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roland B. Dixon, Oceanic Mythology (The Mythology of All Races, Vol. IX, 1916), pp. 11–13"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Primordial mother of the Mangaian pantheon (Gill 1876). Her four other children — Tango (lord of the right side), Tumu-te-ana-oa ('the Echo'), Raka (lord of the winds, to whom she gave a great basket holding the winds), and Tu-metua ('the loved one', the youngest, kept ever beside her) — are attested by Gill but minor; they are cited here rather than authored as separate stubs. SOLITARY (as to ancestry): she is the self-existent 'very beginning' with no parent, spouse, or sibling — by definition the root of the genealogy (Gill 1876, Ch. I). Her descendants are wired."
+ },
+ {
+  "id": "mangaian_vatea",
+  "name": {
+   "primary": "Vatea",
+   "alt": [
+    "Avatea",
+    "Vatea",
+    "Atea"
+   ],
+   "transliterations": {
+    "mangaian": "Vatea / Avatea",
+    "etymology": "Mangaian avatea 'noon, daylight, the light of day'; Gill renders the name 'noon'. Cognate with the wider Polynesian Atea / Wakea ('space, light, the sky-father')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "mangaian_vari_ma_te_takere"
+  ],
+  "parentRoles": {
+   "mangaian_vari_ma_te_takere": "maternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "plucked-as-first-born-from-vari-right-side",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–5"
+     }
+    ],
+    "notes": "The first-born of Vari-ma-te-takere, plucked from her right side; a being divided vertically down the middle — the right half a man, the left half a fish — dwelling in Te-papa-rairai ('the thin land') in the upper part of Avaiki."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "father-of-gods-and-men",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12"
+     },
+     {
+      "kind": "secondary",
+      "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Atea / Vatea'"
+     }
+    ],
+    "notes": "As 'noon', the lord of light and day; he wins Papa and by her becomes father of the great gods (the twins Rongo and Tangaroa, and Tane, Tangiia and Tonga-iti) — hence the father of gods and men."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "noon-and-daylight",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "avatea",
+     "script": "Latin (Mangaian)",
+     "rom": "avatea"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, p. 3 (the name 'noon')"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky-and-light",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Robert D. Craig, Dictionary of Polynesian Mythology (1989), s.v. 'Avatea'"
+     }
+    ]
+   },
+   {
+    "sphereId": "fatherhood-of-the-gods",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–14"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mangaian_vatea_half_fish_form",
+    "name": "exist as a being half man and half fish",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–5"
+     }
+    ],
+    "notes": "Divided vertically: the right side a man, the left side a fish — the mark of his descent from the primal mother and of his lordship of the upper, lighted region."
+   },
+   {
+    "id": "mangaian_vatea_bring_the_light_of_noon",
+    "name": "embody and bring the light of noon-day",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, p. 3"
+     }
+    ],
+    "notes": "His name is 'noon'; he is the personified light of day over the world of mortals on the outside of the coconut-shell."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "mangaian_papa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 9–12"
+     }
+    ],
+    "notes": "Vatea takes Papa to wife; she bears him the great gods of Mangaia."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mangaian_tinirau",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–9"
+     }
+    ],
+    "notes": "Brother of Tinirau; both plucked from the right side of Vari, Vatea the first and Tinirau the second."
+   },
+   {
+    "kind": "father-of",
+    "personId": "mangaian_tangaroa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Father of the first-born twin Tangaroa."
+   },
+   {
+    "kind": "father-of",
+    "personId": "mangaian_rongo",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ],
+    "notes": "Father of Rongo, whom he favoured and gave precedence over the elder twin."
+   },
+   {
+    "kind": "father-of",
+    "personId": "mangaian_tane",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "mangaian_tangiia",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "mangaian_tonga_iti",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Vatea (Avatea), 'noon', is the first-born of Vari-ma-te-takere, plucked from her right side, a being half man and half fish, lord of light and father of the great gods of Mangaia.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 3–14"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Vatea / Atea is the Mangaian sky-and-light father, husband of Papa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "E. R. Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. 'Atea / Vatea'"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sky/light father of Mangaia (Gill 1876). Right half man, left half fish. By Papa the father of Rongo and Tangaroa and of Tane, Tangiia and Tonga-iti."
+ },
+ {
   "id": "manipuri_koubru",
   "name": {
    "primary": "Koubru",
@@ -137501,6 +141169,2044 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Initiation-giant dema; the Sosom cult was analysed at length by Wirz and Van Baal. Some myths connect him to ritualized homosexuality in male initiation. Treated as deity."
+ },
+ {
+  "id": "marquesan_akaui",
+  "name": {
+   "primary": "Akaui",
+   "alt": [],
+   "transliterations": {
+    "marquesan": "Akaui",
+    "etymology": "Marquesan Akaui; a legendary character/ancestor named in the Marquesan narratives. Recorded as a personal name in Handy's legend-register; etymology uncertain."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "legendary-exploits-of-Akaui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 (Akaui among the foremost narrative figures); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930)."
+     }
+    ],
+    "notes": "A legendary character of the Marquesan narratives, named among the principal figures."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "legendary-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923), p. 247; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "A legendary hero/ancestor of Marquesan tradition named in the recorded narratives."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "heroic-exploits-of-akaui",
+    "name": "Heroic exploits of the Akaui legend",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930); Handy, Native Culture (1923), p. 247."
+     }
+    ],
+    "notes": "The deeds of Akaui as recorded among the Marquesan legends."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247; Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Akaui is a legendary character/ancestor named by Handy among the foremost figures of the Marquesan oral narratives (Native Culture p. 247; Marquesan Legends, 1930). SOLITARY in this batch: the narrative names Akaui without an attested genealogical link to the other figures authored here.",
+  "_solitary_reason": "Named legendary hero (Handy, Native Culture p. 247; Marquesan Legends 1930) with no attested kin-link to the other batch figures; relations omitted rather than invented."
+ },
+ {
+  "id": "marquesan_atanua",
+  "name": {
+   "primary": "Atanua",
+   "alt": [
+    "Atanea",
+    "Ataea"
+   ],
+   "transliterations": {
+    "marquesan": "Atanua",
+    "etymology": "Marquesan: contains the element ata 'dawn, daybreak, first light; shadow/reflection' (cf. Maori ata 'morning, dawn'). Atanua personifies the Dawn that arose from the cosmogonic struggles; consort of 'Atea (Light)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "arising-of-the-dawn-from-the-cosmogonic-struggles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'From these two struggles arose Atanua (\"Dawn\"), whom Atea took to wife.'"
+     }
+    ],
+    "notes": "The Dawn came into being out of the two cosmogonic conquests (of Tanaoa by Atea, and of Mutu-hei by Ono)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Atea-and-begetting-of-gods-and-mankind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea took Atanua to wife 'and so begat a host of deities, besides creating the heavens and the earth.'"
+     }
+    ],
+    "notes": "Taken to wife by Atea; with him bore the host of lesser deities and the line of mankind, and the heavens and earth were created."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "miscarriage-and-the-origin-of-the-seas",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marquesan tradition recorded in the comparative literature (Dixon, Oceanic Mythology, 1916, and the Atanua cosmogonic tradition) — Atanua suffered a miscarriage and the seas were formed from her amniotic fluid."
+     }
+    ],
+    "notes": "In one tradition Atanua, having miscarried, filled the oceans with her amniotic fluid — an aetiology of the sea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dawn-and-daybreak",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'Atanua, the dawn.'"
+     }
+    ],
+    "notes": "Personification of the Dawn / first light of day."
+   },
+   {
+    "sphereId": "motherhood-of-gods-and-the-human-lineage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — progenitrix, with Atea, of the Marquesan people across ~90 genealogical generations."
+     }
+    ],
+    "notes": "With Atea, the mother of the host of lesser gods and the apical ancestress of the Marquesan people."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "embodiment-of-the-dawn",
+    "name": "Embodiment of the dawn",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Is the Dawn itself, arisen from the conquest of darkness and silence."
+   },
+   {
+    "id": "maternal-generativity",
+    "name": "Maternal generativity (mother of the races)",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atanua as progenitrix of gods and mankind with Atea."
+     }
+    ],
+    "notes": "By union with Atea bears the lesser gods and the human lineage; in the miscarriage tradition her bodily fluid becomes the sea."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea took Atanua to wife."
+     }
+    ],
+    "notes": "Wife of Atea (Light)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "marquesan_tiki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Marquesan genealogies derive the first man Tiki from the progenitors Atea and Atanua."
+     }
+    ],
+    "notes": "In the genealogical tradition, ancestress (with Atea) of the first man Tiki."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Atanua ('Dawn') is the consort of Atea and the mother of the races of the Marquesan pantheon. She arose out of the two cosmogonic struggles — Atea's defeat of Tanaoa (Darkness) and Ono's destruction of Mutu-hei (Silence) — and was taken by Atea to wife, bearing the host of lesser deities and the human lineage; Marquesan genealogies traced the people of Hiva back to the progenitors Atea and Atanua. In one tradition her miscarriage gave the sea its origin, the oceans filled with her amniotic fluid."
+ },
+ {
+  "id": "marquesan_atea",
+  "name": {
+   "primary": "Atea",
+   "alt": [
+    "'Atea",
+    "Ātea",
+    "Wakea (Hawaiian cognate, cross-referenced in the pu'e chant scholarship)"
+   ],
+   "transliterations": {
+    "marquesan": "'Atea",
+    "etymology": "Marquesan ātea 'space, open expanse, light, the bright open' (cf. Maori atea 'clear, free of obstruction; the open space before a meeting-house'; Tahitian Atea; Hawaiian Wakea < Wā-kea 'wide/light space'). Personifies Light and the open expanse of space/sky."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "marquesan_tohetika"
+  ],
+  "parentRoles": {
+   "marquesan_tohetika": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "self-evolution-of-light-out-of-Tanaoa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'In the course of time Atea (\"Light\") evolved or separated himself from Tanaoa, and drove him away.'"
+     }
+    ],
+    "notes": "Light separated/evolved itself out of the darkness of Tanaoa, drove him off, and confined the night-powers — the founding act that made the world possible."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "bringing-forth-of-Ono",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'after this, Ono (\"Sound\") evolved himself from Atea and destroyed Mutuhei'; Marquesan tradition that Atea brought forth Ono and joined forces with him."
+     }
+    ],
+    "notes": "Brought forth / gave rise to Ono (Sound), who then destroyed Mutu-hei (Silence); the two struggles together produced the dawn."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 2,
+    "startEvent": "marriage-to-Atanua-the-dawn",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — 'From these two struggles arose Atanua (\"Dawn\"), whom Atea took to wife, and so begat a host of deities, besides creating the heavens and the earth.'"
+     }
+    ],
+    "notes": "Took Atanua (the Dawn, who arose from the cosmogonic struggles) to wife; with her begat the host of lesser deities and the lineage of mankind, and created the heavens and the earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 3,
+    "startEvent": "impregnation-of-One-u'i-the-sand-woman",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — the pu'e (sacred creation chant), in which 'Atea impregnates One-u'i (the 'sand-woman') to bring forth the first man Tiki; the pu'e is taboo to teach to women and women are excluded from its recitation."
+     }
+    ],
+    "notes": "In the pu'e chant, 'Atea impregnates One-u'i, the 'sand-woman,' fathering the first man Tiki; the chant names plants and materials born of One-u'i after impregnation by 'Atea to furnish the house of the first parents."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "light-and-the-open-expanse-of-space",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'Atea is the giver of light.'"
+     }
+    ],
+    "notes": "Personification of Light and of ātea, the open expanse of space/sky; the giver of light to the world."
+   },
+   {
+    "sphereId": "creation-and-progenitorship-of-gods-and-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Marquesan genealogies trace the people of Hiva ~90 generations to the progenitors Atea and Atanua, with Tiki as the first man; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Father of the host of deities and the apical ancestor of the Marquesan people; creator (with Atanua) of the heavens and earth."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "separation-of-light-from-darkness",
+    "name": "Separation of light from darkness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "The power by which Light evolved itself out of the void, drove off Tanaoa (Darkness), and confined the powers of night — the cosmogonic act that established the world of light."
+   },
+   {
+    "id": "generative-progenitorship",
+    "name": "Generative progenitorship of gods and mankind",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea with Atanua begets the deities and the human lineage; the pu'e chant of his impregnation of One-u'i to father Tiki."
+     }
+    ],
+    "notes": "By union with Atanua (and, in the pu'e, with One-u'i) Atea engenders the lesser gods and the line of mankind; the generative potency passes into the genealogies of the people."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pu'e-creation-chant",
+    "name": "Pu'e (sacred creation chant of 'Atea and One-u'i)",
+    "kind": "oral-liturgy",
+    "role": "The pu'e is the Marquesan sacred creation chant recounting 'Atea's impregnation of One-u'i (the sand-woman) and the birth of the first man Tiki; each tribe had its own rendition; it was taboo (tapu) to teach to women, who were excluded from its recitation.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — on the pu'e chants and their tapu restriction."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "marquesan_tanaoa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Separated out of Tanaoa, made war on him and drove him away."
+   },
+   {
+    "kind": "ally",
+    "personId": "marquesan_ono",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea brought forth Ono and the two joined forces against the powers of the Po."
+     }
+    ],
+    "notes": "Brought forth Ono (Sound) and joined forces with him to break up the darkness of the Po."
+   },
+   {
+    "kind": "spouse",
+    "personId": "marquesan_atanua",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea took Atanua, the Dawn, to wife."
+     }
+    ],
+    "notes": "Husband of Atanua (the Dawn); with her begat the deities and mankind and made the heavens and earth."
+   },
+   {
+    "kind": "spouse",
+    "personId": "marquesan_one_ui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Atea impregnates One-u'i in the pu'e chant; they are the first parents."
+     }
+    ],
+    "notes": "Consort of One-u'i (the sand-woman) in the pu'e creation chant; with her the first parents, fathering the first man Tiki."
+   },
+   {
+    "kind": "father-of",
+    "personId": "marquesan_tiki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — the pu'e chant; Marquesan genealogies naming Tiki as the first man descended from Atea."
+     }
+    ],
+    "notes": "Father of Tiki, the first man — by Atanua in the genealogical tradition, and by One-u'i (the sand-woman) in the pu'e chant."
+   },
+   {
+    "kind": "sibling",
+    "personId": "marquesan_tane",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — in a Hiva Oa tradition 'Atea and Tāne are brothers, the sons of Toho'; Atea and Tane respectively the younger and elder (variant) brother."
+     }
+    ],
+    "notes": "Brother of Tane in the Hiva Oa tradition; both are sons of Toho (Tohetika)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Atea."
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Hiva Oa tradition making Atea and Tane the sons of Toho (Tohetika). The Atea = self-evolved-from-Tanaoa cosmogony (Dixon 1916) is the alternative, parentless account, recorded here as the genealogical-anchor variant."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Atea ('Atea, 'Light'/'Space') is the giver of light and the chief creator-progenitor of the Marquesan pantheon. In the cosmogony he evolves or separates himself out of the darkness of Tanaoa, drives Tanaoa off and confines the night-powers; he brings forth Ono (Sound), who destroys Mutu-hei (Silence); from these two struggles arises Atanua (Dawn), whom Atea takes to wife, begetting the host of lesser deities and the human lineage and creating the heavens and earth. In the pu'e sacred chant he impregnates One-u'i, the 'sand-woman,' fathering the first man Tiki. Marquesan genealogies traced the people of Hiva some ninety generations back to the progenitors Atea and Atanua. In a Hiva Oa tradition Atea and Tane are brothers, sons of Toho (Tohetika). Cognate with Tahitian Atea, Tuamotuan Atea/Vatea, and Hawaiian Wakea."
+ },
+ {
+  "id": "marquesan_hina",
+  "name": {
+   "primary": "Hina",
+   "alt": [
+    "Hina-tu-na-one",
+    "Hina-one (\"Hina of the sand\")"
+   ],
+   "transliterations": {
+    "marquesan": "Hina-tu-na-one",
+    "etymology": "Marquesan Hina (pan-Polynesian Hina/Sina, a name of the primal/lunar woman) + tu-na-one, containing one 'sand/earth' — 'Hina (formed/standing) of the sand.' The wife of Tiki, the sand-formed first woman of the human line."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "union-with-Tiki-and-mothering-of-the-first-Marquesans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a.'"
+     }
+    ],
+    "notes": "Wife of Tiki; with him the mother of the first Marquesans, ancestors of every tribe."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "first-woman-and-ancestress-of-the-marquesans",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Hina-tu-na-one, wife of Tiki, ancestress of the Marquesans."
+     }
+    ],
+    "notes": "The first woman of the human line; with Tiki the ancestress of the Marquesan people."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mothering-of-the-human-line",
+    "name": "Mothering of the human line",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Tiki and Hina-tu-na-one give rise to the first Marquesans."
+     }
+    ],
+    "notes": "With Tiki, brings forth the first Marquesans; the maternal source of the genealogies of every tribe."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_tiki",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Tiki and his wife Hina-tu-na-one."
+     }
+    ],
+    "notes": "Wife of Tiki."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — Hina-tu-na-one, wife of Tiki; cf. the pan-Polynesian Hina/Sina and the sand-formed first woman (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hina (Hina-tu-na-one, 'Hina of the sand') is the wife of Tiki and, with him, the ancestress of the Marquesan people: Handy records that 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a.' Her name carries the element one ('sand/earth'), marking her as the sand-formed first woman of the human line — the Marquesan reflex of the widespread Polynesian Hina/Sina and of the sand-woman motif (cf. Maori Hine-ahu-one). In the sand-woman variant of the Tiki cycle she is shaped from sand by Tiki himself."
+ },
+ {
+  "id": "marquesan_mahui",
+  "name": {
+   "primary": "Mahui",
+   "alt": [
+    "Maui",
+    "Māui",
+    "Maui-tikitiki (Marquesan variant)"
+   ],
+   "transliterations": {
+    "marquesan": "Mahui",
+    "etymology": "Marquesan form of the pan-Polynesian culture-hero Māui (cf. Maori Māui, Hawaiian Māui, Tahitian Māui). The Marquesan reflex shows the form Mahui; the demigod trickster who fishes up land, snares the sun, and wins fire."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "fishing-up-of-the-islands",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Maui 'fished up various islands.'"
+     }
+    ],
+    "notes": "Fished up various islands from the sea floor with his hook and line — the Marquesan reflex of the pan-Polynesian island-fishing exploit."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "winning-of-fire-from-Mahuike",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui 'obtained fire from his grandfather Mahuike in the lower regions.'"
+     }
+    ],
+    "notes": "Descended to the lower regions and obtained fire from his grandfather Mahuike, bringing fire to humankind."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "snaring-of-the-sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui 'snared the sun with a noose of human hair to delay his passage across the sky in order that Maui's laundry might have time to dry.'"
+     }
+    ],
+    "notes": "Snared the sun with a noose of human hair to slow its passage across the sky — in the Marquesan telling, so that his laundry (tapa) might have time to dry."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "culture-hero-and-trickster",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the Marquesan Maui cycle; Maui among the foremost figures of the narratives (Handy, Native Culture, p. 247)."
+     }
+    ],
+    "notes": "The Marquesan reflex of the pan-Polynesian culture-hero and trickster Māui — fisher of islands, winner of fire, snarer of the sun."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fishing-up-of-land",
+    "name": "Fishing up of land from the sea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui fished up various islands."
+     }
+    ],
+    "notes": "Hauls islands up out of the ocean with his fishhook and line."
+   },
+   {
+    "id": "snaring-of-the-sun",
+    "name": "Snaring and slowing of the sun",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui snared the sun with a noose of human hair to delay its passage."
+     }
+    ],
+    "notes": "Snares the sun with a noose of human hair and forces it to move more slowly across the sky."
+   },
+   {
+    "id": "winning-of-fire",
+    "name": "Winning of fire from the underworld",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtained fire from Mahuike in the lower regions."
+     }
+    ],
+    "notes": "Obtains fire from his grandfather Mahuike in the lower regions and brings it to humankind."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mahui-fishhook",
+    "name": "Mahui's fishhook (the island-fishing hook)",
+    "kind": "implement",
+    "role": "The hook and line with which Mahui (Maui) fished up the islands from the sea floor — the instrument of the Marquesan island-fishing exploit, the pan-Polynesian Māui fishhook.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Maui fished up various islands."
+     }
+    ]
+   },
+   {
+    "id": "mahui-sun-snare",
+    "name": "Mahui's sun-snare (noose of human hair)",
+    "kind": "implement",
+    "role": "The noose of human hair with which Mahui snared the sun to delay its passage across the sky so that his laundry might dry.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — the noose of human hair used to snare the sun."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "grandchild",
+    "personId": "marquesan_mahuike",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtained fire from his grandfather Mahuike."
+     }
+    ],
+    "notes": "Grandson of Mahuike, the fire-keeper of the lower regions."
+   }
+  ],
+  "variants": [
+   {
+    "id": "mahui-marquesan-form",
+    "claim": "marquesan-reflex-of-pan-polynesian-Maui",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930); Martina Bucková, 'Māui: Polynesian Culture Hero — Variations of Motifs in Māui's Mythological Cycle in East and West Polynesia' (Studia Orientalia Monographica 3) — on the Marquesan Maui motifs."
+     }
+    ],
+    "weight": "secondary",
+    "notes": "The Marquesan Maui shares the pan-Polynesian motif-set (fishing up land, snaring the sun, winning fire) with Maori, Hawaiian, Tahitian, Mangarevan, and other reflexes; the distinctively Marquesan detail is the sun-snaring motivated by the drying of laundry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930); E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mahui is the Marquesan reflex of the pan-Polynesian culture-hero and trickster Māui — a demigod. Handy's Marquesan Legends records that he fished up various islands, obtained fire from his grandfather Mahuike in the lower regions, and snared the sun with a noose of human hair to delay its passage across the sky 'in order that Maui's laundry might have time to dry.' He is one of the foremost figures of the Marquesan narratives (Native Culture p. 247). His parentage is not anchored to a registered figure here (Handy gives the Maui cycle without a fixed Marquesan divine-parent genealogy in the recorded narratives); the firmly-attested kin link is to his grandfather Mahuike."
+ },
+ {
+  "id": "marquesan_mahuike",
+  "name": {
+   "primary": "Mahuike",
+   "alt": [
+    "Mahuika",
+    "Mahu-ika"
+   ],
+   "transliterations": {
+    "marquesan": "Mahuike",
+    "etymology": "Marquesan reflex of pan-Polynesian Mahuika/Mahuike/Mafuike, the fire-deity of the underworld (cf. Maori Mahuika, Mangaian Mauike). Contains the fire/heat element; the keeper of fire in the lower world, from whom Maui/Mahui obtains fire."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "keeping-of-fire-in-the-underworld",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Maui 'obtained fire from his grandfather Mahuike in the lower regions'; the Marquesan/Tuamotuan Mahu-ika as the fire-god who lives in the underworld and is the grandfather of Maui."
+     }
+    ],
+    "notes": "The keeper of fire who dwells in the lower world (Po); grandfather of Mahui (Maui), from whom Mahui wins fire for humankind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fire-and-the-underworld",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Mahuike the fire-god of the lower regions, source of Maui's fire."
+     }
+    ],
+    "notes": "Personifies and keeps fire in the underworld; the ultimate source of fire for humankind through Mahui's exploit."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "keeping-and-giving-of-fire",
+    "name": "Keeping and giving of fire",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtains fire from Mahuike."
+     }
+    ],
+    "notes": "Holds the fire of the lower world; it is from Mahuike that the culture-hero Mahui obtains fire for mankind."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "underworld-fire-of-mahuike",
+    "name": "The fire of Mahuike",
+    "kind": "mythic-substance",
+    "role": "The fire kept by Mahuike in the lower regions, which the culture-hero Mahui (Maui) obtains from him and brings to humankind — the aetiological source of fire in Marquesan legend.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "grandparent",
+    "personId": "marquesan_mahui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — Maui obtained fire from 'his grandfather Mahuike in the lower regions.'"
+     }
+    ],
+    "notes": "Grandfather of Mahui (Maui), from whom Mahui wins fire."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930); cf. the pan-Polynesian Mahuika fire-deity (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891, s.v. Mahuika)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mahuike (Mahuika / Mahu-ika) is the Marquesan reflex of the pan-Polynesian fire-deity of the underworld. Handy's Marquesan Legends records that Maui 'obtained fire from his grandfather Mahuike in the lower regions' — making Mahuike the keeper of fire in the Po and the grandfather of the culture-hero Mahui, from whom Mahui wins fire for humankind. Listed among Handy's great narrative figures (Native Culture p. 247)."
+ },
+ {
+  "id": "marquesan_mutuhei",
+  "name": {
+   "primary": "Mutu-hei",
+   "alt": [
+    "Mutuhei"
+   ],
+   "transliterations": {
+    "marquesan": "Mutu-hei",
+    "etymology": "Marquesan: mutu 'cut off, ended, silenced' + hei; the name personifies primeval Silence (the soundless stillness of the Po), paired with Tanaoa (Darkness). Cf. Proto-Polynesian *mutu 'severed, cut short, to cease.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "unknown",
+  "vitalStatus": "unknown",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "reign-of-silence-in-the-Po",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I — 'Tanaoa and Mutuhei (\"Darkness\" and \"Silence\") ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Personified Silence, coeval with Tanaoa (Darkness); the two ruled the primeval void."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "destruction-by-Ono",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'after this, Ono (\"Sound\") evolved himself from Atea and destroyed Mutuhei.'"
+     }
+    ],
+    "notes": "Destroyed/dispelled by Ono (Sound), who evolved out of Atea after the conquest of Tanaoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-silence",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Personification of the soundless stillness of the Po, before Sound (Ono) came into being."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "reign-of-primeval-silence",
+    "name": "Reign of primeval silence",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "The pervading soundlessness of the void; broken and ended when Ono (Sound) arose and destroyed it."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "marquesan_tanaoa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'Tanaoa and Mutuhei ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Coeval power of the Po; silence paired with darkness."
+   },
+   {
+    "kind": "enemy",
+    "personId": "marquesan_ono",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — Ono destroyed Mutuhei."
+     }
+    ],
+    "notes": "Destroyed by Ono (Sound)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Personified Silence of the primeval void. With Tanaoa (Darkness), Mutu-hei ruled supreme in the Po. After Atea (Light) separated from Tanaoa and drove him off, Ono (Sound) evolved out of Atea and destroyed Mutu-hei — the second of the two cosmogonic conquests from which the dawn-goddess Atanua arose."
+ },
+ {
+  "id": "marquesan_one_ui",
+  "name": {
+   "primary": "One-u'i",
+   "alt": [
+    "One-uʻi",
+    "Hina-tu-na-one (sand-woman variant)",
+    "the sand-woman"
+   ],
+   "transliterations": {
+    "marquesan": "One-u'i",
+    "etymology": "Marquesan: one 'sand, earth' + u'i; literally 'the sand-(woman)' or 'sand-formed.' The element one ('sand/earth', cf. Maori one, Hawaiian one) marks her as the woman of sand/earth impregnated by 'Atea in the pu'e creation chant. Cf. the pan-Polynesian sand-woman/earth-formed-woman motif (Maori Hine-ahu-one)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "impregnation-by-'Atea-in-the-pu'e-chant",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — the pu'e chant 'recounting the impregnation of One-u'i (the sand woman) by 'Atea'; the chant names plants as 'births by One-u'i after impregnation by 'Atea' to provide materials for the house of the first parents."
+     }
+    ],
+    "notes": "The 'sand-woman,' impregnated by 'Atea in the pu'e (sacred creation chant); from her, after impregnation, are 'born' the plants and materials for the house of the first parents."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "bearing-of-the-first-man-Tiki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — One-u'i (the sand woman) and 'Atea as the first parents; Tiki the first man."
+     }
+    ],
+    "notes": "Mother, by 'Atea, of the first man Tiki, in the pu'e tradition."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sand-formed-first-mother",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — One-u'i the sand-woman of the pu'e chant."
+     }
+    ],
+    "notes": "The sand/earth-formed primal woman, consort of 'Atea, from whom plants, materials, and the first man issue."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sand-born-generativity",
+    "name": "Sand-born generativity",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — in the pu'e, plants and materials are 'births by One-u'i after impregnation by 'Atea.'"
+     }
+    ],
+    "notes": "After impregnation by 'Atea she brings forth, in the chant, the plants and materials needed to build the house of the first parents, and the first man Tiki."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "house-of-the-first-parents",
+    "name": "House of the first parents ('Atea and One-u'i)",
+    "kind": "mythic-structure",
+    "role": "In the pu'e chant, the dwelling of the first parents, for whose construction One-u'i brings forth the various kinds of material (the 'mothers of various kinds of material' invoked in the chant) after her impregnation by 'Atea.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — on the pu'e chant and the house of the first parents 'Atea and One-u'i."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_atea",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Atea impregnates One-u'i in the pu'e chant; they are the first parents."
+     }
+    ],
+    "notes": "Consort of 'Atea in the pu'e creation chant (the sand-woman tradition, parallel to the Atanua tradition)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "marquesan_tiki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — One-u'i and 'Atea as parents of the first man Tiki."
+     }
+    ],
+    "notes": "Mother of the first man Tiki."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — the pu'e sacred creation chant of 'Atea and One-u'i."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "One-u'i ('the sand-woman') is the consort of 'Atea in the pu'e (sacred creation chant) tradition of the Marquesas — the alternative to the Atanua tradition. Handy records that the pu'e recounts the impregnation of One-u'i by 'Atea, naming plants as 'births by One-u'i' after impregnation to provide materials for the house of the first parents; the 'mothers of various kinds of material' are invoked to furnish the construction. She is the mother of the first man, Tiki. The pu'e was tapu to teach to women, who were excluded from its recitation. Her name (one 'sand/earth') marks the pan-Polynesian sand-formed-woman motif (cf. Maori Hine-ahu-one)."
+ },
+ {
+  "id": "marquesan_ono",
+  "name": {
+   "primary": "Ono",
+   "alt": [
+    "'Ono",
+    "'Ono-tapu",
+    "Rongo (pan-Polynesian cognate)",
+    "Lono (Hawaiian cognate)"
+   ],
+   "transliterations": {
+    "marquesan": "'Ono",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Rongo (cf. Maori Rongo, Tahitian Ro'o, Hawaiian Lono); the -ng- of Rongo lost in Marquesan, giving 'Ono. The common Polynesian word rongo means 'sound, to hear, report, fame'; in the Marquesan cosmogony 'Ono personifies Sound, arising from Atea (Light)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "evolution-of-sound-out-of-Atea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon, Oceanic Mythology (1916), ch. I — 'after this, Ono (\"Sound\") evolved himself from Atea and destroyed Mutuhei'; Marquesan tradition that Atea 'brought forth Ono' and the two joined forces."
+     }
+    ],
+    "notes": "Sound evolved itself out of Atea (Light) after the conquest of Tanaoa; joined forces with Atea against the powers of the Po."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "destruction-of-Mutu-hei",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — Ono destroyed Mutuhei (Silence)."
+     }
+    ],
+    "notes": "Destroyed Mutu-hei (Silence) — the second of the two cosmogonic conquests from which the dawn (Atanua) arose."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "defeat-of-Tohetika",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — '‘Ono (‘Ono-tapu / Lono)… was a legendary character who defeats the god Tohetika.'"
+     }
+    ],
+    "notes": "In legendary tradition 'Ono (here 'Ono-tapu) defeats the god Tohetika; like Tane, 'Ono was not a major cult-god in Hiva but a prominent figure of the narratives."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sound",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon, Oceanic Mythology (1916), ch. I — Ono = 'Sound.'"
+     }
+    ],
+    "notes": "Personification of Sound, the power that ends primeval Silence; the Marquesan reflex of Rongo/Lono."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bringing-of-sound",
+    "name": "Bringing of sound into the world",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "By arising as Sound out of Light (Atea), Ono ends the primeval Silence — destroying Mutu-hei."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "marquesan_mutuhei",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — Ono destroyed Mutuhei."
+     }
+    ],
+    "notes": "Destroyed Mutu-hei (Silence)."
+   },
+   {
+    "kind": "ally",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea brought forth Ono and the two joined forces against the powers of the Po."
+     }
+    ],
+    "notes": "Arose from Atea and joined forces with him to break up the darkness of the Po."
+   },
+   {
+    "kind": "enemy",
+    "personId": "marquesan_tohetika",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Ono defeats the god Tohetika."
+     }
+    ],
+    "notes": "Defeats the god Tohetika in legend."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — names 'Ono among the great narrative figures (p. 247) and as the conqueror of Tohetika; Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "'Ono (Marquesan reflex of pan-Polynesian Rongo/Lono) personifies Sound in the cosmogony: arising from Atea (Light) after the conquest of Tanaoa, he destroys Mutu-hei (Silence); from these two struggles the dawn-goddess Atanua arose. In legendary tradition 'Ono (as 'Ono-tapu) defeats the god Tohetika. Handy notes that, like Tane, 'Ono was not a major cult-god of Hiva but a prominent figure of the oral narratives (Native Culture p. 247)."
+ },
+ {
+  "id": "marquesan_pohu",
+  "name": {
+   "primary": "Pohu",
+   "alt": [],
+   "transliterations": {
+    "marquesan": "Pohu",
+    "etymology": "Marquesan Pohu; a legendary culture-hero/ancestor named in the Marquesan narratives. Etymology uncertain; recorded as a personal name in Handy's legend-register."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "legendary-exploits-of-Pohu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 (Pohu among the foremost narrative figures); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the story of Pohu (in which a ceremonial platform with a rail is described)."
+     }
+    ],
+    "notes": "A legendary hero of the Marquesan narratives; the recorded story of Pohu describes, among other things, a ceremonial platform (paepae) furnished with a rail."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "legendary-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — the legend of Pohu; Handy, Native Culture (1923), p. 247."
+     }
+    ],
+    "notes": "A legendary hero/ancestor of Marquesan tradition, protagonist of a recorded legend-cycle."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "heroic-exploits-of-pohu",
+    "name": "Heroic exploits of the Pohu legend",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — the story of Pohu."
+     }
+    ],
+    "notes": "The deeds of the Pohu legend as recorded by Handy."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pohu-railed-platform",
+    "name": "Railed ceremonial platform of the Pohu legend",
+    "kind": "structure",
+    "role": "In the story of Pohu, a ceremonial platform (paepae) is described as having a rail around it — a material-culture detail preserved in the recorded legend.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the platform with a rail in the story of Pohu."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247; Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the legend of Pohu."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Pohu is a legendary hero/ancestor named by Handy among the foremost figures of the Marquesan oral narratives (Native Culture p. 247), with a recorded legend (Marquesan Legends, 1930) in which a ceremonial platform is described as having a rail around it. SOLITARY in this batch: the narrative names Pohu without an attested genealogical link to the other figures authored here.",
+  "_solitary_reason": "Named legendary hero (Handy, Native Culture p. 247; Marquesan Legends 1930) with no attested kin-link to the other batch figures; relations omitted rather than invented."
+ },
+ {
+  "id": "marquesan_tanaoa",
+  "name": {
+   "primary": "Tanaoa",
+   "alt": [
+    "Tana'oa",
+    "Taka'oa",
+    "Te Fatu Moana (\"Lord of the Sea\")"
+   ],
+   "transliterations": {
+    "marquesan": "Tanaoa",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Tangaroa (cf. Maori Tangaroa, Tahitian Ta'aroa, Hawaiian Kanaloa); the medial -ng- of Tangaroa is lost in Marquesan, yielding Tanaoa. In the cosmogony the name personifies the primeval Po (darkness/void); the element conveys the boundless dark sea-night out of which light separated."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "reign-in-the-primeval-Po",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), religion/cosmogony section; Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I — 'Tanaoa and Mutuhei (\"Darkness\" and \"Silence\") ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Lord of darkness and the boundless void (Po), coeval with Mutu-hei (silence). Existent from the beginning."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "separation-of-light-and-confinement-of-darkness",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea 'evolved or separated himself from Tanaoa, and drove him away,' confining the powers of night within set bounds."
+     }
+    ],
+    "notes": "When Atea (Light) separated out of him and drove him off, Tanaoa was confined within set boundaries; the powers of night were hemmed in by the world of light."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "demotion-to-god-of-sea-and-wind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930). Cf. the comparative note that the Marquesan Tangaroa 'could not stay in the role of the paramount deity… turned into the god of the fishermen only.'"
+     }
+    ],
+    "notes": "Having lost the paramountcy to Atea, Tanaoa survives in cult as the god of the sea, the winds, and the patron of fishermen (the Marquesan reflex of Tangaroa/Kanaloa), invoked for the catch."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-darkness-and-the-void",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Dixon, Oceanic Mythology (1916), ch. I."
+     }
+    ],
+    "notes": "Personification of the primeval Po — the boundless, lightless, soundless dark that preceded creation."
+   },
+   {
+    "sphereId": "sea-wind-and-fishing",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tana'oa as god of the sea and winds and patron of fishermen; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "After the cosmogonic defeat, retained as god of the sea and winds; the patron deity of fishermen, who invoked him for success at sea."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-of-the-primeval-void",
+    "name": "Dominion over the primeval darkness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I."
+     }
+    ],
+    "notes": "Sovereignty over the Po before creation — the dark that fills all space until Light separates from it."
+   },
+   {
+    "id": "command-of-sea-and-wind",
+    "name": "Command of the sea and the winds",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tana'oa governs the sea and winds; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "Governs the ocean and the winds; grants or withholds the fisherman's catch."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "fishermens-offerings-to-tanaoa",
+    "name": "Fishermen's offerings and invocations to Tana'oa",
+    "kind": "ritual-offering",
+    "role": "Offerings and chanted invocations made by Marquesan fishermen to Tana'oa (Te Fatu Moana, 'Lord of the Sea') to secure a successful catch and safe passage.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tana'oa as patron of fishermen."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923; Dixon 1916, ch. I — Atea separates from and drives away Tanaoa."
+     }
+    ],
+    "notes": "Atea separated out of him, made war on him, drove him off and confined him."
+   },
+   {
+    "kind": "companion",
+    "personId": "marquesan_mutuhei",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Dixon 1916, ch. I — 'Tanaoa and Mutuhei ruled supreme in the primeval Po.'"
+     }
+    ],
+    "notes": "Coeval power of the Po; darkness paired with silence."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); Roland B. Dixon, Oceanic Mythology (Mythology of All Races vol. 9, 1916), ch. I; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tangaroa."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Marquesan reflex of the pan-Polynesian Tangaroa (Maori Tangaroa, Tahitian Ta'aroa, Hawaiian Kanaloa). In Marquesan cosmogony he is the lord of the primeval darkness and void (Po), coeval with Mutu-hei (silence); the two reigned supreme until Atea (Light) separated himself out of Tanaoa, drove him away, and confined the night-powers within set bounds. Demoted from the paramountcy, Tanaoa survives in cult as the god of the sea and winds and the patron of fishermen (Te Fatu Moana, 'Lord of the Sea')."
+ },
+ {
+  "id": "marquesan_tane",
+  "name": {
+   "primary": "Tane",
+   "alt": [
+    "Tāne",
+    "Kane (Hawaiian cognate)"
+   ],
+   "transliterations": {
+    "marquesan": "Tane",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Tāne (cf. Maori Tāne, Tahitian Tāne, Hawaiian Kāne); the common Polynesian word tāne means 'man, male, husband.' A great god of the wider Polynesian pantheon, brother of Atea in the Marquesan (Hiva Oa) tradition."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "marquesan_tohetika"
+  ],
+  "parentRoles": {
+   "marquesan_tohetika": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-brother-of-Atea-son-of-Toho",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'In one legend Atea and Tāne are brothers, the sons of Toho'; in Hiva Oa Tane and Atea were respectively the elder and younger brother (variant)."
+     }
+    ],
+    "notes": "Brother of Atea, both sons of Toho (Tohetika), in the Hiva Oa tradition."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-great-god-Tane",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tane as one of the great Polynesian gods, though not a major cult-god of Hiva."
+     }
+    ],
+    "notes": "One of the great Polynesian atua (the pan-Polynesian Tane/Kane); in the Marquesas a member of the high pantheon, though Handy notes he was not a major object of cult in Hiva."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "divine-brotherhood-of-Atea",
+    "name": "Divine brotherhood of Atea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea and Tane brothers, sons of Toho."
+     }
+    ],
+    "notes": "Stands beside Atea as co-son of Toho in the Hiva Oa cosmogonic genealogy."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Atea and Tāne are brothers, the sons of Toho.'"
+     }
+    ],
+    "notes": "Brother of Atea; both sons of Toho (Tohetika)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923); E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tane."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tane (the pan-Polynesian Tane/Kane) appears in the Marquesan high pantheon as the brother of Atea: in a Hiva Oa tradition 'Atea and Tāne are brothers, the sons of Toho' (Tohetika). Handy notes that, like 'Ono, Tane was not a major cult-god of Hiva, but he is firmly attested as one of the great gods and as Atea's brother in the cosmogonic genealogy."
+ },
+ {
+  "id": "marquesan_tiki",
+  "name": {
+   "primary": "Tiki",
+   "alt": [
+    "Ti'i",
+    "Tii",
+    "Tiki Tu Kae",
+    "Tiki the Trickster"
+   ],
+   "transliterations": {
+    "marquesan": "Tiki",
+    "etymology": "Marquesan Tiki 'the first man / creator of the first man; an image, a carved human figure' (cf. Tahitian Ti'i, Hawaiian Ki'i, Maori Tiki). The same word denotes the carved anthropomorphic images (tiki/ti'i) representing deified ancestors; from Tiki, the first man and ancestor."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "marquesan_atea",
+   "marquesan_one_ui"
+  ],
+  "parentRoles": {
+   "marquesan_atea": "paternal",
+   "marquesan_one_ui": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-the-first-man",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'the first man mentioned in these genealogies is named Tiki'; born of 'Atea and One-u'i (the sand woman) in the pu'e tradition."
+     }
+    ],
+    "notes": "The first man, born of 'Atea and One-u'i; the first named figure in the ~90-generation genealogies of Hiva."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "fathering-of-the-Marquesan-people",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a.'"
+     }
+    ],
+    "notes": "With his wife Hina (Hina-tu-na-one) fathered the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a (tribe/'face-people')."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "teaching-of-the-arts-of-culture",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923); Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — Tiki as 'the ancestor of men' who 'taught the Marquesan people most facets of their traditional culture,' and the cycle of 'Tiki the Trickster.'"
+     }
+    ],
+    "notes": "As 'ancestor of men,' Tiki taught the Marquesans most facets of their traditional culture; he is also the protagonist of a trickster cycle ('Tiki the Trickster') in Handy's Marquesan Legends."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "first-man-and-ancestor-of-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Tiki the first man and apical ancestor; Handy, Marquesan Legends (1930)."
+     }
+    ],
+    "notes": "The first man and the ancestor of all Marquesans; the source of the human line in the genealogies."
+   },
+   {
+    "sphereId": "culture-bringing-and-the-trickster-cycle",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930) — 'Tiki the Trickster' cycle; Tiki as teacher of culture."
+     }
+    ],
+    "notes": "Taught the arts and customs of culture; figures as a trickster in the recorded legend-cycle."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fathering-of-the-human-race",
+    "name": "Fathering of the human race",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Tiki and Hina-tu-na-one give rise to the first Marquesans; the ~90-generation genealogies descend from him."
+     }
+    ],
+    "notes": "From Tiki and his wife descend the founding ancestors of every Marquesan tribe; the apical generativity passes fully into the human lineage."
+   },
+   {
+    "id": "culture-bringing",
+    "name": "Bringing of the arts of culture to humankind",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 / 1930 — Tiki taught the Marquesans most facets of their traditional culture."
+     }
+    ],
+    "notes": "Taught the Marquesan people the practices of their traditional culture, in the role of culture-hero."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiki-carved-images",
+    "name": "Tiki / ti'i carved images",
+    "kind": "cult-image",
+    "role": "The carved anthropomorphic figures (tiki, of wood or stone) that bear his name and represent deified ancestors and gods in Marquesan religion and material culture; large stone tiki stand at me'ae (temple sites) such as those of Nuku Hiva and Hiva Oa.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Marquesan tiki images; the word tiki denotes both the first man and the carved ancestral figure."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "marquesan_hina",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Tiki and his wife Hina-tu-na-one gave rise to the first Marquesans.'"
+     }
+    ],
+    "notes": "Husband of Hina (Hina-tu-na-one); together the parents of the first Marquesans."
+   },
+   {
+    "kind": "father-of",
+    "personId": "marquesan_hina",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 / Marquesan genealogies — in the sand-woman variant of the Tiki tale, Tiki forms a woman of sand who becomes both his offspring and his wife (the pan-Polynesian Tiki/Tane sand-woman incest motif)."
+     }
+    ],
+    "notes": "In the sand-woman variant Tiki shapes Hina from sand and she is at once his creature/daughter and his wife — recorded here as the attested incestuous-origin motif of the Tiki cycle."
+   }
+  ],
+  "variants": [
+   {
+    "id": "tiki-shapes-the-sand-woman",
+    "claim": "tiki-forms-his-wife-from-sand",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Handy, Marquesan Legends (1930); the pan-Polynesian Tiki/Tane motif in which the first man shapes a woman from sand or earth (cf. Dixon 1916; Tregear 1891, s.v. Tiki)."
+     }
+    ],
+    "weight": "secondary",
+    "notes": "In a widespread Polynesian (and Marquesan) variant, the first man (Tiki, or Tane in some traditions) forms a woman out of sand/earth and takes her to wife, the woman bearing the name Hina-(tu-na-)one; the union founds mankind. This is the 'sand-woman tale' of the Tiki cycle, parallel to 'Atea + One-u'i at the prior generation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — Tiki the first man; Handy, Marquesan Legends (Bishop Museum Bulletin 69, 1930) — the Tiki cycle; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tiki."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tiki is the first man and ancestor of mankind in the Marquesas — the first figure named in the ~90-generation genealogies of Hiva, born of 'Atea and One-u'i (the sand-woman) in the pu'e tradition. With his wife Hina (Hina-tu-na-one) he gave rise to the first Marquesans, whose descendants became the founding ancestors of each mata'eina'a (tribe). In a widespread variant of the Tiki cycle (Marquesan Legends, 1930) he forms a woman out of sand and takes her to wife — the 'sand-woman tale,' the pan-Polynesian first-man/sand-woman motif (parallel to Maori Tane and Hine-ahu-one). As 'ancestor of men' he taught the Marquesans most facets of their traditional culture; he is also a trickster of the legend-cycle. The word tiki names both the first man and the carved anthropomorphic images of deified ancestors and gods central to Marquesan material culture."
+ },
+ {
+  "id": "marquesan_tohetika",
+  "name": {
+   "primary": "Tohetika",
+   "alt": [
+    "Toho",
+    "Tokohiti"
+   ],
+   "transliterations": {
+    "marquesan": "Tohetika",
+    "etymology": "Marquesan Tohetika (also Toho); a primordial progenitor-god. Named as the father of Atea and Tane in the Hiva Oa tradition; the short form Toho appears in the phrase 'sons of Toho.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "progenitorship-of-Atea-and-Tane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — 'Atea and Tāne are brothers, the sons of Toho.'"
+     }
+    ],
+    "notes": "Primordial progenitor; father of Atea (Light) and Tane in the Hiva Oa cosmogonic genealogy."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "defeat-by-Ono",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — 'Ono (Ono-tapu / Lono)… was a legendary character who defeats the god Tohetika.'"
+     }
+    ],
+    "notes": "Defeated by 'Ono in legendary tradition."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-progenitorship",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923) — Toho/Tohetika as father of Atea and Tane."
+     }
+    ],
+    "notes": "A progenitor-god of the high cosmogony; the source from which Atea (Light) and Tane issue in the Hiva Oa tradition."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "progenitor-of-the-great-gods",
+    "name": "Progenitor of the great gods",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — father of Atea and Tane."
+     }
+    ],
+    "notes": "Engenders Atea and Tane; the generative source of the high gods in the Hiva Oa genealogy."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "marquesan_atea",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea and Tane the sons of Toho."
+     }
+    ],
+    "notes": "Father of Atea."
+   },
+   {
+    "kind": "father-of",
+    "personId": "marquesan_tane",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Atea and Tane the sons of Toho."
+     }
+    ],
+    "notes": "Father of Tane."
+   },
+   {
+    "kind": "enemy",
+    "personId": "marquesan_ono",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923 — Ono defeats Tohetika."
+     }
+    ],
+    "notes": "Defeated by 'Ono."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923) — Toho/Tohetika named as father of Atea and Tane, and as defeated by 'Ono (p. 247 narrative register includes Tohetika)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tohetika (short form Toho) is a primordial progenitor-god of the Marquesan high pantheon. In the Hiva Oa tradition recorded by Handy, 'Atea and Tāne are brothers, the sons of Toho' — making Tohetika the father of Atea (Light) and Tane. In legendary tradition he is defeated by 'Ono. He is among the great narrative figures listed by Handy (Native Culture p. 247)."
+ },
+ {
+  "id": "marquesan_tu",
+  "name": {
+   "primary": "Tu",
+   "alt": [
+    "Tū",
+    "Ku (Hawaiian cognate)",
+    "Tiki Tu Kae (compound legendary name)"
+   ],
+   "transliterations": {
+    "marquesan": "Tu",
+    "etymology": "Marquesan reflex of Proto-Polynesian *Tū (cf. Maori Tū / Tūmatauenga, Hawaiian Kū); the common Polynesian element tū 'to stand; stability, war.' One of the great Polynesian atua, named among the foremost Marquesan narrative deities."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Marquesan",
+  "primaryTradition": "Marquesan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "standing-among-the-great-gods",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 — Tu (Tiki Tu Kae) named among the most prominent figures of the oral narratives."
+     }
+    ],
+    "notes": "One of the great atua named in the Marquesan narrative register; the pan-Polynesian Tu/Ku."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-great-god-Tu",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy, The Native Culture in the Marquesas (1923), p. 247 — Tu among the foremost narrative deities."
+     }
+    ],
+    "notes": "A great god of the Marquesan pantheon (the pan-Polynesian Tu/Ku, associated elsewhere with stability and war), named among the principal figures of the narratives."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "standing-of-the-great-god",
+    "name": "Standing among the great gods (Tu)",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Handy 1923, p. 247."
+     }
+    ],
+    "notes": "Counted among the high atua of the Marquesan narratives; the Marquesan reflex of the great Polynesian god Tu/Ku."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "E. S. Craighill Handy, The Native Culture in the Marquesas (Bishop Museum Bulletin 9, 1923), p. 247 — Tu (Tiki Tu Kae) among the most prominent names of the oral narratives; E. Tregear, Maori-Polynesian Comparative Dictionary (1891), s.v. Tu."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tu (the pan-Polynesian Tu/Ku) is named by Handy among the foremost figures of the Marquesan oral narratives (Native Culture p. 247, in the compound Tiki Tu Kae). One of the great Polynesian atua, associated in the wider tradition with stability and war (Maori Tūmatauenga, Hawaiian Kū). SOLITARY in this batch: Handy's narrative register lists the name among the principal deities without a fixed Marquesan genealogy linking Tu to the other figures authored here, so no kin relations are asserted.",
+  "_solitary_reason": "Named among the great Marquesan atua (Handy, Native Culture p. 247) but without an attested genealogical link to the other batch figures; relations omitted rather than invented."
  },
  {
   "id": "marshallese_lejman",
@@ -189439,6 +195145,1828 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Txä'msem — 'the Giant' (Wigyet, 'big man'), the Raven — is the central transformer-trickster and culture-hero of Tsimshian mythology. Born in the sky to the Chief of Heaven's daughter (who drank him in the form of a cedar leaf), he cries for and then breaks open the box Maa, releasing the daylight upon a world that had known only dusk. As transformer he then wanders the earth ordering it: bringing the olachen up the Nass River and contending with his brother Lô·gôbolā' over fresh water. At once benevolent shaper and greedy trickster, he is the pivotal figure of the published Raven cycle recorded by Boas and Tate."
+ },
+ {
+  "id": "tuamotuan_atea",
+  "name": {
+   "primary": "Atea",
+   "alt": [
+    "Vatea",
+    "Wakea (cognate)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Atea",
+    "etymology": "Atea 'light, clear, the open expanse, space' (pan-Polynesian *qatea 'clear space, distance'; the variant Vatea/Wakea is the same name with the common initial v-/w- reflex). The name denotes the sky-expanse and the open space of day."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "In the Tuamotuan pairing-cosmogony recorded by Emory, Atea stands near the apex of the genealogical chain of being (some twenty-eight to thirty generations back in the high-chief genealogies of Hao); the long chain of paired forms below him is recorded in notes rather than as authored figures."
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Atea, the light/space of the sky-expanse, emerges near the apex of the chain of being and takes Fakahotu (the earth/fruitfulness) to consort; together they become the apex-ancestors of mankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Atea the sky and Fakahotu his wife"
+     }
+    ],
+    "notes": "Atea (Wakea) is the parent of mankind and the apex of the arching spaces of the sky in both the Tuamotuan and the cognate Hawaiian creation accounts."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "As their first-born children kept dying young, Atea and Fakahotu exchanged sexes, and the sky became the father-mother who suckled the young.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Atea and Fakahotu exchanging sexes"
+     }
+    ],
+    "notes": "A distinctive Tuamotuan detail recorded by Emory; represented here as a lifecycle event and a faculty rather than as a separate figure."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "Atea sought to seize the young god Tane and sent a host of lesser deities in pursuit of him across the earth and the clouds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the conflict of Atea and Tane"
+     }
+    ],
+    "notes": "The Atea–Tane struggle is the Tuamotuan form of the great Polynesian sky-conflict (paralleling the Maori Rangi/Tane separation); here it is a pursuit of the rebellious young Tane by Atea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky-and-the-open-expanse-of-space",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "atea",
+     "script": "Latin",
+     "rom": "atea"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Atea the sky-expanse"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry-of-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Atea as apex-ancestor of mankind"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "father-mother-of-the-young",
+    "name": "exchanges sex with Fakahotu to become the father-mother who suckles the young",
+    "inheritability": "none",
+    "notes": "When the first children died, Atea and Fakahotu exchanged sexes so that the sky became the nurturing father-mother of mankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   },
+   {
+    "id": "pursuit-of-tane",
+    "name": "sends a host of lesser gods to seize the fleeing Tane",
+    "inheritability": "none",
+    "notes": "Atea attempts to capture the young rebel-god Tane, who escapes across earth and cloud — the Tuamotuan sky-conflict.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tuamotuan_fakahotu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Atea and his wife Fakahotu"
+     }
+    ],
+    "notes": "His consort, the earth/fruitfulness; together the apex-ancestors of mankind."
+   },
+   {
+    "kind": "father-of",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tane among the offspring of Atea and Fakahotu"
+     }
+    ],
+    "notes": "Tane the demiurge is born of Atea and Fakahotu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Atea (Vatea), the light/space of the sky-expanse, is in the Tuamotuan pairing-cosmogony the apex-ancestor of mankind and the consort of Fakahotu (earth/fruitfulness); when their first children died the pair exchanged sexes so the sky became the father-mother of the young, and Atea later sought to seize the rebellious young god Tane.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'The Tuamotuan Creation Charts by Paiore', Journal of the Polynesian Society 48 (1939), pp. 1-29"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / male (primary) / immortal / primordial; the sex-exchange with Fakahotu is recorded in the lifecycle and faculties. Apex-ancestor of mankind in the standard (Emory) Tuamotuan recension; not harmonized in the sources with the esoteric Kiho-tumu, so no kin edge to Kiho is asserted."
+ },
+ {
+  "id": "tuamotuan_fakahotu",
+  "name": {
+   "primary": "Fakahotu",
+   "alt": [
+    "Fa'ahotu",
+    "Faahotu",
+    "Haumea (cognate role)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Fakahotu",
+    "etymology": "Causative faka- + hotu 'to bear fruit, to form fruit/produce' — 'that which causes fruit to form; the fructifier'; the earth as the fruit-bearing power. The Tahitian dialect form is Fa'ahotu."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Like Atea, placed near the apex of the Tuamotuan chain of being; her own forebears in the long paired-form chain are recorded in notes rather than authored."
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Fakahotu, the fruit-bearing earth, becomes the consort of Atea the sky; together they are the apex-ancestors of mankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Fakahotu the wife of Atea"
+     }
+    ],
+    "notes": "Fakahotu is the earth/fruitfulness paired with Atea the sky in the Tuamotuan creation."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "When the first-born children died young, Fakahotu and Atea exchanged sexes so that the sky became the father-mother that suckled the young.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Atea and Fakahotu exchanging sexes"
+     }
+    ],
+    "notes": "The sex-exchange of the primal pair is the same Tuamotuan detail recorded in Atea's lifecycle."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-fruitfulness",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hotu",
+     "script": "Latin",
+     "rom": "hotu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Fakahotu the fruit-bearing earth"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestry-of-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Fakahotu as apex-ancestress of mankind"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fruit-bearing",
+    "name": "causes fruit and produce to form (the fructifying earth)",
+    "inheritability": "none",
+    "notes": "As the earth-power Fakahotu makes the world bear fruit; the name itself means 'the fructifier'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tuamotuan_atea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Fakahotu and her husband Atea"
+     }
+    ],
+    "notes": "Her consort, the sky-expanse Atea."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tane among the offspring of Atea and Fakahotu"
+     }
+    ],
+    "notes": "Mother of the demiurge Tane by Atea."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Fakahotu (Fa'ahotu), 'the fructifier', is the earth/fruitfulness power of the Tuamotuan cosmogony: the consort of Atea the sky, with him the apex-ancestress of mankind and the mother of the demiurge Tane; when their first children died the pair exchanged sexes so the sky became the nurturing father-mother.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / female / immortal / primordial. Earth-and-fruitfulness consort of Atea; mother of Tane. The cognate role across Polynesia is Haumea/Papa (noted, not asserted as identity)."
+ },
+ {
+  "id": "tuamotuan_faumea",
+  "name": {
+   "primary": "Faumea",
+   "alt": [
+    "Faumea the eel-woman"
+   ],
+   "transliterations": {
+    "tuamotuan": "Faumea",
+    "etymology": "Faumea, the Tuamotuan eel-woman; the name is not securely analyzed and is left unglossed."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Her own parentage is not given in the Tuamotuan sources; she is the eel-woman of her own island whom Takaroa comes to. Her sons by Takaroa (Tu-nui-ka-rere and Turi-a-Faumea) are named but not authored figures."
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Faumea, the eel-woman, dwells on her island with man-eating eels within her body; when the sea-god Takaroa comes she teaches him to lure the eels out, and becomes his wife.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of the eel-woman Faumea and Tangaroa/Takaroa"
+     }
+    ],
+    "notes": "The eel-woman and the luring-out of the eels (a folk vagina-dentata motif) is the firmly-attested Tuamotuan Faumea narrative."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Faumea bears Takaroa two sons, Tu-nui-ka-rere and Turi-a-Faumea; when the octopus-demon Rogo-tumu-here later carries off Turi-a-Faumea's wife Hina-a-rau-riki, Faumea holds the wind in the sweat of her armpit and releases it at Takaroa's command to speed the rescue-canoes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Faumea's sons and her holding of the wind in the rescue from Rogo-tumu-here"
+     }
+    ],
+    "notes": "Faumea's control of the wind ('the sweat of her armpit') powers the rescue of her son's wife from the octopus-demon."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-eel-woman-and-fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Faumea the eel-woman of the Tuamotus"
+     }
+    ]
+   },
+   {
+    "sphereId": "command-of-the-wind",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Faumea holding and releasing the wind"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "eels-within-the-body",
+    "name": "harbours man-eating eels within her body and teaches their luring-out",
+    "inheritability": "none",
+    "notes": "Faumea, the eel-woman, has man-eating eels within her; she teaches Takaroa to lure them out so that he may take her to wife.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on the eel-woman Faumea"
+     }
+    ]
+   },
+   {
+    "id": "hold-the-wind-in-the-armpit",
+    "name": "holds the wind in the sweat of her armpit and releases it to speed canoes",
+    "inheritability": "none",
+    "notes": "Faumea keeps the wind 'in the sweat of her armpit' and frees it at Takaroa's word to drive the rescue-canoes against the octopus-demon Rogo-tumu-here.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Faumea and the wind in the rescue from Rogo-tumu-here"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Faumea becoming the wife of Tangaroa/Takaroa"
+     }
+    ],
+    "notes": "Her husband, the sea-god Takaroa; mother of his sons Tu-nui-ka-rere and Turi-a-Faumea."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Faumea is the Tuamotuan eel-woman: she harbours man-eating eels within her body and teaches the sea-god Takaroa to lure them out, becomes his wife and bears Tu-nui-ka-rere and Turi-a-Faumea, and in the octopus-demon episode holds the wind in the sweat of her armpit, releasing it to speed the rescue-canoes.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (quoting the Tuamotuan Faumea text)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / female / immortal / mythic. Firmly attested as a Tuamotuan figure (the eel-woman of the Tuamotus). Wired as spouse of Takaroa; her sons Tu-nui-ka-rere (Rata-nui) and Turi-a-Faumea are named but thin (not authored). Her own parentage is not given, but she carries a real in-batch edge, so not flagged SOLITARY."
+ },
+ {
+  "id": "tuamotuan_hina",
+  "name": {
+   "primary": "Hina",
+   "alt": [
+    "Hine",
+    "Hina-fa'auru-va'a",
+    "Hina-i-te-marama (Hina in the moon)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Hina",
+    "etymology": "Hina (pan-Polynesian *Sina/Hina), the great Polynesian female deity and moon-woman; the aspect-name Hina-fa'auru-va'a means 'Hina who steers/pilots the canoe' (fa'auru 'to steer/guide in', va'a 'canoe')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Her own parentage is not securely given in the Tuamotuan sources; she is the multi-aspect Polynesian Hina (moon-woman, canoe-pilot, sister of the voyager Ru). Ru is named as her brother but is not an authored figure in this batch."
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Hina, the great female deity and moon-woman, is the wife of the eel Te Tuna until Maui slays Te Tuna and wins her.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Hina, Te Tuna and Maui"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan Hina–Tuna–Maui episode"
+     }
+    ],
+    "notes": "Hina is the wife of the eel Te Tuna whom Maui kills; the coconut springs from Tuna's head and Maui wins Hina."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "As Hina-fa'auru-va'a, 'Hina who steers the canoe', she is the divine canoe-pilot and the sister of the voyager-god Ru.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, and the Tuamotuan voyaging traditions, on Hina-fa'auru-va'a and her brother Ru"
+     }
+    ],
+    "notes": "The canoe-pilot aspect links Hina to the sea, navigation and royalty in the Tuamotus; her several aspect-names are treated as one Hina."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "marama",
+     "script": "Latin",
+     "rom": "marama"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Hina the moon-woman in the Tuamotuan and wider Polynesian record"
+     }
+    ]
+   },
+   {
+    "sphereId": "canoe-piloting-and-navigation",
+    "contextTag": "episodic",
+    "term": {
+     "value": "fa'auru va'a",
+     "script": "Latin",
+     "rom": "fa'auru va'a"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Hina-fa'auru-va'a"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pilot-the-canoe",
+    "name": "steers/pilots the canoe (Hina-fa'auru-va'a)",
+    "inheritability": "none",
+    "notes": "As the divine canoe-pilot Hina guides the voyaging-canoe; she is the sister of the voyager Ru.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "tuamotuan_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui winning Hina"
+     }
+    ],
+    "notes": "Won by Maui when he slays her husband, the eel Te Tuna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hina is the great Tuamotuan female deity and moon-woman: the wife of the eel Te Tuna won by Maui when he slays Tuna (the first coconut springing from Tuna's head), and, as Hina-fa'auru-va'a, the divine canoe-pilot and sister of the voyager-god Ru.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (quoting the Tuamotuan Hina material)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / female / immortal / mythic. The multi-aspect Polynesian Hina; her aspect-names (moon-woman; Hina-fa'auru-va'a the canoe-pilot) are treated as one figure. Wired to Maui as lover (the Te Tuna cycle); her own parentage is not securely given, so no parentId is asserted (she carries a real in-batch edge, so not flagged SOLITARY). Her brother Ru is named but not authored."
+ },
+ {
+  "id": "tuamotuan_kiho",
+  "name": {
+   "primary": "Kiho-tumu",
+   "alt": [
+    "Kiho",
+    "Kiho the Source",
+    "Kio-tumu"
+   ],
+   "transliterations": {
+    "tuamotuan": "Kiho-tumu",
+    "etymology": "Kiho, the proper name of the supreme self-existent god, qualified tumu 'source, origin, foundation, base, trunk' (the pan-Polynesian *tumu); hence 'Kiho the Source / Kiho the Foundation'. The element tumu also names the foundation (te tumu) of the world beneath which Kiho dwells."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Self-existent: the supreme creator who alone existed before the cosmos, with neither father nor mother. His forebears are not recorded because by definition there are none."
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Kiho-tumu alone existed, self-created and unbegotten, dwelling in the void (Te Kore) beneath the foundation of the world before there was any sky, sea, land or other god.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933), on the self-existent supreme god dwelling in the void beneath the world-foundation"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Religion (Bernice P. Bishop Museum Bulletin 103, 1933), on Kiho-tumu the supreme creator"
+     }
+    ],
+    "notes": "The esoteric Tuamotuan high-god, 'Kiho the Source'. The reliability and antiquity of the Kiho cult as Stimson reconstructed it was later questioned by K. P. Emory (the well-known Stimson–Emory disagreement); the figure is nonetheless firmly attested in Stimson's recorded chants and texts."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "By his creative word — the chanted command issuing from the void — Kiho-tumu brought forth the cosmos, the foundation of the world, the heavens and the gods.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933), on creation by the word of Kiho"
+     }
+    ],
+    "notes": "Creation proceeds from Kiho's spoken/chanted word rather than from a sexual pairing — the distinctive feature of the esoteric Tuamotuan theology recorded by Stimson."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "supreme-self-existent-creator",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933), on Kiho as the supreme self-existent creator"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-primordial-void-beneath-the-world-foundation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "te tumu",
+     "script": "Latin",
+     "rom": "te tumu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Religion (Bernice P. Bishop Museum Bulletin 103, 1933), on the void and the foundation (tumu) of the world"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-by-the-word",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933), on creation by the creative word of Kiho"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "creative-word-from-the-void",
+    "name": "creates the cosmos and the gods by his spoken/chanted word",
+    "inheritability": "none",
+    "notes": "Dwelling alone in the void beneath the world-foundation, Kiho-tumu brings the universe into being by uttering it — the creative command of the supreme self-existent god.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933), on creation by the word of Kiho"
+     }
+    ]
+   },
+   {
+    "id": "self-existence",
+    "name": "self-existent and unbegotten",
+    "inheritability": "none",
+    "notes": "Kiho exists of himself before and beneath all things, with neither father nor mother — the defining attribute of the Tuamotuan supreme god.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933), on the self-existent supreme creator"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuamotuan_te_mago_roa",
+    "name": "Te Mago-roa, 'the Long Shark' (the dark rift of the Milky Way), Kiho's sacred ship",
+    "kind": "vessel",
+    "role": "the dark rift within the Milky Way, conceived as the sacred ship of Kiho-tumu; the Milky Way itself is his sacred ocean",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Religion (Bernice P. Bishop Museum Bulletin 103, 1933), on the Milky Way as Kiho's sacred ocean and the dark rift as his ship 'the Long Shark'"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Kiho-tumu ('Kiho the Source') is the supreme self-existent creator of the esoteric Tuamotuan theology recorded by Stimson: he alone existed in the void beneath the foundation of the world and, unbegotten, brought forth the cosmos and the gods by his creative word; his sacred ocean is the Milky Way and the dark rift within it his ship, 'the Long Shark'.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Cult of Kiho-tumu (Bernice P. Bishop Museum Bulletin 111, 1933)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Religion (Bernice P. Bishop Museum Bulletin 103, 1933)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / male / immortal / primordial. SOLITARY: self-existent and parentless by definition. The Kiho cult as Stimson reconstructed it was later questioned for its antiquity/spread by K. P. Emory; the figure is firmly attested in Stimson's recorded chants and is the apex of the esoteric Tuamotuan recension. Not genealogically harmonized with the Atea–Fakahotu cosmogony (a separate recension), so no kin edge is asserted."
+ },
+ {
+  "id": "tuamotuan_maui",
+  "name": {
+   "primary": "Maui-tikitiki",
+   "alt": [
+    "Maui",
+    "Maui-tikitiki-a-Ataraga",
+    "Maui the wonder-worker"
+   ],
+   "transliterations": {
+    "tuamotuan": "Maui-tikitiki",
+    "etymology": "Maui, the pan-Polynesian culture-hero, qualified tikitiki (the topknot/last-born); in the Tuamotuan (Anaa) recension Maui-tikitiki-a-Ataraga, 'Maui the topknot, son of Ataraga'. He is the fifth and last-born son."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Fifth and last-born son of Ataraga (his father) and the chiefess Huahega, daughter of the fire-magician Mahuike; younger brother of four elder Maui-brothers. Ataraga, Huahega and the brothers are firmly named in the Tuamotuan cycle but are thinly-developed name-level figures not authored in this batch, so no in-batch parent/sibling edge is asserted."
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "Maui-tikitiki is born the fifth and last-born son of Ataraga and the chiefess Huahega; he gains recognition by his father and by his mother's family.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), the Tuamotuan Maui cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937), the Anaa Maui-tikitiki-a-Ataraga cycle"
+     }
+    ],
+    "notes": "Maui's last-born status and his winning of recognition are the standard opening of the Tuamotuan (Anaa) Maui cycle."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "Maui snares the sun with a rope made from the hairs of his mother's head, forcing it to move more slowly so the days are long enough.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui snaring the sun"
+     }
+    ],
+    "notes": "The sun-snaring with a rope of the mother's hair is the firmly-attested Tuamotuan form of the deed."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "With the help of his brothers, Maui fishes up the land of Havaiki from the floor of the ocean.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the fishing-up of Havaiki"
+     }
+    ],
+    "notes": "The island-fishing brings up the land of Havaiki — the Tuamotuan form of the pan-Polynesian land-fishing deed."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 3,
+    "startEvent": "Refused a house by the fire-magician Mahuike, Maui kills him in a tossing-contest and so brings fire into the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui and Mahuike and the winning of fire"
+     }
+    ],
+    "notes": "Fire is won by the slaying of the fire-holder Mahuike (the maternal grandfather), the Tuamotuan fire-origin."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 4,
+    "startEvent": "Maui slays the eel Te Tuna, the husband of Hina, and wins Hina; from Te Tuna's severed head springs the first coconut palm, Niu-roa-i-Havaiki.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui, Te Tuna and Hina"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan Maui–Tuna–Hina episode and the coconut from Tuna's head"
+     }
+    ],
+    "notes": "The slaying of the eel Te Tuna and the springing of the first coconut from his head is the deed by which Maui wins Hina."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "trickster-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui the wonder-worker"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sun-and-the-length-of-the-day",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui snaring the sun"
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui and Mahuike and the winning of fire"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "snare-the-sun",
+    "name": "snares the sun with a rope of his mother's hair",
+    "inheritability": "none",
+    "notes": "Maui nooses the sun with a cord made of the hairs of his mother's head and compels it to move slowly, lengthening the day.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     }
+    ]
+   },
+   {
+    "id": "fish-up-the-land",
+    "name": "fishes up the land of Havaiki from the ocean floor",
+    "inheritability": "none",
+    "notes": "With his brothers Maui draws up the land of Havaiki from beneath the sea.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     }
+    ]
+   },
+   {
+    "id": "win-fire-from-mahuike",
+    "name": "wins fire by slaying the fire-magician Mahuike",
+    "inheritability": "none",
+    "notes": "Refused a house, Maui kills Mahuike in a tossing-contest and brings fire into the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     }
+    ]
+   },
+   {
+    "id": "slay-the-eel-te-tuna",
+    "name": "slays the eel Te Tuna (the first coconut springs from his head)",
+    "inheritability": "none",
+    "notes": "Maui kills the eel Te Tuna, husband of Hina; from the severed head grows the first coconut palm, Niu-roa-i-Havaiki.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuamotuan_maui_sun_snare",
+    "name": "the sun-snare of his mother's hair",
+    "kind": "implement",
+    "role": "the noose/rope braided from the hairs of Maui's mother's head with which he snares and slows the sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the sun-snare"
+     }
+    ]
+   },
+   {
+    "id": "tuamotuan_niu_roa_i_havaiki",
+    "name": "Niu-roa-i-Havaiki, the first coconut palm (from Te Tuna's head)",
+    "kind": "plant",
+    "role": "the first coconut palm, sprung from the severed head of the eel Te Tuna slain by Maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the coconut from Te Tuna's head"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui winning Hina by slaying Te Tuna"
+     }
+    ],
+    "notes": "Maui wins Hina (the wife of the eel Te Tuna) by slaying Te Tuna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Maui-tikitiki, the fifth and last-born son of Ataraga and the chiefess Huahega, is the Tuamotuan demigod culture-hero who snared the sun with a rope of his mother's hair, fished up the land of Havaiki, won fire by slaying the fire-magician Mahuike, and slew the eel Te Tuna (winning Hina, the first coconut springing from Tuna's head).",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "DEMIGOD: the culture-hero of the heroic stratum. Entered male / immortal / mythic-prehistoric. Wired to Hina as lover (the Te Tuna cycle). His parents Ataraga and Huahega and his four elder brothers are firmly named but thin, recorded in parentRoles/notes (not authored)."
+ },
+ {
+  "id": "tuamotuan_puna",
+  "name": {
+   "primary": "Puna",
+   "alt": [
+    "Puna, king of Hiti-marama",
+    "Puna-'ariki"
+   ],
+   "transliterations": {
+    "tuamotuan": "Puna",
+    "etymology": "Puna 'spring, source of water; a hollow' — here the proper name of the king of the deep-sea land Hiti-marama; the name is left otherwise unglossed."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "King/sovereign of the sea-land Hiti-marama; the antagonist of the Rata / Vahi-vero cycle. His kin and the heroes he opposes (Kui, Vahi-vero, Tahiti-tokerau, Rata) are not authored figures in this batch."
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "Puna reigns as king of Hiti-marama, a land of the deep north of the later Pitcairn and Henderson but 'long since swallowed in the sea'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937), the Rata / Vahi-vero cycle and Puna king of Hiti-marama"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan Rata cycle and Puna king of Hiti-marama"
+     }
+    ],
+    "notes": "Hiti-marama is the lost sea-land over which Puna is sovereign; his demon-bird army (chief Matutu-ta'ota'o) seizes Rata's parents."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "Puna abducts the water-nymph Tahiti-tokerau, wife of Vahi-vero; when Vahi-vero rescues her, Puna comes in the form of a shark for vengeance, killing Vahi-vero and reclaiming her.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937), on Puna's abduction and shark-form vengeance"
+     }
+    ],
+    "notes": "Puna's manifestation as a shark for vengeance is the constant of the cycle (paralleling the Hawaiian shark-gods); he is the deep-sea sovereign-antagonist, not an eel."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship-of-the-deep-sea-land",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Puna king of Hiti-marama"
+     }
+    ]
+   },
+   {
+    "sphereId": "sea-and-sharks",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937), on Puna's shark-form"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kingship-of-hiti-marama",
+    "name": "reigns as sovereign of the deep-sea land Hiti-marama",
+    "inheritability": "none",
+    "notes": "Puna is the king of the lost sea-land Hiti-marama, commanding its demon-bird army.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Puna king of Hiti-marama"
+     }
+    ]
+   },
+   {
+    "id": "shark-form-vengeance",
+    "name": "takes the form of a shark to enact vengeance",
+    "inheritability": "none",
+    "notes": "Puna comes in shark-form to kill Vahi-vero and reclaim Tahiti-tokerau.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937), on Puna's shark-form vengeance"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Puna is the Tuamotuan king of Hiti-marama, a land of the deep 'long since swallowed in the sea', and the antagonist-sovereign of the Rata / Vahi-vero cycle: he abducts the water-nymph Tahiti-tokerau (wife of Vahi-vero), his demon-bird army seizes Rata's parents, and he comes in the form of a shark for vengeance.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (recounting the Tuamotuan Rata/Puna cycle)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / male / immortal / mythic-prehistoric. ACCURACY NOTE: the prompt glossed Puna as 'the eel-lord of the deep', but the Tuamotuan sources firmly make Puna the SHARK-form king/sovereign of the lost sea-land Hiti-marama in the Rata/Vahi-vero cycle (the distinct eel of the Tuamotu cycles is Te Tuna, slain by Maui); Puna is authored accordingly. SOLITARY: his kin and the heroes he opposes (Kui, Vahi-vero, Tahiti-tokerau, Rata) are not authored figures in this batch, so no in-batch kin edge is asserted."
+ },
+ {
+  "id": "tuamotuan_rongo",
+  "name": {
+   "primary": "Rongo",
+   "alt": [
+    "Rongo, son of Vaio",
+    "Ro'o (cognate)",
+    "Lono (cognate)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Rongo",
+    "etymology": "Rongo (pan-Polynesian *rongo 'to hear, sound, report, fame'); the great god Rongo, cognate with Tahitian Ro'o, Hawaiian Lono and Maori Rongo. In the Tuamotus he is the subject of the legend of Rongo son of Vaio."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Named in the Tuamotu legend as Rongo son of Vaio; his placement among the great gods varies across the creation-charts, and Vaio is not an authored figure."
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Rongo is reckoned among the great gods of the Tuamotus and is the subject of the Tuamotu legend of Rongo, son of Vaio.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'The Tuamotu Legend of Rongo, Son of Vaio', Journal of the Polynesian Society 56 (1947), pp. 52-54"
+     }
+    ],
+    "notes": "Rongo's own dedicated Tuamotuan legend is recorded by Emory; the great gods Tane, Tu, Tangaroa and Rongo appear in the East-Polynesian genealogies from the Tuamotus."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "With Tane and Tu, Rongo takes part in the making of the first man, fetching the earth from which the man is formed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the making of man by Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "In the man-making triad it is Rongo who fetches the pieces of earth from which Tu shapes the man with his spittle."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-great-gods-of-the-tuamotus",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Rongo among the great gods"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-making-of-mankind",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Rongo's part in making man"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fetch-the-earth-for-the-first-man",
+    "name": "fetches the pieces of earth from which the first man is shaped",
+    "inheritability": "none",
+    "notes": "Rongo's office in the man-making triad is to bring the earth that Tu then works with his spittle into the first man, in the image of Tane.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the man-making triad Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Fellow of the man-making triad."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tuamotuan_tu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the man-making triad Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Fellow of the man-making triad."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Rongo is one of the great gods of the Tuamotus — the subject of the dedicated Tuamotu legend of Rongo son of Vaio (Emory, JPS 1947) — and a member of the man-making triad Tane–Tu–Rongo, whose office is to fetch the earth from which the first man is shaped.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'The Tuamotu Legend of Rongo, Son of Vaio', Journal of the Polynesian Society 56 (1947), pp. 52-54"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / male / immortal / mythic. Wired as sibling of Tane and Tu (the man-making triad). Atea/Fakahotu parentage is NOT asserted (the Paiore charts place the great gods variably; he is named 'son of Vaio' in his own legend). Cognate with Tahitian Ro'o and Hawaiian Lono (noted, not identity)."
+ },
+ {
+  "id": "tuamotuan_tahaki",
+  "name": {
+   "primary": "Tahaki",
+   "alt": [
+    "Tafaki",
+    "Tahaki-nui",
+    "Tafa'i (cognate)",
+    "Tawhaki (cognate)",
+    "Kaha'i (cognate)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Tahaki",
+    "etymology": "Tahaki (Tuamotuan; pan-Polynesian *Tafaki/Taafaki), the radiant hero, cognate with Maori Tawhaki, Tahitian Tafa'i, Hawaiian Kaha'i (the regular t-/k- and f-/h- correspondences). Etymology of the name itself is contested."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "Son of Hema (his father, seized by the goblins of Matuauru) and twin of Karihi; grandson, in the cycle, of the blind ancestress Kuhi (Kui). Hema, Karihi and Kuhi are firmly named in the Tahaki cycle but are thinly-developed name-level figures not authored in this batch, so no in-batch kin edge is asserted."
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "Tahaki is born the radiant red-skinned hero, son of Hema and twin of Karihi — but only Tahaki possesses the magical power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), the Fagatau recension of the Tahaki cycle"
+     }
+    ],
+    "notes": "His reddish skin (and fair/golden hair) is the constant recognition-mark of Tahaki across the Polynesian recensions; in the Tuamotuan telling he and Karihi are twins, only Tahaki magical."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "Tahaki sets out with Karihi to recover his father Hema, who had trespassed on the lands of the goblins of Matuauru while crabbing and been taken captive; en route Karihi is snared on the fishing-line of their blind grandmother Kuhi.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the quest to recover Hema"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937), the Anaa recension of the Tahaki cycle"
+     }
+    ],
+    "notes": "The rescue-of-the-father quest is the core of the Tahaki cycle (paralleling the wider Polynesian Tawhaki–Hema narrative)."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "Tahaki reaches the land of the goblins with his great net Tukutuhuraho-nui ('the great spider'), ensnares the goblins, and beats them to death, recovering his father.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the netting and slaying of the goblins"
+     }
+    ],
+    "notes": "The great net Tukutuhuraho-nui is the firmly-attested instrument of the goblin-slaying."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 3,
+    "startEvent": "In the land of the fish Tahaki dives, and the fish swarm and strip away his beautiful red skin so that he surfaces naked; his skin is afterward restored (he gives his dark skin to the Hami-kere fish and recovers his red radiance).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the stripping and restoration of Tahaki's skin"
+     }
+    ],
+    "notes": "The red-skin-stripped-and-restored episode is a fixed and distinctive element of the Tahaki cycle."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-radiant-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Tahaki the radiant red-skinned hero"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-rescue-quest-and-vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the quest to recover Hema"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "red-radiant-skin",
+    "name": "shines with red radiant skin (his recognition-mark)",
+    "inheritability": "partial",
+    "notes": "Tahaki's reddish, shining skin is the sign by which he is known; when stripped by the fish it is restored to him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     }
+    ]
+   },
+   {
+    "id": "ensnare-and-slay-the-goblins",
+    "name": "ensnares and slays the goblins of Matuauru with the great net",
+    "inheritability": "none",
+    "notes": "With the net Tukutuhuraho-nui Tahaki nets the goblins who hold his father and beats them to death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuamotuan_tukutuhuraho_nui",
+    "name": "Tukutuhuraho-nui, 'the great spider' (Tahaki's goblin-snaring net)",
+    "kind": "implement",
+    "role": "the great net with which Tahaki ensnares the goblins of Matuauru in the rescue of his father Hema",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the net Tukutuhuraho-nui"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Tahaki (Tafaki) is the radiant red-skinned demigod hero of the firmly-attested Tuamotuan cycle: son of Hema and twin of Karihi, recognized by his red shining skin, who quests to recover his father Hema from the goblins of Matuauru, ensnaring and slaying them with the great net Tukutuhuraho-nui, and whose red skin is stripped by the fish and restored.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Stimson, J. Frank. Tuamotuan Legends (Island of Anaa), Part I: The Demigods (Bernice P. Bishop Museum Bulletin 148, 1937)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "DEMIGOD: a hero of the heroic-genealogy stratum, not a god. Entered male / immortal / mythic-prehistoric. SOLITARY: his named kin (father Hema, twin Karihi, grandmother Kuhi/Kui) are thinly-developed name-level figures not authored in this batch, so no in-batch kin edge is asserted. Cognate with Maori Tawhaki, Tahitian Tafa'i, Hawaiian Kaha'i (noted, not identity)."
+ },
+ {
+  "id": "tuamotuan_takaroa",
+  "name": {
+   "primary": "Takaroa",
+   "alt": [
+    "Tangaroa",
+    "Tagaloa (cognate)",
+    "Kanaloa (cognate)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Takaroa",
+    "etymology": "Takaroa, the Tuamotuan/East-Polynesian dialect form of the pan-Polynesian *Tangaloa, the great sea-and-creator god (Maori Tangaroa, Samoan/Tongan Tangaloa, Hawaiian Kanaloa). The t-/k- and ng-/k- correspondences are regular."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "One of the great gods of the Tuamotuan pantheon; his placement in the creation-charts varies and his forebears are recorded in notes rather than authored."
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Takaroa, the sea-creator god, is reckoned among the great gods of the Tuamotuan cosmogony.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tangaroa/Takaroa among the great gods of the Tuamotus"
+     }
+    ],
+    "notes": "In the Tuamotus, as across the Austral, Society and Gambier groups, Takaroa is the god of the sea."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Takaroa sailed to the island of the eel-woman Faumea, who had man-eating eels within her body; she taught him to lure the eels out, and he took her to wife, begetting Tu-nui-ka-rere and Turi-a-Faumea.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of Tangaroa and the eel-woman Faumea and their sons Tu-nui-ka-rere and Turi-a-Faumea"
+     }
+    ],
+    "notes": "The Faumea episode is the firmly-attested Tuamotuan Takaroa narrative; the sons Tu-nui-ka-rere (Rata-nui) and Turi-a-Faumea are recorded in parentRoles/notes rather than authored as padding."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sea-and-the-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "takaroa",
+     "script": "Latin",
+     "rom": "takaroa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Takaroa the sea-god"
+     }
+    ]
+   },
+   {
+    "sphereId": "creator-god",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Takaroa among the creator-gods"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lordship-of-the-sea",
+    "name": "lord of the sea and the creatures of the deep",
+    "inheritability": "partial",
+    "notes": "Takaroa is the sea-god of the Tuamotus, the Tangaroa of the pan-Polynesian ocean.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   },
+   {
+    "id": "draw-out-the-eels-of-faumea",
+    "name": "lures out the man-eating eels of Faumea as taught by her",
+    "inheritability": "none",
+    "notes": "On Faumea's island Takaroa, taught by her, draws out the eels within her body so that he may take her to wife.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Tangaroa/Takaroa and the eel-woman Faumea"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tuamotuan_faumea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Tangaroa/Takaroa taking the eel-woman Faumea to wife"
+     }
+    ],
+    "notes": "The eel-woman Faumea, mother of his sons Tu-nui-ka-rere and Turi-a-Faumea."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Takaroa (Tangaroa) is the Tuamotuan sea-creator god, reckoned among the great gods of the group; the firmly-attested Tuamotuan narrative is his voyage to the eel-woman Faumea, who teaches him to lure the man-eating eels from her body, becomes his wife, and bears him Tu-nui-ka-rere and Turi-a-Faumea.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (quoting the Tuamotuan Faumea text)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / male / immortal / primordial. Takaroa is the standard Tuamotuan dialect form of Tangaroa. Wired as spouse of Faumea; the sons Tu-nui-ka-rere (Rata-nui) and Turi-a-Faumea are recorded in parentRoles/notes (thin, not authored)."
+ },
+ {
+  "id": "tuamotuan_tane",
+  "name": {
+   "primary": "Tane",
+   "alt": [
+    "Tane the demiurge"
+   ],
+   "transliterations": {
+    "tuamotuan": "Tane",
+    "etymology": "Tane 'man, male' (pan-Polynesian *taane); the great god Tane, the active male principle and shaper of the visible world."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tuamotuan_atea",
+   "tuamotuan_fakahotu"
+  ],
+  "parentRoles": [
+   "Son of Atea (the sky-expanse) and Fakahotu (the fruit-bearing earth); the demiurge-son of the primal pair."
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Tane, born of Atea and Fakahotu, becomes the active shaper of the visible world — the demiurge among the great gods.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tane the active god of the Tuamotuan cosmogony"
+     }
+    ],
+    "notes": "Tane is the worker-god of the visible world in the Tuamotus, as across East Polynesia."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Pursued by Atea (who sent a host of lesser gods after him), Tane fled across the earth and wandered the clouds; driven by hunger he killed and ate one of his ancestors — the beginning of cannibalism.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the flight of Tane and the origin of cannibalism"
+     }
+    ],
+    "notes": "The Atea–Tane conflict; the cannibalism aetiology is the distinctive Tuamotuan turn recorded by Emory."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "With Tu and Rongo, Tane forms the first man — made in the image of Tane, of earth fetched by Rongo and shaped by Tu with his spittle for mortar, the three gods then breathing life into him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the making of man by Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "The man-making triad Tane–Tu–Rongo, 'equal in essence', each with a distinct office; the made man bears the image of Tane."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "demiurge-and-the-shaping-of-the-visible-world",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tane the shaping god"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-making-of-mankind",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the making of man in the image of Tane"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shape-the-visible-world",
+    "name": "shapes and orders the visible world as demiurge",
+    "inheritability": "none",
+    "notes": "Tane is the active worker-god who gives form to the world below the sky.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   },
+   {
+    "id": "form-the-first-man",
+    "name": "forms the first man with Tu and Rongo, in his own image",
+    "inheritability": "none",
+    "notes": "Man is made 'in the image of Tane', of earth fetched by Rongo and worked by Tu's spittle; the triad breathe life into him.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tuamotuan_tu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the man-making triad Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Fellow of the man-making triad; the great gods Tane, Tu and Rongo treated as a fraternal triad."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the man-making triad Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Fellow of the man-making triad."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tane, son of Atea and Fakahotu, is the active demiurge of the Tuamotuan cosmogony — shaper of the visible world, the rebel-god pursued by Atea (his flight and hunger-killing of an ancestor giving the origin of cannibalism), and one of the man-making triad Tane–Tu–Rongo who form the first man in the image of Tane.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "TYPE deity: child of two deities (Atea × Fakahotu). Entered male / immortal / mythic. The Atea–Tane conflict is the Tuamotuan form of the Polynesian sky-separation/struggle. Wired as sibling of Tu and Rongo (the man-making triad); Atea/Fakahotu parentage is asserted for Tane (firmly attested) but NOT for Tu and Rongo, whose genealogical placement varies in the Paiore charts."
+ },
+ {
+  "id": "tuamotuan_tu",
+  "name": {
+   "primary": "Tu",
+   "alt": [
+    "Tu the war-god",
+    "Ku (cognate)"
+   ],
+   "transliterations": {
+    "tuamotuan": "Tu",
+    "etymology": "Tu (pan-Polynesian *tuu 'to stand'); the great god Tu, the god of war and of artisans, cognate with Maori Tu(matauenga) and Hawaiian Ku. In the Tuamotus he stands among the great gods and the man-making triad."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tuamotuan",
+  "primaryTradition": "Tuamotuan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "One of the great gods of the Tuamotus; his placement in the creation-charts varies and his forebears are recorded in notes rather than authored."
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Tu is reckoned among the great gods of the Tuamotus, the god of war and of the artisans.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tu among the great gods of the Tuamotus"
+     }
+    ],
+    "notes": "The great gods Tane, Tu, Tangaroa and Rongo appear in the East-Polynesian genealogies from the Tuamotus."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "With Tane and Rongo, Tu shapes the first man — using his spittle as the mortar that binds the earth Rongo has fetched — and the triad breathe life into the figure made in the image of Tane.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the making of man by Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Tu's office in the man-making triad is the shaping/binding of the man with his spittle."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-the-artisans",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tu",
+     "script": "Latin",
+     "rom": "tu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tu the war-and-artisan god"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-making-of-mankind",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on Tu's part in making man"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shape-the-first-man-with-spittle",
+    "name": "shapes the first man, using his spittle as mortar",
+    "inheritability": "none",
+    "notes": "In the man-making triad Tu binds and shapes the earth (fetched by Rongo) with his spittle into the first man, made in the image of Tane.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the man-making triad Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Fellow of the man-making triad."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136, on the man-making triad Tane, Tu and Rongo"
+     }
+    ],
+    "notes": "Fellow of the man-making triad."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tu is one of the great gods of the Tuamotus, the god of war and of the artisans, and a member of the man-making triad Tane–Tu–Rongo, whose office is to shape the first man with his spittle as mortar.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Emory, Kenneth P. 'Tuamotuan Concepts of Creation', Journal of the Polynesian Society 49 (1940), pp. 69-136"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered deity / male / immortal / mythic. Wired as sibling of Tane and Rongo (the man-making triad). Atea/Fakahotu parentage is NOT asserted (the Paiore charts place the great gods variably). Cognate with Maori Tumatauenga and Hawaiian Ku (noted, not identity)."
  },
  {
   "id": "tupi_guaraci",
