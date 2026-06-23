@@ -6747,6 +6747,7 @@ const buildPeopleSeed = () => {
         { kind: 'mother-of', personId: 'suludnon_labaw_donggon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'mother-of', personId: 'suludnon_humadapnon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'mother-of', personId: 'suludnon_dumalapdap', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
+        { kind: 'spouse', personId: 'suludnon_tungkung_langit', era: 'primordial', sources: [{ kind: 'secondary', reference: 'F. Landa Jocano, Sulod Society (1968); the Panay creation myth (Tungkung Langit and Alunsina)' }], notes: 'In the Panay creation myth Alunsina is the wife of the supreme sky-god Tungkung Langit, who banishes her — a cosmogonic cycle distinct from her Hinilawod role as Datu Paubari\'s partner and mother of the triplets.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hinilawod / Sugidanon epic (Suludnon oral epic of Panay Island, the longest-known Philippine epic at ~30,000+ lines across the full cycle); Suludnon babaylan oral-recitation tradition; F. Landa Jocano academic compilation' }], weight: 'primary' },
@@ -6799,6 +6800,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling', personId: 'suludnon_humadapnon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'sibling', personId: 'suludnon_dumalapdap', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
+        { kind: 'enemy', personId: 'suludnon_saragnayan', era: 'heroic-age', sources: [{ kind: 'secondary', reference: 'F. Landa Jocano, Hinilawod — Saragnayan defeats and imprisons Labaw Donggon over Nagmalitong Yawa, and is slain by Labaw Donggon\'s sons' }], notes: 'Principal antagonist: the Lord of Darkness of Gadlum who imprisons Labaw Donggon and is avenged by his sons Asu Mangga and Buyung Baranugon.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hinilawod / Sugidanon epic (the eldest-brother cycle is the longest single sub-cycle of the epic, ~2,325 lines in the F. Landa Jocano transcription); F. Landa Jocano academic compilation' }], weight: 'primary' },
@@ -6827,6 +6829,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling', personId: 'suludnon_labaw_donggon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'sibling', personId: 'suludnon_dumalapdap', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
+        { kind: 'spouse', personId: 'suludnon_nagmalitong_yawa', era: 'heroic-age', sources: [{ kind: 'secondary', reference: 'F. Landa Jocano, Hinilawod: Adventures of Humadapnon — Humadapnon marries Nagmalitong Yawa, who rescues him from the Tarangban cave' }], notes: 'Marries the binukot enchantress Nagmalitong Yawa, who frees him from the Tarangban cave in the guise of the warrior Buyong Sunmasakay.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hinilawod / Sugidanon epic (Humadapnon cycle is the longest of the three at ~53,000 lines per the Sulod-people second-cycle estimation)' }], weight: 'primary' },
@@ -41667,6 +41670,359 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Akan river-deity and war-spirit, chief of the atano; son of Nyame and Asase Yaa."
+ },
+ {
+  "id": "ambundu_kalunga",
+  "name": {
+   "primary": "Kalunga",
+   "alt": [
+    "Kalunga-ngombe",
+    "Ngana Kalunga",
+    "Kalunga ngombe"
+   ],
+   "transliterations": {
+    "kimbundu": "Kalunga (Kalunga-ngombe)",
+    "etymology": "Kimbundu Kalunga, glossed by Werner (1933) as denoting at once Death, the King of the Netherworld, and the sea; the netherworld-king title Kalunga-ngombe is rendered 'Kalunga of the cattle'. Ngana = 'Lord/Master'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "lord-of-death-the-netherworld-and-the-sea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II 'Where Man Came From, and How Death Came'"
+     }
+    ],
+    "notes": "Werner records of the Ambundu: 'Kalunga, a word which may mean either Death, the King of the Netherworld (usually called ... Kalunga-ngombe, \"Kalunga of the cattle\"), or the sea.' Kalunga is thus at once the personified power of death, the ruler of the land of the dead, and the sea/great water that bounds the living world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "ngunza-defies-death",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), tale 'How Ngunza defied Death' (the Ngunza Kilundu story)"
+     }
+    ],
+    "notes": "In Chatelain's Kimbundu tale, Ngunza Kilundu, learning that Lord Kalunga-ngombe has taken his brother, traps him and demands an accounting; Kalunga-ngombe protests that he does not kill wantonly — people are brought to him by their fellow-men or through their own fault — and later gives Ngunza seeds of useful plants. The episode personifies Kalunga-ngombe as the lord and gatekeeper of the dead."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death",
+    "term": "Kalunga",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), 'How Ngunza defied Death'"
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     }
+    ]
+   },
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ambundu_kalunga_lord_of_the_dead",
+    "name": "Rules the dead and summons mortals to the netherworld",
+    "inheritability": "unique",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), 'How Ngunza defied Death'"
+     }
+    ],
+    "notes": "As Kalunga-ngombe he is King of the Netherworld to whom the dead are brought; in the Ngunza tale he insists death comes through human agency or fault, not his own caprice."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II 'Where Man Came From, and How Death Came'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), 'How Ngunza defied Death'"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-lord-of-death-and-the-dead",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kalunga is the great Ambundu power of death, the sea, and the land of the dead — the three senses Werner (1933) records together for the word among 'the Ambundu of Angola'. In his personified guise as Lord Kalunga-ngombe ('Kalunga of the cattle'), King of the Netherworld, he is the ruler to whom the dead are gathered, and he is the antagonist of Chatelain's tale 'How Ngunza defied Death,' where he defends himself as a just rather than capricious bringer of death. The same root Kalunga is widespread among West-Central African Bantu peoples (Kongo, Chokwe, Ovimbundu), but the Death/Netherworld-king/sea cluster is here cited specifically for the Mbundu (Kimbundu). No Mbundu source assigns him kin or descent; he is figured as a primordial cosmic power rather than a member of a divine family."
+ },
+ {
+  "id": "ambundu_kianda",
+  "name": {
+   "primary": "Kianda",
+   "alt": [
+    "Quianda",
+    "Dandalunda"
+   ],
+   "transliterations": {
+    "kimbundu": "Kianda (pl. Ianda)",
+    "etymology": "Kimbundu kianda, singular of ianda 'mermaids / water-spirits'; a female spirit (or class of spirits) of the sea, rivers and lakes. The plural usage marks Kianda as both one goddess and many localized water-guardians."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-present"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-present",
+    "eraOrdering": 0,
+    "startEvent": "spirit-of-the-waters",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan (Kimbundu) ethnography and folklore of Luanda; reflected in the annual Luanda Island Feast (Festa da Ilha) honouring Kianda"
+     }
+    ],
+    "notes": "In living Kimbundu folklore, especially around Luanda and the Ilha de Luanda, Kianda is the spirit-protector of the sea and inland waters and of fishermen; offerings of food, drink and cloth are cast into the water to win safe voyages, good catches, fertility and protection from drowning. Each river, lake or pool may have its own kianda."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "term": "Kianda",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan/Kimbundu folklore; Luanda Island Feast tradition"
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan/Kimbundu folklore; Luanda Island Feast tradition"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ambundu_kianda_protector_of_waters",
+    "name": "Protects the waters, fishermen and voyagers",
+    "inheritability": "shared",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan/Kimbundu folklore; Luanda Island Feast tradition"
+     }
+    ],
+    "notes": "Grants safe passage, abundant catches and fertility in return for offerings; the faculty is shared because every body of water may host its own kianda."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan (Kimbundu) ethnography of Luanda; Luanda Island Feast (Festa da Ilha) tradition honouring Kianda"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Modern Angolan literary treatment: Pepetela, O Desejo de Kianda (The Return of the Water Spirit, 1995)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kianda is the water-spirit of Kimbundu (Mbundu) folklore, a female being (and class of beings, pl. ianda) of the sea, rivers and lakes, and the patron of fishermen, centred on Luanda and the Ilha de Luanda where the annual Luanda Island Feast still honours her. Unlike Nzambi and Kalunga she is NOT attested in Chatelain's 1894 corpus; her documentation is 20th-century and later (Óscar Ribas's Angolan ethnography; the living cult; modern Angolan letters such as Pepetela's O Desejo de Kianda), so she is recorded with era 'mythic-present'. She is frequently assimilated in colonial-era and popular imagery to a mermaid and, in Afro-Brazilian Bantu religion, to Dandalunda. No traditional Mbundu source gives her parentage or kin; she is treated as an autonomous (and plural) class of water-guardian."
+ },
+ {
+  "id": "ambundu_nzambi",
+  "name": {
+   "primary": "Nzambi",
+   "alt": [
+    "Nzambi a Mpungu",
+    "Nzambi Mpungu",
+    "Zambi"
+   ],
+   "transliterations": {
+    "kimbundu": "Nzambi (a Mpungu)",
+    "etymology": "Kimbundu/Bantu Nzambi 'God', with the epithet a Mpungu '(the) Almighty / Supreme'; the high creator-god. In Kimbundu usage the cognate nzambi/jinzambi can also denote ancestral spirits (Miller 1976)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-supreme-creator-high-god",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Molefi K. Asante & Ama Mazama (eds.), Encyclopedia of African Religion (SAGE, 2009), s.v. 'Nzambi'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joseph C. Miller, Kings and Kinsmen: Early Mbundu States in Angola (Oxford: Clarendon, 1976)"
+     }
+    ],
+    "notes": "Across the Kimbundu-speaking world Nzambi is the name of the supreme, remote creator high god, set above the ancestors and the nature-spirits (ilundu). The name and high-god sense are shared Bantu currency documented in Chatelain's Kimbundu material and in the wider Angolan record; the detailed creation myth elaborated for the neighbouring Kongo is NOT attributed to the Mbundu here."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "term": "Nzambi",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ambundu_nzambi_supreme_creator",
+    "name": "Supreme creator and ordainer of the cosmos",
+    "inheritability": "unique",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joseph C. Miller, Kings and Kinsmen (1976)"
+     }
+    ],
+    "notes": "As high god Nzambi is the maker and ultimate ordering power, but is characteristically otiose — not the object of regular transactional cult, which is directed to ancestors and lesser spirits."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Molefi K. Asante & Ama Mazama (eds.), Encyclopedia of African Religion (SAGE, 2009), s.v. 'Nzambi'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joseph C. Miller, Kings and Kinsmen: Early Mbundu States in Angola (Oxford: Clarendon, 1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-supreme-creator",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nzambi (a Mpungu) is the supreme creator high god in the religion of the Kimbundu-speaking Ambundu of Angola. The theonym is part of the common Bantu inheritance shared with the neighbouring Kongo, among whom the fullest creation cosmology was recorded; Mbundu attestation rests on the Kimbundu lexicon and ethnography (Chatelain 1894; Miller 1976) and the wider Angolan record (SAGE Encyclopedia of African Religion, 2009). Like many West-Central African high gods, Nzambi is conceived as remote and otiose, the maker and moral guarantor of the world rather than a deity of everyday cult, which centres on ancestors and the local nature-spirits (ilundu). Note that Miller records nzambi/jinzambi also being used of ancestral spirits in Mbundu speech, so the high-god identity is given here conservatively. No surviving Mbundu source assigns Nzambi kin, consort, or descent."
  },
  {
   "id": "andamanese_biliku",
@@ -161260,6 +161616,481 @@ const NEW_FIGURES = [
   "notes": "Basotho culture-hero / deliverer of the Kgodumodumo legend, transmitted orally for centuries and dramatised by S. M. Mofokeng (1952). Sometimes called Litaolane in cognate versions. Classified demigod (culture-hero tier); explicitly not a divine type beyond the schema's allowance."
  },
  {
+  "id": "suludnon_nagmalitong_yawa",
+  "name": {
+   "primary": "Nagmalitong Yawa",
+   "alt": [
+    "Nagmalitong Yawa Sinagmaling Diwata",
+    "Malitong Yawa Sinagmaling Diwata",
+    "Buyong Sunmasakay (warrior guise)"
+   ],
+   "transliterations": {
+    "kinaray-a": "Nagmalitong Yawa",
+    "etymology": "Sugidanon/Hinilawod binukot heroine; 'Sinagmaling Diwata' is glossed as the radiant/shining diwata. Note: 'yawa' here is an archaic name-element, not the later Visayan sense of 'demon'."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Suludnon",
+  "primaryTradition": "Suludnon",
+  "sex": "female",
+  "vitalStatus": "mortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-binukot-maiden-sought-by-humadapnon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon (Humadapnon cycle)"
+     }
+    ],
+    "notes": "A binukot (secluded, veiled noblewoman) of surpassing beauty living by the mouth of the Halawod river, Nagmalitong Yawa is the maiden whom Humadapnon, guided by his spirit-friends Taghoy and Duwindi, voyages across the seas to court."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "rescue-of-humadapnon-as-buyong-sunmasakay",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Magos & Caballero, Sugidanon (Epics) of Panay"
+     }
+    ],
+    "notes": "When Humadapnon is bewitched and imprisoned for seven years in the island-cave of Tarangban by the enchantress Ginmayunan, Nagmalitong Yawa transforms herself into a male warrior named Buyong Sunmasakay, frees him and dispels the charm; she then marries Humadapnon at Halawod."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Magos & Caballero, Sugidanon (Epics) of Panay — Nagmalitong Yawa (Mali) can transform herself into a man to fight and into objects to repel unwanted suitors"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ny-male-transformation",
+    "name": "transformed herself into a male warrior to fight and to rescue her beloved",
+    "term": "Buyong Sunmasakay",
+    "script": "Kinaray-a/Latin",
+    "rom": "Buyong Sunmasakay",
+    "inheritability": "trace",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Magos & Caballero, Sugidanon (Epics) of Panay"
+     }
+    ],
+    "notes": "She assumes the guise of the warrior Buyong Sunmasakay to free Humadapnon from the Tarangban cave and to do battle."
+   },
+   {
+    "id": "ny-shapeshift-objects",
+    "name": "could change herself into things to reject the advances of men she refused",
+    "inheritability": "trace",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Magos & Caballero, Sugidanon (Epics) of Panay — binukot heroines who transform into objects to escape unwanted suitors"
+     }
+    ],
+    "notes": "Part of the binukot shapeshifting repertoire attributed to her in the Sugidanon recension."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "suludnon_humadapnon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon — Humadapnon marries Nagmalitong Yawa at Halawod"
+     }
+    ],
+    "notes": "Wife of Humadapnon in the Humadapnon cycle of the Hinilawod, whom she rescues from the Tarangban cave."
+   },
+   {
+    "kind": "spouse",
+    "personId": "suludnon_saragnayan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Labaw Donggon cycle) — Nagmalitong Yawa is the wife of Buyong Saragnayan"
+     }
+    ],
+    "notes": "In the Labaw Donggon cycle she is the young wife of Saragnayan, the Lord of Darkness, over whom Labaw Donggon and Saragnayan fight."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon (Sulod/Suludnon epic of Central Panay)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "binukot-heroine-shapeshifter",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alicia P. Magos & the Caballero family, Sugidanon (Epics) of Panay; E. Caballero-Padernal, PJSSH"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nagmalitong Yawa (Nagmalitong Yawa Sinagmaling Diwata) is the great binukot heroine of the Hinilawod/Sugidanon epics of the Panay-Bukidnon (Suludnon), recorded by F. Landa Jocano and later, in the Sugidanon recension, by Alicia P. Magos with the Caballero family. A secluded noblewoman of dazzling beauty, she is the maiden whom the demigod Humadapnon crosses the seas to court and ultimately marries; in the Labaw Donggon cycle she is instead the young wife of the dark lord Saragnayan. A shapeshifter, she transforms into the male warrior Buyong Sunmasakay to free Humadapnon from the Tarangban cave and to fight, and (in the Sugidanon) into objects to escape unwanted suitors. (The element 'yawa' in her name is archaic and does not carry the later Visayan meaning of 'demon'.)"
+ },
+ {
+  "id": "suludnon_saragnayan",
+  "name": {
+   "primary": "Saragnayan",
+   "alt": [
+    "Buyong Saragnayan",
+    "Lord of Darkness",
+    "Keeper of Light"
+   ],
+   "transliterations": {
+    "kinaray-a": "Saragnayan",
+    "etymology": "Hinilawod epic antagonist; the Lord of Darkness of Gadlum who keeps charge of the course of the sun ('Keeper of Light')."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Suludnon",
+  "primaryTradition": "Suludnon",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "rule-over-gadlum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Sulod epic, Panay); Labaw Donggon cycle"
+     }
+    ],
+    "notes": "Saragnayan, the Lord of Darkness, rules the lightless land of Gadlum and takes charge of the course of the sun; he is reckoned a demigod, born of the primordial chaos and a mortal woman, and is master of a pamlang (amulet) that makes him all but unkillable."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "duel-with-labaw-donggon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; The Aswang Project, 'Three Brothers of Panay' synopsis"
+     }
+    ],
+    "notes": "When Labaw Donggon comes to take his wife Nagmalitong Yawa, Saragnayan accepts the challenge and overcomes the hero; though Labaw Donggon holds his head underwater for seven years he cannot drown, for his life is hidden elsewhere, and he imprisons Labaw Donggon beneath his house."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-the-hidden-life-talisman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Wikipedia 'Hinilawod' (Labaw Donggon cycle)"
+     }
+    ],
+    "notes": "His external soul lies in the heart of a wild boar in an enchanted forest; the sons of Labaw Donggon, Asu Mangga and Buyung Baranugon, capture and roast the boar, and Baranugon kills Saragnayan with poisoned arrows to the eyes, freeing their father."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "darkness",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Saragnayan, the Lord of Darkness of Gadlum"
+     }
+    ]
+   },
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hinilawod (Jocano) — Saragnayan, 'Keeper of Light', takes charge of the course of the sun"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sar-deathless-talisman",
+    "name": "could not be killed because his life was hidden outside his body",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Wikipedia 'Hinilawod'"
+     }
+    ],
+    "notes": "His soul resides in the heart of a wild boar in a distant enchanted forest, so he survives being held underwater for seven years; he can be slain only by destroying the boar."
+   },
+   {
+    "id": "sar-amulet-might",
+    "name": "overpowered Labaw Donggon in single combat by the power of his amulet",
+    "term": "pamlang",
+    "script": "Kinaray-a/Latin",
+    "rom": "pamlang",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Saragnayan defeats Labaw Donggon with the aid of his pamlang/anting-anting"
+     }
+    ],
+    "notes": "Wielding his pamlang (charm/anting-anting), he defeats the hero and imprisons him beneath his house."
+   },
+   {
+    "id": "sar-keeper-of-the-sun",
+    "name": "kept charge of the course of the sun as Keeper of Light",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hinilawod (Jocano) — Saragnayan takes charge of the course of the sun"
+     }
+    ],
+    "notes": "As 'Keeper of Light' he governs the sun's daily course, a cosmic office tied to his epithet."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "sar-pamlang",
+    "name": "amulet / charm",
+    "kind": "relic",
+    "role": "owner",
+    "term": "pamlang",
+    "script": "Kinaray-a/Latin",
+    "rom": "pamlang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Saragnayan's pamlang (anting-anting)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "suludnon_nagmalitong_yawa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Labaw Donggon cycle) — Nagmalitong Yawa Sinagmaling Diwata is the wife of Buyong Saragnayan"
+     }
+    ],
+    "notes": "Nagmalitong Yawa is Saragnayan's wife; Labaw Donggon's bid to take her sets off their duel."
+   },
+   {
+    "kind": "enemy",
+    "personId": "suludnon_labaw_donggon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Labaw Donggon challenges and is defeated by Saragnayan, then is avenged"
+     }
+    ],
+    "notes": "Principal antagonist of Labaw Donggon: defeats and imprisons him, and is in turn slain by Labaw Donggon's sons."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Sulod/Suludnon epic of Central Panay); collected from the chanter Hugan-an"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-antagonist",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia 'Hinilawod'; The Aswang Project, 'Three Brothers of Panay' (excerpt of the Suludnon epic)"
+     }
+    ],
+    "weight": "tertiary"
+   }
+  ],
+  "notes": "Saragnayan (Buyong Saragnayan), the 'Lord of Darkness' and 'Keeper of Light', is the great antagonist of the Hinilawod, the Sulod epic of Central Panay recorded by F. Landa Jocano. A demigod said to be born of primordial chaos and a mortal woman, he rules the eternally dark land of Gadlum, keeps charge of the course of the sun, and is the husband of the enchantress Nagmalitong Yawa. When Labaw Donggon comes to claim her, Saragnayan defeats him with his pamlang (amulet) and imprisons him; he cannot be drowned because his life is hidden in the heart of a wild boar, and he is finally killed only when Labaw Donggon's sons Asu Mangga and Buyung Baranugon destroy the boar and pierce his eyes with poisoned arrows."
+ },
+ {
+  "id": "suludnon_tungkung_langit",
+  "name": {
+   "primary": "Tungkung Langit",
+   "alt": [
+    "Tungkung Langit (Pillar of the Skies)",
+    "Tungkung Langit (Pillar of Heaven)"
+   ],
+   "transliterations": {
+    "kinaray-a": "Tungkung Langit",
+    "etymology": "Kinaray-a/Hiligaynon 'pillar/prop of the skies'; the supreme male diwata and creator of the Sulod (Panay) pantheon, husband of Alunsina."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Suludnon",
+  "primaryTradition": "Suludnon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "ordering-of-the-primordial-void",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Sulod creation myth, Panay"
+     }
+    ],
+    "notes": "In the Panay creation myth Tungkung Langit and Alunsina exist together in the formless primordial void; Tungkung Langit, the industrious supreme being, brings order to chaos and fashions the sea, the earth and the sky."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "the-loss-of-alunsina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, field-collected Panay creation myth (Tungkung Langit and Alunsina), 1955"
+     }
+    ],
+    "notes": "Enraged by the jealousy and idleness of his wife Alunsina, Tungkung Langit drives her away; in grief he adorns the sky with her jewels (the stars, moon and sun) hoping she will return, and so the heavens take their present form."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Sulod Society (1968); Outline of Philippine Mythology (1969) — Tungkung Langit, supreme deity of the upperworld (Ibabawnun)"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panay creation myth; Tungkung Langit fashions the earth, sea and sky out of the primordial void (Jocano 1969)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tl-ordering-creation",
+    "name": "ordered the primordial chaos into sea, earth and sky",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Panay creation myth"
+     }
+    ],
+    "notes": "As the supreme creator he gives form to the formless void, the foundational act of the Panay cosmogony."
+   },
+   {
+    "id": "tl-make-heavenly-lights",
+    "name": "set the sun, moon and stars in the sky as Alunsina's jewels",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panay creation myth (Tungkung Langit and Alunsina), collected by F. Landa Jocano"
+     }
+    ],
+    "notes": "After banishing Alunsina he adorns the heavens with lights to lure her back, accounting for the sun, moon and stars."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "suludnon_alunsina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Sulod Society (1968) and Outline of Philippine Mythology (1969); Panay creation myth — Tungkung Langit, supreme sky-god, and Alunsina, goddess of the eastern skies, are husband and wife"
+     }
+    ],
+    "notes": "Alunsina (goddess of the eastern skies) is the wife of Tungkung Langit; their separation is the engine of the Panay creation narrative."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Sulod Society: A Study of the Kinship System and Social Organization of a Mountain People of Central Panay (1968)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-supreme-creator",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Panay (Sulod) creation myth"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tungkung Langit ('pillar/prop of the skies') is the supreme male diwata and creator-god of the Sulod (Suludnon/Panay-Bukidnon) pantheon of Central Panay, documented by anthropologist F. Landa Jocano. In the Sulod three-tiered cosmos he rules the upperworld (Ibabawnun) and is assisted by lesser divinities; in the Panay creation myth he and his wife Alunsina, goddess of the eastern skies, dwell together in the primordial void until, angered by her jealousy and idleness, he banishes her and orders chaos into the sea, earth and sky, hanging the sun, moon and stars in the heavens in the hope of her return. He is the Visayan counterpart to the Tagalog supreme being Bathala."
+ },
+ {
   "id": "sundanese_mundinglaya",
   "name": {
    "primary": "Prince Hero of Pajajaran",
@@ -167481,6 +168312,630 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "A class of indigenous Tibetan territorial deities ('gods of the local place'), often identified with sacred mountains, protecting a valley, village, or peak; predating Buddhism and later integrated as Buddhist and Bön protectors. Some, like Yarlha Shampo, manifest as a white yak."
+ },
+ {
+  "id": "tinguian_agemem",
+  "name": {
+   "primary": "Agemem",
+   "alt": [
+    "Agᴇmᴇm",
+    "Wife of Kadaklan"
+   ],
+   "transliterations": {
+    "tinguian": "Agemem",
+    "etymology": "Itneg personal name; the wife of the great sky-spirit Kadaklan."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "wife-of-kadaklan-released-from-the-ground",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915) (Lagangilang and Abang thunderbolt tradition)"
+     }
+    ],
+    "notes": "Agemem is the wife of the great spirit Kadaklan. In the thunderbolt traditions of Lagangilang and Abang, Kadaklan (the thunderbolt) 'often eats the ground and releases his wife Agemem,' associating her with the ground/earth from which she is freed."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Associated with the ground, from which Kadaklan (the thunderbolt) releases her."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tinguian_kadaklan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Agemem is the wife of Kadaklan, the greatest of the spirits."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Agemem is the wife of Kadaklan, the great sky-spirit of the Tinguian, as recorded by Fay-Cooper Cole. She is consistently named as his consort; in the Lagangilang and Abang thunderbolt traditions Kadaklan 'eats the ground and releases his wife Agemem,' linking her to the earth/ground from which she is freed when the thunderbolt strikes. Cole gives little independent narrative for her beyond her marriage to Kadaklan."
+ },
+ {
+  "id": "tinguian_apadel",
+  "name": {
+   "primary": "Apadel",
+   "alt": [
+    "Kalagang",
+    "Guardian of the Pinaing"
+   ],
+   "transliterations": {
+    "tinguian": "Apadel",
+    "etymology": "Itneg name of the guardian spirit who dwells in the spirit-stones (pinaing / saksak)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "guardian-dwelling-in-the-spirit-stones",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Apadel, also called Kalagang, is the guardian spirit who dwells in the spirit-stones called pinaing (or saksak). These stones, of various sizes and shapes, stand on hallowed ground, often under old trees or at the entrance of a village, and Apadel through them protects such places, the village, and the creatures of the forest."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardianship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Protector of hallowed places, of the village, and of forest creatures, acting through the pinaing stones."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guards-through-the-spirit-stones",
+    "name": "Guards village, sacred places, and forest creatures through the spirit-stones",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Dwells in and acts through the pinaing/saksak stones to protect their sites and the people."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pinaing-spirit-stones",
+    "name": "Pinaing (saksak) spirit-stones",
+    "kind": "sacred-stones",
+    "role": "dwelling-place / cult object",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Stones of various sizes and shapes on hallowed ground (often under old trees or at a village entrance) in which Apadel dwells; honored with coconut oil and offerings."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Apadel, also called Kalagang, is the Tinguian (Itneg) guardian spirit who dwells in the spirit-stones known as pinaing or saksak, as recorded by Fay-Cooper Cole. These stones, of various sizes and shapes, are set on hallowed ground, frequently beneath old trees or at the entrance to a village; through them Apadel guards such sacred spots, the community, and the creatures of the forest. The stones receive offerings and anointing with oil so that the spirit will continue to shield the people from harm. Cole attests no kin, spouse, or peer relation for Apadel."
+ },
+ {
+  "id": "tinguian_bagatulayan",
+  "name": {
+   "primary": "Bagatulayan",
+   "alt": [
+    "Bagatúlayan",
+    "Director of the Celestial Realm"
+   ],
+   "transliterations": {
+    "tinguian": "Bagatulayan",
+    "etymology": "Itneg personal name of the spirit concerned with directing the activities of the celestial/sky realm."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "directs-the-activities-of-the-celestial-realm",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Bagatulayan is the spirit who lives in and directs the activities of the celestial (sky) realm in Tinguian belief as recorded by Cole. He governs the affairs of the upper world. In later post-Cole syntheses he is sometimes elevated to supreme creator with Kadaklan as a subordinate, though Cole's own account foregrounds Kadaklan as the greatest of the spirits."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Dwells in and directs the activities of the celestial realm."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "directs-the-celestial-activities",
+    "name": "Directs and rules the activities of the celestial (sky) realm",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Governs the affairs of the upper/celestial world."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Bagatulayan is the Tinguian (Itneg) spirit who lives in and directs the activities of the celestial, or sky, realm, as recorded by Fay-Cooper Cole. He governs the workings of the upper world. The literature is divided on his rank: Cole's own ethnography presents Kadaklan as 'the greatest' of the spirits while Bagatulayan directs the celestial activities, whereas a number of later, post-Cole popular syntheses recast Bagatulayan as the supreme creator with Kadaklan subordinate to him. Cole attests no spouse, kin, or peer relation for Bagatulayan."
+ },
+ {
+  "id": "tinguian_kadaklan",
+  "name": {
+   "primary": "Kadaklan",
+   "alt": [
+    "Kadaklan (the Greatest)"
+   ],
+   "transliterations": {
+    "tinguian": "Kadaklan",
+    "etymology": "Itneg/Ilocano kadaklan 'the greatest, the largest'; the great male spirit of the sky."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "the-greatest-sky-spirit-creates-the-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922), on Kadaklan as the greatest of the spirits"
+     }
+    ],
+    "notes": "Kadaklan ('the greatest'), a powerful male spirit who lives in the sky, is the greatest of all the Tinguian spirits; Cole records that he created the earth, the sun, the moon, and the stars."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "teacher-of-ceremony-and-the-thunderbolt",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915) (Lagangilang and Abang thunderbolt tradition)"
+     }
+    ],
+    "notes": "A friendly spirit, he is said to have taught the Tinguian to pray, to harvest their crops, to ward off evil spirits, and to overcome bad omens and sickness. In the thunderbolt traditions of Lagangilang and Abang the thunderbolt is identified with Kadaklan, who 'often eats the ground and releases his wife Agemem.'"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "The great spirit who dwells in and rules the sky."
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Maker of the earth, sun, moon, and stars."
+   },
+   {
+    "sphereId": "thunder",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Identified with the thunderbolt in the Lagangilang and Abang traditions."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "creates-earth-sun-moon-stars",
+    "name": "Creates the earth, sun, moon, and stars",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Cole records Kadaklan as creator of the earth and the heavenly bodies."
+   },
+   {
+    "id": "sends-the-thunderbolt-via-his-dog",
+    "name": "Looses the lightning (through his dog Kimat) to summon ceremonies",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "His dog Kimat, the lightning, bites a house, tree, or field whenever Kadaklan wishes a special ceremony to be performed."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kimat-the-lightning-dog",
+    "name": "Kimat (the Lightning)",
+    "kind": "animal-companion",
+    "role": "owned divine dog",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kadaklan's dog, the lightning; an instrument of his will. Also authored as the figure tinguian_kimat."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tinguian_agemem",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Agemem is the wife of Kadaklan; in the thunderbolt myth he 'releases his wife Agemem' from the ground."
+   },
+   {
+    "kind": "companion",
+    "personId": "tinguian_kimat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat, the lightning, is Kadaklan's dog and acts at his command."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kadaklan ('the greatest') is the great male sky-spirit of the Tinguian (Itneg) of northwestern Luzon, recorded by Fay-Cooper Cole. He lives in the sky and, in Cole's account, created the earth, the sun, the moon, and the stars; he is a friendly being who taught the people to pray, to harvest, to drive off evil spirits, and to overcome omens and sickness. His wife is Agemem and his dog is Kimat, the lightning, which bites a house, tree, or field when Kadaklan wishes a ceremony performed. In the thunderbolt traditions of Lagangilang and Abang the thunderbolt itself is identified with Kadaklan, who 'eats the ground and releases his wife Agemem.' (Some later, post-Cole syntheses instead rank the celestial director Bagatulayan as supreme over Kadaklan; Cole's own text presents Kadaklan as the greatest of the spirits.)"
+ },
+ {
+  "id": "tinguian_kimat",
+  "name": {
+   "primary": "Kimat",
+   "alt": [
+    "Kimat (the Lightning)",
+    "Dog of Kadaklan"
+   ],
+   "transliterations": {
+    "tinguian": "Kimat",
+    "etymology": "Itneg kimat 'lightning'; the lightning personified as the dog of Kadaklan."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "unknown",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-lightning-dog-bites-to-summon-ceremony",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat, the lightning, is the dog of Kadaklan. Cole records that Kimat will bite a house, a tree, or a field whenever the divine master desires that a special ceremony be performed; the strike marks the place where the rite must be held."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lightning",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat is the lightning itself, personified as Kadaklan's dog."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bites-as-the-lightning-stroke",
+    "name": "Strikes as the lightning to mark where a ceremony must be held",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Bites a house, tree, or field at Kadaklan's wish, signalling that a special ceremony is required."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tinguian_kadaklan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat is the dog of the great spirit Kadaklan and acts at his command."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kimat is the lightning, personified in Tinguian belief as the dog of the great sky-spirit Kadaklan, as recorded by Fay-Cooper Cole. It is the instrument by which Kadaklan communicates his will: Kimat 'will bite a house, a tree, or a field whenever the divine master desires that a special ceremony be performed,' so that a lightning-strike marks the spot where a rite must be held. (Modern fantasy and role-playing treatments embellish Kimat with invented physical traits; only its identity as Kadaklan's lightning-dog and its ceremony-summoning bite are attested in Cole.)"
+ },
+ {
+  "id": "tinguian_makaboteng",
+  "name": {
+   "primary": "Makaboteng",
+   "alt": [
+    "Sanadan",
+    "Makaboteng (one who frightens)"
+   ],
+   "transliterations": {
+    "tinguian": "Makaboteng",
+    "etymology": "Itneg makaboteng 'one who frightens'; the guardian spirit of the deer and the wild hogs."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "guardian-of-deer-and-wild-hogs",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Makaboteng, also called Sanadan, is the guardian of the deer and the wild hogs. Cole records that his good will is necessary if the dogs are to be successful in the chase; consequently he is summoned to many ceremonies, where he receives the most courteous treatment."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wild-game",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Guardian of deer and wild hogs; his favor governs success in the hunt."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guards-deer-and-wild-hogs",
+    "name": "Guards the deer and wild hogs and grants or withholds success in the hunt",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "His good will is required for the hunting dogs to succeed; he is courted at ceremonies."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Makaboteng ('one who frightens'), also called Sanadan, is the Tinguian (Itneg) guardian spirit of the deer and the wild hogs, as recorded by Fay-Cooper Cole. Because his good will is necessary if the hunting dogs are to succeed in the chase, he is summoned to many ceremonies, where he is treated with the greatest courtesy. Cole attests no kin, spouse, or peer relation for Makaboteng."
  },
  {
   "id": "tiv_akombo",

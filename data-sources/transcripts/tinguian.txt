@@ -1,0 +1,666 @@
+Pantheon Registry transcript — Tinguian (Itneg) pantheon, well-attested core.
+Tradition: Tinguian (Itneg), northern Luzon (Abra), Philippines.
+
+Primary scholarship (the figures below are drawn entirely from these two monographs):
+  - Fay-Cooper Cole, "Traditions of the Tinguian: A Study in Philippine Folk-Lore"
+    (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915).
+  - Fay-Cooper Cole, "The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe"
+    (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922).
+
+Six figures authored: Kadaklan (the greatest sky-spirit/creator), Agemem (his wife), Kimat
+(the lightning, his dog), Bagatulayan (director of the celestial realm), Apadel / Kalagang
+(guardian of the pinaing spirit-stones), and Makaboteng / Sanadan (guardian of deer and wild hogs).
+Existing corpus figures tinguian_gagayoma (star goddess) and tinguian_takyayen (demigod) are NOT
+re-authored here; no symmetric relation between them and these six is attested in Cole.
+
+Scholarly note on hierarchy. Cole's own ethnography presents KADAKLAN as "the greatest" of all the
+spirits — the powerful male sky-spirit who created the earth, sun, moon, and stars — while BAGATULAYAN
+is the spirit who directs the activities of the celestial (sky) realm. A body of later, post-Cole
+popular synthesis (reflected in many present-day encyclopedic summaries) instead ranks Bagatulayan as
+the supreme creator with Kadaklan subordinate. Because this batch is sourced to Cole, both figures are
+recorded with their Cole-attested roles, and the divergence is flagged in each figure's notes rather
+than resolved by fiat. No native-language domain/faculty "term" values are asserted beyond names whose
+Itneg form is given by Cole (e.g. kimat 'lightning', kadaklan 'the greatest', makaboteng 'one who
+frightens', pinaing/saksak spirit-stones); no terms were invented.
+
+Method note. In this environment WebFetch returned HTTP 403 on every host and Bash has no external
+network egress, so verification was performed via WebSearch result snippets that surface the verbatim
+wording of Cole's two monographs (and of secondary compendia — pantheon.org and aswangproject.com —
+that footnote Cole 1922, FMNH-AS Vol. 14). Every figure, relationship, and domain below is attested in
+Cole; nothing folkloric was invented, and clearly modern/RPG embellishments (e.g. Kimat's invented
+physical description) were excluded.
+
+```json
+[
+  {
+    "id": "tinguian_kadaklan",
+    "name": {
+      "primary": "Kadaklan",
+      "alt": [
+        "Kadaklan (the Greatest)"
+      ],
+      "transliterations": {
+        "tinguian": "Kadaklan",
+        "etymology": "Itneg/Ilocano kadaklan 'the greatest, the largest'; the great male spirit of the sky."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "the-greatest-sky-spirit-creates-the-world",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922), on Kadaklan as the greatest of the spirits"
+          }
+        ],
+        "notes": "Kadaklan ('the greatest'), a powerful male spirit who lives in the sky, is the greatest of all the Tinguian spirits; Cole records that he created the earth, the sun, the moon, and the stars."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "teacher-of-ceremony-and-the-thunderbolt",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915) (Lagangilang and Abang thunderbolt tradition)"
+          }
+        ],
+        "notes": "A friendly spirit, he is said to have taught the Tinguian to pray, to harvest their crops, to ward off evil spirits, and to overcome bad omens and sickness. In the thunderbolt traditions of Lagangilang and Abang the thunderbolt is identified with Kadaklan, who 'often eats the ground and releases his wife Agemem.'"
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "The great spirit who dwells in and rules the sky."
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "primordial",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Maker of the earth, sun, moon, and stars."
+      },
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+          }
+        ],
+        "notes": "Identified with the thunderbolt in the Lagangilang and Abang traditions."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "creates-earth-sun-moon-stars",
+        "name": "Creates the earth, sun, moon, and stars",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Cole records Kadaklan as creator of the earth and the heavenly bodies."
+      },
+      {
+        "id": "sends-the-thunderbolt-via-his-dog",
+        "name": "Looses the lightning (through his dog Kimat) to summon ceremonies",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "His dog Kimat, the lightning, bites a house, tree, or field whenever Kadaklan wishes a special ceremony to be performed."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kimat-the-lightning-dog",
+        "name": "Kimat (the Lightning)",
+        "kind": "animal-companion",
+        "role": "owned divine dog",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Kadaklan's dog, the lightning; an instrument of his will. Also authored as the figure tinguian_kimat."
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "tinguian_agemem",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+          }
+        ],
+        "notes": "Agemem is the wife of Kadaklan; in the thunderbolt myth he 'releases his wife Agemem' from the ground."
+      },
+      {
+        "kind": "companion",
+        "personId": "tinguian_kimat",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Kimat, the lightning, is Kadaklan's dog and acts at his command."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Kadaklan ('the greatest') is the great male sky-spirit of the Tinguian (Itneg) of northwestern Luzon, recorded by Fay-Cooper Cole. He lives in the sky and, in Cole's account, created the earth, the sun, the moon, and the stars; he is a friendly being who taught the people to pray, to harvest, to drive off evil spirits, and to overcome omens and sickness. His wife is Agemem and his dog is Kimat, the lightning, which bites a house, tree, or field when Kadaklan wishes a ceremony performed. In the thunderbolt traditions of Lagangilang and Abang the thunderbolt itself is identified with Kadaklan, who 'eats the ground and releases his wife Agemem.' (Some later, post-Cole syntheses instead rank the celestial director Bagatulayan as supreme over Kadaklan; Cole's own text presents Kadaklan as the greatest of the spirits.)"
+  },
+  {
+    "id": "tinguian_agemem",
+    "name": {
+      "primary": "Agemem",
+      "alt": [
+        "Agᴇmᴇm",
+        "Wife of Kadaklan"
+      ],
+      "transliterations": {
+        "tinguian": "Agemem",
+        "etymology": "Itneg personal name; the wife of the great sky-spirit Kadaklan."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "wife-of-kadaklan-released-from-the-ground",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915) (Lagangilang and Abang thunderbolt tradition)"
+          }
+        ],
+        "notes": "Agemem is the wife of the great spirit Kadaklan. In the thunderbolt traditions of Lagangilang and Abang, Kadaklan (the thunderbolt) 'often eats the ground and releases his wife Agemem,' associating her with the ground/earth from which she is freed."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+          }
+        ],
+        "notes": "Associated with the ground, from which Kadaklan (the thunderbolt) releases her."
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "tinguian_kadaklan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+          }
+        ],
+        "notes": "Agemem is the wife of Kadaklan, the greatest of the spirits."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          },
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Agemem is the wife of Kadaklan, the great sky-spirit of the Tinguian, as recorded by Fay-Cooper Cole. She is consistently named as his consort; in the Lagangilang and Abang thunderbolt traditions Kadaklan 'eats the ground and releases his wife Agemem,' linking her to the earth/ground from which she is freed when the thunderbolt strikes. Cole gives little independent narrative for her beyond her marriage to Kadaklan."
+  },
+  {
+    "id": "tinguian_kimat",
+    "name": {
+      "primary": "Kimat",
+      "alt": [
+        "Kimat (the Lightning)",
+        "Dog of Kadaklan"
+      ],
+      "transliterations": {
+        "tinguian": "Kimat",
+        "etymology": "Itneg kimat 'lightning'; the lightning personified as the dog of Kadaklan."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "the-lightning-dog-bites-to-summon-ceremony",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Kimat, the lightning, is the dog of Kadaklan. Cole records that Kimat will bite a house, a tree, or a field whenever the divine master desires that a special ceremony be performed; the strike marks the place where the rite must be held."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Kimat is the lightning itself, personified as Kadaklan's dog."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "bites-as-the-lightning-stroke",
+        "name": "Strikes as the lightning to mark where a ceremony must be held",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Bites a house, tree, or field at Kadaklan's wish, signalling that a special ceremony is required."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "companion",
+        "personId": "tinguian_kadaklan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Kimat is the dog of the great spirit Kadaklan and acts at his command."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Kimat is the lightning, personified in Tinguian belief as the dog of the great sky-spirit Kadaklan, as recorded by Fay-Cooper Cole. It is the instrument by which Kadaklan communicates his will: Kimat 'will bite a house, a tree, or a field whenever the divine master desires that a special ceremony be performed,' so that a lightning-strike marks the spot where a rite must be held. (Modern fantasy and role-playing treatments embellish Kimat with invented physical traits; only its identity as Kadaklan's lightning-dog and its ceremony-summoning bite are attested in Cole.)"
+  },
+  {
+    "id": "tinguian_bagatulayan",
+    "name": {
+      "primary": "Bagatulayan",
+      "alt": [
+        "Bagatúlayan",
+        "Director of the Celestial Realm"
+      ],
+      "transliterations": {
+        "tinguian": "Bagatulayan",
+        "etymology": "Itneg personal name of the spirit concerned with directing the activities of the celestial/sky realm."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "directs-the-activities-of-the-celestial-realm",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Bagatulayan is the spirit who lives in and directs the activities of the celestial (sky) realm in Tinguian belief as recorded by Cole. He governs the affairs of the upper world. In later post-Cole syntheses he is sometimes elevated to supreme creator with Kadaklan as a subordinate, though Cole's own account foregrounds Kadaklan as the greatest of the spirits."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Dwells in and directs the activities of the celestial realm."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "directs-the-celestial-activities",
+        "name": "Directs and rules the activities of the celestial (sky) realm",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Governs the affairs of the upper/celestial world."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Bagatulayan is the Tinguian (Itneg) spirit who lives in and directs the activities of the celestial, or sky, realm, as recorded by Fay-Cooper Cole. He governs the workings of the upper world. The literature is divided on his rank: Cole's own ethnography presents Kadaklan as 'the greatest' of the spirits while Bagatulayan directs the celestial activities, whereas a number of later, post-Cole popular syntheses recast Bagatulayan as the supreme creator with Kadaklan subordinate to him. Cole attests no spouse, kin, or peer relation for Bagatulayan."
+  },
+  {
+    "id": "tinguian_apadel",
+    "name": {
+      "primary": "Apadel",
+      "alt": [
+        "Kalagang",
+        "Guardian of the Pinaing"
+      ],
+      "transliterations": {
+        "tinguian": "Apadel",
+        "etymology": "Itneg name of the guardian spirit who dwells in the spirit-stones (pinaing / saksak)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "guardian-dwelling-in-the-spirit-stones",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Apadel, also called Kalagang, is the guardian spirit who dwells in the spirit-stones called pinaing (or saksak). These stones, of various sizes and shapes, stand on hallowed ground, often under old trees or at the entrance of a village, and Apadel through them protects such places, the village, and the creatures of the forest."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "guardianship",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Protector of hallowed places, of the village, and of forest creatures, acting through the pinaing stones."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guards-through-the-spirit-stones",
+        "name": "Guards village, sacred places, and forest creatures through the spirit-stones",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Dwells in and acts through the pinaing/saksak stones to protect their sites and the people."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "pinaing-spirit-stones",
+        "name": "Pinaing (saksak) spirit-stones",
+        "kind": "sacred-stones",
+        "role": "dwelling-place / cult object",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Stones of various sizes and shapes on hallowed ground (often under old trees or at a village entrance) in which Apadel dwells; honored with coconut oil and offerings."
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Apadel, also called Kalagang, is the Tinguian (Itneg) guardian spirit who dwells in the spirit-stones known as pinaing or saksak, as recorded by Fay-Cooper Cole. These stones, of various sizes and shapes, are set on hallowed ground, frequently beneath old trees or at the entrance to a village; through them Apadel guards such sacred spots, the community, and the creatures of the forest. The stones receive offerings and anointing with oil so that the spirit will continue to shield the people from harm. Cole attests no kin, spouse, or peer relation for Apadel."
+  },
+  {
+    "id": "tinguian_makaboteng",
+    "name": {
+      "primary": "Makaboteng",
+      "alt": [
+        "Sanadan",
+        "Makaboteng (one who frightens)"
+      ],
+      "transliterations": {
+        "tinguian": "Makaboteng",
+        "etymology": "Itneg makaboteng 'one who frightens'; the guardian spirit of the deer and the wild hogs."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "mythic-prehistoric"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "guardian-of-deer-and-wild-hogs",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Makaboteng, also called Sanadan, is the guardian of the deer and the wild hogs. Cole records that his good will is necessary if the dogs are to be successful in the chase; consequently he is summoned to many ceremonies, where he receives the most courteous treatment."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wild-game",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "Guardian of deer and wild hogs; his favor governs success in the hunt."
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guards-deer-and-wild-hogs",
+        "name": "Guards the deer and wild hogs and grants or withholds success in the hunt",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "notes": "His good will is required for the hunting dogs to succeed; he is courted at ceremonies."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Makaboteng ('one who frightens'), also called Sanadan, is the Tinguian (Itneg) guardian spirit of the deer and the wild hogs, as recorded by Fay-Cooper Cole. Because his good will is necessary if the hunting dogs are to succeed in the chase, he is summoned to many ceremonies, where he is treated with the greatest courtesy. Cole attests no kin, spouse, or peer relation for Makaboteng."
+  }
+]
+```
+
+SOLITARY: tinguian_bagatulayan — Cole records Bagatulayan only as the spirit who directs the activities of the celestial realm; no spouse, kin, twin, companion, or peer relation is attested for him in either monograph.
+SOLITARY: tinguian_apadel — Cole records Apadel/Kalagang only as the guardian spirit dwelling in the pinaing/saksak spirit-stones; no spouse, kin, or peer relation is attested for him.
+SOLITARY: tinguian_makaboteng — Cole records Makaboteng/Sanadan only as the guardian of deer and wild hogs whose good will is courted in the hunt; no spouse, kin, or peer relation is attested for him.
+
+(No RECIPROCAL-NEEDED lines: Kadaklan<->Agemem spouse and Kadaklan<->Kimat companion are both fully reciprocal within this batch; no symmetric relation is attested between any of these six figures and the existing corpus figures tinguian_gagayoma or tinguian_takyayen.)
