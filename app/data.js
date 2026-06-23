@@ -160736,6 +160736,1106 @@ const NEW_FIGURES = [
   "notes": "Purépecha moon goddess of sustenance, patroness of agriculture and fishing."
  },
  {
+  "id": "rapanui_haua",
+  "name": {
+   "primary": "Haua",
+   "alt": [
+    "Haua-tu'u-take-take",
+    "Hawa",
+    "Chief of the Eggs"
+   ],
+   "transliterations": {
+    "rapanui": "Haua-tu'u-take-take",
+    "etymology": "Rapa Nui; the fuller cult-name Haua-tu'u-take-take is glossed in the tradition as the 'chief of the eggs', the god paired with Makemake over the sea-birds (Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "removal-of-the-seabirds-to-motu-nui",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "Companion of Makemake and, with him, master of the sea-bird flocks. The two gods removed the nesting birds to the offshore islets Motu Nui and Motu Iti (because people were taking all their eggs) and revealed themselves to a priestess, instituting the birdman cult and the offering 'for Haua, for Makemake!'. In the cult he is one of the four associated gods, called 'chief of the eggs', with his wife vi'e Hoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "birds",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Co-master, with Makemake, of the sea-birds brought to Motu Nui; the 'chief of the eggs'."
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Shares with Makemake the food-offering and the increase of fish and fowl."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "master-the-seabird-flocks",
+    "name": "Master the sea-bird flocks",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "With Makemake, drove and confined the nesting sea-birds to the islets Motu Nui and Motu Iti."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "rapanui_makemake",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Inseparable companion of Makemake in the mastery of the sea-birds and in the food-offering 'for Haua, for Makemake!'."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Haua (in cult Haua-tu'u-take-take, 'chief of the eggs') is the companion god of Makemake. Together the two are the masters of the sea-bird flocks: they drove the nesting birds to the islets Motu Nui and Motu Iti and, appearing to a priestess, founded the birdman cult and the food-offering set aside 'for Haua, for Makemake!'. He is named among the four gods of the birdman sect, with his wife vi'e Hoa."
+ },
+ {
+  "id": "rapanui_hiro",
+  "name": {
+   "primary": "Hiro",
+   "alt": [
+    "Hiro the rain-god"
+   ],
+   "transliterations": {
+    "rapanui": "Hiro",
+    "etymology": "Rapa Nui; god of wind and rain, whose name is invoked in the rain-chant and in the stone trumpet Pu o Hiro ('trumpet of Hiro'). Brother of Tangaroa (Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "attestation-as-the-rain-god",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "God of wind and rain and brother of Tangaroa. In time of drought the people chanted to him 'E te uá, matavai-roa a Hiro-é' — 'O rain, great tears of Hiro' — so that the rain was understood as his weeping; he was summoned with the stone trumpet called Pu o Hiro."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "rain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The rain is his tears; invoked in drought to send it down."
+   },
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "God of wind as well as rain; brother of Tangaroa, powerful in magic."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send-the-rain",
+    "name": "Send the rain (his tears)",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The rain is the 'great tears of Hiro'; petitioned in drought with the chant 'E te uá, matavai-roa a Hiro-é' and with the trumpet Pu o Hiro."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pu_o_hiro",
+    "name": "Pu o Hiro (the trumpet of Hiro)",
+    "kind": "instrument",
+    "role": "cult-object",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Field record of the Pu o Hiro stone aerophone, north coast of Rapa Nui"
+     }
+    ],
+    "notes": "A pierced stone aerophone ('trumpet of Hiro') sounded to call the rain-god Hiro in fertility and rain-making rites."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "rapanui_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Brother of Tangaroa; both brothers were powerful in magic."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hiro is the Rapa Nui god of wind and rain and the brother of Tangaroa. The rain was held to be his weeping: in drought the islanders chanted 'E te uá, matavai-roa a Hiro-é' — 'O rain, great tears of Hiro' — and summoned him with the pierced stone trumpet, the Pu o Hiro, in their rain- and fertility-rites."
+ },
+ {
+  "id": "rapanui_hotu_matua",
+  "name": {
+   "primary": "Hotu Matu'a",
+   "alt": [
+    "Hotu-Matua",
+    "Hotu Matua",
+    "Ariki Mau Hotu Matu'a"
+   ],
+   "transliterations": {
+    "rapanui": "Hotu Matu'a",
+    "etymology": "Rapa Nui; the title/name of the founding paramount chief. 'Hotu' and the epithet 'Matu'a' ('the parent / progenitor') mark him as the ancestral father-king of the island (Englert, 1948)."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "migration-from-hiva",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Paramount chief (ariki mau) of the homeland Hiva. After his counsellor Hau Maka dreamed of a far land — 'the eyes that look to the sky' — and seven explorers were sent ahead, Hotu Matu'a led the migration to Rapa Nui in a great voyaging canoe (in some tellings two, with Tu'u-ko-Iho), bringing the founding stock of plants and animals."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "landing-and-settlement-at-anakena",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "Landed and made his seat at Anakena beach. He divided the island among his sons, founding the clans (mata); his firstborn Tu'u Maheke received the lands about Anakena and continued the royal line."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "death-overlooking-the-homeland",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "In old age he climbed the rim of Rano Kau (above Orongo) to call upon the spirits of his ancestors, and there, gazing toward Hiva, he died — the founding ancestor of all the Rapa Nui."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ariki mau",
+     "script": "Rapa Nui",
+     "rom": "ariki mau"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "The paramount chief (ariki mau) and founder of the royal line of Rapa Nui."
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Founding ancestor of the Rapa Nui people; the clans claimed descent from his sons, and the kings from him and the gods Tangaroa and Rongo."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "hotu_matua_canoe",
+    "name": "Hotu Matu'a's voyaging canoe",
+    "kind": "vessel",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "The great (in some tellings double, or two) voyaging canoe in which Hotu Matu'a led the migration from Hiva and landed at Anakena."
+   },
+   {
+    "id": "hotu_matua_founding_cargo",
+    "name": "Founding plants and animals brought from Hiva",
+    "kind": "provisions",
+    "role": "bringer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "The cultivated plants and domestic stock (and, in tradition, the chiefly knowledge) carried in the migration canoe to found life on the island."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "descendant-of",
+    "personId": "rapanui_tangaroa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Claimed descent from the god Tangaroa."
+   },
+   {
+    "kind": "descendant-of",
+    "personId": "rapanui_rongo",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Claimed descent from the god Rongo, son of Tangaroa."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hotu Matu'a is the founding ariki mau (paramount ancestor-king) of Rapa Nui. Guided by his counsellor Hau Maka's dream of a far land, he led the Polynesian migration from the homeland Hiva in a great voyaging canoe and settled at Anakena, dividing the island among his sons (whence the clans) and passing the kingship to his firstborn Tu'u Maheke. He died on the rim of Rano Kau gazing toward Hiva. The ariki traced their line to him and, through him, to the gods Tangaroa and Rongo (Métraux 1940:127)."
+ },
+ {
+  "id": "rapanui_makemake",
+  "name": {
+   "primary": "Makemake",
+   "alt": [
+    "Make-Make",
+    "Make Make"
+   ],
+   "transliterations": {
+    "rapanui": "Makemake",
+    "etymology": "Personal name of the Rapa Nui supreme god; sometimes regarded as a local form of the wider Polynesian creator Tane (Métraux, Ethnology of Easter Island, 1940). No secure further etymology survives."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "creation-of-mankind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "The supreme creator. Looking at his reflection in a calabash of water he resolved to make a being like himself: he procreated red flesh (the first man) from a gourd of water and, mounding up earth, formed three men and one woman. His offspring are named as Tive, Rorai, Hova and the noblewoman Arangi-kote-kote."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "institution-of-the-birdman-cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Chief god of the tangata-manu (birdman) cult at Orongo. With his companion Haua he drove the sea-birds to nest on the islet Motu Nui; the annual contest for the first sooty-tern (manutara) egg was held in his honour, and he is the great subject of the Orongo petroglyphs, carved as a staring face or skull with huge eye-sockets."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Makemake",
+     "script": "Rapa Nui",
+     "rom": "Makemake"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Maker of mankind and of the world's first beings."
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "God of fertility and of the increase of the sea-birds; invoked for plenty."
+   },
+   {
+    "sphereId": "birds",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Lord and driver of the sea-bird flocks; patron of the birdman cult."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "create-human-life",
+    "name": "Create human life",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Procreates the first man as red flesh from a calabash of water and forms three men and a woman from mounded earth."
+   },
+   {
+    "id": "command-the-seabirds",
+    "name": "Command and drive the sea-birds",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "With Haua he removed the nesting sea-birds to Motu Nui, making the manutara egg the prize of the birdman rite."
+   },
+   {
+    "id": "send-fertility-and-plenty",
+    "name": "Send fertility and plenty",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Invoked, with Haua, in the food-offering formula 'Ka to mai te ika, te manu — for Haua, for Makemake!' to give fish and fowl."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "manutara_egg",
+    "name": "Manutara (sooty-tern) egg",
+    "kind": "ritual-object",
+    "role": "patron-prize",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The first egg of the sooty tern (manutara) taken on Motu Nui each year; its bearer's patron became the tangata manu (birdman) for the year, in Makemake's honour."
+   },
+   {
+    "id": "makemake_petroglyphs",
+    "name": "Makemake face/skull petroglyphs of Orongo",
+    "kind": "icon",
+    "role": "cult-image",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Métraux, Ethnology of Easter Island (1940); rock-art corpus of Orongo, Rano Kau"
+     }
+    ],
+    "notes": "Makemake is carved as a face or skull with great round eye-sockets, the commonest motif of the Orongo birdman sanctuary and of caves and coastal rocks across the island."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "rapanui_haua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "notes": "Inseparable companion of Haua; together they brought the sea-birds to Motu Nui and share the food-offering."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Makemake is the supreme god of Rapa Nui: creator of the world's first beings and of mankind (whom he procreates from a gourd of water and from mounded earth), god of fertility, and chief deity of the tangata-manu (birdman) cult. With his companion Haua he drove the sea-birds to the islet Motu Nui, and the yearly competition for the first sooty-tern (manutara) egg at Orongo was held in his name. He is the most frequent figure in Easter Island rock art, depicted as a staring face or skull with enormous eye-sockets."
+ },
+ {
+  "id": "rapanui_nuahine",
+  "name": {
+   "primary": "Nuahine",
+   "alt": [
+    "Nuahine Pikea Uri",
+    "Hina",
+    "the old woman in the moon"
+   ],
+   "transliterations": {
+    "rapanui": "Nuahine",
+    "etymology": "Rapa Nui, 'old woman' (nua, 'mother/old woman'); the aged woman seen in the moon, identified with the Polynesian moon-goddess Hina (Routledge, 1919; Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-old-woman-in-the-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "The old woman whom the Rapa Nui see in the face of the moon — their form of the Polynesian moon-goddess Hina. She is the 'nuahine' of the moon; in a related island tale her anger (when left unfed) is blamed for the falling of the moai."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Nuahine",
+     "script": "Rapa Nui",
+     "rom": "Nuahine"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The old woman of the moon, the Rapa Nui Hina."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Nuahine, 'the old woman', is the aged woman the Rapa Nui see in the moon — their form of the Polynesian moon-goddess Hina. She belongs to the lunar lore of the island rather than to any genealogy. SOLITARY: a moon-figure named with no attested kin in the Rapa Nui record."
+ },
+ {
+  "id": "rapanui_rongo",
+  "name": {
+   "primary": "Rongo",
+   "alt": [
+    "Roko",
+    "Rongo-ma-tane (Polynesian cognate)"
+   ],
+   "transliterations": {
+    "rapanui": "Rongo",
+    "etymology": "Rapa Nui reflex of the pan-Polynesian god Rongo/Lono; on Easter Island the son of Tangaroa in the royal genealogy (Métraux, 1940:127)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "rapanui_tangaroa"
+  ],
+  "parentRoles": {
+   "rapanui_tangaroa": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "place-in-the-royal-genealogy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940), p. 127"
+     }
+    ],
+    "notes": "Son of Tangaroa. With his father he is the divine ancestor from whom the kings of Easter Island proclaimed their direct descent, linking the human ariki line of Hotu Matu'a to the gods."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Rongo",
+     "script": "Rapa Nui",
+     "rom": "Rongo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "With Tangaroa, the divine forebear of the royal line of Rapa Nui."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "rapanui_tangaroa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Son of Tangaroa in the royal genealogy."
+   },
+   {
+    "kind": "ancestor-of",
+    "personId": "rapanui_hotu_matua",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Divine ancestor (with Tangaroa) of the first king Hotu Matu'a."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940), p. 127"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Rongo is the Rapa Nui reflex of the widespread Polynesian god Rongo/Lono. On Easter Island his role in the surviving record is genealogical: he is the son of Tangaroa, and with his father he is the divine ancestor from whom the ariki of the island, beginning with Hotu Matu'a, claimed direct descent (Métraux 1940:127)."
+ },
+ {
+  "id": "rapanui_tangaroa",
+  "name": {
+   "primary": "Tangaroa",
+   "alt": [
+    "Tanga Roa",
+    "Takaroa"
+   ],
+   "transliterations": {
+    "rapanui": "Tangaroa",
+    "etymology": "Rapa Nui form of the pan-Polynesian sea-god Tangaroa; on Easter Island remembered chiefly as the ancestral chief who came in the form of a seal (Métraux, 1940)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "coming-to-rapa-nui-as-a-seal",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     }
+    ],
+    "notes": "Came to Rapa Nui from Hiva in the shape of a seal that had a human face and voice. The people killed it and put it in the earth-oven, but the flesh would not cook however long it was baked; from this they understood that Tangaroa had been a chief of great power (mana). He is the brother of Hiro and, in the royal genealogy, the father of Rongo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tangaroa",
+     "script": "Rapa Nui",
+     "rom": "Tangaroa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "The pan-Polynesian sea-god, on Rapa Nui the ancestral chief who arrived from the ocean as a seal."
+   },
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "With Rongo, the divine ancestor from whom the ariki of Easter Island claimed direct descent."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "resist-the-cooking-fire",
+    "name": "Body that will not cook",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "In seal form his flesh would not cook in the earth-oven however long it was baked — the sign of his mana and chiefly divinity."
+   },
+   {
+    "id": "take-the-form-of-a-seal",
+    "name": "Take the form of a seal",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Came across the sea to Rapa Nui as a seal with a human face and human speech."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "rapanui_hiro",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940)"
+     }
+    ],
+    "notes": "Brother of Hiro; both brothers were powerful in magic."
+   },
+   {
+    "kind": "father-of",
+    "personId": "rapanui_rongo",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Father of Rongo in the Rapa Nui royal genealogy."
+   },
+   {
+    "kind": "ancestor-of",
+    "personId": "rapanui_hotu_matua",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Métraux, Ethnology of Easter Island (1940), p. 127"
+     }
+    ],
+    "notes": "Divine ancestor (with Rongo) of the first king Hotu Matu'a, from whom the ariki claimed descent."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Alfred Métraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tangaroa is the Rapa Nui form of the great Polynesian sea-god, but on Easter Island he is remembered above all as the ancestral chief who came from Hiva in the shape of a seal with a human face and voice. Killed and placed in the earth-oven, his flesh would not cook — proof of his mana. He is the brother of the rain-god Hiro and, in the royal genealogy recorded by Métraux (1940:127), the father of Rongo and, with Rongo, a divine ancestor of the first king Hotu Matu'a."
+ },
+ {
+  "id": "rapanui_uoke",
+  "name": {
+   "primary": "Uoke",
+   "alt": [
+    "Uvoke",
+    "Uoké"
+   ],
+   "transliterations": {
+    "rapanui": "Uoke",
+    "etymology": "Rapa Nui; personal name of the land-lifting giant (also Uvoke). The associated island-name Te Pito o te Henua is, on this myth, read 'the fragment of the earth' rather than 'the navel of the earth' (Barthel, 1974)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Rapa Nui",
+  "primaryTradition": "Rapa Nui",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-levering-and-sinking-of-the-lands",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas Barthel, The Eighth Land: The Polynesian Settlement of Easter Island (1974/1978)"
+     }
+    ],
+    "notes": "The primeval giant-god who pried up the lands with his great pole (a lever or crowbar), tilting and sinking one country after another into the sea. When he came to Rapa Nui his pole struck rock and broke, so that only this fragment of land remained above the water — the explanation of the island's small size and isolation, and of the name Te Pito o te Henua, 'the fragment of the earth'."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "primeval",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     }
+    ],
+    "notes": "Shaper (and destroyer) of the land's extent; raises and sinks whole countries."
+   },
+   {
+    "sphereId": "destruction",
+    "contextTag": "primeval",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Barthel, The Eighth Land (1974/1978)"
+     }
+    ],
+    "notes": "His levering drowns the lands; only the broken lever spares Rapa Nui."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lever-up-and-sink-land",
+    "name": "Lever up and sink the land",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Barthel, The Eighth Land (1974/1978)"
+     }
+    ],
+    "notes": "With his great pole he pries up the lands and tips them into the sea; the act ends only when the pole breaks against Rapa Nui."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uoke_lever",
+    "name": "Uoke's great pole (lever / crowbar)",
+    "kind": "tool",
+    "role": "wielder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Barthel, The Eighth Land (1974/1978)"
+     }
+    ],
+    "notes": "The huge digging-pole or lever with which Uoke heaved up the lands; it broke against the rock of Rapa Nui, ending the destruction and leaving the island as the last fragment."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sebastian Englert, La Tierra de Hotu Matu'a (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Thomas Barthel, The Eighth Land: The Polynesian Settlement of Easter Island (1974/1978)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Uoke (Uvoke) is the primeval giant-god who levered up the lands with his enormous pole and sank them one by one into the sea. When he reached Rapa Nui his pole broke against the rock, so that only this last fragment of earth was left standing — the island's own explanation for its small size and extreme isolation, and (on Barthel's reading) for the name Te Pito o te Henua, 'the fragment of the earth'. SOLITARY: a primeval world-shaper named with no kin in the Rapa Nui record."
+ },
+ {
   "id": "roman_bellona",
   "name": {
    "primary": "Bellona",
@@ -164713,6 +165813,1832 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Sámi 'door-woman' goddess of the threshold and the newborn (classed as deity). Uksáhkká / Uksakka (uksa 'door' + áhkká). Daughter of Máttaráhkká, sister of Sáráhkká and Juoksáhkká; receives the child at birth and guards the toddling child and all who pass the door. Secondary attestation (Holmberg, Rydving, Læstadius)."
+ },
+ {
+  "id": "samoan_lefee",
+  "name": {
+   "primary": "Le Feʻe",
+   "alt": [
+    "Feʻe",
+    "Le Fee",
+    "the Octopus-god"
+   ],
+   "transliterations": {
+    "samoan": "Le Feʻe",
+    "etymology": "Samoan le 'the' + feʻe 'octopus, cuttlefish'; the octopus war-god of Aʻana and Vaimauga, honoured at the Fale o le Feʻe ('house of the octopus')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells in a palace beneath the sea as a great octopus, his tentacles reaching to the far corners of the world; the war-god of Aʻana and Vaimauga, his voice heard in thunder",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Feʻe the war-god; J. B. Stair, 'The temple of the Feʻe,' Journal of the Polynesian Society (1894)"
+     }
+    ],
+    "notes": "He takes the form of the octopus (feʻe) at sea, of a white shell (pule) on land, and of the soldier-crab (uga) on the mountain. The yearly feast 'o le tapu o Aʻana i le Feʻe' was held in his honour; his stone temple, the Fale o le Feʻe inland of Apia on the Vaisigano, was the only such temple in Samoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the Feʻe, war-god of Aʻana and Vaimauga"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sea-and-the-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "feʻe",
+     "script": "Samoan",
+     "rom": "feʻe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the octopus-god in his palace beneath the sea"
+     }
+    ]
+   },
+   {
+    "sphereId": "thunder-and-war-omens",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the Feʻe's voice in thunder; the diviners reading the thunder for war"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lefee-shapeshift-octopus",
+    "name": "Take the form of an octopus at sea, a white shell on land, and a soldier-crab on the mountain",
+    "term": {
+     "value": "feʻe",
+     "script": "Samoan",
+     "rom": "feʻe"
+    },
+    "inheritability": "none",
+    "notes": "The war-god's three guises: feʻe (octopus) at sea, pule (white shell) on land, uga (soldier-crab) on the mountain.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the three forms of the Feʻe"
+     }
+    ]
+   },
+   {
+    "id": "lefee-thunder-voice",
+    "name": "Speak in thunder, giving omens for war",
+    "inheritability": "none",
+    "notes": "The Feʻe was believed to cause thunderstorms by his voice; the king's diviners listened to the thunder to learn whether to go to war.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the thunder-voice and war-divination of the Feʻe"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "lefee-fale-o-le-fee",
+    "name": "Fale o le Feʻe (the stone temple of the octopus)",
+    "kind": "temple",
+    "term": {
+     "value": "Fale o le Feʻe",
+     "script": "Samoan",
+     "rom": "Fale o le Feʻe"
+    },
+    "role": "honoured-at",
+    "notes": "His stone temple inland of Apia on the banks of the Vaisigano, ringed by stone pillars — the only stone temple recorded in Samoa; its ruins were visited and described by Stair.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, 'The temple of the Feʻe,' JPS (1894); G. Turner, Samoa (1884), the temple surrounded by stone pillars"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Feʻe the war-god"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, 'The temple of the Feʻe,' Journal of the Polynesian Society (1894); Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "octopus-war-god-of-aana-with-stone-temple",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the octopus war-god of Aʻana and Vaimauga and his stone temple"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Le Feʻe, the octopus war-god of the districts of Aʻana and Vaimauga, dwelling beneath the sea with his tentacles reaching to the corners of the world, whose voice is thunder and who gives omens for war. He appears as an octopus at sea, a white shell on land, and a soldier-crab on the mountain, and was honoured at the Fale o le Feʻe, the only stone temple in Samoa. No genealogy is attested — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_losi",
+  "name": {
+   "primary": "Losi",
+   "alt": [
+    "Losi the fisherman",
+    "Losi the giant"
+   ],
+   "transliterations": {
+    "samoan": "Losi",
+    "etymology": "Samoan personal name of the master-fisherman and demigod of the heaven-raiding, taro-bringing legend."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "A master-fisherman who ascends to Tagaloa's heaven, plays tricks on the gods at their feast, endures and overcomes the ordeals they set him, and on his expulsion smuggles the taro down to earth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the legend of Losi and the taro; J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "notes": "Sent to supply the gods with fish, Losi laid them in the doorways so the gods slipped and fell; angered, they set him ordeals (an oven, a fight, a house), which he survived, and he carried off the taro (and other food-plants) to earth, where they became the staple foods of Samoa."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fishing-and-the-sea-harvest",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi the master-fisherman"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-cultivated-food-plants",
+    "contextTag": "episodic",
+    "term": {
+     "value": "talo",
+     "script": "Samoan",
+     "rom": "talo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi brings the taro (talo) down from heaven to earth"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-and-the-outwitting-of-the-gods",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), Losi's tricks and ordeals in Tagaloa's heaven"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "losi-raid-heaven",
+    "name": "Ascend to and raid Tagaloa's heaven, surviving the gods' ordeals",
+    "inheritability": "none",
+    "notes": "He withstands the trials set by the heavenly gods (oven, combat, a falling/crushing house) and is too strong and cunning to be destroyed.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi's ordeals among the gods"
+     }
+    ]
+   },
+   {
+    "id": "losi-bring-the-taro",
+    "name": "Carry the taro (and other food-plants) down from heaven to earth",
+    "inheritability": "none",
+    "notes": "The taro, which had grown only in the heaven of the gods, he smuggled to earth, where it (with other plants) became the staple food of Samoa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the bringing-down of the taro by Losi"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "losi-taro-cutting",
+    "name": "The taro (talo) brought to earth",
+    "kind": "plant-origin",
+    "term": {
+     "value": "talo",
+     "script": "Samoan",
+     "rom": "talo"
+    },
+    "role": "bringer",
+    "notes": "The taro slip Losi carried down from Tagaloa's heaven, origin of the cultivated taro and the staple of the Samoan diet.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the taro brought down by Losi"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the legend of Losi"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "raids-heaven-and-brings-the-taro-to-earth",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Losi the fisherman raids Tagaloa's heaven and brings down the taro"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Losi, the master-fisherman and demigod who ascends to Tagaloa's heaven, plays tricks on the gods and survives the ordeals they set, and on his expulsion carries the taro (talo) — and other food-plants — down to earth, where they become the staples of Samoa. A culture-hero of the demigod/legendary-ancestor stratum. No fixed genealogy is given in the corpus used here (variant traditions make him a descendant of Tagaloa) — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_mafuie",
+  "name": {
+   "primary": "Mafuiʻe",
+   "alt": [
+    "Mafuie",
+    "Mafuiʻe the earthquake-god"
+   ],
+   "transliterations": {
+    "samoan": "Mafuiʻe",
+    "etymology": "Samoan; the god of earthquakes (cf. mafuiʻe 'earthquake'), cognate within Polynesia with fire/earthquake-deities (e.g. Mahuika/Mahuiʻe, keeper of fire). Dweller in the subterranean land of perpetual fire."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Dwells beneath the earth in the land of perpetual fire, guarding the subterranean fire; the hero Tiʻitiʻi descends to him, wrests fire from him, and breaks off one of his arms",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Mafuiʻe / Tiʻitiʻi fire-myth"
+     }
+    ],
+    "notes": "After Tiʻitiʻi breaks his arm, Mafuiʻe yields the secret that fire is hidden in certain trees and may be drawn out by rubbing wood; the Samoans say his one remaining arm is why earthquakes are not worse."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earthquakes",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mafuiʻe",
+     "script": "Samoan",
+     "rom": "mafuiʻe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Mafuiʻe the earthquake-god who shakes the islands"
+     }
+    ]
+   },
+   {
+    "sphereId": "subterranean-fire",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the home of Mafuiʻe in the land of perpetual fire; the fire hidden in trees"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-underworld",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), on Mafuiʻe beneath the earth"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mafuie-shake-the-earth",
+    "name": "Shake the islands by moving the handle/prop of the world beneath them",
+    "inheritability": "none",
+    "notes": "The Samoans held that Mafuiʻe has a long handle to the world under the islands; when angry he moves it and the land quakes. With only one arm (Tiʻitiʻi having broken the other) the shaking is the less violent.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the earthquake and the one-armed Mafuiʻe"
+     }
+    ]
+   },
+   {
+    "id": "mafuie-guard-and-yield-fire",
+    "name": "Guard the underground fire and reveal that it is hidden in the trees",
+    "inheritability": "none",
+    "notes": "Overpowered by Tiʻitiʻi, he gives up the secret of fire: it lies in every piece of wood and is brought out by rubbing the fire-plough.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Mafuiʻe yields the secret of fire to Tiʻitiʻi"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mafuie-subterranean-fire",
+    "name": "The subterranean fire (afi)",
+    "kind": "element",
+    "term": {
+     "value": "afi",
+     "script": "Samoan",
+     "rom": "afi"
+    },
+    "role": "guardian",
+    "notes": "The perpetual fire Mafuiʻe keeps beneath the earth, which Tiʻitiʻi wrests from him for mankind; thereafter hidden in trees and won by the fire-plough (sigano/fire-rubbing).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the fire taken from Mafuiʻe"
+     }
+    ]
+   },
+   {
+    "id": "mafuie-world-handle",
+    "name": "The handle/prop of the world",
+    "kind": "implement",
+    "role": "owner",
+    "notes": "The long stick or handle to the world beneath the islands; Mafuiʻe moves it to shake the land. Recorded in Turner as the Samoan explanation of earthquakes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Mafuiʻe's handle to the world under the islands"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the Mafuiʻe and Tiʻitiʻi fire-myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "earthquake-and-fire-god-who-loses-an-arm-to-tiitii",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Tiʻitiʻi breaks off Mafuiʻe's arm and wins fire"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mafuiʻe, the Samoan god of earthquakes and keeper of the subterranean fire, dwelling in the land of perpetual fire beneath the earth. The hero Tiʻitiʻi (the Samoan Māui) descends, wrests fire from him, and breaks off one of his arms; Mafuiʻe then reveals that fire is hidden in the trees. His single remaining arm is the Samoan reason that earthquakes are not more destructive. No genealogy is attested in the corpus used here — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_moso",
+  "name": {
+   "primary": "Moso",
+   "alt": [
+    "Moso"
+   ],
+   "transliterations": {
+    "samoan": "Moso",
+    "etymology": "Samoan; one of the high gods of the land/earth, widely invoked as a village aitu, set against Tagaloa of the heavens."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "One of the high gods of the land/earth — the counterpart of Tagaloa of the heavens — widely worshipped as a village god, manifest in birds and other incarnations and addressed in family prayers",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), Moso among the gods invoked by the Samoans"
+     }
+    ],
+    "notes": "Moso was one of the most widely-invoked gods; in some villages he was symbolised by the tanoa (kava-bowl) decorated with white shells (lipi), and incarnate in the pigeon (tu) or the fuia (Samoan starling), whose coming signified an answered prayer."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-land-and-earth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso, a high god of the land, opposite to Tagaloa of the heavens"
+     }
+    ]
+   },
+   {
+    "sphereId": "village-tutelary-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "aitu",
+     "script": "Samoan",
+     "rom": "aitu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso as a village god incarnate in birds and other forms"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "moso-incarnate-in-birds",
+    "name": "Become present and answer prayer through incarnations (the pigeon, the fuia starling, and other forms)",
+    "inheritability": "none",
+    "notes": "When the fuia or the sacred pigeon came, morning or evening, the family knew Moso had heard their prayer.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the incarnations of Moso"
+     }
+    ]
+   },
+   {
+    "id": "moso-guard-the-village",
+    "name": "Guard the village and its people as their tutelary god",
+    "inheritability": "none",
+    "notes": "Each village had its god, and those born there were reckoned his; Moso was among the most widely worshipped of these tutelary powers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the village gods of Samoa and Moso among them"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "moso-tanoa",
+    "name": "The tanoa (kava-bowl) symbol of Moso",
+    "kind": "symbol",
+    "term": {
+     "value": "tanoa",
+     "script": "Samoan",
+     "rom": "tanoa"
+    },
+    "role": "symbolized-by",
+    "notes": "In one village Moso was symbolised by the tanoa, the wooden kava-bowl, decorated with white shells (lipi) used at a sudden death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso symbolised by the shell-decked tanoa"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the gods invoked by the Samoans, Moso among them"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "high-god-of-the-land-and-widely-invoked-village-aitu",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Moso, high god of the land opposite Tagaloa of the heavens"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Moso, one of the high gods of the land/earth in Samoan religion — the counterpart of Tagaloa of the heavens — and among the most widely-invoked village aitu, incarnate in the pigeon and the fuia starling and symbolised in one village by the shell-decked tanoa (kava-bowl). No genealogy is attested in the corpus used here — see SOLITARY flag. Documented by Turner and Stair (secondary)."
+ },
+ {
+  "id": "samoan_nafanua",
+  "name": {
+   "primary": "Nafanua",
+   "alt": [
+    "Nafanua of Falealupo",
+    "Goddess of Pulotu"
+   ],
+   "transliterations": {
+    "samoan": "Nafanua",
+    "etymology": "Samoan; popularly glossed in connection with her concealed, earth-buried birth (the afterbirth/blood-clot hidden in the ground, nafa 'concealed/buried' + fanua 'land, earth/afterbirth'). The war-goddess of Falealupo on Savaiʻi."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "samoan_saveasiuleo",
+   "samoan_tilafaiga"
+  ],
+  "parentRoles": {
+   "samoan_saveasiuleo": "paternal",
+   "samoan_tilafaiga": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born of Saveasiʻuleo and Tilafaiga and hidden from her devouring father — the afterbirth buried in the earth; raised in Pulotu, she studies the arts of war and of the rain-forest's healing plants",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the concealed birth of Nafanua, daughter of Saveasiʻuleo and Tilafaiga"
+     }
+    ],
+    "notes": "TYPE: child of two deities (Saveasiʻuleo and Tilafaiga) ⇒ computes to deity, despite the popular 'demigod' label."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Ascends from Pulotu with her toa-wood war-clubs, leads the people of the western districts to victory over their oppressors, and afterwards prophesies to Malietoa Faʻiga: 'Faʻatali i lagi se ao o lou mālō' — 'Wait upon heaven for a crown for your kingdom'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the war of liberation and the prophecy to Malietoa; J. B. Stair, Old Samoa (1897)"
+     }
+    ],
+    "notes": "Her prophecy is read as foretelling the coming of a higher (Christian) kingship to the Malietoa line; she is the patron war-goddess of Falealupo, by the entrance to Pulotu."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-battle",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "toa",
+     "script": "Samoan",
+     "rom": "toa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Nafanua the war-goddess and her toa-wood clubs"
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy-and-oracular-pronouncement",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); A. Krämer, Die Samoa-Inseln (1902/03), the prophecy to Malietoa"
+     }
+    ]
+   },
+   {
+    "sphereId": "sovereignty-and-the-bestowal-of-titles",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), Nafanua and the conferral of the pāpā / kingly titles"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-knowledge-of-plants",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): her knowledge of the rain-forest and the healing power of plants learned in Pulotu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "nafanua-wield-the-war-clubs",
+    "name": "Wield the four toa-wood war-clubs in battle, breaking the lines of the enemy",
+    "inheritability": "none",
+    "notes": "Her clubs are made from the toa (ironwood). Tafesilafaʻi is the deadliest, used against the foe; Faʻauliulitō a heavy striking-club; Ulimasao the peace-club that ends the war; Faʻamategataua the club used once the mālō (government) is established.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the four war-clubs of Nafanua"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-prophesy-the-kingdom",
+    "name": "Utter binding war-prophecies and confer or withhold the kingdom",
+    "term": {
+     "value": "ao",
+     "script": "Samoan",
+     "rom": "ao"
+    },
+    "inheritability": "none",
+    "notes": "To Malietoa Faʻiga, who sought her aid to unite Samoa, she prophesied 'Faʻatali i lagi se ao o lou mālō' — 'Wait upon heaven for a crown (ao) for your kingdom.'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); A. Krämer, Die Samoa-Inseln (1902/03), the prophecy to Malietoa"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-lead-armies",
+    "name": "Lead and embolden armies, the patron war-power of the western districts",
+    "inheritability": "none",
+    "notes": "She descends from Pulotu to overthrow the oppressors and is thereafter invoked as the goddess of war; Falealupo on Savaiʻi is her seat, beside the entrance to Pulotu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), Nafanua's war of liberation"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nafanua-club-tafesilafai",
+    "name": "Tafesilafaʻi (war-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Tafesilafaʻi",
+     "script": "Samoan",
+     "rom": "Tafesilafaʻi"
+    },
+    "role": "wielder",
+    "notes": "Her first and deadliest toa-wood war-club, used solely against the enemy; the name evokes 'meeting/contending together.'",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); Nafanua's war-clubs (Falealupo / Pulotu tradition)"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-club-faauliulito",
+    "name": "Faʻauliulitō (war-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Faʻauliulitō",
+     "script": "Samoan",
+     "rom": "Faʻauliulitō"
+    },
+    "role": "wielder",
+    "notes": "A heavy striking toa-wood club; in the tradition it is given to her attendants to strike the enemy from the flanks while she meets them in the centre to seek a peace.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the four clubs of Nafanua"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-club-ulimasao",
+    "name": "Ulimasao (peace-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Ulimasao",
+     "script": "Samoan",
+     "rom": "Ulimasao"
+    },
+    "role": "wielder",
+    "notes": "The 'steer-to-safety' club (ulimasao 'to steer safely into harbour / arrive safely'), shaped like a canoe-paddle; used to end the war and bring peace.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the peace-club Ulimasao"
+     }
+    ]
+   },
+   {
+    "id": "nafanua-club-faamategataua",
+    "name": "Faʻamategataua (war-club)",
+    "kind": "weapon",
+    "term": {
+     "value": "Faʻamategataua",
+     "script": "Samoan",
+     "rom": "Faʻamategataua"
+    },
+    "role": "wielder",
+    "notes": "The fourth toa-wood club, used once the enemy is defeated and the mālō (government/order) has been established.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the four war-clubs of Nafanua"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "samoan_saveasiuleo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884): Nafanua, daughter of Saveasiʻuleo"
+     }
+    ],
+    "notes": "Daughter of the eel-lord of Pulotu, who hid her, reared her, and armed her."
+   },
+   {
+    "kind": "mother",
+    "personId": "samoan_tilafaiga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga (sister of Taema, the tatau-twins) as the mother of Nafanua"
+     }
+    ],
+    "notes": "Her mother Tilafaiga concealed the pregnancy and buried the afterbirth in the earth to save her from Saveasiʻuleo."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the Nafanua cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "war-goddess-with-the-toa-clubs-and-prophecy-to-malietoa",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the toa-wood war-clubs and the prophecy 'Faʻatali i lagi se ao o lou mālō'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nafanua, the great war-goddess of Pulotu and of Falealupo on Savaiʻi — daughter of the eel-lord Saveasiʻuleo and of Tilafaiga (the tatau-twin), hidden at birth from her devouring father. She ascends with her four toa-wood war-clubs (Tafesilafaʻi, Faʻauliulitō, Ulimasao, Faʻamategataua) to free the oppressed, and prophesies to Malietoa Faʻiga 'Wait upon heaven for a crown for your kingdom.' Typed deity (child of two deities) despite the popular 'demigod' label. Documented by Krämer, Stair and Turner (secondary)."
+ },
+ {
+  "id": "samoan_pava",
+  "name": {
+   "primary": "Pava",
+   "alt": [
+    "Pavā"
+   ],
+   "transliterations": {
+    "samoan": "Pava",
+    "etymology": "Samoan; the man at whose house the first ʻava (kava) was drunk, in the charter-myth of the ʻava ceremony."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "At the first drinking of the ʻava, his small son disturbs the ceremony; the boy is struck down and cut in two for his disrespect, then restored to life when the ʻava is poured upon him — the charter of the ʻava ceremony's solemnity and taboos",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), the origin of the ʻava ceremony; G. Turner, Samoa (1884)"
+     }
+    ],
+    "notes": "The boy walked about during the ʻava; warned twice through Pava, he would not be still, and was cut in two with the words 'There is your half and here is mine.' Seeing Pava weep, the divine host poured ʻava on the ground/on the child saying the ʻava should bring him to life, and the boy lived. The myth grounds the rule that none may move during the ʻava but the cup-bearer. (The divine celebrant is named Tagaloa-ʻUi, the first high chief — a figure distinct from the supreme creator Tagaloa authored here; hence Pava is wired to no in-batch kin.)"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "origin-of-the-ava-ceremony",
+    "contextTag": "episodic",
+    "term": {
+     "value": "ʻava",
+     "script": "Samoan",
+     "rom": "ʻava"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): the first ʻava at Pava's house"
+     }
+    ]
+   },
+   {
+    "sphereId": "ritual-precedent-and-taboo",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the rule of stillness during the ʻava traced to this event"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pava-host-the-first-ava",
+    "name": "Host the first drinking of the ʻava, the precedent of the ʻava ceremony",
+    "term": {
+     "value": "ʻava",
+     "script": "Samoan",
+     "rom": "ʻava"
+    },
+    "inheritability": "none",
+    "notes": "At Pava's house the ʻava is first prepared and drunk; the events there fix the order and taboos of the rite.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897); G. Turner, Samoa (1884), the first ʻava"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pava-first-ava-bowl",
+    "name": "The first bowl of ʻava (kava)",
+    "kind": "vessel",
+    "term": {
+     "value": "ʻava",
+     "script": "Samoan",
+     "rom": "ʻava"
+    },
+    "role": "host",
+    "notes": "The first ʻava prepared and drunk at Pava's house; the libation poured from it restored his cut-apart son to life and set the ceremony's pattern.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): the first ʻava-bowl and the libation"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa, or Flotsam and Jetsam from the Pacific Ocean (1897), the ʻava-origin tradition"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "host-of-the-first-ava-and-the-restored-son",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): Pava, his slain-and-restored son, and the charter of the ʻava ceremony"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pava, the man at whose house the first ʻava (kava) was drunk; his small son, slain and cut in two for disturbing the rite, was restored to life by the ʻava-libation — the charter-myth of the ʻava ceremony and the rule that none may move during it. The divine celebrant of the myth is Tagaloa-ʻUi (the first high chief), a figure distinct from the supreme creator Tagaloa authored here; Pava and his unnamed son therefore have no in-batch kin — see SOLITARY flag. Documented by Stair and Turner (secondary)."
+ },
+ {
+  "id": "samoan_saveasiuleo",
+  "name": {
+   "primary": "Saveasiʻuleo",
+   "alt": [
+    "Saveasiuleo",
+    "Savea Siʻuleo",
+    "Saveasiʻuleo of Pulotu"
+   ],
+   "transliterations": {
+    "samoan": "Saveasiʻuleo",
+    "etymology": "Samoan; commonly parsed with siʻu 'tail/extremity' and leo 'voice / to guard,' fitting the eel-tailed guardian-lord of the spirit-world. The Aliʻi (paramount lord) of Pulotu."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Rules Pulotu, the spirit-world, as its Aliʻi — the upper half of his body that of a man, the lower half the tail of an eel stretching away into the sea; he devours his own offspring until one is concealed from him",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the Pulotu and Nafanua traditions; G. Turner, Samoa (1884), on Saveasiʻuleo of Pulotu"
+     }
+    ],
+    "notes": "He had separated from his youngest brother Ulufanuaseseʻe with the prophecy that they would meet again in their descendants — fulfilled in Nafanua and the Malietoa line."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "spirit-world-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pulotu",
+     "script": "Samoan",
+     "rom": "Pulotu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Pulotu, the abode of the spirits, ruled by Saveasiʻuleo"
+     }
+    ]
+   },
+   {
+    "sphereId": "sea-and-the-deep",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): his eel-tail stretching into the sea, lord of both the deep and the underworld"
+     }
+    ]
+   },
+   {
+    "sphereId": "sovereignty-over-pulotu",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), on the rulership of Pulotu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "saveasiuleo-rule-pulotu",
+    "name": "Rule the spirit-world Pulotu and receive the souls of the dead",
+    "inheritability": "none",
+    "notes": "As Aliʻi of Pulotu he presides over the land of the departed, the western terminus to which Samoan souls travel.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884); A. Krämer, Die Samoa-Inseln (1902/03), Pulotu traditions"
+     }
+    ]
+   },
+   {
+    "id": "saveasiuleo-eel-body",
+    "name": "Possess the divided body of a man above and a moray-eel's tail below, reaching into the sea",
+    "term": {
+     "value": "tuna",
+     "script": "Samoan",
+     "rom": "tuna"
+    },
+    "inheritability": "none",
+    "notes": "His eel-tail (the moray, tuna/pusi) stretched away into the ocean; he is the eel-bodied lord.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the half-man, half-eel form of Saveasiʻuleo"
+     }
+    ]
+   },
+   {
+    "id": "saveasiuleo-devour-offspring",
+    "name": "Devour his own offspring as they are born",
+    "inheritability": "none",
+    "notes": "He ate his children (and, in the brother-tradition, his brothers) until Nafanua's mother concealed her pregnancy and hid the afterbirth in the earth, saving the child.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the concealed birth of Nafanua"
+     }
+    ]
+   },
+   {
+    "id": "saveasiuleo-arm-nafanua",
+    "name": "Send and arm his daughter Nafanua to free the oppressed people of the upper world",
+    "inheritability": "none",
+    "notes": "He commands Nafanua to ascend from Pulotu and overthrow the oppressors, giving her the toa-wood war-clubs.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); the commissioning of Nafanua with the war-clubs"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "samoan_nafanua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884): Nafanua, daughter of Saveasiʻuleo of Pulotu"
+     }
+    ],
+    "notes": "Father of the war-goddess Nafanua, whom he kept by him in Pulotu and armed for the war of liberation."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), Pulotu and Saveasiʻuleo"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the Pulotu / Nafanua cycle"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "eel-lord-of-pulotu-and-father-of-nafanua",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the half-man half-eel Aliʻi of Pulotu, father of Nafanua"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Saveasiʻuleo, the half-man, half-moray-eel Aliʻi (lord) of Pulotu, the Samoan spirit-world; brother of Ulufanuaseseʻe (recorded in this note rather than as a relation, since the brother is not separately authored), and father of the war-goddess Nafanua, whose birth was concealed from him because he devoured his offspring. He commissions and arms Nafanua for the war of liberation. Documented by Turner, Krämer and Stair (secondary)."
+ },
+ {
+  "id": "samoan_sina",
+  "name": {
+   "primary": "Sina",
+   "alt": [
+    "Sina of the Eel",
+    "Sina (Sina ma le Tuna)"
+   ],
+   "transliterations": {
+    "samoan": "Sina",
+    "etymology": "Samoan reflex of Proto-Polynesian *Sina (cf. Hina/Hine elsewhere in Polynesia), also the word for 'grey/silvery, white-haired.' The maiden of the coconut-origin myth Sina ma le Tuna ('Sina and the Eel')."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "A beautiful maiden who keeps a small eel (Tuna) as a pet until it grows into a great eel and pursues her; the eel, revealed as a transformed Fijian king who loves her, is killed, and bids her bury his head, from which the first coconut tree grows",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the origin of the coconut; A. Krämer, Die Samoa-Inseln (1902/03)"
+     }
+    ],
+    "notes": "Sina ma le Tuna explains the origin of the niu (coconut): the three marks on the husked nut are the eel's two eyes and mouth, so that one who drinks 'kisses the eel.' The spring Mata o le Alelo at Matāvai, Safune (Savaiʻi) is tied to the legend."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "origin-of-the-coconut",
+    "contextTag": "episodic",
+    "term": {
+     "value": "niu",
+     "script": "Samoan",
+     "rom": "niu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Sina and the eel and the first coconut tree"
+     }
+    ]
+   },
+   {
+    "sphereId": "beauty-and-maidenhood",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the Sina ma le Tuna tradition"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sina-bury-the-eels-head",
+    "name": "Bury the slain eel's head as bidden, whence the first coconut tree springs",
+    "inheritability": "none",
+    "notes": "At the dying eel's request she plants its head; from it grows the niu, marked on its shell with the eel's eyes and mouth.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): the buried eel-head and the coconut"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "sina-first-coconut",
+    "name": "The first coconut tree (niu) and nut",
+    "kind": "plant-origin",
+    "term": {
+     "value": "niu",
+     "script": "Samoan",
+     "rom": "niu"
+    },
+    "role": "originator",
+    "notes": "The coconut palm grown from the buried head of the eel; the husked nut bears the eel's two eyes and mouth, one of which is pierced for drinking.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884), the origin of the coconut from the eel's head"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), the coconut-origin myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), Sina ma le Tuna"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "heroine-of-the-coconut-origin-myth",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884): Sina, the eel, and the first coconut tree"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Sina, the maiden of the Samoan coconut-origin myth Sina ma le Tuna ('Sina and the Eel'): she keeps an eel (Tuna, a transformed Fijian king who loves her) that, when slain, bids her bury its head, from which the first coconut tree grows — the three marks on the husked nut being the eel's eyes and mouth. Treated as a mortal woman (the Samoan Sina of this tale; cognate with the pan-Polynesian Sina/Hina). No kin is attested in this myth-cycle — see SOLITARY flag. Documented by Turner and Krämer (secondary)."
+ },
+ {
+  "id": "samoan_taema",
+  "name": {
+   "primary": "Taema",
+   "alt": [
+    "Taemā",
+    "Titi (childhood name)"
+   ],
+   "transliterations": {
+    "samoan": "Taema",
+    "etymology": "Samoan; the conjoined twin (with Tilafaiga) who brought the tatau from Fiji to Samoa."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born conjoined back-to-back with her twin Tilafaiga; the pair swim to Fiji, learn tattooing, and swim back to Samoa with the tatau-tools, landing at Falealupo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the tatau-origin twins; G. Turner, Samoa (1884)"
+     }
+    ],
+    "notes": "The conjoined sisters were severed when the spar of a canoe struck the join between them as they swam. They sang the tatau-song that reversed (women, then men) on the way to Falealupo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tattooing-tatau",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the twins as bringers of the tatau"
+     }
+    ]
+   },
+   {
+    "sphereId": "war-and-protective-power",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Taema and Tilafaiga also reckoned war-goddesses"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "taema-bring-the-tatau",
+    "name": "Bring the art and instruments of the tatau from Fiji to Samoa with her twin",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "inheritability": "none",
+    "notes": "With Tilafaiga she learns and carries the tatau to Samoa; the pair are the matriarchs of Samoan tattooing.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "taema-tatau-tools",
+    "name": "The tatau-tools (au) brought from Fiji",
+    "kind": "tool",
+    "term": {
+     "value": "au",
+     "script": "Samoan",
+     "rom": "au"
+    },
+    "role": "bringer",
+    "notes": "The serrated tattooing-combs carried with Tilafaiga from Fiji to Falealupo; the implements of the Samoan tatau.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884), the tatau-instruments"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "samoan_tilafaiga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Taema and Tilafaiga, the conjoined twins of the tatau"
+     }
+    ],
+    "notes": "Conjoined twin of Tilafaiga, born joined back-to-back and severed in the sea."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the tatau-origin twins"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "co-bringer-of-the-tatau-from-fiji",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Taema, twin of Tilafaiga, who brought the tatau"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Taema, the conjoined twin (with Tilafaiga) who brought the tatau from Fiji to Samoa, landing at Falealupo on Savaiʻi; reckoned also a war-goddess. The two sisters, born joined back-to-back, were severed by a canoe-spar as they swam. Documented by Krämer and Turner (secondary)."
+ },
+ {
+  "id": "samoan_tagaloa",
+  "name": {
+   "primary": "Tagaloa",
+   "alt": [
+    "Tagaloalagi",
+    "Tagaloa-lagi",
+    "Tagaloa-faʻatutupu-nuʻu",
+    "Tangaloa",
+    "Tagaloa of the Heavens"
+   ],
+   "transliterations": {
+    "samoan": "Tagaloa",
+    "etymology": "Samoan reflex of Proto-Polynesian *Taŋaloa, the great sky/sea deity (cf. Maori Tangaroa, Tongan Tangaloa, Hawaiian Kanaloa). Tagaloa-lagi 'Tagaloa of the sky/heavens' (lagi 'sky, heaven'); Tagaloa-faʻatutupu-nuʻu 'Tagaloa who causes the lands to grow/spring up' (faʻa- causative + tutupu 'to grow, spring up' + nuʻu 'land, settlement')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Exists self-existent and alone, moving to and fro in the limitless Expanse (the Pō / Ilu) before there was any sky, sea, or land; a rock grows up at the place where he stands, from which he begins the work of creation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Samoan creation chant in J. Fraser, 'The Samoan Story of Creation,' Journal of the Polynesian Society 1 (1892): 'Tagaloa dwelt in the Expanse; he made all things; he alone was there.'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884), ch. on the creation; Tagaloa-lagi as maker of heavens, lands, sea and people"
+     }
+    ],
+    "notes": "Tagaloa is not born; he is the self-existent creative principle ('le atua Tagaloa'). In the cosmogonic chant he stands in the Expanse and successively brings forth the rock, the sea, the sky, fresh water, and humankind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-cosmogony",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892): Tagaloa-faʻatutupu-nuʻu makes all things from the Expanse"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky-and-heavens",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "lagi",
+     "script": "Samoan",
+     "rom": "lagi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884): Tagaloa-lagi, 'Tagaloa of the heavens,' dwelling in and ruling the sky"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-sovereignty-over-the-gods",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897): Tagaloa as the chief and progenitor of the gods"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-the-islands-and-mankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nuʻu",
+     "script": "Samoan",
+     "rom": "nuʻu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), on Tagaloa and the origin-traditions of the Samoan lands and peoples"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tagaloa-create-the-cosmos",
+    "name": "Make the heavens, the lands, the sea, and fresh water out of the primordial Expanse",
+    "inheritability": "none",
+    "notes": "Standing on the first rock in the Expanse, he splits and orders it to bring forth sky, sea, and the islands; the creative act is his alone and not transmitted.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892); cf. G. Turner, Samoa (1884), the creation narrative"
+     }
+    ]
+   },
+   {
+    "id": "tagaloa-fling-and-fish-up-the-islands",
+    "name": "Bring the Samoan islands into being — flinging down rocks / fishing them up from the deep",
+    "inheritability": "none",
+    "notes": "Variant island-origin traditions: in some Tagaloa flings down rocks from heaven (Manuʻa, Savaiʻi, Upolu); in others the lands are drawn up. The making of nuʻu is encoded in the name Tagaloa-faʻatutupu-nuʻu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa (1884); A. Krämer, Die Samoa-Inseln (1902/03), island-origin traditions"
+     }
+    ]
+   },
+   {
+    "id": "tagaloa-make-mankind",
+    "name": "Form the first people and animate them with life",
+    "inheritability": "none",
+    "notes": "Tagaloa makes humankind (in some versions from the fue / creeping-plant that rots into maggots which he forms into people, or directly); he is called the progenitor of gods and men.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892); G. Turner, Samoa (1884), the origin of mankind from the fue"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tagaloa-toaga-the-creation-rock",
+    "name": "Papa (the primordial rock of creation)",
+    "kind": "cosmic-locus",
+    "term": {
+     "value": "papa",
+     "script": "Samoan",
+     "rom": "papa"
+    },
+    "role": "creator",
+    "notes": "The rock (papa) that grew up at the place where Tagaloa stood in the Expanse; he commands and splits it, and from its successive parts the sea, the sky-supports, and the lands proceed. The papa-genealogy ('Papa-taʻoto,' 'Papa-sosolo,' etc.) is the spine of the Samoan cosmogonic chant.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' JPS 1 (1892), the rock that grows up under Tagaloa and the papa-series"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (London, 1884), the creation traditions"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands, trans. T. Verhaaren), I"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "supreme-creator-from-the-expanse",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "J. Fraser, 'The Samoan Story of Creation,' Journal of the Polynesian Society 1 (1892): Tagaloa-faʻatutupu-nuʻu dwelling and creating in the Expanse"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. B. Stair, Old Samoa (1897), on Tagaloa as chief and progenitor of the gods"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagaloa (Tagaloalagi, Tagaloa-faʻatutupu-nuʻu), the supreme self-existent creator of Samoan religion — the Polynesian *Taŋaloa in his Samoan form — who stood alone in the primordial Expanse (Pō / Ilu) and made the heavens, the islands, the sea, fresh water, and humankind, and is reckoned the chief and progenitor of the gods. Kinless by attestation (self-existent) — see SOLITARY flag. Documented in the Samoan creation chant (Fraser's translation), Turner, Stair and Krämer."
+ },
+ {
+  "id": "samoan_tilafaiga",
+  "name": {
+   "primary": "Tilafaiga",
+   "alt": [
+    "Tilafaigā",
+    "Titi (childhood name)"
+   ],
+   "transliterations": {
+    "samoan": "Tilafaiga",
+    "etymology": "Samoan; one of the conjoined twin goddesses (with Taema) who brought the tatau from Fiji, and the mother of Nafanua."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Samoan",
+  "primaryTradition": "Samoan",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Born conjoined back-to-back with her twin Taema; the pair swim to Fiji, learn the art of tattooing, and swim back to Samoa with the basket of tatau-tools, landing at Falealupo on Savaiʻi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03), the tatau-origin and the twins; G. Turner, Samoa (1884)"
+     }
+    ],
+    "notes": "As they swam they sang that women, not men, should be tattooed; diving for a clam near Falealupo they surfaced singing the reverse — that men, not women, should bear the tatau, which became the rule. Tilafaiga is also named the mother of Nafanua by Saveasiʻuleo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "tattooing-tatau",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): the twins as bringers of the tatau from Fiji"
+     }
+    ]
+   },
+   {
+    "sphereId": "war-and-protective-power",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga and Taema also reckoned war-goddesses"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tilafaiga-bring-the-tatau",
+    "name": "Bring the art and instruments of the tatau from Fiji to Samoa",
+    "term": {
+     "value": "tatau",
+     "script": "Samoan",
+     "rom": "tatau"
+    },
+    "inheritability": "none",
+    "notes": "With Taema she learns tattooing in Fiji (from the tufuga Tufou and Filelei in some tellings) and carries the basket of au (tattooing-combs) to Falealupo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884), the coming of the tatau"
+     }
+    ]
+   },
+   {
+    "id": "tilafaiga-bear-nafanua",
+    "name": "Conceal her pregnancy and bear and save Nafanua from the devouring Saveasiʻuleo",
+    "inheritability": "none",
+    "notes": "She hides the birth and buries the afterbirth in the earth so that her daughter Nafanua survives.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga, mother of Nafanua"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tilafaiga-tatau-tools",
+    "name": "The basket of tatau-tools (au)",
+    "kind": "tool",
+    "term": {
+     "value": "au",
+     "script": "Samoan",
+     "rom": "au"
+    },
+    "role": "bringer",
+    "notes": "The serrated tattooing-combs (au) of bone/boar's-tusk on turtle-shell and wooden handle, carried from Fiji; the implements of the Samoan tatau.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03); G. Turner, Samoa (1884), the tatau-instruments brought from Fiji"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "samoan_taema",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga and Taema, the conjoined twins of the tatau"
+     }
+    ],
+    "notes": "Conjoined twin of Taema, born joined back-to-back and severed in the sea."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "samoan_nafanua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga, mother of Nafanua by Saveasiʻuleo"
+     }
+    ],
+    "notes": "Mother of the war-goddess Nafanua, whom she saved at birth."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03; Eng. The Samoa Islands), the tatau-origin twins"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Turner, Samoa, a Hundred Years Ago and Long Before (1884)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "tatau-bringer-and-mother-of-nafanua",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "A. Krämer, Die Samoa-Inseln (1902/03): Tilafaiga, twin of Taema and mother of Nafanua"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tilafaiga, one of the conjoined twin goddesses (with Taema) who brought the tatau from Fiji to Samoa, landing at Falealupo on Savaiʻi; reckoned also a war-goddess, and named the mother of Nafanua by Saveasiʻuleo. Documented by Krämer and Turner (secondary)."
  },
  {
   "id": "san_cogaz",
@@ -174489,6 +177415,1874 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Tagalog god of the seasons. Husband of Lakapati and father of Anagolay in Jocano's systematization of the pantheon."
+ },
+ {
+  "id": "tahitian_hina",
+  "name": {
+   "primary": "Hina",
+   "alt": [
+    "Hina-nui-te-araara",
+    "Hina-i-a'a-i-te-marama",
+    "Hina-fa'auru-va'a",
+    "Hina-tu-a-uta",
+    "Hina-tutu-ha'a",
+    "Hina the woman in the moon"
+   ],
+   "transliterations": {
+    "tahitian": "Hina",
+    "etymology": "Proto-Polynesian *Sina 'grey, silvery; the moon', the wide-spread Polynesian moon- and first-woman goddess; the aspect-names: Hina-nui-te-araara 'great Hina the watcher', Hina-i-a'a-i-te-marama 'Hina who stepped into the moon', Hina-fa'auru-va'a 'Hina the canoe-steerer', Hina-tu-a-uta 'Hina standing inland' — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "shaped-among-the-host-of-gods-at-Ta'aroa's-creation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): after Tāne the artisans shaped Ru, Hina, Māui and the host of gods"
+     }
+    ],
+    "notes": "Hina comes forth among the gods sculpted by the artisans after Ta'aroa makes the world; she is given in many aspect-forms."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "steps-from-Ru's-canoe-into-the-full-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the Ru-and-Hina myth — Hina steps from her brother Ru's canoe into the full moon and dwells there as the woman in the moon, beneath her banyan"
+     }
+    ],
+    "notes": "As Hina-i-a'a-i-te-marama she enters the moon on an evening voyage with Ru and remains as the immortal woman in the moon; the lunar shadows are her banyan and her beaten cloth."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "marama",
+     "script": "Tahitian",
+     "rom": "marama"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hina the woman in the moon (marama), Hina-nui-te-araara who watches from the moon"
+     }
+    ]
+   },
+   {
+    "sphereId": "guardian-of-night-travellers",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): as Hina-nui-te-araara, 'great Hina the watcher', she watches in the moon over travellers on earth by night"
+     }
+    ]
+   },
+   {
+    "sphereId": "cloth-beating-tapa",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): as Hina-tutu-ha'a she beats in the moon the bark-cloth (tapa) of the gods"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dwell-in-the-moon",
+    "name": "Step into and dwell in the moon as the immortal woman there",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hina steps from Ru's canoe into the full moon and lives there, her banyan and her cloth seen in the lunar shadows"
+     }
+    ],
+    "notes": "The aetiology of the markings of the moon — Hina, her banyan tree and her tapa-mallet."
+   },
+   {
+    "id": "watch-over-night-voyagers",
+    "name": "Watch from the moon over those who travel by night",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hina-nui-te-araara watches in the moon over earth's night travellers"
+     }
+    ],
+    "notes": "Her watching aspect makes her the lunar guardian of wayfarers."
+   },
+   {
+    "id": "steer-the-canoe-of-Ru",
+    "name": "Pilot and steer the voyaging canoe",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): as Hina-fa'auru-va'a (and Hina-ta'a'i-fenua) she accompanies her brother Ru as canoe-pilot in his voyagings to and from Tahiti"
+     }
+    ],
+    "notes": "In the canoe-steerer aspect she navigates Ru's voyages, the lunar pilot of seafarers."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-hina-banyan-of-the-moon",
+    "name": "The banyan tree of Hina in the moon",
+    "kind": "cosmic-feature",
+    "role": "The aoa (banyan) Hina left growing in the moon, whose spreading shadow is seen as the markings of the moon's face",
+    "term": {
+     "value": "aoa",
+     "script": "Tahitian",
+     "rom": "aoa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the banyan of Hina in the moon, accounting for the lunar shadows"
+     }
+    ]
+   },
+   {
+    "id": "tahitian-hina-tapa-mallet",
+    "name": "Hina's bark-cloth beater",
+    "kind": "implement",
+    "role": "The wooden beater (i'e) with which Hina-tutu-ha'a pounds the bark-cloth (tapa) of the gods in the moon",
+    "term": {
+     "value": "i'e",
+     "script": "Tahitian",
+     "rom": "i'e tutu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hina the cloth-beater (tutu-ha'a) of the gods in the moon"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_taaroa.spouse — in her aspect Hina-tu-a-uta she is the consort of Ta'aroa and mother of 'Oro."
+   },
+   {
+    "kind": "parent",
+    "personId": "tahitian_oro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_oro.child — as Hina-tu-a-uta she is 'Oro's mother."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the Ru-and-Hina lunar myth and the genealogy of 'Oro"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), on Hina (Sina), the Polynesian moon-goddess"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hina (Proto-Polynesian *Sina, the moon- and first-woman goddess) is given in the Society Islands, as throughout Polynesia, in several named aspect-forms understood as manifestations of one goddess. As Hina-nui-te-araara, 'great Hina the watcher', she is the woman in the moon who, in the Ru-and-Hina myth (Hina-i-a'a-i-te-marama), stepped from her brother Ru's canoe into the full moon and dwells there beneath her banyan, beating the cloth of the gods (Hina-tutu-ha'a) — the markings of the moon. As Hina-fa'auru-va'a she is the canoe-pilot of Ru's voyages; and as Hina-tu-a-uta, 'Hina standing inland', she is the consort of Ta'aroa and the mother of the war-god 'Oro. She is authored here as a single deity carrying these attested by-names rather than as separate figures, following the Society-Islands principle that a deity's 'sisters' are often forms of the one goddess (Henry, 1928). Her divine parentage is not separately named — she comes forth among the host of gods at Ta'aroa's creation — so no parentIds are set."
+ },
+ {
+  "id": "tahitian_hiro",
+  "name": {
+   "primary": "Hiro",
+   "alt": [
+    "Hiro of Ra'iātea",
+    "Hiro the navigator",
+    "'Iro (Rarotongan cognate)",
+    "Hilo (Hawaiian cognate)"
+   ],
+   "transliterations": {
+    "tahitian": "Hiro",
+    "etymology": "Tahitian/Tuamotuan Hiro, the East-Polynesian navigator-hero (Rarotongan 'Iro, Hawaiian Hilo); proverbially also the patron of thieves for his cunning — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-half-divine-navigator-hero-of-Ra'iātea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro, the half-divine hero of Ra'iātea, builder of great voyaging-canoes and protector of seafarers"
+     }
+    ],
+    "notes": "Hiro is the part-divine culture-hero of the navigators of Ra'iātea, master canoe-wright, slayer of sea-monsters and (proverbially) god of thieves."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "navigation-and-seafaring",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "pahi",
+     "script": "Tahitian",
+     "rom": "pahi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro the builder of the great pahi voyaging-ships and protector of sailors"
+     }
+    ]
+   },
+   {
+    "sphereId": "canoe-building",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro the master shipwright who built giant canoes"
+     }
+    ]
+   },
+   {
+    "sphereId": "thieves-and-cunning",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro proverbially the god/patron of thieves for his cunning"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "build-great-voyaging-canoes",
+    "name": "Build the great double voyaging-canoes (pahi)",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro the builder of the great pahi"
+     }
+    ],
+    "notes": "His command of canoe-craft makes him the patron-hero of the deep-sea navigators."
+   },
+   {
+    "id": "slay-sea-monsters",
+    "name": "Slay the monsters of the sea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro the slayer of sea-monsters"
+     }
+    ],
+    "notes": "He clears the sea-roads of their monsters for the voyagers who follow."
+   },
+   {
+    "id": "protect-seafarers",
+    "name": "Guard and guide those who sail the open sea",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro the protector of sailors"
+     }
+    ],
+    "notes": "Invoked by navigators as their guardian on the ocean."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-hiro-pahi",
+    "name": "The great pahi (voyaging-canoe) of Hiro",
+    "kind": "vehicle",
+    "role": "The large double-hulled deep-sea voyaging-ship that Hiro built and sailed, the emblem of his mastery of navigation",
+    "term": {
+     "value": "pahi",
+     "script": "Tahitian",
+     "rom": "pahi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the great pahi built by Hiro"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Vai-tu-marie (wife of Hiro, mother of Marama; below the registry's individuated threshold)",
+     "tradition": "Tahitian"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Hiro and his wife Vai-tu-marie, parents of Marama ('Moonlight')"
+     }
+    ],
+    "notes": "Externalref-only — the wife Vai-tu-marie is not registered as a figure."
+   },
+   {
+    "kind": "parent",
+    "externalRef": {
+     "name": "Marama ('Moonlight'), child of Hiro and Vai-tu-marie (below the registry's individuated threshold)",
+     "tradition": "Tahitian"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Marama, child of Hiro and Vai-tu-marie"
+     }
+    ],
+    "notes": "Externalref-only — the child Marama is not registered as a figure."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), Hiro of Ra'iātea"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hiro is the East-Polynesian navigator-hero in his Society-Islands form — the half-divine culture-hero of Ra'iātea, master builder of the great pahi voyaging-canoes, slayer of sea-monsters and protector of seafarers, and proverbially the patron of thieves for his cunning. Henry's Ancient Tahiti gives him a wife, Vai-tu-marie, and a child, Marama ('Moonlight'). He is authored as a demigod of the late, voyaging mythic-prehistoric horizon. Flagged SOLITARY at the registry threshold: his only named kin (wife Vai-tu-marie and child Marama) sit below the individuated-figure threshold and are carried by externalRef, so he stands without a wired within-batch relation."
+ },
+ {
+  "id": "tahitian_maui",
+  "name": {
+   "primary": "Māui",
+   "alt": [
+    "Maui",
+    "Māui-ti'iti'i",
+    "Maui the sun-snarer"
+   ],
+   "transliterations": {
+    "tahitian": "Māui",
+    "etymology": "The pan-Polynesian demigod trickster Māui (Maori Māui-tikitiki-a-Taranga, Hawaiian Māui); the Society-Islands Māui who snared the sun and fished up islands — Henry, Ancient Tahiti (1928); Ellis, Polynesian Researches (1829)"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-priest-Maui-who-worked-wonders-at-the-marae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): in Tahitian tradition Maui was a wise man or prophet, a priest, afterwards deified"
+     }
+    ],
+    "notes": "In the Society-Islands telling Māui is a tahu'a (priest) and worker of wonders at the marae, later raised to the gods."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "deified-after-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Maui was afterwards deified"
+     }
+    ],
+    "notes": "After his mortal-heroic span Māui is deified; hence his demigod standing rather than mortal."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "trickster-culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829); Teuira Henry, Ancient Tahiti (1928): Māui the wonder-working hero of the islands"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sun-and-the-length-of-the-day",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "hihi",
+     "script": "Tahitian",
+     "rom": "hihi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Māui laid hold of the hihi (sun-rays) and stayed the sun's course"
+     }
+    ]
+   },
+   {
+    "sphereId": "fishing-up-of-land",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the hero fishes up islands (of the Tuamotu) from the sea-floor"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "snare-and-stay-the-sun",
+    "name": "Seize the sun's rays and hold back its course to lengthen the day",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): his work at the marae unfinished as the sun sank, Māui laid hold of the hihi (sun-rays) and stopped the sun's course for a time"
+     }
+    ],
+    "notes": "The signature Tahitian Māui deed: catching the sun by its rays to slow it and win more daylight."
+   },
+   {
+    "id": "fish-up-islands",
+    "name": "Fish up islands from the floor of the sea with a sacred hook",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Māui draws up islands (of the Tuamotu) from the bottom of the ocean with his hook"
+     }
+    ],
+    "notes": "The land-fishing exploit, drawing coral islands up from the deep on his line."
+   },
+   {
+    "id": "work-priestly-wonders",
+    "name": "Work wonders as a priest and prophet",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Maui a wise man, prophet and priest who worked wonders, afterwards deified"
+     }
+    ],
+    "notes": "His Tahitian persona is the wonder-working tahu'a, distinguishing the Society-Islands Māui from the purely-mortal trickster of some other groups."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-maui-fishhook",
+    "name": "Māui's fishhook for hauling up islands",
+    "kind": "implement",
+    "role": "The sacred hook (matau) and line with which Māui drew the islands up out of the sea",
+    "term": {
+     "value": "matau",
+     "script": "Tahitian",
+     "rom": "matau"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the hook with which Māui fished up the islands"
+     }
+    ]
+   },
+   {
+    "id": "tahitian-maui-sun-snare",
+    "name": "The snare/grip by which Māui caught the sun's rays",
+    "kind": "implement",
+    "role": "The hold Māui took on the hihi, the rays of the sun, to arrest its course and lengthen the day",
+    "term": {
+     "value": "hihi",
+     "script": "Tahitian",
+     "rom": "hihi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Māui laid hold of the hihi (sun-rays) to stop the sun"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), the Tahitian Maui who stayed the sun"
+     },
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), Māui and the fishing-up of islands"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Māui is the pan-Polynesian trickster culture-hero in his Society-Islands form. Ellis records that in Tahitian tradition Māui was a wise man, prophet and priest, afterwards deified; engaged at the marae and finding the sun sinking before his work was done, he laid hold of the hihi (the sun's rays) and held back its course for a time — the classic sun-snaring deed told here as a priest's wonder rather than a boy's prank. Henry's Ancient Tahiti gives the land-fishing exploit, Māui drawing the islands (notably of the Tuamotu) up from the floor of the sea on his hook. He is authored as a demigod (mortal-hero later deified). Flagged SOLITARY: although the wider Polynesian Māui has a famous genealogy, no member of his Tahitian kin is separately registered in this batch, so he stands without a wired relation."
+ },
+ {
+  "id": "tahitian_oro",
+  "name": {
+   "primary": "'Oro",
+   "alt": [
+    "Oro",
+    "'Oro-i-te-tea-moe",
+    "'Oro-rahi-to'o-toa",
+    "'Oro the spear-thrower"
+   ],
+   "transliterations": {
+    "tahitian": "'Oro",
+    "etymology": "Tahitian 'Oro, the great war-god of Ra'iātea; the name connects with the wider Polynesian *koro / war-and-fierceness root and with the 'arioi performers who took their name from his cult — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "tahitian_taaroa",
+   "tahitian_hina"
+  ],
+  "parentRoles": {
+   "tahitian_taaroa": "father",
+   "tahitian_hina": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-of-Ta'aroa-and-Hina-at-Taputapuatea-on-Ra'iātea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta, of the marae Taputapuatea in 'Opoa, Ra'iātea"
+     }
+    ],
+    "notes": "'Oro is born the son of Ta'aroa and Hina(-tu-a-uta) at the great marae Taputapuatea in 'Opoa on Ra'iātea, the mythic seat of his cult."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "descends-on-the-rainbow-and-weds-Vairaumati",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro, dwelling on Mount Paia in Borabora with his sisters Te-ouri and 'Oa'oa, descends to earth on the rainbow as a warrior and takes the maiden Vairaumati of Vaitape to wife"
+     }
+    ],
+    "notes": "Seeking a wife, 'Oro comes down on the rainbow in warrior-guise and weds the mortal beauty Vairaumati; from this union and his cult the 'arioi society traces its origin."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "'Oro",
+     "script": "Tahitian",
+     "rom": "'Oro"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): 'Oro the great god of war, the principal deity of Tahiti and Ra'iātea"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-fine-arts-in-peace",
+    "contextTag": "in-peacetime",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): in time of peace 'Oro became the god of the fine arts, patron of the 'arioi"
+     }
+    ]
+   },
+   {
+    "sphereId": "patron-of-the-arioi-society",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "'arioi",
+     "script": "Tahitian",
+     "rom": "'arioi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): the 'arioi society traced its foundation to 'Oro and principally venerated him"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "command-war",
+    "name": "Command and decide war",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): 'Oro the war-god to whom human sacrifices and the conduct of war were dedicated"
+     }
+    ],
+    "notes": "The supreme war-god of the Society Islands at the time of European contact, his image carried to battle."
+   },
+   {
+    "id": "descend-on-the-rainbow",
+    "name": "Descend from the heavens to earth upon the rainbow",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro descends on the rainbow in the guise of a warrior to court Vairaumati"
+     }
+    ],
+    "notes": "The rainbow is his bridge between the divine and human worlds in the Vairaumati cycle."
+   },
+   {
+    "id": "found-the-arioi",
+    "name": "Found and patronize the 'arioi society of player-priests",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928); William Ellis, Polynesian Researches (1829): the 'arioi order founded under 'Oro, its twin patrons Orotetefa and Uretetefa made by his sisters"
+     }
+    ],
+    "notes": "The 'arioi — itinerant performers, dancers and orators of high rank — held 'Oro their founder and god."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-oro-too",
+    "name": "The to'o, feathered image of 'Oro",
+    "kind": "cult-image",
+    "role": "The portable image of 'Oro: a wooden core bound in sennit (coconut-fibre) cord with a mace-like 'soul' at its centre, dressed in the red and yellow feathers that were the god's emblem; the most sacred object of his cult, kept and moved between the great marae",
+    "term": {
+     "value": "to'o",
+     "script": "Tahitian",
+     "rom": "to'o"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): the to'o, the sennit-wrapped feathered image in which 'Oro was present; Teuira Henry, Ancient Tahiti (1928)"
+     }
+    ]
+   },
+   {
+    "id": "tahitian-oro-marae-taputapuatea",
+    "name": "Marae Taputapuātea at 'Opoa, Ra'iātea",
+    "kind": "sacred-site",
+    "role": "The great international marae of 'Oro's cult on Ra'iātea, his mythic birthplace and the centre from which his worship and his images spread through the Society Islands",
+    "term": {
+     "value": "Taputapuātea",
+     "script": "Tahitian",
+     "rom": "Taputapuātea"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the marae Taputapuatea in 'Opoa, Ra'iātea, dedicated to 'Oro and the mythic seat of his cult"
+     }
+    ]
+   },
+   {
+    "id": "tahitian-oro-arioi-regalia",
+    "name": "The 'arioi regalia and tattoo",
+    "kind": "regalia",
+    "role": "The grades, the bark-cloth (tapa) costumes, the distinctive tattooing and the painted body of the 'arioi player-priests of 'Oro, marking the ranks of the society he founded",
+    "term": {
+     "value": "'arioi",
+     "script": "Tahitian",
+     "rom": "'arioi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), on the grades, costume and tattoo of the 'arioi of 'Oro"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_taaroa.parent — 'Oro is the son of Ta'aroa."
+   },
+   {
+    "kind": "child",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_hina.parent — 'Oro is the son of Hina in her aspect Hina-tu-a-uta."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro reckoned among the sons of Ta'aroa with the great gods"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tane.sibling — half-brother as a son of Ta'aroa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_tu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro reckoned among the sons of Ta'aroa with the great gods"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tu.sibling — half-brother as a son of Ta'aroa; 'Oro succeeds the elder Tū as Tahiti's war-god."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro reckoned among the sons of Ta'aroa with the great gods"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_roo.sibling — half-brother as a son of Ta'aroa."
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Vairaumati (mortal maiden of Vaitape, Borabora, whom 'Oro wed; below the registry's individuated-deity threshold)",
+     "tradition": "Tahitian"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro takes the mortal Vairaumati to wife"
+     }
+    ],
+    "notes": "Externalref-only — the human wife Vairaumati is not registered as a figure."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the 'Oro / Vairaumati / 'arioi cycle"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), 'Oro the great war-god and the 'arioi society"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "'Oro is the great war-god of Ra'iātea and, by the time of European contact, the principal deity of Tahiti — son of Ta'aroa and of Hina in her aspect Hina-tu-a-uta, born and enshrined at the international marae Taputapuātea in 'Opoa on Ra'iātea, the mythic seat of his cult. In war he received human sacrifice and his to'o-image was carried to battle; in peace he was the god of the fine arts and the founder-patron of the 'arioi, the high-ranking society of itinerant player-priests (its twin patrons Orotetefa and Uretetefa made by 'Oro's sisters). The Vairaumati cycle tells how, dwelling on Mount Paia in Borabora with his sisters Te-ouri and 'Oa'oa, he descended on the rainbow as a warrior to wed the mortal maiden Vairaumati of Vaitape. His signature object is the to'o, a sennit-bound wooden image dressed in the red and yellow feathers that were his emblem. Authored as a son of Ta'aroa and Hina and a brother of the elder great gods Tāne, Tū and Ro'o."
+ },
+ {
+  "id": "tahitian_roo",
+  "name": {
+   "primary": "Ro'o",
+   "alt": [
+    "Roo",
+    "Ro'o-the-orator",
+    "Rongo (cognate)",
+    "Lono (Hawaiian cognate)"
+   ],
+   "transliterations": {
+    "tahitian": "Ro'o",
+    "etymology": "Society-Islands reflex of Proto-Polynesian *Rongo 'sound, report, news' — the Polynesian god of agriculture, peace and the spoken word (Maori Rongo, Hawaiian Lono); Tahitian ro'o = 'fame, report' — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "tahitian_taaroa"
+  ],
+  "parentRoles": {
+   "tahitian_taaroa": "shaper-progenitor"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "shaped-among-the-great-gods-at-Ta'aroa's-creation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ro'o among the great gods shaped at Ta'aroa's command"
+     }
+    ],
+    "notes": "Ro'o is one of the four great gods, the orator-messenger and the god of the harvest and the weather."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "agriculture-and-harvest",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Ro'o, god of the agricultural products and of the weather (one of the four great gods)"
+     }
+    ]
+   },
+   {
+    "sphereId": "weather",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Ro'o the god of the weather"
+     }
+    ]
+   },
+   {
+    "sphereId": "oratory-and-divine-messengership",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ro'o the orator and messenger of the gods, especially of Tāne"
+     }
+    ]
+   },
+   {
+    "sphereId": "peace",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ro'o (the Tahitian Rongo) associated with peace and plenty"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "grant-the-harvest",
+    "name": "Grant the breadfruit harvest and the fruits of the soil",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Ro'o the god of agricultural products"
+     }
+    ],
+    "notes": "Invoked for the increase of breadfruit and the produce of the land."
+   },
+   {
+    "id": "rule-the-weather",
+    "name": "Send and stay the weather",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Ro'o the god of the weather"
+     }
+    ],
+    "notes": "Ro'o governs the rains and seasons on which the harvest depends."
+   },
+   {
+    "id": "carry-the-word-of-the-gods",
+    "name": "Bear the messages and oratory of the gods",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ro'o the messenger of the gods, especially of Tāne"
+     }
+    ],
+    "notes": "As the god of 'report' (ro'o) he is the herald and orator of the pantheon."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-roo-breadfruit-offering",
+    "name": "The first-fruits breadfruit offering to Ro'o",
+    "kind": "ritual-offering",
+    "role": "The breadfruit ('uru) and first-fruits presented to Ro'o on the marae to secure the harvest and the favourable weather",
+    "term": {
+     "value": "'uru",
+     "script": "Tahitian",
+     "rom": "'uru"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928); William Ellis, Polynesian Researches (1829), on first-fruit offerings to the harvest-god"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ro'o among the great gods shaped at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_taaroa.parent — Ro'o is shaped/begotten by Ta'aroa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne, Tū and Ro'o among the great gods shaped together at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tane.sibling — fellow great-god of the one creation; Ro'o is Tāne's herald."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_tu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne, Tū and Ro'o among the great gods shaped together at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tu.sibling — fellow great-god of the one creation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_oro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro reckoned among the sons of Ta'aroa with the elder great gods"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_oro.sibling — half-brother as a son of Ta'aroa."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), the four great gods (Ta'aroa, Tāne, Tū, Ro'o)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Ro'o is the Society-Islands Rongo/Lono — one of the four great gods, the god of the agricultural produce and the weather (Ellis), and the orator and messenger of the gods, especially of Tāne (Henry). He is invoked for the breadfruit harvest and the favourable seasons, and as the god of 'report' (ro'o) he is the herald of the pantheon. He is to be distinguished from the mortal fisherman Ro'o of the Ruahatu deluge, a mere homonym. Authored as a son/handiwork of Ta'aroa and brother of Tāne, Tū and 'Oro."
+ },
+ {
+  "id": "tahitian_ruahatu",
+  "name": {
+   "primary": "Ruahatu",
+   "alt": [
+    "Rua-hatu",
+    "Ruahatu-tini-rau",
+    "Ruahatu the ocean-god"
+   ],
+   "transliterations": {
+    "tahitian": "Ruahatu",
+    "etymology": "Tahitian Ruahatu, the god of the deep ocean; rua 'pit, depth' + hatu 'lord/core' — the lord of the ocean-deeps who sent the Ra'iātea flood — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-ocean-god-of-the-deep",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ruahatu, the ocean-god of the deep, a being with a man's body and the tail of a swordfish"
+     }
+    ],
+    "notes": "Ruahatu is the god of the ocean-deeps, his form part man and part swordfish (a'u), who sent the great flood upon Ra'iātea."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "wakes-wrathful-and-floods-Ra'iātea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the Ra'iātea deluge — fishermen snag their hooks in Ruahatu's hair as he sleeps; waking in wrath he vows to sink the land, sparing only those who flee to the islet Toa-marama"
+     }
+    ],
+    "notes": "Two fishermen (Te-aho-aroa and the man Ro'o) tangle their hooks in his hair as he sleeps among the coral; he wakes enraged, vows to drown Ra'iātea, and the sea rises over the land, only the refugees on Toa-marama surviving."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-ocean-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "moana",
+     "script": "Tahitian",
+     "rom": "moana"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ruahatu the god of the deep ocean"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-flood-deluge",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tai-toko",
+     "script": "Tahitian",
+     "rom": "tai toko"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ruahatu the sender of the deluge that covered Ra'iātea"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): the Society-Islands traditions of a great flood"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-the-deluge",
+    "name": "Raise the sea and drown the land",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): waking in wrath, Ruahatu causes the sea to rise and overwhelm Ra'iātea"
+     }
+    ],
+    "notes": "His defining act: the flood that sank the land, sparing only those warned to flee to Toa-marama."
+   },
+   {
+    "id": "spare-the-faithful-refugees",
+    "name": "Spare those who heed the warning and flee to the sacred islet",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ruahatu directs the two fishermen to bring their families to the islet Toa-marama, where alone they survive the flood"
+     }
+    ],
+    "notes": "The deluge-with-survivors pattern: the god both destroys and preserves a remnant."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-ruahatu-toamarama",
+    "name": "Toa-marama, the islet of refuge from the flood",
+    "kind": "sacred-site",
+    "role": "The small island to which Ruahatu told the fishermen to bring their families, the one place spared when the deluge covered Ra'iātea",
+    "term": {
+     "value": "Toa-marama",
+     "script": "Tahitian",
+     "rom": "Toa-marama"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the islet Toa-marama, refuge in the Ra'iātea deluge"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the Ra'iātea deluge of Ruahatu (recited by the priests Paora'i and Vai'au)"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), the Society-Islands flood-traditions"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Ruahatu is the Tahitian god of the ocean-deeps, his form that of a man with the tail (or snout) of a swordfish (a'u). His signature myth is the Ra'iātea deluge, recited to Orsmond by the priests Paora'i and Vai'au and set down by Henry: two fishermen tangle their hooks in his hair as he sleeps among the coral and wake him; enraged, he vows to drown the land, but warns them to bring their families to the islet Toa-marama, where alone they are spared as the sea rises and covers Ra'iātea. Ellis likewise records Society-Islands flood-traditions. Authored as a deity. Flagged SOLITARY: no parent, consort or sibling of Ruahatu is named in the sources — only his ocean-deep and the fishermen of the flood-tale."
+ },
+ {
+  "id": "tahitian_taaroa",
+  "name": {
+   "primary": "Ta'aroa",
+   "alt": [
+    "Taaroa",
+    "Tangaroa",
+    "Ta'aroa-nui-tumu-tahi",
+    "Ta'aroa the Great Foundation",
+    "Ta'aroa-rua-i-te-po"
+   ],
+   "transliterations": {
+    "tahitian": "Ta'aroa (Taaroa)",
+    "etymology": "Society-Islands reflex of Proto-Polynesian *Tangaloa, the wide-spread Polynesian sea-and-creator god (Maori/Tongan Tangaroa, Samoan Tagaloa, Hawaiian Kanaloa); the by-name Ta'aroa-nui-tumu-tahi = 'Great Ta'aroa, the sole foundation/origin' — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "self-existent-alone-in-the-shell-Rumia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), ch. on the creation: Ta'aroa existed alone, revolving in his shell Rumia, his own parent with no father or mother"
+     },
+     {
+      "kind": "primary",
+      "reference": "J. A. Moerenhout, Voyages aux îles du Grand Océan (1837): the creation-chant 'Il était Taaroa…' — Ta'aroa alone in the void before all things"
+     }
+    ],
+    "notes": "Before sky, earth, sun, moon or stars there was only Ta'aroa, enclosed in his egg-shell Rumia spinning in the dark; he was self-created and parentless."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "cracks-the-shell-and-forms-the-world-from-his-body",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ta'aroa breaks Rumia; from the shell-pieces makes the rock-foundation and the sky-domes, and forms the land, mountains, seas and creatures out of his own body"
+     }
+    ],
+    "notes": "He cracks Rumia, uses one shell for the dome of the sky and the other for the rock and soil of the world, then builds land and living things from his own backbone, ribs, flesh, blood, tears, nails and feathers; finally he summons the artisans to sculpt the great gods."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-the-cosmos",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ta'aroa creator of all, who made the world from his own body"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-deity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ta'aroa-nui-tumu-tahi",
+     "script": "Tahitian",
+     "rom": "Ta'aroa-nui-tumu-tahi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the great Ta'aroa, sole origin (tumu) of the gods and the world"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), on Ta'aroa as the supreme being of the Society Islands"
+     }
+    ]
+   },
+   {
+    "sphereId": "sea-and-fishing",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Ta'aroa, originally the god of the sea and of fishing among the four great gods"
+     }
+    ],
+    "notes": "Ta'aroa's older, pan-Polynesian Tangaroa aspect as god of the ocean and the fisher's catch, beneath his supreme-creator role in the Society Islands."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "self-creation",
+    "name": "Exist self-created and parentless in the void",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ta'aroa was his own parent, having neither father nor mother"
+     }
+    ],
+    "notes": "He develops himself in solitude within the shell Rumia, the uncaused origin of all that follows."
+   },
+   {
+    "id": "form-world-from-own-body",
+    "name": "Form the world out of the substance of his own body",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): his backbone the mountain-ranges, ribs the ridges and cliffs, flesh the soil, blood the red of creatures and the rainbow, tears the seas, lakes and rivers, finger- and toe-nails the shell and scales of fishes and turtles, and the down he shook off the trees and verdure"
+     }
+    ],
+    "notes": "The signature Tahitian creation-act: the cosmos is literally Ta'aroa's transfigured body."
+   },
+   {
+    "id": "shape-the-shell-into-sky-and-earth",
+    "name": "Break and reshape the shell Rumia into the dome of the sky and the rock of the earth",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): from the pieces of Rumia he made the sky-domes (ra'i) and the rock-foundation (papa) of the world"
+     }
+    ],
+    "notes": "One half of the cracked shell becomes the over-arching sky, the other the rock and soil below."
+   },
+   {
+    "id": "summon-the-artisan-gods",
+    "name": "Conjure the artisans who sculpt the great gods",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ta'aroa called forth the artisans, who came with their baskets of adzes (to'i) and sculpted Tāne the first god, and then Tū, Ro'o, Ru, Hina, Māui and the hosts of gods"
+     }
+    ],
+    "notes": "After fashioning the world Ta'aroa calls the craftsmen who shape Tāne and, through him, the rest of the pantheon."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-rumia-shell",
+    "name": "Rumia, the world-shell of Ta'aroa",
+    "kind": "cosmic-object",
+    "role": "The egg-shell within which Ta'aroa existed alone in the void, and from whose broken halves he made the sky and the rock of the earth",
+    "term": {
+     "value": "Rumia",
+     "script": "Tahitian",
+     "rom": "Rumia"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the shell Rumia, revolving in darkness, that enclosed Ta'aroa before creation"
+     }
+    ]
+   },
+   {
+    "id": "tahitian-fare-atua",
+    "name": "The first fare-atua (god's house) built of Ta'aroa's body",
+    "kind": "edifice",
+    "role": "The original 'god's house', whose ridgepole was Ta'aroa's backbone and whose rafters were his ribs — the prototype of every marae and temple",
+    "term": {
+     "value": "fare-atua",
+     "script": "Tahitian",
+     "rom": "fare atua"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): out of his own body Ta'aroa built the first god's house, backbone the ridgepole and ribs the supporters, the model for all temples"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_hina.spouse — by Hina in her aspect Hina-tu-a-uta ('Hina-standing-inland') Ta'aroa fathers 'Oro."
+   },
+   {
+    "kind": "parent",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne the first god, sculpted at Ta'aroa's command"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tane.child — Ta'aroa is the maker/progenitor of Tāne."
+   },
+   {
+    "kind": "parent",
+    "personId": "tahitian_tu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tū among the great gods shaped at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tu.child — Ta'aroa is the maker/progenitor of Tū."
+   },
+   {
+    "kind": "parent",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Ro'o among the great gods shaped at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_roo.child — Ta'aroa is the maker/progenitor of Ro'o."
+   },
+   {
+    "kind": "parent",
+    "personId": "tahitian_oro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro the son of Ta'aroa and Hina-tu-a-uta"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_oro.child — Ta'aroa fathers 'Oro on Hina-tu-a-uta."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the creation cosmogony from the Orsmond MSS"
+     },
+     {
+      "kind": "primary",
+      "reference": "J. A. Moerenhout, Voyages aux îles du Grand Océan (1837), the Ta'aroa creation-chant"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), on Ta'aroa, supreme god of the Society Islands"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Ta'aroa (the Society-Islands Tangaroa) is the supreme creator of Tahitian religion. The Orsmond/Henry cosmogony has him existing alone, self-created and parentless, revolving in his shell Rumia in the lightless void; he cracks the shell, raises one half as the dome of the sky and lays the other as the rock and soil of the earth, then forms land and living things out of his own body — backbone into mountains, ribs into cliffs, flesh into soil, blood into the rainbow and the red of creatures, tears into the seas, nails into fish-scales, the down shaken off him into the trees. From his body he builds the first 'god's house', the model of the marae, and then summons the artisans who sculpt Tāne and the other great gods. Beneath this supreme-creator role lies his older pan-Polynesian aspect as god of the sea and of fishing. Flagged SOLITARY: Ta'aroa is self-existent, with no parent attested; his only kin-ties are downward, to the gods he makes."
+ },
+ {
+  "id": "tahitian_tane",
+  "name": {
+   "primary": "Tāne",
+   "alt": [
+    "Tane",
+    "Ta'ane",
+    "Tāne-the-beautiful"
+   ],
+   "transliterations": {
+    "tahitian": "Tāne (Ta'ane)",
+    "etymology": "Proto-Polynesian *Taane 'man, male', the wide-spread Polynesian forest- and craft-god (Maori Tāne-mahuta, Hawaiian Kāne); in the Society Islands the first of the gods sculpted by the artisans at Ta'aroa's word — Henry, Ancient Tahiti (1928)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "tahitian_taaroa"
+  ],
+  "parentRoles": {
+   "tahitian_taaroa": "shaper-progenitor"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "sculpted-as-the-first-god-at-Ta'aroa's-command",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne the first god, sculpted by the artisans Ta'aroa summoned"
+     }
+    ],
+    "notes": "Tāne is the first of the great gods to be shaped after Ta'aroa makes the world; the most beautiful and most invoked of the artisan-gods."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "beauty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne the god of beauty, who adorned the heavens"
+     }
+    ]
+   },
+   {
+    "sphereId": "forests-and-trees",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tāne",
+     "script": "Tahitian",
+     "rom": "Tāne"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Tāne, god of the forest and of the handicrafts (one of the four great gods)"
+     }
+    ]
+   },
+   {
+    "sphereId": "craftsmen-and-artisans",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Tāne the patron of the craftsmen who worked in wood"
+     }
+    ]
+   },
+   {
+    "sphereId": "peace",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): on Tahiti Tāne the god of peace and of beauty"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "adorn-the-sky",
+    "name": "Adorn the dome of the sky and set the stars, sun and moon",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne decorated the sky with stars and hung the sun for the day and the moon for the night"
+     }
+    ],
+    "notes": "Tāne is the artisan who finishes and beautifies the heavens after Ta'aroa raises the shell-dome."
+   },
+   {
+    "id": "sever-the-octopus-of-the-sky",
+    "name": "Cut away the clinging arms of the great octopus that enclosed the sky",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): in the octopus-cosmogony Tāne severs the arms of Tumu-ra'i-fenua, the octopus whose body had closed over the world, freeing and beautifying earth and sky"
+     }
+    ],
+    "notes": "The act that opens the sky and lets in the light, attributed to Tāne in the Society-Islands octopus-myth."
+   },
+   {
+    "id": "patron-the-woodcraft",
+    "name": "Grant skill to the canoe-builders and woodworkers",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Tāne the god of the craftsmen, invoked by those who built canoes and houses"
+     }
+    ],
+    "notes": "Inheritability partial: the craft-skill is passed to the guilds of human artisans (the tahu'a) under Tāne's patronage."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-tane-toi-adze",
+    "name": "The adze (to'i) of the artisans of Tāne",
+    "kind": "implement",
+    "role": "The stone adze with which the divine and human craftsmen of Tāne shaped the gods, the canoes and the houses",
+    "term": {
+     "value": "to'i",
+     "script": "Tahitian",
+     "rom": "to'i"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the artisans came with their baskets of adzes (to'i) to sculpt Tāne and the gods"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne the first god, made at Ta'aroa's command"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_taaroa.parent — Tāne is shaped/begotten by Ta'aroa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_tu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne, Tū and Ro'o among the great gods shaped together at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tu.sibling — fellow great-god of the one creation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne, Tū and Ro'o among the great gods shaped together at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_roo.sibling — fellow great-god of the one creation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_oro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro reckoned among the sons of Ta'aroa with the elder great gods"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_oro.sibling — half-brother as a son of Ta'aroa."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928)"
+     },
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), on the four great gods of the Society Islands"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tāne is, in the Society-Islands recension, the first of the great gods to be sculpted by the artisans at Ta'aroa's word — the god of beauty, of the forests, of the craftsmen, and the god of peace. He finishes the heavens, fixing the stars and hanging the sun and moon, and in the octopus-cosmogony it is Tāne who cuts away the clinging arms of the sky-enclosing octopus Tumu-ra'i-fenua to fill the world with beauty and light. Ellis lists him among the four great gods as god of the forest and of the handicrafts. Authored as a son/handiwork of Ta'aroa and brother of Tū, Ro'o and 'Oro."
+ },
+ {
+  "id": "tahitian_tu",
+  "name": {
+   "primary": "Tū",
+   "alt": [
+    "Tu",
+    "Tū-nui",
+    "Tū-of-the-face-toward-the-sky"
+   ],
+   "transliterations": {
+    "tahitian": "Tū",
+    "etymology": "Proto-Polynesian *Tuu, the Polynesian war/craft god (Maori Tūmatauenga, Hawaiian Kū); in the Society Islands Tū-the-artificer, Ta'aroa's fellow-worker in the making of the world and the ancient god of war — Henry, Ancient Tahiti (1928); Ellis, Polynesian Researches (1829)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tahitian",
+  "primaryTradition": "Tahitian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "tahitian_taaroa"
+  ],
+  "parentRoles": {
+   "tahitian_taaroa": "shaper-progenitor"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "shaped-as-Ta'aroa's-fellow-artificer-of-the-world",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tū the great artificer who worked with Ta'aroa in the fashioning of the world"
+     }
+    ],
+    "notes": "Tū is the god of the craftsmen and the ancient war-god, named with Ta'aroa as a maker of the cosmos in the creation-chant."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Tū the old god of war among the four great gods of the Society Islands"
+     }
+    ],
+    "notes": "The older war-god, later overshadowed on Tahiti by 'Oro."
+   },
+   {
+    "sphereId": "craftsmen-and-artisans",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tū the god of the artificers, fellow-worker of Ta'aroa in the making of the world"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "artifice-of-the-world",
+    "name": "Work as the great artificer in the making of the world",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tū labours with Ta'aroa as the craftsman-god in fashioning the cosmos"
+     }
+    ],
+    "notes": "Tū's defining act is his collaboration with Ta'aroa as the divine artisan."
+   },
+   {
+    "id": "grant-victory-in-war",
+    "name": "Grant prowess and victory in war",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829): Tū the war-god invoked by warriors before the older cult was eclipsed by 'Oro"
+     }
+    ],
+    "notes": "The ancient war-god of the Society Islands, to whom war was offered before 'Oro's cult rose to dominance on Tahiti."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tahitian-tu-toi-adze",
+    "name": "The artificer's adze of Tū",
+    "kind": "implement",
+    "role": "The to'i adze of the craftsman-god, emblem of Tū's work as fellow-artificer of the world with Ta'aroa",
+    "term": {
+     "value": "to'i",
+     "script": "Tahitian",
+     "rom": "to'i"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): the adzes (to'i) of the artisan-gods in the creation"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tū among the great gods shaped at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_taaroa.parent — Tū is shaped/begotten by Ta'aroa."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne, Tū and Ro'o among the great gods shaped together at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_tane.sibling — fellow great-god of the one creation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): Tāne, Tū and Ro'o among the great gods shaped together at Ta'aroa's creation"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_roo.sibling — fellow great-god of the one creation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tahitian_oro",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (1928): 'Oro reckoned among the sons of Ta'aroa with the elder great gods"
+     }
+    ],
+    "notes": "Reciprocal of tahitian_oro.sibling — half-brother as a son of Ta'aroa. The war-god office passes from the elder Tū to 'Oro on Tahiti."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "William Ellis, Polynesian Researches (1829), the four great gods (Ta'aroa, Tāne, Tū, Ro'o)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tū is the Society-Islands reflex of the Polynesian war-and-craft god (Maori Tūmatauenga, Hawaiian Kū). In Henry's cosmogony he is the great artificer who works beside Ta'aroa in fashioning the world; Ellis lists him among the four great gods as the old god of war. On Tahiti his war-cult was in time overshadowed by that of 'Oro. Authored as a son/handiwork of Ta'aroa and brother of Tāne, Ro'o and 'Oro."
  },
  {
   "id": "taino_atabey",
