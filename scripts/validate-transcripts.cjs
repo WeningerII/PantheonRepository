@@ -81,6 +81,12 @@ function main() {
     const eraOk = (e, w) => { if (e && vocab && !vocab.includes(e)) problems.push(`${where}: ${w} era ${JSON.stringify(e)} not registered for ${p.tradition} (valid: ${vocab.join(', ')})`); };
     eraOk(p.temporal && p.temporal.era, 'temporal');
     for (const ph of p.lifecycle || []) eraOk(ph.era, 'lifecycle');
+    // The app's Layer-1 hard-schema check rejects (and the boot crashes on) a
+    // lifecycle phase lacking both typeStatus and vitalStatus.
+    (p.lifecycle || []).forEach((ph, i) => {
+      if (ph && typeof ph === 'object' && !ph.typeStatus && !ph.vitalStatus)
+        problems.push(`${where}: lifecycle[${i}] missing typeStatus (set it to the figure's type)`);
+    });
     // faculties: must be {id,name,inheritability,sources}; catch the {faculty:...} shape.
     for (const fac of p.faculties || []) {
       if (!fac || typeof fac !== 'object') { problems.push(`${where}: faculty entry not an object`); continue; }

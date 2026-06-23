@@ -1,0 +1,567 @@
+Fijian (iTaukei) pantheon — core figures still missing from the registry.
+
+The five already-registered figures cover the supreme creator and several major
+spheres: fijian_degei (Degei, the serpent kalou-vu and creator), fijian_dakuwaqa
+(the shark-god of Cakaudrove), fijian_ratumaibulu (lord of the underworld and
+agriculture), fijian_rokola (Degei's son, patron of carpenters and canoe-builders),
+and fijian_veli (the little forest spirits). What is conspicuously absent is the
+WAR / SEAFARING / NAKAUVADRA-CYCLE layer of the tradition. This batch supplies it.
+
+I verified each figure against the named scholarship and the standard
+ethnographic record. The decisive sources are Thomas Williams, Fiji and the
+Fijians (1858) — the foundational missionary ethnography that records the two
+classes of gods (kalou-vu "root-gods" and kalou-yalo "deified spirits"), the
+bure-kalou (god-house/temple) system, the bete (priests), and the war-gods;
+Basil Thomson, The Fijians: A Study of the Decay of Custom (1908); Lorimer
+Fison, Tales from Old Fiji (1904) and his 1895 study "Ancestor Worship Among the
+Fijians"; A. M. Hocart's Lau/Northern-States ethnography; R. A. Derrick, A
+History of Fiji (1946); and the modern ANU Press synthesis Degei's Descendants:
+Spirits, Place and People in Pre-Cession Fiji (ed. Paul Geraghty et al.).
+
+Figures authored (5):
+  1. fijian_daucina        — Daucina / Ndauthina, the lamp-bearer; god of light,
+                             seafaring and seduction. (Williams 1858; Thomson 1908.)
+  2. fijian_ravuravu       — Ravuravu, a war-god / patron of slayers, a kalou
+                             cast down from the Skyland. (Williams 1858; the
+                             "ravu" = "to club/kill" etymology is genuine Fijian.)
+  3. fijian_cagawalu       — Cagawalu, the supreme war-god of Bau, whose cult rose
+                             with the power of Bau and the chief Cakobau. (Williams
+                             1858; Derrick 1946; Sahlins, Islands of History 1985.)
+  4. fijian_nakausabaria   — one of the twin grandsons of Degei of the Nakauvadra
+                             cycle: rebel war-bringers and patrons of canoe-building.
+  5. fijian_nacirikaumoli  — the other twin (Cirinakaumoli / Thirikaumoli).
+                             (Fison 1904/1895; Thomson 1908; Degei's Descendants.)
+
+Verification notes that shaped the data (accuracy-first):
+- DAUCINA's filiation. The brief floats Daucina as "a son of Degei." The sources
+  do NOT firmly attest this: his parentage "varies by region and oral tradition,"
+  and where a genealogy is given (the Cakaudrove "gone mai wai," child-from-the-sea
+  origin) it is NOT Degei. The only Degei link is a loose modern "holy trinity"
+  conceit. Per the hard rule to author only firmly-attested detail, I therefore do
+  NOT assign parentIds ["fijian_degei"]; Daucina is entered kinless with a cited
+  SOLITARY flag. (His name IS securely glossed: Fijian "cina" = lamp/torch, "dau-"
+  = expert-at / habitual-doer, so Daucina = "the lamp-bearer.")
+- THE TWINS' genealogy. The dominant, well-attested tradition (Fiji Times retelling
+  of the Nakauvadra saga; Degei's Descendants; the figures on Fiji's Coat of Arms)
+  makes Nakausabaria and Cirinakaumoli the TWIN GRANDSONS of Degei (a competing
+  saga-variant makes them his sons; another names their father the Tui Nubulevu).
+  Because their father is not a registered figure and "grandsons" — not "sons" — is
+  the prevailing framing, I do NOT assert parentIds ["fijian_degei"] (which would
+  misstate them as Degei's children). Their cited kinship is captured as a
+  "twin sibling" bond to each other (reciprocal in-batch) and an "enemy" relation to
+  fijian_degei (the war they waged against him), with the grandson genealogy noted.
+  parentRoles records the contested descent.
+- WAR-GOD material culture is real and attested: the bure-kalou (god-house/war-
+  temple), into which war-clubs (i wau / totokia) heavy with mana were placed, and
+  to which first-fruits and (for the great war-gods) human sacrifices were offered;
+  the bete (priest) as the god's possessed medium. These populate materialCulture.
+- TOKAIRABE was considered: attested only thinly, as a prayer-mediator "son" of
+  Degei (Ngendei) rather than as an independent war-god, so I omit it rather than
+  pad. The four war/seafaring/cycle figures above are the firmly-attested core.
+
+Names are given English-leading with attested native terms; scripts are "Latin"
+(Fijian is written in Latin orthography) and romanizations equal the value. Where
+a specific native word is not securely attested I leave term.value "".
+
+```json
+[
+  {
+    "id": "fijian_daucina",
+    "name": {
+      "primary": "The Lamp-Bearer",
+      "alt": ["Daucina", "Ndauthina", "Dau-cina"],
+      "transliterations": { "fijian": "Daucina", "etymology": "Fijian dau- 'expert at / habitual doer' + cina 'lamp, torch' = 'the torch-bearer / lamp-lighter'" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fijian",
+    "primaryTradition": "Fijian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Revered across Cakaudrove and Natewa as a kalou of the sea; in boyhood his mother bound lighted reeds to his head so he would be still, and he has roamed the reefs by torchlight ever since.",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ndauthina the lamp-god" },
+          { "kind": "secondary", "reference": "Thomson, Basil. The Fijians: A Study of the Decay of Custom (1908), on the gods of seafaring" }
+        ],
+        "notes": "The lighted-reeds-on-the-head motif and the torch by which he lights the reefs at night are the constant elements of his myth."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "light-and-fire",
+        "contextTag": "lifelong",
+        "term": { "value": "cina", "script": "Latin", "rom": "cina" },
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ndauthina, 'the lighter of lamps', carrying a torch on the reef" }
+        ]
+      },
+      {
+        "sphereId": "seafaring-and-navigation",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Thomson, Basil. The Fijians: A Study of the Decay of Custom (1908), on Daucina as a god of seafaring and fishing, invoked for the night reef-fishery" }
+        ]
+      },
+      {
+        "sphereId": "seduction-and-adultery",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ndauthina as the patron of adulterers who beguiles women by night" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "light-the-reefs-by-night",
+        "name": "lights the reefs and shoals with his torch",
+        "inheritability": "none",
+        "notes": "He walks the reef at night carrying a flaming torch (and with lighted reeds bound to his head); the sea-glow (phosphorescence) where he passes was attributed to him, and he lit the way for night fishermen and lost canoes.",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ndauthina the lamp-god of the reef" }
+        ]
+      },
+      {
+        "id": "seduce-in-disguise",
+        "name": "beguiles women by night in a borrowed shape",
+        "inheritability": "none",
+        "notes": "As patron of seducers and adulterers he takes the likeness of a familiar man — sometimes a woman's own husband — to entice high-born or beautiful women under cover of dark; offerings were made to him to obtain success in illicit love and on night voyages.",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ndauthina the patron of adulterers" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "daucina_torch",
+        "name": "the lighted torch and bound reeds of Daucina",
+        "kind": "implement",
+        "role": "the flaming torch he carries on the reef, and the lighted reeds his mother bound to his head, by which he is known and gives light at sea",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ndauthina carrying a torch / lighted reeds" }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Daucina ('the lamp-bearer'; Williams's Ndauthina) is a Fijian god of light, seafaring and the night reef-fishery, especially revered in Cakaudrove and Natewa, who lights the reefs with his torch and is at the same time the notorious patron of seducers and adulterers, taking on borrowed shapes to beguile women by night.",
+        "citations": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858)" },
+          { "kind": "secondary", "reference": "Thomson, Basil. The Fijians: A Study of the Decay of Custom (1908)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Entered as a deity (a kalou). The brief proposed him as a son of Degei, but his filiation is NOT firmly attested — the sources say his parentage varies by locale, and the only genealogies given (the Cakaudrove 'gone mai wai', child-from-the-sea) do not lead back to Degei; the Degei link is a loose modern 'holy trinity' framing. Per the accuracy rule he is therefore entered kinless (see SOLITARY flag) rather than asserted as Degei's son. The name is securely glossed (cina = lamp/torch)."
+  },
+  {
+    "id": "fijian_ravuravu",
+    "name": {
+      "primary": "The Slayer",
+      "alt": ["Ravuravu"],
+      "transliterations": { "fijian": "Ravuravu", "etymology": "from Fijian ravu 'to club, to kill, to slay', reduplicated — 'the killer / war-maker'" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fijian",
+    "primaryTradition": "Fijian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "A kalou of war and bloodshed cast down from the Skyland; thereafter he took human form and lay in wait at Navukeilagi to kill.",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on the war-gods and malevolent kalou of Fiji" }
+        ],
+        "notes": "Belongs to the class of fierce war/murder kalou propitiated before raids and killings."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "ravu", "script": "Latin", "rom": "ravu" },
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on the gods of war invoked before battle and the taking of life" }
+        ]
+      },
+      {
+        "sphereId": "murder-and-bloodshed",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ravuravu, patron of slayers, who lurked at Navukeilagi" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "deal-death-in-ambush",
+        "name": "lies in wait and clubs his victims",
+        "inheritability": "none",
+        "notes": "Patron of murderers and warriors: after his fall he took human shape and killed men and women at Navukeilagi until caught in the act, after which he preyed on people less openly. He was invoked for success in killing.",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ravuravu the patron of slayers" }
+        ]
+      },
+      {
+        "id": "blanch-the-trespasser",
+        "name": "whitens any who tread his footprints or sit his stone",
+        "inheritability": "none",
+        "notes": "He sat upon great stones to await his victims; anyone who afterwards sat on such a stone, or stepped in his footprints, was turned whiter than an albino — a sign of his deadly presence.",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on Ravuravu and the whitening of those who crossed his path" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "fijian_war_club_iwau",
+        "name": "the war-club (i wau)",
+        "kind": "weapon",
+        "role": "the Fijian killing-club wielded by the war-god and his devotees; clubs heavy with mana were dedicated and laid up in the war-gods' temples",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on the i wau (war-club) and its sacred associations" }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Ravuravu is a Fijian war-god and patron of slayers — a malevolent kalou cast down from the Skyland who, taking human form, killed people in ambush at Navukeilagi, whitened to albino any who trod his footprints or sat upon his stone, and whose priests demonstrated his power by eating rocks; his name derives from ravu, 'to club or kill'.",
+        "citations": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858)" },
+          { "kind": "secondary", "reference": "Thomson, Basil. The Fijians: A Study of the Decay of Custom (1908), on the war-cults and their priests" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Entered as a deity (a war/murder kalou). The reduplicated name from ravu ('to club, to kill') is genuine Fijian and fixes him squarely in the war complex. Kinless in the record — see SOLITARY flag. The 'priests who eat rocks' detail is part of his cult lore."
+  },
+  {
+    "id": "fijian_cagawalu",
+    "name": {
+      "primary": "War-God of Bau",
+      "alt": ["Cagawalu", "Thangawalu"],
+      "transliterations": { "fijian": "Cagawalu", "etymology": "Fijian; cana/caga + walu — name of the tutelary war-god of the island-kingdom of Bau" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fijian",
+    "primaryTradition": "Fijian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Tutelary war-god of Bau; his cult rose as Bau rose to paramountcy in the 18th–19th centuries, and his temple stood among the bure-kalou of the chief Cakobau.",
+        "sources": [
+          { "kind": "secondary", "reference": "Derrick, R. A. A History of Fiji, Vol. 1 (1946), on Bau and its gods" },
+          { "kind": "secondary", "reference": "Sahlins, Marshall. Islands of History (1985), on Cakobau, Bau and its war-god" }
+        ],
+        "notes": "When Cakobau accepted Christianity (lotu) in 1854 he had felt let down by his war-god; in 1859 he ordered most of Bau's bure-kalou destroyed."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Derrick, R. A. A History of Fiji, Vol. 1 (1946), on Cagawalu, the supreme war-god of Bau" }
+        ]
+      },
+      {
+        "sphereId": "tutelary-protection",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Sahlins, Marshall. Islands of History (1985), on the war-god of Bau and the fortunes of the kingdom" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant-victory-to-bau",
+        "name": "grants victory in war to the people of Bau",
+        "inheritability": "none",
+        "notes": "As Bau's paramount war-god he was consulted through his possessed priest (bete) before campaigns and credited with the kingdom's martial success; his standing rose and fell with Bau's own power.",
+        "sources": [
+          { "kind": "secondary", "reference": "Sahlins, Marshall. Islands of History (1985), on Cakobau and the war-god of Bau" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "fijian_bure_kalou",
+        "name": "the god-house / war-temple (bure-kalou)",
+        "kind": "structure",
+        "role": "the tall spirit-house in which the war-god was honoured, his priest received him, and offerings of first-fruits, war-clubs and human sacrifice were presented; Bau held many such temples",
+        "sources": [
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on the bure-kalou (god-house) and its priest (bete)" },
+          { "kind": "secondary", "reference": "Derrick, R. A. A History of Fiji, Vol. 1 (1946), on the bure-kalou of Bau" }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Cagawalu is the supreme tutelary war-god of Bau, the island-kingdom that became paramount in 19th-century Fiji; his cult grew with Bau's power, he was housed in the bure-kalou and consulted through his priest before war, and the disillusionment of the chief Cakobau with him preceded Cakobau's conversion to Christianity.",
+        "citations": [
+          { "kind": "secondary", "reference": "Derrick, R. A. A History of Fiji, Vol. 1 (1946)" },
+          { "kind": "secondary", "reference": "Sahlins, Marshall. Islands of History (1985)" },
+          { "kind": "secondary", "reference": "Williams, Thomas. Fiji and the Fijians, Vol. 1 (1858), on the war-gods and temples of Fiji" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Entered as a deity (war-god). One of the great regional/political war-gods of Fiji, tied to the rise of Bau; distinct from the pan-Fijian creator complex. Kinless in the record — see SOLITARY flag."
+  },
+  {
+    "id": "fijian_nakausabaria",
+    "name": {
+      "primary": "Nakausabaria the Twin",
+      "alt": ["Nakausabaria"],
+      "transliterations": { "fijian": "Nakausabaria", "etymology": "Fijian proper name; one of the twin grandsons of Degei of the Nakauvadra cycle" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fijian",
+    "primaryTradition": "Fijian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": ["In the prevailing Nakauvadra saga the twins are the grandsons of Degei (variant traditions make them his sons, or name their father the Tui Nubulevu); their father is not a registered figure, so descent is recorded here in notes/relations rather than as a parentId."],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "With his twin he shot Degei's prize cock Turukawa, provoking the great war of the Nakauvadra range and the dispersal of the people.",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" },
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants: Spirits, Place and People in Pre-Cession Fiji (ANU Press), on the Nakauvadra twins" }
+        ],
+        "notes": "The killing of Turukawa, Degei's living alarm-cock, is the trigger of the founding war."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. Tales from Old Fiji (1904), on the war of the Nakauvadra and the twins' rebellion against Degei" }
+        ]
+      },
+      {
+        "sphereId": "canoe-building",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on Nakausabaria and Cirinakaumoli as patron deities of canoe-building (Nasauro)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise-war-against-degei",
+        "name": "rebels against Degei and brings on the first great war",
+        "inheritability": "partial",
+        "notes": "With his twin he defied the supreme serpent Degei — killing his cock Turukawa and (in fuller tellings) raising a fortified tower in the Nakauvadra — so beginning the war from which the Fijian peoples are dispersed; the twins are remembered on Fiji's coat of arms.",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" }
+        ]
+      },
+      {
+        "id": "patron-of-canoe-builders",
+        "name": "patron of the canoe-builders",
+        "inheritability": "partial",
+        "notes": "The twins are held to be patron deities of canoe-building, making Nasauro a great centre of the craft.",
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on the twins as patrons of canoe-building" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nakauvadra_twins_bow",
+        "name": "the bow that slew Turukawa",
+        "kind": "weapon",
+        "role": "the bow and arrow, made at Togovere in Rakiraki, with which the twins shot Degei's cock Turukawa and so began the war",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. Tales from Old Fiji (1904), on the killing of Turukawa" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "fijian_nacirikaumoli",
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on the Nakauvadra twins Nakausabaria and Cirinakaumoli" }
+        ],
+        "notes": "The two are an inseparable twin pair in the Nakauvadra cycle."
+      },
+      {
+        "kind": "enemy",
+        "personId": "fijian_degei",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" }
+        ],
+        "notes": "The twins (his grandsons in the prevailing tradition) rebel against and make war on Degei after the killing of his cock Turukawa."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Nakausabaria is one of the twin grandsons of the supreme god Degei in the Nakauvadra cycle; with his twin Cirinakaumoli he killed Degei's prize cock Turukawa, provoking the great founding war of Fiji and the dispersal of its peoples, and the two are honoured as patron deities of canoe-building and are figured on Fiji's coat of arms.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" },
+          { "kind": "secondary", "reference": "Fison, Lorimer. Tales from Old Fiji (1904)" },
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants: Spirits, Place and People in Pre-Cession Fiji (ANU Press)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Entered as a deity (an ancestral war-cycle god). Descent from Degei is recorded as 'grandson' in the prevailing saga (variants say son, or name the Tui Nubulevu as father); because the father is unregistered and 'grandsons' is dominant, parentIds is left empty and the Degei link is carried by the cited 'enemy' relation plus parentRoles, rather than misstating Degei as his direct parent. Orthography of the twin's name varies (Cirinakaumoli / Nacirikaumoli / Thirikaumoli)."
+  },
+  {
+    "id": "fijian_nacirikaumoli",
+    "name": {
+      "primary": "Cirinakaumoli the Twin",
+      "alt": ["Nacirikaumoli", "Cirinakaumoli", "Thirikaumoli"],
+      "transliterations": { "fijian": "Cirinakaumoli", "etymology": "Fijian proper name; the second of the twin grandsons of Degei of the Nakauvadra cycle" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Fijian",
+    "primaryTradition": "Fijian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": ["In the prevailing Nakauvadra saga the twins are the grandsons of Degei (variant traditions make them his sons, or name their father the Tui Nubulevu); their father is not a registered figure, so descent is recorded here in notes/relations rather than as a parentId."],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "With his twin he shot Degei's prize cock Turukawa, provoking the great war of the Nakauvadra range and the dispersal of the people.",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" },
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants: Spirits, Place and People in Pre-Cession Fiji (ANU Press), on the Nakauvadra twins" }
+        ],
+        "notes": "Inseparable counterpart of Nakausabaria in the founding-war narrative."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "war",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. Tales from Old Fiji (1904), on the war of the Nakauvadra and the twins' rebellion against Degei" }
+        ]
+      },
+      {
+        "sphereId": "canoe-building",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on Nakausabaria and Cirinakaumoli as patron deities of canoe-building (Nasauro)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise-war-against-degei",
+        "name": "rebels against Degei and brings on the first great war",
+        "inheritability": "partial",
+        "notes": "With his twin he defied the supreme serpent Degei — killing his cock Turukawa and (in fuller tellings) raising a fortified tower in the Nakauvadra — so beginning the war from which the Fijian peoples are dispersed; the twins are remembered on Fiji's coat of arms.",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" }
+        ]
+      },
+      {
+        "id": "patron-of-canoe-builders",
+        "name": "patron of the canoe-builders",
+        "inheritability": "partial",
+        "notes": "With his twin he is held to be a patron deity of canoe-building, making Nasauro a great centre of the craft.",
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on the twins as patrons of canoe-building" }
+        ]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "nakauvadra_twins_canoe",
+        "name": "the canoes of Nasauro",
+        "kind": "vessel",
+        "role": "the great canoes whose craft the twins patronise, centred on Nasauro, the canoe-building town of the Nakauvadra tradition",
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on the twins and canoe-building at Nasauro" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "twin sibling",
+        "personId": "fijian_nakausabaria",
+        "sources": [
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants (ANU Press), on the Nakauvadra twins Nakausabaria and Cirinakaumoli" }
+        ],
+        "notes": "The two are an inseparable twin pair in the Nakauvadra cycle."
+      },
+      {
+        "kind": "enemy",
+        "personId": "fijian_degei",
+        "sources": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" }
+        ],
+        "notes": "The twins (his grandsons in the prevailing tradition) rebel against and make war on Degei after the killing of his cock Turukawa."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Cirinakaumoli (Nacirikaumoli) is one of the twin grandsons of the supreme god Degei in the Nakauvadra cycle; with his twin Nakausabaria he killed Degei's prize cock Turukawa, provoking the great founding war of Fiji and the dispersal of its peoples, and the two are honoured as patron deities of canoe-building and are figured on Fiji's coat of arms.",
+        "citations": [
+          { "kind": "secondary", "reference": "Fison, Lorimer. 'Ancestor Worship Among the Fijians', Popular Science Monthly 47 (1895)" },
+          { "kind": "secondary", "reference": "Fison, Lorimer. Tales from Old Fiji (1904)" },
+          { "kind": "secondary", "reference": "Geraghty, Paul (ed.). Degei's Descendants: Spirits, Place and People in Pre-Cession Fiji (ANU Press)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Entered as a deity (an ancestral war-cycle god); the twin of fijian_nakausabaria. Descent from Degei is 'grandson' in the prevailing saga (variants: son; or father = Tui Nubulevu); parentIds left empty for the same reason as his twin, with the Degei link carried by the cited 'enemy' relation and parentRoles. Name orthography varies (Cirinakaumoli / Nacirikaumoli / Thirikaumoli)."
+  }
+]
+```
+
+SOLITARY: fijian_daucina — entered kinless. The brief proposed Daucina as a son of Degei, but his parentage is not firmly attested: the sources state his filiation varies by region, the only genealogies offered (the Cakaudrove 'gone mai wai', child-from-the-sea) do not lead to Degei, and the Degei link is only a loose modern 'holy trinity' framing (Williams, Fiji and the Fijians, 1858; Thomson, The Fijians, 1908). Per the accuracy rule, no parentId is asserted.
+SOLITARY: fijian_ravuravu — entered kinless. Ravuravu is recorded as an independent war/murder kalou cast down from the Skyland, with no attested parentage or kin in the sources (Williams, Fiji and the Fijians, 1858).
+SOLITARY: fijian_cagawalu — entered kinless. Cagawalu is recorded as the tutelary war-god of Bau, defined by his cult and polity rather than by any attested genealogy or kin (Derrick, A History of Fiji, 1946; Sahlins, Islands of History, 1985; Williams, 1858).
+
+RECIPROCAL-NEEDED: fijian_degei enemy fijian_nakausabaria — add the reciprocal 'enemy' relation toward fijian_nakausabaria on the existing figure fijian_degei (the twins' war against Degei in the Nakauvadra cycle).
+RECIPROCAL-NEEDED: fijian_degei enemy fijian_nacirikaumoli — add the reciprocal 'enemy' relation toward fijian_nacirikaumoli on the existing figure fijian_degei.

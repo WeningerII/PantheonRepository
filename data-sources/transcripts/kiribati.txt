@@ -1,0 +1,653 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Kiribati (Gilbertese / Tungaru), Micronesia
+Registered era vocabulary for Kiribati: primordial (only)
+Author: figure-authoring researcher
+Date: 2026-06-23
+
+PURPOSE
+The Kiribati creation cycle already registered in the corpus runs Nareau the Elder
+(kiribati_nareau_elder, the spider-creator) -> Na Atibu (kiribati_naatibu, the First
+Rock) -> Nareau the Younger (kiribati_nareau_younger, the World-Maker), who makes the
+world out of the dismembered body of Na Atibu. This transcript adds the generation of
+beings born of, or shaped within, that creation, and the great ancestral anti
+("gods/spirits") whom the Gilbertese counted famous "from the earliest times."
+
+SOURCE BASIS
+The canonical corpus for Gilbertese mythology is Sir Arthur Grimble's field material,
+collected 1916-1930 and published as:
+  - Grimble, Arthur F. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert
+    Islands (ed. H. E. Maude, Univ. of Hawai'i Press / Pacific Islands Monograph Series,
+    1989).
+  - Grimble, Arthur F. "Myths from the Gilbert Islands" (Folklore, vol. 33, 1922).
+  - Grimble, Arthur F. Return to the Islands (1957) and A Pattern of Islands (1952).
+  - Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands: Early Writings
+    of Sir Arthur Grimble (Routledge & Kegan Paul, 1972).
+  - Maude, H. E. (ed.), and the Maude & Grimble Papers; The Book of Banaba (1994) for the
+    Banaban (Ocean Island) recension of Tabakea.
+Secondary syntheses consulted for cross-checking: Encyclopedia.com "Micronesian Religions:
+Mythic Themes"; Oxford Reference (Dict. of Asian Mythology / World Mythology); Wikipedia
+"Nareau", "Na Atibu", "Auriaria", "Nei Tituaabine", "Banaba".
+
+GENEALOGY ESTABLISHED FROM THE SOURCES
+From sand and water Nareau the Elder made the primal pair Na Atibu ("the Rock") and his
+consort Nei Teukez (also written Nei Teakea). That pair "brought forth" the second
+generation of beings: Te Ikawai (the Eldest), Nei Marena (the Between), Te Nao (the Wave),
+Na Kika (the Octopus), Riiki / Ruki (the Eel) — and, in the registered line, Nareau the
+Younger. Of these, RIIKI and NA KIKA are the two whose feats drive the making of the world
+(Riiki prises sky from earth; Na Kika heaves up the land) and are authored here, wired as
+children of the already-registered Na Atibu (kiribati_naatibu) and therefore siblings of
+the already-registered Nareau the Younger.
+
+The great ancestral anti famous "from the earliest times" — named together in Grimble as
+TABUARIKI (the Thunderer), AURIARIA, RIIKI, NEI TITUAABINE, and NEI TEWENEI — are authored
+as primordial-era deity-ancestors. AURIARIA (the red giant) and NEI TITUAABINE (the
+vegetation goddess) are sister-and-husband; TABUARIKI (thunder/lightning) and NEI TEVENEI
+(the comet/meteor) are husband-and-wife. TABAKEA, the primal turtle, is authored from the
+Banaban (Ocean Island) recension in which he is the first of all beings; because that
+recension is a parallel cosmogony to the registered Tarawan line (in which Nareau the Elder
+is first), Tabakea is NOT wired as ancestor of the registered Nareau, and the relationship
+is recorded in notes only.
+
+NOTES ON TYPING / FIELDS
+- era is "primordial" for every figure (the only value registered for Kiribati).
+- type: the cosmogonic and ancestral gods are "deity"; Auriaria, the giant ancestral hero
+  who led settlement and from whom chiefly lines descend, is entered as "demigod"
+  (culture-hero) consistent with how Nareau the Younger is typed in the corpus.
+- Native Gilbertese terms are given only where securely attested (Riiki, Na Kika, anti,
+  kimoa, Karawa, Marawa, Na Iabu, Kai-n-tiku-aba, te ben, te non/te tarine, te kaina);
+  Gilbertese is recorded in Latin orthography, so script = "Latin" and rom = the value.
+- domains/faculties/materialCulture are populated as fully as the sources attest, each with
+  a non-empty source reference, per the enrichment mandate.
+
+```json
+[
+  {
+    "id": "kiribati_riiki",
+    "name": {
+      "primary": "Sky-Lifting Eel",
+      "alt": ["Riiki", "Riki", "Ruki", "Riiki the Eel"],
+      "transliterations": { "kiribati": "Riiki", "etymology": "Gilbertese name of the great conger-eel of the creation; identified with Na Iabu, the Milky Way" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["kiribati_naatibu"],
+    "parentRoles": [
+      { "personId": "kiribati_naatibu", "role": "father", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. H.E. Maude, 1989), creation genealogy: Na Atibu and Nei Teukez beget Te Ikawai, Nei Marena, Te Nao, Na Kika and Riiki the eel" }] }
+    ],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 2,
+        "startEvent": "Born of Na Atibu and Nei Teukez among the second generation of beings, before the sky is raised",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989)" }],
+        "notes": "One of the children of the primal pair; the eel whom Nareau the Younger sets to lift the sky-roof."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "separation-of-sky-and-earth",
+        "contextTag": "lifelong",
+        "term": { "value": "Riiki", "script": "Latin", "rom": "Riiki" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Riiki the eel raises the sky off the earth" }]
+      },
+      {
+        "sphereId": "eels",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); cf. eel-god Riiki invoked in Gilbertese eel-catching ritual" }]
+      },
+      {
+        "sphereId": "milky-way",
+        "contextTag": "lifelong",
+        "term": { "value": "Na Iabu", "script": "Latin", "rom": "Na Iabu" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Riiki set in the sky as Na Iabu, the Milky Way" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lift-the-sky",
+        "name": "prises the sky-roof off the earth",
+        "inheritability": "none",
+        "notes": "At Nareau the Younger's command the conger-eel Riiki sets his teeth in the sky and his tail in the earth and heaves them apart, opening the space in which the world is made; Nareau then props and fastens the heavens.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Grimble, 'Myths from the Gilbert Islands' (Folklore, 1922)" }]
+      },
+      {
+        "id": "fed-the-essence-of-procreation",
+        "name": "is roused to strength by Na Kika's severed legs",
+        "inheritability": "none",
+        "notes": "Nareau the Wise feeds Riiki two legs torn from the octopus Na Kika — 'the essence of procreation' — and taps his chest with a chant to put courage in him and make him stand to his task.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Nareau feeds the eel octopus-legs before the lifting of the sky" }]
+      },
+      {
+        "id": "become-the-milky-way",
+        "name": "is set in the heavens as the Milky Way",
+        "inheritability": "none",
+        "notes": "After the sky is raised the spent eel is cast up into the heavens, where he remains as Na Iabu, the Milky Way; his arching body is the band of stars.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989)" }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "sibling", "personId": "kiribati_na_kika", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Na Kika and Riiki both children of Na Atibu and Nei Teukez" }], "notes": "The octopus and the eel, fellow children of the primal pair and co-workers in lifting the sky and land." },
+      { "kind": "sibling", "personId": "kiribati_nareau_younger", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), genealogy of the children of Na Atibu" }], "notes": "Riiki is a child of Na Atibu, hence brother of Nareau the Younger, whose command he obeys in raising the sky." }
+    ],
+    "sources": [
+      {
+        "claim": "Riiki (Ruki) is the great conger-eel of Gilbertese creation, a child of Na Atibu and Nei Teukez, who at Nareau the Younger's bidding prises the sky from the earth and is afterwards set in the heavens as Na Iabu, the Milky Way.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" },
+          { "kind": "secondary", "reference": "Grimble, Arthur. 'Myths from the Gilbert Islands' (Folklore, vol. 33, 1922)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The sky-lifting eel of the Tungaru cosmogony. Already named in the corpus within Nareau the Younger's 'raise-the-sky' faculty; here given his own entry, wired as a child of the registered Na Atibu and sibling of Nareau the Younger and of Na Kika. Identified with the Milky Way (Na Iabu). Treated as deity; immortal (set in the sky, not slain)."
+  },
+  {
+    "id": "kiribati_na_kika",
+    "name": {
+      "primary": "World-Heaving Octopus",
+      "alt": ["Na Kika", "Nakika", "Na-Kika", "the Octopus Lord"],
+      "transliterations": { "kiribati": "Na Kika", "etymology": "Gilbertese 'the octopus' (kika), the strong-armed son of Na Atibu who heaves up the land" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["kiribati_naatibu"],
+    "parentRoles": [
+      { "personId": "kiribati_naatibu", "role": "father", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Na Kika a son of Na Atibu and Nei Teukez" }] }
+    ],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 2,
+        "startEvent": "Born of Na Atibu and Nei Teukez among the second generation of beings",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989)" }],
+        "notes": "The many-armed octopus-god who heaves the land up from the sea-floor and helps prop the sky."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "raising-of-the-land",
+        "contextTag": "lifelong",
+        "term": { "value": "Na Kika", "script": "Latin", "rom": "Na Kika" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Na Kika lifts the land from the bottom of the sea" }]
+      },
+      {
+        "sphereId": "octopuses",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), the octopus-god of the creation" }]
+      },
+      {
+        "sphereId": "sea-floor",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989)" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "heave-up-the-land",
+        "name": "lifts the islands, beaches and rocks from the sea-floor",
+        "inheritability": "none",
+        "notes": "With his many arms the octopus Na Kika raises the land out of the deep, forming the islands, their beaches and reef-rocks, and helps bear up the propped sky.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Na Kika heaves the land from the bottom of the sea to make islands and rocks" }]
+      },
+      {
+        "id": "yield-the-essence-of-procreation",
+        "name": "gives up the legs that strengthen the sky-eel",
+        "inheritability": "none",
+        "notes": "Two of his legs, called 'the essence of procreation,' are torn off by Nareau the Wise and fed to the eel Riiki to put courage into him for the lifting of the sky.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Nareau takes two of Na Kika's legs to feed Riiki" }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "sibling", "personId": "kiribati_riiki", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Na Kika and Riiki both children of the primal pair" }], "notes": "The octopus and the eel, fellow children of Na Atibu and Nei Teukez and co-workers in the making of the world." },
+      { "kind": "sibling", "personId": "kiribati_nareau_younger", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), genealogy of the children of Na Atibu" }], "notes": "A child of Na Atibu, hence brother of Nareau the Younger, in whose ordering of the world he is a chief helper." }
+    ],
+    "sources": [
+      {
+        "claim": "Na Kika ('the Octopus') is a son of Na Atibu and Nei Teukez in Gilbertese creation, the many-armed god who heaves the land up from the sea-floor to form the islands and whose legs, 'the essence of procreation,' are fed to the sky-lifting eel Riiki.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" },
+          { "kind": "secondary", "reference": "Grimble, Arthur. 'Myths from the Gilbert Islands' (Folklore, vol. 33, 1922)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "The octopus-god of the Tungaru cosmogony, brother of Riiki and of Nareau the Younger. His land-raising and his sacrificed legs are core attested motifs. Treated as deity; immortal."
+  },
+  {
+    "id": "kiribati_tabakea",
+    "name": {
+      "primary": "Primal Turtle",
+      "alt": ["Tabakea", "Tabwakea", "Tabakea the Turtle"],
+      "transliterations": { "kiribati": "Tabakea", "etymology": "from the Gilbertese word for the turtle; the turtle on whose carapace the islands rest" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "Appears first of all beings in the Banaban (Ocean Island) recension, when sky and earth are still pressed together",
+        "sources": [{ "kind": "secondary", "reference": "Grimble & Maude, The Book of Banaba (1994); Grimble, Tungaru Traditions (ed. Maude, 1989), Banaban creation" }],
+        "notes": "In the Banaba recension Tabakea is the first being and the father of Nareau; he turns his own shell into the island."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "primordial-being",
+        "contextTag": "lifelong",
+        "term": { "value": "Tabakea", "script": "Latin", "rom": "Tabakea" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Grimble & Maude, The Book of Banaba (1994), Tabakea 'first of all'" }]
+      },
+      {
+        "sphereId": "turtles",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble & Maude, The Book of Banaba (1994), the great turtle Tabakea" }]
+      },
+      {
+        "sphereId": "foundation-of-the-land",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble & Maude, The Book of Banaba (1994), Tabakea's carapace beneath Banaba; the island's hump is the exposed shell" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "be-first-of-all",
+        "name": "appears as the first of all beings",
+        "inheritability": "none",
+        "notes": "In the Banaban recension Tabakea is 'first of all'; when heaven and earth are rubbed apart like two hands, Tabakea and his brother Na Kaa appear, and from Tabakea's forehead springs Nareau the demiurge.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble & Maude, The Book of Banaba (1994); Encyclopedia.com, 'Micronesian Religions: Mythic Themes' (heaven and earth rubbed apart; Tabakea first, with brother Na-Kaa)" }]
+      },
+      {
+        "id": "become-the-island",
+        "name": "turns his own shell into the island of Banaba",
+        "inheritability": "none",
+        "notes": "At the creation Tabakea makes his carapace into the land: his body lies beneath the coral mass of Banaba (Ocean Island) and the island's high hump is the exposed part of his shell, so that the islands are borne on the turtle's back.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble & Maude, The Book of Banaba (1994), Tabakea turns her shell into the island" }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tabakea (Tabwakea) is the primal turtle of Gilbertese, and especially Banaban, mythology: in the Ocean Island recension he is the first of all beings, brother of Na Kaa and father of the demiurge Nareau, who turns his own shell into the island so that the land rests on the turtle's back.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Arthur, and H.E. Maude. The Book of Banaba: From the Maude and Grimble Papers, and Published Works (1994)" },
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Primal turtle / cosmic foundation. Authored from the Banaban (Ocean Island) recension, which is a PARALLEL cosmogony to the Tarawan line already registered (in which Nareau the Elder, not Tabakea, is first). To avoid contradicting the registered genealogy, Tabakea is NOT wired as parent of kiribati_nareau_elder or kiribati_nareau_younger; the 'Tabakea is father of Nareau' tradition is recorded in notes only. His attested kin Na Kaa (brother) is not in the corpus. See SOLITARY flag. Treated as deity; immortal (he becomes the enduring island)."
+  },
+  {
+    "id": "kiribati_auriaria",
+    "name": {
+      "primary": "Red Giant Ancestor",
+      "alt": ["Auriaria", "Auri-aria"],
+      "transliterations": { "kiribati": "Auriaria", "etymology": "name of the red-skinned giant ancestral hero of the Tungaru; lord of the pandanus and of the clan Karongoa" }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "primordial",
+        "eraOrdering": 3,
+        "startEvent": "Counted among the anti famous from the earliest times; comes from Samoa in the ancestral migrations and leads the settlement of Tarawa",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972)" }],
+        "notes": "Red-skinned giant chief and ancestor-deity (anti) of the Tungaru."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry-and-migration",
+        "contextTag": "lifelong",
+        "term": { "value": "Auriaria", "script": "Latin", "rom": "Auriaria" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972); Grimble, Tungaru Traditions (ed. Maude, 1989), Auriaria comes from Samoa and leads the settlement of Tarawa" }]
+      },
+      {
+        "sphereId": "pandanus",
+        "contextTag": "lifelong",
+        "term": { "value": "te kaina", "script": "Latin", "rom": "te kaina" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Auriaria the uea (lord) of the pandanus" }]
+      },
+      {
+        "sphereId": "kingship-and-clan",
+        "contextTag": "lifelong",
+        "term": { "value": "Karongoa", "script": "Latin", "rom": "Karongoa" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Auriaria a deity of Karongoa, the senior clan of the maneaba" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "lead-the-settlement",
+        "name": "leads the first settlers from Samoa to Tarawa",
+        "inheritability": "partial",
+        "notes": "The giant Auriaria, of red skin and a giant's stature, came from Samoa in the ancestral migrations and led the early settlers to their first landfall on Tarawa; Gilbertese chiefly lines trace ancestry to him.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972); Grimble, Tungaru Traditions (ed. Maude, 1989)" }]
+      },
+      {
+        "id": "lord-of-the-pandanus",
+        "name": "is the lord (uea) of the pandanus, with the rat for his totem",
+        "inheritability": "partial",
+        "notes": "Auriaria is the uea of the pandanus (te kaina); his totem is the kimoa, the rat that lives in the pandanus, and he is one of the deities of the senior clan Karongoa.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Auriaria uea of the pandanus, totem the kimoa (rat), deity of Karongoa" }]
+      },
+      {
+        "id": "giant-stature",
+        "name": "stands of a giant's stature with red skin",
+        "inheritability": "none",
+        "notes": "Described as red-skinned (or red-haired) and of giant size; his ruddy colour links him with the host of 'fair' ancestral anti of the central and southern islands.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), the great chief Auriaria, red-skinned and of a giant's stature" }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "kiribati_nei_tituaabine", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), Auriaria husband (and brother) of Nei Tituaabine; their union was childless" }], "notes": "Husband of Nei Tituaabine; though they loved, no children were born to them, and at her death the trees grew from her grave." },
+      { "kind": "sibling", "personId": "kiribati_nei_tituaabine", "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), Nei Tituaabine the sister and wife of the giant chief Auriaria" }], "notes": "Brother as well as husband of Nei Tituaabine, who is named his sister in the central/southern island traditions." }
+    ],
+    "sources": [
+      {
+        "claim": "Auriaria is the red-skinned giant ancestral hero and ancestor-deity (anti) of the Tungaru, who came from Samoa in the ancestral migrations and led the settlement of Tarawa, lord of the pandanus and a deity of the senior clan Karongoa, husband and brother of the vegetation goddess Nei Tituaabine.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" },
+          { "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands: Early Writings of Sir Arthur Grimble (1972)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Pre-eminent Tungaru ancestral hero; entered as demigod (culture-hero/ancestor-deity), parallel to how Nareau the Younger is typed. Some popular references style him a 'sun god' (from his red/sun-coloured skin), but the securely attested Grimble core is the red giant ancestor from Samoa, lord of the pandanus and deity of Karongoa, husband-brother of Nei Tituaabine. RECIPROCAL within batch with Nei Tituaabine (spouse + sibling)."
+  },
+  {
+    "id": "kiribati_nei_tituaabine",
+    "name": {
+      "primary": "Tree Goddess",
+      "alt": ["Nei Tituaabine", "Nei Tituabine", "Tituaabine", "Titua'abine"],
+      "transliterations": { "kiribati": "Nei Tituaabine", "etymology": "Gilbertese female honorific Nei + Tituaabine; the goddess who becomes the coconut, almond and pandanus" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 3,
+        "startEvent": "Counted among the anti famous from the earliest times; sister and wife of Auriaria",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972)" }],
+        "notes": "The red-skinned, lightning-eyed goddess whose body becomes the staple trees at her death."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "trees-and-vegetation",
+        "contextTag": "lifelong",
+        "term": { "value": "Nei Tituaabine", "script": "Latin", "rom": "Nei Tituaabine" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Nei Tituaabine the vegetation goddess who becomes the trees" }]
+      },
+      {
+        "sphereId": "fertility-and-renewal",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), Nei Tituaabine goddess of fertility and growth" }]
+      },
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), the red-skinned maiden whose eyes flashed like lightning" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become-the-three-trees",
+        "name": "becomes the coconut, almond and pandanus at her death",
+        "inheritability": "none",
+        "notes": "After her childless union with Auriaria she sickens and dies, and from her grave three trees grow: the coconut palm from her head, the almond (te non / tropical almond) from her navel, and the pandanus from her heels — so the staple island trees spring from her body.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972); Grimble, Tungaru Traditions (ed. Maude, 1989): coconut from her head, almond from her navel, pandanus from her heels" }]
+      },
+      {
+        "id": "lightning-eyes",
+        "name": "has eyes that flash like lightning",
+        "inheritability": "none",
+        "notes": "The goddess is red-skinned and her eyes flash like lightning; it is by this beauty that Auriaria, though her brother, is unable to resist her.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), red skin and lightning-flashing eyes" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "kiribati_nei_tituaabine_coconut",
+        "name": "the first coconut palm",
+        "kind": "plant",
+        "role": "the coconut palm (te ben) that grew from Nei Tituaabine's head, source of drink, food and oil",
+        "term": { "value": "te ben", "script": "Latin", "rom": "te ben" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), coconut from her head" }]
+      },
+      {
+        "id": "kiribati_nei_tituaabine_almond",
+        "name": "the first almond tree",
+        "kind": "plant",
+        "role": "the tropical-almond tree that grew from Nei Tituaabine's navel",
+        "term": { "value": "te non", "script": "Latin", "rom": "te non" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), almond from her navel" }]
+      },
+      {
+        "id": "kiribati_nei_tituaabine_pandanus",
+        "name": "the first pandanus",
+        "kind": "plant",
+        "role": "the pandanus (te kaina) that grew from Nei Tituaabine's heels, a staple food and material",
+        "term": { "value": "te kaina", "script": "Latin", "rom": "te kaina" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), pandanus from her heels" }]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "kiribati_auriaria", "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), Nei Tituaabine the wife of Auriaria; their union childless" }], "notes": "Wife of Auriaria; their love bore no children, and at her death the staple trees grew from her grave." },
+      { "kind": "sibling", "personId": "kiribati_auriaria", "sources": [{ "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972), the sister and wife of the giant chief Auriaria" }], "notes": "Sister as well as wife of Auriaria in the central and southern island traditions." }
+    ],
+    "sources": [
+      {
+        "claim": "Nei Tituaabine is the Gilbertese vegetation goddess, a red-skinned anti with lightning-flashing eyes, sister and wife of the giant Auriaria; their union being childless, at her death three staple trees grew from her grave — the coconut from her head, the almond from her navel, and the pandanus from her heels.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands: Early Writings of Sir Arthur Grimble (1972)" },
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Vegetation/tree goddess and deified ancestor; the Gilbertese instance of the 'staple plants from a slain/buried body' motif. vitalStatus 'deceased' as the myth turns on her death and transformation. RECIPROCAL within batch with Auriaria (spouse + sibling). The three trees are entered as materialCulture of kind 'plant' (the staple trees that are her body)."
+  },
+  {
+    "id": "kiribati_tabuariki",
+    "name": {
+      "primary": "Thunderer",
+      "alt": ["Tabuariki", "Taburimai", "Tabu-ariki", "Tabuariki the Thunderer"],
+      "transliterations": { "kiribati": "Tabuariki", "etymology": "Gilbertese, roughly 'sacred chief/lord'; the lord of thunder and lightning, best known of the anti" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 3,
+        "startEvent": "Counted the best known of the anti famous from the earliest times",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tabuariki the best known of the anti" }],
+        "notes": "Lord of thunder and lightning, ruler of wind and rain and a healer."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": { "value": "Tabuariki", "script": "Latin", "rom": "Tabuariki" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tabuariki lord of the thunder" }]
+      },
+      {
+        "sphereId": "lightning",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), lord of lightning who hurls fiery thunderbolts" }]
+      },
+      {
+        "sphereId": "wind-and-rain",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tabuariki rules the winds and the rain" }]
+      },
+      {
+        "sphereId": "healing",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), like all anti he could heal the sick" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl-thunderbolts",
+        "name": "hurls fiery thunderbolts and rolls the thunder when angry",
+        "inheritability": "none",
+        "notes": "Lord of lightning and of the thunder that rolled through the skies when he was angry; the ancestors believed he hurled fiery thunderbolts from the heavens.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tabuariki hurls fiery thunderbolts" }]
+      },
+      {
+        "id": "rule-wind-and-rain",
+        "name": "rules the winds and the rain and heals the sick",
+        "inheritability": "none",
+        "notes": "He governs wind and rain, and like all the anti he can heal the sick; he was the most invoked of the ancestral gods.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989)" }]
+      },
+      {
+        "id": "wrestle-nareau",
+        "name": "wrestles Nareau, who breaks his arm",
+        "inheritability": "none",
+        "notes": "In one myth Nareau provokes the thunder-god Tabuariki to a wrestling match and weakens him by breaking his arm; the contest is between the trickster-creator and the lord of thunder.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Encyclopedia.com, 'Micronesian Religions: Mythic Themes' (Na Areau provokes Tabuariki to wrestle and breaks his arm)" }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "kiribati_nei_tevenei", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tabuariki the Thunderer and his consort Tevene'i of the Meteor" }], "notes": "Husband of Nei Tevenei, 'of the meteor/comet,' his consort among the chief ancestral anti." },
+      { "kind": "enemy", "personId": "kiribati_nareau_younger", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989); Encyclopedia.com, 'Micronesian Religions: Mythic Themes', the wrestling of Na Areau and Tabuariki" }], "notes": "Opponent of Nareau (the Younger / the trickster), who provokes him to wrestle and breaks his arm." }
+    ],
+    "sources": [
+      {
+        "claim": "Tabuariki is the best known of the Gilbertese ancestral anti, the lord of thunder and lightning who hurls fiery thunderbolts and rolls the thunder in anger, ruler of wind and rain and a healer; his consort is Nei Tevenei 'of the meteor', and in myth he is provoked to wrestle by Nareau, who breaks his arm.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" },
+          { "kind": "secondary", "reference": "Grimble, Rosemary. Migrations, Myth and Magic from the Gilbert Islands (1972)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Thunder/lightning deity, the most prominent of the invoked anti. Treated as deity; immortal. RECIPROCAL within batch with Nei Tevenei (spouse). The wrestling-enemy relation toward the existing kiribati_nareau_younger is symmetric and is flagged RECIPROCAL-NEEDED. The variant spelling 'Taburimai' is attested but is sometimes treated as a distinct hero; kept here only as an alt form."
+  },
+  {
+    "id": "kiribati_nei_tevenei",
+    "name": {
+      "primary": "Comet Goddess",
+      "alt": ["Nei Tevenei", "Nei Tewenei", "Tevene'i", "Teveneʻi of the Meteor"],
+      "transliterations": { "kiribati": "Nei Tevenei", "etymology": "Gilbertese female honorific Nei + Tevenei; 'of the meteor/comet', the consort of the Thunderer" }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Kiribati",
+    "primaryTradition": "Kiribati",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 3,
+        "startEvent": "Counted among the anti famous from the earliest times; consort of Tabuariki the Thunderer",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Nei Tevenei among the anti of the earliest times" }],
+        "notes": "The comet/meteor goddess, wife of the thunder-god Tabuariki."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "comets-and-meteors",
+        "contextTag": "lifelong",
+        "term": { "value": "Nei Tevenei", "script": "Latin", "rom": "Nei Tevenei" },
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tabuariki the Thunderer and his consort Tevene'i of the Meteor" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "be-the-comet",
+        "name": "is the comet (meteor) that crosses the sky",
+        "inheritability": "none",
+        "notes": "Named 'of the meteor', she is the comet or shooting-star among the ancestral anti, paired with her husband the thunder-god Tabuariki.",
+        "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), Tevene'i of the Meteor, consort of Tabuariki" }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "kiribati_tabuariki", "sources": [{ "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions (ed. Maude, 1989), the consort of Tabuariki the Thunderer" }], "notes": "Wife of Tabuariki the Thunderer; the comet paired with the thunder among the chief anti." }
+    ],
+    "sources": [
+      {
+        "claim": "Nei Tevenei (Tevene'i 'of the Meteor') is the Gilbertese comet/meteor goddess, counted among the ancestral anti famous from the earliest times and named as the consort of Tabuariki the Thunderer.",
+        "citations": [
+          { "kind": "secondary", "reference": "Grimble, Arthur. Tungaru Traditions: Writings on the Atoll Culture of the Gilbert Islands (ed. H.E. Maude, 1989)" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Comet/meteor goddess, consort of Tabuariki. Attestation is briefer than the other figures (named as Tabuariki's meteor-consort and listed among the earliest anti), so domains/faculties are kept to what is securely recorded. Treated as deity; immortal. RECIPROCAL within batch with Tabuariki (spouse)."
+  }
+]
+```
+
+SOLITARY:
+- kiribati_tabakea — Authored from the Banaban (Ocean Island) recension, a parallel cosmogony to the registered Tarawan line. In that recension Tabakea is the FIRST being and the father of Nareau (with a brother, Na Kaa), which would contradict the already-registered genealogy in which Nareau the Elder is first; therefore Tabakea is deliberately left kinless rather than wired as parent of kiribati_nareau_elder / kiribati_nareau_younger, and his attested brother Na Kaa is not present in the corpus. Cited reason: Grimble & Maude, The Book of Banaba (1994); Grimble, Tungaru Traditions (ed. Maude, 1989). The Tabakea-as-father-of-Nareau tradition is recorded in his notes.
+
+RECIPROCAL-NEEDED (add to existing corpus figures):
+- kiribati_nareau_younger sibling kiribati_riiki  (add reciprocal 'sibling' relation to the existing figure kiribati_nareau_younger: Riiki the eel is a child of Na Atibu, hence brother of Nareau the Younger — Grimble, Tungaru Traditions, ed. Maude 1989).
+- kiribati_nareau_younger sibling kiribati_na_kika  (add reciprocal 'sibling' relation to the existing figure kiribati_nareau_younger: Na Kika the octopus is a child of Na Atibu, hence brother of Nareau the Younger — Grimble, Tungaru Traditions, ed. Maude 1989).
+- kiribati_nareau_younger enemy kiribati_tabuariki  (add reciprocal 'enemy' relation to the existing figure kiribati_nareau_younger: Nareau the Younger provokes the thunder-god Tabuariki to wrestle and breaks his arm — Grimble, Tungaru Traditions, ed. Maude 1989; Encyclopedia.com, 'Micronesian Religions: Mythic Themes').
