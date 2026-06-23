@@ -38142,6 +38142,18 @@ const ERA_ORDER = {
   // cultural revival from the 1980s, Pacific-wide indigenous renaissance).
   'Polynesian': ['mythic-prehistoric', 'exploration', 'pre-european-contact',
                  'european-contact', 'colonial', 'modern'],
+  // Mangaian (Cook Islands — Mangaia): the cosmogonic-mythic record collected by
+  // the missionary William Wyatt Gill, Myths and Songs from the South Pacific
+  // (London, 1876) and Historical Sketches of Savage Life in Polynesia (1880).
+  // primordial = the cosmogony of Avaiki (the hollow-coconut underworld) with the
+  // primal mother Vari-ma-te-takere at its base and her plucked children (Vatea,
+  // Tinirau, etc.); mythic = the developed pantheon and divine narratives (the
+  // twins Rongo and Tangaroa, the tribal gods, Ina, Miru); mythic-prehistoric =
+  // the demigod / culture-hero stratum bridging the gods and the human ariki
+  // lineages (Maui the fire-bringer and sun-snarer, Ngaru). These three keys are
+  // the same primordial / mythic / mythic-prehistoric vocabulary already used by
+  // the cognate East-Polynesian traditions in this registry.
+  'Mangaian': ['primordial', 'mythic', 'mythic-prehistoric'],
 
   // Welsh: mabinogion-mythological (the legendary-mythic time of the
   // Four Branches and the wider Mabinogion stories; Pryderi's reign in
@@ -38415,6 +38427,9 @@ const ERA_ORDER = {
   'Tongan': ['primordial', 'mythic', 'mythic-prehistoric'],
   'Samoan': ['primordial', 'mythic', 'mythic-prehistoric'],
   'Rapa Nui': ['primordial', 'mythic', 'mythic-prehistoric'],
+  'Marquesan': ['primordial', 'mythic', 'mythic-prehistoric'],
+  'Mangaian': ['primordial', 'mythic', 'mythic-prehistoric'],
+  'Tuamotuan': ['primordial', 'mythic', 'mythic-prehistoric'],
   'Mari': ['mythic'],
   'Marind': ['primordial'],
   'Marshallese': ['primordial', 'mythic-age'],
@@ -39710,6 +39725,21 @@ const ERA_DATES = {
     'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1864, textualEnd: 2010, precision: 'cosmic' },
     'mythic':                { mythicStart: -2000, mythicEnd: -750, textualStart: 1864, textualEnd: 2010, precision: 'era-only' },
     'mythic-prehistoric':    { mythicStart: -750, mythicEnd: 1300, textualStart: 1864, textualEnd: 2010, precision: 'era-only' },
+  },
+  'Marquesan': {
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1860, textualEnd: 2010, precision: 'cosmic' },
+    'mythic':                { mythicStart: -2000, mythicEnd: -750, textualStart: 1860, textualEnd: 2010, precision: 'era-only' },
+    'mythic-prehistoric':    { mythicStart: -750, mythicEnd: 1300, textualStart: 1860, textualEnd: 2010, precision: 'era-only' },
+  },
+  'Mangaian': {
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1876, textualEnd: 2010, precision: 'cosmic' },
+    'mythic':                { mythicStart: -2000, mythicEnd: -750, textualStart: 1876, textualEnd: 2010, precision: 'era-only' },
+    'mythic-prehistoric':    { mythicStart: -750, mythicEnd: 1300, textualStart: 1876, textualEnd: 2010, precision: 'era-only' },
+  },
+  'Tuamotuan': {
+    'primordial':            { mythicStart: null, mythicEnd: null, textualStart: 1930, textualEnd: 2010, precision: 'cosmic' },
+    'mythic':                { mythicStart: -2000, mythicEnd: -750, textualStart: 1930, textualEnd: 2010, precision: 'era-only' },
+    'mythic-prehistoric':    { mythicStart: -750, mythicEnd: 1300, textualStart: 1930, textualEnd: 2010, precision: 'era-only' },
   },
   'Mari': {
     'mythic':                { mythicStart: null, mythicEnd: null, textualStart: 1775, textualEnd: 2010, precision: 'cosmic' },
