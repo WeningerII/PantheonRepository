@@ -1,0 +1,844 @@
+Ainu kamuy pantheon — figure-authoring transcript
+==================================================
+
+Tradition: Ainu (Hokkaido / Sakhalin / Kuril "Ainu Mosir"). Registered era keys: primordial, legendary.
+
+Research scope
+--------------
+The Pantheon Registry already holds five Ainu figures: Kamuy Fuchi the hearth-fire goddess
+(ainu_kamuy_fuchi), Kim-un Kamuy the bear/mountain god (ainu_kim_un_kamuy), Kotan-kar-kamuy
+the land/village creator (ainu_kotan_kar_kamuy), Okikurmi the culture-hero (ainu_okikurmi), and
+Repun Kamuy the orca/sea god (ainu_repun_kamuy). The task was to add any further well-attested,
+INDIVIDUATED core kamuy still missing — and to enrich each with domains, faculties (powers) and
+materialCulture (objects) as fully as the sources attest.
+
+The Ainu kamuy system is documented in three foundational ethnographies — John Batchelor, The
+Ainu and Their Folk-Lore (1901) and his An Ainu–English–Japanese Dictionary (1905); N. G. Munro,
+Ainu Creed and Cult (1962); and Carl Etter, Ainu Folklore (1949) — and compiled with named,
+per-deity entries in Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), the
+standard reference that the modern encyclopaedic accounts of these kamuy derive from. Donald
+Philippi, Songs of Gods, Songs of Humans (1979) translates the kamuy-yukar (god-epics) in which
+several of these deities speak in the first person.
+
+AUTHORED (six firmly-attested, individuated kamuy)
+  * CHUP KAMUY — the luminary deity of sun and moon. Ainu "chup" = luminary; tokap-chup ("day
+    luminary") = the sun, kunne-chup ("black/night luminary") = the moon (Batchelor, Dictionary,
+    1905). The widely-recorded aetiological myth has the moon-deity, unable to bear the sight of
+    human misconduct by night, beg her sibling to exchange places, so that she became the sun.
+    Distinct from every existing figure → AUTHORED as ainu_chup_kamuy.
+  * WAKKA-US KAMUY — goddess of fresh water (wakka "water" + us "possessing" + kamuy), also
+    Pet-ru-ush-mat / Petorush-mat ("watering-place woman"). Ashkenazi, Handbook, p. 283. In the
+    famine-feast kamuy-yukar she is petitioned by Okikurmi and, by dancing and singing, gathers
+    the kamuy of the rapids, fish, game, the hunt-goddess Hasinaw-uk and the land-overseer
+    Kotan-kar-kamuy to win back the withheld salmon and deer → AUTHORED as ainu_wakka_us_kamuy,
+    with relations to ainu_okikurmi, ainu_kotan_kar_kamuy and ainu_hash_inau_uk_kamuy.
+  * HASH-INAU-UK KAMUY — goddess of the hunt (the kamuy "who holds the hunting-inau"); also
+    Isosange-mat ("game-bringing-down woman") and Kamuy Paseguru ("potent kamuy"). Born from the
+    fire-drill and named a sister of Kamuy Fuchi the hearth-goddess (and of Shiramba Kamuy, the
+    vegetation god). Guides hunters to game and mediates with the masters of the animals →
+    AUTHORED as ainu_hash_inau_uk_kamuy, sibling of ainu_kamuy_fuchi.
+  * YUSHKEP KAMUY — the spider goddess (yushkep "spider"); also Ashketanne-mat ("long-fingered
+    woman"). Ashkenazi, Handbook, p. 294. Tutelary familiar of female shamans and helper at
+    childbirth, her long fingers drawing out the infant; in her kamuy-yukar she escapes the
+    demon-suitor Poronitne Kamuy by turning into a reed and setting her servant-spirits on him
+    → AUTHORED as ainu_yushkep_kamuy.
+  * KANNA KAMUY — the thunder/storm god (kanna "thunder; that which is above"), recorded in
+    flying-dragon form with the lesser storm-kamuy as his children. In the most common account
+    he accompanies Kamuy Fuchi in her descent from heaven and is named among the parents of the
+    fire-goddess; the existing corpus figure ainu_okikurmi already records the culture-hero as
+    "born of thunder-god Kanna-kamuy and the elm spirit" → AUTHORED as ainu_kanna_kamuy, parent
+    of ainu_okikurmi (RECIPROCAL-NEEDED) with a cited tie to ainu_kamuy_fuchi.
+  * PAUCHI KAMUY — the demon of madness (pawci/pauchi), born of the Willow-Soul River in Pikun
+    Kando (the high heaven) and descending to afflict humans with insanity, food-poisoning,
+    seizures and frenzied dancing. A specific, named, individuated malevolent kamuy (not the
+    generic nitne-kamuy spirit-class) → AUTHORED as ainu_pauchi_kamuy.
+
+VERIFIED-AND-REJECTED
+  * AEOINA KAMUY / AINURAKKUR — NOT authored: these are not distinct from the existing
+    ainu_okikurmi, which already carries "Ae-oyna-kamuy", "Aeoina Kamuy" and "Ainurakkur" among
+    its alt-names. Confirmed by inspecting the corpus entry directly.
+  * NITNE KAMUY — NOT authored: a spirit-CLASS (the "evil kamuy") with no single named
+    individual; the madness-demon Pauchi was authored in its place per the task's "or" clause.
+
+Key sources
+  - John Batchelor, The Ainu and Their Folk-Lore (London: Religious Tract Society, 1901).
+  - John Batchelor, An Ainu–English–Japanese Dictionary (Tokyo, 1905) — chup / tokap-chup /
+    kunne-chup, wakka, kanna, pauchi, yushkep.
+  - N. G. Munro, Ainu Creed and Cult (London: Routledge & Kegan Paul, 1962).
+  - Carl Etter, Ainu Folklore: Traditions and Culture of the Vanishing Aborigines of Japan
+    (Chicago: Wilcox & Follett, 1949).
+  - Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003) — per-deity
+    Ainu entries, incl. Waka-ush-kamui (p. 283) and Yushkep Kamui (p. 294).
+  - Donald L. Philippi, Songs of Gods, Songs of Humans: The Epic Tradition of the Ainu
+    (Princeton / Tokyo, 1979) — translations of the kamuy-yukar.
+
+```json
+[
+  {
+    "id": "ainu_chup_kamuy",
+    "name": {
+      "primary": "Chup Kamuy",
+      "alt": ["Chup-kamui", "Tokap-chup Kamuy", "Kunne-chup Kamuy", "Tokapcup-kamuy", "Kunnecup-kamuy"],
+      "transliterations": {
+        "ainu": "Cup kamuy (tokap-cup / kunne-cup)",
+        "etymology": "Ainu cup 'luminary, heavenly body' (used of sun, moon and month); tokap-cup 'day luminary' = the sun, kunne-cup 'black/night luminary' = the moon — Batchelor, An Ainu–English–Japanese Dictionary (1905)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "set-in-the-sky-as-sun-and-moon",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), entries on the Ainu sun/moon kamuy (cup)" }
+        ],
+        "notes": "The luminary-kamuy of the Ainu, embodied as the sun (tokap-cup) and the moon (kunne-cup); in the aetiological myth the moon-deity, unable to bear the sight of human wrongdoing by night, exchanges places with the sun and so becomes the daytime luminary."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "term": { "value": "tokap-cup", "script": "Ainu (Latin)", "rom": "tokap-cup" },
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905): cup 'luminary', tokap-cup 'the sun'" }
+        ]
+      },
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "term": { "value": "kunne-cup", "script": "Ainu (Latin)", "rom": "kunne-cup" },
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905): kunne-cup 'the moon' (lit. black/night luminary)" }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), on the Ainu luminary-kamuy in the heavens" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "give-light-by-day-and-night",
+        "name": "Light the world as the sun by day and the moon by night",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905): cup as the luminary of both day (tokap-cup) and night (kunne-cup)" }
+        ],
+        "notes": "The single luminary-kamuy is manifest as both heavenly lights of the Ainu sky."
+      },
+      {
+        "id": "exchange-day-for-night",
+        "name": "Exchange places between sun and moon to avoid the sight of human wrongdoing",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), on the Ainu sun-and-moon switching myth" }
+        ],
+        "notes": "In the best-known Chup-kamuy myth the moon-deity, sickened by the misconduct she sees at night, begs to swap with the sun and so takes the daytime sky."
+      },
+      {
+        "id": "watch-over-human-conduct",
+        "name": "Look down upon and witness the deeds of humankind",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): the moon-deity 'could not bear to look down' on human misconduct" }
+        ],
+        "notes": "The luminary's gaze over human affairs is the moral hinge of the switching myth."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ainu-chup-inau",
+        "name": "Inau (whittled prayer-sticks) offered to the luminary",
+        "kind": "ritual-object",
+        "role": "Inau and sake libations are the standard Ainu offering by which any kamuy, including the sun and moon, is addressed",
+        "term": { "value": "inaw", "script": "Ainu (Latin)", "rom": "inaw" },
+        "sources": [
+          { "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962), on inau and libation as the universal mode of address to the kamuy" }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905), s.v. cup, tokap-cup, kunne-cup" },
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003)" },
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Chup Kamuy is the Ainu luminary-deity, the kamuy of the heavenly lights: as tokap-cup 'the day luminary' she is the sun and as kunne-cup 'the night luminary' the moon. The dictionary of Batchelor records cup as the word for sun, moon and month alike. The classic aetiological narrative — that the moon-deity, unwilling to witness human wrongdoing in the dark, exchanged places with the sun — is recorded variously with the two luminaries as siblings (in the switch) and, in the modern tabulation, as the sun-goddess Tokapcup and the moon-god Kunnecup; the figure is authored here as the unified luminary-kamuy with no attested divine parent. Flagged SOLITARY: the sources give the sun/moon pairing as two aspects/partners of the one luminary rather than a kinship to the rest of the pantheon."
+  },
+  {
+    "id": "ainu_wakka_us_kamuy",
+    "name": {
+      "primary": "Wakka-us Kamuy",
+      "alt": ["Wakka-ush-kamuy", "Waka-ush-kamui", "Pet-ru-ush-mat", "Petorush-mat", "Watering-place Woman"],
+      "transliterations": {
+        "ainu": "Wakka-us kamuy / Pet-ru-us-mat",
+        "etymology": "wakka 'water' + us 'possessing, having' + kamuy 'deity' = 'the deity possessed of water'; the by-name Pet-ru-us-mat = 'woman of the watering-place / river-path' — Batchelor, Dictionary (1905); Ashkenazi, Handbook (2003)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "set-over-the-fresh-waters",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 283 (Waka-ush-kamui)" }
+        ],
+        "notes": "Goddess of fresh water, overseeing the springs, streams and river-valleys around which Ainu settlements (kotan) were built."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fresh-water",
+        "contextTag": "lifelong",
+        "term": { "value": "wakka", "script": "Ainu (Latin)", "rom": "wakka" },
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 283: goddess responsible for all fresh water" }
+        ]
+      },
+      {
+        "sphereId": "rivers",
+        "contextTag": "lifelong",
+        "term": { "value": "pet", "script": "Ainu (Latin)", "rom": "pet" },
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901), on the kamuy of streams and watering-places" }
+        ]
+      },
+      {
+        "sphereId": "springs",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 283: Pet-ru-ush-mat, 'watering-place woman'" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "govern-fresh-water",
+        "name": "Govern and keep pure the springs, streams and river-valleys",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 283" }
+        ],
+        "notes": "She is responsible for all fresh water and is invoked before fishing or river travel."
+      },
+      {
+        "id": "intercede-with-the-kamuy",
+        "name": "Intercede with other kamuy on behalf of humans",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 283: sympathetic to humans, petitioned to plead their case before other kamuy" }
+        ],
+        "notes": "A sympathetic mediator who carries human petitions up to the assembled kamuy."
+      },
+      {
+        "id": "end-famine-by-feast",
+        "name": "End famine by hosting a feast of the kamuy to release withheld game and fish",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast, in Donald Philippi, Songs of Gods, Songs of Humans (1979)" }
+        ],
+        "notes": "Petitioned by Okikurmi, she gathers the kamuy of the rapids, of fish and of game, the hunt-goddess Hasinaw-uk and the land-overseer Kotan-kar-kamuy, and through dancing, singing and persuasion wins back the salmon and deer that the offended kamuy had locked away."
+      },
+      {
+        "id": "dance-and-sing",
+        "name": "Dance and sing as a skilled long-haired entertainer of the gods",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 283: portrayed as a long-haired woman, a skilled dancer and singer" }
+        ],
+        "notes": "Her dancing and singing are the means by which she sways the other kamuy at the feast."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ainu-water-inau",
+        "name": "Riverbank inau and sake libation for the water-blessing",
+        "kind": "ritual-object",
+        "role": "Whittled prayer-sticks set at the riverbank and sake poured to invoke her benevolence before fishing or river travel",
+        "term": { "value": "inaw", "script": "Ainu (Latin)", "rom": "inaw" },
+        "sources": [
+          { "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962), on inau and sake libation in Ainu water-blessing rites" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "ally",
+        "personId": "ainu_okikurmi",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — the culture-hero Okikurmi petitions Wakka-us Kamuy to act for the starving humans, and she answers by convening the feast of the kamuy."
+      },
+      {
+        "kind": "ally",
+        "personId": "ainu_kotan_kar_kamuy",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — the land-overseer Kotan-kar-kamuy is among the kamuy Wakka-us Kamuy gathers to her feast to relieve the famine."
+      },
+      {
+        "kind": "ally",
+        "personId": "ainu_hash_inau_uk_kamuy",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "Reciprocal of ainu_hash_inau_uk_kamuy.ally — the hunt-goddess Hasinaw-uk joins Wakka-us Kamuy's feast of the kamuy to secure the release of the game."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003), p. 283 (Waka-ush-kamui)" },
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901)" },
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast, in Donald Philippi, Songs of Gods, Songs of Humans (1979)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Wakka-us Kamuy ('the deity possessed of water'), also called Pet-ru-ush-mat 'watering-place woman', is the Ainu goddess of fresh water — of the springs, streams and river-valleys on which the kotan depended. Ashkenazi (Handbook of Japanese Mythology, p. 283) describes her as a long-haired woman, a skilled dancer and singer, sympathetic to humankind and petitioned to intercede with other kamuy. The famine-feast kamuy-yukar is her signature myth: summoned by Okikurmi, she convenes the kamuy of the rapids, fish and game, the hunt-goddess Hasinaw-uk and the land-overseer Kotan-kar-kamuy, and by her dancing, singing and pleading wins back the salmon and deer that the offended kamuy had withheld because the humans had not observed the proper killing-rites. Authored as a deity with no attested divine parent."
+  },
+  {
+    "id": "ainu_hash_inau_uk_kamuy",
+    "name": {
+      "primary": "Hash-inau-uk Kamuy",
+      "alt": ["Hasinaw-uk-kamuy", "Hashinau-uk Kamuy", "Isosange-mat", "Kamuy Paseguru", "Hayipe"],
+      "transliterations": {
+        "ainu": "Hasinaw-uk kamuy",
+        "etymology": "has(i) 'brushwood/willow used for the hunting-inau' + inaw 'whittled prayer-stick' + uk 'to take, hold' = 'the kamuy who holds the hunting-inau'; by-names Isosange-mat 'game-bringing-down woman' and Kamuy Paseguru 'potent kamuy' — Ashkenazi, Handbook (2003)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "born-from-the-fire-drill",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), on Hasinaw-uk-kamuy born from the fire-producing drill" }
+        ],
+        "notes": "The hunt-goddess is said to have been born from the fire-drill, which links her to the hearth-fire goddess Kamuy Fuchi as a sister."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "hunting",
+        "contextTag": "lifelong",
+        "term": { "value": "iso", "script": "Ainu (Latin)", "rom": "iso" },
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): the kamuy of the hunt, protector of hunters" }
+        ]
+      },
+      {
+        "sphereId": "wild-game",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901), on the goddess who brings game to the hunter" }
+        ]
+      },
+      {
+        "sphereId": "fishing",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): also the deity of the full catch for fishermen" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guide-hunters-to-game",
+        "name": "Appear to a worthy hunter and show him where the game is",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): she appears to a good hunter to reveal the best place to find game" }
+        ],
+        "notes": "She protects hunters and leads the deserving to their quarry."
+      },
+      {
+        "id": "mediate-with-masters-of-game",
+        "name": "Mediate between humans and the masters of the game animals",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): intermediary between humans and the owners of the animals" }
+        ],
+        "notes": "She intercedes with the animal-masters so that deer and salmon are released to the people."
+      },
+      {
+        "id": "relieve-famine",
+        "name": "Free the game from concealment to end famine",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "In the famine-feast she is among the kamuy who act to restore the flow of deer and salmon to the starving Ainu."
+      },
+      {
+        "id": "grant-the-full-catch",
+        "name": "Grant the fisherman a full catch",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): deity of the full catch for fishermen" }
+        ],
+        "notes": "Her favour extends to the success of the fishery as well as the hunt."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ainu-hunting-inau",
+        "name": "Hunting inau (the prayer-stick she holds)",
+        "kind": "ritual-object",
+        "role": "The willow/brushwood inau whittled and offered to secure her aid in the hunt — the object that gives the goddess her name (hash-inau-uk, 'who holds the hunting-inau')",
+        "term": { "value": "hasinaw", "script": "Ainu (Latin)", "rom": "hasinaw" },
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), on the hunting-inau that names Hasinaw-uk-kamuy" }
+        ]
+      },
+      {
+        "id": "ainu-hunt-fire-drill",
+        "name": "Fire-drill from which she was born",
+        "kind": "implement",
+        "role": "The fire-producing drill named as the goddess's origin, tying her to the hearth-fire",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): born from the fire-producing drill" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "ainu_kamuy_fuchi",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): Hasinaw-uk-kamuy said to be a sister of Kamuy-huci, the hearth goddess" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — born of the fire-drill, the hunt-goddess is named a sister of the hearth-fire goddess Kamuy Fuchi (ainu_kamuy_fuchi)."
+      },
+      {
+        "kind": "ally",
+        "personId": "ainu_wakka_us_kamuy",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of the famine-feast (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "Reciprocal of ainu_wakka_us_kamuy.ally — Hasinaw-uk joins the water-goddess's feast of the kamuy to secure the release of the game in time of famine."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003)" },
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901)" },
+          { "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962), on the inau-cult of the hunt" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Hash-inau-uk Kamuy — 'the kamuy who holds the hunting-inau', also Isosange-mat ('game-bringing-down woman') and Kamuy Paseguru ('potent kamuy') — is the Ainu goddess of the hunt, a deity of the first importance to a hunting-fishing people. Ashkenazi (Handbook of Japanese Mythology) records that she was born from the fire-producing drill and is named a sister of Kamuy-huci the hearth-goddess (and of Shiramba Kamuy the vegetation-god); that she protects hunters and appears to the worthy to show them the game; that she is also the deity of the full catch; and that she mediates between humans and the masters of the animals, freeing the deer and salmon in time of famine. Authored as a deity whose attested kinship is the sibling-bond to Kamuy Fuchi."
+  },
+  {
+    "id": "ainu_yushkep_kamuy",
+    "name": {
+      "primary": "Yushkep Kamuy",
+      "alt": ["Yushkep-kamuy", "Yushkep Kamui", "Ashketanne-mat", "Long-fingered Woman"],
+      "transliterations": {
+        "ainu": "Yuskep kamuy / Asketanne-mat",
+        "etymology": "yuskep 'spider'; the by-name Asketanne-mat = aske 'finger' + tanne 'long' + mat 'woman' = 'the long-fingered woman' — Ashkenazi, Handbook (2003)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "female",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "named-spider-goddess-and-shamans-helper",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 294 (Yushkep Kamui)" }
+        ],
+        "notes": "The goddess of spiders, tutelary familiar of the female shamans and helper at childbirth."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "spiders",
+        "contextTag": "lifelong",
+        "term": { "value": "yuskep", "script": "Ainu (Latin)", "rom": "yuskep" },
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 294: the kamuy of the spiders" }
+        ]
+      },
+      {
+        "sphereId": "childbirth",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 294: called upon by women in childbirth" }
+        ]
+      },
+      {
+        "sphereId": "shamanism",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 294: the familiar of female shamans" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "aid-childbirth",
+        "name": "Draw the infant safely out at birth with her long fingers",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 294: her long fingers let her safely extract the baby" }
+        ],
+        "notes": "As Ashketanne-mat, the 'long-fingered woman', she is invoked by women in labour."
+      },
+      {
+        "id": "serve-as-shamanic-familiar",
+        "name": "Serve as the tutelary familiar of female shamans",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), p. 294" }
+        ],
+        "notes": "She is the helping-spirit on whom the women shamans call."
+      },
+      {
+        "id": "shape-shift-to-reed",
+        "name": "Transform herself into a reed to escape and trap a pursuer",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of Yushkep Kamuy and the demon Poronitne (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "Warned of the demon-suitor Poronitne Kamuy, she turns into a reed and sets her servant-spirits in ambush."
+      },
+      {
+        "id": "command-servant-spirits",
+        "name": "Command her servant-spirits to ambush an enemy",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of Yushkep Kamuy and the demon Poronitne (Philippi, Songs of Gods, Songs of Humans, 1979)" }
+        ],
+        "notes": "Her household-spirits — chestnut-boy, needle-boy, hornet-boy, viper-boy, and mortar-and-pestle — fall on the demon in turn and drive him off, wounded, for good."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ainu-yushkep-inau",
+        "name": "Childbirth inau offered to the spider goddess",
+        "kind": "ritual-object",
+        "role": "Whittled prayer-sticks made to request her help in a safe delivery, of the kind the Ainu fashioned for childbirth as well as the hunt",
+        "term": { "value": "inaw", "script": "Ainu (Latin)", "rom": "inaw" },
+        "sources": [
+          { "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962), on inau made to request assistance in childbirth" }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003), p. 294 (Yushkep Kamui)" },
+          { "kind": "secondary", "reference": "N. G. Munro, Ainu Creed and Cult (1962)" },
+          { "kind": "primary", "reference": "Ainu kamuy-yukar of Yushkep Kamuy and the demon Poronitne, in Donald Philippi, Songs of Gods, Songs of Humans (1979)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Yushkep Kamuy is the Ainu spider-goddess, also called Ashketanne-mat, 'the long-fingered woman'. Ashkenazi (Handbook of Japanese Mythology, p. 294) records her as the benevolent familiar of the female shamans, called upon by women at childbirth because her long fingers can safely draw out the infant. Her kamuy-yukar tells how, warned by a friendly deity of the demon-suitor Poronitne Kamuy who lived beyond the horizon, she turned herself into a reed and set her servant-spirits — chestnut-boy, needle-boy, hornet-boy, viper-boy and the mortar-and-pestle — to ambush him, wounding him so that he fled and was never heard of again. Flagged SOLITARY: the sources give her no divine parent or consort, only her servant-spirits and the demon she defeats; she is authored as an independent kamuy."
+  },
+  {
+    "id": "ainu_kanna_kamuy",
+    "name": {
+      "primary": "Kanna Kamuy",
+      "alt": ["Kanna-kamuy", "Kamui Kanna", "Thunder God", "Dragon God"],
+      "transliterations": {
+        "ainu": "Kanna kamuy",
+        "etymology": "Ainu kanna 'thunder; that which is on high, the upper' + kamuy 'deity' = 'the thunder/sky god' — Batchelor, Dictionary (1905)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "set-as-the-thunder-and-storm-god",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901), on Kanna Kamuy the thunder-deity" }
+        ],
+        "notes": "God of thunder, lightning and storm, recorded in flying-dragon form, with the lesser storm-kamuy as his children."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "thunder",
+        "contextTag": "lifelong",
+        "term": { "value": "kanna", "script": "Ainu (Latin)", "rom": "kanna" },
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905): kanna 'thunder; above, on high'" }
+        ]
+      },
+      {
+        "sphereId": "storms",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), on the Ainu thunder/storm kamuy and his storm-children" }
+        ]
+      },
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901), on the thunder-god of the upper air" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "hurl-thunder-and-lightning",
+        "name": "Hurl the thunder and lightning across the sky",
+        "inheritability": "partial",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901): Kanna Kamuy, the thunder-god" }
+        ],
+        "notes": "Inheritability marked partial: his children are themselves the lesser storm-kamuy who wield the storm after him."
+      },
+      {
+        "id": "take-dragon-form",
+        "name": "Fly across the heavens in the form of a dragon",
+        "inheritability": "partial",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): Kanna and his offspring depicted in flying-dragon form" }
+        ],
+        "notes": "He and his offspring take the flying-dragon shape, by which he is at times conflated with the serpent-kamuy."
+      },
+      {
+        "id": "father-the-storm-kamuy",
+        "name": "Father the lesser storm-kamuy who ride the clouds",
+        "inheritability": "full",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): his children are the lesser storm deities, each on its own cloud" }
+        ],
+        "notes": "The storm-kamuy that ride the individual clouds are reckoned his children."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ainu-kanna-cloud",
+        "name": "The storm-cloud ridden by the thunder-kamuy",
+        "kind": "vehicle",
+        "role": "The cloud upon which the thunder-god and each of his storm-children ride across the sky",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): the storm-kamuy live on or ride individual clouds" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "parent",
+        "personId": "ainu_okikurmi",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901): the culture-hero born of the thunder-god Kanna-kamuy and the elm spirit" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — the existing corpus figure ainu_okikurmi records the culture-hero as 'born of thunder-god Kanna-kamuy and the elm spirit'; Kanna Kamuy is therefore his father."
+      },
+      {
+        "kind": "ally",
+        "personId": "ainu_kamuy_fuchi",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): in the common account Kamuy-huci descends from heaven accompanied by Kanna Kamuy, who is also named among the parents of the fire-goddess" }
+        ],
+        "notes": "RECIPROCAL-NEEDED — Kanna Kamuy accompanies the hearth-goddess Kamuy Fuchi (ainu_kamuy_fuchi) in her descent from the heavens and is, in some traditions, named among her parents."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901)" },
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905), s.v. kanna" },
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Kanna Kamuy is the Ainu god of thunder, lightning and storm — kanna meaning 'thunder' and 'that which is on high'. He is recorded in flying-dragon form (whence his conflation with the serpent/dragon kamuy), and the lesser storm-kamuy, each riding its own cloud, are reckoned his children. In the common cosmogonic account he accompanies Kamuy Fuchi the hearth-goddess in her descent from heaven and is named among her parents; and the existing corpus already ties him to the culture-hero, whose entry (ainu_okikurmi) records Okikurmi as 'born of thunder-god Kanna-kamuy and the elm spirit'. He is authored here as a deity with no attested divine parent of his own."
+  },
+  {
+    "id": "ainu_pauchi_kamuy",
+    "name": {
+      "primary": "Pauchi Kamuy",
+      "alt": ["Pawci-kamuy", "Pauchi Kamui", "Demon of Madness"],
+      "transliterations": {
+        "ainu": "Pawci kamuy",
+        "etymology": "Ainu pawci / pauchi, the demon of madness; kamuy here in its malevolent sense ('nitne kamuy', evil spirit) — Batchelor, Dictionary (1905)"
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Ainu",
+    "primaryTradition": "Ainu",
+    "sex": "male",
+    "vitalStatus": "living",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "born-of-the-willow-soul-river-in-pikun-kando",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003), on Pauchi Kamuy born of the Willow-Soul River in Pikun Kando" }
+        ],
+        "notes": "The madness-demon is born of the Willow-Soul River in Pikun Kando, the high heaven, and descends to earth to afflict humankind."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "madness",
+        "contextTag": "lifelong",
+        "term": { "value": "pawci", "script": "Ainu (Latin)", "rom": "pawci" },
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): Pauchi Kamuy, the kamuy of insanity" }
+        ]
+      },
+      {
+        "sphereId": "disease",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901), on the demons of sickness afflicting the Ainu" }
+        ]
+      },
+      {
+        "sphereId": "evil-spirits",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, An Ainu–English–Japanese Dictionary (1905), on pauchi among the nitne-kamuy (evil spirits)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "inflict-insanity",
+        "name": "Strike humans with insanity and frenzied dancing",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): descends to plague humanity with insanity and frenzied dancing" }
+        ],
+        "notes": "Epidemics of the frenzied dancing were said to have destroyed whole villages in the late nineteenth century."
+      },
+      {
+        "id": "cause-sickness",
+        "name": "Cause stomach ailments, food-poisoning and seizures",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): brings stomach ailments, food poisoning and seizures" }
+        ],
+        "notes": "Beyond madness he is blamed for a range of bodily afflictions."
+      },
+      {
+        "id": "descend-from-heaven-to-afflict",
+        "name": "Descend from the high heaven to plague humankind",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford, 2003): born of the Willow-Soul River in Pikun Kando, he descended to earth" }
+        ],
+        "notes": "His origin in Pikun Kando (high heaven) and descent to earth are the frame of his myth."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "ainu-exorcism-inau",
+        "name": "Apotropaic inau and charms against the madness-demon",
+        "kind": "ritual-object",
+        "role": "Whittled prayer-sticks and protective charms set up to drive off the disease- and madness-demons (nitne kamuy) such as Pauchi",
+        "term": { "value": "inaw", "script": "Ainu (Latin)", "rom": "inaw" },
+        "sources": [
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901), on inau and charms used to repel the demons of sickness" }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003)" },
+          { "kind": "secondary", "reference": "John Batchelor, The Ainu and Their Folk-Lore (1901)" },
+          { "kind": "secondary", "reference": "Carl Etter, Ainu Folklore: Traditions and Culture of the Vanishing Aborigines of Japan (1949)" }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Pauchi Kamuy (Pawci-kamuy) is the Ainu demon of madness — a specific, named, individuated malevolent kamuy (one of the nitne-kamuy, the 'evil spirits') rather than the spirit-class itself. He is born of the Willow-Soul River in Pikun Kando, the high heaven, and descends to earth to afflict humankind with insanity, stomach ailments, food-poisoning, seizures and frenzied dancing; epidemics of the dancing-frenzy were said to have wiped out whole villages in the late nineteenth century. Authored as a (malevolent) deity with no attested divine parent. Flagged SOLITARY: his only stated origin is the Willow-Soul River, with no parent, spouse or sibling kamuy named."
+  }
+]
+```
+
+SOLITARY: ainu_chup_kamuy — the luminary-deity is given only as the sun/moon pair (two aspects/partners of one kamuy), with no kinship to the wider pantheon attested (Batchelor, Dictionary, 1905; Ashkenazi, Handbook of Japanese Mythology, 2003).
+SOLITARY: ainu_yushkep_kamuy — the spider-goddess is given no divine parent, spouse or sibling in the sources, only her servant-spirits and the demon-suitor Poronitne she defeats (Ashkenazi, Handbook, p. 294; Philippi, Songs of Gods, Songs of Humans, 1979).
+SOLITARY: ainu_pauchi_kamuy — the madness-demon's only stated origin is the Willow-Soul River in Pikun Kando, with no parent, spouse or sibling kamuy named (Ashkenazi, Handbook of Japanese Mythology, 2003; Batchelor, The Ainu and Their Folk-Lore, 1901).
+
+RECIPROCAL-NEEDED: ainu_okikurmi ally ainu_wakka_us_kamuy  (add reciprocal ally link to the existing figure ainu_okikurmi: in the famine-feast kamuy-yukar Okikurmi petitions the water-goddess Wakka-us Kamuy, who convenes the kamuy to relieve the famine — Philippi, Songs of Gods, Songs of Humans, 1979)
+RECIPROCAL-NEEDED: ainu_kotan_kar_kamuy ally ainu_wakka_us_kamuy  (add reciprocal ally link to the existing figure ainu_kotan_kar_kamuy: the land-overseer is among the kamuy Wakka-us Kamuy gathers to the famine-feast — Philippi, Songs of Gods, Songs of Humans, 1979)
+RECIPROCAL-NEEDED: ainu_kamuy_fuchi sibling ainu_hash_inau_uk_kamuy  (add reciprocal sibling link to the existing figure ainu_kamuy_fuchi: the hunt-goddess Hasinaw-uk, born of the fire-drill, is named a sister of the hearth-goddess Kamuy Fuchi — Ashkenazi, Handbook of Japanese Mythology, 2003)
+RECIPROCAL-NEEDED: ainu_okikurmi parent ainu_kanna_kamuy  (the culture-hero Okikurmi is recorded as the child/son of the thunder-god Kanna Kamuy; add the reciprocal child-relation from ainu_okikurmi to ainu_kanna_kamuy — Batchelor, The Ainu and Their Folk-Lore, 1901, and the existing ainu_okikurmi notes)
+RECIPROCAL-NEEDED: ainu_kamuy_fuchi ally ainu_kanna_kamuy  (add reciprocal ally link to the existing figure ainu_kamuy_fuchi: Kanna Kamuy accompanies Kamuy Fuchi in her descent from heaven and is named among her parents — Ashkenazi, Handbook of Japanese Mythology, 2003)

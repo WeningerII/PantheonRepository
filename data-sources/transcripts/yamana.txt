@@ -1,0 +1,653 @@
+Yámana (Yaghan) spirit-world — figure-authoring transcript
+==========================================================
+
+Tradition: Yámana (Yaghan), the canoe-people of the Beagle Channel and the
+southern Fuegian archipelago, Tierra del Fuego. Registered era key (the only
+one valid for this tradition): mythic-primordial.
+
+Research scope: The Pantheon Registry already holds the supreme being
+Watauinéwa (yamana_watauinewa) and the dualistic culture-hero Yoálox brothers
+(yamana_yoalox_brothers). This pass authors the well-attested CORE of the
+remaining named spirit-world: the fearsome initiation-spirit Yetaita, the Sun
+(Lëm), the Moon-woman (Hánuxa), the sky/rainbow figure Akáinix, and the
+water/sea spirit Lakúma.
+
+The principal documentation is Martin Gusinde's monograph Die Feuerland-Indianer
+II: Die Yamana (1937; fieldwork 1918–1924; Eng. trans. The Yamana, HRAF 1961)
+and the narrative collection assembled from his materials by Johannes Wilbert,
+Folk Literature of the Yamana Indians: Martin Gusinde's Collection of Yamana
+Narratives (UCLA Latin American Studies 40, 1977). E. Lucas Bridges, Uttermost
+Part of the Earth (1948), supplies the family's first-hand testimony and the
+flood material associated with the Moon-woman.
+
+The Sun, the Moon-woman, and the rainbow-man belong to the great kína myth: in
+primeval time the women ruled the men by impersonating spirits in the secret
+lodge (the kína); when the men discovered the deception they rose and killed
+the women, and the chief actors of that age ascended into the sky — the woman
+Hánuxa becoming the Moon, the man Lëm the Sun, and Akáinix the rainbow. The
+kína ceremony (last performed 1922 on Navarino, attended by Gusinde and
+Koppers) re-enacts that myth; the malevolent spirit Yetaita, impersonated by
+masked, body-painted initiates of the men's lodge, emerges to terrify the
+novices (ushwáala).
+
+Anchored decisions and notes:
+  * YETAITA — the dreaded malevolent spirit of the men's kína. He is OPPOSED to
+    the supreme being Watauinéwa but is expressly NOT his rival or equal
+    ("there cannot be rivalry between them"; Yetaita "does not have the same
+    importance as the creator god"). He is therefore NOT wired as an enemy of
+    Watauinéwa, and is flagged SOLITARY (kinless, with cited reason).
+  * LËM ↔ AKÁINIX sibling — the stable, unambiguous relation: the Spanish
+    Ser-Indígena / El Rompehielos tradition names Akáinix expressly "hermano de
+    Lem el sol" (brother of Lëm the Sun). Wired reciprocally within the batch.
+  * HÁNUXA ↔ LËM spouse — wired per the English Ser-Indígena passage (Hánuxa
+    wife of Lëm the Sun). SOURCES CONFLICT: the Spanish Ser-Indígena /
+    El Rompehielos tradition instead makes Hánuxa (Janusha) the wife of Akáinix
+    the rainbow. This variant is NOTED in Hánuxa's notes. Wired reciprocally
+    within the batch as Hánuxa↔Lëm.
+  * LAKÚMA — the dangerous sea/water spirit; a kinless monster-spirit with no
+    attested individual kin, flagged SOLITARY.
+  * HÁNNUSH — a separate GIANT in Gusinde/Wilbert, NOT the Moon-woman Hánuxa;
+    NOT conflated and OMITTED here (a spirit-class/giant without the
+    individuated mythic biography the core requires).
+  * OMITTED as verified-unattested per the prior pass: Cilawáia, Kalampáso,
+    Tánuwa.
+
+Note on citations: WebFetch was blocked (anti-bot 403) on every secondary host
+this session, so claims are corroborated across multiple WebSearch result sets
+and cited at work level (no fabricated page numbers), to the real ethnographic
+literature (Gusinde 1937; Wilbert 1977; Bridges 1948) and the Ser-Indígena /
+Chile Precolombino / El Rompehielos Yámana materials that summarise it.
+
+Key sources:
+  - Martin Gusinde, Die Feuerland-Indianer, Band II: Die Yamana — Vom Leben und
+    Denken der Wassernomaden am Kap Hoorn (Mödling bei Wien: Anthropos, 1937;
+    fieldwork 1918–1924); Eng. trans. The Yamana: The Life and Thought of the
+    Water Nomads of Cape Horn (HRAF, 1961).
+  - Johannes Wilbert (ed.), Folk Literature of the Yamana Indians: Martin
+    Gusinde's Collection of Yamana Narratives (UCLA Latin American Center,
+    Latin American Studies 40, 1977).
+  - E. Lucas Bridges, Uttermost Part of the Earth (London: Hodder & Stoughton,
+    1948).
+  - "Mundo Espiritual" and "Mito Yagán," Ser Indígena — Pueblos Originarios de
+    Chile (serindigena.org); "Beliefs and funeral rites — Yámana," Chile
+    Precolombino (chileprecolombino.cl); "Cultura yámana: Akainix," El
+    Rompehielos (elrompehielos.com.ar) — popular summaries of Gusinde's
+    Yámana ethnography used to corroborate names, roles, and relations.
+
+```json
+[
+  {
+    "id": "yamana_yetaita",
+    "name": {
+      "primary": "Yetaita",
+      "alt": ["Yetáita", "Yétaita", "the evil spirit of the Kína"],
+      "transliterations": {
+        "yamana": "Yetaita",
+        "etymology": "Yámana name of the malevolent earth-spirit impersonated in the men's kína lodge; no transparent gloss recovered in the consulted sources."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "manifested-as-the-dread-spirit-of-the-kina",
+        "sources": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937 (Eng. trans. The Yamana, HRAF 1961)." }
+        ],
+        "notes": "Yetaita is the malevolent spirit of the Yámana men's initiation (kína). Like Shoort, the chief spirit of the Selk'nam Hain, he was understood to rise from beneath the earth, through the fire, to terrify the male novices (ushwáala) in the lodge."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "male-initiation-kina",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937 — Yetaita as the dread spirit of the men's kína." }
+        ]
+      },
+      {
+        "sphereId": "evil-and-the-underground",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Chile Precolombino, 'Beliefs and funeral rites — Yámana' (chileprecolombino.cl), summarising Gusinde: Yetaita as the personification of evil who emerges from the depths of the earth through the fire." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "terrify_the_initiates",
+        "name": "terrifies the male novices (ushwáala) in the kína lodge",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937; corroborated in 'Bark Masks and Bodypainting of the Yamana and Selk'nam' (thestorybehindthefaces.com)." }
+        ],
+        "notes": "Impersonated by an already-initiated member of the men's lodge, painted and masked, Yetaita appears to the novices as the spirit they were raised to fear; he handles, shakes, and frightens them as part of the ordeal of initiation."
+      },
+      {
+        "id": "rise_through_the_fire",
+        "name": "emerges from beneath the earth, up through the fire",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Chile Precolombino, 'Beliefs and funeral rites — Yámana' (chileprecolombino.cl): Yetaita, like Shoort of the Hain, emerged from the depths of the earth through the fire to frighten the male ushwáala." }
+        ],
+        "notes": "His entrance through the hearth-fire of the lodge marks him as a being of the underground, in contrast to the celestial Watauinéwa."
+      },
+      {
+        "id": "embody_evil",
+        "name": "personifies evil and the harmful side of life",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena, 'Mundo Espiritual' (serindigena.org): Yetaita embodies evil and the negative aspects of life but does not have the same importance as the creator god." }
+        ],
+        "notes": "Yámana thought sets him over against the good supreme being Watauinéwa, yet without making him an equal or rival power."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yamana_kina_mask",
+        "name": "kína spirit-mask",
+        "kind": "ritual-regalia",
+        "role": "conical bark-and-hide mask worn by the lodge-member who impersonates Yetaita (and the other spirits) before the novices",
+        "sources": [
+          { "kind": "secondary", "reference": "'Bark Masks and Bodypainting of the Yamana and Selk'nam of Tierra del Fuego' (thestorybehindthefaces.com), after Gusinde 1937; Gusinde's kína photographs, 1922." }
+        ]
+      },
+      {
+        "id": "yamana_kina_bodypaint",
+        "name": "kína body-paint",
+        "kind": "body-adornment",
+        "role": "the painted designs (red, white, black) applied to the impersonators' bodies to manifest Yetaita and the spirits of the kína",
+        "sources": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937; 'Pinturas corporales en el fin del mundo' (researchgate.net) on Yámana ceremonial body-painting." }
+        ]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Yetaita is the fearsome malevolent spirit of the Yámana men's initiation (kína), who rises from beneath the earth through the fire to terrify the novices; he personifies evil and stands opposed to — but is not the equal or rival of — the supreme being Watauinéwa.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937 (Eng. trans. The Yamana, HRAF 1961)." },
+          { "kind": "secondary", "reference": "Chile Precolombino, 'Beliefs and funeral rites — Yámana' (chileprecolombino.cl)." },
+          { "kind": "secondary", "reference": "Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "SOLITARY: Yetaita is recorded with no kin. He is opposed to the good supreme being Watauinéwa but is expressly not his rival or equal — Yámana thought holds that 'there cannot be rivalry between them,' and the sources stress that Yetaita 'does not have the same importance as the creator god.' He is therefore deliberately NOT wired as an enemy of Watauinéwa. Classed as a deity (a spirit-being) with no attested divine parent."
+  },
+  {
+    "id": "yamana_lem",
+    "name": {
+      "primary": "Lëm",
+      "alt": ["Lem", "Löm", "the Sun", "Sun-man"],
+      "transliterations": {
+        "yamana": "Lëm",
+        "etymology": "Yámana word for the Sun; in the kína myth the man who became the Sun."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "ascended-into-the-sky-and-became-the-sun",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com), after Gusinde." }
+        ],
+        "notes": "In the kína myth, after the men overthrew and killed the women who had ruled them, Lëm — one of the men who led the killing — rose into the sky and became the Sun."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com)." }
+        ]
+      },
+      {
+        "sphereId": "daylight-and-the-sky",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org): Lëm the Sun-man whose appearance inaugurated a new order of existence." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_the_sun",
+        "name": "ascends into the sky and becomes the Sun",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com)." }
+        ],
+        "notes": "A primeval man transformed: at the close of the kína-myth age Lëm went up into the heavens as the Sun."
+      },
+      {
+        "id": "give_daylight",
+        "name": "gives light and warmth as the Sun in the sky",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org), summarising Gusinde 1937." }
+        ],
+        "notes": "As the Sun, Lëm orders day and the seasons of the Fuegian world; his rising marks the new order that followed the men's victory over the women."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "yamana_akainix",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): Akáinix the rainbow, 'hermano de Lem el sol' (brother of Lëm the Sun)." }
+        ],
+        "notes": "Reciprocal of yamana_akainix.sibling. Lëm the Sun and Akáinix the rainbow are named brothers in the Ser-Indígena / El Rompehielos tradition; this is the stable, unambiguous kin relation among the kína-myth sky figures."
+      },
+      {
+        "kind": "spouse",
+        "personId": "yamana_hanuxa",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org), English rendering: Hánuxa the Moon-woman as wife of Lëm the Sun." }
+        ],
+        "notes": "Reciprocal of yamana_hanuxa.spouse. Wired per the English Ser-Indígena passage (Hánuxa wife of Lëm). NOTE the variant: the Spanish Ser-Indígena / El Rompehielos tradition instead makes Hánuxa the wife of Akáinix the rainbow (see Hánuxa's notes)."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Lëm is the Yámana Sun: in the kína myth a primeval man who, after the men overthrew the women, ascended into the sky and became the Sun; he is the brother of the rainbow Akáinix and, in one tradition, the husband of the Moon-woman Hánuxa.",
+        "citations": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977." },
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." },
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com); Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Male solar deity of the kína myth-cycle. The masks of the kína impersonate Lëm (the Sun-man) alongside Hánuxa (the Moon-woman) and Akáinix (the rainbow-man). Classed as a deity with no attested divine parent; he and Akáinix are brothers."
+  },
+  {
+    "id": "yamana_hanuxa",
+    "name": {
+      "primary": "Hánuxa",
+      "alt": ["Hanuxa", "Hannuxa", "Hánnuxa", "Janusha", "the Moon", "Moon-woman"],
+      "transliterations": {
+        "yamana": "Hánuxa",
+        "etymology": "Yámana word for the Moon; in the kína myth the woman who became the Moon. Not to be confused with the giant Hánnush."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "fled-into-the-sky-and-became-the-moon",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com)." }
+        ],
+        "notes": "In the kína myth, Hánuxa was the woman (a leader of the women who had ruled the men in the lodge) who, when the men rose and killed the women, fled into the sky and became the Moon."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com)." }
+        ]
+      },
+      {
+        "sphereId": "tides",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com): the Yámana associated the Moon, Hánuxa, with the tides." }
+        ]
+      },
+      {
+        "sphereId": "the-great-flood",
+        "contextTag": "episodic",
+        "sources": [
+          { "kind": "secondary", "reference": "Bridges, E. Lucas. Uttermost Part of the Earth, 1948 — the Yámana flood tradition associated with the Moon-woman." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_the_moon",
+        "name": "flees into the sky and becomes the Moon",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com)." }
+        ],
+        "notes": "The transformation that closes her part in the kína myth: the woman Hánuxa ascends and becomes the Moon."
+      },
+      {
+        "id": "govern_the_tides",
+        "name": "governs / is associated with the rise and fall of the tides",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com): the overarching Yámana belief was that the Moon was associated with the tides." }
+        ],
+        "notes": "As the Moon, Hánuxa is linked to the tides that govern the canoe-people's daily life on the channels."
+      },
+      {
+        "id": "cause_the_flood",
+        "name": "causes the great flood that drowned the land",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Bridges, E. Lucas. Uttermost Part of the Earth, 1948 — the Moon-woman and the Yámana flood that covered all the land save a few mountain-tops." }
+        ],
+        "notes": "Per Bridges (1948), the flood that covered all the land except a few mountain peaks is tied to the Moon-woman; the deluge is the catastrophe of the primeval age."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yamana_kina_moonmask",
+        "name": "Moon-woman mask of the kína",
+        "kind": "ritual-regalia",
+        "role": "the mask impersonating Hánuxa the Moon-woman among the kína spirit-figures",
+        "sources": [
+          { "kind": "secondary", "reference": "'Bark Masks and Bodypainting of the Yamana and Selk'nam' (thestorybehindthefaces.com), after Gusinde 1937: the masks represented the moon-woman Hánuxa, the sun-man Lëm and the rainbow-man Akáinix." }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "yamana_lem",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org), English rendering: Hánuxa the Moon-woman as wife of Lëm the Sun." }
+        ],
+        "notes": "Reciprocal of yamana_lem.spouse. Wired per the English Ser-Indígena passage (Hánuxa wife of Lëm the Sun). VARIANT (sources conflict): the Spanish Ser-Indígena / El Rompehielos tradition makes Hánuxa (Janusha) the wife of Akáinix the rainbow rather than of Lëm — see this figure's notes."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Hánuxa is the Yámana Moon-woman: in the kína myth a leader of the women who, when the men killed the women, fled into the sky and became the Moon; she is associated with the tides and, per Bridges (1948), with the great flood.",
+        "citations": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977." },
+          { "kind": "secondary", "reference": "Bridges, E. Lucas. Uttermost Part of the Earth, 1948." },
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937; Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com); Ser Indígena, 'Mundo Espiritual — Yagán' (serindigena.org)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Female lunar deity of the kína myth-cycle; impersonated by a mask in the ceremony alongside Lëm and Akáinix. SPOUSE VARIANT: sources conflict on her husband — the English Ser-Indígena passage makes her the wife of Lëm the Sun (wired here), while the Spanish Ser-Indígena / El Rompehielos tradition makes her (as 'Janusha') the wife of Akáinix the rainbow. The flood association follows Bridges, Uttermost Part of the Earth (1948). She is DISTINCT from the giant Hánnush, who is a separate being and is not authored here. Classed as a deity with no attested divine parent."
+  },
+  {
+    "id": "yamana_akainix",
+    "name": {
+      "primary": "Akáinix",
+      "alt": ["Akainix", "Akáinik", "the Rainbow", "Rainbow-man"],
+      "transliterations": {
+        "yamana": "Akáinix",
+        "etymology": "Yámana word for the rainbow; in the kína myth the man who became the rainbow."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "fled-into-the-sky-and-became-the-rainbow",
+        "sources": [
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com), after Gusinde; Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar)." }
+        ],
+        "notes": "In the kína myth, Akáinix — a beautiful man and powerful sorcerer, eldest of the brothers — fled into the sky and was transformed into the rainbow; thereafter the Yámana set aside their hatred, and his appearance announcing fair weather became a token of friendship."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "rainbow",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com); Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar)." }
+        ]
+      },
+      {
+        "sphereId": "weather-and-fair-skies",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): when Akáinix appears in the sky he announces good weather." }
+        ]
+      },
+      {
+        "sphereId": "sorcery-and-body-painting",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): Akáinix a powerful sorcerer who knew how to paint himself better than anyone." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "become_the_rainbow",
+        "name": "flees into the sky and becomes the rainbow",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com); Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar)." }
+        ],
+        "notes": "His transformation closes his part in the kína myth: the man Akáinix ascends and becomes the many-coloured rainbow."
+      },
+      {
+        "id": "announce_fair_weather",
+        "name": "announces good weather when he appears in the sky",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): his appearance announces fair weather and the Yámana gather to admire him in a pact of friendship." }
+        ],
+        "notes": "As the rainbow, Akáinix is a benign sky-sign whose colours the Yámana, young and old, gathered to admire."
+      },
+      {
+        "id": "powerful_sorcery",
+        "name": "works powerful sorcery (yékamush / shaman's power)",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): Akáinix a beautiful man and powerful sorcerer." }
+        ],
+        "notes": "In the myth he is the most powerful of magicians, and the eldest brother permitted to enter the women's secret kína lodge."
+      },
+      {
+        "id": "master_body_painter",
+        "name": "paints himself better than anyone",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): he knew how to paint himself better than anyone — the source of the rainbow's colours." }
+        ],
+        "notes": "His unrivalled skill at body-painting is the mythic source of the rainbow's many colours."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "yamana_akainix_bodypaint",
+        "name": "Akáinix's body-paint (the rainbow's colours)",
+        "kind": "body-adornment",
+        "role": "the many-coloured paint Akáinix applied to himself, identified with the colours of the rainbow he became",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): he painted himself better than anyone; the colours are those of the rainbow." }
+        ]
+      },
+      {
+        "id": "yamana_kina_rainbowmask",
+        "name": "Rainbow-man mask of the kína",
+        "kind": "ritual-regalia",
+        "role": "the mask impersonating Akáinix the rainbow-man among the kína spirit-figures",
+        "sources": [
+          { "kind": "secondary", "reference": "'Bark Masks and Bodypainting of the Yamana and Selk'nam' (thestorybehindthefaces.com), after Gusinde 1937: the masks represented the rainbow-man Akáinix alongside Lëm and Hánuxa." }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "yamana_lem",
+        "sources": [
+          { "kind": "secondary", "reference": "Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar): Akáinix the rainbow, 'hermano de Lem el sol' (brother of Lëm the Sun), eldest of the brothers." }
+        ],
+        "notes": "Reciprocal of yamana_lem.sibling. Akáinix the rainbow is the (elder) brother of Lëm the Sun — the stable, unambiguous kin relation among the kína-myth sky figures."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Akáinix is the Yámana rainbow: in the kína myth a beautiful man and powerful sorcerer, the best of body-painters and eldest brother of Lëm the Sun, who fled into the sky and became the rainbow, thereafter a benign sign announcing fair weather.",
+        "citations": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977." },
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937." },
+          { "kind": "secondary", "reference": "Hakai Magazine, 'The Man Who Became the Rainbow' (hakaimagazine.com); Ser Indígena / El Rompehielos, 'Cultura yámana: Akainix' (elrompehielos.com.ar)." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Male rainbow deity of the kína myth-cycle; brother of Lëm the Sun, and (in the Spanish Ser-Indígena / El Rompehielos tradition) husband of Hánuxa the Moon — a relation wired in this batch on Hánuxa's side to Lëm per the English passage, with the Akáinix-husband variant noted on Hánuxa. Impersonated by a mask in the kína alongside Lëm and Hánuxa. Classed as a deity with no attested divine parent."
+  },
+  {
+    "id": "yamana_lakuma",
+    "name": {
+      "primary": "Lakúma",
+      "alt": ["Lakuma", "Lákuma", "the sea-spirit"],
+      "transliterations": {
+        "yamana": "Lakúma",
+        "etymology": "Yámana name of the dangerous water/sea spirit (also used of a class of such spirits)."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Yámana",
+    "primaryTradition": "Yámana",
+    "sex": "unknown",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "mythic-primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-primordial",
+        "eraOrdering": 0,
+        "startEvent": "dwelt-as-the-dread-spirit-of-the-sea",
+        "sources": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937 (Eng. trans. The Yamana, HRAF 1961); Wilbert, Folk Literature of the Yamana Indians, 1977." }
+        ],
+        "notes": "Lakúma is the Yámana spirit of the sea — for the canoe-people the most dangerous of the water-beings, lurking in the channels."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sea-and-water",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937; Wilbert, Folk Literature of the Yamana Indians, 1977." }
+        ]
+      },
+      {
+        "sphereId": "storms-and-drowning",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977 — Lakúma raising waves, whirlpools and storms and drowning canoeists." }
+        ]
+      },
+      {
+        "sphereId": "taboo-enforcement",
+        "contextTag": "episodic",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977 — the lakúma attacks those who break taboo (e.g. a menstruating girl who ate forbidden berries)." }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "capsize_canoes",
+        "name": "capsizes canoes and drowns and devours their occupants",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977; A Book of Creatures / Featured Creatures, 'Lakúma', after Gusinde: the lakúma tips canoes, pulls out and drags down its victims, leaving the entrails to float up." }
+        ],
+        "notes": "The most feared act of the lakúma: overturning a canoe, dragging its people under, and consuming them."
+      },
+      {
+        "id": "raise_waves_and_storms",
+        "name": "raises great waves, whirlpools and storms",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "A Book of Creatures / Featured Creatures, 'Lakúma', after Gusinde: when angered the lakúma creates huge waves, summons whirlpools, and whips up storms to wreck larger vessels and flood the coast." }
+        ],
+        "notes": "Beyond capsizing single canoes, an angered lakúma can churn the sea itself — waves, whirlpools, and storms strong enough to inundate the shore."
+      },
+      {
+        "id": "punish_taboo_breakers",
+        "name": "attacks and devours those who break taboo",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians, 1977: a túrikipa (menstruating girl) who ate forbidden berries was taken and devoured by a lakúma which refused all offerings." }
+        ],
+        "notes": "The lakúma serves as an enforcer of taboo: one tale tells of a girl in seclusion who tried to evade the berry-prohibition and was seized and eaten."
+      },
+      {
+        "id": "swayed_by_song",
+        "name": "is placated by sweet song and flattering words",
+        "inheritability": "none",
+        "sources": [
+          { "kind": "secondary", "reference": "A Book of Creatures / Featured Creatures, 'Lakúma', after Gusinde: a singer who flattered and sang to each approaching lakúma was let to pass; the lakúma has a weakness for friendly voices." }
+        ],
+        "notes": "Its one weakness: it loves a sweet voice and kind words, so a skilled singer could cross dangerous waters unharmed by serenading it."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Lakúma is the Yámana spirit of the sea — the most dangerous of the water-beings — who capsizes canoes and drowns and devours their occupants, raises waves, whirlpools and storms, attacks those who break taboo, and is placated only by sweet song and flattering words.",
+        "citations": [
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band II: Die Yamana, 1937 (Eng. trans. The Yamana, HRAF 1961)." },
+          { "kind": "secondary", "reference": "Wilbert, Johannes (ed.). Folk Literature of the Yamana Indians (Gusinde's collection), 1977." },
+          { "kind": "secondary", "reference": "A Book of Creatures, 'Lakúma' (abookofcreatures.com), and Featured Creatures, 'Lakuma' (mythicalcreaturescatalogue.com), both citing Gusinde's Yamana material." }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "SOLITARY: Lakúma is a dread water/sea spirit recorded with no individuated kin (the name also designates a class of such water-beings). Sex is left unknown: the sources describe a monstrous, shape-uncertain being (likened to a whale, squid or giant worm) rather than a gendered person. Classed as a deity (spirit-being) with no attested parent. Documented by Gusinde (1937) and in Wilbert's Folk Literature of the Yamana Indians (1977)."
+  }
+]
+```
+
+SOLITARY: yamana_yetaita — Kinless. Opposed to the supreme being Watauinéwa but expressly NOT his rival or equal ("there cannot be rivalry between them"; Yetaita "does not have the same importance as the creator god") — Gusinde, Die Yamana (1937); Ser Indígena, "Mundo Espiritual — Yagán" (serindigena.org). Deliberately not wired as Watauinéwa's enemy.
+SOLITARY: yamana_lakuma — Kinless dread sea-spirit (the name also denotes a class of water-beings); no individuated kin attested — Gusinde, Die Yamana (1937); Wilbert, Folk Literature of the Yamana Indians (1977).
+
+(No RECIPROCAL-NEEDED lines: every symmetric relation — Lëm↔Akáinix sibling and Hánuxa↔Lëm spouse — is reciprocated within this batch, and no new figure points a symmetric relation at an existing corpus id.)

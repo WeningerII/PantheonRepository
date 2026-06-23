@@ -2748,7 +2748,31 @@ Coverage plan (24 figures):
     "weight": "primary"
    }
   ],
-  "notes": "Culture-hero / divine-rider tier (classed as demigod: a divine son and mediator-hero). Mansi Mir-susne-xum; Khanty Mĭr Šawijti Xu ('World-Surveying Man'). The pre-eminent Ob-Ugric cultural ancestor and intercessor; documentation chiefly from Munkácsi's Vogul (Mansi) folklore corpus and Karjalainen."
+  "notes": "Culture-hero / divine-rider tier (classed as demigod: a divine son and mediator-hero). Mansi Mir-susne-xum; Khanty Mĭr Šawijti Xu ('World-Surveying Man'). The pre-eminent Ob-Ugric cultural ancestor and intercessor; documentation chiefly from Munkácsi's Vogul (Mansi) folklore corpus and Karjalainen.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mansi_as_iki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Népköltési Gyűjtemény (1892-1921)"
+     }
+    ],
+    "notes": "Both sons of Numi-Torum; As-iki is the eldest, lord of the Ob."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_polum_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Népköltési Gyűjtemény (1892-1921)"
+     }
+    ],
+    "notes": "Both sons of Numi-Torum; Polum-Torum is the Pelym god."
+   }
+  ]
  },
  {
   "id": "mansi_kaltes_ekwa",
@@ -2893,7 +2917,31 @@ Coverage plan (24 figures):
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class mother/dawn goddess (classed as deity). 'Ekwa' = woman/old woman in Mansi; her name is also given Kaltaś. Mother of the World-Surveyor; her sphere joins birth, dawn, the moon and fate. The 'goose' association is properly her son Mir-susne-khum's, so it is not assigned to her here."
+  "notes": "Spirit-class mother/dawn goddess (classed as deity). 'Ekwa' = woman/old woman in Mansi; her name is also given Kaltaś. Mother of the World-Surveyor; her sphere joins birth, dawn, the moon and fate. The 'goose' association is properly her son Mir-susne-khum's, so it is not assigned to her here.",
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "mansi_khul_ater",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty/Ob-Ugric mythology; Munkácsi (1892-1921)"
+     }
+    ],
+    "notes": "In one Ob-Ugric variant Kaltes is linked with the underworld lord."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mansi_joli_torum_syan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, A vogul nép ősi hitvilága (1900-02)"
+     }
+    ],
+    "notes": "Kaltes and the Earth-Mother Joli-Torum-syan are overlapping/sometimes-identified mother-goddess figures."
+   }
+  ]
  },
  {
   "id": "mansi_numi_torum",
@@ -3004,7 +3052,42 @@ Coverage plan (24 figures):
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class sky-father (classed as deity). This is the Mansi (Vogul) form of the same Ob-Ugric high god authored under the Khanty label as Num-Torum; both are included with the proper tradition labels per the brief, sharing the num/numi 'upper' + torum 'sky/god' etymology and the Munkácsi (Mansi) vs Karjalainen (both) source base."
+  "notes": "Spirit-class sky-father (classed as deity). This is the Mansi (Vogul) form of the same Ob-Ugric high god authored under the Khanty label as Num-Torum; both are included with the proper tradition labels per the brief, sharing the num/numi 'upper' + torum 'sky/god' etymology and the Munkácsi (Mansi) vs Karjalainen (both) source base.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mansi_khul_ater",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Népköltési Gyűjtemény (1892-1921); Róheim, Hungarian and Vogul Mythology (1954)"
+     }
+    ],
+    "notes": "Brother and standing adversary; Khul-Ater rules the Lower World against the sky-father."
+   },
+   {
+    "kind": "enemy",
+    "personId": "mansi_khul_ater",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, Vogul Népköltési Gyűjtemény (1892-1921)"
+     }
+    ],
+    "notes": "The sky-father and the underworld lord are standing adversaries."
+   },
+   {
+    "kind": "spouse",
+    "personId": "mansi_joli_torum_syan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Munkácsi, A vogul nép ősi hitvilága (1900-02); Róheim (1954)"
+     }
+    ],
+    "notes": "Consort the Earth-Mother Joli-Torum-syan, who dwells on earth among people."
+   }
+  ]
  }
 ]
 ```
