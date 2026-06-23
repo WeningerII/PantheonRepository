@@ -1,0 +1,323 @@
+Figure-authoring batch — the Völsung line (Norse).
+
+The existing corpus carries Odin → Sigi → Rerir but stops there, even though
+Rerir's own entry names his son Völsung, "eponym of the dynasty." This batch
+adds the attested descent of the Völsung line from Rerir down four generations,
+each figure sourced to the Vǫlsunga saga (13th-c. Old Norse prose), the heroic
+lays of the Poetic Edda, and Snorri's Skáldskaparmál. Divinity dilutes by half
+each generation (Rerir ¼ → Völsung ⅛ → …), so every descendant computes to the
+scion tier. parentIds wire each into the existing lineage automatically.
+
+```json
+[
+  {
+    "id": "norse_volsung",
+    "name": {
+      "primary": "Völsung",
+      "alt": ["Volsung", "Vǫlsungr"],
+      "transliterations": {
+        "old-norse": "Vǫlsungr",
+        "etymology": "Eponymous ancestor of the Vǫlsungar; the dynastic name borne by the line, glossed in the saga as the son carried six winters in the womb and 'taken' (cut) from his dying mother."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_rerir"],
+    "parentRoles": { "norse_rerir": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 0, "mythicEnd": 150, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "extraordinary-birth", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2" }], "notes": "Conceived after Rerir and his queen received the apple of fertility from Frigg via the wish-maiden Hljóð; carried in the womb six winters and cut from his mother at her death, already grown enough to kiss her before she died." },
+      { "typeStatus": "scion", "startEvent": "death-at-Siggeirs-hall", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 5" }], "notes": "King over Hunland; built his hall around the great tree Barnstokkr. Slain with most of his sons when he sailed to his son-in-law Siggeir's kingdom and was ambushed." }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "barnstokkr", "name": "Barnstokkr", "kind": "monument", "role": "owner", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3" }] }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "norse_rerir", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2" }], "notes": "Long-awaited son of Rerir; eponym of the Vǫlsung line." },
+      { "kind": "father-of", "personId": "norse_sigmund", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2-3" }], "notes": "Eldest son and heir." },
+      { "kind": "father-of", "personId": "norse_signy", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2-3" }], "notes": "Twin-born daughter, given in marriage to Siggeir of Gautland." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2-5 (13th-c. Old Norse prose)" }, { "kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál (the Vǫlsung-Niflung summary)" }], "weight": "primary" },
+      { "claim": "eponym-of-line", "citations": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2" }], "weight": "primary" }
+    ],
+    "notes": "Eponymous ancestor of the Vǫlsungar. Son of Rerir and grandson-line of Odin through Sigi; father of the twins Sigmund and Signý and of eight further sons. His hall is built around the tree Barnstokkr, into which Odin later thrusts the sword Sigmund alone can draw. Killed by his son-in-law Siggeir, setting in motion the cycle of vengeance that defines the line."
+  },
+  {
+    "id": "norse_signy",
+    "name": {
+      "primary": "Signý",
+      "alt": ["Signy"],
+      "transliterations": {
+        "old-norse": "Signý",
+        "etymology": "sigr 'victory' + ný 'new'; an heroic-age woman's name common in the legendary corpus."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_volsung"],
+    "parentRoles": { "norse_volsung": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 25, "mythicEnd": 175, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "marriage-to-Siggeir", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 4" }], "notes": "Given against her will to King Siggeir of Gautland; foresaw the treachery that would destroy her family and warned her father in vain." },
+      { "typeStatus": "scion", "startEvent": "death-in-the-burning-hall", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 8" }], "notes": "Having engineered the vengeance that destroyed Siggeir, she revealed that Sinfjötli was her son by her own brother Sigmund — a pure-Vǫlsung avenger — then chose to die in the burning hall beside the husband she had ruined." }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "father", "personId": "norse_volsung", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2-3" }], "notes": "Daughter of Völsung." },
+      { "kind": "sibling", "personId": "norse_sigmund", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3" }], "notes": "Twin of Sigmund." },
+      { "kind": "mother-of", "personId": "norse_sinfjotli", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 7" }], "notes": "Bore Sinfjötli by her brother Sigmund to produce an avenger of unmixed Vǫlsung blood." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3-8" }], "weight": "primary" }
+    ],
+    "notes": "Twin sister of Sigmund and daughter of Völsung. The tragic architect of the line's first revenge: married to Siggeir, who massacred her father and brothers, she orchestrated his destruction across years — sending her sons to Sigmund to be tested, then conceiving Sinfjötli by Sigmund himself — and died with Siggeir in the fire rather than outlive the vengeance she had wrought."
+  },
+  {
+    "id": "norse_sigmund",
+    "name": {
+      "primary": "Sigmund",
+      "alt": ["Sigmundr"],
+      "transliterations": {
+        "old-norse": "Sigmundr",
+        "etymology": "sigr 'victory' + mundr 'protection, hand'; 'victory-protection.'"
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_volsung"],
+    "parentRoles": { "norse_volsung": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 25, "mythicEnd": 200, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "draws-the-sword-from-Barnstokkr", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3" }], "notes": "At Signý's wedding a one-eyed stranger (Odin) thrust a sword into the tree Barnstokkr; of all present, only Sigmund could draw it. The blade is Gram." },
+      { "typeStatus": "scion", "startEvent": "death-against-the-Hundings", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 11-12" }], "notes": "In his last battle Odin met him spear-first; Gram shattered against the spear and Sigmund fell, bidding his pregnant wife Hjördís keep the fragments for the son to come." }
+    ],
+    "domains": [],
+    "faculties": [
+      { "id": "venom-hardened", "name": "Unharmed by venom touched to the skin", "inheritability": "partial", "notes": "Of the Vǫlsung kin, Sigmund and Sinfjötli could handle poison on the outside of the body without harm, though not drink it.", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 8" }] }
+    ],
+    "materialCulture": [
+      { "id": "gram", "name": "Gram", "kind": "weapon", "role": "wielder", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3, 11" }] }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "norse_volsung", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 2-3" }], "notes": "Eldest son of Völsung." },
+      { "kind": "sibling", "personId": "norse_signy", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3" }], "notes": "Twin of Signý." },
+      { "kind": "father-of", "personId": "norse_sinfjotli", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 7" }], "notes": "Son by his sister Signý." },
+      { "kind": "father-of", "personId": "norse_helgi_hundingsbane", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Helgakviða Hundingsbana I, prose" }], "notes": "Son by Borghild." },
+      { "kind": "father-of", "personId": "norse_sigurd", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 12" }], "notes": "Son by Hjördís, born after Sigmund's death." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3-12" }, { "kind": "primary", "reference": "Beowulf 874-897 (Sigemund the Wælsing, the oldest attestation)" }], "weight": "primary" },
+      { "claim": "sword-from-Barnstokkr", "citations": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 3" }], "weight": "primary" }
+    ],
+    "notes": "Greatest of Völsung's sons; the only man able to draw Odin's sword Gram from the tree Barnstokkr. Sole survivor of Siggeir's massacre of the Vǫlsungar, he lived as an outlaw and, with his son Sinfjötli, took vengeance. Father of Sinfjötli (by Signý), Helgi Hundingsbane (by Borghild) and, posthumously, Sigurd (by Hjördís). Already named in Beowulf as Sigemund the dragon-slayer — a role the later tradition transfers to his son."
+  },
+  {
+    "id": "norse_sinfjotli",
+    "name": {
+      "primary": "Sinfjötli",
+      "alt": ["Sinfjotli", "Fitela"],
+      "transliterations": {
+        "old-norse": "Sinfjǫtli",
+        "etymology": "Obscure; the Old English cognate Fitela names him as Sigemund's nephew in Beowulf."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_sigmund", "norse_signy"],
+    "parentRoles": { "norse_sigmund": "paternal", "norse_signy": "maternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 50, "mythicEnd": 200, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "the-wolf-skins", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 8" }], "notes": "Living as outlaws, he and Sigmund found cursed wolf-skins and ran as wolves for a season; the episode tempers him for the vengeance to come." },
+      { "typeStatus": "scion", "startEvent": "death-by-poison", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 10" }], "notes": "Poisoned by Sigmund's wife Borghild in revenge for his killing of her brother; Sigmund, who could not be harmed by venom, bore his body away and was met by Odin as a ferryman." }
+    ],
+    "domains": [],
+    "faculties": [
+      { "id": "wolf-shape", "name": "Takes wolf form in the cursed wolf-skins", "inheritability": "none", "notes": "With Sigmund, donned enchanted wolf-pelts (úlfheðnar) and lived as a wolf, unable to leave the skins until the tenth day.", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 8" }] }
+    ],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "father", "personId": "norse_sigmund", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 7" }], "notes": "Son and nephew of Sigmund." },
+      { "kind": "mother", "personId": "norse_signy", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 7" }], "notes": "Son of Signý, conceived to make a pure-Vǫlsung avenger." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 7-10" }, { "kind": "primary", "reference": "Beowulf 874-897 (as Fitela)" }], "weight": "primary" }
+    ],
+    "notes": "Son of Sigmund by his sister Signý — of unmixed Vǫlsung blood by design, bred to avenge Völsung. Hardened by the wolf-skin ordeal, he helped burn Siggeir's hall. Poisoned by Borghild. The oldest layer of the legend (Beowulf) already pairs him with Sigemund as Fitela."
+  },
+  {
+    "id": "norse_helgi_hundingsbane",
+    "name": {
+      "primary": "Helgi Hundingsbane",
+      "alt": ["Helgi Hundingsbani", "Helgi"],
+      "transliterations": {
+        "old-norse": "Helgi Hundingsbani",
+        "etymology": "helgi 'holy, dedicated'; the by-name Hundingsbani means 'slayer of Hunding.'"
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_sigmund"],
+    "parentRoles": { "norse_sigmund": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 50, "mythicEnd": 210, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "slaying-of-Hunding", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Helgakviða Hundingsbana I" }], "notes": "Won his by-name by killing King Hunding and his sons; courted and won the valkyrie Sigrún against her betrothal to Höðbroddr, whom he defeated at Frekastein." },
+      { "typeStatus": "scion", "startEvent": "death-and-the-grave-mound", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Helgakviða Hundingsbana II" }], "notes": "Killed by Sigrún's brother Dagr with a spear lent by Odin; afterward Sigrún sought him in his grave-mound, where he rode once more from Valhalla to meet her." }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "father", "personId": "norse_sigmund", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Helgakviða Hundingsbana I, prose" }], "notes": "Son of Sigmund by Borghild." },
+      { "kind": "sibling", "personId": "norse_sigurd", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 9" }], "notes": "Half-brother of Sigurd." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Helgakviða Hundingsbana I & II (Poetic Edda)" }, { "kind": "primary", "reference": "Vǫlsunga saga ch. 9" }], "weight": "primary" }
+    ],
+    "notes": "Son of Sigmund by Borghild and half-brother of Sigurd. The hero of the two Helgi-lays of the Poetic Edda: slayer of Hunding, beloved of the valkyrie Sigrún, and — uniquely in the corpus — a dead hero who rides back from the grave to his mourning bride, a haunting attached to the belief that the lovers were reborn."
+  },
+  {
+    "id": "norse_sigurd",
+    "name": {
+      "primary": "Sigurd",
+      "alt": ["Sigurðr", "Sigurd Fáfnisbani", "Siegfried"],
+      "transliterations": {
+        "old-norse": "Sigurðr Fáfnisbani",
+        "etymology": "sigr 'victory' + an element cognate with vǫrðr 'guardian'; by-name Fáfnisbani 'Fáfnir's-bane.' Continental cognate Sîfrit/Siegfried."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_sigmund"],
+    "parentRoles": { "norse_sigmund": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 75, "mythicEnd": 225, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "posthumous-birth-and-fostering", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 13" }], "notes": "Born after Sigmund's death to Hjördís; fostered at the court of King Hjálprek by the smith Regin, who reforged the shards of Gram into a blade that split the anvil." },
+      { "typeStatus": "scion", "startEvent": "slaying-of-Fáfnir", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Fáfnismál (prose and stanzas)" }], "notes": "Dug a pit on Gnitaheiðr and drove Gram up into the dragon Fáfnir as it crawled to water. Roasting the heart, he tasted the blood, understood the speech of the nuthatches, and learned of Regin's planned treachery — whom he then killed, taking the hoard." },
+      { "typeStatus": "scion", "startEvent": "murder-by-the-Gjúkungs", "era": "mythic-prehistoric", "eraOrdering": 2, "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 30-32" }], "notes": "Married Gudrún under a potion of forgetfulness and won Brynhildr for Gunnar in his shape; when the deception unravelled, Brynhildr drove the Gjúkungs to have him killed, by Gotthorm." }
+    ],
+    "domains": [],
+    "faculties": [
+      { "id": "bird-speech", "name": "Understands the speech of birds", "inheritability": "none", "notes": "Gained when he tasted the heart-blood of the dragon Fáfnir; the nuthatches warn him of Regin.", "sources": [{ "kind": "primary", "reference": "Fáfnismál 32-38" }] },
+      { "id": "dragon-slayer", "name": "Slayer of the dragon Fáfnir", "inheritability": "none", "notes": "Killed the serpent Fáfnir from a pit, the deed that defines him as Fáfnisbani.", "sources": [{ "kind": "primary", "reference": "Fáfnismál, prose; Vǫlsunga saga ch. 18-19" }] }
+    ],
+    "materialCulture": [
+      { "id": "gram", "name": "Gram", "kind": "weapon", "role": "wielder", "sources": [{ "kind": "primary", "reference": "Reginsmál, prose; Vǫlsunga saga ch. 15" }] },
+      { "id": "andvaranaut", "name": "Andvaranaut", "kind": "ring", "role": "owner", "sources": [{ "kind": "primary", "reference": "Reginsmál, prose; Vǫlsunga saga ch. 14" }] },
+      { "id": "grani", "name": "Grani", "kind": "mount", "role": "owner", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 13" }] },
+      { "id": "fafnirs-hoard", "name": "Fáfnir's hoard", "kind": "treasure", "role": "owner", "sources": [{ "kind": "primary", "reference": "Fáfnismál; Vǫlsunga saga ch. 19-20" }] }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "norse_sigmund", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 12-13" }], "notes": "Posthumous son of Sigmund by Hjördís." },
+      { "kind": "sibling", "personId": "norse_helgi_hundingsbane", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 9, 12" }], "notes": "Half-brother; both sons of Sigmund." },
+      { "kind": "father-of", "personId": "norse_aslaug", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 29; Ragnars saga loðbrókar ch. 1" }], "notes": "Daughter by Brynhildr." },
+      { "kind": "father-of", "personId": "norse_svanhild", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 32; Skáldskaparmál" }], "notes": "Daughter by Gudrún." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Reginsmál, Fáfnismál, Sigrdrífumál (Poetic Edda)" }, { "kind": "primary", "reference": "Vǫlsunga saga ch. 13-32" }, { "kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál" }], "weight": "primary" },
+      { "claim": "dragon-slaying", "citations": [{ "kind": "primary", "reference": "Fáfnismál, prose" }], "weight": "primary" }
+    ],
+    "notes": "Sigurðr Fáfnisbani, the supreme hero of the North and the Siegfried of continental legend. Posthumous son of Sigmund; reforged his father's sword Gram, slew the dragon Fáfnir, took the cursed hoard and the ring Andvaranaut, gained the speech of birds from the dragon's blood, and woke the valkyrie Brynhildr. His entanglement with the Gjúkungs and Brynhildr brings about his murder and the curse's spread through the Niflung line."
+  },
+  {
+    "id": "norse_aslaug",
+    "name": {
+      "primary": "Áslaug",
+      "alt": ["Aslaug", "Kráka", "Randalín"],
+      "transliterations": {
+        "old-norse": "Áslaug",
+        "etymology": "áss 'god' + laug (a feminine name-element); 'god-betrothed.' Known in disguise as Kráka 'crow.'"
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_sigurd"],
+    "parentRoles": { "norse_sigurd": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 100, "mythicEnd": 260, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "hidden-childhood", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Ragnars saga loðbrókar ch. 1" }], "notes": "Orphaned daughter of Sigurd and Brynhildr, hidden by her foster-father Heimir inside a harp and raised in secret as the peasant-girl Kráka." },
+      { "typeStatus": "scion", "startEvent": "marriage-to-Ragnar", "era": "mythic-prehistoric", "eraOrdering": 1, "sources": [{ "kind": "primary", "reference": "Ragnars saga loðbrókar ch. 4-9" }], "notes": "Married Ragnar Loðbrók and bore his sons; proved her royal descent when her son Sigurd was born with the image of a serpent in his eye." }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "father", "personId": "norse_sigurd", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Ragnars saga loðbrókar ch. 1" }], "notes": "Daughter of Sigurd and the valkyrie Brynhildr." },
+      { "kind": "sibling", "personId": "norse_svanhild", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 29, 32" }], "notes": "Half-sister; both daughters of Sigurd." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Ragnars saga loðbrókar ch. 1-9" }, { "kind": "primary", "reference": "Vǫlsunga saga ch. 29 (Áslaug named as daughter of Sigurd and Brynhildr)" }], "weight": "primary" }
+    ],
+    "notes": "Daughter of Sigurd and Brynhildr, and the bridge between the Vǫlsung cycle and the saga of Ragnar Loðbrók: raised in hiding as the crow-girl Kráka, she became Ragnar's queen and mother of his sons (Ívarr the Boneless, Björn Ironside, Sigurd Snake-in-the-Eye), carrying the Vǫlsung blood into the legendary royal lines of Scandinavia."
+  },
+  {
+    "id": "norse_svanhild",
+    "name": {
+      "primary": "Svanhild",
+      "alt": ["Svanhildr", "Sunilda"],
+      "transliterations": {
+        "old-norse": "Svanhildr",
+        "etymology": "svanr 'swan' + hildr 'battle'; 'swan-battle.' The historical echo Sunilda appears in Jordanes."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Norse",
+    "primaryTradition": "Norse",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["norse_sigurd"],
+    "parentRoles": { "norse_sigurd": "paternal" },
+    "temporal": { "era": "mythic-prehistoric", "mythicStart": 100, "mythicEnd": 260, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      { "typeStatus": "scion", "startEvent": "death-by-trampling", "era": "mythic-prehistoric", "eraOrdering": 0, "sources": [{ "kind": "primary", "reference": "Hamðismál, prose; Skáldskaparmál" }], "notes": "Married to the Gothic king Jǫrmunrekkr; falsely accused of adultery with his son Randvér, she was condemned to be trampled by horses — which would not harm her until her face was covered." }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "father", "personId": "norse_sigurd", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 32" }], "notes": "Daughter of Sigurd and Gudrún." },
+      { "kind": "sibling", "personId": "norse_aslaug", "era": "mythic-prehistoric", "sources": [{ "kind": "primary", "reference": "Vǫlsunga saga ch. 29, 32" }], "notes": "Half-sister of Áslaug, both daughters of Sigurd." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hamðismál; Guðrúnarhvǫt (Poetic Edda)" }, { "kind": "primary", "reference": "Snorri Sturluson, Skáldskaparmál" }, { "kind": "secondary", "reference": "Jordanes, Getica 24 (the Gothic Sunilda, historical kernel)" }], "weight": "primary" }
+    ],
+    "notes": "Daughter of Sigurd and Gudrún. Her death — trampled by horses on the false charge of adultery with the Gothic king Jǫrmunrekkr's son — provokes her half-brothers Hamðir and Sǫrli to the doomed final revenge that closes the Vǫlsung-Niflung cycle. A rare case with a historical kernel: Jordanes records the Gothic queen Sunilda torn apart by horses under Ermanaric."
+  }
+]
+```
+
+These eight figures complete the attested descent of the Völsung line from the
+existing Rerir, each tied in by parentIds and cited to primary Old Norse sources.

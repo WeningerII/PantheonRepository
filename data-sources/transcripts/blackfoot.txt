@@ -1,0 +1,161 @@
+Figure-authoring batch — the Blackfoot (Niitsitapi) divine core.
+
+The corpus held only the Morning Star / Feather Woman / Star Boy lineage
+(ipisowaahs, soatsaki, poia) and none of the central deities. This batch adds the
+well-attested core of the Blackfoot pantheon — the creator-trickster Napi (Old
+Man), the supreme Sun (Naato'si), his wife the Moon (Ko'komiki'somm), the Thunder
+who gave the medicine pipe (Ksiistsikomm), Cold Maker (Aisoyimstan), and the
+under-water Wind Maker — sourced to George Bird Grinnell, "Blackfoot Lodge Tales"
+(1892) and "Blackfeet Indian Stories" (1913/1915); Clark Wissler & D. C. Duvall,
+"Mythology of the Blackfoot Indians" (1908); and Walter McClintock, "The Old North
+Trail" (1910). The Sun and Moon are wired as reciprocal spouses and as the father
+and mother of the existing Morning Star (ipisowaahs). Niitsi'powahsin orthography
+(Naato'si, Ko'komiki'somm, Aapisowaahs, Sspommitapiiksi) follows the Blackfoot
+Confederacy and native-languages.org; the abstract creator Apistotoke is described
+but, being explicitly never personified, is not entered as a figure.
+
+```json
+[
+  {
+    "id": "blackfoot_napi",
+    "name": { "primary": "Napi", "alt": ["Old Man", "Na'pi", "Naapi", "Napiw", "Napioa", "Na'pe"], "transliterations": { "blackfoot": "Náápi", "rom": "Naapi", "etymology": "Blackfoot 'Old Man' (pronounced nah-pee); the culture-hero and creator-trickster, sometimes identified by Grinnell with the Sun." } },
+    "type": "deity", "origin": "canon", "tradition": "Blackfoot", "primaryTradition": "Blackfoot", "sex": "male", "vitalStatus": "immortal",
+    "parentIds": [], "parentRoles": {},
+    "temporal": { "era": "matumataapi" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 0, "startEvent": "making-of-the-earth", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Old Man Stories'" }, { "kind": "primary", "reference": "Wissler & Duvall, Mythology of the Blackfoot Indians (1908), 'Tales of the Old Man: The Making of the Earth'" }], "notes": "Old Man (Na'pi) traveled from the south, covering the country and making as he went — shaping the land, the rivers, mountains, prairie, timber, and the animals, and ordering how the world should be." },
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 1, "startEvent": "creation-of-the-people", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Blackfoot Genesis'" }], "notes": "He molded the first people from clay, and on the second morning told the images to 'Arise and walk'; they followed him to the river, and he told them his name was Na'pi, Old Man. He then showed them the roots and berries and the trees whose bark was good to eat, and taught them which animals to hunt and how to live." },
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 2, "startEvent": "ordering-of-death", "sources": [{ "kind": "primary", "reference": "Wissler & Duvall, Mythology of the Blackfoot Indians (1908), 'Order of Life and Death' / 'Why People Die Forever'" }], "notes": "With his companion Old Woman (Kipitaakii) he settled the order of life and death by a floating-object test; Old Woman's stone sank, fixing that people should die forever, so that there might be sorrow and sympathy in the world." },
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 3, "startEvent": "departure-of-old-man", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Old Man Stories'" }], "notes": "After teaching the people and instituting their customs, Old Man went away — in the tales he passes off toward the mountains in the west, telling the people he would some day return." }
+    ],
+    "domains": [
+      { "sphereId": "creation", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }, { "kind": "primary", "reference": "Wissler & Duvall (1908)" }] },
+      { "sphereId": "trickery", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "native-languages.org, 'Napi (Old Man)'" }] },
+      { "sphereId": "culture-and-custom", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "equated-with", "personId": "blackfoot_natosi", "era": "matumataapi", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), Religion chapter — 'the Sun and Old Man are one... Nātōs is only another name for Na'pi'" }], "notes": "Grinnell's older informants identified Old Man (Na'pi) the creator with the Sun (Naato'si); modern Blackfoot tradition keeps Napi, the Sun, and the abstract Apistotoke distinct." }
+    ],
+    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "George Bird Grinnell, Blackfoot Lodge Tales: The Story of a Prairie People (1892)" }, { "kind": "primary", "reference": "Clark Wissler & D. C. Duvall, Mythology of the Blackfoot Indians (1908)" }], "weight": "secondary" } ],
+    "notes": "Napi, 'Old Man,' is the central Blackfoot culture-hero: a creator-trickster who shaped the land, the animals and the first people, taught them which foods to eat and how to live, and instituted their customs, then departed toward the western mountains promising to return. He is at once a powerful maker and a foolish, greedy, often comic figure. Grinnell records that the Blackfeet sometimes identified Na'pi with the Sun (the creator), while modern Blackfoot tradition keeps Napi, the Sun (Naato'si), and the abstract creator Apistotoke distinct."
+  },
+  {
+    "id": "blackfoot_natosi",
+    "name": { "primary": "Naato'si", "alt": ["Natos", "Natosi", "Notos", "the Sun", "Sun Chief"], "transliterations": { "blackfoot": "Naato'si", "rom": "Naatosi", "etymology": "Blackfoot 'Holy One' (used also for the sun in everyday speech); the supreme Sun deity, foremost of the Sky Beings (Sspommitapiiksi)." } },
+    "type": "deity", "origin": "canon", "tradition": "Blackfoot", "primaryTradition": "Blackfoot", "sex": "male", "vitalStatus": "immortal",
+    "parentIds": [], "parentRoles": {},
+    "temporal": { "era": "star-stories" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "star-stories", "eraOrdering": 0, "startEvent": "sun-as-chief-god", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Blackfoot in His Social and Religious Aspect'" }], "notes": "The Sun (Natos) is the chief god of the Blackfeet — the most powerful of all, who made the world and rules it, and to whom the people pray. Grinnell notes the everyday identification of the Sun with Na'pi, Old Man." },
+      { "typeStatus": "deity", "era": "star-stories", "eraOrdering": 1, "startEvent": "marriage-to-the-moon", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }, { "kind": "secondary", "reference": "native-languages.org, 'Natosi'" }], "notes": "The Sun's wife is the Moon, Ko'komiki'somm ('night light'), and their children are the stars, the foremost of whom is Morning Star; together they are honored as the parents of the celestial Above-People." },
+      { "typeStatus": "deity", "era": "star-stories", "eraOrdering": 2, "startEvent": "institution-of-the-medicine-lodge", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Medicine Lodge'" }], "notes": "The great summer festival — the Medicine Lodge (Sun Dance) — is held in the Sun's honor, the sufferings undergone by the participants being offered to him as a sacrifice." }
+    ],
+    "domains": [
+      { "sphereId": "sun", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "native-languages.org, 'Natosi'" }] },
+      { "sphereId": "supreme-sky-deity", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }] },
+      { "sphereId": "light-and-warmth", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Blackfoot Confederacy, on the Sky Beings (Sspommitapiiksi)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "blackfoot_kokomikisomm", "era": "star-stories", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }, { "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }], "notes": "Husband of the Moon, Ko'komiki'somm." },
+      { "kind": "father-of", "personId": "ipisowaahs", "era": "star-stories", "sources": [{ "kind": "secondary", "reference": "native-languages.org, 'Natosi' and 'Apisirahts'" }, { "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }], "notes": "Father of Morning Star (Ipi'sowaahs), son of the Sun and the Moon." },
+      { "kind": "equated-with", "personId": "blackfoot_napi", "era": "matumataapi", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), Religion chapter — 'the Sun and Old Man are one... Nātōs is only another name for Na'pi'" }], "notes": "Grinnell's older informants identified the Sun (Naato'si) with Old Man (Na'pi) the creator; modern Blackfoot tradition keeps them distinct." }
+    ],
+    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), religion chapter" }, { "kind": "primary", "reference": "Walter McClintock, The Old North Trail (1910)" }], "weight": "secondary" } ],
+    "notes": "Naato'si, the Sun, is the supreme deity of the Blackfoot — 'the Holy One,' chief and ruler of the world and foremost of the Sky Beings, to whom the annual Medicine Lodge (Sun Dance) is offered. His wife is the Moon, Ko'komiki'somm, and the stars are their children, chief among them Morning Star (Ipi'sowaahs). Grinnell reports the Sun was often identified with Na'pi (Old Man) the creator; modern Blackfoot tradition distinguishes Naato'si, who was himself created by the abstract Apistotoke, as the principal — though not the original creator — god."
+  },
+  {
+    "id": "blackfoot_kokomikisomm",
+    "name": { "primary": "Ko'komiki'somm", "alt": ["Komorkis", "Kokomikis", "Kokomikeis", "Ko-ko-mik'-e-is", "the Moon", "Night Light"], "transliterations": { "blackfoot": "Ko'komiki'somm", "rom": "Kokomikisomm", "etymology": "Blackfoot 'night light' (McClintock: 'the moon, Kō-kō-mik'-ē-ĭs, night light'); the Moon, wife of the Sun." } },
+    "type": "deity", "origin": "canon", "tradition": "Blackfoot", "primaryTradition": "Blackfoot", "sex": "female", "vitalStatus": "immortal",
+    "parentIds": [], "parentRoles": {},
+    "temporal": { "era": "star-stories" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "star-stories", "eraOrdering": 0, "startEvent": "moon-wife-of-the-sun", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }, { "kind": "secondary", "reference": "native-languages.org, 'Komorkis'" }], "notes": "The Moon, Ko'komiki'somm ('night light'), is the wife of the Sun and the second-eldest of the sacred Sky People; she is the mother of the stars, of whom the most important is Morning Star." },
+      { "typeStatus": "deity", "era": "star-stories", "eraOrdering": 1, "startEvent": "mother-of-morning-star", "sources": [{ "kind": "secondary", "reference": "native-languages.org, 'Apisirahts'" }], "notes": "With the Sun she is the mother of Morning Star (Ipi'sowaahs), the celestial hero whose own descent (through Soatsaki and Poïa) the Blackfoot trace." }
+    ],
+    "domains": [
+      { "sphereId": "moon", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }] },
+      { "sphereId": "night", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "native-languages.org, 'Komorkis'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [
+      { "kind": "spouse", "personId": "blackfoot_natosi", "era": "star-stories", "sources": [{ "kind": "primary", "reference": "McClintock, The Old North Trail (1910)" }, { "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }], "notes": "Wife of the Sun, Naato'si." },
+      { "kind": "mother-of", "personId": "ipisowaahs", "era": "star-stories", "sources": [{ "kind": "secondary", "reference": "native-languages.org, 'Komorkis' and 'Apisirahts'" }], "notes": "Mother of Morning Star (Ipi'sowaahs), child of the Moon and the Sun." }
+    ],
+    "sources": [ { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Walter McClintock, The Old North Trail (1910)" }, { "kind": "secondary", "reference": "native-languages.org, 'Komorkis, the Blackfoot moon goddess'" }], "weight": "secondary" } ],
+    "notes": "Ko'komiki'somm, the Moon — 'night light' — is the wife of the Sun (Naato'si) and second-eldest of the sacred Sky Beings. With the Sun she is the mother of the stars, foremost among them Morning Star (Ipi'sowaahs), making her the celestial mother at the head of the Morning Star / Feather Woman / Star Boy lineage already in the registry."
+  },
+  {
+    "id": "blackfoot_ksiistsikomm",
+    "name": { "primary": "Ksiistsikomm", "alt": ["Thunder", "the Thunderbird", "Ksistsikom", "Make-Thunder"], "transliterations": { "blackfoot": "Ksiistsikomm", "rom": "Ksiistsikomm", "etymology": "Blackfoot 'thunder'; the Thunder-being, often appearing as a great bird, who gave the people the medicine pipe." } },
+    "type": "deity", "origin": "canon", "tradition": "Blackfoot", "primaryTradition": "Blackfoot", "sex": "male", "vitalStatus": "immortal",
+    "parentIds": [], "parentRoles": {},
+    "temporal": { "era": "matumataapi" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 0, "startEvent": "thunder-the-power-of-storm", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'" }], "notes": "Thunder is a great and dreaded power who lives in the mountains and comes in the spring; he makes the noise and the rain, sometimes shoots down and kills, and in the old time would carry off a man's wife." },
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 1, "startEvent": "gift-of-the-medicine-pipe", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'" }], "notes": "Overcome at last by the man who carried the Raven's power — the one creature Thunder cannot kill — Thunder gave up the stolen wife and bestowed his pipe: 'when I first come in the spring, you shall fill and light this pipe, and you shall pray to me,' for Thunder brings the rain that makes all things grow. Thus came the first Medicine Pipe." }
+    ],
+    "domains": [
+      { "sphereId": "thunder-and-storm", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }] },
+      { "sphereId": "rain-and-growth", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [
+      { "id": "thunder-medicine-pipe", "name": "Thunder Medicine Pipe (Niinaimsskaahkoyinnimaan)", "kind": "ritual-object", "role": "originator", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }, { "kind": "primary", "reference": "Wissler, Ceremonial Bundles of the Blackfoot Indians (1912)" }], "notes": "The Thunder Medicine Pipe, highest class of Blackfoot ceremonial bundle, is said to have come directly from Thunder." }
+    ],
+    "relations": [],
+    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'" }, { "kind": "primary", "reference": "Clark Wissler, Ceremonial Bundles of the Blackfoot Indians (1912)" }], "weight": "secondary" } ],
+    "notes": "Ksiistsikomm, Thunder — the Thunderbird — is the storm-power who lives in the mountains and returns each spring with the rain that makes all things grow. In Grinnell's 'Origin of the Medicine Pipe' he carries off a man's wife and is defeated only through the power of the Raven, the one being he cannot kill; in surrender he gives mankind the first Medicine Pipe, the highest of the Blackfoot ceremonial bundles, with the charge to fill and pray over it when he comes in the spring."
+  },
+  {
+    "id": "blackfoot_aisoyimstan",
+    "name": { "primary": "Aisoyimstan", "alt": ["Cold Maker", "Ai'-so-yim-stan", "Aisoyimstam"], "transliterations": { "blackfoot": "Aisoyimstan", "rom": "Aisoyimstan", "etymology": "Blackfoot 'Cold Maker'; the white-clad bringer of winter, snow, frost and storm." } },
+    "type": "deity", "origin": "canon", "tradition": "Blackfoot", "primaryTradition": "Blackfoot", "sex": "male", "vitalStatus": "immortal",
+    "parentIds": [], "parentRoles": {},
+    "temporal": { "era": "matumataapi" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 0, "startEvent": "the-bringer-of-winter", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfeet Indian Stories (1913), 'Cold Maker's Medicine'" }, { "kind": "secondary", "reference": "Lewis Spence, The Myths of the North American Indians (1914) — the white-clad winter-lord imagery" }], "notes": "Cold Maker brings the cold and the snow down from the north, freezing the land and blanketing it in snow; in Grinnell's 'Cold Maker's Medicine' he carries the snow to the Blackfoot winter camp. He is pictured as a white-clad figure — a man white in colour, with white hair and white apparel, on a white horse — an image recorded by Lewis Spence." }
+    ],
+    "domains": [
+      { "sphereId": "winter-and-cold", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfeet Indian Stories (1913), 'Cold Maker's Medicine'" }] },
+      { "sphereId": "snow-and-frost", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Lewis Spence, The Myths of the North American Indians (1914)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "George Bird Grinnell, Blackfeet Indian Stories (1913), 'Cold Maker's Medicine'" }, { "kind": "secondary", "reference": "Lewis Spence, The Myths of the North American Indians (1914)" }], "weight": "secondary" } ],
+    "notes": "Aisoyimstan, the Cold Maker, is the Blackfoot personification of winter, who brings the cold, snow, frost and storm down from the north — a character in Grinnell's 'Cold Maker's Medicine' (Blackfeet Indian Stories, 1913). The familiar image of him as a white man with white hair in white clothes on a white horse is recorded by Lewis Spence (1914). He stands opposed to the warmth of the Sun in the turning of the seasons on the northern plains."
+  },
+  {
+    "id": "blackfoot_wind_maker",
+    "name": { "primary": "Wind Maker", "alt": ["Wind-Maker"], "transliterations": { "blackfoot": "", "etymology": "English rendering of a Blackfoot under-water being who raises the wind; no securely attested Blackfoot form recorded in the source." } },
+    "type": "deity", "origin": "canon", "tradition": "Blackfoot", "primaryTradition": "Blackfoot", "sex": "male", "vitalStatus": "immortal",
+    "parentIds": [], "parentRoles": {},
+    "temporal": { "era": "matumataapi" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "matumataapi", "eraOrdering": 0, "startEvent": "the-under-water-wind-being", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Blackfoot in His Social and Religious Aspect'" }], "notes": "Wind Maker is one of the Under Water Persons of Blackfoot belief; it is told that he has been seen and his form described. He is said to live under the water at the head of the Upper St. Mary's Lake, and when he wants the wind to blow he makes the waves roll, and these cause the wind." }
+    ],
+    "domains": [
+      { "sphereId": "wind", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }] },
+      { "sphereId": "water", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Grinnell, Blackfoot Lodge Tales (1892)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [ { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), religion chapter (Under Water Persons)" }], "weight": "secondary" } ],
+    "notes": "Wind Maker is a Blackfoot Under-Water Person — a localized water-spirit rather than a sky deity — said to dwell beneath the head of the Upper St. Mary's Lake. Grinnell records that he has been seen and his form described, and that he raises the wind by making the waves roll. Among the lesser personified powers (Above Persons, Ground Persons, Under Water Persons) he was invoked, with Thunder and Cold Maker, to influence the weather."
+  }
+]
+```
+
+Six figures completing the Blackfoot divine core — Napi (Old Man) the creator-
+trickster; the Sun (Naato'si) and Moon (Ko'komiki'somm) wired as reciprocal
+spouses and as father and mother of the existing Morning Star (ipisowaahs);
+Thunder (Ksiistsikomm) who gave the medicine pipe; Cold Maker (Aisoyimstan); and
+the under-water Wind Maker — sourced to Grinnell (1892; 1913), Wissler & Duvall
+(1908), Wissler (1912), and McClintock (1910).

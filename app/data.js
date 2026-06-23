@@ -6547,6 +6547,7 @@ const buildPeopleSeed = () => {
         { kind: 'father-of', externalRef: { name: 'Sanamahi (Lainingthou Sanamahi, king of all gods)', tradition: 'Manipuri' }, era: 'primordial', sources: [{ kind: 'primary', reference: 'Sanamahi Laihui' }] },
         { kind: 'father-of', externalRef: { name: 'Pakhangba (primordial dragon-deity, ancestor of the seven Meitei clans)', tradition: 'Manipuri' }, era: 'primordial', sources: [{ kind: 'primary', reference: 'Wakoklon Heelel Thilel Salai Amailon Pukok Puya' }] },
         { kind: 'father-of', personId: 'manipuri_chothe_thangwai_pakhangba', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Chothe Thangwai Pakhangba puya' }] },
+        { kind: 'spouse', personId: 'manipuri_leimarel', era: 'primordial', sources: [{ kind: 'secondary', reference: 'S. N. Arambam Parratt, The Religion of Manipur (1980) — Salailen/Atiya Guru Sidaba and the earth-mother Leimarel Sidabi as the divine parents of Sanamahi and Pakhangba' }] },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Wakoklon Heelel Thilel Salai Amailon Pukok Puya (one of the oldest known Meitei scriptures); Leithak Leikhalon Puya; Sanamahi Laihui; Cheitharol Kumbaba (royal chronicle of Manipur, 33 CE-1955); Chothe Thangwai Pakhangba puya' }], weight: 'primary' },
@@ -6746,6 +6747,7 @@ const buildPeopleSeed = () => {
         { kind: 'mother-of', personId: 'suludnon_labaw_donggon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'mother-of', personId: 'suludnon_humadapnon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'mother-of', personId: 'suludnon_dumalapdap', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
+        { kind: 'spouse', personId: 'suludnon_tungkung_langit', era: 'primordial', sources: [{ kind: 'secondary', reference: 'F. Landa Jocano, Sulod Society (1968); the Panay creation myth (Tungkung Langit and Alunsina)' }], notes: 'In the Panay creation myth Alunsina is the wife of the supreme sky-god Tungkung Langit, who banishes her — a cosmogonic cycle distinct from her Hinilawod role as Datu Paubari\'s partner and mother of the triplets.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hinilawod / Sugidanon epic (Suludnon oral epic of Panay Island, the longest-known Philippine epic at ~30,000+ lines across the full cycle); Suludnon babaylan oral-recitation tradition; F. Landa Jocano academic compilation' }], weight: 'primary' },
@@ -6798,6 +6800,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling', personId: 'suludnon_humadapnon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'sibling', personId: 'suludnon_dumalapdap', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
+        { kind: 'enemy', personId: 'suludnon_saragnayan', era: 'heroic-age', sources: [{ kind: 'secondary', reference: 'F. Landa Jocano, Hinilawod — Saragnayan defeats and imprisons Labaw Donggon over Nagmalitong Yawa, and is slain by Labaw Donggon\'s sons' }], notes: 'Principal antagonist: the Lord of Darkness of Gadlum who imprisons Labaw Donggon and is avenged by his sons Asu Mangga and Buyung Baranugon.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hinilawod / Sugidanon epic (the eldest-brother cycle is the longest single sub-cycle of the epic, ~2,325 lines in the F. Landa Jocano transcription); F. Landa Jocano academic compilation' }], weight: 'primary' },
@@ -6826,6 +6829,7 @@ const buildPeopleSeed = () => {
       relations: [
         { kind: 'sibling', personId: 'suludnon_labaw_donggon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
         { kind: 'sibling', personId: 'suludnon_dumalapdap', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hinilawod' }] },
+        { kind: 'spouse', personId: 'suludnon_nagmalitong_yawa', era: 'heroic-age', sources: [{ kind: 'secondary', reference: 'F. Landa Jocano, Hinilawod: Adventures of Humadapnon — Humadapnon marries Nagmalitong Yawa, who rescues him from the Tarangban cave' }], notes: 'Marries the binukot enchantress Nagmalitong Yawa, who frees him from the Tarangban cave in the guise of the warrior Buyong Sunmasakay.' },
       ],
       sources: [
         { claim: 'existence', citations: [{ kind: 'primary', reference: 'Hinilawod / Sugidanon epic (Humadapnon cycle is the longest of the three at ~53,000 lines per the Sulod-people second-cycle estimation)' }], weight: 'primary' },
@@ -41668,6 +41672,359 @@ const NEW_FIGURES = [
   "notes": "Akan river-deity and war-spirit, chief of the atano; son of Nyame and Asase Yaa."
  },
  {
+  "id": "ambundu_kalunga",
+  "name": {
+   "primary": "Kalunga",
+   "alt": [
+    "Kalunga-ngombe",
+    "Ngana Kalunga",
+    "Kalunga ngombe"
+   ],
+   "transliterations": {
+    "kimbundu": "Kalunga (Kalunga-ngombe)",
+    "etymology": "Kimbundu Kalunga, glossed by Werner (1933) as denoting at once Death, the King of the Netherworld, and the sea; the netherworld-king title Kalunga-ngombe is rendered 'Kalunga of the cattle'. Ngana = 'Lord/Master'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "lord-of-death-the-netherworld-and-the-sea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II 'Where Man Came From, and How Death Came'"
+     }
+    ],
+    "notes": "Werner records of the Ambundu: 'Kalunga, a word which may mean either Death, the King of the Netherworld (usually called ... Kalunga-ngombe, \"Kalunga of the cattle\"), or the sea.' Kalunga is thus at once the personified power of death, the ruler of the land of the dead, and the sea/great water that bounds the living world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "ngunza-defies-death",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), tale 'How Ngunza defied Death' (the Ngunza Kilundu story)"
+     }
+    ],
+    "notes": "In Chatelain's Kimbundu tale, Ngunza Kilundu, learning that Lord Kalunga-ngombe has taken his brother, traps him and demands an accounting; Kalunga-ngombe protests that he does not kill wantonly — people are brought to him by their fellow-men or through their own fault — and later gives Ngunza seeds of useful plants. The episode personifies Kalunga-ngombe as the lord and gatekeeper of the dead."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death",
+    "term": "Kalunga",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), 'How Ngunza defied Death'"
+     }
+    ]
+   },
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     }
+    ]
+   },
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ambundu_kalunga_lord_of_the_dead",
+    "name": "Rules the dead and summons mortals to the netherworld",
+    "inheritability": "unique",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), 'How Ngunza defied Death'"
+     }
+    ],
+    "notes": "As Kalunga-ngombe he is King of the Netherworld to whom the dead are brought; in the Ngunza tale he insists death comes through human agency or fault, not his own caprice."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II 'Where Man Came From, and How Death Came'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894), 'How Ngunza defied Death'"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-lord-of-death-and-the-dead",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alice Werner, Myths and Legends of the Bantu (1933), Ch. II"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kalunga is the great Ambundu power of death, the sea, and the land of the dead — the three senses Werner (1933) records together for the word among 'the Ambundu of Angola'. In his personified guise as Lord Kalunga-ngombe ('Kalunga of the cattle'), King of the Netherworld, he is the ruler to whom the dead are gathered, and he is the antagonist of Chatelain's tale 'How Ngunza defied Death,' where he defends himself as a just rather than capricious bringer of death. The same root Kalunga is widespread among West-Central African Bantu peoples (Kongo, Chokwe, Ovimbundu), but the Death/Netherworld-king/sea cluster is here cited specifically for the Mbundu (Kimbundu). No Mbundu source assigns him kin or descent; he is figured as a primordial cosmic power rather than a member of a divine family."
+ },
+ {
+  "id": "ambundu_kianda",
+  "name": {
+   "primary": "Kianda",
+   "alt": [
+    "Quianda",
+    "Dandalunda"
+   ],
+   "transliterations": {
+    "kimbundu": "Kianda (pl. Ianda)",
+    "etymology": "Kimbundu kianda, singular of ianda 'mermaids / water-spirits'; a female spirit (or class of spirits) of the sea, rivers and lakes. The plural usage marks Kianda as both one goddess and many localized water-guardians."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-present"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-present",
+    "eraOrdering": 0,
+    "startEvent": "spirit-of-the-waters",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan (Kimbundu) ethnography and folklore of Luanda; reflected in the annual Luanda Island Feast (Festa da Ilha) honouring Kianda"
+     }
+    ],
+    "notes": "In living Kimbundu folklore, especially around Luanda and the Ilha de Luanda, Kianda is the spirit-protector of the sea and inland waters and of fishermen; offerings of food, drink and cloth are cast into the water to win safe voyages, good catches, fertility and protection from drowning. Each river, lake or pool may have its own kianda."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "term": "Kianda",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan/Kimbundu folklore; Luanda Island Feast tradition"
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan/Kimbundu folklore; Luanda Island Feast tradition"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ambundu_kianda_protector_of_waters",
+    "name": "Protects the waters, fishermen and voyagers",
+    "inheritability": "shared",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan/Kimbundu folklore; Luanda Island Feast tradition"
+     }
+    ],
+    "notes": "Grants safe passage, abundant catches and fertility in return for offerings; the faculty is shared because every body of water may host its own kianda."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Óscar Ribas, Angolan (Kimbundu) ethnography of Luanda; Luanda Island Feast (Festa da Ilha) tradition honouring Kianda"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Modern Angolan literary treatment: Pepetela, O Desejo de Kianda (The Return of the Water Spirit, 1995)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kianda is the water-spirit of Kimbundu (Mbundu) folklore, a female being (and class of beings, pl. ianda) of the sea, rivers and lakes, and the patron of fishermen, centred on Luanda and the Ilha de Luanda where the annual Luanda Island Feast still honours her. Unlike Nzambi and Kalunga she is NOT attested in Chatelain's 1894 corpus; her documentation is 20th-century and later (Óscar Ribas's Angolan ethnography; the living cult; modern Angolan letters such as Pepetela's O Desejo de Kianda), so she is recorded with era 'mythic-present'. She is frequently assimilated in colonial-era and popular imagery to a mermaid and, in Afro-Brazilian Bantu religion, to Dandalunda. No traditional Mbundu source gives her parentage or kin; she is treated as an autonomous (and plural) class of water-guardian."
+ },
+ {
+  "id": "ambundu_nzambi",
+  "name": {
+   "primary": "Nzambi",
+   "alt": [
+    "Nzambi a Mpungu",
+    "Nzambi Mpungu",
+    "Zambi"
+   ],
+   "transliterations": {
+    "kimbundu": "Nzambi (a Mpungu)",
+    "etymology": "Kimbundu/Bantu Nzambi 'God', with the epithet a Mpungu '(the) Almighty / Supreme'; the high creator-god. In Kimbundu usage the cognate nzambi/jinzambi can also denote ancestral spirits (Miller 1976)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-supreme-creator-high-god",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Molefi K. Asante & Ama Mazama (eds.), Encyclopedia of African Religion (SAGE, 2009), s.v. 'Nzambi'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joseph C. Miller, Kings and Kinsmen: Early Mbundu States in Angola (Oxford: Clarendon, 1976)"
+     }
+    ],
+    "notes": "Across the Kimbundu-speaking world Nzambi is the name of the supreme, remote creator high god, set above the ancestors and the nature-spirits (ilundu). The name and high-god sense are shared Bantu currency documented in Chatelain's Kimbundu material and in the wider Angolan record; the detailed creation myth elaborated for the neighbouring Kongo is NOT attributed to the Mbundu here."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "term": "Nzambi",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ambundu_nzambi_supreme_creator",
+    "name": "Supreme creator and ordainer of the cosmos",
+    "inheritability": "unique",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joseph C. Miller, Kings and Kinsmen (1976)"
+     }
+    ],
+    "notes": "As high god Nzambi is the maker and ultimate ordering power, but is characteristically otiose — not the object of regular transactional cult, which is directed to ancestors and lesser spirits."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Molefi K. Asante & Ama Mazama (eds.), Encyclopedia of African Religion (SAGE, 2009), s.v. 'Nzambi'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Joseph C. Miller, Kings and Kinsmen: Early Mbundu States in Angola (Oxford: Clarendon, 1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Héli Chatelain, Folk-Tales of Angola (1894)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-supreme-creator",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Asante & Mazama (eds.), Encyclopedia of African Religion (2009), s.v. 'Nzambi'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nzambi (a Mpungu) is the supreme creator high god in the religion of the Kimbundu-speaking Ambundu of Angola. The theonym is part of the common Bantu inheritance shared with the neighbouring Kongo, among whom the fullest creation cosmology was recorded; Mbundu attestation rests on the Kimbundu lexicon and ethnography (Chatelain 1894; Miller 1976) and the wider Angolan record (SAGE Encyclopedia of African Religion, 2009). Like many West-Central African high gods, Nzambi is conceived as remote and otiose, the maker and moral guarantor of the world rather than a deity of everyday cult, which centres on ancestors and the local nature-spirits (ilundu). Note that Miller records nzambi/jinzambi also being used of ancestral spirits in Mbundu speech, so the high-god identity is given here conservatively. No surviving Mbundu source assigns Nzambi kin, consort, or descent."
+ },
+ {
   "id": "andamanese_biliku",
   "name": {
    "primary": "Biliku",
@@ -48629,6 +48986,488 @@ const NEW_FIGURES = [
   "notes": "Creator god manifest as grain and acacia; head of the fourfold creative quaternity."
  },
  {
+  "id": "banyaruanda_gihanga",
+  "name": {
+   "primary": "Gihanga",
+   "alt": [
+    "Gihanga Ngomijana",
+    "Gihanga I"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Gihanga",
+    "etymology": "Kinyarwanda Gihanga, 'the Founder / the Creator / the one who establishes' (from guhanga, 'to create, found, originate'); the epithet Ngomijana is glossed 'the begetter / he of a hundred drums (ingoma)'."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 100,
+    "startEvent": "descent-from-the-ibimanuka-celestial-line",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004); Alexis Kagame, Inganji Karinga and Ubucurabwenge"
+     }
+    ],
+    "notes": "Gihanga belongs to the Ibimanuka ('those fallen from the heavens'), the divinely-descended ancestors of the kings: the dynastic poem Ubucurabwenge traces the line Nkuba (Lightning, king of the sky) > Kigwa/Sabizeze (the fallen one) > Muntu > ... > Gihanga. Vansina treats him as the legendary founder-archetype of the Nyiginya kingdom rather than a single historical man."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 101,
+    "startEvent": "introducer-of-cattle-fire-iron-and-the-arts-of-civilization",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Inganji Karinga"
+     }
+    ],
+    "notes": "As culture-hero Gihanga is credited with introducing the foundational arts of Great Lakes civilization — cattle-keeping, fire, ironworking and the forge, pottery, hunting and woodworking — and with founding centralized kingship; he is 'the first of Rwanda who introduced the cow and the drum.'"
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 102,
+    "startEvent": "founding-of-the-nyiginya-dynasty-and-the-dynastic-drum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga; Jan Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ],
+    "notes": "Gihanga founded the Nyiginya dynasty and instituted the dynastic drum Kalinga (Karinga), the palladium of the kingdom; he is reckoned the ancestor of the Rwandan kings and was succeeded by his son Kanyarwanda I Gahima, the eponym of Rwanda, who in tradition fathered the ancestors of the Tutsi, Hutu and Twa."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-present",
+    "eraOrdering": 103,
+    "startEvent": "the-perpetual-fire-of-gihanga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)"
+     }
+    ],
+    "notes": "The 'Fire of Gihanga' (an eternal flame kept perpetually alight at the royal court, at the place where the royal cattle are milked) was said to have burned continuously since Gihanga's reign; the well-being of the kingdom was held to be magically bound to its continuity, making Gihanga the living emblem of dynastic legitimacy and the covenant of heaven and earth."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "founding-kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ]
+   },
+   {
+    "sphereId": "cattle",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez (1964) — the perpetual Fire of Gihanga"
+     }
+    ]
+   },
+   {
+    "sphereId": "ironworking-and-smithing",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "kalinga-dynastic-drum",
+    "name": "Kalinga (Karinga), the dynastic drum",
+    "kind": "regalia",
+    "role": "instituted",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga (the title itself, 'the victorious Karinga'); Jan Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ]
+   },
+   {
+    "id": "fire-of-gihanga",
+    "name": "The perpetual Fire of Gihanga",
+    "kind": "sacred-fire",
+    "role": "instituted",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "banyaruanda_imana",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet (1961); Kagame, Inganji Karinga — Imana as creator and origin of the dynastic line"
+     }
+    ],
+    "notes": "Reciprocal of Imana creator-of Gihanga: Imana is the creator and ultimate origin of the line of which Gihanga is the founder, not his genealogical father."
+   },
+   {
+    "kind": "descendant-of",
+    "personId": "banyaruanda_nkuba",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge / Inganji Karinga; d'Hertefelt & Coupez (1964) — Nkuba > Kigwa > Muntu > ... > Gihanga"
+     }
+    ],
+    "notes": "Gihanga descends, through the Ibimanuka line (Kigwa/Sabizeze, Muntu, Kazikamuntu, etc.), from the celestial king Nkuba; the intervening links are not in this corpus, so the relation is directed multi-generational descent rather than direct fatherhood."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga (1943/1959) and Ubucurabwenge; Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004); Pierre Smith, Le recit populaire au Rwanda (1975)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "founder-of-the-nyiginya-dynasty-and-culture-hero",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "descent-from-the-ibimanuka-sky-line",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Gihanga (Gihanga Ngomijana, 'the Founder'), the divine culture-hero and founder-king of the Nyiginya dynasty in Rwandan oral tradition. He belongs to the Ibimanuka ('those fallen from the heavens'), the celestial royal ancestry that the dynastic poem Ubucurabwenge traces from Nkuba (Lightning, king of the sky) through Kigwa/Sabizeze and Muntu down to Gihanga. As culture-hero he is credited with introducing cattle-keeping, fire, ironworking and the forge, pottery, hunting and woodworking, and with instituting centralized kingship and the dynastic drum Kalinga (Karinga); the perpetual 'Fire of Gihanga' at the royal court, bound to the kingdom's well-being, embodied his founding act. He is the reputed ancestor of the Rwandan kings, succeeded by his son Kanyarwanda I Gahima, eponym of Rwanda. Jan Vansina, applying critical method to the oral corpus, treats Gihanga as a legendary archetype of the transition from clan leadership to monarchy rather than a single historical individual; he is here typed demigod as a divinely-descended, cultically-venerated founder-hero whose direct parents do not figure in this corpus."
+ },
+ {
+  "id": "banyaruanda_imana",
+  "name": {
+   "primary": "Imana",
+   "alt": [
+    "Imaana",
+    "Imana yacu"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Imana",
+    "etymology": "Kinyarwanda/Kirundi Imana, the supreme being; popularly glossed 'the Almighty / the source of all good fortune'. The same name is the ordinary word for God across Rwanda and Burundi."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-high-god-creator-of-rwanda-and-burundi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (Oxford UP / IAI, 1961); Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)"
+     }
+    ],
+    "notes": "Imana is the supreme, transcendent High God and creator of the Banyarwanda and Barundi, the maker and sustainer of the universe and the source of all good fortune; per Maquet, 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans.' Benevolent but remote, he is not the object of a direct organized cult, mediating with the human world through ancestral spirits (abazimu) and the imandwa."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-potter-who-fashions-and-gives-children",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (1933), 'Imana and the Childless Couple'; Pierre Smith, Le récit populaire au Rwanda (1975)"
+     }
+    ],
+    "notes": "Imana is figured as the Potter (Umubumbyi) who molds human beings and bestows children: in the popular tale 'Imana and the Childless Couple' he grants the barren Nyinakigwa three children — the sons Kigwa and Lututsi and a daughter — on condition she not reveal their origin, an episode that links the High God to the origin of the celestial Kigwa line that descends to the kings."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-present",
+    "eraOrdering": 2,
+    "startEvent": "imana-yirirwa-ahandi-igataha-i-rwanda",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, La poesie dynastique au Rwanda (1951) and Inganji Karinga; Aimable Twagilimana, Historical Dictionary of Rwanda (proverb 'Imana yirirwa ahandi igataha i Rwanda')"
+     }
+    ],
+    "notes": "Proverbially 'Imana yacu' ('our Imana'), the High God is held to favour Rwanda above all lands: 'Imana yirirwa ahandi igataha i Rwanda' — 'Imana spends the day elsewhere but comes home to Rwanda to sleep.' He is conventionally pictured with very long arms, able to reach into human affairs and to ward off death."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet, The Premise of Inequality in Ruanda (1961); d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-high-god",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, La philosophie bantu-rwandaise de l'Etre (1956); d'Hertefelt & Coupez (1964)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-giver-of-children",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (1933); Pierre Smith, Le recit populaire au Rwanda (1975)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "creator-of",
+    "personId": "banyaruanda_gihanga",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet (1961) — 'Imana the maker created Kazikamuntu, the common ancestor of all humans'; Kagame, Inganji Karinga (the line of Gihanga descends from the celestial origin Imana engenders)"
+     }
+    ],
+    "notes": "Imana is the creator and ultimate origin of the dynastic line that issues in Gihanga; he is the principal agent behind its celestial descent ('it is Imana who engenders'), not its genealogical father."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "banyaruanda_nkuba",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, La philosophie bantu-rwandaise de l'Etre (1956); d'Hertefelt & Coupez (1964) — Imana as the transcendent Creator over the celestial order of which Nkuba is the king of the sky"
+     }
+    ],
+    "notes": "The transcendent High God stands above and is the creator of the celestial order, of which Nkuba (the king of the sky) is the apex; the supremacy of Imana over the sky-king is the cosmological frame of the dynastic origin myth."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga (1943/1959) and La philosophie bantu-rwandaise de l'Etre (1956); Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Jacques J. Maquet, The Premise of Inequality in Ruanda (1961); Pierre Smith, Le recit populaire au Rwanda (1975)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "supreme-creator-of-rwanda-and-burundi",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet (1961); d'Hertefelt & Coupez (1964)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Imana is the supreme creator and High God of the Banyarwanda of Rwanda and the Barundi of Burundi, the maker and sustainer of the cosmos and the wellspring of all good fortune. Per Maquet (1961) 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans,' and per the dynastic cosmology he is the principal agent behind the celestial origin of the royal line ('it is Imana who engenders'). Imagined with very long arms and figured as the Potter who fashions humans and grants children to the childless (the tale 'Imana and the Childless Couple'), he is benevolent but remote, receiving no direct organized cult and mediating with humanity through the ancestral abazimu and the imandwa spirits (whose king is Babinga and whose cult-hero is Ryangombe). The proverb 'Imana yirirwa ahandi igataha i Rwanda' — 'Imana spends the day elsewhere but comes home to Rwanda to sleep' — expresses the Banyarwanda sense of him as 'Imana yacu,' our own High God. With Christian missionization the name was retained for the Christian God across the Great Lakes."
+ },
+ {
+  "id": "banyaruanda_nkuba",
+  "name": {
+   "primary": "Nkuba",
+   "alt": [
+    "Umwami wo Hejuru",
+    "King of the Sky"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Nkuba",
+    "etymology": "Kinyarwanda Nkuba, 'lightning / thunderbolt' (the thunder-flash); as a personage he is titled Umwami wo Hejuru, 'the King of the Sky / lord of heaven'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "king-of-the-sky-lord-of-lightning",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Ubucurabwenge / Inganji Karinga"
+     }
+    ],
+    "notes": "Nkuba is Lightning personified, Umwami wo Hejuru ('the King of the Sky'), lord of the celestial realm in the dynastic origin myth; the sky over which he rules is 'the point of departure' from which the royal line descends to earth."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "father-of-kigwa-and-head-of-the-ibimanuka-line",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge; Jan Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ],
+    "notes": "In the genealogy of the Ibimanuka, 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu'; the line continues through the celestial ancestors down to the founder-king Gihanga, making Nkuba the apical sky-father of the Rwandan royal lineage."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky-and-lightning",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)"
+     }
+    ]
+   },
+   {
+    "sphereId": "celestial-kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge / Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "ancestor-of",
+    "personId": "banyaruanda_gihanga",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964) — Nkuba > Kigwa > Muntu > ... > Gihanga"
+     }
+    ],
+    "notes": "Reciprocal of Gihanga descendant-of Nkuba: Nkuba is the apical sky-father of the Ibimanuka line that descends (through Kigwa/Sabizeze, Muntu, etc.) to the founder-king Gihanga."
+   },
+   {
+    "kind": "created-by",
+    "personId": "banyaruanda_imana",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, La philosophie bantu-rwandaise de l'Etre (1956); d'Hertefelt & Coupez (1964) — Imana the transcendent Creator above the celestial order"
+     }
+    ],
+    "notes": "Reciprocal of Imana creator-of Nkuba: the transcendent High God Imana is the creator standing above the celestial order of which Nkuba is the king of the sky."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Ubucurabwenge / Inganji Karinga; Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "king-of-the-sky-and-father-of-the-ibimanuka-line",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nkuba ('Lightning / Thunderbolt'), titled Umwami wo Hejuru, 'the King of the Sky,' is the celestial sovereign at the head of the Ibimanuka ('those fallen from the heavens') in the Rwandan dynastic origin myth recorded by d'Hertefelt & Coupez and in Kagame's dynastic poem Ubucurabwenge. In the royal genealogy 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu,' and the line continues through the celestial ancestors down to the founder-king Gihanga, so that Nkuba is the apical sky-father of the Rwandan kings. The sky he rules is the 'point of departure' from which the royal line descends to earth; above him stands the transcendent creator Imana, who is the principal agent of that engendering. Nkuba is distinct from (though comparable to) the Nyanga lightning-god of the same name in neighboring Great Lakes Bantu traditions."
+ },
+ {
   "id": "basque_basajaun",
   "name": {
    "primary": "Basajaun",
@@ -50990,6 +51829,748 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Central Bhil/Rathwa deity of the Pithora painting tradition (eastern Gujarat / western Madhya Pradesh). The painting is the cult: a vow-discharging ritual fresco depicting the Bhil creation."
+ },
+ {
+  "id": "blackfoot_aisoyimstan",
+  "name": {
+   "primary": "Aisoyimstan",
+   "alt": [
+    "Cold Maker",
+    "Ai'-so-yim-stan",
+    "Aisoyimstam"
+   ],
+   "transliterations": {
+    "blackfoot": "Aisoyimstan",
+    "rom": "Aisoyimstan",
+    "etymology": "Blackfoot 'Cold Maker'; the white-clad bringer of winter, snow, frost and storm."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "matumataapi"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 0,
+    "startEvent": "the-bringer-of-winter",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfeet Indian Stories (1913), 'Cold Maker's Medicine'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lewis Spence, The Myths of the North American Indians (1914) — the white-clad winter-lord imagery"
+     }
+    ],
+    "notes": "Cold Maker brings the cold and the snow down from the north, freezing the land and blanketing it in snow; in Grinnell's 'Cold Maker's Medicine' he carries the snow to the Blackfoot winter camp. He is pictured as a white-clad figure — a man white in colour, with white hair and white apparel, on a white horse — an image recorded by Lewis Spence."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "winter-and-cold",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfeet Indian Stories (1913), 'Cold Maker's Medicine'"
+     }
+    ]
+   },
+   {
+    "sphereId": "snow-and-frost",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lewis Spence, The Myths of the North American Indians (1914)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "George Bird Grinnell, Blackfeet Indian Stories (1913), 'Cold Maker's Medicine'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lewis Spence, The Myths of the North American Indians (1914)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Aisoyimstan, the Cold Maker, is the Blackfoot personification of winter, who brings the cold, snow, frost and storm down from the north — a character in Grinnell's 'Cold Maker's Medicine' (Blackfeet Indian Stories, 1913). The familiar image of him as a white man with white hair in white clothes on a white horse is recorded by Lewis Spence (1914). He stands opposed to the warmth of the Sun in the turning of the seasons on the northern plains."
+ },
+ {
+  "id": "blackfoot_kokomikisomm",
+  "name": {
+   "primary": "Ko'komiki'somm",
+   "alt": [
+    "Komorkis",
+    "Kokomikis",
+    "Kokomikeis",
+    "Ko-ko-mik'-e-is",
+    "the Moon",
+    "Night Light"
+   ],
+   "transliterations": {
+    "blackfoot": "Ko'komiki'somm",
+    "rom": "Kokomikisomm",
+    "etymology": "Blackfoot 'night light' (McClintock: 'the moon, Kō-kō-mik'-ē-ĭs, night light'); the Moon, wife of the Sun."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "star-stories"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "star-stories",
+    "eraOrdering": 0,
+    "startEvent": "moon-wife-of-the-sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "McClintock, The Old North Trail (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Komorkis'"
+     }
+    ],
+    "notes": "The Moon, Ko'komiki'somm ('night light'), is the wife of the Sun and the second-eldest of the sacred Sky People; she is the mother of the stars, of whom the most important is Morning Star."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "star-stories",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-morning-star",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Apisirahts'"
+     }
+    ],
+    "notes": "With the Sun she is the mother of Morning Star (Ipi'sowaahs), the celestial hero whose own descent (through Soatsaki and Poïa) the Blackfoot trace."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "McClintock, The Old North Trail (1910)"
+     }
+    ]
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Komorkis'"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "blackfoot_natosi",
+    "era": "star-stories",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "McClintock, The Old North Trail (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ],
+    "notes": "Wife of the Sun, Naato'si."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "ipisowaahs",
+    "era": "star-stories",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Komorkis' and 'Apisirahts'"
+     }
+    ],
+    "notes": "Mother of Morning Star (Ipi'sowaahs), child of the Moon and the Sun."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Walter McClintock, The Old North Trail (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Komorkis, the Blackfoot moon goddess'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Ko'komiki'somm, the Moon — 'night light' — is the wife of the Sun (Naato'si) and second-eldest of the sacred Sky Beings. With the Sun she is the mother of the stars, foremost among them Morning Star (Ipi'sowaahs), making her the celestial mother at the head of the Morning Star / Feather Woman / Star Boy lineage already in the registry."
+ },
+ {
+  "id": "blackfoot_ksiistsikomm",
+  "name": {
+   "primary": "Ksiistsikomm",
+   "alt": [
+    "Thunder",
+    "the Thunderbird",
+    "Ksistsikom",
+    "Make-Thunder"
+   ],
+   "transliterations": {
+    "blackfoot": "Ksiistsikomm",
+    "rom": "Ksiistsikomm",
+    "etymology": "Blackfoot 'thunder'; the Thunder-being, often appearing as a great bird, who gave the people the medicine pipe."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "matumataapi"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 0,
+    "startEvent": "thunder-the-power-of-storm",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'"
+     }
+    ],
+    "notes": "Thunder is a great and dreaded power who lives in the mountains and comes in the spring; he makes the noise and the rain, sometimes shoots down and kills, and in the old time would carry off a man's wife."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 1,
+    "startEvent": "gift-of-the-medicine-pipe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'"
+     }
+    ],
+    "notes": "Overcome at last by the man who carried the Raven's power — the one creature Thunder cannot kill — Thunder gave up the stolen wife and bestowed his pipe: 'when I first come in the spring, you shall fill and light this pipe, and you shall pray to me,' for Thunder brings the rain that makes all things grow. Thus came the first Medicine Pipe."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thunder-and-storm",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ]
+   },
+   {
+    "sphereId": "rain-and-growth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "thunder-medicine-pipe",
+    "name": "Thunder Medicine Pipe (Niinaimsskaahkoyinnimaan)",
+    "kind": "ritual-object",
+    "role": "originator",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Wissler, Ceremonial Bundles of the Blackfoot Indians (1912)"
+     }
+    ],
+    "notes": "The Thunder Medicine Pipe, highest class of Blackfoot ceremonial bundle, is said to have come directly from Thunder."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), 'Origin of the Medicine Pipe'"
+     },
+     {
+      "kind": "primary",
+      "reference": "Clark Wissler, Ceremonial Bundles of the Blackfoot Indians (1912)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Ksiistsikomm, Thunder — the Thunderbird — is the storm-power who lives in the mountains and returns each spring with the rain that makes all things grow. In Grinnell's 'Origin of the Medicine Pipe' he carries off a man's wife and is defeated only through the power of the Raven, the one being he cannot kill; in surrender he gives mankind the first Medicine Pipe, the highest of the Blackfoot ceremonial bundles, with the charge to fill and pray over it when he comes in the spring."
+ },
+ {
+  "id": "blackfoot_napi",
+  "name": {
+   "primary": "Napi",
+   "alt": [
+    "Old Man",
+    "Na'pi",
+    "Naapi",
+    "Napiw",
+    "Napioa",
+    "Na'pe"
+   ],
+   "transliterations": {
+    "blackfoot": "Náápi",
+    "rom": "Naapi",
+    "etymology": "Blackfoot 'Old Man' (pronounced nah-pee); the culture-hero and creator-trickster, sometimes identified by Grinnell with the Sun."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "matumataapi"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 0,
+    "startEvent": "making-of-the-earth",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Old Man Stories'"
+     },
+     {
+      "kind": "primary",
+      "reference": "Wissler & Duvall, Mythology of the Blackfoot Indians (1908), 'Tales of the Old Man: The Making of the Earth'"
+     }
+    ],
+    "notes": "Old Man (Na'pi) traveled from the south, covering the country and making as he went — shaping the land, the rivers, mountains, prairie, timber, and the animals, and ordering how the world should be."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 1,
+    "startEvent": "creation-of-the-people",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Blackfoot Genesis'"
+     }
+    ],
+    "notes": "He molded the first people from clay, and on the second morning told the images to 'Arise and walk'; they followed him to the river, and he told them his name was Na'pi, Old Man. He then showed them the roots and berries and the trees whose bark was good to eat, and taught them which animals to hunt and how to live."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 2,
+    "startEvent": "ordering-of-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wissler & Duvall, Mythology of the Blackfoot Indians (1908), 'Order of Life and Death' / 'Why People Die Forever'"
+     }
+    ],
+    "notes": "With his companion Old Woman (Kipitaakii) he settled the order of life and death by a floating-object test; Old Woman's stone sank, fixing that people should die forever, so that there might be sorrow and sympathy in the world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 3,
+    "startEvent": "departure-of-old-man",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'Old Man Stories'"
+     }
+    ],
+    "notes": "After teaching the people and instituting their customs, Old Man went away — in the tales he passes off toward the mountains in the west, telling the people he would some day return."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Wissler & Duvall (1908)"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Napi (Old Man)'"
+     }
+    ]
+   },
+   {
+    "sphereId": "culture-and-custom",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "blackfoot_natosi",
+    "era": "matumataapi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), Religion chapter — 'the Sun and Old Man are one... Nātōs is only another name for Na'pi'"
+     }
+    ],
+    "notes": "Grinnell's older informants identified Old Man (Na'pi) the creator with the Sun (Naato'si); modern Blackfoot tradition keeps Napi, the Sun, and the abstract Apistotoke distinct."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "George Bird Grinnell, Blackfoot Lodge Tales: The Story of a Prairie People (1892)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Clark Wissler & D. C. Duvall, Mythology of the Blackfoot Indians (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Napi, 'Old Man,' is the central Blackfoot culture-hero: a creator-trickster who shaped the land, the animals and the first people, taught them which foods to eat and how to live, and instituted their customs, then departed toward the western mountains promising to return. He is at once a powerful maker and a foolish, greedy, often comic figure. Grinnell records that the Blackfeet sometimes identified Na'pi with the Sun (the creator), while modern Blackfoot tradition keeps Napi, the Sun (Naato'si), and the abstract creator Apistotoke distinct."
+ },
+ {
+  "id": "blackfoot_natosi",
+  "name": {
+   "primary": "Naato'si",
+   "alt": [
+    "Natos",
+    "Natosi",
+    "Notos",
+    "the Sun",
+    "Sun Chief"
+   ],
+   "transliterations": {
+    "blackfoot": "Naato'si",
+    "rom": "Naatosi",
+    "etymology": "Blackfoot 'Holy One' (used also for the sun in everyday speech); the supreme Sun deity, foremost of the Sky Beings (Sspommitapiiksi)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "star-stories"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "star-stories",
+    "eraOrdering": 0,
+    "startEvent": "sun-as-chief-god",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Blackfoot in His Social and Religious Aspect'"
+     }
+    ],
+    "notes": "The Sun (Natos) is the chief god of the Blackfeet — the most powerful of all, who made the world and rules it, and to whom the people pray. Grinnell notes the everyday identification of the Sun with Na'pi, Old Man."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "star-stories",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-the-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "McClintock, The Old North Trail (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Natosi'"
+     }
+    ],
+    "notes": "The Sun's wife is the Moon, Ko'komiki'somm ('night light'), and their children are the stars, the foremost of whom is Morning Star; together they are honored as the parents of the celestial Above-People."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "star-stories",
+    "eraOrdering": 2,
+    "startEvent": "institution-of-the-medicine-lodge",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Medicine Lodge'"
+     }
+    ],
+    "notes": "The great summer festival — the Medicine Lodge (Sun Dance) — is held in the Sun's honor, the sufferings undergone by the participants being offered to him as a sacrifice."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Natosi'"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-sky-deity",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ]
+   },
+   {
+    "sphereId": "light-and-warmth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot Confederacy, on the Sky Beings (Sspommitapiiksi)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "blackfoot_kokomikisomm",
+    "era": "star-stories",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "McClintock, The Old North Trail (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ],
+    "notes": "Husband of the Moon, Ko'komiki'somm."
+   },
+   {
+    "kind": "father-of",
+    "personId": "ipisowaahs",
+    "era": "star-stories",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "native-languages.org, 'Natosi' and 'Apisirahts'"
+     },
+     {
+      "kind": "primary",
+      "reference": "McClintock, The Old North Trail (1910)"
+     }
+    ],
+    "notes": "Father of Morning Star (Ipi'sowaahs), son of the Sun and the Moon."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "blackfoot_napi",
+    "era": "matumataapi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), Religion chapter — 'the Sun and Old Man are one... Nātōs is only another name for Na'pi'"
+     }
+    ],
+    "notes": "Grinnell's older informants identified the Sun (Naato'si) with Old Man (Na'pi) the creator; modern Blackfoot tradition keeps them distinct."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), religion chapter"
+     },
+     {
+      "kind": "primary",
+      "reference": "Walter McClintock, The Old North Trail (1910)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Naato'si, the Sun, is the supreme deity of the Blackfoot — 'the Holy One,' chief and ruler of the world and foremost of the Sky Beings, to whom the annual Medicine Lodge (Sun Dance) is offered. His wife is the Moon, Ko'komiki'somm, and the stars are their children, chief among them Morning Star (Ipi'sowaahs). Grinnell reports the Sun was often identified with Na'pi (Old Man) the creator; modern Blackfoot tradition distinguishes Naato'si, who was himself created by the abstract Apistotoke, as the principal — though not the original creator — god."
+ },
+ {
+  "id": "blackfoot_wind_maker",
+  "name": {
+   "primary": "Wind Maker",
+   "alt": [
+    "Wind-Maker"
+   ],
+   "transliterations": {
+    "blackfoot": "",
+    "etymology": "English rendering of a Blackfoot under-water being who raises the wind; no securely attested Blackfoot form recorded in the source."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "matumataapi"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 0,
+    "startEvent": "the-under-water-wind-being",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892), 'The Blackfoot in His Social and Religious Aspect'"
+     }
+    ],
+    "notes": "Wind Maker is one of the Under Water Persons of Blackfoot belief; it is told that he has been seen and his form described. He is said to live under the water at the head of the Upper St. Mary's Lake, and when he wants the wind to blow he makes the waves roll, and these cause the wind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ]
+   },
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "George Bird Grinnell, Blackfoot Lodge Tales (1892), religion chapter (Under Water Persons)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wind Maker is a Blackfoot Under-Water Person — a localized water-spirit rather than a sky deity — said to dwell beneath the head of the Upper St. Mary's Lake. Grinnell records that he has been seen and his form described, and that he raises the wind by making the waves roll. Among the lesser personified powers (Above Persons, Ground Persons, Under Water Persons) he was invoked, with Thunder and Cold Maker, to influence the weather."
  },
  {
   "id": "bodo_bathoubwrai",
@@ -73341,6 +74922,949 @@ const NEW_FIGURES = [
   "notes": "Estonian song-god. English 'Song God' leads; native Vanemuine in term. IMPORTANT scholarly caveat: Vanemuine is largely a learned 19th-c. literary creation (Faehlmann, then Kreutzwald), reshaping Finnish Väinämöinen; included per the registry's request but flagged as pseudomythology per Ants Viires. His instrument is the kannel (Estonian kantele)."
  },
  {
+  "id": "etruscan_aita",
+  "name": {
+   "primary": "Aita",
+   "alt": [
+    "Eita",
+    "Calu"
+   ],
+   "transliterations": {
+    "etruscan": "aita",
+    "rom": "Aita",
+    "etymology": "A borrowing of Greek Hades (Aïdes); the Etruscan lord of the dead."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-lord-of-the-dead",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia (Aita and Phersipnei enthroned); de Grummond (2006) ch. 11"
+     }
+    ],
+    "notes": "King of the underworld, depicted wearing a wolf-skin cap, enthroned beside his consort Phersipnei (Persephone)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aita",
+     "script": "Etruscan",
+     "rom": "Aita"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "etruscan_nethuns",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "notes": "Lord of the dead beside his brother Nethuns of the waters — the Etruscan reflex of the Hades/Poseidon division of realms beneath Tinia's sky."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Painted Tomb of Orcus II, Tarquinia (4th c. BCE)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan ruler of the dead, the counterpart of Hades/Pluto, recognizable by his wolf-skin cap. Enthroned in the painted tombs beside Phersipnei; attended by the death-spirits Vanth and Charun."
+ },
+ {
+  "id": "etruscan_charun",
+  "name": {
+   "primary": "Charun",
+   "alt": [
+    "Charu",
+    "Charontes"
+   ],
+   "transliterations": {
+    "etruscan": "charun",
+    "rom": "Charun",
+    "etymology": "Named after Greek Charon but reconceived as a hammer-wielding underworld guardian-demon."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-underworld-guardian",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of the Anina; François Tomb, Vulci; de Grummond (2006) ch. 11"
+     }
+    ],
+    "notes": "Blue-skinned underworld demon armed with a great hammer with which he seals the door of death; guardian of the threshold to the world of the dead."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death-and-passage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Charun",
+     "script": "Etruscan",
+     "rom": "Charun"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Painted tombs and red-figure vases"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "etruscan_vanth",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Painted tombs of Tarquinia"
+     }
+    ],
+    "notes": "Paired with the psychopomp Vanth at the threshold of death."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "François Tomb (Vulci); painted tombs of Tarquinia"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan guardian-demon of the underworld, his name borrowed from the Greek ferryman Charon but his form Etruscan: blue-fleshed, bestial, wielding a hammer to seal death's door. Often appears in multiples (the Charontes) and paired with Vanth in the painted tombs."
+ },
+ {
+  "id": "etruscan_fufluns",
+  "name": {
+   "primary": "Fufluns",
+   "alt": [
+    "Pacha",
+    "Fufluns Pachies"
+   ],
+   "transliterations": {
+    "etruscan": "fufluns",
+    "rom": "Fufluns",
+    "etymology": "Possibly linked to Populonia (Etruscan Fufluna), his cult-city; god of wine and vegetal life, equated with Dionysus/Bacchus."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-wine-god",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mirror inscriptions naming Fufluns with Semla and Areatha; de Grummond (2006) ch. 8"
+     }
+    ],
+    "notes": "God of wine, ecstasy and renewed vegetation; son of Tinia by the mortal Semla (Semele). Patron of Populonia."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wine-and-vegetation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Fufluns",
+     "script": "Etruscan",
+     "rom": "Fufluns"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror engravings (CSE)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "etruscan_tinia",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mirror of Fufluns with Semla and Tinia; de Grummond (2006)"
+     }
+    ],
+    "notes": "Son of Tinia (Etruscan Zeus) by the mortal Semla (Semele)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan bronze mirrors naming Fufluns, Semla, Areatha"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan god of wine, vegetation and ecstatic release, counterpart of Dionysus. Son of Tinia and the mortal Semla; like his Greek twin he descends to the underworld to retrieve his mother. Worshipped especially at Populonia (Fufluna)."
+ },
+ {
+  "id": "etruscan_laran",
+  "name": {
+   "primary": "Laran",
+   "alt": [],
+   "transliterations": {
+    "etruscan": "laran",
+    "rom": "Laran",
+    "etymology": "Etruscan war-god, counterpart of Ares/Mars; shown as a nude youth with helmet and spear."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-war-god",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mirror inscriptions naming Laran; de Grummond (2006) ch. 6"
+     }
+    ],
+    "notes": "God of war, depicted as a helmeted youth with spear, sometimes paired with Turan."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Laran",
+     "script": "Etruscan",
+     "rom": "Laran"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror engravings"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "etruscan_turan",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror engravings (CSE)"
+     }
+    ],
+    "notes": "Paired with Turan, goddess of love."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Engraved bronze mirrors naming Laran"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan god of war, counterpart of Ares and Mars, shown as a young helmeted spearman. Sometimes appears as the companion of Turan, a pairing echoing the Greek Ares and Aphrodite."
+ },
+ {
+  "id": "etruscan_nethuns",
+  "name": {
+   "primary": "Nethuns",
+   "alt": [
+    "Nethunus"
+   ],
+   "transliterations": {
+    "etruscan": "nethuns",
+    "rom": "Nethuns",
+    "etymology": "Cognate with Latin Neptunus; god of wells, springs and the sea."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-water-god",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza (region of Nethuns); de Grummond (2006) ch. 9"
+     }
+    ],
+    "notes": "God of fresh water, wells and the sea, wielder of the trident; one of the nine gods able to hurl thunderbolts in the Etruscan reckoning."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Nethuns",
+     "script": "Etruscan",
+     "rom": "Nethuns"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "etruscan_aita",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "notes": "Brother of Aita; together they hold the watery and infernal realms."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza; votive inscriptions"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan god of water — wells, springs and the sea — and source of the Roman Neptune. Named on the Liver of Piacenza and reckoned among the gods who command the thunderbolt."
+ },
+ {
+  "id": "etruscan_selvans",
+  "name": {
+   "primary": "Selvans",
+   "alt": [],
+   "transliterations": {
+    "etruscan": "selvans",
+    "rom": "Selvans",
+    "etymology": "Etruscan god of boundaries and wild woodland; the source of the Roman Silvanus."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-boundary-god",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza (region of Selva); votive bronzes; de Grummond (2006) ch. 9"
+     }
+    ],
+    "notes": "God of the wild, of woods and of property boundaries; protector of fields and their limits."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "woodland-and-boundaries",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Selvans",
+     "script": "Etruscan",
+     "rom": "Selvans"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "council-of",
+    "personId": "etruscan_tinia",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza (the region Selva within Tinia's celestial order)"
+     }
+    ],
+    "notes": "Named on the Liver of Piacenza among the gods of Tinia's divided heaven."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza; votive inscriptions to Selvans"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan god of the wilderness, woodland and boundary-stones, ancestor of the Roman Silvanus. Named on the Liver of Piacenza and in votive dedications guarding the edges of cultivated land."
+ },
+ {
+  "id": "etruscan_sethlans",
+  "name": {
+   "primary": "Sethlans",
+   "alt": [],
+   "transliterations": {
+    "etruscan": "sethlans",
+    "rom": "Sethlans",
+    "etymology": "Etruscan smith-god, counterpart of Hephaestus/Vulcan; possibly the source of the name Vulcanus."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-smith-god",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mirror showing Sethlans at the birth of Menrva from Tinia's head; de Grummond (2006) ch. 7"
+     }
+    ],
+    "notes": "Divine craftsman and fire-god; on engraved mirrors he splits Tinia's skull with his axe to release the armed Menrva."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fire-and-smithcraft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Sethlans",
+     "script": "Etruscan",
+     "rom": "Sethlans"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror engravings (CSE)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "frees",
+    "personId": "etruscan_menrva",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror of the birth of Menrva (CSE)"
+     }
+    ],
+    "notes": "Splits the head of Tinia with his axe to release the armed Menrva."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Engraved bronze mirrors; votive inscriptions"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan god of fire and the forge, counterpart of Hephaestus and Vulcan. On mirrors he is the craftsman who frees Menrva from the head of Tinia with his axe."
+ },
+ {
+  "id": "etruscan_tages",
+  "name": {
+   "primary": "Tages",
+   "alt": [
+    "Tarchies"
+   ],
+   "transliterations": {
+    "etruscan": "tarchies",
+    "rom": "Tarchies",
+    "etymology": "The child-seer who revealed the Etrusca Disciplina; Latin Tages, Etruscan Tarchies."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "rising-from-the-furrow",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cicero, De Divinatione 2.50-51; Ovid, Metamorphoses 15.553-559"
+     }
+    ],
+    "notes": "A divine child with the wisdom of an old man, plowed up from a furrow at Tarquinia, who dictated the doctrine of divination to the assembled Etruscans before dying or vanishing."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divination-and-revelation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tarchies",
+     "script": "Etruscan",
+     "rom": "Tarchies"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Piacenza-region tradition; Cicero De Divinatione"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "grandchild-of",
+    "personId": "etruscan_tinia",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Festus, s.v. (Tages, grandson of Jupiter/Tinia); Cicero, De Divinatione 2.50"
+     }
+    ],
+    "notes": "Named in the Roman antiquarian tradition as the grandson of Tinia (Jupiter)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Cicero, De Divinatione 2.50-51"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ovid, Metamorphoses 15.553-559"
+     },
+     {
+      "kind": "primary",
+      "reference": "Engraved mirror from Tuscania showing Tarchies and Pava Tarchies"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The revealer-numen of the Etrusca Disciplina: a child plowed from the earth at Tarquinia with the face of a boy and the wisdom of a sage, who dictated the arts of haruspicy and the reading of lightning before passing away. The fountainhead of Etruscan sacred science, named on the Tuscania mirror as Tarchies."
+ },
+ {
+  "id": "etruscan_thesan",
+  "name": {
+   "primary": "Thesan",
+   "alt": [],
+   "transliterations": {
+    "etruscan": "thesan",
+    "rom": "Thesan",
+    "etymology": "Etruscan dawn-goddess, cognate in function with Eos/Aurora; the name relates to words for 'dawn/divination.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-dawn-goddess",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mirror engravings of Thesan bearing a youth; de Grummond (2006) ch. 5"
+     }
+    ],
+    "notes": "Goddess of the dawn and of childbirth and light; shown winged, carrying off mortal lovers like the Greek Eos."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dawn-and-light",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Thesan",
+     "script": "Etruscan",
+     "rom": "Thesan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror engravings"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "celestial-deity-of",
+    "personId": "etruscan_tinia",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006); Martianus Capella I (the Etruscan sixteen-region heaven)"
+     }
+    ],
+    "notes": "Goddess of the dawn within the celestial order governed by Tinia."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Engraved bronze mirrors naming Thesan"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan goddess of the dawn, counterpart of Eos and Aurora, associated with birth and the light of day. On mirrors she is winged and carries off a youthful lover, mirroring Eos and Tithonus."
+ },
+ {
+  "id": "etruscan_turan",
+  "name": {
+   "primary": "Turan",
+   "alt": [
+    "Turant"
+   ],
+   "transliterations": {
+    "etruscan": "turan",
+    "rom": "Turan",
+    "etymology": "Etruscan tur- 'to give'; 'the Giver/Lady,' goddess of love and fecundity, equated by the Romans with Venus and the Greeks with Aphrodite."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-love",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Engraved bronze mirrors (CSE); de Grummond, Etruscan Myth (2006) ch. 6"
+     }
+    ],
+    "notes": "Tutelary goddess of Velch (Vulci); patroness of lovers, shown with her companion-spirits the Lasas and her beloved Atunis."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "love-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Turan",
+     "script": "Etruscan",
+     "rom": "Turan"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza; mirror inscriptions"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "etruscan_laran",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror engravings pairing Turan and Laran (CSE)"
+     }
+    ],
+    "notes": "Paired with the war-god Laran on engraved mirrors, the Etruscan reflex of the Aphrodite-Ares pairing."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Liver of Piacenza (outer rim, region of Turan)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan goddess of love, desire and fertility, the counterpart of Aphrodite/Venus and tutelary deity of Vulci. Her lover is Atunis (Adonis) and her attendants the winged Lasas. One of the great gods named on the bronze Liver of Piacenza."
+ },
+ {
+  "id": "etruscan_vanth",
+  "name": {
+   "primary": "Vanth",
+   "alt": [],
+   "transliterations": {
+    "etruscan": "vanth",
+    "rom": "Vanth",
+    "etymology": "Etruscan winged female death-spirit and psychopomp; an indigenous demon of the underworld with no Greek equivalent."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-death-spirit",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of the Anina and Tomb of Orcus, Tarquinia; de Grummond (2006) ch. 11"
+     }
+    ],
+    "notes": "Winged female psychopomp who attends the moment of death, often carrying a torch and scroll; benevolent guide rather than tormentor."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "death-and-passage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Vanth",
+     "script": "Etruscan",
+     "rom": "Vanth"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Painted tombs, Tarquinia"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "etruscan_charun",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Painted tombs of Tarquinia (Vanth and Charun together)"
+     }
+    ],
+    "notes": "Paired with Charun as the death-spirits who attend the dying in the painted tombs."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of the Anina, Tarquinia; funerary urns and vases"
+     },
+     {
+      "kind": "secondary",
+      "reference": "de Grummond, Etruscan Myth (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan winged death-spirit, a female psychopomp who appears at the moment of death bearing a torch to light the way. Indigenous to Etruria with no Greek counterpart; she guides rather than punishes, frequently paired with Charun."
+ },
+ {
   "id": "evenki_buga",
   "name": {
    "primary": "Sky-Universe",
@@ -90805,6 +93329,751 @@ const NEW_FIGURES = [
   "notes": "God of death and the dead, judge of souls, son of Surya, twin of Yami (distinct from hindu_dharma)"
  },
  {
+  "id": "hittite_arinna",
+  "name": {
+   "primary": "Sun-goddess of Arinna",
+   "alt": [
+    "Arinniti",
+    "Wurusemu",
+    "Arinitti"
+   ],
+   "transliterations": {
+    "hittite": "ᵈUTU URUArinna",
+    "rom": "Arinniti",
+    "etymology": "The Sun-goddess of the cult-city Arinna; supreme goddess of the Hittite state and queen of heaven and earth."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-state-goddess",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Prayer of Mursili II to the Sun-goddess of Arinna (CTH 376)"
+     }
+    ],
+    "notes": "Chief goddess of the Hittite realm, who grants kingship and victory; the queen prays to her as 'Sun-goddess of Arinna, my lady, queen of all lands.'"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sovereignty-and-the-sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Arinniti",
+     "script": "Hittite",
+     "rom": "Arinniti"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "CTH 376; Hittite royal prayers"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hittite_tarhunna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite state-cult texts; CTH 376"
+     }
+    ],
+    "notes": "Consort of the Storm-god of Hatti."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "hittite_telipinu",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     }
+    ],
+    "notes": "Mother of the vanishing god Telipinu."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "hittite_mezzulla",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories"
+     }
+    ],
+    "notes": "Mother of the intercessor-goddess Mezzulla."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Prayer of Mursili II to the Sun-goddess of Arinna (CTH 376)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. Beckman, 'Hittite Religion,' in Religions of the Ancient World (2004)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Supreme goddess of the Hittite state and patron of its kings, the Sun-goddess of the holy city Arinna. Consort of the Storm-god Tarhunna and source of royal legitimacy and victory; addressed as queen of heaven and earth in the great royal prayers."
+ },
+ {
+  "id": "hittite_hannahanna",
+  "name": {
+   "primary": "Hannahanna",
+   "alt": [
+    "Hannahannas"
+   ],
+   "transliterations": {
+    "hittite": "ᵈHannahanna",
+    "rom": "Hannahanna",
+    "etymology": "From Hittite hanna- 'grandmother'; the reduplicated 'Grandmother-goddess,' a primeval mother-deity."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "sending-the-bee",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324); Disappearance of the Storm-god (CTH 325)"
+     }
+    ],
+    "notes": "The wise mother-goddess who, when gods and men fail to find a vanished deity, sends out the bee to sting him awake and bring him home, breaking the blight."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood-and-fate",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Hannahanna",
+     "script": "Hittite",
+     "rom": "Hannahanna"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite disappearing-god myths"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "helper-of",
+    "personId": "hittite_telipinu",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     }
+    ],
+    "notes": "Sends the bee that finds and rouses the vanished Telipinu, breaking the blight."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hoffner, Hittite Myths (1998)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Hittite 'Grandmother,' a primeval mother- and birth-goddess (identified with the Mesopotamian-Hurrian Hannahanna/Nintu) who resolves the disappearing-god crises by sending the bee to find and rouse the lost deity. Associated with childbirth and destiny."
+ },
+ {
+  "id": "hittite_illuyanka",
+  "name": {
+   "primary": "Illuyanka",
+   "alt": [
+    "Illujanka",
+    "Hedammu(comparandum)"
+   ],
+   "transliterations": {
+    "hittite": "MUŠilluyanka",
+    "rom": "Illuyanka",
+    "etymology": "Hittite illuyanka simply means 'serpent, dragon'; the chaos-serpent adversary of the Storm-god."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "defeat-by-the-storm-god",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "The serpent first overcomes the Storm-god, but is destroyed in two recensions — entrapped by Inara's feast, or robbed of the Storm-god's stolen heart and eyes and slain at the sea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "chaos-serpent",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Illuyanka",
+     "script": "Hittite",
+     "rom": "Illuyanka"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "hittite_tarhunna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Adversary of the Storm-god."
+   },
+   {
+    "kind": "enemy",
+    "personId": "hittite_inara",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Entrapped by Inara's feast."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321), in Hoffner, Hittite Myths (1998), pp. 10-14"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The chaos-serpent of Hittite myth, adversary of the Storm-god in the tale recited at the purulli festival. In the first version Inara traps it through feasting; in the second it steals the Storm-god's heart and eyes before he recovers them through a half-mortal son and slays the dragon at the sea — a combat-myth cognate with the wider Indo-European dragon-slaying."
+ },
+ {
+  "id": "hittite_inara",
+  "name": {
+   "primary": "Inara",
+   "alt": [
+    "Inar"
+   ],
+   "transliterations": {
+    "hittite": "ᵈInara",
+    "rom": "Inara",
+    "etymology": "Hittite goddess of the wild animals of the steppe, daughter of the Storm-god."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "hittite_tarhunna"
+  ],
+  "parentRoles": {
+   "hittite_tarhunna": "paternal"
+  },
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "the-trap-for-Illuyanka",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "To avenge her father's first defeat she prepares a great feast, lures the serpent Illuyanka and its brood to gorge until they cannot return to their lair, and enlists the mortal Hupasiya to bind it for the Storm-god to kill."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wild-animals",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Inara",
+     "script": "Hittite",
+     "rom": "Inara"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hittite_tarhunna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Daughter of the Storm-god."
+   },
+   {
+    "kind": "enemy",
+    "personId": "hittite_illuyanka",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Lures and entraps the serpent for her father."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hoffner, Hittite Myths (1998), pp. 10-14"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hittite goddess of the wild creatures of the steppe and daughter of the Storm-god. The cunning protagonist of the first Illuyanka tale, who entraps the serpent with a feast and the help of the mortal Hupasiya, whom she takes as her lover."
+ },
+ {
+  "id": "hittite_mezzulla",
+  "name": {
+   "primary": "Mezzulla",
+   "alt": [
+    "Mezulla"
+   ],
+   "transliterations": {
+    "hittite": "ᵈMezzulla",
+    "rom": "Mezzulla",
+    "etymology": "Daughter of the Storm-god and the Sun-goddess of Arinna; an intercessor before her parents."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "hittite_tarhunna",
+   "hittite_arinna"
+  ],
+  "parentRoles": {
+   "hittite_tarhunna": "paternal",
+   "hittite_arinna": "maternal"
+  },
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-intercessor",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories and offering-lists (CTH 509-530)"
+     }
+    ],
+    "notes": "Worshipped at Arinna beside her parents; petitioners ask her to carry their prayers to the Sun-goddess and the Storm-god."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "intercession",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mezzulla",
+     "script": "Hittite",
+     "rom": "Mezzulla"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hittite_tarhunna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories"
+     }
+    ],
+    "notes": "Daughter of the Storm-god."
+   },
+   {
+    "kind": "mother",
+    "personId": "hittite_arinna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories"
+     }
+    ],
+    "notes": "Daughter of the Sun-goddess of Arinna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories and offering-lists"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Beckman, 'Hittite Religion' (2004)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of the Storm-god and the Sun-goddess of Arinna, worshipped alongside them in the great temple at Arinna. A divine intermediary who conveys the prayers of mortals to her powerful parents; her own daughter Zintuhi completes the Arinna triad's younger generation."
+ },
+ {
+  "id": "hittite_tarhunna",
+  "name": {
+   "primary": "Tarhunna",
+   "alt": [
+    "Tarhun",
+    "Storm-god of Hatti",
+    "Taru"
+   ],
+   "transliterations": {
+    "hittite": "ᵈU URUHatti",
+    "rom": "Tarhunna",
+    "etymology": "From the root tarh- 'to overcome, be mighty'; the Storm-god of Hatti, 'the Conqueror.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-storm-god",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Chief god of the Hittite state, lord of storm and battle, who twice defeats the serpent Illuyanka in the myth read at the purulli festival."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "storm-and-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tarhunna",
+     "script": "Hittite",
+     "rom": "Tarhunna"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "CTH 321; Hittite state treaties (divine witness lists)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hittite_arinna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite state-cult texts"
+     }
+    ],
+    "notes": "Consort of the Sun-goddess of Arinna."
+   },
+   {
+    "kind": "father-of",
+    "personId": "hittite_telipinu",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     }
+    ],
+    "notes": "Father of Telipinu."
+   },
+   {
+    "kind": "father-of",
+    "personId": "hittite_inara",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Father of the goddess Inara."
+   },
+   {
+    "kind": "father-of",
+    "personId": "hittite_mezzulla",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hittite cult inventories"
+     }
+    ],
+    "notes": "Father of Mezzulla."
+   },
+   {
+    "kind": "enemy",
+    "personId": "hittite_illuyanka",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321)"
+     }
+    ],
+    "notes": "Slayer of the serpent Illuyanka."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Illuyanka Myth (CTH 321); Hittite treaty god-lists"
+     },
+     {
+      "kind": "secondary",
+      "reference": "H. A. Hoffner, Hittite Myths, 2nd ed. (1998)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Storm-god of Hatti, head of the Hittite pantheon and husband of the Sun-goddess of Arinna. Wielder of storm and thunder and guarantor of treaties; the dragon-slayer of the Illuyanka myth, recited annually at the purulli new-year festival."
+ },
+ {
+  "id": "hittite_telipinu",
+  "name": {
+   "primary": "Telipinu",
+   "alt": [
+    "Telepinu"
+   ],
+   "transliterations": {
+    "hittite": "ᵈTelipinu",
+    "rom": "Telipinu",
+    "etymology": "Hittite god of agriculture and fertility, the divine son whose disappearance withers the world."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hittite",
+  "primaryTradition": "Hittite",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "hittite_tarhunna",
+   "hittite_arinna"
+  ],
+  "parentRoles": {
+   "hittite_tarhunna": "paternal",
+   "hittite_arinna": "maternal"
+  },
+  "temporal": {
+   "era": "late-bronze-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "the-vanishing-and-return",
+    "era": "late-bronze-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324), in Hoffner, Hittite Myths (1998)"
+     }
+    ],
+    "notes": "In a rage he vanishes; crops fail, beasts and gods starve, until the bee sent by Hannahanna finds him and he is appeased and brought back, restoring fertility."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "agriculture-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Telipinu",
+     "script": "Hittite",
+     "rom": "Telipinu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "hittite_tarhunna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     }
+    ],
+    "notes": "Son of the Storm-god."
+   },
+   {
+    "kind": "mother",
+    "personId": "hittite_arinna",
+    "era": "late-bronze-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     }
+    ],
+    "notes": "Son of the Sun-goddess of Arinna."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Telipinu Myth (CTH 324)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hoffner, Hittite Myths, 2nd ed. (1998), pp. 14-20"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hittite god of agriculture, son of the Storm-god and the Sun-goddess of Arinna. The archetypal 'vanishing god': his angry withdrawal blights the land until he is found and soothed, the central myth of the Hittite disappearing-deity ritual."
+ },
+ {
   "id": "hmong_flood_siblings",
   "name": {
    "primary": "Flood-Surviving Brother and Sister",
@@ -91248,6 +94517,925 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Demigod / culture-hero (a heroic archer of the mythic age). English title leads; native RPA Yaj Yuam in alt/transliterations."
+ },
+ {
+  "id": "hochunk_bladder",
+  "name": {
+   "primary": "Bladder",
+   "alt": [
+    "Wadexúga",
+    "Wadexuga",
+    "Wató'ka"
+   ],
+   "transliterations": {
+    "hochunk": "Wadexúga",
+    "etymology": "Ho-Chunk name rendered 'Bladder'; the spirit named for and identified with an (inflatable) animal bladder."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "created-and-sent-by-earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'; Radin, 'The Bladder', Winnebago Notebooks"
+     }
+    ],
+    "notes": "Earthmaker's third son among the saving spirits; he created numerous brothers (some say as many as twenty), boasted that no spirit was his equal and that they had nothing to fear, but through his overconfidence all but one of the brothers were killed, and he was recalled for his arrogance."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "narrative",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "hochunk_earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'"
+     }
+    ],
+    "notes": "Earthmaker's third son among the spirits sent to save humanity."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, 'The Bladder', Winnebago Notebooks (compiled in Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker')"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Bladder (Wadexúga) is the third of the saving spirits Earthmaker fashioned and sent to earth in the Hare-cycle series. He created a band of brothers — by some accounts as many as twenty — and, puffed up with his own sense of power, declared that no spirit was his equal and that they had nothing to fear; but he was not serious enough to exercise proper leadership, and all of his brothers save one were killed. Because of this arrogance Earthmaker recalled him, as he had recalled Trickster before him, and the mission passed onward to Turtle, Redhorn, and finally Hare."
+ },
+ {
+  "id": "hochunk_disease_giver",
+  "name": {
+   "primary": "Disease-Giver",
+   "alt": [
+    "Hošereʼųwahira",
+    "Hošere'ų́wahira",
+    "Hoxereʼųwahira"
+   ],
+   "transliterations": {
+    "hochunk": "Hošereʼųwahira",
+    "etymology": "Ho-Chunk hošereʼų 'to cause sickness/disease' + -wahira, 'the one who deals out disease', the Disease-Giver."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "attestation-as-dispenser-of-life-and-death",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923); Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'"
+     }
+    ],
+    "notes": "A great spirit who dispenses both life and death and is the source of sickness; one of the principal spirits invoked in the war-bundle ceremony, alongside Earthmaker, the Thunderbirds, the Night Spirits, the Sun, the Moon, the Morning Star, the Earth, and the Water. Dogs were offered to him as messengers in response to sickness."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "disease",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'"
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923); Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dispensing-life-and-death",
+    "name": "Dispenser of life and death",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'"
+     }
+    ],
+    "notes": "Holds power over both the giving of life and the dealing of death and disease to human beings."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Tribe (1923)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Disease Giver'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Disease-Giver (Hošereʼųwahira) is the Ho-Chunk spirit who dispenses both life and death and is the source of sickness — in effect the god of death. He is one of the great spirits honored in the war-bundle ceremony, named alongside Earthmaker, the Thunderbirds, the Night Spirits, the Sun, the Moon, the Morning Star, the Earth, and the Water, and dogs were sacrificed to him as messengers in time of illness. His narrative profile is preserved in stories such as 'The Man who Defied Disease Giver'. He stands as an independent power in the Ho-Chunk pantheon, with no genealogical kinship to the other spirits attested in the sources."
+ },
+ {
+  "id": "hochunk_earthmaker",
+  "name": {
+   "primary": "Earthmaker",
+   "alt": [
+    "Mą'ųna",
+    "Ma-ona",
+    "Man'una",
+    "Mą'una"
+   ],
+   "transliterations": {
+    "hochunk": "Mą'ųna",
+    "etymology": "Ho-Chunk mą 'earth' + ('ų)na 'maker', i.e. 'Earth-maker', the creator."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "earthmaker-creation"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "earthmaker-creation",
+    "eraOrdering": 0,
+    "startEvent": "creation-of-the-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923), Origin Myth (BAE 37th Annual Report)"
+     }
+    ],
+    "notes": "In the origin myth Earthmaker comes to consciousness alone in space; he weeps, and his tears become the primal waters; he then wishes for light and earth and they come into being, and he makes the first human in his own likeness from a piece of clay, giving it mind, tongue, soul, and breath."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 1,
+    "startEvent": "sending-of-the-saving-spirits",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'; Radin, Winnebago Hero Cycles (1948)"
+     }
+    ],
+    "notes": "Seeing humanity preyed upon by evil spirits, Earthmaker fashions a series of spirits with his own hands and sends them down to make the earth safe — in the Hare-cycle order Trickster, Bladder, Turtle, Redhorn, and Hare, giving the survivors charge of the earth and otherworldly paradises."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923)"
+     }
+    ]
+   },
+   {
+    "sphereId": "tobacco",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923); Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "world-creation",
+    "name": "World-creation",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Tribe (1923), Origin Myth"
+     }
+    ],
+    "notes": "Created the waters, light, earth, plants, animals, and the first human."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tobacco-hochunk",
+    "name": "Tobacco",
+    "kind": "ritual-object",
+    "role": "originator",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker'; Radin, The Winnebago Tribe (1923)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "creator-of",
+    "personId": "hochunk_trickster",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster' / 'The Sons of Earthmaker'"
+     }
+    ],
+    "notes": "Fashioned Trickster, the first of the saving spirits, and sent him to teach humans how to live."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "hochunk_bladder",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Sons of Earthmaker'"
+     }
+    ],
+    "notes": "Created Bladder, his third son among the saving spirits."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "hochunk_turtle",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'"
+     }
+    ],
+    "notes": "Made Turtle, gave him a knife, and charged him to make the earth good."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "redhorn",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'The Redhorn Cycle' / 'The Sons of Earthmaker'"
+     }
+    ],
+    "notes": "Sent Redhorn down as one of the spirits fashioned to save humanity."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "hochunk_hare",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ],
+    "notes": "Fashioned Hare, the fifth and last of the saving spirits, and put him in charge of this earth."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Tribe (1923), BAE 37th Annual Report"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Earthmaker (Mą'ųna, 'Earth-maker') is the creator and supreme spirit of the Ho-Chunk. In Radin's recorded origin myth he awakens alone in empty space, and his tears form the primal waters before he calls light and the earth into being and shapes the first human from clay in his own likeness, giving tobacco to humanity as his special gift. Confronted with the suffering of human beings preyed upon by evil spirits, he fashions a series of culture-hero spirits with his own hands and sends them to earth to make it safe — Trickster, Bladder, Turtle, Redhorn, and Hare — assigning the survivors dominion over the earth and over otherworldly realms."
+ },
+ {
+  "id": "hochunk_hare",
+  "name": {
+   "primary": "Hare",
+   "alt": [
+    "Wašjįgega",
+    "Wacdjįgega",
+    "Wash-ching-geka",
+    "Little Hare"
+   ],
+   "transliterations": {
+    "hochunk": "Wašjįgega",
+    "etymology": "Ho-Chunk wašjįk 'hare/rabbit' + -ega (personal-name suffix), 'the Hare'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "created-and-sent-by-earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ],
+    "notes": "The fifth and last of the spirits Earthmaker dispatched; he conquered the bad spirits that had preyed on humanity and remade the world so that it would be survivable for his human 'aunts and uncles'."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 1,
+    "startEvent": "origin-of-death-and-the-medicine-rite",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Road of Life and Death (1945); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ],
+    "notes": "When Hare sought to give human beings everlasting life his Grandmother (the Earth) told him death had been made to prevent overcrowding; by accident he then let death into the world, but in compensation he founded the Medicine Rite (Medicine Lodge), through whose discipline its members could attain a fullness of life."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "culture-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, Winnebago Hero Cycles (1948)"
+     }
+    ]
+   },
+   {
+    "sphereId": "medicine",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Road of Life and Death (1945)"
+     }
+    ]
+   },
+   {
+    "sphereId": "death",
+    "contextTag": "narrative",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Road of Life and Death (1945); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "monster-slaying",
+    "name": "Monster-slaying",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ],
+    "notes": "Conquered and destroyed the evil spirits and monsters that preyed on humanity, making the earth safe."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "hochunk-medicine-rite",
+    "name": "The Medicine Rite (Medicine Lodge)",
+    "kind": "ritual-object",
+    "role": "originator",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Road of Life and Death (1945); Dieterle, Encyclopedia of Hočąk Mythology, 'Hare Secures the Creation Lodge of the Medicine Rite'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "hochunk_earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, Winnebago Hero Cycles (1948); Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ],
+    "notes": "The fifth and last of the saving spirits Earthmaker fashioned; Earthmaker placed him in charge of this earth."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, Winnebago Hero Cycles: A Study in Aboriginal Literature (1948)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Road of Life and Death (1945)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'The Hare Cycle'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Hare (Wašjįgega, 'the Hare') is the great culture-hero of the Ho-Chunk and the fifth and last of the saving spirits Earthmaker sent to earth. Born to live among human beings, whom he calls his 'aunts and uncles', he conquered the bad spirits and monsters that had preyed on humanity and remade the world so that it would be survivable. When he tried to win everlasting life for people, his Grandmother — the Earth herself — explained that death had been ordained to prevent overcrowding; Hare then loosed death into the world by accident, but made amends by founding the Medicine Rite (the Medicine Lodge), through whose ritual discipline its members might attain a fullness of life and a measure of immortality. Earthmaker set Hare in charge of this earth, and his deeds are recorded in the Hare Cycle and in the Medicine Rite drama Radin published as *The Road of Life and Death*. The Winnebago carefully distinguish Hare, the benevolent world-shaper, from Trickster."
+ },
+ {
+  "id": "hochunk_trickster",
+  "name": {
+   "primary": "Trickster",
+   "alt": [
+    "Wakdjąkaga",
+    "Wakjąkága",
+    "Wakdjunkaga",
+    "Kunu"
+   ],
+   "transliterations": {
+    "hochunk": "Wakdjąkaga",
+    "etymology": "Ho-Chunk wakdjąkaga, glossed by Radin as 'the tricky one' / 'the cunning one'; as the first-created he is also called Kunu, 'First-Born'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "created-and-sent-by-earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Trickster (1956); Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster'"
+     }
+    ],
+    "notes": "The first of the great spirits Earthmaker created in the image of a man and charged to go forth and teach humans how to live; his foolishness and uncontrolled appetites made it necessary to recall him."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Trickster (1956)"
+     }
+    ]
+   },
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Trickster (1956)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shapeshifting",
+    "name": "Shape- and sex-shifting",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Trickster (1956)"
+     }
+    ],
+    "notes": "Changes his form and even his sex; in one episode disguises himself as a woman and marries a chief's son."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "hochunk_earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster'; Radin, The Trickster (1956)"
+     }
+    ],
+    "notes": "The first of the saving spirits fashioned and sent down by Earthmaker."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Trickster: A Study in American Indian Mythology (1956)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Trickster'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wakdjąkaga, 'Trickster', is the great trickster of the Winnebago Trickster Cycle, the forty-nine-episode narrative that is the centerpiece of Radin's *The Trickster* (1956). The first spirit Earthmaker created to rescue humankind and sent forth to teach people how to live, he is driven entirely by his own appetites: he wanders the world, dismembers and reattaches his own body, transforms his shape and sex, and lurches from one self-inflicted disaster to another, serving as a model of what not to do. Because his foolishness defeated his civilizing mission he was recalled, and the task passed in turn to Bladder, Turtle, Redhorn, and Hare. The Winnebago themselves carefully distinguish Trickster from the culture-hero Hare."
+ },
+ {
+  "id": "hochunk_turtle",
+  "name": {
+   "primary": "Turtle",
+   "alt": [
+    "Kecągega",
+    "Kečągega",
+    "Kecungega"
+   ],
+   "transliterations": {
+    "hochunk": "Kecągega",
+    "etymology": "Ho-Chunk kecąk 'turtle' + -ega (personal-name suffix), 'the Turtle'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "created-and-sent-by-earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'"
+     }
+    ],
+    "notes": "Earthmaker told him, 'You are going to make the earth good, Turtle,' and caused him to have a knife; but when Turtle came to earth he made war instead of caring for the creation, and so Earthmaker took him back."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "narrative",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "turtle-knife",
+    "name": "Knife",
+    "kind": "weapon",
+    "role": "wielder",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "hochunk_earthmaker",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterle, Encyclopedia of Hočąk Mythology, 'Earthmaker Creates the World and Gives Turtle and Hare Their Missions'"
+     }
+    ],
+    "notes": "Made by Earthmaker, given a knife, and sent to make the earth good."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Tribe (1923)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'Turtle' / 'Turtle Spirits'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Turtle (Kecągega) is one of the culture-hero spirits Earthmaker sent down to rescue humanity, counted among the canonical Hare-cycle series. Earthmaker told him, 'You are going to make the earth good, Turtle,' and gave him a knife; but on reaching the earth Turtle turned to war rather than to the ordering of creation, so Earthmaker recalled him, as he had Trickster and Bladder. Despite this failure Turtle remains a popular and heroic warrior-spirit throughout Ho-Chunk narrative, the patron of warlike valor."
+ },
+ {
+  "id": "hochunk_twin_flesh",
+  "name": {
+   "primary": "Flesh",
+   "alt": [
+    "Warora",
+    "Waroka",
+    "Warädjexega"
+   ],
+   "transliterations": {
+    "hochunk": "Warora",
+    "etymology": "Ho-Chunk name glossed 'Flesh' (the body), one of the Twin heroes; the twins embody the pairing of body and soul/ghost."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-the-twins",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "notes": "Born when his pregnant mother was killed and her womb cut open by an old man (his grandfather); this twin was left behind in the lodge by their father, while the other was hidden in a hollow stump, and the two were later reunited."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "soteriological-spirits",
+    "eraOrdering": 1,
+    "startEvent": "monster-slaying-adventures",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "notes": "With his brother he ranges the world as a monster-slayer — killing serpents they call 'fish', leeches they call 'turtles', thunderbirds they call 'pigeons', and an ogre — sometimes overstepping by killing beings they should have spared."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "monster-slaying",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "hochunk_twin_stump",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "notes": "Flesh (the body) and Stump / Little Ghost (the soul) are twin brothers, conceived as body and soul paired together."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Myth of the Twins: A Comparative Study"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Flesh (Warora) is one of the two heroes of the Ho-Chunk Twin Cycle, representing the body in a pairing where his twin brother represents the soul or ghost. The twins were born when their pregnant mother was killed and her womb opened by an old man; one boy was hidden in a hollow stump and the other left in the lodge, and after their father reunited them they became famous monster-slayers, ranging the world to destroy serpents, leeches, thunderbirds, and ogres — though at times they killed creatures they ought to have spared. Radin treated their story as one of the central Winnebago hero cycles."
+ },
+ {
+  "id": "hochunk_twin_stump",
+  "name": {
+   "primary": "Stump",
+   "alt": [
+    "Little Ghost",
+    "Wanaghi",
+    "Wanąǧi",
+    "Warädjexega"
+   ],
+   "transliterations": {
+    "hochunk": "Wanaghi",
+    "etymology": "Ho-Chunk wanąǧi 'ghost/spirit', glossed 'Little Ghost'; in the Twins Cycle the dominant twin is also called 'Stump' because he was hidden in, and says his grandmother is, a hollow stump."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Ho-Chunk",
+  "primaryTradition": "Ho-Chunk",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "soteriological-spirits"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "soteriological-spirits",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-the-twins",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle' / 'The Birth of the Twins'"
+     }
+    ],
+    "notes": "Born when his pregnant mother was killed and her womb cut open; this twin was hidden by his grandfather in the hollow of a stump (whence his name), while his brother was left in the lodge, and the two were later reunited by their father."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "soteriological-spirits",
+    "eraOrdering": 1,
+    "startEvent": "monster-slaying-adventures",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "notes": "The bolder of the two; with his brother he sets out for forbidden places and slays serpents, leeches, thunderbirds, and an ogre, and the pair are even feared by their own father."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "monster-slaying",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "hochunk_twin_flesh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Radin, The Winnebago Myth of the Twins; Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "notes": "Stump / Little Ghost (the soul) and Flesh (the body) are twin brothers, conceived as soul and body paired together."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Paul Radin, The Winnebago Myth of the Twins: A Comparative Study"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Richard L. Dieterle, Encyclopedia of Hočąk Mythology, 'The Twins Cycle'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Stump — also called Little Ghost (Wanaghi) — is the dominant of the two heroes of the Ho-Chunk Twin Cycle, representing the soul or ghost to his brother Flesh's body. He takes the name 'Stump' because, after their pregnant mother was killed and her womb opened, this boy was hidden in the hollow of a stump (and says that his grandmother is a stump), while his twin was kept in the lodge. Reunited by their father, the twins became renowned monster-slayers who killed serpents, leeches, thunderbirds, and ogres and grew so powerful that even their father feared them. Radin recorded and analyzed their cycle as one of the principal Winnebago hero narratives."
  },
  {
   "id": "hopi_kokopelli",
@@ -100208,6 +104396,466 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Warrior-poet of the Tuatha Dé Danann, champion strong-man and reputed inventor of ogham writing."
+ },
+ {
+  "id": "iroquois_hino",
+  "name": {
+   "primary": "Hino",
+   "alt": [
+    "Hinon",
+    "Heno",
+    "the Thunderer",
+    "Grandfather Thunder"
+   ],
+   "transliterations": {
+    "seneca": "Hinǫʼ",
+    "rom": "Hino",
+    "etymology": "Iroquoian thunder-god; 'Grandfather' in ceremonial address."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Iroquois",
+  "primaryTradition": "Iroquois",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "sky-woman-cosmogony"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-thunderer",
+    "era": "sky-woman-cosmogony",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "H. M. Converse, Myths and Legends of the New York State Iroquois (1908)"
+     }
+    ],
+    "notes": "Wielder of the thunder-bow, who brings the rains that ripen the crops and hunts down the great serpents and monsters that infest the waters and threaten humankind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thunder-and-rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Hinon",
+     "script": "Seneca",
+     "rom": "Hinon"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Converse (1908)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "ally",
+    "personId": "iroquois_teharonhiawako",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Converse (1908)"
+     }
+    ],
+    "notes": "Protector-ally of the Good Mind's creation, destroying the monsters that menace the people."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "H. M. Converse, Myths and Legends of the New York State Iroquois (1908)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Parker, Seneca Myths and Folk Tales (1923)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Thunderer, addressed in ceremony as Grandfather. Lord of thunder, lightning and the life-giving rains, and the great slayer of the monstrous serpents that lurk in lakes and rivers — the protector who keeps the ordered world safe for the people."
+ },
+ {
+  "id": "iroquois_tawiskaron",
+  "name": {
+   "primary": "Tawiskaron",
+   "alt": [
+    "Flint",
+    "Hahgwehdaetgah",
+    "the Evil Mind"
+   ],
+   "transliterations": {
+    "mohawk": "Tawiskaron",
+    "rom": "Tawiskaron",
+    "etymology": "Iroquoian, associated with flint/ice; the destructive twin."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Iroquois",
+  "primaryTradition": "Iroquois",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "iroquois_tekawerahkwa"
+  ],
+  "parentRoles": {
+   "iroquois_tekawerahkwa": "maternal"
+  },
+  "temporal": {
+   "era": "sky-woman-cosmogony"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "violent-birth-and-counter-creation",
+    "era": "sky-woman-cosmogony",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology (1903)"
+     }
+    ],
+    "notes": "Burst from his mother's side, killing her. He counters his brother's good creation with obstacles — rapids and waterfalls, thorns, frost and winter, and the predatory monsters — and is defeated in the brothers' final duel."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "destruction-and-winter",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tawiskaron",
+     "script": "Mohawk",
+     "rom": "Tawiskaron"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology (1903)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "iroquois_tekawerahkwa",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Son of Tekawerahkwa, whose side he tore in being born."
+   },
+   {
+    "kind": "sibling",
+    "personId": "iroquois_teharonhiawako",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Twin brother of Sapling."
+   },
+   {
+    "kind": "enemy",
+    "personId": "iroquois_teharonhiawako",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Cosmic adversary of the Good Mind."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology, BAE 21st Annual Report (1903)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The flinty, destructive twin (Flint, the Evil Mind) of the Haudenosaunee creation. His violent birth killed his mother; he answers his brother's good creation with hardship — rapids, frost, winter and monsters — and is overcome in their final contest, after which he rules the cold half of the year."
+ },
+ {
+  "id": "iroquois_teharonhiawako",
+  "name": {
+   "primary": "Teharonhiawako",
+   "alt": [
+    "Sapling",
+    "Sky-Holder",
+    "Hahgwehdiyu",
+    "the Good Mind"
+   ],
+   "transliterations": {
+    "mohawk": "Teharonhiawá:ko",
+    "rom": "Teharonhiawako",
+    "etymology": "Mohawk 'he holds (up) the sky'; the good, creative twin."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Iroquois",
+  "primaryTradition": "Iroquois",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "iroquois_tekawerahkwa"
+  ],
+  "parentRoles": {
+   "iroquois_tekawerahkwa": "maternal"
+  },
+  "temporal": {
+   "era": "sky-woman-cosmogony"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "shaping-of-the-good-world",
+    "era": "sky-woman-cosmogony",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology (1903); BAE 43rd Annual Report (1928)"
+     }
+    ],
+    "notes": "The good twin, who made human beings, the useful plants and animals, the rivers (with fish), and gave the Haudenosaunee their ceremonies. He defeats his brother in their final contest, ordering the world for life."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-life",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Teharonhiawako",
+     "script": "Mohawk",
+     "rom": "Teharonhiawako"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology (1903)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "iroquois_tekawerahkwa",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Son of Tekawerahkwa, grandson of Sky Woman."
+   },
+   {
+    "kind": "sibling",
+    "personId": "iroquois_tawiskaron",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Twin brother of Flint."
+   },
+   {
+    "kind": "enemy",
+    "personId": "iroquois_tawiskaron",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Cosmic adversary: the creative Good Mind against the destructive Flint."
+   },
+   {
+    "kind": "ally",
+    "personId": "iroquois_hino",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Converse (1908)"
+     }
+    ],
+    "notes": "Aided by Hino the Thunderer, who destroys the monsters and serpents that threaten the ordered world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology, BAE 21st (1903) & 43rd (1928) Annual Reports"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The good twin (Sapling, 'Sky-Holder') of the Haudenosaunee creation, grandson of Sky Woman. Creator of humans, the food plants and animals, and the rivers; giver of the ceremonies. In the cosmic struggle that shapes the world he prevails over his destructive brother Flint, securing day, summer and life."
+ },
+ {
+  "id": "iroquois_tekawerahkwa",
+  "name": {
+   "primary": "Tekawerahkwa",
+   "alt": [
+    "Breath of the Wind",
+    "Gusts-of-Wind"
+   ],
+   "transliterations": {
+    "mohawk": "Tekawerahkwa",
+    "rom": "Tekawerahkwa",
+    "etymology": "Iroquoian 'breath/gusts of wind'; the daughter of Sky Woman, mother of the Twins."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Iroquois",
+  "primaryTradition": "Iroquois",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "iroquois_sky_woman"
+  ],
+  "parentRoles": {
+   "iroquois_sky_woman": "maternal"
+  },
+  "temporal": {
+   "era": "sky-woman-cosmogony"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "birth-on-the-turtles-back",
+    "era": "sky-woman-cosmogony",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology, BAE 21st Annual Report (1903)"
+     }
+    ],
+    "notes": "Born to Sky Woman on the back of the Great Turtle (the new earth); impregnated by the Wind, she conceived the Twins."
+   },
+   {
+    "typeStatus": "deity",
+    "startEvent": "death-in-childbirth",
+    "era": "sky-woman-cosmogony",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology (1903); Converse (1908)"
+     }
+    ],
+    "notes": "Died bearing the Twins — the destructive Flint burst from her side, killing her; from her body grew the first plants (the maize, beans and squash)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-growth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tekawerahkwa",
+     "script": "Mohawk",
+     "rom": "Tekawerahkwa"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology (1903)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "iroquois_sky_woman",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Daughter of Sky Woman."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "iroquois_teharonhiawako",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Mother of the good twin, Sapling."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "iroquois_tawiskaron",
+    "era": "sky-woman-cosmogony",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt (1903)"
+     }
+    ],
+    "notes": "Mother of the flinty twin, whose violent birth killed her."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hewitt, Iroquoian Cosmology, BAE 21st Annual Report (1903)"
+     },
+     {
+      "kind": "primary",
+      "reference": "H. M. Converse, Myths and Legends of the New York State Iroquois (1908)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of Sky Woman and mother of the rival Twins. Impregnated by the Wind, she died giving birth when the destructive twin Flint forced his way out through her side; from her buried body grew the Three Sisters — maize, beans and squash — making her the source of the staple crops."
  },
  {
   "id": "itelmen_kutkh",
@@ -112094,6 +116742,1280 @@ const NEW_FIGURES = [
   "notes": "Classed as a deity; a culture-hero/transformer cognate with Haida Yáahl and Tlingit Yéil. Boas's extensive Kwakwaka'wakw corpus is the principal documentation."
  },
  {
+  "id": "lakota_hanwi",
+  "name": {
+   "primary": "Haŋwí",
+   "alt": [
+    "Hanwi",
+    "Haŋhépi-wí (Night-Sun)",
+    "the Moon"
+   ],
+   "transliterations": {
+    "lakota": "Haŋwí",
+    "etymology": "Lakota haŋ 'night' + wí 'sun/luminary' = 'night-sun', the Moon; the companion (associate) of the Sun."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "companion-of-the-sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54"
+     }
+    ],
+    "notes": "Haŋwí, the Moon, is the associate (kȟolá) of Wí; created from him to be his companion, she at first travelled the sky together with the Sun as his wife."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "shaming-and-the-phases-of-the-moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Arriving late to the Feast of the Gods, Haŋwí found the two-faced Ité sitting in her place beside Wí; ashamed, she drew her robe over her face. Škáŋ separated her from the Sun, giving her dominion over the night; ever after she covers her face when near her husband (the new moon) and shows it fully when farthest from him (the full moon)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Haŋwí",
+     "script": "Lakota",
+     "rom": "Hanwi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "lakota_wi",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Wife of Wí the Sun, from whom she was separated by Škáŋ's decree after the Feast of the Gods."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Haŋwí, the Moon ('night-sun'), is the first of the four Associate Gods (Wakáŋ Kȟoláya), the companion of the Sun. Made to travel the sky with Wí as his wife, she was publicly shamed at the Feast of the Gods when the two-faced Ité usurped her seat; Škáŋ separated her from the Sun and gave her the night. Her waxing and waning are explained as her covering and uncovering her face in shame as she nears or leaves her estranged husband."
+ },
+ {
+  "id": "lakota_iktomi",
+  "name": {
+   "primary": "Iktómi",
+   "alt": [
+    "Iktomi",
+    "Ikto",
+    "Unktomi",
+    "Inktomi",
+    "Ksá (former name)",
+    "the Spider",
+    "the Trickster"
+   ],
+   "transliterations": {
+    "lakota": "Iktómi",
+    "etymology": "Lakota, 'spider'; the trickster and culture hero, formerly Ksá, the god of wisdom."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lakota_inyan"
+  ],
+  "parentRoles": {
+   "lakota_inyan": "paternal"
+  },
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "born-as-ksa-god-of-wisdom",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "The first-born son of Íŋyaŋ, he was originally Ksá, the god of wisdom, who invented language, names, stories, and games."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "demotion-to-trickster-spider",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "For his meddling — notably contriving with Ité the deception at the Feast of the Gods that estranged Sun and Moon — Ksá was stripped of his honor as wisdom and made Iktómi, the Spider, a trickster forever scheming, often outwitting others but as often the dupe of his own cleverness. He is nonetheless a culture hero who shaped much of the present world."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "trickery-and-cunning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Iktómi",
+     "script": "Lakota",
+     "rom": "Iktomi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   },
+   {
+    "sphereId": "wisdom-and-invention",
+    "contextTag": "as Ksá",
+    "term": {
+     "value": "Ksá",
+     "script": "Lakota",
+     "rom": "Ksa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "lakota_inyan",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "First-born son of Íŋyaŋ, the Rock."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Iktómi, the Spider, is the Lakota trickster and culture hero, the first-born son of Íŋyaŋ the Rock. Originally Ksá, the god of wisdom who invented language, stories, names, and games, he was demoted to trickster after his scheming — including the deception that separated the Sun and Moon. As Iktómi he is endlessly cunning yet frequently the victim of his own tricks, the subject of a vast cycle of teaching-tales, and a shaper of the world as the people now find it."
+ },
+ {
+  "id": "lakota_inyan",
+  "name": {
+   "primary": "Íŋyaŋ",
+   "alt": [
+    "Inyan",
+    "Rock",
+    "Tȟuŋkášila (in some address)"
+   ],
+   "transliterations": {
+    "lakota": "Íŋyaŋ",
+    "etymology": "Lakota 'rock, stone'; the primordial being whose self-sacrifice of his own blood created the world."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "primordial-existence-in-darkness",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980), pp. 50-53"
+     }
+    ],
+    "notes": "In the beginning, when there was only the spirit of darkness (Háŋ), Íŋyaŋ alone existed — soft, formless, and holding all power and all spirit within himself, with the powers of the universe in his blood, which was blue."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "self-sacrifice-and-creation-of-the-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983); Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ],
+    "notes": "Desiring something other than himself over which to exercise his power, Íŋyaŋ opened his veins and drew out his blood to form Maká (the Earth) and the encircling waters; as his blood flowed away it became blue water, and his powers passed into the disk he had made. Drained, he shrank, hardened, and became the rock and stone of the world, retaining only a portion of his original power."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-stone",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Íŋyaŋ",
+     "script": "Lakota",
+     "rom": "Inyan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-53"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance (AMNH 16, 1917)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "lakota_iktomi",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Iktómi, originally Ksá (wisdom), is the first-born son of Íŋyaŋ."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "lakota_maka",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ],
+    "notes": "Drew Maká, the Earth, out of his own substance and blood."
+   },
+   {
+    "kind": "creator-of",
+    "personId": "lakota_wakinyan",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wakíŋyaŋ, the Winged One, is reckoned the associate of Íŋyaŋ, brought into being in his cause."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH Anthropological Papers 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Íŋyaŋ, the Rock, is the primordial of Lakota cosmology and the first of the four Superior Gods (Wakáŋ Aŋkáŋtu) who together comprise Wakȟáŋ Tȟáŋka. Alone in the original darkness, holding all power in his blue blood, he sacrificed himself to create — opening his veins to form Maká the Earth and the waters, and in doing so shrank and hardened into the rock and stone of the world. From his line come Iktómi the trickster and the Winged One Wakíŋyaŋ. He is invoked in stone, and the sweat-lodge stones (Tȟuŋkáŋ) carry his ancient power."
+ },
+ {
+  "id": "lakota_maka",
+  "name": {
+   "primary": "Maká",
+   "alt": [
+    "Maka",
+    "Makȟá",
+    "Iná Maká (Mother Earth)",
+    "Earth"
+   ],
+   "transliterations": {
+    "lakota": "Makȟá",
+    "etymology": "Lakota 'earth, ground'; the Earth, drawn from Íŋyaŋ's body and addressed as Grandmother/Mother."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "drawn-from-inyan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ],
+    "notes": "Íŋyaŋ formed Maká out of his own blood and substance as a disk to hold his power; she was made a part of him and bound to him, which is why earth and rock are inseparable."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "appeal-to-skan-for-light-and-separation",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Maká complained that her world was cold and dark and wished to be separate from Íŋyaŋ; Škáŋ, as judge, ruled that she must remain bound to the Rock, but caused Wí (the Sun) and the Dawn to come forth to give her light and warmth, ordering day and night to follow one another."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Makȟá",
+     "script": "Lakota",
+     "rom": "Maka"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-land",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "lakota_inyan",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-53"
+     }
+    ],
+    "notes": "Drawn from Íŋyaŋ's own substance and bound to him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Maká, the Earth, is the second of the four Superior Gods. Drawn out of Íŋyaŋ's own body when he sacrificed his blood, she is forever bound to the Rock — soil clinging to stone. Addressed as Mother/Grandmother Earth (Iná Maká, Uŋčí Maká), she is the ground of all living things; when she complained of cold and darkness, the supreme Škáŋ answered by bringing forth the Sun and ordering the alternation of day and night."
+ },
+ {
+  "id": "lakota_skan",
+  "name": {
+   "primary": "Škáŋ",
+   "alt": [
+    "Skan",
+    "Tákuškaŋškaŋ",
+    "Taku Skan Skan",
+    "Sky",
+    "That-which-moves"
+   ],
+   "transliterations": {
+    "lakota": "Škáŋ",
+    "etymology": "Lakota škaŋ 'to move, motion'; the Sky and the source of all movement and energy, hence the animating power of the world."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "emergence-as-the-sky-and-motion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-54"
+     }
+    ],
+    "notes": "Škáŋ is the Sky and the source of all motion and energy; he came into being with the separation of Íŋyaŋ, Maká, and the waters, and he gives motion, spirit, and life to all that exists."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "supreme-judge-of-the-gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance (AMNH 16, 1917); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Acknowledged as the great judge among the gods, Škáŋ settles the disputes of the Superior Gods — binding Maká to Íŋyaŋ, judging Wí and the Moon, and condemning the deceiving Ité to wear two faces (Aŋóg Ité). He apportions to each being its spirit (naǧí) and life-breath (niyá)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Škáŋ",
+     "script": "Lakota",
+     "rom": "Skan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 50-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "motion-and-life",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tákuškaŋškaŋ",
+     "script": "Lakota",
+     "rom": "Taku Skan Skan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "lakota_wohpe",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wóȟpe, the Falling Star and Mediator, is the daughter of Škáŋ; Walker's informants name her father as Škáŋ and call her 'of the star people.'"
+   },
+   {
+    "kind": "creator-of",
+    "personId": "lakota_tate",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Škáŋ created Tȟaté (the Wind) to be his companion and helper; Tȟaté is reckoned the associate of Škáŋ."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Škáŋ (Tákuškaŋškaŋ, 'that which moves'), the Sky, is the third Superior God and in many of Walker's accounts the supreme animating power — the source of all motion and energy, who gives to every being its spirit and breath. He is the great judge among the gods, settling their quarrels and decreeing the order of the cosmos. He created the Wind (Tȟaté) as his companion and is the father of the mediator Wóȟpe."
+ },
+ {
+  "id": "lakota_tate",
+  "name": {
+   "primary": "Tȟaté",
+   "alt": [
+    "Tate",
+    "the Wind"
+   ],
+   "transliterations": {
+    "lakota": "Tȟaté",
+    "etymology": "Lakota 'wind'; the Wind, created by Škáŋ as his companion and father of the Four Winds."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "created-as-companion-of-skan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54; Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Tȟaté, the Wind, was created by Škáŋ to be his associate and companion; he is the intermediary who carries out the will of the Sky and dwells at the center of the world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-ite-and-the-four-winds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983)"
+     }
+    ],
+    "notes": "Tȟaté took Ité (daughter of Old Man and Old Woman) as wife and fathered four sons. After Ité's disgrace and banishment as the two-faced Aŋóg Ité, Tȟaté raised the four boys, then sent them to the four quarters of the world; they became the Four Winds (Tȟaté Tób), and the late-born fifth son Yumní became the Whirlwind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tȟaté",
+     "script": "Lakota",
+     "rom": "Tate"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 52-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-four-directions",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "lakota_skan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Created by Škáŋ the Sky to be his companion; the associate of Škáŋ."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (Jahner ed., 1983)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tȟaté, the Wind, is an Associate God, created by Škáŋ to be his companion and the agent of his will at the center of the world. He married Ité before her transformation into the two-faced Aŋóg Ité, and fathered the Four Winds (Tȟaté Tób) — the West (Eyá), North (Wazíya/Yatá), East (Yaŋpá), and South (Okáǧa) — whom he dispatched to the cardinal quarters, together with the late-born Whirlwind (Yumní). The cycle of the Four Winds underlies much Lakota ritual and the round of the year."
+ },
+ {
+  "id": "lakota_unktehi",
+  "name": {
+   "primary": "Uŋktéhi",
+   "alt": [
+    "Unktehi",
+    "Uncegila",
+    "Unktehila",
+    "the Water Monster",
+    "the Horned Serpent"
+   ],
+   "transliterations": {
+    "lakota": "Uŋktéhi",
+    "etymology": "Lakota, the great water monster/horned serpent dwelling in deep waters; associated with floods and the underwater powers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "dweller-in-the-deep-waters",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Uŋktéhi is the great water monster — a horned, serpent-like being of the rivers, lakes, and deep waters, mistress of the underwater powers and a cause of floods and drownings. Her power is wakȟáŋ but dangerous, opposed to the powers of the sky."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "war-with-the-thunderbird",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Locked in perpetual enmity with Wakíŋyaŋ the Thunderbird, who hunts the water monsters with his lightning. The fossil bones found in the Badlands and river bluffs were explained as the petrified remains of the Uŋktéhi slain by the Thunder."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-the-deep",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Uŋktéhi",
+     "script": "Lakota",
+     "rom": "Unktehi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "flood-and-the-underwater-powers",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "lakota_wakinyan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Eternal adversary of Wakíŋyaŋ the Thunderbird; the serpent of the waters against the Thunder of the sky."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Uŋktéhi, the great water monster, is a horned serpent-being of the deep waters and the chief of the underwater powers — wakȟáŋ but dangerous, bringer of floods and drownings. She is the eternal enemy of the Thunderbird Wakíŋyaŋ, who hunts her with lightning; this opposition of water and sky is a fundamental polarity of Lakota cosmology, and the fossil bones of the Plains were taken for the remains of the Uŋktéhi the Thunder had slain."
+ },
+ {
+  "id": "lakota_wakinyan",
+  "name": {
+   "primary": "Wakíŋyaŋ",
+   "alt": [
+    "Wakinyan",
+    "Wakíŋyaŋ Tȟáŋka",
+    "the Winged One",
+    "the Thunderbird",
+    "the Thunder Beings"
+   ],
+   "transliterations": {
+    "lakota": "Wakíŋyaŋ",
+    "etymology": "Lakota wakȟáŋ 'sacred' + kiŋyáŋ 'to fly/winged' = 'sacred winged one'; the Thunderbird, whose wing-beats are thunder and whose glance is lightning."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "associate-of-inyan-in-the-west",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wakíŋyaŋ, the Winged One, is reckoned the associate of Íŋyaŋ. He dwells in the West on a mountain peak; the beating of his wings is thunder, the flash of his eyes is lightning, and he brings the cleansing storms. He is the patron of the heyókȟa (sacred clown/contrary)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 1,
+    "startEvent": "war-on-the-water-monsters",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Wakíŋyaŋ wages perpetual war against Uŋktéhi and the water monsters, striking them with his lightning; the bones of the great beasts he slew are said to lie petrified in the Badlands."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thunder-and-lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wakíŋyaŋ",
+     "script": "Lakota",
+     "rom": "Wakinyan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "storm-and-the-west",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "lakota_inyan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Reckoned the associate of Íŋyaŋ, the Rock."
+   },
+   {
+    "kind": "enemy",
+    "personId": "lakota_unktehi",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Powers, Oglala Religion (1977)"
+     }
+    ],
+    "notes": "Eternal adversary of Uŋktéhi the water monster; the Thunder of the sky against the serpent of the waters."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wakíŋyaŋ, the Winged One or Thunderbird, is an Associate God, the active companion of Íŋyaŋ. Dwelling in the West, his wing-beats are thunder and his glance is lightning; he brings the storms that purify the world and is the patron of the contrary heyókȟa. He is the perpetual enemy of Uŋktéhi and the water monsters, striking them with his bolts — a primary axis of opposition (sky against water) in Lakota cosmology."
+ },
+ {
+  "id": "lakota_wi",
+  "name": {
+   "primary": "Wí",
+   "alt": [
+    "Wi",
+    "Aŋpétu Wí (Day-Sun)",
+    "the Sun"
+   ],
+   "transliterations": {
+    "lakota": "Wí",
+    "etymology": "Lakota 'sun'; chief of the Superior Gods, source of light, warmth, and the power of generation."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "first-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 0,
+    "startEvent": "coming-forth-as-the-sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-54"
+     }
+    ],
+    "notes": "Wí, the Sun, was brought forth to give light and warmth to Maká; he is named chief of the Superior Gods, the patron of the four cardinal virtues and the great ceremony of the Sun Dance (Wiwáŋyaŋg Wačípi) is danced in his honor."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "first-world",
+    "eraOrdering": 1,
+    "startEvent": "feast-of-the-gods-and-estrangement-from-hanwi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "At the Feast of the Gods, Wí, deceived by the schemes of Iktómi and the two-faced Ité, allowed Ité to take the seat of his wife Haŋwí (the Moon). For shaming his wife, Škáŋ decreed that Wí and Haŋwí be separated — he to rule the day, she the night — and that she should hide her face for shame, which is why the moon waxes and wanes."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wí",
+     "script": "Lakota",
+     "rom": "Wi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980), pp. 51-54"
+     }
+    ]
+   },
+   {
+    "sphereId": "light-and-warmth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance (AMNH 16, 1917)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "lakota_hanwi",
+    "era": "first-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983); Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "Husband of Haŋwí the Moon; the two were estranged by Škáŋ's judgment so that one rules the day and the other the night."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wí, the Sun, is the fourth Superior God and is named chief among them — the source of light, warmth, and generative power, patron of the cardinal virtues (bravery, fortitude, generosity, wisdom). The supreme ceremony of the Lakota, the Sun Dance, is offered to him. In the great origin narrative he was deceived at the Feast of the Gods into preferring the two-faced Ité over his wife Haŋwí, for which Škáŋ separated the Sun from the Moon, giving day and night their division."
+ },
+ {
+  "id": "lakota_wohpe",
+  "name": {
+   "primary": "Wóȟpe",
+   "alt": [
+    "Wohpe",
+    "Whope",
+    "the Falling Star",
+    "the Mediator",
+    "the Beautiful One",
+    "White Buffalo Calf Woman",
+    "Ptesáŋ Wíŋ",
+    "Pte Ská Wiŋ"
+   ],
+   "transliterations": {
+    "lakota": "Wóȟpe",
+    "etymology": "Lakota, associated with the falling/shooting star (meteor) and with 'mediation/peace'; the Beautiful One who reconciles."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Sioux/Lakota",
+  "primaryTradition": "Sioux/Lakota",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "lakota_skan"
+  ],
+  "parentRoles": {
+   "lakota_skan": "paternal"
+  },
+  "temporal": {
+   "era": "second-world"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "second-world",
+    "eraOrdering": 0,
+    "startEvent": "daughter-of-skan-the-mediator",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Wóȟpe, the Falling Star, is the daughter of Škáŋ and is 'of the star people.' She is the mediator (the Beautiful One) who reconciles the oppositions among the gods and all beings, creating harmony; she dwelt in the lodge of Tȟaté and helped raise the Whirlwind Yumní, and is given as the wife of the South Wind (Okáǧa)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "third-world",
+    "eraOrdering": 1,
+    "startEvent": "coming-as-white-buffalo-calf-woman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977); Walker, Lakota Belief and Ritual (1980)"
+     }
+    ],
+    "notes": "The sources identify Wóȟpe with White Buffalo Calf Woman (Ptesáŋ Wíŋ / Pte Ská Wiŋ), who came to the Lakota people, brought the Sacred Calf Pipe (čhaŋnúŋpa) and the rites that accompany it, taught them to live rightly, and departed turning into a white buffalo calf."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "peace-and-mediation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wóȟpe",
+     "script": "Lakota",
+     "rom": "Wohpe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-falling-star",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Myth (1983)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sacred-pipe",
+    "contextTag": "as White Buffalo Calf Woman",
+    "term": {
+     "value": "čhaŋnúŋpa",
+     "script": "Lakota",
+     "rom": "chanunpa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "sacred-calf-pipe",
+    "name": "Sacred Calf Pipe (Pte Hiŋčála Čhaŋnúŋpa)",
+    "kind": "ritual-object",
+    "role": "bringer",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977); J. E. Brown, The Sacred Pipe (1953)"
+     }
+    ],
+    "notes": "As White Buffalo Calf Woman she brought the Sacred Calf Pipe and the seven rites to the Lakota."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "lakota_skan",
+    "era": "second-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (1980); Lakota Myth (1983)"
+     }
+    ],
+    "notes": "Daughter of Škáŋ; Walker's informants name her father as Škáŋ."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walker, The Sun Dance and Other Ceremonies of the Oglala (AMNH 16, 1917)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Walker, Lakota Belief and Ritual (DeMallie & Jahner eds., 1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Powers, Oglala Religion (1977)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wóȟpe, the Falling Star and Mediator (the Beautiful One), is an Associate God and the daughter of Škáŋ. As the great reconciler she harmonizes the oppositions among gods and beings; in the wind cycle she dwelt in Tȟaté's lodge, raised the Whirlwind Yumní, and became the wife of the South Wind. Walker's sources and later scholarship identify her with White Buffalo Calf Woman (Ptesáŋ Wíŋ), who came to the people, brought the Sacred Calf Pipe and its rites, and departed as a white buffalo calf — making her the patroness of the pipe and of peace."
+ },
+ {
   "id": "lepcha_azaor_bongthing",
   "name": {
    "primary": "First Shaman",
@@ -119207,6 +125129,1247 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Classed as deity (a celestial being). Olapa is the common Maa noun for 'moon', here personified per Hollis's sun-and-moon narrative. Some popular sources instead pair Olapa with Enkai; the Hollis 1905 text gives the sun-and-moon spousal quarrel, which is the primary attestation used here."
+ },
+ {
+  "id": "manipuri_koubru",
+  "name": {
+   "primary": "Koubru",
+   "alt": [
+    "Koupalu",
+    "Lainingthou Koubru",
+    "Ibudhou Koubru"
+   ],
+   "transliterations": {
+    "meitei": "Koubru",
+    "etymology": "A Meitei theonym (also Koupalu); the patron god of Mount Koubru in northern Manipur, guardian of the north-western direction. His consort is the goddess Kounu."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-god-of-mount-koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Primordial guardian god of the Meitei, dwelling on the summit of Mount Koubru in northern Manipur with his consort the goddess Kounu; the guardian of the north-western direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). Mount Koubru is a principal Meitei pilgrimage site."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "north-western-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the north-western quarter; patron of Mount Koubru."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_thangjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Thangjing (SW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_marjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Marjing (NE)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_wangbren",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Wangbren (SE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Koubru (Koupalu) is the Meitei guardian god of Mount Koubru in northern Manipur and one of the four cardinal Umang Lai of Sanamahism — the guardian of the north-western direction (the Maikei Ngakpa Lai). He dwells on the mountain's summit with his consort, the goddess Kounu; Mount Koubru is a major pilgrimage site of the tradition. With Thangjing, Marjing and Wangbren he forms the four-fold guardianship of the cardinal directions invoked in Meitei ritual."
+ },
+ {
+  "id": "manipuri_leimarel",
+  "name": {
+   "primary": "Leimarel Sidabi",
+   "alt": [
+    "Leimaren Sidabi",
+    "Leimalel Sitapi",
+    "Imoinu (later household form, distinct cult)",
+    "Ima Leimaren"
+   ],
+   "transliterations": {
+    "meitei": "Leimarel Sidabi",
+    "etymology": "Meitei leima/leima ('lady, queen; mistress of the soil') + -rel/-ren (a great/encompassing element) + Sidabi ('the deathless one', feminine of Sidaba). Roughly 'the deathless great earth-lady'; she is the personified earth and the mother of every living being."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-primordial-earth-mother",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908), on Leimaren the earth-goddess"
+     }
+    ],
+    "notes": "The supreme female divinity of the Meitei pantheon: goddess of the earth, of nature, and of the household, and the eternal mother from whose womb (it is held) all human beings and living creatures originated. She is the consort of the supreme creator (Atingkok Maru Sidaba / Atiya Sidaba, recorded in the registry as Salailen)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-and-the-isaiphu-cult",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the household goddess and the isaiphu"
+     }
+    ],
+    "notes": "Mother (in the dominant purana account) of Lainingthou Sanamahi and Pakhangba. In one tradition the creator bade her bring forth a further goddess from herself, producing Emoinu/Imoinu. She is worshipped in the first (sacred) room of every Meitei house in an isaiphu — an earthen pitcher of water — together with her son Sanamahi, the central rite of household Sanamahism."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-soil",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Personified earth; mistress of the soil and of nature."
+   },
+   {
+    "sphereId": "household-and-hearth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on household worship in the first room (the isaiphu)"
+     }
+    ],
+    "notes": "Tutelary goddess of the Meitei household, worshipped with Sanamahi."
+   },
+   {
+    "sphereId": "motherhood-and-fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Eternal mother goddess; held to be the origin of all living beings."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "leimarel-isaiphu",
+    "name": "Isaiphu (sacred water-pitcher)",
+    "kind": "ritual-object",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the isaiphu rite"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manipuri_salailen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Sanamahi and Pakhangba are sons of Guru Sidaba and Leimaren Sidabi"
+     }
+    ],
+    "notes": "Consort of the supreme creator Atingkok Maru Sidaba / Atiya Sidaba (recorded in the registry as Salailen / Soraren)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "manipuri_sanamahi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Mother (in some accounts foster-mother) of Sanamahi, with whom she shares the household shrine."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "manipuri_pakhangba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Mother of Pakhangba, the dragon-deity and royal ancestor."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "manipuri_panthoibi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Panthoibi is held to be a divine incarnation of Leimarel Sidabi"
+     }
+    ],
+    "notes": "Panthoibi is regarded as an incarnation (avatar) of Leimarel Sidabi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Leimarel Sidabi (Leimaren) is the supreme mother-goddess of Meitei Sanamahism — the personified earth, goddess of nature and the household, and the eternal mother from whose womb all living beings are said to have come. She is consort of the supreme creator (Atingkok Maru Sidaba / Atiya Sidaba, recorded here as Salailen) and, in the dominant purana account reported by Parratt, mother of the brothers Sanamahi and Pakhangba; a parallel tradition makes her Sanamahi's foster-mother and Pakhangba's birth-mother. Her central cult is domestic: she is worshipped with Sanamahi in the first room of every Meitei house in the isaiphu (an earthen water-pitcher) with offerings of flowers, fruit, vegetables and rice. The later household goddess Emoinu/Imoinu is said to derive from her."
+ },
+ {
+  "id": "manipuri_marjing",
+  "name": {
+   "primary": "Marjing",
+   "alt": [
+    "Malching",
+    "Lainingthou Marjing",
+    "Ibudhou Marjing"
+   ],
+   "transliterations": {
+    "meitei": "Marjing",
+    "etymology": "A Meitei theonym; the god of the Heingang (Marjing) hill north-east of Imphal, lord of horses and of the game of polo (sagol kangjei)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-god-of-horses-and-the-north-east",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Primordial god of horses, polo (sagol kangjei), sport and war; guardian of the north-eastern direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). He dwells atop the Heingang (Marjing) hill with his winged steed Samadon Ayangba, and by tradition introduced the game of polo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "north-eastern-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the north-eastern quarter; lord of the Heingang hill."
+   },
+   {
+    "sphereId": "horses-and-war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Marjing god of horses, polo and war"
+     }
+    ],
+    "notes": "God of horses, polo (sagol kangjei), sport and war."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "marjing-samadon-ayangba",
+    "name": "Samadon Ayangba (the winged steed)",
+    "kind": "mount",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Marjing's winged horse Samadon Ayangba"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Koubru (NW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_thangjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Thangjing (SW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_wangbren",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Wangbren (SE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Marjing (Malching) is the Meitei god of horses, polo (sagol kangjei), sport and war, and one of the four cardinal Umang Lai of Sanamahism — the guardian of the north-eastern direction (the Maikei Ngakpa Lai). He dwells on the Heingang (Marjing) hill north-east of Imphal with his winged steed Samadon Ayangba, and tradition credits him with introducing polo. With Koubru, Thangjing and Wangbren he forms the four-fold guardianship of the cardinal directions invoked for protection in Meitei ritual."
+ },
+ {
+  "id": "manipuri_nongpok_ningthou",
+  "name": {
+   "primary": "Nongpok Ningthou",
+   "alt": [
+    "Lainingthou Nongpok Ningthou",
+    "Nongpok Ningthou ('King of the East')"
+   ],
+   "transliterations": {
+    "meitei": "Nongpok Ningthou",
+    "etymology": "Meitei nongpok ('east') + ningthou ('king, lord'): 'the King of the East' — the guardian god of the eastern direction, enthroned on the Nongmaiching hills east of the Imphal valley."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-eastern-god-of-nongmaiching",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908); Meitei tradition on the eastern god of Nongmaiching"
+     }
+    ],
+    "notes": "The guardian god of the eastern direction, whose abode is the Nongmaiching (Langmai) hills east of the Imphal valley. In later syncretism the hill-shrine was assimilated to Shiva, but the indigenous deity is Nongpok Ningthou."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "union-with-panthoibi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa"
+     }
+    ],
+    "notes": "He and the goddess Panthoibi are the archetypal divine lovers: leaving his home to seek her, he united with her on the Nongmaiching hills. Their love is enacted at the core of the Lai Haraoba festival."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "eastern-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908); Meitei tradition"
+     }
+    ],
+    "notes": "Guardian/king of the eastern quarter; lord of Nongmaiching hill."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manipuri_panthoibi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa: the union of Nongpok Ningthou and Panthoibi"
+     }
+    ],
+    "notes": "Consort and true love of the goddess Panthoibi; the pair united on the Nongmaiching hills."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Panthoibi Khonggul (ancient Meitei text)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nongpok Ningthou ('King of the East') is the Meitei guardian god of the eastern direction, enthroned on the Nongmaiching (Langmai) hills east of the Imphal valley. He is best known as the divine lover and consort of the warrior-goddess Panthoibi: the two left their homes to seek one another and united on Nongmaiching, a romance preserved in the Panthoibi Khonggul and Langkol Chingkoipa and re-enacted at the heart of the Lai Haraoba festival. In later Hindu syncretism his hill-shrine was assimilated to Shiva, but the deity himself is indigenous to the pre-Hindu Meitei pantheon."
+ },
+ {
+  "id": "manipuri_pakhangba",
+  "name": {
+   "primary": "Pakhangba",
+   "alt": [
+    "Pakhangpa (older orthography)",
+    "Konjil Tingthokpa (cosmological title)",
+    "Paphal (the coiled-serpent emblem form)"
+   ],
+   "transliterations": {
+    "meitei": "Pakhangba",
+    "etymology": "Meitei pa ('father') + khang-ba ('to know'): 'the one who knows his father / recognizes his progenitor' — the name marks the father-recognition motif by which he won the throne. The royal emblem-form is the paphal, a serpent/dragon coiled biting its tail."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "manipuri_salailen",
+   "manipuri_leimarel"
+  ],
+  "parentRoles": {
+   "manipuri_salailen": "paternal",
+   "manipuri_leimarel": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-younger-son-the-dragon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Pakhangba, brother of Sanamahi, both sons of Atiya Guru Sidaba"
+     }
+    ],
+    "notes": "Younger son of the supreme creator (Atingkok / Atiya Guru Sidaba, recorded here as Salailen) and the earth-mother Leimarel Sidabi, and younger brother of Sanamahi. He is a primordial serpentine dragon-deity; his iconographic form, the paphal, is a coiled serpent-dragon, later shown bearing the antlers of the sangai (brow-antlered deer)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "winning-the-throne-by-recognizing-the-father",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the dead-cow recognition test / the circling-the-cosmos race"
+     }
+    ],
+    "notes": "In the succession contest Pakhangba prevailed over his elder brother — by recognizing the father (who had taken the form of a dead cow floated downriver) as both father and Guru, and/or by coiling around the throne rather than racing the cosmos — and so received the throne of the universe and kingship."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "ancestor-of-the-meitei-clans-and-kings",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on Pakhangba as ancestor of the ruling house and the serpent totem"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Royal and ancestral deity: progenitor of kingship and patron of the Ningthouja clan, whose totem is the serpent. His identity is fused with Nongda Lairen Pakhangba, traditionally the first ruler of the Ningthouja dynasty (consecration dated 33 CE), and his paphal serpent-dragon became the heraldic emblem of the Manipur kingdom."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship-and-sovereignty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Patron of kingship and the Ningthouja royal line; the throne-coiling dragon."
+   },
+   {
+    "sphereId": "serpents-and-dragons",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on the serpent ancestor and totem of the ruling clan"
+     }
+    ],
+    "notes": "Primordial serpent/dragon (paphal); serpent totem of the Ningthouja."
+   },
+   {
+    "sphereId": "ancestral-progenitor",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Divine ancestor of the Meitei ruling house."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pakhangba-serpent-transformation",
+    "name": "Serpent-dragon transformation (the paphal)",
+    "notes": "Manifests as a coiling serpent-dragon; in the throne myth he encircles/coils the throne to claim sovereignty.",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Hodson, The Meitheis (1908)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pakhangba-paphal-emblem",
+    "name": "Paphal (the royal serpent-dragon emblem)",
+    "kind": "object",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on the serpent of the ruling house; Meitei heraldry (paphal)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "manipuri_salailen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son of the supreme creator Atingkok / Atiya Guru Sidaba (recorded here as Salailen)."
+   },
+   {
+    "kind": "mother",
+    "personId": "manipuri_leimarel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son of the earth-mother Leimarel Sidabi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "manipuri_sanamahi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): brother of Sanamahi"
+     }
+    ],
+    "notes": "Younger brother of Sanamahi; wins the throne in the central Sanamahi–Pakhangba rivalry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pakhangba ('the one who knows his father') is the primordial serpent-dragon deity of Meitei Sanamahism and the royal ancestral god. Per the Manipuri puranas (Parratt) he is the younger son of the supreme creator Atiya/Atingkok Guru Sidaba (recorded here as Salailen) and the earth-mother Leimarel Sidabi, and younger brother of Sanamahi. He wins the celebrated succession contest — by recognizing the father disguised as a dead cow, and/or by coiling around the throne rather than racing the cosmos — and so becomes lord of the throne and patron of kingship. As progenitor of the Ningthouja clan (whose totem is the serpent) his identity merges with Nongda Lairen Pakhangba, the traditional first king (33 CE); his coiled serpent-dragon emblem, the paphal, is the heraldic device of the Manipur kingdom. This is the primordial divine ancestor, distinct from (though identified with) the historical-royal figure already in the registry as Chothe Thangwai Pakhangba."
+ },
+ {
+  "id": "manipuri_panthoibi",
+  "name": {
+   "primary": "Panthoibi",
+   "alt": [
+    "Nongpok Leima ('Queen of the East')",
+    "Panthoipi"
+   ],
+   "transliterations": {
+    "meitei": "Panthoibi",
+    "etymology": "A Meitei goddess-name; she is titled Nongpok Leima, 'Lady/Queen of the East,' as consort of the eastern god Nongpok Ningthou. Traditionally remembered as a deified princess of the Ningthouja line."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-deified-princess-and-warrior-goddess",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on Panthoibi"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul (ancient Meitei text on the quest of Panthoibi)"
+     }
+    ],
+    "notes": "Goddess of civilization, courage, fertility, handicraft, love, victory, warfare and wisdom; remembered as a deified princess of an era before the consecration of Pakhangba (33 CE). She is held to be a divine incarnation of the earth-mother Leimarel Sidabi (and of Nongthang Leima)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "elopement-and-union-with-nongpok-ningthou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa (Meitei texts on the Panthoibi–Nongpok Ningthou romance)"
+     }
+    ],
+    "notes": "Rejecting an arranged marriage, she sought her true love and united with the eastern god Nongpok Ningthou on the Nongmaiching (Langmai) hills; their meeting at the Kangla became the site of the coronation of Meitei kings. The pair are central to the Lai Haraoba festival."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-victory",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908); Panthoibi Khonggul"
+     }
+    ],
+    "notes": "Warrior goddess of courage, victory and warfare."
+   },
+   {
+    "sphereId": "love-and-fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa"
+     }
+    ],
+    "notes": "Goddess of love and fertility; her romance with Nongpok Ningthou is paradigmatic."
+   },
+   {
+    "sphereId": "civilization-and-handicraft",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Patroness of civilization, handicraft and wisdom."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manipuri_nongpok_ningthou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa: the union of Panthoibi and Nongpok Ningthou"
+     }
+    ],
+    "notes": "Consort and true love of the eastern god Nongpok Ningthou; united on the Nongmaiching hills."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "manipuri_leimarel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Panthoibi as an incarnation of Leimarel Sidabi"
+     }
+    ],
+    "notes": "Regarded as a divine incarnation (avatar) of the earth-mother Leimarel Sidabi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Panthoibi Khonggul (ancient Meitei text)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Panthoibi (Nongpok Leima, 'Queen of the East') is the great Meitei warrior-love goddess — patroness of courage, victory and warfare, and of love, fertility, civilization, handicraft and wisdom. Remembered as a deified princess of the Ningthouja line from before Pakhangba's consecration (33 CE), she is also held to be a divine incarnation of the earth-mother Leimarel Sidabi. Her defining narrative, preserved in the Panthoibi Khonggul and related texts, is her rejection of an arranged marriage and her elopement with the eastern god Nongpok Ningthou, whom she joins on the Nongmaiching hills; their union at the Kangla sanctified it as the place where Meitei kings were crowned. The couple stand at the heart of the Lai Haraoba festival."
+ },
+ {
+  "id": "manipuri_sanamahi",
+  "name": {
+   "primary": "Lainingthou Sanamahi",
+   "alt": [
+    "Sanamahi",
+    "Asheeba (the creating/managing aspect)",
+    "Imung Lai (household lord)"
+   ],
+   "transliterations": {
+    "meitei": "Lainingthou Sanamahi",
+    "etymology": "Honorific Lainingthou ('lord-king / divine sovereign') + Sanamahi, popularly glossed 'liquid gold' (sana 'gold' + mahi 'liquid/sap'); the name evokes the molten-gold pool (Isaiphu) in which, by tradition, he was conceived/born. Also titled Asheeba, 'the one for creation and management.'"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "manipuri_salailen",
+   "manipuri_leimarel"
+  ],
+  "parentRoles": {
+   "manipuri_salailen": "paternal",
+   "manipuri_leimarel": "maternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-eldest-son-of-the-creator",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Sanamahi is a son of Guru Sidaba and Leimaren Sidabi and elder brother of Pakhangba"
+     }
+    ],
+    "notes": "Eldest son of the supreme creator (Atingkok / Atiya Guru Sidaba, recorded here as Salailen) and the earth-mother Leimarel Sidabi. By tradition he was conceived/manifested within the Isaiphu, a pool of molten gold, and named by the creator god himself."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "the-contest-with-pakhangba-for-the-throne",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the rivalry of the two brothers (the 'dead-cow' recognition test and the circling-the-cosmos race)"
+     }
+    ],
+    "notes": "In the famed succession contest the creator set the brothers to encircle the cosmos (or, in a parallel version, disguised himself as a dead cow floated downriver to test which son recognized him as both father and Guru). Sanamahi, the elder, was outmanoeuvred — Pakhangba won by coiling around the throne rather than racing the world — and so Pakhangba received the throne of the universe and kingship."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 2,
+    "startEvent": "appointment-as-lord-of-the-household",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Sanamahi the most important of the household deities"
+     }
+    ],
+    "notes": "To compensate the elder son, the creator made Sanamahi the king/protector of every household of mankind — the supreme domestic deity (Imung Lai). In the puranic theology he is also credited with creating the world, living beings and humankind in the image of the supreme father, who then breathed intelligence into them. He is worshipped in the sacred south-western corner of the Meitei house with the earth-mother Leimarel."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "household-and-hearth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): the most important of the household deities"
+     }
+    ],
+    "notes": "Supreme guardian of the home; worshipped in the sacred corner of every Meitei house."
+   },
+   {
+    "sphereId": "guardianship-of-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Protector and guardian god of humankind (Asheeba)."
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): per the Manipuri puranas Sanamahi created the universe, beings and man"
+     }
+    ],
+    "notes": "Demiurge in the puranic account: shapes the universe, creatures, and man under the supreme father."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "manipuri_salailen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son of the supreme creator Atingkok / Atiya Guru Sidaba (recorded here as Salailen)."
+   },
+   {
+    "kind": "mother",
+    "personId": "manipuri_leimarel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son (or foster-son, in a variant) of the earth-mother Leimarel Sidabi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "manipuri_pakhangba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): elder brother of Pakhangba"
+     }
+    ],
+    "notes": "Elder brother of Pakhangba; the two contest the throne, the central Sanamahi–Pakhangba rivalry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Lainingthou Sanamahi is the central deity of household Sanamahism — the supreme guardian god of the home and of mankind. Per the Manipuri puranas (Parratt) he is the eldest son of the supreme creator Atiya/Atingkok Guru Sidaba (recorded in this registry as Salailen) and the earth-mother Leimarel Sidabi, and elder brother of Pakhangba. The defining myth is the brothers' contest for their father's throne: Sanamahi loses (Pakhangba coils around the throne instead of racing the cosmos, or alone recognizes the father disguised as a dead cow), and is compensated with sovereignty over every human household. He is worshipped, with Leimarel, in the sacred south-western corner of the Meitei house. In the puranic cosmology he is further credited as the demiurge who fashioned the world, living beings and humankind in the image of the supreme father. His name is popularly read 'liquid gold,' after the molten-gold pool (Isaiphu) of his birth."
+ },
+ {
+  "id": "manipuri_thangjing",
+  "name": {
+   "primary": "Thangjing",
+   "alt": [
+    "Thangching",
+    "Ibudhou Thangjing",
+    "Ebudhou Thangjing",
+    "Chingu Thangjing"
+   ],
+   "transliterations": {
+    "meitei": "Thangjing",
+    "etymology": "A Meitei theonym; the honorific Ibudhou/Ebudhou ('grandfather/ancestor-lord') marks his ancestral status at Moirang. The ruling Umang Lai of Moirang on the banks of Loktak lake."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-ruling-deity-of-moirang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on the deity of Moirang"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai and Lai Haraoba"
+     }
+    ],
+    "notes": "Pre-Hindu primordial deity, the ancient national/ruling god of Moirang (Keke Moirang), who rules supreme on the banks of the landlocked sea, Loktak lake, and protects the southern valley. He is the guardian of the south-western direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). His Moirang Lai Haraoba is among the largest of the festivals."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "south-western-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the south-western quarter; tutelary lord of Moirang and Loktak."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai (Thangjing, Koubru, Marjing, Wangbren) as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions (Maikei Ngakpa Lai) with Koubru (NW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_marjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Marjing (NE)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_wangbren",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Wangbren (SE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Thangjing (Thangching; Ibudhou Thangjing) is the ancient ruling deity of Moirang and one of the four cardinal Umang Lai of Meitei Sanamahism, the guardian of the south-western direction (the Maikei Ngakpa Lai). A pre-Hindu primordial god, he reigns on the banks of Loktak lake and protects the southern Imphal valley; his Moirang Lai Haraoba is one of the great festivals of the tradition. Worship of the Umang Lai (forest/sylvan deities) such as Thangjing is the substance of the Lai Haraoba ('pleasing of the gods')."
+ },
+ {
+  "id": "manipuri_wangbren",
+  "name": {
+   "primary": "Wangbren",
+   "alt": [
+    "Wangpulen",
+    "Wangpurel",
+    "Wangbaren",
+    "Wangpuren",
+    "Lainingthou Wangbren"
+   ],
+   "transliterations": {
+    "meitei": "Wangbren",
+    "etymology": "A Meitei theonym (variously Wangpulen / Wangpurel); the lord of the waters and ruler of the under-water world. Guardian of the south-eastern direction."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-water-god-of-the-south-east",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Primordial god of water, rain, flood, disease and sickness, lord of the rivers and ruler of the under-water world; guardian of the south-eastern direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "south-eastern-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the south-eastern quarter."
+   },
+   {
+    "sphereId": "water-and-rain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Wangbren/Wangpulen god of water, rain, flood and the under-water world"
+     }
+    ],
+    "notes": "Lord of water, rain and flood; ruler of the under-water world and bringer of disease."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Koubru (NW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_thangjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Thangjing (SW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_marjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Marjing (NE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wangbren (Wangpulen / Wangpurel) is the Meitei god of water, rain, flood, disease and sickness — lord of the rivers and ruler of the under-water world — and one of the four cardinal Umang Lai of Sanamahism, the guardian of the south-eastern direction (the Maikei Ngakpa Lai). With Koubru, Thangjing and Marjing he completes the four-fold guardianship of the cardinal directions invoked in Meitei ritual to protect the land from disaster."
  },
  {
   "id": "mansi_kaltes_ekwa",
@@ -131108,6 +138271,113 @@ const NEW_FIGURES = [
   "notes": "Jötunn personification of the sea, ale-brewer and host of the gods' feasts, husband of Rán."
  },
  {
+  "id": "norse_aslaug",
+  "name": {
+   "primary": "Áslaug",
+   "alt": [
+    "Aslaug",
+    "Kráka",
+    "Randalín"
+   ],
+   "transliterations": {
+    "old-norse": "Áslaug",
+    "etymology": "áss 'god' + laug (a feminine name-element); 'god-betrothed.' Known in disguise as Kráka 'crow.'"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_sigurd"
+  ],
+  "parentRoles": {
+   "norse_sigurd": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 100,
+   "mythicEnd": 260,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "hidden-childhood",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ragnars saga loðbrókar ch. 1"
+     }
+    ],
+    "notes": "Orphaned daughter of Sigurd and Brynhildr, hidden by her foster-father Heimir inside a harp and raised in secret as the peasant-girl Kráka."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "marriage-to-Ragnar",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ragnars saga loðbrókar ch. 4-9"
+     }
+    ],
+    "notes": "Married Ragnar Loðbrók and bore his sons; proved her royal descent when her son Sigurd was born with the image of a serpent in his eye."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_sigurd",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ragnars saga loðbrókar ch. 1"
+     }
+    ],
+    "notes": "Daughter of Sigurd and the valkyrie Brynhildr."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_svanhild",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 29, 32"
+     }
+    ],
+    "notes": "Half-sister; both daughters of Sigurd."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ragnars saga loðbrókar ch. 1-9"
+     },
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 29 (Áslaug named as daughter of Sigurd and Brynhildr)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of Sigurd and Brynhildr, and the bridge between the Vǫlsung cycle and the saga of Ragnar Loðbrók: raised in hiding as the crow-girl Kráka, she became Ragnar's queen and mother of his sons (Ívarr the Boneless, Björn Ironside, Sigurd Snake-in-the-Eye), carrying the Vǫlsung blood into the legendary royal lines of Scandinavia."
+ },
+ {
   "id": "norse_baldr",
   "name": {
    "primary": "Baldr",
@@ -132038,6 +139308,112 @@ const NEW_FIGURES = [
   "notes": "Daughter of Loki and Angrboða, cast into Niflheim to rule the realm of the dead."
  },
  {
+  "id": "norse_helgi_hundingsbane",
+  "name": {
+   "primary": "Helgi Hundingsbane",
+   "alt": [
+    "Helgi Hundingsbani",
+    "Helgi"
+   ],
+   "transliterations": {
+    "old-norse": "Helgi Hundingsbani",
+    "etymology": "helgi 'holy, dedicated'; the by-name Hundingsbani means 'slayer of Hunding.'"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_sigmund"
+  ],
+  "parentRoles": {
+   "norse_sigmund": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 50,
+   "mythicEnd": 210,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "slaying-of-Hunding",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Helgakviða Hundingsbana I"
+     }
+    ],
+    "notes": "Won his by-name by killing King Hunding and his sons; courted and won the valkyrie Sigrún against her betrothal to Höðbroddr, whom he defeated at Frekastein."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "death-and-the-grave-mound",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Helgakviða Hundingsbana II"
+     }
+    ],
+    "notes": "Killed by Sigrún's brother Dagr with a spear lent by Odin; afterward Sigrún sought him in his grave-mound, where he rode once more from Valhalla to meet her."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_sigmund",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Helgakviða Hundingsbana I, prose"
+     }
+    ],
+    "notes": "Son of Sigmund by Borghild."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_sigurd",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 9"
+     }
+    ],
+    "notes": "Half-brother of Sigurd."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Helgakviða Hundingsbana I & II (Poetic Edda)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 9"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Sigmund by Borghild and half-brother of Sigurd. The hero of the two Helgi-lays of the Poetic Edda: slayer of Hunding, beloved of the valkyrie Sigrún, and — uniquely in the corpus — a dead hero who rides back from the grave to his mourning bride, a haunting attached to the belief that the lovers were reborn."
+ },
+ {
   "id": "norse_hodr",
   "name": {
    "primary": "Höðr",
@@ -132549,6 +139925,649 @@ const NEW_FIGURES = [
   "notes": "Golden-haired goddess, wife of Thor, whose shorn hair occasioned the dwarves' forging of the gods' treasures."
  },
  {
+  "id": "norse_sigmund",
+  "name": {
+   "primary": "Sigmund",
+   "alt": [
+    "Sigmundr"
+   ],
+   "transliterations": {
+    "old-norse": "Sigmundr",
+    "etymology": "sigr 'victory' + mundr 'protection, hand'; 'victory-protection.'"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_volsung"
+  ],
+  "parentRoles": {
+   "norse_volsung": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 25,
+   "mythicEnd": 200,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "draws-the-sword-from-Barnstokkr",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3"
+     }
+    ],
+    "notes": "At Signý's wedding a one-eyed stranger (Odin) thrust a sword into the tree Barnstokkr; of all present, only Sigmund could draw it. The blade is Gram."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "death-against-the-Hundings",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 11-12"
+     }
+    ],
+    "notes": "In his last battle Odin met him spear-first; Gram shattered against the spear and Sigmund fell, bidding his pregnant wife Hjördís keep the fragments for the son to come."
+   }
+  ],
+  "domains": [],
+  "faculties": [
+   {
+    "id": "venom-hardened",
+    "name": "Unharmed by venom touched to the skin",
+    "inheritability": "partial",
+    "notes": "Of the Vǫlsung kin, Sigmund and Sinfjötli could handle poison on the outside of the body without harm, though not drink it.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 8"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gram",
+    "name": "Gram",
+    "kind": "weapon",
+    "role": "wielder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3, 11"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_volsung",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2-3"
+     }
+    ],
+    "notes": "Eldest son of Völsung."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_signy",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3"
+     }
+    ],
+    "notes": "Twin of Signý."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_sinfjotli",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 7"
+     }
+    ],
+    "notes": "Son by his sister Signý."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_helgi_hundingsbane",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Helgakviða Hundingsbana I, prose"
+     }
+    ],
+    "notes": "Son by Borghild."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_sigurd",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 12"
+     }
+    ],
+    "notes": "Son by Hjördís, born after Sigmund's death."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3-12"
+     },
+     {
+      "kind": "primary",
+      "reference": "Beowulf 874-897 (Sigemund the Wælsing, the oldest attestation)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "sword-from-Barnstokkr",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Greatest of Völsung's sons; the only man able to draw Odin's sword Gram from the tree Barnstokkr. Sole survivor of Siggeir's massacre of the Vǫlsungar, he lived as an outlaw and, with his son Sinfjötli, took vengeance. Father of Sinfjötli (by Signý), Helgi Hundingsbane (by Borghild) and, posthumously, Sigurd (by Hjördís). Already named in Beowulf as Sigemund the dragon-slayer — a role the later tradition transfers to his son."
+ },
+ {
+  "id": "norse_signy",
+  "name": {
+   "primary": "Signý",
+   "alt": [
+    "Signy"
+   ],
+   "transliterations": {
+    "old-norse": "Signý",
+    "etymology": "sigr 'victory' + ný 'new'; an heroic-age woman's name common in the legendary corpus."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_volsung"
+  ],
+  "parentRoles": {
+   "norse_volsung": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 25,
+   "mythicEnd": 175,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "marriage-to-Siggeir",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 4"
+     }
+    ],
+    "notes": "Given against her will to King Siggeir of Gautland; foresaw the treachery that would destroy her family and warned her father in vain."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "death-in-the-burning-hall",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 8"
+     }
+    ],
+    "notes": "Having engineered the vengeance that destroyed Siggeir, she revealed that Sinfjötli was her son by her own brother Sigmund — a pure-Vǫlsung avenger — then chose to die in the burning hall beside the husband she had ruined."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_volsung",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2-3"
+     }
+    ],
+    "notes": "Daughter of Völsung."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_sigmund",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3"
+     }
+    ],
+    "notes": "Twin of Sigmund."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "norse_sinfjotli",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 7"
+     }
+    ],
+    "notes": "Bore Sinfjötli by her brother Sigmund to produce an avenger of unmixed Vǫlsung blood."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3-8"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Twin sister of Sigmund and daughter of Völsung. The tragic architect of the line's first revenge: married to Siggeir, who massacred her father and brothers, she orchestrated his destruction across years — sending her sons to Sigmund to be tested, then conceiving Sinfjötli by Sigmund himself — and died with Siggeir in the fire rather than outlive the vengeance she had wrought."
+ },
+ {
+  "id": "norse_sigurd",
+  "name": {
+   "primary": "Sigurd",
+   "alt": [
+    "Sigurðr",
+    "Sigurd Fáfnisbani",
+    "Siegfried"
+   ],
+   "transliterations": {
+    "old-norse": "Sigurðr Fáfnisbani",
+    "etymology": "sigr 'victory' + an element cognate with vǫrðr 'guardian'; by-name Fáfnisbani 'Fáfnir's-bane.' Continental cognate Sîfrit/Siegfried."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_sigmund"
+  ],
+  "parentRoles": {
+   "norse_sigmund": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 75,
+   "mythicEnd": 225,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "posthumous-birth-and-fostering",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 13"
+     }
+    ],
+    "notes": "Born after Sigmund's death to Hjördís; fostered at the court of King Hjálprek by the smith Regin, who reforged the shards of Gram into a blade that split the anvil."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "slaying-of-Fáfnir",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fáfnismál (prose and stanzas)"
+     }
+    ],
+    "notes": "Dug a pit on Gnitaheiðr and drove Gram up into the dragon Fáfnir as it crawled to water. Roasting the heart, he tasted the blood, understood the speech of the nuthatches, and learned of Regin's planned treachery — whom he then killed, taking the hoard."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "murder-by-the-Gjúkungs",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 30-32"
+     }
+    ],
+    "notes": "Married Gudrún under a potion of forgetfulness and won Brynhildr for Gunnar in his shape; when the deception unravelled, Brynhildr drove the Gjúkungs to have him killed, by Gotthorm."
+   }
+  ],
+  "domains": [],
+  "faculties": [
+   {
+    "id": "bird-speech",
+    "name": "Understands the speech of birds",
+    "inheritability": "none",
+    "notes": "Gained when he tasted the heart-blood of the dragon Fáfnir; the nuthatches warn him of Regin.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fáfnismál 32-38"
+     }
+    ]
+   },
+   {
+    "id": "dragon-slayer",
+    "name": "Slayer of the dragon Fáfnir",
+    "inheritability": "none",
+    "notes": "Killed the serpent Fáfnir from a pit, the deed that defines him as Fáfnisbani.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fáfnismál, prose; Vǫlsunga saga ch. 18-19"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gram",
+    "name": "Gram",
+    "kind": "weapon",
+    "role": "wielder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Reginsmál, prose; Vǫlsunga saga ch. 15"
+     }
+    ]
+   },
+   {
+    "id": "andvaranaut",
+    "name": "Andvaranaut",
+    "kind": "ring",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Reginsmál, prose; Vǫlsunga saga ch. 14"
+     }
+    ]
+   },
+   {
+    "id": "grani",
+    "name": "Grani",
+    "kind": "mount",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 13"
+     }
+    ]
+   },
+   {
+    "id": "fafnirs-hoard",
+    "name": "Fáfnir's hoard",
+    "kind": "treasure",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fáfnismál; Vǫlsunga saga ch. 19-20"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_sigmund",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 12-13"
+     }
+    ],
+    "notes": "Posthumous son of Sigmund by Hjördís."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_helgi_hundingsbane",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 9, 12"
+     }
+    ],
+    "notes": "Half-brother; both sons of Sigmund."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_aslaug",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 29; Ragnars saga loðbrókar ch. 1"
+     }
+    ],
+    "notes": "Daughter by Brynhildr."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_svanhild",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 32; Skáldskaparmál"
+     }
+    ],
+    "notes": "Daughter by Gudrún."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Reginsmál, Fáfnismál, Sigrdrífumál (Poetic Edda)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 13-32"
+     },
+     {
+      "kind": "primary",
+      "reference": "Snorri Sturluson, Skáldskaparmál"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "dragon-slaying",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Fáfnismál, prose"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Sigurðr Fáfnisbani, the supreme hero of the North and the Siegfried of continental legend. Posthumous son of Sigmund; reforged his father's sword Gram, slew the dragon Fáfnir, took the cursed hoard and the ring Andvaranaut, gained the speech of birds from the dragon's blood, and woke the valkyrie Brynhildr. His entanglement with the Gjúkungs and Brynhildr brings about his murder and the curse's spread through the Niflung line."
+ },
+ {
+  "id": "norse_sinfjotli",
+  "name": {
+   "primary": "Sinfjötli",
+   "alt": [
+    "Sinfjotli",
+    "Fitela"
+   ],
+   "transliterations": {
+    "old-norse": "Sinfjǫtli",
+    "etymology": "Obscure; the Old English cognate Fitela names him as Sigemund's nephew in Beowulf."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_sigmund",
+   "norse_signy"
+  ],
+  "parentRoles": {
+   "norse_sigmund": "paternal",
+   "norse_signy": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 50,
+   "mythicEnd": 200,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "the-wolf-skins",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 8"
+     }
+    ],
+    "notes": "Living as outlaws, he and Sigmund found cursed wolf-skins and ran as wolves for a season; the episode tempers him for the vengeance to come."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "death-by-poison",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 10"
+     }
+    ],
+    "notes": "Poisoned by Sigmund's wife Borghild in revenge for his killing of her brother; Sigmund, who could not be harmed by venom, bore his body away and was met by Odin as a ferryman."
+   }
+  ],
+  "domains": [],
+  "faculties": [
+   {
+    "id": "wolf-shape",
+    "name": "Takes wolf form in the cursed wolf-skins",
+    "inheritability": "none",
+    "notes": "With Sigmund, donned enchanted wolf-pelts (úlfheðnar) and lived as a wolf, unable to leave the skins until the tenth day.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 8"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_sigmund",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 7"
+     }
+    ],
+    "notes": "Son and nephew of Sigmund."
+   },
+   {
+    "kind": "mother",
+    "personId": "norse_signy",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 7"
+     }
+    ],
+    "notes": "Son of Signý, conceived to make a pure-Vǫlsung avenger."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 7-10"
+     },
+     {
+      "kind": "primary",
+      "reference": "Beowulf 874-897 (as Fitela)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of Sigmund by his sister Signý — of unmixed Vǫlsung blood by design, bred to avenge Völsung. Hardened by the wolf-skin ordeal, he helped burn Siggeir's hall. Poisoned by Borghild. The oldest layer of the legend (Beowulf) already pairs him with Sigemund as Fitela."
+ },
+ {
   "id": "norse_skadi",
   "name": {
    "primary": "Skaði",
@@ -132818,6 +140837,103 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Fire-giant warden of Múspellsheimr, fated to lead the fiery host and burn the world at Ragnarök."
+ },
+ {
+  "id": "norse_svanhild",
+  "name": {
+   "primary": "Svanhild",
+   "alt": [
+    "Svanhildr",
+    "Sunilda"
+   ],
+   "transliterations": {
+    "old-norse": "Svanhildr",
+    "etymology": "svanr 'swan' + hildr 'battle'; 'swan-battle.' The historical echo Sunilda appears in Jordanes."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_sigurd"
+  ],
+  "parentRoles": {
+   "norse_sigurd": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 100,
+   "mythicEnd": 260,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "death-by-trampling",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hamðismál, prose; Skáldskaparmál"
+     }
+    ],
+    "notes": "Married to the Gothic king Jǫrmunrekkr; falsely accused of adultery with his son Randvér, she was condemned to be trampled by horses — which would not harm her until her face was covered."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_sigurd",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 32"
+     }
+    ],
+    "notes": "Daughter of Sigurd and Gudrún."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_aslaug",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 29, 32"
+     }
+    ],
+    "notes": "Half-sister of Áslaug, both daughters of Sigurd."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hamðismál; Guðrúnarhvǫt (Poetic Edda)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Snorri Sturluson, Skáldskaparmál"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jordanes, Getica 24 (the Gothic Sunilda, historical kernel)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of Sigurd and Gudrún. Her death — trampled by horses on the false charge of adultery with the Gothic king Jǫrmunrekkr's son — provokes her half-brothers Hamðir and Sǫrli to the doomed final revenge that closes the Vǫlsung-Niflung cycle. A rare case with a historical kernel: Jordanes records the Gothic queen Sunilda torn apart by horses under Ermanaric."
  },
  {
   "id": "norse_tyr",
@@ -133314,6 +141430,147 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Silent god of vengeance, son of Odin, fated to kill Fenrir and survive Ragnarök."
+ },
+ {
+  "id": "norse_volsung",
+  "name": {
+   "primary": "Völsung",
+   "alt": [
+    "Volsung",
+    "Vǫlsungr"
+   ],
+   "transliterations": {
+    "old-norse": "Vǫlsungr",
+    "etymology": "Eponymous ancestor of the Vǫlsungar; the dynastic name borne by the line, glossed in the saga as the son carried six winters in the womb and 'taken' (cut) from his dying mother."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Norse",
+  "primaryTradition": "Norse",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "norse_rerir"
+  ],
+  "parentRoles": {
+   "norse_rerir": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric",
+   "mythicStart": 0,
+   "mythicEnd": 150,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "extraordinary-birth",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2"
+     }
+    ],
+    "notes": "Conceived after Rerir and his queen received the apple of fertility from Frigg via the wish-maiden Hljóð; carried in the womb six winters and cut from his mother at her death, already grown enough to kiss her before she died."
+   },
+   {
+    "typeStatus": "scion",
+    "startEvent": "death-at-Siggeirs-hall",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 5"
+     }
+    ],
+    "notes": "King over Hunland; built his hall around the great tree Barnstokkr. Slain with most of his sons when he sailed to his son-in-law Siggeir's kingdom and was ambushed."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "barnstokkr",
+    "name": "Barnstokkr",
+    "kind": "monument",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 3"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "norse_rerir",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2"
+     }
+    ],
+    "notes": "Long-awaited son of Rerir; eponym of the Vǫlsung line."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_sigmund",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2-3"
+     }
+    ],
+    "notes": "Eldest son and heir."
+   },
+   {
+    "kind": "father-of",
+    "personId": "norse_signy",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2-3"
+     }
+    ],
+    "notes": "Twin-born daughter, given in marriage to Siggeir of Gautland."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2-5 (13th-c. Old Norse prose)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Snorri Sturluson, Skáldskaparmál (the Vǫlsung-Niflung summary)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "eponym-of-line",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vǫlsunga saga ch. 2"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eponymous ancestor of the Vǫlsungar. Son of Rerir and grandson-line of Odin through Sigi; father of the twins Sigmund and Signý and of eight further sons. His hall is built around the tree Barnstokkr, into which Odin later thrusts the sword Sigmund alone can draw. Killed by his son-in-law Siggeir, setting in motion the cycle of vengeance that defines the line."
  },
  {
   "id": "norse_ymir",
@@ -153359,6 +161616,481 @@ const NEW_FIGURES = [
   "notes": "Basotho culture-hero / deliverer of the Kgodumodumo legend, transmitted orally for centuries and dramatised by S. M. Mofokeng (1952). Sometimes called Litaolane in cognate versions. Classified demigod (culture-hero tier); explicitly not a divine type beyond the schema's allowance."
  },
  {
+  "id": "suludnon_nagmalitong_yawa",
+  "name": {
+   "primary": "Nagmalitong Yawa",
+   "alt": [
+    "Nagmalitong Yawa Sinagmaling Diwata",
+    "Malitong Yawa Sinagmaling Diwata",
+    "Buyong Sunmasakay (warrior guise)"
+   ],
+   "transliterations": {
+    "kinaray-a": "Nagmalitong Yawa",
+    "etymology": "Sugidanon/Hinilawod binukot heroine; 'Sinagmaling Diwata' is glossed as the radiant/shining diwata. Note: 'yawa' here is an archaic name-element, not the later Visayan sense of 'demon'."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Suludnon",
+  "primaryTradition": "Suludnon",
+  "sex": "female",
+  "vitalStatus": "mortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-binukot-maiden-sought-by-humadapnon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon (Humadapnon cycle)"
+     }
+    ],
+    "notes": "A binukot (secluded, veiled noblewoman) of surpassing beauty living by the mouth of the Halawod river, Nagmalitong Yawa is the maiden whom Humadapnon, guided by his spirit-friends Taghoy and Duwindi, voyages across the seas to court."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "rescue-of-humadapnon-as-buyong-sunmasakay",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Magos & Caballero, Sugidanon (Epics) of Panay"
+     }
+    ],
+    "notes": "When Humadapnon is bewitched and imprisoned for seven years in the island-cave of Tarangban by the enchantress Ginmayunan, Nagmalitong Yawa transforms herself into a male warrior named Buyong Sunmasakay, frees him and dispels the charm; she then marries Humadapnon at Halawod."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Magos & Caballero, Sugidanon (Epics) of Panay — Nagmalitong Yawa (Mali) can transform herself into a man to fight and into objects to repel unwanted suitors"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ny-male-transformation",
+    "name": "transformed herself into a male warrior to fight and to rescue her beloved",
+    "term": "Buyong Sunmasakay",
+    "script": "Kinaray-a/Latin",
+    "rom": "Buyong Sunmasakay",
+    "inheritability": "trace",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Magos & Caballero, Sugidanon (Epics) of Panay"
+     }
+    ],
+    "notes": "She assumes the guise of the warrior Buyong Sunmasakay to free Humadapnon from the Tarangban cave and to do battle."
+   },
+   {
+    "id": "ny-shapeshift-objects",
+    "name": "could change herself into things to reject the advances of men she refused",
+    "inheritability": "trace",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Magos & Caballero, Sugidanon (Epics) of Panay — binukot heroines who transform into objects to escape unwanted suitors"
+     }
+    ],
+    "notes": "Part of the binukot shapeshifting repertoire attributed to her in the Sugidanon recension."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "suludnon_humadapnon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon — Humadapnon marries Nagmalitong Yawa at Halawod"
+     }
+    ],
+    "notes": "Wife of Humadapnon in the Humadapnon cycle of the Hinilawod, whom she rescues from the Tarangban cave."
+   },
+   {
+    "kind": "spouse",
+    "personId": "suludnon_saragnayan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Labaw Donggon cycle) — Nagmalitong Yawa is the wife of Buyong Saragnayan"
+     }
+    ],
+    "notes": "In the Labaw Donggon cycle she is the young wife of Saragnayan, the Lord of Darkness, over whom Labaw Donggon and Saragnayan fight."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon (Sulod/Suludnon epic of Central Panay)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "binukot-heroine-shapeshifter",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alicia P. Magos & the Caballero family, Sugidanon (Epics) of Panay; E. Caballero-Padernal, PJSSH"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nagmalitong Yawa (Nagmalitong Yawa Sinagmaling Diwata) is the great binukot heroine of the Hinilawod/Sugidanon epics of the Panay-Bukidnon (Suludnon), recorded by F. Landa Jocano and later, in the Sugidanon recension, by Alicia P. Magos with the Caballero family. A secluded noblewoman of dazzling beauty, she is the maiden whom the demigod Humadapnon crosses the seas to court and ultimately marries; in the Labaw Donggon cycle she is instead the young wife of the dark lord Saragnayan. A shapeshifter, she transforms into the male warrior Buyong Sunmasakay to free Humadapnon from the Tarangban cave and to fight, and (in the Sugidanon) into objects to escape unwanted suitors. (The element 'yawa' in her name is archaic and does not carry the later Visayan meaning of 'demon'.)"
+ },
+ {
+  "id": "suludnon_saragnayan",
+  "name": {
+   "primary": "Saragnayan",
+   "alt": [
+    "Buyong Saragnayan",
+    "Lord of Darkness",
+    "Keeper of Light"
+   ],
+   "transliterations": {
+    "kinaray-a": "Saragnayan",
+    "etymology": "Hinilawod epic antagonist; the Lord of Darkness of Gadlum who keeps charge of the course of the sun ('Keeper of Light')."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Suludnon",
+  "primaryTradition": "Suludnon",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "rule-over-gadlum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Sulod epic, Panay); Labaw Donggon cycle"
+     }
+    ],
+    "notes": "Saragnayan, the Lord of Darkness, rules the lightless land of Gadlum and takes charge of the course of the sun; he is reckoned a demigod, born of the primordial chaos and a mortal woman, and is master of a pamlang (amulet) that makes him all but unkillable."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "duel-with-labaw-donggon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; The Aswang Project, 'Three Brothers of Panay' synopsis"
+     }
+    ],
+    "notes": "When Labaw Donggon comes to take his wife Nagmalitong Yawa, Saragnayan accepts the challenge and overcomes the hero; though Labaw Donggon holds his head underwater for seven years he cannot drown, for his life is hidden elsewhere, and he imprisons Labaw Donggon beneath his house."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-the-hidden-life-talisman",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Wikipedia 'Hinilawod' (Labaw Donggon cycle)"
+     }
+    ],
+    "notes": "His external soul lies in the heart of a wild boar in an enchanted forest; the sons of Labaw Donggon, Asu Mangga and Buyung Baranugon, capture and roast the boar, and Baranugon kills Saragnayan with poisoned arrows to the eyes, freeing their father."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "darkness",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Saragnayan, the Lord of Darkness of Gadlum"
+     }
+    ]
+   },
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hinilawod (Jocano) — Saragnayan, 'Keeper of Light', takes charge of the course of the sun"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sar-deathless-talisman",
+    "name": "could not be killed because his life was hidden outside his body",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod; Wikipedia 'Hinilawod'"
+     }
+    ],
+    "notes": "His soul resides in the heart of a wild boar in a distant enchanted forest, so he survives being held underwater for seven years; he can be slain only by destroying the boar."
+   },
+   {
+    "id": "sar-amulet-might",
+    "name": "overpowered Labaw Donggon in single combat by the power of his amulet",
+    "term": "pamlang",
+    "script": "Kinaray-a/Latin",
+    "rom": "pamlang",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Saragnayan defeats Labaw Donggon with the aid of his pamlang/anting-anting"
+     }
+    ],
+    "notes": "Wielding his pamlang (charm/anting-anting), he defeats the hero and imprisons him beneath his house."
+   },
+   {
+    "id": "sar-keeper-of-the-sun",
+    "name": "kept charge of the course of the sun as Keeper of Light",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hinilawod (Jocano) — Saragnayan takes charge of the course of the sun"
+     }
+    ],
+    "notes": "As 'Keeper of Light' he governs the sun's daily course, a cosmic office tied to his epithet."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "sar-pamlang",
+    "name": "amulet / charm",
+    "kind": "relic",
+    "role": "owner",
+    "term": "pamlang",
+    "script": "Kinaray-a/Latin",
+    "rom": "pamlang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Saragnayan's pamlang (anting-anting)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "suludnon_nagmalitong_yawa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Labaw Donggon cycle) — Nagmalitong Yawa Sinagmaling Diwata is the wife of Buyong Saragnayan"
+     }
+    ],
+    "notes": "Nagmalitong Yawa is Saragnayan's wife; Labaw Donggon's bid to take her sets off their duel."
+   },
+   {
+    "kind": "enemy",
+    "personId": "suludnon_labaw_donggon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod — Labaw Donggon challenges and is defeated by Saragnayan, then is avenged"
+     }
+    ],
+    "notes": "Principal antagonist of Labaw Donggon: defeats and imprisons him, and is in turn slain by Labaw Donggon's sons."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Hinilawod (Sulod/Suludnon epic of Central Panay); collected from the chanter Hugan-an"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-antagonist",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia 'Hinilawod'; The Aswang Project, 'Three Brothers of Panay' (excerpt of the Suludnon epic)"
+     }
+    ],
+    "weight": "tertiary"
+   }
+  ],
+  "notes": "Saragnayan (Buyong Saragnayan), the 'Lord of Darkness' and 'Keeper of Light', is the great antagonist of the Hinilawod, the Sulod epic of Central Panay recorded by F. Landa Jocano. A demigod said to be born of primordial chaos and a mortal woman, he rules the eternally dark land of Gadlum, keeps charge of the course of the sun, and is the husband of the enchantress Nagmalitong Yawa. When Labaw Donggon comes to claim her, Saragnayan defeats him with his pamlang (amulet) and imprisons him; he cannot be drowned because his life is hidden in the heart of a wild boar, and he is finally killed only when Labaw Donggon's sons Asu Mangga and Buyung Baranugon destroy the boar and pierce his eyes with poisoned arrows."
+ },
+ {
+  "id": "suludnon_tungkung_langit",
+  "name": {
+   "primary": "Tungkung Langit",
+   "alt": [
+    "Tungkung Langit (Pillar of the Skies)",
+    "Tungkung Langit (Pillar of Heaven)"
+   ],
+   "transliterations": {
+    "kinaray-a": "Tungkung Langit",
+    "etymology": "Kinaray-a/Hiligaynon 'pillar/prop of the skies'; the supreme male diwata and creator of the Sulod (Panay) pantheon, husband of Alunsina."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Suludnon",
+  "primaryTradition": "Suludnon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "ordering-of-the-primordial-void",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Sulod creation myth, Panay"
+     }
+    ],
+    "notes": "In the Panay creation myth Tungkung Langit and Alunsina exist together in the formless primordial void; Tungkung Langit, the industrious supreme being, brings order to chaos and fashions the sea, the earth and the sky."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "the-loss-of-alunsina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, field-collected Panay creation myth (Tungkung Langit and Alunsina), 1955"
+     }
+    ],
+    "notes": "Enraged by the jealousy and idleness of his wife Alunsina, Tungkung Langit drives her away; in grief he adorns the sky with her jewels (the stars, moon and sun) hoping she will return, and so the heavens take their present form."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Sulod Society (1968); Outline of Philippine Mythology (1969) — Tungkung Langit, supreme deity of the upperworld (Ibabawnun)"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panay creation myth; Tungkung Langit fashions the earth, sea and sky out of the primordial void (Jocano 1969)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tl-ordering-creation",
+    "name": "ordered the primordial chaos into sea, earth and sky",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Panay creation myth"
+     }
+    ],
+    "notes": "As the supreme creator he gives form to the formless void, the foundational act of the Panay cosmogony."
+   },
+   {
+    "id": "tl-make-heavenly-lights",
+    "name": "set the sun, moon and stars in the sky as Alunsina's jewels",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panay creation myth (Tungkung Langit and Alunsina), collected by F. Landa Jocano"
+     }
+    ],
+    "notes": "After banishing Alunsina he adorns the heavens with lights to lure her back, accounting for the sun, moon and stars."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "suludnon_alunsina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Sulod Society (1968) and Outline of Philippine Mythology (1969); Panay creation myth — Tungkung Langit, supreme sky-god, and Alunsina, goddess of the eastern skies, are husband and wife"
+     }
+    ],
+    "notes": "Alunsina (goddess of the eastern skies) is the wife of Tungkung Langit; their separation is the engine of the Panay creation narrative."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Sulod Society: A Study of the Kinship System and Social Organization of a Mountain People of Central Panay (1968)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role-supreme-creator",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Panay (Sulod) creation myth"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tungkung Langit ('pillar/prop of the skies') is the supreme male diwata and creator-god of the Sulod (Suludnon/Panay-Bukidnon) pantheon of Central Panay, documented by anthropologist F. Landa Jocano. In the Sulod three-tiered cosmos he rules the upperworld (Ibabawnun) and is assisted by lesser divinities; in the Panay creation myth he and his wife Alunsina, goddess of the eastern skies, dwell together in the primordial void until, angered by her jealousy and idleness, he banishes her and orders chaos into the sea, earth and sky, hanging the sun, moon and stars in the heavens in the hope of her return. He is the Visayan counterpart to the Tagalog supreme being Bathala."
+ },
+ {
   "id": "sundanese_mundinglaya",
   "name": {
    "primary": "Prince Hero of Pajajaran",
@@ -153774,6 +162506,883 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Daughter/emanation of Sang Hyang Kersa in some Sunda Wiwitan accounts. Counterpart to the male high-god as the maternal divine principle."
+ },
+ {
+  "id": "tagalog_amanikable",
+  "name": {
+   "primary": "Amanikable",
+   "alt": [
+    "Aman Ikabli"
+   ],
+   "transliterations": {
+    "tagalog": "Amanikable",
+    "rom": "Amanikable",
+    "etymology": "Tagalog god of the sea (in older strata a god of hunters); the ill-tempered sea-lord who succeeded Aman Sinaya."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-sea-god",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     }
+    ],
+    "notes": "A first-generation deity of Bathala's pantheon; lord of the sea, whose moods raise the storms and waves that wreck the unlucky."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Amanikable",
+     "script": "Tagalog",
+     "rom": "Amanikable"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contemporary",
+    "personId": "tagalog_bathala",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "A first-generation deity contemporary with Bathala in the Tagalog pantheon."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog god of the sea, a first-generation deity of Bathala's pantheon. Originally a god of hunters in the older accounts, he came to be the ill-tempered ruler of the waters who replaced the primordial sea-goddess Aman Sinaya."
+ },
+ {
+  "id": "tagalog_anagolay",
+  "name": {
+   "primary": "Anagolay",
+   "alt": [],
+   "transliterations": {
+    "tagalog": "Anagolay",
+    "rom": "Anagolay",
+    "etymology": "Tagalog goddess of lost things."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_lakapati",
+   "tagalog_mapulon"
+  ],
+  "parentRoles": {
+   "tagalog_lakapati": "maternal",
+   "tagalog_mapulon": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-lost-things",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "Goddess invoked to recover what is lost; daughter of Lakapati and Mapulon, wife of Dumakulem."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lost-things",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anagolay",
+     "script": "Tagalog",
+     "rom": "Anagolay"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_dumakulem",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Wife of the mountain-god Dumakulem."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog goddess of lost things, daughter of Lakapati and Mapulon. Wife of Dumakulem and mother of Diyan Masalanta, the goddess of love."
+ },
+ {
+  "id": "tagalog_anitun_tabu",
+  "name": {
+   "primary": "Anitun Tabu",
+   "alt": [
+    "Anitan Tauo"
+   ],
+   "transliterations": {
+    "tagalog": "Anitun Tabu",
+    "rom": "Anitun Tabu",
+    "etymology": "Tagalog goddess of wind and rain."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_idianale",
+   "tagalog_dimangan"
+  ],
+  "parentRoles": {
+   "tagalog_idianale": "maternal",
+   "tagalog_dimangan": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-wind-goddess",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "Fickle goddess of wind and rain; daughter of Idianale and Dimangan."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wind-and-rain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Anitun Tabu",
+     "script": "Tagalog",
+     "rom": "Anitun Tabu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tagalog_dumakulem",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Sister of the mountain-god Dumakulem."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog goddess of wind and rain, daughter of Idianale and Dimangan and sister of Dumakulem. Known for a changeable temper that governs the weather."
+ },
+ {
+  "id": "tagalog_apolaki",
+  "name": {
+   "primary": "Apolaki",
+   "alt": [
+    "Apolake"
+   ],
+   "transliterations": {
+    "tagalog": "Apolaki",
+    "rom": "Apolaki",
+    "etymology": "Tagalog/Pangasinan-Pampangan sun- and war-god; son of Bathala."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_bathala"
+  ],
+  "parentRoles": {
+   "tagalog_bathala": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "startEvent": "attestation-as-sun-and-war-god",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     }
+    ],
+    "notes": "Patron of warriors and the sun; son of Bathala. In the moon-myth he quarrels with his sister Mayari over ruling the world, and the fight leaves the moon (Mayari) dimmer than the sun."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sun-and-war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Apolaki",
+     "script": "Tagalog",
+     "rom": "Apolaki"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tagalog_bathala",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Son of the supreme god Bathala; brother of the moon-goddess Mayari."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Boxer Codex (c. 1590)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog sun- and war-god, son of Bathala and brother of the moon-goddess Mayari. Their contest for dominion over the world is the Tagalog explanation for why the moon shines more faintly than the sun."
+ },
+ {
+  "id": "tagalog_dimangan",
+  "name": {
+   "primary": "Dimangan",
+   "alt": [
+    "Dumangan"
+   ],
+   "transliterations": {
+    "tagalog": "Dimangan",
+    "rom": "Dimangan",
+    "etymology": "Tagalog god of good harvest; Dumangan in some accounts."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-harvest-god",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "P. de San Buenaventura, Vocabulario de lengua Tagala (1613)"
+     }
+    ],
+    "notes": "God of the good harvest, who grants the ripening and increase of the rice crop. Husband of Idianale."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "harvest",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Dimangan",
+     "script": "Tagalog",
+     "rom": "Dimangan"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_idianale",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Husband of Idianale."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog god of the good harvest. Husband of Idianale; father, in Jocano's reconstruction, of the mountain-god Dumakulem and the wind-goddess Anitun Tabu."
+ },
+ {
+  "id": "tagalog_diyan_masalanta",
+  "name": {
+   "primary": "Diyan Masalanta",
+   "alt": [
+    "Dian Masalanta"
+   ],
+   "transliterations": {
+    "tagalog": "Diyan Masalanta",
+    "rom": "Diyan Masalanta",
+    "etymology": "Tagalog goddess of love and childbirth; recorded by Plasencia as Dian Masalanta, patroness of lovers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_anagolay",
+   "tagalog_dumakulem"
+  ],
+  "parentRoles": {
+   "tagalog_anagolay": "maternal",
+   "tagalog_dumakulem": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-love",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Juan de Plasencia, Customs of the Tagalogs (1589)"
+     }
+    ],
+    "notes": "Goddess of love, conception and childbirth, named by Plasencia as the patroness of lovers and generation; daughter of Anagolay and Dumakulem."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "love-and-childbirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Diyan Masalanta",
+     "script": "Tagalog",
+     "rom": "Diyan Masalanta"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plasencia, Customs of the Tagalogs (1589)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Juan de Plasencia, Customs of the Tagalogs (1589)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog goddess of love, conception and childbirth — the deity Plasencia singles out as patroness of lovers, whose worship the friars most sought to suppress. Daughter of Anagolay and Dumakulem in Jocano's reconstruction."
+ },
+ {
+  "id": "tagalog_dumakulem",
+  "name": {
+   "primary": "Dumakulem",
+   "alt": [],
+   "transliterations": {
+    "tagalog": "Dumakulem",
+    "rom": "Dumakulem",
+    "etymology": "Tagalog guardian god of the mountains."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tagalog_idianale",
+   "tagalog_dimangan"
+  ],
+  "parentRoles": {
+   "tagalog_idianale": "maternal",
+   "tagalog_dimangan": "paternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-mountain-god",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "The strong guardian of the mountains; son of Idianale and Dimangan. Married Anagolay."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "mountains",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Dumakulem",
+     "script": "Tagalog",
+     "rom": "Dumakulem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_anagolay",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Husband of Anagolay, goddess of lost things."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tagalog_anitun_tabu",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Brother of the wind-goddess Anitun Tabu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog guardian god of the mountains, son of Idianale and Dimangan. Married Anagolay, the goddess of lost things; their daughter is Diyan Masalanta, goddess of love. The genealogy follows Jocano's reconstruction."
+ },
+ {
+  "id": "tagalog_idianale",
+  "name": {
+   "primary": "Idianale",
+   "alt": [
+    "Idiyanale",
+    "Idianali"
+   ],
+   "transliterations": {
+    "tagalog": "Idianale",
+    "rom": "Idianale",
+    "etymology": "Tagalog goddess of labour and good deeds, invoked for success in work."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-goddess-of-labour",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "Patroness of labour and good works; the people called on her for success in their undertakings. Wife of Dimangan."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "labour-and-good-deeds",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Idianale",
+     "script": "Tagalog",
+     "rom": "Idianale"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_dimangan",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Wife of Dimangan, god of good harvest."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tagalog deity lists in the early Spanish accounts"
+     },
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog goddess of labour and good deeds. Wife of Dimangan and, in Jocano's systematization of the pantheon, mother of Dumakulem and Anitun Tabu."
+ },
+ {
+  "id": "tagalog_lakapati",
+  "name": {
+   "primary": "Lakapati",
+   "alt": [
+    "Ikapati",
+    "Lacapati"
+   ],
+   "transliterations": {
+    "tagalog": "Lakapati",
+    "rom": "Lakapati",
+    "etymology": "Tagalog hermaphrodite deity of fertility and agriculture; named Lacapati in the early vocabularies."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "nonbinary",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-fertility-deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613); Boxer Codex (c. 1590)"
+     }
+    ],
+    "notes": "The great fertility deity, androgynous, protector of the sown fields; farmers raised a child in the field and prayed 'Lakapati, feed thy servant' for a good crop."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fertility-and-agriculture",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Lakapati",
+     "script": "Tagalog",
+     "rom": "Lakapati"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_mapulon",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Paired with Mapulon, god of seasons."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "San Buenaventura, Vocabulario de lengua Tagala (1613); Boxer Codex (c. 1590)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Tagalog hermaphrodite deity of fertility and cultivated land, one of the most-invoked gods of the rice-farming Tagalogs. Worshipped at planting with the prayer 'Lakapati, feed thy servant.' In Jocano's reconstruction the consort of Mapulon and mother of Anagolay."
+ },
+ {
+  "id": "tagalog_mapulon",
+  "name": {
+   "primary": "Mapulon",
+   "alt": [],
+   "transliterations": {
+    "tagalog": "Mapulon",
+    "rom": "Mapulon",
+    "etymology": "Tagalog god of the seasons."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tagalog",
+  "primaryTradition": "Tagalog",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-god-of-seasons",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "notes": "God of the seasons, who turns the agricultural year. Husband of Lakapati."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "seasons",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mapulon",
+     "script": "Tagalog",
+     "rom": "Mapulon"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tagalog_lakapati",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jocano (1969)"
+     }
+    ],
+    "notes": "Husband of the fertility deity Lakapati."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "F. L. Jocano, Outline of Philippine Mythology (1969)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Tagalog god of the seasons. Husband of Lakapati and father of Anagolay in Jocano's systematization of the pantheon."
  },
  {
   "id": "taino_atabey",
@@ -158705,6 +168314,630 @@ const NEW_FIGURES = [
   "notes": "A class of indigenous Tibetan territorial deities ('gods of the local place'), often identified with sacred mountains, protecting a valley, village, or peak; predating Buddhism and later integrated as Buddhist and Bön protectors. Some, like Yarlha Shampo, manifest as a white yak."
  },
  {
+  "id": "tinguian_agemem",
+  "name": {
+   "primary": "Agemem",
+   "alt": [
+    "Agᴇmᴇm",
+    "Wife of Kadaklan"
+   ],
+   "transliterations": {
+    "tinguian": "Agemem",
+    "etymology": "Itneg personal name; the wife of the great sky-spirit Kadaklan."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "wife-of-kadaklan-released-from-the-ground",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915) (Lagangilang and Abang thunderbolt tradition)"
+     }
+    ],
+    "notes": "Agemem is the wife of the great spirit Kadaklan. In the thunderbolt traditions of Lagangilang and Abang, Kadaklan (the thunderbolt) 'often eats the ground and releases his wife Agemem,' associating her with the ground/earth from which she is freed."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Associated with the ground, from which Kadaklan (the thunderbolt) releases her."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tinguian_kadaklan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Agemem is the wife of Kadaklan, the greatest of the spirits."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Agemem is the wife of Kadaklan, the great sky-spirit of the Tinguian, as recorded by Fay-Cooper Cole. She is consistently named as his consort; in the Lagangilang and Abang thunderbolt traditions Kadaklan 'eats the ground and releases his wife Agemem,' linking her to the earth/ground from which she is freed when the thunderbolt strikes. Cole gives little independent narrative for her beyond her marriage to Kadaklan."
+ },
+ {
+  "id": "tinguian_apadel",
+  "name": {
+   "primary": "Apadel",
+   "alt": [
+    "Kalagang",
+    "Guardian of the Pinaing"
+   ],
+   "transliterations": {
+    "tinguian": "Apadel",
+    "etymology": "Itneg name of the guardian spirit who dwells in the spirit-stones (pinaing / saksak)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "guardian-dwelling-in-the-spirit-stones",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Apadel, also called Kalagang, is the guardian spirit who dwells in the spirit-stones called pinaing (or saksak). These stones, of various sizes and shapes, stand on hallowed ground, often under old trees or at the entrance of a village, and Apadel through them protects such places, the village, and the creatures of the forest."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardianship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Protector of hallowed places, of the village, and of forest creatures, acting through the pinaing stones."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guards-through-the-spirit-stones",
+    "name": "Guards village, sacred places, and forest creatures through the spirit-stones",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Dwells in and acts through the pinaing/saksak stones to protect their sites and the people."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pinaing-spirit-stones",
+    "name": "Pinaing (saksak) spirit-stones",
+    "kind": "sacred-stones",
+    "role": "dwelling-place / cult object",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Stones of various sizes and shapes on hallowed ground (often under old trees or at a village entrance) in which Apadel dwells; honored with coconut oil and offerings."
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Apadel, also called Kalagang, is the Tinguian (Itneg) guardian spirit who dwells in the spirit-stones known as pinaing or saksak, as recorded by Fay-Cooper Cole. These stones, of various sizes and shapes, are set on hallowed ground, frequently beneath old trees or at the entrance to a village; through them Apadel guards such sacred spots, the community, and the creatures of the forest. The stones receive offerings and anointing with oil so that the spirit will continue to shield the people from harm. Cole attests no kin, spouse, or peer relation for Apadel."
+ },
+ {
+  "id": "tinguian_bagatulayan",
+  "name": {
+   "primary": "Bagatulayan",
+   "alt": [
+    "Bagatúlayan",
+    "Director of the Celestial Realm"
+   ],
+   "transliterations": {
+    "tinguian": "Bagatulayan",
+    "etymology": "Itneg personal name of the spirit concerned with directing the activities of the celestial/sky realm."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "directs-the-activities-of-the-celestial-realm",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Bagatulayan is the spirit who lives in and directs the activities of the celestial (sky) realm in Tinguian belief as recorded by Cole. He governs the affairs of the upper world. In later post-Cole syntheses he is sometimes elevated to supreme creator with Kadaklan as a subordinate, though Cole's own account foregrounds Kadaklan as the greatest of the spirits."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Dwells in and directs the activities of the celestial realm."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "directs-the-celestial-activities",
+    "name": "Directs and rules the activities of the celestial (sky) realm",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Governs the affairs of the upper/celestial world."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Bagatulayan is the Tinguian (Itneg) spirit who lives in and directs the activities of the celestial, or sky, realm, as recorded by Fay-Cooper Cole. He governs the workings of the upper world. The literature is divided on his rank: Cole's own ethnography presents Kadaklan as 'the greatest' of the spirits while Bagatulayan directs the celestial activities, whereas a number of later, post-Cole popular syntheses recast Bagatulayan as the supreme creator with Kadaklan subordinate to him. Cole attests no spouse, kin, or peer relation for Bagatulayan."
+ },
+ {
+  "id": "tinguian_kadaklan",
+  "name": {
+   "primary": "Kadaklan",
+   "alt": [
+    "Kadaklan (the Greatest)"
+   ],
+   "transliterations": {
+    "tinguian": "Kadaklan",
+    "etymology": "Itneg/Ilocano kadaklan 'the greatest, the largest'; the great male spirit of the sky."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "the-greatest-sky-spirit-creates-the-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922), on Kadaklan as the greatest of the spirits"
+     }
+    ],
+    "notes": "Kadaklan ('the greatest'), a powerful male spirit who lives in the sky, is the greatest of all the Tinguian spirits; Cole records that he created the earth, the sun, the moon, and the stars."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "teacher-of-ceremony-and-the-thunderbolt",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915) (Lagangilang and Abang thunderbolt tradition)"
+     }
+    ],
+    "notes": "A friendly spirit, he is said to have taught the Tinguian to pray, to harvest their crops, to ward off evil spirits, and to overcome bad omens and sickness. In the thunderbolt traditions of Lagangilang and Abang the thunderbolt is identified with Kadaklan, who 'often eats the ground and releases his wife Agemem.'"
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "The great spirit who dwells in and rules the sky."
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Maker of the earth, sun, moon, and stars."
+   },
+   {
+    "sphereId": "thunder",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Identified with the thunderbolt in the Lagangilang and Abang traditions."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "creates-earth-sun-moon-stars",
+    "name": "Creates the earth, sun, moon, and stars",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Cole records Kadaklan as creator of the earth and the heavenly bodies."
+   },
+   {
+    "id": "sends-the-thunderbolt-via-his-dog",
+    "name": "Looses the lightning (through his dog Kimat) to summon ceremonies",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "His dog Kimat, the lightning, bites a house, tree, or field whenever Kadaklan wishes a special ceremony to be performed."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kimat-the-lightning-dog",
+    "name": "Kimat (the Lightning)",
+    "kind": "animal-companion",
+    "role": "owned divine dog",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kadaklan's dog, the lightning; an instrument of his will. Also authored as the figure tinguian_kimat."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tinguian_agemem",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "notes": "Agemem is the wife of Kadaklan; in the thunderbolt myth he 'releases his wife Agemem' from the ground."
+   },
+   {
+    "kind": "companion",
+    "personId": "tinguian_kimat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat, the lightning, is Kadaklan's dog and acts at his command."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kadaklan ('the greatest') is the great male sky-spirit of the Tinguian (Itneg) of northwestern Luzon, recorded by Fay-Cooper Cole. He lives in the sky and, in Cole's account, created the earth, the sun, the moon, and the stars; he is a friendly being who taught the people to pray, to harvest, to drive off evil spirits, and to overcome omens and sickness. His wife is Agemem and his dog is Kimat, the lightning, which bites a house, tree, or field when Kadaklan wishes a ceremony performed. In the thunderbolt traditions of Lagangilang and Abang the thunderbolt itself is identified with Kadaklan, who 'eats the ground and releases his wife Agemem.' (Some later, post-Cole syntheses instead rank the celestial director Bagatulayan as supreme over Kadaklan; Cole's own text presents Kadaklan as the greatest of the spirits.)"
+ },
+ {
+  "id": "tinguian_kimat",
+  "name": {
+   "primary": "Kimat",
+   "alt": [
+    "Kimat (the Lightning)",
+    "Dog of Kadaklan"
+   ],
+   "transliterations": {
+    "tinguian": "Kimat",
+    "etymology": "Itneg kimat 'lightning'; the lightning personified as the dog of Kadaklan."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "unknown",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-lightning-dog-bites-to-summon-ceremony",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat, the lightning, is the dog of Kadaklan. Cole records that Kimat will bite a house, a tree, or a field whenever the divine master desires that a special ceremony be performed; the strike marks the place where the rite must be held."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lightning",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat is the lightning itself, personified as Kadaklan's dog."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bites-as-the-lightning-stroke",
+    "name": "Strikes as the lightning to mark where a ceremony must be held",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Bites a house, tree, or field at Kadaklan's wish, signalling that a special ceremony is required."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "tinguian_kadaklan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Kimat is the dog of the great spirit Kadaklan and acts at his command."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Kimat is the lightning, personified in Tinguian belief as the dog of the great sky-spirit Kadaklan, as recorded by Fay-Cooper Cole. It is the instrument by which Kadaklan communicates his will: Kimat 'will bite a house, a tree, or a field whenever the divine master desires that a special ceremony be performed,' so that a lightning-strike marks the spot where a rite must be held. (Modern fantasy and role-playing treatments embellish Kimat with invented physical traits; only its identity as Kadaklan's lightning-dog and its ceremony-summoning bite are attested in Cole.)"
+ },
+ {
+  "id": "tinguian_makaboteng",
+  "name": {
+   "primary": "Makaboteng",
+   "alt": [
+    "Sanadan",
+    "Makaboteng (one who frightens)"
+   ],
+   "transliterations": {
+    "tinguian": "Makaboteng",
+    "etymology": "Itneg makaboteng 'one who frightens'; the guardian spirit of the deer and the wild hogs."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tinguian",
+  "primaryTradition": "Tinguian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "guardian-of-deer-and-wild-hogs",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Makaboteng, also called Sanadan, is the guardian of the deer and the wild hogs. Cole records that his good will is necessary if the dogs are to be successful in the chase; consequently he is summoned to many ceremonies, where he receives the most courteous treatment."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wild-game",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "Guardian of deer and wild hogs; his favor governs success in the hunt."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guards-deer-and-wild-hogs",
+    "name": "Guards the deer and wild hogs and grants or withholds success in the hunt",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "notes": "His good will is required for the hunting dogs to succeed; he is courted at ceremonies."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fay-Cooper Cole, The Tinguian: Social, Religious, and Economic Life of a Philippine Tribe (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 2, 1922)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Makaboteng ('one who frightens'), also called Sanadan, is the Tinguian (Itneg) guardian spirit of the deer and the wild hogs, as recorded by Fay-Cooper Cole. Because his good will is necessary if the hunting dogs are to succeed in the chase, he is summoned to many ceremonies, where he is treated with the greatest courtesy. Cole attests no kin, spouse, or peer relation for Makaboteng."
+ },
+ {
   "id": "tiv_akombo",
   "name": {
    "primary": "Mystical Forces That Govern the World",
@@ -161257,6 +171490,557 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Pre-eminent Massim/Trobriand culture-hero; entered as demigod per the brief. Recorded directly by Malinowski (1922; 1929; 1935). vitalStatus 'deceased' as he belongs to the mythic past and departed the islands. The 'virgin birth' (water from a stalactite) is a key motif Malinowski analysed in relation to Trobriand ignorance of physiological paternity."
+ },
+ {
+  "id": "tsimshian_chief_of_heaven",
+  "name": {
+   "primary": "Chief of Heaven",
+   "alt": [
+    "Chief in the Sky",
+    "the Sky-Chief",
+    "Chief who keeps the Daylight"
+   ],
+   "transliterations": {
+    "tsimshian": "Sm'ooygit Laxha (descriptive: 'chief of the sky')",
+    "etymology": "Identified by title only in the texts; laxha is the Sm'algyax word for 'sky / heaven'. The figure is the keeper of the daylight, not the clamshell-being elsewhere called Laxha."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tsimshian",
+  "primaryTradition": "Tsimshian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pre-flood"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pre-flood",
+    "eraOrdering": 0,
+    "startEvent": "keeps-the-daylight",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), Raven cycle"
+     }
+    ],
+    "notes": "The chief in the sky who hoards the daylight (with the sun, moon and stars) in a box called Maa hanging in his house, while the world below knows only dusk. Raven, reborn as his grandson, cries for the box; the chief gives the child a raven skin, and the transformer carries off and breaks the Maa, freeing the daylight."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "laxha",
+     "script": "Sm'algyax",
+     "rom": "laxha"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Lord of the sky-house where the daylight is kept."
+   },
+   {
+    "sphereId": "light",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Keeper (before the theft) of the daylight, sun, moon and stars."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "box_of_daylight",
+    "name": "Maa (the box of daylight)",
+    "kind": "container",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "The box called Maa hanging in the sky-chief's house, in which the daylight is kept until Raven breaks it."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "tsimshian_chief_of_heavens_daughter",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Father of the sky-chief's daughter, the mother of Raven."
+   },
+   {
+    "kind": "father-of",
+    "personId": "tsimshian_txamsem",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Grandfather/father-figure of the Raven-child, to whom he gives the raven skin (treated here as the father of Txä'msem in the sky-origin telling)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "'The Theft of Light', a Tsimshian retelling of the Boas–Tate text (firstpeople.us)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Chief of Heaven (the Chief in the Sky) is the sky-being from whom the Raven obtains the daylight. He keeps the daylight — with the sun, moon and stars — in a box called Maa in his house above, while the earth lies in dusk. The transformer, reborn as the chief's grandson, cries for the box and, given a raven skin, flies off and breaks it open, releasing the light. He is named in the texts only by his title; he is distinct from the being 'Laxha' of the separate clamshell-emergence tradition."
+ },
+ {
+  "id": "tsimshian_chief_of_heavens_daughter",
+  "name": {
+   "primary": "Chief of Heaven's Daughter",
+   "alt": [
+    "the Sky-Chief's Daughter",
+    "Mother of Raven"
+   ],
+   "transliterations": {
+    "tsimshian": "(named by relation only in the texts)",
+    "etymology": "Identified by kinship, not by a personal name, in the recorded narratives."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tsimshian",
+  "primaryTradition": "Tsimshian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tsimshian_chief_of_heaven"
+  ],
+  "parentRoles": {
+   "tsimshian_chief_of_heaven": "paternal"
+  },
+  "temporal": {
+   "era": "pre-flood"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pre-flood",
+    "eraOrdering": 0,
+    "startEvent": "bears-the-raven-child",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), Raven cycle"
+     }
+    ],
+    "notes": "Daughter of the Chief of Heaven. Coming out with her water-bucket, she dips up and drinks a cedar leaf — the transformer in disguise — becomes pregnant, and gives birth to the boy who is Raven, the child who will cry for and seize the daylight."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "A sky-being, daughter of the lord of the daylight."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tsimshian_chief_of_heaven",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Daughter of the Chief of Heaven."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "tsimshian_txamsem",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Mother of Txä'msem, conceived by swallowing the cedar leaf."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "'The Theft of Light', a Tsimshian retelling of the Boas–Tate text (firstpeople.us)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Chief of Heaven's Daughter is the mother of the Raven in the sky-origin telling of the Tsimshian transformer cycle. Going to fetch water, she drinks a cedar leaf into which Txä'msem has transformed himself, conceives, and bears him as a boy — the supernatural infant who cries 'Hama, hama!' for the box of daylight and so brings the light into the world. She is identified in the narratives by kinship rather than by a personal name."
+ },
+ {
+  "id": "tsimshian_logobola",
+  "name": {
+   "primary": "Lô·gôbolā'",
+   "alt": [
+    "Logobola",
+    "Lagabula",
+    "Lgu-bola",
+    "the Lazy One"
+   ],
+   "transliterations": {
+    "tsimshian": "Lô·gôbolā'",
+    "rom": "Logobola",
+    "etymology": "Personal name of Txä'msem's brother; glossed in popular tradition as 'the Lazy One' (Boas & Tate, Tsimshian Mythology, 1916)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tsimshian",
+  "primaryTradition": "Tsimshian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "pre-flood"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pre-flood",
+    "eraOrdering": 0,
+    "startEvent": "contest-with-the-raven",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), episode 'Txä'msEm and Lô·gôbolā''"
+     }
+    ],
+    "notes": "Brother of Txä'msem and his counterpart in the foundational contest over fresh water. He is associated with the holding-back of clear water and with the fog into which Txä'msem becomes lost — the rivalry that fixes the distribution of the world's waters."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fresh-water",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "His withholding of clear water is the foil to Raven's bringing of it."
+   },
+   {
+    "sphereId": "fog",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Associated with the fog in which Raven is lost during their contest."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tsimshian_txamsem",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), 'Txä'msEm and Lô·gôbolā''"
+     }
+    ],
+    "notes": "Brother of Txä'msem (the Giant / Raven)."
+   },
+   {
+    "kind": "enemy",
+    "personId": "tsimshian_txamsem",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Rival of Raven in the contest over fresh water and fog."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916), 'Txä'msEm and Lô·gôbolā''"
+     },
+     {
+      "kind": "primary",
+      "reference": "Franz Boas, Tsimshian Texts (Nass River Dialect), BAE Bulletin 27 (1902)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Lô·gôbolā' (Logobola), popularly called 'the Lazy One', is the brother of Txä'msem and his rival in the foundational contest over fresh water. In the Tsimshian Raven cycle he is the figure who holds back the clear water and is linked to the fog into which the Raven strays — the antagonist whose struggle with the transformer fixes the world's waters in their places."
+ },
+ {
+  "id": "tsimshian_txamsem",
+  "name": {
+   "primary": "Txä'msem",
+   "alt": [
+    "Txamsem",
+    "Txaamsm",
+    "Txa'msem",
+    "the Giant",
+    "Wigyet",
+    "We-gyet",
+    "Giant",
+    "Raven"
+   ],
+   "transliterations": {
+    "tsimshian": "Txä'msEm",
+    "rom": "Txaamsm",
+    "etymology": "Personal name of the transformer-Raven; the by-name Wigyet (we-gyet) is Sm'algyax for 'big man / giant', and gaax is the Tsimshian word for 'raven' (Boas, Tsimshian Mythology, 1916)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tsimshian",
+  "primaryTradition": "Tsimshian",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tsimshian_chief_of_heaven",
+   "tsimshian_chief_of_heavens_daughter"
+  ],
+  "parentRoles": {
+   "tsimshian_chief_of_heaven": "paternal",
+   "tsimshian_chief_of_heavens_daughter": "maternal"
+  },
+  "temporal": {
+   "era": "pre-flood"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "pre-flood",
+    "eraOrdering": 0,
+    "startEvent": "supernatural-birth-in-the-sky",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), Raven cycle (the Txä'msEm narratives)"
+     }
+    ],
+    "notes": "In the sky-origin telling the transformer makes himself the leaf of a cedar; the Chief of Heaven's daughter dips it up in her water-bucket and drinks it, becomes pregnant, and bears a boy who is Raven. (In Tate's parallel telling he is a chief's son who dies and returns as a radiant youth, is tricked into eating scabs, grows ravenous, and is sent off with a raven blanket.)"
+   },
+   {
+    "typeStatus": "deity",
+    "era": "pre-flood",
+    "eraOrdering": 1,
+    "startEvent": "releases-the-daylight",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916); cf. Boas, Tsimshian Texts (1902)"
+     }
+    ],
+    "notes": "The Raven-child cries 'Hama, hama!' until his grandfather gives him the box called Maa, in which the daylight is kept. Putting on the raven skin his father gave him, he flies off and breaks the Maa; it bursts and there is daylight in the world. The fishing-frogs name him Txä'msem."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "pre-flood",
+    "eraOrdering": 2,
+    "startEvent": "orders-the-world",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), episode 'Txä'msEm and Lô·gôbolā''"
+     }
+    ],
+    "notes": "As transformer he wanders the world setting it in order: he comes down near the mouth of the Nass River, induces the olachen (eulachon) to come up the Nass so that it becomes a great river, and contends with his brother Lô·gôbolā' over the keeping of fresh water — a contest that leaves the world its fog and its waters."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "light",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Release of the daylight from the box Maa."
+   },
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Wigyet",
+     "script": "Sm'algyax",
+     "rom": "we-gyet"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "The shape-shifting transformer-trickster ('the Giant')."
+   },
+   {
+    "sphereId": "trickery",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas, Tsimshian Texts (1902)"
+     }
+    ],
+    "notes": "The deceiving culture-hero whose appetite and cunning drive the cycle."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transformation",
+    "name": "Shape-shifting transformer",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Becomes a cedar leaf, an infant, and a raven (donning the raven skin) at will."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "raven_skin",
+    "name": "Raven skin (blanket)",
+    "kind": "garment",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "The raven skin given him by his father the Chief of Heaven; putting it on, he flies and carries off the daylight."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "tsimshian_chief_of_heaven",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Son of the Chief of Heaven, who gives him the raven skin."
+   },
+   {
+    "kind": "mother",
+    "personId": "tsimshian_chief_of_heavens_daughter",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Born of the sky-chief's daughter, who swallowed him as a cedar leaf."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tsimshian_logobola",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916), 'Txä'msEm and Lô·gôbolā''"
+     }
+    ],
+    "notes": "Brother of Lô·gôbolā', with whom he contends over fresh water and the fog."
+   },
+   {
+    "kind": "enemy",
+    "personId": "tsimshian_logobola",
+    "era": "pre-flood",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Boas & Tate, Tsimshian Mythology (1916)"
+     }
+    ],
+    "notes": "Rival in the contest that orders the waters of the world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Franz Boas, Tsimshian Texts (Nass River Dialect), BAE Bulletin 27 (1902)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Txä'msem — 'the Giant' (Wigyet, 'big man'), the Raven — is the central transformer-trickster and culture-hero of Tsimshian mythology. Born in the sky to the Chief of Heaven's daughter (who drank him in the form of a cedar leaf), he cries for and then breaks open the box Maa, releasing the daylight upon a world that had known only dusk. As transformer he then wanders the earth ordering it: bringing the olachen up the Nass River and contending with his brother Lô·gôbolā' over fresh water. At once benevolent shaper and greedy trickster, he is the pivotal figure of the published Raven cycle recorded by Boas and Tate."
  },
  {
   "id": "tupi_guaraci",

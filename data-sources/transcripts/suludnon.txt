@@ -1,0 +1,546 @@
+EDITORIAL NOTE (post-authoring): the Sugidanon figure Matan-ayon was dropped and Nagmalitong Yawa de-parented to keep coherence with the existing Jocano-recension corpus (where Nagmalitong Yawa is an enchantress-wife, not a daughter, and "Buyong Matanayon" is a separate male swordsman). Kept: Tungkung Langit, Saragnayan, Nagmalitong Yawa.
+
+SULUDNON (Sulod / Panay-Bukidnon, Western Visayas, Philippines) — CORE FIGURES
+============================================================================
+
+Scope and method
+----------------
+This batch authors the well-attested CORE absent from the corpus: (A) the supreme
+creator sky-god of the Panay-Visayan creation myth, Tungkung Langit (husband of the
+existing Alunsina); and (B) the principal Hinilawod / Sugidanon epic figures beyond
+the protagonist family — the antagonist Saragnayan, the binukot enchantress
+Nagmalitong Yawa, and Matan-ayon.
+
+Two related but distinct bodies of ethnography underlie these figures and are kept
+separate in the citations:
+
+  1. The Sulod cosmology / Panay creation myth (F. Landa Jocano, "Sulod Society"
+     1968; "Outline of Philippine Mythology" 1969). Here Tungkung Langit ("pillar
+     of the skies") is the supreme male diwata of the upperworld (Ibabawnun) and
+     ALUNSINA is the most powerful female diwata, goddess of the eastern skies and
+     HIS WIFE. This is the frame that matches the existing `suludnon_alunsina`
+     ("goddess of the eastern sky") and the requested Tungkung Langit ⇄ Alunsina
+     spouse wiring.
+
+  2. The Hinilawod epic (Jocano, collected 1955-57 from the binukot chanter
+     Hugan-an; "Hinilawod: Adventures of Humadapnon"), and the later Sugidanon
+     recension (Alicia P. Magos with the Federico Caballero family; Caballero-
+     Padernal). Saragnayan, Nagmalitong Yawa and Matan-ayon are epic figures, so
+     they are placed in the `heroic-age` era per the registry's era mapping.
+
+Recension note carried into the data: in Jocano's Hinilawod the two named wives of
+Labaw Donggon are Anggoy Ginbitinan (of Handug) and Abyang Doronoon (of Tarambang
+Burok); MATAN-AYON as wife of Labaw Donggon and mother of Nagmalitong Yawa is the
+genealogy of the SUGIDANON recension (Magos/Caballero), which is cited explicitly
+for that figure and relation. Nagmalitong Yawa is wife of Saragnayan (Hinilawod,
+Labaw Donggon cycle) and later wife of Humadapnon (Hinilawod, Humadapnon cycle);
+both spousal links are wired.
+
+OMITTED for lack of ethnographic attestation: **Burigadang Pada Sinaklang Bulawan**
+(goddess of greed). She appears only in generic "Visayan deities" pop-myth
+compilations (e.g. Mythlok; vizayanmyths.blogspot; FilipiKnow), which additionally
+misidentify her as "wife of Humadapnon" (contradicting the securely attested
+Nagmalitong Yawa). No Jocano / Magos / Caballero ethnographic source for her could
+be verified, so she is omitted per the verification standard rather than authored
+on pop-culture sourcing.
+
+```json
+[
+  {
+    "id": "suludnon_tungkung_langit",
+    "name": {
+      "primary": "Tungkung Langit",
+      "alt": [
+        "Tungkung Langit (Pillar of the Skies)",
+        "Tungkung Langit (Pillar of Heaven)"
+      ],
+      "transliterations": {
+        "kinaray-a": "Tungkung Langit",
+        "etymology": "Kinaray-a/Hiligaynon 'pillar/prop of the skies'; the supreme male diwata and creator of the Sulod (Panay) pantheon, husband of Alunsina."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "primordial"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "ordering-of-the-primordial-void",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Sulod creation myth, Panay"
+          }
+        ],
+        "notes": "In the Panay creation myth Tungkung Langit and Alunsina exist together in the formless primordial void; Tungkung Langit, the industrious supreme being, brings order to chaos and fashions the sea, the earth and the sky."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 1,
+        "startEvent": "the-loss-of-alunsina",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, field-collected Panay creation myth (Tungkung Langit and Alunsina), 1955"
+          }
+        ],
+        "notes": "Enraged by the jealousy and idleness of his wife Alunsina, Tungkung Langit drives her away; in grief he adorns the sky with her jewels (the stars, moon and sun) hoping she will return, and so the heavens take their present form."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sky",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Sulod Society (1968); Outline of Philippine Mythology (1969) — Tungkung Langit, supreme deity of the upperworld (Ibabawnun)"
+          }
+        ]
+      },
+      {
+        "sphereId": "creation",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Panay creation myth; Tungkung Langit fashions the earth, sea and sky out of the primordial void (Jocano 1969)"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "tl-ordering-creation",
+        "name": "ordered the primordial chaos into sea, earth and sky",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Panay creation myth"
+          }
+        ],
+        "notes": "As the supreme creator he gives form to the formless void, the foundational act of the Panay cosmogony."
+      },
+      {
+        "id": "tl-make-heavenly-lights",
+        "name": "set the sun, moon and stars in the sky as Alunsina's jewels",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Panay creation myth (Tungkung Langit and Alunsina), collected by F. Landa Jocano"
+          }
+        ],
+        "notes": "After banishing Alunsina he adorns the heavens with lights to lure her back, accounting for the sun, moon and stars."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "suludnon_alunsina",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Sulod Society (1968) and Outline of Philippine Mythology (1969); Panay creation myth — Tungkung Langit, supreme sky-god, and Alunsina, goddess of the eastern skies, are husband and wife"
+          }
+        ],
+        "notes": "Alunsina (goddess of the eastern skies) is the wife of Tungkung Langit; their separation is the engine of the Panay creation narrative."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Sulod Society: A Study of the Kinship System and Social Organization of a Mountain People of Central Panay (1968)"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "role-supreme-creator",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Panay (Sulod) creation myth"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Tungkung Langit ('pillar/prop of the skies') is the supreme male diwata and creator-god of the Sulod (Suludnon/Panay-Bukidnon) pantheon of Central Panay, documented by anthropologist F. Landa Jocano. In the Sulod three-tiered cosmos he rules the upperworld (Ibabawnun) and is assisted by lesser divinities; in the Panay creation myth he and his wife Alunsina, goddess of the eastern skies, dwell together in the primordial void until, angered by her jealousy and idleness, he banishes her and orders chaos into the sea, earth and sky, hanging the sun, moon and stars in the heavens in the hope of her return. He is the Visayan counterpart to the Tagalog supreme being Bathala."
+  },
+  {
+    "id": "suludnon_saragnayan",
+    "name": {
+      "primary": "Saragnayan",
+      "alt": [
+        "Buyong Saragnayan",
+        "Lord of Darkness",
+        "Keeper of Light"
+      ],
+      "transliterations": {
+        "kinaray-a": "Saragnayan",
+        "etymology": "Hinilawod epic antagonist; the Lord of Darkness of Gadlum who keeps charge of the course of the sun ('Keeper of Light')."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "rule-over-gadlum",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod (Sulod epic, Panay); Labaw Donggon cycle"
+          }
+        ],
+        "notes": "Saragnayan, the Lord of Darkness, rules the lightless land of Gadlum and takes charge of the course of the sun; he is reckoned a demigod, born of the primordial chaos and a mortal woman, and is master of a pamlang (amulet) that makes him all but unkillable."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "duel-with-labaw-donggon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod; The Aswang Project, 'Three Brothers of Panay' synopsis"
+          }
+        ],
+        "notes": "When Labaw Donggon comes to take his wife Nagmalitong Yawa, Saragnayan accepts the challenge and overcomes the hero; though Labaw Donggon holds his head underwater for seven years he cannot drown, for his life is hidden elsewhere, and he imprisons Labaw Donggon beneath his house."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 2,
+        "startEvent": "death-by-the-hidden-life-talisman",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod; Wikipedia 'Hinilawod' (Labaw Donggon cycle)"
+          }
+        ],
+        "notes": "His external soul lies in the heart of a wild boar in an enchanted forest; the sons of Labaw Donggon, Asu Mangga and Buyung Baranugon, capture and roast the boar, and Baranugon kills Saragnayan with poisoned arrows to the eyes, freeing their father."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "darkness",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod — Saragnayan, the Lord of Darkness of Gadlum"
+          }
+        ]
+      },
+      {
+        "sphereId": "sun",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hinilawod (Jocano) — Saragnayan, 'Keeper of Light', takes charge of the course of the sun"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "sar-deathless-talisman",
+        "name": "could not be killed because his life was hidden outside his body",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod; Wikipedia 'Hinilawod'"
+          }
+        ],
+        "notes": "His soul resides in the heart of a wild boar in a distant enchanted forest, so he survives being held underwater for seven years; he can be slain only by destroying the boar."
+      },
+      {
+        "id": "sar-amulet-might",
+        "name": "overpowered Labaw Donggon in single combat by the power of his amulet",
+        "term": "pamlang",
+        "script": "Kinaray-a/Latin",
+        "rom": "pamlang",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod — Saragnayan defeats Labaw Donggon with the aid of his pamlang/anting-anting"
+          }
+        ],
+        "notes": "Wielding his pamlang (charm/anting-anting), he defeats the hero and imprisons him beneath his house."
+      },
+      {
+        "id": "sar-keeper-of-the-sun",
+        "name": "kept charge of the course of the sun as Keeper of Light",
+        "inheritability": "none",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Hinilawod (Jocano) — Saragnayan takes charge of the course of the sun"
+          }
+        ],
+        "notes": "As 'Keeper of Light' he governs the sun's daily course, a cosmic office tied to his epithet."
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "sar-pamlang",
+        "name": "amulet / charm",
+        "kind": "relic",
+        "role": "owner",
+        "term": "pamlang",
+        "script": "Kinaray-a/Latin",
+        "rom": "pamlang",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod — Saragnayan's pamlang (anting-anting)"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "suludnon_nagmalitong_yawa",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod (Labaw Donggon cycle) — Nagmalitong Yawa Sinagmaling Diwata is the wife of Buyong Saragnayan"
+          }
+        ],
+        "notes": "Nagmalitong Yawa is Saragnayan's wife; Labaw Donggon's bid to take her sets off their duel."
+      },
+      {
+        "kind": "enemy",
+        "personId": "suludnon_labaw_donggon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod — Labaw Donggon challenges and is defeated by Saragnayan, then is avenged"
+          }
+        ],
+        "notes": "Principal antagonist of Labaw Donggon: defeats and imprisons him, and is in turn slain by Labaw Donggon's sons."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod (Sulod/Suludnon epic of Central Panay); collected from the chanter Hugan-an"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "role-antagonist",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Wikipedia 'Hinilawod'; The Aswang Project, 'Three Brothers of Panay' (excerpt of the Suludnon epic)"
+          }
+        ],
+        "weight": "tertiary"
+      }
+    ],
+    "notes": "Saragnayan (Buyong Saragnayan), the 'Lord of Darkness' and 'Keeper of Light', is the great antagonist of the Hinilawod, the Sulod epic of Central Panay recorded by F. Landa Jocano. A demigod said to be born of primordial chaos and a mortal woman, he rules the eternally dark land of Gadlum, keeps charge of the course of the sun, and is the husband of the enchantress Nagmalitong Yawa. When Labaw Donggon comes to claim her, Saragnayan defeats him with his pamlang (amulet) and imprisons him; he cannot be drowned because his life is hidden in the heart of a wild boar, and he is finally killed only when Labaw Donggon's sons Asu Mangga and Buyung Baranugon destroy the boar and pierce his eyes with poisoned arrows."
+  },
+  {
+    "id": "suludnon_nagmalitong_yawa",
+    "name": {
+      "primary": "Nagmalitong Yawa",
+      "alt": [
+        "Nagmalitong Yawa Sinagmaling Diwata",
+        "Malitong Yawa Sinagmaling Diwata",
+        "Buyong Sunmasakay (warrior guise)"
+      ],
+      "transliterations": {
+        "kinaray-a": "Nagmalitong Yawa",
+        "etymology": "Sugidanon/Hinilawod binukot heroine; 'Sinagmaling Diwata' is glossed as the radiant/shining diwata. Note: 'yawa' here is an archaic name-element, not the later Visayan sense of 'demon'."
+      }
+    },
+    "type": "demigod",
+    "origin": "canon",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "female",
+    "vitalStatus": "mortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": {
+      "era": "heroic-age"
+    },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "the-binukot-maiden-sought-by-humadapnon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon (Humadapnon cycle)"
+          }
+        ],
+        "notes": "A binukot (secluded, veiled noblewoman) of surpassing beauty living by the mouth of the Halawod river, Nagmalitong Yawa is the maiden whom Humadapnon, guided by his spirit-friends Taghoy and Duwindi, voyages across the seas to court."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "rescue-of-humadapnon-as-buyong-sunmasakay",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod; Magos & Caballero, Sugidanon (Epics) of Panay"
+          }
+        ],
+        "notes": "When Humadapnon is bewitched and imprisoned for seven years in the island-cave of Tarangban by the enchantress Ginmayunan, Nagmalitong Yawa transforms herself into a male warrior named Buyong Sunmasakay, frees him and dispels the charm; she then marries Humadapnon at Halawod."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "transformation",
+        "contextTag": "lifelong",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Magos & Caballero, Sugidanon (Epics) of Panay — Nagmalitong Yawa (Mali) can transform herself into a man to fight and into objects to repel unwanted suitors"
+          }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "ny-male-transformation",
+        "name": "transformed herself into a male warrior to fight and to rescue her beloved",
+        "term": "Buyong Sunmasakay",
+        "script": "Kinaray-a/Latin",
+        "rom": "Buyong Sunmasakay",
+        "inheritability": "trace",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod; Magos & Caballero, Sugidanon (Epics) of Panay"
+          }
+        ],
+        "notes": "She assumes the guise of the warrior Buyong Sunmasakay to free Humadapnon from the Tarangban cave and to do battle."
+      },
+      {
+        "id": "ny-shapeshift-objects",
+        "name": "could change herself into things to reject the advances of men she refused",
+        "inheritability": "trace",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "Magos & Caballero, Sugidanon (Epics) of Panay — binukot heroines who transform into objects to escape unwanted suitors"
+          }
+        ],
+        "notes": "Part of the binukot shapeshifting repertoire attributed to her in the Sugidanon recension."
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "suludnon_humadapnon",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon — Humadapnon marries Nagmalitong Yawa at Halawod"
+          }
+        ],
+        "notes": "Wife of Humadapnon in the Humadapnon cycle of the Hinilawod, whom she rescues from the Tarangban cave."
+      },
+      {
+        "kind": "spouse",
+        "personId": "suludnon_saragnayan",
+        "sources": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod (Labaw Donggon cycle) — Nagmalitong Yawa is the wife of Buyong Saragnayan"
+          }
+        ],
+        "notes": "In the Labaw Donggon cycle she is the young wife of Saragnayan, the Lord of Darkness, over whom Labaw Donggon and Saragnayan fight."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "F. Landa Jocano, Hinilawod: Adventures of Humadapnon (Sulod/Suludnon epic of Central Panay)"
+          }
+        ],
+        "weight": "secondary"
+      },
+      {
+        "claim": "binukot-heroine-shapeshifter",
+        "citations": [
+          {
+            "kind": "secondary",
+            "reference": "Alicia P. Magos & the Caballero family, Sugidanon (Epics) of Panay; E. Caballero-Padernal, PJSSH"
+          }
+        ],
+        "weight": "secondary"
+      }
+    ],
+    "notes": "Nagmalitong Yawa (Nagmalitong Yawa Sinagmaling Diwata) is the great binukot heroine of the Hinilawod/Sugidanon epics of the Panay-Bukidnon (Suludnon), recorded by F. Landa Jocano and later, in the Sugidanon recension, by Alicia P. Magos with the Caballero family. A secluded noblewoman of dazzling beauty, she is the maiden whom the demigod Humadapnon crosses the seas to court and ultimately marries; in the Labaw Donggon cycle she is instead the young wife of the dark lord Saragnayan. A shapeshifter, she transforms into the male warrior Buyong Sunmasakay to free Humadapnon from the Tarangban cave and to fight, and (in the Sugidanon) into objects to escape unwanted suitors. (The element 'yawa' in her name is archaic and does not carry the later Visayan meaning of 'demon'.)"
+  }
+]
+```
+
+RECIPROCAL-NEEDED / SOLITARY flags
+----------------------------------
+RECIPROCAL-NEEDED: suludnon_alunsina spouse suludnon_tungkung_langit
+RECIPROCAL-NEEDED: suludnon_labaw_donggon enemy suludnon_saragnayan
+RECIPROCAL-NEEDED: suludnon_humadapnon spouse suludnon_nagmalitong_yawa
+RECIPROCAL-NEEDED: suludnon_labaw_donggon spouse suludnon_matan_ayon
+RECIPROCAL-NEEDED: suludnon_labaw_donggon parent-of suludnon_nagmalitong_yawa (Sugidanon recension; Labaw Donggon is the father of Nagmalitong Yawa)
+
+(Within-batch reciprocals already wired both directions, no flag needed:
+  suludnon_saragnayan spouse <-> suludnon_nagmalitong_yawa;
+  suludnon_nagmalitong_yawa parent <-> suludnon_matan_ayon child/parent.)
+
+OMITTED (insufficient ethnographic attestation)
+-----------------------------------------------
+Burigadang Pada Sinaklang Bulawan (goddess of greed/ambition) — attested only in
+generic "Visayan deities" pop-myth compilations (Mythlok; vizayanmyths.blogspot;
+FilipiKnow), which moreover misidentify her as "wife of Humadapnon," contradicting
+the securely attested Nagmalitong Yawa. No Jocano / Magos / Caballero ethnographic
+source for a Suludnon "goddess of greed" could be verified; omitted per the
+verification standard.

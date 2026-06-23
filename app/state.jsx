@@ -772,6 +772,59 @@ function allDomains() {
 }
 function domainById(id) { try { return (id && buildDomainRegistry()[id]) || null; } catch (_) { return null; } }
 
+// Shared faceted-filter bar — a labelled row of multi-select chips with live
+// counts, rendered in the Items / Powers / Domains headers. Stateless: the
+// owning view holds the active Set and owns the filter predicate; this only
+// draws the chips and reports toggles. Hidden when there's nothing to facet
+// (fewer than two distinct values).
+function FacetBar({ label, options, active, onToggle, onClear }) {
+  if (!options || options.length < 2) return null;
+  return (
+    <div className="facet-bar">
+      <span className="facet-bar-label">{label}</span>
+      <div className="facet-chips">
+        {options.map((o) => {
+          const on = active.has(o.value);
+          return (
+            <button
+              key={o.value}
+              type="button"
+              className={'facet-chip' + (on ? ' on' : '')}
+              aria-pressed={on}
+              onClick={() => onToggle(o.value)}
+            >
+              {o.label}<span className="facet-chip-count">{o.count}</span>
+            </button>
+          );
+        })}
+        {active.size > 0 && (
+          <button type="button" className="facet-chip facet-clear" onClick={onClear}>clear</button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Build sorted facet options from a list: bucket each entry, tally counts, and
+// order by an optional rank map (then count, then label). `bucketOf` may return
+// a string (single-valued) or an array of strings (multi-valued, e.g. a domain
+// with several contexts — it then tallies toward each).
+function buildFacetOptions(list, bucketOf, labelOf, rank) {
+  const counts = new Map();
+  for (const x of list) {
+    let bs = bucketOf(x);
+    if (bs == null) continue;
+    if (!Array.isArray(bs)) bs = [bs];
+    for (const b of bs) if (b != null) counts.set(b, (counts.get(b) || 0) + 1);
+  }
+  return [...counts.entries()]
+    .map(([value, count]) => ({ value, label: labelOf(value), count }))
+    .sort((a, b) =>
+      ((rank && rank[a.value] != null ? rank[a.value] : 50) - (rank && rank[b.value] != null ? rank[b.value] : 50)) ||
+      (b.count - a.count) ||
+      String(a.label).localeCompare(String(b.label)));
+}
+
 // Expose to other babel scripts
 Object.assign(window, {
   TYPE_TIER, TYPE_ORDER, TierIcon,
@@ -787,4 +840,5 @@ Object.assign(window, {
   inheritedPowers, nameRecords,
   allItems, itemById, itemsForEntry,
   allPowers, powerById, allDomains, domainById,
+  FacetBar, buildFacetOptions,
 });

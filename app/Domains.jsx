@@ -23,13 +23,51 @@ function domainBadge(d) {
   return null;
 }
 
+// Context is authored as free text, dominated by "lifelong" with a long tail
+// (post-mortem, posthumous, apotheosed, cosmogonic, genealogical…). A domain may
+// carry several across its governors, so a record buckets to a SET of contexts.
+const DOMAIN_CTX_LABEL = {
+  lifelong: 'Lifelong', 'post-mortem': 'Post-mortem', cosmogonic: 'Cosmogonic',
+  genealogical: 'Genealogical', festival: 'Festival', narrative: 'Narrative',
+  unspecified: 'Unspecified', other: 'Other',
+};
+const DOMAIN_CTX_RANK = {
+  lifelong: 0, 'post-mortem': 1, cosmogonic: 2, genealogical: 3,
+  festival: 4, narrative: 5, unspecified: 6, other: 7,
+};
+function domainCtxLabel(b) { return DOMAIN_CTX_LABEL[b] || humanizeDom(b); }
+function domainCtxBucket(raw) {
+  const s = String(raw == null ? '' : raw).toLowerCase().trim();
+  if (!s) return 'unspecified';
+  if (/post-?mortem|posthumous|apotheos|after.?death|final-phase|\bdeath\b/.test(s)) return 'post-mortem';
+  if (/cosmogon|primordial|creation|prehistoric/.test(s)) return 'cosmogonic';
+  if (/genealog|lineage|foundation|founder|dynast/.test(s)) return 'genealogical';
+  if (/festival|seasonal|cyclic|calendr|harvest/.test(s)) return 'festival';
+  if (/narrative|contextual|mytholog|episode|cycle|classical|republic|\bphase\b|position/.test(s)) return 'narrative';
+  if (/lifelong/.test(s)) return 'lifelong';
+  return 'other';
+}
+function domainCtxBuckets(d) {
+  const set = new Set();
+  for (const c of (d.contextTags || [])) set.add(domainCtxBucket(c));
+  return [...set];
+}
+
 // ── Domains index ────────────────────────────────────────────────────────────
-function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder }) {
+function Domains({ domains, total, byId, selectedDomainId, onOpenDomain, onVisibleOrder }) {
   const [q, setQ] = __dmState('');
+  const [ctx, setCtx] = __dmState(() => new Set());
+
+  const ctxOptions = __dmMemo(
+    () => window.buildFacetOptions(domains, domainCtxBuckets, domainCtxLabel, DOMAIN_CTX_RANK),
+    [domains]);
+  const faceted = __dmMemo(
+    () => (ctx.size ? domains.filter((d) => domainCtxBuckets(d).some((b) => ctx.has(b))) : domains),
+    [domains, ctx]);
 
   const groups = __dmMemo(() => {
     const query = q.trim().toLowerCase();
-    const filtered = !query ? domains : domains.filter((d) => {
+    const filtered = !query ? faceted : faceted.filter((d) => {
       const hay = [d.displayName, d.id, d.term && d.term.value,
         ...(d.contextTags || [])].join(' ').toLowerCase();
       return hay.includes(query);
@@ -42,7 +80,7 @@ function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder
     }
     return [...byLetter.entries()].sort((a, b) =>
       (a[0] === '#' ? 1 : 0) - (b[0] === '#' ? 1 : 0) || a[0].localeCompare(b[0]));
-  }, [domains, q]);
+  }, [faceted, q]);
 
   __dmEff(() => {
     if (!onVisibleOrder) return;
@@ -52,13 +90,18 @@ function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder
   }, [groups, onVisibleOrder]);
 
   const shared = __dmMemo(() => domains.filter((d) => d.holderCount > 1).length, [domains]);
+  const toggleCtx = (v) => setCtx((prev) => {
+    const n = new Set(prev); n.has(v) ? n.delete(v) : n.add(v); return n;
+  });
 
   return (
     <div className="items-view domains-view">
       <div className="items-head">
         <div className="items-head-row">
-          <h2 className="items-title">Domains <span className="items-count">{domains.length}</span></h2>
-          {shared > 0 && (
+          <h2 className="items-title">Domains <span className="items-count">{faceted.length}</span></h2>
+          {total > faceted.length ? (
+            <span className="items-showcased">filtered — {faceted.length} of {total}</span>
+          ) : shared > 0 && (
             <span className="items-showcased">{shared} shared across figures</span>
           )}
         </div>
@@ -74,6 +117,13 @@ function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder
           />
           {q && <button className="items-search-clear" onClick={() => setQ('')} title="Clear">×</button>}
         </div>
+        <window.FacetBar
+          label="Context"
+          options={ctxOptions}
+          active={ctx}
+          onToggle={toggleCtx}
+          onClear={() => setCtx(new Set())}
+        />
       </div>
 
       <div className="items-grid domains-grid">
@@ -103,7 +153,11 @@ function Domains({ domains, byId, selectedDomainId, onOpenDomain, onVisibleOrder
             </div>
           </div>
         ))}
-        {groups.length === 0 && <div className="items-empty">No domains match "{q}".</div>}
+        {groups.length === 0 && (
+          <div className="items-empty">
+            {faceted.length === 0 ? 'No domains match the active filters.' : `No domains match "${q}".`}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -348,4 +348,68 @@ describe('app renders in a browser-like environment', () => {
     await settle();
     await app.clickButton('Browse');
   });
+
+  test('the left-rail tradition filter narrows Items, Powers, and Domains', async () => {
+    // Regression: these three registries were built from the full corpus and
+    // ignored the rail, so selecting a pantheon did nothing (while it scopes
+    // Browse / Graph / Atlas). Each must now narrow to entries with a connected
+    // figure in the filtered set, and surface a "filtered — N of M" count.
+    const greekRow = () => [...app.document.querySelectorAll('.rail-row-trad')]
+      .find((r) => r.textContent.includes('Greek'));
+    for (const [tab, view, rowSel] of [
+      ['Items', '.items-view', '.item-row'],
+      ['Powers', '.powers-view', '.power-index-row'],
+      ['Domains', '.domains-view', '.domain-index-row'],
+    ]) {
+      await app.clickButton(tab);
+      const before = app.document.querySelectorAll(rowSel).length;
+      assert.ok(before > 0, `${tab} index did not populate`);
+      const row = greekRow();
+      assert.ok(row, 'Greek not in the tradition rail');
+      await app.act(async () => { row.click(); });
+      await app.flush();
+      const after = app.document.querySelectorAll(rowSel).length;
+      assert.ok(after > 0 && after < before,
+        `${tab} did not narrow on the Greek filter (${before} -> ${after})`);
+      assert.match(
+        app.document.querySelector(view + ' .items-showcased')?.textContent || '',
+        /filtered/, `${tab} header did not show the filtered count`);
+      await app.act(async () => { greekRow().click(); });  // clear for next iteration
+      await app.flush();
+    }
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
+
+  test('view-specific facets (kind / heritability / context) narrow each registry', async () => {
+    // The raw fields are messy free text (118 item kinds, dozens of heritability
+    // phrasings, lifelong-dominated contexts); each view canonicalizes them into
+    // a small bucket set offered as multi-select chips. Assert the bar renders,
+    // a known bucket narrows the list, toggles active, and clear restores it.
+    for (const [tab, view, rowSel, expectChip] of [
+      ['Items', '.items-view', '.item-row', 'Weapons'],
+      ['Powers', '.powers-view', '.power-index-row', 'Full'],
+      ['Domains', '.domains-view', '.domain-index-row', 'Lifelong'],
+    ]) {
+      await app.clickButton(tab);
+      const chipFor = (text) => [...app.document.querySelectorAll(view + ' .facet-chip:not(.facet-clear)')]
+        .find((c) => c.textContent.includes(text));
+      assert.ok(app.document.querySelector(view + ' .facet-bar'), `${tab} facet bar did not render`);
+      assert.ok(app.document.querySelectorAll(view + ' .facet-chip:not(.facet-clear)').length >= 3,
+        `${tab} expected several facet chips`);
+      const target = chipFor(expectChip);
+      assert.ok(target, `${tab} facet "${expectChip}" not offered`);
+      const before = app.document.querySelectorAll(rowSel).length;
+      await app.act(async () => { target.click(); });
+      await app.flush();
+      const after = app.document.querySelectorAll(rowSel).length;
+      assert.ok(after > 0 && after < before, `${tab} facet did not narrow (${before} -> ${after})`);
+      assert.strictEqual(chipFor(expectChip)?.getAttribute('aria-pressed'), 'true',
+        `${tab} chip did not toggle active`);
+      await app.act(async () => { app.document.querySelector(view + ' .facet-clear')?.click(); });
+      await app.flush();
+      assert.strictEqual(app.document.querySelectorAll(rowSel).length, before,
+        `${tab} clear did not restore the full list`);
+    }
+    assert.deepStrictEqual(app.errors, [], app.errors.join('\n'));
+  });
 });
