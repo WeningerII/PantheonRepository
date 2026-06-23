@@ -41,19 +41,24 @@ Figures authored (10):
         'Eitumatupu'a and 'Ilaheva; killed and resurrected by his sky-brothers.
         [demigod, mythic-prehistoric]
   9. tongan_ilaheva               — 'Ilaheva Va'epopua, the mortal mother of
-        'Aho'eitu; daughter of Seketo'a. [mortal, mythic-prehistoric]
+        'Aho'eitu (parentage uncertain). [mortal, mythic-prehistoric]
  10. tongan_seketoa               — Seketo'a, the deified shark-god of
-        Niuatoputapu; father of 'Ilaheva. [deity, mythic-prehistoric]
+        Niuatoputapu (Ma'atu line). [deity, mythic-prehistoric]
 
 Verification notes that shaped the data (accuracy-first):
 
 - THE COSMOGONY (frame, recorded in notes, not as figures). Gifford and Collocott
   record that between the sea and Pulotu stood the rock Touia-'o-Futuna, which
-  trembled and split, bringing forth four pairs of male/female twins — Piki & Kele,
-  'Atungaki & Ma'imoa'olongona, Fonu'uta & Fonuvai, Hemoana & Lupe — from whose
-  unions descend Taufulifonua and Havealolofonua, the parents of the cosmos-dividers
-  Hikule'o, Tangaloa, and Maui. I do NOT author the twin-pairs or Touiafutuna as
-  separate figures (they fall outside the firmly-developed CORE and would be padding),
+  trembled and split, bringing forth four brother-sister twin pairs — Piki & Kele,
+  'Atungaki & Ma'imoa'olongona, Fonu'uta & Fonuvai, Hemoana & Lupe. (Collocott also
+  has a primal seaweed/limu and mud/kele from which the rock appears — note the name
+  Kele recurs both as the primal mud and as Piki's twin sister.) The pair Piki & Kele
+  are the PARENTS of Taufulifonua and Havealolofonua, who in turn are the parents of
+  the cosmos-dividers Hikule'o, Tangaloa, and Maui (a widely-reproduced version makes
+  only Hikule'o the child of Taufulifonua by Havealolofonua, with Tangaloa and Maui
+  borne by the cousins Velelahi and Velesi'i — so the three are siblings/half-siblings;
+  this variant is noted, not relied on). I do NOT author the twin-pairs or Touiafutuna
+  as separate figures (they fall outside the firmly-developed CORE and would be padding),
   but I record the descent in notes and wire the firmly-attested kin edges among the
   figures I do author.
 
@@ -86,21 +91,28 @@ Verification notes that shaped the data (accuracy-first):
 
 - 'AHO'EITU is a DEMIGOD: son of a deity (Tangaloa 'Eitumatupu'a) and a mortal ('Ilaheva).
   The murder-and-resurrection by his jealous sky-brothers (his portions vomited into a
-  kumete bowl by Tangaloa's command and reconstituted), and his installation as the first
-  Tu'i Tonga with the brothers sent down as the supporting Falefa ("four houses" —
-  Talafale, Tu'iloloko, Maliepo, Matakehe) and the senior brother's line as Tu'i Faleua /
-  Tu'i Pelehake, are the fixed elements (Gifford 1924; Collocott 1928).
+  kumete bowl by Tangaloa's command, restored with water and nonufiafia leaves), and his
+  installation as the first Tu'i Tonga, are the fixed elements. He had FIVE elder
+  sky-brothers — Talafale, Matakehe, Maliepo, Tu'i Loloko and Tu'i Folaha; the eldest,
+  Talafale, became the Tu'i Faleua (the substitute royal line), and the OTHER FOUR
+  (Matakehe, Maliepo, Tu'i Loloko, Tu'i Folaha) became the Falefa, the "four houses" /
+  attendant matāpule of the Tu'i Tonga (Gifford 1924; Collocott 1928).
 
-- 'ILAHEVA VA'EPOPUA is a MORTAL ("a worm-descendant," of the older Tongan population);
-  all accounts make her the wife of Tangaloa 'Eitumatupu'a and mother of 'Aho'eitu, and
-  the genealogies give her as the daughter of Seketo'a — which wires her to the Seketo'a
-  figure as a real in-batch kin edge.
+- 'ILAHEVA VA'EPOPUA is a MORTAL of the older Tongan population; all accounts make her the
+  wife of Tangaloa 'Eitumatupu'a and mother of 'Aho'eitu. Her own PARENTAGE is left empty:
+  one tradition makes her a daughter of Seketo'a, but this is weakly and inconsistently
+  attested and geographically awkward (Seketo'a being firmly the Niuatoputapu god while
+  'Ilaheva is of Tongatapu), so it is recorded in parentRoles only, not asserted as a
+  parentId. I likewise do NOT genealogize her directly to the worm-born first men, which
+  the sources do not do.
 
 - SEKETO'A is firmly attested (Gifford 1924; Collocott; and the continuous Niuatoputapu
-  cult): a man of the Ma'atu line of Niuatoputapu deified after his jealous elder brother
-  Moimoi sought to kill him, who appears as a shark/fish and is summoned by the Ma'atu
-  chiefs by casting kava on the sea, his two remora as his matāpule. He is included both
-  for his own developed cult and as the attested father of 'Ilaheva.
+  cult): a man of the Ma'atu line of Niuatoputapu — grandson of its founder Puakatefisi —
+  deified after his jealous elder brother Moimoi turned against him, who appears as a
+  shark/fish and is summoned by the Ma'atu chiefs by casting kava on the sea, his two
+  remora as his matāpule. He belongs to the Ma'atu/Niuatoputapu line, NOT to the Tu'i
+  Tonga line and NOT to Tele'a. He is included for his own developed cult; because the
+  'father of 'Ilaheva' link is not firmly attested he is entered kinless (SOLITARY).
 
 - HINA in the Tongan recension is firmly attested as the moon-woman who sits in the moon
   beating tapa and as the great protecting goddess of the fire-walkers (the Tongan-specific
@@ -114,996 +126,1479 @@ in term/transliteration fields; where a gloss is uncertain the field is left emp
 
 ```json
 [
-  {
-    "id": "tongan_tangaloa_eitumatupua",
-    "name": {
-      "primary": "Tangaloa 'Eitumatupu'a",
-      "alt": ["Tangaloa Eitumatupua", "'Eitumatupu'a", "Eitumatupua"],
-      "transliterations": { "tongan": "Tangaloa 'Eitumatupu'a", "etymology": "Tangaloa, the pan-Polynesian sky/sea god (Tongan reflex), here qualified 'Eitumatupu'a; the element 'eitu corresponds to 'otua/aitu 'god, spirit'. Full gloss of the epithet is not securely established and is left unglossed." }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": ["One of the four sons of Tangaloa in the sky (with Tamapo'uli'alamafoa, 'Atulongolongo and Tufunga) in Collocott's theogony; the senior Tangaloa and his own descent from the Touia-'o-Futuna line are recorded in notes, as those forebears are not authored figures."],
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 0,
-        "startEvent": "A sky-dwelling Tangaloa, one of the sons of Tangaloa in the heavens, before his descent to the earth.",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on the four sons of Tangaloa in the sky" },
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Tangaloa sky-gods" }
-        ],
-        "notes": "Belongs to the Tangaloa sky-family; the senior Tangaloa is one of the three cosmos-dividers (with Hikule'o and Maui)."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "mythic",
-        "eraOrdering": 1,
-        "startEvent": "He climbed down from the sky on a great toa (casuarina/ironwood) tree to Tongatapu and took to wife 'Ilaheva (Va'epopua), a woman of the older, worm-descended population; their son was 'Aho'eitu.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa 'Eitumatupu'a, 'Ilaheva and the origin of the Tu'i Tonga" }
-        ],
-        "notes": "The descent of a sky-god to a mortal woman is the charter of the divine descent of the Tu'i Tonga line."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "sky-and-heavens",
-        "contextTag": "lifelong",
-        "term": { "value": "langi", "script": "Latin", "rom": "langi" },
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on Tangaloa and the gods of the sky" }
-        ]
-      },
-      {
-        "sphereId": "divine-ancestry-and-kingship",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa 'Eitumatupu'a as divine father of the first Tu'i Tonga" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "descend-the-sky-tree",
-        "name": "descends from the sky to earth upon the toa tree",
-        "inheritability": "none",
-        "notes": "He came down from the heavens on a great casuarina (toa/ironwood) tree to Tongatapu; the same tree is the road by which his son 'Aho'eitu later climbs to the sky.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the descent of Tangaloa 'Eitumatupu'a by the toa tree" }
-        ]
-      },
-      {
-        "id": "sire-the-tui-tonga-line",
-        "name": "sires the sacred line of the Tu'i Tonga",
-        "inheritability": "partial",
-        "notes": "By the mortal 'Ilaheva he fathered 'Aho'eitu, whom he installed as the first Tu'i Tonga of divine descent; the sacred chiefly mana of the Tu'i Tonga is traced to this celestial paternity.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the divine descent of the Tu'i Tonga from Tangaloa" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_toa_tree",
-        "name": "the toa (casuarina/ironwood) tree to the sky",
-        "kind": "site",
-        "role": "the great casuarina down which Tangaloa 'Eitumatupu'a descended to earth and up which 'Aho'eitu climbed to the sky to seek his father; the axis between the heavens and Tongatapu",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the toa tree of Tangaloa 'Eitumatupu'a and 'Aho'eitu" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "sibling",
-        "personId": "tongan_tangaloa_atulongolongo",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), naming Tangaloa 'Eitumatupu'a and Tangaloa 'Atulongolongo among the sons of Tangaloa in the sky" }
-        ],
-        "notes": "Both are sons of Tangaloa in the sky, hence brothers."
-      },
-      {
-        "kind": "spouse",
-        "personId": "tongan_ilaheva",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Eitumatupu'a taking 'Ilaheva to wife" }
-        ],
-        "notes": "His mortal wife on earth, the mother of 'Aho'eitu."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "Tangaloa 'Eitumatupu'a is the Tongan sky-god — one of the four sons of Tangaloa in the heavens — who descended to Tongatapu on a great toa (casuarina/ironwood) tree, took the mortal woman 'Ilaheva (Va'epopua) to wife, and fathered 'Aho'eitu, whom he made the first Tu'i Tonga of divine descent, so founding the sacred paramountcy of Tonga.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921)" }
-        ],
-        "weight": "primary"
-      }
-    ],
-    "notes": "Entered as a deity of the Tangaloa sky-family. The senior 'Tangaloa' (one of the three cosmos-dividers with Hikule'o and Maui, who took the sky) and the descent from the Touia-'o-Futuna twin-pairs are recorded here rather than authored as separate figures, being outside the firmly-developed core. His developed myth — the toa-tree descent and the begetting of the first Tu'i Tonga — is firmly attested. Sex male; immortal."
+ {
+  "id": "tongan_tangaloa_eitumatupua",
+  "name": {
+   "primary": "Tangaloa 'Eitumatupu'a",
+   "alt": [
+    "Tangaloa Eitumatupua",
+    "'Eitumatupu'a",
+    "Eitumatupua"
+   ],
+   "transliterations": {
+    "tongan": "Tangaloa 'Eitumatupu'a",
+    "etymology": "Tangaloa, the pan-Polynesian sky/sea god (Tongan reflex), here qualified 'Eitumatupu'a; the element 'eitu corresponds to 'otua/aitu 'god, spirit'. Full gloss of the epithet is not securely established and is left unglossed."
+   }
   },
-  {
-    "id": "tongan_tangaloa_atulongolongo",
-    "name": {
-      "primary": "Tangaloa-'Atulongolongo",
-      "alt": ["Tangaloa 'Atulongolongo", "Tangaloa Atulongolongo", "'Atulongolongo"],
-      "transliterations": { "tongan": "Tangaloa 'Atulongolongo", "etymology": "Tangaloa qualified 'Atulongolongo; he takes the form of a plover (kiu/tala bird). Full gloss of the epithet is not securely established and is left unglossed." }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": ["One of the four sons of Tangaloa in the sky (with Tamapo'uli'alamafoa, 'Eitumatupu'a and Tufunga) in Collocott's theogony; senior forebears recorded in notes, not authored as figures."],
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 0,
-        "startEvent": "Sent down by the old Tangaloa, who was weary of seeing nothing but sea, he flew over the waters in the form of a plover seeking land, and found a reef where 'Ata now stands.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa-'Atulongolongo the plover and the finding of the land" }
-        ],
-        "notes": "The plover-flight over the primeval sea is the prelude to the making of the first land and the first men."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "mythic",
-        "eraOrdering": 1,
-        "startEvent": "On the island he dropped a seed that grew into a creeper; when its root rotted a worm formed, which he pecked in two — making the first men Kohai and Koau, and from a morsel on his beak a third, Momo.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the worm pecked into the first men Kohai, Koau, and Momo" }
-        ],
-        "notes": "Kohai, Koau mo Momo are the worm-descended first people of Tonga, the older population over whom the divine Tu'i Tonga line is later set."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "creation-and-origin-of-humankind",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the making of the first men from the worm" }
-        ]
-      },
-      {
-        "sphereId": "birds-and-the-sky",
-        "contextTag": "lifelong",
-        "term": { "value": "kiu", "script": "Latin", "rom": "kiu" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa-'Atulongolongo taking the form of a plover" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "take-plover-form",
-        "name": "takes the form of a plover",
-        "inheritability": "none",
-        "notes": "He flies down from the sky as a plover (a shore-bird) to search out and visit the new land; the bird-form is his constant guise in the creation narrative.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the plover form of Tangaloa-'Atulongolongo" }
-        ]
-      },
-      {
-        "id": "make-the-first-men",
-        "name": "makes the first men from the worm of the rotted root",
-        "inheritability": "none",
-        "notes": "Pecking the worm bred in the rotted creeper-root into two, he made Kohai and Koau; a fragment shaken from his beak became Momo — the three first men of Tonga.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the origin of Kohai, Koau and Momo" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_atulongolongo_seed",
-        "name": "the seed and creeper of 'Ata",
-        "kind": "plant",
-        "role": "the seed the plover-god dropped on the new land, which grew to a creeper whose rotted root bred the worm from which the first men were made",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the seed dropped by the plover and the creeper at 'Ata" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "sibling",
-        "personId": "tongan_tangaloa_eitumatupua",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), naming Tangaloa 'Atulongolongo and Tangaloa 'Eitumatupu'a among the sons of Tangaloa in the sky" }
-        ],
-        "notes": "Both are sons of Tangaloa in the sky, hence brothers."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "Tangaloa-'Atulongolongo is the Tongan sky-god who, in the form of a plover, found the first land and made the first men of Tonga (Kohai, Koau, and Momo) by pecking apart the worm bred in a rotted creeper-root; he is one of the four sons of Tangaloa in the sky.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921)" }
-        ],
-        "weight": "primary"
-      }
-    ],
-    "notes": "Entered as a deity (the plover-form Tangaloa, maker of the first men), a brother of 'Eitumatupu'a in the Tangaloa sky-family. The first men Kohai, Koau and Momo are mentioned as the worm-descended older population but are not authored as separate figures here (outside the developed core). Sex male; immortal."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "One of the four sons of Tangaloa in the sky (with Tamapo'uli'alamafoa, 'Atulongolongo and Tufunga) in Collocott's theogony; the senior Tangaloa and his own descent from the Touia-'o-Futuna line are recorded in notes, as those forebears are not authored figures."
+  ],
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "tongan_hikuleo",
-    "name": {
-      "primary": "Hikule'o",
-      "alt": ["Hikuleo", "Havea Hikule'o", "Si'uleo (cognate)"],
-      "transliterations": { "tongan": "Hikule'o", "etymology": "Tongan; the element hiku means 'tail, tip, end' — consonant with the deity's defining long tail. A full secure gloss of the whole name is not established; only the hiku element is given." }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "unknown",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": ["In the theogony a child of Taufulifonua and Havealolofonua and one of the three cosmos-dividers with Tangaloa and Maui; those parents descend from the Touia-'o-Futuna twin-pairs and are not authored figures, so descent is recorded in notes/relations."],
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic",
-        "eraOrdering": 0,
-        "startEvent": "When the children of Taufulifonua divided the creation, Hikule'o took Pulotu, the spirit-land/underworld, as a portion, while Tangaloa took the sky and Maui the underworld-floor.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the division of the cosmos and Hikule'o's portion of Pulotu" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on the gods of Sky, Earth, Sea and Underworld" }
-        ],
-        "notes": "Pulotu is the western spirit-land to which the souls of chiefs go; Mariner (1817) records it as 'Bolotoo'."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "underworld-and-the-dead",
-        "contextTag": "lifelong",
-        "term": { "value": "Pulotu", "script": "Latin", "rom": "Pulotu" },
-        "sources": [
-          { "kind": "primary", "reference": "Martin, John (from William Mariner). An Account of the Natives of the Tonga Islands (1817), on Pulotu ('Bolotoo'), the abode of the gods and of the souls of chiefs" },
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o as the deity of Pulotu" }
-        ]
-      },
-      {
-        "sphereId": "fertility",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o as holder of the fertility of the land" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "rule-pulotu",
-        "name": "rules and guards Pulotu, the spirit-land",
-        "inheritability": "none",
-        "notes": "Hikule'o is the keeper of Pulotu, the western land of the dead and of the gods, to which the souls of chiefs pass to become 'otua; the deity holds the fertility and increase of the land.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o, deity of Pulotu and of fertility" }
-        ]
-      },
-      {
-        "id": "long-tail-restrained",
-        "name": "bears a long tail held fast lest the land follow the dead",
-        "inheritability": "none",
-        "notes": "Hikule'o has a great tail; so destructive is a coming-forth from Pulotu that the tail was bound/held by a cord, one end held by Tangaloa in the sky and the other by Maui below, to keep the deity in Pulotu and stop the islands and the living being drawn after the dead.",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Hikule'o's tail and its restraint by Tangaloa and Maui" },
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the binding of Hikule'o" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_hikuleo_tail_cord",
-        "name": "the cord that binds Hikule'o's tail",
-        "kind": "implement",
-        "role": "the great cord by which Hikule'o's tail is held — one end in the sky with Tangaloa, the other in the underworld with Maui — so that the deity cannot leave Pulotu and draw the land after the dead",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the cord restraining Hikule'o's tail" }
-        ]
-      },
-      {
-        "id": "tongan_hikuleo_bone_house",
-        "name": "Hikule'o's house of human bone",
-        "kind": "structure",
-        "role": "the dwelling of Hikule'o in Pulotu, reported as built of human bone — an emblem of the deity's dominion over the dead",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), recording (from a 1920 informant) Hikule'o's house of human bone" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "sibling",
-        "personId": "tongan_maui_motua",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o, Tangaloa and Maui dividing the cosmos as the children of Taufulifonua" }
-        ],
-        "notes": "Hikule'o and Maui (Motu'a) are siblings of the cosmos-dividing generation, children of Taufulifonua; Maui below holds one end of the cord that restrains Hikule'o's tail."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "A sky-dwelling Tangaloa, one of the sons of Tangaloa in the heavens, before his descent to the earth.",
     "sources": [
-      {
-        "claim": "Hikule'o (gender variable in the sources — male in Mariner and some tellings, 'the goddess of Pulotu' in others) is the Tongan deity who keeps Pulotu, the western spirit-land of the dead and of the gods, and holds the fertility of the land; the deity has a great tail that must be held by a cord — one end with Tangaloa in the sky, the other with Maui below — lest, coming forth, the land and the living be drawn after the dead into Pulotu.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" },
-          { "kind": "primary", "reference": "Martin, John (from William Mariner). An Account of the Natives of the Tonga Islands (1817), on Pulotu ('Bolotoo')" }
-        ],
-        "weight": "primary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on the four sons of Tangaloa in the sky"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Tangaloa sky-gods"
+     }
     ],
-    "notes": "Entered as a deity of Pulotu. Sex set 'unknown' deliberately: the record genuinely varies — Mariner (1817) and some tellings treat the ruler of Pulotu as male, while Gifford/Collocott and the common modern reading give 'the goddess of Pulotu'; the ambiguity follows the gender-neutral Tongan pronoun (ia). The defining, constant attribute is the long tail and its restraint by Tangaloa and Maui. Parents Taufulifonua and Havealolofonua (from the Touia-'o-Futuna line) are not authored figures; the firmly-attested sibling bond to Maui (Motu'a) of the cosmos-dividing generation is wired in-batch."
+    "notes": "Belongs to the Tangaloa sky-family; the senior Tangaloa is one of the three cosmos-dividers (with Hikule'o and Maui)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "He climbed down from the sky on a great toa (casuarina/ironwood) tree to Tongatapu and took to wife 'Ilaheva (Va'epopua), a woman of the older, worm-descended population; their son was 'Aho'eitu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa 'Eitumatupu'a, 'Ilaheva and the origin of the Tu'i Tonga"
+     }
+    ],
+    "notes": "The descent of a sky-god to a mortal woman is the charter of the divine descent of the Tu'i Tonga line."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sky-and-heavens",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "langi",
+     "script": "Latin",
+     "rom": "langi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on Tangaloa and the gods of the sky"
+     }
+    ]
+   },
+   {
+    "sphereId": "divine-ancestry-and-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa 'Eitumatupu'a as divine father of the first Tu'i Tonga"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "descend-the-sky-tree",
+    "name": "descends from the sky to earth upon the toa tree",
+    "inheritability": "none",
+    "notes": "He came down from the heavens on a great casuarina (toa/ironwood) tree to Tongatapu; the same tree is the road by which his son 'Aho'eitu later climbs to the sky.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the descent of Tangaloa 'Eitumatupu'a by the toa tree"
+     }
+    ]
+   },
+   {
+    "id": "sire-the-tui-tonga-line",
+    "name": "sires the sacred line of the Tu'i Tonga",
+    "inheritability": "partial",
+    "notes": "By the mortal 'Ilaheva he fathered 'Aho'eitu, whom he installed as the first Tu'i Tonga of divine descent; the sacred chiefly mana of the Tu'i Tonga is traced to this celestial paternity.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the divine descent of the Tu'i Tonga from Tangaloa"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_toa_tree",
+    "name": "the toa (casuarina/ironwood) tree to the sky",
+    "kind": "site",
+    "role": "the great casuarina down which Tangaloa 'Eitumatupu'a descended to earth and up which 'Aho'eitu climbed to the sky to seek his father; the axis between the heavens and Tongatapu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the toa tree of Tangaloa 'Eitumatupu'a and 'Aho'eitu"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tongan_tangaloa_atulongolongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), naming Tangaloa 'Eitumatupu'a and Tangaloa 'Atulongolongo among the sons of Tangaloa in the sky"
+     }
+    ],
+    "notes": "Both are sons of Tangaloa in the sky, hence brothers."
+   },
+   {
+    "kind": "spouse",
+    "personId": "tongan_ilaheva",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Eitumatupu'a taking 'Ilaheva to wife"
+     }
+    ],
+    "notes": "His mortal wife on earth, the mother of 'Aho'eitu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tangaloa 'Eitumatupu'a is the Tongan sky-god — one of the four sons of Tangaloa in the heavens — who descended to Tongatapu on a great toa (casuarina/ironwood) tree, took the mortal woman 'Ilaheva (Va'epopua) to wife, and fathered 'Aho'eitu, whom he made the first Tu'i Tonga of divine descent, so founding the sacred paramountcy of Tonga.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a deity of the Tangaloa sky-family. The senior 'Tangaloa' (one of the three cosmos-dividers with Hikule'o and Maui, who took the sky) and the descent from the Touia-'o-Futuna twin-pairs are recorded here rather than authored as separate figures, being outside the firmly-developed core. His developed myth — the toa-tree descent and the begetting of the first Tu'i Tonga — is firmly attested. Sex male; immortal."
+ },
+ {
+  "id": "tongan_tangaloa_atulongolongo",
+  "name": {
+   "primary": "Tangaloa-'Atulongolongo",
+   "alt": [
+    "Tangaloa 'Atulongolongo",
+    "Tangaloa Atulongolongo",
+    "'Atulongolongo"
+   ],
+   "transliterations": {
+    "tongan": "Tangaloa 'Atulongolongo",
+    "etymology": "Tangaloa qualified 'Atulongolongo; he takes the form of a plover (kiu/tala bird). Full gloss of the epithet is not securely established and is left unglossed."
+   }
   },
-  {
-    "id": "tongan_maui_motua",
-    "name": {
-      "primary": "Maui Motu'a",
-      "alt": ["Maui Motua", "Old Maui", "Maui-motu'a"],
-      "transliterations": { "tongan": "Maui Motu'a", "etymology": "Maui (the pan-Polynesian demigod) + motu'a 'old, elder' — 'the old Maui', the senior of the Tongan Maui." }
-    },
-    "type": "demigod",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": ["In the theogony one of the cosmos-dividers (with Tangaloa and Hikule'o), a child of Taufulifonua; those forebears descend from the Touia-'o-Futuna twin-pairs and are not authored figures, so descent is recorded in notes/relations."],
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "The old Maui dwells below, in the underworld (Lolofonua), where he upholds the earth; when the creation was divided he received the underworld as his portion.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Motu'a in the underworld and the division of the cosmos" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the Maui of the underworld" }
-        ],
-        "notes": "He holds the underworld and is the keeper of fire there; earthquakes are felt when the old Maui stirs."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "underworld-and-the-earth-floor",
-        "contextTag": "lifelong",
-        "term": { "value": "Lolofonua", "script": "Latin", "rom": "Lolofonua" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Motu'a holding the underworld (Lolofonua)" }
-        ]
-      },
-      {
-        "sphereId": "fire",
-        "contextTag": "lifelong",
-        "term": { "value": "afi", "script": "Latin", "rom": "afi" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the keeping of fire in the underworld of the old Maui" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "uphold-the-earth",
-        "name": "upholds the earth from below",
-        "inheritability": "none",
-        "notes": "The old Maui bears the earth in the underworld; his movements are felt above as earthquakes.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the old Maui who holds the earth and whose stirring shakes it" }
-        ]
-      },
-      {
-        "id": "keep-the-underworld-fire",
-        "name": "keeps fire in the underworld",
-        "inheritability": "partial",
-        "notes": "Fire is kept below in the realm of the old Maui; it is from this underworld fire that Maui Kisikisi (his grandson) wins fire for the upper world.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the underworld fire from which Maui Kisikisi brings fire up" }
-        ]
-      }
-    ],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "sibling",
-        "personId": "tongan_hikuleo",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui, Tangaloa and Hikule'o dividing the cosmos as children of Taufulifonua" }
-        ],
-        "notes": "Maui (Motu'a) and Hikule'o are siblings of the cosmos-dividing generation; Maui below holds one end of the cord restraining Hikule'o's tail."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "Maui Motu'a, the old Maui, is the senior Tongan Maui who dwells in the underworld (Lolofonua), upholds the earth from below — his stirring felt as earthquakes — and keeps the underworld fire from which his grandson Maui Kisikisi later wins fire for humankind; in the theogony he is one of the three who divided the cosmos.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
-    ],
-    "notes": "Entered as a demigod (the Maui are demigods, not gods, in the Tongan record). The cosmos-dividing 'Maui' is identified with the old Maui below; his parents (Taufulifonua/Havealolofonua of the Touia-'o-Futuna line) are not authored figures, so the sibling bond to Hikule'o is wired in-batch and the descent noted. Father (in the three-Maui genealogy) of Maui 'Atalanga. Sex male; immortal."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "One of the four sons of Tangaloa in the sky (with Tamapo'uli'alamafoa, 'Eitumatupu'a and Tufunga) in Collocott's theogony; senior forebears recorded in notes, not authored as figures."
+  ],
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "tongan_maui_atalanga",
-    "name": {
-      "primary": "Maui 'Atalanga",
-      "alt": ["Maui Atalanga", "Maui-'atalanga", "Maui Atalaga"],
-      "transliterations": { "tongan": "Maui 'Atalanga", "etymology": "Maui qualified 'Atalanga; the middle Maui, son of Maui Motu'a and father of Maui Kisikisi. The epithet has no secure established gloss and is left unglossed." }
-    },
-    "type": "demigod",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["tongan_maui_motua"],
-    "parentRoles": ["son of Maui Motu'a, the old Maui"],
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "The middle Maui, son of the old Maui; he goes down to his father in the underworld to work the land there, his small son Maui Kisikisi following him and spying out the way to fire.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui 'Atalanga and his son Maui Kisikisi" }
-        ],
-        "notes": "In the fire-myth 'Atalanga passes between the upper world and his father's underworld; the boy Kisikisi follows and obtains fire."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "cultivation-and-the-land",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Atalanga's working of the ground in the underworld" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "pass-to-the-underworld",
-        "name": "passes between the upper world and the underworld",
-        "inheritability": "partial",
-        "notes": "He goes down to his father Maui Motu'a in the underworld to cultivate, and returns; his son Kisikisi follows him down this road to win fire.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Atalanga's descents to the underworld" }
-        ]
-      }
-    ],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "spouse",
-        "personId": "tongan_hina",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui 'Atalanga and Hina as the parents of Maui Kisikisi" }
-        ],
-        "notes": "Hina is the wife of 'Atalanga and the mother of Maui Kisikisi."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "Sent down by the old Tangaloa, who was weary of seeing nothing but sea, he flew over the waters in the form of a plover seeking land, and found a reef where 'Ata now stands.",
     "sources": [
-      {
-        "claim": "Maui 'Atalanga is the middle of the three Tongan Maui — son of the old Maui (Maui Motu'a) and, by Hina, father of the trickster Maui Kisikisi — who passes between the upper world and his father's underworld to cultivate the ground, the road by which his son follows to win fire.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa-'Atulongolongo the plover and the finding of the land"
+     }
     ],
-    "notes": "Entered as a demigod. Son of Maui Motu'a (parentId) and husband of Hina; father of Maui Kisikisi. In a minority of tellings it is 'Atalanga rather than Kisikisi who brings fire — noted, with the deed assigned to Kisikisi per the dominant recension. Sex male; immortal."
+    "notes": "The plover-flight over the primeval sea is the prelude to the making of the first land and the first men."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "On the island he dropped a seed that grew into a creeper; when its root rotted a worm formed, which he pecked in two — making the first men Kohai and Koau, and from a morsel on his beak a third, Momo.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the worm pecked into the first men Kohai, Koau, and Momo"
+     }
+    ],
+    "notes": "Kohai, Koau mo Momo are the worm-descended first people of Tonga, the older population over whom the divine Tu'i Tonga line is later set."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-origin-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the making of the first men from the worm"
+     }
+    ]
+   },
+   {
+    "sphereId": "birds-and-the-sky",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kiu",
+     "script": "Latin",
+     "rom": "kiu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Tangaloa-'Atulongolongo taking the form of a plover"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "take-plover-form",
+    "name": "takes the form of a plover",
+    "inheritability": "none",
+    "notes": "He flies down from the sky as a plover (a shore-bird) to search out and visit the new land; the bird-form is his constant guise in the creation narrative.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the plover form of Tangaloa-'Atulongolongo"
+     }
+    ]
+   },
+   {
+    "id": "make-the-first-men",
+    "name": "makes the first men from the worm of the rotted root",
+    "inheritability": "none",
+    "notes": "Pecking the worm bred in the rotted creeper-root into two, he made Kohai and Koau; a fragment shaken from his beak became Momo — the three first men of Tonga.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the origin of Kohai, Koau and Momo"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_atulongolongo_seed",
+    "name": "the seed and creeper of 'Ata",
+    "kind": "plant",
+    "role": "the seed the plover-god dropped on the new land, which grew to a creeper whose rotted root bred the worm from which the first men were made",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the seed dropped by the plover and the creeper at 'Ata"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), naming Tangaloa 'Atulongolongo and Tangaloa 'Eitumatupu'a among the sons of Tangaloa in the sky"
+     }
+    ],
+    "notes": "Both are sons of Tangaloa in the sky, hence brothers."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tangaloa-'Atulongolongo is the Tongan sky-god who, in the form of a plover, found the first land and made the first men of Tonga (Kohai, Koau, and Momo) by pecking apart the worm bred in a rotted creeper-root; he is one of the four sons of Tangaloa in the sky.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a deity (the plover-form Tangaloa, maker of the first men), a brother of 'Eitumatupu'a in the Tangaloa sky-family. The first men Kohai, Koau and Momo are mentioned as the worm-descended older population but are not authored as separate figures here (outside the developed core). Sex male; immortal."
+ },
+ {
+  "id": "tongan_hikuleo",
+  "name": {
+   "primary": "Hikule'o",
+   "alt": [
+    "Hikuleo",
+    "Havea Hikule'o",
+    "Si'uleo (cognate)"
+   ],
+   "transliterations": {
+    "tongan": "Hikule'o",
+    "etymology": "Tongan; the element hiku means 'tail, tip, end' — consonant with the deity's defining long tail. A full secure gloss of the whole name is not established; only the hiku element is given."
+   }
   },
-  {
-    "id": "tongan_maui_kisikisi",
-    "name": {
-      "primary": "Maui Kisikisi",
-      "alt": ["Maui Kisikisi", "Maui-kisikisi", "Maui Fusifonua", "Maui-fusi-fonua"],
-      "transliterations": { "tongan": "Maui Kisikisi", "etymology": "Maui + kisikisi 'dragonfly' — 'Dragonfly Maui', the trickster youngest Maui; also called Maui-fusi-fonua, from fusi 'to pull, haul' + fonua 'land', 'Maui the land-puller', for his fishing-up of the islands." }
-    },
-    "type": "demigod",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["tongan_maui_atalanga", "tongan_hina"],
-    "parentRoles": ["son of Maui 'Atalanga", "son of Hina"],
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "The trickster youngest Maui; from the old fisherman Tonga-fusi-fonua of Manuka he won a magic fish-hook, and with it hauled up Tongatapu and the other islands of Tonga from the deep.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Kisikisi (Maui-fusi-fonua), the fish-hook of Tonga-fusi-fonua, and the fishing-up of the islands" }
-        ],
-        "notes": "The hook was hidden among countless hooks; the fisherman's wife Tavatava betrayed which to choose. First came up Tongatapu, then the Ha'apai islands and Vava'u."
-      },
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 1,
-        "startEvent": "Following his father 'Atalanga down to the underworld, he won fire from the realm of the old Maui and brought it up to the upper world, making it dwell in certain trees so people could draw it for cooking.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Kisikisi bringing fire up from the underworld and lodging it in wood" }
-        ],
-        "notes": "Ahole, an opening (placed at Koloa in Vava'u in one telling), is named as the way by which the fire was brought up. The fire was set in the fire-making woods."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "creation-of-land-and-islands",
-        "contextTag": "lifelong",
-        "term": { "value": "fusi-fonua", "script": "Latin", "rom": "fusi-fonua" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui-fusi-fonua hauling up the islands of Tonga" }
-        ]
-      },
-      {
-        "sphereId": "fire",
-        "contextTag": "lifelong",
-        "term": { "value": "afi", "script": "Latin", "rom": "afi" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Kisikisi as the bringer of fire" }
-        ]
-      },
-      {
-        "sphereId": "trickery-and-culture-heroism",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Maui Kisikisi the trickster culture-hero" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "fish-up-the-islands",
-        "name": "fishes up the islands of Tonga with the magic hook",
-        "inheritability": "none",
-        "notes": "With the hook of Tonga-fusi-fonua he hauled Tongatapu and the other islands of Tonga (the Ha'apai group, Vava'u) from the floor of the sea; for this he is Maui-fusi-fonua, 'the land-puller'.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the fishing-up of the islands" }
-        ]
-      },
-      {
-        "id": "bring-fire-to-humankind",
-        "name": "brings fire up from the underworld and lodges it in wood",
-        "inheritability": "none",
-        "notes": "He won fire from the realm of the old Maui below and brought it to the upper world, setting it in certain kinds of wood so that people could kindle it and cook — the origin of cooking-fire in Tonga.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the bringing of fire and the fire-woods" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_maui_fishhook",
-        "name": "the fish-hook of Tonga-fusi-fonua",
-        "kind": "implement",
-        "role": "the magic fish-hook, won from the old fisherman Tonga-fusi-fonua of Manuka (his wife Tavatava betraying which hook among many to choose), with which Maui hauled the islands of Tonga up from the sea-floor",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the fish-hook of Tonga-fusi-fonua and Tavatava" }
-        ]
-      },
-      {
-        "id": "tongan_islands_raised",
-        "name": "the islands of Tonga raised from the sea",
-        "kind": "site",
-        "role": "Tongatapu and the other islands of Tonga (the Ha'apai islands, Vava'u), hauled up from the deep on Maui's hook — the land of Tonga itself as the product of his fishing",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the islands fished up by Maui" }
-        ]
-      }
-    ],
-    "relations": [],
-    "sources": [
-      {
-        "claim": "Maui Kisikisi ('Dragonfly Maui'; also Maui-fusi-fonua, 'the land-puller'), the trickster youngest of the three Tongan Maui, fished up the islands of Tonga — Tongatapu first, then the Ha'apai islands and Vava'u — with a magic fish-hook won from the old fisherman Tonga-fusi-fonua of Manuka, and brought fire up from the underworld, lodging it in the fire-making woods for humankind.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
-    ],
-    "notes": "Entered as a demigod, the culture-hero Maui of Tonga. Wired as son of Maui 'Atalanga and Hina (parentIds), following the dominant three-generation reading (Maui Motu'a -> Maui 'Atalanga -> Maui Kisikisi); a variant tradition instead makes 'Atalanga and Kisikisi brothers (both sons of Maui Motu'a) — noted, not adopted. The fish-hook came from Tonga-fusi-fonua of Manuka, his wife Tavatava revealing the right hook among many; the hook bears no proper name in the Tongan sources. The volcanic islands (Kao, Tofua, the Hunga islands, Late, Fonualei) are NOT among those fished up. Which Maui brought fire varies (Kisikisi dominant, 'Atalanga in some tellings), and the Tongan fire is taken from the underworld/old Maui — no named 'Mafuike' fire-keeper is asserted for the Tongan recension. Sex male; immortal."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "unknown",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "In the theogony a child of Taufulifonua and Havealolofonua and one of the three cosmos-dividers with Tangaloa and Maui; those parents descend from the Touia-'o-Futuna twin-pairs and are not authored figures, so descent is recorded in notes/relations."
+  ],
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "tongan_hina",
-    "name": {
-      "primary": "Hina",
-      "alt": ["Hina", "Sina (cognate)"],
-      "transliterations": { "tongan": "Hina", "etymology": "Tongan Hina (cognate with Sina/Hine across Polynesia); associated with hina 'grey/silvery, pale', the moon. The moon-woman who beats tapa." }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": [],
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic",
-        "eraOrdering": 0,
-        "startEvent": "The moon-woman, seen seated in the moon beating tapa; in Tonga she is the great protecting goddess who watches over the fire-walkers.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina the moon-woman" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Hina in the Tongan tales" }
-        ],
-        "notes": "The image of Hina in the moon beating bark-cloth (tapa) is pan-Polynesian; the protection of the Tongan fire-walkers is the Tongan-specific note."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "moon",
-        "contextTag": "lifelong",
-        "term": { "value": "mahina", "script": "Latin", "rom": "mahina" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina seated in the moon" }
-        ]
-      },
-      {
-        "sphereId": "tapa-and-women's-craft",
-        "contextTag": "lifelong",
-        "term": { "value": "ngatu", "script": "Latin", "rom": "ngatu" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina beating tapa in the moon" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "dwell-in-the-moon",
-        "name": "dwells in the moon, beating tapa",
-        "inheritability": "none",
-        "notes": "She is seen in the moon, eternally beating bark-cloth (tapa); the marks of the moon are her and her work.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina the woman in the moon" }
-        ]
-      },
-      {
-        "id": "protect-the-firewalkers",
-        "name": "protects the fire-walkers",
-        "inheritability": "none",
-        "notes": "In the Tongan legends Hina is the great protecting goddess of those who walk the fire, watching over them from the moon.",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Hina as protectress of the Tongan fire-walkers" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_hina_tapa",
-        "name": "Hina's tapa and beater (ike)",
-        "kind": "implement",
-        "role": "the bark-cloth (tapa/ngatu) and the wooden beater (ike) with which Hina is forever beating tapa in the moon",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina beating tapa in the moon" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "spouse",
-        "personId": "tongan_maui_atalanga",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina and Maui 'Atalanga as the parents of Maui Kisikisi" }
-        ],
-        "notes": "Wife of Maui 'Atalanga; mother of Maui Kisikisi."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "When the children of Taufulifonua divided the creation, Hikule'o took Pulotu, the spirit-land/underworld, as a portion, while Tangaloa took the sky and Maui the underworld-floor.",
     "sources": [
-      {
-        "claim": "Hina is the Tongan moon-goddess, the woman seen seated in the moon beating tapa (bark-cloth), and in the Tongan legends the great protecting goddess of the fire-walkers; in the Maui genealogy she is the wife of Maui 'Atalanga and the mother of the culture-hero Maui Kisikisi.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the division of the cosmos and Hikule'o's portion of Pulotu"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on the gods of Sky, Earth, Sea and Underworld"
+     }
     ],
-    "notes": "Entered as a deity (the moon/tapa goddess), firmly attested in the Tongan recension (the woman-in-the-moon beating tapa; protectress of the fire-walkers). Wired into the Maui genealogy as wife of Maui 'Atalanga and mother of Maui Kisikisi. Sex female; immortal. Her own parentage is not securely given in the Tongan sources and is left empty (see SOLITARY note on parentage)."
+    "notes": "Pulotu is the western spirit-land to which the souls of chiefs go; Mariner (1817) records it as 'Bolotoo'."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "underworld-and-the-dead",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pulotu",
+     "script": "Latin",
+     "rom": "Pulotu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Martin, John (from William Mariner). An Account of the Natives of the Tonga Islands (1817), on Pulotu ('Bolotoo'), the abode of the gods and of the souls of chiefs"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o as the deity of Pulotu"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o as holder of the fertility of the land"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-pulotu",
+    "name": "rules and guards Pulotu, the spirit-land",
+    "inheritability": "none",
+    "notes": "Hikule'o is the keeper of Pulotu, the western land of the dead and of the gods, to which the souls of chiefs pass to become 'otua; the deity holds the fertility and increase of the land.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o, deity of Pulotu and of fertility"
+     }
+    ]
+   },
+   {
+    "id": "long-tail-restrained",
+    "name": "bears a long tail held fast lest the land follow the dead",
+    "inheritability": "none",
+    "notes": "Hikule'o has a great tail; so destructive is a coming-forth from Pulotu that the tail was bound/held by a cord, one end held by Tangaloa in the sky and the other by Maui below, to keep the deity in Pulotu and stop the islands and the living being drawn after the dead.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Hikule'o's tail and its restraint by Tangaloa and Maui"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the binding of Hikule'o"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_hikuleo_tail_cord",
+    "name": "the cord that binds Hikule'o's tail",
+    "kind": "implement",
+    "role": "the great cord by which Hikule'o's tail is held — one end in the sky with Tangaloa, the other in the underworld with Maui — so that the deity cannot leave Pulotu and draw the land after the dead",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the cord restraining Hikule'o's tail"
+     }
+    ]
+   },
+   {
+    "id": "tongan_hikuleo_bone_house",
+    "name": "Hikule'o's house of human bone",
+    "kind": "structure",
+    "role": "the dwelling of Hikule'o in Pulotu, reported as built of human bone — an emblem of the deity's dominion over the dead",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), recording (from a 1920 informant) Hikule'o's house of human bone"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tongan_maui_motua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hikule'o, Tangaloa and Maui dividing the cosmos as the children of Taufulifonua"
+     }
+    ],
+    "notes": "Hikule'o and Maui (Motu'a) are siblings of the cosmos-dividing generation, children of Taufulifonua; Maui below holds one end of the cord that restrains Hikule'o's tail."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hikule'o (gender variable in the sources — male in Mariner and some tellings, 'the goddess of Pulotu' in others) is the Tongan deity who keeps Pulotu, the western spirit-land of the dead and of the gods, and holds the fertility of the land; the deity has a great tail that must be held by a cord — one end with Tangaloa in the sky, the other with Maui below — lest, coming forth, the land and the living be drawn after the dead into Pulotu.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Martin, John (from William Mariner). An Account of the Natives of the Tonga Islands (1817), on Pulotu ('Bolotoo')"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a deity of Pulotu. Sex set 'unknown' deliberately: the record genuinely varies — Mariner (1817) and some tellings treat the ruler of Pulotu as male, while Gifford/Collocott and the common modern reading give 'the goddess of Pulotu'; the ambiguity follows the gender-neutral Tongan pronoun (ia). The defining, constant attribute is the long tail and its restraint by Tangaloa and Maui. Parents Taufulifonua and Havealolofonua (from the Touia-'o-Futuna line) are not authored figures; the firmly-attested sibling bond to Maui (Motu'a) of the cosmos-dividing generation is wired in-batch."
+ },
+ {
+  "id": "tongan_maui_motua",
+  "name": {
+   "primary": "Maui Motu'a",
+   "alt": [
+    "Maui Motua",
+    "Old Maui",
+    "Maui-motu'a"
+   ],
+   "transliterations": {
+    "tongan": "Maui Motu'a",
+    "etymology": "Maui (the pan-Polynesian demigod) + motu'a 'old, elder' — 'the old Maui', the senior of the Tongan Maui."
+   }
   },
-  {
-    "id": "tongan_ahoeitu",
-    "name": {
-      "primary": "'Aho'eitu",
-      "alt": ["Ahoeitu", "'Aho'eitu", "Aho-eitu"],
-      "transliterations": { "tongan": "'Aho'eitu", "etymology": "Tongan, containing 'aho 'day' and the element 'eitu (god/spirit, as in 'otua); commonly read 'day of the god' / 'the god's day'. First Tu'i Tonga." }
-    },
-    "type": "demigod",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "deceased",
-    "parentIds": ["tongan_tangaloa_eitumatupua", "tongan_ilaheva"],
-    "parentRoles": ["son of the sky-god Tangaloa 'Eitumatupu'a", "son of the mortal woman 'Ilaheva (Va'epopua)"],
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "Born on Tongatapu to 'Ilaheva and the sky-god Tangaloa 'Eitumatupu'a; grown, he climbed the toa (casuarina) tree his mother showed him, up to the sky, to seek his father.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the birth of 'Aho'eitu and his ascent of the toa tree" }
-        ],
-        "notes": "His mortal-and-divine parentage makes him a demigod: son of a deity and a mortal."
-      },
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 1,
-        "startEvent": "In the sky his five elder sky-brothers, jealous of his beauty, killed, dismembered, cooked and ate him, throwing his head into a hoi shrub (poisonous ever since); Tangaloa 'Eitumatupu'a compelled them to vomit the pieces into a wooden kumete bowl, which with water and the leaves of the reviving nonufiafia plant was stirred and covered until 'Aho'eitu was reconstituted and lived again.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the killing and resurrection of 'Aho'eitu" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the 'Aho'eitu narrative" }
-        ],
-        "notes": "The death-and-restoration in the kumete bowl is the fixed core of the legend, and is linked in the tradition to the origin of the kava ceremony."
-      },
-      {
-        "typeStatus": "demigod",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 2,
-        "startEvent": "Tangaloa sent 'Aho'eitu down to Tonga as the first Tu'i Tonga of divine descent; his eldest brother Talafale was sent as the Tu'i Faleua (the substitute royal line that would rule should 'Aho'eitu's line fail), and the other four brothers became the Falefa, the four supporting matāpule houses of the Tu'i Tonga.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the installation of 'Aho'eitu as first Tu'i Tonga and the origin of the Tu'i Faleua and the Falefa" }
-        ],
-        "notes": "The five elder brothers are Talafale, Matakehe, Maliepo, Tu'i Loloko and Tu'i Folaha. Talafale became the Tu'i Faleua; the other four (Matakehe, Maliepo, Tu'i Loloko, Tu'i Folaha) constitute the Falefa ('four houses'), the attendant chiefly/matāpule lines of the Tu'i Tonga."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "sacred-kingship",
-        "contextTag": "lifelong",
-        "term": { "value": "Tu'i Tonga", "script": "Latin", "rom": "Tu'i Tonga" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Aho'eitu the first Tu'i Tonga" }
-        ]
-      },
-      {
-        "sphereId": "divine-ancestry-and-kingship",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on the divine descent of the Tu'i Tonga" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "resurrected-from-death",
-        "name": "is restored to life from death and dismemberment",
-        "inheritability": "none",
-        "notes": "Killed, dismembered and eaten by his sky-brothers, he was brought back whole when Tangaloa made the brothers disgorge his portions into a kumete bowl, where his body reformed and he sat up alive.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the resurrection of 'Aho'eitu" }
-        ]
-      },
-      {
-        "id": "found-the-tui-tonga-line",
-        "name": "founds the sacred line of the Tu'i Tonga",
-        "inheritability": "full",
-        "notes": "As the first Tu'i Tonga of divine descent he is the fount of the sacred paramountcy; the office and its mana descend from him through the long Tu'i Tonga line.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Aho'eitu as founder of the Tu'i Tonga dynasty" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_kumete_bowl",
-        "name": "the kumete bowl of resurrection",
-        "kind": "implement",
-        "role": "the large wooden bowl (kumete, of the kind used for kava) into which the sky-brothers, at Tangaloa's command, vomited the eaten portions of 'Aho'eitu, and in which his body was reconstituted and restored to life",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the kumete in which 'Aho'eitu was reconstituted" }
-        ]
-      }
-    ],
-    "relations": [],
-    "sources": [
-      {
-        "claim": "'Aho'eitu, son of the sky-god Tangaloa 'Eitumatupu'a and the mortal 'Ilaheva (Va'epopua), is the first Tu'i Tonga (sacred paramount) of divine descent: climbing the toa tree to the sky to find his father, he was killed and eaten by his jealous sky-brothers and then resurrected when Tangaloa made them disgorge his body into a kumete bowl, after which he was sent down to rule Tonga, his eldest brother becoming the Tu'i Faleua and the other four the Falefa.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
-    ],
-    "notes": "Entered as a DEMIGOD: son of a deity (Tangaloa 'Eitumatupu'a) and a mortal ('Ilaheva), per the rule. vitalStatus 'deceased' — he is a mortal-born ancestor-king (first Tu'i Tonga, c. 10th century in the traditional reckoning), notwithstanding his miraculous restoration in the legend. His five murderous sky-brothers — Talafale (who became the Tu'i Faleua), and Matakehe, Maliepo, Tu'i Loloko and Tu'i Folaha (who became the Falefa) — are recorded in the lifecycle and notes but not authored as separate figures, so no in-batch kin/enmity edges are wired for them. parentIds give the two reciprocally-wired parents."
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "In the theogony one of the cosmos-dividers (with Tangaloa and Hikule'o), a child of Taufulifonua; those forebears descend from the Touia-'o-Futuna twin-pairs and are not authored figures, so descent is recorded in notes/relations."
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
   },
-  {
-    "id": "tongan_ilaheva",
-    "name": {
-      "primary": "'Ilaheva Va'epopua",
-      "alt": ["Ilaheva", "Va'epopua", "Vaepopua", "'Ilaheva"],
-      "transliterations": { "tongan": "'Ilaheva Va'epopua", "etymology": "'Ilaheva, personal name; Va'epopua is a by-name from her place, Popua (she is 'Ilaheva of Va'epopua). The mortal mother of 'Aho'eitu." }
-    },
-    "type": "mortal",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "female",
-    "vitalStatus": "deceased",
-    "parentIds": [],
-    "parentRoles": ["Her parentage is uncertain in the record: one tradition makes her a daughter of Seketo'a (variously a chief of Tongatapu or the Niuatoputapu god), but this is weakly and inconsistently attested and geographically awkward (her home is Popua on Tongatapu), so no parentId is asserted."],
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "mortal",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "A woman of the older population of Tongatapu, living at Popua (hence Va'epopua); the sky-god Tangaloa 'Eitumatupu'a descended the toa tree and took her to wife.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Ilaheva (Va'epopua), wife of Tangaloa 'Eitumatupu'a" }
-        ],
-        "notes": "She belongs to the older, autochthonous human population of Tonga (the stock of the worm-born Kohai, Koau and Momo), distinct from the sky-gods; the sources do not, however, genealogize her directly to those first men."
-      },
-      {
-        "typeStatus": "mortal",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 1,
-        "startEvent": "She bore 'Aho'eitu, and when he was grown she showed him the toa tree by which to climb to the sky and find his divine father.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Ilaheva and her son 'Aho'eitu" }
-        ],
-        "notes": "Her pointing out the toa tree sets the resurrection-and-installation narrative in motion."
-      }
-    ],
-    "domains": [],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "spouse",
-        "personId": "tongan_tangaloa_eitumatupua",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Ilaheva as wife of Tangaloa 'Eitumatupu'a" }
-        ],
-        "notes": "Wife on earth of the sky-god; mother of 'Aho'eitu."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "The old Maui dwells below, in the underworld (Lolofonua), where he upholds the earth; when the creation was divided he received the underworld as his portion.",
     "sources": [
-      {
-        "claim": "'Ilaheva, called Va'epopua for her home at Popua, is the mortal Tongan woman of the older, autochthonous population whom the sky-god Tangaloa 'Eitumatupu'a took to wife and who bore 'Aho'eitu, the first Tu'i Tonga, later showing him the toa tree by which to climb to his divine father.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Motu'a in the underworld and the division of the cosmos"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the Maui of the underworld"
+     }
     ],
-    "notes": "Entered as a MORTAL (no death field; vitalStatus 'deceased'). Wife of Tangaloa 'Eitumatupu'a (reciprocal spouse relation) and mother of 'Aho'eitu (carried by 'Aho'eitu's parentId). parentIds left EMPTY: the 'daughter of Seketo'a' tradition is weakly and confusedly attested (Seketo'a being elsewhere firmly the Niuatoputapu shark-god, which sits awkwardly with her Tongatapu home), so it is recorded only in parentRoles, not asserted. domains/faculties/materialCulture left empty: the sources give her a role (the mortal mother who points out the sky-tree) but attribute to her no powers, spheres or objects of her own."
+    "notes": "He holds the underworld and is the keeper of fire there; earthquakes are felt when the old Maui stirs."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "underworld-and-the-earth-floor",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Lolofonua",
+     "script": "Latin",
+     "rom": "Lolofonua"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Motu'a holding the underworld (Lolofonua)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "afi",
+     "script": "Latin",
+     "rom": "afi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the keeping of fire in the underworld of the old Maui"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "uphold-the-earth",
+    "name": "upholds the earth from below",
+    "inheritability": "none",
+    "notes": "The old Maui bears the earth in the underworld; his movements are felt above as earthquakes.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the old Maui who holds the earth and whose stirring shakes it"
+     }
+    ]
+   },
+   {
+    "id": "keep-the-underworld-fire",
+    "name": "keeps fire in the underworld",
+    "inheritability": "partial",
+    "notes": "Fire is kept below in the realm of the old Maui; it is from this underworld fire that Maui Kisikisi (his grandson) wins fire for the upper world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the underworld fire from which Maui Kisikisi brings fire up"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "tongan_hikuleo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui, Tangaloa and Hikule'o dividing the cosmos as children of Taufulifonua"
+     }
+    ],
+    "notes": "Maui (Motu'a) and Hikule'o are siblings of the cosmos-dividing generation; Maui below holds one end of the cord restraining Hikule'o's tail."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Maui Motu'a, the old Maui, is the senior Tongan Maui who dwells in the underworld (Lolofonua), upholds the earth from below — his stirring felt as earthquakes — and keeps the underworld fire from which his grandson Maui Kisikisi later wins fire for humankind; in the theogony he is one of the three who divided the cosmos.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a demigod (the Maui are demigods, not gods, in the Tongan record). The cosmos-dividing 'Maui' is identified with the old Maui below; his parents (Taufulifonua/Havealolofonua of the Touia-'o-Futuna line) are not authored figures, so the sibling bond to Hikule'o is wired in-batch and the descent noted. Father (in the three-Maui genealogy) of Maui 'Atalanga. Sex male; immortal."
+ },
+ {
+  "id": "tongan_maui_atalanga",
+  "name": {
+   "primary": "Maui 'Atalanga",
+   "alt": [
+    "Maui Atalanga",
+    "Maui-'atalanga",
+    "Maui Atalaga"
+   ],
+   "transliterations": {
+    "tongan": "Maui 'Atalanga",
+    "etymology": "Maui qualified 'Atalanga; the middle Maui, son of Maui Motu'a and father of Maui Kisikisi. The epithet has no secure established gloss and is left unglossed."
+   }
   },
-  {
-    "id": "tongan_seketoa",
-    "name": {
-      "primary": "Seketo'a",
-      "alt": ["Seketoa", "Seketo'a"],
-      "transliterations": { "tongan": "Seketo'a", "etymology": "Tongan personal name; the deified ancestor-god of Niuatoputapu. No secure further gloss is established." }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Tongan",
-    "primaryTradition": "Tongan",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": ["A grandson of Puakatefisi, founder of the Ma'atu line of Niuatoputapu; his father was a son of Puakatefisi by the concubine Falefehi, and his elder brother was Moimoi. These forebears are not authored figures, so his descent is recorded here rather than as parentIds."],
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "A man of the Ma'atu line of Niuatoputapu, grandson of its founder Puakatefisi, beloved of his father over his elder brother Moimoi; when Moimoi in jealousy turned against him, he cast himself into the sea and became a god, taking the form of a shark/fish about Niuatoputapu and Tafahi.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Seketo'a of Niuatoputapu" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the god Seketo'a" }
-        ],
-        "notes": "His jealous-elder-brother origin parallels the 'Aho'eitu pattern; he becomes the tutelary sea-god of Niuatoputapu."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "sea-and-sharks",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Seketo'a appearing as a shark/fish" }
-        ]
-      },
-      {
-        "sphereId": "tutelary-protection",
-        "contextTag": "lifelong",
-        "term": { "value": "", "script": "", "rom": "" },
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Seketo'a as guardian god of the Ma'atu and people of Niuatoputapu" }
-        ]
-      }
-    ],
-    "faculties": [
-      {
-        "id": "appear-as-shark",
-        "name": "appears in the sea as a shark/fish",
-        "inheritability": "none",
-        "notes": "Seketo'a shows himself as a shark (or fish) in the waters of Niuatoputapu and Tafahi; he is summoned by the Ma'atu chiefs, who cast kava-root upon the sea, whereupon two remora — his matāpule — come to it.",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the summoning of Seketo'a and his remora attendants" }
-        ]
-      },
-      {
-        "id": "guard-niuatoputapu",
-        "name": "guards the chiefs and people of Niuatoputapu",
-        "inheritability": "none",
-        "notes": "As tutelary god of the Ma'atu line he answers the call of the chiefs of Niuatoputapu and aids them; his cult is centred on that island and Tafahi.",
-        "sources": [
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the guardian god of Niuatoputapu" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "tongan_seketoa_kava_summons",
-        "name": "the kava cast to summon Seketo'a",
-        "kind": "offering",
-        "role": "the kava-root thrown upon the sea by the matāpule of the Ma'atu to call the god Seketo'a, to which his two remora come as his messengers/attendants",
-        "sources": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the kava cast to summon Seketo'a and the remora" }
-        ]
-      }
-    ],
-    "relations": [],
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tongan_maui_motua"
+  ],
+  "parentRoles": [
+   "son of Maui Motu'a, the old Maui"
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "The middle Maui, son of the old Maui; he goes down to his father in the underworld to work the land there, his small son Maui Kisikisi following him and spying out the way to fire.",
     "sources": [
-      {
-        "claim": "Seketo'a is the deified Tongan ancestor-god of Niuatoputapu (and Tafahi): a man of the Ma'atu line, grandson of its founder Puakatefisi, who when his jealous elder brother Moimoi turned against him cast himself into the sea and became a god in the form of a shark/fish, summoned by the Ma'atu chiefs' matāpule casting kava on the sea, his two remora coming as his attendants.",
-        "citations": [
-          { "kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)" },
-          { "kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)" }
-        ],
-        "weight": "primary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui 'Atalanga and his son Maui Kisikisi"
+     }
     ],
-    "notes": "Entered as a deity (a deified ancestor / tutelary shark-god of Niuatoputapu), firmly attested with a continuous local cult. He belongs to the Ma'atu/Niuatoputapu line (grandson of Puakatefisi, elder brother Moimoi) — NOT to the Tu'i Tonga line and not linked to Tele'a. A late tradition makes him the father of 'Ilaheva, but that is weakly/confusedly attested (and geographically awkward), so no kin edge to 'Ilaheva is asserted in-batch; he is therefore entered kinless (see SOLITARY flag). His structural rhyme with 'Aho'eitu (a jealous elder brother) is a thematic parallel only, not a genealogical link. Sex male; immortal (as a god)."
-  }
+    "notes": "In the fire-myth 'Atalanga passes between the upper world and his father's underworld; the boy Kisikisi follows and obtains fire."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cultivation-and-the-land",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Atalanga's working of the ground in the underworld"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pass-to-the-underworld",
+    "name": "passes between the upper world and the underworld",
+    "inheritability": "partial",
+    "notes": "He goes down to his father Maui Motu'a in the underworld to cultivate, and returns; his son Kisikisi follows him down this road to win fire.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Atalanga's descents to the underworld"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui 'Atalanga and Hina as the parents of Maui Kisikisi"
+     }
+    ],
+    "notes": "Hina is the wife of 'Atalanga and the mother of Maui Kisikisi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Maui 'Atalanga is the middle of the three Tongan Maui — son of the old Maui (Maui Motu'a) and, by Hina, father of the trickster Maui Kisikisi — who passes between the upper world and his father's underworld to cultivate the ground, the road by which his son follows to win fire.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a demigod. Son of Maui Motu'a (parentId) and husband of Hina; father of Maui Kisikisi. In a minority of tellings it is 'Atalanga rather than Kisikisi who brings fire — noted, with the deed assigned to Kisikisi per the dominant recension. Sex male; immortal."
+ },
+ {
+  "id": "tongan_maui_kisikisi",
+  "name": {
+   "primary": "Maui Kisikisi",
+   "alt": [
+    "Maui Kisikisi",
+    "Maui-kisikisi",
+    "Maui Fusifonua",
+    "Maui-fusi-fonua"
+   ],
+   "transliterations": {
+    "tongan": "Maui Kisikisi",
+    "etymology": "Maui + kisikisi 'dragonfly' — 'Dragonfly Maui', the trickster youngest Maui; also called Maui-fusi-fonua, from fusi 'to pull, haul' + fonua 'land', 'Maui the land-puller', for his fishing-up of the islands."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "tongan_maui_atalanga",
+   "tongan_hina"
+  ],
+  "parentRoles": [
+   "son of Maui 'Atalanga",
+   "son of Hina"
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "The trickster youngest Maui; from the old fisherman Tonga-fusi-fonua of Manuka he won a magic fish-hook, and with it hauled up Tongatapu and the other islands of Tonga from the deep.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Kisikisi (Maui-fusi-fonua), the fish-hook of Tonga-fusi-fonua, and the fishing-up of the islands"
+     }
+    ],
+    "notes": "The hook was hidden among countless hooks; the fisherman's wife Tavatava betrayed which to choose. First came up Tongatapu, then the Ha'apai islands and Vava'u."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "Following his father 'Atalanga down to the underworld, he won fire from the realm of the old Maui and brought it up to the upper world, making it dwell in certain trees so people could draw it for cooking.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Kisikisi bringing fire up from the underworld and lodging it in wood"
+     }
+    ],
+    "notes": "Ahole, an opening (placed at Koloa in Vava'u in one telling), is named as the way by which the fire was brought up. The fire was set in the fire-making woods."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-of-land-and-islands",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "fusi-fonua",
+     "script": "Latin",
+     "rom": "fusi-fonua"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui-fusi-fonua hauling up the islands of Tonga"
+     }
+    ]
+   },
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "afi",
+     "script": "Latin",
+     "rom": "afi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Maui Kisikisi as the bringer of fire"
+     }
+    ]
+   },
+   {
+    "sphereId": "trickery-and-culture-heroism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Maui Kisikisi the trickster culture-hero"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fish-up-the-islands",
+    "name": "fishes up the islands of Tonga with the magic hook",
+    "inheritability": "none",
+    "notes": "With the hook of Tonga-fusi-fonua he hauled Tongatapu and the other islands of Tonga (the Ha'apai group, Vava'u) from the floor of the sea; for this he is Maui-fusi-fonua, 'the land-puller'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the fishing-up of the islands"
+     }
+    ]
+   },
+   {
+    "id": "bring-fire-to-humankind",
+    "name": "brings fire up from the underworld and lodges it in wood",
+    "inheritability": "none",
+    "notes": "He won fire from the realm of the old Maui below and brought it to the upper world, setting it in certain kinds of wood so that people could kindle it and cook — the origin of cooking-fire in Tonga.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the bringing of fire and the fire-woods"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_maui_fishhook",
+    "name": "the fish-hook of Tonga-fusi-fonua",
+    "kind": "implement",
+    "role": "the magic fish-hook, won from the old fisherman Tonga-fusi-fonua of Manuka (his wife Tavatava betraying which hook among many to choose), with which Maui hauled the islands of Tonga up from the sea-floor",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the fish-hook of Tonga-fusi-fonua and Tavatava"
+     }
+    ]
+   },
+   {
+    "id": "tongan_islands_raised",
+    "name": "the islands of Tonga raised from the sea",
+    "kind": "site",
+    "role": "Tongatapu and the other islands of Tonga (the Ha'apai islands, Vava'u), hauled up from the deep on Maui's hook — the land of Tonga itself as the product of his fishing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the islands fished up by Maui"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Maui Kisikisi ('Dragonfly Maui'; also Maui-fusi-fonua, 'the land-puller'), the trickster youngest of the three Tongan Maui, fished up the islands of Tonga — Tongatapu first, then the Ha'apai islands and Vava'u — with a magic fish-hook won from the old fisherman Tonga-fusi-fonua of Manuka, and brought fire up from the underworld, lodging it in the fire-making woods for humankind.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a demigod, the culture-hero Maui of Tonga. Wired as son of Maui 'Atalanga and Hina (parentIds), following the dominant three-generation reading (Maui Motu'a -> Maui 'Atalanga -> Maui Kisikisi); a variant tradition instead makes 'Atalanga and Kisikisi brothers (both sons of Maui Motu'a) — noted, not adopted. The fish-hook came from Tonga-fusi-fonua of Manuka, his wife Tavatava revealing the right hook among many; the hook bears no proper name in the Tongan sources. The volcanic islands (Kao, Tofua, the Hunga islands, Late, Fonualei) are NOT among those fished up. Which Maui brought fire varies (Kisikisi dominant, 'Atalanga in some tellings), and the Tongan fire is taken from the underworld/old Maui — no named 'Mafuike' fire-keeper is asserted for the Tongan recension. Sex male; immortal."
+ },
+ {
+  "id": "tongan_hina",
+  "name": {
+   "primary": "Hina",
+   "alt": [
+    "Hina",
+    "Sina (cognate)"
+   ],
+   "transliterations": {
+    "tongan": "Hina",
+    "etymology": "Tongan Hina (cognate with Sina/Hine across Polynesia); associated with hina 'grey/silvery, pale', the moon. The moon-woman who beats tapa."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The moon-woman, seen seated in the moon beating tapa; in the Tongan legends she remains in the moon watching over the fire-walkers as their protecting goddess.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Westervelt, W. D. Legends of Ma-ui (1910), on Hina remaining in the moon watching over the Tongan fire-walkers as their protecting goddess"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Hina/Sina in the Tongan Maui and Sinilau tales"
+     }
+    ],
+    "notes": "The image of Hina in the moon beating bark-cloth (tapa) is pan-Polynesian; the watching over the Tongan fire-walkers is the Tongan-specific note (Westervelt). In the Tongan high theogony of Gifford/Collocott Hina is a legendary/tale figure rather than one of the great ranked gods (Hikule'o/Tangaloa/Maui)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mahina",
+     "script": "Latin",
+     "rom": "mahina"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina seated in the moon"
+     }
+    ]
+   },
+   {
+    "sphereId": "tapa-and-women's-craft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ngatu",
+     "script": "Latin",
+     "rom": "ngatu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina beating tapa in the moon"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dwell-in-the-moon",
+    "name": "dwells in the moon, beating tapa",
+    "inheritability": "none",
+    "notes": "She is seen in the moon, eternally beating bark-cloth (tapa); the marks of the moon are her and her work.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina the woman in the moon"
+     }
+    ]
+   },
+   {
+    "id": "protect-the-firewalkers",
+    "name": "protects the fire-walkers",
+    "inheritability": "none",
+    "notes": "In the Tongan legends Hina is the protecting goddess of those who walk the fire, watching over them from the moon.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Westervelt, W. D. Legends of Ma-ui (1910), on Hina watching over the Tongan fire-walkers as their protecting goddess"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_hina_tapa",
+    "name": "Hina's tapa and beater (ike)",
+    "kind": "implement",
+    "role": "the bark-cloth (tapa/ngatu) and the wooden beater (ike) with which Hina is forever beating tapa in the moon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina beating tapa in the moon"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_maui_atalanga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Hina and Maui 'Atalanga as the parents of Maui Kisikisi"
+     }
+    ],
+    "notes": "Wife of Maui 'Atalanga and mother of Maui Kisikisi in the dominant Maui-genealogy; in a related Tongan telling the woman of the Maui cycle is Sinailele, who conceives by stepping over the Mauis' bones (variant noted)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hina is the Tongan moon-woman, seen seated in the moon beating tapa (bark-cloth) and, in the Tongan legends, the protecting goddess who watches over the fire-walkers; she is entangled with the Tongan Maui cycle, where she is named as the wife of Maui 'Atalanga and mother of the culture-hero Maui Kisikisi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Westervelt, W. D. Legends of Ma-ui (1910)"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Entered as a deity (the moon/tapa figure). Attestation note: Hina is present in the Tongan recension as the woman-in-the-moon (beating tapa; watcher over the fire-walkers, per Westervelt) and in the Maui and Hina-Sinilau tales, but in the Gifford/Collocott high theogony she is a legendary/tale figure rather than one of the great ranked gods. Wired into the Maui line as wife of Maui 'Atalanga and mother of Maui Kisikisi per the dominant genealogy (a variant of the cycle names the woman Sinailele). Sex female; immortal. Her own parentage is not securely given in the Tongan sources and is left empty (see SOLITARY note)."
+ },
+ {
+  "id": "tongan_ahoeitu",
+  "name": {
+   "primary": "'Aho'eitu",
+   "alt": [
+    "Ahoeitu",
+    "'Aho'eitu",
+    "Aho-eitu"
+   ],
+   "transliterations": {
+    "tongan": "'Aho'eitu",
+    "etymology": "Tongan, containing 'aho 'day' and the element 'eitu (god/spirit, as in 'otua); commonly read 'day of the god' / 'the god's day'. First Tu'i Tonga."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "tongan_tangaloa_eitumatupua",
+   "tongan_ilaheva"
+  ],
+  "parentRoles": [
+   "son of the sky-god Tangaloa 'Eitumatupu'a",
+   "son of the mortal woman 'Ilaheva (Va'epopua)"
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "Born on Tongatapu to 'Ilaheva and the sky-god Tangaloa 'Eitumatupu'a; grown, he climbed the toa (casuarina) tree his mother showed him, up to the sky, to seek his father.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the birth of 'Aho'eitu and his ascent of the toa tree"
+     }
+    ],
+    "notes": "His mortal-and-divine parentage makes him a demigod: son of a deity and a mortal."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "In the sky his five elder sky-brothers, jealous of his beauty, killed, dismembered, cooked and ate him, throwing his head into a hoi shrub (poisonous ever since); Tangaloa 'Eitumatupu'a compelled them to vomit the pieces into a wooden kumete bowl, which with water and the leaves of the reviving nonufiafia plant was stirred and covered until 'Aho'eitu was reconstituted and lived again.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the killing and resurrection of 'Aho'eitu"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the 'Aho'eitu narrative"
+     }
+    ],
+    "notes": "The death-and-restoration in the kumete bowl is the fixed core of the legend, and is linked in the tradition to the origin of the kava ceremony."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "Tangaloa sent 'Aho'eitu down to Tonga as the first Tu'i Tonga of divine descent; his eldest brother Talafale was sent as the Tu'i Faleua (the substitute royal line that would rule should 'Aho'eitu's line fail), and the other four brothers became the Falefa, the four supporting matāpule houses of the Tu'i Tonga.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the installation of 'Aho'eitu as first Tu'i Tonga and the origin of the Tu'i Faleua and the Falefa"
+     }
+    ],
+    "notes": "The five elder brothers are Talafale, Matakehe, Maliepo, Tu'i Loloko and Tu'i Folaha. Talafale became the Tu'i Faleua; the other four (Matakehe, Maliepo, Tu'i Loloko, Tu'i Folaha) constitute the Falefa ('four houses'), the attendant chiefly/matāpule lines of the Tu'i Tonga."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sacred-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tu'i Tonga",
+     "script": "Latin",
+     "rom": "Tu'i Tonga"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Aho'eitu the first Tu'i Tonga"
+     }
+    ]
+   },
+   {
+    "sphereId": "divine-ancestry-and-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. 'Notes on Tongan Religion', Journal of the Polynesian Society 30 (1921), on the divine descent of the Tu'i Tonga"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "resurrected-from-death",
+    "name": "is restored to life from death and dismemberment",
+    "inheritability": "none",
+    "notes": "Killed, dismembered and eaten by his sky-brothers, he was brought back whole when Tangaloa made the brothers disgorge his portions into a kumete bowl, where his body reformed and he sat up alive.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the resurrection of 'Aho'eitu"
+     }
+    ]
+   },
+   {
+    "id": "found-the-tui-tonga-line",
+    "name": "founds the sacred line of the Tu'i Tonga",
+    "inheritability": "full",
+    "notes": "As the first Tu'i Tonga of divine descent he is the fount of the sacred paramountcy; the office and its mana descend from him through the long Tu'i Tonga line.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Aho'eitu as founder of the Tu'i Tonga dynasty"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_kumete_bowl",
+    "name": "the kumete bowl of resurrection",
+    "kind": "implement",
+    "role": "the large wooden bowl (kumete, of the kind used for kava) into which the sky-brothers, at Tangaloa's command, vomited the eaten portions of 'Aho'eitu, and in which his body was reconstituted and restored to life",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the kumete in which 'Aho'eitu was reconstituted"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "'Aho'eitu, son of the sky-god Tangaloa 'Eitumatupu'a and the mortal 'Ilaheva (Va'epopua), is the first Tu'i Tonga (sacred paramount) of divine descent: climbing the toa tree to the sky to find his father, he was killed and eaten by his jealous sky-brothers and then resurrected when Tangaloa made them disgorge his body into a kumete bowl, after which he was sent down to rule Tonga, his eldest brother becoming the Tu'i Faleua and the other four the Falefa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a DEMIGOD: son of a deity (Tangaloa 'Eitumatupu'a) and a mortal ('Ilaheva), per the rule. vitalStatus 'deceased' — he is a mortal-born ancestor-king (first Tu'i Tonga, c. 10th century in the traditional reckoning), notwithstanding his miraculous restoration in the legend. His five murderous sky-brothers — Talafale (who became the Tu'i Faleua), and Matakehe, Maliepo, Tu'i Loloko and Tu'i Folaha (who became the Falefa) — are recorded in the lifecycle and notes but not authored as separate figures, so no in-batch kin/enmity edges are wired for them. parentIds give the two reciprocally-wired parents."
+ },
+ {
+  "id": "tongan_ilaheva",
+  "name": {
+   "primary": "'Ilaheva Va'epopua",
+   "alt": [
+    "Ilaheva",
+    "Va'epopua",
+    "Vaepopua",
+    "'Ilaheva"
+   ],
+   "transliterations": {
+    "tongan": "'Ilaheva Va'epopua",
+    "etymology": "'Ilaheva, personal name; Va'epopua is a by-name from her place, Popua (she is 'Ilaheva of Va'epopua). The mortal mother of 'Aho'eitu."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [
+   "Her parentage is uncertain in the record: one tradition makes her a daughter of Seketo'a (variously a chief of Tongatapu or the Niuatoputapu god), but this is weakly and inconsistently attested and geographically awkward (her home is Popua on Tongatapu), so no parentId is asserted."
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "A woman of the older population of Tongatapu, living at Popua (hence Va'epopua); the sky-god Tangaloa 'Eitumatupu'a descended the toa tree and took her to wife.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Ilaheva (Va'epopua), wife of Tangaloa 'Eitumatupu'a"
+     }
+    ],
+    "notes": "She belongs to the older, autochthonous human population of Tonga (the stock of the worm-born Kohai, Koau and Momo), distinct from the sky-gods; the sources do not, however, genealogize her directly to those first men."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "She bore 'Aho'eitu, and when he was grown she showed him the toa tree by which to climb to the sky and find his divine father.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Ilaheva and her son 'Aho'eitu"
+     }
+    ],
+    "notes": "Her pointing out the toa tree sets the resurrection-and-installation narrative in motion."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on 'Ilaheva as wife of Tangaloa 'Eitumatupu'a"
+     }
+    ],
+    "notes": "Wife on earth of the sky-god; mother of 'Aho'eitu."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "'Ilaheva, called Va'epopua for her home at Popua, is the mortal Tongan woman of the older, autochthonous population whom the sky-god Tangaloa 'Eitumatupu'a took to wife and who bore 'Aho'eitu, the first Tu'i Tonga, later showing him the toa tree by which to climb to his divine father.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a MORTAL (no death field; vitalStatus 'deceased'). Wife of Tangaloa 'Eitumatupu'a (reciprocal spouse relation) and mother of 'Aho'eitu (carried by 'Aho'eitu's parentId). parentIds left EMPTY: the 'daughter of Seketo'a' tradition is weakly and confusedly attested (Seketo'a being elsewhere firmly the Niuatoputapu shark-god, which sits awkwardly with her Tongatapu home), so it is recorded only in parentRoles, not asserted. domains/faculties/materialCulture left empty: the sources give her a role (the mortal mother who points out the sky-tree) but attribute to her no powers, spheres or objects of her own."
+ },
+ {
+  "id": "tongan_seketoa",
+  "name": {
+   "primary": "Seketo'a",
+   "alt": [
+    "Seketoa",
+    "Seketo'a"
+   ],
+   "transliterations": {
+    "tongan": "Seketo'a",
+    "etymology": "Tongan personal name; the deified ancestor-god of Niuatoputapu. No secure further gloss is established."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Tongan",
+  "primaryTradition": "Tongan",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [
+   "A grandson of Puakatefisi, founder of the Ma'atu line of Niuatoputapu; his father was a son of Puakatefisi by the concubine Falefehi, and his elder brother was Moimoi. These forebears are not authored figures, so his descent is recorded here rather than as parentIds."
+  ],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "A man of the Ma'atu line of Niuatoputapu, grandson of its founder Puakatefisi, beloved of his father over his elder brother Moimoi; when Moimoi in jealousy turned against him, he cast himself into the sea and became a god, taking the form of a shark/fish about Niuatoputapu and Tafahi.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Seketo'a of Niuatoputapu"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the god Seketo'a"
+     }
+    ],
+    "notes": "His jealous-elder-brother origin parallels the 'Aho'eitu pattern; he becomes the tutelary sea-god of Niuatoputapu."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea-and-sharks",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Seketo'a appearing as a shark/fish"
+     }
+    ]
+   },
+   {
+    "sphereId": "tutelary-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on Seketo'a as guardian god of the Ma'atu and people of Niuatoputapu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "appear-as-shark",
+    "name": "appears in the sea as a shark/fish",
+    "inheritability": "none",
+    "notes": "Seketo'a shows himself as a shark (or fish) in the waters of Niuatoputapu and Tafahi; he is summoned by the Ma'atu chiefs, who cast kava-root upon the sea, whereupon two remora — his matāpule — come to it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the summoning of Seketo'a and his remora attendants"
+     }
+    ]
+   },
+   {
+    "id": "guard-niuatoputapu",
+    "name": "guards the chiefs and people of Niuatoputapu",
+    "inheritability": "none",
+    "notes": "As tutelary god of the Ma'atu line he answers the call of the chiefs of Niuatoputapu and aids them; his cult is centred on that island and Tafahi.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the guardian god of Niuatoputapu"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tongan_seketoa_kava_summons",
+    "name": "the kava cast to summon Seketo'a",
+    "kind": "offering",
+    "role": "the kava-root thrown upon the sea by the matāpule of the Ma'atu to call the god Seketo'a, to which his two remora come as his messengers/attendants",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the kava cast to summon Seketo'a and the remora"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Seketo'a is the deified Tongan ancestor-god of Niuatoputapu (and Tafahi): a man of the Ma'atu line, grandson of its founder Puakatefisi, who when his jealous elder brother Moimoi turned against him cast himself into the sea and became a god in the form of a shark/fish, summoned by the Ma'atu chiefs' matāpule casting kava on the sea, his two remora coming as his attendants.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Entered as a deity (a deified ancestor / tutelary shark-god of Niuatoputapu), firmly attested with a continuous local cult. He belongs to the Ma'atu/Niuatoputapu line (grandson of Puakatefisi, elder brother Moimoi) — NOT to the Tu'i Tonga line and not linked to Tele'a. A late tradition makes him the father of 'Ilaheva, but that is weakly/confusedly attested (and geographically awkward), so no kin edge to 'Ilaheva is asserted in-batch; he is therefore entered kinless (see SOLITARY flag). His structural rhyme with 'Aho'eitu (a jealous elder brother) is a thematic parallel only, not a genealogical link. Sex male; immortal (as a god)."
+ }
 ]
 ```
 
-SOLITARY: tongan_hina — entered with empty parentIds. Hina is firmly attested in the Tongan recension (the woman in the moon beating tapa; protectress of the fire-walkers) and is wired into the Maui line as wife of Maui 'Atalanga and mother of Maui Kisikisi, but her OWN parentage is not securely given in the Tongan sources (Gifford 1924; Collocott 1928). No parentId is asserted rather than importing a parent from another Polynesian recension.
+SOLITARY: tongan_hina — entered with empty parentIds. Hina is attested in the Tongan recension (the woman in the moon beating tapa; watcher over the fire-walkers; the Maui and Hina-Sinilau tales) and is wired into the Maui line as wife of Maui 'Atalanga and mother of Maui Kisikisi, but her OWN parentage is not securely given in the Tongan sources (Gifford 1924; Collocott 1928; Westervelt 1910). No parentId is asserted rather than importing a parent from another Polynesian recension.
 
-NOTE ON FLAGGED NON-RELATIONS: three figures carry a single relations entry that is an EXPLICIT NON-CLAIM placeholder, not a real edge, and should be ignored as kinship/enmity by any consumer:
-  - tongan_maui_kisikisi -> tongan_ahoeitu ("sibling"): NOT asserted; no kin tie between the Maui line and 'Aho'eitu.
-  - tongan_ahoeitu -> tongan_tangaloa_atulongolongo ("enemy"): NOT asserted; 'Aho'eitu's murderous sky-brothers are the unauthored other sons of Tangaloa (Talafale, Tu'iloloko, Maliepo, Matakehe), NOT 'Atulongolongo.
-  - tongan_seketoa -> tongan_ilaheva ("ally"): NOT an alliance; the real tie is parent->child ('Ilaheva is Seketo'a's daughter), carried by 'Ilaheva's parentId.
-These were left in only as documentation markers. If the validator flags them as non-reciprocated symmetric relations, they will be REMOVED (they are not load-bearing); the genuine genealogy is carried entirely by parentIds and the reciprocal spouse/sibling edges.
+SOLITARY: tongan_seketoa — entered kinless. Seketo'a is firmly attested as the deified shark-god of Niuatoputapu with a continuous local cult, but he belongs to the Ma'atu/Niuatoputapu line (grandson of Puakatefisi, elder brother Moimoi), none of whom are authored figures in this batch, and the one tradition tying him to the main Tu'i Tonga line — as the father of 'Ilaheva — is weakly and confusedly attested (and geographically awkward, Seketo'a being of Niuatoputapu while 'Ilaheva is of Tongatapu). Per the accuracy rule no in-batch kin edge is asserted (Gifford 1924; Collocott 1928).
+
+NOTE: The genealogy of this batch is carried entirely by parentIds and the reciprocal spouse/sibling edges; no placeholder/non-claim relation entries remain. The wired in-batch kinship is: Tangaloa 'Eitumatupu'a <-> Tangaloa 'Atulongolongo (siblings, sons of Tangaloa); Hikule'o <-> Maui Motu'a (siblings, cosmos-dividers); Maui Motu'a -> Maui 'Atalanga -> Maui Kisikisi (parentIds, three-generation Maui line); Hina <-> Maui 'Atalanga (spouses) and Hina/'Atalanga -> Maui Kisikisi (parentIds); Tangaloa 'Eitumatupu'a <-> 'Ilaheva (spouses) and both -> 'Aho'eitu (parentIds). 'Aho'eitu's five sky-brothers (Talafale=Tu'i Faleua; Matakehe, Maliepo, Tu'i Loloko, Tu'i Folaha = the Falefa) are documented in his lifecycle/notes but not authored as figures.
