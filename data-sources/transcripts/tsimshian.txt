@@ -1,0 +1,156 @@
+Figure-authoring batch — the well-attested CORE of the Tsimshian (Pacific
+Northwest Coast) transformer cosmology. The corpus previously held only the
+Asdiwal-saga lineage (hatsenas, skeena_daughter, asdiwal); the pivotal
+transformer-trickster and the sky-beings of the daylight-theft were missing.
+This adds four firmly attested figures from Franz Boas & Henry W. Tate,
+"Tsimshian Mythology" (31st Annual Report of the Bureau of American Ethnology,
+1909–1910; Washington, 1916, pp. 29–1037) and Boas, "Tsimshian Texts" (Nass
+River Dialect; BAE Bulletin 27, 1902), centred on the named Raven cycle and the
+episode "Txä'msEm and Lô·gôbolā'": Txä'msem (the Giant / Raven), his brother
+Lô·gôbolā', the Chief of Heaven who hoarded the daylight in the box "Maa," and
+the Chief of Heaven's Daughter who swallowed the transformed Raven (the cedar
+leaf) and bore him. The two brothers are reciprocal siblings and rivals; the
+sky-chief and his daughter are wired by the directed father/mother pair to
+Txä'msem. Per the registered era scheme, the whole Raven creation/transformer
+cycle is placed in `pre-flood`. The popular "Walks-All-Over-the-Sky" sun-origin
+tale and the personal name "Laxha" were deliberately NOT folded into the
+daylight-keeper, as the ethnographic sources do not support that identification
+(Laxha is elsewhere a clamshell-emergence being; the light-keeper of the Raven
+myth is named only by title). No restricted ceremonial (halait) material is used.
+
+```json
+[
+  {
+    "id": "tsimshian_txamsem",
+    "name": { "primary": "Txä'msem", "alt": ["Txamsem", "Txaamsm", "Txa'msem", "the Giant", "Wigyet", "We-gyet", "Giant", "Raven"], "transliterations": { "tsimshian": "Txä'msEm", "rom": "Txaamsm", "etymology": "Personal name of the transformer-Raven; the by-name Wigyet (we-gyet) is Sm'algyax for 'big man / giant', and gaax is the Tsimshian word for 'raven' (Boas, Tsimshian Mythology, 1916)." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tsimshian",
+    "primaryTradition": "Tsimshian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": ["tsimshian_chief_of_heaven", "tsimshian_chief_of_heavens_daughter"],
+    "parentRoles": { "tsimshian_chief_of_heaven": "paternal", "tsimshian_chief_of_heavens_daughter": "maternal" },
+    "temporal": { "era": "pre-flood" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "pre-flood", "eraOrdering": 0, "startEvent": "supernatural-birth-in-the-sky", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), Raven cycle (the Txä'msEm narratives)" }], "notes": "In the sky-origin telling the transformer makes himself the leaf of a cedar; the Chief of Heaven's daughter dips it up in her water-bucket and drinks it, becomes pregnant, and bears a boy who is Raven. (In Tate's parallel telling he is a chief's son who dies and returns as a radiant youth, is tricked into eating scabs, grows ravenous, and is sent off with a raven blanket.)" },
+      { "typeStatus": "deity", "era": "pre-flood", "eraOrdering": 1, "startEvent": "releases-the-daylight", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916); cf. Boas, Tsimshian Texts (1902)" }], "notes": "The Raven-child cries 'Hama, hama!' until his grandfather gives him the box called Maa, in which the daylight is kept. Putting on the raven skin his father gave him, he flies off and breaks the Maa; it bursts and there is daylight in the world. The fishing-frogs name him Txä'msem." },
+      { "typeStatus": "deity", "era": "pre-flood", "eraOrdering": 2, "startEvent": "orders-the-world", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), episode 'Txä'msEm and Lô·gôbolā''" }], "notes": "As transformer he wanders the world setting it in order: he comes down near the mouth of the Nass River, induces the olachen (eulachon) to come up the Nass so that it becomes a great river, and contends with his brother Lô·gôbolā' over the keeping of fresh water — a contest that leaves the world its fog and its waters." }
+    ],
+    "domains": [
+      { "sphereId": "light", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Release of the daylight from the box Maa." },
+      { "sphereId": "transformation", "contextTag": "lifelong", "term": { "value": "Wigyet", "script": "Sm'algyax", "rom": "we-gyet" }, "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "The shape-shifting transformer-trickster ('the Giant')." },
+      { "sphereId": "trickery", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas, Tsimshian Texts (1902)" }], "notes": "The deceiving culture-hero whose appetite and cunning drive the cycle." }
+    ],
+    "faculties": [
+      { "id": "transformation", "name": "Shape-shifting transformer", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Becomes a cedar leaf, an infant, and a raven (donning the raven skin) at will." }
+    ],
+    "materialCulture": [
+      { "id": "raven_skin", "name": "Raven skin (blanket)", "kind": "garment", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "The raven skin given him by his father the Chief of Heaven; putting it on, he flies and carries off the daylight." }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "tsimshian_chief_of_heaven", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Son of the Chief of Heaven, who gives him the raven skin." },
+      { "kind": "mother", "personId": "tsimshian_chief_of_heavens_daughter", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Born of the sky-chief's daughter, who swallowed him as a cedar leaf." },
+      { "kind": "sibling", "personId": "tsimshian_logobola", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), 'Txä'msEm and Lô·gôbolā''" }], "notes": "Brother of Lô·gôbolā', with whom he contends over fresh water and the fog." },
+      { "kind": "enemy", "personId": "tsimshian_logobola", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Rival in the contest that orders the waters of the world." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)" }, { "kind": "primary", "reference": "Franz Boas, Tsimshian Texts (Nass River Dialect), BAE Bulletin 27 (1902)" }], "weight": "primary" }
+    ],
+    "notes": "Txä'msem — 'the Giant' (Wigyet, 'big man'), the Raven — is the central transformer-trickster and culture-hero of Tsimshian mythology. Born in the sky to the Chief of Heaven's daughter (who drank him in the form of a cedar leaf), he cries for and then breaks open the box Maa, releasing the daylight upon a world that had known only dusk. As transformer he then wanders the earth ordering it: bringing the olachen up the Nass River and contending with his brother Lô·gôbolā' over fresh water. At once benevolent shaper and greedy trickster, he is the pivotal figure of the published Raven cycle recorded by Boas and Tate."
+  },
+  {
+    "id": "tsimshian_logobola",
+    "name": { "primary": "Lô·gôbolā'", "alt": ["Logobola", "Lagabula", "Lgu-bola", "the Lazy One"], "transliterations": { "tsimshian": "Lô·gôbolā'", "rom": "Logobola", "etymology": "Personal name of Txä'msem's brother; glossed in popular tradition as 'the Lazy One' (Boas & Tate, Tsimshian Mythology, 1916)." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tsimshian",
+    "primaryTradition": "Tsimshian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "pre-flood" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "pre-flood", "eraOrdering": 0, "startEvent": "contest-with-the-raven", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), episode 'Txä'msEm and Lô·gôbolā''" }], "notes": "Brother of Txä'msem and his counterpart in the foundational contest over fresh water. He is associated with the holding-back of clear water and with the fog into which Txä'msem becomes lost — the rivalry that fixes the distribution of the world's waters." }
+    ],
+    "domains": [
+      { "sphereId": "fresh-water", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "His withholding of clear water is the foil to Raven's bringing of it." },
+      { "sphereId": "fog", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Associated with the fog in which Raven is lost during their contest." }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "tsimshian_txamsem", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), 'Txä'msEm and Lô·gôbolā''" }], "notes": "Brother of Txä'msem (the Giant / Raven)." },
+      { "kind": "enemy", "personId": "tsimshian_txamsem", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Rival of Raven in the contest over fresh water and fog." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916), 'Txä'msEm and Lô·gôbolā''" }, { "kind": "primary", "reference": "Franz Boas, Tsimshian Texts (Nass River Dialect), BAE Bulletin 27 (1902)" }], "weight": "primary" }
+    ],
+    "notes": "Lô·gôbolā' (Logobola), popularly called 'the Lazy One', is the brother of Txä'msem and his rival in the foundational contest over fresh water. In the Tsimshian Raven cycle he is the figure who holds back the clear water and is linked to the fog into which the Raven strays — the antagonist whose struggle with the transformer fixes the world's waters in their places."
+  },
+  {
+    "id": "tsimshian_chief_of_heaven",
+    "name": { "primary": "Chief of Heaven", "alt": ["Chief in the Sky", "the Sky-Chief", "Chief who keeps the Daylight"], "transliterations": { "tsimshian": "Sm'ooygit Laxha (descriptive: 'chief of the sky')", "etymology": "Identified by title only in the texts; laxha is the Sm'algyax word for 'sky / heaven'. The figure is the keeper of the daylight, not the clamshell-being elsewhere called Laxha." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tsimshian",
+    "primaryTradition": "Tsimshian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "pre-flood" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "pre-flood", "eraOrdering": 0, "startEvent": "keeps-the-daylight", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), Raven cycle" }], "notes": "The chief in the sky who hoards the daylight (with the sun, moon and stars) in a box called Maa hanging in his house, while the world below knows only dusk. Raven, reborn as his grandson, cries for the box; the chief gives the child a raven skin, and the transformer carries off and breaks the Maa, freeing the daylight." }
+    ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "term": { "value": "laxha", "script": "Sm'algyax", "rom": "laxha" }, "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Lord of the sky-house where the daylight is kept." },
+      { "sphereId": "light", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Keeper (before the theft) of the daylight, sun, moon and stars." }
+    ],
+    "materialCulture": [
+      { "id": "box_of_daylight", "name": "Maa (the box of daylight)", "kind": "container", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "The box called Maa hanging in the sky-chief's house, in which the daylight is kept until Raven breaks it." }
+    ],
+    "relations": [
+      { "kind": "father-of", "personId": "tsimshian_chief_of_heavens_daughter", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Father of the sky-chief's daughter, the mother of Raven." },
+      { "kind": "father-of", "personId": "tsimshian_txamsem", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Grandfather/father-figure of the Raven-child, to whom he gives the raven skin (treated here as the father of Txä'msem in the sky-origin telling)." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)" }, { "kind": "secondary", "reference": "'The Theft of Light', a Tsimshian retelling of the Boas–Tate text (firstpeople.us)" }], "weight": "primary" }
+    ],
+    "notes": "The Chief of Heaven (the Chief in the Sky) is the sky-being from whom the Raven obtains the daylight. He keeps the daylight — with the sun, moon and stars — in a box called Maa in his house above, while the earth lies in dusk. The transformer, reborn as the chief's grandson, cries for the box and, given a raven skin, flies off and breaks it open, releasing the light. He is named in the texts only by his title; he is distinct from the being 'Laxha' of the separate clamshell-emergence tradition."
+  },
+  {
+    "id": "tsimshian_chief_of_heavens_daughter",
+    "name": { "primary": "Chief of Heaven's Daughter", "alt": ["the Sky-Chief's Daughter", "Mother of Raven"], "transliterations": { "tsimshian": "(named by relation only in the texts)", "etymology": "Identified by kinship, not by a personal name, in the recorded narratives." } },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Tsimshian",
+    "primaryTradition": "Tsimshian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": ["tsimshian_chief_of_heaven"],
+    "parentRoles": { "tsimshian_chief_of_heaven": "paternal" },
+    "temporal": { "era": "pre-flood" },
+    "lifecycle": [
+      { "typeStatus": "deity", "era": "pre-flood", "eraOrdering": 0, "startEvent": "bears-the-raven-child", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916), Raven cycle" }], "notes": "Daughter of the Chief of Heaven. Coming out with her water-bucket, she dips up and drinks a cedar leaf — the transformer in disguise — becomes pregnant, and gives birth to the boy who is Raven, the child who will cry for and seize the daylight." }
+    ],
+    "domains": [
+      { "sphereId": "sky", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "A sky-being, daughter of the lord of the daylight." }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "tsimshian_chief_of_heaven", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Daughter of the Chief of Heaven." },
+      { "kind": "mother-of", "personId": "tsimshian_txamsem", "era": "pre-flood", "sources": [{ "kind": "primary", "reference": "Boas & Tate, Tsimshian Mythology (1916)" }], "notes": "Mother of Txä'msem, conceived by swallowing the cedar leaf." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Franz Boas & Henry W. Tate, Tsimshian Mythology, 31st Annual Report of the Bureau of American Ethnology (1916)" }, { "kind": "secondary", "reference": "'The Theft of Light', a Tsimshian retelling of the Boas–Tate text (firstpeople.us)" }], "weight": "primary" }
+    ],
+    "notes": "The Chief of Heaven's Daughter is the mother of the Raven in the sky-origin telling of the Tsimshian transformer cycle. Going to fetch water, she drinks a cedar leaf into which Txä'msem has transformed himself, conceives, and bears him as a boy — the supernatural infant who cries 'Hama, hama!' for the box of daylight and so brings the light into the world. She is identified in the narratives by kinship rather than by a personal name."
+  }
+]
+```
+
+Four figures completing the Tsimshian transformer core — Txä'msem (the Giant /
+Raven), his brother and rival Lô·gôbolā', the Chief of Heaven who hoarded the
+daylight in the box Maa, and the sky-chief's daughter who bore the Raven — all
+sourced to Boas & Tate, "Tsimshian Mythology" (1916), and Boas, "Tsimshian
+Texts" (1902). The two brothers are reciprocal siblings/rivals; the sky-chief
+and his daughter are wired to Txä'msem by the father/mother pair.
