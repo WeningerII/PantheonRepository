@@ -1,0 +1,486 @@
+Pantheon Registry — Mordvin (Erzya/Moksha) addition
+
+Tradition: Mordvin (Volga-Finnic; Erzya and Moksha). Era: mythic (the only era registered for this tradition).
+
+This batch completes the CORE of the Mordvin pantheon as it is organized in the scholarship: a dense system of -ava ("mother") and -atya ("father") spirit-owners — more precisely azor-ava / azor-atya, "master-mother" / "master-father" (Mordvin azor "master, ruler") — each owning a domain of the world. The existing registry already holds Ineshkipaz/Nishke-pas (supreme sky-god), Ange-Patyai (mother of the gods), Norov-ava (field/grain mother) and Vede-ava (water-mother). The well-attested figures still missing are the other great Ava mother-goddesses of the elements and the homestead, plus the Sun.
+
+What I added (6 figures), and what I deliberately did NOT add:
+
+1. mordvin_virava — Vir-ava (Viren azor-ava), the FOREST-MOTHER: ruler of the forest's beasts, birds, trees and berries; a fertility/midwife figure in some texts. Paired with a male Vir-atya (forest-father). Firmly attested.
+2. mordvin_varmava — Varma-ava (Varmava), the WIND-MOTHER: owner of the winds and weather; notably a mediator between the living and the dead. The Erzya egg-cosmology also names a male wind-god Varma-pas / Varmanpaz; I treat the mother-figure here and note the god in prose. Firmly attested.
+3. mordvin_tolava — Tol-ava (Tolen azor-ava), the FIRE-MOTHER: the female owner of fire and the hearth-flame. Attested as one of the standard trio of elemental "mothers" (forest/water/fire) in Holmberg/Harva and in the 19th-c. Folk-Lore Journal ethnography.
+4. mordvin_mastorava — Mastor-ava (Mastoron azor-ava), the EARTH-MOTHER (mastor "earth" + ava): the goddess of the soil who grants good harvests and good health to the tillers. Distinct from the male earth/underworld figures Mastoron-kirdi and Mastorpaz (whom the corpus already references under Norov-ava). Firmly attested; also the title-figure of A. M. Sharonov's 1994 Erzya epic Mastorava.
+5. mordvin_yurtava — Yurt-ava (Yurt azor-ava; Moksha Yurkhtava), the HOMESTEAD/HOUSE-MOTHER: guardian-mother of the dwelling, the yard and its property, invoked in Erzya marriage prayers ("O mother, Yurt azor ava") alongside the Home-Mother Kud-ava. Firmly attested.
+6. mordvin_chipaz — Chipaz / Chi-pas, the SUN: the sun-god of the Erzya egg-cosmology, father of Nishkepaz (= the existing Ineshkipaz), of the earth-god Mastoron-kirdi and of the wind-god Varmanpaz; with the grain-mother Norov-ava the parent of the underworld-god Mastorpaz; molder of humankind from clay. The one luminary firmly attested as a personified deity. I wire Chipaz as PARENT of the existing mordvin_ineshkipaz and as co-parent (lover) with the existing mordvin_norovava — both relations cited.
+
+DELIBERATELY OMITTED — the Moon (Kovpaz / Kov / Kovava). The sources are explicit that the Mordvins "prayed to the sun and moon, but always regarded them as creations of God" — the moon is venerated but is NOT given the status of a distinct, named, anthropomorphic deity in the verifiable scholarship (unlike the Sun/Chipaz, who is a cosmogonic actor). Per the no-padding / firmly-attested rule, no Moon figure is authored. (The supreme sky-god Ineshkipaz already absorbs sun/sky/fire-of-heaven functions in the Melnikov line, which further argues against a free-standing Moon deity.)
+
+The five Ava mother-goddesses are treated as INDEPENDENT domain-powers: the verifiable sources do not make Ange-Patyai or Chipaz the parent of the elemental/household -ava mothers (those genealogies that do exist run to the -paz/-pas gods: Chipaz fathers Nishkepaz, Mastoron-kirdi and Varmanpaz). The five Ava are therefore flagged SOLITARY with that cited reason. Only Chipaz carries kin.
+
+Cross-tradition / cross-system note: there are two partly-rival Mordvin cosmologies in the literature — the Erzya "egg" cosmogony (Sarv 2001; Hamari & Ajanki 2022), in which the Sun Chipaz fathers the high gods, and Melnikov-Pechersky's 19th-c. great-goddess scheme, in which Ange-Patyai is mother of all and Nishke-pas is himself the sun. I follow the reading the existing corpus already adopted (Ineshkipaz "born of the sun-god Chipaz"), and flag the tension in the notes.
+
+Citations are real, work-level: Uno Holmberg (Harva), Finno-Ugric [and Siberian] Mythology = The Mythology of All Races, vol. IV, Boston 1927 (Finno-Ugric, Mordvin sections); Uno Harva, Die religiösen Vorstellungen der mordwinischen Völker, FF Communications 142, Helsinki 1952; Heikki Paasonen, Mordwinische Volksdichtung (collected Erzya/Moksha texts, 8 vols., Helsinki 1938–1981); J. Abercromby, "The Beliefs and Religious Superstitions of the Mordvins," The Folk-Lore Journal 7 (1889); Mari Sarv, "Some Aspects of Mordvin Mythology," Folklore (Tartu) 17 (2001); Arja Hamari & Rigina Ajanki, "Mordvin (Erzya and Moksha)," in The Oxford Guide to the Uralic Languages (OUP, 2022), ch. 23.
+
+```json
+[
+  {
+    "id": "mordvin_virava",
+    "name": {
+      "primary": "Forest-Mother of the Mordvins",
+      "alt": ["Vir-Ava", "Vir'ava", "Viren azor-ava", "Вирь ава"],
+      "transliterations": { "mordvin": "Вирь ава", "etymology": "Erzya/Moksha vir 'forest' + ava 'woman, mother' = 'forest-mother'; the fuller cult-title Viren azor-ava 'mistress-mother of the forest' (azor 'master, ruler')." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Owns the forest from mythic time as one of the elemental Ava spirit-owners.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology (The Mythology of All Races IV). Boston, 1927, Mordvin sections (Vir-ava, mistress of the forest)." }],
+        "notes": "No birth/death is told; she is a perennial owner-spirit (azor-ava) of her domain."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "forests-and-woodland",
+        "contextTag": "lifelong",
+        "term": { "value": "Вирь ава", "script": "Cyrl", "rom": "Virʼ ava" },
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology, 1927, Mordvin section (Vir-ava 'forest-mother', ruler of the woods)." }]
+      },
+      {
+        "sphereId": "wild-beasts-and-game",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "'Mari and Mordvin Religion', Encyclopedia of Religion (Encyclopedia.com), on Vir-ava as guardian ruling the forest's animals, birds, trees and berries." }]
+      },
+      {
+        "sphereId": "fertility-and-childbirth",
+        "contextTag": "occasional",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Paasonen, Heikki. Mordwinische Volksdichtung (Helsinki, 1938–1981): Vir-ava appearing as a midwife/fertility figure in some Erzya texts." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "rule_the_forest_and_its_creatures",
+        "name": "owns and herds the beasts, birds and trees of the forest",
+        "inheritability": "none",
+        "notes": "As azor-ava of the woods she releases or withholds game; hunters and gatherers propitiate her, and she may lead the unwary astray in the deep forest.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology, 1927, Mordvin section; 'Mari and Mordvin Religion', Encyclopedia of Religion." }]
+      },
+      {
+        "id": "act_as_forest_midwife",
+        "name": "aids women and quickens fertility in some tales",
+        "inheritability": "none",
+        "notes": "In a number of recorded Erzya texts Vir-ava acts as a midwife or fertility-helper, an overlap with the broader Mordvin maternal-goddess complex.",
+        "sources": [{ "kind": "secondary", "reference": "Paasonen, Heikki. Mordwinische Volksdichtung (Erzya/Moksha texts)." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mordvin_keremet_grove",
+        "name": "the keremet sacred grove",
+        "kind": "ritual-site",
+        "role": "Fenced grove of deciduous trees sacred to a divinity, where offerings to the nature-Ava (forest, water, etc.) were made at the ozks prayer-feasts.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology, 1927 (the Mordvin keremet, a fenced sacred grove sacred to a special divinity); Abercromby, J., 'The Beliefs and Religious Superstitions of the Mordvins', Folk-Lore Journal 7, 1889." }]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Vir-ava (Viren azor-ava) is the Mordvin forest-mother, female owner-spirit of the woods and their animals, paired with a male forest-father Vir-atya; in some texts a midwife/fertility figure.",
+        "citations": [
+          { "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology (The Mythology of All Races, vol. IV). Boston: Marshall Jones, 1927, Mordvin sections." },
+          { "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha).' The Oxford Guide to the Uralic Languages. Oxford: OUP, 2022, ch. 23 (nature-deities; vir 'forest', ava 'mother')." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Erzya/Moksha ⟨Вирь ава⟩ Virʼ ava (vir 'forest' + ava 'mother'). Her male counterpart is Vir-atya (atya 'old man, father'). One of the standard elemental Ava (forest/water/fire/wind/earth) of the strongly female-dominated Mordvin pantheon. Functional parallel of Mari Kožla-jumo and Estonian Metsaema."
+  },
+  {
+    "id": "mordvin_varmava",
+    "name": {
+      "primary": "Wind-Mother of the Mordvins",
+      "alt": ["Varma-Ava", "Varmava", "Varman azor-ava", "Варма ава"],
+      "transliterations": { "mordvin": "Варма ава", "etymology": "Erzya/Moksha varma 'wind' + ava 'woman, mother' = 'wind-mother'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Owns the winds from mythic time as the elemental Ava of the air.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker. FFC 142, Helsinki, 1952 (Varma-ava, wind-mother)." }],
+        "notes": "A perennial owner-spirit of the wind; no birth/death narrative."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "wind-and-weather",
+        "contextTag": "lifelong",
+        "term": { "value": "Варма ава", "script": "Cyrl", "rom": "Varma ava" },
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952 (Varma-ava as wind-mother)." }]
+      },
+      {
+        "sphereId": "mediation-between-living-and-dead",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha)', Oxford Guide to the Uralic Languages, 2022 (the Wind-Mother Varmava as a mediator between the living and the dead)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "command_the_winds",
+        "name": "raises, drives and stills the winds and weather",
+        "inheritability": "none",
+        "notes": "Owner-spirit of the air; invoked for fair wind and against storms.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952." }]
+      },
+      {
+        "id": "carry_word_between_living_and_dead",
+        "name": "bears messages on the wind between the living and the dead",
+        "inheritability": "none",
+        "notes": "Varmava is conceived as a go-between linking this world and the ancestors, a function tied to the wind's reach.",
+        "sources": [{ "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha)', Oxford Guide to the Uralic Languages, 2022." }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Varma-ava (Varmava) is the Mordvin wind-mother, female owner-spirit of wind and weather and a mediator between the living and the dead; an Erzya egg-cosmology also names a male wind-god Varma-pas/Varmanpaz.",
+        "citations": [
+          { "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker. FF Communications 142. Helsinki, 1952." },
+          { "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha).' The Oxford Guide to the Uralic Languages. OUP, 2022, ch. 23 (Varmava, wind-mother and mediator)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Erzya/Moksha ⟨Варма ава⟩ Varma ava (varma 'wind' + ava 'mother'). Distinct from the male wind-god Varma-pas (Varmanpaz), who in the Erzya egg-cosmology is a son of the sun-god Chipaz; the mother-figure and the god coexist in the sources and are kept separate here."
+  },
+  {
+    "id": "mordvin_tolava",
+    "name": {
+      "primary": "Fire-Mother of the Mordvins",
+      "alt": ["Tol-Ava", "Tolava", "Tolen azor-ava", "Тол ава"],
+      "transliterations": { "mordvin": "Тол ава", "etymology": "Erzya/Moksha tol 'fire' + ava 'woman, mother' = 'fire-mother'; cult-title Tolen azor-ava 'mistress-mother of fire'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Dwells in fire from mythic time as the elemental Ava of flame and the hearth.",
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology, 1927, Mordvin section (Tol-ava, fire-mother)." }],
+        "notes": "A perennial owner-spirit of fire; no birth/death narrative."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "fire-and-hearth",
+        "contextTag": "lifelong",
+        "term": { "value": "Тол ава", "script": "Cyrl", "rom": "Tol ava" },
+        "sources": [{ "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology, 1927, Mordvin section (Tol-ava as one of the elemental 'mothers', alongside the forest- and water-mothers)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "own_and_govern_fire",
+        "name": "owns the flame of hearth and sacred fire",
+        "inheritability": "none",
+        "notes": "Female owner-spirit of fire; the household and ritual flame are her domain, and offerings at the hearth fall to her.",
+        "sources": [{ "kind": "secondary", "reference": "'Mari and Mordvin Religion', Encyclopedia of Religion (Encyclopedia.com): Tol-ava 'fire-mother' among the Mordvin elemental spirits; Holmberg (Harva), Finno-Ugric Mythology, 1927." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mordvin_hearth_fire",
+        "name": "the hearth fire and ritual candle",
+        "kind": "ritual-object",
+        "role": "The household flame embodying Tol-ava; at prayers a candle was lit on the hearth-stone before a table of offerings, and at the keremet feasts the bones and remains of victims were burnt in the sacred fire.",
+        "sources": [{ "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins.' The Folk-Lore Journal 7, 1889 (candle on the hearth-stone before the offering-table; remains burnt in the sacred fire of the keremet)." }]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Tol-ava (Tolen azor-ava) is the Mordvin fire-mother, the female owner-spirit of fire and the hearth-flame, one of the standard elemental Ava (forest/water/fire).",
+        "citations": [
+          { "kind": "secondary", "reference": "Holmberg (Harva), Uno. Finno-Ugric Mythology (The Mythology of All Races, vol. IV). Boston, 1927, Mordvin sections." },
+          { "kind": "secondary", "reference": "'Mari and Mordvin Religion.' Encyclopedia of Religion (Encyclopedia.com), s.v. Mordvin nature-spirits (Vir-ava, Ved-ava, Tol-ava)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Erzya/Moksha ⟨Тол ава⟩ Tol ava (tol 'fire' + ava 'mother'). Fire was tended and tabooed in the Mordvin household; Tol-ava is its owner. Parallel to the Mari fire-spirit and to the wider Finno-Ugric hearth-mother concept."
+  },
+  {
+    "id": "mordvin_mastorava",
+    "name": {
+      "primary": "Earth-Mother of the Mordvins",
+      "alt": ["Mastor-Ava", "Mastorava", "Mastoron azor-ava", "Мастор ава"],
+      "transliterations": { "mordvin": "Мастор ава", "etymology": "Erzya/Moksha mastor 'earth, land' + ava 'woman, mother' = 'earth-mother', lit. 'earth-woman'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Owns the soil from mythic time as the elemental Ava of the earth.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, FFC 142, 1952 (Mastor-ava, earth-mother)." }],
+        "notes": "A perennial owner-spirit of the land; no birth/death narrative."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-soil",
+        "contextTag": "lifelong",
+        "term": { "value": "Мастор ава", "script": "Cyrl", "rom": "Mastor ava" },
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952; Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (Mastor-ava / earth)." }]
+      },
+      {
+        "sphereId": "harvest-and-health",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha)', Oxford Guide to the Uralic Languages, 2022 (Mastorava, guardian of the earth; grants harvest and health to tillers)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "grant_harvest_and_health",
+        "name": "gives good harvest and good health to those who till her",
+        "inheritability": "none",
+        "notes": "As owner of the soil she blesses the fields and the bodies of the cultivators; offerings were laid on the ground for her.",
+        "sources": [{ "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker, 1952; Hamari & Ajanki, Oxford Guide to the Uralic Languages, 2022." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mordvin_offering_bread",
+        "name": "the sacrificial bread, salt and beer-offering",
+        "kind": "offering",
+        "role": "Baked bread, salt and (with omelets/eggs) were laid on the ground before the sacred tree, and beer was poured into vats, at the ozks feasts that fed the earth- and field-mothers.",
+        "sources": [{ "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins.' The Folk-Lore Journal 7, 1889 (baked bread, salt, omelets laid out and beer poured into vats before the sacred oak/lime at the prayer-feast)." }]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Mastor-ava (Mastoron azor-ava) is the Mordvin earth-mother ('earth-woman'), the goddess of the soil who grants good harvests and good health to the tillers; distinct from the male earth/underworld figures Mastoron-kirdi and Mastorpaz.",
+        "citations": [
+          { "kind": "secondary", "reference": "Harva, Uno. Die religiösen Vorstellungen der mordwinischen Völker. FF Communications 142. Helsinki, 1952." },
+          { "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology.' Folklore (Tartu) 17, 2001." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Erzya/Moksha ⟨Мастор ава⟩ Mastor ava (mastor 'earth' + ava 'mother'). The title-figure of A. M. Sharonov's 1994 Erzya literary epic Mastorava. Distinct from the male earth-keeper Mastoron-kirdi and the underworld-god Mastorpaz (son of Chipaz and the grain-mother Norov-ava), which are noted in the corpus under Norov-ava. Counterpart of Mari Mlande-ava and Slavic Mat' Syra Zemlya."
+  },
+  {
+    "id": "mordvin_yurtava",
+    "name": {
+      "primary": "Homestead-Mother of the Mordvins",
+      "alt": ["Yurt-Ava", "Yurtava", "Yurt azor-ava", "Yurkhtava", "Юрт ава"],
+      "transliterations": { "mordvin": "Юрт ава", "etymology": "Erzya jurt 'homestead, foundation/site of the house' + ava 'woman, mother' = 'homestead-mother'; Moksha form Yurkhtava." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Guards the homestead from mythic time as the owner-mother of the dwelling-site.",
+        "sources": [{ "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins', Folk-Lore Journal 7, 1889 (Yurtava, guardian spirit of the dwelling)." }],
+        "notes": "A perennial household owner-spirit; no birth/death narrative."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "household-and-homestead",
+        "contextTag": "lifelong",
+        "term": { "value": "Юрт ава", "script": "Cyrl", "rom": "Jurt ava" },
+        "sources": [{ "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha)', Oxford Guide to the Uralic Languages, 2022 (Tribe/Homestead Mother Yurtava / Yurkhtava; Home Mother Kudava among the chief household deities)." }]
+      },
+      {
+        "sphereId": "dwelling-and-property",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins', Folk-Lore Journal 7, 1889 (Yurtava ozais, guardian spirit of the dwelling-room; the paired Kud-azor-ava, goddess of the house and its cattle)." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "guard_the_homestead",
+        "name": "protects the dwelling, its yard, property and cattle",
+        "inheritability": "none",
+        "notes": "Invoked in Erzya marriage and household rites ('O mother, Yurt azor-ava'); a candle was lit on the hearth-stone and a table of offerings set before it when she and the other house-spirits were prayed to.",
+        "sources": [{ "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins', Folk-Lore Journal 7, 1889." }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "mordvin_household_offering_table",
+        "name": "the hearth-stone candle and household offering-table",
+        "kind": "ritual-object",
+        "role": "At household prayers to Yurt-ava and Kud-ava a candle was burnt on the hearth-stone with a table of prepared food-offerings set before it.",
+        "sources": [{ "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins.' The Folk-Lore Journal 7, 1889 (candle on the hearth-stone, table of offerings, household prayers to Yurt azor-ava and Kud azor-ava)." }]
+      }
+    ],
+    "relations": [],
+    "sources": [
+      {
+        "claim": "Yurt-ava (Yurt azor-ava; Moksha Yurkhtava) is the Mordvin homestead-mother, guardian owner-spirit of the dwelling, yard, property and cattle, invoked alongside the Home-Mother Kud-ava in Erzya household and marriage rites.",
+        "citations": [
+          { "kind": "secondary", "reference": "Abercromby, J. 'The Beliefs and Religious Superstitions of the Mordvins.' The Folk-Lore Journal 7, 1889." },
+          { "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha).' The Oxford Guide to the Uralic Languages. OUP, 2022, ch. 23 (household deities: Kudava, Yurtava/Yurkhtava, Kardazava, Baniava)." }
+        ],
+        "weight": "medium"
+      }
+    ],
+    "notes": "Erzya ⟨Юрт ава⟩ Jurt ava (jurt 'homestead/house-site' + ava 'mother'); Moksha Yurkhtava. The household pantheon also includes Kud-ava (home-mother), Kardaz-ava (yard/barn-mother) and Ban'a-ava (sauna-mother); Yurt-ava is the owner of the homestead as a whole. The cult-title azor-ava ('master-mother') typifies the whole Mordvin spirit-owner system."
+  },
+  {
+    "id": "mordvin_chipaz",
+    "name": {
+      "primary": "Sun-God of the Erzya",
+      "alt": ["Chipaz", "Chi-pas", "Chipas", "Chiparz", "Чипаз"],
+      "transliterations": { "mordvin": "Чипаз", "etymology": "Erzya chi 'sun, day' + paz/-pas 'god' = 'sun-god'." }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Mordvin",
+    "primaryTradition": "Mordvin",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "parentIds": [],
+    "parentRoles": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Stands at the head of the Erzya 'egg' cosmogony as the sun who fathers the high gods and shapes humankind.",
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore (Tartu) 17, 2001 (Chipaz the sun-god begets Nishkepaz, Mastoron-kirdi and Varmanpaz)." }],
+        "notes": "Cosmogonic actor rather than a born-and-dying figure."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sun-and-daylight",
+        "contextTag": "lifelong",
+        "term": { "value": "Чипаз", "script": "Cyrl", "rom": "Čipaz" },
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (Chipaz, the sun-god)." }]
+      },
+      {
+        "sphereId": "creation-of-humankind",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (humankind created/molded from clay by Chipaz)." }]
+      },
+      {
+        "sphereId": "fatherhood-of-the-gods",
+        "contextTag": "lifelong",
+        "term": { "value": "", "script": "", "rom": "" },
+        "sources": [{ "kind": "secondary", "reference": "Vestnik ugrovedenija (Bulletin of Ugric Studies): 'The main concepts of Erzya mythology' — Chipaz begets Nishkepaz, the earth-god Mastoron-kirdi and the wind-god Varmanpaz." }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "beget_the_high_gods",
+        "name": "fathers the supreme sky-god and the earth- and wind-gods",
+        "inheritability": "partial",
+        "notes": "In the Erzya egg-cosmology the sun Chipaz begets Nishkepaz (the supreme god, = Ineshkipaz), the earth-god Mastoron-kirdi, and the wind-god Varmanpaz; with the grain-mother Norov-ava he is also father of the underworld-god Mastorpaz.",
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001; Vestnik ugrovedenija, 'The main concepts of Erzya mythology'." }]
+      },
+      {
+        "id": "mold_humankind_from_clay",
+        "name": "shapes the first human beings from clay",
+        "inheritability": "none",
+        "notes": "Chipaz molds humankind from clay (in a variant, from soil), following the creation of earth, sun and moon.",
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (creation of humankind by Chipaz)." }]
+      }
+    ],
+    "materialCulture": [],
+    "relations": [
+      {
+        "kind": "child",
+        "personId": "mordvin_ineshkipaz",
+        "sources": [{ "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology', Folklore 17, 2001 (Nishkepaz/Ineshkipaz born of the sun-god Chipaz)." }],
+        "notes": "The supreme sky-god Ineshkipaz (Nishkepaz) is the son of Chipaz in the Erzya egg-cosmology; the existing corpus already notes Ineshkipaz as 'born of the sun-god Chipaz'."
+      },
+      {
+        "kind": "lover",
+        "personId": "mordvin_norovava",
+        "sources": [{ "kind": "secondary", "reference": "'Mordvins', Erzya mythology overviews after Sarv 2001: from the union of Chipaz and the harvest-mother Norov-ava is born the underworld-god Mastorpaz." }],
+        "notes": "Procreative union (not a marriage in the sources): Chipaz and Norov-ava are jointly parents of the underworld-god Mastorpaz. RECIPROCAL-NEEDED on mordvin_norovava."
+      }
+    ],
+    "sources": [
+      {
+        "claim": "Chipaz (Chi-pas) is the Erzya-Mordvin sun-god: in the egg-cosmology he fathers Nishkepaz (the supreme god Ineshkipaz), the earth-god Mastoron-kirdi and the wind-god Varmanpaz, with the grain-mother Norov-ava begets the underworld-god Mastorpaz, and molds humankind from clay.",
+        "citations": [
+          { "kind": "secondary", "reference": "Sarv, Mari. 'Some Aspects of Mordvin Mythology.' Folklore: Electronic Journal of Folklore 17. Tartu, 2001." },
+          { "kind": "secondary", "reference": "Hamari, Arja, & Rigina Ajanki. 'Mordvin (Erzya and Moksha).' The Oxford Guide to the Uralic Languages. OUP, 2022, ch. 23." }
+        ],
+        "weight": "high"
+      }
+    ],
+    "notes": "Erzya ⟨Чипаз⟩ Čipaz (chi 'sun/day' + -paz '-god'). Moksha counterpart Shi (shi 'sun'); the supreme god is Shkai/Viarde-Shkai there. NOTE the rivalry of two cosmologies: in the Erzya egg-myth (Sarv 2001) Chipaz is the sun and the supreme Nishke is his son, whereas Melnikov-Pechersky's 19th-c. great-goddess scheme makes Ange-Patyai mother of all and Nishke-pas himself the sun/sky/fire god. This registry follows the former, as the existing Ineshkipaz entry already does."
+  }
+]
+```
+
+SOLITARY: mordvin_virava — no attested divine parentage or kin; the verifiable scholarship (Holmberg 1927; Harva 1952; Hamari & Ajanki 2022) treats the elemental forest-mother as an independent domain owner-spirit (azor-ava), not as a child of Ange-Patyai or Chipaz. Paired conceptually with a male Vir-atya, but no genealogical tie is recorded.
+SOLITARY: mordvin_varmava — no attested divine parentage or kin; the wind-mother is an independent owner-spirit. (The Erzya egg-cosmology's filiation runs to the distinct male wind-god Varmanpaz, son of Chipaz, not to Varma-ava.) Sources: Harva 1952; Hamari & Ajanki 2022.
+SOLITARY: mordvin_tolava — no attested divine parentage or kin; the fire-mother is an independent elemental owner-spirit. Sources: Holmberg 1927; 'Mari and Mordvin Religion', Encyclopedia of Religion.
+SOLITARY: mordvin_mastorava — no attested divine parentage or kin for the female earth-mother; she is an independent owner-spirit, distinct from the male Mastoron-kirdi/Mastorpaz who do carry filiation to Chipaz. Sources: Harva 1952; Sarv 2001.
+SOLITARY: mordvin_yurtava — no attested divine parentage or kin; the homestead-mother is an independent household owner-spirit. Sources: Abercromby 1889; Hamari & Ajanki 2022.
+
+RECIPROCAL-NEEDED: mordvin_norovava lover mordvin_chipaz  (add reciprocal 'lover' relation to existing figure mordvin_norovava — Chipaz and Norov-ava jointly parent the underworld-god Mastorpaz)
+RECIPROCAL-NEEDED: mordvin_ineshkipaz parent mordvin_chipaz  (non-symmetric child/parent tie; add a 'parent' relation pointing to mordvin_chipaz on the existing figure mordvin_ineshkipaz so the genealogy is navigable both ways — corpus already notes Ineshkipaz 'born of the sun-god Chipaz')
