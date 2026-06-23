@@ -64692,7 +64692,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class direction-Being (classed as deity), one of the vaʼirgьt. Bogoras records Dawn, Mid-day, Zenith and the Pole-Star as the chief 'Beings' (vaʼirgьt) to whom sacrifices go; Dawn is pre-eminent. The romanization Tneskyn follows Bogoras's Chukchi direction-terms for the sunrise quarter."
+  "notes": "Spirit-class direction-Being (classed as deity), one of the vaʼirgьt. Bogoras records Dawn, Mid-day, Zenith and the Pole-Star as the chief 'Beings' (vaʼirgьt) to whom sacrifices go; Dawn is pre-eminent. The romanization Tneskyn follows Bogoras's Chukchi direction-terms for the sunrise quarter.",
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "chukchi_midday",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303-304"
+     }
+    ],
+    "notes": "Dawn and Mid-day are co-named direction-Beings receiving the principal Chukchi sacrifices."
+   }
+  ]
  },
  {
   "id": "chukchi_kurkil",
@@ -64839,6 +64852,141 @@ const NEW_FIGURES = [
   "notes": "Culture-hero / transformer tier (classed as demigod). The Raven creator-trickster (Chukchi Kurkil; Koryak Quikinnaqu/Kutkinnaku; Itelmen/Kamchadal Kutkh) is the central Beringian demiurge. Frequently identified with or acting for the Creator Tenanto'mwan."
  },
  {
+  "id": "chukchi_midday",
+  "name": {
+   "primary": "Mid-day",
+   "alt": [
+    "the Mid-day Being",
+    "Mid-day Dawn",
+    "Noon"
+   ],
+   "transliterations": {
+    "chukchi": "kanoirgin (of the middle-crown)",
+    "etymology": "the Being of the south/noon quarter; identified with the 'middle-crown' (ginon-kana'irgin) — Bogoras, The Chukchee (1907)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chukchi",
+  "primaryTradition": "Chukchi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "named-among-the-benevolent-beings",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII), 1907, pp. 303–304"
+     }
+    ],
+    "notes": "Bogoras lists Mid-day among the 'benevolent beings sacrificed to' (taaronyo vairgit) of the Chukchi directions; with Dawn and the Zenith it is one of the three quarters that receive the principal sacrifices."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "noon-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304, on the directions of the Chukchi compass as personified Beings"
+     }
+    ]
+   },
+   {
+    "sphereId": "benevolent-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "M. A. Czaplicka, Aboriginal Siberia (Oxford, 1914), Pt III ch. XIII, reproducing Bogoras: Mid-day among the benevolent vairgit to whom sacrifice is brought"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-the-noon-sacrifice",
+    "name": "receives the people's sacrifices at the noon (Mid-day) quarter",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304"
+     }
+    ],
+    "notes": "With the Dawn and the Zenith, Mid-day is one of the directions to which the chief Chukchi sacrifices are addressed."
+   },
+   {
+    "id": "share-the-middle-crown",
+    "name": "is identified with the 'middle-crown' at the height of the sky",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: 'Mid-day, the Sun, and the Polar Star are often identified with the middle-crown' (ginon-kana'irgin)"
+     }
+    ],
+    "notes": "Mid-day, the Sun and the Pole-Star are each at times equated with the 'middle-crown' (the zenith-being), without losing their separate standing as Beings of their own quarters."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "chukchi_zenith",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304"
+     }
+    ],
+    "notes": "Reciprocal of chukchi_zenith.companion — Mid-day and the Zenith are co-named Beings of the upper directions and joint recipients of the chief sacrifices; Mid-day is one of those 'identified with' the zenith's middle-crown."
+   },
+   {
+    "kind": "companion",
+    "personId": "chukchi_dawn",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304: Dawn, Zenith and Mid-day named together as the directions receiving the principal sacrifices"
+     }
+    ],
+    "notes": "Mid-day stands beside the Dawn among the benevolent direction-Beings to whom the principal Chukchi sacrifices are made."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Waldemar Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII / Memoirs AMNH XI), 1907, pp. 303–304"
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. A. Czaplicka, Aboriginal Siberia (Oxford, 1914), Part III 'Religion,' ch. XIII"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ülo Siimets, 'The Sun, the Moon and Firmament in Chukchi Mythology,' Folklore 32 (2006): 129–156"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mid-day is one of the named Chukchi directional Beings (vaʼirgьt). Bogoras records the 'benevolent beings sacrificed to' (taaronyo vairgit) as inhabiting the twenty-two directions of the compass, with Dawn, the Zenith and Mid-day receiving the principal sacrifices; Mid-day, the Sun and the Pole-Star are 'often identified with the middle-crown' (ginon-kana'irgin), the being of the zenith. It is treated, like the other directional Beings, as a benevolent superior Being rather than a sharply biographied individual, and is classed here as a deity with no attested divine parent."
+ },
+ {
   "id": "chukchi_pole_star",
   "name": {
    "primary": "Nail-Star",
@@ -64943,7 +65091,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class celestial Being (classed as deity), one of the vaʼirgьt (sacred Beings). Bogoras glosses the Pole-Star as the 'Nail-Star' / 'motionless star'; the romanized native term Unpener ('the driven-in one', i.e. nail) follows Chukchi star-names recorded by Bogoras. The four/five directions and Dawn, Mid-day and Zenith are likewise treated as Beings."
+  "notes": "Spirit-class celestial Being (classed as deity), one of the vaʼirgьt (sacred Beings). Bogoras glosses the Pole-Star as the 'Nail-Star' / 'motionless star'; the romanized native term Unpener ('the driven-in one', i.e. nail) follows Chukchi star-names recorded by Bogoras. The four/five directions and Dawn, Mid-day and Zenith are likewise treated as Beings.",
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "chukchi_zenith",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303"
+     }
+    ],
+    "notes": "The Nail-Star (Pole-Star) is 'often identified with the middle-crown' of the Zenith-being."
+   }
+  ]
  },
  {
   "id": "chukchi_tenanto_mwan",
@@ -65056,6 +65217,142 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Spirit-class creator (classed as deity). Bogoras records the name as Tenanto'mwan, 'the one who induces/creates being'; in many tales the Creator's work is performed by Raven (Kurkil), so the two overlap. Cyrillic Тэнантомгын reflects the later Russian-orthography rendering of the Chukchi name."
+ },
+ {
+  "id": "chukchi_zenith",
+  "name": {
+   "primary": "Zenith",
+   "alt": [
+    "Being-a-Crown",
+    "Middle-Crown",
+    "the Zenith Being",
+    "On-High"
+   ],
+   "transliterations": {
+    "chukchi": "kana'irgin (ginon-kana'irgin, 'middle-crown')",
+    "etymology": "'being-a-crown'; chief of the benevolent Beings, residing in the zenith — Bogoras, The Chukchee (1907), p. 303"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chukchi",
+  "primaryTradition": "Chukchi",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "named-chief-of-the-benevolent-beings",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII), 1907, p. 303"
+     }
+    ],
+    "notes": "Bogoras names the being residing in the zenith — 'being-a-crown' (kana'irgin), or 'middle-crown' (ginon-kana'irgin) — as the chief of the benevolent beings sacrificed to (taaronyo vairgit)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-zenith",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303, on the being residing in the zenith as 'being-a-crown' (kana'irgin)"
+     }
+    ]
+   },
+   {
+    "sphereId": "supreme-being",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: 'the chief of these beings is the one residing in the zenith'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "chief-of-the-benevolent-beings",
+    "name": "stands as chief over the benevolent Beings sacrificed to",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303"
+     }
+    ],
+    "notes": "Of the taaronyo vairgit inhabiting the twenty-two directions, the zenith-being is named the chief."
+   },
+   {
+    "id": "hold-the-middle-crown",
+    "name": "occupies the 'middle-crown' at the very top of the sky",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: 'being-a-crown' (kana'irgin) / 'middle-crown' (ginon-kana'irgin)"
+     }
+    ],
+    "notes": "Sits at the apex of the sky as the 'middle-crown'; Mid-day, the Sun and the Pole-Star are each at times identified with this crown."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "chukchi_midday",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), pp. 303–304"
+     }
+    ],
+    "notes": "Reciprocal of chukchi_midday.companion — the Zenith and Mid-day are co-named Beings of the upper directions; Mid-day is one of those 'identified with' the zenith's middle-crown."
+   },
+   {
+    "kind": "companion",
+    "personId": "chukchi_pole_star",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bogoras, The Chukchee, Part II 'Religion' (1907), p. 303: the Polar Star among those 'identified with the middle-crown'"
+     }
+    ],
+    "notes": "The Pole-Star (Nail-Star) is, with Mid-day and the Sun, 'often identified with' the zenith's middle-crown, while remaining a distinct Being of the celestial axis."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Waldemar Bogoras, The Chukchee, Part II 'Religion' (Jesup North Pacific Expedition VII / Memoirs AMNH XI), 1907, p. 303"
+     },
+     {
+      "kind": "secondary",
+      "reference": "M. A. Czaplicka, Aboriginal Siberia (Oxford, 1914), Part III 'Religion,' ch. XIII"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Ülo Siimets, 'The Sun, the Moon and Firmament in Chukchi Mythology,' Folklore 32 (2006): 129–156"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Zenith-being is, in Bogoras's words, 'the chief' of the benevolent beings sacrificed to (taaronyo vairgit). The Chukchi call it 'being-a-crown' (kana'irgin) or 'middle-crown' (ginon-kana'irgin); it resides at the apex of the sky, and Mid-day, the Sun and the Pole-Star are each 'often identified with the middle-crown' without being reduced to it. Distinct from the Creator (Tenanto'mwan), it heads the spatial system of directional Beings; it is classed here as a deity with no attested divine parent."
  },
  {
   "id": "chuukese_anulap",
@@ -109683,6 +109980,203 @@ const NEW_FIGURES = [
   "notes": "The warm-south bird-mother; classed 'deity'. Polar opposite of cold-north Hosedem in Ket cosmic geography. English 'Mother of Heat' leads, native Tomam in term."
  },
  {
+  "id": "khanty_kaltes_ekwa",
+  "name": {
+   "primary": "Kaltes",
+   "alt": [
+    "Kaltes-ekwa",
+    "Kaltaś-aŋki",
+    "Kattaś-imi",
+    "Kaltaś"
+   ],
+   "transliterations": {
+    "kca": "Калтащ анки",
+    "rom": "Kaltaś aŋki",
+    "mns": "Калтащ-эква",
+    "etymology": "Khanty Kaltaś / Kaltaś-aŋki ('Kaltaś the mother', aŋki 'mother'), also Kattaś-imi ('the Kattaś woman', imi 'woman, old woman'); Mansi Kaltaś-ekwa (ekwa 'woman'). The name is connected by Ob-Ugric tradition with a verb of 'waking / giving birth / bringing forth', i.e. the birth-giving mother (Karjalainen, Die Religion der Jugra-Völker; Kulemzin et al., Khanty Mythology, 2006)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Khanty",
+  "primaryTradition": "Khanty",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "consort-of-the-sky-father-in-heaven",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Uno Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (The Mythology of All Races IV), 1927, Ob-Ugric chapters on Kaltes"
+     }
+    ],
+    "notes": "Dwells in heaven as the wife of the sky-father Num-Torum; in variants she had herself been a ruler of the heavens before him."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "cast-down-to-earth-and-bears-the-world-watcher",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "V. Kulemzin, N. Lukina, T. Moldanov, T. Moldanova, Khanty Mythology (Encyclopaedia of Uralic Mythologies 2), 2006, on Kaltaś's expulsion and motherhood"
+     }
+    ],
+    "notes": "Defeated by / cast down from heaven by Num-Torum (in one Ob-Ugric variant after an affair with the underworld lord Kul-otyr), she descends to the middle world, where she bears the World-Watching Man and becomes the giver of birth and fate to mankind."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Калтащ анки",
+     "script": "Cyrl",
+     "rom": "Kaltaś aŋki"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006): the birth-giving mother invoked by Khanty women in childbirth"
+     }
+    ]
+   },
+   {
+    "sphereId": "fate",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006); Holmberg [Harva] (1927): she allots a newborn's life-span and fate"
+     }
+    ]
+   },
+   {
+    "sphereId": "dawn",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker (FF Communications), 1921–1927, on Kaltes as a dawn/morning-light goddess"
+     }
+    ]
+   },
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927), on Kaltes's lunar association"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-birth-and-allot-fate",
+    "name": "grants children and fixes each newborn's lifespan",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006); Holmberg [Harva] (1927)"
+     }
+    ],
+    "notes": "The mother-goddess who bestows children on women and, when a child is born, allots its years and fate; the chief female deity invoked at childbirth."
+   },
+   {
+    "id": "take-the-hare-or-bird-form",
+    "name": "appears as a hare or as a bird-woman",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006), on Kaltaś's shape-shifting (hare; bird-woman imagery)"
+     }
+    ],
+    "notes": "A shape-shifter whose manifestations include the hare and bird-woman forms; the birch is among her sacred attributes."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "khanty_num_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927); Kulemzin et al., Khanty Mythology (2006)"
+     }
+    ],
+    "notes": "Wife of the sky-father Num-Torum (in variants the heavens' former ruler), cast down by him to the earth."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "khanty_mir_susne_khum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006); Holmberg [Harva] (1927): mother of the World-Surveying Man"
+     }
+    ],
+    "notes": "Mother of the World-Watching Man, whom she bears after descending from heaven."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "khanty_postajankt_iki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): the sons of Num-Torum are the children of his wife Kaltes"
+     }
+    ],
+    "notes": "Mother also of the other sons of Num-Torum, including the Fast/Golden Old Man."
+   },
+   {
+    "kind": "lover",
+    "personId": "khanty_kul_otyr",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006): in one Ob-Ugric variant her expulsion from heaven follows an affair with the underworld lord Kul-otyr"
+     }
+    ],
+    "notes": "In one variant of the expulsion myth her fall from heaven is caused by an illicit union with Kul-otyr, master of the lower world."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kaltes (Khanty Kaltaś-aŋki / Kattaś-imi; Mansi Kaltaś-ekwa) is the Ob-Ugric mother- and birth-goddess, wife of the sky-father Num-Torum and mother of the World-Watching Man, who was cast down from heaven to the earth and there gives children, dawn, and fate to mankind; she is a shape-shifter manifesting as a hare.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker (FF Communications 41/44/63), 1921–1927"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Uno Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (The Mythology of All Races IV), 1927"
+     },
+     {
+      "kind": "secondary",
+      "reference": "V. Kulemzin, N. Lukina, T. Moldanov, T. Moldanova, Khanty Mythology (Encyclopaedia of Uralic Mythologies 2), 2006"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The Ob-Ugric mother- and birth-goddess, classed as a deity. Khanty Kaltaś-aŋki ('Kaltaś the mother') and Kattaś-imi; the corpus also carries the Mansi form (mansi_kaltes_ekwa) per the tradition split. Wife of Num-Torum and, in some variants, the heavens' former ruler whom he defeats and casts down; on earth she becomes the giver of children and of each newborn's fate (the goddess Khanty women invoke at childbirth) and is linked with dawn, the moon and the hare. Mother of the World-Watching Man and of the other sons of Num-Torum. Documented for the Khanty by Karjalainen and in the modern Encyclopaedia of Uralic Mythologies."
+ },
+ {
   "id": "khanty_kul_otyr",
   "name": {
    "primary": "Lord of the Underworld",
@@ -109793,7 +110287,227 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class underworld lord (classed as deity). kul/khul = evil spirit/devil; otyr = lord/hero. Authored under the Khanty label with the Mansi form Kul-Otyr as transliteration; counterpart of the sky-father Num-Torum in the upper/lower-world dualism."
+  "notes": "Spirit-class underworld lord (classed as deity). kul/khul = evil spirit/devil; otyr = lord/hero. Authored under the Khanty label with the Mansi form Kul-Otyr as transliteration; counterpart of the sky-father Num-Torum in the upper/lower-world dualism.",
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "khanty_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006)"
+     }
+    ],
+    "notes": "In one Ob-Ugric variant Kaltes's fall from heaven follows an illicit union with Kul-otyr, lord of the lower world."
+   }
+  ]
+ },
+ {
+  "id": "khanty_mir_susne_khum",
+  "name": {
+   "primary": "World-Watching Man",
+   "alt": [
+    "Mir-susne-khum",
+    "World-Surveying Man",
+    "Mĭr šawijti xŭ",
+    "Mir-savne-khum"
+   ],
+   "transliterations": {
+    "kca": "Мир савитты хо",
+    "rom": "Mĭr šawijti xŭ",
+    "mns": "Мир-суснэ-хум",
+    "etymology": "Khanty Mĭr šawijti xŭ / Mansi mir-susne-xum, a transparent compound mir 'world, people' + the participle šawijti / susne 'watching, surveying, looking over' + xŭ / xum 'man', i.e. 'the man who watches over the world / surveys mankind' (Karjalainen, Die Religion der Jugra-Völker II, 1922; Kulemzin et al., Khanty Mythology, 2006)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Khanty",
+  "primaryTradition": "Khanty",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "khanty_num_torum"
+  ],
+  "parentRoles": {
+   "khanty_num_torum": "father"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "born-youngest-son-of-num-torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker II (FF Communications 44), 1922, on Numi-Torum's sons and the World-Surveyor"
+     }
+    ],
+    "notes": "Born as the youngest (in many tellings the seventh) son of the sky-father Num-Torum and the mother-goddess Kaltes; in Ob-Ugric tradition he is sent down to live near mankind and watch over the middle world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "set-to-ride-the-circuit-of-the-world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Uno Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (The Mythology of All Races IV), 1927, Ob-Ugric chapters on the heavenly rider"
+     }
+    ],
+    "notes": "Appointed the celestial horseman who crosses the sky on a winged horse to oversee humanity; called 'the man who inspects the earth, the man who inspects the waters', his ceaseless circuit sustaining order and the circulation of life."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "watching-over-the-world",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Мир савитты хо",
+     "script": "Cyrl",
+     "rom": "Mĭr šawijti xŭ"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "V. Kulemzin, N. Lukina, T. Moldanov, T. Moldanova, Khanty Mythology (Encyclopaedia of Uralic Mythologies 2), 2006, s.v. the World-Surveying Man"
+     }
+    ]
+   },
+   {
+    "sphereId": "intercession",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): the youngest son mediates between the distant sky-father and human beings, carrying their word upward"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-fortune",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927), on the radiant rider as giver of fertility, prosperity and protection"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ride-the-circuit-of-the-world",
+    "name": "rides daily around the world to oversee mankind",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927), Ob-Ugric heavenly-rider chapter"
+     }
+    ],
+    "notes": "The luminous horseman who crosses the sky surveying humanity and keeping the cosmic balance; sometimes identified with the sun."
+   },
+   {
+    "id": "mediate-between-gods-and-men",
+    "name": "carries human prayers up and the sky-father's word down",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922); Kulemzin et al., Khanty Mythology (2006)"
+     }
+    ],
+    "notes": "Because Num-Torum dwells in the highest heaven, remote from people, his youngest son is the intermediary actually invoked and consulted on his behalf."
+   },
+   {
+    "id": "shape-shift-to-travel-the-sky",
+    "name": "takes bird and other shapes to move between the worlds",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bernát Munkácsi, Vogul Folklore Collection (Vogul Népköltési Gyűjtemény), 1892–1921, on the World-Surveyor's transformations (Mansi parallel)"
+     }
+    ],
+    "notes": "Associated with migratory water-birds (goose, crane) and able to change form to pass between sky, earth and the underworld."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "winged-sky-horse",
+    "name": "winged horse",
+    "kind": "mount",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927); Munkácsi, Vogul Folklore Collection (1892–1921) on the winged/iron eight-winged horse"
+     }
+    ],
+    "notes": "The horse on which he rides the circuit of the sky; folklore describes it as fiery, golden, or an iron horse with eight wings given to him after his transformation."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "khanty_num_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922); Kulemzin et al., Khanty Mythology (2006)"
+     }
+    ],
+    "notes": "Youngest (seventh) son of the sky-father, sent down to watch over mankind."
+   },
+   {
+    "kind": "mother",
+    "personId": "khanty_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulemzin et al., Khanty Mythology (2006); Holmberg [Harva] (1927): Kaltes is the mother of the World-Surveyor"
+     }
+    ],
+    "notes": "Born of the mother-goddess Kaltes, who bore him after being cast down from heaven."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_postajankt_iki",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): both are sons of Num-Torum among the seven brothers"
+     }
+    ],
+    "notes": "Brother among the seven sons of Num-Torum; Postajankt-iki is likewise reckoned a (in some tellings the) youngest son and a heavenly rider."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mir-susne-khum, the 'World-Watching / World-Surveying Man' (Khanty Mĭr šawijti xŭ), is the youngest son of the sky-father Num-Torum and the goddess Kaltes, a heavenly horseman on a winged horse who oversees mankind and mediates between gods and humans; he was one of the best-liked gods among both the Khanty and the Mansi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker II (FF Communications 44), 1922"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Uno Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (The Mythology of All Races IV), 1927"
+     },
+     {
+      "kind": "secondary",
+      "reference": "V. Kulemzin, N. Lukina, T. Moldanov, T. Moldanova, Khanty Mythology (Encyclopaedia of Uralic Mythologies 2), 2006"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "The central Ob-Ugric intermediary, classed here as a deity (a divine son and mediator-hero). Khanty Mĭr šawijti xŭ ('the man who watches over the world'), Mansi mir-susne-xum; the corpus also carries the Mansi form (mansi_mir_susne_khum) per the tradition split. Youngest/seventh son of Num-Torum by Kaltes, he rides a winged horse on a daily circuit of the sky, watching humanity, granting fertility and fortune, and carrying prayers up to and the sky-father's word down from the remote upper heaven. Documented for the Khanty by Karjalainen and in the modern Encyclopaedia of Uralic Mythologies, with rich Mansi (Vogul) parallels in Munkácsi."
  },
  {
   "id": "khanty_num_torum",
@@ -109938,7 +110652,177 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Spirit-class sky-god (classed as deity). Native compound: num/numi 'upper, high' + torum/torem 'sky, god'. Authored under the Khanty label (Num Turem Aśi, 'Upper Sky Father'); the Mansi form Numi-Torum is given as a transliteration and the Mansi figures (Mir-susne-khum, Kaltes-Ekwa) are authored separately under the Mansi label per the tradition split."
+  "notes": "Spirit-class sky-god (classed as deity). Native compound: num/numi 'upper, high' + torum/torem 'sky, god'. Authored under the Khanty label (Num Turem Aśi, 'Upper Sky Father'); the Mansi form Numi-Torum is given as a transliteration and the Mansi figures (Mir-susne-khum, Kaltes-Ekwa) are authored separately under the Mansi label per the tradition split.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "khanty_kaltes_ekwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (1927); Kulemzin et al., Khanty Mythology (2006)"
+     }
+    ],
+    "notes": "Husband of the mother-goddess Kaltes, whom he casts down from heaven; father by her of the World-Watching Man."
+   }
+  ]
+ },
+ {
+  "id": "khanty_postajankt_iki",
+  "name": {
+   "primary": "Golden Old Man",
+   "alt": [
+    "Postajankt-iki",
+    "Sorni-iki",
+    "Fast Old Man",
+    "Sorńi-iki"
+   ],
+   "transliterations": {
+    "kca": "Сорни ики",
+    "rom": "Sorńi iki",
+    "mns": "Сорни-ойка",
+    "etymology": "Two Khanty/Ob-Ugric by-names of one figure: Postajankt-iki '(the) fast old man' and Sorńi-iki 'the golden old man' (sorńi 'gold' + iki 'old man, lord'); a third, evasive name (Õi-šlapt-laχ-χliotõ-iki) was used at offerings to keep him from being startled (Karjalainen, Die Religion der Jugra-Völker II, 1922)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Khanty",
+  "primaryTradition": "Khanty",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "khanty_num_torum"
+  ],
+  "parentRoles": {
+   "khanty_num_torum": "father"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "born-a-son-of-num-torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker II (FF Communications 44), 1922, on Postajankt-iki / Sorni-iki, son of Num-Torum"
+     }
+    ],
+    "notes": "Born among the seven sons of the sky-father Num-Torum; reckoned in Karjalainen's record as a (in some tellings the) youngest son, the 'fast' or 'golden' old man who rides a white horse."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "horsemanship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Сорни ики",
+     "script": "Cyrl",
+     "rom": "Sorńi iki"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): the 'golden old man' rides upon a white horse"
+     }
+    ]
+   },
+   {
+    "sphereId": "fortune",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): a son of Num-Torum invoked with offerings, whose mood brings weal or, if wrongly summoned, woe"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "ride-the-white-horse",
+    "name": "rides upon a white horse",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922)"
+     }
+    ],
+    "notes": "The 'golden old man' is pictured mounted on a white horse, a celestial rider like his brother the World-Watcher."
+   },
+   {
+    "id": "startle-at-his-own-name",
+    "name": "is startled into the air when his name is spoken carelessly",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): he is easily startled at his name, so an evasive by-name is used at offerings; calling him without cause brings woe"
+     }
+    ],
+    "notes": "So sensitive to his own name that worshippers use an evasive by-name at offerings; to call him for no reason is dangerous and draws misfortune."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "white-horse",
+    "name": "white horse",
+    "kind": "mount",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): Sorni-iki rides on the back of a white horse"
+     }
+    ],
+    "notes": "His mount, the white horse on which the 'golden old man' rides."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "khanty_num_torum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922)"
+     }
+    ],
+    "notes": "A son of the sky-father Num-Torum, among the seven brothers."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_mir_susne_khum",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Karjalainen, Die Religion der Jugra-Völker II (1922): both reckoned sons of Num-Torum"
+     }
+    ],
+    "notes": "Brother of the World-Watching Man among the sons of Num-Torum; both are heavenly riders, one on a winged, the other on a white horse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Postajankt-iki ('the fast old man'), also Sorni-iki ('the golden old man'), is in Ob-Ugric (Khanty/Mansi) religion a son of the sky-father Num-Torum who rides a white horse, invoked with offerings under an evasive by-name because he is startled by his own name and dangerous to call without cause.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "K. F. Karjalainen, Die Religion der Jugra-Völker II (FF Communications 44), 1922"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Uno Holmberg [Harva], Finno-Ugric [and] Siberian Mythology (The Mythology of All Races IV), 1927"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "A son of Num-Torum, classed as a deity, known by the by-names Postajankt-iki ('the fast old man') and Sorńi-iki ('the golden old man') and at offerings by a third, evasive name. He rides a white horse and is reckoned in Karjalainen's record a (in some tellings the) youngest son — the figure distinct from his brother the World-Watching Man, with whom the 'youngest son' epithet is shared across variant tellings. Worshippers feared startling him: spoken carelessly, his name made him leap up, and to summon him without cause brought woe. Documented for the Ob-Ugrians by Karjalainen."
  },
  {
   "id": "khanty_yli_torum",
