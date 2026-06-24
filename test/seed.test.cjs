@@ -301,11 +301,14 @@ test('cross-tradition equivalence network parity floor (wave-7c)', () => {
   assert.ok(directed >= 450, `cross-tradition refs fell to ${directed} (floor 450 ≈ 225 pairs)`);
 });
 
-test('documented authored-tier stances are exactly the reviewed ten', () => {
+test('documented authored-tier stances are exactly the reviewed eleven', () => {
+  // The eleventh is greek_dardanus: son of Zeus by the numen Electra (so he
+  // computes 'deity'), but authored 'demigod' as the never-worshipped
+  // founder-king of the Dardanians — a deliberate mythographic stance, not drift.
   const line = logs.info.find((m) => /authored-tier stances/.test(m)) || '';
   const m = line.match(/(\d+) documented authored-tier stances/);
   assert.ok(m, 'authored-stances info line missing');
-  assert.strictEqual(parseInt(m[1], 10), 10, `expected the 10 reviewed stances, got ${m[1]}`);
+  assert.strictEqual(parseInt(m[1], 10), 11, `expected the 11 reviewed stances, got ${m[1]}`);
 });
 
 test('symmetric relations are fully reciprocal and duplicate entities stay merged', () => {
