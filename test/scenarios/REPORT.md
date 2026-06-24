@@ -16,7 +16,7 @@ Quality bar: every scenario PASS. **Result: 34/34 passed.**
 | S09 | Divinity computation | Heracles shows the 9⁄16 divinity descent breakdown | ✅ PASS | 9⁄16 demigod by descent |
 | S10 | Power scope-tags | faculties render their derived scope-tag chips | ✅ PASS | scope chip: "weather" |
 | S11 | Inheritance | a Heraclid surfaces inheritable-from-ancestry power candidates | ✅ PASS | inherited candidates labelled not-attested |
-| S12 | Graph view | the default graph mounts a populated node-link diagram | ✅ PASS | 728 graph nodes |
+| S12 | Graph view | the default graph mounts a populated node-link diagram | ✅ PASS | 764 graph nodes |
 | S13 | Graph focus | deep-linking #/graph/<id> focuses that figure | ✅ PASS | focused "Heracles" with neighbor list |
 | S14 | Graph path-finding | path mode finds a shortest relation path between two figures | ✅ PASS | path found: "Path · 1 hopclearZeusDeity · Greek↓parentHeraclesDemigod · G" |
 | S15 | Atlas view | the atlas mounts all mapped territories | ✅ PASS | 331 paths, 238 traditions |

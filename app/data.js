@@ -16910,6 +16910,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'spouse', personId: 'mixtec_lady_1_deer', era: 'cosmogonic', sources: [{ kind: 'primary', reference: 'Codex Vindobonensis' }] },
+        { kind: 'interpretatio', personId: 'aztec_ometeotl', sources: [{ kind: 'secondary', reference: 'Alfonso Caso, Reyes y reinos de la Mixteca (1977-79); Codex Vindobonensis Mexicanus I; Nicholson (1971)' }], notes: 'Lord 1 Deer with Lady 1 Deer is the primordial dual creator-couple of the Apoala emergence, the Mixtec expression of the male-female creator principle the Aztecs personified as Ometeotl.' },
       ],
       iconography: {
         attributes: [
@@ -16958,6 +16959,7 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'spouse', personId: 'mixtec_lord_1_deer', era: 'cosmogonic' },
+        { kind: 'interpretatio', personId: 'aztec_ometeotl', sources: [{ kind: 'secondary', reference: 'Alfonso Caso, Reyes y reinos de la Mixteca (1977-79); Codex Vindobonensis Mexicanus I; Nicholson (1971)' }], notes: 'Lady 1 Deer is the female half of the Mixtec primordial creator-couple, together with Lord 1 Deer corresponding to the dual Aztec creator Ometeotl/Omecihuatl.' },
       ],
       iconography: {
         attributes: [
@@ -17012,6 +17014,8 @@ const buildPeopleSeed = () => {
       ],
       relations: [
         { kind: 'sibling', externalRef: { name: 'Other second-generation Apoala-emergent figures (Lord 7 Flower, Lord 4 Snake, etc.) born to Lord 1 Deer and Lady 1 Deer; collectively the founder-pantheon of the Mixteca-Alta', tradition: 'Mixtec' }, era: 'cosmogonic' },
+        { kind: 'interpretatio', personId: 'aztec_quetzalcoatl', sources: [{ kind: 'secondary', reference: 'Alfonso Caso, Reyes y reinos de la Mixteca (1977-79); Codex Vindobonensis Mexicanus I (Yuta Tnoho); Miller & Taube (1993)' }], notes: 'Mixtec Lord 9 Wind bears Quetzalcoatl\'s own calendrical name \'9 Wind\', descends from the sky as the plumed-serpent wind-and-creation deity, and is the Mixtec form of the feathered-serpent/Ehécatl complex.' },
+        { kind: 'interpretatio', personId: 'maya_kukulkan', sources: [{ kind: 'secondary', reference: 'Miller & Taube (1993); Elizabeth Boone, Stories in Red and Black (2000)' }], notes: 'As the Mixtec feathered-serpent/wind deity, Lord 9 Wind is the Oaxacan counterpart of the Maya plumed serpent Kukulkan within the shared Postclassic feathered-serpent cult.' },
       ],
       iconography: {
         attributes: [
@@ -47127,7 +47131,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Maize deity of sustenance; son of Xochiquetzal (or Tlazolteotl) in the codices."
+  "notes": "Maize deity of sustenance; son of Xochiquetzal (or Tlazolteotl) in the codices.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "zapotec_pitao_cozobi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fray Juan de Cordova, Vocabulario en lengua capoteca (1578); Marcus & Flannery, Zapotec Civilization (1996); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Pitao Cozobi, the Zapotec god of maize and abundant sustenance, is the standard Oaxacan equivalent of the Central-Mexican maize lord Centeotl."
+   }
+  ]
  },
  {
   "id": "aztec_chalchiuhtlicue",
@@ -47683,7 +47700,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Mexica tutelary sun-and-war god, born at Coatepec to defeat Coyolxauhqui and the Centzonhuitznahua."
+  "notes": "Mexica tutelary sun-and-war god, born at Coatepec to defeat Coyolxauhqui and the Centzonhuitznahua.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Relacion de Michoacan (c. 1539-41, ed. Alcala); Pollard, Tariacuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Curicaueri is the supreme Tarascan fire-sun-war god and dynastic patron of the ruling Uacusecha, paralleling Huitzilopochtli as solar war-patron of the Mexica state."
+   }
+  ]
  },
  {
   "id": "aztec_mayahuel",
@@ -47918,7 +47948,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Skeletal queen of Mictlan and the dead; consort of Mictlantecuhtli."
+  "notes": "Skeletal queen of Mictlan and the dead; consort of Mictlantecuhtli.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "zapotec_xonaxi_quecuya",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015); Caso & Bernal, Urnas de Oaxaca (1952); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Xonaxi Quecuya is the female Zapotec death-deity and consort of Bezelao, the counterpart of Mictecacihuatl, female ruler of the Aztec underworld."
+   }
+  ]
  },
  {
   "id": "aztec_mictlantecuhtli",
@@ -48044,7 +48087,31 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Skeletal lord of Mictlan and the dead; keeper of the ancestral bones."
+  "notes": "Skeletal lord of Mictlan and the dead; keeper of the ancestral bones.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "zapotec_pitao_bezelao",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burgoa, Geografica Descripcion (1674); Marcus & Flannery, Zapotec Civilization (1996); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Pitao Bezelao is the male Zapotec lord of the dead and the underworld (cult-center Mitla), paralleling the Central-Mexican death-lord Mictlantecuhtli."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "otomi_zithu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Galinier, La Mitad del Mundo: Cuerpo y cosmos en los rituales otomies (1990); Wright Carr on Otomi religion"
+     }
+    ],
+    "notes": "Zithu, the Otomi lord of the underworld glossed in the Mezquital as 'venerable Death', parallels the Aztec death-lord Mictlantecuhtli; note that his 'lord of demons/Devil' gloss is partly a 16th-century missionary overlay (partly colonial-syncretic)."
+   }
+  ]
  },
  {
   "id": "aztec_ometeotl",
@@ -48152,7 +48219,31 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Dual male-female creator principle of Omeyocan (Ometecuhtli/Omecihuatl, equated with Tonacatecuhtli/-cihuatl); note the name 'Ometeotl' is partly a modern scholarly synthesis from these attested dual deities."
+  "notes": "Dual male-female creator principle of Omeyocan (Ometecuhtli/Omecihuatl, equated with Tonacatecuhtli/-cihuatl); note the name 'Ometeotl' is partly a modern scholarly synthesis from these attested dual deities.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "mixtec_lord_1_deer",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfonso Caso, Reyes y reinos de la Mixteca (1977-79); Codex Vindobonensis Mexicanus I; Nicholson (1971)"
+     }
+    ],
+    "notes": "Lord 1 Deer with Lady 1 Deer is the primordial dual creator-couple of the Apoala emergence, the Mixtec expression of the male-female creator principle the Aztecs personified as Ometeotl."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "mixtec_lady_1_deer",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfonso Caso, Reyes y reinos de la Mixteca (1977-79); Codex Vindobonensis Mexicanus I; Nicholson (1971)"
+     }
+    ],
+    "notes": "Lady 1 Deer is the female half of the Mixtec primordial creator-couple, together with Lord 1 Deer corresponding to the dual Aztec creator Ometeotl/Omecihuatl."
+   }
+  ]
  },
  {
   "id": "aztec_quetzalcoatl",
@@ -48346,7 +48437,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Feathered-serpent creator and wind god (Ehecatl), patron of priesthood; distinct from the ruler Topiltzin."
+  "notes": "Feathered-serpent creator and wind god (Ehecatl), patron of priesthood; distinct from the ruler Topiltzin.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "mixtec_lord_9_wind",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfonso Caso, Reyes y reinos de la Mixteca (1977-79); Codex Vindobonensis Mexicanus I (Yuta Tnoho); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Mixtec Lord 9 Wind bears Quetzalcoatl's own calendrical name '9 Wind', descends from the sky as the plumed-serpent wind-and-creation deity, and is the Mixtec form of the feathered-serpent/Ehecatl complex."
+   }
+  ]
  },
  {
   "id": "aztec_tezcatlipoca",
@@ -48680,7 +48784,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Goggle-eyed, fanged storm god of rain, lightning and agriculture; lord of Tlalocan."
+  "notes": "Goggle-eyed, fanged storm god of rain, lightning and agriculture; lord of Tlalocan.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "zapotec_cocijo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993); Marcus & Flannery, Zapotec Civilization (1996)"
+     }
+    ],
+    "notes": "Cocijo is the Zapotec member of the pan-Mesoamerican goggle-eyed rain-lightning storm-god complex of which Tlaloc is the Central-Mexican form (Zapotec cocijo natively means 'lightning', not a Nahuatl loan)."
+   }
+  ]
  },
  {
   "id": "aztec_tlaltecuhtli",
@@ -48913,7 +49030,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of the present Fifth Sun, born at Teotihuacan; nourished by sacrificial blood."
+  "notes": "God of the present Fifth Sun, born at Teotihuacan; nourished by sacrificial blood.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "zapotec_pitao_copijcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fray Juan de Cordova, Vocabulario en lengua capoteca (1578); Marcus & Flannery, Zapotec Civilization (1996); Lind, Ancient Zapotec Religion (2015)"
+     }
+    ],
+    "notes": "Pitao Copijcha is the Zapotec sun-and-war god, the Oaxacan equivalent of the Central-Mexican solar deity Tonatiuh."
+   }
+  ]
  },
  {
   "id": "aztec_xipe_totec",
@@ -49199,7 +49329,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Aged fire god at the center of the cosmos; lord of the year and the New Fire ceremony."
+  "notes": "Aged fire god at the center of the cosmos; lord of the year and the New Fire ceremony.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "otomi_otontecuhtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sahagun, Florentine Codex Bk. 2 (Xocotl Huetzi); Nicholson, Religion in Pre-Hispanic Central Mexico (HMAI vol. 10, 1971); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Otontecuhtli is the Otomi old-fire-and-death god whom the Aztecs themselves worshipped as 'the Otomi lord', assimilated to Xiuhtecuhtli/Huehueteotl and honored in the same Xocotl Huetzi fire-festival."
+   }
+  ]
  },
  {
   "id": "aztec_xochiquetzal",
@@ -148516,7 +148659,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Long-nosed rain and lightning god (God B); wields the storm-axe and is invoked in fourfold directional aspects."
+  "notes": "Long-nosed rain and lightning god (God B); wields the storm-axe and is invoked in fourfold directional aspects.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "zapotec_cocijo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993)"
+     }
+    ],
+    "notes": "Cocijo and Chaac are co-members of the same areal rain-lightning storm-deity pattern, each a culturally distinct manifestation."
+   }
+  ]
  },
  {
   "id": "maya_gucumatz",
@@ -149379,7 +149535,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yucatec feathered-serpent god of wind and creation; counterpart of K'iche' Q'uq'umatz and Nahua Quetzalcoatl."
+  "notes": "Yucatec feathered-serpent god of wind and creation; counterpart of K'iche' Q'uq'umatz and Nahua Quetzalcoatl.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "mixtec_lord_9_wind",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube (1993); Elizabeth Boone, Stories in Red and Black (2000)"
+     }
+    ],
+    "notes": "As the Mixtec feathered-serpent/wind deity, Lord 9 Wind is the Oaxacan counterpart of the Maya plumed serpent Kukulkan within the shared Postclassic feathered-serpent cult."
+   }
+  ]
  },
  {
   "id": "maya_tepeu",
@@ -164612,7 +164781,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Otomi/Hñähñu (central Mexico). English 'Old Fire-and-Death God' leads; the figure is best known by the Nahuatl exonym Otontecuhtli (Otontēuctli, 'Otomi Lord'), in Otomi the Old Father Šihta (Šihta Sipi). Also identified with the Nahua Xocotl/Ocoteuctli. Spouse of the Old Mother (Zäna). The Nahuatl 'tl' orthography reflects the Aztec record of this originally Otomi deity."
+  "notes": "Otomi/Hñähñu (central Mexico). English 'Old Fire-and-Death God' leads; the figure is best known by the Nahuatl exonym Otontecuhtli (Otontēuctli, 'Otomi Lord'), in Otomi the Old Father Šihta (Šihta Sipi). Also identified with the Nahua Xocotl/Ocoteuctli. Spouse of the Old Mother (Zäna). The Nahuatl 'tl' orthography reflects the Aztec record of this originally Otomi deity.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_xiuhtecuhtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sahagun, Florentine Codex Bk. 2 (Xocotl Huetzi); Nicholson, Religion in Pre-Hispanic Central Mexico (HMAI vol. 10, 1971); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Otontecuhtli is the Otomi old-fire-and-death god whom the Aztecs themselves worshipped as 'the Otomi lord', assimilated to Xiuhtecuhtli/Huehueteotl and honored in the same Xocotl Huetzi fire-festival."
+   }
+  ]
  },
  {
   "id": "otomi_sun_boy",
@@ -164871,7 +165053,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Otomi/Hñähñu (central Mexico). English 'Lord of Demons' leads; Otomi Zithü (also Zithu; 'zithü' is the Otomi word for devil/demon). A malevolent underworld deity. Antagonist of the boy-who-became-the-Sun in the Otomi solar origin myth."
+  "notes": "Otomi/Hñähñu (central Mexico). English 'Lord of Demons' leads; Otomi Zithü (also Zithu; 'zithü' is the Otomi word for devil/demon). A malevolent underworld deity. Antagonist of the boy-who-became-the-Sun in the Otomi solar origin myth.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_mictlantecuhtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Galinier, La Mitad del Mundo: Cuerpo y cosmos en los rituales otomies (1990); Wright Carr on Otomi religion"
+     }
+    ],
+    "notes": "Zithu, the Otomi lord of the underworld glossed in the Mezquital as 'venerable Death', parallels the Aztec death-lord Mictlantecuhtli; note that his 'lord of demons/Devil' gloss is partly a 16th-century missionary overlay (partly colonial-syncretic)."
+   }
+  ]
  },
  {
   "id": "ovambo_kalunga",
@@ -171557,6 +171752,17 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_huitzilopochtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Relacion de Michoacan (c. 1539-41, ed. Alcala); Pollard, Tariacuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Curicaueri is the supreme Tarascan fire-sun-war god and dynastic patron of the ruling Uacusecha, paralleling Huitzilopochtli as solar war-patron of the Mexica state."
    }
   ]
  },
@@ -214777,7 +214983,31 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Principal Zapotec god of rain, lightning and storms."
+  "notes": "Principal Zapotec god of rain, lightning and storms.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_tlaloc",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993); Marcus & Flannery, Zapotec Civilization (1996)"
+     }
+    ],
+    "notes": "Cocijo is the Zapotec member of the pan-Mesoamerican goggle-eyed rain-lightning storm-god complex of which Tlaloc is the Central-Mexican form (Zapotec cocijo natively means 'lightning', not a Nahuatl loan)."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "maya_chaac",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993)"
+     }
+    ],
+    "notes": "Cocijo and Chaac are co-members of the same areal rain-lightning storm-deity pattern, each a culturally distinct manifestation."
+   }
+  ]
  },
  {
   "id": "zapotec_coqui_xee",
@@ -215009,7 +215239,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Chief Zapotec god of death and the underworld, patron of Mitla."
+  "notes": "Chief Zapotec god of death and the underworld, patron of Mitla.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_mictlantecuhtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burgoa, Geografica Descripcion (1674); Marcus & Flannery, Zapotec Civilization (1996); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Pitao Bezelao is the male Zapotec lord of the dead and the underworld (cult-center Mitla), paralleling the Central-Mexican death-lord Mictlantecuhtli."
+   }
+  ]
  },
  {
   "id": "zapotec_pitao_copijcha",
@@ -215135,7 +215378,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Zapotec god of the sun and war, emblematized by the macaw."
+  "notes": "Zapotec god of the sun and war, emblematized by the macaw.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_tonatiuh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fray Juan de Cordova, Vocabulario en lengua capoteca (1578); Marcus & Flannery, Zapotec Civilization (1996); Lind, Ancient Zapotec Religion (2015)"
+     }
+    ],
+    "notes": "Pitao Copijcha is the Zapotec sun-and-war god, the Oaxacan equivalent of the Central-Mexican solar deity Tonatiuh."
+   }
+  ]
  },
  {
   "id": "zapotec_pitao_cozaana",
@@ -215486,7 +215742,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Zapotec god of maize and agricultural plenty."
+  "notes": "Zapotec god of maize and agricultural plenty.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_centeotl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fray Juan de Cordova, Vocabulario en lengua capoteca (1578); Marcus & Flannery, Zapotec Civilization (1996); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Pitao Cozobi, the Zapotec god of maize and abundant sustenance, is the standard Oaxacan equivalent of the Central-Mexican maize lord Centeotl."
+   }
+  ]
  },
  {
   "id": "zapotec_pitao_huichaana",
@@ -216245,7 +216514,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Zapotec goddess of death, consort of Pitao Bezelao."
+  "notes": "Zapotec goddess of death, consort of Pitao Bezelao.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_mictecacihuatl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015); Caso & Bernal, Urnas de Oaxaca (1952); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Xonaxi Quecuya is the female Zapotec death-deity and consort of Bezelao, the counterpart of Mictecacihuatl, female ruler of the Aztec underworld."
+   }
+  ]
  },
  {
   "id": "zoroastrian_ahura_mazda",

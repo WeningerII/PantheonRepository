@@ -160,7 +160,31 @@ I authored 13 figures across the three traditions, all "canon" with real colonia
     "weight": "primary"
    }
   ],
-  "notes": "Principal Zapotec god of rain, lightning and storms."
+  "notes": "Principal Zapotec god of rain, lightning and storms.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_tlaloc",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993); Marcus & Flannery, Zapotec Civilization (1996)"
+     }
+    ],
+    "notes": "Cocijo is the Zapotec member of the pan-Mesoamerican goggle-eyed rain-lightning storm-god complex of which Tlaloc is the Central-Mexican form (Zapotec cocijo natively means 'lightning', not a Nahuatl loan)."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "maya_chaac",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, An Illustrated Dictionary of the Gods and Symbols of Ancient Mexico and the Maya (1993)"
+     }
+    ],
+    "notes": "Cocijo and Chaac are co-members of the same areal rain-lightning storm-deity pattern, each a culturally distinct manifestation."
+   }
+  ]
  },
  {
   "id": "zapotec_pitao_cozobi",
@@ -267,7 +291,20 @@ I authored 13 figures across the three traditions, all "canon" with real colonia
     "weight": "primary"
    }
   ],
-  "notes": "Zapotec god of maize and agricultural plenty."
+  "notes": "Zapotec god of maize and agricultural plenty.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_centeotl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fray Juan de Cordova, Vocabulario en lengua capoteca (1578); Marcus & Flannery, Zapotec Civilization (1996); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Pitao Cozobi, the Zapotec god of maize and abundant sustenance, is the standard Oaxacan equivalent of the Central-Mexican maize lord Centeotl."
+   }
+  ]
  },
  {
   "id": "zapotec_coqui_xee",
@@ -499,7 +536,20 @@ I authored 13 figures across the three traditions, all "canon" with real colonia
     "weight": "primary"
    }
   ],
-  "notes": "Chief Zapotec god of death and the underworld, patron of Mitla."
+  "notes": "Chief Zapotec god of death and the underworld, patron of Mitla.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_mictlantecuhtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Burgoa, Geografica Descripcion (1674); Marcus & Flannery, Zapotec Civilization (1996); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Pitao Bezelao is the male Zapotec lord of the dead and the underworld (cult-center Mitla), paralleling the Central-Mexican death-lord Mictlantecuhtli."
+   }
+  ]
  },
  {
   "id": "zapotec_xonaxi_quecuya",
@@ -606,7 +656,20 @@ I authored 13 figures across the three traditions, all "canon" with real colonia
     "weight": "secondary"
    }
   ],
-  "notes": "Zapotec goddess of death, consort of Pitao Bezelao."
+  "notes": "Zapotec goddess of death, consort of Pitao Bezelao.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_mictecacihuatl",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015); Caso & Bernal, Urnas de Oaxaca (1952); Miller & Taube (1993)"
+     }
+    ],
+    "notes": "Xonaxi Quecuya is the female Zapotec death-deity and consort of Bezelao, the counterpart of Mictecacihuatl, female ruler of the Aztec underworld."
+   }
+  ]
  },
  {
   "id": "zapotec_pitao_copijcha",
@@ -732,7 +795,20 @@ I authored 13 figures across the three traditions, all "canon" with real colonia
     "weight": "primary"
    }
   ],
-  "notes": "Zapotec god of the sun and war, emblematized by the macaw."
+  "notes": "Zapotec god of the sun and war, emblematized by the macaw.",
+  "relations": [
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_tonatiuh",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fray Juan de Cordova, Vocabulario en lengua capoteca (1578); Marcus & Flannery, Zapotec Civilization (1996); Lind, Ancient Zapotec Religion (2015)"
+     }
+    ],
+    "notes": "Pitao Copijcha is the Zapotec sun-and-war god, the Oaxacan equivalent of the Central-Mexican solar deity Tonatiuh."
+   }
+  ]
  },
  {
   "id": "purepecha_curicaueri",
@@ -935,6 +1011,17 @@ I authored 13 figures across the three traditions, all "canon" with real colonia
      }
     ],
     "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "interpretatio",
+    "personId": "aztec_huitzilopochtli",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Relacion de Michoacan (c. 1539-41, ed. Alcala); Pollard, Tariacuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Curicaueri is the supreme Tarascan fire-sun-war god and dynastic patron of the ruling Uacusecha, paralleling Huitzilopochtli as solar war-patron of the Mexica state."
    }
   ]
  },
