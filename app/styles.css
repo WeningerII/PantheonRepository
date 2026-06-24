@@ -32,6 +32,7 @@
   /* Type-tier hues — categorical, used as tiny dots/letters only.
      Tuned to read on the cream paper background. */
   --t-deity:     #9C6B17;     /* gold-ink */
+  --t-numen:     #1F7E7E;     /* teal-ink */
   --t-demigod:   #8B3A1F;     /* umber */
   --t-quartigod: #6A5A45;     /* bronze-gray */
   --t-scion:     #3F6B4A;     /* leaf-green */
@@ -762,6 +763,7 @@ tr.browse-group-header .group-rule {
   border-radius: 0;
 }
 tr.type-row-deity     td.cell-name::before { background: #DDA017; }
+tr.type-row-numen     td.cell-name::before { background: #2E9C9C; }
 tr.type-row-demigod   td.cell-name::before { background: #B45C2D; }
 tr.type-row-quartigod td.cell-name::before { background: #6E4C9E; }
 tr.type-row-scion     td.cell-name::before { background: #3A8A55; }
@@ -816,6 +818,7 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   flex-shrink: 0;
 }
 .tier-tag.tier-deity     { color: #B07E12; }
+.tier-tag.tier-numen     { color: #1F7E7E; }
 .tier-tag.tier-demigod   { color: #8B4421; }
 .tier-tag.tier-quartigod { color: #533777; }
 .tier-tag.tier-scion     { color: #2A6840; }

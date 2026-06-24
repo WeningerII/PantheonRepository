@@ -62,7 +62,7 @@ test('exposes the constants the UI reads on window.__PR', () => {
 });
 
 test('every figure has a string id (matching its map key) and a valid type', () => {
-  const VALID = new Set(['deity', 'demigod', 'quartigod', 'scion', 'mortal']);
+  const VALID = new Set(['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal']);
   for (const [key, p] of Object.entries(people)) {
     assert.strictEqual(typeof p.id, 'string', `figure ${key} has a non-string id`);
     assert.strictEqual(p.id, key, `figure keyed ${key} carries id ${p.id}`);

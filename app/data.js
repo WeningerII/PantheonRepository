@@ -48,6 +48,7 @@ const T = {
 // for users who can't distinguish hues.
 const TYPE_META = {  // colors mirror state.jsx TYPE_TIER — the UI's canonical tier palette
   deity:     { label: 'Deity',     color: '#DDA017', dotBg: '#DDA017', glyph: '●' },
+  numen:     { label: 'Numen',     color: '#2E9C9C', dotBg: '#2E9C9C', glyph: '✦' },
   demigod:   { label: 'Demigod',   color: '#B45C2D', dotBg: '#B45C2D', glyph: '½' },
   quartigod: { label: 'Quartigod', color: '#6E4C9E', dotBg: '#6E4C9E', glyph: '¼' },
   scion:     { label: 'Scion',     color: '#3A8A55', dotBg: '#3A8A55', glyph: '◐' },
@@ -2889,12 +2890,16 @@ const buildPeopleSeed = () => {
   //
   // AUDIT-IGNORE-END
   //
-  // ─── STRICT RULE (audited via audits/parentage.cjs) ───
+  // ─── PARENTAGE (the old strict-exclusion rule is RETIRED) ───
   //
-  //   Children of nymph/titan/giant/nereid/oceanid/naiad/pleiad/jotunn/
-  //   apsaras/gandharva-class parents do NOT enter the registry. Cascades
-  //   to grandchildren if the intermediate parent is excluded. Retroactive
-  //   on existing entries.
+  //   Formerly: children of nymph/titan/giant/nereid/oceanid/naiad/pleiad/
+  //   jotunn/apsaras/gandharva-class parents did NOT enter the registry.
+  //   That rule is removed. These beings now enter under their own type,
+  //   'numen' — a fully-divine race outside the worshipped pantheon (so they
+  //   contribute 1.0 to a child's divinity fraction, exactly like a deity,
+  //   but display as their own category). Their formerly-excluded descendants
+  //   (Achilles via the Nereid Thetis, the Trojan and Atreid lines, …) are
+  //   therefore now admissible too, classified by ordinary descent arithmetic.
   //
   // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
   //
@@ -28424,7 +28429,10 @@ const divinityFraction = (personId, peopleMap, opts = {}) => {
   // canonical truth; don't let under-seeded ancestry fight it. Same logic in
   // reverse for mortals — they're 0.0 regardless of any divine ancestor whose
   // residual would otherwise leak through.
-  if (person.type === 'deity') return 1.0;
+  // 'numen' (nymph/nereid/titan/jötunn-class) is a fully-divine race outside the
+  // worshipped pantheon — divine for descent (1.0), like a deity, but its own
+  // display category. So e.g. a child of a Nereid + a mortal computes as demigod.
+  if (person.type === 'deity' || person.type === 'numen') return 1.0;
   if (person.type === 'mortal') return 0.0;
 
   const nextVisited = new Set(visited);
@@ -28478,6 +28486,10 @@ const divinityFraction = (personId, peopleMap, opts = {}) => {
 // reflects the genealogically-computed fraction, asserted fractions are
 // display-only. Two axes, kept independent.
 const classifyDivinity = (person, peopleMap) => {
+  // 'numen' is a canonical race-category (nymph/nereid/titan/jötunn), not a
+  // descent-tier — it's authored, not computed, so it's respected as-is and never
+  // reclassified to 'deity' by its 1.0 fraction.
+  if (person.type === 'numen') return 'numen';
   const f = divinityFraction(person.id, peopleMap, { ignoreOverride: true });
   if (f === null) return person.type;
 

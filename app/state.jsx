@@ -21,6 +21,7 @@ const ATLAS_KEY  = (window.__PR && window.__PR.ATLAS_KEY)  || 'pantheon_atlas_v3
 // origin-mark blue (#1F4E79) so the categorical channels never collide.
 const TYPE_TIER = {
   deity:     { label: 'Deity',     order: 0, color: '#DDA017', desc: 'Fully divine — pantheonic god or independent supernatural power.' },  // gold
+  numen:     { label: 'Numen',     order: 0.5, color: '#2E9C9C', desc: 'Divine being outside the worshipped pantheon — nymph, nereid, titan, jötunn and kin; fully divine by descent.' },  // teal
   demigod:   { label: 'Demigod',   order: 1, color: '#B45C2D', desc: 'Half divine, half mortal — typically a god\'s direct child.' },  // bronze
   quartigod: { label: 'Quartigod', order: 2, color: '#6E4C9E', desc: 'One-quarter divine — a demigod\'s child, more mortal than not.' },  // violet
   scion:     { label: 'Scion',     order: 3, color: '#3A8A55', desc: 'Distant divine descent — a noble line tracing to a god.' },  // forest green
@@ -55,6 +56,14 @@ function TierIcon({ type, size = 14, title }) {
       return (
         <svg {...common}>
           <circle cx="8" cy="8" r={r} fill={c} />
+        </svg>
+      );
+    case 'numen':
+      // a filled diamond — fully divine like the deity disc, but a distinct
+      // silhouette for the nymph/nereid/titan/jötunn race-category.
+      return (
+        <svg {...common}>
+          <path d="M8 1.5 L14.5 8 L8 14.5 L1.5 8 Z" fill={c} />
         </svg>
       );
     case 'demigod':

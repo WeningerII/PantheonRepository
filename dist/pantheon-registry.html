@@ -105,6 +105,7 @@
   /* Type-tier hues — categorical, used as tiny dots/letters only.
      Tuned to read on the cream paper background. */
   --t-deity:     #9C6B17;     /* gold-ink */
+  --t-numen:     #1F7E7E;     /* teal-ink */
   --t-demigod:   #8B3A1F;     /* umber */
   --t-quartigod: #6A5A45;     /* bronze-gray */
   --t-scion:     #3F6B4A;     /* leaf-green */
@@ -835,6 +836,7 @@ tr.browse-group-header .group-rule {
   border-radius: 0;
 }
 tr.type-row-deity     td.cell-name::before { background: #DDA017; }
+tr.type-row-numen     td.cell-name::before { background: #2E9C9C; }
 tr.type-row-demigod   td.cell-name::before { background: #B45C2D; }
 tr.type-row-quartigod td.cell-name::before { background: #6E4C9E; }
 tr.type-row-scion     td.cell-name::before { background: #3A8A55; }
@@ -889,6 +891,7 @@ tr.type-row-mortal    td.cell-name::before { background: #555148; }
   flex-shrink: 0;
 }
 .tier-tag.tier-deity     { color: #B07E12; }
+.tier-tag.tier-numen     { color: #1F7E7E; }
 .tier-tag.tier-demigod   { color: #8B4421; }
 .tier-tag.tier-quartigod { color: #533777; }
 .tier-tag.tier-scion     { color: #2A6840; }
@@ -3464,6 +3467,7 @@ const T = {
 // for users who can't distinguish hues.
 const TYPE_META = {  // colors mirror state.jsx TYPE_TIER — the UI's canonical tier palette
   deity:     { label: 'Deity',     color: '#DDA017', dotBg: '#DDA017', glyph: '●' },
+  numen:     { label: 'Numen',     color: '#2E9C9C', dotBg: '#2E9C9C', glyph: '✦' },
   demigod:   { label: 'Demigod',   color: '#B45C2D', dotBg: '#B45C2D', glyph: '½' },
   quartigod: { label: 'Quartigod', color: '#6E4C9E', dotBg: '#6E4C9E', glyph: '¼' },
   scion:     { label: 'Scion',     color: '#3A8A55', dotBg: '#3A8A55', glyph: '◐' },
@@ -6305,12 +6309,16 @@ const buildPeopleSeed = () => {
   //
   // AUDIT-IGNORE-END
   //
-  // ─── STRICT RULE (audited via audits/parentage.cjs) ───
+  // ─── PARENTAGE (the old strict-exclusion rule is RETIRED) ───
   //
-  //   Children of nymph/titan/giant/nereid/oceanid/naiad/pleiad/jotunn/
-  //   apsaras/gandharva-class parents do NOT enter the registry. Cascades
-  //   to grandchildren if the intermediate parent is excluded. Retroactive
-  //   on existing entries.
+  //   Formerly: children of nymph/titan/giant/nereid/oceanid/naiad/pleiad/
+  //   jotunn/apsaras/gandharva-class parents did NOT enter the registry.
+  //   That rule is removed. These beings now enter under their own type,
+  //   'numen' — a fully-divine race outside the worshipped pantheon (so they
+  //   contribute 1.0 to a child's divinity fraction, exactly like a deity,
+  //   but display as their own category). Their formerly-excluded descendants
+  //   (Achilles via the Nereid Thetis, the Trojan and Atreid lines, …) are
+  //   therefore now admissible too, classified by ordinary descent arithmetic.
   //
   // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
   //
@@ -31840,7 +31848,10 @@ const divinityFraction = (personId, peopleMap, opts = {}) => {
   // canonical truth; don't let under-seeded ancestry fight it. Same logic in
   // reverse for mortals — they're 0.0 regardless of any divine ancestor whose
   // residual would otherwise leak through.
-  if (person.type === 'deity') return 1.0;
+  // 'numen' (nymph/nereid/titan/jötunn-class) is a fully-divine race outside the
+  // worshipped pantheon — divine for descent (1.0), like a deity, but its own
+  // display category. So e.g. a child of a Nereid + a mortal computes as demigod.
+  if (person.type === 'deity' || person.type === 'numen') return 1.0;
   if (person.type === 'mortal') return 0.0;
 
   const nextVisited = new Set(visited);
@@ -31894,6 +31905,10 @@ const divinityFraction = (personId, peopleMap, opts = {}) => {
 // reflects the genealogically-computed fraction, asserted fractions are
 // display-only. Two axes, kept independent.
 const classifyDivinity = (person, peopleMap) => {
+  // 'numen' is a canonical race-category (nymph/nereid/titan/jötunn), not a
+  // descent-tier — it's authored, not computed, so it's respected as-is and never
+  // reclassified to 'deity' by its 1.0 fraction.
+  if (person.type === 'numen') return 'numen';
   const f = divinityFraction(person.id, peopleMap, { ignoreOverride: true });
   if (f === null) return person.type;
 
@@ -308216,6 +308231,13 @@ const TYPE_TIER = {
     desc: 'Fully divine — pantheonic god or independent supernatural power.'
   },
   // gold
+  numen: {
+    label: 'Numen',
+    order: 0.5,
+    color: '#2E9C9C',
+    desc: 'Divine being outside the worshipped pantheon — nymph, nereid, titan, jötunn and kin; fully divine by descent.'
+  },
+  // teal
   demigod: {
     label: 'Demigod',
     order: 1,
@@ -308282,6 +308304,13 @@ function TierIcon({
         cx: "8",
         cy: "8",
         r: r,
+        fill: c
+      }));
+    case 'numen':
+      // a filled diamond — fully divine like the deity disc, but a distinct
+      // silhouette for the nymph/nereid/titan/jötunn race-category.
+      return /*#__PURE__*/React.createElement("svg", common, /*#__PURE__*/React.createElement("path", {
+        d: "M8 1.5 L14.5 8 L8 14.5 L1.5 8 Z",
         fill: c
       }));
     case 'demigod':
@@ -309893,6 +309922,7 @@ const TS_FILL = {
   primordial: '#3F3A33',
   titan: '#806033',
   deity: '#C2972B',
+  numen: '#2E8F8F',
   apotheosed: '#C2972B',
   demigod: '#A04D26',
   quartigod: '#7F6E54',
@@ -309907,6 +309937,7 @@ const TS_GLYPH = {
   primordial: '∞',
   titan: 'T',
   deity: 'D',
+  numen: 'N',
   apotheosed: '✦',
   demigod: '½',
   quartigod: '¼',
