@@ -14,920 +14,1251 @@ The variant where Leimarel is Sanamahi's FOSTER-mother (and Pakhangba alone is h
 
 ```json
 [
-  {
-    "id": "manipuri_leimarel",
-    "name": {
-      "primary": "Leimarel Sidabi",
-      "alt": ["Leimaren Sidabi", "Leimalel Sitapi", "Imoinu (later household form, distinct cult)", "Ima Leimaren"],
-      "transliterations": {
-        "meitei": "Leimarel Sidabi",
-        "etymology": "Meitei leima/leima ('lady, queen; mistress of the soil') + -rel/-ren (a great/encompassing element) + Sidabi ('the deathless one', feminine of Sidaba). Roughly 'the deathless great earth-lady'; she is the personified earth and the mother of every living being."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 0,
-        "startEvent": "existence-as-primordial-earth-mother",
-        "sources": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908), on Leimaren the earth-goddess" }
-        ],
-        "notes": "The supreme female divinity of the Meitei pantheon: goddess of the earth, of nature, and of the household, and the eternal mother from whose womb (it is held) all human beings and living creatures originated. She is the consort of the supreme creator (Atingkok Maru Sidaba / Atiya Sidaba, recorded in the registry as Salailen)."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 1,
-        "startEvent": "motherhood-and-the-isaiphu-cult",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the household goddess and the isaiphu" }
-        ],
-        "notes": "Mother (in the dominant purana account) of Lainingthou Sanamahi and Pakhangba. In one tradition the creator bade her bring forth a further goddess from herself, producing Emoinu/Imoinu. She is worshipped in the first (sacred) room of every Meitei house in an isaiphu — an earthen pitcher of water — together with her son Sanamahi, the central rite of household Sanamahism."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "earth-and-soil",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908)" }
-        ],
-        "notes": "Personified earth; mistress of the soil and of nature."
-      },
-      {
-        "sphereId": "household-and-hearth",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on household worship in the first room (the isaiphu)" }
-        ],
-        "notes": "Tutelary goddess of the Meitei household, worshipped with Sanamahi."
-      },
-      {
-        "sphereId": "motherhood-and-fertility",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Eternal mother goddess; held to be the origin of all living beings."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [
-      {
-        "id": "leimarel-isaiphu",
-        "name": "Isaiphu (sacred water-pitcher)",
-        "kind": "ritual-object",
-        "role": "owner",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the isaiphu rite" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "spouse",
-        "personId": "manipuri_salailen",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): Sanamahi and Pakhangba are sons of Guru Sidaba and Leimaren Sidabi" }
-        ],
-        "notes": "Consort of the supreme creator Atingkok Maru Sidaba / Atiya Sidaba (recorded in the registry as Salailen / Soraren)."
-      },
-      {
-        "kind": "mother-of",
-        "personId": "manipuri_sanamahi",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Mother (in some accounts foster-mother) of Sanamahi, with whom she shares the household shrine."
-      },
-      {
-        "kind": "mother-of",
-        "personId": "manipuri_pakhangba",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Mother of Pakhangba, the dragon-deity and royal ancestor."
-      },
-      {
-        "kind": "equated-with",
-        "personId": "manipuri_panthoibi",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: Panthoibi is held to be a divine incarnation of Leimarel Sidabi" }
-        ],
-        "notes": "Panthoibi is regarded as an incarnation (avatar) of Leimarel Sidabi."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908)" }
-        ],
-        "weight": "secondary"
-      }
-    ],
-    "notes": "Leimarel Sidabi (Leimaren) is the supreme mother-goddess of Meitei Sanamahism — the personified earth, goddess of nature and the household, and the eternal mother from whose womb all living beings are said to have come. She is consort of the supreme creator (Atingkok Maru Sidaba / Atiya Sidaba, recorded here as Salailen) and, in the dominant purana account reported by Parratt, mother of the brothers Sanamahi and Pakhangba; a parallel tradition makes her Sanamahi's foster-mother and Pakhangba's birth-mother. Her central cult is domestic: she is worshipped with Sanamahi in the first room of every Meitei house in the isaiphu (an earthen water-pitcher) with offerings of flowers, fruit, vegetables and rice. The later household goddess Emoinu/Imoinu is said to derive from her."
+ {
+  "id": "manipuri_leimarel",
+  "name": {
+   "primary": "Leimarel Sidabi",
+   "alt": [
+    "Leimaren Sidabi",
+    "Leimalel Sitapi",
+    "Imoinu (later household form, distinct cult)",
+    "Ima Leimaren"
+   ],
+   "transliterations": {
+    "meitei": "Leimarel Sidabi",
+    "etymology": "Meitei leima/leima ('lady, queen; mistress of the soil') + -rel/-ren (a great/encompassing element) + Sidabi ('the deathless one', feminine of Sidaba). Roughly 'the deathless great earth-lady'; she is the personified earth and the mother of every living being."
+   }
   },
-  {
-    "id": "manipuri_sanamahi",
-    "name": {
-      "primary": "Lainingthou Sanamahi",
-      "alt": ["Sanamahi", "Asheeba (the creating/managing aspect)", "Imung Lai (household lord)"],
-      "transliterations": {
-        "meitei": "Lainingthou Sanamahi",
-        "etymology": "Honorific Lainingthou ('lord-king / divine sovereign') + Sanamahi, popularly glossed 'liquid gold' (sana 'gold' + mahi 'liquid/sap'); the name evokes the molten-gold pool (Isaiphu) in which, by tradition, he was conceived/born. Also titled Asheeba, 'the one for creation and management.'"
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["manipuri_salailen", "manipuri_leimarel"],
-    "parentRoles": {
-      "manipuri_salailen": "paternal",
-      "manipuri_leimarel": "maternal"
-    },
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 0,
-        "startEvent": "birth-as-eldest-son-of-the-creator",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): Sanamahi is a son of Guru Sidaba and Leimaren Sidabi and elder brother of Pakhangba" }
-        ],
-        "notes": "Eldest son of the supreme creator (Atingkok / Atiya Guru Sidaba, recorded here as Salailen) and the earth-mother Leimarel Sidabi. By tradition he was conceived/manifested within the Isaiphu, a pool of molten gold, and named by the creator god himself."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 1,
-        "startEvent": "the-contest-with-pakhangba-for-the-throne",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the rivalry of the two brothers (the 'dead-cow' recognition test and the circling-the-cosmos race)" }
-        ],
-        "notes": "In the famed succession contest the creator set the brothers to encircle the cosmos (or, in a parallel version, disguised himself as a dead cow floated downriver to test which son recognized him as both father and Guru). Sanamahi, the elder, was outmanoeuvred — Pakhangba won by coiling around the throne rather than racing the world — and so Pakhangba received the throne of the universe and kingship."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "primordial",
-        "eraOrdering": 2,
-        "startEvent": "appointment-as-lord-of-the-household",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): Sanamahi the most important of the household deities" }
-        ],
-        "notes": "To compensate the elder son, the creator made Sanamahi the king/protector of every household of mankind — the supreme domestic deity (Imung Lai). In the puranic theology he is also credited with creating the world, living beings and humankind in the image of the supreme father, who then breathed intelligence into them. He is worshipped in the sacred south-western corner of the Meitei house with the earth-mother Leimarel."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "household-and-hearth",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): the most important of the household deities" }
-        ],
-        "notes": "Supreme guardian of the home; worshipped in the sacred corner of every Meitei house."
-      },
-      {
-        "sphereId": "guardianship-of-mankind",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Protector and guardian god of humankind (Asheeba)."
-      },
-      {
-        "sphereId": "creation",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): per the Manipuri puranas Sanamahi created the universe, beings and man" }
-        ],
-        "notes": "Demiurge in the puranic account: shapes the universe, creatures, and man under the supreme father."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "father",
-        "personId": "manipuri_salailen",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Son of the supreme creator Atingkok / Atiya Guru Sidaba (recorded here as Salailen)."
-      },
-      {
-        "kind": "mother",
-        "personId": "manipuri_leimarel",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Son (or foster-son, in a variant) of the earth-mother Leimarel Sidabi."
-      },
-      {
-        "kind": "sibling",
-        "personId": "manipuri_pakhangba",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): elder brother of Pakhangba" }
-        ],
-        "notes": "Elder brother of Pakhangba; the two contest the throne, the central Sanamahi–Pakhangba rivalry."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908)" }
-        ],
-        "weight": "secondary"
-      }
-    ],
-    "notes": "Lainingthou Sanamahi is the central deity of household Sanamahism — the supreme guardian god of the home and of mankind. Per the Manipuri puranas (Parratt) he is the eldest son of the supreme creator Atiya/Atingkok Guru Sidaba (recorded in this registry as Salailen) and the earth-mother Leimarel Sidabi, and elder brother of Pakhangba. The defining myth is the brothers' contest for their father's throne: Sanamahi loses (Pakhangba coils around the throne instead of racing the cosmos, or alone recognizes the father disguised as a dead cow), and is compensated with sovereignty over every human household. He is worshipped, with Leimarel, in the sacred south-western corner of the Meitei house. In the puranic cosmology he is further credited as the demiurge who fashioned the world, living beings and humankind in the image of the supreme father. His name is popularly read 'liquid gold,' after the molten-gold pool (Isaiphu) of his birth."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "manipuri_pakhangba",
-    "name": {
-      "primary": "Pakhangba",
-      "alt": ["Pakhangpa (older orthography)", "Konjil Tingthokpa (cosmological title)", "Paphal (the coiled-serpent emblem form)"],
-      "transliterations": {
-        "meitei": "Pakhangba",
-        "etymology": "Meitei pa ('father') + khang-ba ('to know'): 'the one who knows his father / recognizes his progenitor' — the name marks the father-recognition motif by which he won the throne. The royal emblem-form is the paphal, a serpent/dragon coiled biting its tail."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["manipuri_salailen", "manipuri_leimarel"],
-    "parentRoles": {
-      "manipuri_salailen": "paternal",
-      "manipuri_leimarel": "maternal"
-    },
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "birth-as-younger-son-the-dragon",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): Pakhangba, brother of Sanamahi, both sons of Atiya Guru Sidaba" }
-        ],
-        "notes": "Younger son of the supreme creator (Atingkok / Atiya Guru Sidaba, recorded here as Salailen) and the earth-mother Leimarel Sidabi, and younger brother of Sanamahi. He is a primordial serpentine dragon-deity; his iconographic form, the paphal, is a coiled serpent-dragon, later shown bearing the antlers of the sangai (brow-antlered deer)."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 1,
-        "startEvent": "winning-the-throne-by-recognizing-the-father",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the dead-cow recognition test / the circling-the-cosmos race" }
-        ],
-        "notes": "In the succession contest Pakhangba prevailed over his elder brother — by recognizing the father (who had taken the form of a dead cow floated downriver) as both father and Guru, and/or by coiling around the throne rather than racing the cosmos — and so received the throne of the universe and kingship."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 2,
-        "startEvent": "ancestor-of-the-meitei-clans-and-kings",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908), on Pakhangba as ancestor of the ruling house and the serpent totem" },
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Royal and ancestral deity: progenitor of kingship and patron of the Ningthouja clan, whose totem is the serpent. His identity is fused with Nongda Lairen Pakhangba, traditionally the first ruler of the Ningthouja dynasty (consecration dated 33 CE), and his paphal serpent-dragon became the heraldic emblem of the Manipur kingdom."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "kingship-and-sovereignty",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908)" }
-        ],
-        "notes": "Patron of kingship and the Ningthouja royal line; the throne-coiling dragon."
-      },
-      {
-        "sphereId": "serpents-and-dragons",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908), on the serpent ancestor and totem of the ruling clan" }
-        ],
-        "notes": "Primordial serpent/dragon (paphal); serpent totem of the Ningthouja."
-      },
-      {
-        "sphereId": "ancestral-progenitor",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908)" }
-        ],
-        "notes": "Divine ancestor of the Meitei ruling house."
-      }
-    ],
-    "faculties": [
-      {
-        "id": "pakhangba-serpent-transformation",
-        "name": "Serpent-dragon transformation (the paphal)",
-        "notes": "Manifests as a coiling serpent-dragon; in the throne myth he encircles/coils the throne to claim sovereignty.",
-        "inheritability": "none",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980); Hodson, The Meitheis (1908)" }
-        ]
-      }
-    ],
-    "materialCulture": [
-      {
-        "id": "pakhangba-paphal-emblem",
-        "name": "Paphal (the royal serpent-dragon emblem)",
-        "kind": "object",
-        "role": "owner",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908), on the serpent of the ruling house; Meitei heraldry (paphal)" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "father",
-        "personId": "manipuri_salailen",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Son of the supreme creator Atingkok / Atiya Guru Sidaba (recorded here as Salailen)."
-      },
-      {
-        "kind": "mother",
-        "personId": "manipuri_leimarel",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980)" }
-        ],
-        "notes": "Son of the earth-mother Leimarel Sidabi."
-      },
-      {
-        "kind": "sibling",
-        "personId": "manipuri_sanamahi",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980): brother of Sanamahi" }
-        ],
-        "notes": "Younger brother of Sanamahi; wins the throne in the central Sanamahi–Pakhangba rivalry."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-primordial-earth-mother",
     "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908)" }
-        ],
-        "weight": "secondary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908), on Leimaren the earth-goddess"
+     }
     ],
-    "notes": "Pakhangba ('the one who knows his father') is the primordial serpent-dragon deity of Meitei Sanamahism and the royal ancestral god. Per the Manipuri puranas (Parratt) he is the younger son of the supreme creator Atiya/Atingkok Guru Sidaba (recorded here as Salailen) and the earth-mother Leimarel Sidabi, and younger brother of Sanamahi. He wins the celebrated succession contest — by recognizing the father disguised as a dead cow, and/or by coiling around the throne rather than racing the cosmos — and so becomes lord of the throne and patron of kingship. As progenitor of the Ningthouja clan (whose totem is the serpent) his identity merges with Nongda Lairen Pakhangba, the traditional first king (33 CE); his coiled serpent-dragon emblem, the paphal, is the heraldic device of the Manipur kingdom. This is the primordial divine ancestor, distinct from (though identified with) the historical-royal figure already in the registry as Chothe Thangwai Pakhangba."
+    "notes": "The supreme female divinity of the Meitei pantheon: goddess of the earth, of nature, and of the household, and the eternal mother from whose womb (it is held) all human beings and living creatures originated. She is the consort of the supreme creator (Atingkok Maru Sidaba / Atiya Sidaba, recorded in the registry as Salailen)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-and-the-isaiphu-cult",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the household goddess and the isaiphu"
+     }
+    ],
+    "notes": "Mother (in the dominant purana account) of Lainingthou Sanamahi and Pakhangba. In one tradition the creator bade her bring forth a further goddess from herself, producing Emoinu/Imoinu. She is worshipped in the first (sacred) room of every Meitei house in an isaiphu — an earthen pitcher of water — together with her son Sanamahi, the central rite of household Sanamahism."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-soil",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Personified earth; mistress of the soil and of nature."
+   },
+   {
+    "sphereId": "household-and-hearth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on household worship in the first room (the isaiphu)"
+     }
+    ],
+    "notes": "Tutelary goddess of the Meitei household, worshipped with Sanamahi."
+   },
+   {
+    "sphereId": "motherhood-and-fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Eternal mother goddess; held to be the origin of all living beings."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "leimarel-isaiphu",
+    "name": "Isaiphu (sacred water-pitcher)",
+    "kind": "ritual-object",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the isaiphu rite"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manipuri_salailen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Sanamahi and Pakhangba are sons of Guru Sidaba and Leimaren Sidabi"
+     }
+    ],
+    "notes": "Consort of the supreme creator Atingkok Maru Sidaba / Atiya Sidaba (recorded in the registry as Salailen / Soraren)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "manipuri_sanamahi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Mother (in some accounts foster-mother) of Sanamahi, with whom she shares the household shrine."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "manipuri_pakhangba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Mother of Pakhangba, the dragon-deity and royal ancestor."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "manipuri_panthoibi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Panthoibi is held to be a divine incarnation of Leimarel Sidabi"
+     }
+    ],
+    "notes": "Panthoibi is regarded as an incarnation (avatar) of Leimarel Sidabi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Leimarel Sidabi (Leimaren) is the supreme mother-goddess of Meitei Sanamahism — the personified earth, goddess of nature and the household, and the eternal mother from whose womb all living beings are said to have come. She is consort of the supreme creator (Atingkok Maru Sidaba / Atiya Sidaba, recorded here as Salailen) and, in the dominant purana account reported by Parratt, mother of the brothers Sanamahi and Pakhangba; a parallel tradition makes her Sanamahi's foster-mother and Pakhangba's birth-mother. Her central cult is domestic: she is worshipped with Sanamahi in the first room of every Meitei house in the isaiphu (an earthen water-pitcher) with offerings of flowers, fruit, vegetables and rice. The later household goddess Emoinu/Imoinu is said to derive from her."
+ },
+ {
+  "id": "manipuri_sanamahi",
+  "name": {
+   "primary": "Lainingthou Sanamahi",
+   "alt": [
+    "Sanamahi",
+    "Asheeba (the creating/managing aspect)",
+    "Imung Lai (household lord)"
+   ],
+   "transliterations": {
+    "meitei": "Lainingthou Sanamahi",
+    "etymology": "Honorific Lainingthou ('lord-king / divine sovereign') + Sanamahi, popularly glossed 'liquid gold' (sana 'gold' + mahi 'liquid/sap'); the name evokes the molten-gold pool (Isaiphu) in which, by tradition, he was conceived/born. Also titled Asheeba, 'the one for creation and management.'"
+   }
   },
-  {
-    "id": "manipuri_panthoibi",
-    "name": {
-      "primary": "Panthoibi",
-      "alt": ["Nongpok Leima ('Queen of the East')", "Panthoipi"],
-      "transliterations": {
-        "meitei": "Panthoibi",
-        "etymology": "A Meitei goddess-name; she is titled Nongpok Leima, 'Lady/Queen of the East,' as consort of the eastern god Nongpok Ningthou. Traditionally remembered as a deified princess of the Ningthouja line."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "the-deified-princess-and-warrior-goddess",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908), on Panthoibi" },
-          { "kind": "secondary", "reference": "Panthoibi Khonggul (ancient Meitei text on the quest of Panthoibi)" }
-        ],
-        "notes": "Goddess of civilization, courage, fertility, handicraft, love, victory, warfare and wisdom; remembered as a deified princess of an era before the consecration of Pakhangba (33 CE). She is held to be a divine incarnation of the earth-mother Leimarel Sidabi (and of Nongthang Leima)."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 1,
-        "startEvent": "elopement-and-union-with-nongpok-ningthou",
-        "sources": [
-          { "kind": "secondary", "reference": "Panthoibi Khonggul; Langkol Chingkoipa (Meitei texts on the Panthoibi–Nongpok Ningthou romance)" }
-        ],
-        "notes": "Rejecting an arranged marriage, she sought her true love and united with the eastern god Nongpok Ningthou on the Nongmaiching (Langmai) hills; their meeting at the Kangla became the site of the coronation of Meitei kings. The pair are central to the Lai Haraoba festival."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "war-and-victory",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908); Panthoibi Khonggul" }
-        ],
-        "notes": "Warrior goddess of courage, victory and warfare."
-      },
-      {
-        "sphereId": "love-and-fertility",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Panthoibi Khonggul; Langkol Chingkoipa" }
-        ],
-        "notes": "Goddess of love and fertility; her romance with Nongpok Ningthou is paradigmatic."
-      },
-      {
-        "sphereId": "civilization-and-handicraft",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908)" }
-        ],
-        "notes": "Patroness of civilization, handicraft and wisdom."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "spouse",
-        "personId": "manipuri_nongpok_ningthou",
-        "sources": [
-          { "kind": "secondary", "reference": "Panthoibi Khonggul; Langkol Chingkoipa: the union of Panthoibi and Nongpok Ningthou" }
-        ],
-        "notes": "Consort and true love of the eastern god Nongpok Ningthou; united on the Nongmaiching hills."
-      },
-      {
-        "kind": "equated-with",
-        "personId": "manipuri_leimarel",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: Panthoibi as an incarnation of Leimarel Sidabi" }
-        ],
-        "notes": "Regarded as a divine incarnation (avatar) of the earth-mother Leimarel Sidabi."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908)" },
-          { "kind": "primary", "reference": "Panthoibi Khonggul (ancient Meitei text)" }
-        ],
-        "weight": "secondary"
-      }
-    ],
-    "notes": "Panthoibi (Nongpok Leima, 'Queen of the East') is the great Meitei warrior-love goddess — patroness of courage, victory and warfare, and of love, fertility, civilization, handicraft and wisdom. Remembered as a deified princess of the Ningthouja line from before Pakhangba's consecration (33 CE), she is also held to be a divine incarnation of the earth-mother Leimarel Sidabi. Her defining narrative, preserved in the Panthoibi Khonggul and related texts, is her rejection of an arranged marriage and her elopement with the eastern god Nongpok Ningthou, whom she joins on the Nongmaiching hills; their union at the Kangla sanctified it as the place where Meitei kings were crowned. The couple stand at the heart of the Lai Haraoba festival."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "manipuri_salailen",
+   "manipuri_leimarel"
+  ],
+  "parentRoles": {
+   "manipuri_salailen": "paternal",
+   "manipuri_leimarel": "maternal"
   },
-  {
-    "id": "manipuri_nongpok_ningthou",
-    "name": {
-      "primary": "Nongpok Ningthou",
-      "alt": ["Lainingthou Nongpok Ningthou", "Nongpok Ningthou ('King of the East')"],
-      "transliterations": {
-        "meitei": "Nongpok Ningthou",
-        "etymology": "Meitei nongpok ('east') + ningthou ('king, lord'): 'the King of the East' — the guardian god of the eastern direction, enthroned on the Nongmaiching hills east of the Imphal valley."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "existence-as-the-eastern-god-of-nongmaiching",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908); Meitei tradition on the eastern god of Nongmaiching" }
-        ],
-        "notes": "The guardian god of the eastern direction, whose abode is the Nongmaiching (Langmai) hills east of the Imphal valley. In later syncretism the hill-shrine was assimilated to Shiva, but the indigenous deity is Nongpok Ningthou."
-      },
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 1,
-        "startEvent": "union-with-panthoibi",
-        "sources": [
-          { "kind": "secondary", "reference": "Panthoibi Khonggul; Langkol Chingkoipa" }
-        ],
-        "notes": "He and the goddess Panthoibi are the archetypal divine lovers: leaving his home to seek her, he united with her on the Nongmaiching hills. Their love is enacted at the core of the Lai Haraoba festival."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "eastern-direction",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908); Meitei tradition" }
-        ],
-        "notes": "Guardian/king of the eastern quarter; lord of Nongmaiching hill."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "spouse",
-        "personId": "manipuri_panthoibi",
-        "sources": [
-          { "kind": "secondary", "reference": "Panthoibi Khonggul; Langkol Chingkoipa: the union of Nongpok Ningthou and Panthoibi" }
-        ],
-        "notes": "Consort and true love of the goddess Panthoibi; the pair united on the Nongmaiching hills."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908)" },
-          { "kind": "primary", "reference": "Panthoibi Khonggul (ancient Meitei text)" }
-        ],
-        "weight": "secondary"
-      }
-    ],
-    "notes": "Nongpok Ningthou ('King of the East') is the Meitei guardian god of the eastern direction, enthroned on the Nongmaiching (Langmai) hills east of the Imphal valley. He is best known as the divine lover and consort of the warrior-goddess Panthoibi: the two left their homes to seek one another and united on Nongmaiching, a romance preserved in the Panthoibi Khonggul and Langkol Chingkoipa and re-enacted at the heart of the Lai Haraoba festival. In later Hindu syncretism his hill-shrine was assimilated to Shiva, but the deity himself is indigenous to the pre-Hindu Meitei pantheon."
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "manipuri_thangjing",
-    "name": {
-      "primary": "Thangjing",
-      "alt": ["Thangching", "Ibudhou Thangjing", "Ebudhou Thangjing", "Chingu Thangjing"],
-      "transliterations": {
-        "meitei": "Thangjing",
-        "etymology": "A Meitei theonym; the honorific Ibudhou/Ebudhou ('grandfather/ancestor-lord') marks his ancestral status at Moirang. The ruling Umang Lai of Moirang on the banks of Loktak lake."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "existence-as-the-ruling-deity-of-moirang",
-        "sources": [
-          { "kind": "secondary", "reference": "Hodson, The Meitheis (1908), on the deity of Moirang" },
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai and Lai Haraoba" }
-        ],
-        "notes": "Pre-Hindu primordial deity, the ancient national/ruling god of Moirang (Keke Moirang), who rules supreme on the banks of the landlocked sea, Loktak lake, and protects the southern valley. He is the guardian of the south-western direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). His Moirang Lai Haraoba is among the largest of the festivals."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "south-western-direction",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Guardian of the south-western quarter; tutelary lord of Moirang and Loktak."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "companion",
-        "personId": "manipuri_koubru",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai (Thangjing, Koubru, Marjing, Wangbren) as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions (Maikei Ngakpa Lai) with Koubru (NW)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_marjing",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Marjing (NE)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_wangbren",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Wangbren (SE)."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-eldest-son-of-the-creator",
     "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "T. C. Hodson, The Meitheis (1908)" },
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" }
-        ],
-        "weight": "secondary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Sanamahi is a son of Guru Sidaba and Leimaren Sidabi and elder brother of Pakhangba"
+     }
     ],
-    "notes": "Thangjing (Thangching; Ibudhou Thangjing) is the ancient ruling deity of Moirang and one of the four cardinal Umang Lai of Meitei Sanamahism, the guardian of the south-western direction (the Maikei Ngakpa Lai). A pre-Hindu primordial god, he reigns on the banks of Loktak lake and protects the southern Imphal valley; his Moirang Lai Haraoba is one of the great festivals of the tradition. Worship of the Umang Lai (forest/sylvan deities) such as Thangjing is the substance of the Lai Haraoba ('pleasing of the gods')."
+    "notes": "Eldest son of the supreme creator (Atingkok / Atiya Guru Sidaba, recorded here as Salailen) and the earth-mother Leimarel Sidabi. By tradition he was conceived/manifested within the Isaiphu, a pool of molten gold, and named by the creator god himself."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "the-contest-with-pakhangba-for-the-throne",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the rivalry of the two brothers (the 'dead-cow' recognition test and the circling-the-cosmos race)"
+     }
+    ],
+    "notes": "In the famed succession contest the creator set the brothers to encircle the cosmos (or, in a parallel version, disguised himself as a dead cow floated downriver to test which son recognized him as both father and Guru). Sanamahi, the elder, was outmanoeuvred — Pakhangba won by coiling around the throne rather than racing the world — and so Pakhangba received the throne of the universe and kingship."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 2,
+    "startEvent": "appointment-as-lord-of-the-household",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Sanamahi the most important of the household deities"
+     }
+    ],
+    "notes": "To compensate the elder son, the creator made Sanamahi the king/protector of every household of mankind — the supreme domestic deity (Imung Lai). In the puranic theology he is also credited with creating the world, living beings and humankind in the image of the supreme father, who then breathed intelligence into them. He is worshipped in the sacred south-western corner of the Meitei house with the earth-mother Leimarel."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "household-and-hearth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): the most important of the household deities"
+     }
+    ],
+    "notes": "Supreme guardian of the home; worshipped in the sacred corner of every Meitei house."
+   },
+   {
+    "sphereId": "guardianship-of-mankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Protector and guardian god of humankind (Asheeba)."
+   },
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): per the Manipuri puranas Sanamahi created the universe, beings and man"
+     }
+    ],
+    "notes": "Demiurge in the puranic account: shapes the universe, creatures, and man under the supreme father."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "manipuri_salailen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son of the supreme creator Atingkok / Atiya Guru Sidaba (recorded here as Salailen)."
+   },
+   {
+    "kind": "mother",
+    "personId": "manipuri_leimarel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son (or foster-son, in a variant) of the earth-mother Leimarel Sidabi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "manipuri_pakhangba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): elder brother of Pakhangba"
+     }
+    ],
+    "notes": "Elder brother of Pakhangba; the two contest the throne, the central Sanamahi–Pakhangba rivalry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Lainingthou Sanamahi is the central deity of household Sanamahism — the supreme guardian god of the home and of mankind. Per the Manipuri puranas (Parratt) he is the eldest son of the supreme creator Atiya/Atingkok Guru Sidaba (recorded in this registry as Salailen) and the earth-mother Leimarel Sidabi, and elder brother of Pakhangba. The defining myth is the brothers' contest for their father's throne: Sanamahi loses (Pakhangba coils around the throne instead of racing the cosmos, or alone recognizes the father disguised as a dead cow), and is compensated with sovereignty over every human household. He is worshipped, with Leimarel, in the sacred south-western corner of the Meitei house. In the puranic cosmology he is further credited as the demiurge who fashioned the world, living beings and humankind in the image of the supreme father. His name is popularly read 'liquid gold,' after the molten-gold pool (Isaiphu) of his birth."
+ },
+ {
+  "id": "manipuri_pakhangba",
+  "name": {
+   "primary": "Pakhangba",
+   "alt": [
+    "Pakhangpa (older orthography)",
+    "Konjil Tingthokpa (cosmological title)",
+    "Paphal (the coiled-serpent emblem form)"
+   ],
+   "transliterations": {
+    "meitei": "Pakhangba",
+    "etymology": "Meitei pa ('father') + khang-ba ('to know'): 'the one who knows his father / recognizes his progenitor' — the name marks the father-recognition motif by which he won the throne. The royal emblem-form is the paphal, a serpent/dragon coiled biting its tail."
+   }
   },
-  {
-    "id": "manipuri_marjing",
-    "name": {
-      "primary": "Marjing",
-      "alt": ["Malching", "Lainingthou Marjing", "Ibudhou Marjing"],
-      "transliterations": {
-        "meitei": "Marjing",
-        "etymology": "A Meitei theonym; the god of the Heingang (Marjing) hill north-east of Imphal, lord of horses and of the game of polo (sagol kangjei)."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "existence-as-god-of-horses-and-the-north-east",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Primordial god of horses, polo (sagol kangjei), sport and war; guardian of the north-eastern direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). He dwells atop the Heingang (Marjing) hill with his winged steed Samadon Ayangba, and by tradition introduced the game of polo."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "north-eastern-direction",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Guardian of the north-eastern quarter; lord of the Heingang hill."
-      },
-      {
-        "sphereId": "horses-and-war",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: Marjing god of horses, polo and war" }
-        ],
-        "notes": "God of horses, polo (sagol kangjei), sport and war."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [
-      {
-        "id": "marjing-samadon-ayangba",
-        "name": "Samadon Ayangba (the winged steed)",
-        "kind": "mount",
-        "role": "owner",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: Marjing's winged horse Samadon Ayangba" }
-        ]
-      }
-    ],
-    "relations": [
-      {
-        "kind": "companion",
-        "personId": "manipuri_koubru",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Koubru (NW)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_thangjing",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Thangjing (SW)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_wangbren",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Wangbren (SE)."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai" }
-        ],
-        "weight": "secondary"
-      }
-    ],
-    "notes": "Marjing (Malching) is the Meitei god of horses, polo (sagol kangjei), sport and war, and one of the four cardinal Umang Lai of Sanamahism — the guardian of the north-eastern direction (the Maikei Ngakpa Lai). He dwells on the Heingang (Marjing) hill north-east of Imphal with his winged steed Samadon Ayangba, and tradition credits him with introducing polo. With Koubru, Thangjing and Wangbren he forms the four-fold guardianship of the cardinal directions invoked for protection in Meitei ritual."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "manipuri_salailen",
+   "manipuri_leimarel"
+  ],
+  "parentRoles": {
+   "manipuri_salailen": "paternal",
+   "manipuri_leimarel": "maternal"
   },
-  {
-    "id": "manipuri_wangbren",
-    "name": {
-      "primary": "Wangbren",
-      "alt": ["Wangpulen", "Wangpurel", "Wangbaren", "Wangpuren", "Lainingthou Wangbren"],
-      "transliterations": {
-        "meitei": "Wangbren",
-        "etymology": "A Meitei theonym (variously Wangpulen / Wangpurel); the lord of the waters and ruler of the under-water world. Guardian of the south-eastern direction."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "existence-as-the-water-god-of-the-south-east",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Primordial god of water, rain, flood, disease and sickness, lord of the rivers and ruler of the under-water world; guardian of the south-eastern direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai)."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "south-eastern-direction",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Guardian of the south-eastern quarter."
-      },
-      {
-        "sphereId": "water-and-rain",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: Wangbren/Wangpulen god of water, rain, flood and the under-water world" }
-        ],
-        "notes": "Lord of water, rain and flood; ruler of the under-water world and bringer of disease."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "companion",
-        "personId": "manipuri_koubru",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Koubru (NW)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_thangjing",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Thangjing (SW)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_marjing",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Marjing (NE)."
-      }
-    ],
-    "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai" }
-        ],
-        "weight": "secondary"
-      }
-    ],
-    "notes": "Wangbren (Wangpulen / Wangpurel) is the Meitei god of water, rain, flood, disease and sickness — lord of the rivers and ruler of the under-water world — and one of the four cardinal Umang Lai of Sanamahism, the guardian of the south-eastern direction (the Maikei Ngakpa Lai). With Koubru, Thangjing and Marjing he completes the four-fold guardianship of the cardinal directions invoked in Meitei ritual to protect the land from disaster."
+  "temporal": {
+   "era": "mythic-prehistoric"
   },
-  {
-    "id": "manipuri_koubru",
-    "name": {
-      "primary": "Koubru",
-      "alt": ["Koupalu", "Lainingthou Koubru", "Ibudhou Koubru"],
-      "transliterations": {
-        "meitei": "Koubru",
-        "etymology": "A Meitei theonym (also Koupalu); the patron god of Mount Koubru in northern Manipur, guardian of the north-western direction. His consort is the goddess Kounu."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Manipuri",
-    "primaryTradition": "Manipuri",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic-prehistoric" },
-    "lifecycle": [
-      {
-        "typeStatus": "deity",
-        "era": "mythic-prehistoric",
-        "eraOrdering": 0,
-        "startEvent": "existence-as-the-god-of-mount-koubru",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Primordial guardian god of the Meitei, dwelling on the summit of Mount Koubru in northern Manipur with his consort the goddess Kounu; the guardian of the north-western direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). Mount Koubru is a principal Meitei pilgrimage site."
-      }
-    ],
-    "domains": [
-      {
-        "sphereId": "north-western-direction",
-        "contextTag": "lifelong",
-        "sources": [
-          { "kind": "secondary", "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)" }
-        ],
-        "notes": "Guardian of the north-western quarter; patron of Mount Koubru."
-      }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      {
-        "kind": "companion",
-        "personId": "manipuri_thangjing",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Thangjing (SW)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_marjing",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Marjing (NE)."
-      },
-      {
-        "kind": "companion",
-        "personId": "manipuri_wangbren",
-        "sources": [
-          { "kind": "secondary", "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions" }
-        ],
-        "notes": "Co-guardian of the directions with Wangbren (SE)."
-      }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-younger-son-the-dragon",
     "sources": [
-      {
-        "claim": "existence",
-        "citations": [
-          { "kind": "secondary", "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)" },
-          { "kind": "secondary", "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai" }
-        ],
-        "weight": "secondary"
-      }
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): Pakhangba, brother of Sanamahi, both sons of Atiya Guru Sidaba"
+     }
     ],
-    "notes": "Koubru (Koupalu) is the Meitei guardian god of Mount Koubru in northern Manipur and one of the four cardinal Umang Lai of Sanamahism — the guardian of the north-western direction (the Maikei Ngakpa Lai). He dwells on the mountain's summit with his consort, the goddess Kounu; Mount Koubru is a major pilgrimage site of the tradition. With Thangjing, Marjing and Wangbren he forms the four-fold guardianship of the cardinal directions invoked in Meitei ritual."
-  }
+    "notes": "Younger son of the supreme creator (Atingkok / Atiya Guru Sidaba, recorded here as Salailen) and the earth-mother Leimarel Sidabi, and younger brother of Sanamahi. He is a primordial serpentine dragon-deity; his iconographic form, the paphal, is a coiled serpent-dragon, later shown bearing the antlers of the sangai (brow-antlered deer)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "winning-the-throne-by-recognizing-the-father",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the dead-cow recognition test / the circling-the-cosmos race"
+     }
+    ],
+    "notes": "In the succession contest Pakhangba prevailed over his elder brother — by recognizing the father (who had taken the form of a dead cow floated downriver) as both father and Guru, and/or by coiling around the throne rather than racing the cosmos — and so received the throne of the universe and kingship."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "ancestor-of-the-meitei-clans-and-kings",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on Pakhangba as ancestor of the ruling house and the serpent totem"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Royal and ancestral deity: progenitor of kingship and patron of the Ningthouja clan, whose totem is the serpent. His identity is fused with Nongda Lairen Pakhangba, traditionally the first ruler of the Ningthouja dynasty (consecration dated 33 CE), and his paphal serpent-dragon became the heraldic emblem of the Manipur kingdom."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship-and-sovereignty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Patron of kingship and the Ningthouja royal line; the throne-coiling dragon."
+   },
+   {
+    "sphereId": "serpents-and-dragons",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on the serpent ancestor and totem of the ruling clan"
+     }
+    ],
+    "notes": "Primordial serpent/dragon (paphal); serpent totem of the Ningthouja."
+   },
+   {
+    "sphereId": "ancestral-progenitor",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Divine ancestor of the Meitei ruling house."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pakhangba-serpent-transformation",
+    "name": "Serpent-dragon transformation (the paphal)",
+    "notes": "Manifests as a coiling serpent-dragon; in the throne myth he encircles/coils the throne to claim sovereignty.",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Hodson, The Meitheis (1908)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pakhangba-paphal-emblem",
+    "name": "Paphal (the royal serpent-dragon emblem)",
+    "kind": "object",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on the serpent of the ruling house; Meitei heraldry (paphal)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "manipuri_salailen",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son of the supreme creator Atingkok / Atiya Guru Sidaba (recorded here as Salailen)."
+   },
+   {
+    "kind": "mother",
+    "personId": "manipuri_leimarel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "notes": "Son of the earth-mother Leimarel Sidabi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "manipuri_sanamahi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980): brother of Sanamahi"
+     }
+    ],
+    "notes": "Younger brother of Sanamahi; wins the throne in the central Sanamahi–Pakhangba rivalry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pakhangba ('the one who knows his father') is the primordial serpent-dragon deity of Meitei Sanamahism and the royal ancestral god. Per the Manipuri puranas (Parratt) he is the younger son of the supreme creator Atiya/Atingkok Guru Sidaba (recorded here as Salailen) and the earth-mother Leimarel Sidabi, and younger brother of Sanamahi. He wins the celebrated succession contest — by recognizing the father disguised as a dead cow, and/or by coiling around the throne rather than racing the cosmos — and so becomes lord of the throne and patron of kingship. As progenitor of the Ningthouja clan (whose totem is the serpent) his identity merges with Nongda Lairen Pakhangba, the traditional first king (33 CE); his coiled serpent-dragon emblem, the paphal, is the heraldic device of the Manipur kingdom. This is the primordial divine ancestor, distinct from (though identified with) the historical-royal figure already in the registry as Chothe Thangwai Pakhangba."
+ },
+ {
+  "id": "manipuri_panthoibi",
+  "name": {
+   "primary": "Panthoibi",
+   "alt": [
+    "Nongpok Leima ('Queen of the East')",
+    "Panthoipi"
+   ],
+   "transliterations": {
+    "meitei": "Panthoibi",
+    "etymology": "A Meitei goddess-name; she is titled Nongpok Leima, 'Lady/Queen of the East,' as consort of the eastern god Nongpok Ningthou. Traditionally remembered as a deified princess of the Ningthouja line."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-deified-princess-and-warrior-goddess",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on Panthoibi"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul (ancient Meitei text on the quest of Panthoibi)"
+     }
+    ],
+    "notes": "Goddess of civilization, courage, fertility, handicraft, love, victory, warfare and wisdom; remembered as a deified princess of an era before the consecration of Pakhangba (33 CE). She is held to be a divine incarnation of the earth-mother Leimarel Sidabi (and of Nongthang Leima)."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "elopement-and-union-with-nongpok-ningthou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa (Meitei texts on the Panthoibi–Nongpok Ningthou romance)"
+     }
+    ],
+    "notes": "Rejecting an arranged marriage, she sought her true love and united with the eastern god Nongpok Ningthou on the Nongmaiching (Langmai) hills; their meeting at the Kangla became the site of the coronation of Meitei kings. The pair are central to the Lai Haraoba festival."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war-and-victory",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908); Panthoibi Khonggul"
+     }
+    ],
+    "notes": "Warrior goddess of courage, victory and warfare."
+   },
+   {
+    "sphereId": "love-and-fertility",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa"
+     }
+    ],
+    "notes": "Goddess of love and fertility; her romance with Nongpok Ningthou is paradigmatic."
+   },
+   {
+    "sphereId": "civilization-and-handicraft",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908)"
+     }
+    ],
+    "notes": "Patroness of civilization, handicraft and wisdom."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manipuri_nongpok_ningthou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa: the union of Panthoibi and Nongpok Ningthou"
+     }
+    ],
+    "notes": "Consort and true love of the eastern god Nongpok Ningthou; united on the Nongmaiching hills."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "manipuri_leimarel",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Panthoibi as an incarnation of Leimarel Sidabi"
+     }
+    ],
+    "notes": "Regarded as a divine incarnation (avatar) of the earth-mother Leimarel Sidabi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Panthoibi Khonggul (ancient Meitei text)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Panthoibi (Nongpok Leima, 'Queen of the East') is the great Meitei warrior-love goddess — patroness of courage, victory and warfare, and of love, fertility, civilization, handicraft and wisdom. Remembered as a deified princess of the Ningthouja line from before Pakhangba's consecration (33 CE), she is also held to be a divine incarnation of the earth-mother Leimarel Sidabi. Her defining narrative, preserved in the Panthoibi Khonggul and related texts, is her rejection of an arranged marriage and her elopement with the eastern god Nongpok Ningthou, whom she joins on the Nongmaiching hills; their union at the Kangla sanctified it as the place where Meitei kings were crowned. The couple stand at the heart of the Lai Haraoba festival."
+ },
+ {
+  "id": "manipuri_nongpok_ningthou",
+  "name": {
+   "primary": "Nongpok Ningthou",
+   "alt": [
+    "Lainingthou Nongpok Ningthou",
+    "Nongpok Ningthou ('King of the East')"
+   ],
+   "transliterations": {
+    "meitei": "Nongpok Ningthou",
+    "etymology": "Meitei nongpok ('east') + ningthou ('king, lord'): 'the King of the East' — the guardian god of the eastern direction, enthroned on the Nongmaiching hills east of the Imphal valley."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-eastern-god-of-nongmaiching",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908); Meitei tradition on the eastern god of Nongmaiching"
+     }
+    ],
+    "notes": "The guardian god of the eastern direction, whose abode is the Nongmaiching (Langmai) hills east of the Imphal valley. In later syncretism the hill-shrine was assimilated to Shiva, but the indigenous deity is Nongpok Ningthou."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "union-with-panthoibi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa"
+     }
+    ],
+    "notes": "He and the goddess Panthoibi are the archetypal divine lovers: leaving his home to seek her, he united with her on the Nongmaiching hills. Their love is enacted at the core of the Lai Haraoba festival."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "eastern-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908); Meitei tradition"
+     }
+    ],
+    "notes": "Guardian/king of the eastern quarter; lord of Nongmaiching hill."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "manipuri_panthoibi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Panthoibi Khonggul; Langkol Chingkoipa: the union of Nongpok Ningthou and Panthoibi"
+     }
+    ],
+    "notes": "Consort and true love of the goddess Panthoibi; the pair united on the Nongmaiching hills."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Panthoibi Khonggul (ancient Meitei text)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nongpok Ningthou ('King of the East') is the Meitei guardian god of the eastern direction, enthroned on the Nongmaiching (Langmai) hills east of the Imphal valley. He is best known as the divine lover and consort of the warrior-goddess Panthoibi: the two left their homes to seek one another and united on Nongmaiching, a romance preserved in the Panthoibi Khonggul and Langkol Chingkoipa and re-enacted at the heart of the Lai Haraoba festival. In later Hindu syncretism his hill-shrine was assimilated to Shiva, but the deity himself is indigenous to the pre-Hindu Meitei pantheon."
+ },
+ {
+  "id": "manipuri_thangjing",
+  "name": {
+   "primary": "Thangjing",
+   "alt": [
+    "Thangching",
+    "Ibudhou Thangjing",
+    "Ebudhou Thangjing",
+    "Chingu Thangjing"
+   ],
+   "transliterations": {
+    "meitei": "Thangjing",
+    "etymology": "A Meitei theonym; the honorific Ibudhou/Ebudhou ('grandfather/ancestor-lord') marks his ancestral status at Moirang. The ruling Umang Lai of Moirang on the banks of Loktak lake."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-ruling-deity-of-moirang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Hodson, The Meitheis (1908), on the deity of Moirang"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai and Lai Haraoba"
+     }
+    ],
+    "notes": "Pre-Hindu primordial deity, the ancient national/ruling god of Moirang (Keke Moirang), who rules supreme on the banks of the landlocked sea, Loktak lake, and protects the southern valley. He is the guardian of the south-western direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). His Moirang Lai Haraoba is among the largest of the festivals."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "south-western-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the south-western quarter; tutelary lord of Moirang and Loktak."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai (Thangjing, Koubru, Marjing, Wangbren) as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions (Maikei Ngakpa Lai) with Koubru (NW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_marjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Marjing (NE)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_wangbren",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Wangbren (SE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "T. C. Hodson, The Meitheis (1908)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Thangjing (Thangching; Ibudhou Thangjing) is the ancient ruling deity of Moirang and one of the four cardinal Umang Lai of Meitei Sanamahism, the guardian of the south-western direction (the Maikei Ngakpa Lai). A pre-Hindu primordial god, he reigns on the banks of Loktak lake and protects the southern Imphal valley; his Moirang Lai Haraoba is one of the great festivals of the tradition. Worship of the Umang Lai (forest/sylvan deities) such as Thangjing is the substance of the Lai Haraoba ('pleasing of the gods')."
+ },
+ {
+  "id": "manipuri_marjing",
+  "name": {
+   "primary": "Marjing",
+   "alt": [
+    "Malching",
+    "Lainingthou Marjing",
+    "Ibudhou Marjing"
+   ],
+   "transliterations": {
+    "meitei": "Marjing",
+    "etymology": "A Meitei theonym; the god of the Heingang (Marjing) hill north-east of Imphal, lord of horses and of the game of polo (sagol kangjei)."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-god-of-horses-and-the-north-east",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Primordial god of horses, polo (sagol kangjei), sport and war; guardian of the north-eastern direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). He dwells atop the Heingang (Marjing) hill with his winged steed Samadon Ayangba, and by tradition introduced the game of polo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "north-eastern-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the north-eastern quarter; lord of the Heingang hill."
+   },
+   {
+    "sphereId": "horses-and-war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Marjing god of horses, polo and war"
+     }
+    ],
+    "notes": "God of horses, polo (sagol kangjei), sport and war."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "marjing-samadon-ayangba",
+    "name": "Samadon Ayangba (the winged steed)",
+    "kind": "mount",
+    "role": "owner",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Marjing's winged horse Samadon Ayangba"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Koubru (NW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_thangjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Thangjing (SW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_wangbren",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Wangbren (SE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Marjing (Malching) is the Meitei god of horses, polo (sagol kangjei), sport and war, and one of the four cardinal Umang Lai of Sanamahism — the guardian of the north-eastern direction (the Maikei Ngakpa Lai). He dwells on the Heingang (Marjing) hill north-east of Imphal with his winged steed Samadon Ayangba, and tradition credits him with introducing polo. With Koubru, Thangjing and Wangbren he forms the four-fold guardianship of the cardinal directions invoked for protection in Meitei ritual."
+ },
+ {
+  "id": "manipuri_wangbren",
+  "name": {
+   "primary": "Wangbren",
+   "alt": [
+    "Wangpulen",
+    "Wangpurel",
+    "Wangbaren",
+    "Wangpuren",
+    "Lainingthou Wangbren"
+   ],
+   "transliterations": {
+    "meitei": "Wangbren",
+    "etymology": "A Meitei theonym (variously Wangpulen / Wangpurel); the lord of the waters and ruler of the under-water world. Guardian of the south-eastern direction."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-water-god-of-the-south-east",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Primordial god of water, rain, flood, disease and sickness, lord of the rivers and ruler of the under-water world; guardian of the south-eastern direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "south-eastern-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the south-eastern quarter."
+   },
+   {
+    "sphereId": "water-and-rain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: Wangbren/Wangpulen god of water, rain, flood and the under-water world"
+     }
+    ],
+    "notes": "Lord of water, rain and flood; ruler of the under-water world and bringer of disease."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Koubru (NW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_thangjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Thangjing (SW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_marjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Marjing (NE)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Wangbren (Wangpulen / Wangpurel) is the Meitei god of water, rain, flood, disease and sickness — lord of the rivers and ruler of the under-water world — and one of the four cardinal Umang Lai of Sanamahism, the guardian of the south-eastern direction (the Maikei Ngakpa Lai). With Koubru, Thangjing and Marjing he completes the four-fold guardianship of the cardinal directions invoked in Meitei ritual to protect the land from disaster."
+ },
+ {
+  "id": "manipuri_koubru",
+  "name": {
+   "primary": "Koubru",
+   "alt": [
+    "Koupalu",
+    "Lainingthou Koubru",
+    "Ibudhou Koubru"
+   ],
+   "transliterations": {
+    "meitei": "Koubru",
+    "etymology": "A Meitei theonym (also Koupalu); the patron god of Mount Koubru in northern Manipur, guardian of the north-western direction. His consort is the goddess Kounu."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Manipuri",
+  "primaryTradition": "Manipuri",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "existence-as-the-god-of-mount-koubru",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980), on the Umang Lai; Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Primordial guardian god of the Meitei, dwelling on the summit of Mount Koubru in northern Manipur with his consort the goddess Kounu; the guardian of the north-western direction, one of the four cardinal Umang Lai (Maikei Ngakpa Lai). Mount Koubru is a principal Meitei pilgrimage site."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "north-western-direction",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Parratt, The Religion of Manipur (1980); Meitei tradition (Maikei Ngakpa Lai)"
+     }
+    ],
+    "notes": "Guardian of the north-western quarter; patron of Mount Koubru."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "companion",
+    "personId": "manipuri_thangjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Thangjing (SW)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_marjing",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Marjing (NE)."
+   },
+   {
+    "kind": "companion",
+    "personId": "manipuri_wangbren",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition: the four Maikei Ngakpa Lai as the guardians of the directions"
+     }
+    ],
+    "notes": "Co-guardian of the directions with Wangbren (SE)."
+   },
+   {
+    "kind": "spouse",
+    "personId": "manipuri_kounu",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "S. N. Arambam Parratt, The Religion of Manipur (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meitei tradition (Sanamahism): the Maikei Ngakpa Lai"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Koubru (Koupalu) is the Meitei guardian god of Mount Koubru in northern Manipur and one of the four cardinal Umang Lai of Sanamahism — the guardian of the north-western direction (the Maikei Ngakpa Lai). He dwells on the mountain's summit with his consort, the goddess Kounu; Mount Koubru is a major pilgrimage site of the tradition. With Thangjing, Marjing and Wangbren he forms the four-fold guardianship of the cardinal directions invoked in Meitei ritual."
+ }
 ]
 ```

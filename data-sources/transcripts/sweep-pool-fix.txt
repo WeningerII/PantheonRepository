@@ -1,0 +1,130 @@
+Race-gap closure: three kin figures that pool agents each deferred (believing a
+concurrent worker had authored them), leaving dangling reciprocal edges. Authored
+here from the agents' own research so the referent edges resolve.
+
+```json
+[
+ {
+  "id": "anike",
+  "name": {
+   "primary": "Anike",
+   "alt": ["Anikê", "Aniké"],
+   "transliterations": { "pemon": "Anikê", "etymology": "Pemon/Macuxi; one of the erenkon (primordial brothers) of the Makunaima cycle." }
+  },
+  "type": "demigod",
+  "tradition": "Pemon",
+  "primaryTradition": "Pemon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "origin": "canon",
+  "parentIds": ["wei", "aromadapuen"],
+  "parentRoles": { "wei": "paternal", "aromadapuen": "maternal" },
+  "temporal": { "era": "pre-wazaca" },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "pre-wazaca",
+    "eraOrdering": 0,
+    "startEvent": "One of the brother-demiurges (erenkon) born of the sun Wei and the mortal woman Aromadapuen, alongside Makunaima, Insikiran and Manape, in the Pemon-Macuxi creation cycle.",
+    "sources": [
+     { "kind": "secondary", "reference": "Koch-Grunberg, Vom Roroima zum Orinoco, vol. 2 (1924)" },
+     { "kind": "secondary", "reference": "de Cora, Kuai-Mare: mitos aborigenes de Venezuela (1957)" }
+    ],
+    "notes": "In the Macuxi reckoning the erenkon are Makunaima, Anike (Anikê) and Insikiran; the wider Pemon cycle counts Manape among the brothers."
+   }
+  ],
+  "domains": [
+   { "sphereId": "ancestry", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Koch-Grunberg (1924)" }] }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Koch-Grunberg, Vom Roroima zum Orinoco, vol. 2 (1924); de Cora (1957)" }] }
+  ],
+  "relations": [
+   { "kind": "sibling", "personId": "makunaima", "sources": [{ "kind": "secondary", "reference": "Koch-Grunberg (1924)" }], "notes": "Brother in the erenkon set." },
+   { "kind": "sibling", "personId": "insikiran", "sources": [{ "kind": "secondary", "reference": "Koch-Grunberg (1924)" }], "notes": "Brother in the erenkon set." },
+   { "kind": "sibling", "personId": "manape", "sources": [{ "kind": "secondary", "reference": "Koch-Grunberg (1924)" }], "notes": "Brother in the erenkon set." }
+  ]
+ },
+ {
+  "id": "mangaian_tuna",
+  "name": {
+   "primary": "Tuna",
+   "alt": ["Tuna the eel"],
+   "transliterations": { "mangaian": "Tuna", "etymology": "Mangaian (Cook Islands); tuna means eel — the eel-god whose severed head grows the first coconut palm." }
+  },
+  "type": "deity",
+  "tradition": "Mangaian",
+  "primaryTradition": "Mangaian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": { "era": "mythic" },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "The eel-god, lover of Ina; when Ina struck him down at his own bidding, she buried his head and from it grew the first coconut palm, whose nut bears the two eyes and mouth of Tuna.",
+    "sources": [
+     { "kind": "secondary", "reference": "Gill, Myths and Songs from the South Pacific (1876), the Ina and Tuna story" }
+    ],
+    "notes": "Aetiological origin of the coconut in Mangaian (and pan-Polynesian) tradition."
+   }
+  ],
+  "domains": [
+   { "sphereId": "fertility", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Gill (1876)" }] }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Gill, Myths and Songs from the South Pacific (1876)" }] }
+  ],
+  "relations": [
+   { "kind": "lover", "personId": "mangaian_ina", "sources": [{ "kind": "secondary", "reference": "Gill (1876)" }], "notes": "Her eel-lover, whose severed head becomes the first coconut." }
+  ]
+ },
+ {
+  "id": "mordvin_mastorpaz",
+  "name": {
+   "primary": "Mastorpaz",
+   "alt": ["Mastorpas", "Mastor-pas"],
+   "transliterations": { "erzya": "Mastorpaz", "etymology": "Erzya-Mordvin; mastor (earth/land) + paz (god) — the god of the earth and underworld." }
+  },
+  "type": "deity",
+  "tradition": "Mordvin",
+  "primaryTradition": "Mordvin",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "origin": "canon",
+  "parentIds": ["mordvin_chipaz", "mordvin_norovava"],
+  "parentRoles": { "mordvin_chipaz": "paternal", "mordvin_norovava": "maternal" },
+  "temporal": { "era": "mythic" },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "God of the earth and the underworld, a son of the sun-god Chipaz; with the wind-god Varmanpaz one of the ordering deities begotten by Chipaz in the Erzya cosmogony.",
+    "sources": [
+     { "kind": "secondary", "reference": "Sarv, Some Aspects of Mordvin Mythology, Folklore (Tartu) 17 (2001)" }
+    ],
+    "notes": "Chipaz begot Nishkepaz, the earth-lord Mastorpaz, and the wind-god Varmanpaz in the Erzya tradition recorded by Sarv."
+   }
+  ],
+  "domains": [
+   { "sphereId": "underworld", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Sarv (2001)" }] }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "Sarv, Some Aspects of Mordvin Mythology, Folklore (Tartu) 17 (2001)" }] }
+  ],
+  "relations": [
+   { "kind": "half-sibling", "personId": "mordvin_varmanpaz", "sources": [{ "kind": "secondary", "reference": "Sarv (2001)" }], "notes": "Both begotten by Chipaz; Varmanpaz the wind-god." }
+  ]
+ }
+]
+```

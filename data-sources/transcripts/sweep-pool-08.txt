@@ -1,0 +1,449 @@
+```json
+[
+  {
+    "id": "ifugao_dugai",
+    "name": {
+      "primary": "Dugai",
+      "alt": ["Dugay"],
+      "transliterations": {"ifugao": "Dugai"}
+    },
+    "type": "mortal",
+    "tradition": "Ifugao",
+    "primaryTradition": "Ifugao",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "meeting-and-marrying-Dumagid",
+        "sources": [{"kind": "primary", "reference": "Ifugao thunder-and-lightning origin myth; H. Otley Beyer, Origin Myths among the Mountain Peoples of the Philippines, Philippine Journal of Science sec. D vol. 8 (1913)"}],
+        "notes": "Beautiful mortal woman of Benguet whom the lower-skyworld deity Dumagid met alone in the woods, fell in love with, and married."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "death-on-the-journey-to-the-skyworld",
+        "sources": [{"kind": "primary", "reference": "Ifugao thunder-origin myth (Aswang Project compilation; Beyer 1913)"}],
+        "notes": "When her family demanded that Dumagid take her with him to the skyworld and leave their son Ovug behind as security, she set out on the journey but died as they approached the heat of the sun."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "H. Otley Beyer, Origin Myths among the Mountain Peoples of the Philippines, Philippine Journal of Science sec. D vol. 8 (1913), the Dumagid-Dugai-Ovug thunder-origin narrative; Roy F. Barton, The Religion of the Ifugaos (1946)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "ifugao_dumagid", "era": "heroic-age", "sources": [{"kind": "primary", "reference": "Ifugao thunder-origin myth (Beyer 1913)"}], "notes": "Mortal Benguet wife of the skyworld deity Dumagid."},
+      {"kind": "mother-of", "personId": "ifugao_ovug", "era": "heroic-age", "sources": [{"kind": "primary", "reference": "Ifugao thunder-origin myth (Beyer 1913)"}], "notes": "Bore Ovug, the thunder-figure, to Dumagid."}
+    ],
+    "notes": "Mortal Benguet woman, wife of the lower-skyworld deity Dumagid and mother of the thunder-demigod Ovug. Carried in the registry only as a spouse and mother externalRef on Dumagid and Ovug until materialized here. She dies on the journey toward the skyworld, the loss that sets up Dumagid returning to split their son Ovug into the two thunder-voices."
+  },
+  {
+    "id": "inca_mama_coca",
+    "name": {
+      "primary": "Mama Coca",
+      "alt": ["Mama Cuca", "Coya Coca"],
+      "transliterations": {"quechua": "Mama Coca"}
+    },
+    "type": "mortal",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-imperial",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Sinchi-Roca",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 15"}],
+        "notes": "Daughter of a cacique lord of the people of Zanu (Sano), about one league from Cuzco; coya of the second Sapa Inca Sinchi Roca and mother of Lloque Yupanqui per Sarmiento."
+      },
+      {"typeStatus": "mortal", "vitalStatus": "dead", "era": "pre-imperial", "eraOrdering": 1}
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 15 (Sinchi Roca marries Mama Coca of Zanu, mother of Lloque Yupanqui)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "inca_sinchi_roca", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 15"}]},
+      {"kind": "mother-of", "personId": "inca_lloque_yupanqui", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 15"}]}
+    ],
+    "notes": "Coya of the second Sapa Inca Sinchi Roca and mother of the third, Lloque Yupanqui, per Sarmiento; a noblewoman of the Sano (Zanu) lineage near Cuzco. Mortal-tier. Carried in the registry only as a spouse externalRef on Sinchi Roca until materialized here."
+  },
+  {
+    "id": "inca_mama_chicya",
+    "name": {
+      "primary": "Mama Chicya",
+      "alt": ["Mama Chicya Ocllo", "Cuca-Cocollo", "Coya Chicya"],
+      "transliterations": {"quechua": "Mama Chicya"}
+    },
+    "type": "mortal",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-imperial",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Yahuar-Huacac",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 20-21"}],
+        "notes": "Daughter of the lord of the Ayarmaca; her marriage to the seventh Sapa Inca Yahuar Huacac sealed the peace after his childhood kidnapping by the Ayarmaca. Mother of Viracocha Inca."
+      },
+      {"typeStatus": "mortal", "vitalStatus": "dead", "era": "pre-imperial", "eraOrdering": 1}
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 20-21 (Yahuar Huacac marries the Ayarmaca lady, mother of Viracocha Inca)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "inca_yahuar_huacac", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 20-21"}]},
+      {"kind": "mother-of", "personId": "inca_viracocha_inca", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 20-21"}]}
+    ],
+    "notes": "Coya of the seventh Sapa Inca Yahuar Huacac and mother of the eighth, Viracocha Inca; daughter of the lord of the Ayarmaca, her marriage settling the kidnapping conflict. Mortal-tier. Carried in the registry only as a spouse externalRef on Yahuar Huacac until materialized here."
+  },
+  {
+    "id": "inca_mama_runtu",
+    "name": {
+      "primary": "Mama Runtu",
+      "alt": ["Mama Runtucaya", "Runtu Caya", "Coya Runtu"],
+      "transliterations": {"quechua": "Mama Runtu"}
+    },
+    "type": "mortal",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "pre-imperial",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Viracocha-Inca",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 24"}],
+        "notes": "Daughter of the curaca of Anta, a polity allied to Cuzco; principal coya of the eighth Sapa Inca Viracocha Inca and mother of Cusi Yupanqui (Pachacuti)."
+      },
+      {"typeStatus": "mortal", "vitalStatus": "dead", "era": "pre-imperial", "eraOrdering": 1}
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 24 (Mama Runtu of Anta, coya of Viracocha Inca, mother of Pachacuti)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "inca_viracocha_inca", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 24"}]},
+      {"kind": "mother-of", "personId": "inca_pachacuti", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 24"}]}
+    ],
+    "notes": "Coya of the eighth Sapa Inca Viracocha Inca and mother of the ninth, Pachacuti, per Sarmiento; a noblewoman of the Anta lineage. Mortal-tier. Carried in the registry only as a spouse externalRef on Viracocha Inca until materialized here. The chronicle tradition also names her as mother of the heir-apparent Inca Urco, though other sources assign Urco to a secondary wife."
+  },
+  {
+    "id": "inca_mama_anahuarque",
+    "name": {
+      "primary": "Mama Anahuarque",
+      "alt": ["Mama Anawarkhi", "Coya Anahuarque"],
+      "transliterations": {"quechua": "Mama Anawarki"}
+    },
+    "type": "mortal",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "imperial",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Pachacuti",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 47"}],
+        "notes": "Of the ayllus of Choco and Cachona; principal coya of the ninth Sapa Inca Pachacuti and mother of Tupac Inca Yupanqui and Amaru Tupac. Her marriage is read as rewarding a chief whose people had helped defend Cuzco against the Chanka."
+      },
+      {"typeStatus": "mortal", "vitalStatus": "dead", "era": "imperial", "eraOrdering": 1}
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 47 (Mama Anahuarque, coya of Pachacuti, mother of Tupac Inca Yupanqui)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "inca_pachacuti", "era": "imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 47"}]},
+      {"kind": "mother-of", "personId": "inca_tupac_inca_yupanqui", "era": "imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 47"}]},
+      {"kind": "mother-of", "personId": "inca_amaru_tupac", "era": "imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 47"}]}
+    ],
+    "notes": "Coya of the ninth Sapa Inca Pachacuti and mother of the tenth, Tupac Inca Yupanqui, and of the passed-over elder son Amaru Tupac; a noblewoman of the Choco-Cachona ayllus. Mortal-tier. Carried in the registry only as a spouse externalRef on Pachacuti until materialized here."
+  },
+  {
+    "id": "inca_tupac_inca_yupanqui",
+    "name": {
+      "primary": "Tupac Inca Yupanqui",
+      "alt": ["Topa Inca Yupanqui", "Thupaq Inka Yupanki", "Tenth Sapa Inca"],
+      "transliterations": {"quechua": "Thupaq Inka Yupanki", "colonial-spanish": "Tupac Inca Yupanqui"}
+    },
+    "type": "scion",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["inca_pachacuti", "inca_mama_anahuarque"],
+    "temporal": {"era": "imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "imperial",
+        "eraOrdering": 0,
+        "startEvent": "birth-at-Cuzco",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 47"}],
+        "notes": "Son of Pachacuti and the coya Mama Anahuarque; born during his father reign, conventionally before 1471."
+      },
+      {
+        "typeStatus": "scion",
+        "vitalStatus": "crown-prince-and-general",
+        "era": "imperial",
+        "eraOrdering": 1,
+        "startEvent": "appointment-as-auqui-and-northern-campaigns",
+        "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 48; Cieza de Leon, Cronica del Peru Pt. II Ch. 49-58"}],
+        "notes": "Appointed auqui (crown prince) and head of the army by Pachacuti; led the northern expansion, capturing the Chimu kingdom of Chan Chan and subduing the highland provinces."
+      },
+      {
+        "typeStatus": "scion",
+        "vitalStatus": "sapa-inca-reigning",
+        "era": "imperial",
+        "eraOrdering": 2,
+        "startEvent": "accession-as-tenth-Sapa-Inca",
+        "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 48-54; Cobo Bk. XII"}],
+        "notes": "Tenth Sapa Inca, reigning c. 1471-1493. Extended Tahuantinsuyu north to the Ancasmayo river and south to the Maule, more than doubling the empire his father had founded; conquered Chimor and the Qulla."
+      },
+      {"typeStatus": "scion", "vitalStatus": "dead", "era": "imperial", "eraOrdering": 3, "startEvent": "death-c-1493", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 54; Cobo Bk. XII"}], "notes": "Died c. 1493; founded the Capac Ayllu panaca."}
+    ],
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 48-54"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 47-54; Cieza de Leon, Cronica del Peru Pt. II; Bernabe Cobo, Historia del Nuevo Mundo (1653) Bk. XII"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "father-of", "externalRef": {"name": "Huayna Capac, eleventh Sapa Inca", "tradition": "Inca"}, "era": "imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 54"}], "notes": "Father of Huayna Capac, the eleventh Sapa Inca; not yet an entity in the registry."},
+      {"kind": "sibling", "personId": "inca_amaru_tupac", "era": "imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 47"}], "notes": "Full brother; Amaru was the elder, passed over for the succession in favour of Tupac the warrior."}
+    ],
+    "notes": "Tenth Sapa Inca; son of Pachacuti and the coya Mama Anahuarque. Named in the prose of Pachacuti and Viracocha Inca as the continuator of imperial expansion. Scion-class (registry math: scion father Pachacuti plus mortal mother). His northern and southern campaigns more than doubled the empire founded by his father, bringing Tahuantinsuyu to its near-maximal extent. Carried in the registry only as a father-of externalRef on Pachacuti until materialized here."
+  },
+  {
+    "id": "inca_amaru_tupac",
+    "name": {
+      "primary": "Amaru Tupac",
+      "alt": ["Amaru Yupanqui", "Amaru Tupac Inca", "Amaru Tupa Inca"],
+      "transliterations": {"quechua": "Amaru Thupa", "colonial-spanish": "Amaru Tupac"}
+    },
+    "type": "scion",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["inca_pachacuti", "inca_mama_anahuarque"],
+    "temporal": {"era": "imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "imperial",
+        "eraOrdering": 0,
+        "startEvent": "birth-at-Cuzco-as-elder-son-of-Pachacuti",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 47"}],
+        "notes": "Elder son of Pachacuti and the coya Mama Anahuarque, originally designated co-regent and heir."
+      },
+      {
+        "typeStatus": "scion",
+        "era": "imperial",
+        "eraOrdering": 1,
+        "startEvent": "removal-from-the-succession",
+        "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 47; Cobo Bk. XII"}],
+        "notes": "Set aside from the succession by Pachacuti, who judged him insufficiently warlike, in favour of his younger brother Tupac Inca Yupanqui; thereafter held agricultural and administrative office in Cuzco."
+      },
+      {"typeStatus": "scion", "vitalStatus": "dead", "era": "imperial", "eraOrdering": 2}
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 47; Bernabe Cobo, Historia del Nuevo Mundo (1653) Bk. XII"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "inca_tupac_inca_yupanqui", "era": "imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 47"}], "notes": "Younger brother who superseded him as heir and became the tenth Sapa Inca."}
+    ],
+    "notes": "Elder son of Pachacuti and the coya Mama Anahuarque, first chosen as co-regent and heir but removed from the succession for lacking martial spirit, the place passing to his younger brother Tupac Inca Yupanqui. Named in the prose of Pachacuti as Amaru Tupac. Scion-class. Carried in the registry only as a spouse-line externalRef on Pachacuti until materialized here."
+  },
+  {
+    "id": "inca_inca_urco",
+    "name": {
+      "primary": "Inca Urco",
+      "alt": ["Inca Urcon", "Inka Urqu", "Urco"],
+      "transliterations": {"quechua": "Inka Urqu", "colonial-spanish": "Inca Urco"}
+    },
+    "type": "scion",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["inca_viracocha_inca"],
+    "temporal": {"era": "pre-imperial"},
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "pre-imperial",
+        "eraOrdering": 0,
+        "startEvent": "designation-as-heir-apparent",
+        "sources": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 24-25"}],
+        "notes": "Son of the eighth Sapa Inca Viracocha Inca, named by his father as designated heir-apparent over his half-brother Cusi Yupanqui."
+      },
+      {
+        "typeStatus": "scion",
+        "era": "pre-imperial",
+        "eraOrdering": 1,
+        "startEvent": "flight-from-the-Chanka-and-displacement",
+        "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 25-27; Betanzos Pt. I Ch. 6-19"}],
+        "notes": "Fled Cuzco with his father when the Chanka confederacy invaded c. 1438; after Cusi Yupanqui (Pachacuti) defended the city and was acclaimed Sapa Inca, Inca Urco was displaced and, per Sarmiento, was killed in the ensuing conflict."
+      },
+      {"typeStatus": "scion", "vitalStatus": "dead", "era": "pre-imperial", "eraOrdering": 2, "startEvent": "death-in-conflict-with-Pachacuti", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 27"}]}
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sarmiento de Gamboa, Historia de los Incas (1572), Ch. 24-27; Juan de Betanzos, Suma y Narracion de los Incas (1551) Pt. I"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "half-sibling", "personId": "inca_pachacuti", "era": "pre-imperial", "sources": [{"kind": "primary", "reference": "Sarmiento Ch. 24-27"}], "notes": "Rival half-brother; the designated heir who was displaced when Cusi Yupanqui (Pachacuti) defended Cuzco and was acclaimed Sapa Inca."}
+    ],
+    "notes": "Designated heir-apparent of the eighth Sapa Inca Viracocha Inca, displaced and killed when his half-brother Cusi Yupanqui defended Cuzco against the Chanka and seized the throne as Pachacuti. Named in the prose of Viracocha Inca and Pachacuti as Inca Urco. Paternity by Viracocha Inca is secure; his maternity is reported variously (the principal coya Mama Runtu in some accounts, a secondary wife Curi Chulpa in others), so only the paternal parent is set here. Scion-class."
+  },
+  {
+    "id": "inca_huallallo_carhuincho",
+    "name": {
+      "primary": "Huallallo Carhuincho",
+      "alt": ["Wallallo Carwincho", "Wallallu Qarwinchu", "Huallallo"],
+      "transliterations": {"quechua": "Wallallu Qarwinchu"}
+    },
+    "type": "deity",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "reign-as-the-fire-huaca-of-the-Yunca",
+        "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript (c. 1598-1608), chs. 8-9 (ed./trans. Salomon and Urioste, 1991)"}],
+        "notes": "The ancient fire-and-drought huaca who ruled the land and its Yunca peoples before Pariacaca; a devourer to whom children were given, associated with volcanic fire and red plumage."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "defeat-and-expulsion-by-Pariacaca",
+        "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, chs. 8-9"}],
+        "notes": "Overcome by the fivefold storm-god Pariacaca, who quenched his fire with deluge and hail and drove him out toward the Anti (eastern lowlands)."
+      }
+    ],
+    "domains": [
+      {"sphereId": "fire", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, chs. 8-9"}]},
+      {"sphereId": "drought-and-volcanic-fire", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, chs. 8-9"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Huarochiri Manuscript (Quechua, c. 1598-1608), chs. 8-9, ed./trans. Frank Salomon and George Urioste, The Huarochiri Manuscript (1991)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "enemy", "personId": "inca_pariacaca", "era": "mythic", "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, chs. 8-9"}], "notes": "The fire-and-drought huaca whom the storm-god Pariacaca defeated and expelled, the central rivalry of the Huarochiri cycle."}
+    ],
+    "notes": "Fire-and-drought huaca of the Huarochiri myth-cycle, lord of the Yunca peoples before the rise of the storm-god Pariacaca, who quenched and expelled him. Named in the prose of Pariacaca as the rival huaca Huallallo. The water-versus-fire contest of Pariacaca and Huallallo Carhuincho is the structural core of the Huarochiri Manuscript."
+  },
+  {
+    "id": "inca_cavillaca",
+    "name": {
+      "primary": "Cavillaca",
+      "alt": ["Cahuillaca", "Kawillaka"],
+      "transliterations": {"quechua": "Kawillaka"}
+    },
+    "type": "numen",
+    "tradition": "Inca",
+    "primaryTradition": "Inca",
+    "sex": "female",
+    "vitalStatus": "apotheosed",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-the-maiden-huaca-desired-by-all",
+        "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript (c. 1598-1608), ch. 2 (ed./trans. Salomon and Urioste, 1991)"}],
+        "notes": "A beautiful virgin huaca whom all the male huacas desired and whose advances she refused."
+      },
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "conception-by-the-lucuma-fruit-and-bearing-a-son",
+        "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, ch. 2"}],
+        "notes": "Ate a ripe lucuma fruit that Cuniraya Viracocha, disguised as a bird, had inseminated and let fall beside her; she conceived and bore a son, then sought the unknown father among the gathered huacas."
+      },
+      {
+        "vitalStatus": "apotheosed",
+        "era": "mythic",
+        "eraOrdering": 2,
+        "startEvent": "flight-to-the-sea-and-turning-to-stone",
+        "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, ch. 2"}],
+        "notes": "On learning the father was the beggar-disguised Cuniraya, she fled with her child toward the sea at Pachacamac and was turned to stone offshore."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Huarochiri Manuscript (Quechua, c. 1598-1608), ch. 2, ed./trans. Frank Salomon and George Urioste, The Huarochiri Manuscript (1991)"}], "weight": "primary"}
+    ],
+    "relations": [
+      {"kind": "lover", "personId": "inca_cuniraya_viracocha", "era": "mythic", "sources": [{"kind": "primary", "reference": "Huarochiri Manuscript, ch. 2"}], "notes": "Impregnated against her will by the trickster-creator Cuniraya Viracocha through the inseminated lucuma fruit; she bears his son and flees to the sea."}
+    ],
+    "notes": "Maiden huaca of the Huarochiri cycle, sought by all the huacas, who is made to conceive by Cuniraya Viracocha through a transformed lucuma fruit and, on discovering the deceit, flees to the sea and turns to stone. Classed as numen (a fully-divine huaca outside the worshipped imperial pantheon). Named in the prose of Cuniraya Viracocha as the maiden Cavillaca whom he courts. The identity of her son with the storm-god Pariacaca is left unstated and ambiguous in the manuscript, so no maternity edge to Pariacaca is asserted here."
+  }
+]
+```

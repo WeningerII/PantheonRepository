@@ -1,0 +1,684 @@
+```json
+[
+  {
+    "id": "welsh_dylan",
+    "name": {
+      "primary": "Dylan ail Don",
+      "alt": ["Dylan", "Dylan Eil Ton", "Dylan son of the Wave"],
+      "transliterations": { "middle-welsh": "Dylan eil Ton", "modern-welsh": "Dylan ail Don" }
+    },
+    "type": "demigod",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["welsh_arianrhod"],
+    "parentRoles": { "welsh_arianrhod": "maternal" },
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "magical-birth-during-Math-virginity-test",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch (Math fab Mathonwy)" }],
+        "notes": "Born when Math made Arianrhod step over his magic wand to test her virginity; she dropped a strong yellow-haired boy, Dylan, and a second small form that became Lleu. Dylan made at once for the sea and took on the seas nature, swimming like a fish so that no wave ever broke beneath him."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 1,
+        "startEvent": "slain-by-Gofannon-with-one-blow",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch; Trioedd Ynys Prydein" }],
+        "notes": "Killed by a single blow from his uncle Gofannon fab Don, one of the Three Unfortunate Blows of the Island of Britain. The roar of the tide at the mouth of the river Conwy is said to be his death-groan."
+      }
+    ],
+    "domains": [
+      { "sphereId": "sea-and-waves", "contextTag": "lifelong", "term": { "value": "ton", "script": "Welsh", "rom": "ton" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch (Math fab Mathonwy)" }] }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Fourth Branch (Math fab Mathonwy), in the White Book of Rhydderch and Red Book of Hergest" },
+        { "kind": "secondary", "reference": "Bromwich, Trioedd Ynys Prydein (1961), on the slaying of Dylan as one of the Three Unfortunate Blows" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_lleu", "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch the dropping-of-two-sons scene" }], "notes": "Paired-birth brother of Lleu through the same magic-wand magical-conception; took the seas nature at birth." },
+      { "kind": "killed-by", "personId": "welsh_gofannon", "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch; Trioedd Ynys Prydein" }], "notes": "Slain by his uncle Gofannon with one blow." }
+    ]
+  },
+  {
+    "id": "welsh_nisien",
+    "name": {
+      "primary": "Nisien",
+      "alt": ["Nissyen", "Nisien fab Eurosswydd"],
+      "transliterations": { "middle-welsh": "Nissyen", "modern-welsh": "Nisien" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["welsh_penarddun", "welsh_eurosswydd"],
+    "parentRoles": { "welsh_penarddun": "maternal", "welsh_eurosswydd": "paternal" },
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Penarddun-and-Eurosswydd",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr)" }],
+        "notes": "Son of Penarddun by Eurosswydd; twin of Efnisien and half-brother of Bendigeidfran, Branwen, and Manawydan. Where Efnisien is wholly conflict-provoking, Nisien is the wholly peace-loving twin who could make peace between hosts at war."
+      }
+    ],
+    "domains": [
+      { "sphereId": "peace-making", "contextTag": "lifelong", "term": { "value": "tangnefedd", "script": "Welsh", "rom": "tangnefedd" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "the peaceable twin who reconciles those at strife" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "twin sibling", "personId": "welsh_efnisien", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "Twin of Efnisien; the good/evil dyad, Nisien peace-loving, Efnisien strife-provoking." },
+      { "kind": "half-sibling", "personId": "welsh_bendigeidfran", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }] },
+      { "kind": "half-sibling", "personId": "welsh_branwen", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }] },
+      { "kind": "half-sibling", "personId": "welsh_manawydan", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }] }
+    ]
+  },
+  {
+    "id": "welsh_eurosswydd",
+    "name": {
+      "primary": "Eurosswydd",
+      "alt": ["Euroswydd", "Eurosswydd"],
+      "transliterations": { "middle-welsh": "Eurosswydd", "modern-welsh": "Euroswydd" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "fathering-of-Nisien-and-Efnisien-by-Penarddun",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr)" }],
+        "notes": "Second consort of Penarddun, daughter of Beli Mawr; by her the father of the twins Nisien and Efnisien, half-brothers of the children of Llyr. In a Welsh Triad tradition he is the figure who imprisoned Llyr Llediaith."
+      }
+    ],
+    "domains": [
+      { "sphereId": "kinship-and-lineage", "contextTag": "lifelong", "term": { "value": "tad", "script": "Welsh", "rom": "tad" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "father of the half-brothers Nisien and Efnisien" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr)" },
+        { "kind": "secondary", "reference": "Bromwich, Trioedd Ynys Prydein (1961), on Eurosswydd and the imprisonment of Llyr" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "welsh_penarddun", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "Second consort of Penarddun after Llyr." },
+      { "kind": "father-of", "personId": "welsh_efnisien", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }] },
+      { "kind": "father-of", "personId": "welsh_nisien", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }] }
+    ]
+  },
+  {
+    "id": "welsh_matholwch",
+    "name": {
+      "primary": "Matholwch",
+      "alt": ["Matholwch king of Ireland", "Matholwch Wyddel"],
+      "transliterations": { "middle-welsh": "Matholwch", "modern-welsh": "Matholwch" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "king-of-ireland-reigning",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Branwen-and-alliance-with-Britain",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr)" }],
+        "notes": "King of Ireland who sailed to Harlech to ask Bendigeidfran for the hand of Branwen; the marriage was meant to bind Ireland and the Island of the Mighty. After Efnisien maimed his horses, received the Cauldron of Rebirth as compensation."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 1,
+        "startEvent": "abuse-of-Branwen-and-Welsh-Irish-war",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }],
+        "notes": "Under pressure from his nobles, set Branwen to menial kitchen-work and a daily blow; her starling-message brought the Welsh host. Father of Gwern by Branwen, the boy acclaimed king of Ireland before Efnisien cast him into the fire, triggering the war that ruined both realms."
+      },
+      { "vitalStatus": "dead", "era": "mabinogion-mythological", "eraOrdering": 2 }
+    ],
+    "domains": [
+      { "sphereId": "kingship-of-ireland", "contextTag": "lifelong", "term": { "value": "brenin Iwerddon", "script": "Welsh", "rom": "brenin Iwerddon" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "king of Ireland" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "welsh_branwen", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "Husband of Branwen, given to him by her brother Bendigeidfran." },
+      { "kind": "father-of", "personId": "welsh_gwern", "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch" }], "notes": "Father of Gwern by Branwen." }
+    ]
+  },
+  {
+    "id": "welsh_gronw_pebr",
+    "name": {
+      "primary": "Gronw Pebr",
+      "alt": ["Goronwy Pefr", "Gronw the Radiant", "lord of Penllyn"],
+      "transliterations": { "middle-welsh": "Goronwy Pebyr", "modern-welsh": "Gronw Pebr" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "affair-with-Blodeuwedd-and-plot-against-Lleu",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch (Math fab Mathonwy)" }],
+        "notes": "Lord of Penllyn who hunted near Mur Castell while Lleu was away; he and Blodeuwedd became lovers and conspired to kill Lleu. Blodeuwedd drew from Lleu the impossibly specific conditions of his death; Gronw forged the year-long spear and struck Lleu, who escaped as an eagle."
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 1,
+        "startEvent": "killed-by-Lleu-spear-through-stone-slab",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch" }],
+        "notes": "After Lleu was healed, Gronw was made to stand and receive the return blow; he begged to set a stone slab between himself and the spear, but Lleus cast pierced both stone and man, leaving the perforated Llech Gronw."
+      }
+    ],
+    "domains": [
+      { "sphereId": "hunting-and-warfare", "contextTag": "lifelong", "term": { "value": "arglwydd Penllyn", "script": "Welsh", "rom": "arglwydd Penllyn" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch" }], "notes": "hunter-lord of Penllyn" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Fourth Branch (Math fab Mathonwy), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "lover", "personId": "welsh_blodeuwedd", "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch" }], "notes": "Lover of Blodeuwedd during Lleus absence; co-conspirator in his attempted murder." },
+      { "kind": "enemy", "personId": "welsh_lleu", "sources": [{ "kind": "primary", "reference": "Mabinogion Fourth Branch" }], "notes": "Mortally wounded Lleu with the year-long spear; later killed by Lleus return-throw through the stone slab." }
+    ]
+  },
+  {
+    "id": "welsh_teyrnon",
+    "name": {
+      "primary": "Teyrnon Twrf Liant",
+      "alt": ["Teyrnon", "Teirnon Twryf Vliant", "lord of Gwent Is Coed"],
+      "transliterations": { "middle-welsh": "Teyrnon Twryf Vliant", "modern-welsh": "Teyrnon Twrf Liant" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "lord-of-gwent-is-coed",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "rescue-and-fostering-of-the-infant-Pryderi",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch (Pwyll Pendefig Dyfed)" }],
+        "notes": "Lord of Gwent Is Coed whose mare foaled each May Eve only for the foals to vanish. Standing guard, he severed the clawed arm of the monster that seized the foal and found an infant boy left at the door; he and his wife raised the child as Gwri Wallt Euryn until, recognising the boys likeness to Pwyll, they restored him to Arberth, where Rhiannon named him Pryderi."
+      }
+    ],
+    "domains": [
+      { "sphereId": "lordship-and-horsemanship", "contextTag": "lifelong", "term": { "value": "arglwydd Gwent Is Coed", "script": "Welsh", "rom": "arglwydd Gwent Is Coed" }, "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch" }], "notes": "lord of Gwent Is Coed; keeper of the marvellous mare" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion First Branch (Pwyll Pendefig Dyfed), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "foster-parent", "personId": "welsh_pryderi", "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch" }], "notes": "Found, named, and fostered the infant Pryderi as Gwri Wallt Euryn until restoring him to Pwyll and Rhiannon." }
+    ]
+  },
+  {
+    "id": "welsh_llefelys",
+    "name": {
+      "primary": "Llefelys",
+      "alt": ["Llefelys fab Beli", "Lleuelys", "king of France"],
+      "transliterations": { "middle-welsh": "Lleuelys", "modern-welsh": "Llefelys" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["welsh_beli_mawr"],
+    "parentRoles": { "welsh_beli_mawr": "paternal" },
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "king-of-france-reigning",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "kingship-of-France-and-counsel-to-Lludd",
+        "sources": [{ "kind": "primary", "reference": "Cyfranc Lludd a Llefelys" }],
+        "notes": "Son of Beli Mawr and brother of Lludd; he won the kingdom of France by marrying its princess. When three plagues beset Britain, Lludd sought his counsel through a long brazen horn, and Llefelys supplied the remedies for the Coraniaid, the May-Eve shriek of the dragons, and the magician-thief."
+      },
+      { "vitalStatus": "dead", "era": "mabinogion-mythological", "eraOrdering": 1 }
+    ],
+    "domains": [
+      { "sphereId": "kingship-and-counsel", "contextTag": "lifelong", "term": { "value": "brenin Ffrainc", "script": "Welsh", "rom": "brenin Ffrainc" }, "sources": [{ "kind": "primary", "reference": "Cyfranc Lludd a Llefelys" }], "notes": "king of France; wise counsellor to Lludd" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Cyfranc Lludd a Llefelys, in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_lludd_llaw_eraint", "sources": [{ "kind": "primary", "reference": "Cyfranc Lludd a Llefelys" }], "notes": "Brother of Lludd; together they freed Britain of the three plagues." }
+    ]
+  },
+  {
+    "id": "welsh_gwawl",
+    "name": {
+      "primary": "Gwawl fab Clud",
+      "alt": ["Gwawl", "Gwawl son of Clud"],
+      "transliterations": { "middle-welsh": "Gwawl uab Clut", "modern-welsh": "Gwawl fab Clud" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "rival-suitor-of-Rhiannon-trapped-in-the-bag",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch (Pwyll Pendefig Dyfed)" }],
+        "notes": "Son of Clud, the suitor to whom Rhiannon was betrothed against her will. At the wedding-feast Pwyll, disguised as a beggar on Rhiannons counsel, tricked Gwawl into the bag that could never be filled and trapped him; struck by the company in the game of Badger-in-the-Bag, Gwawl bought his release by renouncing Rhiannon and pledging to take no revenge. The later vengeance for his humiliation falls on Dyfed through his friend Llwyd ap Cilcoed."
+      }
+    ],
+    "domains": [
+      { "sphereId": "rivalry-and-courtship", "contextTag": "episodic", "term": { "value": "darpar-wr", "script": "Welsh", "rom": "darpar-wr" }, "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch" }], "notes": "betrothed rival-suitor of Rhiannon" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion First Branch (Pwyll Pendefig Dyfed), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "rival", "personId": "welsh_pwyll", "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch" }], "notes": "Rival suitor outwitted by Pwyll through the bag-trick." },
+      { "kind": "enemy", "personId": "welsh_rhiannon", "sources": [{ "kind": "primary", "reference": "Mabinogion First Branch" }], "notes": "The suitor Rhiannon contrived to be freed from; his grievance later afflicts her household in Dyfed." }
+    ]
+  },
+  {
+    "id": "welsh_caswallawn",
+    "name": {
+      "primary": "Caswallawn fab Beli",
+      "alt": ["Caswallawn", "Caswallon", "Cassivellaunus (historical analogue)"],
+      "transliterations": { "middle-welsh": "Caswallawn", "modern-welsh": "Caswallawn" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["welsh_beli_mawr"],
+    "parentRoles": { "welsh_beli_mawr": "paternal" },
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "usurpation-of-Britain-with-the-cloak-of-invisibility",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr); Trioedd Ynys Prydein" }],
+        "notes": "Son of Beli Mawr who seized the crown of Britain while Bendigeidfran was at war in Ireland. Wearing a cloak of invisibility he slew the stewards left in charge; the Welsh tradition makes him the figure who took the kingship from the line of Llyr. He is the Welsh literary counterpart of the historical Briton-leader Cassivellaunus."
+      },
+      { "vitalStatus": "dead", "era": "mabinogion-mythological", "eraOrdering": 1 }
+    ],
+    "domains": [
+      { "sphereId": "kingship-and-usurpation", "contextTag": "lifelong", "term": { "value": "brenin Ynys Prydain", "script": "Welsh", "rom": "brenin Ynys Prydain" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Second Branch; Trioedd Ynys Prydein" }], "notes": "usurping king of the Island of Britain" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Second Branch (Branwen ferch Llyr)" },
+        { "kind": "secondary", "reference": "Bromwich, Trioedd Ynys Prydein (1961), on Caswallawn fab Beli and the usurpation" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_lludd_llaw_eraint", "sources": [{ "kind": "secondary", "reference": "Trioedd Ynys Prydein; Welsh genealogical tradition (sons of Beli Mawr)" }], "notes": "Brother of Lludd among the sons of Beli Mawr." },
+      { "kind": "sibling", "personId": "welsh_penarddun", "sources": [{ "kind": "secondary", "reference": "Welsh genealogical tradition (children of Beli Mawr)" }], "notes": "Brother of Penarddun, both children of Beli Mawr." }
+    ]
+  },
+  {
+    "id": "welsh_nynniaw",
+    "name": {
+      "primary": "Nynniaw fab Beli",
+      "alt": ["Nynniaw", "Nyniaw", "Nynnio"],
+      "transliterations": { "middle-welsh": "Nynyaw", "modern-welsh": "Nynniaw" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["welsh_beli_mawr"],
+    "parentRoles": { "welsh_beli_mawr": "paternal" },
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-son-of-Beli-Mawr",
+        "sources": [{ "kind": "primary", "reference": "Culhwch ac Olwen; Welsh genealogical tradition" }],
+        "notes": "Son of Beli Mawr named among the foundational royal kindred of Britain. In Culhwch ac Olwen, Nynniaw and his brother Peibaw appear as a yoked pair of oxen whom God had turned into beasts for their sins, set as one of Ysbaddadens impossible tasks."
+      }
+    ],
+    "domains": [
+      { "sphereId": "royal-lineage-of-Britain", "contextTag": "lifelong", "term": { "value": "mab Beli Mawr", "script": "Welsh", "rom": "mab Beli Mawr" }, "sources": [{ "kind": "primary", "reference": "Culhwch ac Olwen" }], "notes": "son of Beli Mawr; the ox Nynniaw of Culhwch" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Culhwch ac Olwen, in the White Book of Rhydderch and Red Book of Hergest" },
+        { "kind": "secondary", "reference": "Bromwich, Trioedd Ynys Prydein (1961); Welsh genealogical tradition listing the sons of Beli Mawr" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "welsh_lludd_llaw_eraint", "sources": [{ "kind": "secondary", "reference": "Welsh genealogical tradition (sons of Beli Mawr)" }], "notes": "Brother of Lludd among the sons of Beli Mawr." }
+    ]
+  },
+  {
+    "id": "welsh_gwyn_gohoyw",
+    "name": {
+      "primary": "Gwyn Gohoyw",
+      "alt": ["Gwynn Gohoyw", "Gwyn Glohoyw"],
+      "transliterations": { "middle-welsh": "Gwynn Gohoyw", "modern-welsh": "Gwyn Gohoyw" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-father-of-Cigfa",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch (Manawydan fab Llyr)" }],
+        "notes": "Welsh noble named in the Third Branch genealogy as the father of Cigfa, wife of Pryderi. The pedigree gives Cigfa daughter of Gwyn Gohoyw son of Gloyw Walltlydan son of Casnar Wledig."
+      }
+    ],
+    "domains": [
+      { "sphereId": "noble-lineage", "contextTag": "lifelong", "term": { "value": "tad Cigfa", "script": "Welsh", "rom": "tad Cigfa" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch" }], "notes": "father of Cigfa in the Dyfed genealogy" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Third Branch (Manawydan fab Llyr), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "father-of", "personId": "welsh_cigfa", "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch" }], "notes": "Father of Cigfa, wife of Pryderi." }
+    ]
+  },
+  {
+    "id": "welsh_tegid_foel",
+    "name": {
+      "primary": "Tegid Foel",
+      "alt": ["Tegid", "Tegid the Bald", "lord of Llyn Tegid"],
+      "transliterations": { "middle-welsh": "Tegit Voel", "modern-welsh": "Tegid Foel" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "dwelling-at-Llyn-Tegid-with-Ceridwen",
+        "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }],
+        "notes": "Husband of the enchantress Ceridwen, dwelling by Llyn Tegid (Bala Lake), which bears his name; folk tradition makes him the tutelary figure of that lake. By Ceridwen he is father of the fair Creirwy and of Morfran (Afagddu), for whose sake Ceridwen brewed the cauldron of Awen."
+      }
+    ],
+    "domains": [
+      { "sphereId": "lake-and-place", "contextTag": "lifelong", "term": { "value": "Llyn Tegid", "script": "Welsh", "rom": "Llyn Tegid" }, "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }], "notes": "lord and eponym of Llyn Tegid (Bala Lake)" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin); the Tale of Taliesin" },
+        { "kind": "secondary", "reference": "standard Welsh-mythology reference works s.v. Tegid Foel, husband of Ceridwen at Llyn Tegid" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "welsh_ceridwen", "sources": [{ "kind": "primary", "reference": "Ystoria Taliesin (Hanes Taliesin)" }], "notes": "Husband of Ceridwen; they dwell by Llyn Tegid." }
+    ]
+  },
+  {
+    "id": "welsh_llwyd",
+    "name": {
+      "primary": "Llwyd ap Cilcoed",
+      "alt": ["Llwyd fab Cil Coed", "Llwyd"],
+      "transliterations": { "middle-welsh": "Llwyt uab Kil Coet", "modern-welsh": "Llwyd ap Cilcoed" }
+    },
+    "type": "mortal",
+    "tradition": "Welsh",
+    "primaryTradition": "Welsh",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mabinogion-mythological" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mabinogion-mythological",
+        "eraOrdering": 0,
+        "startEvent": "enchantment-of-Dyfed-in-revenge-for-Gwawl",
+        "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch (Manawydan fab Llyr)" }],
+        "notes": "Magician and friend of Gwawl ap Clud who avenged Gwawls humiliation by laying a desolating enchantment on Dyfed, emptying it of all but Pryderi, Rhiannon, Manawydan, and Cigfa, and imprisoning Pryderi and Rhiannon in an otherworld fortress. His war-band, turned to mice, ravaged Manawydans wheat; when Manawydan caught his pregnant wife in mouse-form, Llwyd was forced to lift the enchantment and free his captives."
+      }
+    ],
+    "domains": [
+      { "sphereId": "enchantment-and-revenge", "contextTag": "lifelong", "term": { "value": "hud", "script": "Welsh", "rom": "hud" }, "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch" }], "notes": "enchanter who desolates Dyfed in vengeance for his friend Gwawl" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Mabinogion Third Branch (Manawydan fab Llyr), in the White Book of Rhydderch and Red Book of Hergest" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "enemy", "personId": "welsh_pryderi", "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch" }], "notes": "Imprisoned Pryderi in his otherworld court during the enchantment of Dyfed." },
+      { "kind": "enemy", "personId": "welsh_manawydan", "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch" }], "notes": "His mouse-host was caught by Manawydan, who forced him to undo the enchantment." },
+      { "kind": "enemy", "personId": "welsh_rhiannon", "sources": [{ "kind": "primary", "reference": "Mabinogion Third Branch" }], "notes": "Held Rhiannon captive in his court until compelled to release her." }
+    ]
+  },
+  {
+    "id": "yanomami_yoasi",
+    "name": {
+      "primary": "Yoasi",
+      "alt": ["Yoasi", "Yoasi the younger brother"],
+      "transliterations": { "yanomami": "Yoasi" }
+    },
+    "type": "deity",
+    "tradition": "Yanomami",
+    "primaryTradition": "Yanomami",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "introduction-of-death-and-ills",
+        "sources": [{ "kind": "primary", "reference": "Kopenawa and Albert, The Falling Sky (2013)" }],
+        "notes": "Inept and harmful brother of the creator-demiurge Omama. Where Omama set the world in good order, Yoasi acted clumsily and introduced death, sickness, and the ills that beset the Yanomami; the people are mortal because of his doing rather than Omamas."
+      }
+    ],
+    "domains": [
+      { "sphereId": "death-and-misfortune", "contextTag": "lifelong", "term": { "value": "Yoasi", "script": "Yanomami", "rom": "Yoasi" }, "sources": [{ "kind": "primary", "reference": "Kopenawa and Albert, The Falling Sky (2013)" }], "notes": "the brother who brought death and ills into the world" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Davi Kopenawa and Bruce Albert, The Falling Sky: Words of a Yanomami Shaman (2013)" },
+        { "kind": "secondary", "reference": "Wilbert and Simoneau (eds.), Folk Literature of the Yanomami Indians (1990)" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "sibling", "personId": "yanomami_omama", "sources": [{ "kind": "primary", "reference": "Kopenawa and Albert, The Falling Sky (2013)" }], "notes": "Brother of the creator Omama; the destructive counterpart who introduced death." }
+    ]
+  },
+  {
+    "id": "yanomami_yoawe",
+    "name": {
+      "primary": "Yoawe",
+      "alt": ["Yoawe", "Yoawa", "Yoawe twin of Omawe"],
+      "transliterations": { "yanomami": "Yoawe" }
+    },
+    "type": "demigod",
+    "tradition": "Yanomami",
+    "primaryTradition": "Yanomami",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic" },
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "twin-culture-hero-of-the-flood-cycle",
+        "sources": [{ "kind": "secondary", "reference": "Wilbert and Simoneau (eds.), Folk Literature of the Yanomami Indians (1990)" }],
+        "notes": "Twin culture-hero and brother of Omawe in the Omawe-Yoawe cycle. With his brother he won water and cultivated plants from the daughter of the water-being and taught the Yanomami the arts of living, including how to build the communal house."
+      }
+    ],
+    "domains": [
+      { "sphereId": "culture-hero-twins", "contextTag": "lifelong", "term": { "value": "Yoawe", "script": "Yanomami", "rom": "Yoawe" }, "sources": [{ "kind": "secondary", "reference": "Wilbert and Simoneau (eds.), Folk Literature of the Yanomami Indians (1990)" }], "notes": "twin of Omawe in the dual culture-hero cycle" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "secondary", "reference": "Wilbert and Simoneau (eds.), Folk Literature of the Yanomami Indians (1990)" },
+        { "kind": "secondary", "reference": "Lizot, Yanomami ethnography and narratives" }
+      ], "weight": "secondary" }
+    ],
+    "relations": [
+      { "kind": "twin sibling", "personId": "yanomami_omawe", "sources": [{ "kind": "secondary", "reference": "Wilbert and Simoneau (eds.), Folk Literature of the Yanomami Indians (1990)" }], "notes": "Twin and companion of Omawe in the culture-hero cycle." }
+    ]
+  },
+  {
+    "id": "yapese_yanolop",
+    "name": {
+      "primary": "Yanolop",
+      "alt": ["Yanolap", "Yanolop the chief god"],
+      "transliterations": { "yap": "Yanolop" }
+    },
+    "type": "deity",
+    "tradition": "Yapese",
+    "primaryTradition": "Yapese",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["yapese_gavur_li_yel_yel"],
+    "parentRoles": { "yapese_gavur_li_yel_yel": "paternal" },
+    "temporal": { "era": "primordial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "fashioned-by-the-first-sky-maker-and-making-of-the-sky-gods",
+        "sources": [{ "kind": "reference", "reference": "Lingenfelter, S. G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press" }],
+        "notes": "Chief god fashioned by the primordial sky-maker Gavur li yel yel from his hands and dirt. With his mind Yanolop in turn made five further sky deities, four male and one female (Matsugulop), from whom the later generations of Yapese gods descend, among them the sky high-god Yalafath."
+      }
+    ],
+    "domains": [
+      { "sphereId": "creation-of-the-sky-gods", "contextTag": "lifelong", "term": { "value": "lang", "script": "Latn", "rom": "lang" }, "sources": [{ "kind": "reference", "reference": "Lingenfelter, S. G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press" }], "notes": "chief sky-god and maker of the five sky deities" }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "ethnography", "reference": "Muller, W. (1917). Yap. Ergebnisse der Sudsee-Expedition 1908-1910, II.B.2, Friederichsen, Hamburg" },
+        { "kind": "reference", "reference": "Lingenfelter, S. G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press, Honolulu" }
+      ], "weight": "primary" }
+    ],
+    "relations": [
+      { "kind": "ancestor of", "personId": "yapese_yalafath", "sources": [{ "kind": "reference", "reference": "Lingenfelter, S. G. (1975). Yap: Political Leadership and Culture Change in an Island Society. University of Hawaii Press" }], "notes": "Maker of the first generation of sky gods from which Yalafath the Elder, creator of humankind, descends." }
+    ]
+  }
+]
+```

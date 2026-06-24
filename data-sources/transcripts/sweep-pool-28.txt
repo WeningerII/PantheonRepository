@@ -1,0 +1,630 @@
+Window #28 (W28) family-completion sweep — new figures authored for kin NAMED in the prose of existing Tongan and Tuamotuan entities (Aho-eitu sky-brothers; Seketoa elder brother; Tuamotuan Hina/Faumea kin). All verified by WebSearch; cited at work level. No apostrophes inside JSON string values (rephrased).
+
+```json
+[
+  {
+    "id": "tongan_talafale",
+    "name": {
+      "primary": "Talafale",
+      "alt": ["Tala-fale"],
+      "transliterations": {"tongan": "Talafale"}
+    },
+    "type": "demigod",
+    "tradition": "Tongan",
+    "primaryTradition": "Tongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tongan_tangaloa_eitumatupua"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Eldest of the sky-sons of Tangaloa Eitumatupua by a celestial woman; with his four brothers he killed and ate their half-brother Aho-eitu out of jealousy, and after Aho-eitu was restored Tangaloa sent Talafale down as the Tui Faleua, the substitute royal line to rule should the Tui Tonga line ever fail.",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the installation of Aho-eitu and the origin of the Tui Faleua"}
+        ],
+        "notes": "Talafale also held the high title Tui Pelehake in the genealogical tradition."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Talafale the Tui Faleua"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), the Aho-eitu narrative and the sky-brothers"},
+          {"kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "tongan_ahoeitu",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), Aho-eitu and his sky-brothers"}
+        ],
+        "notes": "Eldest half-brother of Aho-eitu (shared father Tangaloa Eitumatupua; Aho-eitu born of the mortal Ilaheva, the brothers of celestial women). One of the five who slew and then disgorged Aho-eitu; afterward made the Tui Faleua."
+      }
+    ]
+  },
+  {
+    "id": "tongan_matakehe",
+    "name": {
+      "primary": "Matakehe",
+      "alt": ["Mata-kehe"],
+      "transliterations": {"tongan": "Matakehe"}
+    },
+    "type": "demigod",
+    "tradition": "Tongan",
+    "primaryTradition": "Tongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tongan_tangaloa_eitumatupua"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "One of the five sky-sons of Tangaloa Eitumatupua who killed and ate their half-brother Aho-eitu; after the restoration he was set, with his brothers Maliepo, Tui Loloko and Tui Folaha, as one of the Falefa, the four attendant chiefly houses of the Tui Tonga.",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa and the sky-brothers of Aho-eitu"}
+        ],
+        "notes": "Matakehe and his younger brother Tui Folaha are remembered as guardians of the person of the Tui Tonga; his line is said to have ended under the Tui Tonga Tuitatui."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa of the Tui Tonga"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"},
+          {"kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "tongan_ahoeitu",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), Aho-eitu and his sky-brothers"}
+        ],
+        "notes": "Half-brother of Aho-eitu (shared father Tangaloa Eitumatupua); one of the five sky-brothers and afterward one of the Falefa."
+      }
+    ]
+  },
+  {
+    "id": "tongan_maliepo",
+    "name": {
+      "primary": "Maliepo",
+      "alt": ["Maliepo", "Malie-po"],
+      "transliterations": {"tongan": "Maliepo"}
+    },
+    "type": "demigod",
+    "tradition": "Tongan",
+    "primaryTradition": "Tongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tongan_tangaloa_eitumatupua"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "One of the five sky-sons of Tangaloa Eitumatupua who slew their half-brother Aho-eitu; after the restoration he became one of the Falefa, the four supporting houses of the Tui Tonga. From Maliepo descend the matapule Lauaki and the Kau Tufunga, the royal undertakers of the Tui Tonga.",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa and the descent of the Lauaki from Maliepo"}
+        ],
+        "notes": "His descendants are the matapule Lauaki and the royal undertakers (Kau Tufunga)."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa of the Tui Tonga"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"},
+          {"kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "tongan_ahoeitu",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), Aho-eitu and his sky-brothers"}
+        ],
+        "notes": "Half-brother of Aho-eitu (shared father Tangaloa Eitumatupua); one of the five sky-brothers and afterward one of the Falefa."
+      }
+    ]
+  },
+  {
+    "id": "tongan_tuiloloko",
+    "name": {
+      "primary": "Tui Loloko",
+      "alt": ["Tuiloloko", "Tui-Loloko"],
+      "transliterations": {"tongan": "Tui Loloko"}
+    },
+    "type": "demigod",
+    "tradition": "Tongan",
+    "primaryTradition": "Tongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tongan_tangaloa_eitumatupua"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "One of the five sky-sons of Tangaloa Eitumatupua who killed and ate their half-brother Aho-eitu; after the restoration he was set as one of the Falefa, the four attendant chiefly houses of the Tui Tonga, and his line is reckoned still extant.",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa and the sky-brothers of Aho-eitu"}
+        ],
+        "notes": "His matapule line is reported to survive."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa of the Tui Tonga"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"},
+          {"kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "tongan_ahoeitu",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), Aho-eitu and his sky-brothers"}
+        ],
+        "notes": "Half-brother of Aho-eitu (shared father Tangaloa Eitumatupua); one of the five sky-brothers and afterward one of the Falefa."
+      }
+    ]
+  },
+  {
+    "id": "tongan_tuifolaha",
+    "name": {
+      "primary": "Tui Folaha",
+      "alt": ["Tuifolaha", "Tui-Folaha"],
+      "transliterations": {"tongan": "Tui Folaha"}
+    },
+    "type": "demigod",
+    "tradition": "Tongan",
+    "primaryTradition": "Tongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tongan_tangaloa_eitumatupua"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Youngest of the five sky-sons of Tangaloa Eitumatupua who slew their half-brother Aho-eitu; after the restoration he was set as one of the Falefa and, with his elder brother Matakehe, was a guardian of the person of the Tui Tonga.",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa and the guardianship of the Tui Tonga"}
+        ],
+        "notes": "His lineage is said to have ended under the Tui Tonga Tuitatui."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "sacred-kingship",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on the Falefa of the Tui Tonga"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924)"},
+          {"kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "half-sibling",
+        "personId": "tongan_ahoeitu",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), Aho-eitu and his sky-brothers"}
+        ],
+        "notes": "Half-brother of Aho-eitu (shared father Tangaloa Eitumatupua); youngest of the five sky-brothers and afterward one of the Falefa."
+      }
+    ]
+  },
+  {
+    "id": "tongan_moimoi",
+    "name": {
+      "primary": "Moimoi",
+      "alt": ["Moi-moi"],
+      "transliterations": {"tongan": "Moimoi"}
+    },
+    "type": "mortal",
+    "tradition": "Tongan",
+    "primaryTradition": "Tongan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "Elder son of a son of Puakatefisi of the Maatu line of Niuatoputapu, and elder brother of Seketoa; believing their father loved Seketoa the more, Moimoi grew so jealous that he plotted to kill his younger brother, who thereupon cast himself into the sea and became the shark-god, leaving Moimoi behind to serve the Maatu.",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Seketoa of Niuatoputapu and his elder brother Moimoi"}
+        ],
+        "notes": "Moimoi is the jealous elder brother whose enmity drives the Seketoa narrative; he remains a mortal man of the Maatu line."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), the Seketoa narrative"},
+          {"kind": "secondary", "reference": "Collocott, E. E. V. Tales and Poems of Tonga (Bishop Museum Bulletin 46, 1928), on the god Seketoa and his brother"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tongan_seketoa",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Moimoi and Seketoa"}
+        ],
+        "notes": "Elder brother of Seketoa of the Maatu line of Niuatoputapu."
+      },
+      {
+        "kind": "enemy",
+        "personId": "tongan_seketoa",
+        "sources": [
+          {"kind": "secondary", "reference": "Gifford, E. W. Tongan Myths and Tales (Bishop Museum Bulletin 8, 1924), on Moimoi plotting against Seketoa"}
+        ],
+        "notes": "His jealousy and plot against the beloved younger brother drove Seketoa into the sea to become a god."
+      }
+    ]
+  },
+  {
+    "id": "tuamotuan_te_tuna",
+    "name": {
+      "primary": "Te Tuna",
+      "alt": ["Tuna", "Tuna the eel", "Tuna-roa"],
+      "transliterations": {"tuamotuan": "Te Tuna", "etymology": "Te Tuna, from tuna the freshwater/sea eel; the eel-lord, husband of Hina, slain by Maui."}
+    },
+    "type": "numen",
+    "tradition": "Tuamotuan",
+    "primaryTradition": "Tuamotuan",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Te Tuna, the great eel-lord, is the husband with whom Hina dwells in the land beneath the sea; wearying of her eel-husband and of the cold below, Hina seeks Maui, and Maui and Te Tuna match their strength for her sake.",
+        "sources": [
+          {"kind": "secondary", "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Hina, Te Tuna and Maui in the Tuamotuan cycle"}
+        ],
+        "notes": "The Hina-Tuna-Maui triangle is recorded in the Tuamotus as well as across Polynesia."
+      },
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "Maui slays Te Tuna and cuts off his head; from the buried head springs the first coconut palm, Niu-roa-i-Havaiki, and Maui wins Hina.",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan Maui-Tuna-Hina episode and the coconut from Tuna head"}
+        ],
+        "notes": "The origin of the coconut from the eel-lord head is the fixed close of the episode."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "eels-and-the-waters",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on the eel-lord Te Tuna"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934)"},
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (quoting the Tuamotuan Maui-Tuna text)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "tuamotuan_hina",
+        "sources": [
+          {"kind": "secondary", "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Hina the wife of Te Tuna"}
+        ],
+        "notes": "Husband of Hina before Maui slays him and wins her."
+      },
+      {
+        "kind": "enemy",
+        "personId": "tuamotuan_maui",
+        "sources": [
+          {"kind": "secondary", "reference": "Stimson, J. Frank. The Legends of Maui and Tahaki (Bernice P. Bishop Museum Bulletin 127, 1934), on Maui slaying Te Tuna"}
+        ],
+        "notes": "Slain by Maui in the contest over Hina; the first coconut springs from his severed head."
+      }
+    ]
+  },
+  {
+    "id": "tuamotuan_ru",
+    "name": {
+      "primary": "Ru",
+      "alt": ["Ru the voyager", "Ru the sky-raiser"],
+      "transliterations": {"tuamotuan": "Ru", "etymology": "Ru, glossed the Transplanter / the one who props; the voyager-god who raised the sky and circumnavigated the ocean, brother of Hina-fa-auru-va-a."}
+    },
+    "type": "deity",
+    "tradition": "Tuamotuan",
+    "primaryTradition": "Tuamotuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Ru, who propped up and raised the sky from the earth, fits out his canoe Te-apori and sets out to circle the ocean with his sister Hina-fa-auru-va-a; he steers astern with his great paddle while Hina watches from the bow and names the islands they find.",
+        "sources": [
+          {"kind": "secondary", "reference": "Emory, Kenneth P. Tuamotuan Concepts of Creation, Journal of the Polynesian Society 49 (1940), pp. 69-136, and the Tuamotuan voyaging traditions, on Ru and his sister Hina the canoe-pilot"}
+        ],
+        "notes": "The voyaging of Ru and Hina (Hina at the bow naming the islands) is the firmly-attested narrative; Ru is the sky-raiser and explorer."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "voyaging-and-navigation",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Emory, Kenneth P. Tuamotuan Concepts of Creation, Journal of the Polynesian Society 49 (1940), pp. 69-136, on Ru the voyager"}
+        ]
+      },
+      {
+        "sphereId": "the-raising-of-the-sky",
+        "contextTag": "episodic",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Ru who raised the sky in the Polynesian tradition"}
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "raise-the-sky",
+        "name": "props up and raises the sky from the earth",
+        "inheritability": "none",
+        "notes": "Ru lifts the overhanging sky off the land, a deed shared with the wider Polynesian Ru tradition.",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Ru the sky-raiser"}
+        ],
+        "scopeTags": ["cosmogonic"]
+      }
+    ],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Emory, Kenneth P. Tuamotuan Concepts of Creation, Journal of the Polynesian Society 49 (1940), pp. 69-136"},
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tuamotuan_hina",
+        "sources": [
+          {"kind": "secondary", "reference": "Emory, Kenneth P. Tuamotuan Concepts of Creation, Journal of the Polynesian Society 49 (1940), pp. 69-136, on Hina-fa-auru-va-a and her brother Ru"}
+        ],
+        "notes": "Brother of Hina-fa-auru-va-a, the canoe-pilot; she sits at the bow naming the islands as Ru steers and circumnavigates the ocean."
+      }
+    ]
+  },
+  {
+    "id": "tuamotuan_tunuikarere",
+    "name": {
+      "primary": "Tu-nui-ka-rere",
+      "alt": ["Tunuikarere", "Rata-nui"],
+      "transliterations": {"tuamotuan": "Tu-nui-ka-rere"}
+    },
+    "type": "deity",
+    "tradition": "Tuamotuan",
+    "primaryTradition": "Tuamotuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["tuamotuan_takaroa", "tuamotuan_faumea"],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Tu-nui-ka-rere, one of the two sons of the sea-god Takaroa and the eel-woman Faumea, is born after Takaroa lures the man-eating eels from Faumea body and takes her to wife.",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), recounting the Tuamotuan text of Takaroa, the eel-woman Faumea, and their sons Tu-nui-ka-rere and Turi-a-Faumea"}
+        ],
+        "notes": "Recorded as a son of Takaroa and Faumea; also called Rata-nui."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-sea-and-the-deep",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on the sons of Takaroa and Faumea"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (quoting the Tuamotuan Faumea text)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tuamotuan_turiafaumea",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on the two sons of Takaroa and Faumea"}
+        ],
+        "notes": "Brother of Turi-a-Faumea, fellow son of Takaroa and the eel-woman Faumea."
+      }
+    ]
+  },
+  {
+    "id": "tuamotuan_turiafaumea",
+    "name": {
+      "primary": "Turi-a-Faumea",
+      "alt": ["Turiafaumea", "Turi-a-faumea"],
+      "transliterations": {"tuamotuan": "Turi-a-Faumea", "etymology": "Turi-a-Faumea, Turi of/by Faumea; the son of Faumea (and Takaroa) whose wife Hina-a-rau-riki is carried off by the octopus-demon Rogo-tumu-here."}
+    },
+    "type": "deity",
+    "tradition": "Tuamotuan",
+    "primaryTradition": "Tuamotuan",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["tuamotuan_takaroa", "tuamotuan_faumea"],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "Turi-a-Faumea, son of the sea-god Takaroa and the eel-woman Faumea, takes Hina-a-rau-riki to wife; when the octopus-demon Rogo-tumu-here carries her off, Takaroa and Faumea raise the wind to speed the rescue-canoes, Faumea loosing it from the sweat of her armpit.",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on Faumea sons and the rescue of Turi-a-Faumea wife from Rogo-tumu-here"}
+        ],
+        "notes": "His wife Hina-a-rau-riki is the woman seized by the octopus-demon Rogo-tumu-here; the rescue is powered by Faumea wind-magic."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "the-sea-and-the-deep",
+        "contextTag": "lifelong",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on the sons of Takaroa and Faumea"}
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940) (quoting the Tuamotuan Faumea text)"}
+        ],
+        "weight": "primary"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tuamotuan_tunuikarere",
+        "sources": [
+          {"kind": "secondary", "reference": "Beckwith, Martha Warren. Hawaiian Mythology (1940), on the two sons of Takaroa and Faumea"}
+        ],
+        "notes": "Brother of Tu-nui-ka-rere, fellow son of Takaroa and the eel-woman Faumea."
+      }
+    ]
+  }
+]
+```

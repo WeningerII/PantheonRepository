@@ -1,0 +1,374 @@
+Sweep pool 16 — family-completion authoring for window #16.
+Worker W16. New figures named in the prose of existing window-16 entities but lacking their own entry.
+Each verified via WebSearch; cited at work level.
+
+```json
+[
+  {
+    "id": "maya_chimalmat",
+    "name": {
+      "primary": "Chimalmat",
+      "alt": ["Chimalmiat", "Chimalmat"],
+      "transliterations": {"kiche": "Chimalmat"}
+    },
+    "type": "numen",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "consort-of-the-false-sun-Vucub-Caquix",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II (the Vucub Caquix episode); D. Tedlock trans. (1996)"}],
+        "notes": "Wife of Vucub Caquix (Seven Macaw), the vainglorious false-sun macaw-demon; mother by him of Zipacna and Cabracan."
+      },
+      {
+        "typeStatus": "numen",
+        "vitalStatus": "dead",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "perishing-after-her-husbands-defeat",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II; A. J. Christenson trans. (2003)"}],
+        "notes": "Perished following the defeat of Vucub Caquix by the Hero Twins, who stripped him of his jeweled teeth and shining eyes."
+      }
+    ],
+    "domains": [
+      {"sphereId": "consort-of-the-false-sun", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "Spouse of the false-sun bird-demon; her name is glossed by some commentators as connected to chimal (shield)."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Popol Vuh, Part II (Vucub Caquix episode); D. Tedlock trans. (1996); A. J. Christenson trans. (2003)"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "maya_vucub_caquix", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Chimalmat the wife of Seven Macaw"}], "notes": "Wife of Vucub Caquix; both perished after the Hero Twins brought down the false sun."},
+      {"kind": "mother-of", "personId": "maya_zipacna", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Zipacna son of Vucub Caquix and Chimalmat"}], "notes": "Mother of Zipacna the mountain-maker."},
+      {"kind": "mother-of", "personId": "maya_cabracan", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Cabracan son of Vucub Caquix and Chimalmat"}], "notes": "Mother of Cabracan the earthquake-god."}
+    ]
+  },
+  {
+    "id": "maya_zipacna",
+    "name": {
+      "primary": "Zipacna",
+      "alt": ["Sipakna", "Zipacná", "Mountain-Maker"],
+      "transliterations": {"kiche": "Sipakna"}
+    },
+    "type": "deity",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["maya_vucub_caquix", "maya_chimalmat"],
+    "parentRoles": {"maya_vucub_caquix": "paternal", "maya_chimalmat": "maternal"},
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Vucub-Caquix-and-Chimalmat",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II; D. Tedlock trans. (1996)"}],
+        "notes": "Elder son of the false sun Vucub Caquix and Chimalmat; a caiman-formed maker of mountains."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "slaying-of-the-Four-Hundred-Boys",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Zipacna crushes the Four Hundred Boys"}],
+        "notes": "Boasted of raising the mountains; killed the Four Hundred Boys by collapsing their house upon them."
+      },
+      {
+        "typeStatus": "deity",
+        "vitalStatus": "dead",
+        "era": "mythic",
+        "eraOrdering": 2,
+        "startEvent": "defeat-and-burial-under-Meawan-mountain",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — the Hero Twins lure Zipacna and bury him under the mountain"}],
+        "notes": "Lured by Hunahpu and Xbalanque to dig beneath Meawan mountain, where they toppled it onto him and turned him to stone."
+      }
+    ],
+    "domains": [
+      {"sphereId": "mountains-and-earth-raising", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "The maker and raiser of mountains; a giant caiman of arrogant strength."}
+    ],
+    "faculties": [
+      {"id": "raise-the-mountains", "name": "Raise up and carry the mountains", "inheritability": "none", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "Boasts that he creates and bears the mountains on his back."}
+    ],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Popol Vuh, Part II (the Zipacna and Four Hundred Boys episodes); D. Tedlock trans. (1996); A. J. Christenson trans. (2003)"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "maya_cabracan", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Zipacna and Cabracan, brothers"}], "notes": "Brother of Cabracan; Zipacna raised the mountains and Cabracan shook them down."},
+      {"kind": "killed by", "personId": "maya_hunahpu", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — the Hero Twins bury Zipacna under the mountain"}], "notes": "Slain by the Hero Twins Hunahpu and Xbalanque, who buried him beneath Meawan mountain."},
+      {"kind": "killed by", "personId": "maya_xbalanque", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "Xbalanque acts with his twin Hunahpu in the killing."}
+    ]
+  },
+  {
+    "id": "maya_cabracan",
+    "name": {
+      "primary": "Cabracan",
+      "alt": ["Cabrakan", "Kabraqan", "Caprakan", "Earthquake"],
+      "transliterations": {"kiche": "Kabʼraqan"}
+    },
+    "type": "deity",
+    "tradition": "Maya",
+    "primaryTradition": "Maya",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["maya_vucub_caquix", "maya_chimalmat"],
+    "parentRoles": {"maya_vucub_caquix": "paternal", "maya_chimalmat": "maternal"},
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Vucub-Caquix-and-Chimalmat",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II; D. Tedlock trans. (1996)"}],
+        "notes": "Younger son of the false sun Vucub Caquix and Chimalmat; the god of earthquakes and the shaking-down of mountains."
+      },
+      {
+        "typeStatus": "deity",
+        "vitalStatus": "dead",
+        "era": "mythic",
+        "eraOrdering": 1,
+        "startEvent": "defeat-by-the-earth-coated-bird-and-burial",
+        "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Cabracan is fed an earth-coated bird and buried"}],
+        "notes": "Lured by the Hero Twins toward a great eastern mountain; fed a bird coated in earth, he lost his strength and was buried in the ground."
+      }
+    ],
+    "domains": [
+      {"sphereId": "earthquake-and-mountain-toppling", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "God of earthquakes who throws down the mountains his brother Zipacna raises."}
+    ],
+    "faculties": [
+      {"id": "shake-down-the-mountains", "name": "Shake and topple the mountains", "inheritability": "none", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "Brings down mountains by the trembling of the earth."}
+    ],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Popol Vuh, Part II (the Cabracan episode); D. Tedlock trans. (1996); A. J. Christenson trans. (2003)"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "maya_zipacna", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — Zipacna and Cabracan, brothers"}], "notes": "Brother of Zipacna; reciprocal of maya_zipacna.sibling."},
+      {"kind": "killed by", "personId": "maya_hunahpu", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II — the Hero Twins overcome and bury Cabracan"}], "notes": "Slain by the Hero Twins Hunahpu and Xbalanque after eating the earth-coated bird."},
+      {"kind": "killed by", "personId": "maya_xbalanque", "era": "mythic", "sources": [{"kind": "primary", "reference": "Popol Vuh, Part II"}], "notes": "Xbalanque acts with his twin Hunahpu in the killing."}
+    ]
+  },
+  {
+    "id": "jiibayaabooz",
+    "name": {
+      "primary": "Jiibayaabooz",
+      "alt": ["Jiibayaaboozoo", "Cheeby-aub-oozoo", "Ghost Rabbit", "Spirit Rabbit"],
+      "transliterations": {"anishinaabemowin-double-vowel": "Jiibayaabooz"}
+    },
+    "type": "demigod",
+    "tradition": "Anishinaabe",
+    "primaryTradition": "Anishinaabe",
+    "sex": "male",
+    "vitalStatus": "apotheosed",
+    "origin": "canon",
+    "parentIds": ["e_bangishimog", "wiininwaa"],
+    "parentRoles": {"e_bangishimog": "paternal", "wiininwaa": "maternal"},
+    "temporal": {"era": "pre-prophecy"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "pre-prophecy",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-E-bangishimog-and-Wiininwaa",
+        "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous: The Spiritual World of the Ojibway (1995); continuing Anishinaabe oral tradition"}],
+        "notes": "Born of E-bangishimog (the West Wind) and Wiininwaa; one of the four-or-more brothers, brother of Nanabozho, Pukawiss and Maudjee-kawiss."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "pre-prophecy",
+        "eraOrdering": 1,
+        "startEvent": "master-of-dreams-and-vision-quest",
+        "sources": [{"kind": "primary", "reference": "Anishinaabe oral tradition; Basil Johnston, The Manitous (1995)"}],
+        "notes": "The dreamer-brother; master of the vision-quest and of communing with the spirits through dreams, who instituted the practice of seeking visions."
+      },
+      {
+        "typeStatus": "demigod",
+        "vitalStatus": "apotheosed",
+        "era": "pre-prophecy",
+        "eraOrdering": 2,
+        "startEvent": "passage-into-the-spirit-world-as-chief-of-the-underworld",
+        "sources": [{"kind": "primary", "reference": "Anishinaabe oral tradition — Jiibayaabooz as ruler/chief of the spirit-world"}],
+        "notes": "Passed into the spirit-world and became its chief; the elder brothers test and taunt him in the canonical sibling-rivalry that shapes him toward this role."
+      }
+    ],
+    "domains": [
+      {"sphereId": "dreams-and-vision-quest", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995)"}], "notes": "Patron of dreams, the vision-quest, and communion with the spirit world."},
+      {"sphereId": "spirit-world-and-the-dead", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Anishinaabe oral tradition"}], "notes": "Chief of the spirit-world / underworld in the four-brother cycle."}
+    ],
+    "faculties": [
+      {"id": "commune-through-dreams", "name": "Commune with the spirits through dreams and visions", "inheritability": "partial", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995)"}], "notes": "Instituted and masters the vision-quest and dream-communion."}
+    ],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Basil Johnston, The Manitous: The Spiritual World of the Ojibway (1995); continuing Anishinaabe (Ojibwe) oral tradition"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "maudjee_kawiss", "era": "pre-prophecy", "sources": [{"kind": "primary", "reference": "Anishinaabe oral tradition — Maudjee-kawiss taunts and dares his brother Jiibayaabooz"}], "notes": "Elder brother Maudjee-kawiss taunts and tests him; the canonical sibling-rivalry of the brothers."},
+      {"kind": "sibling", "personId": "nanabozho", "era": "pre-prophecy", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995) — Jiibayaabooz brother of Nanabozho"}], "notes": "Brother of the trickster-culture-hero Nanabozho."},
+      {"kind": "sibling", "personId": "pukawiss", "era": "pre-prophecy", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995)"}], "notes": "Brother of Pukawiss."},
+      {"kind": "sibling", "personId": "wabosso", "era": "pre-prophecy", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995)"}], "notes": "Brother of Wabosso."}
+    ]
+  },
+  {
+    "id": "nokomis",
+    "name": {
+      "primary": "Nokomis",
+      "alt": ["Nookomis", "Nokomiss", "Grandmother Moon", "Nookomis Dibik-Giizis"],
+      "transliterations": {"anishinaabemowin-double-vowel": "Nookomis"}
+    },
+    "type": "deity",
+    "tradition": "Anishinaabe",
+    "primaryTradition": "Anishinaabe",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "pre-prophecy"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "pre-prophecy",
+        "eraOrdering": 0,
+        "startEvent": "descent-from-the-sky-world-as-daughter-of-the-Moon",
+        "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995); Anishinaabe oral tradition — Nokomis, daughter of the Moon, falls to the earth"}],
+        "notes": "Descended from the sky-world as the daughter of the Moon; in tradition the first woman to set foot on the earth, the Grandmother (Nokomis) figure."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "pre-prophecy",
+        "eraOrdering": 1,
+        "startEvent": "mothering-Wiininwaa-and-raising-the-brothers",
+        "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995) — Nokomis mother of Wiininwaa (Winonah)"}],
+        "notes": "Mother of Wiininwaa (Winonah); after Wiininwaa died she reared her grandsons, among them Nanabozho, whom she named and raised."
+      }
+    ],
+    "domains": [
+      {"sphereId": "grandmother-earth-and-moon", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995); Anishinaabe oral tradition"}], "notes": "The Grandmother Moon (Nookomis Dibik-Giizis), nurturer and teacher, watcher over the earth; the apical grandmother of the four-brother cycle."},
+      {"sphereId": "nurture-and-teaching", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Anishinaabe oral tradition — Grandmother Moon as gekinoo'amaaged (teacher)"}], "notes": "Foremost teacher and nurturer of the people in Anishinaabe tradition."}
+    ],
+    "faculties": [
+      {"id": "nurture-and-raise-the-culture-heroes", "name": "Nurture and raise the culture-hero brothers", "inheritability": "none", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995)"}], "notes": "Raised her grandsons after the death of her daughter Wiininwaa, naming and rearing Nanabozho."}
+    ],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Basil Johnston, The Manitous: The Spiritual World of the Ojibway (1995); continuing Anishinaabe (Ojibwe) oral tradition; Nokomis as the grandmother of Nanabozho"}]}
+    ],
+    "relations": [
+      {"kind": "mother-of", "personId": "wiininwaa", "era": "pre-prophecy", "sources": [{"kind": "primary", "reference": "Basil Johnston, The Manitous (1995) — Wiininwaa the daughter of Nokomis"}], "notes": "Mother of Wiininwaa (Winonah); the existing figure wiininwaa needs parentIds += nokomis."},
+      {"kind": "grandparent-of", "personId": "nanabozho", "era": "pre-prophecy", "sources": [{"kind": "primary", "reference": "Anishinaabe oral tradition — Nokomis grandmother of Nanabozho, who raised him"}], "notes": "Grandmother of Nanabozho, whom she named and raised after Wiininwaa died."}
+    ]
+  },
+  {
+    "id": "mesopotamian_mutakkil_nusku",
+    "name": {
+      "primary": "Mutakkil-Nusku",
+      "alt": ["Mutakkil-Nuska"],
+      "transliterations": {"akkadian": "Mutakkil-Nusku"}
+    },
+    "type": "mortal",
+    "tradition": "Mesopotamian",
+    "primaryTradition": "Mesopotamian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["mesopotamian_ashur_dan_i"],
+    "parentRoles": {"mesopotamian_ashur_dan_i": "paternal"},
+    "temporal": {"era": "late-bronze-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "late-bronze-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-younger-son-of-Ashur-dan-I",
+        "sources": [{"kind": "primary", "reference": "Assyrian King List"}],
+        "notes": "Younger son of the long-reigning Middle Assyrian king Ashur-dan I."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "king-of-Assyria",
+        "era": "late-bronze-age",
+        "eraOrdering": 1,
+        "startEvent": "usurpation-of-his-brother-and-brief-reign-c-1133-bce",
+        "sources": [{"kind": "primary", "reference": "Assyrian King List; the Babylonian letter to Mutakkil-Nusku (tentatively from Ninurta-nadin-shumi)"}],
+        "notes": "Ousted his brother Ninurta-tukulti-Ashur in a coup, driving him out to Sisil on the Babylonian border, and held the throne of Assur for less than a year; father of Ashur-resh-ishi I."
+      }
+    ],
+    "domains": [
+      {"sphereId": "assyrian-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Assyrian King List"}], "notes": "Briefly king of Assyria after seizing the throne from his brother."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Assyrian King List; eponym tradition; the Babylonian royal letter addressed to Mutakkil-Nusku"}]}
+    ],
+    "relations": [
+      {"kind": "father", "personId": "mesopotamian_ashur_dan_i", "era": "late-bronze-age", "sources": [{"kind": "primary", "reference": "Assyrian King List — Mutakkil-Nusku son of Ashur-dan I"}], "notes": "Son of Ashur-dan I; the existing figure mesopotamian_ashur_dan_i already records a father-of externalRef for Mutakkil-Nusku that can now point to this id."},
+      {"kind": "sibling", "personId": "mesopotamian_ninurta_tukulti_ashur", "era": "late-bronze-age", "sources": [{"kind": "primary", "reference": "Assyrian King List — the two sons of Ashur-dan I who struggled for the throne"}], "notes": "Brother and rival of Ninurta-tukulti-Ashur, whom he overthrew."},
+      {"kind": "rival", "personId": "mesopotamian_ninurta_tukulti_ashur", "era": "late-bronze-age", "sources": [{"kind": "primary", "reference": "Assyrian King List; the civil war between the brothers"}], "notes": "Civil-war rival of his brother for the Assyrian throne."}
+    ]
+  },
+  {
+    "id": "mesopotamian_ninurta_tukulti_ashur",
+    "name": {
+      "primary": "Ninurta-tukulti-Ashur",
+      "alt": ["Ninurta-tukulti-Aššur"],
+      "transliterations": {"akkadian": "Ninurta-tukulti-Aššur"}
+    },
+    "type": "mortal",
+    "tradition": "Mesopotamian",
+    "primaryTradition": "Mesopotamian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["mesopotamian_ashur_dan_i"],
+    "parentRoles": {"mesopotamian_ashur_dan_i": "paternal"},
+    "temporal": {"era": "late-bronze-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "late-bronze-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Ashur-dan-I",
+        "sources": [{"kind": "primary", "reference": "Assyrian King List"}],
+        "notes": "Son of the Middle Assyrian king Ashur-dan I."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "king-of-Assyria",
+        "era": "late-bronze-age",
+        "eraOrdering": 1,
+        "startEvent": "succession-c-1133-bce-and-deposition-by-his-brother",
+        "sources": [{"kind": "primary", "reference": "Assyrian King List; Ninurta-tukulti-Ashur administrative tablets from Assur"}],
+        "notes": "Succeeded his father Ashur-dan I but was quickly deposed by his brother Mutakkil-Nusku and fled to Sisil on the Babylonian border; a body of administrative tablets dates to his short reign."
+      }
+    ],
+    "domains": [
+      {"sphereId": "assyrian-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Assyrian King List"}], "notes": "Briefly king of Assyria before being driven out by his brother."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Assyrian King List; the Ninurta-tukulti-Ashur administrative archive from Assur"}]}
+    ],
+    "relations": [
+      {"kind": "father", "personId": "mesopotamian_ashur_dan_i", "era": "late-bronze-age", "sources": [{"kind": "primary", "reference": "Assyrian King List — Ninurta-tukulti-Ashur son of Ashur-dan I"}], "notes": "Son of Ashur-dan I; the existing figure mesopotamian_ashur_dan_i records a father-of externalRef for Ninurta-tukulti-Ashur that can now point to this id."},
+      {"kind": "sibling", "personId": "mesopotamian_mutakkil_nusku", "era": "late-bronze-age", "sources": [{"kind": "primary", "reference": "Assyrian King List — the two sons of Ashur-dan I"}], "notes": "Brother of Mutakkil-Nusku; reciprocal of mesopotamian_mutakkil_nusku.sibling."},
+      {"kind": "rival", "personId": "mesopotamian_mutakkil_nusku", "era": "late-bronze-age", "sources": [{"kind": "primary", "reference": "Assyrian King List; the civil war between the brothers"}], "notes": "Civil-war rival of his brother, who deposed him; reciprocal of mesopotamian_mutakkil_nusku.rival."}
+    ]
+  }
+]
+```

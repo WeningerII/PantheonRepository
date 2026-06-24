@@ -1,0 +1,64 @@
+Window #14 family-completion sweep — NO new figures authored.
+
+Every kin gap found NAMED in the prose of this window has ALREADY been authored into the
+live corpus (app/data.js) by a concurrent worker, with content equivalent to what this
+window independently derived. Re-authoring would COLLIDE, so this file authors an empty
+array. The reciprocal back-edges that the merge still needs to add to the pre-existing
+anchor figures are listed below under WIRE-EDGES.
+
+Scope processed (50 ids): lusitanian_ataecina, lusitanian_bandua, lusitanian_bormanicus,
+lusitanian_crouga, lusitanian_duberdicus, lusitanian_endovelicus, lusitanian_iccona,
+lusitanian_laebo, lusitanian_munidis, lusitanian_nabia, lusitanian_quangeius, lusitanian_reve,
+lusitanian_runesocesius, lusitanian_tongoenabiagus, lusitanian_trebaruna, lusitanian_trebopala,
+luwian_arma, luwian_iyarri, luwian_kamrusepa, luwian_runtiya, luwian_santa, luwian_tarhunz,
+luwian_tiwaz, lycian_ertemi, lycian_lada, lycian_maliya, lycian_trqqas, lycian_twelve_gods,
+lydian_artimus, lydian_kufaws, lydian_kuvava, lydian_lefs, lydian_santas, maasai_enkai,
+maasai_enkai_nanyokie, maasai_enkai_narok, maasai_le_eyo, maasai_naiteru_kop, maasai_olapa,
+macuxi_insikiran, makunaima, manape, mangaian_ina, mangaian_maui, mangaian_miru, mangaian_papa,
+mangaian_rongo, mangaian_tane, mangaian_tangaroa, mangaian_tangiia.
+
+Kin found NAMED-in-prose and CONFIRMED, but already present in live corpus (so not re-authored):
+  - mangaian_ru          (deity; father of mangaian_maui; spouse of mangaian_buataranga). Gill,
+                          Myths and Songs from the South Pacific (1876), Ch. III & IV. EXISTS.
+  - mangaian_buataranga  (deity; mother of mangaian_maui; spouse of mangaian_ru; guardian of the
+                          road to the lower world). Gill (1876), Ch. III. EXISTS.
+  - mangaian_tuna        (deity; eel-god, lover of mangaian_ina, his head becomes the first
+                          coconut). Gill (1876), pp. 77-88. EXISTS.
+  - anike (Pemon/Macuxi) (demigod; brother of makunaima / insikiran / manape; son of wei +
+                          aromadapuen). Koch-Grunberg, Vom Roraima zum Orinoco II (1924); de Cora,
+                          Kuai-Mare (1957); the Macuxi erenkon of Makunaima-Anike-Insikiran. EXISTS.
+
+```json
+[]
+```
+
+WIRE-EDGES the merge still needs to add to the PRE-EXISTING anchor figures (verified missing in
+live app/data.js: the new figures declare the forward edge, but the back-edge is not yet present):
+  - mangaian_maui : parentIds += "mangaian_ru", "mangaian_buataranga" (currently []); parentRoles
+                    {mangaian_ru:"paternal", mangaian_buataranga:"maternal"}. (mangaian_ru declares
+                    father-of mangaian_maui and mangaian_buataranga declares mother-of mangaian_maui,
+                    but mangaian_maui.parentIds is still empty.)
+  - mangaian_ina  : add reciprocal relation { kind:"lover", personId:"mangaian_tuna" }  (mangaian_tuna
+                    already declares lover->mangaian_ina; the back-edge on Ina is missing).
+  - makunaima     : add reciprocal relation { kind:"sibling", personId:"anike" }  (anike declares it; back-edge missing).
+  - insikiran     : add reciprocal relation { kind:"sibling", personId:"anike" }  (anike declares it; back-edge missing).
+  - manape        : add reciprocal relation { kind:"sibling", personId:"anike" }  (anike declares it; back-edge missing).
+
+SKIPPED (named in prose but correctly NOT authored):
+  - mangaian_mauike (the fire-god Mauike/Mauiki whom Maui overcomes) — adversary, not kin.
+  - mangaian_ra (the sun Ra snared by Maui) — object/adversary, not kin; appellative.
+  - Maasai "the Sun" (spouse of maasai_olapa in Hollis 1905 sun-and-moon tale) — referred to only by
+    the appellative "the Sun" (Maa engolong), no proper personal name; popular sources conflate this
+    spouse with the existing maasai_enkai, so identity is contested. Not authored.
+  - mangaian_timatekore + Tamaiti-ngava-ringavari (parents of mangaian_papa per Gill 1876, Ch. I) —
+    deep-Avaiki primordial abstractions ("Nothing-more", "the soft-bodied"); outside Vari-ma-te-takere's
+    attested six-child genealogy and deliberately left un-stubbed by the corpus. Genealogical filler;
+    not authored.
+  - Tapairu (daughters of mangaian_miru) — unnamed collective. Skipped.
+  - Lycian "brother" of lycian_ertemi at the Letoon (the Lycian Apollo) — named in prose only as
+    "her brother", not by a Lycian personal name; skipped as unnamed kin.
+  - lydian_santas "possibly consort of" lydian_kufaws — source flags it "possibly / nature uncertain";
+    contested, and kufaws already exists. Skipped.
+  - Akuli (agouti) and Kali (squirrel) in the makunaima/manape Wazaca cycle — animal trickster
+    figures / non-kin; Akuli already noted as an external entry-pending ref. Skipped.
+  - "Zigue's wife", Le-eyo's "son" and the "neighbour's child" — unnamed kin. Skipped.

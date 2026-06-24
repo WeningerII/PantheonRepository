@@ -1,0 +1,768 @@
+Worker W22 — alphabetical family-completion sweep, window #22 (Purepecha / Rapanui / Redhorn / Roman).
+New figures authored below as a single JSON array. All kinship and existence claims verified by WebSearch against primary works (cited at work level).
+
+```json
+[
+  {
+    "id": "purepecha_sicuirancha",
+    "name": {
+      "primary": "Sicuirancha",
+      "alt": ["Sicuiracha", "Cicuirancha"],
+      "transliterations": {"purepecha": "Sikuirancha", "etymology": "Tarascan personal/dynastic name of the early Uacusecha lords; given in the Relacion de Michoacan in the Spanish orthography Sicuirancha."}
+    },
+    "type": "mortal",
+    "tradition": "Purépecha",
+    "primaryTradition": "Purépecha",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "uacusecha-ancestral-lordship",
+        "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part III (the Uacusecha genealogy)"}],
+        "notes": "Ancestral Uacusecha lord of the Patzcuaro basin; in the Relacion he is the father of the founding brother-lords Uapeani and Pauacume, and through them the grandfather of the founder-king Tariacuri. Keeper of the cult of the fire-sun god Curicaueri for the lineage."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-sovereignty", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41)"}], "notes": "Forefather of the Uacusecha royal lineage; father of Uapeani and Pauacume."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part III"}, {"kind": "secondary", "reference": "J. Benedict Warren, The Conquest of Michoacan (Univ. of Oklahoma Press, 1985)"}]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "purepecha_uapeani", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41); the founding brothers Uapeani and Pauacume are named as the sons of Sicuirancha"}], "notes": "Father of the founding lord Uapeani."},
+      {"kind": "father-of", "personId": "purepecha_pawacume", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41); the founding brothers Uapeani and Pauacume are named as the sons of Sicuirancha"}], "notes": "Father of the founding lord Pauacume."}
+    ]
+  },
+  {
+    "id": "purepecha_hiquingare",
+    "name": {
+      "primary": "Hiquingare",
+      "alt": ["Hiquingaje", "Hiquingari", "Iquingare"],
+      "transliterations": {"purepecha": "Hikinkare", "etymology": "Tarascan personal name; given in the Relacion de Michoacan in the Spanish orthography Hiquingare/Hiquingaje."}
+    },
+    "type": "mortal",
+    "tradition": "Purépecha",
+    "primaryTradition": "Purépecha",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["purepecha_tariacuri"],
+    "parentRoles": {"purepecha_tariacuri": "father"},
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "appointment-as-lord-of-patzcuaro",
+        "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part II"}],
+        "notes": "Son of the founder-king Tariacuri (by his later marriage). At Tariacuri death the realm was divided among the three young lords: Hiquingare received Patzcuaro, while his cousins Hiripan and Tangaxoan took Ihuatzio and Tzintzuntzan. He and his cousins jointly carried the Uacusecha wars of expansion and the cult of Curicaueri."
+      }
+    ],
+    "domains": [
+      {"sphereId": "founding-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41)"}], "notes": "Lord of Patzcuaro, one of the three founding seats of the Tarascan state, established at the partition by his father Tariacuri."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part II"}, {"kind": "secondary", "reference": "Helen Perlstein Pollard, Tariacuris Legacy: The Prehispanic Tarascan State (Univ. of Oklahoma Press, 1993)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41); Hiquingare named as the son of Tariacuri"}]}
+    ],
+    "relations": []
+  },
+  {
+    "id": "purepecha_hiripan",
+    "name": {
+      "primary": "Hiripan",
+      "alt": ["Yripan", "Hirepan"],
+      "transliterations": {"purepecha": "Hiripan", "etymology": "Tarascan personal name; given in the Relacion de Michoacan in the Spanish orthography Hiripan."}
+    },
+    "type": "mortal",
+    "tradition": "Purépecha",
+    "primaryTradition": "Purépecha",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "appointment-as-lord-of-ihuatzio",
+        "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part II"}],
+        "notes": "Son of Zetaco (the elder son of Uapeani) and so grandson of the founding lord Uapeani; nephew (in the Relacion sense) of the founder-king Tariacuri, who raised Hiripan and his cousin Tangaxoan with his own son Hiquingare. At the partition of the realm Hiripan received Ihuatzio. After Zetaco and Aramen died, he and Tangaxoan wandered with their mother before being gathered by Tariacuri."
+      }
+    ],
+    "domains": [
+      {"sphereId": "founding-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41)"}], "notes": "Lord of Ihuatzio, one of the three royal seats of the Tarascan state established at the partition by Tariacuri."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part II"}, {"kind": "secondary", "reference": "Helen Perlstein Pollard, Tariacuris Legacy: The Prehispanic Tarascan State (Univ. of Oklahoma Press, 1993)"}]}
+    ],
+    "relations": [
+      {"kind": "descendant of", "personId": "purepecha_uapeani", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41); Hiripan is son of Zetaco, the elder son of Uapeani"}], "notes": "Grandson of the founding lord Uapeani through his father Zetaco (Zetaco not separately registered)."}
+    ]
+  },
+  {
+    "id": "purepecha_tangaxoan",
+    "name": {
+      "primary": "Tangaxoan",
+      "alt": ["Tangaxoan I", "Tanganxoan", "Tangaxuan"],
+      "transliterations": {"purepecha": "Tangaxoan", "etymology": "Tarascan personal/dynastic name later borne by the Tarascan kings (Tangaxoan II was the last cazonci); given in the Relacion in the Spanish orthography Tangaxoan."}
+    },
+    "type": "mortal",
+    "tradition": "Purépecha",
+    "primaryTradition": "Purépecha",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "appointment-as-lord-of-tzintzuntzan",
+        "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part II"}],
+        "notes": "Son of Aramen (the younger son of Uapeani) and so grandson of the founding lord Uapeani; nephew (in the Relacion sense) of the founder-king Tariacuri, who raised Tangaxoan and his cousin Hiripan with his own son Hiquingare. At the partition of the realm Tangaxoan received Tzintzuntzan, which became the Tarascan capital; the later cazoncis of Michoacan descend from him."
+      }
+    ],
+    "domains": [
+      {"sphereId": "founding-kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41)"}], "notes": "Lord of Tzintzuntzan, the seat that became the capital of the Tarascan state, established at the partition by Tariacuri."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41), part II"}, {"kind": "secondary", "reference": "Helen Perlstein Pollard, Tariacuris Legacy: The Prehispanic Tarascan State (Univ. of Oklahoma Press, 1993)"}]}
+    ],
+    "relations": [
+      {"kind": "descendant of", "personId": "purepecha_uapeani", "sources": [{"kind": "primary", "reference": "Relacion de Michoacan (c. 1539-41); Tangaxoan is son of Aramen, the younger son of Uapeani"}], "notes": "Grandson of the founding lord Uapeani through his father Aramen (Aramen not separately registered)."}
+    ]
+  },
+  {
+    "id": "rapanui_tuu_maheke",
+    "name": {
+      "primary": "Tuu Maheke",
+      "alt": ["Tuu-Maheke", "Tu-maheke", "Tuumaheke"],
+      "transliterations": {"rapanui": "Tuu Maheke", "etymology": "Rapa Nui; glossed in the tradition as the one who came (or was born) standing; the firstborn heir of Hotu Matua and head of the senior royal line."}
+    },
+    "type": "mortal",
+    "tradition": "Rapa Nui",
+    "primaryTradition": "Rapa Nui",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["rapanui_hotu_matua"],
+    "parentRoles": {"rapanui_hotu_matua": "paternal"},
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-at-anakena",
+        "sources": [{"kind": "primary", "reference": "Sebastian Englert, La Tierra de Hotu Matua (1948)"}, {"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}],
+        "notes": "Firstborn son and heir of the founding paramount chief Hotu Matua, born at Anakena after the migration from Hiva; the priest Tuu-ko-Iho cut his navel-cord and raised the royal halo (ata ariki) about his head. When Hotu Matua divided the island among his sons, Tuu Maheke received the lands about Anakena and continued the senior royal line of the ariki; the northeastern confederacy Ko Tuu Aro was named for him."
+      }
+    ],
+    "domains": [
+      {"sphereId": "kingship", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Heir of Hotu Matua and head of the senior royal line of Rapa Nui; eponym of the Ko Tuu Aro confederacy."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Sebastian Englert, La Tierra de Hotu Matua (1948)"}, {"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}, {"kind": "primary", "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Englert, La Tierra de Hotu Matua (1948); Metraux 1940 — firstborn son of Hotu Matua"}]}
+    ],
+    "relations": []
+  },
+  {
+    "id": "rapanui_vie_hoa",
+    "name": {
+      "primary": "Vie Hoa",
+      "alt": ["Vie-Hoa", "Vie Moko", "the wife of Haua"],
+      "transliterations": {"rapanui": "vie Hoa", "etymology": "Rapa Nui; vie (also vie) is woman/wife, so the name is roughly the woman Hoa; the wife of Haua and one of the four deities of the birdman cult (Metraux, 1940)."}
+    },
+    "type": "deity",
+    "tradition": "Rapa Nui",
+    "primaryTradition": "Rapa Nui",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "attestation-among-the-birdman-gods",
+        "sources": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}],
+        "notes": "One of the four gods associated with the tangata-manu (birdman) cult at Orongo, named together with the supreme god Makemake, his companion Haua (Haua-tuu-take-take, chief of the eggs) and the goddess vie Kenatea. She is the wife of Haua."
+      }
+    ],
+    "domains": [
+      {"sphereId": "birds", "contextTag": "ritual", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "A goddess of the birdman cult of Orongo, paired with Haua among the four deities who shared the sea-bird increase and the food-offering."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}, {"kind": "primary", "reference": "Katherine Routledge, The Mystery of Easter Island (1919)"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "rapanui_haua", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940); vie Hoa named as the wife of Haua among the four birdman-cult gods"}], "notes": "Wife of Haua (Haua-tuu-take-take), the companion of Makemake."}
+    ]
+  },
+  {
+    "id": "rapanui_tive",
+    "name": {
+      "primary": "Tive",
+      "alt": ["Tive a Hoa"],
+      "transliterations": {"rapanui": "Tive", "etymology": "Rapa Nui; personal name of one of the offspring Makemake brought forth (Metraux, 1940)."}
+    },
+    "type": "deity",
+    "tradition": "Rapa Nui",
+    "primaryTradition": "Rapa Nui",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["rapanui_makemake"],
+    "parentRoles": {"rapanui_makemake": "paternal"},
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "procreation-by-makemake",
+        "sources": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}],
+        "notes": "A son procreated by the supreme creator Makemake in the first age; in the Rapa Nui creation account Makemake produced offspring named Tive, Rorai, Hova and the noblewoman Arangi-kote-kote."
+      }
+    ],
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "One of the firstborn beings brought forth by the creator Makemake."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Metraux 1940 — Tive named among the offspring of Makemake"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "rapanui_hova", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_rorai", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_arangi_kotekote", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."}
+    ]
+  },
+  {
+    "id": "rapanui_hova",
+    "name": {
+      "primary": "Hova",
+      "alt": [],
+      "transliterations": {"rapanui": "Hova", "etymology": "Rapa Nui; personal name of one of the offspring Makemake brought forth (Metraux, 1940)."}
+    },
+    "type": "deity",
+    "tradition": "Rapa Nui",
+    "primaryTradition": "Rapa Nui",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["rapanui_makemake"],
+    "parentRoles": {"rapanui_makemake": "paternal"},
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "procreation-by-makemake",
+        "sources": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}],
+        "notes": "A son procreated by the supreme creator Makemake in the first age; named among the offspring Tive, Rorai, Hova and the noblewoman Arangi-kote-kote in the Rapa Nui creation account."
+      }
+    ],
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "One of the firstborn beings brought forth by the creator Makemake."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Metraux 1940 — Hova named among the offspring of Makemake"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "rapanui_tive", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_rorai", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_arangi_kotekote", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."}
+    ]
+  },
+  {
+    "id": "rapanui_rorai",
+    "name": {
+      "primary": "Rorai",
+      "alt": ["Rarai", "Rarai a Hoa"],
+      "transliterations": {"rapanui": "Rorai", "etymology": "Rapa Nui; personal name of one of the offspring Makemake brought forth, recorded as a daughter (Metraux, 1940)."}
+    },
+    "type": "deity",
+    "tradition": "Rapa Nui",
+    "primaryTradition": "Rapa Nui",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["rapanui_makemake"],
+    "parentRoles": {"rapanui_makemake": "paternal"},
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "procreation-by-makemake",
+        "sources": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}],
+        "notes": "A daughter procreated by the supreme creator Makemake in the first age; named among the offspring Tive, Rorai, Hova and the noblewoman Arangi-kote-kote in the Rapa Nui creation account."
+      }
+    ],
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "One of the firstborn beings brought forth by the creator Makemake."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Metraux 1940 — Rorai named among the offspring of Makemake"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "rapanui_tive", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_hova", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_arangi_kotekote", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."}
+    ]
+  },
+  {
+    "id": "rapanui_arangi_kotekote",
+    "name": {
+      "primary": "Arangi-kote-kote",
+      "alt": ["Arangi Kotekote", "Arangikotekote"],
+      "transliterations": {"rapanui": "Arangi-kote-kote", "etymology": "Rapa Nui; the noblewoman among the offspring Makemake brought forth (Metraux, 1940)."}
+    },
+    "type": "deity",
+    "tradition": "Rapa Nui",
+    "primaryTradition": "Rapa Nui",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["rapanui_makemake"],
+    "parentRoles": {"rapanui_makemake": "paternal"},
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "procreation-by-makemake",
+        "sources": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}],
+        "notes": "The noblewoman among the firstborn brought forth by the creator Makemake; named with the offspring Tive, Rorai and Hova in the Rapa Nui creation account."
+      }
+    ],
+    "domains": [
+      {"sphereId": "creation", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "One of the firstborn beings brought forth by the creator Makemake; styled a noblewoman."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Alfred Metraux, Ethnology of Easter Island (Bishop Museum Bulletin 160, 1940)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Metraux 1940 — Arangi-kote-kote named among the offspring of Makemake"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "rapanui_tive", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_hova", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."},
+      {"kind": "sibling", "personId": "rapanui_rorai", "sources": [{"kind": "primary", "reference": "Metraux, Ethnology of Easter Island (1940)"}], "notes": "Fellow offspring of Makemake."}
+    ]
+  },
+  {
+    "id": "roman_venilia",
+    "name": {
+      "primary": "Venilia",
+      "alt": ["Venelia"],
+      "transliterations": {"latin": "Venilia", "etymology": "Latin; an Italic water/sea nymph whose name the Romans connected with the incoming wave (cf. venire, to come); wife of Daunus in the Vergilian genealogy."}
+    },
+    "type": "numen",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "union-with-daunus",
+        "sources": [{"kind": "primary", "reference": "Vergil, Aeneid 10.76; 12.138"}],
+        "notes": "An Italic nymph, in Vergil the wife of Daunus the Rutulian king and the mother of Turnus and of the spring-goddess Juturna. Vergil at Aeneid 10.76 names her as mother of Turnus; at 12.138-139 Juno addresses Juturna as daughter of the same line. Varro and later antiquarians count Venilia among the indigitamenta of the waters."
+      }
+    ],
+    "domains": [
+      {"sphereId": "sea", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Vergil, Aeneid 10.76; Ovid, Metamorphoses 14.334"}], "notes": "Nymph of the sea and the gentle incoming waves; in Ovid associated with Janus and the spring-nymph Canens."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Vergil, Aeneid 10.76 and 12.138-139"}, {"kind": "primary", "reference": "Ovid, Metamorphoses 14.334; Varro, De Lingua Latina 5.72"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "roman_daunus", "sources": [{"kind": "primary", "reference": "Vergil, Aeneid 10.76; Venilia the wife of Daunus and mother of Turnus"}], "notes": "Wife of the Rutulian king Daunus; mother of Turnus and Juturna."},
+      {"kind": "mother-of", "personId": "roman_juturna", "sources": [{"kind": "primary", "reference": "Vergil, Aeneid 12.138-139; Juturna sister of Turnus, both children of Daunus and Venilia"}], "notes": "Mother of the spring-goddess Juturna."}
+    ]
+  },
+  {
+    "id": "roman_juturna",
+    "name": {
+      "primary": "Juturna",
+      "alt": ["Iuturna", "Diuturna"],
+      "transliterations": {"latin": "Iuturna", "etymology": "Latin; goddess of springs and running water, her name linked by the ancients to iuvare (to help) and to diuturnus (lasting); the spring-nymph sister of Turnus in the Aeneid."}
+    },
+    "type": "deity",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["roman_daunus"],
+    "parentRoles": {"roman_daunus": "paternal"},
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "sisterhood-of-turnus-and-aid-in-the-rutulian-war",
+        "sources": [{"kind": "primary", "reference": "Vergil, Aeneid 12.134-160, 448-485, 843-886"}],
+        "notes": "Daughter of Daunus and the nymph Venilia and sister of Turnus. Granted immortality and lordship of springs and rivers by Jupiter (in compensation, the tradition says, for his love of her). In the war against Aeneas she took the form of Turnus charioteer Metiscus, prolonging her brother fight and restoring his sword, until a Dira sent by Jupiter drove her from the field; her lament closes Aeneid 12."
+      }
+    ],
+    "domains": [
+      {"sphereId": "springs-and-running-water", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Vergil, Aeneid 12.139; Ovid, Fasti 1.463-464, 2.585-616"}], "notes": "Goddess of springs, fountains and running water; her shrine and pool (the Lacus Iuturnae) stood in the Roman Forum."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Vergil, Aeneid 12.134-160 and 843-886"}, {"kind": "primary", "reference": "Ovid, Fasti 2.585-616; Varro, De Lingua Latina 5.71"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Vergil, Aeneid 12.138-139; daughter of Daunus, sister of Turnus"}]}
+    ],
+    "relations": []
+  },
+  {
+    "id": "roman_marcus_antonius",
+    "name": {
+      "primary": "Marcus Antonius",
+      "alt": ["Mark Antony", "Antonius", "Marcus Antonius Triumvir"],
+      "transliterations": {"latin": "Marcus Antonius", "etymology": "Latin; of the gens Antonia. The triumvir, husband of Octavia Minor and father of the two Antoniae."}
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 0,
+        "startEvent": "birth-83-bce-and-rise-under-caesar",
+        "sources": [{"kind": "primary", "reference": "Plutarch, Antony 1-4; Cicero, Philippics"}],
+        "notes": "Born 83 BCE into the gens Antonia. A leading lieutenant of Gaius Iulius Caesar in the Gallic and civil wars; consul 44 BCE and Caesar colleague at the time of the assassination."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 1,
+        "startEvent": "second-triumvirate-and-marriage-to-octavia",
+        "sources": [{"kind": "primary", "reference": "Plutarch, Antony 30-31; Suetonius, Divus Augustus 17"}],
+        "notes": "Formed the Second Triumvirate with Octavian and Lepidus (43 BCE). In October 40 BCE married Octavia Minor, sister of Octavian, to seal the Treaty of Brundisium; the marriage produced two daughters, Antonia Major (grandmother of Nero) and Antonia Minor (mother of Germanicus and Claudius)."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "roman-republic-late",
+        "eraOrdering": 2,
+        "startEvent": "actium-and-death-30-bce",
+        "sources": [{"kind": "primary", "reference": "Plutarch, Antony 76-86; Cassius Dio 51.10"}],
+        "notes": "Divorced Octavia in 32 BCE for Cleopatra VII; the propaganda crisis triggered the Senate war-declaration on Cleopatra. Defeated with Cleopatra at Actium 31 BCE; took his own life at Alexandria in 30 BCE."
+      }
+    ],
+    "domains": [
+      {"sphereId": "war-leadership", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Plutarch, Antony; Caesar, De Bello Gallico"}], "notes": "Roman general and triumvir; commander of the Caesarian and later eastern armies."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Plutarch, Antony"}, {"kind": "primary", "reference": "Cassius Dio, Roman History books 45-51; Cicero, Philippics; Suetonius, Divus Augustus 17"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "roman_octavia_minor", "sources": [{"kind": "primary", "reference": "Plutarch, Antony 31; Suetonius, Divus Augustus 17; married Octavia in 40 BCE, divorced 32 BCE"}], "notes": "Husband of Octavia Minor from 40 to 32 BCE (the Treaty-of-Brundisium marriage)."},
+      {"kind": "father-of", "personId": "roman_antonia_minor", "sources": [{"kind": "primary", "reference": "Plutarch, Antony 87; Suetonius, Claudius 1; father of Antonia Minor by Octavia"}], "notes": "Father of Antonia Minor by Octavia Minor."}
+    ]
+  },
+  {
+    "id": "roman_antonia_minor",
+    "name": {
+      "primary": "Antonia Minor",
+      "alt": ["Antonia the Younger", "Antonia", "Iulia Antonia Minor"],
+      "transliterations": {"latin": "Antonia Minor", "etymology": "Latin; the younger Antonia, of the gens Antonia. Daughter of Mark Antony and Octavia Minor; the dynastic matriarch of the Julio-Claudian house."}
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["roman_marcus_antonius", "roman_octavia_minor"],
+    "parentRoles": {"roman_marcus_antonius": "paternal", "roman_octavia_minor": "maternal"},
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 0,
+        "startEvent": "birth-36-bce-daughter-of-antony-and-octavia",
+        "sources": [{"kind": "primary", "reference": "Plutarch, Antony 87; Suetonius, Divus Claudius 1"}],
+        "notes": "Born 31 January 36 BCE, the younger of the two daughters of Mark Antony and Octavia Minor (sister of Augustus); thus a niece of Augustus. Raised by her mother after Antony divorce and death."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 1,
+        "startEvent": "marriage-to-drusus-and-motherhood",
+        "sources": [{"kind": "primary", "reference": "Suetonius, Divus Claudius 1; Cassius Dio 55.10a"}],
+        "notes": "Married the general Nero Claudius Drusus (Drusus the Elder) in 16 BCE; bore Germanicus, Livilla, and the future emperor Claudius. Widowed in 9 BCE, she never remarried. Paternal grandmother of the emperor Caligula and of Agrippina the Younger; lived until 37 CE."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Claudius 1; Tacitus, Annales"}], "notes": "Dynastic matriarch of the Julio-Claudian house; mother of Germanicus and Claudius, grandmother of Caligula."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Suetonius, Divus Claudius 1"}, {"kind": "primary", "reference": "Plutarch, Antony 87; Cassius Dio 55.10a; Tacitus, Annales"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Plutarch, Antony 87; daughter of Antony and Octavia Minor"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "roman_drusus_the_elder", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Claudius 1; married Nero Claudius Drusus in 16 BCE"}], "notes": "Wife of Drusus the Elder; mother of his children Germanicus, Livilla and Claudius."},
+      {"kind": "mother-of", "personId": "roman_germanicus", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Claudius 1; Tacitus, Annales 1; mother of Germanicus"}], "notes": "Mother of Germanicus."}
+    ]
+  },
+  {
+    "id": "roman_agrippina_the_elder",
+    "name": {
+      "primary": "Agrippina the Elder",
+      "alt": ["Vipsania Agrippina", "Agrippina Maior", "Agrippina"],
+      "transliterations": {"latin": "Vipsania Agrippina", "etymology": "Latin; the elder Agrippina, daughter of Marcus Vipsanius Agrippa and Iulia the Elder; wife of Germanicus and mother of Caligula."}
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["roman_iulia_the_elder"],
+    "parentRoles": {"roman_iulia_the_elder": "maternal"},
+    "temporal": {"era": "roman-empire-julio-claudian"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "roman-empire-julio-claudian",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-daughter-of-agrippa-and-iulia",
+        "sources": [{"kind": "primary", "reference": "Tacitus, Annales 1.41; Suetonius, Caligula 7"}],
+        "notes": "Daughter of Marcus Vipsanius Agrippa by Iulia the Elder, and thus a biological granddaughter of Augustus. Born c. 14 BCE."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "roman-empire-julio-claudian",
+        "eraOrdering": 1,
+        "startEvent": "marriage-to-germanicus-and-motherhood",
+        "sources": [{"kind": "primary", "reference": "Tacitus, Annales 1-2; Suetonius, Caligula 7-8"}],
+        "notes": "Married Germanicus c. 5 CE; bore nine children, of whom six survived, including the future emperor Caligula (born 31 August 12 CE) and Agrippina the Younger (mother of Nero). The Tacitean narrative makes her the fierce-protector consort of Germanicus and guardian of his memory."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "roman-empire-julio-claudian",
+        "eraOrdering": 2,
+        "startEvent": "exile-and-death-on-pandateria-33-ce",
+        "sources": [{"kind": "primary", "reference": "Tacitus, Annales 6.25; Suetonius, Tiberius 53"}],
+        "notes": "After Germanicus death in 19 CE she became the focus of opposition to Tiberius and Sejanus; exiled to Pandateria and starved to death there in 33 CE."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Tacitus, Annales 1-2"}], "notes": "Granddaughter of Augustus and mother of the emperor Caligula and of Agrippina the Younger; a central matron of the Julio-Claudian dynasty."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Tacitus, Annales 1-6"}, {"kind": "primary", "reference": "Suetonius, Caligula 7-8; Tiberius 53"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Tacitus, Annales 1.41; Suetonius, Caligula 7; daughter of Agrippa and Iulia the Elder"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "roman_germanicus", "sources": [{"kind": "primary", "reference": "Tacitus, Annales 1.33; Suetonius, Caligula 7; wife of Germanicus"}], "notes": "Wife of Germanicus."},
+      {"kind": "mother-of", "personId": "roman_caligula", "sources": [{"kind": "primary", "reference": "Suetonius, Caligula 7-8; mother of Gaius (Caligula)"}], "notes": "Mother of the emperor Caligula."}
+    ]
+  },
+  {
+    "id": "roman_scribonia",
+    "name": {
+      "primary": "Scribonia",
+      "alt": ["Scribonia Caesaris"],
+      "transliterations": {"latin": "Scribonia", "etymology": "Latin; of the gens Scribonia. The second wife of Octavian (Augustus) and mother of his only child, Iulia the Elder."}
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-octavian-40-bce",
+        "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 62; Cassius Dio 48.16, 48.34"}],
+        "notes": "Born c. 70 BCE into the gens Scribonia. Married Octavian in 40 BCE as a political match tied to Sextus Pompeius; bore him his only natural child, Iulia the Elder. Octavian divorced her on the very day of Iulia birth (39 BCE) to marry Livia Drusilla."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "roman-empire-julio-claudian",
+        "eraOrdering": 1,
+        "startEvent": "loyalty-to-iulia-in-exile",
+        "sources": [{"kind": "primary", "reference": "Velleius Paterculus 2.100; Cassius Dio 55.10"}],
+        "notes": "When her daughter Iulia was exiled for adultery in 2 BCE, Scribonia voluntarily accompanied her into exile; she lived into the reign of Tiberius."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 62-63"}], "notes": "Mother of Iulia the Elder, the only natural child of Augustus, and through her grandmother of Augustus grandchildren."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 62-63"}, {"kind": "primary", "reference": "Cassius Dio 48.16, 48.34, 55.10; Velleius Paterculus 2.100"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "roman_augustus", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 62; second wife of Octavian, married 40 BCE, divorced 39 BCE"}], "notes": "Second wife of Octavian (Augustus); divorced on the day of Iulia birth."},
+      {"kind": "mother-of", "personId": "roman_iulia_the_elder", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 63; mother of Iulia the Elder"}], "notes": "Mother of Iulia the Elder, Augustus only biological child."}
+    ]
+  },
+  {
+    "id": "roman_iulia_minor_caesaris",
+    "name": {
+      "primary": "Iulia Minor",
+      "alt": ["Julia Minor", "Iulia Caesaris Minor", "Iulia the sister of Caesar"],
+      "transliterations": {"latin": "Iulia Minor", "etymology": "Latin; the younger Iulia of this generation of the gens Iulia. The sister of the dictator Caesar and grandmother of Augustus."}
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["roman_iulius_caesar_iii", "roman_aurelia_cotta"],
+    "parentRoles": {"roman_iulius_caesar_iii": "paternal", "roman_aurelia_cotta": "maternal"},
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-caesar-sister",
+        "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4; Plutarch, Antony 31"}],
+        "notes": "Daughter of Gaius Iulius Caesar III and Aurelia Cotta and the younger sister of the dictator Gaius Iulius Caesar. Born before 100 BCE."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 1,
+        "startEvent": "marriage-to-atius-balbus-and-grandmotherhood-of-augustus",
+        "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4"}],
+        "notes": "Married Marcus Atius Balbus; their daughter Atia Balba married Gaius Octavius and bore the future emperor Augustus. Thus Iulia Minor is the maternal grandmother of Augustus. She died in 51 BCE; the young Octavian delivered her funeral eulogy."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4, 8"}], "notes": "Sister of Caesar the Dictator and, through her daughter Atia, grandmother of Augustus; a key link of the gens Iulia to the future imperial house."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4 and 8"}, {"kind": "primary", "reference": "Plutarch, Antony 31; Quintilian 6.3.75 (Octavian funeral oration for his grandmother)"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4; sister of the Dictator, daughter of Gaius Iulius Caesar and Aurelia"}]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "roman_caesar_dictator", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4; Iulia Minor the sister of Caesar the Dictator"}], "notes": "Sister of Gaius Iulius Caesar the Dictator."},
+      {"kind": "mother-of", "personId": "roman_atia_balba", "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 4; mother of Atia Balba, grandmother of Augustus"}], "notes": "Mother of Atia Balba Caesonia; Atia parentIds should add this id."}
+    ]
+  },
+  {
+    "id": "roman_marcus_claudius_marcellus",
+    "name": {
+      "primary": "Marcus Claudius Marcellus",
+      "alt": ["Marcellus", "Marcellus nephew of Augustus"],
+      "transliterations": {"latin": "Marcus Claudius Marcellus", "etymology": "Latin; of the gens Claudia (Marcelli). The son of Octavia Minor and first heir-designate of Augustus, mourned in Aeneid 6."}
+    },
+    "type": "mortal",
+    "tradition": "Roman",
+    "primaryTradition": "Roman",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["roman_octavia_minor"],
+    "parentRoles": {"roman_octavia_minor": "maternal"},
+    "temporal": {"era": "roman-republic-late"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "roman-republic-late",
+        "eraOrdering": 0,
+        "startEvent": "birth-42-bce-son-of-octavia",
+        "sources": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 63; Plutarch, Marcellus 30"}],
+        "notes": "Born 42 BCE, son of Gaius Claudius Marcellus Minor and Octavia Minor (sister of Augustus), and thus a nephew of Augustus."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "roman-empire-julio-claudian",
+        "eraOrdering": 1,
+        "startEvent": "marriage-to-iulia-and-early-death-23-bce",
+        "sources": [{"kind": "primary", "reference": "Cassius Dio 53.27-30; Vergil, Aeneid 6.860-886"}],
+        "notes": "In 25 BCE married his cousin Iulia the Elder, the daughter of Augustus, as the first dynastic-succession plan. He died young in 23 BCE; Vergil mourns him in the Aeneid 6 underworld passage (the heu, miserande puer elegy), at the reading of which his mother Octavia is said to have fainted."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestry", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Cassius Dio 53.27-30; Vergil, Aeneid 6.860-886"}], "notes": "First heir-designate of Augustus; son of Octavia Minor and husband of Iulia the Elder."}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [{"kind": "primary", "reference": "Cassius Dio 53.27-30"}, {"kind": "primary", "reference": "Vergil, Aeneid 6.860-886; Suetonius, Divus Augustus 63; Plutarch, Marcellus 30"}]},
+      {"claim": "parentage", "citations": [{"kind": "primary", "reference": "Suetonius, Divus Augustus 63; son of Octavia Minor"}]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "roman_iulia_the_elder", "sources": [{"kind": "primary", "reference": "Cassius Dio 53.27; married Iulia the Elder in 25 BCE"}], "notes": "First husband of Iulia the Elder (married 25 BCE; he died 23 BCE)."}
+    ]
+  }
+]
+```

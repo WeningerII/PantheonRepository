@@ -1,0 +1,337 @@
+```json
+[
+ {
+  "id": "korean_yuri",
+  "name": {
+   "primary": "Yuri of Goguryeo",
+   "alt": [
+    "Yuri-myeong",
+    "Yurimyeong",
+    "King Yuri",
+    "Yuri-wang",
+    "Yuri Myeongwang"
+   ],
+   "transliterations": {
+    "korean": "유리명왕",
+    "hanja": "琉璃明王"
+   }
+  },
+  "type": "demigod",
+  "tradition": "Korean",
+  "primaryTradition": "Korean",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "korean_jumong"
+  ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-in-Dongbuyeo-to-Jumong-and-Lady-Ye",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals, reign of King Yuri"
+     }
+    ],
+    "notes": "Eldest son of Jumong, founder of Goguryeo, by his first wife Lady Ye (Yesoya); born and raised in Dongbuyeo after Jumong had fled south to found the kingdom."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "recovery-of-the-broken-sword-token-and-recognition-as-heir",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals; Yi Gyu-bo, Lay of King Dongmyeong (Dongmyeongwang-pyeon, 1193)"
+     }
+    ],
+    "notes": "Found the half of Jumong broken sword that his father had hidden beneath a pillar of the house, took it to Goguryeo, and by matching the two halves was acknowledged as Jumong son and made crown prince; he succeeded as the second king of Goguryeo."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "reign-and-move-of-the-capital-to-Gungnae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals, reign of King Yuri (trad. r. 19 BCE to 18 CE)"
+     }
+    ],
+    "notes": "Reigned as the second king of Goguryeo, moved the capital from Jolbon to Gungnae, and is the reputed author of the Hwangjoga (Song of Yellow Birds). Died in 18 CE by the traditional reckoning."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "korean_yuri_broken_sword",
+    "classId": "weapon",
+    "kind": "weapon",
+    "name": "Matching half of the broken sword",
+    "term": {
+     "value": "斷劍",
+     "script": "ko/hanja",
+     "rom": "dangeom"
+    },
+    "role": "owner",
+    "notes": "The half-sword hidden by Jumong beneath a pillar; Yuri recovered it and matched it to Jumong half to prove his descent and claim the succession.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals, reign of King Yuri"
+     },
+     {
+      "kind": "primary",
+      "reference": "Yi Gyu-bo, Lay of King Dongmyeong (Dongmyeongwang-pyeon), 1193"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent-of",
+    "personId": "korean_jumong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kim Busik, Samguk Sagi (1145), Goguryeo Annals"
+     }
+    ],
+    "notes": "Yuri is the son and royal heir of Jumong (King Dongmyeong); the directed parent-to-child edge is set on the parent Jumong, and Yuri carries Jumong in parentIds."
+   }
+  ],
+  "notes": "Second king of Goguryeo and son of its founder Jumong; named in the Jumong entry as the heir identified by the broken-sword token. His mother Lady Ye (Yesoya), Jumong first wife who remained in Dongbuyeo, is attested but is not in the registry and is not authored here. Typed quartigod as the child of the demigod Jumong; the merge reconciles the descent tier. The directed kin edge is declared as parent-of on Jumong (auto-reciprocated) rather than re-stating it on both."
+ },
+ {
+  "id": "kuba_mweel",
+  "name": {
+   "primary": "Ancestral Mother of the Kuba",
+   "alt": [
+    "Mweel",
+    "Mweele",
+    "Mwetshe"
+   ],
+   "transliterations": {
+    "kuba": "Mweel"
+   }
+  },
+  "type": "demigod",
+  "tradition": "Kuba",
+  "primaryTradition": "Kuba",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "origin": "canon",
+  "parentIds": [
+   "kuba_mbombo"
+  ],
+  "temporal": {
+   "era": "mythic age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic age",
+    "eraOrdering": 0,
+    "startEvent": "sister-and-consort-of-Woot-driven-from-the-first-village",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vansina, Jan. The Children of Woot: A History of the Kuba Peoples. Madison: University of Wisconsin Press, 1978"
+     }
+    ],
+    "notes": "Sister of the first man Woot; their union breached the incest rule and the pair were driven from the first village, beginning the migration from which the Kuba and Lele descend."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mweel",
+     "script": "Latn",
+     "rom": "Mweel"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vansina, Jan. The Children of Woot. 1978"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mother_the_kuba_lineages",
+    "name": "becomes the ancestral mother of the Kuba lineages",
+    "inheritability": "lineal",
+    "notes": "By her union with her brother Woot she becomes the ancestress of the Kuba clans; she is represented in royal ceremony by the Ngaady aMwaash mask, the female counterpart of the Woot (Mwaash aMbooy) mask.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vansina, Jan. The Children of Woot. 1978"
+     }
+    ],
+    "scopeTags": [
+     "foundational"
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "Mweel, sister and consort of the culture-hero Woot, is the ancestral mother of the Kuba peoples; their incestuous union led to their expulsion from the first village and the migration that founded the Kuba and Lele, and she is honoured in the royal Ngaady aMwaash mask.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Vansina, Jan. The Children of Woot: A History of the Kuba Peoples. Madison: University of Wisconsin Press, 1978"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vansina, Jan. The Children of Woot. 1978"
+     }
+    ],
+    "notes": "Sister of Woot the first man; both are children of the creator Mbombo."
+   },
+   {
+    "kind": "spouse",
+    "personId": "kuba_woot",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Vansina, Jan. The Children of Woot. 1978"
+     }
+    ],
+    "notes": "Also the consort of Woot; their brother-sister union is the founding incest of the Kuba origin tradition."
+   }
+  ],
+  "notes": "Kuba ancestral mother, sister-wife of the registered Woot and named in the Woot entry (his sister-wife is Mweel). Authored as a daughter of the creator Mbombo (parentIds kuba_mbombo), making her a full sister of Woot and of the three creator-sons already registered; the sibling edge to Woot is declared once and auto-reciprocates. Typed demigod, parallel to her brother Woot. The symmetric sibling/spouse edges to the existing Woot are flagged RECIPROCAL-NEEDED."
+ },
+ {
+  "id": "kwakwakawakw_tsilwalagame",
+  "name": {
+   "primary": "Son of the Wild Woman",
+   "alt": [
+    "Tsilwalagame",
+    "Tsilwalagance"
+   ],
+   "transliterations": {
+    "kwakwala": "Tsilwalagame"
+   }
+  },
+  "type": "demigod",
+  "tradition": "Kwakwaka'wakw",
+  "primaryTradition": "Kwakwaka'wakw",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "origin": "canon",
+  "parentIds": [
+   "kwakwakawakw_dzunukwa"
+  ],
+  "temporal": {
+   "era": "mythic-perennial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-perennial",
+    "eraOrdering": 0,
+    "startEvent": "son-of-Dzunukwa-and-founding-ancestor-of-the-Namgis",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Franz Boas, Kwakiutl Tales (1910); Kwakiutl Culture as Reflected in Mythology (1935)"
+     }
+    ],
+    "notes": "Son of the wild-woman ogress Dzunukwa; reckoned an ancestor of the Namgis (Nimkish) people, who hold Dzunukwa as a crest and ancestress through him."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tsilwalagame",
+     "script": "Latn",
+     "rom": "Tsilwalagame"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Franz Boas, Kwakiutl Culture as Reflected in Mythology (1935)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "Tsilwalagame is the son of the Kwakwakawakw wild-woman Dzunukwa and the ancestor through whom the Namgis (Nimkish) clan claims descent from her, inheriting her wealth-crests.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Franz Boas, Kwakiutl Tales (1910)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Franz Boas, Kwakiutl Culture as Reflected in Mythology (1935)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent-of",
+    "personId": "kwakwakawakw_dzunukwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Franz Boas, Kwakiutl Tales (1910); Kwakiutl Culture as Reflected in Mythology (1935)"
+     }
+    ],
+    "notes": "Tsilwalagame is the son of Dzunukwa; the directed parent-to-child edge is set on the mother Dzunukwa, and Tsilwalagame carries her in parentIds."
+   }
+  ],
+  "notes": "Kwakwakawakw ancestral hero, named in the Dzunukwa entry (ancestress of the Namgis through her son Tsilwalagame). Authored as a child of the registered Dzunukwa (parentIds kwakwakawakw_dzunukwa). Typed demigod as the offspring of the deity-class wild-woman; the merge reconciles the descent tier. The directed kin edge is declared as parent-of on Dzunukwa (auto-reciprocated)."
+ }
+]
+```

@@ -2184,7 +2184,14 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Mother of Krishna, imprisoned by her brother Kamsa"
+  "notes": "Mother of Krishna, imprisoned by her brother Kamsa",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_kamsa",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_rohini_vasudeva",
@@ -2437,7 +2444,19 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Eighth avatara of Vishnu, divine cowherd and statesman, speaker of the Bhagavad Gita"
+  "notes": "Eighth avatara of Vishnu, divine cowherd and statesman, speaker of the Bhagavad Gita",
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "hindu_kamsa",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "hindu_subhadra",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_balarama",
@@ -2570,7 +2589,14 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Elder brother of Krishna, plough-bearing strongman, often counted an avatara"
+  "notes": "Elder brother of Krishna, plough-bearing strongman, often counted an avatara",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_subhadra",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_dasharatha",
@@ -2869,7 +2895,19 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Seventh avatara of Vishnu, prince of Ayodhya, hero of the Ramayana"
+  "notes": "Seventh avatara of Vishnu, prince of Ayodhya, hero of the Ramayana",
+  "relations": [
+   {
+    "kind": "half-sibling",
+    "personId": "hindu_bharata_ramayana",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "hindu_shatrughna",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_sita",
@@ -3051,7 +3089,19 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Devoted brother of Rama, son of Dasharatha and Sumitra, regarded as Shesha incarnate"
+  "notes": "Devoted brother of Rama, son of Dasharatha and Sumitra, regarded as Shesha incarnate",
+  "relations": [
+   {
+    "kind": "half-sibling",
+    "personId": "hindu_bharata_ramayana",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "twin sibling",
+    "personId": "hindu_shatrughna",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_vishrava",
@@ -3388,7 +3438,14 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Primal progenitor-sage, father of devas, asuras, nagas, and Garuda"
+  "notes": "Primal progenitor-sage, father of devas, asuras, nagas, and Garuda",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "hindu_kadru",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_aditi",
@@ -3527,7 +3584,14 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Daughter of Daksha, wife of Kashyapa, mother of Garuda and Aruna"
+  "notes": "Daughter of Daksha, wife of Kashyapa, mother of Garuda and Aruna",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_kadru",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_garuda",
@@ -5463,7 +5527,14 @@ Here is the batch of missing attested Hindu figures. I authored the full core pa
     "weight": "primary"
    }
   ],
-  "notes": "Divine vulture, son of Aruna, who died defending Sita from Ravana"
+  "notes": "Divine vulture, son of Aruna, who died defending Sita from Ravana",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_sampati",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "hindu_aruna",

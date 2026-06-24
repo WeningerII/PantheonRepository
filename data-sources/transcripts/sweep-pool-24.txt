@@ -1,0 +1,320 @@
+Sweep pool 24 — family-completion authoring for window #24 (Santal, Sarmatian, Scythian,
+Selk'nam, Selkup, Semang, Senufo, Serer, Shabaka). New figures are kin NAMED in the prose
+of existing window entities and confirmed attested by source.
+
+Scythian royal house (Herodotus, Histories book 4):
+  - Gnurus: father of the sage Anacharsis and of King Saulios (Hdt 4.76).
+  - Saulios: brother of Anacharsis, the king who shot Anacharsis; father of King Idanthyrsus
+    (Anacharsis is named uncle of Idanthyrsus at Hdt 4.76).
+  - Ariapeithes: Scythian king, father of Skyles (by an Istrian woman) and Octamasades;
+    slain by Spargapeithes the Agathyrsian (Hdt 4.78).
+  - Octamasades: brother of Skyles, set up as king by the Scythians, who beheaded Skyles
+    (Hdt 4.78-80); son of a daughter of the Thracian king Teres.
+
+Selk'nam Hain spirit:
+  - Shoort: the husband of the underworld hag Xalpen, the most important and most feared
+    of the masked Hain spirits (Gusinde 1931; Chapman 1982).
+
+```json
+[
+  {
+    "id": "scythian_gnurus",
+    "name": {
+      "primary": "Royal Forefather Gnurus",
+      "alt": ["Gnuros", "Gnurus son of Lykos"],
+      "transliterations": {
+        "grc": "Γνῦρος",
+        "reconstructed_iranian": "Iranian personal name, etymology uncertain"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "historical/legendary; early 6th c. BCE, of the royal Scythian house" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "historical/legendary; early 6th c. BCE, of the royal Scythian house",
+        "eraOrdering": 0,
+        "startEvent": "Named in the royal Scythian pedigree as son of Lykos and father of Anacharsis and Saulios",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76 (Godley)" }],
+        "notes": "Herodotus traces the royal line Spargapeithes - Lykos - Gnurus - (Anacharsis and Saulios) - Idanthyrsus."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.76 (Godley): Anacharsis son of Gnurus; Gnurus son of Lykos, of the royal Scythian house" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "scythian_anacharsis",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }],
+        "notes": "Anacharsis the sage is named son of Gnurus in the royal Scythian pedigree."
+      },
+      {
+        "kind": "father-of",
+        "personId": "scythian_saulios",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }],
+        "notes": "King Saulios, brother of Anacharsis, is likewise a son of Gnurus."
+      }
+    ]
+  },
+  {
+    "id": "scythian_saulios",
+    "name": {
+      "primary": "King Saulios",
+      "alt": ["Saulius", "Saulios"],
+      "transliterations": {
+        "grc": "Σαύλιος",
+        "reconstructed_iranian": "Iranian personal name, etymology uncertain"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["scythian_gnurus"],
+    "temporal": { "era": "historical/legendary; early 6th c. BCE, of the royal Scythian house" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "historical/legendary; early 6th c. BCE, of the royal Scythian house",
+        "eraOrdering": 0,
+        "startEvent": "King of the Scythians who shot dead his brother Anacharsis for taking up foreign rites",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76 (Godley)" }],
+        "notes": "Saulios came in person, saw Anacharsis performing the rites of the Mother of the Gods, and killed him with an arrow."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.76 (Godley): Saulios the king, brother of Anacharsis, killed him; he was father of Idanthyrsus, whose uncle Anacharsis was" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "scythian_anacharsis",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }],
+        "notes": "Saulios and Anacharsis are brothers, sons of Gnurus; Saulios shot Anacharsis dead for adopting Greek rites."
+      },
+      {
+        "kind": "father-of",
+        "personId": "scythian_idanthyrsos",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }],
+        "notes": "Anacharsis is named the uncle of King Idanthyrsus; Idanthyrsus is therefore son of Saulios, Anacharsis brother."
+      },
+      {
+        "kind": "enemy",
+        "personId": "scythian_anacharsis",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.76" }],
+        "notes": "As the killer of his brother, Saulios is also Anacharsis slayer; the kinship is fratricidal."
+      }
+    ]
+  },
+  {
+    "id": "scythian_ariapeithes",
+    "name": {
+      "primary": "Scythian King Ariapeithes",
+      "alt": ["Ariapithes", "Ariapeithes"],
+      "transliterations": {
+        "grc": "Ἀριαπείθης",
+        "reconstructed_iranian": "*Arya-paisah (Iranian arya-, Aryan/Iranian, + a second element)"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "historical; mid-5th c. BCE, king of the Scythians, son of Ariapeithes" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "historical; mid-5th c. BCE, king of the Scythians, son of Ariapeithes",
+        "eraOrdering": 0,
+        "startEvent": "King of the Scythians, father of Skyles and Octamasades; treacherously slain by Spargapeithes the Agathyrsian",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.78 (Godley)" }],
+        "notes": "By an Istrian (Greek) woman he had Skyles, whom she taught Greek; he was killed by Spargapeithes, king of the Agathyrsi, and Skyles succeeded him."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.78" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.78 (Godley): Ariapeithes king of the Scythians, father of Skyles by an Istrian woman, slain by Spargapeithes the Agathyrsian" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "scythian_skyles",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.78" }],
+        "notes": "Skyles, the Bacchic king, was the son of Ariapeithes by an Istrian woman who taught him Greek."
+      },
+      {
+        "kind": "father-of",
+        "personId": "scythian_octamasades",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.80" }],
+        "notes": "Octamasades, Skyles half-brother who succeeded and beheaded him, was likewise a son of Ariapeithes, by a daughter of the Thracian king Teres."
+      }
+    ]
+  },
+  {
+    "id": "scythian_octamasades",
+    "name": {
+      "primary": "King Octamasades",
+      "alt": ["Octamasadas", "Octamasades"],
+      "transliterations": {
+        "grc": "Ὀκταμασάδης",
+        "reconstructed_iranian": "Iranian personal name, second element cf. Thagimasadas / *mazda-"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Scythian",
+    "primaryTradition": "Scythian",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["scythian_ariapeithes"],
+    "temporal": { "era": "historical; mid-5th c. BCE, king of the Scythians, son of Ariapeithes" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "historical; mid-5th c. BCE, king of the Scythians, son of Ariapeithes",
+        "eraOrdering": 0,
+        "startEvent": "Set up as king by the Scythians in revolt against his brother Skyles, whom he then beheaded",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.80 (Godley)" }],
+        "notes": "Son of Ariapeithes by a daughter of Teres the Thracian; nephew of the Thracian king Sitalces, with whom he exchanged the fugitive Skyles before beheading him."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "kingship",
+        "contextTag": "lifelong",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.80" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Herodotus, Histories 4.80 (Godley): the Scythians set up Octamasades, brother of Skyles, as king; he received Skyles in exchange and beheaded him" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "scythian_skyles",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.80" }],
+        "notes": "Brothers, both sons of Ariapeithes; the Scythians deposed the philhellene Skyles in favour of Octamasades."
+      },
+      {
+        "kind": "enemy",
+        "personId": "scythian_skyles",
+        "sources": [{ "kind": "primary", "reference": "Herodotus, Histories 4.80" }],
+        "notes": "Octamasades pursued, took and beheaded his fugitive brother Skyles after the prisoner-exchange with Sitalces."
+      }
+    ]
+  },
+  {
+    "id": "selknam_shoort",
+    "name": {
+      "primary": "Hain Spirit Shoort",
+      "alt": ["Soorte", "Short", "Shoort"],
+      "transliterations": { "selknam": "Shoort" }
+    },
+    "type": "deity",
+    "tradition": "Selk'nam",
+    "primaryTradition": "Selk'nam",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-perennial" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "The chief masked spirit of the Hain, husband of the underworld hag Xalpen",
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society: The Selk'nam of Tierra del Fuego (1982)" }],
+        "notes": "Embodied by initiated men in body-paint and a conical bark mask; the most feared of the Hain spirits, who emerges from the ground and serves the appetites of his wife Xalpen."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-and-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "Shoort", "script": "Latn", "rom": "Shoort" },
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society (1982)" }]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society: The Selk'nam of Tierra del Fuego (1982): Shoort, the chief Hain spirit, husband of Xalpen" },
+          { "kind": "secondary", "reference": "Gusinde, Martin. Die Feuerland-Indianer, Band I: Die Selk'nam (1931): the masked Hain spirits Soorte and Xalpen" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "spouse",
+        "personId": "selknam_xalpen",
+        "sources": [{ "kind": "secondary", "reference": "Chapman, Anne. Drama and Power in a Hunting Society (1982)" }],
+        "notes": "Shoort is the husband of the man-eating underworld hag Xalpen; the pair are the two spirits who never fail to appear in the Hain."
+      }
+    ]
+  }
+]
+```

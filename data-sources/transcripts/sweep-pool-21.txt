@@ -1,0 +1,643 @@
+Sweep pool 21 — family-completion sweep (window #21 of 31).
+Worker W21. New figures authored from kin NAMED in the prose of existing window-21 entities.
+Each figure verified via WebSearch; kinship attested. Citations at work level.
+
+```json
+[
+  {
+    "id": "polynesian_punga",
+    "name": {"primary": "Punga", "alt": ["Punga (atua of ugly and deformed things)"], "transliterations": {"maori": "Punga"}},
+    "type": "demigod",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["polynesian_whaitiri", "polynesian_kaitangata"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Whaitiri-and-Kaitangata",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle; A. W. Reed, Treasury of Maori Folklore"}],
+        "notes": "Born to the sky-goddess Whaitiri by the mortal Kaitangata; brother of Hema. In a Ngati Hau recension recorded by John White he is named a brother of Hema and Karihi."
+      }
+    ],
+    "domains": [
+      {"sphereId": "monstrous-progeny", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "John White, The Ancient History of the Maori (1887-1890), vol. 1"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Punga"},
+        {"kind": "secondary", "reference": "Best, Maori Religion and Mythology (1924)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "polynesian_hema", "sources": [{"kind": "secondary", "reference": "John White, The Ancient History of the Maori (1887), Tawhaki cycle (Ngati Hau)"}], "notes": "Brothers, both sons of Whaitiri and Kaitangata; Punga is ancestor of sharks, lizards and ugly creatures while Hema fathers the hero-line."}
+    ],
+    "notes": "Maori atua of ugly and deformed things, ancestor of sharks, lizards and stingrays; son of Whaitiri and Kaitangata and brother of Hema in the Tawhaki genealogy. Some recensions instead make him a son of Tangaroa; the registry follows the Whaitiri-Kaitangata line asserted in the Hema and Whaitiri entries."
+  },
+  {
+    "id": "polynesian_urutonga",
+    "name": {"primary": "Urutonga", "alt": ["Uru-tonga"], "transliterations": {"maori": "Urutonga"}},
+    "type": "demigod",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Hema-and-motherhood-of-Tawhaki-and-Karihi",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}],
+        "notes": "Wife of Hema and mother of the hero Tawhaki and his younger brother Karihi. Held captive with Hema in the land of the Ponaturi; rescued by her sons when they destroyed the Ponaturi at sunrise."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Urutonga"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legend of Tawhaki"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Urutonga"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "polynesian_hema", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Wife of Hema; captured with him by the Ponaturi who blinded and killed him."},
+      {"kind": "mother-of", "personId": "polynesian_tawhaki", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Mother of the sky-climber-hero Tawhaki by Hema."},
+      {"kind": "mother-of", "personId": "polynesian_karihi", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Mother of Karihi, Tawhaki younger brother, by Hema."}
+    ],
+    "notes": "Maori ancestress, wife of Hema and mother of the heroes Tawhaki and Karihi. In some tribal recensions Hema marries Rawhita-i-te-rangi instead; the dominant Grey recension names Urutonga, whom the registry Hema entry presupposes as the mother of Tawhaki and Karihi."
+  },
+  {
+    "id": "polynesian_karihi",
+    "name": {"primary": "Karihi", "alt": ["Kariki", "Kahiri"], "transliterations": {"maori": "Karihi"}},
+    "type": "quartigod",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["polynesian_hema", "polynesian_urutonga"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "quartigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-younger-son-of-Hema-and-Urutonga",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}],
+        "notes": "Younger brother of Tawhaki, son of Hema and Urutonga. Joined Tawhaki in destroying the Ponaturi at sunrise to avenge their father Hema."
+      },
+      {
+        "typeStatus": "quartigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "death-on-the-vine-of-ascent",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}],
+        "notes": "Attempting the climb to the sky, mistakenly took hold of the loose hanging-vine (aka taepa) and was swept away and killed by the winds of heaven; Tawhaki then made the ascent on the correct parent-vine."
+      }
+    ],
+    "domains": [
+      {"sphereId": "heroism", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legend of Tawhaki"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Karihi"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father", "personId": "polynesian_hema", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Son of Hema."},
+      {"kind": "mother", "personId": "polynesian_urutonga", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Son of Urutonga."},
+      {"kind": "sibling", "personId": "polynesian_tawhaki", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Younger brother of Tawhaki; the two destroyed the Ponaturi together and attempted the sky-ascent."}
+    ],
+    "notes": "Maori hero, younger brother of Tawhaki and son of Hema and Urutonga. Helped avenge Hema on the Ponaturi, but died on the vine of ascent when he climbed the wrong vine; Tawhaki took his eyes (or honoured him) and completed the climb to the heavens."
+  },
+  {
+    "id": "polynesian_hinepiripiri",
+    "name": {"primary": "Hinepiripiri", "alt": ["Hine-piripiri"], "transliterations": {"maori": "Hinepiripiri"}},
+    "type": "mortal",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "rescue-of-Tawhaki-and-motherhood-of-Wahieroa",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}],
+        "notes": "Wife of Tawhaki; nursed him back to health by the fire after his brothers-in-law beat him and left him for dead, feeding the fire with a single long log. When their son was born she and Tawhaki named him Wahieroa (long piece of firewood) to keep the wrong done to Tawhaki in their son mind so that he might one day avenge it."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Hinepiripiri"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legend of Tawhaki"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Hinepiripiri and Wahieroa"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "polynesian_tawhaki", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Wife of Tawhaki, whom she rescued and nursed after the attack by his brothers-in-law."},
+      {"kind": "mother-of", "personId": "polynesian_wahieroa", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Mother of Wahieroa by Tawhaki; named him for the long firewood-log used in his fire."}
+    ],
+    "notes": "Maori woman, wife of the hero Tawhaki and mother of Wahieroa. The firewood-name Wahieroa (long piece of firewood) commemorates the log she burned while nursing the wounded Tawhaki, encoding the duty of vengeance carried into the Rata cycle."
+  },
+  {
+    "id": "polynesian_tangotango",
+    "name": {"primary": "Tangotango", "alt": ["Hapai (celestial-wife by-name)", "Tango-tango"], "transliterations": {"maori": "Tangotango"}},
+    "type": "deity",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "descent-to-Tawhaki-and-motherhood-of-Arahuta",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}],
+        "notes": "Celestial maiden who came down from the sky each night to Tawhaki and became his wife. After bearing him the daughter Arahuta they quarrelled and she returned to the heavens, taking the child; Tawhaki later climbed the vine to follow them."
+      }
+    ],
+    "domains": [
+      {"sphereId": "sky", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Tangotango"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legend of Tawhaki"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Tangotango"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "polynesian_tawhaki", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Sky-wife of Tawhaki who descended to him by night; mother of Arahuta."},
+      {"kind": "mother-of", "personId": "polynesian_arahuta", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Mother of the sky-maiden Arahuta by Tawhaki; took the child to heaven after the quarrel."}
+    ],
+    "notes": "Maori celestial woman, sky-wife of Tawhaki and mother of Arahuta. Some recensions call her Hapai; here the by-name Hapai denotes the celestial wife of Tawhaki and is kept distinct from the Hawaiian Hapai by-name attached to the thunder-goddess Whaitiri."
+  },
+  {
+    "id": "polynesian_arahuta",
+    "name": {"primary": "Arahuta", "alt": ["Arawhita", "Arahuta-i-te-rangi"], "transliterations": {"maori": "Arahuta"}},
+    "type": "demigod",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["polynesian_tawhaki", "polynesian_tangotango"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-and-removal-to-the-heavens",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}],
+        "notes": "Daughter of Tawhaki and the celestial Tangotango. A quarrel between her parents over the baby led Tangotango to carry her away to the heavens, where Tawhaki rejoined them after his sky-ascent."
+      }
+    ],
+    "domains": [
+      {"sphereId": "sky", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Arahuta"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legend of Tawhaki"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Arahuta"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father", "personId": "polynesian_tawhaki", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Daughter of Tawhaki."},
+      {"kind": "mother", "personId": "polynesian_tangotango", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Tawhaki cycle"}], "notes": "Daughter of the celestial Tangotango."}
+    ],
+    "notes": "Maori sky-maiden, daughter of Tawhaki and the celestial Tangotango; the infant over whom her parents quarrelled, occasioning Tawhaki ascent to the heavens to recover his wife and child."
+  },
+  {
+    "id": "polynesian_murirangawhenua",
+    "name": {"primary": "Murirangawhenua", "alt": ["Muri-ranga-whenua", "Muriranga-whenua"], "transliterations": {"maori": "Murirangawhenua"}},
+    "type": "deity",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "gift-of-the-jawbone-to-Maui",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}],
+        "notes": "Ancestress of Maui who gave him her enchanted jawbone after he brought her food and revived her failing body. From this jawbone Maui made the fish-hook that drew up the North Island and the weapon with which he beat the sun into slowness."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Muri-ranga-whenua"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legends of Maui"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Muri-ranga-whenua"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "ancestor of", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Grandmother or ancestress of Maui; gave him the jawbone that became his fish-hook and weapon. Expressed as ancestor-of since the exact generational link varies by recension."}
+    ],
+    "notes": "Maori ancestress of Maui, owner of the enchanted jawbone. Most recensions make her Maui grandmother; she yields the jawbone (te kauae) from which his great fish-hook and sun-snaring weapon are fashioned."
+  },
+  {
+    "id": "polynesian_mahuika",
+    "name": {"primary": "Mahuika", "alt": ["Mahuike", "Mahu-ika"], "transliterations": {"maori": "Mahuika"}},
+    "type": "deity",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "yielding-of-fire-to-Maui",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}],
+        "notes": "Fire-deity and ancestress of Maui who held fire in her burning finger- and toe-nails. Maui tricked her into giving up her nails one by one until she loosed fire across the world; the last spark was caught in the mahoe and kaikomako trees, teaching humankind fire-making by friction."
+      }
+    ],
+    "domains": [
+      {"sphereId": "fire", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Mahuika"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legends of Maui (How Maui brought fire)"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Mahuika"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "ancestor of", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Fire-grandmother or ancestress of Maui from whom he won fire for humankind. Expressed as ancestor-of since recensions vary between grandmother and aunt."}
+    ],
+    "notes": "Maori fire-deity, ancestress of Maui, keeper of fire in her nails. Her contest with Maui is the canonical Maori fire-origin myth; in some recensions she is the younger sister of Hine-nui-te-po."
+  },
+  {
+    "id": "polynesian_rohe",
+    "name": {"primary": "Rohe", "alt": ["Rohe (atua of death, Moriori recension)"], "transliterations": {"maori": "Rohe"}},
+    "type": "deity",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Maui-and-face-swap",
+        "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Rohe"}],
+        "notes": "Wife of Maui in a Moriori and rare Maori recension. Jealous of her beauty, Maui forced an exchange of faces upon her by incantation while she slept; on waking she left the living world for the underworld and became an atua of night and death."
+      }
+    ],
+    "domains": [
+      {"sphereId": "death-and-rebirth", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Shand, The Moriori People of the Chatham Islands (Journal of the Polynesian Society, 1890s)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Rohe"},
+        {"kind": "secondary", "reference": "Shand, The Moriori People (Journal of the Polynesian Society), Maui-and-Rohe tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Rohe"}], "notes": "Wife of Maui in the Moriori and rare Maori recension; mistreated by the face-swap, she departed to the underworld."}
+    ],
+    "notes": "Wife of Maui in the Moriori and rare Maori recensions, afterward an atua of night and death. Maui swapped faces with her against her will out of jealousy of her beauty; she fled to the underworld. The registry Maui entry flags her as a pending spouse-entry."
+  },
+  {
+    "id": "polynesian_kura",
+    "name": {"primary": "Kura", "alt": ["Hine-kura"], "transliterations": {"maori": "Kura"}},
+    "type": "mortal",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Wahieroa-and-motherhood-of-Rata",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Rata cycle"}],
+        "notes": "Wife of Wahieroa and mother of Rata. When she was about to give birth she longed for a rare food from a distant land, and Wahieroa set out to fetch it, leaving the unborn Rata behind; on that quest Wahieroa was killed by the ogre Matuku-takotako, setting the Rata vengeance-cycle in motion."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Rata cycle"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legend of Rata"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Wahieroa and Rata"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "polynesian_wahieroa", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Rata cycle"}], "notes": "Wife of Wahieroa; her craving for rare food sent him on the fatal quest."},
+      {"kind": "mother-of", "personId": "polynesian_rata", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Rata cycle"}], "notes": "Mother of the canoe-builder-avenger Rata by Wahieroa; raised him after Wahieroa was killed."}
+    ],
+    "notes": "Maori woman, wife of Wahieroa and mother of Rata in the Grey recension. The Tregear recension names Wahieroa wife as Matoka-rau-tawhiri (Tonga-rau-tawhiri); the registry follows the dominant Grey reading naming Kura, which the Wahieroa and Rata entries presuppose."
+  },
+  {
+    "id": "polynesian_maui_taha",
+    "name": {"primary": "Māui-taha", "alt": ["Maui-taha", "Maui-mua (variant ordering)"], "transliterations": {"maori": "Maui-taha"}},
+    "type": "mortal",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["polynesian_taranga"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-elder-son-of-Taranga",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}],
+        "notes": "One of the four elder mortal sons of Taranga, the first of the brothers Taranga counts (Maui-taha) before discovering the unexpected fifth child, the trickster Maui-tikitiki-a-Taranga."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legends of Maui"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Maui"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother", "personId": "polynesian_taranga", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Son of Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Elder mortal brother of the trickster Maui-tikitiki-a-Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui_roto", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_pae", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_waho", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."}
+    ],
+    "notes": "First of the four elder mortal brothers of Maui, sons of Taranga. Named in the brothers-roll Taranga recites and in Maui exploits (fishing up the land, snaring the sun)."
+  },
+  {
+    "id": "polynesian_maui_roto",
+    "name": {"primary": "Māui-roto", "alt": ["Maui-roto"], "transliterations": {"maori": "Maui-roto"}},
+    "type": "mortal",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["polynesian_taranga"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Taranga",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}],
+        "notes": "One of the four elder mortal sons of Taranga, the second the brothers Taranga counts (Maui-roto) before the trickster Maui appears as the fifth."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legends of Maui"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Maui"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother", "personId": "polynesian_taranga", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Son of Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Elder mortal brother of the trickster Maui-tikitiki-a-Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui_taha", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_pae", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_waho", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."}
+    ],
+    "notes": "Second of the four elder mortal brothers of Maui, sons of Taranga, named in Taranga brothers-roll."
+  },
+  {
+    "id": "polynesian_maui_pae",
+    "name": {"primary": "Māui-pae", "alt": ["Maui-pae"], "transliterations": {"maori": "Maui-pae"}},
+    "type": "mortal",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["polynesian_taranga"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Taranga",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}],
+        "notes": "One of the four elder mortal sons of Taranga, the third the brothers Taranga counts (Maui-pae)."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legends of Maui"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Maui"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother", "personId": "polynesian_taranga", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Son of Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Elder mortal brother of the trickster Maui-tikitiki-a-Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui_taha", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_roto", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_waho", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."}
+    ],
+    "notes": "Third of the four elder mortal brothers of Maui, sons of Taranga, named in Taranga brothers-roll."
+  },
+  {
+    "id": "polynesian_maui_waho",
+    "name": {"primary": "Māui-waho", "alt": ["Maui-waho"], "transliterations": {"maori": "Maui-waho"}},
+    "type": "mortal",
+    "tradition": "Māori",
+    "primaryTradition": "Māori",
+    "sex": "male",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": ["polynesian_taranga"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Taranga",
+        "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}],
+        "notes": "One of the four elder mortal sons of Taranga, the fourth the brothers Taranga counts (Maui-waho) before the trickster Maui is revealed as the fifth child."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), The Legends of Maui"},
+        {"kind": "secondary", "reference": "Tregear, The Maori-Polynesian Comparative Dictionary (1891), s.v. Maui"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother", "personId": "polynesian_taranga", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Son of Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Elder mortal brother of the trickster Maui-tikitiki-a-Taranga."},
+      {"kind": "sibling", "personId": "polynesian_maui_taha", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_roto", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."},
+      {"kind": "sibling", "personId": "polynesian_maui_pae", "sources": [{"kind": "secondary", "reference": "George Grey, Polynesian Mythology (1855), Maui cycle"}], "notes": "Full brother among the four elder Maui brothers."}
+    ],
+    "notes": "Fourth of the four elder mortal brothers of Maui, sons of Taranga, named in Taranga brothers-roll."
+  },
+  {
+    "id": "phrygian_agdistis",
+    "name": {"primary": "Agdistis", "alt": ["Agdistis", "Angdistis"], "transliterations": {"greek": "Ἄγδιστις"}},
+    "type": "deity",
+    "tradition": "Phrygian",
+    "primaryTradition": "Phrygian",
+    "sex": "other",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "birth-from-the-earth-and-unmanning",
+        "sources": [{"kind": "primary", "reference": "Pausanias, Description of Greece 7.17.9-12"}],
+        "notes": "Born when seed of Zeus fell on the earth (the rock Agdos), producing a being at once male and female. The gods, dreading it, unmanned it; from the severed parts grew an almond tree."
+      },
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "love-for-Attis-and-his-death",
+        "sources": [{"kind": "primary", "reference": "Pausanias, Description of Greece 7.17.10-12; Arnobius, Adversus Nationes 5.5-7"}],
+        "notes": "Fell in love with the beautiful Attis (begotten when the daughter of the river Sangarius conceived from the almond). In jealousy drove Attis to madness and self-castration beneath the pine, the act re-enacted by the Galli; thereafter identified with the Mountain Mother Cybele, whose eunuch priesthood the myth explains."
+      }
+    ],
+    "domains": [
+      {"sphereId": "death-and-rebirth", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Roller, In Search of God the Mother: The Cult of Anatolian Cybele (1999)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Pausanias, Description of Greece 7.17.9-12"},
+        {"kind": "primary", "reference": "Arnobius, Adversus Nationes 5.5-7"},
+        {"kind": "secondary", "reference": "Roller, In Search of God the Mother (1999)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "lover", "personId": "phrygian_attis", "sources": [{"kind": "primary", "reference": "Pausanias, Description of Greece 7.17.10-12"}], "notes": "Loved the beautiful Attis and in jealousy drove him to the self-castration and death beneath the pine that the Galli re-enacted."},
+      {"kind": "equated-with", "personId": "phrygian_cybele", "sources": [{"kind": "primary", "reference": "Pausanias, Description of Greece 7.17.9-12"}, {"kind": "secondary", "reference": "Roller, In Search of God the Mother (1999)"}], "notes": "At Pessinus the Mother-goddess herself was called Agdistis; Pausanias and the aetiology identify Agdistis with Cybele, whose eunuch Galli the Attis myth explains."}
+    ],
+    "notes": "Phrygian primordial androgyne of the Pessinus myth, born from the earth-rock Agdos and unmanned by the gods; the almond from its severed parts engendered Attis, whom Agdistis loved and drove to self-castration. Closely identified with Cybele (the Mother of Pessinus was called Agdistis)."
+  },
+  {
+    "id": "pohnpeian_lipahnmei",
+    "name": {"primary": "Lipahnmei", "alt": ["Li Pahn Mei", "Lipahn Mei"], "transliterations": {"pohnpeian": "Lipahnmei"}},
+    "type": "mortal",
+    "tradition": "Pohnpeian",
+    "primaryTradition": "Pohnpeian",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "mythic-age",
+        "eraOrdering": 0,
+        "startEvent": "conception-of-Isokelekel-by-the-thunder-god",
+        "sources": [{"kind": "secondary", "reference": "Hanlon, Upon a Stone Altar: A History of the Island of Pohnpei to 1890 (1988)"}],
+        "notes": "A childless woman of the Dipwenpahnmei (under-the-breadfruit-tree) clan in downwind Katau, made pregnant by the thunder-god Nahnsapwe (who fled there after his conflict at Nan Madol) when he fed her a lime; she bore the half-divine avenger Isokelekel, who later overthrew the Saudeleur dynasty."
+      }
+    ],
+    "domains": [
+      {"sphereId": "ancestral-lineage", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Hanlon, Upon a Stone Altar (1988)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Hanlon, Upon a Stone Altar: A History of the Island of Pohnpei to 1890 (1988)"},
+        {"kind": "secondary", "reference": "Petersen, Lost in the Weeds: Theme and Variation in Pohnpei Political Mythology (1990)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "pohnpeian_nahnisohn_sahpw", "sources": [{"kind": "secondary", "reference": "Hanlon, Upon a Stone Altar (1988)"}], "notes": "Consort of the thunder-aspect god (Nahnsapwe / Luhk Nahnsapwe), who impregnated her with a lime; the union is the conception of Isokelekel."},
+      {"kind": "mother-of", "personId": "pohnpeian_isokelekel", "sources": [{"kind": "secondary", "reference": "Hanlon, Upon a Stone Altar (1988)"}], "notes": "Mother of the half-divine avenger Isokelekel, whose father is the thunder-god; Isokelekel parentage already records the divine father."}
+    ],
+    "notes": "Pohnpeian clanswoman of the Dipwenpahnmei clan, mortal mother of the avenger Isokelekel by the thunder-god Nahnsapwe. The Isokelekel entry names her as his mother; here authored as the named mortal parent."
+  }
+]
+```

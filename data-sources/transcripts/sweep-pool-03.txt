@@ -1,0 +1,385 @@
+Sweep pool 03 — alphabetical family-completion sweep, worker W03.
+Window #3: greek_mopsus .. guanche_acoran.
+New figures authored below for family members NAMED in the prose of window entities that had no entry of their own.
+
+```json
+[
+  {
+    "id": "greek_penelope",
+    "name": {
+      "primary": "Penelope",
+      "alt": ["Penelopeia", "Penelopa"],
+      "transliterations": {"greek": "Πηνελόπη", "rom": "Penelopē"}
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-daughter-of-Icarius-of-Sparta",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 1.329; Apollodorus, Bibliotheca 3.10.6"}],
+        "notes": "Daughter of Icarius of Sparta (brother of Tyndareus) by the Naiad Periboea in the dominant tradition; a cousin of Helen and Clytemnestra. Won by Odysseus through the foot-race that Icarius set for her suitors."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "marriage-to-Odysseus-and-birth-of-Telemachus",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.447-453; 19.157-161"}],
+        "notes": "Married Odysseus of Ithaca and bore him a single son, Telemachus, who was still an infant when Odysseus departed for Troy."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 2,
+        "startEvent": "the-suitors-and-the-trick-of-the-loom",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 2.93-110; 19.137-156"}],
+        "notes": "During Odysseus twenty-year absence she held off the hundred and eight suitors who pressed her to remarry, famously promising to choose once she finished weaving a shroud for Laertes, then unravelling each night what she wove by day. The byword for marital fidelity and patient cunning."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 3,
+        "startEvent": "recognition-and-reunion-with-Odysseus",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 23.85-240"}],
+        "notes": "After the slaying of the suitors she tested the disguised stranger by the secret of their immovable marriage-bed, built around a living olive trunk, and so recognized her returned husband."
+      }
+    ],
+    "domains": [
+      {"sphereId": "marital-fidelity-and-domestic-cunning", "contextTag": "lifelong", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 2.93-110; 19.137-156"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey passim (esp. 1, 2, 19, 23)"},
+        {"kind": "primary", "reference": "Apollodorus, Bibliotheca 3.10.6, Epitome 7.38-39"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 711-712"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "greek_odysseus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 23.85-240"}], "notes": "Wife of Odysseus; resolves the existing greek_odysseus spouse externalRef to Penelope."},
+      {"kind": "mother-of", "personId": "greek_telemachus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.447-449"}], "notes": "Mother of Telemachus by Odysseus."}
+    ],
+    "notes": "Mortal queen of Ithaca, daughter of Icarius of Sparta; wife of Odysseus and mother of Telemachus. The archetype of the faithful wife: through the twenty years of Odysseus absence she kept off the suitors with the trick of the never-finished shroud and at last recognized her returned husband by the secret of their olive-rooted marriage-bed. Named throughout the prose of greek_odysseus as his spouse and the mother of his son."
+  },
+  {
+    "id": "greek_telemachus",
+    "name": {
+      "primary": "Telemachus",
+      "alt": ["Telemachos"],
+      "transliterations": {"greek": "Τηλέμαχος", "rom": "Tēlemachos"}
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_odysseus", "greek_penelope"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-on-Ithaca-as-infant-son-of-Odysseus",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.447-449; Apollodorus, Epitome 3.7"}],
+        "notes": "Only son of Odysseus and Penelope, an infant when his father left for Troy. His name (far-fighter) is glossed from his father going to a distant war. In one account Palamedes exposed Odysseus feigned madness by laying the infant Telemachus before the plough."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 1,
+        "startEvent": "the-Telemachy-journey-to-Pylos-and-Sparta",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 1-4"}],
+        "notes": "Prompted by Athena disguised as Mentor, the grown Telemachus sailed to Pylos and Sparta to seek news of his father from Nestor and Menelaus. His coming-of-age journey opens the Odyssey."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 2,
+        "startEvent": "reunion-with-Odysseus-and-slaying-of-the-suitors",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 16.186-219; 22"}],
+        "notes": "Recognized his returned father in the hut of Eumaeus and fought at his side in the slaughter of Penelope suitors in the hall of the palace."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey 1-4 (the Telemachy), 16, 22"},
+        {"kind": "primary", "reference": "Apollodorus, Epitome 3.7, 7.38-39"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 711-712"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father", "personId": "greek_odysseus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.447-449"}], "notes": "Son of Odysseus; resolves the existing greek_odysseus father-of externalRef to Telemachus."},
+      {"kind": "mother", "personId": "greek_penelope", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.447-449"}]}
+    ],
+    "notes": "Mortal prince of Ithaca, only son of Odysseus and Penelope. An infant at his father departure for Troy, he comes of age in the opening four books of the Odyssey (the Telemachy), travelling to Pylos and Sparta under Athena guidance, and fights beside the returned Odysseus against the suitors. Named in the prose of greek_odysseus as his son by Penelope."
+  },
+  {
+    "id": "greek_pero",
+    "name": {
+      "primary": "Pero",
+      "alt": ["Pero of Pylos"],
+      "transliterations": {"greek": "Πηρώ", "rom": "Pērō"}
+    },
+    "type": "demigod",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_neleus", "greek_apollod_chloris"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-only-daughter-of-Neleus-and-Chloris",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.281-291; Apollodorus, Bibliotheca 1.9.9"}],
+        "notes": "Only daughter of Neleus, king of Pylos, and Chloris; sister of Nestor and his eleven brothers. Of such beauty that suitors came from all the neighbouring lands."
+      },
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "the-bride-price-of-the-cattle-of-Phylacus",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.287-297; 15.225-238; Apollodorus, Bibliotheca 1.9.12"}],
+        "notes": "Neleus would give her only to the man who could drive off the cattle of Phylacus from Phylace. Her suitor Bias enlisted his brother the seer Melampus, who endured a year imprisoned to win the herd; the cattle were brought to Neleus and Pero was given to Bias as wife."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey 11.281-297, 15.225-238"},
+        {"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.9, 1.9.12"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 184-186"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "greek_nestor", "sources": [{"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.9"}], "notes": "Sister of Nestor; both children of Neleus and Chloris."},
+      {"kind": "spouse", "externalRef": {"name": "Bias (king of Argos, brother of the seer Melampus, husband of Pero)", "tradition": "Greek"}, "sources": [{"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.12"}], "notes": "Won as wife by Bias once Melampus secured the cattle of Phylacus as her bride-price."}
+    ],
+    "notes": "The only daughter of Neleus of Pylos and Chloris, and sister of Nestor. Her hand was the prize of the famous cattle-raid contest: Neleus demanded the herd of Phylacus, and her suitor Bias gained her only through his brother Melampus, who suffered a year of imprisonment to win the cattle. Named in the prose of greek_neleus as his sole daughter, sought as bride by many wooers."
+  },
+  {
+    "id": "greek_aedon",
+    "name": {
+      "primary": "Aedon",
+      "alt": ["Aedone", "the nightingale"],
+      "transliterations": {"greek": "Ἀηδών", "rom": "Aēdōn"}
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-Zethus-of-Thebes",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.518-523; Pherecydes (via scholia)"}],
+        "notes": "Daughter of Pandareus; wife of Zethus, one of the twin founder-kings of Thebes. She and Zethus had but one child, Itylus, where her sister-in-law Niobe (wife of Amphion) had many."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "the-accidental-killing-of-Itylus-and-the-nightingale",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.518-523"}],
+        "notes": "Envious of Niobe many children, she plotted by night to kill Niobe eldest son but slew her own son Itylus by mistake. In her unending grief she was changed into a nightingale, whose song forever laments Itylus, the original etiology of the bird mournful note."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey 19.518-523"},
+        {"kind": "secondary", "reference": "Smith, Dictionary of Greek and Roman Biography and Mythology (1849), s.v. Aedon"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 239-240"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "greek_zethus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.518-523"}], "notes": "Wife of Zethus; resolves the existing greek_zethus spouse externalRef to Aedon."},
+      {"kind": "mother-of", "personId": "greek_itylus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.522-523"}], "notes": "Mother and, by tragic accident, killer of Itylus."}
+    ],
+    "notes": "Daughter of Pandareus and wife of Zethus of Thebes; mother of Itylus. In jealousy of Niobe many children she tried to kill Niobe son but slew her own child Itylus in the dark, and was transformed into the lamenting nightingale, the earliest Homeric form (Odyssey 19) of the nightingale myth later overlaid by the Procne-Philomela version. Named in the prose of greek_zethus as the wife whose envy of Niobe led to the killing of their son Itylus."
+  },
+  {
+    "id": "greek_itylus",
+    "name": {
+      "primary": "Itylus",
+      "alt": ["Itys (in the later Theban-substitution tradition)", "Itylos"],
+      "transliterations": {"greek": "Ἴτυλος", "rom": "Itylos"}
+    },
+    "type": "quartigod",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["greek_zethus", "greek_aedon"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "quartigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-only-son-of-Zethus-and-Aedon",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.522-523"}],
+        "notes": "Only child of Zethus, founder-king of Thebes, and Aedon daughter of Pandareus."
+      },
+      {
+        "typeStatus": "quartigod",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "death-by-his-mother-in-error",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.518-523"}],
+        "notes": "Killed in the night by his own mother Aedon, who had meant to slay the eldest son of Niobe but struck her own child by mistake. His death is the cause of the nightingale unending lament (the cry Ityn, Ityn)."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey 19.518-523"},
+        {"kind": "secondary", "reference": "Smith, Dictionary of Greek and Roman Biography and Mythology (1849), s.v. Aedon"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 239-240"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father", "personId": "greek_zethus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.522-523"}], "notes": "Son of Zethus; resolves the existing greek_zethus parent-of externalRef to Itylus."},
+      {"kind": "mother", "personId": "greek_aedon", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 19.522-523"}], "notes": "Slain in error by his mother Aedon."}
+    ],
+    "notes": "Only son of Zethus of Thebes and Aedon. Accidentally killed by his own mother, who in the dark mistook him for the eldest son of Niobe; his death is the Homeric origin (Odyssey 19) of the nightingale grief-song. Named in the prose of greek_zethus as the son accidentally killed by Aedon."
+  },
+  {
+    "id": "greek_laertes",
+    "name": {
+      "primary": "Laertes",
+      "alt": ["Laertes of Ithaca", "Laertiades (patronymic of Odysseus)"],
+      "transliterations": {"greek": "Λαέρτης", "rom": "Laertēs"}
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "kingship-of-Ithaca-and-Argonautic-youth",
+        "sources": [{"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.16; Apollonius, Argonautica 1.187-189"}],
+        "notes": "Son of Arcesius; king of Ithaca and the Cephallenians. In his youth reckoned among the Argonauts and a sacker of the city of Nericus on the mainland. Married Anticlea daughter of Autolycus and begot Odysseus."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 1,
+        "startEvent": "retirement-to-the-farm-during-Odysseus-absence",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 1.188-193; 11.187-196"}],
+        "notes": "Withdrew in old age to his country estate, living roughly and grieving for his absent son, after the death of his wife Anticlea from longing."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 2,
+        "startEvent": "rejuvenation-by-Athena-and-the-killing-of-Eupeithes",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 24.205-548"}],
+        "notes": "Reunited with the returned Odysseus, his strength renewed by Athena, he cast the spear that killed Eupeithes, father of the suitor-leader Antinous, in the final battle on Ithaca."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey 1.188-193, 11.187-196, 24.205-548"},
+        {"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.16"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 175-176"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "greek_anticlea_ithaca", "sources": [{"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.16"}], "notes": "Husband of Anticlea daughter of Autolycus."},
+      {"kind": "father-of", "personId": "greek_odysseus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 16.118-120"}], "notes": "Father of Odysseus in the Homeric tradition; greek_odysseus parentIds should add greek_laertes."}
+    ],
+    "notes": "Mortal king of Ithaca, son of Arcesius and father of Odysseus by Anticlea. An Argonaut in his youth, he retired in age to his farm, where he grieved through Odysseus long absence; restored to vigour by Athena, he killed Eupeithes in the last fight of the Odyssey. Named in the prose of greek_odysseus as his father, king of Ithaca."
+  },
+  {
+    "id": "greek_anticlea_ithaca",
+    "name": {
+      "primary": "Anticlea",
+      "alt": ["Anticleia of Ithaca", "Antikleia"],
+      "transliterations": {"greek": "Ἀντίκλεια", "rom": "Antikleia"}
+    },
+    "type": "mortal",
+    "tradition": "Greek",
+    "primaryTradition": "Greek",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-daughter-of-Autolycus",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.85; 19.394-416; Apollodorus, Bibliotheca 1.9.16"}],
+        "notes": "Daughter of Autolycus the master-thief (himself son of Hermes) and Amphithea. Married Laertes of Ithaca and bore Odysseus, whom her father named at the cradle. A variant tradition makes Sisyphus the seducer of Anticlea and true father of Odysseus, though the Homeric line is Laertes."
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "post-trojan-war",
+        "eraOrdering": 1,
+        "startEvent": "death-of-grief-and-meeting-in-the-underworld",
+        "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.152-224"}],
+        "notes": "Died of longing for her absent son. Her shade met Odysseus among the dead, telling him of Ithaca and of Laertes grief; he tried three times to embrace her and three times she slipped through his arms like a shadow."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "primary", "reference": "Homer, Odyssey 11.85, 11.152-224, 19.394-416"},
+        {"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.16"},
+        {"kind": "secondary", "reference": "Gantz, Early Greek Myth (1993), pp. 175-176"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "spouse", "personId": "greek_laertes", "sources": [{"kind": "primary", "reference": "Apollodorus, Bibliotheca 1.9.16"}], "notes": "Wife of Laertes of Ithaca."},
+      {"kind": "mother-of", "personId": "greek_odysseus", "sources": [{"kind": "primary", "reference": "Homer, Odyssey 11.85"}], "notes": "Mother of Odysseus; greek_odysseus parentIds should add greek_anticlea_ithaca."}
+    ],
+    "notes": "Mortal mother of Odysseus, daughter of Autolycus (son of Hermes) and wife of Laertes of Ithaca. She died of grief in her son long absence and met his shade in the Underworld in Odyssey 11, the scene of the thrice-attempted embrace. Distinct from Anticleia of Epidaurus, the mother of Periphetes. Named in the prose of greek_odysseus as his mother, daughter of Autolycus."
+  }
+]
+```

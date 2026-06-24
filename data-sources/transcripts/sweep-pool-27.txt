@@ -1,0 +1,458 @@
+Worker W27 — alphabetical family-completion sweep, window #27 (thai_lao_* through toba_*).
+New figures authored for kin NAMED in the prose of existing window entities that lacked their own entry.
+
+```json
+[
+  {
+    "id": "tinguian_bagbagak",
+    "name": {
+      "primary": "Bagbagak",
+      "alt": ["The Great Star", "Giant Star"],
+      "transliterations": { "tinguian": "Bagbagak" }
+    },
+    "type": "deity",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "the-great-star-fathers-the-star-maiden",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915), The Story of Gaygayoma Who Lives Up Above" }
+        ],
+        "notes": "Bagbagak, a great or giant star of the sky-world, is named in the Gaygayoma cycle recorded by Cole as the father of the star-maiden Gagayoma (Gaygayoma). When Aponitolau is drawn up to the heavens he recognises Bagbagak as a giant star and as the father of his star-bride; Gagayoma calls on her father to send the stars down to fetch sugar-cane for her."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "star-deity",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian (1915), The Story of Gaygayoma Who Lives Up Above" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915), The Story of Gaygayoma" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "tinguian_gagayoma",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian (1915), The Story of Gaygayoma" }
+        ],
+        "notes": "Bagbagak, the great star, is the father of the star-goddess Gagayoma; her record carries his name as the giant star who fathered her."
+      },
+      {
+        "kind": "spouse",
+        "personId": "tinguian_sinag",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian (1915), The Story of Gaygayoma" }
+        ],
+        "notes": "Bagbagak the great star and Sinag the moon are named together as the parents of Gagayoma in the Cole text."
+      }
+    ],
+    "notes": "Tinguian (Itneg) star-deity, the great or giant star of the sky-world named in Fay-Cooper Coles Gaygayoma cycle as the father of the star-maiden Gagayoma by Sinag the moon. English The Great Star leads; native Bagbagak in transliterations. Authored to give Gagayoma her named paternal parent."
+  },
+  {
+    "id": "tinguian_sinag",
+    "name": {
+      "primary": "Sinag",
+      "alt": ["The Moon", "Moon Mother of Gagayoma"],
+      "transliterations": { "tinguian": "Sinag" }
+    },
+    "type": "deity",
+    "tradition": "Tinguian",
+    "primaryTradition": "Tinguian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "mythic-prehistoric" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "the-moon-bears-the-star-maiden",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915), The Story of Gaygayoma Who Lives Up Above" }
+        ],
+        "notes": "Sinag, the moon of the sky-world, is named in the Gaygayoma cycle recorded by Cole as the mother of the star-maiden Gagayoma (Gaygayoma), her father being the great star Bagbagak. Distinct from the Tinguian sun-god Apo Init."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "moon",
+        "contextTag": "lifelong",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian (1915), The Story of Gaygayoma Who Lives Up Above" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian: A Study in Philippine Folk-Lore (Field Museum of Natural History, Anthropological Series, Vol. XIV, No. 1, 1915), The Story of Gaygayoma" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "tinguian_gagayoma",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian (1915), The Story of Gaygayoma" }
+        ],
+        "notes": "Sinag, the moon, is the mother of the star-goddess Gagayoma; Gagayoma is named the daughter of the great star Bagbagak and the moon Sinag."
+      },
+      {
+        "kind": "spouse",
+        "personId": "tinguian_bagbagak",
+        "sources": [
+          { "kind": "primary", "reference": "Fay-Cooper Cole, Traditions of the Tinguian (1915), The Story of Gaygayoma" }
+        ],
+        "notes": "Sinag the moon and Bagbagak the great star are named together as the parents of Gagayoma in the Cole text."
+      }
+    ],
+    "notes": "Tinguian (Itneg) moon-deity named in Fay-Cooper Coles Gaygayoma cycle as the mother of the star-maiden Gagayoma by Bagbagak the great star. English The Moon leads; native Sinag in transliterations. Authored to give Gagayoma her named maternal parent. Distinct from the separate Toba Moon and from the Tinguian sun-god."
+  },
+  {
+    "id": "tiv_tiv",
+    "name": {
+      "primary": "Tiv, Eponymous Ancestor of the Tiv",
+      "alt": ["Tiv"],
+      "transliterations": { "tiv": "Tiv" }
+    },
+    "type": "mortal",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tiv_takuruku"],
+    "temporal": { "era": "legendary ancestral age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary ancestral age",
+        "eraOrdering": 0,
+        "startEvent": "the-son-of-takuruku-fathers-the-two-divisions",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story: The Tiv Tribe as Seen by One of Its Members, trans. Rupert East (London: Oxford University Press for the IAI, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ],
+        "notes": "Tiv, a son of the apical ancestor Takuruku, is the eponymous forefather who gives the Tiv people their name; from his own two sons Ipusu and Ichongo descend the two great divisions of the Tiv. He broke off to found the Tiv people; his brother is Uke (the eponym of the non-Tiv peoples)."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Tiv", "script": "Latn", "rom": "Tiv" },
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story, trans. Rupert East (1939)" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story: The Tiv Tribe as Seen by One of Its Members, trans. Rupert East (London, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "father-of",
+        "personId": "tiv_ipusu",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story (1939); Bohannan and Bohannan, The Tiv of Central Nigeria (1953)" }
+        ],
+        "notes": "Ipusu, eponym of one of the two great Tiv divisions, is a son of Tiv."
+      },
+      {
+        "kind": "father-of",
+        "personId": "tiv_ichongo",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story (1939); Bohannan and Bohannan, The Tiv of Central Nigeria (1953)" }
+        ],
+        "notes": "Ichongo, eponym of the other great Tiv division, is a son of Tiv."
+      },
+      {
+        "kind": "sibling",
+        "personId": "tiv_uke",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story (1939)" }
+        ],
+        "notes": "Tiv and Uke are the two sons of Takuruku; Tiv founds the Tiv, Uke the eponym of the surrounding non-Tiv peoples."
+      }
+    ],
+    "notes": "Tiv (Nigeria) legendary eponymous ancestor, son of the apical ancestor Takuruku; the forefather who gives the Tiv people their name and father of Ipusu and Ichongo, eponyms of the two great Tiv divisions. Typed mortal (a legendary human ancestor reckoned in agnatic genealogy, not worshipped). Authored to give Takuruku his named son and to seat the Ipusu/Ichongo branching."
+  },
+  {
+    "id": "tiv_uke",
+    "name": {
+      "primary": "Uke",
+      "alt": ["Uke, brother of Tiv"],
+      "transliterations": { "tiv": "Uke" }
+    },
+    "type": "mortal",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tiv_takuruku"],
+    "temporal": { "era": "legendary ancestral age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary ancestral age",
+        "eraOrdering": 0,
+        "startEvent": "the-other-son-of-takuruku",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story: The Tiv Tribe as Seen by One of Its Members, trans. Rupert East (London: Oxford University Press for the IAI, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ],
+        "notes": "Uke is the second son of the apical ancestor Takuruku and the brother of Tiv. In Tiv genealogical reckoning Uke stands as the eponym of the surrounding non-Tiv peoples, set over against his brother Tiv from whom the Tiv themselves descend."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Uke", "script": "Latn", "rom": "Uke" },
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story, trans. Rupert East (1939)" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story: The Tiv Tribe as Seen by One of Its Members, trans. Rupert East (London, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tiv_tiv",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story (1939)" }
+        ],
+        "notes": "Uke and Tiv are the two sons of Takuruku."
+      }
+    ],
+    "notes": "Tiv (Nigeria) legendary ancestor, the second son of Takuruku and brother of the eponymous Tiv; the genealogical eponym of the non-Tiv peoples in Tiv reckoning. Typed mortal (legendary human ancestor). Authored to complete Takurukus named sons."
+  },
+  {
+    "id": "tiv_ipusu",
+    "name": {
+      "primary": "Ipusu",
+      "alt": ["Ipusu, son of Tiv"],
+      "transliterations": { "tiv": "Ipusu" }
+    },
+    "type": "mortal",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tiv_tiv"],
+    "temporal": { "era": "legendary ancestral age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary ancestral age",
+        "eraOrdering": 0,
+        "startEvent": "eponym-of-one-great-tiv-division",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story: The Tiv Tribe as Seen by One of Its Members, trans. Rupert East (London: Oxford University Press for the IAI, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ],
+        "notes": "Ipusu is one of the two sons of the eponymous ancestor Tiv; from him descends one of the two great divisions of the Tiv (the Ipusu), set over against the line of his brother Ichongo. The Tiv reckon their segmentary lineage system from this primary fork."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Ipusu", "script": "Latn", "rom": "Ipusu" },
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story, trans. Rupert East (1939)" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story, trans. Rupert East (London, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tiv_ichongo",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story (1939)" }
+        ],
+        "notes": "Ipusu and Ichongo are the two sons of Tiv and the eponyms of the two great Tiv divisions."
+      }
+    ],
+    "notes": "Tiv (Nigeria) legendary ancestor, a son of the eponymous Tiv and eponym of the Ipusu division, one of the two primary branches of the Tiv. Typed mortal (legendary human ancestor in agnatic genealogy). Authored to seat the named Ipusu/Ichongo fork descending from Tiv."
+  },
+  {
+    "id": "tiv_ichongo",
+    "name": {
+      "primary": "Ichongo",
+      "alt": ["Ichongo, son of Tiv"],
+      "transliterations": { "tiv": "Ichongo" }
+    },
+    "type": "mortal",
+    "tradition": "Tiv",
+    "primaryTradition": "Tiv",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["tiv_tiv"],
+    "temporal": { "era": "legendary ancestral age" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "legendary ancestral age",
+        "eraOrdering": 0,
+        "startEvent": "eponym-of-the-other-great-tiv-division",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story: The Tiv Tribe as Seen by One of Its Members, trans. Rupert East (London: Oxford University Press for the IAI, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ],
+        "notes": "Ichongo is one of the two sons of the eponymous ancestor Tiv; from him descends the other of the two great divisions of the Tiv (the Ichongo), set over against the line of his brother Ipusu."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "ancestry",
+        "contextTag": "lifelong",
+        "term": { "value": "Ichongo", "script": "Latn", "rom": "Ichongo" },
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story, trans. Rupert East (1939)" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Akiga (B. A. Sai), Akigas Story, trans. Rupert East (London, 1939)" },
+          { "kind": "secondary", "reference": "Laura Bohannan and Paul Bohannan, The Tiv of Central Nigeria (London: International African Institute, 1953)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "tiv_ipusu",
+        "sources": [
+          { "kind": "primary", "reference": "Akiga, Akigas Story (1939)" }
+        ],
+        "notes": "Ichongo and Ipusu are the two sons of Tiv and the eponyms of the two great Tiv divisions."
+      }
+    ],
+    "notes": "Tiv (Nigeria) legendary ancestor, a son of the eponymous Tiv and eponym of the Ichongo division, one of the two primary branches of the Tiv. Typed mortal (legendary human ancestor in agnatic genealogy). Authored to seat the named Ipusu/Ichongo fork descending from Tiv."
+  },
+  {
+    "id": "thracian_kabeiro",
+    "name": {
+      "primary": "Kabeiro, Nymph-Mother of the Kabeiroi",
+      "alt": ["Cabeiro", "Kabeiro"],
+      "transliterations": { "grc": "Καβειρώ", "rom": "Kabeiro", "la": "Cabeiro" }
+    },
+    "type": "numen",
+    "tradition": "Thracian",
+    "primaryTradition": "Thracian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "Samothracian mystery cult; Archaic-Hellenistic" },
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "era": "Samothracian mystery cult; Archaic-Hellenistic",
+        "eraOrdering": 0,
+        "startEvent": "the-nymph-bears-kadmilos-to-hephaistos",
+        "sources": [
+          { "kind": "primary", "reference": "Acusilaus (FGrH 2 F 20), via the scholia on Apollonius Rhodius, Argonautica 1.917, and Strabo, Geography 10.3.21" }
+        ],
+        "notes": "Kabeiro is the nymph who, by Hephaistos, bore Kadmilos (Kasmilos), father of the three Samothracian Kabeiroi; in the Argive genealogy of Acusilaus she is the ancestress of the Great Gods of Samothrace and of the Kabeirian nymphs (Kabeirides)."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "mystery-initiation",
+        "contextTag": "lifelong",
+        "term": { "value": "Καβειρώ", "script": "Greek", "rom": "Kabeiro" },
+        "sources": [
+          { "kind": "primary", "reference": "Strabo, Geography 10.3.21 (citing Acusilaus, FGrH 2 F 20)" }
+        ]
+      }
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Strabo, Geography 10.3.21 (citing Acusilaus, FGrH 2 F 20); scholia on Apollonius Rhodius, Argonautica 1.917 (Kabeiro daughter of Proteus, by Hephaistos mother of Kadmilos and the Kabeiroi)" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "thracian_kadmilos",
+        "sources": [
+          { "kind": "primary", "reference": "Scholia on Apollonius Rhodius, Argonautica 1.917; Strabo, Geography 10.3.21 (citing Acusilaus, FGrH 2 F 20)" }
+        ],
+        "notes": "In the Acusilaus genealogy Kabeiro, by Hephaistos, is the mother of Kadmilos (Kasmilos), the attendant and father of the Samothracian Kabeiroi. Kadmilos already carries her name in his record as his mother."
+      }
+    ],
+    "notes": "Samothracian nymph of the Thracian-Pelasgian mystery complex, named by Acusilaus (via Strabo and the Apollonius scholia) as the mother, by Hephaistos, of Kadmilos and so the ancestress of the Kabeiroi. Typed numen (a divine nymph outside the worshipped pantheon). Native name transmitted in Greek (Kabeiro). Her consort Hephaistos is a Greek deity outside this Thracian set and is left unauthored here. Authored to give Kadmilos his named maternal parent."
+  }
+]
+```

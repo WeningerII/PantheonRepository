@@ -479,7 +479,14 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
     "weight": "primary"
    }
   ],
-  "notes": "Primordial Desire, fairest of gods, who subdues all minds."
+  "notes": "Primordial Desire, fairest of gods, who subdues all minds.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_anteros",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_cronus",
@@ -3276,6 +3283,11 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
     "kind": "sibling",
     "personId": "greek_hesiod_thanatos",
     "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_moros",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ]
  },
@@ -3522,6 +3534,11 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
     "kind": "sibling",
     "personId": "greek_hesiod_nemesis",
     "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_moros",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ]
  },
@@ -3609,6 +3626,11 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
     "kind": "sibling",
     "personId": "greek_hesiod_thanatos",
     "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_moros",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ]
  },
@@ -3726,6 +3748,16 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
     "kind": "sibling",
     "personId": "greek_hesiod_atlas",
     "notes": "Full sibling — shares the same attested parentage (Iapetus) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_epimetheus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_menoetius",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ]
  },
@@ -3805,6 +3837,16 @@ For parentIds I'll use existing ids where available (greek_hesiod_zeus, greek_he
     "kind": "sibling",
     "personId": "greek_hesiod_prometheus",
     "notes": "Full sibling — shares the same attested parentage (Iapetus) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_epimetheus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_menoetius",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ]
  },

@@ -1,0 +1,407 @@
+Sweep pool 25 — family completion for window #25 (shango … sotho_tswana_modimo).
+
+New figures authored below: Shilluk river-progenitor Dunyel JuOkwa and his second
+daughter Ongwak; the three-generation heaven-descended ancestral chain of Okwa
+(Kolo, Omaro, Wat Mol); the Nyikang half-brother Milo (Ujul) who joined the Anuak
+fission; the Slavic third bogatyr Alyosha Popovich; and the parents of the Songhay
+fisher-giant Faran Maka (the mortal fisherman Nisile Bote and the river-spirit Maka).
+
+Existing children whose parentIds must be extended at merge:
+  - shilluk_nyakaya  parentIds += shilluk_dunyel
+  - shilluk_okwa     parentIds += shilluk_wat_mol
+  - songhai_faran_maka parentIds += songhai_nisile_bote, songhai_maka
+
+```json
+[
+  {
+    "id": "shilluk_dunyel",
+    "name": {
+      "primary": "Dunyel JuOkwa",
+      "alt": ["Dunyel", "Dunyel Ju-Okwa", "Dunyiel"],
+      "transliterations": {"shilluk": "Dunyel JuOkwa"}
+    },
+    "type": "numen",
+    "tradition": "Shilluk",
+    "primaryTradition": "Shilluk",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "vitalStatus": "immortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-half-man-half-crocodile-river-being",
+        "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk: Geschichte, Religion und Leben eines Niloten-Stammes (1925)"}],
+        "notes": "A river-being who is a man on his right side and a crocodile on his left. Father of the crocodile-river-goddess Nyakaya and her sister Ongwak, who emerged from the water where the Sobat joins the White Nile. Their screams when seized at the riverbank summoned him; after dispute he gave both daughters to the king Okwa for a high bride-price."
+      }
+    ],
+    "domains": [
+      {"sphereId": "rivers-and-water", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Hofmayr, Die Schilluk: Geschichte, Religion und Leben eines Niloten-Stammes (1925)"},
+        {"kind": "secondary", "reference": "Seligman, Pagan Tribes of the Nilotic Sudan (1932)"},
+        {"kind": "primary", "reference": "Shilluk oral tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "shilluk_nyakaya", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Father of the crocodile-river-goddess Nyakaya."},
+      {"kind": "father-of", "personId": "shilluk_ongwak", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Father of Ongwak, sister of Nyakaya."}
+    ]
+  },
+  {
+    "id": "shilluk_ongwak",
+    "name": {
+      "primary": "Ongwak",
+      "alt": ["Ongwac", "Ongwäk"],
+      "transliterations": {"shilluk": "Ongwak"}
+    },
+    "type": "numen",
+    "tradition": "Shilluk",
+    "primaryTradition": "Shilluk",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["shilluk_dunyel"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "vitalStatus": "immortal",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "emergence-from-the-river-with-Nyakaya",
+        "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}],
+        "notes": "Daughter of the river-being Dunyel JuOkwa and sister of Nyakaya; part-woman and part-crocodile from the waist down. Emerged from the river with Nyakaya and was seized by the king Okwa; after the bride-price negotiation became one of the wives of Okwa. In the Oyler recension she is sometimes named as the mother of Duwat, but the descent is contested across recensions."
+      }
+    ],
+    "domains": [
+      {"sphereId": "rivers-and-water", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Hofmayr, Die Schilluk: Geschichte, Religion und Leben eines Niloten-Stammes (1925)"},
+        {"kind": "secondary", "reference": "Oyler, The Shilluk Belief in the Good Medicine Man (1920)"},
+        {"kind": "primary", "reference": "Shilluk oral tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "shilluk_nyakaya", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Sister of the crocodile-river-goddess Nyakaya; both daughters of Dunyel JuOkwa."},
+      {"kind": "lover", "personId": "shilluk_okwa", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Taken with her sister by the king Okwa and given to him by their father at a high bride-price; co-wife alongside Nyakaya."}
+    ]
+  },
+  {
+    "id": "shilluk_kolo",
+    "name": {
+      "primary": "Kolo",
+      "alt": ["Koolo", "Koolø", "Poolø"],
+      "transliterations": {"shilluk": "Köölø"}
+    },
+    "type": "mortal",
+    "tradition": "Shilluk",
+    "primaryTradition": "Shilluk",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "emergence-from-the-gourd-of-the-white-cow-Dean-Aduk",
+        "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}],
+        "notes": "First man of the Shilluk royal-genealogical tradition. The white cow Dean Aduk (Dhyang Adugø) bore a gourd; when it was torn open, the man Kolo arose. Kolo stands at the head of the heaven-descended lineage Kolo to Omaro to Wat Mol to Okwa from which the founders Nyikang and Duwat descend."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Hofmayr, Die Schilluk: Geschichte, Religion und Leben eines Niloten-Stammes (1925)"},
+        {"kind": "primary", "reference": "Shilluk royal-genealogical oral tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "shilluk_omaro", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Father of Omaro in the Shilluk royal genealogy."}
+    ]
+  },
+  {
+    "id": "shilluk_omaro",
+    "name": {
+      "primary": "Omaro",
+      "alt": ["Omaarø", "Omaaro"],
+      "transliterations": {"shilluk": "Omaarø"}
+    },
+    "type": "mortal",
+    "tradition": "Shilluk",
+    "primaryTradition": "Shilluk",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["shilluk_kolo"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Kolo",
+        "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}],
+        "notes": "Son of Kolo and father of Wat Mol in the heaven-descended Shilluk royal genealogy; the second link in the chain Kolo to Omaro to Wat Mol to Okwa."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Hofmayr, Die Schilluk: Geschichte, Religion und Leben eines Niloten-Stammes (1925)"},
+        {"kind": "primary", "reference": "Shilluk royal-genealogical oral tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "shilluk_wat_mol", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Father of Wat Mol in the Shilluk royal genealogy."}
+    ]
+  },
+  {
+    "id": "shilluk_wat_mol",
+    "name": {
+      "primary": "Wat Mol",
+      "alt": ["Wad Mol", "Wäd Möölø", "Wat Mool"],
+      "transliterations": {"shilluk": "Wäd Möölø"}
+    },
+    "type": "mortal",
+    "tradition": "Shilluk",
+    "primaryTradition": "Shilluk",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["shilluk_omaro"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-Omaro",
+        "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}],
+        "notes": "Son of Omaro and father of the king Okwa in the heaven-descended Shilluk royal genealogy; the immediate ancestor through whom Okwa and his sons Nyikang and Duwat trace descent to the first man Kolo."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Hofmayr, Die Schilluk: Geschichte, Religion und Leben eines Niloten-Stammes (1925)"},
+        {"kind": "primary", "reference": "Shilluk royal-genealogical oral tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "shilluk_okwa", "sources": [{"kind": "secondary", "reference": "Hofmayr, Die Schilluk (1925)"}], "notes": "Father of the king Okwa, husband of Nyakaya and father of Nyikang and Duwat."}
+    ]
+  },
+  {
+    "id": "shilluk_milo",
+    "name": {
+      "primary": "Milo",
+      "alt": ["Ujul", "Milo wa Okwa", "Mido"],
+      "transliterations": {"shilluk": "Milo"}
+    },
+    "type": "mortal",
+    "tradition": "Shilluk",
+    "primaryTradition": "Shilluk",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["shilluk_okwa"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-half-brother-of-Nyikang-through-Okwa",
+        "sources": [{"kind": "secondary", "reference": "pachodo.org A Historical Background of the Collo (citing Hofmayr 1925)"}],
+        "notes": "Half-brother of Nyikang and of Gilo through their shared father Okwa; the maternal line is not preserved, so Milo registers as mortal-tier like Gilo. Named in the canonical list of the followers who left the southern homeland with Nyikang, where he is also called Ujul."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "heroic-age",
+        "eraOrdering": 1,
+        "startEvent": "accompanying-Gilo-in-the-Anuak-fission",
+        "sources": [{"kind": "secondary", "reference": "pachodo.org Anuak History — History of the Anuak to 1956"}],
+        "notes": "In several recensions Milo, also called Ujul, accompanied his half-brother Gilo when Gilo separated from Nyikang and migrated south and east to found the Anuak people in the Gambela region."
+      }
+    ],
+    "domains": [],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "pachodo.org A Historical Background of the Collo (compilation citing Hofmayr 1925)"},
+        {"kind": "secondary", "reference": "pachodo.org Anuak History — History of the Anuak to 1956"},
+        {"kind": "primary", "reference": "Shilluk and Anuak oral tradition"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "sibling", "personId": "shilluk_nyikang", "sources": [{"kind": "secondary", "reference": "pachodo.org A Historical Background of the Collo"}], "notes": "Half-brother of Nyikang through their shared father Okwa."},
+      {"kind": "sibling", "personId": "shilluk_gilo", "sources": [{"kind": "secondary", "reference": "pachodo.org Anuak History"}], "notes": "Half-brother of Gilo through shared father Okwa; accompanied Gilo in the Anuak fission."},
+      {"kind": "sibling", "personId": "shilluk_duwat", "sources": [{"kind": "secondary", "reference": "pachodo.org A Historical Background of the Collo"}], "notes": "Half-brother of Duwat through their shared father Okwa."}
+    ]
+  },
+  {
+    "id": "slavic_alyosha_popovich",
+    "name": {
+      "primary": "Alyosha Popovich",
+      "alt": ["Alesha Popovich", "Alyosha the Priests Son", "Алёша Попович"],
+      "transliterations": {"russian": "Alyosha Popovich"}
+    },
+    "type": "mortal",
+    "tradition": "Slavic",
+    "primaryTradition": "Slavic",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "bylina-medieval"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "bylina-medieval",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-the-son-of-the-priest-Leonty-of-Rostov",
+        "sources": [{"kind": "secondary", "reference": "Bailey & Ivanova, An Anthology of Russian Folk Epics (1999)"}],
+        "notes": "Youngest of the three principal bogatyrs of the Russian bylina cycle, after Ilya Muromets and Dobrynya Nikitich. The surname Popovich means son-of-a-priest; in the byliny his father is the cathedral priest Leonty of Rostov. Characterized by cunning rather than brute strength."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "bylina-medieval",
+        "eraOrdering": 1,
+        "startEvent": "slaying-of-Tugarin-Zmeyevich-at-the-court-of-Vladimir",
+        "sources": [{"kind": "secondary", "reference": "Bailey & Ivanova, An Anthology of Russian Folk Epics (1999)"}],
+        "notes": "In the canonical bylina Alyosha Popovich and Tugarin Zmeyevich he defeats the dragon-champion Tugarin by trickery, praying for rain to soak the wings of Tugarin so he can no longer fly, then striking off his head. Serves at the court of Vladimir as the third of the bogatyr trinity."
+      }
+    ],
+    "domains": [
+      {"sphereId": "heroism-and-war", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Bailey & Ivanova, An Anthology of Russian Folk Epics (1999)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Bylina cycle — Kirsha Danilov, Drevnie rossiiskie stikhotvoreniia (1804)"},
+        {"kind": "secondary", "reference": "Bailey & Ivanova, An Anthology of Russian Folk Epics (1999)"},
+        {"kind": "secondary", "reference": "Nikon Chronicle — the historical Alexander Popovich of Rostov (partial historical anchor)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "companion", "personId": "slavic_ilya_muromets", "sources": [{"kind": "secondary", "reference": "Bailey & Ivanova, An Anthology of Russian Folk Epics (1999)"}], "notes": "Fellow bogatyr of the Kievan court of Vladimir; the byliny pair the three (Ilya, Dobrynya, Alyosha) as sworn brothers-in-arms at the heroic outpost."},
+      {"kind": "companion", "personId": "slavic_dobrynya_nikitich", "sources": [{"kind": "secondary", "reference": "Bailey & Ivanova, An Anthology of Russian Folk Epics (1999)"}], "notes": "Fellow bogatyr of the Vladimir circle and the third member of the sworn bogatyr trinity with Ilya Muromets and Dobrynya."}
+    ]
+  },
+  {
+    "id": "songhai_nisile_bote",
+    "name": {
+      "primary": "Nisile Bote",
+      "alt": ["Nisili Bote", "Nisile", "Nisile the Fisherman"],
+      "transliterations": {"songhay": "Nisile Bote"}
+    },
+    "type": "mortal",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "Songhay heroic age"},
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "dead",
+        "era": "Songhay heroic age",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-the-mortal-fisherman-father-of-Faran-Maka",
+        "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989)"}],
+        "notes": "Mortal fisherman of the Niger; the word Bote means fisherman. By the river-spirit Maka he fathered the fisher-giant Faran Maka Bote, ancestor of the sorko priest-bards. His mortal paternity is why Faran Maka registers at demigod rather than full-divine tier."
+      }
+    ],
+    "domains": [
+      {"sphereId": "fishing-and-rivers", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989)"},
+        {"kind": "secondary", "reference": "Rouch, La religion et la magie songhay (1960/1989)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "father-of", "personId": "songhai_faran_maka", "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)"}], "notes": "Mortal father of the fisher-giant Faran Maka by the river-spirit Maka."},
+      {"kind": "lover", "personId": "songhai_maka", "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)"}], "notes": "United with the river-spirit Maka; their son is the fisher-giant Faran Maka."}
+    ]
+  },
+  {
+    "id": "songhai_maka",
+    "name": {
+      "primary": "Maka",
+      "alt": ["Maka the River-Spirit", "Maka of the Niger"],
+      "transliterations": {"songhay": "Maka"}
+    },
+    "type": "numen",
+    "tradition": "Songhai",
+    "primaryTradition": "Songhai",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "Songhay heroic age"},
+    "lifecycle": [
+      {
+        "typeStatus": "numen",
+        "vitalStatus": "immortal",
+        "era": "Songhay heroic age",
+        "eraOrdering": 0,
+        "startEvent": "existence-as-the-river-spirit-mother-of-Faran-Maka",
+        "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989)"}],
+        "notes": "River-spirit of the Niger and mother of the fisher-giant Faran Maka Bote by the mortal fisherman Nisile Bote. Her divine maternity, paired with a mortal father, places Faran Maka at demigod tier; the giant takes the second element of his name, Maka, from her."
+      }
+    ],
+    "domains": [
+      {"sphereId": "rivers-and-water", "contextTag": "lifelong", "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [
+      {"claim": "existence", "citations": [
+        {"kind": "secondary", "reference": "Stoller, Fusion of the Worlds: An Ethnography of Possession among the Songhay of Niger (1989)"},
+        {"kind": "secondary", "reference": "Rouch, La religion et la magie songhay (1960/1989)"}
+      ]}
+    ],
+    "relations": [
+      {"kind": "mother-of", "personId": "songhai_faran_maka", "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)"}], "notes": "River-spirit mother of the fisher-giant Faran Maka by the mortal fisherman Nisile Bote."},
+      {"kind": "lover", "personId": "songhai_nisile_bote", "sources": [{"kind": "secondary", "reference": "Stoller, Fusion of the Worlds (1989)"}], "notes": "United with the mortal fisherman Nisile Bote; their son is the fisher-giant Faran Maka."}
+    ]
+  }
+]
+```

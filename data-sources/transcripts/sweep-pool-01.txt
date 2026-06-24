@@ -1,0 +1,1870 @@
+Sweep pool 01 — alphabetical family-completion sweep, window #1 (greek_dardanus .. greek_hesiod_hestia).
+New figures authored from kin named in the prose of the window entities.
+
+```json
+[
+ {
+  "id": "greek_phobos",
+  "name": {
+   "primary": "Phobos",
+   "alt": [
+    "Phobus"
+   ],
+   "transliterations": {
+    "greek": "Φόβος"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "greek_hesiod_ares",
+   "greek_hesiod_aphrodite"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "personification-of-battle-rout",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937; Hom. Il. 15.119-120"
+     }
+    ],
+    "notes": "Son of Ares and Aphrodite; the personification of panic and rout, who together with his brother Deimos yokes the war-chariot of Ares and drives the close ranks of men into terror."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fear",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 934; Hom. Il. 4.440, 15.119"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 933-937; Homer, Iliad 4.440, 13.299, 15.119-120; Apollodorus 3.4.2"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 933-937"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_deimos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-936"
+     }
+    ],
+    "notes": "Constant battle-companions, the twin terrors yoked to Ares chariot."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_harmonia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_anteros",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cic. Nat. D. 3.59-60 with Hes. Theog. 933-937 (Ares-Aphrodite offspring)"
+     }
+    ]
+   },
+   {
+    "kind": "companion",
+    "personId": "greek_hesiod_ares",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 15.119-120"
+     }
+    ],
+    "notes": "Attends his father Ares in battle, harnessing his horses."
+   }
+  ],
+  "notes": "Greek personification of panic and battlefield rout, son of Ares and Aphrodite and brother of Deimos and Harmonia. With Deimos he attends and drives the chariot of Ares; Hesiod (Theogony 934) names the pair as those who drive the close ranks of men in chilling war. Depicted with a lion-head on the shield of Agamemnon (Iliad 11.36-37) and on the shield of Heracles."
+ },
+ {
+  "id": "greek_deimos",
+  "name": {
+   "primary": "Deimos",
+   "alt": [
+    "Deimus"
+   ],
+   "transliterations": {
+    "greek": "Δεῖμος"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "greek_hesiod_ares",
+   "greek_hesiod_aphrodite"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "personification-of-battle-terror",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937; Hom. Il. 15.119-120"
+     }
+    ],
+    "notes": "Son of Ares and Aphrodite; the personification of dread and terror, who with his brother Phobos accompanies Ares into war."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "terror",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 934; Hom. Il. 15.119"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 933-937; Homer, Iliad 4.440, 11.37, 15.119-120; Apollodorus 3.4.2"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 933-937"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_phobos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-936"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_harmonia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_anteros",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cic. Nat. D. 3.59-60 with Hes. Theog. 933-937 (Ares-Aphrodite offspring)"
+     }
+    ]
+   },
+   {
+    "kind": "companion",
+    "personId": "greek_hesiod_ares",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 15.119-120"
+     }
+    ],
+    "notes": "Attends his father Ares in battle."
+   }
+  ],
+  "notes": "Greek personification of dread and terror, son of Ares and Aphrodite and brother of Phobos and Harmonia. Paired with Phobos as the constant battle-companion of Ares, the two driving the ranks of men into rout (Hesiod, Theogony 934)."
+ },
+ {
+  "id": "greek_anteros",
+  "name": {
+   "primary": "Anteros",
+   "alt": [
+    "Anteros"
+   ],
+   "transliterations": {
+    "greek": "Ἀντέρως"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "greek_hesiod_ares",
+   "greek_hesiod_aphrodite"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "given-as-playmate-to-Eros",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plat. Phaedr. 255d-e; Cic. Nat. D. 3.59-60"
+     }
+    ],
+    "notes": "Son of Ares and Aphrodite, given by Themis to be the playmate of his brother Eros, who could not thrive alone; the god of love returned and avenger of love unrequited."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "requited-love",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plat. Phaedr. 255d-e; Paus. 1.30.1, 6.23.3-5"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Plato, Phaedrus 255d-e; Cicero, De Natura Deorum 3.59-60; Pausanias 1.30.1, 6.23.3-5; Ovid, Fasti (the twin Loves)"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Cicero, De Natura Deorum 3.59-60 (son of Mars and Venus)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_eros",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Plat. Phaedr. 255d-e; Paus. 1.30.1"
+     }
+    ],
+    "notes": "Eros could not grow until Anteros, counter-love, was given to him as playmate; the two are paired as the twin Loves."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_phobos",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cic. Nat. D. 3.59-60 with Hes. Theog. 933-937 (Ares-Aphrodite offspring)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deimos",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cic. Nat. D. 3.59-60 with Hes. Theog. 933-937 (Ares-Aphrodite offspring)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_harmonia",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cic. Nat. D. 3.59-60 with Hes. Theog. 933-937"
+     }
+    ]
+   }
+  ],
+  "notes": "Greek god of requited or returned love (counter-love) and the avenger of slighted love, counted among the children of Ares and Aphrodite (Cicero names him son of Mars and Venus). Given as a playmate to his lonely brother Eros so that love might be answered if it is to prosper (Plato, Phaedrus). At Athens an altar of Anteros stood, dedicated by resident aliens after the death of Timagoras, whom the Athenian Meles had spurned (Pausanias 1.30.1)."
+ },
+ {
+  "id": "greek_harmonia",
+  "name": {
+   "primary": "Harmonia",
+   "alt": [
+    "Harmony"
+   ],
+   "transliterations": {
+    "greek": "Ἁρμονία"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "transformed",
+  "origin": "canon",
+  "parentIds": [
+   "greek_hesiod_ares",
+   "greek_hesiod_aphrodite"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-Harmonia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937; Apollod. 3.4.2"
+     }
+    ],
+    "notes": "Daughter of Ares and Aphrodite, goddess of concord and marital harmony."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Cadmus-at-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 937, 975-978; Apollod. 3.4.2; Diod. Sic. 5.48-49"
+     }
+    ],
+    "notes": "Given by Zeus to Cadmus as wife; all the gods attended the wedding at Thebes and brought gifts, among them the fateful robe and necklace wrought by Hephaestus. Mother of Ino, Semele, Agave, Autonoe, and Polydorus of Thebes."
+   },
+   {
+    "typeStatus": "deity",
+    "vitalStatus": "transformed",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "transformation-into-serpents-in-Illyria",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.5.4; Ov. Met. 4.563-603"
+     }
+    ],
+    "notes": "In old age she and Cadmus withdrew to Illyria and were both turned into serpents, then conveyed by the gods to the Elysian Fields."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "harmony",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 937; Hymn. Hom. (concord); Diod. Sic. 5.48"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "necklace-of-harmonia",
+    "name": "The Necklace of Harmonia",
+    "kind": "object",
+    "role": "the cursed golden necklace wrought by Hephaestus, wedding gift to Harmonia, which brought ruin on its later Theban owners (Eriphyle, Argive expedition)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.2, 3.6.1; Diod. Sic. 4.65-66"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 933-937, 975-978; Apollodorus 3.4.2, 3.5.4; Diodorus Siculus 5.48-49; Ovid, Metamorphoses 4.563-603"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 933-937; Apollodorus 3.4.2 (daughter of Ares and Aphrodite)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_phobos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_deimos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 933-937"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_anteros",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Cic. Nat. D. 3.59-60 with Hes. Theog. 933-937 (Ares-Aphrodite offspring)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Cadmus (founder-king of Thebes, son of Agenor, brother of Europa)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 937, 975-978; Apollod. 3.4.2"
+     }
+    ],
+    "notes": "Founder-king of Thebes; entry pending in registry."
+   }
+  ],
+  "notes": "Greek goddess of harmony and concord, daughter of Ares and Aphrodite and sister of Phobos and Deimos. Wedded to Cadmus, founder of Thebes, in a marriage attended by all the gods; she received the robe and necklace of Hephaestus, gifts later cursed for the Theban royal house. Mother of the Theban princesses Ino, Semele, Agave, Autonoe, and of Polydorus of Thebes. In old age she and Cadmus were transformed into serpents in Illyria and translated to Elysium."
+ },
+ {
+  "id": "greek_eileithyia",
+  "name": {
+   "primary": "Eileithyia",
+   "alt": [
+    "Ilithyia",
+    "Eleithyia"
+   ],
+   "transliterations": {
+    "greek": "Εἰλείθυια"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "greek_hesiod_zeus",
+   "greek_hesiod_hera"
+  ],
+  "parentRoles": {
+   "greek_hesiod_zeus": "paternal",
+   "greek_hesiod_hera": "maternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "goddess-of-childbirth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 922; Hom. Il. 11.270-271"
+     }
+    ],
+    "notes": "Daughter of Zeus and Hera, sister of Ares, Hebe and Hephaestus; the goddess who presides over childbirth and the pangs of labour."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "delay-of-the-birth-of-Apollo-and-Artemis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hymn. Hom. Apoll. 97-119"
+     }
+    ],
+    "notes": "Kept by Hera from Delos so that Leto laboured nine days and nights; the other goddesses sent Iris to fetch her, and at her coming Apollo was born."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "childbirth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.270-271, 16.187, 19.103; Hymn. Hom. Apoll. 97-119"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 922; Homer, Iliad 11.270-271, 16.187, 19.103, 19.119; Homeric Hymn to Apollo 97-119; Pausanias 1.18.5"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod, Theogony 921-923 (daughter of Hera and Zeus)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hebe",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 921-923"
+     }
+    ],
+    "notes": "Full sibling; the children of Zeus and Hera."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_ares",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 921-923"
+     }
+    ]
+   }
+  ],
+  "notes": "Greek goddess of childbirth and labour-pains, daughter of Zeus and Hera and sister of Ares, Hebe and Hephaestus (named among Hera children in the registry Hera entry). In the Homeric Hymn to Apollo, Hera detained her from Delos to prolong Leto labour, until Iris fetched her and Apollo was born. Her oldest and most sacred cult was the cave at Amnisos near Knossos in Crete, named already in the Odyssey; the Romans equated her with Lucina (an aspect of Juno) and with Diana."
+ },
+ {
+  "id": "greek_hesperus",
+  "name": {
+   "primary": "Hesperus",
+   "alt": [
+    "Hesperos",
+    "the Evening Star",
+    "Vesper"
+   ],
+   "transliterations": {
+    "greek": "Ἕσπερος"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "personification-of-the-evening-star",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 381-382 (Astraios-Eos star-children); Hom. Il. 22.317-318"
+     }
+    ],
+    "notes": "Personification of the evening star, the planet Venus seen after sunset; the same celestial body as the morning star Eosphoros, recognised as one from at least the time of Pythagoras."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "evening-star",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 22.317-318; Sappho fr. 104; Cic. Nat. D. 2.53"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 22.317-318; Hesiod, Theogony 381-382; Sappho fr. 104; Cicero, De Natura Deorum 2.53; Pliny, Natural History 2.36-37"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_eosphorus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cic. Nat. D. 2.53; Plin. HN 2.36-37 (Hesperus and Phosphorus the single planet Venus)"
+     }
+    ],
+    "notes": "Hesperus the evening star and Eosphorus the morning star are the same planet Venus; the tradition treats them as brothers or as one identity, both reckoned children of Astraeus and Eos."
+   }
+  ],
+  "notes": "Greek personification of the evening star, the planet Venus at dusk, counted (with the morning star Eosphoros) among the star-children of the Titan Astraeus and Eos. Greek astronomy from at least Pythagoras recognised the evening and morning stars as one body, so Hesperus and Eosphoros (Phosphoros) merge into a single identity; the Latin counterpart is Vesper. Sappho hailed him as the star that brings home all that the bright dawn scattered. Parentage is given variously (son of Astraeus and Eos, or of Cephalus, or brother of Atlas), so no fixed parents are asserted here."
+ },
+ {
+  "id": "greek_iasion",
+  "name": {
+   "primary": "Iasion",
+   "alt": [
+    "Iasius",
+    "Eetion"
+   ],
+   "transliterations": {
+    "greek": "Ἰασίων"
+   }
+  },
+  "type": "deity",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "greek_hesiod_zeus",
+   "greek_electra_pleiad"
+  ],
+  "parentRoles": {
+   "greek_hesiod_zeus": "paternal",
+   "greek_electra_pleiad": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "founder-of-the-Samothracian-mysteries",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 5.48-49; Apollod. 3.12.1"
+     }
+    ],
+    "notes": "Son of Zeus and the Pleiad Electra, brother of Dardanus; initiated in and a founder of the mystic rites of the Great Gods on Samothrace."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "union-with-Demeter-in-the-thrice-ploughed-field",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 5.125-128; Hes. Theog. 969-974"
+     }
+    ],
+    "notes": "Lay with Demeter in a thrice-ploughed fallow field on Crete; she bore him Plutus, god of wealth."
+   },
+   {
+    "typeStatus": "deity",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-thunderbolt",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 5.125-128"
+     }
+    ],
+    "notes": "Slain by the thunderbolt of Zeus (in the dominant tradition for daring to embrace the goddess); Ovid alternatively has him live to old age as Demeter consort."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "samothracian-mysteries",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. Sic. 5.48-49"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Odyssey 5.125-128; Hesiod, Theogony 969-974; Apollodorus 3.12.1; Diodorus Siculus 5.48-49; Ovid, Amores 3.10.25-28"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.1; Hellanicus FGrHist 4 F 23 (son of Zeus and Electra)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_dardanus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Diod. Sic. 5.48"
+     }
+    ],
+    "notes": "Full brother; both sons of Zeus and the Pleiad Electra on Samothrace."
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_demeter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 5.125-128; Hes. Theog. 969-974"
+     }
+    ],
+    "notes": "Wires to the existing figure greek_hesiod_demeter, which carries an externalRef to the unregistered Iasion; reciprocal lover edge now declared."
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Plutus (god of wealth and agricultural plenty, son of Demeter and Iasion)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 969-974"
+     }
+    ],
+    "notes": "Plutus, god of wealth; entry pending in registry."
+   }
+  ],
+  "notes": "Demigod son of Zeus by the Pleiad Electra and brother of Dardanus, founder-figure of the Samothracian mysteries of the Great Gods. He lay with Demeter in a thrice-ploughed field on Crete and fathered Plutus, the god of wealth (Odyssey 5; Theogony 969-974); for the union Zeus struck him dead with a thunderbolt. He is the lover named in the registry Demeter entry, hitherto recorded only as an externalRef to a deleted entry."
+ },
+ {
+  "id": "greek_neoptolemus",
+  "name": {
+   "primary": "Neoptolemus",
+   "alt": [
+    "Pyrrhus",
+    "Neoptolemos"
+   ],
+   "transliterations": {
+    "greek": "Νεοπτόλεμος"
+   }
+  },
+  "type": "quartigod",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "greek_achilles"
+  ],
+  "parentRoles": {
+   "greek_achilles": "paternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "birth-on-Scyros",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 19.326-327; Apollod. 3.13.8"
+     }
+    ],
+    "notes": "Son of Achilles by Deidamia, daughter of Lycomedes of Scyros; born while Achilles was hidden among the women of the court. Called Pyrrhus at birth, Neoptolemus (new-warrior) after his father young entry into the war."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "brought-to-Troy-and-sack-of-the-city",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.506-537; Apollod. Epit. 5.10-11, 5.21-22"
+     }
+    ],
+    "notes": "Fetched from Scyros by Odysseus after Achilles death because Troy could not fall without him; entered the wooden horse, and at the sack killed Priam at the altar and cast the infant Astyanax from the walls."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "marriage-to-Hermione-and-death-at-Delphi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 4.5-9; Eur. Andr.; Apollod. Epit. 6.12-14"
+     }
+    ],
+    "notes": "Took the captive Andromache as concubine and then married Hermione; was killed at Delphi, by Orestes or in a quarrel over sacrificial meat, and buried within the sanctuary, where he received hero-cult."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.506-537; Apollod. Epit. 5.10-11"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 19.326-327, Odyssey 4.5-9, 11.506-537; Apollodorus 3.13.8, Epitome 5.10-11, 5.21-22, 6.12-14; Sophocles, Philoctetes; Euripides, Andromache; Virgil, Aeneid 2.469-558; Pausanias 10.24.6"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer, Iliad 19.326-327; Apollodorus 3.13.8 (son of Achilles and Deidamia)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_hermione",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 4.5-9; Eur. Andr.; Apollod. Epit. 6.12-14"
+     }
+    ],
+    "notes": "Married Hermione, daughter of Menelaus and Helen; wires to the existing figure greek_hermione, which carries a former-spouse externalRef to Neoptolemus. Reciprocal spouse/former-spouse edge now declared."
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_andromache",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Andr.; Apollod. Epit. 6.12"
+     }
+    ],
+    "notes": "Took the widow of Hector as captive concubine, by whom he had Molossus; wires to the existing figure greek_andromache."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_orestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Andr. 993-1008; Apollod. Epit. 6.14"
+     }
+    ],
+    "notes": "Orestes, to whom Hermione had first been pledged, contrived his death at Delphi; wires to the existing figure greek_orestes."
+   },
+   {
+    "kind": "killer-of",
+    "externalRef": {
+     "name": "Priam (last king of Troy, slain by Neoptolemus at the altar of Zeus Herkeios)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 2.526-558; Apollod. Epit. 5.21"
+     }
+    ],
+    "notes": "Priam is the registered figure greek_priam; Neoptolemus slew him at the household altar during the sack. Killed-by edge to be added on greek_priam."
+   }
+  ],
+  "notes": "Quartigod son of Achilles by Deidamia of Scyros, called Pyrrhus at birth. Indispensable to the fall of Troy, he was fetched from Scyros by Odysseus, hid in the wooden horse, and at the sack killed Priam at the altar and flung Astyanax from the walls. He took Andromache as concubine (fathering Molossus, eponym of the Molossians) and married Hermione, the contested betrothed of Orestes; for that quarrel he was slain at Delphi and buried in the sanctuary, where he received hero-cult. He is the unregistered husband named in the registry Hermione entry."
+ },
+ {
+  "id": "greek_polydorus_troy",
+  "name": {
+   "primary": "Polydorus",
+   "alt": [
+    "Polydoros",
+    "Polydorus of Troy"
+   ],
+   "transliterations": {
+    "greek": "Πολύδωρος"
+   }
+  },
+  "type": "scion",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "greek_priam",
+   "greek_hecuba"
+  ],
+  "parentRoles": {
+   "greek_priam": "paternal",
+   "greek_hecuba": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "youngest-son-of-Priam-sent-to-Thrace",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 1-58; Apollod. Epit. 5.23"
+     }
+    ],
+    "notes": "Youngest son of Priam and Hecuba; sent for safekeeping with gold to Polymestor, king of Thrace, when the war threatened Troy."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "murder-by-Polymestor",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 25-54, 1132-1182; Ov. Met. 13.429-438, 536-575"
+     }
+    ],
+    "notes": "After Troy fell, Polymestor murdered him for the gold and cast his body into the sea; his corpse washed ashore, and Hecuba, recognising it, avenged him by blinding Polymestor and killing his sons."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Hecuba 1-58, 1132-1182; Apollodorus Epitome 5.23; Ovid, Metamorphoses 13.429-438, 536-575; Virgil, Aeneid 3.19-68"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Euripides, Hecuba 1-15; Apollodorus Epitome 5.23 (son of Priam and Hecuba)"
+     }
+    ],
+    "notes": "Son of Priam and Hecuba in the tragic and Apollodoran tradition followed by the registry Hecuba entry; Homer (Iliad 20.407-410, 22.46-48) instead makes Polydorus the son of Priam by Laothoe."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hector",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.5, Epit. 5.23"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_polyxena",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec.; Apollod. Epit. 5.23"
+     }
+    ]
+   },
+   {
+    "kind": "killed-by",
+    "externalRef": {
+     "name": "Polymestor (king of the Thracian Chersonese, guest-friend of Priam who murdered Polydorus for his gold)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hec. 25-54; Ov. Met. 13.430-438"
+     }
+    ],
+    "notes": "Polymestor, Thracian king; entry pending in registry."
+   }
+  ],
+  "notes": "Scion, the youngest son of Priam and Hecuba in the tragic tradition. Entrusted with treasure to Polymestor of Thrace for safety during the war, he was murdered by his host for the gold once Troy had fallen and his body thrown into the sea. His corpse, washed ashore and recognised by Hecuba, set in motion her terrible revenge (Euripides, Hecuba). He is named among Hecuba children in the registry Hecuba entry. Homer assigns him a different mother, Laothoe; the registry follows the Euripidean-Apollodoran descent from Hecuba. Distinct from Polydorus of Thebes, son of Cadmus and Harmonia."
+ },
+ {
+  "id": "greek_tisamenus",
+  "name": {
+   "primary": "Tisamenus",
+   "alt": [
+    "Tisamenos"
+   ],
+   "transliterations": {
+    "greek": "Τισαμενός"
+   }
+  },
+  "type": "scion",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "greek_orestes",
+   "greek_hermione"
+  ],
+  "parentRoles": {
+   "greek_orestes": "paternal",
+   "greek_hermione": "maternal"
+  },
+  "temporal": {
+   "era": "post-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "post-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "last-Atreid-king-of-Argos-and-Sparta",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.2-3; Paus. 2.18.6-7"
+     }
+    ],
+    "notes": "Son of Orestes and Hermione; succeeded his father to the thrones of Argos, Mycenae and Sparta, the last of the Pelopid line to rule the Peloponnese."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "defeat-and-death-at-the-Heraclidae-return",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.2-3; Paus. 7.1.7-8"
+     }
+    ],
+    "notes": "Defeated and slain when the Heraclidae under Temenus, Cresphontes and the sons of Aristodemus invaded; his Achaean followers withdrew to the northern coast that took the name Achaea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.2-3; Paus. 2.18.6"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.8.2-3; Pausanias 2.18.6-7, 7.1.7-8; Herodotus reference to the Heraclidae return"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.8.2-3 (son of Orestes and Hermione)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "parent-of",
+    "externalRef": {
+     "name": "Cometes and Penthilus (sons of Tisamenus in the Achaean migration tradition)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.18.7-8, 7.6.1-2"
+     }
+    ],
+    "notes": "Sons who led the Achaeans after his death; entries pending."
+   }
+  ],
+  "notes": "Scion son of Orestes and Hermione, the last king of the house of Atreus to hold Argos, Mycenae and Sparta. His reign ends the Pelopid dominance of the Peloponnese: at the return of the Heraclidae he was defeated and killed, and his Achaean followers migrated to the north coast that thereafter bore the name Achaea. He is the son named in the registry Hermione entry, hitherto recorded only as an externalRef."
+ },
+ {
+  "id": "greek_teucer_dardania",
+  "name": {
+   "primary": "Teucer",
+   "alt": [
+    "Teucros",
+    "Teucer of the Troad"
+   ],
+   "transliterations": {
+    "greek": "Τεῦκρος"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "first-king-of-the-Troad",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Dion. Hal. 1.61-62"
+     }
+    ],
+    "notes": "The first king of the Troad, after whom its people were called Teucrians; son of the river Scamander and the nymph Idaea in the local tradition."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "reception-of-Dardanus-and-marriage-of-Batea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Dion. Hal. 1.61-62"
+     }
+    ],
+    "notes": "Received Dardanus when he crossed from Samothrace, gave him a share of the land and his daughter Batea in marriage; at Teucer death Dardanus named the whole country Dardania."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Dion. Hal. 1.61-62"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.1; Dionysius of Halicarnassus, Roman Antiquities 1.61-62; Diodorus Siculus 4.75; Virgil, Aeneid 3.107-110"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_batea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1"
+     }
+    ],
+    "notes": "Father of Batea, whom he gave in marriage to Dardanus."
+   },
+   {
+    "kind": "ally",
+    "personId": "greek_dardanus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1; Dion. Hal. 1.61-62"
+     }
+    ],
+    "notes": "Received and settled Dardanus, his son-in-law, founder of the Dardanian line."
+   }
+  ],
+  "notes": "Mortal first king of the Troad and eponym of the Teucrians, in the local tradition son of the river Scamander and the nymph Idaea. He received Dardanus on his arrival from Samothrace, gave him land and his daughter Batea as wife, and at his death the country was renamed Dardania. He is the King Teucer named in the registry Dardanus entry. Distinct from the later Teucer the archer, son of Telamon."
+ },
+ {
+  "id": "greek_batea",
+  "name": {
+   "primary": "Batea",
+   "alt": [
+    "Bateia",
+    "Arisbe"
+   ],
+   "transliterations": {
+    "greek": "Βάτεια"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "greek_teucer_dardania"
+  ],
+  "parentRoles": {
+   "greek_teucer_dardania": "paternal"
+  },
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Dardanus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1-2; Dion. Hal. 1.62"
+     }
+    ],
+    "notes": "Daughter of Teucer, first king of the Troad; given by her father in marriage to Dardanus, who received with her a share of the land."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-the-Dardanian-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1-2"
+     }
+    ],
+    "notes": "Bore Dardanus the sons Ilus, who died childless, and Erichthonius, who succeeded to the kingdom; ancestress of the whole Trojan royal house."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.1-2; Dionysius of Halicarnassus, Roman Antiquities 1.62; Diodorus Siculus 4.75"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.1 (daughter of Teucer)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_dardanus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1-2; Dion. Hal. 1.62"
+     }
+    ],
+    "notes": "Wife of Dardanus; wires to the existing figure greek_dardanus, whose lifecycle names the marriage to Batea."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_erichthonius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.1-2"
+     }
+    ],
+    "notes": "Mother of the Dardanian Erichthonius; the existing figure greek_erichthonius should add greek_batea to parentIds."
+   }
+  ],
+  "notes": "Mortal daughter of Teucer, first king of the Troad, and the wife given to Dardanus when he crossed from Samothrace. By Dardanus she bore Ilus (who died childless) and Erichthonius, through whom the Trojan royal line descends. She is the Batea named in the registry Dardanus entry (some sources call her Arisbe). Mother of the registered figure greek_erichthonius, whose maternity was previously unrecorded."
+ },
+ {
+  "id": "greek_astyoche_simoeis",
+  "name": {
+   "primary": "Astyoche",
+   "alt": [
+    "Astyocheia"
+   ],
+   "transliterations": {
+    "greek": "Ἀστυόχη"
+   }
+  },
+  "type": "numen",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "pre-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "pre-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "naiad-daughter-of-the-river-Simoeis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Naiad daughter of the Trojan river-god Simoeis; married to Erichthonius, king of Dardania."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "pre-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-Tros",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Bore Erichthonius a son, Tros, who gave his name to the Trojans and to the city of Troy."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.2; Tzetzes on Lycophron, Alexandra 29"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.2 (daughter of Simoeis)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_erichthonius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Wife of the Dardanian Erichthonius; wires to the existing figure greek_erichthonius, whose lifecycle names the marriage to Astyoche."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_tros",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2"
+     }
+    ],
+    "notes": "Mother of Tros; the existing figure greek_tros should add greek_astyoche_simoeis to parentIds."
+   },
+   {
+    "kind": "father-of",
+    "externalRef": {
+     "name": "Simoeis (Trojan river-god, father of Astyoche)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.2; Hom. Il. 21.307-308"
+     }
+    ],
+    "notes": "Her father, the river Simoeis of the Troad; entry pending."
+   }
+  ],
+  "notes": "Naiad daughter of the Trojan river-god Simoeis, wife of the Dardanian Erichthonius and mother of Tros, the eponym of the Trojans. She is the Astyoche named in the registry Erichthonius entry. Mother of the registered figure greek_tros, whose maternity was previously unrecorded."
+ },
+ {
+  "id": "greek_memphis_nile",
+  "name": {
+   "primary": "Memphis",
+   "alt": [
+    "Memphis daughter of Nilus"
+   ],
+   "transliterations": {
+    "greek": "Μέμφις"
+   }
+  },
+  "type": "numen",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "naiad-daughter-of-the-Nile",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "Naiad daughter of the river-god Nilus; married to Epaphus, king of Egypt, who founded and named the city of Memphis after her."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-Libya",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "Bore Epaphus a daughter, Libya, who gave her name to the African land and became by Poseidon the ancestress of the Belid and Agenorid royal lines."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.1.4; Hyginus, Fabulae 149"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.1.4 (daughter of the Nile)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_epaphus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "Wife of Epaphus; wires to the existing figure greek_epaphus, whose relations carry an externalRef to Memphis."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_libya",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "Mother of Libya by Epaphus."
+   }
+  ],
+  "notes": "Naiad daughter of the river-god Nilus, wife of Epaphus king of Egypt, after whom the city of Memphis was named. By Epaphus she bore Libya, eponym of the African land. She is the Memphis named in the registry Epaphus entry (recorded there as an externalRef)."
+ },
+ {
+  "id": "greek_libya",
+  "name": {
+   "primary": "Libya",
+   "alt": [
+    "Libye"
+   ],
+   "transliterations": {
+    "greek": "Λιβύη"
+   }
+  },
+  "type": "demigod",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "greek_epaphus",
+   "greek_memphis_nile"
+  ],
+  "parentRoles": {
+   "greek_epaphus": "paternal",
+   "greek_memphis_nile": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "eponym-of-the-land-of-Libya",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "Daughter of Epaphus and Memphis; eponym of the African region of Libya."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-Belus-and-Agenor-by-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4-2.1.5"
+     }
+    ],
+    "notes": "By Poseidon she bore the twins Belus and Agenor; from Belus descend Aegyptus, Danaus and the Argive line that produces Heracles, and from Agenor the Phoenician, Cretan and Theban royal houses through Cadmus and Europa."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.1.4-2.1.5; Aeschylus, Suppliants 317-318; Herodotus 4.45; Hyginus, Fabulae 149, 157"
+     }
+    ]
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.1.4 (daughter of Epaphus and Memphis)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "By Poseidon she became mother of Belus and Agenor; wires to the existing figure greek_hesiod_poseidon."
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Belus (king of Egypt, father of Aegyptus and Danaus, ancestor of the Argive royal line)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4"
+     }
+    ],
+    "notes": "Belus; entry pending in registry."
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Agenor (king of Tyre, father of Cadmus, Europa and Phoenix, ancestor of the Theban and Phoenician lines)",
+     "tradition": "Greek"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.1.4, 3.1.1"
+     }
+    ],
+    "notes": "Agenor; entry pending in registry."
+   }
+  ],
+  "notes": "Daughter of Epaphus and the naiad Memphis, eponym of the African land of Libya. By Poseidon she bore the twin brothers Belus and Agenor, from whom flow the great genealogical lines of Greek myth: through Belus the Argive line (Danaids and ultimately Heracles), through Agenor the Phoenician, Cretan and Theban houses (Cadmus, Europa, Phoenix). She is the Libya named in the registry Epaphus entry, the central pivot of his far-reaching descent."
+ },
+ {
+  "id": "greek_pitane",
+  "name": {
+   "primary": "Pitane",
+   "alt": [
+    "Pitana"
+   ],
+   "transliterations": {
+    "greek": "Πιτάνη"
+   }
+  },
+  "type": "numen",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "naiad-nymph-of-Laconian-Pitane",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 6.28-35"
+     }
+    ],
+    "notes": "Naiad-nymph of the Laconian town of Pitane, daughter of the river-god Eurotas; the town bore her name."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "mother-of-Evadne-by-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 6.29-35"
+     }
+    ],
+    "notes": "Lay with Poseidon and bore the violet-haired Evadne, whom she hid in her robe and sent to be reared by Aepytus in Arcadia."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pindar, Olympian 6.28-35; Pausanias 3.16.1 reference to Pitane"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 6.29-31"
+     }
+    ],
+    "notes": "By Poseidon she bore Evadne; wires to the existing figure greek_hesiod_poseidon."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_evadne_iamus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 6.29-35"
+     }
+    ],
+    "notes": "Mother of Evadne; the existing figure greek_evadne_iamus should add greek_pitane to parentIds."
+   }
+  ],
+  "notes": "Naiad-nymph of the Laconian town of Pitane and daughter of the river Eurotas. By Poseidon she bore the violet-haired Evadne, whom she concealed and sent to Arcadia to be reared by Aepytus (Pindar, Olympian 6). She is the Pitana named in the registry Evadne entry. Mother of the registered figure greek_evadne_iamus, whose maternity was previously unrecorded."
+ }
+]
+```

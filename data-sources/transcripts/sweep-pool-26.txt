@@ -1,0 +1,478 @@
+```json
+[
+  {
+    "id": "suludnon_kaptan",
+    "name": {"primary": "Kaptan", "alt": ["Captan", "Makaptan"], "transliterations": {"kinaray-a": "Kaptan"}},
+    "type": "deity",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "kingship-over-the-gods",
+        "sources": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic (Suludnon oral epic of Panay Island); F. Landa Jocano, Outline of Philippine Mythology (1969)"}],
+        "notes": "King of the gods in the Suludnon and wider Visayan tradition; supreme sky-deity regarded in Panay as ruler of all the gods. In the Hinilawod he decrees that his daughter Alunsina shall marry on reaching maidenhood, the act that opens the epic."
+      }
+    ],
+    "domains": [
+      {"sphereId": "king-of-the-gods", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Hinilawod opening framework"}]},
+      {"sphereId": "sky", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Visayan deity tradition; Jocano (1969)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic; F. Landa Jocano, Outline of Philippine Mythology (1969); Visayan creation tradition"}]}],
+    "relations": [
+      {"kind": "father-of", "personId": "suludnon_alunsina", "sources": [{"kind": "reference", "reference": "Hinilawod opening framework; Jocano (1969)"}], "notes": "Kaptan king of the gods decrees that his daughter Alunsina shall marry, opening the Hinilawod."}
+    ]
+  },
+  {
+    "id": "suludnon_suklang_malayon",
+    "name": {"primary": "Suklang Malayon", "alt": ["Suklang-Malayon"], "transliterations": {"kinaray-a": "Suklang Malayon"}},
+    "type": "deity",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["suludnon_kaptan"],
+    "temporal": {"era": "mythic-prehistoric"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-prehistoric",
+        "eraOrdering": 0,
+        "startEvent": "attestation-as-goddess-of-happy-homes",
+        "sources": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic (Suludnon oral epic of Panay Island); F. Landa Jocano"}],
+        "notes": "Goddess and guardian of happy homes and of the hearth; sister of Alunsina. When the spurned divine suitors plotted to drown Alunsina and Datu Paubari, Suklang Malayon discovered the plot and warned the couple, who fled to higher ground and survived the flood."
+      }
+    ],
+    "domains": [
+      {"sphereId": "happy-homes-and-families", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod opening framework; Visayan household-goddess tradition"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic; F. Landa Jocano; Visayan household-goddess tradition"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "suludnon_alunsina", "sources": [{"kind": "reference", "reference": "Hinilawod opening framework"}], "notes": "Sister of Alunsina; warns Alunsina and Datu Paubari of the gods flood."}
+    ]
+  },
+  {
+    "id": "suludnon_anggoy_ginbitinan",
+    "name": {"primary": "Anggoy Ginbitinan", "alt": ["Ginbitinan"], "transliterations": {"kinaray-a": "Anggoy Ginbitinan"}},
+    "type": "demigod",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-labaw-donggon",
+        "sources": [{"kind": "reference", "reference": "Hinilawod epic, Labaw Donggon cycle (Jocano)"}],
+        "notes": "Maiden of Handug, the first wife won by Labaw Donggon after he killed the monster Manalintad as bride-price. She bore him the son Aso Mangga, who went with his half-brother Buyung Baranugon to rescue their imprisoned father from Saragnayan."
+      }
+    ],
+    "domains": [
+      {"sphereId": "epic-bride-of-the-hero", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic, Labaw Donggon cycle; F. Landa Jocano"}]}],
+    "relations": [
+      {"kind": "spouse", "personId": "suludnon_labaw_donggon", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "First wife of Labaw Donggon, of Handug; mother of Aso Mangga."},
+      {"kind": "mother-of", "personId": "suludnon_aso_mangga", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "Bore Aso Mangga to Labaw Donggon."}
+    ]
+  },
+  {
+    "id": "suludnon_abyang_durunuun",
+    "name": {"primary": "Abyang Durunuun", "alt": ["Anggoy Doronoon", "Durunuun"], "transliterations": {"kinaray-a": "Abyang Durunuun"}},
+    "type": "demigod",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "marriage-to-labaw-donggon",
+        "sources": [{"kind": "reference", "reference": "Hinilawod epic, Labaw Donggon cycle (Jocano)"}],
+        "notes": "Maiden of Tarambang Burok and sister of Sumpoy the Lord of the Underworld; the second wife won by Labaw Donggon after he defeated the hundred-armed giant Sikay Padalogdog. She bore him the son Buyung Baranugon, who slew Saragnayan and freed his father."
+      }
+    ],
+    "domains": [
+      {"sphereId": "epic-bride-of-the-hero", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic, Labaw Donggon cycle; F. Landa Jocano"}]}],
+    "relations": [
+      {"kind": "spouse", "personId": "suludnon_labaw_donggon", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "Second wife of Labaw Donggon, of Tarambang Burok; mother of Buyung Baranugon."},
+      {"kind": "mother-of", "personId": "suludnon_buyung_baranugon", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "Bore Buyung Baranugon to Labaw Donggon."}
+    ]
+  },
+  {
+    "id": "suludnon_aso_mangga",
+    "name": {"primary": "Aso Mangga", "alt": ["Asu Mangga"], "transliterations": {"kinaray-a": "Aso Mangga"}},
+    "type": "scion",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["suludnon_labaw_donggon", "suludnon_anggoy_ginbitinan"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-labaw-donggon",
+        "sources": [{"kind": "reference", "reference": "Hinilawod epic, Labaw Donggon cycle (Jocano)"}],
+        "notes": "Son of Labaw Donggon by his first wife Anggoy Ginbitinan. Days after his birth he and his half-brother Buyung Baranugon set out to find their father, who had been defeated and imprisoned by Saragnayan; together the infant sons broke the enemys defences and freed Labaw Donggon."
+      }
+    ],
+    "domains": [
+      {"sphereId": "rescuer-of-the-hero-father", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic, Labaw Donggon cycle; F. Landa Jocano; The Aswang Project, Three Brothers of Panay"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "suludnon_buyung_baranugon", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "Half-brother and fellow rescuer of their father Labaw Donggon."}
+    ]
+  },
+  {
+    "id": "suludnon_buyung_baranugon",
+    "name": {"primary": "Buyung Baranugon", "alt": ["Buyong Baranugon", "Baranugon"], "transliterations": {"kinaray-a": "Buyung Baranugon"}},
+    "type": "scion",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "male",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["suludnon_labaw_donggon", "suludnon_abyang_durunuun"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-son-of-labaw-donggon",
+        "sources": [{"kind": "reference", "reference": "Hinilawod epic, Labaw Donggon cycle (Jocano)"}],
+        "notes": "Son of Labaw Donggon by his second wife Abyang Durunuun. With his half-brother Aso Mangga he sought their captured father; Buyung Baranugon killed the boar at Paling Bukid that held Saragnayans external soul and slew Saragnayan with poisoned arrows through both eyes, freeing Labaw Donggon."
+      }
+    ],
+    "domains": [
+      {"sphereId": "rescuer-of-the-hero-father", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic, Labaw Donggon cycle; F. Landa Jocano; The Aswang Project, Three Brothers of Panay"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "suludnon_aso_mangga", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "Half-brother and fellow rescuer of their father Labaw Donggon."},
+      {"kind": "enemy", "personId": "suludnon_saragnayan", "sources": [{"kind": "reference", "reference": "Hinilawod, Labaw Donggon cycle (Jocano)"}], "notes": "Slays Saragnayan, the Lord of Darkness, to free his imprisoned father."}
+    ]
+  },
+  {
+    "id": "suludnon_labing_anyang",
+    "name": {"primary": "Labing Anyang", "alt": ["Labing Anyag"], "transliterations": {"kinaray-a": "Labing Anyang"}},
+    "type": "demigod",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "female",
+    "vitalStatus": "deceased",
+    "origin": "canon",
+    "parentIds": ["suludnon_alunsina", "suludnon_datu_paubari"],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "demigod",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "attestation-as-sister-of-humadapnon",
+        "sources": [{"kind": "reference", "reference": "Hinilawod epic, Humadapnon cycle (Jocano)"}],
+        "notes": "Sister of the demigod Humadapnon. After Humadapnon stabbed his wife Nagmalitong Yawa in a fit of jealous rage and was told by his spirit-guides that he had erred, he begged Labing Anyang to bring her back; Labing Anyang resurrected Nagmalitong Yawa and gave her the gift of life again."
+      }
+    ],
+    "domains": [
+      {"sphereId": "restorer-of-life", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod, Humadapnon cycle (Jocano)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic, Humadapnon cycle; F. Landa Jocano"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "suludnon_humadapnon", "sources": [{"kind": "reference", "reference": "Hinilawod, Humadapnon cycle (Jocano)"}], "notes": "Sister of Humadapnon; resurrects his wife Nagmalitong Yawa at his plea."},
+      {"kind": "sibling", "personId": "suludnon_labaw_donggon", "sources": [{"kind": "reference", "reference": "Hinilawod (Jocano)"}], "notes": "Sister of the Hinilawod triplets as a daughter of Alunsina and Datu Paubari."},
+      {"kind": "sibling", "personId": "suludnon_dumalapdap", "sources": [{"kind": "reference", "reference": "Hinilawod (Jocano)"}], "notes": "Sister of the Hinilawod triplets as a daughter of Alunsina and Datu Paubari."}
+    ]
+  },
+  {
+    "id": "suludnon_lubay_lubyok_hanginun",
+    "name": {"primary": "Lubay-Lubyok Hanginun si Mahuyokhuyokan", "alt": ["Lubay-Lubyok Mahanginun si Mahuyokhuyokan", "Lubay-Lubyok Hanginun"], "transliterations": {"kinaray-a": "Lubay-Lubyok Hanginun si Mahuyokhuyokan"}},
+    "type": "deity",
+    "tradition": "Suludnon",
+    "primaryTradition": "Suludnon",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "heroic-age"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "heroic-age",
+        "eraOrdering": 0,
+        "startEvent": "wooed-and-won-by-dumalapdap",
+        "sources": [{"kind": "reference", "reference": "Hinilawod epic, Dumalapdap cycle (Jocano)"}],
+        "notes": "Goddess of the night breeze, a maiden of Burutlakan-ka-adlaw whose home was guarded by two monsters. The youngest Hinilawod triplet Dumalapdap killed the bat-like monster Uyutang and the second guardian to win her, and she returned with him to his domain as his wife."
+      }
+    ],
+    "domains": [
+      {"sphereId": "the-night-breeze", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Hinilawod, Dumalapdap cycle (Jocano); Visayan tradition"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Hinilawod / Sugidanon epic, Dumalapdap cycle; F. Landa Jocano"}]}],
+    "relations": [
+      {"kind": "spouse", "personId": "suludnon_dumalapdap", "sources": [{"kind": "reference", "reference": "Hinilawod, Dumalapdap cycle (Jocano)"}], "notes": "Wife of Dumalapdap, won after he slew the monster Uyutang."}
+    ]
+  },
+  {
+    "id": "taino_marohu",
+    "name": {"primary": "Bringer of Clear Skies", "alt": ["Marohu", "Marozu", "Marohou"], "transliterations": {"taino": "Marohu"}},
+    "type": "deity",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["taino_iguanaboina"],
+    "temporal": {"era": "mythic-perennial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "attestation-as-spirit-of-clear-skies",
+        "sources": [{"kind": "reference", "reference": "Pane, Ramon. Relacion acerca de las antiguedades de los indios, c. 1498, ch. 25."}],
+        "notes": "Weather-zemi who brings cloudless skies and the sun, the complementary twin of Boinayel the rain-bringer. The twins live in the cave of their mother Iguanaboina, the mottled grey serpent of the rains, and together govern the balance of rain and fair weather."
+      }
+    ],
+    "domains": [
+      {"sphereId": "clear-skies-and-sun", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Pane, Relacion, c. 1498; Stevens-Arroyo, Cave of the Jagua, 1988"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Pane, Ramon. Relacion acerca de las antiguedades de los indios, c. 1498; Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988"}]}],
+    "relations": [
+      {"kind": "twin sibling", "personId": "taino_boinayel", "sources": [{"kind": "reference", "reference": "Pane, Relacion, c. 1498; Stevens-Arroyo, Cave of the Jagua, 1988"}], "notes": "Twin of Boinayel; Marohu brings clear skies, Boinayel brings the rain."}
+    ]
+  },
+  {
+    "id": "taino_iguanaboina",
+    "name": {"primary": "Grey Serpent of the Rains", "alt": ["Iguanaboina", "Iguanaboina the rain serpent"], "transliterations": {"taino": "Iguanaboina"}},
+    "type": "deity",
+    "tradition": "Taíno",
+    "primaryTradition": "Taíno",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic-perennial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic-perennial",
+        "eraOrdering": 0,
+        "startEvent": "attestation-as-serpent-of-the-rains",
+        "sources": [{"kind": "reference", "reference": "Pane, Ramon. Relacion acerca de las antiguedades de los indios, c. 1498, ch. 25."}],
+        "notes": "The mottled grey serpent-goddess of good weather who gathers the rain of the tropical skies, coiling it into thickening clouds. In her cave dwell her twin sons, Boinayel the bringer of rain and Marohu the bringer of clear skies."
+      }
+    ],
+    "domains": [
+      {"sphereId": "rain-serpent-and-good-weather", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Pane, Relacion, c. 1498; Stevens-Arroyo, Cave of the Jagua, 1988"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Pane, Ramon. Relacion acerca de las antiguedades de los indios, c. 1498; Stevens-Arroyo, Antonio M. Cave of the Jagua, 1988"}]}],
+    "relations": [
+      {"kind": "mother-of", "personId": "taino_boinayel", "sources": [{"kind": "reference", "reference": "Pane, Relacion, c. 1498; Stevens-Arroyo, Cave of the Jagua, 1988"}], "notes": "Mother of the rain-bringer twin Boinayel."}
+    ]
+  },
+  {
+    "id": "tahitian_teouri",
+    "name": {"primary": "Te-ouri", "alt": ["Teuri", "Teouri"], "transliterations": {"tahitian": "Te-ouri"}},
+    "type": "deity",
+    "tradition": "Tahitian",
+    "primaryTradition": "Tahitian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["tahitian_taaroa"],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "the-sister-of-oro-on-mount-paia",
+        "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the Oro / Vairaumati cycle"}],
+        "notes": "One of the two sisters of the war-god Oro, dwelling with him and her sister Oaoa on Mount Paia in Borabora. When Oro sought a wife, the two sisters journeyed through Tahiti, Huahine, Raiatea and Tahaa to find him a suitable match, and so helped bring about his union with the mortal maiden Vairaumati."
+      }
+    ],
+    "domains": [
+      {"sphereId": "sister-of-the-war-god", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (1928)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the Oro and Vairaumati cycle"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "tahitian_oro", "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (1928)"}], "notes": "Sister of Oro; with Oaoa she sought out the maiden Vairaumati for him."},
+      {"kind": "sibling", "personId": "tahitian_oaoa", "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (1928)"}], "notes": "Fellow sister of Oro on Mount Paia in Borabora."}
+    ]
+  },
+  {
+    "id": "tahitian_oaoa",
+    "name": {"primary": "Oaoa", "alt": ["Oaaoa", "Haoaoa"], "transliterations": {"tahitian": "Oaoa"}},
+    "type": "deity",
+    "tradition": "Tahitian",
+    "primaryTradition": "Tahitian",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["tahitian_taaroa"],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "the-sister-of-oro-on-mount-paia",
+        "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the Oro / Vairaumati cycle"}],
+        "notes": "One of the two sisters of the war-god Oro, dwelling with him and her sister Te-ouri on Mount Paia in Borabora. The two sisters travelled the Society Islands to find Oro a wife and so brought about his descent on the rainbow to wed the maiden Vairaumati of Vaitape."
+      }
+    ],
+    "domains": [
+      {"sphereId": "sister-of-the-war-god", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (1928)"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (Bishop Museum Bulletin 48, 1928), the Oro and Vairaumati cycle"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "tahitian_oro", "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (1928)"}], "notes": "Sister of Oro; with Te-ouri she sought out the maiden Vairaumati for him."},
+      {"kind": "sibling", "personId": "tahitian_teouri", "sources": [{"kind": "reference", "reference": "Teuira Henry, Ancient Tahiti (1928)"}], "notes": "Fellow sister of Oro on Mount Paia in Borabora."}
+    ]
+  },
+  {
+    "id": "tamil_valli",
+    "name": {"primary": "Valli", "alt": ["Valliyammai", "Sundaravalli"], "transliterations": {"tamil": "வள்ளி (Vaḷḷi)"}},
+    "type": "deity",
+    "tradition": "Tamil",
+    "primaryTradition": "Tamil",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": {"era": "mythic"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "mythic",
+        "eraOrdering": 0,
+        "startEvent": "the-huntress-bride-of-murugan",
+        "sources": [{"kind": "reference", "reference": "Tirumurukarruppatai (Sangam corpus); Tamil Valli-Murugan tradition"}],
+        "notes": "Tribal huntress of the kurinci hill-country, daughter of a Kurava chieftain, who became the beloved consort of the Tamil god Murugan. Murugan came to her in the guise of a hill hunter and won her; she embodies iccha-shakti, the divine power of longing, beside his second consort Devasena. Her cult is central to the Tamil side of Murugan worship."
+      }
+    ],
+    "domains": [
+      {"sphereId": "consort-of-murugan", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Tamil Valli-Murugan devotional tradition"}]},
+      {"sphereId": "kurinci-hill-country", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Tamil hill-country tradition; Tirumurukarruppatai"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "Tirumurukarruppatai (Sangam corpus); Tamil Valli-Murugan devotional tradition; Kanda Puranam"}]}],
+    "relations": [
+      {"kind": "spouse", "personId": "tamil_murugan", "sources": [{"kind": "reference", "reference": "Tamil Valli-Murugan devotional tradition"}], "notes": "Consort of Murugan, won by the god in the guise of a hill hunter."}
+    ]
+  },
+  {
+    "id": "tagalog_hangin",
+    "name": {"primary": "Hangin", "alt": ["Anitun Tabu (variant conflation)"], "transliterations": {"tagalog": "Hangin"}},
+    "type": "deity",
+    "tradition": "Tagalog",
+    "primaryTradition": "Tagalog",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["tagalog_bathala"],
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "attestation-as-god-of-the-wind",
+        "sources": [{"kind": "reference", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Oriental Mindoro Tagalog tradition of Bathalas children"}],
+        "notes": "God of the wind, a son of the supreme creator Bathala. In the Oriental Mindoro tradition of Bathalas children he is numbered among the offspring of Bathala alongside his brother Kidlat, the lightning, and Araw, the sun."
+      }
+    ],
+    "domains": [
+      {"sphereId": "wind", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Jocano, Outline of Philippine Mythology (1969); Oriental Mindoro tradition"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Oriental Mindoro Tagalog tradition of Bathalas Seven Children"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "tagalog_kidlat", "sources": [{"kind": "reference", "reference": "Oriental Mindoro tradition of Bathalas children"}], "notes": "Brother of Kidlat, the lightning; both sons of Bathala."}
+    ]
+  },
+  {
+    "id": "tagalog_kidlat",
+    "name": {"primary": "Kidlat", "alt": ["Kidlat the lightning"], "transliterations": {"tagalog": "Kidlat"}},
+    "type": "deity",
+    "tradition": "Tagalog",
+    "primaryTradition": "Tagalog",
+    "sex": "male",
+    "vitalStatus": "immortal",
+    "origin": "canon",
+    "parentIds": ["tagalog_bathala"],
+    "temporal": {"era": "primordial"},
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "primordial",
+        "eraOrdering": 0,
+        "startEvent": "attestation-as-god-of-the-lightning",
+        "sources": [{"kind": "reference", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Oriental Mindoro Tagalog tradition of Bathalas children"}],
+        "notes": "God of the lightning, a son of the supreme creator Bathala. In the Oriental Mindoro tradition of Bathalas children he is numbered among the offspring of Bathala alongside his brother Hangin, the wind, and Araw, the sun."
+      }
+    ],
+    "domains": [
+      {"sphereId": "lightning", "contextTag": "lifelong", "sources": [{"kind": "reference", "reference": "Jocano, Outline of Philippine Mythology (1969); Oriental Mindoro tradition"}]}
+    ],
+    "faculties": [],
+    "materialCulture": [],
+    "sources": [{"claim": "existence", "citations": [{"kind": "reference", "reference": "F. Landa Jocano, Outline of Philippine Mythology (1969); Oriental Mindoro Tagalog tradition of Bathalas Seven Children"}]}],
+    "relations": [
+      {"kind": "sibling", "personId": "tagalog_hangin", "sources": [{"kind": "reference", "reference": "Oriental Mindoro tradition of Bathalas children"}], "notes": "Brother of Hangin, the wind; both sons of Bathala."}
+    ]
+  }
+]
+```

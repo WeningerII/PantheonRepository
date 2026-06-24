@@ -956,7 +956,14 @@ Now I'll write the JSON.
     "weight": "secondary"
    }
   ],
-  "notes": "Type 'demigod': adopted/foster son of the god Semar, a member of the divine panakawan but living among mortals. Included as the culture-hero/servant tier per brief."
+  "notes": "Type 'demigod': adopted/foster son of the god Semar, a member of the divine panakawan but living among mortals. Included as the culture-hero/servant tier per brief.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "javanese_bagong",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "javanese_gareng",
@@ -1036,7 +1043,14 @@ Now I'll write the JSON.
     "weight": "secondary"
    }
   ],
-  "notes": "Type 'demigod' as foster son of the god Semar. Part of the panakawan quartet (with Petruk and Bagong)."
+  "notes": "Type 'demigod' as foster son of the god Semar. Part of the panakawan quartet (with Petruk and Bagong).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "javanese_bagong",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "javanese_nyai_roro_kidul",
