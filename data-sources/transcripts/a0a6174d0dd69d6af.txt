@@ -17,362 +17,1865 @@ Key findings woven into the data:
 
 ```json
 [
-  {
-    "id": "hurrian_teshub",
-    "name": { "primary": "Teshub", "alt": ["Teššub", "Tešub", "Teshup"], "transliterations": { "hurrian": "Teššub", "hittite": "Tarḫunna" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": ["hurrian_kumarbi"], "parentRoles": { "hurrian_kumarbi": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "Teššub", "script": "Hurrian", "rom": "Teššub" }, "sources": [{ "kind": "primary", "reference": "Kumarbi Cycle, Song of Ullikummi (CTH 345)" }] },
-      { "sphereId": "kingship-of-the-gods", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Kumarbi Cycle, Song of Kumarbi (Kingship in Heaven)" }] },
-      { "sphereId": "sky-weather", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "faculties": [
-      { "id": "wield-storm", "name": "Strike with thunderbolt, lightning and storm", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "partial", "notes": "Wields a triple thunderbolt against rivals", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] },
-      { "id": "command-rains", "name": "Command rain, thunder and fertilizing weather", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Storm-god sustaining nature's renewal", "sources": [{ "kind": "secondary", "reference": "Britannica, 'Teshub'" }] }
-    ],
-    "materialCulture": [
-      { "id": "teshub-bull-chariot", "kind": "vehicle", "name": "Chariot drawn by the bulls Šeri and Ḫurri", "term": { "value": "Šeri, Ḫurri", "script": "Hurrian", "rom": "Šeri, Ḫurri" }, "role": "owner", "notes": "Bulls draw or carry him; Yazılıkaya relief 42", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345); Yazılıkaya reliefs" }] },
-      { "id": "teshub-mace", "kind": "weapon", "name": "Mace and double-headed axe", "term": { "value": "", "script": "Hurrian", "rom": "" }, "role": "wielder", "notes": "Standard weapons in Hurro-Hittite iconography", "sources": [{ "kind": "secondary", "reference": "Encyclopedia.com, 'Teshub'" }] },
-      { "id": "teshub-thunderbolt", "kind": "weapon", "name": "Triple thunderbolt", "term": { "value": "", "script": "Hurrian", "rom": "" }, "role": "wielder", "notes": "Held in iconographic depictions of the storm-god", "sources": [{ "kind": "secondary", "reference": "TheCollector, 'The Kumarbi Cycle'" }] }
-    ],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kumarbi Cycle (Hurrian-Hittite), tablets from Hattusa" }], "weight": "primary" },
-      { "claim": "kingship", "citations": [{ "kind": "primary", "reference": "Song of Kumarbi (Kingship in Heaven)" }], "weight": "primary" }
-    ],
-    "notes": "Hurrian storm-god and king of the gods; born from Kumarbi after he bit off Anu's genitals. His city is Kummiya; consort Hebat."
+ {
+  "id": "hurrian_teshub",
+  "name": {
+   "primary": "Teshub",
+   "alt": [
+    "Teššub",
+    "Tešub",
+    "Teshup"
+   ],
+   "transliterations": {
+    "hurrian": "Teššub",
+    "hittite": "Tarḫunna"
+   }
   },
-  {
-    "id": "hurrian_hebat",
-    "name": { "primary": "Hebat", "alt": ["Ḫepat", "Khepat", "Hepa", "Kheba"], "transliterations": { "hurrian": "Ḫepat", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "female", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "queenship-of-the-gods", "contextTag": "lifelong", "term": { "value": "Ḫepat", "script": "Hurrian", "rom": "Ḫepat" }, "sources": [{ "kind": "secondary", "reference": "Britannica, 'Hebat'" }] },
-      { "sphereId": "motherhood", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Britannica, 'Hebat' (called 'mother of all living')" }] }
-    ],
-    "faculties": [
-      { "id": "intercede-gods", "name": "Reign as queen alongside the storm-king", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Consort and queen of the Hurrian pantheon", "sources": [{ "kind": "secondary", "reference": "Britannica, 'Hebat'" }] }
-    ],
-    "materialCulture": [
-      { "id": "hebat-lion-throne", "kind": "regalia", "name": "Lion mount", "term": { "value": "", "script": "Hurrian", "rom": "" }, "role": "owner", "notes": "Stands on a lion at Yazılıkaya reliefs", "sources": [{ "kind": "primary", "reference": "Yazılıkaya reliefs" }] }
-    ],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hurrian ritual texts; Yazılıkaya reliefs" }], "weight": "primary" }
-    ],
-    "notes": "Hurrian mother-goddess and queen of heaven, consort of Teshub; mother of Šarruma. Equated by the Hittites with the Sun-goddess of Arinna; cult at Kummanni and Aleppo."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_kumarbi"
+  ],
+  "parentRoles": {
+   "hurrian_kumarbi": "paternal"
   },
-  {
-    "id": "hurrian_shaushka",
-    "name": { "primary": "Shaushka", "alt": ["Šauška", "Šawuška", "Šauša"], "transliterations": { "hurrian": "Šauška", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "female", "vitalStatus": "living",
-    "parentIds": ["hurrian_kumarbi"], "parentRoles": { "hurrian_kumarbi": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "love", "contextTag": "lifelong", "term": { "value": "Šauška", "script": "Hurrian", "rom": "Šauška" }, "sources": [{ "kind": "primary", "reference": "Song of Hedammu" }] },
-      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Britannica, 'Shaushka'" }] },
-      { "sphereId": "healing-incantation", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Šauška'" }] }
-    ],
-    "faculties": [
-      { "id": "seduce-charm", "name": "Bewitch and pacify foes through allure and music", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Charms the sea-serpent Hedammu into harmlessness", "sources": [{ "kind": "primary", "reference": "Song of Hedammu" }] }
-    ],
-    "materialCulture": [
-      { "id": "shaushka-lion", "kind": "mount", "name": "Lion mount with doves", "term": { "value": "", "script": "Hurrian", "rom": "" }, "role": "owner", "notes": "Winged figure standing on a lion, attended by doves", "sources": [{ "kind": "secondary", "reference": "World History Encyclopedia, 'Sauska'" }] }
-    ],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Song of Hedammu; Hurrian cult texts" }], "weight": "primary" }
-    ],
-    "notes": "Highest-ranked goddess of love and war, equated with Ishtar; associated with Nineveh. Attended by handmaidens Ninatta and Kulitta. In the Song of Hedammu she seduces and intoxicates the monster."
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "hurrian_kumarbi",
-    "name": { "primary": "Kumarbi", "alt": ["Kumarwi", "Kumurwe"], "transliterations": { "hurrian": "Kumarbi", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": ["hurrian_alalu"], "parentRoles": { "hurrian_alalu": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "grain", "contextTag": "lifelong", "term": { "value": "Kumarbi", "script": "Hurrian", "rom": "Kumarbi" }, "sources": [{ "kind": "secondary", "reference": "Britannica, 'Kumarbi'" }] },
-      { "sphereId": "fatherhood-of-the-gods", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Song of Kumarbi (Kingship in Heaven)" }] }
-    ],
-    "faculties": [
-      { "id": "engender-champions", "name": "Father monstrous champions to contest kingship", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Sires Ullikummi, Hedammu and Silver against Teshub", "sources": [{ "kind": "primary", "reference": "Kumarbi Cycle (Songs of Ullikummi, Hedammu, Silver)" }] }
-    ],
-    "materialCulture": [],
+  "domains": [
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Teššub",
+     "script": "Hurrian",
+     "rom": "Teššub"
+    },
     "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Song of Kumarbi (Kingship in Heaven), Hattusa tablets" }], "weight": "primary" },
-      { "claim": "kingship", "citations": [{ "kind": "primary", "reference": "Song of Kumarbi (Kingship in Heaven)" }], "weight": "primary" }
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle, Song of Ullikummi (CTH 345)"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship-of-the-gods",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle, Song of Kumarbi (Kingship in Heaven)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sky-weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "wield-storm",
+    "name": "Strike with thunderbolt, lightning and storm",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "Wields a triple thunderbolt against rivals",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   },
+   {
+    "id": "command-rains",
+    "name": "Command rain, thunder and fertilizing weather",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Storm-god sustaining nature's renewal",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Teshub'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "teshub-bull-chariot",
+    "kind": "vehicle",
+    "name": "Chariot drawn by the bulls Šeri and Ḫurri",
+    "term": {
+     "value": "Šeri, Ḫurri",
+     "script": "Hurrian",
+     "rom": "Šeri, Ḫurri"
+    },
+    "role": "owner",
+    "notes": "Bulls draw or carry him; Yazılıkaya relief 42",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345); Yazılıkaya reliefs"
+     }
+    ]
+   },
+   {
+    "id": "teshub-mace",
+    "kind": "weapon",
+    "name": "Mace and double-headed axe",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "role": "wielder",
+    "notes": "Standard weapons in Hurro-Hittite iconography",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Encyclopedia.com, 'Teshub'"
+     }
+    ]
+   },
+   {
+    "id": "teshub-thunderbolt",
+    "kind": "weapon",
+    "name": "Triple thunderbolt",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "role": "wielder",
+    "notes": "Held in iconographic depictions of the storm-god",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "TheCollector, 'The Kumarbi Cycle'"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle (Hurrian-Hittite), tablets from Hattusa"
+     }
     ],
-    "notes": "Grain-deity and 'father of the gods'; deposed Anu by biting off his genitals, thereby conceiving Teshub, Aranzah and Tasmisu. Held kingship before Teshub and repeatedly sought to reclaim it. Son of Alalu."
+    "weight": "primary"
+   },
+   {
+    "claim": "kingship",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Kumarbi (Kingship in Heaven)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hurrian storm-god and king of the gods; born from Kumarbi after he bit off Anu's genitals. His city is Kummiya; consort Hebat.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
+ },
+ {
+  "id": "hurrian_hebat",
+  "name": {
+   "primary": "Hebat",
+   "alt": [
+    "Ḫepat",
+    "Khepat",
+    "Hepa",
+    "Kheba"
+   ],
+   "transliterations": {
+    "hurrian": "Ḫepat",
+    "hittite": ""
+   }
   },
-  {
-    "id": "hurrian_shimige",
-    "name": { "primary": "Shimige", "alt": ["Šimige", "Shimegi", "Shimigi"], "transliterations": { "hurrian": "Šimige", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Šimige", "script": "Hurrian", "rom": "Šimige" }, "sources": [{ "kind": "primary", "reference": "Kumarbi Cycle, Song of Ullikummi (CTH 345)" }] }
-    ],
-    "faculties": [
-      { "id": "all-seeing-sun", "name": "Survey all the earth and spy hidden things", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "First of Teshub's allies to sight Ullikummi", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "materialCulture": [],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kumarbi Cycle (Songs of Ullikummi and Silver)" }], "weight": "primary" }
-    ],
-    "notes": "Hurrian sun-god, ally of Teshub; equated with Mesopotamian Shamash/Utu. In the Song of Ullikummi he is first to spot the stone monster and warn Teshub."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "hurrian_kushuh",
-    "name": { "primary": "Kushuh", "alt": ["Kušuḫ", "Kusuh", "Umbu", "Umpu"], "transliterations": { "hurrian": "Kušuḫ", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "moon", "contextTag": "lifelong", "term": { "value": "Kušuḫ", "script": "Hurrian", "rom": "Kušuḫ" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Kušuḫ'" }] }
-    ],
-    "faculties": [
-      { "id": "oath-witness", "name": "Witness and guard oaths as the moon", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Moon-gods commonly oversee oaths in the region", "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Kušuḫ'" }] }
-    ],
-    "materialCulture": [],
+  "domains": [
+   {
+    "sphereId": "queenship-of-the-gods",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ḫepat",
+     "script": "Hurrian",
+     "rom": "Ḫepat"
+    },
     "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hurrian cult texts from Hattusa, Ugarit, Nuzi" }], "weight": "primary" }
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Hebat'"
+     }
+    ]
+   },
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Hebat' (called 'mother of all living')"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "intercede-gods",
+    "name": "Reign as queen alongside the storm-king",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Consort and queen of the Hurrian pantheon",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Hebat'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "hebat-lion-throne",
+    "kind": "regalia",
+    "name": "Lion mount",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "Stands on a lion at Yazılıkaya reliefs",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Yazılıkaya reliefs"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hurrian ritual texts; Yazılıkaya reliefs"
+     }
     ],
-    "notes": "Hurrian moon-god, identified with Mesopotamian Sin; also called Umbu (perhaps the full moon). Consort Nikkal. Attested across Hattusa, Ugarit, Alalakh, Mari and Nuzi."
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hurrian mother-goddess and queen of heaven, consort of Teshub; mother of Šarruma. Equated by the Hittites with the Sun-goddess of Arinna; cult at Kummanni and Aleppo."
+ },
+ {
+  "id": "hurrian_shaushka",
+  "name": {
+   "primary": "Shaushka",
+   "alt": [
+    "Šauška",
+    "Šawuška",
+    "Šauša"
+   ],
+   "transliterations": {
+    "hurrian": "Šauška",
+    "hittite": ""
+   }
   },
-  {
-    "id": "hurrian_ea",
-    "name": { "primary": "Ea", "alt": ["Eya", "Enki"], "transliterations": { "hurrian": "Eya", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "wisdom", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] },
-      { "sphereId": "fresh-water-craft", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Ullikummi' (Ea's counsel)" }] }
-    ],
-    "faculties": [
-      { "id": "cunning-counsel", "name": "Devise the cunning stratagem that defeats Ullikummi", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Counsels cutting the monster from Upelluri's shoulder", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "materialCulture": [
-      { "id": "ea-copper-saw", "kind": "tool", "name": "Primeval copper saw that once split heaven and earth", "term": { "value": "", "script": "Hurrian", "rom": "" }, "role": "wielder", "notes": "Retrieved to sever Ullikummi from Upelluri", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }], "weight": "primary" }
-    ],
-    "notes": "God of wisdom incorporated into the Hurrian pantheon from Mesopotamia; in the Song of Ullikummi he produces the ancient copper saw and counsels the gods to cut the stone monster free of Upelluri, breaking its invulnerability."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_kumarbi"
+  ],
+  "parentRoles": {
+   "hurrian_kumarbi": "paternal"
   },
-  {
-    "id": "hurrian_tasmisu",
-    "name": { "primary": "Tasmisu", "alt": ["Tašmišu", "Šuwaliyat", "Suwaliyat"], "transliterations": { "hurrian": "Tašmišu", "hittite": "Šuwaliyat" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": ["hurrian_kumarbi"], "parentRoles": { "hurrian_kumarbi": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Tašmišu", "script": "Hurrian", "rom": "Tašmišu" }, "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Tašmišu'" }] },
-      { "sphereId": "divine-attendance", "contextTag": "lifelong", "term": { "value": "", "script": "Hurrian", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "faculties": [
-      { "id": "vizier-aid", "name": "Serve as sukkal and warrior-aide to the storm-king", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Attends and counsels his brother Teshub", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "materialCulture": [],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Kumarbi Cycle (Songs of Kumarbi and Ullikummi)" }], "weight": "primary" }
-    ],
-    "notes": "Brother, vizier (sukkal) and warlike aide of Teshub; born together with Teshub and Aranzah from Kumarbi after the swallowing of Anu's seed. Called Šuwaliyat in the Hittite recensions of the cycle."
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "hurrian_aranzah",
-    "name": { "primary": "Aranzah", "alt": ["Aranzaḫ", "Aranziḫ", "Araššiḫ"], "transliterations": { "hurrian": "Aranzaḫ", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": ["hurrian_kumarbi"], "parentRoles": { "hurrian_kumarbi": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "river", "contextTag": "lifelong", "term": { "value": "Aranzaḫ", "script": "Hurrian", "rom": "Aranzaḫ" }, "sources": [{ "kind": "primary", "reference": "Song of Kumarbi (Kingship in Heaven)" }] }
-    ],
-    "faculties": [
-      { "id": "river-flow", "name": "Embody and govern the flowing river Tigris", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Deified personification of the Tigris", "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Aranzaḫ'" }] }
-    ],
-    "materialCulture": [],
+  "domains": [
+   {
+    "sphereId": "love",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Šauška",
+     "script": "Hurrian",
+     "rom": "Šauška"
+    },
     "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Song of Kumarbi (Kingship in Heaven)" }], "weight": "primary" }
+     {
+      "kind": "primary",
+      "reference": "Song of Hedammu"
+     }
+    ]
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Shaushka'"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-incantation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Šauška'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "seduce-charm",
+    "name": "Bewitch and pacify foes through allure and music",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Charms the sea-serpent Hedammu into harmlessness",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Hedammu"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "shaushka-lion",
+    "kind": "mount",
+    "name": "Lion mount with doves",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "Winged figure standing on a lion, attended by doves",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Sauska'"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Hedammu; Hurrian cult texts"
+     }
     ],
-    "notes": "Deified Tigris River; one of three gods (with Teshub and Tasmisu) conceived when Kumarbi bit off Anu's genitals. Anu names him to Kumarbi as part of the burden placed within him."
+    "weight": "primary"
+   }
+  ],
+  "notes": "Highest-ranked goddess of love and war, equated with Ishtar; associated with Nineveh. Attended by handmaidens Ninatta and Kulitta. In the Song of Hedammu she seduces and intoxicates the monster.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
+ },
+ {
+  "id": "hurrian_kumarbi",
+  "name": {
+   "primary": "Kumarbi",
+   "alt": [
+    "Kumarwi",
+    "Kumurwe"
+   ],
+   "transliterations": {
+    "hurrian": "Kumarbi",
+    "hittite": ""
+   }
   },
-  {
-    "id": "hurrian_ullikummi",
-    "name": { "primary": "Ullikummi", "alt": ["Ullikummiš", "Kunkunuzzi"], "transliterations": { "hurrian": "Ullikummi", "hittite": "Kunkunuzzi" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": ["hurrian_kumarbi"], "parentRoles": { "hurrian_kumarbi": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "chaos-rebellion", "contextTag": "lifelong", "term": { "value": "Ullikummi", "script": "Hurrian", "rom": "Ullikummi" }, "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "faculties": [
-      { "id": "stone-invulnerability", "name": "Stand invulnerable while joined to Upelluri's shoulder", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Diorite body unharmed by the gods' weapons", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] },
-      { "id": "monstrous-growth", "name": "Grow skyward to colossal height in days", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Rises like a pillar to reach heaven, blind and deaf", "sources": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345)" }] }
-    ],
-    "materialCulture": [],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Song of Ullikummi (CTH 345), Hattusa tablets" }], "weight": "primary" }
-    ],
-    "notes": "Blind, deaf, sentient diorite-stone monster fathered by Kumarbi upon a great rock to overthrow Teshub; name means 'Destroy Kumme!'. Grown on the shoulder of the earth-bearer Upelluri until Ea severs him with the primeval copper saw."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_alalu"
+  ],
+  "parentRoles": {
+   "hurrian_alalu": "paternal"
   },
-  {
-    "id": "hurrian_hedammu",
-    "name": { "primary": "Hedammu", "alt": ["Ḫedammu"], "transliterations": { "hurrian": "Ḫedammu", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Hurrian", "primaryTradition": "Hurrian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": ["hurrian_kumarbi"], "parentRoles": { "hurrian_kumarbi": "paternal" },
-    "temporal": { "era": "mythic" },
-    "domains": [
-      { "sphereId": "sea-monster", "contextTag": "lifelong", "term": { "value": "Ḫedammu", "script": "Hurrian", "rom": "Ḫedammu" }, "sources": [{ "kind": "primary", "reference": "Song of Hedammu" }] }
-    ],
-    "faculties": [
-      { "id": "insatiable-devouring", "name": "Devour countless beasts with insatiable hunger", "term": { "value": "", "script": "Hurrian", "rom": "" }, "inheritability": "none", "notes": "Eats thousands of animals beyond counting", "sources": [{ "kind": "primary", "reference": "Song of Hedammu" }] }
-    ],
-    "materialCulture": [],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Song of Hedammu, Hattusa tablets" }], "weight": "primary" }
-    ],
-    "notes": "Ravenous sea-serpent engendered by Kumarbi upon the Sea's daughter Šertapšuruḫi to threaten Teshub's kingship. Lured from the water, seduced and intoxicated by Shaushka and her attendants Ninatta and Kulitta in the Song of Hedammu."
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "urartian_haldi",
-    "name": { "primary": "Haldi", "alt": ["Ḫaldi", "Khaldi", "Haldia"], "transliterations": { "hurrian": "", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Urartian", "primaryTradition": "Urartian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "historical" },
-    "domains": [
-      { "sphereId": "war", "contextTag": "lifelong", "term": { "value": "Ḫaldi", "script": "Urartian", "rom": "Ḫaldi" }, "sources": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1), Išpuini and Minua" }] },
-      { "sphereId": "kingship-sovereignty", "contextTag": "lifelong", "term": { "value": "", "script": "Urartian", "rom": "" }, "sources": [{ "kind": "primary", "reference": "Urartian royal inscriptions (campaign formulae of victory through Ḫaldi)" }] }
-    ],
-    "faculties": [
-      { "id": "grant-victory", "name": "Grant the king victory in battle and conquest", "term": { "value": "", "script": "Urartian", "rom": "" }, "inheritability": "none", "notes": "Kings march and conquer 'by the greatness of Ḫaldi'", "sources": [{ "kind": "primary", "reference": "Urartian royal annal inscriptions" }] }
-    ],
-    "materialCulture": [
-      { "id": "haldi-spear", "kind": "weapon", "name": "Flaming/holy spear", "term": { "value": "", "script": "Urartian", "rom": "" }, "role": "wielder", "notes": "Spear itself receives sacrifice in the Meher Kapısı list", "sources": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1)" }] },
-      { "id": "haldi-lion", "kind": "mount", "name": "Lion mount", "term": { "value": "", "script": "Urartian", "rom": "" }, "role": "owner", "notes": "Depicted standing upon a lion", "sources": [{ "kind": "secondary", "reference": "Ancient Origins, 'Urartian Gods'" }] },
-      { "id": "haldi-weapons-gates", "kind": "regalia", "name": "Weapons and gates of Haldi", "term": { "value": "", "script": "Urartian", "rom": "" }, "role": "owner", "notes": "His weapons, gates and 'greatness' allotted sacrifices", "sources": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1)" }] }
-    ],
+  "domains": [
+   {
+    "sphereId": "grain",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kumarbi",
+     "script": "Hurrian",
+     "rom": "Kumarbi"
+    },
     "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1)" }], "weight": "primary" },
-      { "claim": "supremacy", "citations": [{ "kind": "primary", "reference": "Meher Kapısı god-list (listed first, largest sacrifice)" }], "weight": "primary" }
+     {
+      "kind": "secondary",
+      "reference": "Britannica, 'Kumarbi'"
+     }
+    ]
+   },
+   {
+    "sphereId": "fatherhood-of-the-gods",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Kumarbi (Kingship in Heaven)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "engender-champions",
+    "name": "Father monstrous champions to contest kingship",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Sires Ullikummi, Hedammu and Silver against Teshub",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle (Songs of Ullikummi, Hedammu, Silver)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Kumarbi (Kingship in Heaven), Hattusa tablets"
+     }
     ],
-    "notes": "Supreme national god of Urartu and god of war; head of the triad. In the Meher Kapısı god-list he is named first with the largest sacrificial allotment, and even his attributes (armies, spear, weapons, gates, greatness) receive offerings. Chief temple at Muṣaṣir/Ardini."
+    "weight": "primary"
+   },
+   {
+    "claim": "kingship",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Kumarbi (Kingship in Heaven)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Grain-deity and 'father of the gods'; deposed Anu by biting off his genitals, thereby conceiving Teshub, Aranzah and Tasmisu. Held kingship before Teshub and repeatedly sought to reclaim it. Son of Alalu."
+ },
+ {
+  "id": "hurrian_shimige",
+  "name": {
+   "primary": "Shimige",
+   "alt": [
+    "Šimige",
+    "Shimegi",
+    "Shimigi"
+   ],
+   "transliterations": {
+    "hurrian": "Šimige",
+    "hittite": ""
+   }
   },
-  {
-    "id": "urartian_teisheba",
-    "name": { "primary": "Teisheba", "alt": ["Teišeba", "Theispas", "Tesheba"], "transliterations": { "hurrian": "Teššub (cognate)", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Urartian", "primaryTradition": "Urartian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "historical" },
-    "domains": [
-      { "sphereId": "storm", "contextTag": "lifelong", "term": { "value": "Teišeba", "script": "Urartian", "rom": "Teišeba" }, "sources": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1), second in the list" }] },
-      { "sphereId": "thunder-weather", "contextTag": "lifelong", "term": { "value": "", "script": "Urartian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "World History Encyclopedia, 'Urartu Religion'" }] }
-    ],
-    "faculties": [
-      { "id": "command-storm", "name": "Command storm, thunder and the tempest", "term": { "value": "", "script": "Urartian", "rom": "" }, "inheritability": "none", "notes": "Urartian weather-god, cognate of Hurrian Teshub", "sources": [{ "kind": "secondary", "reference": "World History Encyclopedia, 'Urartu Religion'" }] }
-    ],
-    "materialCulture": [
-      { "id": "teisheba-bull", "kind": "mount", "name": "Bull (and at times a lion) as mount and emblem", "term": { "value": "", "script": "Urartian", "rom": "" }, "role": "owner", "notes": "Basalt relief shows him standing on a bull; bull-horned headgear on the Karmir-Blur statuette", "sources": [{ "kind": "primary", "reference": "Statuette and basalt relief of Teisheba, Teishebaini (Karmir-Blur)" }] }
-    ],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1)" }], "weight": "primary" }
-    ],
-    "notes": "Urartian god of storms and thunder, second of the triad; name is a cognate of Hurrian Teshub. The capital Teishebaini (Karmir-Blur) was named for him; his emblem is the bull."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "urartian_shivini",
-    "name": { "primary": "Shivini", "alt": ["Šiuini", "Siwini", "Artinis", "Ardinis"], "transliterations": { "hurrian": "", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Urartian", "primaryTradition": "Urartian",
-    "sex": "male", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "historical" },
-    "domains": [
-      { "sphereId": "sun", "contextTag": "lifelong", "term": { "value": "Šiuini", "script": "Urartian", "rom": "Šiuini" }, "sources": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1), third in the list" }] }
-    ],
-    "faculties": [
-      { "id": "bear-solar-light", "name": "Bear the sun's light across the heavens", "term": { "value": "", "script": "Urartian", "rom": "" }, "inheritability": "none", "notes": "Solar deity of the triad", "sources": [{ "kind": "secondary", "reference": "World History Encyclopedia, 'Urartu Religion'" }] }
-    ],
-    "materialCulture": [
-      { "id": "shivini-winged-disc", "kind": "regalia", "name": "Winged solar disc", "term": { "value": "", "script": "Urartian", "rom": "" }, "role": "owner", "notes": "Depicted kneeling and holding/upholding a winged sun-disc", "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Shivini'" }] }
-    ],
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Šimige",
+     "script": "Hurrian",
+     "rom": "Šimige"
+    },
     "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Meher Kapısı inscription (CTU A 3-1)" }], "weight": "primary" }
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle, Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "all-seeing-sun",
+    "name": "Survey all the earth and spy hidden things",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "First of Teshub's allies to sight Ullikummi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle (Songs of Ullikummi and Silver)"
+     }
     ],
-    "notes": "Urartian sun-god, third of the supreme triad; receives temples and sacrifices alongside Haldi and Teisheba. Name possibly cognate with Hurrian Šimige; iconography centers on the winged solar disc and the shield as solar emblem."
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hurrian sun-god, ally of Teshub; equated with Mesopotamian Shamash/Utu. In the Song of Ullikummi he is first to spot the stone monster and warn Teshub."
+ },
+ {
+  "id": "hurrian_kushuh",
+  "name": {
+   "primary": "Kushuh",
+   "alt": [
+    "Kušuḫ",
+    "Kusuh",
+    "Umbu",
+    "Umpu"
+   ],
+   "transliterations": {
+    "hurrian": "Kušuḫ",
+    "hittite": ""
+   }
   },
-  {
-    "id": "urartian_arubani",
-    "name": { "primary": "Arubani", "alt": ["Arubaini", "Uarubani", "Warubani", "Varubani"], "transliterations": { "hurrian": "", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Urartian", "primaryTradition": "Urartian",
-    "sex": "female", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "historical" },
-    "domains": [
-      { "sphereId": "fertility", "contextTag": "lifelong", "term": { "value": "Arubani", "script": "Urartian", "rom": "Arubani" }, "sources": [{ "kind": "secondary", "reference": "Ancient Origins, 'Urartian Gods'" }] },
-      { "sphereId": "art", "contextTag": "lifelong", "term": { "value": "", "script": "Urartian", "rom": "" }, "sources": [{ "kind": "secondary", "reference": "Ancient Origins, 'Urartian Gods'" }] }
-    ],
-    "faculties": [
-      { "id": "bestow-fertility", "name": "Bestow fertility and patronize the arts", "term": { "value": "", "script": "Urartian", "rom": "" }, "inheritability": "none", "notes": "Goddess of fertility and art, consort of Haldi", "sources": [{ "kind": "secondary", "reference": "Ancient Origins, 'Urartian Gods'" }] }
-    ],
-    "materialCulture": [
-      { "id": "arubani-branch", "kind": "regalia", "name": "Fertility branch", "term": { "value": "", "script": "Urartian", "rom": "" }, "role": "owner", "notes": "Seated, one hand raised in giving, the other grasping a branch", "sources": [{ "kind": "secondary", "reference": "Wikipedia, 'Arubani'" }] }
-    ],
-    "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Meher Kapısı god-list (CTU A 3-1), as Arubaini" }], "weight": "primary" }
-    ],
-    "notes": "Urartian goddess of fertility and art and consort of Haldi; named in the Meher Kapısı list (as Arubaini). After Urartu's fall her worship is held to have flowed into that of the Armenian Anahit."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
   },
-  {
-    "id": "urartian_bagmashtu",
-    "name": { "primary": "Bagmashtu", "alt": ["Bagbartu", "Bagvarti", "Bagparti", "Bagmasti"], "transliterations": { "hurrian": "", "hittite": "" } },
-    "type": "deity", "origin": "canon",
-    "tradition": "Urartian", "primaryTradition": "Urartian",
-    "sex": "female", "vitalStatus": "living",
-    "parentIds": [], "parentRoles": {},
-    "temporal": { "era": "historical" },
-    "domains": [
-      { "sphereId": "consort-of-the-chief-god", "contextTag": "lifelong", "term": { "value": "Bagbartu", "script": "Urartian", "rom": "Bagbartu" }, "sources": [{ "kind": "primary", "reference": "Muṣaṣir votive inscriptions ('Ḫaldi and his wife Bagmashtu')" }] }
-    ],
-    "faculties": [
-      { "id": "queen-consort", "name": "Reign as divine consort beside the war-god", "term": { "value": "", "script": "Urartian", "rom": "" }, "inheritability": "none", "notes": "Paired with Haldi in the eastern cult at Muṣaṣir", "sources": [{ "kind": "primary", "reference": "Muṣaṣir inscriptions" }] }
-    ],
-    "materialCulture": [],
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Kušuḫ",
+     "script": "Hurrian",
+     "rom": "Kušuḫ"
+    },
     "sources": [
-      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Muṣaṣir votive inscriptions; Assyrian record of Sargon II's 714 BCE sack" }], "weight": "primary" }
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kušuḫ'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "oath-witness",
+    "name": "Witness and guard oaths as the moon",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Moon-gods commonly oversee oaths in the region",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Kušuḫ'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hurrian cult texts from Hattusa, Ugarit, Nuzi"
+     }
     ],
-    "notes": "Goddess worshipped as consort of Haldi in the eastern Urartian region, especially at Muṣaṣir/Ardini, where votive objects name 'Haldi and his wife Bagmashtu'. Her temple was plundered by Sargon II of Assyria in 714 BCE; the name is held to be of Armenian/Iranian origin."
-  }
+    "weight": "primary"
+   }
+  ],
+  "notes": "Hurrian moon-god, identified with Mesopotamian Sin; also called Umbu (perhaps the full moon). Consort Nikkal. Attested across Hattusa, Ugarit, Alalakh, Mari and Nuzi."
+ },
+ {
+  "id": "hurrian_ea",
+  "name": {
+   "primary": "Ea",
+   "alt": [
+    "Eya",
+    "Enki"
+   ],
+   "transliterations": {
+    "hurrian": "Eya",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fresh-water-craft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Ullikummi' (Ea's counsel)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "cunning-counsel",
+    "name": "Devise the cunning stratagem that defeats Ullikummi",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Counsels cutting the monster from Upelluri's shoulder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ea-copper-saw",
+    "kind": "tool",
+    "name": "Primeval copper saw that once split heaven and earth",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "role": "wielder",
+    "notes": "Retrieved to sever Ullikummi from Upelluri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "God of wisdom incorporated into the Hurrian pantheon from Mesopotamia; in the Song of Ullikummi he produces the ancient copper saw and counsels the gods to cut the stone monster free of Upelluri, breaking its invulnerability."
+ },
+ {
+  "id": "hurrian_tasmisu",
+  "name": {
+   "primary": "Tasmisu",
+   "alt": [
+    "Tašmišu",
+    "Šuwaliyat",
+    "Suwaliyat"
+   ],
+   "transliterations": {
+    "hurrian": "Tašmišu",
+    "hittite": "Šuwaliyat"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_kumarbi"
+  ],
+  "parentRoles": {
+   "hurrian_kumarbi": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tašmišu",
+     "script": "Hurrian",
+     "rom": "Tašmišu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Tašmišu'"
+     }
+    ]
+   },
+   {
+    "sphereId": "divine-attendance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "vizier-aid",
+    "name": "Serve as sukkal and warrior-aide to the storm-king",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Attends and counsels his brother Teshub",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kumarbi Cycle (Songs of Kumarbi and Ullikummi)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Brother, vizier (sukkal) and warlike aide of Teshub; born together with Teshub and Aranzah from Kumarbi after the swallowing of Anu's seed. Called Šuwaliyat in the Hittite recensions of the cycle.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
+ },
+ {
+  "id": "hurrian_aranzah",
+  "name": {
+   "primary": "Aranzah",
+   "alt": [
+    "Aranzaḫ",
+    "Aranziḫ",
+    "Araššiḫ"
+   ],
+   "transliterations": {
+    "hurrian": "Aranzaḫ",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_kumarbi"
+  ],
+  "parentRoles": {
+   "hurrian_kumarbi": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "river",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Aranzaḫ",
+     "script": "Hurrian",
+     "rom": "Aranzaḫ"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Kumarbi (Kingship in Heaven)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "river-flow",
+    "name": "Embody and govern the flowing river Tigris",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Deified personification of the Tigris",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Aranzaḫ'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Kumarbi (Kingship in Heaven)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Deified Tigris River; one of three gods (with Teshub and Tasmisu) conceived when Kumarbi bit off Anu's genitals. Anu names him to Kumarbi as part of the burden placed within him.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
+ },
+ {
+  "id": "hurrian_ullikummi",
+  "name": {
+   "primary": "Ullikummi",
+   "alt": [
+    "Ullikummiš",
+    "Kunkunuzzi"
+   ],
+   "transliterations": {
+    "hurrian": "Ullikummi",
+    "hittite": "Kunkunuzzi"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_kumarbi"
+  ],
+  "parentRoles": {
+   "hurrian_kumarbi": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "chaos-rebellion",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ullikummi",
+     "script": "Hurrian",
+     "rom": "Ullikummi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "stone-invulnerability",
+    "name": "Stand invulnerable while joined to Upelluri's shoulder",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Diorite body unharmed by the gods' weapons",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   },
+   {
+    "id": "monstrous-growth",
+    "name": "Grow skyward to colossal height in days",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Rises like a pillar to reach heaven, blind and deaf",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Ullikummi (CTH 345), Hattusa tablets"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Blind, deaf, sentient diorite-stone monster fathered by Kumarbi upon a great rock to overthrow Teshub; name means 'Destroy Kumme!'. Grown on the shoulder of the earth-bearer Upelluri until Ea severs him with the primeval copper saw.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
+ },
+ {
+  "id": "hurrian_hedammu",
+  "name": {
+   "primary": "Hedammu",
+   "alt": [
+    "Ḫedammu"
+   ],
+   "transliterations": {
+    "hurrian": "Ḫedammu",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Hurrian",
+  "primaryTradition": "Hurrian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "hurrian_kumarbi"
+  ],
+  "parentRoles": {
+   "hurrian_kumarbi": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "sea-monster",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ḫedammu",
+     "script": "Hurrian",
+     "rom": "Ḫedammu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Hedammu"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "insatiable-devouring",
+    "name": "Devour countless beasts with insatiable hunger",
+    "term": {
+     "value": "",
+     "script": "Hurrian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Eats thousands of animals beyond counting",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Song of Hedammu"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Song of Hedammu, Hattusa tablets"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Ravenous sea-serpent engendered by Kumarbi upon the Sea's daughter Šertapšuruḫi to threaten Teshub's kingship. Lured from the water, seduced and intoxicated by Shaushka and her attendants Ninatta and Kulitta in the Song of Hedammu.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
+ },
+ {
+  "id": "urartian_haldi",
+  "name": {
+   "primary": "Haldi",
+   "alt": [
+    "Ḫaldi",
+    "Khaldi",
+    "Haldia"
+   ],
+   "transliterations": {
+    "hurrian": "",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Urartian",
+  "primaryTradition": "Urartian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "historical"
+  },
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ḫaldi",
+     "script": "Urartian",
+     "rom": "Ḫaldi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1), Išpuini and Minua"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Urartian royal inscriptions (campaign formulae of victory through Ḫaldi)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "grant-victory",
+    "name": "Grant the king victory in battle and conquest",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Kings march and conquer 'by the greatness of Ḫaldi'",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Urartian royal annal inscriptions"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "haldi-spear",
+    "kind": "weapon",
+    "name": "Flaming/holy spear",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "role": "wielder",
+    "notes": "Spear itself receives sacrifice in the Meher Kapısı list",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1)"
+     }
+    ]
+   },
+   {
+    "id": "haldi-lion",
+    "kind": "mount",
+    "name": "Lion mount",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "Depicted standing upon a lion",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ancient Origins, 'Urartian Gods'"
+     }
+    ]
+   },
+   {
+    "id": "haldi-weapons-gates",
+    "kind": "regalia",
+    "name": "Weapons and gates of Haldi",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "His weapons, gates and 'greatness' allotted sacrifices",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "supremacy",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı god-list (listed first, largest sacrifice)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Supreme national god of Urartu and god of war; head of the triad. In the Meher Kapısı god-list he is named first with the largest sacrificial allotment, and even his attributes (armies, spear, weapons, gates, greatness) receive offerings. Chief temple at Muṣaṣir/Ardini."
+ },
+ {
+  "id": "urartian_teisheba",
+  "name": {
+   "primary": "Teisheba",
+   "alt": [
+    "Teišeba",
+    "Theispas",
+    "Tesheba"
+   ],
+   "transliterations": {
+    "hurrian": "Teššub (cognate)",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Urartian",
+  "primaryTradition": "Urartian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "historical"
+  },
+  "domains": [
+   {
+    "sphereId": "storm",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Teišeba",
+     "script": "Urartian",
+     "rom": "Teišeba"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1), second in the list"
+     }
+    ]
+   },
+   {
+    "sphereId": "thunder-weather",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Urartu Religion'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "command-storm",
+    "name": "Command storm, thunder and the tempest",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Urartian weather-god, cognate of Hurrian Teshub",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Urartu Religion'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "teisheba-bull",
+    "kind": "mount",
+    "name": "Bull (and at times a lion) as mount and emblem",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "Basalt relief shows him standing on a bull; bull-horned headgear on the Karmir-Blur statuette",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Statuette and basalt relief of Teisheba, Teishebaini (Karmir-Blur)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Urartian god of storms and thunder, second of the triad; name is a cognate of Hurrian Teshub. The capital Teishebaini (Karmir-Blur) was named for him; his emblem is the bull."
+ },
+ {
+  "id": "urartian_shivini",
+  "name": {
+   "primary": "Shivini",
+   "alt": [
+    "Šiuini",
+    "Siwini",
+    "Artinis",
+    "Ardinis"
+   ],
+   "transliterations": {
+    "hurrian": "",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Urartian",
+  "primaryTradition": "Urartian",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "historical"
+  },
+  "domains": [
+   {
+    "sphereId": "sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Šiuini",
+     "script": "Urartian",
+     "rom": "Šiuini"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1), third in the list"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-solar-light",
+    "name": "Bear the sun's light across the heavens",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Solar deity of the triad",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "World History Encyclopedia, 'Urartu Religion'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "shivini-winged-disc",
+    "kind": "regalia",
+    "name": "Winged solar disc",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "Depicted kneeling and holding/upholding a winged sun-disc",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Shivini'"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı inscription (CTU A 3-1)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Urartian sun-god, third of the supreme triad; receives temples and sacrifices alongside Haldi and Teisheba. Name possibly cognate with Hurrian Šimige; iconography centers on the winged solar disc and the shield as solar emblem."
+ },
+ {
+  "id": "urartian_arubani",
+  "name": {
+   "primary": "Arubani",
+   "alt": [
+    "Arubaini",
+    "Uarubani",
+    "Warubani",
+    "Varubani"
+   ],
+   "transliterations": {
+    "hurrian": "",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Urartian",
+  "primaryTradition": "Urartian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "historical"
+  },
+  "domains": [
+   {
+    "sphereId": "fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Arubani",
+     "script": "Urartian",
+     "rom": "Arubani"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ancient Origins, 'Urartian Gods'"
+     }
+    ]
+   },
+   {
+    "sphereId": "art",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ancient Origins, 'Urartian Gods'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-fertility",
+    "name": "Bestow fertility and patronize the arts",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Goddess of fertility and art, consort of Haldi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ancient Origins, 'Urartian Gods'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "arubani-branch",
+    "kind": "regalia",
+    "name": "Fertility branch",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "role": "owner",
+    "notes": "Seated, one hand raised in giving, the other grasping a branch",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Arubani'"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Meher Kapısı god-list (CTU A 3-1), as Arubaini"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Urartian goddess of fertility and art and consort of Haldi; named in the Meher Kapısı list (as Arubaini). After Urartu's fall her worship is held to have flowed into that of the Armenian Anahit."
+ },
+ {
+  "id": "urartian_bagmashtu",
+  "name": {
+   "primary": "Bagmashtu",
+   "alt": [
+    "Bagbartu",
+    "Bagvarti",
+    "Bagparti",
+    "Bagmasti"
+   ],
+   "transliterations": {
+    "hurrian": "",
+    "hittite": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Urartian",
+  "primaryTradition": "Urartian",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "historical"
+  },
+  "domains": [
+   {
+    "sphereId": "consort-of-the-chief-god",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Bagbartu",
+     "script": "Urartian",
+     "rom": "Bagbartu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Muṣaṣir votive inscriptions ('Ḫaldi and his wife Bagmashtu')"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "queen-consort",
+    "name": "Reign as divine consort beside the war-god",
+    "term": {
+     "value": "",
+     "script": "Urartian",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Paired with Haldi in the eastern cult at Muṣaṣir",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Muṣaṣir inscriptions"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Muṣaṣir votive inscriptions; Assyrian record of Sargon II's 714 BCE sack"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Goddess worshipped as consort of Haldi in the eastern Urartian region, especially at Muṣaṣir/Ardini, where votive objects name 'Haldi and his wife Bagmashtu'. Her temple was plundered by Sargon II of Assyria in 714 BCE; the name is held to be of Armenian/Iranian origin."
+ }
 ]
 ```
 

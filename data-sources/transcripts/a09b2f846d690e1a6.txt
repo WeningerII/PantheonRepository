@@ -984,7 +984,24 @@ That's 24. Let me write the JSON now.
     "weight": "corroborating"
    }
   ],
-  "notes": "Culture-hero / progenitor tier: typed demigod (first man and divine ancestor, son of the creator Mbombo) per the schema's instruction to use demigod for culture-heroes and explain here. His sister-wife is Mweel."
+  "notes": "Culture-hero / progenitor tier: typed demigod (first man and divine ancestor, son of the creator Mbombo) per the schema's instruction to use demigod for culture-heroes and explain here. His sister-wife is Mweel.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_chonganda",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_nyonye_ngana",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_tsetse_bumba",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kuba_nyonye_ngana",
@@ -1062,7 +1079,24 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "One of the three creator-sons who finish the world after Mbombo. Typed deity (origin of fertile soil)."
+  "notes": "One of the three creator-sons who finish the world after Mbombo. Typed deity (origin of fertile soil).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_chonganda",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_tsetse_bumba",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kuba_chonganda",
@@ -1141,7 +1175,24 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "Second of Mbombo's three creator-sons. Typed deity (origin of plants)."
+  "notes": "Second of Mbombo's three creator-sons. Typed deity (origin of plants).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_nyonye_ngana",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_tsetse_bumba",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kuba_tsetse_bumba",
@@ -1252,7 +1303,24 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "Gender is not consistently recorded (some retellings render Tsetse as 'she'), hence sex 'unknown'. Lightning personified; typed deity (storm/fire) and explained here."
+  "notes": "Gender is not consistently recorded (some retellings render Tsetse as 'she'), hence sex 'unknown'. Lightning personified; typed deity (storm/fire) and explained here.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_chonganda",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_nyonye_ngana",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "fang_mebege",
@@ -2236,7 +2304,14 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "Progenitor tier: typed demigod (sky-created first man). His name is glossed 'the person who comes from the sky'. Paired with Meme."
+  "notes": "Progenitor tier: typed demigod (sky-created first man). His name is glossed 'the person who comes from the sky'. Paired with Meme.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lugbara_meme",
+    "notes": "Full sibling — shares the same attested parentage (Transcendent Sky Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "lugbara_meme",
@@ -2329,7 +2404,14 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "Progenitor tier: typed demigod (first woman). Name glossed 'the person who came alone'. Paired with Gborogboro; their later descendants produce the hero-ancestors Jaki and Dribidu."
+  "notes": "Progenitor tier: typed demigod (first woman). Name glossed 'the person who came alone'. Paired with Gborogboro; their later descendants produce the hero-ancestors Jaki and Dribidu.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lugbara_gborogboro",
+    "notes": "Full sibling — shares the same attested parentage (Transcendent Sky Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "lugbara_dribidu",

@@ -43270,7 +43270,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Akan deity of the Bia River and wilderness; elder brother and rival of Tano."
+  "notes": "Akan deity of the Bia River and wilderness; elder brother and rival of Tano.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "akan_tano",
+    "notes": "Full sibling — shares the same attested parentage (Nyame & Asase Yaa) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "akan_tano",
@@ -43378,7 +43385,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Akan river-deity and war-spirit, chief of the atano; son of Nyame and Asase Yaa."
+  "notes": "Akan river-deity and war-spirit, chief of the atano; son of Nyame and Asase Yaa.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "akan_bia",
+    "notes": "Full sibling — shares the same attested parentage (Nyame & Asase Yaa) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "ambundu_kalunga",
@@ -50511,6 +50525,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Faro, master of water and the Word, and Teliko, genie of the air/wind, are cast as antagonists in the ordering of the world."
+   },
+   {
+    "kind": "sibling",
+    "personId": "bambara_mousso_koroni",
+    "notes": "Full sibling — shares the same attested parentage (Pemba) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "bambara_ndomadyiri",
+    "notes": "Full sibling — shares the same attested parentage (Pemba) per the figures' cited genealogy."
    }
   ]
  },
@@ -50620,7 +50644,19 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "The little old woman with a white head, first woman; chaotic mother of life associated with air and fire."
+  "notes": "The little old woman with a white head, first woman; chaotic mother of life associated with air and fire.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "bambara_faro",
+    "notes": "Full sibling — shares the same attested parentage (Pemba) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "bambara_ndomadyiri",
+    "notes": "Full sibling — shares the same attested parentage (Pemba) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "bambara_ndomadyiri",
@@ -50744,7 +50780,19 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Archetypal smith-healer of the creative quaternity; anchors and stabilizes life on earth."
+  "notes": "Archetypal smith-healer of the creative quaternity; anchors and stabilizes life on earth.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "bambara_faro",
+    "notes": "Full sibling — shares the same attested parentage (Pemba) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "bambara_mousso_koroni",
+    "notes": "Full sibling — shares the same attested parentage (Pemba) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "bambara_pemba",
@@ -61090,7 +61138,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Violent warrior-huntress and 'Maiden' (btlt); sister and champion of Baal who avenges and revives him."
+  "notes": "Violent warrior-huntress and 'Maiden' (btlt); sister and champion of Baal who avenges and revives him.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_kirta",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_mot",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_shapshu",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_yam",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "canaanite_aqhat",
@@ -62099,7 +62169,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Mortal king explicitly called 'son of El' and 'lad of El' (ǵlm ʾil); falls deadly ill for breaking a vow to Athirat, then is healed by an El-made being. Type demigod by divine sonship."
+  "notes": "Mortal king explicitly called 'son of El' and 'lad of El' (ǵlm ʾil); falls deadly ill for breaking a vow to Athirat, then is healed by an El-made being. Type demigod by divine sonship.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_anat",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_mot",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_shapshu",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_yam",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "canaanite_kothar",
@@ -62454,7 +62546,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Insatiable death-god and ruler of the underworld, son of El; Baal's final adversary, dismembered by Anat yet enduring as the cycle of drought."
+  "notes": "Insatiable death-god and ruler of the underworld, son of El; Baal's final adversary, dismembered by Anat yet enduring as the cycle of drought.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_anat",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_kirta",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_shapshu",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_yam",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "canaanite_rephaim",
@@ -62827,7 +62941,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Sun-goddess 'Torch of the Gods' and El's messenger; psychopomp who judges the dead and aids Anat in recovering Baal's corpse."
+  "notes": "Sun-goddess 'Torch of the Gods' and El's messenger; psychopomp who judges the dead and aids Anat in recovering Baal's corpse.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_anat",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_kirta",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_mot",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_yam",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "canaanite_yam",
@@ -62938,7 +63074,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Sea-god 'Prince Sea, Judge River'; El's favored prince, slain by Baal with Kothar's maces in the struggle for kingship."
+  "notes": "Sea-god 'Prince Sea, Judge River'; El's favored prince, slain by Baal with Kothar's maces in the struggle for kingship.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_anat",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_kirta",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_mot",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "canaanite_shapshu",
+    "notes": "Full sibling — shares the same attested parentage (El) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "canaanite_yarikh",
@@ -74134,6 +74292,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "One of the eight primordial ancestors."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_eight_ancestors",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_smith",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -74354,6 +74522,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "One of the eight primordial ancestors."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_eight_ancestors",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_smith",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -74618,6 +74796,21 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Binou Sérou is one of the eight ancestors."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_binou_serou",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_dyongou_serou",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_smith",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -74811,6 +75004,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Fellow Sérou ancestor of the same primordial generation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_nommo",
+    "notes": "Full sibling — shares the same attested parentage (Amma) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_ogo",
+    "notes": "Full sibling — shares the same attested parentage (Amma) per the figures' cited genealogy."
    }
   ]
  },
@@ -74974,6 +75177,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The Nommo hurl thunderbolts at the smith-ancestor who stole a coal of the Sun from the celestial smithy; the theft and the seventh Nommo’s death set them at enmity."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "notes": "Full sibling — shares the same attested parentage (Amma) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_ogo",
+    "notes": "Full sibling — shares the same attested parentage (Amma) per the figures' cited genealogy."
    }
   ]
  },
@@ -75100,7 +75313,19 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "The rebellious pale fox, lonely twin of disorder; his sand-tracks are read in divination."
+  "notes": "The rebellious pale fox, lonely twin of disorder; his sand-tracks are read in divination.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "notes": "Full sibling — shares the same attested parentage (Amma) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_nommo",
+    "notes": "Full sibling — shares the same attested parentage (Amma) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "dogon_smith",
@@ -75303,6 +75528,21 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The Smith instigates the killing of the seventh ancestor (a Nommo), and the Nommo hurl lightning and thunderbolts at him as he flees with the stolen fire."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_binou_serou",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_dyongou_serou",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_eight_ancestors",
+    "notes": "Full sibling — shares the same attested parentage (Nommo) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -75642,7 +75882,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Edo king of death, senior child of Osanobua; no longer actively worshipped."
+  "notes": "Edo king of death, senior child of Osanobua; no longer actively worshipped.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "edo_olokun",
+    "notes": "Full sibling — shares the same attested parentage (Osanobua) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "edo_olokun",
@@ -75748,7 +75995,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Most-venerated Benin deity, king of the waters and giver of wealth and children; senior child of Osanobua."
+  "notes": "Most-venerated Benin deity, king of the waters and giver of wealth and children; senior child of Osanobua.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "edo_ogiuwu",
+    "notes": "Full sibling — shares the same attested parentage (Osanobua) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "edo_osanobua",
@@ -76093,7 +76347,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Self-created Heliopolitan demiurge and head of the Ennead."
+  "notes": "Self-created Heliopolitan demiurge and head of the Ennead.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_khnum",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_neith",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ra",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_bastet",
@@ -76203,7 +76474,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Cat goddess of protection, home and the gentler solar Eye."
+  "notes": "Cat goddess of protection, home and the gentler solar Eye.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_hathor",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_maat",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_sekhmet",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_bes",
@@ -76420,7 +76708,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Earth god, father of the Osirian gods and hereditary king."
+  "notes": "Earth god, father of the Osirian gods and hereditary king.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_nut",
+    "notes": "Full sibling — shares the same attested parentage (Shu & Tefnut) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_hapi",
@@ -76669,7 +76964,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Cow goddess of love, joy, music; an Eye of Ra."
+  "notes": "Cow goddess of love, joy, music; an Eye of Ra.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_bastet",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_maat",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_sekhmet",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_heka",
@@ -76886,7 +77198,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Ram-headed creator-potter who shapes bodies; lord of the cataract."
+  "notes": "Ram-headed creator-potter who shapes bodies; lord of the cataract.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_atum",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_neith",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ra",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_khonsu",
@@ -77137,7 +77466,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Goddess and principle of truth, justice and cosmic order."
+  "notes": "Goddess and principle of truth, justice and cosmic order.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_bastet",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_hathor",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_sekhmet",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_min",
@@ -77388,7 +77734,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Primeval creatrix, goddess of war, weaving and wisdom."
+  "notes": "Primeval creatrix, goddess of war, weaving and wisdom.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_atum",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_khnum",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ra",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_nekhbet",
@@ -77586,7 +77949,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Funerary goddess, sister of Isis and mother of Anubis."
+  "notes": "Funerary goddess, sister of Isis and mother of Anubis.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_set",
+    "notes": "Full sibling — shares the same attested parentage (Geb & Nut) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_nun",
@@ -77802,7 +78172,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Sky goddess arched over earth, mother of sun and stars."
+  "notes": "Sky goddess arched over earth, mother of sun and stars.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_geb",
+    "notes": "Full sibling — shares the same attested parentage (Shu & Tefnut) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_ra",
@@ -77999,7 +78376,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Supreme solar god, creator and first divine king of Egypt."
+  "notes": "Supreme solar god, creator and first divine king of Egypt.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_atum",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_khnum",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_neith",
+    "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_sekhmet",
@@ -78107,7 +78501,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Lioness goddess of war and plague; furious Eye of Ra."
+  "notes": "Lioness goddess of war and plague; furious Eye of Ra.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_bastet",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_hathor",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_maat",
+    "notes": "Full sibling — shares the same attested parentage (Ra) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_serqet",
@@ -78375,7 +78786,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of chaos, storms and desert; slayer of Osiris."
+  "notes": "God of chaos, storms and desert; slayer of Osiris.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_nephthys",
+    "notes": "Full sibling — shares the same attested parentage (Geb & Nut) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_shu",
@@ -78465,7 +78883,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of air and sunlight who sustains the sky above earth."
+  "notes": "God of air and sunlight who sustains the sky above earth.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_tefnut",
+    "notes": "Full sibling — shares the same attested parentage (Atum) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_sobek",
@@ -78755,7 +79180,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Goddess of moisture; with Shu the first elemental pair."
+  "notes": "Goddess of moisture; with Shu the first elemental pair.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "egyptian_shu",
+    "notes": "Full sibling — shares the same attested parentage (Atum) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "egyptian_thoth",
@@ -80595,6 +81027,36 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "obatala",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oduduwa",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "orunmila",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "osanyin",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oshun",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yemoja",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
    }
   ]
  },
@@ -87996,6 +88458,26 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Da/Dan)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_gu",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_legba",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sakpata",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sogbo",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
    }
   ]
  },
@@ -88209,6 +88691,26 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_dan",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_legba",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sakpata",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sogbo",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
    }
   ]
  },
@@ -88340,6 +88842,26 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_dan",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_gu",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sakpata",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sogbo",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
    }
   ]
  },
@@ -88688,6 +89210,26 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_dan",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_gu",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_legba",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sogbo",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
    }
   ]
  },
@@ -88807,6 +89349,26 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_dan",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_gu",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_legba",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "fon_sakpata",
+    "notes": "Full sibling — shares the same attested parentage (Mawu-Lisa) per the figures' cited genealogy."
    }
   ]
  },
@@ -91346,7 +91908,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan son of Iapetus condemned to bear the heavens at the world's edge."
+  "notes": "Titan son of Iapetus condemned to bear the heavens at the world's edge.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_prometheus",
+    "notes": "Full sibling — shares the same attested parentage (Iapetus) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_chaos",
@@ -91494,7 +92063,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan of the heavenly axis, father of Leto and Asteria."
+  "notes": "Titan of the heavenly axis, father of Leto and Asteria.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_crius",
@@ -91569,7 +92195,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan father of Astraeus, Pallas and Perses."
+  "notes": "Titan father of Astraeus, Pallas and Perses.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_cronus",
@@ -91681,7 +92364,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Youngest Titan, deposed Uranus, ruled the Golden Age, father of the Olympians."
+  "notes": "Youngest Titan, deposed Uranus, ruled the Golden Age, father of the Olympians.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_eros",
@@ -92028,7 +92768,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Olympian-born lord of the dead, master of the helm of darkness."
+  "notes": "Olympian-born lord of the dead, master of the helm of darkness.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hestia",
+    "notes": "Full sibling — shares the same attested parentage (Cronus & Rhea) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_hecate",
@@ -92154,7 +92901,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan-descended goddess of magic and crossroads, honoured in earth, sea and sky."
+  "notes": "Titan-descended goddess of magic and crossroads, honoured in earth, sea and sky.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_leto",
+    "notes": "Full sibling — shares the same attested parentage (Coeus & Phoebe) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_helios",
@@ -92266,7 +93020,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "All-seeing Sun, son of Hyperion, who drives the solar chariot."
+  "notes": "All-seeing Sun, son of Hyperion, who drives the solar chariot.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_selene",
+    "notes": "Full sibling — shares the same attested parentage (Hyperion & Theia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_hermes",
@@ -92537,7 +93298,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Eldest child of Cronus, virgin goddess of the hearth and sacred fire."
+  "notes": "Eldest child of Cronus, virgin goddess of the hearth and sacred fire.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hades",
+    "notes": "Full sibling — shares the same attested parentage (Cronus & Rhea) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_hyperion",
@@ -92612,7 +93380,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan of heavenly light, father of the celestial bodies."
+  "notes": "Titan of heavenly light, father of the celestial bodies.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_hypnos",
@@ -92687,7 +93512,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of Night, personification of sleep, twin brother of Death."
+  "notes": "Son of Night, personification of sleep, twin brother of Death.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_nemesis",
+    "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_thanatos",
+    "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_iapetus",
@@ -92762,7 +93599,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan father of Atlas and Prometheus, ancestor of mankind."
+  "notes": "Titan father of Atlas and Prometheus, ancestor of mankind.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_iris",
@@ -92924,7 +93818,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness daughter of Coeus, mother of Apollo and Artemis by Zeus."
+  "notes": "Titaness daughter of Coeus, mother of Apollo and Artemis by Zeus.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hecate",
+    "notes": "Full sibling — shares the same attested parentage (Coeus & Phoebe) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_mnemosyne",
@@ -92999,7 +93900,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness of memory, mother of the nine Muses."
+  "notes": "Titaness of memory, mother of the nine Muses.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_nemesis",
@@ -93074,7 +94032,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Daughter of Night, goddess of divine retribution against arrogance."
+  "notes": "Daughter of Night, goddess of divine retribution against arrogance.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hypnos",
+    "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_thanatos",
+    "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_nike",
@@ -93313,7 +94283,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Eldest Titan, the world-encircling river, father of waters."
+  "notes": "Eldest Titan, the world-encircling river, father of waters.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_pan",
@@ -93607,7 +94634,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness of prophecy, second consort of Coeus, linked to Delphi."
+  "notes": "Titaness of prophecy, second consort of Coeus, linked to Delphi.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_prometheus",
@@ -93717,7 +94801,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titan son of Iapetus, fire-bringer and champion of mortals, punished by Zeus."
+  "notes": "Titan son of Iapetus, fire-bringer and champion of mortals, punished by Zeus.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_atlas",
+    "notes": "Full sibling — shares the same attested parentage (Iapetus) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_rhea",
@@ -93809,7 +94900,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness, consort of Cronus, mother of the Olympians who saved Zeus."
+  "notes": "Titaness, consort of Cronus, mother of the Olympians who saved Zeus.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_selene",
@@ -93904,7 +95052,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Moon goddess, daughter of Hyperion, who drives the lunar chariot."
+  "notes": "Moon goddess, daughter of Hyperion, who drives the lunar chariot.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_helios",
+    "notes": "Full sibling — shares the same attested parentage (Hyperion & Theia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_tethys",
@@ -93977,7 +95132,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness of fresh water, consort of Oceanus, mother of waters."
+  "notes": "Titaness of fresh water, consort of Oceanus, mother of waters.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_thanatos",
@@ -94052,7 +95264,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of Night, the personification of death, twin of Sleep."
+  "notes": "Son of Night, the personification of death, twin of Sleep.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hypnos",
+    "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_nemesis",
+    "notes": "Full sibling — shares the same attested parentage (Nyx) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_theia",
@@ -94128,7 +95352,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness of radiance, mother of Helios, Selene and Eos."
+  "notes": "Titaness of radiance, mother of Helios, Selene and Eos.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_themis",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_themis",
@@ -94218,7 +95499,64 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Titaness of divine law and order, second consort of Zeus."
+  "notes": "Titaness of divine law and order, second consort of Zeus.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_coeus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_crius",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_cronus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hyperion",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_iapetus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_mnemosyne",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_oceanus",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_phoebe",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_rhea",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_tethys",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_theia",
+    "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_uranus",
@@ -100391,7 +101729,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Charioteer of the sun, personified dawn-glow, elder son of Kashyapa and Vinata, brother of Garuda"
+  "notes": "Charioteer of the sun, personified dawn-glow, elder son of Kashyapa and Vinata, brother of Garuda",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_garuda",
+    "notes": "Full sibling — shares the same attested parentage (Kashyapa & Vinata) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_balarama",
@@ -101264,7 +102609,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Elephant-headed son of Shiva and Parvati, remover of obstacles, lord of beginnings"
+  "notes": "Elephant-headed son of Shiva and Parvati, remover of obstacles, lord of beginnings",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_kartikeya",
+    "notes": "Full sibling — shares the same attested parentage (Shiva & Parvati) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_ganesha_consort_placeholder_removed",
@@ -101452,7 +102804,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "King of birds, son of Kashyapa and Vinata, enemy of serpents, mount of Vishnu"
+  "notes": "King of birds, son of Kashyapa and Vinata, enemy of serpents, mount of Vishnu",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_aruna",
+    "notes": "Full sibling — shares the same attested parentage (Kashyapa & Vinata) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_hanuman",
@@ -102306,7 +103665,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Six-faced war-god, son of Shiva and Parvati, commander of the gods' army"
+  "notes": "Six-faced war-god, son of Shiva and Parvati, commander of the gods' army",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_ganesha",
+    "notes": "Full sibling — shares the same attested parentage (Shiva & Parvati) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_kashyapa",
@@ -102819,7 +104185,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Giant rakshasa brother of Ravana, famed for his enormous sleep and strength"
+  "notes": "Giant rakshasa brother of Ravana, famed for his enormous sleep and strength",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_ravana",
+    "notes": "Full sibling — shares the same attested parentage (Vishrava & Kaikesi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hindu_vibhishana",
+    "notes": "Full sibling — shares the same attested parentage (Vishrava & Kaikesi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_lakshmana",
@@ -103716,7 +105094,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Ten-headed rakshasa king of Lanka, abductor of Sita, slain by Rama"
+  "notes": "Ten-headed rakshasa king of Lanka, abductor of Sita, slain by Rama",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_kumbhakarna",
+    "notes": "Full sibling — shares the same attested parentage (Vishrava & Kaikesi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hindu_vibhishana",
+    "notes": "Full sibling — shares the same attested parentage (Vishrava & Kaikesi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_rohini_vasudeva",
@@ -104466,7 +105856,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Vanara king of Kishkindha, son of Surya, ally of Rama"
+  "notes": "Vanara king of Kishkindha, son of Surya, ally of Rama",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_yama",
+    "notes": "Full sibling — shares the same attested parentage (Sūrya) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_sumitra",
@@ -104939,7 +106336,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Righteous rakshasa brother of Ravana who defected to Rama and became king of Lanka"
+  "notes": "Righteous rakshasa brother of Ravana who defected to Rama and became king of Lanka",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_kumbhakarna",
+    "notes": "Full sibling — shares the same attested parentage (Vishrava & Kaikesi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hindu_ravana",
+    "notes": "Full sibling — shares the same attested parentage (Vishrava & Kaikesi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hindu_vinata",
@@ -105567,7 +106976,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of death and the dead, judge of souls, son of Surya, twin of Yami (distinct from hindu_dharma)"
+  "notes": "God of death and the dead, judge of souls, son of Surya, twin of Yami (distinct from hindu_dharma)",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hindu_sugriva",
+    "notes": "Full sibling — shares the same attested parentage (Sūrya) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hittite_arinna",
@@ -106052,6 +107468,11 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Daughter of the Sun-goddess of Arinna."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hittite_telipinu",
+    "notes": "Full sibling — shares the same attested parentage (Tarhunna & Sun-goddess of Arinna) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -106294,6 +107715,11 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Son of the Sun-goddess of Arinna."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hittite_mezzulla",
+    "notes": "Full sibling — shares the same attested parentage (Tarhunna & Sun-goddess of Arinna) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -109498,7 +110924,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Huli hana = 'moon'. Lunar goddess, the only daughter among Honabe's children; paired with her brother Ni the sun. Demigod tier as offspring of the creator pair."
+  "notes": "Huli hana = 'moon'. Lunar goddess, the only daughter among Honabe's children; paired with her brother Ni the sun. Demigod tier as offspring of the creator pair.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "huli_hela",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_heyolabe",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_korimogo",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_ni",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "huli_hela",
@@ -109593,7 +111041,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Culture-hero / apical ancestor (ancestral-progenitor tier), rendered demigod as offspring of the creator pair and progenitor of human lineages. Versions of the genealogy vary (Glasse vs. later Hela-nation accounts); the constant is Hela as common ancestor of the Tari-region peoples. Vital status given as deceased: an ancestral man rather than an undying god."
+  "notes": "Culture-hero / apical ancestor (ancestral-progenitor tier), rendered demigod as offspring of the creator pair and progenitor of human lineages. Versions of the genealogy vary (Glasse vs. later Hela-nation accounts); the constant is Hela as common ancestor of the Tari-region peoples. Vital status given as deceased: an ancestral man rather than an undying god.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "huli_hana",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_heyolabe",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_korimogo",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_ni",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "huli_heyolabe",
@@ -109673,7 +111143,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "A malevolent member of the dama spirit-class but also numbered among Honabe's children; rendered as demigod given his parentage, with the dama affiliation noted. Functions as the Huli locus of natural evil, often glossed by missionaries as 'Satan'."
+  "notes": "A malevolent member of the dama spirit-class but also numbered among Honabe's children; rendered as demigod given his parentage, with the dama affiliation noted. Functions as the Huli locus of natural evil, often glossed by missionaries as 'Satan'.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "huli_hana",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_hela",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_korimogo",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_ni",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "huli_honabe",
@@ -109822,7 +111314,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of the creator-mother Honabe and the sky-father Timbu; sibling to Heyolabe, Piandela, Ni (sun), Hela and the goddess Hana (moon). Classed as demigod (offspring of the procreator deities). Few discrete deeds are recorded beyond his place in the divine genealogy."
+  "notes": "Son of the creator-mother Honabe and the sky-father Timbu; sibling to Heyolabe, Piandela, Ni (sun), Hela and the goddess Hana (moon). Classed as demigod (offspring of the procreator deities). Few discrete deeds are recorded beyond his place in the divine genealogy.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "huli_hana",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_hela",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_heyolabe",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_ni",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "huli_ni",
@@ -109916,7 +111430,29 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Huli ni = 'sun'. A solar deity personifying the daystar; treated as demigod as offspring of the creator pair. Paired with Hana the moon in cosmology and ritual."
+  "notes": "Huli ni = 'sun'. A solar deity personifying the daystar; treated as demigod as offspring of the creator pair. Paired with Hana the moon in cosmology and ritual.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "huli_hana",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_hela",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_heyolabe",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "huli_korimogo",
+    "notes": "Full sibling — shares the same attested parentage (Creator-Mother & Sky-Father) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "huli_timbu",
@@ -110515,7 +112051,34 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Deified Tigris River; one of three gods (with Teshub and Tasmisu) conceived when Kumarbi bit off Anu's genitals. Anu names him to Kumarbi as part of the burden placed within him."
+  "notes": "Deified Tigris River; one of three gods (with Teshub and Tasmisu) conceived when Kumarbi bit off Anu's genitals. Anu names him to Kumarbi as part of the burden placed within him.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hurrian_ea",
@@ -110813,7 +112376,34 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Ravenous sea-serpent engendered by Kumarbi upon the Sea's daughter Šertapšuruḫi to threaten Teshub's kingship. Lured from the water, seduced and intoxicated by Shaushka and her attendants Ninatta and Kulitta in the Song of Hedammu."
+  "notes": "Ravenous sea-serpent engendered by Kumarbi upon the Sea's daughter Šertapšuruḫi to threaten Teshub's kingship. Lured from the water, seduced and intoxicated by Shaushka and her attendants Ninatta and Kulitta in the Song of Hedammu.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hurrian_kumarbi",
@@ -111123,7 +112713,34 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Highest-ranked goddess of love and war, equated with Ishtar; associated with Nineveh. Attended by handmaidens Ninatta and Kulitta. In the Song of Hedammu she seduces and intoxicates the monster."
+  "notes": "Highest-ranked goddess of love and war, equated with Ishtar; associated with Nineveh. Attended by handmaidens Ninatta and Kulitta. In the Song of Hedammu she seduces and intoxicates the monster.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hurrian_shimige",
@@ -111294,7 +112911,34 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Brother, vizier (sukkal) and warlike aide of Teshub; born together with Teshub and Aranzah from Kumarbi after the swallowing of Anu's seed. Called Šuwaliyat in the Hittite recensions of the cycle."
+  "notes": "Brother, vizier (sukkal) and warlike aide of Teshub; born together with Teshub and Aranzah from Kumarbi after the swallowing of Anu's seed. Called Šuwaliyat in the Hittite recensions of the cycle.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hurrian_teshub",
@@ -111486,7 +113130,34 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Hurrian storm-god and king of the gods; born from Kumarbi after he bit off Anu's genitals. His city is Kummiya; consort Hebat."
+  "notes": "Hurrian storm-god and king of the gods; born from Kumarbi after he bit off Anu's genitals. His city is Kummiya; consort Hebat.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_ullikummi",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "hurrian_ullikummi",
@@ -111582,7 +113253,34 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Blind, deaf, sentient diorite-stone monster fathered by Kumarbi upon a great rock to overthrow Teshub; name means 'Destroy Kumme!'. Grown on the shoulder of the earth-bearer Upelluri until Ea severs him with the primeval copper saw."
+  "notes": "Blind, deaf, sentient diorite-stone monster fathered by Kumarbi upon a great rock to overthrow Teshub; name means 'Destroy Kumme!'. Grown on the shoulder of the earth-bearer Upelluri until Ea severs him with the primeval copper saw.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "hurrian_aranzah",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_hedammu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_shaushka",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_tasmisu",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "hurrian_teshub",
+    "notes": "Full sibling — shares the same attested parentage (Kumarbi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "ibeji",
@@ -112338,7 +114036,34 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Patron deity of divination, health and the dibia; principle of life's dualities."
+  "notes": "Patron deity of divination, health and the dibia; principle of life's dualities.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "igbo_ala",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_amadioha",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_anyanwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_idemili",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_igwe",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "igbo_ala",
@@ -112520,7 +114245,34 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Earth goddess; highest alusi, guardian of morality, fertility and the dead."
+  "notes": "Earth goddess; highest alusi, guardian of morality, fertility and the dead.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "igbo_agwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_amadioha",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_anyanwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_idemili",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_igwe",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "igbo_amadioha",
@@ -112646,7 +114398,34 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Male god of thunder and lightning; avenger of injustice, associated with the sky."
+  "notes": "Male god of thunder and lightning; avenger of injustice, associated with the sky.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "igbo_agwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_ala",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_anyanwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_idemili",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_igwe",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "igbo_anyanwu",
@@ -112738,7 +114517,34 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Solar deity, the eye of Chukwu; name means eye of the sun."
+  "notes": "Solar deity, the eye of Chukwu; name means eye of the sun.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "igbo_agwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_ala",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_amadioha",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_idemili",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_igwe",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "igbo_chukwu",
@@ -113100,7 +114906,34 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Water goddess of the Idemili river; the royal python is her sacred emblem."
+  "notes": "Water goddess of the Idemili river; the royal python is her sacred emblem.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "igbo_agwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_ala",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_amadioha",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_anyanwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_igwe",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "igbo_igwe",
@@ -113190,7 +115023,34 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Sky deity and giver of rain; the firmament above the earth Ala."
+  "notes": "Sky deity and giver of rain; the firmament above the earth Ala.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "igbo_agwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_ala",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_amadioha",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_anyanwu",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "igbo_idemili",
+    "notes": "Full sibling — shares the same attested parentage (Chukwu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "igbo_ikenga",
@@ -115531,7 +117391,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of the Dagda, elected king of the Tuatha Dé Danann sídhe after their retreat underground."
+  "notes": "Son of the Dagda, elected king of the Tuatha Dé Danann sídhe after their retreat underground.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "irish_brigid",
+    "notes": "Full sibling — shares the same attested parentage (The Dagda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "irish_midir",
+    "notes": "Full sibling — shares the same attested parentage (The Dagda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "irish_brigid",
@@ -115640,7 +117512,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Daughter of the Dagda, triple goddess of poetry, healing and smithcraft, who first raised the keen."
+  "notes": "Daughter of the Dagda, triple goddess of poetry, healing and smithcraft, who first raised the keen.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "irish_bodb_derg",
+    "notes": "Full sibling — shares the same attested parentage (The Dagda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "irish_midir",
+    "notes": "Full sibling — shares the same attested parentage (The Dagda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "irish_dagda",
@@ -116334,7 +118218,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Otherworld lord of Brí Léith, suitor of Étaín, who wins her back from King Eochaid at fidchell."
+  "notes": "Otherworld lord of Brí Léith, suitor of Étaín, who wins her back from King Eochaid at fidchell.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "irish_bodb_derg",
+    "notes": "Full sibling — shares the same attested parentage (The Dagda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "irish_brigid",
+    "notes": "Full sibling — shares the same attested parentage (The Dagda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "irish_morrigan",
@@ -117580,7 +119476,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Sun goddess born from Izanagi's left eye, ancestress of the imperial line."
+  "notes": "Sun goddess born from Izanagi's left eye, ancestress of the imperial line.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_susanoo",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "japanese_tsukuyomi",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "japanese_ame_no_uzume",
@@ -117903,7 +119811,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Leech-child of Izanagi and Izanami who became god of fishermen and luck."
+  "notes": "Leech-child of Izanagi and Izanami who became god of fishermen and luck.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_kagutsuchi",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi & Izanami) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "japanese_fujin",
@@ -118431,7 +120346,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Fire kami whose birth killed Izanami; beheaded by Izanagi."
+  "notes": "Fire kami whose birth killed Izanami; beheaded by Izanagi.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_ebisu",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi & Izanami) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "japanese_konohanasakuya_hime",
@@ -119099,7 +121021,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Storm god born from Izanagi's nose; slayer of Yamata-no-Orochi."
+  "notes": "Storm god born from Izanagi's nose; slayer of Yamata-no-Orochi.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_amaterasu",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "japanese_tsukuyomi",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "japanese_tsukuyomi",
@@ -119195,7 +121129,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Moon deity born from Izanagi's right eye, ruler of the night."
+  "notes": "Moon deity born from Izanagi's right eye, ruler of the night.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "japanese_amaterasu",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "japanese_susanoo",
+    "notes": "Full sibling — shares the same attested parentage (Izanagi) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "javanese_gareng",
@@ -122462,6 +124408,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Identical Ob-Ugric theonym 'World-Surveying Man', the intercessor son of the sky-god, shared by Khanty and Mansi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_yli_torum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_mir_susne_khum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -122814,6 +124770,16 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Brother of the World-Watching Man among the sons of Num-Torum; both are heavenly riders, one on a winged, the other on a white horse."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_yli_torum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_mir_susne_khum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
    }
   ],
   "sources": [
@@ -122925,7 +124891,24 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Spirit-class layered sky/earth deity (classed as deity). il/yli = 'lower, under'; contrasts with num/numi 'upper' in Num-Torum. Attestation is thinner and more variable than for Num-Torum, hence secondary weight; included per the brief's request for Yli-Torum, with the Ob-Ugric 'torum' layering documented by Karjalainen."
+  "notes": "Spirit-class layered sky/earth deity (classed as deity). il/yli = 'lower, under'; contrasts with num/numi 'upper' in Num-Torum. Attestation is thinner and more variable than for Num-Torum, hence secondary weight; included per the brief's request for Yli-Torum, with the Ob-Ugric 'torum' layering documented by Karjalainen.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "khanty_mir_susne_khum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_postajankt_iki",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mansi_mir_susne_khum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "khasi_hynniew_trep",
@@ -124572,7 +126555,14 @@ const NEW_FIGURES = [
     "weight": "primary-attestation"
    }
   ],
-  "notes": "Classed as demigod: the divinely-created progenitor (created directly by Ngai, parentIds=kikuyu_ngai), more-than-ordinary but mortal ancestor. vitalStatus='dead' as the founding ancestor. The ethnonym Gĩkũyũ/Agĩkũyũ derives from this figure."
+  "notes": "Classed as demigod: the divinely-created progenitor (created directly by Ngai, parentIds=kikuyu_ngai), more-than-ordinary but mortal ancestor. vitalStatus='dead' as the founding ancestor. The ethnonym Gĩkũyũ/Agĩkũyũ derives from this figure.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kikuyu_mumbi",
+    "notes": "Full sibling — shares the same attested parentage (Owner of the Dazzling Light, the Divider) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kikuyu_mumbi",
@@ -124666,7 +126656,14 @@ const NEW_FIGURES = [
     "weight": "primary-attestation"
    }
   ],
-  "notes": "Classed as demigod: the divinely-given first woman and progenitor. parentIds=kikuyu_ngai (given by/created through Ngai). The Kikuyu often call themselves 'the house of Mũmbi' (nyũmba ya Mũmbi). vitalStatus='dead' as founding ancestor."
+  "notes": "Classed as demigod: the divinely-given first woman and progenitor. parentIds=kikuyu_ngai (given by/created through Ngai). The Kikuyu often call themselves 'the house of Mũmbi' (nyũmba ya Mũmbi). vitalStatus='dead' as founding ancestor.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kikuyu_gikuyu",
+    "notes": "Full sibling — shares the same attested parentage (Owner of the Dazzling Light, the Divider) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kikuyu_ngai",
@@ -124891,7 +126888,14 @@ const NEW_FIGURES = [
     "weight": "corroborated"
    }
   ],
-  "notes": "Classed as demigod: the 'tenth' founding daughter of the progenitor pair, whose existence explains the idiom 'the full nine'. Some traditions say she bore children outside marriage or that her line founded another people. vitalStatus='dead' as founding ancestor."
+  "notes": "Classed as demigod: the 'tenth' founding daughter of the progenitor pair, whose existence explains the idiom 'the full nine'. Some traditions say she bore children outside marriage or that her line founded another people. vitalStatus='dead' as founding ancestor.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kikuyu_wanjiru",
+    "notes": "Full sibling — shares the same attested parentage (First Man and Founding Father & First Woman and Mother-Moulder) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kikuyu_wanjiru",
@@ -124971,7 +126975,14 @@ const NEW_FIGURES = [
     "weight": "primary-attestation"
    }
   ],
-  "notes": "Classed as demigod: a founding clan-ancestress, daughter of the progenitor pair (parentIds). Representative of the nine daughters; the others (Wambũi, Wanjikũ, Wangũi, Wangeci, Wanjeeri, Nyambũra, Wairimũ, Wangarĩ) are attested in the same lists. vitalStatus='dead' as founding ancestor."
+  "notes": "Classed as demigod: a founding clan-ancestress, daughter of the progenitor pair (parentIds). Representative of the nine daughters; the others (Wambũi, Wanjikũ, Wangũi, Wangeci, Wanjeeri, Nyambũra, Wairimũ, Wangarĩ) are attested in the same lists. vitalStatus='dead' as founding ancestor.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kikuyu_wamuyu",
+    "notes": "Full sibling — shares the same attested parentage (First Man and Founding Father & First Woman and Mother-Moulder) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kirati_paruhang",
@@ -129035,7 +131046,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Elder star-king twin who rules the just realm of the dead."
+  "notes": "Elder star-king twin who rules the just realm of the dead.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "korean_sobyeolwang",
+    "notes": "Full sibling — shares the same attested parentage (Cheonji-wang) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "korean_habaek",
@@ -129575,7 +131593,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Younger star-king twin who won the living world through deceit."
+  "notes": "Younger star-king twin who won the living world through deceit.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "korean_daebyeolwang",
+    "notes": "Full sibling — shares the same attested parentage (Cheonji-wang) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "korean_yuhwa",
@@ -130604,7 +132629,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Second of Mbombo's three creator-sons. Typed deity (origin of plants)."
+  "notes": "Second of Mbombo's three creator-sons. Typed deity (origin of plants).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_nyonye_ngana",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_tsetse_bumba",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kuba_mbombo",
@@ -130802,7 +132844,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "One of the three creator-sons who finish the world after Mbombo. Typed deity (origin of fertile soil)."
+  "notes": "One of the three creator-sons who finish the world after Mbombo. Typed deity (origin of fertile soil).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_chonganda",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_tsetse_bumba",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kuba_tsetse_bumba",
@@ -130913,7 +132972,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Gender is not consistently recorded (some retellings render Tsetse as 'she'), hence sex 'unknown'. Lightning personified; typed deity (storm/fire) and explained here."
+  "notes": "Gender is not consistently recorded (some retellings render Tsetse as 'she'), hence sex 'unknown'. Lightning personified; typed deity (storm/fire) and explained here.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_chonganda",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_nyonye_ngana",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_woot",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kuba_woot",
@@ -131051,7 +133127,24 @@ const NEW_FIGURES = [
     "weight": "corroborating"
    }
   ],
-  "notes": "Culture-hero / progenitor tier: typed demigod (first man and divine ancestor, son of the creator Mbombo) per the schema's instruction to use demigod for culture-heroes and explain here. His sister-wife is Mweel."
+  "notes": "Culture-hero / progenitor tier: typed demigod (first man and divine ancestor, son of the creator Mbombo) per the schema's instruction to use demigod for culture-heroes and explain here. His sister-wife is Mweel.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "kuba_chonganda",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_nyonye_ngana",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "kuba_tsetse_bumba",
+    "notes": "Full sibling — shares the same attested parentage (Vomiting Creator God) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "kwakwakawakw_bakwas",
@@ -133107,7 +135200,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Lepcha culture-hero / first shaman, classed as demigod (a divinely created semi-divine progenitor of the Bongthing priesthood, transmitting shamanic power to mortals). The Lepcha shamanic system distinguishes the male Bongthing from the female Mun; Azaor-Bongthing/Tamsangthing is its mythic founder, created specifically to combat the mung (demons)."
+  "notes": "Lepcha culture-hero / first shaman, classed as demigod (a divinely created semi-divine progenitor of the Bongthing priesthood, transmitting shamanic power to mortals). The Lepcha shamanic system distinguishes the male Bongthing from the female Mun; Azaor-Bongthing/Tamsangthing is its mythic founder, created specifically to combat the mung (demons).",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lepcha_fodongthing",
+    "notes": "Full sibling — shares the same attested parentage (Mother-Creator) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "lepcha_nazongnyu",
+    "notes": "Full sibling — shares the same attested parentage (Mother-Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "lepcha_fodongthing",
@@ -133180,7 +135285,19 @@ const NEW_FIGURES = [
     "weight": "supporting"
    }
   ],
-  "notes": "Lepcha first man, classed as mortal (the primordial human ancestor, child of the creatress). Sometimes called Tukbothing. In John Morris's account the first pair (Itpumu/Kumsiting) are themselves born of the two peaks of Kanchenjunga and beget Tashe-thing and Nazongnyu — naming varies by informant and ethnographer; the dominant Siiger/Gorer line makes Fodongthing the snow-formed first man."
+  "notes": "Lepcha first man, classed as mortal (the primordial human ancestor, child of the creatress). Sometimes called Tukbothing. In John Morris's account the first pair (Itpumu/Kumsiting) are themselves born of the two peaks of Kanchenjunga and beget Tashe-thing and Nazongnyu — naming varies by informant and ethnographer; the dominant Siiger/Gorer line makes Fodongthing the snow-formed first man.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lepcha_azaor_bongthing",
+    "notes": "Full sibling — shares the same attested parentage (Mother-Creator) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "lepcha_nazongnyu",
+    "notes": "Full sibling — shares the same attested parentage (Mother-Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "lepcha_itbu_moo",
@@ -133554,7 +135671,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Lepcha first woman, classed as mortal (primordial human ancestress). Often paired as Fodongthing-and-Nazongnyu, the Lepcha 'Adam and Eve', created brother and sister from the snows of Kanchenjunga and sent to dwell in Mayel Lyang."
+  "notes": "Lepcha first woman, classed as mortal (primordial human ancestress). Often paired as Fodongthing-and-Nazongnyu, the Lepcha 'Adam and Eve', created brother and sister from the snows of Kanchenjunga and sent to dwell in Mayel Lyang.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lepcha_azaor_bongthing",
+    "notes": "Full sibling — shares the same attested parentage (Mother-Creator) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "lepcha_fodongthing",
+    "notes": "Full sibling — shares the same attested parentage (Mother-Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "lepcha_tashe_thing",
@@ -135389,7 +137518,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Progenitor tier: typed demigod (sky-created first man). His name is glossed 'the person who comes from the sky'. Paired with Meme."
+  "notes": "Progenitor tier: typed demigod (sky-created first man). His name is glossed 'the person who comes from the sky'. Paired with Meme.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lugbara_meme",
+    "notes": "Full sibling — shares the same attested parentage (Transcendent Sky Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "lugbara_meme",
@@ -135482,7 +137618,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Progenitor tier: typed demigod (first woman). Name glossed 'the person who came alone'. Paired with Gborogboro; their later descendants produce the hero-ancestors Jaki and Dribidu."
+  "notes": "Progenitor tier: typed demigod (first woman). Name glossed 'the person who came alone'. Paired with Gborogboro; their later descendants produce the hero-ancestors Jaki and Dribidu.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "lugbara_gborogboro",
+    "notes": "Full sibling — shares the same attested parentage (Transcendent Sky Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "luo_juogi",
@@ -144672,6 +146815,21 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Identical Ob-Ugric theonym 'World-Surveying Man', the intercessor son of the sky-god, shared by Khanty and Mansi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_mir_susne_khum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_postajankt_iki",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "khanty_yli_torum",
+    "notes": "Full sibling — shares the same attested parentage (Sky Father) per the figures' cited genealogy."
    }
   ]
  },
@@ -152148,7 +154306,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Storm god of rain, thunder and the destructive tempest."
+  "notes": "Storm god of rain, thunder and the destructive tempest.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_enki",
+    "notes": "Full sibling — shares the same attested parentage (Anu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_enlil",
+    "notes": "Full sibling — shares the same attested parentage (Anu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_anu",
@@ -152574,7 +154744,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of fresh water, wisdom, magic and crafts; maker of mankind."
+  "notes": "God of fresh water, wisdom, magic and crafts; maker of mankind.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_adad",
+    "notes": "Full sibling — shares the same attested parentage (Anu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_enlil",
+    "notes": "Full sibling — shares the same attested parentage (Anu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_enlil",
@@ -152682,7 +154864,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Storm-and-wind god of Nippur, executive king of the gods."
+  "notes": "Storm-and-wind god of Nippur, executive king of the gods.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_adad",
+    "notes": "Full sibling — shares the same attested parentage (Anu) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_enki",
+    "notes": "Full sibling — shares the same attested parentage (Anu) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_ereshkigal",
@@ -152790,7 +154984,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Queen of the underworld, elder sister of Inanna."
+  "notes": "Queen of the underworld, elder sister of Inanna.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_inanna",
+    "notes": "Full sibling — shares the same attested parentage (Nanna) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_utu",
+    "notes": "Full sibling — shares the same attested parentage (Nanna) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_geshtinanna",
@@ -153038,7 +155244,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Goddess of love, war and the planet Venus; queen of heaven."
+  "notes": "Goddess of love, war and the planet Venus; queen of heaven.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_ereshkigal",
+    "notes": "Full sibling — shares the same attested parentage (Nanna) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_utu",
+    "notes": "Full sibling — shares the same attested parentage (Nanna) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_kingu",
@@ -153732,7 +155950,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Moon god of Ur, father of the sun and Inanna."
+  "notes": "Moon god of Ur, father of the sun and Inanna.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_nergal",
+    "notes": "Full sibling — shares the same attested parentage (Enlil) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_nergal",
@@ -153860,7 +156085,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of plague, war and the underworld; consort of Ereshkigal."
+  "notes": "God of plague, war and the underworld; consort of Ereshkigal.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_nanna",
+    "notes": "Full sibling — shares the same attested parentage (Enlil) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "mesopotamian_ninhursag",
@@ -154202,7 +156434,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Sun god, all-seeing arbiter of justice and law."
+  "notes": "Sun god, all-seeing arbiter of justice and law.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_ereshkigal",
+    "notes": "Full sibling — shares the same attested parentage (Nanna) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "mesopotamian_inanna",
+    "notes": "Full sibling — shares the same attested parentage (Nanna) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "miwok_coyote",
@@ -159500,7 +161744,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "The Nenets underworld/death-god; classed 'deity'. Son of Num; the pair embodies the Samoyed sky/underworld dualism documented by Lehtisalo. English 'Death-God' leads, native Nga in term."
+  "notes": "The Nenets underworld/death-god; classed 'deity'. Son of Num; the pair embodies the Samoyed sky/underworld dualism documented by Lehtisalo. English 'Death-God' leads, native Nga in term.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "nenets_num_to",
+    "notes": "Full sibling — shares the same attested parentage (Sky (Num)) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "nenets_num",
@@ -159744,7 +161995,14 @@ const NEW_FIGURES = [
     "weight": "corroborating"
    }
   ],
-  "notes": "A localized son-of-Num deity fused with a sacred lake (Numto, in the Khanty-Mansi/Yamal borderland); classed 'deity'. Included per the brief's 'Num-to'. English 'God's Lake' leads, native Num-to in term. The lake is shared as a shrine with neighbouring Forest peoples."
+  "notes": "A localized son-of-Num deity fused with a sacred lake (Numto, in the Khanty-Mansi/Yamal borderland); classed 'deity'. Included per the brief's 'Num-to'. English 'God's Lake' leads, native Num-to in term. The lake is shared as a shrine with neighbouring Forest peoples.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "nenets_nga",
+    "notes": "Full sibling — shares the same attested parentage (Sky (Num)) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "nenets_syadei",
@@ -160646,7 +162904,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Radiant beloved son of Odin and Frigg, slain by mistletoe through Loki's contrivance."
+  "notes": "Radiant beloved son of Odin and Frigg, slain by mistletoe through Loki's contrivance.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_hodr",
+    "notes": "Full sibling — shares the same attested parentage (Odin & Frigg) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_bragi",
@@ -160720,7 +162985,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "God of poetry and eloquence, husband of Iðunn, who welcomes the slain to Valhöll with verse."
+  "notes": "God of poetry and eloquence, husband of Iðunn, who welcomes the slain to Valhöll with verse.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_heimdall",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_vali",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_vidarr",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_buri",
@@ -160849,7 +163131,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Monstrous wolf-son of Loki, bound by the gods with Gleipnir, fated to devour Odin at Ragnarök."
+  "notes": "Monstrous wolf-son of Loki, bound by the gods with Gleipnir, fated to devour Odin at Ragnarök.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_hel",
+    "notes": "Full sibling — shares the same attested parentage (Loki) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_jormungandr",
+    "notes": "Full sibling — shares the same attested parentage (Loki) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_forseti",
@@ -161373,7 +163667,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Watchman of the gods, born of nine mothers, guarding Bifröst at Himinbjörg with all-seeing senses."
+  "notes": "Watchman of the gods, born of nine mothers, guarding Bifröst at Himinbjörg with all-seeing senses.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_bragi",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_vali",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_vidarr",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_hel",
@@ -161466,7 +163777,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Daughter of Loki and Angrboða, cast into Niflheim to rule the realm of the dead."
+  "notes": "Daughter of Loki and Angrboða, cast into Niflheim to rule the realm of the dead.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_fenrir",
+    "notes": "Full sibling — shares the same attested parentage (Loki) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_jormungandr",
+    "notes": "Full sibling — shares the same attested parentage (Loki) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_helgi_hundingsbane",
@@ -161630,7 +163953,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Blind god, son of Odin, who unwittingly slew Baldr with a mistletoe dart guided by Loki."
+  "notes": "Blind god, son of Odin, who unwittingly slew Baldr with a mistletoe dart guided by Loki.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_baldr",
+    "notes": "Full sibling — shares the same attested parentage (Odin & Frigg) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_idunn",
@@ -161797,7 +164127,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "World-serpent child of Loki and Angrboða, encircling Midgard and Thor's doom at Ragnarök."
+  "notes": "World-serpent child of Loki and Angrboða, encircling Midgard and Thor's doom at Ragnarök.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_fenrir",
+    "notes": "Full sibling — shares the same attested parentage (Loki) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_hel",
+    "notes": "Full sibling — shares the same attested parentage (Loki) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_loki",
@@ -163424,7 +165766,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of Odin and Rindr, born to avenge Baldr by slaying Höðr; survives Ragnarök."
+  "notes": "Son of Odin and Rindr, born to avenge Baldr by slaying Höðr; survives Ragnarök.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_bragi",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_heimdall",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_vidarr",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_verdandi",
@@ -163590,7 +165949,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Silent god of vengeance, son of Odin, fated to kill Fenrir and survive Ragnarök."
+  "notes": "Silent god of vengeance, son of Odin, fated to kill Fenrir and survive Ragnarök.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "norse_bragi",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_heimdall",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_vali",
+    "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "norse_volsung",
@@ -164892,7 +167268,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "The prompt's 'Disani the fertility goddess'. Kamviri Disâni, Prasun Dízane; cognate with Kalash Dizane/Dezalik. Parentage varies; parentId links to Imra per the dominant account."
+  "notes": "The prompt's 'Disani the fertility goddess'. Kamviri Disâni, Prasun Dízane; cognate with Kalash Dizane/Dezalik. Parentage varies; parentId links to Imra per the dominant account.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "nuristani_gish",
+    "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "nuristani_moni",
+    "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "nuristani_gish",
@@ -165029,7 +167417,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Foregrounded war-god/culture-hero. Kamviri gíš, Waigali gīweš; centre of the most active cult among the Siah-Posh ('black-robed') Kafirs of the Bashgal valley. parentId links to Imra, his creator."
+  "notes": "Foregrounded war-god/culture-hero. Kamviri gíš, Waigali gīweš; centre of the most active cult among the Siah-Posh ('black-robed') Kafirs of the Bashgal valley. parentId links to Imra, his creator.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "nuristani_disani",
+    "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "nuristani_moni",
+    "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "nuristani_imra",
@@ -165282,7 +167682,19 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "The prompt's 'Mon/Moni the prophet-hero'. Demigod culture-hero (prophet + demon-slayer); corresponds to Kalash Mahandeo. Kamviri Mâni/Mandi. parentId links to Imra, his creator."
+  "notes": "The prompt's 'Mon/Moni the prophet-hero'. Demigod culture-hero (prophet + demon-slayer); corresponds to Kalash Mahandeo. Kamviri Mâni/Mandi. parentId links to Imra, his creator.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "nuristani_disani",
+    "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "nuristani_gish",
+    "notes": "Full sibling — shares the same attested parentage (Imra the Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "obatala",
@@ -165445,7 +167857,39 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Arch-divinity and sculptor of humankind; patron of purity and white."
+  "notes": "Arch-divinity and sculptor of humankind; patron of purity and white.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "eshu",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oduduwa",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "orunmila",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "osanyin",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oshun",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yemoja",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "oduduwa",
@@ -165571,7 +168015,39 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Progenitor orisa of the Yoruba and founder-king of Ile-Ife."
+  "notes": "Progenitor orisa of the Yoruba and founder-king of Ile-Ife.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "eshu",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "obatala",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "orunmila",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "osanyin",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oshun",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yemoja",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "olodumare",
@@ -165815,7 +168291,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Orisa of the deep ocean, wealth, and mysteries; venerated by Yoruba and Edo alike."
+  "notes": "Orisa of the deep ocean, wealth, and mysteries; venerated by Yoruba and Edo alike.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "oya",
+    "notes": "Full sibling — shares the same attested parentage (Yemoja) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "orunmila",
@@ -166036,6 +168519,36 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "eshu",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "obatala",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oduduwa",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "osanyin",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oshun",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yemoja",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
    }
   ]
  },
@@ -166163,7 +168676,39 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "One-limbed orisa of the forest, leaves, and herbal medicine; master herbalist."
+  "notes": "One-limbed orisa of the forest, leaves, and herbal medicine; master herbalist.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "eshu",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "obatala",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oduduwa",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "orunmila",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oshun",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yemoja",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "oshun",
@@ -166358,7 +168903,39 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Orisa of the Osun River, love, fertility, healing sweet-waters, and wealth."
+  "notes": "Orisa of the Osun River, love, fertility, healing sweet-waters, and wealth.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "eshu",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "obatala",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oduduwa",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "orunmila",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "osanyin",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "yemoja",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "otomi_otontecuhtli",
@@ -167062,7 +169639,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Orisa of winds, storms, the Niger, and mistress of the ancestral dead; Shango's favorite wife."
+  "notes": "Orisa of winds, storms, the Niger, and mistress of the ancestral dead; Shango's favorite wife.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "olokun",
+    "notes": "Full sibling — shares the same attested parentage (Yemoja) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "palauan_chuab",
@@ -170228,7 +172812,39 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of uncultivated wild food, especially edible fern root."
+  "notes": "Māori god of uncultivated wild food, especially edible fern root.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "polynesian_rongo",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tane",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tangaroa",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tawhirimatea",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tumatauenga",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_whiro",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "polynesian_hina",
@@ -171774,6 +174390,36 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_haumiatiketike",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tane",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tangaroa",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tawhirimatea",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tumatauenga",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_whiro",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
    }
   ]
  },
@@ -172020,6 +174666,36 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_haumiatiketike",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_rongo",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tangaroa",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tawhirimatea",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tumatauenga",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_whiro",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
    }
   ]
  },
@@ -172203,6 +174879,36 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_haumiatiketike",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_rongo",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tane",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tawhirimatea",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tumatauenga",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_whiro",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
    }
   ]
  },
@@ -172313,7 +175019,39 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of weather and storms; alone he opposed the separation of his parents."
+  "notes": "Māori god of weather and storms; alone he opposed the separation of his parents.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "polynesian_haumiatiketike",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_rongo",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tane",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tangaroa",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tumatauenga",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_whiro",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "polynesian_tumatauenga",
@@ -172423,7 +175161,39 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of war and progenitor/archetype of humankind."
+  "notes": "Māori god of war and progenitor/archetype of humankind.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "polynesian_haumiatiketike",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_rongo",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tane",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tangaroa",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tawhirimatea",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_whiro",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "polynesian_whiro",
@@ -172551,7 +175321,39 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of darkness, disease and death; antithesis of Tāne."
+  "notes": "Māori god of darkness, disease and death; antithesis of Tāne.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "polynesian_haumiatiketike",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_rongo",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tane",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tangaroa",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tawhirimatea",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "polynesian_tumatauenga",
+    "notes": "Full sibling — shares the same attested parentage (Ranginui & Papatūānuku) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "pomo_coyote",
@@ -176973,7 +179775,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Roman lord of the underworld, son of Saturn; counterpart of Hades."
+  "notes": "Roman lord of the underworld, son of Saturn; counterpart of Hades.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "roman_vesta",
+    "notes": "Full sibling — shares the same attested parentage (Saturn & Ops) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "roman_pomona",
@@ -177571,7 +180380,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Roman virgin goddess of the hearth and the eternal state fire; cf. Hestia."
+  "notes": "Roman virgin goddess of the hearth and the eternal state fire; cf. Hestia.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "roman_pluto",
+    "notes": "Full sibling — shares the same attested parentage (Saturn & Ops) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "sabaean_almaqah",
@@ -182293,7 +185109,14 @@ const NEW_FIGURES = [
     "weight": "primary-attestation"
    }
   ],
-  "notes": "Classed as demigod (a son of the creator Cagn/ǀKaggen). Attested specifically in the Maloti-Drakensberg (Qing/Orpen) tradition of the San rather than the /Xam corpus; included to represent the hero/offspring tier the prompt requests."
+  "notes": "Classed as demigod (a son of the creator Cagn/ǀKaggen). Attested specifically in the Maloti-Drakensberg (Qing/Orpen) tradition of the San rather than the /Xam corpus; included to represent the hero/offspring tier the prompt requests.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "san_kxo",
+    "notes": "Full sibling — shares the same attested parentage (Mantis Trickster-Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "san_gauwa",
@@ -182759,7 +185582,14 @@ const NEW_FIGURES = [
     "weight": "primary-attestation"
    }
   ],
-  "notes": "Classed as demigod (a First-Race being in the Mantis's family). Click symbol ǃ = alveolar (postalveolar) click. ASCII Bleek–Lloyd form '!Xo'. Female."
+  "notes": "Classed as demigod (a First-Race being in the Mantis's family). Click symbol ǃ = alveolar (postalveolar) click. ASCII Bleek–Lloyd form '!Xo'. Female.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "san_cogaz",
+    "notes": "Full sibling — shares the same attested parentage (Mantis Trickster-Creator) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "santal_jaher_era",
@@ -213765,7 +216595,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Divine ploughman of the Children of Dôn, whose theft from Annwn occasions the Cad Goddeu."
+  "notes": "Divine ploughman of the Children of Dôn, whose theft from Annwn occasions the Cad Goddeu.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "welsh_gilfaethwy",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gofannon",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gwydion",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "welsh_arawn",
@@ -214132,7 +216979,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of Dôn whose desire for Goewin triggers the war with Pryderi; punished by Math as beasts with Gwydion."
+  "notes": "Son of Dôn whose desire for Goewin triggers the war with Pryderi; punished by Math as beasts with Gwydion.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "welsh_amaethon",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gofannon",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gwydion",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "welsh_gofannon",
@@ -214189,7 +217053,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Divine smith of the Children of Dôn, whose aid is sought to set a plough in Culhwch ac Olwen."
+  "notes": "Divine smith of the Children of Dôn, whose aid is sought to set a plough in Culhwch ac Olwen.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "welsh_amaethon",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gilfaethwy",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gwydion",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "welsh_gwydion",
@@ -214263,7 +217144,24 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Magician son of Dôn, foster-father of Lleu, who with Math shapes Blodeuwedd from flowers."
+  "notes": "Magician son of Dôn, foster-father of Lleu, who with Math shapes Blodeuwedd from flowers.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "welsh_amaethon",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gilfaethwy",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "welsh_gofannon",
+    "notes": "Full sibling — shares the same attested parentage (Dôn) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "welsh_gwyn_ap_nudd",
@@ -216516,7 +219414,39 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Mother of waters and of the orisa; protector of women and children."
+  "notes": "Mother of waters and of the orisa; protector of women and children.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "eshu",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "obatala",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oduduwa",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "orunmila",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "osanyin",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "oshun",
+    "notes": "Full sibling — shares the same attested parentage (Olodumare) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zapotec_cocijo",
@@ -218455,7 +221385,39 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Amesha Spenta of Immortality; guardian of plants, paired with her sister Haurvatat."
+  "notes": "Amesha Spenta of Immortality; guardian of plants, paired with her sister Haurvatat.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_angra_mainyu",
@@ -218848,7 +221810,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Amesha Spenta of Best Truth and righteousness; guardian of fire and the asha principle."
+  "notes": "Amesha Spenta of Best Truth and righteousness; guardian of fire and the asha principle.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_ameretat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_haurvatat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_atar",
@@ -218961,7 +221960,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Yazata of fire, called the Son of Ahura Mazda; the sacred flame at the center of Zoroastrian worship."
+  "notes": "Yazata of fire, called the Son of Ahura Mazda; the sacred flame at the center of Zoroastrian worship.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_ameretat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_haurvatat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_azhi_dahaka",
@@ -219313,7 +222349,39 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Amesha Spenta of Wholeness and Health; guardian of the waters, paired with her sister Ameretat."
+  "notes": "Amesha Spenta of Wholeness and Health; guardian of the waters, paired with her sister Ameretat.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_kay_khosrow",
@@ -219725,7 +222793,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Amesha Spenta of Desirable Dominion and divine sovereignty; guardian of metals."
+  "notes": "Amesha Spenta of Desirable Dominion and divine sovereignty; guardian of metals.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_ameretat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_haurvatat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_mithra",
@@ -220330,7 +223435,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Amesha Spenta of Holy Devotion; the only female of the six, guardian of the earth."
+  "notes": "Amesha Spenta of Holy Devotion; the only female of the six, guardian of the earth.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_ameretat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_haurvatat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_spenta_mainyu",
@@ -220442,7 +223584,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "The Holy or Bounteous Spirit of Ahura Mazda, twin to Angra Mainyu, through whom good creation arises."
+  "notes": "The Holy or Bounteous Spirit of Ahura Mazda, twin to Angra Mainyu, through whom good creation arises.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_ameretat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_haurvatat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_vohu_manah",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_sraosha",
@@ -221309,7 +224488,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Amesha Spenta of the Good Mind; first emanation of Ahura Mazda, guardian of cattle."
+  "notes": "Amesha Spenta of the Good Mind; first emanation of Ahura Mazda, guardian of cattle.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_ameretat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_asha_vahishta",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_atar",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_haurvatat",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_khshathra_vairya",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_armaiti",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "zoroastrian_spenta_mainyu",
+    "notes": "Full sibling — shares the same attested parentage (Ahura Mazda) per the figures' cited genealogy."
+   }
+  ]
  },
  {
   "id": "zoroastrian_yima",
