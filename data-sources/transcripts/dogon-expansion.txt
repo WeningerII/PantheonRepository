@@ -1,0 +1,1302 @@
+DOGON PANTHEON EXPANSION — verify-first authoring transcript
+=============================================================
+
+Scope: well-attested Dogon (Mali, West Africa) figures NOT already in the corpus.
+Already present (NOT re-authored): dogon_amma, dogon_lebe, dogon_nommo, dogon_ogo.
+
+Core authorities cited at WORK level (no invented page numbers):
+  - Marcel Griaule, Dieu d'eau: entretiens avec Ogotemmêli (1948) / Conversations with Ogotemmêli (Eng. ed. 1965)
+  - Marcel Griaule & Germaine Dieterlen, Le renard pâle (Paris, 1965)
+
+VERIFICATION SUMMARY (WebSearch, 2026-06):
+  * The Smith / Master of Fire (le Forgeron): the first ancestor who, having received Amma's
+    granary, stole a coal of the Sun from the celestial smithy, hid it in his bellows, fled the
+    Nommo's lightning/thunderbolts and slid down the rainbow to bring fire and the crafts to earth;
+    the granary fell after him and burst, scattering people, animals and seeds. Distinct from Nommo
+    and from the slain seventh ancestor (the Smith is the agent who instigated the seventh's death).
+    [Griaule, Conversations with Ogotemmêli (1948/1965)]
+  * The Eight Ancestors: four twin couples (eight beings, also called Nommo) drawn from the body of
+    the sacrificed Nommo, sent down in the ark with all that humankind would need; ancestors of the
+    eight families / four lineages (Dyon, Ono, Arou, Domno). NOT individually named as a stable set
+    in the popular sources beyond the four "Sérou" eponyms — authored as ONE collective figure.
+    [Griaule, Conversations with Ogotemmêli (1948/1965); Griaule & Dieterlen, Le renard pâle (1965)]
+  * Dyongou Sérou (Dyougou Sérou): named first ancestor; received the first/primitive Word; by
+    speaking the language of one world in the other (and by an incest/transgression motif) he broke
+    the order and became the first to enter DEATH; his death is re-enacted in the great Sigui rite,
+    origin of the masks. Founder of a lineage. [Griaule & Dieterlen, Le renard pâle (1965)]
+  * Binou Sérou (Binu Seru): named immortal ancestor "of the time before death"; eponym of the Binu
+    totemic cult; founder of the Ono lineage; manifests to descendants as the clan totem animal and
+    is served at painted Binu shrines with millet and blood offerings.
+    [Griaule & Dieterlen, Le renard pâle (1965); Dieterlen, on the Binu/clan-ancestor cult]
+  * The Yeban (Yéban): underworld earth-genies — small beings with big heads, discoloured bodies and
+    frail limbs — engendered (incestuously, like himself) by Ogo the Pale Fox; they hid in holes of
+    the earth; they in turn engendered the Andoumboulou. [Griaule & Dieterlen, Le renard pâle (1965)]
+  * The Andoumboulou: imperfect/failed first little humans, smaller than the Yeban, dwellers in
+    earth-holes who could turn into serpents; the Dogon trace the origin of the masks and of the
+    Sigui to them. [Griaule & Dieterlen, Le renard pâle (1965)]
+
+REJECTED: "Dada" (not attested as a named Dogon figure); a separate "Yurugu" (= dogon_ogo, who BECOMES
+the Pale Fox — would duplicate); a separate "Lébé Sérou" (= existing dogon_lebe); "Amma Sérou" as a
+standalone (thinly distinct from creator Amma and name-colliding — folded into the Eight Ancestors).
+
+KINSHIP NOTE: Le renard pâle has the eight ancestors drawn from the body of the sacrificed Nommo;
+the Sérou ancestors (incl. the existing Lébé Sérou = dogon_lebe) are therefore set as children of
+dogon_nommo here and as siblings of one another and of dogon_lebe. The Yeban descend from dogon_ogo;
+the Andoumboulou descend from the Yeban.
+
+```json
+[
+ {
+  "id": "dogon_smith",
+  "name": {
+   "primary": "The Smith (Master of Fire)",
+   "alt": [
+    "le Forgeron",
+    "the Blacksmith",
+    "First Ancestor",
+    "Master of Fire"
+   ],
+   "transliterations": {
+    "dogon": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "smithcraft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "steal-celestial-fire",
+    "name": "Steal a coal of the Sun from the celestial smithy",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "fire",
+     "theft",
+     "primordial"
+    ],
+    "notes": "Hides the glowing coal in his bellows and carries it from heaven.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "descend-on-granary",
+    "name": "Descend to earth on Amma's granary down the rainbow",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "descent",
+     "rainbow",
+     "creation-of-humankind"
+    ],
+    "notes": "Evades the Nommo's lightning and thunderbolts; the granary bursts on landing and scatters people, animals and seeds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "found-smithing",
+    "name": "Bring fire, smithing and the crafts to humankind",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "smithcraft",
+     "fire",
+     "culture-hero"
+    ],
+    "notes": "His arms and legs were broken at the joints in the fall, giving humans their working limbs; ancestor of the smith caste.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "smith-bellows",
+    "name": "Smith's bellows",
+    "kind": "tool",
+    "role": "Vessel in which the stolen coal of the Sun is hidden and carried down from the sky.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "smith-hammer-anvil",
+    "name": "Smith's hammer and anvil",
+    "kind": "tool",
+    "role": "Implements of the celestial smithy and of the founded smith-craft; the seventh ancestor's head lay under the anvil.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "celestial-granary",
+    "name": "Amma's granary",
+    "kind": "structure",
+    "role": "World-shaped clay-lined basket given by Amma; ridden down from heaven, it bursts and disperses the contents of creation.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "kin",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "notes": "Counted among / the first of the eight primordial ancestors drawn from the Nommo's body."
+   },
+   {
+    "kind": "enemy",
+    "personId": "dogon_nommo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "notes": "The Smith instigates the killing of the seventh ancestor (a Nommo), and the Nommo hurl lightning and thunderbolts at him as he flees with the stolen fire."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Dieu d'eau: entretiens avec Ogotemmêli (Paris, 1948)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Master of Fire",
+    "original": "Master of Fire",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "Master of Fire",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Dieu d'eau: entretiens avec Ogotemmêli (Paris, 1948)"
+     }
+    ]
+   },
+   {
+    "epithetId": "the Smith of the first descent",
+    "original": "the Smith of the first descent",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "the Smith of the first descent",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Dieu d'eau: entretiens avec Ogotemmêli (Paris, 1948)"
+     }
+    ]
+   }
+  ],
+  "notes": "The primordial smith and first ancestor of Ogotemmêli's account: thief of celestial fire, rider of the bursting granary, bringer of smithing and the broken-jointed human body. Distinct from the Nommo and from the slain seventh ancestor."
+ },
+ {
+  "id": "dogon_eight_ancestors",
+  "name": {
+   "primary": "The Eight Ancestors",
+   "alt": [
+    "the Eight Nommo Ancestors",
+    "the four twin couples",
+    "les huit ancêtres",
+    "the eight families"
+   ],
+   "transliterations": {
+    "dogon": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "weaving",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "born-of-sacrificed-nommo",
+    "name": "Be drawn as four twin couples from the body of the sacrificed Nommo",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "ancestors",
+     "primordial",
+     "twinness"
+    ],
+    "notes": "Eight beings (also called Nommo), four male and four female twins, the seed of humankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "descend-in-ark",
+    "name": "Descend to earth in the ark with all that humankind would need",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "descent",
+     "ark",
+     "creation-of-humankind"
+    ],
+    "notes": "Brought down by a Nommo together with animals, plants, minerals and the crafts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "found-the-lineages",
+    "name": "Found the eight families and the Dogon lineages",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "scopeTags": [
+     "ancestral-origins",
+     "lineage",
+     "kinship"
+    ],
+    "notes": "The four Sérou eponyms (Amma, Lébé, Binou, Dyongou Sérou) head the Dyon, Ono, Arou and Domno lineages.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ancestral-ark",
+    "name": "The celestial ark",
+    "kind": "vehicle",
+    "role": "Vessel in which the eight ancestors descend with the contents of creation.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "eighty-grains",
+    "name": "The eight seed-grains",
+    "kind": "object",
+    "role": "The cultivated seeds the ancestors carry to earth, eaten in order in the agrarian myth.",
+    "term": {
+     "value": "po",
+     "script": "Dogon",
+     "rom": "po"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou is one of the eight ancestors / four Sérou eponyms."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_dyongou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Dyongou Sérou is one of the eight ancestors."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_binou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Binou Sérou is one of the eight ancestors."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Collective figure for the eight primordial ancestors — four male/female twin couples drawn from the sacrificed Nommo, sent down in the ark, ancestors of the eight families and four Dogon lineages. Authored as one entity because the sources treat them as a set rather than eight stably individuated names."
+ },
+ {
+  "id": "dogon_dyongou_serou",
+  "name": {
+   "primary": "Dyongou Sérou",
+   "alt": [
+    "Dyougou Sérou",
+    "Dyongou Serou",
+    "Yougou Sérou",
+    "Dyon Sérou"
+   ],
+   "transliterations": {
+    "dogon": "Dyongou Sérou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "speech-word",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-first-word",
+    "name": "Receive and utter the first, primitive Word",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "speech-word",
+     "language",
+     "primordial"
+    ],
+    "notes": "Endowed with the earliest human language.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "bring-death",
+    "name": "Become the first being to enter death",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "death",
+     "transgression",
+     "origin"
+    ],
+    "notes": "By speaking the language of one world in the other (and an incest/transgression motif) he breaks the order and, trapped between worlds, originates death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "origin-of-masks",
+    "name": "Be commemorated by the masks and the Sigui rite",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "masks",
+     "ritual",
+     "sigui"
+    ],
+    "notes": "His death is re-enacted in the sixty-yearly Sigui and is the mythic origin of the great mask.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "great-mask",
+    "name": "The Great Mask (imina na)",
+    "kind": "regalia",
+    "role": "Serpent-form wooden mask carved and renewed for the Sigui, the receptacle of the first dead ancestor's life-force.",
+    "term": {
+     "value": "imina na",
+     "script": "Dogon",
+     "rom": "imina na"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_binou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Fellow Sérou ancestor among the eight; founders of sibling lineages."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou (= dogon_lebe) is a fellow Sérou ancestor among the eight."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "One of the eight primordial ancestors."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "the first dead",
+    "original": "the first dead",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "the first dead",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ]
+   },
+   {
+    "epithetId": "ancestor of the great mask",
+    "original": "ancestor of the great mask",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "ancestor of the great mask",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ]
+   }
+  ],
+  "notes": "Named first ancestor and Sérou eponym: bearer of the first Word, the first being to die after transgressing the order between worlds; his death founds the masks and the Sigui rite."
+ },
+ {
+  "id": "dogon_binou_serou",
+  "name": {
+   "primary": "Binou Sérou",
+   "alt": [
+    "Binu Seru",
+    "Binou Serou",
+    "Binu Sérou"
+   ],
+   "transliterations": {
+    "dogon": "Binou Sérou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestors",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Binu",
+     "script": "Dogon",
+     "rom": "Binu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "totemism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "deathless-ancestor",
+    "name": "Belong to the immortal ancestors of the time before death",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "immortality",
+     "ancestors",
+     "primordial"
+    ],
+    "notes": "A Binu ancestor who lived before death entered the world and did not die.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "manifest-as-totem",
+    "name": "Manifest to descendants as the clan totem animal",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "totemism",
+     "epiphany",
+     "clan"
+    ],
+    "notes": "Appears as the animal that aided the clan at its founding or migration, becoming its totem; intercedes for the lineage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "found-ono-lineage",
+    "name": "Found the Ono lineage and the Binu cult",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "scopeTags": [
+     "ancestral-origins",
+     "lineage",
+     "cult"
+    ],
+    "notes": "Eponym of the Binu totemic order, served at painted shrines by Binu priests.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "binu-shrine",
+    "name": "Binu shrine (gina)",
+    "kind": "structure",
+    "role": "Sanctuary with a painted facade where the immortal ancestor is honoured with millet porridge and blood at planting and in need.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_dyongou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Fellow Sérou ancestor among the eight; founders of sibling lineages."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou (= dogon_lebe) is a fellow Sérou ancestor among the eight."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "One of the eight primordial ancestors."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "cult": "Eponymous immortal ancestor of the Binu totemic order; venerated through clan Binu shrines (gina) by Binu priests with offerings of millet porridge and sacrificial blood at sowing and whenever the ancestor's intercession is sought.",
+  "notes": "Named Sérou ancestor of the time before death and eponym of the Binu cult; founder of the Ono lineage who reveals himself as the clan's totem animal. Authored as the figure behind the Binu institution rather than the institution itself."
+ },
+ {
+  "id": "dogon_yeban",
+  "name": {
+   "primary": "The Yeban",
+   "alt": [
+    "Yéban",
+    "Yebans",
+    "les Yéban"
+   ],
+   "transliterations": {
+    "dogon": "Yéban"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_ogo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yéban",
+     "script": "Dogon",
+     "rom": "Yeban"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dwell-in-earth-holes",
+    "name": "Dwell hidden in the holes and caves of the earth",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "underworld",
+     "earth",
+     "concealment"
+    ],
+    "notes": "Misshapen genies — big heads, discoloured bodies, frail limbs — who hide underground out of shame.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "engender-andoumboulou",
+    "name": "Engender the Andoumboulou",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "scopeTags": [
+     "procreation",
+     "underworld",
+     "origin"
+    ],
+    "notes": "Bring forth the still-smaller earth-spirits, the Andoumboulou.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "ancestor of",
+    "personId": "dogon_andoumboulou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "The Yeban engender the Andoumboulou."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Collective figure for the Yeban — underworld earth-genies engendered by Ogo the Pale Fox, misshapen and incestuous like their father; they hide in the earth and engender the Andoumboulou."
+ },
+ {
+  "id": "dogon_andoumboulou",
+  "name": {
+   "primary": "The Andoumboulou",
+   "alt": [
+    "Andumbulu",
+    "les Andoumboulou",
+    "the little people"
+   ],
+   "transliterations": {
+    "dogon": "Andoumboulou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_yeban"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Andoumboulou",
+     "script": "Dogon",
+     "rom": "Andoumboulou"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "imperfect-first-humans",
+    "name": "Be the imperfect, failed first humans",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "proto-humanity",
+     "imperfection",
+     "earth"
+    ],
+    "notes": "Small earth-dwellers, smaller even than the Yeban, who lived before true humankind and did not yet know death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "become-serpents",
+    "name": "Transform into serpents to enter the caves of the earth",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "metamorphosis",
+     "serpent",
+     "underworld"
+    ],
+    "notes": "Could turn into serpents to pass into the world of the Yeban.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "origin-of-masks-andoumboulou",
+    "name": "Be the origin of the masks and the Sigui",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "masks",
+     "ritual",
+     "origin"
+    ],
+    "notes": "The Dogon attribute the first masks and the Sigui dance to the Andoumboulou.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "andoumboulou-mask",
+    "name": "Andoumboulou (dwarf) mask",
+    "kind": "regalia",
+    "role": "Squat masquerade figure danced in the mask society, recalling the little earth-people from whom the masks derive.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Collective figure for the Andoumboulou — the imperfect first little humans engendered by the Yeban; earth-dwellers who could become serpents and from whom the Dogon derive the masks and the Sigui. Parented by dogon_yeban (the reciprocal 'ancestor of' edge sits on the Yeban)."
+ }
+]
+```

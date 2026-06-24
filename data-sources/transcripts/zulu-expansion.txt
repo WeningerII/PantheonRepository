@@ -1,0 +1,406 @@
+ZULU (Southern Africa) pantheon expansion — verify-first authoring transcript.
+
+Scope: add well-attested Zulu/Nguni figures NOT already in the corpus.
+Already present (NOT re-authored): zulu_unkulunkulu, zulu_umvelinqangi, zulu_nomkhubulwane.
+
+Candidate adjudication (verified via WebSearch; WORK-level citations only, no page numbers):
+  - uMamlambo  → AUTHOR. Distinct female river-divinity / snake of fortune of the Zulu &
+      other Nguni peoples; "Mother of the River" (umamlambo). Shapeshifting river-snake
+      (serpent with a horse-like head, or a woman) who bestows wealth/good fortune in
+      exchange for sacrifice; also a diviner's familiar acquired through ukuthwala.
+      Sources: Felicity Wood, "From rain-bringer to wealth-giver: Changing forms of the
+      snake in southern African belief systems," Tydskrif vir Letterkunde 62(3) (2025);
+      Berglund, Zulu Thought-Patterns and Symbolism (1976); Wikipedia, Mamlambo.
+  - iNkanyamba → AUTHOR. Distinct great storm/tornado serpent of the rivers and waterfalls
+      (esp. the pool of Howick Falls on the Umgeni; also the Umkomazi system) of the Zulu
+      & Xhosa; "snake in the sky," cause of tornadoes/hail, praised as iNkosi yamanzi
+      ("Lord of the Waters"). A rain-serpent of the type documented in Zulu rain symbolism;
+      rock-art of equine-headed "rain serpents" is read as antecedent.
+      Sources: Berglund, Zulu Thought-Patterns and Symbolism (1976); Wikipedia, Inkanyamba.
+  - Mbaba Mwana Waresa → REJECT (duplicate). Sources explicitly equate her with
+      Nomkhubulwane/iNkosazana (rain, rainbow, harvest, beer) = zulu_nomkhubulwane.
+  - uHlanga / uThlanga → REJECT (not a named figure). The primal reed-bed / marsh of origin
+      (a place/origin-concept), from which Unkulunkulu grew and broke off humankind; already
+      carried as the term "uhlanga" inside zulu_unkulunkulu. Callaway treats it as "a reed."
+  - Tokoloshe / Tikoloshe → REJECT (below tier). A witch's familiar / mischievous water-imp
+      of lower folklore (Berglund 1976), not a deity or ancestor; outside the registry's
+      deity/ancestor tier.
+
+Both authored figures are kinless Zulu nature-divinities (no attested parentage or symmetric
+kin) → flagged SOLITARY. No within-batch symmetric relations; no RECIPROCAL-NEEDED edges.
+
+```json
+[
+ {
+  "id": "zulu_umamlambo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "uMamlambo",
+   "alt": [
+    "Mamlambo",
+    "Mother of the River"
+   ],
+   "transliterations": {
+    "zulu": "uMamlambo"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zulu",
+  "primaryTradition": "Zulu",
+  "sex": "female",
+  "vitalStatus": null,
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "rivers-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uMamlambo",
+     "script": "Zulu",
+     "rom": "uMamlambo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   },
+   {
+    "sphereId": "wealth-fortune",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "umnotho",
+     "script": "Zulu",
+     "rom": "umnotho"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-wealth-fortune",
+    "name": "Bestows wealth and good fortune for a price",
+    "term": {
+     "value": "ukuthwala",
+     "script": "Zulu",
+     "rom": "ukuthwala"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "wealth",
+     "fortune",
+     "exchange"
+    ],
+    "notes": "Grants riches to those who appease her, but demands sacrifice (sometimes of human life from the beneficiary's own family); acquired as a familiar through the practice of ukuthwala.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   },
+   {
+    "id": "shapeshift-river-snake",
+    "name": "Shape-shifts between a great river-snake and a woman",
+    "term": {
+     "value": "uMamlambo",
+     "script": "Zulu",
+     "rom": "uMamlambo"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "shapeshifting",
+     "water",
+     "serpent"
+    ],
+    "notes": "Appears as a giant river-serpent with a horse-like head and glistening tail, or as a seductive woman (and in some accounts a mermaid), to draw in those who seek her favour.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     }
+    ]
+   },
+   {
+    "id": "serve-diviner-familiar",
+    "name": "Serves diviners as a divining and wealth-granting familiar",
+    "term": {
+     "value": "isangoma",
+     "script": "Zulu",
+     "rom": "isangoma"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "divination",
+     "familiar"
+    ],
+    "notes": "Diviners (izangoma) call upon uMamlambo in ritual to read omens and to obtain wealth for clients; the spirit attaches to a person, commonly in the form of a snake.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "umamlambo-familiar-snake",
+    "name": "The attached snake-familiar",
+    "kind": "creature",
+    "role": "The serpent form in which uMamlambo attaches herself to a beneficiary through ukuthwala, binding wealth to sacrifice.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Mother of the River",
+    "original": "Mother of the River",
+    "language": "zulu",
+    "contextTag": null,
+    "notes": "Mother of the River",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   }
+  ],
+  "iconography": [
+   {
+    "motif": "Giant river-serpent with a horse-like head, glistening scaled tail, and glowing eyes",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zulu/Nguni female river-divinity — 'Mother of the River' — a shape-shifting serpent (or woman) of the waters who bestows wealth and fortune in return for sacrifice, and serves diviners as a familiar. SOLITARY: a kinless water-spirit with no attested parentage or kin."
+ },
+ {
+  "id": "zulu_inkanyamba",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "iNkanyamba",
+   "alt": [
+    "Inkanyamba",
+    "iNkosi yamanzi"
+   ],
+   "transliterations": {
+    "zulu": "iNkanyamba"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zulu",
+  "primaryTradition": "Zulu",
+  "sex": "male",
+  "vitalStatus": null,
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "storm-tornado",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "iNkanyamba",
+     "script": "Zulu",
+     "rom": "iNkanyamba"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   },
+   {
+    "sphereId": "rivers-waterfalls",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "iNkosi yamanzi",
+     "script": "Zulu",
+     "rom": "iNkosi yamanzi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-tornado-storm",
+    "name": "Rises into the sky as a tornado and brings storm and hail",
+    "term": {
+     "value": "isikhwishikhwishi",
+     "script": "Zulu",
+     "rom": "isikhwishikhwishi"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "storm",
+     "tornado",
+     "hail",
+     "weather"
+    ],
+    "notes": "A great serpent whose coiling body reaches from heaven to earth; the root cause of tornadoes, said to take to the sky each year — as a giant whirlwind — in search of its mate.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   },
+   {
+    "id": "dwell-command-waters",
+    "name": "Dwells in and commands the deep river-pools and waterfalls",
+    "term": {
+     "value": "iNkosi yamanzi",
+     "script": "Zulu",
+     "rom": "iNkosi yamanzi"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "water",
+     "rivers",
+     "waterfalls"
+    ],
+    "notes": "'Lord of the Waters'; said to inhabit the pool of Howick Falls on the Umgeni and the Umkomazi river system in KwaZulu-Natal, holding authority over rivers and waterfalls.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "epithetId": "iNkosi yamanzi (Lord of the Waters)",
+    "original": "iNkosi yamanzi (Lord of the Waters)",
+    "language": "zulu",
+    "contextTag": null,
+    "notes": "iNkosi yamanzi (Lord of the Waters)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   }
+  ],
+  "iconography": [
+   {
+    "motif": "Giant serpent with an equine (horse- or zebra-like) head, mane, and fins; sometimes winged or horned",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   }
+  ],
+  "cult": {
+   "centers": [
+    "Howick Falls (Umgeni River)",
+    "Umkomazi River system, KwaZulu-Natal"
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, Inkanyamba"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zulu/Xhosa great storm-serpent of the rivers and waterfalls — the 'snake in the sky' that rises as a tornado and brings storm and hail; 'Lord of the Waters' (iNkosi yamanzi), dwelling in the pool of Howick Falls. SOLITARY: a kinless rain/storm-serpent with no attested parentage or kin."
+ }
+]
+```

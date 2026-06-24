@@ -50499,7 +50499,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Androgynous water deity of speech, light and order, born from Bemba's breath; master of the waters."
+  "notes": "Androgynous water deity of speech, light and order, born from Bemba's breath; master of the waters.",
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "bambara_teliko",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Germaine Dieterlen, Essai sur la religion bambara (1951); Harold Scheub, A Dictionary of African Mythology (2000)"
+     }
+    ],
+    "notes": "Faro, master of water and the Word, and Teliko, genie of the air/wind, are cast as antagonists in the ordering of the world."
+   }
+  ]
  },
  {
   "id": "bambara_mousso_koroni",
@@ -50856,6 +50869,366 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Creator god manifest as grain and acacia; head of the fourfold creative quaternity."
+ },
+ {
+  "id": "bambara_teliko",
+  "name": {
+   "primary": "Teliko",
+   "alt": [
+    "Telico",
+    "Téliko"
+   ],
+   "transliterations": {
+    "bamanankan": "Teliko"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bambara",
+  "primaryTradition": "Bambara",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "bambara_yo"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "air-fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Teliko",
+     "script": "Bamanankan",
+     "rom": "Teliko"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "master-of-air",
+    "name": "Master the air and the breath",
+    "term": {
+     "value": "fiyen",
+     "script": "Bamanankan",
+     "rom": "fiyen"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "air",
+     "wind",
+     "breath",
+     "cosmogonic"
+    ],
+    "notes": "Teliko is the spirit/genie of the air; all wind-spirits are spoken of as teliko, as water-spirits in general are spoken of as faro.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "give-life-to-creatures",
+    "name": "Give life and breath to creatures",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "life-giving",
+     "breath",
+     "creation"
+    ],
+    "notes": "As spirit of the air Teliko quickens creatures with breath in the work of creation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "beget-aquatic-twins",
+    "name": "Conceive the aquatic twins, ancestors of the fishermen and the first men",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "generative",
+     "twins",
+     "ancestry",
+     "creation"
+    ],
+    "notes": "Teliko conceives a pair of aquatic twins reckoned the ancestors of the fishermen — the first men. The twins are unnamed in the sources and so are not registered as separate figures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "bambara_faro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000); Dieterlen, Essai sur la religion bambara (Paris, 1951)"
+     }
+    ],
+    "notes": "Teliko (air) and Faro (water) together order the world, but Teliko is also cast as Faro's antagonist; the air-spirit's striving against the water-master is a recurrent motif. RECIPROCAL-NEEDED on existing corpus figure bambara_faro."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "spirit/genie of the air",
+    "original": "spirit/genie of the air",
+    "language": "bambara",
+    "contextTag": null,
+    "notes": "spirit/genie of the air",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Teliko: the spirit/genie of the AIR and wind, master of the breath, one of the three creative beings begotten by Yo (with Faro and Pemba). He gives life to creatures and conceives the aquatic twins who are the ancestors of the fishermen — the first men. He works with Faro to order the world but is also cast as Faro's antagonist (air against water). In Mande lore wind-spirits in general are called teliko, paralleling faro for water-spirits."
+ },
+ {
+  "id": "bambara_yo",
+  "name": {
+   "primary": "Yo",
+   "alt": [
+    "Yo, the Creative Spirit"
+   ],
+   "transliterations": {
+    "bamanankan": "Yo"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bambara",
+  "primaryTradition": "Bambara",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yo",
+     "script": "Bamanankan",
+     "rom": "Yo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "sphereId": "speech-word",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yo",
+     "script": "Bamanankan",
+     "rom": "Yo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "primordial-sound",
+    "name": "Sound the first point of being from which the cosmos issues",
+    "term": {
+     "value": "Yo",
+     "script": "Bamanankan",
+     "rom": "Yo"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "cosmogonic",
+     "primordial",
+     "sound",
+     "creation"
+    ],
+    "notes": "In the beginning there is only the void; the universe begins from a single point of sound, Yo, from which everything — including human consciousness — proceeds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "structure-heaven-earth",
+    "name": "Create the structure of the heavens, the earth and all things living and non-living",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "cosmogonic",
+     "creation",
+     "world-ordering"
+    ],
+    "notes": "The primeval creative spirit shapes the framework of the cosmos before the work is parcelled out among the begotten creator-figures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "beget-creators",
+    "name": "Bring into being the creator-figures Faro, Pemba and Teliko",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "cosmogonic",
+     "generative",
+     "creation"
+    ],
+    "notes": "From Yo issue the three creative beings — Faro (water/Word), Pemba (earth) and Teliko (air) — who carry the creation forward.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "creator of",
+    "personId": "bambara_faro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "notes": "Yo begets Faro, the water-spirit and master of the Word; RECIPROCAL-NEEDED on existing corpus figure bambara_faro."
+   },
+   {
+    "kind": "creator of",
+    "personId": "bambara_pemba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "notes": "Yo begets Pemba, who whirls in space then forms the earth; RECIPROCAL-NEEDED on existing corpus figure bambara_pemba. (The corpus also records Pemba as self-created in a parallel version of the cosmogony.)"
+   },
+   {
+    "kind": "creator of",
+    "personId": "bambara_teliko",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "notes": "Yo begets Teliko, the air-spirit; mirrored within this batch by Teliko.parentIds = [bambara_yo]."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Yo (the Creative Spirit): in the Bambara cosmogony the void's first point of being, a primordial creative SOUND from which the heavens, the earth, all beings and human consciousness proceed; it brings into being the three creator-figures Faro (water/Word), Pemba (earth) and Teliko (air). Distinct from Pemba: Yo precedes and begets Pemba. Bambara creation accounts exist in several conflicting versions; this figure follows the version recorded in Scheub's A Dictionary of African Mythology (2000)."
  },
  {
   "id": "banyaruanda_gihanga",
@@ -73416,6 +73789,862 @@ const NEW_FIGURES = [
   "notes": "Genderless Dogon creator and sky god; maker of the world-egg and the Nommo."
  },
  {
+  "id": "dogon_andoumboulou",
+  "name": {
+   "primary": "The Andoumboulou",
+   "alt": [
+    "Andumbulu",
+    "les Andoumboulou",
+    "the little people"
+   ],
+   "transliterations": {
+    "dogon": "Andoumboulou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_yeban"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Andoumboulou",
+     "script": "Dogon",
+     "rom": "Andoumboulou"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "imperfect-first-humans",
+    "name": "Be the imperfect, failed first humans",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "proto-humanity",
+     "imperfection",
+     "earth"
+    ],
+    "notes": "Small earth-dwellers, smaller even than the Yeban, who lived before true humankind and did not yet know death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "become-serpents",
+    "name": "Transform into serpents to enter the caves of the earth",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "metamorphosis",
+     "serpent",
+     "underworld"
+    ],
+    "notes": "Could turn into serpents to pass into the world of the Yeban.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "origin-of-masks-andoumboulou",
+    "name": "Be the origin of the masks and the Sigui",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "masks",
+     "ritual",
+     "origin"
+    ],
+    "notes": "The Dogon attribute the first masks and the Sigui dance to the Andoumboulou.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "andoumboulou-mask",
+    "name": "Andoumboulou (dwarf) mask",
+    "kind": "regalia",
+    "role": "Squat masquerade figure danced in the mask society, recalling the little earth-people from whom the masks derive.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Collective figure for the Andoumboulou — the imperfect first little humans engendered by the Yeban; earth-dwellers who could become serpents and from whom the Dogon derive the masks and the Sigui. Parented by dogon_yeban (the reciprocal 'ancestor of' edge sits on the Yeban)."
+ },
+ {
+  "id": "dogon_binou_serou",
+  "name": {
+   "primary": "Binou Sérou",
+   "alt": [
+    "Binu Seru",
+    "Binou Serou",
+    "Binu Sérou"
+   ],
+   "transliterations": {
+    "dogon": "Binou Sérou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestors",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Binu",
+     "script": "Dogon",
+     "rom": "Binu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "totemism",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "deathless-ancestor",
+    "name": "Belong to the immortal ancestors of the time before death",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "immortality",
+     "ancestors",
+     "primordial"
+    ],
+    "notes": "A Binu ancestor who lived before death entered the world and did not die.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "manifest-as-totem",
+    "name": "Manifest to descendants as the clan totem animal",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "totemism",
+     "epiphany",
+     "clan"
+    ],
+    "notes": "Appears as the animal that aided the clan at its founding or migration, becoming its totem; intercedes for the lineage.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "found-ono-lineage",
+    "name": "Found the Ono lineage and the Binu cult",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "scopeTags": [
+     "ancestral-origins",
+     "lineage",
+     "cult"
+    ],
+    "notes": "Eponym of the Binu totemic order, served at painted shrines by Binu priests.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "binu-shrine",
+    "name": "Binu shrine (gina)",
+    "kind": "structure",
+    "role": "Sanctuary with a painted facade where the immortal ancestor is honoured with millet porridge and blood at planting and in need.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_dyongou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Fellow Sérou ancestor among the eight; founders of sibling lineages."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou (= dogon_lebe) is a fellow Sérou ancestor among the eight."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "One of the eight primordial ancestors."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "cult": "Eponymous immortal ancestor of the Binu totemic order; venerated through clan Binu shrines (gina) by Binu priests with offerings of millet porridge and sacrificial blood at sowing and whenever the ancestor's intercession is sought.",
+  "notes": "Named Sérou ancestor of the time before death and eponym of the Binu cult; founder of the Ono lineage who reveals himself as the clan's totem animal. Authored as the figure behind the Binu institution rather than the institution itself."
+ },
+ {
+  "id": "dogon_dyongou_serou",
+  "name": {
+   "primary": "Dyongou Sérou",
+   "alt": [
+    "Dyougou Sérou",
+    "Dyongou Serou",
+    "Yougou Sérou",
+    "Dyon Sérou"
+   ],
+   "transliterations": {
+    "dogon": "Dyongou Sérou"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "death",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "speech-word",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "receive-first-word",
+    "name": "Receive and utter the first, primitive Word",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "speech-word",
+     "language",
+     "primordial"
+    ],
+    "notes": "Endowed with the earliest human language.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "bring-death",
+    "name": "Become the first being to enter death",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "death",
+     "transgression",
+     "origin"
+    ],
+    "notes": "By speaking the language of one world in the other (and an incest/transgression motif) he breaks the order and, trapped between worlds, originates death.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "origin-of-masks",
+    "name": "Be commemorated by the masks and the Sigui rite",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "masks",
+     "ritual",
+     "sigui"
+    ],
+    "notes": "His death is re-enacted in the sixty-yearly Sigui and is the mythic origin of the great mask.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "great-mask",
+    "name": "The Great Mask (imina na)",
+    "kind": "regalia",
+    "role": "Serpent-form wooden mask carved and renewed for the Sigui, the receptacle of the first dead ancestor's life-force.",
+    "term": {
+     "value": "imina na",
+     "script": "Dogon",
+     "rom": "imina na"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_binou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Fellow Sérou ancestor among the eight; founders of sibling lineages."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou (= dogon_lebe) is a fellow Sérou ancestor among the eight."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "One of the eight primordial ancestors."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "the first dead",
+    "original": "the first dead",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "the first dead",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ]
+   },
+   {
+    "epithetId": "ancestor of the great mask",
+    "original": "ancestor of the great mask",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "ancestor of the great mask",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ]
+   }
+  ],
+  "notes": "Named first ancestor and Sérou eponym: bearer of the first Word, the first being to die after transgressing the order between worlds; his death founds the masks and the Sigui rite."
+ },
+ {
+  "id": "dogon_eight_ancestors",
+  "name": {
+   "primary": "The Eight Ancestors",
+   "alt": [
+    "the Eight Nommo Ancestors",
+    "the four twin couples",
+    "les huit ancêtres",
+    "the eight families"
+   ],
+   "transliterations": {
+    "dogon": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "ancestral-origins",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "weaving",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "born-of-sacrificed-nommo",
+    "name": "Be drawn as four twin couples from the body of the sacrificed Nommo",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "ancestors",
+     "primordial",
+     "twinness"
+    ],
+    "notes": "Eight beings (also called Nommo), four male and four female twins, the seed of humankind.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "descend-in-ark",
+    "name": "Descend to earth in the ark with all that humankind would need",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "descent",
+     "ark",
+     "creation-of-humankind"
+    ],
+    "notes": "Brought down by a Nommo together with animals, plants, minerals and the crafts.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "found-the-lineages",
+    "name": "Found the eight families and the Dogon lineages",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "scopeTags": [
+     "ancestral-origins",
+     "lineage",
+     "kinship"
+    ],
+    "notes": "The four Sérou eponyms (Amma, Lébé, Binou, Dyongou Sérou) head the Dyon, Ono, Arou and Domno lineages.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ancestral-ark",
+    "name": "The celestial ark",
+    "kind": "vehicle",
+    "role": "Vessel in which the eight ancestors descend with the contents of creation.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "eighty-grains",
+    "name": "The eight seed-grains",
+    "kind": "object",
+    "role": "The cultivated seeds the ancestors carry to earth, eaten in order in the agrarian myth.",
+    "term": {
+     "value": "po",
+     "script": "Dogon",
+     "rom": "po"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_lebe",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou is one of the eight ancestors / four Sérou eponyms."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_dyongou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Dyongou Sérou is one of the eight ancestors."
+   },
+   {
+    "kind": "kin",
+    "personId": "dogon_binou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Binou Sérou is one of the eight ancestors."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Collective figure for the eight primordial ancestors — four male/female twin couples drawn from the sacrificed Nommo, sent down in the ark, ancestors of the eight families and four Dogon lineages. Authored as one entity because the sources treat them as a set rather than eight stably individuated names."
+ },
+ {
   "id": "dogon_lebe",
   "name": {
    "primary": "Lébé",
@@ -73548,7 +74777,42 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "First ancestor who died and was reborn as a serpent; spirit of earth, renewal and agriculture."
+  "notes": "First ancestor who died and was reborn as a serpent; spirit of earth, renewal and agriculture.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Lébé Sérou is one of the eight Sérou ancestors drawn from the sacrificed Nommo."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_dyongou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Fellow Sérou ancestor of the same primordial generation."
+   },
+   {
+    "kind": "sibling",
+    "personId": "dogon_binou_serou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "Fellow Sérou ancestor of the same primordial generation."
+   }
+  ]
  },
  {
   "id": "dogon_nommo",
@@ -73698,7 +74962,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Amphibious hermaphroditic twin ancestors created by Amma; bringers of water, speech and order."
+  "notes": "Amphibious hermaphroditic twin ancestors created by Amma; bringers of water, speech and order.",
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "dogon_smith",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1948); Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "The Nommo hurl thunderbolts at the smith-ancestor who stole a coal of the Sun from the celestial smithy; the theft and the seventh Nommo’s death set them at enmity."
+   }
+  ]
  },
  {
   "id": "dogon_ogo",
@@ -73824,6 +75101,402 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "The rebellious pale fox, lonely twin of disorder; his sand-tracks are read in divination."
+ },
+ {
+  "id": "dogon_smith",
+  "name": {
+   "primary": "The Smith (Master of Fire)",
+   "alt": [
+    "le Forgeron",
+    "the Blacksmith",
+    "First Ancestor",
+    "Master of Fire"
+   ],
+   "transliterations": {
+    "dogon": ""
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_nommo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "smithcraft",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "steal-celestial-fire",
+    "name": "Steal a coal of the Sun from the celestial smithy",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "fire",
+     "theft",
+     "primordial"
+    ],
+    "notes": "Hides the glowing coal in his bellows and carries it from heaven.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "descend-on-granary",
+    "name": "Descend to earth on Amma's granary down the rainbow",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "descent",
+     "rainbow",
+     "creation-of-humankind"
+    ],
+    "notes": "Evades the Nommo's lightning and thunderbolts; the granary bursts on landing and scatters people, animals and seeds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "found-smithing",
+    "name": "Bring fire, smithing and the crafts to humankind",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "smithcraft",
+     "fire",
+     "culture-hero"
+    ],
+    "notes": "His arms and legs were broken at the joints in the fall, giving humans their working limbs; ancestor of the smith caste.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "smith-bellows",
+    "name": "Smith's bellows",
+    "kind": "tool",
+    "role": "Vessel in which the stolen coal of the Sun is hidden and carried down from the sky.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "smith-hammer-anvil",
+    "name": "Smith's hammer and anvil",
+    "kind": "tool",
+    "role": "Implements of the celestial smithy and of the founded smith-craft; the seventh ancestor's head lay under the anvil.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   },
+   {
+    "id": "celestial-granary",
+    "name": "Amma's granary",
+    "kind": "structure",
+    "role": "World-shaped clay-lined basket given by Amma; ridden down from heaven, it bursts and disperses the contents of creation.",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "kin",
+    "personId": "dogon_eight_ancestors",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "notes": "Counted among / the first of the eight primordial ancestors drawn from the Nommo's body."
+   },
+   {
+    "kind": "enemy",
+    "personId": "dogon_nommo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "notes": "The Smith instigates the killing of the seventh ancestor (a Nommo), and the Nommo hurl lightning and thunderbolts at him as he flees with the stolen fire."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Dieu d'eau: entretiens avec Ogotemmêli (Paris, 1948)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Conversations with Ogotemmêli (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Master of Fire",
+    "original": "Master of Fire",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "Master of Fire",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Dieu d'eau: entretiens avec Ogotemmêli (Paris, 1948)"
+     }
+    ]
+   },
+   {
+    "epithetId": "the Smith of the first descent",
+    "original": "the Smith of the first descent",
+    "language": "dogon",
+    "contextTag": null,
+    "notes": "the Smith of the first descent",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule, Dieu d'eau: entretiens avec Ogotemmêli (Paris, 1948)"
+     }
+    ]
+   }
+  ],
+  "notes": "The primordial smith and first ancestor of Ogotemmêli's account: thief of celestial fire, rider of the bursting granary, bringer of smithing and the broken-jointed human body. Distinct from the Nommo and from the slain seventh ancestor."
+ },
+ {
+  "id": "dogon_yeban",
+  "name": {
+   "primary": "The Yeban",
+   "alt": [
+    "Yéban",
+    "Yebans",
+    "les Yéban"
+   ],
+   "transliterations": {
+    "dogon": "Yéban"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Dogon",
+  "primaryTradition": "Dogon",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [
+   "dogon_ogo"
+  ],
+  "temporal": {
+   "era": "mythic-ancestral"
+  },
+  "domains": [
+   {
+    "sphereId": "underworld",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yéban",
+     "script": "Dogon",
+     "rom": "Yeban"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "sphereId": "earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dwell-in-earth-holes",
+    "name": "Dwell hidden in the holes and caves of the earth",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "underworld",
+     "earth",
+     "concealment"
+    ],
+    "notes": "Misshapen genies — big heads, discoloured bodies, frail limbs — who hide underground out of shame.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   },
+   {
+    "id": "engender-andoumboulou",
+    "name": "Engender the Andoumboulou",
+    "term": {
+     "value": "",
+     "script": "Dogon",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "scopeTags": [
+     "procreation",
+     "underworld",
+     "origin"
+    ],
+    "notes": "Bring forth the still-smaller earth-spirits, the Andoumboulou.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "ancestor of",
+    "personId": "dogon_andoumboulou",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "notes": "The Yeban engender the Andoumboulou."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (Paris, 1965)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "role",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Griaule & Dieterlen, Le renard pâle (1965)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Collective figure for the Yeban — underworld earth-genies engendered by Ogo the Pale Fox, misshapen and incestuous like their father; they hide in the earth and engender the Andoumboulou."
  },
  {
   "id": "edo_esu",
@@ -219788,6 +221461,177 @@ const NEW_FIGURES = [
   "notes": "First mortal king, endowed with the divine Glory; built the Vara and ruled a deathless golden age before pride cost him the khvarenah and he was sawn in two by Spityura."
  },
  {
+  "id": "zulu_inkanyamba",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "iNkanyamba",
+   "alt": [
+    "Inkanyamba",
+    "iNkosi yamanzi"
+   ],
+   "transliterations": {
+    "zulu": "iNkanyamba"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zulu",
+  "primaryTradition": "Zulu",
+  "sex": "male",
+  "vitalStatus": null,
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "storm-tornado",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "iNkanyamba",
+     "script": "Zulu",
+     "rom": "iNkanyamba"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   },
+   {
+    "sphereId": "rivers-waterfalls",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "iNkosi yamanzi",
+     "script": "Zulu",
+     "rom": "iNkosi yamanzi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "raise-tornado-storm",
+    "name": "Rises into the sky as a tornado and brings storm and hail",
+    "term": {
+     "value": "isikhwishikhwishi",
+     "script": "Zulu",
+     "rom": "isikhwishikhwishi"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "storm",
+     "tornado",
+     "hail",
+     "weather"
+    ],
+    "notes": "A great serpent whose coiling body reaches from heaven to earth; the root cause of tornadoes, said to take to the sky each year — as a giant whirlwind — in search of its mate.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   },
+   {
+    "id": "dwell-command-waters",
+    "name": "Dwells in and commands the deep river-pools and waterfalls",
+    "term": {
+     "value": "iNkosi yamanzi",
+     "script": "Zulu",
+     "rom": "iNkosi yamanzi"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "water",
+     "rivers",
+     "waterfalls"
+    ],
+    "notes": "'Lord of the Waters'; said to inhabit the pool of Howick Falls on the Umgeni and the Umkomazi river system in KwaZulu-Natal, holding authority over rivers and waterfalls.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "epithets": [
+   {
+    "epithetId": "iNkosi yamanzi (Lord of the Waters)",
+    "original": "iNkosi yamanzi (Lord of the Waters)",
+    "language": "zulu",
+    "contextTag": null,
+    "notes": "iNkosi yamanzi (Lord of the Waters)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   }
+  ],
+  "iconography": [
+   {
+    "motif": "Giant serpent with an equine (horse- or zebra-like) head, mane, and fins; sometimes winged or horned",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ]
+   }
+  ],
+  "cult": {
+   "centers": [
+    "Howick Falls (Umgeni River)",
+    "Umkomazi River system, KwaZulu-Natal"
+   ],
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Wikipedia, Inkanyamba"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Inkanyamba"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zulu/Xhosa great storm-serpent of the rivers and waterfalls — the 'snake in the sky' that rises as a tornado and brings storm and hail; 'Lord of the Waters' (iNkosi yamanzi), dwelling in the pool of Howick Falls. SOLITARY: a kinless rain/storm-serpent with no attested parentage or kin."
+ },
+ {
   "id": "zulu_nomkhubulwane",
   "name": {
    "primary": "Nomkhubulwane",
@@ -219891,6 +221735,206 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Zulu goddess of rain, agriculture, the rainbow, and beer; the sky-princess iNkosazana."
+ },
+ {
+  "id": "zulu_umamlambo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "uMamlambo",
+   "alt": [
+    "Mamlambo",
+    "Mother of the River"
+   ],
+   "transliterations": {
+    "zulu": "uMamlambo"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zulu",
+  "primaryTradition": "Zulu",
+  "sex": "female",
+  "vitalStatus": null,
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "rivers-water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "uMamlambo",
+     "script": "Zulu",
+     "rom": "uMamlambo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   },
+   {
+    "sphereId": "wealth-fortune",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "umnotho",
+     "script": "Zulu",
+     "rom": "umnotho"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-wealth-fortune",
+    "name": "Bestows wealth and good fortune for a price",
+    "term": {
+     "value": "ukuthwala",
+     "script": "Zulu",
+     "rom": "ukuthwala"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "wealth",
+     "fortune",
+     "exchange"
+    ],
+    "notes": "Grants riches to those who appease her, but demands sacrifice (sometimes of human life from the beneficiary's own family); acquired as a familiar through the practice of ukuthwala.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   },
+   {
+    "id": "shapeshift-river-snake",
+    "name": "Shape-shifts between a great river-snake and a woman",
+    "term": {
+     "value": "uMamlambo",
+     "script": "Zulu",
+     "rom": "uMamlambo"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "shapeshifting",
+     "water",
+     "serpent"
+    ],
+    "notes": "Appears as a giant river-serpent with a horse-like head and glistening tail, or as a seductive woman (and in some accounts a mermaid), to draw in those who seek her favour.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     }
+    ]
+   },
+   {
+    "id": "serve-diviner-familiar",
+    "name": "Serves diviners as a divining and wealth-granting familiar",
+    "term": {
+     "value": "isangoma",
+     "script": "Zulu",
+     "rom": "isangoma"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "divination",
+     "familiar"
+    ],
+    "notes": "Diviners (izangoma) call upon uMamlambo in ritual to read omens and to obtain wealth for clients; the spirit attaches to a person, commonly in the form of a snake.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "umamlambo-familiar-snake",
+    "name": "The attached snake-familiar",
+    "kind": "creature",
+    "role": "The serpent form in which uMamlambo attaches herself to a beneficiary through ukuthwala, binding wealth to sacrifice.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Mother of the River",
+    "original": "Mother of the River",
+    "language": "zulu",
+    "contextTag": null,
+    "notes": "Mother of the River",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   }
+  ],
+  "iconography": [
+   {
+    "motif": "Giant river-serpent with a horse-like head, glistening scaled tail, and glowing eyes",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Felicity Wood, 'From rain-bringer to wealth-giver: Changing forms of the snake in southern African belief systems', Tydskrif vir Letterkunde 62(3) (2025)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Axel-Ivar Berglund, Zulu Thought-Patterns and Symbolism (1976)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, Mamlambo"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Zulu/Nguni female river-divinity — 'Mother of the River' — a shape-shifting serpent (or woman) of the waters who bestows wealth and fortune in return for sacrifice, and serves diviners as a familiar. SOLITARY: a kinless water-spirit with no attested parentage or kin."
  },
  {
   "id": "zulu_umvelinqangi",

@@ -1,0 +1,413 @@
+BAMBARA / BAMANA (Mali, West Africa) — pantheon expansion
+=========================================================
+
+Verify-first authoring for the Pantheon Registry. Scope: add WELL-ATTESTED Bambara
+figures that are NOT already in the corpus and that are genuinely DISTINCT named
+figures (no duplicates of the four already registered: bambara_faro, bambara_pemba,
+bambara_mousso_koroni, bambara_ndomadyiri).
+
+ROSTER DECISIONS (web-verified June 2026):
+  AUTHOR  bambara_yo      — Yo, the primordial creative sound/spirit; the void's first
+                             point, from which the cosmos and the creator-figures issue.
+                             Distinct from Pemba (Yo PRECEDES and BEGETS Pemba).
+                             Attested: Harold Scheub, "A Dictionary of African Mythology"
+                             (Oxford Univ. Press, 2000), s.v. "Yo, the Creative Spirit
+                             (Bambara/Mali)".
+  AUTHOR  bambara_teliko  — Teliko, genie/spirit of the air and wind, master of breath;
+                             conceives the aquatic twins who are the ancestors of the
+                             fishermen (the first men); works with Faro to order the
+                             world and is sometimes his antagonist. Begotten by Yo.
+                             Attested: Scheub, "A Dictionary of African Mythology" (2000);
+                             Dieterlen, "Essai sur la religion bambara" (Paris, 1951).
+
+  REJECT  Bemba / Ngala   — NOT authored: a duplicate risk. In the dominant scholarly
+                             tradition (Dieterlen 1951; Zahan, "The Bambara", 1974) the
+                             supreme creator is Bemba = Ngala = Pemba (one deity, the head
+                             of the fourfold quaternity). The corpus has ALREADY committed
+                             this identification: bambara_pemba.name.alt already contains
+                             "Bemba", "Ngala", "Pembélé", "Koni". A separate Bemba/Ngala
+                             figure would duplicate bambara_pemba.
+  REJECT  Nyale           — NOT authored: a duplicate. Nyale is a name of Muso Koroni and
+                             is ALREADY listed in bambara_mousso_koroni.name.alt.
+  REJECT  Gla / Mangala   — NOT authored: this belongs to the broader MANDE (Keita/Dogon-
+                             influenced) "eight seeds" creation narrative, not the
+                             specifically Bambara/Bamana roster, and overlaps Pemba's
+                             earth-creating role.
+  NOT AUTHORED (unnamed)  — Teliko's "aquatic twins, ancestors of the fishermen": attested
+                             only as an unnamed collective pair, with no individual names in
+                             the sources; recorded in Teliko's notes rather than as figures.
+
+KINSHIP NOTES:
+  - bambara_yo "creator of" -> bambara_faro and bambara_pemba are edges to EXISTING corpus
+    figures (non-symmetric; validator only checks resolution). Reported below for the
+    record. The existing corpus already roots Faro/Pemba differently (Faro born of Bemba's
+    breath; Pemba self-created), reflecting the genuine multi-version Bambara cosmogony, so
+    these are added as relations, NOT by overwriting parentIds.
+  - bambara_teliko "enemy" -> bambara_faro is SYMMETRIC -> RECIPROCAL-NEEDED on bambara_faro.
+  - bambara_teliko parentIds = [bambara_yo]; bambara_yo "creator of" -> bambara_teliko is
+    fully internal and mirrored within this batch.
+
+```json
+[
+ {
+  "id": "bambara_yo",
+  "name": {
+   "primary": "Yo",
+   "alt": [
+    "Yo, the Creative Spirit"
+   ],
+   "transliterations": {
+    "bamanankan": "Yo"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bambara",
+  "primaryTradition": "Bambara",
+  "sex": "other",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "creation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yo",
+     "script": "Bamanankan",
+     "rom": "Yo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "sphereId": "speech-word",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Yo",
+     "script": "Bamanankan",
+     "rom": "Yo"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "primordial-sound",
+    "name": "Sound the first point of being from which the cosmos issues",
+    "term": {
+     "value": "Yo",
+     "script": "Bamanankan",
+     "rom": "Yo"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "cosmogonic",
+     "primordial",
+     "sound",
+     "creation"
+    ],
+    "notes": "In the beginning there is only the void; the universe begins from a single point of sound, Yo, from which everything — including human consciousness — proceeds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "structure-heaven-earth",
+    "name": "Create the structure of the heavens, the earth and all things living and non-living",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "cosmogonic",
+     "creation",
+     "world-ordering"
+    ],
+    "notes": "The primeval creative spirit shapes the framework of the cosmos before the work is parcelled out among the begotten creator-figures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "beget-creators",
+    "name": "Bring into being the creator-figures Faro, Pemba and Teliko",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "cosmogonic",
+     "generative",
+     "creation"
+    ],
+    "notes": "From Yo issue the three creative beings — Faro (water/Word), Pemba (earth) and Teliko (air) — who carry the creation forward.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "creator of",
+    "personId": "bambara_faro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "notes": "Yo begets Faro, the water-spirit and master of the Word; RECIPROCAL-NEEDED on existing corpus figure bambara_faro."
+   },
+   {
+    "kind": "creator of",
+    "personId": "bambara_pemba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "notes": "Yo begets Pemba, who whirls in space then forms the earth; RECIPROCAL-NEEDED on existing corpus figure bambara_pemba. (The corpus also records Pemba as self-created in a parallel version of the cosmogony.)"
+   },
+   {
+    "kind": "creator of",
+    "personId": "bambara_teliko",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "notes": "Yo begets Teliko, the air-spirit; mirrored within this batch by Teliko.parentIds = [bambara_yo]."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Yo (the Creative Spirit): in the Bambara cosmogony the void's first point of being, a primordial creative SOUND from which the heavens, the earth, all beings and human consciousness proceed; it brings into being the three creator-figures Faro (water/Word), Pemba (earth) and Teliko (air). Distinct from Pemba: Yo precedes and begets Pemba. Bambara creation accounts exist in several conflicting versions; this figure follows the version recorded in Scheub's A Dictionary of African Mythology (2000)."
+ },
+ {
+  "id": "bambara_teliko",
+  "name": {
+   "primary": "Teliko",
+   "alt": [
+    "Telico",
+    "Téliko"
+   ],
+   "transliterations": {
+    "bamanankan": "Teliko"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Bambara",
+  "primaryTradition": "Bambara",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "bambara_yo"
+  ],
+  "temporal": {
+   "era": "primordial"
+  },
+  "domains": [
+   {
+    "sphereId": "air-fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Teliko",
+     "script": "Bamanankan",
+     "rom": "Teliko"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "sphereId": "cosmic-order",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "master-of-air",
+    "name": "Master the air and the breath",
+    "term": {
+     "value": "fiyen",
+     "script": "Bamanankan",
+     "rom": "fiyen"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "air",
+     "wind",
+     "breath",
+     "cosmogonic"
+    ],
+    "notes": "Teliko is the spirit/genie of the air; all wind-spirits are spoken of as teliko, as water-spirits in general are spoken of as faro.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "give-life-to-creatures",
+    "name": "Give life and breath to creatures",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "life-giving",
+     "breath",
+     "creation"
+    ],
+    "notes": "As spirit of the air Teliko quickens creatures with breath in the work of creation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   },
+   {
+    "id": "beget-aquatic-twins",
+    "name": "Conceive the aquatic twins, ancestors of the fishermen and the first men",
+    "term": {
+     "value": "",
+     "script": "Bamanankan",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "generative",
+     "twins",
+     "ancestry",
+     "creation"
+    ],
+    "notes": "Teliko conceives a pair of aquatic twins reckoned the ancestors of the fishermen — the first men. The twins are unnamed in the sources and so are not registered as separate figures.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "bambara_faro",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000); Dieterlen, Essai sur la religion bambara (Paris, 1951)"
+     }
+    ],
+    "notes": "Teliko (air) and Faro (water) together order the world, but Teliko is also cast as Faro's antagonist; the air-spirit's striving against the water-master is a recurrent motif. RECIPROCAL-NEEDED on existing corpus figure bambara_faro."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "spirit/genie of the air",
+    "original": "spirit/genie of the air",
+    "language": "bambara",
+    "contextTag": null,
+    "notes": "spirit/genie of the air",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Yo, the Creative Spirit (Bambara/Mali)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dieterlen, Essai sur la religion bambara (Paris, 1951)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Teliko: the spirit/genie of the AIR and wind, master of the breath, one of the three creative beings begotten by Yo (with Faro and Pemba). He gives life to creatures and conceives the aquatic twins who are the ancestors of the fishermen — the first men. He works with Faro to order the world but is also cast as Faro's antagonist (air against water). In Mande lore wind-spirits in general are called teliko, paralleling faro for water-spirits."
+ }
+]
+```
