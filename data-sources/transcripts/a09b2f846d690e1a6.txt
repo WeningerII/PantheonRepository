@@ -1794,7 +1794,14 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "Progenitor tier: typed demigod (god-made first ancestor, mortal by design, contrasted with the immortal but cursed Fam). His wife is Mbongwe."
+  "notes": "Progenitor tier: typed demigod (god-made first ancestor, mortal by design, contrasted with the immortal but cursed Fam). His wife is Mbongwe.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "fang_mbongwe",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "fang_fam",

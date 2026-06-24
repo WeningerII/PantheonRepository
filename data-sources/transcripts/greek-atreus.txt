@@ -25,90 +25,460 @@ so it is not re-authored or collided with here.
  {
   "id": "greek_tantalus",
   "schemaVersion": 2,
-  "name": { "primary": "Tantalus", "alt": ["Tantalos", "king of Sipylus", "king of Lydia"], "transliterations": { "greek": "Τάνταλος" } },
+  "name": {
+   "primary": "Tantalus",
+   "alt": [
+    "Tantalos",
+    "king of Sipylus",
+    "king of Lydia"
+   ],
+   "transliterations": {
+    "greek": "Τάνταλος"
+   }
+  },
   "type": "demigod",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_hesiod_zeus"],
-  "parentRoles": { "greek_hesiod_zeus": "paternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1400, "mythicEnd": -1330, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_hesiod_zeus"
+  ],
+  "parentRoles": {
+   "greek_hesiod_zeus": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1400,
+   "mythicEnd": -1330,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "demigod", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-to-Zeus-and-the-nymph-Plouto", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.1; Paus. 2.22.3; Hyg. Fab. 82, 155" }], "notes": "Son of Zeus by the Oceanid/nymph Plouto on Mount Sipylus in Lydia; a favourite of the gods admitted to their table." },
-   { "typeStatus": "demigod", "era": "heroic-age", "eraOrdering": 1, "startEvent": "the-transgression-at-the-divine-table", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.36-64; Apollod. Epit. 2.1" }], "notes": "In Pindar he steals nectar and ambrosia for his fellow-mortals; in the older tradition he serves up his son Pelops to test the gods' omniscience." },
-   { "typeStatus": "demigod", "vitalStatus": "dead", "era": "heroic-age", "eraOrdering": 2, "startEvent": "eternal-punishment-in-Tartarus", "sources": [{ "kind": "primary", "reference": "Hom. Od. 11.582-592; Apollod. Epit. 2.1" }], "notes": "The 'tantalizing' torment — standing in a pool that recedes from his lips beneath fruit-laden boughs the wind snatches away (Homer); a stone forever poised to fall (later tradition)." }
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Zeus-and-the-nymph-Plouto",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.1; Paus. 2.22.3; Hyg. Fab. 82, 155"
+     }
+    ],
+    "notes": "Son of Zeus by the Oceanid/nymph Plouto on Mount Sipylus in Lydia; a favourite of the gods admitted to their table."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-transgression-at-the-divine-table",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.36-64; Apollod. Epit. 2.1"
+     }
+    ],
+    "notes": "In Pindar he steals nectar and ambrosia for his fellow-mortals; in the older tradition he serves up his son Pelops to test the gods' omniscience."
+   },
+   {
+    "typeStatus": "demigod",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "eternal-punishment-in-Tartarus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.582-592; Apollod. Epit. 2.1"
+     }
+    ],
+    "notes": "The 'tantalizing' torment — standing in a pool that recedes from his lips beneath fruit-laden boughs the wind snatches away (Homer); a stone forever poised to fall (later tradition)."
+   }
   ],
   "domains": [
-   { "sphereId": "kingship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.1 — king of Sipylus/Lydia" }] },
-   { "sphereId": "hubris", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.55-64" }] },
-   { "sphereId": "wealth", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Eur. Or. 4-10 — the proverbial wealth of Tantalus" }] }
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.1 — king of Sipylus/Lydia"
+     }
+    ]
+   },
+   {
+    "sphereId": "hubris",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.55-64"
+     }
+    ]
+   },
+   {
+    "sphereId": "wealth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 4-10 — the proverbial wealth of Tantalus"
+     }
+    ]
+   }
   ],
   "faculties": [
-   { "id": "divine-table-fellowship", "name": "Fellowship at the gods' table", "inheritability": "none", "scopeTags": ["divine-favour"], "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.36-51; Apollod. Epit. 2.1" }], "notes": "Honoured to dine among the gods and share their nectar and ambrosia — the privilege he abused." }
+   {
+    "id": "divine-table-fellowship",
+    "name": "Fellowship at the gods' table",
+    "inheritability": "none",
+    "scopeTags": [
+     "divine-favour"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.36-51; Apollod. Epit. 2.1"
+     }
+    ],
+    "notes": "Honoured to dine among the gods and share their nectar and ambrosia — the privilege he abused."
+   }
   ],
   "materialCulture": [],
   "relations": [
-   { "kind": "lover", "externalRef": { "name": "Plouto (Lydian/Phrygian nymph of Mt. Sipylus, daughter of Cronus or of Oceanus; mother of Tantalus by Zeus — a 'numen'-class divine mother)", "tradition": "Greek" }, "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Paus. 2.22.3; Hyg. Fab. 155; Schol. Eur. Or. 5" }], "notes": "His numen mother; recorded as externalRef so descent computes demigod (Zeus + divine nymph)." },
-   { "kind": "father-of", "personId": "greek_pelops", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.3; Pind. Ol. 1.36-40" }] },
-   { "kind": "enemy", "personId": "greek_hesiod_zeus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1; Hom. Od. 11.582-592" }], "notes": "Reciprocal of the existing greek_hesiod_zeus.enemy externalRef edge (now resolvable to this entry)." }
+   {
+    "kind": "lover",
+    "externalRef": {
+     "name": "Plouto (Lydian/Phrygian nymph of Mt. Sipylus, daughter of Cronus or of Oceanus; mother of Tantalus by Zeus — a 'numen'-class divine mother)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.22.3; Hyg. Fab. 155; Schol. Eur. Or. 5"
+     }
+    ],
+    "notes": "His numen mother; recorded as externalRef so descent computes demigod (Zeus + divine nymph)."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_pelops",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.3; Pind. Ol. 1.36-40"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_hesiod_zeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1; Hom. Od. 11.582-592"
+     }
+    ],
+    "notes": "Reciprocal of the existing greek_hesiod_zeus.enemy externalRef edge (now resolvable to this entry)."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hom. Od. 11.582-592; Pind. Ol. 1.36-64; Eur. Or. 4-10; Apollod. Epit. 2.1; Paus. 2.22.3" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.1; Hyg. Fab. 82, 155 (son of Zeus by Plouto)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.582-592; Pind. Ol. 1.36-64; Eur. Or. 4-10; Apollod. Epit. 2.1; Paus. 2.22.3"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.1; Hyg. Fab. 82, 155 (son of Zeus by Plouto)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Demigod — son of Zeus by the nymph Plouto, king of Sipylus in Lydia, founder of the accursed Pelopid house. Admitted to the gods' table, he transgressed: stealing nectar and ambrosia for mortals (Pindar) or butchering his son Pelops and serving him to the gods to test their omniscience (the older tradition the gods reject — only Demeter, grieving Persephone, eats the shoulder). Damned to the proverbial 'tantalizing' torment in Hades. Formerly barred by the strict parentage rule (a nymph-born son of Zeus); now admissible and the demigod root from which the whole House of Atreus descends."
  },
  {
   "id": "greek_pelops",
   "schemaVersion": 2,
-  "name": { "primary": "Pelops", "alt": ["Pelops the Phrygian", "the Lydian"], "transliterations": { "greek": "Πέλοψ" } },
+  "name": {
+   "primary": "Pelops",
+   "alt": [
+    "Pelops the Phrygian",
+    "the Lydian"
+   ],
+   "transliterations": {
+    "greek": "Πέλοψ"
+   }
+  },
   "type": "quartigod",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_tantalus"],
-  "parentRoles": { "greek_tantalus": "paternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1370, "mythicEnd": -1300, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_tantalus"
+  ],
+  "parentRoles": {
+   "greek_tantalus": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1370,
+   "mythicEnd": -1300,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "quartigod", "era": "heroic-age", "eraOrdering": 0, "startEvent": "dismemberment-and-restoration-with-the-ivory-shoulder", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.24-27, 1.40-51; Apollod. Epit. 2.3" }], "notes": "Killed and served to the gods by Tantalus; restored from the cauldron, his shoulder — eaten by the grieving Demeter — replaced with one of ivory. Pindar pointedly rejects the cannibal version for the abduction by Poseidon." },
-   { "typeStatus": "quartigod", "era": "heroic-age", "eraOrdering": 1, "startEvent": "beloved-of-Poseidon", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.36-45, 1.65-88" }], "notes": "Carried off to Olympus by the enamoured Poseidon, who later grants him the golden chariot and winged horses." },
-   { "typeStatus": "quartigod", "era": "heroic-age", "eraOrdering": 2, "startEvent": "the-chariot-race-for-Hippodamia", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.4-7" }], "notes": "Defeats Oenomaus of Pisa in the deadly bride-race — with Poseidon's horses and the treachery of the charioteer Myrtilus, who sabotaged Oenomaus's linchpins." },
-   { "typeStatus": "quartigod", "era": "heroic-age", "eraOrdering": 3, "startEvent": "the-curse-of-Myrtilus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.7-8" }], "notes": "Pelops flings the cheated Myrtilus into the sea; the dying man's curse on Pelops's house seeds the doom of the Atreidae." },
-   { "typeStatus": "quartigod", "era": "heroic-age", "eraOrdering": 4, "startEvent": "kingship-of-Pisa-and-name-of-the-Peloponnese", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.9; Paus. 5.13.1-7, 6.22.1" }], "notes": "Rules a great realm; the Peloponnese ('Pelops's island') bears his name. Venerated at Olympia, where his cult underlies the founding myth of the Games and the Pelopion shrine holds his bones." }
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "dismemberment-and-restoration-with-the-ivory-shoulder",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.24-27, 1.40-51; Apollod. Epit. 2.3"
+     }
+    ],
+    "notes": "Killed and served to the gods by Tantalus; restored from the cauldron, his shoulder — eaten by the grieving Demeter — replaced with one of ivory. Pindar pointedly rejects the cannibal version for the abduction by Poseidon."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "beloved-of-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.36-45, 1.65-88"
+     }
+    ],
+    "notes": "Carried off to Olympus by the enamoured Poseidon, who later grants him the golden chariot and winged horses."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-chariot-race-for-Hippodamia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.4-7"
+     }
+    ],
+    "notes": "Defeats Oenomaus of Pisa in the deadly bride-race — with Poseidon's horses and the treachery of the charioteer Myrtilus, who sabotaged Oenomaus's linchpins."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "the-curse-of-Myrtilus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.7-8"
+     }
+    ],
+    "notes": "Pelops flings the cheated Myrtilus into the sea; the dying man's curse on Pelops's house seeds the doom of the Atreidae."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 4,
+    "startEvent": "kingship-of-Pisa-and-name-of-the-Peloponnese",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.9; Paus. 5.13.1-7, 6.22.1"
+     }
+    ],
+    "notes": "Rules a great realm; the Peloponnese ('Pelops's island') bears his name. Venerated at Olympia, where his cult underlies the founding myth of the Games and the Pelopion shrine holds his bones."
+   }
   ],
   "domains": [
-   { "sphereId": "kingship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.9; Paus. 5.13.1" }] },
-   { "sphereId": "chariotry", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.67-88" }] },
-   { "sphereId": "athletic-games", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Paus. 5.8.2, 5.13.1-2 — funeral games / Olympic founding hero" }] }
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.9; Paus. 5.13.1"
+     }
+    ]
+   },
+   {
+    "sphereId": "chariotry",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.67-88"
+     }
+    ]
+   },
+   {
+    "sphereId": "athletic-games",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 5.8.2, 5.13.1-2 — funeral games / Olympic founding hero"
+     }
+    ]
+   }
   ],
   "faculties": [
-   { "id": "charioteering-mastery", "name": "Mastery of the chariot", "inheritability": "partial", "scopeTags": ["chariotry", "contest"], "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.67-88 — drives Poseidon's winged team to victory over Oenomaus" }] }
+   {
+    "id": "charioteering-mastery",
+    "name": "Mastery of the chariot",
+    "inheritability": "partial",
+    "scopeTags": [
+     "chariotry",
+     "contest"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.67-88 — drives Poseidon's winged team to victory over Oenomaus"
+     }
+    ]
+   }
   ],
   "materialCulture": [
-   { "id": "pelops-ivory-shoulder", "name": "The ivory shoulder of Pelops", "kind": "symbol", "role": "the shoulder-blade of ivory set in his body to replace the one Demeter ate; a hereditary mark borne by his descendants and a relic shown at Olympia/Elis", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.24-27; Apollod. Epit. 2.3; Paus. 5.13.4-6" }] },
-   { "id": "poseidon-golden-chariot-and-winged-horses", "name": "The golden chariot and winged horses of Poseidon", "kind": "vehicle", "role": "Poseidon's gift; the untiring winged team with which Pelops won the bride-race against Oenomaus", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.86-88" }] },
-   { "id": "pelopid-sceptre", "name": "The Pelopid sceptre (sceptre of Hephaestus)", "kind": "symbol", "role": "Hephaestus-wrought staff passed Zeus→Hermes→Pelops; the heirloom of Pelopid sovereignty descending to Atreus, Thyestes, and Agamemnon", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.100-108" }] }
+   {
+    "id": "pelops-ivory-shoulder",
+    "name": "The ivory shoulder of Pelops",
+    "kind": "symbol",
+    "role": "the shoulder-blade of ivory set in his body to replace the one Demeter ate; a hereditary mark borne by his descendants and a relic shown at Olympia/Elis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.24-27; Apollod. Epit. 2.3; Paus. 5.13.4-6"
+     }
+    ]
+   },
+   {
+    "id": "poseidon-golden-chariot-and-winged-horses",
+    "name": "The golden chariot and winged horses of Poseidon",
+    "kind": "vehicle",
+    "role": "Poseidon's gift; the untiring winged team with which Pelops won the bride-race against Oenomaus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.86-88"
+     }
+    ]
+   },
+   {
+    "id": "pelopid-sceptre",
+    "name": "The Pelopid sceptre (sceptre of Hephaestus)",
+    "kind": "symbol",
+    "role": "Hephaestus-wrought staff passed Zeus→Hermes→Pelops; the heirloom of Pelopid sovereignty descending to Atreus, Thyestes, and Agamemnon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.100-108"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "spouse", "personId": "greek_hippodamia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.4-9" }] },
-   { "kind": "father-of", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10; Hom. Il. 2.104-105" }] },
-   { "kind": "father-of", "personId": "greek_thyestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "father-of", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "secondary", "reference": "Variant making Anaxibia a daughter of Pelops; the dominant tradition (Apollod.) makes her daughter of Atreus — see her entry." }], "notes": "Genealogy-variant edge; primary parentage of Anaxibia is via Atreus in this batch." }
+   {
+    "kind": "spouse",
+    "personId": "greek_hippodamia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.4-9"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10; Hom. Il. 2.104-105"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Variant making Anaxibia a daughter of Pelops; the dominant tradition (Apollod.) makes her daughter of Atreus — see her entry."
+     }
+    ],
+    "notes": "Genealogy-variant edge; primary parentage of Anaxibia is via Atreus in this batch."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pind. Ol. 1; Hom. Il. 2.100-108; Apollod. Epit. 2.3-10; Paus. 5.13.1-7, 6.22.1; Soph. El. 504-515 (the race of Pelops)" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.3; Pind. Ol. 1.36-40 (son of Tantalus)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1; Hom. Il. 2.100-108; Apollod. Epit. 2.3-10; Paus. 5.13.1-7, 6.22.1; Soph. El. 504-515 (the race of Pelops)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.3; Pind. Ol. 1.36-40 (son of Tantalus)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Quartigod (¼ divine, via the demigod Tantalus). Lydian/Phrygian prince butchered and served to the gods by his father, then restored with an ivory shoulder; beloved of Poseidon, who gave him a golden winged chariot. With it — and the bribed charioteer Myrtilus — he won Hippodamia in Oenomaus's deadly bride-race, then drowned Myrtilus, whose curse seeds the doom of the Atreidae. King of Pisa and eponym of the Peloponnese; founding hero of Olympia, his bones kept in the Pelopion. Father of Atreus and Thyestes."
  },
  {
   "id": "greek_hippodamia",
   "schemaVersion": 2,
-  "name": { "primary": "Hippodamia", "alt": ["Hippodameia", "Hippodamia of Pisa"], "transliterations": { "greek": "Ἱπποδάμεια" } },
+  "name": {
+   "primary": "Hippodamia",
+   "alt": [
+    "Hippodameia",
+    "Hippodamia of Pisa"
+   ],
+   "transliterations": {
+    "greek": "Ἱπποδάμεια"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
@@ -116,76 +486,399 @@ so it is not re-authored or collided with here.
   "sex": "female",
   "vitalStatus": "dead",
   "parentIds": [],
-  "temporal": { "era": "heroic-age", "mythicStart": -1360, "mythicEnd": -1300, "mythicPrecision": "generation-bracket" },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1360,
+   "mythicEnd": -1300,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "the-bride-race-of-Oenomaus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.4-6; Pind. Ol. 1.67-88" }], "notes": "Daughter of Oenomaus of Pisa, who killed every suitor he beat in the chariot-race; smitten with Pelops, she induced the charioteer Myrtilus to sabotage her father's car." },
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1, "startEvent": "marriage-to-Pelops", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.7-9" }], "notes": "Won by Pelops; mother of his line, including Atreus and Thyestes." },
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 2, "startEvent": "the-killing-of-Chrysippus-and-exile", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10; Paus. 6.20.7" }], "notes": "With (or driving) Atreus and Thyestes she contrived the murder of Pelops's bastard son Chrysippus; fled in exile and died (or took her own life). Honoured later at Olympia with a sacred enclosure, the Hippodameion." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-bride-race-of-Oenomaus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.4-6; Pind. Ol. 1.67-88"
+     }
+    ],
+    "notes": "Daughter of Oenomaus of Pisa, who killed every suitor he beat in the chariot-race; smitten with Pelops, she induced the charioteer Myrtilus to sabotage her father's car."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Pelops",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.7-9"
+     }
+    ],
+    "notes": "Won by Pelops; mother of his line, including Atreus and Thyestes."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-killing-of-Chrysippus-and-exile",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10; Paus. 6.20.7"
+     }
+    ],
+    "notes": "With (or driving) Atreus and Thyestes she contrived the murder of Pelops's bastard son Chrysippus; fled in exile and died (or took her own life). Honoured later at Olympia with a sacred enclosure, the Hippodameion."
+   }
   ],
   "domains": [
-   { "sphereId": "queenship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.9; Paus. 6.20.7" }] }
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.9; Paus. 6.20.7"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [],
   "relations": [
-   { "kind": "spouse", "personId": "greek_pelops", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.7-9" }] },
-   { "kind": "mother-of", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "mother-of", "personId": "greek_thyestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "mother-of", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10 (children of Pelops and Hippodamia)" }] }
+   {
+    "kind": "spouse",
+    "personId": "greek_pelops",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.7-9"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10 (children of Pelops and Hippodamia)"
+     }
+    ]
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.4-10; Paus. 5.10.6-7, 6.20.7, 6.20.19; Soph. El. 504-515" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Ol. 1.67-88; Apollod. Epit. 2.4-10; Paus. 5.10.6-7, 6.20.7, 6.20.19; Soph. El. 504-515"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal princess of Pisa, daughter of King Oenomaus. Won by Pelops in the lethal chariot-race she helped him win by suborning the charioteer Myrtilus. Queen of the Pelopid house and mother of Atreus, Thyestes, and Anaxibia. Implicated with her sons in the murder of Pelops's favoured bastard Chrysippus, for which she was driven into exile; later honoured at Olympia in the Hippodameion."
  },
  {
   "id": "greek_atreus",
   "schemaVersion": 2,
-  "name": { "primary": "Atreus", "alt": ["Atreus of Mycenae"], "transliterations": { "greek": "Ἀτρεύς" } },
+  "name": {
+   "primary": "Atreus",
+   "alt": [
+    "Atreus of Mycenae"
+   ],
+   "transliterations": {
+    "greek": "Ἀτρεύς"
+   }
+  },
   "type": "scion",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_pelops", "greek_hippodamia"],
-  "parentRoles": { "greek_pelops": "paternal", "greek_hippodamia": "maternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1330, "mythicEnd": -1250, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_pelops",
+   "greek_hippodamia"
+  ],
+  "parentRoles": {
+   "greek_pelops": "paternal",
+   "greek_hippodamia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1330,
+   "mythicEnd": -1250,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 0, "startEvent": "exile-from-Pisa-and-flight-to-Mycenae", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10-11; Thuc. 1.9" }], "notes": "Exiled with Thyestes for the killing of their half-brother Chrysippus; received at Mycenae, where (per Thucydides) Atreus inherits the throne through Eurystheus." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 1, "startEvent": "the-golden-lamb-and-the-contested-throne", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.11-12; Eur. Or. 995-1012; Eur. El. 699-726" }], "notes": "Atreus vows the finest of his flock to Artemis but a golden lamb appears in his fold; he chokes it and hides it. His wife Aerope, Thyestes's lover, steals it for Thyestes, who claims the kingship by it — Zeus reverses the sun's course to confirm Atreus instead." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 2, "startEvent": "the-Thyestean-feast", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1090-1097, 1217-1222, 1583-1602; Apollod. Epit. 2.13" }], "notes": "In revenge Atreus slaughters Thyestes's sons and serves them to him at a banquet, revealing the heads and hands after — the crime invoked through the Oresteia as the house's defining pollution." },
-   { "typeStatus": "scion", "vitalStatus": "dead", "era": "heroic-age", "eraOrdering": 3, "startEvent": "killed-by-Aegisthus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88" }], "notes": "Slain by Aegisthus, the son Thyestes had begotten on his own daughter expressly to avenge the feast; the kingdom passes briefly back to Thyestes." }
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "exile-from-Pisa-and-flight-to-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10-11; Thuc. 1.9"
+     }
+    ],
+    "notes": "Exiled with Thyestes for the killing of their half-brother Chrysippus; received at Mycenae, where (per Thucydides) Atreus inherits the throne through Eurystheus."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-golden-lamb-and-the-contested-throne",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.11-12; Eur. Or. 995-1012; Eur. El. 699-726"
+     }
+    ],
+    "notes": "Atreus vows the finest of his flock to Artemis but a golden lamb appears in his fold; he chokes it and hides it. His wife Aerope, Thyestes's lover, steals it for Thyestes, who claims the kingship by it — Zeus reverses the sun's course to confirm Atreus instead."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-Thyestean-feast",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1090-1097, 1217-1222, 1583-1602; Apollod. Epit. 2.13"
+     }
+    ],
+    "notes": "In revenge Atreus slaughters Thyestes's sons and serves them to him at a banquet, revealing the heads and hands after — the crime invoked through the Oresteia as the house's defining pollution."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "killed-by-Aegisthus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88"
+     }
+    ],
+    "notes": "Slain by Aegisthus, the son Thyestes had begotten on his own daughter expressly to avenge the feast; the kingdom passes briefly back to Thyestes."
+   }
   ],
   "domains": [
-   { "sphereId": "kingship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.104-108; Thuc. 1.9" }] },
-   { "sphereId": "vengeance", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1583-1602" }] }
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.104-108; Thuc. 1.9"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1583-1602"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [
-   { "id": "golden-lamb", "name": "The golden lamb (chrysomallos arnos)", "kind": "symbol", "role": "the golden-fleeced lamb in Atreus's flock that became the token of legitimate rule over Mycenae; stolen by Aerope for Thyestes, recovered to Atreus by Zeus's reversal of the sun", "sources": [{ "kind": "primary", "reference": "Eur. Or. 995-1012; Eur. El. 699-726; Apollod. Epit. 2.11-12" }] },
-   { "id": "pelopid-sceptre", "name": "The Pelopid sceptre (sceptre of Hephaestus)", "kind": "symbol", "role": "the Hephaestus-wrought heirloom of Pelopid kingship; held by Atreus, who bequeathed it to Thyestes and so to Agamemnon", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.105-106" }] }
+   {
+    "id": "golden-lamb",
+    "name": "The golden lamb (chrysomallos arnos)",
+    "kind": "symbol",
+    "role": "the golden-fleeced lamb in Atreus's flock that became the token of legitimate rule over Mycenae; stolen by Aerope for Thyestes, recovered to Atreus by Zeus's reversal of the sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 995-1012; Eur. El. 699-726; Apollod. Epit. 2.11-12"
+     }
+    ]
+   },
+   {
+    "id": "pelopid-sceptre",
+    "name": "The Pelopid sceptre (sceptre of Hephaestus)",
+    "kind": "symbol",
+    "role": "the Hephaestus-wrought heirloom of Pelopid kingship; held by Atreus, who bequeathed it to Thyestes and so to Agamemnon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.105-106"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "sibling", "personId": "greek_thyestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "sibling", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "spouse", "personId": "greek_aerope", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10-12; Soph. Aj. 1295-1297" }] },
-   { "kind": "spouse", "personId": "greek_pelopia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hyg. Fab. 87-88" }], "notes": "Second, unwitting marriage (Hyginus): Atreus weds his niece Pelopia, not knowing her parentage, and rears her son Aegisthus. Reciprocal of greek_pelopia.spouse." },
-   { "kind": "enemy", "personId": "greek_thyestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1583-1602; Apollod. Epit. 2.13" }], "notes": "The brothers' feud — the golden lamb and the Thyestean feast. Reciprocal of greek_thyestes.enemy." },
-   { "kind": "father-of", "personId": "greek_agamemnon", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.104-108; Apollod. Epit. 2.15-16" }] },
-   { "kind": "father-of", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Paus. 2.29.4" }], "notes": "Dominant tradition: Anaxibia daughter of Atreus and Aerope, sister of Agamemnon and Menelaus." },
-   { "kind": "enemy", "personId": "greek_aegisthus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14" }], "notes": "Killed by Aegisthus." }
+   {
+    "kind": "sibling",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_aerope",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10-12; Soph. Aj. 1295-1297"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_pelopia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hyg. Fab. 87-88"
+     }
+    ],
+    "notes": "Second, unwitting marriage (Hyginus): Atreus weds his niece Pelopia, not knowing her parentage, and rears her son Aegisthus. Reciprocal of greek_pelopia.spouse."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1583-1602; Apollod. Epit. 2.13"
+     }
+    ],
+    "notes": "The brothers' feud — the golden lamb and the Thyestean feast. Reciprocal of greek_thyestes.enemy."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_agamemnon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.104-108; Apollod. Epit. 2.15-16"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Paus. 2.29.4"
+     }
+    ],
+    "notes": "Dominant tradition: Anaxibia daughter of Atreus and Aerope, sister of Agamemnon and Menelaus."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_aegisthus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14"
+     }
+    ],
+    "notes": "Killed by Aegisthus."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_chrysippus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hom. Il. 2.100-108; Aesch. Ag. 1090-1602; Eur. Or., El.; Apollod. Epit. 2.10-16; Thuc. 1.9; Hyg. Fab. 86-88" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10; Hom. Il. 2.104-105 (Pelops's son)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.100-108; Aesch. Ag. 1090-1602; Eur. Or., El.; Apollod. Epit. 2.10-16; Thuc. 1.9; Hyg. Fab. 86-88"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10; Hom. Il. 2.104-105 (Pelops's son)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Scion of the Pelopid house (son of the quartigod Pelops). King of Mycenae; brother and mortal enemy of Thyestes. Their feud over the golden lamb — token of rule, stolen by Atreus's adulterous wife Aerope for Thyestes — culminates in Atreus's revenge: the Thyestean feast, at which he serves Thyestes the flesh of his own sons. Aeschylus's Oresteia makes that banquet the house's primal pollution. Atreus is in turn killed by Aegisthus, Thyestes's incest-begotten avenger. Father of Agamemnon, Menelaus (see UPDATE-NEEDED), and Anaxibia by Aerope."
  },
  {
   "id": "greek_aerope",
   "schemaVersion": 2,
-  "name": { "primary": "Aerope", "alt": ["Aërope", "Aerope of Crete"], "transliterations": { "greek": "Ἀερόπη" } },
+  "name": {
+   "primary": "Aerope",
+   "alt": [
+    "Aërope",
+    "Aerope of Crete"
+   ],
+   "transliterations": {
+    "greek": "Ἀερόπη"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
@@ -193,433 +886,2292 @@ so it is not re-authored or collided with here.
   "sex": "female",
   "vitalStatus": "dead",
   "parentIds": [],
-  "temporal": { "era": "heroic-age", "mythicStart": -1320, "mythicEnd": -1255, "mythicPrecision": "generation-bracket" },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1320,
+   "mythicEnd": -1255,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-to-Catreus-of-Crete-and-sending-overseas", "sources": [{ "kind": "primary", "reference": "Apollod. 3.2.1-2; Soph. Aj. 1295-1297" }], "notes": "Daughter of Catreus, king of Crete (son of Minos); given by Catreus to Nauplius to be sold or drowned overseas after an oracle, and married into the house of Pelops." },
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1, "startEvent": "marriage-to-Atreus-and-the-adultery-with-Thyestes", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10-12; Eur. Cret. fr.; Soph. Aj. 1295-1297" }], "notes": "Wife of Atreus; mother of Agamemnon and Menelaus. Took Thyestes as her lover and gave him the golden lamb — the betrayal that ignites the brothers' feud." },
-   { "typeStatus": "mortal", "vitalStatus": "dead", "era": "heroic-age", "eraOrdering": 2, "startEvent": "drowned-by-Atreus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.12 (Schol.); Soph. Aj. 1295-1297" }], "notes": "In the dominant tradition Atreus has her cast into the sea (via Nauplius) for the adultery." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Catreus-of-Crete-and-sending-overseas",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2; Soph. Aj. 1295-1297"
+     }
+    ],
+    "notes": "Daughter of Catreus, king of Crete (son of Minos); given by Catreus to Nauplius to be sold or drowned overseas after an oracle, and married into the house of Pelops."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Atreus-and-the-adultery-with-Thyestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10-12; Eur. Cret. fr.; Soph. Aj. 1295-1297"
+     }
+    ],
+    "notes": "Wife of Atreus; mother of Agamemnon and Menelaus. Took Thyestes as her lover and gave him the golden lamb — the betrayal that ignites the brothers' feud."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "drowned-by-Atreus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.12 (Schol.); Soph. Aj. 1295-1297"
+     }
+    ],
+    "notes": "In the dominant tradition Atreus has her cast into the sea (via Nauplius) for the adultery."
+   }
   ],
   "domains": [
-   { "sphereId": "queenship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] }
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [],
   "relations": [
-   { "kind": "spouse", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10; Soph. Aj. 1295-1297" }] },
-   { "kind": "lover", "personId": "greek_thyestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10-12; Eur. Or. 1009-1010" }] },
-   { "kind": "mother-of", "personId": "greek_agamemnon", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.15-16; Hom. Il. 2.104-108 (Atreid line)" }] },
-   { "kind": "mother-of", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Paus. 2.29.4" }] }
+   {
+    "kind": "spouse",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10; Soph. Aj. 1295-1297"
+     }
+    ]
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10-12; Eur. Or. 1009-1010"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_agamemnon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.15-16; Hom. Il. 2.104-108 (Atreid line)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Paus. 2.29.4"
+     }
+    ]
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Soph. Ajax 1295-1297; Eur. Cretan Women (fr.), Orestes 1009-1010; Apollodorus 3.2.1-2, Epitome 2.10-16; Hyg. Fab. 86" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. 3.2.1-2 (daughter of Catreus son of Minos)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Soph. Ajax 1295-1297; Eur. Cretan Women (fr.), Orestes 1009-1010; Apollodorus 3.2.1-2, Epitome 2.10-16; Hyg. Fab. 86"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.2.1-2 (daughter of Catreus son of Minos)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal Cretan princess, daughter of Catreus son of Minos; wife of Atreus and mother of Agamemnon and Menelaus. Her adultery with her husband's brother Thyestes — and her theft of the golden lamb to give him — is the human spark of the Atreid feud. Drowned at sea by Atreus in the dominant tradition. The mortal mother through whom the commander Agamemnon and his brother Menelaus descend."
  },
  {
   "id": "greek_thyestes",
   "schemaVersion": 2,
-  "name": { "primary": "Thyestes", "alt": ["Thyestes of Mycenae"], "transliterations": { "greek": "Θυέστης" } },
+  "name": {
+   "primary": "Thyestes",
+   "alt": [
+    "Thyestes of Mycenae"
+   ],
+   "transliterations": {
+    "greek": "Θυέστης"
+   }
+  },
   "type": "scion",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_pelops", "greek_hippodamia"],
-  "parentRoles": { "greek_pelops": "paternal", "greek_hippodamia": "maternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1330, "mythicEnd": -1245, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_pelops",
+   "greek_hippodamia"
+  ],
+  "parentRoles": {
+   "greek_pelops": "paternal",
+   "greek_hippodamia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1330,
+   "mythicEnd": -1245,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 0, "startEvent": "the-adultery-and-the-golden-lamb", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10-12; Eur. Or. 995-1012; Eur. El. 699-726" }], "notes": "Seduces his brother's wife Aerope, who gives him the golden lamb; he uses it to claim the throne of Mycenae until Zeus's portent restores Atreus." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 1, "startEvent": "the-Thyestean-feast", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1090-1097, 1217-1222, 1583-1602; Apollod. Epit. 2.13" }], "notes": "Recalled by Atreus under a false reconciliation and fed the flesh of his own murdered sons; on learning the truth he curses the house of Atreus and is driven into exile." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 2, "startEvent": "the-oracle-and-the-incest-with-Pelopia", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88" }], "notes": "Told by an oracle that only a son begotten on his own daughter could avenge him, he lies with Pelopia at Sicyon (unrecognized in the dark); she bears Aegisthus." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 3, "startEvent": "restoration-and-final-expulsion", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14-16; Hyg. Fab. 88" }], "notes": "After Aegisthus kills Atreus, Thyestes regains Mycenae, but is finally expelled by the returning Agamemnon and Menelaus (with Tyndareus) and dies in exile in Cythera." }
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-adultery-and-the-golden-lamb",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10-12; Eur. Or. 995-1012; Eur. El. 699-726"
+     }
+    ],
+    "notes": "Seduces his brother's wife Aerope, who gives him the golden lamb; he uses it to claim the throne of Mycenae until Zeus's portent restores Atreus."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-Thyestean-feast",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1090-1097, 1217-1222, 1583-1602; Apollod. Epit. 2.13"
+     }
+    ],
+    "notes": "Recalled by Atreus under a false reconciliation and fed the flesh of his own murdered sons; on learning the truth he curses the house of Atreus and is driven into exile."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-oracle-and-the-incest-with-Pelopia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88"
+     }
+    ],
+    "notes": "Told by an oracle that only a son begotten on his own daughter could avenge him, he lies with Pelopia at Sicyon (unrecognized in the dark); she bears Aegisthus."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "restoration-and-final-expulsion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14-16; Hyg. Fab. 88"
+     }
+    ],
+    "notes": "After Aegisthus kills Atreus, Thyestes regains Mycenae, but is finally expelled by the returning Agamemnon and Menelaus (with Tyndareus) and dies in exile in Cythera."
+   }
   ],
   "domains": [
-   { "sphereId": "kingship", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.12, 2.14" }] },
-   { "sphereId": "vengeance", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1217-1222; Apollod. Epit. 2.14" }] }
+   {
+    "sphereId": "kingship",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.12, 2.14"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1217-1222; Apollod. Epit. 2.14"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [
-   { "id": "golden-lamb", "name": "The golden lamb (chrysomallos arnos)", "kind": "symbol", "role": "the token of Mycenaean kingship Aerope stole for him; the lamb by which he briefly usurped the throne from Atreus", "sources": [{ "kind": "primary", "reference": "Eur. Or. 995-1012; Apollod. Epit. 2.11-12" }] },
-   { "id": "pelopid-sceptre", "name": "The Pelopid sceptre (sceptre of Hephaestus)", "kind": "symbol", "role": "the Hephaestus-wrought heirloom of Pelopid kingship; Atreus left it to Thyestes, from whom it passed to Agamemnon (Iliad's custody chain)", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.106-107" }] }
+   {
+    "id": "golden-lamb",
+    "name": "The golden lamb (chrysomallos arnos)",
+    "kind": "symbol",
+    "role": "the token of Mycenaean kingship Aerope stole for him; the lamb by which he briefly usurped the throne from Atreus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 995-1012; Apollod. Epit. 2.11-12"
+     }
+    ]
+   },
+   {
+    "id": "pelopid-sceptre",
+    "name": "The Pelopid sceptre (sceptre of Hephaestus)",
+    "kind": "symbol",
+    "role": "the Hephaestus-wrought heirloom of Pelopid kingship; Atreus left it to Thyestes, from whom it passed to Agamemnon (Iliad's custody chain)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.106-107"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "sibling", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "sibling", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10" }] },
-   { "kind": "lover", "personId": "greek_aerope", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10-12; Eur. Or. 1009-1010" }] },
-   { "kind": "father-of", "personId": "greek_pelopia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88" }] },
-   { "kind": "father-of", "personId": "greek_aegisthus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88, 252" }], "notes": "Begotten on his own daughter Pelopia." },
-   { "kind": "enemy", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1583-1602; Apollod. Epit. 2.13" }] }
+   {
+    "kind": "sibling",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10"
+     }
+    ]
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_aerope",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10-12; Eur. Or. 1009-1010"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_pelopia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_aegisthus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88, 252"
+     }
+    ],
+    "notes": "Begotten on his own daughter Pelopia."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1583-1602; Apollod. Epit. 2.13"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_chrysippus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hom. Il. 2.106-107; Aesch. Ag. 1090-1602; Eur. Or., El.; Apollod. Epit. 2.10-16; Hyg. Fab. 86-88; Sen. Thyestes" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.10 (son of Pelops and Hippodamia)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.106-107; Aesch. Ag. 1090-1602; Eur. Or., El.; Apollod. Epit. 2.10-16; Hyg. Fab. 86-88; Sen. Thyestes"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.10 (son of Pelops and Hippodamia)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Scion of the Pelopid house (son of the quartigod Pelops); brother and lifelong enemy of Atreus. Seduced Aerope and seized the throne by the golden lamb; suffered the Thyestean feast — fed his own sons' flesh — and laid the curse that drives the Oresteia. To gain an avenger he begot Aegisthus on his own daughter Pelopia per the oracle. Briefly restored to Mycenae after Aegisthus killed Atreus, then expelled by Agamemnon and Menelaus; died in exile. Father of Pelopia and of Aegisthus."
  },
  {
   "id": "greek_pelopia",
   "schemaVersion": 2,
-  "name": { "primary": "Pelopia", "alt": ["Pelopeia", "Pelopia daughter of Thyestes"], "transliterations": { "greek": "Πελόπεια" } },
+  "name": {
+   "primary": "Pelopia",
+   "alt": [
+    "Pelopeia",
+    "Pelopia daughter of Thyestes"
+   ],
+   "transliterations": {
+    "greek": "Πελόπεια"
+   }
+  },
   "type": "scion",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": ["greek_thyestes"],
-  "parentRoles": { "greek_thyestes": "paternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1290, "mythicEnd": -1250, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_thyestes"
+  ],
+  "parentRoles": {
+   "greek_thyestes": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1290,
+   "mythicEnd": -1250,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 0, "startEvent": "the-night-union-with-her-father-at-Sicyon", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88" }], "notes": "Daughter of Thyestes; lain with by her own father (unrecognized, at Sicyon) per the oracle that only such a son could avenge him. She wrests his sword from him in the dark and keeps it." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 1, "startEvent": "marriage-to-Atreus-and-birth-of-Aegisthus", "sources": [{ "kind": "primary", "reference": "Hyg. Fab. 87-88" }], "notes": "Taken to wife by her uncle Atreus (not knowing her parentage); bears Aegisthus, whom Atreus rears as his own." },
-   { "typeStatus": "scion", "vitalStatus": "dead", "era": "heroic-age", "eraOrdering": 2, "startEvent": "recognition-and-suicide", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88" }], "notes": "When the kept sword reveals that her ravisher was her father Thyestes, she kills herself with it." }
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-night-union-with-her-father-at-Sicyon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88"
+     }
+    ],
+    "notes": "Daughter of Thyestes; lain with by her own father (unrecognized, at Sicyon) per the oracle that only such a son could avenge him. She wrests his sword from him in the dark and keeps it."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Atreus-and-birth-of-Aegisthus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hyg. Fab. 87-88"
+     }
+    ],
+    "notes": "Taken to wife by her uncle Atreus (not knowing her parentage); bears Aegisthus, whom Atreus rears as his own."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "recognition-and-suicide",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88"
+     }
+    ],
+    "notes": "When the kept sword reveals that her ravisher was her father Thyestes, she kills herself with it."
+   }
   ],
   "domains": [
-   { "sphereId": "tragic-fate", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Hyg. Fab. 87-88" }] }
+   {
+    "sphereId": "tragic-fate",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hyg. Fab. 87-88"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [
-   { "id": "pelopia-recognition-sword", "name": "The sword of Thyestes (recognition-token)", "kind": "weapon", "role": "the sword Pelopia wrested from her unknown ravisher; the token by which Aegisthus later recognizes Thyestes as his father — and by which Pelopia kills herself", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88" }] }
+   {
+    "id": "pelopia-recognition-sword",
+    "name": "The sword of Thyestes (recognition-token)",
+    "kind": "weapon",
+    "role": "the sword Pelopia wrested from her unknown ravisher; the token by which Aegisthus later recognizes Thyestes as his father — and by which Pelopia kills herself",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "spouse", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hyg. Fab. 87-88" }], "notes": "Married (unwittingly) to her uncle Atreus; not reciprocated on Atreus's entry, which follows the Apollodoran spine — RECIPROCAL note." },
-   { "kind": "mother-of", "personId": "greek_aegisthus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88" }] }
+   {
+    "kind": "spouse",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hyg. Fab. 87-88"
+     }
+    ],
+    "notes": "Married (unwittingly) to her uncle Atreus; not reciprocated on Atreus's entry, which follows the Apollodoran spine — RECIPROCAL note."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aegisthus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88"
+     }
+    ]
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Apollodorus Epitome 2.14; Hyginus Fabulae 87-88, 243, 252" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88 (daughter of Thyestes)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus Epitome 2.14; Hyginus Fabulae 87-88, 243, 252"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88 (daughter of Thyestes)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Scion daughter of Thyestes (granddaughter of the quartigod Pelops). The instrument and victim of Thyestes's oracle-driven revenge: lain with by her own father in the dark at Sicyon, she bears Aegisthus. Married unwittingly to her uncle Atreus, who rears Aegisthus as his own. When the sword she wrested from her ravisher reveals her father's identity, she kills herself with it. Mother of Aegisthus. Distinct from the Pelopia who is a daughter of Niobe and Amphion."
  },
  {
   "id": "greek_aegisthus",
   "schemaVersion": 2,
-  "name": { "primary": "Aegisthus", "alt": ["Aigisthos"], "transliterations": { "greek": "Αἴγισθος" } },
+  "name": {
+   "primary": "Aegisthus",
+   "alt": [
+    "Aigisthos"
+   ],
+   "transliterations": {
+    "greek": "Αἴγισθος"
+   }
+  },
   "type": "scion",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_thyestes", "greek_pelopia"],
-  "parentRoles": { "greek_thyestes": "paternal", "greek_pelopia": "maternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1270, "mythicEnd": -1200, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_thyestes",
+   "greek_pelopia"
+  ],
+  "parentRoles": {
+   "greek_thyestes": "paternal",
+   "greek_pelopia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1270,
+   "mythicEnd": -1200,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 0, "startEvent": "incest-begotten-birth-and-rearing-by-Atreus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88" }], "notes": "Begotten by Thyestes on his daughter Pelopia to be his avenger; exposed and suckled by a goat (aix — folk-etymology of the name), then reared by Atreus as his own son." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 1, "startEvent": "the-killing-of-Atreus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88" }], "notes": "Sent by Atreus to kill Thyestes, he is recognized by the sword as Thyestes's son; instead kills Atreus and restores the kingdom to his father." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 2, "startEvent": "seduction-of-Clytemnestra-and-the-murder-of-Agamemnon", "sources": [{ "kind": "primary", "reference": "Hom. Od. 1.35-43, 3.262-310, 4.524-537; Aesch. Ag. 1577-1611" }], "notes": "While Agamemnon is at Troy he takes Clytemnestra as lover and rules Mycenae; on the king's return they kill him (Homer's Aegisthus does the deed at the feast; Aeschylus gives the axe to Clytemnestra)." },
-   { "typeStatus": "scion", "vitalStatus": "dead", "era": "heroic-age", "eraOrdering": 3, "startEvent": "slain-by-Orestes", "sources": [{ "kind": "primary", "reference": "Hom. Od. 1.298-300, 3.306-310; Aesch. Cho. 838-934" }], "notes": "Killed in vengeance by Agamemnon's son Orestes, eight years on — the act the Odyssey holds up as a model of just retribution." }
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "incest-begotten-birth-and-rearing-by-Atreus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88"
+     }
+    ],
+    "notes": "Begotten by Thyestes on his daughter Pelopia to be his avenger; exposed and suckled by a goat (aix — folk-etymology of the name), then reared by Atreus as his own son."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-killing-of-Atreus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88"
+     }
+    ],
+    "notes": "Sent by Atreus to kill Thyestes, he is recognized by the sword as Thyestes's son; instead kills Atreus and restores the kingdom to his father."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "seduction-of-Clytemnestra-and-the-murder-of-Agamemnon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 1.35-43, 3.262-310, 4.524-537; Aesch. Ag. 1577-1611"
+     }
+    ],
+    "notes": "While Agamemnon is at Troy he takes Clytemnestra as lover and rules Mycenae; on the king's return they kill him (Homer's Aegisthus does the deed at the feast; Aeschylus gives the axe to Clytemnestra)."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 3,
+    "startEvent": "slain-by-Orestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 1.298-300, 3.306-310; Aesch. Cho. 838-934"
+     }
+    ],
+    "notes": "Killed in vengeance by Agamemnon's son Orestes, eight years on — the act the Odyssey holds up as a model of just retribution."
+   }
   ],
   "domains": [
-   { "sphereId": "usurpation", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Hom. Od. 3.304-305 — seven years' tyranny over Mycenae" }] },
-   { "sphereId": "vengeance", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14" }] }
+   {
+    "sphereId": "usurpation",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.304-305 — seven years' tyranny over Mycenae"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [
-   { "id": "pelopia-recognition-sword", "name": "The sword of Thyestes (recognition-token)", "kind": "weapon", "role": "the sword Pelopia took from Thyestes and gave to Aegisthus; by it Aegisthus is recognized as Thyestes's son and spares his father to kill Atreus", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88" }] }
+   {
+    "id": "pelopia-recognition-sword",
+    "name": "The sword of Thyestes (recognition-token)",
+    "kind": "weapon",
+    "role": "the sword Pelopia took from Thyestes and gave to Aegisthus; by it Aegisthus is recognized as Thyestes's son and spares his father to kill Atreus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "lover", "personId": "greek_clytemnestra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 3.262-272; Aesch. Ag. 1435-1447" }] },
-   { "kind": "enemy", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88" }], "notes": "Reciprocal of greek_atreus.enemy — Aegisthus kills Atreus to restore Thyestes." },
-   { "kind": "enemy", "personId": "greek_agamemnon", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 3.262-310; Aesch. Ag." }], "notes": "His father's enemy's son and his own victim — Aegisthus is co-killer of Agamemnon." },
-   { "kind": "enemy", "personId": "greek_orestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 1.298-300; Aesch. Cho. 838-934" }], "notes": "Killed by Orestes." }
+   {
+    "kind": "lover",
+    "personId": "greek_clytemnestra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.262-272; Aesch. Ag. 1435-1447"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 88"
+     }
+    ],
+    "notes": "Reciprocal of greek_atreus.enemy — Aegisthus kills Atreus to restore Thyestes."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_agamemnon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.262-310; Aesch. Ag."
+     }
+    ],
+    "notes": "His father's enemy's son and his own victim — Aegisthus is co-killer of Agamemnon."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_orestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 1.298-300; Aesch. Cho. 838-934"
+     }
+    ],
+    "notes": "Killed by Orestes."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Hom. Od. 1.35-43, 3.193-310, 4.512-537; Aesch. Agamemnon, Choephoroi; Eur. El., Or.; Apollod. Epit. 2.14, 6.23-25; Hyg. Fab. 87-88, 252" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88 (son of Thyestes by his daughter Pelopia)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 1.35-43, 3.193-310, 4.512-537; Aesch. Agamemnon, Choephoroi; Eur. El., Or.; Apollod. Epit. 2.14, 6.23-25; Hyg. Fab. 87-88, 252"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.14; Hyg. Fab. 87-88 (son of Thyestes by his daughter Pelopia)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Scion of the Pelopid house — son of Thyestes by his own daughter Pelopia, begotten expressly to avenge the Thyestean feast. Reared unknowingly by Atreus; recognized by the kept sword, he kills Atreus and restores Thyestes. Lover of Clytemnestra and co-killer of Agamemnon (Homer makes him the prime mover, Aeschylus the secondary hand to Clytemnestra's axe). Tyrant of Mycenae for seven years until Orestes kills him in vengeance. The Odyssey's recurring paradigm of the usurper justly destroyed."
  },
  {
   "id": "greek_anaxibia_atreid",
   "schemaVersion": 2,
-  "name": { "primary": "Anaxibia", "alt": ["Anaxibia daughter of Atreus", "Astyoche"], "transliterations": { "greek": "Ἀναξιβία" } },
+  "name": {
+   "primary": "Anaxibia",
+   "alt": [
+    "Anaxibia daughter of Atreus",
+    "Astyoche"
+   ],
+   "transliterations": {
+    "greek": "Ἀναξιβία"
+   }
+  },
   "type": "scion",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": ["greek_atreus", "greek_aerope"],
-  "parentRoles": { "greek_atreus": "paternal", "greek_aerope": "maternal" },
-  "temporal": { "era": "heroic-age", "mythicStart": -1280, "mythicEnd": -1210, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_atreus",
+   "greek_aerope"
+  ],
+  "parentRoles": {
+   "greek_atreus": "paternal",
+   "greek_aerope": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1280,
+   "mythicEnd": -1210,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 0, "startEvent": "marriage-to-Strophius-of-Phocis", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4; Hyg. Fab. 117; schol. Eur. Or. 33" }], "notes": "Daughter of Atreus and sister of Agamemnon and Menelaus; wedded to Strophius, king of Phocis." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 1, "startEvent": "motherhood-of-Pylades", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4; schol. Eur. Or. 33; Hyg. Fab. 117" }], "notes": "Mother of Pylades — the faithful companion of her nephew Orestes who, sheltered in Phocis, helps avenge Agamemnon." }
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Strophius-of-Phocis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Hyg. Fab. 117; schol. Eur. Or. 33"
+     }
+    ],
+    "notes": "Daughter of Atreus and sister of Agamemnon and Menelaus; wedded to Strophius, king of Phocis."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-of-Pylades",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33; Hyg. Fab. 117"
+     }
+    ],
+    "notes": "Mother of Pylades — the faithful companion of her nephew Orestes who, sheltered in Phocis, helps avenge Agamemnon."
+   }
   ],
   "domains": [
-   { "sphereId": "queenship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4 — queen of Phocis" }] }
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4 — queen of Phocis"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [],
   "relations": [
-   { "kind": "sibling", "personId": "greek_agamemnon", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4; schol. Eur. Or. 33" }] },
-   { "kind": "sibling", "personId": "greek_atreus", "era": "heroic-age", "sources": [{ "kind": "secondary", "reference": "Reciprocates the variant edge on Pelops/Hippodamia; under the dominant tradition Atreus is her father, not brother — kept for the genealogy-variant link." }], "notes": "Variant: in the Pelops-daughter tradition she is sister of Atreus; in the dominant Apollodoran tradition she is his daughter. Primary parentage here is via Atreus." },
-   { "kind": "sibling", "personId": "greek_thyestes", "era": "heroic-age", "sources": [{ "kind": "secondary", "reference": "Reciprocates the Pelops-daughter variant edge from greek_thyestes; under the dominant tradition Thyestes is her uncle, not brother." }], "notes": "Variant-tradition sibling edge (Anaxibia as daughter of Pelops); reciprocal of greek_thyestes.sibling." },
-   { "kind": "spouse", "externalRef": { "name": "Strophius (king of Phocis, father of Pylades; not yet registered)", "tradition": "Greek" }, "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4; Hyg. Fab. 117" }] },
-   { "kind": "mother-of", "externalRef": { "name": "Pylades (son of Strophius; faithful companion of Orestes; not yet registered)", "tradition": "Greek" }, "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4; schol. Eur. Or. 33" }] }
+   {
+    "kind": "sibling",
+    "personId": "greek_agamemnon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reciprocates the variant edge on Pelops/Hippodamia; under the dominant tradition Atreus is her father, not brother — kept for the genealogy-variant link."
+     }
+    ],
+    "notes": "Variant: in the Pelops-daughter tradition she is sister of Atreus; in the dominant Apollodoran tradition she is his daughter. Primary parentage here is via Atreus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Reciprocates the Pelops-daughter variant edge from greek_thyestes; under the dominant tradition Thyestes is her uncle, not brother."
+     }
+    ],
+    "notes": "Variant-tradition sibling edge (Anaxibia as daughter of Pelops); reciprocal of greek_thyestes.sibling."
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Strophius (king of Phocis, father of Pylades; not yet registered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Hyg. Fab. 117"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "externalRef": {
+     "name": "Pylades (son of Strophius; faithful companion of Orestes; not yet registered)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_strophius",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Pausanias 2.29.4; Hyginus Fabulae 117; scholiast on Euripides Orestes 33; Apollod. Epit. 2.16 (sons and a daughter of Atreus)" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Paus. 2.29.4 (daughter of Atreus); cf. variant making her daughter of Pelops, Apollod. Epit. 2.10" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.29.4; Hyginus Fabulae 117; scholiast on Euripides Orestes 33; Apollod. Epit. 2.16 (sons and a daughter of Atreus)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4 (daughter of Atreus); cf. variant making her daughter of Pelops, Apollod. Epit. 2.10"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Scion daughter of Atreus and Aerope (so the dominant tradition; a variant makes her a daughter of Pelops, hence a genealogy-variant edge to Pelops/Hippodamia). Sister of Agamemnon and Menelaus; queen of Phocis as wife of Strophius and mother of Pylades — through whom the Phocian refuge and the Orestes-Pylades bond enter the Atreid story. Sometimes named Astyoche."
  },
  {
   "id": "greek_agamemnon",
   "schemaVersion": 2,
-  "name": { "primary": "Agamemnon", "alt": ["Agamemnon Atreides", "lord of men", "anax andron", "wide-ruling Agamemnon"], "transliterations": { "greek": "Ἀγαμέμνων" } },
+  "name": {
+   "primary": "Agamemnon",
+   "alt": [
+    "Agamemnon Atreides",
+    "lord of men",
+    "anax andron",
+    "wide-ruling Agamemnon"
+   ],
+   "transliterations": {
+    "greek": "Ἀγαμέμνων"
+   }
+  },
   "type": "scion",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_atreus", "greek_aerope"],
-  "parentRoles": { "greek_atreus": "paternal", "greek_aerope": "maternal" },
-  "temporal": { "era": "trojan-war", "mythicStart": -1250, "mythicEnd": -1180, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_atreus",
+   "greek_aerope"
+  ],
+  "parentRoles": {
+   "greek_atreus": "paternal",
+   "greek_aerope": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1250,
+   "mythicEnd": -1180,
+   "mythicPrecision": "generation-bracket"
+  },
   "epithets": [
-   { "original": "ἄναξ ἀνδρῶν", "transliteration": "anax andron", "translation": "lord of men", "sources": [{ "kind": "primary", "reference": "Hom. Il. 1.172 and passim — his standing Homeric epithet" }] },
-   { "original": "εὐρὺ κρείων", "transliteration": "eury kreion", "translation": "wide-ruling", "sources": [{ "kind": "primary", "reference": "Hom. Il. 1.102 and passim" }] }
+   {
+    "original": "ἄναξ ἀνδρῶν",
+    "transliteration": "anax andron",
+    "translation": "lord of men",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.172 and passim — his standing Homeric epithet"
+     }
+    ]
+   },
+   {
+    "original": "εὐρὺ κρείων",
+    "transliteration": "eury kreion",
+    "translation": "wide-ruling",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.102 and passim"
+     }
+    ]
+   }
   ],
   "lifecycle": [
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-to-Atreus-and-Aerope-and-exile-after-the-fall-of-the-house", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.15-16; Hom. Il. 2.104-108" }], "notes": "Elder son of Atreus and Aerope. After Aegisthus kills Atreus, the boys are sheltered (Sicyon, then Aetolia) and restored to Mycenae with Tyndareus's help, driving out Thyestes." },
-   { "typeStatus": "scion", "era": "heroic-age", "eraOrdering": 1, "startEvent": "kingship-of-Mycenae-and-marriage-to-Clytemnestra", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.569-580; Apollod. Epit. 2.16" }], "notes": "Most powerful of the Greek kings, lord of Mycenae and 'golden' Argos; weds Clytemnestra, daughter of Tyndareus." },
-   { "typeStatus": "scion", "era": "trojan-war", "eraOrdering": 2, "startEvent": "command-of-the-Greek-expedition-and-the-sacrifice-at-Aulis", "sources": [{ "kind": "primary", "reference": "Hom. Il. 1-2; Aesch. Ag. 184-247; Apollod. Epit. 3.21-22" }], "notes": "Supreme commander of the Achaean coalition against Troy; at Aulis sacrifices (or attempts to sacrifice) his daughter Iphigenia to Artemis for sailing wind — the deed Clytemnestra will avenge." },
-   { "typeStatus": "scion", "era": "trojan-war", "eraOrdering": 3, "startEvent": "the-quarrel-with-Achilles", "sources": [{ "kind": "primary", "reference": "Hom. Il. 1.1-305" }], "notes": "His seizure of Briseis from Achilles — after surrendering his own prize Chryseis — provokes the wrath that drives the Iliad." },
-   { "typeStatus": "scion", "vitalStatus": "dead", "era": "post-trojan-war", "eraOrdering": 4, "startEvent": "murder-on-his-return-home", "sources": [{ "kind": "primary", "reference": "Hom. Od. 11.405-434; Aesch. Ag. 1343-1398" }], "notes": "Killed at his homecoming by Clytemnestra (and Aegisthus): in Aeschylus, snared in a robe/net in the bath and struck with the axe; Cassandra, his Trojan captive, is killed beside him." }
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Atreus-and-Aerope-and-exile-after-the-fall-of-the-house",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.15-16; Hom. Il. 2.104-108"
+     }
+    ],
+    "notes": "Elder son of Atreus and Aerope. After Aegisthus kills Atreus, the boys are sheltered (Sicyon, then Aetolia) and restored to Mycenae with Tyndareus's help, driving out Thyestes."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "kingship-of-Mycenae-and-marriage-to-Clytemnestra",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.569-580; Apollod. Epit. 2.16"
+     }
+    ],
+    "notes": "Most powerful of the Greek kings, lord of Mycenae and 'golden' Argos; weds Clytemnestra, daughter of Tyndareus."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "command-of-the-Greek-expedition-and-the-sacrifice-at-Aulis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1-2; Aesch. Ag. 184-247; Apollod. Epit. 3.21-22"
+     }
+    ],
+    "notes": "Supreme commander of the Achaean coalition against Troy; at Aulis sacrifices (or attempts to sacrifice) his daughter Iphigenia to Artemis for sailing wind — the deed Clytemnestra will avenge."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "the-quarrel-with-Achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.1-305"
+     }
+    ],
+    "notes": "His seizure of Briseis from Achilles — after surrendering his own prize Chryseis — provokes the wrath that drives the Iliad."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "dead",
+    "era": "post-trojan-war",
+    "eraOrdering": 4,
+    "startEvent": "murder-on-his-return-home",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.405-434; Aesch. Ag. 1343-1398"
+     }
+    ],
+    "notes": "Killed at his homecoming by Clytemnestra (and Aegisthus): in Aeschylus, snared in a robe/net in the bath and struck with the axe; Cassandra, his Trojan captive, is killed beside him."
+   }
   ],
   "domains": [
-   { "sphereId": "kingship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.100-108, 9.69 — sovereign of Mycenae and overlord of the Achaeans" }] },
-   { "sphereId": "war", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Hom. Il. 11.91-283 — his aristeia" }] },
-   { "sphereId": "command", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Hom. Il. 1.78-91, 2.477-483" }] }
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.100-108, 9.69 — sovereign of Mycenae and overlord of the Achaeans"
+     }
+    ]
+   },
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.91-283 — his aristeia"
+     }
+    ]
+   },
+   {
+    "sphereId": "command",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.78-91, 2.477-483"
+     }
+    ]
+   }
   ],
   "faculties": [
-   { "id": "supreme-command", "name": "Sovereign command of the Achaean host", "inheritability": "none", "scopeTags": ["leadership", "sovereignty"], "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.100-108 — the sceptre that grants him rule over many isles and all Argos" }] },
-   { "id": "battle-prowess", "name": "Battle prowess", "inheritability": "partial", "scopeTags": ["combat"], "sources": [{ "kind": "primary", "reference": "Hom. Il. 11.91-283 — Agamemnon's aristeia" }] }
+   {
+    "id": "supreme-command",
+    "name": "Sovereign command of the Achaean host",
+    "inheritability": "none",
+    "scopeTags": [
+     "leadership",
+     "sovereignty"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.100-108 — the sceptre that grants him rule over many isles and all Argos"
+     }
+    ]
+   },
+   {
+    "id": "battle-prowess",
+    "name": "Battle prowess",
+    "inheritability": "partial",
+    "scopeTags": [
+     "combat"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.91-283 — Agamemnon's aristeia"
+     }
+    ]
+   }
   ],
   "materialCulture": [
-   { "id": "pelopid-sceptre", "name": "Agamemnon's sceptre (the sceptre of Hephaestus)", "kind": "symbol", "role": "the Hephaestus-wrought staff borne by Zeus, given to Hermes, then handed down Pelops→Atreus→Thyestes→Agamemnon; the emblem of his sovereignty over the Achaeans", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.100-108" }] },
-   { "id": "agamemnon-corslet", "name": "The corslet of Cinyras", "kind": "armor", "role": "the ornate breastplate of gold, tin, and cobalt given to Agamemnon by Cinyras of Cyprus, described as he arms for battle", "sources": [{ "kind": "primary", "reference": "Hom. Il. 11.19-28" }] }
+   {
+    "id": "pelopid-sceptre",
+    "name": "Agamemnon's sceptre (the sceptre of Hephaestus)",
+    "kind": "symbol",
+    "role": "the Hephaestus-wrought staff borne by Zeus, given to Hermes, then handed down Pelops→Atreus→Thyestes→Agamemnon; the emblem of his sovereignty over the Achaeans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.100-108"
+     }
+    ]
+   },
+   {
+    "id": "agamemnon-corslet",
+    "name": "The corslet of Cinyras",
+    "kind": "armor",
+    "role": "the ornate breastplate of gold, tin, and cobalt given to Agamemnon by Cinyras of Cyprus, described as he arms for battle",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.19-28"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "sibling", "personId": "greek_menelaus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Il. 2.104-108; Apollod. Epit. 2.15-16" }], "notes": "Brothers, the Atreidae. RECIPROCAL-NEEDED on greek_menelaus once he is parented to Atreus." },
-   { "kind": "sibling", "personId": "greek_anaxibia_atreid", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Paus. 2.29.4" }] },
-   { "kind": "spouse", "personId": "greek_clytemnestra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 11.405-434; Aesch. Ag." }] },
-   { "kind": "father-of", "personId": "greek_iphigenia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 184-247; Apollod. Epit. 3.21-22" }] },
-   { "kind": "father-of", "personId": "greek_electra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Cho.; Soph. El.; Eur. El." }] },
-   { "kind": "father-of", "personId": "greek_chrysothemis", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Il. 9.145; Soph. El. 157, 328-471" }] },
-   { "kind": "father-of", "personId": "greek_orestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 1.298-300; Aesch. Cho.; Apollod. Epit. 6.24" }] },
-   { "kind": "enemy", "personId": "greek_aegisthus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 3.262-310; Aesch. Ag." }], "notes": "Aegisthus, his father's enemy's incest-son and his killer." }
+   {
+    "kind": "sibling",
+    "personId": "greek_menelaus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.104-108; Apollod. Epit. 2.15-16"
+     }
+    ],
+    "notes": "Brothers, the Atreidae. RECIPROCAL-NEEDED on greek_menelaus once he is parented to Atreus."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_anaxibia_atreid",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_clytemnestra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.405-434; Aesch. Ag."
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_iphigenia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 184-247; Apollod. Epit. 3.21-22"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_electra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Soph. El.; Eur. El."
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_chrysothemis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.145; Soph. El. 157, 328-471"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_orestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 1.298-300; Aesch. Cho.; Apollod. Epit. 6.24"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_aegisthus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.262-310; Aesch. Ag."
+     }
+    ],
+    "notes": "Aegisthus, his father's enemy's incest-son and his killer."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Homer Iliad (throughout), Odyssey 11.405-434; Aeschylus Agamemnon; Apollodorus Epitome 2.15-16, 3.12-22, 6.23; Pausanias 2.16.6-7" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Hom. Il. 2.104-108; Apollod. Epit. 2.15-16" }], "weight": "primary", "notes": "Variant: in some genealogies Agamemnon and Menelaus are sons of Pleisthenes son of Atreus, reared by Atreus — hence the patronymic Atreidae either way." }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad (throughout), Odyssey 11.405-434; Aeschylus Agamemnon; Apollodorus Epitome 2.15-16, 3.12-22, 6.23; Pausanias 2.16.6-7"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.104-108; Apollod. Epit. 2.15-16"
+     }
+    ],
+    "weight": "primary",
+    "notes": "Variant: in some genealogies Agamemnon and Menelaus are sons of Pleisthenes son of Atreus, reared by Atreus — hence the patronymic Atreidae either way."
+   }
   ],
   "notes": "Scion of the Pelopid house (son of the scion Atreus by the mortal Aerope). King of Mycenae and supreme commander of the Greek coalition at Troy — Homer's 'lord of men.' Sacrificed his daughter Iphigenia at Aulis for sailing wind; his quarrel with Achilles over Briseis drives the Iliad. Murdered at his homecoming by his wife Clytemnestra and her lover Aegisthus — snared in a robe and axed in the bath in Aeschylus — the killing that the Odyssey contrasts with Odysseus's safe return and that the Oresteia builds upon. Brother of Menelaus and Anaxibia; father of Iphigenia, Electra, Chrysothemis, and Orestes."
  },
  {
   "id": "greek_clytemnestra",
   "schemaVersion": 2,
-  "name": { "primary": "Clytemnestra", "alt": ["Klytaimnestra", "Clytaemnestra"], "transliterations": { "greek": "Κλυταιμνήστρα" } },
+  "name": {
+   "primary": "Clytemnestra",
+   "alt": [
+    "Klytaimnestra",
+    "Clytaemnestra"
+   ],
+   "transliterations": {
+    "greek": "Κλυταιμνήστρα"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": ["greek_tyndareus", "greek_leda"],
-  "parentRoles": { "greek_tyndareus": "paternal", "greek_leda": "maternal" },
-  "temporal": { "era": "trojan-war", "mythicStart": -1250, "mythicEnd": -1180, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_tyndareus",
+   "greek_leda"
+  ],
+  "parentRoles": {
+   "greek_tyndareus": "paternal",
+   "greek_leda": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1250,
+   "mythicEnd": -1180,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-at-Sparta-to-Tyndareus-and-Leda", "sources": [{ "kind": "primary", "reference": "Apollod. 3.10.6-7; Eur. IA 49-51" }], "notes": "Mortal-fathered daughter of Tyndareus and Leda — full sister of Castor and half-sister of the Zeus-fathered Helen and Pollux." },
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 1, "startEvent": "first-marriage-to-Tantalus-and-its-violent-end", "sources": [{ "kind": "primary", "reference": "Eur. IA 1148-1156; Apollod. Epit. 2.16 (Schol.); Paus. 2.18.2, 2.22.3" }], "notes": "Variant: first wed to Tantalus (son of Thyestes or Broteas), whom Agamemnon slew along with their infant before taking her by force." },
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 2, "startEvent": "marriage-to-Agamemnon-and-queenship-of-Mycenae", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Hom. Od. 11.405-434" }], "notes": "Queen of Mycenae; mother of Iphigenia, Electra, Chrysothemis, and Orestes." },
-   { "typeStatus": "mortal", "era": "trojan-war", "eraOrdering": 3, "startEvent": "the-sacrifice-of-Iphigenia-and-the-affair-with-Aegisthus", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1412-1421, 1431-1447; Hom. Od. 3.262-272" }], "notes": "Embittered by Agamemnon's sacrifice of Iphigenia, she takes Aegisthus as lover and ruler in her husband's absence at Troy." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 4, "startEvent": "the-murder-of-Agamemnon-and-Cassandra", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1372-1398, 1438-1447; Hom. Od. 11.405-434" }], "notes": "Kills Agamemnon on his return — snaring him in a robe/net in the bath and striking him with the axe (Aeschylus) — and slays Cassandra beside him." },
-   { "typeStatus": "mortal", "vitalStatus": "dead", "era": "post-trojan-war", "eraOrdering": 5, "startEvent": "killed-by-her-son-Orestes", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 896-930; Soph. El.; Eur. El., Or." }], "notes": "Killed in turn by her son Orestes, at Apollo's command — the matricide that brings on the Erinyes and the trial of the Eumenides." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-at-Sparta-to-Tyndareus-and-Leda",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.6-7; Eur. IA 49-51"
+     }
+    ],
+    "notes": "Mortal-fathered daughter of Tyndareus and Leda — full sister of Castor and half-sister of the Zeus-fathered Helen and Pollux."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "first-marriage-to-Tantalus-and-its-violent-end",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IA 1148-1156; Apollod. Epit. 2.16 (Schol.); Paus. 2.18.2, 2.22.3"
+     }
+    ],
+    "notes": "Variant: first wed to Tantalus (son of Thyestes or Broteas), whom Agamemnon slew along with their infant before taking her by force."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "marriage-to-Agamemnon-and-queenship-of-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Hom. Od. 11.405-434"
+     }
+    ],
+    "notes": "Queen of Mycenae; mother of Iphigenia, Electra, Chrysothemis, and Orestes."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "the-sacrifice-of-Iphigenia-and-the-affair-with-Aegisthus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1412-1421, 1431-1447; Hom. Od. 3.262-272"
+     }
+    ],
+    "notes": "Embittered by Agamemnon's sacrifice of Iphigenia, she takes Aegisthus as lover and ruler in her husband's absence at Troy."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 4,
+    "startEvent": "the-murder-of-Agamemnon-and-Cassandra",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1372-1398, 1438-1447; Hom. Od. 11.405-434"
+     }
+    ],
+    "notes": "Kills Agamemnon on his return — snaring him in a robe/net in the bath and striking him with the axe (Aeschylus) — and slays Cassandra beside him."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "post-trojan-war",
+    "eraOrdering": 5,
+    "startEvent": "killed-by-her-son-Orestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 896-930; Soph. El.; Eur. El., Or."
+     }
+    ],
+    "notes": "Killed in turn by her son Orestes, at Apollo's command — the matricide that brings on the Erinyes and the trial of the Eumenides."
+   }
   ],
   "domains": [
-   { "sphereId": "queenship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 258-354 — she rules Argos in Agamemnon's absence" }] },
-   { "sphereId": "vengeance", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1412-1447 — avenging Iphigenia" }] }
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 258-354 — she rules Argos in Agamemnon's absence"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1412-1447 — avenging Iphigenia"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [
-   { "id": "clytemnestra-net-robe", "name": "The net-robe (the inescapable garment)", "kind": "garment", "role": "the endless, armless robe / cast-net in which Clytemnestra entangles Agamemnon in the bath so he cannot fend off the axe — displayed over his corpse in the Agamemnon", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 1382-1392, 1492-1494; cf. Cho. 980-1004 (the robe shown as evidence)" }] },
-   { "id": "clytemnestra-axe", "name": "The axe (pelekys) of Clytemnestra", "kind": "weapon", "role": "the bladed axe with which she strikes down Agamemnon; called for again by her when she learns Aegisthus is slain", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 889 (the 'man-felling axe'); Soph. El. 99" }] }
+   {
+    "id": "clytemnestra-net-robe",
+    "name": "The net-robe (the inescapable garment)",
+    "kind": "garment",
+    "role": "the endless, armless robe / cast-net in which Clytemnestra entangles Agamemnon in the bath so he cannot fend off the axe — displayed over his corpse in the Agamemnon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 1382-1392, 1492-1494; cf. Cho. 980-1004 (the robe shown as evidence)"
+     }
+    ]
+   },
+   {
+    "id": "clytemnestra-axe",
+    "name": "The axe (pelekys) of Clytemnestra",
+    "kind": "weapon",
+    "role": "the bladed axe with which she strikes down Agamemnon; called for again by her when she learns Aegisthus is slain",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 889 (the 'man-felling axe'); Soph. El. 99"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "sibling", "personId": "greek_helen", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Eur. IA 49-51; Apollod. 3.10.6-7" }], "notes": "Half-sister — same mother Leda; Clytemnestra mortal-fathered, Helen Zeus-fathered. RECIPROCAL-NEEDED on greek_helen." },
-   { "kind": "sibling", "personId": "greek_castor", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. 3.10.7" }], "notes": "Full sibling — both mortal-fathered children of Tyndareus and Leda. RECIPROCAL-NEEDED on greek_castor." },
-   { "kind": "spouse", "personId": "greek_agamemnon", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 11.405-434; Aesch. Ag." }] },
-   { "kind": "lover", "personId": "greek_aegisthus", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Od. 3.262-272; Aesch. Ag. 1435-1447" }] },
-   { "kind": "mother-of", "personId": "greek_iphigenia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Eur. IA; Aesch. Ag. 1412-1421" }] },
-   { "kind": "mother-of", "personId": "greek_electra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Cho.; Soph. El.; Eur. El." }] },
-   { "kind": "mother-of", "personId": "greek_chrysothemis", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Soph. El. 157, 328-471" }] },
-   { "kind": "mother-of", "personId": "greek_orestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Cho.; Hom. Od. 1.298-300" }] },
-   { "kind": "enemy", "personId": "greek_orestes", "era": "post-trojan-war", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 896-930" }], "notes": "Her killer-son; the matricide." }
+   {
+    "kind": "sibling",
+    "personId": "greek_helen",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IA 49-51; Apollod. 3.10.6-7"
+     }
+    ],
+    "notes": "Half-sister — same mother Leda; Clytemnestra mortal-fathered, Helen Zeus-fathered. RECIPROCAL-NEEDED on greek_helen."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_castor",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.7"
+     }
+    ],
+    "notes": "Full sibling — both mortal-fathered children of Tyndareus and Leda. RECIPROCAL-NEEDED on greek_castor."
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_agamemnon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 11.405-434; Aesch. Ag."
+     }
+    ]
+   },
+   {
+    "kind": "lover",
+    "personId": "greek_aegisthus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 3.262-272; Aesch. Ag. 1435-1447"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_iphigenia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IA; Aesch. Ag. 1412-1421"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_electra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Soph. El.; Eur. El."
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_chrysothemis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 157, 328-471"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_orestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Hom. Od. 1.298-300"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_orestes",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 896-930"
+     }
+    ],
+    "notes": "Her killer-son; the matricide."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Homer Odyssey 3.262-310, 11.405-434, 24.199-202; Aeschylus Agamemnon, Choephoroi; Sophocles Electra; Euripides Electra, Orestes, Iphigenia at Aulis; Apollodorus Epitome 2.16, 6.23-25" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. 3.10.6-7; Eur. IA 49-51 (daughter of Tyndareus and Leda)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Odyssey 3.262-310, 11.405-434, 24.199-202; Aeschylus Agamemnon, Choephoroi; Sophocles Electra; Euripides Electra, Orestes, Iphigenia at Aulis; Apollodorus Epitome 2.16, 6.23-25"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.10.6-7; Eur. IA 49-51 (daughter of Tyndareus and Leda)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal queen of Mycenae; daughter of Tyndareus and Leda, the mortal-fathered half-sister of Helen. Wife and killer of Agamemnon: maddened by his sacrifice of their daughter Iphigenia at Aulis, she takes Aegisthus as lover and, on the king's return, snares him in a robe-net in the bath and cuts him down with the axe, killing Cassandra beside him — the deed at the centre of Aeschylus's Oresteia. Mother of Iphigenia, Electra, Chrysothemis, and Orestes; slain at last by Orestes, the matricide that looses the Erinyes. The mortal line through which her children descend."
  },
  {
   "id": "greek_iphigenia",
   "schemaVersion": 2,
-  "name": { "primary": "Iphigenia", "alt": ["Iphigeneia", "Iphianassa"], "transliterations": { "greek": "Ἰφιγένεια" } },
+  "name": {
+   "primary": "Iphigenia",
+   "alt": [
+    "Iphigeneia",
+    "Iphianassa"
+   ],
+   "transliterations": {
+    "greek": "Ἰφιγένεια"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": ["greek_agamemnon", "greek_clytemnestra"],
-  "parentRoles": { "greek_agamemnon": "paternal", "greek_clytemnestra": "maternal" },
-  "temporal": { "era": "trojan-war", "mythicStart": -1230, "mythicEnd": -1200, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_agamemnon",
+   "greek_clytemnestra"
+  ],
+  "parentRoles": {
+   "greek_agamemnon": "paternal",
+   "greek_clytemnestra": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1230,
+   "mythicEnd": -1200,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-at-Mycenae-to-Agamemnon-and-Clytemnestra", "sources": [{ "kind": "primary", "reference": "Hom. Il. 9.145 (as Iphianassa); Apollod. Epit. 2.16" }], "notes": "Eldest daughter of Agamemnon and Clytemnestra (identified with the Homeric Iphianassa by much of the tradition)." },
-   { "typeStatus": "mortal", "era": "trojan-war", "eraOrdering": 1, "startEvent": "lured-to-Aulis-on-the-pretext-of-marriage-to-Achilles", "sources": [{ "kind": "primary", "reference": "Eur. IA 89-105, 819-899; Apollod. Epit. 3.21-22" }], "notes": "Summoned to Aulis under the false promise of marriage to Achilles; the becalmed fleet requires her sacrifice to appease Artemis (so the seer Calchas)." },
-   { "typeStatus": "mortal", "vitalStatus": "dead", "era": "trojan-war", "eraOrdering": 2, "startEvent": "the-sacrifice-at-Aulis", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 184-247; Eur. IA 1540-1612" }], "notes": "Sacrificed by Agamemnon (Aeschylus treats the killing as accomplished) — the wind returns and the fleet sails; the deed Clytemnestra avenges." },
-   { "typeStatus": "mortal", "era": "trojan-war", "eraOrdering": 3, "startEvent": "the-deer-substitution-and-translation-to-Tauris", "sources": [{ "kind": "primary", "reference": "Eur. IT 26-30, 1450-1467; Cypria fr.; Apollod. Epit. 3.22" }], "notes": "Variant (strong in Euripides): Artemis snatches her from the altar, substituting a deer, and makes her priestess at Tauris — whence Orestes later recovers her; she is honoured at Brauron / Halae." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-at-Mycenae-to-Agamemnon-and-Clytemnestra",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.145 (as Iphianassa); Apollod. Epit. 2.16"
+     }
+    ],
+    "notes": "Eldest daughter of Agamemnon and Clytemnestra (identified with the Homeric Iphianassa by much of the tradition)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "lured-to-Aulis-on-the-pretext-of-marriage-to-Achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IA 89-105, 819-899; Apollod. Epit. 3.21-22"
+     }
+    ],
+    "notes": "Summoned to Aulis under the false promise of marriage to Achilles; the becalmed fleet requires her sacrifice to appease Artemis (so the seer Calchas)."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "the-sacrifice-at-Aulis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 184-247; Eur. IA 1540-1612"
+     }
+    ],
+    "notes": "Sacrificed by Agamemnon (Aeschylus treats the killing as accomplished) — the wind returns and the fleet sails; the deed Clytemnestra avenges."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "the-deer-substitution-and-translation-to-Tauris",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IT 26-30, 1450-1467; Cypria fr.; Apollod. Epit. 3.22"
+     }
+    ],
+    "notes": "Variant (strong in Euripides): Artemis snatches her from the altar, substituting a deer, and makes her priestess at Tauris — whence Orestes later recovers her; she is honoured at Brauron / Halae."
+   }
   ],
   "domains": [
-   { "sphereId": "sacrifice", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Aesch. Ag. 184-247" }] }
+   {
+    "sphereId": "sacrifice",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 184-247"
+     }
+    ]
+   }
   ],
   "faculties": [
-   { "id": "priestess-of-artemis", "name": "Priestess of Artemis at Tauris", "inheritability": "none", "scopeTags": ["ritual", "cult"], "sources": [{ "kind": "primary", "reference": "Eur. IT 34-41, 1462-1467 — under the substitution-variant she serves and later founds Artemis's cult (Brauron/Halae)" }] }
+   {
+    "id": "priestess-of-artemis",
+    "name": "Priestess of Artemis at Tauris",
+    "inheritability": "none",
+    "scopeTags": [
+     "ritual",
+     "cult"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IT 34-41, 1462-1467 — under the substitution-variant she serves and later founds Artemis's cult (Brauron/Halae)"
+     }
+    ]
+   }
   ],
   "materialCulture": [
-   { "id": "aulis-sacrificial-knife", "name": "The sacrificial knife at Aulis", "kind": "tool", "role": "the blade of the sacrifice raised over Iphigenia at the altar of Artemis in Aulis (stayed, in the variant, by Artemis's deer-substitution)", "sources": [{ "kind": "primary", "reference": "Eur. IA 1565-1576; Aesch. Ag. 231-238 (she is lifted over the altar 'like a kid')" }] }
+   {
+    "id": "aulis-sacrificial-knife",
+    "name": "The sacrificial knife at Aulis",
+    "kind": "tool",
+    "role": "the blade of the sacrifice raised over Iphigenia at the altar of Artemis in Aulis (stayed, in the variant, by Artemis's deer-substitution)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IA 1565-1576; Aesch. Ag. 231-238 (she is lifted over the altar 'like a kid')"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "sibling", "personId": "greek_electra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16" }] },
-   { "kind": "sibling", "personId": "greek_chrysothemis", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Il. 9.145; Apollod. Epit. 2.16" }] },
-   { "kind": "sibling", "personId": "greek_orestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Eur. IT 769-826" }] }
+   {
+    "kind": "sibling",
+    "personId": "greek_electra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_chrysothemis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.145; Apollod. Epit. 2.16"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_orestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Eur. IT 769-826"
+     }
+    ]
+   }
   ],
   "variants": [
-   { "id": "helen-theseus-parentage", "claim": "parentage-variant", "citations": [{ "kind": "primary", "reference": "Stesich. fr.; Paus. 2.22.6-7; Cypria fr." }], "weight": "secondary", "notes": "A parallel tradition (registered separately as greek_iphigenia_helen_variant) makes her the demigod daughter of Helen by Theseus, given to Clytemnestra to rear. This entry encodes the dominant Agamemnon+Clytemnestra (mortal) reading; both are active." }
+   {
+    "id": "helen-theseus-parentage",
+    "claim": "parentage-variant",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Stesich. fr.; Paus. 2.22.6-7; Cypria fr."
+     }
+    ],
+    "weight": "secondary",
+    "notes": "A parallel tradition (registered separately as greek_iphigenia_helen_variant) makes her the demigod daughter of Helen by Theseus, given to Clytemnestra to rear. This entry encodes the dominant Agamemnon+Clytemnestra (mortal) reading; both are active."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Homer Iliad 9.145 (Iphianassa); Aeschylus Agamemnon 184-247; Euripides Iphigenia at Aulis, Iphigenia in Tauris; Cypria fr.; Apollodorus Epitome 2.16, 3.21-22; Pausanias 1.33.1, 2.35.1" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Eur. IA (daughter of Agamemnon and Clytemnestra)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad 9.145 (Iphianassa); Aeschylus Agamemnon 184-247; Euripides Iphigenia at Aulis, Iphigenia in Tauris; Cypria fr.; Apollodorus Epitome 2.16, 3.21-22; Pausanias 1.33.1, 2.35.1"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Eur. IA (daughter of Agamemnon and Clytemnestra)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal eldest daughter of Agamemnon and Clytemnestra (the dominant tradition; cf. the separate demigod Helen-Theseus entry greek_iphigenia_helen_variant). Lured to Aulis on a false promise of marriage to Achilles and sacrificed by her father to win the fleet sailing wind — the act that turns Clytemnestra to murder and pivots the whole Atreid tragedy. In the strong Euripidean variant Artemis substitutes a deer at the altar and translates her to Tauris as her priestess, where Orestes later finds her; honoured in the Artemis cult at Brauron and Halae. Authored mortal: a scion father and mortal mother."
  },
  {
   "id": "greek_electra",
   "schemaVersion": 2,
-  "name": { "primary": "Electra", "alt": ["Elektra", "Laodice"], "transliterations": { "greek": "Ἠλέκτρα" } },
+  "name": {
+   "primary": "Electra",
+   "alt": [
+    "Elektra",
+    "Laodice"
+   ],
+   "transliterations": {
+    "greek": "Ἠλέκτρα"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": ["greek_agamemnon", "greek_clytemnestra"],
-  "parentRoles": { "greek_agamemnon": "paternal", "greek_clytemnestra": "maternal" },
-  "temporal": { "era": "trojan-war", "mythicStart": -1225, "mythicEnd": -1160, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_agamemnon",
+   "greek_clytemnestra"
+  ],
+  "parentRoles": {
+   "greek_agamemnon": "paternal",
+   "greek_clytemnestra": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1225,
+   "mythicEnd": -1160,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-at-Mycenae", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Aesch. Cho. 16-21" }], "notes": "Daughter of Agamemnon and Clytemnestra (the Homeric Laodice of Il. 9.145 by the tragic identification)." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 1, "startEvent": "saving-the-infant-Orestes-and-her-years-of-mourning", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 130-151; Soph. El. 11-14, 1130-1170" }], "notes": "After the murder of Agamemnon she smuggles the child Orestes to safety in Phocis and lives degraded under Aegisthus and Clytemnestra, sustaining her grief and longing for vengeance." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 2, "startEvent": "recognition-of-Orestes-and-the-vengeance", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 164-245; Soph. El. 1098-1510; Eur. El. 215-431, 962-1146" }], "notes": "Recognizes the returned Orestes at Agamemnon's tomb and drives on (in Euripides, helps enact) the killing of Clytemnestra and Aegisthus." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 3, "startEvent": "marriage-to-Pylades", "sources": [{ "kind": "primary", "reference": "Eur. El. 1249, 1340-1341; Eur. Or. 1658-1659; Apollod. Epit. 6.24" }], "notes": "Given in marriage to Pylades, Orestes's Phocian companion (and her cousin via Anaxibia)." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-at-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Aesch. Cho. 16-21"
+     }
+    ],
+    "notes": "Daughter of Agamemnon and Clytemnestra (the Homeric Laodice of Il. 9.145 by the tragic identification)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "saving-the-infant-Orestes-and-her-years-of-mourning",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 130-151; Soph. El. 11-14, 1130-1170"
+     }
+    ],
+    "notes": "After the murder of Agamemnon she smuggles the child Orestes to safety in Phocis and lives degraded under Aegisthus and Clytemnestra, sustaining her grief and longing for vengeance."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "recognition-of-Orestes-and-the-vengeance",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 164-245; Soph. El. 1098-1510; Eur. El. 215-431, 962-1146"
+     }
+    ],
+    "notes": "Recognizes the returned Orestes at Agamemnon's tomb and drives on (in Euripides, helps enact) the killing of Clytemnestra and Aegisthus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "marriage-to-Pylades",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. El. 1249, 1340-1341; Eur. Or. 1658-1659; Apollod. Epit. 6.24"
+     }
+    ],
+    "notes": "Given in marriage to Pylades, Orestes's Phocian companion (and her cousin via Anaxibia)."
+   }
   ],
   "domains": [
-   { "sphereId": "mourning", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Soph. El. 86-120 — her unending lament for Agamemnon" }] },
-   { "sphereId": "vengeance", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Soph. El. 947-989" }] }
+   {
+    "sphereId": "mourning",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 86-120 — her unending lament for Agamemnon"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 947-989"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [],
   "relations": [
-   { "kind": "sibling", "personId": "greek_iphigenia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16" }] },
-   { "kind": "sibling", "personId": "greek_chrysothemis", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Soph. El. 157, 328-471" }] },
-   { "kind": "sibling", "personId": "greek_orestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Cho.; Soph. El.; Eur. El." }] },
-   { "kind": "spouse", "externalRef": { "name": "Pylades (son of Strophius and Anaxibia; companion of Orestes; not yet registered)", "tradition": "Greek" }, "era": "post-trojan-war", "sources": [{ "kind": "primary", "reference": "Eur. El. 1340-1341; Eur. Or. 1658-1659; Apollod. Epit. 6.24" }] }
+   {
+    "kind": "sibling",
+    "personId": "greek_iphigenia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_chrysothemis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 157, 328-471"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_orestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Soph. El.; Eur. El."
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "externalRef": {
+     "name": "Pylades (son of Strophius and Anaxibia; companion of Orestes; not yet registered)",
+     "tradition": "Greek"
+    },
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. El. 1340-1341; Eur. Or. 1658-1659; Apollod. Epit. 6.24"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_pylades",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Aeschylus Choephoroi; Sophocles Electra; Euripides Electra, Orestes; Apollodorus Epitome 2.16, 6.24; Hyginus Fabulae 122; Pausanias 2.16.7" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Aesch. Cho. (daughter of Agamemnon and Clytemnestra)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus Choephoroi; Sophocles Electra; Euripides Electra, Orestes; Apollodorus Epitome 2.16, 6.24; Hyginus Fabulae 122; Pausanias 2.16.7"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Aesch. Cho. (daughter of Agamemnon and Clytemnestra)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal daughter of Agamemnon and Clytemnestra (identified with the Homeric Laodice). The grieving, vengeance-driven sister at the heart of the Choephoroi and of the two Electra plays: she saved the infant Orestes, lived degraded under his murderers, and on his return recognized and incited (or helped) him to kill Clytemnestra and Aegisthus. Afterwards married to Pylades. Sister of Iphigenia, Chrysothemis, and Orestes. Authored mortal: a scion father and mortal mother."
  },
  {
   "id": "greek_chrysothemis",
   "schemaVersion": 2,
-  "name": { "primary": "Chrysothemis", "alt": ["Chrysothemis daughter of Agamemnon"], "transliterations": { "greek": "Χρυσόθεμις" } },
+  "name": {
+   "primary": "Chrysothemis",
+   "alt": [
+    "Chrysothemis daughter of Agamemnon"
+   ],
+   "transliterations": {
+    "greek": "Χρυσόθεμις"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "female",
   "vitalStatus": "dead",
-  "parentIds": ["greek_agamemnon", "greek_clytemnestra"],
-  "parentRoles": { "greek_agamemnon": "paternal", "greek_clytemnestra": "maternal" },
-  "temporal": { "era": "trojan-war", "mythicStart": -1225, "mythicEnd": -1160, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_agamemnon",
+   "greek_clytemnestra"
+  ],
+  "parentRoles": {
+   "greek_agamemnon": "paternal",
+   "greek_clytemnestra": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1225,
+   "mythicEnd": -1160,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-at-Mycenae", "sources": [{ "kind": "primary", "reference": "Hom. Il. 9.145, 9.287; Apollod. Epit. 2.16" }], "notes": "Named first among Agamemnon's three daughters in the Iliad's embassy (with Laodice and Iphianassa)." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 1, "startEvent": "the-compliant-sister", "sources": [{ "kind": "primary", "reference": "Soph. El. 328-471, 871-1057" }], "notes": "In Sophocles's Electra, the cautious sister who submits to Aegisthus and Clytemnestra and counsels Electra against open defiance — the foil to Electra's defiance." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-at-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.145, 9.287; Apollod. Epit. 2.16"
+     }
+    ],
+    "notes": "Named first among Agamemnon's three daughters in the Iliad's embassy (with Laodice and Iphianassa)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-compliant-sister",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 328-471, 871-1057"
+     }
+    ],
+    "notes": "In Sophocles's Electra, the cautious sister who submits to Aegisthus and Clytemnestra and counsels Electra against open defiance — the foil to Electra's defiance."
+   }
   ],
   "domains": [
-   { "sphereId": "prudence", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Soph. El. 332-340, 1015-1016 — her counsel of submission" }] }
+   {
+    "sphereId": "prudence",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 332-340, 1015-1016 — her counsel of submission"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [],
   "relations": [
-   { "kind": "sibling", "personId": "greek_iphigenia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Hom. Il. 9.145; Apollod. Epit. 2.16" }] },
-   { "kind": "sibling", "personId": "greek_electra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Soph. El. 157, 328-471" }] },
-   { "kind": "sibling", "personId": "greek_orestes", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Soph. El.; Apollod. Epit. 2.16" }] }
+   {
+    "kind": "sibling",
+    "personId": "greek_iphigenia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.145; Apollod. Epit. 2.16"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_electra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 157, 328-471"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_orestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El.; Apollod. Epit. 2.16"
+     }
+    ]
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Homer Iliad 9.145, 9.287; Sophocles Electra 157, 328-471, 871-1057; Apollodorus Epitome 2.16" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Hom. Il. 9.145; Apollod. Epit. 2.16 (daughter of Agamemnon)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad 9.145, 9.287; Sophocles Electra 157, 328-471, 871-1057; Apollodorus Epitome 2.16"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 9.145; Apollod. Epit. 2.16 (daughter of Agamemnon)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal daughter of Agamemnon and Clytemnestra; the first-named of the three daughters Agamemnon offers Achilles in Iliad 9. In Sophocles's Electra she is the prudent, submissive sister — the dramatic foil to Electra, declining to join the vengeance she fears. Sister of Iphigenia, Electra, and Orestes. Authored mortal: a scion father and mortal mother."
  },
  {
   "id": "greek_orestes",
   "schemaVersion": 2,
-  "name": { "primary": "Orestes", "alt": ["Orestes Agamemnonides"], "transliterations": { "greek": "Ὀρέστης" } },
+  "name": {
+   "primary": "Orestes",
+   "alt": [
+    "Orestes Agamemnonides"
+   ],
+   "transliterations": {
+    "greek": "Ὀρέστης"
+   }
+  },
   "type": "mortal",
   "origin": "canon",
   "tradition": "Greek",
   "primaryTradition": "Greek",
   "sex": "male",
   "vitalStatus": "dead",
-  "parentIds": ["greek_agamemnon", "greek_clytemnestra"],
-  "parentRoles": { "greek_agamemnon": "paternal", "greek_clytemnestra": "maternal" },
-  "temporal": { "era": "post-trojan-war", "mythicStart": -1220, "mythicEnd": -1150, "mythicPrecision": "generation-bracket" },
+  "parentIds": [
+   "greek_agamemnon",
+   "greek_clytemnestra"
+  ],
+  "parentRoles": {
+   "greek_agamemnon": "paternal",
+   "greek_clytemnestra": "maternal"
+  },
+  "temporal": {
+   "era": "post-trojan-war",
+   "mythicStart": -1220,
+   "mythicEnd": -1150,
+   "mythicPrecision": "generation-bracket"
+  },
   "lifecycle": [
-   { "typeStatus": "mortal", "era": "heroic-age", "eraOrdering": 0, "startEvent": "birth-and-rescue-to-Phocis", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 130-151; Hom. Od. 3.306-310; Pind. Pyth. 11.15-37" }], "notes": "Only son of Agamemnon and Clytemnestra; spirited away as a child after his father's murder and reared in Phocis at the court of Strophius alongside Pylades." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 1, "startEvent": "the-return-and-the-matricide", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 269-305, 875-934; Hom. Od. 1.298-300; Soph. El.; Eur. El." }], "notes": "Returns at Apollo's command to avenge Agamemnon; kills Aegisthus and then his mother Clytemnestra — the matricide that the Odyssey praises but Aeschylus problematizes." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 2, "startEvent": "pursuit-by-the-Erinyes-and-the-trial-at-Athens", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 1021-1076; Aesch. Eum. 94-1047" }], "notes": "Hounded mad by his mother's Erinyes; takes refuge at Delphi, is tried before the Areopagus, and is acquitted by Athena's vote — the Erinyes reconciled as the Eumenides." },
-   { "typeStatus": "mortal", "era": "post-trojan-war", "eraOrdering": 3, "startEvent": "the-recovery-of-the-Taurian-image-and-Iphigenia", "sources": [{ "kind": "primary", "reference": "Eur. IT 77-122, 1435-1474; Apollod. Epit. 6.26-27" }], "notes": "Sent by Apollo to fetch the wooden image of Artemis from Tauris to be cleansed; there recognizes and rescues his sister Iphigenia." },
-   { "typeStatus": "mortal", "vitalStatus": "dead", "era": "post-heroic-age", "eraOrdering": 4, "startEvent": "kingship-marriage-to-Hermione-and-death-by-snakebite", "sources": [{ "kind": "primary", "reference": "Eur. Or. 1653-1660, Andr. 966-1010; Apollod. Epit. 6.28; Paus. 2.18.6, 8.5.4" }], "notes": "King of Mycenae/Argos and Sparta; marries his cousin Hermione (after Neoptolemus's death); dies of a snakebite at Oresteion in Arcadia in old age." }
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-and-rescue-to-Phocis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 130-151; Hom. Od. 3.306-310; Pind. Pyth. 11.15-37"
+     }
+    ],
+    "notes": "Only son of Agamemnon and Clytemnestra; spirited away as a child after his father's murder and reared in Phocis at the court of Strophius alongside Pylades."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-return-and-the-matricide",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 269-305, 875-934; Hom. Od. 1.298-300; Soph. El.; Eur. El."
+     }
+    ],
+    "notes": "Returns at Apollo's command to avenge Agamemnon; kills Aegisthus and then his mother Clytemnestra — the matricide that the Odyssey praises but Aeschylus problematizes."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "pursuit-by-the-Erinyes-and-the-trial-at-Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 1021-1076; Aesch. Eum. 94-1047"
+     }
+    ],
+    "notes": "Hounded mad by his mother's Erinyes; takes refuge at Delphi, is tried before the Areopagus, and is acquitted by Athena's vote — the Erinyes reconciled as the Eumenides."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "the-recovery-of-the-Taurian-image-and-Iphigenia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IT 77-122, 1435-1474; Apollod. Epit. 6.26-27"
+     }
+    ],
+    "notes": "Sent by Apollo to fetch the wooden image of Artemis from Tauris to be cleansed; there recognizes and rescues his sister Iphigenia."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "post-heroic-age",
+    "eraOrdering": 4,
+    "startEvent": "kingship-marriage-to-Hermione-and-death-by-snakebite",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1653-1660, Andr. 966-1010; Apollod. Epit. 6.28; Paus. 2.18.6, 8.5.4"
+     }
+    ],
+    "notes": "King of Mycenae/Argos and Sparta; marries his cousin Hermione (after Neoptolemus's death); dies of a snakebite at Oresteion in Arcadia in old age."
+   }
   ],
   "domains": [
-   { "sphereId": "vengeance", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 269-305" }] },
-   { "sphereId": "kingship", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Eur. Or. 1660; Paus. 2.18.5-6 — king of Argos and Sparta" }] },
-   { "sphereId": "purification", "contextTag": "episodic", "sources": [{ "kind": "primary", "reference": "Aesch. Eum. 235-243, 282-298" }] }
+   {
+    "sphereId": "vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 269-305"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1660; Paus. 2.18.5-6 — king of Argos and Sparta"
+     }
+    ]
+   },
+   {
+    "sphereId": "purification",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Eum. 235-243, 282-298"
+     }
+    ]
+   }
   ],
   "faculties": [],
   "materialCulture": [
-   { "id": "taurian-artemis-image", "name": "The wooden image (xoanon) of Taurian Artemis", "kind": "symbol", "role": "the sky-fallen cult-statue of Artemis Orestes is sent to bring from Tauris to Greece; installed at Halae/Brauron (or Sparta as Artemis Orthia)", "sources": [{ "kind": "primary", "reference": "Eur. IT 85-92, 1453-1467; Paus. 3.16.7-11" }] }
+   {
+    "id": "taurian-artemis-image",
+    "name": "The wooden image (xoanon) of Taurian Artemis",
+    "kind": "symbol",
+    "role": "the sky-fallen cult-statue of Artemis Orestes is sent to bring from Tauris to Greece; installed at Halae/Brauron (or Sparta as Artemis Orthia)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IT 85-92, 1453-1467; Paus. 3.16.7-11"
+     }
+    ]
+   }
   ],
   "relations": [
-   { "kind": "sibling", "personId": "greek_iphigenia", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Apollod. Epit. 2.16; Eur. IT 769-826" }] },
-   { "kind": "sibling", "personId": "greek_electra", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Aesch. Cho.; Soph. El.; Eur. El." }] },
-   { "kind": "sibling", "personId": "greek_chrysothemis", "era": "heroic-age", "sources": [{ "kind": "primary", "reference": "Soph. El.; Apollod. Epit. 2.16" }] },
-   { "kind": "enemy", "personId": "greek_aegisthus", "era": "post-trojan-war", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 838-934; Hom. Od. 1.298-300" }], "notes": "Reciprocates Aegisthus's enemy edge — Orestes is his killer." },
-   { "kind": "enemy", "personId": "greek_clytemnestra", "era": "post-trojan-war", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 896-930" }], "notes": "His mother and his victim — the matricide. Reciprocates Clytemnestra's enemy edge." },
-   { "kind": "spouse", "personId": "greek_hermione", "era": "post-trojan-war", "sources": [{ "kind": "primary", "reference": "Eur. Or. 1653-1657, Andr. 966-1010; Apollod. Epit. 6.14, 6.28" }], "notes": "His cousin, daughter of Menelaus and Helen. RECIPROCAL-NEEDED — greek_hermione already records a spouse externalRef to 'Orestes' that should now resolve to this id." },
-   { "kind": "antagonist", "personId": "greek_hesiod_erinyes", "era": "post-trojan-war", "sources": [{ "kind": "primary", "reference": "Aesch. Cho. 1048-1062; Aesch. Eum. 94-1047" }], "notes": "Reciprocates the existing greek_hesiod_erinyes antagonist edge naming Orestes (matricide pursued to the Areopagus)." }
+   {
+    "kind": "sibling",
+    "personId": "greek_iphigenia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 2.16; Eur. IT 769-826"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_electra",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Soph. El.; Eur. El."
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_chrysothemis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El.; Apollod. Epit. 2.16"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_aegisthus",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 838-934; Hom. Od. 1.298-300"
+     }
+    ],
+    "notes": "Reciprocates Aegisthus's enemy edge — Orestes is his killer."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_clytemnestra",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 896-930"
+     }
+    ],
+    "notes": "His mother and his victim — the matricide. Reciprocates Clytemnestra's enemy edge."
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_hermione",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1653-1657, Andr. 966-1010; Apollod. Epit. 6.14, 6.28"
+     }
+    ],
+    "notes": "His cousin, daughter of Menelaus and Helen. RECIPROCAL-NEEDED — greek_hermione already records a spouse externalRef to 'Orestes' that should now resolve to this id."
+   },
+   {
+    "kind": "antagonist",
+    "personId": "greek_hesiod_erinyes",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 1048-1062; Aesch. Eum. 94-1047"
+     }
+    ],
+    "notes": "Reciprocates the existing greek_hesiod_erinyes antagonist edge naming Orestes (matricide pursued to the Areopagus)."
+   },
+   {
+    "kind": "companion",
+    "personId": "greek_pylades",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
   ],
   "sources": [
-   { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Homer Odyssey 1.298-300, 3.306-310, 4.512-547; Aeschylus Choephoroi, Eumenides; Sophocles Electra; Euripides Electra, Orestes, Iphigenia in Tauris, Andromache; Apollodorus Epitome 6.24-28; Pausanias 2.18.5-6, 8.5.4" }], "weight": "primary" },
-   { "claim": "parentage", "citations": [{ "kind": "primary", "reference": "Hom. Od. 1.298-300; Aesch. Cho.; Apollod. Epit. 2.16 (son of Agamemnon and Clytemnestra)" }], "weight": "primary" }
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Odyssey 1.298-300, 3.306-310, 4.512-547; Aeschylus Choephoroi, Eumenides; Sophocles Electra; Euripides Electra, Orestes, Iphigenia in Tauris, Andromache; Apollodorus Epitome 6.24-28; Pausanias 2.18.5-6, 8.5.4"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 1.298-300; Aesch. Cho.; Apollod. Epit. 2.16 (son of Agamemnon and Clytemnestra)"
+     }
+    ],
+    "weight": "primary"
+   }
   ],
   "notes": "Mortal only son of Agamemnon and Clytemnestra; the avenger of the Oresteia. Saved as a child to Phocis and bound to Pylades, he returns at Apollo's command, kills Aegisthus and his own mother, and is hounded mad by her Erinyes until his acquittal before the Areopagus turns the Furies into the Eumenides — Aeschylus's myth of the birth of the law-court. Later fetches the Taurian image of Artemis and rescues his sister Iphigenia; reigns over Argos and Sparta, marries his cousin Hermione, and dies of a snakebite in old age. Sister-bonded to Iphigenia, Electra, and Chrysothemis. Authored mortal: a scion father and mortal mother."
  }

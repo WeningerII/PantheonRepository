@@ -2975,7 +2975,7 @@ const buildPeopleSeed = () => {
         // textualStart/End inherit from ERA_DATES['Greek']['heroic-age'] defaults
         mythicPrecision: 'generation-bracket',
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_proetus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'sibling', externalRef: { name: 'Proetus (twin of Acrisius, king of Tiryns)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.2.1; twin enmity in the womb' }], notes: 'Proetus entry pending — twin brother who fought him from the womb; later contested the kingship of Argos.' },
       ],
       death: {
@@ -3148,7 +3148,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'pterelaus-war-and-loss-of-sons', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Apollod. 2.4.6' }], notes: 'The Pterelaus war over the disputed Taphian inheritance led to the deaths of all his sons except Licymnius.' },
         { typeStatus: 'quartigod', startEvent: 'accidental-death-by-Amphitryons-club', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Apollod. 2.4.6' }], notes: 'Killed accidentally by his nephew-and-son-in-law Amphitryon during a cattle dispute; the slaying drove Amphitryon and Alcmene into exile from Mycenae and produced the Theban exile that subsequently led to Heracles\'s conception.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_alcaeus_perseus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'sibling', externalRef: { name: 'Alcaeus (son of Perseus, brother of Electryon, paternal grandfather of Heracles)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.5' }], notes: 'Alcaeus = father of Amphitryon. Pending entry.' },
       ],
       death: {
@@ -3607,7 +3607,7 @@ const buildPeopleSeed = () => {
         { kind: 'rule', placeName: 'Mysia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.9.1' }] },
       ],
       lifecycle: [{ typeStatus: 'demigod', startEvent: 'birth', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Apollod. 3.9.1' }] }],
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_astyoche_laomedon', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father-of', personId: 'greek_apollod_eurypylus_telephus', era: 'pre-trojan-war', sources: [{ kind: 'primary', reference: 'Homer, Odyssey 11.519-22; Apollod. Epit. 5.12' }] },
       ],
       faculties: [{ id: 'physical-strength-extreme', scopeTags: ['combat'], domainTag: 'physical-force', limitTags: [], manifestationTags: [], inheritability: 'full', sources: [{ kind: 'primary', reference: 'Apollod. epit. 3.17 (wounds Achilles)' }] }],
@@ -4601,7 +4601,7 @@ const buildPeopleSeed = () => {
         // textualStart/End inherit from ERA_DATES['Greek']['heroic-age'] defaults
         mythicPrecision: 'generation-bracket',
       },
-      relations: [ { kind: 'sibling', personId: 'greek_clytemnestra', notes: 'Reciprocal of the Atreid/Trojan-cluster genealogy.' },
+      relations: [ { kind: 'spouse', personId: 'greek_hilaeira', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'sibling', personId: 'greek_clytemnestra', notes: 'Reciprocal of the Atreid/Trojan-cluster genealogy.' },
         { kind: 'sibling', personId: 'greek_helen', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.10.7' }], notes: 'Reciprocal of greek_helen.sibling' },
         { kind: 'sibling', personId: 'greek_pollux', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 11.298-304; Pind. Nem. 10' }], notes: 'Heteropaternal twin — same mother (Leda), different fathers (Tyndareus mortal vs. Zeus divine). The Dioscuri.' },
         { kind: 'father-of', personId: 'greek_anogon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollodorus 3.11.2; Pausanias 2.22.5' }] },
@@ -4975,7 +4975,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Lavinium (modern Pratica di Mare, Lazio)', period: 'archaic-roman-imperial', sources: [{ kind: 'primary', reference: 'Liv. 1.2.6; Dion. Hal. 1.64; CIL XIV 2065 (the Lar Aeneas inscription)' }], notes: 'Aeneas\'s foundation and burial site; mother-temple of the Penates; the heroön at Lavinium received continuous cult through the Roman period.' },
         ],
       },
-      relations: [ { kind: 'spouse', personId: 'greek_creusa_troy', notes: 'Reciprocal of the Atreid/Trojan-cluster genealogy.' },
+      relations: [ { kind: 'spouse', personId: 'greek_lavinia', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'spouse', personId: 'greek_creusa_troy', notes: 'Reciprocal of the Atreid/Trojan-cluster genealogy.' },
         { kind: 'enemy', externalRef: { name: 'Turnus (Italic Rutulian king, antagonist of Aeneas in the Aeneid; son of Daunus and the nymph Venilia; not registered under strict rule)', tradition: 'Roman' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Verg. Aen. 7-12' }], notes: 'Relationship to deleted entry — see externalRef' },
         { kind: 'killer-of', externalRef: { name: 'Turnus (Italic Rutulian king, antagonist of Aeneas in the Aeneid; son of Daunus and the nymph Venilia; not registered under strict rule)', tradition: 'Roman' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Verg. Aen. 12.887-952' }], notes: 'Relationship to deleted entry — see externalRef' },
         { kind: 'father-of', personId: 'greek_apollod_ascanius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Verg. Aen. passim; Liv. 1.3' }] },
@@ -5607,7 +5607,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Ceos — cult of Zeus Ikmaios via Aristaeus', period: 'archaic-and-classical', sources: [{ kind: 'primary', reference: 'Apollon. Rhod. 2.516-527; Diod. 4.82.1-3' }], notes: 'Aristaeus\'s sacrifice to Zeus Ikmaios on Ceos ended a plague and established the local cult; the etiology of the Etesian winds.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_autonoe', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'spouse', externalRef: { name: 'Autonoë', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.4.4' }], notes: 'Daughter of Cadmus and Harmonia of Thebes.' },
         { kind: 'father-of', externalRef: { name: 'Actaeon', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.4.4' }], notes: 'Torn apart by his own hounds for seeing Artemis bathing.' },
       ],
@@ -5728,7 +5728,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'mortal', startEvent: 'marriage-to-Xuthus-of-Hellen', era: 'heroic-age', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Eur. Ion 57-67; Apollod. 1.7.3' }], notes: 'Married Xuthus son of Hellen as political-alliance after the Eumolpus war; the marriage produced no children (the implicit punishment for Creusa\'s long-secret of the Apollo-rape).' },
         { typeStatus: 'mortal', startEvent: 'reunion-with-Ion-at-Delphi', era: 'heroic-age', eraOrdering: 4, sources: [{ kind: 'primary', reference: 'Eur. Ion (entire play structures around this reunion)' }], notes: 'Came to Delphi with Xuthus to consult the oracle about childlessness; nearly killed Ion (whom Xuthus had been told was his son by an earlier liaison) before the recognition. The play\'s denouement establishes Ion as son of Apollo and Creusa, founder of the Ionian people; Xuthus accepts the social-paternity without learning the truth.' },
       ],
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_xuthus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'lover', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Eur. Ion 10-11; Apollod. 1.7.3' }], notes: 'Rape — Euripides Ion explicitly thematizes the violence and shame.' },
         { kind: 'mother-of', personId: 'greek_ion_athens', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Eur. Ion; Apollod. 1.7.3' }] },
         { kind: 'spouse', externalRef: { name: 'Xuthus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Eur. Ion 57-67; Apollod. 1.7.3' }], notes: 'Son of Hellen; eponymous-ancestor of various Greek tribes through his sons by Creusa (Achaeus and Diomede in some traditions; Ion\'s social paternity attributed to him as cover).' },
@@ -5991,7 +5991,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'demigod', startEvent: 'rescue-of-Phineus-from-Harpies', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Apollon. Argon. 2.234-300; Apollod. 1.9.21' }], notes: 'When the Argo reached the blind Thracian seer Phineus — tormented by the Harpies who fouled his food — the Boreads rose into the air on their wings and chased the Harpies south to the Strophades islands. The Harpies were forbidden from troubling Phineus thereafter.' },
         { typeStatus: 'demigod', startEvent: 'death-by-Heracles-on-return-voyage', era: 'heroic-age', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Apollod. 1.9.19, 3.15.2' }], notes: 'On the return voyage, the Argonauts left Heracles behind in Mysia (he had gone in search of Hylas). The Boreads reportedly persuaded Jason not to wait. Heracles, in retaliation, killed both Boreads on Tenos (the variant tradition has him kill them later, in revenge for the abandonment). Buried on Tenos with grave-stones that swayed in the wind in honor of their father Boreas.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_chione_boread', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'enemy', personId: 'greek_phineus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'sibling', personId: 'greek_cleopatra_boread', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Paus. 3.15.1' }] },
         { kind: 'twin-sibling', personId: 'greek_zetes', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Apollon. 1.211-223' }] },
         { kind: 'killed-by', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.19' }] },
@@ -6022,7 +6022,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'demigod', startEvent: 'rescue-of-Phineus-from-Harpies', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Apollon. Argon. 2.234-300; Apollod. 1.9.21' }], notes: 'Together with his twin Calais, chased the Harpies from the table of the blind seer Phineus, pursuing them south to the Strophades islands.' },
         { typeStatus: 'demigod', startEvent: 'death-by-Heracles-on-return-voyage', era: 'heroic-age', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Apollod. 1.9.19, 3.15.2' }], notes: 'Killed by Heracles on Tenos in retaliation for the Mysia-abandonment. Buried alongside his twin.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_chione_boread', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'enemy', personId: 'greek_phineus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'sibling', personId: 'greek_cleopatra_boread', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Paus. 3.15.1' }] },
         { kind: 'twin-sibling', personId: 'greek_calais', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Apollon. 1.211-223' }] },
         { kind: 'killed-by', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.19' }] },
@@ -6068,7 +6068,7 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
         { claim: 'parentage', citations: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Paus. 3.15.1-4; Diod. 4.43.3' }], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_chione_boread', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'spouse', personId: 'greek_phineus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'sibling', externalRef: { name: 'Chione the Boread (Thracian snow-nymph; mother of Eumolpus by Poseidon. Distinct from the homonymous greek_chione, daughter of Daedalion and mother of Autolycus by Hermes — registered separately. Not registered as standalone entry per the registry\'s convention against registering nymph-class beings.)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Paus. 3.15.1' }] },
         { kind: 'father', personId: 'greek_hesiod_boreas', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Paus. 3.15.1' }] },
         { kind: 'mother', personId: 'greek_oreithyia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.15.2; Paus. 3.15.1' }] },
@@ -7924,7 +7924,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Athens — the Theseion (Hephaisteion in modern naming)', period: 'classical-imperial', sources: [{ kind: 'primary', reference: 'Plut. Thes. 36; Paus. 1.17' }], notes: 'Cimon brought back what he claimed were Theseus\'s bones from Skyros in 476 BCE.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_phaedra', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'half-sibling', externalRef: { name: 'Medus (son of Medea by Aegeus; not registered as cascade descendant under strict rule)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 1.5-6; Plut. Thes. 12' }], notes: 'Half-brother through their shared father Aegeus; Medea attempted to eliminate Theseus to secure Medus\'s Athenian succession.' },
         { kind: 'lover', personId: 'greek_helen', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Plut. Thes. 31; Apollod. Epit. 1.23; Stesich. fr.; Paus. 2.22.6-7' }], notes: 'Reciprocal of greek_helen.lover' },
         { kind: 'lover', externalRef: { name: 'Ariadne (daughter of Minos and Pasiphae, helped Theseus escape the Labyrinth; not registered as Pasiphae-line cascade)', tradition: 'Greek' }, era: 'heroic-age', endingEvent: 'abandonment-on-Naxos', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 1.8-9; Plut. Theseus 19' }] },
@@ -8060,7 +8060,7 @@ const buildPeopleSeed = () => {
       domains: [
         { sphereId: 'kingship-of-Iolcus-usurpation', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apoll. Rhod. 1.5-22; Apollod. 1.9.8-16' }] },
       ],
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_anaxibia_bias', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'sibling', personId: 'greek_neleus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 11.235-259' }] },
         { kind: 'father-of', personId: 'greek_acastus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.10' }] },
         { kind: 'father-of', personId: 'greek_alcestis', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.10' }] },
@@ -8110,7 +8110,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Tiber Island, Rome — the Aesculapian temple', period: 'roman', sources: [{ kind: 'primary', reference: 'Liv. 10.47, 29.11; Ov. Met. 15.622-744' }], notes: 'Cult imported to Rome 293 BCE during a plague; the serpent of Epidaurus chose the Tiber Island as its landing place per Ovid.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'lover', personId: 'greek_aristodama', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'spouse', personId: 'greek_epione', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father-of', personId: 'greek_apollod_machaon', era: 'pre-trojan-war', sources: [{ kind: 'primary', reference: 'Hom. Il. 4.193; Apollod. Epit. 3.14' }] },
         { kind: 'father-of', personId: 'greek_apollod_podalirius', era: 'pre-trojan-war', sources: [{ kind: 'primary', reference: 'Hom. Il. 11.833; Apollod. Epit. 3.14' }] },
         { kind: 'father-of', personId: 'greek_hygieia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anonymous Erythraean Paean (Inscr. Erythrai 205)' }] },
@@ -8868,7 +8868,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Helike (Achaea)', period: 'archaic-through-classical', sources: [{ kind: 'primary', reference: 'Strab. 8.7.2' }], notes: 'Major Achaean cult center; the city was destroyed by an earthquake-tsunami in 373 BCE — interpreted as Poseidon\'s reprisal for an earlier sacrilege.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'lover', personId: 'greek_chione_boread', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'equated-with', personId: 'roman_neptunus', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Neptunus is the canonical Latin parallel to Greek Poseidon through interpretatio Romana; the pre-equation Italic Neptune was a freshwater/spring deity (Neptunalia festival) and the marine-Poseidon identification was added through Hellenic interpretatio.' },
         { kind: 'lover', personId: 'greek_eurynome', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hes. fr. 43a; Apollod. 2.3.1' }], notes: 'Reciprocal of greek_eurynome.lover' },
         { kind: 'lover', personId: 'greek_tyro', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 11.235-259; Apollod. 1.9.8' }], notes: 'Reciprocal of greek_tyro.lover' },
@@ -9665,7 +9665,7 @@ const buildPeopleSeed = () => {
         { id: 'son-of-Huangdi-and-Leizu' },
         { id: 'father-of-Zhuanxu' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'chinese_shaohao', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'spouse', externalRef: { name: 'Shu Hill clan woman (蜀山氏); mother of Zhuanxu', tradition: 'Chinese' }, era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1' }] },
         { kind: 'father-of', personId: 'chinese_zhuanxu', era: 'mythic-prehistory' },
       ],
@@ -9786,7 +9786,7 @@ const buildPeopleSeed = () => {
         { id: 'meritocratic-succession-pioneer' },
         { id: 'calendar-regulation-and-Xi-He-commissioning' },
       ],
-      relations: [
+      relations: [ { kind: 'half-sibling', personId: 'chinese_houji', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'half-sibling', personId: 'chinese_xie', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'half-sibling', personId: 'chinese_zhi', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father-of', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }], notes: 'Gave his two daughters Ehuang and Nuying to Shun in marriage to test his virtue.' },
         { kind: 'father-of', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Yao Dian' }] },
       ],
@@ -9837,7 +9837,7 @@ const buildPeopleSeed = () => {
         { id: 'meritocratic-successor-of-Yao' },
         { id: 'abdicator-to-Yu-the-Great' },
       ],
-      relations: [
+      relations: [ { kind: 'half-sibling', personId: 'chinese_xiang', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'spouse', personId: 'chinese_ehuang', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Elder daughter of Yao, given to Shun in marriage as a test of his virtue; drowned at his death and became a goddess of the Xiang River.' },
         { kind: 'spouse', personId: 'chinese_nuying', era: 'mythic-prehistory', sources: [{ kind: 'primary', reference: 'Shiji Ch. 1; Shujing Shun Dian' }], notes: 'Younger daughter of Yao, given to Shun in marriage; with her sister Ehuang became a goddess of the Xiang River (Xiang Fei).' },
       ],
@@ -12431,7 +12431,7 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'dead', era: 'haykazuni-mythohistorical', eraOrdering: 1 },
       ],
       domains: [{ id: 'Haykazuni-sixth-generation' }, { id: 'father-of-Aram' }],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'armenian_sisak', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father-of', personId: 'armenian_aram', era: 'haykazuni-mythohistorical' },
       ],
       linguistic: {
@@ -13463,7 +13463,7 @@ const buildPeopleSeed = () => {
         { id: 'died-and-resurrected-by-mother-Lempi' },
         { id: 'sampo-theft-expedition-participant' },
       ],
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'finnish_kyllikki', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'mother', personId: 'finnish_lempi', era: 'kalevala-mythic-prehistoric' },
       ],
       iconography: {
@@ -13512,7 +13512,7 @@ const buildPeopleSeed = () => {
         { id: 'suicide-on-sword' },
         { id: 'foundational-Finnish-tragic-hero-template' },
       ],
-      relations: [
+      relations: [ { kind: 'enemy', personId: 'finnish_untamo', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father', personId: 'finnish_kalervo', era: 'kalevala-mythic-prehistoric' },
       ],
       iconography: {
@@ -13556,7 +13556,7 @@ const buildPeopleSeed = () => {
         { id: 'Karelian-tribal-chief' },
         { id: 'father-of-Kullervo-and-victim-of-the-Untamo-feud' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'finnish_untamo', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father-of', personId: 'finnish_kullervo', era: 'kalevala-mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Kalevala Cantos 31-36' }] },
       ],
       sources: [
@@ -13592,6 +13592,7 @@ const buildPeopleSeed = () => {
 
     {
       id: 'finnish_vainamoinen',
+      relations: [{ kind: 'enemy', personId: 'finnish_joukahainen', notes: 'Reciprocal edge (alphabetical family sweep).' }],
       schemaVersion: 2,
       name: {
         primary: 'Väinämöinen',
@@ -13690,6 +13691,7 @@ const buildPeopleSeed = () => {
 
     {
       id: 'finnish_aino',
+      relations: [{ kind: 'sibling', personId: 'finnish_joukahainen', notes: 'Reciprocal edge (alphabetical family sweep).' }],
       schemaVersion: 2,
       name: {
         primary: 'Aino',
@@ -19264,7 +19266,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Gebel Barkal (Napatan Amun)', period: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Reisner excavations' }], notes: 'Kushite cult center; basis of Kushite pharaonic legitimation.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'egyptian_mut', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'equated-with', personId: 'greek_hesiod_zeus', era: 'late-period', sources: [{ kind: 'primary', reference: 'Hdt. 2.42 (the Theban Zeus = Amun); Arrian Anab. 3.3-4 (Alexander at Siwa, 331 BCE); Plut. Alex. 27; Curt. 4.7.5-32' }], notes: 'Greek Zeus ↔ Egyptian Amun-Ra at the Siwa Oasis oracle; the Greek-language label for the cult was always "Zeus-Ammon" with the distinctive ram horns of Amun. Alexander the Great\'s 331 BCE visit and reception as son-of-Ammon canonized the equation in Hellenistic-era iconography. Distinct entries retained because Egyptian Amun-Ra has its own pre-Greek theological development (the Karnak corpus, the New Kingdom Amun-Ra synthesis with the Heliopolitan sun-cult, the Theban triad with Mut and Khonsu) wholly independent of Zeus.' },
         { kind: 'father-of', personId: 'egyptian_hatshepsut', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Hatshepsut Birth Cycle, Deir el-Bahari middle terrace' }] },
         { kind: 'father-of', personId: 'egyptian_amenhotep_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Amenhotep III Birth Cycle, Luxor Temple' }] },
@@ -21243,7 +21245,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'scion', startEvent: 'kingship-of-Messenia-and-founding-of-Messenian-line', era: 'post-trojan-war', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Apollodorus 2.8.5; Pausanias 4.3.6-7' }], notes: 'Established the Messenian Heraclidae royal line. Married Merope, daughter of Cypselus the Arcadian king.' },
         { typeStatus: 'scion', startEvent: 'death-by-conspiracy-of-Polyphontes', era: 'post-trojan-war', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Apollodorus 2.8.5; Pausanias 4.3.7-8; Hyginus, Fabulae 137; Euripides, Cresphontes (fragments)' }], notes: 'Killed by Polyphontes, another Heraclid, in a Messenian succession-coup. Polyphontes seized the kingdom and forced Merope to marry him. Their son Aepytus (also called Cresphontes the Younger) eventually returned from Arcadian exile and avenged his father by killing Polyphontes — the central tragic narrative of Euripides\' lost play Cresphontes (fragments preserved in scholia).' },
       ],
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_merope_messenia', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father', personId: 'greek_apollod_aristomachus', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Apollodorus 2.8.2' }] },
         { kind: 'sibling', personId: 'greek_apollod_temenus', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Apollodorus 2.8.2-5' }], notes: 'Brother through their shared father Aristomachus.' },
         { kind: 'sibling', personId: 'greek_apollod_aristodemus', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Apollodorus 2.8.2-5' }], notes: 'Brother through their shared father Aristomachus.' },
@@ -21312,7 +21314,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'death-by-Theseus-curse-and-Poseidons-bull-from-the-sea', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Euripides, Hippolytus 1166-1248; Apollodorus, Epitome 1.18-19; Pausanias 2.32.3' }], notes: 'After Phaedra\'s suicide-with-accusing-letter, Theseus invoked one of the three curses Poseidon had granted him; Poseidon sent a bull from the sea that panicked Hippolytus\'s chariot-horses on the Saronic shore. The horses dragged him to death entangled in the reins. Artemis revealed the truth to Theseus moments before Hippolytus died (Eur. Hipp. 1283-1430).' },
         { typeStatus: 'quartigod', startEvent: 'resurrection-by-Asclepius-attestation', era: 'heroic-age', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Pindar, Pythian 3.55-58; Apollodorus 3.10.3; Pausanias 2.27.4' }], notes: 'Per Pindar, Apollodorus, and the Epidaurian-cult tradition, resurrected by Asclepius after his death — the act that triggered Zeus\'s killing of Asclepius with the thunderbolt for trespassing on the Hades-territorial-prerogative. Per the Italian Aricine-cult tradition (Vergil Aen. 7.761-782; Ovid Met. 15.497-546), Hippolytus was thereafter known as Virbius, taken to Aricia by Artemis where he became consort of the woodland-goddess Diana.' },
       ],
-      relations: [
+      relations: [ { kind: 'enemy', personId: 'greek_phaedra', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father', personId: 'greek_apollod_theseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 1.16' }] },
         { kind: 'mother', externalRef: { name: 'Antiope (Amazon, sister of Hippolyta in some recensions)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 1.16' }] },
         { kind: 'half-sibling', personId: 'greek_apollod_acamas', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 1.16-18' }], notes: 'Half-brother through their shared father Theseus; Acamas is Theseus\'s son by Phaedra.' },
@@ -22099,7 +22101,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'birth-as-Perseus-Andromeda-son', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.5; Hesiod, Catalogue of Women fr. 130 Most' }], notes: 'Son of Perseus (demigod, son of Zeus by Danaë) by Andromeda. Quartigod-tier through paternal Zeus-line.' },
         { typeStatus: 'quartigod', startEvent: 'kingship-of-Mycenae-after-Electryon-death', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Apollodorus 2.4.6' }], notes: 'After the death of Electryon (his brother) at the hands of Amphitryon, Sthenelus seized the Mycenaean throne. Father of Eurystheus by Nicippe daughter of Pelops — the kingship-line that produced Heracles\'s Twelve-Labors taskmaster.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_alcaeus_perseus', notes: 'Reciprocal edge (alphabetical family sweep).' }, { kind: 'spouse', personId: 'greek_nicippe', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.5' }] },
         { kind: 'mother', externalRef: { name: 'Andromeda (princess of Aethiopia, wife of Perseus)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.5' }] },
         { kind: 'spouse', externalRef: { name: 'Nicippe daughter of Pelops', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.5' }] },
@@ -26684,7 +26686,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Homer, Iliad 2.715-716 (Alcestis as wife of Admetus and mother of Eumelus)' },
         ], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'spouse', personId: 'greek_admetus', notes: 'Reciprocal edge (alphabetical family sweep).' },
         { kind: 'father', personId: 'greek_pelias', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.10' }] },
         { kind: 'mother', externalRef: { name: 'Anaxibia (daughter of Bias) per Apollod. 1.9.10', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.10' }] },
         { kind: 'sibling', personId: 'greek_acastus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.9.10' }] },
@@ -47947,6 +47949,176 @@ const NEW_FIGURES = [
   "notes": "Dynastic 'Charioteer of El' of the Sam'alian kings; tutelary god of the royal house of Yadi, possibly a lunar deity."
  },
  {
+  "id": "armenian_sisak",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Sisak",
+   "alt": [
+    "Սիսակ",
+    "Sisakean eponym",
+    "Son of Gegham"
+   ],
+   "transliterations": {
+    "armenian-classical": "Սիսակ",
+    "armenian-romanization": "Sisak"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Armenian",
+  "primaryTradition": "Armenian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "armenian_gegham"
+  ],
+  "parentRoles": {
+   "armenian_gegham": "paternal"
+  },
+  "temporal": {
+   "era": "haykazuni-mythohistorical"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "haykazuni-mythohistorical",
+    "eraOrdering": 0,
+    "notes": "Son of Gegham and brother of Harma in the Khorenatsi Haykazuni genealogy descending from Hayk. When Gegham died, the lands stretching from Lake Sevan to the Araxes River were inherited by Sisak.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "haykazuni-mythohistorical",
+    "eraOrdering": 1,
+    "notes": "The region took his name as Sisakan, and his descendants were known as the Syuni or Sisakean; after the second-century introduction of the nahang provinces the Syuni house was confirmed as lords of the province of Syunik.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "haykazuni-mythohistorical",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "Haykazuni-patriarch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "Syunik-Sisakan-eponym",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ]
+   },
+   {
+    "id": "ancestor-of-the-Syuni-princely-house",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dynastic-patriarchy",
+    "name": "Found and transmit a Haykazuni princely line",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "kingship",
+     "ancestry"
+    ],
+    "notes": "Progenitor of the Syuni/Sisakean naxarar house that held Syunik through the historical Armenian period.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "syunik-patrimony",
+    "name": "The lands from Lake Sevan to the Araxes",
+    "kind": "territory",
+    "role": "owner",
+    "notes": "The inherited patrimony that became the province of Sisakan/Syunik and carried his name.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "armenian_harma",
+    "era": "haykazuni-mythohistorical",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ],
+    "notes": "Brother of Harma (Harmar/Arma), both sons of Gegham; Harma continues the main Haykazuni line toward Aram while Sisak founds the Syuni branch."
+   }
+  ],
+  "linguistic": {
+   "etymology": "Armenian Սիսակ Sisak; the province name Sisakan and the dynastic name Syuni/Sisakean are derived from him per Khorenatsi.",
+   "languageFamily": "Indo-European (Armenian)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "eponym-of-Syunik-and-ancestor-of-the-Syuni-house",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Cyril Toumanoff, Studies in Christian Caucasian History (1963), on the Siwni/Syuni naxarardom"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Haykazuni patriarch named by Movses Khorenatsi as a son of Gegham and brother of Harma. On Gegham's death he inherited the lands from Lake Sevan to the Araxes; the territory took his name as Sisakan, and his descendants formed the Syuni (Sisakean) princely house that held the province of Syunik through the historical Armenian period. He is the genealogical branch-point at which the Syunik line diverges from the main Haykazuni descent that runs through his brother Harma to Aram."
+ },
+ {
   "id": "asmat_fumeripits",
   "name": {
    "primary": "First Woodcarver",
@@ -50512,6 +50684,277 @@ const NEW_FIGURES = [
   "notes": "Toad-like earth deity whose sundered body became the world in the fifth-sun creation."
  },
  {
+  "id": "aztec_tlazolteotl",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tlazolteotl",
+   "alt": [
+    "Goddess of Filth",
+    "Tlaelcuani (Eater of Filth)",
+    "Ixcuina",
+    "Toci-Tlazolteotl"
+   ],
+   "transliterations": {
+    "nahuatl": "Tlazōlteōtl",
+    "maya": "",
+    "quechua": ""
+   }
+  },
+  "type": "deity",
+  "tradition": "Aztec/Mexica",
+  "primaryTradition": "Aztec/Mexica",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "cosmogonic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "cosmogonic",
+    "notes": "Earth and purification goddess of carnal love, vice and its absolution, taken into the Mexica pantheon from the Huastec; invoked in childbirth, the steam bath, and at the harvest feast Ochpaniztli.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Books I, VI"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earth-and-fertility",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tlālli",
+     "script": "Nahuatl",
+     "rom": "tlalli"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book I"
+     }
+    ]
+   },
+   {
+    "sphereId": "purification-and-confession",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tlazōlli",
+     "script": "Nahuatl",
+     "rom": "tlazolli"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Books I, VI"
+     }
+    ]
+   },
+   {
+    "sphereId": "carnal-love-and-vice",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tlazōlmiquiztli",
+     "script": "Nahuatl",
+     "rom": "tlazolmiquiztli"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "eat-filth-absolve-sin",
+    "name": "Consume human filth and absolve carnal transgression",
+    "term": {
+     "value": "tlaēlcuani",
+     "script": "Nahuatl",
+     "rom": "tlaelcuani"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "purification",
+     "earth",
+     "fate"
+    ],
+    "notes": "As the Filth-Eater she ingests human sin in ritual confession (neyolmelahualiztli), purifying the penitent; her blackened mouth marks the act.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book I; Book VI (the confessor's address)"
+     }
+    ]
+   },
+   {
+    "id": "preside-over-birth",
+    "name": "Govern childbirth and the fertility of the soil",
+    "term": {
+     "value": "tlācachīhualiztli",
+     "script": "Nahuatl",
+     "rom": "tlacachihualiztli"
+    },
+    "inheritability": "partial",
+    "scopeTags": [
+     "fertility",
+     "earth"
+    ],
+    "notes": "Invoked by midwives as an earth-mother of generation; bears Centeotl the maize lord.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book VI"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "unspun-cotton-headband",
+    "name": "Headdress of unspun cotton with two spindles",
+    "term": {
+     "value": "ichcatl",
+     "script": "Nahuatl",
+     "rom": "ichcatl"
+    },
+    "kind": "regalia",
+    "role": "wearer",
+    "notes": "Her diagnostic attribute: a cotton headband bearing two malacatl spindles, linking her to weaving and to her Huastec cotton-deity origin (Ixcuina).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Primeros Memoriales; Codex Borbonicus"
+     }
+    ]
+   },
+   {
+    "id": "tlazolteotl-broom",
+    "name": "Sweeping broom",
+    "term": {
+     "value": "ochpānaliztli",
+     "script": "Nahuatl",
+     "rom": "ochpanaliztli"
+    },
+    "kind": "implement",
+    "role": "wielder",
+    "notes": "The broom of the Ochpaniztli (road-sweeping) feast, by which filth and sin are cleared away.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book II (Ochpaniztli)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tlaēlcuani",
+    "original": "Tlaēlcuani",
+    "language": "nahuatl",
+    "transliteration": "Tlaelcuani",
+    "contextTag": "cult",
+    "notes": "'Eater of Filth' — she who devours human ordure and sin and so purifies the penitent.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Book I"
+     }
+    ]
+   },
+   {
+    "epithetId": "Ixcuina",
+    "original": "Ixcuina",
+    "language": "nahuatl",
+    "transliteration": "Ixcuina",
+    "contextTag": "cult",
+    "notes": "Huastec-derived name (Ix Cuinim, cotton deity) of the goddess in her four-fold aspect (the Ixcuinanme).",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sahagún, Florentine Codex, Book I; H. B. Nicholson, Religion in Pre-Hispanic Central Mexico (HMAI vol. 10, 1971)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "aztec_centeotl",
+    "era": "cosmogonic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex; Codex Borbonicus, fol. 13 (Tlazolteotl giving birth to Centeotl)"
+     }
+    ],
+    "notes": "Bears Centeotl the maize lord in the codical tradition (the flayed-skin birthing scene of Codex Borbonicus); a variant of the maternity also assigned to Xochiquetzal, who is already wired as Centeotl's primary parent."
+   },
+   {
+    "kind": "interpretatio",
+    "era": "cosmogonic",
+    "externalRef": {
+     "name": "Ix Cuinim / Ixcuina, the Huastec cotton-and-fertility goddess from whom the Mexica cult of Tlazolteotl derives",
+     "tradition": "Huastec"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "H. B. Nicholson, Religion in Pre-Hispanic Central Mexico (HMAI vol. 10, 1971)"
+     }
+    ],
+    "notes": "Recorded as an externalRef (no Huastec entry exists) noting the Huastec origin of the goddess."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Uto-Aztecan (Nahuatl)",
+   "etymology": "Classical Nahuatl Tlazōlteōtl, from tlazōlli 'refuse, filth, vice' + teōtl 'deity' — 'Filth Deity / Goddess of Vice', she who consumes and so purifies human transgression.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Karttunen, An Analytical Dictionary of Nahuatl (1983), s.v. tlazōlli, teōtl"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex, Books I, II, VI"
+     },
+     {
+      "kind": "primary",
+      "reference": "Codex Borbonicus, fol. 12-13"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "mother-of-Centeotl",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sahagún, Florentine Codex (the maize-god parentage)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Miller & Taube, The Gods and Symbols of Ancient Mexico and the Maya (1993), s.v. Tlazolteotl, Centeotl"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Aztec earth, fertility and purification goddess of Huastec origin (the Ixcuina/Ixcuinanme complex); patroness of carnal love and of its ritual absolution as the Filth-Eater (Tlaelcuani), honoured at the autumn feast Ochpaniztli. In the codices she is the mother of Centeotl the maize lord — depicted in Codex Borbonicus fol. 13 giving birth to him while wearing flayed skin — a maternity that the sources alternately assign to Xochiquetzal (already the wired primary parent of Centeotl). Authored here to materialize the variant maternal link named in the Centeotl entry. Closely identified with the earth-mother Toci/Teteoinnan; her diagnostic attribute is the unspun-cotton headdress with two spindles."
+ },
+ {
   "id": "aztec_tonatiuh",
   "name": {
    "primary": "Tonatiuh",
@@ -51691,7 +52134,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Cross-tradition figure; the Sundanese version (Nyi Pohaci Sanghyang Asri) is given a separate Sundanese entry. Here she is treated as the Balinese rice goddess."
+  "notes": "Cross-tradition figure; the Sundanese version (Nyi Pohaci Sanghyang Asri) is given a separate Sundanese entry. Here she is treated as the Balinese rice goddess.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "balinese_sedana",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "balinese_rangda",
@@ -51969,6 +52419,156 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Highest tier of the Balinese (Hindu-Bali) layer. 'Sex: none' because the godhead is explicitly formless and beyond gender. Acintya is the older Siwaite name; Sang Hyang Widhi Wasa is the modern systematized title."
+ },
+ {
+  "id": "balinese_sedana",
+  "name": {
+   "primary": "God of Wealth",
+   "alt": [
+    "Sedana",
+    "Rambut Sedana",
+    "Betara Sedana",
+    "Bhatara Sri Sedana"
+   ],
+   "transliterations": {
+    "balinese": "ᬲᬾᬤᬦ",
+    "iast": "Sedana"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Balinese",
+  "primaryTradition": "Balinese",
+  "sex": "male",
+  "vitalStatus": "active",
+  "parentIds": [],
+  "temporal": {
+   "era": "agrarian-ritual present"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "agrarian-ritual present",
+    "eraOrdering": 0,
+    "startEvent": "brother-and-consort-of-the-rice-goddess",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258."
+     }
+    ],
+    "notes": "Sedana (Betara Sedana, also Rambut Sedana) is paired with the rice goddess Dewi Sri as her brother and divine consort. In the Sri-and-Sedana myth-cycle the two are set in the kingdom of Medang Kamulan or in the heaven of Batara Guru, and in every version they are parted by death, wandering, or a refusal to wed."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "agrarian-ritual present",
+    "eraOrdering": 1,
+    "startEvent": "god-of-prosperity-and-wealth-at-besakih",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf."
+     }
+    ],
+    "notes": "As Rambut Sedana he is the Balinese god of wealth, prosperity and generosity, identified with the prosperity-aspect of Lakshmi; the name Sedana glosses as 'money'. He resides at Pura Goa Raja within the Besakih complex, and an annual ritual 'wedding' of Sri Dewi and Sedana is performed to secure both an ample rice harvest and material plenty."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wealth-and-prosperity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Sedana",
+     "script": "ᬲᬾᬤᬦ",
+     "rom": "Sedana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258."
+     }
+    ]
+   },
+   {
+    "sphereId": "rice-and-agriculture",
+    "contextTag": "ritual",
+    "term": {
+     "value": "padi",
+     "script": "ᬧᬤᬶ",
+     "rom": "padi"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf, ch. on agriculture."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-wealth-and-plenty",
+    "name": "bestow material wealth and abundance",
+    "inheritability": "unique",
+    "notes": "As the wealth-god counterpart of the rice goddess he grants prosperity, sufficiency and generosity; the annual Sri-Sedana wedding rite channels his gift of material plenty alongside the harvest.",
+    "scopeTags": [
+     "prosperity",
+     "fertility"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990), Asian Folklore Studies 49(2); Covarrubias, Island of Bali (1937)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "rambut_sedana_pelinggih",
+    "kind": "shrine",
+    "name": "pelinggih of Rambut Sedana",
+    "role": "Shrine-seat of the wealth-god, notably the Pura Goa Raja shrine within the Besakih temple-complex, where offerings for prosperity are made.",
+    "notes": "Rambut Sedana is honored with piodalan rites on the 210-day Balinese ritual cycle, often jointly with Sri Dewi.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali; Wessing, Robert (1990), Asian Folklore Studies 49(2)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "balinese_dewi_sri",
+    "era": "agrarian-ritual present",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258 — Sri and her brother Sedana."
+     }
+    ],
+    "notes": "Brother and divine consort of Dewi Sri; the dominant Balinese framing makes them siblings whose ritual 'wedding' is annually re-enacted. Reciprocal sibling edge needed on balinese_dewi_sri."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Sedana (Betara/Rambut Sedana), the Balinese god of wealth and prosperity, is the brother and divine consort of the rice goddess Dewi Sri, paired with her in myth and in the agrarian ritual cycle and identified with the prosperity-aspect of Lakshmi.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wessing, Robert (1990). 'Sri and Sedana and the Spirits in the House,' Asian Folklore Studies 49(2): 235-258."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Covarrubias, Miguel (1937). Island of Bali. New York: Knopf."
+     }
+    ]
+   }
+  ],
+  "notes": "Male counterpart of Dewi Sri: god of wealth, money and prosperity (Sedana = 'money'), her brother and divine consort. Resides at Pura Goa Raja in the Besakih complex; the annual Sri-Sedana 'wedding' rite seeks both harvest and material plenty. Carried only implicitly in Dewi Sri's source-title ('Sri and Sedana ...') until materialized here.",
+  "schemaVersion": 2
  },
  {
   "id": "bambara_faro",
@@ -53226,6 +53826,664 @@ const NEW_FIGURES = [
   "notes": "Imana is the supreme creator and High God of the Banyarwanda of Rwanda and the Barundi of Burundi, the maker and sustainer of the cosmos and the wellspring of all good fortune. Per Maquet (1961) 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans,' and per the dynastic cosmology he is the principal agent behind the celestial origin of the royal line ('it is Imana who engenders'). Imagined with very long arms and figured as the Potter who fashions humans and grants children to the childless (the tale 'Imana and the Childless Couple'), he is benevolent but remote, receiving no direct organized cult and mediating with humanity through the ancestral abazimu and the imandwa spirits (whose king is Babinga and whose cult-hero is Ryangombe). The proverb 'Imana yirirwa ahandi igataha i Rwanda' — 'Imana spends the day elsewhere but comes home to Rwanda to sleep' — expresses the Banyarwanda sense of him as 'Imana yacu,' our own High God. With Christian missionization the name was retained for the Christian God across the Great Lakes."
  },
  {
+  "id": "banyaruanda_kanyarwanda",
+  "name": {
+   "primary": "Kanyarwanda",
+   "alt": [
+    "Kanyarwanda I Gahima",
+    "Gahima",
+    "Kanyarwanda Gahima"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Kanyarwanda",
+    "etymology": "Kinyarwanda Kanyarwanda, 'the one of Rwanda / he who belongs to Rwanda', the personified eponym of the country and people of Rwanda; he bears the throne-name Gahima."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_gihanga"
+  ],
+  "parentRoles": {
+   "banyaruanda_gihanga": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "son-and-successor-of-gihanga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga; Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004)."
+     }
+    ],
+    "notes": "Kanyarwanda (throne-name Gahima), son of the founder-king Gihanga, who succeeded his father as a king of the Ibimanuka line. His name is the personified eponym of Rwanda itself and of the Banyarwanda people."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "eponymous-ancestor-of-the-three-groups",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ],
+    "notes": "In one tradition Kanyarwanda is the mythical common ancestor whose three sons Gatutsi, Gahutu and Gatwa became the founding ancestors of the Tutsi, Hutu and Twa; the tradition here parallels and overlaps the Kazikamuntu account of the origin of the three groups."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship-and-succession",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina, Antecedents to Modern Rwanda (2004)."
+     }
+    ]
+   },
+   {
+    "sphereId": "national-eponym",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "personify-the-nation",
+    "name": "personify and name the kingdom of Rwanda",
+    "inheritability": "unique",
+    "notes": "As Kanyarwanda, 'the one of Rwanda', he is the dynastic figure whose name the country and people bear; he continues the royal line founded by his father Gihanga.",
+    "scopeTags": [
+     "foundational",
+     "leadership"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Kagame, Inganji Karinga."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "banyaruanda_gihanga",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Inganji Karinga; Vansina (2004) — Gihanga succeeded by his son Kanyarwanda I Gahima."
+     }
+    ],
+    "notes": "Son of the founder-king Gihanga; the reverse father-of edge on banyaruanda_gihanga is needed."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kanyarwanda I Gahima, son and successor of the founder-king Gihanga, is the dynastic eponym of Rwanda and its people; in tradition he (or the parallel ancestor) fathered the founding ancestors of the Tutsi, Hutu and Twa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Inganji Karinga."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Jan Vansina, Antecedents to Modern Rwanda: The Nyiginya Kingdom (2004)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Folklore in Rwanda; Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "notes": "Kanyarwanda (throne-name Gahima), son of Gihanga and his named successor, the personified eponym of Rwanda. Named explicitly in the batch prose of banyaruanda_gihanga ('succeeded by his son Kanyarwanda I Gahima, the eponym of Rwanda'). The eponymous group-ancestors Gatutsi, Gahutu and Gatwa attributed to him (and parallel to the Kazikamuntu account) are not authored here. Demigod as a divinely-descended founder-line king.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_kazikamuntu",
+  "name": {
+   "primary": "Kazikamuntu",
+   "alt": [
+    "Kazi ka Muntu",
+    "the First Man"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Kazikamuntu",
+    "etymology": "Kinyarwanda Kazikamuntu, parsed 'the root/origin of man' (kazi/igihe + muntu, 'person'); the first human and common ancestor created by Imana."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "creation-of-the-first-man-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961) — 'Imana, the maker, created Kazikamuntu, the common ancestor of all humans'."
+     }
+    ],
+    "notes": "Kazikamuntu is the first man, fashioned by the High God Imana and made the common ancestor of all humankind. He stands at the head of the anthropogenic (human-origin) strand of Rwandan tradition, distinct from the celestial Ibimanuka dynastic strand headed by Kigwa."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "father-of-the-ancestors-of-the-three-groups",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Origins of Hutu, Tutsi and Twa (oral tradition); Maquet (1961)."
+     }
+    ],
+    "notes": "His three children Gatutsi, Gahutu and Gatwa became the ancestors of the Tutsi, Hutu and Twa. In the tale he first chose Gahutu as his successor, but Gahutu fell asleep over an assigned task, so he chose the sober and clever Gatutsi as chief, and cursed Gatwa for killing one of his brothers."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "human-origins",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet, The Premise of Inequality in Ruanda (1961)."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "created-by",
+    "personId": "banyaruanda_imana",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maquet, The Premise of Inequality in Ruanda (1961) — Imana created Kazikamuntu."
+     }
+    ],
+    "notes": "First man made by the High God Imana; the reverse creator-of edge on banyaruanda_imana is needed."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kazikamuntu, the first man created by the High God Imana, is the common ancestor of all humans, whose three children Gatutsi, Gahutu and Gatwa became the founding ancestors of the Tutsi, Hutu and Twa.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Jacques J. Maquet, The Premise of Inequality in Ruanda (1961)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (1933), ch. VIII; Origins of Hutu, Tutsi and Twa (oral tradition)."
+     }
+    ]
+   }
+  ],
+  "notes": "Kazikamuntu, the first man fashioned by Imana and common ancestor of all humans; head of the anthropogenic strand of Rwandan origin tradition. Named explicitly in the batch prose of banyaruanda_imana ('Imana, the maker, created Kazikamuntu, the common ancestor of all humans'). His eponymous children Gatutsi, Gahutu and Gatwa (ancestors of the three groups) are noted but not authored as separate entries. Mortal-tier first ancestor.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_kigwa",
+  "name": {
+   "primary": "Kigwa",
+   "alt": [
+    "Sabizeze",
+    "Kigwa Sabizeze",
+    "the Fallen One"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Kigwa",
+    "etymology": "Kinyarwanda Kigwa, 'the one who fell / the fallen', from kugwa 'to fall'; his personal name Sabizeze marks him as the celestial being who fell from the sky."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_nkuba"
+  ],
+  "parentRoles": {
+   "banyaruanda_nkuba": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "fall-from-the-sky-of-the-son-of-nkuba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964); Alexis Kagame, Ubucurabwenge."
+     }
+    ],
+    "notes": "Kigwa (personal name Sabizeze), son of Nkuba the King of the Sky, is the celestial being who fell or descended from heaven to earth with his brother and sister, landing in eastern Rwanda near the great rock Ikinani. He heads the Ibimanuka, 'those fallen from the heavens', and is reckoned the first ancestor of the Banyiginya royal clan."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-childless-couple-account-of-his-origin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana; 'Imana and the Childless Couple'."
+     }
+    ],
+    "notes": "In the interlocking Childless-Couple account the same Kigwa is one of three children whom the High God Imana grants to the barren Nyinakigwa (with his brother Lututsi and a sister); when the secret of their origin is betrayed, the sky opens and they fall to earth. The corpus ties this tale-Kigwa to the celestial Kigwa line that descends to the kings."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "begetter-of-muntu-and-the-line-to-gihanga",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge; Pierre Smith, Le recit populaire au Rwanda (1975) — 'Nkuba begat Kigwa, who begat Muntu'."
+     }
+    ],
+    "notes": "Father of Muntu; in the dynastic genealogy the line runs Nkuba > Kigwa/Sabizeze > Muntu > ... > the founder-king Gihanga, so that Kigwa is the apical fallen ancestor of the Rwandan royal house (Gihanga's paternal great-great-grandfather in the fuller list)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "celestial-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     }
+    ]
+   },
+   {
+    "sphereId": "royal-lineage-origin",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; Smith, Le recit populaire au Rwanda (1975)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fall-from-heaven-to-found-the-line",
+    "name": "fall from heaven as the apical royal ancestor",
+    "inheritability": "lineage",
+    "notes": "As the Ikimanuka who fell from the sky, Kigwa transmits the celestial origin and sacred legitimacy of Rwandan kingship to his descendants down to Gihanga.",
+    "scopeTags": [
+     "foundational",
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "d'Hertefelt & Coupez (1964); Kagame, Ubucurabwenge."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "banyaruanda_nkuba",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge — 'Nkuba begat Kigwa'."
+     }
+    ],
+    "notes": "Son of Nkuba, King of the Sky; the reverse father-of edge on banyaruanda_nkuba is needed."
+   },
+   {
+    "kind": "father-of",
+    "personId": "banyaruanda_muntu",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; Smith (1975) — 'Kigwa begat Muntu'."
+     }
+    ],
+    "notes": "Father of Muntu, the next ancestor of the Ibimanuka line toward Gihanga."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_lututsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sons Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Brother of Lututsi in the Childless-Couple account; reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_nyinabatutsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the daughter alongside Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Brother of the sister Nyinabatutsi; reciprocated within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kigwa (Sabizeze), son of Nkuba the King of the Sky, is the celestial 'fallen one' who heads the Ibimanuka and is the apical ancestor of the Banyiginya royal clan, father of Muntu in the dynastic line that descends to Gihanga.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge / Inganji Karinga."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Kigwa (personal name Sabizeze), the celestial being who fell from heaven, son of Nkuba; first ancestor of the Banyiginya and head of the Ibimanuka. Two interlocking origin accounts are preserved: the dynastic poem Ubucurabwenge has Nkuba beget Kigwa beget Muntu, while the Childless-Couple tale has Imana grant Kigwa (with his brother Lututsi and a sister) to the barren Nyinakigwa; the corpus identifies both as the same royal-line Kigwa. Demigod as a divinely-descended apical ancestor. Named in the batch prose of banyaruanda_nkuba and banyaruanda_imana; materialized here.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_lututsi",
+  "name": {
+   "primary": "Lututsi",
+   "alt": [
+    "Rututsi",
+    "Father of the Bega"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Lututsi",
+    "etymology": "Kinyarwanda: one of the three children granted to Nyinakigwa by Imana; reckoned the ancestor of the Bega (Abega) clan."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_nyinakigwa"
+  ],
+  "parentRoles": {
+   "banyaruanda_nyinakigwa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "second-of-the-children-granted-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ],
+    "notes": "Lututsi is one of the three children whom the High God Imana grants to the barren Nyinakigwa, brother of Kigwa and of a sister. When the secret of their origin is betrayed, the three fall from the sky to the earth."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "ancestor-of-the-bega-clan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — Lututsi, father of the Bega."
+     }
+    ],
+    "notes": "Reckoned the ancestor (father) of the Bega (Abega) clan, while his brother Kigwa is progenitor of the Banyiginya and their sister of the Bashambo."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "clan-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sons Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Brother of Kigwa; reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_nyinabatutsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — and a daughter."
+     }
+    ],
+    "notes": "Brother of the sister Nyinabatutsi; reciprocated within this batch."
+   },
+   {
+    "kind": "mother",
+    "personId": "banyaruanda_nyinakigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Son of Nyinakigwa; reciprocated by Nyinakigwa mother-of Lututsi within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lututsi, one of the three children granted to the barren Nyinakigwa by the High God Imana and brother of Kigwa, is reckoned the ancestor (father) of the Bega clan of Rwanda.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Lututsi, brother of Kigwa in the 'Imana and the Childless Couple' tale, reckoned father of the Bega clan. Named explicitly in the batch prose of banyaruanda_imana ('the sons Kigwa and Lututsi and a daughter'). Mortal-tier clan-ancestor.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_muntu",
+  "name": {
+   "primary": "Muntu",
+   "alt": [
+    "Sebantu",
+    "the Human Being"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Muntu",
+    "etymology": "Kinyarwanda/Bantu muntu, 'human being, person' (the singular of abantu); as a personage he is the first man of the Ibimanuka celestial line."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_kigwa"
+  ],
+  "parentRoles": {
+   "banyaruanda_kigwa": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "son-of-kigwa-in-the-ibimanuka-line",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge; Pierre Smith, Le recit populaire au Rwanda (1975) — 'Kigwa begat Muntu'."
+     }
+    ],
+    "notes": "Muntu ('the human being'), son of Kigwa/Sabizeze, is the next ancestor in the Ibimanuka celestial line. Per Smith, the genealogy runs 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu', and continues through the celestial ancestors down to the founder-king Gihanga."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "founder-figure-of-the-ibimanuka-dynasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     }
+    ],
+    "notes": "In some renderings the Ibimanuka dynasty of celestial kings is reckoned from Muntu, son of Kigwa; the line then descends through several generations to Gihanga, the founder of the Nyiginya kingdom."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-lineage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; Smith, Le recit populaire au Rwanda (1975)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "transmit-the-celestial-line",
+    "name": "carry the celestial royal line toward Gihanga",
+    "inheritability": "lineage",
+    "notes": "As son of the fallen Kigwa, Muntu continues the Ibimanuka descent that culminates in the founder-king Gihanga and the Rwandan monarchy.",
+    "scopeTags": [
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge; d'Hertefelt & Coupez (1964)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kagame, Ubucurabwenge — 'Kigwa begat Muntu'."
+     }
+    ],
+    "notes": "Son of Kigwa/Sabizeze; reciprocated by Kigwa father-of Muntu within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Muntu ('the human being'), son of Kigwa/Sabizeze, is an ancestor of the Ibimanuka celestial line of Rwandan kings; the dynastic genealogy runs Nkuba > Kigwa > Muntu > ... > Gihanga.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Alexis Kagame, Ubucurabwenge / Inganji Karinga."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Marcel d'Hertefelt & A. Coupez, La royauté sacrée de l'ancien Rwanda (1964)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Pierre Smith, Le recit populaire au Rwanda (1975)."
+     }
+    ]
+   }
+  ],
+  "notes": "Muntu, son of Kigwa, ancestor of the Ibimanuka celestial line. Named in the batch prose of banyaruanda_nkuba and banyaruanda_gihanga ('Nkuba > Kigwa > Muntu > ... > Gihanga'); the genealogy interposes several further named ancestors (Kimanuka, Kijuru, Kobo, Merano, Randa, Gisa, Kizira, Kazi) between Muntu and Gihanga which are recorded as a bare king-list and are not individuated here. Demigod as a divinely-descended ancestor.",
+  "schemaVersion": 2
+ },
+ {
   "id": "banyaruanda_nkuba",
   "name": {
    "primary": "Nkuba",
@@ -53350,6 +54608,244 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Nkuba ('Lightning / Thunderbolt'), titled Umwami wo Hejuru, 'the King of the Sky,' is the celestial sovereign at the head of the Ibimanuka ('those fallen from the heavens') in the Rwandan dynastic origin myth recorded by d'Hertefelt & Coupez and in Kagame's dynastic poem Ubucurabwenge. In the royal genealogy 'Nkuba (the thunder) begat Kigwa (the fallen one), who begat Muntu,' and the line continues through the celestial ancestors down to the founder-king Gihanga, so that Nkuba is the apical sky-father of the Rwandan kings. The sky he rules is the 'point of departure' from which the royal line descends to earth; above him stands the transcendent creator Imana, who is the principal agent of that engendering. Nkuba is distinct from (though comparable to) the Nyanga lightning-god of the same name in neighboring Great Lakes Bantu traditions."
+ },
+ {
+  "id": "banyaruanda_nyinabatutsi",
+  "name": {
+   "primary": "Nyinabatutsi",
+   "alt": [
+    "Mother of the Bashambo",
+    "the Sister"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Nyinabatutsi",
+    "etymology": "Kinyarwanda Nyinabatutsi, 'mother of the Batutsi'; the daughter among the three children granted to Nyinakigwa by Imana, reckoned mother of the Bashambo clan."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "banyaruanda_nyinakigwa"
+  ],
+  "parentRoles": {
+   "banyaruanda_nyinakigwa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-daughter-granted-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ],
+    "notes": "Nyinabatutsi is the daughter among the three children whom the High God Imana grants to the barren Nyinakigwa, sister of Kigwa and Lututsi. With the secret of their origin betrayed, the three fall from the sky to the earth."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "ancestress-of-the-bashambo-clan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sister, mother of the Bashambo."
+     }
+    ],
+    "notes": "Reckoned the ancestress (mother) of the Bashambo (Abashambo) clan, alongside her brothers Kigwa (Banyiginya) and Lututsi (Bega)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "clan-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Sister of Kigwa; reciprocated within this batch."
+   },
+   {
+    "kind": "sibling",
+    "personId": "banyaruanda_lututsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Sister of Lututsi; reciprocated within this batch."
+   },
+   {
+    "kind": "mother",
+    "personId": "banyaruanda_nyinakigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Daughter of Nyinakigwa; reciprocated by Nyinakigwa mother-of Nyinabatutsi within this batch."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nyinabatutsi, the daughter among the three children granted to the barren Nyinakigwa by the High God Imana and sister of Kigwa and Lututsi, is reckoned the ancestress (mother) of the Bashambo clan of Rwanda.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Nyinabatutsi, the sister of Kigwa and Lututsi in the 'Imana and the Childless Couple' tale, reckoned mother of the Bashambo clan. She is the (otherwise unnamed) 'daughter' of the batch prose of banyaruanda_imana, named in the source tradition. Mortal-tier clan-ancestress.",
+  "schemaVersion": 2
+ },
+ {
+  "id": "banyaruanda_nyinakigwa",
+  "name": {
+   "primary": "Nyinakigwa",
+   "alt": [
+    "Mother of Kigwa"
+   ],
+   "transliterations": {
+    "kinyarwanda": "Nyinakigwa",
+    "etymology": "Kinyarwanda Nyinakigwa, 'mother of Kigwa' (nyina, 'his/her mother' + Kigwa), the once-barren woman granted children by Imana."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Banyaruanda",
+  "primaryTradition": "Banyaruanda",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "the-barren-woman-granted-children-by-imana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana; 'Imana and the Childless Couple'."
+     }
+    ],
+    "notes": "Nyinakigwa, sad at being childless, entreated the High God Imana for a child. Imana granted her three children on condition she never reveal their origin: the sons Kigwa and Lututsi and a daughter (Nyinabatutsi)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-broken-secret-and-the-fall-of-the-children",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Her jealous, also-barren sister coaxed the secret from her; angered by the disobedience, Nyinakigwa turned on her children, and the sky opened so that they plummeted to the earth, where they lived lives of hardship. The episode links the High God to the origin of the celestial Kigwa line that descends to the kings."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood-and-origins",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "banyaruanda_kigwa",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — the sons Kigwa and Lututsi."
+     }
+    ],
+    "notes": "Tale-mother of Kigwa in the Childless-Couple account (the dominant dynastic account makes Kigwa the son of Nkuba; the corpus identifies the two as the same Kigwa)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "banyaruanda_lututsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana."
+     }
+    ],
+    "notes": "Mother of Lututsi."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "banyaruanda_nyinabatutsi",
+    "era": "mythic-prehistoric",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Scheub, A Dictionary of African Mythology (2000), s.v. Imana — and a daughter."
+     }
+    ],
+    "notes": "Mother of the daughter Nyinabatutsi."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Nyinakigwa, a once-barren woman, was granted three children by the High God Imana on condition she keep their origin secret; the sons Kigwa and Lututsi and a daughter, whose betrayed secret caused them to fall from the sky, are ancestral figures of the Rwandan clans.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Harold Scheub, A Dictionary of African Mythology (Oxford University Press, 2000), s.v. Imana."
+     }
+    ]
+   }
+  ],
+  "notes": "Nyinakigwa ('mother of Kigwa'), the barren woman of the 'Imana and the Childless Couple' tale who is granted Kigwa, Lututsi and a daughter by the High God. Named explicitly in the batch prose of banyaruanda_imana. Mortal-tier ancestress; the maternal link to Kigwa is the Childless-Couple variant that the corpus ties to the celestial royal line.",
+  "schemaVersion": 2
  },
  {
   "id": "basque_aatxe",
@@ -55192,7 +56688,169 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "The Batak Batara Guru differs from the Javano-Balinese Shiva-Guru: here he is one of three brothers (with Soripada and Mangalabulan), associated with wisdom/origination. Kept distinct from balinese_batara_guru."
+  "notes": "The Batak Batara Guru differs from the Javano-Balinese Shiva-Guru: here he is one of three brothers (with Soripada and Mangalabulan), associated with wisdom/origination. Kept distinct from balinese_batara_guru.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "batak_mangalabulan",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "batak_soripada",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
+ },
+ {
+  "id": "batak_mangalabulan",
+  "name": {
+   "primary": "Third of the Three High Gods",
+   "alt": [
+    "Mangalabulan",
+    "Bala Bulan",
+    "Balabulan",
+    "Debata Mangalabulan"
+   ],
+   "transliterations": {
+    "batak": "ᯔᯝᯞᯅᯮᯞᯉ᯲",
+    "rom": "Mangalabulan"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Batak",
+  "primaryTradition": "Batak",
+  "sex": "male",
+  "vitalStatus": "active",
+  "parentIds": [
+   "batak_mula_jadi_na_bolon"
+  ],
+  "parentRoles": {
+   "batak_mula_jadi_na_bolon": "paternal"
+  },
+  "temporal": {
+   "era": "primordial age of the gods"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 0,
+    "startEvent": "hatched-from-an-egg-as-one-of-the-debata-na-tolu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     }
+    ],
+    "notes": "Mangalabulan (Bala Bulan) is the third of the three high gods (Debata na Tolu) born from the eggs laid by the divine hen for Mula Jadi na Bolon; brother of Batara Guru and Soripada. He is associated with the lower world."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 1,
+    "startEvent": "the-god-of-the-dual-hand",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ],
+    "notes": "He governs the descent into the dark and the return to light: with his right hand he bestows good deeds and virtue, and with his left hand he commits crimes and wrongdoing, making him the ambivalent power within the trinity. In some accounts he is invoked in oaths and as a patron of warriors and craft."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ambivalence-and-the-lower-world",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Debata na Tolu",
+     "script": "",
+     "rom": "Debata na Tolu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bestow-good-and-ill-by-either-hand",
+    "name": "grant virtue or wrongdoing by the right or the left hand",
+    "inheritability": "unique",
+    "notes": "The dual-natured god of the trinity: his right hand bestows good deeds and virtue, his left hand crime and wrongdoing; he governs the descent into darkness and the return to light.",
+    "scopeTags": [
+     "ambivalence",
+     "moral-order"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016), Wacana 17(2); Warneck, Die Religion der Batak (1909)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "batak_batara_guru",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — the three high gods Batara Guru, Soripada and Mangalabulan."
+     }
+    ],
+    "notes": "Brother of Batara Guru in the Debata na Tolu; reciprocal sibling edge needed on batak_batara_guru."
+   },
+   {
+    "kind": "sibling",
+    "personId": "batak_soripada",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909)."
+     }
+    ],
+    "notes": "Brother of Soripada; reciprocated within this batch."
+   },
+   {
+    "kind": "father",
+    "personId": "batak_mula_jadi_na_bolon",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — Mula Jadi na Bolon fathered the three high gods."
+     }
+    ],
+    "notes": "Son of the creator Mula Jadi na Bolon."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mangalabulan (Bala Bulan), the third of the Batak high-god trinity (Debata na Tolu) and a son of Mula Jadi na Bolon, is the ambivalent dual-handed god of the lower world who bestows both good and ill, brother of Batara Guru and Soripada.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "notes": "Third of the Debata na Tolu, the Batak high-god trinity; son of Mula Jadi na Bolon and brother of Batara Guru and Soripada. The dual-natured god (right hand virtue, left hand wrongdoing), of the lower world. Named in the batch prose of batak_batara_guru ('one of three brothers, with Soripada and Mangalabulan'); materialized here.",
+  "schemaVersion": 2
  },
  {
   "id": "batak_mula_jadi_na_bolon",
@@ -55546,6 +57204,156 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "The earth-diver/earth-spreader creatrix; her epithet links her to weaving (she was let down on a spun thread in some versions). 'Deak Parujar' is associated with spinning/weaving skill."
+ },
+ {
+  "id": "batak_soripada",
+  "name": {
+   "primary": "Second of the Three High Gods",
+   "alt": [
+    "Soripada",
+    "Sori Sohaliapan",
+    "Debata Sori",
+    "Sorisohaliapan"
+   ],
+   "transliterations": {
+    "batak": "ᯘᯬᯒᯪᯇᯑ",
+    "rom": "Soripada"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Batak",
+  "primaryTradition": "Batak",
+  "sex": "male",
+  "vitalStatus": "active",
+  "parentIds": [
+   "batak_mula_jadi_na_bolon"
+  ],
+  "parentRoles": {
+   "batak_mula_jadi_na_bolon": "paternal"
+  },
+  "temporal": {
+   "era": "primordial age of the gods"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 0,
+    "startEvent": "hatched-from-an-egg-as-one-of-the-debata-na-tolu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     }
+    ],
+    "notes": "Soripada (Sori Sohaliapan) is the second of the three high gods (Debata na Tolu) born from the eggs that the divine hen Manukmanuk Hulambujati laid for Mula Jadi na Bolon; brother of Batara Guru and Mangalabulan. He is associated with the middle world and with purity."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial age of the gods",
+    "eraOrdering": 1,
+    "startEvent": "the-preserver-of-the-cosmos",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ],
+    "notes": "Functionally the preserver of the trinity, likened to Vishnu: he maintains the universe and embodies the principle of preservation, complementing Batara Guru (origination/wisdom) and Mangalabulan (the dual power of good and ill)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "preservation-and-purity",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Debata na Tolu",
+     "script": "",
+     "rom": "Debata na Tolu"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "preserve-the-middle-world",
+    "name": "preserve and maintain the cosmos",
+    "inheritability": "unique",
+    "notes": "As the preserver of the Debata na Tolu (likened to Vishnu) he upholds the order of the middle world and the eternal principle of preservation.",
+    "scopeTags": [
+     "cosmic-order",
+     "foundational"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016), Wacana 17(2); Warneck, Die Religion der Batak (1909)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "batak_batara_guru",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — the three high gods Batara Guru, Soripada and Mangalabulan."
+     }
+    ],
+    "notes": "Brother of Batara Guru in the Debata na Tolu; reciprocal sibling edge needed on batak_batara_guru."
+   },
+   {
+    "kind": "sibling",
+    "personId": "batak_mangalabulan",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909)."
+     }
+    ],
+    "notes": "Brother of Mangalabulan; reciprocated within this batch."
+   },
+   {
+    "kind": "father",
+    "personId": "batak_mula_jadi_na_bolon",
+    "era": "primordial age of the gods",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Die Religion der Batak (1909) — Mula Jadi na Bolon fathered the three high gods."
+     }
+    ],
+    "notes": "Son of the creator Mula Jadi na Bolon."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Soripada (Sori Sohaliapan), the second of the Batak high-god trinity (Debata na Tolu) and a son of Mula Jadi na Bolon, is the preserver of the cosmos, likened to Vishnu, brother of Batara Guru and Mangalabulan.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Warneck, Johannes (1909). Die Religion der Batak. Leipzig: Dieterich."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Angerler, Johann (2016). 'Images of God in Toba Batak storytelling,' Wacana 17(2): 303-335."
+     }
+    ]
+   }
+  ],
+  "notes": "Second of the Debata na Tolu, the Batak high-god trinity; son of Mula Jadi na Bolon and brother of Batara Guru and Mangalabulan. Preserver of the cosmos (Vishnu-like), of the middle world and of purity. Named in the batch prose of batak_batara_guru ('one of three brothers, with Soripada and Mangalabulan'); materialized here.",
+  "schemaVersion": 2
  },
  {
   "id": "baule_anangama",
@@ -56413,7 +58221,14 @@ const NEW_FIGURES = [
     "weight": 0.7
    }
   ],
-  "notes": "Libyan/Berber earth-giant Anti, known mainly through Greco-Roman sources (Pindar, Apollodorus, Plutarch) but explicitly claimed as a Berber figure (Anti) and localised at Tingis/Tangier. Son of a sea-god and Earth, so classified demigod. English plain form of the classical name leads; Berber 'Anti' in term-fields."
+  "notes": "Libyan/Berber earth-giant Anti, known mainly through Greco-Roman sources (Pindar, Apollodorus, Plutarch) but explicitly claimed as a Berber figure (Anti) and localised at Tingis/Tangier. Son of a sea-god and Earth, so classified demigod. English plain form of the classical name leads; Berber 'Anti' in term-fields.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "berber_tinge",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "berber_gurzil",
@@ -56652,6 +58467,130 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Berber goddess Ifri/Ifru, the 'African goddess' (Dea Africa) named in the task. English plain word for the Latinized name 'Africa' leads; native Tamazight Ifri/Ifru in term-fields. Pliny attests a Libyan war-goddess; later iconography fuses her with the personified province Africa. Classified deity."
+ },
+ {
+  "id": "berber_tinge",
+  "name": {
+   "primary": "Tinge",
+   "alt": [
+    "Tinjis",
+    "Tinga",
+    "Tingis"
+   ],
+   "transliterations": {
+    "latin": "Tinge",
+    "greek": "Tingis",
+    "berber": "Tinjis"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Berber",
+  "primaryTradition": "Berber",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "temporal": {
+   "era": "antiquity"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "antiquity",
+    "eraOrdering": 0,
+    "startEvent": "berber-goddess-and-eponym-of-tangier",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10."
+     }
+    ],
+    "notes": "Tinge (Tinjis), a Berber goddess, is the eponym of the city of Tangier (ancient Tingis). Pomponius Mela makes her the wife of the Libyan giant Antaeus (known to the Berbers as Anti); the city of Tingis was held to be named after her."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "antiquity",
+    "eraOrdering": 1,
+    "startEvent": "widow-of-antaeus-and-the-founding-of-tangier",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bates, O. (1914). The Eastern Libyans: An Essay. London: Macmillan & Co."
+     }
+    ],
+    "notes": "In the local legend, after Heracles slew Antaeus he took Tinge, by whom (in some tellings) was born Sophax, ancestor of the Mauretanian kings; Antaeus had named his domain, which included the Gardens of the Hesperides, after her. Her tomb-city Tingis kept the giant-and-goddess legend alive into Roman times."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "place-and-eponymy",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tingis",
+     "script": "Latn",
+     "rom": "Tinge"
+    },
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10; Strabo, Geographica 17.3."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "give-her-name-to-tangier",
+    "name": "lend her name to the city of Tangier",
+    "inheritability": "unique",
+    "notes": "As eponym-goddess she names the city of Tingis (Tangier); the local cult preserved her with the legend of her marriage to the earth-giant Antaeus.",
+    "scopeTags": [
+     "foundational"
+    ],
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10; Bates, The Eastern Libyans (1914)."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "berber_anti",
+    "era": "antiquity",
+    "sources": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10 — Tinge the wife of Antaeus."
+     }
+    ],
+    "notes": "Wife of the Libyan giant Antaeus (Anti); reciprocal spouse edge needed on berber_anti."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tinge (Tinjis), a Berber goddess and the eponym of Tangier (Tingis), is named by Pomponius Mela as the wife of the Libyan giant Antaeus, whom the Berbers knew as Anti; her name underlies that of the city.",
+    "citations": [
+     {
+      "kind": "reference",
+      "reference": "Pomponius Mela, De Chorographia 3.10."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bates, O. (1914). The Eastern Libyans: An Essay. London: Macmillan & Co."
+     },
+     {
+      "kind": "reference",
+      "reference": "Plutarch, Sertorius 9 (the giant Antaeus at Tingis)."
+     }
+    ]
+   }
+  ],
+  "notes": "Berber goddess Tinge/Tinjis, eponym of Tangier and wife of the earth-giant Antaeus (corpus berber_anti). Named in the batch prose of berber_anti ('Pomponius Mela makes the goddess Tinjis (eponym of Tangier) his wife'); materialized here. The English/Latin form Tinge leads; native Berber Tinjis and Greek Tingis are given in the term-fields. Classified deity (eponym/tutelary goddess).",
+  "schemaVersion": 2
  },
  {
   "id": "bhil_bhagwan",
@@ -57212,6 +59151,166 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Aisoyimstan, the Cold Maker, is the Blackfoot personification of winter, who brings the cold, snow, frost and storm down from the north — a character in Grinnell's 'Cold Maker's Medicine' (Blackfeet Indian Stories, 1913). The familiar image of him as a white man with white hair in white clothes on a white horse is recorded by Lewis Spence (1914). He stands opposed to the warmth of the Sun in the turning of the seasons on the northern plains."
+ },
+ {
+  "id": "blackfoot_apistotoke",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Apistotoke",
+   "alt": [
+    "Apistotooki",
+    "Ihtsipaitapiiyo'pa",
+    "Source of Life",
+    "the Creator"
+   ],
+   "transliterations": {
+    "blackfoot": "Apistotooki",
+    "rom": "Apistotoke"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Blackfoot",
+  "primaryTradition": "Blackfoot",
+  "sex": "none",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "matumataapi"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 0,
+    "notes": "The abstract creator and Source of Life (Ihtsipaitapiiyo'pa), an indivisible animating power without physical form that originates the cosmic order and the Sky Beings, then leaves the shaping of the world to lesser powers. Blackfoot tradition holds the Creator and the Sun strictly distinct.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke (Apistotooki)'"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "matumataapi",
+    "eraOrdering": 1,
+    "notes": "Naato'si the Sun, foremost of the Sky Beings, was himself created by Apistotoke as the first and chief of the sacred Sky People. Modern Blackfoot tradition keeps Apistotoke (the originating Creator), Naato'si (the Sun), and Napi (Old Man) distinct, against older accounts that merged them.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G. B. Grinnell, Blackfoot Lodge Tales (1892); Blackfoot oral tradition"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-and-source-of-life",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ihtsipaitapiiyo'pa",
+     "script": "Blackfoot",
+     "rom": "Ihtsipaitapiiyopa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke (Apistotooki)'"
+     }
+    ]
+   },
+   {
+    "sphereId": "originator-of-the-Sky-Beings",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "originate-the-cosmos",
+    "name": "Bring the world-order and the Sky Beings into being",
+    "inheritability": "none",
+    "scopeTags": [
+     "creation",
+     "cosmogony"
+    ],
+    "notes": "The Source of Life that originates the cosmic order and creates Naato'si as first of the Sky People, then delegates the shaping of the world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "creator of",
+    "personId": "blackfoot_natosi",
+    "era": "matumataapi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition; cf. native-languages.org 'Natosi' and 'Apistotoke'"
+     }
+    ],
+    "notes": "Naato'si the Sun was created by Apistotoke as the first and foremost of the Sky Beings; the blackfoot_natosi entry already records being 'created by the abstract Apistotoke'."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Ihtsipaitapiiyo'pa",
+    "original": "Ihtsipaitapiiyo'pa",
+    "language": "blackfoot",
+    "transliteration": "Ihtsipaitapiiyopa",
+    "contextTag": "cult",
+    "notes": "Source of Life — the abstract creating power, distinct from the Sun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Algonquian (Blackfoot)",
+   "etymology": "Blackfoot Apistotooki / Apistotoke, the Creator; also called Ihtsipaitapiiyo'pa, rendered the Source of Life or that which gives life, the abstract animating power of existence."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Native Languages of the Americas, 'Apistotoke (Apistotooki)'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "G. B. Grinnell, Blackfoot Lodge Tales (1892)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "creator-distinct-from-the-Sun",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Blackfoot oral tradition; native-languages.org 'Natosi' (Naato'si created by Apistotoke)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Apistotoke (Ihtsipaitapiiyo'pa, the Source of Life), the abstract Blackfoot creator and originator of the cosmic order and the Sky Beings, formless and distinct from the Sun. Naato'si the Sun was created by Apistotoke as the first and chief of the Sky People. Named in both the blackfoot_napi entry (the abstract creator Apistotoke) and the blackfoot_natosi entry (created by the abstract Apistotoke). Modern Blackfoot tradition keeps Apistotoke, Naato'si and Napi strictly distinct."
  },
  {
   "id": "blackfoot_kokomikisomm",
@@ -58660,6 +60759,189 @@ const NEW_FIGURES = [
   "notes": "Bororo (Mato Grosso, Brazil), as recorded by Lévi-Strauss and the Salesians Colbacchini & Albisetti. English 'Sun' leads; Bororo Méri. One of the twin sun-and-moon culture-hero brothers (with Ari the Moon) foregrounded by the registry; ranked demigod per the culture-hero/twin tier. Sex male."
  },
  {
+  "id": "buddhist_arati",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aratī",
+   "alt": [
+    "Arati",
+    "Aversion",
+    "Discontent",
+    "Daughter of Māra"
+   ],
+   "transliterations": {
+    "sanskrit": "अरति Arati",
+    "pali": "Aratī"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_mara"
+  ],
+  "parentRoles": {
+   "buddhist_mara": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Second of the three daughters of Māra, personifying Aratī (aversion, discontent, the restless dislike that drives beings from the present). With Taṇhā and Rāgā she attempts to lure the awakened Buddha at the seat of enlightenment.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "The sisters take on a hundred forms of feminine beauty but cannot disturb the Buddha; the Dhammapada commentary on vv.179-180 records the three by name and their defeat.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180 (Buddhaghosa)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "aversion-and-discontent",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "seduction-and-temptation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conjure-seductive-forms",
+    "name": "Take on the forms of beautiful women of every age",
+    "inheritability": "none",
+    "scopeTags": [
+     "illusion",
+     "temptation"
+    ],
+    "notes": "With her sisters she manifests in many feminine guises to tempt the Buddha; the canon makes this the daughters' shared faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_tanha",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_raga",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_mara",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ],
+    "notes": "Daughter of Māra the Evil One; reciprocal father-of edge to be added to buddhist_mara."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "अरति",
+    "original": "अरति",
+    "language": "sanskrit",
+    "transliteration": "Aratī",
+    "contextTag": "sutra",
+    "notes": "Aversion / discontent; second daughter of Māra",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Pali and Sanskrit aratī, discontent or aversion, the negation a- of rati (delight, attachment; root ram-, to take pleasure); personified as a daughter of Māra, the restlessness opposite to the clinging of craving."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "daughter-of-Mara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25), where Taṇhā, Aratī and Rāgā are Māra's daughters"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of the three daughters of Māra (with Taṇhā and Rāgā), personifying Aversion. One of the three daughters named in the buddhist_mara entry; the trio fail to seduce the awakened Buddha."
+ },
+ {
   "id": "buddhist_brahma_sahampati",
   "name": {
    "primary": "Brahmā Sahāmpati",
@@ -59154,6 +61436,190 @@ const NEW_FIGURES = [
   "notes": "The earth goddess summoned by the Buddha's earth-touching gesture (bhūmisparśa mudrā) to witness his accumulated merit, dispelling Māra; in Southeast Asia she wrings flood-waters from her hair to wash away Māra's armies."
  },
  {
+  "id": "buddhist_raga",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Rāgā",
+   "alt": [
+    "Raga",
+    "Rati",
+    "Passion",
+    "Lust",
+    "Daughter of Māra"
+   ],
+   "transliterations": {
+    "sanskrit": "रागा Rāgā",
+    "pali": "Rāgā"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_mara"
+  ],
+  "parentRoles": {
+   "buddhist_mara": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Third of the three daughters of Māra, personifying Rāgā (passion, lust, sensual desire). With Taṇhā and Aratī she goes to the Buddha to draw him back into the realm of desire that is the domain of her father.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "The allurements of the sisters fail before one who has cut off desire at the root; the Dhammapada commentary on vv.179-180 names the three and records the reply of the Buddha that he cannot be lured by any temptation.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180 (Buddhaghosa)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "passion-and-sensual-desire",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "seduction-and-temptation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conjure-seductive-forms",
+    "name": "Take on the forms of beautiful women of every age",
+    "inheritability": "none",
+    "scopeTags": [
+     "illusion",
+     "temptation"
+    ],
+    "notes": "With her sisters she manifests in many feminine guises to tempt the Buddha; the canon makes this the daughters' shared faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_tanha",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_arati",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_mara",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ],
+    "notes": "Daughter of Māra the Evil One; reciprocal father-of edge to be added to buddhist_mara."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "रागा",
+    "original": "रागा",
+    "language": "sanskrit",
+    "transliteration": "Rāgā",
+    "contextTag": "sutra",
+    "notes": "Passion / lust; third daughter of Māra (also given as Rati in some recensions)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Sanskrit and Pali rāga, colour and so passion, lust, sensual attachment, from the root raj- or rañj- (to be coloured, to be excited); personified as a daughter of Māra, the dyeing of the mind by desire. Some lists give the name of the third sister as Rati."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "daughter-of-Mara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25), where Taṇhā, Aratī and Rāgā are Māra's daughters"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Third of the three daughters of Māra (with Taṇhā and Aratī), personifying Passion (sometimes named Rati in the lists). One of the three daughters named in the buddhist_mara entry; the trio fail to seduce the awakened Buddha."
+ },
+ {
   "id": "buddhist_sakra",
   "name": {
    "primary": "Śakra",
@@ -59351,7 +61817,357 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Buddhist king of the devas, ruler of Trāyastriṃśa on Mount Sumeru. Long-lived but mortal; married to Sujā, daughter of the asura lord Vemacitrin."
+  "notes": "Buddhist king of the devas, ruler of Trāyastriṃśa on Mount Sumeru. Long-lived but mortal; married to Sujā, daughter of the asura lord Vemacitrin.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "buddhist_suja",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
+ },
+ {
+  "id": "buddhist_suja",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Sujā",
+   "alt": [
+    "Suja",
+    "Sujātā",
+    "consort of Sakka"
+   ],
+   "transliterations": {
+    "sanskrit": "सुजा Sujā",
+    "pali": "Sujā"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_vemacitrin"
+  ],
+  "parentRoles": {
+   "buddhist_vemacitrin": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Asura-maiden, daughter of Vemacitrin (Vepacitti) lord of the asuras. Granted by her father the boon of choosing her own husband, she chose Sakka, who came disguised as an aged asura; recognising him from a former association she garlanded him, and he carried her up to Trāyastriṃśa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "G.P. Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sujā'"
+     }
+    ]
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "As Sakka's chief consort she accompanies him everywhere — the boon she asked at marriage. Her marriage makes the asura-lord Vemacitrin the father-in-law of the deva-king, the kinship that underlies their alternating quarrels and truces.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kulāvaka Jātaka (No.31); Malalasekera, DPPN, s.v. 'Sujā'"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "consort-of-the-deva-king",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sujā'",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "accompany-sakka",
+    "name": "Attend the deva-king on all his journeys",
+    "inheritability": "none",
+    "scopeTags": [
+     "consortship"
+    ],
+    "notes": "The boon she chose at marriage was to be with Sakka wherever he went; the canon makes her constant attendance her defining trait.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sujā'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "buddhist_sakra",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sakka' and 'Sujā'"
+     }
+    ],
+    "notes": "Chief consort of Śakra (Sakka); Sakka bears the matronymic Sujampati, meaning lord of Sujā. Reciprocal spouse edge to be added to buddhist_sakra."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_vemacitrin",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Sakka-saṃyutta (SN 11), Vepacitti as Sujā's father"
+     }
+    ],
+    "notes": "Daughter of the asura-lord Vemacitrin/Vepacitti; through her his enmity with Sakka becomes a father-in-law / son-in-law bond. Reciprocal father-of edge to be added to buddhist_vemacitrin."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "सुजा",
+    "original": "सुजा",
+    "language": "sanskrit",
+    "transliteration": "Sujā",
+    "contextTag": "sutra",
+    "notes": "Asura-daughter and consort of Sakka; her name yields Sakka's title Sujampati",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, DPPN, s.v. 'Sujā'"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Pali Sujā, generally connected with su- (good, well; cf. sujāta, well-born); the Sakka epithet Sujampati, husband or lord of Sujā, preserves her name."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Malalasekera, Dictionary of Pāli Proper Names, s.v. 'Sujā'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kulāvaka Jātaka (No.31)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "consort-of-Sakka-and-daughter-of-Vepacitti",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Sakka-saṃyutta (SN 11)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Sujā, asura-daughter of Vemacitrin (Vepacitti) and chief consort of Śakra; her name is preserved in the Sakka epithet Sujampati. Named in both the buddhist_sakra entry (married to Sujā, daughter of the asura lord Vemacitrin) and the buddhist_vemacitrin entry (father-in-law of Sakka through his daughter Sujā). Classed demigod as the asura-born consort raised to the deva-heaven."
+ },
+ {
+  "id": "buddhist_tanha",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Taṇhā",
+   "alt": [
+    "Tanha",
+    "Tṛṣṇā",
+    "Craving",
+    "Daughter of Māra"
+   ],
+   "transliterations": {
+    "sanskrit": "तृष्णा Tṛṣṇā",
+    "pali": "Taṇhā"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buddhist",
+  "primaryTradition": "Buddhist",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buddhist_mara"
+  ],
+  "parentRoles": {
+   "buddhist_mara": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Eldest of the three daughters of Māra, personifying Craving (taṇhā), the first of the cravings that bind beings to saṃsāra. With her sisters Aratī and Rāgā she goes to the freshly-awakened Buddha at the bodhimaṇḍa to seduce him back into the power of Māra.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "She and her sisters display themselves in the guises of maidens of every age, but the Buddha, free of craving, is unmoved; they withdraw defeated. The Dhammapada commentary on verses 179-180 names the three and recounts their failure.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180 (Buddhaghosa)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "craving-and-thirst",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "seduction-and-temptation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "conjure-seductive-forms",
+    "name": "Take on the forms of beautiful women of every age",
+    "inheritability": "none",
+    "scopeTags": [
+     "illusion",
+     "temptation"
+    ],
+    "notes": "With her sisters she manifests as girls, young women, and matrons to tempt the Buddha; the canon makes this the daughters' shared faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buddhist_arati",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buddhist_raga",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25)"
+     }
+    ],
+    "notes": "Sister daughter of Māra; the three (Taṇhā, Aratī, Rāgā) act together to tempt the Buddha."
+   },
+   {
+    "kind": "father",
+    "personId": "buddhist_mara",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ],
+    "notes": "Daughter of Māra the Evil One; reciprocal father-of edge to be added to buddhist_mara."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "तृष्णा",
+    "original": "तृष्णा",
+    "language": "sanskrit",
+    "transliteration": "Tṛṣṇā / Taṇhā",
+    "contextTag": "sutra",
+    "notes": "Craving; eldest daughter of Māra, personified thirst that binds beings to rebirth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Indo-European (Indo-Aryan)",
+   "etymology": "Pali taṇhā, Sanskrit tṛṣṇā, thirst or craving, from the root tṛṣ- (to be thirsty; PIE *ters-, dry, thirst); in Buddhist doctrine the cause of suffering named in the second Noble Truth, here personified as a daughter of Māra."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta, Dhītaro Sutta (SN 4.25)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dhammapada-aṭṭhakathā on vv.179-180"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "daughter-of-Mara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Saṃyutta Nikāya, Māra-saṃyutta (SN 4.25), where Taṇhā, Aratī and Rāgā are Māra's daughters"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest of the three daughters of Māra (with Aratī and Rāgā), personifying Craving. Accompanying their downcast father after his armies fail, the three try to seduce the newly awakened Buddha and fail utterly because he is free of craving. Named in the buddhist_mara entry as one of the three daughters."
  },
  {
   "id": "buddhist_vaishravana",
@@ -60307,6 +63123,184 @@ const NEW_FIGURES = [
   "notes": "Lubaale of plague among the Baganda balubaale."
  },
  {
+  "id": "buganda_kayikuuzi",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Kayikuuzi",
+   "alt": [
+    "Kaikuzi",
+    "Kayikuzi"
+   ],
+   "transliterations": {
+    "luganda": "Kayikuuzi"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Buganda",
+  "primaryTradition": "Buganda",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buganda_ggulu"
+  ],
+  "parentRoles": {
+   "buganda_ggulu": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Son of the sky-father Ggulu and brother of Nambi and of Walumbe (Death). His name means he who digs holes. When Death followed Nambi and Kintu down to the earth and began to kill their children, Ggulu sent Kayikuuzi to bring Walumbe back to the sky.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John Roscoe, The Baganda (1911), 'The legend of Kintu', pp. 460-464"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "He fought his brother Walumbe and chased him underground, digging great pits in pursuit; the people, told to keep silence and stay indoors, cried out at the sight of Walumbe, who escaped back into the earth. Kayikuuzi gave up the hunt, and Death has remained on earth ever since. The Ttanda pits in Ssingo are shown as the holes he dug.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "John Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "pursuer-of-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "digging-and-the-underground",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "dig-the-earth",
+    "name": "Dig great pits in pursuit of Death",
+    "inheritability": "none",
+    "scopeTags": [
+     "earth",
+     "pursuit"
+    ],
+    "notes": "His name, meaning he who digs holes, names the faculty; the Ttanda pits are the trace of his hunt for Walumbe.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ttanda-pits",
+    "name": "The Ttanda pits of Ssingo",
+    "kind": "site",
+    "role": "associated",
+    "notes": "The deep pits at Ttanda in Ssingo county, shown as the holes Kayikuuzi dug chasing Walumbe underground; a place associated with death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buganda_nambi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ],
+    "notes": "Brother of Nambi, daughter of Ggulu and wife of Kintu; reciprocal sibling edge to be added to buganda_nambi."
+   },
+   {
+    "kind": "sibling",
+    "personId": "buganda_walumbe",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ],
+    "notes": "Brother of Walumbe (Death), whom Ggulu sent him to recapture; reciprocal sibling edge to be added to buganda_walumbe."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Kayikuuzi",
+    "original": "Kayikuuzi",
+    "language": "luganda",
+    "transliteration": "Kayikuuzi",
+    "contextTag": "myth",
+    "notes": "He who digs holes — the digger sent to bring Death back to the sky",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Luganda)",
+   "etymology": "Luganda Kayikuuzi, understood as he who digs holes (from the verb okukuula / kukuuza, to dig out or uproot), naming his pursuit of Walumbe underground."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), 'The legend of Kintu', pp. 460-464"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "son-of-Ggulu-and-pursuer-of-Walumbe",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Roscoe, The Baganda (1911), pp. 460-464"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Kayikuuzi (he who digs holes), son of the sky-father Ggulu and brother of Nambi and Walumbe. In the Kintu cycle Ggulu sends him to recapture Death (Walumbe) after Walumbe begins killing the children of Kintu and Nambi; he chases his brother underground and digs the Ttanda pits, but the cries of the people let Walumbe escape, so Death stays in the world. Named in the buganda_ggulu entry as the third child (father of Nambi, Walumbe, and Kayikuuzi)."
+ },
+ {
   "id": "buganda_kibuka",
   "name": {
    "primary": "Kibuka",
@@ -60824,7 +63818,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "First woman, daughter of Ggulu and wife of Kintu; sister of Walumbe."
+  "notes": "First woman, daughter of Ggulu and wife of Kintu; sister of Walumbe.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buganda_kayikuuzi",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "buganda_walumbe",
@@ -60946,7 +63947,350 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Brother of Nambi and son of Ggulu; followed Kintu to earth and brought death into the world."
+  "notes": "Brother of Nambi and son of Ggulu; followed Kintu to earth and brought death into the world.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "buganda_kayikuuzi",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
+ },
+ {
+  "id": "bunyoro_isaza",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Isaza",
+   "alt": [
+    "Isaza Nyakikoto",
+    "Isaza Waraga"
+   ],
+   "transliterations": {
+    "runyoro": "Isaza"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Bunyoro",
+  "primaryTradition": "Bunyoro",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Last king of the Batembuzi, the first dynasty of Kitara. A young, pleasure-loving king who loved hunting and the company of animals; he took the beautiful Nyamata, sister-recommended, as his wife, and she bore him Isimbwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "Nyamiyonga, king of the underworld, befriended Isaza by a blood-pact and then lured him below the earth — in one telling by sending a beautiful cow-pair he could not resist following. Isaza disappeared into the land of the dead, ending the Batembuzi line on earth; his throne passed in his absence and his son Isimbwa carried the descent toward the Bacwezi.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ruth B. Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "last-Batembuzi-king",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "kingship-of-Kitara",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "rule-kitara",
+    "name": "Hold the throne of Kitara as last of the Batembuzi",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "kingship"
+    ],
+    "notes": "The kingship of the first dynasty ended with his descent into the underworld.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "bunyoro_nyamata",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "notes": "Husband of Nyamata, daughter of the underworld-king Nyamiyonga; their son is Isimbwa."
+   },
+   {
+    "kind": "father-of",
+    "personId": "bunyoro_isimbwa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "notes": "Father of Isimbwa, through whom the line continues to the Bacwezi founder Ndahura."
+   },
+   {
+    "kind": "enemy",
+    "personId": "bunyoro_nyamiyonga",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "notes": "Drawn into the land of the dead by the underworld-king Nyamiyonga, who befriended then lured him below; reciprocal enemy edge to be added to bunyoro_nyamiyonga."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Isaza",
+    "original": "Isaza",
+    "language": "latin",
+    "transliteration": "Isaza",
+    "contextTag": "myth",
+    "notes": "Last king of the Batembuzi, lured into the underworld",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Runyoro-Rutooro)",
+   "etymology": "Runyoro Isaza, the personal name of the last Batembuzi king; carried in the dynastic king-lists of Kitara."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "last-Batembuzi-king-father-of-Isimbwa",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Isaza, last king of the Batembuzi dynasty of Kitara, husband of Nyamata and father of Isimbwa. Lured into the underworld by Nyamiyonga (in one telling by an irresistible pair of cattle), ending the first dynasty on earth; his son Isimbwa carries the descent to the Bacwezi founder Ndahura. Named in the bunyoro_ndahura entry (Isimbwa was son of Isaza, last of the Batembuzi kings) and implied in the bunyoro_nyamiyonga entry, which says Nyamiyonga drew the Batembuzi king Isaza into the land of the dead."
+ },
+ {
+  "id": "bunyoro_isimbwa",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Isimbwa",
+   "alt": [
+    "Isimbwa Rutahinduka"
+   ],
+   "transliterations": {
+    "runyoro": "Isimbwa"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Bunyoro",
+  "primaryTradition": "Bunyoro",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "bunyoro_isaza",
+   "bunyoro_nyamata"
+  ],
+  "parentRoles": {
+   "bunyoro_isaza": "paternal",
+   "bunyoro_nyamata": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Son of the last Batembuzi king Isaza and of Nyamata, daughter of the underworld-king Nyamiyonga; raised below the earth in his grandfather's land of the dead while his father reigned above. A great hunter who moved between the underworld and the upper world.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "By Nyinamwiru, daughter of the regent Bukuku, he fathered Ndahura, the founder of the Bacwezi dynasty — the demi-divine line of culture-kings who later vanished and were venerated as Kubandwa spirits. Isimbwa is thus the hinge between the Batembuzi and Bacwezi houses.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ruth B. Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "id": "hunter-between-worlds",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "Batembuzi-to-Bacwezi-link",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pass-between-worlds",
+    "name": "Move between the underworld and the land of the living",
+    "inheritability": "none",
+    "scopeTags": [
+     "liminality",
+     "hunting"
+    ],
+    "notes": "Born below the earth, he travels up to the world of men where he sires the Bacwezi line.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "bunyoro_ndahura",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "notes": "Father of Ndahura, founder of the Bacwezi dynasty; bunyoro_ndahura already records Isimbwa as his father in its prose, so [bunyoro_isimbwa] is to be added to bunyoro_ndahura.parentIds."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Isimbwa",
+    "original": "Isimbwa",
+    "language": "latin",
+    "transliteration": "Isimbwa",
+    "contextTag": "myth",
+    "notes": "Son of Isaza, father of the Bacwezi founder Ndahura",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Runyoro-Rutooro)",
+   "etymology": "Runyoro Isimbwa, the personal name of the son of Isaza in the Kitara dynastic traditions, father of the first Mucwezi Ndahura."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "son-of-Isaza-and-Nyamata-father-of-Ndahura",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Isimbwa, son of the last Batembuzi king Isaza and of Nyamata (daughter of the underworld-king Nyamiyonga), and father of the Bacwezi founder Ndahura. The hinge between the Batembuzi and Bacwezi dynasties: born in the underworld, he comes up to father Ndahura by Nyinamwiru. Named in the bunyoro_ndahura entry, where the father Isimbwa is son of Isaza, and in the bunyoro_nyamiyonga entry as the son whose mother is Nyamata. Classed demigod as the underworld-and-earth-born link of the demi-divine Cwezi line."
  },
  {
   "id": "bunyoro_ndahura",
@@ -61053,6 +64397,169 @@ const NEW_FIGURES = [
   "notes": "Founder of the semi-divine Bacwezi dynasty, later venerated as a Kubandwa possession-spirit."
  },
  {
+  "id": "bunyoro_nyamata",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nyamata",
+   "alt": [
+    "daughter of Nyamiyonga",
+    "wife of Isaza"
+   ],
+   "transliterations": {
+    "runyoro": "Nyamata"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Bunyoro",
+  "primaryTradition": "Bunyoro",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "bunyoro_nyamiyonga"
+  ],
+  "parentRoles": {
+   "bunyoro_nyamiyonga": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "notes": "Daughter of Nyamiyonga, king of the underworld, renowned for her beauty. The Batembuzi king Isaza, told of her by his sister, made her his wife; she bore him a son, Isimbwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Ruth B. Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "notes": "Through her the underworld-king Nyamiyonga became grandfather of the Bacwezi founder Ndahura: she is mother of Isimbwa, who is father of Ndahura. In the tellings she returns to or remains in her father's underworld with the young Isimbwa.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "underworld-princess",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear-the-cwezi-line",
+    "name": "Bear Isimbwa, link between Batembuzi and Bacwezi",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "ancestry"
+    ],
+    "notes": "Her son Isimbwa is the father of the Bacwezi founder Ndahura; she is the maternal link from the underworld house into the Kitara dynasties.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "bunyoro_isaza",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     }
+    ],
+    "notes": "Wife of the last Batembuzi king Isaza; mother of their son Isimbwa."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "bunyoro_isimbwa",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "notes": "Mother of Isimbwa, father of the Bacwezi founder Ndahura."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Nyamata",
+    "original": "Nyamata",
+    "language": "latin",
+    "transliteration": "Nyamata",
+    "contextTag": "myth",
+    "notes": "Daughter of the underworld-king Nyamiyonga, wife of Isaza, mother of Isimbwa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Niger-Congo (Bantu, Runyoro-Rutooro)",
+   "etymology": "Runyoro Nyamata, the personal name of the daughter of Nyamiyonga in the Bacwezi origin-traditions of Kitara."
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Fisher, Twilight Tales of the Black Baganda (1911)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "daughter-of-Nyamiyonga-and-mother-of-Isimbwa",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Roscoe, The Bakitara or Banyoro (1923)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nyamata, daughter of the underworld-king Nyamiyonga, wife of the last Batembuzi king Isaza and mother of Isimbwa. Through her, Nyamiyonga is grandfather of the Bacwezi founder Ndahura. Named in the bunyoro_nyamiyonga entry, which records that the daughter of Nyamiyonga, Nyamata, was the mother of Isimbwa."
+ },
+ {
   "id": "bunyoro_nyamiyonga",
   "name": {
    "primary": "Nyamiyonga",
@@ -61152,7 +64659,14 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "King of the underworld who drew the Batembuzi king Isaza into the land of the dead; grandfather of Ndahura through his daughter Nyamata."
+  "notes": "King of the underworld who drew the Batembuzi king Isaza into the land of the dead; grandfather of Ndahura through his daughter Nyamata.",
+  "relations": [
+   {
+    "kind": "enemy",
+    "personId": "bunyoro_isaza",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "bunyoro_ruhanga",
@@ -61344,6 +64858,356 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Last king of the Bacwezi; chief among the Kubandwa spirits venerated after the dynasty vanished."
+ },
+ {
+  "id": "burmese_byatta",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Byatta",
+   "alt": [
+    "Byat Ta",
+    "Byatta the flower-gatherer"
+   ],
+   "transliterations": {
+    "burmese": "ဗျတ္တ",
+    "rom": "Byatta"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Burmese",
+  "primaryTradition": "Burmese",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "reign of King Anawrahta of Pagan (11th c.)"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 0,
+    "notes": "A man of great strength (in the tradition a shipwrecked foreigner who gained power by eating the flesh of a dead alchemist) taken into King Anawrahta's service. His daily duty was to run to Mount Popa and gather flowers for the king. On the mountain he met and loved the flower-eating ogress Me Wunna.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 1,
+    "notes": "Lingering with Me Wunna, he failed to deliver the flowers on time and the king had him executed. He became a nat; his and Me Wunna's two sons, the Taungbyon Brothers, were raised at court and themselves became among the most famous of the Thirty-Seven Nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "deified-royal-servant",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "sphereId": "strength-and-swiftness",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "superhuman-strength-and-speed",
+    "name": "Run to Mount Popa and back as the royal flower-gatherer",
+    "inheritability": "none",
+    "scopeTags": [
+     "strength",
+     "service"
+    ],
+    "notes": "His strength and speed, gained from eating the corpse of an alchemist, made him the flower-runner of Anawrahta; the same liaison on Popa brought his fall.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "burmese_me_wunna",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Husband of the Mount Popa ogress Me Wunna; father of the Taungbyon Brothers."
+   },
+   {
+    "kind": "father-of",
+    "personId": "burmese_shwe_hpyin_naungdaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Father of the elder Taungbyon Brother; that child entry records the sons of Byatta and the ogress Me Wunna, so burmese_byatta is to be added to the child parentIds."
+   },
+   {
+    "kind": "father-of",
+    "personId": "burmese_shwe_hpyin_nyidaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Father of the younger Taungbyon Brother; the child entry records the sons of Byatta and the ogress Me Wunna, so burmese_byatta is to be added to the child parentIds."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "ဗျတ္တ",
+    "original": "ဗျတ္တ",
+    "language": "burmese",
+    "transliteration": "Byatta",
+    "contextTag": "cult",
+    "notes": "Flower-gatherer of Anawrahta, father of the Taungbyon Brothers, deified as a nat",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Burmese)",
+   "etymology": "Burmese Byatta (Byat Ta); the personal name of the foreign-born strongman and flower-gatherer of Anawrahta in the nat-traditions of Pagan."
+  },
+  "sources": [
+   {
+    "claim": "Byatta, the strongman flower-gatherer of King Anawrahta, was executed for tarrying with the Popa ogress Me Wunna and became a nat; their sons are the Taungbyon Brothers.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Byatta, the foreign-born strongman taken into the service of King Anawrahta as his Mount Popa flower-gatherer; husband of the ogress Me Wunna and father of the Taungbyon Brothers (Shwe Hpyin Naungdaw and Nyidaw). Executed for lingering with Me Wunna and failing his duty, he became a nat. Named in the two Taungbyon-brother entries as the sons of Byatta and the ogress Me Wunna."
+ },
+ {
+  "id": "burmese_me_wunna",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Me Wunna",
+   "alt": [
+    "Popa Medaw",
+    "Mae Wunna",
+    "the ogress of Mount Popa"
+   ],
+   "transliterations": {
+    "burmese": "မယ်ဝဏ္ဏ",
+    "rom": "Me Wunna"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Burmese",
+  "primaryTradition": "Burmese",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "reign of King Anawrahta of Pagan (11th c.)"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 0,
+    "notes": "A flower-eating ogress (belu) dwelling on Mount Popa, the mother-spirit of the mountain (Popa Medaw, the Lady or Mother of Popa). She met and loved Byatta, the royal flower-gatherer, and bore him two sons, the future Taungbyon Brothers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 1,
+    "notes": "After Byatta was executed and her sons taken away to the palace, she died of grief on the mountain and became a nat. She is venerated as Popa Medaw, guardian-mother of Mount Popa, and her sons became among the most famous of the Thirty-Seven Nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "guardian-mother-of-Mount-Popa",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ပုပ္ပါးမယ်တော်",
+     "script": "burmese",
+     "rom": "Popa Medaw"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ]
+   },
+   {
+    "sphereId": "ogress-of-the-mountain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mountain-guardianship",
+    "name": "Guard Mount Popa as its mother-spirit",
+    "inheritability": "none",
+    "scopeTags": [
+     "tutelary",
+     "mountain"
+    ],
+    "notes": "As Popa Medaw she is the maternal guardian-spirit of Mount Popa, the holy mountain that is the home of the nats.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "burmese_byatta",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Wife of Byatta, the flower-gatherer of Anawrahta; mother of the Taungbyon Brothers."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "burmese_shwe_hpyin_naungdaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Mother of the elder Taungbyon Brother; the child entry records the ogress Me Wunna, so burmese_me_wunna is to be added to the child parentIds."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "burmese_shwe_hpyin_nyidaw",
+    "era": "reign of King Anawrahta of Pagan (11th c.)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     }
+    ],
+    "notes": "Mother of the younger Taungbyon Brother; the child entry records the ogress Me Wunna, so burmese_me_wunna is to be added to the child parentIds."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "ပုပ္ပါးမယ်တော်",
+    "original": "ပုပ္ပါးမယ်တော်",
+    "language": "burmese",
+    "transliteration": "Popa Medaw",
+    "contextTag": "cult",
+    "notes": "Mother of Popa — the ogress mother-spirit of Mount Popa, mother of the Taungbyon Brothers",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ]
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Burmese)",
+   "etymology": "Burmese Me Wunna; venerated as Popa Medaw (ပုပ္ပါးမယ်တော်), the Lady or Mother of Popa, the ogress-mother of Mount Popa in the nat traditions."
+  },
+  "sources": [
+   {
+    "claim": "Me Wunna, the flower-eating ogress of Mount Popa, bore Byatta two sons (the Taungbyon Brothers), died of grief at his death, and became the nat Popa Medaw.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "R. C. Temple, The Thirty-Seven Nats, London, 1906"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Maung Htin Aung, Folk Elements in Burmese Buddhism, OUP, 1962"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Me Wunna (Popa Medaw), the flower-eating ogress and mother-spirit of Mount Popa; wife of Byatta and mother of the Taungbyon Brothers (Shwe Hpyin Naungdaw and Nyidaw). When Byatta was executed and her sons taken to court, she died of grief and became the nat Popa Medaw, guardian-mother of the holy mountain. Named in the two Taungbyon-brother entries as the sons of Byatta and the ogress Me Wunna."
  },
  {
   "id": "burmese_min_mahagiri",
@@ -62153,6 +66017,195 @@ const NEW_FIGURES = [
   "notes": "Spirit-class sky-god (classed as deity). Native attested form Esege Malaan ('Bald/Wide Father'); the gloss 'bald, broad' is sometimes attached to malaan. Distinct from the steppe-Mongol Tengri pantheon already in the registry: this is the Mongolic Buryat shamanic sky-father."
  },
  {
+  "id": "buryat_geser",
+  "name": {
+   "primary": "Geser",
+   "alt": [
+    "Geser Khan",
+    "Abai Geser",
+    "Bukhe Belligte",
+    "Gesar"
+   ],
+   "transliterations": {
+    "mong-cyrl": "Гэсэр",
+    "rom": "Geser"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Buryat",
+  "primaryTradition": "Buryat",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "buryat_khan_khormusta"
+  ],
+  "parentRoles": {
+   "buryat_khan_khormusta": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "heroic-champion",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Abai Geser (Buryat epic; ed. A. I. Ulanov, Ulan-Ude, 1960)"
+     }
+    ]
+   },
+   {
+    "sphereId": "monster-slaying",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation (Geser battles the demons born of dismembered Atai Ulan)"
+     }
+    ]
+   },
+   {
+    "sphereId": "otherworld-endowed-hero",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Walther Heissig, The Religions of Mongolia (1980), on Geser as the heaven-sent champion"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "heaven-sent-champion",
+    "name": "Descend from the western tengri to be born among humans as their champion",
+    "inheritability": "none",
+    "notes": "the middle son of Khan Khormusta, sent down to repair the ruin worked by the eastern (black) tengri",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "cyberleninka.ru, Buryat Hesariad, on the middle son of Khormusta sent to the middle world"
+     }
+    ],
+    "scopeTags": [
+     "heroism"
+    ]
+   },
+   {
+    "id": "slay-the-eastern-demons",
+    "name": "Hunt down and destroy the monsters spawned from dismembered Atai Ulan",
+    "inheritability": "none",
+    "notes": "the demons and beasts of the middle world arose from the scattered body of the eastern khan",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Abai Geser (Buryat epic), the demon-slaying campaigns"
+     }
+    ],
+    "scopeTags": [
+     "monster-slaying"
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "geser-bow",
+    "kind": "weapon",
+    "name": "Hero bow and arms of the heaven-sent champion",
+    "role": "wielder",
+    "notes": "Geser, the celestial warrior, is armed for his war on the demons of the middle world",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Abai Geser (Buryat epic; ed. A. I. Ulanov, Ulan-Ude, 1960)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Abai Geser (Buryat heroic epic; ed. A. I. Ulanov, Ulan-Ude, 1960)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Geser Khan is the middle son of Khan Khormusta, chief of the 55 western (white) tengri; after Khormusta defeats and dismembers the eastern khan Atai Ulan, whose body-parts become earthly demons, Geser is sent down from heaven and born among humans to destroy them.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Walther Heissig, The Religions of Mongolia (1980)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Geser Khan, the great hero of the Buryat Abai Geser epic, the celestial-born champion (heavenly name Bukhe Belligte) who is the middle son of Khan Khormusta, chief of the fifty-five western tengri. After Khormusta vanquishes and dismembers the eastern khan Atai Ulan, whose scattered body engenders the demons and monsters of the middle world, the western tengri send Geser down to be born among humans and rid the earth of those evils. Classed demigod, mirroring the Buryat first-shaman culture-hero tier (buryat_morgon_kara), since Geser is a heaven-descended being who lives out a human heroic career. His parent-edge to canaanite-style paternity is added here on buryat_khan_khormusta, whose own entry already names him father of Geser; the reciprocal child-edge is left for the maintainer to mirror.",
+  "linguistic": {
+   "languageFamily": "Mongolic (Buryat); the epic and theonym shared across Mongolic and Tibetan worlds",
+   "etymology": "Buryat Geser (Gesar) is the hero-name of the pan-Inner-Asian Geser/Gesar epic; in the Buryat Tengrist recension he is given the heavenly name Bukhe Belligte (the strong/firm one) before his descent. The name Geser is widely connected to a foreign royal title (compared by some to Caesar/Kesar transmitted eastward), though in Buryat tradition he is fully a son of the sky-god Khormusta. He is born among humans as the divine champion of the western tengri.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Walther Heissig, The Religions of Mongolia (1980), on the Geser epic and its heroes"
+    },
+    {
+     "kind": "secondary",
+     "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation"
+    }
+   ]
+  },
+  "epithets": [
+   {
+    "epithetId": "Bukhe Belligte",
+    "original": "Bukhe Belligte",
+    "language": "latin",
+    "transliteration": "Bukhe Belligte",
+    "contextTag": "myth",
+    "notes": "the heavenly name of Geser before his descent to the middle world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "cyberleninka.ru, Buryat Hesariad: Tengrist mythology and the epic interpretation"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "descendant of",
+    "personId": "buryat_khan_khormusta",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "cyberleninka.ru, Buryat Hesariad (Geser the middle son of Khan Khormusta)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Abai Geser (Buryat epic; ed. A. I. Ulanov, Ulan-Ude, 1960)"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — Geser is the middle son of Khan Khormusta, chief of the western tengri; the existing buryat_khan_khormusta already carries a faculty sends his son down to earth as a divine champion and names himself father of Geser. The paternal edge is also recorded in parentIds; add the reciprocal ancestor-of / parent acknowledgement on buryat_khan_khormusta."
+   }
+  ],
+  "schemaVersion": 2
+ },
+ {
   "id": "buryat_khan_khormusta",
   "name": {
    "primary": "Lord of the Western Sky",
@@ -62865,7 +66918,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Mortal son granted to Daniel by divine favor; slain by Anat's henchman Yatpan (disguised as a raptor) for refusing to yield his bow. Typed scion as son of the deified hero Daniʾilu."
+  "notes": "Mortal son granted to Daniel by divine favor; slain by Anat's henchman Yatpan (disguised as a raptor) for refusing to yield his bow. Typed scion as son of the deified hero Daniʾilu.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_paghat",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "canaanite_athirat",
@@ -64162,6 +68222,357 @@ const NEW_FIGURES = [
   ]
  },
  {
+  "id": "canaanite_nikkal",
+  "name": {
+   "primary": "Nikkal",
+   "alt": [
+    "Nikkal-wa-Ib",
+    "Nikkalu",
+    "Nkl",
+    "Great Lady and Fruitful"
+   ],
+   "transliterations": {
+    "ugaritic": "nkl"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Canaanite",
+  "primaryTradition": "Canaanite",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "orchards-and-fruit",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nkl",
+     "script": "Ugaritic",
+     "rom": "Nikkalu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 (the orchard-bride)"
+     }
+    ]
+   },
+   {
+    "sphereId": "marriage-conception",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 (wedding hymn invoking the Kotharot)"
+     }
+    ]
+   },
+   {
+    "sphereId": "fertility-and-marriage",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "del Olmo Lete, Canaanite Religion According to the Liturgical Texts of Ugarit (1999), on Nikkal-wa-Ib as bride and fruitfulness goddess"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bride-of-the-moon",
+    "name": "Wed the moon-god Yarikh for a vast bride-price",
+    "term": {
+     "value": "trh",
+     "script": "Ugaritic",
+     "rom": "tarrihu"
+    },
+    "inheritability": "none",
+    "notes": "courted through the broker Hiribi, king of summer; a thousand of silver and ten thousand of gold",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 17-37"
+     }
+    ],
+    "scopeTags": [
+     "marriage"
+    ]
+   },
+   {
+    "id": "bear-fruit-of-the-orchard",
+    "name": "Quicken the orchard and bear fruit as the Fruitful Lady",
+    "term": {
+     "value": "ib",
+     "script": "Ugaritic",
+     "rom": "Ib (Fruit)"
+    },
+    "inheritability": "none",
+    "notes": "the second element of Nikkal-wa-Ib glosses as fruit/blossom",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "del Olmo Lete & Sanmartin, A Dictionary of the Ugaritic Language (DULAT), s.v. nkl"
+     }
+    ],
+    "scopeTags": [
+     "fertility"
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Marriage of Yarikh and Nikkal (KTU 1.24)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Ugaritic god-list KTU 1.118 (RS 20.024); offering lists"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Nikkal (Nikkal-wa-Ib, Great Lady and Fruitful) is the orchard and fertility goddess who weds the moon-god Yarikh in KTU 1.24; her name descends from Sumerian Ningal, the wife of the moon-god Nanna/Sin, via Akkadian and Hurrian mediation.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "del Olmo Lete, Canaanite Religion According to the Liturgical Texts of Ugarit (1999)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Pardee, Ritual and Cult at Ugarit (2002)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Orchard and fruitfulness goddess Nikkal-wa-Ib, the Fruitful Great Lady; bride of the moon-god Yarikh in the Ugaritic wedding hymn KTU 1.24, in which the courtship is conducted through Hiribi, the king of summer (sometimes taken as her father, though modern restorations leave that kin-tie uncertain, so no parent is wired here). Her theonym continues Sumerian Ningal (nin-gal, the great lady), the moon-god Nanna-Sin consort, transmitted through Akkadian and Hurrian channels. Authored as the moon-god Yarikh spouse; her spouse-edge is recorded here for the maintainer to mirror on canaanite_yarikh.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Semitic, Ugaritic/Northwest Semitic); theonym ultimately Sumerian via Akkadian-Hurrian transmission",
+   "etymology": "Ugaritic Nikkal (nkl), fuller form Nikkal-wa-Ib, derives from Sumerian Ningal (nin-gal, the great lady), the consort of the moon-god Nanna-Sin. The name passed through Akkadian and Hurrian into Ugaritic, the second element Ib being read as fruit/blossom, hence the gloss Great Lady and Fruitful. As Ningal was the moon-god wife in Mesopotamia, so Nikkal is the bride of the Ugaritic moon-god Yarikh.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "del Olmo Lete & Sanmartin, A Dictionary of the Ugaritic Language (DULAT), s.v. nkl"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Pardee, Ritual and Cult at Ugarit (2002), on Nikkal and the Hurrian background of KTU 1.24"
+    }
+   ]
+  },
+  "epithets": [
+   {
+    "epithetId": "nkl w ib",
+    "original": "nkl w ib",
+    "language": "ugaritic",
+    "transliteration": "Nikkal-wa-Ib",
+    "contextTag": "cult",
+    "notes": "Great Lady and Fruitful, the doubled name of the orchard-bride of the moon-god",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "KTU 1.24.1, 17 (Nikkal hymn)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "canaanite_yarikh",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Marriage of Yarikh and Nikkal, KTU 1.24 17-37 (the moon-god weds Nikkal)"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — Nikkal is the orchard-goddess bride of the moon-god Yarikh in KTU 1.24, whose own prose already records that he weds the orchard-goddess Nikkal; add the reciprocal spouse-edge on canaanite_yarikh."
+   }
+  ],
+  "schemaVersion": 2
+ },
+ {
+  "id": "canaanite_paghat",
+  "name": {
+   "primary": "Paghat",
+   "alt": [
+    "Pughat",
+    "Pugat",
+    "Pgt",
+    "the maiden who knew the course of the stars"
+   ],
+   "transliterations": {
+    "ugaritic": "pgt"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Canaanite",
+  "primaryTradition": "Canaanite",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "canaanite_daniel"
+  ],
+  "parentRoles": {
+   "canaanite_daniel": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "domains": [
+   {
+    "sphereId": "vengeance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "pgt",
+     "script": "Ugaritic",
+     "rom": "Pugatu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic, KTU 1.19 IV (Pughat sets out to avenge her brother)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-rescue-quest-and-vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic, KTU 1.19 IV 28-61 (disguised as Anat, she seeks out Yatpan)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "know-the-stars",
+    "name": "Rise early to draw water, brush the dew from the barley, and know the course of the stars",
+    "term": {
+     "value": "ydt hlk kbkbm",
+     "script": "Ugaritic",
+     "rom": "yadaat halaka kabkabima"
+    },
+    "inheritability": "none",
+    "notes": "her recurring honorific formula in the epic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic, KTU 1.19 II 1-7 (the thrice-repeated epithet of Pughat)"
+     }
+    ],
+    "scopeTags": [
+     "wisdom"
+    ]
+   },
+   {
+    "id": "avenge-in-disguise",
+    "name": "Disguise herself as the goddess Anat to reach and strike her brother killer",
+    "term": {
+     "value": "pgt",
+     "script": "Ugaritic",
+     "rom": "Pugatu"
+    },
+    "inheritability": "none",
+    "notes": "buckles a sword and knife beneath her robes and enters Yatpan camp",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic, KTU 1.19 IV 28-61 (the tablet breaks before the outcome)"
+     }
+    ],
+    "scopeTags": [
+     "vengeance"
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "paghat-hidden-blade",
+    "kind": "weapon",
+    "name": "Sword and knife hidden in her garments",
+    "term": {
+     "value": "hrb",
+     "script": "Ugaritic",
+     "rom": "harbu"
+    },
+    "role": "wielder",
+    "notes": "concealed beneath her clothing for the vengeance on Yatpan",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic, KTU 1.19 IV 44-46"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic (KTU 1.17-1.19)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Pughat (Paghat) is the daughter of Daniel and sister of Aqhat; after her brother is slain by Anat henchman Yatpan she vows revenge, disguises herself as Anat, and confronts Yatpan, though the epic breaks off before the end.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Coogan & Smith, Stories from Ancient Canaan, 2nd ed. (2012), Aqhat"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wright, Ritual in Narrative: The Dynamics of Feasting, Mourning, and Retaliation Rites in the Ugaritic Tale of Aqhat (2001)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Pughat (Paghat), the wise and dutiful daughter of the sage-king Daniel and sister of the hunter Aqhat. Her standing epithet calls her the one who rises early to draw water, who brushes the dew from the barley, and who knows the course of the stars. Reading the withered vegetation and the vultures over her father house as the signs of her brother murder, she takes up the feud, disguises herself as the goddess Anat, and goes to strike Yatpan, the killer; the clay tablet breaks before the outcome. Typed quartigod to match her brother Aqhat, the mortal child of the deified Rephaim-hero Daniel. Her parent-edge to canaanite_daniel is added here, and her sibling-edge to canaanite_aqhat is recorded for the maintainer to mirror.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Semitic, Ugaritic/Northwest Semitic)",
+   "etymology": "Ugaritic Pgt (vocalized Pugatu or Paghatu), the personal name of the daughter of Daniel in the Aqhat epic; commonly connected with a root for girl/maiden, framing her as the exemplary capable daughter. Mooney-style segmented derivation is not preserved; the name is known from the narrative of KTU 1.17-1.19.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "del Olmo Lete & Sanmartin, A Dictionary of the Ugaritic Language (DULAT), s.v. pgt"
+    }
+   ]
+  },
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "canaanite_aqhat",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aqhat Epic, KTU 1.19 (Pughat the sister mourns and avenges Aqhat)"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — Full sibling, both children of the sage-king Daniel; the existing canaanite_aqhat carries the same paternity (canaanite_daniel). Add the reciprocal sibling-edge on canaanite_aqhat."
+   }
+  ],
+  "schemaVersion": 2
+ },
+ {
   "id": "canaanite_rephaim",
   "name": {
    "primary": "The Rephaim",
@@ -64783,7 +69194,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Moon-god 'Lamp of Heaven'; weds the orchard-goddess Nikkal in KTU 1.24, a hymn likely sung at weddings."
+  "notes": "Moon-god 'Lamp of Heaven'; weds the orchard-goddess Nikkal in KTU 1.24, a hymn likely sung at weddings.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "canaanite_nikkal",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "cantabrian_candamius",
@@ -66226,6 +70644,130 @@ const NEW_FIGURES = [
   "notes": "Cherokee 'Lucky Hunter', first man, husband of Selu and keeper of the game animals in a sealed cave."
  },
  {
+  "id": "cherokee_moon",
+  "name": {
+   "primary": "the Moon",
+   "alt": [
+    " Geyaguga ",
+    "Geyaguga",
+    "Nvda Svnoyi Ehi",
+    "the Sun brother"
+   ],
+   "transliterations": {
+    "cherokee": "ᏅᏓ (nvda); priestly ᎨᏯᎫᎦ Geʼyaguʼga"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Cherokee",
+  "primaryTradition": "Cherokee",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "domains": [
+   {
+    "sphereId": "moon",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mooney, Myths of the Cherokee (1900), The Moon and the Thunders / The Daughter of the Sun"
+     }
+    ]
+   },
+   {
+    "sphereId": "night",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mooney (1900)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "milder-night-light",
+    "name": "Cross the night sky in the west with mild light that does not make people squint",
+    "inheritability": "none",
+    "notes": "the younger brothers smile at him because his rays are gentle, unlike his sister the Sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mooney (1900), The Daughter of the Sun"
+     }
+    ],
+    "scopeTags": [
+     "celestial"
+    ]
+   },
+   {
+    "id": "ash-marked-face",
+    "name": "Bear on his face the ash-marks his sister rubbed on her secret lover",
+    "inheritability": "none",
+    "notes": "the etiology of the markings of the moon; the secret midnight lover proves to be the Moon, the Sun own brother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mooney (1900), The Daughter of the Sun (the ash on the lover face)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Mooney, Myths of the Cherokee (1900)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "In Cherokee myth the Moon is male and is the brother of the female Sun; he lives in the west, is fond of his younger brothers (humankind) because they smile at his mild light, and is revealed as the Sun secret lover when she rubs ashes on his face, accounting for the markings of the moon. Priests called him Geyaguga.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology, 1900), The Daughter of the Sun and The Moon and the Thunders"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Moon, a male being in Cherokee myth and the brother of the female Sun (Unelanuhi). He lives in the west and is fond of humankind, his younger brothers, because they smile pleasantly at his mild night-light, whereas they squint and grimace at his fierce sister by day. In The Daughter of the Sun the Sun secret midnight lover, whose face she marks with ashes, proves at the next morning meal to be her own brother the Moon, which is why the moon carries its dark markings. The priestly name recorded by Mooney is Geyaguga, of unknown meaning. Authored as the brother of the Sun; the sibling-edge is recorded here for the maintainer to mirror on cherokee_unelanuhi.",
+  "linguistic": {
+   "languageFamily": "Iroquoian (Cherokee)",
+   "etymology": "The Cherokee word nvda (ᏅᏓ) denotes both sun and moon, distinguished as nvda iga ehi (the nvda that dwells in the day, the Sun) and nvda svnoyi ehi (the nvda that dwells in the night, the Moon). Mooney further records a priestly name for the Moon, Geyaguga (Geʼyaguʼga), whose meaning he states was no longer known. The Moon is a male being and brother to the female Sun.",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "James Mooney, Myths of the Cherokee (1900), notes on the Sun and Moon (Sutalidihi and Geyaguga)"
+    }
+   ]
+  },
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "cherokee_unelanuhi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mooney, Myths of the Cherokee (1900), The Daughter of the Sun (the Moon is the Sun brother)"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — The Moon is the brother of the female Sun Unelanuhi; the existing cherokee_unelanuhi prose already alludes to the Sun household and her brother. Add the reciprocal sibling-edge on cherokee_unelanuhi."
+   }
+  ],
+  "schemaVersion": 2
+ },
+ {
   "id": "cherokee_nunnehi",
   "name": {
    "primary": "the Nûñnehi",
@@ -66758,7 +71300,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "The Sun, a female being in Cherokee myth, called Une'lanu'hi 'the apportioner'; in 'The Daughter of the Sun' she hates humans for squinting at her and kills them with heat, until her own daughter dies."
+  "notes": "The Sun, a female being in Cherokee myth, called Une'lanu'hi 'the apportioner'; in 'The Daughter of the Sun' she hates humans for squinting at her and kills them with heat, until her own daughter dies.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "cherokee_moon",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "cherokee_unetlanvhi",
@@ -68275,6 +72824,170 @@ const NEW_FIGURES = [
   "notes": "Moon goddess who drank her husband Houyi's elixir and fled to the moon."
  },
  {
+  "id": "chinese_danzhu",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Danzhu",
+   "alt": [
+    "丹朱",
+    "Dan Zhu",
+    "Zhu of Dan",
+    "Son of Yao passed over for Shun"
+   ],
+   "transliterations": {
+    "chinese-traditional": "丹朱",
+    "chinese-simplified": "丹朱",
+    "pinyin": "Dānzhū"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "chinese_yao"
+  ],
+  "parentRoles": {
+   "chinese_yao": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistory"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 0,
+    "startEvent": "birth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "Eldest son of the sage-king Yao. The Shiji judges him 'unworthy / not good enough to be entrusted with the realm' (頑凶 / 不肖)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 1,
+    "startEvent": "passed-over-in-favor-of-Shun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.5-6"
+     }
+    ],
+    "notes": "Knowing Danzhu unfit, Yao abdicated to the meritorious commoner Shun rather than to his son — the foundational meritocratic-succession episode. Per Mencius 5A.6, after Yao's death and the mourning Shun withdrew south to yield to Danzhu, but the lords and litigants went to Shun, not Danzhu, so Shun ascended as Heaven's choice. Danzhu was enfeoffed at Dan (whence 'Danzhu')."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic-prehistory",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "passed-over-heir-of-Yao",
+    "term": {
+     "value": "不肖",
+     "script": "Chinese (hanzi)",
+     "rom": "bùxiào"
+    },
+    "notes": "the unworthy heir; foil to the meritocratic abdication",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "fief-of-Dan",
+    "term": {
+     "value": "丹",
+     "script": "Chinese (hanzi)",
+     "rom": "Dān"
+    },
+    "notes": "the fief of Dan from which his name derives",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Shangshu / Yi Ji and commentarial tradition on Danzhu's enfeoffment",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "danzhu-weiqi",
+    "name": "Associated with the invention of weiqi (Go)",
+    "term": {
+     "value": "圍棋",
+     "script": "Chinese (hanzi)",
+     "rom": "wéiqí"
+    },
+    "notes": "A widespread tradition (recorded by Zhang Hua, Bowuzhi) holds that Yao devised the board-game weiqi to instruct the wayward Danzhu.",
+    "inheritability": "none",
+    "scopeTags": [
+     "lore"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhang Hua, Bowuzhi (3rd c. CE) — Yao made weiqi to teach Danzhu"
+     }
+    ],
+    "ability": false
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child-of",
+    "personId": "chinese_yao",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "Eldest son of Yao, passed over for Shun in the canonical abdication narrative."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "丹朱 Dānzhū — dān 'cinnabar, red' + zhū 'vermilion, red'; conventionally taken with reference to his fief Dan (丹), the name meaning roughly 'Zhu of Dan.' Both graphs denote shades of red.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji Ch. 1"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mencius / Mengzi 5A.5-6"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest son of the sage-king Yao and the heir he passed over. Judged unworthy by the Shiji, Danzhu is the foil whose unfitness motivates Yao's abdication to the meritorious commoner Shun — the foundational case-study of merit-over-bloodline succession in Confucian political theory (Mencius 5A.5-6). After Yao's death Shun ritually yielded to Danzhu, but the people turned to Shun, confirming Heaven's choice. A later tradition (Bowuzhi) credits Yao with inventing weiqi to instruct him. Named in chinese_yao's lifecycle ('abdicated to Shun rather than to his own son Danzhu') until materialized here as the paternal-line son."
+ },
+ {
   "id": "chinese_fuxi",
   "name": {
    "primary": "Fuxi",
@@ -68737,6 +73450,272 @@ const NEW_FIGURES = [
   "notes": "The lone female of the Eight Immortals, bearer of the lotus."
  },
  {
+  "id": "chinese_houji",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Houji",
+   "alt": [
+    "后稷",
+    "Hou Ji",
+    "Lord Millet",
+    "Qi the Abandoned",
+    "棄",
+    "Zhou-lineage progenitor son of Diku"
+   ],
+   "transliterations": {
+    "chinese-traditional": "后稷",
+    "chinese-simplified": "后稷",
+    "pinyin": "Hòujì",
+    "personal-name": "Qi (棄, 'the Abandoned', Qì)"
+   }
+  },
+  "type": "deity",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "origin": "canon",
+  "parentIds": [
+   "chinese_diku"
+  ],
+  "parentRoles": {
+   "chinese_diku": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistory"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic-prehistory",
+    "eraOrdering": 0,
+    "startEvent": "miraculous-birth-and-abandonment",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Shengmin' (Major Court Hymns, Mao 245); Sima Qian, Shiji Ch. 4 (Zhou benji)"
+     }
+    ],
+    "notes": "Born to Jiang Yuan (姜嫄), a consort of Diku, after she trod in the toe-print of the god Di (上帝); thrice abandoned (whence the name Qi 棄 'Abandoned') but sheltered by oxen, sheep, birds, and woodcutters. The miraculous paternity sits beside the Shiji genealogy making him Diku's son."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "minister-of-agriculture",
+    "era": "mythic-prehistory",
+    "eraOrdering": 1,
+    "startEvent": "appointment-as-Lord-Millet",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 4; Shangshu, Shun Dian"
+     }
+    ],
+    "notes": "From childhood drawn to planting; appointed by Yao and Shun as Agriculture Minister (后稷 Houji, 'Lord of Millet'), he taught the people to sow the grains and was enfeoffed at Tai with the surname Ji (姬), becoming the predynastic ancestor of the house of Zhou."
+   },
+   {
+    "typeStatus": "deity",
+    "vitalStatus": "apotheosed",
+    "era": "mythic-prehistory",
+    "eraOrdering": 2,
+    "startEvent": "deification-as-grain-god",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zhou state cult of Houji as ancestral grain-deity; the She-Ji (社稷) altars"
+     }
+    ],
+    "notes": "Venerated under the Zhou as the grain-god of the She-Ji (社稷, 'soil and grain') state altars — the 'Ji' of sheji, the metonym for the dynastic state itself; the foremost agricultural ancestral deity of the classical Chinese cult."
+   }
+  ],
+  "domains": [
+   {
+    "id": "agriculture",
+    "term": {
+     "value": "稷",
+     "script": "Chinese (hanzi)",
+     "rom": "jì"
+    },
+    "notes": "millet / grain agriculture; Lord of Millet",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Shengmin' (Mao 245)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "harvest",
+    "term": {
+     "value": "稼穡",
+     "script": "Chinese (hanzi)",
+     "rom": "jiàsè"
+    },
+    "notes": "sowing and reaping; the husbandry he taught",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 4",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "Zhou-ancestral-progenitor",
+    "term": {
+     "value": "周祖",
+     "script": "Chinese (hanzi)",
+     "rom": "Zhōu zǔ"
+    },
+    "notes": "predynastic ancestor of the house of Zhou (surname Ji 姬)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 4 (Zhou benji)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "houji-jiase",
+    "name": "Teach humankind to sow and reap the grains",
+    "term": {
+     "value": "教民稼穡",
+     "script": "Chinese (hanzi)",
+     "rom": "jiào mín jiàsè"
+    },
+    "notes": "Culture-hero gift of grain-agriculture; sowed millet, beans, hemp, wheat and gourds so the people had food.",
+    "inheritability": "partial",
+    "scopeTags": [
+     "agriculture"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Shengmin' (Mao 245); Shiji Ch. 4"
+     }
+    ],
+    "ability": true
+   },
+   {
+    "id": "houji-survival",
+    "name": "Survive abandonment under heaven's protection",
+    "term": {
+     "value": "棄",
+     "script": "Chinese (hanzi)",
+     "rom": "qì"
+    },
+    "notes": "Thrice exposed as an infant, sheltered by beasts and birds and ice-warming birds; the abandonment-and-survival that names him Qi.",
+    "inheritability": "none",
+    "scopeTags": [
+     "destiny"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Shengmin' (Mao 245)"
+     }
+    ],
+    "ability": false
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "后稷",
+    "original": "后稷",
+    "language": "chinese",
+    "transliteration": "Hòujì",
+    "contextTag": "cult",
+    "notes": "Lord of Millet; his title as agriculture-minister and grain-deity.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shangshu, Shun Dian; Shijing"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child-of",
+    "personId": "chinese_diku",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 4 (Houji son of Diku by Jiang Yuan)"
+     }
+    ],
+    "notes": "Son of Diku by the consort Jiang Yuan (with the parallel divine-conception tradition of the god's footprint). Half-brother of Yao, Xie, and Zhi."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_xie",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of Xie, the Shang progenitor; shared father Diku, different mothers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_zhi",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of Zhi, Diku's short-reigning successor; shared father Diku, different mothers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_yao",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of the sage-king Yao; shared father Diku, different mothers (Jiang Yuan vs. Qingdu)."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "后稷 Hòujì, a title: hòu 'lord, sovereign' + jì 'panicled millet, the chief grain' — 'Lord of Millet.' His personal name 棄 Qì means 'cast away, the Abandoned,' from the thrice-exposed-infant myth of the 'Shengmin' ode. The Zhou surname 姬 Jī derives from his enfeoffment.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shijing, 'Shengmin' (Mao 245)"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Shengmin' (Major Court Hymns, Mao 245)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 4 (Zhou benji) and Ch. 1 (Wudi benji)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Lord Millet (Houji), the grain-god and predynastic ancestor of the Zhou; son of Diku by the consort Jiang Yuan, who conceived him after treading in the god Di's footprint, and personally named Qi ('the Abandoned') from the thrice-exposed-infant myth of the Shijing 'Shengmin' ode. Appointed Agriculture Minister by Yao and Shun, he taught the people the grains and was enfeoffed at Tai with the surname Ji. Under the Zhou he became the grain-deity of the She-Ji (soil-and-grain) state altars — the 'Ji' that is metonym for the dynasty itself. Half-brother of Yao, Xie, and Zhi. Named in chinese_diku's notes and lifecycle ('Houji \"Lord Millet,\" the legendary ancestor of the Zhou dynasty') until materialized here as a paternal-line son of Diku."
+ },
+ {
   "id": "chinese_houyi",
   "name": {
    "primary": "Houyi",
@@ -68979,6 +73958,256 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Beast-faced thunder god who drums lightning to punish the wicked."
+ },
+ {
+  "id": "chinese_li_jing",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Li Jing",
+   "alt": [
+    "李靖",
+    "Li Jing the Pagoda-Bearer",
+    "Pagoda-Bearing Heavenly King",
+    "Tota Li Tianwang",
+    "Father of Nezha"
+   ],
+   "transliterations": {
+    "chinese-traditional": "李靖",
+    "chinese-simplified": "李靖",
+    "pinyin": "Lǐ Jìng",
+    "epithet": "托塔天王 (Tuōtǎ Tiānwáng, \"Pagoda-Bearing Heavenly King\")"
+   }
+  },
+  "type": "deity",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "commander-of-Chentang-Pass",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567-1620"
+     }
+    ],
+    "notes": "Mortal general commanding Chentang Pass (陳塘關); a disciple of the immortal Master Du'e (度厄真人). Father by his wife Lady Yin (殷夫人) of three sons: Jinzha, Muzha, and the youngest, Nezha."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "conflict-with-Nezha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620"
+     }
+    ],
+    "notes": "After Nezha slew the Dragon-King's son Ao Bing and brought ruin on the household, father and son fell into mortal enmity; the lotus-reborn Nezha sought his life. The immortal Randeng (燃燈道人) gave Li Jing the wish-fulfilling pagoda by which he masters and is reconciled (under compulsion) to his rebellious son — the origin of his Pagoda-Bearer epithet."
+   },
+   {
+    "typeStatus": "deity",
+    "vitalStatus": "apotheosed",
+    "era": "mythic",
+    "eraOrdering": 2,
+    "startEvent": "canonization-as-Pagoda-Bearing-Heavenly-King",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (2015)"
+     }
+    ],
+    "notes": "Installed in the Daoist celestial bureaucracy as Tota Li Tianwang (托塔李天王), the Pagoda-Bearing Heavenly King and a marshal of Heaven serving the Jade Emperor; in Journey to the West he and Nezha are dispatched to subdue Sun Wukong. The figure fuses the historical Tang general Li Jing with the Buddhist guardian-king Vaisravana (毘沙門天 / 多聞天), whose son Nalakubara underlies Nezha."
+   }
+  ],
+  "domains": [
+   {
+    "id": "war",
+    "term": {
+     "value": "戰",
+     "script": "Chinese (hanzi)",
+     "rom": "zhàn"
+    },
+    "notes": "celestial marshal and martial commander of Heaven",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "guardianship",
+    "term": {
+     "value": "護法",
+     "script": "Chinese (hanzi)",
+     "rom": "hùfǎ"
+    },
+    "notes": "guardian / dharma-protector king, from the Vaisravana substrate",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (2015)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lijing-tota",
+    "name": "Wield the soul-binding wish-fulfilling pagoda",
+    "term": {
+     "value": "托塔",
+     "script": "Chinese (hanzi)",
+     "rom": "tuō tǎ"
+    },
+    "notes": "Bears the golden pagoda given by Randeng that can trap any being, including the reborn Nezha; the source of his Pagoda-Bearer title.",
+    "inheritability": "none",
+    "scopeTags": [
+     "war",
+     "binding"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620"
+     }
+    ],
+    "ability": true
+   },
+   {
+    "id": "lijing-marshal",
+    "name": "Command the armies of Heaven",
+    "term": {
+     "value": "天兵",
+     "script": "Chinese (hanzi)",
+     "rom": "tiānbīng"
+    },
+    "notes": "As a Heavenly King marshals the celestial troops; sent with Nezha against Sun Wukong.",
+    "inheritability": "none",
+    "scopeTags": [
+     "war"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji, c. 1592"
+     }
+    ],
+    "ability": true
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "linglong-baota",
+    "kind": "object",
+    "name": "Exquisite Pagoda",
+    "term": {
+     "value": "玲瓏寶塔",
+     "script": "Chinese (hanzi)",
+     "rom": "línglóng bǎotǎ"
+    },
+    "role": "wielder",
+    "notes": "The wish-fulfilling golden pagoda that emits divine fire and imprisons any being; his defining attribute as the Pagoda-Bearing Heavenly King.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi, c. 1567-1620"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meir Shahar, Oedipal God: The Chinese Nezha (2015)"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "托塔天王",
+    "original": "托塔天王",
+    "language": "chinese",
+    "transliteration": "Tuōtǎ Tiānwáng",
+    "contextTag": "cult",
+    "notes": "Pagoda-Bearing Heavenly King; his standing title in the Daoist celestial bureaucracy.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+     }
+    ]
+   },
+   {
+    "epithetId": "毘沙門天王",
+    "original": "毘沙門天王",
+    "language": "chinese",
+    "transliteration": "Píshāmén Tiānwáng",
+    "contextTag": "buddhist",
+    "notes": "Vaisravana, the Heavenly King of the North; the Buddhist guardian-king with whom Li Jing the Pagoda-bearer is identified.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Soothill & Hodous, A Dictionary of Chinese Buddhist Terms (1937), s.v. 毘沙門"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "chinese_nezha",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), ch. 12-14"
+     }
+    ],
+    "notes": "Father of Nezha (and of the elder brothers Jinzha and Muzha) by Lady Yin; the father-son enmity after Nezha returns his flesh and is reborn from lotus is the core of the cycle."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "李靖 Lǐ Jìng — the name of the historical Tang general (571-649 CE), surname Lǐ + jìng \"calm, pacify.\" In Fengshen Yanyi this name is attached to a mythic Shang-era commander and fused with the Buddhist guardian-king Vaisravana (毘沙門天), so that the deified Pagoda-Bearer carries both the Tang general's name and the Buddhist Heavenly-King's iconography and son (Nalakubara > Nezha).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Meir Shahar, Oedipal God: The Chinese Nezha and His Indian Origins (2015)"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Xu Zhonglin, Fengshen Yanyi (Investiture of the Gods), c. 1567-1620"
+     },
+     {
+      "kind": "primary",
+      "reference": "Wu Cheng'en, Xiyouji (Journey to the West), c. 1592"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Pagoda-Bearing Heavenly King (Tota Li Tianwang) of the Daoist celestial bureaucracy and father of Nezha. In Fengshen Yanyi he is the mortal commander of Chentang Pass who fathers Jinzha, Muzha, and Nezha by Lady Yin; after Nezha's lotus-rebirth the immortal Randeng gives him the soul-binding pagoda by which he masters his rebellious son, and he is later canonized as a Heavenly King. The figure fuses the historical Tang general Li Jing (571-649 CE) with the Buddhist guardian-king Vaisravana, whose son Nalakubara underlies the Chinese Nezha. Carried in the registry only as a name in chinese_nezha's notes ('son of Li Jing the Pagoda-Bearer') until materialized here as the paternal link."
  },
  {
   "id": "chinese_lu_dongbin",
@@ -69530,6 +74759,193 @@ const NEW_FIGURES = [
   "notes": "Primordial giant who separated sky and earth and became the world."
  },
  {
+  "id": "chinese_shaohao",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Shaohao",
+   "alt": [
+    "少昊",
+    "Shao Hao",
+    "Xuanxiao",
+    "玄囂",
+    "Qingyang",
+    "Jin Tian Shi",
+    "Eldest son of Huangdi and Leizu"
+   ],
+   "transliterations": {
+    "chinese-traditional": "少昊",
+    "chinese-simplified": "少昊",
+    "pinyin": "Shàohào",
+    "alt-personal-name": "Xuanxiao (玄囂, Huangdi's eldest son per Shiji), also Qingyang (青陽)"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "chinese_huangdi",
+   "chinese_leizu"
+  ],
+  "parentRoles": {
+   "chinese_huangdi": "paternal",
+   "chinese_leizu": "maternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistory"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 0,
+    "startEvent": "birth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "Per Shiji, the eldest of the two sons Leizu bore to Huangdi (the other being Changyi); identified by Sima Qian with Xuanxiao (玄囂), who dwelt at Qingyang by the river. Full brother of chinese_changyi and thus paternal uncle of Zhuanxu."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "sage-king-reigning",
+    "era": "mythic-prehistory",
+    "eraOrdering": 1,
+    "startEvent": "reign-as-bird-officered-sovereign",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zuozhuan, Duke Zhao year 17 (the bird-named offices of Shaohao); Book of Documents tradition listing Shaohao among the Five Emperors"
+     }
+    ],
+    "notes": "In the eastern-bird tradition (Zuozhuan, Shaohao 17) rules a realm whose offices are named for birds; some Five-Emperors lists (the Book of Documents stratum) count Shaohao among the Wu Di. The Shiji main line instead routes the succession Huangdi -> Zhuanxu, so Shaohao's reign is recorded here as a parallel-tradition phase. His clan-name Jin Tian Shi (金天氏, 'Metal-Heaven clan') aligns him with the west/metal in the Five-Phases scheme."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic-prehistory",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "eldest-son-of-Huangdi-lineage-link",
+    "term": {
+     "value": "玄囂",
+     "script": "Chinese (hanzi)",
+     "rom": "Xuánxiāo"
+    },
+    "notes": "Huangdi's eldest son (Xuanxiao); ancestral link toward Diku and Yao",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "bird-officered-eastern-sovereignty",
+    "term": {
+     "value": "鳥官",
+     "script": "Chinese (hanzi)",
+     "rom": "niǎo guān"
+    },
+    "notes": "the bird-named offices of Shaohao's realm",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zuozhuan, Duke Zhao year 17",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "jin-tian-clan-metal-phase",
+    "term": {
+     "value": "金天氏",
+     "script": "Chinese (hanzi)",
+     "rom": "Jīntiān shì"
+    },
+    "notes": "the Metal-Heaven clan-lineage (west / metal phase)",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Five-Phases correlative tradition; Han apocrypha on the Five Emperors",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shaohao-niaoguan",
+    "name": "Govern through bird-named offices",
+    "term": {
+     "value": "以鳥名官",
+     "script": "Chinese (hanzi)",
+     "rom": "yǐ niǎo míng guān"
+    },
+    "notes": "On his accession auspicious phoenixes appeared, so he ordered his offices after birds (Zuozhuan, Shaohao 17).",
+    "inheritability": "none",
+    "scopeTags": [
+     "sovereignty"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Zuozhuan, Duke Zhao year 17"
+     }
+    ],
+    "ability": true
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "chinese_changyi",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Leizu bore Huangdi two sons, Xuanxiao and Changyi)"
+     }
+    ],
+    "notes": "Full brother of Changyi; both sons of Huangdi and Leizu. Through Changyi's son Zhuanxu and through Shaohao's own line the later Five-Emperors and Diku/Yao genealogies descend."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "少昊 Shàohào, 'Lesser Brightness' (shào 'lesser, young' + hào 'bright, vast'), paired antithetically with Taihao 太昊 'Great Brightness' (Fuxi). The Shiji personal name 玄囂 Xuánxiāo couples xuán 'dark, mysterious' with xiāo. The clan-name 金天氏 Jin Tian Shi ('Metal-Heaven clan') is a Five-Phases correlative epithet assigning him to the west and the metal phase.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji Ch. 1"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Zuozhuan, Duke Zhao year 17"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eldest son of Huangdi and Leizu, full brother of Changyi; identified by the Shiji with Xuanxiao (玄囂) who dwelt at Qingyang. In the eastern-bird tradition (Zuozhuan) he rules a realm of bird-named offices and is counted among the Five Emperors in the Book-of-Documents stratum, though the Shiji main line routes the succession Huangdi -> Zhuanxu instead. His clan-name Jin Tian Shi places him at the west/metal pole opposite Taihao (Fuxi). Named in chinese_diku's and chinese_changyi's notes ('Xuanxiao / Shaohao, Huangdi's son and Changyi's brother') and chinese_huangdi's lifecycle ('Xuanxiao / Shaohao, whose descendants included Diku and Yao') until materialized here as the sibling and lineage link."
+ },
+ {
   "id": "chinese_shennong",
   "name": {
    "primary": "Shennong",
@@ -69805,6 +75221,397 @@ const NEW_FIGURES = [
   "notes": "Stone-born Monkey King and Great Sage, immortal trickster of Journey to the West."
  },
  {
+  "id": "chinese_xiang",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Xiang",
+   "alt": [
+    "象",
+    "Xiang brother of Shun",
+    "Half-brother of Shun"
+   ],
+   "transliterations": {
+    "chinese-traditional": "象",
+    "chinese-simplified": "象",
+    "pinyin": "Xiàng"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "chinese_gusou"
+  ],
+  "parentRoles": {
+   "chinese_gusou": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistory"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 0,
+    "startEvent": "birth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.2-3"
+     }
+    ],
+    "notes": "Son of Gusou by his second wife, and thus the younger half-brother of the sage-king Shun (whose mother was Wo Deng). Proverbially arrogant (Mencius: 'Xiang was arrogant / ao 傲')."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 1,
+    "startEvent": "conspiracy-against-Shun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mencius / Mengzi 5A.2-3; Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "With his father Gusou and his mother, Xiang repeatedly plotted Shun's death (the burning granary; the well filled in over him) to seize Shun's property and wives; per Mencius he meant to take Shun's two wives and his bow while leaving the herds to the parents. Shun escaped each time and continued to treat Xiang as a loving brother — the Mencian crux of filial piety persisting through fraternal malice."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 2,
+    "startEvent": "enfeoffment-at-Youbi",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mencius / Mengzi 5A.3 (Shun enfeoffs Xiang at Youbi 有庳)"
+     }
+    ],
+    "notes": "On becoming sovereign Shun did not punish Xiang but enfeoffed him as a feudal lord at Youbi (有庳), keeping him near and prosperous — the canonical example of a sage-king reconciling private affection with public order."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic-prehistory",
+    "eraOrdering": 3
+   }
+  ],
+  "domains": [
+   {
+    "id": "arrogant-half-brother-of-Shun",
+    "term": {
+     "value": "傲",
+     "script": "Chinese (hanzi)",
+     "rom": "ào"
+    },
+    "notes": "the arrogant brother of the filial-piety narrative",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mencius / Mengzi 5A.2-3",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "fief-of-Youbi",
+    "term": {
+     "value": "有庳",
+     "script": "Chinese (hanzi)",
+     "rom": "Yǒubì"
+    },
+    "notes": "the fief at Youbi to which Shun appointed him",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Mencius / Mengzi 5A.3",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "xiang-conspiracy",
+    "name": "Conspire (with Gusou) against Shun",
+    "term": {
+     "value": "謀殺舜",
+     "script": "Chinese (hanzi)",
+     "rom": "móushā Shùn"
+    },
+    "notes": "Repeated plots on Shun's life (granary fire, the filled-in well); foiled each time. A narrative role, not a numinous power.",
+    "inheritability": "none",
+    "scopeTags": [
+     "kinship-strife"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.2"
+     }
+    ],
+    "ability": false
+   }
+  ],
+  "relations": [
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_shun",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1; Mencius / Mengzi 5A.2-3"
+     }
+    ],
+    "notes": "Younger half-brother of Shun (shared father Gusou; Shun's mother was Wo Deng, Xiang's an unnamed second wife). The fraternal malice he shows, met by Shun's undiminished brotherly love, is the Mencian filial-piety crux."
+   },
+   {
+    "kind": "child-of",
+    "personId": "chinese_gusou",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "Son of Gusou by his second wife."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "象 Xiàng — the common word for 'elephant; image, figure.' As a personal name it carries no developed gloss in the sources; it is simply the graph 象.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Mencius / Mengzi 5A.2"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Mencius / Mengzi 5A.2-3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Younger half-brother of the sage-king Shun — son of Gusou by his second wife. Proverbially arrogant, he joined his father and stepmother in repeated plots to murder Shun (the burning granary, the filled-in well) to seize Shun's property and wives; Shun escaped each attempt and went on loving him as a brother. On acceding, Shun enfeoffed rather than punished Xiang, at Youbi. The whole episode is the Mencian (5A.2-3) case-study of filial and fraternal virtue persisting through malice. Named throughout chinese_shun's and chinese_gusou's notes ('Shun's half-brother Xiang') until materialized here as the half-sibling and son."
+ },
+ {
+  "id": "chinese_xie",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Xie",
+   "alt": [
+    "偰",
+    "契",
+    "Xie of Shang",
+    "Qi of Shang",
+    "Shang-lineage progenitor son of Diku"
+   ],
+   "transliterations": {
+    "chinese-traditional": "偰",
+    "chinese-simplified": "偰",
+    "pinyin": "Xiè",
+    "alt-graph": "契 (read qì in this name), surname bestowed Zi (子)"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "chinese_diku"
+  ],
+  "parentRoles": {
+   "chinese_diku": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistory"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 0,
+    "startEvent": "miraculous-birth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Xuanniao' (Hymns of Shang, Mao 303); Sima Qian, Shiji Ch. 3 (Yin benji)"
+     }
+    ],
+    "notes": "Born to Jiandi (簡狄) of the Yousong (有娀) clan, a consort of Diku, after she swallowed the egg dropped by a black bird (玄鳥, the swallow): 'Heaven bade the dark bird descend and bear the Shang' (Shijing). The Shiji likewise makes him Diku's son."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "minister-of-instruction",
+    "era": "mythic-prehistory",
+    "eraOrdering": 1,
+    "startEvent": "appointment-as-Minister-of-Instruction",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 3; Shangshu, Shun Dian"
+     }
+    ],
+    "notes": "For his aid to Yu in controlling the flood he was appointed by Shun as Situ (司徒), Minister of Instruction, charged to teach the people the five social relations; enfeoffed at Shang and given the surname Zi (子), becoming the predynastic ancestor of the Shang dynasty."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic-prehistory",
+    "eraOrdering": 2
+   }
+  ],
+  "domains": [
+   {
+    "id": "Shang-ancestral-progenitor",
+    "term": {
+     "value": "商祖",
+     "script": "Chinese (hanzi)",
+     "rom": "Shāng zǔ"
+    },
+    "notes": "predynastic ancestor of the Shang (surname Zi 子)",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 3 (Yin benji)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "moral-instruction-Situ",
+    "term": {
+     "value": "司徒",
+     "script": "Chinese (hanzi)",
+     "rom": "Sītú"
+    },
+    "notes": "Minister of Instruction; teaching of the five human relations",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shangshu, Shun Dian",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "xie-wujiao",
+    "name": "Teach the people the five social relations",
+    "term": {
+     "value": "敷五教",
+     "script": "Chinese (hanzi)",
+     "rom": "fū wǔ jiào"
+    },
+    "notes": "As Shun's Minister of Instruction, propagated the five cardinal relations (father-son, ruler-subject, husband-wife, elder-younger, friend-friend).",
+    "inheritability": "none",
+    "scopeTags": [
+     "moral-order"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Shangshu, Shun Dian; Shiji Ch. 3"
+     }
+    ],
+    "ability": false
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child-of",
+    "personId": "chinese_diku",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 3 (Xie son of Diku by Jiandi)"
+     }
+    ],
+    "notes": "Son of Diku by the consort Jiandi of the Yousong clan (with the parallel black-bird-egg conception tradition). Half-brother of Yao, Houji, and Zhi."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_houji",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of Houji, the Zhou progenitor; shared father Diku, different mothers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_zhi",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of Zhi, Diku's short-reigning successor; shared father Diku, different mothers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_yao",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of the sage-king Yao; shared father Diku, different mothers (Jiandi vs. Qingdu)."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "The name is written 偰 or 契; in this personal name the graph 契 is read qì. No developed gloss attaches to the name itself; the bestowed surname 子 Zǐ ('child') becomes the Shang royal clan-name. The associated 玄鳥 Xuánniǎo 'dark bird' (swallow) of the birth-myth gives the Shang their bird-totem.",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Shijing, 'Xuanniao' (Mao 303)"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Shijing, 'Xuanniao' (Hymns of Shang, Mao 303)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 3 (Yin benji) and Ch. 1 (Wudi benji)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Predynastic ancestor of the Shang dynasty; son of Diku by the consort Jiandi of the Yousong clan, conceived (in the Shijing 'Xuanniao' ode) when she swallowed the egg dropped by the black bird — 'Heaven bade the dark bird descend and bear the Shang.' For his aid to Yu in the flood-control he was made Shun's Minister of Instruction (Situ), enfeoffed at Shang and given the surname Zi. Half-brother of Yao, Houji, and Zhi. The name is written 偰 / 契 (here read qi), distinct from chinese_qi_of_xia (啟). Named in chinese_diku's notes ('Xie, the legendary ancestor of the Shang dynasty') until materialized here as a paternal-line son of Diku."
+ },
+ {
   "id": "chinese_zao_jun",
   "name": {
    "primary": "Zao Jun",
@@ -69898,6 +75705,200 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Kitchen God who watches each household and reports yearly to Heaven."
+ },
+ {
+  "id": "chinese_zhi",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Zhi",
+   "alt": [
+    "摯",
+    "Emperor Zhi",
+    "Di Zhi",
+    "Diku's successor displaced by Yao"
+   ],
+   "transliterations": {
+    "chinese-traditional": "摯",
+    "chinese-simplified": "挚",
+    "pinyin": "Zhì"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Chinese",
+  "primaryTradition": "Chinese",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [
+   "chinese_diku"
+  ],
+  "parentRoles": {
+   "chinese_diku": "paternal"
+  },
+  "temporal": {
+   "era": "mythic-prehistory"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 0,
+    "startEvent": "birth",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "Son of Diku by the consort Changyi (常儀 — a consort, distinct from Huangdi's son chinese_changyi 昌意); Diku's eldest acknowledged successor-son. Half-brother of Yao, Houji, and Xie."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "sage-king-reigning",
+    "era": "mythic-prehistory",
+    "eraOrdering": 1,
+    "startEvent": "accession-on-Diku-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "notes": "On Diku's death Zhi succeeded to the throne — the first of Diku's sons to rule."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "mythic-prehistory",
+    "eraOrdering": 2,
+    "startEvent": "displacement-by-Yao",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Zhi proved incapable; the realm passed to Yao)"
+     }
+    ],
+    "notes": "His reign proving feeble / un-good, the sovereignty passed to his half-brother Yao — so the canonical Five-Emperors line runs Diku -> (Zhi) -> Yao, with Zhi a brief interregnal figure rather than a counted Sage-king."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "mythic-prehistory",
+    "eraOrdering": 3
+   }
+  ],
+  "domains": [
+   {
+    "id": "displaced-successor-of-Diku",
+    "term": {
+     "value": "摯",
+     "script": "Chinese (hanzi)",
+     "rom": "Zhì"
+    },
+    "notes": "Diku's immediate successor, soon displaced by Yao",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "zhi-brief-reign",
+    "name": "Reign briefly as Diku's heir before yielding to Yao",
+    "term": {
+     "value": "立而不善",
+     "script": "Chinese (hanzi)",
+     "rom": "lì ér bù shàn"
+    },
+    "notes": "Acceded on Diku's death but governed poorly, so the realm passed to Yao; a dynastic-transition role, not a numinous power.",
+    "inheritability": "none",
+    "scopeTags": [
+     "sovereignty"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1"
+     }
+    ],
+    "ability": false
+   }
+  ],
+  "relations": [
+   {
+    "kind": "child-of",
+    "personId": "chinese_diku",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Zhi son of Diku, his immediate successor)"
+     }
+    ],
+    "notes": "Son of Diku by the consort Changyi (常儀); Diku's first son to reign. Half-brother of Yao, Houji, and Xie."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_yao",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Zhi displaced; Yao acceded)"
+     }
+    ],
+    "notes": "Half-brother of Yao, who succeeded him when his own reign failed; shared father Diku, different mothers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_houji",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of Houji, the Zhou progenitor; shared father Diku, different mothers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "chinese_xie",
+    "era": "mythic-prehistory",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (sons of Diku by different consorts)"
+     }
+    ],
+    "notes": "Half-brother of Xie, the Shang progenitor; shared father Diku, different mothers."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Sino-Tibetan (Sinitic)",
+   "etymology": "摯 Zhì 'to seize, hold; sincere, earnest' (a graph also used for birds of prey, zhì). As a personal name it carries no developed gloss in the sources; he is 帝摯 Dì Zhì, 'Emperor Zhi.'",
+   "sources": [
+    {
+     "kind": "primary",
+     "reference": "Sima Qian, Shiji Ch. 1"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Sima Qian, Shiji Ch. 1 (Wudi benji)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Emperor Zhi, son of Diku by the consort Changyi (常儀, a consort distinct from Huangdi's son chinese_changyi 昌意), and Diku's immediate successor — the first of Diku's sons to rule. His reign proving feeble, the sovereignty passed to his half-brother Yao, so the canonical Five-Emperors line runs Diku -> (Zhi) -> Yao with Zhi a brief interregnal figure. Half-brother of Yao, Houji, and Xie. Named in chinese_diku's notes and lifecycle ('Zhi, Diku's immediate successor before being displaced by Yao') until materialized here as a paternal-line son of Diku."
  },
  {
   "id": "chinese_zhurong",
@@ -70854,6 +76855,128 @@ const NEW_FIGURES = [
   "notes": "Chuukese high-god; name means roughly 'great spirit' (anu 'spirit' + lap 'great'). Recorded by the Capuchin missionary-ethnographer Bollig (1927) and the Hamburg South Seas Expedition reports. Treated as deity."
  },
  {
+  "id": "chuukese_hit",
+  "name": {
+   "primary": "The Octopus Goddess",
+   "alt": [
+    "Hit",
+    "Hiti",
+    "Inahit"
+   ],
+   "transliterations": {
+    "Chuukese": "Hit",
+    "etymology": "Chuukese name Hit (Hiti), the octopus goddess of the Carolinian Olifat cycle; recorded in the central-Carolinian transmission of the myth. The morphology is not securely segmented in the sources and is left unanalysed."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Chuukese",
+  "primaryTradition": "Chuukese",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "The octopus goddess, mother of the mortal Tarisso; by her lewd dance she causes the sky-wife Hamulul to faint, clearing the way for Lugeilan to lie with Tarisso and so for Olifat to be conceived.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Account of the Carolinian Olifat cycle (Hit the octopus goddess, mother of Tarisso, whose dance enables the conception of Olifat); see William A. Lessa, Tales from Ulithi Atoll (1961) and the central-Carolinian Olifat material."
+     }
+    ],
+    "notes": "A sea-goddess whose ribald dance is the hinge of the Olifat birth-myth."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea-and-ocean",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Hit",
+     "script": "Latin",
+     "rom": "Hit"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Hit the octopus goddess of the sea-world)."
+     }
+    ]
+   },
+   {
+    "sphereId": "dance-and-revelry",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Hit dances so lewdly that the sky-wife Hamulul faints)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lewd_dance_of_distraction",
+    "name": "dances so lewdly that the rival sky-wife faints",
+    "inheritability": "none",
+    "scopeTags": [
+     "seduction",
+     "ritual-dance"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (when Hamulul, Lugeilan sky-wife, would block the union with Tarisso, Hit dances so lewdly that Hamulul faints and is carried back to the sky)."
+     }
+    ],
+    "notes": "Her dance removes the obstacle to her daughter Tarisso conceiving Olifat."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "mother-of",
+    "personId": "chuukese_tarisso",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Bollig, Die Bewohner der Truk-Inseln (1927); Mitchell, Micronesian mythology — Hit the octopus-goddess, mother of Tarisso in the Olifat birth-cycle."
+     }
+    ],
+    "notes": "Her daughter Tarisso, by Lugeilan, is the mother of the trickster Olifat."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Hit is the Carolinian octopus goddess, mother of the mortal woman Tarisso; in the Olifat birth-myth her lewd dance makes the sky-wife Hamulul faint, allowing Lugeilan to lie with Tarisso and Olifat to be conceived.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "William A. Lessa, Tales from Ulithi Atoll (University of California Press, 1961) (Iolofath/Olofat cycle of the central Carolines)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Survey of Micronesian (Carolinian) mythology recording Hit the octopus goddess as mother of Tarisso in the Olifat conception story."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Authored as the named, attested mother of chuukese_tarisso (and so maternal grandmother of Olifat). Classed deity (octopus sea-goddess). Her gendered ribald dance is the narrative hinge of the Olifat conception. WIRE-EDGE handled within this batch via Tarisso parentIds and the reciprocal mother edge here."
+ },
+ {
   "id": "chuukese_inemes",
   "name": {
    "primary": "Goddess of Love",
@@ -71148,7 +77271,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Sky-god's son and giver of useful arts; intermediary between gods and people. Treated as deity. Genealogy: Anulap > Lugeilan > Olifat."
+  "notes": "Sky-god's son and giver of useful arts; intermediary between gods and people. Treated as deity. Genealogy: Anulap > Lugeilan > Olifat.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "chuukese_tarisso",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "chuukese_olifat",
@@ -71360,6 +77490,116 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Chuukese god of wisdom, 'Father of Wisdom' (Bollig 1927). English 'Father of Wisdom' leads name.primary; native Semenkoror in transliterations/term; 'Semenkoroas' recorded as a variant. Entered with exactly the attested detail (named, individuated god + epithet + wisdom sphere); materialCulture is left empty because the sources record no object for him (per the rule, not padded). His brother-figures in Bollig's list, Sinenap ('the Skilled One') and Aremei ('the Achiever'), are attested only as bare name+epithet and are documented in the prose rather than entered, to avoid padding the compact pantheon. SOLITARY: no parentage, spouse, or sibling is attested for Semenkoror in the Chuukese sources (Bollig 1927; Lessa in the Encyclopedia of Religion)."
+ },
+ {
+  "id": "chuukese_tarisso",
+  "name": {
+   "primary": "The Mortal Mother of the Trickster",
+   "alt": [
+    "Tarisso",
+    "Tarissa",
+    "Ligoupup"
+   ],
+   "transliterations": {
+    "Chuukese": "Tarisso",
+    "etymology": "Chuukese name Tarisso, the mortal woman who bears Olifat to the sky-god Lugeilan; daughter of the octopus goddess Hit. The morphology is not securely segmented in the sources and is left unanalysed."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Chuukese",
+  "primaryTradition": "Chuukese",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "chuukese_hit"
+  ],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "A mortal woman, daughter of the octopus goddess Hit, taken by the sky-god Lugeilan as his earthly wife.",
+    "endEvent": "Bears the trickster Olifat (in some tellings he is born from her head); as a mortal she belongs to the human, not the divine, register.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "William A. Lessa, Tales from Ulithi Atoll (1961) and the central-Carolinian Olifat material (Tarisso, mortal wife of Lugeilan and mother of Olifat)."
+     }
+    ],
+    "notes": "Her mortality is what makes her son Olifat a demigod rather than a full god."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "human-lineage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tarisso",
+     "script": "Latin",
+     "rom": "Tarisso"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Tarisso the mortal mother of the trickster Olifat)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bear_the_trickster",
+    "name": "bears the trickster Olifat to the sky-god Lugeilan",
+    "inheritability": "none",
+    "scopeTags": [
+     "maternity",
+     "mortal-divine-union"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Olifat, son of the god Lugeilan and the mortal Tarisso; in some tellings born from his mother head)."
+     }
+    ],
+    "notes": "The mortal half of the union that yields the Carolinian trickster."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "chuukese_lugeilan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Carolinian Olifat cycle (Tarisso the mortal wife of the sky-god Lugeilan / Lugeleng)."
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED on the existing chuukese_lugeilan (add a spouse edge back to chuukese_tarisso)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tarisso is the mortal woman, daughter of the octopus goddess Hit, who becomes the earthly wife of the sky-god Lugeilan and the mother of the Carolinian trickster Olifat; her mortality is why Olifat is reckoned a demigod.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "William A. Lessa, Tales from Ulithi Atoll (University of California Press, 1961) (Iolofath/Olofat cycle)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Survey of Micronesian (Carolinian) mythology recording Tarisso, daughter of Hit, as the mortal mother of Olifat by Lugeilan."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Authored as the named, attested mortal mother of chuukese_olifat, who currently records only his divine father (parentIds chuukese_lugeilan). Daughter of the octopus goddess Hit (chuukese_hit, also authored this batch). WIRE-EDGE: add chuukese_tarisso to chuukese_olifat.parentIds; RECIPROCAL-NEEDED for the Tarisso to Lugeilan spouse edge (reported in the run notes)."
  },
  {
   "id": "circassian_akhin",
@@ -71638,6 +77878,263 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Distinct from the existing Sozeresh (fertility/hearth) and from the cattle-god Akhin (circassian_akhin): the Circassian herd-function is split, with Amish over SHEEP and Akhin over CATTLE. No kin attested — see SOLITARY flag."
+ },
+ {
+  "id": "circassian_isp",
+  "name": {
+   "primary": "The Frog-Like Water-Sprite",
+   "alt": [
+    "Lady Isp",
+    "Isp",
+    "Lady Spe",
+    "Spe",
+    "Isf"
+   ],
+   "transliterations": {
+    "circassian": "Isp",
+    "etymology": "Adyghe Isp (also Spe), the name of a tiny frog-like water-sprite of the Mara or Marakwa dwarf forest-people; cf. the Ispy/Spy dwarf-folk of Circassian lore. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic / Nart age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "mythic / Nart age",
+    "eraOrdering": 1,
+    "startEvent": "A clever frog-like water-sprite of the dwarf forest-people who weds the Nart Khimish and bears the avenger Pataraz.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), How the Nart Khimish Married (Lady Isp, the tiny water-sprite of the Mara forest-folk)."
+     }
+    ],
+    "notes": "A non-Nart nature-sprite, mother of a great Nart."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-springs",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (Lady Isp, a water-sprite of the forest-folk)."
+     }
+    ]
+   },
+   {
+    "sphereId": "craft-and-invention",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (the clever Lady Isp supplies the knowledge of how to make the sickle)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "design_the_sickle",
+    "name": "supplies the design of the first sickle",
+    "inheritability": "none",
+    "scopeTags": [
+     "invention",
+     "craft-knowledge"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002) (the clever frog-like Lady Isp shows how the sickle should be shaped, after the curve of a serpent or the moon)."
+     }
+    ],
+    "notes": "Her wit, not her size, makes her a culture-bringer of the Nart world."
+   },
+   {
+    "id": "bear_the_avenger",
+    "name": "bears the avenger Pataraz to Khimish",
+    "inheritability": "none",
+    "scopeTags": [
+     "maternity",
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), the Pataraz cycle (Pataraz, son of Khimish and the water-sprite Lady Isp)."
+     }
+    ],
+    "notes": "Mother of the Nart who avenges Khimish."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "circassian_khimish",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married (Khimish weds Lady Isp the water-sprite)."
+     }
+    ],
+    "notes": "Reciprocated within this batch on circassian_khimish."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Lady Isp (Spe) is a clever frog-like water-sprite of the Mara dwarf forest-people who marries the Nart Khimish and is the mother of the avenger Pataraz; she is remembered for supplying the design of the sickle.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), How the Nart Khimish Married and How He Was Killed and the Pataraz cycle."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Authored as the named, attested mother of circassian_pataraz, whose prose already names her (the water-sprite Lady Isp) with parentIds empty. Classed numen (a non-Nart nature-sprite of the waters). WIRE-EDGE: add circassian_isp to circassian_pataraz.parentIds and a mother edge on Isp to Pataraz (parent-to-child completion, reported in the run notes)."
+ },
+ {
+  "id": "circassian_khimish",
+  "name": {
+   "primary": "The Slain Nart Father",
+   "alt": [
+    "Khimish",
+    "Khamis",
+    "Khimis",
+    "Xaemyc",
+    "Khymych"
+   ],
+   "transliterations": {
+    "circassian": "Khimish",
+    "etymology": "Adyghe Nart name Khimish; the patronymic of his son is Khimishuquo (Khimish plus qwe, son of Khimish). Counterpart of Ossetian Xaemyc, father of Batraz. Exact Cyrillic orthography not source-verified for this batch."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Circassian",
+  "primaryTradition": "Circassian",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic / Nart age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic / Nart age",
+    "eraOrdering": 1,
+    "startEvent": "A Nart of the host who marries the tiny water-sprite Lady Isp of the dwarf forest-people and so fathers the avenger Pataraz.",
+    "endEvent": "Treacherously slain by jealous fellow Narts for taking a non-Nart bride; his murder sets the blood-feud that his unborn son swears to avenge.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), the tale How the Nart Khimish Married and How He Was Killed."
+     }
+    ],
+    "notes": "His death is the charter of the Pataraz vengeance cycle."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "heroic-warfare",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), the Khimish material (a Nart of the warrior host)."
+     }
+    ]
+   },
+   {
+    "sphereId": "marriage-and-kinship",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married and How He Was Killed."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "marry_the_water_sprite",
+    "name": "marries the water-sprite Lady Isp of the forest-folk",
+    "inheritability": "none",
+    "scopeTags": [
+     "marriage",
+     "exogamy"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married (Khimish weds the tiny Lady Isp of the Mara dwarf forest-people)."
+     }
+    ],
+    "notes": "The union across the Nart and non-Nart worlds that produces Pataraz and provokes his murder."
+   },
+   {
+    "id": "father_the_avenger",
+    "name": "fathers the avenger Pataraz",
+    "inheritability": "none",
+    "scopeTags": [
+     "paternity",
+     "lineage"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Georges Dumezil, Legendes sur les Nartes (1930) (Xaemyc/Khimish, father of the steel avenger-hero); John Colarusso, Nart Sagas from the Caucasus (2002)."
+     }
+    ],
+    "notes": "The patronymic Khimishuquo (son of Khimish) marks Pataraz throughout the cycle."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "circassian_isp",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (2002), How the Nart Khimish Married (Khimish takes Lady Isp the water-sprite to wife)."
+     }
+    ],
+    "notes": "Reciprocated within this batch on circassian_isp."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Khimish is the Circassian Nart who married the non-Nart water-sprite Lady Isp and was treacherously killed by jealous Narts for it; he is the father of the avenger Pataraz (patronymic Khimishuquo, son of Khimish), the counterpart of Ossetian Xaemyc, father of Batraz.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "John Colarusso, Nart Sagas from the Caucasus (Princeton UP, 2002), the tale How the Nart Khimish Married and How He Was Killed and the Ballad of Khimishuquo Pataraz."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Georges Dumezil, Legendes sur les Nartes (Paris, 1930) (Xaemyc, father of the avenger Batraz, in the Ossetian parallel)."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Authored as the named, attested father of circassian_pataraz, who already records the genealogy in prose (Khimish and the water-sprite Lady Isp) but with parentIds empty. Classed demigod (a Nart of the semi-divine host). WIRE-EDGE: add circassian_khimish to circassian_pataraz.parentIds and a father edge on Khimish to Pataraz (parent-to-child completion, reported in the run notes)."
  },
  {
   "id": "circassian_mezitha",
@@ -73276,6 +79773,146 @@ const NEW_FIGURES = [
   "notes": "Supreme creator/spirit classed 'deity'. Plains Cree Standard Roman Orthography kisê-manitow ('great/kind spirit'); Swampy Cree kihci-manitow. 'Manitow' is the general term for a spirit-power."
  },
  {
+  "id": "cree_mahihkan",
+  "name": {
+   "primary": "Wolf, the Trickster Younger Brother",
+   "alt": [
+    "Mahihkan",
+    "Mahikan",
+    "Maheekun",
+    "the Wolf"
+   ],
+   "transliterations": {
+    "plains-cree-sro": "mahihkan",
+    "popular": "Mahihkan"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Cree",
+  "primaryTradition": "Cree",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "myth-age (sacred-story / âtayôhkêwin time)"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "myth-age (sacred-story / âtayôhkêwin time)",
+    "eraOrdering": 1,
+    "startEvent": "The Wolf, younger brother and companion of the transformer Wisahkecahk in the myth-age.",
+    "endEvent": "Drowned and killed by the Water-Lynxes and Horned Serpents of the deep water, which earns them the lasting enmity of Wisahkecahk.",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan the Wolf, younger brother of Wîsahkêcâhk, slain by the underwater lynxes and horned serpents); see the Cree narratives collected in Bloomfield, Plains Cree Texts (1934)."
+     }
+    ],
+    "notes": "His death by the water-powers is the charter of the feud between Wisahkecahk and the underwater manitous."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "transformation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mahihkan",
+     "script": "Latn",
+     "rom": "mahihkan"
+    },
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (the Wolf brother, a being of the myth-age beside the transformer)."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-underworld-waters",
+    "contextTag": "episodic",
+    "term": {
+     "value": "",
+     "script": "",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan is taken and killed by the Water-Lynxes / Horned Serpents of the deep water)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "wolf_companion_of_the_transformer",
+    "name": "runs with Wisahkecahk as his wolf-brother and helper",
+    "inheritability": "none",
+    "scopeTags": [
+     "companionship",
+     "kinship"
+    ],
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (the Wolf, younger brother of the transformer, hunts and travels with him)."
+     }
+    ],
+    "notes": "The wolf-brother of the Cree transformer, paralleling the wolf-nephew/brother of Anishinaabe Nanabozho."
+   },
+   {
+    "id": "slain_by_the_water_powers",
+    "name": "is drowned by the underwater lynxes and serpents",
+    "inheritability": "none",
+    "scopeTags": [
+     "death",
+     "water-monsters"
+    ],
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan killed by the Water-Lynxes / Horned Serpents, provoking Wisahkecahk vengeance)."
+     }
+    ],
+    "notes": "His killing sets Wisahkecahk against the water-manitous."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "cree_wisahkecahk",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Cree wîsahkêcâhk cycle (Mahihkan the Wolf is the younger brother of Wîsahkêcâhk)."
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED on the existing cree_wisahkecahk (add a sibling edge back to cree_mahihkan)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mahihkan, the Wolf, is the younger brother and companion of the Cree transformer Wisahkecahk; in many Cree narratives he is drowned and killed by the Water-Lynxes or Horned Serpents of the deep water, which earns those underwater powers the lasting enmity of Wisahkecahk.",
+    "citations": [
+     {
+      "kind": "ethnography",
+      "reference": "Leonard Bloomfield, Plains Cree Texts (American Ethnological Society 16, 1934) (wîsahkêcâhk and the Wolf)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Survey of Cree oral tradition recording Mahihkan the Wolf as the younger brother of Wîsahkêcâhk, slain by the underwater lynxes and horned serpents."
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Authored as the named, attested younger brother of cree_wisahkecahk, who is currently recorded as solitary. Classed demigod (a being of the myth-age, brother of the transformer), paralleling the wolf-kin of Anishinaabe Nanabozho. RECIPROCAL-NEEDED: add a sibling edge on cree_wisahkecahk back to cree_mahihkan (reported in the run notes)."
+ },
+ {
   "id": "cree_memekwesiw",
   "name": {
    "primary": "Little Water-Spirits",
@@ -73514,7 +80151,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Trickster-transformer/culture-hero classed 'demigod' per schema. Plains Cree SRO wîsahkêcâhk; widely Wesakechak/Wisahketchahk; the same Algonquian figure as Anishinaabe Nanabozho. English nickname 'Whiskey Jack' is a folk-etymology of the name. No standard attested gear, hence materialCulture []."
+  "notes": "Trickster-transformer/culture-hero classed 'demigod' per schema. Plains Cree SRO wîsahkêcâhk; widely Wesakechak/Wisahketchahk; the same Algonquian figure as Anishinaabe Nanabozho. English nickname 'Whiskey Jack' is a folk-etymology of the name. No standard attested gear, hence materialCulture [].",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "cree_mahihkan",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "crow_cirape",
@@ -77330,6 +83974,179 @@ const NEW_FIGURES = [
   "notes": "Collective figure for the Yeban — underworld earth-genies engendered by Ogo the Pale Fox, misshapen and incestuous like their father; they hide in the earth and engender the Andoumboulou."
  },
  {
+  "id": "edo_arhuaran",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Arhuaran",
+   "alt": [
+    "Aruanran",
+    "Arhuanran",
+    "Aruan of Udo",
+    "Idubor"
+   ],
+   "transliterations": {
+    "edo": "Arhuaran",
+    "rom": "Arhuaran",
+    "etymology": "Edo (Bini) Arhuaran (also Aruanran/Arhuanran), the personal name of the giant Enogie (Duke) of Udo, elder brother and rival of Oba Esigie; his original name is also given as Idubor."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Edo",
+  "primaryTradition": "Edo",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "ozolua"
+  ],
+  "parentRoles": {
+   "ozolua": "paternal"
+  },
+  "temporal": {
+   "era": "eweka-dynasty"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "eweka-dynasty",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-Ozolua-son-the-elder-prince",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ],
+    "notes": "Elder son of Oba Ozolua and (in the dominant tradition) brother of Esigie. Renowned in Benin oral history as a giant of prodigious strength — said to be able to sweep the city with felled palm-trees. Mortal class; the giant-strength motif is a legendary attribute, not a divinity claim. Enogie (Duke) of Udo, a town nearly the equal of Benin City."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "rival-claimant",
+    "era": "eweka-dynasty",
+    "eraOrdering": 1,
+    "startEvent": "succession-war-against-Esigie-c-1504-ce",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); 'Aruan of Udo' tradition"
+     }
+    ],
+    "notes": "On Ozolua's death (c. 1504) Arhuaran, ruling Udo, refused to submit to his brother Esigie and sought to make Udo the capital of the kingdom with himself as king. The ensuing civil war was decided when Esigie, aided by his mother Idia, gathered the Benin army at Unuame on the Osse river and overthrew him."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "eweka-dynasty",
+    "eraOrdering": 2,
+    "startEvent": "defeat-and-death-in-Lake-Odighi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); Benin oral tradition of Lake Odighi / Odighi-oghede"
+     }
+    ],
+    "notes": "Defeated, and rather than be taken captive to Benin he is said in Benin tradition to have drowned himself in a lake (Lake Odighi at Udo), leaving his ivie coral-bead necklace hanging on a branch. His defeat secured Esigie's reign."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "ozolua",
+    "era": "eweka-dynasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "edo_idia",
+    "era": "eweka-dynasty",
+    "notes": "Per the dominant Egharevba-line tradition; some versions assign him a different senior wife as mother.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "esigie",
+    "era": "eweka-dynasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   },
+   {
+    "kind": "rival",
+    "personId": "esigie",
+    "era": "eweka-dynasty",
+    "notes": "The two brothers fought the canonical succession war of the early-16th-century Benin kingdom.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. U. Egharevba, A Short History of Benin (1968); Benin oral traditions of Udo / Lake Odighi recorded in the Aruan-of-Udo cycle"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mortal giant Enogie (Duke) of Udo, elder brother and rival of Oba Esigie. Renowned in Benin oral history for superhuman strength (sweeping the city with palm-trees); contested the succession on Ozolua's death and sought to make Udo the capital, but was defeated by Esigie (aided by Idia) at Unuame on the Osse, and is said to have drowned himself in Lake Odighi rather than be captured. Carried in the registry only implicitly (Esigie's prose names the war with his elder brother Arhuaran) until materialized here. Mortal class; the giant motif is legendary.",
+  "materialCulture": [
+   {
+    "id": "arhuaran-ivie-necklace",
+    "name": "Ivie (coral-bead necklace)",
+    "kind": "regalia",
+    "role": "bearer",
+    "notes": "The royal coral-bead necklace (ivie) of Arhuaran which, in Benin tradition, he hung on a branch at Lake Odighi before drowning himself — a token left to be found as the sign of his end; coral regalia (ivie) is the mark of Benin royalty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); Benin oral tradition of Lake Odighi"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "arhuaran-pwr-giant-strength",
+    "name": "Superhuman giant's strength",
+    "term": {
+     "value": "Arhuaran",
+     "script": "Edo",
+     "rom": "Arhuaran"
+    },
+    "notes": "In Benin oral history Arhuaran is a giant of prodigious strength, said to be able to sweep the city with uprooted palm-trees; a personal legendary attribute, not heritable.",
+    "inheritability": "none",
+    "scopeTags": [
+     "strength"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); 'Aruan of Udo' Benin oral tradition"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "edo_esu",
   "name": {
    "primary": "Esu",
@@ -77400,6 +84217,236 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Edo trickster deity adopted from the Yoruba Eshu, worshipped especially in border areas."
+ },
+ {
+  "id": "edo_idia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Idia",
+   "alt": [
+    "Iyoba Idia",
+    "Idia ne Iye Esigie",
+    "Queen Mother Idia"
+   ],
+   "transliterations": {
+    "edo": "Idia",
+    "rom": "Idia",
+    "etymology": "Edo (Bini) Idia, the personal name of the first Iyoba (Queen Mother) of Benin; popularly styled \"Idia ne Iye Esigie\" — \"Idia, the mother of Esigie.\""
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Edo",
+  "primaryTradition": "Edo",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "eweka-dynasty"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "eweka-dynasty",
+    "eraOrdering": 0,
+    "startEvent": "as-wife-of-Oba-Ozolua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba, A Short History of Benin (1968)"
+     }
+    ],
+    "notes": "A wife of Oba Ozolua and mother of the future Oba Esigie. Mortal class. Famed in Benin tradition for her medicinal knowledge and mystical powers as well as her political counsel."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "war-leader",
+    "era": "eweka-dynasty",
+    "eraOrdering": 1,
+    "startEvent": "succession-war-on-behalf-of-Esigie-against-Arhuaran-c-1504-ce",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); Met Museum, 'Idia, the First Queen Mother of Benin'"
+     }
+    ],
+    "notes": "On Ozolua's death (c. 1504) she championed her son Esigie in the civil war against his elder brother Arhuaran of Udo, raising and supporting an army; her counsel and reputed mystical aid were credited with Esigie's victory and, subsequently, with his success in the Idah (Igala) war."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "iyoba-queen-mother",
+    "era": "eweka-dynasty",
+    "eraOrdering": 2,
+    "startEvent": "creation-of-the-Iyoba-office-and-the-Idia-ivory-mask",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); Bradbury (1957)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Idia ivory pendant mask, British Museum Af1910,0513.1; Metropolitan Museum 1972.63"
+     }
+    ],
+    "notes": "Esigie created for her the new office of Iyoba (Queen Mother) — the highest female title in Benin — together with the palace of Eguae-Iyoba at Uselu. The two surviving Idia ivory pendant masks (British Museum and Met Museum) are her commemorative court-portraits and among the most globally recognizable works of Benin art."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "eweka-dynasty",
+    "eraOrdering": 3,
+    "startEvent": "death-and-ancestral-cult",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ],
+    "notes": "Venerated after death; the Iyoba office and its ancestral cult, founded for Idia, persisted as a canonical Benin institution through the 19th century."
+   }
+  ],
+  "domains": [
+   {
+    "id": "iyoba-queen-mother",
+    "term": {
+     "value": "Iyoba",
+     "script": "Edo",
+     "rom": "Iyoba"
+    },
+    "notes": "first holder of the Queen-Mother office of Benin",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)",
+      "derived": true
+     },
+     {
+      "kind": "primary",
+      "reference": "Idia ivory mask, British Museum + Met Museum",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "idia-ivory-mask-portrait",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "British Museum Af1910,0513.1; Met Museum 1972.63"
+      }
+     ],
+     "notes": "The Idia ivory pendant mask — a court-portrait of Idia worn at the king's hip, crowned with a band of carved Portuguese heads and mudfish; among the most-recognizable objects of African art."
+    }
+   ]
+  },
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "ozolua",
+    "era": "eweka-dynasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "esigie",
+    "era": "eweka-dynasty",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "edo_arhuaran",
+    "era": "eweka-dynasty",
+    "notes": "Edo tradition makes Idia the mother of both rival princes, Esigie and Arhuaran (though some versions make Arhuaran the son of a different senior wife); included per the dominant Egharevba-line tradition.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "J. U. Egharevba, A Short History of Benin (1968)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Idia ivory pendant masks, British Museum Af1910,0513.1 and Metropolitan Museum of Art 1972.63"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal first Iyoba (Queen Mother) of Benin, mother of Oba Esigie. On Ozolua's death she championed Esigie against his brother Arhuaran of Udo in the succession war and was credited with his victory and with his triumph in the Idah war through her counsel and reputed mystical powers. Esigie created the Iyoba office and the Eguae-Iyoba palace for her; the two Idia ivory pendant masks (British Museum + Met Museum) are her court-portraits and the most globally recognizable Benin court objects. Carried in the registry only implicitly (Esigie's prose names her) until materialized here. Mortal class.",
+  "materialCulture": [
+   {
+    "id": "idia-ivory-pendant-mask",
+    "name": "Idia Ivory Pendant Mask",
+    "kind": "regalia",
+    "role": "subject",
+    "notes": "Hip-worn ivory pendant mask portraying Idia, the iconographic emblem of the Iyoba office; two examples survive (British Museum Af1910,0513.1; Met Museum 1972.63), each crowned with carved Portuguese heads and stylized mudfish symbolizing Benin's contact with and dominion over the sea-borne Europeans.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "British Museum Af1910,0513.1; Metropolitan Museum of Art 1972.63"
+     }
+    ]
+   },
+   {
+    "id": "idia-eguae-iyoba-palace",
+    "name": "Eguae-Iyoba (Palace of the Queen Mother), Uselu",
+    "kind": "structure",
+    "role": "patron",
+    "notes": "The Queen-Mother's palace at Uselu established for Idia when the Iyoba office was created; the institutional seat of the Queen Mother of Benin thereafter.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); R. E. Bradbury, The Benin Kingdom and the Edo-speaking Peoples of South-Western Nigeria (1957)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "idia-pwr-mystic-war-counsel",
+    "name": "Mystical and medicinal aid securing victory in war",
+    "term": {
+     "value": "Iyoba",
+     "script": "Edo",
+     "rom": "Iyoba"
+    },
+    "notes": "Benin tradition credits Idia with the medicinal knowledge and mystical power, alongside her political counsel, that won Esigie the throne and the Idah war; a personal reputation, not a heritable faculty.",
+    "inheritability": "none",
+    "scopeTags": [
+     "magic",
+     "healing",
+     "leadership"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egharevba (1968); Met Museum, 'Idia, the First Queen Mother of Benin'"
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "edo_ogiuwu",
@@ -77667,6 +84714,167 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Remote Edo supreme creator-deity, father of Olokun and Ogiuwu."
+ },
+ {
+  "id": "egyptian_amenmesse",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Amenmesse",
+   "alt": [
+    "Amenmesses",
+    "Amenmose",
+    "Menmire Setepenre"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓇋𓏠𓈖𓄠𓋴𓋴",
+    "mdc-transliteration": "jmn-ms-sw mn-mj-rꜤ stp-n-rꜤ",
+    "etymology": "Birth name Amenmesse (jmn-ms-sw, \"Amun has fashioned him\"); throne name Menmire-Setepenre (\"Eternal like the Maat of Re, Chosen of Re\"). The Amun-birth-name parallels Ahmose, Thutmose, etc."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "egyptian_merneptah"
+  ],
+  "parentRoles": {
+   "egyptian_merneptah": "paternal"
+  },
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1230,
+   "mythicEnd": -1198,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "birth-probably-as-Merneptah-son-by-Takhat",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004); R. Krauss and others on the Amenmesse problem"
+     }
+    ],
+    "notes": "Most probably a son of Merneptah (by a secondary queen Takhat), and thus a half-brother of the designated heir Seti II; an alternative minority view makes him a son of Ramesses II. Scion-tier on the Merneptah-quartigod line, as for the registered Merneptah-children Seti II and Tausret. The exact filiation is debated, hence empty divine-paternity claim."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "rival-pharaoh",
+    "startEvent": "usurpation-of-Upper-Egypt-c-1201-bce",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Monuments in Upper Egypt and Nubia bearing Menmire Setepenre; Karnak cartouche-erasure evidence"
+     }
+    ],
+    "notes": "Seized Thebes, Upper Egypt and Kush during the early reign of Seti II (c. 1201-1198 BCE), ruling as a rival king from the south while Seti II held Lower Egypt. The Nubian Viceroy Messuy may be identical with him. His reign and Seti II's overlap is the core of the chronological 'Amenmesse problem'."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "defeat-and-damnatio-by-Seti-II",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV10 in the Valley of the Kings, with its decoration largely erased and overwritten by Seti II"
+     }
+    ],
+    "notes": "Defeated by Seti II, who reasserted control of Thebes in his fifth year. Amenmesse suffered damnatio memoriae: his cartouches across Upper Egypt were replaced by Seti II's, and his tomb KV10 in the Valley of the Kings was stripped of nearly all its original decoration and partly usurped by Seti II for relatives."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_merneptah",
+    "era": "new-kingdom",
+    "notes": "Most probable filiation (son of Merneptah by Takhat); debated.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "egyptian_seti_ii",
+    "era": "new-kingdom",
+    "notes": "If a son of Merneptah, he was a half-brother and dynastic rival of Seti II.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "egyptian_seti_ii",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak cartouche-erasure; KV10 usurpation by Seti II"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV10 in the Valley of the Kings; monuments of Menmire Setepenre in Upper Egypt and Nubia; Karnak Hall of Records cartouche-erasure pattern"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion rival-king of the late 19th Dynasty (r. c. 1201-1198 BCE), most probably a son of Merneptah (by Takhat) and half-brother of Seti II, though his filiation is debated (a minority view makes him a son of Ramesses II). He seized Thebes, Upper Egypt and Kush during Seti II's reign and ruled the south as a rival before Seti II defeated him and subjected him to damnatio memoriae, usurping his tomb KV10. The 'Amenmesse problem' is the central chronological puzzle of the dynasty's end. Carried in the registry only as an externalRef (enemy) on Seti II until materialized here.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian jmn-ms-sw (Amenmesse), \"Amun has fashioned/borne him,\" of the same -mose/-messe name-type as Thutmose and Ahmose.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "amenmesse-kv10",
+    "name": "Tomb KV10 (Valley of the Kings)",
+    "kind": "monument",
+    "role": "occupant",
+    "notes": "Rock-cut royal tomb of Amenmesse in the Valley of the Kings; its original decoration was almost entirely erased or plastered over and replaced after his defeat, and the tomb was reused for the burials of two royal women (Takhat and Baketwernel). The systematic erasure is the principal physical witness to his damnatio memoriae.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV10, Valley of the Kings, Thebes (in situ)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "O. J. Schaden & E. C. Ertman, KV-10 excavation reports (Amenmesse Project)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
  },
  {
   "id": "egyptian_anubis",
@@ -78193,6 +85401,186 @@ const NEW_FIGURES = [
   "notes": "Dwarf household god guarding sleep, childbirth and joy."
  },
  {
+  "id": "egyptian_duatentopet",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Duatentopet",
+   "alt": [
+    "Tentopet",
+    "Duatentipet",
+    "Tentipet"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓇼𓏏𓊪𓏏",
+    "mdc-transliteration": "dwꜢt-n.t-jpt",
+    "etymology": "Egyptian dwꜢt-n.t-jpt — \"Adorer (or Morning-star/Netherworld-one) of (Amun-in-)Opet,\" referencing the Opet (Luxor) cult of Amun; the short form Tentopet (tꜢ-n.t-jpt, \"she of Opet\") is used in her tomb."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "egyptian_ramesses_iii"
+  ],
+  "parentRoles": {
+   "egyptian_ramesses_iii": "paternal"
+  },
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1185,
+   "mythicEnd": -1145,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "startEvent": "birth-probably-as-Ramesses-III-daughter",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004), reconstruction from QV74 titulary"
+     }
+    ],
+    "notes": "Probably a daughter of Ramesses III and thus the sister or half-sister of her husband Ramesses IV (the king's-sister title in QV74 supports this), in line with the canonical Ramesside sister-wife convention. Mortal class: Egyptian queens are not divinized in the surviving record."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "great-royal-wife",
+    "startEvent": "marriage-to-Ramesses-IV",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb QV74 in the Valley of the Queens, bearing her queenly titulary"
+     }
+    ],
+    "notes": "Chief queen of Ramesses IV; held titles King's Daughter, King's Sister, King's Wife and King's Mother — the cluster by which she is identified as the wife of Ramesses IV and mother of his successor."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "queen-mother",
+    "startEvent": "birth-of-Ramesses-V",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ],
+    "notes": "Mother of the future Ramesses V (Prince Amenherkhepshef); the King's-Mother title in QV74 underlies the identification."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 3,
+    "startEvent": "burial-in-QV74",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb QV74, Valley of the Queens"
+     }
+    ],
+    "notes": "Buried in QV74 in the Valley of the Queens."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ramesses_iii",
+    "era": "new-kingdom",
+    "notes": "Probable filiation, from the King's-Daughter/King's-Sister titles in QV74.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "egyptian_ramesses_iv",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb QV74 titulary (King's Wife)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "egyptian_ramesses_v",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tomb QV74 in the Valley of the Queens, bearing the titles King's Daughter, King's Sister, King's Wife and King's Mother"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "identification-as-wife-of-Ramesses-IV",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mortal chief queen of Ramesses IV and mother of Ramesses V; short form Tentopet. Probably a daughter of Ramesses III and so a sister-wife of her husband, per the Ramesside convention, inferred from the King's-Daughter/King's-Sister/King's-Wife/King's-Mother titles in her tomb QV74 in the Valley of the Queens. Carried in the registry only as an externalRef (spouse) on Ramesses IV until materialized here. Mortal class.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian dwꜢt-n.t-jpt, a theophoric queen's name invoking Amun of Opet (Luxor); the hypocoristic Tentopet (tꜢ-n.t-jpt) means \"she of Opet.\"",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "duatentopet-qv74",
+    "name": "Tomb QV74 (Valley of the Queens)",
+    "kind": "monument",
+    "role": "occupant",
+    "notes": "Decorated rock-cut tomb in the Valley of the Queens assigned to Queen Duatentopet/Tentopet; its queenly titulary is the primary source for her identity and her place in the Ramesside succession.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb QV74, Valley of the Queens, Thebes (in situ)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "C. Leblanc, Ta Set Neferou (1989)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
+ },
+ {
   "id": "egyptian_geb",
   "name": {
    "primary": "Geb",
@@ -78663,6 +86051,191 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Personification of magic, the creative power wielded by the gods."
+ },
+ {
+  "id": "egyptian_iset_priestess",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Iset",
+   "alt": [
+    "Isis",
+    "Aset",
+    "Iset, God's Wife of Amun"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓊨𓏏𓆇",
+    "mdc-transliteration": "Ꜣs.t",
+    "etymology": "Egyptian Ꜣs.t (Iset/Isis), \"she of the throne\" (from st \"seat, throne\"); the goddess-name borne by this 20th-Dynasty princess, distinguished by her sacerdotal titles God's Wife of Amun and Divine Adoratrice."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "egyptian_ramesses_vi",
+   "egyptian_nubkhesbed"
+  ],
+  "parentRoles": {
+   "egyptian_ramesses_vi": "paternal",
+   "egyptian_nubkhesbed": "maternal"
+  },
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1160,
+   "mythicEnd": -1120,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "birth-as-Ramesses-VI-daughter-by-Nubkhesbed",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781), naming her parents Ramesses VI and Nubkhesbed"
+     }
+    ],
+    "notes": "Daughter of Ramesses VI by the Great Royal Wife Nubkhesbed, and sister of Ramesses VII. Scion-tier as daughter of the quartigod Ramesses VI."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "gods-wife-of-amun",
+    "startEvent": "installation-as-Gods-Wife-and-Divine-Adoratrice-of-Amun",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781)"
+     }
+    ],
+    "notes": "Installed by her father at Thebes as God's Wife of Amun and Divine Adoratrice of Amun — the first to hold these revived offices since the early 18th Dynasty, and probably the first God's Wife to hold the office in celibacy rather than as a king's consort. The revival prefigures the powerful celibate God's Wives of the Third Intermediate and Late periods."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "death-at-Thebes",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ],
+    "notes": "Held the Theban sacerdotal office for her lifetime; her cult-political role at Thebes paralleled the rise of the High Priests of Amun under Ramessesnakht."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ramesses_vi",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781)"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "egyptian_nubkhesbed",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_ramesses_vii",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781; excavated by Petrie at Koptos)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "office-of-Gods-Wife-of-Amun",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781); G. Robins, Women in Ancient Egypt (1993) on the revived office"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion daughter of Ramesses VI by Queen Nubkhesbed; sister of Ramesses VII. The first holder, since the early 18th Dynasty, of the revived offices of God's Wife of Amun and Divine Adoratrice of Amun, installed at Thebes by her father — and probably the first to hold the office celibate. Attested on the Koptos stela (Manchester Museum 1781). Carried in the registry only as an externalRef (father-of \"Iset, God's Wife of Amun\") on Ramesses VI until materialized here.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian Ꜣs.t (Iset/Isis), \"she of the throne,\" from st \"seat, throne\"; a common royal-woman name in the New Kingdom.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Gardiner, Egyptian Grammar (1957), on Ꜣst / st"
+    }
+   ]
+  },
+  "domains": [
+   {
+    "sphereId": "amun-cult-office",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ḥm.t-nṯr-n-jmn / dwꜢt-nṯr",
+     "script": "Egyptian",
+     "rom": "hemet-netjer-en-Amun / duat-netjer"
+    },
+    "notes": "God's Wife of Amun and Divine Adoratrice of Amun — the highest female sacerdotal office of the Theban Amun cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "iset-priestess-koptos-stela",
+    "name": "Koptos Stela of the God's Wife Iset",
+    "kind": "monument",
+    "role": "subject",
+    "notes": "Round-topped stela from Koptos (Manchester Museum 1781) depicting and naming Princess Iset and recording her installation as God's Wife / Divine Adoratrice of Amun by her father Ramesses VI — the defining monument of her office and the source for her parentage.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Stela, Manchester Museum acc. 1781 (W. M. F. Petrie, Koptos, London 1896)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
  },
  {
   "id": "egyptian_khnum",
@@ -79185,6 +86758,735 @@ const NEW_FIGURES = [
   "notes": "Ithyphallic god of male fertility, harvest and the eastern desert."
  },
  {
+  "id": "egyptian_mut",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Mut",
+   "alt": [
+    "Maut",
+    "Mout",
+    "Mut-Wadjet-Bastet"
+   ],
+   "transliterations": {
+    "egyptian": "mwt",
+    "egyptian-hieroglyphic": "𓏏𓄿𓅐",
+    "greek": "Μούθ",
+    "akkadian": ""
+   }
+  },
+  "type": "deity",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": null,
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "middle-kingdom"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "middle-kingdom",
+    "notes": "Theban mother-goddess who emerges in the textual and monumental record from the late Middle Kingdom, displacing Amunet and Wosret as the consort of Amun; rises to national prominence in the New Kingdom as the maternal half of the Theban Triad.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Mut', in Lexikon der Ägyptologie IV (1982), cols. 246-248"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "new-kingdom",
+    "notes": "At her Karnak precinct south of the temple of Amun-Re she is 'Mut the Great, Lady of Isheru'; her crescent sacred lake (the isheru) is the watery abyss in which the wrathful Eye-of-Ra / Wandering Goddess is cooled and pacified, linking her to Sekhmet, whose statues filled her temple in the hundreds.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fazzini & Peck, 'The Precinct of Mut during Dynasty XXV and Early Dynasty XXVI', JARCE 18 (1981)"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mwt",
+     "script": "Egyptian (translit)",
+     "rom": "mut"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Towards a Minimal Definition of the Goddess Mut', JEOL 26 (1979-80)"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship-and-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "mwt",
+     "script": "Egyptian (translit)",
+     "rom": "mut"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak (precinct of Mut) reliefs; Mut depicted wearing the Double Crown of Upper and Lower Egypt"
+     }
+    ]
+   },
+   {
+    "sphereId": "solar-eye-and-protection",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jrt-rꜥ",
+     "script": "Egyptian (translit)",
+     "rom": "iret-Ra"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "queen-of-the-gods",
+    "name": "Reign as Queen and Mother of the Gods",
+    "term": {
+     "value": "mwt nbt pt ḥnwt nṯrw",
+     "script": "Egyptian (translit)",
+     "rom": "Mut nebet pet henut netjeru"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "kingship",
+     "motherhood"
+    ],
+    "notes": "As 'Lady of Heaven, Mistress of the Gods' she presides over the Theban pantheon beside Amun and confers maternal legitimation on the king, who is figured as her son.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, precinct of Mut, temple inscriptions"
+     }
+    ]
+   },
+   {
+    "id": "pacified-and-raging-eye",
+    "name": "Embody the Eye of Ra in both its raging (Sekhmet) and pacified aspects",
+    "term": {
+     "value": "mwt-sḫmt",
+     "script": "Egyptian (translit)",
+     "rom": "Mut-Sekhmet"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "protection",
+     "celestial"
+    ],
+    "notes": "Mut absorbs the lioness-goddess Sekhmet as her fierce aspect (the hundreds of Sekhmet statues at her precinct) and is 'cooled' in the isheru-lake — the cyclical pacification of the Distant/Wandering Goddess.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fazzini, 'Some Reliefs and Statues of Sekhmet from the Precinct of Mut', in Studies in Honor of W. K. Simpson (1996)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "mut-double-crown",
+    "kind": "crown",
+    "name": "Double Crown (Pschent) of Upper and Lower Egypt",
+    "term": {
+     "value": "sḫmty",
+     "script": "Egyptian (translit)",
+     "rom": "sekhemty"
+    },
+    "role": "wearer",
+    "notes": "Mut is distinctively shown crowned with the royal Double Crown, marking her sovereignty 'over the whole land' — a regalia rarely worn by goddesses.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, precinct of Mut, reliefs"
+     }
+    ]
+   },
+   {
+    "id": "mut-vulture-headdress",
+    "kind": "regalia",
+    "name": "Vulture headdress",
+    "term": {
+     "value": "mwt",
+     "script": "Egyptian (translit)",
+     "rom": "mut"
+    },
+    "role": "wearer",
+    "notes": "The vulture (mwt) of her name, worn as a headdress, the avian sign that writes 'mother'; she is occasionally figured wholly as a vulture.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "mwt wrt nbt jšrw",
+    "original": "mwt wrt nbt jšrw",
+    "language": "egyptian",
+    "transliteration": "Mut weret nebet Isheru",
+    "contextTag": "cult",
+    "notes": "Mut the Great, Lady of Isheru — her title at the Karnak precinct with the crescent sacred lake.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, precinct of Mut, temple inscriptions"
+     }
+    ]
+   },
+   {
+    "epithetId": "nbt pt ḥnwt nṯrw",
+    "original": "nbt pt ḥnwt nṯrw",
+    "language": "egyptian",
+    "transliteration": "nebet pet henut netjeru",
+    "contextTag": "cult",
+    "notes": "Lady of Heaven, Mistress of all the Gods — her sovereign-mother title in the Theban Triad.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Mut', in Lexikon der Ägyptologie IV (1982)"
+     }
+    ]
+   },
+   {
+    "epithetId": "mwt jṯt snt",
+    "original": "mwt jṯt snt",
+    "language": "egyptian",
+    "transliteration": "mut itjet senet",
+    "contextTag": "hymnic",
+    "notes": "'Mother who became a daughter' — her self-generative epithet expressing the fluid wife/mother/daughter role beside the periodically reborn Amun-Khonsu.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Towards a Minimal Definition of the Goddess Mut', JEOL 26 (1979-80)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "egyptian_amun",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak Theban-Triad reliefs (Amun-Mut-Khonsu)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wikipedia, 'Theban Triad'; Britannica, 'Mut'"
+     }
+    ],
+    "notes": "Consort of Amun from the late Middle Kingdom, displacing Amunet and Wosret; the maternal half of the Theban Triad. RECIPROCAL needed on the existing egyptian_amun entry (spouse -> egyptian_mut)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "egyptian_khonsu",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Karnak, temple of Khonsu; the Theban-Triad processional reliefs"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Khonsu, Mut"
+     }
+    ],
+    "notes": "Mother of the moon-god Khonsu, the divine child of the Theban Triad; the existing egyptian_khonsu entry names 'Amun and Mut' but lists only egyptian_amun in parentIds, so egyptian_mut should be added there."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian mwt (𓏏𓄿𓅐), written with the vulture-sign, is the ordinary word 'mother'; the goddess Mut is the divine personification of motherhood and the name puns the vulture (mwt) on the noun 'mother' (mwt). Greek Μούθ.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erman & Grapow, Wörterbuch der ägyptischen Sprache, vol. II, s.v. mwt 'Mutter'"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Leitz, Lexikon der ägyptischen Götter und Götterbezeichnungen, s.v. Mwt"
+    }
+   ]
+  },
+  "cult": {
+   "cultCenters": [
+    {
+     "placeName": "The Precinct of Mut, south of the temple of Amun-Re at Karnak (Thebes)",
+     "type": "temple-complex",
+     "term": {
+      "value": "jšrw (pr-mwt)",
+      "script": "Egyptian hieroglyphic (transliteration)",
+      "rom": "Isheru (per-Mut)"
+     },
+     "period": "New Kingdom onward (much standing fabric Dynasty XVIII and later)",
+     "notes": "Mut's great temple, encircled on three sides by its crescent isheru sacred lake, lay just south of the Amun precinct and was linked to it by a processional avenue of ram-headed sphinxes; its hundreds of Sekhmet statues identify Mut with the fierce solar Eye.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Fazzini & Peck, 'The Precinct of Mut during Dynasty XXV and Early Dynasty XXVI', JARCE 18 (1981)"
+      },
+      {
+       "kind": "secondary",
+       "reference": "Porter & Moss, Topographical Bibliography II (Theban Temples), the Mut precinct"
+      }
+     ]
+    }
+   ],
+   "festivals": [
+    {
+     "name": "The Navigation / Procession of Mut and the 'Festival of Drunkenness' at the Mut precinct",
+     "term": {
+      "value": "ḥb tḫy",
+      "script": "Egyptian",
+      "rom": "heb tekhy"
+     },
+     "type": "festival",
+     "cadence": "annual, within the Theban festival cycle",
+     "notes": "At the 'Porch of Drunkenness' in the Mut temple worshippers drank to intoxication and woke to the pacified goddess at dawn — the appeasement of the returning Eye of Ra; Mut also processed by barque with Amun and Khonsu at the great Theban feasts.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Bryan, 'The Temple of Mut: New Evidence on Hatshepsut's Building Activity', in Sacred Space and Sacred Function in Ancient Thebes (2007)"
+      }
+     ]
+    }
+   ]
+  },
+  "iconography": {
+   "attributes": [
+    {
+     "id": "double-crown-and-vulture",
+     "term": {
+      "value": "𓏏𓄿𓅐",
+      "script": "Egyptian",
+      "rom": "mwt"
+     },
+     "notes": "Mut as a woman in a close vulture headdress surmounted by the royal Double Crown, a long red or blue sheath dress; uniquely she can also be shown wholly as a vulture.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+      }
+     ]
+    }
+   ],
+   "sacredAnimals": [
+    {
+     "id": "vulture",
+     "term": {
+      "value": "𓅐",
+      "script": "Egyptian",
+      "rom": "mwt"
+     },
+     "notes": "The griffon vulture, sign of her name and of 'mother', her chief sacred animal; the lioness (as Sekhmet) marks her fierce aspect.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Karnak, precinct of Mut, the Sekhmet statuary"
+      }
+     ]
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Mut', in Lexikon der Ägyptologie IV (1982), cols. 246-248"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Mut"
+     }
+    ],
+    "weight": "secondary"
+   },
+   {
+    "claim": "consort-of-Amun-and-mother-of-Khonsu-in-the-Theban-Triad",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Karnak Theban-Triad reliefs (Amun-Mut-Khonsu); the temple of Khonsu inscriptions"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Te Velde, 'Towards a Minimal Definition of the Goddess Mut', JEOL 26 (1979-80)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mut ('Mother') is the great Theban mother-goddess, consort of Amun and mother of the moon-god Khonsu — the second member of the Theban Triad. Appearing in the record from the late Middle Kingdom, she displaced Amun's earlier consorts Amunet and Wosret and rose with Amun-Re to national prominence in the New Kingdom. Her Karnak precinct, ringed by the crescent isheru lake and filled with hundreds of Sekhmet statues, identifies her with the fierce-and-pacified solar Eye of Ra; she is distinctively crowned with the royal Double Crown and writes her name with the vulture. Authored here to materialize the maternal anchor named inside the existing Khonsu entry ('son of Amun and Mut'); wired spouse -> egyptian_amun (reciprocal needed on Amun) and mother-of -> egyptian_khonsu (parentIds update needed on Khonsu)."
+ },
+ {
+  "id": "egyptian_nefertem",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nefertem",
+   "alt": [
+    "Nefertum",
+    "Nefer-Tem",
+    "Nefertemu"
+   ],
+   "transliterations": {
+    "egyptian": "nfr-tm",
+    "egyptian-hieroglyphic": "𓄤𓏏𓅓",
+    "greek": "Νεφερθμοῦς",
+    "akkadian": ""
+   }
+  },
+  "type": "deity",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": null,
+  "origin": "canon",
+  "parentIds": [
+   "egyptian_ptah",
+   "egyptian_sekhmet"
+  ],
+  "parentRoles": {
+   "egyptian_ptah": "paternal",
+   "egyptian_sekhmet": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "notes": "The young god who is the blue lotus (Nymphaea caerulea) rising from the primeval waters at the first dawn — 'the lotus-bloom which is at the nose of Ra' of Pyramid Texts Utterance 249, who issues from the horizon daily so that the gods are cleansed at the sight of him.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249 (PT 266)"
+     }
+    ]
+   },
+   {
+    "typeStatus": "deity",
+    "era": "new-kingdom",
+    "notes": "Worshipped at Memphis as the son of Ptah and the lioness Sekhmet, completing the Memphite Triad; patron of perfumes and of the cosmetic-and-healing arts derived from flowers, and in later periods given a lion-headed protective form.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ]
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lotus-and-primeval-dawn",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "sšn",
+     "script": "Egyptian (translit)",
+     "rom": "seshen"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249"
+     }
+    ]
+   },
+   {
+    "sphereId": "perfume-and-fragrance",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nfr-tm",
+     "script": "Egyptian (translit)",
+     "rom": "nefer-tem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem' (lord of perfumes)"
+     }
+    ]
+   },
+   {
+    "sphereId": "healing-and-beauty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "nfr-tm",
+     "script": "Egyptian (translit)",
+     "rom": "nefer-tem"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "lotus-of-the-first-dawn",
+    "name": "Rise as the blue lotus that bears the new sun from the primeval waters",
+    "term": {
+     "value": "sšn ḥr fnd n rꜥ",
+     "script": "Egyptian (translit)",
+     "rom": "seshen her fend en Ra"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "solar",
+     "creation"
+    ],
+    "notes": "Nefertem is the lotus-bloom 'at the nose of Ra' from which the sun emerges each morning; the closed flower opens at dawn, an image of daily and primordial rebirth.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249"
+     }
+    ]
+   },
+   {
+    "id": "lord-of-perfumes",
+    "name": "Govern fragrance, unguents and the cosmetic-healing arts",
+    "term": {
+     "value": "nb sṯj",
+     "script": "Egyptian (translit)",
+     "rom": "neb seti"
+    },
+    "inheritability": "none",
+    "scopeTags": [
+     "healing"
+    ],
+    "notes": "As the perfume of the blue water-lily he is 'Lord of Perfumes' and patron of the cosmetic and healing crafts derived from flowers; his fragrance gladdens Ra.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem'; Wilkinson, Complete Gods and Goddesses (2003)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nefertem-lotus-crown",
+    "kind": "regalia",
+    "name": "Blue-lotus headdress with twin plumes and menat-counterpoises",
+    "term": {
+     "value": "sšn",
+     "script": "Egyptian (translit)",
+     "rom": "seshen"
+    },
+    "role": "wearer",
+    "notes": "His diagnostic attribute: a tall open blue water-lily crowning his head, often surmounted by two plumes and flanked by hanging menat-necklace counterpoises.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ]
+   },
+   {
+    "id": "nefertem-lion",
+    "kind": "sacred-object",
+    "name": "The lion of Nefertem",
+    "term": {
+     "value": "mꜣj",
+     "script": "Egyptian (translit)",
+     "rom": "mai"
+    },
+    "role": "associated",
+    "notes": "In later iconography Nefertem may stand on the back of a lion or take a lion-head, inheriting the protective leonine force of his mother Sekhmet.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Late-Period bronzes and amulets of Nefertem on a lion"
+     }
+    ]
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "sšn ḥr fnd n rꜥ",
+    "original": "sšn ḥr fnd n rꜥ",
+    "language": "egyptian",
+    "transliteration": "seshen her fend en Ra",
+    "contextTag": "hymnic",
+    "notes": "'The lotus-bloom which is at the nose of Ra' — his Pyramid-Texts identity as the flower that bears the sun and whose scent the sun-god breathes.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249"
+     }
+    ]
+   },
+   {
+    "epithetId": "nb sṯj",
+    "original": "nb sṯj",
+    "language": "egyptian",
+    "transliteration": "neb seti",
+    "contextTag": "cult",
+    "notes": "'Lord of Perfumes' — Nefertem as the fragrance of the blue water-lily and patron of unguents.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem'"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ptah",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem, Ptah; the Memphite Triad"
+     }
+    ],
+    "notes": "Son of the Memphite creator Ptah; named inside the existing egyptian_ptah entry ('father of Nefertem'). A father-of back-edge on egyptian_ptah would mirror the explicit child-edges used elsewhere in the corpus."
+   },
+   {
+    "kind": "mother",
+    "personId": "egyptian_sekhmet",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem, Sekhmet; the Memphite Triad"
+     }
+    ],
+    "notes": "Son of the lioness-goddess Sekhmet, from whom he inherits his later leonine protective aspect; third member of the Memphite Triad. A mother-of back-edge on egyptian_sekhmet would complete the triad."
+   }
+  ],
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian nfr-tm (𓄤𓏏𓅓), the Memphite lotus-god, is a compound of nfr 'good, beautiful, perfect' and tm, the verb 'to complete / be complete' (also the divine name Atum/Tem) — variously read 'Beautiful-one-who-completes', 'the Completion of Atum', or, taking nfr alone, 'He who is beautiful'. Greek Νεφερθμοῦς.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Erman & Grapow, Wörterbuch der ägyptischen Sprache, s.v. Nfr-tm"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Leitz, Lexikon der ägyptischen Götter und Götterbezeichnungen, s.v. Nfr-tm"
+    }
+   ]
+  },
+  "cult": {
+   "cultCenters": [
+    {
+     "placeName": "Memphis — temple of Ptah (Hut-ka-Ptah), seat of the Memphite Triad",
+     "type": "temple-complex",
+     "term": {
+      "value": "ḥwt-kꜣ-ptḥ",
+      "script": "Egyptian hieroglyphic (transliteration)",
+      "rom": "Hut-ka-Ptah"
+     },
+     "period": "Old Kingdom onward",
+     "notes": "Nefertem was worshipped at Memphis as the divine child of the great temple of Ptah, third member of the Memphite Triad with Ptah and Sekhmet.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem; the Memphite Triad"
+      }
+     ]
+    }
+   ]
+  },
+  "iconography": {
+   "attributes": [
+    {
+     "id": "lotus-headdress",
+     "term": {
+      "value": "𓄤𓏏𓅓",
+      "script": "Egyptian",
+      "rom": "nfr-tm"
+     },
+     "notes": "A beautiful young man crowned with an open blue lotus, frequently with twin plumes and menat-counterpoises; in later forms lion-headed or standing on a lion.",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+      }
+     ]
+    }
+   ],
+   "sacredPlants": [
+    {
+     "id": "blue-lotus",
+     "term": {
+      "value": "𓆸",
+      "script": "Egyptian",
+      "rom": "sšn"
+     },
+     "notes": "The blue water-lily Nymphaea caerulea, his very body — the flower that closes at night and opens at dawn, bearing the reborn sun.",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Pyramid Texts, Utterance 249"
+      }
+     ]
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pyramid Texts, Utterance 249 (the lotus at the nose of Ra)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "son-of-Ptah-and-Sekhmet-in-the-Memphite-Triad",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Wilkinson, The Complete Gods and Goddesses of Ancient Egypt (2003), s.v. Nefertem, Ptah, Sekhmet"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Britannica, s.v. 'Nefertem'"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Nefertem is the Memphite lotus-god: the blue water-lily that rises from the primeval waters at the first dawn, 'the lotus-bloom which is at the nose of Ra' (Pyramid Texts Utt. 249), and so an emblem of the sun's daily and primordial rebirth and the 'Lord of Perfumes'. As the son of Ptah and the lioness Sekhmet he is the third member of the Memphite Triad, patron of fragrance and of the cosmetic-and-healing arts, and in later periods takes a leonine protective form inherited from his mother. Authored here to materialize the child anchor named inside the existing Ptah entry ('father of Nefertem'); wired parentIds [egyptian_ptah, egyptian_sekhmet], with optional father-of / mother-of back-edges to complete the triad on Ptah and Sekhmet."
+ },
+ {
   "id": "egyptian_neith",
   "name": {
    "primary": "Neith",
@@ -79548,6 +87850,166 @@ const NEW_FIGURES = [
     "notes": "Full sibling — shares the same attested parentage (Geb & Nut) per the figures' cited genealogy."
    }
   ]
+ },
+ {
+  "id": "egyptian_nubkhesbed",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nubkhesbed",
+   "alt": [
+    "Nubkhesed",
+    "Nubkhesbet"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓋞𓐍𓋴𓆓",
+    "mdc-transliteration": "nbw-ḫsbd",
+    "etymology": "Egyptian nbw-ḫsbd — \"Gold and Lapis-lazuli,\" a precious-materials name (nbw \"gold\" + ḫsbd \"lapis lazuli / blue\"), of a type favoured for late-Ramesside royal women."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1175,
+   "mythicEnd": -1130,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "startEvent": "birth-probably-commoner",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ],
+    "notes": "Parentage unknown; most likely born a commoner. Mortal class."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "great-royal-wife",
+    "startEvent": "marriage-to-Ramesses-VI",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Carvings in tomb KV13 mentioning Queen Nubkhesbed; Koptos stela of her daughter Iset (Manchester Museum 1781)"
+     }
+    ],
+    "notes": "Great Royal Wife of Ramesses VI. Bore him the princes Amenherkhepshef and Panebenkemyt, the future Ramesses VII (Itamun), and the princess Iset who became God's Wife of Amun."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "queen-mother",
+    "startEvent": "appointment-of-daughter-Iset-as-Gods-Wife-of-Amun",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781), which names Nubkhesbed as Iset's mother"
+     }
+    ],
+    "notes": "Named on the Koptos stela recording her daughter Iset's appointment as Divine Adoratrice / God's Wife of Amun — the document that secures Nubkhesbed's maternity and her position as the mother of a pharaoh (Ramesses VII)."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 3,
+    "startEvent": "death-tomb-unknown",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ],
+    "notes": "The whereabouts of her tomb and mummy are unknown."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "egyptian_ramesses_vi",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV13 carvings; Koptos stela (Manchester Museum 1781)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "egyptian_ramesses_vii",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "egyptian_iset_priestess",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781), naming Nubkhesbed as Iset's mother"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781); carvings in tomb KV13, Valley of the Kings"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Great Royal Wife of Ramesses VI and mother of Ramesses VII (Itamun) and of the God's Wife of Amun Iset (and of the princes Amenherkhepshef and Panebenkemyt). Probably of commoner birth. Her maternity is fixed by the Koptos stela of her daughter Iset (Manchester Museum 1781); she is also named in KV13. Carried in the registry only as an externalRef (spouse) on Ramesses VI until materialized here. Mortal class.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian nbw-ḫsbd, \"Gold-and-Lapis-lazuli,\" a precious-substance queen's name.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "nubkhesbed-koptos-stela",
+    "name": "Koptos Stela of the God's Wife Iset",
+    "kind": "monument",
+    "role": "named-on",
+    "notes": "Round-topped stela from Koptos (excavated by Flinders Petrie; Manchester Museum 1781) recording the installation of Princess Iset as God's Wife / Divine Adoratrice of Amun and naming her parents Ramesses VI and Queen Nubkhesbed — the key document for Nubkhesbed's identity and maternity.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Stela, Manchester Museum acc. 1781 (W. M. F. Petrie, Koptos, London 1896)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
  },
  {
   "id": "egyptian_nun",
@@ -79985,6 +88447,524 @@ const NEW_FIGURES = [
     "notes": "Full sibling — shares the same attested parentage (Nun) per the figures' cited genealogy."
    }
   ]
+ },
+ {
+  "id": "egyptian_ramesses_v",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Ramesses V",
+   "alt": [
+    "Ramses V",
+    "Amenherkhepshef II",
+    "Amunherkhepeshef II",
+    "Usermaatre Sekheperenre"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓇳𓁧𓊪𓏏𓇳𓄿𓂝𓈖𓅓𓈖",
+    "mdc-transliteration": "wsr-mꜤꜢt-rꜤ s-ḫpr-n-rꜤ",
+    "etymology": "Throne name Usermaatre-Sekheperenre (\"Powerful is the Maat of Re, Brought-into-being by Re\"); birth name Ramesses-Amenherkhepshef (\"Re bore him, Amun is with his strong arm\") — the princely name Amenherkhepshef being a recurring Ramesside crown-prince name."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "egyptian_ramesses_iv",
+   "egyptian_duatentopet"
+  ],
+  "parentRoles": {
+   "egyptian_ramesses_iv": "paternal",
+   "egyptian_duatentopet": "maternal"
+  },
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1170,
+   "mythicEnd": -1145,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "birth-as-Ramesses-IV-son-by-Duatentopet",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)"
+     }
+    ],
+    "notes": "Prince Amenherkhepshef, son of Ramesses IV by the chief queen Duatentopet. Scion-tier as the son of a quartigod pharaoh (Ramesses IV), one generation below the doctrinal son-of-Amun line of Ramesses III."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "pharaoh",
+    "startEvent": "accession-1149-bce",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Egyptian king lists; Turin Papyrus of dynastic succession; Wilbour Papyrus (land survey of his Year 4)"
+     }
+    ],
+    "notes": "Fourth pharaoh of the 20th Dynasty, succeeding his father Ramesses IV in 1149 BCE. The Great Wilbour Papyrus, a major land-tax survey, dates to his Year 4. Reign troubled by administrative corruption (the Turin Indictment Papyrus records the misconduct of the scribe Penanuket/Pra'emhab)."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "death-1145-bce-and-delayed-burial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kitchen, Ramesside Inscriptions VI; A. Dodson, Poisoned Legacy: The Decline and Fall of the Nineteenth Egyptian Dynasty (where relevant)"
+     }
+    ],
+    "notes": "Died 1145 BCE after a reign of about four years; some sources suggest he died of smallpox (pustules noted on his mummy). Not buried until Year 2 of Ramesses VI, an unusual two-year delay attributed to disturbances by Libyan raiders at Thebes. Left no known offspring; succeeded by his uncle Ramesses VI, who usurped the tomb (KV9) Ramesses V had begun."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ramesses_iv",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "egyptian_duatentopet",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004)"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "egyptian_ramesses_vi",
+    "era": "new-kingdom",
+    "notes": "His uncle and successor Ramesses VI usurped and enlarged for himself the tomb (KV9) that had been begun by and for Ramesses V.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kitchen, Ramesside Inscriptions VI; tomb KV9 redecoration evidence"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Great Wilbour Papyrus (land survey dated to his Year 4, Brooklyn Museum / British Museum EA 10447); Turin king-list tradition; KV9 tomb in the Valley of the Kings; his mummy in the KV35 Amenhotep II cache"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dodson & Hilton (2004), reconstruction from Ramesses IV / Duatentopet titulary"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Scion son of Ramesses IV by Queen Duatentopet; princely name Amenherkhepshef II. Fourth pharaoh of the 20th Dynasty (r. 1149-1145 BCE). His Year 4 is dated by the Great Wilbour Papyrus, the most important New-Kingdom land-survey document. Probably died of smallpox; burial delayed until Year 2 of Ramesses VI. Tomb KV9, begun for him, was usurped and enlarged by his uncle and successor Ramesses VI. No known offspring.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian rꜤ-ms-sw (Ramesses), \"Re has fashioned him\"; the numeral is a modern convention. His princely name Amenherkhepshef means \"Amun is with his strong arm.\"",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "ramessesv-wilbour-papyrus",
+    "name": "The Great Wilbour Papyrus",
+    "kind": "text-object",
+    "role": "subject",
+    "notes": "Major land-tax cadastral survey dated to Year 4 of Ramesses V; one of the most important administrative documents of the New Kingdom, naming thousands of plots and cultivators in Middle Egypt. A standing documentary monument of his short reign.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Papyrus Wilbour, Brooklyn Museum 34.5596.4–5 (A. H. Gardiner, The Wilbour Papyrus, 4 vols., Oxford 1941–1952)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
+ },
+ {
+  "id": "egyptian_ramesses_vii",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Ramesses VII",
+   "alt": [
+    "Ramses VII",
+    "Ramesses Itamun",
+    "Usermaatre Setepenre Meryamun"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓇳𓁧𓊪𓏏𓇳𓇋𓏏𓄿𓇋𓏠𓈖",
+    "mdc-transliteration": "wsr-mꜤꜢt-rꜤ stp-n-rꜤ",
+    "etymology": "Throne name Usermaatre-Setepenre-Meryamun (\"Powerful is the Maat of Re, Chosen of Re, Beloved of Amun\"); princely / birth name Ramesses-Itamun (\"Re bore him, sovereign-of / father-Amun\")."
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "egyptian_ramesses_vi",
+   "egyptian_nubkhesbed"
+  ],
+  "parentRoles": {
+   "egyptian_ramesses_vi": "paternal",
+   "egyptian_nubkhesbed": "maternal"
+  },
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1160,
+   "mythicEnd": -1129,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "startEvent": "birth-as-Ramesses-VI-son-by-Nubkhesbed",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Stela of the God's Wife Iset from Koptos (Manchester Museum 1781), naming Nubkhesbed as queen and Iset's mother and Ramesses VII's siblings"
+     }
+    ],
+    "notes": "Prince Ramesses-Itamun, son of Ramesses VI by the Great Royal Wife Nubkhesbed; brother of the princes Amenherkhepshef and Panebenkemyt and of the God's-Wife-of-Amun Iset. Scion-tier as son of the quartigod Ramesses VI."
+   },
+   {
+    "typeStatus": "scion",
+    "vitalStatus": "pharaoh",
+    "startEvent": "accession-1136-bce",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Egyptian king lists; Theban necropolis journals (Deir el-Medina ostraca recording soaring grain prices in his reign)"
+     }
+    ],
+    "notes": "Sixth pharaoh of the 20th Dynasty, succeeding his father Ramesses VI in 1136 BCE. Reign of about seven years and five months marked by economic distress — record-high grain prices documented in the Deir el-Medina workmen's records, a symptom of the gathering crisis of the late New Kingdom."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "death-1129-bce",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV1 in the Valley of the Kings"
+     }
+    ],
+    "notes": "Died 1129 BCE. Buried in tomb KV1, a small straight-axis late-20th-Dynasty tomb in the Valley of the Kings, open since antiquity. Succeeded by Ramesses VIII."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ramesses_vi",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781)"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "egyptian_nubkhesbed",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781)"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "egyptian_iset_priestess",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Koptos stela (Manchester Museum 1781) naming Iset as daughter of Ramesses VI and Nubkhesbed"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV1 in the Valley of the Kings; Koptos stela of the God's Wife Iset (Manchester Museum 1781); Deir el-Medina price-ostraca of his reign"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "reign-length",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Theban administrative dates (highest attested regnal year 7); Kitchen, Ramesside Inscriptions VI"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion son of Ramesses VI by Queen Nubkhesbed; princely name Ramesses-Itamun. Sixth pharaoh of the 20th Dynasty (r. 1136-1129 BCE). His reign saw record grain prices in the Deir el-Medina records, a marker of late-New-Kingdom economic crisis. Brother of the God's Wife of Amun Iset. Buried in KV1. Surfaces in the registry only as an externalRef (father-of) on Ramesses VI until materialized here.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian rꜤ-ms-sw (Ramesses), \"Re has fashioned him\"; the numeral is a modern convention. Princely name Itamun (jt-jmn) associates him with Amun.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "ramessesvii-kv1",
+    "name": "Tomb KV1 (Valley of the Kings)",
+    "kind": "monument",
+    "role": "occupant",
+    "notes": "Small straight-axis rock-cut tomb of Ramesses VII in the Valley of the Kings — entryway, descending corridor, rectangular burial chamber, and an unfinished side chamber — typical of compressed late-20th-Dynasty royal-tomb design. Open and visited since Greco-Roman antiquity (ancient graffiti on its walls).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb KV1, Valley of the Kings, Thebes (in situ); E. Hornung, The Valley of the Kings (1990)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
+ },
+ {
+  "id": "egyptian_ramesses_viii",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Ramesses VIII",
+   "alt": [
+    "Ramses VIII",
+    "Sethherkhepshef",
+    "Setherkhepeshef II",
+    "Usermaatre Akhenamun"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓇳𓁧𓄿𓆱𓈖𓇋𓏠𓈖",
+    "mdc-transliteration": "wsr-mꜤꜢt-rꜤ Ꜣḫ-n-jmn",
+    "etymology": "Throne name Usermaatre-Akhenamun (\"Powerful is the Maat of Re, Useful to Amun\"); birth / princely name Ramesses-Sethherkhepshef (\"Re bore him, Set is with his strong arm\") — the Set-element a 19th/20th-Dynasty dynastic marker, paralleling Seti."
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "egyptian_ramesses_iii"
+  ],
+  "parentRoles": {
+   "egyptian_ramesses_iii": "paternal"
+  },
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1180,
+   "mythicEnd": -1126,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "startEvent": "birth-as-Ramesses-III-son",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Medinet Habu temple, procession of the royal sons of Ramesses III, where Prince Sethherkhepshef is named"
+     }
+    ],
+    "notes": "One of the sons of Ramesses III named in the procession of princes at Medinet Habu (as Prince Sethherkhepshef). Quartigod-tier through the paternal Birth-Cycle line, as for his half-brothers Ramesses IV, Ramesses VI, Pentaweret and Khaemwaset."
+   },
+   {
+    "typeStatus": "quartigod",
+    "vitalStatus": "pharaoh",
+    "startEvent": "accession-1129-bce",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Egyptian king lists; rare monuments naming Usermaatre Akhenamun"
+     }
+    ],
+    "notes": "Seventh pharaoh of the 20th Dynasty, succeeding his great-nephew Ramesses VII c. 1129 BCE — an unusual lateral succession back to a son of Ramesses III. The most obscure ruler of the dynasty, attested by only a handful of monuments; reigned at most about one to two years."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "death-c-1126-bce",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Kitchen, Ramesside Inscriptions VI; Dodson & Hilton (2004)"
+     }
+    ],
+    "notes": "Died c. 1126 BCE. The only 20th-Dynasty pharaoh whose royal tomb has not been securely identified in the Valley of the Kings; the tomb QV43 in the Valley of the Queens had been prepared for him earlier, when he was still Prince Setherkhepeshef. Succeeded by Ramesses IX."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "egyptian_ramesses_iii",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Medinet Habu procession of royal sons"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "egyptian_ramesses_iv",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Common paternity from Ramesses III"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "egyptian_ramesses_vi",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Common paternity from Ramesses III"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "egyptian_pentaweret",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Common paternity from Ramesses III"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "egyptian_khaemwaset_c",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Common paternity from Ramesses III"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Medinet Habu procession of the sons of Ramesses III (naming Prince Sethherkhepshef); rare monuments of Usermaatre Akhenamun; QV43 in the Valley of the Queens (prepared for him as a prince)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod son of Ramesses III; princely name Sethherkhepshef. Seventh pharaoh of the 20th Dynasty (r. c. 1129-1126 BCE), the most obscure of the dynasty, who came to the throne by a lateral succession from his great-nephew Ramesses VII. Named in the Medinet Habu procession of Ramesses III's sons. The only 20th-Dynasty king whose royal tomb is unidentified, though the queens'-valley tomb QV43 was prepared for him while still a prince. Carried in the registry as an externalRef (father-of \"Ramesses VIII\") on Ramesses III until materialized here.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian rꜤ-ms-sw (Ramesses), \"Re has fashioned him\"; the numeral is a modern convention. Princely name Sethherkhepshef means \"Set is with his strong arm,\" a martial-dynastic epithet.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)"
+    },
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "ramessesviii-qv43",
+    "name": "Tomb QV43 (Valley of the Queens)",
+    "kind": "monument",
+    "role": "intended-occupant",
+    "notes": "Rock-cut tomb in the Valley of the Queens prepared for Prince Setherkhepeshef before his unexpected accession; decorated with scenes of the prince before deities. Its existence as a prince's tomb, together with the absence of an identified royal tomb, makes Ramesses VIII the unique tomb-less king of the 20th Dynasty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb QV43, Valley of the Queens, Thebes (in situ)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "C. Leblanc, Ta Set Neferou: une nécropole de Thèbes-Ouest et son histoire (1989)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
  },
  {
   "id": "egyptian_sekhmet",
@@ -80937,6 +89917,167 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Ibis-headed god of writing, wisdom, magic and the moon."
+ },
+ {
+  "id": "egyptian_tiye_harem",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tiye",
+   "alt": [
+    "Tiy",
+    "Tiye (secondary wife of Ramesses III)"
+   ],
+   "transliterations": {
+    "egyptian-hieroglyphic": "𓏏𓇋𓇋",
+    "mdc-transliteration": "tjy",
+    "etymology": "Egyptian tjy/tj (Tiye), a common short feminine name; this Tiye is a distinct, later person from Queen Tiye Great Royal Wife of Amenhotep III (egyptian_tiye), being a secondary wife of Ramesses III of the 20th Dynasty."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Egyptian",
+  "primaryTradition": "Egyptian",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "new-kingdom",
+   "mythicStart": -1185,
+   "mythicEnd": -1155,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "secondary-wife",
+    "startEvent": "as-minor-wife-of-Ramesses-III",
+    "era": "new-kingdom",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin (the harem-conspiracy trial transcripts)"
+     }
+    ],
+    "notes": "A secondary (harem) wife of Ramesses III and mother of his son Prince Pentaweret. Mortal class. Distinct from the 18th-Dynasty queen Tiye."
+   },
+   {
+    "typeStatus": "mortal",
+    "startEvent": "harem-conspiracy-1155-bce",
+    "era": "new-kingdom",
+    "eraOrdering": 1,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin"
+     }
+    ],
+    "notes": "In 1155 BCE she orchestrated the harem conspiracy at Medinet Habu to assassinate Ramesses III and place her son Pentaweret on the throne in place of the chosen heir Amenherkhepshef (the future Ramesses IV). The plot drew in some 40 conspirators — chamber officials, butlers, treasury and army officers, scribes and magicians using wax images. The king was mortally wounded (a deep throat-cut confirmed on his mummy), but the succession was not altered."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "new-kingdom",
+    "eraOrdering": 2,
+    "startEvent": "trial-and-execution",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin (recording the trials of the conspirators)"
+     }
+    ],
+    "notes": "Tried and condemned with her fellow conspirators (her son Pentaweret was forced to commit suicide). Her precise fate is not separately specified, but the principal conspirators were executed or compelled to suicide."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "egyptian_ramesses_iii",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "egyptian_pentaweret",
+    "era": "new-kingdom",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "egyptian_ramesses_iii",
+    "era": "new-kingdom",
+    "notes": "She orchestrated the conspiracy that mortally wounded her husband.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin (the harem-conspiracy trial transcripts, Museo Egizio, Turin)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "role-as-conspiracy-orchestrator",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Hawass et al., 'Revisiting the harem conspiracy and death of Ramesses III', BMJ 345 (2012): e8268"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal secondary wife of Ramesses III and mother of Prince Pentaweret; the orchestrator of the 1155 BCE harem conspiracy at Medinet Habu (Judicial Papyrus of Turin) that mortally wounded the king but failed to install her son on the throne in place of Ramesses IV. A distinct person from the 18th-Dynasty Queen Tiye (egyptian_tiye). Carried in the registry only as an externalRef (spouse / mother) on Ramesses III and Pentaweret until materialized here. Mortal class.",
+  "linguistic": {
+   "languageFamily": "Afro-Asiatic (Egyptian)",
+   "etymology": "Egyptian tjy (Tiye), a frequent short feminine personal name; not to be confused with the like-named 18th-Dynasty Great Royal Wife.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)"
+    }
+   ]
+  },
+  "materialCulture": [
+   {
+    "id": "tiye-harem-judicial-papyrus",
+    "name": "Judicial Papyrus of Turin",
+    "kind": "text-object",
+    "role": "named-in",
+    "notes": "The 12th-century-BCE trial record of the conspiracy against Ramesses III, naming Tiye as instigator and recording the proceedings against the conspirators; the unique documentary source for the only confirmed Egyptian regicide and for Tiye's existence and role.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Judicial Papyrus of Turin (Papyrus Turin 1875), Museo Egizio, Turin (T. E. Peet, 'The so-called Harem Conspiracy', JEA 10 (1924), 116–129)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
  },
  {
   "id": "egyptian_wadjet",
@@ -83856,6 +92997,112 @@ const NEW_FIGURES = [
   "notes": "Etruscan god of water — wells, springs and the sea — and source of the Roman Neptune. Named on the Liver of Piacenza and reckoned among the gods who command the thunderbolt."
  },
  {
+  "id": "etruscan_persipnei",
+  "name": {
+   "primary": "Persipnei",
+   "alt": [
+    "Phersipnai",
+    "Phersipnei",
+    "Persipnai",
+    "Proserpnai"
+   ],
+   "transliterations": {
+    "etruscan": "phersipnai",
+    "rom": "Persipnei",
+    "etymology": "Etruscan phersipnai / persipnai, borrowed from Greek Persephonē (Φερσεφόνη/Περσεφόνη); the queen of the dead, consort of Aita, equated with Roman Proserpina."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "startEvent": "attestation-as-queen-of-the-underworld",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia, and Golini Tomb I, Orvieto — wall-paintings labelling \"Phersipnai\" enthroned beside \"Aita\""
+     }
+    ],
+    "notes": "Etruscan queen of the underworld, named and depicted enthroned at the side of Aita in the great 4th-century-BCE painted tombs; recognizable with snakes in her hair. Her name and cult are a Greek borrowing (Persephone) naturalized into the Etruscan death-realm."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "underworld-queenship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "phersipnai",
+     "script": "Etruscan",
+     "rom": "Persipnei"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II (Tarquinia); Golini Tomb I (Orvieto) inscriptions"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "etruscan_aita",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Tarquinia, and Golini Tomb I, Orvieto, showing Phersipnai enthroned beside Aita"
+     }
+    ],
+    "notes": "Consort and co-enthroned queen of Aita, the Etruscan reflex of the Hades–Persephone pairing."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Wall-paintings of the Tomb of Orcus II, Tarquinia (4th c. BCE), and the Golini Tomb I near Orvieto, with the Etruscan label phersipnai"
+     },
+     {
+      "kind": "secondary",
+      "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006), ch. on the underworld"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan queen of the underworld, the counterpart of Greek Persephone and Roman Proserpina, and consort of Aita. Named and shown enthroned beside Aita (often with snakes in her hair) in the 4th-century-BCE painted tombs at Tarquinia (Tomb of Orcus II) and Orvieto (Golini Tomb I). Her name is a Greek loan naturalized into Etruscan. Carried in the registry implicitly (Aita's prose names \"Phersipnei\" enthroned beside him) until materialized here.",
+  "schemaVersion": 2,
+  "materialCulture": [
+   {
+    "id": "persipnei-orcus-tomb-painting",
+    "name": "Tomb of Orcus II wall-painting (Tarquinia)",
+    "kind": "monument",
+    "role": "depicted-in",
+    "notes": "The back-wall painting of the Tomb of Orcus II at Tarquinia depicts the enthroned underworld rulers labelled \"Aita\" and \"Phersipnai,\" overseeing the realm of the dead; with the Golini Tomb I at Orvieto it is the defining monument of Persipnei's iconography.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Tomb of Orcus II, Monterozzi necropolis, Tarquinia (in situ, 4th c. BCE)"
+     }
+    ]
+   }
+  ],
+  "faculties": []
+ },
+ {
   "id": "etruscan_selvans",
   "name": {
    "primary": "Selvans",
@@ -83938,6 +93185,119 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Etruscan god of the wilderness, woodland and boundary-stones, ancestor of the Roman Silvanus. Named on the Liver of Piacenza and in votive dedications guarding the edges of cultivated land."
+ },
+ {
+  "id": "etruscan_semla",
+  "name": {
+   "primary": "Semla",
+   "alt": [
+    "Semia",
+    "Semele (Etruscan)"
+   ],
+   "transliterations": {
+    "etruscan": "semla",
+    "rom": "Semla",
+    "etymology": "Etruscan semla (also semia), the Etruscan form of Greek Semelē; the mortal mother of the wine-god Fufluns by Tinia, equated with the Greek Semele."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Etruscan",
+  "primaryTradition": "Etruscan",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "archaic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "startEvent": "as-mortal-consort-of-Tinia-and-mother-of-Fufluns",
+    "era": "archaic",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan engraved bronze mirrors labelling \"Semla\" with the youthful \"Puphluns/Fufluns\" (4th c. BCE)"
+     }
+    ],
+    "notes": "Mortal mother of the wine-god Fufluns by Tinia; the Etruscan reception of the Greek Semele. On an Etruscan bronze mirror she is shown holding a thyrsus and embracing the young Fufluns — an intimate post-natal pairing distinctive to the Etruscan version. Mortal class (a mortal woman loved by the chief god), though sometimes treated as an earth/underworld figure."
+   },
+   {
+    "vitalStatus": "deceased",
+    "era": "archaic",
+    "eraOrdering": 1,
+    "startEvent": "death-by-Tinias-lightning-and-retrieval-from-the-underworld",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006)"
+     }
+    ],
+    "notes": "In the shared Dionysian myth the pregnant Semla is killed by Tinia's lightning, the infant Fufluns sewn into Tinia's thigh and later born from it; the grown Fufluns descends to the underworld to retrieve his mother — the Etruscan counterpart of Dionysus rescuing Semele."
+   }
+  ],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "etruscan_tinia",
+    "era": "archaic",
+    "notes": "Loved by Tinia, by whom she bore Fufluns; killed by his lightning per the shared Semele/Dionysus myth.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan mirror iconography; de Grummond (2006)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "etruscan_fufluns",
+    "era": "archaic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan bronze mirror labelling Semla with the young Fufluns (CSE)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan engraved bronze mirror (4th c. BCE) labelling \"Semla\" embracing the youthful \"Puphluns,\" Corpus Speculorum Etruscorum (CSE)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Etruscan mortal mother of the wine-god Fufluns by Tinia — the Etruscan reception of Greek Semele (Latin Semele/Semela). Attested by name on 4th-century-BCE engraved bronze mirrors that show her, thyrsus in hand, embracing the young Fufluns. In the shared myth she is killed by Tinia's lightning while pregnant, the infant carried to term in Tinia's thigh, and later sought by the grown Fufluns in the underworld. Carried in the registry implicitly (Fufluns' prose names \"the mortal Semla\" as his mother) until materialized here. Mortal class.",
+  "schemaVersion": 2,
+  "materialCulture": [
+   {
+    "id": "semla-fufluns-mirror",
+    "name": "Etruscan bronze mirror of Semla and Fufluns",
+    "kind": "ritual-object",
+    "role": "depicted-on",
+    "notes": "Engraved bronze hand-mirror (4th c. BCE) depicting Semla, holding a thyrsus, in an embrace with the youthful wine-god Puphluns (Fufluns), both labelled in Etruscan — the principal named attestation of Semla and of the distinctive Etruscan mother-son intimacy of the myth.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Etruscan engraved bronze mirror, Corpus Speculorum Etruscorum (CSE); de Grummond, Etruscan Myth (2006), fig. on Fufluns and Semla"
+     }
+    ]
+   }
+  ],
+  "faculties": []
  },
  {
   "id": "etruscan_sethlans",
@@ -87262,6 +96622,168 @@ const NEW_FIGURES = [
   "notes": "First-man tier preceding Sekume; typed demigod (divinely created proto-human). Cited chiefly via the widely reproduced Fang creation narrative collected in the early 20th century (Trilles/Tessmann tradition) as compiled by Knappert."
  },
  {
+  "id": "fang_mbongwe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Mortal First Woman of the Tree",
+   "alt": [
+    "Mbongwe",
+    "Mbomgwe"
+   ],
+   "transliterations": {
+    "fang": "Mbongwe",
+    "etymology": "Fang Mbongwe, the first woman, shaped by the mortal first man Sekume from the wood of a fallen ebony tree at the bidding of Nzame; with Sekume she is the ancestress of the Fang."
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Fang",
+  "primaryTradition": "Fang",
+  "sex": "female",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "mythic age",
+    "eraOrdering": 0,
+    "startEvent": "Fashioned from a tree by the mortal first man Sekume, at the command of Nzame, to be his wife and companion after the destruction of the first world",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990, s.v. Nzame: Sekume forms his wife Mbongwe from a tree."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton, 1982, on the Fang first ancestors after the re-creation."
+     }
+    ],
+    "notes": "When Nzame had made the new mortal man Sekume, he told him to make himself a woman from a nearby tree; Sekume carved her from the wood of a fallen ebony, and she was Mbongwe, the first woman."
+   },
+   {
+    "typeStatus": "demigod",
+    "vitalStatus": "deceased",
+    "era": "mythic age",
+    "eraOrdering": 1,
+    "startEvent": "Becomes with Sekume the ancestress of the Fang lineage, bearing the first generations of humankind",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame: from Sekume and Mbongwe descend the Fang."
+     }
+    ],
+    "notes": "Mortal by design, paired with the mortal Sekume; together they flourished and gave rise to the people."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestry",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Mbongwe",
+     "script": "Latn",
+     "rom": "Mbongwe"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame."
+     }
+    ]
+   },
+   {
+    "sphereId": "fashioning-of-humankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Fernandez, James W. Bwiti. Princeton, 1982, on the Fang progenitors."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "fang-mbongwe-mother-the-fang",
+    "name": "Bear the first generations and become ancestress of the Fang",
+    "inheritability": "not-inheritable",
+    "notes": "With Sekume the tree-born first woman is the mother of the Fang line; the descent of the people runs from her. The role is hers alone, not a heritable power.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame, the descent of the Fang from Sekume and Mbongwe."
+     }
+    ],
+    "scopeTags": [
+     "fertility"
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "fang-mbongwe-ebony-tree",
+    "name": "the fallen ebony tree of her making",
+    "kind": "material",
+    "role": "The wood of the fallen ebony tree from which Sekume carved her at the god command; the tree-origin of the first woman is the constant of the Fang re-creation narrative.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame, Mbongwe made from a tree."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "fang_sekume",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame: Mbongwe the wife of Sekume."
+     }
+    ],
+    "notes": "Wife of the mortal first man Sekume; with him the ancestress of the Fang. Reciprocal needed on the existing figure fang_sekume."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mbongwe is the Fang first woman, fashioned by the mortal first man Sekume from the wood of a tree at the bidding of Nzame after the destruction of the first world; with Sekume she is the ancestress of the Fang.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology: An Encyclopedia of Myth and Legend. London, 1990, s.v. Nzame."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Fernandez, James W. Bwiti: An Ethnography of the Religious Imagination in Africa. Princeton, 1982."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Progenitress tier: typed demigod (god-occasioned first woman, mortal by design), mirroring her husband fang_sekume. Carved from a fallen ebony tree by Sekume at Nzame command, the first woman from whom the Fang descend. Named in the widely reproduced Fang creation narrative (Knappert 1990, the Trilles/Tessmann tradition; Fernandez 1982). Authored as a NAMED-NO-ENTRY attested kin of the existing Fang creation family.",
+  "epithets": [
+   {
+    "epithetId": "Mbongwe",
+    "original": "Mbongwe",
+    "language": "fang",
+    "transliteration": "Mbongwe",
+    "contextTag": "myth",
+    "notes": "The first woman, carved from a tree, ancestress of the Fang",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Knappert, Jan. African Mythology. London, 1990, s.v. Nzame."
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "fang_mebege",
   "name": {
    "primary": "Self-Begetting Creator God",
@@ -87733,7 +97255,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Progenitor tier: typed demigod (god-made first ancestor, mortal by design, contrasted with the immortal but cursed Fam). His wife is Mbongwe."
+  "notes": "Progenitor tier: typed demigod (god-made first ancestor, mortal by design, contrasted with the immortal but cursed Fam). His wife is Mbongwe.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "fang_mbongwe",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "fijian_cagawalu",
@@ -89106,7 +98635,14 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Finnish god of the water and the deep, giver of fish, dwelling with his consort Vellamo."
+  "notes": "Finnish god of the water and the deep, giver of fish, dwelling with his consort Vellamo.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "finnish_vellamo",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
  },
  {
   "id": "finnish_ilmatar",
@@ -89216,6 +98752,470 @@ const NEW_FIGURES = [
   "notes": "Finnish primordial spirit of air, the virgin of creation and mother of Väinämöinen."
  },
  {
+  "id": "finnish_joukahainen",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Joukahainen",
+   "alt": [
+    "Brother of Aino",
+    "the meagre son of Lapland"
+   ],
+   "transliterations": {
+    "finnish": "Joukahainen",
+    "etymology": "Finnish Joukahainen; the young Lappish singer who challenges Vainamoinen to the singing-contest, loses, and pledges his sister Aino to ransom his life. The name is taken with the joukko word-family in folk usage; the figure is the brother of Aino."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "kalevala-mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "challenges-Vainamoinen-to-the-singing-contest-Runo-3",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 3."
+     }
+    ],
+    "notes": "A young Lappish singer, brother of Aino, who arrogantly drives north to challenge the old sage Vainamoinen to a contest of song and knowledge."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "sung-into-the-swamp-and-pledges-his-sister-Aino",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 3."
+     }
+    ],
+    "notes": "Bested and sung down into a swamp by Vainamoinen song-magic; sinking to his chin, in desperation he pledges his sister Aino as bride to the old sage to ransom his life. The pledge, made without Aino consent, sets the Aino tragedy in motion (Runos 4-5)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "ambushes-Vainamoinen-out-of-spite-Runo-6",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 6 (Joukahainen revenge)."
+     }
+    ],
+    "notes": "Nursing his resentment after Aino death, the youth spans his crossbow and lies in wait for Vainamoinen; he looses three bolts and, missing the sage, kills his horse, pitching Vainamoinen into the sea and so launching the Pohjola journeys."
+   }
+  ],
+  "domains": [
+   {
+    "id": "young-singer-and-rival-of-Vainamoinen",
+    "term": {
+     "value": "laulaja",
+     "script": "Finnish",
+     "rom": "laulaja"
+    },
+    "notes": "young singer; the rash challenger of the old sage",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 3 and 6.",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "brother-and-pledger-of-Aino",
+    "term": {
+     "value": "Ainon veli",
+     "script": "Finnish",
+     "rom": "Ainon veli"
+    },
+    "notes": "brother of Aino, who pledged her to ransom his life",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 3.",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "finnish-joukahainen-contest-in-song",
+    "name": "Contend in the singing-and-knowledge contest",
+    "term": {
+     "value": "kilpalaulanta",
+     "script": "Finnish",
+     "rom": "kilpalaulanta"
+    },
+    "inheritability": "none",
+    "notes": "He boasts the depth of his song and lore and challenges Vainamoinen to the kilpalaulanta; outmatched, he is sung fast into the earth and swamp. A mortal singer power, no match for the sage.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 3."
+     }
+    ],
+    "scopeTags": [
+     "language"
+    ]
+   },
+   {
+    "id": "finnish-joukahainen-ambush-with-the-crossbow",
+    "name": "Lie in wait and loose the crossbow at the sage",
+    "term": {
+     "value": "jousi",
+     "script": "Finnish",
+     "rom": "jousi"
+    },
+    "inheritability": "none",
+    "notes": "Out of revenge he spans his great crossbow and shoots at Vainamoinen from ambush; he misses the man but slays his horse, casting the sage into the waves.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 6."
+     }
+    ],
+    "scopeTags": [
+     "combat"
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "finnish-joukahainen-crossbow",
+    "name": "the great crossbow of Joukahainen",
+    "kind": "weapon",
+    "term": {
+     "value": "jousi",
+     "script": "Finnish",
+     "rom": "jousi"
+    },
+    "role": "The mighty crossbow he spans to ambush Vainamoinen; with it he looses the bolts that kill the sage horse and pitch him into the sea.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 6, the spanning of the crossbow."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "finnish_aino",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 3, Joukahainen pledges his sister Aino."
+     }
+    ],
+    "notes": "Elder brother of Aino, whom he pledged to Vainamoinen to ransom his own life. Reciprocal needed on the existing figure finnish_aino."
+   },
+   {
+    "kind": "enemy",
+    "personId": "finnish_vainamoinen",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 3 and 6, the singing-contest and the crossbow-ambush."
+     }
+    ],
+    "notes": "Defeated rival and would-be killer of the old sage; he ambushes Vainamoinen and slays his horse. Reciprocal needed on the existing figure finnish_vainamoinen."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Joukahainen is the young Lappish singer of the Kalevala, the brother of Aino, who challenges Vainamoinen to a singing-contest, is sung into a swamp, and pledges his sister Aino to ransom his life; later, out of resentment, he ambushes Vainamoinen with a crossbow and kills the sage horse.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 3-6."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Kuusi, Matti et al. Finnish Folk Poetry: Epic (1977), on the Joukahainen and Aino narratives."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal young singer of the Kalevala, the meagre son of Lapland; brother of Aino and rash rival of Vainamoinen. His losing of the singing-contest and his pledge of Aino (Runo 3) trigger the Aino tragedy (Runos 4-5), and his crossbow-ambush (Runo 6) launches the Pohjola journeys. Carried until now only implicitly behind the Aino record; authored here as the attested but unregistered brother of the corpus figure finnish_aino and rival of finnish_vainamoinen. Mortal tier, mirroring his sister Aino.",
+  "epithets": [
+   {
+    "epithetId": "nuori Joukahainen",
+    "original": "nuori Joukahainen",
+    "language": "finnish",
+    "transliteration": "nuori Joukahainen",
+    "contextTag": "folk",
+    "notes": "young Joukahainen; the rash youth of the singing-contest",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), recurring epithet-formula nuori Joukahainen."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_kyllikki",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Kyllikki",
+   "alt": [
+    "Saaren neito",
+    "Maiden of the Island",
+    "Flower of Saari",
+    "Wife of Lemminkainen"
+   ],
+   "transliterations": {
+    "finnish": "Kyllikki",
+    "finnish-epithet": "Saaren neito (Maiden of the Island of Saari)"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "kalevala-mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "fairest-maiden-of-the-island-of-Saari",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 11"
+     }
+    ],
+    "notes": "The fairest maiden and loveliest flower of the island of Saari, courted by many and by the sun, moon and star, who alone of all the island maidens would heed no suitor. Mortal Karelian-island family. parentIds left empty per registry conventions for Kalevala mortals whose parents are unregistered."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "abduction-by-Lemminkainen-and-mutual-vows",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 11"
+     }
+    ],
+    "notes": "The reckless hero Lemminkainen, rebuffed in courtship, seized Kyllikki by force, dragged her into his sledge and carried her off to his home. Reconciled, they swore mutual vows: he would never go to war if she would never go to the village dances. They lived happily for a time as husband and wife. The Kyllikki-abduction (Runo 11) is the canonical bride-capture episode of the Lemminkainen-cycle."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "broken-vow-and-Lemminkainen-departure",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 12"
+     }
+    ],
+    "notes": "When Kyllikki at last broke her vow and went to the village dances, Lemminkainen held his own vow void and, against his mother warning, set off to court the Maiden of Pohjola and to make war on the Northland, beginning the chain of his Pohjola adventures and his death and resurrection. Kyllikki remains in the home of Lemminkainen mother; on the disclosure of her flight she laments that her husband is dead or in trouble. She is the canonical first wife of the hero."
+   }
+  ],
+  "domains": [
+   {
+    "id": "fairest-maiden-of-Saari",
+    "term": {
+     "value": "Saaren kukka",
+     "script": "Finnish",
+     "rom": "Saaren kukka"
+    },
+    "notes": "the flower of the island of Saari, fairest of its maidens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runos 11-12 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Matti Kuusi, Finnish Folk Poetry: Epic (1977)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "captured-bride-and-vow-keeper",
+    "term": {
+     "value": "ryostetty morsian",
+     "script": "Finnish",
+     "rom": "ryostetty morsian"
+    },
+    "notes": "the bride taken by capture, bound by the mutual vow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runos 11-12 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Matti Kuusi, Finnish Folk Poetry: Epic (1977)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "village-dance-ground-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 12"
+      }
+     ]
+    },
+    {
+     "id": "lemminkainen-sledge-of-capture-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 11"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Kyllikki; a hypocoristic personal name connected by Finnish onomasts to kyllin meaning enough, plenty, abundance (kylla = enough, abundance), hence read as the abundant or amply-blessed one, with the affectionate diminutive ending -kki characteristic of Finnish female pet-names (compare Mielikki, Tuulikki). The name has been a continuously popular modern Finnish female given-name since the national-romantic revival.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 11-12"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), Lemminkainen / Saari bride-capture runos"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Matti Kuusi, Finnish Folk Poetry: Epic (1977)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "First wife of the reckless hero Lemminkainen; the fairest maiden of the island of Saari, courted by all yet heeding no suitor until Lemminkainen carried her off by force (Runo 11). The pair swore mutual vows that he would not go to war if she would not go to the dances; when she broke her vow and went to the village dances, Lemminkainen voided his own and set off for Pohjola, launching the Pohjola adventures (Runo 12). She is the canonical bride-capture wife of the Lemminkainen-cycle. Wired as spouse of finnish_lemminkainen.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "finnish_lemminkainen",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 11-12"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_lemminkainen — Kyllikki is the hero captured first wife of the island of Saari, bound to him by the mutual vow; her broken vow frees him to depart for Pohjola."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Saaren kukka",
+    "original": "Saaren kukka",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Flower of Saari, her standing epithet as the fairest island maiden",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 11 epithet for Kyllikki"
+     }
+    ]
+   },
+   {
+    "epithetId": "Saaren neito",
+    "original": "Saaren neito",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Maiden of the Island, her place-epithet",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 11 epithet for Kyllikki"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "kyllikki-dance-finery",
+    "classId": "garment",
+    "kind": "garment",
+    "name": "Kyllikki dance finery",
+    "term": {
+     "value": "tanssivaatteet",
+     "script": "Finnish",
+     "rom": "tanssivaatteet"
+    },
+    "role": "wearer",
+    "notes": "the finery she dons to go to the forbidden village dances, breaking her vow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 12"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "kyllikki-vow-binding",
+    "name": "Bind a marriage by mutual sworn vow",
+    "term": {
+     "value": "vala",
+     "script": "Finnish"
+    },
+    "notes": "Exchanges a binding marriage-vow with Lemminkainen whose breach frees them both",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runos 11-12"
+     }
+    ],
+    "ability": false,
+    "scopeTags": [
+     "marriage"
+    ]
+   }
+  ]
+ },
+ {
   "id": "finnish_lempo",
   "name": {
    "primary": "Lempo",
@@ -89289,6 +99289,280 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Finnish spirit of evil and mischief, equated with Hiisi, who turns tools and acts to harm."
+ },
+ {
+  "id": "finnish_loviatar",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Loviatar",
+   "alt": [
+    "Lovetar",
+    "Loveatar",
+    "Louhetar",
+    "Lovittaret",
+    "Blind Daughter of Tuoni"
+   ],
+   "transliterations": {
+    "finnish": "Loviatar"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tuoni",
+   "finnish_tuonetar"
+  ],
+  "parentRoles": {
+   "finnish_tuoni": "paternal",
+   "finnish_tuonetar": "maternal"
+  },
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-blind-daughter-of-Tuoni-and-Tuonetar",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45"
+     }
+    ],
+    "notes": "The blind daughter of Tuoni, lord of the dead, and his consort Tuonetar, and reckoned the worst and most malevolent of the death-realm daughters of Tuonela. A goddess of plague, disease and desolation, hideous and blind, dwelling at the dark margins of the underworld."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "impregnation-by-the-wind-and-birth-of-the-nine-diseases",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45"
+     }
+    ],
+    "notes": "In the canonical Birth of the Nine Diseases (Runo 45), Loviatar was impregnated by a great wind (the cold east wind) and after a torment of pregnancy gave birth to nine sons, the personified plagues and diseases sent by Louhi against the people of Kalevala. The nine include pistos (stitch / consumption), ahki (colic), luuvalo (gout), riisi (rickets), paise (boil / ulcer), rupi (scab / itch), syoja (cancer / canker) and rutto (plague); the ninth and worst, a witch and the embodiment of envy, she left unnamed and banished to be a scourge of mankind. In some folk-runo versions she also bore a daughter whom she cast into a river. Loviatar is thus the mother of disease in Finnish mythology."
+   }
+  ],
+  "domains": [
+   {
+    "id": "goddess-of-plague-and-disease",
+    "term": {
+     "value": "taudin emo",
+     "script": "Finnish",
+     "rom": "taudin emo"
+    },
+    "notes": "the mother of disease, source of plague and pestilence",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "blind-daughter-of-Tuonela",
+    "term": {
+     "value": "Tuonen sokea tytar",
+     "script": "Finnish",
+     "rom": "Tuonen sokea tytar"
+    },
+    "notes": "the blind daughter of the death-realm, worst of Tuoni daughters",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "mother-of-the-nine-diseases",
+    "term": {
+     "value": "yhdeksan taudin emo",
+     "script": "Finnish",
+     "rom": "yhdeksan taudin emo"
+    },
+    "notes": "mother of the nine sons of disease begotten by the wind",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 45 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "blindness-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 45"
+      }
+     ]
+    },
+    {
+     "id": "nine-disease-sons-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 45"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Loviatar, with the by-forms Lovetar, Loveatar, Louhetar and the plural Lovittaret; the many variants are connected to the Finnish word lovi meaning a notch, cleft or crack, and to the shamanic idiom langeta loveen meaning to fall into the lovi, that is to fall into a trance and pass into the spirit-world. The -tar / -tär feminine ending marks a female spirit or goddess (compare Tuonetar, Kivutar). In the old folk-poems the names Loviatar and Louhi are often used interchangeably; Lonnrot separated them into two distinct characters in the Kalevala.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 45 (Birth of the Nine Diseases)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), disease-origin incantation runos (synty)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Blind daughter of Tuoni and Tuonetar and the worst of the death-realm daughters of Tuonela; a goddess of plague, disease and desolation. In the canonical Birth of the Nine Diseases (Runo 45) she was impregnated by the cold east wind and bore nine sons, the personified plagues sent by Louhi against Kalevala: pistos, ahki, luuvalo, riisi, paise, rupi, syoja, rutto, and an unnamed ninth and worst, the embodiment of envy, whom she banished to scourge mankind. She is the mother of disease in Finnish mythology. In the old folk-poems the names Loviatar and Louhi are frequently interchanged; Lonnrot made them two distinct characters. Wired as daughter of finnish_tuoni and finnish_tuonetar. The nine disease-sons are disease-personifications (and the ninth unnamed), not registered as standalone figures.",
+  "relations": [
+   {
+    "kind": "mother",
+    "personId": "finnish_tuonetar",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 45; Tuonetar enumerated as mother of Loviatar"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tuonetar — Loviatar is the blind daughter of Tuonetar and Tuoni, the worst of the death-realm daughters."
+   },
+   {
+    "kind": "father",
+    "personId": "finnish_tuoni",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 45; Tuoni the death-lord as father of Loviatar"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tuoni — Loviatar is the blind daughter of Tuoni, lord of the dead, born in Tuonela."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tuonen tytti",
+    "original": "Tuonen tytti",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Daughter of Tuoni, a death-realm maiden epithet",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 45 and disease-synty incantations"
+     }
+    ]
+   },
+   {
+    "epithetId": "Lovetar, vaimo vanha",
+    "original": "Lovetar, vaimo vanha",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Lovetar the old hag, a charm-epithet of the disease-mother",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot, disease-origin incantations naming Lovetar / Loviatar"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "loviatar-disease-cradle",
+    "classId": "container",
+    "kind": "tool",
+    "name": "Cradle of the nine diseases",
+    "term": {
+     "value": "kipukehto",
+     "script": "Finnish",
+     "rom": "kipukehto"
+    },
+    "role": "owner",
+    "notes": "the cradle in which the disease-mother rocks her newborn plague-sons before sending them into the world",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 45"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "loviatar-spawn-disease",
+    "name": "Spawn the personified diseases",
+    "term": {
+     "value": "tautien synnyttaminen",
+     "script": "Finnish"
+    },
+    "notes": "Conceives by the wind and gives birth to the nine sons of plague and disease",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 45"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "disease",
+     "death"
+    ]
+   }
+  ]
  },
  {
   "id": "finnish_mielikki",
@@ -89383,6 +99657,279 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Finnish mistress of the forest and consort of Tapio, healer of beasts and giver of game."
+ },
+ {
+  "id": "finnish_nyyrikki",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nyyrikki",
+   "alt": [
+    "Pinneus",
+    "Son of Tapio",
+    "Lord of the Hunt-Paths"
+   ],
+   "transliterations": {
+    "finnish": "Nyyrikki"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tapio",
+   "finnish_mielikki"
+  ],
+  "parentRoles": {
+   "finnish_tapio": "paternal",
+   "finnish_mielikki": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "son-of-the-forest-king-and-mistress",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14"
+     }
+    ],
+    "notes": "Son of Tapio, the forest-king, and Mielikki, mistress of the forest, and a god of the hunt and of forest cattle dwelling in Tapiola, the forest-realm. As the son of the forest-couple he marks and clears the hunt-paths through the wood, blazing trees and dropping subtle signs so that those he favours are guided to the best game."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "invoked-in-the-hunting-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14"
+     }
+    ],
+    "notes": "Invoked in the Kalevala hunting-prayers (notably in Lemminkainen pursuit of the Hiisi-elk and the bear-hunt charms) alongside Tapio and Mielikki: the hunter calls on Nyyrikki, the tall son of Tapio in his red cap and blue cloak, to cut a blaze across the hills and bridge the marshes so the game may be driven to the hunter. He is the forest god most directly concerned with granting the catch."
+   }
+  ],
+  "domains": [
+   {
+    "id": "forest-hunt-god",
+    "term": {
+     "value": "metsastyksen jumala",
+     "script": "Finnish",
+     "rom": "metsastyksen jumala"
+    },
+    "notes": "god of the hunt and granter of forest game",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "marker-of-the-hunt-paths",
+    "term": {
+     "value": "polkujen merkitsija",
+     "script": "Finnish",
+     "rom": "polkujen merkitsija"
+    },
+    "notes": "blazer of the forest-paths who guides hunters to game",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 14 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "red-cap-and-blue-cloak-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 14"
+      }
+     ]
+    },
+    {
+     "id": "blazed-trees-of-the-hunt-paths-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 14"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Nyyrikki; an obscure forest-spirit name of debated origin, with the affectionate diminutive ending -kki characteristic of the Tapiola family (compare Mielikki, Tuulikki). The glossarial by-name Pinneus is given for him in the Kirby translation glossary. As son of Tapio he is fixed to the forest-hunt sphere.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 14 (hunting-charms in Tapiola)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), hunting / bear-rite charms invoking Nyyrikki"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Son of the forest-king Tapio and the forest-mistress Mielikki, and a god of the hunt and of forest cattle in Tapiola. He marks and blazes the hunt-paths through the wood so that those he favours are guided to the best game, and is invoked in the Kalevala hunting-prayers (Lemminkainen Hiisi-elk hunt; bear-hunt charms), called the tall son of Tapio in his red cap and blue cloak. Wired as son of finnish_tapio and finnish_mielikki.",
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "finnish_tapio",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 14; Nyyrikki named son of Tapio"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tapio — Nyyrikki is the son of Tapio the forest-king, god of the hunt-paths of Tapiola."
+   },
+   {
+    "kind": "mother",
+    "personId": "finnish_mielikki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 14; Nyyrikki son of the forest-mistress Mielikki"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_mielikki — Nyyrikki is the son of Mielikki, mistress of the forest, alongside his sisters Tellervo and Tuulikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tellervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tellervo daughter of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tellervo — fellow child of the forest-couple Tapio and Mielikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tuulikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tuulikki daughter of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tuulikki — fellow child of the forest-couple Tapio and Mielikki."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tapion poika",
+    "original": "Tapion poika",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Son of Tapio, his standing patronymic epithet in the hunting-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 14 hunting-charm"
+     }
+    ]
+   },
+   {
+    "epithetId": "Nyyrikki, Tapion poika, sini-viitta, lakki-puna",
+    "original": "Nyyrikki, Tapion poika, sini-viitta, lakki-puna",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Nyyrikki son of Tapio, blue-cloaked, red-capped, the descriptive hunt-charm formula",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 14"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nyyrikki-blaze-axe",
+    "classId": "axe",
+    "kind": "tool",
+    "name": "Path-blazing axe of Nyyrikki",
+    "term": {
+     "value": "kirves",
+     "script": "Finnish",
+     "rom": "kirves"
+    },
+    "role": "owner",
+    "notes": "the axe with which he cuts blazes across the hills and bridges the marshes to open the hunt-paths",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 14"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "nyyrikki-open-hunt-paths",
+    "name": "Open and mark the hunt-paths of the forest",
+    "term": {
+     "value": "polkujen avaaminen",
+     "script": "Finnish"
+    },
+    "notes": "Blazes trees and bridges marshes so favoured hunters are led to the game",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 14"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "forest",
+     "hunt"
+    ]
+   }
+  ]
  },
  {
   "id": "finnish_pekko",
@@ -89674,6 +100221,270 @@ const NEW_FIGURES = [
   "notes": "Finnish forest god and master of game, ruling Tapiola with his consort Mielikki."
  },
  {
+  "id": "finnish_tellervo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tellervo",
+   "alt": [
+    "Tapion neiti",
+    "Maiden of Tapio",
+    "Daughter of the Forest"
+   ],
+   "transliterations": {
+    "finnish": "Tellervo"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tapio",
+   "finnish_mielikki"
+  ],
+  "parentRoles": {
+   "finnish_tapio": "paternal",
+   "finnish_mielikki": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "daughter-of-the-forest-king-and-mistress",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Daughter of Tapio, the forest-king, and Mielikki, mistress of the forest, a forest-maiden and herd-keeper of Tapiola. A little maid of the woodland, she is set to mind and guard the cattle pastured in the forest; in some passages of the Kalevala she is so closely identified with her mother that the forest-mistress herself is addressed by the name Tellervo."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "invoked-in-the-cattle-herding-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Invoked in the Kalevala cattle-protection charms (Runo 32), where the herder commits the kine to the keeping of Tellervo, the slender daughter of Tapio, asking her to herd and watch over the cattle through the forest-day and to guard them from the bear and from harm. She is the forest-maiden who shepherds the herds under the trees."
+   }
+  ],
+  "domains": [
+   {
+    "id": "forest-maiden-herd-keeper",
+    "term": {
+     "value": "metsan piika",
+     "script": "Finnish",
+     "rom": "metsan piika"
+    },
+    "notes": "forest-maiden and keeper of the woodland herds",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "daughter-of-Tapio",
+    "term": {
+     "value": "Tapion tytar",
+     "script": "Finnish",
+     "rom": "Tapion tytar"
+    },
+    "notes": "daughter of the forest-king, maiden of Tapiola",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "woodland-herd-of-cattle-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 32"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Tellervo; an obscure forest-spirit name with the augmentative-affectionate ending -rvo / -o; the stem has been connected speculatively to a woodland-maiden root but its origin is not securely established. The name is fixed in the Kalevala to the Tapiola family as the forest-king daughter and herd-keeper. In modern Finnish Tellervo became a popular female given-name and is the calendar-name-day partner-name of the male Tapio.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 32 (cattle-protection charms)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), cattle-herding / forest charms naming Tellervo"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of the forest-king Tapio and the forest-mistress Mielikki, a forest-maiden and herd-keeper of Tapiola. She is invoked in the Kalevala cattle-protection charms (Runo 32) to herd and guard the kine pastured under the trees and to shield them from the bear; in some passages she is so identified with her mother that Mielikki is addressed as Tellervo. Wired as daughter of finnish_tapio and finnish_mielikki and sister of Nyyrikki and Tuulikki.",
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "finnish_tapio",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 32; Tellervo named daughter of Tapio"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tapio — Tellervo is the daughter of Tapio the forest-king, herd-maiden of Tapiola."
+   },
+   {
+    "kind": "mother",
+    "personId": "finnish_mielikki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tellervo daughter of the forest-mistress Mielikki"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_mielikki — Tellervo is the daughter of Mielikki, sometimes so identified with her that the mother is called by the daughter name."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_nyyrikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Nyyrikki son of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_nyyrikki — fellow child of the forest-couple Tapio and Mielikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tuulikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tuulikki daughter of Tapio and Mielikki"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tuulikki — fellow daughter of the forest-couple Tapio and Mielikki."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tapion neiti",
+    "original": "Tapion neiti",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Maiden of Tapio, her standing epithet in the herding-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 32 herding-charm"
+     }
+    ]
+   },
+   {
+    "epithetId": "Tellervo, Tapion neiti, metsan piika pikkarainen",
+    "original": "Tellervo, Tapion neiti, metsan piika pikkarainen",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Tellervo maid of Tapio, the little serving-maid of the forest, the descriptive charm-formula",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 32"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tellervo-herding-switch",
+    "classId": "tool",
+    "kind": "tool",
+    "name": "Forest herding-switch of Tellervo",
+    "term": {
+     "value": "karjavitsa",
+     "script": "Finnish",
+     "rom": "karjavitsa"
+    },
+    "role": "owner",
+    "notes": "the switch with which the forest-maiden tends and turns the woodland herd",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tellervo-guard-the-herds",
+    "name": "Guard and herd the cattle of the forest",
+    "term": {
+     "value": "karjan vartiointi",
+     "script": "Finnish"
+    },
+    "notes": "Shepherds the pastured kine through the forest-day and wards them from the bear",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "forest",
+     "herding"
+    ]
+   }
+  ]
+ },
+ {
   "id": "finnish_tuonetar",
   "name": {
    "primary": "Tuonetar",
@@ -89822,6 +100633,256 @@ const NEW_FIGURES = [
   "notes": "Finnish god of death and lord of the underworld Tuonela."
  },
  {
+  "id": "finnish_tuulikki",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Tuulikki",
+   "alt": [
+    "Tellervoinen-companion",
+    "Maiden of the Forest Game",
+    "Daughter of Tapio"
+   ],
+   "transliterations": {
+    "finnish": "Tuulikki"
+   }
+  },
+  "type": "deity",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [
+   "finnish_tapio",
+   "finnish_mielikki"
+  ],
+  "parentRoles": {
+   "finnish_tapio": "paternal",
+   "finnish_mielikki": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "daughter-of-the-forest-king-and-mistress",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Daughter of Tapio, the forest-king, and Mielikki, mistress of the forest, a maiden of Tapiola and a goddess of the forest game-animals. Her name is read as little wind; she drives and rouses the game of the woodland and is invoked to bring the quarry within the hunter reach."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "invoked-in-the-hunting-and-herding-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32"
+     }
+    ],
+    "notes": "Invoked in the Kalevala forest-charms (Runo 32) alongside Tapio, Mielikki, Tellervo and Nyyrikki: the hunter and herder call on Tuulikki, daughter of Tapio, to drive the forest game and the kine from the thickets and to turn them toward the petitioner. As the daughter of the forest-couple she is one of the maidens of Tapiola who order the beasts of the wood."
+   }
+  ],
+  "domains": [
+   {
+    "id": "goddess-of-forest-game-animals",
+    "term": {
+     "value": "metsan elainten neiti",
+     "script": "Finnish",
+     "rom": "metsan elainten neiti"
+    },
+    "notes": "maiden of the forest who drives the game-animals",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "daughter-of-Tapio-of-Tapiola",
+    "term": {
+     "value": "Tapion tytar",
+     "script": "Finnish",
+     "rom": "Tapion tytar"
+    },
+    "notes": "daughter of the forest-king, maiden of Tapiola",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 32 (Lonnrot 1849)",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "forest-game-driven-from-the-thicket-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 32"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Tuulikki; from tuuli meaning wind, with the affectionate diminutive ending -kki characteristic of the Tapiola maidens (compare Mielikki, the by-name shared with the mother-goddess family). Literally the little wind, fitting her role of driving the forest game like a breath through the trees. The name is fixed in the Kalevala to the forest-family of Tapio and became a popular modern Finnish female given-name.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runo 32 (forest and herding charms)"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), forest / hunting charms naming Tuulikki"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Anna-Leena Siikala, Itamerensuomalaisten mytologia (2012)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Daughter of the forest-king Tapio and the forest-mistress Mielikki, a maiden of Tapiola and goddess of the forest game-animals; her name reads as little wind. She is invoked in the Kalevala forest-charms (Runo 32) alongside Tapio, Mielikki, Tellervo and Nyyrikki to drive the game and the kine from the thickets toward the hunter and herder. Wired as daughter of finnish_tapio and finnish_mielikki and sister of Nyyrikki and Tellervo.",
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "finnish_tapio",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 32; Tuulikki named daughter of Tapio"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_tapio — Tuulikki is the daughter of Tapio the forest-king, maiden of the forest game of Tapiola."
+   },
+   {
+    "kind": "mother",
+    "personId": "finnish_mielikki",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family; Tuulikki daughter of the forest-mistress Mielikki"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_mielikki — Tuulikki is the daughter of Mielikki, mistress of the forest, alongside Tellervo and Nyyrikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_nyyrikki",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_nyyrikki — fellow child of the forest-couple Tapio and Mielikki."
+   },
+   {
+    "kind": "sibling",
+    "personId": "finnish_tellervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Tapiola family"
+     }
+    ],
+    "notes": "Reciprocal sibling link to finnish_tellervo — fellow daughter of the forest-couple Tapio and Mielikki."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Tuulikki, Tapion tytar",
+    "original": "Tuulikki, Tapion tytar",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "Tuulikki daughter of Tapio, her standing patronymic epithet in the forest-charms",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Runo 32 forest-charm"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tuulikki-game-driving-wand",
+    "classId": "tool",
+    "kind": "tool",
+    "name": "Game-driving wand of Tuulikki",
+    "term": {
+     "value": "ajovitsa",
+     "script": "Finnish",
+     "rom": "ajovitsa"
+    },
+    "role": "owner",
+    "notes": "the wand or switch with which the forest-maiden drives the game-beasts from the thicket toward the hunter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "tuulikki-drive-forest-game",
+    "name": "Drive the forest game toward the hunter",
+    "term": {
+     "value": "riistan ajaminen",
+     "script": "Finnish"
+    },
+    "notes": "Rouses and drives the game-animals of the wood from cover toward the petitioner",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 32"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "forest",
+     "hunt"
+    ]
+   }
+  ]
+ },
+ {
   "id": "finnish_ukko",
   "name": {
    "primary": "Ukko",
@@ -89947,6 +101008,462 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Finnish supreme sky and thunder god, invoked at moments of crisis in the Kalevala."
+ },
+ {
+  "id": "finnish_untamo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Untamo",
+   "alt": [
+    "Untamoinen",
+    "Unto",
+    "Brother of Kalervo",
+    "Destroyer of the Kalervo Kindred"
+   ],
+   "transliterations": {
+    "finnish": "Untamo"
+   }
+  },
+  "type": "mortal",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "kalevala-mythic-prehistoric"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 0,
+    "startEvent": "feud-with-his-brother-Kalervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 31"
+     }
+    ],
+    "notes": "Mortal Karelian-tribal chief and brother of Kalervo. The Kullervo-cycle opens with the brothers feud, fed by petty disputes (in one telling over fish-traps and a stolen seed-corn / burnt field). The strife between the brothers escalates into open warfare. parentIds left empty per registry conventions for Kalevala mortals whose parents are unregistered; his brother Kalervo is wired as a sibling."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "massacre-of-the-Kalervo-kindred",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 31"
+     }
+    ],
+    "notes": "Untamo raised a war-band and fell upon his brother Kalervo household, slaughtering the whole Kalervo kindred save one pregnant woman, whom he carried off as a bond-slave. In her captivity she bore Kullervo. Untamo thus is the author of the original wrong that the Kullervo-cycle avenges; he tried repeatedly to destroy the preternaturally strong slave-infant Kullervo (drowning, burning, hanging), but the child survived every attempt, after which Untamo at last sold the boy into slavery to the smith Ilmarinen."
+   },
+   {
+    "vitalStatus": "dead",
+    "era": "kalevala-mythic-prehistoric",
+    "eraOrdering": 2,
+    "startEvent": "destruction-by-Kullervo-vengeance",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 36"
+     }
+    ],
+    "notes": "After his own family was found dead, Kullervo marched on Untamola, the homestead of Untamo, and put the whole household to the sword and the torch, killing Untamo and razing his settlement in the canonical climactic vengeance of the Kullervo-cycle, fulfilling the blood-feud that Untamo had begun. Untamo is therefore wired as the enemy of Kullervo, who slays him."
+   }
+  ],
+  "domains": [
+   {
+    "id": "fratricidal-feud-chief",
+    "term": {
+     "value": "vihamies-veli",
+     "script": "Finnish",
+     "rom": "vihamies-veli"
+    },
+    "notes": "feuding brother and war-chief who destroys his kin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "destroyer-of-the-Kalervo-kindred",
+    "term": {
+     "value": "suvun surmaaja",
+     "script": "Finnish",
+     "rom": "suvun surmaaja"
+    },
+    "notes": "slayer of the whole Kalervo kindred but for one captive",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002",
+      "derived": true
+     }
+    ]
+   },
+   {
+    "id": "enslaver-of-the-infant-Kullervo",
+    "term": {
+     "value": "orjuuttaja",
+     "script": "Finnish",
+     "rom": "orjuuttaja"
+    },
+    "notes": "captor who enslaves and tries to kill the child Kullervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36",
+      "derived": true
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002",
+      "derived": true
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "war-band-and-burning-homestead-attribute",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kalevala Runo 31"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "etymology": "Finnish Untamo, also Untamoinen, with the by-form Unto; conventionally connected to the verb-root unta / uni meaning sleep or to the personal-name stem Unto. The -mo / -moinen suffixation is characteristic of Kalevala personal-name formation. As the brother-antagonist of Kalervo the name is fixed to the Kullervo-cycle.",
+   "languageFamily": "Uralic (Finno-Ugric, Finnic, Finnish)"
+  },
+  "death": {
+   "manner": {
+    "id": "slain-and-his-household-burnt-by-Kullervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala Runo 36"
+     }
+    ]
+   }
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Elias Lonnrot, Kalevala (1849 New Kalevala) Runos 31-36"
+     },
+     {
+      "kind": "primary",
+      "reference": "Suomen Kansan Vanhat Runot (Old Songs of the Finnish People), Kullervo / Kalervo-Untamo feud runos"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lauri Honko 1990; Anna-Leena Siikala 2002"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Karelian-tribal chief, brother of Kalervo and the prime antagonist of the Kullervo-cycle. Driven by a fratricidal feud, he raised a war-band and slaughtered the whole Kalervo kindred save one pregnant captive, who bore Kullervo in slavery; he tried repeatedly to kill the preternaturally strong infant (drowning, burning, hanging) and, failing, sold the boy to the smith Ilmarinen. The wrong he began is the wrong the cycle avenges: Kullervo at last marches on Untamola, kills Untamo and burns his settlement (Runo 36). Wired as sibling of finnish_kalervo and enemy of finnish_kullervo, who slays him.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "finnish_kalervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runo 31"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_kalervo — Untamo is Kalervo brother; their feud and Untamo massacre of the Kalervo kindred frame the Kullervo-cycle."
+   },
+   {
+    "kind": "enemy",
+    "personId": "finnish_kullervo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Runos 31, 36"
+     }
+    ],
+    "notes": "Reciprocal-needed on finnish_kullervo — Untamo enslaves and repeatedly tries to kill the infant Kullervo, who in the cycle climax slays Untamo and razes Untamola."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "Untamo verinen",
+    "original": "Untamo verinen",
+    "language": "finnish",
+    "transliteration": null,
+    "contextTag": "folk",
+    "notes": "bloody Untamo, the feud-chief who destroys his brother kindred",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot), Kullervo-cycle Runos 31-36"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "untamo-war-sword",
+    "classId": "sword",
+    "kind": "weapon",
+    "name": "Untamo war-sword",
+    "term": {
+     "value": "miekka",
+     "script": "Finnish",
+     "rom": "miekka"
+    },
+    "role": "owner",
+    "notes": "the sword of the war-band with which he massacres the Kalervo kindred",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 31"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "untamo-warband-raising",
+    "name": "Raise a war-band and lay waste a kindred",
+    "term": {
+     "value": "sotajoukko",
+     "script": "Finnish"
+    },
+    "notes": "Gathers armed men to fall upon and destroy his brother household",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala, Runo 31"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "combat"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "finnish_vellamo",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Vellamo",
+   "alt": [
+    "Veen emanta",
+    "Mistress of the Water"
+   ],
+   "transliterations": {
+    "finnish": "Vellamo",
+    "etymology": "Finnish Vellamo, goddess of the water, lakes and sea; the consort of the water-god Ahti, with whom she rules the sea-realm Ahtola. Called Veen emanta, Mistress of Water."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Finnish",
+  "primaryTradition": "Finnish",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "Mistress of the waters dwelling at the bottom of the sea with her husband Ahti, ruling the sea-realm Ahtola and its creatures, driver of the fish and giver of the catch",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), the vesiluvut and the sea-realm of Ahti and Vellamo; Runo 48 (the netting of the fish)."
+     },
+     {
+      "kind": "primary",
+      "reference": "Ganander, Christfrid. Mythologia Fennica (1789), on Vellamo, mistress of the water."
+     }
+    ],
+    "notes": "Wife of Ahti, lord of the deep; she sits on the water-rock to listen to Vainamoinen kantele-song, and her maids (Vellamon neidot) are the fishes drawn up in the great catch."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "vesi",
+     "script": "Finnish",
+     "rom": "vesi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849); Ganander, Mythologia Fennica (1789)."
+     }
+    ]
+   },
+   {
+    "sphereId": "sea-and-lakes",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Ahtola",
+     "script": "Finnish",
+     "rom": "Ahtola"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Siikala, Anna-Leena. Itamerensuomalaisten mytologia (2012), on Ahti, Vellamo and the water-realm Ahtola."
+     }
+    ]
+   },
+   {
+    "sphereId": "fish",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kala",
+     "script": "Finnish",
+     "rom": "kala"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Finnish fishing incantations (Suomen Kansan Vanhat Runot), the vesiluvut to Ahti and Vellamo."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "finnish-vellamo-drive-the-fish",
+    "name": "Drive the fish and give the catch from the deep",
+    "term": {
+     "value": "kalaonni",
+     "script": "Finnish",
+     "rom": "kalaonni"
+    },
+    "inheritability": "none",
+    "notes": "As mistress of the water she herds the fish of lake and sea; fishermen address her with Ahti in the water-charms to drive the catch into their nets.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Finnish fishing incantations (SKVR), the vesiluvut addressed to Ahti and Vellamo."
+     }
+    ],
+    "scopeTags": [
+     "water"
+    ]
+   },
+   {
+    "id": "finnish-vellamo-rule-the-sea-realm",
+    "name": "Rule the sea-realm Ahtola with Ahti and guard its creatures",
+    "inheritability": "none",
+    "notes": "With her husband Ahti she keeps the realm of Ahtola at the bottom of the sea; the water-folk and the maids of Vellamo are hers.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Siikala, Anna-Leena. Itamerensuomalaisten mytologia (2012), Ahti and Vellamo of Ahtola."
+     }
+    ],
+    "scopeTags": [
+     "authority"
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "finnish-vellamo-water-rock",
+    "name": "the water-rock of Vellamo",
+    "kind": "site",
+    "role": "The rock in the sea on which Vellamo perches to listen to the kantele-song; the seat from which the mistress of the water rises to the surface.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Vellamo on the rock at the kantele-playing of Vainamoinen."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "finnish_ahti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849); Ganander, Mythologia Fennica (1789), Vellamo the wife of Ahti."
+     }
+    ],
+    "notes": "Consort of the water-god Ahti, with whom she rules Ahtola. Reciprocal needed on the existing figure finnish_ahti."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Vellamo is the Finnish goddess of the water, lakes and sea, called Veen emanta (Mistress of Water), the consort of the water-god Ahti with whom she rules the sea-realm Ahtola and drives the fish.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Ganander, Christfrid. Mythologia Fennica (1789), Vellamo."
+     },
+     {
+      "kind": "primary",
+      "reference": "Kalevala (Lonnrot 1849), Ahti and Vellamo of the sea-realm; Runo 48."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Siikala, Anna-Leena. Itamerensuomalaisten mytologia (2012)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Finnish water-goddess, mistress of lakes and sea, consort of Ahti; the pair dwell at the bottom of the sea in Ahtola. Named already in Ganander Mythologia Fennica (1789) and recurrent in Kalevala-metre fishing-charms (the vesiluvut). Authored as the attested but previously unregistered spouse of the corpus figure finnish_ahti, whose record names her repeatedly as his consort.",
+  "epithets": [
+   {
+    "epithetId": "Veen emanta",
+    "original": "Veen emanta",
+    "language": "finnish",
+    "transliteration": "Veen emanta",
+    "contextTag": "cult",
+    "notes": "Mistress of Water; the goddess who rules the deep with Ahti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Finnish fishing incantations (SKVR), the water-charms naming Vellamo Veen emanta."
+     }
+    ]
+   }
+  ]
  },
  {
   "id": "fon_dan",
@@ -90184,6 +101701,230 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   },
+   {
+    "kind": "spouse",
+    "personId": "fon_gbadu",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
+   }
+  ]
+ },
+ {
+  "id": "fon_gbadu",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Gbadu",
+   "alt": [
+    "Gbadu",
+    "Fa-Gbadu",
+    "Minona-mother"
+   ],
+   "transliterations": {
+    "fon": "Gbadu"
+   }
+  },
+  "type": "deity",
+  "tradition": "Fon",
+  "primaryTradition": "Fon",
+  "sex": "female",
+  "vitalStatus": null,
+  "origin": "canon",
+  "parentIds": [
+   "fon_mawu_lisa"
+  ],
+  "parentRoles": {
+   "fon_mawu_lisa": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "born-daughter-of-Mawu-after-the-elder-twins",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits and Frances S. Herskovits, Dahomean Narrative: A Cross-Cultural Analysis (Northwestern University Press, 1958)"
+     }
+    ],
+    "notes": "Daughter of the creator Mawu (of the dual creator Mawu-Lisa), born after the elder twin sea-and-earth gods of the Dahomean pantheon. She is the female spirit who is the source and seat of Fa, the destiny-oracle, and is set upon a tall palm at the centre of the world with sixteen eyes about her head."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "keeper-of-the-sixteen-eyes-and-source-of-Fa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits and Frances S. Herskovits, Dahomean Narrative: A Cross-Cultural Analysis (Northwestern University Press, 1958)"
+     }
+    ],
+    "notes": "Mawu set Gbadu in a tall palm at the centre of the world with sixteen eyes ringing her head and gave her the keys to the future, so that she became the goddess of fate. Each dawn her children open and close her eyes; the configuration of the opened eyes is the sign read in Fa divination, and to open even one eye she must call upon Legba. Her sons or messengers carry the knowledge of Fa down to humankind. She is regarded among the Fon as the source of Fa power and is reckoned the female counterpart and wife of Fa, the destiny-oracle himself."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "fate-destiny-divination",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Gbadu",
+     "script": "Fon",
+     "rom": "Gbadu"
+    },
+    "notes": "goddess of fate and seat of the Fa destiny-oracle",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938), Fa divination, pp. 201-230"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernard Maupoil, La geomancie a l ancienne Cote des Esclaves (Institut d Ethnologie, 1943)"
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "sixteen-eyes-of-fate-attribute",
+     "notes": "the sixteen eyes ringing her head whose opened configuration is read as the Fa sign",
+     "sources": [
+      {
+       "kind": "ethnography",
+       "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+      }
+     ]
+    },
+    {
+     "id": "tall-palm-at-the-centre-of-the-world-attribute",
+     "notes": "the palm at the world centre in which Mawu seats her",
+     "sources": [
+      {
+       "kind": "ethnography",
+       "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+      }
+     ]
+    }
+   ]
+  },
+  "linguistic": {
+   "languageFamily": "Niger-Congo > Atlantic-Congo > Volta-Niger > Gbe (Fon/Fongbe)",
+   "etymology": "Fon Gbadu, the name of the female spirit of fate associated with Fa (the Fon reflex of Yoruba Ifa). In the Dahomean material recorded by Herskovits she is the daughter of Mawu and the seat of the destiny-oracle; her name is treated as that of the goddess of the Fa-system rather than as a transparent common-noun derivation.",
+   "sources": [
+    {
+     "kind": "ethnography",
+     "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938)"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits and Frances S. Herskovits, Dahomean Narrative: A Cross-Cultural Analysis (Northwestern University Press, 1958)"
+     },
+     {
+      "kind": "ethnography",
+      "reference": "Melville J. Herskovits, Dahomey: An Ancient West African Kingdom (J. J. Augustin, 1938), Fa divination, pp. 201-230"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bernard Maupoil, La geomancie a l ancienne Cote des Esclaves (Institut d Ethnologie, 1943)"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Fon goddess of fate, daughter of the creator Mawu (of Mawu-Lisa) and the source and seat of Fa, the destiny-oracle. Mawu set her in a tall palm at the centre of the world with sixteen eyes ringing her head and gave her the keys to the future; the configuration of her opened eyes is the sign read in Fa divination, and to open an eye she must call upon Legba. Among the Fon she is reckoned the female counterpart and wife of Fa, the destiny-oracle (the corpus entry fon_fa notes that his wife Gbadu sources his power). Her sons or messengers carry Fa-divination down to humankind. Wired as daughter of fon_mawu_lisa and spouse of fon_fa. Her further daughter Minona is named in the Dahomean material but left unregistered as a cascade descendant.",
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "fon_fa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958); Gbadu as female counterpart and wife of Fa, source of his power"
+     }
+    ],
+    "notes": "Reciprocal-needed on fon_fa — Gbadu is the female counterpart and wife of Fa and the source of his oracular power (fon_fa notes already record that his wife Gbadu sources his power)."
+   },
+   {
+    "kind": "mother",
+    "personId": "fon_mawu_lisa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958); Gbadu daughter of Mawu, born after the elder twins"
+     }
+    ],
+    "notes": "Reciprocal-needed on fon_mawu_lisa — Gbadu is the daughter of the creator Mawu (of Mawu-Lisa), seated in the world-palm as the goddess of fate."
+   }
+  ],
+  "epithets": [
+   {
+    "epithetId": "goddess-of-the-sixteen-eyes",
+    "original": "Gbadu",
+    "language": "fon",
+    "transliteration": "Gbadu",
+    "contextTag": "ethnographic",
+    "notes": "the spirit of the sixteen eyes of fate, seat of Fa",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "gbadu-palm-of-the-world-centre",
+    "kind": "structure",
+    "name": "World-centre palm of Gbadu",
+    "term": {
+     "value": "Gbadu azinkan",
+     "script": "Fon",
+     "rom": "Gbadu azinkan"
+    },
+    "role": "occupant",
+    "notes": "the tall palm at the centre of the world in which Mawu seats Gbadu and from which the eyes of fate are read",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "gbadu-eyes-of-fate",
+    "name": "Hold the eyes of fate read in Fa divination",
+    "term": {
+     "value": "Fa nukun",
+     "script": "Fon",
+     "rom": "Fa nukun"
+    },
+    "notes": "Her sixteen eyes, opened and closed each dawn, yield the destiny-signs read by the bokono diviner of Fa",
+    "inheritability": "full",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Herskovits and Herskovits, Dahomean Narrative (1958)"
+     }
+    ],
+    "ability": true,
+    "scopeTags": [
+     "divination",
+     "fate"
+    ]
    }
   ]
  },
@@ -93519,6 +105260,366 @@ const NEW_FIGURES = [
   "notes": "Demigod (⅝ divine: a quartigod father, Peleus, and a fully-divine numen mother, Thetis — (¼ + 1)/2). The greatest of the Achaeans and the central figure of the Iliad; swift-footed, near-invulnerable save the heel, doomed to a short and glorious life. His wrath, withdrawal, and return to kill Hector frame the poem; he falls to Paris's heel-shot at the Scaean Gate. Formerly barred from the registry by the strict parentage rule (his mother being a Nereid) — now admissible, and computed a demigod by ordinary descent."
  },
  {
+  "id": "greek_actaeon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Actaeon",
+   "alt": [
+    "Aktaion",
+    "Actaeon of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Ἀκταίων"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_aristaeus",
+   "greek_autonoe"
+  ],
+  "parentRoles": {
+   "greek_aristaeus": "paternal",
+   "greek_autonoe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-and-rearing-by-Chiron",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.3"
+     }
+    ],
+    "notes": "Son of the demigod Aristaeus by Autonoe daughter of Cadmus; reared by the Centaur Chiron, who trained him as a hunter. Quartigod by strict reckoning of the Apollo-line through Aristaeus; registered at scion-tier as the standard floor for the Cadmean hunting-hero."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "transgression-against-Artemis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ov. Met. 3.138-252; Apollod. 3.4.4; Callim. Hymn 5.107-118"
+     }
+    ],
+    "notes": "Saw Artemis bathing on Mt. Cithaeron (per Ovid, by accident; per others, boasting to outdo her in the hunt). The goddess transformed him into a stag."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-his-own-hounds",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ov. Met. 3.206-252; Apollod. 3.4.4"
+     }
+    ],
+    "notes": "As a stag he was pursued and torn apart by his own fifty hunting-hounds, who failed to recognize their master — the canonical exemplum of the hunter undone by the hunt and of mortal transgression against divine privacy. The hounds' grief is the aetiological coda; Chiron is said to have fashioned an image of him to console them."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.81.3; Ov. Met. 3.206-225 (the hound-catalogue)"
+     }
+    ],
+    "notes": "Trained as a master-hunter by Chiron; commanded a famous pack of hounds whose names Ovid catalogues."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "houndsman-mastery",
+    "name": "Mastery of the hunt and the hound-pack",
+    "inheritability": "none",
+    "scopeTags": [
+     "skill",
+     "hunting"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.81.3; Ov. Met. 3.206-225"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_aristaeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.4"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_autonoe",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "torn-apart-by-own-hounds-after-Artemis-transformation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ov. Met. 3.206-252; Apollod. 3.4.4"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Mt. Cithaeron, Boeotia",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.4.4; Diodorus 4.81.3-4; Ovid Metamorphoses 3.138-252; Callimachus Hymn 5.107-118"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.4.4 (son of Aristaeus and Autonoe)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἀκταίων ὁ κυνηγέτης",
+    "translation": "Actaeon the hunter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.81.3"
+     }
+    ]
+   }
+  ],
+  "notes": "Scion-tier Cadmean hunting-hero, son of Aristaeus (greek_aristaeus) and Autonoe (greek_autonoe, authored in this batch). Supplied by Aristaeus's prose ('Their son Actaeon was raised by Chiron and later torn apart by his own hounds for seeing Artemis bathing'). His tutor Chiron lacks a corpus entry and is named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἀκταίων (Aktaiōn), plausibly 'man of the shore/headland', from ἀκτή 'headland, shore'; the etymology is uncertain and may be pre-Greek.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀκτή"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_admetus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Admetus",
+   "alt": [
+    "Admetos",
+    "Admetus of Pherae"
+   ],
+   "transliterations": {
+    "greek": "Ἄδμητος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1300,
+   "mythicEnd": -1240,
+   "mythicPrecision": "generation-bracket"
+  },
+  "epithets": [
+   {
+    "original": "ἀμύμων Ἄδμητος",
+    "translation": "blameless Admetus",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.713-714"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "accession-at-Pherae-and-the-servitude-of-Apollo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.15; Eur. Alc. 1-7; Callim. Hymn 2.47-54"
+     }
+    ],
+    "notes": "King of Pherae in Thessaly, son of Pheres (eponym of the city). Host to Apollo during the year the god served a mortal as herdsman, in expiation for the slaying of the Cyclopes; Apollo, treated with conspicuous justice, made the herds of Admetus all bear twins."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-yoking-of-lion-and-boar-and-marriage-to-Alcestis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.15; Hyg. Fab. 50-51"
+     }
+    ],
+    "notes": "Won Alcestis, daughter of Pelias, by yoking a lion and a boar to one chariot — accomplishing the bridal-task with the help of Apollo. Having omitted Artemis from the wedding-sacrifices, he found the bridal chamber full of snakes; Apollo interceded with the Moirai, who granted that Admetus might escape his appointed death if another would die in his place."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-death-day-and-the-self-substitution-of-Alcestis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 280-392; Apollod. 1.9.15; Plat. Symp. 179b-c"
+     }
+    ],
+    "notes": "When the appointed death-day came, neither his aged father Pheres nor any other would die in his place; only his wife Alcestis volunteered. Heracles, received as a guest in the house of mourning, wrestled Death at the tomb and restored her to Admetus — the canonical katabasis-and-return narrative."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 1-7; Apollod. 1.9.15"
+     }
+    ]
+   },
+   {
+    "sphereId": "hospitality",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 509-567 — the xenia toward Heracles; Callim. Hymn 2.47-54"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_alcestis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.15; Eur. Alc. (throughout)"
+     }
+    ],
+    "notes": "Husband of Alcestis, who volunteered to die in his place."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_eumelus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715; Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Father of Eumelus, leader of the Pherae contingent at Troy."
+   },
+   {
+    "kind": "ally",
+    "externalRef": {
+     "name": "Apollo (Olympian; served a year as herdsman of Admetus and secured his death-day reprieve)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 1-71; Callim. Hymn 2.47-54"
+     }
+    ],
+    "notes": "Apollo (greek_hesiod_apollo) as patron — externalRef pending verification of preferred deity-anchor id."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715, 23.288-289, 23.376; Eur. Alcestis (438 BCE); Apollodorus 1.9.14-15; Hyg. Fab. 50-51; Callim. Hymn 2.47-54"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.14 (son of Pheres, eponym of Pherae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal king of Pherae in Thessaly, son of Pheres; husband of Alcestis and father of Eumelus. Famed for the justice of his hospitality to Apollo during the god year of servitude, and as the beneficiary of the unique death-day reprieve that the Moirai granted at Apollo intercession — the bargain that drives the self-sacrifice of Alcestis and her rescue by Heracles. Pheres is not yet registered (externalRef); spouse Alcestis and son Eumelus wired to corpus ids."
+ },
+ {
   "id": "greek_aegisthus",
   "schemaVersion": 2,
   "name": {
@@ -93714,6 +105815,154 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Scion of the Pelopid house — son of Thyestes by his own daughter Pelopia, begotten expressly to avenge the Thyestean feast. Reared unknowingly by Atreus; recognized by the kept sword, he kills Atreus and restores Thyestes. Lover of Clytemnestra and co-killer of Agamemnon (Homer makes him the prime mover, Aeschylus the secondary hand to Clytemnestra's axe). Tyrant of Mycenae for seven years until Orestes kills him in vengeance. The Odyssey's recurring paradigm of the usurper justly destroyed."
+ },
+ {
+  "id": "greek_aepytus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aepytus",
+   "alt": [
+    "Aipytos",
+    "Cresphontes the Younger",
+    "Aepytus of Messenia"
+   ],
+   "transliterations": {
+    "greek": "Αἴπυτος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_cresphontes",
+   "greek_merope_messenia"
+  ],
+  "parentRoles": {
+   "greek_apollod_cresphontes": "paternal",
+   "greek_merope_messenia": "maternal"
+  },
+  "temporal": {
+   "era": "post-heroic-age",
+   "mythicStart": -1130,
+   "mythicEnd": -1070,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "concealment-in-Arcadia-after-the-murder-of-Cresphontes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.7; Hyg. Fab. 137"
+     }
+    ],
+    "notes": "Youngest son of Cresphontes and Merope; when Polyphontes slew his father and brothers, his mother hid him with his grandfather Cypselus in Arcadia, where he was reared in secret."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-return-recognition-and-vengeance",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.8; Hyg. Fab. 137; Arist. Poet. 1454a"
+     }
+    ],
+    "notes": "Returned in manhood, was recognised by his mother in the scene Aristotle praises, and with the aid of his uncle killed Polyphontes — recovering the Messenian kingdom and so eponymously renaming the royal house the Aepytidae."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "reign-over-Messenia-and-the-Aepytid-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.9-10, 8.5.6"
+     }
+    ],
+    "notes": "Reigned so well that the Messenian Heraclids took their dynastic name from him rather than from Cresphontes; ancestor of Glaucus, Isthmius and the later Messenian kings down to the time of the Spartan wars."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.9; Apollod. 2.8.5"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.8; Hyg. Fab. 137"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_apollod_cresphontes",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.7"
+     }
+    ],
+    "notes": "Son of Cresphontes; greek_apollod_cresphontes already records father-of->Aepytus as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_merope_messenia",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.7-8; Hyg. Fab. 137"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.8.5; Pausanias 4.3.7-10, 8.5.6; Hyginus Fabulae 137, 184; Aristotle Poetics 1454a"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.7 (youngest son of Cresphontes and Merope)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal king of Messenia, youngest son of Cresphontes and Merope, also called Cresphontes the Younger. Hidden in Arcadia after the coup of Polyphontes, he returned to avenge his father and recover the throne — the recognition-and-vengeance plot of the lost Euripidean Cresphontes that Aristotle holds up as a model. Eponym of the Messenian Aepytid dynasty. Mortal-tier (the Heraclid divine share is exhausted at this depth). Parents wired to greek_apollod_cresphontes (which already externalRef him) and the newly authored greek_merope_messenia."
  },
  {
   "id": "greek_aerope",
@@ -94201,6 +106450,165 @@ const NEW_FIGURES = [
   "notes": "Scion of the Pelopid house (son of the scion Atreus by the mortal Aerope). King of Mycenae and supreme commander of the Greek coalition at Troy — Homer's 'lord of men.' Sacrificed his daughter Iphigenia at Aulis for sailing wind; his quarrel with Achilles over Briseis drives the Iliad. Murdered at his homecoming by his wife Clytemnestra and her lover Aegisthus — snared in a robe and axed in the bath in Aeschylus — the killing that the Odyssey contrasts with Odysseus's safe return and that the Oresteia builds upon. Brother of Menelaus and Anaxibia; father of Iphigenia, Electra, Chrysothemis, and Orestes."
  },
  {
+  "id": "greek_alcaeus_perseus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Alcaeus",
+   "alt": [
+    "Alkaios",
+    "Alcaeus son of Perseus"
+   ],
+   "transliterations": {
+    "greek": "Ἀλκαῖος"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_perseus",
+   "greek_apollod_andromeda"
+  ],
+  "parentRoles": {
+   "greek_apollod_perseus": "paternal",
+   "greek_apollod_andromeda": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1340,
+   "mythicEnd": -1280,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Perseus-and-Andromeda-at-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Son of Perseus and Andromeda, among the Perseid princes of Mycenae with his brothers Sthenelus, Heleus, Mestor and Electryon and his sister Gorgophone; quartigod-tier through the paternal Zeus-line via Perseus."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-and-the-fathering-of-Amphitryon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; Hes. Shield 1-56"
+     }
+    ],
+    "notes": "By his wife (named Astydameia, Laonome or Hipponome in the variants) father of Amphitryon and Anaxo — and so the grandfather, Alcaeus, whose name gave Heracles the patronymic-style name Alcides."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5 (the Perseid house of Mycenae)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_apollod_perseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_apollod_andromeda",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_electryon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Brother among the sons of Perseus; greek_apollod_electryon already records sibling->Alcaeus as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_sthenelus_perseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Brother of Sthenelus, father of Eurystheus."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_apollod_amphitryon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5-6; Hes. Shield 1-56"
+     }
+    ],
+    "notes": "Father of Amphitryon (husband of Alcmene); greek_apollod_amphitryon currently carries no parentIds."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.5-6; Hesiod Shield of Heracles 1-56; Paus. 8.14.2; Hom. Il. (Alcides patronymic context)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5 (son of Perseus and Andromeda)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod Perseid prince, son of Perseus and Andromeda and brother of Sthenelus and Electryon; father of Amphitryon and grandfather (the eponymous Alcaeus) from whom Heracles took the name Alcides. Id-suffixed _perseus to disambiguate from Alcaeus the Lydian Heraclid and others. Parents wired to greek_apollod_perseus and greek_apollod_andromeda; siblings to greek_apollod_electryon (which already externalRef him) and greek_sthenelus_perseus; son to greek_apollod_amphitryon."
+ },
+ {
   "id": "greek_anaxibia_atreid",
   "schemaVersion": 2,
   "name": {
@@ -94338,6 +106746,11 @@ const NEW_FIGURES = [
       "reference": "Paus. 2.29.4; schol. Eur. Or. 33"
      }
     ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_strophius",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ],
   "sources": [
@@ -94363,6 +106776,137 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Scion daughter of Atreus and Aerope (so the dominant tradition; a variant makes her a daughter of Pelops, hence a genealogy-variant edge to Pelops/Hippodamia). Sister of Agamemnon and Menelaus; queen of Phocis as wife of Strophius and mother of Pylades — through whom the Phocian refuge and the Orestes-Pylades bond enter the Atreid story. Sometimes named Astyoche."
+ },
+ {
+  "id": "greek_anaxibia_bias",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Anaxibia",
+   "alt": [
+    "Anaxibie",
+    "Anaxibia daughter of Bias",
+    "Phylomache"
+   ],
+   "transliterations": {
+    "greek": "Ἀναξιβία"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1330,
+   "mythicEnd": -1270,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Bias-and-marriage-to-Pelias",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Daughter of Bias of Argos; given in marriage to Pelias, king of Iolcus. (A variant names the wife of Pelias Phylomache, daughter of Amphion of Orchomenus.)"
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-of-the-Peliades-and-the-sons-of-Pelias",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Bore Pelias his son Acastus and his daughters the Peliades — Alcestis, Pisidice, Pelopia, Hippothoe and the rest — among them Alcestis, fairest of the daughters of Pelias."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_pelias",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Wife of Pelias of Iolcus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_alcestis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10, 1.9.15"
+     }
+    ],
+    "notes": "Mother of Alcestis; greek_alcestis already records mother->Anaxibia daughter of Bias as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_acastus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Mother of Acastus; greek_acastus already records mother->Anaxibia daughter of Bias as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.9.10 (wife of Pelias, daughter of Bias); cf. the variant Phylomache daughter of Amphion"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10 (daughter of Bias)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal queen of Iolcus, daughter of Bias of Argos and wife of Pelias; mother of Acastus and of the Peliades, among them Alcestis. Distinguished by id from Anaxibia the Atreid (greek_anaxibia_atreid). Her father Bias is noted in prose (not registered). Spouse wired to greek_pelias; daughters/son to greek_alcestis and greek_acastus, both of which already externalRef her as mother."
  },
  {
   "id": "greek_andromache",
@@ -94575,6 +107119,107 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Oceanid goddess of fortune and chance, Greek counterpart of Fortuna."
+ },
+ {
+  "id": "greek_aristodama",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aristodama",
+   "alt": [
+    "Aristodame",
+    "Aristodama of Sicyon"
+   ],
+   "transliterations": {
+    "greek": "Ἀριστοδάμα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "Sicyonian-union-with-Asclepius-in-serpent-form",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.10.3, 4.14.7-8"
+     }
+    ],
+    "notes": "A Sicyonian woman whom local tradition held to be the mother of Aratus by Asclepius, the god approaching her in the form of a serpent (dragon). Pausanias records small votive figures in the Sicyon Asklepieion, one showing Aristodama riding the serpent — the cult-image of the divine conception."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.10.3"
+     }
+    ],
+    "notes": "Union with Asclepius (in serpent form) per the Sicyonian tradition."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aratus_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.10.3, 4.14.7-8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.10.3, 4.14.7-8"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "motherhood-of-Aratus-by-Asclepius",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.10.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [],
+  "notes": "Mortal Sicyonian woman, mother of Aratus by Asclepius per the Sicyon cult-tradition; supplied by the prose of greek_aratus_asclepius ('Son of Asclepius by Aristodama, a Sicyonian woman'). Wired as lover of greek_asclepius (RECIPROCAL-NEEDED there) and mother of greek_aratus_asclepius. Distinct from the historical Aristodama; this is the cult-foundation figure of the Sicyon Asklepieion serpent-conception narrative.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἀριστοδάμα (Aristodama), 'best of the people' / 'noblest in the community', from ἄριστος 'best' + δᾶμος (Doric for δῆμος) 'people, community' — a Doric-form woman's name appropriate to Sicyon.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ἄριστος, δῆμος"
+    }
+   ]
+  }
  },
  {
   "id": "greek_assaracus",
@@ -94804,6 +107449,153 @@ const NEW_FIGURES = [
   "notes": "Mortal — infant son of Hector and Andromache, called Astyanax ('lord of the city') by the Trojans and Scamandrius by his father. The baby frightened by Hector's helmet-plume in Iliad 6; at the fall of Troy he was thrown from the walls so that no heir of Priam's house should survive to avenge it — the extinction of the male Dardanid line of Ilion (the junior, Aeneadan, branch alone continuing)."
  },
  {
+  "id": "greek_astyoche_laomedon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Astyoche",
+   "alt": [
+    "Astyokhe",
+    "Astyoche daughter of Laomedon"
+   ],
+   "transliterations": {
+    "greek": "Ἀστυόχη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_laomedon"
+  ],
+  "parentRoles": {
+   "greek_laomedon": "paternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1270,
+   "mythicEnd": -1190,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Laomedon-and-marriage-to-Telephus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Hom. Od. 11.519-521 (Eurypylus); Quint. Smyrn. 6.135-138"
+     }
+    ],
+    "notes": "Daughter of Laomedon, king of Troy, and sister of Priam; wife of Telephus of Mysia and mother of Eurypylus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-golden-vine-and-the-sending-of-Eurypylus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Quint. Smyrn. 6.135-185; Hom. Od. 11.520-521"
+     }
+    ],
+    "notes": "Bribed by her brother Priam with the golden vine that Zeus had given to the Trojan house in recompense for Ganymede, she prevailed on her son Eurypylus to bring the Ceteians to the defence of Troy — where he fell to Neoptolemus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "golden-vine-of-troy",
+    "name": "The golden vine",
+    "kind": "treasure",
+    "role": "the Hephaestus-wrought vine given by Zeus for Ganymede, with which Priam bribed Astyoche to send Eurypylus to war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Quint. Smyrn. 6.135-185; Hom. Il. 5.265-267 (the recompense for Ganymede)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_laomedon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3, Epit. 5.12"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_telephus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Quint. Smyrn. 6.135"
+     }
+    ],
+    "notes": "Wife of Telephus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_eurypylus_telephus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Hom. Od. 11.520-521"
+     }
+    ],
+    "notes": "Mother of Eurypylus; greek_apollod_eurypylus_telephus already records mother->Astyoche sister of Priam as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.3, Epitome 5.12; Homer Odyssey 11.519-521; Quintus Smyrnaeus Posthomerica 6.135-185; Hyg. Fab. 112"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3 (daughter of Laomedon, sister of Priam)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Trojan princess, daughter of Laomedon and sister of Priam; wife of Telephus of Mysia and mother of Eurypylus. Bribed by Priam with the golden vine to send her son to the defence of Troy. Id-suffixed _laomedon to disambiguate from the several other figures named Astyoche, including greek_apollod_astyoche (daughter of Phylas, mother of Tlepolemus). Father wired to greek_laomedon; husband to greek_apollod_telephus; son to greek_apollod_eurypylus_telephus, which already externalRef her as mother."
+ },
+ {
   "id": "greek_atreus",
   "schemaVersion": 2,
   "name": {
@@ -95031,6 +107823,11 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Killed by Aegisthus."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_chrysippus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ],
   "sources": [
@@ -95056,6 +107853,144 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Scion of the Pelopid house (son of the quartigod Pelops). King of Mycenae; brother and mortal enemy of Thyestes. Their feud over the golden lamb — token of rule, stolen by Atreus's adulterous wife Aerope for Thyestes — culminates in Atreus's revenge: the Thyestean feast, at which he serves Thyestes the flesh of his own sons. Aeschylus's Oresteia makes that banquet the house's primal pollution. Atreus is in turn killed by Aegisthus, Thyestes's incest-begotten avenger. Father of Agamemnon, Menelaus (see UPDATE-NEEDED), and Anaxibia by Aerope."
+ },
+ {
+  "id": "greek_autonoe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Autonoe",
+   "alt": [
+    "Autonoë",
+    "Autonoe of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Αὐτονόη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-eldest-Cadmeid-daughter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 975-978; Apollod. 3.4.2"
+     }
+    ],
+    "notes": "Eldest of the four daughters of Cadmus, founder-king of Thebes, and the goddess Harmonia; sister of Ino, Semele, and Agave. The senior Cadmeid line through which the house of Thebes descends."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Aristaeus-and-motherhood-of-Actaeon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.4"
+     }
+    ],
+    "notes": "Married the pastoral demigod Aristaeus; bore Actaeon (and in some accounts the nymph Macris). The union joins the Apollo-line (through Aristaeus) into the Cadmean royal house."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "grief-and-departure-from-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Bacchae 230-232, 1227-1300; Paus. 1.44.5"
+     }
+    ],
+    "notes": "After the death of Actaeon (torn apart by his own hounds) and the Dionysiac frenzy in which she and her sisters dismembered Pentheus, she left Thebes in grief; per Pausanias she died at Ereneia in the Megarid."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_aristaeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.4"
+     }
+    ],
+    "notes": "Wife of the demigod Aristaeus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_actaeon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod Theogony 975-978; Apollodorus 3.4.2-4; Diodorus 4.81.4; Euripides Bacchae"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Aristaeus-and-motherhood-of-Actaeon",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.4.4; Diodorus 4.81.4"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Αὐτονόη Κάδμου θυγάτηρ",
+    "translation": "Autonoe daughter of Cadmus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.2"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal Theban princess, wife of Aristaeus (greek_aristaeus, whose prose already names 'Autonoë, daughter of Cadmus and Harmonia') and mother of Actaeon (greek_actaeon, authored in this batch). Her parents Cadmus and Harmonia and sisters Ino, Semele, Agave are named in the tradition but lack corpus entries, so they are described rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Αὐτονόη (Autonoē), 'with a mind of her own' or 'self-knowing', from αὐτός 'self' + νόος/νοῦς 'mind'.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. αὐτός, νόος"
+    }
+   ]
+  }
  },
  {
   "id": "greek_capys",
@@ -95317,6 +108252,375 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Scion — daughter of Priam and Hecuba, the prophetess fated to speak truth and never be believed (Apollo's gift-and-curse). She foresaw the fall of Troy and the doom of the wooden horse in vain; at the sack she was torn from Athena's image and violated by Ajax the Lesser, and was finally killed beside Agamemnon — her captor — by Clytemnestra at Mycenae. The archetype of the unheeded seer."
+ },
+ {
+  "id": "greek_chione_boread",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Chione",
+   "alt": [
+    "Khione",
+    "Chione the Boread",
+    "Chione daughter of Boreas"
+   ],
+   "transliterations": {
+    "greek": "Χιόνη"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_hesiod_boreas",
+   "greek_oreithyia"
+  ],
+  "parentRoles": {
+   "greek_hesiod_boreas": "paternal",
+   "greek_oreithyia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-a-Boread-snow-nymph",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2, 3.15.4"
+     }
+    ],
+    "notes": "Daughter of Boreas the north wind and Oreithyia daughter of Erechtheus; a snow-nymph (chion, 'snow'), sister of the winged Boreads Calais and Zetes and of Cleopatra wife of Phineus."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-of-Eumolpus-by-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 349 Kannicht"
+     }
+    ],
+    "notes": "Bore Eumolpus to Poseidon and, to hide the birth, cast the infant into the sea; Poseidon saved him and gave him to Benthesicyme to rear. Through Eumolpus she is ancestress of the Eumolpidae, the priestly clan of the Eleusinian Mysteries."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "snow",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2 (the Boread daughter); name from chion 'snow'"
+     }
+    ],
+    "notes": "Snow-nymph of the Boread line, the wind-and-snow kindred of the north."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "snow-nature-boread",
+    "name": "Snow-nymph nature (Boread)",
+    "inheritability": "none",
+    "scopeTags": [
+     "weather",
+     "numen-nature"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2; the name Chione from chion 'snow'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_poseidon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ],
+    "notes": "By Poseidon mother of Eumolpus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_eumolpus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_cleopatra_boread",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2-3"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_calais",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_zetes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.2, 3.15.4; Euripides Erechtheus fr. 349 Kannicht; Pausanias 1.38.2"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage-and-motherhood-of-Eumolpus",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.4"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Χιόνη Βορεὰς θυγάτηρ",
+    "translation": "Chione daughter of Boreas",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2"
+     }
+    ]
+   }
+  ],
+  "notes": "Numen — the Boread snow-nymph, fourth child of Boreas (greek_hesiod_boreas) and Oreithyia (greek_oreithyia); mother of Eumolpus (greek_eumolpus, authored in this batch) by Poseidon. DISTINCT from greek_chione (daughter of Daedalion, mother of Autolycus and Philammon) — a separate figure sharing only the snow-name; this Boread Chione is explicitly named as a sibling in the prose of greek_cleopatra_boread ('and of the Boreid Chione, mother of Eumolpus by Poseidon'). Her existing parents Boreas and Oreithyia each carry a dangling father-of/mother-of -> undefined that this entry resolves. Benthesicyme (Eumolpus's foster-mother) lacks an entry and is named rather than wired. Sibling relations to existing Calais/Zetes/Cleopatra are reported as RECIPROCAL-NEEDED.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Χιόνη (Chionē), 'snowy, snow-maiden', from χιών (chiōn) 'snow' — the snow-daughter of the north wind Boreas.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. χιών"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_chrysippus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Chrysippus",
+   "alt": [
+    "Chrysippos",
+    "Chrysippus of Pisa",
+    "Chrysippus of Elis"
+   ],
+   "transliterations": {
+    "greek": "Χρύσιππος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_pelops"
+  ],
+  "parentRoles": {
+   "greek_pelops": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-the-favored-bastard-of-Pelops",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hellanicus FGrHist 4 F 157; schol. Eur. Phoen. 1760; Plut. Mor. 'Parallela' 33"
+     }
+    ],
+    "notes": "Illegitimate son of Pelops by the nymph Axioche (or Danais); the favorite son, half-brother of Atreus and Thyestes. Scion-tier through the Pelopid (Tantalus-Zeus) line."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "abduction-by-Laius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.5.5; schol. Eur. Phoen. 1760; Aelian VH 13.5"
+     }
+    ],
+    "notes": "Carried off by Laius of Thebes, who conceived a passion for him at the games and taught him to drive the chariot — the abduction treated as the origin of the curse on the house of Laius. Pelops recovered him and cursed Laius."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "murder-by-Atreus-and-Thyestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hellanicus FGrHist 4 F 157; Thuc. 1.9.2; Apollod. epit. 2.10"
+     }
+    ],
+    "notes": "Murdered by his half-brothers Atreus and Thyestes at the urging of Hippodamia, who feared Pelops would leave the kingdom to him; the fratricide is the crime for which the brothers were exiled, the prelude to the Mycenaean throne and the Pelopid curse."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_pelops",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.5.5; Hellanicus FGrHist 4 F 157"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Thuc. 1.9.2; Hellanicus FGrHist 4 F 157"
+     }
+    ],
+    "notes": "Half-brother and one of his two murderers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Thuc. 1.9.2; Hellanicus FGrHist 4 F 157"
+     }
+    ],
+    "notes": "Half-brother and one of his two murderers."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "murdered-by-half-brothers-Atreus-and-Thyestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hellanicus FGrHist 4 F 157; Thuc. 1.9.2"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Pisa, Elis",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.5.5, Epitome 2.10; Hellanicus FGrHist 4 F 157; Thucydides 1.9.2; Aelian Varia Historia 13.5; scholia Euripides Phoenissae 1760"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage-and-half-brotherhood",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.5.5; Hellanicus FGrHist 4 F 157; Thucydides 1.9.2"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Χρύσιππος",
+    "translation": "golden horse / golden-of-horses",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "name from chrysos 'gold' + hippos 'horse'"
+     }
+    ]
+   }
+  ],
+  "notes": "Scion-tier favored bastard of Pelops (greek_pelops), murdered by his half-brothers Atreus and Thyestes. Authored as the named-but-absent half-brother supplied by greek_atreus's prose ('Exiled with Thyestes for the killing of their half-brother Chrysippus'). Wired to existing greek_pelops (father, RECIPROCAL father-of needed) and half-sibling to greek_atreus and greek_thyestes (RECIPROCAL-NEEDED on both). His mother the nymph Axioche and his abductor Laius lack corpus entries and are named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Χρύσιππος (Chrysippos), 'golden horse', from χρυσός (chrysos) 'gold' + ἵππος (hippos) 'horse' — a horse-name fitting the Pelopid charioteer line and the boy whom Laius taught to drive.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. χρυσός, ἵππος"
+    }
+   ]
+  }
  },
  {
   "id": "greek_chrysothemis",
@@ -95741,6 +109045,164 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Mortal queen of Mycenae; daughter of Tyndareus and Leda, the mortal-fathered half-sister of Helen. Wife and killer of Agamemnon: maddened by his sacrifice of their daughter Iphigenia at Aulis, she takes Aegisthus as lover and, on the king's return, snares him in a robe-net in the bath and cuts him down with the axe, killing Cassandra beside him — the deed at the centre of Aeschylus's Oresteia. Mother of Iphigenia, Electra, Chrysothemis, and Orestes; slain at last by Orestes, the matricide that looses the Erinyes. The mortal line through which her children descend."
+ },
+ {
+  "id": "greek_creon_thebes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Creon",
+   "alt": [
+    "Kreon",
+    "Creon of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Κρέων"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "regency-and-kingship-of-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.6, 2.4.11; Soph. Antigone passim; Eur. Heracles 26-59"
+     }
+    ],
+    "notes": "Theban regent and king, son of Menoeceus and brother of Jocasta; the recurring Theban-throne figure across the Oedipus and Heracles cycles. Purified Amphitryon of the killing of Electryon, and as reward for Heracles delivering Thebes from the tribute to Erginus and the Minyans gave his daughter Megara to Heracles in marriage."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-of-Megara-to-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.11; Eur. Heracles 1-12"
+     }
+    ],
+    "notes": "Gave Megara to Heracles; the marriage produced sons (Therimachus, Creontiades, Deicoon) whom Heracles, struck mad by Hera, slew along with Megara — the catastrophe that sends Heracles to Delphi and inaugurates the Twelve Labors."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-at-the-hands-of-Lycus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Heracles 26-59"
+     }
+    ],
+    "notes": "In the Euripidean tradition, killed in old age when Lycus, descendant of an earlier Theban king, seized the throne in Heracles's absence — the usurpation that threatens Megara and the children at the play's opening."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. Antigone 162-210; Apollod. 2.4.11"
+     }
+    ],
+    "notes": "The archetypal Theban ruler-by-succession; sovereign authority repeatedly devolving on him in the city's dynastic crises."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_apollod_megara",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.11; Eur. Heracles 9-12"
+     }
+    ],
+    "notes": "Megara, given by Creon to Heracles as his first wife."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "killed-by-Lycus-usurper",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Heracles 26-59"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Thebes",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.6, 2.4.11; Sophocles Antigone; Euripides Heracles 1-59"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Megara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.11; Euripides Heracles 9-12"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Κρέων ἄναξ Θηβῶν",
+    "translation": "Creon lord of Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. Antigone 155-162"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal king of Thebes; father of Megara (greek_apollod_megara, who already carries former-spouse->greek_apollod_heracles). Authored as the named-but-absent father supplied by Megara's prose ('daughter of King Creon of Thebes'). His father Menoeceus, sister Jocasta, and the usurper Lycus are named in the tradition but lack corpus entries, so they are described rather than wired. Distinct from the conflated regent-of-Oedipus role, which the tradition treats as the same Creon.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Κρέων (Kreon), literally 'ruler, prince', from the same root as κρείων 'lord, sovereign' (Homeric κρείων Ἀγαμέμνων); essentially a title functioning as a name for the perpetual Theban regent.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. κρέων, κρείων"
+    }
+   ]
+  }
  },
  {
   "id": "greek_creusa_troy",
@@ -96332,6 +109794,11 @@ const NEW_FIGURES = [
       "reference": "Eur. El. 1340-1341; Eur. Or. 1658-1659; Apollod. Epit. 6.24"
      }
     ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_pylades",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ],
   "sources": [
@@ -96487,6 +109954,428 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Numen — a Pleiad, daughter of the Titan Atlas and the Oceanid Pleione, dwelling on Samothrace. By Zeus she is the ancestress of the entire Trojan royal house: mother of Dardanus (founder of the Dardanians) and Iasion. The fully-divine, non-Olympian ancestress whose presence makes the Dardanid line compute divinity by blood — the canonical case the old parentage rule excluded. In Ovid she is the faded seventh star of the Pleiades, who covered her face rather than watch Troy burn."
+ },
+ {
+  "id": "greek_epione",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Epione",
+   "alt": [
+    "Epione the Soother",
+    "Epio"
+   ],
+   "transliterations": {
+    "greek": "Ἠπιόνη"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Asclepius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione; schol. Hom. Il. 11.518; Paus. 2.29.1"
+     }
+    ],
+    "notes": "Wife of Asclepius, the minor healing-goddess of the soothing of pain; daughter of Merops king of Kos in the Koan cult-tradition. By Asclepius mother of the physician-sons Machaon and Podalirius and of the healer-daughters Hygieia, Iaso, Aceso, Aegle, and Panacea — the household that together forms a complete medical system (Asclepius cures, Epione soothes, Hygieia prevents, Panacea treats all)."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "classical-cult",
+    "eraOrdering": 1,
+    "startEvent": "cult-of-the-soothing-of-pain",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.1; IG IV2 1.255 (Epidauros); epigraphy at Kos and Pergamon"
+     }
+    ],
+    "notes": "Received cult alongside Asclepius at Epidauros, Kos, Athens, and Pergamon; her statue stood with his in the Asklepieia. The divine personification of the gentling of pain (Greek epios, 'soothing, gentle')."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "soothing-of-pain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.1; Suda s.v. Epione"
+     }
+    ],
+    "notes": "Goddess of the soothing and gentling of pain, the consort-complement to Asclepius's curing."
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "IG IV2 1.255 (Epidaurian dedication to Epione)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pain-soothing",
+    "name": "Soothing of pain",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "healing",
+     "divine-power"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione (ηπιος, 'soothing'); Paus. 2.29.1"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.1; schol. Hom. Il. 11.518"
+     }
+    ],
+    "notes": "Wife of Asclepius."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_machaon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "schol. Hom. Il. 11.518; Apollod. 3.10.3"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_podalirius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "schol. Hom. Il. 11.518; Apollod. 3.10.3"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_hygieia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione; schol. Aristid. p. 35"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_panacea",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_iaso",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aceso",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aegle_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.29.1; Suda s.v. Epione; scholia Homer Iliad 11.518; IG IV2 1.255 (Epidauros)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "motherhood-of-the-Asclepiad-children",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "scholia Homer Iliad 11.518; Suda s.v. Epione; Apollodorus 3.10.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἠπιόνη",
+    "translation": "the Soothing One",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione (from ηπιος, 'gentle, soothing')"
+     }
+    ]
+   }
+  ],
+  "notes": "Numen — minor healing-goddess of the soothing of pain, wife of Asclepius (greek_asclepius, whose father-of relations to Machaon, Podalirius, Hygieia, Iaso, Aceso, Aegle, Panacea already stand) and mother of his physician-children. Authored as the named-but-absent mother supplied by the prose of greek_apollod_machaon ('Son of Asclepius ... by Epione') and greek_apollod_podalirius ('Son of Asclepius by Epione'). Telesphorus and Aratus are listed as half-siblings on the corpus children (by other mothers/the serpent-conception), so Epione is wired only to the seven shared Epione-children; her father Merops of Kos is named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἠπιόνη (Ēpionē), 'the soothing/gentle one', from ἤπιος (ēpios) 'gentle, kind, soothing' — the standard adjective for pain that has been gentled, fitting her function beside Asclepius the curer.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ἤπιος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_erechtheus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Erechtheus",
+   "alt": [
+    "Erechtheus II",
+    "Erechtheus of Athens"
+   ],
+   "transliterations": {
+    "greek": "Ἐρεχθεύς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.546-551; Apollod. 3.15.1; Hdt. 8.55"
+     }
+    ],
+    "notes": "Autochthonous king of Athens of the Erechtheid line, reared (in the Homeric tradition) by Athena in her own temple on the Acropolis; husband of Praxithea. Father of Cecrops II, Pandorus, Metion and of daughters including Oreithyia, Procris, Creusa, and the sacrificed Erechtheid maidens."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "war-with-Eleusis-and-the-sacrifice-of-a-daughter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 360-370 Kannicht; Apollod. 3.15.4"
+     }
+    ],
+    "notes": "Warred against Eleusis and its Thracian ally Eumolpus son of Poseidon; an oracle required the sacrifice of one of his daughters for victory, and her sisters slew themselves in solidarity (the Hyacinthides). Erechtheus killed Eumolpus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-Poseidon-trident-or-thunderbolt",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 370 Kannicht; Apollod. 3.15.4-5; Paus. 1.38.3"
+     }
+    ],
+    "notes": "For the killing of his son Eumolpus, Poseidon destroyed Erechtheus, by his trident or by Zeus's thunderbolt at Poseidon's request; thereafter worshipped on the Acropolis fused with Poseidon as Poseidon-Erechtheus in the Erechtheion."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.546-551; Hdt. 8.55"
+     }
+    ],
+    "notes": "Founder-king figure of the Athenian autochthony-myth; eponym of the Erechtheion and of the Erechtheid royal house."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_praxithea",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1; Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_creusa_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 10-11, 277-282; Apollod. 3.15.1"
+     }
+    ],
+    "notes": "Creusa, the surviving youngest daughter, mother of Ion by Apollo."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_oreithyia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1-2; Hdt. 7.189"
+     }
+    ],
+    "notes": "Oreithyia, carried off by Boreas — mother of the Boread children."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_eumolpus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 360-370 Kannicht"
+     }
+    ],
+    "notes": "The Thracian-Eleusinian son of Poseidon whom Erechtheus killed in the war for Athens; Poseidon then destroyed Erechtheus in vengeance."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "destroyed-by-Poseidon-for-killing-Eumolpus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4-5; Eur. Erechtheus fr. 370 Kannicht"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Athens",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "hero-cult",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad 2.546-551; Herodotus 8.55, 7.189; Apollodorus 3.15.1-5; Euripides Erechtheus fr. 360-370 Kannicht; Pausanias 1.38.3"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Creusa-and-Oreithyia",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.1; Euripides Ion 10-11, 277-282; Herodotus 7.189"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἐρεχθεὺς ἄναξ Ἀθηνῶν",
+    "translation": "Erechtheus lord of Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.546-551"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal autochthonous king of Athens; father of Creusa of Athens (greek_creusa_athens, whose prose names 'Daughter of Erechtheus ... and Praxithea') and of Oreithyia (greek_oreithyia, the existing mother of the Boread children — Erechtheus is thus the maternal grandfather of Calais, Zetes, Cleopatra Boread, and Chione Boread). His sons Cecrops II, Pandorus, Metion lack corpus entries and are named rather than wired. Distinct from Erichthonius (greek_erichthonius exists as ancestor of Tros), whom some traditions conflate with him.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἐρεχθεύς (Erechtheus), connected to ἐρέχθω (erechthō) 'to rend, shake, break' — fitting the earth-shaker associations and the Poseidon-fusion; the name is closely doubled with Erichthonius in the Athenian autochthony complex.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἐρέχθω, Ἐρεχθεύς"
+    }
+   ]
+  }
  },
  {
   "id": "greek_erichthonius",
@@ -96732,6 +110621,544 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Furies born from Uranus' blood: Alecto, Tisiphone, Megaera, avengers of blood-guilt."
+ },
+ {
+  "id": "greek_eumelus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eumelus",
+   "alt": [
+    "Eumelos",
+    "Eumelus of Pherae"
+   ],
+   "transliterations": {
+    "greek": "Εὔμηλος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_admetus",
+   "greek_alcestis"
+  ],
+  "parentRoles": {
+   "greek_admetus": "paternal",
+   "greek_alcestis": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1260,
+   "mythicEnd": -1200,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Admetus-and-Alcestis-at-Pherae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.713-715"
+     }
+    ],
+    "notes": "Son of Admetus and Alcestis; scion-tier through the maternal Pelias-line descent from Poseidon (diluted to one-eighth)."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "leadership-of-the-Pherae-contingent-and-the-mares-of-Admetus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715, 23.288-289, 23.375-381, 23.532-538"
+     }
+    ],
+    "notes": "Led eleven ships from Pherae, Boebe, Glaphyrae and Iolcus to Troy. His mares, reared by Apollo, were the finest in the Achaean host; he led the chariot-race in the funeral games of Patroclus until Athena broke the yoke of Diomedes rival and then restored Diomedes to the front, leaving Eumelus second by misfortune — Achilles awarded him a prize of honour regardless."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "horsemanship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.763-767 — the mares of Eumelus the swiftest of all"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "mares-of-eumelus",
+    "name": "The mares of Eumelus",
+    "kind": "animal",
+    "role": "the swiftest horses in the Achaean army, reared by Apollo in Pereia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.763-767"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_admetus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.713-714"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_alcestis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.714-715"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715, 2.763-767, 23.288-289, 23.375-565; Apollodorus 1.9.10; Hyg. Fab. 81 (suitor of Helen)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.713-715 (son of Admetus and Alcestis)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion son of Admetus and Alcestis; leader of the Pherae contingent of eleven ships at Troy and owner of the swiftest mares in the Achaean army, reared by Apollo. A suitor of Helen in the Hesiodic-Catalogue tradition. Scion-tier (one-eighth divine) through the maternal Pelias-Poseidon line. Parents wired to greek_admetus and greek_alcestis."
+ },
+ {
+  "id": "greek_eumolpus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eumolpus",
+   "alt": [
+    "Eumolpos",
+    "Eumolpus of Eleusis"
+   ],
+   "transliterations": {
+    "greek": "Εὔμολπος"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_hesiod_poseidon",
+   "greek_chione_boread"
+  ],
+  "parentRoles": {
+   "greek_hesiod_poseidon": "paternal",
+   "greek_chione_boread": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "exposure-and-rescue-by-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ],
+    "notes": "Son of Poseidon by Chione the Boread; cast into the sea by his mother to conceal the birth, rescued by Poseidon and reared by Benthesicyme in Ethiopia. Half-divine through the Poseidon line."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "foundation-of-the-Eleusinian-Mysteries",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Hymn Dem. 154, 475-476; Apollod. 3.15.4; Paus. 1.38.3"
+     }
+    ],
+    "notes": "Founder-priest of the Eleusinian Mysteries and eponym of the Eumolpidae, the hereditary hierophant-clan; a singer (eu-molpos, 'sweet-singing') and (in some traditions) a pupil of Orpheus in the mystic rites."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "war-against-Athens-and-death-by-Erechtheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 360-370 Kannicht; Thuc. 2.15.1"
+     }
+    ],
+    "notes": "Led the Eleusinians (and a Thracian force) against Athens to claim the city for Eleusis; killed by Erechtheus, whose victory required the sacrifice of a daughter. Poseidon avenged his son by destroying Erechtheus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "mystery-cult",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Hymn Dem. 475-476; Paus. 1.38.3"
+     }
+    ],
+    "notes": "Founder of the Eleusinian Mysteries and ancestor of the Eumolpid hierophants."
+   },
+   {
+    "sphereId": "song",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "name Eumolpos, 'sweet-singing'; Suda s.v. Eumolpos"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hierophantic-song",
+    "name": "Sacred song and mystic initiation",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "cult",
+     "music",
+     "priesthood"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Hymn Dem. 475-476; the Eumolpidae descend from him as hereditary hierophants"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_hesiod_poseidon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_chione_boread",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_erechtheus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 360-370 Kannicht"
+     }
+    ],
+    "notes": "The Athenian king who killed him in the Eleusis-Athens war."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "killed-by-Erechtheus-in-the-Eleusis-Athens-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 370 Kannicht"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Athens / Eleusis frontier",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "hero-cult",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn to Demeter 154, 475-476; Apollodorus 3.15.4; Pausanias 1.38.2-3; Euripides Erechtheus fr. 360-370 Kannicht; Thucydides 2.15.1"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.4 (son of Poseidon and Chione the Boread)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Εὔμολπος",
+    "translation": "the sweet-singer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "name from eu- 'well' + molpe 'song'; Hom. Hymn Dem. 475-476"
+     }
+    ]
+   }
+  ],
+  "notes": "Demigod founder-priest of the Eleusinian Mysteries and eponym of the Eumolpidae; son of Poseidon (greek_hesiod_poseidon) and Chione the Boread (greek_chione_boread, authored in this batch). Named in Chione Boread's prose as her son by Poseidon and named in greek_erechtheus's prose as the Thracian-Eleusinian foe Erechtheus killed. The enemy-relation to greek_erechtheus is reciprocated within this transcript (both are authored here). His foster-mother Benthesicyme and the later Eumolpid hierophants lack entries and are named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Εὔμολπος (Eumolpos), 'sweet-singing, of good song', from εὖ 'well' + μολπή (molpē) 'song, dance-song' — fitting the founder of a sung mystery-liturgy.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. μολπή, εὔμολπος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_eurytus_oechalia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurytus",
+   "alt": [
+    "Eurytos",
+    "Eurytus of Oechalia",
+    "Eurytus the Archer"
+   ],
+   "transliterations": {
+    "greek": "Εὔρυτος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Oechalia-and-mastery-of-the-bow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228; Apollod. 2.4.9, 2.6.1"
+     }
+    ],
+    "notes": "King of Oechalia, a master-archer reputed to have taught Heracles the bow; his bow descended to Iphitus and then to Odysseus, the bow of the Odyssey 21 contest. Grandson of Apollo through his father Melaneus per the Thessalian tradition. Father of Iole and of sons (Iphitus, Clytius, Toxeus, Deioneus, Molion) by Antiope daughter of Pylon."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "archery-contest-for-Iole",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Soph. Trach. 260-285"
+     }
+    ],
+    "notes": "Offered his daughter Iole as bride to whoever could outshoot him and his sons; Heracles won but Eurytus reneged, fearing Heracles would kill any children by her in madness as he had killed those by Megara. The refusal of the promised bride is the proximate cause of the sack of Oechalia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "sack-of-Oechalia-and-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Soph. Trach. 351-365, 476-478"
+     }
+    ],
+    "notes": "Heracles returned, sacked Oechalia, killed Eurytus and his sons, and carried off Iole — the capture that drives the Trachiniae jealousy of Deianira and so the Nessus-shirt death of Heracles itself."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228; Apollod. 2.4.9"
+     }
+    ],
+    "notes": "Reputed teacher of Heracles in the bow; one of the canonical master-archers of the heroic age, set even against the Apollo-line."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "master-archery",
+    "name": "Peerless archery",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228 (Eurytus rivalled the gods in archery); Apollod. 2.4.9"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "bow-of-eurytus",
+    "name": "The bow of Eurytus",
+    "kind": "weapon",
+    "role": "heirloom-bow passed to Iphitus, given to Odysseus, and strung in the Odyssey 21 suitor-contest",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 21.13-41"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Soph. Trach. 380-382"
+     }
+    ],
+    "notes": "Iole, the bride promised in the archery-contest and later carried off by Heracles."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "killed-by-Heracles-at-sack-of-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Soph. Trach. 351-365"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Oechalia",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Odyssey 8.224-228, 21.13-41; Apollodorus 2.4.9, 2.6.1, 2.7.7; Sophocles Trachiniae 260-285, 351-365"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Iole",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.6.1; Sophocles Trachiniae 380-382"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Εὔρυτος ὁ τοξότης",
+    "translation": "Eurytus the archer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal king of Oechalia and famed archer-teacher; father of Iole (greek_apollod_iole, who already carries spouse->greek_apollod_hyllus). Authored as the named-but-absent father supplied by Iole's own prose ('Daughter of Eurytus'). His sons (Iphitus, Clytius, Toxeus, Deioneus, Molion) and wife Antiope daughter of Pylon are named in the tradition but have no corpus entries, so they are described here rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Εὔρυτος, conventionally read as 'wide-flowing' or 'free-flowing' (εὐ- 'well' + the root of ῥέω 'flow'), or as 'far-drawn' fitting an archer who draws the bow wide; the name recurs for several heroes (a Giant, a son of Hermes, a Molionid).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. εὔρυτος"
+    }
+   ]
+  }
  },
  {
   "id": "greek_ganymede",
@@ -101511,6 +115938,124 @@ const NEW_FIGURES = [
   "notes": "Primordial Sky, first ruler of the cosmos, castrated by Cronus."
  },
  {
+  "id": "greek_hilaeira",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hilaeira",
+   "alt": [
+    "Hilaira",
+    "Hilaeira the Leucippid"
+   ],
+   "transliterations": {
+    "greek": "Ἱλάειρα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1300,
+   "mythicEnd": -1245,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-Leucippid-priesthood-and-the-seizure-by-the-Dioscuri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2; Paus. 3.16.1; Theoc. 22.137-170"
+     }
+    ],
+    "notes": "Daughter of Leucippus, a priestess with her sister Phoebe; the two, the Leucippides, were betrothed to the Apharetidae but were carried off by the Dioscuri — the rape of the daughters of Leucippus that touched off the fatal quarrel of the cousins."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "union-with-Castor-and-the-birth-of-Anogon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2"
+     }
+    ],
+    "notes": "Bore to Castor a son, Anogon — the only attested offspring of Castor, set beside the son Mnesileos whom her sister Phoebe bore to Polydeuces."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cult-priesthood",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 3.16.1 — the Leucippides as priestesses honoured at Sparta"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_castor",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2; Paus. 3.16.1"
+     }
+    ],
+    "notes": "Consort of Castor, by him mother of Anogon."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_anogon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2"
+     }
+    ],
+    "notes": "Mother of Anogon; greek_anogon already records mother->Hilaeira the Leucippid as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.11.2; Pausanias 1.18.1, 3.16.1; Theocritus 22.137-170; Ovid Fasti 5.699-714 (the rape of the Leucippides)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2 (daughter of Leucippus); Paus. 3.16.1"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Leucippid, daughter of Leucippus and priestess with her sister Phoebe; carried off by Castor in the rape of the daughters of Leucippus and by him mother of Anogon, the only attested child of Castor. Her father Leucippus is noted in prose (not registered). Consort wired to greek_castor; son to greek_anogon, which already externalRef her as mother."
+ },
+ {
   "id": "greek_hippodamia",
   "schemaVersion": 2,
   "name": {
@@ -101650,6 +116195,131 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Mortal princess of Pisa, daughter of King Oenomaus. Won by Pelops in the lethal chariot-race she helped him win by suborning the charioteer Myrtilus. Queen of the Pelopid house and mother of Atreus, Thyestes, and Anaxibia. Implicated with her sons in the murder of Pelops's favoured bastard Chrysippus, for which she was driven into exile; later honoured at Olympia in the Hippodameion."
+ },
+ {
+  "id": "greek_hypseus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hypseus",
+   "alt": [
+    "Hypseus king of the Lapiths"
+   ],
+   "transliterations": {
+    "greek": "Ὑψεύς"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-the-Lapiths",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13-18; Diod. 4.69.1"
+     }
+    ],
+    "notes": "King of the Lapiths of Thessaly, son of the river-god Peneus by the naiad Creusa (a daughter of Gaia/Oceanus in Pindar); the eldest of the Lapith line. Half-divine through the Peneus river-line. Father of Cyrene, the lion-wrestling huntress."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "fatherhood-of-Cyrene-and-the-Apollo-abduction",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.5-65"
+     }
+    ],
+    "notes": "His daughter Cyrene, raised tending his herds on Mt. Pelion, wrestled a lion bare-handed; Apollo carried her to Libya and founded the city named for her. Through Cyrene, Hypseus is grandfather of the pastoral demigod Aristaeus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13-18"
+     }
+    ],
+    "notes": "Sovereign of the Lapiths, the canonical Thessalian people of the Peneus valley."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_cyrene_lapith",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13-18; Apollon. Rhod. 2.500"
+     }
+    ],
+    "notes": "Cyrene, the lion-wrestling huntress carried off by Apollo."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pindar Pythian 9.5-65; Apollonius Rhodius 2.500; Diodorus 4.69.1; Hyginus Fabulae 161"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Cyrene",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pindar Pythian 9.13-18"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ὑψεὺς εὐρυβίας",
+    "translation": "Hypseus of wide might",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13"
+     }
+    ]
+   }
+  ],
+  "notes": "Demigod Lapith king, son of the river Peneus; father of Cyrene (greek_cyrene_lapith, whose prose names 'Daughter of Hypseus, king of the Lapiths ... Her grandfather is the river-god Peneus'). Authored as the named-but-absent father. His own father Peneus and (in the Diodoran variant) Cyrene's mother Chlidanope lack corpus entries and are named rather than wired; the Pindaric mother of Hypseus is the naiad Creusa (distinct from greek_creusa_athens).",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ὑψεύς (Hypseus), 'the high one', from ὕψι 'on high, aloft' / ὕψος 'height' — a height-name fitting a mountain-people's king.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ὕψι, ὕψος"
+    }
+   ]
+  }
  },
  {
   "id": "greek_ilus",
@@ -102176,6 +116846,260 @@ const NEW_FIGURES = [
   "notes": "Demigod by descent — son of Ilus, king of Troy, the proverbial oath-breaker. Apollo and Poseidon built the walls of Troy for him in a year of servitude; he cheated them of their wage and was punished with plague and a sea-monster, then cheated Heracles of the immortal horses promised for saving Hesione. Heracles sacked Troy and killed him with all his sons but the ransomed Podarces, who became Priam. Father of Priam, Tithonus, Hesione, and Hicetaon."
  },
  {
+  "id": "greek_lavinia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lavinia",
+   "alt": [
+    "Lavinia of Latium"
+   ],
+   "transliterations": {
+    "latin": "Lavinia"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "post-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "betrothal-and-the-Latin-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 7.52-106, 7.359-372; Livy 1.1"
+     }
+    ],
+    "notes": "Only child of King Latinus of Latium and Amata; promised to Turnus, but an omen directed Latinus to wed her to the foreign Aeneas, igniting the war of the Aeneid's second half. Eponym of Lavinium, the city Aeneas founded and named for her."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Aeneas-and-motherhood-of-Silvius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Livy 1.3.1-3; Verg. Aen. 12.937-952 (the war's settlement); Dion. Hal. 1.70"
+     }
+    ],
+    "notes": "Married Aeneas; after his death, pregnant, she fled the succession-claims of her stepson Ascanius into the Latin woodland (silva), where she bore Silvius — the forest-birth aetiology of the Silvian cognomen of every later Alban king. Ruled the Latins as regent during Ascanius's minority in Livy's account."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_aeneas",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 12.937-952; Livy 1.1.9-11"
+     }
+    ],
+    "notes": "Second wife of Aeneas (after Creusa of Troy)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_silvius",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Livy 1.3.6; Dion. Hal. 1.70"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vergil Aeneid 6.764, 7.52-106, 12.937-952; Livy 1.1-3; Dionysius of Halicarnassus 1.70"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Aeneas-and-motherhood-of-Silvius",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Livy 1.3.6; Dionysius of Halicarnassus 1.70"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Lavinia coniunx",
+    "translation": "Lavinia the bride/wife",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 6.764"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal Latin princess, daughter of Latinus; second wife of Aeneas (greek_aeneas) and mother of Silvius (greek_apollod_silvius, whose prose names 'Posthumous son of Aeneas by Lavinia ... daughter of King Latinus'). Authored as the named-but-absent spouse-and-mother. Her father Latinus and mother Amata lack Greek-tradition corpus entries (roman_latinus_silvius is a distinct later Alban king), so they are named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Italic, Latin)",
+   "etymology": "Latin Lavinia, eponym of Lavinium; connected by the ancients to the Latin people (Latini) and, by folk-etymology, the city's name. The name is the feminine civic-eponym of the Latin foundation.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maltby, A Lexicon of Ancient Latin Etymologies, s.v. Lavinium"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_merope_messenia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Merope",
+   "alt": [
+    "Merope of Messenia",
+    "Merope daughter of Cypselus"
+   ],
+   "transliterations": {
+    "greek": "Μερόπη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "post-heroic-age",
+   "mythicStart": -1150,
+   "mythicEnd": -1090,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Cresphontes-the-Heraclid-king-of-Messenia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6-8"
+     }
+    ],
+    "notes": "Daughter of Cypselus, king of Arcadia; married Cresphontes, the Heraclid who drew Messenia in the partition of the Peloponnese."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-coup-of-Polyphontes-and-the-saving-of-Aepytus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.7; Hyg. Fab. 137"
+     }
+    ],
+    "notes": "When Polyphontes killed Cresphontes and her elder sons and forced her to wed him, she secreted her youngest son Aepytus with her father in Arcadia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-return-of-Aepytus-and-the-fall-of-Polyphontes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.8; Hyg. Fab. 137; Arist. Poet. 1454a"
+     }
+    ],
+    "notes": "On the manhood of Aepytus the recognition and vengeance unfolded — the climax of the lost Cresphontes of Euripides, whose near-fatal mother-and-son scene Aristotle praises in the Poetics; together they killed Polyphontes and restored the Messenian throne."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_cresphontes",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6"
+     }
+    ],
+    "notes": "Wife of Cresphontes; greek_apollod_cresphontes already records spouse->Merope as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aepytus",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.7-8; Hyg. Fab. 137"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.8.5; Pausanias 4.3.6-8; Hyginus Fabulae 137, 184; Aristotle Poetics 1454a (the Cresphontes recognition); Euripides Cresphontes (lost)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6 (daughter of Cypselus king of Arcadia)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal queen of Messenia, daughter of Cypselus of Arcadia; wife of the Heraclid Cresphontes and mother of Aepytus. After the usurpation by Polyphontes she preserved her youngest son in Arcadia, and the recognition and vengeance she shares with the grown Aepytus is the matter of the lost Euripidean Cresphontes that Aristotle singles out. Disambiguated by id from the Pleiad Merope. Spouse wired to greek_apollod_cresphontes (which already externalRef her); son to the newly authored greek_aepytus."
+ },
+ {
   "id": "greek_nereus",
   "schemaVersion": 2,
   "name": {
@@ -102301,6 +117225,343 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Numen — the primordial Old Man of the Sea, eldest son of Pontus and Gaia, father of the fifty Nereids by the Oceanid Doris. A gentle, truthful shape-shifting sea-prophet; Heracles wrestled him through his metamorphoses to learn the road to the Hesperides. Father of Thetis."
+ },
+ {
+  "id": "greek_nestor",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nestor",
+   "alt": [
+    "Nestor of Pylos",
+    "Nestor of Gerenia",
+    "Gerenian Nestor"
+   ],
+   "transliterations": {
+    "greek": "Νέστωρ"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_neleus",
+   "greek_apollod_chloris"
+  ],
+  "parentRoles": {
+   "greek_neleus": "paternal",
+   "greek_apollod_chloris": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1300,
+   "mythicEnd": -1190,
+   "mythicPrecision": "generation-bracket"
+  },
+  "epithets": [
+   {
+    "original": "Γερήνιος ἱππότα Νέστωρ",
+    "translation": "Gerenian horseman Nestor",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.336, passim"
+     }
+    ]
+   },
+   {
+    "original": "ἡδυεπής",
+    "translation": "sweet-of-speech",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.247-249"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Neleus-and-Chloris-and-survival-of-the-sack-of-Pylos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Il. 11.690-693"
+     }
+    ],
+    "notes": "Youngest son of Neleus and Chloris (daughter of Amphion), at Pylos. When Heracles sacked Pylos and killed Neleus and his other sons, Nestor alone survived — being reared away among the Gerenians, whence the standing epithet Gerenian."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-wars-of-his-youth-against-the-Arcadians-and-Eleans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.670-762, 7.132-156 (the duel with Ereuthalion)"
+     }
+    ],
+    "notes": "His own reminiscences in the Iliad recount the cattle-raid against Elis, the Pylian victory over the Epeians, and his youthful slaying of the champion Ereuthalion — the deeds of an earlier generation that frame his counsel to younger heroes."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "the-elder-counsellor-of-the-Achaeans-at-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.247-284, 2.336-368, 11.655-803; Hom. Od. 3.1-485"
+     }
+    ],
+    "notes": "Oldest of the Achaean kings at Troy, having ruled over three generations of men; revered for the persuasive wisdom of his counsel. Led ninety ships from Pylos. After the war returned safely home — the model of the prudent homecoming that Telemachus seeks out in Odyssey 3."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.247-274; Hom. Od. 3"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.591-602 (the Pylian catalogue)"
+     }
+    ]
+   },
+   {
+    "sphereId": "horsemanship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 23.301-350 — the chariot-counsel to Antilochus"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "long-life-and-counsel",
+    "name": "Gift of long life and seasoned counsel",
+    "inheritability": "none",
+    "scopeTags": [
+     "wisdom"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.250-252 — having seen two generations pass and ruling among the third"
+     }
+    ],
+    "notes": "Granted by Apollo a span of years equal to those his slain brothers would have lived, per the post-Homeric scholia; in Homer simply the longest-lived of the heroes."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "cup-of-nestor",
+    "name": "The cup of Nestor",
+    "kind": "vessel",
+    "role": "the great four-handled golden goblet, studded with doves, which only Nestor could lift with ease",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.632-637"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_neleus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Il. 11.683-693"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_apollod_chloris",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 11.281-286"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad (Pylian books, esp. 1, 2, 7, 11, 23); Homer Odyssey 3; Apollodorus 1.9.9; Hom. Od. 11.281-286"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 11.281-286 (son of Neleus and Chloris daughter of Amphion)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod (about three-eighths divine — son of the demigod Neleus, son of Poseidon, by the quartigod Chloris, daughter of Amphion son of Zeus); the venerable Gerenian horseman of Pylos, oldest of the Achaean kings at Troy and the canonical voice of seasoned counsel. Sole survivor of the sack of Pylos by Heracles. Father of Antilochus and Thrasymedes (Trojan-War contingent) and Peisistratus. Parents wired to greek_neleus and greek_apollod_chloris — both of whom already externalRef his birth, so reciprocals resolve on wiring."
+ },
+ {
+  "id": "greek_nicippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nicippe",
+   "alt": [
+    "Nikippe",
+    "Nicippe daughter of Pelops",
+    "Archippe",
+    "Astydameia of Mycenae"
+   ],
+   "transliterations": {
+    "greek": "Νικίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_pelops",
+   "greek_hippodamia"
+  ],
+  "parentRoles": {
+   "greek_pelops": "paternal",
+   "greek_hippodamia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1330,
+   "mythicEnd": -1270,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Pelops-and-Hippodamia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; schol. Hom. Il. 19.116"
+     }
+    ],
+    "notes": "Daughter of Pelops and Hippodamia, sister of Atreus and Thyestes; the Pelopid bride who married into the Perseid house of Mycenae."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Sthenelus-and-the-hastened-birth-of-Eurystheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; Hom. Il. 19.95-133"
+     }
+    ],
+    "notes": "Wife of Sthenelus, king of Mycenae; mother of Eurystheus, whose birth Hera hastened to the seventh month so that he, and not Heracles, should be the Perseid born to rule, per the oath of Zeus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_sthenelus_perseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Wife of Sthenelus; greek_sthenelus_perseus already records spouse->Nicippe as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_eurystheus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; Hom. Il. 19.116-119"
+     }
+    ],
+    "notes": "Mother of Eurystheus; greek_apollod_eurystheus already records mother->Nicippe as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.5; Homer Iliad 19.95-133 (the hastened birth of Eurystheus); scholia Hom. Il. 19.116; Hyg. Fab. 244"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5 (daughter of Pelops, wife of Sthenelus)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Pelopid princess, daughter of Pelops and Hippodamia; wife of Sthenelus of Mycenae and mother of Eurystheus, the taskmaster of Heracles, whose premature birth Hera contrived. Through her the Pelopid and Perseid houses are joined a generation before the Atreidae take Mycenae. Parents wired to greek_pelops and greek_hippodamia; spouse to greek_sthenelus_perseus and son to greek_apollod_eurystheus, both of which already externalRef her."
  },
  {
   "id": "greek_orestes",
@@ -102530,6 +117791,11 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reciprocates the existing greek_hesiod_erinyes antagonist edge naming Orestes (matricide pursued to the Areopagus)."
+   },
+   {
+    "kind": "companion",
+    "personId": "greek_pylades",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ],
   "sources": [
@@ -103115,6 +118381,339 @@ const NEW_FIGURES = [
   "notes": "Quartigod (¼ divine, via the demigod Tantalus). Lydian/Phrygian prince butchered and served to the gods by his father, then restored with an ivory shoulder; beloved of Poseidon, who gave him a golden winged chariot. With it — and the bribed charioteer Myrtilus — he won Hippodamia in Oenomaus's deadly bride-race, then drowned Myrtilus, whose curse seeds the doom of the Atreidae. King of Pisa and eponym of the Peloponnese; founding hero of Olympia, his bones kept in the Pelopion. Father of Atreus and Thyestes."
  },
  {
+  "id": "greek_phaedra",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Phaedra",
+   "alt": [
+    "Phaidra",
+    "Phaedra of Crete"
+   ],
+   "transliterations": {
+    "greek": "Φαίδρα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1280,
+   "mythicEnd": -1230,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Minos-and-Pasiphae-on-Crete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, Epit. 1.17-19"
+     }
+    ],
+    "notes": "Daughter of Minos and Pasiphae of Crete; younger sister of Ariadne. Given in marriage to Theseus by her brother Deucalion."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Theseus-and-the-birth-of-Acamas-and-Demophon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18; Plut. Thes. 28"
+     }
+    ],
+    "notes": "Wife of Theseus at Athens; bore him Acamas and Demophon. At the wedding the Amazon who had earlier been consort to Theseus appeared in arms with her followers and threatened the guests."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-passion-for-Hippolytus-the-false-accusation-and-the-suicide",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hipp. 373-731, 856-886; Apollod. Epit. 1.18-19"
+     }
+    ],
+    "notes": "Stricken by Aphrodite with passion for her stepson Hippolytus; when he rejected her she hanged herself, leaving a tablet that falsely accused him. Theseus invoked one of the curses of Poseidon and his son was destroyed by the bull from the sea — the action of the Euripidean Hippolytus (428 BCE)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_theseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18; Plut. Thes. 28"
+     }
+    ],
+    "notes": "Second wife of Theseus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_acamas",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_demophon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_apollod_hippolytus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hipp. 373-731; Apollod. Epit. 1.18-19"
+     }
+    ],
+    "notes": "Her false accusation, after the spurned passion, destroyed her stepson Hippolytus."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Euripides Hippolytus (428 BCE); Apollodorus 3.1.2, Epitome 1.17-19; Ovid Heroides 4; Seneca Phaedra; Hyg. Fab. 47"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2 (daughter of Minos and Pasiphae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Cretan princess, daughter of Minos and Pasiphae and sister of Ariadne; second wife of Theseus and mother of Acamas and Demophon. The tragic protagonist of the Euripidean Hippolytus: her Aphrodite-sent passion for her stepson, his rejection, her suicide and accusing tablet, and the destruction of Hippolytus by the bull from the sea. Spouse and sons wired to corpus ids; her parents Minos (greek_minos) and Pasiphae are linked in prose (Pasiphae not yet registered)."
+ },
+ {
+  "id": "greek_phineus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Phineus",
+   "alt": [
+    "Phineus of Salmydessus",
+    "Phineus of Thrace"
+   ],
+   "transliterations": {
+    "greek": "Φινεύς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Salmydessus-and-gift-of-prophecy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.21, 3.15.3; Apollon. Rhod. 2.178-300"
+     }
+    ],
+    "notes": "King of Salmydessus in Thrace and a seer; variously called son of Agenor, of Poseidon, or of Phoenix and Cassiopeia. Married Cleopatra daughter of Boreas and Oreithyia, by whom he had two sons (canonically Plexippus and Pandion)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "blinding-of-his-sons-on-the-stepmother-Idaea-accusation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.3; Soph. Antigone 966-987"
+     }
+    ],
+    "notes": "Took as second wife Idaea daughter of Dardanus, who falsely accused Cleopatra's sons of assault; Phineus believed her, blinded his sons, and imprisoned Cleopatra — the Sophoclean exemplum of stepmother-treachery in the Antigone choral ode."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-Harpy-torment-and-deliverance-by-the-Boreads",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.178-300; Apollod. 1.9.21"
+     }
+    ],
+    "notes": "Punished with blindness and the Harpies who snatched and fouled his food, in penalty for revealing too much of the gods' counsel. The Argonauts came; the winged Boreads Zetes and Calais (Cleopatra's brothers) chased the Harpies off, and in gratitude Phineus revealed to Jason the route through the Symplegades — the seer-aid structurally answering to Circe's in the Odyssey."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.311-407 (the sailing-directions to the Argonauts)"
+     }
+    ],
+    "notes": "Seer whose foreknowledge guided the Argo through the Clashing Rocks; his over-disclosure of divine counsel is the cause of his punishment."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mantic-foresight",
+    "name": "Prophetic sight",
+    "inheritability": "none",
+    "scopeTags": [
+     "prophecy",
+     "divine-gift"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.178-193; Apollod. 1.9.21"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_cleopatra_boread",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.3; Soph. Antigone 966-987"
+     }
+    ],
+    "notes": "First wife; mother of the blinded sons."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_calais",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.273-300 (the Boread brothers drive off the Harpies tormenting Phineus and confront him over his treatment of their sister Cleopatra)"
+     }
+    ],
+    "notes": "The Boread brother-in-law who, with Zetes, delivered Phineus from the Harpies but stood against his maltreatment of Cleopatra."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_zetes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.273-300"
+     }
+    ],
+    "notes": "Boread brother-in-law; with Calais drove off the Harpies and opposed Phineus's treatment of their sister."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.9.21, 3.15.3; Apollonius Rhodius Argonautica 2.178-407; Sophocles Antigone 966-987; Hesiod Catalogue fr. 138"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Cleopatra-the-Boread",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.3; Sophocles Antigone 966-987"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Φινεὺς ὁ μάντις",
+    "translation": "Phineus the seer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.178-193"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal Thracian king and seer, husband of Cleopatra Boread (greek_cleopatra_boread, whose prose names 'Married to Phineus, the Thracian king and seer'). Authored as the named-but-absent spouse. His second wife Idaea daughter of Dardanus and his blinded sons Plexippus and Pandion are named in the tradition but lack corpus entries, so they are described rather than wired. The enemy-relations to Calais and Zetes are reciprocated within this transcript only where those figures are authored; for the existing Boreads they are reported as RECIPROCAL-NEEDED.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Φινεύς (Phineus), of uncertain (possibly pre-Greek/Thracian) origin; sometimes linked to φήνη (phēnē) 'lammergeier, sea-eagle', resonant with the Harpy-bird torment of his legend.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. φήνη"
+    }
+   ]
+  }
+ },
+ {
   "id": "greek_polyxena",
   "schemaVersion": 2,
   "name": {
@@ -103235,6 +118834,142 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Scion — youngest daughter of Priam and Hecuba; in post-Homeric legend beloved of Achilles and connected with his death-ambush. After Troy fell she was sacrificed by Neoptolemus on Achilles' tomb to lay the hero's shade, going to her death with a courage that becomes the moral centre of Euripides' Hecuba and Trojan Women."
+ },
+ {
+  "id": "greek_praxithea",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Praxithea",
+   "alt": [
+    "Praxithea of Athens"
+   ],
+   "transliterations": {
+    "greek": "Πραξιθέα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "queenship-of-Athens-as-wife-of-Erechtheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1; Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ],
+    "notes": "Queen of Athens, wife of Erechtheus, daughter (in the tradition) of the river Cephissus or of Phrasimus and Diogeneia; mother of the Erechtheid children, among them Creusa and Oreithyia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "patriotic-consent-to-the-sacrifice-of-a-daughter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 360 Kannicht (the great patriotic rhesis); Lycurg. Leoc. 98-101"
+     }
+    ],
+    "notes": "In Euripides's Erechtheus she delivers the celebrated speech consenting to the sacrifice of her daughter for Athens — the canonical Athenian exemplum of civic self-sacrifice, quoted entire by Lycurgus. Athena at the play's close establishes her as the first priestess of Athena Polias."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priesthood",
+    "contextTag": "cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 370.95-97 Kannicht (Athena institutes her as first priestess of Athena Polias)"
+     }
+    ],
+    "notes": "Instituted by Athena as the first priestess of Athena Polias on the Acropolis — the aetiology of the Erechtheid priestly office."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_erechtheus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1; Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_creusa_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 10-11; Apollod. 3.15.1"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_oreithyia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1-2"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.1; Euripides Erechtheus fr. 360-370 Kannicht; Lycurgus Against Leocrates 98-101"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Πραξιθέα βασίλεια",
+    "translation": "Queen Praxithea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal queen of Athens, wife of Erechtheus (greek_erechtheus, authored in this batch) and mother of Creusa of Athens (greek_creusa_athens) and Oreithyia (greek_oreithyia). Supplied by Creusa Athens's prose ('Daughter of Erechtheus ... and Praxithea').",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Πραξιθέα (Praxitheā), 'she who accomplishes for the goddess' or 'goddess-acting', from πρᾶξις/πράσσω 'doing, accomplishing' + θεά 'goddess' — apt for the first priestess of Athena Polias.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. πρᾶξις, θεά"
+    }
+   ]
+  }
  },
  {
   "id": "greek_priam",
@@ -103481,6 +119216,426 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Scion (far down the Dardanid line, his divine blood much diluted) — the aged king of Troy through the Trojan War, son of Laomedon, born Podarces and ransomed/renamed by his sister Hesione. Father by Hecuba and other wives of fifty sons and many daughters, among them Hector, Paris, Deiphobus, Helenus, Cassandra, Creusa, Polyxena, and Troilus. His night journey to ransom Hector's body from Achilles is the climax of the Iliad; he was slain at the altar of Zeus Herkeios by Neoptolemus when Troy fell."
+ },
+ {
+  "id": "greek_proetus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Proetus",
+   "alt": [
+    "Proitos",
+    "Proetus of Tiryns"
+   ],
+   "transliterations": {
+    "greek": "Προῖτος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1360,
+   "mythicEnd": -1300,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-strife-with-Acrisius-and-exile-to-Lycia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Hom. Il. 6.157-159"
+     }
+    ],
+    "notes": "Twin of Acrisius and son of Abas, king of Argos; the brothers quarrelled even in the womb. Driven from his inheritance by Acrisius, he fled to Iobates in Lycia, married his daughter Stheneboea, and returned with a Lycian army."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-partition-of-the-Argolid-and-the-walling-of-Tiryns",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Paus. 2.16.2, 2.25.8"
+     }
+    ],
+    "notes": "By compact with Acrisius he took Tiryns, the Heraea and the Argive coast while his brother held Argos; the Cyclopes built for him the great walls of Tiryns."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-madness-of-the-Proetides-and-the-Bellerophon-affair",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.2; Hom. Il. 6.157-170"
+     }
+    ],
+    "notes": "His daughters, the Proetides, were driven mad and cured by the seer Melampus, who took a third of the kingdom in payment. To his court came Bellerophon, whom Proetus, deceived by the false charge of Stheneboea, sent to Iobates with the fatal sealed tablet."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Paus. 2.16.2"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "walls-of-tiryns",
+    "name": "The Cyclopean walls of Tiryns",
+    "kind": "structure",
+    "role": "the massive fortification built for Proetus by the Cyclopes he brought from Lycia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Paus. 2.25.8; Strabo 8.6.11"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_acrisius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Hom. Il. 6.157-159"
+     }
+    ],
+    "notes": "Twin of Acrisius; greek_apollod_acrisius already records sibling->Proetus as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.2.1-2.3.2; Homer Iliad 6.157-170; Pausanias 2.16.2, 2.25.8; Bacchylides 11"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1 (twin son of Abas, brother of Acrisius)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal king of Tiryns, twin brother of Acrisius and son of Abas; their womb-strife and the partition of the Argolid found the twin-kingdoms of Argos and Tiryns. Builder of the Cyclopean walls of Tiryns, host of Bellerophon, and father of the maddened Proetides. Father Abas and wife Stheneboea are noted in prose (not registered). Sibling wired to greek_apollod_acrisius, which already externalRef the twin bond."
+ },
+ {
+  "id": "greek_pylades",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Pylades",
+   "alt": [
+    "Pylades of Phocis"
+   ],
+   "transliterations": {
+    "greek": "Πυλάδης"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_strophius",
+   "greek_anaxibia_atreid"
+  ],
+  "parentRoles": {
+   "greek_strophius": "paternal",
+   "greek_anaxibia_atreid": "maternal"
+  },
+  "temporal": {
+   "era": "post-trojan-war",
+   "mythicStart": -1250,
+   "mythicEnd": -1190,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "birth-at-Phocis-and-the-fostering-of-Orestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 11-14; Eur. Or. 33-34; Paus. 2.29.4"
+     }
+    ],
+    "notes": "Son of Strophius of Phocis and Anaxibia, sister of Agamemnon. Raised beside the exiled Orestes, who was smuggled to Phocis after the murder of Agamemnon — the two becoming inseparable, the proverbial pair of devoted friends."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-vengeance-at-Mycenae-and-the-Taurian-rescue",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 900-902; Eur. IT 67-122, 674-722; Eur. Or. 1098-1245"
+     }
+    ],
+    "notes": "Stood with Orestes in the killing of Clytemnestra and Aegisthus, and braved capture in the Tauric Chersonese, where each offered to die in the place of the other before Iphigenia recognised her brother — the supreme classical exemplum of philia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "marriage-to-Electra-and-issue",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1078-1080, 1658-1659; Paus. 2.16.7"
+     }
+    ],
+    "notes": "Married Electra, sister of Orestes; their sons Medon and Strophius the Younger continued the Phocian line."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IT 674-722 — the contest of self-sacrifice with Orestes"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_strophius",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Soph. El. 1110-1112"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_anaxibia_atreid",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "schol. Eur. Or. 33; Paus. 2.29.4"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_electra",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1078-1080, 1658-1659; Paus. 2.16.7"
+     }
+    ],
+    "notes": "Married Electra; greek_electra already records spouse->Pylades as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "companion",
+    "personId": "greek_orestes",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Eur. IT, Or.; Hom. Od. mentions Orestes vengeance"
+     }
+    ],
+    "notes": "The proverbial faithful companion of Orestes through exile, matricide and the Taurian ordeal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus Libation Bearers; Sophocles Electra; Euripides Iphigenia among the Taurians, Orestes, Electra; Pausanias 2.16.7, 2.29.4; Apollodorus Epitome 6.24-25"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33 (son of Strophius and Anaxibia sister of Agamemnon)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Phocian prince, son of Strophius and Anaxibia (sister of Agamemnon), hence first cousin of Orestes; the proverbial faithful companion who shares the matricide and the Taurian rescue and weds Electra. Mortal-tier (the Atreid divine share is exhausted at this depth). Parents wired to greek_strophius (newly authored) and greek_anaxibia_atreid; spouse greek_electra and companion greek_orestes wired (Electra already externalRef his marriage)."
+ },
+ {
+  "id": "greek_strophius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Strophius",
+   "alt": [
+    "Strophios",
+    "Strophius of Phocis",
+    "Strophius the Elder"
+   ],
+   "transliterations": {
+    "greek": "Στρόφιος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1270,
+   "mythicEnd": -1200,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Phocis-and-marriage-to-Anaxibia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Apollod. Epit. 6.24; schol. Eur. Or. 33, 1233"
+     }
+    ],
+    "notes": "King of Phocis at Crisa beneath Parnassus; married Anaxibia, sister of Agamemnon and Menelaus, binding the house of Phocis to the Atreid line."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-fostering-of-Orestes-and-the-bond-of-Pylades",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 877-886; Soph. El. 11-14, 1110-1112; Eur. Or. 33-34, 764-765"
+     }
+    ],
+    "notes": "Received the child Orestes, smuggled out of Mycenae after the murder of Agamemnon, and raised him in his house alongside his own son Pylades — the origin of the lifelong companionship that carried Orestes through the avenging of his father."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4"
+     }
+    ]
+   },
+   {
+    "sphereId": "hospitality",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 877-886; Soph. El. 11-14"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_anaxibia_atreid",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33"
+     }
+    ],
+    "notes": "Husband of Anaxibia, sister of Agamemnon."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_pylades",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Soph. El. 1110-1112"
+     }
+    ],
+    "notes": "Father of Pylades, the companion of Orestes."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus Agamemnon 877-886; Sophocles Electra 11-14, 1110-1112; Euripides Orestes 33-34, 764-765; Pausanias 2.29.4; Apollodorus Epitome 6.24"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "schol. Eur. Or. 33 (son of Crisus son of Phocus); Paus. 2.29.4 — parentage given variously"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mortal king of Phocis, husband of Anaxibia (sister of Agamemnon) and father of Pylades. Foster-father of the exiled Orestes, whom he reared beside his own son — the household in which the Orestes-Pylades bond was formed. His father is given variously as Crisus son of Phocus (not registered). Spouse and son wired to greek_anaxibia_atreid and the newly authored greek_pylades."
  },
  {
   "id": "greek_tantalus",
@@ -104027,6 +120182,11 @@ const NEW_FIGURES = [
       "reference": "Aesch. Ag. 1583-1602; Apollod. Epit. 2.13"
      }
     ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_chrysippus",
+    "notes": "Reciprocal edge (alphabetical family sweep)."
    }
   ],
   "sources": [
@@ -104347,6 +120507,131 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Demigod by descent — king of the Troad and eponym of Troy and the Trojans, son of Erichthonius. Married Callirhoe daughter of Scamander; father of Ilus (founder of Ilion and ancestor of Priam), Assaracus (ancestor of Aeneas), and Ganymede. When Zeus snatched Ganymede away, Tros was consoled with a gift of immortal horses — the divine stock later withheld by Laomedon from Heracles."
+ },
+ {
+  "id": "greek_xuthus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Xuthus",
+   "alt": [
+    "Xouthos",
+    "Xuthus son of Hellen"
+   ],
+   "transliterations": {
+    "greek": "Ξοῦθος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "exile-from-Thessaly-and-settlement-in-Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.7.3; Hdt. 7.94; Eur. Ion 57-64"
+     }
+    ],
+    "notes": "Son of Hellen (eponym of the Hellenes) and the nymph Orseis; brother of Aeolus and Dorus. Driven from Thessaly, he came to Athens, helped Erechtheus in war, and married his daughter Creusa."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "Delphi-oracle-and-the-acceptance-of-Ion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 515-565, 1553-1605; Apollod. 1.7.3"
+     }
+    ],
+    "notes": "Came with Creusa to Delphi to consult about childlessness; the oracle gave him Ion (in fact Creusa's son by Apollo) as his own, and he accepted the social-paternity without learning the truth. Eponymous-father of the Achaeans and Ionians through his sons Achaeus and Ion."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_creusa_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.7.3; Eur. Ion 57-64"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_ion_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 1553-1605 (social/accepted father); Apollod. 1.7.3"
+     }
+    ],
+    "notes": "Accepted social-father of Ion; the Euripidean denouement keeps Apollo the true father while Xuthus rears him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.7.3; Herodotus 7.94, 8.44; Euripides Ion; Hesiod Catalogue fr. 9-10"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Creusa",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.7.3; Euripides Ion 57-64"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ξοῦθος Ἕλληνος",
+    "translation": "Xuthus son of Hellen",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hdt. 7.94"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal son of Hellen; husband of Creusa of Athens (greek_creusa_athens, whose prose names 'Married Xuthus son of Hellen') and accepted social-father of Ion (greek_ion_athens, already wired to Creusa). Authored as the named-but-absent spouse. His father Hellen, brothers Aeolus and Dorus, and son Achaeus are named in the tradition but lack corpus entries, so they are described rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ξοῦθος (Xouthos), from the adjective ξουθός 'tawny, golden-yellow' (also 'nimble, darting', used of insects and birds); the eponymous ancestor of the Achaeans and Ionians bears a colour-name.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ξουθός"
+    }
+   ]
+  }
  },
  {
   "id": "guanche_achaman",
@@ -235037,6 +251322,69 @@ const CORRECTIONS = {
 //  reciprocity invariant holds by construction.
 // ═════════════════════════════════════════════════════════════════════════════
 const ENRICHMENTS = {
+  // ── Sweep-010 (Batch 10) reciprocals: family edges on existing corpus figures
+  //    pointing to the newly-authored kin from data-sources/transcripts/sweep-010.txt
+  //    (Ramesside 20th-Dynasty successors/queens, the Amenmesse rival, the Benin
+  //    Iyoba Idia and the giant Arhuaran, and the Etruscan Persipnei and Semla).
+  //    Symmetric kinds (spouse/enemy/sibling/rival/lover) auto-mirror; half-sibling
+  //    is not in SYMMETRIC_KINDS, so its reverse is supplied explicitly here. The
+  //    forward edges live on the authored figures; these complete reciprocity. ──
+  'egyptian_ramesses_iii': {
+    relations: [
+      { kind: 'spouse', personId: 'egyptian_tiye_harem', sources: [{ kind: 'primary', reference: 'Judicial Papyrus of Turin' }], notes: 'His secondary (harem) wife Tiye, mother of Pentaweret and orchestrator of the 1155 BCE conspiracy.' },
+      { kind: 'enemy', personId: 'egyptian_tiye_harem', sources: [{ kind: 'primary', reference: 'Judicial Papyrus of Turin' }], notes: 'She orchestrated the harem conspiracy that mortally wounded him.' },
+    ],
+  },
+  'egyptian_ramesses_iv': {
+    relations: [
+      { kind: 'spouse', personId: 'egyptian_duatentopet', sources: [{ kind: 'primary', reference: 'Tomb QV74, Valley of the Queens (King\'s-Wife titulary)' }], notes: 'His chief queen Duatentopet/Tentopet, probably his half-sister, mother of Ramesses V.' },
+      { kind: 'half-sibling', personId: 'egyptian_ramesses_viii', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III (Medinet Habu procession of princes)' }], notes: 'Both sons of Ramesses III by different mothers.' },
+    ],
+  },
+  'egyptian_ramesses_vi': {
+    relations: [
+      { kind: 'spouse', personId: 'egyptian_nubkhesbed', sources: [{ kind: 'primary', reference: 'Tomb KV13 carvings; Koptos stela of Iset (Manchester Museum 1781)' }], notes: 'His Great Royal Wife Nubkhesbed, mother of Ramesses VII and the God\'s Wife Iset.' },
+      { kind: 'enemy', personId: 'egyptian_ramesses_v', sources: [{ kind: 'secondary', reference: 'Kitchen, Ramesside Inscriptions VI; KV9 redecoration evidence' }], notes: 'He usurped and enlarged for himself the tomb KV9 begun by and for his nephew Ramesses V.' },
+      { kind: 'half-sibling', personId: 'egyptian_ramesses_viii', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III (Medinet Habu procession of princes)' }], notes: 'Both sons of Ramesses III by different mothers.' },
+    ],
+  },
+  'egyptian_pentaweret': {
+    relations: [
+      { kind: 'half-sibling', personId: 'egyptian_ramesses_viii', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III' }], notes: 'Both sons of Ramesses III.' },
+    ],
+  },
+  'egyptian_khaemwaset_c': {
+    relations: [
+      { kind: 'half-sibling', personId: 'egyptian_ramesses_viii', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III' }], notes: 'Both sons of Ramesses III.' },
+    ],
+  },
+  'egyptian_seti_ii': {
+    relations: [
+      { kind: 'enemy', personId: 'egyptian_amenmesse', sources: [{ kind: 'primary', reference: 'Karnak Hall of Records; KV10 usurpation; cartouche-erasure pattern' }], notes: 'The rival king Amenmesse seized Upper Egypt during his reign; Seti II defeated him and erased his monuments.' },
+      { kind: 'half-sibling', personId: 'egyptian_amenmesse', sources: [{ kind: 'secondary', reference: 'Dodson & Hilton (2004)' }], notes: 'If, as is most probable, Amenmesse was a son of Merneptah by Takhat, he was Seti II\'s half-brother and dynastic rival.' },
+    ],
+  },
+  'esigie': {
+    relations: [
+      { kind: 'sibling', personId: 'edo_arhuaran', sources: [{ kind: 'secondary', reference: 'Egharevba, A Short History of Benin (1968)' }], notes: 'His elder brother Arhuaran, Enogie of Udo.' },
+      { kind: 'rival', personId: 'edo_arhuaran', sources: [{ kind: 'secondary', reference: 'Egharevba (1968)' }], notes: 'Contested the succession in the early-16th-century civil war; Esigie prevailed with Idia\'s aid.' },
+    ],
+  },
+  'ozolua': {
+    relations: [
+      { kind: 'spouse', personId: 'edo_idia', sources: [{ kind: 'secondary', reference: 'Egharevba (1968)' }], notes: 'His wife Idia, mother of Esigie and first Iyoba of Benin.' },
+    ],
+  },
+  'etruscan_aita': {
+    relations: [
+      { kind: 'spouse', personId: 'etruscan_persipnei', sources: [{ kind: 'primary', reference: 'Tomb of Orcus II, Tarquinia; Golini Tomb I, Orvieto (Aita and Phersipnai enthroned together)' }], notes: 'His co-enthroned queen Persipnei (Phersipnai), the Etruscan Persephone.' },
+    ],
+  },
+  'etruscan_tinia': {
+    relations: [
+      { kind: 'lover', personId: 'etruscan_semla', sources: [{ kind: 'primary', reference: 'Etruscan bronze mirrors; de Grummond, Etruscan Myth (2006)' }], notes: 'The mortal Semla (Semele), by whom he fathered Fufluns; killed by his lightning per the shared Dionysian myth.' },
+    ],
+  },
   // Genealogy march, Wave G14 (Norse): reciprocal family edges for the
   // generated figures Frigg and Freyja (their source-side links are promoted
   // from externalRef to personId on the hand-authored Odin/Njörd/Freyr; these

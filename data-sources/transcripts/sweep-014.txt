@@ -1,0 +1,2491 @@
+SWEEP-014 — Greek genealogical family sweep, Batch 14 (strict alphabetical, every tradition equal).
+
+Scope review: all 50 batch ids ALREADY EXIST in the corpus and were read in full prose (notes + lifecycle + sources). Most are already wired to their parents/siblings/spouses/children. The work below is (1) authoring genuinely-named-but-absent kin attested in the prose, wiring them reciprocally to existing or in-batch ids, and (2) reporting WIRE-EDGEs for existing-but-unwired pairs and RECIPROCAL-NEEDED additions. New figures reference ONLY existing corpus ids or other new-in-batch ids in parentIds/relations; further-named kin whose own entries are absent (Cadmus, Harmonia, Hellen, Peneus, Chiron, Latinus, Idaea, Plexippus, Pandion, etc.) are named in prose only to avoid dangling references, exactly as the corpus already does for figures like Ischys on greek_coronis.
+
+```json
+[
+ {
+  "id": "greek_eurytus_oechalia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eurytus",
+   "alt": [
+    "Eurytos",
+    "Eurytus of Oechalia",
+    "Eurytus the Archer"
+   ],
+   "transliterations": {
+    "greek": "Εὔρυτος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Oechalia-and-mastery-of-the-bow",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228; Apollod. 2.4.9, 2.6.1"
+     }
+    ],
+    "notes": "King of Oechalia, a master-archer reputed to have taught Heracles the bow; his bow descended to Iphitus and then to Odysseus, the bow of the Odyssey 21 contest. Grandson of Apollo through his father Melaneus per the Thessalian tradition. Father of Iole and of sons (Iphitus, Clytius, Toxeus, Deioneus, Molion) by Antiope daughter of Pylon."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "archery-contest-for-Iole",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Soph. Trach. 260-285"
+     }
+    ],
+    "notes": "Offered his daughter Iole as bride to whoever could outshoot him and his sons; Heracles won but Eurytus reneged, fearing Heracles would kill any children by her in madness as he had killed those by Megara. The refusal of the promised bride is the proximate cause of the sack of Oechalia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "sack-of-Oechalia-and-death",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Soph. Trach. 351-365, 476-478"
+     }
+    ],
+    "notes": "Heracles returned, sacked Oechalia, killed Eurytus and his sons, and carried off Iole — the capture that drives the Trachiniae jealousy of Deianira and so the Nessus-shirt death of Heracles itself."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "archery",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228; Apollod. 2.4.9"
+     }
+    ],
+    "notes": "Reputed teacher of Heracles in the bow; one of the canonical master-archers of the heroic age, set even against the Apollo-line."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "master-archery",
+    "name": "Peerless archery",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "skill",
+     "weapon-mastery"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228 (Eurytus rivalled the gods in archery); Apollod. 2.4.9"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "bow-of-eurytus",
+    "name": "The bow of Eurytus",
+    "kind": "weapon",
+    "role": "heirloom-bow passed to Iphitus, given to Odysseus, and strung in the Odyssey 21 suitor-contest",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 21.13-41"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_apollod_iole",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.6.1; Soph. Trach. 380-382"
+     }
+    ],
+    "notes": "Iole, the bride promised in the archery-contest and later carried off by Heracles."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "killed-by-Heracles-at-sack-of-Oechalia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.7.7; Soph. Trach. 351-365"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Oechalia",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Odyssey 8.224-228, 21.13-41; Apollodorus 2.4.9, 2.6.1, 2.7.7; Sophocles Trachiniae 260-285, 351-365"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Iole",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.6.1; Sophocles Trachiniae 380-382"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Εὔρυτος ὁ τοξότης",
+    "translation": "Eurytus the archer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Od. 8.224-228"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal king of Oechalia and famed archer-teacher; father of Iole (greek_apollod_iole, who already carries spouse->greek_apollod_hyllus). Authored as the named-but-absent father supplied by Iole's own prose ('Daughter of Eurytus'). His sons (Iphitus, Clytius, Toxeus, Deioneus, Molion) and wife Antiope daughter of Pylon are named in the tradition but have no corpus entries, so they are described here rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Εὔρυτος, conventionally read as 'wide-flowing' or 'free-flowing' (εὐ- 'well' + the root of ῥέω 'flow'), or as 'far-drawn' fitting an archer who draws the bow wide; the name recurs for several heroes (a Giant, a son of Hermes, a Molionid).",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. εὔρυτος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_creon_thebes",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Creon",
+   "alt": [
+    "Kreon",
+    "Creon of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Κρέων"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "regency-and-kingship-of-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.6, 2.4.11; Soph. Antigone passim; Eur. Heracles 26-59"
+     }
+    ],
+    "notes": "Theban regent and king, son of Menoeceus and brother of Jocasta; the recurring Theban-throne figure across the Oedipus and Heracles cycles. Purified Amphitryon of the killing of Electryon, and as reward for Heracles delivering Thebes from the tribute to Erginus and the Minyans gave his daughter Megara to Heracles in marriage."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-of-Megara-to-Heracles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.11; Eur. Heracles 1-12"
+     }
+    ],
+    "notes": "Gave Megara to Heracles; the marriage produced sons (Therimachus, Creontiades, Deicoon) whom Heracles, struck mad by Hera, slew along with Megara — the catastrophe that sends Heracles to Delphi and inaugurates the Twelve Labors."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-at-the-hands-of-Lycus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Heracles 26-59"
+     }
+    ],
+    "notes": "In the Euripidean tradition, killed in old age when Lycus, descendant of an earlier Theban king, seized the throne in Heracles's absence — the usurpation that threatens Megara and the children at the play's opening."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. Antigone 162-210; Apollod. 2.4.11"
+     }
+    ],
+    "notes": "The archetypal Theban ruler-by-succession; sovereign authority repeatedly devolving on him in the city's dynastic crises."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_apollod_megara",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.11; Eur. Heracles 9-12"
+     }
+    ],
+    "notes": "Megara, given by Creon to Heracles as his first wife."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "killed-by-Lycus-usurper",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Heracles 26-59"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Thebes",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.6, 2.4.11; Sophocles Antigone; Euripides Heracles 1-59"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Megara",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.11; Euripides Heracles 9-12"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Κρέων ἄναξ Θηβῶν",
+    "translation": "Creon lord of Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. Antigone 155-162"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal king of Thebes; father of Megara (greek_apollod_megara, who already carries former-spouse->greek_apollod_heracles). Authored as the named-but-absent father supplied by Megara's prose ('daughter of King Creon of Thebes'). His father Menoeceus, sister Jocasta, and the usurper Lycus are named in the tradition but lack corpus entries, so they are described rather than wired. Distinct from the conflated regent-of-Oedipus role, which the tradition treats as the same Creon.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Κρέων (Kreon), literally 'ruler, prince', from the same root as κρείων 'lord, sovereign' (Homeric κρείων Ἀγαμέμνων); essentially a title functioning as a name for the perpetual Theban regent.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. κρέων, κρείων"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_autonoe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Autonoe",
+   "alt": [
+    "Autonoë",
+    "Autonoe of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Αὐτονόη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-eldest-Cadmeid-daughter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 975-978; Apollod. 3.4.2"
+     }
+    ],
+    "notes": "Eldest of the four daughters of Cadmus, founder-king of Thebes, and the goddess Harmonia; sister of Ino, Semele, and Agave. The senior Cadmeid line through which the house of Thebes descends."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Aristaeus-and-motherhood-of-Actaeon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.4"
+     }
+    ],
+    "notes": "Married the pastoral demigod Aristaeus; bore Actaeon (and in some accounts the nymph Macris). The union joins the Apollo-line (through Aristaeus) into the Cadmean royal house."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "grief-and-departure-from-Thebes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Bacchae 230-232, 1227-1300; Paus. 1.44.5"
+     }
+    ],
+    "notes": "After the death of Actaeon (torn apart by his own hounds) and the Dionysiac frenzy in which she and her sisters dismembered Pentheus, she left Thebes in grief; per Pausanias she died at Ereneia in the Megarid."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_aristaeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.4"
+     }
+    ],
+    "notes": "Wife of the demigod Aristaeus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_actaeon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hesiod Theogony 975-978; Apollodorus 3.4.2-4; Diodorus 4.81.4; Euripides Bacchae"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Aristaeus-and-motherhood-of-Actaeon",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.4.4; Diodorus 4.81.4"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Αὐτονόη Κάδμου θυγάτηρ",
+    "translation": "Autonoe daughter of Cadmus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.2"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal Theban princess, wife of Aristaeus (greek_aristaeus, whose prose already names 'Autonoë, daughter of Cadmus and Harmonia') and mother of Actaeon (greek_actaeon, authored in this batch). Her parents Cadmus and Harmonia and sisters Ino, Semele, Agave are named in the tradition but lack corpus entries, so they are described rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Αὐτονόη (Autonoē), 'with a mind of her own' or 'self-knowing', from αὐτός 'self' + νόος/νοῦς 'mind'.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. αὐτός, νόος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_actaeon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Actaeon",
+   "alt": [
+    "Aktaion",
+    "Actaeon of Thebes"
+   ],
+   "transliterations": {
+    "greek": "Ἀκταίων"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_aristaeus",
+   "greek_autonoe"
+  ],
+  "parentRoles": {
+   "greek_aristaeus": "paternal",
+   "greek_autonoe": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-and-rearing-by-Chiron",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.3"
+     }
+    ],
+    "notes": "Son of the demigod Aristaeus by Autonoe daughter of Cadmus; reared by the Centaur Chiron, who trained him as a hunter. Quartigod by strict reckoning of the Apollo-line through Aristaeus; registered at scion-tier as the standard floor for the Cadmean hunting-hero."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "transgression-against-Artemis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ov. Met. 3.138-252; Apollod. 3.4.4; Callim. Hymn 5.107-118"
+     }
+    ],
+    "notes": "Saw Artemis bathing on Mt. Cithaeron (per Ovid, by accident; per others, boasting to outdo her in the hunt). The goddess transformed him into a stag."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-his-own-hounds",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ov. Met. 3.206-252; Apollod. 3.4.4"
+     }
+    ],
+    "notes": "As a stag he was pursued and torn apart by his own fifty hunting-hounds, who failed to recognize their master — the canonical exemplum of the hunter undone by the hunt and of mortal transgression against divine privacy. The hounds' grief is the aetiological coda; Chiron is said to have fashioned an image of him to console them."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "hunting",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.81.3; Ov. Met. 3.206-225 (the hound-catalogue)"
+     }
+    ],
+    "notes": "Trained as a master-hunter by Chiron; commanded a famous pack of hounds whose names Ovid catalogues."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "houndsman-mastery",
+    "name": "Mastery of the hunt and the hound-pack",
+    "inheritability": "none",
+    "scopeTags": [
+     "skill",
+     "hunting"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.81.3; Ov. Met. 3.206-225"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_aristaeus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4; Diod. 4.81.4"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_autonoe",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.4.4"
+     }
+    ]
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "torn-apart-by-own-hounds-after-Artemis-transformation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Ov. Met. 3.206-252; Apollod. 3.4.4"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Mt. Cithaeron, Boeotia",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.4.4; Diodorus 4.81.3-4; Ovid Metamorphoses 3.138-252; Callimachus Hymn 5.107-118"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.4.4 (son of Aristaeus and Autonoe)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἀκταίων ὁ κυνηγέτης",
+    "translation": "Actaeon the hunter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Diod. 4.81.3"
+     }
+    ]
+   }
+  ],
+  "notes": "Scion-tier Cadmean hunting-hero, son of Aristaeus (greek_aristaeus) and Autonoe (greek_autonoe, authored in this batch). Supplied by Aristaeus's prose ('Their son Actaeon was raised by Chiron and later torn apart by his own hounds for seeing Artemis bathing'). His tutor Chiron lacks a corpus entry and is named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἀκταίων (Aktaiōn), plausibly 'man of the shore/headland', from ἀκτή 'headland, shore'; the etymology is uncertain and may be pre-Greek.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἀκτή"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_epione",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Epione",
+   "alt": [
+    "Epione the Soother",
+    "Epio"
+   ],
+   "transliterations": {
+    "greek": "Ἠπιόνη"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Asclepius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione; schol. Hom. Il. 11.518; Paus. 2.29.1"
+     }
+    ],
+    "notes": "Wife of Asclepius, the minor healing-goddess of the soothing of pain; daughter of Merops king of Kos in the Koan cult-tradition. By Asclepius mother of the physician-sons Machaon and Podalirius and of the healer-daughters Hygieia, Iaso, Aceso, Aegle, and Panacea — the household that together forms a complete medical system (Asclepius cures, Epione soothes, Hygieia prevents, Panacea treats all)."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "classical-cult",
+    "eraOrdering": 1,
+    "startEvent": "cult-of-the-soothing-of-pain",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.1; IG IV2 1.255 (Epidauros); epigraphy at Kos and Pergamon"
+     }
+    ],
+    "notes": "Received cult alongside Asclepius at Epidauros, Kos, Athens, and Pergamon; her statue stood with his in the Asklepieia. The divine personification of the gentling of pain (Greek epios, 'soothing, gentle')."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "soothing-of-pain",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.1; Suda s.v. Epione"
+     }
+    ],
+    "notes": "Goddess of the soothing and gentling of pain, the consort-complement to Asclepius's curing."
+   },
+   {
+    "sphereId": "healing",
+    "contextTag": "cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "IG IV2 1.255 (Epidaurian dedication to Epione)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "pain-soothing",
+    "name": "Soothing of pain",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "healing",
+     "divine-power"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione (ηπιος, 'soothing'); Paus. 2.29.1"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.1; schol. Hom. Il. 11.518"
+     }
+    ],
+    "notes": "Wife of Asclepius."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_machaon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "schol. Hom. Il. 11.518; Apollod. 3.10.3"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_podalirius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "schol. Hom. Il. 11.518; Apollod. 3.10.3"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_hygieia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione; schol. Aristid. p. 35"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_panacea",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_iaso",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aceso",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aegle_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.29.1; Suda s.v. Epione; scholia Homer Iliad 11.518; IG IV2 1.255 (Epidauros)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "motherhood-of-the-Asclepiad-children",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "scholia Homer Iliad 11.518; Suda s.v. Epione; Apollodorus 3.10.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἠπιόνη",
+    "translation": "the Soothing One",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Suda s.v. Epione (from ηπιος, 'gentle, soothing')"
+     }
+    ]
+   }
+  ],
+  "notes": "Numen — minor healing-goddess of the soothing of pain, wife of Asclepius (greek_asclepius, whose father-of relations to Machaon, Podalirius, Hygieia, Iaso, Aceso, Aegle, Panacea already stand) and mother of his physician-children. Authored as the named-but-absent mother supplied by the prose of greek_apollod_machaon ('Son of Asclepius ... by Epione') and greek_apollod_podalirius ('Son of Asclepius by Epione'). Telesphorus and Aratus are listed as half-siblings on the corpus children (by other mothers/the serpent-conception), so Epione is wired only to the seven shared Epione-children; her father Merops of Kos is named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἠπιόνη (Ēpionē), 'the soothing/gentle one', from ἤπιος (ēpios) 'gentle, kind, soothing' — the standard adjective for pain that has been gentled, fitting her function beside Asclepius the curer.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ἤπιος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_phineus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Phineus",
+   "alt": [
+    "Phineus of Salmydessus",
+    "Phineus of Thrace"
+   ],
+   "transliterations": {
+    "greek": "Φινεύς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Salmydessus-and-gift-of-prophecy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.21, 3.15.3; Apollon. Rhod. 2.178-300"
+     }
+    ],
+    "notes": "King of Salmydessus in Thrace and a seer; variously called son of Agenor, of Poseidon, or of Phoenix and Cassiopeia. Married Cleopatra daughter of Boreas and Oreithyia, by whom he had two sons (canonically Plexippus and Pandion)."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "blinding-of-his-sons-on-the-stepmother-Idaea-accusation",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.3; Soph. Antigone 966-987"
+     }
+    ],
+    "notes": "Took as second wife Idaea daughter of Dardanus, who falsely accused Cleopatra's sons of assault; Phineus believed her, blinded his sons, and imprisoned Cleopatra — the Sophoclean exemplum of stepmother-treachery in the Antigone choral ode."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-Harpy-torment-and-deliverance-by-the-Boreads",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.178-300; Apollod. 1.9.21"
+     }
+    ],
+    "notes": "Punished with blindness and the Harpies who snatched and fouled his food, in penalty for revealing too much of the gods' counsel. The Argonauts came; the winged Boreads Zetes and Calais (Cleopatra's brothers) chased the Harpies off, and in gratitude Phineus revealed to Jason the route through the Symplegades — the seer-aid structurally answering to Circe's in the Odyssey."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.311-407 (the sailing-directions to the Argonauts)"
+     }
+    ],
+    "notes": "Seer whose foreknowledge guided the Argo through the Clashing Rocks; his over-disclosure of divine counsel is the cause of his punishment."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "mantic-foresight",
+    "name": "Prophetic sight",
+    "inheritability": "none",
+    "scopeTags": [
+     "prophecy",
+     "divine-gift"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.178-193; Apollod. 1.9.21"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_cleopatra_boread",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.3; Soph. Antigone 966-987"
+     }
+    ],
+    "notes": "First wife; mother of the blinded sons."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_calais",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.273-300 (the Boread brothers drive off the Harpies tormenting Phineus and confront him over his treatment of their sister Cleopatra)"
+     }
+    ],
+    "notes": "The Boread brother-in-law who, with Zetes, delivered Phineus from the Harpies but stood against his maltreatment of Cleopatra."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_zetes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.273-300"
+     }
+    ],
+    "notes": "Boread brother-in-law; with Calais drove off the Harpies and opposed Phineus's treatment of their sister."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.9.21, 3.15.3; Apollonius Rhodius Argonautica 2.178-407; Sophocles Antigone 966-987; Hesiod Catalogue fr. 138"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Cleopatra-the-Boread",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.3; Sophocles Antigone 966-987"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Φινεὺς ὁ μάντις",
+    "translation": "Phineus the seer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 2.178-193"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal Thracian king and seer, husband of Cleopatra Boread (greek_cleopatra_boread, whose prose names 'Married to Phineus, the Thracian king and seer'). Authored as the named-but-absent spouse. His second wife Idaea daughter of Dardanus and his blinded sons Plexippus and Pandion are named in the tradition but lack corpus entries, so they are described rather than wired. The enemy-relations to Calais and Zetes are reciprocated within this transcript only where those figures are authored; for the existing Boreads they are reported as RECIPROCAL-NEEDED.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Φινεύς (Phineus), of uncertain (possibly pre-Greek/Thracian) origin; sometimes linked to φήνη (phēnē) 'lammergeier, sea-eagle', resonant with the Harpy-bird torment of his legend.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. φήνη"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_erechtheus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Erechtheus",
+   "alt": [
+    "Erechtheus II",
+    "Erechtheus of Athens"
+   ],
+   "transliterations": {
+    "greek": "Ἐρεχθεύς"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.546-551; Apollod. 3.15.1; Hdt. 8.55"
+     }
+    ],
+    "notes": "Autochthonous king of Athens of the Erechtheid line, reared (in the Homeric tradition) by Athena in her own temple on the Acropolis; husband of Praxithea. Father of Cecrops II, Pandorus, Metion and of daughters including Oreithyia, Procris, Creusa, and the sacrificed Erechtheid maidens."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "war-with-Eleusis-and-the-sacrifice-of-a-daughter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 360-370 Kannicht; Apollod. 3.15.4"
+     }
+    ],
+    "notes": "Warred against Eleusis and its Thracian ally Eumolpus son of Poseidon; an oracle required the sacrifice of one of his daughters for victory, and her sisters slew themselves in solidarity (the Hyacinthides). Erechtheus killed Eumolpus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "death-by-Poseidon-trident-or-thunderbolt",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 370 Kannicht; Apollod. 3.15.4-5; Paus. 1.38.3"
+     }
+    ],
+    "notes": "For the killing of his son Eumolpus, Poseidon destroyed Erechtheus, by his trident or by Zeus's thunderbolt at Poseidon's request; thereafter worshipped on the Acropolis fused with Poseidon as Poseidon-Erechtheus in the Erechtheion."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.546-551; Hdt. 8.55"
+     }
+    ],
+    "notes": "Founder-king figure of the Athenian autochthony-myth; eponym of the Erechtheion and of the Erechtheid royal house."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_praxithea",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1; Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_creusa_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 10-11, 277-282; Apollod. 3.15.1"
+     }
+    ],
+    "notes": "Creusa, the surviving youngest daughter, mother of Ion by Apollo."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_oreithyia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1-2; Hdt. 7.189"
+     }
+    ],
+    "notes": "Oreithyia, carried off by Boreas — mother of the Boread children."
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_eumolpus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 360-370 Kannicht"
+     }
+    ],
+    "notes": "The Thracian-Eleusinian son of Poseidon whom Erechtheus killed in the war for Athens; Poseidon then destroyed Erechtheus in vengeance."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "destroyed-by-Poseidon-for-killing-Eumolpus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4-5; Eur. Erechtheus fr. 370 Kannicht"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Athens",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "hero-cult",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad 2.546-551; Herodotus 8.55, 7.189; Apollodorus 3.15.1-5; Euripides Erechtheus fr. 360-370 Kannicht; Pausanias 1.38.3"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Creusa-and-Oreithyia",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.1; Euripides Ion 10-11, 277-282; Herodotus 7.189"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ἐρεχθεὺς ἄναξ Ἀθηνῶν",
+    "translation": "Erechtheus lord of Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.546-551"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal autochthonous king of Athens; father of Creusa of Athens (greek_creusa_athens, whose prose names 'Daughter of Erechtheus ... and Praxithea') and of Oreithyia (greek_oreithyia, the existing mother of the Boread children — Erechtheus is thus the maternal grandfather of Calais, Zetes, Cleopatra Boread, and Chione Boread). His sons Cecrops II, Pandorus, Metion lack corpus entries and are named rather than wired. Distinct from Erichthonius (greek_erichthonius exists as ancestor of Tros), whom some traditions conflate with him.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἐρεχθεύς (Erechtheus), connected to ἐρέχθω (erechthō) 'to rend, shake, break' — fitting the earth-shaker associations and the Poseidon-fusion; the name is closely doubled with Erichthonius in the Athenian autochthony complex.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Beekes, Etymological Dictionary of Greek (2010), s.v. ἐρέχθω, Ἐρεχθεύς"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_praxithea",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Praxithea",
+   "alt": [
+    "Praxithea of Athens"
+   ],
+   "transliterations": {
+    "greek": "Πραξιθέα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "queenship-of-Athens-as-wife-of-Erechtheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1; Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ],
+    "notes": "Queen of Athens, wife of Erechtheus, daughter (in the tradition) of the river Cephissus or of Phrasimus and Diogeneia; mother of the Erechtheid children, among them Creusa and Oreithyia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "patriotic-consent-to-the-sacrifice-of-a-daughter",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 360 Kannicht (the great patriotic rhesis); Lycurg. Leoc. 98-101"
+     }
+    ],
+    "notes": "In Euripides's Erechtheus she delivers the celebrated speech consenting to the sacrifice of her daughter for Athens — the canonical Athenian exemplum of civic self-sacrifice, quoted entire by Lycurgus. Athena at the play's close establishes her as the first priestess of Athena Polias."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "priesthood",
+    "contextTag": "cult",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 370.95-97 Kannicht (Athena institutes her as first priestess of Athena Polias)"
+     }
+    ],
+    "notes": "Instituted by Athena as the first priestess of Athena Polias on the Acropolis — the aetiology of the Erechtheid priestly office."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_erechtheus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1; Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_creusa_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 10-11; Apollod. 3.15.1"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_oreithyia",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.1-2"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.1; Euripides Erechtheus fr. 360-370 Kannicht; Lycurgus Against Leocrates 98-101"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Πραξιθέα βασίλεια",
+    "translation": "Queen Praxithea",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Erechtheus fr. 360 Kannicht"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal queen of Athens, wife of Erechtheus (greek_erechtheus, authored in this batch) and mother of Creusa of Athens (greek_creusa_athens) and Oreithyia (greek_oreithyia). Supplied by Creusa Athens's prose ('Daughter of Erechtheus ... and Praxithea').",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Πραξιθέα (Praxitheā), 'she who accomplishes for the goddess' or 'goddess-acting', from πρᾶξις/πράσσω 'doing, accomplishing' + θεά 'goddess' — apt for the first priestess of Athena Polias.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. πρᾶξις, θεά"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_xuthus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Xuthus",
+   "alt": [
+    "Xouthos",
+    "Xuthus son of Hellen"
+   ],
+   "transliterations": {
+    "greek": "Ξοῦθος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "exile-from-Thessaly-and-settlement-in-Athens",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.7.3; Hdt. 7.94; Eur. Ion 57-64"
+     }
+    ],
+    "notes": "Son of Hellen (eponym of the Hellenes) and the nymph Orseis; brother of Aeolus and Dorus. Driven from Thessaly, he came to Athens, helped Erechtheus in war, and married his daughter Creusa."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "Delphi-oracle-and-the-acceptance-of-Ion",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 515-565, 1553-1605; Apollod. 1.7.3"
+     }
+    ],
+    "notes": "Came with Creusa to Delphi to consult about childlessness; the oracle gave him Ion (in fact Creusa's son by Apollo) as his own, and he accepted the social-paternity without learning the truth. Eponymous-father of the Achaeans and Ionians through his sons Achaeus and Ion."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_creusa_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.7.3; Eur. Ion 57-64"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_ion_athens",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Ion 1553-1605 (social/accepted father); Apollod. 1.7.3"
+     }
+    ],
+    "notes": "Accepted social-father of Ion; the Euripidean denouement keeps Apollo the true father while Xuthus rears him."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.7.3; Herodotus 7.94, 8.44; Euripides Ion; Hesiod Catalogue fr. 9-10"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Creusa",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.7.3; Euripides Ion 57-64"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ξοῦθος Ἕλληνος",
+    "translation": "Xuthus son of Hellen",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hdt. 7.94"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal son of Hellen; husband of Creusa of Athens (greek_creusa_athens, whose prose names 'Married Xuthus son of Hellen') and accepted social-father of Ion (greek_ion_athens, already wired to Creusa). Authored as the named-but-absent spouse. His father Hellen, brothers Aeolus and Dorus, and son Achaeus are named in the tradition but lack corpus entries, so they are described rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ξοῦθος (Xouthos), from the adjective ξουθός 'tawny, golden-yellow' (also 'nimble, darting', used of insects and birds); the eponymous ancestor of the Achaeans and Ionians bears a colour-name.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ξουθός"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_hypseus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hypseus",
+   "alt": [
+    "Hypseus king of the Lapiths"
+   ],
+   "transliterations": {
+    "greek": "Ὑψεύς"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-the-Lapiths",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13-18; Diod. 4.69.1"
+     }
+    ],
+    "notes": "King of the Lapiths of Thessaly, son of the river-god Peneus by the naiad Creusa (a daughter of Gaia/Oceanus in Pindar); the eldest of the Lapith line. Half-divine through the Peneus river-line. Father of Cyrene, the lion-wrestling huntress."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "fatherhood-of-Cyrene-and-the-Apollo-abduction",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.5-65"
+     }
+    ],
+    "notes": "His daughter Cyrene, raised tending his herds on Mt. Pelion, wrestled a lion bare-handed; Apollo carried her to Libya and founded the city named for her. Through Cyrene, Hypseus is grandfather of the pastoral demigod Aristaeus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13-18"
+     }
+    ],
+    "notes": "Sovereign of the Lapiths, the canonical Thessalian people of the Peneus valley."
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_cyrene_lapith",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13-18; Apollon. Rhod. 2.500"
+     }
+    ],
+    "notes": "Cyrene, the lion-wrestling huntress carried off by Apollo."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pindar Pythian 9.5-65; Apollonius Rhodius 2.500; Diodorus 4.69.1; Hyginus Fabulae 161"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-Cyrene",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pindar Pythian 9.13-18"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Ὑψεὺς εὐρυβίας",
+    "translation": "Hypseus of wide might",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Pyth. 9.13"
+     }
+    ]
+   }
+  ],
+  "notes": "Demigod Lapith king, son of the river Peneus; father of Cyrene (greek_cyrene_lapith, whose prose names 'Daughter of Hypseus, king of the Lapiths ... Her grandfather is the river-god Peneus'). Authored as the named-but-absent father. His own father Peneus and (in the Diodoran variant) Cyrene's mother Chlidanope lack corpus entries and are named rather than wired; the Pindaric mother of Hypseus is the naiad Creusa (distinct from greek_creusa_athens).",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ὑψεύς (Hypseus), 'the high one', from ὕψι 'on high, aloft' / ὕψος 'height' — a height-name fitting a mountain-people's king.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ὕψι, ὕψος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_lavinia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Lavinia",
+   "alt": [
+    "Lavinia of Latium"
+   ],
+   "transliterations": {
+    "latin": "Lavinia"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "post-trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "betrothal-and-the-Latin-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 7.52-106, 7.359-372; Livy 1.1"
+     }
+    ],
+    "notes": "Only child of King Latinus of Latium and Amata; promised to Turnus, but an omen directed Latinus to wed her to the foreign Aeneas, igniting the war of the Aeneid's second half. Eponym of Lavinium, the city Aeneas founded and named for her."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Aeneas-and-motherhood-of-Silvius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Livy 1.3.1-3; Verg. Aen. 12.937-952 (the war's settlement); Dion. Hal. 1.70"
+     }
+    ],
+    "notes": "Married Aeneas; after his death, pregnant, she fled the succession-claims of her stepson Ascanius into the Latin woodland (silva), where she bore Silvius — the forest-birth aetiology of the Silvian cognomen of every later Alban king. Ruled the Latins as regent during Ascanius's minority in Livy's account."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_aeneas",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 12.937-952; Livy 1.1.9-11"
+     }
+    ],
+    "notes": "Second wife of Aeneas (after Creusa of Troy)."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_silvius",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Livy 1.3.6; Dion. Hal. 1.70"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Vergil Aeneid 6.764, 7.52-106, 12.937-952; Livy 1.1-3; Dionysius of Halicarnassus 1.70"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "marriage-to-Aeneas-and-motherhood-of-Silvius",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Livy 1.3.6; Dionysius of Halicarnassus 1.70"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Lavinia coniunx",
+    "translation": "Lavinia the bride/wife",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Verg. Aen. 6.764"
+     }
+    ]
+   }
+  ],
+  "notes": "Mortal Latin princess, daughter of Latinus; second wife of Aeneas (greek_aeneas) and mother of Silvius (greek_apollod_silvius, whose prose names 'Posthumous son of Aeneas by Lavinia ... daughter of King Latinus'). Authored as the named-but-absent spouse-and-mother. Her father Latinus and mother Amata lack Greek-tradition corpus entries (roman_latinus_silvius is a distinct later Alban king), so they are named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Italic, Latin)",
+   "etymology": "Latin Lavinia, eponym of Lavinium; connected by the ancients to the Latin people (Latini) and, by folk-etymology, the city's name. The name is the feminine civic-eponym of the Latin foundation.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Maltby, A Lexicon of Ancient Latin Etymologies, s.v. Lavinium"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_aristodama",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aristodama",
+   "alt": [
+    "Aristodame",
+    "Aristodama of Sicyon"
+   ],
+   "transliterations": {
+    "greek": "Ἀριστοδάμα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "Sicyonian-union-with-Asclepius-in-serpent-form",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.10.3, 4.14.7-8"
+     }
+    ],
+    "notes": "A Sicyonian woman whom local tradition held to be the mother of Aratus by Asclepius, the god approaching her in the form of a serpent (dragon). Pausanias records small votive figures in the Sicyon Asklepieion, one showing Aristodama riding the serpent — the cult-image of the divine conception."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.10.3"
+     }
+    ],
+    "notes": "Union with Asclepius (in serpent form) per the Sicyonian tradition."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aratus_asclepius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.10.3, 4.14.7-8"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.10.3, 4.14.7-8"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "motherhood-of-Aratus-by-Asclepius",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Pausanias 2.10.3"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [],
+  "notes": "Mortal Sicyonian woman, mother of Aratus by Asclepius per the Sicyon cult-tradition; supplied by the prose of greek_aratus_asclepius ('Son of Asclepius by Aristodama, a Sicyonian woman'). Wired as lover of greek_asclepius (RECIPROCAL-NEEDED there) and mother of greek_aratus_asclepius. Distinct from the historical Aristodama; this is the cult-foundation figure of the Sicyon Asklepieion serpent-conception narrative.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Ἀριστοδάμα (Aristodama), 'best of the people' / 'noblest in the community', from ἄριστος 'best' + δᾶμος (Doric for δῆμος) 'people, community' — a Doric-form woman's name appropriate to Sicyon.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. ἄριστος, δῆμος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_chione_boread",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Chione",
+   "alt": [
+    "Khione",
+    "Chione the Boread",
+    "Chione daughter of Boreas"
+   ],
+   "transliterations": {
+    "greek": "Χιόνη"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_hesiod_boreas",
+   "greek_oreithyia"
+  ],
+  "parentRoles": {
+   "greek_hesiod_boreas": "paternal",
+   "greek_oreithyia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-a-Boread-snow-nymph",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2, 3.15.4"
+     }
+    ],
+    "notes": "Daughter of Boreas the north wind and Oreithyia daughter of Erechtheus; a snow-nymph (chion, 'snow'), sister of the winged Boreads Calais and Zetes and of Cleopatra wife of Phineus."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-of-Eumolpus-by-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 349 Kannicht"
+     }
+    ],
+    "notes": "Bore Eumolpus to Poseidon and, to hide the birth, cast the infant into the sea; Poseidon saved him and gave him to Benthesicyme to rear. Through Eumolpus she is ancestress of the Eumolpidae, the priestly clan of the Eleusinian Mysteries."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "snow",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2 (the Boread daughter); name from chion 'snow'"
+     }
+    ],
+    "notes": "Snow-nymph of the Boread line, the wind-and-snow kindred of the north."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "snow-nature-boread",
+    "name": "Snow-nymph nature (Boread)",
+    "inheritability": "none",
+    "scopeTags": [
+     "weather",
+     "numen-nature"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2; the name Chione from chion 'snow'"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "lover",
+    "personId": "greek_hesiod_poseidon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ],
+    "notes": "By Poseidon mother of Eumolpus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_eumolpus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_cleopatra_boread",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2-3"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_calais",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_zetes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.2, 3.15.4; Euripides Erechtheus fr. 349 Kannicht; Pausanias 1.38.2"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage-and-motherhood-of-Eumolpus",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.4"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Χιόνη Βορεὰς θυγάτηρ",
+    "translation": "Chione daughter of Boreas",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.2"
+     }
+    ]
+   }
+  ],
+  "notes": "Numen — the Boread snow-nymph, fourth child of Boreas (greek_hesiod_boreas) and Oreithyia (greek_oreithyia); mother of Eumolpus (greek_eumolpus, authored in this batch) by Poseidon. DISTINCT from greek_chione (daughter of Daedalion, mother of Autolycus and Philammon) — a separate figure sharing only the snow-name; this Boread Chione is explicitly named as a sibling in the prose of greek_cleopatra_boread ('and of the Boreid Chione, mother of Eumolpus by Poseidon'). Her existing parents Boreas and Oreithyia each carry a dangling father-of/mother-of -> undefined that this entry resolves. Benthesicyme (Eumolpus's foster-mother) lacks an entry and is named rather than wired. Sibling relations to existing Calais/Zetes/Cleopatra are reported as RECIPROCAL-NEEDED.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Χιόνη (Chionē), 'snowy, snow-maiden', from χιών (chiōn) 'snow' — the snow-daughter of the north wind Boreas.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. χιών"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_eumolpus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eumolpus",
+   "alt": [
+    "Eumolpos",
+    "Eumolpus of Eleusis"
+   ],
+   "transliterations": {
+    "greek": "Εὔμολπος"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_hesiod_poseidon",
+   "greek_chione_boread"
+  ],
+  "parentRoles": {
+   "greek_hesiod_poseidon": "paternal",
+   "greek_chione_boread": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "exposure-and-rescue-by-Poseidon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ],
+    "notes": "Son of Poseidon by Chione the Boread; cast into the sea by his mother to conceal the birth, rescued by Poseidon and reared by Benthesicyme in Ethiopia. Half-divine through the Poseidon line."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "foundation-of-the-Eleusinian-Mysteries",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Hymn Dem. 154, 475-476; Apollod. 3.15.4; Paus. 1.38.3"
+     }
+    ],
+    "notes": "Founder-priest of the Eleusinian Mysteries and eponym of the Eumolpidae, the hereditary hierophant-clan; a singer (eu-molpos, 'sweet-singing') and (in some traditions) a pupil of Orpheus in the mystic rites."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "war-against-Athens-and-death-by-Erechtheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 360-370 Kannicht; Thuc. 2.15.1"
+     }
+    ],
+    "notes": "Led the Eleusinians (and a Thracian force) against Athens to claim the city for Eleusis; killed by Erechtheus, whose victory required the sacrifice of a daughter. Poseidon avenged his son by destroying Erechtheus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "mystery-cult",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Hymn Dem. 475-476; Paus. 1.38.3"
+     }
+    ],
+    "notes": "Founder of the Eleusinian Mysteries and ancestor of the Eumolpid hierophants."
+   },
+   {
+    "sphereId": "song",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "name Eumolpos, 'sweet-singing'; Suda s.v. Eumolpos"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "hierophantic-song",
+    "name": "Sacred song and mystic initiation",
+    "inheritability": "lineal",
+    "scopeTags": [
+     "cult",
+     "music",
+     "priesthood"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Hymn Dem. 475-476; the Eumolpidae descend from him as hereditary hierophants"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_hesiod_poseidon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_chione_boread",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_erechtheus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 360-370 Kannicht"
+     }
+    ],
+    "notes": "The Athenian king who killed him in the Eleusis-Athens war."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "killed-by-Erechtheus-in-the-Eleusis-Athens-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.15.4; Eur. Erechtheus fr. 370 Kannicht"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Athens / Eleusis frontier",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "hero-cult",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homeric Hymn to Demeter 154, 475-476; Apollodorus 3.15.4; Pausanias 1.38.2-3; Euripides Erechtheus fr. 360-370 Kannicht; Thucydides 2.15.1"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.15.4 (son of Poseidon and Chione the Boread)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Εὔμολπος",
+    "translation": "the sweet-singer",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "name from eu- 'well' + molpe 'song'; Hom. Hymn Dem. 475-476"
+     }
+    ]
+   }
+  ],
+  "notes": "Demigod founder-priest of the Eleusinian Mysteries and eponym of the Eumolpidae; son of Poseidon (greek_hesiod_poseidon) and Chione the Boread (greek_chione_boread, authored in this batch). Named in Chione Boread's prose as her son by Poseidon and named in greek_erechtheus's prose as the Thracian-Eleusinian foe Erechtheus killed. The enemy-relation to greek_erechtheus is reciprocated within this transcript (both are authored here). His foster-mother Benthesicyme and the later Eumolpid hierophants lack entries and are named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Εὔμολπος (Eumolpos), 'sweet-singing, of good song', from εὖ 'well' + μολπή (molpē) 'song, dance-song' — fitting the founder of a sung mystery-liturgy.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. μολπή, εὔμολπος"
+    }
+   ]
+  }
+ },
+ {
+  "id": "greek_chrysippus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Chrysippus",
+   "alt": [
+    "Chrysippos",
+    "Chrysippus of Pisa",
+    "Chrysippus of Elis"
+   ],
+   "transliterations": {
+    "greek": "Χρύσιππος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_pelops"
+  ],
+  "parentRoles": {
+   "greek_pelops": "paternal"
+  },
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-as-the-favored-bastard-of-Pelops",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hellanicus FGrHist 4 F 157; schol. Eur. Phoen. 1760; Plut. Mor. 'Parallela' 33"
+     }
+    ],
+    "notes": "Illegitimate son of Pelops by the nymph Axioche (or Danais); the favorite son, half-brother of Atreus and Thyestes. Scion-tier through the Pelopid (Tantalus-Zeus) line."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "abduction-by-Laius",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.5.5; schol. Eur. Phoen. 1760; Aelian VH 13.5"
+     }
+    ],
+    "notes": "Carried off by Laius of Thebes, who conceived a passion for him at the games and taught him to drive the chariot — the abduction treated as the origin of the curse on the house of Laius. Pelops recovered him and cursed Laius."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "murder-by-Atreus-and-Thyestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hellanicus FGrHist 4 F 157; Thuc. 1.9.2; Apollod. epit. 2.10"
+     }
+    ],
+    "notes": "Murdered by his half-brothers Atreus and Thyestes at the urging of Hippodamia, who feared Pelops would leave the kingdom to him; the fratricide is the crime for which the brothers were exiled, the prelude to the Mycenaean throne and the Pelopid curse."
+   }
+  ],
+  "domains": [],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_pelops",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.5.5; Hellanicus FGrHist 4 F 157"
+     }
+    ]
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_atreus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Thuc. 1.9.2; Hellanicus FGrHist 4 F 157"
+     }
+    ],
+    "notes": "Half-brother and one of his two murderers."
+   },
+   {
+    "kind": "half-sibling",
+    "personId": "greek_thyestes",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Thuc. 1.9.2; Hellanicus FGrHist 4 F 157"
+     }
+    ],
+    "notes": "Half-brother and one of his two murderers."
+   }
+  ],
+  "death": {
+   "manner": {
+    "classId": "murdered-by-half-brothers-Atreus-and-Thyestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hellanicus FGrHist 4 F 157; Thuc. 1.9.2"
+     }
+    ]
+   },
+   "place": {
+    "placeName": "Pisa, Elis",
+    "era": "heroic-age",
+    "sources": []
+   },
+   "era": "heroic-age",
+   "afterlifeStatus": "shade",
+   "sources": []
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.5.5, Epitome 2.10; Hellanicus FGrHist 4 F 157; Thucydides 1.9.2; Aelian Varia Historia 13.5; scholia Euripides Phoenissae 1760"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage-and-half-brotherhood",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.5.5; Hellanicus FGrHist 4 F 157; Thucydides 1.9.2"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "epithets": [
+   {
+    "original": "Χρύσιππος",
+    "translation": "golden horse / golden-of-horses",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "name from chrysos 'gold' + hippos 'horse'"
+     }
+    ]
+   }
+  ],
+  "notes": "Scion-tier favored bastard of Pelops (greek_pelops), murdered by his half-brothers Atreus and Thyestes. Authored as the named-but-absent half-brother supplied by greek_atreus's prose ('Exiled with Thyestes for the killing of their half-brother Chrysippus'). Wired to existing greek_pelops (father, RECIPROCAL father-of needed) and half-sibling to greek_atreus and greek_thyestes (RECIPROCAL-NEEDED on both). His mother the nymph Axioche and his abductor Laius lack corpus entries and are named rather than wired.",
+  "linguistic": {
+   "languageFamily": "Indo-European (Hellenic, Ancient Greek)",
+   "etymology": "Greek Χρύσιππος (Chrysippos), 'golden horse', from χρυσός (chrysos) 'gold' + ἵππος (hippos) 'horse' — a horse-name fitting the Pelopid charioteer line and the boy whom Laius taught to drive.",
+   "sources": [
+    {
+     "kind": "secondary",
+     "reference": "Liddell-Scott-Jones, Greek-English Lexicon, s.v. χρυσός, ἵππος"
+    }
+   ]
+  }
+ }
+]
+```
+
+WIRE-EDGES (existing-to-existing, recommended additions to the corpus, not authored figures):
+- greek_atreus --father-of--> greek_menelaus  (and set greek_menelaus.parentIds = [greek_atreus, greek_aerope]); Menelaus is already sibling->greek_agamemnon, whose parents are [greek_atreus, greek_aerope]. Source: Apollod. 3.10.6; Hom. Il. 2.105-108.
+- greek_glaucus_corinth --father-of--> greek_bellerophon already stands as foster-parent->greek_bellerophon; consider also greek_bellerophon --foster-father--> greek_glaucus_corinth and --mother--> greek_eurynome for symmetry (Eurynome already mother-of->greek_bellerophon). Source: Apollod. 1.9.3, 2.3.1.
+
+RECIPROCAL-NEEDED (the validator will also surface these for the symmetric relations the new figures point at existing corpus figures):
+- greek_asclepius spouse greek_epione; greek_asclepius lover greek_aristodama (add reciprocals to greek_asclepius).
+- greek_aristaeus spouse greek_autonoe (add reciprocal to greek_aristaeus).
+- greek_cleopatra_boread spouse greek_phineus (add reciprocal to greek_cleopatra_boread).
+- greek_calais / greek_zetes enemy greek_phineus; sibling greek_chione_boread (add reciprocals).
+- greek_cleopatra_boread sibling greek_chione_boread (add reciprocal).
+- greek_aeneas spouse greek_lavinia (add reciprocal to greek_aeneas).
+- greek_pelops father-of greek_chrysippus; greek_atreus half-sibling greek_chrysippus; greek_thyestes half-sibling greek_chrysippus (add reciprocals).

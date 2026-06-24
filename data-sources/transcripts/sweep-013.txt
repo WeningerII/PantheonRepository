@@ -1,0 +1,2062 @@
+Sweep 013 — STRICT ALPHABETICAL family sweep, Batch 13 (Greek: greek_aegisthus … greek_apollod_hippolytus).
+
+All 50 batch ids already exist in the corpus and are densely wired; existing wiring confirmed clean
+(every symmetric edge to an existing figure is already reciprocated). Authored below are ONLY the
+genuinely-named, primary-source-attested, currently-ABSENT direct kin (spouse / parent / child / sibling)
+of batch members. Each is wired to existing corpus ids. Reciprocals on existing figures are listed in the
+final report as RECIPROCAL-NEEDED. WIRE-EDGES (between two already-existing figures) are likewise reported,
+not re-authored here.
+
+```json
+[
+ {
+  "id": "greek_admetus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Admetus",
+   "alt": [
+    "Admetos",
+    "Admetus of Pherae"
+   ],
+   "transliterations": {
+    "greek": "Ἄδμητος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1300,
+   "mythicEnd": -1240,
+   "mythicPrecision": "generation-bracket"
+  },
+  "epithets": [
+   {
+    "original": "ἀμύμων Ἄδμητος",
+    "translation": "blameless Admetus",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.713-714"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "accession-at-Pherae-and-the-servitude-of-Apollo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.15; Eur. Alc. 1-7; Callim. Hymn 2.47-54"
+     }
+    ],
+    "notes": "King of Pherae in Thessaly, son of Pheres (eponym of the city). Host to Apollo during the year the god served a mortal as herdsman, in expiation for the slaying of the Cyclopes; Apollo, treated with conspicuous justice, made the herds of Admetus all bear twins."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-yoking-of-lion-and-boar-and-marriage-to-Alcestis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.15; Hyg. Fab. 50-51"
+     }
+    ],
+    "notes": "Won Alcestis, daughter of Pelias, by yoking a lion and a boar to one chariot — accomplishing the bridal-task with the help of Apollo. Having omitted Artemis from the wedding-sacrifices, he found the bridal chamber full of snakes; Apollo interceded with the Moirai, who granted that Admetus might escape his appointed death if another would die in his place."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-death-day-and-the-self-substitution-of-Alcestis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 280-392; Apollod. 1.9.15; Plat. Symp. 179b-c"
+     }
+    ],
+    "notes": "When the appointed death-day came, neither his aged father Pheres nor any other would die in his place; only his wife Alcestis volunteered. Heracles, received as a guest in the house of mourning, wrestled Death at the tomb and restored her to Admetus — the canonical katabasis-and-return narrative."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 1-7; Apollod. 1.9.15"
+     }
+    ]
+   },
+   {
+    "sphereId": "hospitality",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 509-567 — the xenia toward Heracles; Callim. Hymn 2.47-54"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_alcestis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.15; Eur. Alc. (throughout)"
+     }
+    ],
+    "notes": "Husband of Alcestis, who volunteered to die in his place."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_eumelus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715; Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Father of Eumelus, leader of the Pherae contingent at Troy."
+   },
+   {
+    "kind": "ally",
+    "externalRef": {
+     "name": "Apollo (Olympian; served a year as herdsman of Admetus and secured his death-day reprieve)",
+     "tradition": "Greek"
+    },
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Alc. 1-71; Callim. Hymn 2.47-54"
+     }
+    ],
+    "notes": "Apollo (greek_hesiod_apollo) as patron — externalRef pending verification of preferred deity-anchor id."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715, 23.288-289, 23.376; Eur. Alcestis (438 BCE); Apollodorus 1.9.14-15; Hyg. Fab. 50-51; Callim. Hymn 2.47-54"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.14 (son of Pheres, eponym of Pherae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal king of Pherae in Thessaly, son of Pheres; husband of Alcestis and father of Eumelus. Famed for the justice of his hospitality to Apollo during the god year of servitude, and as the beneficiary of the unique death-day reprieve that the Moirai granted at Apollo intercession — the bargain that drives the self-sacrifice of Alcestis and her rescue by Heracles. Pheres is not yet registered (externalRef); spouse Alcestis and son Eumelus wired to corpus ids."
+ },
+ {
+  "id": "greek_eumelus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Eumelus",
+   "alt": [
+    "Eumelos",
+    "Eumelus of Pherae"
+   ],
+   "transliterations": {
+    "greek": "Εὔμηλος"
+   }
+  },
+  "type": "scion",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_admetus",
+   "greek_alcestis"
+  ],
+  "parentRoles": {
+   "greek_admetus": "paternal",
+   "greek_alcestis": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1260,
+   "mythicEnd": -1200,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "scion",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Admetus-and-Alcestis-at-Pherae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.713-715"
+     }
+    ],
+    "notes": "Son of Admetus and Alcestis; scion-tier through the maternal Pelias-line descent from Poseidon (diluted to one-eighth)."
+   },
+   {
+    "typeStatus": "scion",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "leadership-of-the-Pherae-contingent-and-the-mares-of-Admetus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715, 23.288-289, 23.375-381, 23.532-538"
+     }
+    ],
+    "notes": "Led eleven ships from Pherae, Boebe, Glaphyrae and Iolcus to Troy. His mares, reared by Apollo, were the finest in the Achaean host; he led the chariot-race in the funeral games of Patroclus until Athena broke the yoke of Diomedes rival and then restored Diomedes to the front, leaving Eumelus second by misfortune — Achilles awarded him a prize of honour regardless."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "horsemanship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.763-767 — the mares of Eumelus the swiftest of all"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "mares-of-eumelus",
+    "name": "The mares of Eumelus",
+    "kind": "animal",
+    "role": "the swiftest horses in the Achaean army, reared by Apollo in Pereia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.763-767"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_admetus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.713-714"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_alcestis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.714-715"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.711-715, 2.763-767, 23.288-289, 23.375-565; Apollodorus 1.9.10; Hyg. Fab. 81 (suitor of Helen)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10; Hom. Il. 2.713-715 (son of Admetus and Alcestis)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Scion son of Admetus and Alcestis; leader of the Pherae contingent of eleven ships at Troy and owner of the swiftest mares in the Achaean army, reared by Apollo. A suitor of Helen in the Hesiodic-Catalogue tradition. Scion-tier (one-eighth divine) through the maternal Pelias-Poseidon line. Parents wired to greek_admetus and greek_alcestis."
+ },
+ {
+  "id": "greek_phaedra",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Phaedra",
+   "alt": [
+    "Phaidra",
+    "Phaedra of Crete"
+   ],
+   "transliterations": {
+    "greek": "Φαίδρα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1280,
+   "mythicEnd": -1230,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Minos-and-Pasiphae-on-Crete",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2, Epit. 1.17-19"
+     }
+    ],
+    "notes": "Daughter of Minos and Pasiphae of Crete; younger sister of Ariadne. Given in marriage to Theseus by her brother Deucalion."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Theseus-and-the-birth-of-Acamas-and-Demophon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18; Plut. Thes. 28"
+     }
+    ],
+    "notes": "Wife of Theseus at Athens; bore him Acamas and Demophon. At the wedding the Amazon who had earlier been consort to Theseus appeared in arms with her followers and threatened the guests."
+   },
+   {
+    "typeStatus": "mortal",
+    "vitalStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-passion-for-Hippolytus-the-false-accusation-and-the-suicide",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hipp. 373-731, 856-886; Apollod. Epit. 1.18-19"
+     }
+    ],
+    "notes": "Stricken by Aphrodite with passion for her stepson Hippolytus; when he rejected her she hanged herself, leaving a tablet that falsely accused him. Theseus invoked one of the curses of Poseidon and his son was destroyed by the bull from the sea — the action of the Euripidean Hippolytus (428 BCE)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_theseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18; Plut. Thes. 28"
+     }
+    ],
+    "notes": "Second wife of Theseus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_acamas",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_demophon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 1.18"
+     }
+    ]
+   },
+   {
+    "kind": "enemy",
+    "personId": "greek_apollod_hippolytus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Hipp. 373-731; Apollod. Epit. 1.18-19"
+     }
+    ],
+    "notes": "Her false accusation, after the spurned passion, destroyed her stepson Hippolytus."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Euripides Hippolytus (428 BCE); Apollodorus 3.1.2, Epitome 1.17-19; Ovid Heroides 4; Seneca Phaedra; Hyg. Fab. 47"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.1.2 (daughter of Minos and Pasiphae)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Cretan princess, daughter of Minos and Pasiphae and sister of Ariadne; second wife of Theseus and mother of Acamas and Demophon. The tragic protagonist of the Euripidean Hippolytus: her Aphrodite-sent passion for her stepson, his rejection, her suicide and accusing tablet, and the destruction of Hippolytus by the bull from the sea. Spouse and sons wired to corpus ids; her parents Minos (greek_minos) and Pasiphae are linked in prose (Pasiphae not yet registered)."
+ },
+ {
+  "id": "greek_nestor",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nestor",
+   "alt": [
+    "Nestor of Pylos",
+    "Nestor of Gerenia",
+    "Gerenian Nestor"
+   ],
+   "transliterations": {
+    "greek": "Νέστωρ"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_neleus",
+   "greek_apollod_chloris"
+  ],
+  "parentRoles": {
+   "greek_neleus": "paternal",
+   "greek_apollod_chloris": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1300,
+   "mythicEnd": -1190,
+   "mythicPrecision": "generation-bracket"
+  },
+  "epithets": [
+   {
+    "original": "Γερήνιος ἱππότα Νέστωρ",
+    "translation": "Gerenian horseman Nestor",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.336, passim"
+     }
+    ]
+   },
+   {
+    "original": "ἡδυεπής",
+    "translation": "sweet-of-speech",
+    "language": "Ancient Greek",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.247-249"
+     }
+    ]
+   }
+  ],
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Neleus-and-Chloris-and-survival-of-the-sack-of-Pylos",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Il. 11.690-693"
+     }
+    ],
+    "notes": "Youngest son of Neleus and Chloris (daughter of Amphion), at Pylos. When Heracles sacked Pylos and killed Neleus and his other sons, Nestor alone survived — being reared away among the Gerenians, whence the standing epithet Gerenian."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-wars-of-his-youth-against-the-Arcadians-and-Eleans",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.670-762, 7.132-156 (the duel with Ereuthalion)"
+     }
+    ],
+    "notes": "His own reminiscences in the Iliad recount the cattle-raid against Elis, the Pylian victory over the Epeians, and his youthful slaying of the champion Ereuthalion — the deeds of an earlier generation that frame his counsel to younger heroes."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "the-elder-counsellor-of-the-Achaeans-at-Troy",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.247-284, 2.336-368, 11.655-803; Hom. Od. 3.1-485"
+     }
+    ],
+    "notes": "Oldest of the Achaean kings at Troy, having ruled over three generations of men; revered for the persuasive wisdom of his counsel. Led ninety ships from Pylos. After the war returned safely home — the model of the prudent homecoming that Telemachus seeks out in Odyssey 3."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "wisdom",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.247-274; Hom. Od. 3"
+     }
+    ]
+   },
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 2.591-602 (the Pylian catalogue)"
+     }
+    ]
+   },
+   {
+    "sphereId": "horsemanship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 23.301-350 — the chariot-counsel to Antilochus"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "long-life-and-counsel",
+    "name": "Gift of long life and seasoned counsel",
+    "inheritability": "none",
+    "scopeTags": [
+     "wisdom"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.250-252 — having seen two generations pass and ruling among the third"
+     }
+    ],
+    "notes": "Granted by Apollo a span of years equal to those his slain brothers would have lived, per the post-Homeric scholia; in Homer simply the longest-lived of the heroes."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "cup-of-nestor",
+    "name": "The cup of Nestor",
+    "kind": "vessel",
+    "role": "the great four-handled golden goblet, studded with doves, which only Nestor could lift with ease",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 11.632-637"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_neleus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Il. 11.683-693"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_apollod_chloris",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 11.281-286"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Homer Iliad (Pylian books, esp. 1, 2, 7, 11, 23); Homer Odyssey 3; Apollodorus 1.9.9; Hom. Od. 11.281-286"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.9; Hom. Od. 11.281-286 (son of Neleus and Chloris daughter of Amphion)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod (about three-eighths divine — son of the demigod Neleus, son of Poseidon, by the quartigod Chloris, daughter of Amphion son of Zeus); the venerable Gerenian horseman of Pylos, oldest of the Achaean kings at Troy and the canonical voice of seasoned counsel. Sole survivor of the sack of Pylos by Heracles. Father of Antilochus and Thrasymedes (Trojan-War contingent) and Peisistratus. Parents wired to greek_neleus and greek_apollod_chloris — both of whom already externalRef his birth, so reciprocals resolve on wiring."
+ },
+ {
+  "id": "greek_strophius",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Strophius",
+   "alt": [
+    "Strophios",
+    "Strophius of Phocis",
+    "Strophius the Elder"
+   ],
+   "transliterations": {
+    "greek": "Στρόφιος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1270,
+   "mythicEnd": -1200,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "kingship-of-Phocis-and-marriage-to-Anaxibia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Apollod. Epit. 6.24; schol. Eur. Or. 33, 1233"
+     }
+    ],
+    "notes": "King of Phocis at Crisa beneath Parnassus; married Anaxibia, sister of Agamemnon and Menelaus, binding the house of Phocis to the Atreid line."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-fostering-of-Orestes-and-the-bond-of-Pylades",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 877-886; Soph. El. 11-14, 1110-1112; Eur. Or. 33-34, 764-765"
+     }
+    ],
+    "notes": "Received the child Orestes, smuggled out of Mycenae after the murder of Agamemnon, and raised him in his house alongside his own son Pylades — the origin of the lifelong companionship that carried Orestes through the avenging of his father."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4"
+     }
+    ]
+   },
+   {
+    "sphereId": "hospitality",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Ag. 877-886; Soph. El. 11-14"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_anaxibia_atreid",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33"
+     }
+    ],
+    "notes": "Husband of Anaxibia, sister of Agamemnon."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_pylades",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Soph. El. 1110-1112"
+     }
+    ],
+    "notes": "Father of Pylades, the companion of Orestes."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus Agamemnon 877-886; Sophocles Electra 11-14, 1110-1112; Euripides Orestes 33-34, 764-765; Pausanias 2.29.4; Apollodorus Epitome 6.24"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "schol. Eur. Or. 33 (son of Crisus son of Phocus); Paus. 2.29.4 — parentage given variously"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Mortal king of Phocis, husband of Anaxibia (sister of Agamemnon) and father of Pylades. Foster-father of the exiled Orestes, whom he reared beside his own son — the household in which the Orestes-Pylades bond was formed. His father is given variously as Crisus son of Phocus (not registered). Spouse and son wired to greek_anaxibia_atreid and the newly authored greek_pylades."
+ },
+ {
+  "id": "greek_pylades",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Pylades",
+   "alt": [
+    "Pylades of Phocis"
+   ],
+   "transliterations": {
+    "greek": "Πυλάδης"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_strophius",
+   "greek_anaxibia_atreid"
+  ],
+  "parentRoles": {
+   "greek_strophius": "paternal",
+   "greek_anaxibia_atreid": "maternal"
+  },
+  "temporal": {
+   "era": "post-trojan-war",
+   "mythicStart": -1250,
+   "mythicEnd": -1190,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 0,
+    "startEvent": "birth-at-Phocis-and-the-fostering-of-Orestes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Soph. El. 11-14; Eur. Or. 33-34; Paus. 2.29.4"
+     }
+    ],
+    "notes": "Son of Strophius of Phocis and Anaxibia, sister of Agamemnon. Raised beside the exiled Orestes, who was smuggled to Phocis after the murder of Agamemnon — the two becoming inseparable, the proverbial pair of devoted friends."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-vengeance-at-Mycenae-and-the-Taurian-rescue",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho. 900-902; Eur. IT 67-122, 674-722; Eur. Or. 1098-1245"
+     }
+    ],
+    "notes": "Stood with Orestes in the killing of Clytemnestra and Aegisthus, and braved capture in the Tauric Chersonese, where each offered to die in the place of the other before Iphigenia recognised her brother — the supreme classical exemplum of philia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "marriage-to-Electra-and-issue",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1078-1080, 1658-1659; Paus. 2.16.7"
+     }
+    ],
+    "notes": "Married Electra, sister of Orestes; their sons Medon and Strophius the Younger continued the Phocian line."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "loyalty",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. IT 674-722 — the contest of self-sacrifice with Orestes"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_strophius",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; Soph. El. 1110-1112"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_anaxibia_atreid",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "schol. Eur. Or. 33; Paus. 2.29.4"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_electra",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Eur. Or. 1078-1080, 1658-1659; Paus. 2.16.7"
+     }
+    ],
+    "notes": "Married Electra; greek_electra already records spouse->Pylades as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "companion",
+    "personId": "greek_orestes",
+    "era": "post-trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Aesch. Cho.; Eur. IT, Or.; Hom. Od. mentions Orestes vengeance"
+     }
+    ],
+    "notes": "The proverbial faithful companion of Orestes through exile, matricide and the Taurian ordeal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Aeschylus Libation Bearers; Sophocles Electra; Euripides Iphigenia among the Taurians, Orestes, Electra; Pausanias 2.16.7, 2.29.4; Apollodorus Epitome 6.24-25"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 2.29.4; schol. Eur. Or. 33 (son of Strophius and Anaxibia sister of Agamemnon)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Phocian prince, son of Strophius and Anaxibia (sister of Agamemnon), hence first cousin of Orestes; the proverbial faithful companion who shares the matricide and the Taurian rescue and weds Electra. Mortal-tier (the Atreid divine share is exhausted at this depth). Parents wired to greek_strophius (newly authored) and greek_anaxibia_atreid; spouse greek_electra and companion greek_orestes wired (Electra already externalRef his marriage)."
+ },
+ {
+  "id": "greek_proetus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Proetus",
+   "alt": [
+    "Proitos",
+    "Proetus of Tiryns"
+   ],
+   "transliterations": {
+    "greek": "Προῖτος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1360,
+   "mythicEnd": -1300,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-strife-with-Acrisius-and-exile-to-Lycia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Hom. Il. 6.157-159"
+     }
+    ],
+    "notes": "Twin of Acrisius and son of Abas, king of Argos; the brothers quarrelled even in the womb. Driven from his inheritance by Acrisius, he fled to Iobates in Lycia, married his daughter Stheneboea, and returned with a Lycian army."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-partition-of-the-Argolid-and-the-walling-of-Tiryns",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Paus. 2.16.2, 2.25.8"
+     }
+    ],
+    "notes": "By compact with Acrisius he took Tiryns, the Heraea and the Argive coast while his brother held Argos; the Cyclopes built for him the great walls of Tiryns."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-madness-of-the-Proetides-and-the-Bellerophon-affair",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.2; Hom. Il. 6.157-170"
+     }
+    ],
+    "notes": "His daughters, the Proetides, were driven mad and cured by the seer Melampus, who took a third of the kingdom in payment. To his court came Bellerophon, whom Proetus, deceived by the false charge of Stheneboea, sent to Iobates with the fatal sealed tablet."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Paus. 2.16.2"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "walls-of-tiryns",
+    "name": "The Cyclopean walls of Tiryns",
+    "kind": "structure",
+    "role": "the massive fortification built for Proetus by the Cyclopes he brought from Lycia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Paus. 2.25.8; Strabo 8.6.11"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_acrisius",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1; Hom. Il. 6.157-159"
+     }
+    ],
+    "notes": "Twin of Acrisius; greek_apollod_acrisius already records sibling->Proetus as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.2.1-2.3.2; Homer Iliad 6.157-170; Pausanias 2.16.2, 2.25.8; Bacchylides 11"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.2.1 (twin son of Abas, brother of Acrisius)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal king of Tiryns, twin brother of Acrisius and son of Abas; their womb-strife and the partition of the Argolid found the twin-kingdoms of Argos and Tiryns. Builder of the Cyclopean walls of Tiryns, host of Bellerophon, and father of the maddened Proetides. Father Abas and wife Stheneboea are noted in prose (not registered). Sibling wired to greek_apollod_acrisius, which already externalRef the twin bond."
+ },
+ {
+  "id": "greek_merope_messenia",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Merope",
+   "alt": [
+    "Merope of Messenia",
+    "Merope daughter of Cypselus"
+   ],
+   "transliterations": {
+    "greek": "Μερόπη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "post-heroic-age",
+   "mythicStart": -1150,
+   "mythicEnd": -1090,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "marriage-to-Cresphontes-the-Heraclid-king-of-Messenia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6-8"
+     }
+    ],
+    "notes": "Daughter of Cypselus, king of Arcadia; married Cresphontes, the Heraclid who drew Messenia in the partition of the Peloponnese."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-coup-of-Polyphontes-and-the-saving-of-Aepytus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.7; Hyg. Fab. 137"
+     }
+    ],
+    "notes": "When Polyphontes killed Cresphontes and her elder sons and forced her to wed him, she secreted her youngest son Aepytus with her father in Arcadia."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "the-return-of-Aepytus-and-the-fall-of-Polyphontes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.8; Hyg. Fab. 137; Arist. Poet. 1454a"
+     }
+    ],
+    "notes": "On the manhood of Aepytus the recognition and vengeance unfolded — the climax of the lost Cresphontes of Euripides, whose near-fatal mother-and-son scene Aristotle praises in the Poetics; together they killed Polyphontes and restored the Messenian throne."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_cresphontes",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6"
+     }
+    ],
+    "notes": "Wife of Cresphontes; greek_apollod_cresphontes already records spouse->Merope as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_aepytus",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.7-8; Hyg. Fab. 137"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.8.5; Pausanias 4.3.6-8; Hyginus Fabulae 137, 184; Aristotle Poetics 1454a (the Cresphontes recognition); Euripides Cresphontes (lost)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.6 (daughter of Cypselus king of Arcadia)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal queen of Messenia, daughter of Cypselus of Arcadia; wife of the Heraclid Cresphontes and mother of Aepytus. After the usurpation by Polyphontes she preserved her youngest son in Arcadia, and the recognition and vengeance she shares with the grown Aepytus is the matter of the lost Euripidean Cresphontes that Aristotle singles out. Disambiguated by id from the Pleiad Merope. Spouse wired to greek_apollod_cresphontes (which already externalRef her); son to the newly authored greek_aepytus."
+ },
+ {
+  "id": "greek_aepytus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Aepytus",
+   "alt": [
+    "Aipytos",
+    "Cresphontes the Younger",
+    "Aepytus of Messenia"
+   ],
+   "transliterations": {
+    "greek": "Αἴπυτος"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_cresphontes",
+   "greek_merope_messenia"
+  ],
+  "parentRoles": {
+   "greek_apollod_cresphontes": "paternal",
+   "greek_merope_messenia": "maternal"
+  },
+  "temporal": {
+   "era": "post-heroic-age",
+   "mythicStart": -1130,
+   "mythicEnd": -1070,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "concealment-in-Arcadia-after-the-murder-of-Cresphontes",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.7; Hyg. Fab. 137"
+     }
+    ],
+    "notes": "Youngest son of Cresphontes and Merope; when Polyphontes slew his father and brothers, his mother hid him with his grandfather Cypselus in Arcadia, where he was reared in secret."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "the-return-recognition-and-vengeance",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.8; Hyg. Fab. 137; Arist. Poet. 1454a"
+     }
+    ],
+    "notes": "Returned in manhood, was recognised by his mother in the scene Aristotle praises, and with the aid of his uncle killed Polyphontes — recovering the Messenian kingdom and so eponymously renaming the royal house the Aepytidae."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "post-heroic-age",
+    "eraOrdering": 2,
+    "startEvent": "reign-over-Messenia-and-the-Aepytid-line",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.9-10, 8.5.6"
+     }
+    ],
+    "notes": "Reigned so well that the Messenian Heraclids took their dynastic name from him rather than from Cresphontes; ancestor of Glaucus, Isthmius and the later Messenian kings down to the time of the Spartan wars."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.9; Apollod. 2.8.5"
+     }
+    ]
+   },
+   {
+    "sphereId": "vengeance",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.8; Hyg. Fab. 137"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_apollod_cresphontes",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.8.5; Paus. 4.3.7"
+     }
+    ],
+    "notes": "Son of Cresphontes; greek_apollod_cresphontes already records father-of->Aepytus as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_merope_messenia",
+    "era": "post-heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.7-8; Hyg. Fab. 137"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.8.5; Pausanias 4.3.7-10, 8.5.6; Hyginus Fabulae 137, 184; Aristotle Poetics 1454a"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 4.3.7 (youngest son of Cresphontes and Merope)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal king of Messenia, youngest son of Cresphontes and Merope, also called Cresphontes the Younger. Hidden in Arcadia after the coup of Polyphontes, he returned to avenge his father and recover the throne — the recognition-and-vengeance plot of the lost Euripidean Cresphontes that Aristotle holds up as a model. Eponym of the Messenian Aepytid dynasty. Mortal-tier (the Heraclid divine share is exhausted at this depth). Parents wired to greek_apollod_cresphontes (which already externalRef him) and the newly authored greek_merope_messenia."
+ },
+ {
+  "id": "greek_alcaeus_perseus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Alcaeus",
+   "alt": [
+    "Alkaios",
+    "Alcaeus son of Perseus"
+   ],
+   "transliterations": {
+    "greek": "Ἀλκαῖος"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_apollod_perseus",
+   "greek_apollod_andromeda"
+  ],
+  "parentRoles": {
+   "greek_apollod_perseus": "paternal",
+   "greek_apollod_andromeda": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1340,
+   "mythicEnd": -1280,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Perseus-and-Andromeda-at-Mycenae",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Son of Perseus and Andromeda, among the Perseid princes of Mycenae with his brothers Sthenelus, Heleus, Mestor and Electryon and his sister Gorgophone; quartigod-tier through the paternal Zeus-line via Perseus."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-and-the-fathering-of-Amphitryon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; Hes. Shield 1-56"
+     }
+    ],
+    "notes": "By his wife (named Astydameia, Laonome or Hipponome in the variants) father of Amphitryon and Anaxo — and so the grandfather, Alcaeus, whose name gave Heracles the patronymic-style name Alcides."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5 (the Perseid house of Mycenae)"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_apollod_perseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ]
+   },
+   {
+    "kind": "mother",
+    "personId": "greek_apollod_andromeda",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ]
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_apollod_electryon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Brother among the sons of Perseus; greek_apollod_electryon already records sibling->Alcaeus as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_sthenelus_perseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Brother of Sthenelus, father of Eurystheus."
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_apollod_amphitryon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5-6; Hes. Shield 1-56"
+     }
+    ],
+    "notes": "Father of Amphitryon (husband of Alcmene); greek_apollod_amphitryon currently carries no parentIds."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.5-6; Hesiod Shield of Heracles 1-56; Paus. 8.14.2; Hom. Il. (Alcides patronymic context)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5 (son of Perseus and Andromeda)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod Perseid prince, son of Perseus and Andromeda and brother of Sthenelus and Electryon; father of Amphitryon and grandfather (the eponymous Alcaeus) from whom Heracles took the name Alcides. Id-suffixed _perseus to disambiguate from Alcaeus the Lydian Heraclid and others. Parents wired to greek_apollod_perseus and greek_apollod_andromeda; siblings to greek_apollod_electryon (which already externalRef him) and greek_sthenelus_perseus; son to greek_apollod_amphitryon."
+ },
+ {
+  "id": "greek_nicippe",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nicippe",
+   "alt": [
+    "Nikippe",
+    "Nicippe daughter of Pelops",
+    "Archippe",
+    "Astydameia of Mycenae"
+   ],
+   "transliterations": {
+    "greek": "Νικίππη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_pelops",
+   "greek_hippodamia"
+  ],
+  "parentRoles": {
+   "greek_pelops": "paternal",
+   "greek_hippodamia": "maternal"
+  },
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1330,
+   "mythicEnd": -1270,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Pelops-and-Hippodamia",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; schol. Hom. Il. 19.116"
+     }
+    ],
+    "notes": "Daughter of Pelops and Hippodamia, sister of Atreus and Thyestes; the Pelopid bride who married into the Perseid house of Mycenae."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "marriage-to-Sthenelus-and-the-hastened-birth-of-Eurystheus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; Hom. Il. 19.95-133"
+     }
+    ],
+    "notes": "Wife of Sthenelus, king of Mycenae; mother of Eurystheus, whose birth Hera hastened to the seventh month so that he, and not Heracles, should be the Perseid born to rule, per the oath of Zeus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_sthenelus_perseus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5"
+     }
+    ],
+    "notes": "Wife of Sthenelus; greek_sthenelus_perseus already records spouse->Nicippe as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_eurystheus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5; Hom. Il. 19.116-119"
+     }
+    ],
+    "notes": "Mother of Eurystheus; greek_apollod_eurystheus already records mother->Nicippe as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 2.4.5; Homer Iliad 19.95-133 (the hastened birth of Eurystheus); scholia Hom. Il. 19.116; Hyg. Fab. 244"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.4.5 (daughter of Pelops, wife of Sthenelus)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Pelopid princess, daughter of Pelops and Hippodamia; wife of Sthenelus of Mycenae and mother of Eurystheus, the taskmaster of Heracles, whose premature birth Hera contrived. Through her the Pelopid and Perseid houses are joined a generation before the Atreidae take Mycenae. Parents wired to greek_pelops and greek_hippodamia; spouse to greek_sthenelus_perseus and son to greek_apollod_eurystheus, both of which already externalRef her."
+ },
+ {
+  "id": "greek_anaxibia_bias",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Anaxibia",
+   "alt": [
+    "Anaxibie",
+    "Anaxibia daughter of Bias",
+    "Phylomache"
+   ],
+   "transliterations": {
+    "greek": "Ἀναξιβία"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1330,
+   "mythicEnd": -1270,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Bias-and-marriage-to-Pelias",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Daughter of Bias of Argos; given in marriage to Pelias, king of Iolcus. (A variant names the wife of Pelias Phylomache, daughter of Amphion of Orchomenus.)"
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "motherhood-of-the-Peliades-and-the-sons-of-Pelias",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Bore Pelias his son Acastus and his daughters the Peliades — Alcestis, Pisidice, Pelopia, Hippothoe and the rest — among them Alcestis, fairest of the daughters of Pelias."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_pelias",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Wife of Pelias of Iolcus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_alcestis",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10, 1.9.15"
+     }
+    ],
+    "notes": "Mother of Alcestis; greek_alcestis already records mother->Anaxibia daughter of Bias as an externalRef awaiting this entry."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_acastus",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10"
+     }
+    ],
+    "notes": "Mother of Acastus; greek_acastus already records mother->Anaxibia daughter of Bias as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 1.9.10 (wife of Pelias, daughter of Bias); cf. the variant Phylomache daughter of Amphion"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.9.10 (daughter of Bias)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal queen of Iolcus, daughter of Bias of Argos and wife of Pelias; mother of Acastus and of the Peliades, among them Alcestis. Distinguished by id from Anaxibia the Atreid (greek_anaxibia_atreid). Her father Bias is noted in prose (not registered). Spouse wired to greek_pelias; daughters/son to greek_alcestis and greek_acastus, both of which already externalRef her as mother."
+ },
+ {
+  "id": "greek_hilaeira",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Hilaeira",
+   "alt": [
+    "Hilaira",
+    "Hilaeira the Leucippid"
+   ],
+   "transliterations": {
+    "greek": "Ἱλάειρα"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "temporal": {
+   "era": "heroic-age",
+   "mythicStart": -1300,
+   "mythicEnd": -1245,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "the-Leucippid-priesthood-and-the-seizure-by-the-Dioscuri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2; Paus. 3.16.1; Theoc. 22.137-170"
+     }
+    ],
+    "notes": "Daughter of Leucippus, a priestess with her sister Phoebe; the two, the Leucippides, were betrothed to the Apharetidae but were carried off by the Dioscuri — the rape of the daughters of Leucippus that touched off the fatal quarrel of the cousins."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "union-with-Castor-and-the-birth-of-Anogon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2"
+     }
+    ],
+    "notes": "Bore to Castor a son, Anogon — the only attested offspring of Castor, set beside the son Mnesileos whom her sister Phoebe bore to Polydeuces."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cult-priesthood",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Paus. 3.16.1 — the Leucippides as priestesses honoured at Sparta"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_castor",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2; Paus. 3.16.1"
+     }
+    ],
+    "notes": "Consort of Castor, by him mother of Anogon."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_anogon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2"
+     }
+    ],
+    "notes": "Mother of Anogon; greek_anogon already records mother->Hilaeira the Leucippid as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.11.2; Pausanias 1.18.1, 3.16.1; Theocritus 22.137-170; Ovid Fasti 5.699-714 (the rape of the Leucippides)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.11.2 (daughter of Leucippus); Paus. 3.16.1"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Leucippid, daughter of Leucippus and priestess with her sister Phoebe; carried off by Castor in the rape of the daughters of Leucippus and by him mother of Anogon, the only attested child of Castor. Her father Leucippus is noted in prose (not registered). Consort wired to greek_castor; son to greek_anogon, which already externalRef her as mother."
+ },
+ {
+  "id": "greek_astyoche_laomedon",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Astyoche",
+   "alt": [
+    "Astyokhe",
+    "Astyoche daughter of Laomedon"
+   ],
+   "transliterations": {
+    "greek": "Ἀστυόχη"
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_laomedon"
+  ],
+  "parentRoles": {
+   "greek_laomedon": "paternal"
+  },
+  "temporal": {
+   "era": "trojan-war",
+   "mythicStart": -1270,
+   "mythicEnd": -1190,
+   "mythicPrecision": "generation-bracket"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-to-Laomedon-and-marriage-to-Telephus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Hom. Od. 11.519-521 (Eurypylus); Quint. Smyrn. 6.135-138"
+     }
+    ],
+    "notes": "Daughter of Laomedon, king of Troy, and sister of Priam; wife of Telephus of Mysia and mother of Eurypylus."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-golden-vine-and-the-sending-of-Eurypylus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Quint. Smyrn. 6.135-185; Hom. Od. 11.520-521"
+     }
+    ],
+    "notes": "Bribed by her brother Priam with the golden vine that Zeus had given to the Trojan house in recompense for Ganymede, she prevailed on her son Eurypylus to bring the Ceteians to the defence of Troy — where he fell to Neoptolemus."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "queenship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [
+   {
+    "id": "golden-vine-of-troy",
+    "name": "The golden vine",
+    "kind": "treasure",
+    "role": "the Hephaestus-wrought vine given by Zeus for Ganymede, with which Priam bribed Astyoche to send Eurypylus to war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Quint. Smyrn. 6.135-185; Hom. Il. 5.265-267 (the recompense for Ganymede)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father",
+    "personId": "greek_laomedon",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3, Epit. 5.12"
+     }
+    ]
+   },
+   {
+    "kind": "spouse",
+    "personId": "greek_apollod_telephus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Quint. Smyrn. 6.135"
+     }
+    ],
+    "notes": "Wife of Telephus."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_apollod_eurypylus_telephus",
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.12; Hom. Od. 11.520-521"
+     }
+    ],
+    "notes": "Mother of Eurypylus; greek_apollod_eurypylus_telephus already records mother->Astyoche sister of Priam as an externalRef awaiting this entry."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollodorus 3.12.3, Epitome 5.12; Homer Odyssey 11.519-521; Quintus Smyrnaeus Posthomerica 6.135-185; Hyg. Fab. 112"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.3 (daughter of Laomedon, sister of Priam)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Mortal Trojan princess, daughter of Laomedon and sister of Priam; wife of Telephus of Mysia and mother of Eurypylus. Bribed by Priam with the golden vine to send her son to the defence of Troy. Id-suffixed _laomedon to disambiguate from the several other figures named Astyoche, including greek_apollod_astyoche (daughter of Phylas, mother of Tlepolemus). Father wired to greek_laomedon; husband to greek_apollod_telephus; son to greek_apollod_eurypylus_telephus, which already externalRef her as mother."
+ }
+]
+```

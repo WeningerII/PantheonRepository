@@ -1,0 +1,1016 @@
+Pantheon Registry — Sweep 010 (Batch 10, strict alphabetical family sweep)
+Verify-first kin sweep over: egyptian_ramesses_iii … etruscan_menrva (50 entities, all pre-existing in corpus).
+
+METHOD. Each batch entity read semantically (prose in the `notes` field). Existing relations/externalRefs cross-checked. Named, attested kin lacking a corpus entry were AUTHORED with full enrichment (schemaVersion 2), mirroring an existing same-tradition figure. WebSearch used to verify each authored figure WORK-level (WebFetch blocked); citations are work-level, no invented page numbers. Reciprocal symmetric relations supplied within-batch; RECIPROCAL-NEEDED to existing corpus figures noted in the final report.
+
+Most batch entities were ALREADY-WIRED (Ramesside cluster largely complete; Estonian Kalev/Linda/Kalevipoeg trio fully wired; Egyptian primordial/mythic deities wired). Authored below are the 12 named-attested-no-entry kin that surfaced from the externalRefs and prose. SKIPPED kin (titles/places/unnamed-collectives/literary-only-not-in-entity-prose) are listed in the final report with reasons.
+
+```json
+[
+  {
+    "id": "egyptian_ramesses_v",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Ramesses V",
+      "alt": ["Ramses V", "Amenherkhepshef II", "Amunherkhepeshef II", "Usermaatre Sekheperenre"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓇳𓁧𓊪𓏏𓇳𓄿𓂝𓈖𓅓𓈖",
+        "mdc-transliteration": "wsr-mꜤꜢt-rꜤ s-ḫpr-n-rꜤ",
+        "etymology": "Throne name Usermaatre-Sekheperenre (\"Powerful is the Maat of Re, Brought-into-being by Re\"); birth name Ramesses-Amenherkhepshef (\"Re bore him, Amun is with his strong arm\") — the princely name Amenherkhepshef being a recurring Ramesside crown-prince name."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["egyptian_ramesses_iv", "egyptian_duatentopet"],
+    "parentRoles": { "egyptian_ramesses_iv": "paternal", "egyptian_duatentopet": "maternal" },
+    "temporal": { "era": "new-kingdom", "mythicStart": -1170, "mythicEnd": -1145, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "startEvent": "birth-as-Ramesses-IV-son-by-Duatentopet",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)" }],
+        "notes": "Prince Amenherkhepshef, son of Ramesses IV by the chief queen Duatentopet. Scion-tier as the son of a quartigod pharaoh (Ramesses IV), one generation below the doctrinal son-of-Amun line of Ramesses III."
+      },
+      {
+        "typeStatus": "scion",
+        "vitalStatus": "pharaoh",
+        "startEvent": "accession-1149-bce",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Egyptian king lists; Turin Papyrus of dynastic succession; Wilbour Papyrus (land survey of his Year 4)" }],
+        "notes": "Fourth pharaoh of the 20th Dynasty, succeeding his father Ramesses IV in 1149 BCE. The Great Wilbour Papyrus, a major land-tax survey, dates to his Year 4. Reign troubled by administrative corruption (the Turin Indictment Papyrus records the misconduct of the scribe Penanuket/Pra'emhab)."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "startEvent": "death-1145-bce-and-delayed-burial",
+        "sources": [{ "kind": "secondary", "reference": "Kitchen, Ramesside Inscriptions VI; A. Dodson, Poisoned Legacy: The Decline and Fall of the Nineteenth Egyptian Dynasty (where relevant)" }],
+        "notes": "Died 1145 BCE after a reign of about four years; some sources suggest he died of smallpox (pustules noted on his mummy). Not buried until Year 2 of Ramesses VI, an unusual two-year delay attributed to disturbances by Libyan raiders at Thebes. Left no known offspring; succeeded by his uncle Ramesses VI, who usurped the tomb (KV9) Ramesses V had begun."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "egyptian_ramesses_iv", "era": "new-kingdom", "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }] },
+      { "kind": "mother", "personId": "egyptian_duatentopet", "era": "new-kingdom", "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }] },
+      { "kind": "enemy", "personId": "egyptian_ramesses_vi", "era": "new-kingdom", "notes": "His uncle and successor Ramesses VI usurped and enlarged for himself the tomb (KV9) that had been begun by and for Ramesses V.", "sources": [{ "kind": "secondary", "reference": "Kitchen, Ramesside Inscriptions VI; tomb KV9 redecoration evidence" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Great Wilbour Papyrus (land survey dated to his Year 4, Brooklyn Museum / British Museum EA 10447); Turin king-list tradition; KV9 tomb in the Valley of the Kings; his mummy in the KV35 Amenhotep II cache" }], "weight": "primary" },
+      { "claim": "parentage", "citations": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004), reconstruction from Ramesses IV / Duatentopet titulary" }], "weight": "secondary" }
+    ],
+    "notes": "Scion son of Ramesses IV by Queen Duatentopet; princely name Amenherkhepshef II. Fourth pharaoh of the 20th Dynasty (r. 1149-1145 BCE). His Year 4 is dated by the Great Wilbour Papyrus, the most important New-Kingdom land-survey document. Probably died of smallpox; burial delayed until Year 2 of Ramesses VI. Tomb KV9, begun for him, was usurped and enlarged by his uncle and successor Ramesses VI. No known offspring.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian rꜤ-ms-sw (Ramesses), \"Re has fashioned him\"; the numeral is a modern convention. His princely name Amenherkhepshef means \"Amun is with his strong arm.\"",
+      "sources": [
+        { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "ramessesv-wilbour-papyrus",
+        "name": "The Great Wilbour Papyrus",
+        "kind": "text-object",
+        "role": "subject",
+        "notes": "Major land-tax cadastral survey dated to Year 4 of Ramesses V; one of the most important administrative documents of the New Kingdom, naming thousands of plots and cultivators in Middle Egypt. A standing documentary monument of his short reign.",
+        "sources": [
+          { "kind": "primary", "reference": "Papyrus Wilbour, Brooklyn Museum 34.5596.4–5 (A. H. Gardiner, The Wilbour Papyrus, 4 vols., Oxford 1941–1952)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_ramesses_vii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Ramesses VII",
+      "alt": ["Ramses VII", "Ramesses Itamun", "Usermaatre Setepenre Meryamun"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓇳𓁧𓊪𓏏𓇳𓇋𓏏𓄿𓇋𓏠𓈖",
+        "mdc-transliteration": "wsr-mꜤꜢt-rꜤ stp-n-rꜤ",
+        "etymology": "Throne name Usermaatre-Setepenre-Meryamun (\"Powerful is the Maat of Re, Chosen of Re, Beloved of Amun\"); princely / birth name Ramesses-Itamun (\"Re bore him, sovereign-of / father-Amun\")."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["egyptian_ramesses_vi", "egyptian_nubkhesbed"],
+    "parentRoles": { "egyptian_ramesses_vi": "paternal", "egyptian_nubkhesbed": "maternal" },
+    "temporal": { "era": "new-kingdom", "mythicStart": -1160, "mythicEnd": -1129, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "startEvent": "birth-as-Ramesses-VI-son-by-Nubkhesbed",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "primary", "reference": "Stela of the God's Wife Iset from Koptos (Manchester Museum 1781), naming Nubkhesbed as queen and Iset's mother and Ramesses VII's siblings" }],
+        "notes": "Prince Ramesses-Itamun, son of Ramesses VI by the Great Royal Wife Nubkhesbed; brother of the princes Amenherkhepshef and Panebenkemyt and of the God's-Wife-of-Amun Iset. Scion-tier as son of the quartigod Ramesses VI."
+      },
+      {
+        "typeStatus": "scion",
+        "vitalStatus": "pharaoh",
+        "startEvent": "accession-1136-bce",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Egyptian king lists; Theban necropolis journals (Deir el-Medina ostraca recording soaring grain prices in his reign)" }],
+        "notes": "Sixth pharaoh of the 20th Dynasty, succeeding his father Ramesses VI in 1136 BCE. Reign of about seven years and five months marked by economic distress — record-high grain prices documented in the Deir el-Medina workmen's records, a symptom of the gathering crisis of the late New Kingdom."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "startEvent": "death-1129-bce",
+        "sources": [{ "kind": "primary", "reference": "Tomb KV1 in the Valley of the Kings" }],
+        "notes": "Died 1129 BCE. Buried in tomb KV1, a small straight-axis late-20th-Dynasty tomb in the Valley of the Kings, open since antiquity. Succeeded by Ramesses VIII."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "egyptian_ramesses_vi", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781)" }] },
+      { "kind": "mother", "personId": "egyptian_nubkhesbed", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781)" }] },
+      { "kind": "sibling", "personId": "egyptian_iset_priestess", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781) naming Iset as daughter of Ramesses VI and Nubkhesbed" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Tomb KV1 in the Valley of the Kings; Koptos stela of the God's Wife Iset (Manchester Museum 1781); Deir el-Medina price-ostraca of his reign" }], "weight": "primary" },
+      { "claim": "reign-length", "citations": [{ "kind": "primary", "reference": "Theban administrative dates (highest attested regnal year 7); Kitchen, Ramesside Inscriptions VI" }], "weight": "primary" }
+    ],
+    "notes": "Scion son of Ramesses VI by Queen Nubkhesbed; princely name Ramesses-Itamun. Sixth pharaoh of the 20th Dynasty (r. 1136-1129 BCE). His reign saw record grain prices in the Deir el-Medina records, a marker of late-New-Kingdom economic crisis. Brother of the God's Wife of Amun Iset. Buried in KV1. Surfaces in the registry only as an externalRef (father-of) on Ramesses VI until materialized here.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian rꜤ-ms-sw (Ramesses), \"Re has fashioned him\"; the numeral is a modern convention. Princely name Itamun (jt-jmn) associates him with Amun.",
+      "sources": [
+        { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "ramessesvii-kv1",
+        "name": "Tomb KV1 (Valley of the Kings)",
+        "kind": "monument",
+        "role": "occupant",
+        "notes": "Small straight-axis rock-cut tomb of Ramesses VII in the Valley of the Kings — entryway, descending corridor, rectangular burial chamber, and an unfinished side chamber — typical of compressed late-20th-Dynasty royal-tomb design. Open and visited since Greco-Roman antiquity (ancient graffiti on its walls).",
+        "sources": [
+          { "kind": "primary", "reference": "Tomb KV1, Valley of the Kings, Thebes (in situ); E. Hornung, The Valley of the Kings (1990)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_ramesses_viii",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Ramesses VIII",
+      "alt": ["Ramses VIII", "Sethherkhepshef", "Setherkhepeshef II", "Usermaatre Akhenamun"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓇳𓁧𓄿𓆱𓈖𓇋𓏠𓈖",
+        "mdc-transliteration": "wsr-mꜤꜢt-rꜤ Ꜣḫ-n-jmn",
+        "etymology": "Throne name Usermaatre-Akhenamun (\"Powerful is the Maat of Re, Useful to Amun\"); birth / princely name Ramesses-Sethherkhepshef (\"Re bore him, Set is with his strong arm\") — the Set-element a 19th/20th-Dynasty dynastic marker, paralleling Seti."
+      }
+    },
+    "type": "quartigod",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["egyptian_ramesses_iii"],
+    "parentRoles": { "egyptian_ramesses_iii": "paternal" },
+    "temporal": { "era": "new-kingdom", "mythicStart": -1180, "mythicEnd": -1126, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "quartigod",
+        "startEvent": "birth-as-Ramesses-III-son",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "primary", "reference": "Medinet Habu temple, procession of the royal sons of Ramesses III, where Prince Sethherkhepshef is named" }],
+        "notes": "One of the sons of Ramesses III named in the procession of princes at Medinet Habu (as Prince Sethherkhepshef). Quartigod-tier through the paternal Birth-Cycle line, as for his half-brothers Ramesses IV, Ramesses VI, Pentaweret and Khaemwaset."
+      },
+      {
+        "typeStatus": "quartigod",
+        "vitalStatus": "pharaoh",
+        "startEvent": "accession-1129-bce",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Egyptian king lists; rare monuments naming Usermaatre Akhenamun" }],
+        "notes": "Seventh pharaoh of the 20th Dynasty, succeeding his great-nephew Ramesses VII c. 1129 BCE — an unusual lateral succession back to a son of Ramesses III. The most obscure ruler of the dynasty, attested by only a handful of monuments; reigned at most about one to two years."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "startEvent": "death-c-1126-bce",
+        "sources": [{ "kind": "secondary", "reference": "Kitchen, Ramesside Inscriptions VI; Dodson & Hilton (2004)" }],
+        "notes": "Died c. 1126 BCE. The only 20th-Dynasty pharaoh whose royal tomb has not been securely identified in the Valley of the Kings; the tomb QV43 in the Valley of the Queens had been prepared for him earlier, when he was still Prince Setherkhepeshef. Succeeded by Ramesses IX."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "egyptian_ramesses_iii", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Medinet Habu procession of royal sons" }] },
+      { "kind": "half-sibling", "personId": "egyptian_ramesses_iv", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Common paternity from Ramesses III" }] },
+      { "kind": "half-sibling", "personId": "egyptian_ramesses_vi", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Common paternity from Ramesses III" }] },
+      { "kind": "half-sibling", "personId": "egyptian_pentaweret", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Common paternity from Ramesses III" }] },
+      { "kind": "half-sibling", "personId": "egyptian_khaemwaset_c", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Common paternity from Ramesses III" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Medinet Habu procession of the sons of Ramesses III (naming Prince Sethherkhepshef); rare monuments of Usermaatre Akhenamun; QV43 in the Valley of the Queens (prepared for him as a prince)" }], "weight": "primary" }
+    ],
+    "notes": "Quartigod son of Ramesses III; princely name Sethherkhepshef. Seventh pharaoh of the 20th Dynasty (r. c. 1129-1126 BCE), the most obscure of the dynasty, who came to the throne by a lateral succession from his great-nephew Ramesses VII. Named in the Medinet Habu procession of Ramesses III's sons. The only 20th-Dynasty king whose royal tomb is unidentified, though the queens'-valley tomb QV43 was prepared for him while still a prince. Carried in the registry as an externalRef (father-of \"Ramesses VIII\") on Ramesses III until materialized here.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian rꜤ-ms-sw (Ramesses), \"Re has fashioned him\"; the numeral is a modern convention. Princely name Sethherkhepshef means \"Set is with his strong arm,\" a martial-dynastic epithet.",
+      "sources": [
+        { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "ramessesviii-qv43",
+        "name": "Tomb QV43 (Valley of the Queens)",
+        "kind": "monument",
+        "role": "intended-occupant",
+        "notes": "Rock-cut tomb in the Valley of the Queens prepared for Prince Setherkhepeshef before his unexpected accession; decorated with scenes of the prince before deities. Its existence as a prince's tomb, together with the absence of an identified royal tomb, makes Ramesses VIII the unique tomb-less king of the 20th Dynasty.",
+        "sources": [
+          { "kind": "primary", "reference": "Tomb QV43, Valley of the Queens, Thebes (in situ)" },
+          { "kind": "secondary", "reference": "C. Leblanc, Ta Set Neferou: une nécropole de Thèbes-Ouest et son histoire (1989)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_amenmesse",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Amenmesse",
+      "alt": ["Amenmesses", "Amenmose", "Menmire Setepenre"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓇋𓏠𓈖𓄠𓋴𓋴",
+        "mdc-transliteration": "jmn-ms-sw mn-mj-rꜤ stp-n-rꜤ",
+        "etymology": "Birth name Amenmesse (jmn-ms-sw, \"Amun has fashioned him\"); throne name Menmire-Setepenre (\"Eternal like the Maat of Re, Chosen of Re\"). The Amun-birth-name parallels Ahmose, Thutmose, etc."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["egyptian_merneptah"],
+    "parentRoles": { "egyptian_merneptah": "paternal" },
+    "temporal": { "era": "new-kingdom", "mythicStart": -1230, "mythicEnd": -1198, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "startEvent": "birth-probably-as-Merneptah-son-by-Takhat",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004); R. Krauss and others on the Amenmesse problem" }],
+        "notes": "Most probably a son of Merneptah (by a secondary queen Takhat), and thus a half-brother of the designated heir Seti II; an alternative minority view makes him a son of Ramesses II. Scion-tier on the Merneptah-quartigod line, as for the registered Merneptah-children Seti II and Tausret. The exact filiation is debated, hence empty divine-paternity claim."
+      },
+      {
+        "typeStatus": "scion",
+        "vitalStatus": "rival-pharaoh",
+        "startEvent": "usurpation-of-Upper-Egypt-c-1201-bce",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Monuments in Upper Egypt and Nubia bearing Menmire Setepenre; Karnak cartouche-erasure evidence" }],
+        "notes": "Seized Thebes, Upper Egypt and Kush during the early reign of Seti II (c. 1201-1198 BCE), ruling as a rival king from the south while Seti II held Lower Egypt. The Nubian Viceroy Messuy may be identical with him. His reign and Seti II's overlap is the core of the chronological 'Amenmesse problem'."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "startEvent": "defeat-and-damnatio-by-Seti-II",
+        "sources": [{ "kind": "primary", "reference": "Tomb KV10 in the Valley of the Kings, with its decoration largely erased and overwritten by Seti II" }],
+        "notes": "Defeated by Seti II, who reasserted control of Thebes in his fifth year. Amenmesse suffered damnatio memoriae: his cartouches across Upper Egypt were replaced by Seti II's, and his tomb KV10 in the Valley of the Kings was stripped of nearly all its original decoration and partly usurped by Seti II for relatives."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "egyptian_merneptah", "era": "new-kingdom", "notes": "Most probable filiation (son of Merneptah by Takhat); debated.", "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }] },
+      { "kind": "half-sibling", "personId": "egyptian_seti_ii", "era": "new-kingdom", "notes": "If a son of Merneptah, he was a half-brother and dynastic rival of Seti II.", "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }] },
+      { "kind": "enemy", "personId": "egyptian_seti_ii", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Karnak cartouche-erasure; KV10 usurpation by Seti II" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Tomb KV10 in the Valley of the Kings; monuments of Menmire Setepenre in Upper Egypt and Nubia; Karnak Hall of Records cartouche-erasure pattern" }], "weight": "primary" }
+    ],
+    "notes": "Scion rival-king of the late 19th Dynasty (r. c. 1201-1198 BCE), most probably a son of Merneptah (by Takhat) and half-brother of Seti II, though his filiation is debated (a minority view makes him a son of Ramesses II). He seized Thebes, Upper Egypt and Kush during Seti II's reign and ruled the south as a rival before Seti II defeated him and subjected him to damnatio memoriae, usurping his tomb KV10. The 'Amenmesse problem' is the central chronological puzzle of the dynasty's end. Carried in the registry only as an externalRef (enemy) on Seti II until materialized here.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian jmn-ms-sw (Amenmesse), \"Amun has fashioned/borne him,\" of the same -mose/-messe name-type as Thutmose and Ahmose.",
+      "sources": [
+        { "kind": "secondary", "reference": "Jürgen von Beckerath, Handbuch der ägyptischen Königsnamen (1999)" },
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "amenmesse-kv10",
+        "name": "Tomb KV10 (Valley of the Kings)",
+        "kind": "monument",
+        "role": "occupant",
+        "notes": "Rock-cut royal tomb of Amenmesse in the Valley of the Kings; its original decoration was almost entirely erased or plastered over and replaced after his defeat, and the tomb was reused for the burials of two royal women (Takhat and Baketwernel). The systematic erasure is the principal physical witness to his damnatio memoriae.",
+        "sources": [
+          { "kind": "primary", "reference": "Tomb KV10, Valley of the Kings, Thebes (in situ)" },
+          { "kind": "secondary", "reference": "O. J. Schaden & E. C. Ertman, KV-10 excavation reports (Amenmesse Project)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_duatentopet",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Duatentopet",
+      "alt": ["Tentopet", "Duatentipet", "Tentipet"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓇼𓏏𓊪𓏏",
+        "mdc-transliteration": "dwꜢt-n.t-jpt",
+        "etymology": "Egyptian dwꜢt-n.t-jpt — \"Adorer (or Morning-star/Netherworld-one) of (Amun-in-)Opet,\" referencing the Opet (Luxor) cult of Amun; the short form Tentopet (tꜢ-n.t-jpt, \"she of Opet\") is used in her tomb."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["egyptian_ramesses_iii"],
+    "parentRoles": { "egyptian_ramesses_iii": "paternal" },
+    "temporal": { "era": "new-kingdom", "mythicStart": -1185, "mythicEnd": -1145, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "startEvent": "birth-probably-as-Ramesses-III-daughter",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004), reconstruction from QV74 titulary" }],
+        "notes": "Probably a daughter of Ramesses III and thus the sister or half-sister of her husband Ramesses IV (the king's-sister title in QV74 supports this), in line with the canonical Ramesside sister-wife convention. Mortal class: Egyptian queens are not divinized in the surviving record."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "great-royal-wife",
+        "startEvent": "marriage-to-Ramesses-IV",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Tomb QV74 in the Valley of the Queens, bearing her queenly titulary" }],
+        "notes": "Chief queen of Ramesses IV; held titles King's Daughter, King's Sister, King's Wife and King's Mother — the cluster by which she is identified as the wife of Ramesses IV and mother of his successor."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "queen-mother",
+        "startEvent": "birth-of-Ramesses-V",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }],
+        "notes": "Mother of the future Ramesses V (Prince Amenherkhepshef); the King's-Mother title in QV74 underlies the identification."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 3,
+        "startEvent": "burial-in-QV74",
+        "sources": [{ "kind": "primary", "reference": "Tomb QV74, Valley of the Queens" }],
+        "notes": "Buried in QV74 in the Valley of the Queens."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "egyptian_ramesses_iii", "era": "new-kingdom", "notes": "Probable filiation, from the King's-Daughter/King's-Sister titles in QV74.", "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }] },
+      { "kind": "spouse", "personId": "egyptian_ramesses_iv", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Tomb QV74 titulary (King's Wife)" }] },
+      { "kind": "mother-of", "personId": "egyptian_ramesses_v", "era": "new-kingdom", "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Tomb QV74 in the Valley of the Queens, bearing the titles King's Daughter, King's Sister, King's Wife and King's Mother" }], "weight": "primary" },
+      { "claim": "identification-as-wife-of-Ramesses-IV", "citations": [{ "kind": "secondary", "reference": "Dodson & Hilton, The Complete Royal Families of Ancient Egypt (2004)" }], "weight": "secondary" }
+    ],
+    "notes": "Mortal chief queen of Ramesses IV and mother of Ramesses V; short form Tentopet. Probably a daughter of Ramesses III and so a sister-wife of her husband, per the Ramesside convention, inferred from the King's-Daughter/King's-Sister/King's-Wife/King's-Mother titles in her tomb QV74 in the Valley of the Queens. Carried in the registry only as an externalRef (spouse) on Ramesses IV until materialized here. Mortal class.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian dwꜢt-n.t-jpt, a theophoric queen's name invoking Amun of Opet (Luxor); the hypocoristic Tentopet (tꜢ-n.t-jpt) means \"she of Opet.\"",
+      "sources": [
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "duatentopet-qv74",
+        "name": "Tomb QV74 (Valley of the Queens)",
+        "kind": "monument",
+        "role": "occupant",
+        "notes": "Decorated rock-cut tomb in the Valley of the Queens assigned to Queen Duatentopet/Tentopet; its queenly titulary is the primary source for her identity and her place in the Ramesside succession.",
+        "sources": [
+          { "kind": "primary", "reference": "Tomb QV74, Valley of the Queens, Thebes (in situ)" },
+          { "kind": "secondary", "reference": "C. Leblanc, Ta Set Neferou (1989)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_nubkhesbed",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Nubkhesbed",
+      "alt": ["Nubkhesed", "Nubkhesbet"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓋞𓐍𓋴𓆓",
+        "mdc-transliteration": "nbw-ḫsbd",
+        "etymology": "Egyptian nbw-ḫsbd — \"Gold and Lapis-lazuli,\" a precious-materials name (nbw \"gold\" + ḫsbd \"lapis lazuli / blue\"), of a type favoured for late-Ramesside royal women."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "new-kingdom", "mythicStart": -1175, "mythicEnd": -1130, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "startEvent": "birth-probably-commoner",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }],
+        "notes": "Parentage unknown; most likely born a commoner. Mortal class."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "great-royal-wife",
+        "startEvent": "marriage-to-Ramesses-VI",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Carvings in tomb KV13 mentioning Queen Nubkhesbed; Koptos stela of her daughter Iset (Manchester Museum 1781)" }],
+        "notes": "Great Royal Wife of Ramesses VI. Bore him the princes Amenherkhepshef and Panebenkemyt, the future Ramesses VII (Itamun), and the princess Iset who became God's Wife of Amun."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "queen-mother",
+        "startEvent": "appointment-of-daughter-Iset-as-Gods-Wife-of-Amun",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "sources": [{ "kind": "primary", "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781), which names Nubkhesbed as Iset's mother" }],
+        "notes": "Named on the Koptos stela recording her daughter Iset's appointment as Divine Adoratrice / God's Wife of Amun — the document that secures Nubkhesbed's maternity and her position as the mother of a pharaoh (Ramesses VII)."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 3,
+        "startEvent": "death-tomb-unknown",
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }],
+        "notes": "The whereabouts of her tomb and mummy are unknown."
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "egyptian_ramesses_vi", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Tomb KV13 carvings; Koptos stela (Manchester Museum 1781)" }] },
+      { "kind": "mother-of", "personId": "egyptian_ramesses_vii", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781)" }] },
+      { "kind": "mother-of", "personId": "egyptian_iset_priestess", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781), naming Nubkhesbed as Iset's mother" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781); carvings in tomb KV13, Valley of the Kings" }], "weight": "primary" }
+    ],
+    "notes": "Mortal Great Royal Wife of Ramesses VI and mother of Ramesses VII (Itamun) and of the God's Wife of Amun Iset (and of the princes Amenherkhepshef and Panebenkemyt). Probably of commoner birth. Her maternity is fixed by the Koptos stela of her daughter Iset (Manchester Museum 1781); she is also named in KV13. Carried in the registry only as an externalRef (spouse) on Ramesses VI until materialized here. Mortal class.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian nbw-ḫsbd, \"Gold-and-Lapis-lazuli,\" a precious-substance queen's name.",
+      "sources": [
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "nubkhesbed-koptos-stela",
+        "name": "Koptos Stela of the God's Wife Iset",
+        "kind": "monument",
+        "role": "named-on",
+        "notes": "Round-topped stela from Koptos (excavated by Flinders Petrie; Manchester Museum 1781) recording the installation of Princess Iset as God's Wife / Divine Adoratrice of Amun and naming her parents Ramesses VI and Queen Nubkhesbed — the key document for Nubkhesbed's identity and maternity.",
+        "sources": [
+          { "kind": "primary", "reference": "Stela, Manchester Museum acc. 1781 (W. M. F. Petrie, Koptos, London 1896)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_iset_priestess",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Iset",
+      "alt": ["Isis", "Aset", "Iset, God's Wife of Amun"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓊨𓏏𓆇",
+        "mdc-transliteration": "Ꜣs.t",
+        "etymology": "Egyptian Ꜣs.t (Iset/Isis), \"she of the throne\" (from st \"seat, throne\"); the goddess-name borne by this 20th-Dynasty princess, distinguished by her sacerdotal titles God's Wife of Amun and Divine Adoratrice."
+      }
+    },
+    "type": "scion",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": ["egyptian_ramesses_vi", "egyptian_nubkhesbed"],
+    "parentRoles": { "egyptian_ramesses_vi": "paternal", "egyptian_nubkhesbed": "maternal" },
+    "temporal": { "era": "new-kingdom", "mythicStart": -1160, "mythicEnd": -1120, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "scion",
+        "startEvent": "birth-as-Ramesses-VI-daughter-by-Nubkhesbed",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781), naming her parents Ramesses VI and Nubkhesbed" }],
+        "notes": "Daughter of Ramesses VI by the Great Royal Wife Nubkhesbed, and sister of Ramesses VII. Scion-tier as daughter of the quartigod Ramesses VI."
+      },
+      {
+        "typeStatus": "scion",
+        "vitalStatus": "gods-wife-of-amun",
+        "startEvent": "installation-as-Gods-Wife-and-Divine-Adoratrice-of-Amun",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781)" }],
+        "notes": "Installed by her father at Thebes as God's Wife of Amun and Divine Adoratrice of Amun — the first to hold these revived offices since the early 18th Dynasty, and probably the first God's Wife to hold the office in celibacy rather than as a king's consort. The revival prefigures the powerful celibate God's Wives of the Third Intermediate and Late periods."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "startEvent": "death-at-Thebes",
+        "sources": [{ "kind": "secondary", "reference": "Dodson & Hilton (2004)" }],
+        "notes": "Held the Theban sacerdotal office for her lifetime; her cult-political role at Thebes paralleled the rise of the High Priests of Amun under Ramessesnakht."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "egyptian_ramesses_vi", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781)" }] },
+      { "kind": "mother", "personId": "egyptian_nubkhesbed", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781)" }] },
+      { "kind": "sibling", "personId": "egyptian_ramesses_vii", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Koptos stela of the God's Wife Iset (Manchester Museum 1781; excavated by Petrie at Koptos)" }], "weight": "primary" },
+      { "claim": "office-of-Gods-Wife-of-Amun", "citations": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781); G. Robins, Women in Ancient Egypt (1993) on the revived office" }], "weight": "primary" }
+    ],
+    "notes": "Scion daughter of Ramesses VI by Queen Nubkhesbed; sister of Ramesses VII. The first holder, since the early 18th Dynasty, of the revived offices of God's Wife of Amun and Divine Adoratrice of Amun, installed at Thebes by her father — and probably the first to hold the office celibate. Attested on the Koptos stela (Manchester Museum 1781). Carried in the registry only as an externalRef (father-of \"Iset, God's Wife of Amun\") on Ramesses VI until materialized here.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian Ꜣs.t (Iset/Isis), \"she of the throne,\" from st \"seat, throne\"; a common royal-woman name in the New Kingdom.",
+      "sources": [
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" },
+        { "kind": "secondary", "reference": "Gardiner, Egyptian Grammar (1957), on Ꜣst / st" }
+      ]
+    },
+    "domains": [
+      {
+        "sphereId": "amun-cult-office",
+        "contextTag": "lifelong",
+        "term": { "value": "ḥm.t-nṯr-n-jmn / dwꜢt-nṯr", "script": "Egyptian", "rom": "hemet-netjer-en-Amun / duat-netjer" },
+        "notes": "God's Wife of Amun and Divine Adoratrice of Amun — the highest female sacerdotal office of the Theban Amun cult.",
+        "sources": [{ "kind": "primary", "reference": "Koptos stela (Manchester Museum 1781)" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "iset-priestess-koptos-stela",
+        "name": "Koptos Stela of the God's Wife Iset",
+        "kind": "monument",
+        "role": "subject",
+        "notes": "Round-topped stela from Koptos (Manchester Museum 1781) depicting and naming Princess Iset and recording her installation as God's Wife / Divine Adoratrice of Amun by her father Ramesses VI — the defining monument of her office and the source for her parentage.",
+        "sources": [
+          { "kind": "primary", "reference": "Stela, Manchester Museum acc. 1781 (W. M. F. Petrie, Koptos, London 1896)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "egyptian_tiye_harem",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Tiye",
+      "alt": ["Tiy", "Tiye (secondary wife of Ramesses III)"],
+      "transliterations": {
+        "egyptian-hieroglyphic": "𓏏𓇋𓇋",
+        "mdc-transliteration": "tjy",
+        "etymology": "Egyptian tjy/tj (Tiye), a common short feminine name; this Tiye is a distinct, later person from Queen Tiye Great Royal Wife of Amenhotep III (egyptian_tiye), being a secondary wife of Ramesses III of the 20th Dynasty."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Egyptian",
+    "primaryTradition": "Egyptian",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "new-kingdom", "mythicStart": -1185, "mythicEnd": -1155, "mythicPrecision": "generation-bracket" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "secondary-wife",
+        "startEvent": "as-minor-wife-of-Ramesses-III",
+        "era": "new-kingdom",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin (the harem-conspiracy trial transcripts)" }],
+        "notes": "A secondary (harem) wife of Ramesses III and mother of his son Prince Pentaweret. Mortal class. Distinct from the 18th-Dynasty queen Tiye."
+      },
+      {
+        "typeStatus": "mortal",
+        "startEvent": "harem-conspiracy-1155-bce",
+        "era": "new-kingdom",
+        "eraOrdering": 1,
+        "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin" }],
+        "notes": "In 1155 BCE she orchestrated the harem conspiracy at Medinet Habu to assassinate Ramesses III and place her son Pentaweret on the throne in place of the chosen heir Amenherkhepshef (the future Ramesses IV). The plot drew in some 40 conspirators — chamber officials, butlers, treasury and army officers, scribes and magicians using wax images. The king was mortally wounded (a deep throat-cut confirmed on his mummy), but the succession was not altered."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "new-kingdom",
+        "eraOrdering": 2,
+        "startEvent": "trial-and-execution",
+        "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin (recording the trials of the conspirators)" }],
+        "notes": "Tried and condemned with her fellow conspirators (her son Pentaweret was forced to commit suicide). Her precise fate is not separately specified, but the principal conspirators were executed or compelled to suicide."
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "egyptian_ramesses_iii", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin" }] },
+      { "kind": "mother-of", "personId": "egyptian_pentaweret", "era": "new-kingdom", "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin" }] },
+      { "kind": "enemy", "personId": "egyptian_ramesses_iii", "era": "new-kingdom", "notes": "She orchestrated the conspiracy that mortally wounded her husband.", "sources": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin (the harem-conspiracy trial transcripts, Museo Egizio, Turin)" }], "weight": "primary" },
+      { "claim": "role-as-conspiracy-orchestrator", "citations": [{ "kind": "primary", "reference": "Judicial Papyrus of Turin" }, { "kind": "secondary", "reference": "Hawass et al., 'Revisiting the harem conspiracy and death of Ramesses III', BMJ 345 (2012): e8268" }], "weight": "primary" }
+    ],
+    "notes": "Mortal secondary wife of Ramesses III and mother of Prince Pentaweret; the orchestrator of the 1155 BCE harem conspiracy at Medinet Habu (Judicial Papyrus of Turin) that mortally wounded the king but failed to install her son on the throne in place of Ramesses IV. A distinct person from the 18th-Dynasty Queen Tiye (egyptian_tiye). Carried in the registry only as an externalRef (spouse / mother) on Ramesses III and Pentaweret until materialized here. Mortal class.",
+    "linguistic": {
+      "languageFamily": "Afro-Asiatic (Egyptian)",
+      "etymology": "Egyptian tjy (Tiye), a frequent short feminine personal name; not to be confused with the like-named 18th-Dynasty Great Royal Wife.",
+      "sources": [
+        { "kind": "secondary", "reference": "Hermann Ranke, Die ägyptischen Personennamen (1935)" }
+      ]
+    },
+    "materialCulture": [
+      {
+        "id": "tiye-harem-judicial-papyrus",
+        "name": "Judicial Papyrus of Turin",
+        "kind": "text-object",
+        "role": "named-in",
+        "notes": "The 12th-century-BCE trial record of the conspiracy against Ramesses III, naming Tiye as instigator and recording the proceedings against the conspirators; the unique documentary source for the only confirmed Egyptian regicide and for Tiye's existence and role.",
+        "sources": [
+          { "kind": "primary", "reference": "Judicial Papyrus of Turin (Papyrus Turin 1875), Museo Egizio, Turin (T. E. Peet, 'The so-called Harem Conspiracy', JEA 10 (1924), 116–129)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "edo_idia",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Idia",
+      "alt": ["Iyoba Idia", "Idia ne Iye Esigie", "Queen Mother Idia"],
+      "transliterations": {
+        "edo": "Idia",
+        "rom": "Idia",
+        "etymology": "Edo (Bini) Idia, the personal name of the first Iyoba (Queen Mother) of Benin; popularly styled \"Idia ne Iye Esigie\" — \"Idia, the mother of Esigie.\""
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Edo",
+    "primaryTradition": "Edo",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "eweka-dynasty" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "eweka-dynasty",
+        "eraOrdering": 0,
+        "startEvent": "as-wife-of-Oba-Ozolua",
+        "sources": [{ "kind": "secondary", "reference": "Egharevba, A Short History of Benin (1968)" }],
+        "notes": "A wife of Oba Ozolua and mother of the future Oba Esigie. Mortal class. Famed in Benin tradition for her medicinal knowledge and mystical powers as well as her political counsel."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "war-leader",
+        "era": "eweka-dynasty",
+        "eraOrdering": 1,
+        "startEvent": "succession-war-on-behalf-of-Esigie-against-Arhuaran-c-1504-ce",
+        "sources": [{ "kind": "secondary", "reference": "Egharevba (1968); Met Museum, 'Idia, the First Queen Mother of Benin'" }],
+        "notes": "On Ozolua's death (c. 1504) she championed her son Esigie in the civil war against his elder brother Arhuaran of Udo, raising and supporting an army; her counsel and reputed mystical aid were credited with Esigie's victory and, subsequently, with his success in the Idah (Igala) war."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "iyoba-queen-mother",
+        "era": "eweka-dynasty",
+        "eraOrdering": 2,
+        "startEvent": "creation-of-the-Iyoba-office-and-the-Idia-ivory-mask",
+        "sources": [
+          { "kind": "secondary", "reference": "Egharevba (1968); Bradbury (1957)" },
+          { "kind": "primary", "reference": "Idia ivory pendant mask, British Museum Af1910,0513.1; Metropolitan Museum 1972.63" }
+        ],
+        "notes": "Esigie created for her the new office of Iyoba (Queen Mother) — the highest female title in Benin — together with the palace of Eguae-Iyoba at Uselu. The two surviving Idia ivory pendant masks (British Museum and Met Museum) are her commemorative court-portraits and among the most globally recognizable works of Benin art."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "eweka-dynasty",
+        "eraOrdering": 3,
+        "startEvent": "death-and-ancestral-cult",
+        "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }],
+        "notes": "Venerated after death; the Iyoba office and its ancestral cult, founded for Idia, persisted as a canonical Benin institution through the 19th century."
+      }
+    ],
+    "domains": [
+      {
+        "id": "iyoba-queen-mother",
+        "term": { "value": "Iyoba", "script": "Edo", "rom": "Iyoba" },
+        "notes": "first holder of the Queen-Mother office of Benin",
+        "sources": [
+          { "kind": "secondary", "reference": "Egharevba (1968)", "derived": true },
+          { "kind": "primary", "reference": "Idia ivory mask, British Museum + Met Museum", "derived": true }
+        ]
+      }
+    ],
+    "iconography": {
+      "attributes": [
+        {
+          "id": "idia-ivory-mask-portrait",
+          "sources": [{ "kind": "primary", "reference": "British Museum Af1910,0513.1; Met Museum 1972.63" }],
+          "notes": "The Idia ivory pendant mask — a court-portrait of Idia worn at the king's hip, crowned with a band of carved Portuguese heads and mudfish; among the most-recognizable objects of African art."
+        }
+      ]
+    },
+    "relations": [
+      { "kind": "spouse", "personId": "ozolua", "era": "eweka-dynasty", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] },
+      { "kind": "mother-of", "personId": "esigie", "era": "eweka-dynasty", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] },
+      { "kind": "mother-of", "personId": "edo_arhuaran", "era": "eweka-dynasty", "notes": "Edo tradition makes Idia the mother of both rival princes, Esigie and Arhuaran (though some versions make Arhuaran the son of a different senior wife); included per the dominant Egharevba-line tradition.", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "secondary", "reference": "J. U. Egharevba, A Short History of Benin (1968)" },
+        { "kind": "primary", "reference": "Idia ivory pendant masks, British Museum Af1910,0513.1 and Metropolitan Museum of Art 1972.63" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Mortal first Iyoba (Queen Mother) of Benin, mother of Oba Esigie. On Ozolua's death she championed Esigie against his brother Arhuaran of Udo in the succession war and was credited with his victory and with his triumph in the Idah war through her counsel and reputed mystical powers. Esigie created the Iyoba office and the Eguae-Iyoba palace for her; the two Idia ivory pendant masks (British Museum + Met Museum) are her court-portraits and the most globally recognizable Benin court objects. Carried in the registry only implicitly (Esigie's prose names her) until materialized here. Mortal class.",
+    "materialCulture": [
+      {
+        "id": "idia-ivory-pendant-mask",
+        "name": "Idia Ivory Pendant Mask",
+        "kind": "regalia",
+        "role": "subject",
+        "notes": "Hip-worn ivory pendant mask portraying Idia, the iconographic emblem of the Iyoba office; two examples survive (British Museum Af1910,0513.1; Met Museum 1972.63), each crowned with carved Portuguese heads and stylized mudfish symbolizing Benin's contact with and dominion over the sea-borne Europeans.",
+        "sources": [
+          { "kind": "primary", "reference": "British Museum Af1910,0513.1; Metropolitan Museum of Art 1972.63" }
+        ]
+      },
+      {
+        "id": "idia-eguae-iyoba-palace",
+        "name": "Eguae-Iyoba (Palace of the Queen Mother), Uselu",
+        "kind": "structure",
+        "role": "patron",
+        "notes": "The Queen-Mother's palace at Uselu established for Idia when the Iyoba office was created; the institutional seat of the Queen Mother of Benin thereafter.",
+        "sources": [
+          { "kind": "secondary", "reference": "Egharevba (1968); R. E. Bradbury, The Benin Kingdom and the Edo-speaking Peoples of South-Western Nigeria (1957)" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "idia-pwr-mystic-war-counsel",
+        "name": "Mystical and medicinal aid securing victory in war",
+        "term": { "value": "Iyoba", "script": "Edo", "rom": "Iyoba" },
+        "notes": "Benin tradition credits Idia with the medicinal knowledge and mystical power, alongside her political counsel, that won Esigie the throne and the Idah war; a personal reputation, not a heritable faculty.",
+        "inheritability": "none",
+        "scopeTags": ["magic", "healing", "leadership"],
+        "sources": [
+          { "kind": "secondary", "reference": "Egharevba (1968); Met Museum, 'Idia, the First Queen Mother of Benin'" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "edo_arhuaran",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Arhuaran",
+      "alt": ["Aruanran", "Arhuanran", "Aruan of Udo", "Idubor"],
+      "transliterations": {
+        "edo": "Arhuaran",
+        "rom": "Arhuaran",
+        "etymology": "Edo (Bini) Arhuaran (also Aruanran/Arhuanran), the personal name of the giant Enogie (Duke) of Udo, elder brother and rival of Oba Esigie; his original name is also given as Idubor."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Edo",
+    "primaryTradition": "Edo",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "parentIds": ["ozolua"],
+    "parentRoles": { "ozolua": "paternal" },
+    "temporal": { "era": "eweka-dynasty" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "eweka-dynasty",
+        "eraOrdering": 0,
+        "startEvent": "birth-as-Ozolua-son-the-elder-prince",
+        "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }],
+        "notes": "Elder son of Oba Ozolua and (in the dominant tradition) brother of Esigie. Renowned in Benin oral history as a giant of prodigious strength — said to be able to sweep the city with felled palm-trees. Mortal class; the giant-strength motif is a legendary attribute, not a divinity claim. Enogie (Duke) of Udo, a town nearly the equal of Benin City."
+      },
+      {
+        "typeStatus": "mortal",
+        "vitalStatus": "rival-claimant",
+        "era": "eweka-dynasty",
+        "eraOrdering": 1,
+        "startEvent": "succession-war-against-Esigie-c-1504-ce",
+        "sources": [{ "kind": "secondary", "reference": "Egharevba (1968); 'Aruan of Udo' tradition" }],
+        "notes": "On Ozolua's death (c. 1504) Arhuaran, ruling Udo, refused to submit to his brother Esigie and sought to make Udo the capital of the kingdom with himself as king. The ensuing civil war was decided when Esigie, aided by his mother Idia, gathered the Benin army at Unuame on the Osse river and overthrew him."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "eweka-dynasty",
+        "eraOrdering": 2,
+        "startEvent": "defeat-and-death-in-Lake-Odighi",
+        "sources": [{ "kind": "secondary", "reference": "Egharevba (1968); Benin oral tradition of Lake Odighi / Odighi-oghede" }],
+        "notes": "Defeated, and rather than be taken captive to Benin he is said in Benin tradition to have drowned himself in a lake (Lake Odighi at Udo), leaving his ivie coral-bead necklace hanging on a branch. His defeat secured Esigie's reign."
+      }
+    ],
+    "relations": [
+      { "kind": "father", "personId": "ozolua", "era": "eweka-dynasty", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] },
+      { "kind": "mother", "personId": "edo_idia", "era": "eweka-dynasty", "notes": "Per the dominant Egharevba-line tradition; some versions assign him a different senior wife as mother.", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] },
+      { "kind": "sibling", "personId": "esigie", "era": "eweka-dynasty", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] },
+      { "kind": "rival", "personId": "esigie", "era": "eweka-dynasty", "notes": "The two brothers fought the canonical succession war of the early-16th-century Benin kingdom.", "sources": [{ "kind": "secondary", "reference": "Egharevba (1968)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [{ "kind": "secondary", "reference": "J. U. Egharevba, A Short History of Benin (1968); Benin oral traditions of Udo / Lake Odighi recorded in the Aruan-of-Udo cycle" }], "weight": "secondary" }
+    ],
+    "notes": "Mortal giant Enogie (Duke) of Udo, elder brother and rival of Oba Esigie. Renowned in Benin oral history for superhuman strength (sweeping the city with palm-trees); contested the succession on Ozolua's death and sought to make Udo the capital, but was defeated by Esigie (aided by Idia) at Unuame on the Osse, and is said to have drowned himself in Lake Odighi rather than be captured. Carried in the registry only implicitly (Esigie's prose names the war with his elder brother Arhuaran) until materialized here. Mortal class; the giant motif is legendary.",
+    "materialCulture": [
+      {
+        "id": "arhuaran-ivie-necklace",
+        "name": "Ivie (coral-bead necklace)",
+        "kind": "regalia",
+        "role": "bearer",
+        "notes": "The royal coral-bead necklace (ivie) of Arhuaran which, in Benin tradition, he hung on a branch at Lake Odighi before drowning himself — a token left to be found as the sign of his end; coral regalia (ivie) is the mark of Benin royalty.",
+        "sources": [
+          { "kind": "secondary", "reference": "Egharevba (1968); Benin oral tradition of Lake Odighi" }
+        ]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "arhuaran-pwr-giant-strength",
+        "name": "Superhuman giant's strength",
+        "term": { "value": "Arhuaran", "script": "Edo", "rom": "Arhuaran" },
+        "notes": "In Benin oral history Arhuaran is a giant of prodigious strength, said to be able to sweep the city with uprooted palm-trees; a personal legendary attribute, not heritable.",
+        "inheritability": "none",
+        "scopeTags": ["strength"],
+        "sources": [
+          { "kind": "secondary", "reference": "Egharevba (1968); 'Aruan of Udo' Benin oral tradition" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "etruscan_persipnei",
+    "name": {
+      "primary": "Persipnei",
+      "alt": ["Phersipnai", "Phersipnei", "Persipnai", "Proserpnai"],
+      "transliterations": {
+        "etruscan": "phersipnai",
+        "rom": "Persipnei",
+        "etymology": "Etruscan phersipnai / persipnai, borrowed from Greek Persephonē (Φερσεφόνη/Περσεφόνη); the queen of the dead, consort of Aita, equated with Roman Proserpina."
+      }
+    },
+    "type": "deity",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "immortal",
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "startEvent": "attestation-as-queen-of-the-underworld",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "primary", "reference": "Tomb of Orcus II, Tarquinia, and Golini Tomb I, Orvieto — wall-paintings labelling \"Phersipnai\" enthroned beside \"Aita\"" }],
+        "notes": "Etruscan queen of the underworld, named and depicted enthroned at the side of Aita in the great 4th-century-BCE painted tombs; recognizable with snakes in her hair. Her name and cult are a Greek borrowing (Persephone) naturalized into the Etruscan death-realm."
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "underworld-queenship",
+        "contextTag": "lifelong",
+        "term": { "value": "phersipnai", "script": "Etruscan", "rom": "Persipnei" },
+        "sources": [{ "kind": "primary", "reference": "Tomb of Orcus II (Tarquinia); Golini Tomb I (Orvieto) inscriptions" }]
+      }
+    ],
+    "relations": [
+      { "kind": "spouse", "personId": "etruscan_aita", "era": "archaic", "sources": [{ "kind": "primary", "reference": "Tomb of Orcus II, Tarquinia, and Golini Tomb I, Orvieto, showing Phersipnai enthroned beside Aita" }], "notes": "Consort and co-enthroned queen of Aita, the Etruscan reflex of the Hades–Persephone pairing." }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Wall-paintings of the Tomb of Orcus II, Tarquinia (4th c. BCE), and the Golini Tomb I near Orvieto, with the Etruscan label phersipnai" },
+        { "kind": "secondary", "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006), ch. on the underworld" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Etruscan queen of the underworld, the counterpart of Greek Persephone and Roman Proserpina, and consort of Aita. Named and shown enthroned beside Aita (often with snakes in her hair) in the 4th-century-BCE painted tombs at Tarquinia (Tomb of Orcus II) and Orvieto (Golini Tomb I). Her name is a Greek loan naturalized into Etruscan. Carried in the registry implicitly (Aita's prose names \"Phersipnei\" enthroned beside him) until materialized here.",
+    "schemaVersion": 2,
+    "materialCulture": [
+      {
+        "id": "persipnei-orcus-tomb-painting",
+        "name": "Tomb of Orcus II wall-painting (Tarquinia)",
+        "kind": "monument",
+        "role": "depicted-in",
+        "notes": "The back-wall painting of the Tomb of Orcus II at Tarquinia depicts the enthroned underworld rulers labelled \"Aita\" and \"Phersipnai,\" overseeing the realm of the dead; with the Golini Tomb I at Orvieto it is the defining monument of Persipnei's iconography.",
+        "sources": [
+          { "kind": "primary", "reference": "Tomb of Orcus II, Monterozzi necropolis, Tarquinia (in situ, 4th c. BCE)" }
+        ]
+      }
+    ],
+    "faculties": []
+  },
+  {
+    "id": "etruscan_semla",
+    "name": {
+      "primary": "Semla",
+      "alt": ["Semia", "Semele (Etruscan)"],
+      "transliterations": {
+        "etruscan": "semla",
+        "rom": "Semla",
+        "etymology": "Etruscan semla (also semia), the Etruscan form of Greek Semelē; the mortal mother of the wine-god Fufluns by Tinia, equated with the Greek Semele."
+      }
+    },
+    "type": "mortal",
+    "origin": "canon",
+    "tradition": "Etruscan",
+    "primaryTradition": "Etruscan",
+    "sex": "female",
+    "vitalStatus": "dead",
+    "parentIds": [],
+    "parentRoles": {},
+    "temporal": { "era": "archaic" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "startEvent": "as-mortal-consort-of-Tinia-and-mother-of-Fufluns",
+        "era": "archaic",
+        "eraOrdering": 0,
+        "sources": [{ "kind": "primary", "reference": "Etruscan engraved bronze mirrors labelling \"Semla\" with the youthful \"Puphluns/Fufluns\" (4th c. BCE)" }],
+        "notes": "Mortal mother of the wine-god Fufluns by Tinia; the Etruscan reception of the Greek Semele. On an Etruscan bronze mirror she is shown holding a thyrsus and embracing the young Fufluns — an intimate post-natal pairing distinctive to the Etruscan version. Mortal class (a mortal woman loved by the chief god), though sometimes treated as an earth/underworld figure."
+      },
+      {
+        "vitalStatus": "deceased",
+        "era": "archaic",
+        "eraOrdering": 1,
+        "startEvent": "death-by-Tinias-lightning-and-retrieval-from-the-underworld",
+        "sources": [{ "kind": "secondary", "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006)" }],
+        "notes": "In the shared Dionysian myth the pregnant Semla is killed by Tinia's lightning, the infant Fufluns sewn into Tinia's thigh and later born from it; the grown Fufluns descends to the underworld to retrieve his mother — the Etruscan counterpart of Dionysus rescuing Semele."
+      }
+    ],
+    "relations": [
+      { "kind": "lover", "personId": "etruscan_tinia", "era": "archaic", "notes": "Loved by Tinia, by whom she bore Fufluns; killed by his lightning per the shared Semele/Dionysus myth.", "sources": [{ "kind": "primary", "reference": "Etruscan mirror iconography; de Grummond (2006)" }] },
+      { "kind": "mother-of", "personId": "etruscan_fufluns", "era": "archaic", "sources": [{ "kind": "primary", "reference": "Etruscan bronze mirror labelling Semla with the young Fufluns (CSE)" }] }
+    ],
+    "sources": [
+      { "claim": "existence", "citations": [
+        { "kind": "primary", "reference": "Etruscan engraved bronze mirror (4th c. BCE) labelling \"Semla\" embracing the youthful \"Puphluns,\" Corpus Speculorum Etruscorum (CSE)" },
+        { "kind": "secondary", "reference": "N. de Grummond, Etruscan Myth, Sacred History and Legend (2006)" }
+      ], "weight": "primary" }
+    ],
+    "notes": "Etruscan mortal mother of the wine-god Fufluns by Tinia — the Etruscan reception of Greek Semele (Latin Semele/Semela). Attested by name on 4th-century-BCE engraved bronze mirrors that show her, thyrsus in hand, embracing the young Fufluns. In the shared myth she is killed by Tinia's lightning while pregnant, the infant carried to term in Tinia's thigh, and later sought by the grown Fufluns in the underworld. Carried in the registry implicitly (Fufluns' prose names \"the mortal Semla\" as his mother) until materialized here. Mortal class.",
+    "schemaVersion": 2,
+    "materialCulture": [
+      {
+        "id": "semla-fufluns-mirror",
+        "name": "Etruscan bronze mirror of Semla and Fufluns",
+        "kind": "ritual-object",
+        "role": "depicted-on",
+        "notes": "Engraved bronze hand-mirror (4th c. BCE) depicting Semla, holding a thyrsus, in an embrace with the youthful wine-god Puphluns (Fufluns), both labelled in Etruscan — the principal named attestation of Semla and of the distinctive Etruscan mother-son intimacy of the myth.",
+        "sources": [
+          { "kind": "primary", "reference": "Etruscan engraved bronze mirror, Corpus Speculorum Etruscorum (CSE); de Grummond, Etruscan Myth (2006), fig. on Fufluns and Semla" }
+        ]
+      }
+    ],
+    "faculties": []
+  }
+]
+```
+
+— end sweep-010 authored figures —

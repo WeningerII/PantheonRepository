@@ -1,0 +1,274 @@
+Sweep 003 — alphabetical family-completion sweep, batch 3.
+Batch of 50 ids (armenian_amasia … balinese_barong) read in order.
+
+Outcome: the Armenian Hayk/Sassoun genealogy, the Aymara, Aztec, Pemon, Tsimshian,
+Asmat, Cantabrian, Yoruba and Balinese entities are overwhelmingly already wired.
+Two genuinely NAMED-BUT-NO-ENTRY attested kin were found and are authored below:
+
+1. armenian_sisak — per Movses Khorenatsi (Patmutyun Hayots 1.12) Sisak is a SON of
+   Gegham and BROTHER of Harma (Harmar/Arma), descendant of Hayk; eponym of Sisakan
+   (the province Syunik) and ancestor of the Syuni/Sisakean princely house. Referenced
+   by name inside the Gegham entry ("his descendant Sisak is the eponym of Syunik").
+   Wired: parentId armenian_gegham; sibling armenian_harma (reciprocal needed on Harma).
+
+2. aztec_tlazolteotl — the Aztec earth/filth-and-purification goddess named in the
+   Centeotl entry ("son of Xochiquetzal (or Tlazolteotl) in the codices"). The
+   Florentine Codex and Codex Borbonicus (fol. 13, the flayed-skin birthing scene)
+   make her the mother of Centeotl the maize lord. Authored as the variant mother;
+   Xochiquetzal is already wired as Centeotl's primary parent. Wired: mother-of
+   aztec_centeotl (reciprocal/parentId update needed on the existing Centeotl entry).
+
+```json
+[
+  {
+    "id": "armenian_sisak",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Sisak",
+      "alt": ["Սիսակ", "Sisakean eponym", "Son of Gegham"],
+      "transliterations": {
+        "armenian-classical": "Սիսակ",
+        "armenian-romanization": "Sisak"
+      }
+    },
+    "type": "mortal",
+    "tradition": "Armenian",
+    "primaryTradition": "Armenian",
+    "sex": "male",
+    "vitalStatus": "dead",
+    "origin": "canon",
+    "parentIds": ["armenian_gegham"],
+    "parentRoles": { "armenian_gegham": "paternal" },
+    "temporal": { "era": "haykazuni-mythohistorical" },
+    "lifecycle": [
+      {
+        "typeStatus": "mortal",
+        "era": "haykazuni-mythohistorical",
+        "eraOrdering": 0,
+        "notes": "Son of Gegham and brother of Harma in the Khorenatsi Haykazuni genealogy descending from Hayk. When Gegham died, the lands stretching from Lake Sevan to the Araxes River were inherited by Sisak.",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }]
+      },
+      {
+        "typeStatus": "mortal",
+        "era": "haykazuni-mythohistorical",
+        "eraOrdering": 1,
+        "notes": "The region took his name as Sisakan, and his descendants were known as the Syuni or Sisakean; after the second-century introduction of the nahang provinces the Syuni house was confirmed as lords of the province of Syunik.",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }]
+      },
+      {
+        "vitalStatus": "dead",
+        "era": "haykazuni-mythohistorical",
+        "eraOrdering": 2
+      }
+    ],
+    "domains": [
+      {
+        "id": "Haykazuni-patriarch",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12", "derived": true }]
+      },
+      {
+        "id": "Syunik-Sisakan-eponym",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }]
+      },
+      {
+        "id": "ancestor-of-the-Syuni-princely-house",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "dynastic-patriarchy",
+        "name": "Found and transmit a Haykazuni princely line",
+        "inheritability": "lineal",
+        "scopeTags": ["kingship", "ancestry"],
+        "notes": "Progenitor of the Syuni/Sisakean naxarar house that held Syunik through the historical Armenian period.",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "syunik-patrimony",
+        "name": "The lands from Lake Sevan to the Araxes",
+        "kind": "territory",
+        "role": "owner",
+        "notes": "The inherited patrimony that became the province of Sisakan/Syunik and carried his name.",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sibling",
+        "personId": "armenian_harma",
+        "era": "haykazuni-mythohistorical",
+        "sources": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }],
+        "notes": "Brother of Harma (Harmar/Arma), both sons of Gegham; Harma continues the main Haykazuni line toward Aram while Sisak founds the Syuni branch."
+      }
+    ],
+    "linguistic": {
+      "etymology": "Armenian Սիսակ Sisak; the province name Sisakan and the dynastic name Syuni/Sisakean are derived from him per Khorenatsi.",
+      "languageFamily": "Indo-European (Armenian)"
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [{ "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" }],
+        "weight": "primary"
+      },
+      {
+        "claim": "eponym-of-Syunik-and-ancestor-of-the-Syuni-house",
+        "citations": [
+          { "kind": "primary", "reference": "Movses Khorenatsi, Patmutyun Hayots 1.12" },
+          { "kind": "secondary", "reference": "Cyril Toumanoff, Studies in Christian Caucasian History (1963), on the Siwni/Syuni naxarardom" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Haykazuni patriarch named by Movses Khorenatsi as a son of Gegham and brother of Harma. On Gegham's death he inherited the lands from Lake Sevan to the Araxes; the territory took his name as Sisakan, and his descendants formed the Syuni (Sisakean) princely house that held the province of Syunik through the historical Armenian period. He is the genealogical branch-point at which the Syunik line diverges from the main Haykazuni descent that runs through his brother Harma to Aram."
+  },
+  {
+    "id": "aztec_tlazolteotl",
+    "schemaVersion": 2,
+    "name": {
+      "primary": "Tlazolteotl",
+      "alt": ["Goddess of Filth", "Tlaelcuani (Eater of Filth)", "Ixcuina", "Toci-Tlazolteotl"],
+      "transliterations": { "nahuatl": "Tlazōlteōtl", "maya": "", "quechua": "" }
+    },
+    "type": "deity",
+    "tradition": "Aztec/Mexica",
+    "primaryTradition": "Aztec/Mexica",
+    "sex": "female",
+    "vitalStatus": "living",
+    "origin": "canon",
+    "parentIds": [],
+    "temporal": { "era": "cosmogonic" },
+    "lifecycle": [
+      {
+        "typeStatus": "deity",
+        "era": "cosmogonic",
+        "notes": "Earth and purification goddess of carnal love, vice and its absolution, taken into the Mexica pantheon from the Huastec; invoked in childbirth, the steam bath, and at the harvest feast Ochpaniztli.",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Books I, VI" }]
+      }
+    ],
+    "domains": [
+      {
+        "sphereId": "earth-and-fertility",
+        "contextTag": "lifelong",
+        "term": { "value": "tlālli", "script": "Nahuatl", "rom": "tlalli" },
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Book I" }]
+      },
+      {
+        "sphereId": "purification-and-confession",
+        "contextTag": "lifelong",
+        "term": { "value": "tlazōlli", "script": "Nahuatl", "rom": "tlazolli" },
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Books I, VI" }]
+      },
+      {
+        "sphereId": "carnal-love-and-vice",
+        "contextTag": "lifelong",
+        "term": { "value": "tlazōlmiquiztli", "script": "Nahuatl", "rom": "tlazolmiquiztli" },
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Book I" }]
+      }
+    ],
+    "faculties": [
+      {
+        "id": "eat-filth-absolve-sin",
+        "name": "Consume human filth and absolve carnal transgression",
+        "term": { "value": "tlaēlcuani", "script": "Nahuatl", "rom": "tlaelcuani" },
+        "inheritability": "none",
+        "scopeTags": ["purification", "earth", "fate"],
+        "notes": "As the Filth-Eater she ingests human sin in ritual confession (neyolmelahualiztli), purifying the penitent; her blackened mouth marks the act.",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Book I; Book VI (the confessor's address)" }]
+      },
+      {
+        "id": "preside-over-birth",
+        "name": "Govern childbirth and the fertility of the soil",
+        "term": { "value": "tlācachīhualiztli", "script": "Nahuatl", "rom": "tlacachihualiztli" },
+        "inheritability": "partial",
+        "scopeTags": ["fertility", "earth"],
+        "notes": "Invoked by midwives as an earth-mother of generation; bears Centeotl the maize lord.",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Book VI" }]
+      }
+    ],
+    "materialCulture": [
+      {
+        "id": "unspun-cotton-headband",
+        "name": "Headdress of unspun cotton with two spindles",
+        "term": { "value": "ichcatl", "script": "Nahuatl", "rom": "ichcatl" },
+        "kind": "regalia",
+        "role": "wearer",
+        "notes": "Her diagnostic attribute: a cotton headband bearing two malacatl spindles, linking her to weaving and to her Huastec cotton-deity origin (Ixcuina).",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Primeros Memoriales; Codex Borbonicus" }]
+      },
+      {
+        "id": "tlazolteotl-broom",
+        "name": "Sweeping broom",
+        "term": { "value": "ochpānaliztli", "script": "Nahuatl", "rom": "ochpanaliztli" },
+        "kind": "implement",
+        "role": "wielder",
+        "notes": "The broom of the Ochpaniztli (road-sweeping) feast, by which filth and sin are cleared away.",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Book II (Ochpaniztli)" }]
+      }
+    ],
+    "epithets": [
+      {
+        "epithetId": "Tlaēlcuani",
+        "original": "Tlaēlcuani",
+        "language": "nahuatl",
+        "transliteration": "Tlaelcuani",
+        "contextTag": "cult",
+        "notes": "'Eater of Filth' — she who devours human ordure and sin and so purifies the penitent.",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex, Book I" }]
+      },
+      {
+        "epithetId": "Ixcuina",
+        "original": "Ixcuina",
+        "language": "nahuatl",
+        "transliteration": "Ixcuina",
+        "contextTag": "cult",
+        "notes": "Huastec-derived name (Ix Cuinim, cotton deity) of the goddess in her four-fold aspect (the Ixcuinanme).",
+        "sources": [{ "kind": "secondary", "reference": "Sahagún, Florentine Codex, Book I; H. B. Nicholson, Religion in Pre-Hispanic Central Mexico (HMAI vol. 10, 1971)" }]
+      }
+    ],
+    "relations": [
+      {
+        "kind": "mother-of",
+        "personId": "aztec_centeotl",
+        "era": "cosmogonic",
+        "sources": [{ "kind": "primary", "reference": "Sahagún, Florentine Codex; Codex Borbonicus, fol. 13 (Tlazolteotl giving birth to Centeotl)" }],
+        "notes": "Bears Centeotl the maize lord in the codical tradition (the flayed-skin birthing scene of Codex Borbonicus); a variant of the maternity also assigned to Xochiquetzal, who is already wired as Centeotl's primary parent."
+      },
+      {
+        "kind": "interpretatio",
+        "era": "cosmogonic",
+        "externalRef": { "name": "Ix Cuinim / Ixcuina, the Huastec cotton-and-fertility goddess from whom the Mexica cult of Tlazolteotl derives", "tradition": "Huastec" },
+        "sources": [{ "kind": "secondary", "reference": "H. B. Nicholson, Religion in Pre-Hispanic Central Mexico (HMAI vol. 10, 1971)" }],
+        "notes": "Recorded as an externalRef (no Huastec entry exists) noting the Huastec origin of the goddess."
+      }
+    ],
+    "linguistic": {
+      "languageFamily": "Uto-Aztecan (Nahuatl)",
+      "etymology": "Classical Nahuatl Tlazōlteōtl, from tlazōlli 'refuse, filth, vice' + teōtl 'deity' — 'Filth Deity / Goddess of Vice', she who consumes and so purifies human transgression.",
+      "sources": [{ "kind": "secondary", "reference": "Karttunen, An Analytical Dictionary of Nahuatl (1983), s.v. tlazōlli, teōtl" }]
+    },
+    "sources": [
+      {
+        "claim": "existence",
+        "citations": [
+          { "kind": "primary", "reference": "Sahagún, Florentine Codex, Books I, II, VI" },
+          { "kind": "primary", "reference": "Codex Borbonicus, fol. 12-13" }
+        ],
+        "weight": "primary"
+      },
+      {
+        "claim": "mother-of-Centeotl",
+        "citations": [
+          { "kind": "primary", "reference": "Sahagún, Florentine Codex (the maize-god parentage)" },
+          { "kind": "secondary", "reference": "Miller & Taube, The Gods and Symbols of Ancient Mexico and the Maya (1993), s.v. Tlazolteotl, Centeotl" }
+        ],
+        "weight": "primary"
+      }
+    ],
+    "notes": "Aztec earth, fertility and purification goddess of Huastec origin (the Ixcuina/Ixcuinanme complex); patroness of carnal love and of its ritual absolution as the Filth-Eater (Tlaelcuani), honoured at the autumn feast Ochpaniztli. In the codices she is the mother of Centeotl the maize lord — depicted in Codex Borbonicus fol. 13 giving birth to him while wearing flayed skin — a maternity that the sources alternately assign to Xochiquetzal (already the wired primary parent of Centeotl). Authored here to materialize the variant maternal link named in the Centeotl entry. Closely identified with the earth-mother Toci/Teteoinnan; her diagnostic attribute is the unspun-cotton headdress with two spindles."
+  }
+]
+```
