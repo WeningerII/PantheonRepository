@@ -3517,7 +3517,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'youth', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Hes. Theog. 950-955' }] },
         { sphereId: 'olympian-cupbearer', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Hom. Il. 4.2-3' }] },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_ares', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_apollo', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aeacus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_athena', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_dionysus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_artemis', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'spouse', personId: 'greek_apollod_heracles', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hes. Theog. 950-955' }], notes: 'Marries the apotheosed Heracles on Olympus. Reciprocal of greek_apollod_heracles.spouse.' },
       ],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Hes. Theog. 921-922, 950-955' }], weight: 'primary' }],
@@ -3552,7 +3552,7 @@ const buildPeopleSeed = () => {
       faculties: [
         { id: 'physical-strength-extreme', scopeTags: ['wrestling', 'weight-bearing'], domainTag: 'physical-force', limitTags: [], manifestationTags: [], inheritability: 'full', sources: [{ kind: 'secondary', reference: 'implied via martial prowess in Heraclidae return narratives' }] },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_eur_macaria', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'spouse', personId: 'greek_apollod_iole', era: 'heroic-age', sources: [{ kind: 'primary', reference: "Apollod. 2.7.7 (Heracles's deathbed instruction)" }] },
         { kind: 'killed-by', personId: 'greek_apollod_echemus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hdt. 9.26; Diod. 4.58' }], notes: 'Reciprocal of greek_apollod_echemus.killer-of' },
       ],
@@ -3569,6 +3569,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'greek_eur_macaria', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_apollod_hyllus', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Macaria', alt: [], transliterations: { greek: 'Μακαρία' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'female', vitalStatus: 'dead',
@@ -3645,6 +3646,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'greek_apollod_alexiares', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_apollod_anicetus', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Alexiares', alt: [], transliterations: { greek: 'Ἀλεξιάρης' } },
       type: 'deity', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'living',
@@ -3661,6 +3663,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'greek_apollod_anicetus', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_apollod_alexiares', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Anicetus', alt: [], transliterations: { greek: 'Ἀνίκητος' } },
       type: 'deity', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'living',
@@ -3815,7 +3818,7 @@ const buildPeopleSeed = () => {
       ],
       associations: [{ kind: 'rule', placeName: 'Sparta', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }], notes: 'Founder of the Agiad royal house.' }],
       domains: [{ sphereId: 'kingship-spartan', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }] }],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hdt_procles', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'twin', personId: 'greek_hdt_procles', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }], notes: 'Twin brother. Co-founder of the Spartan dual-kingship.' },
         { kind: 'rival', personId: 'greek_hdt_procles', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }] },
       ],
@@ -3846,7 +3849,7 @@ const buildPeopleSeed = () => {
       associations: [{ kind: 'rule', placeName: 'Sparta', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }], notes: 'Founder of the Eurypontid royal house.' }],
       domains: [{ sphereId: 'kingship-spartan', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }] }],
       sources: [{ claim: 'existence', citations: [{ kind: 'primary', reference: 'Hdt. 6.52' }], weight: 'primary' }],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hdt_eurysthenes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'twin', personId: 'greek_hdt_eurysthenes', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Hdt. 6.52' }], notes: 'Twin brother. Co-founder of the Spartan dual-kingship.' },
         { kind: 'rival', personId: 'greek_hdt_eurysthenes', era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Hdt. 6.52 (Pausanias 3.1.7-9 on the dual-kingship-rivalry tradition)' }], notes: 'Reciprocal of greek_hdt_eurysthenes.rival. The Eurypontid-Agiad institutional rivalry was inscribed in Spartan kingship from the foundation onward.' },
       ],
@@ -3884,7 +3887,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Athens — Areopagus', period: 'archaic-through-classical', sources: [{ kind: 'primary', reference: 'Apollod. 3.14.2 (Ares tried for slaying Halirrhothius)' }] },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_hebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_apollo', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aeacus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_athena', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_dionysus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_artemis', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'lover', personId: 'greek_otrera', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 5.1; Hyg. Fab. 30' }], notes: 'Reciprocal of greek_otrera.lover' },
         { kind: 'lover', personId: 'greek_hesiod_aphrodite', era: 'primordial', sources: [{ kind: 'primary', reference: 'Hom. Od. 8.266-366; Hes. Theog. 933-937' }], notes: 'Caught in Hephaestus\'s net mid-affair; fathered Phobos, Deimos, Harmonia, Eros, Anteros.' },
         { kind: 'enemy', personId: 'greek_hesiod_athena', era: 'primordial', sources: [{ kind: 'primary', reference: 'Hom. Il. 21.391-414' }], notes: 'Athena defeats Ares directly in the Iliadic theomachy.' },
@@ -4237,7 +4240,7 @@ const buildPeopleSeed = () => {
         { tradition: 'Roman', placeName: 'Rome — Temple of Apollo Medicus / Sosianus (Campus Martius)', kind: 'cult-center', period: 'early-republic-through-late-empire', attestation: 'Vowed 433 BCE during plague; dedicated 431 BCE. The first Roman temple to Apollo, sited outside the pomerium because the cult was foreign. Rebuilt by C. Sosius after 32 BCE (hence Apollo Sosianus). Adjacent to the Theatre of Marcellus.', source: { kind: 'primary', reference: 'Liv. 4.25, 4.29; Asc. Tog. 90' } },
         { tradition: 'Roman', placeName: 'Rome — Temple of Apollo Palatinus (Palatine Hill)', kind: 'cult-center', period: 'augustan-through-late-empire', attestation: 'Vowed by Octavian 36 BCE during Sextus Pompeius campaign; dedicated 9 October 28 BCE following Actium. Adjacent to the House of Augustus. Custodian of the Sibylline Books from 12 BCE (transferred by Augustus from the Capitoline). Site of the Ludi Saeculares (17 BCE under Augustus, 88 CE under Domitian, 204 CE under Septimius Severus). Burned 18 March 363 CE.', source: { kind: 'primary', reference: 'Suet. Aug. 29; Vell. Pat. 2.81; Cass. Dio 49.15.5, 53.1.3; Prop. 4.6; Aug. RG 19; Ov. Tr. 3.1.59-72' } },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_hebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_ares', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aeacus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_athena', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_dionysus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'lover', personId: 'greek_coronis', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hes. fr. 60; Pind. Pyth. 3.1-46; Apollod. 3.10.3' }], notes: 'Reciprocal of greek_coronis.lover' },
         { kind: 'lover', personId: 'greek_manto', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 6.3; Paus. 7.3.1-2' }], notes: 'Reciprocal of greek_manto.lover' },
         { kind: 'lover', personId: 'greek_evadne_iamus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pind. Olymp. 6.28-70' }], notes: 'Reciprocal of greek_evadne_iamus.lover' },
@@ -5158,7 +5161,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'marriage-to-Neoptolemus', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Hom. Od. 4.5-9; Eur. Andr.; Apollod. Epit. 6.13-14' }], notes: 'Promised to Neoptolemus (son of Achilles) at Troy; the marriage proved childless and bitter. The Andromache-rivalry tradition has Hermione persecuting the captive Trojan princess.' },
         { typeStatus: 'quartigod', startEvent: 'marriage-to-Orestes', era: 'heroic-age', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Eur. Andr. 891-1008, Or. 1653-1657; Apollod. Epit. 6.14' }], notes: 'After Neoptolemus\'s death at Delphi, married her cousin Orestes — to whom she had originally been pledged. Mother of Tisamenus (last Atreid king of Sparta-Mycenae before the Heraclidae return).' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_nicostratus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_pleisthenes', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aethiolas', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_maraphius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'former-spouse', externalRef: { name: 'Neoptolemus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Hom. Od. 4.5-9; Eur. Andr.' }], notes: 'Son of Achilles. Killed at Delphi.' },
         { kind: 'spouse', externalRef: { name: 'Orestes', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Eur. Or. 1653-1657' }], notes: 'Her cousin — son of Agamemnon and Clytemnestra.' },
         { kind: 'parent-of', externalRef: { name: 'Tisamenus', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.8.2-3' }], notes: 'Last Atreid king of Sparta-Mycenae before the Heraclidae return.' },
@@ -5173,6 +5176,7 @@ const buildPeopleSeed = () => {
     // ─── Nicostratus ──────────────────────────────────────────────────────
     {
       id: 'greek_nicostratus', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_hermione', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_pleisthenes', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aethiolas', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_maraphius', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Nicostratus', alt: ['Nikostratos'], transliterations: { greek: 'Νικόστρατος' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5198,6 +5202,7 @@ const buildPeopleSeed = () => {
     // ─── Pleisthenes ──────────────────────────────────────────────────────
     {
       id: 'greek_pleisthenes', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_hermione', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_nicostratus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aethiolas', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_maraphius', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Pleisthenes', alt: ['Plisthenes'], transliterations: { greek: 'Πλεισθένης' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5218,6 +5223,7 @@ const buildPeopleSeed = () => {
     // ─── Aethiolas ────────────────────────────────────────────────────────
     {
       id: 'greek_aethiolas', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_hermione', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_nicostratus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_pleisthenes', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_maraphius', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Aethiolas', alt: ['Aithiolas'], transliterations: { greek: 'Αἰθιόλας' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5252,7 +5258,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-at-Sparta', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'schol. Hom. Il. 3.175' }] },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hermione', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_nicostratus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_pleisthenes', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aethiolas', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'foundational-precursor-to', externalRef: { name: 'Maraphioi (Persian noble tribe)', tradition: 'Persian' }, era: 'classical', sources: [{ kind: 'primary', reference: 'schol. Hom. Il. 3.175; Hdt. 1.125' }], notes: 'Eponymous ancestor of one of the noble Persian tribes per the Iliad-scholiast tradition. Herodotus 1.125 lists the Maraphioi among the Persian aristocratic tribes without giving the eponym; the scholiast supplies the genealogical link to Helen.' },
       ],
       sources: [
@@ -5266,6 +5272,7 @@ const buildPeopleSeed = () => {
     // ─── Bunomus ──────────────────────────────────────────────────────────
     {
       id: 'greek_bunomus', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_aganus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_idaeus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_corythus_helen', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_helen_the_younger', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Bunomus', alt: ['Bunicus', 'Bunochus'], transliterations: { greek: 'Βούνομος' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5290,6 +5297,7 @@ const buildPeopleSeed = () => {
     // ─── Aganus ───────────────────────────────────────────────────────────
     {
       id: 'greek_aganus', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_bunomus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_idaeus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_corythus_helen', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_helen_the_younger', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Aganus', alt: [], transliterations: { greek: 'Ἄγανος' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5309,6 +5317,7 @@ const buildPeopleSeed = () => {
     // ─── Idaeus ───────────────────────────────────────────────────────────
     {
       id: 'greek_idaeus', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_bunomus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aganus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_corythus_helen', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_helen_the_younger', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Idaeus', alt: ['Idaios'], transliterations: { greek: 'Ἰδαῖος' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5333,6 +5342,7 @@ const buildPeopleSeed = () => {
     // ─── Corythus (Helen-fathered) ─────────────────────────────────────────
     {
       id: 'greek_corythus_helen', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'greek_bunomus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aganus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_idaeus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_helen_the_younger', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Corythus', alt: ['Corythus son of Helen'], transliterations: { greek: 'Κόρυθος' } },
       type: 'quartigod', origin: 'canon', tradition: 'Greek', primaryTradition: 'Greek',
       sex: 'male', vitalStatus: 'dead',
@@ -5371,7 +5381,7 @@ const buildPeopleSeed = () => {
         manner: { kind: 'killed-by-grandmother', notes: 'Killed by Hecuba, queen of Troy, at the fall of the city. Hecuba\'s motive in the tradition is rage at Helen for causing the war — the granddaughter dies as a stand-in for the unreachable mother.' },
         place: { name: 'Troy' },
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_bunomus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aganus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_idaeus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_corythus_helen', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'killed-by', externalRef: { name: 'Hecuba', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'late Trojan-cycle traditions' }] },
       ],
       sources: [
@@ -5447,7 +5457,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Aegina — the Aeakeion', period: 'archaic-and-classical', sources: [{ kind: 'primary', reference: 'Paus. 2.29.6-9; Pind. Nem. 5' }], notes: 'Sanctuary at the center of the polis of Aegina; site of the rain-prayer that ended the pan-Hellenic drought.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_hebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_ares', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_apollo', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_athena', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_dionysus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_artemis', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'mother', externalRef: { name: 'Europa (mortal Phoenician princess; daughter of King Agenor of Tyre, sister of Cadmus and Cilix). Per the Diodoran minority variant (apud Gyraldus, Syntagm. VII p. 216), Aeacus is the son of Zeus by Europa rather than by the daughter of Asopus. Adopted as registry-of-record because Europa is mortal. The Diodoran reading makes Aeacus a full-brother of Minos, Rhadamanthus, and Sarpedon — sons of Zeus by Europa — which has the additional benefit of explaining why he sits among Minos and Rhadamanthus as one of the three judges of the dead.', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'secondary', reference: 'Diod. apud Gyraldus, Syntagm. VII p. 216 (minority tradition)' }] },
         { kind: 'father-of', externalRef: { name: 'Telamon', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 3.12.6; Pind. Isth. 6.40-46' }], notes: 'Father of Ajax the Greater and Teucer; co-killer of his half-brother Phocus. Telamon\'s wife Eriboea/Periboea is mortal in the dominant tradition, so the Telamon-Ajax line passes the strict registry parentage rule even though it remains unregistered as descendant entries (Ajax is a registry-eligible quartigod under this reading; not yet entered).' },
       ],
@@ -6084,7 +6094,7 @@ const buildPeopleSeed = () => {
       domains: [
         { sphereId: 'invulnerability-to-ordinary-weapons', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 3.31; Ov. Met. 12.79-93' }], notes: 'Bronze and iron weapons could not pierce his skin — the divine endowment from Poseidon. Achilles\'s eventual killing-method (helmet-strap strangulation in Ovid; stone-strike in others) is structurally determined by this constraint.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_orion', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father-of', externalRef: { name: 'Tenes (eponym of Tenedos)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 3.23-26; Paus. 10.14.1-4' }] },
         { kind: 'father-of', externalRef: { name: 'Hemithea', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 3.23-26' }] },
         { kind: 'killed-by', externalRef: { name: 'Achilles (greatest of the Greek warriors at Troy, son of Peleus and the Nereid Thetis; not registered as cascade descendant under strict rule)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Cypria fr.; Apollod. Epit. 3.31; Ov. Met. 12.64-145' }] },
@@ -6131,7 +6141,7 @@ const buildPeopleSeed = () => {
           { id: 'bronze-club-and-lion-skin', sources: [{ kind: 'primary', reference: 'Eratosth. Cat. 32; Hyg. Astr. 2.34' }] },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_cycnus_poseidon', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'killed-by', externalRef: { name: 'Artemis (or scorpion sent by Gaia)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.4.5' }] },
       ],
       variants: [
@@ -6354,7 +6364,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'demigod', startEvent: 'building-of-army-and-kingship', era: 'mythic-prehistoric', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1' }], notes: 'Banished, gathered fighters around himself; with Odin\'s aid (warships and warriors granted by his divine father), conquered a kingdom and became king of the Huns (Húnaland in the saga\'s geography — a vague eastern-European saga-imagination region, not the historical Huns).' },
         { typeStatus: 'demigod', startEvent: 'death-by-brothers-in-law-conspiracy', era: 'mythic-prehistoric', eraOrdering: 3, sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Killed in old age by his wife\'s brothers in conspiracy. His son Rerir avenged the killing and inherited the kingdom; the Volsung line continues through Rerir → Volsung → Sigmund → Sigurd.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'norse_thor', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_bragi', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_heimdall', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_vali', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_vidarr', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father-of', personId: 'norse_rerir', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga ch. 1-2' }], notes: 'Avenger of Sigi\'s death and inheritor of the kingdom; the next generation in the Volsung line.' },
         { kind: 'foundational-precursor-to', externalRef: { name: 'Sigurd Fáfnisbani', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Volsunga saga' }], notes: 'Great-great-grandfather of Sigurd the dragon-slayer through Rerir → Volsung → Sigmund. The genealogical anchor of the Volsung-Niebelung tradition.' },
       ],
@@ -6650,7 +6660,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'moon-and-night', contextTag: 'apotheosed', sources: [{ kind: 'primary', reference: 'Jocano Outline; Pampangan tradition' }] },
         { sphereId: 'beauty-strength-and-combat', contextTag: 'apotheosed', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'tagalog_apolaki', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'sibling', personId: 'tagalog_tala', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
         { kind: 'sibling', personId: 'tagalog_hanan', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
         { kind: 'sibling', externalRef: { name: 'Apolaki (sun-god, half-sibling in some traditions)', tradition: 'Tagalog' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Pampangan tradition; Ramos Philippine Myths' }], notes: 'In the Pampangan tradition, Mayari\'s sibling-rival in the eye-blinding-and-shared-rule dispute. The sibling-relationship varies across regional traditions — sometimes full-sister, sometimes half-sister via different divine mother.' },
@@ -6681,7 +6691,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'stars-and-traditional-constellations', contextTag: 'apotheosed', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
         { sphereId: 'evening-and-morning-star', contextTag: 'apotheosed', sources: [{ kind: 'primary', reference: 'Tagalog astronomical-tradition oral record' }], notes: 'The evening and morning star — the planet Venus.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'tagalog_apolaki', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'sibling', personId: 'tagalog_mayari', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
         { kind: 'sibling', personId: 'tagalog_hanan', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
       ],
@@ -6716,7 +6726,7 @@ const buildPeopleSeed = () => {
           { id: 'dawning-sun', sources: [{ kind: 'primary', reference: 'Tagalog animism tradition' }] },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'tagalog_apolaki', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'sibling', personId: 'tagalog_mayari', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
         { kind: 'sibling', personId: 'tagalog_tala', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Jocano Outline' }] },
       ],
@@ -8549,7 +8559,7 @@ const buildPeopleSeed = () => {
           { id: 'panathenaia', cadence: 'annual + Greater every 4 years', sources: [{ kind: 'primary', reference: 'Plut. Thes. 24; Hdt. 6.111' }], notes: 'Greatest Athenian state festival; procession with peplos, sacrifices, athletic and musical contests.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_hebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_ares', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_apollo', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aeacus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_dionysus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_artemis', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'equated-with', personId: 'roman_minerva', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Minerva is the canonical Latin parallel to Greek Athena through interpretatio Romana; the Etruscan Menrva is the intermediate transmission-layer via the Capitoline Triad.' },
         { kind: 'ally', personId: 'greek_apollod_perseus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 2.4.2 (gives the polished shield); Ov. Met. 4.799-803 (places Medusa\'s head on her aegis)' }], notes: 'Reciprocal of greek_apollod_perseus.ally' },
         { kind: 'enemy', personId: 'greek_hesiod_ares', era: 'primordial', sources: [{ kind: 'primary', reference: 'Hom. Il. 5.733-863, 21.391-414' }] },
@@ -8774,7 +8784,7 @@ const buildPeopleSeed = () => {
           { id: 'anthesteria', cadence: 'annual (Anthesterion / February-March)', sources: [{ kind: 'primary', reference: 'Thuc. 2.15.4' }], notes: 'Three-day wine-festival (Pithoigia, Choes, Chytroi); first opening of the new year\'s wine.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_hebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_ares', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_apollo', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aeacus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_athena', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_artemis', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'equated-with', personId: 'roman_liber', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Liber Pater is the canonical Latin parallel to Greek Dionysus through interpretatio Romana; the 186 BCE Bacchanalia repression (Senatus consultum de Bacchanalibus) institutionally distinguishes the Roman cult from continuous Hellenic Dionysus-cult.' },
         { kind: 'interpretatio', personId: 'roman_liber', era: 'middle-republic', sources: [{ kind: 'primary', reference: 'Cic. Nat. D. 2.62; Aug. CD 6.9' }], notes: 'Dionysus ↔ Liber Pater per ancient interpretatio. Roman Liber has Italic agrarian origins (Aventine triad with Ceres and Libera, Liberalia March 17) preceding the Greek equation; the Bacchanalia of 186 BCE shows the Senate suppressing the Greek-derived ecstatic cult while keeping Italic Liber.' },
         { kind: 'equated-with', personId: 'egyptian_osiris', era: 'classical', sources: [{ kind: 'primary', reference: 'Hdt. 2.42, 2.144 (the Egyptian Dionysus = Osiris); Plut. De Iside 13, 35-36' }], notes: 'Dionysus ↔ Osiris per Greek Hellenistic-era interpretatio Aegyptiaca. Both are dying-and-rising gods; the Orphic Zagreus-dismemberment narrative parallels the Osirian dismemberment by Set.' },
@@ -8944,7 +8954,7 @@ const buildPeopleSeed = () => {
           { placeName: 'Delos', period: 'archaic-through-hellenistic', sources: [{ kind: 'primary', reference: 'h.Hom.Apoll. 16-18' }], notes: 'Birthplace shared with twin Apollo per the Homeric Hymn.' },
         ],
       },
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_hebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_ares', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aeacus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_athena', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_dionysus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hermes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'equated-with', personId: 'roman_diana', era: 'archaic', sources: [{ kind: 'secondary', reference: 'Standard interpretatio Graeca/Romana scholarship; Beard, North & Price, Religions of Rome (1998); Wissowa, Religion und Kultus der Römer (1912)' }], notes: 'Roman Diana is the canonical Latin parallel to Greek Artemis through interpretatio Romana; the Aricine Diana Nemorensis grove cult and Aventine Diana Aventinensis cult are pre-equation Italic foundations later harmonized with Hellenic Artemis.' },
         { kind: 'killer-of', personId: 'greek_tityus', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.4.1' }], notes: 'Reciprocal of greek_tityus.killed-by' },
         { kind: 'sibling', personId: 'greek_hesiod_apollo', era: 'primordial', sources: [{ kind: 'primary', reference: 'h.Hom.Apoll. 14-18 (twin birth on Delos to Leto)' }] },
@@ -13838,7 +13848,7 @@ const buildPeopleSeed = () => {
         { id: 'megingjord', classId: 'belt', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the girdle of strength that doubles his power)' }] },
         { id: 'jarngreipr', classId: 'gauntlets', kind: 'garment', sources: [{ kind: 'primary', reference: 'Gylfaginning 21 (the iron gloves needed to wield Mjǫllnir)' }] },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'norse_sigi', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_bragi', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_heimdall', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_vali', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'norse_vidarr', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'mother', personId: 'norse_jord', era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Gylfaginning 9; Skáldskaparmál' }] },
         { kind: 'enemy', externalRef: { name: 'Jǫrmungandr (the Midgard Serpent; Thor\'s doom at Ragnarǫk)', tradition: 'Norse' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Vǫluspá 56; Gylfaginning 51' }], notes: 'They slay each other at Ragnarǫk; Thor walks nine steps before falling from the serpent\'s venom.' },
       ],
@@ -20135,7 +20145,7 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
         { claim: 'apotheosis', citations: [{ kind: 'secondary', reference: 'Idowu, Olódùmarè (1962)' }, { kind: 'secondary', reference: 'Verger (1957)' }], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'ajaka', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'equated-with', personId: 'ewe_so', sources: [{ kind: 'secondary', reference: 'West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)' }], notes: 'The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango).' },
         { kind: 'equated-with', personId: 'fon_sogbo', sources: [{ kind: 'secondary', reference: 'West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)' }], notes: 'The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango).' },
       ],
@@ -20143,6 +20153,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'ajaka',
+      relations: [{ kind: 'sibling', personId: 'shango', notes: 'Full sibling; shares the same complete attested parentage.' }],
       schemaVersion: 2,
       name: { primary: 'Ajaka', alt: ['Ajagun', 'Ajagunna'], transliterations: { 'yoruba': 'Ajaka' } },
       type: 'quartigod', tradition: 'Yoruba', primaryTradition: 'Yoruba', sex: 'male', vitalStatus: 'dead',
@@ -20976,7 +20987,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'birth-as-Karna-son', era: 'dvapara-yuga', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Mahābhārata Droṇa Parva 25; Karṇa Parva 50' }], notes: 'Son of Karṇa (Sūrya-paternal demigod). Quartigod-tier through paternal Sūrya-line.' },
         { typeStatus: 'quartigod', startEvent: 'death-by-Nakula-at-Kurukshetra', era: 'dvapara-yuga', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Mahābhārata Karṇa Parva 50' }], notes: 'Killed at Kurukshetra by Nakula in the cluster of Karṇa-son deaths in Karṇa Parva 50.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'hindu_sushena_karna', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'hindu_vrishaketu_karna', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'hindu_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 50' }] },
         { kind: 'sibling', personId: 'hindu_vrishasena_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 48-50' }], notes: 'Brother through their shared father Karṇa.' },
         { kind: 'sibling', personId: 'hindu_satyasena_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 50' }], notes: 'Brother through their shared father Karṇa; killed in the same Karṇa Parva 50 death-cluster by Nakula.' },
@@ -21002,7 +21013,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'birth-as-Karna-son', era: 'dvapara-yuga', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Mahābhārata Droṇa Parva 25; Karṇa Parva 50' }], notes: 'Son of Karṇa (Sūrya-paternal demigod). Quartigod-tier through paternal Sūrya-line.' },
         { typeStatus: 'quartigod', startEvent: 'death-by-Nakula-at-Kurukshetra', era: 'dvapara-yuga', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Mahābhārata Karṇa Parva 50' }], notes: 'Killed at Kurukshetra by Nakula in the same Karṇa-son death-cluster as Citrasena.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'hindu_sushena_karna', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'hindu_vrishaketu_karna', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'hindu_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 50' }] },
         { kind: 'sibling', personId: 'hindu_vrishasena_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 48-50' }], notes: 'Brother through their shared father Karṇa.' },
         { kind: 'sibling', personId: 'hindu_chitrasena_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 50' }], notes: 'Brother through their shared father Karṇa.' },
@@ -21028,7 +21039,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'birth-as-Karna-son', era: 'dvapara-yuga', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Mahābhārata Karṇa Parva 56' }], notes: 'Son of Karṇa (Sūrya-paternal demigod). Quartigod-tier through paternal Sūrya-line.' },
         { typeStatus: 'quartigod', startEvent: 'death-by-Bhima-at-Kurukshetra', era: 'dvapara-yuga', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Mahābhārata Karṇa Parva 56' }], notes: 'Killed at Kurukshetra by Bhīma.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'hindu_chitrasena_karna', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'hindu_satyasena_karna', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'hindu_vrishaketu_karna', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'hindu_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 56' }] },
         { kind: 'sibling', personId: 'hindu_vrishasena_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 48-56' }], notes: 'Brother through their shared father Karṇa.' },
         { kind: 'killed-by', externalRef: { name: 'Bhīma (Karṇa Parva 56)', tradition: 'Hindu' }, era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Karṇa Parva 56' }] },
@@ -21052,7 +21063,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Karna-son-and-Kurukshetra-survivor', era: 'dvapara-yuga', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Mahābhārata (BORI) Āśvamedhika Parva 76, 83 (mention as sole-surviving Karṇa-son); Jaiminīya Aśvamedha Parva (regional, c.12th c.) for the expanded biographical material' }], notes: 'Sole-surviving son of Karṇa (Sūrya-paternal demigod) after the Kurukshetra war. Quartigod-tier through paternal Sūrya-line. The Mahābhārata BORI Critical Edition mentions Vṛṣaketu only briefly in the Āśvamedhika Parva as the surviving Karṇa-son adopted into the Pāṇḍava court after Kuntī\'s revelation of Karṇa\'s parentage; the Jaiminīya Aśvamedha Parva (a regional 12th-c. Sanskrit recension, NOT BORI mainline) develops his biographical narrative as the Aśvamedha-horse-protector who fights and is killed by Babhruvāhana before his Ulūpī-revival. ATTESTATION-FLAG: BORI Critical Edition gives only the survival-and-adoption mention; the death-narrative is Jaiminīya-recension only. Treat as semi-primary per the Tony-research-report caveat.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'hindu_chitrasena_karna', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'hindu_satyasena_karna', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'hindu_sushena_karna', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'hindu_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Āśvamedhika Parva 76, 83' }] },
         { kind: 'sibling', personId: 'hindu_vrishasena_karna', era: 'dvapara-yuga', sources: [{ kind: 'primary', reference: 'Mbh. Āśvamedhika Parva 76' }], notes: 'Brother through their shared father Karṇa; sole-survivor of the Kurukshetra death-cluster.' },
       ],
@@ -21738,7 +21749,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-Epione-daughter', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Anonymous Erythraean Paean (Inscr. Erythrai 205, c.380 BCE = IGRR IV 1505); Lycophron, Alexandra 1054 with Tzetzes scholia; Pausanias 1.23.4, 2.11.6, 2.27.6' }], notes: 'Daughter of Asclepius by Epione. Quartigod-tier through paternal Apollo-line. Promoted to deity-cult-status in the imperial-period Asclepieia where she received independent worship as Hygieia/Salus alongside her father.' },
         { typeStatus: 'apotheosed', startEvent: 'cult-status-as-personified-Health', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Pausanias 1.23.4 (Athenian Acropolis); Pausanias 2.11.6, 2.27.6 (Epidauros sanctuary); Aristophanes, Plutus 701; LIMC entries; numerous Hellenistic-imperial-period statue-cults across the Greek world' }], notes: 'Achieved independent cult-deity status by the late-Classical period; received worship as Hygieia/Salus across the Mediterranean. The canonical iconography pairs her with Asclepius and the snake.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_aratus_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'mother', externalRef: { name: 'Epione', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_apollod_machaon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }], notes: 'Sibling through their shared parents.' },
@@ -21768,7 +21779,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-Epione-daughter', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Anonymous Erythraean Paean (Inscr. Erythrai 205); Aristophanes, Plutus 701; Suda s.v.' }], notes: 'Daughter of Asclepius by Epione. Quartigod-tier. Personification of the healing process itself.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_telesphorus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aratus_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_hygieia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_aceso', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
@@ -21796,7 +21807,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-Epione-daughter', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Anonymous Erythraean Paean (Inscr. Erythrai 205); Suda s.v.' }], notes: 'Daughter of Asclepius by Epione. Personification of the curative process — the actual completion of healing.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_telesphorus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aratus_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_hygieia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_iaso', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
@@ -21824,7 +21835,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-Epione-daughter', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Anonymous Erythraean Paean (Inscr. Erythrai 205)' }], notes: 'Daughter of Asclepius. Personification of the radiant-glow of the well body.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_telesphorus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aratus_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_hygieia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_iaso', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
@@ -21852,7 +21863,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-Epione-daughter', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Anonymous Erythraean Paean (Inscr. Erythrai 205); Hippocratic Oath opening invocation; Suda s.v.' }], notes: 'Daughter of Asclepius. Personification of universal-cure. Named in the Hippocratic Oath alongside Apollo, Asclepius, and Hygieia.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_telesphorus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aratus_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean; Hippocratic Oath' }] },
         { kind: 'sibling', personId: 'greek_hygieia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
         { kind: 'sibling', personId: 'greek_iaso', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Anon. Erythraean Paean' }] },
@@ -21880,7 +21891,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-son', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Pausanias 2.11.7; numerous Pergamene inscriptions and statue-types from the imperial-period Pergamon Asclepieion' }], notes: 'Son of Asclepius. Personification of the convalescence-and-recovery phase of healing — the bringing-to-completion of the cure. Cult-iconography canonically shows him as a hooded child or dwarf-figure beside Asclepius and Hygieia in the Asclepieion-statuary triads.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_iaso', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aceso', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aegle_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_panacea', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aratus_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Paus. 2.11.7' }] },
         { kind: 'half-sibling', personId: 'greek_hygieia', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Paus. 2.11.7 (cult-pairing)' }], notes: 'Cult-pair sibling at the Asclepieia.' },
         { kind: 'half-sibling', personId: 'greek_apollod_machaon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Paus. 2.11.7' }] },
@@ -21905,7 +21916,7 @@ const buildPeopleSeed = () => {
       lifecycle: [
         { typeStatus: 'quartigod', startEvent: 'birth-as-Asclepius-Aristodama-son', era: 'heroic-age', eraOrdering: 0, sources: [{ kind: 'primary', reference: 'Pausanias 2.10.3, 4.14.7-8' }], notes: 'Son of Asclepius by Aristodama, a Sicyonian woman. Quartigod-tier through paternal Apollo-line. Per Pausanias 2.10.3, Aristodama bore Aratus after sleeping in the Sicyon Asclepieion — the canonical incubation-conception narrative pattern for Asclepieion cult-children. Distinct from the historical Aratus of Sicyon (the Achaean League general).' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hygieia', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_iaso', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aceso', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_aegle_asclepius', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_panacea', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_telesphorus', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_asclepius', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Paus. 2.10.3' }] },
         { kind: 'mother', externalRef: { name: 'Aristodama (Sicyonian woman, conceived Aratus through Asclepieion incubation)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Paus. 2.10.3' }] },
         { kind: 'half-sibling', personId: 'greek_apollod_machaon', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Paus. 2.10.3, 4.30.3' }] },
@@ -22703,7 +22714,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'scion', startEvent: 'reconquest-of-Thebes-from-Amenmesse', era: 'new-kingdom', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Karnak Hall of Records; KV15' }], notes: 'Reasserted authority over Thebes only in his fifth regnal year, after defeating the rival Amenmesse. The reconquest is reflected in the systematic erasure of Amenmesse\'s cartouches from monuments where they had displaced his own.' },
         { vitalStatus: 'deceased', era: 'new-kingdom', eraOrdering: 3, startEvent: 'death-1197-bce', sources: [{ kind: 'primary', reference: 'KV15 tomb in the Valley of the Kings' }], notes: 'Died 1197 BCE after a six-year reign. Originally buried in KV15 in the Valley of the Kings; later reinterred there by Setnakhte after Tausret\'s appropriation of the joint tomb KV14.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'egyptian_tausret', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions; KV15' }] },
         { kind: 'mother', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Karnak inscriptions' }] },
         { kind: 'spouse', personId: 'egyptian_tausret', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'KV14 (joint tomb of Seti II and Tausret); Manetho Epitome' }] },
@@ -22739,7 +22750,7 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'deceased', era: 'new-kingdom', eraOrdering: 4, startEvent: 'death-1188-bce-civil-war', sources: [{ kind: 'primary', reference: 'Setnakhte\'s Elephantine Stela describing his triumph over an unnamed predecessor' }], notes: 'Reign ended in civil war c. 1188 BCE. Most likely overthrown by Setnakhte, founder of the 20th Dynasty. Her tomb KV14 was usurped by Setnakhte; her name and image deliberately replastered and replaced with his own. Mummy never positively identified.' },
         { vitalStatus: 'damnatio-memoriae', era: 'new-kingdom', eraOrdering: 5, sources: [{ kind: 'primary', reference: 'Medinet Habu list of kings under Ramesses III, omitting Tausret, Siptah, and Amenmesse as illegitimate' }], notes: 'Excluded from the canonical king-list at Medinet Habu under Ramesses III, alongside Siptah and Amenmesse. Mortuary temple comprehensively destroyed under the 20th Dynasty.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'egyptian_seti_ii', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'egyptian_merneptah', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Pearce Creasman 2013 (architectural-style argument)' }], notes: 'Probable but not definitively attested in surviving inscriptions.' },
         { kind: 'mother', personId: 'egyptian_isetnofret_ii', era: 'new-kingdom', sources: [{ kind: 'secondary', reference: 'Inferred from Merneptah\'s known consort and the architectural-style argument' }] },
         { kind: 'spouse', personId: 'egyptian_seti_ii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'KV14' }] },
@@ -23267,7 +23278,7 @@ const buildPeopleSeed = () => {
         { vitalStatus: 'deceased', era: 'new-kingdom', eraOrdering: 3, startEvent: 'execution-by-suicide-1155-bce', sources: [{ kind: 'primary', reference: 'Judicial Papyrus of Turin; CT scans of "Unknown Man E" mummy 2012 (Saleem-Hawass)' }], notes: 'Forced suicide in 1155 BCE. CT scans by Saleem-Hawass in 2012 identify the "Unknown Man E" mummy — a man buried in a goatskin (a ritual-impurity material) with a contorted facial expression and ligature-marks around his neck — as Pentaweret, with DNA matching Ramesses III. The goatskin burial deliberately denied him afterlife. Name systematically erased from monuments and tomb records.' },
         { vitalStatus: 'damnatio-memoriae', era: 'new-kingdom', eraOrdering: 4, sources: [{ kind: 'primary', reference: 'Judicial Papyrus of Turin' }], notes: 'Name erased from all monuments and tombs to prevent afterlife. The trial transcripts use evil-substitute-names ("Mesedsure" = "Re hates him" etc.) for many conspirators rather than their actual names. "Pentaweret" itself may be such a substitute-name rather than his birth name.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'egyptian_khaemwaset_c', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'egyptian_ramesses_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Judicial Papyrus of Turin; 2012 DNA analysis' }] },
         { kind: 'mother', externalRef: { name: 'Tiye (minor wife of Ramesses III; orchestrator of the harem conspiracy; condemned and executed alongside her son)', tradition: 'Egyptian' }, era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Judicial Papyrus of Turin' }] },
         { kind: 'half-sibling', personId: 'egyptian_ramesses_iv', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III' }] },
@@ -23301,7 +23312,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'quartigod', vitalStatus: 'high-priest-of-Ptah-Memphis', startEvent: 'priesthood-of-Ptah-at-Memphis', era: 'new-kingdom', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'QV44 tomb (Iunmutef-priest scene); Memphite priesthood records' }], notes: 'Held the same office his namesake had — High Priest of Ptah at Memphis (though never achieving his predecessor\'s celebrity). The QV44 tomb shows him as an Iunmutef priest in a major scene. Egyptologists distinguish between the two by the "C" suffix (Khaemweset A = Ramesses II\'s son; Khaemwaset C = Ramesses III\'s son).' },
         { vitalStatus: 'deceased', era: 'new-kingdom', eraOrdering: 2, startEvent: 'death-late-in-Ramesses-III-reign', sources: [{ kind: 'primary', reference: 'QV44 tomb in the Valley of the Queens; granite sarcophagus S. 5215' }], notes: 'Died young, before his father; one of the five Ramesses III sons buried in the Valley of the Queens (alongside Amenherkhopshef A in QV55, Pareherwenemef in QV42, Sethherkhopshef in QV43, and Ramesses Meryamun in QV53). QV44 was discovered February 1903 by Schiaparelli\'s Italian Archaeological Mission.' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'egyptian_pentaweret', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'egyptian_ramesses_iii', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Medinet Habu procession-of-princes' }] },
         { kind: 'half-sibling', personId: 'egyptian_ramesses_iv', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III' }] },
         { kind: 'half-sibling', personId: 'egyptian_ramesses_vi', era: 'new-kingdom', sources: [{ kind: 'primary', reference: 'Common paternity from Ramesses III' }] },
@@ -23366,7 +23377,7 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
         { claim: 'divine-paternity-from-amani', citations: [{ kind: 'primary', reference: 'Piye Victory Stela; Gebel Barkal Amun temple inscriptions' }], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'shebitku', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'tantamani', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'amani', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'Piye Victory Stela; Gebel Barkal Amun temple inscriptions' }] },
         { kind: 'sibling', personId: 'shabaka', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'el-Kurru pyramid genealogies; Karnak inscriptions' }], notes: 'Half-brother and successor; both born at Napata, both claiming Amani-of-Napata divine paternity.' },
         { kind: 'sibling', personId: 'taharqa', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'Kawa Stela IV; el-Kurru pyramid genealogies' }] },
@@ -23408,7 +23419,7 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
         { claim: 'divine-paternity-from-amani', citations: [{ kind: 'primary', reference: 'Karnak inscriptions' }], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'piye', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'tantamani', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'amani', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'Karnak inscriptions; Gebel Barkal stelae' }] },
         { kind: 'sibling', personId: 'taharqa', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'Kawa Stela IV; el-Kurru pyramid genealogies' }] },
         { kind: 'sibling', personId: 'shabaka', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'el-Kurru pyramid genealogies' }] },
@@ -23452,7 +23463,7 @@ const buildPeopleSeed = () => {
         ], weight: 'primary' },
         { claim: 'divine-paternity-from-amani', citations: [{ kind: 'primary', reference: 'Tantamani Dream Stela' }], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'piye', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'shebitku', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'amani', era: '25th-dynasty', sources: [{ kind: 'primary', reference: 'Tantamani Dream Stela; Gebel Barkal stelae' }] },
       ],
       notes: 'Demigod last 25th-dynasty pharaoh of Egypt. Per the Dream Stela vision, on the night before his coronation he saw two serpents representing Lower and Upper Egypt — one of the canonical Egyptian royal-dream-prophecy narratives. Briefly reconquered Memphis c. 664 BCE; the Ashurbanipal counter-campaign of 663 BCE sacked Thebes (the canonical "Wo-Amon" of Nahum 3:8). The 25th Dynasty\'s rule of Egypt ended with this campaign; the Kushite kingdom of Napata continued to exist as a regional power for the next several centuries (the so-called Napatan Period, c. 656-270 BCE), eventually relocating its center to Meroë. Per Manetho his historical-genealogical father is Taharqa (or his nephew per Dream Stela contested reading); registered here as a direct demigod-of-amani per the existing registry convention for the Kushite dynasty.',
@@ -23930,7 +23941,7 @@ const buildPeopleSeed = () => {
         { id: 'cunning-and-wit-over-strength' },
         { id: 'wednesday-day-name-Kwaku' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'akan_bia', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'akan_tano', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'spouse', personId: 'akan_aso', sources: [{ kind: 'primary', reference: 'Rattray, Akan-Ashanti Folk-Tales (1930)' }] },
         { kind: 'father-of', personId: 'akan_ntikuma', sources: [{ kind: 'primary', reference: 'Rattray 1930; the pot-of-wisdom narrative' }] },
       ],
@@ -26705,7 +26716,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Pindar, Pythian 4.190 (the canonical-Pindaric Argonaut-catalogue reference)' },
         ], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_linus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_tenes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apoll. Rhod. Argon. 1.139-145' }] },
         { kind: 'mother', externalRef: { name: 'Antianeira (daughter of Menetes) per Apollon. 1.139-145; or Cyrene per variant', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apoll. Rhod. Argon. 1.139-145' }] },
         { kind: 'killed-by', externalRef: { name: 'a boar in the territory of King Lycus the Mariandynian (Pontic coast); the Argonauts buried him on the Mariandynian shore — site of Heraclea Pontica\'s canonical foundation', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apoll. Rhod. Argon. 2.815-850' }] },
@@ -26813,7 +26824,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Pistoxenos Painter Attic red-figure kylix c. 480 BCE (Munich Antikensammlungen 2646; Heracles-Linus music-lesson scene)' },
         ], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_idmon', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_tenes', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_hesiod_apollo', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.3.2' }] },
         { kind: 'mother', externalRef: { name: 'Calliope (the Muse) per Apollod. 1.3.2; or Psamathe (daughter of Crotopus of Argos) per Paus. 1.43.7; or Urania per the Theban variant', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.3.2; Paus. 1.43.7' }] },
         { kind: 'sibling', externalRef: { name: 'Orpheus (the canonical-Greek bard, brother of Linus per Apollod. 1.3.2 and Diod. 3.67 — though some traditions make Orpheus great-grandson rather than brother)', tradition: 'Greek' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Apollod. 1.3.2; Diod. 3.67' }] },
@@ -26849,7 +26860,7 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Cicero, Verres 2.1.49 (the historical-period Tenedian Tenes-cult attestation)' },
         ], weight: 'primary' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_idmon', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_linus', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'father', personId: 'greek_hesiod_apollo', era: 'pre-trojan-war', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 3.24; Diod. 5.83' }] },
         { kind: 'mother', externalRef: { name: 'Procleia (daughter of Laomedon king of Troy, per Apollod. Epit. 3.24)', tradition: 'Greek' }, era: 'pre-trojan-war', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 3.24' }] },
         { kind: 'social-father', externalRef: { name: 'Cycnus (king of Colonae, mortal cover-paternity; killed by Achilles at Troy per Apollod. Epit. 3.31 and Ovid Met. 12.71-145; separately registered as greek_cycnus)', tradition: 'Greek' }, era: 'pre-trojan-war', sources: [{ kind: 'primary', reference: 'Apollod. Epit. 3.24' }] },
@@ -27081,7 +27092,7 @@ const buildPeopleSeed = () => {
         { id: 'mother-of-Branch-2-trio' },
         { id: 'mother-of-Efnisien-and-Nisien' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'welsh_lludd_llaw_eraint', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'spouse', personId: 'welsh_llyr', era: 'mabinogion-mythological' },
         { kind: 'spouse', externalRef: { name: 'Eurosswydd, mortal Welsh figure; second husband / father of Efnisien and Nisien per Second Branch', tradition: 'Welsh' }, era: 'mabinogion-mythological' },
         { kind: 'mother-of', personId: 'welsh_bendigeidfran', era: 'mabinogion-mythological' },
@@ -27476,6 +27487,7 @@ const buildPeopleSeed = () => {
 
     {
       id: 'welsh_lludd_llaw_eraint',
+      relations: [{ kind: 'sibling', personId: 'welsh_penarddun', notes: 'Full sibling; shares the same complete attested parentage.' }],
       schemaVersion: 2,
       name: {
         primary: 'Lludd Llaw Eraint',
@@ -28112,7 +28124,7 @@ const buildPeopleSeed = () => {
         { sphereId: 'vengeance', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Hes. Theog. 183-187; Aesch. Eum. 321-396' }] },
         { sphereId: 'oaths', contextTag: 'lifelong', sources: [{ kind: 'primary', reference: 'Hom. Il. 19.259-260' }] },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'greek_hesiod_coeus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_crius', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_cronus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_hyperion', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_iapetus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_mnemosyne', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_oceanus', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_phoebe', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_rhea', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_tethys', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_theia', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'greek_hesiod_themis', notes: 'Full sibling; shares the same complete attested parentage.' },
         { kind: 'antagonist', externalRef: { name: 'Orestes (matricide pursued from Argos to Delphi to Athens; acquitted at the Areopagus)', tradition: 'Greek' }, era: 'post-trojan-war', sources: [{ kind: 'primary', reference: 'Aesch. Eum. 94-1047' }] },
       ],
       sources: [
@@ -28221,6 +28233,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'anglosaxon_herebeald', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'anglosaxon_haethcyn', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_hygelac', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_hrethels_daughter', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Herebeald', alt: ['Eldest son of Hrethel'], transliterations: { 'old-english': 'Herebeald' } },
       type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
       origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
@@ -28231,6 +28244,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'anglosaxon_haethcyn', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'anglosaxon_herebeald', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_hygelac', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_hrethels_daughter', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Haethcyn', alt: ['Hæþcyn', 'Haethcen'], transliterations: { 'old-english': 'Hæðcyn' } },
       type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
       origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
@@ -28241,6 +28255,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'anglosaxon_hygelac', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'anglosaxon_herebeald', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_haethcyn', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_hrethels_daughter', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Hygelac', alt: ['Hygelāc', 'Hugleikr', 'Chlochilaicus', 'King of the Geats'], transliterations: { 'old-english': 'Hygelāc' } },
       type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'male', vitalStatus: 'dead',
       origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
@@ -28261,6 +28276,7 @@ const buildPeopleSeed = () => {
     },
     {
       id: 'anglosaxon_hrethels_daughter', schemaVersion: 2,
+      relations: [{ kind: 'sibling', personId: 'anglosaxon_herebeald', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_haethcyn', notes: 'Full sibling; shares the same complete attested parentage.' }, { kind: 'sibling', personId: 'anglosaxon_hygelac', notes: 'Full sibling; shares the same complete attested parentage.' }],
       name: { primary: 'Daughter of Hrethel', alt: ['unnamed-by-tradition', 'mother of Beowulf', 'wife of Ecgtheow'], transliterations: { etymology: 'unnamed in Beowulf; identified only as the daughter of Hrethel given to Ecgtheow and as the mother of Beowulf (ll. 373-375).' } },
       type: 'mortal', tradition: 'Anglo-Saxon', primaryTradition: 'Anglo-Saxon', sex: 'female', vitalStatus: 'dead',
       origin: 'canon', parentIds: [], temporal: { era: 'heroic-age' },
@@ -43276,6 +43292,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "akan_tano",
     "notes": "Full sibling — shares the same attested parentage (Nyame & Asase Yaa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "akan_anansi",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -43391,6 +43412,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "akan_bia",
     "notes": "Full sibling — shares the same attested parentage (Nyame & Asase Yaa) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "akan_anansi",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -92119,6 +92145,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -92251,6 +92282,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -92420,6 +92456,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -93206,7 +93247,44 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Son of Zeus and Maia, herald of the gods, guide of souls and trickster."
+  "notes": "Son of Zeus and Maia, herald of the gods, guide of souls and trickster.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_hebe",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_ares",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_apollo",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_aeacus",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_athena",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_dionysus",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_artemis",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   }
+  ]
  },
  {
   "id": "greek_hesiod_hestia",
@@ -93436,6 +93514,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -93655,6 +93738,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -93956,6 +94044,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -94339,6 +94432,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -94690,6 +94788,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -94956,6 +95059,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -95188,6 +95296,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -95408,6 +95521,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_themis",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -95555,6 +95673,11 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "greek_hesiod_theia",
     "notes": "Full sibling — shares the same attested parentage (Uranus & Gaia) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "greek_hesiod_erinyes",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -163001,6 +163124,16 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "norse_vidarr",
     "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_sigi",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_thor",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -163683,6 +163816,16 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "norse_vidarr",
     "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_sigi",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_thor",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -165782,6 +165925,16 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "norse_vidarr",
     "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_sigi",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_thor",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -165965,6 +166118,16 @@ const NEW_FIGURES = [
     "kind": "sibling",
     "personId": "norse_vali",
     "notes": "Full sibling — shares the same attested parentage (Odin) per the figures' cited genealogy."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_sigi",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "norse_thor",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ]
  },
@@ -194297,6 +194460,21 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Son of the supreme god Bathala; brother of the moon-goddess Mayari."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tagalog_mayari",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tagalog_tala",
+    "notes": "Full sibling; shares the same complete attested parentage."
+   },
+   {
+    "kind": "sibling",
+    "personId": "tagalog_hanan",
+    "notes": "Full sibling; shares the same complete attested parentage."
    }
   ],
   "sources": [
