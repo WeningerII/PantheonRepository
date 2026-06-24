@@ -7143,7 +7143,7 @@ const buildPeopleSeed = () => {
         { typeStatus: 'deity', startEvent: 'descent-to-earth-and-marriage-to-Nzua-dia-Kimanaueze', era: 'heroic-age', eraOrdering: 1, sources: [{ kind: 'primary', reference: 'Chatelain Folk-Tales of Angola; Werner Myths and Legends of the Bantu' }], notes: 'In one of the most elaborate Ambundu cross-class-marriage narratives, Nzua dia Kimanaueze (son of the elder Kimanaueze, the mortal Mbundu culture-hero) sent letters and emissaries to win her hand. After the multi-stage diplomatic-negotiations and bride-price payments, she descended from heaven by ladder-or-rope to live with him as his wife — the cross-class marriage that produced the twin-demigod sons Sudika-Mbambi and Kabundungulu.' },
         { typeStatus: 'deity', startEvent: 'fatherhood-of-Sudika-Mbambi-and-Kabundungulu', era: 'heroic-age', eraOrdering: 2, sources: [{ kind: 'primary', reference: 'Chatelain Folk-Tales of Angola (the foundational 1894 ethnographic-collection); Werner Myths and Legends of the Bantu' }], notes: 'Bore the twin demigods Sudika-Mbambi (firstborn, the thunder) and Kabundungulu (secondborn, the thunder\'s echo) to Nzua dia Kimanaueze. Both twins spoke from her womb and were born already armed and ready to act — the wonder-child birth-pattern shared with Lituolone, Kirikou, and the broader Bantu wonder-child tradition.' },
       ],
-      relations: [
+      relations: [ { kind: 'lover', personId: 'ambundu_nzua_dia_kimanaueze', notes: 'Batch-1 alphabetical sweep: reciprocal/correctness wiring.' },
         { kind: 'lover', externalRef: { name: 'Nzua dia Kimanaueze (mortal Ambundu culture-hero, son of the elder Kimanaueze)', tradition: 'Ambundu' }, era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Chatelain Folk-Tales of Angola' }] },
         { kind: 'mother-of', personId: 'ambundu_sudika_mbambi', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Chatelain Folk-Tales of Angola; Werner Myths and Legends of the Bantu' }] },
         { kind: 'mother-of', personId: 'ambundu_kabundungulu', era: 'heroic-age', sources: [{ kind: 'primary', reference: 'Chatelain Folk-Tales of Angola; Werner Myths and Legends of the Bantu' }] },
@@ -7160,7 +7160,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Sudika-Mbambi', alt: ['Sudika-mbambi', '"the Thunderbolt"'], transliterations: { kimbundu: 'Sudika-Mbambi', etymology: 'Kimbundu: the name itself glosses as "the Thunderbolt" per the Werner translation. Etymological root in the bambi (thunder) cluster of Bantu thunder-words.' } },
       type: 'demigod', origin: 'canon', tradition: 'Ambundu', primaryTradition: 'Ambundu',
       sex: 'male', vitalStatus: 'apotheosed',
-      parentIds: ['ambundu_sun_moon_daughter'],
+      parentIds: ['ambundu_sun_moon_daughter', 'ambundu_nzua_dia_kimanaueze'],
       parentRoles: { ambundu_sun_moon_daughter: 'maternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -7190,7 +7190,7 @@ const buildPeopleSeed = () => {
       name: { primary: 'Kabundungulu', alt: ['Kabundungdulu', '"the Echo"'], transliterations: { kimbundu: 'Kabundungulu', etymology: 'Kimbundu: the name attached to the echo-of-thunder figure within the twin-thunder cosmological pairing.' } },
       type: 'demigod', origin: 'canon', tradition: 'Ambundu', primaryTradition: 'Ambundu',
       sex: 'male', vitalStatus: 'apotheosed',
-      parentIds: ['ambundu_sun_moon_daughter'],
+      parentIds: ['ambundu_sun_moon_daughter', 'ambundu_nzua_dia_kimanaueze'],
       parentRoles: { ambundu_sun_moon_daughter: 'maternal' },
       temporal: { era: 'heroic-age' },
       lifecycle: [
@@ -25634,7 +25634,7 @@ const buildPeopleSeed = () => {
         { id: 'institutor-of-moiety-division-with-Waa-the-Crow' },
         { id: 'wedge-tailed-eagle-form' },
       ],
-      relations: [
+      relations: [ { kind: 'sibling', personId: 'aboriginal_waa', notes: 'Batch-1 alphabetical sweep: reciprocal/correctness wiring.' },
         { kind: 'father-of', personId: 'aboriginal_binbeal', sources: [{ kind: 'primary', reference: 'Howitt 1904; R. B. Smyth, The Aborigines of Victoria (1878)' }] },
       ],
       iconography: {
@@ -41406,6 +41406,206 @@ const NEW_FIGURES = [
   "notes": "Abkhaz ⟨Шәашәы⟩ Šʷašʷə; epithet 'Shashwy-akhjakhdu' glossed 'great golden lord'. Sevenfold (семеричное) deity. Counterpart of Circassian Tlepsh and Ossetian Kurdalægon, but with a far stronger oath/justice function."
  },
  {
+  "id": "aboriginal_waa",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Waang",
+   "alt": [
+    "Waa",
+    "Wahn",
+    "Waa the Crow",
+    "Crow Moiety-Ancestor of the Kulin"
+   ],
+   "transliterations": {
+    "woiwurrung": "Waang",
+    "woiwurrung-variant": "Waa / Wahn"
+   }
+  },
+  "type": "deity",
+  "tradition": "Kulin",
+  "primaryTradition": "Kulin",
+  "sex": "male",
+  "vitalStatus": "living",
+  "origin": "canon",
+  "parentIds": [],
+  "temporal": {
+   "era": "dreaming-creator-era"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "dreaming-creator-era",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, Native Tribes of South-East Australia (1904) Ch. XI; R. B. Smyth, The Aborigines of Victoria (1878)"
+     }
+    ],
+    "notes": "Crow ancestral-being of the Kulin nation; the trickster and law-bearer who, with his brother the eaglehawk creator Bunjil, constitutes the two moiety-ancestors (Bunjil / Waang) that structure Kulin kinship and marriage. The eaglehawk-and-crow moiety pattern recorded by Howitt (1904) is one of the most-widely-attested social-cosmological frameworks of south-eastern Australia."
+   }
+  ],
+  "domains": [
+   {
+    "id": "crow-moiety-ancestor-of-the-Kulin",
+    "term": {
+     "value": "Waang",
+     "script": "Woiwurrung (Kulin)",
+     "rom": "Waang"
+    },
+    "notes": "Crow moiety-ancestor, counterpart of Bunjil the eaglehawk",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, Native Tribes of South-East Australia (1904) Ch. XI"
+     },
+     {
+      "kind": "primary",
+      "reference": "R. B. Smyth, The Aborigines of Victoria (1878)"
+     }
+    ]
+   },
+   {
+    "id": "trickster-and-bringer-of-fire",
+    "term": {
+     "value": "Waang",
+     "script": "Woiwurrung (Kulin)",
+     "rom": "Waang"
+    },
+    "notes": "Crow as trickster and culture-hero in the south-eastern Australian tradition",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. B. Smyth, The Aborigines of Victoria (1878), Crow (Waa) trickster cycle"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "aboriginal_bunjil",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, Native Tribes of South-East Australia (1904) Ch. XI; R. B. Smyth, The Aborigines of Victoria (1878), the Bunjil / Waang moiety pair"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — Waang the Crow is the brother of the eaglehawk creator Bunjil (existing corpus figure aboriginal_bunjil, whose own prose records the moiety division 'with his brother Waa the Crow'); add the reciprocal sibling on aboriginal_bunjil."
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "crow-form",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Kulin nation tradition; Howitt 1904 — Waang in the form of the crow"
+      }
+     ]
+    }
+   ],
+   "celestialAssociation": "crow-moiety-ancestor"
+  },
+  "linguistic": {
+   "etymology": "Woiwurrung waang 'crow' (Blake 1991, Central Victorian / Woiwurrung language); the Waang-crow identification is the canonical Kulin cosmological-zoological mapping for the second moiety, paired with bunjil 'eaglehawk'.",
+   "languageFamily": "Pama-Nyungan (Kulin subgroup)"
+  },
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, Native Tribes of South-East Australia (1904) Ch. XI"
+     },
+     {
+      "kind": "primary",
+      "reference": "R. B. Smyth, The Aborigines of Victoria (1878)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Barry Blake, Woiwurrung, the Melbourne Language (1991), waang 'crow' / bunjil 'eaglehawk' moiety terms"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Waang (also Waa, Wahn) is the Crow ancestral-being of the Kulin nation of central Victoria — the trickster and law-bearer who, with his brother the eaglehawk creator Bunjil, constitutes the two moiety-ancestors (Bunjil the eaglehawk / Waang the crow) that structure Kulin kinship and marriage. The brother-relationship is recorded from the other side in the existing aboriginal_bunjil entry, whose prose states that Bunjil 'with his brother Waa the Crow instituted the foundational moiety division structuring Kulin kinship'. Blake (1991) gives the Woiwurrung terms waang 'crow' and bunjil 'eaglehawk'. Authored as the Crow moiety-ancestor whose attested kinship is the sibling-bond to Bunjil.",
+  "epithets": [
+   {
+    "epithetId": "Waang",
+    "original": "Waang",
+    "language": "latin",
+    "transliteration": "Waang",
+    "contextTag": "oral",
+    "notes": "Crow the trickster and moiety-ancestor of the Kulin, brother and counterpart of Bunjil the eaglehawk",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "A. W. Howitt, The Native Tribes of South-East Australia (1904); R. B. Smyth, The Aborigines of Victoria (1878)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "waa-fire-firestick",
+    "classId": "tool",
+    "kind": "tool",
+    "name": "Stolen fire / firestick",
+    "role": "owner",
+    "notes": "In the south-eastern Australian Crow cycle, Waa the Crow withholds and is tricked out of fire, by which fire passes to humankind — the canonical Crow fire-theft motif of the Victorian tradition",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. B. Smyth, The Aborigines of Victoria (1878), the Crow (Waa) and the theft of fire"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "waa-crow-form",
+    "name": "Takes the form of the crow",
+    "term": {
+     "value": "Waang",
+     "script": "Woiwurrung",
+     "rom": "Waang"
+    },
+    "notes": "Waang appears and acts in the world in the shape of the crow",
+    "inheritability": "none",
+    "ability": true,
+    "scopeTags": [
+     "birds"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Howitt, Native Tribes of South-East Australia (1904) Ch. XI"
+     }
+    ]
+   },
+   {
+    "id": "waa-trickster-cunning",
+    "name": "Works the world by trickster cunning",
+    "notes": "As Crow the trickster he obtains fire and other goods for, or at the expense of, humankind in the Victorian Crow cycle",
+    "inheritability": "none",
+    "ability": true,
+    "scopeTags": [
+     "trickery"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "R. B. Smyth, The Aborigines of Victoria (1878), the Crow (Waa) trickster narratives"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "aganju",
   "name": {
    "primary": "Aganju",
@@ -41875,6 +42075,11 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reciprocal of ainu_wakka_us_kamuy.ally — Hasinaw-uk joins the water-goddess's feast of the kamuy to secure the release of the game in time of famine."
+   },
+   {
+    "kind": "sibling",
+    "personId": "ainu_shiramba_kamuy",
+    "notes": "Batch-1 alphabetical sweep: reciprocal/correctness wiring."
    }
   ],
   "sources": [
@@ -42177,7 +42382,7 @@ const NEW_FIGURES = [
   ],
   "relations": [
    {
-    "kind": "parent",
+    "kind": "father-of",
     "personId": "ainu_okikurmi",
     "sources": [
      {
@@ -42451,7 +42656,9 @@ const NEW_FIGURES = [
   "primaryTradition": "Ainu",
   "sex": "male",
   "vitalStatus": "living",
-  "parentIds": [],
+  "parentIds": [
+   "ainu_kanna_kamuy"
+  ],
   "temporal": {
    "era": "legendary"
   },
@@ -42829,6 +43036,166 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Orca-formed god of the open sea and chief of sea-kamuy."
+ },
+ {
+  "id": "ainu_shiramba_kamuy",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Shiramba Kamuy",
+   "alt": [
+    "Shiramba Kamui",
+    "Siranpa-kamuy",
+    "Shiranpa Kamuy",
+    "God of Vegetation"
+   ],
+   "transliterations": {
+    "ainu": "Siranpa kamuy",
+    "etymology": "Ainu siranpa / shiramba 'vegetation, the growing things of the land'; the kamuy of wood, grain and all plant-growth, and by extension of the many wooden household tools — Ashkenazi, Handbook of Japanese Mythology (2003)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Ainu",
+  "primaryTradition": "Ainu",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003), on Shiramba Kamuy, kamuy of wood and vegetation"
+     }
+    ],
+    "notes": "The vegetation-kamuy of the Ainu, master of wood, grain and all growing things; an undying nature-deity for whom the tradition narrates no birth or death, only his standing function over the plant-world and the wooden tools made from it."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "vegetation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "siranpa",
+     "script": "Ainu (Latin)",
+     "rom": "siranpa"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): the kamuy of wood, grains and other forms of vegetation"
+     }
+    ]
+   },
+   {
+    "sphereId": "grain-and-crops",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): god of the grains as well as of wild plant-growth"
+     }
+    ]
+   },
+   {
+    "sphereId": "wooden-tools-and-implements",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): therefore also the kamuy of the many household tools that contain wood"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shiramba-grant-plant-growth",
+    "name": "Grant the growth of wood, grain and vegetation",
+    "inheritability": "none",
+    "scopeTags": [
+     "vegetation"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): the kamuy who governs wood, grains and the forms of vegetation"
+     }
+    ],
+    "notes": "As the vegetation-kamuy he presides over the increase of trees, plants and the cultivated grains."
+   },
+   {
+    "id": "shiramba-indwell-wooden-tools",
+    "name": "Indwell and empower the wooden household implements",
+    "inheritability": "none",
+    "scopeTags": [
+     "craft"
+    ],
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): because tools are made of wood, he is the kamuy of many of the household implements"
+     }
+    ],
+    "notes": "His sphere extends from the living tree to the worked wood of the tools that fill the Ainu house."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "ainu-wooden-tools",
+    "name": "Wooden household implements",
+    "kind": "implement",
+    "role": "The wood-made tools of the Ainu house, over which Shiramba presides as the vegetation-kamuy from whose wood they are made",
+    "term": {
+     "value": "ni",
+     "script": "Ainu (Latin)",
+     "rom": "ni"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): the kamuy of the household tools that contain wood"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "ainu_hash_inau_uk_kamuy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003): Shiramba Kamuy is sometimes portrayed as the brother of Hash-inau-uk Kamuy, the goddess of the hunt"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — the vegetation-god is named a brother of the hunt-goddess Hash-inau-uk Kamuy (existing corpus figure ainu_hash_inau_uk_kamuy, whose own prose already records 'a sister of Kamuy-huci the hearth-goddess and of Shiramba Kamuy the vegetation-god'); add the reciprocal sibling on ainu_hash_inau_uk_kamuy."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Michael Ashkenazi, Handbook of Japanese Mythology (Oxford University Press, 2003)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "N. G. Munro, Ainu Creed and Cult (1962), on the plant- and tool-kamuy of the Ainu household"
+     }
+    ],
+    "weight": "secondary"
+   }
+  ],
+  "notes": "Shiramba Kamuy is the Ainu kamuy of wood, grain and all other forms of vegetation, and therefore also of the many household tools that contain wood. Ashkenazi (Handbook of Japanese Mythology, 2003) records that he is sometimes portrayed as the brother of Hash-inau-uk Kamuy, the goddess of the hunt — the kinship already noted from the other side in the existing ainu_hash_inau_uk_kamuy entry, which calls her 'a sister of Kamuy-huci the hearth-goddess and of Shiramba Kamuy the vegetation-god'. Authored here as the vegetation-kamuy whose attested kinship is the sibling-bond to Hash-inau-uk Kamuy."
  },
  {
   "id": "ainu_wakka_us_kamuy",
@@ -43784,6 +44151,217 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Nzambi (a Mpungu) is the supreme creator high god in the religion of the Kimbundu-speaking Ambundu of Angola. The theonym is part of the common Bantu inheritance shared with the neighbouring Kongo, among whom the fullest creation cosmology was recorded; Mbundu attestation rests on the Kimbundu lexicon and ethnography (Chatelain 1894; Miller 1976) and the wider Angolan record (SAGE Encyclopedia of African Religion, 2009). Like many West-Central African high gods, Nzambi is conceived as remote and otiose, the maker and moral guarantor of the world rather than a deity of everyday cult, which centres on ancestors and the local nature-spirits (ilundu). Note that Miller records nzambi/jinzambi also being used of ancestral spirits in Mbundu speech, so the high-god identity is given here conservatively. No surviving Mbundu source assigns Nzambi kin, consort, or descent."
+ },
+ {
+  "id": "ambundu_nzua_dia_kimanaueze",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nzua dia Kimanaueze",
+   "alt": [
+    "Ngana Nzua",
+    "Nga Nzua",
+    "Na Nzua dia Kimanaueze",
+    "the younger Kimanaueze",
+    "Son of Kimanaueze"
+   ],
+   "transliterations": {
+    "kimbundu": "Nzua dia Kimanaueze",
+    "etymology": "Kimbundu Nzua ('John') dia Kimanaueze, 'Nzua son of Kimanaueze'; the younger Kimanaueze of Chatelain's tale 'The Son of Kimanaueze and the Daughter of the Sun and the Moon', son of the elder Kimanaueze kia Tumba a Ndala."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Ambundu",
+  "primaryTradition": "Ambundu",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 90,
+    "startEvent": "son-of-the-elder-Kimanaueze",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heli Chatelain, Folk-Tales of Angola (1894), 'The Son of Kimanaueze and the Daughter of the Sun and the Moon'"
+     }
+    ],
+    "notes": "The younger Kimanaueze, mortal son of the elder Kimanaueze kia Tumba a Ndala; when his father urged him to marry he refused any woman of earth and resolved to win the hand of the Daughter of the Sun and Moon. (His father, the elder Kimanaueze, is named in the tradition but not separately entered; parentIds left empty per registry convention for unentered ancestors.)"
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 91,
+    "startEvent": "courtship-of-the-daughter-of-sun-and-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heli Chatelain, Folk-Tales of Angola (1894)"
+     }
+    ],
+    "notes": "Sent his marriage-proposal up to heaven by the Frog Mainu, who swallowed the letter and was carried up in the water-jar of the Sun and Moon's attendants; after the bride-tasks were met he married the Daughter of the Sun and Moon, who descended to earth to him."
+   },
+   {
+    "typeStatus": "mortal",
+    "era": "heroic-age",
+    "eraOrdering": 92,
+    "startEvent": "father-of-the-thunder-twins",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heli Chatelain, Folk-Tales of Angola (1894); A. C. Werner, Myths and Legends of the Bantu (1933) ch. VIII"
+     }
+    ],
+    "notes": "By the Daughter of the Sun and Moon he became the father of the wonder-twins Sudika-Mbambi and Kabundungulu, who spoke from the womb and went on to become the thunder-of-the-east and thunder-echo-of-the-west of Ambundu meteorological theology."
+   },
+   {
+    "typeStatus": "dead",
+    "era": "heroic-age",
+    "eraOrdering": 93,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Heli Chatelain, Folk-Tales of Angola (1894)"
+     }
+    ],
+    "notes": "A mortal of the heroic-age generation; the saga passes from him to his twin sons, who carry the action of the epic."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "culture-hero-ancestry",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu (1933): the mortal progenitor of the Mbundu thunder-twins"
+     }
+    ]
+   },
+   {
+    "sphereId": "marriage-between-earth-and-sky",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "ethnography",
+      "reference": "Chatelain, Folk-Tales of Angola (1894): the mortal man who won and wed the Daughter of the Sun and Moon"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "nzua-win-celestial-bride",
+    "name": "Won a bride from heaven through the Frog's embassy",
+    "inheritability": "none",
+    "scopeTags": [
+     "foundational"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chatelain, Folk-Tales of Angola (1894): the proposal carried to the Sun and Moon by the Frog Mainu and the bride-tasks accomplished"
+     }
+    ],
+    "notes": "By persistence and the help of the Frog Mainu he obtained the Daughter of the Sun and Moon in marriage — the earth-and-sky union at the root of the thunder-twins' saga."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "nzua-marriage-letter",
+    "classId": "object",
+    "kind": "object",
+    "name": "Marriage-proposal letter to the Sun and Moon",
+    "role": "owner",
+    "notes": "The written proposal that the Frog Mainu swallowed and bore up to heaven on Nzua's behalf — the device by which the earth-suitor reached the celestial house",
+    "term": {
+     "value": "mukanda",
+     "script": "Kimbundu/Latin",
+     "rom": "mukanda"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chatelain, Folk-Tales of Angola (1894)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "ambundu_sudika_mbambi",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu (1933) ch. VIII: Nzua dia Kimanaueze, father of the twins Sudika-Mbambi and Kabundungulu"
+     }
+    ],
+    "notes": "Father of the firstborn thunder-twin Sudika-Mbambi (existing corpus figure ambundu_sudika_mbambi, which presently records him only by externalRef as 'social-father'); add ambundu_nzua_dia_kimanaueze to that figure's parentIds (paternal) to repoint the externalRef to this entry."
+   },
+   {
+    "kind": "father-of",
+    "personId": "ambundu_kabundungulu",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chatelain, Folk-Tales of Angola (1894); Werner, Myths and Legends of the Bantu (1933) ch. VIII: Nzua dia Kimanaueze, father of the twins Sudika-Mbambi and Kabundungulu"
+     }
+    ],
+    "notes": "Father of the secondborn thunder-echo twin Kabundungulu (existing corpus figure ambundu_kabundungulu, which presently records him only by externalRef as 'social-father'); add ambundu_nzua_dia_kimanaueze to that figure's parentIds (paternal) to repoint the externalRef to this entry."
+   },
+   {
+    "kind": "lover",
+    "personId": "ambundu_sun_moon_daughter",
+    "era": "heroic-age",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Chatelain, Folk-Tales of Angola (1894): Nzua dia Kimanaueze wed the Daughter of the Sun and Moon"
+     }
+    ],
+    "notes": "RECIPROCAL-NEEDED — the Daughter of the Sun and Moon (existing corpus figure ambundu_sun_moon_daughter) already records him by externalRef as her 'lover'; repoint that relation's personId to ambundu_nzua_dia_kimanaueze so the bond is reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Heli Chatelain, Folk-Tales of Angola (1894), 'The Son of Kimanaueze and the Daughter of the Sun and the Moon'"
+     },
+     {
+      "kind": "secondary",
+      "reference": "A. C. Werner, Myths and Legends of the Bantu (1933) ch. VIII"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "Patricia Ann Lynch and Jeremy Roberts, African Mythology, A to Z (Infobase, 2010), s.v. Kimanaueze / Sudika-Mbambi"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "fatherhood-of-the-thunder-twins",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Chatelain 1894; Werner 1933 ch. VIII"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Nzua dia Kimanaueze (the younger Kimanaueze; Ngana/Nga Nzua) is the mortal Ambundu culture-hero of Chatelain's Kimbundu tale 'The Son of Kimanaueze and the Daughter of the Sun and the Moon'. Son of the elder Kimanaueze kia Tumba a Ndala, he refused to marry any woman of earth and, with the help of the Frog Mainu who bore his proposal up to heaven, won and wed the Daughter of the Sun and Moon. By her he fathered the wonder-twins Sudika-Mbambi and Kabundungulu — the thunder and thunder-echo of the eastern and western sky. He was already referenced from three existing corpus figures purely by externalRef (the Daughter of the Sun and Moon names him her lover; both twins name him their social-father); he is materialized here as the connecting paternal node, with father-of relations to the twins and a lover-bond to their mother. His own father, the elder Kimanaueze, is named in the tradition but is one further generation removed and is not separately entered (parentIds left empty per registry convention for unentered ancestors)."
  },
  {
   "id": "andamanese_biliku",
