@@ -14377,6 +14377,11 @@ const buildPeopleSeed = () => {
         { kind: 'foster-parent', externalRef: { name: 'Tama-nui-ki-te-rangi (Polynesian celestial-foster-figure who raised Maui in some traditions; not registered as standalone entry per the registry\'s deity-only-as-required-parent-anchor principle)', tradition: 'Polynesian' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Maori oral tradition' }] },
         { kind: 'spouse', externalRef: { name: 'Rohe (sister-and-wife of Maui-tikitiki in some Maori traditions, dies at his hand and becomes the spirit of the underworld)', tradition: 'Polynesian' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Rare Maori variant tradition; Tregear 1891' }], notes: 'Rohe entry pending. Wife in a rare Maori variant; Māui mistreated her by swapping faces with her against her will out of jealousy of her greater beauty.' },
         { kind: 'spouse', externalRef: { name: 'Hina-ke-aloha-ila (Hawaiian wife of Māui, mother of his children)', tradition: 'Polynesian' }, era: 'mythic-prehistoric', sources: [{ kind: 'primary', reference: 'Hawaiian tradition' }], notes: 'Hinakealohaila entry pending — Hawaiian wife of Māui-a-Kalana.' },
+        { kind: 'equated-with', personId: 'tahitian_maui', sources: [{ kind: 'secondary', reference: 'Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)' }], notes: 'Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups.' },
+        { kind: 'equated-with', personId: 'mangaian_maui', sources: [{ kind: 'secondary', reference: 'Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)' }], notes: 'Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups.' },
+        { kind: 'equated-with', personId: 'tuamotuan_maui', sources: [{ kind: 'secondary', reference: 'Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)' }], notes: 'Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups.' },
+        { kind: 'equated-with', personId: 'marquesan_mahui', sources: [{ kind: 'secondary', reference: 'Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)' }], notes: 'Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups.' },
+        { kind: 'equated-with', personId: 'tongan_maui_kisikisi', sources: [{ kind: 'secondary', reference: 'Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)' }], notes: 'Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups.' },
       ],
       variants: [
         { id: 'paternity-tangaroa-variant', claim: 'paternity-by-Tangaroa-instead-of-Makeatutara', citations: [{ kind: 'primary', reference: 'Some Maori traditions; the Raro-Toaga (Cook Islands) tradition has Māui\'s father and mother both as children of Tangaroa' }], weight: 'secondary', notes: 'A minority Maori variant assigns paternity to Tangaroa (the great Polynesian sea-god, called Kanaloa in Hawaiian) instead of Makeatutara, with a mortal woman as mother. The Raro-Toaga (Cook Islands) tradition treats both parents as Tangaroa\'s children, which would push Māui to fully-divine and fail strict criterion. The dominant Maori (Grey, White, Tregear) tradition is Makeatutara + Taranga, which passes strict.' },
@@ -92866,6 +92871,3239 @@ const NEW_FIGURES = [
   "notes": "Tutelary/intermediary spirit-class of the Guanches (Maxios; the harmful counterpart class is the tibicenas). Treated as a deity-class entry (spirit-class -> deity), not an individual. English plain phrase 'Tutelary spirits' leads."
  },
  {
+  "id": "guarani_ao_ao",
+  "name": {
+   "primary": "Ao Ao",
+   "alt": [
+    "Aó Aó",
+    "Ao-Ao"
+   ],
+   "transliterations": {
+    "guarani": "Ao Ao",
+    "etymology": "Paraguayan-Guaraní Ao Ao, onomatopoeic from its cry 'ao ao'; the sixth-born, lord of the hills/mountains — a many-running sheep-bodied, wolf-headed (or peccary-like) fanged beast that hunts in packs and devours people."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "sixth-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Ao Ao' reference compilations"
+     }
+    ],
+    "notes": "The sixth of the seven; a four-legged fanged beast — body of a sheep, head of a wolf in one common description (or a great peccary in others) — that travels in herds, named for its cry 'ao ao'. Lord of the hills and mountains, a devourer of human beings: one escapes only by climbing a mbokaja (palm) tree, which it cannot uproot."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-the-hills-and-mountains",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Ao Ao' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "devouring-of-humankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_ao_ao_pack_devourer",
+    "name": "hunt in packs and devour human prey",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Ao Ao' reference compilations"
+     }
+    ],
+    "notes": "A relentless man-eater that runs down its prey in herds, crying 'ao ao'; the one escape is to climb a palm (mbokaja), whose roots it cannot tear up."
+   },
+   {
+    "id": "guarani_ao_ao_fanged_form",
+    "name": "exist as a fanged sheep-bodied, wolf-headed beast",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Its form is variously a wool-bodied, wolf-headed fanged animal or a giant fanged peccary; in all versions a many-running carnivore of the heights."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ao Ao, sixth-born of the seven children of Tau and Keraná, is a fanged sheep-bodied wolf-headed (or peccary-like) pack-beast, lord of the hills, that devours people; the one escape is climbing a palm tree.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sixth-born; man-eating pack-beast, lord of the hills, escaped only by climbing a palm (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_jakaira",
+  "name": {
+   "primary": "Jakaira",
+   "alt": [
+    "Jakaira Ru Ete",
+    "Jakairá Ru Ete",
+    "Lord of the tatachina"
+   ],
+   "transliterations": {
+    "guarani": "Jakaira Ru Ete",
+    "etymology": "Mbyá-Guaraní; ru 'father', ete 'true' — 'the true father Jakaira'. The third of the four divine fathers, lord of the life-giving spring mist (tatachina) and of the pipe-smoke and serene/good word."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-by-namandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; Cap. III"
+     }
+    ],
+    "notes": "The future-true-father of the Jakaira is among those Ñamandú caused to know of divinity. To Jakaira Ru Ete is conferred the command of the tatachina — the vivifying mist that rises each spring, renewing the year and infusing new life — so that those he sends are 'owners of the mist', granted wisdom and the power to ward off harm."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-life-giving-spring-mist",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatachina",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tatachina"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (Jakaira and the neblina vivificante)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sacred-pipe-smoke-and-good-serene-word",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatachina",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tatachina"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (Jakaira god of smoke, mist and pajé/shamanism)"
+     }
+    ]
+   },
+   {
+    "sphereId": "shamanic-wisdom-and-warding-of-harm",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the 'owners of the mist' receive wisdom and the power to conjure away harm)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jakaira_command_vivifying_mist",
+    "name": "command the life-giving spring mist (tatachina)",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III"
+     }
+    ],
+    "notes": "Lord of the tatachina, the fine vivifying haze that appears at the start of spring, transforming the old year into the new and infusing new life in all beings."
+   },
+   {
+    "id": "guarani_jakaira_grant_good_word_and_ward_harm",
+    "name": "impart serene good speech and the power to ward off harm",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III"
+     }
+    ],
+    "notes": "Source of moderation, good/serene words and the pajé (shamanic) power: those whose word-souls come from Jakaira are 'owners of the mist', granted wisdom and the conjuring-away of harm; associated with the tobacco-pipe smoke through which the mist is ritually made."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_petyngua_jakaira",
+    "name": "petỹ / petỹngua — the sacred tobacco and pipe whose smoke is the tatachina",
+    "kind": "ritual-instrument",
+    "role": "The tobacco (petỹ) and the pipe (petỹngua) whose ascending smoke is the human counterpart of Jakaira's life-giving mist; the central instrument of Mbyá shamanic practice that he governs.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the tatachina / pipe-smoke)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (Jakaira as god of smoke, mist and shamanism; the tobacco-pipe)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_jakaira_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I–III (Jakaira Ru Ete and his paired mother, the owners of the mist)"
+     }
+    ],
+    "notes": "His paired divine consort, the true mother of the Jakaira; together they make humans 'owners of the mist'."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jakaira (Jakaira Ru Ete), the third of the four divine fathers, is lord of the life-giving spring mist (tatachina) and of the sacred pipe-smoke, source of serene good speech, shamanic wisdom and the warding-off of harm.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I, III"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Jakaira is the god of smoke, mist and pajé (shamanism) in the Mbyá pantheon.",
+    "citations": [
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology', reference compilation"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Lord of the spring mist (tatachina) and pipe-smoke, source of good speech and shamanic power (Cadogan 1959, Cap. III). Third of the four divine fathers; spouse of Jakaira Chy Ete."
+ },
+ {
+  "id": "guarani_jakaira_chy_ete",
+  "name": {
+   "primary": "Jakaira Chy Ete",
+   "alt": [
+    "True Mother of the Jakaira",
+    "Jakairá Chy Ete"
+   ],
+   "transliterations": {
+    "guarani": "Jakaira Chy Ete",
+    "etymology": "Mbyá-Guaraní: 'the true mother of the Jakaira (people)'; chy 'mother', ete 'true'. Paired consort of Jakaira Ru Ete, third of the four divine mothers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-jakaira",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Jakaira Ru Ete made the future true mother of the Jakaira know divinity, to stand facing his heart)"
+     }
+    ],
+    "notes": "The feminine half of the third divine household; with her consort she sends those who are 'owners of the mist'."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-jakaira-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I, III"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jakaira_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the mist-bearing word-souls of the Jakaira lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the mist-father and -mother send the 'owners of the mist')"
+     }
+    ],
+    "notes": "As paired mother of the mist-father's household she shares in dispatching the word-souls of those who become owners of the tatachina."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_jakaira",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I, III"
+     }
+    ],
+    "notes": "Consort of Jakaira Ru Ete; reciprocal of guarani_jakaira.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jakaira Chy Ete, 'the true mother of the Jakaira', is the third of the four paired divine mothers, consort of Jakaira Ru Ete, co-sender of the mist-bearing word-souls.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I, III"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Third of the four paired divine mothers (Cadogan 1959). Spouse of Jakaira."
+ },
+ {
+  "id": "guarani_jasy",
+  "name": {
+   "primary": "Jasy",
+   "alt": [
+    "Jachy",
+    "Yacy",
+    "Jasy (the Moon)",
+    "the younger twin"
+   ],
+   "transliterations": {
+    "guarani": "Jasy (Jachy)",
+    "etymology": "Guaraní jasy 'moon' (also 'month'). The younger of the divine twins, the Moon — the erring/trickster brother whose premature look (or laugh) spoils the resurrection of their mother in the twin-cycle."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "parentIds": [
+   "guarani_namandu"
+  ],
+  "parentRoles": {
+   "guarani_namandu": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-the-younger-twin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Mbyá twin-cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914)"
+     }
+    ],
+    "notes": "The younger twin, raised with his elder brother among the monster-jaguars after their mother's death."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-spoiled-resurrection-and-ascent-as-the-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "During the elder twin's attempt to resurrect their mother by gathering her bones and singing, Jasy looks (or laughs) prematurely, spoiling the resurrection; he ascends to become the Moon. His trickster errors and his lunar deceit are the structural counterpart to the Sun's wisdom; lunar eclipses are read as the jaguars pursuing him across the sky."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jasy",
+     "script": "Latn (Guaraní)",
+     "rom": "jasy"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ]
+   },
+   {
+    "sphereId": "night-and-the-trickster-error",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914) — the younger twin's blunders that determine the cosmological outcome"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jasy_lunar_light",
+    "name": "embody the light of the moon",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); Nimuendajú (1914)"
+     }
+    ],
+    "notes": "As the apotheosed Moon he governs the night-light; the month (jasy) is named for him."
+   },
+   {
+    "id": "guarani_jasy_trickster_deceit",
+    "name": "err and blunder as the younger twin",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914) — the premature look/laugh that spoils the resurrection; the fish-hook episode in which the Moon-twin is caught"
+     }
+    ],
+    "notes": "The erring/inept younger brother whose blunders drive the cycle: his ill-timed looking (or laughing) prevents the full resurrection of their mother (who becomes a tapir or the Pleiades instead), and in the river/fish-hook episode he is the one caught where the Sun succeeds. (The genuinely malicious trickster-antagonist of the Mbyá cycle is the ogre Charĩa; Jasy's role is the gullible/imitative younger twin.)"
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "guarani_kuarahy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Guaraní twin-myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "Younger twin; his brother is Kuarahy, the Sun. Reciprocal of guarani_kuarahy.twin sibling."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jasy (Jachy), the younger of the divine twins and son of Ñande Ru, is the Moon — the erring/trickster brother whose premature look spoils the resurrection of their mother, after which he ascends as the moon.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Moon, younger/trickster divine twin, son of Ñamandú (Cadogan 1959; Nimuendajú 1914). Wired as twin sibling of Kuarahy and child of Ñamandú. Type 'deity': demiurgic Moon, son of the creator-god."
+ },
+ {
+  "id": "guarani_jasy_jatere",
+  "name": {
+   "primary": "Jasy Jateré",
+   "alt": [
+    "Yasy Yateré",
+    "Jasy Yateré",
+    "Jacy Jaterê"
+   ],
+   "transliterations": {
+    "guarani": "Jasy Jateré",
+    "etymology": "Guaraní; commonly glossed 'a little piece of the moon' (jasy 'moon'). The fourth-born and the only fair/beautiful one of the seven: a small naked blond child, lord of the siesta, who carries a golden staff/wand and lures children into the forest."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "fourth-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Jasy Jatere' reference compilations"
+     }
+    ],
+    "notes": "The fourth of the seven and the only one of fair aspect: a small naked boy with golden/blond hair, blue eyes, carrying a golden staff or wand. Lord of the siesta (the midday hour), he whistles to lure children into the forest, where they may be lost or struck dumb."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-the-siesta-and-midday",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "luring-and-bewitching-of-children",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jasy_jatere_lure_children",
+    "name": "lure and bewitch children at the siesta hour",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations"
+     }
+    ],
+    "notes": "At the midday siesta he calls/whistles to children who go out alone and draws them into the forest, where they are lost, struck dumb, or fall ill — the abiding nursery-bogey of Paraguay."
+   },
+   {
+    "id": "guarani_jasy_jatere_magic_staff",
+    "name": "wield the power of the golden staff/wand",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations"
+     }
+    ],
+    "notes": "His golden wand/cane is the source/sign of his luring power; with it he charms his victims."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_jasy_jatere_golden_staff",
+    "name": "the golden staff/wand of Jasy Jateré",
+    "kind": "wand",
+    "role": "A staff or wand of gold (vara de oro / varita mágica) carried by Jasy Jateré — his defining object and the instrument of his bewitching of children.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations (the golden cane/wand)"
+     }
+    ]
+   },
+   {
+    "id": "guarani_jasy_jatere_whistle",
+    "name": "the luring whistle/call of Jasy Jateré",
+    "kind": "sound-signal",
+    "role": "His whistle or call at the siesta hour, by which he lures children away; in folk belief one must never answer it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jasy Jateré ('a little piece of the moon'), fourth-born of the seven children of Tau and Keraná and the only fair one, is a small blond naked child, lord of the siesta, who carries a golden staff/wand and lures children into the forest.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Fourth-born; the only fair one, lord of the siesta, golden staff, lures children (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six. The most living of the seven in present-day Paraguayan folklore."
+ },
+ {
+  "id": "guarani_karai",
+  "name": {
+   "primary": "Karai",
+   "alt": [
+    "Karai Ru Ete",
+    "Karaí Ru Ete",
+    "Tataendy Ryapu Ja",
+    "Karai Ñamandú"
+   ],
+   "transliterations": {
+    "guarani": "Karai Ru Ete",
+    "etymology": "Mbyá-Guaraní: karai is a word of high sacrality (lord, sacred one, seer/prophet); ru 'father', ete 'true'. The second of the four divine fathers, 'the true father Karai', lord of the sacred fire. His epithet Tataendy Ryapu Ja = 'lord of the sound of the crackling of the flames' (tata 'fire', endy 'flame/light', ryapu 'sound/report', ja 'owner/lord')."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-by-namandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; Cap. II"
+     }
+    ],
+    "notes": "The future-true-father of the Karai is among those whom Ñamandú, from the wisdom within his divinity, caused to know of divinity — to be a co-father of the word-souls of the future humanity. To Karai Ru Ete is given the dominion of the sacred fire and of the sound (ryapu) of its flames."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sacred-fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tata",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tata"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (Karai Ru Ete, lord of the flames)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (the Mbya pantheon's four gods: Karai god of fire, Ñamandú the sun, Jakaira of mist, Tupã of thunder and water), reference compilation"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sound-and-crackling-of-the-flames",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tataendy ryapu",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tataendy ryapu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (the epithet Tataendy Ryapu Ja)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-word-and-prophetic-speech",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Karai a co-father of the word-souls)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_karai_command_sacred_fire",
+    "name": "command the sacred fire and its flames",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II"
+     }
+    ],
+    "notes": "Lord of the tata (fire); the flame and its light are his to govern, and the word-souls he sends to humanity bear a fiery, sonorous, oratorical character."
+   },
+   {
+    "id": "guarani_karai_sound_of_flames",
+    "name": "make the sacred sound of the crackling flames",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (Tataendy Ryapu Ja)"
+     }
+    ],
+    "notes": "His title 'lord of the sound of the crackling of the flames' (Tataendy Ryapu Ja): the report/sound of fire is a manifestation of his divinity, linked to ritual oratory and to the sacred hymns."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_tataendy_karai",
+    "name": "tataendy — the sacred flame-light of Karai",
+    "kind": "numinous-substance",
+    "role": "The sacred fire/flame-light (tataendy) over which Karai Ru Ete is lord; its crackling sound is his proper sign.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_karai_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I–II (Karai Ru Ete causes the future Karai Chy Ete to stand facing his heart)"
+     }
+    ],
+    "notes": "His paired divine consort, the true mother of the Karai."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Karai (Karai Ru Ete), the second of the four divine fathers, is the lord of the sacred fire and of the sound of the crackling flames (Tataendy Ryapu Ja), caused to know of divinity by Ñamandú and co-father of the word-souls of humanity.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I–II"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "In the Mbya pantheon Karai is the god of fire (alongside Ñamandú the sun, Jakaira the mist, Tupã the thunder/water).",
+    "citations": [
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology', reference compilation of the Mbya four-god pantheon"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Lord of the sacred fire and flame-sound (Cadogan 1959, Cap. II). Second of the four divine fathers; spouse of Karai Chy Ete. Note: in everyday Guaraní 'karai' also means 'lord / Mr.' and 'non-Indigenous person', and karaí denotes the shaman-prophet — the sacrality of the word underlies the divine name."
+ },
+ {
+  "id": "guarani_karai_chy_ete",
+  "name": {
+   "primary": "Karai Chy Ete",
+   "alt": [
+    "True Mother of the Karai",
+    "Karaí Chy Ete"
+   ],
+   "transliterations": {
+    "guarani": "Karai Chy Ete",
+    "etymology": "Mbyá-Guaraní: 'the true mother of the Karai (people)'; chy 'mother', ete 'true'. The paired divine consort of Karai Ru Ete, second of the four divine mothers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-karai",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Karai Ru Ete made the future true mother of the Karai know divinity, to stand facing his heart)"
+     }
+    ],
+    "notes": "The feminine half of the second divine household, mother of the Karai lineage of word-souls."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-karai-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_karai_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the word-souls of the Karai lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV"
+     }
+    ],
+    "notes": "As paired mother of the fire-father's household she shares in dispatching the ñe'ẽ of humans whose souls proceed from Karai."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_karai",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Consort of Karai Ru Ete; reciprocal of guarani_karai.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Karai Chy Ete, 'the true mother of the Karai', is the second of the four paired divine mothers, consort of Karai Ru Ete.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of the four paired divine mothers (Cadogan 1959). Spouse of Karai."
+ },
+ {
+  "id": "guarani_kerana",
+  "name": {
+   "primary": "Keraná",
+   "alt": [
+    "Kerana",
+    "Kerána"
+   ],
+   "transliterations": {
+    "guarani": "Keraná",
+    "etymology": "Paraguayan-Guaraní: Keraná, connected with kera 'sleep' — the beautiful, languid/sleeping daughter of the pious Marangatú; mother of the seven monsters by Tau."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-beautiful-daughter-of-marangatu-taken-by-tau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "The beautiful mortal daughter of the pious Marangatú, taken by the evil spirit Tau; mother of the seven monstrous children, who are cursed by the goddess Arasy to be born as monsters."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood-of-the-seven-monsters",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_tau",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Mother of the seven monsters by Tau; reciprocal of guarani_tau.spouse."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Keraná, the beautiful mortal daughter of the pious Marangatú, is taken by the evil spirit Tau and becomes the mother of the seven monstrous children of Guaraní mythology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra / Nuestros antepasados (1929)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The mortal mother of the seven monsters, daughter of the pious Marangatú (Colmán 1929; González Torres). Wired as spouse of Tau and mother of the seven. Her father Marangatú is a minor pious-ancestor figure, noted but not authored as a stub. SOLITARY (as to ancestry within batch): her only attested parent (Marangatú) is not authored; reason — a peripheral folk-ancestor with no independent mythic profile."
+ },
+ {
+  "id": "guarani_kuarahy",
+  "name": {
+   "primary": "Kuarahy",
+   "alt": [
+    "Kuaray",
+    "Pa'i Rete Kuaray",
+    "Ñanderyke'y",
+    "Our Elder Brother",
+    "the Sun"
+   ],
+   "transliterations": {
+    "guarani": "Kuarahy (Mbyá: Kuaray)",
+    "etymology": "Guaraní kuarahy 'sun' (Mbyá kuaray). As demiurge-twin he is Pa'i Rete Kuaray ('Pa'i the sun, he of the [radiant] body'), the elder of the divine twins, the Sun, and in the Mbyá recension the father of the Guaraní. Also Ñanderyke'y, 'Our Elder Brother'."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "parentIds": [
+   "guarani_namandu"
+  ],
+  "parentRoles": {
+   "guarani_namandu": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-the-elder-twin-son-of-nde-ru",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959) — the Mbyá twin-cycle, Pa'i Rete Kuaray as son of the god and the maiden Ñande Jary"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914) — the twin-myth: the Sun-twin born of the creator, his mother killed by the jaguars"
+     }
+    ],
+    "notes": "The elder of the divine twins (Mbyá: Pa'i Rete Kuaray), son of Ñande Ru; in the canonical twin-myth his mother is killed by the monster-jaguars while he speaks to her from the womb, and he is raised among them with his younger brother Jasy."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "vengeance-on-the-jaguars-and-ascent-as-the-sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the twin-cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal: le prophétisme tupi-guarani (Paris: Seuil, 1975)"
+     }
+    ],
+    "notes": "With Jasy he avenges their mother on the jaguars (luring them across a collapsing bridge/river), attempts her resurrection (spoiled by Jasy's error), and ascends to become the Sun, presiding with his brother over day and night and over the road to Yvy Marãe'ỹ (the Land-without-Evil)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kuarahy",
+     "script": "Latn (Guaraní)",
+     "rom": "kuarahy"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ]
+   },
+   {
+    "sphereId": "demiurgic-ordering-of-the-world-and-day",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal (1975)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-fatherhood-of-the-guarani",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959) — Pa'i Rete Kuaray as 'father of all the Guaraní'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_kuarahy_solar_radiance",
+    "name": "embody and shed the light of the sun",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); Nimuendajú (1914)"
+     }
+    ],
+    "notes": "As the apotheosed Sun he is the source of daylight; the day is his."
+   },
+   {
+    "id": "guarani_kuarahy_demiurgic_ordering",
+    "name": "order the world and slay the primordial monster-jaguars",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal (1975)"
+     }
+    ],
+    "notes": "The culture-hero/demiurge who avenges his mother, defeats the man-eating jaguars, and sets the order of sun and moon — the elder, wise twin who corrects his brother's blunders."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_kuarahy_bow_and_arrows",
+    "name": "the bow and arrows of the Sun-twin",
+    "kind": "weapon",
+    "role": "The hunting bow and arrows the twins carry in the forest and use against the monster-jaguars in the vengeance episode of the twin-cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914) — the twins' bow-and-arrow in the jaguar-vengeance episode"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "guarani_jasy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Guaraní twin-myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "Elder twin; his brother is Jasy, the Moon, the erring younger twin. Reciprocal of guarani_jasy.twin sibling."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kuarahy (Mbyá Kuaray / Pa'i Rete Kuaray), the elder of the divine twins and son of Ñande Ru, is the Sun and demiurgic culture-hero who avenges his mother on the monster-jaguars and ascends as the sun; in the Mbyá recension he is the father of the Guaraní.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "The Guaraní twin-myth (Sun and Moon brothers, the jaguar-vengeance, the road to the Land-without-Evil) is one of the most widely recorded narratives of lowland South America.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hélène Clastres, La Terre sans Mal: le prophétisme tupi-guarani (Paris: Seuil, 1975)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Sun, elder divine twin, son of Ñamandú/Ñande Ru (Cadogan 1959; Nimuendajú 1914). Wired as twin sibling of Jasy and child of Ñamandú. Type 'deity': demiurgic Sun, son of the creator-god."
+ },
+ {
+  "id": "guarani_kurupi",
+  "name": {
+   "primary": "Kurupi",
+   "alt": [
+    "Kurupí",
+    "Curupí"
+   ],
+   "transliterations": {
+    "guarani": "Kurupi",
+    "etymology": "Paraguayan-Guaraní Kurupi; the fifth-born; a short, ugly, hairy wild-man of coppery skin, spirit of fertility and sexuality of the wild, defined by an enormous prehensile penis coiled around his waist."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "fifth-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Kurupi' reference compilations"
+     }
+    ],
+    "notes": "The fifth of the seven; a short, robust, ugly man with hairy hands and feet and dark/coppery skin, whose defining feature is an enormous, elongated, prehensile penis wound around his waist. Spirit of the sexuality and fertility of the wild; in folk belief he impregnates women from afar and is blamed for unexplained pregnancies."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sexuality-and-fertility-of-the-wild",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Kurupi' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "spirit-of-the-deep-forest",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_kurupi_prehensile_phallus",
+    "name": "wield an enormous prehensile penis",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Kurupi' reference compilations"
+     }
+    ],
+    "notes": "His defining attribute: an enormously long, prehensile penis coiled around his body, with which (in folk belief) he seizes and impregnates women even from a distance or through walls."
+   },
+   {
+    "id": "guarani_kurupi_fertility_of_the_wild",
+    "name": "embody the sexual fertility of the wilderness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "As a phallic spirit he personifies the untamed generative power of the forest and is invoked to explain illicit or inexplicable conceptions."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kurupi, fifth-born of the seven children of Tau and Keraná, is a short ugly hairy wild-man, spirit of the sexuality and fertility of the wild, defined by an enormous prehensile penis coiled around his waist.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Fifth-born; phallic wild-man, spirit of fertility/sexuality (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_luison",
+  "name": {
+   "primary": "Luisón",
+   "alt": [
+    "Luisõ",
+    "Lobizón",
+    "Juicho",
+    "Luison"
+   ],
+   "transliterations": {
+    "guarani": "Luisón (Luisõ)",
+    "etymology": "Paraguayan-Guaraní Luisõ, Hispanicized Luisón / Lobizón; the seventh and most cursed child, lord of death and the night, haunter of cemeteries and eater of carrion — the Guaraní substrate of the South-American 'lobizón' (werewolf), the cursed seventh consecutive son."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "seventh-and-most-cursed-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Luison' reference compilations"
+     }
+    ],
+    "notes": "The seventh and last, and the most cursed: a gaunt, dog-/corpse-like creature, lord of the night and of death, whose haunt is cemeteries and burial grounds and whose food is dead and rotting flesh. From him derives the Paraguayan-Río-de-la-Plata belief that the seventh consecutive son is born a lobizón (werewolf)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-death-and-the-dead",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Luison' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-night-and-cemeteries",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_luison_lord_of_death",
+    "name": "preside over death and feed on the dead",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Luison' reference compilations"
+     }
+    ],
+    "notes": "Lord of death and the night; he dwells in cemeteries and feeds on corpses; an encounter with him, or the mere touch of his passing, was held to portend death."
+   },
+   {
+    "id": "guarani_luison_werewolf_curse",
+    "name": "embody the curse of the seventh son (the lobizón)",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Luison'/'lobizón' reference compilations"
+     }
+    ],
+    "notes": "His myth is the substrate of the belief that the seventh consecutive son is doomed to become a lobizón/werewolf — a transmissible curse (hence partial inheritability), later fused with the imported European werewolf."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Luisón (Luisõ), the seventh and most cursed child of Tau and Keraná, is lord of death and the night, a corpse-eating haunter of cemeteries, and the Guaraní substrate of the South-American lobizón (werewolf), the cursed seventh consecutive son.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Seventh-born; lord of death and the night, corpse-eater, root of the lobizón/werewolf belief (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six. Completes the seven, collectively associated with the Pleiades (Eichu)."
+ },
+ {
+  "id": "guarani_mboi_tui",
+  "name": {
+   "primary": "Mbói Tu'ĩ",
+   "alt": [
+    "Mboi Tui",
+    "Mbói Tu'ĩ",
+    "Teju Ñe'ẽ"
+   ],
+   "transliterations": {
+    "guarani": "Mbói Tu'ĩ",
+    "etymology": "Guaraní mbói 'snake' + tu'ĩ 'parakeet/parrot' — 'snake-parrot'. The second-born; a giant serpent with a parrot's head and beak, lord/protector of aquatic creatures and the wetlands."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "second-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "The second of the seven; a great serpent bearing the head and beak of a parrot, his body brilliantly coloured. Lord and protector of the water-creatures, of amphibians and the wetlands/marshes."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-aquatic-creatures-and-wetlands",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "reference compilations on the seven Guaraní monsters"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_mboi_tui_serpent_parrot_form",
+    "name": "exist as a serpent with a parrot's head and beak",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Mbói Tu'ĩ' reference compilations"
+     }
+    ],
+    "notes": "His defining form: the body of a huge snake and the head/beak of a parrot (tu'ĩ); brightly coloured."
+   },
+   {
+    "id": "guarani_mboi_tui_protect_the_waters",
+    "name": "guard the creatures of the water and the wetlands",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Protector and lord of aquatic life and the marsh/wetland habitats; the watery counterpart among the seven."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mbói Tu'ĩ ('snake-parrot'), second-born of the seven children of Tau and Keraná, is a giant serpent with a parrot's head, lord and protector of aquatic creatures and wetlands.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Second-born; serpent-parrot, lord of the waters (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_monai",
+  "name": {
+   "primary": "Moñái",
+   "alt": [
+    "Monai",
+    "Moñai"
+   ],
+   "transliterations": {
+    "guarani": "Moñái",
+    "etymology": "Paraguayan-Guaraní Moñái; a giant horned serpent, the third-born; lord of the open fields and 'lord of the air', who hypnotizes prey with his antenna-horns and hoards plunder in a cave."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "third-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "The third of the seven; a great serpent with two straight horns that serve as antennae. Lord of the open fields and 'lord of the air'; he climbs trees and slides down to hunt the birds, and amasses stolen goods in his cave."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "slain-in-the-festival-trap",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929) — the 'cave of the monsters' episode; González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "In the festival-trap myth he is lured to a feast and destroyed (the heroine Porãsy sacrifices herself to draw the monsters into a pit that is set afire), ending his depredations — the most-cited death among the seven."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-the-open-fields-and-the-air",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "reference compilations: Moñái 'lord of the air', lord of the open fields"
+     }
+    ]
+   },
+   {
+    "sphereId": "hoarding-of-plunder",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_monai_hypnotic_antennae",
+    "name": "hypnotize prey with his antenna-horns",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Moñái reference compilations"
+     }
+    ],
+    "notes": "Two straight horns on his head act as antennae with hypnotic/mesmerizing power, with which he subdues the birds and other prey."
+   },
+   {
+    "id": "guarani_monai_serpent_climber",
+    "name": "climb and descend trees as a giant serpent to hunt",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "He climbs trees with ease and slides down to seize the birds on whom he feeds, ranging the open fields and the air."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_monai_horns",
+    "name": "the antenna-horns of Moñái",
+    "kind": "bodily-attribute",
+    "role": "His two straight horns, functioning as antennae endowed with hypnotic power — the instrument by which he mesmerizes and captures prey.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Moñái reference compilations"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Moñái, third-born of the seven children of Tau and Keraná, is a giant horned serpent, lord of the open fields and the air, who hypnotizes prey with his antenna-horns and hoards plunder, and is slain in the festival-trap myth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Third-born; horned serpent, lord of the open fields, hypnotic antennae; slain in the festival/cave trap (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_namandu",
+  "name": {
+   "primary": "Ñamandú",
+   "alt": [
+    "Ñande Ru Papa Tenondé",
+    "Ñamandú Ru Ete",
+    "Ñande Ru Pa-pa Tenonde",
+    "Ñamandú Tenondegua",
+    "Our First Father",
+    "Nhamandú"
+   ],
+   "transliterations": {
+    "guarani": "Ñamandú (Ñande Ru Papa Tenondé)",
+    "etymology": "Mbyá-Guaraní; glossed by Cadogan as 'Nuestro Padre Último-último Primero' — 'Our Last-last First Father', the self-existent First Father. ñande 'our', ru 'father', papa 'last/ultimate', tenondé 'first, foremost, the one who is in front'. The name Ñamandú is connected with the rising of the sun and with the verb of standing-up / unfolding into being."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "self-unfolding-from-the-primordial-darkness",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (Universidade de São Paulo, Boletim 227, Antropologia 5, 1959), Cap. I 'Maino'i reko ypykue' (Las primitivas costumbres del colibrí), §§1–4"
+     }
+    ],
+    "notes": "Ñande Ru Papa Tenondé unfolds himself out of the original darkness (pytũ ymã): the soles of his feet, his small round seat, emerge as the first earth; from the wisdom contained within his own divinity, and as the sun (kuarahy) rises, he begins to unfold the foundation of the future human speech."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "unfolding-of-the-word-soul-ayvu-rapyta",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–7"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bartomeu Meliá, El guaraní conquistado y reducido: ensayos de etnohistoria (Asunción: CEADUC, 1986); and Meliá, 'La tierra sin mal de los Guaraní', Suplemento Antropológico 22 (1987)"
+     }
+    ],
+    "notes": "He conceives and unfolds the ayvu rapyta — the foundation/origin of human language and the sacred word-soul (ñe'ẽ) — before the existence of the world, together with the love (mborayu) that binds, and a single sacred hymn (one ñembo'e). He then causes the future-true-fathers of Karai, Jakaira and Tupã to share in this divine wisdom, that there be companions to his own divinity."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-self-origination",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §1 ('Ñande Ru Papa Tenondé... oñemboje'i')"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-the-sacred-word-and-human-speech",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ayvu rapyta",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "ayvu rapyta"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–7; the title-concept of the whole work"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meliá, El guaraní conquistado y reducido (1986)"
+     }
+    ]
+   },
+   {
+    "sphereId": "first-light-and-the-sun-rising",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 (he unfolds 'as the sun rises')"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Ñamandú', Wikidata Q9098903 (supreme creator and primordial father of Mbyá-Guaraní cosmology)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-life-giving-mist-and-divine-flames-of-the-heart",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 (the divine flames, tatachina/neblina, accompany his heart)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_namandu_self_origination",
+    "name": "unfold himself into being out of the primordial darkness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §1"
+     }
+    ],
+    "notes": "Self-existent: he is not begotten; he comes-to-be ('se va abriendo', oñemboje'i) of his own accord from the original night, the soles of his feet becoming the first ground."
+   },
+   {
+    "id": "guarani_namandu_create_word_soul",
+    "name": "unfold the sacred word-soul (ñe'ẽ) and the foundation of human speech",
+    "term": {
+     "value": "ñe'ẽ",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "ñe'ẽ"
+    },
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–6; Cap. IV (Ñe'ẽ porã tenondé — the origin of the soul-name)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meliá, El guaraní conquistado y reducido (1986)"
+     }
+    ],
+    "notes": "From his own divine wisdom he conceives the ayvu rapyta — the origin of language — and apportions to each human a word-soul (ñe'ẽ) sent from one of the four divine fathers; the partial inheritability reflects that the ñe'ẽ is bestowed on every Mbyá child as a fragment of this primal word."
+   },
+   {
+    "id": "guarani_namandu_engender_the_divine_fathers",
+    "name": "cause the other divine fathers to know of his divinity",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7"
+     }
+    ],
+    "notes": "By his creative wisdom (kuaa-rara) he makes the future-true-fathers of Karai, Jakaira and Tupã partake of divinity, that there be companions and co-fathers of the word-souls of the future numerous humanity."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_jeguaka_namandu",
+    "name": "jeguaka — the sacred feathered flower-crown of the First Father",
+    "kind": "regalia",
+    "role": "The flowered headdress crowned with feathers (jeguaka poty) that adorns Ñamandú as he unfolds; the model of the ritual headband worn by Mbyá men, marking the bearer of the word-soul.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 ('yvára jeguaka', the divine adornment); the jeguaka recurs through Caps. I–IV"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meliá, El guaraní conquistado y reducido (1986); the jeguaka as the male ritual crown"
+     }
+    ]
+   },
+   {
+    "id": "guarani_tatachina_namandu",
+    "name": "tatachina — the life-giving sacred mist of the divine heart",
+    "kind": "numinous-substance",
+    "role": "The fine vivifying mist / haze (neblina vivificante) that surrounds Ñamandú's heart at the unfolding and that animates the world; later set under Jakaira's charge.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2; Cap. III (Jakaira and the tatachina)"
+     }
+    ]
+   },
+   {
+    "id": "guarani_yvyrai_namandu",
+    "name": "yvyra'i — the divine rod/staff of office of the First Father",
+    "kind": "regalia",
+    "role": "The vara-insignia (yvyra'i), the rod of authority held in the right hand of Ñande Ru Papa Tenondé as he unfolds and creates the divine fathers; the prototype of the mbaraka/yvyra'i carried by Mbyá ritual authorities.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (the divine palms holding the rod of office, yvyra'i)"
+     }
+    ]
+   },
+   {
+    "id": "guarani_maino_i_namandu",
+    "name": "Maino'i — the primordial hummingbird, companion of the First Father",
+    "kind": "sacred-animal",
+    "role": "The hummingbird (Maino'i), the first/primordial bird (guyra yma) that emerges with Ñamandú in the darkness, flits among the flowers of his crown and refreshes his mouth as he creates; the creator also assumes its form to descend to the earth. Cadogan's Cap. I is titled for it ('Maino'i reko ypykue', the first customs of the hummingbird).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I 'Maino'i reko ypykue'; Cap. VIII (Pa'i Rete Kuaray descends in hummingbird form)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_namandu_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Ñamandú causes the future Ñamandú Chy Ete to stand facing his heart)"
+     }
+    ],
+    "notes": "His paired divine consort, the 'true mother of the Ñamandú', whom he caused to know divinity."
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_kuarahy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); and the Mbyá twin-cycle (Pa'i Rete Kuaray as son of the god)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914) — the twin-myth recension in which the Sun-twin is son of the creator"
+     }
+    ],
+    "notes": "Father of Kuarahy, the elder twin (the Sun); the demiurgic Sun is the son of Ñande Ru in the Guaraní twin-myth."
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_jasy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Mbyá twin-cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "Father of Jasy, the younger twin (the Moon)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ñamandú (Ñande Ru Papa Tenondé), 'Our First Father', is the self-existent primordial god who unfolds from the original darkness and, from the wisdom within his own divinity, unfolds the foundation of human speech (ayvu rapyta) and the word-soul (ñe'ẽ), the feathered flower-crown (jeguaka) and the life-giving mist — then causes the fathers of Karai, Jakaira and Tupã to know of his divinity.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (Universidade de São Paulo, Boletim 227, Antropologia 5, 1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Ñamandú is the supreme creator and primordial father of Mbyá-Guaraní cosmology; the four-father / word-soul theology is the core of the Ayvu Rapyta corpus.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bartomeu Meliá, El guaraní conquistado y reducido: ensayos de etnohistoria (Asunción: CEADUC, 1986)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The self-created First Father of the Mbyá-Guaraní; source of the word-soul (ñe'ẽ) and the four divine fathers (Cadogan 1959, Cap. I). His four-fold engendering of Karai, Jakaira and Tupã (and, with each father, of the four paired mothers) frames the entire genesis. Wired as spouse of Ñamandú Chy Ete and father of the twins Kuarahy and Jasy."
+ },
+ {
+  "id": "guarani_namandu_chy_ete",
+  "name": {
+   "primary": "Ñamandú Chy Ete",
+   "alt": [
+    "Ñande Chy Ete",
+    "Ñamandú Chy Ete Ã",
+    "True Mother of the Ñamandú",
+    "Our True Mother"
+   ],
+   "transliterations": {
+    "guarani": "Ñamandú Chy Ete",
+    "etymology": "Mbyá-Guaraní: chy 'mother', ete 'true, real, genuine' — 'the true mother of the Ñamandú (people)'. The first of the four paired divine mothers, consort of Ñamandú Ru Ete."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-namandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (the true Father Ñamandú made the future true mother of the Ñamandú know divinity, to stand facing his heart)"
+     }
+    ],
+    "notes": "The paired divine mother whom Ñamandú Ru Ete caused to share in his divinity, that she stand opposite his heart; the feminine principle of the first of the four divine households and mother of the Ñamandú lineage of humans."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-namandu-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   },
+   {
+    "sphereId": "paired-feminine-principle-of-the-first-divine-household",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_namandu_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the word-souls of the Ñamandú lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV (the four divine households dispatch the ñe'ẽ to humankind)"
+     }
+    ],
+    "notes": "As the paired mother of the first divine household she shares in the dispatch of the word-souls (ñe'ẽ) of those humans whose souls proceed from Ñamandú."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_namandu",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Consort of Ñamandú Ru Ete; reciprocal of guarani_namandu.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ñamandú Chy Ete, 'the true mother of the Ñamandú', is the first of the four paired divine mothers, the consort whom Ñamandú caused to know divinity to stand facing his heart, mother of the Ñamandú lineage of souls.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "First of the four paired divine mothers (Cadogan 1959). The four mothers — Ñamandú Chy Ete, Karai Chy Ete, Jakaira Chy Ete, Tupã Chy Ete — are each the feminine half of one of the four divine households; firmly attested, so authored. Spouse of Ñamandú."
+ },
+ {
+  "id": "guarani_tau",
+  "name": {
+   "primary": "Tau",
+   "alt": [
+    "Taú",
+    "the evil spirit"
+   ],
+   "transliterations": {
+    "guarani": "Tau",
+    "etymology": "Paraguayan-Guaraní: Tau, the spirit/principle of evil (in the Colmán systematization, the malign counter-principle to the good spirit Angatupyry). Father of the seven monsters by Keraná."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-evil-spirit-seizes-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (Asunción, 1929) — the genealogy of Tau and Keraná"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción: Editora Litocolor / Comuneros, 1980s; repr. 1995)"
+     }
+    ],
+    "notes": "Tau, the evil spirit, desires the beautiful Keraná, daughter of the pious Marangatú; he seizes/seduces her, and from their union — cursed by the goddess Arasy — are born the seven monstrous children."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-spirit-of-evil",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ]
+   },
+   {
+    "sphereId": "fatherhood-of-the-seven-monsters",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Moisés S. Bertoni, La civilización guaraní (Puerto Bertoni, 1922)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_tau_malefic_spirit",
+    "name": "act as the malefic spirit that engenders monsters",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "The principle of evil; his union with the mortal Keraná produces (under Arasy's curse) the seven monstrous offspring. Partial inheritability: the monstrous nature is transmitted to his seven children."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_kerana",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Father of the seven monsters by Keraná; reciprocal of guarani_kerana.spouse."
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tau, the evil spirit, by the mortal Keraná (daughter of Marangatú) and under the curse of the goddess Arasy, fathers the seven monstrous children of Paraguayan-Guaraní mythology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (1929)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The evil spirit, father of the seven monsters (Colmán 1929; González Torres). Wired as spouse of Keraná and father of the seven. Type 'deity': a primordial spirit-principle. SOLITARY (as to ancestry): a primordial evil spirit with no attested parents in the folk genealogy (Colmán 1929)."
+ },
+ {
+  "id": "guarani_teju_jagua",
+  "name": {
+   "primary": "Teju Jagua",
+   "alt": [
+    "Teyú Yaguá",
+    "Tejú Jaguá",
+    "Teju-jagua"
+   ],
+   "transliterations": {
+    "guarani": "Teju Jagua",
+    "etymology": "Guaraní teju 'lizard' + jagua 'dog' — 'lizard-dog'. The first-born of the seven; a giant lizard with seven dog-heads and fiery eyes, lord of caverns and guardian of fruits."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "first-born-of-tau-and-kerana-cursed-by-arasy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "notes": "The first-born of the seven cursed children; a great lizard with seven dog-heads, eyes that shoot fire — yet, despite his fearsome form, gentle. Lord of the caverns and protector of fruits and of hidden riches."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-caverns",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   },
+   {
+    "sphereId": "guardianship-of-fruits-and-hidden-riches",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Teju Jagua', reference compilations on the seven Guaraní monsters"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_teju_jagua_seven_dog_heads",
+    "name": "exist as a giant lizard with seven dog-heads",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Teju Jagua' reference compilations"
+     }
+    ],
+    "notes": "His defining form: a huge lizard body bearing seven heads of dogs; from teju 'lizard' and jagua 'dog'."
+   },
+   {
+    "id": "guarani_teju_jagua_fiery_eyes",
+    "name": "shoot fire from his eyes",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "His eyes flash/shoot fire; combined with his guardianship of caves and fruit, this makes him a dread but essentially passive guardian."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal of guarani_mboi_tui.sibling."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Teju Jagua, first-born of the seven children of Tau and Keraná, is a giant lizard with seven dog-heads and fiery eyes, lord of caverns and guardian of fruits and hidden riches.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "First-born of the seven monsters; seven-dog-headed lizard, lord of caves and fruits (González Torres; Colmán 1929). Child of Tau + Keraná; wired as sibling of the other six. Type 'deity': offspring of the spirit Tau."
+ },
+ {
+  "id": "guarani_tupa",
+  "name": {
+   "primary": "Tupã",
+   "alt": [
+    "Tupã Ru Ete",
+    "Tupá Ru Ete",
+    "Tupan",
+    "Tenondete"
+   ],
+   "transliterations": {
+    "guarani": "Tupã Ru Ete",
+    "etymology": "Guaraní Tupã (Tupí Tupã/Tupan); ru 'father', ete 'true' — 'the true father Tupã'. The fourth of the four divine fathers, lord of thunder, lightning, rain and the waters. (In the colonial period Tupã was raised by missionaries to render the Christian 'God', but in the indigenous cosmology he is the thunder-and-water power, the youngest of the four fathers.)"
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-by-namandu",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; the Tupã household"
+     }
+    ],
+    "notes": "The future-true-father of the Tupã is the last of those Ñamandú caused to know of divinity. To Tupã Ru Ete belong the thunder, the lightning, the rain and the waters; he moves over the great waters and the sea, and the storm is his sign."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thunder-and-lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tupã",
+     "script": "Latn (Guaraní)",
+     "rom": "Tupã"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã among the four fathers)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Tupã (mythology)' — thunder-and-lightning spirit of Tupi-Guarani cosmology"
+     }
+    ]
+   },
+   {
+    "sphereId": "rain-and-the-waters-and-the-sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (Tupã god of thunder and water in the Mbya four-god pantheon)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_tupa_command_thunder",
+    "name": "command the thunder and lightning",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Tupã (mythology)', reference compilation"
+     }
+    ],
+    "notes": "Lord of thunder (the report of the storm) and the lightning-flash; the youngest of the four divine fathers, whose voice is the thunder."
+   },
+   {
+    "id": "guarani_tupa_command_rain_and_waters",
+    "name": "command the rain, the waters and the sea",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Ruler of the rains and of the great waters; he traverses the sea, and the renewal of the waters is in his charge."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_tupa_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã Ru Ete and his paired mother)"
+     }
+    ],
+    "notes": "His paired divine consort, the true mother of the Tupã."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tupã (Tupã Ru Ete), the fourth and youngest of the four divine fathers, is lord of thunder, lightning, rain and the waters/sea in Mbyá-Guaraní cosmology.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Tupã is the Tupi-Guarani spirit of thunder and lightning; in the Mbya pantheon he is the god of thunder and water (colonially elevated by missionaries to render 'God').",
+    "citations": [
+     {
+      "kind": "tertiary",
+      "reference": "'Tupã (mythology)' and 'Guarani mythology', reference compilations"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Lord of thunder, rain and the waters (Cadogan 1959). Fourth of the four divine fathers; spouse of Tupã Chy Ete. Distinct from the missionary-elevated 'Tupã = God' usage."
+ },
+ {
+  "id": "guarani_tupa_chy_ete",
+  "name": {
+   "primary": "Tupã Chy Ete",
+   "alt": [
+    "True Mother of the Tupã",
+    "Tupá Chy Ete"
+   ],
+   "transliterations": {
+    "guarani": "Tupã Chy Ete",
+    "etymology": "Guaraní: 'the true mother of the Tupã (people)'; chy 'mother', ete 'true'. Paired consort of Tupã Ru Ete, fourth of the four divine mothers."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-tupa",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã Ru Ete made the future true mother of the Tupã know divinity, to stand facing his heart)"
+     }
+    ],
+    "notes": "The feminine half of the fourth divine household, mother of the Tupã lineage of word-souls."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-tupa-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_tupa_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the word-souls of the Tupã lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV"
+     }
+    ],
+    "notes": "As paired mother of the thunder-father's household she shares in dispatching the ñe'ẽ of humans whose souls proceed from Tupã."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_tupa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Consort of Tupã Ru Ete; reciprocal of guarani_tupa.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tupã Chy Ete, 'the true mother of the Tupã', is the fourth of the four paired divine mothers, consort of Tupã Ru Ete.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Fourth of the four paired divine mothers (Cadogan 1959). Spouse of Tupã. Together the four fathers (Ñamandú, Karai, Jakaira, Tupã) and their four mothers (Ñamandú/Karai/Jakaira/Tupã Chy Ete) are the eight divine progenitors of the Mbyá word-souls."
+ },
+ {
   "id": "haida_djilaqons",
   "name": {
    "primary": "Creek Woman",
@@ -134714,7 +137952,85 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "Ina (Ina-moe-aitu), the Mangaian Hina, beats out tapa in the moon (her cloths the clouds, her mallet the thunder) and is the heroine of the Tuna-eel tale from which the first coconut sprang.",
@@ -134893,7 +138209,63 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_mahui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_maui_kisikisi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "Maui, the youngest of the brothers and son of Ru and Buataranga, wrests fire from the fire-god Mauike in Avaiki and snares the sun Ra to lengthen the day.",
@@ -135222,6 +138594,17 @@ const NEW_FIGURES = [
       "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
      }
     ]
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_papatuanuku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Papa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -135456,6 +138839,72 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Rongo is named elder brother to Tonga-iti, the lizard-god."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
    }
   ],
   "sources": [
@@ -135610,6 +139059,50 @@ const NEW_FIGURES = [
       "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
      }
     ]
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
    }
   ],
   "sources": [
@@ -135784,6 +139277,94 @@ const NEW_FIGURES = [
       "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
      }
     ]
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -136610,6 +140191,28 @@ const NEW_FIGURES = [
       "reference": "Gill, Myths and Songs from the South Pacific (1876), Ch. I, pp. 12–14"
      }
     ]
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_atea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_atea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
    }
   ],
   "sources": [
@@ -141631,6 +145234,28 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Brother of Tane in the Hiva Oa tradition; both are sons of Toho (Tohetika)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_vatea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_atea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
    }
   ],
   "sources": [
@@ -141736,6 +145361,83 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Wife of Tiki."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
    }
   ],
   "sources": [
@@ -141907,6 +145609,61 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Grandson of Mahuike, the fire-keeper of the lower regions."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_maui_kisikisi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
    }
   ],
   "variants": [
@@ -142429,6 +146186,72 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Defeats the god Tohetika in legend."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
    }
   ],
   "sources": [
@@ -142692,6 +146515,94 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Coeval power of the Po; darkness paired with silence."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -142791,6 +146702,50 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Brother of Atea; both sons of Toho (Tohetika)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
    }
   ],
   "sources": [
@@ -163849,7 +167804,86 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Pan-Polynesian lunar goddess and patroness of kapa; in Hawaiian tradition a mother of Māui."
+  "notes": "Pan-Polynesian lunar goddess and patroness of kapa; in Hawaiian tradition a mother of Māui.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_hinenuitepo",
@@ -164047,7 +168081,97 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "One of the four great Hawaiian gods; lord of the ocean and constant companion of Kāne."
+  "notes": "One of the four great Hawaiian gods; lord of the ocean and constant companion of Kāne.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_kane",
@@ -164368,7 +168492,75 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "One of the four great Hawaiian gods; god of agriculture, rain and the Makahiki festival."
+  "notes": "One of the four great Hawaiian gods; god of agriculture, rain and the Makahiki festival.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_namaka",
@@ -164550,7 +168742,20 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori primordial earth mother and nurturer of all life."
+  "notes": "Māori primordial earth mother and nurturer of all life.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_papa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Papa), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_pele",
@@ -164952,7 +169157,75 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of cultivated food (especially kūmara) and of peace."
+  "notes": "Māori god of cultivated food (especially kūmara) and of peace.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_tane",
@@ -165152,7 +169425,53 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of forests and birds; separated earth and sky and made the first woman."
+  "notes": "Māori god of forests and birds; separated earth and sky and made the first woman.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_tangaroa",
@@ -165245,7 +169564,97 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Māori god of the sea and progenitor of fish; driven into the ocean by the storm-god."
+  "notes": "Māori god of the sea and progenitor of fish; driven into the ocean by the storm-god.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   }
+  ]
  },
  {
   "id": "polynesian_tawhirimatea",
@@ -166002,6 +170411,131 @@ const NEW_FIGURES = [
   "notes": "Primordial 'Old Mother'/spider-ancestress classed 'deity'. 'Ragno' (Italian for 'spider') is the term in de Angulo's published text — his Italian gloss of a Pomo spider-grandmother name; native term not securely recorded, hence term empty."
  },
  {
+  "id": "purepecha_auicanime",
+  "name": {
+   "primary": "Auicanime",
+   "alt": [
+    "Avicanime",
+    "Auikanime",
+    "Auicánime"
+   ],
+   "transliterations": {
+    "purepecha": "Auicanime",
+    "etymology": "Tarascan; the name designates the goddess of hunger/famine, given in the Relación in the Spanish orthography Auicanime."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-famine-of-the-gods",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Goddess of hunger, named in the Relación among 'the aunts of the gods of heaven'. In the myth she appears as a deceiving old woman who tricks a mother into cooking her own son while the gods go hungry — the personification of the divine hunger the Tarascan sacrificial system was meant to feed."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "hunger-and-famine",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Auicanime",
+     "script": "Purépecha",
+     "rom": "Auicanime"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "The goddess of hunger and famine of the Tarascans of Michoacán."
+   },
+   {
+    "sphereId": "human-sacrifice",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Embodiment of the gods' hunger whose appeasement motivated sacrificial offerings; the link of famine to the Tarascan sacrificial economy is drawn from the secondary literature."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-famine",
+    "name": "Brings hunger and famine upon people",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Personification of famine; her hunger, and that of the gods, drives the need to feed them through sacrifice.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   },
+   {
+    "id": "deceive-as-old-woman",
+    "name": "Appears as a deceiving old woman in famine",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the Relación she tricks a mother into cooking her own son during the gods' famine.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Purépecha goddess of hunger/famine, named in the Relación among the 'aunts of the gods of heaven'. SOLITARY: the only kinship attested for her is the generic, unnamed 'aunt of the gods' formula — no specific named parent, sibling or consort is given in the sources — so no kin edge is asserted rather than inventing one."
+ },
+ {
   "id": "purepecha_cuerauaperi",
   "name": {
    "primary": "Cuerauáperi",
@@ -166296,7 +170830,377 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Chief Purépecha god of fire, sun and war, patron of the Uacúsecha dynasty."
+  "notes": "Chief Purépecha god of fire, sun and war, patron of the Uacúsecha dynasty.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   }
+  ]
+ },
+ {
+  "id": "purepecha_pawacume",
+  "name": {
+   "primary": "Pauácume",
+   "alt": [
+    "Pawácume",
+    "Pauacume",
+    "Pauhacume"
+   ],
+   "transliterations": {
+    "purepecha": "Pauácume",
+    "etymology": "Tarascan personal/dynastic name of the Uacúsecha founding lords; given in the Relación in the Spanish orthography Pauacume."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "uacusecha-settlement-of-the-patzcuaro-basin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     }
+    ],
+    "notes": "With his brother Uápeani a founding lord of the Uacúsecha ('the eagles'), son of Sicuirancha. The brothers settled the Pátzcuaro basin and recognized the Chichimec rock-gods (Zirita-cherengue, Uacúsecha, Tingárata, Miéqua-ajeva). Pauácume was the father of the founder-king Tariácuri."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pauácume",
+     "script": "Purépecha",
+     "rom": "Pauácume"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Founding ancestral lord of the Uacúsecha royal lineage."
+   },
+   {
+    "sphereId": "founder-of-clans",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Progenitor of the dynastic line that culminated in Tariácuri and the Tarascan kingship."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-uacusecha-line",
+    "name": "Founds and propagates the Uacúsecha royal lineage",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "notes": "Father of Tariácuri; through him the Uacúsecha kingship descends.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uacusecha-bow-firewood",
+    "kind": "implement",
+    "name": "Bow, arrows and sacred firewood of the Uacúsecha",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The Chichimec/Uacúsecha hunter-warrior's bow-and-arrow and the firewood gathered for Curicaueri's perpetual fires — the cult duty the founding lords carried.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_uapeani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother and co-founding lord; the two are the sons of Sicuirancha."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (1985)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Founding lord of the Uacúsecha, son of Sicuirancha, brother of Uápeani and father of Tariácuri. Authored as a mortal legendary ancestral lord. (The Relación records a second, later Pauácume a generation on; this figure is the elder founder, son of Sicuirancha.)"
+ },
+ {
+  "id": "purepecha_tariacuri",
+  "name": {
+   "primary": "Tariácuri",
+   "alt": [
+    "Tariacuri",
+    "Taríacuri",
+    "Tarhiakurhi"
+   ],
+   "transliterations": {
+    "purepecha": "Tarhiakurhi",
+    "etymology": "Tarascan; the modern reading glosses Tarhiakurhi as 'strong wind' (tarhiata, 'wind'); the name is also linked in the dynastic tradition to the god Curicaueri whom he served. The reading is a secondary-literature gloss, not given as such in the Relación."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "purepecha_pawacume"
+  ],
+  "parentRoles": {
+   "purepecha_pawacume": "father"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "prophetic-vision-of-curicaueri-and-founding-of-the-tarascan-state",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), parts II–III (the dynastic history of Tariácuri)"
+     }
+    ],
+    "notes": "Born into the Uacúsecha clan in the Pátzcuaro basin (14th c.) and raised by the priests Chupítani, Nuriuan and Tacaqua as a curití in the service of the fire-sun god Curicaueri. Sent forth by a prophetic vision of Curicaueri, he unified the Tarascan state and established the royal seats; at his death he divided the realm among his son Hiquíngare (Pátzcuaro) and his nephews Hiripan (Ihuatzio) and Tangáxoan (Tzintzuntzan), founding the political order of the empire. Revered thereafter as the deified dynastic founder and culture-hero."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "founding-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tarhiakurhi",
+     "script": "Purépecha",
+     "rom": "Tarhiakurhi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Founder-king of the Uacúsecha Tarascan state; unifier of the Pátzcuaro-basin lordships."
+   },
+   {
+    "sphereId": "culture-founding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Culture-hero who established the cult of Curicaueri among the conquered towns and set the tripartite royal order."
+   },
+   {
+    "sphereId": "war-leadership",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (1985)"
+     }
+    ],
+    "notes": "Led the Uacúsecha wars of expansion out of the Pátzcuaro basin."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry-and-share-curicaueri",
+    "name": "Carries and distributes the obsidian blades of Curicaueri",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "Gave his son and nephews 'a part of Curicaueri' — one of the obsidian blades the god carried — to wrap in cloths and venerate, propagating the fire cult to the new royal seats.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   },
+   {
+    "id": "found-and-divide-the-realm",
+    "name": "Unifies the basin and divides the realm into three lordships",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Established Pátzcuaro, Ihuatzio and Tzintzuntzan as the three seats and apportioned them among his heirs at his death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tariacuri-obsidian-blade",
+    "kind": "implement",
+    "name": "Obsidian blade of Curicaueri",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The sacred obsidian blades in which Curicaueri was present; Tariácuri carried them and gave portions to his heirs to seed the cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   },
+   {
+    "id": "tariacuri-bow-and-arrows",
+    "kind": "implement",
+    "name": "Bow and arrows of the Uacúsecha",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The bow-and-arrow and sacred firewood of the Chichimec/Uacúsecha hunter-warriors who served Curicaueri; emblem of the conquering lineage Tariácuri led.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), parts II–III"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (Univ. of Oklahoma Press, 1993)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (Univ. of Oklahoma Press, 1985)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Founder-king and culture-hero of the Tarascan (Uacúsecha) state and devotee of Curicaueri. Authored as a demigod (a deified historical/legendary king). Son of the founding lord Pauacume (purepecha_pawacume) and nephew of Uápeani (purepecha_uapeani). He is a worshipper, not a kinsman, of Curicaueri, so no kin edge to the gods is asserted; his divine link is the cult relationship recorded in domains/faculties/materialCulture."
  },
  {
   "id": "purepecha_tiripeme",
@@ -166369,7 +171273,958 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "One of the five Tiripemencha, brother-gods of Curicaueri ruling the directions."
+  "notes": "One of the five Tiripemencha, brother-gods of Curicaueri ruling the directions.",
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1540) — the Tiripemencha are the brother rain-gods of Curicaueri and Tiripeme"
+     }
+    ],
+    "notes": "Fellow Tiripemencha rain-brother."
+   }
+  ]
+ },
+ {
+  "id": "purepecha_tiripeme_caheri",
+  "name": {
+   "primary": "Tiripeme Caheri",
+   "alt": [
+    "Tirepeme Caheri",
+    "Tiripeme Caheri",
+    "Tiripeme the Great",
+    "Tiripemecha Caheri"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Kaheri",
+    "etymology": "Tarascan; 'Caheri' means 'great/big' (cf. Curita-caheri, 'the great burning'), here distinguishing 'the great Tiripeme' installed at Pareo; given in the Relación in the Spanish orthography Caheri."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha; in the Relación the lords took Tiripeme-caheri ('the great Tiripeme') to Pareo, where he became the town's patron god. The southern brother — of the noon sun and (in the modern scheme) black; tied in some readings to the war-squads ('the black squirrel')."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the southern house of the world among the Tiripemencha; patron god of Pareo."
+   },
+   {
+    "sphereId": "war-and-the-hunt",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "The southern/black noon-sun member tied to the war-squads in the secondary reading; the colour/war associations are the modern systematization."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-south",
+    "name": "Guards the southern direction and the noon sun",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; patron god taken to Pareo. South/black/noon and war-squad associations from Pollard (1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-caheri",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Installed as patron god of Pareo with a perpetual temple fire and yácata, after the manner of Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (eastern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (western brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (northern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Southern brother of the Tiripemencha ('the great Tiripeme'), installed by the Relación as patron god of Pareo. Child of Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction/war scheme (south = black, noon sun, war-squads) is attributed to the secondary literature."
+ },
+ {
+  "id": "purepecha_tiripeme_quarencha",
+  "name": {
+   "primary": "Tiripeme Quarencha",
+   "alt": [
+    "Tiripeme Cuarencha",
+    "Tirepeme Quarencha",
+    "Tiripemecha Quarencha"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Kuarhentsï",
+    "etymology": "Tarascan; Tirípeme is the shared name of the brother direction-gods (Tiripemencha). 'Quarencha' distinguishes this eastern member; given in the Relación in the Spanish orthography Quarencha."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha, the brother-gods of Curicaueri who divided so that each became the patron god of a town. Quarencha is the eastern brother — of the rising sun and (in the modern colour scheme) red — associated with Corínguaro."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the eastern house of the world among the five Tiripemencha."
+   },
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Directional sun-deity of the east / rising sun; the colour-and-direction systematization (east = red) is the secondary-literature reading."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-east",
+    "name": "Guards the eastern direction and the rising sun",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; the east/red/dawn association is from the secondary systematization (Pollard 1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-quarencha",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Each Tiripeme was installed as the patron god of his town with a wood-fed temple fire and yácata, as with Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha set over the directions (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (western brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (northern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (southern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eastern brother of the Tiripemencha, the directional brother-gods of Curicaueri (associated with Corínguaro). Child of the creator-mother Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction scheme (east = red, rising sun) is attributed to the secondary literature, while the brotherhood and direction-guardianship are from the Relación."
+ },
+ {
+  "id": "purepecha_tiripeme_turupten",
+  "name": {
+   "primary": "Tiripeme Turupten",
+   "alt": [
+    "Tirepeme Turupten",
+    "Tiripeme Turupte",
+    "Tiripemecha Turupten"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Turupten",
+    "etymology": "Tarascan; 'Turupten' distinguishes the brother-god installed at Irámuco; given in the Relación in the Spanish orthography Turupten."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha; in the Relación the lords took Tiripeme-turupten to Irámuco (Ylamucuo / Iramuco), where he became the town's patron god. The western brother — of the setting sun and (in the modern scheme) white."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the western house of the world among the Tiripemencha; patron god of Irámuco."
+   },
+   {
+    "sphereId": "setting-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Directional sun-deity of the west / setting sun; the colour reading (west = white) is from the secondary systematization."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-west",
+    "name": "Guards the western direction and the setting sun",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; patron god taken to Irámuco. West/white/dusk association from Pollard (1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-turupten",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Installed as patron god of Irámuco with a perpetual temple fire and yácata, after the manner of Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (eastern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (northern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (southern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Western brother of the Tiripemencha, installed by the Relación as patron god of Irámuco (Ylamucuo). Child of Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction scheme (west = white, setting sun) is attributed to the secondary literature."
+ },
+ {
+  "id": "purepecha_tiripeme_xungapeti",
+  "name": {
+   "primary": "Tiripeme Xungápeti",
+   "alt": [
+    "Tiripeme Xugapeti",
+    "Tirepeme Xungapeti",
+    "Tiripemecha Xungápeti"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Xungápeti",
+    "etymology": "Tarascan; 'Xungápeti' distinguishes the brother-god installed at Pechátaro; given in the Relación in the Spanish orthography Xungapeti / Xugapeti."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha; in the Relación the lords took Tiripeme-xungápeti to Pechátaro, where he became the town's patron god. The northern brother — (in the modern scheme) yellow."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the northern house of the world among the Tiripemencha; patron god of Pechátaro."
+   },
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Directional sun-deity of the north; the colour reading (north = yellow) is from the secondary systematization."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-north",
+    "name": "Guards the northern direction",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; patron god taken to Pechátaro. North/yellow association from Pollard (1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-xungapeti",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Installed as patron god of Pechátaro with a perpetual temple fire and yácata, after the manner of Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (eastern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (western brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (southern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Northern brother of the Tiripemencha, installed by the Relación as patron god of Pechátaro. Child of Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction scheme (north = yellow) is attributed to the secondary literature."
+ },
+ {
+  "id": "purepecha_uapeani",
+  "name": {
+   "primary": "Uápeani",
+   "alt": [
+    "Vápeani",
+    "Vapeani",
+    "Uapeani",
+    "Huápeani"
+   ],
+   "transliterations": {
+    "purepecha": "Uápeani",
+    "etymology": "Tarascan personal/dynastic name of the Uacúsecha founding lords; given in the Relación in the Spanish orthography Vapeani."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "uacusecha-settlement-of-the-patzcuaro-basin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     }
+    ],
+    "notes": "With his brother Pauácume a founding lord of the Uacúsecha, son of Sicuirancha; co-leader of the Chichimec settlement of the Pátzcuaro basin and keeper of the cult of Curicaueri. Uncle of the founder-king Tariácuri."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Uápeani",
+     "script": "Purépecha",
+     "rom": "Uápeani"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Founding ancestral lord of the Uacúsecha royal lineage."
+   },
+   {
+    "sphereId": "royal-ancestor",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Co-founder of the line from which the Tarascan kingship descends; uncle of Tariácuri."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "keep-curicaueri-fire",
+    "name": "Keeps the cult and fire of Curicaueri for the lineage",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "notes": "As founding lord, bound to maintain the god's perpetual fires and lead the Uacúsecha in his service.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uacusecha-bow-firewood-uapeani",
+    "kind": "implement",
+    "name": "Bow, arrows and sacred firewood of the Uacúsecha",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The hunter-warrior's bow-and-arrow and the firewood for Curicaueri's fires carried by the founding lords.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_pawacume",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother and co-founding lord; the two are the sons of Sicuirancha."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (1985)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Founding lord of the Uacúsecha, son of Sicuirancha, brother of Pauácume and uncle of Tariácuri. Authored as a mortal legendary ancestral lord. (As with Pauácume, the Relación repeats the name in a later generation; this figure is the elder founder.)"
  },
  {
   "id": "purepecha_xaratanga",
@@ -167181,7 +173036,85 @@ const NEW_FIGURES = [
   ],
   "faculties": [],
   "materialCulture": [],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "existence",
@@ -167287,6 +173220,72 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Divine ancestor (with Tangaroa) of the first king Hotu Matu'a."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
    }
   ],
   "sources": [
@@ -167434,6 +173433,94 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Divine ancestor (with Rongo) of the first king Hotu Matu'a, from whom the ariki claimed descent."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -172849,7 +178936,85 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "existence",
@@ -173180,7 +179345,96 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "existence",
@@ -183347,6 +189601,83 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reciprocal of tahitian_oro.child — as Hina-tu-a-uta she is 'Oro's mother."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
    }
   ],
   "sources": [
@@ -183710,7 +190041,63 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_mahui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_maui_kisikisi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "existence",
@@ -184199,6 +190586,72 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reciprocal of tahitian_oro.sibling — half-brother as a son of Ta'aroa."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
    }
   ],
   "sources": [
@@ -184614,6 +191067,94 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reciprocal of tahitian_oro.child — Ta'aroa fathers 'Oro on Hina-tu-a-uta."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -184830,6 +191371,50 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Reciprocal of tahitian_oro.sibling — half-brother as a son of Ta'aroa."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
    }
   ],
   "sources": [
@@ -192598,6 +199183,83 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Wife of Maui 'Atalanga and mother of Maui Kisikisi in the dominant Maui-genealogy; in a related Tongan telling the woman of the Maui cycle is Sinailele, who conceives by stepping over the Mauis' bones (variant noted)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
    }
   ],
   "sources": [
@@ -192978,7 +199640,63 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_mahui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   }
+  ],
   "sources": [
    {
     "claim": "Maui Kisikisi ('Dragonfly Maui'; also Maui-fusi-fonua, 'the land-puller'), the trickster youngest of the three Tongan Maui, fished up the islands of Tonga — Tongatapu first, then the Ha'apai islands and Vava'u — with a magic fish-hook won from the old fisherman Tonga-fusi-fonua of Manuka, and brought fire up from the underworld, lodging it in the fire-making woods for humankind.",
@@ -193580,6 +200298,94 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "His mortal wife on earth, the mother of 'Aho'eitu."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tuamotuan_takaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -195295,6 +202101,28 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Tane the demiurge is born of Atea and Fakahotu."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_vatea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_atea",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Atea), cognate across the island groups."
    }
   ],
   "sources": [
@@ -195696,6 +202524,83 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Won by Maui when he slays her husband, the eel Te Tuna."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_sina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_ina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_hina",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_nuahine",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Hina), cognate across the island groups."
    }
   ],
   "sources": [
@@ -196096,6 +203001,61 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Maui wins Hina (the wife of the eel Te Tuna) by slaying Te Tuna."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_maui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_mahui",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_maui_kisikisi",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Māui), cognate across the island groups."
    }
   ],
   "sources": [
@@ -196356,6 +203316,72 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Fellow of the man-making triad."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_lono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_roo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_rongo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_ono",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Rongo), cognate across the island groups."
    }
   ],
   "sources": [
@@ -196664,6 +203690,94 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "The eel-woman Faumea, mother of his sons Tu-nui-ka-rere and Turi-a-Faumea."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_kanaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "samoan_tagaloa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_taaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tongan_tangaloa_eitumatupua",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "rapanui_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tangaroa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tanaoa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tangaroa), cognate across the island groups."
    }
   ],
   "sources": [
@@ -196824,6 +203938,50 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Fellow of the man-making triad."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "polynesian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tahitian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "mangaian_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "marquesan_tane",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Comparative Polynesian mythology: reflexes of the same ancestral deity across the island groups (E. Tregear, Maori-Polynesian Comparative Dictionary, 1891; R. D. Craig, Dictionary of Polynesian Mythology, 1989)"
+     }
+    ],
+    "notes": "Reflex of the same ancestral Polynesian deity (*Tāne), cognate across the island groups."
    }
   ],
   "sources": [
@@ -207224,6 +214382,250 @@ const NEW_FIGURES = [
   "notes": "Zapotec god of the sun and war, emblematized by the macaw."
  },
  {
+  "id": "zapotec_pitao_cozaana",
+  "name": {
+   "primary": "Pitao Cozaana",
+   "alt": [
+    "Coqui Cozaana",
+    "Cozaana",
+    "Cozana",
+    "Cosana",
+    "Pitào Cozàana"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Cozàana",
+    "etymology": "Zapotec ⟨Pitào Cozàana⟩, with pitào the honorific 'great spirit / god' and cozàana from the verb zàana 'to give birth, to engender'. Córdova glosses cozaana as 'produzidora o engendradora de los animales' (producer/engenderer of the animals); he calls the god a procreatrix even while treating him as a male deity, the dual male-female creative principle typical of Mesoamerican creator-gods."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "With his consort Huichaana forms the initial divine couple of the world — proceeding from the uncreated Coqui Xee — and engenders the animals, men, the other gods and the art of divination; venerated thereafter as the progenitor, patron of hunters and fishermen and lord of the ancestors.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, Guido. La Teogonía Zapoteca y sus vestigios en Tehuantepec. UNAM, 1983 (Cozana and Huichana as the initial couple of the world, creators of the Sun, the other gods and men)."
+     }
+    ],
+    "notes": "An undying creator-god; the tradition narrates not a birth or death but his standing function as engenderer and progenitor."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "creation-of-animals",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Cozàana",
+     "script": "Zapotec",
+     "rom": "Pitào Cozàana"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): cozaana, 'produzidora o engendradora de los animales'."
+     }
+    ]
+   },
+   {
+    "sphereId": "creation-of-humankind",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Cozana, multiplicador de los hombres; con Huichana, creadores de los hombres."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hunt",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion (2015): Pitao Cozaana, god of animals and the hunt, patron of hunters and fishermen."
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestors-and-lineage",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants (1977): Cozaana as god of ancestors and the progenitor."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "engender_the_animals",
+    "name": "engenders and multiplies the beasts of the wild, above all the deer",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The defining power Córdova names for him — 'engendradora de los animales'; he is the maker and increaser of all game, especially deer. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): cozaana as engenderer of the animals."
+     }
+    ]
+   },
+   {
+    "id": "engender_humankind",
+    "name": "with Huichaana brings forth and multiplies men, the gods and the divinatory art",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the male half of the creator-couple he engenders the Sun (Copijcha), the other gods and mankind, and the art of divination.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Cozana y Huichana engendraron al Sol, a los dioses, a los hombres y al arte adivinatorio."
+     }
+    ]
+   },
+   {
+    "id": "patron_of_hunters_and_fishermen",
+    "name": "grants game to hunters and a catch to fishermen who petition him",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Hunters and fishermen offered to Cozaana for success in the chase and the catch.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Cozaana patron of hunters and fishermen."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "cozaana_urn",
+    "name": "Effigy urn of the creator-god (earth/ancestor deity)",
+    "kind": "icon",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "depicted",
+    "notes": "Caso & Bernal identify possible images of Cozaana as an earth/creator deity among the Monte Albán effigy urns and at Mitla and Zaachila — the grey-ware funerary vessels that accompanied the honoured dead and the ancestor cult he presided over.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Caso, Alfonso, and Ignacio Bernal. Urnas de Oaxaca. INAH, 1952 (effigy urns of the Monte Albán pantheon; images of Cozaana as an earth/creator deity)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "zapotec_pitao_huichaana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Cozana estaba casado con Huichana; Caso & Bernal, Urnas de Oaxaca (1952), treat Cozaana and Huichaana as consorts, a male-female creator pair."
+     }
+    ],
+    "notes": "The primal creator-couple of the Zapotec world; reciprocal of zapotec_pitao_huichaana.spouse."
+   },
+   {
+    "kind": "father-of",
+    "personId": "zapotec_pitao_copijcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Copijcha, hijo de Cozana y Huichana, la pareja creadora."
+     }
+    ],
+    "notes": "Father of the sun-and-war god Copijcha, begotten with Huichaana."
+   },
+   {
+    "kind": "emanation-of",
+    "personId": "zapotec_coqui_xee",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977); Münch Galindo, La Teogonía Zapoteca (1983): Coqui Xee, the uncreated source, precedes and gives rise to Cozaana and Huichaana and all the other gods."
+     }
+    ],
+    "notes": "Proceeds from the infinite uncreated Coqui Xee (Pije-Tao), of whom the other gods are aspects/refractions."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pitao Cozaana (Coqui Cozaana) is the Zapotec creator and multiplier of animals, men and ancestors, patron of hunters and fishermen and the divine progenitor; Córdova glosses cozaana as 'produzidora o engendradora de los animales' (from zàana, 'to engender'), and he is paired with the goddess Huichaana as the male-female creator couple.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. México: Pedro Charte y Antonio Ricardo, 1578 (cozaana, 'produzidora o engendradora de los animales')."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion: An Ethnohistorical and Archaeological Perspective. University Press of Colorado, 2015 (Pitao Cozaana, god of animals and the hunt, creator of men and animals and god of ancestors)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. University of Oklahoma Press, 1977 (Cozaana the progenitor and god of ancestors)."
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Cozaana and Huichaana form the initial divine couple of the world, creators of the Sun, the other gods and men and of the divinatory art, proceeding from the uncreated Coqui Xee.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, Guido. La Teogonía Zapoteca y sus vestigios en Tehuantepec. UNAM, 1983."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Cozàana⟩; also Coqui Cozaana. The male half of the Zapotec creator-couple, god of the engendering of animals and men, of the hunt and of the ancestors, also remembered in the Isthmus as a fire-god and 'Señor de la Noche'. Distinct from the rain-god Cocijo and from the death-god Bezelao."
+ },
+ {
   "id": "zapotec_pitao_cozobi",
   "name": {
    "primary": "Pitao Cozobi",
@@ -207329,6 +214731,658 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Zapotec god of maize and agricultural plenty."
+ },
+ {
+  "id": "zapotec_pitao_huichaana",
+  "name": {
+   "primary": "Pitao Huichaana",
+   "alt": [
+    "Nohuichana",
+    "Nohuichaana",
+    "Huichaana",
+    "Huichana",
+    "Cochàna",
+    "Huichàana",
+    "Pitào Huichàana"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Huichàana",
+    "etymology": "Zapotec ⟨Pitào Huichàana⟩ (also Nohuichana, with the female prefix no-/xo-). Córdova names her 'la diosa de los niños o de la generación', and the colonial sources call her 'la Engendradora' and 'Madre de todas las criaturas'. She is the watery, generative counterpart of the engendering Cozaana."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "As the female half of the primal couple, with Cozaana, she brings forth men and fish and presides over the waters and over generation; honoured ever after as the foremost goddess — patroness of childbirth, of midwives, of women and children and of the whole human life-cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana, parte femenina de la obra creadora; diosa del agua, de los peces, de la generación, del parto y del ciclo de vida."
+     }
+    ],
+    "notes": "An undying generative goddess; no birth or death is narrated, only her standing function as engenderer and lady of the waters and of generation."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "water-and-rivers",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Huichàana",
+     "script": "Zapotec",
+     "rom": "Pitào Huichàana"
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana, diosa del agua, ríos, lagunas, lluvias y de los peces."
+     }
+    ]
+   },
+   {
+    "sphereId": "childbirth-and-generation",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Huichaana 'la diosa de los niños o de la generación', a quien las parturientas ofrecían sacrificios."
+     }
+    ]
+   },
+   {
+    "sphereId": "fish-and-fishing",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Pitao Huichaana, creator of men and fish, associated with water."
+     }
+    ]
+   },
+   {
+    "sphereId": "women-and-children",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977): Huichaana, patroness of women and children, goddess of procreation."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring_forth_men_and_fish",
+    "name": "creates and multiplies men and fish",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As the female half of the creator-couple she is named the maker of men and of fish — the generative power of the waters. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Huichaana creator of men and fish."
+     }
+    ]
+   },
+   {
+    "id": "govern_conception_and_birth",
+    "name": "governs conception, childbirth and the human life-cycle, aiding women in labour",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Women in childbirth offered sacrifices to her; she rules conception, birth and weddings and is patroness of the midwives (comadronas).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): diosa de la generación, a quien las parturientas ofrecían sacrificios."
+     }
+    ]
+   },
+   {
+    "id": "command_the_waters",
+    "name": "commands the waters of the rivers, lagoons and rains and the fish within them",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "As a great goddess linked to the moon she exercises dominion over fresh waters and fishing, the moon marking the vital rhythms of renewal.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana, señora de las aguas, los ríos y los peces, ligada a la luna."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "huichaana_senora_agua_urn",
+    "name": "Effigy urn 'la Señora Agua' (Lady Water)",
+    "kind": "icon",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "depicted",
+    "notes": "A finely modelled, polychromed Zapotec urn from the elite funerary complex at Atzompa (Monte Albán IIIB-IV) represents the water-goddess as 'la Señora Agua'; Caso & Bernal and later scholars identify Huichaana/Nohuichana — equated with the goddess-mother '13 Serpent' — among the female effigy urns linked to water and the renewal of the human cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robles García, N. M., L. Pacheco Arias, and M. Olvera Sánchez. 'El Señor Ocho Temblor y la Señora Agua: dos urnas zapotecas de élite en Atzompa, Oaxaca.' Arqueología 49 (2015)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Caso, Alfonso, and Ignacio Bernal. Urnas de Oaxaca. INAH, 1952 (Nohuichana and the female water/mother deities on the effigy urns)."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "zapotec_pitao_cozaana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Huichana estaba casada con Cozana y con él engendró al Sol y a los demás dioses."
+     }
+    ],
+    "notes": "The primal creator-couple of the Zapotec world; reciprocal of zapotec_pitao_cozaana.spouse."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "zapotec_pitao_copijcha",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, La Teogonía Zapoteca (1983): Copijcha, hijo de Cozana y Huichana."
+     }
+    ],
+    "notes": "Mother of the sun-and-war god Copijcha, begotten with Cozaana."
+   },
+   {
+    "kind": "emanation-of",
+    "personId": "zapotec_coqui_xee",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977); Münch Galindo, La Teogonía Zapoteca (1983): Coqui Xee, the uncreated source, precedes Cozaana and Huichaana."
+     }
+    ],
+    "notes": "Proceeds, with Cozaana, from the infinite uncreated Coqui Xee (Pije-Tao)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pitao Huichaana (Nohuichana) is the Zapotec goddess of water, rivers and fish, of fertility, generation, conception and childbirth, patroness of midwives, women and children and of the human life-cycle; Córdova names her 'la diosa de los niños o de la generación', she is called 'la Engendradora' and 'Madre de todas las criaturas', and she is paired with Cozaana as the female half of the creator couple.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (Huichaana, diosa de la generación a quien las parturientas ofrecían sacrificios)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Huichaana, goddess of procreation and children, creator of men and fish, associated with water)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Münch Galindo, Guido. La Teogonía Zapoteca y sus vestigios en Tehuantepec. UNAM, 1983 (Huichana, diosa del agua, los ríos, los peces, el parto y la generación; esposa de Cozana)."
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "As a great goddess Huichaana is linked to the moon and to dominion over the rivers, fishing and the whole vital cycle; in the colonial period her cult was assimilated to that of the Virgin Mary.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. University of Oklahoma Press, 1977."
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Huichàana⟩, also Nohuichana. The foremost Zapotec goddess and the female half of the creator-couple — lady of the waters, of generation and childbirth — paired with Cozaana and mother (with him) of the Sun-god Copijcha. Distinct from the death-goddess Xonaxi Quecuya."
+ },
+ {
+  "id": "zapotec_pitao_peeze",
+  "name": {
+   "primary": "Pitao Peeze",
+   "alt": [
+    "Pitào Pèeze",
+    "Pitao Pèeche",
+    "Peeze",
+    "Pitao Pezee"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Pèeze",
+    "etymology": "Zapotec ⟨Pitào Pèeze⟩, glossed 'god of omens / of auguries'. The element refers to the sign or augury read by the diviner; Pitao Peeze is the deity to whom such omens were traced. He is to be kept distinct from the death-god Pitào Pezèelào (Bezelao), whose similar-sounding name names the lord of the underworld, not of omens."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Acknowledged as the god of omens, auguries and fate — the deity to whom the colaní (diviner), consulting his ritual books, traced the sign, omen or dream a person had met, and through whom fortune and misfortune were read.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion (2015): the colaní determined the deity responsible for an omen or dream, usually Pitao Peeze, the god of omens."
+     }
+    ],
+    "notes": "An undying deity of fate and augury; no birth or death is narrated, only his standing office over omens and fortune."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "omens-and-auguries",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Pèeze",
+     "script": "Zapotec",
+     "rom": "Pitào Pèeze"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitao Peeze glossed as the god of omens/auguries."
+     }
+    ]
+   },
+   {
+    "sphereId": "fate-and-fortune",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs (1977): Pitao Peeze, the deity governing omens, signs and fortune."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send_and_signify_omens",
+    "name": "sends the omens and auguries by which fate and fortune are read",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The diviner traced an encountered sign or dream to Pitao Peeze and read from it the person's fortune; his is the power that charges events with ominous meaning. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): omens and dreams interpreted by the colaní, who traced them to Pitao Peeze, the god of omens."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "peeze_pije_divination_book",
+    "name": "Pijè / piyè divinatory book and the colaní's reckoning",
+    "kind": "ritual-object",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "instrument",
+    "notes": "The colaní (diviner) read omens and fortune from the painted ritual books and the 260-day count (piyè), tracing the encountered sign to the responsible deity — chiefly Pitao Peeze. The reckoning of omens, not an effigy, is his characteristic apparatus.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, The Zapotecs: Princes, Priests, and Peasants (1977): the colaní and the divinatory books/calendar through which omens were referred to Pitao Peeze; cf. Córdova, Vocabulario (1578)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Pitao Peeze is the Zapotec god of omens, auguries and fortune: the colaní, consulting the ritual books, interpreted the omens and dreams a person experienced and determined the deity responsible, usually Pitao Peeze, whose name is glossed 'god of omens'. He is distinct from the death-god Pitao Pezeelao/Bezelao, and from Pitao Paa, the separate god of merchants and wealth.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (Pitao Peeze, god of omens/auguries)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Peeze the god of omens; Pitao Xicala and Pixee Pecala possibly his aspects; Pitao Paa the distinct god of merchants and wealth)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Whitecotton, Joseph W. The Zapotecs: Princes, Priests, and Peasants. University of Oklahoma Press, 1977."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Pèeze⟩, 'god of omens'. The deity of auguries, fate and fortune to whom diviners referred the signs and dreams they read. Carefully distinguished from the death-god Pitao Bezelao/Pezeelao (already zapotec_pitao_bezelao) and from the wealth/merchant god Pitao Paa. Pitao Xicala (dreams) is reckoned an aspect of him. SOLITARY: no genealogy or consort is recorded for Pitao Peeze; the only relationship attested is the aspect-tie of Pitao Xicala (dreams) to him, captured on zapotec_pitao_xicala (Lind 2015; Whitecotton 1977)."
+ },
+ {
+  "id": "zapotec_pitao_xicala",
+  "name": {
+   "primary": "Pitao Xicala",
+   "alt": [
+    "Pitào Xicàla",
+    "Pitao Pecala",
+    "Pitào Pecàla",
+    "Xicala"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Xicàla",
+    "etymology": "Zapotec ⟨Pitào Xicàla⟩, also Pitào Pecàla — both xicàla and pecàla gloss 'dream'. Córdova defines Pitào xicàla as 'dios de los sueños' (god of dreams). The cognate name Pixèe Pecàla ('owl-dream', a difrasismo Smith-Stark reads as 'owl, dream') names the related demon of lust; Xicala proper is the dream-god."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Known as the god of dreams — the deity from whom dreams come and through whom they signify — whose visions the colaní read alongside the omens of Pitao Peeze, of whom Xicala was reckoned an aspect.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitào xicàla, 'dios de los sueños'."
+     }
+    ],
+    "notes": "An undying dream-god; no birth or death is narrated, only his office over dreams. Closely bound to Pitao Peeze (omens) and to the lust-demon Pixèe Pecàla through the shared pecàla 'dream' element."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "dreams",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Xicàla",
+     "script": "Zapotec",
+     "rom": "Pitào Xicàla"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitào xicàla, dios de los sueños."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "send_and_signify_dreams",
+    "name": "sends dreams and gives them their meaning",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The defining power: he is the god from whom dreams issue and through whom they carry their omen; the diviner read his dream-visions much as he read the auguries of Peeze. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): Pitào xicàla as god of dreams."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "xicala_dream_augury",
+    "name": "Dream-augury read by the colaní",
+    "kind": "practice",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "associated",
+    "notes": "Xicala is attested through the practice of dream-divination rather than a distinct effigy: the dreams ascribed to him were read for their omens by the colaní within the same divinatory system that referred signs to Pitao Peeze.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion (2015): Pitao Xicala the god of dreams, possibly an aspect of Pitao Peeze, within the colaní's divinatory practice."
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "aspect-of",
+    "personId": "zapotec_pitao_peeze",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Lind, Ancient Zapotec Religion (2015): Pitao Xicala (god of dreams) and Pixee Pecala (god of love and lechery) may have been aspects of Pitao Peeze, the god of omens."
+     }
+    ],
+    "notes": "Reckoned an aspect of the omen-god Pitao Peeze, dreams falling within the same sphere of augury and fate."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Pitao Xicala (also Pitao Pecala) is the Zapotec god of dreams — Córdova glosses Pitào xicàla 'dios de los sueños' (both xicala and pecala mean 'dream'); he was reckoned a possible aspect of the omen-god Pitao Peeze and is bound to the lust-demon Pixèe Pecàla through Córdova's 'owl-dream' difrasismo.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (Pitào xicàla, god of dreams)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Xicala god of dreams, possibly an aspect of Pitao Peeze)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Smith-Stark, Thomas C., on Córdova's Zapotec theonyms: pixèe pecàla as 'owl, dream' difrasismo linking the dream-god and the lust-demon."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Xicàla⟩, also Pitào Pecàla, 'god of dreams'. Reckoned an aspect of the omen-god Pitao Peeze and the near-twin of the lust-demon Pixèe Pecàla. Distinct from Pitao Ziy, the separate god of misery and misfortune."
+ },
+ {
+  "id": "zapotec_pitao_xoo",
+  "name": {
+   "primary": "Pitao Xoo",
+   "alt": [
+    "Pitào Xoo",
+    "Xoo",
+    "Lord Eight Earthquake",
+    "Señor Ocho Temblor"
+   ],
+   "transliterations": {
+    "zapotec": "Pitào Xoo",
+    "etymology": "Zapotec ⟨Pitào Xoo⟩, from xoo 'earthquake, tremor, the moving of the earth' (in the central valleys the same word also carries the sense of a roar or rumbling sound). Pitào marks the great spirit/force; Pitao Xoo is the deified, pèe-filled power of the quaking earth."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Zapotec",
+  "primaryTradition": "Zapotec",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": [],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 1,
+    "startEvent": "Recognised from of old as the living force of the moving earth — the deity of earthquakes whose stirring shakes the ground — invoked and propitiated by the Zapotec when the earth trembled.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): xoo 'temblor de tierra', and Pitao Xoo as its deity."
+     }
+    ],
+    "notes": "Conceived less as an anthropomorphic god than as a perpetual supernatural force (xoo) charged with pèe, the vital breath; no birth or death is narrated."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "earthquakes",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pitào Xoo",
+     "script": "Zapotec",
+     "rom": "Pitào Xoo"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): xoo, the tremor of the earth; Pitao Xoo, its deity."
+     }
+    ]
+   },
+   {
+    "sphereId": "the-moving-earth",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Sellen, Adam T. El cielo compartido: deidades y ancestros en las vasijas efigie zapotecas. UNAM, 2007 (xoo as a living force of the moving earth, filled with pèe)."
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "shake_the_earth",
+    "name": "shakes the earth and looses the tremor that moves the ground",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "The defining power: he is the quake itself, the force whose stirring makes the earth move. A divine, non-transmissible faculty.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Vocabulario en lengua çapoteca (1578): xoo, the moving of the earth, deified as Pitao Xoo."
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "xoo_senor_ocho_temblor_urn",
+    "name": "Effigy urn 'El Señor Ocho Temblor' (Lord 8 Earthquake)",
+    "kind": "icon",
+    "term": {
+     "value": "",
+     "script": "Zapotec",
+     "rom": ""
+    },
+    "role": "depicted",
+    "notes": "A finely modelled, polychromed elite Zapotec urn from the funerary complex at Atzompa (Monte Albán IIIB-IV) depicts the earthquake personage 'El Señor Ocho Temblor', whose calendrical name '8 Earthquake (8 Movement)' carries the xoo day-sign; the figure pairs on the same find with the water-goddess 'la Señora Agua'.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Robles García, N. M., L. Pacheco Arias, and M. Olvera Sánchez. 'El Señor Ocho Temblor y la Señora Agua: dos urnas zapotecas de élite en Atzompa, Oaxaca.' Arqueología 49 (2015)."
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "Pitao Xoo is the Zapotec god of earthquakes; Córdova records xoo as the word for the tremor of the earth and Pitao Xoo as its deity, and the earthquake force was conceived as a living, pèe-charged supernatural power rather than an ordinary anthropomorphic god.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Córdova, Fray Juan de. Vocabulario en lengua çapoteca. 1578 (xoo, 'temblor de tierra'; Pitao Xoo, god of earthquakes)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Lind, Michael. Ancient Zapotec Religion. University Press of Colorado, 2015 (Pitao Xoo, god of earthquakes)."
+     },
+     {
+      "kind": "secondary",
+      "reference": "Sellen, Adam T. El cielo compartido: deidades y ancestros en las vasijas efigie zapotecas. UNAM, 2007 (xoo as living supernatural force of the moving earth)."
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Zapotec ⟨Pitào Xoo⟩. The god/force of earthquakes, the deified tremor of the moving earth, rendered on the Atzompa elite urn as 'El Señor Ocho Temblor' (Lord 8 Earthquake). SOLITARY: no genealogy, consort or other named kin is recorded for Pitao Xoo — he is attested purely as the functional deity of the quaking earth (Córdova 1578; Sellen 2007)."
  },
  {
   "id": "zapotec_xonaxi_quecuya",

@@ -1,0 +1,1483 @@
+PANTHEON REGISTRY — FIGURE-AUTHORING TRANSCRIPT
+Tradition: Purépecha (Tarascan / Uacúsecha state of Michoacán, Mexico)
+Eras (registered, exact): "primordial", "mythic"
+Author pass: expansion of the Purépecha pantheon — well-attested figures of the
+Relación de Michoacán (c. 1539–41) still MISSING from the corpus.
+
+EXISTING FIGURES (NOT re-authored; referenced by id):
+  - purepecha_curicaueri   (Curicaueri — supreme fire/sun/war god, patron of the Uacúsecha)
+  - purepecha_cuerauaperi  (Cuerauáperi — creator-mother of the gods, rain/earth)
+  - purepecha_xaratanga    (Xarátanga — moon goddess of sustenance, consort of Curicaueri)
+  - purepecha_tiripeme     (Tiripeme — one of the five Tiripemencha brother-gods of the directions)
+
+================================================================================
+RESEARCH SUMMARY AND AUTHORING DECISION
+================================================================================
+
+The chief source for Tarascan (Purépecha) religion is the *Relación de las ceremonias y
+ritos, población y gobernación de los indios de la provincia de Mechuacán* (the *Relación
+de Michoacán*, c. 1539–41), compiled by the Franciscan friar Jerónimo de Alcalá from the
+oral testimony of the priest-petámuti and Uacúsecha nobility. Its second and third parts
+preserve the dynastic epic of Tariácuri and the cult of Curicaueri. Standard modern
+scholarship: Helen Perlstein Pollard, *Tariácuri's Legacy: The Prehispanic Tarascan State*
+(Univ. of Oklahoma Press, 1993); J. Benedict Warren, *The Conquest of Michoacán* (1985);
+and studies of Tarascan religion by Hans Roskamp and (on the Tarascan language of the
+Relación) the lexical/onomastic tradition behind the colonial Tarascan vocabularies.
+
+EIGHT firmly-attested figures are authored here, in two clusters plus two singletons.
+
+1) THE FOUR FURTHER TIRIPEMENCHA (brother-gods of the directions) — siblings of the
+   existing purepecha_tiripeme. The Relación describes the Tiripemencha ("Tiripemecha")
+   dividing/separating (at Vayámeo) so that each became the patron god of a Pátzcuaro-basin
+   town; together with Curicaueri they are the brother-gods (hermanos) set over the houses
+   of the world. The individually named brothers attested are:
+     • TIRIPEME QUARENCHA (Cuarencha) — the eastern brother (rising-sun / red in the
+       secondary systematization), associated with Corínguaro.
+     • TIRIPEME TURUPTEN — patron god taken to Irámuco (Ylamucuo / Iramuco); western
+       brother (setting-sun / white).
+     • TIRIPEME XUNGÁPETI (Xugápeti) — patron god taken to Pechátaro; northern brother
+       (yellow).
+     • TIRIPEME CAHERI ("the great Tiripeme") — patron god taken to Pareo; southern
+       brother (noon-sun / black). Called "the black squirrel" in some readings and tied
+       to the war-squads.
+   The cardinal-direction-and-colour scheme (east/red, north/yellow, west/white, south/
+   black, with a fifth blue centre) is the modern scholarly systematization (Pollard 1993
+   and following) of the directional Tiripemencha; in the Relación itself the secure datum
+   is the *brotherhood* and the *town patronage*. Both layers are cited and the colour/
+   direction notes are attributed to the secondary literature, not over-claimed for the
+   primary source.
+
+   WIRING DECISION (accuracy-first, per HARD RULE 1). The Relación makes the Tiripemencha
+   the BROTHERS of Curicaueri (the corpus already records purepecha_tiripeme as a `sibling`
+   of purepecha_curicaueri, and curicaueri carries the reciprocal). Curicaueri is therefore
+   their BROTHER, not their father; wiring the new brothers as "children of Curicaueri"
+   would be factually wrong. They are accordingly wired as:
+     - parentIds: ["purepecha_cuerauaperi"] (parentRoles {mother}) — Cuerauáperi is the
+       attested "mother of all the gods"; this is the directed parent edge mandated for the
+       Tiripemencha, set to the *actual* divine parent (the mother).
+     - sibling → purepecha_curicaueri  (RECIPROCAL-NEEDED on the existing figure)
+     - sibling → purepecha_tiripeme    (RECIPROCAL-NEEDED on the existing figure)
+     - sibling → each of the three other new Tiripemencha (reciprocated within this batch)
+   This keeps the corpus internally consistent with its existing Curicaueri↔Tiripeme
+   sibling model and is the well-attested reading. type = deity (offspring of a deity /
+   brother-god). The reason is recorded in each figure's notes.
+
+2) THE FOUNDING UACÚSECHA LORDS — UÁPEANI and PAUACUME, with TARIÁCURI.
+     • PAUACUME (Pawácume) and UÁPEANI (Vapeani) are, in the Relación, the founding lords
+       of the Uacúsecha ("the eagles"), sons of Sicuirancha; they settled the Pátzcuaro
+       basin and recognized the Chichimec gods. PAUACUME is the father, and UÁPEANI the
+       uncle, of Tariácuri. (Two later lords repeat the same names a generation on; the
+       figures authored here are the elder founding pair, sons of Sicuirancha.) Authored as
+       MORTAL legendary ancestral lords (not children of deities), wired as brothers
+       (sibling, reciprocated in-batch).
+     • TARIÁCURI (Purépecha *Tarhiakurhi*, glossed "strong wind" in the modern reading) —
+       the great founder-king and culture-hero of the Tarascan state; born into the
+       Uacúsecha clan (14th c.), raised by priests as a *curití* in the service of
+       Curicaueri, and sent forth by a prophetic vision of Curicaueri to forge a unified
+       state. He established the three royal seats and, at his death, divided the realm
+       among his son Hiquíngare (Pátzcuaro) and his nephews Hiripan (Ihuatzio) and
+       Tangáxoan (Tzintzuntzan). He carried and distributed the obsidian blades of
+       Curicaueri and is the deified dynastic founder. Authored as a DEMIGOD (a deified
+       historical/legendary king), child (parentId) of purepecha_pawacume so he is not
+       kinless. era mythic.
+
+3) AUICANIME (Avicanime) — the goddess of hunger/famine, named in the Relación as one of
+   "the aunts of the gods of heaven," who in the myth deceives a woman into cooking her own
+   son while the gods starve; she personifies the divine hunger that the Tarascan
+   sacrificial system was meant to feed. Authored as a DEITY. No individually named divine
+   kin is firmly attested for her (the "aunt of the gods" formula is a generic kinship
+   class, not a specific named parent or sibling), so she is flagged SOLITARY with the
+   cited reason rather than wired to a guessed relative.
+
+FIGURES CONSIDERED BUT NOT AUTHORED (with reasons):
+  • CHUPITHIRIPEME / Chupi Tiripeme (the "blue" fifth/centre Tiripeme, lake-and-sacrifice)
+    — the centre-of-the-world fifth member appears mainly in the modern fivefold
+    direction-and-colour systematization of the Tiripemencha (Pollard and following) rather
+    than as a cleanly separable named brother in the Relación's town list; to avoid padding
+    the directional set beyond the four securely individuated, town-patron brothers (and
+    the existing purepecha_tiripeme), Chupithiripeme is NOT authored here. It is noted in
+    the Tiripemencha figures' notes as the centre/blue member of the scheme.
+  • CURITA CAHERI / Curita-caheri ("the great burning"), Hurendequavécara, Pungarancha,
+    Querenda-angápeti, Uazoríquare, etc. — further named Tarascan deities and local patrons
+    of the Relación are real but are deferred to a later pass; this pass covers exactly the
+    figures requested and securely individuated above, without padding.
+
+================================================================================
+AUTHORED FIGURES
+================================================================================
+
+```json
+[
+ {
+  "id": "purepecha_tariacuri",
+  "name": {
+   "primary": "Tariácuri",
+   "alt": [
+    "Tariacuri",
+    "Taríacuri",
+    "Tarhiakurhi"
+   ],
+   "transliterations": {
+    "purepecha": "Tarhiakurhi",
+    "etymology": "Tarascan; the modern reading glosses Tarhiakurhi as 'strong wind' (tarhiata, 'wind'); the name is also linked in the dynastic tradition to the god Curicaueri whom he served. The reading is a secondary-literature gloss, not given as such in the Relación."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [
+   "purepecha_pawacume"
+  ],
+  "parentRoles": {
+   "purepecha_pawacume": "father"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "prophetic-vision-of-curicaueri-and-founding-of-the-tarascan-state",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), parts II–III (the dynastic history of Tariácuri)"
+     }
+    ],
+    "notes": "Born into the Uacúsecha clan in the Pátzcuaro basin (14th c.) and raised by the priests Chupítani, Nuriuan and Tacaqua as a curití in the service of the fire-sun god Curicaueri. Sent forth by a prophetic vision of Curicaueri, he unified the Tarascan state and established the royal seats; at his death he divided the realm among his son Hiquíngare (Pátzcuaro) and his nephews Hiripan (Ihuatzio) and Tangáxoan (Tzintzuntzan), founding the political order of the empire. Revered thereafter as the deified dynastic founder and culture-hero."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "founding-kingship",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tarhiakurhi",
+     "script": "Purépecha",
+     "rom": "Tarhiakurhi"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Founder-king of the Uacúsecha Tarascan state; unifier of the Pátzcuaro-basin lordships."
+   },
+   {
+    "sphereId": "culture-founding",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Culture-hero who established the cult of Curicaueri among the conquered towns and set the tripartite royal order."
+   },
+   {
+    "sphereId": "war-leadership",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (1985)"
+     }
+    ],
+    "notes": "Led the Uacúsecha wars of expansion out of the Pátzcuaro basin."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "carry-and-share-curicaueri",
+    "name": "Carries and distributes the obsidian blades of Curicaueri",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "partial",
+    "notes": "Gave his son and nephews 'a part of Curicaueri' — one of the obsidian blades the god carried — to wrap in cloths and venerate, propagating the fire cult to the new royal seats.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   },
+   {
+    "id": "found-and-divide-the-realm",
+    "name": "Unifies the basin and divides the realm into three lordships",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Established Pátzcuaro, Ihuatzio and Tzintzuntzan as the three seats and apportioned them among his heirs at his death.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tariacuri-obsidian-blade",
+    "kind": "implement",
+    "name": "Obsidian blade of Curicaueri",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The sacred obsidian blades in which Curicaueri was present; Tariácuri carried them and gave portions to his heirs to seed the cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   },
+   {
+    "id": "tariacuri-bow-and-arrows",
+    "kind": "implement",
+    "name": "Bow and arrows of the Uacúsecha",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The bow-and-arrow and sacred firewood of the Chichimec/Uacúsecha hunter-warriors who served Curicaueri; emblem of the conquering lineage Tariácuri led.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), parts II–III"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (Univ. of Oklahoma Press, 1993)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (Univ. of Oklahoma Press, 1985)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Founder-king and culture-hero of the Tarascan (Uacúsecha) state and devotee of Curicaueri. Authored as a demigod (a deified historical/legendary king). Son of the founding lord Pauacume (purepecha_pawacume) and nephew of Uápeani (purepecha_uapeani). He is a worshipper, not a kinsman, of Curicaueri, so no kin edge to the gods is asserted; his divine link is the cult relationship recorded in domains/faculties/materialCulture."
+ },
+ {
+  "id": "purepecha_pawacume",
+  "name": {
+   "primary": "Pauácume",
+   "alt": [
+    "Pawácume",
+    "Pauacume",
+    "Pauhacume"
+   ],
+   "transliterations": {
+    "purepecha": "Pauácume",
+    "etymology": "Tarascan personal/dynastic name of the Uacúsecha founding lords; given in the Relación in the Spanish orthography Pauacume."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "uacusecha-settlement-of-the-patzcuaro-basin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     }
+    ],
+    "notes": "With his brother Uápeani a founding lord of the Uacúsecha ('the eagles'), son of Sicuirancha. The brothers settled the Pátzcuaro basin and recognized the Chichimec rock-gods (Zirita-cherengue, Uacúsecha, Tingárata, Miéqua-ajeva). Pauácume was the father of the founder-king Tariácuri."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Pauácume",
+     "script": "Purépecha",
+     "rom": "Pauácume"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Founding ancestral lord of the Uacúsecha royal lineage."
+   },
+   {
+    "sphereId": "founder-of-clans",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Progenitor of the dynastic line that culminated in Tariácuri and the Tarascan kingship."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "found-uacusecha-line",
+    "name": "Founds and propagates the Uacúsecha royal lineage",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "notes": "Father of Tariácuri; through him the Uacúsecha kingship descends.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uacusecha-bow-firewood",
+    "kind": "implement",
+    "name": "Bow, arrows and sacred firewood of the Uacúsecha",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The Chichimec/Uacúsecha hunter-warrior's bow-and-arrow and the firewood gathered for Curicaueri's perpetual fires — the cult duty the founding lords carried.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_uapeani",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother and co-founding lord; the two are the sons of Sicuirancha."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (1985)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Founding lord of the Uacúsecha, son of Sicuirancha, brother of Uápeani and father of Tariácuri. Authored as a mortal legendary ancestral lord. (The Relación records a second, later Pauácume a generation on; this figure is the elder founder, son of Sicuirancha.)"
+ },
+ {
+  "id": "purepecha_uapeani",
+  "name": {
+   "primary": "Uápeani",
+   "alt": [
+    "Vápeani",
+    "Vapeani",
+    "Uapeani",
+    "Huápeani"
+   ],
+   "transliterations": {
+    "purepecha": "Uápeani",
+    "etymology": "Tarascan personal/dynastic name of the Uacúsecha founding lords; given in the Relación in the Spanish orthography Vapeani."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "deceased",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "uacusecha-settlement-of-the-patzcuaro-basin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     }
+    ],
+    "notes": "With his brother Pauácume a founding lord of the Uacúsecha, son of Sicuirancha; co-leader of the Chichimec settlement of the Pátzcuaro basin and keeper of the cult of Curicaueri. Uncle of the founder-king Tariácuri."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "ancestral-sovereignty",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Uápeani",
+     "script": "Purépecha",
+     "rom": "Uápeani"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Founding ancestral lord of the Uacúsecha royal lineage."
+   },
+   {
+    "sphereId": "royal-ancestor",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Co-founder of the line from which the Tarascan kingship descends; uncle of Tariácuri."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "keep-curicaueri-fire",
+    "name": "Keeps the cult and fire of Curicaueri for the lineage",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "full",
+    "notes": "As founding lord, bound to maintain the god's perpetual fires and lead the Uacúsecha in his service.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "uacusecha-bow-firewood-uapeani",
+    "kind": "implement",
+    "name": "Bow, arrows and sacred firewood of the Uacúsecha",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "wielded",
+    "notes": "The hunter-warrior's bow-and-arrow and the firewood for Curicaueri's fires carried by the founding lords.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_pawacume",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother and co-founding lord; the two are the sons of Sicuirancha."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41), part III"
+     },
+     {
+      "kind": "secondary",
+      "reference": "J. Benedict Warren, The Conquest of Michoacán (1985)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Founding lord of the Uacúsecha, son of Sicuirancha, brother of Pauácume and uncle of Tariácuri. Authored as a mortal legendary ancestral lord. (As with Pauácume, the Relación repeats the name in a later generation; this figure is the elder founder.)"
+ },
+ {
+  "id": "purepecha_tiripeme_quarencha",
+  "name": {
+   "primary": "Tiripeme Quarencha",
+   "alt": [
+    "Tiripeme Cuarencha",
+    "Tirepeme Quarencha",
+    "Tiripemecha Quarencha"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Kuarhentsï",
+    "etymology": "Tarascan; Tirípeme is the shared name of the brother direction-gods (Tiripemencha). 'Quarencha' distinguishes this eastern member; given in the Relación in the Spanish orthography Quarencha."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha, the brother-gods of Curicaueri who divided so that each became the patron god of a town. Quarencha is the eastern brother — of the rising sun and (in the modern colour scheme) red — associated with Corínguaro."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the eastern house of the world among the five Tiripemencha."
+   },
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Directional sun-deity of the east / rising sun; the colour-and-direction systematization (east = red) is the secondary-literature reading."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-east",
+    "name": "Guards the eastern direction and the rising sun",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; the east/red/dawn association is from the secondary systematization (Pollard 1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-quarencha",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Each Tiripeme was installed as the patron god of his town with a wood-fed temple fire and yácata, as with Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha set over the directions (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (western brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (northern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (southern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Eastern brother of the Tiripemencha, the directional brother-gods of Curicaueri (associated with Corínguaro). Child of the creator-mother Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction scheme (east = red, rising sun) is attributed to the secondary literature, while the brotherhood and direction-guardianship are from the Relación."
+ },
+ {
+  "id": "purepecha_tiripeme_turupten",
+  "name": {
+   "primary": "Tiripeme Turupten",
+   "alt": [
+    "Tirepeme Turupten",
+    "Tiripeme Turupte",
+    "Tiripemecha Turupten"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Turupten",
+    "etymology": "Tarascan; 'Turupten' distinguishes the brother-god installed at Irámuco; given in the Relación in the Spanish orthography Turupten."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha; in the Relación the lords took Tiripeme-turupten to Irámuco (Ylamucuo / Iramuco), where he became the town's patron god. The western brother — of the setting sun and (in the modern scheme) white."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the western house of the world among the Tiripemencha; patron god of Irámuco."
+   },
+   {
+    "sphereId": "setting-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Directional sun-deity of the west / setting sun; the colour reading (west = white) is from the secondary systematization."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-west",
+    "name": "Guards the western direction and the setting sun",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; patron god taken to Irámuco. West/white/dusk association from Pollard (1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-turupten",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Installed as patron god of Irámuco with a perpetual temple fire and yácata, after the manner of Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (eastern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (northern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (southern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Western brother of the Tiripemencha, installed by the Relación as patron god of Irámuco (Ylamucuo). Child of Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction scheme (west = white, setting sun) is attributed to the secondary literature."
+ },
+ {
+  "id": "purepecha_tiripeme_xungapeti",
+  "name": {
+   "primary": "Tiripeme Xungápeti",
+   "alt": [
+    "Tiripeme Xugapeti",
+    "Tirepeme Xungapeti",
+    "Tiripemecha Xungápeti"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Xungápeti",
+    "etymology": "Tarascan; 'Xungápeti' distinguishes the brother-god installed at Pechátaro; given in the Relación in the Spanish orthography Xungapeti / Xugapeti."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha; in the Relación the lords took Tiripeme-xungápeti to Pechátaro, where he became the town's patron god. The northern brother — (in the modern scheme) yellow."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the northern house of the world among the Tiripemencha; patron god of Pechátaro."
+   },
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Directional sun-deity of the north; the colour reading (north = yellow) is from the secondary systematization."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-north",
+    "name": "Guards the northern direction",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; patron god taken to Pechátaro. North/yellow association from Pollard (1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-xungapeti",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Installed as patron god of Pechátaro with a perpetual temple fire and yácata, after the manner of Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (eastern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (western brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_caheri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (southern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Northern brother of the Tiripemencha, installed by the Relación as patron god of Pechátaro. Child of Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction scheme (north = yellow) is attributed to the secondary literature."
+ },
+ {
+  "id": "purepecha_tiripeme_caheri",
+  "name": {
+   "primary": "Tiripeme Caheri",
+   "alt": [
+    "Tirepeme Caheri",
+    "Tiripeme Caheri",
+    "Tiripeme the Great",
+    "Tiripemecha Caheri"
+   ],
+   "transliterations": {
+    "purepecha": "Tirípeme Kaheri",
+    "etymology": "Tarascan; 'Caheri' means 'great/big' (cf. Curita-caheri, 'the great burning'), here distinguishing 'the great Tiripeme' installed at Pareo; given in the Relación in the Spanish orthography Caheri."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [
+   "purepecha_cuerauaperi"
+  ],
+  "parentRoles": {
+   "purepecha_cuerauaperi": "mother"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "separation-of-the-tiripemencha-at-vayameo",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "One of the Tiripemencha; in the Relación the lords took Tiripeme-caheri ('the great Tiripeme') to Pareo, where he became the town's patron god. The southern brother — of the noon sun and (in the modern scheme) black; tied in some readings to the war-squads ('the black squirrel')."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "cardinal-directions",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tirípeme",
+     "script": "Purépecha",
+     "rom": "Tirípeme"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Guardian of the southern house of the world among the Tiripemencha; patron god of Pareo."
+   },
+   {
+    "sphereId": "war-and-the-hunt",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "The southern/black noon-sun member tied to the war-squads in the secondary reading; the colour/war associations are the modern systematization."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guard-south",
+    "name": "Guards the southern direction and the noon sun",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Member of the directional Tiripemencha; patron god taken to Pareo. South/black/noon and war-squad associations from Pollard (1993).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "tiripeme-perpetual-fire-caheri",
+    "kind": "site",
+    "name": "Town temple-fire of the Tiripeme",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "role": "venerated-at",
+    "notes": "Installed as patron god of Pareo with a perpetual temple fire and yácata, after the manner of Curicaueri's cult.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "purepecha_curicaueri",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Brother-god of Curicaueri; one of the Tiripemencha (Curicaueri is their brother, not their father)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme; brother of the directions."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_quarencha",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (eastern brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_turupten",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (western brother)."
+   },
+   {
+    "kind": "sibling",
+    "personId": "purepecha_tiripeme_xungapeti",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Fellow Tiripeme (northern brother)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Southern brother of the Tiripemencha ('the great Tiripeme'), installed by the Relación as patron god of Pareo. Child of Cuerauáperi (parentId) and brother — not son — of Curicaueri; the colour/direction/war scheme (south = black, noon sun, war-squads) is attributed to the secondary literature."
+ },
+ {
+  "id": "purepecha_auicanime",
+  "name": {
+   "primary": "Auicanime",
+   "alt": [
+    "Avicanime",
+    "Auikanime",
+    "Auicánime"
+   ],
+   "transliterations": {
+    "purepecha": "Auicanime",
+    "etymology": "Tarascan; the name designates the goddess of hunger/famine, given in the Relación in the Spanish orthography Auicanime."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Purépecha",
+  "primaryTradition": "Purépecha",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-famine-of-the-gods",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "Goddess of hunger, named in the Relación among 'the aunts of the gods of heaven'. In the myth she appears as a deceiving old woman who tricks a mother into cooking her own son while the gods go hungry — the personification of the divine hunger the Tarascan sacrificial system was meant to feed."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "hunger-and-famine",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Auicanime",
+     "script": "Purépecha",
+     "rom": "Auicanime"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ],
+    "notes": "The goddess of hunger and famine of the Tarascans of Michoacán."
+   },
+   {
+    "sphereId": "human-sacrifice",
+    "contextTag": "ritual",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "notes": "Embodiment of the gods' hunger whose appeasement motivated sacrificial offerings; the link of famine to the Tarascan sacrificial economy is drawn from the secondary literature."
+   }
+  ],
+  "faculties": [
+   {
+    "id": "bring-famine",
+    "name": "Brings hunger and famine upon people",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "Personification of famine; her hunger, and that of the gods, drives the need to feed them through sacrifice.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   },
+   {
+    "id": "deceive-as-old-woman",
+    "name": "Appears as a deceiving old woman in famine",
+    "term": {
+     "value": "",
+     "script": "Purépecha",
+     "rom": ""
+    },
+    "inheritability": "none",
+    "notes": "In the Relación she tricks a mother into cooking her own son during the gods' famine.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Relación de Michoacán (c. 1539–41)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Helen Perlstein Pollard, Tariácuri's Legacy: The Prehispanic Tarascan State (1993)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Purépecha goddess of hunger/famine, named in the Relación among the 'aunts of the gods of heaven'. SOLITARY: the only kinship attested for her is the generic, unnamed 'aunt of the gods' formula — no specific named parent, sibling or consort is given in the sources — so no kin edge is asserted rather than inventing one."
+ }
+]
+```
+
+SOLITARY:
+  - purepecha_auicanime — Goddess of hunger named in the Relación de Michoacán only as one of "the aunts of the gods of heaven," a generic and unnamed kinship class. No specific named parent, sibling, spouse or child is attested for her in the Relación, Pollard (1993) or Warren (1985), so she is left without a kin edge rather than wired to a guessed relative.
+
+RECIPROCAL-NEEDED (symmetric ties to existing corpus figures — add the reciprocal on the existing figure):
+  - purepecha_curicaueri  sibling  purepecha_tiripeme_quarencha   (add reciprocal sibling on purepecha_curicaueri)
+  - purepecha_curicaueri  sibling  purepecha_tiripeme_turupten    (add reciprocal sibling on purepecha_curicaueri)
+  - purepecha_curicaueri  sibling  purepecha_tiripeme_xungapeti   (add reciprocal sibling on purepecha_curicaueri)
+  - purepecha_curicaueri  sibling  purepecha_tiripeme_caheri      (add reciprocal sibling on purepecha_curicaueri)
+  - purepecha_tiripeme    sibling  purepecha_tiripeme_quarencha   (add reciprocal sibling on purepecha_tiripeme)
+  - purepecha_tiripeme    sibling  purepecha_tiripeme_turupten    (add reciprocal sibling on purepecha_tiripeme)
+  - purepecha_tiripeme    sibling  purepecha_tiripeme_xungapeti   (add reciprocal sibling on purepecha_tiripeme)
+  - purepecha_tiripeme    sibling  purepecha_tiripeme_caheri      (add reciprocal sibling on purepecha_tiripeme)
+
+NOTE ON PARENT EDGES (no reciprocal required; directed):
+  - purepecha_tariacuri        child of  purepecha_pawacume    (Pauácume = father of Tariácuri)
+  - purepecha_tiripeme_*       child of  purepecha_cuerauaperi (Cuerauáperi = 'mother of all the gods'; the directed parent edge mandated for the Tiripemencha, set to the actual divine parent — the mother. Curicaueri is wired as their brother, per the Relación, not as a father.)
