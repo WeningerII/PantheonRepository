@@ -19992,6 +19992,10 @@ const buildPeopleSeed = () => {
           { kind: 'secondary', reference: 'Idowu, Olódùmarè: God in Yoruba Belief (1962)' },
         ], weight: 'primary' },
       ],
+      relations: [
+        { kind: 'equated-with', personId: 'fon_gu', sources: [{ kind: 'secondary', reference: 'West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)' }], notes: 'The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun).' },
+        { kind: 'equated-with', personId: 'ewe_gu', sources: [{ kind: 'secondary', reference: 'West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)' }], notes: 'The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun).' },
+      ],
       notes: 'Orisha of iron, war, and metallurgy. Among the Irunmolẹ̀ — the primordial divinities sent by Olodumare. Cleared the path for the other orisha to descend to earth. Sworn-on by Yoruba oath-takers; the iron of his cult tools is the hardest material in the social fabric.',
     },
     {
@@ -20126,6 +20130,10 @@ const buildPeopleSeed = () => {
           { kind: 'primary', reference: 'Yoruba oral tradition' },
         ], weight: 'primary' },
         { claim: 'apotheosis', citations: [{ kind: 'secondary', reference: 'Idowu, Olódùmarè (1962)' }, { kind: 'secondary', reference: 'Verger (1957)' }], weight: 'primary' },
+      ],
+      relations: [
+        { kind: 'equated-with', personId: 'ewe_so', sources: [{ kind: 'secondary', reference: 'West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)' }], notes: 'The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango).' },
+        { kind: 'equated-with', personId: 'fon_sogbo', sources: [{ kind: 'secondary', reference: 'West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)' }], notes: 'The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango).' },
       ],
       notes: 'Third generation. Third Alaafin of Oyo. Apotheosed at his death (or self-hanging) into the orisha of thunder and lightning. The Oba ko so liturgical cry — "the king did not hang" — is the foundational liturgical formula of the Shango cult and a core piece of Yoruba political theology.',
     },
@@ -49443,7 +49451,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Feared orisa of smallpox, disease, and healing, called Shopona; son of Nana Buruku."
+  "notes": "Feared orisa of smallpox, disease, and healing, called Shopona; son of Nana Buruku.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   }
+  ]
  },
  {
   "id": "balinese_barong",
@@ -78724,7 +78756,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Trickster, crossroads guardian, and divine messenger-mediator of sacrifice."
+  "notes": "Trickster, crossroads guardian, and divine messenger-mediator of sacrifice.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   }
+  ]
  },
  {
   "id": "estonian_kalev",
@@ -81197,7 +81253,30 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_fa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "orunmila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   }
+  ],
   "sources": [
    {
     "claim": "Afa (Fon Fa; the Gbe form of Yoruba Ifa) is the Ewe vodu and oracle of divination and of personal destiny, made known through the sixteen signs (du) cast with the sacred palm-kernels or the divining chain.",
@@ -81707,7 +81786,19 @@ const NEW_FIGURES = [
     ]
    }
   ],
-  "relations": [],
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_dan",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Da/Dan)."
+   }
+  ],
   "sources": [
    {
     "claim": "Da/Dã (the world-serpent Aido-Hwedo; the Ewe rainbow-serpent Anyi-eʋo) is the great primordial snake who bears the creator through the cosmos, shapes the land, and then coils beneath and around the world to uphold it, resting in the sea; his arc in the sky is the rainbow, and he embodies motion and wealth.",
@@ -81931,6 +82022,28 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Sibling of the existing thunder-god ewe_so (Sogbo). RECIPROCAL-NEEDED on ewe_so."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "ogun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
    }
   ],
   "sources": [
@@ -82190,6 +82303,28 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Non-symmetric: Legba is the interpreter and opener of the Fa oracle (ewe_afa); no reciprocal required. The converse is noted on ewe_afa."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "eshu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
    }
   ],
   "sources": [
@@ -82571,7 +82706,20 @@ const NEW_FIGURES = [
     "weight": "corroborating"
    }
   ],
-  "notes": "The Ewe high god is most often the dual pair Mawu-Lisa, frequently elided into the single name Mawu (glossed by some Ewe as 'maa-wu-wo', 'he/she who will not kill you'). Distinct from Fon Vodun in that Ewe usage emphasizes Mawu as a near-monotheistic supreme being and frames the thunder vodu as So/Sogbo rather than the Fon Xevioso. Typed deity (high creator)."
+  "notes": "The Ewe high god is most often the dual pair Mawu-Lisa, frequently elided into the single name Mawu (glossed by some Ewe as 'maa-wu-wo', 'he/she who will not kill you'). Distinct from Fon Vodun in that Ewe usage emphasizes Mawu as a near-monotheistic supreme being and frames the thunder vodu as So/Sogbo rather than the Fon Xevioso. Typed deity (high creator).",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_mawu_lisa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Mawu-Lisa)."
+   }
+  ]
  },
  {
   "id": "ewe_nana_buluku",
@@ -82663,7 +82811,31 @@ const NEW_FIGURES = [
     "weight": "primary"
    }
   ],
-  "notes": "Deus otiosus standing behind the creator pair; 'Nana' is an honorific for an aged grandparent/ancestor. Typed deity (primordial)."
+  "notes": "Deus otiosus standing behind the creator pair; 'Nana' is an honorific for an aged grandparent/ancestor. Typed deity (primordial).",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_nana_buluku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "nana_buruku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   }
+  ]
  },
  {
   "id": "ewe_sakpata",
@@ -82872,6 +83044,28 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Sibling of the existing thunder-god ewe_so (Sogbo/Heviesso); their quarrel over the earth is a stock Gbe myth. RECIPROCAL-NEEDED on ewe_so."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "babalu_aye",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
    }
   ],
   "sources": [
@@ -83101,6 +83295,28 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Fellow great vodu child of Mawu-Lisa."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_sogbo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "shango",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
    }
   ]
  },
@@ -85952,7 +86168,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon cosmic rainbow-serpent who bore the creator and supports the world."
+  "notes": "Fon cosmic rainbow-serpent who bore the creator and supports the world.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_da",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Da/Dan)."
+   }
+  ]
  },
  {
   "id": "fon_fa",
@@ -86043,7 +86272,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon god of fate and divination, equivalent of Yoruba Ifa; his wife Gbadu sources his power."
+  "notes": "Fon god of fate and divination, equivalent of Yoruba Ifa; his wife Gbadu sources his power.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_afa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "orunmila",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   }
+  ]
  },
  {
   "id": "fon_gu",
@@ -86117,7 +86370,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon god of iron and war, counterpart of Yoruba Ogun; brought smithing to humankind."
+  "notes": "Fon god of iron and war, counterpart of Yoruba Ogun; brought smithing to humankind.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_gu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "ogun",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Gu/Ogun)."
+   }
+  ]
  },
  {
   "id": "fon_legba",
@@ -86224,7 +86501,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon trickster-messenger and gatekeeper, counterpart of Yoruba Eshu; interpreter of Fa."
+  "notes": "Fon trickster-messenger and gatekeeper, counterpart of Yoruba Eshu; interpreter of Fa.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_legba",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "eshu",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Legba/Eshu)."
+   }
+  ]
  },
  {
   "id": "fon_mawu_lisa",
@@ -86331,7 +86632,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon androgynous creator deity, twin union of moon (Mawu) and sun (Lisa)."
+  "notes": "Fon androgynous creator deity, twin union of moon (Mawu) and sun (Lisa).",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_mawu_lisa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Mawu-Lisa)."
+   }
+  ]
  },
  {
   "id": "fon_nana_buluku",
@@ -86404,7 +86718,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon androgynous supreme being and primordial mother of the creator Mawu-Lisa."
+  "notes": "Fon androgynous supreme being and primordial mother of the creator Mawu-Lisa.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_nana_buluku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "nana_buruku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   }
+  ]
  },
  {
   "id": "fon_sakpata",
@@ -86511,7 +86849,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon eldest son of Mawu-Lisa, lord of the earth and smallpox; counterpart of Shopona."
+  "notes": "Fon eldest son of Mawu-Lisa, lord of the earth and smallpox; counterpart of Shopona.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_sakpata",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "babalu_aye",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Sakpata/Babalu-Aye)."
+   }
+  ]
  },
  {
   "id": "fon_sogbo",
@@ -86606,7 +86968,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Fon god of thunder and lightning, chief of the sky/thunder pantheon."
+  "notes": "Fon god of thunder and lightning, chief of the sky/thunder pantheon.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_so",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "shango",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
+   }
+  ]
  },
  {
   "id": "ga_ataa_naa_nyongmo",
@@ -156638,7 +157024,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Ancient primordial grandmother-deity of swamps and creation, shared with the Fon."
+  "notes": "Ancient primordial grandmother-deity of swamps and creation, shared with the Fon.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_nana_buluku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_nana_buluku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   }
+  ]
  },
  {
   "id": "ndebele_amadlozi",
@@ -163513,7 +163923,31 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Orisa of wisdom and divination; patron of the Ifa oracle and destiny."
+  "notes": "Orisa of wisdom and divination; patron of the Ifa oracle and destiny.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "ewe_afa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_fa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Fa/Ifa)."
+   }
+  ]
  },
  {
   "id": "osanyin",

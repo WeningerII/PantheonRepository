@@ -142,7 +142,20 @@ That's 24. Let me write the JSON now.
     "weight": "corroborating"
    }
   ],
-  "notes": "The Ewe high god is most often the dual pair Mawu-Lisa, frequently elided into the single name Mawu (glossed by some Ewe as 'maa-wu-wo', 'he/she who will not kill you'). Distinct from Fon Vodun in that Ewe usage emphasizes Mawu as a near-monotheistic supreme being and frames the thunder vodu as So/Sogbo rather than the Fon Xevioso. Typed deity (high creator)."
+  "notes": "The Ewe high god is most often the dual pair Mawu-Lisa, frequently elided into the single name Mawu (glossed by some Ewe as 'maa-wu-wo', 'he/she who will not kill you'). Distinct from Fon Vodun in that Ewe usage emphasizes Mawu as a near-monotheistic supreme being and frames the thunder vodu as So/Sogbo rather than the Fon Xevioso. Typed deity (high creator).",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_mawu_lisa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Mawu-Lisa)."
+   }
+  ]
  },
  {
   "id": "ewe_mawu",
@@ -574,6 +587,28 @@ That's 24. Let me write the JSON now.
      }
     ],
     "notes": "Fellow great vodu child of Mawu-Lisa."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "fon_sogbo",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "shango",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (So/Sogbo/Shango)."
    }
   ]
  },
@@ -667,7 +702,31 @@ That's 24. Let me write the JSON now.
     "weight": "primary"
    }
   ],
-  "notes": "Deus otiosus standing behind the creator pair; 'Nana' is an honorific for an aged grandparent/ancestor. Typed deity (primordial)."
+  "notes": "Deus otiosus standing behind the creator pair; 'Nana' is an honorific for an aged grandparent/ancestor. Typed deity (primordial).",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "fon_nana_buluku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "nana_buruku",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "West African vodun/òrìṣà cognates: the same deity across the Gbe (Ewe, Fon) and Yoruba traditions (M. Herskovits, Dahomey, 1938; G. Parrinder, West African Religion, 1961; P. Verger, Notes sur le culte des Orisa et Vodun, 1957)"
+     }
+    ],
+    "notes": "The same West African deity under its Gbe/Yoruba reflex (Nana Buluku)."
+   }
+  ]
  },
  {
   "id": "kuba_mbombo",
