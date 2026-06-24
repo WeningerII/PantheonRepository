@@ -10,816 +10,3272 @@ Note on the tradition string and the existing corpus: the registry already carri
 
 ```json
 [
-  {
-    "id": "guarani_namandu",
-    "name": {
-      "primary": "Ñamandú",
-      "alt": ["Ñande Ru Papa Tenondé", "Ñamandú Ru Ete", "Ñande Ru Pa-pa Tenonde", "Ñamandú Tenondegua", "Our First Father", "Nhamandú"],
-      "transliterations": {
-        "guarani": "Ñamandú (Ñande Ru Papa Tenondé)",
-        "etymology": "Mbyá-Guaraní; glossed by Cadogan as 'Nuestro Padre Último-último Primero' — 'Our Last-last First Father', the self-existent First Father. ñande 'our', ru 'father', papa 'last/ultimate', tenondé 'first, foremost, the one who is in front'. The name Ñamandú is connected with the rising of the sun and with the verb of standing-up / unfolding into being."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "self-unfolding-from-the-primordial-darkness", "sources": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (Universidade de São Paulo, Boletim 227, Antropologia 5, 1959), Cap. I 'Maino'i reko ypykue' (Las primitivas costumbres del colibrí), §§1–4" }], "notes": "Ñande Ru Papa Tenondé unfolds himself out of the original darkness (pytũ ymã): the soles of his feet, his small round seat, emerge as the first earth; from the wisdom contained within his own divinity, and as the sun (kuarahy) rises, he begins to unfold the foundation of the future human speech." },
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 1, "startEvent": "unfolding-of-the-word-soul-ayvu-rapyta", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–7" }, { "kind": "secondary", "reference": "Bartomeu Meliá, El guaraní conquistado y reducido: ensayos de etnohistoria (Asunción: CEADUC, 1986); and Meliá, 'La tierra sin mal de los Guaraní', Suplemento Antropológico 22 (1987)" }], "notes": "He conceives and unfolds the ayvu rapyta — the foundation/origin of human language and the sacred word-soul (ñe'ẽ) — before the existence of the world, together with the love (mborayu) that binds, and a single sacred hymn (one ñembo'e). He then causes the future-true-fathers of Karai, Jakaira and Tupã to share in this divine wisdom, that there be companions to his own divinity." }
-    ],
-    "domains": [
-      { "sphereId": "primordial-self-origination", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §1 ('Ñande Ru Papa Tenondé... oñemboje'i')" }] },
-      { "sphereId": "origin-of-the-sacred-word-and-human-speech", "contextTag": "lifelong", "term": { "value": "ayvu rapyta", "script": "Latn (Mbyá-Guaraní)", "rom": "ayvu rapyta" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–7; the title-concept of the whole work" }, { "kind": "secondary", "reference": "Meliá, El guaraní conquistado y reducido (1986)" }] },
-      { "sphereId": "first-light-and-the-sun-rising", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 (he unfolds 'as the sun rises')" }, { "kind": "tertiary", "reference": "'Ñamandú', Wikidata Q9098903 (supreme creator and primordial father of Mbyá-Guaraní cosmology)" }] },
-      { "sphereId": "the-life-giving-mist-and-divine-flames-of-the-heart", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 (the divine flames, tatachina/neblina, accompany his heart)" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_namandu_self_origination", "name": "unfold himself into being out of the primordial darkness", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §1" }], "notes": "Self-existent: he is not begotten; he comes-to-be ('se va abriendo', oñemboje'i) of his own accord from the original night, the soles of his feet becoming the first ground." },
-      { "id": "guarani_namandu_create_word_soul", "name": "unfold the sacred word-soul (ñe'ẽ) and the foundation of human speech", "term": { "value": "ñe'ẽ", "script": "Latn (Mbyá-Guaraní)", "rom": "ñe'ẽ" }, "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–6; Cap. IV (Ñe'ẽ porã tenondé — the origin of the soul-name)" }, { "kind": "secondary", "reference": "Meliá, El guaraní conquistado y reducido (1986)" }], "notes": "From his own divine wisdom he conceives the ayvu rapyta — the origin of language — and apportions to each human a word-soul (ñe'ẽ) sent from one of the four divine fathers; the partial inheritability reflects that the ñe'ẽ is bestowed on every Mbyá child as a fragment of this primal word." },
-      { "id": "guarani_namandu_engender_the_divine_fathers", "name": "cause the other divine fathers to know of his divinity", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7" }], "notes": "By his creative wisdom (kuaa-rara) he makes the future-true-fathers of Karai, Jakaira and Tupã partake of divinity, that there be companions and co-fathers of the word-souls of the future numerous humanity." }
-    ],
-    "materialCulture": [
-      { "id": "guarani_jeguaka_namandu", "name": "jeguaka — the sacred feathered flower-crown of the First Father", "kind": "regalia", "role": "The flowered headdress crowned with feathers (jeguaka poty) that adorns Ñamandú as he unfolds; the model of the ritual headband worn by Mbyá men, marking the bearer of the word-soul.", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 ('yvára jeguaka', the divine adornment); the jeguaka recurs through Caps. I–IV" }, { "kind": "secondary", "reference": "Meliá, El guaraní conquistado y reducido (1986); the jeguaka as the male ritual crown" }] },
-      { "id": "guarani_tatachina_namandu", "name": "tatachina — the life-giving sacred mist of the divine heart", "kind": "numinous-substance", "role": "The fine vivifying mist / haze (neblina vivificante) that surrounds Ñamandú's heart at the unfolding and that animates the world; later set under Jakaira's charge.", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2; Cap. III (Jakaira and the tatachina)" }] },
-      { "id": "guarani_yvyrai_namandu", "name": "yvyra'i — the divine rod/staff of office of the First Father", "kind": "regalia", "role": "The vara-insignia (yvyra'i), the rod of authority held in the right hand of Ñande Ru Papa Tenondé as he unfolds and creates the divine fathers; the prototype of the mbaraka/yvyra'i carried by Mbyá ritual authorities.", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (the divine palms holding the rod of office, yvyra'i)" }] },
-      { "id": "guarani_maino_i_namandu", "name": "Maino'i — the primordial hummingbird, companion of the First Father", "kind": "sacred-animal", "role": "The hummingbird (Maino'i), the first/primordial bird (guyra yma) that emerges with Ñamandú in the darkness, flits among the flowers of his crown and refreshes his mouth as he creates; the creator also assumes its form to descend to the earth. Cadogan's Cap. I is titled for it ('Maino'i reko ypykue', the first customs of the hummingbird).", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I 'Maino'i reko ypykue'; Cap. VIII (Pa'i Rete Kuaray descends in hummingbird form)" }] }
-    ],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_namandu_chy_ete", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Ñamandú causes the future Ñamandú Chy Ete to stand facing his heart)" }], "notes": "His paired divine consort, the 'true mother of the Ñamandú', whom he caused to know divinity." },
-      { "kind": "father-of", "personId": "guarani_kuarahy", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); and the Mbyá twin-cycle (Pa'i Rete Kuaray as son of the god)" }, { "kind": "secondary", "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914) — the twin-myth recension in which the Sun-twin is son of the creator" }], "notes": "Father of Kuarahy, the elder twin (the Sun); the demiurgic Sun is the son of Ñande Ru in the Guaraní twin-myth." },
-      { "kind": "father-of", "personId": "guarani_jasy", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); the Mbyá twin-cycle" }, { "kind": "secondary", "reference": "Nimuendajú (1914)" }], "notes": "Father of Jasy, the younger twin (the Moon)." }
-    ],
-    "sources": [
-      { "claim": "Ñamandú (Ñande Ru Papa Tenondé), 'Our First Father', is the self-existent primordial god who unfolds from the original darkness and, from the wisdom within his own divinity, unfolds the foundation of human speech (ayvu rapyta) and the word-soul (ñe'ẽ), the feathered flower-crown (jeguaka) and the life-giving mist — then causes the fathers of Karai, Jakaira and Tupã to know of his divinity.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (Universidade de São Paulo, Boletim 227, Antropologia 5, 1959), Cap. I" }], "weight": "primary" },
-      { "claim": "Ñamandú is the supreme creator and primordial father of Mbyá-Guaraní cosmology; the four-father / word-soul theology is the core of the Ayvu Rapyta corpus.", "citations": [{ "kind": "secondary", "reference": "Bartomeu Meliá, El guaraní conquistado y reducido: ensayos de etnohistoria (Asunción: CEADUC, 1986)" }], "weight": "high" }
-    ],
-    "notes": "The self-created First Father of the Mbyá-Guaraní; source of the word-soul (ñe'ẽ) and the four divine fathers (Cadogan 1959, Cap. I). His four-fold engendering of Karai, Jakaira and Tupã (and, with each father, of the four paired mothers) frames the entire genesis. Wired as spouse of Ñamandú Chy Ete and father of the twins Kuarahy and Jasy."
+ {
+  "id": "guarani_namandu",
+  "name": {
+   "primary": "Ñamandú",
+   "alt": [
+    "Ñande Ru Papa Tenondé",
+    "Ñamandú Ru Ete",
+    "Ñande Ru Pa-pa Tenonde",
+    "Ñamandú Tenondegua",
+    "Our First Father",
+    "Nhamandú"
+   ],
+   "transliterations": {
+    "guarani": "Ñamandú (Ñande Ru Papa Tenondé)",
+    "etymology": "Mbyá-Guaraní; glossed by Cadogan as 'Nuestro Padre Último-último Primero' — 'Our Last-last First Father', the self-existent First Father. ñande 'our', ru 'father', papa 'last/ultimate', tenondé 'first, foremost, the one who is in front'. The name Ñamandú is connected with the rising of the sun and with the verb of standing-up / unfolding into being."
+   }
   },
-  {
-    "id": "guarani_namandu_chy_ete",
-    "name": {
-      "primary": "Ñamandú Chy Ete",
-      "alt": ["Ñande Chy Ete", "Ñamandú Chy Ete Ã", "True Mother of the Ñamandú", "Our True Mother"],
-      "transliterations": {
-        "guarani": "Ñamandú Chy Ete",
-        "etymology": "Mbyá-Guaraní: chy 'mother', ete 'true, real, genuine' — 'the true mother of the Ñamandú (people)'. The first of the four paired divine mothers, consort of Ñamandú Ru Ete."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-facing-the-heart-of-namandu", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (the true Father Ñamandú made the future true mother of the Ñamandú know divinity, to stand facing his heart)" }], "notes": "The paired divine mother whom Ñamandú Ru Ete caused to share in his divinity, that she stand opposite his heart; the feminine principle of the first of the four divine households and mother of the Ñamandú lineage of humans." }
-    ],
-    "domains": [
-      { "sphereId": "divine-motherhood-of-the-namandu-people", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }] },
-      { "sphereId": "paired-feminine-principle-of-the-first-divine-household", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_namandu_chy_ete_send_word_souls", "name": "send forth (with her consort) the word-souls of the Ñamandú lineage", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV (the four divine households dispatch the ñe'ẽ to humankind)" }], "notes": "As the paired mother of the first divine household she shares in the dispatch of the word-souls (ñe'ẽ) of those humans whose souls proceed from Ñamandú." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_namandu", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }], "notes": "Consort of Ñamandú Ru Ete; reciprocal of guarani_namandu.spouse." }
-    ],
-    "sources": [
-      { "claim": "Ñamandú Chy Ete, 'the true mother of the Ñamandú', is the first of the four paired divine mothers, the consort whom Ñamandú caused to know divinity to stand facing his heart, mother of the Ñamandú lineage of souls.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I" }], "weight": "primary" }
-    ],
-    "notes": "First of the four paired divine mothers (Cadogan 1959). The four mothers — Ñamandú Chy Ete, Karai Chy Ete, Jakaira Chy Ete, Tupã Chy Ete — are each the feminine half of one of the four divine households; firmly attested, so authored. Spouse of Ñamandú."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_karai",
-    "name": {
-      "primary": "Karai",
-      "alt": ["Karai Ru Ete", "Karaí Ru Ete", "Tataendy Ryapu Ja", "Karai Ñamandú"],
-      "transliterations": {
-        "guarani": "Karai Ru Ete",
-        "etymology": "Mbyá-Guaraní: karai is a word of high sacrality (lord, sacred one, seer/prophet); ru 'father', ete 'true'. The second of the four divine fathers, 'the true father Karai', lord of the sacred fire. His epithet Tataendy Ryapu Ja = 'lord of the sound of the crackling of the flames' (tata 'fire', endy 'flame/light', ryapu 'sound/report', ja 'owner/lord')."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-by-namandu", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; Cap. II" }], "notes": "The future-true-father of the Karai is among those whom Ñamandú, from the wisdom within his divinity, caused to know of divinity — to be a co-father of the word-souls of the future humanity. To Karai Ru Ete is given the dominion of the sacred fire and of the sound (ryapu) of its flames." }
-    ],
-    "domains": [
-      { "sphereId": "sacred-fire", "contextTag": "lifelong", "term": { "value": "tata", "script": "Latn (Mbyá-Guaraní)", "rom": "tata" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (Karai Ru Ete, lord of the flames)" }, { "kind": "tertiary", "reference": "'Guarani mythology' (the Mbya pantheon's four gods: Karai god of fire, Ñamandú the sun, Jakaira of mist, Tupã of thunder and water), reference compilation" }] },
-      { "sphereId": "the-sound-and-crackling-of-the-flames", "contextTag": "lifelong", "term": { "value": "tataendy ryapu", "script": "Latn (Mbyá-Guaraní)", "rom": "tataendy ryapu" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (the epithet Tataendy Ryapu Ja)" }] },
-      { "sphereId": "sacred-word-and-prophetic-speech", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Karai a co-father of the word-souls)" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_karai_command_sacred_fire", "name": "command the sacred fire and its flames", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II" }], "notes": "Lord of the tata (fire); the flame and its light are his to govern, and the word-souls he sends to humanity bear a fiery, sonorous, oratorical character." },
-      { "id": "guarani_karai_sound_of_flames", "name": "make the sacred sound of the crackling flames", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (Tataendy Ryapu Ja)" }], "notes": "His title 'lord of the sound of the crackling of the flames' (Tataendy Ryapu Ja): the report/sound of fire is a manifestation of his divinity, linked to ritual oratory and to the sacred hymns." }
-    ],
-    "materialCulture": [
-      { "id": "guarani_tataendy_karai", "name": "tataendy — the sacred flame-light of Karai", "kind": "numinous-substance", "role": "The sacred fire/flame-light (tataendy) over which Karai Ru Ete is lord; its crackling sound is his proper sign.", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II" }] }
-    ],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_karai_chy_ete", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I–II (Karai Ru Ete causes the future Karai Chy Ete to stand facing his heart)" }], "notes": "His paired divine consort, the true mother of the Karai." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "self-unfolding-from-the-primordial-darkness",
     "sources": [
-      { "claim": "Karai (Karai Ru Ete), the second of the four divine fathers, is the lord of the sacred fire and of the sound of the crackling flames (Tataendy Ryapu Ja), caused to know of divinity by Ñamandú and co-father of the word-souls of humanity.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I–II" }], "weight": "primary" },
-      { "claim": "In the Mbya pantheon Karai is the god of fire (alongside Ñamandú the sun, Jakaira the mist, Tupã the thunder/water).", "citations": [{ "kind": "tertiary", "reference": "'Guarani mythology', reference compilation of the Mbya four-god pantheon" }], "weight": "supporting" }
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (Universidade de São Paulo, Boletim 227, Antropologia 5, 1959), Cap. I 'Maino'i reko ypykue' (Las primitivas costumbres del colibrí), §§1–4"
+     }
     ],
-    "notes": "Lord of the sacred fire and flame-sound (Cadogan 1959, Cap. II). Second of the four divine fathers; spouse of Karai Chy Ete. Note: in everyday Guaraní 'karai' also means 'lord / Mr.' and 'non-Indigenous person', and karaí denotes the shaman-prophet — the sacrality of the word underlies the divine name."
+    "notes": "Ñande Ru Papa Tenondé unfolds himself out of the original darkness (pytũ ymã): the soles of his feet, his small round seat, emerge as the first earth; from the wisdom contained within his own divinity, and as the sun (kuarahy) rises, he begins to unfold the foundation of the future human speech."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 1,
+    "startEvent": "unfolding-of-the-word-soul-ayvu-rapyta",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–7"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Bartomeu Meliá, El guaraní conquistado y reducido: ensayos de etnohistoria (Asunción: CEADUC, 1986); and Meliá, 'La tierra sin mal de los Guaraní', Suplemento Antropológico 22 (1987)"
+     }
+    ],
+    "notes": "He conceives and unfolds the ayvu rapyta — the foundation/origin of human language and the sacred word-soul (ñe'ẽ) — before the existence of the world, together with the love (mborayu) that binds, and a single sacred hymn (one ñembo'e). He then causes the future-true-fathers of Karai, Jakaira and Tupã to share in this divine wisdom, that there be companions to his own divinity."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "primordial-self-origination",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §1 ('Ñande Ru Papa Tenondé... oñemboje'i')"
+     }
+    ]
+   },
+   {
+    "sphereId": "origin-of-the-sacred-word-and-human-speech",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "ayvu rapyta",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "ayvu rapyta"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–7; the title-concept of the whole work"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meliá, El guaraní conquistado y reducido (1986)"
+     }
+    ]
+   },
+   {
+    "sphereId": "first-light-and-the-sun-rising",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 (he unfolds 'as the sun rises')"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Ñamandú', Wikidata Q9098903 (supreme creator and primordial father of Mbyá-Guaraní cosmology)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-life-giving-mist-and-divine-flames-of-the-heart",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 (the divine flames, tatachina/neblina, accompany his heart)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_namandu_self_origination",
+    "name": "unfold himself into being out of the primordial darkness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §1"
+     }
+    ],
+    "notes": "Self-existent: he is not begotten; he comes-to-be ('se va abriendo', oñemboje'i) of his own accord from the original night, the soles of his feet becoming the first ground."
+   },
+   {
+    "id": "guarani_namandu_create_word_soul",
+    "name": "unfold the sacred word-soul (ñe'ẽ) and the foundation of human speech",
+    "term": {
+     "value": "ñe'ẽ",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "ñe'ẽ"
+    },
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§3–6; Cap. IV (Ñe'ẽ porã tenondé — the origin of the soul-name)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meliá, El guaraní conquistado y reducido (1986)"
+     }
+    ],
+    "notes": "From his own divine wisdom he conceives the ayvu rapyta — the origin of language — and apportions to each human a word-soul (ñe'ẽ) sent from one of the four divine fathers; the partial inheritability reflects that the ñe'ẽ is bestowed on every Mbyá child as a fragment of this primal word."
+   },
+   {
+    "id": "guarani_namandu_engender_the_divine_fathers",
+    "name": "cause the other divine fathers to know of his divinity",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7"
+     }
+    ],
+    "notes": "By his creative wisdom (kuaa-rara) he makes the future-true-fathers of Karai, Jakaira and Tupã partake of divinity, that there be companions and co-fathers of the word-souls of the future numerous humanity."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_jeguaka_namandu",
+    "name": "jeguaka — the sacred feathered flower-crown of the First Father",
+    "kind": "regalia",
+    "role": "The flowered headdress crowned with feathers (jeguaka poty) that adorns Ñamandú as he unfolds; the model of the ritual headband worn by Mbyá men, marking the bearer of the word-soul.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2 ('yvára jeguaka', the divine adornment); the jeguaka recurs through Caps. I–IV"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Meliá, El guaraní conquistado y reducido (1986); the jeguaka as the male ritual crown"
+     }
+    ]
+   },
+   {
+    "id": "guarani_tatachina_namandu",
+    "name": "tatachina — the life-giving sacred mist of the divine heart",
+    "kind": "numinous-substance",
+    "role": "The fine vivifying mist / haze (neblina vivificante) that surrounds Ñamandú's heart at the unfolding and that animates the world; later set under Jakaira's charge.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §2; Cap. III (Jakaira and the tatachina)"
+     }
+    ]
+   },
+   {
+    "id": "guarani_yvyrai_namandu",
+    "name": "yvyra'i — the divine rod/staff of office of the First Father",
+    "kind": "regalia",
+    "role": "The vara-insignia (yvyra'i), the rod of authority held in the right hand of Ñande Ru Papa Tenondé as he unfolds and creates the divine fathers; the prototype of the mbaraka/yvyra'i carried by Mbyá ritual authorities.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (the divine palms holding the rod of office, yvyra'i)"
+     }
+    ]
+   },
+   {
+    "id": "guarani_maino_i_namandu",
+    "name": "Maino'i — the primordial hummingbird, companion of the First Father",
+    "kind": "sacred-animal",
+    "role": "The hummingbird (Maino'i), the first/primordial bird (guyra yma) that emerges with Ñamandú in the darkness, flits among the flowers of his crown and refreshes his mouth as he creates; the creator also assumes its form to descend to the earth. Cadogan's Cap. I is titled for it ('Maino'i reko ypykue', the first customs of the hummingbird).",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I 'Maino'i reko ypykue'; Cap. VIII (Pa'i Rete Kuaray descends in hummingbird form)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_namandu_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Ñamandú causes the future Ñamandú Chy Ete to stand facing his heart)"
+     }
+    ],
+    "notes": "His paired divine consort, the 'true mother of the Ñamandú', whom he caused to know divinity."
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_kuarahy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); and the Mbyá twin-cycle (Pa'i Rete Kuaray as son of the god)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914) — the twin-myth recension in which the Sun-twin is son of the creator"
+     }
+    ],
+    "notes": "Father of Kuarahy, the elder twin (the Sun); the demiurgic Sun is the son of Ñande Ru in the Guaraní twin-myth."
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_jasy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Mbyá twin-cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "Father of Jasy, the younger twin (the Moon)."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ñamandú (Ñande Ru Papa Tenondé), 'Our First Father', is the self-existent primordial god who unfolds from the original darkness and, from the wisdom within his own divinity, unfolds the foundation of human speech (ayvu rapyta) and the word-soul (ñe'ẽ), the feathered flower-crown (jeguaka) and the life-giving mist — then causes the fathers of Karai, Jakaira and Tupã to know of his divinity.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá (Universidade de São Paulo, Boletim 227, Antropologia 5, 1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Ñamandú is the supreme creator and primordial father of Mbyá-Guaraní cosmology; the four-father / word-soul theology is the core of the Ayvu Rapyta corpus.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Bartomeu Meliá, El guaraní conquistado y reducido: ensayos de etnohistoria (Asunción: CEADUC, 1986)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The self-created First Father of the Mbyá-Guaraní; source of the word-soul (ñe'ẽ) and the four divine fathers (Cadogan 1959, Cap. I). His four-fold engendering of Karai, Jakaira and Tupã (and, with each father, of the four paired mothers) frames the entire genesis. Wired as spouse of Ñamandú Chy Ete and father of the twins Kuarahy and Jasy."
+ },
+ {
+  "id": "guarani_namandu_chy_ete",
+  "name": {
+   "primary": "Ñamandú Chy Ete",
+   "alt": [
+    "Ñande Chy Ete",
+    "Ñamandú Chy Ete Ã",
+    "True Mother of the Ñamandú",
+    "Our True Mother"
+   ],
+   "transliterations": {
+    "guarani": "Ñamandú Chy Ete",
+    "etymology": "Mbyá-Guaraní: chy 'mother', ete 'true, real, genuine' — 'the true mother of the Ñamandú (people)'. The first of the four paired divine mothers, consort of Ñamandú Ru Ete."
+   }
   },
-  {
-    "id": "guarani_karai_chy_ete",
-    "name": {
-      "primary": "Karai Chy Ete",
-      "alt": ["True Mother of the Karai", "Karaí Chy Ete"],
-      "transliterations": {
-        "guarani": "Karai Chy Ete",
-        "etymology": "Mbyá-Guaraní: 'the true mother of the Karai (people)'; chy 'mother', ete 'true'. The paired divine consort of Karai Ru Ete, second of the four divine mothers."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-facing-the-heart-of-karai", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Karai Ru Ete made the future true mother of the Karai know divinity, to stand facing his heart)" }], "notes": "The feminine half of the second divine household, mother of the Karai lineage of word-souls." }
-    ],
-    "domains": [
-      { "sphereId": "divine-motherhood-of-the-karai-people", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_karai_chy_ete_send_word_souls", "name": "send forth (with her consort) the word-souls of the Karai lineage", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV" }], "notes": "As paired mother of the fire-father's household she shares in dispatching the ñe'ẽ of humans whose souls proceed from Karai." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_karai", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }], "notes": "Consort of Karai Ru Ete; reciprocal of guarani_karai.spouse." }
-    ],
-    "sources": [
-      { "claim": "Karai Chy Ete, 'the true mother of the Karai', is the second of the four paired divine mothers, consort of Karai Ru Ete.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I" }], "weight": "primary" }
-    ],
-    "notes": "Second of the four paired divine mothers (Cadogan 1959). Spouse of Karai."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_jakaira",
-    "name": {
-      "primary": "Jakaira",
-      "alt": ["Jakaira Ru Ete", "Jakairá Ru Ete", "Lord of the tatachina"],
-      "transliterations": {
-        "guarani": "Jakaira Ru Ete",
-        "etymology": "Mbyá-Guaraní; ru 'father', ete 'true' — 'the true father Jakaira'. The third of the four divine fathers, lord of the life-giving spring mist (tatachina) and of the pipe-smoke and serene/good word."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-by-namandu", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; Cap. III" }], "notes": "The future-true-father of the Jakaira is among those Ñamandú caused to know of divinity. To Jakaira Ru Ete is conferred the command of the tatachina — the vivifying mist that rises each spring, renewing the year and infusing new life — so that those he sends are 'owners of the mist', granted wisdom and the power to ward off harm." }
-    ],
-    "domains": [
-      { "sphereId": "the-life-giving-spring-mist", "contextTag": "lifelong", "term": { "value": "tatachina", "script": "Latn (Mbyá-Guaraní)", "rom": "tatachina" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (Jakaira and the neblina vivificante)" }] },
-      { "sphereId": "the-sacred-pipe-smoke-and-good-serene-word", "contextTag": "lifelong", "term": { "value": "tatachina", "script": "Latn (Mbyá-Guaraní)", "rom": "tatachina" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III" }, { "kind": "tertiary", "reference": "'Guarani mythology' (Jakaira god of smoke, mist and pajé/shamanism)" }] },
-      { "sphereId": "shamanic-wisdom-and-warding-of-harm", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the 'owners of the mist' receive wisdom and the power to conjure away harm)" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_jakaira_command_vivifying_mist", "name": "command the life-giving spring mist (tatachina)", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III" }], "notes": "Lord of the tatachina, the fine vivifying haze that appears at the start of spring, transforming the old year into the new and infusing new life in all beings." },
-      { "id": "guarani_jakaira_grant_good_word_and_ward_harm", "name": "impart serene good speech and the power to ward off harm", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III" }], "notes": "Source of moderation, good/serene words and the pajé (shamanic) power: those whose word-souls come from Jakaira are 'owners of the mist', granted wisdom and the conjuring-away of harm; associated with the tobacco-pipe smoke through which the mist is ritually made." }
-    ],
-    "materialCulture": [
-      { "id": "guarani_petyngua_jakaira", "name": "petỹ / petỹngua — the sacred tobacco and pipe whose smoke is the tatachina", "kind": "ritual-instrument", "role": "The tobacco (petỹ) and the pipe (petỹngua) whose ascending smoke is the human counterpart of Jakaira's life-giving mist; the central instrument of Mbyá shamanic practice that he governs.", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the tatachina / pipe-smoke)" }, { "kind": "tertiary", "reference": "'Guarani mythology' (Jakaira as god of smoke, mist and shamanism; the tobacco-pipe)" }] }
-    ],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_jakaira_chy_ete", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I–III (Jakaira Ru Ete and his paired mother, the owners of the mist)" }], "notes": "His paired divine consort, the true mother of the Jakaira; together they make humans 'owners of the mist'." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-namandu",
     "sources": [
-      { "claim": "Jakaira (Jakaira Ru Ete), the third of the four divine fathers, is lord of the life-giving spring mist (tatachina) and of the sacred pipe-smoke, source of serene good speech, shamanic wisdom and the warding-off of harm.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I, III" }], "weight": "primary" },
-      { "claim": "Jakaira is the god of smoke, mist and pajé (shamanism) in the Mbyá pantheon.", "citations": [{ "kind": "tertiary", "reference": "'Guarani mythology', reference compilation" }], "weight": "supporting" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (the true Father Ñamandú made the future true mother of the Ñamandú know divinity, to stand facing his heart)"
+     }
     ],
-    "notes": "Lord of the spring mist (tatachina) and pipe-smoke, source of good speech and shamanic power (Cadogan 1959, Cap. III). Third of the four divine fathers; spouse of Jakaira Chy Ete."
+    "notes": "The paired divine mother whom Ñamandú Ru Ete caused to share in his divinity, that she stand opposite his heart; the feminine principle of the first of the four divine households and mother of the Ñamandú lineage of humans."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-namandu-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   },
+   {
+    "sphereId": "paired-feminine-principle-of-the-first-divine-household",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_namandu_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the word-souls of the Ñamandú lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV (the four divine households dispatch the ñe'ẽ to humankind)"
+     }
+    ],
+    "notes": "As the paired mother of the first divine household she shares in the dispatch of the word-souls (ñe'ẽ) of those humans whose souls proceed from Ñamandú."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_namandu",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Consort of Ñamandú Ru Ete; reciprocal of guarani_namandu.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ñamandú Chy Ete, 'the true mother of the Ñamandú', is the first of the four paired divine mothers, the consort whom Ñamandú caused to know divinity to stand facing his heart, mother of the Ñamandú lineage of souls.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "First of the four paired divine mothers (Cadogan 1959). The four mothers — Ñamandú Chy Ete, Karai Chy Ete, Jakaira Chy Ete, Tupã Chy Ete — are each the feminine half of one of the four divine households; firmly attested, so authored. Spouse of Ñamandú."
+ },
+ {
+  "id": "guarani_karai",
+  "name": {
+   "primary": "Karai",
+   "alt": [
+    "Karai Ru Ete",
+    "Karaí Ru Ete",
+    "Tataendy Ryapu Ja",
+    "Karai Ñamandú"
+   ],
+   "transliterations": {
+    "guarani": "Karai Ru Ete",
+    "etymology": "Mbyá-Guaraní: karai is a word of high sacrality (lord, sacred one, seer/prophet); ru 'father', ete 'true'. The second of the four divine fathers, 'the true father Karai', lord of the sacred fire. His epithet Tataendy Ryapu Ja = 'lord of the sound of the crackling of the flames' (tata 'fire', endy 'flame/light', ryapu 'sound/report', ja 'owner/lord')."
+   }
   },
-  {
-    "id": "guarani_jakaira_chy_ete",
-    "name": {
-      "primary": "Jakaira Chy Ete",
-      "alt": ["True Mother of the Jakaira", "Jakairá Chy Ete"],
-      "transliterations": {
-        "guarani": "Jakaira Chy Ete",
-        "etymology": "Mbyá-Guaraní: 'the true mother of the Jakaira (people)'; chy 'mother', ete 'true'. Paired consort of Jakaira Ru Ete, third of the four divine mothers."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-facing-the-heart-of-jakaira", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Jakaira Ru Ete made the future true mother of the Jakaira know divinity, to stand facing his heart)" }], "notes": "The feminine half of the third divine household; with her consort she sends those who are 'owners of the mist'." }
-    ],
-    "domains": [
-      { "sphereId": "divine-motherhood-of-the-jakaira-people", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I, III" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_jakaira_chy_ete_send_word_souls", "name": "send forth (with her consort) the mist-bearing word-souls of the Jakaira lineage", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the mist-father and -mother send the 'owners of the mist')" }], "notes": "As paired mother of the mist-father's household she shares in dispatching the word-souls of those who become owners of the tatachina." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_jakaira", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I, III" }], "notes": "Consort of Jakaira Ru Ete; reciprocal of guarani_jakaira.spouse." }
-    ],
-    "sources": [
-      { "claim": "Jakaira Chy Ete, 'the true mother of the Jakaira', is the third of the four paired divine mothers, consort of Jakaira Ru Ete, co-sender of the mist-bearing word-souls.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I, III" }], "weight": "primary" }
-    ],
-    "notes": "Third of the four paired divine mothers (Cadogan 1959). Spouse of Jakaira."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_tupa",
-    "name": {
-      "primary": "Tupã",
-      "alt": ["Tupã Ru Ete", "Tupá Ru Ete", "Tupan", "Tenondete"],
-      "transliterations": {
-        "guarani": "Tupã Ru Ete",
-        "etymology": "Guaraní Tupã (Tupí Tupã/Tupan); ru 'father', ete 'true' — 'the true father Tupã'. The fourth of the four divine fathers, lord of thunder, lightning, rain and the waters. (In the colonial period Tupã was raised by missionaries to render the Christian 'God', but in the indigenous cosmology he is the thunder-and-water power, the youngest of the four fathers.)"
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-by-namandu", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; the Tupã household" }], "notes": "The future-true-father of the Tupã is the last of those Ñamandú caused to know of divinity. To Tupã Ru Ete belong the thunder, the lightning, the rain and the waters; he moves over the great waters and the sea, and the storm is his sign." }
-    ],
-    "domains": [
-      { "sphereId": "thunder-and-lightning", "contextTag": "lifelong", "term": { "value": "Tupã", "script": "Latn (Guaraní)", "rom": "Tupã" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã among the four fathers)" }, { "kind": "tertiary", "reference": "'Tupã (mythology)' — thunder-and-lightning spirit of Tupi-Guarani cosmology" }] },
-      { "sphereId": "rain-and-the-waters-and-the-sea", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }, { "kind": "tertiary", "reference": "'Guarani mythology' (Tupã god of thunder and water in the Mbya four-god pantheon)" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_tupa_command_thunder", "name": "command the thunder and lightning", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }, { "kind": "tertiary", "reference": "'Tupã (mythology)', reference compilation" }], "notes": "Lord of thunder (the report of the storm) and the lightning-flash; the youngest of the four divine fathers, whose voice is the thunder." },
-      { "id": "guarani_tupa_command_rain_and_waters", "name": "command the rain, the waters and the sea", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }], "notes": "Ruler of the rains and of the great waters; he traverses the sea, and the renewal of the waters is in his charge." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_tupa_chy_ete", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã Ru Ete and his paired mother)" }], "notes": "His paired divine consort, the true mother of the Tupã." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-by-namandu",
     "sources": [
-      { "claim": "Tupã (Tupã Ru Ete), the fourth and youngest of the four divine fathers, is lord of thunder, lightning, rain and the waters/sea in Mbyá-Guaraní cosmology.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I" }], "weight": "primary" },
-      { "claim": "Tupã is the Tupi-Guarani spirit of thunder and lightning; in the Mbya pantheon he is the god of thunder and water (colonially elevated by missionaries to render 'God').", "citations": [{ "kind": "tertiary", "reference": "'Tupã (mythology)' and 'Guarani mythology', reference compilations" }], "weight": "supporting" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; Cap. II"
+     }
     ],
-    "notes": "Lord of thunder, rain and the waters (Cadogan 1959). Fourth of the four divine fathers; spouse of Tupã Chy Ete. Distinct from the missionary-elevated 'Tupã = God' usage."
+    "notes": "The future-true-father of the Karai is among those whom Ñamandú, from the wisdom within his divinity, caused to know of divinity — to be a co-father of the word-souls of the future humanity. To Karai Ru Ete is given the dominion of the sacred fire and of the sound (ryapu) of its flames."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sacred-fire",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tata",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tata"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (Karai Ru Ete, lord of the flames)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (the Mbya pantheon's four gods: Karai god of fire, Ñamandú the sun, Jakaira of mist, Tupã of thunder and water), reference compilation"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sound-and-crackling-of-the-flames",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tataendy ryapu",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tataendy ryapu"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (the epithet Tataendy Ryapu Ja)"
+     }
+    ]
+   },
+   {
+    "sphereId": "sacred-word-and-prophetic-speech",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Karai a co-father of the word-souls)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_karai_command_sacred_fire",
+    "name": "command the sacred fire and its flames",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II"
+     }
+    ],
+    "notes": "Lord of the tata (fire); the flame and its light are his to govern, and the word-souls he sends to humanity bear a fiery, sonorous, oratorical character."
+   },
+   {
+    "id": "guarani_karai_sound_of_flames",
+    "name": "make the sacred sound of the crackling flames",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II (Tataendy Ryapu Ja)"
+     }
+    ],
+    "notes": "His title 'lord of the sound of the crackling of the flames' (Tataendy Ryapu Ja): the report/sound of fire is a manifestation of his divinity, linked to ritual oratory and to the sacred hymns."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_tataendy_karai",
+    "name": "tataendy — the sacred flame-light of Karai",
+    "kind": "numinous-substance",
+    "role": "The sacred fire/flame-light (tataendy) over which Karai Ru Ete is lord; its crackling sound is his proper sign.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. II"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_karai_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I–II (Karai Ru Ete causes the future Karai Chy Ete to stand facing his heart)"
+     }
+    ],
+    "notes": "His paired divine consort, the true mother of the Karai."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Karai (Karai Ru Ete), the second of the four divine fathers, is the lord of the sacred fire and of the sound of the crackling flames (Tataendy Ryapu Ja), caused to know of divinity by Ñamandú and co-father of the word-souls of humanity.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I–II"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "In the Mbya pantheon Karai is the god of fire (alongside Ñamandú the sun, Jakaira the mist, Tupã the thunder/water).",
+    "citations": [
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology', reference compilation of the Mbya four-god pantheon"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Lord of the sacred fire and flame-sound (Cadogan 1959, Cap. II). Second of the four divine fathers; spouse of Karai Chy Ete. Note: in everyday Guaraní 'karai' also means 'lord / Mr.' and 'non-Indigenous person', and karaí denotes the shaman-prophet — the sacrality of the word underlies the divine name."
+ },
+ {
+  "id": "guarani_karai_chy_ete",
+  "name": {
+   "primary": "Karai Chy Ete",
+   "alt": [
+    "True Mother of the Karai",
+    "Karaí Chy Ete"
+   ],
+   "transliterations": {
+    "guarani": "Karai Chy Ete",
+    "etymology": "Mbyá-Guaraní: 'the true mother of the Karai (people)'; chy 'mother', ete 'true'. The paired divine consort of Karai Ru Ete, second of the four divine mothers."
+   }
   },
-  {
-    "id": "guarani_tupa_chy_ete",
-    "name": {
-      "primary": "Tupã Chy Ete",
-      "alt": ["True Mother of the Tupã", "Tupá Chy Ete"],
-      "transliterations": {
-        "guarani": "Tupã Chy Ete",
-        "etymology": "Guaraní: 'the true mother of the Tupã (people)'; chy 'mother', ete 'true'. Paired consort of Tupã Ru Ete, fourth of the four divine mothers."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "female",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "primordial" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "primordial", "eraOrdering": 0, "startEvent": "caused-to-know-divinity-facing-the-heart-of-tupa", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã Ru Ete made the future true mother of the Tupã know divinity, to stand facing his heart)" }], "notes": "The feminine half of the fourth divine household, mother of the Tupã lineage of word-souls." }
-    ],
-    "domains": [
-      { "sphereId": "divine-motherhood-of-the-tupa-people", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_tupa_chy_ete_send_word_souls", "name": "send forth (with her consort) the word-souls of the Tupã lineage", "inheritability": "partial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV" }], "notes": "As paired mother of the thunder-father's household she shares in dispatching the ñe'ẽ of humans whose souls proceed from Tupã." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_tupa", "era": "primordial", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I" }], "notes": "Consort of Tupã Ru Ete; reciprocal of guarani_tupa.spouse." }
-    ],
-    "sources": [
-      { "claim": "Tupã Chy Ete, 'the true mother of the Tupã', is the fourth of the four paired divine mothers, consort of Tupã Ru Ete.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I" }], "weight": "primary" }
-    ],
-    "notes": "Fourth of the four paired divine mothers (Cadogan 1959). Spouse of Tupã. Together the four fathers (Ñamandú, Karai, Jakaira, Tupã) and their four mothers (Ñamandú/Karai/Jakaira/Tupã Chy Ete) are the eight divine progenitors of the Mbyá word-souls."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_kuarahy",
-    "name": {
-      "primary": "Kuarahy",
-      "alt": ["Kuaray", "Pa'i Rete Kuaray", "Ñanderyke'y", "Our Elder Brother", "the Sun"],
-      "transliterations": {
-        "guarani": "Kuarahy (Mbyá: Kuaray)",
-        "etymology": "Guaraní kuarahy 'sun' (Mbyá kuaray). As demiurge-twin he is Pa'i Rete Kuaray ('Pa'i the sun, he of the [radiant] body'), the elder of the divine twins, the Sun, and in the Mbyá recension the father of the Guaraní. Also Ñanderyke'y, 'Our Elder Brother'."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "apotheosed",
-    "parentIds": ["guarani_namandu"],
-    "parentRoles": { "guarani_namandu": "paternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "birth-of-the-elder-twin-son-of-nde-ru", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959) — the Mbyá twin-cycle, Pa'i Rete Kuaray as son of the god and the maiden Ñande Jary" }, { "kind": "secondary", "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914) — the twin-myth: the Sun-twin born of the creator, his mother killed by the jaguars" }], "notes": "The elder of the divine twins (Mbyá: Pa'i Rete Kuaray), son of Ñande Ru; in the canonical twin-myth his mother is killed by the monster-jaguars while he speaks to her from the womb, and he is raised among them with his younger brother Jasy." },
-      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1, "startEvent": "vengeance-on-the-jaguars-and-ascent-as-the-sun", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); the twin-cycle" }, { "kind": "secondary", "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal: le prophétisme tupi-guarani (Paris: Seuil, 1975)" }], "notes": "With Jasy he avenges their mother on the jaguars (luring them across a collapsing bridge/river), attempts her resurrection (spoiled by Jasy's error), and ascends to become the Sun, presiding with his brother over day and night and over the road to Yvy Marãe'ỹ (the Land-without-Evil)." }
-    ],
-    "domains": [
-      { "sphereId": "the-sun", "contextTag": "lifelong", "term": { "value": "kuarahy", "script": "Latn (Guaraní)", "rom": "kuarahy" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)" }, { "kind": "secondary", "reference": "Nimuendajú (1914)" }] },
-      { "sphereId": "demiurgic-ordering-of-the-world-and-day", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal (1975)" }] },
-      { "sphereId": "ancestral-fatherhood-of-the-guarani", "contextTag": "lifelong", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959) — Pa'i Rete Kuaray as 'father of all the Guaraní'" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_kuarahy_solar_radiance", "name": "embody and shed the light of the sun", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); Nimuendajú (1914)" }], "notes": "As the apotheosed Sun he is the source of daylight; the day is his." },
-      { "id": "guarani_kuarahy_demiurgic_ordering", "name": "order the world and slay the primordial monster-jaguars", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal (1975)" }], "notes": "The culture-hero/demiurge who avenges his mother, defeats the man-eating jaguars, and sets the order of sun and moon — the elder, wise twin who corrects his brother's blunders." }
-    ],
-    "materialCulture": [
-      { "id": "guarani_kuarahy_bow_and_arrows", "name": "the bow and arrows of the Sun-twin", "kind": "weapon", "role": "The hunting bow and arrows the twins carry in the forest and use against the monster-jaguars in the vengeance episode of the twin-cycle.", "sources": [{ "kind": "secondary", "reference": "Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914) — the twins' bow-and-arrow in the jaguar-vengeance episode" }] }
-    ],
-    "relations": [
-      { "kind": "twin sibling", "personId": "guarani_jasy", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); the Guaraní twin-myth" }, { "kind": "secondary", "reference": "Nimuendajú (1914)" }], "notes": "Elder twin; his brother is Jasy, the Moon, the erring younger twin. Reciprocal of guarani_jasy.twin sibling." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-karai",
     "sources": [
-      { "claim": "Kuarahy (Mbyá Kuaray / Pa'i Rete Kuaray), the elder of the divine twins and son of Ñande Ru, is the Sun and demiurgic culture-hero who avenges his mother on the monster-jaguars and ascends as the sun; in the Mbyá recension he is the father of the Guaraní.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959)" }, { "kind": "secondary", "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)" }], "weight": "primary" },
-      { "claim": "The Guaraní twin-myth (Sun and Moon brothers, the jaguar-vengeance, the road to the Land-without-Evil) is one of the most widely recorded narratives of lowland South America.", "citations": [{ "kind": "secondary", "reference": "Hélène Clastres, La Terre sans Mal: le prophétisme tupi-guarani (Paris: Seuil, 1975)" }], "weight": "high" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Karai Ru Ete made the future true mother of the Karai know divinity, to stand facing his heart)"
+     }
     ],
-    "notes": "The Sun, elder divine twin, son of Ñamandú/Ñande Ru (Cadogan 1959; Nimuendajú 1914). Wired as twin sibling of Jasy and child of Ñamandú. Type 'deity': demiurgic Sun, son of the creator-god."
+    "notes": "The feminine half of the second divine household, mother of the Karai lineage of word-souls."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-karai-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_karai_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the word-souls of the Karai lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV"
+     }
+    ],
+    "notes": "As paired mother of the fire-father's household she shares in dispatching the ñe'ẽ of humans whose souls proceed from Karai."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_karai",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Consort of Karai Ru Ete; reciprocal of guarani_karai.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Karai Chy Ete, 'the true mother of the Karai', is the second of the four paired divine mothers, consort of Karai Ru Ete.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Second of the four paired divine mothers (Cadogan 1959). Spouse of Karai."
+ },
+ {
+  "id": "guarani_jakaira",
+  "name": {
+   "primary": "Jakaira",
+   "alt": [
+    "Jakaira Ru Ete",
+    "Jakairá Ru Ete",
+    "Lord of the tatachina"
+   ],
+   "transliterations": {
+    "guarani": "Jakaira Ru Ete",
+    "etymology": "Mbyá-Guaraní; ru 'father', ete 'true' — 'the true father Jakaira'. The third of the four divine fathers, lord of the life-giving spring mist (tatachina) and of the pipe-smoke and serene/good word."
+   }
   },
-  {
-    "id": "guarani_jasy",
-    "name": {
-      "primary": "Jasy",
-      "alt": ["Jachy", "Yacy", "Jasy (the Moon)", "the younger twin"],
-      "transliterations": {
-        "guarani": "Jasy (Jachy)",
-        "etymology": "Guaraní jasy 'moon' (also 'month'). The younger of the divine twins, the Moon — the erring/trickster brother whose premature look (or laugh) spoils the resurrection of their mother in the twin-cycle."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "apotheosed",
-    "parentIds": ["guarani_namandu"],
-    "parentRoles": { "guarani_namandu": "paternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "birth-of-the-younger-twin", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); the Mbyá twin-cycle" }, { "kind": "secondary", "reference": "Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914)" }], "notes": "The younger twin, raised with his elder brother among the monster-jaguars after their mother's death." },
-      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1, "startEvent": "the-spoiled-resurrection-and-ascent-as-the-moon", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)" }, { "kind": "secondary", "reference": "Nimuendajú (1914)" }], "notes": "During the elder twin's attempt to resurrect their mother by gathering her bones and singing, Jasy looks (or laughs) prematurely, spoiling the resurrection; he ascends to become the Moon. His trickster errors and his lunar deceit are the structural counterpart to the Sun's wisdom; lunar eclipses are read as the jaguars pursuing him across the sky." }
-    ],
-    "domains": [
-      { "sphereId": "the-moon", "contextTag": "lifelong", "term": { "value": "jasy", "script": "Latn (Guaraní)", "rom": "jasy" }, "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959)" }, { "kind": "secondary", "reference": "Nimuendajú (1914)" }] },
-      { "sphereId": "night-and-the-trickster-error", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Nimuendajú (1914) — the younger twin's blunders that determine the cosmological outcome" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_jasy_lunar_light", "name": "embody the light of the moon", "inheritability": "none", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); Nimuendajú (1914)" }], "notes": "As the apotheosed Moon he governs the night-light; the month (jasy) is named for him." },
-      { "id": "guarani_jasy_trickster_deceit", "name": "err and blunder as the younger twin", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "Nimuendajú (1914) — the premature look/laugh that spoils the resurrection; the fish-hook episode in which the Moon-twin is caught" }], "notes": "The erring/inept younger brother whose blunders drive the cycle: his ill-timed looking (or laughing) prevents the full resurrection of their mother (who becomes a tapir or the Pleiades instead), and in the river/fish-hook episode he is the one caught where the Sun succeeds. (The genuinely malicious trickster-antagonist of the Mbyá cycle is the ogre Charĩa; Jasy's role is the gullible/imitative younger twin.)" }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "twin sibling", "personId": "guarani_kuarahy", "era": "mythic", "sources": [{ "kind": "primary", "reference": "Cadogan, Ayvu Rapyta (1959); the Guaraní twin-myth" }, { "kind": "secondary", "reference": "Nimuendajú (1914)" }], "notes": "Younger twin; his brother is Kuarahy, the Sun. Reciprocal of guarani_kuarahy.twin sibling." }
-    ],
-    "sources": [
-      { "claim": "Jasy (Jachy), the younger of the divine twins and son of Ñande Ru, is the Moon — the erring/trickster brother whose premature look spoils the resurrection of their mother, after which he ascends as the moon.", "citations": [{ "kind": "primary", "reference": "León Cadogan, Ayvu Rapyta (1959)" }, { "kind": "secondary", "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)" }], "weight": "primary" }
-    ],
-    "notes": "The Moon, younger/trickster divine twin, son of Ñamandú (Cadogan 1959; Nimuendajú 1914). Wired as twin sibling of Kuarahy and child of Ñamandú. Type 'deity': demiurgic Moon, son of the creator-god."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_tau",
-    "name": {
-      "primary": "Tau",
-      "alt": ["Taú", "the evil spirit"],
-      "transliterations": {
-        "guarani": "Tau",
-        "etymology": "Paraguayan-Guaraní: Tau, the spirit/principle of evil (in the Colmán systematization, the malign counter-principle to the good spirit Angatupyry). Father of the seven monsters by Keraná."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "the-evil-spirit-seizes-kerana", "sources": [{ "kind": "secondary", "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (Asunción, 1929) — the genealogy of Tau and Keraná" }, { "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción: Editora Litocolor / Comuneros, 1980s; repr. 1995)" }], "notes": "Tau, the evil spirit, desires the beautiful Keraná, daughter of the pious Marangatú; he seizes/seduces her, and from their union — cursed by the goddess Arasy — are born the seven monstrous children." }
-    ],
-    "domains": [
-      { "sphereId": "the-spirit-of-evil", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay" }] },
-      { "sphereId": "fatherhood-of-the-seven-monsters", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Moisés S. Bertoni, La civilización guaraní (Puerto Bertoni, 1922)" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_tau_malefic_spirit", "name": "act as the malefic spirit that engenders monsters", "inheritability": "partial", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay" }], "notes": "The principle of evil; his union with the mortal Keraná produces (under Arasy's curse) the seven monstrous offspring. Partial inheritability: the monstrous nature is transmitted to his seven children." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_kerana", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay" }], "notes": "Father of the seven monsters by Keraná; reciprocal of guarani_kerana.spouse." },
-      { "kind": "father-of", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "father-of", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "father-of", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "father-of", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "father-of", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "father-of", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "father-of", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-by-namandu",
     "sources": [
-      { "claim": "Tau, the evil spirit, by the mortal Keraná (daughter of Marangatú) and under the curse of the goddess Arasy, fathers the seven monstrous children of Paraguayan-Guaraní mythology.", "citations": [{ "kind": "secondary", "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (1929)" }, { "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)" }], "weight": "high" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; Cap. III"
+     }
     ],
-    "notes": "The evil spirit, father of the seven monsters (Colmán 1929; González Torres). Wired as spouse of Keraná and father of the seven. Type 'deity': a primordial spirit-principle. SOLITARY (as to ancestry): a primordial evil spirit with no attested parents in the folk genealogy (Colmán 1929)."
+    "notes": "The future-true-father of the Jakaira is among those Ñamandú caused to know of divinity. To Jakaira Ru Ete is conferred the command of the tatachina — the vivifying mist that rises each spring, renewing the year and infusing new life — so that those he sends are 'owners of the mist', granted wisdom and the power to ward off harm."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-life-giving-spring-mist",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatachina",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tatachina"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (Jakaira and the neblina vivificante)"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-sacred-pipe-smoke-and-good-serene-word",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "tatachina",
+     "script": "Latn (Mbyá-Guaraní)",
+     "rom": "tatachina"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (Jakaira god of smoke, mist and pajé/shamanism)"
+     }
+    ]
+   },
+   {
+    "sphereId": "shamanic-wisdom-and-warding-of-harm",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the 'owners of the mist' receive wisdom and the power to conjure away harm)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jakaira_command_vivifying_mist",
+    "name": "command the life-giving spring mist (tatachina)",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III"
+     }
+    ],
+    "notes": "Lord of the tatachina, the fine vivifying haze that appears at the start of spring, transforming the old year into the new and infusing new life in all beings."
+   },
+   {
+    "id": "guarani_jakaira_grant_good_word_and_ward_harm",
+    "name": "impart serene good speech and the power to ward off harm",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III"
+     }
+    ],
+    "notes": "Source of moderation, good/serene words and the pajé (shamanic) power: those whose word-souls come from Jakaira are 'owners of the mist', granted wisdom and the conjuring-away of harm; associated with the tobacco-pipe smoke through which the mist is ritually made."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_petyngua_jakaira",
+    "name": "petỹ / petỹngua — the sacred tobacco and pipe whose smoke is the tatachina",
+    "kind": "ritual-instrument",
+    "role": "The tobacco (petỹ) and the pipe (petỹngua) whose ascending smoke is the human counterpart of Jakaira's life-giving mist; the central instrument of Mbyá shamanic practice that he governs.",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the tatachina / pipe-smoke)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (Jakaira as god of smoke, mist and shamanism; the tobacco-pipe)"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_jakaira_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I–III (Jakaira Ru Ete and his paired mother, the owners of the mist)"
+     }
+    ],
+    "notes": "His paired divine consort, the true mother of the Jakaira; together they make humans 'owners of the mist'."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jakaira (Jakaira Ru Ete), the third of the four divine fathers, is lord of the life-giving spring mist (tatachina) and of the sacred pipe-smoke, source of serene good speech, shamanic wisdom and the warding-off of harm.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I, III"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Jakaira is the god of smoke, mist and pajé (shamanism) in the Mbyá pantheon.",
+    "citations": [
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology', reference compilation"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Lord of the spring mist (tatachina) and pipe-smoke, source of good speech and shamanic power (Cadogan 1959, Cap. III). Third of the four divine fathers; spouse of Jakaira Chy Ete."
+ },
+ {
+  "id": "guarani_jakaira_chy_ete",
+  "name": {
+   "primary": "Jakaira Chy Ete",
+   "alt": [
+    "True Mother of the Jakaira",
+    "Jakairá Chy Ete"
+   ],
+   "transliterations": {
+    "guarani": "Jakaira Chy Ete",
+    "etymology": "Mbyá-Guaraní: 'the true mother of the Jakaira (people)'; chy 'mother', ete 'true'. Paired consort of Jakaira Ru Ete, third of the four divine mothers."
+   }
   },
-  {
-    "id": "guarani_kerana",
-    "name": {
-      "primary": "Keraná",
-      "alt": ["Kerana", "Kerána"],
-      "transliterations": {
-        "guarani": "Keraná",
-        "etymology": "Paraguayan-Guaraní: Keraná, connected with kera 'sleep' — the beautiful, languid/sleeping daughter of the pious Marangatú; mother of the seven monsters by Tau."
-      }
-    },
-    "type": "mortal",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "female",
-    "vitalStatus": "dead",
-    "parentIds": [],
-    "parentRoles": {},
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "mortal", "era": "mythic", "eraOrdering": 0, "startEvent": "the-beautiful-daughter-of-marangatu-taken-by-tau", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay" }], "notes": "The beautiful mortal daughter of the pious Marangatú, taken by the evil spirit Tau; mother of the seven monstrous children, who are cursed by the goddess Arasy to be born as monsters." }
-    ],
-    "domains": [
-      { "sphereId": "motherhood-of-the-seven-monsters", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay" }] }
-    ],
-    "faculties": [],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "spouse", "personId": "guarani_tau", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay" }], "notes": "Mother of the seven monsters by Tau; reciprocal of guarani_tau.spouse." },
-      { "kind": "mother-of", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "mother-of", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "mother-of", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "mother-of", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "mother-of", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "mother-of", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] },
-      { "kind": "mother-of", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] }
-    ],
-    "sources": [
-      { "claim": "Keraná, the beautiful mortal daughter of the pious Marangatú, is taken by the evil spirit Tau and becomes the mother of the seven monstrous children of Guaraní mythology.", "citations": [{ "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra / Nuestros antepasados (1929)" }, { "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)" }], "weight": "high" }
-    ],
-    "notes": "The mortal mother of the seven monsters, daughter of the pious Marangatú (Colmán 1929; González Torres). Wired as spouse of Tau and mother of the seven. Her father Marangatú is a minor pious-ancestor figure, noted but not authored as a stub. SOLITARY (as to ancestry within batch): her only attested parent (Marangatú) is not authored; reason — a peripheral folk-ancestor with no independent mythic profile."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_teju_jagua",
-    "name": {
-      "primary": "Teju Jagua",
-      "alt": ["Teyú Yaguá", "Tejú Jaguá", "Teju-jagua"],
-      "transliterations": {
-        "guarani": "Teju Jagua",
-        "etymology": "Guaraní teju 'lizard' + jagua 'dog' — 'lizard-dog'. The first-born of the seven; a giant lizard with seven dog-heads and fiery eyes, lord of caverns and guardian of fruits."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "first-born-of-tau-and-kerana-cursed-by-arasy", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán, Ñande Ypy Kuéra (1929)" }], "notes": "The first-born of the seven cursed children; a great lizard with seven dog-heads, eyes that shoot fire — yet, despite his fearsome form, gentle. Lord of the caverns and protector of fruits and of hidden riches." }
-    ],
-    "domains": [
-      { "sphereId": "lordship-of-caverns", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }] },
-      { "sphereId": "guardianship-of-fruits-and-hidden-riches", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }, { "kind": "tertiary", "reference": "'Teju Jagua', reference compilations on the seven Guaraní monsters" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_teju_jagua_seven_dog_heads", "name": "exist as a giant lizard with seven dog-heads", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Teju Jagua' reference compilations" }], "notes": "His defining form: a huge lizard body bearing seven heads of dogs; from teju 'lizard' and jagua 'dog'." },
-      { "id": "guarani_teju_jagua_fiery_eyes", "name": "shoot fire from his eyes", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }], "notes": "His eyes flash/shoot fire; combined with his guardianship of caves and fruit, this makes him a dread but essentially passive guardian." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (second-born). Reciprocal of guarani_mboi_tui.sibling." },
-      { "kind": "sibling", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (third-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fourth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fifth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (sixth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (seventh-born). Reciprocal." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-jakaira",
     "sources": [
-      { "claim": "Teju Jagua, first-born of the seven children of Tau and Keraná, is a giant lizard with seven dog-heads and fiery eyes, lord of caverns and guardian of fruits and hidden riches.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Jakaira Ru Ete made the future true mother of the Jakaira know divinity, to stand facing his heart)"
+     }
     ],
-    "notes": "First-born of the seven monsters; seven-dog-headed lizard, lord of caves and fruits (González Torres; Colmán 1929). Child of Tau + Keraná; wired as sibling of the other six. Type 'deity': offspring of the spirit Tau."
+    "notes": "The feminine half of the third divine household; with her consort she sends those who are 'owners of the mist'."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-jakaira-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I, III"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jakaira_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the mist-bearing word-souls of the Jakaira lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. III (the mist-father and -mother send the 'owners of the mist')"
+     }
+    ],
+    "notes": "As paired mother of the mist-father's household she shares in dispatching the word-souls of those who become owners of the tatachina."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_jakaira",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I, III"
+     }
+    ],
+    "notes": "Consort of Jakaira Ru Ete; reciprocal of guarani_jakaira.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jakaira Chy Ete, 'the true mother of the Jakaira', is the third of the four paired divine mothers, consort of Jakaira Ru Ete, co-sender of the mist-bearing word-souls.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Caps. I, III"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Third of the four paired divine mothers (Cadogan 1959). Spouse of Jakaira."
+ },
+ {
+  "id": "guarani_tupa",
+  "name": {
+   "primary": "Tupã",
+   "alt": [
+    "Tupã Ru Ete",
+    "Tupá Ru Ete",
+    "Tupan",
+    "Tenondete"
+   ],
+   "transliterations": {
+    "guarani": "Tupã Ru Ete",
+    "etymology": "Guaraní Tupã (Tupí Tupã/Tupan); ru 'father', ete 'true' — 'the true father Tupã'. The fourth of the four divine fathers, lord of thunder, lightning, rain and the waters. (In the colonial period Tupã was raised by missionaries to render the Christian 'God', but in the indigenous cosmology he is the thunder-and-water power, the youngest of the four fathers.)"
+   }
   },
-  {
-    "id": "guarani_mboi_tui",
-    "name": {
-      "primary": "Mbói Tu'ĩ",
-      "alt": ["Mboi Tui", "Mbói Tu'ĩ", "Teju Ñe'ẽ"],
-      "transliterations": {
-        "guarani": "Mbói Tu'ĩ",
-        "etymology": "Guaraní mbói 'snake' + tu'ĩ 'parakeet/parrot' — 'snake-parrot'. The second-born; a giant serpent with a parrot's head and beak, lord/protector of aquatic creatures and the wetlands."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "second-born-of-tau-and-kerana", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "The second of the seven; a great serpent bearing the head and beak of a parrot, his body brilliantly coloured. Lord and protector of the water-creatures, of amphibians and the wetlands/marshes." }
-    ],
-    "domains": [
-      { "sphereId": "lordship-of-aquatic-creatures-and-wetlands", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }, { "kind": "tertiary", "reference": "reference compilations on the seven Guaraní monsters" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_mboi_tui_serpent_parrot_form", "name": "exist as a serpent with a parrot's head and beak", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Mbói Tu'ĩ' reference compilations" }], "notes": "His defining form: the body of a huge snake and the head/beak of a parrot (tu'ĩ); brightly coloured." },
-      { "id": "guarani_mboi_tui_protect_the_waters", "name": "guard the creatures of the water and the wetlands", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }], "notes": "Protector and lord of aquatic life and the marsh/wetland habitats; the watery counterpart among the seven." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (first-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (third-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fourth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fifth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (sixth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (seventh-born). Reciprocal." }
-    ],
-    "sources": [
-      { "claim": "Mbói Tu'ĩ ('snake-parrot'), second-born of the seven children of Tau and Keraná, is a giant serpent with a parrot's head, lord and protector of aquatic creatures and wetlands.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
-    ],
-    "notes": "Second-born; serpent-parrot, lord of the waters (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_monai",
-    "name": {
-      "primary": "Moñái",
-      "alt": ["Monai", "Moñai"],
-      "transliterations": {
-        "guarani": "Moñái",
-        "etymology": "Paraguayan-Guaraní Moñái; a giant horned serpent, the third-born; lord of the open fields and 'lord of the air', who hypnotizes prey with his antenna-horns and hoards plunder in a cave."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "dead",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "third-born-of-tau-and-kerana", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "The third of the seven; a great serpent with two straight horns that serve as antennae. Lord of the open fields and 'lord of the air'; he climbs trees and slides down to hunt the birds, and amasses stolen goods in his cave." },
-      { "typeStatus": "deity", "era": "mythic-prehistoric", "eraOrdering": 1, "startEvent": "slain-in-the-festival-trap", "sources": [{ "kind": "secondary", "reference": "Colmán, Ñande Ypy Kuéra (1929) — the 'cave of the monsters' episode; González Torres, Folklore del Paraguay" }], "notes": "In the festival-trap myth he is lured to a feast and destroyed (the heroine Porãsy sacrifices herself to draw the monsters into a pit that is set afire), ending his depredations — the most-cited death among the seven." }
-    ],
-    "domains": [
-      { "sphereId": "lordship-of-the-open-fields-and-the-air", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }, { "kind": "tertiary", "reference": "reference compilations: Moñái 'lord of the air', lord of the open fields" }] },
-      { "sphereId": "hoarding-of-plunder", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_monai_hypnotic_antennae", "name": "hypnotize prey with his antenna-horns", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Moñái reference compilations" }], "notes": "Two straight horns on his head act as antennae with hypnotic/mesmerizing power, with which he subdues the birds and other prey." },
-      { "id": "guarani_monai_serpent_climber", "name": "climb and descend trees as a giant serpent to hunt", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }], "notes": "He climbs trees with ease and slides down to seize the birds on whom he feeds, ranging the open fields and the air." }
-    ],
-    "materialCulture": [
-      { "id": "guarani_monai_horns", "name": "the antenna-horns of Moñái", "kind": "bodily-attribute", "role": "His two straight horns, functioning as antennae endowed with hypnotic power — the instrument by which he mesmerizes and captures prey.", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Moñái reference compilations" }] }
-    ],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (first-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (second-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fourth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fifth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (sixth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (seventh-born). Reciprocal." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-by-namandu",
     "sources": [
-      { "claim": "Moñái, third-born of the seven children of Tau and Keraná, is a giant horned serpent, lord of the open fields and the air, who hypnotizes prey with his antenna-horns and hoards plunder, and is slain in the festival-trap myth.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I §§6–7; the Tupã household"
+     }
     ],
-    "notes": "Third-born; horned serpent, lord of the open fields, hypnotic antennae; slain in the festival/cave trap (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+    "notes": "The future-true-father of the Tupã is the last of those Ñamandú caused to know of divinity. To Tupã Ru Ete belong the thunder, the lightning, the rain and the waters; he moves over the great waters and the sea, and the storm is his sign."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "thunder-and-lightning",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "Tupã",
+     "script": "Latn (Guaraní)",
+     "rom": "Tupã"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã among the four fathers)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Tupã (mythology)' — thunder-and-lightning spirit of Tupi-Guarani cosmology"
+     }
+    ]
+   },
+   {
+    "sphereId": "rain-and-the-waters-and-the-sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Guarani mythology' (Tupã god of thunder and water in the Mbya four-god pantheon)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_tupa_command_thunder",
+    "name": "command the thunder and lightning",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Tupã (mythology)', reference compilation"
+     }
+    ],
+    "notes": "Lord of thunder (the report of the storm) and the lightning-flash; the youngest of the four divine fathers, whose voice is the thunder."
+   },
+   {
+    "id": "guarani_tupa_command_rain_and_waters",
+    "name": "command the rain, the waters and the sea",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Ruler of the rains and of the great waters; he traverses the sea, and the renewal of the waters is in his charge."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_tupa_chy_ete",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã Ru Ete and his paired mother)"
+     }
+    ],
+    "notes": "His paired divine consort, the true mother of the Tupã."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tupi_tupa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfred Métraux, La religion des Tupinamba et ses rapports avec celle des autres tribus Tupi-Guarani (1928)"
+     }
+    ],
+    "notes": "Same inherited theonym from Proto-Tupi-Guaraní *tupã 'thunder/divinity'; Tupã in both languages."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tupã (Tupã Ru Ete), the fourth and youngest of the four divine fathers, is lord of thunder, lightning, rain and the waters/sea in Mbyá-Guaraní cosmology.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "Tupã is the Tupi-Guarani spirit of thunder and lightning; in the Mbya pantheon he is the god of thunder and water (colonially elevated by missionaries to render 'God').",
+    "citations": [
+     {
+      "kind": "tertiary",
+      "reference": "'Tupã (mythology)' and 'Guarani mythology', reference compilations"
+     }
+    ],
+    "weight": "supporting"
+   }
+  ],
+  "notes": "Lord of thunder, rain and the waters (Cadogan 1959). Fourth of the four divine fathers; spouse of Tupã Chy Ete. Distinct from the missionary-elevated 'Tupã = God' usage."
+ },
+ {
+  "id": "guarani_tupa_chy_ete",
+  "name": {
+   "primary": "Tupã Chy Ete",
+   "alt": [
+    "True Mother of the Tupã",
+    "Tupá Chy Ete"
+   ],
+   "transliterations": {
+    "guarani": "Tupã Chy Ete",
+    "etymology": "Guaraní: 'the true mother of the Tupã (people)'; chy 'mother', ete 'true'. Paired consort of Tupã Ru Ete, fourth of the four divine mothers."
+   }
   },
-  {
-    "id": "guarani_jasy_jatere",
-    "name": {
-      "primary": "Jasy Jateré",
-      "alt": ["Yasy Yateré", "Jasy Yateré", "Jacy Jaterê"],
-      "transliterations": {
-        "guarani": "Jasy Jateré",
-        "etymology": "Guaraní; commonly glossed 'a little piece of the moon' (jasy 'moon'). The fourth-born and the only fair/beautiful one of the seven: a small naked blond child, lord of the siesta, who carries a golden staff/wand and lures children into the forest."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "fourth-born-of-tau-and-kerana", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }, { "kind": "tertiary", "reference": "'Jasy Jatere' reference compilations" }], "notes": "The fourth of the seven and the only one of fair aspect: a small naked boy with golden/blond hair, blue eyes, carrying a golden staff or wand. Lord of the siesta (the midday hour), he whistles to lure children into the forest, where they may be lost or struck dumb." }
-    ],
-    "domains": [
-      { "sphereId": "lordship-of-the-siesta-and-midday", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations" }] },
-      { "sphereId": "luring-and-bewitching-of-children", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_jasy_jatere_lure_children", "name": "lure and bewitch children at the siesta hour", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations" }], "notes": "At the midday siesta he calls/whistles to children who go out alone and draws them into the forest, where they are lost, struck dumb, or fall ill — the abiding nursery-bogey of Paraguay." },
-      { "id": "guarani_jasy_jatere_magic_staff", "name": "wield the power of the golden staff/wand", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations" }], "notes": "His golden wand/cane is the source/sign of his luring power; with it he charms his victims." }
-    ],
-    "materialCulture": [
-      { "id": "guarani_jasy_jatere_golden_staff", "name": "the golden staff/wand of Jasy Jateré", "kind": "wand", "role": "A staff or wand of gold (vara de oro / varita mágica) carried by Jasy Jateré — his defining object and the instrument of his bewitching of children.", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations (the golden cane/wand)" }] },
-      { "id": "guarani_jasy_jatere_whistle", "name": "the luring whistle/call of Jasy Jateré", "kind": "sound-signal", "role": "His whistle or call at the siesta hour, by which he lures children away; in folk belief one must never answer it.", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }] }
-    ],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (first-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (second-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (third-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fifth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (sixth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (seventh-born). Reciprocal." }
-    ],
-    "sources": [
-      { "claim": "Jasy Jateré ('a little piece of the moon'), fourth-born of the seven children of Tau and Keraná and the only fair one, is a small blond naked child, lord of the siesta, who carries a golden staff/wand and lures children into the forest.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
-    ],
-    "notes": "Fourth-born; the only fair one, lord of the siesta, golden staff, lures children (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six. The most living of the seven in present-day Paraguayan folklore."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "primordial"
   },
-  {
-    "id": "guarani_kurupi",
-    "name": {
-      "primary": "Kurupi",
-      "alt": ["Kurupí", "Curupí"],
-      "transliterations": {
-        "guarani": "Kurupi",
-        "etymology": "Paraguayan-Guaraní Kurupi; the fifth-born; a short, ugly, hairy wild-man of coppery skin, spirit of fertility and sexuality of the wild, defined by an enormous prehensile penis coiled around his waist."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "fifth-born-of-tau-and-kerana", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }, { "kind": "tertiary", "reference": "'Kurupi' reference compilations" }], "notes": "The fifth of the seven; a short, robust, ugly man with hairy hands and feet and dark/coppery skin, whose defining feature is an enormous, elongated, prehensile penis wound around his waist. Spirit of the sexuality and fertility of the wild; in folk belief he impregnates women from afar and is blamed for unexplained pregnancies." }
-    ],
-    "domains": [
-      { "sphereId": "sexuality-and-fertility-of-the-wild", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Kurupi' reference compilations" }] },
-      { "sphereId": "spirit-of-the-deep-forest", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_kurupi_prehensile_phallus", "name": "wield an enormous prehensile penis", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Kurupi' reference compilations" }], "notes": "His defining attribute: an enormously long, prehensile penis coiled around his body, with which (in folk belief) he seizes and impregnates women even from a distance or through walls." },
-      { "id": "guarani_kurupi_fertility_of_the_wild", "name": "embody the sexual fertility of the wilderness", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }], "notes": "As a phallic spirit he personifies the untamed generative power of the forest and is invoked to explain illicit or inexplicable conceptions." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (first-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (second-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (third-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fourth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (sixth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (seventh-born). Reciprocal." }
-    ],
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "startEvent": "caused-to-know-divinity-facing-the-heart-of-tupa",
     "sources": [
-      { "claim": "Kurupi, fifth-born of the seven children of Tau and Keraná, is a short ugly hairy wild-man, spirit of the sexuality and fertility of the wild, defined by an enormous prehensile penis coiled around his waist.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I (Tupã Ru Ete made the future true mother of the Tupã know divinity, to stand facing his heart)"
+     }
     ],
-    "notes": "Fifth-born; phallic wild-man, spirit of fertility/sexuality (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+    "notes": "The feminine half of the fourth divine household, mother of the Tupã lineage of word-souls."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "divine-motherhood-of-the-tupa-people",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_tupa_chy_ete_send_word_souls",
+    "name": "send forth (with her consort) the word-souls of the Tupã lineage",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I; Cap. IV"
+     }
+    ],
+    "notes": "As paired mother of the thunder-father's household she shares in dispatching the ñe'ẽ of humans whose souls proceed from Tupã."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_tupa",
+    "era": "primordial",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "notes": "Consort of Tupã Ru Ete; reciprocal of guarani_tupa.spouse."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tupã Chy Ete, 'the true mother of the Tupã', is the fourth of the four paired divine mothers, consort of Tupã Ru Ete.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959), Cap. I"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Fourth of the four paired divine mothers (Cadogan 1959). Spouse of Tupã. Together the four fathers (Ñamandú, Karai, Jakaira, Tupã) and their four mothers (Ñamandú/Karai/Jakaira/Tupã Chy Ete) are the eight divine progenitors of the Mbyá word-souls."
+ },
+ {
+  "id": "guarani_kuarahy",
+  "name": {
+   "primary": "Kuarahy",
+   "alt": [
+    "Kuaray",
+    "Pa'i Rete Kuaray",
+    "Ñanderyke'y",
+    "Our Elder Brother",
+    "the Sun"
+   ],
+   "transliterations": {
+    "guarani": "Kuarahy (Mbyá: Kuaray)",
+    "etymology": "Guaraní kuarahy 'sun' (Mbyá kuaray). As demiurge-twin he is Pa'i Rete Kuaray ('Pa'i the sun, he of the [radiant] body'), the elder of the divine twins, the Sun, and in the Mbyá recension the father of the Guaraní. Also Ñanderyke'y, 'Our Elder Brother'."
+   }
   },
-  {
-    "id": "guarani_ao_ao",
-    "name": {
-      "primary": "Ao Ao",
-      "alt": ["Aó Aó", "Ao-Ao"],
-      "transliterations": {
-        "guarani": "Ao Ao",
-        "etymology": "Paraguayan-Guaraní Ao Ao, onomatopoeic from its cry 'ao ao'; the sixth-born, lord of the hills/mountains — a many-running sheep-bodied, wolf-headed (or peccary-like) fanged beast that hunts in packs and devours people."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "sixth-born-of-tau-and-kerana", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }, { "kind": "tertiary", "reference": "'Ao Ao' reference compilations" }], "notes": "The sixth of the seven; a four-legged fanged beast — body of a sheep, head of a wolf in one common description (or a great peccary in others) — that travels in herds, named for its cry 'ao ao'. Lord of the hills and mountains, a devourer of human beings: one escapes only by climbing a mbokaja (palm) tree, which it cannot uproot." }
-    ],
-    "domains": [
-      { "sphereId": "lordship-of-the-hills-and-mountains", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Ao Ao' reference compilations" }] },
-      { "sphereId": "devouring-of-humankind", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_ao_ao_pack_devourer", "name": "hunt in packs and devour human prey", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Ao Ao' reference compilations" }], "notes": "A relentless man-eater that runs down its prey in herds, crying 'ao ao'; the one escape is to climb a palm (mbokaja), whose roots it cannot tear up." },
-      { "id": "guarani_ao_ao_fanged_form", "name": "exist as a fanged sheep-bodied, wolf-headed beast", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }], "notes": "Its form is variously a wool-bodied, wolf-headed fanged animal or a giant fanged peccary; in all versions a many-running carnivore of the heights." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (first-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (second-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (third-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fourth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fifth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_luison", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (seventh-born). Reciprocal." }
-    ],
-    "sources": [
-      { "claim": "Ao Ao, sixth-born of the seven children of Tau and Keraná, is a fanged sheep-bodied wolf-headed (or peccary-like) pack-beast, lord of the hills, that devours people; the one escape is climbing a palm tree.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
-    ],
-    "notes": "Sixth-born; man-eating pack-beast, lord of the hills, escaped only by climbing a palm (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "parentIds": [
+   "guarani_namandu"
+  ],
+  "parentRoles": {
+   "guarani_namandu": "paternal"
   },
-  {
-    "id": "guarani_luison",
-    "name": {
-      "primary": "Luisón",
-      "alt": ["Luisõ", "Lobizón", "Juicho", "Luison"],
-      "transliterations": {
-        "guarani": "Luisón (Luisõ)",
-        "etymology": "Paraguayan-Guaraní Luisõ, Hispanicized Luisón / Lobizón; the seventh and most cursed child, lord of death and the night, haunter of cemeteries and eater of carrion — the Guaraní substrate of the South-American 'lobizón' (werewolf), the cursed seventh consecutive son."
-      }
-    },
-    "type": "deity",
-    "origin": "canon",
-    "tradition": "Guaraní",
-    "primaryTradition": "Guaraní",
-    "sex": "male",
-    "vitalStatus": "immortal",
-    "parentIds": ["guarani_tau", "guarani_kerana"],
-    "parentRoles": { "guarani_tau": "paternal", "guarani_kerana": "maternal" },
-    "temporal": { "era": "mythic" },
-    "lifecycle": [
-      { "typeStatus": "deity", "era": "mythic", "eraOrdering": 0, "startEvent": "seventh-and-most-cursed-born-of-tau-and-kerana", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }, { "kind": "tertiary", "reference": "'Luison' reference compilations" }], "notes": "The seventh and last, and the most cursed: a gaunt, dog-/corpse-like creature, lord of the night and of death, whose haunt is cemeteries and burial grounds and whose food is dead and rotting flesh. From him derives the Paraguayan-Río-de-la-Plata belief that the seventh consecutive son is born a lobizón (werewolf)." }
-    ],
-    "domains": [
-      { "sphereId": "lordship-of-death-and-the-dead", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Luison' reference compilations" }] },
-      { "sphereId": "the-night-and-cemeteries", "contextTag": "lifelong", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay" }] }
-    ],
-    "faculties": [
-      { "id": "guarani_luison_lord_of_death", "name": "preside over death and feed on the dead", "inheritability": "none", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Luison' reference compilations" }], "notes": "Lord of death and the night; he dwells in cemeteries and feeds on corpses; an encounter with him, or the mere touch of his passing, was held to portend death." },
-      { "id": "guarani_luison_werewolf_curse", "name": "embody the curse of the seventh son (the lobizón)", "inheritability": "partial", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; 'Luison'/'lobizón' reference compilations" }], "notes": "His myth is the substrate of the belief that the seventh consecutive son is doomed to become a lobizón/werewolf — a transmissible curse (hence partial inheritability), later fused with the imported European werewolf." }
-    ],
-    "materialCulture": [],
-    "relations": [
-      { "kind": "sibling", "personId": "guarani_teju_jagua", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (first-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_mboi_tui", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (second-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_monai", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (third-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_jasy_jatere", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fourth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_kurupi", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (fifth-born). Reciprocal." },
-      { "kind": "sibling", "personId": "guarani_ao_ao", "era": "mythic", "sources": [{ "kind": "secondary", "reference": "González Torres, Folklore del Paraguay; Colmán (1929)" }], "notes": "Brother (sixth-born). Reciprocal." }
-    ],
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-the-elder-twin-son-of-nde-ru",
     "sources": [
-      { "claim": "Luisón (Luisõ), the seventh and most cursed child of Tau and Keraná, is lord of death and the night, a corpse-eating haunter of cemeteries, and the Guaraní substrate of the South-American lobizón (werewolf), the cursed seventh consecutive son.", "citations": [{ "kind": "secondary", "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)" }, { "kind": "secondary", "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)" }], "weight": "high" }
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959) — the Mbyá twin-cycle, Pa'i Rete Kuaray as son of the god and the maiden Ñande Jary"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, Zeitschrift für Ethnologie 46 (1914) — the twin-myth: the Sun-twin born of the creator, his mother killed by the jaguars"
+     }
     ],
-    "notes": "Seventh-born; lord of death and the night, corpse-eater, root of the lobizón/werewolf belief (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six. Completes the seven, collectively associated with the Pleiades (Eichu)."
-  }
+    "notes": "The elder of the divine twins (Mbyá: Pa'i Rete Kuaray), son of Ñande Ru; in the canonical twin-myth his mother is killed by the monster-jaguars while he speaks to her from the womb, and he is raised among them with his younger brother Jasy."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "vengeance-on-the-jaguars-and-ascent-as-the-sun",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the twin-cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal: le prophétisme tupi-guarani (Paris: Seuil, 1975)"
+     }
+    ],
+    "notes": "With Jasy he avenges their mother on the jaguars (luring them across a collapsing bridge/river), attempts her resurrection (spoiled by Jasy's error), and ascends to become the Sun, presiding with his brother over day and night and over the road to Yvy Marãe'ỹ (the Land-without-Evil)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-sun",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "kuarahy",
+     "script": "Latn (Guaraní)",
+     "rom": "kuarahy"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ]
+   },
+   {
+    "sphereId": "demiurgic-ordering-of-the-world-and-day",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal (1975)"
+     }
+    ]
+   },
+   {
+    "sphereId": "ancestral-fatherhood-of-the-guarani",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959) — Pa'i Rete Kuaray as 'father of all the Guaraní'"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_kuarahy_solar_radiance",
+    "name": "embody and shed the light of the sun",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); Nimuendajú (1914)"
+     }
+    ],
+    "notes": "As the apotheosed Sun he is the source of daylight; the day is his."
+   },
+   {
+    "id": "guarani_kuarahy_demiurgic_ordering",
+    "name": "order the world and slay the primordial monster-jaguars",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914); Hélène Clastres, La Terre sans Mal (1975)"
+     }
+    ],
+    "notes": "The culture-hero/demiurge who avenges his mother, defeats the man-eating jaguars, and sets the order of sun and moon — the elder, wise twin who corrects his brother's blunders."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_kuarahy_bow_and_arrows",
+    "name": "the bow and arrows of the Sun-twin",
+    "kind": "weapon",
+    "role": "The hunting bow and arrows the twins carry in the forest and use against the monster-jaguars in the vengeance episode of the twin-cycle.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914) — the twins' bow-and-arrow in the jaguar-vengeance episode"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "guarani_jasy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Guaraní twin-myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "Elder twin; his brother is Jasy, the Moon, the erring younger twin. Reciprocal of guarani_jasy.twin sibling."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tupi_guaraci",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egon Schaden, Aspectos fundamentais da cultura guaraní (1962)"
+     }
+    ],
+    "notes": "Both reflect Proto-Tupi-Guaraní *kʷarahɨ 'sun' (Tupi Guaraci ~ Guaraní Kuarahy), the same solar theonym."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kuarahy (Mbyá Kuaray / Pa'i Rete Kuaray), the elder of the divine twins and son of Ñande Ru, is the Sun and demiurgic culture-hero who avenges his mother on the monster-jaguars and ascends as the sun; in the Mbyá recension he is the father of the Guaraní.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "The Guaraní twin-myth (Sun and Moon brothers, the jaguar-vengeance, the road to the Land-without-Evil) is one of the most widely recorded narratives of lowland South America.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Hélène Clastres, La Terre sans Mal: le prophétisme tupi-guarani (Paris: Seuil, 1975)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The Sun, elder divine twin, son of Ñamandú/Ñande Ru (Cadogan 1959; Nimuendajú 1914). Wired as twin sibling of Jasy and child of Ñamandú. Type 'deity': demiurgic Sun, son of the creator-god."
+ },
+ {
+  "id": "guarani_jasy",
+  "name": {
+   "primary": "Jasy",
+   "alt": [
+    "Jachy",
+    "Yacy",
+    "Jasy (the Moon)",
+    "the younger twin"
+   ],
+   "transliterations": {
+    "guarani": "Jasy (Jachy)",
+    "etymology": "Guaraní jasy 'moon' (also 'month'). The younger of the divine twins, the Moon — the erring/trickster brother whose premature look (or laugh) spoils the resurrection of their mother in the twin-cycle."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "apotheosed",
+  "parentIds": [
+   "guarani_namandu"
+  ],
+  "parentRoles": {
+   "guarani_namandu": "paternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "birth-of-the-younger-twin",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Mbyá twin-cycle"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú, Die Sagen ... der Apapocúva-Guaraní (1914)"
+     }
+    ],
+    "notes": "The younger twin, raised with his elder brother among the monster-jaguars after their mother's death."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "the-spoiled-resurrection-and-ascent-as-the-moon",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "During the elder twin's attempt to resurrect their mother by gathering her bones and singing, Jasy looks (or laughs) prematurely, spoiling the resurrection; he ascends to become the Moon. His trickster errors and his lunar deceit are the structural counterpart to the Sun's wisdom; lunar eclipses are read as the jaguars pursuing him across the sky."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-moon",
+    "contextTag": "lifelong",
+    "term": {
+     "value": "jasy",
+     "script": "Latn (Guaraní)",
+     "rom": "jasy"
+    },
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ]
+   },
+   {
+    "sphereId": "night-and-the-trickster-error",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914) — the younger twin's blunders that determine the cosmological outcome"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jasy_lunar_light",
+    "name": "embody the light of the moon",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); Nimuendajú (1914)"
+     }
+    ],
+    "notes": "As the apotheosed Moon he governs the night-light; the month (jasy) is named for him."
+   },
+   {
+    "id": "guarani_jasy_trickster_deceit",
+    "name": "err and blunder as the younger twin",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914) — the premature look/laugh that spoils the resurrection; the fish-hook episode in which the Moon-twin is caught"
+     }
+    ],
+    "notes": "The erring/inept younger brother whose blunders drive the cycle: his ill-timed looking (or laughing) prevents the full resurrection of their mother (who becomes a tapir or the Pleiades instead), and in the river/fish-hook episode he is the one caught where the Sun succeeds. (The genuinely malicious trickster-antagonist of the Mbyá cycle is the ogre Charĩa; Jasy's role is the gullible/imitative younger twin.)"
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "twin sibling",
+    "personId": "guarani_kuarahy",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Cadogan, Ayvu Rapyta (1959); the Guaraní twin-myth"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Nimuendajú (1914)"
+     }
+    ],
+    "notes": "Younger twin; his brother is Kuarahy, the Sun. Reciprocal of guarani_kuarahy.twin sibling."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tupi_jaci",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfred Métraux, The Religion of the Tupinamba (Handbook of South American Indians, vol. 3, 1948)"
+     }
+    ],
+    "notes": "Same etymon Tupi-Guaraní *îasy 'moon'; Jaci (Tupi) and Jasy (Guaraní) are one inherited theonym."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jasy (Jachy), the younger of the divine twins and son of Ñande Ru, is the Moon — the erring/trickster brother whose premature look spoils the resurrection of their mother, after which he ascends as the moon.",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "León Cadogan, Ayvu Rapyta (1959)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Curt Nimuendajú, Die Sagen ... der Apapocúva-Guaraní, ZfE 46 (1914)"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "The Moon, younger/trickster divine twin, son of Ñamandú (Cadogan 1959; Nimuendajú 1914). Wired as twin sibling of Kuarahy and child of Ñamandú. Type 'deity': demiurgic Moon, son of the creator-god."
+ },
+ {
+  "id": "guarani_tau",
+  "name": {
+   "primary": "Tau",
+   "alt": [
+    "Taú",
+    "the evil spirit"
+   ],
+   "transliterations": {
+    "guarani": "Tau",
+    "etymology": "Paraguayan-Guaraní: Tau, the spirit/principle of evil (in the Colmán systematization, the malign counter-principle to the good spirit Angatupyry). Father of the seven monsters by Keraná."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-evil-spirit-seizes-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (Asunción, 1929) — the genealogy of Tau and Keraná"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción: Editora Litocolor / Comuneros, 1980s; repr. 1995)"
+     }
+    ],
+    "notes": "Tau, the evil spirit, desires the beautiful Keraná, daughter of the pious Marangatú; he seizes/seduces her, and from their union — cursed by the goddess Arasy — are born the seven monstrous children."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "the-spirit-of-evil",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ]
+   },
+   {
+    "sphereId": "fatherhood-of-the-seven-monsters",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Moisés S. Bertoni, La civilización guaraní (Puerto Bertoni, 1922)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_tau_malefic_spirit",
+    "name": "act as the malefic spirit that engenders monsters",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "The principle of evil; his union with the mortal Keraná produces (under Arasy's curse) the seven monstrous offspring. Partial inheritability: the monstrous nature is transmitted to his seven children."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_kerana",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Father of the seven monsters by Keraná; reciprocal of guarani_kerana.spouse."
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Tau, the evil spirit, by the mortal Keraná (daughter of Marangatú) and under the curse of the goddess Arasy, fathers the seven monstrous children of Paraguayan-Guaraní mythology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán (Rosicrán), Ñande Ypy Kuéra / Nuestros antepasados (1929)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The evil spirit, father of the seven monsters (Colmán 1929; González Torres). Wired as spouse of Keraná and father of the seven. Type 'deity': a primordial spirit-principle. SOLITARY (as to ancestry): a primordial evil spirit with no attested parents in the folk genealogy (Colmán 1929)."
+ },
+ {
+  "id": "guarani_kerana",
+  "name": {
+   "primary": "Keraná",
+   "alt": [
+    "Kerana",
+    "Kerána"
+   ],
+   "transliterations": {
+    "guarani": "Keraná",
+    "etymology": "Paraguayan-Guaraní: Keraná, connected with kera 'sleep' — the beautiful, languid/sleeping daughter of the pious Marangatú; mother of the seven monsters by Tau."
+   }
+  },
+  "type": "mortal",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "female",
+  "vitalStatus": "dead",
+  "parentIds": [],
+  "parentRoles": {},
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "mortal",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "the-beautiful-daughter-of-marangatu-taken-by-tau",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "The beautiful mortal daughter of the pious Marangatú, taken by the evil spirit Tau; mother of the seven monstrous children, who are cursed by the goddess Arasy to be born as monsters."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "motherhood-of-the-seven-monsters",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "guarani_tau",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929); González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Mother of the seven monsters by Tau; reciprocal of guarani_tau.spouse."
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Keraná, the beautiful mortal daughter of the pious Marangatú, is taken by the evil spirit Tau and becomes the mother of the seven monstrous children of Guaraní mythology.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra / Nuestros antepasados (1929)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "The mortal mother of the seven monsters, daughter of the pious Marangatú (Colmán 1929; González Torres). Wired as spouse of Tau and mother of the seven. Her father Marangatú is a minor pious-ancestor figure, noted but not authored as a stub. SOLITARY (as to ancestry within batch): her only attested parent (Marangatú) is not authored; reason — a peripheral folk-ancestor with no independent mythic profile."
+ },
+ {
+  "id": "guarani_teju_jagua",
+  "name": {
+   "primary": "Teju Jagua",
+   "alt": [
+    "Teyú Yaguá",
+    "Tejú Jaguá",
+    "Teju-jagua"
+   ],
+   "transliterations": {
+    "guarani": "Teju Jagua",
+    "etymology": "Guaraní teju 'lizard' + jagua 'dog' — 'lizard-dog'. The first-born of the seven; a giant lizard with seven dog-heads and fiery eyes, lord of caverns and guardian of fruits."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "first-born-of-tau-and-kerana-cursed-by-arasy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "notes": "The first-born of the seven cursed children; a great lizard with seven dog-heads, eyes that shoot fire — yet, despite his fearsome form, gentle. Lord of the caverns and protector of fruits and of hidden riches."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-caverns",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   },
+   {
+    "sphereId": "guardianship-of-fruits-and-hidden-riches",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Teju Jagua', reference compilations on the seven Guaraní monsters"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_teju_jagua_seven_dog_heads",
+    "name": "exist as a giant lizard with seven dog-heads",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Teju Jagua' reference compilations"
+     }
+    ],
+    "notes": "His defining form: a huge lizard body bearing seven heads of dogs; from teju 'lizard' and jagua 'dog'."
+   },
+   {
+    "id": "guarani_teju_jagua_fiery_eyes",
+    "name": "shoot fire from his eyes",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "His eyes flash/shoot fire; combined with his guardianship of caves and fruit, this makes him a dread but essentially passive guardian."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal of guarani_mboi_tui.sibling."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Teju Jagua, first-born of the seven children of Tau and Keraná, is a giant lizard with seven dog-heads and fiery eyes, lord of caverns and guardian of fruits and hidden riches.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (Asunción, 1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "First-born of the seven monsters; seven-dog-headed lizard, lord of caves and fruits (González Torres; Colmán 1929). Child of Tau + Keraná; wired as sibling of the other six. Type 'deity': offspring of the spirit Tau."
+ },
+ {
+  "id": "guarani_mboi_tui",
+  "name": {
+   "primary": "Mbói Tu'ĩ",
+   "alt": [
+    "Mboi Tui",
+    "Mbói Tu'ĩ",
+    "Teju Ñe'ẽ"
+   ],
+   "transliterations": {
+    "guarani": "Mbói Tu'ĩ",
+    "etymology": "Guaraní mbói 'snake' + tu'ĩ 'parakeet/parrot' — 'snake-parrot'. The second-born; a giant serpent with a parrot's head and beak, lord/protector of aquatic creatures and the wetlands."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "second-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "The second of the seven; a great serpent bearing the head and beak of a parrot, his body brilliantly coloured. Lord and protector of the water-creatures, of amphibians and the wetlands/marshes."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-aquatic-creatures-and-wetlands",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "reference compilations on the seven Guaraní monsters"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_mboi_tui_serpent_parrot_form",
+    "name": "exist as a serpent with a parrot's head and beak",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Mbói Tu'ĩ' reference compilations"
+     }
+    ],
+    "notes": "His defining form: the body of a huge snake and the head/beak of a parrot (tu'ĩ); brightly coloured."
+   },
+   {
+    "id": "guarani_mboi_tui_protect_the_waters",
+    "name": "guard the creatures of the water and the wetlands",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Protector and lord of aquatic life and the marsh/wetland habitats; the watery counterpart among the seven."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Mbói Tu'ĩ ('snake-parrot'), second-born of the seven children of Tau and Keraná, is a giant serpent with a parrot's head, lord and protector of aquatic creatures and wetlands.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Second-born; serpent-parrot, lord of the waters (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_monai",
+  "name": {
+   "primary": "Moñái",
+   "alt": [
+    "Monai",
+    "Moñai"
+   ],
+   "transliterations": {
+    "guarani": "Moñái",
+    "etymology": "Paraguayan-Guaraní Moñái; a giant horned serpent, the third-born; lord of the open fields and 'lord of the air', who hypnotizes prey with his antenna-horns and hoards plunder in a cave."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "third-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "The third of the seven; a great serpent with two straight horns that serve as antennae. Lord of the open fields and 'lord of the air'; he climbs trees and slides down to hunt the birds, and amasses stolen goods in his cave."
+   },
+   {
+    "typeStatus": "deity",
+    "era": "mythic-prehistoric",
+    "eraOrdering": 1,
+    "startEvent": "slain-in-the-festival-trap",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Colmán, Ñande Ypy Kuéra (1929) — the 'cave of the monsters' episode; González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "In the festival-trap myth he is lured to a feast and destroyed (the heroine Porãsy sacrifices herself to draw the monsters into a pit that is set afire), ending his depredations — the most-cited death among the seven."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-the-open-fields-and-the-air",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "reference compilations: Moñái 'lord of the air', lord of the open fields"
+     }
+    ]
+   },
+   {
+    "sphereId": "hoarding-of-plunder",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_monai_hypnotic_antennae",
+    "name": "hypnotize prey with his antenna-horns",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Moñái reference compilations"
+     }
+    ],
+    "notes": "Two straight horns on his head act as antennae with hypnotic/mesmerizing power, with which he subdues the birds and other prey."
+   },
+   {
+    "id": "guarani_monai_serpent_climber",
+    "name": "climb and descend trees as a giant serpent to hunt",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "He climbs trees with ease and slides down to seize the birds on whom he feeds, ranging the open fields and the air."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_monai_horns",
+    "name": "the antenna-horns of Moñái",
+    "kind": "bodily-attribute",
+    "role": "His two straight horns, functioning as antennae endowed with hypnotic power — the instrument by which he mesmerizes and captures prey.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Moñái reference compilations"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Moñái, third-born of the seven children of Tau and Keraná, is a giant horned serpent, lord of the open fields and the air, who hypnotizes prey with his antenna-horns and hoards plunder, and is slain in the festival-trap myth.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Third-born; horned serpent, lord of the open fields, hypnotic antennae; slain in the festival/cave trap (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_jasy_jatere",
+  "name": {
+   "primary": "Jasy Jateré",
+   "alt": [
+    "Yasy Yateré",
+    "Jasy Yateré",
+    "Jacy Jaterê"
+   ],
+   "transliterations": {
+    "guarani": "Jasy Jateré",
+    "etymology": "Guaraní; commonly glossed 'a little piece of the moon' (jasy 'moon'). The fourth-born and the only fair/beautiful one of the seven: a small naked blond child, lord of the siesta, who carries a golden staff/wand and lures children into the forest."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "fourth-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Jasy Jatere' reference compilations"
+     }
+    ],
+    "notes": "The fourth of the seven and the only one of fair aspect: a small naked boy with golden/blond hair, blue eyes, carrying a golden staff or wand. Lord of the siesta (the midday hour), he whistles to lure children into the forest, where they may be lost or struck dumb."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-the-siesta-and-midday",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "luring-and-bewitching-of-children",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_jasy_jatere_lure_children",
+    "name": "lure and bewitch children at the siesta hour",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations"
+     }
+    ],
+    "notes": "At the midday siesta he calls/whistles to children who go out alone and draws them into the forest, where they are lost, struck dumb, or fall ill — the abiding nursery-bogey of Paraguay."
+   },
+   {
+    "id": "guarani_jasy_jatere_magic_staff",
+    "name": "wield the power of the golden staff/wand",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations"
+     }
+    ],
+    "notes": "His golden wand/cane is the source/sign of his luring power; with it he charms his victims."
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "guarani_jasy_jatere_golden_staff",
+    "name": "the golden staff/wand of Jasy Jateré",
+    "kind": "wand",
+    "role": "A staff or wand of gold (vara de oro / varita mágica) carried by Jasy Jateré — his defining object and the instrument of his bewitching of children.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Jasy Jatere' reference compilations (the golden cane/wand)"
+     }
+    ]
+   },
+   {
+    "id": "guarani_jasy_jatere_whistle",
+    "name": "the luring whistle/call of Jasy Jateré",
+    "kind": "sound-signal",
+    "role": "His whistle or call at the siesta hour, by which he lures children away; in folk belief one must never answer it.",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Jasy Jateré ('a little piece of the moon'), fourth-born of the seven children of Tau and Keraná and the only fair one, is a small blond naked child, lord of the siesta, who carries a golden staff/wand and lures children into the forest.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Fourth-born; the only fair one, lord of the siesta, golden staff, lures children (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six. The most living of the seven in present-day Paraguayan folklore."
+ },
+ {
+  "id": "guarani_kurupi",
+  "name": {
+   "primary": "Kurupi",
+   "alt": [
+    "Kurupí",
+    "Curupí"
+   ],
+   "transliterations": {
+    "guarani": "Kurupi",
+    "etymology": "Paraguayan-Guaraní Kurupi; the fifth-born; a short, ugly, hairy wild-man of coppery skin, spirit of fertility and sexuality of the wild, defined by an enormous prehensile penis coiled around his waist."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "fifth-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Kurupi' reference compilations"
+     }
+    ],
+    "notes": "The fifth of the seven; a short, robust, ugly man with hairy hands and feet and dark/coppery skin, whose defining feature is an enormous, elongated, prehensile penis wound around his waist. Spirit of the sexuality and fertility of the wild; in folk belief he impregnates women from afar and is blamed for unexplained pregnancies."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sexuality-and-fertility-of-the-wild",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Kurupi' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "spirit-of-the-deep-forest",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_kurupi_prehensile_phallus",
+    "name": "wield an enormous prehensile penis",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Kurupi' reference compilations"
+     }
+    ],
+    "notes": "His defining attribute: an enormously long, prehensile penis coiled around his body, with which (in folk belief) he seizes and impregnates women even from a distance or through walls."
+   },
+   {
+    "id": "guarani_kurupi_fertility_of_the_wild",
+    "name": "embody the sexual fertility of the wilderness",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "As a phallic spirit he personifies the untamed generative power of the forest and is invoked to explain illicit or inexplicable conceptions."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Kurupi, fifth-born of the seven children of Tau and Keraná, is a short ugly hairy wild-man, spirit of the sexuality and fertility of the wild, defined by an enormous prehensile penis coiled around his waist.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Fifth-born; phallic wild-man, spirit of fertility/sexuality (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_ao_ao",
+  "name": {
+   "primary": "Ao Ao",
+   "alt": [
+    "Aó Aó",
+    "Ao-Ao"
+   ],
+   "transliterations": {
+    "guarani": "Ao Ao",
+    "etymology": "Paraguayan-Guaraní Ao Ao, onomatopoeic from its cry 'ao ao'; the sixth-born, lord of the hills/mountains — a many-running sheep-bodied, wolf-headed (or peccary-like) fanged beast that hunts in packs and devours people."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "sixth-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Ao Ao' reference compilations"
+     }
+    ],
+    "notes": "The sixth of the seven; a four-legged fanged beast — body of a sheep, head of a wolf in one common description (or a great peccary in others) — that travels in herds, named for its cry 'ao ao'. Lord of the hills and mountains, a devourer of human beings: one escapes only by climbing a mbokaja (palm) tree, which it cannot uproot."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-the-hills-and-mountains",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Ao Ao' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "devouring-of-humankind",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_ao_ao_pack_devourer",
+    "name": "hunt in packs and devour human prey",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Ao Ao' reference compilations"
+     }
+    ],
+    "notes": "A relentless man-eater that runs down its prey in herds, crying 'ao ao'; the one escape is to climb a palm (mbokaja), whose roots it cannot tear up."
+   },
+   {
+    "id": "guarani_ao_ao_fanged_form",
+    "name": "exist as a fanged sheep-bodied, wolf-headed beast",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ],
+    "notes": "Its form is variously a wool-bodied, wolf-headed fanged animal or a giant fanged peccary; in all versions a many-running carnivore of the heights."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_luison",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (seventh-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Ao Ao, sixth-born of the seven children of Tau and Keraná, is a fanged sheep-bodied wolf-headed (or peccary-like) pack-beast, lord of the hills, that devours people; the one escape is climbing a palm tree.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Sixth-born; man-eating pack-beast, lord of the hills, escaped only by climbing a palm (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six."
+ },
+ {
+  "id": "guarani_luison",
+  "name": {
+   "primary": "Luisón",
+   "alt": [
+    "Luisõ",
+    "Lobizón",
+    "Juicho",
+    "Luison"
+   ],
+   "transliterations": {
+    "guarani": "Luisón (Luisõ)",
+    "etymology": "Paraguayan-Guaraní Luisõ, Hispanicized Luisón / Lobizón; the seventh and most cursed child, lord of death and the night, haunter of cemeteries and eater of carrion — the Guaraní substrate of the South-American 'lobizón' (werewolf), the cursed seventh consecutive son."
+   }
+  },
+  "type": "deity",
+  "origin": "canon",
+  "tradition": "Guaraní",
+  "primaryTradition": "Guaraní",
+  "sex": "male",
+  "vitalStatus": "immortal",
+  "parentIds": [
+   "guarani_tau",
+   "guarani_kerana"
+  ],
+  "parentRoles": {
+   "guarani_tau": "paternal",
+   "guarani_kerana": "maternal"
+  },
+  "temporal": {
+   "era": "mythic"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "deity",
+    "era": "mythic",
+    "eraOrdering": 0,
+    "startEvent": "seventh-and-most-cursed-born-of-tau-and-kerana",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     },
+     {
+      "kind": "tertiary",
+      "reference": "'Luison' reference compilations"
+     }
+    ],
+    "notes": "The seventh and last, and the most cursed: a gaunt, dog-/corpse-like creature, lord of the night and of death, whose haunt is cemeteries and burial grounds and whose food is dead and rotting flesh. From him derives the Paraguayan-Río-de-la-Plata belief that the seventh consecutive son is born a lobizón (werewolf)."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "lordship-of-death-and-the-dead",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Luison' reference compilations"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-night-and-cemeteries",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "guarani_luison_lord_of_death",
+    "name": "preside over death and feed on the dead",
+    "inheritability": "none",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Luison' reference compilations"
+     }
+    ],
+    "notes": "Lord of death and the night; he dwells in cemeteries and feeds on corpses; an encounter with him, or the mere touch of his passing, was held to portend death."
+   },
+   {
+    "id": "guarani_luison_werewolf_curse",
+    "name": "embody the curse of the seventh son (the lobizón)",
+    "inheritability": "partial",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; 'Luison'/'lobizón' reference compilations"
+     }
+    ],
+    "notes": "His myth is the substrate of the belief that the seventh consecutive son is doomed to become a lobizón/werewolf — a transmissible curse (hence partial inheritability), later fused with the imported European werewolf."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "sibling",
+    "personId": "guarani_teju_jagua",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (first-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_mboi_tui",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (second-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_monai",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (third-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_jasy_jatere",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fourth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_kurupi",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (fifth-born). Reciprocal."
+   },
+   {
+    "kind": "sibling",
+    "personId": "guarani_ao_ao",
+    "era": "mythic",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "González Torres, Folklore del Paraguay; Colmán (1929)"
+     }
+    ],
+    "notes": "Brother (sixth-born). Reciprocal."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Luisón (Luisõ), the seventh and most cursed child of Tau and Keraná, is lord of death and the night, a corpse-eating haunter of cemeteries, and the Guaraní substrate of the South-American lobizón (werewolf), the cursed seventh consecutive son.",
+    "citations": [
+     {
+      "kind": "secondary",
+      "reference": "Dionisio M. González Torres, Folklore del Paraguay (1980s; repr. 1995)"
+     },
+     {
+      "kind": "secondary",
+      "reference": "Narciso R. Colmán, Ñande Ypy Kuéra (1929)"
+     }
+    ],
+    "weight": "high"
+   }
+  ],
+  "notes": "Seventh-born; lord of death and the night, corpse-eater, root of the lobizón/werewolf belief (González Torres; Colmán 1929). Child of Tau + Keraná; sibling of the other six. Completes the seven, collectively associated with the Pleiades (Eichu)."
+ }
 ]
 ```
 

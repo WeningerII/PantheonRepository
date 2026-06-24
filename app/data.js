@@ -93848,6 +93848,17 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Younger twin; his brother is Kuarahy, the Sun. Reciprocal of guarani_kuarahy.twin sibling."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tupi_jaci",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfred Métraux, The Religion of the Tupinamba (Handbook of South American Indians, vol. 3, 1948)"
+     }
+    ],
+    "notes": "Same etymon Tupi-Guaraní *îasy 'moon'; Jaci (Tupi) and Jasy (Guaraní) are one inherited theonym."
    }
   ],
   "sources": [
@@ -94669,6 +94680,17 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "Elder twin; his brother is Jasy, the Moon, the erring younger twin. Reciprocal of guarani_jasy.twin sibling."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tupi_guaraci",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egon Schaden, Aspectos fundamentais da cultura guaraní (1962)"
+     }
+    ],
+    "notes": "Both reflect Proto-Tupi-Guaraní *kʷarahɨ 'sun' (Tupi Guaraci ~ Guaraní Kuarahy), the same solar theonym."
    }
   ],
   "sources": [
@@ -96369,6 +96391,17 @@ const NEW_FIGURES = [
      }
     ],
     "notes": "His paired divine consort, the true mother of the Tupã."
+   },
+   {
+    "kind": "equated-with",
+    "personId": "tupi_tupa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfred Métraux, La religion des Tupinamba et ses rapports avec celle des autres tribus Tupi-Guarani (1928)"
+     }
+    ],
+    "notes": "Same inherited theonym from Proto-Tupi-Guaraní *tupã 'thunder/divinity'; Tupã in both languages."
    }
   ],
   "sources": [
@@ -204888,7 +204921,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Guaraci, the Sun (Tupi kuarahy); source of light and warmth and protector of living things, twin to the Moon Jaci in Tupi-Guarani cosmology."
+  "notes": "Guaraci, the Sun (Tupi kuarahy); source of light and warmth and protector of living things, twin to the Moon Jaci in Tupi-Guarani cosmology.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "guarani_kuarahy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Egon Schaden, Aspectos fundamentais da cultura guaraní (1962)"
+     }
+    ],
+    "notes": "Both reflect Proto-Tupi-Guaraní *kʷarahɨ 'sun' (Tupi Guaraci ~ Guaraní Kuarahy), the same solar theonym."
+   }
+  ]
  },
  {
   "id": "tupi_jaci",
@@ -204977,7 +205023,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Jaci, the Moon (Tupi jasy); protector of the night and twin of the Sun Guaraci. In Tupinambá myth the moon is menaced by the jaguar, personified as the planet Mars."
+  "notes": "Jaci, the Moon (Tupi jasy); protector of the night and twin of the Sun Guaraci. In Tupinambá myth the moon is menaced by the jaguar, personified as the planet Mars.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "guarani_jasy",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfred Métraux, The Religion of the Tupinamba (Handbook of South American Indians, vol. 3, 1948)"
+     }
+    ],
+    "notes": "Same etymon Tupi-Guaraní *îasy 'moon'; Jaci (Tupi) and Jasy (Guaraní) are one inherited theonym."
+   }
+  ]
  },
  {
   "id": "tupi_maira",
@@ -205271,7 +205330,20 @@ const NEW_FIGURES = [
     "weight": "secondary"
    }
   ],
-  "notes": "Tupã, the thunder; the spirit of storm and lightning who in Tupi-Guarani tradition directs creation. Note: missionaries adopted 'Tupã' to translate the Christian God, but the thunder-power is the indigenous core."
+  "notes": "Tupã, the thunder; the spirit of storm and lightning who in Tupi-Guarani tradition directs creation. Note: missionaries adopted 'Tupã' to translate the Christian God, but the thunder-power is the indigenous core.",
+  "relations": [
+   {
+    "kind": "equated-with",
+    "personId": "guarani_tupa",
+    "sources": [
+     {
+      "kind": "secondary",
+      "reference": "Alfred Métraux, La religion des Tupinamba et ses rapports avec celle des autres tribus Tupi-Guarani (1928)"
+     }
+    ],
+    "notes": "Same inherited theonym from Proto-Tupi-Guaraní *tupã 'thunder/divinity'; Tupã in both languages."
+   }
+  ]
  },
  {
   "id": "tupi_twins",
