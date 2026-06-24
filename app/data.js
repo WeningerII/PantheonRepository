@@ -37449,7 +37449,7 @@ const deriveAndMergeFaculties = (peopleMap) => {
 // migration. Validation accepts either field. If a future migration to v3
 // happens, the `name` checks below will become redundant; until then both
 // branches must remain.
-const VALID_PERSON_TYPES = ['deity', 'demigod', 'quartigod', 'scion', 'mortal'];
+const VALID_PERSON_TYPES = ['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal'];
 const VALID_ORIGINS = ['canon', 'original'];
 
 const validatePersonHard = (person) => {
@@ -37775,7 +37775,7 @@ const migrate = (peopleMap) => {
         const out = { ...phase };
         // If old `status` exists, split into typeStatus/vitalStatus
         if (phase.status && !phase.typeStatus && !phase.vitalStatus) {
-          if (['deity', 'demigod', 'quartigod', 'scion', 'mortal'].includes(phase.status)) {
+          if (['deity', 'numen', 'demigod', 'quartigod', 'scion', 'mortal'].includes(phase.status)) {
             out.typeStatus = phase.status;
           } else if (phase.status === 'spirit' || phase.status === 'unknown') {
             // Defensive: legacy types are deleted; coerce to mortal.
@@ -91690,6 +91690,260 @@ const NEW_FIGURES = [
   "notes": "Gondi persa 'great' + pen 'god'. Often equated with Bara Deo / Budha Deo and the saja tree. Aniconic spirit-class deity. (kaṛsk/kamk per ethnographic spellings.)"
  },
  {
+  "id": "greek_achilles",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Achilles",
+   "alt": [
+    "Achilleus",
+    "Pelides",
+    "Aeacides",
+    "swift-footed Achilles"
+   ],
+   "transliterations": {
+    "greek": "Ἀχιλλεύς"
+   }
+  },
+  "type": "demigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_peleus",
+   "greek_thetis"
+  ],
+  "parentRoles": {
+   "greek_peleus": "paternal",
+   "greek_thetis": "maternal"
+  },
+  "temporal": {
+   "era": "trojan-war"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "demigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "birth-and-the-immortalizing-rite",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 4.869-879; Statius Achilleid 1.269-270"
+     }
+    ],
+    "notes": "Born to Peleus and Thetis; his mother's rite to burn away his mortality left him invulnerable save the heel by which she held him. Reared and tutored by the centaur Chiron."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "the-wrath-and-withdrawal",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.1-2.1"
+     }
+    ],
+    "notes": "His quarrel with Agamemnon over Briseis and his withdrawal from battle — the mēnis, 'wrath', that is the subject of the Iliad."
+   },
+   {
+    "typeStatus": "demigod",
+    "era": "trojan-war",
+    "eraOrdering": 2,
+    "startEvent": "return-aristeia-and-the-slaying-of-Hector",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 18-22"
+     }
+    ],
+    "notes": "Returns to avenge Patroclus in the armour Hephaestus made for him, routs the Trojans, and kills Hector, dragging his body round the walls."
+   },
+   {
+    "typeStatus": "demigod",
+    "vitalStatus": "dead",
+    "era": "trojan-war",
+    "eraOrdering": 3,
+    "startEvent": "death-by-the-heel",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. Epit. 5.3-5; cf. Hom. Il. 22.359-360 (Hector's prophecy)"
+     }
+    ],
+    "notes": "Killed by Paris's arrow — guided by Apollo — to the vulnerable heel, near the Scaean Gate."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "war",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. passim"
+     }
+    ]
+   },
+   {
+    "sphereId": "martial-excellence",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20-22 — the aristeia"
+     }
+    ]
+   },
+   {
+    "sphereId": "swiftness",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. — the standing epithet podas okus, 'swift-footed'"
+     }
+    ]
+   }
+  ],
+  "iconography": {
+   "attributes": [
+    {
+     "id": "shield-of-achilles",
+     "sources": [
+      {
+       "kind": "primary",
+       "reference": "Hom. Il. 18.478-608"
+      }
+     ],
+     "notes": "The cosmos-figured shield forged by Hephaestus."
+    },
+    {
+     "id": "the-heel",
+     "sources": [
+      {
+       "kind": "secondary",
+       "reference": "the proverbial vulnerable point; Statius Achilleid 1.269-270"
+      }
+     ]
+    }
+   ]
+  },
+  "faculties": [
+   {
+    "id": "near-invulnerability",
+    "name": "Near-invulnerability",
+    "inheritability": "none",
+    "scopeTags": [
+     "protection"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Statius Achilleid 1.269-270; Apollod. Epit. 5.3"
+     }
+    ],
+    "notes": "Invulnerable save the heel — a non-heritable consequence of his mother's rite, not of descent."
+   },
+   {
+    "id": "supreme-martial-prowess",
+    "name": "Supreme martial prowess",
+    "inheritability": "partial",
+    "scopeTags": [
+     "combat"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 20-22"
+     }
+    ]
+   },
+   {
+    "id": "preternatural-swiftness",
+    "name": "Preternatural swiftness of foot",
+    "inheritability": "partial",
+    "scopeTags": [
+     "locomotion"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. — podas okus / podarkes"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "armour-of-hephaestus",
+    "name": "The arms of Hephaestus",
+    "kind": "armor",
+    "role": "the shield, helm, corselet and greaves forged by Hephaestus at Thetis's request",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 18.368-617, 19.1-39"
+     }
+    ]
+   },
+   {
+    "id": "pelian-ash-spear",
+    "name": "The Pelian ash spear",
+    "kind": "weapon",
+    "role": "his father Peleus's spear, which he alone could wield",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 16.140-144, 19.387-391"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "companion",
+    "externalRef": {
+     "name": "Patroclus (son of Menoetius; Achilles' dearest companion, whose death drives the latter half of the Iliad)",
+     "tradition": "Greek"
+    },
+    "era": "trojan-war",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 16-18"
+     }
+    ],
+    "notes": "Patroclus not yet registered — externalRef."
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. (throughout); Apollod. 3.13.6-8, Epit. 3-5; Pind. Nem.; Statius Achilleid"
+     }
+    ],
+    "weight": "primary"
+   },
+   {
+    "claim": "parentage",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.1, 1.357-358"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Demigod (⅝ divine: a quartigod father, Peleus, and a fully-divine numen mother, Thetis — (¼ + 1)/2). The greatest of the Achaeans and the central figure of the Iliad; swift-footed, near-invulnerable save the heel, doomed to a short and glorious life. His wrath, withdrawal, and return to kill Hector frame the poem; he falls to Paris's heel-shot at the Scaean Gate. Formerly barred from the registry by the strict parentage rule (his mother being a Nereid) — now admissible, and computed a demigod by ordinary descent."
+ },
+ {
   "id": "greek_apollod_tyche",
   "name": {
    "primary": "Tyche",
@@ -95783,6 +96037,441 @@ const NEW_FIGURES = [
    }
   ],
   "notes": "Primordial Sky, first ruler of the cosmos, castrated by Cronus."
+ },
+ {
+  "id": "greek_nereus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Nereus",
+   "alt": [
+    "the Old Man of the Sea",
+    "Halios Geron"
+   ],
+   "transliterations": {
+    "greek": "Νηρεύς"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "living",
+  "parentIds": [],
+  "temporal": {
+   "era": "primordial"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "primordial",
+    "eraOrdering": 0,
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 233-236"
+     }
+    ],
+    "notes": "Primordial sea-divinity, eldest child of Pontus and Gaia; truthful and gentle, the kindly Old Man of the Sea."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 233-236"
+     }
+    ]
+   },
+   {
+    "sphereId": "prophecy",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.5.11"
+     }
+    ]
+   },
+   {
+    "sphereId": "truth",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 233-236"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sea-metamorphosis",
+    "name": "Protean shape-shifting",
+    "inheritability": "full",
+    "scopeTags": [
+     "transformation",
+     "evasion"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 2.5.11 — Heracles must hold Nereus through his changing shapes to learn the way to the Hesperides"
+     }
+    ]
+   },
+   {
+    "id": "infallible-prophecy",
+    "name": "Infallible prophecy",
+    "inheritability": "partial",
+    "scopeTags": [
+     "knowledge"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 233-236; Apollod. 2.5.11"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "father-of",
+    "personId": "greek_thetis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 240-244; Hom. Il. 1.358"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hes. Theog. 233-264; Hom. Il. 18.36-49; Apollod. 2.5.11"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Numen — the primordial Old Man of the Sea, eldest son of Pontus and Gaia, father of the fifty Nereids by the Oceanid Doris. A gentle, truthful shape-shifting sea-prophet; Heracles wrestled him through his metamorphoses to learn the road to the Hesperides. Father of Thetis."
+ },
+ {
+  "id": "greek_peleus",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Peleus",
+   "alt": [
+    "Peleus",
+    "king of the Myrmidons"
+   ],
+   "transliterations": {
+    "greek": "Πηλεύς"
+   }
+  },
+  "type": "quartigod",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "male",
+  "vitalStatus": "dead",
+  "parentIds": [
+   "greek_aeacus"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "exile-from-Aegina-for-the-killing-of-Phocus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.12.6"
+     }
+    ],
+    "notes": "Son of Aeacus; exiled with Telamon for the murder of their half-brother Phocus; received and purified at Phthia."
+   },
+   {
+    "typeStatus": "quartigod",
+    "era": "heroic-age",
+    "eraOrdering": 1,
+    "startEvent": "wrestling-and-winning-Thetis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Nem. 4.62-65; Apollod. 3.13.5"
+     }
+    ],
+    "notes": "Held the shape-shifting Thetis fast until she yielded; their wedding on Pelion, attended by the gods, set in motion the Judgement of Paris."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "kingship",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 18.84-87 — king of the Myrmidons at Phthia"
+     }
+    ]
+   },
+   {
+    "sphereId": "the-hunt",
+    "contextTag": "episodic",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 1.8.2-3; 3.13.2-3 — Calydonian boar-hunt and the Argonauts"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "wrestling-prowess",
+    "name": "Wrestling mastery",
+    "inheritability": "partial",
+    "scopeTags": [
+     "combat"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Nem. 4.62-65 — holds Thetis through every shape"
+     }
+    ]
+   }
+  ],
+  "materialCulture": [
+   {
+    "id": "pelian-ash-spear",
+    "name": "The Pelian ash spear",
+    "kind": "weapon",
+    "role": "Chiron's wedding-gift, wielded later by Achilles — only Achilles could lift it",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 16.140-144, 19.387-391"
+     }
+    ]
+   },
+   {
+    "id": "immortal-horses-balius-xanthus",
+    "name": "Balius and Xanthus",
+    "kind": "object",
+    "role": "the immortal horses, a wedding-gift of Poseidon, drew Achilles' chariot",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 16.148-154, 19.400-424"
+     }
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_thetis",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Isth. 8; Apollod. 3.13.5"
+     }
+    ]
+   },
+   {
+    "kind": "father-of",
+    "personId": "greek_achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.1, 18.84-87"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 18.84-87; Pind. Isth. 8, Nem. 3-5; Apollod. 3.12.6-13.7"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Quartigod (¼ divine, via Aeacus son of Zeus). Aeacid king of the Myrmidons at Phthia; Argonaut and Calydonian hunter; won the sea-goddess Thetis by holding her through her shape-shifting. Their divine-attended wedding on Mount Pelion — and the golden apple cast there by Eris — began the chain that led to the Trojan War. Father of Achilles by Thetis; the mortal-tier father whose Nereid wife makes his son half-divine."
+ },
+ {
+  "id": "greek_thetis",
+  "schemaVersion": 2,
+  "name": {
+   "primary": "Thetis",
+   "alt": [
+    "the silver-footed",
+    "Thetis Nereis"
+   ],
+   "transliterations": {
+    "greek": "Θέτις"
+   }
+  },
+  "type": "numen",
+  "origin": "canon",
+  "tradition": "Greek",
+  "primaryTradition": "Greek",
+  "sex": "female",
+  "vitalStatus": "living",
+  "parentIds": [
+   "greek_nereus"
+  ],
+  "temporal": {
+   "era": "heroic-age"
+  },
+  "lifecycle": [
+   {
+    "typeStatus": "numen",
+    "era": "heroic-age",
+    "eraOrdering": 0,
+    "startEvent": "courted-by-Zeus-and-Poseidon-then-wed-to-a-mortal",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Pind. Isth. 8.26-48; Apollod. 3.13.5"
+     }
+    ],
+    "notes": "Desired by Zeus and Poseidon until Themis (or Prometheus) prophesied her son would be greater than his father; she was therefore married to the mortal Peleus."
+   },
+   {
+    "typeStatus": "numen",
+    "era": "trojan-war",
+    "eraOrdering": 1,
+    "startEvent": "intercession-for-Achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.495-530, 18.368-617"
+     }
+    ],
+    "notes": "Pleads with Zeus for her son's honour and commissions new armour from Hephaestus after Patroclus's death."
+   }
+  ],
+  "domains": [
+   {
+    "sphereId": "sea",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.357-358"
+     }
+    ]
+   },
+   {
+    "sphereId": "metamorphosis",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.13.5 — she changes into fire, water, and beasts to escape Peleus"
+     }
+    ]
+   },
+   {
+    "sphereId": "maternal-protection",
+    "contextTag": "lifelong",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 18.368-467"
+     }
+    ]
+   }
+  ],
+  "faculties": [
+   {
+    "id": "sea-metamorphosis",
+    "name": "Protean shape-shifting",
+    "inheritability": "full",
+    "scopeTags": [
+     "transformation",
+     "evasion"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollod. 3.13.5; Pind. Nem. 4.62-65"
+     }
+    ]
+   },
+   {
+    "id": "immortalizing-rite",
+    "name": "Rite of immortalization",
+    "inheritability": "none",
+    "scopeTags": [
+     "ritual",
+     "protection"
+    ],
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Apollon. Rhod. 4.869-879 (anointing in fire); cf. the later Stygian-dipping tradition, Statius Achilleid 1.269-270"
+     }
+    ],
+    "notes": "Sought to burn away her children's mortality; the rite over Achilles left him all but invulnerable save the heel."
+   }
+  ],
+  "materialCulture": [],
+  "relations": [
+   {
+    "kind": "spouse",
+    "personId": "greek_peleus",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 18.84-87; Pind. Isth. 8"
+     }
+    ]
+   },
+   {
+    "kind": "mother-of",
+    "personId": "greek_achilles",
+    "sources": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.357-358"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "claim": "existence",
+    "citations": [
+     {
+      "kind": "primary",
+      "reference": "Hom. Il. 1.357-430, 18.34-147, 368-617; Hes. Theog. 244, 1006-1007; Pind. Isth. 8; Apollod. 3.13.5-6"
+     }
+    ],
+    "weight": "primary"
+   }
+  ],
+  "notes": "Numen — a Nereid, silver-footed sea-goddess daughter of Nereus. Courted by Zeus and Poseidon until the prophecy that her son would surpass his father; married off to the mortal Peleus (she resisted, shape-shifting through fire, water and beasts in his grip). Mother of Achilles, whom she tried to make immortal and for whom she wins divine armour from Hephaestus. A divine mother of a mortal-born son — the canonical case the old parentage rule excluded."
  },
  {
   "id": "guanche_achaman",
